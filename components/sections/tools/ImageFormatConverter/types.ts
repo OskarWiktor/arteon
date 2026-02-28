@@ -1,4 +1,4 @@
-export type ImageFormat = 'jpg' | 'png' | 'webp' | 'gif' | 'bmp' | 'svg';
+export type ImageFormat = 'jpg' | 'png' | 'webp' | 'gif' | 'bmp' | 'svg' | 'avif' | 'heic' | 'tiff';
 export type OutputFormat = 'jpg' | 'png' | 'webp';
 
 export type ConversionFileStatus = 'pending' | 'processing' | 'done' | 'error';
@@ -28,6 +28,9 @@ export const FORMAT_LABELS: Record<ImageFormat, string> = {
   gif: 'GIF',
   bmp: 'BMP',
   svg: 'SVG',
+  avif: 'AVIF',
+  heic: 'HEIC',
+  tiff: 'TIFF',
 };
 
 export const FORMAT_MIME: Record<OutputFormat, string> = {

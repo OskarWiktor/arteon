@@ -27,11 +27,13 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Kostenlose Online-Tools | Konverter, SEO, Farben, Favicon',
-  description: '22 kostenlose Online-Tools: 12 Bildkonverter (JPG, PNG, WebP, SVG, BMP, GIF), Favicon-Generator, Bildeditor, Textzähler, Farbpaletten und QR-Codes. Ohne Registrierung.',
+  description:
+    '34 kostenlose Online-Tools: 24 Bildkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), Favicon-Generator, Bildeditor, Textzähler, Farbpaletten und QR-Codes. Ohne Registrierung.',
   alternates: getToolsIndexAlternates('de'),
   openGraph: {
     title: 'Kostenlose Online-Tools | Konverter, SEO, Farben, Favicon',
-    description: '22 kostenlose Online-Tools: 12 Bildkonverter (JPG, PNG, WebP, SVG, BMP, GIF), Favicon-Generator, Bildeditor, Textzähler, Farbpaletten und QR-Codes. Ohne Registrierung.',
+    description:
+      '34 kostenlose Online-Tools: 24 Bildkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), Favicon-Generator, Bildeditor, Textzähler, Farbpaletten und QR-Codes. Ohne Registrierung.',
     url: toAbsoluteUrl('/de/werkzeuge'),
     type: 'website',
     images: [
@@ -48,7 +50,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Kostenlose Online-Tools — Bildkonverter, SEO, Farben, Favicon',
-  description: '22 kostenlose Online-Tools: 12 Bildkonverter (JPG, PNG, WebP, SVG, BMP, GIF), Favicon-Generator, Bildeditor, Textzähler, Farbpaletten und QR-Codes. Ohne Registrierung.',
+  description:
+    '34 kostenlose Online-Tools: 24 Bildkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), Favicon-Generator, Bildeditor, Textzähler, Farbpaletten und QR-Codes. Ohne Registrierung.',
   url: toAbsoluteUrl('/de/werkzeuge'),
   inLanguage: 'de',
   isPartOf: {
@@ -64,7 +67,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 22,
+    numberOfItems: 34,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -266,6 +269,114 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 23,
+        name: 'SVG zu WebP Konverter',
+        description: 'SVG-Grafiken in leichtes WebP umwandeln. Ideal fur Websites.',
+        url: toAbsoluteUrl('/de/werkzeuge/svg-zu-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 24,
+        name: 'GIF zu WebP Konverter',
+        description: 'Erstes GIF-Bild als leichtes WebP exportieren. Kleinere Datei.',
+        url: toAbsoluteUrl('/de/werkzeuge/gif-zu-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 25,
+        name: 'BMP zu WebP Konverter',
+        description: 'BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% kleiner.',
+        url: toAbsoluteUrl('/de/werkzeuge/bmp-zu-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 26,
+        name: 'AVIF zu JPG Konverter',
+        description: 'AVIF-Dateien in universelles JPG umwandeln. Kompatibel uberall.',
+        url: toAbsoluteUrl('/de/werkzeuge/avif-zu-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 27,
+        name: 'AVIF zu PNG Konverter',
+        description: 'AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat.',
+        url: toAbsoluteUrl('/de/werkzeuge/avif-zu-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 28,
+        name: 'AVIF zu WebP Konverter',
+        description: 'AVIF-Dateien in WebP umwandeln. Breite Kompatibilitat.',
+        url: toAbsoluteUrl('/de/werkzeuge/avif-zu-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 29,
+        name: 'HEIC zu JPG Konverter',
+        description: 'iPhone HEIC-Fotos in universelles JPG umwandeln. Ohne Registrierung.',
+        url: toAbsoluteUrl('/de/werkzeuge/heic-zu-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 30,
+        name: 'HEIC zu PNG Konverter',
+        description: 'iPhone HEIC-Fotos in verlustfreies PNG umwandeln. Volle Qualitat.',
+        url: toAbsoluteUrl('/de/werkzeuge/heic-zu-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 31,
+        name: 'HEIC zu WebP Konverter',
+        description: 'iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei.',
+        url: toAbsoluteUrl('/de/werkzeuge/heic-zu-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 32,
+        name: 'TIFF zu JPG Konverter',
+        description: 'TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans.',
+        url: toAbsoluteUrl('/de/werkzeuge/tiff-zu-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 33,
+        name: 'TIFF zu PNG Konverter',
+        description: 'TIFF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat.',
+        url: toAbsoluteUrl('/de/werkzeuge/tiff-zu-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 34,
+        name: 'TIFF zu WebP Konverter',
+        description: 'TIFF-Dateien in leichtes WebP umwandeln. Massive Reduktion.',
+        url: toAbsoluteUrl('/de/werkzeuge/tiff-zu-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -303,7 +414,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Kostenlose Online-Tools"
-        description="12 Bildformat-Konverter, Bildeditor, Favicon-Generator, Textzähler, Farbtools und QR-Codes. Ohne Registrierung, ohne Limits — alles läuft in Ihrem Browser."
+        description="24 Bildformat-Konverter, Bildeditor, Favicon-Generator, Textzähler, Farbtools und QR-Codes. Ohne Registrierung, ohne Limits — alles läuft in Ihrem Browser."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -555,6 +666,198 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG zu WebP Konverter',
+              topImageAlt: 'SVG zu WebP Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>SVG-Grafiken in leichtes WebP umwandeln. Ideal fur Websites.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/svg-zu-webp-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF zu WebP Konverter',
+              topImageAlt: 'GIF zu WebP Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Erstes GIF-Bild als leichtes WebP exportieren. Kleinere Datei.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/gif-zu-webp-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP zu WebP Konverter',
+              topImageAlt: 'BMP zu WebP Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% kleiner.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/bmp-zu-webp-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF zu JPG Konverter',
+              topImageAlt: 'AVIF zu JPG Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>AVIF-Dateien in universelles JPG umwandeln. Kompatibel uberall.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/avif-zu-jpg-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF zu PNG Konverter',
+              topImageAlt: 'AVIF zu PNG Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/avif-zu-png-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF zu WebP Konverter',
+              topImageAlt: 'AVIF zu WebP Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>AVIF-Dateien in WebP umwandeln. Breite Kompatibilitat.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/avif-zu-webp-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC zu JPG Konverter',
+              topImageAlt: 'HEIC zu JPG Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>iPhone HEIC-Fotos in universelles JPG umwandeln. Ohne Registrierung.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/heic-zu-jpg-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC zu PNG Konverter',
+              topImageAlt: 'HEIC zu PNG Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>iPhone HEIC-Fotos in verlustfreies PNG umwandeln. Volle Qualitat.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/heic-zu-png-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC zu WebP Konverter',
+              topImageAlt: 'HEIC zu WebP Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/heic-zu-webp-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF zu JPG Konverter',
+              topImageAlt: 'TIFF zu JPG Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/tiff-zu-jpg-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF zu PNG Konverter',
+              topImageAlt: 'TIFF zu PNG Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>TIFF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/tiff-zu-png-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF zu WebP Konverter',
+              topImageAlt: 'TIFF zu WebP Konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>TIFF-Dateien in leichtes WebP umwandeln. Massive Reduktion.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/de/werkzeuge/tiff-zu-webp-konverter">
+                      Tool offnen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -724,7 +1027,7 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Was sind Arteon-Tools?">
           <p className="mb-4">
-            22 kostenlose Online-Tools zur Erstellung und Optimierung von Inhalten für Websites, Social Media und Druck - WebP-Konverter, Favicon-Generator, Textzähler, Farbextraktor,
+            34 kostenlose Online-Tools zur Erstellung und Optimierung von Inhalten für Websites, Social Media und Druck - WebP-Konverter, Favicon-Generator, Textzähler, Farbextraktor,
             Paletten-Generator und QR-Codes.
           </p>
           <p>Alle Tools laufen in Ihrem Browser - Dateien werden nie an einen Server gesendet. Nutzen Sie sie ohne Registrierung und ohne Limits.</p>

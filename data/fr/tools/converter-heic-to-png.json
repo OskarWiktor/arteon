@@ -1,0 +1,158 @@
+{
+  "toolKey": "heicToPng",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur HEIC en PNG – HEIC PNG",
+    "description": "Convertissez les photos HEIC iPhone en PNG sans perte. Qualite et transparence completes.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-heic-en-png"
+  },
+  "hero": {
+    "title": "Convertisseur HEIC en PNG",
+    "description": "Convertissez les photos HEIC iPhone en PNG sans perte. Qualite et transparence completes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-heic-en-png",
+      "label": "Convertisseur HEIC en PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur HEIC en PNG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez les photos HEIC iPhone en PNG sans perte. Qualite et transparence completes.",
+      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "HEIC to PNG",
+      "description": "Convertissez les photos HEIC iPhone en PNG sans perte. Qualite et transparence completes.",
+      "steps": [
+        {
+          "name": "Add HEIC files",
+          "text": "Drag HEIC files onto the drop zone or click to select."
+        },
+        {
+          "name": "Convert",
+          "text": "Click convert. PNG is lossless - no quality setting needed."
+        },
+        {
+          "name": "Download PNG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ajouter des fichiers",
+          "description": "Drag HEIC files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Convertir",
+          "description": "PNG is lossless.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Telecharger",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertisseur HEIC en PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Lossless",
+          "description": "PNG preserves full image quality."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "HEIC → PNG?",
+          "answer": "Convertissez les photos HEIC iPhone en PNG sans perte. Qualite et transparence completes."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous a ameliorer nos outils",
+      "description": "Une idee, un bug ou une suggestion ? Ecrivez-nous, nous repondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur HEIC en PNG – Arteon",
+      "defaultSubject": "Feedback: Convertisseur HEIC en PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

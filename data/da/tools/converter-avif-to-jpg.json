@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToJpg",
+  "locale": "da",
+  "metadata": {
+    "title": "AVIF til JPG-konverter – AVIF JPG",
+    "description": "Konverter AVIF-filer til universel JPG. Kompatibel med alle programmer og platforme.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+    "path": "/da/vaerktojer/avif-til-jpg-konverter"
+  },
+  "hero": {
+    "title": "AVIF til JPG-konverter",
+    "description": "Konverter AVIF-filer til universel JPG. Kompatibel med alle programmer og platforme.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Vaerktojer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/avif-til-jpg-konverter",
+      "label": "AVIF til JPG-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "AVIF til JPG-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter AVIF-filer til universel JPG. Kompatibel med alle programmer og platforme.",
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to JPG",
+      "description": "Konverter AVIF-filer til universel JPG. Kompatibel med alle programmer og platforme.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust quality slider (60-95%). Default 85%."
+        },
+        {
+          "name": "Download JPG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tilfoej filer",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Indstil kvalitet",
+          "description": "JPG quality: 85% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Download",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF til JPG-konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust JPG quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede sporgsmal",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → JPG?",
+          "answer": "Konverter AVIF-filer til universel JPG. Kompatibel med alle programmer og platforme."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjaelp os med at forbedre vaerktojerne",
+      "description": "Har du en ide, fundet en fejl eller vil foresla en funktion? Skriv til os - vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+      "imageAlt": "AVIF til JPG-konverter – Arteon",
+      "defaultSubject": "Feedback: AVIF til JPG-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere gratis vaerktojer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

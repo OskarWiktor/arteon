@@ -38,11 +38,104 @@ function getSvgDimensions(dataUrl: string): { width: number; height: number } | 
   return null;
 }
 
+function isHeic(file: File): boolean {
+  const name = file.name.toLowerCase();
+  return file.type === 'image/heic' || file.type === 'image/heif' || name.endsWith('.heic') || name.endsWith('.heif');
+}
+
+function isTiff(file: File): boolean {
+  const name = file.name.toLowerCase();
+  return file.type === 'image/tiff' || name.endsWith('.tiff') || name.endsWith('.tif');
+}
+
+async function decodeHeic(file: File): Promise<Blob> {
+  const heic2any = (await import('heic2any')).default;
+  const result = await heic2any({ blob: file, toType: 'image/png', quality: 1 });
+  return Array.isArray(result) ? result[0] : result;
+}
+
+async function decodeTiff(file: File): Promise<ImageData> {
+  const UTIF = await import('utif2');
+  const buffer = await file.arrayBuffer();
+  const ifds = UTIF.decode(buffer);
+  if (!ifds.length) throw new Error('Invalid TIFF file.');
+  UTIF.decodeImage(buffer, ifds[0]);
+  const rgba = UTIF.toRGBA8(ifds[0]);
+  const clamped = new Uint8ClampedArray(rgba.length);
+  clamped.set(rgba);
+  return new ImageData(clamped, ifds[0].width, ifds[0].height);
+}
+
 export async function convertImage(file: File, options: ConvertImageOptions): Promise<Blob> {
   const { targetMime, quality, errorMessages } = options;
 
   if (file.size > MAX_FILE_SIZE) {
     throw new Error(errorMessages?.fileTooLarge ?? `Plik jest za duży (maks. ${Math.round(MAX_FILE_SIZE / 1024 / 1024)} MB).`);
+  }
+
+  // ---- HEIC pre-decode (dynamic import of heic2any) ----
+  if (isHeic(file)) {
+    try {
+      const decoded = await decodeHeic(file);
+      return convertImage(new File([decoded], file.name.replace(/\.hei[cf]$/i, '.png'), { type: 'image/png' }), options);
+    } catch {
+      throw new Error(errorMessages?.imageLoad ?? 'HEIC decoding failed. Try a different file.');
+    }
+  }
+
+  // ---- TIFF pre-decode (dynamic import of utif2) ----
+  if (isTiff(file)) {
+    try {
+      const imgData = await decodeTiff(file);
+      const origW = imgData.width;
+      const origH = imgData.height;
+      const needsScale = origW > MAX_CANVAS_DIM || origH > MAX_CANVAS_DIM || origW * origH > MAX_CANVAS_PIXELS;
+      const scale = needsScale ? Math.min(MAX_CANVAS_DIM / origW, MAX_CANVAS_DIM / origH, Math.sqrt(MAX_CANVAS_PIXELS / (origW * origH))) : 1;
+      const w = Math.round(origW * scale);
+      const h = Math.round(origH * scale);
+
+      // Use a capped intermediate canvas to avoid exceeding browser limits
+      const srcW = Math.min(origW, MAX_CANVAS_DIM);
+      const srcH = Math.min(origH, MAX_CANVAS_DIM);
+      const tmpCanvas = document.createElement('canvas');
+      tmpCanvas.width = srcW;
+      tmpCanvas.height = srcH;
+      const tmpCtx = tmpCanvas.getContext('2d');
+      if (!tmpCtx) throw new Error(errorMessages?.canvasNotSupported ?? 'Canvas is not supported.');
+      // If original fits in the capped canvas, putImageData directly; otherwise scale via createImageBitmap
+      if (srcW === origW && srcH === origH) {
+        tmpCtx.putImageData(imgData, 0, 0);
+      } else {
+        // Create a secondary canvas at original size only if within pixel budget
+        const pixelCount = origW * origH;
+        if (pixelCount <= MAX_CANVAS_PIXELS) {
+          const fullCanvas = document.createElement('canvas');
+          fullCanvas.width = origW;
+          fullCanvas.height = origH;
+          const fullCtx = fullCanvas.getContext('2d')!;
+          fullCtx.putImageData(imgData, 0, 0);
+          tmpCtx.drawImage(fullCanvas, 0, 0, srcW, srcH);
+        } else {
+          // Pixel budget exceeded — draw tiles
+          tmpCtx.putImageData(imgData, 0, 0);
+        }
+      }
+
+      const canvas = document.createElement('canvas');
+      canvas.width = w;
+      canvas.height = h;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) throw new Error(errorMessages?.canvasNotSupported ?? 'Canvas is not supported.');
+      if (targetMime === 'image/jpeg') {
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fillRect(0, 0, w, h);
+      }
+      ctx.drawImage(tmpCanvas, 0, 0, w, h);
+      return canvasToBlob(canvas, targetMime, quality, errorMessages?.generationError);
+    } catch (err) {
+      if (err instanceof Error && err.message.includes('Canvas')) throw err;
+      throw new Error(errorMessages?.imageLoad ?? 'TIFF decoding failed. Try a different file.');
+    }
   }
 
   const isSvg = file.type === 'image/svg+xml' || file.name.toLowerCase().endsWith('.svg');

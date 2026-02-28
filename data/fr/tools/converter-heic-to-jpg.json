@@ -1,0 +1,158 @@
+{
+  "toolKey": "heicToJpg",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur HEIC en JPG – HEIC JPG",
+    "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-heic-en-jpg"
+  },
+  "hero": {
+    "title": "Convertisseur HEIC en JPG",
+    "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-heic-en-jpg",
+      "label": "Convertisseur HEIC en JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur HEIC en JPG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur.",
+      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "HEIC to JPG",
+      "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur.",
+      "steps": [
+        {
+          "name": "Add HEIC files",
+          "text": "Drag HEIC files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust quality slider (60-95%). Default 85%."
+        },
+        {
+          "name": "Download JPG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ajouter des fichiers",
+          "description": "Drag HEIC files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Regler la qualite",
+          "description": "JPG quality: 85% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Telecharger",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertisseur HEIC en JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust JPG quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "HEIC → JPG?",
+          "answer": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous a ameliorer nos outils",
+      "description": "Une idee, un bug ou une suggestion ? Ecrivez-nous, nous repondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Convertisseur HEIC en JPG – Arteon",
+      "defaultSubject": "Feedback: Convertisseur HEIC en JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "toolKey": "heicToPng",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας HEIC σε PNG – HEIC PNG",
+    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG χωρις απωλειες. Πληρης ποιοτητα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
+    "path": "/el/ergaleia/metatropeas-heic-se-png"
+  },
+  "hero": {
+    "title": "Μετατροπέας HEIC σε PNG",
+    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG χωρις απωλειες. Πληρης ποιοτητα.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεια"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-heic-se-png",
+      "label": "Μετατροπέας HEIC σε PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας HEIC σε PNG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG χωρις απωλειες. Πληρης ποιοτητα.",
+      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "HEIC to PNG",
+      "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG χωρις απωλειες. Πληρης ποιοτητα.",
+      "steps": [
+        {
+          "name": "Add HEIC files",
+          "text": "Drag HEIC files onto the drop zone or click to select."
+        },
+        {
+          "name": "Convert",
+          "text": "Click convert. PNG is lossless - no quality setting needed."
+        },
+        {
+          "name": "Download PNG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Προσθηκη αρχειων",
+          "description": "Drag HEIC files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Μετατροπη",
+          "description": "PNG is lossless.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Ληψη",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Μετατροπέας HEIC σε PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Lossless",
+          "description": "PNG preserves full image quality."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνες ερωτησεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "HEIC → PNG?",
+          "answer": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG χωρις απωλειες. Πληρης ποιοτητα."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθηστε μας να βελτιωσουμε τα εργαλεια",
+      "description": "Εχετε μια ιδεα, βρηκατε σφαλμα ή θελετε να προτεινετε λειτουργια; Γραψτε μας - απανταμε εντος 24 ωρων.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
+      "imageAlt": "Μετατροπέας HEIC σε PNG – Arteon",
+      "defaultSubject": "Σχολια: Μετατροπέας HEIC σε PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ανακαλυψτε περισσοτερα δωρεαν εργαλεια"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

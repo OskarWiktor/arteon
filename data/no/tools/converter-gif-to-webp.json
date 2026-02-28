@@ -1,0 +1,158 @@
+{
+  "toolKey": "gifToWebp",
+  "locale": "no",
+  "metadata": {
+    "title": "GIF til WebP-konverterer – GIF WebP",
+    "description": "Eksporter forste GIF-bilde som lett WebP. Mindre fil, raskere lasting.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
+    "path": "/no/verktoy/gif-til-webp-konverterer"
+  },
+  "hero": {
+    "title": "GIF til WebP-konverterer",
+    "description": "Eksporter forste GIF-bilde som lett WebP. Mindre fil, raskere lasting.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktoy"
+    },
+    "third": {
+      "href": "/no/verktoy/gif-til-webp-konverterer",
+      "label": "GIF til WebP-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "GIF til WebP-konverterer",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Eksporter forste GIF-bilde som lett WebP. Mindre fil, raskere lasting.",
+      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "GIF to WebP",
+      "description": "Eksporter forste GIF-bilde som lett WebP. Mindre fil, raskere lasting.",
+      "steps": [
+        {
+          "name": "Add GIF files",
+          "text": "Drag GIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Legg til filer",
+          "description": "Drag GIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Still inn kvalitet",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Last ned",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF til WebP-konverterer",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte sporsmal",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "GIF → WebP?",
+          "answer": "Eksporter forste GIF-bilde som lett WebP. Mindre fil, raskere lasting."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss a forbedre verktoyene",
+      "description": "Har du en ide, funnet en feil eller vil foresla en funksjon? Skriv til oss - vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
+      "imageAlt": "GIF til WebP-konverterer – Arteon",
+      "defaultSubject": "Tilbakemelding: GIF til WebP-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere gratisverktoy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

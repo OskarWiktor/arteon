@@ -1,0 +1,158 @@
+{
+  "toolKey": "svgToWebp",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor SVG para WebP – SVG WebP",
+    "description": "Converta graficos SVG para WebP leve. Ideal para sites e redes sociais.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-svg-para-webp"
+  },
+  "hero": {
+    "title": "Conversor SVG para WebP",
+    "description": "Converta graficos SVG para WebP leve. Ideal para sites e redes sociais.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-svg-para-webp",
+      "label": "Conversor SVG para WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor SVG para WebP",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converta graficos SVG para WebP leve. Ideal para sites e redes sociais.",
+      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "SVG to WebP",
+      "description": "Converta graficos SVG para WebP leve. Ideal para sites e redes sociais.",
+      "steps": [
+        {
+          "name": "Add SVG files",
+          "text": "Drag SVG files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "SVG → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adicionar ficheiros",
+          "description": "Drag SVG files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Definir qualidade",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Descarregar",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Conversor SVG para WebP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "SVG → WebP?",
+          "answer": "Converta graficos SVG para WebP leve. Ideal para sites e redes sociais."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as ferramentas",
+      "description": "Tem uma ideia, encontrou um erro ou quer sugerir uma funcao? Escreva-nos, respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Conversor SVG para WebP – Arteon",
+      "defaultSubject": "Feedback: Conversor SVG para WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

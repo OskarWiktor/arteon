@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToWebp",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore AVIF in WebP – AVIF WebP",
+    "description": "Converti file AVIF in WebP. Ampia compatibilita con dimensioni ridotte.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-avif-in-webp"
+  },
+  "hero": {
+    "title": "Convertitore AVIF in WebP",
+    "description": "Converti file AVIF in WebP. Ampia compatibilita con dimensioni ridotte.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-avif-in-webp",
+      "label": "Convertitore AVIF in WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore AVIF in WebP",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti file AVIF in WebP. Ampia compatibilita con dimensioni ridotte.",
+      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to WebP",
+      "description": "Converti file AVIF in WebP. Ampia compatibilita con dimensioni ridotte.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Aggiungi file",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Imposta qualita",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Scarica",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertitore AVIF in WebP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → WebP?",
+          "answer": "Converti file AVIF in WebP. Ampia compatibilita con dimensioni ridotte."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare gli strumenti",
+      "description": "Hai un suggerimento, trovato un bug o vuoi proporre una funzione? Scrivici, rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore AVIF in WebP – Arteon",
+      "defaultSubject": "Feedback: Convertitore AVIF in WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

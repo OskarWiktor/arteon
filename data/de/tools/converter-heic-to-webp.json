@@ -1,0 +1,158 @@
+{
+  "toolKey": "heicToWebp",
+  "locale": "de",
+  "metadata": {
+    "title": "HEIC zu WebP Konverter – HEIC WebP",
+    "description": "iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei, schnelleres Laden.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/heic-zu-webp-konverter"
+  },
+  "hero": {
+    "title": "HEIC zu WebP Konverter",
+    "description": "iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei, schnelleres Laden.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/heic-zu-webp-konverter",
+      "label": "HEIC zu WebP Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEIC zu WebP Konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei, schnelleres Laden.",
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "HEIC to WebP",
+      "description": "iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei, schnelleres Laden.",
+      "steps": [
+        {
+          "name": "Add HEIC files",
+          "text": "Drag HEIC files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dateien hinzufugen",
+          "description": "Drag HEIC files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Qualitat einstellen",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Herunterladen",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC zu WebP Konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Haufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "HEIC → WebP?",
+          "answer": "iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei, schnelleres Laden."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, die Tools zu verbessern",
+      "description": "Eine Idee, einen Fehler gefunden oder eine Funktion vorschlagen? Schreiben Sie uns - wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "HEIC zu WebP Konverter – Arteon",
+      "defaultSubject": "Feedback: HEIC zu WebP Konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

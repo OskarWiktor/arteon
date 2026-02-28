@@ -1,0 +1,99 @@
+{
+  "toolKey": "avifToWebp",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter AVIF na WebP – zamień format przy zachowaniu małego rozmiaru",
+    "description": "Zamień pliki AVIF na WebP w przeglądarce. Szeroka kompatybilność przy zachowaniu małego rozmiaru. Bez rejestracji, bez wysyłania na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-avif-na-webp"
+  },
+  "hero": {
+    "title": "Konwerter AVIF na WebP – szeroka kompatybilność, mały rozmiar",
+    "description": "Zamień pliki AVIF na WebP. Uzyskaj szeroką kompatybilność bez znaczącego zwiększenia rozmiaru pliku. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/narzedzia", "label": "Narzędzia" },
+    "third": { "href": "/narzedzia/konwerter-avif-na-webp", "label": "Konwerter AVIF na WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter AVIF na WebP – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana AVIF na WebP online", "Konwersja AVIF do WebP"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter AVIF na WebP online. Zamień pliki AVIF na WebP z szeroką kompatybilnością — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja AVIF do WebP", "Regulacja poziomu jakości", "Zachowanie przezroczystości", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić AVIF na WebP online",
+      "description": "Instrukcja konwersji plików AVIF na format WebP.",
+      "steps": [
+        { "name": "Dodaj pliki AVIF", "text": "Przeciągnij pliki AVIF na wyznaczone pole albo wybierz je z dysku." },
+        { "name": "Ustaw jakość WebP", "text": "Wybierz jakość za pomocą suwaka (60–95%). Domyślna wartość 80% to dobry kompromis." },
+        { "name": "Pobierz pliki WebP", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować AVIF na WebP?",
+      "html": "<p class=\"text-mid mb-4\">AVIF oferuje doskonałą kompresję, ale jego obsługa jest wciąż ograniczona — szczególnie w starszych przeglądarkach, programach do edycji grafiki i systemach CMS. WebP to format opracowany przez Google, który jest obsługiwany przez wszystkie nowoczesne przeglądarki od 2020 roku.</p><p class=\"text-mid mb-4\">WebP oferuje kompresję o 25–35% lepszą niż JPG i obsługuje przezroczystość (kanał alfa). Choć AVIF ma nieco lepszą kompresję niż WebP, różnica jest niewielka — a WebP ma znacznie szerszą kompatybilność.</p><p class=\"text-mid\">Konwersja AVIF na WebP to dobry kompromis: zachowujesz mały rozmiar pliku, zyskujesz szeroką kompatybilność i nie tracisz przezroczystości.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter AVIF na WebP – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować AVIF na WebP?",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki AVIF", "description": "Przeciągnij pliki AVIF na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
+        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości WebP (domyślnie 80%). Dla zdjęć 80–85% daje dobry rezultat.", "icon": "RiEqualizerLine" },
+        { "title": "3. Pobierz WebP", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter AVIF na WebP?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz." },
+        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala dobrać kompromis między rozmiarem a jakością." },
+        { "icon": "RiImageEditLine", "title": "Zachowanie przezroczystości", "description": "WebP obsługuje kanał alfa — przezroczystość z AVIF zostanie zachowana." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji AVIF na WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy WebP jest lepszy od AVIF?",
+          "answer": "AVIF ma nieco lepszą kompresję niż WebP (o ok. 10–20%), ale WebP ma znacznie szerszą kompatybilność. Dla większości zastosowań WebP to bezpieczniejszy wybór."
+        },
+        { "question": "Czy przezroczystość zostanie zachowana?", "answer": "Tak. WebP obsługuje kanał alfa, więc przezroczyste obszary z pliku AVIF zostaną zachowane." },
+        { "question": "Czy moja przeglądarka obsługuje konwersję?", "answer": "Przeglądarka musi obsługiwać AVIF (Chrome 85+, Firefox 93+, Safari 16.4+). Jeśli nie, zaktualizuj przeglądarkę." },
+        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce." },
+        { "question": "Czy mogę konwertować wiele plików naraz?", "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter AVIF na WebP – Arteon",
+      "defaultSubject": "Feedback: Konwerter AVIF na WebP"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

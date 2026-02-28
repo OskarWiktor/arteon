@@ -1,0 +1,158 @@
+{
+  "toolKey": "heicToJpg",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας HEIC σε JPG – HEIC JPG",
+    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
+    "path": "/el/ergaleia/metatropeas-heic-se-jpg"
+  },
+  "hero": {
+    "title": "Μετατροπέας HEIC σε JPG",
+    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεια"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-heic-se-jpg",
+      "label": "Μετατροπέας HEIC σε JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας HEIC σε JPG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server.",
+      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "HEIC to JPG",
+      "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server.",
+      "steps": [
+        {
+          "name": "Add HEIC files",
+          "text": "Drag HEIC files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust quality slider (60-95%). Default 85%."
+        },
+        {
+          "name": "Download JPG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Προσθηκη αρχειων",
+          "description": "Drag HEIC files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ρυθμιση ποιοτητας",
+          "description": "JPG quality: 85% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Ληψη",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Μετατροπέας HEIC σε JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust JPG quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνες ερωτησεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "HEIC → JPG?",
+          "answer": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθηστε μας να βελτιωσουμε τα εργαλεια",
+      "description": "Εχετε μια ιδεα, βρηκατε σφαλμα ή θελετε να προτεινετε λειτουργια; Γραψτε μας - απανταμε εντος 24 ωρων.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
+      "imageAlt": "Μετατροπέας HEIC σε JPG – Arteon",
+      "defaultSubject": "Σχολια: Μετατροπέας HEIC σε JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ανακαλυψτε περισσοτερα δωρεαν εργαλεια"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

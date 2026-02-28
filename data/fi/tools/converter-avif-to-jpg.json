@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToJpg",
+  "locale": "fi",
+  "metadata": {
+    "title": "AVIF JPG -muunnin – AVIF JPG",
+    "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+    "path": "/fi/tyokalut/avif-jpg-muunnin"
+  },
+  "hero": {
+    "title": "AVIF JPG -muunnin",
+    "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Tyokalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/avif-jpg-muunnin",
+      "label": "AVIF JPG -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "AVIF JPG -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa.",
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to JPG",
+      "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust quality slider (60-95%). Default 85%."
+        },
+        {
+          "name": "Download JPG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lisaa tiedostoja",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Aseta laatu",
+          "description": "JPG quality: 85% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Lataa",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF JPG -muunnin",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust JPG quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → JPG?",
+          "answer": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan tyokaluja",
+      "description": "Onko sinulla idea, loysitko virheen tai haluatko ehdottaa toimintoa? Kirjoita meille - vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+      "imageAlt": "AVIF JPG -muunnin – Arteon",
+      "defaultSubject": "Palaute: AVIF JPG -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

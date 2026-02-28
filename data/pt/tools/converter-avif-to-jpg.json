@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToJpg",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor AVIF para JPG – AVIF JPG",
+    "description": "Converta ficheiros AVIF para JPG universal. Compativel com qualquer programa e plataforma.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-avif-para-jpg"
+  },
+  "hero": {
+    "title": "Conversor AVIF para JPG",
+    "description": "Converta ficheiros AVIF para JPG universal. Compativel com qualquer programa e plataforma.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-avif-para-jpg",
+      "label": "Conversor AVIF para JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor AVIF para JPG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converta ficheiros AVIF para JPG universal. Compativel com qualquer programa e plataforma.",
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to JPG",
+      "description": "Converta ficheiros AVIF para JPG universal. Compativel com qualquer programa e plataforma.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust quality slider (60-95%). Default 85%."
+        },
+        {
+          "name": "Download JPG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adicionar ficheiros",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Definir qualidade",
+          "description": "JPG quality: 85% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Descarregar",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Conversor AVIF para JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust JPG quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → JPG?",
+          "answer": "Converta ficheiros AVIF para JPG universal. Compativel com qualquer programa e plataforma."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as ferramentas",
+      "description": "Tem uma ideia, encontrou um erro ou quer sugerir uma funcao? Escreva-nos, respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Conversor AVIF para JPG – Arteon",
+      "defaultSubject": "Feedback: Conversor AVIF para JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

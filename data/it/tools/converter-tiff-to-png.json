@@ -1,0 +1,158 @@
+{
+  "toolKey": "tiffToPng",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore TIFF in PNG – TIFF PNG",
+    "description": "Converti file TIFF in PNG lossless. Preserva la qualita di scansioni e grafiche.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-tiff-in-png"
+  },
+  "hero": {
+    "title": "Convertitore TIFF in PNG",
+    "description": "Converti file TIFF in PNG lossless. Preserva la qualita di scansioni e grafiche.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-tiff-in-png",
+      "label": "Convertitore TIFF in PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore TIFF in PNG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti file TIFF in PNG lossless. Preserva la qualita di scansioni e grafiche.",
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "TIFF to PNG",
+      "description": "Converti file TIFF in PNG lossless. Preserva la qualita di scansioni e grafiche.",
+      "steps": [
+        {
+          "name": "Add TIFF files",
+          "text": "Drag TIFF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Convert",
+          "text": "Click convert. PNG is lossless - no quality setting needed."
+        },
+        {
+          "name": "Download PNG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "TIFF → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Aggiungi file",
+          "description": "Drag TIFF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Converti",
+          "description": "PNG is lossless.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Scarica",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertitore TIFF in PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Lossless",
+          "description": "PNG preserves full image quality."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "TIFF → PNG?",
+          "answer": "Converti file TIFF in PNG lossless. Preserva la qualita di scansioni e grafiche."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare gli strumenti",
+      "description": "Hai un suggerimento, trovato un bug o vuoi proporre una funzione? Scrivici, rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Convertitore TIFF in PNG – Arteon",
+      "defaultSubject": "Feedback: Convertitore TIFF in PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

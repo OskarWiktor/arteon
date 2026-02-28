@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToWebp",
+  "locale": "no",
+  "metadata": {
+    "title": "AVIF til WebP-konverterer – AVIF WebP",
+    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
+    "path": "/no/verktoy/avif-til-webp-konverterer"
+  },
+  "hero": {
+    "title": "AVIF til WebP-konverterer",
+    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktoy"
+    },
+    "third": {
+      "href": "/no/verktoy/avif-til-webp-konverterer",
+      "label": "AVIF til WebP-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "AVIF til WebP-konverterer",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse.",
+      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to WebP",
+      "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Legg til filer",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Still inn kvalitet",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Last ned",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF til WebP-konverterer",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte sporsmal",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → WebP?",
+          "answer": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss a forbedre verktoyene",
+      "description": "Har du en ide, funnet en feil eller vil foresla en funksjon? Skriv til oss - vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
+      "imageAlt": "AVIF til WebP-konverterer – Arteon",
+      "defaultSubject": "Tilbakemelding: AVIF til WebP-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere gratisverktoy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -27,11 +27,13 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Ilmaiset online-työkalut | Muuntimet, SEO, värit, favicon',
-  description: '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
+  description:
+    '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
   alternates: getToolsIndexAlternates('fi'),
   openGraph: {
     title: 'Ilmaiset online-työkalut | Muuntimet, SEO, värit, favicon',
-    description: '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
+    description:
+      '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
     url: toAbsoluteUrl('/fi/tyokalut'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -42,7 +44,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Ilmaiset online-työkalut — kuvamuuntimet, SEO, värit, favicon',
-  description: '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
+  description:
+    '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
   url: toAbsoluteUrl('/fi/tyokalut'),
   inLanguage: 'fi',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 22,
+    numberOfItems: 34,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -234,6 +237,114 @@ const schema = {
         name: 'GIF JPG -muunnin',
         description: 'Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.',
         url: toAbsoluteUrl('/fi/tyokalut/gif-jpg-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 23,
+        name: 'SVG WebP -muunnin',
+        description: 'Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille.',
+        url: toAbsoluteUrl('/fi/tyokalut/svg-webp-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 24,
+        name: 'GIF WebP -muunnin',
+        description: 'Vie GIF-kuvan ensimmainen ruutu kevyena WebP-kuvana.',
+        url: toAbsoluteUrl('/fi/tyokalut/gif-webp-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 25,
+        name: 'BMP WebP -muunnin',
+        description: 'Muunna BMP-tiedostot kevyeen WebP-muotoon. Jopa 95% pienempi.',
+        url: toAbsoluteUrl('/fi/tyokalut/bmp-webp-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 26,
+        name: 'AVIF JPG -muunnin',
+        description: 'Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkialla.',
+        url: toAbsoluteUrl('/fi/tyokalut/avif-jpg-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 27,
+        name: 'AVIF PNG -muunnin',
+        description: 'Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu.',
+        url: toAbsoluteUrl('/fi/tyokalut/avif-png-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 28,
+        name: 'AVIF WebP -muunnin',
+        description: 'Muunna AVIF-tiedostot WebP-muotoon. Laaja yhteensopivuus.',
+        url: toAbsoluteUrl('/fi/tyokalut/avif-webp-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 29,
+        name: 'HEIC JPG -muunnin',
+        description: 'Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista.',
+        url: toAbsoluteUrl('/fi/tyokalut/heic-jpg-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 30,
+        name: 'HEIC PNG -muunnin',
+        description: 'Muunna iPhone HEIC-valokuvat haviottomaan PNG-muotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/heic-png-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 31,
+        name: 'HEIC WebP -muunnin',
+        description: 'Muunna iPhone HEIC-valokuvat kevyeen WebP-muotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/heic-webp-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 32,
+        name: 'TIFF JPG -muunnin',
+        description: 'Muunna TIFF-tiedostot kompaktiin JPG-muotoon. Ihanteellinen skannauksille.',
+        url: toAbsoluteUrl('/fi/tyokalut/tiff-jpg-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 33,
+        name: 'TIFF PNG -muunnin',
+        description: 'Muunna TIFF-tiedostot haviottomaan PNG-muotoon.',
+        url: toAbsoluteUrl('/fi/tyokalut/tiff-png-muunnin'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 34,
+        name: 'TIFF WebP -muunnin',
+        description: 'Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava vahenema.',
+        url: toAbsoluteUrl('/fi/tyokalut/tiff-webp-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -503,6 +614,198 @@ export default function ToolsIndexPage() {
                   <div className="mt-4">
                     <Button arrow link="/fi/tyokalut/gif-jpg-muunnin">
                       Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG WebP -muunnin',
+              topImageAlt: 'SVG WebP -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/svg-webp-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF WebP -muunnin',
+              topImageAlt: 'GIF WebP -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Vie GIF-kuvan ensimmainen ruutu kevyena WebP-kuvana.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/gif-webp-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP WebP -muunnin',
+              topImageAlt: 'BMP WebP -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna BMP-tiedostot kevyeen WebP-muotoon. Jopa 95% pienempi.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/bmp-webp-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF JPG -muunnin',
+              topImageAlt: 'AVIF JPG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkialla.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/avif-jpg-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF PNG -muunnin',
+              topImageAlt: 'AVIF PNG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/avif-png-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF WebP -muunnin',
+              topImageAlt: 'AVIF WebP -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna AVIF-tiedostot WebP-muotoon. Laaja yhteensopivuus.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/avif-webp-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC JPG -muunnin',
+              topImageAlt: 'HEIC JPG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/heic-jpg-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC PNG -muunnin',
+              topImageAlt: 'HEIC PNG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna iPhone HEIC-valokuvat haviottomaan PNG-muotoon.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/heic-png-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC WebP -muunnin',
+              topImageAlt: 'HEIC WebP -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna iPhone HEIC-valokuvat kevyeen WebP-muotoon.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/heic-webp-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF JPG -muunnin',
+              topImageAlt: 'TIFF JPG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna TIFF-tiedostot kompaktiin JPG-muotoon. Ihanteellinen skannauksille.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/tiff-jpg-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF PNG -muunnin',
+              topImageAlt: 'TIFF PNG -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna TIFF-tiedostot haviottomaan PNG-muotoon.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/tiff-png-muunnin">
+                      Avaa tyokalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF WebP -muunnin',
+              topImageAlt: 'TIFF WebP -muunnin Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava vahenema.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/tiff-webp-muunnin">
+                      Avaa tyokalu
                     </Button>
                   </div>
                 </div>

@@ -1,0 +1,158 @@
+{
+  "toolKey": "heicToWebp",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník HEIC na WebP – HEIC WebP",
+    "description": "Prevedte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-heic-na-webp"
+  },
+  "hero": {
+    "title": "Převodník HEIC na WebP",
+    "description": "Prevedte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nastroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-heic-na-webp",
+      "label": "Převodník HEIC na WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník HEIC na WebP",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Prevedte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani.",
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "HEIC to WebP",
+      "description": "Prevedte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani.",
+      "steps": [
+        {
+          "name": "Add HEIC files",
+          "text": "Drag HEIC files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Pridat soubory",
+          "description": "Drag HEIC files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Nastavit kvalitu",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Stahnout",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Převodník HEIC na WebP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Casto kladene otazky",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "HEIC → WebP?",
+          "answer": "Prevedte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nam vylepsit nastroje",
+      "description": "Mate napad, nasli jste chybu nebo chcete navrhnout funkci? Napiste nam, odpovidame do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Převodník HEIC na WebP – Arteon",
+      "defaultSubject": "Zpetna vazba: Převodník HEIC na WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte dalsi bezplatne nastroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

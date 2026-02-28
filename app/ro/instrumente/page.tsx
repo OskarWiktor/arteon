@@ -28,12 +28,12 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 export const metadata = {
   title: 'Instrumente online gratuite | Convertoare, SEO, culori, favicon',
   description:
-    '22 instrumente gratuite: 12 convertoare de imagini (JPG, PNG, WebP, SVG, BMP, GIF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
+    '34 instrumente gratuite: 24 convertoare de imagini (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
   alternates: getToolsIndexAlternates('ro'),
   openGraph: {
     title: 'Instrumente online gratuite | Convertoare, SEO, culori, favicon',
     description:
-      '22 instrumente gratuite: 12 convertoare de imagini (JPG, PNG, WebP, SVG, BMP, GIF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
+      '34 instrumente gratuite: 24 convertoare de imagini (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
     url: toAbsoluteUrl('/ro/instrumente'),
     type: 'website',
     images: [
@@ -51,7 +51,7 @@ const schema = {
   '@type': 'CollectionPage',
   name: 'Instrumente online gratuite — convertoare de imagini, SEO, culori, favicon',
   description:
-    '22 instrumente gratuite: 12 convertoare de imagini (JPG, PNG, WebP, SVG, BMP, GIF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
+    '34 instrumente gratuite: 24 convertoare de imagini (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
   url: toAbsoluteUrl('/ro/instrumente'),
   inLanguage: 'ro',
   isPartOf: {
@@ -67,7 +67,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 22,
+    numberOfItems: 34,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -268,6 +268,114 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 23,
+        name: 'Convertor SVG in WebP',
+        description: 'Converteste grafice SVG in WebP usor. Ideal pentru site-uri.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-svg-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 24,
+        name: 'Convertor GIF in WebP',
+        description: 'Exporta primul cadru GIF ca WebP usor. Fisier mai mic.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-gif-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 25,
+        name: 'Convertor BMP in WebP',
+        description: 'Converteste fisiere BMP in WebP usor. Reducere pana la 95%.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-bmp-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 26,
+        name: 'Convertor AVIF in JPG',
+        description: 'Converteste fisiere AVIF in JPG universal. Compatibil cu orice.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-avif-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 27,
+        name: 'Convertor AVIF in PNG',
+        description: 'Converteste fisiere AVIF in PNG fara pierderi. Calitate pastrata.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-avif-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 28,
+        name: 'Convertor AVIF in WebP',
+        description: 'Converteste fisiere AVIF in WebP. Compatibilitate larga.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-avif-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 29,
+        name: 'Convertor HEIC in JPG',
+        description: 'Converteste fotografii HEIC de pe iPhone in JPG. Fara inregistrare.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-heic-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 30,
+        name: 'Convertor HEIC in PNG',
+        description: 'Converteste fotografii HEIC de pe iPhone in PNG fara pierderi.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-heic-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 31,
+        name: 'Convertor HEIC in WebP',
+        description: 'Converteste fotografii HEIC de pe iPhone in WebP usor.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-heic-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 32,
+        name: 'Convertor TIFF in JPG',
+        description: 'Converteste fisiere TIFF in JPG compact. Ideal pentru scanari.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-tiff-in-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 33,
+        name: 'Convertor TIFF in PNG',
+        description: 'Converteste fisiere TIFF in PNG fara pierderi.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-tiff-in-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 34,
+        name: 'Convertor TIFF in WebP',
+        description: 'Converteste fisiere TIFF in WebP usor. Reducere masiva.',
+        url: toAbsoluteUrl('/ro/instrumente/convertor-tiff-in-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -305,7 +413,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Instrumente online gratuite"
-        description="12 convertoare de formate imagine, editor de imagini, generator de favicon, contor de text, instrumente de culoare și coduri QR. Fără înregistrare, fără limite."
+        description="24 convertoare de formate imagine, editor de imagini, generator de favicon, contor de text, instrumente de culoare și coduri QR. Fără înregistrare, fără limite."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -362,7 +470,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Convertoare de formate imagine"
-          description="12 convertoare de imagini online — convertiți între JPG, PNG, WebP, SVG, BMP și GIF. Conversie în browser, fără trimitere de fișiere."
+          description="24 convertoare de imagini online — convertiți între JPG, PNG, WebP, SVG, BMP și GIF. Conversie în browser, fără trimitere de fișiere."
           grid="three"
           items={[
             {
@@ -557,6 +665,198 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor SVG in WebP',
+              topImageAlt: 'Convertor SVG in WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste grafice SVG in WebP usor. Ideal pentru site-uri.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-svg-in-webp">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor GIF in WebP',
+              topImageAlt: 'Convertor GIF in WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exporta primul cadru GIF ca WebP usor. Fisier mai mic.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-gif-in-webp">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor BMP in WebP',
+              topImageAlt: 'Convertor BMP in WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fisiere BMP in WebP usor. Reducere pana la 95%.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-bmp-in-webp">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor AVIF in JPG',
+              topImageAlt: 'Convertor AVIF in JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fisiere AVIF in JPG universal. Compatibil cu orice.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-avif-in-jpg">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor AVIF in PNG',
+              topImageAlt: 'Convertor AVIF in PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fisiere AVIF in PNG fara pierderi. Calitate pastrata.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-avif-in-png">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor AVIF in WebP',
+              topImageAlt: 'Convertor AVIF in WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fisiere AVIF in WebP. Compatibilitate larga.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-avif-in-webp">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor HEIC in JPG',
+              topImageAlt: 'Convertor HEIC in JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fotografii HEIC de pe iPhone in JPG. Fara inregistrare.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-heic-in-jpg">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor HEIC in PNG',
+              topImageAlt: 'Convertor HEIC in PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fotografii HEIC de pe iPhone in PNG fara pierderi.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-heic-in-png">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor HEIC in WebP',
+              topImageAlt: 'Convertor HEIC in WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fotografii HEIC de pe iPhone in WebP usor.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-heic-in-webp">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor TIFF in JPG',
+              topImageAlt: 'Convertor TIFF in JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fisiere TIFF in JPG compact. Ideal pentru scanari.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-tiff-in-jpg">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor TIFF in PNG',
+              topImageAlt: 'Convertor TIFF in PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fisiere TIFF in PNG fara pierderi.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-tiff-in-png">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Convertor TIFF in WebP',
+              topImageAlt: 'Convertor TIFF in WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteste fisiere TIFF in WebP usor. Reducere masiva.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-tiff-in-webp">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -722,7 +1022,7 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Ce sunt instrumentele Arteon?">
           <p className="mb-4">
-            22 instrumente online gratuite pentru pregătirea materialelor pentru site-uri web, social media și tipărire — convertor WebP, generator favicon, contor de text, extractor de culori,
+            34 instrumente online gratuite pentru pregătirea materialelor pentru site-uri web, social media și tipărire — convertor WebP, generator favicon, contor de text, extractor de culori,
             generator de palete și coduri QR.
           </p>
           <p>Toate instrumentele rulează în browserul dvs. — fișierele nu sunt trimise niciodată pe un server. Utilizați-le fără înregistrare și fără limite.</p>

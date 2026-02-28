@@ -90,10 +90,16 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
         'image/x-ms-bmp': ['.bmp'],
         'image/x-bmp': ['.bmp'],
         'image/svg+xml': ['.svg'],
+        'image/avif': ['.avif'],
+        'image/heic': ['.heic'],
+        'image/heif': ['.heif'],
+        'image/tiff': ['.tiff', '.tif'],
       };
-      const allowedExts = mimeList.flatMap((m) => extMap[m] ?? []);
+      const directExts = mimeList.filter((m) => m.startsWith('.')).map((m) => m.toLowerCase());
+      const allowedExts = [...directExts, ...mimeList.filter((m) => !m.startsWith('.')).flatMap((m) => extMap[m] ?? [])];
+      const mimeTypes = mimeList.filter((m) => !m.startsWith('.'));
       const valid = all.filter((f) => {
-        if (f.type && mimeList.some((m) => f.type === m)) return true;
+        if (f.type && mimeTypes.some((m) => f.type === m)) return true;
         const name = f.name.toLowerCase();
         return allowedExts.some((ext) => name.endsWith(ext));
       });

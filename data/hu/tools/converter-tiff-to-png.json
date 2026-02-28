@@ -1,0 +1,158 @@
+{
+  "toolKey": "tiffToPng",
+  "locale": "hu",
+  "metadata": {
+    "title": "TIFF PNG konverter – TIFF PNG",
+    "description": "TIFF fajlok konvertalasa vesztesgmentes PNG-re. Szkenek teljes minosege megorzese.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
+    "path": "/hu/eszkozok/tiff-png-konverter"
+  },
+  "hero": {
+    "title": "TIFF PNG konverter",
+    "description": "TIFF fajlok konvertalasa vesztesgmentes PNG-re. Szkenek teljes minosege megorzese.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszkozok"
+    },
+    "third": {
+      "href": "/hu/eszkozok/tiff-png-konverter",
+      "label": "TIFF PNG konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "TIFF PNG konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "TIFF fajlok konvertalasa vesztesgmentes PNG-re. Szkenek teljes minosege megorzese.",
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "TIFF to PNG",
+      "description": "TIFF fajlok konvertalasa vesztesgmentes PNG-re. Szkenek teljes minosege megorzese.",
+      "steps": [
+        {
+          "name": "Add TIFF files",
+          "text": "Drag TIFF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Convert",
+          "text": "Click convert. PNG is lossless - no quality setting needed."
+        },
+        {
+          "name": "Download PNG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "TIFF → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Fajlok hozzaadasa",
+          "description": "Drag TIFF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konvertalas",
+          "description": "PNG is lossless.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Letoltes",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "TIFF PNG konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Lossless",
+          "description": "PNG preserves full image quality."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismetelt kerdesek",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "TIFF → PNG?",
+          "answer": "TIFF fajlok konvertalasa vesztesgmentes PNG-re. Szkenek teljes minosege megorzese."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segitsen nekunk javitani az eszkozoket",
+      "description": "Van otlete, hibat talalt, vagy szeretne egy uj funkciot? Irjon nekunk - 24 oran belul valaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
+      "imageAlt": "TIFF PNG konverter – Arteon",
+      "defaultSubject": "Visszajelzes: TIFF PNG konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

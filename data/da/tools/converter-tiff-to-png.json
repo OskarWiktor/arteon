@@ -1,0 +1,158 @@
+{
+  "toolKey": "tiffToPng",
+  "locale": "da",
+  "metadata": {
+    "title": "TIFF til PNG-konverter – TIFF PNG",
+    "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+    "path": "/da/vaerktojer/tiff-til-png-konverter"
+  },
+  "hero": {
+    "title": "TIFF til PNG-konverter",
+    "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Vaerktojer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/tiff-til-png-konverter",
+      "label": "TIFF til PNG-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "TIFF til PNG-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger.",
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "TIFF to PNG",
+      "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger.",
+      "steps": [
+        {
+          "name": "Add TIFF files",
+          "text": "Drag TIFF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Convert",
+          "text": "Click convert. PNG is lossless - no quality setting needed."
+        },
+        {
+          "name": "Download PNG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "TIFF → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tilfoej filer",
+          "description": "Drag TIFF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konverter",
+          "description": "PNG is lossless.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Download",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "TIFF til PNG-konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Lossless",
+          "description": "PNG preserves full image quality."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede sporgsmal",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "TIFF → PNG?",
+          "answer": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjaelp os med at forbedre vaerktojerne",
+      "description": "Har du en ide, fundet en fejl eller vil foresla en funktion? Skriv til os - vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+      "imageAlt": "TIFF til PNG-konverter – Arteon",
+      "defaultSubject": "Feedback: TIFF til PNG-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere gratis vaerktojer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

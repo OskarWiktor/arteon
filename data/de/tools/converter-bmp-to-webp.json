@@ -1,0 +1,158 @@
+{
+  "toolKey": "bmpToWebp",
+  "locale": "de",
+  "metadata": {
+    "title": "BMP zu WebP Konverter – BMP WebP",
+    "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/bmp-zu-webp-konverter"
+  },
+  "hero": {
+    "title": "BMP zu WebP Konverter",
+    "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/bmp-zu-webp-konverter",
+      "label": "BMP zu WebP Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP zu WebP Konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion.",
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "BMP to WebP",
+      "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion.",
+      "steps": [
+        {
+          "name": "Add BMP files",
+          "text": "Drag BMP files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dateien hinzufugen",
+          "description": "Drag BMP files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Qualitat einstellen",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Herunterladen",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP zu WebP Konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Haufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "BMP → WebP?",
+          "answer": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, die Tools zu verbessern",
+      "description": "Eine Idee, einen Fehler gefunden oder eine Funktion vorschlagen? Schreiben Sie uns - wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "BMP zu WebP Konverter – Arteon",
+      "defaultSubject": "Feedback: BMP zu WebP Konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

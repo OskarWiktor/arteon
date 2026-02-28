@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToPng",
+  "locale": "de",
+  "metadata": {
+    "title": "AVIF zu PNG Konverter – AVIF PNG",
+    "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/avif-zu-png-konverter"
+  },
+  "hero": {
+    "title": "AVIF zu PNG Konverter",
+    "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/avif-zu-png-konverter",
+      "label": "AVIF zu PNG Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "AVIF zu PNG Konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten.",
+      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to PNG",
+      "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Convert",
+          "text": "Click convert. PNG is lossless - no quality setting needed."
+        },
+        {
+          "name": "Download PNG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dateien hinzufugen",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konvertieren",
+          "description": "PNG is lossless.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Herunterladen",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF zu PNG Konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Lossless",
+          "description": "PNG preserves full image quality."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Haufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → PNG?",
+          "answer": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, die Tools zu verbessern",
+      "description": "Eine Idee, einen Fehler gefunden oder eine Funktion vorschlagen? Schreiben Sie uns - wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "AVIF zu PNG Konverter – Arteon",
+      "defaultSubject": "Feedback: AVIF zu PNG Konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

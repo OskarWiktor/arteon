@@ -28,6 +28,18 @@ const CONVERSION_ROUTE_DEFS: ConversionRouteDef[] = [
   { source: 'gif', target: 'jpg', toolKey: 'gifToJpg', desktopOnly: false },
   { source: 'jpg', target: 'webp', toolKey: 'jpgToWebpSimple', desktopOnly: true },
   { source: 'png', target: 'webp', toolKey: 'pngToWebpSimple', desktopOnly: true },
+  { source: 'svg', target: 'webp', toolKey: 'svgToWebp', desktopOnly: false },
+  { source: 'gif', target: 'webp', toolKey: 'gifToWebp', desktopOnly: false },
+  { source: 'bmp', target: 'webp', toolKey: 'bmpToWebp', desktopOnly: false },
+  { source: 'avif', target: 'jpg', toolKey: 'avifToJpg', desktopOnly: false },
+  { source: 'avif', target: 'png', toolKey: 'avifToPng', desktopOnly: false },
+  { source: 'avif', target: 'webp', toolKey: 'avifToWebp', desktopOnly: false },
+  { source: 'heic', target: 'jpg', toolKey: 'heicToJpg', desktopOnly: false },
+  { source: 'heic', target: 'png', toolKey: 'heicToPng', desktopOnly: false },
+  { source: 'heic', target: 'webp', toolKey: 'heicToWebp', desktopOnly: false },
+  { source: 'tiff', target: 'jpg', toolKey: 'tiffToJpg', desktopOnly: false },
+  { source: 'tiff', target: 'png', toolKey: 'tiffToPng', desktopOnly: false },
+  { source: 'tiff', target: 'webp', toolKey: 'tiffToWebp', desktopOnly: false },
 ];
 
 export function getConversionRoutes(locale: Locale): ConversionRoute[] {
@@ -44,7 +56,7 @@ export function getConversionRoute(source: ImageFormat, target: OutputFormat, lo
   return { ...def, href };
 }
 
-export const SOURCE_FORMATS: ImageFormat[] = ['jpg', 'png', 'webp', 'svg', 'bmp', 'gif'];
+export const SOURCE_FORMATS: ImageFormat[] = ['jpg', 'png', 'webp', 'svg', 'bmp', 'gif', 'avif', 'heic', 'tiff'];
 export const TARGET_FORMATS: OutputFormat[] = ['jpg', 'png', 'webp'];
 
 export function getAvailableTargets(source: ImageFormat, locale: Locale): OutputFormat[] {

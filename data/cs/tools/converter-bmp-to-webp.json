@@ -1,0 +1,158 @@
+{
+  "toolKey": "bmpToWebp",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník BMP na WebP – BMP WebP",
+    "description": "Prevedte soubory BMP na lehke WebP. Snizeni velikosti az o 95%.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-bmp-na-webp"
+  },
+  "hero": {
+    "title": "Převodník BMP na WebP",
+    "description": "Prevedte soubory BMP na lehke WebP. Snizeni velikosti az o 95%.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nastroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-bmp-na-webp",
+      "label": "Převodník BMP na WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník BMP na WebP",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Prevedte soubory BMP na lehke WebP. Snizeni velikosti az o 95%.",
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "BMP to WebP",
+      "description": "Prevedte soubory BMP na lehke WebP. Snizeni velikosti az o 95%.",
+      "steps": [
+        {
+          "name": "Add BMP files",
+          "text": "Drag BMP files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Pridat soubory",
+          "description": "Drag BMP files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Nastavit kvalitu",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Stahnout",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Převodník BMP na WebP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Casto kladene otazky",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "BMP → WebP?",
+          "answer": "Prevedte soubory BMP na lehke WebP. Snizeni velikosti az o 95%."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nam vylepsit nastroje",
+      "description": "Mate napad, nasli jste chybu nebo chcete navrhnout funkci? Napiste nam, odpovidame do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Převodník BMP na WebP – Arteon",
+      "defaultSubject": "Zpetna vazba: Převodník BMP na WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte dalsi bezplatne nastroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

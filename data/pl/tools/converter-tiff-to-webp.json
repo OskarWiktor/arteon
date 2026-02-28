@@ -1,0 +1,105 @@
+{
+  "toolKey": "tiffToWebp",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter TIFF na WebP – ogromna redukcja rozmiaru skanów",
+    "description": "Zamień pliki TIFF na lekki WebP w przeglądarce. Ogromna redukcja rozmiaru przy zachowaniu jakości. Bez rejestracji, bez wysyłania na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-tiff-na-webp"
+  },
+  "hero": {
+    "title": "Konwerter TIFF na WebP – lekkie pliki ze skanów i zdjęć",
+    "description": "Zamień duże pliki TIFF na lekki WebP. Ustaw jakość i pobierz wynik. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/narzedzia", "label": "Narzędzia" },
+    "third": { "href": "/narzedzia/konwerter-tiff-na-webp", "label": "Konwerter TIFF na WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter TIFF na WebP – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana TIFF na WebP online", "Konwersja TIFF do WebP"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter TIFF na WebP online. Zamień pliki TIFF na lekki WebP — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja TIFF do WebP", "Regulacja poziomu jakości", "Ogromna redukcja rozmiaru", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić TIFF na WebP online",
+      "description": "Instrukcja konwersji plików TIFF na format WebP.",
+      "steps": [
+        { "name": "Dodaj pliki TIFF", "text": "Przeciągnij pliki TIFF na wyznaczone pole albo wybierz je z dysku." },
+        { "name": "Ustaw jakość WebP", "text": "Wybierz jakość za pomocą suwaka (60-95%). Domyślna wartość 80% to dobry kompromis." },
+        { "name": "Pobierz pliki WebP", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować TIFF na WebP?",
+      "html": "<p class=\"text-mid mb-4\">TIFF to format profesjonalny, który przechowuje dane bezstratnie. Pliki TIFF są bardzo duże — skan A4 w 300 DPI może ważyć 25-50 MB. WebP to nowoczesny format opracowany przez Google, który stosuje zaawansowaną kompresję stratną i bezstratną.</p><p class=\"text-mid mb-4\">Konwersja TIFF na WebP daje ogromną oszczędność miejsca — typowa redukcja wynosi 95-99%. WebP jest obsługiwany przez wszystkie nowoczesne przeglądarki i jest idealny do publikacji obrazów w internecie.</p><p class=\"text-mid\">To najlepsza opcja, gdy chcesz opublikować skany lub zdjęcia profesjonalne na swojej stronie internetowej — WebP zapewnia najlepszy stosunek jakości do rozmiaru pliku. Jeśli potrzebujesz uniwersalnej kompatybilności, rozważ <a href=\"/narzedzia/konwerter-tiff-na-jpg\">konwersję TIFF na JPG</a>.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter TIFF na WebP – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować TIFF na WebP?",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki TIFF", "description": "Przeciągnij pliki TIFF (.tiff lub .tif) na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
+        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości WebP (domyślnie 80%). Dla skanów dokumentów 75-80% to optymalne ustawienie.", "icon": "RiEqualizerLine" },
+        { "title": "3. Pobierz WebP", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter TIFF na WebP?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Skany i dokumenty nie opuszczają komputera. Konwersja odbywa się w przeglądarce." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz." },
+        { "icon": "RiSpeedLine", "title": "Ogromna oszczędność", "description": "TIFF na WebP to jedna z najbardziej efektywnych konwersji — redukcja rozmiaru o 95-99%." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji TIFF na WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile miejsca mogę zaoszczędzić?",
+          "answer": "Konwersja TIFF na WebP daje redukcję o 95-99%. Skan A4 w TIFF (30-50 MB) po konwersji na WebP przy jakości 80% zajmie zwykle 200-600 KB."
+        },
+        {
+          "question": "Czy WebP jest obsługiwany wszędzie?",
+          "answer": "WebP jest obsługiwany przez wszystkie nowoczesne przeglądarki (Chrome, Firefox, Safari 14+, Edge). Nie jest obsługiwany przez Internet Explorer, ale ten program nie jest już wspierany przez Microsoft."
+        },
+        { "question": "Czy konwersja obsługuje wielostronicowe pliki TIFF?", "answer": "Narzędzie konwertuje pierwszą stronę pliku TIFF. Wielostronicowe pliki TIFF nie są w pełni obsługiwane." },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą biblioteki JavaScript (utif2). Dokumenty nie opuszczają komputera."
+        },
+        { "question": "Czy mogę konwertować wiele plików naraz?", "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter TIFF na WebP – Arteon",
+      "defaultSubject": "Feedback: Konwerter TIFF na WebP"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

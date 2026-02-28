@@ -1,0 +1,158 @@
+{
+  "toolKey": "tiffToJpg",
+  "locale": "en",
+  "metadata": {
+    "title": "TIFF to JPG converter – TIFF JPG",
+    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/tiff-to-jpg-converter"
+  },
+  "hero": {
+    "title": "TIFF to JPG converter",
+    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/tiff-to-jpg-converter",
+      "label": "TIFF to JPG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "TIFF to JPG converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives.",
+      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "TIFF to JPG",
+      "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives.",
+      "steps": [
+        {
+          "name": "Add TIFF files",
+          "text": "Drag TIFF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust quality slider (60-95%). Default 85%."
+        },
+        {
+          "name": "Download JPG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "TIFF → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Add files",
+          "description": "Drag TIFF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Set quality",
+          "description": "JPG quality: 85% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Download",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "TIFF to JPG converter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust JPG quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "TIFF → JPG?",
+          "answer": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message - we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "TIFF to JPG converter – Arteon",
+      "defaultSubject": "Feedback: TIFF to JPG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

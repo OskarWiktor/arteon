@@ -1,0 +1,158 @@
+{
+  "toolKey": "gifToWebp",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor GIF para WebP – GIF WebP",
+    "description": "Converta o primeiro fotograma GIF para WebP leve. Ficheiro menor, carregamento rapido.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-gif-para-webp"
+  },
+  "hero": {
+    "title": "Conversor GIF para WebP",
+    "description": "Converta o primeiro fotograma GIF para WebP leve. Ficheiro menor, carregamento rapido.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-gif-para-webp",
+      "label": "Conversor GIF para WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor GIF para WebP",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converta o primeiro fotograma GIF para WebP leve. Ficheiro menor, carregamento rapido.",
+      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "GIF to WebP",
+      "description": "Converta o primeiro fotograma GIF para WebP leve. Ficheiro menor, carregamento rapido.",
+      "steps": [
+        {
+          "name": "Add GIF files",
+          "text": "Drag GIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adicionar ficheiros",
+          "description": "Drag GIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Definir qualidade",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Descarregar",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Conversor GIF para WebP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "GIF → WebP?",
+          "answer": "Converta o primeiro fotograma GIF para WebP leve. Ficheiro menor, carregamento rapido."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as ferramentas",
+      "description": "Tem uma ideia, encontrou um erro ou quer sugerir uma funcao? Escreva-nos, respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Conversor GIF para WebP – Arteon",
+      "defaultSubject": "Feedback: Conversor GIF para WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

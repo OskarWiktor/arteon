@@ -1,0 +1,158 @@
+{
+  "toolKey": "tiffToWebp",
+  "locale": "fi",
+  "metadata": {
+    "title": "TIFF WebP -muunnin – TIFF WebP",
+    "description": "Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava kokovahenema laadun sailyttaen.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+    "path": "/fi/tyokalut/tiff-webp-muunnin"
+  },
+  "hero": {
+    "title": "TIFF WebP -muunnin",
+    "description": "Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava kokovahenema laadun sailyttaen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Tyokalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/tiff-webp-muunnin",
+      "label": "TIFF WebP -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "TIFF WebP -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava kokovahenema laadun sailyttaen.",
+      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "TIFF to WebP",
+      "description": "Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava kokovahenema laadun sailyttaen.",
+      "steps": [
+        {
+          "name": "Add TIFF files",
+          "text": "Drag TIFF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "TIFF → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lisaa tiedostoja",
+          "description": "Drag TIFF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Aseta laatu",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Lataa",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "TIFF WebP -muunnin",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "TIFF → WebP?",
+          "answer": "Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava kokovahenema laadun sailyttaen."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan tyokaluja",
+      "description": "Onko sinulla idea, loysitko virheen tai haluatko ehdottaa toimintoa? Kirjoita meille - vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+      "imageAlt": "TIFF WebP -muunnin – Arteon",
+      "defaultSubject": "Palaute: TIFF WebP -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

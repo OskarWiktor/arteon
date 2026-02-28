@@ -6,7 +6,7 @@ import { useCallback } from 'react';
 import { useLocale, useDictionary } from '@/lib/LocaleContext';
 
 import { FORMAT_LABELS, type ImageFormat, type OutputFormat } from './types';
-import { getAvailableTargets, getConversionRoute, SOURCE_FORMATS, TARGET_FORMATS } from './conversionRoutes';
+import { getAvailableSources, getAvailableTargets, getConversionRoute, TARGET_FORMATS } from './conversionRoutes';
 
 interface FormatSelectorProps {
   currentSource: ImageFormat;
@@ -49,6 +49,8 @@ export default function FormatSelector({ currentSource, currentTarget, hasFiles 
   );
 
   const availableTargets = getAvailableTargets(currentSource, locale);
+  const availableSources = TARGET_FORMATS.flatMap((t) => getAvailableSources(t, locale));
+  const uniqueSources = Array.from(new Set(availableSources));
 
   return (
     <div className="mb-5 flex justify-center">
@@ -59,7 +61,7 @@ export default function FormatSelector({ currentSource, currentTarget, hasFiles 
           onChange={(e) => handleSourceChange(e.target.value as ImageFormat)}
           className="focus:border-primary focus:ring-primary rounded border border-neutral-300 bg-white px-3! py-2! text-xs font-medium focus:ring-1 focus:outline-none"
         >
-          {SOURCE_FORMATS.map((fmt) => (
+          {uniqueSources.map((fmt) => (
             <option key={fmt} value={fmt}>
               {FORMAT_LABELS[fmt]}
             </option>
@@ -72,15 +74,11 @@ export default function FormatSelector({ currentSource, currentTarget, hasFiles 
           onChange={(e) => handleTargetChange(e.target.value as OutputFormat)}
           className="focus:border-primary focus:ring-primary rounded border border-neutral-300 bg-white px-3! py-2! text-xs font-medium focus:ring-1 focus:outline-none"
         >
-          {TARGET_FORMATS.map((fmt) => {
-            const isAvailable = availableTargets.includes(fmt);
-            const isSame = fmt === currentSource;
-            return (
-              <option key={fmt} value={fmt} disabled={!isAvailable || isSame}>
-                {FORMAT_LABELS[fmt]}
-              </option>
-            );
-          })}
+          {availableTargets.map((fmt) => (
+            <option key={fmt} value={fmt}>
+              {FORMAT_LABELS[fmt]}
+            </option>
+          ))}
         </select>
       </div>
     </div>

@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToPng",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník AVIF na PNG – AVIF PNG",
+    "description": "Prevedte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+    "path": "/cs/nastroje/prevodnik-avif-na-png"
+  },
+  "hero": {
+    "title": "Převodník AVIF na PNG",
+    "description": "Prevedte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nastroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-avif-na-png",
+      "label": "Převodník AVIF na PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník AVIF na PNG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Prevedte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti.",
+      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to PNG",
+      "description": "Prevedte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Convert",
+          "text": "Click convert. PNG is lossless - no quality setting needed."
+        },
+        {
+          "name": "Download PNG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Pridat soubory",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Prevest",
+          "description": "PNG is lossless.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Stahnout",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Převodník AVIF na PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Lossless",
+          "description": "PNG preserves full image quality."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Casto kladene otazky",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → PNG?",
+          "answer": "Prevedte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nam vylepsit nastroje",
+      "description": "Mate napad, nasli jste chybu nebo chcete navrhnout funkci? Napiste nam, odpovidame do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
+      "imageAlt": "Převodník AVIF na PNG – Arteon",
+      "defaultSubject": "Zpetna vazba: Převodník AVIF na PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte dalsi bezplatne nastroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

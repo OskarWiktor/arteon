@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToJpg",
+  "locale": "nl",
+  "metadata": {
+    "title": "AVIF naar JPG converter – AVIF JPG",
+    "description": "Converteer AVIF-bestanden naar universeel JPG. Compatibel met elk programma en platform.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
+    "path": "/nl/tools/avif-naar-jpg-converter"
+  },
+  "hero": {
+    "title": "AVIF naar JPG converter",
+    "description": "Converteer AVIF-bestanden naar universeel JPG. Compatibel met elk programma en platform.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/avif-naar-jpg-converter",
+      "label": "AVIF naar JPG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "AVIF naar JPG converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteer AVIF-bestanden naar universeel JPG. Compatibel met elk programma en platform.",
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to JPG",
+      "description": "Converteer AVIF-bestanden naar universeel JPG. Compatibel met elk programma en platform.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust quality slider (60-95%). Default 85%."
+        },
+        {
+          "name": "Download JPG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Bestanden toevoegen",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kwaliteit instellen",
+          "description": "JPG quality: 85% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Downloaden",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF naar JPG converter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust JPG quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → JPG?",
+          "answer": "Converteer AVIF-bestanden naar universeel JPG. Compatibel met elk programma en platform."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons de tools te verbeteren",
+      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht, we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
+      "imageAlt": "AVIF naar JPG converter – Arteon",
+      "defaultSubject": "Feedback: AVIF naar JPG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

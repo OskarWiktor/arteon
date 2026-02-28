@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToJpg",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας AVIF σε JPG – AVIF JPG",
+    "description": "Μετατρεψτε αρχεια AVIF σε καθολικο JPG. Συμβατο με καθε προγραμμα και πλατφορμα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
+    "path": "/el/ergaleia/metatropeas-avif-se-jpg"
+  },
+  "hero": {
+    "title": "Μετατροπέας AVIF σε JPG",
+    "description": "Μετατρεψτε αρχεια AVIF σε καθολικο JPG. Συμβατο με καθε προγραμμα και πλατφορμα.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεια"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-avif-se-jpg",
+      "label": "Μετατροπέας AVIF σε JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας AVIF σε JPG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Μετατρεψτε αρχεια AVIF σε καθολικο JPG. Συμβατο με καθε προγραμμα και πλατφορμα.",
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to JPG",
+      "description": "Μετατρεψτε αρχεια AVIF σε καθολικο JPG. Συμβατο με καθε προγραμμα και πλατφορμα.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust quality slider (60-95%). Default 85%."
+        },
+        {
+          "name": "Download JPG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Προσθηκη αρχειων",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ρυθμιση ποιοτητας",
+          "description": "JPG quality: 85% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Ληψη",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Μετατροπέας AVIF σε JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust JPG quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνες ερωτησεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → JPG?",
+          "answer": "Μετατρεψτε αρχεια AVIF σε καθολικο JPG. Συμβατο με καθε προγραμμα και πλατφορμα."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθηστε μας να βελτιωσουμε τα εργαλεια",
+      "description": "Εχετε μια ιδεα, βρηκατε σφαλμα ή θελετε να προτεινετε λειτουργια; Γραψτε μας - απανταμε εντος 24 ωρων.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
+      "imageAlt": "Μετατροπέας AVIF σε JPG – Arteon",
+      "defaultSubject": "Σχολια: Μετατροπέας AVIF σε JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ανακαλυψτε περισσοτερα δωρεαν εργαλεια"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

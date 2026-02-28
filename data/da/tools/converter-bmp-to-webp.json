@@ -1,0 +1,158 @@
+{
+  "toolKey": "bmpToWebp",
+  "locale": "da",
+  "metadata": {
+    "title": "BMP til WebP-konverter – BMP WebP",
+    "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+    "path": "/da/vaerktojer/bmp-til-webp-konverter"
+  },
+  "hero": {
+    "title": "BMP til WebP-konverter",
+    "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Vaerktojer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/bmp-til-webp-konverter",
+      "label": "BMP til WebP-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP til WebP-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.",
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "BMP to WebP",
+      "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.",
+      "steps": [
+        {
+          "name": "Add BMP files",
+          "text": "Drag BMP files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tilfoej filer",
+          "description": "Drag BMP files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Indstil kvalitet",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Download",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP til WebP-konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede sporgsmal",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "BMP → WebP?",
+          "answer": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjaelp os med at forbedre vaerktojerne",
+      "description": "Har du en ide, fundet en fejl eller vil foresla en funktion? Skriv til os - vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+      "imageAlt": "BMP til WebP-konverter – Arteon",
+      "defaultSubject": "Feedback: BMP til WebP-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere gratis vaerktojer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "toolKey": "heicToPng",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter HEIC na PNG – zachowaj jakość zdjęć z iPhone",
+    "description": "Zamień zdjęcia HEIC z iPhone na bezstratny PNG w przeglądarce. Zachowaj pełną jakość i przezroczystość. Bez rejestracji, bez wysyłania na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-heic-na-png"
+  },
+  "hero": {
+    "title": "Konwerter HEIC na PNG – bezstratna konwersja zdjęć z iPhone",
+    "description": "Zamień pliki HEIC z iPhone na bezstratny PNG. Zachowaj pełną jakość i przezroczystość obrazu. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/narzedzia", "label": "Narzędzia" },
+    "third": { "href": "/narzedzia/konwerter-heic-na-png", "label": "Konwerter HEIC na PNG" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter HEIC na PNG – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana HEIC na PNG online", "Konwersja HEIC do PNG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter HEIC na PNG online. Zamień zdjęcia HEIC z iPhone na bezstratny PNG — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja HEIC/HEIF do PNG", "Zachowanie przezroczystości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić HEIC na PNG online",
+      "description": "Instrukcja konwersji plików HEIC na format PNG.",
+      "steps": [
+        { "name": "Dodaj pliki HEIC", "text": "Przeciągnij pliki HEIC z iPhone na wyznaczone pole albo wybierz je z dysku." },
+        { "name": "Konwertuj", "text": "Kliknij przycisk konwertuj. PNG to format bezstratny — nie ma suwaka jakości." },
+        { "name": "Pobierz pliki PNG", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować HEIC na PNG?",
+      "html": "<p class=\"text-mid mb-4\">HEIC to format używany domyślnie przez Apple na iPhone (od iOS 11). Oferuje doskonałą kompresję, ale nie jest powszechnie obsługiwany poza ekosystemem Apple. PNG (Portable Network Graphics) to format bezstratny obsługiwany przez każdy program i system operacyjny.</p><p class=\"text-mid mb-4\">PNG zachowuje pełną jakość obrazu — żadne dane pikseli nie są tracone. PNG obsługuje przezroczystość (kanał alfa), co czyni go idealnym do grafik wymagających przezroczystego tła.</p><p class=\"text-mid\">Konwersja HEIC na PNG jest przydatna, gdy potrzebujesz bezstratnego pliku do dalszej edycji, archiwizacji lub gdy wymagana jest przezroczystość. Jeśli zależy Ci na mniejszym rozmiarze pliku, rozważ <a href=\"/narzedzia/konwerter-heic-na-jpg\">konwersję HEIC na JPG</a> lub <a href=\"/narzedzia/konwerter-heic-na-webp\">HEIC na WebP</a>.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter HEIC na PNG – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować HEIC na PNG?",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki HEIC", "description": "Przeciągnij pliki HEIC z iPhone na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
+        { "title": "2. Konwertuj", "description": "Kliknij przycisk konwertuj. PNG jest bezstratny — jakość nie wymaga regulacji.", "icon": "RiLoopLeftLine" },
+        { "title": "3. Pobierz PNG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter HEIC na PNG?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Zdjęcia z iPhone nie opuszczają komputera. Konwersja odbywa się w przeglądarce." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz." },
+        { "icon": "RiImageEditLine", "title": "Bezstratna jakość", "description": "PNG zachowuje pełną jakość obrazu. Idealne do dalszej edycji w programie graficznym." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji HEIC na PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy konwersja HEIC na PNG jest bezstratna?",
+          "answer": "PNG to format bezstratny, więc wynikowy plik zachowuje pełną jakość. Jednak oryginalny HEIC jest formatem stratnym — utracone przez HEIC dane nie zostaną odzyskane."
+        },
+        {
+          "question": "Dlaczego plik PNG jest większy niż HEIC?",
+          "answer": "HEIC stosuje zaawansowaną kompresję stratną, a PNG jest bezstratny. Pliki PNG są zwykle 3–5 razy większe niż HEIC — to normalne i wynika z bezstratnej natury formatu."
+        },
+        { "question": "Czy przezroczystość zostanie zachowana?", "answer": "Tak. PNG obsługuje kanał alfa. Jeśli oryginalny HEIC miał przezroczyste obszary, zostaną one zachowane." },
+        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera." },
+        { "question": "Czy mogę konwertować wiele plików naraz?", "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter HEIC na PNG – Arteon",
+      "defaultSubject": "Feedback: Konwerter HEIC na PNG"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

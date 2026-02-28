@@ -1,0 +1,158 @@
+{
+  "toolKey": "svgToWebp",
+  "locale": "fi",
+  "metadata": {
+    "title": "SVG WebP -muunnin – SVG WebP",
+    "description": "Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille ja sosiaaliseen mediaan.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+    "path": "/fi/tyokalut/svg-webp-muunnin"
+  },
+  "hero": {
+    "title": "SVG WebP -muunnin",
+    "description": "Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille ja sosiaaliseen mediaan.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Tyokalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/svg-webp-muunnin",
+      "label": "SVG WebP -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG WebP -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille ja sosiaaliseen mediaan.",
+      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "SVG to WebP",
+      "description": "Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille ja sosiaaliseen mediaan.",
+      "steps": [
+        {
+          "name": "Add SVG files",
+          "text": "Drag SVG files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "SVG → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lisaa tiedostoja",
+          "description": "Drag SVG files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Aseta laatu",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Lataa",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "SVG WebP -muunnin",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "SVG → WebP?",
+          "answer": "Muunna SVG-grafiikat kevyeen WebP-muotoon. Ihanteellinen verkkosivuille ja sosiaaliseen mediaan."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan tyokaluja",
+      "description": "Onko sinulla idea, loysitko virheen tai haluatko ehdottaa toimintoa? Kirjoita meille - vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+      "imageAlt": "SVG WebP -muunnin – Arteon",
+      "defaultSubject": "Palaute: SVG WebP -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

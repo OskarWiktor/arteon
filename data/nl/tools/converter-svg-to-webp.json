@@ -1,0 +1,158 @@
+{
+  "toolKey": "svgToWebp",
+  "locale": "nl",
+  "metadata": {
+    "title": "SVG naar WebP converter – SVG WebP",
+    "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
+    "path": "/nl/tools/svg-naar-webp-converter"
+  },
+  "hero": {
+    "title": "SVG naar WebP converter",
+    "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/svg-naar-webp-converter",
+      "label": "SVG naar WebP converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG naar WebP converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media.",
+      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "SVG to WebP",
+      "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media.",
+      "steps": [
+        {
+          "name": "Add SVG files",
+          "text": "Drag SVG files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "SVG → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Bestanden toevoegen",
+          "description": "Drag SVG files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kwaliteit instellen",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Downloaden",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "SVG naar WebP converter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "SVG → WebP?",
+          "answer": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons de tools te verbeteren",
+      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht, we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
+      "imageAlt": "SVG naar WebP converter – Arteon",
+      "defaultSubject": "Feedback: SVG naar WebP converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

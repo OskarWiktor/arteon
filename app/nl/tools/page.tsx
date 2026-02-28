@@ -27,11 +27,13 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Gratis online tools | Converters, SEO, kleuren, favicon',
-  description: '22 gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
+  description:
+    '34 gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
   alternates: getToolsIndexAlternates('nl'),
   openGraph: {
     title: 'Gratis online tools | Converters, SEO, kleuren, favicon',
-    description: '22 gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
+    description:
+      '34 gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
     url: toAbsoluteUrl('/nl/tools'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -42,7 +44,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Gratis online tools — afbeeldingsconverters, SEO, kleuren, favicon',
-  description: '22 gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
+  description:
+    '34 gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
   url: toAbsoluteUrl('/nl/tools'),
   inLanguage: 'nl',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 22,
+    numberOfItems: 34,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -251,6 +254,114 @@ const schema = {
         name: 'GIF naar JPG converter',
         description: 'Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.',
         url: toAbsoluteUrl('/nl/tools/gif-naar-jpg-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 23,
+        name: 'SVG naar WebP converter',
+        description: 'Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites.',
+        url: toAbsoluteUrl('/nl/tools/svg-naar-webp-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 24,
+        name: 'GIF naar WebP converter',
+        description: 'Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand.',
+        url: toAbsoluteUrl('/nl/tools/gif-naar-webp-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 25,
+        name: 'BMP naar WebP converter',
+        description: 'Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner.',
+        url: toAbsoluteUrl('/nl/tools/bmp-naar-webp-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 26,
+        name: 'AVIF naar JPG converter',
+        description: 'Converteer AVIF-bestanden naar universeel JPG. Compatibel overal.',
+        url: toAbsoluteUrl('/nl/tools/avif-naar-jpg-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 27,
+        name: 'AVIF naar PNG converter',
+        description: 'Converteer AVIF-bestanden naar verliesvrij PNG. Volledige kwaliteit.',
+        url: toAbsoluteUrl('/nl/tools/avif-naar-png-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 28,
+        name: 'AVIF naar WebP converter',
+        description: 'Converteer AVIF-bestanden naar WebP. Brede compatibiliteit.',
+        url: toAbsoluteUrl('/nl/tools/avif-naar-webp-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 29,
+        name: 'HEIC naar JPG converter',
+        description: 'Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie.',
+        url: toAbsoluteUrl('/nl/tools/heic-naar-jpg-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 30,
+        name: 'HEIC naar PNG converter',
+        description: 'Converteer iPhone HEIC-fotos naar verliesvrij PNG.',
+        url: toAbsoluteUrl('/nl/tools/heic-naar-png-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 31,
+        name: 'HEIC naar WebP converter',
+        description: 'Converteer iPhone HEIC-fotos naar lichtgewicht WebP.',
+        url: toAbsoluteUrl('/nl/tools/heic-naar-webp-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 32,
+        name: 'TIFF naar JPG converter',
+        description: 'Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans.',
+        url: toAbsoluteUrl('/nl/tools/tiff-naar-jpg-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 33,
+        name: 'TIFF naar PNG converter',
+        description: 'Converteer TIFF-bestanden naar verliesvrij PNG.',
+        url: toAbsoluteUrl('/nl/tools/tiff-naar-png-converter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 34,
+        name: 'TIFF naar WebP converter',
+        description: 'Converteer TIFF-bestanden naar lichtgewicht WebP. Enorme reductie.',
+        url: toAbsoluteUrl('/nl/tools/tiff-naar-webp-converter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -528,6 +639,198 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG naar WebP converter',
+              topImageAlt: 'SVG naar WebP converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/svg-naar-webp-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF naar WebP converter',
+              topImageAlt: 'GIF naar WebP converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/gif-naar-webp-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP naar WebP converter',
+              topImageAlt: 'BMP naar WebP converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/bmp-naar-webp-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF naar JPG converter',
+              topImageAlt: 'AVIF naar JPG converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer AVIF-bestanden naar universeel JPG. Compatibel overal.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/avif-naar-jpg-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF naar PNG converter',
+              topImageAlt: 'AVIF naar PNG converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer AVIF-bestanden naar verliesvrij PNG. Volledige kwaliteit.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/avif-naar-png-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF naar WebP converter',
+              topImageAlt: 'AVIF naar WebP converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer AVIF-bestanden naar WebP. Brede compatibiliteit.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/avif-naar-webp-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC naar JPG converter',
+              topImageAlt: 'HEIC naar JPG converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/heic-naar-jpg-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC naar PNG converter',
+              topImageAlt: 'HEIC naar PNG converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer iPhone HEIC-fotos naar verliesvrij PNG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/heic-naar-png-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC naar WebP converter',
+              topImageAlt: 'HEIC naar WebP converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer iPhone HEIC-fotos naar lichtgewicht WebP.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/heic-naar-webp-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF naar JPG converter',
+              topImageAlt: 'TIFF naar JPG converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/tiff-naar-jpg-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF naar PNG converter',
+              topImageAlt: 'TIFF naar PNG converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer TIFF-bestanden naar verliesvrij PNG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/tiff-naar-png-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF naar WebP converter',
+              topImageAlt: 'TIFF naar WebP converter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer TIFF-bestanden naar lichtgewicht WebP. Enorme reductie.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/tiff-naar-webp-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -695,7 +998,7 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Wat zijn Arteon-tools?">
           <p className="mb-4">
-            22 gratis online tools voor het voorbereiden van materialen voor websites, social media en drukwerk — WebP-converter, favicon-generator, tekstteller, kleurextractor, palettengenerator en
+            34 gratis online tools voor het voorbereiden van materialen voor websites, social media en drukwerk — WebP-converter, favicon-generator, tekstteller, kleurextractor, palettengenerator en
             QR-codes.
           </p>
           <p>Alle tools draaien in uw browser — bestanden worden nooit naar een server gestuurd. Gebruik ze zonder registratie en zonder limieten.</p>

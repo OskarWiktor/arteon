@@ -28,12 +28,12 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 export const metadata = {
   title: 'Δωρεάν online εργαλεία | Μετατροπείς, SEO, χρώματα, favicon',
   description:
-    '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP, GIF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
+    '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
   alternates: getToolsIndexAlternates('el'),
   openGraph: {
     title: 'Δωρεάν online εργαλεία | Μετατροπείς, SEO, χρώματα, favicon',
     description:
-      '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP, GIF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
+      '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
     url: toAbsoluteUrl('/el/ergaleia'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -45,7 +45,7 @@ const schema = {
   '@type': 'CollectionPage',
   name: 'Δωρεάν online εργαλεία — μετατροπείς εικόνων, SEO, χρώματα, favicon',
   description:
-    '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP, GIF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
+    '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
   url: toAbsoluteUrl('/el/ergaleia'),
   inLanguage: 'el',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -57,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 22,
+    numberOfItems: 34,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -244,6 +244,114 @@ const schema = {
         name: 'Μετατροπέας GIF σε JPG',
         description: 'Εξαγωγή του πρώτου καρέ ενός GIF ως συμπαγές JPG. Μικρότερο αρχείο.',
         url: toAbsoluteUrl('/el/ergaleia/metatropeas-gif-se-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 23,
+        name: 'Metatropeas SVG se WebP',
+        description: 'Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-svg-se-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 24,
+        name: 'Metatropeas GIF se WebP',
+        description: 'Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-gif-se-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 25,
+        name: 'Metatropeas BMP se WebP',
+        description: 'Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση εως 95%.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-bmp-se-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 26,
+        name: 'Metatropeas AVIF se JPG',
+        description: 'Μετατρεψτε αρχεια AVIF σε καθολικο JPG. Συμβατο παντου.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-avif-se-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 27,
+        name: 'Metatropeas AVIF se PNG',
+        description: 'Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-avif-se-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 28,
+        name: 'Metatropeas AVIF se WebP',
+        description: 'Μετατρεψτε αρχεια AVIF σε WebP. Ευρεια συμβατοτητα.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-avif-se-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 29,
+        name: 'Metatropeas HEIC se JPG',
+        description: 'Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-heic-se-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 30,
+        name: 'Metatropeas HEIC se PNG',
+        description: 'Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-heic-se-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 31,
+        name: 'Metatropeas HEIC se WebP',
+        description: 'Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-heic-se-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 32,
+        name: 'Metatropeas TIFF se JPG',
+        description: 'Μετατρεψτε αρχεια TIFF σε συμπαγες JPG. Ιδανικο για σαρωσεις.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-tiff-se-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 33,
+        name: 'Metatropeas TIFF se PNG',
+        description: 'Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-tiff-se-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 34,
+        name: 'Metatropeas TIFF se WebP',
+        description: 'Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση.',
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-tiff-se-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -518,6 +626,198 @@ export default function ToolsIndexPage() {
                   <div className="mt-4">
                     <Button arrow link="/el/ergaleia/metatropeas-gif-se-jpg">
                       Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas SVG se WebP',
+              topImageAlt: 'Metatropeas SVG se WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-svg-se-webp">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas GIF se WebP',
+              topImageAlt: 'Metatropeas GIF se WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-gif-se-webp">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas BMP se WebP',
+              topImageAlt: 'Metatropeas BMP se WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση εως 95%.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-bmp-se-webp">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas AVIF se JPG',
+              topImageAlt: 'Metatropeas AVIF se JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε αρχεια AVIF σε καθολικο JPG. Συμβατο παντου.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-avif-se-jpg">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas AVIF se PNG',
+              topImageAlt: 'Metatropeas AVIF se PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-avif-se-png">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas AVIF se WebP',
+              topImageAlt: 'Metatropeas AVIF se WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε αρχεια AVIF σε WebP. Ευρεια συμβατοτητα.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-avif-se-webp">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas HEIC se JPG',
+              topImageAlt: 'Metatropeas HEIC se JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-heic-se-jpg">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas HEIC se PNG',
+              topImageAlt: 'Metatropeas HEIC se PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-heic-se-png">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas HEIC se WebP',
+              topImageAlt: 'Metatropeas HEIC se WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-heic-se-webp">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas TIFF se JPG',
+              topImageAlt: 'Metatropeas TIFF se JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε αρχεια TIFF σε συμπαγες JPG. Ιδανικο για σαρωσεις.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-tiff-se-jpg">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas TIFF se PNG',
+              topImageAlt: 'Metatropeas TIFF se PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-tiff-se-png">
+                      Ανοιγμα εργαλειου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Metatropeas TIFF se WebP',
+              topImageAlt: 'Metatropeas TIFF se WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-tiff-se-webp">
+                      Ανοιγμα εργαλειου
                     </Button>
                   </div>
                 </div>

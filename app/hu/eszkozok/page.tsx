@@ -27,11 +27,13 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Ingyenes online eszközök | Konverterek, SEO, színek, favicon',
-  description: '22 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
+  description:
+    '34 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
   alternates: getToolsIndexAlternates('hu'),
   openGraph: {
     title: 'Ingyenes online eszközök | Konverterek, SEO, színek, favicon',
-    description: '22 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
+    description:
+      '34 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
     url: toAbsoluteUrl('/hu/eszkozok'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -42,7 +44,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Ingyenes online eszközök — képkonverterek, SEO, színek, favicon',
-  description: '22 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
+  description:
+    '34 ingyenes online eszköz: 12 képkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generátor, képszerkesztő, szövegszámláló, színpaletták és QR-kódok. Regisztráció nélkül.',
   url: toAbsoluteUrl('/hu/eszkozok'),
   inLanguage: 'hu',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 22,
+    numberOfItems: 34,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -252,6 +255,114 @@ const schema = {
         name: 'GIF JPG konverter',
         description: 'Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.',
         url: toAbsoluteUrl('/hu/eszkozok/gif-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 23,
+        name: 'SVG WebP konverter',
+        description: 'SVG grafika konvertalasa konnyu WebP-re. Idealis weboldalakhoz.',
+        url: toAbsoluteUrl('/hu/eszkozok/svg-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 24,
+        name: 'GIF WebP konverter',
+        description: 'GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl.',
+        url: toAbsoluteUrl('/hu/eszkozok/gif-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 25,
+        name: 'BMP WebP konverter',
+        description: 'BMP fajlok konvertalasa konnyu WebP-re. Akar 95%-os csokkentes.',
+        url: toAbsoluteUrl('/hu/eszkozok/bmp-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 26,
+        name: 'AVIF JPG konverter',
+        description: 'AVIF fajlok konvertalasa univerzalis JPG-re. Kompatibilis mindenutt.',
+        url: toAbsoluteUrl('/hu/eszkozok/avif-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 27,
+        name: 'AVIF PNG konverter',
+        description: 'AVIF fajlok konvertalasa vesztesgmentes PNG-re. Teljes minoseg.',
+        url: toAbsoluteUrl('/hu/eszkozok/avif-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 28,
+        name: 'AVIF WebP konverter',
+        description: 'AVIF fajlok konvertalasa WebP-re. Szeles kompatibilitas.',
+        url: toAbsoluteUrl('/hu/eszkozok/avif-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 29,
+        name: 'HEIC JPG konverter',
+        description: 'iPhone HEIC fotok konvertalasa univerzalis JPG-re. Regisztracio nelkul.',
+        url: toAbsoluteUrl('/hu/eszkozok/heic-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 30,
+        name: 'HEIC PNG konverter',
+        description: 'iPhone HEIC fotok konvertalasa vesztesgmentes PNG-re.',
+        url: toAbsoluteUrl('/hu/eszkozok/heic-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 31,
+        name: 'HEIC WebP konverter',
+        description: 'iPhone HEIC fotok konvertalasa konnyu WebP-re. Kisebb meret.',
+        url: toAbsoluteUrl('/hu/eszkozok/heic-webp-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 32,
+        name: 'TIFF JPG konverter',
+        description: 'TIFF fajlok konvertalasa kompakt JPG-re. Idealis szkenekhez.',
+        url: toAbsoluteUrl('/hu/eszkozok/tiff-jpg-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 33,
+        name: 'TIFF PNG konverter',
+        description: 'TIFF fajlok konvertalasa vesztesgmentes PNG-re.',
+        url: toAbsoluteUrl('/hu/eszkozok/tiff-png-konverter'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 34,
+        name: 'TIFF WebP konverter',
+        description: 'TIFF fajlok konvertalasa konnyu WebP-re. Hatalmas meretcsokkentes.',
+        url: toAbsoluteUrl('/hu/eszkozok/tiff-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -532,6 +643,198 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG WebP konverter',
+              topImageAlt: 'SVG WebP konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>SVG grafika konvertalasa konnyu WebP-re. Idealis weboldalakhoz.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/svg-webp-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF WebP konverter',
+              topImageAlt: 'GIF WebP konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/gif-webp-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP WebP konverter',
+              topImageAlt: 'BMP WebP konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>BMP fajlok konvertalasa konnyu WebP-re. Akar 95%-os csokkentes.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/bmp-webp-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF JPG konverter',
+              topImageAlt: 'AVIF JPG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>AVIF fajlok konvertalasa univerzalis JPG-re. Kompatibilis mindenutt.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/avif-jpg-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF PNG konverter',
+              topImageAlt: 'AVIF PNG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>AVIF fajlok konvertalasa vesztesgmentes PNG-re. Teljes minoseg.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/avif-png-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF WebP konverter',
+              topImageAlt: 'AVIF WebP konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>AVIF fajlok konvertalasa WebP-re. Szeles kompatibilitas.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/avif-webp-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC JPG konverter',
+              topImageAlt: 'HEIC JPG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>iPhone HEIC fotok konvertalasa univerzalis JPG-re. Regisztracio nelkul.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/heic-jpg-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC PNG konverter',
+              topImageAlt: 'HEIC PNG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>iPhone HEIC fotok konvertalasa vesztesgmentes PNG-re.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/heic-png-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC WebP konverter',
+              topImageAlt: 'HEIC WebP konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>iPhone HEIC fotok konvertalasa konnyu WebP-re. Kisebb meret.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/heic-webp-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF JPG konverter',
+              topImageAlt: 'TIFF JPG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>TIFF fajlok konvertalasa kompakt JPG-re. Idealis szkenekhez.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/tiff-jpg-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF PNG konverter',
+              topImageAlt: 'TIFF PNG konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>TIFF fajlok konvertalasa vesztesgmentes PNG-re.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/tiff-png-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF WebP konverter',
+              topImageAlt: 'TIFF WebP konverter Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>TIFF fajlok konvertalasa konnyu WebP-re. Hatalmas meretcsokkentes.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/hu/eszkozok/tiff-webp-konverter">
+                      Megnyitas
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -697,7 +1000,7 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Mik azok az Arteon eszközök?">
           <p className="mb-4">
-            22 ingyenes online eszköz anyagok előkészítéséhez weboldalakhoz, közösségi médiához és nyomtatáshoz — WebP konverter, favicon generátor, szövegszámláló, színkinyerő, paletta generátor és
+            34 ingyenes online eszköz anyagok előkészítéséhez weboldalakhoz, közösségi médiához és nyomtatáshoz — WebP konverter, favicon generátor, szövegszámláló, színkinyerő, paletta generátor és
             QR-kódok.
           </p>
           <p>Minden eszköz a böngészőjében fut — a fájlok soha nem kerülnek szerverre küldésre. Használja regisztráció és korlátozás nélkül.</p>

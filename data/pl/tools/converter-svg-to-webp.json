@@ -1,0 +1,154 @@
+{
+  "toolKey": "svgToWebp",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter SVG na WebP – zamień wektor na lekki obraz",
+    "description": "Zamień grafikę wektorową SVG na rastrowy WebP w przeglądarce. Bez limitu plików, bez rejestracji. Pliki nie są wysyłane na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-svg-na-webp"
+  },
+  "hero": {
+    "title": "Konwerter SVG na WebP – lekki raster z wektora",
+    "description": "Zamień pliki SVG na WebP i uzyskaj lekki obraz rastrowy gotowy do publikacji. Ustaw jakość i pobierz wynik. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/narzedzia", "label": "Narzędzia" },
+    "third": { "href": "/narzedzia/konwerter-svg-na-webp", "label": "Konwerter SVG na WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter SVG na WebP – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana SVG na WebP online", "Konwersja SVG do WebP", "SVG to WebP converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter SVG na WebP online. Zamień grafikę wektorową SVG na lekki rastrowy WebP w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja SVG do WebP",
+        "Regulacja poziomu jakości (60–95%)",
+        "Konwersja wielu plików jednocześnie",
+        "Podgląd rozmiaru przed i po konwersji",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
+    },
+    "howTo": {
+      "name": "Jak zamienić SVG na WebP online",
+      "description": "Instrukcja konwersji plików SVG na format WebP za pomocą darmowego narzędzia online.",
+      "steps": [
+        { "name": "Dodaj pliki SVG", "text": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku." },
+        { "name": "Ustaw jakość WebP", "text": "Wybierz jakość wynikowego pliku WebP za pomocą suwaka (60–95%). Domyślna wartość 80% to dobry kompromis." },
+        { "name": "Pobierz pliki WebP", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować SVG na WebP?",
+      "html": "<p class=\"text-mid mb-4\">SVG (Scalable Vector Graphics) to format wektorowy, który skaluje się bez utraty jakości. Jest idealny do ikon, logotypów i prostych grafik. Jednak nie wszystkie platformy i aplikacje obsługują SVG — na przykład większość platform społecznościowych (Facebook, Instagram, LinkedIn) wymaga formatów rastrowych.</p><p class=\"text-mid mb-4\">WebP to nowoczesny format rastrowy opracowany przez Google, który oferuje kompresję stratną i bezstratną. Pliki WebP są średnio o 25–35% mniejsze niż JPG przy porównywalnej jakości wizualnej. Format obsługuje przezroczystość (kanał alfa), co czyni go dobrą alternatywą zarówno dla JPG, jak i PNG.</p><p class=\"text-mid\">Konwersja SVG na WebP ma sens, gdy potrzebujesz rastrowej wersji grafiki wektorowej — na przykład do postów w mediach społecznościowych, miniatur na stronie internetowej lub obrazów w newsletterach.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter SVG na WebP – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować SVG na WebP?",
+      "description": "Konwersja SVG na WebP zajmuje kilka sekund:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki SVG", "description": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików.", "icon": "RiUploadLine" },
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości WebP (domyślnie 80%). Niższa wartość oznacza mniejszy plik. Dla grafik wektorowych 75–85% daje dobry rezultat.",
+          "icon": "RiEqualizerLine"
+        },
+        { "title": "3. Pobierz WebP", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz. Przy każdym pliku widoczna jest informacja o rozmiarze.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować SVG na WebP?",
+      "description": "Konwersja SVG na WebP jest przydatna w wielu scenariuszach:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Media społecznościowe",
+          "description": "Facebook, Instagram i LinkedIn nie obsługują SVG. Konwersja na WebP pozwala opublikować grafikę w lekkiej formie rastrowej."
+        },
+        { "icon": "RiMailLine", "title": "Newslettery i e-maile", "description": "Większość klientów pocztowych nie renderuje SVG. WebP jest lekki i obsługiwany przez nowoczesne programy pocztowe." },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty i prezentacje",
+          "description": "Programy biurowe (Word, PowerPoint, Google Docs) nie zawsze obsługują SVG. WebP daje lekki plik rastrowy z dobrą jakością."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Miniaturki i podglądy",
+          "description": "Na stronach internetowych rastrowy WebP ładuje się szybciej niż SVG z dużą liczbą elementów i jest bardziej przewidywalny w renderowaniu."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Różnice między SVG a WebP",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">SVG</th><th class=\"text-dark py-2 text-left font-semibold\">WebP</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Wektorowy</td><td class=\"text-mid py-2\">Rastrowy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Skalowanie</td><td class=\"text-mid py-2 pr-4\">Bez utraty jakości</td><td class=\"text-mid py-2\">Utrata jakości przy powiększaniu</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Tak</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Ikony, logo, grafiki UI</td><td class=\"text-mid py-2\">Zdjęcia, grafiki rastrowe</td></tr><tr><td class=\"text-mid py-2 pr-4\">Obsługa w mediach społecznościowych</td><td class=\"text-mid py-2 pr-4\">Brak</td><td class=\"text-mid py-2\">Tak</td></tr></tbody></table></div><p class=\"text-mid mt-4\">SVG to idealny format do wyświetlania grafik wektorowych na stronach internetowych. Jeśli potrzebujesz rastrowej wersji w innym formacie, sprawdź <a href=\"/narzedzia/konwerter-svg-na-png\">konwersję SVG na PNG</a> lub <a href=\"/narzedzia/konwerter-svg-na-jpg\">SVG na JPG</a>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter SVG na WebP?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę grafik SVG naraz. Brak ograniczeń rozmiaru i ilości." },
+        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala dobrać kompromis między rozmiarem a jakością. 80% to dobra wartość dla większości zastosowań." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji SVG na WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy konwersja SVG na WebP zachowuje przezroczystość?",
+          "answer": "Tak. WebP obsługuje kanał alfa (przezroczystość), więc przezroczyste tło grafiki SVG zostanie zachowane po konwersji."
+        },
+        {
+          "question": "Jaka rozdzielczość ma wynikowy WebP?",
+          "answer": "Narzędzie renderuje SVG w jego natywnych wymiarach (atrybuty width/height lub viewBox). Jeśli SVG nie ma zdefiniowanych wymiarów, stosowany jest domyślny rozmiar 1024×1024 pikseli."
+        },
+        {
+          "question": "Czy konwersja działa z każdym plikiem SVG?",
+          "answer": "Tak, pod warunkiem że SVG jest poprawnie sformatowany. Pliki z zewnętrznymi odwołaniami (np. fonty, obrazy) mogą nie renderować się kompletnie, ponieważ przeglądarka nie ma dostępu do tych zasobów."
+        },
+        {
+          "question": "Jaki poziom jakości wybrać?",
+          "answer": "Dla grafik wektorowych z ostrymi krawędziami (logo, ikony, diagramy) jakość 80–90% daje dobry kompromis. Dla grafik z gradientami lub cieniami warto wybrać 85–95%."
+        },
+        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." },
+        {
+          "question": "Czy mogę konwertować wiele plików naraz?",
+          "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie — nie ma limitu. Wszystkie zostaną przekonwertowane, a potem można pobrać je pojedynczo lub wszystkie naraz."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter SVG na WebP – Arteon",
+      "defaultSubject": "Feedback: Konwerter SVG na WebP"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

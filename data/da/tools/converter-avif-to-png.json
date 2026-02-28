@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToPng",
+  "locale": "da",
+  "metadata": {
+    "title": "AVIF til PNG-konverter – AVIF PNG",
+    "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+    "path": "/da/vaerktojer/avif-til-png-konverter"
+  },
+  "hero": {
+    "title": "AVIF til PNG-konverter",
+    "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Vaerktojer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/avif-til-png-konverter",
+      "label": "AVIF til PNG-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "AVIF til PNG-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed.",
+      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to PNG",
+      "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Convert",
+          "text": "Click convert. PNG is lossless - no quality setting needed."
+        },
+        {
+          "name": "Download PNG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tilfoej filer",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konverter",
+          "description": "PNG is lossless.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Download",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF til PNG-konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Lossless",
+          "description": "PNG preserves full image quality."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede sporgsmal",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → PNG?",
+          "answer": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjaelp os med at forbedre vaerktojerne",
+      "description": "Har du en ide, fundet en fejl eller vil foresla en funktion? Skriv til os - vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+      "imageAlt": "AVIF til PNG-konverter – Arteon",
+      "defaultSubject": "Feedback: AVIF til PNG-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere gratis vaerktojer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

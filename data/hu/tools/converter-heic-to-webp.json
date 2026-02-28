@@ -1,0 +1,158 @@
+{
+  "toolKey": "heicToWebp",
+  "locale": "hu",
+  "metadata": {
+    "title": "HEIC WebP konverter – HEIC WebP",
+    "description": "iPhone HEIC fotok konvertalasa konnyu WebP-re. Kisebb meret, gyorsabb betoltes.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
+    "path": "/hu/eszkozok/heic-webp-konverter"
+  },
+  "hero": {
+    "title": "HEIC WebP konverter",
+    "description": "iPhone HEIC fotok konvertalasa konnyu WebP-re. Kisebb meret, gyorsabb betoltes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszkozok"
+    },
+    "third": {
+      "href": "/hu/eszkozok/heic-webp-konverter",
+      "label": "HEIC WebP konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEIC WebP konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "iPhone HEIC fotok konvertalasa konnyu WebP-re. Kisebb meret, gyorsabb betoltes.",
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "HEIC to WebP",
+      "description": "iPhone HEIC fotok konvertalasa konnyu WebP-re. Kisebb meret, gyorsabb betoltes.",
+      "steps": [
+        {
+          "name": "Add HEIC files",
+          "text": "Drag HEIC files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Fajlok hozzaadasa",
+          "description": "Drag HEIC files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Minoseg beallitasa",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Letoltes",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC WebP konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismetelt kerdesek",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "HEIC → WebP?",
+          "answer": "iPhone HEIC fotok konvertalasa konnyu WebP-re. Kisebb meret, gyorsabb betoltes."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segitsen nekunk javitani az eszkozoket",
+      "description": "Van otlete, hibat talalt, vagy szeretne egy uj funkciot? Irjon nekunk - 24 oran belul valaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
+      "imageAlt": "HEIC WebP konverter – Arteon",
+      "defaultSubject": "Visszajelzes: HEIC WebP konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

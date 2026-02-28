@@ -1,0 +1,158 @@
+{
+  "toolKey": "avifToPng",
+  "locale": "fi",
+  "metadata": {
+    "title": "AVIF PNG -muunnin – AVIF PNG",
+    "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+    "path": "/fi/tyokalut/avif-png-muunnin"
+  },
+  "hero": {
+    "title": "AVIF PNG -muunnin",
+    "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Tyokalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/avif-png-muunnin",
+      "label": "AVIF PNG -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "AVIF PNG -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty.",
+      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "AVIF to PNG",
+      "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty.",
+      "steps": [
+        {
+          "name": "Add AVIF files",
+          "text": "Drag AVIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Convert",
+          "text": "Click convert. PNG is lossless - no quality setting needed."
+        },
+        {
+          "name": "Download PNG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lisaa tiedostoja",
+          "description": "Drag AVIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Muunna",
+          "description": "PNG is lossless.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Lataa",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "AVIF PNG -muunnin",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Lossless",
+          "description": "PNG preserves full image quality."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "AVIF → PNG?",
+          "answer": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan tyokaluja",
+      "description": "Onko sinulla idea, loysitko virheen tai haluatko ehdottaa toimintoa? Kirjoita meille - vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+      "imageAlt": "AVIF PNG -muunnin – Arteon",
+      "defaultSubject": "Palaute: AVIF PNG -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

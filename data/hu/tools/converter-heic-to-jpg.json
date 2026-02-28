@@ -1,0 +1,158 @@
+{
+  "toolKey": "heicToJpg",
+  "locale": "hu",
+  "metadata": {
+    "title": "HEIC JPG konverter – HEIC JPG",
+    "description": "iPhone HEIC fotok konvertalasa univerzalis JPG-re. Regisztracio nelkul, szerverre kuldes nelkul.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
+    "path": "/hu/eszkozok/heic-jpg-konverter"
+  },
+  "hero": {
+    "title": "HEIC JPG konverter",
+    "description": "iPhone HEIC fotok konvertalasa univerzalis JPG-re. Regisztracio nelkul, szerverre kuldes nelkul.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszkozok"
+    },
+    "third": {
+      "href": "/hu/eszkozok/heic-jpg-konverter",
+      "label": "HEIC JPG konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEIC JPG konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "iPhone HEIC fotok konvertalasa univerzalis JPG-re. Regisztracio nelkul, szerverre kuldes nelkul.",
+      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "HEIC to JPG",
+      "description": "iPhone HEIC fotok konvertalasa univerzalis JPG-re. Regisztracio nelkul, szerverre kuldes nelkul.",
+      "steps": [
+        {
+          "name": "Add HEIC files",
+          "text": "Drag HEIC files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust quality slider (60-95%). Default 85%."
+        },
+        {
+          "name": "Download JPG",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Fajlok hozzaadasa",
+          "description": "Drag HEIC files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Minoseg beallitasa",
+          "description": "JPG quality: 85% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Letoltes",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "HEIC JPG konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust JPG quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismetelt kerdesek",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "HEIC → JPG?",
+          "answer": "iPhone HEIC fotok konvertalasa univerzalis JPG-re. Regisztracio nelkul, szerverre kuldes nelkul."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segitsen nekunk javitani az eszkozoket",
+      "description": "Van otlete, hibat talalt, vagy szeretne egy uj funkciot? Irjon nekunk - 24 oran belul valaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
+      "imageAlt": "HEIC JPG konverter – Arteon",
+      "defaultSubject": "Visszajelzes: HEIC JPG konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

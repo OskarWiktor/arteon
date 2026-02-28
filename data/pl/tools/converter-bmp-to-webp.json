@@ -1,0 +1,105 @@
+{
+  "toolKey": "bmpToWebp",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter BMP na WebP – zmniejsz rozmiar obrazu o 95%",
+    "description": "Zamień nieskompresowane pliki BMP na lekki WebP w przeglądarce. Redukcja rozmiaru nawet o 95%. Bez rejestracji, bez wysyłania na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-bmp-na-webp"
+  },
+  "hero": {
+    "title": "Konwerter BMP na WebP – ogromna redukcja rozmiaru pliku",
+    "description": "Zamień nieskompresowane pliki BMP na lekki WebP. Dodaj pliki, ustaw jakość i pobierz obrazy. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/narzedzia", "label": "Narzędzia" },
+    "third": { "href": "/narzedzia/konwerter-bmp-na-webp", "label": "Konwerter BMP na WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter BMP na WebP – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana BMP na WebP online", "Konwersja BMP do WebP"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter BMP na WebP online. Zamień nieskompresowane pliki BMP na lekki WebP w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja BMP do WebP", "Redukcja rozmiaru nawet o 95%", "Regulacja poziomu jakości", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić BMP na WebP online",
+      "description": "Instrukcja konwersji plików BMP na format WebP.",
+      "steps": [
+        { "name": "Dodaj pliki BMP", "text": "Przeciągnij pliki BMP na wyznaczone pole albo wybierz je z dysku." },
+        { "name": "Ustaw jakość WebP", "text": "Wybierz jakość za pomocą suwaka (60–95%). Domyślna wartość 80% to dobry kompromis." },
+        { "name": "Pobierz pliki WebP", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować BMP na WebP?",
+      "html": "<p class=\"text-mid mb-4\">BMP (Bitmap) to jeden z najstarszych formatów graficznych. Przechowuje dane pikseli bez kompresji, co oznacza bardzo duże pliki — zdjęcie 3000×2000 pikseli w BMP może ważyć ponad 17 MB. Format BMP nie obsługuje przezroczystości i nie jest zoptymalizowany pod kątem internetu.</p><p class=\"text-mid mb-4\">WebP to nowoczesny format opracowany przez Google, który stosuje zaawansowaną kompresję stratną i bezstratną. Pliki WebP są średnio o 25–35% mniejsze niż JPG i znacznie mniejsze niż BMP. WebP obsługuje przezroczystość (kanał alfa).</p><p class=\"text-mid\">Konwersja BMP na WebP daje ogromną oszczędność miejsca — typowa redukcja wynosi 90–97%. Jest to szczególnie przydatne, gdy masz screenshoty lub skany zapisane w formacie BMP i chcesz je udostępnić lub opublikować online.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter BMP na WebP – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować BMP na WebP?",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki BMP", "description": "Przeciągnij pliki BMP na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
+        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości WebP (domyślnie 80%). Dla zdjęć 80–85% to optymalne ustawienie.", "icon": "RiEqualizerLine" },
+        { "title": "3. Pobierz WebP", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter BMP na WebP?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń." },
+        { "icon": "RiSpeedLine", "title": "Ogromna oszczędność", "description": "BMP na WebP to jedna z najbardziej efektywnych konwersji — redukcja rozmiaru nawet o 95%." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji BMP na WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile miejsca mogę zaoszczędzić?",
+          "answer": "BMP to format nieskompresowany. Konwersja na WebP przy jakości 80% daje redukcję o 90–97%. Plik BMP o rozmiarze 10 MB po konwersji zajmie zwykle 200–500 KB."
+        },
+        {
+          "question": "Czy konwersja BMP na WebP powoduje utratę jakości?",
+          "answer": "WebP stosuje kompresję stratną, więc pewna utrata jakości jest możliwa. Przy jakości 80–85% różnica jest praktycznie niezauważalna. Narzędzie pozwala ustawić jakość od 60% do 95%."
+        },
+        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera." },
+        {
+          "question": "Czy WebP jest obsługiwany wszędzie?",
+          "answer": "WebP jest obsługiwany przez wszystkie nowoczesne przeglądarki (Chrome, Firefox, Safari, Edge) oraz większość systemów operacyjnych i programów graficznych."
+        },
+        { "question": "Czy mogę konwertować wiele plików naraz?", "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie. Wszystkie zostaną przekonwertowane." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter BMP na WebP – Arteon",
+      "defaultSubject": "Feedback: Konwerter BMP na WebP"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "toolKey": "gifToWebp",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας GIF σε WebP – GIF WebP",
+    "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
+    "path": "/el/ergaleia/metatropeas-gif-se-webp"
+  },
+  "hero": {
+    "title": "Μετατροπέας GIF σε WebP",
+    "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεια"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-gif-se-webp",
+      "label": "Μετατροπέας GIF σε WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας GIF σε WebP",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση.",
+      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "GIF to WebP",
+      "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση.",
+      "steps": [
+        {
+          "name": "Add GIF files",
+          "text": "Drag GIF files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Προσθηκη αρχειων",
+          "description": "Drag GIF files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ρυθμιση ποιοτητας",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Ληψη",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Μετατροπέας GIF σε WebP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνες ερωτησεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "GIF → WebP?",
+          "answer": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθηστε μας να βελτιωσουμε τα εργαλεια",
+      "description": "Εχετε μια ιδεα, βρηκατε σφαλμα ή θελετε να προτεινετε λειτουργια; Γραψτε μας - απανταμε εντος 24 ωρων.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
+      "imageAlt": "Μετατροπέας GIF σε WebP – Arteon",
+      "defaultSubject": "Σχολια: Μετατροπέας GIF σε WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ανακαλυψτε περισσοτερα δωρεαν εργαλεια"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

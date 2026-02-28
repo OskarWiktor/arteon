@@ -1,0 +1,152 @@
+{
+  "toolKey": "tiffToJpg",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter TIFF na JPG – zamień skany i zdjęcia profesjonalne",
+    "description": "Zamień pliki TIFF na kompaktowy JPG w przeglądarce. Idealne do skanów, dokumentów i archiwów fotograficznych. Bez rejestracji, bez wysyłania na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-tiff-na-jpg"
+  },
+  "hero": {
+    "title": "Konwerter TIFF na JPG – kompaktowe pliki ze skanów i zdjęć",
+    "description": "Zamień duże pliki TIFF na kompaktowy JPG. Ustaw jakość i pobierz wynik. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/narzedzia", "label": "Narzędzia" },
+    "third": { "href": "/narzedzia/konwerter-tiff-na-jpg", "label": "Konwerter TIFF na JPG" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter TIFF na JPG – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana TIFF na JPG online", "Konwersja TIFF do JPG", "TIFF to JPG converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter TIFF na JPG online. Zamień pliki TIFF na kompaktowy JPG w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": [
+        "Konwersja TIFF do JPG",
+        "Regulacja poziomu jakości (60-95%)",
+        "Konwersja wielu plików jednocześnie",
+        "Obsługa skanów i zdjęć profesjonalnych",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
+    },
+    "howTo": {
+      "name": "Jak zamienić TIFF na JPG online",
+      "description": "Instrukcja konwersji plików TIFF na format JPG.",
+      "steps": [
+        { "name": "Dodaj pliki TIFF", "text": "Przeciągnij pliki TIFF na wyznaczone pole albo wybierz je z dysku." },
+        { "name": "Ustaw jakość JPG", "text": "Wybierz jakość za pomocą suwaka (60-95%). Domyślna wartość 85% to dobry kompromis." },
+        { "name": "Pobierz pliki JPG", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować TIFF na JPG?",
+      "html": "<p class=\"text-mid mb-4\">TIFF (Tagged Image File Format) to format używany w profesjonalnej fotografii, poligrafii i archiwizacji dokumentów. TIFF przechowuje dane bezstratnie, co oznacza pełną jakość obrazu — ale też bardzo duże pliki. Pojedynczy skan A4 w rozdzielczości 300 DPI w formacie TIFF może ważyć 25-50 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) to najbardziej rozpowszechniony format graficzny. Stosuje kompresję stratną, dzięki której pliki są wielokrotnie mniejsze. Przy jakości 85% różnica wizualna między TIFF a JPG jest praktycznie niezauważalna dla ludzkiego oka.</p><p class=\"text-mid\">Konwersja TIFF na JPG jest przydatna, gdy potrzebujesz udostępnić skany, wysłać dokumenty e-mailem, opublikować zdjęcia w internecie lub zmniejszyć rozmiar archiwum fotograficznego.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter TIFF na JPG – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować TIFF na JPG?",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki TIFF", "description": "Przeciągnij pliki TIFF (.tiff lub .tif) na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
+        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości JPG (domyślnie 85%). Dla skanów dokumentów wystarczy 80%, dla zdjęć lepiej 85-90%.", "icon": "RiEqualizerLine" },
+        { "title": "3. Pobierz JPG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować TIFF na JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiMailLine",
+          "title": "Wysyłanie skanów e-mailem",
+          "description": "Skany w TIFF ważą dziesiątki MB. Konwersja na JPG zmniejsza rozmiar o 90-95%, co pozwala wysłać je jako załącznik."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Publikacja w internecie",
+          "description": "TIFF nie jest obsługiwany przez przeglądarki internetowe. Konwersja na JPG pozwala opublikować zdjęcia na stronie."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Archiwizacja dokumentów",
+          "description": "Archiwum skanów w TIFF zajmuje ogromną ilość miejsca. Konwersja na JPG pozwala zmniejszyć rozmiar archiwum wielokrotnie."
+        },
+        { "icon": "RiShoppingCartLine", "title": "Formularze i platformy", "description": "Większość platform i formularzy akceptuje JPG. Skany w TIFF trzeba najpierw przekonwertować." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Różnice między TIFF a JPG",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">TIFF</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Bezstratna (lub brak)</td><td class=\"text-mid py-2\">Stratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Bardzo duży (25-100 MB)</td><td class=\"text-mid py-2\">Mały (0,5-3 MB)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Poligrafia, skany, archiwizacja</td><td class=\"text-mid py-2\">Internet, e-mail, codzienne użycie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Obsługa w przeglądarkach</td><td class=\"text-mid py-2 pr-4\">Brak</td><td class=\"text-mid py-2\">Wszystkie</td></tr><tr><td class=\"text-mid py-2 pr-4\">Warstwy i strony</td><td class=\"text-mid py-2 pr-4\">Tak (wielostronicowe)</td><td class=\"text-mid py-2\">Nie</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Narzędzie konwertuje pierwszą stronę pliku TIFF. Jeśli plik TIFF jest wielostronicowy, tylko pierwsza strona zostanie wyeksportowana. Do bezstratnej konwersji rozważ <a href=\"/narzedzia/konwerter-tiff-na-png\">TIFF na PNG</a>.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter TIFF na JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Skany i dokumenty nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń rozmiaru i ilości." },
+        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala wybrać kompromis między rozmiarem a jakością. 85% to dobra wartość dla większości zastosowań." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji TIFF na JPG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Co to jest format TIFF?",
+          "answer": "TIFF (Tagged Image File Format) to format graficzny używany w profesjonalnej fotografii, poligrafii i archiwizacji. Przechowuje dane bezstratnie, co oznacza pełną jakość — ale też bardzo duże pliki. TIFF obsługuje wielostronicowość, warstwy i profile kolorów CMYK."
+        },
+        {
+          "question": "Ile miejsca mogę zaoszczędzić?",
+          "answer": "Konwersja TIFF na JPG daje redukcję o 90-97%. Skan A4 w TIFF (30-50 MB) po konwersji na JPG przy jakości 85% zajmie zwykle 0,5-2 MB."
+        },
+        {
+          "question": "Czy konwersja obsługuje wielostronicowe pliki TIFF?",
+          "answer": "Narzędzie konwertuje pierwszą stronę pliku TIFF. Jeśli plik zawiera wiele stron, tylko pierwsza zostanie wyeksportowana jako JPG."
+        },
+        {
+          "question": "Czy konwersja TIFF na JPG powoduje utratę jakości?",
+          "answer": "JPG to format stratny, więc pewna utrata jakości jest nieunikniona. Przy jakości 85% różnica jest praktycznie niezauważalna. Dla skanów dokumentów tekstowych nawet jakość 75-80% jest wystarczająca."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą biblioteki JavaScript (utif2). Dokumenty i skany nie opuszczają komputera."
+        },
+        { "question": "Czy mogę konwertować wiele plików naraz?", "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie. Wszystkie zostaną przekonwertowane." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter TIFF na JPG – Arteon",
+      "defaultSubject": "Feedback: Konwerter TIFF na JPG"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

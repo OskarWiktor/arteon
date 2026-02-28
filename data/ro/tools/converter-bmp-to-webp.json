@@ -1,0 +1,158 @@
+{
+  "toolKey": "bmpToWebp",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor BMP in WebP – BMP WebP",
+    "description": "Converteste fisiere BMP in WebP usor. Reducere de pana la 95%.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
+    "path": "/ro/instrumente/convertor-bmp-in-webp"
+  },
+  "hero": {
+    "title": "Convertor BMP in WebP",
+    "description": "Converteste fisiere BMP in WebP usor. Reducere de pana la 95%.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-bmp-in-webp",
+      "label": "Convertor BMP in WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor BMP in WebP",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteste fisiere BMP in WebP usor. Reducere de pana la 95%.",
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+    },
+    "howTo": {
+      "name": "BMP to WebP",
+      "description": "Converteste fisiere BMP in WebP usor. Reducere de pana la 95%.",
+      "steps": [
+        {
+          "name": "Add BMP files",
+          "text": "Drag BMP files onto the drop zone or click to select."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust quality slider (60-95%). Default 80%."
+        },
+        {
+          "name": "Download WebP",
+          "text": "Download files individually or all at once."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP → WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adauga fisiere",
+          "description": "Drag BMP files or click to select.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Seteaza calitatea",
+          "description": "WebP quality: 80% default.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Descarca",
+          "description": "Download individually or all at once.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertor BMP in WebP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy",
+          "description": "Files stay on your device. Nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No limits",
+          "description": "Convert as many files as you need."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Quality control",
+          "description": "Adjust WebP quality with the slider."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Bulk download",
+          "description": "Download all files with one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Intrebari frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "BMP → WebP?",
+          "answer": "Converteste fisiere BMP in WebP usor. Reducere de pana la 95%."
+        },
+        {
+          "question": "Server upload?",
+          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+        },
+        {
+          "question": "Multiple files?",
+          "answer": "Yes. Add as many files as you like. No limits."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajuta-ne sa imbunatatim instrumentele",
+      "description": "Ai o idee, ai gasit un bug sau vrei sa sugerezi o functie? Scrie-ne, raspundem in 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
+      "imageAlt": "Convertor BMP in WebP – Arteon",
+      "defaultSubject": "Feedback: Convertor BMP in WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descopera mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

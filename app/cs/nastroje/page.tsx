@@ -27,11 +27,13 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Bezplatné online nástroje | Převodníky, SEO, barvy, favicon',
-  description: '22 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP, GIF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
+  description:
+    '34 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
   alternates: getToolsIndexAlternates('cs'),
   openGraph: {
     title: 'Bezplatné online nástroje | Převodníky, SEO, barvy, favicon',
-    description: '22 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP, GIF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
+    description:
+      '34 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
     url: toAbsoluteUrl('/cs/nastroje'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -42,7 +44,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Bezplatné online nástroje — převodníky obrázků, SEO, barvy, favicon',
-  description: '22 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP, GIF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
+  description:
+    '34 bezplatných online nástrojů: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
   url: toAbsoluteUrl('/cs/nastroje'),
   inLanguage: 'cs',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 22,
+    numberOfItems: 34,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -251,6 +254,114 @@ const schema = {
         name: 'Převodník GIF na JPG',
         description: 'Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-gif-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 23,
+        name: 'Prevodnik SVG na WebP',
+        description: 'Prevedte grafiku SVG na lehke WebP. Idealni pro weby.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-svg-na-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 24,
+        name: 'Prevodnik GIF na WebP',
+        description: 'Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-gif-na-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 25,
+        name: 'Prevodnik BMP na WebP',
+        description: 'Prevedte soubory BMP na lehke WebP. Snizeni az o 95%.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-bmp-na-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 26,
+        name: 'Prevodnik AVIF na JPG',
+        description: 'Prevedte soubory AVIF na univerzalni JPG. Kompatibilni vsude.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-avif-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 27,
+        name: 'Prevodnik AVIF na PNG',
+        description: 'Prevedte soubory AVIF na bezztratove PNG. Plna kvalita.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-avif-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 28,
+        name: 'Prevodnik AVIF na WebP',
+        description: 'Prevedte soubory AVIF na WebP. Siroka kompatibilita.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-avif-na-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 29,
+        name: 'Prevodnik HEIC na JPG',
+        description: 'Prevedte fotky HEIC z iPhonu na univerzalni JPG. Bez registrace.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-heic-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 30,
+        name: 'Prevodnik HEIC na PNG',
+        description: 'Prevedte fotky HEIC z iPhonu na bezztratove PNG.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-heic-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 31,
+        name: 'Prevodnik HEIC na WebP',
+        description: 'Prevedte fotky HEIC z iPhonu na lehke WebP.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-heic-na-webp'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 32,
+        name: 'Prevodnik TIFF na JPG',
+        description: 'Prevedte soubory TIFF na kompaktni JPG. Idealni pro skeny.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-tiff-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 33,
+        name: 'Prevodnik TIFF na PNG',
+        description: 'Prevedte soubory TIFF na bezztratove PNG.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-tiff-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 34,
+        name: 'Prevodnik TIFF na WebP',
+        description: 'Prevedte soubory TIFF na lehke WebP. Masivni snizeni.',
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-tiff-na-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -524,6 +635,198 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik SVG na WebP',
+              topImageAlt: 'Prevodnik SVG na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte grafiku SVG na lehke WebP. Idealni pro weby.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-svg-na-webp">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik GIF na WebP',
+              topImageAlt: 'Prevodnik GIF na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-gif-na-webp">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik BMP na WebP',
+              topImageAlt: 'Prevodnik BMP na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte soubory BMP na lehke WebP. Snizeni az o 95%.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-bmp-na-webp">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik AVIF na JPG',
+              topImageAlt: 'Prevodnik AVIF na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte soubory AVIF na univerzalni JPG. Kompatibilni vsude.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-avif-na-jpg">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik AVIF na PNG',
+              topImageAlt: 'Prevodnik AVIF na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte soubory AVIF na bezztratove PNG. Plna kvalita.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-avif-na-png">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik AVIF na WebP',
+              topImageAlt: 'Prevodnik AVIF na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte soubory AVIF na WebP. Siroka kompatibilita.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-avif-na-webp">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik HEIC na JPG',
+              topImageAlt: 'Prevodnik HEIC na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte fotky HEIC z iPhonu na univerzalni JPG. Bez registrace.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-heic-na-jpg">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik HEIC na PNG',
+              topImageAlt: 'Prevodnik HEIC na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte fotky HEIC z iPhonu na bezztratove PNG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-heic-na-png">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik HEIC na WebP',
+              topImageAlt: 'Prevodnik HEIC na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte fotky HEIC z iPhonu na lehke WebP.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-heic-na-webp">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik TIFF na JPG',
+              topImageAlt: 'Prevodnik TIFF na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte soubory TIFF na kompaktni JPG. Idealni pro skeny.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-tiff-na-jpg">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik TIFF na PNG',
+              topImageAlt: 'Prevodnik TIFF na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte soubory TIFF na bezztratove PNG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-tiff-na-png">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Prevodnik TIFF na WebP',
+              topImageAlt: 'Prevodnik TIFF na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Prevedte soubory TIFF na lehke WebP. Masivni snizeni.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-tiff-na-webp">
+                      Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -686,7 +989,7 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Co jsou nastroje Arteon?">
           <p className="mb-4">
-            22 bezplatnych nastroju pro pripravu materialu pro web, socialni site a tisk — konvertor WebP, generator favicon, pocitadlo textu, extraktor barev, generator palet a QR kod.
+            34 bezplatnych nastroju pro pripravu materialu pro web, socialni site a tisk — konvertor WebP, generator favicon, pocitadlo textu, extraktor barev, generator palet a QR kod.
           </p>
           <p>Vsechny nastroje bezi v prohlizeci — soubory se nikdy neodesilaji na server. Pouzivejte bez registrace a bez omezeni.</p>
         </SectionInfo>

@@ -1,0 +1,102 @@
+{
+  "toolKey": "heicToWebp",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter HEIC na WebP – lekkie zdjęcia z iPhone na stronę",
+    "description": "Zamień zdjęcia HEIC z iPhone na lekki WebP w przeglądarce. Mniejszy rozmiar pliku, szybsze ładowanie strony. Bez rejestracji, bez wysyłania na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-heic-na-webp"
+  },
+  "hero": {
+    "title": "Konwerter HEIC na WebP – zdjęcia z iPhone gotowe do publikacji",
+    "description": "Zamień pliki HEIC z iPhone na lekki WebP. Mniejszy rozmiar, szybsze ładowanie i szeroka kompatybilność. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/narzedzia", "label": "Narzędzia" },
+    "third": { "href": "/narzedzia/konwerter-heic-na-webp", "label": "Konwerter HEIC na WebP" }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter HEIC na WebP – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana HEIC na WebP online", "Konwersja HEIC do WebP"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter HEIC na WebP online. Zamień zdjęcia HEIC z iPhone na lekki WebP — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja HEIC/HEIF do WebP", "Regulacja poziomu jakości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić HEIC na WebP online",
+      "description": "Instrukcja konwersji plików HEIC na format WebP.",
+      "steps": [
+        { "name": "Dodaj pliki HEIC", "text": "Przeciągnij pliki HEIC z iPhone na wyznaczone pole albo wybierz je z dysku." },
+        { "name": "Ustaw jakość WebP", "text": "Wybierz jakość za pomocą suwaka (60-95%). Domyślna wartość 80% to dobry kompromis." },
+        { "name": "Pobierz pliki WebP", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować HEIC na WebP?",
+      "html": "<p class=\"text-mid mb-4\">HEIC to format Apple używany domyślnie na iPhone (od iOS 11). Oferuje doskonałą kompresję, ale nie jest powszechnie obsługiwany poza ekosystemem Apple. WebP to format opracowany przez Google, obsługiwany przez wszystkie nowoczesne przeglądarki.</p><p class=\"text-mid mb-4\">WebP oferuje kompresję o 25-35% lepszą niż JPG, obsługuje przezroczystość i jest idealny do publikacji w internecie. Konwersja HEIC na WebP daje lekkie pliki gotowe do użycia na stronach internetowych.</p><p class=\"text-mid\">To najlepsza opcja, gdy chcesz opublikować zdjęcia z iPhone na swojej stronie internetowej — WebP zapewnia mały rozmiar pliku i szybkie ładowanie. Jeśli potrzebujesz uniwersalnej kompatybilności, rozważ <a href=\"/narzedzia/konwerter-heic-na-jpg\">konwersję HEIC na JPG</a>.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter HEIC na WebP – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować HEIC na WebP?",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki HEIC", "description": "Przeciągnij pliki HEIC z iPhone na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
+        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości WebP (domyślnie 80%). Dla zdjęć 80-85% daje dobry rezultat.", "icon": "RiEqualizerLine" },
+        { "title": "3. Pobierz WebP", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter HEIC na WebP?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Zdjęcia z iPhone nie opuszczają komputera. Konwersja odbywa się w przeglądarce." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz." },
+        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala dobrać kompromis między rozmiarem a jakością." },
+        { "icon": "RiImageEditLine", "title": "Zachowanie przezroczystości", "description": "WebP obsługuje kanał alfa — przezroczystość zostanie zachowana." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji HEIC na WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy WebP jest obsługiwany wszędzie?",
+          "answer": "WebP jest obsługiwany przez wszystkie nowoczesne przeglądarki (Chrome, Firefox, Safari 14+, Edge). Nie jest obsługiwany przez Internet Explorer, ale ten program nie jest już wspierany przez Microsoft."
+        },
+        {
+          "question": "Ile miejsca mogę zaoszczędzić?",
+          "answer": "Zdjęcie HEIC z iPhone (2-3 MB) po konwersji na WebP przy jakości 80% zajmuje zwykle 300-800 KB. Oszczędność wynosi 60-85% w porównaniu z oryginalnym HEIC."
+        },
+        { "question": "Czy przezroczystość zostanie zachowana?", "answer": "Tak. WebP obsługuje kanał alfa, więc przezroczyste obszary z pliku HEIC zostaną zachowane." },
+        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera." },
+        { "question": "Czy mogę konwertować wiele plików naraz?", "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter HEIC na WebP – Arteon",
+      "defaultSubject": "Feedback: Konwerter HEIC na WebP"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

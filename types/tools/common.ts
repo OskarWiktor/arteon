@@ -28,7 +28,19 @@ export type ToolItemKey =
   | 'gifToPng'
   | 'gifToJpg'
   | 'jpgToWebpSimple'
-  | 'pngToWebpSimple';
+  | 'pngToWebpSimple'
+  | 'svgToWebp'
+  | 'gifToWebp'
+  | 'bmpToWebp'
+  | 'avifToJpg'
+  | 'avifToPng'
+  | 'avifToWebp'
+  | 'heicToJpg'
+  | 'heicToPng'
+  | 'heicToWebp'
+  | 'tiffToJpg'
+  | 'tiffToPng'
+  | 'tiffToWebp';
 
 // ---------------------------------------------------------------------------
 // Tool section key - groups tools in navigation / index page

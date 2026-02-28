@@ -27,11 +27,13 @@ import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
   title: 'Gratis nettverktøy | Konverterere, SEO, farger, favicon',
-  description: '22 gratis nettverktøy: 12 bildekonverterere (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
+  description:
+    '34 gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
   alternates: getToolsIndexAlternates('no'),
   openGraph: {
     title: 'Gratis nettverktøy | Konverterere, SEO, farger, favicon',
-    description: '22 gratis nettverktøy: 12 bildekonverterere (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
+    description:
+      '34 gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
     url: toAbsoluteUrl('/no/verktoy'),
     type: 'website',
     images: [{ url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'), width: 1200, height: 630 }],
@@ -42,7 +44,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Gratis nettverktøy — bildekonverterere, SEO, farger, favicon',
-  description: '22 gratis nettverktøy: 12 bildekonverterere (JPG, PNG, WebP, SVG, BMP, GIF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
+  description:
+    '34 gratis nettverktøy: 24 bildekonverterere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildeeditor, tekstteller, fargepaletter og QR-koder. Uten registrering.',
   url: toAbsoluteUrl('/no/verktoy'),
   inLanguage: 'no',
   isPartOf: { '@type': 'WebSite', name: 'Arteon Agency', url: siteUrl },
@@ -54,7 +57,7 @@ const schema = {
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 22,
+    numberOfItems: 34,
     itemListElement: [
       {
         '@type': 'WebApplication',
@@ -237,6 +240,114 @@ const schema = {
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
+      {
+        '@type': 'WebApplication',
+        position: 23,
+        name: 'SVG til WebP-konverterer',
+        description: 'Konverter SVG-grafikk til lett WebP. Ideell for nettsider.',
+        url: toAbsoluteUrl('/no/verktoy/svg-til-webp-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 24,
+        name: 'GIF til WebP-konverterer',
+        description: 'Eksporter forste GIF-bilde som lett WebP. Mindre fil.',
+        url: toAbsoluteUrl('/no/verktoy/gif-til-webp-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 25,
+        name: 'BMP til WebP-konverterer',
+        description: 'Konverter BMP-filer til lett WebP. Opptil 95% mindre.',
+        url: toAbsoluteUrl('/no/verktoy/bmp-til-webp-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 26,
+        name: 'AVIF til JPG-konverterer',
+        description: 'Konverter AVIF-filer til universell JPG. Kompatibel overalt.',
+        url: toAbsoluteUrl('/no/verktoy/avif-til-jpg-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 27,
+        name: 'AVIF til PNG-konverterer',
+        description: 'Konverter AVIF-filer til tapsfri PNG. Full kvalitet.',
+        url: toAbsoluteUrl('/no/verktoy/avif-til-png-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 28,
+        name: 'AVIF til WebP-konverterer',
+        description: 'Konverter AVIF-filer til WebP. Bred kompatibilitet.',
+        url: toAbsoluteUrl('/no/verktoy/avif-til-webp-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 29,
+        name: 'HEIC til JPG-konverterer',
+        description: 'Konverter iPhone HEIC-bilder til universell JPG. Ingen registrering.',
+        url: toAbsoluteUrl('/no/verktoy/heic-til-jpg-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 30,
+        name: 'HEIC til PNG-konverterer',
+        description: 'Konverter iPhone HEIC-bilder til tapsfri PNG.',
+        url: toAbsoluteUrl('/no/verktoy/heic-til-png-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 31,
+        name: 'HEIC til WebP-konverterer',
+        description: 'Konverter iPhone HEIC-bilder til lett WebP.',
+        url: toAbsoluteUrl('/no/verktoy/heic-til-webp-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 32,
+        name: 'TIFF til JPG-konverterer',
+        description: 'Konverter TIFF-filer til kompakt JPG. Ideell for skanninger.',
+        url: toAbsoluteUrl('/no/verktoy/tiff-til-jpg-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 33,
+        name: 'TIFF til PNG-konverterer',
+        description: 'Konverter TIFF-filer til tapsfri PNG.',
+        url: toAbsoluteUrl('/no/verktoy/tiff-til-png-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 34,
+        name: 'TIFF til WebP-konverterer',
+        description: 'Konverter TIFF-filer til lett WebP. Massiv reduksjon.',
+        url: toAbsoluteUrl('/no/verktoy/tiff-til-webp-konverterer'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
     ],
   },
 };
@@ -259,7 +370,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Gratis verktoy"
-        description="12 bildformat-konverterere, bildeeditor, favicon-generator, tekstteller, fargeverktøy og QR-koder. Uten registrering, uten begrensninger."
+        description="24 bildformat-konverterere, bildeeditor, favicon-generator, tekstteller, fargeverktøy og QR-koder. Uten registrering, uten begrensninger."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -500,6 +611,198 @@ export default function ToolsIndexPage() {
                   <div className="mt-4">
                     <Button arrow link="/no/verktoy/gif-til-jpg-konverterer">
                       Åpne verktøy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'SVG til WebP-konverterer',
+              topImageAlt: 'SVG til WebP-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter SVG-grafikk til lett WebP. Ideell for nettsider.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/svg-til-webp-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'GIF til WebP-konverterer',
+              topImageAlt: 'GIF til WebP-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Eksporter forste GIF-bilde som lett WebP. Mindre fil.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/gif-til-webp-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'BMP til WebP-konverterer',
+              topImageAlt: 'BMP til WebP-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter BMP-filer til lett WebP. Opptil 95% mindre.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/bmp-til-webp-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF til JPG-konverterer',
+              topImageAlt: 'AVIF til JPG-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter AVIF-filer til universell JPG. Kompatibel overalt.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/avif-til-jpg-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF til PNG-konverterer',
+              topImageAlt: 'AVIF til PNG-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter AVIF-filer til tapsfri PNG. Full kvalitet.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/avif-til-png-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'AVIF til WebP-konverterer',
+              topImageAlt: 'AVIF til WebP-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter AVIF-filer til WebP. Bred kompatibilitet.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/avif-til-webp-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC til JPG-konverterer',
+              topImageAlt: 'HEIC til JPG-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter iPhone HEIC-bilder til universell JPG. Ingen registrering.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/heic-til-jpg-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC til PNG-konverterer',
+              topImageAlt: 'HEIC til PNG-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter iPhone HEIC-bilder til tapsfri PNG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/heic-til-png-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'HEIC til WebP-konverterer',
+              topImageAlt: 'HEIC til WebP-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter iPhone HEIC-bilder til lett WebP.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/heic-til-webp-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF til JPG-konverterer',
+              topImageAlt: 'TIFF til JPG-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter TIFF-filer til kompakt JPG. Ideell for skanninger.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/tiff-til-jpg-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF til PNG-konverterer',
+              topImageAlt: 'TIFF til PNG-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter TIFF-filer til tapsfri PNG.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/tiff-til-png-konverterer">
+                      Apne verktoy
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'TIFF til WebP-konverterer',
+              topImageAlt: 'TIFF til WebP-konverterer Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter TIFF-filer til lett WebP. Massiv reduksjon.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/no/verktoy/tiff-til-webp-konverterer">
+                      Apne verktoy
                     </Button>
                   </div>
                 </div>
