@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor WebP a PNG – conversión sin pérdida gratis",
     "description": "Convierte imágenes WebP a PNG sin pérdida. Conversión local, nada se envía al servidor.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-webp-a-png"
   },
   "hero": {
     "title": "Convertidor WebP a PNG – salida sin pérdida, compatibilidad total",
     "description": "Convierte archivos WebP a PNG sin pérdida. Añade imágenes, convierte al instante y descarga.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "¿Por qué convertir WebP a PNG?",
       "html": "<p class=\"text-mid mb-4\">PNG es un formato sin pérdida universalmente compatible. La conversión es útil cuando necesitas editar imágenes en herramientas que no soportan WebP o compartir archivos con destinatarios que usan software antiguo.</p><p class=\"text-mid\">PNG preserva la transparencia. Si el WebP original tenía canal alfa, el PNG lo conservará.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor WebP a PNG – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor WebP a PNG – Arteon",
       "defaultSubject": "Feedback: Convertidor WebP a PNG"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor GIF a PNG – extrae fotograma estático gratis",
     "description": "Exporta el primer fotograma de un GIF como PNG sin pérdida. Sin registro, sin subidas.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-gif-a-png"
   },
   "hero": {
     "title": "Convertidor GIF a PNG – imagen estática de cualquier GIF",
     "description": "Extrae el primer fotograma de un GIF como PNG sin pérdida. Añade archivos, convierte y descarga.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "¿Por qué convertir GIF a PNG?",
       "html": "<p class=\"text-mid mb-4\">GIF está limitado a 256 colores. PNG soporta millones de colores y transparencia alfa. La conversión es útil para extraer un fotograma estático de un GIF animado.</p><p class=\"text-mid\">Nota: esta herramienta extrae solo el primer fotograma de los GIF animados.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor GIF a PNG – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor GIF a PNG – Arteon",
       "defaultSubject": "Feedback: Convertidor GIF a PNG"
     },

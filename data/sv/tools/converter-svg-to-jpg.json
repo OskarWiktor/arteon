@@ -4,13 +4,13 @@
   "metadata": {
     "title": "SVG till JPG-konverterare – SVG JPG",
     "description": "Konvertera SVG-filer till kompakt JPG. Mindre fil, full kompatibilitet.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/svg-till-jpg-konverterare"
   },
   "hero": {
     "title": "SVG till JPG-konverterare",
     "description": "Konvertera SVG-filer till kompakt JPG. Mindre fil, full kompatibilitet.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "SVG till JPG-konverterare",
       "html": "<p class=\"text-mid\">Konvertera SVG-filer till kompakt JPG. Mindre fil, full kompatibilitet.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "SVG till JPG-konverterare – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
       "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande — vi svarar inom 24 timmar.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "SVG till JPG-konverterare – Arteon",
       "defaultSubject": "Feedback: SVG till JPG-konverterare"
     },

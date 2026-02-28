@@ -4,13 +4,13 @@
   "metadata": {
     "title": "GIF naar PNG converter – GIF PNG",
     "description": "Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/gif-naar-png-converter"
   },
   "hero": {
     "title": "GIF naar PNG converter",
     "description": "Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "GIF naar PNG converter",
       "html": "<p class=\"text-mid\">Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "GIF naar PNG converter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
       "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "GIF naar PNG converter – Arteon",
       "defaultSubject": "Feedback: GIF naar PNG converter"
     },

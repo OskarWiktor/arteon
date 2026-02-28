@@ -4,13 +4,13 @@
   "metadata": {
     "title": "SVG naar PNG converter – SVG PNG",
     "description": "Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/svg-naar-png-converter"
   },
   "hero": {
     "title": "SVG naar PNG converter",
     "description": "Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "SVG naar PNG converter",
       "html": "<p class=\"text-mid\">Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "SVG naar PNG converter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
       "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "SVG naar PNG converter – Arteon",
       "defaultSubject": "Feedback: SVG naar PNG converter"
     },

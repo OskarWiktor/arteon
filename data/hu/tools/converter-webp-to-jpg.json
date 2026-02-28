@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP JPG konverter – WebP JPG",
     "description": "WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/webp-jpg-konverter"
   },
   "hero": {
     "title": "WebP JPG konverter",
     "description": "WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "WebP JPG konverter",
       "html": "<p class=\"text-mid\">WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "WebP JPG konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Segítsen javítani eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "WebP JPG konverter – Arteon",
       "defaultSubject": "Feedback: WebP JPG konverter"
     },

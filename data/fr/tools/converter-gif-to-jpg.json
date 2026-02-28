@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertisseur GIF en JPG – extrayez une image en JPG gratuitement",
     "description": "Exportez la première image d'un GIF en JPG compact. Fichier réduit, chargement rapide.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-gif-en-jpg"
   },
   "hero": {
     "title": "Convertisseur GIF en JPG – image compacte de n'importe quel GIF",
     "description": "Extrayez la première image d'un GIF en JPG. Ajoutez, réglez la qualité et téléchargez.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Pourquoi convertir GIF en JPG ?",
       "html": "<p class=\"text-mid mb-4\">Les fichiers GIF peuvent être étonnamment volumineux. Extraire une image en JPG produit un fichier compact et universellement compatible.</p><p class=\"text-mid\">Note : JPG ne supporte pas la transparence. Les zones transparentes deviennent blanches.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur GIF en JPG – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Aidez-nous à améliorer nos outils",
       "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur GIF en JPG – Arteon",
       "defaultSubject": "Feedback: Convertisseur GIF en JPG"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP to JPG converter \u2013 make WebP universally compatible",
     "description": "Convert WebP images to JPG in your browser. No file limits, no signup, no uploads. Get universally compatible JPG files instantly.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/webp-to-jpg-converter"
   },
   "hero": {
     "title": "WebP to JPG converter \u2013 universal compatibility in one click",
     "description": "Convert WebP files to JPG that works everywhere. Add images, convert in your browser, and download. No server uploads, no registration.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/en/tools", "label": "Tools" },
@@ -41,7 +41,7 @@
       "type": "sectionBasic",
       "title": "Why convert WebP to JPG?",
       "html": "<p class=\"text-mid mb-4\">WebP is a modern image format developed by Google that offers excellent compression. However, not every application supports WebP \u2014 older image editors, some email clients, and certain document workflows still expect JPG or PNG files.</p><p class=\"text-mid mb-4\">Converting WebP to JPG gives you a universally compatible image that opens in every program, browser, and operating system. JPG is the most widely supported photo format and is accepted by virtually every platform.</p><p class=\"text-mid mb-4\">Common reasons to convert include: uploading to platforms that reject WebP, attaching images to emails, inserting photos into documents, or sharing with recipients whose software does not handle WebP.</p><p class=\"text-mid\">This converter runs 100% in your browser. Files are never sent to any server.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "WebP to JPG converter \u2013 Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -116,7 +116,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message \u2014 we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "WebP to JPG converter \u2013 Arteon",
       "defaultSubject": "Feedback: WebP to JPG converter"
     },

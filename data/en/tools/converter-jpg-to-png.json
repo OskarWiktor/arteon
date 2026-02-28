@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JPG to PNG converter \u2013 lossless format change free",
     "description": "Convert JPG images to lossless PNG in your browser. No file limits, no registration, no server uploads. Preserve every detail.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/jpg-to-png-converter"
   },
   "hero": {
     "title": "JPG to PNG converter \u2013 switch to lossless quality",
     "description": "Convert JPG photos to lossless PNG format. Add files, convert instantly, and download. Runs entirely in your browser \u2014 files never leave your device.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": { "href": "/en/tools", "label": "Tools" },
@@ -48,7 +48,7 @@
       "type": "sectionBasic",
       "title": "Why convert JPG to PNG?",
       "html": "<p class=\"text-mid mb-4\">JPG (JPEG) is a lossy format optimised for photographs. Every time a JPG file is re-saved, the image loses a small amount of detail due to lossy compression. PNG, on the other hand, uses lossless compression \u2014 no data is discarded, so the image remains pixel-perfect.</p><p class=\"text-mid mb-4\">Converting JPG to PNG is useful when you need to edit an image further without accumulating compression artefacts, when a platform requires PNG uploads, or when you want to add transparency later in a graphics editor.</p><p class=\"text-mid mb-4\">Keep in mind that converting a JPG to PNG does not restore detail already lost during the original JPG compression. The resulting PNG will be a faithful, lossless copy of the JPG \u2014 but at a larger file size.</p><p class=\"text-mid\">This tool processes everything locally in your browser. Your images are never uploaded to any server.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "JPG to PNG converter \u2013 Arteon"
     },
     { "type": "gap", "size": "xs" },
@@ -137,7 +137,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea for a new feature, found a bug, or want to suggest another tool? Drop us a message \u2014 we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "JPG to PNG converter \u2013 Arteon",
       "defaultSubject": "Feedback: JPG to PNG converter"
     },

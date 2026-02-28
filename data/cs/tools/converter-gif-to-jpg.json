@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník GIF na JPG – GIF JPG",
     "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-gif-na-jpg"
   },
   "hero": {
     "title": "Převodník GIF na JPG",
     "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Převodník GIF na JPG",
       "html": "<p class=\"text-mid\">Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník GIF na JPG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník GIF na JPG – Arteon",
       "defaultSubject": "Feedback: Převodník GIF na JPG"
     },

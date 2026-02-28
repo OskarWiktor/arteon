@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JPG til WebP-konverter – JPG WebP",
     "description": "Konvertér JPG-fotos til let WebP. Spar op til 35% filstørrelse.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/jpg-til-webp-konverter"
   },
   "hero": {
     "title": "JPG til WebP-konverter",
     "description": "Konvertér JPG-fotos til let WebP. Spar op til 35% filstørrelse.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "JPG til WebP-konverter",
       "html": "<p class=\"text-mid\">Konvertér JPG-fotos til let WebP. Spar op til 35% filstørrelse.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "JPG til WebP-konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "JPG til WebP-konverter – Arteon",
       "defaultSubject": "Feedback: JPG til WebP-konverter"
     },

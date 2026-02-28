@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník PNG na WebP – PNG WebP",
     "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-png-na-webp"
   },
   "hero": {
     "title": "Převodník PNG na WebP",
     "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Převodník PNG na WebP",
       "html": "<p class=\"text-mid\">Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník PNG na WebP – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník PNG na WebP – Arteon",
       "defaultSubject": "Feedback: Převodník PNG na WebP"
     },

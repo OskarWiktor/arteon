@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor JPG a WebP – reduce el peso hasta un 35%",
     "description": "Convierte fotos JPG a WebP ligero. Reduce el peso de las imágenes hasta un 35%.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-jpg-a-webp"
   },
   "hero": {
     "title": "Convertidor JPG a WebP – imágenes más ligeras, misma calidad",
     "description": "Convierte fotos JPG a WebP y reduce su peso hasta un 35%. Añade archivos, ajusta la calidad y descarga.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "¿Por qué convertir JPG a WebP?",
       "html": "<p class=\"text-mid mb-4\">WebP ofrece una compresión significativamente mejor que JPG. A calidad visual equivalente, los archivos WebP son un 25–35% más pequeños.</p><p class=\"text-mid\">Imágenes más pequeñas significan cargas más rápidas, menor consumo de ancho de banda y mejores puntuaciones en Core Web Vitals.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor JPG a WebP – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor JPG a WebP – Arteon",
       "defaultSubject": "Feedback: Convertidor JPG a WebP"
     },

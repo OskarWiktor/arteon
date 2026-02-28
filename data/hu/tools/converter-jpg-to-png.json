@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JPG PNG konverter – JPG PNG",
     "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/jpg-png-konverter"
   },
   "hero": {
     "title": "JPG PNG konverter",
     "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "JPG PNG konverter",
       "html": "<p class=\"text-mid\">JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "JPG PNG konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Segítsen javítani eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "JPG PNG konverter – Arteon",
       "defaultSubject": "Feedback: JPG PNG konverter"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP to PNG converter – lossless compression free",
     "description": "Convert BMP images to lossless PNG in your browser. Reduce file size while preserving every pixel. No signup, no uploads.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/bmp-to-png-converter"
   },
   "hero": {
     "title": "BMP to PNG converter – preserve quality, reduce size",
     "description": "Convert uncompressed BMP images to lossless PNG. Add files, convert in your browser, and download. No quality loss.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -59,7 +59,7 @@
       "type": "sectionBasic",
       "title": "Why convert BMP to PNG?",
       "html": "<p class=\"text-mid mb-4\">BMP stores images without compression, resulting in very large files. PNG uses lossless compression — it preserves every pixel while significantly reducing file size (typically 50–80% smaller than BMP).</p><p class=\"text-mid mb-4\">Choose BMP-to-PNG when you need to reduce file size without any quality loss. PNG is ideal for graphics, diagrams, screenshots, and any image where pixel-perfect accuracy matters.</p><p class=\"text-mid\">If you do not need lossless quality, our <a href=\"/en/tools/bmp-to-jpg-converter\">BMP to JPG converter</a> will produce even smaller files.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "BMP to PNG converter – Arteon"
     },
     {
@@ -191,7 +191,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "BMP to PNG converter – Arteon",
       "defaultSubject": "Feedback: BMP to PNG converter"
     },

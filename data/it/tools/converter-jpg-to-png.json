@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore JPG in PNG – JPG PNG",
     "description": "Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-jpg-in-png"
   },
   "hero": {
     "title": "Convertitore JPG in PNG",
     "description": "Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Convertitore JPG in PNG",
       "html": "<p class=\"text-mid\">Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore JPG in PNG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore JPG in PNG – Arteon",
       "defaultSubject": "Feedback: Convertitore JPG in PNG"
     },

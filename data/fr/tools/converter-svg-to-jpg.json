@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertisseur SVG en JPG – rastérisez en JPG gratuitement",
     "description": "Convertissez vos graphiques SVG en JPG compact. Fichier réduit, compatibilité totale.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-svg-en-jpg"
   },
   "hero": {
     "title": "Convertisseur SVG en JPG – images compactes depuis vos vecteurs",
     "description": "Convertissez vos fichiers SVG en JPG. Ajoutez, réglez la qualité et téléchargez.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Pourquoi convertir SVG en JPG ?",
       "html": "<p class=\"text-mid mb-4\">SVG est idéal pour logos et icônes, mais de nombreuses plateformes n'acceptent que des images raster. JPG produit des fichiers plus petits que PNG quand la transparence n'est pas nécessaire.</p><p class=\"text-mid\">Note : JPG ne supporte pas la transparence — les zones transparentes du SVG seront remplies en blanc.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur SVG en JPG – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Aidez-nous à améliorer nos outils",
       "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur SVG en JPG – Arteon",
       "defaultSubject": "Feedback: Convertisseur SVG en JPG"
     },

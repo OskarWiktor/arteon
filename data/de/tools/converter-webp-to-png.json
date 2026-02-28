@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP zu PNG Konverter – verlustfreie Konvertierung gratis",
     "description": "WebP-Bilder verlustfrei in PNG umwandeln. Lokale Konvertierung, kein Server-Upload.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/webp-zu-png-konverter"
   },
   "hero": {
     "title": "WebP zu PNG Konverter – verlustfreie Ausgabe, volle Kompatibilität",
     "description": "Wandeln Sie WebP-Dateien verlustfrei in PNG um. Dateien hinzufügen, konvertieren und herunterladen.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Warum WebP in PNG umwandeln?",
       "html": "<p class=\"text-mid mb-4\">PNG ist ein verlustfreies, universell kompatibles Format. Die Konvertierung ist nützlich, wenn Sie Bilder in Tools bearbeiten möchten, die WebP nicht unterstützen, oder Dateien mit Empfängern teilen, die ältere Software nutzen.</p><p class=\"text-mid\">PNG bewahrt die Transparenz. Hat das Original-WebP einen Alpha-Kanal, bleibt dieser im PNG erhalten.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "WebP zu PNG Konverter – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
       "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten ein Feature vorschlagen? Schreiben Sie uns — wir antworten innerhalb von 24 Stunden.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "WebP zu PNG Konverter – Arteon",
       "defaultSubject": "Feedback: WebP zu PNG Konverter"
     },

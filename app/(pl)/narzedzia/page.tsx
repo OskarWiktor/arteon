@@ -385,7 +385,7 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
               title: 'Konwerter JPG na WebP',
               topImageAlt: 'Konwerter JPG na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konwerter-jpg-na-webp-pl.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -403,7 +403,7 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
               title: 'Konwerter PNG na JPG',
               topImageAlt: 'Konwerter PNG na JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konwerter-jpg-na-webp-pl.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Zamień pliki PNG na lekki JPG. Zmniejsz rozmiar grafik i zdjęć do formatu akceptowanego przez każdą platformę.</p>
@@ -419,7 +419,7 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
               title: 'Konwerter WebP na JPG',
               topImageAlt: 'Konwerter WebP na JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konwerter-jpg-na-webp-pl.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Zamień pliki WebP na JPG — format kompatybilny z każdym programem, platformą sprzedażową i klientem e-mail.</p>
@@ -431,48 +431,152 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter PNG na WebP',
+              topImageAlt: 'Konwerter PNG na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień grafiki PNG na WebP. Mniejsze pliki przy zachowaniu przezroczystości — idealne do stron WWW.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-png-na-webp">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter JPG na PNG',
+              topImageAlt: 'Konwerter JPG na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień pliki JPG na bezstratny PNG. Zachowaj pełną jakość obrazu przy konwersji formatu.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-jpg-na-png">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter WebP na PNG',
+              topImageAlt: 'Konwerter WebP na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień pliki WebP na bezstratny PNG. Konwersja lokalna w przeglądarce, bez wysyłania na serwer.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-webp-na-png">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter SVG na PNG',
+              topImageAlt: 'Konwerter SVG na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień grafikę wektorową SVG na rastrowy PNG. Idealne do dokumentów i mediów społecznościowych.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-svg-na-png">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter SVG na JPG',
+              topImageAlt: 'Konwerter SVG na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień grafikę wektorową SVG na JPG. Mniejszy plik, pełna kompatybilność z każdą platformą.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-svg-na-jpg">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter BMP na JPG',
+              topImageAlt: 'Konwerter BMP na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień nieskompresowane pliki BMP na lekki JPG. Redukcja rozmiaru bez widocznej utraty jakości.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-bmp-na-jpg">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter BMP na PNG',
+              topImageAlt: 'Konwerter BMP na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień pliki BMP na bezstratny PNG. Zachowaj jakość obrazu przy mniejszym rozmiarze pliku.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-bmp-na-png">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter GIF na PNG',
+              topImageAlt: 'Konwerter GIF na PNG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Wyeksportuj pierwszą klatkę GIF-a jako statyczny obraz PNG. Bez utraty jakości.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-gif-na-png">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter GIF na JPG',
+              topImageAlt: 'Konwerter GIF na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Wyeksportuj pierwszą klatkę GIF-a jako JPG. Mniejszy plik, szybsze ładowanie strony.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-gif-na-jpg">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
-        <div className="mt-4 flex justify-center">
-          <p className="text-mid text-sm">
-            Dostępne również:{' '}
-            <Link href="/narzedzia/konwerter-png-na-webp" className="text-primary hover:underline">
-              PNG→WebP
-            </Link>
-            {', '}
-            <Link href="/narzedzia/konwerter-jpg-na-png" className="text-primary hover:underline">
-              JPG→PNG
-            </Link>
-            {', '}
-            <Link href="/narzedzia/konwerter-webp-na-png" className="text-primary hover:underline">
-              WebP→PNG
-            </Link>
-            {', '}
-            <Link href="/narzedzia/konwerter-svg-na-png" className="text-primary hover:underline">
-              SVG→PNG
-            </Link>
-            {', '}
-            <Link href="/narzedzia/konwerter-svg-na-jpg" className="text-primary hover:underline">
-              SVG→JPG
-            </Link>
-            {', '}
-            <Link href="/narzedzia/konwerter-bmp-na-jpg" className="text-primary hover:underline">
-              BMP→JPG
-            </Link>
-            {', '}
-            <Link href="/narzedzia/konwerter-bmp-na-png" className="text-primary hover:underline">
-              BMP→PNG
-            </Link>
-            {', '}
-            <Link href="/narzedzia/konwerter-gif-na-png" className="text-primary hover:underline">
-              GIF→PNG
-            </Link>
-            {', '}
-            <Link href="/narzedzia/konwerter-gif-na-jpg" className="text-primary hover:underline">
-              GIF→JPG
-            </Link>
-          </p>
-        </div>
 
         <Gap size="sm" />
 

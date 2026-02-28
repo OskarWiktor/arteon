@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας GIF σε PNG – GIF PNG",
     "description": "Εξαγωγή του πρώτου καρέ ενός GIF ως στατικό PNG. Χωρίς απώλεια ποιότητας.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-gif-se-png"
   },
   "hero": {
     "title": "Μετατροπέας GIF σε PNG",
     "description": "Εξαγωγή του πρώτου καρέ ενός GIF ως στατικό PNG. Χωρίς απώλεια ποιότητας.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Μετατροπέας GIF σε PNG",
       "html": "<p class=\"text-mid\">Εξαγωγή του πρώτου καρέ ενός GIF ως στατικό PNG. Χωρίς απώλεια ποιότητας.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπέας GIF σε PNG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία",
       "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε; Γράψτε μας — απαντάμε σε 24 ώρες.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπέας GIF σε PNG – Arteon",
       "defaultSubject": "Feedback: Μετατροπέας GIF σε PNG"
     },

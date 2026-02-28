@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JPG to WebP converter – cut image size by up to 35%",
     "description": "Convert JPG photos to lightweight WebP in your browser. Reduce file weight by up to 35%. No signup, no server uploads.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/jpg-to-webp-converter"
   },
   "hero": {
     "title": "JPG to WebP converter – smaller images, same quality",
     "description": "Convert JPG photos to WebP and reduce their weight by up to 35%. Add files, set quality, and download. Everything runs locally.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -59,7 +59,7 @@
       "type": "sectionBasic",
       "title": "Why convert JPG to WebP?",
       "html": "<p class=\"text-mid mb-4\">WebP is a modern image format developed by Google that delivers significantly better compression than JPG. At equivalent visual quality, WebP files are typically 25–35% smaller than their JPG counterparts.</p><p class=\"text-mid mb-4\">Smaller images mean faster page loads, lower bandwidth costs, and better <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Core Web Vitals</a> scores. WebP is supported by all major browsers including Chrome, Firefox, Safari, and Edge.</p><p class=\"text-mid\">This tool requires a desktop browser because WebP encoding relies on the Canvas API with WebP export support. All processing happens locally.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "JPG to WebP converter – Arteon"
     },
     {
@@ -203,7 +203,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "JPG to WebP converter – Arteon",
       "defaultSubject": "Feedback: JPG to WebP converter"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertor WebP în JPG – WebP JPG",
     "description": "Convertește fișiere WebP în JPG compatibil universal.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-webp-in-jpg"
   },
   "hero": {
     "title": "Convertor WebP în JPG",
     "description": "Convertește fișiere WebP în JPG compatibil universal.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Convertor WebP în JPG",
       "html": "<p class=\"text-mid\">Convertește fișiere WebP în JPG compatibil universal.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor WebP în JPG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Ajută-ne să îmbunătățim instrumentele",
       "description": "Ai o idee, ai găsit un bug sau vrei să sugerezi o funcție? Trimite-ne un mesaj — răspundem în 24 de ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor WebP în JPG – Arteon",
       "defaultSubject": "Feedback: Convertor WebP în JPG"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP JPG -muunnin – BMP JPG",
     "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/bmp-jpg-muunnin"
   },
   "hero": {
     "title": "BMP JPG -muunnin",
     "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "BMP JPG -muunnin",
       "html": "<p class=\"text-mid\">Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "BMP JPG -muunnin – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "BMP JPG -muunnin – Arteon",
       "defaultSubject": "Feedback: BMP JPG -muunnin"
     },

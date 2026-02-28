@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník SVG na JPG – SVG JPG",
     "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-svg-na-jpg"
   },
   "hero": {
     "title": "Převodník SVG na JPG",
     "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Převodník SVG na JPG",
       "html": "<p class=\"text-mid\">Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník SVG na JPG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník SVG na JPG – Arteon",
       "defaultSubject": "Feedback: Převodník SVG na JPG"
     },

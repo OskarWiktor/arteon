@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Conversor WebP para PNG – WebP PNG",
     "description": "Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-webp-para-png"
   },
   "hero": {
     "title": "Conversor WebP para PNG",
     "description": "Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Conversor WebP para PNG",
       "html": "<p class=\"text-mid\">Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor WebP para PNG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Ajude-nos a melhorar as ferramentas",
       "description": "Tem uma ideia, encontrou um erro ou quer sugerir uma funcionalidade? Envie-nos uma mensagem — respondemos em 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor WebP para PNG – Arteon",
       "defaultSubject": "Feedback: Conversor WebP para PNG"
     },

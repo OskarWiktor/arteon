@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG to JPG converter \u2013 change image format free",
     "description": "Convert PNG files to JPG in your browser. No file limits, no signup, no server uploads. Adjust quality and download instantly.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/png-to-jpg-converter"
   },
   "hero": {
     "title": "PNG to JPG converter \u2013 reduce image size without losing quality",
     "description": "Convert PNG images to JPG and shrink their file size. Add files, set quality, and download the results. Everything runs locally in your browser.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -66,7 +66,7 @@
       "type": "sectionBasic",
       "title": "Why convert PNG to JPG?",
       "html": "<p class=\"text-mid mb-4\">PNG (Portable Network Graphics) is a lossless format that preserves full image quality and supports transparency via an alpha channel. However, PNG files are significantly larger than JPG \u2014 a 3000\u00d72000 pixel photo in PNG can weigh 8\u201315 MB, while the same image saved as JPG at 85% quality takes up just 0.5\u20131.5 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) is a lossy format that compresses images by discarding details imperceptible to the human eye. At 80\u201385% quality, the visual difference is virtually unnoticeable, yet the file can be several times smaller. JPG is universally supported by every application, browser, and platform.</p><p class=\"text-mid mb-4\">Converting PNG to JPG makes sense whenever the image does not require transparency \u2014 for example, photographs, screenshots with solid backgrounds, email attachments, or images destined for online forms with file-size limits.</p><p class=\"text-mid\">This converter runs entirely in your browser. Your files are never uploaded to any server, so you retain full control over your data.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to JPG converter \u2013 Arteon"
     },
     {
@@ -228,7 +228,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea for a new feature, found a bug, or want to suggest another tool? Drop us a message \u2014 we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to JPG converter \u2013 Arteon",
       "defaultSubject": "Feedback: PNG to JPG converter"
     },

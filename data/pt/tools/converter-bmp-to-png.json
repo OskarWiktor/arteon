@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Conversor BMP para PNG – BMP PNG",
     "description": "Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-bmp-para-png"
   },
   "hero": {
     "title": "Conversor BMP para PNG",
     "description": "Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Conversor BMP para PNG",
       "html": "<p class=\"text-mid\">Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor BMP para PNG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Ajude-nos a melhorar as ferramentas",
       "description": "Tem uma ideia, encontrou um erro ou quer sugerir uma funcionalidade? Envie-nos uma mensagem — respondemos em 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor BMP para PNG – Arteon",
       "defaultSubject": "Feedback: Conversor BMP para PNG"
     },

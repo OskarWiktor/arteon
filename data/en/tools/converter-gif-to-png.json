@@ -4,13 +4,13 @@
   "metadata": {
     "title": "GIF to PNG converter – extract static frame free",
     "description": "Convert GIF images to lossless PNG in your browser. Extract the first frame as a high-quality static image. No signup, no uploads.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/gif-to-png-converter"
   },
   "hero": {
     "title": "GIF to PNG converter – static image from any GIF",
     "description": "Extract the first frame of a GIF as a lossless PNG. Add files, convert instantly, and download. Runs locally in your browser.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -59,7 +59,7 @@
       "type": "sectionBasic",
       "title": "Why convert GIF to PNG?",
       "html": "<p class=\"text-mid mb-4\">GIF is limited to 256 colours and uses a dated compression algorithm. PNG supports millions of colours, alpha-channel transparency, and more efficient lossless compression.</p><p class=\"text-mid mb-4\">Converting GIF to PNG is useful when you need a static image from an animated GIF, better colour depth, or when a platform requires PNG uploads.</p><p class=\"text-mid\">Note: this tool extracts the first frame of animated GIFs. If you need to preserve animation, consider a video format instead.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "GIF to PNG converter – Arteon"
     },
     {
@@ -195,7 +195,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "GIF to PNG converter – Arteon",
       "defaultSubject": "Feedback: GIF to PNG converter"
     },

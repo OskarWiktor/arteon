@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore PNG in WebP – PNG WebP",
     "description": "Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-png-in-webp"
   },
   "hero": {
     "title": "Convertitore PNG in WebP",
     "description": "Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Convertitore PNG in WebP",
       "html": "<p class=\"text-mid\">Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore PNG in WebP – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore PNG in WebP – Arteon",
       "defaultSubject": "Feedback: Convertitore PNG in WebP"
     },

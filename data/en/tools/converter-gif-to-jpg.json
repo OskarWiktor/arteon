@@ -4,13 +4,13 @@
   "metadata": {
     "title": "GIF to JPG converter – extract frame as JPG free",
     "description": "Convert GIF images to compact JPG in your browser. Extract the first frame, set quality, and download. No signup, no uploads.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/gif-to-jpg-converter"
   },
   "hero": {
     "title": "GIF to JPG converter – compact static image from any GIF",
     "description": "Extract the first frame of a GIF as a JPG. Add files, set quality, and download. Runs locally in your browser.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -59,7 +59,7 @@
       "type": "sectionBasic",
       "title": "Why convert GIF to JPG?",
       "html": "<p class=\"text-mid mb-4\">GIF files can be surprisingly large, especially animated ones. Extracting a single frame as JPG produces a compact, universally compatible image.</p><p class=\"text-mid mb-4\">JPG is the most widely supported photo format. Converting GIF to JPG is useful for email attachments, document inserts, and any situation where a small static image is needed.</p><p class=\"text-mid\">Note: JPG does not support transparency. Transparent GIF areas become white. If you need transparency, use our <a href=\"/en/tools/gif-to-png-converter\">GIF to PNG converter</a>.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "GIF to JPG converter – Arteon"
     },
     {
@@ -195,7 +195,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "GIF to JPG converter – Arteon",
       "defaultSubject": "Feedback: GIF to JPG converter"
     },

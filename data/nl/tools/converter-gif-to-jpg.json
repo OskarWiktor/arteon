@@ -4,13 +4,13 @@
   "metadata": {
     "title": "GIF naar JPG converter – GIF JPG",
     "description": "Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/gif-naar-jpg-converter"
   },
   "hero": {
     "title": "GIF naar JPG converter",
     "description": "Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "GIF naar JPG converter",
       "html": "<p class=\"text-mid\">Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "GIF naar JPG converter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
       "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "GIF naar JPG converter – Arteon",
       "defaultSubject": "Feedback: GIF naar JPG converter"
     },

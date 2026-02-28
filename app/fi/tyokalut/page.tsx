@@ -169,7 +169,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'JPG/PNG–WebP-muunnin',
               topImageAlt: 'JPG/PNG WebP-muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-webp-muunnin-fi.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

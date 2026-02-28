@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore SVG in JPG – SVG JPG",
     "description": "Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-svg-in-jpg"
   },
   "hero": {
     "title": "Convertitore SVG in JPG",
     "description": "Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Convertitore SVG in JPG",
       "html": "<p class=\"text-mid\">Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore SVG in JPG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore SVG in JPG – Arteon",
       "defaultSubject": "Feedback: Convertitore SVG in JPG"
     },

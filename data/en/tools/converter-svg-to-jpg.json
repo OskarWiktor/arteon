@@ -4,13 +4,13 @@
   "metadata": {
     "title": "SVG to JPG converter – rasterize vectors to JPG free",
     "description": "Convert SVG vector graphics to compact JPG in your browser. No signup, no uploads. Smaller file size, full compatibility.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/svg-to-jpg-converter"
   },
   "hero": {
     "title": "SVG to JPG converter – compact raster images from vectors",
     "description": "Convert SVG files to JPG format. Add graphics, set quality, and download compressed images. Runs locally in your browser.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -59,7 +59,7 @@
       "type": "sectionBasic",
       "title": "Why convert SVG to JPG?",
       "html": "<p class=\"text-mid mb-4\">SVG is a vector format ideal for logos and icons, but many platforms only accept raster images. JPG produces smaller files than PNG, making it a good choice when transparency is not needed.</p><p class=\"text-mid mb-4\">Converting SVG to JPG is useful for email attachments, website images, social media posts, and any context where a compact, universally compatible image is required.</p><p class=\"text-mid\">Note that JPG does not support transparency — transparent SVG areas will be filled with a white background. If you need transparency, use our <a href=\"/en/tools/svg-to-png-converter\">SVG to PNG converter</a> instead.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "SVG to JPG converter – Arteon"
     },
     {
@@ -195,7 +195,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "SVG to JPG converter – Arteon",
       "defaultSubject": "Feedback: SVG to JPG converter"
     },

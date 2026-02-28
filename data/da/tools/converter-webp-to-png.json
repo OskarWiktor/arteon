@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP til PNG-konverter – WebP PNG",
     "description": "Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/webp-til-png-konverter"
   },
   "hero": {
     "title": "WebP til PNG-konverter",
     "description": "Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "WebP til PNG-konverter",
       "html": "<p class=\"text-mid\">Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "WebP til PNG-konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "WebP til PNG-konverter – Arteon",
       "defaultSubject": "Feedback: WebP til PNG-konverter"
     },

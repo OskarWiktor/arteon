@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP to PNG converter – lossless conversion free",
     "description": "Convert WebP images to lossless PNG in your browser. No file limits, no signup. Preserve every pixel with zero quality loss.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/webp-to-png-converter"
   },
   "hero": {
     "title": "WebP to PNG converter – lossless output, full compatibility",
     "description": "Convert WebP files to lossless PNG. Add images, convert instantly in your browser, and download. Nothing is uploaded to any server.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -59,7 +59,7 @@
       "type": "sectionBasic",
       "title": "Why convert WebP to PNG?",
       "html": "<p class=\"text-mid mb-4\">WebP is a modern format with great compression, but not all software supports it. PNG is a universally compatible lossless format that works in every image editor, office application, and operating system.</p><p class=\"text-mid mb-4\">Converting WebP to PNG is useful when you need to edit images in tools that do not support WebP, insert pictures into documents, or share files with recipients using older software.</p><p class=\"text-mid mb-4\">PNG preserves every pixel without quality loss and supports transparency. If the original WebP had an alpha channel, the PNG will retain it.</p><p class=\"text-mid\">This tool runs entirely in your browser — your files never leave your device.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "WebP to PNG converter – Arteon"
     },
     {
@@ -203,7 +203,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "WebP to PNG converter – Arteon",
       "defaultSubject": "Feedback: WebP to PNG converter"
     },

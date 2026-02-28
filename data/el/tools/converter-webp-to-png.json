@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας WebP σε PNG – WebP PNG",
     "description": "Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-webp-se-png"
   },
   "hero": {
     "title": "Μετατροπέας WebP σε PNG",
     "description": "Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Μετατροπέας WebP σε PNG",
       "html": "<p class=\"text-mid\">Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπέας WebP σε PNG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία",
       "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε; Γράψτε μας — απαντάμε σε 24 ώρες.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπέας WebP σε PNG – Arteon",
       "defaultSubject": "Feedback: Μετατροπέας WebP σε PNG"
     },

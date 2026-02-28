@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor SVG a PNG – rasteriza vectores gratis",
     "description": "Convierte gráficos vectoriales SVG a PNG en el navegador. Ideal para documentos y redes sociales.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-svg-a-png"
   },
   "hero": {
     "title": "Convertidor SVG a PNG – convierte vectores en imágenes nítidas",
     "description": "Convierte archivos SVG a formato PNG. Añade gráficos, convierte al instante y descarga.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "¿Por qué convertir SVG a PNG?",
       "html": "<p class=\"text-mid mb-4\">SVG es un formato vectorial perfecto para logos e iconos, pero muchas plataformas — redes sociales, correo electrónico, mensajería — no aceptan SVG.</p><p class=\"text-mid\">PNG es un formato raster universalmente soportado. Convertir SVG a PNG produce una imagen de alta calidad que puede compartirse y subirse a cualquier plataforma.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor SVG a PNG – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor SVG a PNG – Arteon",
       "defaultSubject": "Feedback: Convertidor SVG a PNG"
     },

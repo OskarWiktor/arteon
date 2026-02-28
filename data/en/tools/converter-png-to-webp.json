@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG to WebP converter – smaller files, keep transparency",
     "description": "Convert PNG images to WebP in your browser. Smaller files while preserving transparency. No signup, no server uploads.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/png-to-webp-converter"
   },
   "hero": {
     "title": "PNG to WebP converter – compress without losing transparency",
     "description": "Convert PNG graphics to WebP for smaller files with full transparency support. Add files, set quality, and download.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -59,7 +59,7 @@
       "type": "sectionBasic",
       "title": "Why convert PNG to WebP?",
       "html": "<p class=\"text-mid mb-4\">PNG files are lossless and support transparency, but they can be very large. WebP offers both lossy and lossless compression with transparency support — resulting in files that are significantly smaller than PNG.</p><p class=\"text-mid mb-4\">For web use, WebP is the ideal replacement for PNG. Modern browsers universally support it, and the size savings directly improve page speed and <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Core Web Vitals</a>.</p><p class=\"text-mid\">This tool requires a desktop browser for WebP encoding. All processing happens locally.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to WebP converter – Arteon"
     },
     {
@@ -203,7 +203,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to WebP converter – Arteon",
       "defaultSubject": "Feedback: PNG to WebP converter"
     },

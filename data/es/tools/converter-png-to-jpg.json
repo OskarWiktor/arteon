@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor PNG a JPG – cambia el formato de imagen gratis",
     "description": "Convierte archivos PNG a JPG en el navegador. Sin límite de archivos, sin registro. La conversión se realiza localmente.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-png-a-jpg"
   },
   "hero": {
     "title": "Convertidor PNG a JPG – reduce el tamaño de tus imágenes",
     "description": "Convierte archivos PNG a JPG y reduce su tamaño. Añade archivos, ajusta la calidad y descarga. Todo ocurre en tu navegador.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "¿Por qué convertir PNG a JPG?",
       "html": "<p class=\"text-mid mb-4\">PNG es un formato sin pérdida que conserva la calidad total y soporta transparencia. Sin embargo, los archivos PNG son mucho más grandes que JPG — una foto de 3000×2000 px en PNG puede pesar 8–15 MB, mientras que en JPG al 85% ocupa solo 0,5–1,5 MB.</p><p class=\"text-mid mb-4\">JPG comprime las imágenes descartando detalles imperceptibles. Al 80–85% la diferencia visual es prácticamente invisible. JPG es compatible con todos los programas, navegadores y plataformas.</p><p class=\"text-mid\">La conversión tiene sentido cuando la imagen no necesita transparencia: fotografías, capturas de pantalla, adjuntos de correo o formularios online con límite de tamaño.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor PNG a JPG – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor PNG a JPG – Arteon",
       "defaultSubject": "Feedback: Convertidor PNG a JPG"
     },

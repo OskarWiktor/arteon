@@ -179,7 +179,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Μετατροπέας JPG/PNG σε WebP',
               topImageAlt: 'Μετατροπέας JPG/PNG σε WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-se-webp-el.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

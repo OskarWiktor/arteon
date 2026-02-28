@@ -4,13 +4,13 @@
   "metadata": {
     "title": "SVG to PNG converter – rasterize vectors free",
     "description": "Convert SVG vector graphics to raster PNG in your browser. No signup, no uploads. Ideal for documents and social media.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/svg-to-png-converter"
   },
   "hero": {
     "title": "SVG to PNG converter – turn vectors into pixel-perfect images",
     "description": "Convert SVG files to raster PNG format. Add graphics, convert instantly, and download. Processing happens locally in your browser.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -59,7 +59,7 @@
       "type": "sectionBasic",
       "title": "Why convert SVG to PNG?",
       "html": "<p class=\"text-mid mb-4\">SVG (Scalable Vector Graphics) is a vector format perfect for logos, icons, and diagrams because it scales without losing clarity. However, many platforms — social media, messaging apps, email clients — do not accept SVG files.</p><p class=\"text-mid mb-4\">PNG is a universally supported raster format. Converting SVG to PNG produces a high-quality image that can be shared, embedded in documents, or uploaded anywhere.</p><p class=\"text-mid\">This converter rasterizes SVG graphics at their native resolution using the browser’s rendering engine, producing clean, anti-aliased PNG output. Everything runs locally — no server uploads.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "SVG to PNG converter – Arteon"
     },
     {
@@ -195,7 +195,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "SVG to PNG converter – Arteon",
       "defaultSubject": "Feedback: SVG to PNG converter"
     },

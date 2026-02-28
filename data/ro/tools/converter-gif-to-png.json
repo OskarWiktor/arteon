@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertor GIF în PNG – GIF PNG",
     "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-gif-in-png"
   },
   "hero": {
     "title": "Convertor GIF în PNG",
     "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Convertor GIF în PNG",
       "html": "<p class=\"text-mid\">Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor GIF în PNG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Ajută-ne să îmbunătățim instrumentele",
       "description": "Ai o idee, ai găsit un bug sau vrei să sugerezi o funcție? Trimite-ne un mesaj — răspundem în 24 de ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor GIF în PNG – Arteon",
       "defaultSubject": "Feedback: Convertor GIF în PNG"
     },

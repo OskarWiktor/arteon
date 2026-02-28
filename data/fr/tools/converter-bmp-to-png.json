@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertisseur BMP en PNG – compression sans perte gratuite",
     "description": "Convertissez vos images BMP en PNG sans perte. Qualité préservée, taille réduite.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-bmp-en-png"
   },
   "hero": {
     "title": "Convertisseur BMP en PNG – préservez la qualité, réduisez la taille",
     "description": "Convertissez vos images BMP en PNG sans perte. Ajoutez, convertissez et téléchargez.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Pourquoi convertir BMP en PNG ?",
       "html": "<p class=\"text-mid mb-4\">BMP stocke les images sans compression. PNG utilise une compression sans perte — préserve chaque pixel avec une taille nettement réduite (50–80% de moins que BMP).</p><p class=\"text-mid\">La conversion est idéale quand vous avez besoin de réduire la taille sans perdre en qualité.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur BMP en PNG – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Aidez-nous à améliorer nos outils",
       "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur BMP en PNG – Arteon",
       "defaultSubject": "Feedback: Convertisseur BMP en PNG"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP PNG -muunnin – BMP PNG",
     "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/bmp-png-muunnin"
   },
   "hero": {
     "title": "BMP PNG -muunnin",
     "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "BMP PNG -muunnin",
       "html": "<p class=\"text-mid\">Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "BMP PNG -muunnin – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "BMP PNG -muunnin – Arteon",
       "defaultSubject": "Feedback: BMP PNG -muunnin"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP zu JPG Konverter – universelle Kompatibilität gratis",
     "description": "WebP-Dateien in universell kompatibles JPG umwandeln. Ohne Limits, ohne Registrierung.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/webp-zu-jpg-konverter"
   },
   "hero": {
     "title": "WebP zu JPG Konverter – universelle Kompatibilität mit einem Klick",
     "description": "Wandeln Sie WebP-Dateien in JPG um, das überall funktioniert. Dateien hinzufügen, konvertieren und herunterladen.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Warum WebP in JPG umwandeln?",
       "html": "<p class=\"text-mid mb-4\">WebP bietet hervorragende Kompression, wird aber nicht von allen Anwendungen unterstützt. JPG ist das weltweit kompatibelste Fotoformat.</p><p class=\"text-mid\">Die Konvertierung ist nützlich für E-Mail-Anhänge, Dokumente, Druck und das Teilen mit Personen, die ältere Software nutzen.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "WebP zu JPG Konverter – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
       "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten ein Feature vorschlagen? Schreiben Sie uns — wir antworten innerhalb von 24 Stunden.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "WebP zu JPG Konverter – Arteon",
       "defaultSubject": "Feedback: WebP zu JPG Konverter"
     },

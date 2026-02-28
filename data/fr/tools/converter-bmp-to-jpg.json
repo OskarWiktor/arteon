@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertisseur BMP en JPG – compressez vos bitmaps gratuitement",
     "description": "Convertissez vos fichiers BMP non compressés en JPG léger. Réduction massive de taille.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-bmp-en-jpg"
   },
   "hero": {
     "title": "Convertisseur BMP en JPG – réduisez vos bitmaps instantanément",
     "description": "Convertissez vos images BMP en JPG compact. Ajoutez, réglez la qualité et téléchargez.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Pourquoi convertir BMP en JPG ?",
       "html": "<p class=\"text-mid mb-4\">BMP stocke les images sans compression — un seul fichier peut dépasser 10–50 Mo. JPG applique une compression avec perte qui réduit la taille de 90–98% avec une perte visuelle minimale.</p><p class=\"text-mid\">La conversion est idéale pour les pièces jointes, l'économie d'espace et les envois web.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur BMP en JPG – Arteon"
     },
     {
@@ -88,7 +88,7 @@
       "type": "contactForm",
       "title": "Aidez-nous à améliorer nos outils",
       "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur BMP en JPG – Arteon",
       "defaultSubject": "Feedback: Convertisseur BMP en JPG"
     },

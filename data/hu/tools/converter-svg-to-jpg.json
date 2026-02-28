@@ -4,13 +4,13 @@
   "metadata": {
     "title": "SVG JPG konverter – SVG JPG",
     "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/svg-jpg-konverter"
   },
   "hero": {
     "title": "SVG JPG konverter",
     "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "SVG JPG konverter",
       "html": "<p class=\"text-mid\">SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "SVG JPG konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Segítsen javítani eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "SVG JPG konverter – Arteon",
       "defaultSubject": "Feedback: SVG JPG konverter"
     },

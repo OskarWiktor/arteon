@@ -4,13 +4,13 @@
   "metadata": {
     "title": "SVG PNG konverter – SVG PNG",
     "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/svg-png-konverter"
   },
   "hero": {
     "title": "SVG PNG konverter",
     "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "SVG PNG konverter",
       "html": "<p class=\"text-mid\">SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "SVG PNG konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Segítsen javítani eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "SVG PNG konverter – Arteon",
       "defaultSubject": "Feedback: SVG PNG konverter"
     },

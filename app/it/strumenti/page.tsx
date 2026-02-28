@@ -213,7 +213,7 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Convertitore JPG/PNG in WebP',
               topImageAlt: 'Convertitore JPG/PNG in WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-in-webp-it.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>

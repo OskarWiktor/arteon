@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG til JPG-konverter – PNG JPG",
     "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/png-til-jpg-konverter"
   },
   "hero": {
     "title": "PNG til JPG-konverter",
     "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "PNG til JPG-konverter",
       "html": "<p class=\"text-mid\">Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "PNG til JPG-konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "PNG til JPG-konverter – Arteon",
       "defaultSubject": "Feedback: PNG til JPG-konverter"
     },

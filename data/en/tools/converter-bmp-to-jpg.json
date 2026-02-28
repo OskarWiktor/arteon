@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP to JPG converter – compress bitmap images free",
     "description": "Convert uncompressed BMP files to lightweight JPG in your browser. Reduce file size dramatically. No signup, no uploads.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/bmp-to-jpg-converter"
   },
   "hero": {
     "title": "BMP to JPG converter – shrink bitmap files instantly",
     "description": "Convert BMP images to compact JPG. Add files, set quality, and download. Processing runs locally in your browser.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -59,7 +59,7 @@
       "type": "sectionBasic",
       "title": "Why convert BMP to JPG?",
       "html": "<p class=\"text-mid mb-4\">BMP (Bitmap) is an uncompressed image format. A single BMP photo can easily exceed 10–50 MB because every pixel is stored without any compression. This makes BMP impractical for sharing, uploading, or storing large numbers of images.</p><p class=\"text-mid mb-4\">JPG applies lossy compression that reduces file size by 90–98% with minimal visible quality loss. Converting BMP to JPG produces a compact file that is easy to email, upload, or embed in documents.</p><p class=\"text-mid\">This tool processes everything locally in your browser. Your BMP files are never uploaded to any server.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "BMP to JPG converter – Arteon"
     },
     {
@@ -191,7 +191,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "BMP to JPG converter – Arteon",
       "defaultSubject": "Feedback: BMP to JPG converter"
     },

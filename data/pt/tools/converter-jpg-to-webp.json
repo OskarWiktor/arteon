@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Conversor JPG para WebP – JPG WebP",
     "description": "Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-jpg-para-webp"
   },
   "hero": {
     "title": "Conversor JPG para WebP",
     "description": "Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Conversor JPG para WebP",
       "html": "<p class=\"text-mid\">Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor JPG para WebP – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Ajude-nos a melhorar as ferramentas",
       "description": "Tem uma ideia, encontrou um erro ou quer sugerir uma funcionalidade? Envie-nos uma mensagem — respondemos em 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor JPG para WebP – Arteon",
       "defaultSubject": "Feedback: Conversor JPG para WebP"
     },

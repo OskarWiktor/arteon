@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník BMP na JPG – BMP JPG",
     "description": "Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-bmp-na-jpg"
   },
   "hero": {
     "title": "Převodník BMP na JPG",
     "description": "Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Převodník BMP na JPG",
       "html": "<p class=\"text-mid\">Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník BMP na JPG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník BMP na JPG – Arteon",
       "defaultSubject": "Feedback: Převodník BMP na JPG"
     },

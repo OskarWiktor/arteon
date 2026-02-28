@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP til PNG-konverter – BMP PNG",
     "description": "Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/bmp-til-png-konverter"
   },
   "hero": {
     "title": "BMP til PNG-konverter",
     "description": "Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "BMP til PNG-konverter",
       "html": "<p class=\"text-mid\">Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "BMP til PNG-konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "BMP til PNG-konverter – Arteon",
       "defaultSubject": "Feedback: BMP til PNG-konverter"
     },

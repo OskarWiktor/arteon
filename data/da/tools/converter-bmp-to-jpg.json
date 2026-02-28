@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP til JPG-konverter – BMP JPG",
     "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/bmp-til-jpg-konverter"
   },
   "hero": {
     "title": "BMP til JPG-konverter",
     "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "BMP til JPG-konverter",
       "html": "<p class=\"text-mid\">Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "BMP til JPG-konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "BMP til JPG-konverter – Arteon",
       "defaultSubject": "Feedback: BMP til JPG-konverter"
     },

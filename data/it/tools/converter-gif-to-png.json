@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore GIF in PNG – GIF PNG",
     "description": "Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-gif-in-png"
   },
   "hero": {
     "title": "Convertitore GIF in PNG",
     "description": "Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Convertitore GIF in PNG",
       "html": "<p class=\"text-mid\">Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore GIF in PNG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore GIF in PNG – Arteon",
       "defaultSubject": "Feedback: Convertitore GIF in PNG"
     },

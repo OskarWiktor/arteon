@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG WebP konverter – PNG WebP",
     "description": "PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/png-webp-konverter"
   },
   "hero": {
     "title": "PNG WebP konverter",
     "description": "PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "PNG WebP konverter",
       "html": "<p class=\"text-mid\">PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "PNG WebP konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Segítsen javítani eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "PNG WebP konverter – Arteon",
       "defaultSubject": "Feedback: PNG WebP konverter"
     },

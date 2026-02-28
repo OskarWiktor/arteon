@@ -54,6 +54,7 @@ export type ToolDefinition = {
   image: string;
   images?: Partial<Record<Locale, string>>;
   desktopOnly: boolean;
+  carouselOrder?: number;
   locales: Partial<Record<Locale, ToolLocaleText>>;
 };
 
@@ -81,6 +82,7 @@ export type ToolSectionItem = {
   image: string;
   icon?: IconType;
   desktopOnly?: boolean;
+  carouselOrder?: number;
 };
 
 export type ToolsSection = {

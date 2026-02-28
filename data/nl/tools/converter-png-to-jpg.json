@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG naar JPG converter – PNG JPG",
     "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/png-naar-jpg-converter"
   },
   "hero": {
     "title": "PNG naar JPG converter",
     "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "PNG naar JPG converter",
       "html": "<p class=\"text-mid\">Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "PNG naar JPG converter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
       "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "PNG naar JPG converter – Arteon",
       "defaultSubject": "Feedback: PNG naar JPG converter"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG til JPG-konverterer – PNG JPG",
     "description": "Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/png-til-jpg-konverterer"
   },
   "hero": {
     "title": "PNG til JPG-konverterer",
     "description": "Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "PNG til JPG-konverterer",
       "html": "<p class=\"text-mid\">Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "PNG til JPG-konverterer – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjelp oss å forbedre verktøyene våre",
       "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "PNG til JPG-konverterer – Arteon",
       "defaultSubject": "Feedback: PNG til JPG-konverterer"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník SVG na PNG – SVG PNG",
     "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-svg-na-png"
   },
   "hero": {
     "title": "Převodník SVG na PNG",
     "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Převodník SVG na PNG",
       "html": "<p class=\"text-mid\">Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník SVG na PNG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník SVG na PNG – Arteon",
       "defaultSubject": "Feedback: Převodník SVG na PNG"
     },

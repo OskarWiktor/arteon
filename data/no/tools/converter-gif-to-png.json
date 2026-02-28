@@ -4,13 +4,13 @@
   "metadata": {
     "title": "GIF til PNG-konverterer – GIF PNG",
     "description": "Eksporter det første bildet i en GIF som statisk PNG. Uten kvalitetstap.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/gif-til-png-konverterer"
   },
   "hero": {
     "title": "GIF til PNG-konverterer",
     "description": "Eksporter det første bildet i en GIF som statisk PNG. Uten kvalitetstap.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "GIF til PNG-konverterer",
       "html": "<p class=\"text-mid\">Eksporter det første bildet i en GIF som statisk PNG. Uten kvalitetstap.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "GIF til PNG-konverterer – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjelp oss å forbedre verktøyene våre",
       "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "GIF til PNG-konverterer – Arteon",
       "defaultSubject": "Feedback: GIF til PNG-konverterer"
     },

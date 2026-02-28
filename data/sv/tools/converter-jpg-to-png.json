@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JPG till PNG-konverterare – JPG PNG",
     "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/jpg-till-png-konverterare"
   },
   "hero": {
     "title": "JPG till PNG-konverterare",
     "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "JPG till PNG-konverterare",
       "html": "<p class=\"text-mid\">Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "JPG till PNG-konverterare – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
       "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande — vi svarar inom 24 timmar.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "JPG till PNG-konverterare – Arteon",
       "defaultSubject": "Feedback: JPG till PNG-konverterare"
     },

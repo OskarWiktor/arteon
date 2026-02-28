@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP JPG konverter – BMP JPG",
     "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/bmp-jpg-konverter"
   },
   "hero": {
     "title": "BMP JPG konverter",
     "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "BMP JPG konverter",
       "html": "<p class=\"text-mid\">BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "BMP JPG konverter – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Segítsen javítani eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "BMP JPG konverter – Arteon",
       "defaultSubject": "Feedback: BMP JPG konverter"
     },

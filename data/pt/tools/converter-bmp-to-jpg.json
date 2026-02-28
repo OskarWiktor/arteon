@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Conversor BMP para JPG – BMP JPG",
     "description": "Converta ficheiros BMP para JPG leve. Redução drástica do tamanho.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-bmp-para-jpg"
   },
   "hero": {
     "title": "Conversor BMP para JPG",
     "description": "Converta ficheiros BMP para JPG leve. Redução drástica do tamanho.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "Conversor BMP para JPG",
       "html": "<p class=\"text-mid\">Converta ficheiros BMP para JPG leve. Redução drástica do tamanho.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor BMP para JPG – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Ajude-nos a melhorar as ferramentas",
       "description": "Tem uma ideia, encontrou um erro ou quer sugerir uma funcionalidade? Envie-nos uma mensagem — respondemos em 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor BMP para JPG – Arteon",
       "defaultSubject": "Feedback: Conversor BMP para JPG"
     },

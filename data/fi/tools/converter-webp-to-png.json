@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP PNG -muunnin – WebP PNG",
     "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/webp-png-muunnin"
   },
   "hero": {
     "title": "WebP PNG -muunnin",
     "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "WebP PNG -muunnin",
       "html": "<p class=\"text-mid\">Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "WebP PNG -muunnin – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "WebP PNG -muunnin – Arteon",
       "defaultSubject": "Feedback: WebP PNG -muunnin"
     },

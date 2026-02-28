@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JPG til PNG-konverterer – JPG PNG",
     "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/jpg-til-png-konverterer"
   },
   "hero": {
     "title": "JPG til PNG-konverterer",
     "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "JPG til PNG-konverterer",
       "html": "<p class=\"text-mid\">Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "JPG til PNG-konverterer – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Hjelp oss å forbedre verktøyene våre",
       "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "JPG til PNG-konverterer – Arteon",
       "defaultSubject": "Feedback: JPG til PNG-konverterer"
     },

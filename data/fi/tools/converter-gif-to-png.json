@@ -4,13 +4,13 @@
   "metadata": {
     "title": "GIF PNG -muunnin – GIF PNG",
     "description": "Vie GIF-kuvan ensimmäinen ruutu staattisena PNG-kuvana. Ilman laadun heikkenemistä.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/gif-png-muunnin"
   },
   "hero": {
     "title": "GIF PNG -muunnin",
     "description": "Vie GIF-kuvan ensimmäinen ruutu staattisena PNG-kuvana. Ilman laadun heikkenemistä.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -46,7 +46,7 @@
       "type": "sectionBasic",
       "title": "GIF PNG -muunnin",
       "html": "<p class=\"text-mid\">Vie GIF-kuvan ensimmäinen ruutu staattisena PNG-kuvana. Ilman laadun heikkenemistä.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "GIF PNG -muunnin – Arteon"
     },
     {
@@ -57,7 +57,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "GIF PNG -muunnin – Arteon",
       "defaultSubject": "Feedback: GIF PNG -muunnin"
     },

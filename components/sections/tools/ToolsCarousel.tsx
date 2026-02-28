@@ -28,7 +28,8 @@ export default function ToolsCarousel({ max = 10, title, subtitle }: Props) {
 
   const toolsSections = getToolsSections(locale);
   const items = useMemo(() => {
-    return toolsSections.flatMap((section) => section.items).slice(0, max);
+    const all = toolsSections.flatMap((section) => section.items);
+    return all.sort((a, b) => (a.carouselOrder ?? 999) - (b.carouselOrder ?? 999)).slice(0, max);
   }, [max, toolsSections]);
 
   const { currentSlide, maxSlides, isScrollable, scrollByCards, goToSlide, onKeyDown } = useCarouselScroller({
