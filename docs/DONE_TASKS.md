@@ -3040,7 +3040,7 @@
     - Utworzono artykuł w `data/pl/blog.json` (na początku listy `articles[]`).
     - Slug: `co-sprawdzic-przed-uruchomieniem-strony`, URL: `/edukacja/strony/co-sprawdzic-przed-uruchomieniem-strony`.
     - Sekcje: wstęp, dlaczego warto sprawdzić stronę, treści i meta dane, funkcjonalność, wydajność i zdjęcia, SEO techniczne, kwestie prawne, podsumowanie + CTA.
-    - Linki wewnętrzne (8): `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/narzedzia/licznik-dlugosci-meta-title-i-description`, `/kontakt`.
+    - Linki wewnętrzne (8): `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/narzedzia/licznik-dlugosci-meta-title-i-description`, `/kontakt`.
     - Linki zewnętrzne: PageSpeed Insights, Google Search Console, Think with Google (źródło danych o szybkości ładowania).
     - FAQ: 5 pytań.
     - CTA: Strony internetowe + Kontakt.

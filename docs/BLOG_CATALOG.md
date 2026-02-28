@@ -93,7 +93,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2026-01-02
   - **Czas czytania**: 11 min
   - **Opis**: Kompleksowy artykuł edukacyjny o wpływie szybkości ładowania strony na pozycję w Google. Obejmuje: czym są Core Web Vitals (LCP, INP, CLS - progi, co mierzą), szczegółowe omówienie każdego wskaźnika (LCP - czas ładowania głównej treści, czynniki wpływające; INP - responsywność, dlaczego zastąpił FID; CLS - stabilność wizualna, przyczyny przesunięć), jak Core Web Vitals wpływają na ranking (treść najważniejsza, czynnik różnicujący, dane z rzeczywistego użytkowania CrUX), wpływ szybkości na konwersję (opuszczanie wolnych stron, decyzje zakupowe, postrzeganie marki), jak sprawdzić wyniki (PageSpeed Insights, Google Search Console, Lighthouse, Web Vitals Extension), na co zwrócić uwagę przy optymalizacji (obrazy, JavaScript/CSS, serwer/hosting, zewnętrzne skrypty).
-  - **Linki wewnętrzne (8)**: `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`, `/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`, `/uslugi/strony-internetowe`, `/uslugi/marketing/optymalizacja-seo`, `/kontakt`
+  - **Linki wewnętrzne (8)**: `/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/ux/czym-jest-responsywnosc-strony-i-dlaczego-ma-znaczenie`, `/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony`, `/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz`, `/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu`, `/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/edukacja/strony/jak-wybrac-domene-i-hosting-dla-strony-firmowej`, `/uslugi/strony-internetowe`, `/uslugi/marketing/optymalizacja-seo`, `/kontakt`
   - **Linki zewnętrzne (6)**: Google Search Central (Core Web Vitals documentation), Google Developers Blog (Page Experience timing), Think with Google (mobile page speed benchmarks), PageSpeed Insights (tool), Google Search Console (tool), Web Vitals Chrome Extension
   - **Tooltips (4)**: Core Web Vitals, LCP (Largest Contentful Paint), INP (Interaction to Next Paint), CLS (Cumulative Layout Shift)
   - **FAQ**: 6 pytań (czy szybkość najważniejsza, jakie wyniki dobre, PageSpeed a pozycja, jak często Google aktualizuje, co to INP i dlaczego zastąpił FID, czy można poprawić bez wiedzy technicznej)
@@ -305,7 +305,7 @@ Celem katalogu jest:
   - **Data publikacji**: 2025-12-23
   - **Czas czytania**: 7 min
   - **Opis**: Artykuł o weryfikacji strony przed publikacją. Dlaczego warto sprawdzić stronę przed uruchomieniem, treści i meta dane (title, description, nagłówki), funkcjonalność (formularze, linki, nawigacja, responsywność), wydajność i zdjęcia (optymalizacja, WebP, PageSpeed), SEO techniczne (robots.txt, sitemap, SSL, adresy URL, przekierowania), kwestie prawne (polityka prywatności, regulamin, cookies, RODO).
-  - **Linki wewnętrzne**: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/narzedzia/licznik-dlugosci-meta-title-i-description`, `/kontakt`
+  - **Linki wewnętrzne**: `/uslugi/strony-internetowe`, `/uslugi/sklepy-internetowe`, `/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`, `/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic`, `/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google`, `/narzedzia/jpg-png-na-webp-bez-limitu`, `/narzedzia/licznik-dlugosci-meta-title-i-description`, `/kontakt`
   - **Linki zewnętrzne**: PageSpeed Insights, Google Search Console, Think with Google (źródło danych o szybkości)
   - **FAQ**: 5 pytań
   - **CTA**: Strony internetowe + Kontakt
@@ -472,7 +472,7 @@ Celem katalogu jest:
 - **Jak zoptymalizować zdjęcia na stronę WWW, aby była szybsza - rozmiary, formaty i WebP**
 
   - **Slug**: `jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
-  - **URL**: `/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
+  - **URL**: `/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp`
   - **Kategorie**: `Zdjęcia`, `SEO`
 
 - **Jak pisać treści na stronie internetowej aby być wyżej w wyszukiwarce Google?**

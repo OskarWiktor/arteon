@@ -33,6 +33,8 @@ const cspDirectives = [
   'frame-src https://*.google.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://*.googlesyndication.com',
   // Workers: self + blob (narzędzia client-side)
   "worker-src 'self' blob:",
+  // Frame-ancestors: pozwala Google AdSense na podgląd strony w panelu
+  "frame-ancestors 'self' https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net",
   // Object/base/form: restrykcyjne
   "object-src 'none'",
   "base-uri 'self'",
@@ -45,7 +47,6 @@ const cspDirectives = [
  * Security headers applied in production
  *
  * - HSTS: wymusza HTTPS przez 2 lata + subdomeny + preload list
- * - X-Frame-Options: blokuje osadzanie strony w iframe (ochrona przed clickjacking)
  * - X-Content-Type-Options: blokuje MIME-sniffing (zapobiega interpretacji plików jako inny typ)
  * - Referrer-Policy: wysyła origin tylko przy cross-origin (chroni prywatność URL-i)
  * - X-DNS-Prefetch-Control: pozwala przeglądarce prefetchować DNS (wydajność)
@@ -54,7 +55,7 @@ const cspDirectives = [
  */
 const securityHeaders = [
   { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
-  { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+  // X-Frame-Options usunięty - zastąpiony przez frame-ancestors w CSP (nowszy standard, obsługuje wiele domen)
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
