@@ -266,10 +266,10 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
         if (b.type === 'ad') {
           return (
             <>
-              <Gap size={GAP} variant="line" />
               <div key={`grp-ad-${i}`} className="not-prose my-8 flex justify-center">
                 <AdSense variant="responsive" />
               </div>
+              <Gap size={GAP} variant="line" />
             </>
           );
         }
