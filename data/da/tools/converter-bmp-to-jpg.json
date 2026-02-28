@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.",
-      "featureList": []
+      "featureList": ["BMP til JPG-konvertering", "JPG-kvalitetskontrol", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {
-      "name": "BMP til JPG-konverter",
-      "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.",
-      "steps": []
+      "name": "Sådan konverterer du BMP til JPG",
+      "description": "Konverter BMP-filer til JPG-format direkte i din browser.",
+      "steps": [
+        {
+          "name": "Tilføj BMP-filer",
+          "text": "Træk BMP-filer til uploadområdet eller klik for at vælge filer fra din enhed."
+        },
+        {
+          "name": "Konverter til JPG",
+          "text": "Klik på konverter. Brug kvalitetsskyderen til at justere filstørrelse og kvalitet."
+        },
+        {
+          "name": "Download JPG-filer",
+          "text": "Download dine konverterede JPG-filer enkeltvis eller alle på én gang."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "BMP til JPG-konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tilføj filer",
+          "description": "Træk BMP-filer til uploadområdet eller klik for at vælge filer fra din enhed.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konverter",
+          "description": "Klik på konverter. Juster JPG-kvaliteten med skyderen.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Download",
+          "description": "Download de konverterede JPG-filer enkeltvis eller alle på én gang.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP til JPG-konverter — funktioner",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatliv",
+          "description": "Filer forlader aldrig din enhed. Konverteringen kører lokalt i browseren — intet uploades til nogen server."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ingen filgrænse",
+          "description": "Konverter så mange filer som du har brug for i én session. Ingen begrænsninger, ingen registrering påkrævet."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Kvalitetskontrol",
+          "description": "Juster JPG-outputkvaliteten med skyderen. Højere værdier betyder bedre kvalitet og større filer."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Massedownload",
+          "description": "Download konverterede filer én for én eller alle på én gang med ét klik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål om konvertering fra BMP til JPG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Er konvertering fra BMP til JPG tabsfri?",
+          "answer": "JPG bruger som standard tabsgivende komprimering. Du kan justere kvalitetsskyderen for at styre balancen mellem filstørrelse og visuel kvalitet. Højere værdier giver bedre kvalitet men større filer."
+        },
+        {
+          "question": "Bevares gennemsigtigheden under konvertering?",
+          "answer": "JPG understøtter ikke gennemsigtighed. Gennemsigtige områder fra BMP-filen erstattes med en hvid baggrund."
+        },
+        {
+          "question": "Hvorfor er JPG-outputfilen større end originalen?",
+          "answer": "Filstørrelsen afhænger af kvalitetsindstillingen og billedindholdet. Lavere kvalitetsværdier giver mindre filer. Juster skyderen efter dine behov."
+        },
+        {
+          "question": "Hvilke browsere understøtter denne konverter?",
+          "answer": "Konverteren fungerer i alle moderne browsere: Chrome, Edge, Firefox og Safari. For AVIF-understøttelse brug Chrome 85+, Firefox 93+ eller Safari 16.4+."
+        },
+        {
+          "question": "Uploades mine filer til en server?",
+          "answer": "Nej. Hele konverteringsprocessen kører lokalt i din browser med JavaScript. Dine filer forlader aldrig din enhed, og vi har ingen adgang til dem."
+        }
+      ]
     },
     {
       "type": "gap",

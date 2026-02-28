@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
-      "featureList": []
+      "featureList": ["BMP naar JPG conversie", "JPG-kwaliteitscontrole", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {
-      "name": "BMP naar JPG converter",
-      "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
-      "steps": []
+      "name": "BMP naar JPG converteren",
+      "description": "Converteer BMP-bestanden naar JPG-formaat direct in je browser.",
+      "steps": [
+        {
+          "name": "BMP-bestanden toevoegen",
+          "text": "Sleep BMP-bestanden naar het uploadveld of klik om bestanden van je apparaat te selecteren."
+        },
+        {
+          "name": "Converteren naar JPG",
+          "text": "Klik op converteren. Gebruik de kwaliteitsschuifregelaar om de bestandsgrootte en kwaliteit aan te passen."
+        },
+        {
+          "name": "JPG-bestanden downloaden",
+          "text": "Download je geconverteerde JPG-bestanden afzonderlijk of allemaal tegelijk."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "BMP naar JPG converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Bestanden toevoegen",
+          "description": "Sleep BMP-bestanden naar het uploadveld of klik om bestanden van je apparaat te selecteren.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Converteren",
+          "description": "Klik op converteren. Pas de JPG-kwaliteit aan met de schuifregelaar.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Downloaden",
+          "description": "Download de geconverteerde JPG-bestanden afzonderlijk of allemaal tegelijk.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP naar JPG converter — functies",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Bestanden verlaten nooit je apparaat. De conversie draait lokaal in de browser — er wordt niets naar een server geüpload."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Geen bestandslimiet",
+          "description": "Converteer zoveel bestanden als je nodig hebt in één sessie. Geen beperkingen, geen registratie vereist."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Kwaliteitscontrole",
+          "description": "Pas de JPG-uitvoerkwaliteit aan met de schuifregelaar. Hogere waarden betekenen betere kwaliteit en grotere bestanden."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Batch-download",
+          "description": "Download geconverteerde bestanden één voor één of allemaal tegelijk met één klik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen over BMP naar JPG conversie",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Is de conversie van BMP naar JPG verliesvrij?",
+          "answer": "JPG gebruikt standaard verliesgevende compressie. Je kunt de kwaliteitsschuifregelaar aanpassen om de balans tussen bestandsgrootte en visuele kwaliteit te regelen. Hogere waarden produceren betere kwaliteit maar grotere bestanden."
+        },
+        {
+          "question": "Wordt de transparantie behouden tijdens de conversie?",
+          "answer": "JPG ondersteunt geen transparantie. Transparante gebieden uit het BMP-bestand worden vervangen door een witte achtergrond."
+        },
+        {
+          "question": "Waarom is het JPG-uitvoerbestand groter dan het origineel?",
+          "answer": "De bestandsgrootte hangt af van de kwaliteitsinstelling en de beeldinhoud. Lagere kwaliteitswaarden produceren kleinere bestanden. Pas de schuifregelaar aan naar je behoeften."
+        },
+        {
+          "question": "Welke browsers ondersteunen deze converter?",
+          "answer": "De converter werkt in alle moderne browsers: Chrome, Edge, Firefox en Safari. Voor AVIF-ondersteuning gebruik je Chrome 85+, Firefox 93+ of Safari 16.4+."
+        },
+        {
+          "question": "Worden mijn bestanden naar een server geüpload?",
+          "answer": "Nee. Het hele conversieproces draait lokaal in je browser in JavaScript. Je bestanden verlaten nooit je apparaat en wij hebben er geen toegang toe."
+        }
+      ]
     },
     {
       "type": "gap",

@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește grafice vectoriale SVG în PNG. Ideal pentru documente și social media.",
-      "featureList": []
+      "featureList": ["Conversie SVG în PNG", "Ieșire PNG fără pierderi", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {
-      "name": "Convertor SVG în PNG",
-      "description": "Convertește grafice vectoriale SVG în PNG. Ideal pentru documente și social media.",
-      "steps": []
+      "name": "Cum să convertiți SVG în PNG",
+      "description": "Convertiți fișiere SVG în format PNG direct în browserul dumneavoastră.",
+      "steps": [
+        {
+          "name": "Adăugați fișiere SVG",
+          "text": "Trageți fișiere SVG în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv."
+        },
+        {
+          "name": "Convertiți în PNG",
+          "text": "Faceți clic pe conversie. PNG este fără pierderi — nu este necesar niciun ajustaj."
+        },
+        {
+          "name": "Descărcați fișierele PNG",
+          "text": "Descărcați fișierele PNG convertite individual sau pe toate odată."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Convertește grafice vectoriale SVG în PNG. Ideal pentru documente și social media.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor SVG în PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "SVG → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adăugați fișiere",
+          "description": "Trageți fișiere SVG în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Convertiți",
+          "description": "Faceți clic pe conversie. PNG este un format fără pierderi — nu este necesar niciun ajustaj de calitate.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Descărcați",
+          "description": "Descărcați fișierele PNG convertite individual sau pe toate odată.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Funcționalități convertor SVG în PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele nu părăsesc niciodată dispozitivul. Conversia se execută local în browser — nimic nu este încărcat pe vreun server."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Fără limită de fișiere",
+          "description": "Convertiți oricâte fișiere aveți nevoie într-o singură sesiune. Fără restricții, fără înregistrare."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Ieșire fără pierderi",
+          "description": "PNG păstrează calitatea completă a imaginii fără pierderi de date. Ideal pentru grafice și editare ulterioară."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Descărcare în lot",
+          "description": "Descărcați fișierele convertite unul câte unul sau pe toate odată cu un singur clic."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia SVG în PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Conversia SVG în PNG este fără pierderi?",
+          "answer": "PNG este un format fără pierderi, astfel încât fișierul de ieșire păstrează calitatea completă a imaginii din fișierul SVG original. Dacă SVG a folosit compresie cu pierderi, datele deja pierdute nu pot fi recuperate."
+        },
+        {
+          "question": "Transparența este păstrată în timpul conversiei?",
+          "answer": "Da. PNG suportă transparență (canal alfa), deci zonele transparente din fișierul SVG sunt complet păstrate în ieșire."
+        },
+        {
+          "question": "De ce fișierul PNG de ieșire este mai mare decât originalul?",
+          "answer": "PNG este un format fără pierderi care păstrează fiecare pixel fără artefacte de compresie. Fișierele fără pierderi sunt în mod natural mai mari — acest lucru este așteptat și înseamnă că nu se pierde calitate."
+        },
+        {
+          "question": "Ce browsere suportă acest convertor?",
+          "answer": "Convertorul funcționează în toate browserele moderne: Chrome, Edge, Firefox și Safari. Pentru suportul formatului AVIF, utilizați Chrome 85+, Firefox 93+ sau Safari 16.4+."
+        },
+        {
+          "question": "Fișierele mele sunt încărcate pe un server?",
+          "answer": "Nu. Întregul proces de conversie se execută local în browserul dumneavoastră în JavaScript. Fișierele nu părăsesc niciodată dispozitivul și nu avem acces la ele."
+        }
+      ]
     },
     {
       "type": "gap",

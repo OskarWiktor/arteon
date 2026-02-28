@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
-      "featureList": []
+      "featureList": ["GIF – PNG konvertálás", "Veszteségmentes PNG kimenet", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {
-      "name": "GIF PNG konverter",
-      "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
-      "steps": []
+      "name": "GIF konvertálása PNG formátumra",
+      "description": "GIF fájlok konvertálása PNG formátumra közvetlenül a böngészőben.",
+      "steps": [
+        {
+          "name": "GIF fájlok hozzáadása",
+          "text": "Húzza a GIF fájlokat a feltöltési területre, vagy kattintson a fájlok kiválasztásához."
+        },
+        {
+          "name": "Konvertálás PNG formátumra",
+          "text": "Kattintson a konvertálásra. A PNG veszteségmentes — nincs szükség minőségi beállításra."
+        },
+        {
+          "name": "PNG fájlok letöltése",
+          "text": "Töltse le a konvertált PNG fájlokat egyenként vagy egyszerre."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "GIF PNG konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Fájlok hozzáadása",
+          "description": "Húzza a GIF fájlokat a feltöltési területre, vagy kattintson a fájlok kiválasztásához az eszközéről.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konvertálás",
+          "description": "Kattintson a konvertálásra. A PNG veszteségmentes formátum — nincs szükség minőségi beállításra.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Letöltés",
+          "description": "Töltse le a konvertált PNG fájlokat egyenként vagy egyszerre.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF – PNG konverter funkciók",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "A fájlok soha nem hagyják el az eszközét. A konvertálás helyben, a böngészőben történik — semmi sem kerül feltöltésre."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Nincs fájlkorlát",
+          "description": "Konvertáljon annyi fájlt, amennyire szüksége van egyetlen munkamenetben. Nincs korlátozás, nincs regisztráció."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Veszteségmentes kimenet",
+          "description": "A PNG megőrzi a teljes képminőséget adatveszteség nélkül. Ideális grafikákhoz és további szerkesztéshez."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Csoportos letöltés",
+          "description": "Töltse le a konvertált fájlokat egyenként vagy egyszerre egyetlen kattintással."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a GIF – PNG konvertálásról",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "A GIF – PNG konvertálás veszteségmentes?",
+          "answer": "A PNG veszteségmentes formátum, így a kimeneti fájl megőrzi az eredeti GIF fájl teljes képminőségét. Ha a GIF veszteséges tömörítést használt, az már elveszett adatokat nem lehet visszaállítani."
+        },
+        {
+          "question": "Megmarad az átlátszóság a konvertálás során?",
+          "answer": "Igen. A PNG támogatja az átlátszóságot (alfa csatorna), így a GIF fájl átlátszó területei teljes mértékben megmaradnak a kimenetben."
+        },
+        {
+          "question": "Miért nagyobb a kimeneti PNG fájl az eredetinél?",
+          "answer": "A PNG veszteségmentes formátum, amely minden pixelt megőriz tömörítési műtermékek nélkül. A veszteségmentes fájlok természetüknél fogva nagyobbak — ez várható, és azt jelenti, hogy nem vész el minőség."
+        },
+        {
+          "question": "Mely böngészők támogatják ezt a konvertert?",
+          "answer": "A konverter minden modern böngészőben működik: Chrome, Edge, Firefox és Safari. AVIF formátum támogatásához használjon Chrome 85+, Firefox 93+ vagy Safari 16.4+ verziót."
+        },
+        {
+          "question": "A fájljaim feltöltésre kerülnek egy szerverre?",
+          "answer": "Nem. A teljes konvertálási folyamat helyben, a böngészőjében fut JavaScript segítségével. A fájljai soha nem hagyják el az eszközét, és mi nem férünk hozzájuk."
+        }
+      ]
     },
     {
       "type": "gap",

@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab.",
-      "featureList": []
+      "featureList": ["GIF til PNG-konvertering", "Tabsfrit PNG-output", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {
-      "name": "GIF til PNG-konverter",
-      "description": "Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab.",
-      "steps": []
+      "name": "Sådan konverterer du GIF til PNG",
+      "description": "Konverter GIF-filer til PNG-format direkte i din browser.",
+      "steps": [
+        {
+          "name": "Tilføj GIF-filer",
+          "text": "Træk GIF-filer til uploadområdet eller klik for at vælge filer fra din enhed."
+        },
+        {
+          "name": "Konverter til PNG",
+          "text": "Klik på konverter. PNG er tabsfrit — ingen kvalitetsindstilling nødvendig."
+        },
+        {
+          "name": "Download PNG-filer",
+          "text": "Download dine konverterede PNG-filer enkeltvis eller alle på én gang."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "GIF til PNG-konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Tilføj filer",
+          "description": "Træk GIF-filer til uploadområdet eller klik for at vælge filer fra din enhed.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konverter",
+          "description": "Klik på konverter. PNG er et tabsfrit format — ingen kvalitetsindstilling nødvendig.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Download",
+          "description": "Download de konverterede PNG-filer enkeltvis eller alle på én gang.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF til PNG-konverter — funktioner",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatliv",
+          "description": "Filer forlader aldrig din enhed. Konverteringen kører lokalt i browseren — intet uploades til nogen server."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ingen filgrænse",
+          "description": "Konverter så mange filer som du har brug for i én session. Ingen begrænsninger, ingen registrering påkrævet."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Tabsfrit output",
+          "description": "PNG bevarer den fulde billedkvalitet uden datatab. Ideel til grafik og videre redigering."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Massedownload",
+          "description": "Download konverterede filer én for én eller alle på én gang med ét klik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål om konvertering fra GIF til PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Er konvertering fra GIF til PNG tabsfri?",
+          "answer": "PNG er et tabsfrit format, så outputfilen bevarer den fulde billedkvalitet fra den originale GIF-fil. Hvis GIF brugte tabsgivende komprimering, kan de allerede tabte data ikke gendannes."
+        },
+        {
+          "question": "Bevares gennemsigtigheden under konvertering?",
+          "answer": "Ja. PNG understøtter gennemsigtighed (alfakanal), så gennemsigtige områder fra GIF-filen bevares fuldt ud i outputtet."
+        },
+        {
+          "question": "Hvorfor er PNG-outputfilen større end originalen?",
+          "answer": "PNG er et tabsfrit format, der bevarer hver pixel uden komprimeringsartefakter. Tabsfrie filer er naturligt større — dette er forventet og betyder, at ingen kvalitet går tabt."
+        },
+        {
+          "question": "Hvilke browsere understøtter denne konverter?",
+          "answer": "Konverteren fungerer i alle moderne browsere: Chrome, Edge, Firefox og Safari. For AVIF-understøttelse brug Chrome 85+, Firefox 93+ eller Safari 16.4+."
+        },
+        {
+          "question": "Uploades mine filer til en server?",
+          "answer": "Nej. Hele konverteringsprocessen kører lokalt i din browser med JavaScript. Dine filer forlader aldrig din enhed, og vi har ingen adgang til dem."
+        }
+      ]
     },
     {
       "type": "gap",

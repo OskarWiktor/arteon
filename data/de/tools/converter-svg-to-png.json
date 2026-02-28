@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media.",
-      "featureList": []
+      "featureList": ["SVG-zu-PNG-Konvertierung", "Verlustfreie PNG-Ausgabe", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
     },
     "howTo": {
-      "name": "SVG zu PNG Konverter – Vektoren in pixelgenaue Bilder umwandeln",
-      "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media.",
-      "steps": []
+      "name": "SVG in PNG umwandeln",
+      "description": "SVG-Dateien direkt im Browser in das PNG-Format konvertieren.",
+      "steps": [
+        {
+          "name": "SVG-Dateien hinzufügen",
+          "text": "Ziehen Sie SVG-Dateien in den Upload-Bereich oder klicken Sie, um Dateien auszuwählen."
+        },
+        {
+          "name": "In PNG konvertieren",
+          "text": "Klicken Sie auf Konvertieren. PNG ist verlustfrei — keine Qualitätseinstellung nötig."
+        },
+        {
+          "name": "PNG-Dateien herunterladen",
+          "text": "Laden Sie die konvertierten PNG-Dateien einzeln oder alle auf einmal herunter."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -55,28 +68,85 @@
     },
     {
       "type": "sectionSteps",
-      "title": "SVG zu PNG Konverter",
+      "title": "SVG → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dateien hinzufügen",
+          "description": "Ziehen Sie SVG-Dateien in den Upload-Bereich oder klicken Sie, um Dateien von Ihrem Gerät auszuwählen.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konvertieren",
+          "description": "Klicken Sie auf Konvertieren. PNG ist verlustfrei — keine Qualitätseinstellung erforderlich.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Herunterladen",
+          "description": "Laden Sie die konvertierten PNG-Dateien einzeln oder alle auf einmal herunter.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "SVG-zu-PNG-Konverter — Funktionen",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Vollständige Privatsphäre",
-          "description": "Dateien verlassen Ihren Computer nicht. Die Konvertierung findet im Browser statt."
+          "title": "Volle Privatsphäre",
+          "description": "Dateien verlassen Ihr Gerät nicht. Die Konvertierung läuft lokal im Browser — nichts wird auf einen Server hochgeladen."
         },
         {
           "icon": "RiInfinityFill",
-          "title": "Ohne Dateilimit",
-          "description": "Konvertieren Sie so viele Bilder wie nötig. Alle Dateien werden nacheinander verarbeitet."
+          "title": "Keine Dateilimits",
+          "description": "Konvertieren Sie so viele Dateien wie nötig. Keine Einschränkungen, keine Registrierung erforderlich."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Sofortige Verarbeitung",
-          "description": "Die Konvertierung erfolgt nativ in Ihrem Browser. Ergebnisse in Sekunden."
+          "icon": "RiImageEditLine",
+          "title": "Verlustfreie Ausgabe",
+          "description": "PNG bewahrt die volle Bildqualität ohne Datenverlust. Ideal für Grafiken und Weiterbearbeitung."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Ein-Klick-Download",
-          "description": "Laden Sie Dateien einzeln oder alle auf einmal herunter."
+          "title": "Stapel-Download",
+          "description": "Laden Sie konvertierte Dateien einzeln oder alle auf einmal mit einem Klick herunter."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zur SVG-zu-PNG-Konvertierung",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ist die Konvertierung von SVG zu PNG verlustfrei?",
+          "answer": "PNG ist ein verlustfreies Format — die Ausgabedatei bewahrt die volle Bildqualität der SVG-Originaldatei. Wenn die SVG-Datei verlustbehaftete Kompression verwendete, können diese Daten nicht wiederhergestellt werden."
+        },
+        {
+          "question": "Bleibt die Transparenz bei der Konvertierung erhalten?",
+          "answer": "Ja. PNG unterstützt Transparenz (Alphakanal), sodass transparente Bereiche aus der SVG-Datei vollständig erhalten bleiben."
+        },
+        {
+          "question": "Warum ist die PNG-Datei größer als das Original?",
+          "answer": "PNG ist ein verlustfreies Format, das jeden Pixel ohne Kompressionsartefakte bewahrt. Verlustfreie Dateien sind naturgemäß größer als verlustbehaftete Originale."
+        },
+        {
+          "question": "Welche Browser unterstützen diesen Konverter?",
+          "answer": "Der Konverter funktioniert in allen modernen Browsern: Chrome, Edge, Firefox und Safari. Für AVIF-Unterstützung verwenden Sie Chrome 85+, Firefox 93+ oder Safari 16.4+."
+        },
+        {
+          "question": "Werden meine Dateien auf einen Server hochgeladen?",
+          "answer": "Nein. Der gesamte Konvertierungsprozess läuft lokal in Ihrem Browser. Ihre Dateien verlassen Ihr Gerät nicht und wir haben keinen Zugriff darauf."
         }
       ]
     },

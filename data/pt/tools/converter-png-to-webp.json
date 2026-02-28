@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.",
-      "featureList": []
+      "featureList": ["Conversão de PNG para WEBP", "Controlo de qualidade WEBP", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {
-      "name": "Conversor PNG para WebP",
-      "description": "Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.",
-      "steps": []
+      "name": "Como converter PNG para WEBP",
+      "description": "Converta ficheiros PNG para o formato WEBP diretamente no seu navegador.",
+      "steps": [
+        {
+          "name": "Adicionar ficheiros PNG",
+          "text": "Arraste ficheiros PNG para a zona de envio ou clique para selecionar ficheiros do seu dispositivo."
+        },
+        {
+          "name": "Converter para WEBP",
+          "text": "Clique em converter. Use o controlo de qualidade para ajustar o tamanho e a qualidade do ficheiro de saída."
+        },
+        {
+          "name": "Transferir ficheiros WEBP",
+          "text": "Transfira os seus ficheiros WEBP convertidos individualmente ou todos de uma vez."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor PNG para WebP – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "PNG → WEBP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adicionar ficheiros",
+          "description": "Arraste ficheiros PNG para a zona de envio ou clique para selecionar ficheiros do seu dispositivo.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Converter",
+          "description": "Clique em converter. Ajuste a qualidade de WEBP com o controlo deslizante.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Transferir",
+          "description": "Transfira os ficheiros WEBP convertidos individualmente ou todos de uma vez.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Funcionalidades do conversor PNG para WEBP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Os ficheiros nunca saem do seu dispositivo. A conversão é executada localmente no navegador — nada é enviado para qualquer servidor."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sem limite de ficheiros",
+          "description": "Converta tantos ficheiros quantos precisar numa única sessão. Sem restrições, sem registo necessário."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Controlo de qualidade",
+          "description": "Ajuste a qualidade de saída de WEBP com o controlo deslizante. Valores mais altos significam melhor qualidade e ficheiros maiores."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Transferência em lote",
+          "description": "Transfira os ficheiros convertidos um a um ou todos de uma vez com um único clique."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre a conversão de PNG para WEBP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "A conversão de PNG para WEBP é sem perdas?",
+          "answer": "WEBP utiliza compressão com perdas por predefinição. Pode ajustar o controlo de qualidade para controlar o equilíbrio entre o tamanho do ficheiro e a qualidade visual. Valores mais altos produzem melhor qualidade mas ficheiros maiores."
+        },
+        {
+          "question": "A transparência é preservada durante a conversão?",
+          "answer": "Sim. WEBP suporta transparência (canal alfa), pelo que as áreas transparentes do ficheiro PNG são totalmente preservadas na saída."
+        },
+        {
+          "question": "Porque é que o ficheiro WEBP de saída é maior que o original?",
+          "answer": "O tamanho do ficheiro depende do ajuste de qualidade e do conteúdo da imagem. Valores mais baixos produzem ficheiros menores. Ajuste o controlo conforme as suas necessidades."
+        },
+        {
+          "question": "Que navegadores suportam este conversor?",
+          "answer": "O conversor funciona em todos os navegadores modernos: Chrome, Edge, Firefox e Safari. Para suporte ao formato AVIF, utilize Chrome 85+, Firefox 93+ ou Safari 16.4+."
+        },
+        {
+          "question": "Os meus ficheiros são enviados para um servidor?",
+          "answer": "Não. Todo o processo de conversão é executado localmente no seu navegador em JavaScript. Os seus ficheiros nunca saem do dispositivo e não temos acesso a eles."
+        }
+      ]
     },
     {
       "type": "gap",

@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exporta el primer fotograma de un GIF como JPG compacto. Archivo más pequeño, carga más rápida.",
-      "featureList": []
+      "featureList": ["Conversión de GIF a JPG", "Control de calidad de JPG", "Conversión por lotes", "Procesamiento local en el navegador", "Sin subida de archivos"]
     },
     "howTo": {
-      "name": "Convertidor GIF a JPG – imagen compacta de cualquier GIF",
-      "description": "Exporta el primer fotograma de un GIF como JPG compacto. Archivo más pequeño, carga más rápida.",
-      "steps": []
+      "name": "Cómo convertir GIF a JPG",
+      "description": "Convierte archivos GIF a formato JPG directamente en tu navegador.",
+      "steps": [
+        {
+          "name": "Agregar archivos GIF",
+          "text": "Arrastra archivos GIF a la zona de carga o haz clic para seleccionarlos desde tu dispositivo."
+        },
+        {
+          "name": "Convertir a JPG",
+          "text": "Haz clic en convertir. Usa el control de calidad para ajustar el tamaño y la calidad del archivo de salida."
+        },
+        {
+          "name": "Descargar archivos JPG",
+          "text": "Descarga tus archivos JPG convertidos individualmente o todos a la vez."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -55,28 +68,85 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Convertidor GIF a JPG",
+      "title": "GIF → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Agregar archivos",
+          "description": "Arrastra archivos GIF a la zona de carga o haz clic para seleccionarlos desde tu dispositivo.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Convertir",
+          "description": "Haz clic en convertir. Ajusta la calidad de JPG con el control deslizante.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Descargar",
+          "description": "Descarga los archivos JPG convertidos individualmente o todos a la vez.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Características del convertidor GIF a JPG",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Privacidad total",
-          "description": "Los archivos no salen de tu ordenador. La conversión ocurre en el navegador."
+          "description": "Los archivos nunca salen de tu dispositivo. La conversión se ejecuta localmente en el navegador — nada se sube a ningún servidor."
         },
         {
           "icon": "RiInfinityFill",
           "title": "Sin límite de archivos",
-          "description": "Convierte tantas imágenes como necesites. Todos los archivos se procesan en secuencia."
+          "description": "Convierte tantos archivos como necesites en una sola sesión. Sin restricciones ni registro."
         },
         {
           "icon": "RiSpeedLine",
-          "title": "Procesamiento instantáneo",
-          "description": "La conversión ocurre de forma nativa en tu navegador. Resultados en segundos."
+          "title": "Control de calidad",
+          "description": "Ajusta la calidad de salida de JPG con el control deslizante. Valores más altos significan mejor calidad y archivos más grandes."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Descarga con un clic",
-          "description": "Descarga archivos individualmente o todos a la vez."
+          "title": "Descarga por lotes",
+          "description": "Descarga los archivos convertidos uno por uno o todos a la vez con un solo clic."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre la conversión de GIF a JPG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿La conversión de GIF a JPG es sin pérdidas?",
+          "answer": "JPG utiliza compresión con pérdida por defecto. Puedes ajustar el control de calidad para controlar el equilibrio entre tamaño y calidad visual. Valores más altos producen mejor calidad pero archivos más grandes."
+        },
+        {
+          "question": "¿Se preserva la transparencia durante la conversión?",
+          "answer": "JPG no soporta transparencia. Las áreas transparentes del archivo GIF se reemplazan con un fondo blanco."
+        },
+        {
+          "question": "¿Por qué el archivo JPG de salida es más grande que el original?",
+          "answer": "El tamaño del archivo depende del ajuste de calidad y el contenido de la imagen. Valores más bajos producen archivos más pequeños. Ajusta el control según tus necesidades."
+        },
+        {
+          "question": "¿Qué navegadores soportan este convertidor?",
+          "answer": "El convertidor funciona en todos los navegadores modernos: Chrome, Edge, Firefox y Safari. Para soporte de formato AVIF, usa Chrome 85+, Firefox 93+ o Safari 16.4+."
+        },
+        {
+          "question": "¿Se suben mis archivos a un servidor?",
+          "answer": "No. Todo el proceso de conversión se ejecuta localmente en tu navegador usando JavaScript. Tus archivos nunca salen de tu dispositivo y no tenemos acceso a ellos."
         }
       ]
     },

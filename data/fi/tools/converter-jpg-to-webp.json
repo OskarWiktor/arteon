@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.",
-      "featureList": []
+      "featureList": ["JPG – WEBP -muunnos", "WEBP-laadun säätö", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {
-      "name": "JPG WebP -muunnin",
-      "description": "Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.",
-      "steps": []
+      "name": "JPG muuntaminen WEBP-muotoon",
+      "description": "Muunna JPG-tiedostot WEBP-muotoon suoraan selaimessasi.",
+      "steps": [
+        {
+          "name": "Lisää JPG-tiedostot",
+          "text": "Vedä JPG-tiedostot latauskenttään tai napsauta valitaksesi tiedostot laitteeltasi."
+        },
+        {
+          "name": "Muunna WEBP-muotoon",
+          "text": "Napsauta muunna. Käytä laatuliukusäädintä tiedostokoon ja laadun säätämiseen."
+        },
+        {
+          "name": "Lataa WEBP-tiedostot",
+          "text": "Lataa muunnetut WEBP-tiedostot yksitellen tai kaikki kerralla."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "JPG WebP -muunnin – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "JPG → WEBP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lisää tiedostot",
+          "description": "Vedä JPG-tiedostot latauskenttään tai napsauta valitaksesi tiedostot laitteeltasi.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Muunna",
+          "description": "Napsauta muunna. Säädä WEBP-laatua liukusäätimellä.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Lataa",
+          "description": "Lataa muunnetut WEBP-tiedostot yksitellen tai kaikki kerralla.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "JPG – WEBP -muuntimen ominaisuudet",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Tiedostot eivät koskaan poistu laitteeltasi. Muunnos tapahtuu paikallisesti selaimessa — mitään ei ladata palvelimelle."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ei tiedostorajaa",
+          "description": "Muunna niin monta tiedostoa kuin tarvitset yhdessä istunnossa. Ei rajoituksia, ei rekisteröintiä."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Laadun säätö",
+          "description": "Säädä WEBP-tulostuslaatua liukusäätimellä. Korkeammat arvot tarkoittavat parempaa laatua ja suurempia tiedostoja."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Erälataus",
+          "description": "Lataa muunnetut tiedostot yksitellen tai kaikki kerralla yhdellä napsautuksella."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset JPG – WEBP -muunnoksesta",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Onko JPG – WEBP -muunnos häviötön?",
+          "answer": "WEBP käyttää oletusarvoisesti häviöllistä pakkausta. Voit säätää laatuliukusäädintä hallitaksesi tiedostokoon ja visuaalisen laadun tasapainoa. Korkeammat arvot tuottavat parempaa laatua mutta suurempia tiedostoja."
+        },
+        {
+          "question": "Säilyykö läpinäkyvyys muunnoksen aikana?",
+          "answer": "JPG ei tue läpinäkyvyyttä, joten ei ole alfa-kanavan tietoja säilytettäväksi tai menetettäväksi. Tulostusmuoto WEBP tukee läpinäkyvyyttä, mutta lähdetiedosto ei sisällä sellaista."
+        },
+        {
+          "question": "Miksi WEBP-tulostiedosto on suurempi kuin alkuperäinen?",
+          "answer": "Tiedostokoko riippuu laatuasetuksesta ja kuvan sisällöstä. Alemmat laatuarvot tuottavat pienempiä tiedostoja. Säädä liukusäädintä tarpeidesi mukaan."
+        },
+        {
+          "question": "Mitkä selaimet tukevat tätä muunninta?",
+          "answer": "Muunnin toimii kaikissa moderneissa selaimissa: Chrome, Edge, Firefox ja Safari. AVIF-muodon tukeen käytä Chrome 85+, Firefox 93+ tai Safari 16.4+."
+        },
+        {
+          "question": "Ladataanko tiedostoni palvelimelle?",
+          "answer": "Ei. Koko muunnosprosessi suoritetaan paikallisesti selaimessasi JavaScriptillä. Tiedostosi eivät koskaan poistu laitteeltasi, eikä meillä ole niihin pääsyä."
+        }
+      ]
     },
     {
       "type": "gap",

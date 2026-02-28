@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.",
-      "featureList": []
+      "featureList": ["GIF – JPG -muunnos", "JPG-laadun säätö", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {
-      "name": "GIF JPG -muunnin",
-      "description": "Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.",
-      "steps": []
+      "name": "GIF muuntaminen JPG-muotoon",
+      "description": "Muunna GIF-tiedostot JPG-muotoon suoraan selaimessasi.",
+      "steps": [
+        {
+          "name": "Lisää GIF-tiedostot",
+          "text": "Vedä GIF-tiedostot latauskenttään tai napsauta valitaksesi tiedostot laitteeltasi."
+        },
+        {
+          "name": "Muunna JPG-muotoon",
+          "text": "Napsauta muunna. Käytä laatuliukusäädintä tiedostokoon ja laadun säätämiseen."
+        },
+        {
+          "name": "Lataa JPG-tiedostot",
+          "text": "Lataa muunnetut JPG-tiedostot yksitellen tai kaikki kerralla."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "GIF JPG -muunnin – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lisää tiedostot",
+          "description": "Vedä GIF-tiedostot latauskenttään tai napsauta valitaksesi tiedostot laitteeltasi.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Muunna",
+          "description": "Napsauta muunna. Säädä JPG-laatua liukusäätimellä.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Lataa",
+          "description": "Lataa muunnetut JPG-tiedostot yksitellen tai kaikki kerralla.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "GIF – JPG -muuntimen ominaisuudet",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Tiedostot eivät koskaan poistu laitteeltasi. Muunnos tapahtuu paikallisesti selaimessa — mitään ei ladata palvelimelle."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ei tiedostorajaa",
+          "description": "Muunna niin monta tiedostoa kuin tarvitset yhdessä istunnossa. Ei rajoituksia, ei rekisteröintiä."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Laadun säätö",
+          "description": "Säädä JPG-tulostuslaatua liukusäätimellä. Korkeammat arvot tarkoittavat parempaa laatua ja suurempia tiedostoja."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Erälataus",
+          "description": "Lataa muunnetut tiedostot yksitellen tai kaikki kerralla yhdellä napsautuksella."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset GIF – JPG -muunnoksesta",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Onko GIF – JPG -muunnos häviötön?",
+          "answer": "JPG käyttää oletusarvoisesti häviöllistä pakkausta. Voit säätää laatuliukusäädintä hallitaksesi tiedostokoon ja visuaalisen laadun tasapainoa. Korkeammat arvot tuottavat parempaa laatua mutta suurempia tiedostoja."
+        },
+        {
+          "question": "Säilyykö läpinäkyvyys muunnoksen aikana?",
+          "answer": "JPG ei tue läpinäkyvyyttä. GIF-tiedoston läpinäkyvät alueet korvataan valkoisella taustalla."
+        },
+        {
+          "question": "Miksi JPG-tulostiedosto on suurempi kuin alkuperäinen?",
+          "answer": "Tiedostokoko riippuu laatuasetuksesta ja kuvan sisällöstä. Alemmat laatuarvot tuottavat pienempiä tiedostoja. Säädä liukusäädintä tarpeidesi mukaan."
+        },
+        {
+          "question": "Mitkä selaimet tukevat tätä muunninta?",
+          "answer": "Muunnin toimii kaikissa moderneissa selaimissa: Chrome, Edge, Firefox ja Safari. AVIF-muodon tukeen käytä Chrome 85+, Firefox 93+ tai Safari 16.4+."
+        },
+        {
+          "question": "Ladataanko tiedostoni palvelimelle?",
+          "answer": "Ei. Koko muunnosprosessi suoritetaan paikallisesti selaimessasi JavaScriptillä. Tiedostosi eivät koskaan poistu laitteeltasi, eikä meillä ole niihin pääsyä."
+        }
+      ]
     },
     {
       "type": "gap",

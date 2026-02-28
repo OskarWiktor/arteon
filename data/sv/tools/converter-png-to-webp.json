@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera PNG-bilder till WebP. Mindre filer med bibehållen transparens.",
-      "featureList": []
+      "featureList": ["PNG till WEBP-konvertering", "WEBP-kvalitetskontroll", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {
-      "name": "PNG till WebP-konverterare",
-      "description": "Konvertera PNG-bilder till WebP. Mindre filer med bibehållen transparens.",
-      "steps": []
+      "name": "Hur man konverterar PNG till WEBP",
+      "description": "Konvertera PNG-filer till WEBP-format direkt i din webbläsare.",
+      "steps": [
+        {
+          "name": "Lägg till PNG-filer",
+          "text": "Dra PNG-filer till uppladdningsytan eller klicka för att välja filer från din enhet."
+        },
+        {
+          "name": "Konvertera till WEBP",
+          "text": "Klicka på konvertera. Använd kvalitetsreglaget för att justera filstorlek och kvalitet."
+        },
+        {
+          "name": "Ladda ner WEBP-filer",
+          "text": "Ladda ner dina konverterade WEBP-filer enskilt eller alla på en gång."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Konvertera PNG-bilder till WebP. Mindre filer med bibehållen transparens.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "PNG till WebP-konverterare – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "PNG → WEBP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lägg till filer",
+          "description": "Dra PNG-filer till uppladdningsytan eller klicka för att välja filer från din enhet.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konvertera",
+          "description": "Klicka på konvertera. Justera WEBP-kvaliteten med reglaget.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Ladda ner",
+          "description": "Ladda ner de konverterade WEBP-filerna enskilt eller alla på en gång.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "PNG till WEBP-konverterare — funktioner",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Filerna lämnar aldrig din enhet. Konverteringen körs lokalt i webbläsaren — inget laddas upp till någon server."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ingen filgräns",
+          "description": "Konvertera så många filer som du behöver i en enda session. Inga begränsningar, ingen registrering krävs."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Kvalitetskontroll",
+          "description": "Justera WEBP-utdatakvaliteten med reglaget. Högre värden innebär bättre kvalitet och större filer."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Massnedladdning",
+          "description": "Ladda ner konverterade filer en i taget eller alla på en gång med ett enda klick."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om konvertering från PNG till WEBP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Är konvertering från PNG till WEBP förlustfri?",
+          "answer": "WEBP använder förlustgivande komprimering som standard. Du kan justera kvalitetsreglaget för att styra balansen mellan filstorlek och visuell kvalitet. Högre värden ger bättre kvalitet men större filer."
+        },
+        {
+          "question": "Bevaras transparensen vid konvertering?",
+          "answer": "Ja. WEBP stöder transparens (alfakanal), så transparenta områden från PNG-filen bevaras fullständigt i utdata."
+        },
+        {
+          "question": "Varför är WEBP-utdatafilen större än originalet?",
+          "answer": "Filstorleken beror på kvalitetsinställningen och bildens innehåll. Lägre kvalitetsvärden ger mindre filer. Justera reglaget efter dina behov."
+        },
+        {
+          "question": "Vilka webbläsare stöder denna konverterare?",
+          "answer": "Konverteraren fungerar i alla moderna webbläsare: Chrome, Edge, Firefox och Safari. För AVIF-stöd använd Chrome 85+, Firefox 93+ eller Safari 16.4+."
+        },
+        {
+          "question": "Laddas mina filer upp till en server?",
+          "answer": "Nej. Hela konverteringsprocessen körs lokalt i din webbläsare med JavaScript. Dina filer lämnar aldrig din enhet och vi har ingen åtkomst till dem."
+        }
+      ]
     },
     {
       "type": "gap",

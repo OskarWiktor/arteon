@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.",
-      "featureList": []
+      "featureList": ["WEBP till PNG-konvertering", "Förlustfri PNG-utdata", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {
-      "name": "WebP till PNG-konverterare",
-      "description": "Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.",
-      "steps": []
+      "name": "Hur man konverterar WEBP till PNG",
+      "description": "Konvertera WEBP-filer till PNG-format direkt i din webbläsare.",
+      "steps": [
+        {
+          "name": "Lägg till WEBP-filer",
+          "text": "Dra WEBP-filer till uppladdningsytan eller klicka för att välja filer från din enhet."
+        },
+        {
+          "name": "Konvertera till PNG",
+          "text": "Klicka på konvertera. PNG är förlustfritt — ingen kvalitetsinställning behövs."
+        },
+        {
+          "name": "Ladda ner PNG-filer",
+          "text": "Ladda ner dina konverterade PNG-filer enskilt eller alla på en gång."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "WebP till PNG-konverterare – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "WEBP → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lägg till filer",
+          "description": "Dra WEBP-filer till uppladdningsytan eller klicka för att välja filer från din enhet.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konvertera",
+          "description": "Klicka på konvertera. PNG är ett förlustfritt format — ingen kvalitetsinställning behövs.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Ladda ner",
+          "description": "Ladda ner de konverterade PNG-filerna enskilt eller alla på en gång.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "WEBP till PNG-konverterare — funktioner",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Filerna lämnar aldrig din enhet. Konverteringen körs lokalt i webbläsaren — inget laddas upp till någon server."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ingen filgräns",
+          "description": "Konvertera så många filer som du behöver i en enda session. Inga begränsningar, ingen registrering krävs."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Förlustfri utdata",
+          "description": "PNG bevarar fullständig bildkvalitet utan dataförlust. Perfekt för grafik och vidare redigering."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Massnedladdning",
+          "description": "Ladda ner konverterade filer en i taget eller alla på en gång med ett enda klick."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om konvertering från WEBP till PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Är konvertering från WEBP till PNG förlustfri?",
+          "answer": "PNG är ett förlustfritt format, så utdatafilen bevarar fullständig bildkvalitet från den ursprungliga WEBP-filen. Om WEBP använde förlustgivande komprimering kan de redan förlorade data inte återställas."
+        },
+        {
+          "question": "Bevaras transparensen vid konvertering?",
+          "answer": "Ja. PNG stöder transparens (alfakanal), så transparenta områden från WEBP-filen bevaras fullständigt i utdata."
+        },
+        {
+          "question": "Varför är PNG-utdatafilen större än originalet?",
+          "answer": "PNG är ett förlustfritt format som bevarar varje pixel utan komprimeringsartefakter. Förlustfria filer är naturligt större — detta är förväntat och innebär att ingen kvalitet går förlorad."
+        },
+        {
+          "question": "Vilka webbläsare stöder denna konverterare?",
+          "answer": "Konverteraren fungerar i alla moderna webbläsare: Chrome, Edge, Firefox och Safari. För AVIF-stöd använd Chrome 85+, Firefox 93+ eller Safari 16.4+."
+        },
+        {
+          "question": "Laddas mina filer upp till en server?",
+          "answer": "Nej. Hela konverteringsprocessen körs lokalt i din webbläsare med JavaScript. Dina filer lämnar aldrig din enhet och vi har ingen åtkomst till dem."
+        }
+      ]
     },
     {
       "type": "gap",

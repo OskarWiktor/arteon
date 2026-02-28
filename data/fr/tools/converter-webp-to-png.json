@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez vos images WebP en PNG sans perte. Traitement local, rien n'est envoyé.",
-      "featureList": []
+      "featureList": ["Conversion WEBP en PNG", "Sortie PNG sans perte", "Conversion par lot", "Traitement local dans le navigateur", "Aucun envoi de fichier"]
     },
     "howTo": {
-      "name": "Convertisseur WebP en PNG – sortie sans perte, compatibilité totale",
-      "description": "Convertissez vos images WebP en PNG sans perte. Traitement local, rien n'est envoyé.",
-      "steps": []
+      "name": "Comment convertir WEBP en PNG",
+      "description": "Convertissez des fichiers WEBP au format PNG directement dans votre navigateur.",
+      "steps": [
+        {
+          "name": "Ajouter des fichiers WEBP",
+          "text": "Glissez des fichiers WEBP dans la zone ou cliquez pour les sélectionner depuis votre appareil."
+        },
+        {
+          "name": "Convertir en PNG",
+          "text": "Cliquez sur convertir. PNG est sans perte — aucun réglage de qualité nécessaire."
+        },
+        {
+          "name": "Télécharger les fichiers PNG",
+          "text": "Téléchargez vos fichiers PNG convertis individuellement ou tous en une fois."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -55,28 +68,85 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Convertisseur WebP en PNG",
+      "title": "WEBP → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ajouter des fichiers",
+          "description": "Glissez des fichiers WEBP dans la zone ou cliquez pour les sélectionner depuis votre appareil.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Convertir",
+          "description": "Cliquez sur convertir. PNG est un format sans perte — aucun réglage de qualité nécessaire.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Télécharger",
+          "description": "Téléchargez les fichiers PNG convertis individuellement ou tous en une fois.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Fonctionnalités du convertisseur WEBP en PNG",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Confidentialité totale",
-          "description": "Les fichiers ne quittent pas votre ordinateur. La conversion a lieu dans le navigateur."
+          "description": "Les fichiers ne quittent jamais votre appareil. La conversion fonctionne localement dans le navigateur — rien n'est envoyé à un serveur."
         },
         {
           "icon": "RiInfinityFill",
           "title": "Sans limite de fichiers",
-          "description": "Convertissez autant d'images que nécessaire. Tous les fichiers sont traités en séquence."
+          "description": "Convertissez autant de fichiers que nécessaire en une seule session. Aucune restriction, aucune inscription requise."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Traitement instantané",
-          "description": "La conversion est native dans votre navigateur. Résultats en quelques secondes."
+          "icon": "RiImageEditLine",
+          "title": "Sortie sans perte",
+          "description": "PNG préserve la qualité d'image complète sans aucune perte de données. Idéal pour les graphiques et l'édition ultérieure."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Téléchargement en un clic",
-          "description": "Téléchargez les fichiers individuellement ou tous en une fois."
+          "title": "Téléchargement par lot",
+          "description": "Téléchargez les fichiers convertis un par un ou tous en une fois en un seul clic."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion WEBP en PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "La conversion WEBP en PNG est-elle sans perte ?",
+          "answer": "PNG est un format sans perte — le fichier de sortie préserve la qualité d'image complète du WEBP original. Si le WEBP utilisait une compression avec perte, ces données perdues ne peuvent pas être récupérées."
+        },
+        {
+          "question": "La transparence est-elle préservée lors de la conversion ?",
+          "answer": "Oui. PNG prend en charge la transparence (canal alpha), les zones transparentes du fichier WEBP sont donc entièrement préservées."
+        },
+        {
+          "question": "Pourquoi le fichier PNG est-il plus volumineux que l'original ?",
+          "answer": "PNG est un format sans perte qui préserve chaque pixel sans artefact de compression. Les fichiers sans perte sont naturellement plus volumineux — c'est normal et signifie qu'aucune qualité n'est perdue."
+        },
+        {
+          "question": "Quels navigateurs prennent en charge ce convertisseur ?",
+          "answer": "Le convertisseur fonctionne dans tous les navigateurs modernes : Chrome, Edge, Firefox et Safari. Pour la prise en charge AVIF, utilisez Chrome 85+, Firefox 93+ ou Safari 16.4+."
+        },
+        {
+          "question": "Mes fichiers sont-ils envoyés sur un serveur ?",
+          "answer": "Non. L'ensemble du processus de conversion s'exécute localement dans votre navigateur en JavaScript. Vos fichiers ne quittent jamais votre appareil et nous n'y avons pas accès."
         }
       ]
     },

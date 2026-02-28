@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
-      "featureList": []
+      "featureList": ["BMP – PNG -muunnos", "Häviötön PNG-tulos", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {
-      "name": "BMP PNG -muunnin",
-      "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
-      "steps": []
+      "name": "BMP muuntaminen PNG-muotoon",
+      "description": "Muunna BMP-tiedostot PNG-muotoon suoraan selaimessasi.",
+      "steps": [
+        {
+          "name": "Lisää BMP-tiedostot",
+          "text": "Vedä BMP-tiedostot latauskenttään tai napsauta valitaksesi tiedostot laitteeltasi."
+        },
+        {
+          "name": "Muunna PNG-muotoon",
+          "text": "Napsauta muunna. PNG on häviötön — laatuasetusta ei tarvita."
+        },
+        {
+          "name": "Lataa PNG-tiedostot",
+          "text": "Lataa muunnetut PNG-tiedostot yksitellen tai kaikki kerralla."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "BMP PNG -muunnin – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Lisää tiedostot",
+          "description": "Vedä BMP-tiedostot latauskenttään tai napsauta valitaksesi tiedostot laitteeltasi.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Muunna",
+          "description": "Napsauta muunna. PNG on häviötön muoto — laatuasetusta ei tarvita.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Lataa",
+          "description": "Lataa muunnetut PNG-tiedostot yksitellen tai kaikki kerralla.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP – PNG -muuntimen ominaisuudet",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Tiedostot eivät koskaan poistu laitteeltasi. Muunnos tapahtuu paikallisesti selaimessa — mitään ei ladata palvelimelle."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ei tiedostorajaa",
+          "description": "Muunna niin monta tiedostoa kuin tarvitset yhdessä istunnossa. Ei rajoituksia, ei rekisteröintiä."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Häviötön tulos",
+          "description": "PNG säilyttää kuvan täyden laadun ilman tietojen menetystä. Ihanteellinen grafiikoille ja jatkokäsittelylle."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Erälataus",
+          "description": "Lataa muunnetut tiedostot yksitellen tai kaikki kerralla yhdellä napsautuksella."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset BMP – PNG -muunnoksesta",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Onko BMP – PNG -muunnos häviötön?",
+          "answer": "PNG on häviötön muoto, joten tulostiedosto säilyttää alkuperäisen BMP-tiedoston täyden kuvanlaadun. Jos BMP käytti häviöllistä pakkausta, jo menetettyä tietoa ei voida palauttaa."
+        },
+        {
+          "question": "Säilyykö läpinäkyvyys muunnoksen aikana?",
+          "answer": "BMP ei tue läpinäkyvyyttä, joten ei ole alfa-kanavan tietoja säilytettäväksi tai menetettäväksi. Tulostusmuoto PNG tukee läpinäkyvyyttä, mutta lähdetiedosto ei sisällä sellaista."
+        },
+        {
+          "question": "Miksi PNG-tulostiedosto on suurempi kuin alkuperäinen?",
+          "answer": "PNG on häviötön muoto, joka säilyttää jokaisen pikselin ilman pakkausartefakteja. Häviöttömät tiedostot ovat luonnostaan suurempia — tämä on odotettua ja tarkoittaa, ettei laatua menetetä."
+        },
+        {
+          "question": "Mitkä selaimet tukevat tätä muunninta?",
+          "answer": "Muunnin toimii kaikissa moderneissa selaimissa: Chrome, Edge, Firefox ja Safari. AVIF-muodon tukeen käytä Chrome 85+, Firefox 93+ tai Safari 16.4+."
+        },
+        {
+          "question": "Ladataanko tiedostoni palvelimelle?",
+          "answer": "Ei. Koko muunnosprosessi suoritetaan paikallisesti selaimessasi JavaScriptillä. Tiedostosi eivät koskaan poistu laitteeltasi, eikä meillä ole niihin pääsyä."
+        }
+      ]
     },
     {
       "type": "gap",

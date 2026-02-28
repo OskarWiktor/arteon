@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.",
-      "featureList": []
+      "featureList": ["Převod JPG na PNG", "Bezeztrátový výstup PNG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {
-      "name": "Převodník JPG na PNG",
-      "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.",
-      "steps": []
+      "name": "Jak převést JPG na PNG",
+      "description": "Převeďte soubory JPG do formátu PNG přímo ve vašem prohlížeči.",
+      "steps": [
+        {
+          "name": "Přidejte soubory JPG",
+          "text": "Přetáhněte soubory JPG do oblasti nahrávání nebo klikněte pro výběr souborů z vašeho zařízení."
+        },
+        {
+          "name": "Převeďte na PNG",
+          "text": "Klikněte na převést. PNG je bezeztrátový — není potřeba nastavovat kvalitu."
+        },
+        {
+          "name": "Stáhněte soubory PNG",
+          "text": "Stáhněte převedené soubory PNG jednotlivě nebo všechny najednou."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník JPG na PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "JPG → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Přidejte soubory",
+          "description": "Přetáhněte soubory JPG do oblasti nahrávání nebo klikněte pro výběr souborů z vašeho zařízení.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Převeďte",
+          "description": "Klikněte na převést. PNG je bezeztrátový formát — není potřeba nastavovat kvalitu.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Stáhněte",
+          "description": "Stáhněte převedené soubory PNG jednotlivě nebo všechny najednou.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Funkce převodníku JPG na PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Plné soukromí",
+          "description": "Soubory nikdy neopustí vaše zařízení. Převod probíhá lokálně v prohlížeči — nic se nenahrává na žádný server."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez omezení souborů",
+          "description": "Převeďte tolik souborů, kolik potřebujete, v jedné relaci. Žádná omezení, žádná registrace."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Bezeztrátový výstup",
+          "description": "PNG zachovává plnou kvalitu obrazu bez ztráty dat. Ideální pro grafiku a další úpravy."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Hromadné stažení",
+          "description": "Stáhněte převedené soubory jeden po druhém nebo všechny najednou jedním kliknutím."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o převodu JPG na PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Je převod JPG na PNG bezeztrátový?",
+          "answer": "PNG je bezeztrátový formát, takže výstupní soubor zachovává plnou kvalitu obrazu z původního souboru JPG. Pokud JPG používal ztrátovou kompresi, tato již ztracená data nelze obnovit."
+        },
+        {
+          "question": "Je transparentnost zachována během převodu?",
+          "answer": "JPG nepodporuje transparentnost, takže neexistují žádná data alfa kanálu, která by bylo třeba zachovat nebo ztratit. Výstupní formát PNG transparentnost podporuje, ale zdrojový obrázek žádnou neobsahuje."
+        },
+        {
+          "question": "Proč je výstupní soubor PNG větší než originál?",
+          "answer": "PNG je bezeztrátový formát, který zachovává každý pixel bez kompresních artefaktů. Bezeztrátové soubory jsou přirozeně větší — to je očekávané a znamená to, že se neztrácí žádná kvalita."
+        },
+        {
+          "question": "Které prohlížeče podporují tento převodník?",
+          "answer": "Převodník funguje ve všech moderních prohlížečích: Chrome, Edge, Firefox a Safari. Pro podporu formátu AVIF použijte Chrome 85+, Firefox 93+ nebo Safari 16.4+."
+        },
+        {
+          "question": "Jsou moje soubory nahrávány na server?",
+          "answer": "Ne. Celý proces převodu probíhá lokálně ve vašem prohlížeči v JavaScriptu. Vaše soubory nikdy neopustí vaše zařízení a my k nim nemáme přístup."
+        }
+      ]
     },
     {
       "type": "gap",

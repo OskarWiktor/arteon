@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.",
-      "featureList": []
+      "featureList": ["Conversie BMP în JPG", "Control calitate JPG", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {
-      "name": "Convertor BMP în JPG",
-      "description": "Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.",
-      "steps": []
+      "name": "Cum să convertiți BMP în JPG",
+      "description": "Convertiți fișiere BMP în format JPG direct în browserul dumneavoastră.",
+      "steps": [
+        {
+          "name": "Adăugați fișiere BMP",
+          "text": "Trageți fișiere BMP în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv."
+        },
+        {
+          "name": "Convertiți în JPG",
+          "text": "Faceți clic pe conversie. Folosiți glisorul de calitate pentru a ajusta dimensiunea și calitatea fișierului de ieșire."
+        },
+        {
+          "name": "Descărcați fișierele JPG",
+          "text": "Descărcați fișierele JPG convertite individual sau pe toate odată."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor BMP în JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "BMP → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adăugați fișiere",
+          "description": "Trageți fișiere BMP în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Convertiți",
+          "description": "Faceți clic pe conversie. Ajustați calitatea JPG cu glisorul.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Descărcați",
+          "description": "Descărcați fișierele JPG convertite individual sau pe toate odată.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Funcționalități convertor BMP în JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele nu părăsesc niciodată dispozitivul. Conversia se execută local în browser — nimic nu este încărcat pe vreun server."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Fără limită de fișiere",
+          "description": "Convertiți oricâte fișiere aveți nevoie într-o singură sesiune. Fără restricții, fără înregistrare."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Control al calității",
+          "description": "Ajustați calitatea de ieșire JPG cu glisorul. Valori mai mari înseamnă calitate mai bună și fișiere mai mari."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Descărcare în lot",
+          "description": "Descărcați fișierele convertite unul câte unul sau pe toate odată cu un singur clic."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia BMP în JPG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Conversia BMP în JPG este fără pierderi?",
+          "answer": "JPG folosește compresie cu pierderi implicit. Puteți ajusta glisorul de calitate pentru a controla echilibrul între dimensiunea fișierului și calitatea vizuală. Valori mai mari produc calitate mai bună, dar fișiere mai mari."
+        },
+        {
+          "question": "Transparența este păstrată în timpul conversiei?",
+          "answer": "JPG nu suportă transparență. Zonele transparente din fișierul BMP sunt înlocuite cu un fundal alb."
+        },
+        {
+          "question": "De ce fișierul JPG de ieșire este mai mare decât originalul?",
+          "answer": "Dimensiunea fișierului depinde de setarea calității și de conținutul imaginii. Valori mai mici produc fișiere mai mici. Ajustați glisorul conform nevoilor."
+        },
+        {
+          "question": "Ce browsere suportă acest convertor?",
+          "answer": "Convertorul funcționează în toate browserele moderne: Chrome, Edge, Firefox și Safari. Pentru suportul formatului AVIF, utilizați Chrome 85+, Firefox 93+ sau Safari 16.4+."
+        },
+        {
+          "question": "Fișierele mele sunt încărcate pe un server?",
+          "answer": "Nu. Întregul proces de conversie se execută local în browserul dumneavoastră în JavaScript. Fișierele nu părăsesc niciodată dispozitivul și nu avem acces la ele."
+        }
+      ]
     },
     {
       "type": "gap",

@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG-Fotos in leichtes WebP umwandeln. Bildgewicht um bis zu 35% reduzieren.",
-      "featureList": []
+      "featureList": ["JPG-zu-WEBP-Konvertierung", "WEBP-Qualitätssteuerung", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
     },
     "howTo": {
-      "name": "JPG zu WebP Konverter – leichtere Bilder, gleiche Qualität",
-      "description": "JPG-Fotos in leichtes WebP umwandeln. Bildgewicht um bis zu 35% reduzieren.",
-      "steps": []
+      "name": "JPG in WEBP umwandeln",
+      "description": "JPG-Dateien direkt im Browser in das WEBP-Format konvertieren.",
+      "steps": [
+        {
+          "name": "JPG-Dateien hinzufügen",
+          "text": "Ziehen Sie JPG-Dateien in den Upload-Bereich oder klicken Sie, um Dateien auszuwählen."
+        },
+        {
+          "name": "In WEBP konvertieren",
+          "text": "Klicken Sie auf Konvertieren. Stellen Sie den Qualitätsregler ein, um Dateigröße und Qualität zu steuern."
+        },
+        {
+          "name": "WEBP-Dateien herunterladen",
+          "text": "Laden Sie die konvertierten WEBP-Dateien einzeln oder alle auf einmal herunter."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -55,28 +68,85 @@
     },
     {
       "type": "sectionSteps",
-      "title": "JPG zu WebP Konverter",
+      "title": "JPG → WEBP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dateien hinzufügen",
+          "description": "Ziehen Sie JPG-Dateien in den Upload-Bereich oder klicken Sie, um Dateien von Ihrem Gerät auszuwählen.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konvertieren",
+          "description": "Klicken Sie auf Konvertieren. Stellen Sie die WEBP-Qualität mit dem Regler ein.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Herunterladen",
+          "description": "Laden Sie die konvertierten WEBP-Dateien einzeln oder alle auf einmal herunter.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "JPG-zu-WEBP-Konverter — Funktionen",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Vollständige Privatsphäre",
-          "description": "Dateien verlassen Ihren Computer nicht. Die Konvertierung findet im Browser statt."
+          "title": "Volle Privatsphäre",
+          "description": "Dateien verlassen Ihr Gerät nicht. Die Konvertierung läuft lokal im Browser — nichts wird auf einen Server hochgeladen."
         },
         {
           "icon": "RiInfinityFill",
-          "title": "Ohne Dateilimit",
-          "description": "Konvertieren Sie so viele Bilder wie nötig. Alle Dateien werden nacheinander verarbeitet."
+          "title": "Keine Dateilimits",
+          "description": "Konvertieren Sie so viele Dateien wie nötig. Keine Einschränkungen, keine Registrierung erforderlich."
         },
         {
           "icon": "RiSpeedLine",
-          "title": "Sofortige Verarbeitung",
-          "description": "Die Konvertierung erfolgt nativ in Ihrem Browser. Ergebnisse in Sekunden."
+          "title": "Qualitätsregler",
+          "description": "Passen Sie die WEBP-Ausgabequalität mit dem Regler an. Höhere Werte bedeuten bessere Qualität und größere Dateien."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Ein-Klick-Download",
-          "description": "Laden Sie Dateien einzeln oder alle auf einmal herunter."
+          "title": "Stapel-Download",
+          "description": "Laden Sie konvertierte Dateien einzeln oder alle auf einmal mit einem Klick herunter."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zur JPG-zu-WEBP-Konvertierung",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ist die Konvertierung von JPG zu WEBP verlustfrei?",
+          "answer": "WEBP verwendet verlustbehaftete Kompression. Mit dem Qualitätsregler steuern Sie das Verhältnis zwischen Dateigröße und visueller Qualität. Höhere Werte ergeben bessere Qualität, aber größere Dateien."
+        },
+        {
+          "question": "Bleibt die Transparenz bei der Konvertierung erhalten?",
+          "answer": "JPG unterstützt keine Transparenz, es gibt also keine Alphakanal-Daten, die erhalten bleiben oder verloren gehen könnten. Das Ausgabeformat WEBP unterstützt Transparenz, aber das Quellbild enthält keine."
+        },
+        {
+          "question": "Warum ist die WEBP-Datei größer als das Original?",
+          "answer": "Die Dateigröße hängt von der Qualitätseinstellung und dem Bildinhalt ab. Niedrigere Qualitätswerte erzeugen kleinere Dateien. Passen Sie den Regler an Ihre Bedürfnisse an."
+        },
+        {
+          "question": "Welche Browser unterstützen diesen Konverter?",
+          "answer": "Der Konverter funktioniert in allen modernen Browsern: Chrome, Edge, Firefox und Safari. Für AVIF-Unterstützung verwenden Sie Chrome 85+, Firefox 93+ oder Safari 16.4+."
+        },
+        {
+          "question": "Werden meine Dateien auf einen Server hochgeladen?",
+          "answer": "Nein. Der gesamte Konvertierungsprozess läuft lokal in Ihrem Browser. Ihre Dateien verlassen Ihr Gerät nicht und wir haben keinen Zugriff darauf."
         }
       ]
     },

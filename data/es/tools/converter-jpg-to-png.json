@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor.",
-      "featureList": []
+      "featureList": ["Conversión de JPG a PNG", "Salida PNG sin pérdidas", "Conversión por lotes", "Procesamiento local en el navegador", "Sin subida de archivos"]
     },
     "howTo": {
-      "name": "Convertidor JPG a PNG – cambia a calidad sin pérdida",
-      "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor.",
-      "steps": []
+      "name": "Cómo convertir JPG a PNG",
+      "description": "Convierte archivos JPG a formato PNG directamente en tu navegador.",
+      "steps": [
+        {
+          "name": "Agregar archivos JPG",
+          "text": "Arrastra archivos JPG a la zona de carga o haz clic para seleccionarlos desde tu dispositivo."
+        },
+        {
+          "name": "Convertir a PNG",
+          "text": "Haz clic en convertir. PNG es sin pérdidas — no necesita ajuste de calidad."
+        },
+        {
+          "name": "Descargar archivos PNG",
+          "text": "Descarga tus archivos PNG convertidos individualmente o todos a la vez."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -55,28 +68,85 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Convertidor JPG a PNG",
+      "title": "JPG → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Agregar archivos",
+          "description": "Arrastra archivos JPG a la zona de carga o haz clic para seleccionarlos desde tu dispositivo.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Convertir",
+          "description": "Haz clic en convertir. PNG es un formato sin pérdidas — no necesita ajuste de calidad.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Descargar",
+          "description": "Descarga los archivos PNG convertidos individualmente o todos a la vez.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Características del convertidor JPG a PNG",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Privacidad total",
-          "description": "Los archivos no salen de tu ordenador. La conversión ocurre en el navegador."
+          "description": "Los archivos nunca salen de tu dispositivo. La conversión se ejecuta localmente en el navegador — nada se sube a ningún servidor."
         },
         {
           "icon": "RiInfinityFill",
           "title": "Sin límite de archivos",
-          "description": "Convierte tantas imágenes como necesites. Todos los archivos se procesan en secuencia."
+          "description": "Convierte tantos archivos como necesites en una sola sesión. Sin restricciones ni registro."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Procesamiento instantáneo",
-          "description": "La conversión ocurre de forma nativa en tu navegador. Resultados en segundos."
+          "icon": "RiImageEditLine",
+          "title": "Salida sin pérdidas",
+          "description": "PNG preserva la calidad completa de la imagen sin pérdida de datos. Ideal para gráficos y edición posterior."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Descarga con un clic",
-          "description": "Descarga archivos individualmente o todos a la vez."
+          "title": "Descarga por lotes",
+          "description": "Descarga los archivos convertidos uno por uno o todos a la vez con un solo clic."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre la conversión de JPG a PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿La conversión de JPG a PNG es sin pérdidas?",
+          "answer": "PNG es un formato sin pérdidas, por lo que el archivo de salida preserva la calidad completa de la imagen del JPG original. Si el JPG usó compresión con pérdida, esos datos ya perdidos no se pueden recuperar."
+        },
+        {
+          "question": "¿Se preserva la transparencia durante la conversión?",
+          "answer": "JPG no soporta transparencia, por lo que no hay datos de canal alfa que preservar o perder. El formato de salida PNG sí soporta transparencia, pero la imagen de origen no contiene ninguna."
+        },
+        {
+          "question": "¿Por qué el archivo PNG de salida es más grande que el original?",
+          "answer": "PNG es un formato sin pérdidas que preserva cada píxel sin artefactos de compresión. Los archivos sin pérdidas son naturalmente más grandes — esto es normal y significa que no se pierde calidad."
+        },
+        {
+          "question": "¿Qué navegadores soportan este convertidor?",
+          "answer": "El convertidor funciona en todos los navegadores modernos: Chrome, Edge, Firefox y Safari. Para soporte de formato AVIF, usa Chrome 85+, Firefox 93+ o Safari 16.4+."
+        },
+        {
+          "question": "¿Se suben mis archivos a un servidor?",
+          "answer": "No. Todo el proceso de conversión se ejecuta localmente en tu navegador usando JavaScript. Tus archivos nunca salen de tu dispositivo y no tenemos acceso a ellos."
         }
       ]
     },

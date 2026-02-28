@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.",
-      "featureList": []
+      "featureList": ["Conversão de WEBP para JPG", "Controlo de qualidade JPG", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {
-      "name": "Conversor WebP para JPG",
-      "description": "Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.",
-      "steps": []
+      "name": "Como converter WEBP para JPG",
+      "description": "Converta ficheiros WEBP para o formato JPG diretamente no seu navegador.",
+      "steps": [
+        {
+          "name": "Adicionar ficheiros WEBP",
+          "text": "Arraste ficheiros WEBP para a zona de envio ou clique para selecionar ficheiros do seu dispositivo."
+        },
+        {
+          "name": "Converter para JPG",
+          "text": "Clique em converter. Use o controlo de qualidade para ajustar o tamanho e a qualidade do ficheiro de saída."
+        },
+        {
+          "name": "Transferir ficheiros JPG",
+          "text": "Transfira os seus ficheiros JPG convertidos individualmente ou todos de uma vez."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversor WebP para JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "WEBP → JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Adicionar ficheiros",
+          "description": "Arraste ficheiros WEBP para a zona de envio ou clique para selecionar ficheiros do seu dispositivo.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Converter",
+          "description": "Clique em converter. Ajuste a qualidade de JPG com o controlo deslizante.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Transferir",
+          "description": "Transfira os ficheiros JPG convertidos individualmente ou todos de uma vez.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Funcionalidades do conversor WEBP para JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Os ficheiros nunca saem do seu dispositivo. A conversão é executada localmente no navegador — nada é enviado para qualquer servidor."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sem limite de ficheiros",
+          "description": "Converta tantos ficheiros quantos precisar numa única sessão. Sem restrições, sem registo necessário."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Controlo de qualidade",
+          "description": "Ajuste a qualidade de saída de JPG com o controlo deslizante. Valores mais altos significam melhor qualidade e ficheiros maiores."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Transferência em lote",
+          "description": "Transfira os ficheiros convertidos um a um ou todos de uma vez com um único clique."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre a conversão de WEBP para JPG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "A conversão de WEBP para JPG é sem perdas?",
+          "answer": "JPG utiliza compressão com perdas por predefinição. Pode ajustar o controlo de qualidade para controlar o equilíbrio entre o tamanho do ficheiro e a qualidade visual. Valores mais altos produzem melhor qualidade mas ficheiros maiores."
+        },
+        {
+          "question": "A transparência é preservada durante a conversão?",
+          "answer": "JPG não suporta transparência. As áreas transparentes do ficheiro WEBP são substituídas por um fundo branco."
+        },
+        {
+          "question": "Porque é que o ficheiro JPG de saída é maior que o original?",
+          "answer": "O tamanho do ficheiro depende do ajuste de qualidade e do conteúdo da imagem. Valores mais baixos produzem ficheiros menores. Ajuste o controlo conforme as suas necessidades."
+        },
+        {
+          "question": "Que navegadores suportam este conversor?",
+          "answer": "O conversor funciona em todos os navegadores modernos: Chrome, Edge, Firefox e Safari. Para suporte ao formato AVIF, utilize Chrome 85+, Firefox 93+ ou Safari 16.4+."
+        },
+        {
+          "question": "Os meus ficheiros são enviados para um servidor?",
+          "answer": "Não. Todo o processo de conversão é executado localmente no seu navegador em JavaScript. Os seus ficheiros nunca saem do dispositivo e não temos acesso a eles."
+        }
+      ]
     },
     {
       "type": "gap",

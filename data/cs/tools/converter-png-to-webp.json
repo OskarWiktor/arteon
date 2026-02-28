@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
-      "featureList": []
+      "featureList": ["Převod PNG na WEBP", "Ovládání kvality WEBP", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {
-      "name": "Převodník PNG na WebP",
-      "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
-      "steps": []
+      "name": "Jak převést PNG na WEBP",
+      "description": "Převeďte soubory PNG do formátu WEBP přímo ve vašem prohlížeči.",
+      "steps": [
+        {
+          "name": "Přidejte soubory PNG",
+          "text": "Přetáhněte soubory PNG do oblasti nahrávání nebo klikněte pro výběr souborů z vašeho zařízení."
+        },
+        {
+          "name": "Převeďte na WEBP",
+          "text": "Klikněte na převést. Použijte posuvník kvality k úpravě velikosti a kvality výstupního souboru."
+        },
+        {
+          "name": "Stáhněte soubory WEBP",
+          "text": "Stáhněte převedené soubory WEBP jednotlivě nebo všechny najednou."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník PNG na WebP – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "PNG → WEBP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Přidejte soubory",
+          "description": "Přetáhněte soubory PNG do oblasti nahrávání nebo klikněte pro výběr souborů z vašeho zařízení.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Převeďte",
+          "description": "Klikněte na převést. Upravte kvalitu WEBP pomocí posuvníku.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Stáhněte",
+          "description": "Stáhněte převedené soubory WEBP jednotlivě nebo všechny najednou.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Funkce převodníku PNG na WEBP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Plné soukromí",
+          "description": "Soubory nikdy neopustí vaše zařízení. Převod probíhá lokálně v prohlížeči — nic se nenahrává na žádný server."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez omezení souborů",
+          "description": "Převeďte tolik souborů, kolik potřebujete, v jedné relaci. Žádná omezení, žádná registrace."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Ovládání kvality",
+          "description": "Upravte výstupní kvalitu WEBP pomocí posuvníku. Vyšší hodnoty znamenají lepší kvalitu a větší soubory."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Hromadné stažení",
+          "description": "Stáhněte převedené soubory jeden po druhém nebo všechny najednou jedním kliknutím."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o převodu PNG na WEBP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Je převod PNG na WEBP bezeztrátový?",
+          "answer": "WEBP ve výchozím nastavení používá ztrátovou kompresi. Pomocí posuvníku kvality můžete řídit rovnováhu mezi velikostí souboru a vizuální kvalitou. Vyšší hodnoty produkují lepší kvalitu, ale větší soubory."
+        },
+        {
+          "question": "Je transparentnost zachována během převodu?",
+          "answer": "Ano. WEBP podporuje transparentnost (alfa kanál), takže průhledné oblasti ze souboru PNG jsou plně zachovány ve výstupu."
+        },
+        {
+          "question": "Proč je výstupní soubor WEBP větší než originál?",
+          "answer": "Velikost souboru závisí na nastavení kvality a obsahu obrázku. Nižší hodnoty kvality produkují menší soubory. Upravte posuvník podle svých potřeb."
+        },
+        {
+          "question": "Které prohlížeče podporují tento převodník?",
+          "answer": "Převodník funguje ve všech moderních prohlížečích: Chrome, Edge, Firefox a Safari. Pro podporu formátu AVIF použijte Chrome 85+, Firefox 93+ nebo Safari 16.4+."
+        },
+        {
+          "question": "Jsou moje soubory nahrávány na server?",
+          "answer": "Ne. Celý proces převodu probíhá lokálně ve vašem prohlížeči v JavaScriptu. Vaše soubory nikdy neopustí vaše zařízení a my k nim nemáme přístup."
+        }
+      ]
     },
     {
       "type": "gap",

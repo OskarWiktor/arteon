@@ -29,12 +29,25 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.",
-      "featureList": []
+      "featureList": ["JPG – PNG konvertálás", "Veszteségmentes PNG kimenet", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {
-      "name": "JPG PNG konverter",
-      "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.",
-      "steps": []
+      "name": "JPG konvertálása PNG formátumra",
+      "description": "JPG fájlok konvertálása PNG formátumra közvetlenül a böngészőben.",
+      "steps": [
+        {
+          "name": "JPG fájlok hozzáadása",
+          "text": "Húzza a JPG fájlokat a feltöltési területre, vagy kattintson a fájlok kiválasztásához."
+        },
+        {
+          "name": "Konvertálás PNG formátumra",
+          "text": "Kattintson a konvertálásra. A PNG veszteségmentes — nincs szükség minőségi beállításra."
+        },
+        {
+          "name": "PNG fájlok letöltése",
+          "text": "Töltse le a konvertált PNG fájlokat egyenként vagy egyszerre."
+        }
+      ]
     }
   },
   "contentBlocks": [
@@ -48,6 +61,94 @@
       "html": "<p class=\"text-mid\">JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "JPG PNG konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "JPG → PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Fájlok hozzáadása",
+          "description": "Húzza a JPG fájlokat a feltöltési területre, vagy kattintson a fájlok kiválasztásához az eszközéről.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konvertálás",
+          "description": "Kattintson a konvertálásra. A PNG veszteségmentes formátum — nincs szükség minőségi beállításra.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Letöltés",
+          "description": "Töltse le a konvertált PNG fájlokat egyenként vagy egyszerre.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "JPG – PNG konverter funkciók",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "A fájlok soha nem hagyják el az eszközét. A konvertálás helyben, a böngészőben történik — semmi sem kerül feltöltésre."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Nincs fájlkorlát",
+          "description": "Konvertáljon annyi fájlt, amennyire szüksége van egyetlen munkamenetben. Nincs korlátozás, nincs regisztráció."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Veszteségmentes kimenet",
+          "description": "A PNG megőrzi a teljes képminőséget adatveszteség nélkül. Ideális grafikákhoz és további szerkesztéshez."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Csoportos letöltés",
+          "description": "Töltse le a konvertált fájlokat egyenként vagy egyszerre egyetlen kattintással."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a JPG – PNG konvertálásról",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "A JPG – PNG konvertálás veszteségmentes?",
+          "answer": "A PNG veszteségmentes formátum, így a kimeneti fájl megőrzi az eredeti JPG fájl teljes képminőségét. Ha a JPG veszteséges tömörítést használt, az már elveszett adatokat nem lehet visszaállítani."
+        },
+        {
+          "question": "Megmarad az átlátszóság a konvertálás során?",
+          "answer": "A JPG nem támogatja az átlátszóságot, így nincsenek alfa csatorna adatok, amelyeket meg kellene őrizni vagy elveszíteni. A kimeneti PNG formátum támogatja az átlátszóságot, de a forrásképben nincs ilyen."
+        },
+        {
+          "question": "Miért nagyobb a kimeneti PNG fájl az eredetinél?",
+          "answer": "A PNG veszteségmentes formátum, amely minden pixelt megőriz tömörítési műtermékek nélkül. A veszteségmentes fájlok természetüknél fogva nagyobbak — ez várható, és azt jelenti, hogy nem vész el minőség."
+        },
+        {
+          "question": "Mely böngészők támogatják ezt a konvertert?",
+          "answer": "A konverter minden modern böngészőben működik: Chrome, Edge, Firefox és Safari. AVIF formátum támogatásához használjon Chrome 85+, Firefox 93+ vagy Safari 16.4+ verziót."
+        },
+        {
+          "question": "A fájljaim feltöltésre kerülnek egy szerverre?",
+          "answer": "Nem. A teljes konvertálási folyamat helyben, a böngészőjében fut JavaScript segítségével. A fájljai soha nem hagyják el az eszközét, és mi nem férünk hozzájuk."
+        }
+      ]
     },
     {
       "type": "gap",
