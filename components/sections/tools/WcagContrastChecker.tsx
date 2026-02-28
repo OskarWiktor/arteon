@@ -205,7 +205,7 @@ export default function WcagContrastChecker() {
 
   return (
     <>
-      <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+      <div className="grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
         <ToolSection className="space-y-4">
           <form onSubmit={handleSubmit} className="space-y-6">
             <ToolFieldRow label={<span className="tool-value">{t.sampleTextLabel}</span>}>

@@ -145,7 +145,7 @@ export default function QrCodeGenerator() {
   };
 
   return (
-    <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+    <div className="grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
       <ToolSection className="space-y-4">
         <ToolSelect label={t.dataType} value={dataType} onChange={(v) => setDataType(v as QrDataType)}>
           <option value="url">{t.types.url}</option>
@@ -248,7 +248,7 @@ export default function QrCodeGenerator() {
         <div className="flex flex-col items-center">
           <p className="tool-label mb-3">{t.preview}</p>
           <div
-            className="flex items-center justify-center rounded-lg border border-neutral-200 p-4"
+            className="flex max-w-full items-center justify-center rounded-lg border border-neutral-200 p-4"
             style={{ backgroundColor: lightColor, minWidth: Math.min(size, 300) + 32, minHeight: Math.min(size, 300) + 32 }}
           >
             {qrDataUrl ? (

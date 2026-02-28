@@ -502,7 +502,7 @@ textarea {
 }
 
 .tool-row {
-  @apply flex items-center gap-2 rounded-xl border border-neutral-200 bg-white px-3 py-2;
+  @apply flex items-center gap-2 overflow-hidden rounded-xl border border-neutral-200 bg-white px-3 py-2;
 }
 
 .tool-color-swatch {

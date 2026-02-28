@@ -67,7 +67,7 @@ export default function MetaTitleDescriptionTool() {
 
   return (
     <>
-      <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+      <div className="grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
         <ToolSection className="space-y-5">
           <ToolFieldRow label={t.addUrl} helper={t.urlHelper}>
             <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} className="tool-input" placeholder={t.urlPlaceholder} />

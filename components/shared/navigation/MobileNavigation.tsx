@@ -82,7 +82,14 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
     : [];
 
   const MOBILE_TOOL_KEYS: ToolSectionLink['href'][] = isPl
-    ? ['/narzedzia/licznik-dlugosci-meta-title-i-description', '/narzedzia/kontrast-i-czytelnosc-kolorow', '/narzedzia/ekstraktor-kolorow-z-obrazu', '/narzedzia/generator-palet-kolorow']
+    ? [
+        '/narzedzia/licznik-dlugosci-meta-title-i-description',
+        '/narzedzia/licznik-slow-i-znakow',
+        '/narzedzia/sprawdz-czytelnosc-kolorow',
+        '/narzedzia/ekstraktor-kolorow-z-obrazu',
+        '/narzedzia/generator-palet-kolorow',
+        '/narzedzia/darmowy-generator-kodow-qr',
+      ]
     : [];
 
   const TOOLS_SECTIONS_MOBILE: ToolSection[] = isPl

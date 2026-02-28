@@ -101,7 +101,7 @@ export default function PaletteExtractor() {
   }, [previewUrl, t.unexpectedError]);
 
   return (
-    <div className="grid gap-4 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+    <div className="grid gap-4 overflow-hidden md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
       <ToolSection className="space-y-4">
         <div>
           <h2 className="h6 mb-2">{t.addImageLabel}</h2>
@@ -115,8 +115,8 @@ export default function PaletteExtractor() {
           </ToolFileDropzone>
 
           {file && (
-            <p className="tool-meta mt-2">
-              {t.selectedFile} <strong>{file.name}</strong> ({fileSize})
+            <p className="tool-meta mt-2 truncate">
+              {t.selectedFile} <strong title={file.name}>{file.name.length > 30 ? `${file.name.slice(0, 27)}…` : file.name}</strong> ({fileSize})
             </p>
           )}
 
@@ -128,7 +128,7 @@ export default function PaletteExtractor() {
         </div>
       </ToolSection>
 
-      <ToolSection aria-label={t.preview} className="space-y-4">
+      <ToolSection aria-label={t.preview} className="min-w-0 space-y-4">
         <div className="flex items-center justify-between gap-2">
           <h2 className="h6">{t.preview}</h2>
           {file && (
@@ -164,8 +164,10 @@ export default function PaletteExtractor() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={previewUrl} alt={file?.name || t.previewAlt} className="h-full w-full object-cover" />
               </div>
-              <div className="min-w-0">
-                <p className="tool-value text-dark truncate">{file?.name}</p>
+              <div className="min-w-0 overflow-hidden">
+                <p className="tool-value text-dark truncate" title={file?.name}>
+                  {file?.name}
+                </p>
                 <ToolHelper className="text-xs!">{t.copyHint}</ToolHelper>
               </div>
             </div>

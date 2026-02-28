@@ -51,7 +51,7 @@ export default function WordCountTool() {
   ];
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 overflow-hidden">
       <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
         <ToolSection className="space-y-5">
           <div>

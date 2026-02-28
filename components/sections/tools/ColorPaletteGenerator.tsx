@@ -77,7 +77,7 @@ export default function ColorPaletteGenerator() {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 overflow-hidden">
       <ToolSection>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
