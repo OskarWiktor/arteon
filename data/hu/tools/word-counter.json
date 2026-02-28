@@ -475,15 +475,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Professzionális tartalomra van szüksége weboldalához?",
-    "description": "Olyan szövegeket írunk, amelyek jól rangsorolnak a Google-ben és cselekvésre ösztönzik a látogatókat. Szolgáltatásleírások, blogcikkek és webtartalmak.",
-    "btnOne": "Szolgáltatásaink",
-    "btnOneLink": "/hu/kapcsolat",
-    "btnTwo": "Kapcsolat",
-    "btnTwoLink": "/hu/kapcsolat",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

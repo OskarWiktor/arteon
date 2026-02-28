@@ -341,15 +341,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potrzebujesz pełnej optymalizacji meta tagów i SEO?",
-    "description": "Meta tagi to początek. Zajmujemy się pełną optymalizacją SEO - od meta tagów, przez treści, po strukturę strony i widoczność w Google.",
-    "btnOne": "Umów rozmowę o SEO",
-    "btnOneLink": "/kontakt",
-    "btnTwo": "Sprawdź ofertę optymalizacji SEO",
-    "btnTwoLink": "/uslugi/marketing/optymalizacja-seo",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

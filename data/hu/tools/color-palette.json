@@ -388,15 +388,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Egységes márkaidentitásra van szüksége?",
-    "description": "Logókat, színrendszereket és vállalati anyagokat tervezünk — névjegykártyáktól a közösségi média sablonokig.",
-    "btnOne": "Szolgáltatásaink",
-    "btnOneLink": "/hu/kapcsolat",
-    "btnTwo": "Kapcsolat",
-    "btnTwoLink": "/hu/kapcsolat",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

@@ -390,15 +390,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Aveți nevoie de o identitate vizuală coerentă?",
-    "description": "Creăm logo-uri, sisteme de culori și materiale de brand — de la cărți de vizită la template-uri pentru social media.",
-    "btnOne": "Serviciile noastre",
-    "btnOneLink": "/ro/contact",
-    "btnTwo": "Contactați-ne",
-    "btnTwoLink": "/ro/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

@@ -398,15 +398,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Brauchen Sie eine einheitliche Markenidentität?",
-    "description": "Wir gestalten Logos, Farbsysteme und Firmenmaterialien — von Visitenkarten bis zu Social-Media-Vorlagen.",
-    "btnOne": "Unsere Leistungen",
-    "btnOneLink": "/de/kontakt",
-    "btnTwo": "Kontakt aufnehmen",
-    "btnTwoLink": "/de/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

@@ -357,15 +357,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potrzebujesz pomocy przy tworzeniu strony?",
-    "description": "Jeśli masz pytania dotyczące ikon, grafiki lub całej strony internetowej - skontaktuj się z nami. Zajmujemy się tworzeniem stron i identyfikacji wizualnej.",
-    "btnOne": "Skontaktuj się z nami",
-    "btnOneLink": "/kontakt",
-    "btnTwo": "Sprawdź ofertę stron internetowych",
-    "btnTwoLink": "/uslugi/tworzenie-stron-wordpress",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

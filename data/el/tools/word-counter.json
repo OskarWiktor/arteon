@@ -475,15 +475,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Χρειάζεστε επαγγελματικό περιεχόμενο για τον ιστότοπό σας;",
-    "description": "Γράφουμε κείμενα που κατατάσσονται καλά στη Google και πείθουν για δράση. Περιγραφές υπηρεσιών, άρθρα blog και περιεχόμενο ιστού.",
-    "btnOne": "Οι υπηρεσίες μας",
-    "btnOneLink": "/el/epikoinonia",
-    "btnTwo": "Επικοινωνία",
-    "btnTwoLink": "/el/epikoinonia",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

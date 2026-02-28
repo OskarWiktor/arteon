@@ -398,15 +398,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Precisa de uma identidade visual coerente?",
-    "description": "Criamos logótipos, sistemas de cores e materiais corporativos — de cartões de visita a templates para redes sociais.",
-    "btnOne": "Os nossos serviços",
-    "btnOneLink": "/pt/contacto",
-    "btnTwo": "Contacte-nos",
-    "btnTwoLink": "/pt/contacto",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

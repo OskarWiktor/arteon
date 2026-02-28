@@ -1,0 +1,149 @@
+{
+  "toolKey": "gifToPng",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter GIF na PNG – wyeksportuj klatkę za darmo",
+    "description": "Wyeksportuj pierwszą klatkę GIF-a jako statyczny PNG w przeglądarce. Bez utraty jakości, bez limitu i rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-gif-na-png"
+  },
+  "hero": {
+    "title": "Konwerter GIF na PNG – statyczny obraz z animacji",
+    "description": "Wyeksportuj pierwszą klatkę animowanego GIF-a jako statyczny PNG. Zachowaj przezroczystość i pełną jakość.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-gif-na-png",
+      "label": "Konwerter GIF na PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter GIF na PNG – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana GIF na PNG online", "Eksport klatki GIF do PNG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter GIF na PNG online. Wyeksportuj pierwszą klatkę GIF-a jako statyczny obraz. Bez limitu i rejestracji.",
+      "featureList": ["Eksport pierwszej klatki GIF", "Zachowanie przezroczystości", "Konwersja wielu plików", "Przetwarzanie lokalne"]
+    },
+    "howTo": {
+      "name": "Jak zamienić GIF na PNG online",
+      "description": "Instrukcja konwersji plików GIF na format PNG.",
+      "steps": [
+        {
+          "name": "Dodaj pliki GIF",
+          "text": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Uruchom konwersję",
+          "text": "Kliknij Konwertuj. Narzędzie wyeksportuje pierwszą klatkę GIF-a jako PNG."
+        },
+        {
+          "name": "Pobierz pliki PNG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować GIF na PNG?",
+      "html": "<p class=\"text-mid mb-4\">GIF to format obsługujący animację, ale często jest używany również dla statycznych obrazów z przezroczystością. Pliki GIF mają ograniczoną paletę 256 kolorów, co powoduje widoczne paski kolorów (banding) w grafikach z gradientami. PNG obsługuje pełną paletę 16,7 miliona kolorów i oferuje lepszą kompresję bezstratną.</p><p class=\"text-mid mb-4\">Konwersja GIF na PNG jest przydatna, gdy potrzebujesz statycznego obrazu z animowanego GIF-a — na przykład miniaturki do artykułu, ikony do dokumentu lub zdjęcia profilowego. Narzędzie eksportuje pierwszą klatkę animacji jako statyczny obraz PNG.</p><p class=\"text-mid\">Jeśli GIF ma przezroczyste tło, przezroczystość zostanie zachowana w wynikowym pliku PNG. PNG obsługuje również częściową przezroczystość (kanał alfa), czego GIF nie potrafi — w GIF piksel jest albo w pełni przezroczysty, albo w pełni widoczny.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter GIF na PNG – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować GIF na PNG?",
+      "description": "Konwersja GIF na PNG zajmuje kilka sekund:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki GIF", "description": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.", "icon": "RiUploadLine" },
+        { "title": "2. Konwertuj", "description": "Narzędzie eksportuje pierwszą klatkę każdego GIF-a jako statyczny obraz PNG. Konwersja jest bezstratna.", "icon": "RiEqualizerLine" },
+        { "title": "3. Pobierz PNG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować GIF na PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArticleLine",
+          "title": "Miniaturki artykułów",
+          "description": "Animowane GIF-y nie nadają się jako miniaturki. Konwersja na PNG daje statyczny obraz z pierwszej klatki, idealny do podglądu w wynikach wyszukiwania i mediach społecznościowych."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty i prezentacje",
+          "description": "Word i PowerPoint nie zawsze poprawnie wyświetlają animowane GIF-y. Konwersja na PNG zapewnia poprawne wyświetlanie na każdym urządzeniu."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Zdjęcia profilowe",
+          "description": "Wiele platform (LinkedIn, formularze rekrutacyjne) wymaga statycznego obrazu. Konwersja GIF na PNG rozwiązuje ten problem."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Elementy interfejsu",
+          "description": "Ikony i przyciski w formacie GIF mogą mieć ograniczoną paletę kolorów. PNG obsługuje pełną paletę 16,7 mln kolorów i częściową przezroczystość."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter GIF na PNG?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików GIF naraz." },
+        { "icon": "RiSpeedLine", "title": "Zachowanie przezroczystości", "description": "Jeśli GIF ma przezroczyste tło, przezroczystość zostanie zachowana w wynikowym PNG z pełnym kanałem alfa." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji GIF na PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Która klatka GIF-a jest eksportowana?",
+          "answer": "Narzędzie eksportuje pierwszą klatkę animowanego GIF-a. Jeśli GIF jest statyczny (jedna klatka), wynikowy PNG będzie identyczny z oryginałem."
+        },
+        { "question": "Czy przezroczystość GIF-a jest zachowana?", "answer": "Tak. Jeśli GIF ma przezroczyste tło, zostanie ono zachowane w pliku PNG z pełnym kanałem alfa." },
+        {
+          "question": "Czy PNG będzie miał lepszą jakość niż GIF?",
+          "answer": "PNG obsługuje pełną paletę 16,7 miliona kolorów, podczas gdy GIF jest ograniczony do 256 kolorów. Konwersja nie doda nowych kolorów, ale PNG zapewni lepszą kompresję bezstratną i obsługę częściowej przezroczystości."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików naraz?",
+          "answer": "Tak. Można dodać dowolną liczbę plików GIF jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+        },
+        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter GIF na PNG – Arteon",
+      "defaultSubject": "Feedback: Konwerter GIF na PNG"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

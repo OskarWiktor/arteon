@@ -7,7 +7,6 @@ import type { ToolItemKey } from '@/types/tools/common';
 
 import HeroBanner from '@/components/sections/HeroBanner';
 import Breadcrumbs from '@/components/sections/BreadCrumbs';
-import CTABanner from '@/components/sections/CTABanner';
 import DynamicToolRenderer from '@/components/sections/tools/DynamicToolRenderer';
 import LazyToolsCarousel from '@/components/sections/tools/LazyToolsCarousel';
 import FaqPanels from '@/components/ui/FaqPanels';
@@ -32,7 +31,7 @@ import ToolContactForm from './ToolContactForm';
 const AD_SECTION_INTERVAL = 4;
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
 
-const DESKTOP_ONLY_TOOLS = new Set(['jpgToWebp', 'imageResize', 'favicon', 'emailSignature']);
+const DESKTOP_ONLY_TOOLS = new Set(['jpgToWebp', 'imageResize', 'favicon', 'emailSignature', 'jpgToWebpSimple', 'pngToWebpSimple']);
 
 function DesktopOnlyNotice({ t }: { t: DesktopOnlyUi }) {
   return (
@@ -257,19 +256,6 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
           })()}
         </div>
       </ToolEditorLayout>
-
-      {data.cta && (
-        <CTABanner
-          title={data.cta.title}
-          description={data.cta.description}
-          btnOne={data.cta.btnOne}
-          btnOneLink={data.cta.btnOneLink}
-          btnTwo={data.cta.btnTwo}
-          btnTwoLink={data.cta.btnTwoLink}
-          backgroundImage={data.cta.backgroundImage}
-          overlay={data.cta.overlay as 'black' | 'white' | 'none'}
-        />
-      )}
     </>
   );
 }

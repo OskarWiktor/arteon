@@ -383,15 +383,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Tarvitsetko yhtenäisen brändi-identiteetin?",
-    "description": "Suunnittelemme logoja, värijärjestelmiä ja yritysmateriaaleja — käyntikorteista sosiaalisen median pohjiin.",
-    "btnOne": "Palvelumme",
-    "btnOneLink": "/fi/yhteystiedot",
-    "btnTwo": "Ota yhteyttä",
-    "btnTwoLink": "/fi/yhteystiedot",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

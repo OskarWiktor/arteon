@@ -473,15 +473,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potrzebujesz profesjonalnych treści na stronę?",
-    "description": "Tworzymy teksty, które pozycjonują się w Google i przekonują do działania. Opisy usług, artykuły blogowe, treści na strony",
-    "btnOne": "Umów rozmowę o treściach",
-    "btnOneLink": "/kontakt",
-    "btnTwo": "Sprawdź ofertę tworzenia treści",
-    "btnTwoLink": "/uslugi/tworzenie-tresci",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

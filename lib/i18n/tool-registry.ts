@@ -1,4 +1,17 @@
-import { RiAppsLine, RiArticleLine, RiContrast2Line, RiCropLine, RiFileTextLine, RiImageEditLine, RiMailLine, RiPaletteLine, RiPantoneLine, RiQrCodeLine, RiSearchLine } from 'react-icons/ri';
+import {
+  RiAppsLine,
+  RiArticleLine,
+  RiContrast2Line,
+  RiCropLine,
+  RiFileTextLine,
+  RiImageEditLine,
+  RiLoopLeftLine,
+  RiMailLine,
+  RiPaletteLine,
+  RiPantoneLine,
+  RiQrCodeLine,
+  RiSearchLine,
+} from 'react-icons/ri';
 
 import type { Locale } from '@/types/locale';
 import type { ToolItemKey, ToolDefinition, ToolsSectionDefinition, ToolSectionItem, ToolsSection } from '@/types/tools/common';
@@ -119,6 +132,13 @@ export const TOOL_SECTIONS: ToolsSectionDefinition[] = [
       el: { title: 'Εκτύπωση & QR' },
     },
   },
+  {
+    key: 'konwertery',
+    icon: RiLoopLeftLine,
+    locales: {
+      pl: { title: 'Konwertery formatów' },
+    },
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -150,11 +170,6 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
     },
     desktopOnly: true,
     locales: {
-      pl: {
-        slug: 'jpg-png-na-webp-bez-limitu',
-        title: 'Konwerter JPG/PNG na WebP',
-        description: 'Zamień zdjęcia na WebP i zmniejsz ich wagę nawet o 35%. Bez limitu plików, bez rejestracji.',
-      },
       en: {
         slug: 'jpg-png-to-webp-unlimited',
         title: 'JPG/PNG to WebP converter',
@@ -1195,6 +1210,105 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
       },
     },
   },
+  // -------------------------------------------------------------------------
+  // Image format converters (PL only)
+  // -------------------------------------------------------------------------
+  {
+    key: 'pngToJpg',
+    section: 'obrazy',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-png-na-jpg', title: 'Konwerter PNG na JPG', description: 'Zamień pliki PNG na JPG. Konwersja w przeglądarce, bez limitu plików i rejestracji.' } },
+  },
+  {
+    key: 'jpgToPng',
+    section: 'konwertery',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-jpg-na-png', title: 'Konwerter JPG na PNG', description: 'Zamień pliki JPG na bezstratny PNG. Konwersja w przeglądarce, bez limitu.' } },
+  },
+  {
+    key: 'webpToJpg',
+    section: 'obrazy',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-webp-na-jpg', title: 'Konwerter WebP na JPG', description: 'Zamień pliki WebP na JPG. Kompatybilność z każdym programem i platformą.' } },
+  },
+  {
+    key: 'webpToPng',
+    section: 'konwertery',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-webp-na-png', title: 'Konwerter WebP na PNG', description: 'Zamień pliki WebP na bezstratny PNG. Konwersja lokalna, bez wysyłania na serwer.' } },
+  },
+  {
+    key: 'svgToPng',
+    section: 'konwertery',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-svg-na-png', title: 'Konwerter SVG na PNG', description: 'Zamień grafikę wektorową SVG na rastrowy PNG. Idealne do dokumentów i mediów społecznościowych.' } },
+  },
+  {
+    key: 'svgToJpg',
+    section: 'konwertery',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-svg-na-jpg', title: 'Konwerter SVG na JPG', description: 'Zamień grafikę wektorową SVG na JPG. Mniejszy plik, pełna kompatybilność.' } },
+  },
+  {
+    key: 'bmpToJpg',
+    section: 'konwertery',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-bmp-na-jpg', title: 'Konwerter BMP na JPG', description: 'Zamień nieskompresowane pliki BMP na lekki JPG. Redukcja rozmiaru bez utraty jakości.' } },
+  },
+  {
+    key: 'bmpToPng',
+    section: 'konwertery',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-bmp-na-png', title: 'Konwerter BMP na PNG', description: 'Zamień pliki BMP na bezstratny PNG. Zachowaj jakość przy mniejszym rozmiarze.' } },
+  },
+  {
+    key: 'gifToPng',
+    section: 'konwertery',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-gif-na-png', title: 'Konwerter GIF na PNG', description: 'Wyeksportuj pierwszą klatkę GIF-a jako statyczny obraz PNG. Bez utraty jakości.' } },
+  },
+  {
+    key: 'gifToJpg',
+    section: 'konwertery',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: false,
+    locales: { pl: { slug: 'konwerter-gif-na-jpg', title: 'Konwerter GIF na JPG', description: 'Wyeksportuj pierwszą klatkę GIF-a jako JPG. Mniejszy plik, szybsze ładowanie.' } },
+  },
+  {
+    key: 'jpgToWebpSimple',
+    section: 'obrazy',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: true,
+    locales: { pl: { slug: 'konwerter-jpg-na-webp', title: 'Konwerter JPG na WebP', description: 'Zamień zdjęcia JPG na lekki WebP. Zmniejsz wagę obrazów nawet o 35%.' } },
+  },
+  {
+    key: 'pngToWebpSimple',
+    section: 'konwertery',
+    icon: RiLoopLeftLine,
+    image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+    desktopOnly: true,
+    locales: { pl: { slug: 'konwerter-png-na-webp', title: 'Konwerter PNG na WebP', description: 'Zamień grafiki PNG na WebP. Mniejsze pliki przy zachowaniu przezroczystości.' } },
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -1205,8 +1319,10 @@ export const TOOL_REGISTRY: ToolDefinition[] = [
 export function getToolHref(key: ToolItemKey, locale: Locale): string {
   const tool = TOOL_REGISTRY.find((t) => t.key === key);
   if (!tool) return '#';
+  const localeText = tool.locales[locale];
+  if (!localeText) return '#';
   const config = LOCALE_CONFIG[locale];
-  return `${config.toolsBasePath}/${tool.locales[locale].slug}`;
+  return `${config.toolsBasePath}/${localeText.slug}`;
 }
 
 /** Get a tool definition by its key */
@@ -1269,15 +1385,15 @@ export function getAlternateToolHref(currentPath: string, fromLocale: Locale, to
 
 /** Build navigation-compatible tool sections for a given locale */
 export function getToolsSections(locale: Locale): ToolsSection[] {
-  return TOOL_SECTIONS.map((section) => ({
+  return TOOL_SECTIONS.filter((section) => section.locales[locale]).map((section) => ({
     key: section.key,
-    title: section.locales[locale].title,
+    title: section.locales[locale]!.title,
     icon: section.icon,
-    items: TOOL_REGISTRY.filter((t) => t.section === section.key).map((tool) => ({
+    items: TOOL_REGISTRY.filter((t) => t.section === section.key && t.locales[locale]).map((tool) => ({
       key: tool.key,
       href: getToolHref(tool.key, locale),
-      title: tool.locales[locale].title,
-      description: tool.locales[locale].description,
+      title: tool.locales[locale]!.title,
+      description: tool.locales[locale]!.description,
       image: tool.images?.[locale] ?? tool.image,
       icon: tool.icon,
     })),
@@ -1286,11 +1402,11 @@ export function getToolsSections(locale: Locale): ToolsSection[] {
 
 /** Flat list of all tool items for a given locale (used in Footer, etc.) */
 export function getToolsList(locale: Locale): ToolSectionItem[] {
-  return TOOL_REGISTRY.map((tool) => ({
+  return TOOL_REGISTRY.filter((tool) => tool.locales[locale]).map((tool) => ({
     key: tool.key,
     href: getToolHref(tool.key, locale),
-    title: tool.locales[locale].title,
-    description: tool.locales[locale].description,
+    title: tool.locales[locale]!.title,
+    description: tool.locales[locale]!.description,
     image: tool.images?.[locale] ?? tool.image,
     icon: tool.icon,
   }));

@@ -383,15 +383,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Trenger du en helhetlig visuell identitet?",
-    "description": "Vi designer logoer, fargesystemer og profilmateriell — fra visittkort til maler for sosiale medier.",
-    "btnOne": "Våre tjenester",
-    "btnOneLink": "/no/kontakt",
-    "btnTwo": "Kontakt oss",
-    "btnTwoLink": "/no/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

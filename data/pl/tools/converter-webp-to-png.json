@@ -1,0 +1,169 @@
+{
+  "toolKey": "webpToPng",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter WebP na PNG – bezstratna konwersja za darmo",
+    "description": "Zamień pliki WebP na bezstratny PNG w przeglądarce. Zachowaj przezroczystość. Bez limitu plików, bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-webp-na-png"
+  },
+  "hero": {
+    "title": "Konwerter WebP na PNG – zachowaj jakość i przezroczystość",
+    "description": "Zamień pliki WebP na bezstratny PNG. Zachowaj przezroczystość i pełną jakość obrazu. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-webp-na-png",
+      "label": "Konwerter WebP na PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter WebP na PNG – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana WebP na PNG online", "Konwersja WebP do PNG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter WebP na PNG online. Zachowaj przezroczystość i jakość obrazu. Bez limitu plików i rejestracji.",
+      "featureList": ["Konwersja WebP do PNG", "Zachowanie przezroczystości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić WebP na PNG online",
+      "description": "Instrukcja konwersji plików WebP na format PNG.",
+      "steps": [
+        {
+          "name": "Dodaj pliki WebP",
+          "text": "Przeciągnij pliki WebP na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Uruchom konwersję",
+          "text": "Kliknij przycisk Konwertuj. PNG jest bezstratny — nie ma suwaka jakości."
+        },
+        {
+          "name": "Pobierz pliki PNG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować WebP na PNG?",
+      "html": "<p class=\"text-mid mb-4\">WebP to nowoczesny format obrazów, który oferuje mniejsze pliki niż PNG. Jednak nie każdy program obsługuje WebP — starsze edytory graficzne, systemy druku i niektóre platformy wymagają plików PNG. Konwersja WebP na PNG zapewnia pełną kompatybilność.</p><p class=\"text-mid mb-4\">PNG to format bezstratny z obsługą przezroczystości (kanał alfa). Przy konwersji WebP na PNG obraz zachowuje pełną jakość pikseli, a jeśli oryginalny WebP miał przezroczyste obszary, zostaną one zachowane w pliku PNG.</p><p class=\"text-mid\">Konwersja jest szczególnie przydatna, gdy potrzebujesz edytować obraz pobrany ze strony internetowej w formacie WebP. PNG zapewnia, że kolejne edycje i zapisy nie spowodują utraty jakości.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter WebP na PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować WebP na PNG?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dodaj pliki WebP",
+          "description": "Przeciągnij pliki WebP na wyznaczone pole albo wybierz je z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Uruchom konwersję",
+          "description": "Kliknij Konwertuj. PNG jest bezstratny, więc nie ma suwaka jakości.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz PNG",
+          "description": "Pobierz pliki pojedynczo lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować WebP na PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Edycja graficzna",
+          "description": "Starsze wersje programów graficznych nie obsługują WebP. PNG jest standardowym formatem wejściowym dla Photoshopa, GIMP-a i Figmy."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty biurowe",
+          "description": "Word, PowerPoint i Google Docs lepiej obsługują PNG niż WebP. Konwersja zapewnia poprawne wyświetlanie obrazów z przezroczystością."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Platformy wymagające PNG",
+          "description": "Niektóre platformy (np. systemy druku, generatory materiałów) wymagają plików PNG. Konwersja z WebP spełnia te wymagania."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Archiwizacja bezstratna",
+          "description": "PNG jest formatem bezstratnym — konwersja z WebP zachowuje pełną jakość do długoterminowego przechowywania."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter WebP na PNG?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików WebP naraz." },
+        { "icon": "RiSpeedLine", "title": "Zachowanie przezroczystości", "description": "Kanał alfa (przezroczystość) z pliku WebP jest zachowywany w wynikowym PNG." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji WebP na PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy konwersja WebP na PNG zachowuje przezroczystość?",
+          "answer": "Tak. Jeśli oryginalny plik WebP miał przezroczyste obszary, zostaną one zachowane w pliku PNG. Oba formaty obsługują kanał alfa."
+        },
+        {
+          "question": "Dlaczego plik PNG jest większy niż WebP?",
+          "answer": "PNG to format bezstratny z mniej wydajną kompresją niż WebP. Plik PNG będzie zwykle 2–4 razy większy od WebP, ale zachowa pełną jakość."
+        },
+        {
+          "question": "Kiedy wybrać PNG zamiast JPG?",
+          "answer": "Wybierz PNG, gdy potrzebujesz przezroczystości, bezstratnej jakości lub planujesz dalszą edycję obrazu. Wybierz <a href=\"/narzedzia/konwerter-webp-na-jpg\">JPG</a>, gdy priorytetem jest mały rozmiar pliku."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików naraz?",
+          "answer": "Tak. Można dodać dowolną liczbę plików WebP jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+        },
+        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter WebP na PNG – Arteon",
+      "defaultSubject": "Feedback: Konwerter WebP na PNG"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

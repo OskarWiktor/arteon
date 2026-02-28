@@ -443,15 +443,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Aveți nevoie de un site accesibil?",
-    "description": "Creăm site-uri web gândite pentru toți utilizatorii — contrast de culori adecvat, tipografie lizibilă și structură logică.",
-    "btnOne": "Serviciile noastre",
-    "btnOneLink": "/ro/contact",
-    "btnTwo": "Contactați-ne",
-    "btnTwoLink": "/ro/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

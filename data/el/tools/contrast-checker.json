@@ -443,15 +443,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Χρειάζεστε μια προσβάσιμη ιστοσελίδα;",
-    "description": "Σχεδιάζουμε ιστοσελίδες με γνώμονα όλους τους χρήστες — σωστή αντίθεση χρωμάτων, ευανάγνωστη τυπογραφία και λογική δομή.",
-    "btnOne": "Οι υπηρεσίες μας",
-    "btnOneLink": "/el/epikoinonia",
-    "btnTwo": "Επικοινωνία",
-    "btnTwoLink": "/el/epikoinonia",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

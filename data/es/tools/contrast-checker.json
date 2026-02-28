@@ -465,15 +465,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "¿Necesitas un sitio web accesible?",
-    "description": "Creamos sitios web pensando en todos los usuarios — contraste de color adecuado, tipografía legible y estructura lógica.",
-    "btnOne": "Nuestros servicios",
-    "btnOneLink": "/es/contacto",
-    "btnTwo": "Contáctanos",
-    "btnTwoLink": "/es/contacto",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

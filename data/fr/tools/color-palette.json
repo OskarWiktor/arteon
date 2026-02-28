@@ -398,15 +398,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Besoin d'une identité visuelle cohérente ?",
-    "description": "Nous concevons logos, systèmes de couleurs et supports de marque — des cartes de visite aux modèles pour les réseaux sociaux.",
-    "btnOne": "Nos services",
-    "btnOneLink": "/fr/contact",
-    "btnTwo": "Nous contacter",
-    "btnTwoLink": "/fr/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

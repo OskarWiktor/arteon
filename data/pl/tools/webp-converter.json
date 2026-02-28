@@ -360,15 +360,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potrzebujesz pełnej optymalizacji strony?",
-    "description": "Pomagamy firmom osiągać wyniki +90/100 w PageSpeed. Prześlij link do swojej strony, a przygotujemy ofertę optymalizacji - grafik, kodu i hostingu.",
-    "btnOne": "Zamów optymalizację",
-    "btnOneLink": "/kontakt",
-    "btnTwo": "Sprawdź nasze usługi",
-    "btnTwoLink": "/uslugi",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

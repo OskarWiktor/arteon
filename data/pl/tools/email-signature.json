@@ -448,15 +448,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potrzebujesz spójnej identyfikacji mailowej dla firmy?",
-    "description": "Projektujemy kompletną identyfikację wizualną - od logo, przez materiały firmowe, po stopki mailowe i szablony dokumentów. Wszystko dopasowane do Twojej marki.",
-    "btnOne": "Skontaktuj się z nami",
-    "btnOneLink": "/kontakt",
-    "btnTwo": "Sprawdź ofertę identyfikacji wizualnej",
-    "btnTwoLink": "/uslugi/projekty-graficzne/projekt-identyfikacji-wizualnej",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

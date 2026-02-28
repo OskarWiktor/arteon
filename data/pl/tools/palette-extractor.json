@@ -348,15 +348,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potrzebujesz spójnej identyfikacji wizualnej?",
-    "description": "Projektujemy logo, dobieramy paletę kolorów i przygotowujemy system wizualny - od wizytówek po szablony grafik do mediów społecznościowych.",
-    "btnOne": "Skontaktuj się z nami",
-    "btnOneLink": "/kontakt",
-    "btnTwo": "Sprawdź ofertę projektów graficznych",
-    "btnTwoLink": "/uslugi/projekty-graficzne",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

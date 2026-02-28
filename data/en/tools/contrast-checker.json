@@ -520,15 +520,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Need an accessible website?",
-    "description": "We build websites with every user in mind — proper color contrast, readable typography, logical structure and WCAG compliance.",
-    "btnOne": "Our services",
-    "btnOneLink": "/en/contact",
-    "btnTwo": "Get in touch",
-    "btnTwoLink": "/en/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

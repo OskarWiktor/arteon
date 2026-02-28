@@ -383,15 +383,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Har du brug for en visuel identitet til dit brand?",
-    "description": "Vi designer logoer, farvepaletter og brandmaterialer — fra visitkort til skabeloner til sociale medier.",
-    "btnOne": "Se vores tjenester",
-    "btnOneLink": "/da/kontakt",
-    "btnTwo": "Kontakt os",
-    "btnTwoLink": "/da/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

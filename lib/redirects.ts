@@ -131,7 +131,8 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
   '/narzedzia/sprawdz-czytelnosc-kolorow/instrukcja': '/narzedzia/kontrast-i-czytelnosc-kolorow',
   // Połączenie stron instrukcji z narzędziami (2026-02) - treść przeniesiona na stronę narzędzia
   '/narzedzia/darmowy-generator-stopki-mailowej/instrukcja': '/narzedzia/darmowy-generator-stopki-mailowej',
-  '/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja': '/narzedzia/jpg-png-na-webp-bez-limitu',
+  '/narzedzia/jpg-png-na-webp-bez-limitu': '/narzedzia/konwerter-jpg-na-webp',
+  '/narzedzia/jpg-png-na-webp-bez-limitu/instrukcja': '/narzedzia/konwerter-jpg-na-webp',
   '/narzedzia/edytor-zdjec-online/instrukcja': '/narzedzia/edytor-zdjec-online',
   '/narzedzia/darmowy-generator-favicon-ico/instrukcja': '/narzedzia/darmowy-generator-favicon-ico',
   '/narzedzia/licznik-slow-i-znakow/instrukcja': '/narzedzia/licznik-slow-i-znakow',

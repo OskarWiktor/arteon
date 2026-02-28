@@ -475,15 +475,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Har du brug for professionelt indhold til din hjemmeside?",
-    "description": "Vi skriver tekster, der rangerer godt i søgeresultaterne og overbeviser til handling. Servicebeskrivelser, blogartikler og webindhold.",
-    "btnOne": "Se vores tjenester",
-    "btnOneLink": "/da/kontakt",
-    "btnTwo": "Kontakt os",
-    "btnTwoLink": "/da/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

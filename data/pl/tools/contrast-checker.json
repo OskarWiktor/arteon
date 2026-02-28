@@ -449,15 +449,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potrzebujesz strony zgodnej ze standardami dostępności?",
-    "description": "Tworzymy strony internetowe z myślą o wszystkich użytkownikach - odpowiedni kontrast kolorów, czytelna typografia, logiczna struktura. Skontaktuj się z nami.",
-    "btnOne": "Sprawdź ofertę stron internetowych",
-    "btnOneLink": "/uslugi/tworzenie-stron-wordpress",
-    "btnTwo": "Skontaktuj się z nami",
-    "btnTwoLink": "/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

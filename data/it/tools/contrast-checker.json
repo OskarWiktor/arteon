@@ -451,15 +451,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Hai bisogno di un sito web accessibile?",
-    "description": "Progettiamo siti web pensati per tutti gli utenti — contrasto colori adeguato, tipografia leggibile e struttura logica. La Legge Stanca impone l'accessibilità digitale.",
-    "btnOne": "I nostri servizi",
-    "btnOneLink": "/it/contatti",
-    "btnTwo": "Contattaci",
-    "btnTwoLink": "/it/contatti",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

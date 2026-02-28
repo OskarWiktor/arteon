@@ -383,15 +383,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Χρειάζεστε οπτική ταυτότητα για το brand σας;",
-    "description": "Σχεδιάζουμε λογότυπα, χρωματικά συστήματα και εταιρικό υλικό — από επαγγελματικές κάρτες μέχρι πρότυπα για social media.",
-    "btnOne": "Οι υπηρεσίες μας",
-    "btnOneLink": "/el/epikoinonia",
-    "btnTwo": "Επικοινωνία",
-    "btnTwoLink": "/el/epikoinonia",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

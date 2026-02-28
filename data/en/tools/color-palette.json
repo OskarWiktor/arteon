@@ -425,15 +425,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Need a consistent brand identity?",
-    "description": "We design logos, color systems and brand materials — from business cards to social media templates.",
-    "btnOne": "Our services",
-    "btnOneLink": "/en/contact",
-    "btnTwo": "Get in touch",
-    "btnTwoLink": "/en/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

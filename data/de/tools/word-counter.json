@@ -475,15 +475,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Brauchen Sie professionelle Texte für Ihre Website?",
-    "description": "Wir schreiben Texte, die in Google ranken und zum Handeln überzeugen. Leistungsbeschreibungen, Blogartikel und Webinhalte.",
-    "btnOne": "Unsere Leistungen",
-    "btnOneLink": "/de/kontakt",
-    "btnTwo": "Kontakt aufnehmen",
-    "btnTwoLink": "/de/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

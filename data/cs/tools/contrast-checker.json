@@ -441,15 +441,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potřebujete přístupný web?",
-    "description": "Navrhujeme webové stránky s ohledem na všechny uživatele — správný barevný kontrast, čitelná typografie a logická struktura.",
-    "btnOne": "Webové stránky",
-    "btnOneLink": "/cs/nastroje",
-    "btnTwo": "Kontakt",
-    "btnTwoLink": "/cs/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

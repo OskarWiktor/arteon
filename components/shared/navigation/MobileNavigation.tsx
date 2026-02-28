@@ -89,6 +89,16 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
         '/narzedzia/ekstraktor-kolorow-z-obrazu',
         '/narzedzia/generator-palet-kolorow',
         '/narzedzia/darmowy-generator-kodow-qr',
+        '/narzedzia/konwerter-png-na-jpg',
+        '/narzedzia/konwerter-jpg-na-png',
+        '/narzedzia/konwerter-webp-na-jpg',
+        '/narzedzia/konwerter-webp-na-png',
+        '/narzedzia/konwerter-svg-na-png',
+        '/narzedzia/konwerter-svg-na-jpg',
+        '/narzedzia/konwerter-bmp-na-jpg',
+        '/narzedzia/konwerter-bmp-na-png',
+        '/narzedzia/konwerter-gif-na-png',
+        '/narzedzia/konwerter-gif-na-jpg',
       ]
     : [];
 

@@ -443,15 +443,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Akadálymentes weboldalt keres?",
-    "description": "Minden felhasználóra gondolva tervezzük a weboldalakat — megfelelő színkontraszt, olvasható tipográfia és logikus struktúra.",
-    "btnOne": "Szolgáltatásaink",
-    "btnOneLink": "/hu/kapcsolat",
-    "btnTwo": "Kapcsolat",
-    "btnTwoLink": "/hu/kapcsolat",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

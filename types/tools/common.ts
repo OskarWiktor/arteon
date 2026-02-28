@@ -6,12 +6,34 @@ export type ToolStatus = 'idle' | 'processing' | 'done' | 'error';
 // ---------------------------------------------------------------------------
 // Tool item key - unique identifier for each tool
 // ---------------------------------------------------------------------------
-export type ToolItemKey = 'jpgToWebp' | 'imageResize' | 'favicon' | 'metaCounter' | 'wordCounter' | 'emailSignature' | 'contrastChecker' | 'paletteExtractor' | 'colorPalette' | 'qrCode';
+export type ToolItemKey =
+  | 'jpgToWebp'
+  | 'imageResize'
+  | 'favicon'
+  | 'metaCounter'
+  | 'wordCounter'
+  | 'emailSignature'
+  | 'contrastChecker'
+  | 'paletteExtractor'
+  | 'colorPalette'
+  | 'qrCode'
+  | 'pngToJpg'
+  | 'jpgToPng'
+  | 'webpToJpg'
+  | 'webpToPng'
+  | 'svgToPng'
+  | 'svgToJpg'
+  | 'bmpToJpg'
+  | 'bmpToPng'
+  | 'gifToPng'
+  | 'gifToJpg'
+  | 'jpgToWebpSimple'
+  | 'pngToWebpSimple';
 
 // ---------------------------------------------------------------------------
 // Tool section key - groups tools in navigation / index page
 // ---------------------------------------------------------------------------
-export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk';
+export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk' | 'konwertery';
 
 // ---------------------------------------------------------------------------
 // Per-locale text for a single tool (used in nav, carousel, index page)
@@ -30,9 +52,9 @@ export type ToolDefinition = {
   section: ToolsSectionKey;
   icon: IconType;
   image: string;
-  images?: Record<Locale, string>;
+  images?: Partial<Record<Locale, string>>;
   desktopOnly: boolean;
-  locales: Record<Locale, ToolLocaleText>;
+  locales: Partial<Record<Locale, ToolLocaleText>>;
 };
 
 // ---------------------------------------------------------------------------
@@ -45,7 +67,7 @@ export type ToolsSectionLocaleText = {
 export type ToolsSectionDefinition = {
   key: ToolsSectionKey;
   icon: IconType;
-  locales: Record<Locale, ToolsSectionLocaleText>;
+  locales: Partial<Record<Locale, ToolsSectionLocaleText>>;
 };
 
 // ---------------------------------------------------------------------------

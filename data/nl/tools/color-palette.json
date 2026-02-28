@@ -383,15 +383,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Een consistente merkidentiteit nodig?",
-    "description": "Wij ontwerpen logo's, kleursystemen en bedrijfsmaterialen — van visitekaartjes tot social media templates.",
-    "btnOne": "Onze diensten",
-    "btnOneLink": "/nl/contact",
-    "btnTwo": "Neem contact op",
-    "btnTwoLink": "/nl/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

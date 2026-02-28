@@ -441,15 +441,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Har du brug for en tilgængelig hjemmeside?",
-    "description": "Vi designer hjemmesider med alle brugere i tankerne — korrekt farvekontrast, læsbar typografi og logisk struktur.",
-    "btnOne": "Se vores tjenester",
-    "btnOneLink": "/da/kontakt",
-    "btnTwo": "Kontakt os",
-    "btnTwoLink": "/da/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

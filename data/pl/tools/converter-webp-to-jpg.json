@@ -1,0 +1,177 @@
+{
+  "toolKey": "webpToJpg",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter WebP na JPG – zamień format obrazu za darmo",
+    "description": "Zamień pliki WebP na JPG w przeglądarce. Kompatybilność z każdym programem. Bez limitu plików, bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-webp-na-jpg"
+  },
+  "hero": {
+    "title": "Konwerter WebP na JPG – otwórz WebP w każdym programie",
+    "description": "Zamień pliki WebP na uniwersalny format JPG. Dodaj pliki, ustaw jakość i pobierz obrazy. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-webp-na-jpg",
+      "label": "Konwerter WebP na JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter WebP na JPG – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana WebP na JPG online", "Konwersja WebP do JPG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter WebP na JPG online. Zamień pliki WebP na uniwersalny JPG w przeglądarce. Bez limitu i rejestracji.",
+      "featureList": ["Konwersja WebP do JPG", "Regulacja jakości (60–95%)", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić WebP na JPG online",
+      "description": "Instrukcja konwersji plików WebP na format JPG.",
+      "steps": [
+        {
+          "name": "Dodaj pliki WebP",
+          "text": "Przeciągnij pliki WebP na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Ustaw jakość JPG",
+          "text": "Wybierz jakość wynikowego pliku JPG (60–95%). Domyślna wartość 85% to dobry kompromis."
+        },
+        {
+          "name": "Pobierz pliki JPG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować WebP na JPG?",
+      "html": "<p class=\"text-mid mb-4\">WebP to format obrazów stworzony przez Google, który oferuje mniejsze pliki niż JPG przy porównywalnej jakości. Jednak nie każdy program i platforma obsługuje WebP — starsze wersje programów graficznych, niektóre systemy CMS i platformy do druku mogą wymagać plików JPG.</p><p class=\"text-mid mb-4\">Obrazy pobrane ze stron internetowych są coraz częściej w formacie WebP. Aby otworzyć je w programie graficznym, wstawić do dokumentu Word czy przesłać na platformę sprzedażową, konieczna jest konwersja na JPG.</p><p class=\"text-mid\">Konwersja WebP na JPG zwiększa rozmiar pliku (JPG jest mniej wydajny niż WebP), ale zapewnia pełną kompatybilność z każdym programem, urządzeniem i platformą.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter WebP na JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować WebP na JPG?",
+      "description": "Konwersja WebP na JPG zajmuje kilka sekund:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dodaj pliki WebP",
+          "description": "Przeciągnij pliki WebP na wyznaczone pole albo wybierz je z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości JPG (domyślnie 85%). Dla większości zastosowań 80–85% to optymalna wartość.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz JPG",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować WebP na JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Edycja w programach graficznych",
+          "description": "Starsze wersje programów graficznych (np. Photoshop przed CC 2023) nie obsługują WebP. Konwersja na JPG pozwala otworzyć obraz w dowolnym programie."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Platformy sprzedażowe",
+          "description": "Allegro, OLX i podobne platformy przyjmują JPG. Obrazy pobrane ze stron w formacie WebP trzeba przekonwertować przed wstawieniem."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Wysyłka e-mailem",
+          "description": "Klienci poczty e-mail mogą nie wyświetlać WebP w treści wiadomości. JPG jest bezpiecznym formatem dla załączników i obrazów w e-mailach."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty i prezentacje",
+          "description": "Word, PowerPoint i Google Docs lepiej obsługują JPG niż WebP. Konwersja zapewnia prawidłowe wyświetlanie obrazów w dokumentach."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter WebP na JPG?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików WebP naraz." },
+        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala wybrać kompromis między rozmiarem a jakością wynikowego JPG." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji WebP na JPG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy konwersja WebP na JPG pogarsza jakość?",
+          "answer": "WebP i JPG to formaty stratne. Przy konwersji następuje ponowna kompresja, co może nieznacznie obniżyć jakość. Przy ustawieniu jakości 85–90% różnica jest praktycznie niezauważalna."
+        },
+        {
+          "question": "Dlaczego plik JPG jest większy niż WebP?",
+          "answer": "WebP oferuje lepszą kompresję niż JPG — pliki WebP są średnio o 25–35% mniejsze. Po konwersji na JPG plik będzie większy, ale kompatybilny z każdym programem."
+        },
+        {
+          "question": "Jak zapisać obraz WebP ze strony internetowej?",
+          "answer": "Kliknij prawym przyciskiem myszy na obrazie i wybierz Zapisz obraz jako. Jeśli przeglądarka zapisuje plik jako .webp, użyj tego konwertera aby zmienić format na JPG."
+        },
+        {
+          "question": "Co się stanie z przezroczystością?",
+          "answer": "JPG nie obsługuje przezroczystości. Jeśli obraz WebP ma przezroczyste tło, zostanie ono zastąpione białym tłem. Aby zachować przezroczystość, użyj <a href=\"/narzedzia/konwerter-webp-na-png\">konwertera WebP na PNG</a>."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików naraz?",
+          "answer": "Tak. Można dodać dowolną liczbę plików WebP jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+        },
+        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter WebP na JPG – Arteon",
+      "defaultSubject": "Feedback: Konwerter WebP na JPG"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

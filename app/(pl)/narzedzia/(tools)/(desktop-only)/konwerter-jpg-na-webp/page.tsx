@@ -1,5 +1,5 @@
 import ToolPageRenderer, { generateToolMetadata } from '@/components/sections/tools/ToolPageRenderer';
-import data from '@/data/pl/tools/webp-converter.json';
+import data from '@/data/pl/tools/converter-jpg-to-webp.json';
 import type { ToolPageData } from '@/types/tool-page';
 import type { Metadata } from 'next';
 

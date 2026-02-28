@@ -441,15 +441,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Behöver du en tillgänglig webbplats?",
-    "description": "Vi bygger webbplatser för alla användare — korrekt färgkontrast, läsbar typografi och logisk struktur. DOS-lagen kräver digital tillgänglighet.",
-    "btnOne": "Våra tjänster",
-    "btnOneLink": "/sv/kontakt",
-    "btnTwo": "Kontakta oss",
-    "btnTwoLink": "/sv/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

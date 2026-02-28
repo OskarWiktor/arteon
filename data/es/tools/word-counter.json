@@ -470,15 +470,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "¿Necesitas contenido profesional para tu web?",
-    "description": "Escribimos textos que se posicionan en Google y convencen a los visitantes. Descripciones de servicios, artículos de blog y contenido web.",
-    "btnOne": "Nuestros servicios",
-    "btnOneLink": "/es/contacto",
-    "btnTwo": "Contáctanos",
-    "btnTwoLink": "/es/contacto",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

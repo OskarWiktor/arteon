@@ -506,15 +506,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Need professional content for your website?",
-    "description": "We write texts that rank well in Google and convince visitors to act. Service descriptions, blog articles and web content.",
-    "btnOne": "Our services",
-    "btnOneLink": "/en/contact",
-    "btnTwo": "Get in touch",
-    "btnTwoLink": "/en/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

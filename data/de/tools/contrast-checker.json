@@ -466,15 +466,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Brauchen Sie eine barrierefreie Website?",
-    "description": "Wir erstellen Websites für alle Nutzer — mit korrektem Farbkontrast, lesbarer Typografie und logischer Struktur. Ab Juni 2025 verlangt das BFSG digitale Barrierefreiheit.",
-    "btnOne": "Unsere Leistungen",
-    "btnOneLink": "/de/kontakt",
-    "btnTwo": "Kontakt aufnehmen",
-    "btnTwoLink": "/de/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

@@ -475,15 +475,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Aveți nevoie de conținut profesional pentru site?",
-    "description": "Scriem texte care se clasează bine în Google și conving vizitatorii să acționeze. Descrieri de servicii, articole de blog și conținut web.",
-    "btnOne": "Serviciile noastre",
-    "btnOneLink": "/ro/contact",
-    "btnTwo": "Contactați-ne",
-    "btnTwoLink": "/ro/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

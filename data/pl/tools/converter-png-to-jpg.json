@@ -1,0 +1,231 @@
+{
+  "toolKey": "pngToJpg",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter PNG na JPG – zamień format obrazu za darmo",
+    "description": "Zamień pliki PNG na JPG w przeglądarce. Bez limitu plików, bez rejestracji. Konwersja odbywa się lokalnie — pliki nie są wysyłane na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-png-na-jpg"
+  },
+  "hero": {
+    "title": "Konwerter PNG na JPG – zmniejsz rozmiar obrazu bez utraty jakości",
+    "description": "Zamień pliki PNG na JPG i zmniejsz ich rozmiar. Dodaj pliki, ustaw jakość i pobierz obrazy w formacie JPG. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-png-na-jpg",
+      "label": "Konwerter PNG na JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter PNG na JPG – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana PNG na JPG online", "Konwersja PNG do JPG", "Zmiana formatu PNG na JPG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter PNG na JPG online. Zamień pliki PNG na JPG w przeglądarce — pliki nie są wysyłane na serwer. Bez limitu plików i rejestracji.",
+      "featureList": [
+        "Konwersja PNG do JPG",
+        "Regulacja poziomu jakości (60–95%)",
+        "Konwersja wielu plików jednocześnie",
+        "Podgląd rozmiaru przed i po konwersji",
+        "Pobieranie pojedynczych plików",
+        "Przetwarzanie lokalne w przeglądarce"
+      ]
+    },
+    "howTo": {
+      "name": "Jak zamienić PNG na JPG online",
+      "description": "Instrukcja konwersji plików PNG na format JPG za pomocą darmowego narzędzia online.",
+      "steps": [
+        {
+          "name": "Dodaj pliki PNG",
+          "text": "Przeciągnij pliki PNG na wyznaczone pole albo wybierz je z dysku. Można dodać wiele plików naraz."
+        },
+        {
+          "name": "Ustaw jakość JPG",
+          "text": "Wybierz jakość wynikowego pliku JPG za pomocą suwaka (60–95%). Domyślna wartość 85% to dobry kompromis między jakością a rozmiarem."
+        },
+        {
+          "name": "Pobierz pliki JPG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz. Przy każdym pliku widoczna jest informacja o rozmiarze."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować PNG na JPG?",
+      "html": "<p class=\"text-mid mb-4\">PNG (Portable Network Graphics) to format bezstratny, który zachowuje pełną jakość obrazu i obsługuje przezroczystość (kanał alfa). Pliki PNG są jednak znacznie większe od JPG — zdjęcie o rozdzielczości 3000×2000 pikseli w PNG może ważyć 8–15 MB, podczas gdy w JPG przy jakości 85% zajmie 0,5–1,5 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) to format stratny, który kompresuje obraz poprzez usunięcie szczegółów niewidocznych dla ludzkiego oka. Przy jakości 80–85% różnica wizualna jest praktycznie niezauważalna, a plik jest kilkukrotnie mniejszy. Format JPG jest obsługiwany przez każdy program, przeglądarkę i platformę.</p><p class=\"text-mid\">Konwersja PNG na JPG ma sens, gdy obraz nie wymaga przezroczystości — na przykład zdjęcia, screenshoty z jednolitym tłem, grafiki do e-maili czy obrazy do formularzy online z ograniczeniem rozmiaru pliku.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PNG na JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować PNG na JPG?",
+      "description": "Konwersja PNG na JPG zajmuje kilka sekund:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dodaj pliki PNG",
+          "description": "Przeciągnij pliki PNG na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości JPG (domyślnie 85%). Niższa wartość oznacza mniejszy plik. Dla zdjęć 80–85% to optymalne ustawienie.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz JPG",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz. Przy każdym pliku widoczna jest informacja o zaoszczędzonym miejscu.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować PNG na JPG?",
+      "description": "Konwersja PNG na JPG przynosi korzyści w wielu sytuacjach:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiMailLine",
+          "title": "Załączniki do e-maili",
+          "description": "Wiele serwerów pocztowych ma ograniczenie rozmiaru załączników (10–25 MB). Konwersja zdjęć z PNG na JPG zmniejsza ich rozmiar kilkukrotnie."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Platformy sprzedażowe",
+          "description": "Allegro, OLX i inne platformy wymagają zdjęć w formacie JPG. Konwersja PNG na JPG pozwala spełnić te wymagania."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Formularze online",
+          "description": "Formularze rekrutacyjne, urzędowe i bankowe często akceptują tylko JPG z limitem rozmiaru. Konwersja z PNG rozwiązuje ten problem."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Strony internetowe",
+          "description": "Zdjęcia JPG ładują się szybciej niż PNG, co poprawia prędkość strony i wyniki w <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Różnice między PNG a JPG",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PNG</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Bezstratna</td><td class=\"text-mid py-2\">Stratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak (kanał alfa)</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Duży</td><td class=\"text-mid py-2\">Mały</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Grafiki, logo, ikony</td><td class=\"text-mid py-2\">Zdjęcia, obrazy</td></tr><tr><td class=\"text-mid py-2 pr-4\">Kompatybilność</td><td class=\"text-mid py-2 pr-4\">Uniwersalna</td><td class=\"text-mid py-2\">Uniwersalna</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Przy konwersji PNG na JPG przezroczysty kanał alfa jest zastępowany białym tłem. Jeśli obraz wymaga przezroczystości (np. logo na kolorowym tle), lepiej pozostać przy formacie PNG lub rozważyć <a href=\"/narzedzia/konwerter-png-na-webp\">konwersję na WebP</a>, który obsługuje przezroczystość przy mniejszym rozmiarze.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter PNG na JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer. Po zamknięciu strony dane są usuwane."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę obrazów naraz. Wszystkie pliki są przetwarzane po kolei, a wyniki dostępne są do pobrania."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Regulacja jakości",
+          "description": "Suwak jakości pozwala wybrać kompromis między rozmiarem a jakością obrazu. 85% to dobra wartość dla większości zastosowań."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji PNG na JPG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy konwersja PNG na JPG powoduje utratę jakości?",
+          "answer": "JPG to format stratny, więc pewna utrata jakości jest nieunikniona. Przy jakości 80–85% różnica jest praktycznie niezauważalna gołym okiem. Narzędzie pozwala ustawić jakość od 60% do 95%, aby dobrać optymalny kompromis."
+        },
+        {
+          "question": "Co się stanie z przezroczystością PNG?",
+          "answer": "Format JPG nie obsługuje przezroczystości. Przy konwersji przezroczyste obszary są zastępowane białym tłem. Jeśli potrzebujesz zachować przezroczystość, rozważ format WebP lub zostań przy PNG."
+        },
+        {
+          "question": "Jaki poziom jakości wybrać?",
+          "answer": "Dla zdjęć i screenshotów jakość 80–85% daje dobry kompromis między rozmiarem a wyglądem. Dla grafik z ostrymi krawędziami (np. diagramy, tekst na obrazie) lepiej wybrać 90–95%, aby uniknąć widocznych artefaktów kompresji."
+        },
+        {
+          "question": "Ile miejsca mogę zaoszczędzić?",
+          "answer": "Oszczędność zależy od treści obrazu. Zdjęcia w PNG o rozmiarze 5–10 MB po konwersji na JPG przy jakości 85% zwykle zajmują 0,3–1 MB — to redukcja o 80–95%. Grafiki z dużymi jednolitymi obszarami (np. screenshoty) dają mniejsze oszczędności."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików naraz?",
+          "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie — nie ma limitu. Wszystkie zostaną przekonwertowane, a potem można pobrać je pojedynczo lub wszystkie naraz."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera — nie są przesyłane na żaden serwer. Po zamknięciu strony dane są usuwane z pamięci."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PNG na JPG – Arteon",
+      "defaultSubject": "Feedback: Konwerter PNG na JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

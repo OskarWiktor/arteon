@@ -451,15 +451,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Precisa de um site acessível?",
-    "description": "Criamos sites pensados para todos os utilizadores — contraste de cores adequado, tipografia legível e estrutura lógica.",
-    "btnOne": "Os nossos serviços",
-    "btnOneLink": "/pt/contacto",
-    "btnTwo": "Contacte-nos",
-    "btnTwoLink": "/pt/contacto",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

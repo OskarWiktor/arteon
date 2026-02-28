@@ -447,15 +447,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Een toegankelijke website nodig?",
-    "description": "Wij ontwerpen websites voor alle gebruikers — correct kleurcontrast, leesbare typografie en logische structuur.",
-    "btnOne": "Onze diensten",
-    "btnOneLink": "/nl/contact",
-    "btnTwo": "Neem contact op",
-    "btnTwoLink": "/nl/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

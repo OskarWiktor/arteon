@@ -1,0 +1,166 @@
+{
+  "toolKey": "svgToJpg",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter SVG na JPG – zamień wektor na zdjęcie za darmo",
+    "description": "Zamień grafikę wektorową SVG na JPG w przeglądarce. Mniejszy plik, pełna kompatybilność. Bez limitu i rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-svg-na-jpg"
+  },
+  "hero": {
+    "title": "Konwerter SVG na JPG – mniejszy plik, pełna kompatybilność",
+    "description": "Zamień pliki SVG na JPG. Ustaw jakość i pobierz lekkie obrazy rastrowe. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-svg-na-jpg",
+      "label": "Konwerter SVG na JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter SVG na JPG – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana SVG na JPG online", "Rasteryzacja SVG do JPG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter SVG na JPG online. Zamień grafikę wektorową na lekki JPG. Bez limitu i rejestracji.",
+      "featureList": ["Konwersja SVG do JPG", "Regulacja jakości (60–95%)", "Konwersja wielu plików", "Przetwarzanie lokalne"]
+    },
+    "howTo": {
+      "name": "Jak zamienić SVG na JPG online",
+      "description": "Instrukcja konwersji plików SVG na format JPG.",
+      "steps": [
+        {
+          "name": "Dodaj pliki SVG",
+          "text": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Ustaw jakość JPG",
+          "text": "Wybierz jakość (60–95%). Domyślna wartość 85% to dobry kompromis."
+        },
+        {
+          "name": "Pobierz pliki JPG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować SVG na JPG?",
+      "html": "<p class=\"text-mid mb-4\">SVG to format wektorowy — pliki są skalowalne, ale nie każda platforma je obsługuje. JPG to uniwersalny format rastrowy obsługiwany przez każdy program, przeglądarkę i urządzenie. Konwersja SVG na JPG tworzy lekki obraz rastrowy, idealny do udostępniania i publikacji.</p><p class=\"text-mid mb-4\">W odróżnieniu od <a href=\"/narzedzia/konwerter-svg-na-png\">konwersji SVG na PNG</a>, format JPG nie obsługuje przezroczystości — przezroczyste obszary SVG są zastępowane białym tłem. W zamian pliki JPG są znacznie mniejsze, co ułatwia przesyłanie e-mailem i publikację na platformach z ograniczeniem rozmiaru.</p><p class=\"text-mid\">Konwersja jest przydatna, gdy potrzebujesz szybko udostępnić grafikę wektorową osobie bez programu do otwierania SVG, wstawić obraz do e-maila lub przesłać na platformę, która nie obsługuje formatu SVG.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter SVG na JPG – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować SVG na JPG?",
+      "description": "Konwersja SVG na JPG zajmuje kilka sekund:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki SVG", "description": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.", "icon": "RiUploadLine" },
+        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości JPG (domyślnie 85%). Niższa wartość oznacza mniejszy plik.", "icon": "RiEqualizerLine" },
+        { "title": "3. Pobierz JPG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować SVG na JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiMailLine",
+          "title": "Wysyłka e-mailem",
+          "description": "Klienci poczty (Gmail, Outlook) nie wyświetlają plików SVG jako obrazów. Konwersja na JPG pozwala wysłać grafikę jako widoczny załącznik."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty i prezentacje",
+          "description": "Word, PowerPoint i Google Docs lepiej obsługują format JPG niż SVG. Wstawienie JPG zapewnia poprawne wyświetlanie na każdym urządzeniu."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Platformy sprzedażowe",
+          "description": "Allegro, OLX i inne platformy wymagają rastrowych formatów zdjęć. Konwersja SVG na JPG spełnia te wymagania."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Media społecznościowe",
+          "description": "Facebook, Instagram i LinkedIn nie obsługują SVG. Konwersja na JPG pozwala opublikować grafikę bez problemów z formatem."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Różnice między SVG a JPG",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">SVG</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ grafiki</td><td class=\"text-mid py-2 pr-4\">Wektorowa (skalowalna)</td><td class=\"text-mid py-2\">Rastrowa (pikselowa)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Edycja tekstu</td><td class=\"text-mid py-2 pr-4\">Tak (tekst jako tekst)</td><td class=\"text-mid py-2\">Nie (tekst jako piksele)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Zależy od złożoności</td><td class=\"text-mid py-2\">Zależy od jakości</td></tr><tr><td class=\"text-mid py-2 pr-4\">Kompatybilność</td><td class=\"text-mid py-2 pr-4\">Przeglądarki i edytory wektorowe</td><td class=\"text-mid py-2\">Uniwersalna</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Konwersja SVG na JPG zamienia grafikę wektorową na rastrową — tekst i kształty stają się pikselami. Rozdzielczość wynikowego JPG zależy od wymiarów zdefiniowanych w pliku SVG (atrybuty width/height lub viewBox).</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter SVG na JPG?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików SVG naraz. Wyniki dostępne są do pobrania pojedynczo lub wszystkie naraz."
+        },
+        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala wybrać kompromis między rozmiarem a jakością wynikowego JPG." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji SVG na JPG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Co się stanie z przezroczystością SVG?",
+          "answer": "JPG nie obsługuje przezroczystości. Przezroczyste obszary SVG zostaną zastąpione białym tłem. Jeśli potrzebujesz zachować przezroczystość, użyj <a href=\"/narzedzia/konwerter-svg-na-png\">konwertera SVG na PNG</a>."
+        },
+        {
+          "question": "Jaka będzie rozdzielczość wynikowego JPG?",
+          "answer": "Rozdzielczość odpowiada wymiarom zdefiniowanym w pliku SVG (atrybuty width i height lub viewBox). Jeśli SVG nie ma zdefiniowanych wymiarów, przeglądarka użyje domyślnych wartości."
+        },
+        {
+          "question": "Czy tekst w SVG zostanie zachowany?",
+          "answer": "Tak, ale jako piksele — nie jako edytowalny tekst. Po konwersji na JPG grafika staje się rastrowa i nie można edytować poszczególnych elementów."
+        },
+        {
+          "question": "Jaki poziom jakości wybrać?",
+          "answer": "Dla grafik wektorowych (logo, ikony, diagramy) zalecana jakość to 90–95%, aby zachować ostre krawędzie. Dla prostszych grafik 85% to dobry kompromis."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików naraz?",
+          "answer": "Tak. Można dodać dowolną liczbę plików SVG jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+        },
+        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter SVG na JPG – Arteon",
+      "defaultSubject": "Feedback: Konwerter SVG na JPG"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "toolKey": "jpgToWebpSimple",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter JPG na WebP – zmniejsz wagę zdjęć za darmo",
+    "description": "Zamień pliki JPG na lekki WebP w przeglądarce. Zmniejsz wagę obrazów nawet o 35%. Bez limitu plików i rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-jpg-na-webp"
+  },
+  "hero": {
+    "title": "Konwerter JPG na WebP – zmniejsz wagę zdjęć nawet o 35%",
+    "description": "Zamień pliki JPG na WebP i przyspiesz ładowanie strony. Ustaw jakość i pobierz lekkie obrazy. Konwersja odbywa się lokalnie.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-jpg-na-webp",
+      "label": "Konwerter JPG na WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter JPG na WebP – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana JPG na WebP online", "Konwersja JPG do WebP"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter JPG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Bez limitu i rejestracji.",
+      "featureList": ["Konwersja JPG do WebP", "Regulacja jakości (60–95%)", "Konwersja wielu plików", "Przetwarzanie lokalne"]
+    },
+    "howTo": {
+      "name": "Jak zamienić JPG na WebP online",
+      "description": "Instrukcja konwersji plików JPG na format WebP.",
+      "steps": [
+        {
+          "name": "Dodaj pliki JPG",
+          "text": "Przeciągnij pliki JPG na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Ustaw jakość WebP",
+          "text": "Wybierz jakość (60–95%). Domyślna wartość 80% to dobry kompromis."
+        },
+        {
+          "name": "Pobierz pliki WebP",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Co to jest WebP i dlaczego warto konwertować zdjęcia JPG?",
+      "html": "<p class=\"text-mid mb-4\">WebP to format obrazów stworzony przez Google, który pozwala zmniejszyć rozmiar plików graficznych nawet o 25–35% w porównaniu z JPG — przy zachowaniu porównywalnej jakości wizualnej. Mniejsze pliki oznaczają szybsze ładowanie strony, co przekłada się na lepsze doświadczenie użytkowników i wyższe wyniki w <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>.</p><p class=\"text-mid mb-4\">Format WebP jest wspierany przez wszystkie nowoczesne przeglądarki: Chrome, Firefox, Safari (od wersji 14) i Edge. Jeśli prowadzisz stronę internetową, sklep online lub bloga, konwersja zdjęć JPG na WebP to jeden z najprostszych sposobów na poprawę wydajności witryny.</p><p class=\"text-mid\">Konwerter obsługuje pliki JPG dowolnej wielkości. Możesz przekonwertować dowolną liczbę plików naraz — wszystkie zostaną przetworzone lokalnie w przeglądarce, bez wysyłania na serwer.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JPG na WebP – Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować zdjęcia JPG na WebP?",
+      "description": "Konwersja na WebP zajmuje kilka sekund:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Dodaj pliki JPG", "description": "Przeciągnij zdjęcia JPG na wyznaczone pole albo wybierz pliki z dysku. Można dodać dowolną liczbę plików naraz.", "icon": "RiUploadLine" },
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości WebP (domyślnie 80%). Niższa wartość oznacza mniejszy plik. Dla większości zastosowań 80% to optymalne ustawienie.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz WebP",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz. Przy każdym pliku widoczna jest informacja o zaoszczędzonym miejscu.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Ustawienia jakości — co wybrać?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między JPG a WebP jest praktycznie niezauważalna gołym okiem, a plik jest o 25–35% mniejszy.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Ile można zaoszczędzić konwertując JPG na WebP?",
+      "html": "<p class=\"text-mid mb-4\">Oszczędności zależą od rodzaju zdjęcia i jego oryginalnej kompresji. Poniżej przykładowe wyniki dla typowych plików:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjęcie z aparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjęcie produktowe</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Baner strony (hero)</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczędności mogą się różnić. Konwerter pokazuje dokładny rozmiar przed i po konwersji dla każdego pliku.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować JPG na WebP?",
+      "description": "Konwersja na WebP przynosi korzyści praktycznie w każdym przypadku, gdy obrazy są wyświetlane w przeglądarce:",
+      "grid": "two",
+      "items": [
+        { "icon": "RiGlobalLine", "title": "Strony firmowe i wizytówki", "description": "Szybsze ładowanie poprawia pierwsze wrażenie i zmniejsza współczynnik odrzuceń." },
+        { "icon": "RiShoppingCartLine", "title": "Sklepy internetowe", "description": "Zdjęcia produktowe to często największe pliki na stronie; ich optymalizacja przyspiesza cały sklep." },
+        { "icon": "RiArticleLine", "title": "Blogi i portale", "description": "Artykuły z wieloma zdjęciami ładują się znacznie szybciej po konwersji obrazów na WebP." },
+        { "icon": "RiSmartphoneLine", "title": "Aplikacje webowe (PWA)", "description": "Mniejsze zasoby oznaczają szybsze działanie, szczególnie na urządzeniach mobilnych z wolniejszym łączem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter JPG na WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer. Po zamknięciu strony dane są usuwane."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę obrazów naraz. Wszystkie pliki są przetwarzane po kolei, a wyniki dostępne są do pobrania."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Regulacja jakości",
+          "description": "Suwak jakości pozwala wybrać kompromis między rozmiarem a jakością obrazu. 80% to dobra wartość dla większości zastosowań."
+        },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Optymalizacja zdjęć a Core Web Vitals",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero. Nieskompresowane zdjęcia JPG o wadze 1–3 MB wydłużają czas LCP i obniżają wynik w PageSpeed Insights.</p><p class=\"text-mid mb-4\">Konwersja obrazów do formatu WebP zmniejsza rozmiar plików o 25–35% przy zachowaniu porównywalnej jakości wizualnej. Mniejsze pliki graficzne skracają czas pobierania zasobów, co bezpośrednio poprawia wskaźnik LCP. Dodatkowe techniki — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>, Lighthouse i WebPageTest wyświetlają szczegółowe dane o wpływie obrazów na wydajność. Raport Lighthouse w kategorii Performance wskazuje konkretne pliki, które warto przekonwertować na format nowej generacji.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionInfo",
+      "title": "Optymalizacja zdjęć produktowych w polskim e-commerce",
+      "html": "<p class=\"text-mid mb-4\">Zdjęcia produktowe stanowią znaczną część wagi polskich sklepów internetowych. Strona kategorii z 40 miniaturkami i strona produktu z galerią 5–8 zdjęć mogą pobierać kilkanaście megabajtów obrazów przy każdym otwarciu. Konwersja tych grafik na WebP zmniejsza transfer danych i przyspiesza ładowanie — szczególnie na urządzeniach mobilnych, z których korzysta ponad 70% polskich kupujących online.</p><p class=\"text-mid mb-4\">Miniaturki produktów na stronach kategorii powinny mieć rozmiar dostosowany do siatki wyświetlania — plik 200×200 px o wadze 8–15 KB w WebP ładuje się szybciej niż przeskalowany oryginał 1200×1200 px. Zdjęcia w widoku powiększenia (zoom) mogą zachować wyższą jakość (85–90%), ponieważ są ładowane dopiero po interakcji użytkownika.</p><p class=\"text-mid\">Szybkość ładowania strony produktowej wpływa na współczynnik konwersji. Badania branżowe wskazują, że każda dodatkowa sekunda ładowania zwiększa ryzyko porzucenia strony przez odwiedzającego. Optymalizacja grafik to jedno z najprostszych działań, które skraca czas ładowania bez zmian w kodzie sklepu.</p>"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Obsługa WebP w popularnych CMS i hostingach",
+      "html": "<p class=\"text-mid mb-4\">WordPress — najpopularniejszy CMS w Polsce — obsługuje natywny upload plików WebP od wersji 5.8. Wtyczki takie jak Imagify, ShortPixel i EWWW Image Optimizer umożliwiają automatyczną konwersję obrazów podczas przesyłania do biblioteki mediów. Każda z tych wtyczek generuje wariant WebP obok oryginału i serwuje go przeglądarkom, które obsługują ten format.</p><p class=\"text-mid mb-4\">Platformy e-commerce — Shoper, Sky-Shop i IdoSell — mają własne systemy zarządzania grafikami. Shoper od 2023 roku automatycznie serwuje WebP dla przesłanych zdjęć produktowych. Przed przesłaniem zdjęć na te platformy warto przekonwertować oryginały na optymalny rozmiar — mniejsze pliki przyspieszają zarówno upload, jak i wyświetlanie.</p><p class=\"text-mid\">Serwisy CDN takie jak Cloudflare (wariant Polish) i BunnyCDN oferują automatyczną konwersję obrazów na WebP na poziomie edge servera. Obrazy są konwertowane w locie bez zmian na serwerze źródłowym. To rozwiązanie sprawdza się na stronach z dużą liczbą grafik, gdzie ręczna konwersja byłaby czasochłonna.</p>"
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Na co zwrócić uwagę?",
+      "description": "Kilka wskazówek, które pomogą uniknąć problemów podczas konwersji:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Bardzo duże pliki",
+          "description": "Konwersja obrazów o rozdzielczości powyżej 4000×4000 pikseli może być wolniejsza i obciążać przeglądarkę. Jeśli przetwarzasz wiele dużych plików, rozważ dzielenie ich na partie."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Już skompresowane obrazy",
+          "description": "Jeśli oryginalny JPG był zapisany z bardzo niską jakością (np. 60%), konwersja do WebP może nie przynieść dużych oszczędności. W takim przypadku warto spróbować niższej jakości WebP."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Kompatybilność z przeglądarkami",
+          "description": "Wszystkie nowoczesne przeglądarki (Chrome, Firefox, Safari 14+, Edge) wspierają WebP. Jeśli strona musi działać na starszych przeglądarkach, można użyć tagu <code>&lt;picture&gt;</code> z alternatywnym źródłem JPG."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Przezroczystość",
+          "description": "Format JPG nie obsługuje przezroczystości. Jeśli potrzebujesz konwertować grafiki z przezroczystością (PNG), skorzystaj z <a href=\"/narzedzia/konwerter-png-na-webp\">konwertera PNG na WebP</a>."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji JPG na WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Co to jest WebP i czym różni się od JPG?",
+          "answer": "WebP to format obrazów stworzony przez Google, który łączy zalety JPG (małe pliki fotograficzne) i PNG (przezroczystość). Pliki WebP są średnio o 25–35% mniejsze od JPG przy porównywalnej jakości wizualnej. Wszystkie nowoczesne przeglądarki (Chrome, Firefox, Safari, Edge) obsługują WebP."
+        },
+        {
+          "question": "Jaki poziom jakości wybrać?",
+          "answer": "Dla większości zastosowań (strony, sklepy, blogi) jakość 80% daje dobry kompromis między rozmiarem a wyglądem. Dla zdjęć produktowych lub portfolio możesz wybrać 85–90%. Wartości poniżej 70% znacząco zmniejszą rozmiar, ale mogą wprowadzić widoczne artefakty."
+        },
+        {
+          "question": "Ile miejsca mogę zaoszczędzić?",
+          "answer": "Typowa oszczędność to 25–35% w porównaniu z JPG. Na przykład zdjęcie JPG o rozmiarze 500 KB po konwersji na WebP zajmie około 325–375 KB."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików naraz?",
+          "answer": "Tak. Możesz dodać dowolną liczbę plików jednocześnie — nie ma limitu. Wszystkie zostaną przekonwertowane, a potem możesz pobrać je pojedynczo lub wszystkie naraz."
+        },
+        {
+          "question": "Czy WebP obsługuje przezroczystość?",
+          "answer": "Tak, format WebP obsługuje kanał alfa (przezroczystość). Jednak przy konwersji z JPG przezroczystość nie wystąpi, ponieważ JPG jej nie obsługuje. Jeśli potrzebujesz zachować przezroczystość, konwertuj pliki PNG na WebP."
+        },
+        {
+          "question": "Czy WebP przyspiesza stronę?",
+          "answer": "Tak. Mniejsze pliki graficzne oznaczają szybsze ładowanie strony. Ma to bezpośredni wpływ na wskaźnik LCP (Largest Contentful Paint) w Core Web Vitals — jeden z czynników rankingowych Google. Narzędzia takie jak PageSpeed Insights często zalecają konwersję obrazów na WebP."
+        },
+        {
+          "question": "Co jeśli plik WebP jest większy od oryginału?",
+          "answer": "Jeśli oryginalny JPG był już bardzo mocno skompresowany, plik WebP może okazać się większy. W takim przypadku warto spróbować niższej jakości lub zostać przy oryginalnym formacie."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera — nie są przesyłane na żaden serwer. Po zamknięciu strony dane są usuwane z pamięci."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JPG na WebP – Arteon",
+      "defaultSubject": "Feedback: Konwerter JPG na WebP"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

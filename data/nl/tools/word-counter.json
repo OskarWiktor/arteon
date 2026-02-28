@@ -473,15 +473,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Professionele content nodig voor uw website?",
-    "description": "Wij schrijven teksten die goed scoren in Google en bezoekers overtuigen tot actie. Dienstbeschrijvingen, blogartikelen en webcontent.",
-    "btnOne": "Onze diensten",
-    "btnOneLink": "/nl/contact",
-    "btnTwo": "Neem contact op",
-    "btnTwoLink": "/nl/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

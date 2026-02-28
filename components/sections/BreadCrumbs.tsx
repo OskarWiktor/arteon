@@ -32,23 +32,23 @@ export default function Breadcrumbs({ second, third, fourth, className = '', inc
   return (
     <Wrapper>
       <nav aria-label={t.ariaLabel} className={`${size === 'compact' ? 'flex items-center justify-center py-3' : 'py-6'} ${className}`}>
-        <ol className="flex flex-wrap items-center gap-2 text-sm">
+        <ol className="flex flex-wrap items-center gap-2 text-sm!">
           <li>
             <AppLink href="/" variant="default" display="inline" aria-label={t.home} className="shrink-0">
-              <RiHomeLine className="text-medium text-primary-mid h-4 w-4" />
+              <RiHomeLine className="text-medium text-primary-mid mt-2 h-4 w-4" />
             </AppLink>
           </li>
           {items.slice(1).map((it, idx) => {
             const isLast = idx === items.slice(1).length - 1;
             return (
-              <li key={`${it.href}-${idx}`} className="!text-medium text-primary-mid flex items-center gap-2">
+              <li key={`${it.href}-${idx}`} className="!text-medium text-primary-mid flex items-center gap-2 text-sm!">
                 <span aria-hidden="true">/</span>
                 {isLast ? (
-                  <span className="text-medium text-primary" aria-current="page">
+                  <span className="text-medium text-primary text-sm!" aria-current="page">
                     {it.label}
                   </span>
                 ) : (
-                  <AppLink href={it.href} variant="default" display="inline" className="!text-primary-mid !text-[14px]">
+                  <AppLink href={it.href} variant="default" display="inline" className="!text-primary-mid text-sm!">
                     {it.label}
                   </AppLink>
                 )}

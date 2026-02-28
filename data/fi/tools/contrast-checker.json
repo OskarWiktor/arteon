@@ -441,15 +441,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Tarvitsetko saavutettavan verkkosivuston?",
-    "description": "Suunnittelemme verkkosivustoja kaikki käyttäjät huomioiden — oikea värikontrasti, luettava typografia ja looginen rakenne.",
-    "btnOne": "Palvelumme",
-    "btnOneLink": "/fi/yhteystiedot",
-    "btnTwo": "Ota yhteyttä",
-    "btnTwoLink": "/fi/yhteystiedot",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

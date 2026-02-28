@@ -475,15 +475,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potřebujete profesionální texty pro svůj web?",
-    "description": "Píšeme texty, které se dobře umisťují ve vyhledávačích a přesvědčují k akci. Popisy služeb, blogové články a webový obsah.",
-    "btnOne": "Naše služby",
-    "btnOneLink": "/cs/nastroje",
-    "btnTwo": "Kontakt",
-    "btnTwoLink": "/cs/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

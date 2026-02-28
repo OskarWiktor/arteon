@@ -441,15 +441,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Trenger du en universelt utformet nettside?",
-    "description": "Vi lager nettsider med alle brukere i tankene — riktig fargekontrast, lesbar typografi og logisk struktur. Norges krav om universell utforming gjelder også privat sektor.",
-    "btnOne": "Våre tjenester",
-    "btnOneLink": "/no/kontakt",
-    "btnTwo": "Kontakt oss",
-    "btnTwoLink": "/no/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

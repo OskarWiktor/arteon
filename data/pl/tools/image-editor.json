@@ -266,7 +266,7 @@
         {
           "title": "WebP",
           "icon": "RiCropLine",
-          "html": "<div><p class=\"text-mid mb-3\">Nowoczesny format łączący zalety JPG i PNG - małe pliki, dobra jakość, obsługa przezroczystości. Obsługiwany przez wszystkie nowoczesne przeglądarki.</p><p class=\"text-mid\">Zalecany dla stron WWW - mniejsze pliki oznaczają szybsze ładowanie. Więcej o WebP znajdziesz w naszym <a href=\"/narzedzia/jpg-png-na-webp-bez-limitu\">konwerterze JPG/PNG na WebP</a>.</p></div>"
+          "html": "<div><p class=\"text-mid mb-3\">Nowoczesny format łączący zalety JPG i PNG - małe pliki, dobra jakość, obsługa przezroczystości. Obsługiwany przez wszystkie nowoczesne przeglądarki.</p><p class=\"text-mid\">Zalecany dla stron WWW - mniejsze pliki oznaczają szybsze ładowanie. Więcej o WebP znajdziesz w naszym <a href=\"/narzedzia/konwerter-jpg-na-webp\">konwerterze JPG na WebP</a>.</p></div>"
         }
       ]
     },
@@ -402,15 +402,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potrzebujesz profesjonalnych grafik do mediów społecznościowych?",
-    "description": "Tworzymy spójne materiały wizualne dopasowane do Twojej marki - od zdjęć produktowych po szablony postów na Instagram i Facebook.",
-    "btnOne": "Umów rozmowę",
-    "btnOneLink": "/kontakt",
-    "btnTwo": "Sprawdź szablony postów",
-    "btnTwoLink": "/uslugi/projekty-graficzne/szablony-postow-media-spolecznosciowe",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

@@ -383,15 +383,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potřebujete vizuální identitu pro svou značku?",
-    "description": "Navrhujeme loga, systémy barev a firemní materiály — od vizitek po šablony pro sociální sítě.",
-    "btnOne": "Naše služby",
-    "btnOneLink": "/cs/nastroje",
-    "btnTwo": "Kontakt",
-    "btnTwoLink": "/cs/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

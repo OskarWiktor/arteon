@@ -398,15 +398,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Hai bisogno di un'identità visiva coerente?",
-    "description": "Progettiamo loghi, sistemi cromatici e materiali aziendali — dai biglietti da visita ai template per i social media.",
-    "btnOne": "I nostri servizi",
-    "btnOneLink": "/it/contatti",
-    "btnTwo": "Contattaci",
-    "btnTwoLink": "/it/contatti",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

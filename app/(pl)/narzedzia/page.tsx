@@ -9,7 +9,6 @@ import Wrapper from '@/components/ui/Wrapper';
 import Script from 'next/script';
 import Link from 'next/link';
 import {
-  RiImageEditLine,
   RiCropLine,
   RiAppsLine,
   RiFileTextLine,
@@ -23,17 +22,18 @@ import {
   RiInfinityFill,
   RiGlobalLine,
   RiLockLine,
+  RiLoopLeftLine,
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
 export const metadata = {
-  title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
-  description: '10 darmowych narzędzi: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, social media i druku. Bez rejestracji.',
+  title: 'Darmowe narzędzia online | Konwertery obrazów, SEO, kolory, favicon',
+  description: '22 darmowe narzędzia online: 12 konwerterów obrazów (JPG, PNG, WebP, SVG, BMP, GIF), generator favicon, edytor zdjęć, licznik tekstu, palety kolorów i kody QR. Bez rejestracji.',
   alternates: getToolsIndexAlternates('pl'),
   openGraph: {
-    title: 'Darmowe narzędzia online | Obrazy, SEO, kolory, favicon',
-    description: '10 darmowych narzędzi: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, social media i druku. Bez rejestracji.',
+    title: 'Darmowe narzędzia online | Konwertery obrazów, SEO, kolory, favicon',
+    description: '22 darmowe narzędzia online: 12 konwerterów obrazów (JPG, PNG, WebP, SVG, BMP, GIF), generator favicon, edytor zdjęć, licznik tekstu, palety kolorów i kody QR. Bez rejestracji.',
     url: toAbsoluteUrl('/narzedzia'),
     type: 'website',
     images: [
@@ -49,8 +49,9 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Darmowe narzędzia online',
-  description: '10 darmowych narzędzi: konwerter WebP, generator favicon, licznik tekstu, ekstraktor kolorów i kody QR. Do strony, social media i druku. Bez rejestracji.',
+  name: 'Darmowe narzędzia online — konwertery obrazów, SEO, kolory, favicon',
+  description:
+    '22 darmowe narzędzia online: 12 konwerterów obrazów (JPG, PNG, WebP, SVG, BMP, GIF), generator favicon, edytor zdjęć, licznik tekstu, palety kolorów i kody QR. Bez rejestracji, bez limitu.',
   url: toAbsoluteUrl('/narzedzia'),
   inLanguage: 'pl-PL',
   isPartOf: {
@@ -59,105 +60,229 @@ const schema = {
     url: siteUrl,
   },
   about: [
-    { '@type': 'Thing', name: 'Optymalizacja obrazów' },
-    { '@type': 'Thing', name: 'SEO' },
-    { '@type': 'Thing', name: 'Kolory i branding' },
-    { '@type': 'Thing', name: 'Generatory online' },
+    { '@type': 'Thing', name: 'Konwersja formatów obrazów' },
+    { '@type': 'Thing', name: 'Konwerter JPG PNG WebP SVG BMP GIF' },
+    { '@type': 'Thing', name: 'Optymalizacja obrazów na stronę WWW' },
+    { '@type': 'Thing', name: 'Zmiana formatu zdjęć online' },
+    { '@type': 'Thing', name: 'SEO — meta title, meta description' },
+    { '@type': 'Thing', name: 'Kolory, palety, kontrast WCAG' },
+    { '@type': 'Thing', name: 'Generator favicon, QR, stopka e-mail' },
   ],
   mainEntity: {
     '@type': 'ItemList',
-    numberOfItems: 10,
+    numberOfItems: 22,
     itemListElement: [
       {
         '@type': 'WebApplication',
         position: 1,
-        name: 'Konwerter JPG i PNG na WebP online',
-        description: 'Darmowy konwerter JPG i PNG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Bez rejestracji, bez wysyłania plików na serwer.',
-        url: toAbsoluteUrl('/narzedzia/jpg-png-na-webp-bez-limitu'),
+        name: 'Konwerter JPG na WebP — zmniejsz wagę zdjęć',
+        description: 'Darmowy konwerter JPG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja w przeglądarce, bez rejestracji.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-jpg-na-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
+        alternateName: ['Konwerter JPEG do WebP', 'Zamiana JPG na WebP online', 'JPG to WebP converter'],
       },
       {
         '@type': 'WebApplication',
         position: 2,
-        name: 'Edytor zdjęć online',
-        description: 'Kadrowanie i zmiana rozmiaru zdjęć pod media społecznościowe i strony WWW. Gotowe presety wymiarów, własne wymiary w pikselach oraz możliwość tworzenia okrągłych avatarów.',
-        url: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
+        name: 'Konwerter PNG na JPG online',
+        description: 'Zamień pliki PNG na JPG. Zmniejsz rozmiar grafik bezstratnych, konwersja w przeglądarce bez limitu plików.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-png-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
+        alternateName: ['Konwersja PNG do JPG', 'Zamiana PNG na JPEG', 'PNG to JPG converter'],
       },
       {
         '@type': 'WebApplication',
         position: 3,
-        name: 'Generator favicon online',
-        description: 'Darmowy generator favicon online. Z jednego obrazu tworzy favicon.ico oraz ikony PNG 16x16, 32x32, 180x180, 192x192 i 512x512 - zgodne z wymaganiami przeglądarek i Lighthouse.',
-        url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
-        applicationCategory: 'DesignApplication',
+        name: 'Konwerter WebP na JPG online',
+        description: 'Zamień pliki WebP na JPG. Kompatybilność z każdym programem i platformą — konwersja lokalna w przeglądarce.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-webp-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
+        alternateName: ['Konwersja WebP do JPG', 'Zamiana WebP na JPEG', 'WebP to JPG converter'],
       },
       {
         '@type': 'WebApplication',
         position: 4,
-        name: 'Licznik długości meta title i description',
-        description: 'Licznik długości meta title i meta description z podglądem wyglądu w Google. Pomaga dopasować liczbę znaków i szerokość w pikselach, aby tytuł i opis nie były ucinane.',
-        url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
-        applicationCategory: 'DeveloperApplication',
+        name: 'Konwerter PNG na WebP online',
+        description: 'Zamień grafiki PNG na WebP z zachowaniem przezroczystości. Mniejsze pliki, szybsze ładowanie strony.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-png-na-webp'),
+        applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
+        alternateName: ['Konwersja PNG do WebP', 'PNG to WebP converter'],
       },
       {
         '@type': 'WebApplication',
         position: 5,
-        name: 'Generator stopki mailowej HTML',
-        description: 'Darmowy generator stopki mailowej HTML. Dodaj dane kontaktowe, link CTA i profile w mediach społecznościowych, a następnie skopiuj gotowy kod podpisu do Gmaila lub Outlooka.',
-        url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
-        applicationCategory: 'BusinessApplication',
+        name: 'Konwerter JPG na PNG online',
+        description: 'Zamień pliki JPG na bezstratny format PNG. Idealne do dalszej edycji graficznej.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-jpg-na-png'),
+        applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
       {
         '@type': 'WebApplication',
         position: 6,
-        name: 'Kontrast i czytelność kolorów online',
-        description:
-          'Sprawdź kontrast i czytelność kolorów tekstu i tła. Narzędzie oblicza współczynnik kontrastu według WCAG i pomoże dobrać odpowiedni kolor za pomocą funkcji automatycznego dopasowania.',
-        url: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
-        applicationCategory: 'DesignApplication',
+        name: 'Konwerter WebP na PNG online',
+        description: 'Zamień pliki WebP na bezstratny PNG z zachowaniem przezroczystości.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-webp-na-png'),
+        applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
       {
         '@type': 'WebApplication',
         position: 7,
-        name: 'Ekstraktor kolorów z obrazu online',
-        description: 'Darmowy ekstraktor kolorów z obrazu online. Wgraj zdjęcie lub logo i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB.',
-        url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
-        applicationCategory: 'DesignApplication',
+        name: 'Konwerter SVG na PNG online',
+        description: 'Zamień grafikę wektorową SVG na rastrowy PNG. Przezroczystość zachowana.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-svg-na-png'),
+        applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
       {
         '@type': 'WebApplication',
         position: 8,
-        name: 'Generator palet kolorów online',
-        description: 'Generator palet kolorów z jednego koloru bazowego. Schematy monochromatyczne, triadyczne, analogiczne, komplementarne oraz palety pastelowe, ciemne i minimalistyczne.',
-        url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'),
-        applicationCategory: 'DesignApplication',
+        name: 'Konwerter SVG na JPG online',
+        description: 'Zamień grafikę wektorową SVG na JPG. Mniejszy plik, pełna kompatybilność.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-svg-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
       {
         '@type': 'WebApplication',
         position: 9,
-        name: 'Licznik słów, znaków i czasu czytania z formatowaniem tekstu ',
-        description: 'Darmowy licznik słów i znaków z oceną długości tekstu. Sprawdź, czy tekst ma odpowiednią długość dla strony głównej, opisu usługi, artykułu lub opisu produktu.',
-        url: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
-        applicationCategory: 'DeveloperApplication',
+        name: 'Konwerter BMP na JPG online',
+        description: 'Zamień nieskompresowane pliki BMP na lekki JPG. Redukcja rozmiaru o 90–97%.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-bmp-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
       {
         '@type': 'WebApplication',
         position: 10,
+        name: 'Konwerter BMP na PNG online',
+        description: 'Zamień nieskompresowane pliki BMP na bezstratny PNG.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-bmp-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 11,
+        name: 'Konwerter GIF na PNG online',
+        description: 'Wyeksportuj pierwszą klatkę GIF-a jako statyczny obraz PNG z przezroczystością.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-gif-na-png'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 12,
+        name: 'Konwerter GIF na JPG online',
+        description: 'Wyeksportuj pierwszą klatkę GIF-a jako statyczny JPG. Lekki plik, pełna kompatybilność.',
+        url: toAbsoluteUrl('/narzedzia/konwerter-gif-na-jpg'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+      },
+      {
+        '@type': 'WebApplication',
+        position: 13,
+        name: 'Edytor zdjęć online — kadrowanie i zmiana rozmiaru',
+        description: 'Kadrowanie i zmiana rozmiaru zdjęć pod media społecznościowe i strony WWW. Gotowe presety, własne wymiary w pikselach, okrągłe avatary.',
+        url: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+        alternateName: ['Przycinanie zdjęć online', 'Zmiana rozmiaru obrazów', 'Image editor online'],
+      },
+      {
+        '@type': 'WebApplication',
+        position: 14,
+        name: 'Generator favicon online',
+        description: 'Darmowy generator favicon.ico z jednego obrazu. Tworzy ikony 16x16, 32x32, 180x180, 192x192 i 512x512 zgodne z Lighthouse.',
+        url: toAbsoluteUrl('/narzedzia/darmowy-generator-favicon-ico'),
+        applicationCategory: 'DesignApplication',
+        operatingSystem: 'Any',
+        alternateName: ['Generator ikon favicon', 'Favicon creator'],
+      },
+      {
+        '@type': 'WebApplication',
+        position: 15,
+        name: 'Licznik długości meta title i description',
+        description: 'Sprawdź długość meta title i meta description z podglądem w Google. Liczba znaków, szerokość w pikselach, podgląd SERP.',
+        url: toAbsoluteUrl('/narzedzia/licznik-dlugosci-meta-title-i-description'),
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'Any',
+        alternateName: ['Meta tag checker', 'SERP preview tool', 'Sprawdzacz meta tagów'],
+      },
+      {
+        '@type': 'WebApplication',
+        position: 16,
+        name: 'Generator stopki mailowej HTML',
+        description: 'Darmowy generator podpisu e-mail HTML. Dane kontaktowe, link CTA, profile social media — gotowy kod do Gmaila i Outlooka.',
+        url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'Any',
+        alternateName: ['Generator podpisu e-mail', 'Email signature generator'],
+      },
+      {
+        '@type': 'WebApplication',
+        position: 17,
+        name: 'Kontrast i czytelność kolorów — WCAG checker',
+        description: 'Sprawdź kontrast tekstu i tła według WCAG 2.1. Automatyczne dopasowanie koloru do wymaganego poziomu AA lub AAA.',
+        url: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
+        applicationCategory: 'DesignApplication',
+        operatingSystem: 'Any',
+        alternateName: ['Tester kontrastu WCAG', 'Color contrast checker', 'Sprawdzacz dostępności kolorów'],
+      },
+      {
+        '@type': 'WebApplication',
+        position: 18,
+        name: 'Ekstraktor kolorów z obrazu online',
+        description: 'Wgraj zdjęcie lub logo i pobierz paletę do 12 dominujących kolorów z kodami HEX i RGB.',
+        url: toAbsoluteUrl('/narzedzia/ekstraktor-kolorow-z-obrazu'),
+        applicationCategory: 'DesignApplication',
+        operatingSystem: 'Any',
+        alternateName: ['Color picker z obrazu', 'Paleta kolorów ze zdjęcia', 'Image color extractor'],
+      },
+      {
+        '@type': 'WebApplication',
+        position: 19,
+        name: 'Generator palet kolorów online',
+        description: 'Generator palet kolorów z jednego koloru bazowego. Schematy monochromatyczne, triadyczne, analogiczne, komplementarne, pastelowe.',
+        url: toAbsoluteUrl('/narzedzia/generator-palet-kolorow'),
+        applicationCategory: 'DesignApplication',
+        operatingSystem: 'Any',
+        alternateName: ['Color palette generator', 'Generator schematów kolorystycznych'],
+      },
+      {
+        '@type': 'WebApplication',
+        position: 20,
+        name: 'Licznik słów, znaków i czasu czytania',
+        description: 'Darmowy licznik słów i znaków z oceną długości tekstu. Ile słów powinien mieć artykuł, opis usługi, tekst na stronę.',
+        url: toAbsoluteUrl('/narzedzia/licznik-slow-i-znakow'),
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'Any',
+        alternateName: ['Word counter', 'Licznik znaków online'],
+      },
+      {
+        '@type': 'WebApplication',
+        position: 21,
         name: 'Generator kodów QR online',
-        description: 'Darmowy generator kodów QR online. Stwórz kod QR do strony, wizytówki vCard, menu restauracji lub ulotki. Eksport PNG i SVG, bez logowania, bez limitu.',
+        description: 'Stwórz kod QR do strony, wizytówki vCard, menu restauracji lub ulotki. Eksport PNG i SVG, bez logowania.',
         url: toAbsoluteUrl('/narzedzia/darmowy-generator-kodow-qr'),
         applicationCategory: 'UtilityApplication',
         operatingSystem: 'Any',
+        alternateName: ['QR code generator', 'Kreator kodów QR'],
+      },
+      {
+        '@type': 'WebApplication',
+        position: 22,
+        name: 'Zmiana rozmiaru zdjęć online',
+        description: 'Zmień rozmiar zdjęć pod social media, e-commerce i strony WWW. Gotowe formaty i własne wymiary.',
+        url: toAbsoluteUrl('/narzedzia/zmiana-rozmiaru-zdjecia'),
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Any',
+        alternateName: ['Image resizer', 'Resize zdjęć online'],
       },
     ],
   },
@@ -183,11 +308,11 @@ const faqItems = [
   {
     question: 'Do czego służą te narzędzia?',
     answer:
-      'Pomagają przygotować materiały do strony internetowej, mediów społecznościowych i druku: zoptymalizować obrazy, stworzyć favicon, sprawdzić długość tekstu, wygenerować kod QR, dobrać kolory i zweryfikować ich czytelność.',
+      'Pomagają przygotować materiały do strony internetowej, mediów społecznościowych i druku: konwertować obrazy między formatami (JPG, PNG, WebP, SVG, BMP, GIF), zoptymalizować zdjęcia, stworzyć favicon, sprawdzić długość tekstu, wygenerować kod QR, dobrać kolory i zweryfikować ich czytelność.',
   },
   {
     question: 'Czy narzędzia działają na telefonie?',
-    answer: 'Tak, ale niektóre (konwerter WebP, generator favicon) działają lepiej na komputerze ze względu na przetwarzanie większych plików.',
+    answer: 'Tak, ale niektóre narzędzia (konwertery WebP, generator favicon) działają lepiej na komputerze ze względu na przetwarzanie większych plików.',
   },
 ];
 
@@ -196,7 +321,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Darmowe narzędzia online"
-        description="Konwerter obrazów, generator favicon, licznik tekstu, narzędzia do kolorów i kody QR. Bez rejestracji, bez limitu - wszystko działa w przeglądarce."
+        description="12 konwerterów obrazów, edytor zdjęć, generator favicon, licznik tekstu, narzędzia do kolorów i kody QR. Bez rejestracji, bez limitu — wszystko działa w przeglądarce."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -209,24 +334,6 @@ export default function ToolsIndexPage() {
           description="Narzędzia do przygotowania zdjęć, grafik i ikon pod strony WWW i media społecznościowe."
           grid="three"
           items={[
-            {
-              icon: <RiImageEditLine className="h-8 w-8" />,
-              title: 'Konwerter JPG/PNG na WebP',
-              topImageAlt: 'Konwerter JPG/PNG na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-              description: (
-                <div className="flex h-full flex-col">
-                  <p>
-                    Zmniejsz wagę zdjęć, konwertując je z JPG lub PNG do formatu <strong>WebP</strong>. Pobierz pliki, dodaj na stronę i zoptymalizuj jej prędkość.
-                  </p>
-                  <div className="mt-4">
-                    <Button arrow link="/narzedzia/jpg-png-na-webp-bez-limitu">
-                      Otwórz narzędzie
-                    </Button>
-                  </div>
-                </div>
-              ),
-            },
             {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Edytor zdjęć online',
@@ -248,8 +355,8 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiAppsLine className="h-8 w-8" />,
-              title: 'Generator favicon i ikon dla strony',
-              topImageAlt: 'Generator favicon i ikon dla strony Arteon',
+              title: 'Generator favicon',
+              topImageAlt: 'Generator favicon Arteon',
               topImageSrc: '/assets/tools/favicon-generator/darmowy-generator-favicon-ico-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
@@ -266,6 +373,106 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
+
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Konwertery formatów obrazów"
+          description="12 konwerterów obrazów online — zamień format zdjęć między JPG, PNG, WebP, SVG, BMP i GIF. Konwersja w przeglądarce, bez wysyłania plików na serwer."
+          grid="three"
+          items={[
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter JPG na WebP',
+              topImageAlt: 'Konwerter JPG na WebP Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>
+                    Zmniejsz wagę zdjęć nawet o 35%, konwertując je z JPG do <strong>WebP</strong>. Format WebP przyspiesza ładowanie strony i poprawia Core Web Vitals.
+                  </p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-jpg-na-webp">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter PNG na JPG',
+              topImageAlt: 'Konwerter PNG na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień pliki PNG na lekki JPG. Zmniejsz rozmiar grafik i zdjęć do formatu akceptowanego przez każdą platformę.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-png-na-jpg">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'Konwerter WebP na JPG',
+              topImageAlt: 'Konwerter WebP na JPG Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień pliki WebP na JPG — format kompatybilny z każdym programem, platformą sprzedażową i klientem e-mail.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-webp-na-jpg">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+          ]}
+        />
+        <div className="mt-4 flex justify-center">
+          <p className="text-mid text-sm">
+            Dostępne również:{' '}
+            <Link href="/narzedzia/konwerter-png-na-webp" className="text-primary hover:underline">
+              PNG→WebP
+            </Link>
+            {', '}
+            <Link href="/narzedzia/konwerter-jpg-na-png" className="text-primary hover:underline">
+              JPG→PNG
+            </Link>
+            {', '}
+            <Link href="/narzedzia/konwerter-webp-na-png" className="text-primary hover:underline">
+              WebP→PNG
+            </Link>
+            {', '}
+            <Link href="/narzedzia/konwerter-svg-na-png" className="text-primary hover:underline">
+              SVG→PNG
+            </Link>
+            {', '}
+            <Link href="/narzedzia/konwerter-svg-na-jpg" className="text-primary hover:underline">
+              SVG→JPG
+            </Link>
+            {', '}
+            <Link href="/narzedzia/konwerter-bmp-na-jpg" className="text-primary hover:underline">
+              BMP→JPG
+            </Link>
+            {', '}
+            <Link href="/narzedzia/konwerter-bmp-na-png" className="text-primary hover:underline">
+              BMP→PNG
+            </Link>
+            {', '}
+            <Link href="/narzedzia/konwerter-gif-na-png" className="text-primary hover:underline">
+              GIF→PNG
+            </Link>
+            {', '}
+            <Link href="/narzedzia/konwerter-gif-na-jpg" className="text-primary hover:underline">
+              GIF→JPG
+            </Link>
+          </p>
+        </div>
 
         <Gap size="sm" />
 
@@ -429,10 +636,10 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Czym są narzędzia Arteon?">
           <p className="mb-4">
-            Zestaw 10 darmowych narzędzi online do przygotowania materiałów na stronę internetową, do mediów społecznościowych i do druku. Konwerter obrazów na WebP, generator favicon, licznik
-            długości tekstu, ekstraktor kolorów, generator palet i kody QR.
+            Zestaw 22 darmowych narzędzi online do przygotowania materiałów na stronę internetową, do mediów społecznościowych i do druku. 12 konwerterów formatów obrazów (JPG, PNG, WebP, SVG, BMP,
+            GIF), edytor zdjęć, generator favicon, licznik tekstu, ekstraktor kolorów, generator palet i kody QR.
           </p>
-          <p className="mb-4">Wszystkie narzędzia działają w przeglądarce - pliki nie są wysyłane na serwer. Korzystasz bez rejestracji i bez limitu.</p>
+          <p className="mb-4">Wszystkie narzędzia działają w przeglądarce — pliki nie są wysyłane na serwer. Korzystasz bez rejestracji i bez limitu.</p>
           <p>
             Jeśli potrzebujesz pomocy z projektem strony lub identyfikacji wizualnej, <Link href="/kontakt">skontaktuj się z nami</Link>.
           </p>

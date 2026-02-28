@@ -1,0 +1,177 @@
+{
+  "toolKey": "jpgToPng",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter JPG na PNG – bezstratna konwersja za darmo",
+    "description": "Zamień pliki JPG na bezstratny PNG w przeglądarce. Bez limitu plików, bez rejestracji. Pliki nie są wysyłane na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-jpg-na-png"
+  },
+  "hero": {
+    "title": "Konwerter JPG na PNG – zachowaj pełną jakość obrazu",
+    "description": "Zamień pliki JPG na bezstratny format PNG. Dodaj pliki i pobierz obrazy w formacie PNG. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-jpg-na-png",
+      "label": "Konwerter JPG na PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter JPG na PNG – darmowy, bez limitu plików",
+      "alternateName": ["Zamiana JPG na PNG online", "Konwersja JPG do PNG", "Zmiana formatu JPG na PNG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Darmowy konwerter JPG na PNG online. Zamień pliki JPG na bezstratny PNG w przeglądarce. Bez limitu plików i rejestracji.",
+      "featureList": ["Konwersja JPG do PNG", "Konwersja wielu plików jednocześnie", "Podgląd rozmiaru przed i po konwersji", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić JPG na PNG online",
+      "description": "Instrukcja konwersji plików JPG na format PNG za pomocą darmowego narzędzia online.",
+      "steps": [
+        {
+          "name": "Dodaj pliki JPG",
+          "text": "Przeciągnij pliki JPG na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Uruchom konwersję",
+          "text": "Kliknij przycisk Konwertuj. Narzędzie przetworzy wszystkie pliki w kolejce."
+        },
+        {
+          "name": "Pobierz pliki PNG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować JPG na PNG?",
+      "html": "<p class=\"text-mid mb-4\">JPG to format stratny — przy każdym zapisie obraz traci część szczegółów. PNG to format bezstratny, który zachowuje pełną jakość pikseli. Konwersja JPG na PNG zatrzymuje dalszą degradację jakości i pozwala edytować obraz bez kolejnych strat.</p><p class=\"text-mid mb-4\">Format PNG obsługuje przezroczystość (kanał alfa), co jest niezbędne przy tworzeniu grafik nakładanych na inne elementy — na przykład logo na kolorowym tle, ikony w aplikacjach czy elementy interfejsu użytkownika.</p><p class=\"text-mid\">Konwersja JPG na PNG nie przywróci szczegółów utraconych podczas kompresji JPG. Obraz będzie miał taką samą jakość wizualną jak oryginał JPG, ale w formacie bezstratnym — kolejne edycje i zapisy nie spowodują dalszej degradacji.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JPG na PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować JPG na PNG?",
+      "description": "Konwersja JPG na PNG zajmuje kilka sekund:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dodaj pliki JPG",
+          "description": "Przeciągnij pliki JPG na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Uruchom konwersję",
+          "description": "Kliknij przycisk Konwertuj. Format PNG jest bezstratny, więc nie ma suwaka jakości — obraz zachowuje pełną jakość.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz PNG",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować JPG na PNG?",
+      "description": "Konwersja JPG na PNG jest przydatna w następujących sytuacjach:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBrushLine",
+          "title": "Dalsza edycja graficzna",
+          "description": "Programy graficzne lepiej radzą sobie z formatem PNG. Konwersja przed edycją zapobiega dalszej utracie jakości przy kolejnych zapisach."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Elementy interfejsu",
+          "description": "Ikony, przyciski i elementy UI wymagają precyzyjnych krawędzi. PNG zachowuje ostre kontury bez artefaktów kompresji JPG."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Grafiki z tekstem",
+          "description": "Tekst na obrazie w formacie JPG ma widoczne artefakty wokół liter. PNG zachowuje ostre krawędzie tekstu."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty i prezentacje",
+          "description": "Programy biurowe (Word, PowerPoint, Google Docs) lepiej obsługują PNG — bez dodatkowej rekompresji przy wstawianiu."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter JPG na PNG?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
+        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę obrazów JPG naraz." },
+        { "icon": "RiSpeedLine", "title": "Bezstratna konwersja", "description": "Obraz wynikowy PNG zachowuje pełną jakość oryginału JPG. Kolejne edycje i zapisy nie spowodują dalszej degradacji." },
+        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji JPG na PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy konwersja JPG na PNG poprawia jakość obrazu?",
+          "answer": "Nie. Konwersja zmienia format pliku, ale nie przywraca szczegółów utraconych podczas kompresji JPG. Obraz będzie wyglądał tak samo jak oryginał JPG, ale w formacie bezstratnym — kolejne edycje nie spowodują dalszej degradacji."
+        },
+        {
+          "question": "Dlaczego plik PNG jest większy niż JPG?",
+          "answer": "PNG to format bezstratny, który zapisuje każdy piksel bez kompresji stratnej. Dlatego pliki PNG są zwykle 3–10 razy większe niż JPG. To normalne zachowanie — zyskujesz jakość kosztem rozmiaru."
+        },
+        {
+          "question": "Czy PNG obsługuje przezroczystość?",
+          "answer": "Tak. PNG obsługuje kanał alfa (przezroczystość). Jednak przy konwersji z JPG obraz nie będzie miał przezroczystości, ponieważ JPG jej nie obsługuje — tło pozostanie takie, jakie było w oryginale."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików naraz?",
+          "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JPG na PNG – Arteon",
+      "defaultSubject": "Feedback: Konwerter JPG na PNG"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

@@ -490,15 +490,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Potrzebujesz wizytówek lub ulotek z kodem QR?",
-    "description": "Projektujemy wizytówki, ulotki, katalogi i inne materiały drukowane z kodami QR. Zadbamy o spójną identyfikację wizualną i przygotowanie do druku.",
-    "btnOne": "Sprawdź ofertę projektów graficznych",
-    "btnOneLink": "/uslugi/projekty-graficzne",
-    "btnTwo": "Skontaktuj się z nami",
-    "btnTwoLink": "/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

@@ -473,15 +473,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Hai bisogno di contenuti professionali per il tuo sito?",
-    "description": "Scriviamo testi che si posizionano bene su Google e convincono i visitatori ad agire. Descrizioni di servizi, articoli blog e contenuti web.",
-    "btnOne": "I nostri servizi",
-    "btnOneLink": "/it/contatti",
-    "btnTwo": "Contattaci",
-    "btnTwoLink": "/it/contatti",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

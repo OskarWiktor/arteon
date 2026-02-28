@@ -470,15 +470,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Besoin de contenus professionnels pour votre site ?",
-    "description": "Nous rédigeons des textes qui se positionnent sur Google et incitent les visiteurs à agir. Descriptions de services, articles de blog et contenus web.",
-    "btnOne": "Nos services",
-    "btnOneLink": "/fr/contact",
-    "btnTwo": "Nous contacter",
-    "btnTwoLink": "/fr/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

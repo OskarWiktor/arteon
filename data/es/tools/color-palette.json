@@ -388,15 +388,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "¿Necesitas una identidad visual para tu marca?",
-    "description": "Diseñamos logotipos, sistemas de color y materiales corporativos — desde tarjetas de visita hasta plantillas para redes sociales.",
-    "btnOne": "Nuestros servicios",
-    "btnOneLink": "/es/contacto",
-    "btnTwo": "Contáctanos",
-    "btnTwoLink": "/es/contacto",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

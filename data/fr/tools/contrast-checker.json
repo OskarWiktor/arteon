@@ -475,15 +475,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Besoin d'un site web accessible ?",
-    "description": "Nous concevons des sites pour tous les utilisateurs — contraste de couleurs adapté, typographie lisible et structure logique. La loi RGAA impose l'accessibilité numérique.",
-    "btnOne": "Nos services",
-    "btnOneLink": "/fr/contact",
-    "btnTwo": "Nous contacter",
-    "btnTwoLink": "/fr/contact",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

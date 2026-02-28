@@ -383,15 +383,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Behöver du en enhetlig visuell identitet?",
-    "description": "Vi designar logotyper, färgsystem och varumärkesmaterial — från visitkort till mallar för sociala medier.",
-    "btnOne": "Våra tjänster",
-    "btnOneLink": "/sv/kontakt",
-    "btnTwo": "Kontakta oss",
-    "btnTwoLink": "/sv/kontakt",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }

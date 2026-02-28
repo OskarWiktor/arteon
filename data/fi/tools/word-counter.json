@@ -475,15 +475,5 @@
       "type": "gap",
       "size": "sm"
     }
-  ],
-  "cta": {
-    "title": "Tarvitsetko ammattimaista sisältöä verkkosivuillesi?",
-    "description": "Kirjoitamme tekstejä, jotka sijoittuvat hyvin Googlessa ja vakuuttavat kävijät toimimaan. Palvelukuvaukset, blogiartikkelit ja verkkosisältö.",
-    "btnOne": "Palvelumme",
-    "btnOneLink": "/fi/yhteystiedot",
-    "btnTwo": "Ota yhteyttä",
-    "btnTwoLink": "/fi/yhteystiedot",
-    "backgroundImage": "/assets/arteon-logo-on-mockup.webp",
-    "overlay": "black"
-  }
+  ]
 }
