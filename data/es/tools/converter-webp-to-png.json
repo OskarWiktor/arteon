@@ -1,0 +1,108 @@
+{
+  "toolKey": "webpToPng",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor WebP a PNG – conversión sin pérdida gratis",
+    "description": "Convierte imágenes WebP a PNG sin pérdida. Conversión local, nada se envía al servidor.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-webp-a-png"
+  },
+  "hero": {
+    "title": "Convertidor WebP a PNG – salida sin pérdida, compatibilidad total",
+    "description": "Convierte archivos WebP a PNG sin pérdida. Añade imágenes, convierte al instante y descarga.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-webp-a-png",
+      "label": "Convertidor WebP a PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor WebP a PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convierte imágenes WebP a PNG sin pérdida. Conversión local, nada se envía al servidor.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertidor WebP a PNG – salida sin pérdida, compatibilidad total",
+      "description": "Convierte imágenes WebP a PNG sin pérdida. Conversión local, nada se envía al servidor.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Por qué convertir WebP a PNG?",
+      "html": "<p class=\"text-mid mb-4\">PNG es un formato sin pérdida universalmente compatible. La conversión es útil cuando necesitas editar imágenes en herramientas que no soportan WebP o compartir archivos con destinatarios que usan software antiguo.</p><p class=\"text-mid\">PNG preserva la transparencia. Si el WebP original tenía canal alfa, el PNG lo conservará.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor WebP a PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertidor WebP a PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Los archivos no salen de tu ordenador. La conversión ocurre en el navegador."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sin límite de archivos",
+          "description": "Convierte tantas imágenes como necesites. Todos los archivos se procesan en secuencia."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Procesamiento instantáneo",
+          "description": "La conversión ocurre de forma nativa en tu navegador. Resultados en segundos."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Descarga con un clic",
+          "description": "Descarga archivos individualmente o todos a la vez."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor WebP a PNG – Arteon",
+      "defaultSubject": "Feedback: Convertidor WebP a PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

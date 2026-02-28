@@ -1,0 +1,108 @@
+{
+  "toolKey": "pngToJpg",
+  "locale": "de",
+  "metadata": {
+    "title": "PNG zu JPG Konverter – Bildformat kostenlos ändern",
+    "description": "PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung. Lokale Verarbeitung, kein Server-Upload.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/png-zu-jpg-konverter"
+  },
+  "hero": {
+    "title": "PNG zu JPG Konverter – Bildgröße ohne Qualitätsverlust reduzieren",
+    "description": "Wandeln Sie PNG-Dateien in JPG um und reduzieren Sie die Dateigröße. Dateien hinzufügen, Qualität einstellen und herunterladen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/png-zu-jpg-konverter",
+      "label": "PNG zu JPG Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PNG zu JPG Konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung. Lokale Verarbeitung, kein Server-Upload.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "PNG zu JPG Konverter – Bildgröße ohne Qualitätsverlust reduzieren",
+      "description": "PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung. Lokale Verarbeitung, kein Server-Upload.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Warum PNG in JPG umwandeln?",
+      "html": "<p class=\"text-mid mb-4\">PNG ist ein verlustfreies Format mit voller Qualität und Transparenz-Unterstützung. Allerdings sind PNG-Dateien deutlich größer als JPG — ein 3000×2000 Pixel Foto wiegt als PNG 8–15 MB, als JPG bei 85% nur 0,5–1,5 MB.</p><p class=\"text-mid mb-4\">JPG komprimiert Bilder durch Entfernung nicht wahrnehmbarer Details. Bei 80–85% ist der visuelle Unterschied praktisch unsichtbar. JPG wird von allen Programmen, Browsern und Plattformen unterstützt.</p><p class=\"text-mid\">Die Konvertierung ist sinnvoll, wenn das Bild keine Transparenz benötigt: Fotos, Screenshots, E-Mail-Anhänge oder Online-Formulare mit Größenlimit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG zu JPG Konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "PNG zu JPG Konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Vollständige Privatsphäre",
+          "description": "Dateien verlassen Ihren Computer nicht. Die Konvertierung findet im Browser statt."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ohne Dateilimit",
+          "description": "Konvertieren Sie so viele Bilder wie nötig. Alle Dateien werden nacheinander verarbeitet."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Sofortige Verarbeitung",
+          "description": "Die Konvertierung erfolgt nativ in Ihrem Browser. Ergebnisse in Sekunden."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Ein-Klick-Download",
+          "description": "Laden Sie Dateien einzeln oder alle auf einmal herunter."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten ein Feature vorschlagen? Schreiben Sie uns — wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG zu JPG Konverter – Arteon",
+      "defaultSubject": "Feedback: PNG zu JPG Konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

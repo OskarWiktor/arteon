@@ -1,0 +1,77 @@
+{
+  "toolKey": "pngToWebpSimple",
+  "locale": "nl",
+  "metadata": {
+    "title": "PNG naar WebP converter – PNG WebP",
+    "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/png-naar-webp-converter"
+  },
+  "hero": {
+    "title": "PNG naar WebP converter",
+    "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/png-naar-webp-converter",
+      "label": "PNG naar WebP converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PNG naar WebP converter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "PNG naar WebP converter",
+      "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "PNG naar WebP converter",
+      "html": "<p class=\"text-mid\">Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG naar WebP converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG naar WebP converter – Arteon",
+      "defaultSubject": "Feedback: PNG naar WebP converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

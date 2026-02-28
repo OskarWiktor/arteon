@@ -1,0 +1,127 @@
+{
+  "toolKey": "webpToJpg",
+  "locale": "en",
+  "metadata": {
+    "title": "WebP to JPG converter \u2013 make WebP universally compatible",
+    "description": "Convert WebP images to JPG in your browser. No file limits, no signup, no uploads. Get universally compatible JPG files instantly.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/webp-to-jpg-converter"
+  },
+  "hero": {
+    "title": "WebP to JPG converter \u2013 universal compatibility in one click",
+    "description": "Convert WebP files to JPG that works everywhere. Add images, convert in your browser, and download. No server uploads, no registration.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/en/tools", "label": "Tools" },
+    "third": { "href": "/en/tools/webp-to-jpg-converter", "label": "WebP to JPG converter" }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP to JPG converter \u2013 free, unlimited files",
+      "alternateName": ["WebP to JPEG converter", "Convert WebP to JPG online", "Change WebP to JPG", "Free WebP to JPG tool"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Free online WebP to JPG converter. Transform WebP images to universally compatible JPG in your browser. No uploads, no limits, no registration.",
+      "featureList": ["WebP to JPG conversion", "Adjustable quality slider (60\u201395%)", "Batch conversion", "File size comparison", "Individual or bulk download", "100% local browser processing"]
+    },
+    "howTo": {
+      "name": "How to convert WebP to JPG online",
+      "description": "Step-by-step guide to converting WebP files to JPG format.",
+      "steps": [
+        { "name": "Add WebP files", "text": "Drag WebP files onto the drop zone or click to browse. Multiple files are supported." },
+        { "name": "Set JPG quality", "text": "Adjust the quality slider (60\u201395%). Default 85% balances size and visual fidelity." },
+        { "name": "Download JPG files", "text": "Download individually or all at once. Each file shows original and output size." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert WebP to JPG?",
+      "html": "<p class=\"text-mid mb-4\">WebP is a modern image format developed by Google that offers excellent compression. However, not every application supports WebP \u2014 older image editors, some email clients, and certain document workflows still expect JPG or PNG files.</p><p class=\"text-mid mb-4\">Converting WebP to JPG gives you a universally compatible image that opens in every program, browser, and operating system. JPG is the most widely supported photo format and is accepted by virtually every platform.</p><p class=\"text-mid mb-4\">Common reasons to convert include: uploading to platforms that reject WebP, attaching images to emails, inserting photos into documents, or sharing with recipients whose software does not handle WebP.</p><p class=\"text-mid\">This converter runs 100% in your browser. Files are never sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP to JPG converter \u2013 Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert WebP to JPG",
+      "description": "Three quick steps:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Add WebP files", "description": "Drag your WebP images onto the upload area or click to select them. No file limit.", "icon": "RiUploadLine" },
+        { "title": "2. Set quality", "description": "Choose the JPG quality (default 85%). Lower means smaller files, higher means sharper images.", "icon": "RiEqualizerLine" },
+        { "title": "3. Download JPG", "description": "Once done, download each file or all at once. Size comparison is shown for every file.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert WebP to JPG?",
+      "description": "Real-world scenarios where JPG is the better choice:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiMailLine",
+          "title": "Email attachments",
+          "description": "Some email clients display WebP as a generic download. Converting to JPG ensures inline previews across all email apps."
+        },
+        { "icon": "RiFileTextLine", "title": "Document workflows", "description": "Word, PowerPoint, and PDF tools may not embed WebP natively. JPG is universally supported in office documents." },
+        { "icon": "RiPrinterLine", "title": "Printing", "description": "Print shops and consumer printers generally expect JPG or TIFF. Converting WebP to JPG avoids compatibility issues." },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Sharing with others",
+          "description": "Recipients using older devices or software may not be able to open WebP files. JPG guarantees that everyone can view the image."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this WebP to JPG converter different?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Complete privacy", "description": "Files stay on your device. Conversion uses the browser Canvas API \u2014 nothing is uploaded." },
+        { "icon": "RiInfinityFill", "title": "No file limit", "description": "Convert as many WebP images as you need in a single session." },
+        { "icon": "RiSpeedLine", "title": "Quality control", "description": "Fine-tune JPG quality with a slider and see the output size in real time." },
+        { "icon": "RiDownloadLine", "title": "Bulk download", "description": "Download all converted files with one click." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about WebP to JPG conversion",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Does converting WebP to JPG lose quality?",
+          "answer": "Some quality loss occurs because JPG is a lossy format. At 80\u201385% quality the difference is negligible. You can adjust the slider from 60% to 95%."
+        },
+        {
+          "question": "Why not keep images in WebP?",
+          "answer": "WebP offers better compression, but some apps, email clients, and print workflows do not support it. JPG is the safest choice for universal compatibility."
+        },
+        { "question": "Can I convert multiple files at once?", "answer": "Yes. Add as many files as you like \u2014 there is no limit. All images are converted in sequence." },
+        { "question": "Are my files uploaded to a server?", "answer": "No. Everything happens locally in your browser. Files never leave your device." },
+        { "question": "What about WebP animations?", "answer": "This tool converts the first frame of an animated WebP to a static JPG. For animated images, consider converting to GIF instead." },
+        { "question": "What is the maximum file size?", "answer": "Individual files up to 100 MB are supported." },
+        { "question": "Can I convert JPG back to WebP?", "answer": "Yes. Use our <a href=\"/en/tools/jpg-to-webp-converter\">JPG to WebP converter</a> to switch back." },
+        { "question": "Does this work on mobile?", "answer": "Yes, though we recommend a desktop or laptop for the best experience." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message \u2014 we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP to JPG converter \u2013 Arteon",
+      "defaultSubject": "Feedback: WebP to JPG converter"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Explore more free tools" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

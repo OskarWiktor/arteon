@@ -1,0 +1,77 @@
+{
+  "toolKey": "bmpToJpg",
+  "locale": "nl",
+  "metadata": {
+    "title": "BMP naar JPG converter – BMP JPG",
+    "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/bmp-naar-jpg-converter"
+  },
+  "hero": {
+    "title": "BMP naar JPG converter",
+    "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/bmp-naar-jpg-converter",
+      "label": "BMP naar JPG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP naar JPG converter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "BMP naar JPG converter",
+      "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "BMP naar JPG converter",
+      "html": "<p class=\"text-mid\">Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP naar JPG converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP naar JPG converter – Arteon",
+      "defaultSubject": "Feedback: BMP naar JPG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

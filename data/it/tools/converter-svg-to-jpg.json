@@ -1,0 +1,77 @@
+{
+  "toolKey": "svgToJpg",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore SVG in JPG – SVG JPG",
+    "description": "Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-svg-in-jpg"
+  },
+  "hero": {
+    "title": "Convertitore SVG in JPG",
+    "description": "Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-svg-in-jpg",
+      "label": "Convertitore SVG in JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore SVG in JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertitore SVG in JPG",
+      "description": "Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertitore SVG in JPG",
+      "html": "<p class=\"text-mid\">Converti grafiche SVG in JPG compatto. File più piccolo, compatibilità totale.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore SVG in JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore SVG in JPG – Arteon",
+      "defaultSubject": "Feedback: Convertitore SVG in JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

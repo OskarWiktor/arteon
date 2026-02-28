@@ -1,0 +1,108 @@
+{
+  "toolKey": "bmpToPng",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor BMP a PNG – compresión sin pérdida gratis",
+    "description": "Convierte imágenes BMP a PNG sin pérdida. Conserva la calidad con menor tamaño.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-bmp-a-png"
+  },
+  "hero": {
+    "title": "Convertidor BMP a PNG – conserva la calidad, reduce el tamaño",
+    "description": "Convierte imágenes BMP sin comprimir a PNG sin pérdida. Añade archivos, convierte y descarga.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-bmp-a-png",
+      "label": "Convertidor BMP a PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor BMP a PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convierte imágenes BMP a PNG sin pérdida. Conserva la calidad con menor tamaño.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertidor BMP a PNG – conserva la calidad, reduce el tamaño",
+      "description": "Convierte imágenes BMP a PNG sin pérdida. Conserva la calidad con menor tamaño.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Por qué convertir BMP a PNG?",
+      "html": "<p class=\"text-mid mb-4\">BMP almacena imágenes sin comprimir. PNG usa compresión sin pérdida — preserva cada píxel con un tamaño significativamente menor (50–80% menos que BMP).</p><p class=\"text-mid\">La conversión es ideal cuando necesitas reducir el tamaño sin pérdida de calidad.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor BMP a PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertidor BMP a PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Los archivos no salen de tu ordenador. La conversión ocurre en el navegador."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sin límite de archivos",
+          "description": "Convierte tantas imágenes como necesites. Todos los archivos se procesan en secuencia."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Procesamiento instantáneo",
+          "description": "La conversión ocurre de forma nativa en tu navegador. Resultados en segundos."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Descarga con un clic",
+          "description": "Descarga archivos individualmente o todos a la vez."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor BMP a PNG – Arteon",
+      "defaultSubject": "Feedback: Convertidor BMP a PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToPng",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore JPG in PNG – JPG PNG",
+    "description": "Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-jpg-in-png"
+  },
+  "hero": {
+    "title": "Convertitore JPG in PNG",
+    "description": "Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-jpg-in-png",
+      "label": "Convertitore JPG in PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore JPG in PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertitore JPG in PNG",
+      "description": "Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertitore JPG in PNG",
+      "html": "<p class=\"text-mid\">Converti immagini JPG in PNG senza perdita. Conversione locale nel browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore JPG in PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore JPG in PNG – Arteon",
+      "defaultSubject": "Feedback: Convertitore JPG in PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

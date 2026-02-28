@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToPng",
+  "locale": "fi",
+  "metadata": {
+    "title": "JPG PNG -muunnin – JPG PNG",
+    "description": "Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/jpg-png-muunnin"
+  },
+  "hero": {
+    "title": "JPG PNG -muunnin",
+    "description": "Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/jpg-png-muunnin",
+      "label": "JPG PNG -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG PNG -muunnin",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "JPG PNG -muunnin",
+      "description": "Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "JPG PNG -muunnin",
+      "html": "<p class=\"text-mid\">Muunna JPG-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely selaimessa.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG PNG -muunnin – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG PNG -muunnin – Arteon",
+      "defaultSubject": "Feedback: JPG PNG -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

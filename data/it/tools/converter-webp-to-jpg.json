@@ -1,0 +1,77 @@
+{
+  "toolKey": "webpToJpg",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore WebP in JPG – WebP JPG",
+    "description": "Converti file WebP in JPG compatibile ovunque. Senza limiti, senza registrazione.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-webp-in-jpg"
+  },
+  "hero": {
+    "title": "Convertitore WebP in JPG",
+    "description": "Converti file WebP in JPG compatibile ovunque. Senza limiti, senza registrazione.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-webp-in-jpg",
+      "label": "Convertitore WebP in JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore WebP in JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti file WebP in JPG compatibile ovunque. Senza limiti, senza registrazione.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertitore WebP in JPG",
+      "description": "Converti file WebP in JPG compatibile ovunque. Senza limiti, senza registrazione.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertitore WebP in JPG",
+      "html": "<p class=\"text-mid\">Converti file WebP in JPG compatibile ovunque. Senza limiti, senza registrazione.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore WebP in JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore WebP in JPG – Arteon",
+      "defaultSubject": "Feedback: Convertitore WebP in JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

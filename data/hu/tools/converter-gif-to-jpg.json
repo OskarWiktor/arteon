@@ -1,0 +1,77 @@
+{
+  "toolKey": "gifToJpg",
+  "locale": "hu",
+  "metadata": {
+    "title": "GIF JPG konverter – GIF JPG",
+    "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/gif-jpg-konverter"
+  },
+  "hero": {
+    "title": "GIF JPG konverter",
+    "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/gif-jpg-konverter",
+      "label": "GIF JPG konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "GIF JPG konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "GIF JPG konverter",
+      "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "GIF JPG konverter",
+      "html": "<p class=\"text-mid\">Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF JPG konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF JPG konverter – Arteon",
+      "defaultSubject": "Feedback: GIF JPG konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

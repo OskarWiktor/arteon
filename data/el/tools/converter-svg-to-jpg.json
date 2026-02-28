@@ -1,0 +1,77 @@
+{
+  "toolKey": "svgToJpg",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας SVG σε JPG – SVG JPG",
+    "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-svg-se-jpg"
+  },
+  "hero": {
+    "title": "Μετατροπέας SVG σε JPG",
+    "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-svg-se-jpg",
+      "label": "Μετατροπέας SVG σε JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας SVG σε JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Μετατροπέας SVG σε JPG",
+      "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Μετατροπέας SVG σε JPG",
+      "html": "<p class=\"text-mid\">Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Μετατροπέας SVG σε JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία",
+      "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε; Γράψτε μας — απαντάμε σε 24 ώρες.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Μετατροπέας SVG σε JPG – Arteon",
+      "defaultSubject": "Feedback: Μετατροπέας SVG σε JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ανακαλύψτε περισσότερα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "toolKey": "bmpToPng",
+  "locale": "sv",
+  "metadata": {
+    "title": "BMP till PNG-konverterare – BMP PNG",
+    "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/bmp-till-png-konverterare"
+  },
+  "hero": {
+    "title": "BMP till PNG-konverterare",
+    "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/bmp-till-png-konverterare",
+      "label": "BMP till PNG-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP till PNG-konverterare",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "BMP till PNG-konverterare",
+      "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "BMP till PNG-konverterare",
+      "html": "<p class=\"text-mid\">Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP till PNG-konverterare – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande — vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP till PNG-konverterare – Arteon",
+      "defaultSubject": "Feedback: BMP till PNG-konverterare"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

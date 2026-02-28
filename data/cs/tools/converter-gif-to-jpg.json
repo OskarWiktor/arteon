@@ -1,0 +1,77 @@
+{
+  "toolKey": "gifToJpg",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník GIF na JPG – GIF JPG",
+    "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-gif-na-jpg"
+  },
+  "hero": {
+    "title": "Převodník GIF na JPG",
+    "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-gif-na-jpg",
+      "label": "Převodník GIF na JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník GIF na JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Převodník GIF na JPG",
+      "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Převodník GIF na JPG",
+      "html": "<p class=\"text-mid\">Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník GIF na JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník GIF na JPG – Arteon",
+      "defaultSubject": "Feedback: Převodník GIF na JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

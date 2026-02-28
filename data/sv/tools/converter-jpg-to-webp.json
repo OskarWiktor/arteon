@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToWebpSimple",
+  "locale": "sv",
+  "metadata": {
+    "title": "JPG till WebP-konverterare – JPG WebP",
+    "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/jpg-till-webp-konverterare"
+  },
+  "hero": {
+    "title": "JPG till WebP-konverterare",
+    "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/jpg-till-webp-konverterare",
+      "label": "JPG till WebP-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG till WebP-konverterare",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "JPG till WebP-konverterare",
+      "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "JPG till WebP-konverterare",
+      "html": "<p class=\"text-mid\">Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG till WebP-konverterare – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande — vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG till WebP-konverterare – Arteon",
+      "defaultSubject": "Feedback: JPG till WebP-konverterare"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

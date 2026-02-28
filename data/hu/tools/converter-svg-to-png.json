@@ -1,0 +1,77 @@
+{
+  "toolKey": "svgToPng",
+  "locale": "hu",
+  "metadata": {
+    "title": "SVG PNG konverter – SVG PNG",
+    "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/svg-png-konverter"
+  },
+  "hero": {
+    "title": "SVG PNG konverter",
+    "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/svg-png-konverter",
+      "label": "SVG PNG konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG PNG konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "SVG PNG konverter",
+      "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "SVG PNG konverter",
+      "html": "<p class=\"text-mid\">SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG PNG konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG PNG konverter – Arteon",
+      "defaultSubject": "Feedback: SVG PNG konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

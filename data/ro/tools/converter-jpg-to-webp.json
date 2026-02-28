@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToWebpSimple",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor JPG în WebP – JPG WebP",
+    "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-jpg-in-webp"
+  },
+  "hero": {
+    "title": "Convertor JPG în WebP",
+    "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-jpg-in-webp",
+      "label": "Convertor JPG în WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor JPG în WebP",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertor JPG în WebP",
+      "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertor JPG în WebP",
+      "html": "<p class=\"text-mid\">Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertor JPG în WebP – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajută-ne să îmbunătățim instrumentele",
+      "description": "Ai o idee, ai găsit un bug sau vrei să sugerezi o funcție? Trimite-ne un mesaj — răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertor JPG în WebP – Arteon",
+      "defaultSubject": "Feedback: Convertor JPG în WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descoperă mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

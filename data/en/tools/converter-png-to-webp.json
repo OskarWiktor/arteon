@@ -1,0 +1,223 @@
+{
+  "toolKey": "pngToWebpSimple",
+  "locale": "en",
+  "metadata": {
+    "title": "PNG to WebP converter – smaller files, keep transparency",
+    "description": "Convert PNG images to WebP in your browser. Smaller files while preserving transparency. No signup, no server uploads.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/png-to-webp-converter"
+  },
+  "hero": {
+    "title": "PNG to WebP converter – compress without losing transparency",
+    "description": "Convert PNG graphics to WebP for smaller files with full transparency support. Add files, set quality, and download.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/png-to-webp-converter",
+      "label": "PNG to WebP converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PNG to WebP converter – free, unlimited files",
+      "alternateName": ["Convert PNG to WebP online", "Change PNG to WebP", "PNG to WebP with transparency"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Free online PNG to WebP converter. Reduce image size while preserving transparency. No uploads, no registration.",
+      "featureList": ["PNG to WebP conversion", "Transparency preservation", "Adjustable quality (60–95%)", "Batch conversion", "Individual or bulk download", "100% local processing"]
+    },
+    "howTo": {
+      "name": "How to convert PNG to WebP online",
+      "description": "Step-by-step guide to converting PNG files to WebP.",
+      "steps": [
+        {
+          "name": "Add PNG files",
+          "text": "Drag PNG files onto the drop zone or click to browse. Multiple files supported."
+        },
+        {
+          "name": "Set WebP quality",
+          "text": "Adjust the quality slider (60–95%). Default 80% balances size and quality."
+        },
+        {
+          "name": "Download WebP files",
+          "text": "Download files individually or all at once. File sizes shown for comparison."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert PNG to WebP?",
+      "html": "<p class=\"text-mid mb-4\">PNG files are lossless and support transparency, but they can be very large. WebP offers both lossy and lossless compression with transparency support — resulting in files that are significantly smaller than PNG.</p><p class=\"text-mid mb-4\">For web use, WebP is the ideal replacement for PNG. Modern browsers universally support it, and the size savings directly improve page speed and <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">Core Web Vitals</a>.</p><p class=\"text-mid\">This tool requires a desktop browser for WebP encoding. All processing happens locally.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG to WebP converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert PNG to WebP",
+      "description": "Quick steps:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Add PNG files",
+          "description": "Drag your PNG images onto the upload area or click to select them. No limit on files.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Set quality",
+          "description": "Choose the WebP quality level. Lower value = smaller file, higher = sharper image.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Download WebP",
+          "description": "Download each file or grab them all at once. Size comparison shown for every file.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert PNG to WebP?",
+      "description": "Common use cases:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website assets",
+          "description": "Replace PNG logos, icons, and UI graphics with WebP to reduce page weight without losing transparency."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparent graphics",
+          "description": "Unlike JPG, WebP preserves alpha transparency. Perfect for logos on coloured backgrounds."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Page speed",
+          "description": "Smaller images improve load times and Core Web Vitals scores."
+        },
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Storage savings",
+          "description": "WebP files are typically 30–50% smaller than PNG, saving bandwidth and storage."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this PNG to WebP converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "Files never leave your computer. Conversion uses the browser Canvas API — nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No file limit",
+          "description": "Convert as many images as you need. All files processed in sequence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Instant processing",
+          "description": "Conversion happens natively in your browser. Results are ready in seconds."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "One-click download",
+          "description": "Download files individually or all at once with a single click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about PNG to WebP conversion",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Is transparency preserved?",
+          "answer": "Yes. WebP supports alpha-channel transparency just like PNG."
+        },
+        {
+          "question": "How much smaller will the WebP be?",
+          "answer": "Typically 30–50% smaller than PNG. Exact savings depend on image content."
+        },
+        {
+          "question": "Is quality lost?",
+          "answer": "WebP lossy mode discards some detail, but at 80% quality the difference is negligible."
+        },
+        {
+          "question": "Do all browsers support WebP?",
+          "answer": "Yes. All major modern browsers support WebP."
+        },
+        {
+          "question": "Why is this desktop-only?",
+          "answer": "WebP encoding via Canvas API requires desktop browser support."
+        },
+        {
+          "question": "Can I convert multiple files?",
+          "answer": "Yes. No file limit."
+        },
+        {
+          "question": "Are files uploaded to a server?",
+          "answer": "No. Everything runs locally in your browser."
+        },
+        {
+          "question": "What is the maximum file size?",
+          "answer": "Individual files up to 100 MB are supported."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG to WebP converter – Arteon",
+      "defaultSubject": "Feedback: PNG to WebP converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

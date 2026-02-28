@@ -1,0 +1,77 @@
+{
+  "toolKey": "bmpToPng",
+  "locale": "fi",
+  "metadata": {
+    "title": "BMP PNG -muunnin – BMP PNG",
+    "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/bmp-png-muunnin"
+  },
+  "hero": {
+    "title": "BMP PNG -muunnin",
+    "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/bmp-png-muunnin",
+      "label": "BMP PNG -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP PNG -muunnin",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "BMP PNG -muunnin",
+      "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "BMP PNG -muunnin",
+      "html": "<p class=\"text-mid\">Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP PNG -muunnin – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP PNG -muunnin – Arteon",
+      "defaultSubject": "Feedback: BMP PNG -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

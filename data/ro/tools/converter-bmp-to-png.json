@@ -1,0 +1,77 @@
+{
+  "toolKey": "bmpToPng",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor BMP în PNG – BMP PNG",
+    "description": "Convertește imagini BMP în PNG fără pierderi. Calitate păstrată, dimensiune redusă.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-bmp-in-png"
+  },
+  "hero": {
+    "title": "Convertor BMP în PNG",
+    "description": "Convertește imagini BMP în PNG fără pierderi. Calitate păstrată, dimensiune redusă.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-bmp-in-png",
+      "label": "Convertor BMP în PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor BMP în PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertește imagini BMP în PNG fără pierderi. Calitate păstrată, dimensiune redusă.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertor BMP în PNG",
+      "description": "Convertește imagini BMP în PNG fără pierderi. Calitate păstrată, dimensiune redusă.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertor BMP în PNG",
+      "html": "<p class=\"text-mid\">Convertește imagini BMP în PNG fără pierderi. Calitate păstrată, dimensiune redusă.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertor BMP în PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajută-ne să îmbunătățim instrumentele",
+      "description": "Ai o idee, ai găsit un bug sau vrei să sugerezi o funcție? Trimite-ne un mesaj — răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertor BMP în PNG – Arteon",
+      "defaultSubject": "Feedback: Convertor BMP în PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descoperă mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

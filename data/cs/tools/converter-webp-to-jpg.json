@@ -1,0 +1,77 @@
+{
+  "toolKey": "webpToJpg",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník WebP na JPG – WebP JPG",
+    "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-webp-na-jpg"
+  },
+  "hero": {
+    "title": "Převodník WebP na JPG",
+    "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-webp-na-jpg",
+      "label": "Převodník WebP na JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník WebP na JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Převodník WebP na JPG",
+      "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Převodník WebP na JPG",
+      "html": "<p class=\"text-mid\">Převeďte soubory WebP na univerzálně kompatibilní JPG.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník WebP na JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník WebP na JPG – Arteon",
+      "defaultSubject": "Feedback: Převodník WebP na JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

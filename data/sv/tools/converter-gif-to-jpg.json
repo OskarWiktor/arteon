@@ -1,0 +1,77 @@
+{
+  "toolKey": "gifToJpg",
+  "locale": "sv",
+  "metadata": {
+    "title": "GIF till JPG-konverterare – GIF JPG",
+    "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/gif-till-jpg-konverterare"
+  },
+  "hero": {
+    "title": "GIF till JPG-konverterare",
+    "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/gif-till-jpg-konverterare",
+      "label": "GIF till JPG-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "GIF till JPG-konverterare",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "GIF till JPG-konverterare",
+      "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "GIF till JPG-konverterare",
+      "html": "<p class=\"text-mid\">Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF till JPG-konverterare – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande — vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF till JPG-konverterare – Arteon",
+      "defaultSubject": "Feedback: GIF till JPG-konverterare"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

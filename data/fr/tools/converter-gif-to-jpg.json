@@ -1,0 +1,108 @@
+{
+  "toolKey": "gifToJpg",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur GIF en JPG – extrayez une image en JPG gratuitement",
+    "description": "Exportez la première image d'un GIF en JPG compact. Fichier réduit, chargement rapide.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-gif-en-jpg"
+  },
+  "hero": {
+    "title": "Convertisseur GIF en JPG – image compacte de n'importe quel GIF",
+    "description": "Extrayez la première image d'un GIF en JPG. Ajoutez, réglez la qualité et téléchargez.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-gif-en-jpg",
+      "label": "Convertisseur GIF en JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur GIF en JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Exportez la première image d'un GIF en JPG compact. Fichier réduit, chargement rapide.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertisseur GIF en JPG – image compacte de n'importe quel GIF",
+      "description": "Exportez la première image d'un GIF en JPG compact. Fichier réduit, chargement rapide.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir GIF en JPG ?",
+      "html": "<p class=\"text-mid mb-4\">Les fichiers GIF peuvent être étonnamment volumineux. Extraire une image en JPG produit un fichier compact et universellement compatible.</p><p class=\"text-mid\">Note : JPG ne supporte pas la transparence. Les zones transparentes deviennent blanches.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur GIF en JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertisseur GIF en JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Les fichiers ne quittent pas votre ordinateur. La conversion a lieu dans le navigateur."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sans limite de fichiers",
+          "description": "Convertissez autant d'images que nécessaire. Tous les fichiers sont traités en séquence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Traitement instantané",
+          "description": "La conversion est native dans votre navigateur. Résultats en quelques secondes."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Téléchargement en un clic",
+          "description": "Téléchargez les fichiers individuellement ou tous en une fois."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur GIF en JPG – Arteon",
+      "defaultSubject": "Feedback: Convertisseur GIF en JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

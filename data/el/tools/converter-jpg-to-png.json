@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToPng",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας JPG σε PNG – JPG PNG",
+    "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-jpg-se-png"
+  },
+  "hero": {
+    "title": "Μετατροπέας JPG σε PNG",
+    "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-jpg-se-png",
+      "label": "Μετατροπέας JPG σε PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας JPG σε PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Μετατροπέας JPG σε PNG",
+      "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Μετατροπέας JPG σε PNG",
+      "html": "<p class=\"text-mid\">Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Μετατροπέας JPG σε PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία",
+      "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε; Γράψτε μας — απαντάμε σε 24 ώρες.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Μετατροπέας JPG σε PNG – Arteon",
+      "defaultSubject": "Feedback: Μετατροπέας JPG σε PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ανακαλύψτε περισσότερα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

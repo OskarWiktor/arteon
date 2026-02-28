@@ -1,0 +1,215 @@
+{
+  "toolKey": "svgToPng",
+  "locale": "en",
+  "metadata": {
+    "title": "SVG to PNG converter – rasterize vectors free",
+    "description": "Convert SVG vector graphics to raster PNG in your browser. No signup, no uploads. Ideal for documents and social media.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/svg-to-png-converter"
+  },
+  "hero": {
+    "title": "SVG to PNG converter – turn vectors into pixel-perfect images",
+    "description": "Convert SVG files to raster PNG format. Add graphics, convert instantly, and download. Processing happens locally in your browser.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/svg-to-png-converter",
+      "label": "SVG to PNG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG to PNG converter – free, unlimited files",
+      "alternateName": ["SVG to PNG rasterizer", "Convert SVG to PNG online", "Rasterize SVG to PNG", "Free SVG to PNG tool"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Free online SVG to PNG converter. Rasterize SVG vector graphics to PNG images in your browser. No uploads, no limits.",
+      "featureList": ["SVG to PNG rasterization", "High-quality anti-aliased output", "Batch conversion", "File size preview", "Individual or bulk download", "100% local processing"]
+    },
+    "howTo": {
+      "name": "How to convert SVG to PNG online",
+      "description": "Step-by-step guide to converting SVG files to PNG.",
+      "steps": [
+        {
+          "name": "Add SVG files",
+          "text": "Drag SVG files onto the drop zone or click to browse. Multiple files supported."
+        },
+        {
+          "name": "Convert",
+          "text": "Click Convert. Each SVG is re-encoded as PNG in your browser."
+        },
+        {
+          "name": "Download PNG files",
+          "text": "Download files individually or all at once. File sizes shown for comparison."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert SVG to PNG?",
+      "html": "<p class=\"text-mid mb-4\">SVG (Scalable Vector Graphics) is a vector format perfect for logos, icons, and diagrams because it scales without losing clarity. However, many platforms — social media, messaging apps, email clients — do not accept SVG files.</p><p class=\"text-mid mb-4\">PNG is a universally supported raster format. Converting SVG to PNG produces a high-quality image that can be shared, embedded in documents, or uploaded anywhere.</p><p class=\"text-mid\">This converter rasterizes SVG graphics at their native resolution using the browser’s rendering engine, producing clean, anti-aliased PNG output. Everything runs locally — no server uploads.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to PNG converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert SVG to PNG",
+      "description": "Quick steps:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Add SVG files",
+          "description": "Drag your SVG images onto the upload area or click to select them. No limit on files.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Convert",
+          "description": "Click Convert. Each file is processed instantly in your browser.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Download PNG",
+          "description": "Download each file or grab them all at once. Size comparison shown for every file.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert SVG to PNG?",
+      "description": "Common use cases:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShareLine",
+          "title": "Social media",
+          "description": "Facebook, Instagram, and LinkedIn do not accept SVG. Convert to PNG for clean, sharp uploads."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email and messaging",
+          "description": "Most email clients strip SVG attachments. PNG is displayed inline by every major client."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Documents and presentations",
+          "description": "Word, PowerPoint, and Google Slides handle PNG natively. SVG support is inconsistent."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Print materials",
+          "description": "Some print workflows require raster images. Convert SVG to PNG for pixel-perfect prints."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this SVG to PNG converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "Files never leave your computer. Conversion uses the browser Canvas API — nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No file limit",
+          "description": "Convert as many images as you need. All files processed in sequence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Instant processing",
+          "description": "Conversion happens natively in your browser. Results are ready in seconds."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "One-click download",
+          "description": "Download files individually or all at once with a single click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about SVG to PNG conversion",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Does converting SVG to PNG lose quality?",
+          "answer": "SVG is resolution-independent, so the rasterized PNG matches the SVG’s defined dimensions. The output is a high-quality, anti-aliased image."
+        },
+        {
+          "question": "Is transparency preserved?",
+          "answer": "Yes. If the SVG has transparent areas, the PNG will retain alpha-channel transparency."
+        },
+        {
+          "question": "Can I convert multiple files at once?",
+          "answer": "Yes. No file limit — add as many SVGs as you need."
+        },
+        {
+          "question": "Are files uploaded to a server?",
+          "answer": "No. Everything runs locally in your browser."
+        },
+        {
+          "question": "What is the maximum file size?",
+          "answer": "Individual files up to 100 MB are supported."
+        },
+        {
+          "question": "Does this work on mobile?",
+          "answer": "Yes, but we recommend a desktop or laptop for larger files."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to PNG converter – Arteon",
+      "defaultSubject": "Feedback: SVG to PNG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

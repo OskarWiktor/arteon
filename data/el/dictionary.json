@@ -51,10 +51,21 @@
   },
   "skipToContent": "Μετάβαση στο περιεχόμενο",
   "legal": [
-    { "key": "privacy", "href": "/el/politiki-aporritou", "label": "Politiki aporritou" },
-    { "key": "terms", "href": "/el/oroi-chrisis", "label": "Oroi chrisis" }
+    {
+      "key": "privacy",
+      "href": "/el/politiki-aporritou",
+      "label": "Politiki aporritou"
+    },
+    {
+      "key": "terms",
+      "href": "/el/oroi-chrisis",
+      "label": "Oroi chrisis"
+    }
   ],
-  "breadcrumbs": { "home": "Αρχική", "ariaLabel": "πλοήγηση breadcrumbs" },
+  "breadcrumbs": {
+    "home": "Αρχική",
+    "ariaLabel": "πλοήγηση breadcrumbs"
+  },
   "contactForm": {
     "nameLabel": "Ονοματεπώνυμο",
     "namePlaceholder": "Γιάννης Παπαδόπουλος",
@@ -89,9 +100,57 @@
     "otherLabel": "Άλλες",
     "closeModalLabel": "Κλείσιμο"
   },
-  "mobileNav": { "close": "Κλείσιμο", "services": "Υπηρεσίες", "contact": "Επικοινωνία" },
+  "mobileNav": {
+    "close": "Κλείσιμο",
+    "services": "Υπηρεσίες",
+    "contact": "Επικοινωνία"
+  },
   "infoBanner": {
     "text": "Ενημέρωση δημιουργίας υπογραφής email – δείτε τις νέες δυνατότητες",
     "linkText": "εργαλεία"
+  },
+  "imageConverter": {
+    "addFiles": "Προσθήκη αρχείων",
+    "dragDrop": "Σύρετε αρχεία {{format}} εδώ",
+    "clickToSelect": "ή κάντε κλικ για επιλογή αρχείων",
+    "supported": "Υποστηριζόμενα: {{format}}",
+    "setQuality": "Ρυθμίστε την ποιότητα {{format}}",
+    "qualityHelper": "Χαμηλότερη τιμή = μικρότερα αρχεία, υψηλότερη = καλύτερη ποιότητα. 80–85% είναι καλή ισορροπία.",
+    "convertAndDownload": "Μετατροπή και λήψη",
+    "inQueue": "Στην ουρά:",
+    "files": "αρχεία",
+    "completed": "Ολοκληρώθηκε",
+    "converting": "Μετατροπή…",
+    "convert": "Μετατροπή",
+    "downloadAll": "Λήψη όλων",
+    "clearAll": "Εκκαθάριση",
+    "totalInput": "Συνολικό μέγεθος εισόδου:",
+    "totalOutput": "Συνολικό μέγεθος εξόδου:",
+    "saved": "Εξοικονόμηση:",
+    "increased": "Αύξηση:",
+    "less": "λιγότερο",
+    "more": "περισσότερο",
+    "queueAriaLabel": "Λίστα αρχείων στην ουρά",
+    "queueHeading": "Αρχεία στην ουρά",
+    "readyCount": "Έτοιμα",
+    "pendingCount": "Εκκρεμούν",
+    "emptyState": "Προσθέστε αρχεία {{source}} αριστερά για να ξεκινήσετε τη μετατροπή σε {{target}}.",
+    "statusPending": "Αναμονή",
+    "statusProcessing": "Επεξεργασία…",
+    "statusDone": "Έτοιμο",
+    "statusError": "Σφάλμα",
+    "before": "Πριν:",
+    "after": "Μετά:",
+    "download": "Λήψη",
+    "remove": "Αφαίρεση",
+    "formatSelectorTo": "σε",
+    "formatChangeConfirm": "Η αλλαγή μορφής θα αφαιρέσει αρχεία από την ουρά. Συνέχεια;",
+    "errorFileLoad": "Αποτυχία φόρτωσης αρχείου.",
+    "errorImageLoad": "Αποτυχία φόρτωσης εικόνας.",
+    "errorCanvas": "Το canvas δεν υποστηρίζεται σε αυτό το πρόγραμμα περιήγησης.",
+    "errorGeneration": "Αποτυχία δημιουργίας αρχείου {{format}}.",
+    "errorTooLarge": "Το αρχείο είναι πολύ μεγάλο (μέγ. 100 MB).",
+    "errorWrongFormat": "Προσθέστε αρχεία {{format}} — άλλες μορφές παραλείπονται.",
+    "errorNoFiles": "Προσθέστε τουλάχιστον ένα αρχείο {{format}}."
   }
 }

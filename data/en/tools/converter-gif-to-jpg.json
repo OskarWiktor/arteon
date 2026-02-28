@@ -1,0 +1,215 @@
+{
+  "toolKey": "gifToJpg",
+  "locale": "en",
+  "metadata": {
+    "title": "GIF to JPG converter – extract frame as JPG free",
+    "description": "Convert GIF images to compact JPG in your browser. Extract the first frame, set quality, and download. No signup, no uploads.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/gif-to-jpg-converter"
+  },
+  "hero": {
+    "title": "GIF to JPG converter – compact static image from any GIF",
+    "description": "Extract the first frame of a GIF as a JPG. Add files, set quality, and download. Runs locally in your browser.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/gif-to-jpg-converter",
+      "label": "GIF to JPG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "GIF to JPG converter – free, unlimited files",
+      "alternateName": ["Convert GIF to JPG online", "GIF frame to JPG", "Extract GIF as JPEG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Free online GIF to JPG converter. Extract the first frame of a GIF as compact JPG. No uploads, no limits.",
+      "featureList": ["GIF to JPG conversion", "Adjustable quality (60–95%)", "First-frame extraction", "Batch conversion", "Individual or bulk download", "100% local processing"]
+    },
+    "howTo": {
+      "name": "How to convert GIF to JPG online",
+      "description": "Step-by-step guide to converting GIF files to JPG.",
+      "steps": [
+        {
+          "name": "Add GIF files",
+          "text": "Drag GIF files onto the drop zone or click to browse. Multiple files supported."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust the quality slider (60–95%). Default 85% balances size and quality."
+        },
+        {
+          "name": "Download JPG files",
+          "text": "Download files individually or all at once. File sizes shown for comparison."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert GIF to JPG?",
+      "html": "<p class=\"text-mid mb-4\">GIF files can be surprisingly large, especially animated ones. Extracting a single frame as JPG produces a compact, universally compatible image.</p><p class=\"text-mid mb-4\">JPG is the most widely supported photo format. Converting GIF to JPG is useful for email attachments, document inserts, and any situation where a small static image is needed.</p><p class=\"text-mid\">Note: JPG does not support transparency. Transparent GIF areas become white. If you need transparency, use our <a href=\"/en/tools/gif-to-png-converter\">GIF to PNG converter</a>.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF to JPG converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert GIF to JPG",
+      "description": "Quick steps:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Add GIF files",
+          "description": "Drag your GIF images onto the upload area or click to select them. No limit on files.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Set quality",
+          "description": "Choose the JPG quality level. Lower value = smaller file, higher = sharper image.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Download JPG",
+          "description": "Download each file or grab them all at once. Size comparison shown for every file.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert GIF to JPG?",
+      "description": "Common use cases:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Static previews",
+          "description": "Create compact preview images from animated GIFs for listings or thumbnails."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email",
+          "description": "Email clients may block or mishandle GIFs. A JPG attachment is universally safe."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Documents",
+          "description": "Insert a lightweight JPG from a GIF into Word, PDF, or presentations."
+        },
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Storage",
+          "description": "Replace large animated GIFs with small static JPG frames to save disk space."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this GIF to JPG converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "Files never leave your computer. Conversion uses the browser Canvas API — nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No file limit",
+          "description": "Convert as many images as you need. All files processed in sequence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Instant processing",
+          "description": "Conversion happens natively in your browser. Results are ready in seconds."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "One-click download",
+          "description": "Download files individually or all at once with a single click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about GIF to JPG conversion",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Does this convert the animation?",
+          "answer": "No. Only the first frame is extracted and converted to a static JPG."
+        },
+        {
+          "question": "Is quality lost?",
+          "answer": "JPG is lossy, but at 85% the result looks excellent. Quality is adjustable from 60% to 95%."
+        },
+        {
+          "question": "Is transparency preserved?",
+          "answer": "No. JPG does not support transparency. Transparent areas become white."
+        },
+        {
+          "question": "Can I convert multiple files at once?",
+          "answer": "Yes. No file limit."
+        },
+        {
+          "question": "Are files uploaded to a server?",
+          "answer": "No. Everything runs locally in your browser."
+        },
+        {
+          "question": "What is the maximum file size?",
+          "answer": "Individual files up to 100 MB are supported."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF to JPG converter – Arteon",
+      "defaultSubject": "Feedback: GIF to JPG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

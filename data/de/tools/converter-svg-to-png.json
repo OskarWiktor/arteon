@@ -1,0 +1,108 @@
+{
+  "toolKey": "svgToPng",
+  "locale": "de",
+  "metadata": {
+    "title": "SVG zu PNG Konverter – Vektoren kostenlos rastern",
+    "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/svg-zu-png-konverter"
+  },
+  "hero": {
+    "title": "SVG zu PNG Konverter – Vektoren in pixelgenaue Bilder umwandeln",
+    "description": "Wandeln Sie SVG-Dateien in PNG-Format um. Grafiken hinzufügen, konvertieren und herunterladen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/svg-zu-png-konverter",
+      "label": "SVG zu PNG Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG zu PNG Konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "SVG zu PNG Konverter – Vektoren in pixelgenaue Bilder umwandeln",
+      "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Warum SVG in PNG umwandeln?",
+      "html": "<p class=\"text-mid mb-4\">SVG ist ein Vektorformat ideal für Logos und Icons, aber viele Plattformen — Social Media, E-Mail, Messenger — akzeptieren keine SVG-Dateien.</p><p class=\"text-mid\">PNG ist ein universell unterstütztes Rasterformat. Die Konvertierung erzeugt ein hochwertiges Bild, das überall geteilt und hochgeladen werden kann.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG zu PNG Konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "SVG zu PNG Konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Vollständige Privatsphäre",
+          "description": "Dateien verlassen Ihren Computer nicht. Die Konvertierung findet im Browser statt."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ohne Dateilimit",
+          "description": "Konvertieren Sie so viele Bilder wie nötig. Alle Dateien werden nacheinander verarbeitet."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Sofortige Verarbeitung",
+          "description": "Die Konvertierung erfolgt nativ in Ihrem Browser. Ergebnisse in Sekunden."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Ein-Klick-Download",
+          "description": "Laden Sie Dateien einzeln oder alle auf einmal herunter."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten ein Feature vorschlagen? Schreiben Sie uns — wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG zu PNG Konverter – Arteon",
+      "defaultSubject": "Feedback: SVG zu PNG Konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

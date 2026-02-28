@@ -1,0 +1,77 @@
+{
+  "toolKey": "gifToPng",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník GIF na PNG – GIF PNG",
+    "description": "Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-gif-na-png"
+  },
+  "hero": {
+    "title": "Převodník GIF na PNG",
+    "description": "Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-gif-na-png",
+      "label": "Převodník GIF na PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník GIF na PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Převodník GIF na PNG",
+      "description": "Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Převodník GIF na PNG",
+      "html": "<p class=\"text-mid\">Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník GIF na PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník GIF na PNG – Arteon",
+      "defaultSubject": "Feedback: Převodník GIF na PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

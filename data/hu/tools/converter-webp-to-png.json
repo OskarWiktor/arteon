@@ -1,0 +1,77 @@
+{
+  "toolKey": "webpToPng",
+  "locale": "hu",
+  "metadata": {
+    "title": "WebP PNG konverter – WebP PNG",
+    "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/webp-png-konverter"
+  },
+  "hero": {
+    "title": "WebP PNG konverter",
+    "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/webp-png-konverter",
+      "label": "WebP PNG konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP PNG konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "WebP PNG konverter",
+      "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "WebP PNG konverter",
+      "html": "<p class=\"text-mid\">WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP PNG konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP PNG konverter – Arteon",
+      "defaultSubject": "Feedback: WebP PNG konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

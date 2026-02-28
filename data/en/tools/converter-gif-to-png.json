@@ -1,0 +1,215 @@
+{
+  "toolKey": "gifToPng",
+  "locale": "en",
+  "metadata": {
+    "title": "GIF to PNG converter – extract static frame free",
+    "description": "Convert GIF images to lossless PNG in your browser. Extract the first frame as a high-quality static image. No signup, no uploads.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/gif-to-png-converter"
+  },
+  "hero": {
+    "title": "GIF to PNG converter – static image from any GIF",
+    "description": "Extract the first frame of a GIF as a lossless PNG. Add files, convert instantly, and download. Runs locally in your browser.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/gif-to-png-converter",
+      "label": "GIF to PNG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "GIF to PNG converter – free, unlimited files",
+      "alternateName": ["Convert GIF to PNG online", "GIF frame to PNG", "Extract GIF frame as PNG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Free online GIF to PNG converter. Extract the first frame of a GIF as lossless PNG. No uploads, no limits.",
+      "featureList": ["GIF to PNG conversion", "Lossless first-frame extraction", "Batch conversion", "File size preview", "Individual or bulk download", "100% local processing"]
+    },
+    "howTo": {
+      "name": "How to convert GIF to PNG online",
+      "description": "Step-by-step guide to converting GIF files to PNG.",
+      "steps": [
+        {
+          "name": "Add GIF files",
+          "text": "Drag GIF files onto the drop zone or click to browse. Multiple files supported."
+        },
+        {
+          "name": "Convert",
+          "text": "Click Convert. Each GIF is re-encoded as PNG in your browser."
+        },
+        {
+          "name": "Download PNG files",
+          "text": "Download files individually or all at once. File sizes shown for comparison."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert GIF to PNG?",
+      "html": "<p class=\"text-mid mb-4\">GIF is limited to 256 colours and uses a dated compression algorithm. PNG supports millions of colours, alpha-channel transparency, and more efficient lossless compression.</p><p class=\"text-mid mb-4\">Converting GIF to PNG is useful when you need a static image from an animated GIF, better colour depth, or when a platform requires PNG uploads.</p><p class=\"text-mid\">Note: this tool extracts the first frame of animated GIFs. If you need to preserve animation, consider a video format instead.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF to PNG converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert GIF to PNG",
+      "description": "Quick steps:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Add GIF files",
+          "description": "Drag your GIF images onto the upload area or click to select them. No limit on files.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Convert",
+          "description": "Click Convert. Each file is processed instantly in your browser.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Download PNG",
+          "description": "Download each file or grab them all at once. Size comparison shown for every file.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert GIF to PNG?",
+      "description": "Common use cases:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiImageLine",
+          "title": "Static thumbnails",
+          "description": "Extract a single frame from an animated GIF to use as a thumbnail or preview."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Better colour quality",
+          "description": "GIF is limited to 256 colours. PNG supports full 24-bit colour for richer images."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Documents",
+          "description": "Insert static PNG images instead of animated GIFs that may not play in all readers."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Web graphics",
+          "description": "PNG with alpha transparency is often a better choice than GIF for static web graphics."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this GIF to PNG converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "Files never leave your computer. Conversion uses the browser Canvas API — nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No file limit",
+          "description": "Convert as many images as you need. All files processed in sequence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Instant processing",
+          "description": "Conversion happens natively in your browser. Results are ready in seconds."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "One-click download",
+          "description": "Download files individually or all at once with a single click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about GIF to PNG conversion",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Does this convert the animation?",
+          "answer": "No. This tool extracts the first frame of the GIF as a static PNG image."
+        },
+        {
+          "question": "Is quality lost?",
+          "answer": "No. PNG uses lossless compression. The extracted frame is pixel-perfect."
+        },
+        {
+          "question": "Is transparency preserved?",
+          "answer": "Yes. GIF transparency is carried over to the PNG alpha channel."
+        },
+        {
+          "question": "Can I convert multiple files at once?",
+          "answer": "Yes. No file limit."
+        },
+        {
+          "question": "Are files uploaded to a server?",
+          "answer": "No. Everything runs locally in your browser."
+        },
+        {
+          "question": "What is the maximum file size?",
+          "answer": "Individual files up to 100 MB are supported."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF to PNG converter – Arteon",
+      "defaultSubject": "Feedback: GIF to PNG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

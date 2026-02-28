@@ -1,0 +1,77 @@
+{
+  "toolKey": "bmpToPng",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore BMP in PNG – BMP PNG",
+    "description": "Converti immagini BMP in PNG senza perdita. Qualità preservata, dimensioni ridotte.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-bmp-in-png"
+  },
+  "hero": {
+    "title": "Convertitore BMP in PNG",
+    "description": "Converti immagini BMP in PNG senza perdita. Qualità preservata, dimensioni ridotte.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-bmp-in-png",
+      "label": "Convertitore BMP in PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore BMP in PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti immagini BMP in PNG senza perdita. Qualità preservata, dimensioni ridotte.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertitore BMP in PNG",
+      "description": "Converti immagini BMP in PNG senza perdita. Qualità preservata, dimensioni ridotte.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertitore BMP in PNG",
+      "html": "<p class=\"text-mid\">Converti immagini BMP in PNG senza perdita. Qualità preservata, dimensioni ridotte.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore BMP in PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore BMP in PNG – Arteon",
+      "defaultSubject": "Feedback: Convertitore BMP in PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

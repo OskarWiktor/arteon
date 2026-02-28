@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToPng",
+  "locale": "sv",
+  "metadata": {
+    "title": "JPG till PNG-konverterare – JPG PNG",
+    "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/jpg-till-png-konverterare"
+  },
+  "hero": {
+    "title": "JPG till PNG-konverterare",
+    "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/jpg-till-png-konverterare",
+      "label": "JPG till PNG-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG till PNG-konverterare",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "JPG till PNG-konverterare",
+      "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "JPG till PNG-konverterare",
+      "html": "<p class=\"text-mid\">Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG till PNG-konverterare – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande — vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG till PNG-konverterare – Arteon",
+      "defaultSubject": "Feedback: JPG till PNG-konverterare"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

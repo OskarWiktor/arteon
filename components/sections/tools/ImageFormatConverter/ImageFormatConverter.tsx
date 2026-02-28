@@ -11,6 +11,7 @@ import ToolProgressBar from '@/components/ui/tools/ToolProgressBar';
 import ToolRangeInput from '@/components/ui/tools/ToolRangeInput';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolUploadContent from '@/components/ui/tools/ToolUploadContent';
+import { useDictionary } from '@/lib/LocaleContext';
 import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 
@@ -18,7 +19,12 @@ import FormatSelector from './FormatSelector';
 import { useConversionQueue } from './useConversionQueue';
 import { FORMAT_EXTENSION, FORMAT_LABELS, hasQualitySlider, type ImageFormatConverterProps } from './types';
 
+function tpl(str: string, vars: Record<string, string>): string {
+  return Object.entries(vars).reduce((s, [k, v]) => s.replace(new RegExp(`\\{\\{${k}\\}\\}`, 'g'), v), str);
+}
+
 export default function ImageFormatConverter({ sourceFormat, targetFormat, acceptMime, defaultQuality }: ImageFormatConverterProps) {
+  const { imageConverter: t } = useDictionary();
   const showQuality = hasQualitySlider(targetFormat);
   const initialQuality = defaultQuality ?? (targetFormat === 'webp' ? 80 : 85);
   const [quality, setQuality] = useState(initialQuality);
@@ -30,11 +36,11 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
   const ext = FORMAT_EXTENSION[targetFormat];
 
   const errorMessages = {
-    fileLoad: 'Nie udało się wczytać pliku.',
-    imageLoad: 'Nie udało się wczytać obrazu.',
-    canvasNotSupported: 'Brak wsparcia dla canvas w przeglądarce.',
-    generationError: `Nie udało się wygenerować pliku ${targetLabel}.`,
-    fileTooLarge: 'Plik jest za duży (maks. 100 MB).',
+    fileLoad: t.errorFileLoad,
+    imageLoad: t.errorImageLoad,
+    canvasNotSupported: t.errorCanvas,
+    generationError: tpl(t.errorGeneration, { format: targetLabel }),
+    fileTooLarge: t.errorTooLarge,
   };
 
   const {
@@ -92,24 +98,24 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
         return allowedExts.some((ext) => name.endsWith(ext));
       });
       if (valid.length < all.length) {
-        setGlobalError(`Dodaj pliki ${sourceLabel} — inne formaty są pomijane.`);
+        setGlobalError(tpl(t.errorWrongFormat, { format: sourceLabel }));
       }
       if (valid.length > 0) addFiles(valid);
     },
-    [acceptMime, addFiles, sourceLabel],
+    [acceptMime, addFiles, sourceLabel, t],
   );
 
   const handleSubmit = useCallback(
     (e: FormEvent) => {
       e.preventDefault();
       if (!files.length) {
-        setGlobalError(`Dodaj przynajmniej jeden plik ${sourceLabel}.`);
+        setGlobalError(tpl(t.errorNoFiles, { format: sourceLabel }));
         return;
       }
       setGlobalError(null);
       void convertAll();
     },
-    [files.length, convertAll, sourceLabel],
+    [files.length, convertAll, sourceLabel, t],
   );
 
   const handleDownloadSingle = useCallback(
@@ -145,9 +151,9 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
         <ToolSection className="space-y-4">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <h2 className="h6 mb-2">Dodaj pliki</h2>
+              <h2 className="h6 mb-2">{t.addFiles}</h2>
               <ToolFileDropzone accept={acceptMime} multiple onFiles={handleAddFiles} className="tool-upload-area">
-                <ToolUploadContent dragLabel={`Przeciągnij i upuść pliki ${sourceLabel} tutaj`} clickLabel="lub kliknij, aby wybrać pliki z dysku" formatsLabel={`Obsługiwane: ${sourceLabel}`} />
+                <ToolUploadContent dragLabel={tpl(t.dragDrop, { format: sourceLabel })} clickLabel={t.clickToSelect} formatsLabel={tpl(t.supported, { format: sourceLabel })} />
               </ToolFileDropzone>
               {globalError && (
                 <ToolAlert variant="error" className="mt-2">
@@ -158,28 +164,21 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
 
             {showQuality && (
               <div>
-                <h3 className="h6 mt-8 mb-2">Ustaw jakość {targetLabel}</h3>
-                <ToolRangeInput
-                  value={quality}
-                  min={60}
-                  max={95}
-                  onChange={handleQualityChange}
-                  suffix="%"
-                  helper="Niższa wartość = mniejsza waga plików, wyższa = lepsza jakość. 80–85% to dobry kompromis."
-                />
+                <h3 className="h6 mt-8 mb-2">{tpl(t.setQuality, { format: targetLabel })}</h3>
+                <ToolRangeInput value={quality} min={60} max={95} onChange={handleQualityChange} suffix="%" helper={t.qualityHelper} />
               </div>
             )}
 
             <div>
-              <h3 className="h6 mt-8 mb-2">Konwertuj i pobierz</h3>
+              <h3 className="h6 mt-8 mb-2">{t.convertAndDownload}</h3>
               {total > 0 && (
                 <div className="mb-3 space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="tool-meta">
-                      W kolejce: <strong>{total}</strong> plików
+                      {t.inQueue} <strong>{total}</strong> {t.files}
                     </span>
                     <span className="tool-meta">
-                      Zakończone: {completed} / {total}
+                      {t.completed}: {completed} / {total}
                     </span>
                   </div>
                   <ToolProgressBar value={progress} ariaLabel={`${completed} / ${total}`} />
@@ -188,39 +187,39 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
 
               <div className="mt-4 flex flex-wrap gap-3">
                 <Button variant="accent" disabled={isConverting || !files.length} className="disabled:opacity-60" type="submit" size="small">
-                  {isConverting ? 'Konwertuję…' : 'Konwertuj'}
+                  {isConverting ? t.converting : t.convert}
                 </Button>
                 <Button onClick={handleDownloadAll} disabled={!anyDone} className="disabled:opacity-40" size="small">
-                  Pobierz wszystkie
+                  {t.downloadAll}
                 </Button>
                 <Button onClick={clearAll} disabled={!files.length || isConverting} className="disabled:opacity-40" size="small">
-                  Wyczyść wszystko
+                  {t.clearAll}
                 </Button>
               </div>
 
               {totalInputSize > 0 && (
                 <div className="mt-6">
                   <p className="tool-meta">
-                    Łączny rozmiar wejściowy: <strong>{formatBytes(totalInputSize)}</strong>
+                    {t.totalInput} <strong>{formatBytes(totalInputSize)}</strong>
                   </p>
                   {totalOutputSize > 0 && (
                     <>
                       <p className="tool-meta">
-                        Łączny rozmiar po konwersji: <strong>{formatBytes(totalOutputSize)}</strong>
+                        {t.totalOutput} <strong>{formatBytes(totalOutputSize)}</strong>
                       </p>
                       <p className="tool-meta">
                         {totalSaved >= 0 ? (
                           <>
-                            Zaoszczędzono:{' '}
+                            {t.saved}{' '}
                             <strong>
-                              {formatBytes(totalSaved)} (~{totalSavedPercent}% mniej)
+                              {formatBytes(totalSaved)} (~{totalSavedPercent}% {t.less})
                             </strong>
                           </>
                         ) : (
                           <>
-                            Zwiększono:{' '}
+                            {t.increased}{' '}
                             <strong>
-                              {formatBytes(Math.abs(totalSaved))} (~{totalSavedPercent}% więcej)
+                              {formatBytes(Math.abs(totalSaved))} (~{totalSavedPercent}% {t.more})
                             </strong>
                           </>
                         )}
@@ -233,28 +232,26 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
           </form>
         </ToolSection>
 
-        <ToolSection aria-label="Lista plików w kolejce" className="space-y-2">
+        <ToolSection aria-label={t.queueAriaLabel} className="space-y-2">
           <div className="flex items-center justify-between gap-2">
-            <h2 className="h6">Pliki w kolejce</h2>
+            <h2 className="h6">{t.queueHeading}</h2>
             {files.length > 0 && (
               <p className="tool-meta">
-                Gotowe: {doneCount} · W trakcie: {pendingCount}
+                {t.readyCount}: {doneCount} · {t.pendingCount}: {pendingCount}
               </p>
             )}
           </div>
 
           {files.length === 0 && (
             <div className="rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-6 text-center">
-              <p className="tool-meta">
-                Dodaj pliki {sourceLabel} po lewej stronie, aby rozpocząć konwersję na {targetLabel}.
-              </p>
+              <p className="tool-meta">{tpl(t.emptyState, { source: sourceLabel, target: targetLabel })}</p>
             </div>
           )}
 
           {files.length > 0 && (
             <div className="space-y-2 text-sm!">
               {files.map((item) => {
-                const statusLabel = item.status === 'pending' ? 'Oczekuje' : item.status === 'processing' ? 'Przetwarzanie…' : item.status === 'done' ? 'Gotowe' : 'Błąd';
+                const statusLabel = item.status === 'pending' ? t.statusPending : item.status === 'processing' ? t.statusProcessing : item.status === 'done' ? t.statusDone : t.statusError;
 
                 const diffPercent = item.outputSize > 0 && item.inputSize > 0 ? Math.round(((item.inputSize - item.outputSize) / item.inputSize) * 100) : null;
 
@@ -264,14 +261,15 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
                     name={item.file.name}
                     meta={
                       <>
-                        Przed: {formatBytes(item.inputSize)}
+                        {t.before} {formatBytes(item.inputSize)}
                         {item.status === 'done' && item.outputSize > 0 && (
                           <>
-                            {' · '}Po: {formatBytes(item.outputSize)}
+                            {' · '}
+                            {t.after} {formatBytes(item.outputSize)}
                             {diffPercent !== null && (
                               <>
                                 {' ('}
-                                {Math.abs(diffPercent)}% {diffPercent >= 0 ? 'mniej' : 'więcej'}
+                                {Math.abs(diffPercent)}% {diffPercent >= 0 ? t.less : t.more}
                                 {')'}
                               </>
                             )}
@@ -287,12 +285,12 @@ export default function ImageFormatConverter({ sourceFormat, targetFormat, accep
                         </Badge>
                         {item.status === 'done' && (
                           <Badge as="button" type="button" onClick={() => handleDownloadSingle(item.id)} variant="default" size="md" className="cursor-pointer border-black/15">
-                            Pobierz
+                            {t.download}
                           </Badge>
                         )}
                         {item.status !== 'processing' && (
                           <Badge as="button" type="button" onClick={() => removeFile(item.id)} variant="default" size="sm" className="text-light hover:text-dark cursor-pointer">
-                            Usuń
+                            {t.remove}
                           </Badge>
                         )}
                       </div>

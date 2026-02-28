@@ -1,0 +1,108 @@
+{
+  "toolKey": "bmpToJpg",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor BMP a JPG – comprime bitmaps gratis",
+    "description": "Convierte archivos BMP sin comprimir a JPG ligero. Reducción drástica del tamaño.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-bmp-a-jpg"
+  },
+  "hero": {
+    "title": "Convertidor BMP a JPG – reduce bitmaps al instante",
+    "description": "Convierte imágenes BMP a JPG compacto. Añade archivos, ajusta la calidad y descarga.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-bmp-a-jpg",
+      "label": "Convertidor BMP a JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor BMP a JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convierte archivos BMP sin comprimir a JPG ligero. Reducción drástica del tamaño.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertidor BMP a JPG – reduce bitmaps al instante",
+      "description": "Convierte archivos BMP sin comprimir a JPG ligero. Reducción drástica del tamaño.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Por qué convertir BMP a JPG?",
+      "html": "<p class=\"text-mid mb-4\">BMP almacena imágenes sin comprimir — un solo archivo puede superar los 10–50 MB. JPG aplica compresión con pérdida que reduce el tamaño en un 90–98% con pérdida visual mínima.</p><p class=\"text-mid\">La conversión es ideal para adjuntos de correo, ahorro de espacio y subidas web.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor BMP a JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertidor BMP a JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Los archivos no salen de tu ordenador. La conversión ocurre en el navegador."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sin límite de archivos",
+          "description": "Convierte tantas imágenes como necesites. Todos los archivos se procesan en secuencia."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Procesamiento instantáneo",
+          "description": "La conversión ocurre de forma nativa en tu navegador. Resultados en segundos."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Descarga con un clic",
+          "description": "Descarga archivos individualmente o todos a la vez."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor BMP a JPG – Arteon",
+      "defaultSubject": "Feedback: Convertidor BMP a JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

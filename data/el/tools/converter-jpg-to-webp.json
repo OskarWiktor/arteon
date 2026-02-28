@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToWebpSimple",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας JPG σε WebP – JPG WebP",
+    "description": "Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-jpg-se-webp"
+  },
+  "hero": {
+    "title": "Μετατροπέας JPG σε WebP",
+    "description": "Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-jpg-se-webp",
+      "label": "Μετατροπέας JPG σε WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας JPG σε WebP",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Μετατροπέας JPG σε WebP",
+      "description": "Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Μετατροπέας JPG σε WebP",
+      "html": "<p class=\"text-mid\">Μετατρέψτε φωτογραφίες JPG σε ελαφρύ WebP. Μείωση βάρους έως 35%.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Μετατροπέας JPG σε WebP – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία",
+      "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε; Γράψτε μας — απαντάμε σε 24 ώρες.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Μετατροπέας JPG σε WebP – Arteon",
+      "defaultSubject": "Feedback: Μετατροπέας JPG σε WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ανακαλύψτε περισσότερα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

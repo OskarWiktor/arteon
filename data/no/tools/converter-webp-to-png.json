@@ -1,0 +1,77 @@
+{
+  "toolKey": "webpToPng",
+  "locale": "no",
+  "metadata": {
+    "title": "WebP til PNG-konverterer – WebP PNG",
+    "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/webp-til-png-konverterer"
+  },
+  "hero": {
+    "title": "WebP til PNG-konverterer",
+    "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/webp-til-png-konverterer",
+      "label": "WebP til PNG-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP til PNG-konverterer",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "WebP til PNG-konverterer",
+      "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "WebP til PNG-konverterer",
+      "html": "<p class=\"text-mid\">Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP til PNG-konverterer – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP til PNG-konverterer – Arteon",
+      "defaultSubject": "Feedback: WebP til PNG-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

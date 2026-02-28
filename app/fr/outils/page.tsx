@@ -72,7 +72,7 @@ const schema = {
         name: 'Convertisseur JPG et PNG en WebP en ligne',
         description:
           "Convertisseur en ligne gratuit de JPG et PNG en WebP. Réduit le poids des fichiers jusqu'à 35 % sans perte de qualité visible. Sans inscription – les fichiers restent dans votre navigateur.",
-        url: toAbsoluteUrl('/fr/outils/convertisseur-jpg-png-en-webp'),
+        url: toAbsoluteUrl('/fr/outils/convertisseur-jpg-en-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -213,14 +213,14 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Convertisseur JPG/PNG en WebP',
               topImageAlt: 'Convertisseur JPG/PNG en WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-en-webp-fr.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
                     Convertissez vos images JPG ou PNG au format <strong>WebP</strong> et réduisez le poids des fichiers. Des temps de chargement plus rapides pour votre site.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/fr/outils/convertisseur-jpg-png-en-webp">
+                    <Button arrow link="/fr/outils/convertisseur-jpg-en-webp">
                       Ouvrir l'outil
                     </Button>
                   </div>

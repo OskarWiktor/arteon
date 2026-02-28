@@ -3,6 +3,8 @@
 import { useRouter } from 'next/navigation';
 import { useCallback } from 'react';
 
+import { useLocale, useDictionary } from '@/lib/LocaleContext';
+
 import { FORMAT_LABELS, type ImageFormat, type OutputFormat } from './types';
 import { getAvailableTargets, getConversionRoute, SOURCE_FORMATS, TARGET_FORMATS } from './conversionRoutes';
 
@@ -14,42 +16,44 @@ interface FormatSelectorProps {
 
 export default function FormatSelector({ currentSource, currentTarget, hasFiles }: FormatSelectorProps) {
   const router = useRouter();
+  const locale = useLocale();
+  const { imageConverter: t } = useDictionary();
 
   const confirmNavigation = useCallback(
     (href: string) => {
-      if (hasFiles && !window.confirm('Zmiana formatu usunie pliki z kolejki. Kontynuować?')) return;
+      if (hasFiles && !window.confirm(t.formatChangeConfirm)) return;
       router.push(href);
     },
-    [hasFiles, router],
+    [hasFiles, router, t.formatChangeConfirm],
   );
 
   const handleSourceChange = useCallback(
     (newSource: ImageFormat) => {
       if (newSource === currentSource) return;
-      const targets = getAvailableTargets(newSource);
+      const targets = getAvailableTargets(newSource, locale);
       const target = targets.includes(currentTarget) ? currentTarget : targets[0];
       if (!target) return;
-      const route = getConversionRoute(newSource, target);
+      const route = getConversionRoute(newSource, target, locale);
       if (route) confirmNavigation(route.href);
     },
-    [currentSource, currentTarget, confirmNavigation],
+    [currentSource, currentTarget, confirmNavigation, locale],
   );
 
   const handleTargetChange = useCallback(
     (newTarget: OutputFormat) => {
       if (newTarget === currentTarget) return;
-      const route = getConversionRoute(currentSource, newTarget);
+      const route = getConversionRoute(currentSource, newTarget, locale);
       if (route) confirmNavigation(route.href);
     },
-    [currentSource, currentTarget, confirmNavigation],
+    [currentSource, currentTarget, confirmNavigation, locale],
   );
 
-  const availableTargets = getAvailableTargets(currentSource);
+  const availableTargets = getAvailableTargets(currentSource, locale);
 
   return (
     <div className="mb-5 flex justify-center">
       <div className="inline-flex items-center gap-4 rounded-lg border border-neutral-200 bg-white px-4 py-3">
-        <label className="hidden font-medium">Konwertuj z</label>
+        <label className="hidden font-medium">{FORMAT_LABELS[currentSource]}</label>
         <select
           value={currentSource}
           onChange={(e) => handleSourceChange(e.target.value as ImageFormat)}
@@ -62,7 +66,7 @@ export default function FormatSelector({ currentSource, currentTarget, hasFiles 
           ))}
         </select>
 
-        <label className="font-medium">na</label>
+        <label className="font-medium">{t.formatSelectorTo}</label>
         <select
           value={currentTarget}
           onChange={(e) => handleTargetChange(e.target.value as OutputFormat)}

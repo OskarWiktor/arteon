@@ -144,6 +144,43 @@ export const TOOLS_REDIRECTS: Record<string, string> = {
 };
 
 /**
+ * Redirecty starych stron konwertera JPG/PNG→WebP → nowe indywidualne konwertery (2026-02)
+ * Stary narzędzie: jpgToWebp (combined) → Nowy: jpgToWebpSimple (individual)
+ */
+export const CONVERTER_REDIRECTS: Record<string, string> = {
+  // EN
+  '/en/tools/jpg-png-to-webp-unlimited': '/en/tools/jpg-to-webp-converter',
+  // DE
+  '/de/werkzeuge/jpg-png-zu-webp-konverter': '/de/werkzeuge/jpg-zu-webp-konverter',
+  // ES
+  '/es/herramientas/convertidor-jpg-png-a-webp': '/es/herramientas/convertidor-jpg-a-webp',
+  // FR
+  '/fr/outils/convertisseur-jpg-png-en-webp': '/fr/outils/convertisseur-jpg-en-webp',
+  // PT
+  '/pt/ferramentas/conversor-jpg-png-para-webp': '/pt/ferramentas/conversor-jpg-para-webp',
+  // IT
+  '/it/strumenti/convertitore-jpg-png-in-webp': '/it/strumenti/convertitore-jpg-in-webp',
+  // RO
+  '/ro/instrumente/convertor-jpg-png-in-webp': '/ro/instrumente/convertor-jpg-in-webp',
+  // NL
+  '/nl/tools/jpg-png-naar-webp-converter': '/nl/tools/jpg-naar-webp-converter',
+  // HU
+  '/hu/eszkozok/jpg-png-webp-konverter': '/hu/eszkozok/jpg-webp-konverter',
+  // CS
+  '/cs/nastroje/konvertor-jpg-png-na-webp': '/cs/nastroje/prevodnik-jpg-na-webp',
+  // SV
+  '/sv/verktyg/jpg-png-till-webp-konverterare': '/sv/verktyg/jpg-till-webp-konverterare',
+  // DA
+  '/da/vaerktojer/jpg-png-til-webp-konverter': '/da/vaerktojer/jpg-til-webp-konverter',
+  // NO
+  '/no/verktoy/jpg-png-til-webp-konverterer': '/no/verktoy/jpg-til-webp-konverterer',
+  // FI
+  '/fi/tyokalut/jpg-png-webp-muunnin': '/fi/tyokalut/jpg-webp-muunnin',
+  // EL
+  '/el/ergaleia/metatropeas-jpg-png-se-webp': '/el/ergaleia/metatropeas-jpg-se-webp',
+};
+
+/**
  * Redirecty dla norweskich narzędzi (poprawki literówek w slugach, 2026-02-16)
  */
 export const NO_TOOLS_REDIRECTS: Record<string, string> = {
@@ -155,7 +192,7 @@ export const NO_TOOLS_REDIRECTS: Record<string, string> = {
  */
 export const DE_TOOLS_REDIRECTS: Record<string, string> = {
   '/de/tools': '/de/werkzeuge',
-  '/de/tools/jpg-png-zu-webp-konverter': '/de/werkzeuge/jpg-png-zu-webp-konverter',
+  '/de/tools/jpg-png-zu-webp-konverter': '/de/werkzeuge/jpg-zu-webp-konverter',
   '/de/tools/online-bildeditor': '/de/werkzeuge/online-bildeditor',
   '/de/tools/kostenloser-favicon-generator': '/de/werkzeuge/kostenloser-favicon-generator',
   '/de/tools/meta-titel-beschreibung-laengenpruefer': '/de/werkzeuge/meta-titel-beschreibung-laengenpruefer',
@@ -187,7 +224,7 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/tr/hakkimizda': '/en/about',
   '/tr/iletisim': '/en/contact',
   '/tr/gizlilik-politikasi': '/en/privacy-policy',
-  '/tr/araclar/jpg-png-webp-donusturucu': '/en/tools/jpg-png-to-webp-unlimited',
+  '/tr/araclar/jpg-png-webp-donusturucu': '/en/tools/jpg-to-webp-converter',
   '/tr/araclar/gorsel-duzenleyici': '/en/tools/online-image-editor',
   '/tr/araclar/ucretsiz-favicon-olusturucu': '/en/tools/free-favicon-generator',
   '/tr/araclar/meta-baslik-ve-aciklama-kontrol': '/en/tools/meta-title-description-length-checker',
@@ -203,7 +240,7 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/sq/rreth-nesh': '/en/about',
   '/sq/kontakti': '/en/contact',
   '/sq/politika-e-privatesise': '/en/privacy-policy',
-  '/sq/mjetet/konvertues-jpg-png-ne-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/sq/mjetet/konvertues-jpg-png-ne-webp': '/en/tools/jpg-to-webp-converter',
   '/sq/mjetet/redaktues-imazhesh': '/en/tools/online-image-editor',
   '/sq/mjetet/gjenerues-favicon-falas': '/en/tools/free-favicon-generator',
   '/sq/mjetet/kontrollues-meta-titull-dhe-pershkrim': '/en/tools/meta-title-description-length-checker',
@@ -219,7 +256,7 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/sk/o-nas': '/en/about',
   '/sk/kontakt': '/en/contact',
   '/sk/zasady-ochrany-osobnych-udajov': '/en/privacy-policy',
-  '/sk/nastroje/konvertor-jpg-png-na-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/sk/nastroje/konvertor-jpg-png-na-webp': '/en/tools/jpg-to-webp-converter',
   '/sk/nastroje/editor-obrazkov': '/en/tools/online-image-editor',
   '/sk/nastroje/generator-favicon-zadarmo': '/en/tools/free-favicon-generator',
   '/sk/nastroje/kontrola-meta-titulku-a-popisu': '/en/tools/meta-title-description-length-checker',
@@ -235,7 +272,7 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/hr/o-nama': '/en/about',
   '/hr/kontakt': '/en/contact',
   '/hr/pravila-privatnosti': '/en/privacy-policy',
-  '/hr/alati/pretvaranje-jpg-png-u-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/hr/alati/pretvaranje-jpg-png-u-webp': '/en/tools/jpg-to-webp-converter',
   '/hr/alati/urednik-slika': '/en/tools/online-image-editor',
   '/hr/alati/besplatni-generator-favicona': '/en/tools/free-favicon-generator',
   '/hr/alati/provjera-meta-naslova-i-opisa': '/en/tools/meta-title-description-length-checker',
@@ -251,7 +288,7 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/lt/apie-mus': '/en/about',
   '/lt/kontaktai': '/en/contact',
   '/lt/privatumo-politika': '/en/privacy-policy',
-  '/lt/irankiai/jpg-png-i-webp-konverteris': '/en/tools/jpg-png-to-webp-unlimited',
+  '/lt/irankiai/jpg-png-i-webp-konverteris': '/en/tools/jpg-to-webp-converter',
   '/lt/irankiai/vaizdu-redaktorius': '/en/tools/online-image-editor',
   '/lt/irankiai/nemokamas-favicon-generatorius': '/en/tools/free-favicon-generator',
   '/lt/irankiai/meta-pavadinimo-ir-aprasymo-tikrintuvas': '/en/tools/meta-title-description-length-checker',
@@ -269,7 +306,7 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/sl/o-nas': '/en/about',
   '/sl/kontakt': '/en/contact',
   '/sl/pravilnik-o-zasebnosti': '/en/privacy-policy',
-  '/sl/orodja/pretvornik-jpg-png-v-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/sl/orodja/pretvornik-jpg-png-v-webp': '/en/tools/jpg-to-webp-converter',
   '/sl/orodja/urejevalnik-slik': '/en/tools/online-image-editor',
   '/sl/orodja/brezplacni-generator-faviconov': '/en/tools/free-favicon-generator',
   '/sl/orodja/preverjanje-meta-naslova-in-opisa': '/en/tools/meta-title-description-length-checker',
@@ -285,7 +322,7 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/bg/za-nas': '/en/about',
   '/bg/kontakt': '/en/contact',
   '/bg/politika-za-poveritelnost': '/en/privacy-policy',
-  '/bg/instrumenti/konvertor-jpg-png-v-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/bg/instrumenti/konvertor-jpg-png-v-webp': '/en/tools/jpg-to-webp-converter',
   '/bg/instrumenti/redaktor-na-izobrazhenia': '/en/tools/online-image-editor',
   '/bg/instrumenti/bezplaten-generator-na-favicon': '/en/tools/free-favicon-generator',
   '/bg/instrumenti/proverka-na-meta-zaglavie-i-opisanie': '/en/tools/meta-title-description-length-checker',
@@ -301,7 +338,7 @@ export const REMOVED_LOCALE_REDIRECTS_EU: Record<string, string> = {
   '/uk/pro-nas': '/en/about',
   '/uk/kontakt': '/en/contact',
   '/uk/polityka-konfidentsiinosti': '/en/privacy-policy',
-  '/uk/instrumenty/konverter-jpg-png-u-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/uk/instrumenty/konverter-jpg-png-u-webp': '/en/tools/jpg-to-webp-converter',
   '/uk/instrumenty/redaktor-zobrazhen': '/en/tools/online-image-editor',
   '/uk/instrumenty/bezkoshtovnyi-generator-favicon': '/en/tools/free-favicon-generator',
   '/uk/instrumenty/perevirka-meta-zaholovka-ta-opysu': '/en/tools/meta-title-description-length-checker',
@@ -324,7 +361,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/vi/ve-chung-toi': '/en/about',
   '/vi/lien-he': '/en/contact',
   '/vi/chinh-sach-bao-mat': '/en/privacy-policy',
-  '/vi/cong-cu/chuyen-doi-jpg-png-sang-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/vi/cong-cu/chuyen-doi-jpg-png-sang-webp': '/en/tools/jpg-to-webp-converter',
   '/vi/cong-cu/chinh-sua-hinh-anh': '/en/tools/online-image-editor',
   '/vi/cong-cu/tao-favicon-mien-phi': '/en/tools/free-favicon-generator',
   '/vi/cong-cu/kiem-tra-meta-title-va-description': '/en/tools/meta-title-description-length-checker',
@@ -340,7 +377,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/id/tentang-kami': '/en/about',
   '/id/kontak': '/en/contact',
   '/id/kebijakan-privasi': '/en/privacy-policy',
-  '/id/alat/konverter-jpg-png-ke-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/id/alat/konverter-jpg-png-ke-webp': '/en/tools/jpg-to-webp-converter',
   '/id/alat/editor-gambar': '/en/tools/online-image-editor',
   '/id/alat/generator-favicon-gratis': '/en/tools/free-favicon-generator',
   '/id/alat/pemeriksa-meta-judul-dan-deskripsi': '/en/tools/meta-title-description-length-checker',
@@ -356,7 +393,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/ms/tentang-kami': '/en/about',
   '/ms/hubungi-kami': '/en/contact',
   '/ms/dasar-privasi': '/en/privacy-policy',
-  '/ms/alatan/penukar-jpg-png-ke-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/ms/alatan/penukar-jpg-png-ke-webp': '/en/tools/jpg-to-webp-converter',
   '/ms/alatan/editor-imej': '/en/tools/online-image-editor',
   '/ms/alatan/penjana-favicon-percuma': '/en/tools/free-favicon-generator',
   '/ms/alatan/penyemak-meta-tajuk-dan-penerangan': '/en/tools/meta-title-description-length-checker',
@@ -372,7 +409,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/hi/hamare-baare-mein': '/en/about',
   '/hi/sampark-karein': '/en/contact',
   '/hi/gopaneeyata-neeti': '/en/privacy-policy',
-  '/hi/upkaran/jpg-png-se-webp-badlein': '/en/tools/jpg-png-to-webp-unlimited',
+  '/hi/upkaran/jpg-png-se-webp-badlein': '/en/tools/jpg-to-webp-converter',
   '/hi/upkaran/chitra-sampadak': '/en/tools/online-image-editor',
   '/hi/upkaran/favicon-nirmata': '/en/tools/free-favicon-generator',
   '/hi/upkaran/meta-sheerashak-jaanch': '/en/tools/meta-title-description-length-checker',
@@ -388,7 +425,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/bn/amader-somporke': '/en/about',
   '/bn/jogajog': '/en/contact',
   '/bn/goponeeyota-neeti': '/en/privacy-policy',
-  '/bn/yantra/jpg-png-theke-webp-rupantor': '/en/tools/jpg-png-to-webp-unlimited',
+  '/bn/yantra/jpg-png-theke-webp-rupantor': '/en/tools/jpg-to-webp-converter',
   '/bn/yantra/chhobi-sompadok': '/en/tools/online-image-editor',
   '/bn/yantra/favicon-toyri': '/en/tools/free-favicon-generator',
   '/bn/yantra/meta-shirshonam-pariksha': '/en/tools/meta-title-description-length-checker',
@@ -404,7 +441,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/tl/tungkol-sa-amin': '/en/about',
   '/tl/makipag-ugnayan': '/en/contact',
   '/tl/patakaran-sa-privacy': '/en/privacy-policy',
-  '/tl/mga-kasangkapan/jpg-png-sa-webp-converter': '/en/tools/jpg-png-to-webp-unlimited',
+  '/tl/mga-kasangkapan/jpg-png-sa-webp-converter': '/en/tools/jpg-to-webp-converter',
   '/tl/mga-kasangkapan/editor-ng-larawan': '/en/tools/online-image-editor',
   '/tl/mga-kasangkapan/libreng-favicon-generator': '/en/tools/free-favicon-generator',
   '/tl/mga-kasangkapan/tagasuri-ng-meta-title-at-description': '/en/tools/meta-title-description-length-checker',
@@ -420,7 +457,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/ceb/mahitungod-kanamo': '/en/about',
   '/ceb/kontaka-kami': '/en/contact',
   '/ceb/palisiya-sa-pribasiya': '/en/privacy-policy',
-  '/ceb/mga-himan/jpg-png-ngadto-webp-converter': '/en/tools/jpg-png-to-webp-unlimited',
+  '/ceb/mga-himan/jpg-png-ngadto-webp-converter': '/en/tools/jpg-to-webp-converter',
   '/ceb/mga-himan/editor-sa-hulagway': '/en/tools/online-image-editor',
   '/ceb/mga-himan/libre-nga-favicon-generator': '/en/tools/free-favicon-generator',
   '/ceb/mga-himan/tigsusi-sa-meta-titulo-ug-deskripsyon': '/en/tools/meta-title-description-length-checker',
@@ -436,7 +473,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/sw/kuhusu-sisi': '/en/about',
   '/sw/wasiliana-nasi': '/en/contact',
   '/sw/sera-ya-faragha': '/en/privacy-policy',
-  '/sw/zana/kibadilishaji-jpg-png-hadi-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/sw/zana/kibadilishaji-jpg-png-hadi-webp': '/en/tools/jpg-to-webp-converter',
   '/sw/zana/kihariri-cha-picha': '/en/tools/online-image-editor',
   '/sw/zana/kitengenezaji-favicon-bure': '/en/tools/free-favicon-generator',
   '/sw/zana/kikaguzi-cha-meta-kichwa-na-maelezo': '/en/tools/meta-title-description-length-checker',
@@ -452,7 +489,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/ha/game-da-mu': '/en/about',
   '/ha/tuntube-mu': '/en/contact',
   '/ha/manufar-sirri': '/en/privacy-policy',
-  '/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/ha/kayan-aiki/mai-canza-jpg-png-zuwa-webp': '/en/tools/jpg-to-webp-converter',
   '/ha/kayan-aiki/editan-hoto': '/en/tools/online-image-editor',
   '/ha/kayan-aiki/samar-da-favicon-kyauta': '/en/tools/free-favicon-generator',
   '/ha/kayan-aiki/tantance-meta-take-da-bayani': '/en/tools/meta-title-description-length-checker',
@@ -468,7 +505,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/yo/nipa-wa': '/en/about',
   '/yo/kan-si-wa': '/en/contact',
   '/yo/ilana-asiri': '/en/privacy-policy',
-  '/yo/awon-irinse/oluyipada-jpg-png-si-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/yo/awon-irinse/oluyipada-jpg-png-si-webp': '/en/tools/jpg-to-webp-converter',
   '/yo/awon-irinse/olootu-aworan': '/en/tools/online-image-editor',
   '/yo/awon-irinse/olupilese-favicon-ofe': '/en/tools/free-favicon-generator',
   '/yo/awon-irinse/atunyewo-meta-akole-ati-apejuwe': '/en/tools/meta-title-description-length-checker',
@@ -484,7 +521,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/ig/maka-anyi': '/en/about',
   '/ig/kpoturu-anyi': '/en/contact',
   '/ig/iwu-nzuzo': '/en/privacy-policy',
-  '/ig/ngwa-oru/gbanwee-jpg-png-gaa-webp': '/en/tools/jpg-png-to-webp-unlimited',
+  '/ig/ngwa-oru/gbanwee-jpg-png-gaa-webp': '/en/tools/jpg-to-webp-converter',
   '/ig/ngwa-oru/edita-onyonyo': '/en/tools/online-image-editor',
   '/ig/ngwa-oru/njikota-favicon-nefu': '/en/tools/free-favicon-generator',
   '/ig/ngwa-oru/nyocha-meta-aha-na-nkowa': '/en/tools/meta-title-description-length-checker',
@@ -500,7 +537,7 @@ export const REMOVED_LOCALE_REDIRECTS: Record<string, string> = {
   '/af/oor-ons': '/en/about',
   '/af/kontak': '/en/contact',
   '/af/privaatheidsbeleid': '/en/privacy-policy',
-  '/af/gereedskap/jpg-png-na-webp-omskakelaar': '/en/tools/jpg-png-to-webp-unlimited',
+  '/af/gereedskap/jpg-png-na-webp-omskakelaar': '/en/tools/jpg-to-webp-converter',
   '/af/gereedskap/beeldredigeerder': '/en/tools/online-image-editor',
   '/af/gereedskap/gratis-favicon-generator': '/en/tools/free-favicon-generator',
   '/af/gereedskap/meta-titel-en-beskrywing-nagaaier': '/en/tools/meta-title-description-length-checker',
@@ -522,6 +559,7 @@ export const ALL_STATIC_REDIRECTS: Record<string, string> = {
   ...PROJECT_REDIRECTS,
   ...EDUCATION_REDIRECTS,
   ...TOOLS_REDIRECTS,
+  ...CONVERTER_REDIRECTS,
   ...NO_TOOLS_REDIRECTS,
   ...DE_TOOLS_REDIRECTS,
   ...SERVICES_REDIRECTS,

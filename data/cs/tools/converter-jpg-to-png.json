@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToPng",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník JPG na PNG – JPG PNG",
+    "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-jpg-na-png"
+  },
+  "hero": {
+    "title": "Převodník JPG na PNG",
+    "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-jpg-na-png",
+      "label": "Převodník JPG na PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník JPG na PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Převodník JPG na PNG",
+      "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Převodník JPG na PNG",
+      "html": "<p class=\"text-mid\">Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník JPG na PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník JPG na PNG – Arteon",
+      "defaultSubject": "Feedback: Převodník JPG na PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

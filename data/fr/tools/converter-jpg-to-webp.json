@@ -1,0 +1,108 @@
+{
+  "toolKey": "jpgToWebpSimple",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur JPG en WebP – réduisez le poids jusqu'à 35%",
+    "description": "Convertissez vos photos JPG en WebP léger. Réduisez le poids des images jusqu'à 35%.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-jpg-en-webp"
+  },
+  "hero": {
+    "title": "Convertisseur JPG en WebP – images plus légères, même qualité",
+    "description": "Convertissez vos photos JPG en WebP et réduisez leur poids jusqu'à 35%. Ajoutez, réglez la qualité et téléchargez.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-jpg-en-webp",
+      "label": "Convertisseur JPG en WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur JPG en WebP",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez vos photos JPG en WebP léger. Réduisez le poids des images jusqu'à 35%.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertisseur JPG en WebP – images plus légères, même qualité",
+      "description": "Convertissez vos photos JPG en WebP léger. Réduisez le poids des images jusqu'à 35%.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir JPG en WebP ?",
+      "html": "<p class=\"text-mid mb-4\">WebP offre une compression nettement meilleure que JPG. À qualité visuelle équivalente, les fichiers WebP sont 25–35% plus petits.</p><p class=\"text-mid\">Des images plus légères signifient des chargements plus rapides, moins de bande passante et de meilleurs scores Core Web Vitals.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur JPG en WebP – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertisseur JPG en WebP",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Les fichiers ne quittent pas votre ordinateur. La conversion a lieu dans le navigateur."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sans limite de fichiers",
+          "description": "Convertissez autant d'images que nécessaire. Tous les fichiers sont traités en séquence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Traitement instantané",
+          "description": "La conversion est native dans votre navigateur. Résultats en quelques secondes."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Téléchargement en un clic",
+          "description": "Téléchargez les fichiers individuellement ou tous en une fois."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur JPG en WebP – Arteon",
+      "defaultSubject": "Feedback: Convertisseur JPG en WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

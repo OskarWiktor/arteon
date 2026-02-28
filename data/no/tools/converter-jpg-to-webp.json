@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToWebpSimple",
+  "locale": "no",
+  "metadata": {
+    "title": "JPG til WebP-konverterer – JPG WebP",
+    "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/jpg-til-webp-konverterer"
+  },
+  "hero": {
+    "title": "JPG til WebP-konverterer",
+    "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/jpg-til-webp-konverterer",
+      "label": "JPG til WebP-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG til WebP-konverterer",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "JPG til WebP-konverterer",
+      "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "JPG til WebP-konverterer",
+      "html": "<p class=\"text-mid\">Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG til WebP-konverterer – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG til WebP-konverterer – Arteon",
+      "defaultSubject": "Feedback: JPG til WebP-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

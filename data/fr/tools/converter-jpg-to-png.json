@@ -1,0 +1,108 @@
+{
+  "toolKey": "jpgToPng",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur JPG en PNG – format sans perte gratuit",
+    "description": "Convertissez vos images JPG en PNG sans perte dans le navigateur. Sans limites, sans inscription.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-jpg-en-png"
+  },
+  "hero": {
+    "title": "Convertisseur JPG en PNG – passez au sans perte",
+    "description": "Convertissez vos photos JPG en PNG sans perte. Ajoutez des fichiers, convertissez et téléchargez.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-jpg-en-png",
+      "label": "Convertisseur JPG en PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur JPG en PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez vos images JPG en PNG sans perte dans le navigateur. Sans limites, sans inscription.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertisseur JPG en PNG – passez au sans perte",
+      "description": "Convertissez vos images JPG en PNG sans perte dans le navigateur. Sans limites, sans inscription.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir JPG en PNG ?",
+      "html": "<p class=\"text-mid mb-4\">JPG est un format avec perte : chaque sauvegarde dégrade légèrement l'image. PNG utilise une compression sans perte — aucune donnée n'est supprimée.</p><p class=\"text-mid mb-4\">Convertir JPG en PNG est utile pour éditer une image sans accumuler d'artefacts, quand une plateforme exige du PNG ou pour ajouter de la transparence par la suite.</p><p class=\"text-mid\">Notez que la conversion ne restaure pas les détails déjà perdus lors de la compression JPG initiale.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur JPG en PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertisseur JPG en PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Les fichiers ne quittent pas votre ordinateur. La conversion a lieu dans le navigateur."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sans limite de fichiers",
+          "description": "Convertissez autant d'images que nécessaire. Tous les fichiers sont traités en séquence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Traitement instantané",
+          "description": "La conversion est native dans votre navigateur. Résultats en quelques secondes."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Téléchargement en un clic",
+          "description": "Téléchargez les fichiers individuellement ou tous en une fois."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur JPG en PNG – Arteon",
+      "defaultSubject": "Feedback: Convertisseur JPG en PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

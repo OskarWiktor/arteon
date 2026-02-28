@@ -1,0 +1,108 @@
+{
+  "toolKey": "gifToPng",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur GIF en PNG – extrayez une image statique gratuitement",
+    "description": "Exportez la première image d'un GIF en PNG sans perte. Sans inscription, sans envoi.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-gif-en-png"
+  },
+  "hero": {
+    "title": "Convertisseur GIF en PNG – image statique de n'importe quel GIF",
+    "description": "Extrayez la première image d'un GIF en PNG sans perte. Ajoutez, convertissez et téléchargez.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-gif-en-png",
+      "label": "Convertisseur GIF en PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur GIF en PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Exportez la première image d'un GIF en PNG sans perte. Sans inscription, sans envoi.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertisseur GIF en PNG – image statique de n'importe quel GIF",
+      "description": "Exportez la première image d'un GIF en PNG sans perte. Sans inscription, sans envoi.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir GIF en PNG ?",
+      "html": "<p class=\"text-mid mb-4\">GIF est limité à 256 couleurs. PNG supporte des millions de couleurs et la transparence alpha. La conversion est utile pour extraire une image statique d'un GIF animé.</p><p class=\"text-mid\">Note : cet outil n'extrait que la première image des GIF animés.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur GIF en PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertisseur GIF en PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Les fichiers ne quittent pas votre ordinateur. La conversion a lieu dans le navigateur."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sans limite de fichiers",
+          "description": "Convertissez autant d'images que nécessaire. Tous les fichiers sont traités en séquence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Traitement instantané",
+          "description": "La conversion est native dans votre navigateur. Résultats en quelques secondes."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Téléchargement en un clic",
+          "description": "Téléchargez les fichiers individuellement ou tous en une fois."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur GIF en PNG – Arteon",
+      "defaultSubject": "Feedback: Convertisseur GIF en PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

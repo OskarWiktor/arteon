@@ -1,0 +1,108 @@
+{
+  "toolKey": "svgToJpg",
+  "locale": "de",
+  "metadata": {
+    "title": "SVG zu JPG Konverter – Vektoren zu JPG kostenlos",
+    "description": "SVG-Grafiken in kompaktes JPG umwandeln. Kleinere Datei, volle Kompatibilität.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/svg-zu-jpg-konverter"
+  },
+  "hero": {
+    "title": "SVG zu JPG Konverter – kompakte Bilder aus Vektoren",
+    "description": "Wandeln Sie SVG-Dateien in JPG um. Grafiken hinzufügen, Qualität einstellen und herunterladen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/svg-zu-jpg-konverter",
+      "label": "SVG zu JPG Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG zu JPG Konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "SVG-Grafiken in kompaktes JPG umwandeln. Kleinere Datei, volle Kompatibilität.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "SVG zu JPG Konverter – kompakte Bilder aus Vektoren",
+      "description": "SVG-Grafiken in kompaktes JPG umwandeln. Kleinere Datei, volle Kompatibilität.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Warum SVG in JPG umwandeln?",
+      "html": "<p class=\"text-mid mb-4\">SVG ist ideal für Logos und Icons, aber viele Plattformen akzeptieren nur Rasterbilder. JPG erzeugt kleinere Dateien als PNG, wenn keine Transparenz benötigt wird.</p><p class=\"text-mid\">Hinweis: JPG unterstützt keine Transparenz — transparente SVG-Bereiche werden mit weißem Hintergrund gefüllt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG zu JPG Konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "SVG zu JPG Konverter",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Vollständige Privatsphäre",
+          "description": "Dateien verlassen Ihren Computer nicht. Die Konvertierung findet im Browser statt."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Ohne Dateilimit",
+          "description": "Konvertieren Sie so viele Bilder wie nötig. Alle Dateien werden nacheinander verarbeitet."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Sofortige Verarbeitung",
+          "description": "Die Konvertierung erfolgt nativ in Ihrem Browser. Ergebnisse in Sekunden."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Ein-Klick-Download",
+          "description": "Laden Sie Dateien einzeln oder alle auf einmal herunter."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten ein Feature vorschlagen? Schreiben Sie uns — wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG zu JPG Konverter – Arteon",
+      "defaultSubject": "Feedback: SVG zu JPG Konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

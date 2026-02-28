@@ -1,0 +1,77 @@
+{
+  "toolKey": "webpToPng",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor WebP în PNG – WebP PNG",
+    "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-webp-in-png"
+  },
+  "hero": {
+    "title": "Convertor WebP în PNG",
+    "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-webp-in-png",
+      "label": "Convertor WebP în PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor WebP în PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertor WebP în PNG",
+      "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertor WebP în PNG",
+      "html": "<p class=\"text-mid\">Convertește imagini WebP în PNG fără pierderi. Conversie locală.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertor WebP în PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajută-ne să îmbunătățim instrumentele",
+      "description": "Ai o idee, ai găsit un bug sau vrei să sugerezi o funcție? Trimite-ne un mesaj — răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertor WebP în PNG – Arteon",
+      "defaultSubject": "Feedback: Convertor WebP în PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descoperă mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

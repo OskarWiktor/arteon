@@ -61,7 +61,7 @@ const schema = {
         position: 1,
         name: 'Konvertor JPG/PNG na WebP',
         description: 'Bezplatny konvertor JPG a PNG na WebP. Zmensete velikost souboru az o 35 % bez ztraty kvality. Bez registrace — soubory zustavaji v prohlizeci.',
-        url: toAbsoluteUrl('/cs/nastroje/konvertor-jpg-png-na-webp'),
+        url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -184,14 +184,14 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Konvertor JPG/PNG na WebP',
               topImageAlt: 'Konvertor JPG/PNG na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/prevodnik-jpg-na-webp-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
                     Prevedte JPG nebo PNG obrazky do formatu <strong>WebP</strong> a zmensete velikost souboru. Rychlejsi nacitani webu.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/konvertor-jpg-png-na-webp">
+                    <Button arrow link="/cs/nastroje/prevodnik-jpg-na-webp">
                       Otevrit nastroj
                     </Button>
                   </div>

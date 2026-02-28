@@ -1,0 +1,77 @@
+{
+  "toolKey": "pngToJpg",
+  "locale": "da",
+  "metadata": {
+    "title": "PNG til JPG-konverter – PNG JPG",
+    "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/png-til-jpg-konverter"
+  },
+  "hero": {
+    "title": "PNG til JPG-konverter",
+    "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/png-til-jpg-konverter",
+      "label": "PNG til JPG-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PNG til JPG-konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "PNG til JPG-konverter",
+      "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "PNG til JPG-konverter",
+      "html": "<p class=\"text-mid\">Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG til JPG-konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG til JPG-konverter – Arteon",
+      "defaultSubject": "Feedback: PNG til JPG-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

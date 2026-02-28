@@ -1,0 +1,77 @@
+{
+  "toolKey": "gifToPng",
+  "locale": "hu",
+  "metadata": {
+    "title": "GIF PNG konverter – GIF PNG",
+    "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/gif-png-konverter"
+  },
+  "hero": {
+    "title": "GIF PNG konverter",
+    "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/gif-png-konverter",
+      "label": "GIF PNG konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "GIF PNG konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "GIF PNG konverter",
+      "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "GIF PNG konverter",
+      "html": "<p class=\"text-mid\">Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF PNG konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF PNG konverter – Arteon",
+      "defaultSubject": "Feedback: GIF PNG konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

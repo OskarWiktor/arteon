@@ -47,6 +47,50 @@ export interface ClientDictionary {
   };
   mobileNav: { close: string; services: string; contact: string };
   infoBanner: { text: string; linkText: string };
+  imageConverter: {
+    addFiles: string;
+    dragDrop: string;
+    clickToSelect: string;
+    supported: string;
+    setQuality: string;
+    qualityHelper: string;
+    convertAndDownload: string;
+    inQueue: string;
+    files: string;
+    completed: string;
+    converting: string;
+    convert: string;
+    downloadAll: string;
+    clearAll: string;
+    totalInput: string;
+    totalOutput: string;
+    saved: string;
+    increased: string;
+    less: string;
+    more: string;
+    queueAriaLabel: string;
+    queueHeading: string;
+    readyCount: string;
+    pendingCount: string;
+    emptyState: string;
+    statusPending: string;
+    statusProcessing: string;
+    statusDone: string;
+    statusError: string;
+    before: string;
+    after: string;
+    download: string;
+    remove: string;
+    formatSelectorTo: string;
+    formatChangeConfirm: string;
+    errorFileLoad: string;
+    errorImageLoad: string;
+    errorCanvas: string;
+    errorGeneration: string;
+    errorTooLarge: string;
+    errorWrongFormat: string;
+    errorNoFiles: string;
+  };
 }
 
 interface LocaleContextType {

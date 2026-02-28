@@ -1,0 +1,77 @@
+{
+  "toolKey": "gifToJpg",
+  "locale": "nl",
+  "metadata": {
+    "title": "GIF naar JPG converter – GIF JPG",
+    "description": "Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/gif-naar-jpg-converter"
+  },
+  "hero": {
+    "title": "GIF naar JPG converter",
+    "description": "Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/gif-naar-jpg-converter",
+      "label": "GIF naar JPG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "GIF naar JPG converter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "GIF naar JPG converter",
+      "description": "Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "GIF naar JPG converter",
+      "html": "<p class=\"text-mid\">Exporteer het eerste frame van een GIF als compact JPG. Kleiner bestand.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF naar JPG converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF naar JPG converter – Arteon",
+      "defaultSubject": "Feedback: GIF naar JPG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

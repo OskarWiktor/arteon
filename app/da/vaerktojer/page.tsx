@@ -60,7 +60,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 1,
         name: 'JPG/PNG til WebP-konverter',
-        url: toAbsoluteUrl('/da/vaerktojer/jpg-png-til-webp-konverter'),
+        url: toAbsoluteUrl('/da/vaerktojer/jpg-til-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -166,14 +166,14 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'JPG/PNG til WebP-konverter',
               topImageAlt: 'JPG/PNG til WebP-konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-til-webp-konverter-da.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
                     Konverter JPG- eller PNG-billeder til <strong>WebP</strong>-format og reducer filstorrelsen. Hurtigere indlaesning af hjemmesiden.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/da/vaerktojer/jpg-png-til-webp-konverter">
+                    <Button arrow link="/da/vaerktojer/jpg-til-webp-konverter">
                       Abn vaerktojet
                     </Button>
                   </div>

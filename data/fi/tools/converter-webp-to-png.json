@@ -1,0 +1,77 @@
+{
+  "toolKey": "webpToPng",
+  "locale": "fi",
+  "metadata": {
+    "title": "WebP PNG -muunnin – WebP PNG",
+    "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/webp-png-muunnin"
+  },
+  "hero": {
+    "title": "WebP PNG -muunnin",
+    "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/webp-png-muunnin",
+      "label": "WebP PNG -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP PNG -muunnin",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "WebP PNG -muunnin",
+      "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "WebP PNG -muunnin",
+      "html": "<p class=\"text-mid\">Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP PNG -muunnin – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP PNG -muunnin – Arteon",
+      "defaultSubject": "Feedback: WebP PNG -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

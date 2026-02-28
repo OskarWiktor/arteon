@@ -1,0 +1,77 @@
+{
+  "toolKey": "bmpToPng",
+  "locale": "hu",
+  "metadata": {
+    "title": "BMP PNG konverter – BMP PNG",
+    "description": "BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/bmp-png-konverter"
+  },
+  "hero": {
+    "title": "BMP PNG konverter",
+    "description": "BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/bmp-png-konverter",
+      "label": "BMP PNG konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP PNG konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "BMP PNG konverter",
+      "description": "BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "BMP PNG konverter",
+      "html": "<p class=\"text-mid\">BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP PNG konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP PNG konverter – Arteon",
+      "defaultSubject": "Feedback: BMP PNG konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

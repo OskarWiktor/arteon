@@ -1,0 +1,108 @@
+{
+  "toolKey": "jpgToPng",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor JPG a PNG – formato sin pérdida gratis",
+    "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-jpg-a-png"
+  },
+  "hero": {
+    "title": "Convertidor JPG a PNG – cambia a calidad sin pérdida",
+    "description": "Convierte fotos JPG a formato PNG sin pérdida. Añade archivos, convierte al instante y descarga.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-jpg-a-png",
+      "label": "Convertidor JPG a PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor JPG a PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertidor JPG a PNG – cambia a calidad sin pérdida",
+      "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Por qué convertir JPG a PNG?",
+      "html": "<p class=\"text-mid mb-4\">JPG es un formato con pérdida: cada vez que se guarda, pierde algo de detalle. PNG usa compresión sin pérdida — no se descarta ningún dato, así que la imagen permanece perfecta píxel a píxel.</p><p class=\"text-mid mb-4\">Convertir JPG a PNG es útil cuando necesitas editar la imagen sin acumular artefactos de compresión, cuando una plataforma exige PNG o cuando quieres añadir transparencia después.</p><p class=\"text-mid\">Ten en cuenta que convertir JPG a PNG no restaura detalles ya perdidos en la compresión JPG original.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor JPG a PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertidor JPG a PNG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Los archivos no salen de tu ordenador. La conversión ocurre en el navegador."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sin límite de archivos",
+          "description": "Convierte tantas imágenes como necesites. Todos los archivos se procesan en secuencia."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Procesamiento instantáneo",
+          "description": "La conversión ocurre de forma nativa en tu navegador. Resultados en segundos."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Descarga con un clic",
+          "description": "Descarga archivos individualmente o todos a la vez."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor JPG a PNG – Arteon",
+      "defaultSubject": "Feedback: Convertidor JPG a PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

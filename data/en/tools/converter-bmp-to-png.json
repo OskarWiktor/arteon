@@ -1,0 +1,211 @@
+{
+  "toolKey": "bmpToPng",
+  "locale": "en",
+  "metadata": {
+    "title": "BMP to PNG converter – lossless compression free",
+    "description": "Convert BMP images to lossless PNG in your browser. Reduce file size while preserving every pixel. No signup, no uploads.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/bmp-to-png-converter"
+  },
+  "hero": {
+    "title": "BMP to PNG converter – preserve quality, reduce size",
+    "description": "Convert uncompressed BMP images to lossless PNG. Add files, convert in your browser, and download. No quality loss.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/bmp-to-png-converter",
+      "label": "BMP to PNG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP to PNG converter – free, unlimited files",
+      "alternateName": ["Bitmap to PNG converter", "Convert BMP to PNG online", "Change BMP to PNG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Free online BMP to PNG converter. Compress BMP to lossless PNG in your browser. No uploads, no limits.",
+      "featureList": ["BMP to PNG conversion", "Lossless compression", "Significant size reduction", "Batch conversion", "Individual or bulk download", "100% local processing"]
+    },
+    "howTo": {
+      "name": "How to convert BMP to PNG online",
+      "description": "Step-by-step guide to converting BMP files to PNG.",
+      "steps": [
+        {
+          "name": "Add BMP files",
+          "text": "Drag BMP files onto the drop zone or click to browse. Multiple files supported."
+        },
+        {
+          "name": "Convert",
+          "text": "Click Convert. Each BMP is re-encoded as PNG in your browser."
+        },
+        {
+          "name": "Download PNG files",
+          "text": "Download files individually or all at once. File sizes shown for comparison."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert BMP to PNG?",
+      "html": "<p class=\"text-mid mb-4\">BMP stores images without compression, resulting in very large files. PNG uses lossless compression — it preserves every pixel while significantly reducing file size (typically 50–80% smaller than BMP).</p><p class=\"text-mid mb-4\">Choose BMP-to-PNG when you need to reduce file size without any quality loss. PNG is ideal for graphics, diagrams, screenshots, and any image where pixel-perfect accuracy matters.</p><p class=\"text-mid\">If you do not need lossless quality, our <a href=\"/en/tools/bmp-to-jpg-converter\">BMP to JPG converter</a> will produce even smaller files.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP to PNG converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert BMP to PNG",
+      "description": "Quick steps:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Add BMP files",
+          "description": "Drag your BMP images onto the upload area or click to select them. No limit on files.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Convert",
+          "description": "Click Convert. Each file is processed instantly in your browser.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Download PNG",
+          "description": "Download each file or grab them all at once. Size comparison shown for every file.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert BMP to PNG?",
+      "description": "Common use cases:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Storage savings",
+          "description": "PNG files are much smaller than BMP while keeping identical quality. Great for archiving scans."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Web compatibility",
+          "description": "PNG is universally supported on the web. BMP is not used online."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Image editing",
+          "description": "PNG is the standard working format in most editors. Convert BMP first for a smoother workflow."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Documents",
+          "description": "Insert compact PNG images into documents without the bloat of BMP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this BMP to PNG converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "Files never leave your computer. Conversion uses the browser Canvas API — nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No file limit",
+          "description": "Convert as many images as you need. All files processed in sequence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Instant processing",
+          "description": "Conversion happens natively in your browser. Results are ready in seconds."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "One-click download",
+          "description": "Download files individually or all at once with a single click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about BMP to PNG conversion",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Does converting BMP to PNG lose quality?",
+          "answer": "No. PNG uses lossless compression, so the output is pixel-identical to the original BMP."
+        },
+        {
+          "question": "How much smaller will the PNG be?",
+          "answer": "Typically 50–80% smaller than BMP, depending on image content."
+        },
+        {
+          "question": "Can I convert multiple files at once?",
+          "answer": "Yes. No file limit."
+        },
+        {
+          "question": "Are files uploaded to a server?",
+          "answer": "No. Everything runs locally in your browser."
+        },
+        {
+          "question": "What is the maximum file size?",
+          "answer": "Individual files up to 100 MB are supported."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP to PNG converter – Arteon",
+      "defaultSubject": "Feedback: BMP to PNG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

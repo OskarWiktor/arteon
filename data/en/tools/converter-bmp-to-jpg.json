@@ -1,0 +1,211 @@
+{
+  "toolKey": "bmpToJpg",
+  "locale": "en",
+  "metadata": {
+    "title": "BMP to JPG converter – compress bitmap images free",
+    "description": "Convert uncompressed BMP files to lightweight JPG in your browser. Reduce file size dramatically. No signup, no uploads.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/bmp-to-jpg-converter"
+  },
+  "hero": {
+    "title": "BMP to JPG converter – shrink bitmap files instantly",
+    "description": "Convert BMP images to compact JPG. Add files, set quality, and download. Processing runs locally in your browser.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/bmp-to-jpg-converter",
+      "label": "BMP to JPG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP to JPG converter – free, unlimited files",
+      "alternateName": ["BMP to JPEG converter", "Convert BMP to JPG online", "Bitmap to JPG"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Free online BMP to JPG converter. Compress BMP images to lightweight JPG in your browser. No uploads, no limits.",
+      "featureList": ["BMP to JPG conversion", "Adjustable quality (60–95%)", "Massive size reduction", "Batch conversion", "Individual or bulk download", "100% local processing"]
+    },
+    "howTo": {
+      "name": "How to convert BMP to JPG online",
+      "description": "Step-by-step guide to converting BMP files to JPG.",
+      "steps": [
+        {
+          "name": "Add BMP files",
+          "text": "Drag BMP files onto the drop zone or click to browse. Multiple files supported."
+        },
+        {
+          "name": "Set JPG quality",
+          "text": "Adjust the quality slider (60–95%). Default 85% balances size and quality."
+        },
+        {
+          "name": "Download JPG files",
+          "text": "Download files individually or all at once. File sizes shown for comparison."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert BMP to JPG?",
+      "html": "<p class=\"text-mid mb-4\">BMP (Bitmap) is an uncompressed image format. A single BMP photo can easily exceed 10–50 MB because every pixel is stored without any compression. This makes BMP impractical for sharing, uploading, or storing large numbers of images.</p><p class=\"text-mid mb-4\">JPG applies lossy compression that reduces file size by 90–98% with minimal visible quality loss. Converting BMP to JPG produces a compact file that is easy to email, upload, or embed in documents.</p><p class=\"text-mid\">This tool processes everything locally in your browser. Your BMP files are never uploaded to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP to JPG converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert BMP to JPG",
+      "description": "Quick steps:",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Add BMP files",
+          "description": "Drag your BMP images onto the upload area or click to select them. No limit on files.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Set quality",
+          "description": "Choose the JPG quality level. Lower value = smaller file, higher = sharper image.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Download JPG",
+          "description": "Download each file or grab them all at once. Size comparison shown for every file.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert BMP to JPG?",
+      "description": "Common use cases:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiMailLine",
+          "title": "Email attachments",
+          "description": "BMP files are far too large for email. Converting to JPG typically shrinks them by 95%+."
+        },
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Storage savings",
+          "description": "A folder of BMP screenshots or scans can consume gigabytes. Converting to JPG frees enormous amounts of disk space."
+        },
+        {
+          "icon": "RiUploadCloudLine",
+          "title": "Web uploads",
+          "description": "Websites and platforms rarely accept BMP. JPG is accepted everywhere."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Documents",
+          "description": "Insert compact JPG images into documents instead of bloated BMPs."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this BMP to JPG converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "Files never leave your computer. Conversion uses the browser Canvas API — nothing is uploaded."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "No file limit",
+          "description": "Convert as many images as you need. All files processed in sequence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Instant processing",
+          "description": "Conversion happens natively in your browser. Results are ready in seconds."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "One-click download",
+          "description": "Download files individually or all at once with a single click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about BMP to JPG conversion",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How much smaller will the JPG be?",
+          "answer": "BMP files are uncompressed, so the reduction is dramatic. A 20 MB BMP typically becomes 0.5–1.5 MB as JPG at 85% — a 95%+ reduction."
+        },
+        {
+          "question": "Does conversion lose quality?",
+          "answer": "JPG is lossy, but at 80–85% quality the difference from the original is negligible."
+        },
+        {
+          "question": "Can I convert multiple files at once?",
+          "answer": "Yes. No file limit."
+        },
+        {
+          "question": "Are files uploaded to a server?",
+          "answer": "No. Everything runs locally in your browser."
+        },
+        {
+          "question": "What is the maximum file size?",
+          "answer": "Individual files up to 100 MB are supported."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP to JPG converter – Arteon",
+      "defaultSubject": "Feedback: BMP to JPG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

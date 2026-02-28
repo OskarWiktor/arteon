@@ -71,7 +71,7 @@ const schema = {
         position: 1,
         name: 'Convertor JPG și PNG în WebP online',
         description: 'Convertor gratuit online JPG și PNG în WebP. Reduceți dimensiunea fișierelor cu până la 35% fără pierderi vizibile de calitate. Fără înregistrare — fișierele rămân în browser.',
-        url: toAbsoluteUrl('/ro/instrumente/convertor-jpg-png-in-webp'),
+        url: toAbsoluteUrl('/ro/instrumente/convertor-jpg-in-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -211,14 +211,14 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Convertor JPG/PNG în WebP',
               topImageAlt: 'Convertor JPG/PNG în WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-in-webp-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
                     Convertiți imagini JPG sau PNG în format <strong>WebP</strong> și reduceți dimensiunea fișierelor. Timp de încărcare mai rapid pentru site-ul dvs.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/ro/instrumente/convertor-jpg-png-in-webp">
+                    <Button arrow link="/ro/instrumente/convertor-jpg-in-webp">
                       Deschide instrumentul
                     </Button>
                   </div>

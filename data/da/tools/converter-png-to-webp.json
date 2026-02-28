@@ -1,0 +1,77 @@
+{
+  "toolKey": "pngToWebpSimple",
+  "locale": "da",
+  "metadata": {
+    "title": "PNG til WebP-konverter – PNG WebP",
+    "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/png-til-webp-konverter"
+  },
+  "hero": {
+    "title": "PNG til WebP-konverter",
+    "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/png-til-webp-konverter",
+      "label": "PNG til WebP-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PNG til WebP-konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "PNG til WebP-konverter",
+      "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "PNG til WebP-konverter",
+      "html": "<p class=\"text-mid\">Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG til WebP-konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG til WebP-konverter – Arteon",
+      "defaultSubject": "Feedback: PNG til WebP-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

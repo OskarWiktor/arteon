@@ -1,0 +1,77 @@
+{
+  "toolKey": "bmpToPng",
+  "locale": "no",
+  "metadata": {
+    "title": "BMP til PNG-konverterer – BMP PNG",
+    "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/bmp-til-png-konverterer"
+  },
+  "hero": {
+    "title": "BMP til PNG-konverterer",
+    "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/bmp-til-png-konverterer",
+      "label": "BMP til PNG-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP til PNG-konverterer",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "BMP til PNG-konverterer",
+      "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "BMP til PNG-konverterer",
+      "html": "<p class=\"text-mid\">Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP til PNG-konverterer – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP til PNG-konverterer – Arteon",
+      "defaultSubject": "Feedback: BMP til PNG-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

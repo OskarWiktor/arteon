@@ -61,7 +61,7 @@ const schema = {
         position: 1,
         name: 'JPG és PNG WebP konverter online',
         description: 'Ingyenes online JPG és PNG WebP konverter. Csökkentse a fájlméretet akár 35%-kal látható minőségromlás nélkül. Regisztráció nélkül — a fájlok a böngészőben maradnak.',
-        url: toAbsoluteUrl('/hu/eszkozok/jpg-png-webp-konverter'),
+        url: toAbsoluteUrl('/hu/eszkozok/jpg-webp-konverter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -189,14 +189,14 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'JPG/PNG WebP konverter',
               topImageAlt: 'JPG/PNG WebP konverter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-webp-konverter-hu.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
                     Konvertálja JPG vagy PNG képeit <strong>WebP</strong> formátumba és csökkentse a fájlméretet. Gyorsabb betöltési idő a weboldalának.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/hu/eszkozok/jpg-png-webp-konverter">
+                    <Button arrow link="/hu/eszkozok/jpg-webp-konverter">
                       Eszköz megnyitása
                     </Button>
                   </div>

@@ -80,6 +80,7 @@ export type ToolSectionItem = {
   description: string;
   image: string;
   icon?: IconType;
+  desktopOnly?: boolean;
 };
 
 export type ToolsSection = {

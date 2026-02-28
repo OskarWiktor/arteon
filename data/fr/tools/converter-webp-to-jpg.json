@@ -1,0 +1,108 @@
+{
+  "toolKey": "webpToJpg",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur WebP en JPG – compatibilité universelle gratuite",
+    "description": "Convertissez vos fichiers WebP en JPG universel. Sans limites, sans inscription.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-webp-en-jpg"
+  },
+  "hero": {
+    "title": "Convertisseur WebP en JPG – compatibilité universelle en un clic",
+    "description": "Convertissez vos fichiers WebP en JPG compatible partout. Ajoutez, convertissez et téléchargez.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-webp-en-jpg",
+      "label": "Convertisseur WebP en JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur WebP en JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez vos fichiers WebP en JPG universel. Sans limites, sans inscription.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertisseur WebP en JPG – compatibilité universelle en un clic",
+      "description": "Convertissez vos fichiers WebP en JPG universel. Sans limites, sans inscription.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir WebP en JPG ?",
+      "html": "<p class=\"text-mid mb-4\">WebP offre une excellente compression, mais certains logiciels ne le supportent pas. JPG est le format photo le plus compatible au monde.</p><p class=\"text-mid\">Convertir WebP en JPG est utile pour les pièces jointes, les documents, l'impression et le partage avec des personnes utilisant des logiciels anciens.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur WebP en JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertisseur WebP en JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Les fichiers ne quittent pas votre ordinateur. La conversion a lieu dans le navigateur."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sans limite de fichiers",
+          "description": "Convertissez autant d'images que nécessaire. Tous les fichiers sont traités en séquence."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Traitement instantané",
+          "description": "La conversion est native dans votre navigateur. Résultats en quelques secondes."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Téléchargement en un clic",
+          "description": "Téléchargez les fichiers individuellement ou tous en une fois."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertisseur WebP en JPG – Arteon",
+      "defaultSubject": "Feedback: Convertisseur WebP en JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

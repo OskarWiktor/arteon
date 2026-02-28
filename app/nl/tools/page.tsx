@@ -61,7 +61,7 @@ const schema = {
         position: 1,
         name: 'JPG- en PNG-naar-WebP-converter online',
         description: 'Gratis online JPG- en PNG-naar-WebP-converter. Verklein bestanden tot 35\u00a0% zonder zichtbaar kwaliteitsverlies. Zonder registratie — bestanden blijven in uw browser.',
-        url: toAbsoluteUrl('/nl/tools/jpg-png-naar-webp-converter'),
+        url: toAbsoluteUrl('/nl/tools/jpg-naar-webp-converter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -185,14 +185,14 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'JPG/PNG naar WebP-converter',
               topImageAlt: 'JPG/PNG naar WebP-converter Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-naar-webp-converter-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
                     Converteer JPG- of PNG-afbeeldingen naar <strong>WebP</strong>-formaat en verklein de bestandsgrootte. Snellere laadtijden voor uw website.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/nl/tools/jpg-png-naar-webp-converter">
+                    <Button arrow link="/nl/tools/jpg-naar-webp-converter">
                       Tool openen
                     </Button>
                   </div>

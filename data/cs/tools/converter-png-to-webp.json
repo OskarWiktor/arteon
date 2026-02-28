@@ -1,0 +1,77 @@
+{
+  "toolKey": "pngToWebpSimple",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník PNG na WebP – PNG WebP",
+    "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-png-na-webp"
+  },
+  "hero": {
+    "title": "Převodník PNG na WebP",
+    "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-png-na-webp",
+      "label": "Převodník PNG na WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník PNG na WebP",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Převodník PNG na WebP",
+      "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Převodník PNG na WebP",
+      "html": "<p class=\"text-mid\">Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník PNG na WebP – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník PNG na WebP – Arteon",
+      "defaultSubject": "Feedback: Převodník PNG na WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

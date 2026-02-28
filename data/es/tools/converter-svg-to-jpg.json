@@ -1,0 +1,108 @@
+{
+  "toolKey": "svgToJpg",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor SVG a JPG – rasteriza vectores a JPG gratis",
+    "description": "Convierte gráficos SVG a JPG compacto. Archivo más pequeño, compatibilidad total.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/es/herramientas/convertidor-svg-a-jpg"
+  },
+  "hero": {
+    "title": "Convertidor SVG a JPG – imágenes compactas desde vectores",
+    "description": "Convierte archivos SVG a formato JPG. Añade gráficos, ajusta la calidad y descarga.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-svg-a-jpg",
+      "label": "Convertidor SVG a JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor SVG a JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convierte gráficos SVG a JPG compacto. Archivo más pequeño, compatibilidad total.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertidor SVG a JPG – imágenes compactas desde vectores",
+      "description": "Convierte gráficos SVG a JPG compacto. Archivo más pequeño, compatibilidad total.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Por qué convertir SVG a JPG?",
+      "html": "<p class=\"text-mid mb-4\">SVG es ideal para logos e iconos, pero muchas plataformas solo aceptan imágenes raster. JPG produce archivos más pequeños que PNG cuando no se necesita transparencia.</p><p class=\"text-mid\">Nota: JPG no soporta transparencia — las áreas transparentes del SVG se llenarán con fondo blanco.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor SVG a JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Convertidor SVG a JPG",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Los archivos no salen de tu ordenador. La conversión ocurre en el navegador."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Sin límite de archivos",
+          "description": "Convierte tantas imágenes como necesites. Todos los archivos se procesan en secuencia."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Procesamiento instantáneo",
+          "description": "La conversión ocurre de forma nativa en tu navegador. Resultados en segundos."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Descarga con un clic",
+          "description": "Descarga archivos individualmente o todos a la vez."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertidor SVG a JPG – Arteon",
+      "defaultSubject": "Feedback: Convertidor SVG a JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

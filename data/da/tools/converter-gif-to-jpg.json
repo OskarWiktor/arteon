@@ -1,0 +1,77 @@
+{
+  "toolKey": "gifToJpg",
+  "locale": "da",
+  "metadata": {
+    "title": "GIF til JPG-konverter – GIF JPG",
+    "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/gif-til-jpg-konverter"
+  },
+  "hero": {
+    "title": "GIF til JPG-konverter",
+    "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/gif-til-jpg-konverter",
+      "label": "GIF til JPG-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "GIF til JPG-konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "GIF til JPG-konverter",
+      "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "GIF til JPG-konverter",
+      "html": "<p class=\"text-mid\">Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF til JPG-konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF til JPG-konverter – Arteon",
+      "defaultSubject": "Feedback: GIF til JPG-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

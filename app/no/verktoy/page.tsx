@@ -60,7 +60,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 1,
         name: 'JPG/PNG til WebP-konverterer',
-        url: toAbsoluteUrl('/no/verktoy/jpg-png-til-webp-konverterer'),
+        url: toAbsoluteUrl('/no/verktoy/jpg-til-webp-konverterer'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -166,14 +166,14 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'JPG/PNG til WebP-konverterer',
               topImageAlt: 'JPG/PNG til WebP-konverterer Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-til-webp-konverterer-no.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
                     Konverter JPG- eller PNG-bilder til <strong>WebP</strong>-format og reduser filstorrelsen. Raskere lasting av nettsiden.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/no/verktoy/jpg-png-til-webp-konverterer">
+                    <Button arrow link="/no/verktoy/jpg-til-webp-konverterer">
                       Aapne verktoyet
                     </Button>
                   </div>

@@ -1,0 +1,77 @@
+{
+  "toolKey": "webpToPng",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor WebP para PNG – WebP PNG",
+    "description": "Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/pt/ferramentas/conversor-webp-para-png"
+  },
+  "hero": {
+    "title": "Conversor WebP para PNG",
+    "description": "Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-webp-para-png",
+      "label": "Conversor WebP para PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor WebP para PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Conversor WebP para PNG",
+      "description": "Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Conversor WebP para PNG",
+      "html": "<p class=\"text-mid\">Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Conversor WebP para PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as ferramentas",
+      "description": "Tem uma ideia, encontrou um erro ou quer sugerir uma funcionalidade? Envie-nos uma mensagem — respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Conversor WebP para PNG – Arteon",
+      "defaultSubject": "Feedback: Conversor WebP para PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "toolKey": "svgToPng",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore SVG in PNG – SVG PNG",
+    "description": "Converti grafiche vettoriali SVG in PNG. Ideale per documenti e social media.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-svg-in-png"
+  },
+  "hero": {
+    "title": "Convertitore SVG in PNG",
+    "description": "Converti grafiche vettoriali SVG in PNG. Ideale per documenti e social media.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-svg-in-png",
+      "label": "Convertitore SVG in PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore SVG in PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti grafiche vettoriali SVG in PNG. Ideale per documenti e social media.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertitore SVG in PNG",
+      "description": "Converti grafiche vettoriali SVG in PNG. Ideale per documenti e social media.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertitore SVG in PNG",
+      "html": "<p class=\"text-mid\">Converti grafiche vettoriali SVG in PNG. Ideale per documenti e social media.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore SVG in PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore SVG in PNG – Arteon",
+      "defaultSubject": "Feedback: Convertitore SVG in PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

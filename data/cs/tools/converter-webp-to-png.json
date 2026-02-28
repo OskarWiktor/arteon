@@ -1,0 +1,77 @@
+{
+  "toolKey": "webpToPng",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník WebP na PNG – WebP PNG",
+    "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-webp-na-png"
+  },
+  "hero": {
+    "title": "Převodník WebP na PNG",
+    "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-webp-na-png",
+      "label": "Převodník WebP na PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník WebP na PNG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Převodník WebP na PNG",
+      "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Převodník WebP na PNG",
+      "html": "<p class=\"text-mid\">Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník WebP na PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Převodník WebP na PNG – Arteon",
+      "defaultSubject": "Feedback: Převodník WebP na PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

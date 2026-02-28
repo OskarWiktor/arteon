@@ -1,0 +1,77 @@
+{
+  "toolKey": "svgToPng",
+  "locale": "da",
+  "metadata": {
+    "title": "SVG til PNG-konverter – SVG PNG",
+    "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/svg-til-png-konverter"
+  },
+  "hero": {
+    "title": "SVG til PNG-konverter",
+    "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/svg-til-png-konverter",
+      "label": "SVG til PNG-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG til PNG-konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "SVG til PNG-konverter",
+      "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "SVG til PNG-konverter",
+      "html": "<p class=\"text-mid\">Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG til PNG-konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG til PNG-konverter – Arteon",
+      "defaultSubject": "Feedback: SVG til PNG-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "toolKey": "gifToJpg",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore GIF in JPG – GIF JPG",
+    "description": "Esporta il primo fotogramma di un GIF come JPG compatto. File più piccolo.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-gif-in-jpg"
+  },
+  "hero": {
+    "title": "Convertitore GIF in JPG",
+    "description": "Esporta il primo fotogramma di un GIF come JPG compatto. File più piccolo.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-gif-in-jpg",
+      "label": "Convertitore GIF in JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore GIF in JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Esporta il primo fotogramma di un GIF come JPG compatto. File più piccolo.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertitore GIF in JPG",
+      "description": "Esporta il primo fotogramma di un GIF come JPG compatto. File più piccolo.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertitore GIF in JPG",
+      "html": "<p class=\"text-mid\">Esporta il primo fotogramma di un GIF come JPG compatto. File più piccolo.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore GIF in JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore GIF in JPG – Arteon",
+      "defaultSubject": "Feedback: Convertitore GIF in JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

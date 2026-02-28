@@ -1,39 +1,60 @@
+import type { Locale } from '@/types/locale';
+import type { ToolItemKey } from '@/types/tools/common';
+import { getToolHref } from '@/lib/i18n/tool-registry';
+
 import type { ImageFormat, OutputFormat } from './types';
 
-export interface ConversionRoute {
+export interface ConversionRouteDef {
   source: ImageFormat;
   target: OutputFormat;
-  slug: string;
-  href: string;
+  toolKey: ToolItemKey;
   desktopOnly: boolean;
 }
 
-export const CONVERSION_ROUTES: ConversionRoute[] = [
-  { source: 'png', target: 'jpg', slug: 'konwerter-png-na-jpg', href: '/narzedzia/konwerter-png-na-jpg', desktopOnly: false },
-  { source: 'jpg', target: 'png', slug: 'konwerter-jpg-na-png', href: '/narzedzia/konwerter-jpg-na-png', desktopOnly: false },
-  { source: 'webp', target: 'jpg', slug: 'konwerter-webp-na-jpg', href: '/narzedzia/konwerter-webp-na-jpg', desktopOnly: false },
-  { source: 'webp', target: 'png', slug: 'konwerter-webp-na-png', href: '/narzedzia/konwerter-webp-na-png', desktopOnly: false },
-  { source: 'svg', target: 'png', slug: 'konwerter-svg-na-png', href: '/narzedzia/konwerter-svg-na-png', desktopOnly: false },
-  { source: 'svg', target: 'jpg', slug: 'konwerter-svg-na-jpg', href: '/narzedzia/konwerter-svg-na-jpg', desktopOnly: false },
-  { source: 'bmp', target: 'jpg', slug: 'konwerter-bmp-na-jpg', href: '/narzedzia/konwerter-bmp-na-jpg', desktopOnly: false },
-  { source: 'bmp', target: 'png', slug: 'konwerter-bmp-na-png', href: '/narzedzia/konwerter-bmp-na-png', desktopOnly: false },
-  { source: 'gif', target: 'png', slug: 'konwerter-gif-na-png', href: '/narzedzia/konwerter-gif-na-png', desktopOnly: false },
-  { source: 'gif', target: 'jpg', slug: 'konwerter-gif-na-jpg', href: '/narzedzia/konwerter-gif-na-jpg', desktopOnly: false },
-  { source: 'jpg', target: 'webp', slug: 'konwerter-jpg-na-webp', href: '/narzedzia/konwerter-jpg-na-webp', desktopOnly: true },
-  { source: 'png', target: 'webp', slug: 'konwerter-png-na-webp', href: '/narzedzia/konwerter-png-na-webp', desktopOnly: true },
+export interface ConversionRoute extends ConversionRouteDef {
+  href: string;
+}
+
+const CONVERSION_ROUTE_DEFS: ConversionRouteDef[] = [
+  { source: 'png', target: 'jpg', toolKey: 'pngToJpg', desktopOnly: false },
+  { source: 'jpg', target: 'png', toolKey: 'jpgToPng', desktopOnly: false },
+  { source: 'webp', target: 'jpg', toolKey: 'webpToJpg', desktopOnly: false },
+  { source: 'webp', target: 'png', toolKey: 'webpToPng', desktopOnly: false },
+  { source: 'svg', target: 'png', toolKey: 'svgToPng', desktopOnly: false },
+  { source: 'svg', target: 'jpg', toolKey: 'svgToJpg', desktopOnly: false },
+  { source: 'bmp', target: 'jpg', toolKey: 'bmpToJpg', desktopOnly: false },
+  { source: 'bmp', target: 'png', toolKey: 'bmpToPng', desktopOnly: false },
+  { source: 'gif', target: 'png', toolKey: 'gifToPng', desktopOnly: false },
+  { source: 'gif', target: 'jpg', toolKey: 'gifToJpg', desktopOnly: false },
+  { source: 'jpg', target: 'webp', toolKey: 'jpgToWebpSimple', desktopOnly: true },
+  { source: 'png', target: 'webp', toolKey: 'pngToWebpSimple', desktopOnly: true },
 ];
 
-export function getConversionRoute(source: ImageFormat, target: OutputFormat): ConversionRoute | undefined {
-  return CONVERSION_ROUTES.find((r) => r.source === source && r.target === target);
+export function getConversionRoutes(locale: Locale): ConversionRoute[] {
+  return CONVERSION_ROUTE_DEFS.map((def) => ({
+    ...def,
+    href: getToolHref(def.toolKey, locale),
+  })).filter((r) => r.href !== '#');
+}
+
+export function getConversionRoute(source: ImageFormat, target: OutputFormat, locale: Locale): ConversionRoute | undefined {
+  const href = getToolHref(CONVERSION_ROUTE_DEFS.find((r) => r.source === source && r.target === target)?.toolKey ?? ('pngToJpg' as ToolItemKey), locale);
+  const def = CONVERSION_ROUTE_DEFS.find((r) => r.source === source && r.target === target);
+  if (!def || href === '#') return undefined;
+  return { ...def, href };
 }
 
 export const SOURCE_FORMATS: ImageFormat[] = ['jpg', 'png', 'webp', 'svg', 'bmp', 'gif'];
 export const TARGET_FORMATS: OutputFormat[] = ['jpg', 'png', 'webp'];
 
-export function getAvailableTargets(source: ImageFormat): OutputFormat[] {
-  return CONVERSION_ROUTES.filter((r) => r.source === source).map((r) => r.target);
+export function getAvailableTargets(source: ImageFormat, locale: Locale): OutputFormat[] {
+  return getConversionRoutes(locale)
+    .filter((r) => r.source === source)
+    .map((r) => r.target);
 }
 
-export function getAvailableSources(target: OutputFormat): ImageFormat[] {
-  return CONVERSION_ROUTES.filter((r) => r.target === target).map((r) => r.source);
+export function getAvailableSources(target: OutputFormat, locale: Locale): ImageFormat[] {
+  return getConversionRoutes(locale)
+    .filter((r) => r.target === target)
+    .map((r) => r.source);
 }

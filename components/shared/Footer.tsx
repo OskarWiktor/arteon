@@ -97,7 +97,7 @@ const toolsLinks = [
   { href: '/narzedzia/kontrast-i-czytelnosc-kolorow', label: 'Kontrast i czytelność kolorów' },
   { href: '/narzedzia/ekstraktor-kolorow-z-obrazu', label: 'Ekstraktor kolorów z obrazu' },
   { href: '/narzedzia/generator-palet-kolorow', label: 'Generator palet kolorów' },
-  { href: '/narzedzia/jpg-png-na-webp-bez-limitu', label: 'Konwerter JPG/PNG na WebP' },
+  { href: '/narzedzia/konwerter-jpg-na-webp', label: 'Konwerter JPG na WebP' },
   { href: '/narzedzia/edytor-zdjec-online', label: 'Kadrowanie i zmiana rozmiaru obrazu' },
   { href: '/narzedzia/darmowy-generator-favicon-ico', label: 'Generator favicon' },
   { href: '/narzedzia/darmowy-generator-stopki-mailowej', label: 'Generator stopki mailowej HTML' },

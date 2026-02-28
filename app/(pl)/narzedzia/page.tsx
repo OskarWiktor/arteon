@@ -385,7 +385,7 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
               title: 'Konwerter JPG na WebP',
               topImageAlt: 'Konwerter JPG na WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konwerter-jpg-na-webp-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -403,7 +403,7 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
               title: 'Konwerter PNG na JPG',
               topImageAlt: 'Konwerter PNG na JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konwerter-jpg-na-webp-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Zamień pliki PNG na lekki JPG. Zmniejsz rozmiar grafik i zdjęć do formatu akceptowanego przez każdą platformę.</p>
@@ -419,7 +419,7 @@ export default function ToolsIndexPage() {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
               title: 'Konwerter WebP na JPG',
               topImageAlt: 'Konwerter WebP na JPG Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konwerter-jpg-na-webp-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Zamień pliki WebP na JPG — format kompatybilny z każdym programem, platformą sprzedażową i klientem e-mail.</p>

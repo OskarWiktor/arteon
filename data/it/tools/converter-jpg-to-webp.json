@@ -1,0 +1,77 @@
+{
+  "toolKey": "jpgToWebpSimple",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore JPG in WebP – JPG WebP",
+    "description": "Converti foto JPG in WebP leggero. Riduci il peso delle immagini fino al 35%.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-jpg-in-webp"
+  },
+  "hero": {
+    "title": "Convertitore JPG in WebP",
+    "description": "Converti foto JPG in WebP leggero. Riduci il peso delle immagini fino al 35%.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-jpg-in-webp",
+      "label": "Convertitore JPG in WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore JPG in WebP",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converti foto JPG in WebP leggero. Riduci il peso delle immagini fino al 35%.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Convertitore JPG in WebP",
+      "description": "Converti foto JPG in WebP leggero. Riduci il peso delle immagini fino al 35%.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Convertitore JPG in WebP",
+      "html": "<p class=\"text-mid\">Converti foto JPG in WebP leggero. Riduci il peso delle immagini fino al 35%.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore JPG in WebP – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Convertitore JPG in WebP – Arteon",
+      "defaultSubject": "Feedback: Convertitore JPG in WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

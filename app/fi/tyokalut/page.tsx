@@ -60,7 +60,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 1,
         name: 'JPG/PNG–WebP-muunnin',
-        url: toAbsoluteUrl('/fi/tyokalut/jpg-png-webp-muunnin'),
+        url: toAbsoluteUrl('/fi/tyokalut/jpg-webp-muunnin'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -169,14 +169,14 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'JPG/PNG–WebP-muunnin',
               topImageAlt: 'JPG/PNG WebP-muunnin Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-webp-muunnin-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
                     Muunna JPG- tai PNG-kuvat <strong>WebP</strong>-muotoon ja pienennä tiedostokokoa. Nopeampi sivuston lataus.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/jpg-png-webp-muunnin">
+                    <Button arrow link="/fi/tyokalut/jpg-webp-muunnin">
                       Avaa työkalu
                     </Button>
                   </div>

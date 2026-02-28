@@ -1,0 +1,148 @@
+{
+  "toolKey": "jpgToPng",
+  "locale": "en",
+  "metadata": {
+    "title": "JPG to PNG converter \u2013 lossless format change free",
+    "description": "Convert JPG images to lossless PNG in your browser. No file limits, no registration, no server uploads. Preserve every detail.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/jpg-to-png-converter"
+  },
+  "hero": {
+    "title": "JPG to PNG converter \u2013 switch to lossless quality",
+    "description": "Convert JPG photos to lossless PNG format. Add files, convert instantly, and download. Runs entirely in your browser \u2014 files never leave your device.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": { "href": "/en/tools", "label": "Tools" },
+    "third": { "href": "/en/tools/jpg-to-png-converter", "label": "JPG to PNG converter" }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG to PNG converter \u2013 free, unlimited files",
+      "alternateName": ["JPEG to PNG converter", "Convert JPG to PNG online", "Change JPEG to PNG", "Free JPG to PNG tool"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Free online JPG to PNG converter. Transform JPEG images to lossless PNG directly in your browser \u2014 no files are uploaded. Unlimited conversions, no signup.",
+      "featureList": [
+        "JPG to PNG conversion",
+        "Lossless output preserving all details",
+        "Batch conversion of multiple files",
+        "Before and after file size preview",
+        "Individual or bulk download",
+        "100% local processing in the browser"
+      ]
+    },
+    "howTo": {
+      "name": "How to convert JPG to PNG online",
+      "description": "Step-by-step guide to converting JPG files to lossless PNG using this free tool.",
+      "steps": [
+        { "name": "Add JPG files", "text": "Drag JPG images onto the drop zone or click to select them from your device. Multiple files are supported." },
+        { "name": "Convert", "text": "Click the Convert button. Each JPG is re-encoded as a lossless PNG instantly in your browser." },
+        { "name": "Download PNG files", "text": "Download files one by one or all at once. Each entry shows the original and new file size." }
+      ]
+    }
+  },
+  "contentBlocks": [
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert JPG to PNG?",
+      "html": "<p class=\"text-mid mb-4\">JPG (JPEG) is a lossy format optimised for photographs. Every time a JPG file is re-saved, the image loses a small amount of detail due to lossy compression. PNG, on the other hand, uses lossless compression \u2014 no data is discarded, so the image remains pixel-perfect.</p><p class=\"text-mid mb-4\">Converting JPG to PNG is useful when you need to edit an image further without accumulating compression artefacts, when a platform requires PNG uploads, or when you want to add transparency later in a graphics editor.</p><p class=\"text-mid mb-4\">Keep in mind that converting a JPG to PNG does not restore detail already lost during the original JPG compression. The resulting PNG will be a faithful, lossless copy of the JPG \u2014 but at a larger file size.</p><p class=\"text-mid\">This tool processes everything locally in your browser. Your images are never uploaded to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG to PNG converter \u2013 Arteon"
+    },
+    { "type": "gap", "size": "xs" },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert JPG to PNG",
+      "description": "Three simple steps:",
+      "grid": "three",
+      "items": [
+        { "title": "1. Add JPG files", "description": "Drag your JPG images onto the upload area or click to browse. No limit on the number of files.", "icon": "RiUploadLine" },
+        { "title": "2. Convert", "description": "Press Convert. Each image is re-encoded to lossless PNG in your browser within seconds.", "icon": "RiLoopLeftLine" },
+        { "title": "3. Download PNG", "description": "Download each file individually or grab them all at once. File sizes are displayed for easy comparison.", "icon": "RiDownloadLine" }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert JPG to PNG?",
+      "description": "Common use cases for JPG-to-PNG conversion:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiEditLine",
+          "title": "Further image editing",
+          "description": "If you plan to edit a photo in a graphics tool, converting to PNG first prevents additional quality loss from repeated JPG saves."
+        },
+        {
+          "icon": "RiUploadCloudLine",
+          "title": "Platform requirements",
+          "description": "Some websites, print services, and submission portals specifically require PNG uploads. A quick conversion ensures compliance."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Adding transparency",
+          "description": "PNG supports an alpha channel. Convert to PNG, then use a graphics editor to remove the background and save with transparency."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Print-quality archiving",
+          "description": "Store important images in lossless PNG to prevent further degradation, especially if the original RAW file is unavailable."
+        }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this JPG to PNG converter different?",
+      "grid": "two",
+      "items": [
+        { "icon": "RiShieldCheckLine", "title": "Complete privacy", "description": "Files never leave your computer. Conversion uses the browser Canvas API \u2014 nothing is sent to any server." },
+        { "icon": "RiInfinityFill", "title": "No file limit", "description": "Convert as many images as you need. All files are processed in sequence and ready for download." },
+        { "icon": "RiSpeedLine", "title": "Instant conversion", "description": "PNG encoding is handled natively by your browser, so conversions complete in seconds even for large files." },
+        { "icon": "RiDownloadLine", "title": "One-click download", "description": "Download converted files individually or all at once with a single click." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about JPG to PNG conversion",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Does converting JPG to PNG improve image quality?",
+          "answer": "No. PNG is lossless, but it cannot restore detail already discarded by JPG compression. The resulting PNG is a pixel-perfect copy of the JPG \u2014 just stored in a lossless container."
+        },
+        {
+          "question": "Why is the PNG file larger than the original JPG?",
+          "answer": "PNG uses lossless compression, which preserves every pixel. JPG achieves smaller sizes by discarding data. So the same image in PNG will almost always be larger."
+        },
+        { "question": "Can I convert multiple files at once?", "answer": "Yes. There is no file limit. Add as many JPGs as you like and convert them all in a single batch." },
+        { "question": "Are my files uploaded to a server?", "answer": "No. Everything runs locally in your browser. Files never leave your device." },
+        {
+          "question": "Will the converted PNG have transparency?",
+          "answer": "No. JPG does not contain transparency data, so the PNG will have a solid (white) background. You can add transparency later using a graphics editor."
+        },
+        {
+          "question": "Does this tool work on mobile?",
+          "answer": "Yes, but we recommend a laptop or desktop for the best experience. The converter uses the HTML5 Canvas API supported by all modern browsers."
+        },
+        { "question": "What is the maximum file size?", "answer": "Individual files up to 100 MB are supported. There is no cap on the total number of files per session." },
+        { "question": "Can I convert PNG back to JPG?", "answer": "Absolutely. Use our <a href=\"/en/tools/png-to-jpg-converter\">PNG to JPG converter</a> to switch back at any time." }
+      ]
+    },
+    { "type": "gap", "variant": "line" },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool? Drop us a message \u2014 we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG to PNG converter \u2013 Arteon",
+      "defaultSubject": "Feedback: JPG to PNG converter"
+    },
+    { "type": "gap", "variant": "line" },
+    { "type": "toolsCarousel", "title": "Explore more free tools" },
+    { "type": "gap", "size": "sm" }
+  ]
+}

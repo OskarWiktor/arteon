@@ -60,7 +60,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 1,
         name: 'Μετατροπέας JPG/PNG σε WebP',
-        url: toAbsoluteUrl('/el/ergaleia/metatropeas-jpg-png-se-webp'),
+        url: toAbsoluteUrl('/el/ergaleia/metatropeas-jpg-se-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
       },
@@ -179,14 +179,14 @@ export default function ToolsIndexPage() {
               icon: <RiImageEditLine className="h-8 w-8" />,
               title: 'Μετατροπέας JPG/PNG σε WebP',
               topImageAlt: 'Μετατροπέας JPG/PNG σε WebP Arteon',
-              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-se-webp-el.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
                     Μετατρέψτε εικόνες JPG και PNG σε μορφή <strong>WebP</strong> και μειώστε το μέγεθος αρχείων. Ταχύτερη φόρτωση σελίδων.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-jpg-png-se-webp">
+                    <Button arrow link="/el/ergaleia/metatropeas-jpg-se-webp">
                       Άνοιγμα εργαλείου
                     </Button>
                   </div>

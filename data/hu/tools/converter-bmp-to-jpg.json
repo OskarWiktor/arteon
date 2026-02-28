@@ -1,0 +1,77 @@
+{
+  "toolKey": "bmpToJpg",
+  "locale": "hu",
+  "metadata": {
+    "title": "BMP JPG konverter – BMP JPG",
+    "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/bmp-jpg-konverter"
+  },
+  "hero": {
+    "title": "BMP JPG konverter",
+    "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/bmp-jpg-konverter",
+      "label": "BMP JPG konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP JPG konverter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "BMP JPG konverter",
+      "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "BMP JPG konverter",
+      "html": "<p class=\"text-mid\">BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP JPG konverter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP JPG konverter – Arteon",
+      "defaultSubject": "Feedback: BMP JPG konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

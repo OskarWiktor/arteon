@@ -1,0 +1,77 @@
+{
+  "toolKey": "svgToJpg",
+  "locale": "no",
+  "metadata": {
+    "title": "SVG til JPG-konverterer – SVG JPG",
+    "description": "Konverter SVG-grafikk til kompakt JPG. Mindre fil, full kompatibilitet.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/svg-til-jpg-konverterer"
+  },
+  "hero": {
+    "title": "SVG til JPG-konverterer",
+    "description": "Konverter SVG-grafikk til kompakt JPG. Mindre fil, full kompatibilitet.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/svg-til-jpg-konverterer",
+      "label": "SVG til JPG-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG til JPG-konverterer",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter SVG-grafikk til kompakt JPG. Mindre fil, full kompatibilitet.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "SVG til JPG-konverterer",
+      "description": "Konverter SVG-grafikk til kompakt JPG. Mindre fil, full kompatibilitet.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "SVG til JPG-konverterer",
+      "html": "<p class=\"text-mid\">Konverter SVG-grafikk til kompakt JPG. Mindre fil, full kompatibilitet.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG til JPG-konverterer – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG til JPG-konverterer – Arteon",
+      "defaultSubject": "Feedback: SVG til JPG-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

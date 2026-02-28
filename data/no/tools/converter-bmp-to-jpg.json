@@ -1,0 +1,77 @@
+{
+  "toolKey": "bmpToJpg",
+  "locale": "no",
+  "metadata": {
+    "title": "BMP til JPG-konverterer – BMP JPG",
+    "description": "Konverter BMP-filer til lett JPG. Drastisk størrelsesreduksjon.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/bmp-til-jpg-konverterer"
+  },
+  "hero": {
+    "title": "BMP til JPG-konverterer",
+    "description": "Konverter BMP-filer til lett JPG. Drastisk størrelsesreduksjon.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/bmp-til-jpg-konverterer",
+      "label": "BMP til JPG-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP til JPG-konverterer",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Konverter BMP-filer til lett JPG. Drastisk størrelsesreduksjon.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "BMP til JPG-konverterer",
+      "description": "Konverter BMP-filer til lett JPG. Drastisk størrelsesreduksjon.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "BMP til JPG-konverterer",
+      "html": "<p class=\"text-mid\">Konverter BMP-filer til lett JPG. Drastisk størrelsesreduksjon.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP til JPG-konverterer – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP til JPG-konverterer – Arteon",
+      "defaultSubject": "Feedback: BMP til JPG-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "toolKey": "pngToJpg",
+  "locale": "nl",
+  "metadata": {
+    "title": "PNG naar JPG converter – PNG JPG",
+    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/png-naar-jpg-converter"
+  },
+  "hero": {
+    "title": "PNG naar JPG converter",
+    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/png-naar-jpg-converter",
+      "label": "PNG naar JPG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PNG naar JPG converter",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "PNG naar JPG converter",
+      "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "PNG naar JPG converter",
+      "html": "<p class=\"text-mid\">Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG naar JPG converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG naar JPG converter – Arteon",
+      "defaultSubject": "Feedback: PNG naar JPG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

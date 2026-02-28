@@ -1,0 +1,77 @@
+{
+  "toolKey": "webpToJpg",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας WebP σε JPG – WebP JPG",
+    "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-webp-se-jpg"
+  },
+  "hero": {
+    "title": "Μετατροπέας WebP σε JPG",
+    "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-webp-se-jpg",
+      "label": "Μετατροπέας WebP σε JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας WebP σε JPG",
+      "alternateName": [],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.",
+      "featureList": []
+    },
+    "howTo": {
+      "name": "Μετατροπέας WebP σε JPG",
+      "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.",
+      "steps": []
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Μετατροπέας WebP σε JPG",
+      "html": "<p class=\"text-mid\">Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Μετατροπέας WebP σε JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία",
+      "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε; Γράψτε μας — απαντάμε σε 24 ώρες.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Μετατροπέας WebP σε JPG – Arteon",
+      "defaultSubject": "Feedback: Μετατροπέας WebP σε JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Ανακαλύψτε περισσότερα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

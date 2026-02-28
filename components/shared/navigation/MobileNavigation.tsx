@@ -81,48 +81,13 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
       }))
     : [];
 
-  const MOBILE_TOOL_KEYS: ToolSectionLink['href'][] = isPl
-    ? [
-        '/narzedzia/licznik-dlugosci-meta-title-i-description',
-        '/narzedzia/licznik-slow-i-znakow',
-        '/narzedzia/sprawdz-czytelnosc-kolorow',
-        '/narzedzia/ekstraktor-kolorow-z-obrazu',
-        '/narzedzia/generator-palet-kolorow',
-        '/narzedzia/darmowy-generator-kodow-qr',
-        '/narzedzia/konwerter-png-na-jpg',
-        '/narzedzia/konwerter-jpg-na-png',
-        '/narzedzia/konwerter-webp-na-jpg',
-        '/narzedzia/konwerter-webp-na-png',
-        '/narzedzia/konwerter-svg-na-png',
-        '/narzedzia/konwerter-svg-na-jpg',
-        '/narzedzia/konwerter-bmp-na-jpg',
-        '/narzedzia/konwerter-bmp-na-png',
-        '/narzedzia/konwerter-gif-na-png',
-        '/narzedzia/konwerter-gif-na-jpg',
-      ]
-    : [];
-
-  const TOOLS_SECTIONS_MOBILE: ToolSection[] = isPl
-    ? toolsSections
-        .map((section) => ({
-          key: section.key,
-          title: section.title,
-          items: section.items
-            .filter((it) => MOBILE_TOOL_KEYS.includes(it.href))
-            .map((it) => {
-              const Icon = it.icon;
-              return {
-                href: it.href,
-                title: it.title,
-                icon: Icon ? <Icon aria-hidden className="h-5 w-5" /> : undefined,
-              };
-            }),
-        }))
-        .filter((section) => section.items.length > 0)
-    : toolsSections.map((section) => ({
-        key: section.key,
-        title: section.title,
-        items: section.items.map((it) => {
+  const TOOLS_SECTIONS_MOBILE: ToolSection[] = toolsSections
+    .map((section) => ({
+      key: section.key,
+      title: section.title,
+      items: section.items
+        .filter((it) => !it.desktopOnly)
+        .map((it) => {
           const Icon = it.icon;
           return {
             href: it.href,
@@ -130,7 +95,8 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             icon: Icon ? <Icon aria-hidden className="h-5 w-5" /> : undefined,
           };
         }),
-      }));
+    }))
+    .filter((section) => section.items.length > 0);
 
   const [openToolSections, setOpenToolSections] = useState<Record<string, boolean>>({});
 
