@@ -30,7 +30,7 @@ const cspDirectives = [
   // Connect: self + analityka + Formspree + Vercel + AdSense quality
   "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://formspree.io https://analytics.ahrefs.com https://tracker.metricool.com https://vitals.vercel-insights.com https://va.vercel-scripts.com",
   // Frames: Google (AdSense iframes, reCAPTCHA, itp.)
-  'frame-src https://*.google.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://*.googlesyndication.com',
+  'frame-src https://*.google.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://*.googlesyndication.com https://*.adtrafficquality.google',
   // Workers: self + blob (narzędzia client-side)
   "worker-src 'self' blob:",
   // Frame-ancestors: pozwala Google AdSense na podgląd strony w panelu
