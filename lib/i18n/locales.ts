@@ -49,6 +49,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
     aboutHref: '/o-nas',
     contactHref: '/kontakt',
     privacyHref: '/polityka-prywatnosci',
+    termsHref: '/regulamin',
   },
   en: {
     lang: 'en',
