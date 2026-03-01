@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "SVG til PNG-konverter – SVG PNG",
-    "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.",
+    "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/svg-til-png-konverter"
   },
   "hero": {
     "title": "SVG til PNG-konverter",
-    "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.",
+    "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér SVG til PNG", "SVG til PNG konvertering", "Gratis SVG til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.",
+      "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
       "featureList": ["SVG til PNG-konvertering", "Tabsfrit PNG-output", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {

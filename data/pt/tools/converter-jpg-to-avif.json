@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor JPG para AVIF — JPG AVIF",
-    "description": "Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade.",
+    "description": "Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/pt/ferramentas/conversor-jpg-para-avif"
   },
   "hero": {
     "title": "Conversor JPG para AVIF",
-    "description": "Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade.",
+    "description": "Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Conversor JPG para AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade.",
+      "description": "Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
       "featureList": ["Conversão para AVIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
       "alternateName": ["Converter JPG para AVIF", "Conversão de JPG para AVIF", "Conversor JPG para AVIF grátis"]
     },

@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "BMP GIF -muunnin — BMP GIF",
-    "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.",
+    "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/bmp-gif-muunnin"
   },
   "hero": {
     "title": "BMP GIF -muunnin",
-    "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.",
+    "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP GIF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.",
+      "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
       "featureList": ["Muunnos GIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna BMP GIF-muotoon", "BMP:n muunto GIF-muotoon", "Ilmainen BMP–GIF-muunnin"]
     },

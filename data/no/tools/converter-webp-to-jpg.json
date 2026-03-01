@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "WebP til JPG-konverterer – WebP JPG",
-    "description": "Konverter WebP-filer til universelt kompatibelt JPG.",
+    "description": "Konverter WebP-filer til universelt kompatibelt JPG. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/webp-til-jpg-konverterer"
   },
   "hero": {
     "title": "WebP til JPG-konverterer",
-    "description": "Konverter WebP-filer til universelt kompatibelt JPG.",
+    "description": "Konverter WebP-filer til universelt kompatibelt JPG. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konverter WEBP til JPG", "WEBP til JPG konvertering", "Gratis WEBP til JPG konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter WebP-filer til universelt kompatibelt JPG.",
+      "description": "Konverter WebP-filer til universelt kompatibelt JPG. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
       "featureList": ["WEBP til JPG-konvertering", "JPG-kvalitetskontroll", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
     },
     "howTo": {

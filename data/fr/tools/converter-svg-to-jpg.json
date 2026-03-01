@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur SVG en JPG – rastérisez en JPG gratuitement",
-    "description": "Convertissez vos graphiques SVG en JPG compact. Fichier réduit, compatibilité totale.",
+    "description": "Convertissez vos graphiques SVG en JPG compact. Fichier réduit, compatibilité totale. Sans installation, fonctionne sur tout appareil. Gratuit, privé et illimité.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-svg-en-jpg"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir SVG en JPG", "Conversion SVG vers JPG", "Convertisseur SVG en JPG gratuit"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez vos graphiques SVG en JPG compact. Fichier réduit, compatibilité totale.",
+      "description": "Convertissez vos graphiques SVG en JPG compact. Fichier réduit, compatibilité totale. Sans installation, fonctionne sur tout appareil. Gratuit, privé et illimité.",
       "featureList": ["Conversion SVG en JPG", "Contrôle de qualité JPG", "Conversion par lot", "Traitement local dans le navigateur", "Aucun envoi de fichier"]
     },
     "howTo": {

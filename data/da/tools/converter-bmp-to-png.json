@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "BMP til PNG-konverter – BMP PNG",
-    "description": "Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret.",
+    "description": "Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/bmp-til-png-konverter"
   },
   "hero": {
     "title": "BMP til PNG-konverter",
-    "description": "Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret.",
+    "description": "Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér BMP til PNG", "BMP til PNG konvertering", "Gratis BMP til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret.",
+      "description": "Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
       "featureList": ["BMP til PNG-konvertering", "Tabsfrit PNG-output", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {

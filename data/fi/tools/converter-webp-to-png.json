@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "WebP PNG -muunnin – WebP PNG",
-    "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.",
+    "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/webp-png-muunnin"
   },
   "hero": {
     "title": "WebP PNG -muunnin",
-    "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.",
+    "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Muunna WEBP PNG-muotoon", "WEBP:n muunto PNG-muotoon", "Ilmainen WEBP–PNG-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely.",
+      "description": "Muunna WebP-kuvat häviöttömään PNG-muotoon. Paikallinen käsittely. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
       "featureList": ["WEBP – PNG -muunnos", "Häviötön PNG-tulos", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {

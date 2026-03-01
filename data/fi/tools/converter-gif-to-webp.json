@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "GIF WebP -muunnin – GIF WebP",
-    "description": "Vie GIF-kuvan ensimmainen ruutu kevyena WebP-kuvana. Pienempi tiedosto, nopeampi lataus.",
+    "description": "Vie GIF-kuvan ensimmainen ruutu kevyena WebP-kuvana. Pienempi tiedosto, nopeampi lataus. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/gif-webp-muunnin"
   },
   "hero": {
     "title": "GIF WebP -muunnin",
-    "description": "Vie GIF-kuvan ensimmainen ruutu kevyena WebP-kuvana. Pienempi tiedosto, nopeampi lataus.",
+    "description": "Vie GIF-kuvan ensimmainen ruutu kevyena WebP-kuvana. Pienempi tiedosto, nopeampi lataus. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF WebP -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Vie GIF-kuvan ensimmainen ruutu kevyena WebP-kuvana. Pienempi tiedosto, nopeampi lataus.",
+      "description": "Vie GIF-kuvan ensimmainen ruutu kevyena WebP-kuvana. Pienempi tiedosto, nopeampi lataus. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Muunna GIF WEBP-muotoon", "GIF:n muunto WEBP-muotoon", "Ilmainen GIF–WEBP-muunnin"]
     },

@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "TIFF PNG konverter – TIFF PNG",
-    "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese.",
+    "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/tiff-png-konverter"
   },
   "hero": {
     "title": "TIFF PNG konverter",
-    "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese.",
+    "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF PNG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese.",
+      "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["TIFF konvertálása PNG formátumba", "TIFF–PNG átalakítás", "Ingyenes TIFF–PNG konverter"]
     },

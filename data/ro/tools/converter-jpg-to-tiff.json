@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor JPG în TIFF — JPG TIFF",
-    "description": "Convertește fotografii JPG în TIFF fara pierderi. Pentru tiparire si arhivare.",
+    "description": "Convertește fotografii JPG în TIFF fara pierderi. Pentru tiparire si arhivare. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-jpg-in-tiff"
   },
   "hero": {
     "title": "Convertor JPG în TIFF",
-    "description": "Convertește fotografii JPG în TIFF fara pierderi. Pentru tiparire si arhivare.",
+    "description": "Convertește fotografii JPG în TIFF fara pierderi. Pentru tiparire si arhivare. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor JPG în TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii JPG în TIFF fara pierderi. Pentru tiparire si arhivare.",
+      "description": "Convertește fotografii JPG în TIFF fara pierderi. Pentru tiparire si arhivare. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie JPG în TIFF", "Convertor JPG în TIFF", "Convertor gratuit JPG în TIFF"]
     },

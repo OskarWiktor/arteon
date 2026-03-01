@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "BMP till AVIF-konverterare — BMP AVIF",
-    "description": "Konvertera okomprimerade BMP-filer till ultrakompakt AVIF.",
+    "description": "Konvertera okomprimerade BMP-filer till ultrakompakt AVIF. Ingen installation behövs, fungerar på alla enheter. Gratis, privat och obegränsat.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/sv/verktyg/bmp-till-avif-konverterare"
   },
   "hero": {
     "title": "BMP till AVIF-konverterare",
-    "description": "Konvertera okomprimerade BMP-filer till ultrakompakt AVIF.",
+    "description": "Konvertera okomprimerade BMP-filer till ultrakompakt AVIF. Ingen installation behövs, fungerar på alla enheter. Gratis, privat och obegränsat.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP till AVIF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera okomprimerade BMP-filer till ultrakompakt AVIF.",
+      "description": "Konvertera okomprimerade BMP-filer till ultrakompakt AVIF. Ingen installation behövs, fungerar på alla enheter. Gratis, privat och obegränsat.",
       "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera BMP till AVIF", "BMP till AVIF konvertering", "Gratis BMP till AVIF konverterare"]
     },

@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "BMP AVIF -muunnin — BMP AVIF",
-    "description": "Muunna pakkaamattomat BMP-tiedostot ultrakompaktiin AVIF-muotoon.",
+    "description": "Muunna pakkaamattomat BMP-tiedostot ultrakompaktiin AVIF-muotoon. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/bmp-avif-muunnin"
   },
   "hero": {
     "title": "BMP AVIF -muunnin",
-    "description": "Muunna pakkaamattomat BMP-tiedostot ultrakompaktiin AVIF-muotoon.",
+    "description": "Muunna pakkaamattomat BMP-tiedostot ultrakompaktiin AVIF-muotoon. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP AVIF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna pakkaamattomat BMP-tiedostot ultrakompaktiin AVIF-muotoon.",
+      "description": "Muunna pakkaamattomat BMP-tiedostot ultrakompaktiin AVIF-muotoon. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
       "featureList": ["Muunnos AVIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna BMP AVIF-muotoon", "BMP:n muunto AVIF-muotoon", "Ilmainen BMP–AVIF-muunnin"]
     },

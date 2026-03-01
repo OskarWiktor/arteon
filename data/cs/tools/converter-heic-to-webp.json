@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník HEIC na WebP – HEIC WebP",
-    "description": "Převeďte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani.",
+    "description": "Převeďte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-heic-na-webp"
   },
   "hero": {
     "title": "Převodník HEIC na WebP",
-    "description": "Převeďte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani.",
+    "description": "Převeďte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník HEIC na WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani.",
+      "description": "Převeďte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Převést HEIC na WEBP", "Konverze HEIC do WEBP", "Převodník HEIC na WEBP zdarma"]
     },

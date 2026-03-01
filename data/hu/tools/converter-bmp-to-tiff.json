@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "BMP TIFF konverter — BMP TIFF",
-    "description": "BMP fajlok konvertálása professzionalis TIFF formatumra nyomtatashoz.",
+    "description": "BMP fajlok konvertálása professzionalis TIFF formatumra nyomtatashoz. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/bmp-tiff-konverter"
   },
   "hero": {
     "title": "BMP TIFF konverter",
-    "description": "BMP fajlok konvertálása professzionalis TIFF formatumra nyomtatashoz.",
+    "description": "BMP fajlok konvertálása professzionalis TIFF formatumra nyomtatashoz. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP TIFF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "BMP fajlok konvertálása professzionalis TIFF formatumra nyomtatashoz.",
+      "description": "BMP fajlok konvertálása professzionalis TIFF formatumra nyomtatashoz. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
       "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["BMP konvertálása TIFF formátumba", "BMP–TIFF átalakítás", "Ingyenes BMP–TIFF konverter"]
     },

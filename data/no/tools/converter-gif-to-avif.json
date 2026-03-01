@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "GIF til AVIF-konverterer — GIF AVIF",
-    "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering.",
+    "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/no/verktoy/gif-til-avif-konverterer"
   },
   "hero": {
     "title": "GIF til AVIF-konverterer",
-    "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering.",
+    "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF til AVIF-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering.",
+      "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
       "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
       "alternateName": ["Konverter GIF til AVIF", "GIF til AVIF konvertering", "Gratis GIF til AVIF konverterer"]
     },

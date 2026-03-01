@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "BMP GIF konverter — BMP GIF",
-    "description": "Tömörítetlen BMP fajlok konvertálása konnyu GIF-re.",
+    "description": "Tömörítetlen BMP fajlok konvertálása konnyu GIF-re. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/bmp-gif-konverter"
   },
   "hero": {
     "title": "BMP GIF konverter",
-    "description": "Tömörítetlen BMP fajlok konvertálása konnyu GIF-re.",
+    "description": "Tömörítetlen BMP fajlok konvertálása konnyu GIF-re. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP GIF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Tömörítetlen BMP fajlok konvertálása konnyu GIF-re.",
+      "description": "Tömörítetlen BMP fajlok konvertálása konnyu GIF-re. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
       "featureList": ["Konvertálás GIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["BMP konvertálása GIF formátumba", "BMP–GIF átalakítás", "Ingyenes BMP–GIF konverter"]
     },

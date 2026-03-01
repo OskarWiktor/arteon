@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "JPG to AVIF converter — JPG AVIF",
-    "description": "Convert JPG photos to modern AVIF. Up to 50% better compression than JPG while maintaining quality.",
+    "description": "Convert JPG photos to modern AVIF. Up to 50% better compression than JPG while maintaining quality. Runs entirely in your browser. No server uploads, no registration required.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/en/tools/jpg-to-avif-converter"
   },
   "hero": {
     "title": "JPG to AVIF converter",
-    "description": "Convert JPG photos to modern AVIF. Up to 50% better compression than JPG while maintaining quality.",
+    "description": "Convert JPG photos to modern AVIF. Up to 50% better compression than JPG while maintaining quality. Runs entirely in your browser. No server uploads, no registration required.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG to AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert JPG photos to modern AVIF. Up to 50% better compression than JPG while maintaining quality.",
+      "description": "Convert JPG photos to modern AVIF. Up to 50% better compression than JPG while maintaining quality. Runs entirely in your browser. No server uploads, no registration required.",
       "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert JPG to AVIF", "JPG to AVIF conversion", "Free JPG to AVIF converter", "Change JPG to AVIF"]
     },

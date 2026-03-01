@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "GIF PNG konverter – GIF PNG",
-    "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
+    "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/gif-png-konverter"
   },
   "hero": {
     "title": "GIF PNG konverter",
-    "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
+    "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["GIF konvertálása PNG formátumba", "GIF–PNG átalakítás", "Ingyenes GIF–PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
+      "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["GIF – PNG konvertálás", "Veszteségmentes PNG kimenet", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

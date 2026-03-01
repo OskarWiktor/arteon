@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor BMP în WebP – BMP WebP",
-    "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%.",
+    "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-bmp-in-webp"
   },
   "hero": {
     "title": "Convertor BMP în WebP",
-    "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%.",
+    "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor BMP în WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%.",
+      "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
       "featureList": ["Conversie BMP în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie BMP în WEBP", "Convertor BMP în WEBP", "Convertor gratuit BMP în WEBP"]
     },

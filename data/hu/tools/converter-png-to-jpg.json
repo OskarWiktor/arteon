@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "PNG JPG konverter – PNG JPG",
-    "description": "PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.",
+    "description": "PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/png-jpg-konverter"
   },
   "hero": {
     "title": "PNG JPG konverter",
-    "description": "PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.",
+    "description": "PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["PNG konvertálása JPG formátumba", "PNG–JPG átalakítás", "Ingyenes PNG–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.",
+      "description": "PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["PNG – JPG konvertálás", "JPG minőségszabályozás", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

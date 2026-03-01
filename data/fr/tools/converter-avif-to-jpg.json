@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur AVIF en JPG – AVIF JPG",
-    "description": "Convertissez les fichiers AVIF en JPG universel. Compatible avec tous les programmes.",
+    "description": "Convertissez les fichiers AVIF en JPG universel. Compatible avec tous les programmes. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-avif-en-jpg"
   },
   "hero": {
     "title": "Convertisseur AVIF en JPG",
-    "description": "Convertissez les fichiers AVIF en JPG universel. Compatible avec tous les programmes.",
+    "description": "Convertissez les fichiers AVIF en JPG universel. Compatible avec tous les programmes. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur AVIF en JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les fichiers AVIF en JPG universel. Compatible avec tous les programmes.",
+      "description": "Convertissez les fichiers AVIF en JPG universel. Compatible avec tous les programmes. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
       "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir AVIF en JPG", "Conversion AVIF vers JPG", "Convertisseur AVIF en JPG gratuit"]
     },

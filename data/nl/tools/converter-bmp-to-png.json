@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "BMP naar PNG converter – BMP PNG",
-    "description": "Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand.",
+    "description": "Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/bmp-naar-png-converter"
   },
   "hero": {
     "title": "BMP naar PNG converter",
-    "description": "Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand.",
+    "description": "Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["BMP naar PNG omzetten", "BMP naar PNG conversie", "Gratis BMP naar PNG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand.",
+      "description": "Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
       "featureList": ["BMP naar PNG conversie", "Verliesvrije PNG-uitvoer", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {

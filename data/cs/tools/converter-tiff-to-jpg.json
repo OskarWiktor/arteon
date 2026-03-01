@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník TIFF na JPG – TIFF JPG",
-    "description": "Převeďte soubory TIFF na kompaktni JPG. Idealni pro skeny a fotoarchivy.",
+    "description": "Převeďte soubory TIFF na kompaktni JPG. Idealni pro skeny a fotoarchivy. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-tiff-na-jpg"
   },
   "hero": {
     "title": "Převodník TIFF na JPG",
-    "description": "Převeďte soubory TIFF na kompaktni JPG. Idealni pro skeny a fotoarchivy.",
+    "description": "Převeďte soubory TIFF na kompaktni JPG. Idealni pro skeny a fotoarchivy. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník TIFF na JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte soubory TIFF na kompaktni JPG. Idealni pro skeny a fotoarchivy.",
+      "description": "Převeďte soubory TIFF na kompaktni JPG. Idealni pro skeny a fotoarchivy. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Převést TIFF na JPG", "Konverze TIFF do JPG", "Převodník TIFF na JPG zdarma"]
     },

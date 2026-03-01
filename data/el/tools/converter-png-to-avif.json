@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας PNG σε AVIF — PNG AVIF",
-    "description": "Μετατρεψτε γραφικα PNG σε AVIF με υποστηριξη διαφανειας. Σημαντικα μικροτερα αρχεια.",
+    "description": "Μετατρεψτε γραφικα PNG σε AVIF με υποστηριξη διαφανειας. Σημαντικα μικροτερα αρχεια. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-png-se-avif"
   },
   "hero": {
     "title": "Μετατροπέας PNG σε AVIF",
-    "description": "Μετατρεψτε γραφικα PNG σε AVIF με υποστηριξη διαφανειας. Σημαντικα μικροτερα αρχεια.",
+    "description": "Μετατρεψτε γραφικα PNG σε AVIF με υποστηριξη διαφανειας. Σημαντικα μικροτερα αρχεια. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας PNG σε AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε γραφικα PNG σε AVIF με υποστηριξη διαφανειας. Σημαντικα μικροτερα αρχεια.",
+      "description": "Μετατρεψτε γραφικα PNG σε AVIF με υποστηριξη διαφανειας. Σημαντικα μικροτερα αρχεια. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
       "featureList": ["Μετατροπή σε AVIF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή PNG σε AVIF", "Μετατροπέας PNG σε AVIF", "Δωρεάν μετατροπέας PNG σε AVIF"]
     },

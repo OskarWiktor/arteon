@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας SVG σε JPG – SVG JPG",
-    "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.",
+    "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-svg-se-jpg"
   },
   "hero": {
     "title": "Μετατροπέας SVG σε JPG",
-    "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.",
+    "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Μετατροπή SVG σε JPG", "Μετατροπέας SVG σε JPG", "Δωρεάν μετατροπέας SVG σε JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.",
+      "description": "Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
       "featureList": ["Μετατροπή SVG σε JPG", "Έλεγχος ποιότητας JPG", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
     },
     "howTo": {

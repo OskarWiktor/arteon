@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter WebP na GIF — WebP GIF",
-    "description": "Zamień pliki WebP na GIF. Szeroka kompatybilność z programami i platformami.",
+    "description": "Zamień pliki WebP na GIF. Szeroka kompatybilność z programami i platformami. Przetwarzanie odbywa się w Twojej przeglądarce — pliki nie opuszczają urządzenia.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-webp-na-gif"
   },
   "hero": {
     "title": "Konwerter WebP na GIF",
-    "description": "Zamień pliki WebP na GIF. Szeroka kompatybilność z programami i platformami.",
+    "description": "Zamień pliki WebP na GIF. Szeroka kompatybilność z programami i platformami. Przetwarzanie odbywa się w Twojej przeglądarce — pliki nie opuszczają urządzenia.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Konwerter WebP na GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień pliki WebP na GIF. Szeroka kompatybilność z programami i platformami.",
+      "description": "Zamień pliki WebP na GIF. Szeroka kompatybilność z programami i platformami. Przetwarzanie odbywa się w Twojej przeglądarce — pliki nie opuszczają urządzenia.",
       "featureList": ["Konwersja do GIF", "Kwantyzacja do 256 kolorow", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
       "alternateName": ["Zamiana WEBP na GIF", "Konwersja WEBP do GIF", "Darmowy konwerter WEBP na GIF"]
     },

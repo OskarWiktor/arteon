@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "PNG naar JPG converter – PNG JPG",
-    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
+    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/png-naar-jpg-converter"
   },
   "hero": {
     "title": "PNG naar JPG converter",
-    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
+    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["PNG naar JPG omzetten", "PNG naar JPG conversie", "Gratis PNG naar JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
+      "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["PNG naar JPG conversie", "JPG-kwaliteitscontrole", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {

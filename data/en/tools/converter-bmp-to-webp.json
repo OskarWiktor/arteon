@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "BMP to WebP converter – BMP WebP",
-    "description": "Convert uncompressed BMP to lightweight WebP. Up to 95% size reduction.",
+    "description": "Convert uncompressed BMP to lightweight WebP. Up to 95% size reduction. No installation needed, works on any device. Free, private, and unlimited.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/bmp-to-webp-converter"
   },
   "hero": {
     "title": "BMP to WebP converter",
-    "description": "Convert uncompressed BMP to lightweight WebP. Up to 95% size reduction.",
+    "description": "Convert uncompressed BMP to lightweight WebP. Up to 95% size reduction. No installation needed, works on any device. Free, private, and unlimited.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP to WebP converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert uncompressed BMP to lightweight WebP. Up to 95% size reduction.",
+      "description": "Convert uncompressed BMP to lightweight WebP. Up to 95% size reduction. No installation needed, works on any device. Free, private, and unlimited.",
       "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert BMP to WEBP", "BMP to WEBP conversion", "Free BMP to WEBP converter", "Change BMP to WEBP"]
     },

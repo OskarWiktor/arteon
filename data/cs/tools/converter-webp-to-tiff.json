@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník WebP na TIFF — WebP TIFF",
-    "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci.",
+    "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-webp-na-tiff"
   },
   "hero": {
     "title": "Převodník WebP na TIFF",
-    "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci.",
+    "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník WebP na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci.",
+      "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést WEBP na TIFF", "Konverze WEBP do TIFF", "Převodník WEBP na TIFF zdarma"]
     },

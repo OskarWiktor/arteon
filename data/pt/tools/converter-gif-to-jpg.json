@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor GIF para JPG – GIF JPG",
-    "description": "Exporte o primeiro fotograma de um GIF como JPG compacto. Ficheiro menor.",
+    "description": "Exporte o primeiro fotograma de um GIF como JPG compacto. Ficheiro menor. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-gif-para-jpg"
   },
   "hero": {
     "title": "Conversor GIF para JPG",
-    "description": "Exporte o primeiro fotograma de um GIF como JPG compacto. Ficheiro menor.",
+    "description": "Exporte o primeiro fotograma de um GIF como JPG compacto. Ficheiro menor. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Converter GIF para JPG", "Conversão de GIF para JPG", "Conversor GIF para JPG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exporte o primeiro fotograma de um GIF como JPG compacto. Ficheiro menor.",
+      "description": "Exporte o primeiro fotograma de um GIF como JPG compacto. Ficheiro menor. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
       "featureList": ["Conversão de GIF para JPG", "Controlo de qualidade JPG", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor BMP în GIF — BMP GIF",
-    "description": "Convertește fișiere BMP necomprimate în GIF usor.",
+    "description": "Convertește fișiere BMP necomprimate în GIF usor. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-bmp-in-gif"
   },
   "hero": {
     "title": "Convertor BMP în GIF",
-    "description": "Convertește fișiere BMP necomprimate în GIF usor.",
+    "description": "Convertește fișiere BMP necomprimate în GIF usor. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor BMP în GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere BMP necomprimate în GIF usor.",
+      "description": "Convertește fișiere BMP necomprimate în GIF usor. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
       "featureList": ["Conversie în GIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie BMP în GIF", "Convertor BMP în GIF", "Convertor gratuit BMP în GIF"]
     },

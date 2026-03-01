@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "TIFF PNG -muunnin – TIFF PNG",
-    "description": "Muunna TIFF-tiedostot haviottomaan PNG-muotoon. Sailyta skannausten taysi laatu.",
+    "description": "Muunna TIFF-tiedostot haviottomaan PNG-muotoon. Sailyta skannausten taysi laatu. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/tiff-png-muunnin"
   },
   "hero": {
     "title": "TIFF PNG -muunnin",
-    "description": "Muunna TIFF-tiedostot haviottomaan PNG-muotoon. Sailyta skannausten taysi laatu.",
+    "description": "Muunna TIFF-tiedostot haviottomaan PNG-muotoon. Sailyta skannausten taysi laatu. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF PNG -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna TIFF-tiedostot haviottomaan PNG-muotoon. Sailyta skannausten taysi laatu.",
+      "description": "Muunna TIFF-tiedostot haviottomaan PNG-muotoon. Sailyta skannausten taysi laatu. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Muunna TIFF PNG-muotoon", "TIFF:n muunto PNG-muotoon", "Ilmainen TIFF–PNG-muunnin"]
     },

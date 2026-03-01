@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore BMP in JPG – BMP JPG",
-    "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni.",
+    "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni. Elaborazione locale nel browser — i file non lasciano mai il dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-bmp-in-jpg"
   },
   "hero": {
     "title": "Convertitore BMP in JPG",
-    "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni.",
+    "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni. Elaborazione locale nel browser — i file non lasciano mai il dispositivo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Convertire BMP in JPG", "Conversione BMP in JPG", "Convertitore BMP in JPG gratuito"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni.",
+      "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni. Elaborazione locale nel browser — i file non lasciano mai il dispositivo.",
       "featureList": ["Conversione da BMP a JPG", "Controllo qualità JPG", "Conversione in blocco", "Elaborazione locale nel browser", "Nessun caricamento file"]
     },
     "howTo": {

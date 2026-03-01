@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "PNG WebP konverter – PNG WebP",
-    "description": "PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.",
+    "description": "PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/png-webp-konverter"
   },
   "hero": {
     "title": "PNG WebP konverter",
-    "description": "PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.",
+    "description": "PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["PNG konvertálása WEBP formátumba", "PNG–WEBP átalakítás", "Ingyenes PNG–WEBP konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével.",
+      "description": "PNG grafikák konvertálása WebP-re. Kisebb fájlok az átlátszóság megőrzésével. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["PNG – WEBP konvertálás", "WEBP minőségszabályozás", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

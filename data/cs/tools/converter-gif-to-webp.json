@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník GIF na WebP – GIF WebP",
-    "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani.",
+    "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-gif-na-webp"
   },
   "hero": {
     "title": "Převodník GIF na WebP",
-    "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani.",
+    "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník GIF na WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani.",
+      "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Převést GIF na WEBP", "Konverze GIF do WEBP", "Převodník GIF na WEBP zdarma"]
     },

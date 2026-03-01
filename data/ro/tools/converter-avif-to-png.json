@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor AVIF în PNG – AVIF PNG",
-    "description": "Convertește fișiere AVIF în PNG fara pierderi. Calitate si transparenta pastrate.",
+    "description": "Convertește fișiere AVIF în PNG fara pierderi. Calitate si transparenta pastrate. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-avif-in-png"
   },
   "hero": {
     "title": "Convertor AVIF în PNG",
-    "description": "Convertește fișiere AVIF în PNG fara pierderi. Calitate si transparenta pastrate.",
+    "description": "Convertește fișiere AVIF în PNG fara pierderi. Calitate si transparenta pastrate. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor AVIF în PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere AVIF în PNG fara pierderi. Calitate si transparenta pastrate.",
+      "description": "Convertește fișiere AVIF în PNG fara pierderi. Calitate si transparenta pastrate. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie AVIF în PNG", "Lossless PNG output", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie AVIF în PNG", "Convertor AVIF în PNG", "Convertor gratuit AVIF în PNG"]
     },

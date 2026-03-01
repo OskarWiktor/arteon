@@ -3,7 +3,7 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor GIF a PNG – extrae fotograma estático gratis",
-    "description": "Exporta el primer fotograma de un GIF como PNG sin pérdida. Sin registro, sin subidas.",
+    "description": "Exporta el primer fotograma de un GIF como PNG sin pérdida. Sin registro, sin subidas. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-gif-a-png"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir GIF a PNG", "Conversión de GIF a PNG", "Convertidor GIF a PNG gratis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exporta el primer fotograma de un GIF como PNG sin pérdida. Sin registro, sin subidas.",
+      "description": "Exporta el primer fotograma de un GIF como PNG sin pérdida. Sin registro, sin subidas. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
       "featureList": ["Conversión de GIF a PNG", "Salida PNG sin pérdidas", "Conversión por lotes", "Procesamiento local en el navegador", "Sin subida de archivos"]
     },
     "howTo": {

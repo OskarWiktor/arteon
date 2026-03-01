@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "SVG naar GIF converter — SVG GIF",
-    "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.",
+    "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/svg-naar-gif-converter"
   },
   "hero": {
     "title": "SVG naar GIF converter",
-    "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.",
+    "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG naar GIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.",
+      "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["SVG naar GIF omzetten", "SVG naar GIF conversie", "Gratis SVG naar GIF converter"]
     },

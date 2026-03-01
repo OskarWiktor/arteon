@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "AVIF JPG -muunnin – AVIF JPG",
-    "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa.",
+    "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/avif-jpg-muunnin"
   },
   "hero": {
     "title": "AVIF JPG -muunnin",
-    "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa.",
+    "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF JPG -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa.",
+      "description": "Muunna AVIF-tiedostot yleiseen JPG-muotoon. Yhteensopiva kaikkien ohjelmien kanssa. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
       "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Muunna AVIF JPG-muotoon", "AVIF:n muunto JPG-muotoon", "Ilmainen AVIF–JPG-muunnin"]
     },

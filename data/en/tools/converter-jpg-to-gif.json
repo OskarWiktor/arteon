@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "JPG to GIF converter — JPG GIF",
-    "description": "Convert JPG photos to GIF format. Perfect for simple graphics and icons.",
+    "description": "Convert JPG photos to GIF format. Perfect for simple graphics and icons. Runs entirely in your browser. No server uploads, no registration required.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/en/tools/jpg-to-gif-converter"
   },
   "hero": {
     "title": "JPG to GIF converter",
-    "description": "Convert JPG photos to GIF format. Perfect for simple graphics and icons.",
+    "description": "Convert JPG photos to GIF format. Perfect for simple graphics and icons. Runs entirely in your browser. No server uploads, no registration required.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG to GIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert JPG photos to GIF format. Perfect for simple graphics and icons.",
+      "description": "Convert JPG photos to GIF format. Perfect for simple graphics and icons. Runs entirely in your browser. No server uploads, no registration required.",
       "featureList": ["Conversion to GIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert JPG to GIF", "JPG to GIF conversion", "Free JPG to GIF converter", "Change JPG to GIF"]
     },

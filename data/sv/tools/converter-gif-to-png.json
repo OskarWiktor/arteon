@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "GIF till PNG-konverterare – GIF PNG",
-    "description": "Exportera den första bildrutan i en GIF som statisk PNG. Utan kvalitetsförlust.",
+    "description": "Exportera den första bildrutan i en GIF som statisk PNG. Utan kvalitetsförlust. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/gif-till-png-konverterare"
   },
   "hero": {
     "title": "GIF till PNG-konverterare",
-    "description": "Exportera den första bildrutan i en GIF som statisk PNG. Utan kvalitetsförlust.",
+    "description": "Exportera den första bildrutan i en GIF som statisk PNG. Utan kvalitetsförlust. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertera GIF till PNG", "GIF till PNG konvertering", "Gratis GIF till PNG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportera den första bildrutan i en GIF som statisk PNG. Utan kvalitetsförlust.",
+      "description": "Exportera den första bildrutan i en GIF som statisk PNG. Utan kvalitetsförlust. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
       "featureList": ["GIF till PNG-konvertering", "Förlustfri PNG-utdata", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {

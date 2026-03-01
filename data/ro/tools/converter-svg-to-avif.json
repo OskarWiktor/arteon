@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor SVG în AVIF — SVG AVIF",
-    "description": "Convertește grafice vectoriale SVG în format raster AVIF compact.",
+    "description": "Convertește grafice vectoriale SVG în format raster AVIF compact. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-svg-in-avif"
   },
   "hero": {
     "title": "Convertor SVG în AVIF",
-    "description": "Convertește grafice vectoriale SVG în format raster AVIF compact.",
+    "description": "Convertește grafice vectoriale SVG în format raster AVIF compact. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor SVG în AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește grafice vectoriale SVG în format raster AVIF compact.",
+      "description": "Convertește grafice vectoriale SVG în format raster AVIF compact. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie SVG în AVIF", "Convertor SVG în AVIF", "Convertor gratuit SVG în AVIF"]
     },

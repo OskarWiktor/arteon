@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "SVG WebP konverter – SVG WebP",
-    "description": "SVG grafika konvertálása konnyu WebP-re. Idealis weboldalakon es kozossegi mediaban.",
+    "description": "SVG grafika konvertálása konnyu WebP-re. Idealis weboldalakon es kozossegi mediaban. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/svg-webp-konverter"
   },
   "hero": {
     "title": "SVG WebP konverter",
-    "description": "SVG grafika konvertálása konnyu WebP-re. Idealis weboldalakon es kozossegi mediaban.",
+    "description": "SVG grafika konvertálása konnyu WebP-re. Idealis weboldalakon es kozossegi mediaban. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG WebP konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "SVG grafika konvertálása konnyu WebP-re. Idealis weboldalakon es kozossegi mediaban.",
+      "description": "SVG grafika konvertálása konnyu WebP-re. Idealis weboldalakon es kozossegi mediaban. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["SVG konvertálása WEBP formátumba", "SVG–WEBP átalakítás", "Ingyenes SVG–WEBP konverter"]
     },

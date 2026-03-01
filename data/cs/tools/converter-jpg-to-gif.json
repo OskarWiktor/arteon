@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník JPG na GIF — JPG GIF",
-    "description": "Převeďte fotky JPG na format GIF. Ideální pro jednoduchou grafiku a ikony.",
+    "description": "Převeďte fotky JPG na format GIF. Ideální pro jednoduchou grafiku a ikony. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-jpg-na-gif"
   },
   "hero": {
     "title": "Převodník JPG na GIF",
-    "description": "Převeďte fotky JPG na format GIF. Ideální pro jednoduchou grafiku a ikony.",
+    "description": "Převeďte fotky JPG na format GIF. Ideální pro jednoduchou grafiku a ikony. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník JPG na GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte fotky JPG na format GIF. Ideální pro jednoduchou grafiku a ikony.",
+      "description": "Převeďte fotky JPG na format GIF. Ideální pro jednoduchou grafiku a ikony. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["Konverze do GIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést JPG na GIF", "Konverze JPG do GIF", "Převodník JPG na GIF zdarma"]
     },

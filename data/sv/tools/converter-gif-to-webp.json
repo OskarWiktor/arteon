@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "GIF till WebP-konverterare – GIF WebP",
-    "description": "Exportera forsta GIF-bildrutan som lattvikts-WebP. Mindre fil, snabbare laddning.",
+    "description": "Exportera forsta GIF-bildrutan som lattvikts-WebP. Mindre fil, snabbare laddning. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/gif-till-webp-konverterare"
   },
   "hero": {
     "title": "GIF till WebP-konverterare",
-    "description": "Exportera forsta GIF-bildrutan som lattvikts-WebP. Mindre fil, snabbare laddning.",
+    "description": "Exportera forsta GIF-bildrutan som lattvikts-WebP. Mindre fil, snabbare laddning. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF till WebP-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportera forsta GIF-bildrutan som lattvikts-WebP. Mindre fil, snabbare laddning.",
+      "description": "Exportera forsta GIF-bildrutan som lattvikts-WebP. Mindre fil, snabbare laddning. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertera GIF till WEBP", "GIF till WEBP konvertering", "Gratis GIF till WEBP konverterare"]
     },

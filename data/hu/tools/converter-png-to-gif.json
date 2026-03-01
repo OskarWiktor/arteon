@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "PNG GIF konverter — PNG GIF",
-    "description": "PNG grafika konvertálása GIF-re. Idealis egyszeru ikonokhoz es grafikakhoz.",
+    "description": "PNG grafika konvertálása GIF-re. Idealis egyszeru ikonokhoz es grafikakhoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/png-gif-konverter"
   },
   "hero": {
     "title": "PNG GIF konverter",
-    "description": "PNG grafika konvertálása GIF-re. Idealis egyszeru ikonokhoz es grafikakhoz.",
+    "description": "PNG grafika konvertálása GIF-re. Idealis egyszeru ikonokhoz es grafikakhoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG GIF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG grafika konvertálása GIF-re. Idealis egyszeru ikonokhoz es grafikakhoz.",
+      "description": "PNG grafika konvertálása GIF-re. Idealis egyszeru ikonokhoz es grafikakhoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["Konvertálás GIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["PNG konvertálása GIF formátumba", "PNG–GIF átalakítás", "Ingyenes PNG–GIF konverter"]
     },

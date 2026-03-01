@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "AVIF PNG konverter – AVIF PNG",
-    "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
+    "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/avif-png-konverter"
   },
   "hero": {
     "title": "AVIF PNG konverter",
-    "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
+    "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF PNG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
+      "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["AVIF konvertálása PNG formátumba", "AVIF–PNG átalakítás", "Ingyenes AVIF–PNG konverter"]
     },

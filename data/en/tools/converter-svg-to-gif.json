@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "SVG to GIF converter — SVG GIF",
-    "description": "Convert vector SVG graphics to GIF raster format.",
+    "description": "Convert vector SVG graphics to GIF raster format. Free browser-based tool — no signup, no file limits, complete privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/en/tools/svg-to-gif-converter"
   },
   "hero": {
     "title": "SVG to GIF converter",
-    "description": "Convert vector SVG graphics to GIF raster format.",
+    "description": "Convert vector SVG graphics to GIF raster format. Free browser-based tool — no signup, no file limits, complete privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG to GIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert vector SVG graphics to GIF raster format.",
+      "description": "Convert vector SVG graphics to GIF raster format. Free browser-based tool — no signup, no file limits, complete privacy.",
       "featureList": ["Conversion to GIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert SVG to GIF", "SVG to GIF conversion", "Free SVG to GIF converter", "Change SVG to GIF"]
     },

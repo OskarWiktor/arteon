@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "JPG WebP -muunnin – JPG WebP",
-    "description": "Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.",
+    "description": "Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/jpg-webp-muunnin"
   },
   "hero": {
     "title": "JPG WebP -muunnin",
-    "description": "Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.",
+    "description": "Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Muunna JPG WEBP-muotoon", "JPG:n muunto WEBP-muotoon", "Ilmainen JPG–WEBP-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%.",
+      "description": "Muunna JPG-valokuvat kevyeen WebP-muotoon. Pienennä tiedostokokoa jopa 35%. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
       "featureList": ["JPG – WEBP -muunnos", "WEBP-laadun säätö", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {

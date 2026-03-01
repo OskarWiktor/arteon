@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník PNG na JPG – PNG JPG",
-    "description": "Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.",
+    "description": "Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-png-na-jpg"
   },
   "hero": {
     "title": "Převodník PNG na JPG",
-    "description": "Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.",
+    "description": "Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést PNG na JPG", "Konverze PNG do JPG", "Převodník PNG na JPG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace.",
+      "description": "Převeďte soubory PNG na JPG v prohlížeči. Bez limitu, bez registrace. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["Převod PNG na JPG", "Ovládání kvality JPG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {

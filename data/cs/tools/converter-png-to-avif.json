@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník PNG na AVIF — PNG AVIF",
-    "description": "Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory.",
+    "description": "Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-png-na-avif"
   },
   "hero": {
     "title": "Převodník PNG na AVIF",
-    "description": "Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory.",
+    "description": "Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník PNG na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory.",
+      "description": "Prevedte grafiku PNG na AVIF s podporou pruhlednosti. Vyrazne mensi soubory. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést PNG na AVIF", "Konverze PNG do AVIF", "Převodník PNG na AVIF zdarma"]
     },

@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "WebP till TIFF-konverterare — WebP TIFF",
-    "description": "Konvertera WebP-bilder till professionellt TIFF for utskrift och arkivering.",
+    "description": "Konvertera WebP-bilder till professionellt TIFF for utskrift och arkivering. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/sv/verktyg/webp-till-tiff-konverterare"
   },
   "hero": {
     "title": "WebP till TIFF-konverterare",
-    "description": "Konvertera WebP-bilder till professionellt TIFF for utskrift och arkivering.",
+    "description": "Konvertera WebP-bilder till professionellt TIFF for utskrift och arkivering. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "WebP till TIFF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera WebP-bilder till professionellt TIFF for utskrift och arkivering.",
+      "description": "Konvertera WebP-bilder till professionellt TIFF for utskrift och arkivering. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
       "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera WEBP till TIFF", "WEBP till TIFF konvertering", "Gratis WEBP till TIFF konverterare"]
     },

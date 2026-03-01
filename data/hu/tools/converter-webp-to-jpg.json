@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "WebP JPG konverter – WebP JPG",
-    "description": "WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.",
+    "description": "WebP fájlok konvertálása univerzálisan kompatibilis JPG-re. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/webp-jpg-konverter"
   },
   "hero": {
     "title": "WebP JPG konverter",
-    "description": "WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.",
+    "description": "WebP fájlok konvertálása univerzálisan kompatibilis JPG-re. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["WEBP konvertálása JPG formátumba", "WEBP–JPG átalakítás", "Ingyenes WEBP–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.",
+      "description": "WebP fájlok konvertálása univerzálisan kompatibilis JPG-re. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["WEBP – JPG konvertálás", "JPG minőségszabályozás", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

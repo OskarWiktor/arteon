@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "HEIC JPG konverter – HEIC JPG",
-    "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul.",
+    "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/heic-jpg-konverter"
   },
   "hero": {
     "title": "HEIC JPG konverter",
-    "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul.",
+    "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC JPG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul.",
+      "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["HEIC konvertálása JPG formátumba", "HEIC–JPG átalakítás", "Ingyenes HEIC–JPG konverter"]
     },

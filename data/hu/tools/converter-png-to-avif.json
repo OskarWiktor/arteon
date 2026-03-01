@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "PNG AVIF konverter — PNG AVIF",
-    "description": "PNG grafika konvertálása AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok.",
+    "description": "PNG grafika konvertálása AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/png-avif-konverter"
   },
   "hero": {
     "title": "PNG AVIF konverter",
-    "description": "PNG grafika konvertálása AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok.",
+    "description": "PNG grafika konvertálása AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG AVIF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG grafika konvertálása AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok.",
+      "description": "PNG grafika konvertálása AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["PNG konvertálása AVIF formátumba", "PNG–AVIF átalakítás", "Ingyenes PNG–AVIF konverter"]
     },

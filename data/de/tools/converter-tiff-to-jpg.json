@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "TIFF zu JPG Konverter – TIFF JPG",
-    "description": "TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans, Dokumente und Fotoarchive.",
+    "description": "TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans, Dokumente und Fotoarchive. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/tiff-zu-jpg-konverter"
   },
   "hero": {
     "title": "TIFF zu JPG Konverter",
-    "description": "TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans, Dokumente und Fotoarchive.",
+    "description": "TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans, Dokumente und Fotoarchive. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF zu JPG Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans, Dokumente und Fotoarchive.",
+      "description": "TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans, Dokumente und Fotoarchive. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
       "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["TIFF in JPG umwandeln", "TIFF zu JPG konvertieren", "Kostenloser TIFF-zu-JPG-Konverter"]
     },

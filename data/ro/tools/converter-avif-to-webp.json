@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor AVIF în WebP – AVIF WebP",
-    "description": "Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici.",
+    "description": "Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-avif-in-webp"
   },
   "hero": {
     "title": "Convertor AVIF în WebP",
-    "description": "Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici.",
+    "description": "Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor AVIF în WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici.",
+      "description": "Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
       "featureList": ["Conversie AVIF în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie AVIF în WEBP", "Convertor AVIF în WEBP", "Convertor gratuit AVIF în WEBP"]
     },

@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "TIFF til PNG-konverter – TIFF PNG",
-    "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger.",
+    "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/tiff-til-png-konverter"
   },
   "hero": {
     "title": "TIFF til PNG-konverter",
-    "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger.",
+    "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF til PNG-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger.",
+      "description": "Konverter TIFF-filer til tabsfri PNG. Bevar fuld kvalitet af scanninger. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertér TIFF til PNG", "TIFF til PNG konvertering", "Gratis TIFF til PNG konverter"]
     },

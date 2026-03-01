@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας JPG σε TIFF — JPG TIFF",
-    "description": "Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση.",
+    "description": "Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-jpg-se-tiff"
   },
   "hero": {
     "title": "Μετατροπέας JPG σε TIFF",
-    "description": "Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση.",
+    "description": "Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας JPG σε TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση.",
+      "description": "Μετατρεψτε φωτογραφιες JPG σε TIFF χωρις απωλειες. Για εκτυπωση και αρχειοθετηση. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
       "featureList": ["Μετατροπή σε TIFF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή JPG σε TIFF", "Μετατροπέας JPG σε TIFF", "Δωρεάν μετατροπέας JPG σε TIFF"]
     },

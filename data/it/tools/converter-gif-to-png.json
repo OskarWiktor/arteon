@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore GIF in PNG – GIF PNG",
-    "description": "Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.",
+    "description": "Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-gif-in-png"
   },
   "hero": {
     "title": "Convertitore GIF in PNG",
-    "description": "Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.",
+    "description": "Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Convertire GIF in PNG", "Conversione GIF in PNG", "Convertitore GIF in PNG gratuito"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.",
+      "description": "Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
       "featureList": ["Conversione da GIF a PNG", "Uscita PNG senza perdita", "Conversione in blocco", "Elaborazione locale nel browser", "Nessun caricamento file"]
     },
     "howTo": {

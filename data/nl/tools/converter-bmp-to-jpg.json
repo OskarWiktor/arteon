@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "BMP naar JPG converter – BMP JPG",
-    "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
+    "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/bmp-naar-jpg-converter"
   },
   "hero": {
     "title": "BMP naar JPG converter",
-    "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
+    "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["BMP naar JPG omzetten", "BMP naar JPG conversie", "Gratis BMP naar JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
+      "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
       "featureList": ["BMP naar JPG conversie", "JPG-kwaliteitscontrole", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {

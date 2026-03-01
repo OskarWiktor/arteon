@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "SVG til AVIF-konverter — SVG AVIF",
-    "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat.",
+    "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/da/vaerktojer/svg-til-avif-konverter"
   },
   "hero": {
     "title": "SVG til AVIF-konverter",
-    "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat.",
+    "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG til AVIF-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat.",
+      "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
       "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
       "alternateName": ["Konvertér SVG til AVIF", "SVG til AVIF konvertering", "Gratis SVG til AVIF konverter"]
     },

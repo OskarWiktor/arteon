@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur JPG en WebP – réduisez le poids jusqu'à 35%",
-    "description": "Convertissez vos photos JPG en WebP léger. Réduisez le poids des images jusqu'à 35%.",
+    "description": "Convertissez vos photos JPG en WebP léger. Réduisez le poids des images jusqu'à 35%. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-jpg-en-webp"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir JPG en WEBP", "Conversion JPG vers WEBP", "Convertisseur JPG en WEBP gratuit"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez vos photos JPG en WebP léger. Réduisez le poids des images jusqu'à 35%.",
+      "description": "Convertissez vos photos JPG en WebP léger. Réduisez le poids des images jusqu'à 35%. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
       "featureList": ["Conversion JPG en WEBP", "Contrôle de qualité WEBP", "Conversion par lot", "Traitement local dans le navigateur", "Aucun envoi de fichier"]
     },
     "howTo": {

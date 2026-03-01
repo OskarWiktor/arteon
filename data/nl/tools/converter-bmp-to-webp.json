@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "BMP naar WebP converter – BMP WebP",
-    "description": "Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner bestandsgrootte.",
+    "description": "Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner bestandsgrootte. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/bmp-naar-webp-converter"
   },
   "hero": {
     "title": "BMP naar WebP converter",
-    "description": "Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner bestandsgrootte.",
+    "description": "Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner bestandsgrootte. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP naar WebP converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner bestandsgrootte.",
+      "description": "Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner bestandsgrootte. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
       "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["BMP naar WEBP omzetten", "BMP naar WEBP conversie", "Gratis BMP naar WEBP converter"]
     },

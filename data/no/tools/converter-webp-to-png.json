@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "WebP til PNG-konverterer – WebP PNG",
-    "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering.",
+    "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/webp-til-png-konverterer"
   },
   "hero": {
     "title": "WebP til PNG-konverterer",
-    "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering.",
+    "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konverter WEBP til PNG", "WEBP til PNG konvertering", "Gratis WEBP til PNG konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering.",
+      "description": "Konverter WebP-bilder til tapsfritt PNG. Lokal konvertering. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
       "featureList": ["WEBP til PNG-konvertering", "Tapsfri PNG-utdata", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
     },
     "howTo": {

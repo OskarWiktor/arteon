@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "JPG til TIFF-konverter — JPG TIFF",
-    "description": "Konverter JPG-fotos til tabsfrit TIFF. Til udskrivning og arkivering.",
+    "description": "Konverter JPG-fotos til tabsfrit TIFF. Til udskrivning og arkivering. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/da/vaerktojer/jpg-til-tiff-konverter"
   },
   "hero": {
     "title": "JPG til TIFF-konverter",
-    "description": "Konverter JPG-fotos til tabsfrit TIFF. Til udskrivning og arkivering.",
+    "description": "Konverter JPG-fotos til tabsfrit TIFF. Til udskrivning og arkivering. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG til TIFF-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter JPG-fotos til tabsfrit TIFF. Til udskrivning og arkivering.",
+      "description": "Konverter JPG-fotos til tabsfrit TIFF. Til udskrivning og arkivering. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
       "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
       "alternateName": ["Konvertér JPG til TIFF", "JPG til TIFF konvertering", "Gratis JPG til TIFF konverter"]
     },

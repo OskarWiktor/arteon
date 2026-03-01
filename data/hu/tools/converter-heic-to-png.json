@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "HEIC PNG konverter – HEIC PNG",
-    "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag.",
+    "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/heic-png-konverter"
   },
   "hero": {
     "title": "HEIC PNG konverter",
-    "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag.",
+    "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC PNG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag.",
+      "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["HEIC konvertálása PNG formátumba", "HEIC–PNG átalakítás", "Ingyenes HEIC–PNG konverter"]
     },

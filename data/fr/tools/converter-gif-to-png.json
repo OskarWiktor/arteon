@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur GIF en PNG – extrayez une image statique gratuitement",
-    "description": "Exportez la première image d'un GIF en PNG sans perte. Sans inscription, sans envoi.",
+    "description": "Exportez la première image d'un GIF en PNG sans perte. Sans inscription, sans envoi. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-gif-en-png"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir GIF en PNG", "Conversion GIF vers PNG", "Convertisseur GIF en PNG gratuit"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportez la première image d'un GIF en PNG sans perte. Sans inscription, sans envoi.",
+      "description": "Exportez la première image d'un GIF en PNG sans perte. Sans inscription, sans envoi. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
       "featureList": ["Conversion GIF en PNG", "Sortie PNG sans perte", "Conversion par lot", "Traitement local dans le navigateur", "Aucun envoi de fichier"]
     },
     "howTo": {

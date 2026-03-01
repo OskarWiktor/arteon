@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "SVG TIFF -muunnin — SVG TIFF",
-    "description": "Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon.",
+    "description": "Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/svg-tiff-muunnin"
   },
   "hero": {
     "title": "SVG TIFF -muunnin",
-    "description": "Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon.",
+    "description": "Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG TIFF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon.",
+      "description": "Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon. Ei asennusta, toimii kaikilla laitteilla. Ilmainen, yksityinen ja rajoittamaton.",
       "featureList": ["Muunnos TIFF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna SVG TIFF-muotoon", "SVG:n muunto TIFF-muotoon", "Ilmainen SVG–TIFF-muunnin"]
     },

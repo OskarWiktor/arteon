@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας WebP σε PNG – WebP PNG",
-    "description": "Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.",
+    "description": "Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-webp-se-png"
   },
   "hero": {
     "title": "Μετατροπέας WebP σε PNG",
-    "description": "Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.",
+    "description": "Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Μετατροπή WEBP σε PNG", "Μετατροπέας WEBP σε PNG", "Δωρεάν μετατροπέας WEBP σε PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.",
+      "description": "Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
       "featureList": ["Μετατροπή WEBP σε PNG", "Έξοδος PNG χωρίς απώλειες", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας WebP σε AVIF — WebP AVIF",
-    "description": "Μετατρεψτε αρχεια WebP σε AVIF. Ακομη καλυτερη συμπιεση σε συγχρονη μορφη.",
+    "description": "Μετατρεψτε αρχεια WebP σε AVIF. Ακομη καλυτερη συμπιεση σε συγχρονη μορφη. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-webp-se-avif"
   },
   "hero": {
     "title": "Μετατροπέας WebP σε AVIF",
-    "description": "Μετατρεψτε αρχεια WebP σε AVIF. Ακομη καλυτερη συμπιεση σε συγχρονη μορφη.",
+    "description": "Μετατρεψτε αρχεια WebP σε AVIF. Ακομη καλυτερη συμπιεση σε συγχρονη μορφη. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας WebP σε AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε αρχεια WebP σε AVIF. Ακομη καλυτερη συμπιεση σε συγχρονη μορφη.",
+      "description": "Μετατρεψτε αρχεια WebP σε AVIF. Ακομη καλυτερη συμπιεση σε συγχρονη μορφη. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
       "featureList": ["Μετατροπή σε AVIF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή WEBP σε AVIF", "Μετατροπέας WEBP σε AVIF", "Δωρεάν μετατροπέας WEBP σε AVIF"]
     },

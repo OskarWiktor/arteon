@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "BMP till PNG-konverterare – BMP PNG",
-    "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.",
+    "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/bmp-till-png-konverterare"
   },
   "hero": {
     "title": "BMP till PNG-konverterare",
-    "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.",
+    "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertera BMP till PNG", "BMP till PNG konvertering", "Gratis BMP till PNG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.",
+      "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
       "featureList": ["BMP till PNG-konvertering", "Förlustfri PNG-utdata", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník WebP na GIF — WebP GIF",
-    "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu.",
+    "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-webp-na-gif"
   },
   "hero": {
     "title": "Převodník WebP na GIF",
-    "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu.",
+    "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník WebP na GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu.",
+      "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
       "featureList": ["Konverze do GIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést WEBP na GIF", "Konverze WEBP do GIF", "Převodník WEBP na GIF zdarma"]
     },

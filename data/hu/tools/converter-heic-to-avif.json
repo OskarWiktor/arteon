@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "HEIC AVIF konverter — HEIC AVIF",
-    "description": "iPhone HEIC fotok konvertálása modern AVIF formatumra.",
+    "description": "iPhone HEIC fotok konvertálása modern AVIF formatumra. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/heic-avif-konverter"
   },
   "hero": {
     "title": "HEIC AVIF konverter",
-    "description": "iPhone HEIC fotok konvertálása modern AVIF formatumra.",
+    "description": "iPhone HEIC fotok konvertálása modern AVIF formatumra. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC AVIF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "iPhone HEIC fotok konvertálása modern AVIF formatumra.",
+      "description": "iPhone HEIC fotok konvertálása modern AVIF formatumra. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["HEIC konvertálása AVIF formátumba", "HEIC–AVIF átalakítás", "Ingyenes HEIC–AVIF konverter"]
     },

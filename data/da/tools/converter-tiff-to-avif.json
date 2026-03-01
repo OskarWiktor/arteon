@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "TIFF til AVIF-konverter — TIFF AVIF",
-    "description": "Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduktion.",
+    "description": "Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduktion. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/da/vaerktojer/tiff-til-avif-konverter"
   },
   "hero": {
     "title": "TIFF til AVIF-konverter",
-    "description": "Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduktion.",
+    "description": "Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduktion. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF til AVIF-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduktion.",
+      "description": "Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduktion. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
       "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
       "alternateName": ["Konvertér TIFF til AVIF", "TIFF til AVIF konvertering", "Gratis TIFF til AVIF konverter"]
     },

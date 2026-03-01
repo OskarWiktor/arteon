@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor BMP în AVIF — BMP AVIF",
-    "description": "Convertește fișiere BMP necomprimate în AVIF ultracompact.",
+    "description": "Convertește fișiere BMP necomprimate în AVIF ultracompact. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-bmp-in-avif"
   },
   "hero": {
     "title": "Convertor BMP în AVIF",
-    "description": "Convertește fișiere BMP necomprimate în AVIF ultracompact.",
+    "description": "Convertește fișiere BMP necomprimate în AVIF ultracompact. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor BMP în AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere BMP necomprimate în AVIF ultracompact.",
+      "description": "Convertește fișiere BMP necomprimate în AVIF ultracompact. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
       "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie BMP în AVIF", "Convertor BMP în AVIF", "Convertor gratuit BMP în AVIF"]
     },

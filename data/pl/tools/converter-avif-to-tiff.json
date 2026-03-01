@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter AVIF na TIFF — AVIF TIFF",
-    "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego.",
+    "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-avif-na-tiff"
   },
   "hero": {
     "title": "Konwerter AVIF na TIFF",
-    "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego.",
+    "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Konwerter AVIF na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego.",
+      "description": "Zamień pliki AVIF na bezstratny TIFF. Z formatu webowego do profesjonalnego. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
       "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
       "alternateName": ["Zamiana AVIF na TIFF", "Konwersja AVIF do TIFF", "Darmowy konwerter AVIF na TIFF"]
     },

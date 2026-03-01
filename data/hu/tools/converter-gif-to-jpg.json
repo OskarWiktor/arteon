@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "GIF JPG konverter – GIF JPG",
-    "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.",
+    "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/gif-jpg-konverter"
   },
   "hero": {
     "title": "GIF JPG konverter",
-    "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.",
+    "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["GIF konvertálása JPG formátumba", "GIF–JPG átalakítás", "Ingyenes GIF–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.",
+      "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["GIF – JPG konvertálás", "JPG minőségszabályozás", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

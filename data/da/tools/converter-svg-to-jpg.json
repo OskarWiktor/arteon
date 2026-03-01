@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "SVG til JPG-konverter – SVG JPG",
-    "description": "Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet.",
+    "description": "Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/svg-til-jpg-konverter"
   },
   "hero": {
     "title": "SVG til JPG-konverter",
-    "description": "Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet.",
+    "description": "Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér SVG til JPG", "SVG til JPG konvertering", "Gratis SVG til JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet.",
+      "description": "Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
       "featureList": ["SVG til JPG-konvertering", "JPG-kvalitetskontrol", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {

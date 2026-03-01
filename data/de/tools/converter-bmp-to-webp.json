@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "BMP zu WebP Konverter – BMP WebP",
-    "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion.",
+    "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/bmp-zu-webp-konverter"
   },
   "hero": {
     "title": "BMP zu WebP Konverter",
-    "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion.",
+    "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP zu WebP Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion.",
+      "description": "Unkomprimierte BMP-Dateien in leichtes WebP umwandeln. Bis zu 95% Grossenreduktion. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
       "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["BMP in WEBP umwandeln", "BMP zu WEBP konvertieren", "Kostenloser BMP-zu-WEBP-Konverter"]
     },

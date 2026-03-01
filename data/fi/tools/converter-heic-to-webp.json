@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "HEIC WebP -muunnin – HEIC WebP",
-    "description": "Muunna iPhone HEIC-valokuvat kevyeen WebP-muotoon. Pienempi koko, nopeampi lataus.",
+    "description": "Muunna iPhone HEIC-valokuvat kevyeen WebP-muotoon. Pienempi koko, nopeampi lataus. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/heic-webp-muunnin"
   },
   "hero": {
     "title": "HEIC WebP -muunnin",
-    "description": "Muunna iPhone HEIC-valokuvat kevyeen WebP-muotoon. Pienempi koko, nopeampi lataus.",
+    "description": "Muunna iPhone HEIC-valokuvat kevyeen WebP-muotoon. Pienempi koko, nopeampi lataus. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC WebP -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna iPhone HEIC-valokuvat kevyeen WebP-muotoon. Pienempi koko, nopeampi lataus.",
+      "description": "Muunna iPhone HEIC-valokuvat kevyeen WebP-muotoon. Pienempi koko, nopeampi lataus. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
       "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Muunna HEIC WEBP-muotoon", "HEIC:n muunto WEBP-muotoon", "Ilmainen HEIC–WEBP-muunnin"]
     },

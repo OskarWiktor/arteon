@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník TIFF na WebP – TIFF WebP",
-    "description": "Převeďte soubory TIFF na lehke WebP. Masivni snizeni velikosti se zachovanim kvality.",
+    "description": "Převeďte soubory TIFF na lehke WebP. Masivni snizeni velikosti se zachovanim kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-tiff-na-webp"
   },
   "hero": {
     "title": "Převodník TIFF na WebP",
-    "description": "Převeďte soubory TIFF na lehke WebP. Masivni snizeni velikosti se zachovanim kvality.",
+    "description": "Převeďte soubory TIFF na lehke WebP. Masivni snizeni velikosti se zachovanim kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník TIFF na WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte soubory TIFF na lehke WebP. Masivni snizeni velikosti se zachovanim kvality.",
+      "description": "Převeďte soubory TIFF na lehke WebP. Masivni snizeni velikosti se zachovanim kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Převést TIFF na WEBP", "Konverze TIFF do WEBP", "Převodník TIFF na WEBP zdarma"]
     },

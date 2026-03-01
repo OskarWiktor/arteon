@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "JPG zu PNG Konverter – verlustfreies Format gratis",
-    "description": "JPG-Bilder verlustfrei in PNG umwandeln. Lokale Verarbeitung im Browser, unbegrenzte Dateien.",
+    "description": "JPG-Bilder verlustfrei in PNG umwandeln. Lokale Verarbeitung im Browser, unbegrenzte Dateien. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/jpg-zu-png-konverter"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["JPG in PNG umwandeln", "JPG zu PNG konvertieren", "Kostenloser JPG-zu-PNG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "JPG-Bilder verlustfrei in PNG umwandeln. Lokale Verarbeitung im Browser, unbegrenzte Dateien.",
+      "description": "JPG-Bilder verlustfrei in PNG umwandeln. Lokale Verarbeitung im Browser, unbegrenzte Dateien. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
       "featureList": ["JPG-zu-PNG-Konvertierung", "Verlustfreie PNG-Ausgabe", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
     },
     "howTo": {

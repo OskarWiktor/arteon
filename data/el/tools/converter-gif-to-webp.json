@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας GIF σε WebP – GIF WebP",
-    "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση.",
+    "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-gif-se-webp"
   },
   "hero": {
     "title": "Μετατροπέας GIF σε WebP",
-    "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση.",
+    "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας GIF σε WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση.",
+      "description": "Εξαγωγη του πρωτου καρε GIF ως ελαφρυ WebP. Μικροτερο αρχειο, ταχυτερη φορτωση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή GIF σε WEBP", "Μετατροπέας GIF σε WEBP", "Δωρεάν μετατροπέας GIF σε WEBP"]
     },

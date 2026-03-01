@@ -3,13 +3,13 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor WebP a AVIF — WebP AVIF",
-    "description": "Convierte archivos WebP a AVIF. Compresion aun mejor en formato moderno.",
+    "description": "Convierte archivos WebP a AVIF. Compresion aun mejor en formato moderno. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/es/herramientas/convertidor-webp-a-avif"
   },
   "hero": {
     "title": "Convertidor WebP a AVIF",
-    "description": "Convierte archivos WebP a AVIF. Compresion aun mejor en formato moderno.",
+    "description": "Convierte archivos WebP a AVIF. Compresion aun mejor en formato moderno. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertidor WebP a AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte archivos WebP a AVIF. Compresion aun mejor en formato moderno.",
+      "description": "Convierte archivos WebP a AVIF. Compresion aun mejor en formato moderno. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
       "featureList": ["Conversión a AVIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
       "alternateName": ["Convertir WEBP a AVIF", "Conversión de WEBP a AVIF", "Convertidor WEBP a AVIF gratis"]
     },

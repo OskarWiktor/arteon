@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "BMP til JPG-konverter – BMP JPG",
-    "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.",
+    "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/bmp-til-jpg-konverter"
   },
   "hero": {
     "title": "BMP til JPG-konverter",
-    "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.",
+    "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér BMP til JPG", "BMP til JPG konvertering", "Gratis BMP til JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.",
+      "description": "Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
       "featureList": ["BMP til JPG-konvertering", "JPG-kvalitetskontrol", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {

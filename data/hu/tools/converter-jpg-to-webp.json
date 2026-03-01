@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "JPG WebP konverter – JPG WebP",
-    "description": "JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal.",
+    "description": "JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/jpg-webp-konverter"
   },
   "hero": {
     "title": "JPG WebP konverter",
-    "description": "JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal.",
+    "description": "JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["JPG konvertálása WEBP formátumba", "JPG–WEBP átalakítás", "Ingyenes JPG–WEBP konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal.",
+      "description": "JPG fotók konvertálása könnyű WebP-re. Képméret csökkentése akár 35%-kal. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["JPG – WEBP konvertálás", "WEBP minőségszabályozás", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

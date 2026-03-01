@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "PNG naar TIFF converter — PNG TIFF",
-    "description": "Converteer PNG-afbeeldingen naar professioneel TIFF-formaat.",
+    "description": "Converteer PNG-afbeeldingen naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/png-naar-tiff-converter"
   },
   "hero": {
     "title": "PNG naar TIFF converter",
-    "description": "Converteer PNG-afbeeldingen naar professioneel TIFF-formaat.",
+    "description": "Converteer PNG-afbeeldingen naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG naar TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer PNG-afbeeldingen naar professioneel TIFF-formaat.",
+      "description": "Converteer PNG-afbeeldingen naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["PNG naar TIFF omzetten", "PNG naar TIFF conversie", "Gratis PNG naar TIFF converter"]
     },

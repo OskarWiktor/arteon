@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník SVG na GIF — SVG GIF",
-    "description": "Prevedte vektorovou grafiku SVG na rastrovy format GIF.",
+    "description": "Prevedte vektorovou grafiku SVG na rastrovy format GIF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-svg-na-gif"
   },
   "hero": {
     "title": "Převodník SVG na GIF",
-    "description": "Prevedte vektorovou grafiku SVG na rastrovy format GIF.",
+    "description": "Prevedte vektorovou grafiku SVG na rastrovy format GIF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník SVG na GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Prevedte vektorovou grafiku SVG na rastrovy format GIF.",
+      "description": "Prevedte vektorovou grafiku SVG na rastrovy format GIF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["Konverze do GIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést SVG na GIF", "Konverze SVG do GIF", "Převodník SVG na GIF zdarma"]
     },

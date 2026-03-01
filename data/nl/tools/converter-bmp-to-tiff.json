@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "BMP naar TIFF converter — BMP TIFF",
-    "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.",
+    "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/bmp-naar-tiff-converter"
   },
   "hero": {
     "title": "BMP naar TIFF converter",
-    "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.",
+    "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP naar TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.",
+      "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
       "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["BMP naar TIFF omzetten", "BMP naar TIFF conversie", "Gratis BMP naar TIFF converter"]
     },

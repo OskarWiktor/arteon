@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "HEIC JPG -muunnin – HEIC JPG",
-    "description": "Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista, ei lahetysta palvelimelle.",
+    "description": "Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista, ei lahetysta palvelimelle. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/heic-jpg-muunnin"
   },
   "hero": {
     "title": "HEIC JPG -muunnin",
-    "description": "Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista, ei lahetysta palvelimelle.",
+    "description": "Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista, ei lahetysta palvelimelle. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC JPG -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista, ei lahetysta palvelimelle.",
+      "description": "Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista, ei lahetysta palvelimelle. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Muunna HEIC JPG-muotoon", "HEIC:n muunto JPG-muotoon", "Ilmainen HEIC–JPG-muunnin"]
     },

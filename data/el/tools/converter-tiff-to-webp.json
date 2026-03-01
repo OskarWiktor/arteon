@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας TIFF σε WebP – TIFF WebP",
-    "description": "Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση μεγεθους με διατηρηση ποιοτητας.",
+    "description": "Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση μεγεθους με διατηρηση ποιοτητας. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-tiff-se-webp"
   },
   "hero": {
     "title": "Μετατροπέας TIFF σε WebP",
-    "description": "Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση μεγεθους με διατηρηση ποιοτητας.",
+    "description": "Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση μεγεθους με διατηρηση ποιοτητας. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας TIFF σε WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση μεγεθους με διατηρηση ποιοτητας.",
+      "description": "Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση μεγεθους με διατηρηση ποιοτητας. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
       "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή TIFF σε WEBP", "Μετατροπέας TIFF σε WEBP", "Δωρεάν μετατροπέας TIFF σε WEBP"]
     },

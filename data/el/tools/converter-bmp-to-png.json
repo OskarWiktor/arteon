@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας BMP σε PNG – BMP PNG",
-    "description": "Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.",
+    "description": "Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-bmp-se-png"
   },
   "hero": {
     "title": "Μετατροπέας BMP σε PNG",
-    "description": "Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.",
+    "description": "Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Μετατροπή BMP σε PNG", "Μετατροπέας BMP σε PNG", "Δωρεάν μετατροπέας BMP σε PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο.",
+      "description": "Μετατρέψτε εικόνες BMP σε PNG χωρίς απώλειες. Ποιότητα διατηρημένη, μέγεθος μειωμένο. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
       "featureList": ["Μετατροπή BMP σε PNG", "Έξοδος PNG χωρίς απώλειες", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "PNG naar GIF converter — PNG GIF",
-    "description": "Converteer PNG-afbeeldingen naar GIF. Ideaal voor eenvoudige iconen en afbeeldingen.",
+    "description": "Converteer PNG-afbeeldingen naar GIF. Ideaal voor eenvoudige iconen en afbeeldingen. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/png-naar-gif-converter"
   },
   "hero": {
     "title": "PNG naar GIF converter",
-    "description": "Converteer PNG-afbeeldingen naar GIF. Ideaal voor eenvoudige iconen en afbeeldingen.",
+    "description": "Converteer PNG-afbeeldingen naar GIF. Ideaal voor eenvoudige iconen en afbeeldingen. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG naar GIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer PNG-afbeeldingen naar GIF. Ideaal voor eenvoudige iconen en afbeeldingen.",
+      "description": "Converteer PNG-afbeeldingen naar GIF. Ideaal voor eenvoudige iconen en afbeeldingen. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["PNG naar GIF omzetten", "PNG naar GIF conversie", "Gratis PNG naar GIF converter"]
     },

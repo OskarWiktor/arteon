@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník HEIC na TIFF — HEIC TIFF",
-    "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF.",
+    "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-heic-na-tiff"
   },
   "hero": {
     "title": "Převodník HEIC na TIFF",
-    "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF.",
+    "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník HEIC na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF.",
+      "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést HEIC na TIFF", "Konverze HEIC do TIFF", "Převodník HEIC na TIFF zdarma"]
     },

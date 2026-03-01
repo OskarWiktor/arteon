@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor TIFF în PNG – TIFF PNG",
-    "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor.",
+    "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-tiff-in-png"
   },
   "hero": {
     "title": "Convertor TIFF în PNG",
-    "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor.",
+    "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor TIFF în PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor.",
+      "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie TIFF în PNG", "Lossless PNG output", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie TIFF în PNG", "Convertor TIFF în PNG", "Convertor gratuit TIFF în PNG"]
     },

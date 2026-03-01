@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník BMP na AVIF — BMP AVIF",
-    "description": "Převeďte nekomprimované soubory BMP na ultrakompaktní AVIF.",
+    "description": "Převeďte nekomprimované soubory BMP na ultrakompaktní AVIF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-bmp-na-avif"
   },
   "hero": {
     "title": "Převodník BMP na AVIF",
-    "description": "Převeďte nekomprimované soubory BMP na ultrakompaktní AVIF.",
+    "description": "Převeďte nekomprimované soubory BMP na ultrakompaktní AVIF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník BMP na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte nekomprimované soubory BMP na ultrakompaktní AVIF.",
+      "description": "Převeďte nekomprimované soubory BMP na ultrakompaktní AVIF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
       "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést BMP na AVIF", "Konverze BMP do AVIF", "Převodník BMP na AVIF zdarma"]
     },

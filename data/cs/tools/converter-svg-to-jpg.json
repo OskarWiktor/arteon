@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník SVG na JPG – SVG JPG",
-    "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.",
+    "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-svg-na-jpg"
   },
   "hero": {
     "title": "Převodník SVG na JPG",
-    "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.",
+    "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést SVG na JPG", "Konverze SVG do JPG", "Převodník SVG na JPG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.",
+      "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
       "featureList": ["Převod SVG na JPG", "Ovládání kvality JPG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {

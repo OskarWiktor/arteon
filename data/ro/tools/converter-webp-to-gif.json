@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor WebP în GIF — WebP GIF",
-    "description": "Convertește imagini WebP în format GIF pentru compatibilitate maxima.",
+    "description": "Convertește imagini WebP în format GIF pentru compatibilitate maxima. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-webp-in-gif"
   },
   "hero": {
     "title": "Convertor WebP în GIF",
-    "description": "Convertește imagini WebP în format GIF pentru compatibilitate maxima.",
+    "description": "Convertește imagini WebP în format GIF pentru compatibilitate maxima. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor WebP în GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește imagini WebP în format GIF pentru compatibilitate maxima.",
+      "description": "Convertește imagini WebP în format GIF pentru compatibilitate maxima. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
       "featureList": ["Conversie în GIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie WEBP în GIF", "Convertor WEBP în GIF", "Convertor gratuit WEBP în GIF"]
     },

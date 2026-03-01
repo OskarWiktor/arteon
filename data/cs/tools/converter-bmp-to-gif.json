@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník BMP na GIF — BMP GIF",
-    "description": "Převeďte nekomprimované soubory BMP na lehky GIF.",
+    "description": "Převeďte nekomprimované soubory BMP na lehky GIF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-bmp-na-gif"
   },
   "hero": {
     "title": "Převodník BMP na GIF",
-    "description": "Převeďte nekomprimované soubory BMP na lehky GIF.",
+    "description": "Převeďte nekomprimované soubory BMP na lehky GIF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník BMP na GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte nekomprimované soubory BMP na lehky GIF.",
+      "description": "Převeďte nekomprimované soubory BMP na lehky GIF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
       "featureList": ["Konverze do GIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést BMP na GIF", "Konverze BMP do GIF", "Převodník BMP na GIF zdarma"]
     },

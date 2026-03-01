@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor TIFF în WebP – TIFF WebP",
-    "description": "Convertește fișiere TIFF în WebP usor. Reducere masiva cu calitate pastrata.",
+    "description": "Convertește fișiere TIFF în WebP usor. Reducere masiva cu calitate pastrata. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-tiff-in-webp"
   },
   "hero": {
     "title": "Convertor TIFF în WebP",
-    "description": "Convertește fișiere TIFF în WebP usor. Reducere masiva cu calitate pastrata.",
+    "description": "Convertește fișiere TIFF în WebP usor. Reducere masiva cu calitate pastrata. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor TIFF în WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere TIFF în WebP usor. Reducere masiva cu calitate pastrata.",
+      "description": "Convertește fișiere TIFF în WebP usor. Reducere masiva cu calitate pastrata. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie TIFF în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie TIFF în WEBP", "Convertor TIFF în WEBP", "Convertor gratuit TIFF în WEBP"]
     },

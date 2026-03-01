@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "JPG till WebP-konverterare – JPG WebP",
-    "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.",
+    "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/jpg-till-webp-konverterare"
   },
   "hero": {
     "title": "JPG till WebP-konverterare",
-    "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.",
+    "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertera JPG till WEBP", "JPG till WEBP konvertering", "Gratis JPG till WEBP konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek.",
+      "description": "Konvertera JPG-foton till lättvikts-WebP. Spara upp till 35% filstorlek. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
       "featureList": ["JPG till WEBP-konvertering", "WEBP-kvalitetskontroll", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {

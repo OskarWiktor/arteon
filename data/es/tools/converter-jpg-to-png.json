@@ -3,7 +3,7 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor JPG a PNG – formato sin pérdida gratis",
-    "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor.",
+    "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-jpg-a-png"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir JPG a PNG", "Conversión de JPG a PNG", "Convertidor JPG a PNG gratis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor.",
+      "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
       "featureList": ["Conversión de JPG a PNG", "Salida PNG sin pérdidas", "Conversión por lotes", "Procesamiento local en el navegador", "Sin subida de archivos"]
     },
     "howTo": {

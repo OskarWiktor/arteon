@@ -3,7 +3,7 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor WebP a PNG – conversión sin pérdida gratis",
-    "description": "Convierte imágenes WebP a PNG sin pérdida. Conversión local, nada se envía al servidor.",
+    "description": "Convierte imágenes WebP a PNG sin pérdida. Conversión local, nada se envía al servidor. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-webp-a-png"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir WEBP a PNG", "Conversión de WEBP a PNG", "Convertidor WEBP a PNG gratis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte imágenes WebP a PNG sin pérdida. Conversión local, nada se envía al servidor.",
+      "description": "Convierte imágenes WebP a PNG sin pérdida. Conversión local, nada se envía al servidor. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
       "featureList": ["Conversión de WEBP a PNG", "Salida PNG sin pérdidas", "Conversión por lotes", "Procesamiento local en el navegador", "Sin subida de archivos"]
     },
     "howTo": {

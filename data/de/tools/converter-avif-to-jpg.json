@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "AVIF zu JPG Konverter – AVIF JPG",
-    "description": "AVIF-Dateien in universelles JPG umwandeln. Kompatibel mit jedem Programm und Plattform.",
+    "description": "AVIF-Dateien in universelles JPG umwandeln. Kompatibel mit jedem Programm und Plattform. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/avif-zu-jpg-konverter"
   },
   "hero": {
     "title": "AVIF zu JPG Konverter",
-    "description": "AVIF-Dateien in universelles JPG umwandeln. Kompatibel mit jedem Programm und Plattform.",
+    "description": "AVIF-Dateien in universelles JPG umwandeln. Kompatibel mit jedem Programm und Plattform. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF zu JPG Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "AVIF-Dateien in universelles JPG umwandeln. Kompatibel mit jedem Programm und Plattform.",
+      "description": "AVIF-Dateien in universelles JPG umwandeln. Kompatibel mit jedem Programm und Plattform. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
       "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["AVIF in JPG umwandeln", "AVIF zu JPG konvertieren", "Kostenloser AVIF-zu-JPG-Konverter"]
     },

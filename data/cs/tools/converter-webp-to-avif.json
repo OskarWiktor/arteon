@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník WebP na AVIF — WebP AVIF",
-    "description": "Převeďte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu.",
+    "description": "Převeďte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-webp-na-avif"
   },
   "hero": {
     "title": "Převodník WebP na AVIF",
-    "description": "Převeďte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu.",
+    "description": "Převeďte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník WebP na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu.",
+      "description": "Převeďte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
       "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést WEBP na AVIF", "Konverze WEBP do AVIF", "Převodník WEBP na AVIF zdarma"]
     },

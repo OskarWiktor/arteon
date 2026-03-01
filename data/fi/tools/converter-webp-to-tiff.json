@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "WebP TIFF -muunnin — WebP TIFF",
-    "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.",
+    "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/webp-tiff-muunnin"
   },
   "hero": {
     "title": "WebP TIFF -muunnin",
-    "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.",
+    "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "WebP TIFF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin.",
+      "description": "Muunna WebP-kuvat ammattimaiseen TIFF-muotoon tulostukseen ja arkistointiin. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
       "featureList": ["Muunnos TIFF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna WEBP TIFF-muotoon", "WEBP:n muunto TIFF-muotoon", "Ilmainen WEBP–TIFF-muunnin"]
     },

@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "GIF WebP konverter – GIF WebP",
-    "description": "GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl, gyorsabb betoltes.",
+    "description": "GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl, gyorsabb betoltes. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/gif-webp-konverter"
   },
   "hero": {
     "title": "GIF WebP konverter",
-    "description": "GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl, gyorsabb betoltes.",
+    "description": "GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl, gyorsabb betoltes. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF WebP konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl, gyorsabb betoltes.",
+      "description": "GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl, gyorsabb betoltes. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["GIF konvertálása WEBP formátumba", "GIF–WEBP átalakítás", "Ingyenes GIF–WEBP konverter"]
     },

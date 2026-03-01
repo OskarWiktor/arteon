@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας JPG σε PNG – JPG PNG",
-    "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.",
+    "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-jpg-se-png"
   },
   "hero": {
     "title": "Μετατροπέας JPG σε PNG",
-    "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.",
+    "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Μετατροπή JPG σε PNG", "Μετατροπέας JPG σε PNG", "Δωρεάν μετατροπέας JPG σε PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης.",
+      "description": "Μετατρέψτε εικόνες JPG σε PNG χωρίς απώλειες. Τοπική επεξεργασία στο πρόγραμμα περιήγησης. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
       "featureList": ["Μετατροπή JPG σε PNG", "Έξοδος PNG χωρίς απώλειες", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
     },
     "howTo": {

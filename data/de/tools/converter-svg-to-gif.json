@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "SVG zu GIF Konverter — SVG GIF",
-    "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln.",
+    "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/de/werkzeuge/svg-zu-gif-konverter"
   },
   "hero": {
     "title": "SVG zu GIF Konverter",
-    "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln.",
+    "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG zu GIF Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln.",
+      "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
       "featureList": ["Konvertierung zu GIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
       "alternateName": ["SVG in GIF umwandeln", "SVG zu GIF konvertieren", "Kostenloser SVG-zu-GIF-Konverter"]
     },

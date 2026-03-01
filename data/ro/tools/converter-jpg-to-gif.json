@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor JPG în GIF — JPG GIF",
-    "description": "Convertește fotografii JPG în format GIF. Perfect pentru grafice simple și pictograme.",
+    "description": "Convertește fotografii JPG în format GIF. Perfect pentru grafice simple și pictograme. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-jpg-in-gif"
   },
   "hero": {
     "title": "Convertor JPG în GIF",
-    "description": "Convertește fotografii JPG în format GIF. Perfect pentru grafice simple și pictograme.",
+    "description": "Convertește fotografii JPG în format GIF. Perfect pentru grafice simple și pictograme. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor JPG în GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii JPG în format GIF. Perfect pentru grafice simple și pictograme.",
+      "description": "Convertește fotografii JPG în format GIF. Perfect pentru grafice simple și pictograme. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie în GIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie JPG în GIF", "Convertor JPG în GIF", "Convertor gratuit JPG în GIF"]
     },

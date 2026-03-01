@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "GIF naar AVIF converter — GIF AVIF",
-    "description": "Converteer het eerste GIF-frame naar statisch AVIF-beeld met uitstekende compressie.",
+    "description": "Converteer het eerste GIF-frame naar statisch AVIF-beeld met uitstekende compressie. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/gif-naar-avif-converter"
   },
   "hero": {
     "title": "GIF naar AVIF converter",
-    "description": "Converteer het eerste GIF-frame naar statisch AVIF-beeld met uitstekende compressie.",
+    "description": "Converteer het eerste GIF-frame naar statisch AVIF-beeld met uitstekende compressie. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF naar AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer het eerste GIF-frame naar statisch AVIF-beeld met uitstekende compressie.",
+      "description": "Converteer het eerste GIF-frame naar statisch AVIF-beeld met uitstekende compressie. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
       "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["GIF naar AVIF omzetten", "GIF naar AVIF conversie", "Gratis GIF naar AVIF converter"]
     },

@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor SVG în JPG – SVG JPG",
-    "description": "Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală.",
+    "description": "Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-svg-in-jpg"
   },
   "hero": {
     "title": "Convertor SVG în JPG",
-    "description": "Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală.",
+    "description": "Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Conversie SVG în JPG", "Convertor SVG în JPG", "Convertor gratuit SVG în JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală.",
+      "description": "Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
       "featureList": ["Conversie SVG în JPG", "Control calitate JPG", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "PNG naar WebP converter – PNG WebP",
-    "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.",
+    "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/png-naar-webp-converter"
   },
   "hero": {
     "title": "PNG naar WebP converter",
-    "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.",
+    "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["PNG naar WEBP omzetten", "PNG naar WEBP conversie", "Gratis PNG naar WEBP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.",
+      "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["PNG naar WEBP conversie", "WEBP-kwaliteitscontrole", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {

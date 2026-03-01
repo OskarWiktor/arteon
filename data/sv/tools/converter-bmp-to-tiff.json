@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "BMP till TIFF-konverterare — BMP TIFF",
-    "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift.",
+    "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/sv/verktyg/bmp-till-tiff-konverterare"
   },
   "hero": {
     "title": "BMP till TIFF-konverterare",
-    "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift.",
+    "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP till TIFF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift.",
+      "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
       "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera BMP till TIFF", "BMP till TIFF konvertering", "Gratis BMP till TIFF konverterare"]
     },

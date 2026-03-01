@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur WebP en JPG – compatibilité universelle gratuite",
-    "description": "Convertissez vos fichiers WebP en JPG universel. Sans limites, sans inscription.",
+    "description": "Convertissez vos fichiers WebP en JPG universel. Sans limites, sans inscription. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-webp-en-jpg"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir WEBP en JPG", "Conversion WEBP vers JPG", "Convertisseur WEBP en JPG gratuit"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez vos fichiers WebP en JPG universel. Sans limites, sans inscription.",
+      "description": "Convertissez vos fichiers WebP en JPG universel. Sans limites, sans inscription. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
       "featureList": ["Conversion WEBP en JPG", "Contrôle de qualité JPG", "Conversion par lot", "Traitement local dans le navigateur", "Aucun envoi de fichier"]
     },
     "howTo": {

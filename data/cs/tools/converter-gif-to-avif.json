@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník GIF na AVIF — GIF AVIF",
-    "description": "Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi.",
+    "description": "Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-gif-na-avif"
   },
   "hero": {
     "title": "Převodník GIF na AVIF",
-    "description": "Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi.",
+    "description": "Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník GIF na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi.",
+      "description": "Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
       "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést GIF na AVIF", "Konverze GIF do AVIF", "Převodník GIF na AVIF zdarma"]
     },

@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter HEIC na TIFF — HEIC TIFF",
-    "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji.",
+    "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-heic-na-tiff"
   },
   "hero": {
     "title": "Konwerter HEIC na TIFF",
-    "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji.",
+    "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Konwerter HEIC na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji.",
+      "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
       "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
       "alternateName": ["Zamiana HEIC na TIFF", "Konwersja HEIC do TIFF", "Darmowy konwerter HEIC na TIFF"]
     },

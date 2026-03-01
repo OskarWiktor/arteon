@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor JPG para WebP – JPG WebP",
-    "description": "Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.",
+    "description": "Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-jpg-para-webp"
   },
   "hero": {
     "title": "Conversor JPG para WebP",
-    "description": "Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.",
+    "description": "Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Converter JPG para WEBP", "Conversão de JPG para WEBP", "Conversor JPG para WEBP grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.",
+      "description": "Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
       "featureList": ["Conversão de JPG para WEBP", "Controlo de qualidade WEBP", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {

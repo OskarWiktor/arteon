@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "TIFF til JPG-konverterer – TIFF JPG",
-    "description": "Konverter TIFF-filer til kompakt JPG. Ideell for skanninger og fotoarkiv.",
+    "description": "Konverter TIFF-filer til kompakt JPG. Ideell for skanninger og fotoarkiv. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/tiff-til-jpg-konverterer"
   },
   "hero": {
     "title": "TIFF til JPG-konverterer",
-    "description": "Konverter TIFF-filer til kompakt JPG. Ideell for skanninger og fotoarkiv.",
+    "description": "Konverter TIFF-filer til kompakt JPG. Ideell for skanninger og fotoarkiv. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF til JPG-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter TIFF-filer til kompakt JPG. Ideell for skanninger og fotoarkiv.",
+      "description": "Konverter TIFF-filer til kompakt JPG. Ideell for skanninger og fotoarkiv. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
       "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konverter TIFF til JPG", "TIFF til JPG konvertering", "Gratis TIFF til JPG konverterer"]
     },

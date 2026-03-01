@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "HEIC AVIF -muunnin — HEIC AVIF",
-    "description": "Muunna iPhonen HEIC-kuvat moderniin AVIF-muotoon.",
+    "description": "Muunna iPhonen HEIC-kuvat moderniin AVIF-muotoon. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/heic-avif-muunnin"
   },
   "hero": {
     "title": "HEIC AVIF -muunnin",
-    "description": "Muunna iPhonen HEIC-kuvat moderniin AVIF-muotoon.",
+    "description": "Muunna iPhonen HEIC-kuvat moderniin AVIF-muotoon. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC AVIF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna iPhonen HEIC-kuvat moderniin AVIF-muotoon.",
+      "description": "Muunna iPhonen HEIC-kuvat moderniin AVIF-muotoon. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
       "featureList": ["Muunnos AVIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna HEIC AVIF-muotoon", "HEIC:n muunto AVIF-muotoon", "Ilmainen HEIC–AVIF-muunnin"]
     },

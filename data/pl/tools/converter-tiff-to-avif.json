@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter TIFF na AVIF — TIFF AVIF",
-    "description": "Zamień pliki TIFF na nowoczesny AVIF. Idealne do publikacji skanów w internecie.",
+    "description": "Zamień pliki TIFF na nowoczesny AVIF. Idealne do publikacji skanów w internecie. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-tiff-na-avif"
   },
   "hero": {
     "title": "Konwerter TIFF na AVIF",
-    "description": "Zamień pliki TIFF na nowoczesny AVIF. Idealne do publikacji skanów w internecie.",
+    "description": "Zamień pliki TIFF na nowoczesny AVIF. Idealne do publikacji skanów w internecie. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Konwerter TIFF na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień pliki TIFF na nowoczesny AVIF. Idealne do publikacji skanów w internecie.",
+      "description": "Zamień pliki TIFF na nowoczesny AVIF. Idealne do publikacji skanów w internecie. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
       "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
       "alternateName": ["Zamiana TIFF na AVIF", "Konwersja TIFF do AVIF", "Darmowy konwerter TIFF na AVIF"]
     },

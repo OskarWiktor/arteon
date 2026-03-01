@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor PNG para GIF — PNG GIF",
-    "description": "Converta graficos PNG para GIF. Ideal para icones simples e graficos.",
+    "description": "Converta graficos PNG para GIF. Ideal para icones simples e graficos. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/pt/ferramentas/conversor-png-para-gif"
   },
   "hero": {
     "title": "Conversor PNG para GIF",
-    "description": "Converta graficos PNG para GIF. Ideal para icones simples e graficos.",
+    "description": "Converta graficos PNG para GIF. Ideal para icones simples e graficos. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Conversor PNG para GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta graficos PNG para GIF. Ideal para icones simples e graficos.",
+      "description": "Converta graficos PNG para GIF. Ideal para icones simples e graficos. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
       "featureList": ["Conversão para GIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
       "alternateName": ["Converter PNG para GIF", "Conversão de PNG para GIF", "Conversor PNG para GIF grátis"]
     },

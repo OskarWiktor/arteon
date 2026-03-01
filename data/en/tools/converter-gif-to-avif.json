@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "GIF to AVIF converter — GIF AVIF",
-    "description": "Convert GIF first frame to static AVIF image with excellent compression.",
+    "description": "Convert GIF first frame to static AVIF image with excellent compression. All processing happens locally in your browser — files never leave your device.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/en/tools/gif-to-avif-converter"
   },
   "hero": {
     "title": "GIF to AVIF converter",
-    "description": "Convert GIF first frame to static AVIF image with excellent compression.",
+    "description": "Convert GIF first frame to static AVIF image with excellent compression. All processing happens locally in your browser — files never leave your device.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF to AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert GIF first frame to static AVIF image with excellent compression.",
+      "description": "Convert GIF first frame to static AVIF image with excellent compression. All processing happens locally in your browser — files never leave your device.",
       "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert GIF to AVIF", "GIF to AVIF conversion", "Free GIF to AVIF converter", "Change GIF to AVIF"]
     },

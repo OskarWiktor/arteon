@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore PNG in JPG – PNG JPG",
-    "description": "Converti file PNG in JPG nel browser. Senza limiti, senza registrazione.",
+    "description": "Converti file PNG in JPG nel browser. Senza limiti, senza registrazione. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-png-in-jpg"
   },
   "hero": {
     "title": "Convertitore PNG in JPG",
-    "description": "Converti file PNG in JPG nel browser. Senza limiti, senza registrazione.",
+    "description": "Converti file PNG in JPG nel browser. Senza limiti, senza registrazione. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Convertire PNG in JPG", "Conversione PNG in JPG", "Convertitore PNG in JPG gratuito"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converti file PNG in JPG nel browser. Senza limiti, senza registrazione.",
+      "description": "Converti file PNG in JPG nel browser. Senza limiti, senza registrazione. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
       "featureList": ["Conversione da PNG a JPG", "Controllo qualità JPG", "Conversione in blocco", "Elaborazione locale nel browser", "Nessun caricamento file"]
     },
     "howTo": {

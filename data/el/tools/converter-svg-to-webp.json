@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας SVG σε WebP – SVG WebP",
-    "description": "Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες και κοινωνικα δικτυα.",
+    "description": "Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες και κοινωνικα δικτυα. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-svg-se-webp"
   },
   "hero": {
     "title": "Μετατροπέας SVG σε WebP",
-    "description": "Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες και κοινωνικα δικτυα.",
+    "description": "Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες και κοινωνικα δικτυα. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας SVG σε WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες και κοινωνικα δικτυα.",
+      "description": "Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες και κοινωνικα δικτυα. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
       "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή SVG σε WEBP", "Μετατροπέας SVG σε WEBP", "Δωρεάν μετατροπέας SVG σε WEBP"]
     },

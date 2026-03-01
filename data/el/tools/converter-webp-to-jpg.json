@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας WebP σε JPG – WebP JPG",
-    "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.",
+    "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-webp-se-jpg"
   },
   "hero": {
     "title": "Μετατροπέας WebP σε JPG",
-    "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.",
+    "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Μετατροπή WEBP σε JPG", "Μετατροπέας WEBP σε JPG", "Δωρεάν μετατροπέας WEBP σε JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG.",
+      "description": "Μετατρέψτε αρχεία WebP σε καθολικά συμβατό JPG. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
       "featureList": ["Μετατροπή WEBP σε JPG", "Έλεγχος ποιότητας JPG", "Ομαδική μετατροπή", "Τοπική επεξεργασία στον browser", "Χωρίς μεταφόρτωση αρχείων"]
     },
     "howTo": {

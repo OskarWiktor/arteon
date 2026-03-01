@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας BMP σε TIFF — BMP TIFF",
-    "description": "Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση.",
+    "description": "Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-bmp-se-tiff"
   },
   "hero": {
     "title": "Μετατροπέας BMP σε TIFF",
-    "description": "Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση.",
+    "description": "Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας BMP σε TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση.",
+      "description": "Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
       "featureList": ["Μετατροπή σε TIFF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή BMP σε TIFF", "Μετατροπέας BMP σε TIFF", "Δωρεάν μετατροπέας BMP σε TIFF"]
     },

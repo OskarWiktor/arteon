@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník BMP na TIFF — BMP TIFF",
-    "description": "Převeďte soubory BMP na profesionální formát TIFF pro tisk.",
+    "description": "Převeďte soubory BMP na profesionální formát TIFF pro tisk. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-bmp-na-tiff"
   },
   "hero": {
     "title": "Převodník BMP na TIFF",
-    "description": "Převeďte soubory BMP na profesionální formát TIFF pro tisk.",
+    "description": "Převeďte soubory BMP na profesionální formát TIFF pro tisk. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník BMP na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte soubory BMP na profesionální formát TIFF pro tisk.",
+      "description": "Převeďte soubory BMP na profesionální formát TIFF pro tisk. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
       "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést BMP na TIFF", "Konverze BMP do TIFF", "Převodník BMP na TIFF zdarma"]
     },

@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "WebP naar GIF converter — WebP GIF",
-    "description": "Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit.",
+    "description": "Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/webp-naar-gif-converter"
   },
   "hero": {
     "title": "WebP naar GIF converter",
-    "description": "Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit.",
+    "description": "Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "WebP naar GIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit.",
+      "description": "Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
       "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["WEBP naar GIF omzetten", "WEBP naar GIF conversie", "Gratis WEBP naar GIF converter"]
     },

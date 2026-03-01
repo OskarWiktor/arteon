@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter PNG na TIFF — PNG TIFF",
-    "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki.",
+    "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-png-na-tiff"
   },
   "hero": {
     "title": "Konwerter PNG na TIFF",
-    "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki.",
+    "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Konwerter PNG na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki.",
+      "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
       "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
       "alternateName": ["Zamiana PNG na TIFF", "Konwersja PNG do TIFF", "Darmowy konwerter PNG na TIFF"]
     },

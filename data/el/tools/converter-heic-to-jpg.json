@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας HEIC σε JPG – HEIC JPG",
-    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server.",
+    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-heic-se-jpg"
   },
   "hero": {
     "title": "Μετατροπέας HEIC σε JPG",
-    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server.",
+    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας HEIC σε JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server.",
+      "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε JPG. Χωρις εγγραφη, χωρις αποστολη στο server. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή HEIC σε JPG", "Μετατροπέας HEIC σε JPG", "Δωρεάν μετατροπέας HEIC σε JPG"]
     },

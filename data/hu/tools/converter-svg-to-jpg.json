@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "SVG JPG konverter – SVG JPG",
-    "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.",
+    "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/svg-jpg-konverter"
   },
   "hero": {
     "title": "SVG JPG konverter",
-    "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.",
+    "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["SVG konvertálása JPG formátumba", "SVG–JPG átalakítás", "Ingyenes SVG–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.",
+      "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
       "featureList": ["SVG – JPG konvertálás", "JPG minőségszabályozás", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

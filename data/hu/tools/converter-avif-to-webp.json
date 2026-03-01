@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "AVIF WebP konverter – AVIF WebP",
-    "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel.",
+    "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/avif-webp-konverter"
   },
   "hero": {
     "title": "AVIF WebP konverter",
-    "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel.",
+    "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF WebP konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel.",
+      "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
       "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["AVIF konvertálása WEBP formátumba", "AVIF–WEBP átalakítás", "Ingyenes AVIF–WEBP konverter"]
     },

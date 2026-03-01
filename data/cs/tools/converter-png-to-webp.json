@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník PNG na WebP – PNG WebP",
-    "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
+    "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-png-na-webp"
   },
   "hero": {
     "title": "Převodník PNG na WebP",
-    "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
+    "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést PNG na WEBP", "Konverze PNG do WEBP", "Převodník PNG na WEBP zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
+      "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["Převod PNG na WEBP", "Ovládání kvality WEBP", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {

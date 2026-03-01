@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník BMP na WebP – BMP WebP",
-    "description": "Převeďte soubory BMP na lehke WebP. Snizeni velikosti az o 95%.",
+    "description": "Převeďte soubory BMP na lehke WebP. Snizeni velikosti az o 95%. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-bmp-na-webp"
   },
   "hero": {
     "title": "Převodník BMP na WebP",
-    "description": "Převeďte soubory BMP na lehke WebP. Snizeni velikosti az o 95%.",
+    "description": "Převeďte soubory BMP na lehke WebP. Snizeni velikosti az o 95%. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník BMP na WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte soubory BMP na lehke WebP. Snizeni velikosti az o 95%.",
+      "description": "Převeďte soubory BMP na lehke WebP. Snizeni velikosti az o 95%. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
       "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Převést BMP na WEBP", "Konverze BMP do WEBP", "Převodník BMP na WEBP zdarma"]
     },

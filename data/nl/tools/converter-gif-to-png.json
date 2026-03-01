@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "GIF naar PNG converter – GIF PNG",
-    "description": "Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies.",
+    "description": "Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/gif-naar-png-converter"
   },
   "hero": {
     "title": "GIF naar PNG converter",
-    "description": "Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies.",
+    "description": "Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["GIF naar PNG omzetten", "GIF naar PNG conversie", "Gratis GIF naar PNG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies.",
+      "description": "Exporteer het eerste frame van een GIF als statisch PNG. Zonder kwaliteitsverlies. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["GIF naar PNG conversie", "Verliesvrije PNG-uitvoer", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {

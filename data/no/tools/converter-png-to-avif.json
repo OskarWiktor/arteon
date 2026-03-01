@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "PNG til AVIF-konverterer — PNG AVIF",
-    "description": "Konverter PNG-grafikk til AVIF med transparensstotte. Betydelig mindre filer.",
+    "description": "Konverter PNG-grafikk til AVIF med transparensstotte. Betydelig mindre filer. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/no/verktoy/png-til-avif-konverterer"
   },
   "hero": {
     "title": "PNG til AVIF-konverterer",
-    "description": "Konverter PNG-grafikk til AVIF med transparensstotte. Betydelig mindre filer.",
+    "description": "Konverter PNG-grafikk til AVIF med transparensstotte. Betydelig mindre filer. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG til AVIF-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter PNG-grafikk til AVIF med transparensstotte. Betydelig mindre filer.",
+      "description": "Konverter PNG-grafikk til AVIF med transparensstotte. Betydelig mindre filer. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
       "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
       "alternateName": ["Konverter PNG til AVIF", "PNG til AVIF konvertering", "Gratis PNG til AVIF konverterer"]
     },

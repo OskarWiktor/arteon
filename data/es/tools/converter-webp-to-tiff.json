@@ -3,13 +3,13 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor WebP a TIFF — WebP TIFF",
-    "description": "Convierte imagenes WebP a TIFF profesional para impresion y archivado.",
+    "description": "Convierte imagenes WebP a TIFF profesional para impresion y archivado. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/es/herramientas/convertidor-webp-a-tiff"
   },
   "hero": {
     "title": "Convertidor WebP a TIFF",
-    "description": "Convierte imagenes WebP a TIFF profesional para impresion y archivado.",
+    "description": "Convierte imagenes WebP a TIFF profesional para impresion y archivado. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertidor WebP a TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte imagenes WebP a TIFF profesional para impresion y archivado.",
+      "description": "Convierte imagenes WebP a TIFF profesional para impresion y archivado. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
       "featureList": ["Conversión a TIFF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
       "alternateName": ["Convertir WEBP a TIFF", "Conversión de WEBP a TIFF", "Convertidor WEBP a TIFF gratis"]
     },

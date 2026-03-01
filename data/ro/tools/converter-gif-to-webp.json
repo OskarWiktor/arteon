@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor GIF în WebP – GIF WebP",
-    "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida.",
+    "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-gif-in-webp"
   },
   "hero": {
     "title": "Convertor GIF în WebP",
-    "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida.",
+    "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor GIF în WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida.",
+      "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
       "featureList": ["Conversie GIF în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie GIF în WEBP", "Convertor GIF în WEBP", "Convertor gratuit GIF în WEBP"]
     },

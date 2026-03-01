@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "WebP zu PNG Konverter – verlustfreie Konvertierung gratis",
-    "description": "WebP-Bilder verlustfrei in PNG umwandeln. Lokale Konvertierung, kein Server-Upload.",
+    "description": "WebP-Bilder verlustfrei in PNG umwandeln. Lokale Konvertierung, kein Server-Upload. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/webp-zu-png-konverter"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["WEBP in PNG umwandeln", "WEBP zu PNG konvertieren", "Kostenloser WEBP-zu-PNG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "WebP-Bilder verlustfrei in PNG umwandeln. Lokale Konvertierung, kein Server-Upload.",
+      "description": "WebP-Bilder verlustfrei in PNG umwandeln. Lokale Konvertierung, kein Server-Upload. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
       "featureList": ["WEBP-zu-PNG-Konvertierung", "Verlustfreie PNG-Ausgabe", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
     },
     "howTo": {

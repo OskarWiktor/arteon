@@ -3,13 +3,13 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor JPG a GIF — JPG GIF",
-    "description": "Convierte fotos JPG a formato GIF. Perfecto para graficos simples e iconos.",
+    "description": "Convierte fotos JPG a formato GIF. Perfecto para graficos simples e iconos. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/es/herramientas/convertidor-jpg-a-gif"
   },
   "hero": {
     "title": "Convertidor JPG a GIF",
-    "description": "Convierte fotos JPG a formato GIF. Perfecto para graficos simples e iconos.",
+    "description": "Convierte fotos JPG a formato GIF. Perfecto para graficos simples e iconos. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertidor JPG a GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte fotos JPG a formato GIF. Perfecto para graficos simples e iconos.",
+      "description": "Convierte fotos JPG a formato GIF. Perfecto para graficos simples e iconos. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
       "featureList": ["Conversión a GIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
       "alternateName": ["Convertir JPG a GIF", "Conversión de JPG a GIF", "Convertidor JPG a GIF gratis"]
     },

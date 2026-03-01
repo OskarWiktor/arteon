@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "JPG naar AVIF converter — JPG AVIF",
-    "description": "Converteer JPG-foto\\'s naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit.",
+    "description": "Converteer JPG-foto\\'s naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/jpg-naar-avif-converter"
   },
   "hero": {
     "title": "JPG naar AVIF converter",
-    "description": "Converteer JPG-foto\\'s naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit.",
+    "description": "Converteer JPG-foto\\'s naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG naar AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer JPG-foto\\'s naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit.",
+      "description": "Converteer JPG-foto\\'s naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["JPG naar AVIF omzetten", "JPG naar AVIF conversie", "Gratis JPG naar AVIF converter"]
     },

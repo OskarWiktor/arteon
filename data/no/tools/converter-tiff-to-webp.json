@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "TIFF til WebP-konverterer – TIFF WebP",
-    "description": "Konverter TIFF-filer til lett WebP. Massiv storrelsesreduksjon med bevart kvalitet.",
+    "description": "Konverter TIFF-filer til lett WebP. Massiv storrelsesreduksjon med bevart kvalitet. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/tiff-til-webp-konverterer"
   },
   "hero": {
     "title": "TIFF til WebP-konverterer",
-    "description": "Konverter TIFF-filer til lett WebP. Massiv storrelsesreduksjon med bevart kvalitet.",
+    "description": "Konverter TIFF-filer til lett WebP. Massiv storrelsesreduksjon med bevart kvalitet. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF til WebP-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter TIFF-filer til lett WebP. Massiv storrelsesreduksjon med bevart kvalitet.",
+      "description": "Konverter TIFF-filer til lett WebP. Massiv storrelsesreduksjon med bevart kvalitet. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
       "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konverter TIFF til WEBP", "TIFF til WEBP konvertering", "Gratis TIFF til WEBP konverterer"]
     },

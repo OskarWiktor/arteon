@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur SVG en WebP – SVG WebP",
-    "description": "Convertissez vos graphiques SVG en WebP leger. Ideal pour sites web et reseaux sociaux.",
+    "description": "Convertissez vos graphiques SVG en WebP leger. Ideal pour sites web et reseaux sociaux. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-svg-en-webp"
   },
   "hero": {
     "title": "Convertisseur SVG en WebP",
-    "description": "Convertissez vos graphiques SVG en WebP leger. Ideal pour sites web et reseaux sociaux.",
+    "description": "Convertissez vos graphiques SVG en WebP leger. Ideal pour sites web et reseaux sociaux. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur SVG en WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez vos graphiques SVG en WebP leger. Ideal pour sites web et reseaux sociaux.",
+      "description": "Convertissez vos graphiques SVG en WebP leger. Ideal pour sites web et reseaux sociaux. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
       "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir SVG en WEBP", "Conversion SVG vers WEBP", "Convertisseur SVG en WEBP gratuit"]
     },

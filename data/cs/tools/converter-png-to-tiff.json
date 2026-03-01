@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník PNG na TIFF — PNG TIFF",
-    "description": "Prevedte grafiku PNG na profesionální formát TIFF.",
+    "description": "Prevedte grafiku PNG na profesionální formát TIFF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-png-na-tiff"
   },
   "hero": {
     "title": "Převodník PNG na TIFF",
-    "description": "Prevedte grafiku PNG na profesionální formát TIFF.",
+    "description": "Prevedte grafiku PNG na profesionální formát TIFF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník PNG na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Prevedte grafiku PNG na profesionální formát TIFF.",
+      "description": "Prevedte grafiku PNG na profesionální formát TIFF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést PNG na TIFF", "Konverze PNG do TIFF", "Převodník PNG na TIFF zdarma"]
     },

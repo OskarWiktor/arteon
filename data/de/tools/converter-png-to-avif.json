@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "PNG zu AVIF Konverter — PNG AVIF",
-    "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien.",
+    "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/de/werkzeuge/png-zu-avif-konverter"
   },
   "hero": {
     "title": "PNG zu AVIF Konverter",
-    "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien.",
+    "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG zu AVIF Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien.",
+      "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
       "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
       "alternateName": ["PNG in AVIF umwandeln", "PNG zu AVIF konvertieren", "Kostenloser PNG-zu-AVIF-Konverter"]
     },

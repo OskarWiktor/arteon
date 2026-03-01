@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor GIF para PNG – GIF PNG",
-    "description": "Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade.",
+    "description": "Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-gif-para-png"
   },
   "hero": {
     "title": "Conversor GIF para PNG",
-    "description": "Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade.",
+    "description": "Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Converter GIF para PNG", "Conversão de GIF para PNG", "Conversor GIF para PNG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade.",
+      "description": "Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
       "featureList": ["Conversão de GIF para PNG", "Saída PNG sem perdas", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {

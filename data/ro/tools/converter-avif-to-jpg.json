@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor AVIF în JPG – AVIF JPG",
-    "description": "Convertește fișiere AVIF în JPG universal. Compatibil cu orice program si platforma.",
+    "description": "Convertește fișiere AVIF în JPG universal. Compatibil cu orice program si platforma. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-avif-in-jpg"
   },
   "hero": {
     "title": "Convertor AVIF în JPG",
-    "description": "Convertește fișiere AVIF în JPG universal. Compatibil cu orice program si platforma.",
+    "description": "Convertește fișiere AVIF în JPG universal. Compatibil cu orice program si platforma. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor AVIF în JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere AVIF în JPG universal. Compatibil cu orice program si platforma.",
+      "description": "Convertește fișiere AVIF în JPG universal. Compatibil cu orice program si platforma. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie AVIF în JPG", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie AVIF în JPG", "Convertor AVIF în JPG", "Convertor gratuit AVIF în JPG"]
     },

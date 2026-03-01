@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας SVG σε GIF — SVG GIF",
-    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε μορφη raster GIF.",
+    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε μορφη raster GIF. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-svg-se-gif"
   },
   "hero": {
     "title": "Μετατροπέας SVG σε GIF",
-    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε μορφη raster GIF.",
+    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε μορφη raster GIF. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας SVG σε GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε μορφη raster GIF.",
+      "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε μορφη raster GIF. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
       "featureList": ["Μετατροπή σε GIF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή SVG σε GIF", "Μετατροπέας SVG σε GIF", "Δωρεάν μετατροπέας SVG σε GIF"]
     },

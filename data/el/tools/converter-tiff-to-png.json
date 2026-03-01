@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας TIFF σε PNG – TIFF PNG",
-    "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων.",
+    "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-tiff-se-png"
   },
   "hero": {
     "title": "Μετατροπέας TIFF σε PNG",
-    "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων.",
+    "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας TIFF σε PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων.",
+      "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή TIFF σε PNG", "Μετατροπέας TIFF σε PNG", "Δωρεάν μετατροπέας TIFF σε PNG"]
     },

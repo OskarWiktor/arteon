@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "PNG til WebP-konverter – PNG WebP",
-    "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.",
+    "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/png-til-webp-konverter"
   },
   "hero": {
     "title": "PNG til WebP-konverter",
-    "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.",
+    "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér PNG til WEBP", "PNG til WEBP konvertering", "Gratis PNG til WEBP konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed.",
+      "description": "Konvertér PNG-grafik til WebP. Mindre filer med bevaret gennemsigtighed. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
       "featureList": ["PNG til WEBP-konvertering", "WEBP-kvalitetskontrol", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {

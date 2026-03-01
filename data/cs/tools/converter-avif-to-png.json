@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník AVIF na PNG – AVIF PNG",
-    "description": "Převeďte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti.",
+    "description": "Převeďte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-avif-na-png"
   },
   "hero": {
     "title": "Převodník AVIF na PNG",
-    "description": "Převeďte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti.",
+    "description": "Převeďte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník AVIF na PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti.",
+      "description": "Převeďte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Převést AVIF na PNG", "Konverze AVIF do PNG", "Převodník AVIF na PNG zdarma"]
     },

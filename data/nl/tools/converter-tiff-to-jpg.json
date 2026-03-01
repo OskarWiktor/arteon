@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "TIFF naar JPG converter – TIFF JPG",
-    "description": "Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans en fotoarchieven.",
+    "description": "Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans en fotoarchieven. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/tiff-naar-jpg-converter"
   },
   "hero": {
     "title": "TIFF naar JPG converter",
-    "description": "Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans en fotoarchieven.",
+    "description": "Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans en fotoarchieven. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF naar JPG converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans en fotoarchieven.",
+      "description": "Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans en fotoarchieven. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["TIFF naar JPG omzetten", "TIFF naar JPG conversie", "Gratis TIFF naar JPG converter"]
     },

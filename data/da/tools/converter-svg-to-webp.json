@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "SVG til WebP-konverter – SVG WebP",
-    "description": "Konverter SVG-grafik til let WebP. Ideel til websites og sociale medier.",
+    "description": "Konverter SVG-grafik til let WebP. Ideel til websites og sociale medier. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/svg-til-webp-konverter"
   },
   "hero": {
     "title": "SVG til WebP-konverter",
-    "description": "Konverter SVG-grafik til let WebP. Ideel til websites og sociale medier.",
+    "description": "Konverter SVG-grafik til let WebP. Ideel til websites og sociale medier. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG til WebP-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter SVG-grafik til let WebP. Ideel til websites og sociale medier.",
+      "description": "Konverter SVG-grafik til let WebP. Ideel til websites og sociale medier. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
       "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertér SVG til WEBP", "SVG til WEBP konvertering", "Gratis SVG til WEBP konverter"]
     },

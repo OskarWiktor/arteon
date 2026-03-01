@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore GIF in AVIF — GIF AVIF",
-    "description": "Converti il primo fotogramma GIF in immagine AVIF statica con compressione eccellente.",
+    "description": "Converti il primo fotogramma GIF in immagine AVIF statica con compressione eccellente. Elaborazione locale nel browser — i file non lasciano mai il dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/it/strumenti/convertitore-gif-in-avif"
   },
   "hero": {
     "title": "Convertitore GIF in AVIF",
-    "description": "Converti il primo fotogramma GIF in immagine AVIF statica con compressione eccellente.",
+    "description": "Converti il primo fotogramma GIF in immagine AVIF statica con compressione eccellente. Elaborazione locale nel browser — i file non lasciano mai il dispositivo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertitore GIF in AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converti il primo fotogramma GIF in immagine AVIF statica con compressione eccellente.",
+      "description": "Converti il primo fotogramma GIF in immagine AVIF statica con compressione eccellente. Elaborazione locale nel browser — i file non lasciano mai il dispositivo.",
       "featureList": ["Conversione in AVIF", "Regolazione qualità (60-95%)", "Conversione in batch", "Elaborazione locale nel browser"],
       "alternateName": ["Convertire GIF in AVIF", "Conversione GIF in AVIF", "Convertitore GIF in AVIF gratuito"]
     },

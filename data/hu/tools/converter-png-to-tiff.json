@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "PNG TIFF konverter — PNG TIFF",
-    "description": "PNG grafika konvertálása professzionalis TIFF formatumra.",
+    "description": "PNG grafika konvertálása professzionalis TIFF formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/png-tiff-konverter"
   },
   "hero": {
     "title": "PNG TIFF konverter",
-    "description": "PNG grafika konvertálása professzionalis TIFF formatumra.",
+    "description": "PNG grafika konvertálása professzionalis TIFF formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG TIFF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG grafika konvertálása professzionalis TIFF formatumra.",
+      "description": "PNG grafika konvertálása professzionalis TIFF formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["PNG konvertálása TIFF formátumba", "PNG–TIFF átalakítás", "Ingyenes PNG–TIFF konverter"]
     },

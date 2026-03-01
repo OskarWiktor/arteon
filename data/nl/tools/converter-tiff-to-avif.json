@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "TIFF naar AVIF converter — TIFF AVIF",
-    "description": "Converteer TIFF-bestanden naar modern AVIF. Enorme bestandsgrootte-reductie.",
+    "description": "Converteer TIFF-bestanden naar modern AVIF. Enorme bestandsgrootte-reductie. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/tiff-naar-avif-converter"
   },
   "hero": {
     "title": "TIFF naar AVIF converter",
-    "description": "Converteer TIFF-bestanden naar modern AVIF. Enorme bestandsgrootte-reductie.",
+    "description": "Converteer TIFF-bestanden naar modern AVIF. Enorme bestandsgrootte-reductie. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF naar AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer TIFF-bestanden naar modern AVIF. Enorme bestandsgrootte-reductie.",
+      "description": "Converteer TIFF-bestanden naar modern AVIF. Enorme bestandsgrootte-reductie. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["TIFF naar AVIF omzetten", "TIFF naar AVIF conversie", "Gratis TIFF naar AVIF converter"]
     },

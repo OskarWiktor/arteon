@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας AVIF σε JPG – AVIF JPG",
-    "description": "Μετατρέψτε αρχεία AVIF σε καθολικό JPG. Συμβατό με κάθε πρόγραμμα και πλατφορμα.",
+    "description": "Μετατρέψτε αρχεία AVIF σε καθολικό JPG. Συμβατό με κάθε πρόγραμμα και πλατφορμα. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-avif-se-jpg"
   },
   "hero": {
     "title": "Μετατροπέας AVIF σε JPG",
-    "description": "Μετατρέψτε αρχεία AVIF σε καθολικό JPG. Συμβατό με κάθε πρόγραμμα και πλατφορμα.",
+    "description": "Μετατρέψτε αρχεία AVIF σε καθολικό JPG. Συμβατό με κάθε πρόγραμμα και πλατφορμα. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας AVIF σε JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρέψτε αρχεία AVIF σε καθολικό JPG. Συμβατό με κάθε πρόγραμμα και πλατφορμα.",
+      "description": "Μετατρέψτε αρχεία AVIF σε καθολικό JPG. Συμβατό με κάθε πρόγραμμα και πλατφορμα. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
       "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή AVIF σε JPG", "Μετατροπέας AVIF σε JPG", "Δωρεάν μετατροπέας AVIF σε JPG"]
     },

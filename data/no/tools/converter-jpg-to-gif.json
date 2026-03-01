@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "JPG til GIF-konverterer — JPG GIF",
-    "description": "Konverter JPG-bilder til GIF-format. Perfekt for enkel grafikk og ikoner.",
+    "description": "Konverter JPG-bilder til GIF-format. Perfekt for enkel grafikk og ikoner. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/no/verktoy/jpg-til-gif-konverterer"
   },
   "hero": {
     "title": "JPG til GIF-konverterer",
-    "description": "Konverter JPG-bilder til GIF-format. Perfekt for enkel grafikk og ikoner.",
+    "description": "Konverter JPG-bilder til GIF-format. Perfekt for enkel grafikk og ikoner. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG til GIF-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter JPG-bilder til GIF-format. Perfekt for enkel grafikk og ikoner.",
+      "description": "Konverter JPG-bilder til GIF-format. Perfekt for enkel grafikk og ikoner. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
       "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
       "alternateName": ["Konverter JPG til GIF", "JPG til GIF konvertering", "Gratis JPG til GIF konverterer"]
     },

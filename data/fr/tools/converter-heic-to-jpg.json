@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur HEIC en JPG – HEIC JPG",
-    "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur.",
+    "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-heic-en-jpg"
   },
   "hero": {
     "title": "Convertisseur HEIC en JPG",
-    "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur.",
+    "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur HEIC en JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur.",
+      "description": "Convertissez les photos HEIC iPhone en JPG universel. Sans inscription, sans envoi serveur. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir HEIC en JPG", "Conversion HEIC vers JPG", "Convertisseur HEIC en JPG gratuit"]
     },

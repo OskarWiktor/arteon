@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník SVG na PNG – SVG PNG",
-    "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.",
+    "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-svg-na-png"
   },
   "hero": {
     "title": "Převodník SVG na PNG",
-    "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.",
+    "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést SVG na PNG", "Konverze SVG do PNG", "Převodník SVG na PNG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.",
+      "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
       "featureList": ["Převod SVG na PNG", "Bezeztrátový výstup PNG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {

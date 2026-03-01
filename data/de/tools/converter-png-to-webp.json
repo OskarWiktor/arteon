@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "PNG zu WebP Konverter – kleinere Dateien mit Transparenz",
-    "description": "PNG-Grafiken in WebP umwandeln. Kleinere Dateien bei erhaltener Transparenz.",
+    "description": "PNG-Grafiken in WebP umwandeln. Kleinere Dateien bei erhaltener Transparenz. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/png-zu-webp-konverter"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["PNG in WEBP umwandeln", "PNG zu WEBP konvertieren", "Kostenloser PNG-zu-WEBP-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG-Grafiken in WebP umwandeln. Kleinere Dateien bei erhaltener Transparenz.",
+      "description": "PNG-Grafiken in WebP umwandeln. Kleinere Dateien bei erhaltener Transparenz. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
       "featureList": ["PNG-zu-WEBP-Konvertierung", "WEBP-Qualitätssteuerung", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "TIFF to JPG converter – TIFF JPG",
-    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives.",
+    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool — no signup, no file limits, complete privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/tiff-to-jpg-converter"
   },
   "hero": {
     "title": "TIFF to JPG converter",
-    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives.",
+    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool — no signup, no file limits, complete privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF to JPG converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives.",
+      "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool — no signup, no file limits, complete privacy.",
       "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert TIFF to JPG", "TIFF to JPG conversion", "Free TIFF to JPG converter", "Change TIFF to JPG"]
     },

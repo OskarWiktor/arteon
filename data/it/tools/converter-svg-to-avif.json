@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore SVG in AVIF — SVG AVIF",
-    "description": "Converti grafiche vettoriali SVG in formato raster AVIF compatto.",
+    "description": "Converti grafiche vettoriali SVG in formato raster AVIF compatto. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/it/strumenti/convertitore-svg-in-avif"
   },
   "hero": {
     "title": "Convertitore SVG in AVIF",
-    "description": "Converti grafiche vettoriali SVG in formato raster AVIF compatto.",
+    "description": "Converti grafiche vettoriali SVG in formato raster AVIF compatto. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertitore SVG in AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converti grafiche vettoriali SVG in formato raster AVIF compatto.",
+      "description": "Converti grafiche vettoriali SVG in formato raster AVIF compatto. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
       "featureList": ["Conversione in AVIF", "Regolazione qualità (60-95%)", "Conversione in batch", "Elaborazione locale nel browser"],
       "alternateName": ["Convertire SVG in AVIF", "Conversione SVG in AVIF", "Convertitore SVG in AVIF gratuito"]
     },

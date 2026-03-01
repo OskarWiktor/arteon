@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor WebP în PNG – WebP PNG",
-    "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală.",
+    "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-webp-in-png"
   },
   "hero": {
     "title": "Convertor WebP în PNG",
-    "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală.",
+    "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Conversie WEBP în PNG", "Convertor WEBP în PNG", "Convertor gratuit WEBP în PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală.",
+      "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie WEBP în PNG", "Ieșire PNG fără pierderi", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {

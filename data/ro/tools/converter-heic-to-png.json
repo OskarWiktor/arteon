@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor HEIC în PNG – HEIC PNG",
-    "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta.",
+    "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-heic-in-png"
   },
   "hero": {
     "title": "Convertor HEIC în PNG",
-    "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta.",
+    "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor HEIC în PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta.",
+      "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie HEIC în PNG", "Lossless PNG output", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie HEIC în PNG", "Convertor HEIC în PNG", "Convertor gratuit HEIC în PNG"]
     },

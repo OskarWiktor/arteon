@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "GIF to WebP converter – GIF WebP",
-    "description": "Convert first GIF frame to lightweight WebP. Smaller file, faster loading.",
+    "description": "Convert first GIF frame to lightweight WebP. Smaller file, faster loading. All processing happens locally in your browser — files never leave your device.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/gif-to-webp-converter"
   },
   "hero": {
     "title": "GIF to WebP converter",
-    "description": "Convert first GIF frame to lightweight WebP. Smaller file, faster loading.",
+    "description": "Convert first GIF frame to lightweight WebP. Smaller file, faster loading. All processing happens locally in your browser — files never leave your device.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF to WebP converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert first GIF frame to lightweight WebP. Smaller file, faster loading.",
+      "description": "Convert first GIF frame to lightweight WebP. Smaller file, faster loading. All processing happens locally in your browser — files never leave your device.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert GIF to WEBP", "GIF to WEBP conversion", "Free GIF to WEBP converter", "Change GIF to WEBP"]
     },

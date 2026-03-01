@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "SVG TIFF konverter — SVG TIFF",
-    "description": "Vektor SVG grafika konvertálása kiváló minosegu TIFF raszterre.",
+    "description": "Vektor SVG grafika konvertálása kiváló minosegu TIFF raszterre. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/svg-tiff-konverter"
   },
   "hero": {
     "title": "SVG TIFF konverter",
-    "description": "Vektor SVG grafika konvertálása kiváló minosegu TIFF raszterre.",
+    "description": "Vektor SVG grafika konvertálása kiváló minosegu TIFF raszterre. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG TIFF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Vektor SVG grafika konvertálása kiváló minosegu TIFF raszterre.",
+      "description": "Vektor SVG grafika konvertálása kiváló minosegu TIFF raszterre. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
       "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["SVG konvertálása TIFF formátumba", "SVG–TIFF átalakítás", "Ingyenes SVG–TIFF konverter"]
     },

@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor HEIC în WebP – HEIC WebP",
-    "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici.",
+    "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-heic-in-webp"
   },
   "hero": {
     "title": "Convertor HEIC în WebP",
-    "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici.",
+    "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor HEIC în WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici.",
+      "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie HEIC în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie HEIC în WEBP", "Convertor HEIC în WEBP", "Convertor gratuit HEIC în WEBP"]
     },

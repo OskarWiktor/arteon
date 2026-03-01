@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "BMP JPG konverter – BMP JPG",
-    "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
+    "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/bmp-jpg-konverter"
   },
   "hero": {
     "title": "BMP JPG konverter",
-    "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
+    "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["BMP konvertálása JPG formátumba", "BMP–JPG átalakítás", "Ingyenes BMP–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
+      "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
       "featureList": ["BMP – JPG konvertálás", "JPG minőségszabályozás", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

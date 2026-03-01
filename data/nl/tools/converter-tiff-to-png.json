@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "TIFF naar PNG converter – TIFF PNG",
-    "description": "Converteer TIFF-bestanden naar verliesvrij PNG. Behoud volledige kwaliteit van scans.",
+    "description": "Converteer TIFF-bestanden naar verliesvrij PNG. Behoud volledige kwaliteit van scans. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/tiff-naar-png-converter"
   },
   "hero": {
     "title": "TIFF naar PNG converter",
-    "description": "Converteer TIFF-bestanden naar verliesvrij PNG. Behoud volledige kwaliteit van scans.",
+    "description": "Converteer TIFF-bestanden naar verliesvrij PNG. Behoud volledige kwaliteit van scans. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF naar PNG converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer TIFF-bestanden naar verliesvrij PNG. Behoud volledige kwaliteit van scans.",
+      "description": "Converteer TIFF-bestanden naar verliesvrij PNG. Behoud volledige kwaliteit van scans. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["TIFF naar PNG omzetten", "TIFF naar PNG conversie", "Gratis TIFF naar PNG converter"]
     },

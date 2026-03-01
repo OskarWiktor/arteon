@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník SVG na AVIF — SVG AVIF",
-    "description": "Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF.",
+    "description": "Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-svg-na-avif"
   },
   "hero": {
     "title": "Převodník SVG na AVIF",
-    "description": "Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF.",
+    "description": "Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník SVG na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF.",
+      "description": "Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést SVG na AVIF", "Konverze SVG do AVIF", "Převodník SVG na AVIF zdarma"]
     },

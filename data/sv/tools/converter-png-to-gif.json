@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "PNG till GIF-konverterare — PNG GIF",
-    "description": "Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik.",
+    "description": "Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/sv/verktyg/png-till-gif-konverterare"
   },
   "hero": {
     "title": "PNG till GIF-konverterare",
-    "description": "Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik.",
+    "description": "Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG till GIF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik.",
+      "description": "Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
       "featureList": ["Konvertering till GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera PNG till GIF", "PNG till GIF konvertering", "Gratis PNG till GIF konverterare"]
     },

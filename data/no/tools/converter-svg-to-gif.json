@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "SVG til GIF-konverterer — SVG GIF",
-    "description": "Konverter vektor-SVG-grafikk til GIF-rasterformat.",
+    "description": "Konverter vektor-SVG-grafikk til GIF-rasterformat. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/no/verktoy/svg-til-gif-konverterer"
   },
   "hero": {
     "title": "SVG til GIF-konverterer",
-    "description": "Konverter vektor-SVG-grafikk til GIF-rasterformat.",
+    "description": "Konverter vektor-SVG-grafikk til GIF-rasterformat. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG til GIF-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter vektor-SVG-grafikk til GIF-rasterformat.",
+      "description": "Konverter vektor-SVG-grafikk til GIF-rasterformat. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
       "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
       "alternateName": ["Konverter SVG til GIF", "SVG til GIF konvertering", "Gratis SVG til GIF konverterer"]
     },

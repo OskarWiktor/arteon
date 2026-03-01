@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "WebP til PNG-konverter – WebP PNG",
-    "description": "Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.",
+    "description": "Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/webp-til-png-konverter"
   },
   "hero": {
     "title": "WebP til PNG-konverter",
-    "description": "Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.",
+    "description": "Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér WEBP til PNG", "WEBP til PNG konvertering", "Gratis WEBP til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.",
+      "description": "Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
       "featureList": ["WEBP til PNG-konvertering", "Tabsfrit PNG-output", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {

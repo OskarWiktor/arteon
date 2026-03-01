@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "PNG JPG -muunnin – PNG JPG",
-    "description": "Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä.",
+    "description": "Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/png-jpg-muunnin"
   },
   "hero": {
     "title": "PNG JPG -muunnin",
-    "description": "Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä.",
+    "description": "Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Muunna PNG JPG-muotoon", "PNG:n muunto JPG-muotoon", "Ilmainen PNG–JPG-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä.",
+      "description": "Muunna PNG-tiedostot JPG-muotoon selaimessa. Rajaton, ilman rekisteröitymistä. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
       "featureList": ["PNG – JPG -muunnos", "JPG-laadun säätö", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {

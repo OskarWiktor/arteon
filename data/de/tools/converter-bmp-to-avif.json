@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "BMP zu AVIF Konverter — BMP AVIF",
-    "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.",
+    "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/de/werkzeuge/bmp-zu-avif-konverter"
   },
   "hero": {
     "title": "BMP zu AVIF Konverter",
-    "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.",
+    "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP zu AVIF Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.",
+      "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
       "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
       "alternateName": ["BMP in AVIF umwandeln", "BMP zu AVIF konvertieren", "Kostenloser BMP-zu-AVIF-Konverter"]
     },

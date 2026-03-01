@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník HEIC na PNG – HEIC PNG",
-    "description": "Převeďte fotky HEIC z iPhonu na bezztratove PNG. Plna kvalita a pruhlednost.",
+    "description": "Převeďte fotky HEIC z iPhonu na bezztratove PNG. Plna kvalita a pruhlednost. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-heic-na-png"
   },
   "hero": {
     "title": "Převodník HEIC na PNG",
-    "description": "Převeďte fotky HEIC z iPhonu na bezztratove PNG. Plna kvalita a pruhlednost.",
+    "description": "Převeďte fotky HEIC z iPhonu na bezztratove PNG. Plna kvalita a pruhlednost. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník HEIC na PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte fotky HEIC z iPhonu na bezztratove PNG. Plna kvalita a pruhlednost.",
+      "description": "Převeďte fotky HEIC z iPhonu na bezztratove PNG. Plna kvalita a pruhlednost. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Převést HEIC na PNG", "Konverze HEIC do PNG", "Převodník HEIC na PNG zdarma"]
     },

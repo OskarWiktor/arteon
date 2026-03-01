@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "AVIF til JPG-konverterer – AVIF JPG",
-    "description": "Konverter AVIF-filer til universell JPG. Kompatibel med alle programmer og plattformer.",
+    "description": "Konverter AVIF-filer til universell JPG. Kompatibel med alle programmer og plattformer. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/avif-til-jpg-konverterer"
   },
   "hero": {
     "title": "AVIF til JPG-konverterer",
-    "description": "Konverter AVIF-filer til universell JPG. Kompatibel med alle programmer og plattformer.",
+    "description": "Konverter AVIF-filer til universell JPG. Kompatibel med alle programmer og plattformer. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF til JPG-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter AVIF-filer til universell JPG. Kompatibel med alle programmer og plattformer.",
+      "description": "Konverter AVIF-filer til universell JPG. Kompatibel med alle programmer og plattformer. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
       "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konverter AVIF til JPG", "AVIF til JPG konvertering", "Gratis AVIF til JPG konverterer"]
     },

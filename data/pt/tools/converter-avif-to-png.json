@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor AVIF para PNG – AVIF PNG",
-    "description": "Converta ficheiros AVIF para PNG sem perdas. Qualidade e transparencia preservadas.",
+    "description": "Converta ficheiros AVIF para PNG sem perdas. Qualidade e transparencia preservadas. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-avif-para-png"
   },
   "hero": {
     "title": "Conversor AVIF para PNG",
-    "description": "Converta ficheiros AVIF para PNG sem perdas. Qualidade e transparencia preservadas.",
+    "description": "Converta ficheiros AVIF para PNG sem perdas. Qualidade e transparencia preservadas. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Conversor AVIF para PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta ficheiros AVIF para PNG sem perdas. Qualidade e transparencia preservadas.",
+      "description": "Converta ficheiros AVIF para PNG sem perdas. Qualidade e transparencia preservadas. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
       "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Converter AVIF para PNG", "Conversão de AVIF para PNG", "Conversor AVIF para PNG grátis"]
     },

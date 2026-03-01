@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "PNG till AVIF-konverterare — PNG AVIF",
-    "description": "Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer.",
+    "description": "Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/sv/verktyg/png-till-avif-konverterare"
   },
   "hero": {
     "title": "PNG till AVIF-konverterare",
-    "description": "Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer.",
+    "description": "Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG till AVIF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer.",
+      "description": "Konvertera PNG-grafik till AVIF med transparensstod. Betydligt mindre filer. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
       "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera PNG till AVIF", "PNG till AVIF konvertering", "Gratis PNG till AVIF konverterare"]
     },

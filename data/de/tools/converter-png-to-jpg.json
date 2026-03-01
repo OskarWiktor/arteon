@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "PNG zu JPG Konverter – Bildformat kostenlos ändern",
-    "description": "PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung. Lokale Verarbeitung, kein Server-Upload.",
+    "description": "PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung. Lokale Verarbeitung, kein Server-Upload. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/png-zu-jpg-konverter"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["PNG in JPG umwandeln", "PNG zu JPG konvertieren", "Kostenloser PNG-zu-JPG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung. Lokale Verarbeitung, kein Server-Upload.",
+      "description": "PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung. Lokale Verarbeitung, kein Server-Upload. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
       "featureList": ["PNG-zu-JPG-Konvertierung", "JPG-Qualitätssteuerung", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor BMP în TIFF — BMP TIFF",
-    "description": "Convertește fișiere BMP în format TIFF profesional pentru tiparire.",
+    "description": "Convertește fișiere BMP în format TIFF profesional pentru tiparire. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-bmp-in-tiff"
   },
   "hero": {
     "title": "Convertor BMP în TIFF",
-    "description": "Convertește fișiere BMP în format TIFF profesional pentru tiparire.",
+    "description": "Convertește fișiere BMP în format TIFF profesional pentru tiparire. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor BMP în TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere BMP în format TIFF profesional pentru tiparire.",
+      "description": "Convertește fișiere BMP în format TIFF profesional pentru tiparire. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
       "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie BMP în TIFF", "Convertor BMP în TIFF", "Convertor gratuit BMP în TIFF"]
     },

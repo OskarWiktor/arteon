@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "BMP WebP konverter – BMP WebP",
-    "description": "BMP fajlok konvertálása konnyu WebP-re. Akar 95%-os meretcsokkentes.",
+    "description": "BMP fajlok konvertálása konnyu WebP-re. Akar 95%-os meretcsokkentes. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/bmp-webp-konverter"
   },
   "hero": {
     "title": "BMP WebP konverter",
-    "description": "BMP fajlok konvertálása konnyu WebP-re. Akar 95%-os meretcsokkentes.",
+    "description": "BMP fajlok konvertálása konnyu WebP-re. Akar 95%-os meretcsokkentes. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP WebP konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "BMP fajlok konvertálása konnyu WebP-re. Akar 95%-os meretcsokkentes.",
+      "description": "BMP fajlok konvertálása konnyu WebP-re. Akar 95%-os meretcsokkentes. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
       "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["BMP konvertálása WEBP formátumba", "BMP–WEBP átalakítás", "Ingyenes BMP–WEBP konverter"]
     },

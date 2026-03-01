@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "JPG til WebP-konverterer – JPG WebP",
-    "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.",
+    "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/jpg-til-webp-konverterer"
   },
   "hero": {
     "title": "JPG til WebP-konverterer",
-    "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.",
+    "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konverter JPG til WEBP", "JPG til WEBP konvertering", "Gratis JPG til WEBP konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.",
+      "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
       "featureList": ["JPG til WEBP-konvertering", "WEBP-kvalitetskontroll", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
     },
     "howTo": {

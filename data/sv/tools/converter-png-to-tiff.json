@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "PNG till TIFF-konverterare — PNG TIFF",
-    "description": "Konvertera PNG-grafik till professionellt TIFF-format.",
+    "description": "Konvertera PNG-grafik till professionellt TIFF-format. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/sv/verktyg/png-till-tiff-konverterare"
   },
   "hero": {
     "title": "PNG till TIFF-konverterare",
-    "description": "Konvertera PNG-grafik till professionellt TIFF-format.",
+    "description": "Konvertera PNG-grafik till professionellt TIFF-format. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG till TIFF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera PNG-grafik till professionellt TIFF-format.",
+      "description": "Konvertera PNG-grafik till professionellt TIFF-format. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera PNG till TIFF", "PNG till TIFF konvertering", "Gratis PNG till TIFF konverterare"]
     },

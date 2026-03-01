@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor BMP para GIF — BMP GIF",
-    "description": "Converta ficheiros BMP não comprimidos para GIF leve.",
+    "description": "Converta ficheiros BMP não comprimidos para GIF leve. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/pt/ferramentas/conversor-bmp-para-gif"
   },
   "hero": {
     "title": "Conversor BMP para GIF",
-    "description": "Converta ficheiros BMP não comprimidos para GIF leve.",
+    "description": "Converta ficheiros BMP não comprimidos para GIF leve. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Conversor BMP para GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta ficheiros BMP não comprimidos para GIF leve.",
+      "description": "Converta ficheiros BMP não comprimidos para GIF leve. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
       "featureList": ["Conversão para GIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
       "alternateName": ["Converter BMP para GIF", "Conversão de BMP para GIF", "Conversor BMP para GIF grátis"]
     },

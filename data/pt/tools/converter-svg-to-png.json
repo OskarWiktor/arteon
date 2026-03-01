@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor SVG para PNG – SVG PNG",
-    "description": "Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais.",
+    "description": "Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-svg-para-png"
   },
   "hero": {
     "title": "Conversor SVG para PNG",
-    "description": "Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais.",
+    "description": "Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Converter SVG para PNG", "Conversão de SVG para PNG", "Conversor SVG para PNG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais.",
+      "description": "Converta gráficos vetoriais SVG para PNG. Ideal para documentos e redes sociais. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
       "featureList": ["Conversão de SVG para PNG", "Saída PNG sem perdas", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {

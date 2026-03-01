@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "TIFF WebP konverter – TIFF WebP",
-    "description": "TIFF fajlok konvertálása konnyu WebP-re. Hatalmas meretcsokkentes minoseg megorzesevel.",
+    "description": "TIFF fajlok konvertálása konnyu WebP-re. Hatalmas meretcsokkentes minoseg megorzesevel. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/tiff-webp-konverter"
   },
   "hero": {
     "title": "TIFF WebP konverter",
-    "description": "TIFF fajlok konvertálása konnyu WebP-re. Hatalmas meretcsokkentes minoseg megorzesevel.",
+    "description": "TIFF fajlok konvertálása konnyu WebP-re. Hatalmas meretcsokkentes minoseg megorzesevel. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF WebP konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "TIFF fajlok konvertálása konnyu WebP-re. Hatalmas meretcsokkentes minoseg megorzesevel.",
+      "description": "TIFF fajlok konvertálása konnyu WebP-re. Hatalmas meretcsokkentes minoseg megorzesevel. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["TIFF konvertálása WEBP formátumba", "TIFF–WEBP átalakítás", "Ingyenes TIFF–WEBP konverter"]
     },

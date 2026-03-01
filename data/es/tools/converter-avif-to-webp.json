@@ -3,13 +3,13 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor AVIF a WebP – AVIF WebP",
-    "description": "Convierte archivos AVIF a WebP. Amplia compatibilidad con tamano reducido.",
+    "description": "Convierte archivos AVIF a WebP. Amplia compatibilidad con tamano reducido. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-avif-a-webp"
   },
   "hero": {
     "title": "Convertidor AVIF a WebP",
-    "description": "Convierte archivos AVIF a WebP. Amplia compatibilidad con tamano reducido.",
+    "description": "Convierte archivos AVIF a WebP. Amplia compatibilidad con tamano reducido. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertidor AVIF a WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte archivos AVIF a WebP. Amplia compatibilidad con tamano reducido.",
+      "description": "Convierte archivos AVIF a WebP. Amplia compatibilidad con tamano reducido. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
       "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir AVIF a WEBP", "Conversión de AVIF a WEBP", "Convertidor AVIF a WEBP gratis"]
     },

@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor BMP para PNG – BMP PNG",
-    "description": "Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido.",
+    "description": "Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido. Todo o processamento ocorre no navegador — os ficheiros não saem do dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-bmp-para-png"
   },
   "hero": {
     "title": "Conversor BMP para PNG",
-    "description": "Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido.",
+    "description": "Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido. Todo o processamento ocorre no navegador — os ficheiros não saem do dispositivo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Converter BMP para PNG", "Conversão de BMP para PNG", "Conversor BMP para PNG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido.",
+      "description": "Converta imagens BMP para PNG sem perdas. Qualidade preservada, tamanho reduzido. Todo o processamento ocorre no navegador — os ficheiros não saem do dispositivo.",
       "featureList": ["Conversão de BMP para PNG", "Saída PNG sem perdas", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {

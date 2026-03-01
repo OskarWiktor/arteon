@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "HEIC til TIFF-konverterer — HEIC TIFF",
-    "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format.",
+    "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/no/verktoy/heic-til-tiff-konverterer"
   },
   "hero": {
     "title": "HEIC til TIFF-konverterer",
-    "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format.",
+    "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC til TIFF-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format.",
+      "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
       "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
       "alternateName": ["Konverter HEIC til TIFF", "HEIC til TIFF konvertering", "Gratis HEIC til TIFF konverterer"]
     },

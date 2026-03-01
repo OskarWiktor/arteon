@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor WebP para JPG – WebP JPG",
-    "description": "Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.",
+    "description": "Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-webp-para-jpg"
   },
   "hero": {
     "title": "Conversor WebP para JPG",
-    "description": "Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.",
+    "description": "Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Converter WEBP para JPG", "Conversão de WEBP para JPG", "Conversor WEBP para JPG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo.",
+      "description": "Converta ficheiros WebP para JPG compatível com tudo. Sem limites, sem registo. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
       "featureList": ["Conversão de WEBP para JPG", "Controlo de qualidade JPG", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {

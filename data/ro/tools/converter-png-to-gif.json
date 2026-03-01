@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor PNG în GIF — PNG GIF",
-    "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice.",
+    "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-png-in-gif"
   },
   "hero": {
     "title": "Convertor PNG în GIF",
-    "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice.",
+    "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor PNG în GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice.",
+      "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie în GIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie PNG în GIF", "Convertor PNG în GIF", "Convertor gratuit PNG în GIF"]
     },

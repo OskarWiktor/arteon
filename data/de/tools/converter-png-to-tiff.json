@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "PNG zu TIFF Konverter — PNG TIFF",
-    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln.",
+    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/de/werkzeuge/png-zu-tiff-konverter"
   },
   "hero": {
     "title": "PNG zu TIFF Konverter",
-    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln.",
+    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG zu TIFF Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln.",
+      "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
       "featureList": ["Konvertierung zu TIFF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
       "alternateName": ["PNG in TIFF umwandeln", "PNG zu TIFF konvertieren", "Kostenloser PNG-zu-TIFF-Konverter"]
     },

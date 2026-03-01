@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor HEIC para WebP – HEIC WebP",
-    "description": "Converta fotos HEIC do iPhone para WebP leve. Menor tamanho, carregamento mais rapido.",
+    "description": "Converta fotos HEIC do iPhone para WebP leve. Menor tamanho, carregamento mais rapido. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-heic-para-webp"
   },
   "hero": {
     "title": "Conversor HEIC para WebP",
-    "description": "Converta fotos HEIC do iPhone para WebP leve. Menor tamanho, carregamento mais rapido.",
+    "description": "Converta fotos HEIC do iPhone para WebP leve. Menor tamanho, carregamento mais rapido. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Conversor HEIC para WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta fotos HEIC do iPhone para WebP leve. Menor tamanho, carregamento mais rapido.",
+      "description": "Converta fotos HEIC do iPhone para WebP leve. Menor tamanho, carregamento mais rapido. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
       "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Converter HEIC para WEBP", "Conversão de HEIC para WEBP", "Conversor HEIC para WEBP grátis"]
     },

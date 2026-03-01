@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "GIF til PNG-konverter – GIF PNG",
-    "description": "Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab.",
+    "description": "Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/gif-til-png-konverter"
   },
   "hero": {
     "title": "GIF til PNG-konverter",
-    "description": "Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab.",
+    "description": "Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér GIF til PNG", "GIF til PNG konvertering", "Gratis GIF til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab.",
+      "description": "Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
       "featureList": ["GIF til PNG-konvertering", "Tabsfrit PNG-output", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {

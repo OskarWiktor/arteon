@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur TIFF en WebP – TIFF WebP",
-    "description": "Convertissez les fichiers TIFF en WebP leger. Enorme reduction avec qualite preservee.",
+    "description": "Convertissez les fichiers TIFF en WebP leger. Enorme reduction avec qualite preservee. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-tiff-en-webp"
   },
   "hero": {
     "title": "Convertisseur TIFF en WebP",
-    "description": "Convertissez les fichiers TIFF en WebP leger. Enorme reduction avec qualite preservee.",
+    "description": "Convertissez les fichiers TIFF en WebP leger. Enorme reduction avec qualite preservee. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur TIFF en WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les fichiers TIFF en WebP leger. Enorme reduction avec qualite preservee.",
+      "description": "Convertissez les fichiers TIFF en WebP leger. Enorme reduction avec qualite preservee. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
       "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir TIFF en WEBP", "Conversion TIFF vers WEBP", "Convertisseur TIFF en WEBP gratuit"]
     },

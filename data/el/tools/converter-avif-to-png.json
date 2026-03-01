@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας AVIF σε PNG – AVIF PNG",
-    "description": "Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες. Διατηρηση πληρους ποιοτητας.",
+    "description": "Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες. Διατηρηση πληρους ποιοτητας. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-avif-se-png"
   },
   "hero": {
     "title": "Μετατροπέας AVIF σε PNG",
-    "description": "Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες. Διατηρηση πληρους ποιοτητας.",
+    "description": "Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες. Διατηρηση πληρους ποιοτητας. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας AVIF σε PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες. Διατηρηση πληρους ποιοτητας.",
+      "description": "Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες. Διατηρηση πληρους ποιοτητας. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
       "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή AVIF σε PNG", "Μετατροπέας AVIF σε PNG", "Δωρεάν μετατροπέας AVIF σε PNG"]
     },

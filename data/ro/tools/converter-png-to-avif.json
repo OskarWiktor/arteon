@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor PNG în AVIF — PNG AVIF",
-    "description": "Convertește grafice PNG în AVIF cu suport transparenta. Fisiere semnificativ mai mici.",
+    "description": "Convertește grafice PNG în AVIF cu suport transparenta. Fisiere semnificativ mai mici. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-png-in-avif"
   },
   "hero": {
     "title": "Convertor PNG în AVIF",
-    "description": "Convertește grafice PNG în AVIF cu suport transparenta. Fisiere semnificativ mai mici.",
+    "description": "Convertește grafice PNG în AVIF cu suport transparenta. Fisiere semnificativ mai mici. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor PNG în AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește grafice PNG în AVIF cu suport transparenta. Fisiere semnificativ mai mici.",
+      "description": "Convertește grafice PNG în AVIF cu suport transparenta. Fisiere semnificativ mai mici. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie PNG în AVIF", "Convertor PNG în AVIF", "Convertor gratuit PNG în AVIF"]
     },

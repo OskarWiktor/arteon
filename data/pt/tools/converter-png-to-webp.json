@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor PNG para WebP – PNG WebP",
-    "description": "Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.",
+    "description": "Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-png-para-webp"
   },
   "hero": {
     "title": "Conversor PNG para WebP",
-    "description": "Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.",
+    "description": "Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Converter PNG para WEBP", "Conversão de PNG para WEBP", "Conversor PNG para WEBP grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.",
+      "description": "Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
       "featureList": ["Conversão de PNG para WEBP", "Controlo de qualidade WEBP", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {

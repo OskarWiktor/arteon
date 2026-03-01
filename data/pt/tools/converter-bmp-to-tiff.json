@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor BMP para TIFF — BMP TIFF",
-    "description": "Converta ficheiros BMP para formato TIFF profissional para impressao.",
+    "description": "Converta ficheiros BMP para formato TIFF profissional para impressao. Todo o processamento ocorre no navegador — os ficheiros não saem do dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/pt/ferramentas/conversor-bmp-para-tiff"
   },
   "hero": {
     "title": "Conversor BMP para TIFF",
-    "description": "Converta ficheiros BMP para formato TIFF profissional para impressao.",
+    "description": "Converta ficheiros BMP para formato TIFF profissional para impressao. Todo o processamento ocorre no navegador — os ficheiros não saem do dispositivo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Conversor BMP para TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta ficheiros BMP para formato TIFF profissional para impressao.",
+      "description": "Converta ficheiros BMP para formato TIFF profissional para impressao. Todo o processamento ocorre no navegador — os ficheiros não saem do dispositivo.",
       "featureList": ["Conversão para TIFF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
       "alternateName": ["Converter BMP para TIFF", "Conversão de BMP para TIFF", "Conversor BMP para TIFF grátis"]
     },

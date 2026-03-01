@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "GIF AVIF konverter — GIF AVIF",
-    "description": "GIF elso kepkocka konvertálása statikus AVIF keppe kivaloan tomoritest.",
+    "description": "GIF elso kepkocka konvertálása statikus AVIF keppe kivaloan tomoritest. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/gif-avif-konverter"
   },
   "hero": {
     "title": "GIF AVIF konverter",
-    "description": "GIF elso kepkocka konvertálása statikus AVIF keppe kivaloan tomoritest.",
+    "description": "GIF elso kepkocka konvertálása statikus AVIF keppe kivaloan tomoritest. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF AVIF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "GIF elso kepkocka konvertálása statikus AVIF keppe kivaloan tomoritest.",
+      "description": "GIF elso kepkocka konvertálása statikus AVIF keppe kivaloan tomoritest. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
       "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["GIF konvertálása AVIF formátumba", "GIF–AVIF átalakítás", "Ingyenes GIF–AVIF konverter"]
     },

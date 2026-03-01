@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας SVG σε TIFF — SVG TIFF",
-    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε υψηλης ποιοτητας raster TIFF.",
+    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε υψηλης ποιοτητας raster TIFF. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-svg-se-tiff"
   },
   "hero": {
     "title": "Μετατροπέας SVG σε TIFF",
-    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε υψηλης ποιοτητας raster TIFF.",
+    "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε υψηλης ποιοτητας raster TIFF. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας SVG σε TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε υψηλης ποιοτητας raster TIFF.",
+      "description": "Μετατρεψτε διανυσματικα γραφικα SVG σε υψηλης ποιοτητας raster TIFF. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
       "featureList": ["Μετατροπή σε TIFF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή SVG σε TIFF", "Μετατροπέας SVG σε TIFF", "Δωρεάν μετατροπέας SVG σε TIFF"]
     },

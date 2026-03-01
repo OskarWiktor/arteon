@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník WebP na PNG – WebP PNG",
-    "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.",
+    "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-webp-na-png"
   },
   "hero": {
     "title": "Převodník WebP na PNG",
-    "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.",
+    "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést WEBP na PNG", "Konverze WEBP do PNG", "Převodník WEBP na PNG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování.",
+      "description": "Převeďte obrázky WebP na bezeztrátové PNG. Lokální zpracování. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["Převod WEBP na PNG", "Bezeztrátový výstup PNG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {

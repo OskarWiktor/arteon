@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore JPG in TIFF — JPG TIFF",
-    "description": "Converti foto JPG in TIFF lossless. Per stampa e archiviazione.",
+    "description": "Converti foto JPG in TIFF lossless. Per stampa e archiviazione. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/it/strumenti/convertitore-jpg-in-tiff"
   },
   "hero": {
     "title": "Convertitore JPG in TIFF",
-    "description": "Converti foto JPG in TIFF lossless. Per stampa e archiviazione.",
+    "description": "Converti foto JPG in TIFF lossless. Per stampa e archiviazione. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertitore JPG in TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converti foto JPG in TIFF lossless. Per stampa e archiviazione.",
+      "description": "Converti foto JPG in TIFF lossless. Per stampa e archiviazione. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
       "featureList": ["Conversione in TIFF", "Regolazione qualità (60-95%)", "Conversione in batch", "Elaborazione locale nel browser"],
       "alternateName": ["Convertire JPG in TIFF", "Conversione JPG in TIFF", "Convertitore JPG in TIFF gratuito"]
     },

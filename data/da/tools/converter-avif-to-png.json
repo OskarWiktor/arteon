@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "AVIF til PNG-konverter – AVIF PNG",
-    "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed.",
+    "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/avif-til-png-konverter"
   },
   "hero": {
     "title": "AVIF til PNG-konverter",
-    "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed.",
+    "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF til PNG-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed.",
+      "description": "Konverter AVIF-filer til tabsfri PNG. Bevar fuld kvalitet og gennemsigtighed. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
       "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertér AVIF til PNG", "AVIF til PNG konvertering", "Gratis AVIF til PNG konverter"]
     },

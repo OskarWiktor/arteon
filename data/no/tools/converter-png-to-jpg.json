@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "PNG til JPG-konverterer – PNG JPG",
-    "description": "Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.",
+    "description": "Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/png-til-jpg-konverterer"
   },
   "hero": {
     "title": "PNG til JPG-konverterer",
-    "description": "Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.",
+    "description": "Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konverter PNG til JPG", "PNG til JPG konvertering", "Gratis PNG til JPG konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.",
+      "description": "Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
       "featureList": ["PNG til JPG-konvertering", "JPG-kvalitetskontroll", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
     },
     "howTo": {

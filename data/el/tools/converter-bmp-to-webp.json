@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας BMP σε WebP – BMP WebP",
-    "description": "Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση μεγεθους εως 95%.",
+    "description": "Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση μεγεθους εως 95%. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-bmp-se-webp"
   },
   "hero": {
     "title": "Μετατροπέας BMP σε WebP",
-    "description": "Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση μεγεθους εως 95%.",
+    "description": "Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση μεγεθους εως 95%. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας BMP σε WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση μεγεθους εως 95%.",
+      "description": "Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση μεγεθους εως 95%. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
       "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή BMP σε WEBP", "Μετατροπέας BMP σε WEBP", "Δωρεάν μετατροπέας BMP σε WEBP"]
     },

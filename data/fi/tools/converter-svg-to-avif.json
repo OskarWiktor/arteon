@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "SVG AVIF -muunnin — SVG AVIF",
-    "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.",
+    "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/svg-avif-muunnin"
   },
   "hero": {
     "title": "SVG AVIF -muunnin",
-    "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.",
+    "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG AVIF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon.",
+      "description": "Muunna vektori-SVG-grafiikat kompaktiin AVIF-rasterimuotoon. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
       "featureList": ["Muunnos AVIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna SVG AVIF-muotoon", "SVG:n muunto AVIF-muotoon", "Ilmainen SVG–AVIF-muunnin"]
     },

@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "JPG naar WebP converter – JPG WebP",
-    "description": "Converteer JPG-foto's naar lichtgewicht WebP. Bespaar tot 35% bestandsgrootte.",
+    "description": "Converteer JPG-foto's naar lichtgewicht WebP. Bespaar tot 35% bestandsgrootte. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/jpg-naar-webp-converter"
   },
   "hero": {
     "title": "JPG naar WebP converter",
-    "description": "Converteer JPG-foto's naar lichtgewicht WebP. Bespaar tot 35% bestandsgrootte.",
+    "description": "Converteer JPG-foto's naar lichtgewicht WebP. Bespaar tot 35% bestandsgrootte. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["JPG naar WEBP omzetten", "JPG naar WEBP conversie", "Gratis JPG naar WEBP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer JPG-foto's naar lichtgewicht WebP. Bespaar tot 35% bestandsgrootte.",
+      "description": "Converteer JPG-foto's naar lichtgewicht WebP. Bespaar tot 35% bestandsgrootte. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["JPG naar WEBP conversie", "WEBP-kwaliteitscontrole", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {

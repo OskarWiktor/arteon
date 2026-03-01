@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "WebP TIFF konverter — WebP TIFF",
-    "description": "WebP kepek konvertálása professzionalis TIFF-re nyomtatashoz es archivalashoz.",
+    "description": "WebP kepek konvertálása professzionalis TIFF-re nyomtatashoz es archivalashoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/webp-tiff-konverter"
   },
   "hero": {
     "title": "WebP TIFF konverter",
-    "description": "WebP kepek konvertálása professzionalis TIFF-re nyomtatashoz es archivalashoz.",
+    "description": "WebP kepek konvertálása professzionalis TIFF-re nyomtatashoz es archivalashoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "WebP TIFF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "WebP kepek konvertálása professzionalis TIFF-re nyomtatashoz es archivalashoz.",
+      "description": "WebP kepek konvertálása professzionalis TIFF-re nyomtatashoz es archivalashoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["WEBP konvertálása TIFF formátumba", "WEBP–TIFF átalakítás", "Ingyenes WEBP–TIFF konverter"]
     },

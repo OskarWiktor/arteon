@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "BMP til PNG-konverterer – BMP PNG",
-    "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.",
+    "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/bmp-til-png-konverterer"
   },
   "hero": {
     "title": "BMP til PNG-konverterer",
-    "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.",
+    "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konverter BMP til PNG", "BMP til PNG konvertering", "Gratis BMP til PNG konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.",
+      "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
       "featureList": ["BMP til PNG-konvertering", "Tapsfri PNG-utdata", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
     },
     "howTo": {

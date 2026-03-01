@@ -3,13 +3,13 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor WebP a GIF — WebP GIF",
-    "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
+    "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/es/herramientas/convertidor-webp-a-gif"
   },
   "hero": {
     "title": "Convertidor WebP a GIF",
-    "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
+    "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertidor WebP a GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
+      "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
       "featureList": ["Conversión a GIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
       "alternateName": ["Convertir WEBP a GIF", "Conversión de WEBP a GIF", "Convertidor WEBP a GIF gratis"]
     },

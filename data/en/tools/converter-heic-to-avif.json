@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "HEIC to AVIF converter — HEIC AVIF",
-    "description": "Convert iPhone HEIC photos to modern AVIF format.",
+    "description": "Convert iPhone HEIC photos to modern AVIF format. Runs entirely in your browser. No server uploads, no registration required.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/en/tools/heic-to-avif-converter"
   },
   "hero": {
     "title": "HEIC to AVIF converter",
-    "description": "Convert iPhone HEIC photos to modern AVIF format.",
+    "description": "Convert iPhone HEIC photos to modern AVIF format. Runs entirely in your browser. No server uploads, no registration required.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC to AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert iPhone HEIC photos to modern AVIF format.",
+      "description": "Convert iPhone HEIC photos to modern AVIF format. Runs entirely in your browser. No server uploads, no registration required.",
       "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert HEIC to AVIF", "HEIC to AVIF conversion", "Free HEIC to AVIF converter", "Change HEIC to AVIF"]
     },

@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "BMP til WebP-konverter – BMP WebP",
-    "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.",
+    "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/bmp-til-webp-konverter"
   },
   "hero": {
     "title": "BMP til WebP-konverter",
-    "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.",
+    "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP til WebP-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.",
+      "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion. Ingen installation nødvendig, virker på alle enheder. Gratis, privat og ubegrænset.",
       "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertér BMP til WEBP", "BMP til WEBP konvertering", "Gratis BMP til WEBP konverter"]
     },

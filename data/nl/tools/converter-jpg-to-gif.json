@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "JPG naar GIF converter — JPG GIF",
-    "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen.",
+    "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/jpg-naar-gif-converter"
   },
   "hero": {
     "title": "JPG naar GIF converter",
-    "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen.",
+    "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG naar GIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen.",
+      "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["JPG naar GIF omzetten", "JPG naar GIF conversie", "Gratis JPG naar GIF converter"]
     },

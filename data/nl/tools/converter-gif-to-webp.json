@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "GIF naar WebP converter – GIF WebP",
-    "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden.",
+    "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/gif-naar-webp-converter"
   },
   "hero": {
     "title": "GIF naar WebP converter",
-    "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden.",
+    "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF naar WebP converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden.",
+      "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["GIF naar WEBP omzetten", "GIF naar WEBP conversie", "Gratis GIF naar WEBP converter"]
     },

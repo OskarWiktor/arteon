@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "SVG til TIFF-konverterer — SVG TIFF",
-    "description": "Konverter vektor-SVG-grafikk til hoykvalitets TIFF-raster.",
+    "description": "Konverter vektor-SVG-grafikk til hoykvalitets TIFF-raster. Ingen installasjon nødvendig, fungerer på alle enheter. Gratis, privat og ubegrenset.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/no/verktoy/svg-til-tiff-konverterer"
   },
   "hero": {
     "title": "SVG til TIFF-konverterer",
-    "description": "Konverter vektor-SVG-grafikk til hoykvalitets TIFF-raster.",
+    "description": "Konverter vektor-SVG-grafikk til hoykvalitets TIFF-raster. Ingen installasjon nødvendig, fungerer på alle enheter. Gratis, privat og ubegrenset.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG til TIFF-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter vektor-SVG-grafikk til hoykvalitets TIFF-raster.",
+      "description": "Konverter vektor-SVG-grafikk til hoykvalitets TIFF-raster. Ingen installasjon nødvendig, fungerer på alle enheter. Gratis, privat og ubegrenset.",
       "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
       "alternateName": ["Konverter SVG til TIFF", "SVG til TIFF konvertering", "Gratis SVG til TIFF konverterer"]
     },

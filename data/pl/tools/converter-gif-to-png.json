@@ -3,7 +3,7 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter GIF na PNG – wyeksportuj klatkę za darmo",
-    "description": "Wyeksportuj pierwszą klatkę GIF-a jako statyczny PNG w przeglądarce. Bez utraty jakości, bez limitu i rejestracji.",
+    "description": "Wyeksportuj pierwszą klatkę GIF-a jako statyczny PNG w przeglądarce. Bez utraty jakości, bez limitu i rejestracji. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-gif-na-png"
   },
@@ -51,7 +51,10 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować GIF na PNG?",
@@ -59,19 +62,37 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter GIF na PNG – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować GIF na PNG?",
       "description": "Konwersja GIF na PNG zajmuje kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki GIF", "description": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.", "icon": "RiUploadLine" },
-        { "title": "2. Konwertuj", "description": "Narzędzie eksportuje pierwszą klatkę każdego GIF-a jako statyczny obraz PNG. Konwersja jest bezstratna.", "icon": "RiEqualizerLine" },
-        { "title": "3. Pobierz PNG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+        {
+          "title": "1. Dodaj pliki GIF",
+          "description": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konwertuj",
+          "description": "Narzędzie eksportuje pierwszą klatkę każdego GIF-a jako statyczny obraz PNG. Konwersja jest bezstratna.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz PNG",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kiedy konwertować GIF na PNG?",
@@ -99,19 +120,41 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter GIF na PNG?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików GIF naraz." },
-        { "icon": "RiSpeedLine", "title": "Zachowanie przezroczystości", "description": "Jeśli GIF ma przezroczyste tło, przezroczystość zostanie zachowana w wynikowym PNG z pełnym kanałem alfa." },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików GIF naraz."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Zachowanie przezroczystości",
+          "description": "Jeśli GIF ma przezroczyste tło, przezroczystość zostanie zachowana w wynikowym PNG z pełnym kanałem alfa."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji GIF na PNG",
@@ -121,7 +164,10 @@
           "question": "Która klatka GIF-a jest eksportowana?",
           "answer": "Narzędzie eksportuje pierwszą klatkę animowanego GIF-a. Jeśli GIF jest statyczny (jedna klatka), wynikowy PNG będzie identyczny z oryginałem."
         },
-        { "question": "Czy przezroczystość GIF-a jest zachowana?", "answer": "Tak. Jeśli GIF ma przezroczyste tło, zostanie ono zachowane w pliku PNG z pełnym kanałem alfa." },
+        {
+          "question": "Czy przezroczystość GIF-a jest zachowana?",
+          "answer": "Tak. Jeśli GIF ma przezroczyste tło, zostanie ono zachowane w pliku PNG z pełnym kanałem alfa."
+        },
         {
           "question": "Czy PNG będzie miał lepszą jakość niż GIF?",
           "answer": "PNG obsługuje pełną paletę 16,7 miliona kolorów, podczas gdy GIF jest ograniczony do 256 kolorów. Konwersja nie doda nowych kolorów, ale PNG zapewni lepszą kompresję bezstratną i obsługę częściowej przezroczystości."
@@ -130,10 +176,16 @@
           "question": "Czy mogę konwertować wiele plików naraz?",
           "answer": "Tak. Można dodać dowolną liczbę plików GIF jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
         },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." }
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -142,8 +194,17 @@
       "imageAlt": "Konwerter GIF na PNG – Arteon",
       "defaultSubject": "Feedback: Konwerter GIF na PNG"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

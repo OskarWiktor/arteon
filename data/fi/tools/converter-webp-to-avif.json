@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "WebP AVIF -muunnin — WebP AVIF",
-    "description": "Muunna WebP-tiedostot AVIF-muotoon. Viela parempi pakkaus modernissa formaatissa.",
+    "description": "Muunna WebP-tiedostot AVIF-muotoon. Viela parempi pakkaus modernissa formaatissa. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/webp-avif-muunnin"
   },
   "hero": {
     "title": "WebP AVIF -muunnin",
-    "description": "Muunna WebP-tiedostot AVIF-muotoon. Viela parempi pakkaus modernissa formaatissa.",
+    "description": "Muunna WebP-tiedostot AVIF-muotoon. Viela parempi pakkaus modernissa formaatissa. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "WebP AVIF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna WebP-tiedostot AVIF-muotoon. Viela parempi pakkaus modernissa formaatissa.",
+      "description": "Muunna WebP-tiedostot AVIF-muotoon. Viela parempi pakkaus modernissa formaatissa. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
       "featureList": ["Muunnos AVIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna WEBP AVIF-muotoon", "WEBP:n muunto AVIF-muotoon", "Ilmainen WEBP–AVIF-muunnin"]
     },

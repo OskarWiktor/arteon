@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "BMP naar AVIF converter — BMP AVIF",
-    "description": "Converteer ongecomprimeerde BMP-bestanden naar ultracompact AVIF.",
+    "description": "Converteer ongecomprimeerde BMP-bestanden naar ultracompact AVIF. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/bmp-naar-avif-converter"
   },
   "hero": {
     "title": "BMP naar AVIF converter",
-    "description": "Converteer ongecomprimeerde BMP-bestanden naar ultracompact AVIF.",
+    "description": "Converteer ongecomprimeerde BMP-bestanden naar ultracompact AVIF. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP naar AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer ongecomprimeerde BMP-bestanden naar ultracompact AVIF.",
+      "description": "Converteer ongecomprimeerde BMP-bestanden naar ultracompact AVIF. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
       "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["BMP naar AVIF omzetten", "BMP naar AVIF conversie", "Gratis BMP naar AVIF converter"]
     },

@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník BMP na PNG – BMP PNG",
-    "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena.",
+    "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-bmp-na-png"
   },
   "hero": {
     "title": "Převodník BMP na PNG",
-    "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena.",
+    "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést BMP na PNG", "Konverze BMP do PNG", "Převodník BMP na PNG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena.",
+      "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
       "featureList": ["Převod BMP na PNG", "Bezeztrátový výstup PNG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {

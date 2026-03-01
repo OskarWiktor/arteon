@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "JPG naar TIFF converter — JPG TIFF",
-    "description": "Converteer JPG-foto\\'s naar lossless TIFF. Voor afdrukken en archivering.",
+    "description": "Converteer JPG-foto\\'s naar lossless TIFF. Voor afdrukken en archivering. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/jpg-naar-tiff-converter"
   },
   "hero": {
     "title": "JPG naar TIFF converter",
-    "description": "Converteer JPG-foto\\'s naar lossless TIFF. Voor afdrukken en archivering.",
+    "description": "Converteer JPG-foto\\'s naar lossless TIFF. Voor afdrukken en archivering. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG naar TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer JPG-foto\\'s naar lossless TIFF. Voor afdrukken en archivering.",
+      "description": "Converteer JPG-foto\\'s naar lossless TIFF. Voor afdrukken en archivering. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["JPG naar TIFF omzetten", "JPG naar TIFF conversie", "Gratis JPG naar TIFF converter"]
     },

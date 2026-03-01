@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor WebP în TIFF — WebP TIFF",
-    "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare.",
+    "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-webp-in-tiff"
   },
   "hero": {
     "title": "Convertor WebP în TIFF",
-    "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare.",
+    "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor WebP în TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare.",
+      "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie WEBP în TIFF", "Convertor WEBP în TIFF", "Convertor gratuit WEBP în TIFF"]
     },

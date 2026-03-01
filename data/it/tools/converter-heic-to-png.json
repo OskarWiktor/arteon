@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore HEIC in PNG – HEIC PNG",
-    "description": "Converti foto HEIC da iPhone in PNG lossless. Qualita e trasparenza complete.",
+    "description": "Converti foto HEIC da iPhone in PNG lossless. Qualita e trasparenza complete. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-heic-in-png"
   },
   "hero": {
     "title": "Convertitore HEIC in PNG",
-    "description": "Converti foto HEIC da iPhone in PNG lossless. Qualita e trasparenza complete.",
+    "description": "Converti foto HEIC da iPhone in PNG lossless. Qualita e trasparenza complete. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertitore HEIC in PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converti foto HEIC da iPhone in PNG lossless. Qualita e trasparenza complete.",
+      "description": "Converti foto HEIC da iPhone in PNG lossless. Qualita e trasparenza complete. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
       "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertire HEIC in PNG", "Conversione HEIC in PNG", "Convertitore HEIC in PNG gratuito"]
     },

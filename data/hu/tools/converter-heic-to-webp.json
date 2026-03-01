@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "HEIC WebP konverter – HEIC WebP",
-    "description": "iPhone HEIC fotok konvertálása konnyu WebP-re. Kisebb meret, gyorsabb betoltes.",
+    "description": "iPhone HEIC fotok konvertálása konnyu WebP-re. Kisebb meret, gyorsabb betoltes. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/heic-webp-konverter"
   },
   "hero": {
     "title": "HEIC WebP konverter",
-    "description": "iPhone HEIC fotok konvertálása konnyu WebP-re. Kisebb meret, gyorsabb betoltes.",
+    "description": "iPhone HEIC fotok konvertálása konnyu WebP-re. Kisebb meret, gyorsabb betoltes. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC WebP konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "iPhone HEIC fotok konvertálása konnyu WebP-re. Kisebb meret, gyorsabb betoltes.",
+      "description": "iPhone HEIC fotok konvertálása konnyu WebP-re. Kisebb meret, gyorsabb betoltes. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["HEIC konvertálása WEBP formátumba", "HEIC–WEBP átalakítás", "Ingyenes HEIC–WEBP konverter"]
     },

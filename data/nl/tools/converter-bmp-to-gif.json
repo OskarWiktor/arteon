@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "BMP naar GIF converter — BMP GIF",
-    "description": "Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF.",
+    "description": "Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/bmp-naar-gif-converter"
   },
   "hero": {
     "title": "BMP naar GIF converter",
-    "description": "Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF.",
+    "description": "Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP naar GIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF.",
+      "description": "Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
       "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["BMP naar GIF omzetten", "BMP naar GIF conversie", "Gratis BMP naar GIF converter"]
     },

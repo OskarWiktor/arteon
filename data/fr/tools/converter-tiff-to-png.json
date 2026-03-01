@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur TIFF en PNG – TIFF PNG",
-    "description": "Convertissez les fichiers TIFF en PNG sans perte. Qualite des scans preservee.",
+    "description": "Convertissez les fichiers TIFF en PNG sans perte. Qualite des scans preservee. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-tiff-en-png"
   },
   "hero": {
     "title": "Convertisseur TIFF en PNG",
-    "description": "Convertissez les fichiers TIFF en PNG sans perte. Qualite des scans preservee.",
+    "description": "Convertissez les fichiers TIFF en PNG sans perte. Qualite des scans preservee. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur TIFF en PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les fichiers TIFF en PNG sans perte. Qualite des scans preservee.",
+      "description": "Convertissez les fichiers TIFF en PNG sans perte. Qualite des scans preservee. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir TIFF en PNG", "Conversion TIFF vers PNG", "Convertisseur TIFF en PNG gratuit"]
     },

@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "AVIF naar WebP converter – AVIF WebP",
-    "description": "Converteer AVIF-bestanden naar WebP. Brede compatibiliteit bij klein bestandsformaat.",
+    "description": "Converteer AVIF-bestanden naar WebP. Brede compatibiliteit bij klein bestandsformaat. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/avif-naar-webp-converter"
   },
   "hero": {
     "title": "AVIF naar WebP converter",
-    "description": "Converteer AVIF-bestanden naar WebP. Brede compatibiliteit bij klein bestandsformaat.",
+    "description": "Converteer AVIF-bestanden naar WebP. Brede compatibiliteit bij klein bestandsformaat. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF naar WebP converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer AVIF-bestanden naar WebP. Brede compatibiliteit bij klein bestandsformaat.",
+      "description": "Converteer AVIF-bestanden naar WebP. Brede compatibiliteit bij klein bestandsformaat. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
       "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["AVIF naar WEBP omzetten", "AVIF naar WEBP conversie", "Gratis AVIF naar WEBP converter"]
     },

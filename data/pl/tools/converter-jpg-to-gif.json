@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter JPG na GIF — JPG GIF",
-    "description": "Zamień zdjęcia JPG na format GIF. Statyczny obraz w formacie obsługiwanym przez każdą platformę.",
+    "description": "Zamień zdjęcia JPG na format GIF. Statyczny obraz w formacie obsługiwanym przez każdą platformę. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-jpg-na-gif"
   },
   "hero": {
     "title": "Konwerter JPG na GIF",
-    "description": "Zamień zdjęcia JPG na format GIF. Statyczny obraz w formacie obsługiwanym przez każdą platformę.",
+    "description": "Zamień zdjęcia JPG na format GIF. Statyczny obraz w formacie obsługiwanym przez każdą platformę. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Konwerter JPG na GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień zdjęcia JPG na format GIF. Statyczny obraz w formacie obsługiwanym przez każdą platformę.",
+      "description": "Zamień zdjęcia JPG na format GIF. Statyczny obraz w formacie obsługiwanym przez każdą platformę. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
       "featureList": ["Konwersja do GIF", "Kwantyzacja do 256 kolorow", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
       "alternateName": ["Zamiana JPG na GIF", "Konwersja JPG do GIF", "Darmowy konwerter JPG na GIF"]
     },

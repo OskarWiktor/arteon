@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "WebP till PNG-konverterare – WebP PNG",
-    "description": "Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.",
+    "description": "Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/webp-till-png-konverterare"
   },
   "hero": {
     "title": "WebP till PNG-konverterare",
-    "description": "Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.",
+    "description": "Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertera WEBP till PNG", "WEBP till PNG konvertering", "Gratis WEBP till PNG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering.",
+      "description": "Konvertera WebP-bilder till förlustfritt PNG. Lokal konvertering. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
       "featureList": ["WEBP till PNG-konvertering", "Förlustfri PNG-utdata", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {

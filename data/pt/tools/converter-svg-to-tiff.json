@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor SVG para TIFF — SVG TIFF",
-    "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade.",
+    "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/pt/ferramentas/conversor-svg-para-tiff"
   },
   "hero": {
     "title": "Conversor SVG para TIFF",
-    "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade.",
+    "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Conversor SVG para TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade.",
+      "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
       "featureList": ["Conversão para TIFF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
       "alternateName": ["Converter SVG para TIFF", "Conversão de SVG para TIFF", "Conversor SVG para TIFF grátis"]
     },

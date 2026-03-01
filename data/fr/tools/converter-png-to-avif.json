@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur PNG en AVIF — PNG AVIF",
-    "description": "Convertissez les graphiques PNG en AVIF avec transparence. Fichiers beaucoup plus petits.",
+    "description": "Convertissez les graphiques PNG en AVIF avec transparence. Fichiers beaucoup plus petits. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fr/outils/convertisseur-png-en-avif"
   },
   "hero": {
     "title": "Convertisseur PNG en AVIF",
-    "description": "Convertissez les graphiques PNG en AVIF avec transparence. Fichiers beaucoup plus petits.",
+    "description": "Convertissez les graphiques PNG en AVIF avec transparence. Fichiers beaucoup plus petits. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur PNG en AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les graphiques PNG en AVIF avec transparence. Fichiers beaucoup plus petits.",
+      "description": "Convertissez les graphiques PNG en AVIF avec transparence. Fichiers beaucoup plus petits. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
       "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
       "alternateName": ["Convertir PNG en AVIF", "Conversion PNG vers AVIF", "Convertisseur PNG en AVIF gratuit"]
     },

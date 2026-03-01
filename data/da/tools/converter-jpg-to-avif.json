@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "JPG til AVIF-konverter — JPG AVIF",
-    "description": "Konverter JPG-fotos til moderne AVIF. Op til 50% bedre komprimering end JPG.",
+    "description": "Konverter JPG-fotos til moderne AVIF. Op til 50% bedre komprimering end JPG. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/da/vaerktojer/jpg-til-avif-konverter"
   },
   "hero": {
     "title": "JPG til AVIF-konverter",
-    "description": "Konverter JPG-fotos til moderne AVIF. Op til 50% bedre komprimering end JPG.",
+    "description": "Konverter JPG-fotos til moderne AVIF. Op til 50% bedre komprimering end JPG. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG til AVIF-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter JPG-fotos til moderne AVIF. Op til 50% bedre komprimering end JPG.",
+      "description": "Konverter JPG-fotos til moderne AVIF. Op til 50% bedre komprimering end JPG. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
       "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
       "alternateName": ["Konvertér JPG til AVIF", "JPG til AVIF konvertering", "Gratis JPG til AVIF konverter"]
     },

@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur BMP en WebP – BMP WebP",
-    "description": "Convertissez les fichiers BMP en WebP leger. Reduction de taille pouvant atteindre 95%.",
+    "description": "Convertissez les fichiers BMP en WebP leger. Reduction de taille pouvant atteindre 95%. Sans installation, fonctionne sur tout appareil. Gratuit, privé et illimité.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-bmp-en-webp"
   },
   "hero": {
     "title": "Convertisseur BMP en WebP",
-    "description": "Convertissez les fichiers BMP en WebP leger. Reduction de taille pouvant atteindre 95%.",
+    "description": "Convertissez les fichiers BMP en WebP leger. Reduction de taille pouvant atteindre 95%. Sans installation, fonctionne sur tout appareil. Gratuit, privé et illimité.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur BMP en WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les fichiers BMP en WebP leger. Reduction de taille pouvant atteindre 95%.",
+      "description": "Convertissez les fichiers BMP en WebP leger. Reduction de taille pouvant atteindre 95%. Sans installation, fonctionne sur tout appareil. Gratuit, privé et illimité.",
       "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir BMP en WEBP", "Conversion BMP vers WEBP", "Convertisseur BMP en WEBP gratuit"]
     },

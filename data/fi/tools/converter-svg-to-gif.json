@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "SVG GIF -muunnin — SVG GIF",
-    "description": "Muunna vektori-SVG-grafiikat GIF-rasterimuotoon.",
+    "description": "Muunna vektori-SVG-grafiikat GIF-rasterimuotoon. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/svg-gif-muunnin"
   },
   "hero": {
     "title": "SVG GIF -muunnin",
-    "description": "Muunna vektori-SVG-grafiikat GIF-rasterimuotoon.",
+    "description": "Muunna vektori-SVG-grafiikat GIF-rasterimuotoon. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG GIF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna vektori-SVG-grafiikat GIF-rasterimuotoon.",
+      "description": "Muunna vektori-SVG-grafiikat GIF-rasterimuotoon. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
       "featureList": ["Muunnos GIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna SVG GIF-muotoon", "SVG:n muunto GIF-muotoon", "Ilmainen SVG–GIF-muunnin"]
     },

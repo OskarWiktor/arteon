@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "GIF till JPG-konverterare – GIF JPG",
-    "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.",
+    "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/gif-till-jpg-konverterare"
   },
   "hero": {
     "title": "GIF till JPG-konverterare",
-    "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.",
+    "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertera GIF till JPG", "GIF till JPG konvertering", "Gratis GIF till JPG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.",
+      "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
       "featureList": ["GIF till JPG-konvertering", "JPG-kvalitetskontroll", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {

@@ -3,7 +3,7 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor BMP a PNG – compresión sin pérdida gratis",
-    "description": "Convierte imágenes BMP a PNG sin pérdida. Conserva la calidad con menor tamaño.",
+    "description": "Convierte imágenes BMP a PNG sin pérdida. Conserva la calidad con menor tamaño. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-bmp-a-png"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir BMP a PNG", "Conversión de BMP a PNG", "Convertidor BMP a PNG gratis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte imágenes BMP a PNG sin pérdida. Conserva la calidad con menor tamaño.",
+      "description": "Convierte imágenes BMP a PNG sin pérdida. Conserva la calidad con menor tamaño. Todo el procesamiento ocurre en tu navegador — los archivos no salen de tu dispositivo.",
       "featureList": ["Conversión de BMP a PNG", "Salida PNG sin pérdidas", "Conversión por lotes", "Procesamiento local en el navegador", "Sin subida de archivos"]
     },
     "howTo": {

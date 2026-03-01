@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας WebP σε GIF — WebP GIF",
-    "description": "Μετατρεψτε εικονες WebP σε μορφη GIF για μεγιστη συμβατοτητα.",
+    "description": "Μετατρεψτε εικονες WebP σε μορφη GIF για μεγιστη συμβατοτητα. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-webp-se-gif"
   },
   "hero": {
     "title": "Μετατροπέας WebP σε GIF",
-    "description": "Μετατρεψτε εικονες WebP σε μορφη GIF για μεγιστη συμβατοτητα.",
+    "description": "Μετατρεψτε εικονες WebP σε μορφη GIF για μεγιστη συμβατοτητα. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας WebP σε GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε εικονες WebP σε μορφη GIF για μεγιστη συμβατοτητα.",
+      "description": "Μετατρεψτε εικονες WebP σε μορφη GIF για μεγιστη συμβατοτητα. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
       "featureList": ["Μετατροπή σε GIF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή WEBP σε GIF", "Μετατροπέας WEBP σε GIF", "Δωρεάν μετατροπέας WEBP σε GIF"]
     },

@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "SVG PNG konverter – SVG PNG",
-    "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.",
+    "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/svg-png-konverter"
   },
   "hero": {
     "title": "SVG PNG konverter",
-    "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.",
+    "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["SVG konvertálása PNG formátumba", "SVG–PNG átalakítás", "Ingyenes SVG–PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.",
+      "description": "SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
       "featureList": ["SVG – PNG konvertálás", "Veszteségmentes PNG kimenet", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

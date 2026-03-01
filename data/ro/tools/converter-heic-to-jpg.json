@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor HEIC în JPG – HEIC JPG",
-    "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload.",
+    "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-heic-in-jpg"
   },
   "hero": {
     "title": "Convertor HEIC în JPG",
-    "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload.",
+    "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor HEIC în JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload.",
+      "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie HEIC în JPG", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie HEIC în JPG", "Convertor HEIC în JPG", "Convertor gratuit HEIC în JPG"]
     },

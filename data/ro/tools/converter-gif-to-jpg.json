@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor GIF în JPG – GIF JPG",
-    "description": "Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic.",
+    "description": "Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-gif-in-jpg"
   },
   "hero": {
     "title": "Convertor GIF în JPG",
-    "description": "Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic.",
+    "description": "Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Conversie GIF în JPG", "Convertor GIF în JPG", "Convertor gratuit GIF în JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic.",
+      "description": "Exportă primul cadru al unui GIF ca JPG compact. Fișier mai mic. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie GIF în JPG", "Control calitate JPG", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {

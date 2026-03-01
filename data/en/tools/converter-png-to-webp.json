@@ -3,7 +3,7 @@
   "locale": "en",
   "metadata": {
     "title": "PNG to WebP converter – smaller files, keep transparency",
-    "description": "Convert PNG images to WebP in your browser. Smaller files while preserving transparency. No signup, no server uploads.",
+    "description": "Convert PNG images to WebP in your browser. Smaller files while preserving transparency. No signup, no server uploads. Runs entirely in your browser. No server uploads, no registration required.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/png-to-webp-converter"
   },

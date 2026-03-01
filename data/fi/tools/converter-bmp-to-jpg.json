@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "BMP JPG -muunnin – BMP JPG",
-    "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.",
+    "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/bmp-jpg-muunnin"
   },
   "hero": {
     "title": "BMP JPG -muunnin",
-    "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.",
+    "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Muunna BMP JPG-muotoon", "BMP:n muunto JPG-muotoon", "Ilmainen BMP–JPG-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.",
+      "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
       "featureList": ["BMP – JPG -muunnos", "JPG-laadun säätö", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {

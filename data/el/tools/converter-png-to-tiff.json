@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας PNG σε TIFF — PNG TIFF",
-    "description": "Μετατρεψτε γραφικα PNG σε επαγγελματικη μορφη TIFF.",
+    "description": "Μετατρεψτε γραφικα PNG σε επαγγελματικη μορφη TIFF. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-png-se-tiff"
   },
   "hero": {
     "title": "Μετατροπέας PNG σε TIFF",
-    "description": "Μετατρεψτε γραφικα PNG σε επαγγελματικη μορφη TIFF.",
+    "description": "Μετατρεψτε γραφικα PNG σε επαγγελματικη μορφη TIFF. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας PNG σε TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε γραφικα PNG σε επαγγελματικη μορφη TIFF.",
+      "description": "Μετατρεψτε γραφικα PNG σε επαγγελματικη μορφη TIFF. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
       "featureList": ["Μετατροπή σε TIFF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή PNG σε TIFF", "Μετατροπέας PNG σε TIFF", "Δωρεάν μετατροπέας PNG σε TIFF"]
     },

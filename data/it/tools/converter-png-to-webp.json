@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore PNG in WebP – PNG WebP",
-    "description": "Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza.",
+    "description": "Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-png-in-webp"
   },
   "hero": {
     "title": "Convertitore PNG in WebP",
-    "description": "Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza.",
+    "description": "Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Convertire PNG in WEBP", "Conversione PNG in WEBP", "Convertitore PNG in WEBP gratuito"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza.",
+      "description": "Converti grafiche PNG in WebP. File più piccoli mantenendo la trasparenza. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
       "featureList": ["Conversione da PNG a WEBP", "Controllo qualità WEBP", "Conversione in blocco", "Elaborazione locale nel browser", "Nessun caricamento file"]
     },
     "howTo": {

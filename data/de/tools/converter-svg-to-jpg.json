@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "SVG zu JPG Konverter – Vektoren zu JPG kostenlos",
-    "description": "SVG-Grafiken in kompaktes JPG umwandeln. Kleinere Datei, volle Kompatibilität.",
+    "description": "SVG-Grafiken in kompaktes JPG umwandeln. Kleinere Datei, volle Kompatibilität. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/svg-zu-jpg-konverter"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["SVG in JPG umwandeln", "SVG zu JPG konvertieren", "Kostenloser SVG-zu-JPG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "SVG-Grafiken in kompaktes JPG umwandeln. Kleinere Datei, volle Kompatibilität.",
+      "description": "SVG-Grafiken in kompaktes JPG umwandeln. Kleinere Datei, volle Kompatibilität. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
       "featureList": ["SVG-zu-JPG-Konvertierung", "JPG-Qualitätssteuerung", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "SVG naar PNG converter – SVG PNG",
-    "description": "Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media.",
+    "description": "Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/svg-naar-png-converter"
   },
   "hero": {
     "title": "SVG naar PNG converter",
-    "description": "Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media.",
+    "description": "Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["SVG naar PNG omzetten", "SVG naar PNG conversie", "Gratis SVG naar PNG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media.",
+      "description": "Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
       "featureList": ["SVG naar PNG conversie", "Verliesvrije PNG-uitvoer", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {

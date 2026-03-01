@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor BMP în JPG – BMP JPG",
-    "description": "Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.",
+    "description": "Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-bmp-in-jpg"
   },
   "hero": {
     "title": "Convertor BMP în JPG",
-    "description": "Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.",
+    "description": "Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Conversie BMP în JPG", "Convertor BMP în JPG", "Convertor gratuit BMP în JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.",
+      "description": "Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
       "featureList": ["Conversie BMP în JPG", "Control calitate JPG", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {

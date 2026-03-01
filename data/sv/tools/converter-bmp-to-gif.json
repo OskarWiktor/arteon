@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "BMP till GIF-konverterare — BMP GIF",
-    "description": "Konvertera okomprimerade BMP-filer till lattvikts-GIF.",
+    "description": "Konvertera okomprimerade BMP-filer till lattvikts-GIF. Ingen installation behövs, fungerar på alla enheter. Gratis, privat och obegränsat.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/sv/verktyg/bmp-till-gif-konverterare"
   },
   "hero": {
     "title": "BMP till GIF-konverterare",
-    "description": "Konvertera okomprimerade BMP-filer till lattvikts-GIF.",
+    "description": "Konvertera okomprimerade BMP-filer till lattvikts-GIF. Ingen installation behövs, fungerar på alla enheter. Gratis, privat och obegränsat.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP till GIF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera okomprimerade BMP-filer till lattvikts-GIF.",
+      "description": "Konvertera okomprimerade BMP-filer till lattvikts-GIF. Ingen installation behövs, fungerar på alla enheter. Gratis, privat och obegränsat.",
       "featureList": ["Konvertering till GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera BMP till GIF", "BMP till GIF konvertering", "Gratis BMP till GIF konverterare"]
     },

@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "JPG till TIFF-konverterare — JPG TIFF",
-    "description": "Konvertera JPG-foton till forlustfritt TIFF. For utskrift och arkivering.",
+    "description": "Konvertera JPG-foton till forlustfritt TIFF. For utskrift och arkivering. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/sv/verktyg/jpg-till-tiff-konverterare"
   },
   "hero": {
     "title": "JPG till TIFF-konverterare",
-    "description": "Konvertera JPG-foton till forlustfritt TIFF. For utskrift och arkivering.",
+    "description": "Konvertera JPG-foton till forlustfritt TIFF. For utskrift och arkivering. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG till TIFF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera JPG-foton till forlustfritt TIFF. For utskrift och arkivering.",
+      "description": "Konvertera JPG-foton till forlustfritt TIFF. For utskrift och arkivering. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera JPG till TIFF", "JPG till TIFF konvertering", "Gratis JPG till TIFF konverterare"]
     },

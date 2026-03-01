@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας GIF σε AVIF — GIF AVIF",
-    "description": "Μετατρεψτε το πρωτο καρε GIF σε στατικη εικονα AVIF με εξαιρετικη συμπιεση.",
+    "description": "Μετατρεψτε το πρωτο καρε GIF σε στατικη εικονα AVIF με εξαιρετικη συμπιεση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-gif-se-avif"
   },
   "hero": {
     "title": "Μετατροπέας GIF σε AVIF",
-    "description": "Μετατρεψτε το πρωτο καρε GIF σε στατικη εικονα AVIF με εξαιρετικη συμπιεση.",
+    "description": "Μετατρεψτε το πρωτο καρε GIF σε στατικη εικονα AVIF με εξαιρετικη συμπιεση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας GIF σε AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε το πρωτο καρε GIF σε στατικη εικονα AVIF με εξαιρετικη συμπιεση.",
+      "description": "Μετατρεψτε το πρωτο καρε GIF σε στατικη εικονα AVIF με εξαιρετικη συμπιεση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
       "featureList": ["Μετατροπή σε AVIF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή GIF σε AVIF", "Μετατροπέας GIF σε AVIF", "Δωρεάν μετατροπέας GIF σε AVIF"]
     },

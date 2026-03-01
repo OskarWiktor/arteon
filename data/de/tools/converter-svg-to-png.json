@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "SVG zu PNG Konverter – Vektoren kostenlos rastern",
-    "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media.",
+    "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/svg-zu-png-konverter"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["SVG in PNG umwandeln", "SVG zu PNG konvertieren", "Kostenloser SVG-zu-PNG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media.",
+      "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media. Ohne Installation, funktioniert auf jedem Gerät. Kostenlos und unbegrenzt.",
       "featureList": ["SVG-zu-PNG-Konvertierung", "Verlustfreie PNG-Ausgabe", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
     },
     "howTo": {

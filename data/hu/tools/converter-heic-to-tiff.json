@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "HEIC TIFF konverter — HEIC TIFF",
-    "description": "iPhone HEIC fotok konvertálása professzionalis TIFF formatumra.",
+    "description": "iPhone HEIC fotok konvertálása professzionalis TIFF formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/heic-tiff-konverter"
   },
   "hero": {
     "title": "HEIC TIFF konverter",
-    "description": "iPhone HEIC fotok konvertálása professzionalis TIFF formatumra.",
+    "description": "iPhone HEIC fotok konvertálása professzionalis TIFF formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC TIFF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "iPhone HEIC fotok konvertálása professzionalis TIFF formatumra.",
+      "description": "iPhone HEIC fotok konvertálása professzionalis TIFF formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["HEIC konvertálása TIFF formátumba", "HEIC–TIFF átalakítás", "Ingyenes HEIC–TIFF konverter"]
     },

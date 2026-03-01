@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "PNG zu GIF Konverter — PNG GIF",
-    "description": "PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken.",
+    "description": "PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/de/werkzeuge/png-zu-gif-konverter"
   },
   "hero": {
     "title": "PNG zu GIF Konverter",
-    "description": "PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken.",
+    "description": "PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG zu GIF Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken.",
+      "description": "PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
       "featureList": ["Konvertierung zu GIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
       "alternateName": ["PNG in GIF umwandeln", "PNG zu GIF konvertieren", "Kostenloser PNG-zu-GIF-Konverter"]
     },

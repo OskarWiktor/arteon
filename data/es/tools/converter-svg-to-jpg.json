@@ -3,7 +3,7 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor SVG a JPG – rasteriza vectores a JPG gratis",
-    "description": "Convierte gráficos SVG a JPG compacto. Archivo más pequeño, compatibilidad total.",
+    "description": "Convierte gráficos SVG a JPG compacto. Archivo más pequeño, compatibilidad total. Sin instalación, funciona en cualquier dispositivo. Gratis, privado e ilimitado.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-svg-a-jpg"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir SVG a JPG", "Conversión de SVG a JPG", "Convertidor SVG a JPG gratis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte gráficos SVG a JPG compacto. Archivo más pequeño, compatibilidad total.",
+      "description": "Convierte gráficos SVG a JPG compacto. Archivo más pequeño, compatibilidad total. Sin instalación, funciona en cualquier dispositivo. Gratis, privado e ilimitado.",
       "featureList": ["Conversión de SVG a JPG", "Control de calidad de JPG", "Conversión por lotes", "Procesamiento local en el navegador", "Sin subida de archivos"]
     },
     "howTo": {

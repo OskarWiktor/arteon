@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "SVG naar TIFF converter — SVG TIFF",
-    "description": "Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster.",
+    "description": "Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/svg-naar-tiff-converter"
   },
   "hero": {
     "title": "SVG naar TIFF converter",
-    "description": "Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster.",
+    "description": "Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG naar TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster.",
+      "description": "Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
       "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["SVG naar TIFF omzetten", "SVG naar TIFF conversie", "Gratis SVG naar TIFF converter"]
     },

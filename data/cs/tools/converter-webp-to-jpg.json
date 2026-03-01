@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník WebP na JPG – WebP JPG",
-    "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG.",
+    "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-webp-na-jpg"
   },
   "hero": {
     "title": "Převodník WebP na JPG",
-    "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG.",
+    "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést WEBP na JPG", "Konverze WEBP do JPG", "Převodník WEBP na JPG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG.",
+      "description": "Převeďte soubory WebP na univerzálně kompatibilní JPG. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["Převod WEBP na JPG", "Ovládání kvality JPG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {

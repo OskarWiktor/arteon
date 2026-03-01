@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "PNG til JPG-konverter – PNG JPG",
-    "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.",
+    "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/png-til-jpg-konverter"
   },
   "hero": {
     "title": "PNG til JPG-konverter",
-    "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.",
+    "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér PNG til JPG", "PNG til JPG konvertering", "Gratis PNG til JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering.",
+      "description": "Konvertér PNG-filer til JPG i browseren. Uden begrænsning, uden registrering. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
       "featureList": ["PNG til JPG-konvertering", "JPG-kvalitetskontrol", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {

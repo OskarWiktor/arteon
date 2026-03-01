@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "HEIC till AVIF-konverterare — HEIC AVIF",
-    "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format.",
+    "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/sv/verktyg/heic-till-avif-konverterare"
   },
   "hero": {
     "title": "HEIC till AVIF-konverterare",
-    "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format.",
+    "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC till AVIF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format.",
+      "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
       "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera HEIC till AVIF", "HEIC till AVIF konvertering", "Gratis HEIC till AVIF konverterare"]
     },

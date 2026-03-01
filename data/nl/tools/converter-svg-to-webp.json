@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "SVG naar WebP converter – SVG WebP",
-    "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media.",
+    "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/svg-naar-webp-converter"
   },
   "hero": {
     "title": "SVG naar WebP converter",
-    "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media.",
+    "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG naar WebP converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media.",
+      "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["SVG naar WEBP omzetten", "SVG naar WEBP conversie", "Gratis SVG naar WEBP converter"]
     },

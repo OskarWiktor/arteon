@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "WebP naar JPG converter – WebP JPG",
-    "description": "Converteer WebP-bestanden naar universeel compatibel JPG.",
+    "description": "Converteer WebP-bestanden naar universeel compatibel JPG. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/webp-naar-jpg-converter"
   },
   "hero": {
     "title": "WebP naar JPG converter",
-    "description": "Converteer WebP-bestanden naar universeel compatibel JPG.",
+    "description": "Converteer WebP-bestanden naar universeel compatibel JPG. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["WEBP naar JPG omzetten", "WEBP naar JPG conversie", "Gratis WEBP naar JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer WebP-bestanden naar universeel compatibel JPG.",
+      "description": "Converteer WebP-bestanden naar universeel compatibel JPG. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["WEBP naar JPG conversie", "JPG-kwaliteitscontrole", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "WebP naar TIFF converter — WebP TIFF",
-    "description": "Converteer WebP-afbeeldingen naar professioneel TIFF voor afdrukken en archivering.",
+    "description": "Converteer WebP-afbeeldingen naar professioneel TIFF voor afdrukken en archivering. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/webp-naar-tiff-converter"
   },
   "hero": {
     "title": "WebP naar TIFF converter",
-    "description": "Converteer WebP-afbeeldingen naar professioneel TIFF voor afdrukken en archivering.",
+    "description": "Converteer WebP-afbeeldingen naar professioneel TIFF voor afdrukken en archivering. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "WebP naar TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer WebP-afbeeldingen naar professioneel TIFF voor afdrukken en archivering.",
+      "description": "Converteer WebP-afbeeldingen naar professioneel TIFF voor afdrukken en archivering. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["WEBP naar TIFF omzetten", "WEBP naar TIFF conversie", "Gratis WEBP naar TIFF converter"]
     },

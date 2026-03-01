@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "WebP JPG -muunnin – WebP JPG",
-    "description": "Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.",
+    "description": "Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/webp-jpg-muunnin"
   },
   "hero": {
     "title": "WebP JPG -muunnin",
-    "description": "Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.",
+    "description": "Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Muunna WEBP JPG-muotoon", "WEBP:n muunto JPG-muotoon", "Ilmainen WEBP–JPG-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.",
+      "description": "Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
       "featureList": ["WEBP – JPG -muunnos", "JPG-laadun säätö", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {

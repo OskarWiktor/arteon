@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor GIF în AVIF — GIF AVIF",
-    "description": "Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta.",
+    "description": "Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-gif-in-avif"
   },
   "hero": {
     "title": "Convertor GIF în AVIF",
-    "description": "Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta.",
+    "description": "Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor GIF în AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta.",
+      "description": "Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta. Procesarea are loc în browser — fișierele nu părăsesc dispozitivul.",
       "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie GIF în AVIF", "Convertor GIF în AVIF", "Convertor gratuit GIF în AVIF"]
     },

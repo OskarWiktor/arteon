@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "PNG till JPG-konverterare – PNG JPG",
-    "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering.",
+    "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/png-till-jpg-konverterare"
   },
   "hero": {
     "title": "PNG till JPG-konverterare",
-    "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering.",
+    "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertera PNG till JPG", "PNG till JPG konvertering", "Gratis PNG till JPG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering.",
+      "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["PNG till JPG-konvertering", "JPG-kvalitetskontroll", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor GIF în PNG – GIF PNG",
-    "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.",
+    "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-gif-in-png"
   },
   "hero": {
     "title": "Convertor GIF în PNG",
-    "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.",
+    "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Conversie GIF în PNG", "Convertor GIF în PNG", "Convertor gratuit GIF în PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.",
+      "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie GIF în PNG", "Ieșire PNG fără pierderi", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "SVG GIF konverter — SVG GIF",
-    "description": "Vektor SVG grafika konvertálása GIF raszter formatumra.",
+    "description": "Vektor SVG grafika konvertálása GIF raszter formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/svg-gif-konverter"
   },
   "hero": {
     "title": "SVG GIF konverter",
-    "description": "Vektor SVG grafika konvertálása GIF raszter formatumra.",
+    "description": "Vektor SVG grafika konvertálása GIF raszter formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG GIF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Vektor SVG grafika konvertálása GIF raszter formatumra.",
+      "description": "Vektor SVG grafika konvertálása GIF raszter formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["Konvertálás GIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["SVG konvertálása GIF formátumba", "SVG–GIF átalakítás", "Ingyenes SVG–GIF konverter"]
     },

@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter SVG na GIF — SVG GIF",
-    "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik.",
+    "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-svg-na-gif"
   },
   "hero": {
     "title": "Konwerter SVG na GIF",
-    "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik.",
+    "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Konwerter SVG na GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik.",
+      "description": "Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
       "featureList": ["Konwersja do GIF", "Kwantyzacja do 256 kolorow", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
       "alternateName": ["Zamiana SVG na GIF", "Konwersja SVG do GIF", "Darmowy konwerter SVG na GIF"]
     },

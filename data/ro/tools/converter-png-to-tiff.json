@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor PNG în TIFF — PNG TIFF",
-    "description": "Convertește grafice PNG în format TIFF profesional.",
+    "description": "Convertește grafice PNG în format TIFF profesional. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-png-in-tiff"
   },
   "hero": {
     "title": "Convertor PNG în TIFF",
-    "description": "Convertește grafice PNG în format TIFF profesional.",
+    "description": "Convertește grafice PNG în format TIFF profesional. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor PNG în TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește grafice PNG în format TIFF profesional.",
+      "description": "Convertește grafice PNG în format TIFF profesional. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie PNG în TIFF", "Convertor PNG în TIFF", "Convertor gratuit PNG în TIFF"]
     },

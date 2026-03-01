@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "HEIC till JPG-konverterare – HEIC JPG",
-    "description": "Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering, ingen uppladdning.",
+    "description": "Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering, ingen uppladdning. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/heic-till-jpg-konverterare"
   },
   "hero": {
     "title": "HEIC till JPG-konverterare",
-    "description": "Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering, ingen uppladdning.",
+    "description": "Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering, ingen uppladdning. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC till JPG-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering, ingen uppladdning.",
+      "description": "Konvertera iPhone HEIC-foton till universell JPG. Ingen registrering, ingen uppladdning. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertera HEIC till JPG", "HEIC till JPG konvertering", "Gratis HEIC till JPG konverterare"]
     },

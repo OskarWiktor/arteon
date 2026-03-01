@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore TIFF in AVIF — TIFF AVIF",
-    "description": "Converti file TIFF in AVIF moderno. Riduzione massiva delle dimensioni del file.",
+    "description": "Converti file TIFF in AVIF moderno. Riduzione massiva delle dimensioni del file. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/it/strumenti/convertitore-tiff-in-avif"
   },
   "hero": {
     "title": "Convertitore TIFF in AVIF",
-    "description": "Converti file TIFF in AVIF moderno. Riduzione massiva delle dimensioni del file.",
+    "description": "Converti file TIFF in AVIF moderno. Riduzione massiva delle dimensioni del file. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertitore TIFF in AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converti file TIFF in AVIF moderno. Riduzione massiva delle dimensioni del file.",
+      "description": "Converti file TIFF in AVIF moderno. Riduzione massiva delle dimensioni del file. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
       "featureList": ["Conversione in AVIF", "Regolazione qualità (60-95%)", "Conversione in batch", "Elaborazione locale nel browser"],
       "alternateName": ["Convertire TIFF in AVIF", "Conversione TIFF in AVIF", "Convertitore TIFF in AVIF gratuito"]
     },

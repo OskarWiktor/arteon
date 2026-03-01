@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "JPG zu TIFF Konverter — JPG TIFF",
-    "description": "JPG-Fotos in verlustfreies TIFF umwandeln. Zum Drucken und Archivieren.",
+    "description": "JPG-Fotos in verlustfreies TIFF umwandeln. Zum Drucken und Archivieren. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/de/werkzeuge/jpg-zu-tiff-konverter"
   },
   "hero": {
     "title": "JPG zu TIFF Konverter",
-    "description": "JPG-Fotos in verlustfreies TIFF umwandeln. Zum Drucken und Archivieren.",
+    "description": "JPG-Fotos in verlustfreies TIFF umwandeln. Zum Drucken und Archivieren. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG zu TIFF Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "JPG-Fotos in verlustfreies TIFF umwandeln. Zum Drucken und Archivieren.",
+      "description": "JPG-Fotos in verlustfreies TIFF umwandeln. Zum Drucken und Archivieren. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
       "featureList": ["Konvertierung zu TIFF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
       "alternateName": ["JPG in TIFF umwandeln", "JPG zu TIFF konvertieren", "Kostenloser JPG-zu-TIFF-Konverter"]
     },

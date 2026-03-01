@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "HEIC naar AVIF converter — HEIC AVIF",
-    "description": "Converteer iPhone HEIC-foto\\'s naar modern AVIF-formaat.",
+    "description": "Converteer iPhone HEIC-foto\\'s naar modern AVIF-formaat. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/heic-naar-avif-converter"
   },
   "hero": {
     "title": "HEIC naar AVIF converter",
-    "description": "Converteer iPhone HEIC-foto\\'s naar modern AVIF-formaat.",
+    "description": "Converteer iPhone HEIC-foto\\'s naar modern AVIF-formaat. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC naar AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer iPhone HEIC-foto\\'s naar modern AVIF-formaat.",
+      "description": "Converteer iPhone HEIC-foto\\'s naar modern AVIF-formaat. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["HEIC naar AVIF omzetten", "HEIC naar AVIF conversie", "Gratis HEIC naar AVIF converter"]
     },

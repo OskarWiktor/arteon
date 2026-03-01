@@ -3,7 +3,7 @@
   "locale": "de",
   "metadata": {
     "title": "BMP zu JPG Konverter – Bitmaps kostenlos komprimieren",
-    "description": "Unkomprimierte BMP-Dateien in leichtes JPG umwandeln. Massive Größenreduktion.",
+    "description": "Unkomprimierte BMP-Dateien in leichtes JPG umwandeln. Massive Größenreduktion. Verarbeitung direkt im Browser — Dateien verlassen Ihr Gerät nicht.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/bmp-zu-jpg-konverter"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["BMP in JPG umwandeln", "BMP zu JPG konvertieren", "Kostenloser BMP-zu-JPG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Unkomprimierte BMP-Dateien in leichtes JPG umwandeln. Massive Größenreduktion.",
+      "description": "Unkomprimierte BMP-Dateien in leichtes JPG umwandeln. Massive Größenreduktion. Verarbeitung direkt im Browser — Dateien verlassen Ihr Gerät nicht.",
       "featureList": ["BMP-zu-JPG-Konvertierung", "JPG-Qualitätssteuerung", "Stapelkonvertierung", "Lokale Browserverarbeitung", "Kein Datei-Upload erforderlich"]
     },
     "howTo": {

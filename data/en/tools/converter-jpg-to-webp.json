@@ -3,7 +3,7 @@
   "locale": "en",
   "metadata": {
     "title": "JPG to WebP converter – cut image size by up to 35%",
-    "description": "Convert JPG photos to lightweight WebP in your browser. Reduce file weight by up to 35%. No signup, no server uploads.",
+    "description": "Convert JPG photos to lightweight WebP in your browser. Reduce file weight by up to 35%. No signup, no server uploads. Runs entirely in your browser. No server uploads, no registration required.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/jpg-to-webp-converter"
   },

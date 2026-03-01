@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "AVIF PNG -muunnin – AVIF PNG",
-    "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty.",
+    "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/avif-png-muunnin"
   },
   "hero": {
     "title": "AVIF PNG -muunnin",
-    "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty.",
+    "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF PNG -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty.",
+      "description": "Muunna AVIF-tiedostot haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys sailytetty. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
       "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Muunna AVIF PNG-muotoon", "AVIF:n muunto PNG-muotoon", "Ilmainen AVIF–PNG-muunnin"]
     },

@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "HEIC naar TIFF converter — HEIC TIFF",
-    "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat.",
+    "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/nl/tools/heic-naar-tiff-converter"
   },
   "hero": {
     "title": "HEIC naar TIFF converter",
-    "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat.",
+    "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC naar TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat.",
+      "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["HEIC naar TIFF omzetten", "HEIC naar TIFF conversie", "Gratis HEIC naar TIFF converter"]
     },

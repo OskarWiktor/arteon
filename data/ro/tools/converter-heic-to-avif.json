@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor HEIC în AVIF — HEIC AVIF",
-    "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern.",
+    "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-heic-in-avif"
   },
   "hero": {
     "title": "Convertor HEIC în AVIF",
-    "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern.",
+    "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor HEIC în AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern.",
+      "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie HEIC în AVIF", "Convertor HEIC în AVIF", "Convertor gratuit HEIC în AVIF"]
     },

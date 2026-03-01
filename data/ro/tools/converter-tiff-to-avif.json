@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor TIFF în AVIF — TIFF AVIF",
-    "description": "Convertește fișiere TIFF în AVIF modern. Reducere masiva a dimensiunii fisierului.",
+    "description": "Convertește fișiere TIFF în AVIF modern. Reducere masiva a dimensiunii fisierului. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-tiff-in-avif"
   },
   "hero": {
     "title": "Convertor TIFF în AVIF",
-    "description": "Convertește fișiere TIFF în AVIF modern. Reducere masiva a dimensiunii fisierului.",
+    "description": "Convertește fișiere TIFF în AVIF modern. Reducere masiva a dimensiunii fisierului. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor TIFF în AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere TIFF în AVIF modern. Reducere masiva a dimensiunii fisierului.",
+      "description": "Convertește fișiere TIFF în AVIF modern. Reducere masiva a dimensiunii fisierului. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie TIFF în AVIF", "Convertor TIFF în AVIF", "Convertor gratuit TIFF în AVIF"]
     },

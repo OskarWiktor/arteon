@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter PNG na AVIF — PNG AVIF",
-    "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki.",
+    "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-png-na-avif"
   },
   "hero": {
     "title": "Konwerter PNG na AVIF",
-    "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki.",
+    "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Konwerter PNG na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki.",
+      "description": "Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
       "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
       "alternateName": ["Zamiana PNG na AVIF", "Konwersja PNG do AVIF", "Darmowy konwerter PNG na AVIF"]
     },

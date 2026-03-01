@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor SVG para JPG – SVG JPG",
-    "description": "Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total.",
+    "description": "Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-svg-para-jpg"
   },
   "hero": {
     "title": "Conversor SVG para JPG",
-    "description": "Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total.",
+    "description": "Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Converter SVG para JPG", "Conversão de SVG para JPG", "Conversor SVG para JPG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total.",
+      "description": "Converta gráficos SVG para JPG compacto. Ficheiro menor, compatibilidade total. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
       "featureList": ["Conversão de SVG para JPG", "Controlo de qualidade JPG", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {

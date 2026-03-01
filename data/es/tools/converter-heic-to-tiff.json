@@ -3,13 +3,13 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor HEIC a TIFF — HEIC TIFF",
-    "description": "Convierte fotos HEIC del iPhone a formato TIFF profesional.",
+    "description": "Convierte fotos HEIC del iPhone a formato TIFF profesional. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/es/herramientas/convertidor-heic-a-tiff"
   },
   "hero": {
     "title": "Convertidor HEIC a TIFF",
-    "description": "Convierte fotos HEIC del iPhone a formato TIFF profesional.",
+    "description": "Convierte fotos HEIC del iPhone a formato TIFF profesional. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertidor HEIC a TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte fotos HEIC del iPhone a formato TIFF profesional.",
+      "description": "Convierte fotos HEIC del iPhone a formato TIFF profesional. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
       "featureList": ["Conversión a TIFF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
       "alternateName": ["Convertir HEIC a TIFF", "Conversión de HEIC a TIFF", "Convertidor HEIC a TIFF gratis"]
     },

@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník HEIC na AVIF — HEIC AVIF",
-    "description": "Převeďte fotky HEIC z iPhonu na moderni format AVIF.",
+    "description": "Převeďte fotky HEIC z iPhonu na moderni format AVIF. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-heic-na-avif"
   },
   "hero": {
     "title": "Převodník HEIC na AVIF",
-    "description": "Převeďte fotky HEIC z iPhonu na moderni format AVIF.",
+    "description": "Převeďte fotky HEIC z iPhonu na moderni format AVIF. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník HEIC na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte fotky HEIC z iPhonu na moderni format AVIF.",
+      "description": "Převeďte fotky HEIC z iPhonu na moderni format AVIF. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést HEIC na AVIF", "Konverze HEIC do AVIF", "Převodník HEIC na AVIF zdarma"]
     },

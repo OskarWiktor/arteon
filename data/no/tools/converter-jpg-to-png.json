@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "JPG til PNG-konverterer – JPG PNG",
-    "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren.",
+    "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/jpg-til-png-konverterer"
   },
   "hero": {
     "title": "JPG til PNG-konverterer",
-    "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren.",
+    "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konverter JPG til PNG", "JPG til PNG konvertering", "Gratis JPG til PNG konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren.",
+      "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
       "featureList": ["JPG til PNG-konvertering", "Tapsfri PNG-utdata", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
     },
     "howTo": {

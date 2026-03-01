@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "AVIF til WebP-konverterer – AVIF WebP",
-    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse.",
+    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/avif-til-webp-konverterer"
   },
   "hero": {
     "title": "AVIF til WebP-konverterer",
-    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse.",
+    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF til WebP-konverterer",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse.",
+      "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet med liten filstorrelse. All behandling skjer lokalt i nettleseren — filene forlater aldri enheten din.",
       "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konverter AVIF til WEBP", "AVIF til WEBP konvertering", "Gratis AVIF til WEBP konverterer"]
     },

@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "PNG TIFF -muunnin — PNG TIFF",
-    "description": "Muunna PNG-grafiikat ammattimaiseen TIFF-muotoon.",
+    "description": "Muunna PNG-grafiikat ammattimaiseen TIFF-muotoon. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/png-tiff-muunnin"
   },
   "hero": {
     "title": "PNG TIFF -muunnin",
-    "description": "Muunna PNG-grafiikat ammattimaiseen TIFF-muotoon.",
+    "description": "Muunna PNG-grafiikat ammattimaiseen TIFF-muotoon. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG TIFF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna PNG-grafiikat ammattimaiseen TIFF-muotoon.",
+      "description": "Muunna PNG-grafiikat ammattimaiseen TIFF-muotoon. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
       "featureList": ["Muunnos TIFF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna PNG TIFF-muotoon", "PNG:n muunto TIFF-muotoon", "Ilmainen PNG–TIFF-muunnin"]
     },

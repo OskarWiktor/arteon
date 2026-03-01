@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor SVG în TIFF — SVG TIFF",
-    "description": "Convertește grafice vectoriale SVG in raster TIFF de inalta calitate.",
+    "description": "Convertește grafice vectoriale SVG in raster TIFF de inalta calitate. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-svg-in-tiff"
   },
   "hero": {
     "title": "Convertor SVG în TIFF",
-    "description": "Convertește grafice vectoriale SVG in raster TIFF de inalta calitate.",
+    "description": "Convertește grafice vectoriale SVG in raster TIFF de inalta calitate. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor SVG în TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește grafice vectoriale SVG in raster TIFF de inalta calitate.",
+      "description": "Convertește grafice vectoriale SVG in raster TIFF de inalta calitate. Fără instalare, funcționează pe orice dispozitiv. Gratuit, privat și nelimitat.",
       "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie SVG în TIFF", "Convertor SVG în TIFF", "Convertor gratuit SVG în TIFF"]
     },

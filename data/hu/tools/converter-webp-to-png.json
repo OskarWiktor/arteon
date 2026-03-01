@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "WebP PNG konverter – WebP PNG",
-    "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.",
+    "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/webp-png-konverter"
   },
   "hero": {
     "title": "WebP PNG konverter",
-    "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.",
+    "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["WEBP konvertálása PNG formátumba", "WEBP–PNG átalakítás", "Ingyenes WEBP–PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás.",
+      "description": "WebP képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["WEBP – PNG konvertálás", "Veszteségmentes PNG kimenet", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {

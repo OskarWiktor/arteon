@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "TIFF AVIF konverter — TIFF AVIF",
-    "description": "TIFF fajlok konvertálása modern AVIF-re. Hatalmas fajlmeret csokkenes.",
+    "description": "TIFF fajlok konvertálása modern AVIF-re. Hatalmas fajlmeret csokkenes. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/tiff-avif-konverter"
   },
   "hero": {
     "title": "TIFF AVIF konverter",
-    "description": "TIFF fajlok konvertálása modern AVIF-re. Hatalmas fajlmeret csokkenes.",
+    "description": "TIFF fajlok konvertálása modern AVIF-re. Hatalmas fajlmeret csokkenes. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF AVIF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "TIFF fajlok konvertálása modern AVIF-re. Hatalmas fajlmeret csokkenes.",
+      "description": "TIFF fajlok konvertálása modern AVIF-re. Hatalmas fajlmeret csokkenes. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["TIFF konvertálása AVIF formátumba", "TIFF–AVIF átalakítás", "Ingyenes TIFF–AVIF konverter"]
     },

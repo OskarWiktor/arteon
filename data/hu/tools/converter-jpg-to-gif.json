@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "JPG GIF konverter — JPG GIF",
-    "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
+    "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/jpg-gif-konverter"
   },
   "hero": {
     "title": "JPG GIF konverter",
-    "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
+    "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "JPG GIF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
+      "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["Konvertálás GIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
       "alternateName": ["JPG konvertálása GIF formátumba", "JPG–GIF átalakítás", "Ingyenes JPG–GIF konverter"]
     },

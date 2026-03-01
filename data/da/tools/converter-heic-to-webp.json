@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "HEIC til WebP-konverter – HEIC WebP",
-    "description": "Konverter iPhone HEIC-fotos til let WebP. Mindre storrelse, hurtigere indlasning.",
+    "description": "Konverter iPhone HEIC-fotos til let WebP. Mindre storrelse, hurtigere indlasning. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/heic-til-webp-konverter"
   },
   "hero": {
     "title": "HEIC til WebP-konverter",
-    "description": "Konverter iPhone HEIC-fotos til let WebP. Mindre storrelse, hurtigere indlasning.",
+    "description": "Konverter iPhone HEIC-fotos til let WebP. Mindre storrelse, hurtigere indlasning. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC til WebP-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter iPhone HEIC-fotos til let WebP. Mindre storrelse, hurtigere indlasning.",
+      "description": "Konverter iPhone HEIC-fotos til let WebP. Mindre storrelse, hurtigere indlasning. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
       "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertér HEIC til WEBP", "HEIC til WEBP konvertering", "Gratis HEIC til WEBP konverter"]
     },

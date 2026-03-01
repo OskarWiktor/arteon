@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "BMP TIFF -muunnin — BMP TIFF",
-    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.",
+    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/fi/tyokalut/bmp-tiff-muunnin"
   },
   "hero": {
     "title": "BMP TIFF -muunnin",
-    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.",
+    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP TIFF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten.",
+      "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
       "featureList": ["Muunnos TIFF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna BMP TIFF-muotoon", "BMP:n muunto TIFF-muotoon", "Ilmainen BMP–TIFF-muunnin"]
     },

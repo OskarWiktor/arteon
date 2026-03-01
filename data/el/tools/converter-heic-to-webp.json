@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας HEIC σε WebP – HEIC WebP",
-    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP. Μικροτερο μεγεθος.",
+    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP. Μικροτερο μεγεθος. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-heic-se-webp"
   },
   "hero": {
     "title": "Μετατροπέας HEIC σε WebP",
-    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP. Μικροτερο μεγεθος.",
+    "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP. Μικροτερο μεγεθος. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας HEIC σε WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP. Μικροτερο μεγεθος.",
+      "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP. Μικροτερο μεγεθος. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
       "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή HEIC σε WEBP", "Μετατροπέας HEIC σε WEBP", "Δωρεάν μετατροπέας HEIC σε WEBP"]
     },

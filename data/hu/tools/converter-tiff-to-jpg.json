@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "TIFF JPG konverter – TIFF JPG",
-    "description": "TIFF fajlok konvertálása kompakt JPG-re. Idealis szkenekhez es fotoarchivumokhoz.",
+    "description": "TIFF fajlok konvertálása kompakt JPG-re. Idealis szkenekhez es fotoarchivumokhoz. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/tiff-jpg-konverter"
   },
   "hero": {
     "title": "TIFF JPG konverter",
-    "description": "TIFF fajlok konvertálása kompakt JPG-re. Idealis szkenekhez es fotoarchivumokhoz.",
+    "description": "TIFF fajlok konvertálása kompakt JPG-re. Idealis szkenekhez es fotoarchivumokhoz. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF JPG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "TIFF fajlok konvertálása kompakt JPG-re. Idealis szkenekhez es fotoarchivumokhoz.",
+      "description": "TIFF fajlok konvertálása kompakt JPG-re. Idealis szkenekhez es fotoarchivumokhoz. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["TIFF konvertálása JPG formátumba", "TIFF–JPG átalakítás", "Ingyenes TIFF–JPG konverter"]
     },

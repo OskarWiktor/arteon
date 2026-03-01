@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník SVG na TIFF — SVG TIFF",
-    "description": "Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF.",
+    "description": "Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-svg-na-tiff"
   },
   "hero": {
     "title": "Převodník SVG na TIFF",
-    "description": "Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF.",
+    "description": "Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník SVG na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF.",
+      "description": "Prevedte vektorovou grafiku SVG na kvalitni rastrovy TIFF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
       "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést SVG na TIFF", "Konverze SVG do TIFF", "Převodník SVG na TIFF zdarma"]
     },

@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "TIFF till PNG-konverterare – TIFF PNG",
-    "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar.",
+    "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/tiff-till-png-konverterare"
   },
   "hero": {
     "title": "TIFF till PNG-konverterare",
-    "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar.",
+    "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF till PNG-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar.",
+      "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertera TIFF till PNG", "TIFF till PNG konvertering", "Gratis TIFF till PNG konverterare"]
     },

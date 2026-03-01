@@ -3,7 +3,7 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur GIF en JPG – extrayez une image en JPG gratuitement",
-    "description": "Exportez la première image d'un GIF en JPG compact. Fichier réduit, chargement rapide.",
+    "description": "Exportez la première image d'un GIF en JPG compact. Fichier réduit, chargement rapide. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-gif-en-jpg"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir GIF en JPG", "Conversion GIF vers JPG", "Convertisseur GIF en JPG gratuit"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportez la première image d'un GIF en JPG compact. Fichier réduit, chargement rapide.",
+      "description": "Exportez la première image d'un GIF en JPG compact. Fichier réduit, chargement rapide. Fonctionne directement dans votre navigateur. Sans téléversement, sans inscription.",
       "featureList": ["Conversion GIF en JPG", "Contrôle de qualité JPG", "Conversion par lot", "Traitement local dans le navigateur", "Aucun envoi de fichier"]
     },
     "howTo": {

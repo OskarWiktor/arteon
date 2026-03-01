@@ -3,13 +3,13 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter JPG na TIFF — JPG TIFF",
-    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji.",
+    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-jpg-na-tiff"
   },
   "hero": {
     "title": "Konwerter JPG na TIFF",
-    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji.",
+    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Konwerter JPG na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji.",
+      "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
       "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
       "alternateName": ["Zamiana JPG na TIFF", "Konwersja JPG do TIFF", "Darmowy konwerter JPG na TIFF"]
     },

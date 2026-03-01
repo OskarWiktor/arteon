@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor PNG în JPG – PNG JPG",
-    "description": "Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.",
+    "description": "Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-png-in-jpg"
   },
   "hero": {
     "title": "Convertor PNG în JPG",
-    "description": "Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.",
+    "description": "Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Conversie PNG în JPG", "Convertor PNG în JPG", "Convertor gratuit PNG în JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.",
+      "description": "Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie PNG în JPG", "Control calitate JPG", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {

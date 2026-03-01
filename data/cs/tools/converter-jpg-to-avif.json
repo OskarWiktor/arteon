@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník JPG na AVIF — JPG AVIF",
-    "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
+    "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-jpg-na-avif"
   },
   "hero": {
     "title": "Převodník JPG na AVIF",
-    "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
+    "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník JPG na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
+      "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést JPG na AVIF", "Konverze JPG do AVIF", "Převodník JPG na AVIF zdarma"]
     },

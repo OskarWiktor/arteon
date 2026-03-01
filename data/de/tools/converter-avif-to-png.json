@@ -3,13 +3,13 @@
   "locale": "de",
   "metadata": {
     "title": "AVIF zu PNG Konverter – AVIF PNG",
-    "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten.",
+    "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/avif-zu-png-konverter"
   },
   "hero": {
     "title": "AVIF zu PNG Konverter",
-    "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten.",
+    "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF zu PNG Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten.",
+      "description": "AVIF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz erhalten. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
       "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["AVIF in PNG umwandeln", "AVIF zu PNG konvertieren", "Kostenloser AVIF-zu-PNG-Konverter"]
     },

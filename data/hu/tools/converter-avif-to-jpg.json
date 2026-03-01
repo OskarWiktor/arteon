@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "AVIF JPG konverter – AVIF JPG",
-    "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal.",
+    "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/avif-jpg-konverter"
   },
   "hero": {
     "title": "AVIF JPG konverter",
-    "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal.",
+    "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF JPG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal.",
+      "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
       "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["AVIF konvertálása JPG formátumba", "AVIF–JPG átalakítás", "Ingyenes AVIF–JPG konverter"]
     },

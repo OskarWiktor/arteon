@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "GIF til JPG-konverter – GIF JPG",
-    "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.",
+    "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/gif-til-jpg-konverter"
   },
   "hero": {
     "title": "GIF til JPG-konverter",
-    "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.",
+    "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér GIF til JPG", "GIF til JPG konvertering", "Gratis GIF til JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.",
+      "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
       "featureList": ["GIF til JPG-konvertering", "JPG-kvalitetskontrol", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {

@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor JPG para PNG – JPG PNG",
-    "description": "Converta imagens JPG para PNG sem perdas. Conversão local no navegador.",
+    "description": "Converta imagens JPG para PNG sem perdas. Conversão local no navegador. Ferramenta gratuita no navegador — sem registo, sem limites, privacidade total.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-jpg-para-png"
   },
   "hero": {
     "title": "Conversor JPG para PNG",
-    "description": "Converta imagens JPG para PNG sem perdas. Conversão local no navegador.",
+    "description": "Converta imagens JPG para PNG sem perdas. Conversão local no navegador. Ferramenta gratuita no navegador — sem registo, sem limites, privacidade total.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Converter JPG para PNG", "Conversão de JPG para PNG", "Conversor JPG para PNG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta imagens JPG para PNG sem perdas. Conversão local no navegador.",
+      "description": "Converta imagens JPG para PNG sem perdas. Conversão local no navegador. Ferramenta gratuita no navegador — sem registo, sem limites, privacidade total.",
       "featureList": ["Conversão de JPG para PNG", "Saída PNG sem perdas", "Conversão em lote", "Processamento local no navegador", "Sem envio de ficheiros"]
     },
     "howTo": {

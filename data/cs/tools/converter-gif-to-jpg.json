@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník GIF na JPG – GIF JPG",
-    "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.",
+    "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-gif-na-jpg"
   },
   "hero": {
     "title": "Převodník GIF na JPG",
-    "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.",
+    "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést GIF na JPG", "Konverze GIF do JPG", "Převodník GIF na JPG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor.",
+      "description": "Exportujte první snímek GIFu jako kompaktní JPG. Menší soubor. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
       "featureList": ["Převod GIF na JPG", "Ovládání kvality JPG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {

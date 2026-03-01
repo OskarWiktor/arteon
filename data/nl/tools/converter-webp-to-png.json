@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "WebP naar PNG converter – WebP PNG",
-    "description": "Converteer WebP-afbeeldingen naar verliesvrij PNG. Lokale verwerking.",
+    "description": "Converteer WebP-afbeeldingen naar verliesvrij PNG. Lokale verwerking. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/webp-naar-png-converter"
   },
   "hero": {
     "title": "WebP naar PNG converter",
-    "description": "Converteer WebP-afbeeldingen naar verliesvrij PNG. Lokale verwerking.",
+    "description": "Converteer WebP-afbeeldingen naar verliesvrij PNG. Lokale verwerking. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["WEBP naar PNG omzetten", "WEBP naar PNG conversie", "Gratis WEBP naar PNG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer WebP-afbeeldingen naar verliesvrij PNG. Lokale verwerking.",
+      "description": "Converteer WebP-afbeeldingen naar verliesvrij PNG. Lokale verwerking. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
       "featureList": ["WEBP naar PNG conversie", "Verliesvrije PNG-uitvoer", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {

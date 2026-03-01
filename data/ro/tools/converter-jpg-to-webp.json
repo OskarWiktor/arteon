@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor JPG în WebP – JPG WebP",
-    "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.",
+    "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-jpg-in-webp"
   },
   "hero": {
     "title": "Convertor JPG în WebP",
-    "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.",
+    "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Conversie JPG în WEBP", "Convertor JPG în WEBP", "Convertor gratuit JPG în WEBP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.",
+      "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie JPG în WEBP", "Control calitate WEBP", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {

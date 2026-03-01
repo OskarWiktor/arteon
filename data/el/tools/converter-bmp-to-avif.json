@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας BMP σε AVIF — BMP AVIF",
-    "description": "Μετατρεψτε ασυμπίεστα αρχεία BMP σε υπερσυμπαγές AVIF.",
+    "description": "Μετατρεψτε ασυμπίεστα αρχεία BMP σε υπερσυμπαγές AVIF. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/el/ergaleia/metatropeas-bmp-se-avif"
   },
   "hero": {
     "title": "Μετατροπέας BMP σε AVIF",
-    "description": "Μετατρεψτε ασυμπίεστα αρχεία BMP σε υπερσυμπαγές AVIF.",
+    "description": "Μετατρεψτε ασυμπίεστα αρχεία BMP σε υπερσυμπαγές AVIF. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας BMP σε AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε ασυμπίεστα αρχεία BMP σε υπερσυμπαγές AVIF.",
+      "description": "Μετατρεψτε ασυμπίεστα αρχεία BMP σε υπερσυμπαγές AVIF. Χωρίς εγκατάσταση, λειτουργεί σε κάθε συσκευή. Δωρεάν, ιδιωτικό και απεριόριστο.",
       "featureList": ["Μετατροπή σε AVIF", "Ρύθμιση ποιότητας (60-95%)", "Ομαδική μετατροπή", "Τοπική επεξεργασία στο πρόγραμμα περιήγησης"],
       "alternateName": ["Μετατροπή BMP σε AVIF", "Μετατροπέας BMP σε AVIF", "Δωρεάν μετατροπέας BMP σε AVIF"]
     },

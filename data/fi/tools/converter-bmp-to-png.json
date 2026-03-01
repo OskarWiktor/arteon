@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "BMP PNG -muunnin – BMP PNG",
-    "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
+    "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/bmp-png-muunnin"
   },
   "hero": {
     "title": "BMP PNG -muunnin",
-    "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
+    "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Muunna BMP PNG-muotoon", "BMP:n muunto PNG-muotoon", "Ilmainen BMP–PNG-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee.",
+      "description": "Muunna BMP-kuvat häviöttömään PNG-muotoon. Laatu säilyy, koko pienenee. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
       "featureList": ["BMP – PNG -muunnos", "Häviötön PNG-tulos", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {

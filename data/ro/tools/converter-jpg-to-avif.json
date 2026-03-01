@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor JPG în AVIF — JPG AVIF",
-    "description": "Convertește fotografii JPG în AVIF modern. Compresie cu pana la 50% mai buna decat JPG.",
+    "description": "Convertește fotografii JPG în AVIF modern. Compresie cu pana la 50% mai buna decat JPG. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-jpg-in-avif"
   },
   "hero": {
     "title": "Convertor JPG în AVIF",
-    "description": "Convertește fotografii JPG în AVIF modern. Compresie cu pana la 50% mai buna decat JPG.",
+    "description": "Convertește fotografii JPG în AVIF modern. Compresie cu pana la 50% mai buna decat JPG. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor JPG în AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii JPG în AVIF modern. Compresie cu pana la 50% mai buna decat JPG.",
+      "description": "Convertește fotografii JPG în AVIF modern. Compresie cu pana la 50% mai buna decat JPG. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
       "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie JPG în AVIF", "Convertor JPG în AVIF", "Convertor gratuit JPG în AVIF"]
     },

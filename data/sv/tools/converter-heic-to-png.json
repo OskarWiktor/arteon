@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "HEIC till PNG-konverterare – HEIC PNG",
-    "description": "Konvertera iPhone HEIC-foton till forlustfri PNG. Full kvalitet och transparens.",
+    "description": "Konvertera iPhone HEIC-foton till forlustfri PNG. Full kvalitet och transparens. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/heic-till-png-konverterare"
   },
   "hero": {
     "title": "HEIC till PNG-konverterare",
-    "description": "Konvertera iPhone HEIC-foton till forlustfri PNG. Full kvalitet och transparens.",
+    "description": "Konvertera iPhone HEIC-foton till forlustfri PNG. Full kvalitet och transparens. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC till PNG-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera iPhone HEIC-foton till forlustfri PNG. Full kvalitet och transparens.",
+      "description": "Konvertera iPhone HEIC-foton till forlustfri PNG. Full kvalitet och transparens. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertera HEIC till PNG", "HEIC till PNG konvertering", "Gratis HEIC till PNG konverterare"]
     },

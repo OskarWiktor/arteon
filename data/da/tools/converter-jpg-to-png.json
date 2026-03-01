@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "JPG til PNG-konverter – JPG PNG",
-    "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren.",
+    "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/jpg-til-png-konverter"
   },
   "hero": {
     "title": "JPG til PNG-konverter",
-    "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren.",
+    "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér JPG til PNG", "JPG til PNG konvertering", "Gratis JPG til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren.",
+      "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
       "featureList": ["JPG til PNG-konvertering", "Tabsfrit PNG-output", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {
