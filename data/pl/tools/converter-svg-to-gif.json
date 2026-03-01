@@ -54,55 +54,169 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Jak dziala konwerter SVG na GIF?",
-      "html": "<p>Zamień grafikę wektorową SVG na rastrowy GIF. Uniwersalny format dla prostych grafik. Konwersja odbywa sie w calosci w przegladarce — pliki nie sa wysylane na serwer. Bez rejestracji, bez limitu plikow.</p>"
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować SVG na GIF?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) to bezstratny format grafiki wektorowej. Jest powszechnie stosowany do logo i ikon.</p><p class=\"text-mid mb-4\">Konwersja SVG na GIF (Graphics Interchange Format) zamienia skalowalną grafikę wektorową w obraz rastrowy o ustalonej rozdzielczości.</p><p class=\"text-mid mb-4\">GIF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, GIF zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików SVG, ile potrzebujesz – całkowicie za darmo.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to GIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Jak przekonwertowac SVG na GIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować SVG na GIF?",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Wgraj pliki",
-          "description": "Przeciagnij pliki na strone lub kliknij, aby je wybrac z dysku."
+          "icon": "RiUploadCloud2Line",
+          "title": "Wgraj plik SVG",
+          "description": "Przeciągnij i upuść obraz SVG na obszar konwertera lub kliknij, aby wybrać plik z urządzenia. Możesz dodać wiele plików naraz."
         },
         {
-          "position": 2,
-          "title": "Konwertuj",
-          "description": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+          "icon": "RiSettings3Line",
+          "title": "Dostosuj ustawienia",
+          "description": "Wybierz preferowane ustawienia jakości i wyjścia. Konwerter pokazuje podgląd na żywo, dzięki czemu możesz porównać oryginał SVG z wynikiem GIF przed pobraniem."
         },
         {
-          "position": 3,
-          "title": "Pobierz",
-          "description": "Pobierz gotowe pliki GIF — pojedynczo lub wszystkie naraz."
+          "icon": "RiDownloadLine",
+          "title": "Pobierz plik GIF",
+          "description": "Kliknij przycisk pobierania, aby zapisać przekonwertowany plik GIF. W przypadku wielu plików użyj opcji zbiorczego pobierania."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG a GIF – porównanie formatów",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować SVG na GIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optymalizacja stron www",
+          "description": "Konwertuj SVG na GIF, aby przygotować obrazy do publikacji w internecie."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail i udostępnianie",
+          "description": "Pliki GIF są akceptowane przez klientów poczty, takich jak Gmail, Outlook, Poczta WP. Konwertuj na GIF, aby uzyskać obrazy wysokiej jakości do udostępniania."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce i marketplace",
+          "description": "Platformy takie jak Allegro, OLX, Empik, Ceneo mogą wymagać określonych formatów – konwersja na GIF zapewnia zgodność zdjęć z ich wymaganiami."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenty i archiwizacja",
+          "description": "GIF zapewnia nowoczesny i wydajny format do przechowywania obrazów w dokumentach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter SVG na GIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki SVG są przetwarzane wyłącznie w Twojej przeglądarce. Nic nie jest przesyłane na serwer – obrazy cały czas pozostają na Twoim urządzeniu."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez limitów",
+          "description": "Konwertuj tyle plików SVG na GIF, ile potrzebujesz. Bez dziennych limitów, bez ograniczeń rozmiaru pliku i bez znaków wodnych."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola jakości",
+          "description": "Dostosuj ustawienia kompresji, aby znaleźć idealną równowagę między rozmiarem pliku a jakością obrazu. Podgląd zmian w czasie rzeczywistym."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Błyskawiczna konwersja",
+          "description": "Całe przetwarzanie odbywa się lokalnie z wykorzystaniem nowoczesnych API przeglądarki – konwersja jest szybka i działa nawet bez internetu po załadowaniu strony."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Konwersja SVG na GIF w praktyce",
+      "html": "<p class=\"text-mid mb-4\">Polskie platformy sprzedażowe i serwisy ogłoszeniowe często wymagają konkretnych formatów graficznych. Niezależnie od tego, czy przygotowujesz zdjęcia produktów na Allegro, OLX, Empik, Ceneo, optymalizujesz grafiki w WordPress, Shoper, Sky-Shop, czy konwertujesz zdjęcia do gov.pl i ePUAP – odpowiedni format ma kluczowe znaczenie.</p><p class=\"text-mid mb-4\">Współczesne standardy webowe coraz bardziej faworyzują wydajne formaty. Google PageSpeed Insights i metryki Core Web Vitals nagradzają strony z zoptymalizowanymi obrazami. Konwersja SVG na GIF może bezpośrednio poprawić wskaźnik Largest Contentful Paint (LCP), co wpływa na pozycje w wyszukiwarce i doświadczenie użytkowników.</p><p class=\"text-mid\">W przypadku kampanii e-mail marketingowych i mediów społecznościowych, GIF zapewnia maksymalną kompatybilność ze wszystkimi platformami. Niezależnie od tego, czy jesteś freelancerem, właścicielem małej firmy czy użytkownikiem korporacyjnym – ten konwerter niezawodnie obsłuży Twoje potrzeby.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Najczesciej zadawane pytania",
+      "title": "Najczęściej zadawane pytania o konwersji SVG na GIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Czym jest format GIF?",
-          "answer": "GIF to format graficzny obslugujacy max 256 kolorow. Jest uniwersalnie obslugiwany przez wszystkie przegladarki i programy. Najlepiej nadaje sie do prostych grafik, ikon i logo."
+          "question": "Czy konwersja SVG na GIF jest darmowa?",
+          "answer": "Tak, konwerter SVG na GIF jest całkowicie darmowy i nie ma żadnych limitów. Możesz konwertować dowolną liczbę plików bez rejestracji i bez znaków wodnych."
         },
         {
-          "question": "Czy zdjecia beda dobrze wygladac w GIF?",
-          "answer": "Zdjecia fotograficzne moga stracic na jakosci po konwersji do GIF z powodu ograniczenia do 256 kolorow. GIF sprawdza sie najlepiej dla prostych grafik z ograniczona paleta kolorow."
+          "question": "Czy konwerter przesyła moje pliki na serwer?",
+          "answer": "Nie. Całe przetwarzanie odbywa się lokalnie w Twojej przeglądarce za pomocą JavaScript i Canvas API. Pliki nigdy nie opuszczają Twojego urządzenia, co gwarantuje pełną prywatność i bezpieczeństwo."
         },
         {
-          "question": "Czy moje pliki sa wysylane na serwer?",
-          "answer": "Nie. Konwersja odbywa sie w calosci w przegladarce. Pliki nie opuszczaja komputera."
+          "question": "Czy stracę jakość podczas konwersji SVG na GIF?",
+          "answer": "GIF obsługuje kompresję bezstratną, więc możesz zachować oryginalną jakość obrazu w całości."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików SVG naraz?",
+          "answer": "Tak, konwerter obsługuje konwersję wsadową. Możesz dodać wiele plików SVG i przekonwertować je wszystkie na GIF jednocześnie."
+        },
+        {
+          "question": "Jaki jest maksymalny rozmiar pliku do konwersji?",
+          "answer": "Nie ma twardego limitu rozmiaru, ponieważ przetwarzanie odbywa się w przeglądarce. Bardzo duże pliki (powyżej 50 MB) mogą wymagać więcej czasu w zależności od pamięci i mocy obliczeniowej urządzenia."
+        },
+        {
+          "question": "Czy konwerter działa na urządzeniach mobilnych?",
+          "answer": "Tak, konwerter działa na każdym urządzeniu z nowoczesną przeglądarką, w tym na smartfonach i tabletach. Interfejs dostosowuje się do rozmiaru ekranu."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Potrzebujesz wiecej?",
-      "description": "Skontaktuj sie z nami — pomozemy dobrac odpowiednie rozwiazanie.",
-      "href": "/kontakt",
-      "buttonText": "Napisz do nas"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG to GIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

@@ -59,60 +59,169 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Come funziona il convertitore PNG in AVIF?",
-      "html": "<p>Converti grafiche PNG in AVIF con supporto trasparenza. File notevolmente piu piccoli. La conversione avviene interamente nel browser — i file non vengono mai inviati a un server. Senza registrazione, senza limiti.</p>"
+      "type": "sectionBasic",
+      "title": "Perché convertire PNG in AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) è un formato immagine senza perdita che supporta milioni di colori. È ampiamente utilizzato per la grafica con trasparenza.</p><p class=\"text-mid mb-4\">La conversione da PNG a AVIF (AV1 Image File Format) riduce significativamente le dimensioni del file.</p><p class=\"text-mid mb-4\">AVIF supporta la trasparenza alfa. AVIF offre compressione con e senza perdita.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG to AVIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Come convertire PNG in AVIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come convertire PNG in AVIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Carica file",
-          "description": "Trascina i file sulla pagina o clicca per selezionarli."
+          "icon": "RiUploadCloud2Line",
+          "title": "Carica il tuo file PNG",
+          "description": "Trascina il tuo file PNG nell’area del convertitore o clicca per sfogliare. Puoi aggiungere più file contemporaneamente."
         },
         {
-          "position": 2,
-          "title": "Imposta qualita",
-          "description": "Regola il cursore qualita AVIF — valori piu bassi producono file piu piccoli."
+          "icon": "RiSettings3Line",
+          "title": "Regola le impostazioni",
+          "description": "Scegli le impostazioni di qualità e di output. Il convertitore mostra un’anteprima dal vivo per confrontare l’originale PNG con il risultato AVIF."
         },
         {
-          "position": 3,
-          "title": "Converti",
-          "description": "Clicca Converti — i file vengono elaborati localmente nel browser."
-        },
-        {
-          "position": 4,
-          "title": "Scarica",
-          "description": "Scarica i file AVIF — singolarmente o tutti insieme."
+          "icon": "RiDownloadLine",
+          "title": "Scarica il tuo file AVIF",
+          "description": "Clicca il pulsante di download per salvare il file AVIF convertito. Per più file, usa il download in batch."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "PNG vs AVIF – le differenze principali",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caratteristica</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressione</td><td class=\"py-2 text-center\">Senza perdita</td><td class=\"py-2 text-center\">Entrambe</td></tr><tr class=\"border-b\"><td class=\"py-2\">Trasparenza</td><td class=\"py-2 text-center\">Sì</td><td class=\"py-2 text-center\">Sì</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animazione</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr><td class=\"py-2\">Supporto browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando conviene convertire PNG in AVIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Ottimizzazione web",
+          "description": "PNG → AVIF – WordPress, Shopify, WooCommerce."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email e condivisione",
+          "description": "AVIF – Gmail, Outlook, Libero Mail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Subito.it, Amazon.it, eBay.it, Vinted."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documenti e archiviazione",
+          "description": "AVIF – tipografie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa distingue questo convertitore da PNG a AVIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy completa",
+          "description": "I tuoi file PNG vengono elaborati interamente nel browser. Nulla viene caricato su server – conforme al GDPR."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Senza limiti",
+          "description": "Converti quanti file PNG in AVIF desideri. Nessun limite giornaliero, nessuna restrizione di dimensione, nessun watermark."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Controllo qualità",
+          "description": "Regola le impostazioni di compressione per trovare il perfetto equilibrio tra dimensione del file e qualità dell’immagine."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversione istantanea",
+          "description": "L’elaborazione avviene localmente con le API moderne del browser – veloce e funzionante anche senza connessione."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversione da PNG a AVIF nella pratica",
+      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante).</p><p class=\"text-mid\">Subito.it, Amazon.it, eBay.it, Vinted – WordPress, Shopify, WooCommerce.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Domande frequenti",
+      "title": "Domande frequenti sulla conversione da PNG a AVIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Cos'e il formato AVIF?",
-          "answer": "AVIF e un formato immagine moderno basato sul codec AV1. Offre un'eccellente compressione — i file possono essere fino al 50% piu piccoli di JPG."
+          "question": "La conversione da PNG a AVIF è gratuita?",
+          "answer": "Sì, questo convertitore da PNG a AVIF è completamente gratuito, senza limiti. Nessuna registrazione, nessun watermark."
         },
         {
-          "question": "AVIF funziona in tutti i browser?",
-          "answer": "AVIF e supportato da Chrome, Edge e Firefox. Safari ha un supporto limitato per AVIF."
+          "question": "I miei file vengono caricati su un server?",
+          "answer": "No. L’elaborazione avviene interamente nel tuo browser. I file non lasciano mai il tuo dispositivo – conforme al GDPR."
         },
         {
-          "question": "I miei file vengono inviati a un server?",
-          "answer": "No. La conversione avviene interamente nel browser. I file non lasciano mai il tuo computer."
+          "question": "Perderò qualità convertendo PNG in AVIF?",
+          "answer": "AVIF utilizza compressione con perdita. A impostazioni di qualità elevate (80-95%), la differenza è impercettibile."
+        },
+        {
+          "question": "Posso convertire più file PNG contemporaneamente?",
+          "answer": "Sì, il convertitore supporta la conversione in batch. Aggiungi più file PNG e convertili tutti in AVIF simultaneamente."
+        },
+        {
+          "question": "Qual è la dimensione massima del file?",
+          "answer": "Non c’è un limite rigido poiché l’elaborazione avviene nel browser. File molto grandi (oltre 50 MB) possono richiedere più tempo."
+        },
+        {
+          "question": "Il convertitore funziona su dispositivi mobili?",
+          "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno, inclusi smartphone e tablet."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Hai bisogno di altro?",
-      "description": "Contattaci — ti aiuteremo a trovare la soluzione giusta.",
-      "href": "/it/contatto",
-      "buttonText": "Scrivici"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzione? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "PNG to AVIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

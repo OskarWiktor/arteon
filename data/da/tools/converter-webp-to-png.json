@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "WebP til PNG-konverter",
-      "html": "<p class=\"text-mid\">Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.</p>",
+      "title": "Hvorfor konvertere WebP til PNG?",
+      "html": "<p class=\"text-mid mb-4\">WebP (WebP) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til webbilleder.</p><p class=\"text-mid mb-4\">Konvertering af WebP til PNG (Portable Network Graphics) sikrer universel kompatibilitet med alle browsere og enheder.</p><p class=\"text-mid mb-4\">PNG understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer PNG alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
-      "imageAlt": "WebP til PNG-konverter – Arteon"
+      "imageAlt": "WebP to PNG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "WEBP → PNG",
+      "title": "Sådan konverterer du WebP til PNG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Tilføj filer",
-          "description": "Træk WEBP-filer til uploadområdet eller klik for at vælge filer fra din enhed.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload din WebP-fil",
+          "description": "Træk og slip dit WebP-billede på konverteringsområdet eller klik for at gennemse din enhed. Du kan tilføje flere filer på én gang."
         },
         {
-          "title": "2. Konverter",
-          "description": "Klik på konverter. PNG er et tabsfrit format — ingen kvalitetsindstilling nødvendig.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Juster indstillinger",
+          "description": "Vælg din foretrukne kvalitet og outputindstillinger. Konverteren viser en live forhåndsvisning til sammenligning af WebP-originalen med PNG-resultatet."
         },
         {
-          "title": "3. Download",
-          "description": "Download de konverterede PNG-filer enkeltvis eller alle på én gang.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Download din PNG-fil",
+          "description": "Klik på downloadknappen for at gemme din konverterede PNG-fil. Ved flere filer kan du bruge batch-download."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP vs PNG – de vigtigste forskelle",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Begge</td><td class=\"py-2 text-center\">Tabsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår skal du konvertere WebP til PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weboptimering",
+          "description": "WebP → PNG – WordPress, Shopify, DanDomain."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail og deling",
+          "description": "PNG – Gmail, Outlook, Jubii."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-handel",
+          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenter og arkivering",
+          "description": "PNG – trykkerier."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "WEBP til PNG-konverter — funktioner",
+      "title": "Hvad gør denne WebP-til-PNG-konverter anderledes?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Fuld privatliv",
-          "description": "Filer forlader aldrig din enhed. Konverteringen kører lokalt i browseren — intet uploades til nogen server."
+          "description": "Dine WebP-filer behandles udelukkende i din browser. Intet uploades til nogen server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Ingen filgrænse",
-          "description": "Konverter så mange filer som du har brug for i én session. Ingen begrænsninger, ingen registrering påkrævet."
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrænsninger",
+          "description": "Konverter så mange WebP-filer til PNG som du har brug for. Ingen daglige grænser, ingen størrelsesbegrænsninger, ingen vandmærker."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Tabsfrit output",
-          "description": "PNG bevarer den fulde billedkvalitet uden datatab. Ideel til grafik og videre redigering."
+          "title": "Kvalitetskontrol",
+          "description": "Juster komprimeringsindstillingerne for at finde den perfekte balance mellem filstørrelse og billedkvalitet."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Massedownload",
-          "description": "Download konverterede filer én for én eller alle på én gang med ét klik."
+          "icon": "RiFlashlightLine",
+          "title": "Øjeblikkelig konvertering",
+          "description": "Al behandling sker lokalt med moderne browser-API’er – hurtigt og fungerer også uden internetforbindelse."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Konvertering af WebP til PNG i praksis",
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Ofte stillede spørgsmål om konvertering fra WEBP til PNG",
-      "openByDefault": 1,
+      "title": "Ofte stillede spørgsmål om konvertering af WebP til PNG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Er konvertering fra WEBP til PNG tabsfri?",
-          "answer": "PNG er et tabsfrit format, så outputfilen bevarer den fulde billedkvalitet fra den originale WEBP-fil. Hvis WEBP brugte tabsgivende komprimering, kan de allerede tabte data ikke gendannes."
-        },
-        {
-          "question": "Bevares gennemsigtigheden under konvertering?",
-          "answer": "Ja. PNG understøtter gennemsigtighed (alfakanal), så gennemsigtige områder fra WEBP-filen bevares fuldt ud i outputtet."
-        },
-        {
-          "question": "Hvorfor er PNG-outputfilen større end originalen?",
-          "answer": "PNG er et tabsfrit format, der bevarer hver pixel uden komprimeringsartefakter. Tabsfrie filer er naturligt større — dette er forventet og betyder, at ingen kvalitet går tabt."
-        },
-        {
-          "question": "Hvilke browsere understøtter denne konverter?",
-          "answer": "Konverteren fungerer i alle moderne browsere: Chrome, Edge, Firefox og Safari. For AVIF-understøttelse brug Chrome 85+, Firefox 93+ eller Safari 16.4+."
+          "question": "Er det gratis at konvertere WebP til PNG?",
+          "answer": "Ja, denne WebP-til-PNG-konverter er helt gratis uden begrænsninger. Ingen registrering, ingen vandmærker."
         },
         {
           "question": "Uploades mine filer til en server?",
-          "answer": "Nej. Hele konverteringsprocessen kører lokalt i din browser med JavaScript. Dine filer forlader aldrig din enhed, og vi har ingen adgang til dem."
+          "answer": "Nej. Al behandling sker lokalt i din browser. Dine filer forlader aldrig din enhed."
+        },
+        {
+          "question": "Mister jeg kvalitet ved konvertering af WebP til PNG?",
+          "answer": "PNG understøtter tabsfri komprimering, der bevarer den originale kvalitet."
+        },
+        {
+          "question": "Kan jeg konvertere flere WebP-filer på én gang?",
+          "answer": "Ja, konverteren understøtter batchkonvertering. Tilføj flere WebP-filer og konverter dem alle til PNG samtidigt."
+        },
+        {
+          "question": "Fungerer konverteren på mobilenheder?",
+          "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis værktøjer"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

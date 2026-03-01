@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "SVG till PNG-konverterare",
-      "html": "<p class=\"text-mid\">Konvertera SVG-vektorgrafik till PNG. Perfekt för dokument och sociala medier.</p>",
+      "title": "Varför konvertera SVG till PNG?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) är ett förlustfritt bildformat baserat på vektorgrafik. Det används i stor utsträckning för logotyper och ikoner.</p><p class=\"text-mid mb-4\">Konvertering av SVG till PNG (Portable Network Graphics) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">PNG stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
-      "imageAlt": "SVG till PNG-konverterare – Arteon"
+      "imageAlt": "SVG to PNG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "SVG → PNG",
+      "title": "Så konverterar du SVG till PNG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Lägg till filer",
-          "description": "Dra SVG-filer till uppladdningsytan eller klicka för att välja filer från din enhet.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Ladda upp din SVG-fil",
+          "description": "Dra och släpp din SVG-bild på konverteringsområdet eller klicka för att bläddra på din enhet. Du kan lägga till flera filer samtidigt."
         },
         {
-          "title": "2. Konvertera",
-          "description": "Klicka på konvertera. PNG är ett förlustfritt format — ingen kvalitetsinställning behövs.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Justera inställningar",
+          "description": "Välj önskade kvalitets- och utdatainställningar. Konverteraren visar en förhandsgranskning för jämförelse av SVG-originalet med PNG-resultatet."
         },
         {
-          "title": "3. Ladda ner",
-          "description": "Ladda ner de konverterade PNG-filerna enskilt eller alla på en gång.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Ladda ner din PNG-fil",
+          "description": "Klicka på nedladdningsknappen för att spara din konverterade PNG-fil. För flera filer, använd batchnedladdning."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs PNG – de viktigaste skillnaderna",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Förlustfri</td><td class=\"py-2 text-center\">Förlustfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När ska du konvertera SVG till PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Webboptimering",
+          "description": "SVG → PNG – WordPress, Shopify, Quickbutik."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-post och delning",
+          "description": "PNG – Gmail, Outlook, Telia."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-handel",
+          "description": "Blocket.se, Tradera, CDON, Amazon.se."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokument och arkivering",
+          "description": "PNG – tryckerier."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "SVG till PNG-konverterare — funktioner",
+      "title": "Vad gör denna SVG-till-PNG-konverterare annorlunda?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Fullständig integritet",
-          "description": "Filerna lämnar aldrig din enhet. Konverteringen körs lokalt i webbläsaren — inget laddas upp till någon server."
+          "description": "Dina SVG-filer bearbetas uteslutande i din webbläsare. Inget laddas upp till någon server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Ingen filgräns",
-          "description": "Konvertera så många filer som du behöver i en enda session. Inga begränsningar, ingen registrering krävs."
+          "icon": "RiInfinityLine",
+          "title": "Inga begränsningar",
+          "description": "Konvertera så många SVG-filer till PNG som du behöver. Inga dagliga gränser, inga storleksbegränsningar, inga vattenmärken."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Förlustfri utdata",
-          "description": "PNG bevarar fullständig bildkvalitet utan dataförlust. Perfekt för grafik och vidare redigering."
+          "title": "Kvalitetskontroll",
+          "description": "Justera komprimeringsinställningarna för den perfekta balansen mellan filstorlek och bildkvalitet."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Massnedladdning",
-          "description": "Ladda ner konverterade filer en i taget eller alla på en gång med ett enda klick."
+          "icon": "RiFlashlightLine",
+          "title": "Omedelbar konvertering",
+          "description": "All bearbetning sker lokalt med moderna webbläsar-API:er – snabbt och fungerar även utan internetanslutning."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG-till-PNG-konvertering i praktiken",
+      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data.</p><p class=\"text-mid\">Blocket.se, Tradera, CDON, Amazon.se – WordPress, Shopify, Quickbutik.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Vanliga frågor om konvertering från SVG till PNG",
-      "openByDefault": 1,
+      "title": "Vanliga frågor om konvertering av SVG till PNG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Är konvertering från SVG till PNG förlustfri?",
-          "answer": "PNG är ett förlustfritt format, så utdatafilen bevarar fullständig bildkvalitet från den ursprungliga SVG-filen. Om SVG använde förlustgivande komprimering kan de redan förlorade data inte återställas."
-        },
-        {
-          "question": "Bevaras transparensen vid konvertering?",
-          "answer": "Ja. PNG stöder transparens (alfakanal), så transparenta områden från SVG-filen bevaras fullständigt i utdata."
-        },
-        {
-          "question": "Varför är PNG-utdatafilen större än originalet?",
-          "answer": "PNG är ett förlustfritt format som bevarar varje pixel utan komprimeringsartefakter. Förlustfria filer är naturligt större — detta är förväntat och innebär att ingen kvalitet går förlorad."
-        },
-        {
-          "question": "Vilka webbläsare stöder denna konverterare?",
-          "answer": "Konverteraren fungerar i alla moderna webbläsare: Chrome, Edge, Firefox och Safari. För AVIF-stöd använd Chrome 85+, Firefox 93+ eller Safari 16.4+."
+          "question": "Är det gratis att konvertera SVG till PNG?",
+          "answer": "Ja, denna SVG-till-PNG-konverterare är helt gratis utan begränsningar. Ingen registrering, inga vattenmärken."
         },
         {
           "question": "Laddas mina filer upp till en server?",
-          "answer": "Nej. Hela konverteringsprocessen körs lokalt i din webbläsare med JavaScript. Dina filer lämnar aldrig din enhet och vi har ingen åtkomst till dem."
+          "answer": "Nej. All bearbetning sker lokalt i din webbläsare. Dina filer lämnar aldrig din enhet."
+        },
+        {
+          "question": "Tappar jag kvalitet vid konvertering?",
+          "answer": "PNG stödjer förlustfri komprimering som bevarar originalkvaliteten."
+        },
+        {
+          "question": "Kan jag konvertera flera filer samtidigt?",
+          "answer": "Ja, konverteraren stödjer batchkonvertering."
+        },
+        {
+          "question": "Fungerar konverteraren på mobila enheter?",
+          "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Utforska fler gratisverktyg"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

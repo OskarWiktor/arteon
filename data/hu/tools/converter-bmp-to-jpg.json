@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "BMP JPG konverter",
-      "html": "<p class=\"text-mid\">BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.</p>",
+      "title": "Miért érdemes BMP-t JPG-re konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">A Bitmap (BMP) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A BMP konvertálása JPG-re (JPEG) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A JPG nem támogatja az átlátszóságot – az átlátszó területek háttérszínnel lesznek kitöltve.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
-      "imageAlt": "BMP JPG konverter – Arteon"
+      "imageAlt": "BMP to JPG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "BMP → JPG",
+      "title": "Hogyan konvertálja BMP-t JPG-re",
       "grid": "three",
       "items": [
         {
-          "title": "1. Fájlok hozzáadása",
-          "description": "Húzza a BMP fájlokat a feltöltési területre, vagy kattintson a fájlok kiválasztásához az eszközéről.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Töltse fel a BMP fájlt",
+          "description": "Húzza és dobja a BMP képet a konverter területére, vagy kattintson a tallózáshoz. Több fájlt is hozzáadhat egyszerre."
         },
         {
-          "title": "2. Konvertálás",
-          "description": "Kattintson a konvertálásra. Állítsa be a JPG minőséget a csúszkával.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Állítsa be a beállításokat",
+          "description": "Válassza ki a kívánt minőségi és kimeneti beállításokat. A konverter élő előnézetet mutat a BMP eredeti és a JPG eredmény összehasonlításához."
         },
         {
-          "title": "3. Letöltés",
-          "description": "Töltse le a konvertált JPG fájlokat egyenként vagy egyszerre.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Töltse le a JPG fájlt",
+          "description": "Kattintson a letöltés gombra a konvertált JPG fájl mentéséhez. Több fájl esetén használja a kötegelt letöltést."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP vs JPG – a legfontosabb különbségek",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteségmentes</td><td class=\"py-2 text-center\">Veszteséges</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Nem</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Nem</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor érdemes BMP-t JPG-re konvertálni?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weboldal-optimalizálás",
+          "description": "BMP → JPG – WordPress, Shopify, Shoprenter."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail és megosztás",
+          "description": "JPG – Gmail, Outlook, Citromail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-kereskedelem",
+          "description": "Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumentumok és archiválás",
+          "description": "JPG – nyomdák."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "BMP – JPG konverter funkciók",
+      "title": "Mi teszi különlegessé ezt a BMP-JPG konvertert?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Teljes adatvédelem",
-          "description": "A fájlok soha nem hagyják el az eszközét. A konvertálás helyben, a böngészőben történik — semmi sem kerül feltöltésre."
+          "description": "A BMP fájlok kizárólag a böngészőben kerülnek feldolgozásra. Semmi sem kerül fel semmilyen szerverre."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Nincs fájlkorlát",
-          "description": "Konvertáljon annyi fájlt, amennyire szüksége van egyetlen munkamenetben. Nincs korlátozás, nincs regisztráció."
+          "icon": "RiInfinityLine",
+          "title": "Korlátlan",
+          "description": "Konvertáljon annyi BMP fájlt JPG-re, amennyire szüksége van. Nincsenek napi korlátok, méretkorlátozások vagy vízjelek."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Minőségszabályozás",
-          "description": "Állítsa be a JPG kimeneti minőséget a csúszkával. Magasabb értékek jobb minőséget és nagyobb fájlokat jelentenek."
+          "icon": "RiImageEditLine",
+          "title": "Minőség-szabályozás",
+          "description": "Állítsa be a tömörítést a fájlméret és a képminőség tökéletes egyensúlyához."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Csoportos letöltés",
-          "description": "Töltse le a konvertált fájlokat egyenként vagy egyszerre egyetlen kattintással."
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konvertálás",
+          "description": "A feldolgozás helyben történik modern böngésző API-kkal – gyors, és internetkapcsolat nélkül is működik."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP-JPG konvertálás a gyakorlatban",
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek.</p><p class=\"text-mid\">Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace – WordPress, Shopify, Shoprenter.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Gyakran ismételt kérdések a BMP – JPG konvertálásról",
-      "openByDefault": 1,
+      "title": "Gyakran ismételt kérdések a BMP-JPG konvertálásról",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "A BMP – JPG konvertálás veszteségmentes?",
-          "answer": "A JPG alapértelmezés szerint veszteséges tömörítést használ. A minőségi csúszkával szabályozhatja a fájlméret és a vizuális minőség közötti egyensúlyt. Magasabb értékek jobb minőséget, de nagyobb fájlokat eredményeznek."
+          "question": "Ingyenes a BMP JPG-re konvertálás?",
+          "answer": "Igen, ez a BMP-JPG konverter teljesen ingyenes, korlátok nélkül. Nem szükséges regisztráció, nincsenek vízjelek."
         },
         {
-          "question": "Megmarad az átlátszóság a konvertálás során?",
-          "answer": "A JPG nem támogatja az átlátszóságot. A BMP fájl átlátszó területei fehér háttérrel kerülnek helyettesítésre."
+          "question": "Feltöltődnek a fájljaim valamilyen szerverre?",
+          "answer": "Nem. A teljes feldolgozás helyben, a böngészőben történik. A fájlok soha nem hagyják el az eszközét."
         },
         {
-          "question": "Miért nagyobb a kimeneti JPG fájl az eredetinél?",
-          "answer": "A fájlméret a minőségi beállítástól és a kép tartalmától függ. Alacsonyabb minőségi értékek kisebb fájlokat eredményeznek. Állítsa be a csúszkát az igényei szerint."
+          "question": "Vesztek minőséget a konvertáláskor?",
+          "answer": "A JPG veszteséges tömörítést használ. Magasabb minőségi beállításoknál (80-95%) a különbség szabad szemmel észrevehetetlen."
         },
         {
-          "question": "Mely böngészők támogatják ezt a konvertert?",
-          "answer": "A konverter minden modern böngészőben működik: Chrome, Edge, Firefox és Safari. AVIF formátum támogatásához használjon Chrome 85+, Firefox 93+ vagy Safari 16.4+ verziót."
+          "question": "Konvertálhatok több fájlt egyszerre?",
+          "answer": "Igen, a konverter támogatja a kötegelt konvertálást."
         },
         {
-          "question": "A fájljaim feltöltésre kerülnek egy szerverre?",
-          "answer": "Nem. A teljes konvertálási folyamat helyben, a böngészőjében fut JavaScript segítségével. A fájljai soha nem hagyják el az eszközét, és mi nem férünk hozzájuk."
+          "question": "Működik mobileszközökön?",
+          "answer": "Igen, bármely modern böngészővel rendelkező eszközön működik."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel további ingyenes eszközöket"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

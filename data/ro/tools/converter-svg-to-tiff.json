@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Cum functioneaza convertorul SVG in TIFF?",
-      "html": "<p>Converteste grafice vectoriale SVG in raster TIFF de inalta calitate. Conversia se face integral in browser — fisierele nu sunt trimise niciodata pe un server. Fara inregistrare, fara limita.</p>"
+      "type": "sectionBasic",
+      "title": "De ce să convertiți SVG în TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) este un format de imagine fără pierderi bazat pe grafică vectorială. Este utilizat pe scară largă pentru logo-uri și pictograme.</p><p class=\"text-mid mb-4\">Conversia SVG în TIFF (Tagged Image File Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">TIFF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to TIFF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Cum sa convertesti SVG in TIFF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să convertiți SVG în TIFF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Incarca fisiere",
-          "description": "Trage fisierele pe pagina sau da clic pentru a le selecta."
+          "icon": "RiUploadCloud2Line",
+          "title": "Încărcați fișierul SVG",
+          "description": "Trageți și plasați imaginea SVG în zona convertorului sau faceți clic pentru a naviga. Puteți adăuga mai multe fișiere simultan."
         },
         {
-          "position": 2,
-          "title": "Seteaza calitatea",
-          "description": "Ajusteaza cursorul de calitate TIFF — valori mai mici produc fisiere mai mici."
+          "icon": "RiSettings3Line",
+          "title": "Ajustați setările",
+          "description": "Alegeți setările preferate de calitate și ieșire. Convertorul afișează o previzualizare în timp real pentru compararea originalului SVG cu rezultatul TIFF."
         },
         {
-          "position": 3,
-          "title": "Converteste",
-          "description": "Da clic pe Converteste — fisierele sunt procesate local in browser."
-        },
-        {
-          "position": 4,
-          "title": "Descarca",
-          "description": "Descarca fisierele TIFF — individual sau toate deodata."
+          "icon": "RiDownloadLine",
+          "title": "Descărcați fișierul TIFF",
+          "description": "Faceți clic pe butonul de descărcare pentru a salva fișierul TIFF convertit. Pentru mai multe fișiere, folosiți descărcarea în lot."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs TIFF – diferențele cheie",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când să convertiți SVG în TIFF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimizare web",
+          "description": "SVG → TIFF – WordPress, Shopify, GomAG."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email și partajare",
+          "description": "TIFF – Gmail, Outlook, Yahoo."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documente și arhivare",
+          "description": "TIFF – tipografii."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor SVG în TIFF diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele SVG sunt procesate exclusiv în browserul dumneavoastră. Nimic nu este încărcat pe niciun server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți câte fișiere SVG în TIFF aveți nevoie. Fără limite zilnice, fără restricții de mărime, fără filigrane."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Controlul calității",
+          "description": "Ajustați setările de compresie pentru echilibrul perfect între dimensiunea fișierului și calitatea imaginii."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului – rapid și funcțional chiar și fără conexiune."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversia SVG în TIFF în practică",
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Intrebari frecvente",
+      "title": "Întrebări frecvente despre conversia SVG în TIFF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Ce este formatul TIFF?",
-          "answer": "TIFF este un format de imagine profesional fara pierderi folosit in tiparire, publicare si arhivare."
+          "question": "Este gratuită conversia SVG în TIFF?",
+          "answer": "Da, acest convertor SVG în TIFF este complet gratuit, fără limite. Fără înregistrare, fără filigrane."
         },
         {
-          "question": "Sunt fisierele TIFF mai mari decat JPG?",
-          "answer": "Da. Fisierele TIFF sunt de obicei mult mai mari deoarece folosesc compresie fara pierderi."
+          "question": "Sunt fișierele mele încărcate pe un server?",
+          "answer": "Nu. Toată procesarea are loc local în browserul dumneavoastră. Fișierele nu părăsesc niciodată dispozitivul."
         },
         {
-          "question": "Sunt fisierele mele trimise pe un server?",
-          "answer": "Nu. Conversia se face integral in browser."
+          "question": "Voi pierde calitate la conversie?",
+          "answer": "TIFF suportă compresie fără pierderi, păstrând calitatea originală."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul suportă conversia în lot."
+        },
+        {
+          "question": "Funcționează pe dispozitive mobile?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Ai nevoie de mai mult?",
-      "description": "Contacteaza-ne — te vom ajuta sa gasesti solutia potrivita.",
-      "href": "/ro/contact",
-      "buttonText": "Scrie-ne"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG to TIFF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

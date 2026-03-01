@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "Warum SVG in JPG umwandeln?",
-      "html": "<p class=\"text-mid mb-4\">SVG ist ideal für Logos und Icons, aber viele Plattformen akzeptieren nur Rasterbilder. JPG erzeugt kleinere Dateien als PNG, wenn keine Transparenz benötigt wird.</p><p class=\"text-mid\">Hinweis: JPG unterstützt keine Transparenz — transparente SVG-Bereiche werden mit weißem Hintergrund gefüllt.</p>",
+      "title": "Warum SVG in JPG konvertieren?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) ist ein verlustfreies Bildformat, das auf Vektorgrafiken basiert. Es wird häufig für Logos und Icons verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von SVG in JPG (JPEG) reduziert die Dateigröße erheblich und beschleunigt das Laden von Webseiten.</p><p class=\"text-mid mb-4\">JPG unterstützt keine Transparenz – transparente Bereiche werden mit einer Hintergrundfarbe gefüllt. Als verlustbehaftetes Format erreicht JPG hervorragende Kompressionsraten.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
-      "imageAlt": "SVG zu JPG Konverter – Arteon"
+      "imageAlt": "SVG to JPG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "SVG → JPG",
+      "title": "So konvertieren Sie SVG in JPG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Dateien hinzufügen",
-          "description": "Ziehen Sie SVG-Dateien in den Upload-Bereich oder klicken Sie, um Dateien von Ihrem Gerät auszuwählen.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "SVG-Datei hochladen",
+          "description": "Ziehen Sie Ihr SVG-Bild auf den Konverterbereich oder klicken Sie, um Dateien auszuwählen. Mehrere Dateien gleichzeitig möglich."
         },
         {
-          "title": "2. Konvertieren",
-          "description": "Klicken Sie auf Konvertieren. Stellen Sie die JPG-Qualität mit dem Regler ein.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Einstellungen anpassen",
+          "description": "Wählen Sie Qualität und Ausgabeoptionen. Der Konverter zeigt eine Live-Vorschau zum Vergleich von SVG-Original und JPG-Ergebnis."
         },
         {
-          "title": "3. Herunterladen",
-          "description": "Laden Sie die konvertierten JPG-Dateien einzeln oder alle auf einmal herunter.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "JPG-Datei herunterladen",
+          "description": "Klicken Sie auf Download, um Ihre konvertierte JPG-Datei zu speichern. Bei mehreren Dateien nutzen Sie den Stapeldownload."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs. JPG – die wichtigsten Unterschiede",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Verlustbehaftet</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann sollten Sie SVG in JPG konvertieren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-Optimierung",
+          "description": "SVG → JPG – WordPress, Shopify, TYPO3."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-Mail und Teilen",
+          "description": "JPG – Gmail, Outlook, GMX, Web.de."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-Commerce",
+          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumente und Archivierung",
+          "description": "JPG – Druckereien."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "SVG-zu-JPG-Konverter — Funktionen",
+      "title": "Was zeichnet diesen SVG-zu-JPG-Konverter aus?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Volle Privatsphäre",
-          "description": "Dateien verlassen Ihr Gerät nicht. Die Konvertierung läuft lokal im Browser — nichts wird auf einen Server hochgeladen."
+          "title": "Vollständiger Datenschutz",
+          "description": "Ihre SVG-Dateien werden ausschließlich in Ihrem Browser verarbeitet. Nichts wird auf einen Server hochgeladen – DSGVO-konform."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Keine Dateilimits",
-          "description": "Konvertieren Sie so viele Dateien wie nötig. Keine Einschränkungen, keine Registrierung erforderlich."
+          "icon": "RiInfinityLine",
+          "title": "Keine Limits",
+          "description": "Konvertieren Sie so viele SVG-Dateien in JPG wie nötig. Keine täglichen Limits, keine Größenbeschränkungen, keine Wasserzeichen."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Qualitätsregler",
-          "description": "Passen Sie die JPG-Ausgabequalität mit dem Regler an. Höhere Werte bedeuten bessere Qualität und größere Dateien."
+          "icon": "RiImageEditLine",
+          "title": "Qualitätskontrolle",
+          "description": "Passen Sie die Kompressionseinstellungen an, um die perfekte Balance zwischen Dateigröße und Bildqualität zu finden."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Stapel-Download",
-          "description": "Laden Sie konvertierte Dateien einzeln oder alle auf einmal mit einem Klick herunter."
+          "icon": "RiFlashlightLine",
+          "title": "Sofortige Konvertierung",
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs – schnell und auch ohne Internetverbindung nutzbar."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG-zu-JPG-Konvertierung in der Praxis",
+      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von SVG in JPG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet JPG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,32 @@
     },
     {
       "type": "faq",
-      "title": "Häufig gestellte Fragen zur SVG-zu-JPG-Konvertierung",
-      "openByDefault": 1,
+      "title": "Häufig gestellte Fragen zur Konvertierung von SVG in JPG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Ist die Konvertierung von SVG zu JPG verlustfrei?",
-          "answer": "JPG verwendet verlustbehaftete Kompression. Mit dem Qualitätsregler steuern Sie das Verhältnis zwischen Dateigröße und visueller Qualität. Höhere Werte ergeben bessere Qualität, aber größere Dateien."
-        },
-        {
-          "question": "Bleibt die Transparenz bei der Konvertierung erhalten?",
-          "answer": "JPG unterstützt keine Transparenz. Transparente Bereiche aus der SVG-Datei werden mit einem weißen Hintergrund gefüllt."
-        },
-        {
-          "question": "Warum ist die JPG-Datei größer als das Original?",
-          "answer": "Die Dateigröße hängt von der Qualitätseinstellung und dem Bildinhalt ab. Niedrigere Qualitätswerte erzeugen kleinere Dateien. Passen Sie den Regler an Ihre Bedürfnisse an."
-        },
-        {
-          "question": "Welche Browser unterstützen diesen Konverter?",
-          "answer": "Der Konverter funktioniert in allen modernen Browsern: Chrome, Edge, Firefox und Safari. Für AVIF-Unterstützung verwenden Sie Chrome 85+, Firefox 93+ oder Safari 16.4+."
+          "question": "Ist die Konvertierung von SVG in JPG kostenlos?",
+          "answer": "Ja, dieser SVG-zu-JPG-Konverter ist vollständig kostenlos, ohne Limits. Keine Registrierung, keine Wasserzeichen."
         },
         {
           "question": "Werden meine Dateien auf einen Server hochgeladen?",
-          "answer": "Nein. Der gesamte Konvertierungsprozess läuft lokal in Ihrem Browser. Ihre Dateien verlassen Ihr Gerät nicht und wir haben keinen Zugriff darauf."
+          "answer": "Nein. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Dateien verlassen niemals Ihr Gerät – vollständig DSGVO-konform."
+        },
+        {
+          "question": "Verliere ich Qualität bei der Konvertierung von SVG in JPG?",
+          "answer": "JPG verwendet verlustbehaftete Komprimierung. Bei höheren Qualitätseinstellungen (80-95%) ist der Unterschied für das menschliche Auge kaum wahrnehmbar."
+        },
+        {
+          "question": "Kann ich mehrere SVG-Dateien gleichzeitig konvertieren?",
+          "answer": "Ja, der Konverter unterstützt Stapelkonvertierung. Fügen Sie mehrere SVG-Dateien hinzu und konvertieren Sie alle gleichzeitig in JPG."
+        },
+        {
+          "question": "Wie groß dürfen die Dateien maximal sein?",
+          "answer": "Es gibt keine feste Größenbegrenzung, da die Verarbeitung in Ihrem Browser stattfindet. Sehr große Dateien (über 50 MB) können je nach Gerät länger dauern."
+        },
+        {
+          "question": "Funktioniert der Konverter auf Mobilgeräten?",
+          "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
         }
       ]
     },
@@ -169,10 +219,6 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

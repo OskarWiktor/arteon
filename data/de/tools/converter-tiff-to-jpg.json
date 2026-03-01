@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Warum TIFF in JPG konvertieren?",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) ist ein verlustfreies Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Druck und Archivierung verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von TIFF in JPG (JPEG) stellt universelle Kompatibilität mit allen Browsern und Geräten sicher.</p><p class=\"text-mid mb-4\">JPG unterstützt keine Transparenz – transparente Bereiche werden mit einer Hintergrundfarbe gefüllt. Als verlustbehaftetes Format erreicht JPG hervorragende Kompressionsraten.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "TIFF to JPG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF → JPG",
+      "title": "So konvertieren Sie TIFF in JPG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Dateien hinzufugen",
-          "description": "Drag TIFF files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "TIFF-Datei hochladen",
+          "description": "Ziehen Sie Ihr TIFF-Bild auf den Konverterbereich oder klicken Sie, um Dateien auszuwählen. Mehrere Dateien gleichzeitig möglich."
         },
         {
-          "title": "2. Qualitat einstellen",
-          "description": "JPG quality: 85% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Einstellungen anpassen",
+          "description": "Wählen Sie Qualität und Ausgabeoptionen. Der Konverter zeigt eine Live-Vorschau zum Vergleich von TIFF-Original und JPG-Ergebnis."
         },
         {
-          "title": "3. Herunterladen",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "JPG-Datei herunterladen",
+          "description": "Klicken Sie auf Download, um Ihre konvertierte JPG-Datei zu speichern. Bei mehreren Dateien nutzen Sie den Stapeldownload."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF vs. JPG – die wichtigsten Unterschiede",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Verlustbehaftet</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann sollten Sie TIFF in JPG konvertieren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-Optimierung",
+          "description": "TIFF → JPG – WordPress, Shopify, TYPO3."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-Mail und Teilen",
+          "description": "JPG – Gmail, Outlook, GMX, Web.de."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-Commerce",
+          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumente und Archivierung",
+          "description": "JPG – Druckereien."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF zu JPG Konverter",
+      "title": "Was zeichnet diesen TIFF-zu-JPG-Konverter aus?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Vollständiger Datenschutz",
+          "description": "Ihre TIFF-Dateien werden ausschließlich in Ihrem Browser verarbeitet. Nichts wird auf einen Server hochgeladen – DSGVO-konform."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Keine Limits",
+          "description": "Konvertieren Sie so viele TIFF-Dateien in JPG wie nötig. Keine täglichen Limits, keine Größenbeschränkungen, keine Wasserzeichen."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Quality control",
-          "description": "Adjust JPG quality with the slider."
+          "icon": "RiImageEditLine",
+          "title": "Qualitätskontrolle",
+          "description": "Passen Sie die Kompressionseinstellungen an, um die perfekte Balance zwischen Dateigröße und Bildqualität zu finden."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Sofortige Konvertierung",
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs – schnell und auch ohne Internetverbindung nutzbar."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF-zu-JPG-Konvertierung in der Praxis",
+      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von TIFF in JPG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet JPG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,32 @@
     },
     {
       "type": "faq",
-      "title": "Haufig gestellte Fragen",
-      "openByDefault": 1,
+      "title": "Häufig gestellte Fragen zur Konvertierung von TIFF in JPG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "TIFF → JPG?",
-          "answer": "TIFF-Dateien in kompaktes JPG umwandeln. Ideal fur Scans, Dokumente und Fotoarchive."
+          "question": "Ist die Konvertierung von TIFF in JPG kostenlos?",
+          "answer": "Ja, dieser TIFF-zu-JPG-Konverter ist vollständig kostenlos, ohne Limits. Keine Registrierung, keine Wasserzeichen."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Werden meine Dateien auf einen Server hochgeladen?",
+          "answer": "Nein. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Dateien verlassen niemals Ihr Gerät – vollständig DSGVO-konform."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Verliere ich Qualität bei der Konvertierung von TIFF in JPG?",
+          "answer": "JPG verwendet verlustbehaftete Komprimierung. Bei höheren Qualitätseinstellungen (80-95%) ist der Unterschied für das menschliche Auge kaum wahrnehmbar."
+        },
+        {
+          "question": "Kann ich mehrere TIFF-Dateien gleichzeitig konvertieren?",
+          "answer": "Ja, der Konverter unterstützt Stapelkonvertierung. Fügen Sie mehrere TIFF-Dateien hinzu und konvertieren Sie alle gleichzeitig in JPG."
+        },
+        {
+          "question": "Wie groß dürfen die Dateien maximal sein?",
+          "answer": "Es gibt keine feste Größenbegrenzung, da die Verarbeitung in Ihrem Browser stattfindet. Sehr große Dateien (über 50 MB) können je nach Gerät länger dauern."
+        },
+        {
+          "question": "Funktioniert der Konverter auf Mobilgeräten?",
+          "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
         }
       ]
     },
@@ -149,10 +218,6 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

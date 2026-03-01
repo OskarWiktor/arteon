@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "Convertor PNG în WebP",
-      "html": "<p class=\"text-mid\">Convertește grafice PNG în WebP. Fișiere mai mici păstrând transparența.</p>",
+      "title": "De ce să convertiți PNG în WebP?",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia PNG în WebP (WebP) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">WebP suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
-      "imageAlt": "Convertor PNG în WebP – Arteon"
+      "imageAlt": "PNG to WebP conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "PNG → WEBP",
+      "title": "Cum să convertiți PNG în WebP",
       "grid": "three",
       "items": [
         {
-          "title": "1. Adăugați fișiere",
-          "description": "Trageți fișiere PNG în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Încărcați fișierul PNG",
+          "description": "Trageți și plasați imaginea PNG în zona convertorului sau faceți clic pentru a naviga. Puteți adăuga mai multe fișiere simultan."
         },
         {
-          "title": "2. Convertiți",
-          "description": "Faceți clic pe conversie. Ajustați calitatea WEBP cu glisorul.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Ajustați setările",
+          "description": "Alegeți setările preferate de calitate și ieșire. Convertorul afișează o previzualizare în timp real pentru compararea originalului PNG cu rezultatul WebP."
         },
         {
-          "title": "3. Descărcați",
-          "description": "Descărcați fișierele WEBP convertite individual sau pe toate odată.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Descărcați fișierul WebP",
+          "description": "Faceți clic pe butonul de descărcare pentru a salva fișierul WebP convertit. Pentru mai multe fișiere, folosiți descărcarea în lot."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "PNG vs WebP – diferențele cheie",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Ambele</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când să convertiți PNG în WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimizare web",
+          "description": "PNG → WebP – WordPress, Shopify, GomAG."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email și partajare",
+          "description": "WebP – Gmail, Outlook, Yahoo."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documente și arhivare",
+          "description": "WebP – tipografii."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Funcționalități convertor PNG în WEBP",
+      "title": "Ce face acest convertor PNG în WebP diferit?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Confidențialitate totală",
-          "description": "Fișierele nu părăsesc niciodată dispozitivul. Conversia se execută local în browser — nimic nu este încărcat pe vreun server."
+          "description": "Fișierele PNG sunt procesate exclusiv în browserul dumneavoastră. Nimic nu este încărcat pe niciun server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Fără limită de fișiere",
-          "description": "Convertiți oricâte fișiere aveți nevoie într-o singură sesiune. Fără restricții, fără înregistrare."
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți câte fișiere PNG în WebP aveți nevoie. Fără limite zilnice, fără restricții de mărime, fără filigrane."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Control al calității",
-          "description": "Ajustați calitatea de ieșire WEBP cu glisorul. Valori mai mari înseamnă calitate mai bună și fișiere mai mari."
+          "icon": "RiImageEditLine",
+          "title": "Controlul calității",
+          "description": "Ajustați setările de compresie pentru echilibrul perfect între dimensiunea fișierului și calitatea imaginii."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Descărcare în lot",
-          "description": "Descărcați fișierele convertite unul câte unul sau pe toate odată cu un singur clic."
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului – rapid și funcțional chiar și fără conexiune."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversia PNG în WebP în practică",
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Întrebări frecvente despre conversia PNG în WEBP",
-      "openByDefault": 1,
+      "title": "Întrebări frecvente despre conversia PNG în WebP",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Conversia PNG în WEBP este fără pierderi?",
-          "answer": "WEBP folosește compresie cu pierderi implicit. Puteți ajusta glisorul de calitate pentru a controla echilibrul între dimensiunea fișierului și calitatea vizuală. Valori mai mari produc calitate mai bună, dar fișiere mai mari."
+          "question": "Este gratuită conversia PNG în WebP?",
+          "answer": "Da, acest convertor PNG în WebP este complet gratuit, fără limite. Fără înregistrare, fără filigrane."
         },
         {
-          "question": "Transparența este păstrată în timpul conversiei?",
-          "answer": "Da. WEBP suportă transparență (canal alfa), deci zonele transparente din fișierul PNG sunt complet păstrate în ieșire."
+          "question": "Sunt fișierele mele încărcate pe un server?",
+          "answer": "Nu. Toată procesarea are loc local în browserul dumneavoastră. Fișierele nu părăsesc niciodată dispozitivul."
         },
         {
-          "question": "De ce fișierul WEBP de ieșire este mai mare decât originalul?",
-          "answer": "Dimensiunea fișierului depinde de setarea calității și de conținutul imaginii. Valori mai mici produc fișiere mai mici. Ajustați glisorul conform nevoilor."
+          "question": "Voi pierde calitate la conversie?",
+          "answer": "WebP folosește compresie cu pierderi. La setări de calitate ridicate (80-95%), diferența este imperceptibilă."
         },
         {
-          "question": "Ce browsere suportă acest convertor?",
-          "answer": "Convertorul funcționează în toate browserele moderne: Chrome, Edge, Firefox și Safari. Pentru suportul formatului AVIF, utilizați Chrome 85+, Firefox 93+ sau Safari 16.4+."
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul suportă conversia în lot."
         },
         {
-          "question": "Fișierele mele sunt încărcate pe un server?",
-          "answer": "Nu. Întregul proces de conversie se execută local în browserul dumneavoastră în JavaScript. Fișierele nu părăsesc niciodată dispozitivul și nu avem acces la ele."
+          "question": "Funcționează pe dispozitive mobile?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Descoperă mai multe instrumente gratuite"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

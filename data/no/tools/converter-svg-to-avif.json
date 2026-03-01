@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Hvordan fungerer SVG til AVIF-konvertereren?",
-      "html": "<p>Konverter vektor-SVG-grafikk til kompakt AVIF-rasterformat. Konverteringen skjer helt i nettleseren — filer sendes aldri til en server. Uten registrering, uten begrensning.</p>"
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere SVG til AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et tapsfritt bildeformat basert på vektorgrafikk. Det brukes mye til logoer og ikoner.</p><p class=\"text-mid mb-4\">Konvertering av SVG til AVIF (AV1 Image File Format) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">AVIF støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to AVIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Hvordan konvertere SVG til AVIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik konverterer du SVG til AVIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Last opp filer",
-          "description": "Dra filer til siden eller klikk for a velge fra disk."
+          "icon": "RiUploadCloud2Line",
+          "title": "Last opp SVG-filen din",
+          "description": "Dra og slipp SVG-bildet ditt på konverteringsområdet eller klikk for å bla gjennom enheten din. Du kan legge til flere filer samtidig."
         },
         {
-          "position": 2,
-          "title": "Still inn kvalitet",
-          "description": "Juster AVIF-kvalitetsglideren — lavere verdier gir mindre filer."
+          "icon": "RiSettings3Line",
+          "title": "Juster innstillinger",
+          "description": "Velg foretrukne kvalitets- og utgangsinnstillinger. Konverteren viser en forhåndsvisning for sammenligning av SVG-originalen med AVIF-resultatet."
         },
         {
-          "position": 3,
-          "title": "Konverter",
-          "description": "Klikk pa Konverter — filene behandles lokalt i nettleseren."
-        },
-        {
-          "position": 4,
-          "title": "Last ned",
-          "description": "Last ned AVIF-filene — enkeltvis eller alle pa en gang."
+          "icon": "RiDownloadLine",
+          "title": "Last ned AVIF-filen din",
+          "description": "Klikk på nedlastingsknappen for å lagre den konverterte AVIF-filen. For flere filer, bruk batch-nedlasting."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs AVIF – de viktigste forskjellene",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tapsfri</td><td class=\"py-2 text-center\">Begge</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gjennomsiktighet</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animasjon</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Nettleserstøtte</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Når bør du konvertere SVG til AVIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Nettstedsoptimalisering",
+          "description": "SVG → AVIF – WordPress, Shopify, Mystore."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-post og deling",
+          "description": "AVIF – Gmail, Outlook, Telenor."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-handel",
+          "description": "Finn.no, Komplett.no, Elkjøp, CDON."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenter og arkivering",
+          "description": "AVIF – trykkerier."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne SVG-til-AVIF-konverteren annerledes?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullstendig personvern",
+          "description": "SVG-filene dine behandles utelukkende i nettleseren din. Ingenting lastes opp til noen server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrensninger",
+          "description": "Konverter så mange SVG-filer til AVIF som du trenger. Ingen daglige grenser, ingen størrelsesbegrensninger, ingen vannmerker."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontroll",
+          "description": "Juster komprimeringsinnstillingene for å finne den perfekte balansen mellom filstørrelse og bildekvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Øyeblikkelig konvertering",
+          "description": "All behandling skjer lokalt med moderne nettleser-API-er – raskt og fungerer også uten internettforbindelse."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG-til-AVIF-konvertering i praksis",
+      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data.</p><p class=\"text-mid\">Finn.no, Komplett.no, Elkjøp, CDON – WordPress, Shopify, Mystore.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Ofte stilte sporsmal",
+      "title": "Vanlige spørsmål om konvertering av SVG til AVIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Hva er AVIF-format?",
-          "answer": "AVIF er et moderne bildeformat basert pa AV1-codec. Det tilbyr utmerket komprimering — filer kan vaere opptil 50% mindre enn JPG."
+          "question": "Er det gratis å konvertere SVG til AVIF?",
+          "answer": "Ja, denne SVG-til-AVIF-konverteren er helt gratis uten begrensninger. Ingen registrering, ingen vannmerker."
         },
         {
-          "question": "Fungerer AVIF i alle nettlesere?",
-          "answer": "AVIF stottes av Chrome, Edge og Firefox. Safari har begrenset AVIF-stotte."
+          "question": "Lastes filene mine opp til en server?",
+          "answer": "Nei. All behandling skjer lokalt i nettleseren din. Filene dine forlater aldri enheten din."
         },
         {
-          "question": "Sendes filene mine til en server?",
-          "answer": "Nei. Konverteringen skjer helt i nettleseren. Filer forlater aldri datamaskinen din."
+          "question": "Mister jeg kvalitet ved konvertering?",
+          "answer": "AVIF bruker tapsbringende komprimering. Ved høyere kvalitetsinnstillinger (80-95%) er forskjellen usynlig for det menneskelige øye."
+        },
+        {
+          "question": "Kan jeg konvertere flere filer samtidig?",
+          "answer": "Ja, konverteren støtter batchkonvertering."
+        },
+        {
+          "question": "Fungerer konverteren på mobilenheter?",
+          "answer": "Ja, den fungerer på enhver enhet med en moderne nettleser."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Trenger du mer?",
-      "description": "Kontakt oss — vi hjelper deg a finne den riktige losningen.",
-      "href": "/no/kontakt",
-      "buttonText": "Skriv til oss"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss med å forbedre våre verktøy",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG to AVIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "Convertor JPG în PNG",
-      "html": "<p class=\"text-mid\">Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser.</p>",
+      "title": "De ce să convertiți JPG în PNG?",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru fotografii.</p><p class=\"text-mid mb-4\">Conversia JPG în PNG (Portable Network Graphics) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">PNG suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
-      "imageAlt": "Convertor JPG în PNG – Arteon"
+      "imageAlt": "JPG to PNG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "JPG → PNG",
+      "title": "Cum să convertiți JPG în PNG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Adăugați fișiere",
-          "description": "Trageți fișiere JPG în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Încărcați fișierul JPG",
+          "description": "Trageți și plasați imaginea JPG în zona convertorului sau faceți clic pentru a naviga. Puteți adăuga mai multe fișiere simultan."
         },
         {
-          "title": "2. Convertiți",
-          "description": "Faceți clic pe conversie. PNG este un format fără pierderi — nu este necesar niciun ajustaj de calitate.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Ajustați setările",
+          "description": "Alegeți setările preferate de calitate și ieșire. Convertorul afișează o previzualizare în timp real pentru compararea originalului JPG cu rezultatul PNG."
         },
         {
-          "title": "3. Descărcați",
-          "description": "Descărcați fișierele PNG convertite individual sau pe toate odată.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Descărcați fișierul PNG",
+          "description": "Faceți clic pe butonul de descărcare pentru a salva fișierul PNG convertit. Pentru mai multe fișiere, folosiți descărcarea în lot."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG vs PNG – diferențele cheie",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Cu pierderi</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când să convertiți JPG în PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimizare web",
+          "description": "JPG → PNG – WordPress, Shopify, GomAG."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email și partajare",
+          "description": "PNG – Gmail, Outlook, Yahoo."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documente și arhivare",
+          "description": "PNG – tipografii."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Funcționalități convertor JPG în PNG",
+      "title": "Ce face acest convertor JPG în PNG diferit?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Confidențialitate totală",
-          "description": "Fișierele nu părăsesc niciodată dispozitivul. Conversia se execută local în browser — nimic nu este încărcat pe vreun server."
+          "description": "Fișierele JPG sunt procesate exclusiv în browserul dumneavoastră. Nimic nu este încărcat pe niciun server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Fără limită de fișiere",
-          "description": "Convertiți oricâte fișiere aveți nevoie într-o singură sesiune. Fără restricții, fără înregistrare."
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți câte fișiere JPG în PNG aveți nevoie. Fără limite zilnice, fără restricții de mărime, fără filigrane."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Ieșire fără pierderi",
-          "description": "PNG păstrează calitatea completă a imaginii fără pierderi de date. Ideal pentru grafice și editare ulterioară."
+          "title": "Controlul calității",
+          "description": "Ajustați setările de compresie pentru echilibrul perfect între dimensiunea fișierului și calitatea imaginii."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Descărcare în lot",
-          "description": "Descărcați fișierele convertite unul câte unul sau pe toate odată cu un singur clic."
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului – rapid și funcțional chiar și fără conexiune."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversia JPG în PNG în practică",
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
     },
     {
       "type": "gap",
@@ -126,27 +172,27 @@
     {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia JPG în PNG",
-      "openByDefault": 1,
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Conversia JPG în PNG este fără pierderi?",
-          "answer": "PNG este un format fără pierderi, astfel încât fișierul de ieșire păstrează calitatea completă a imaginii din fișierul JPG original. Dacă JPG a folosit compresie cu pierderi, datele deja pierdute nu pot fi recuperate."
+          "question": "Este gratuită conversia JPG în PNG?",
+          "answer": "Da, acest convertor JPG în PNG este complet gratuit, fără limite. Fără înregistrare, fără filigrane."
         },
         {
-          "question": "Transparența este păstrată în timpul conversiei?",
-          "answer": "JPG nu suportă transparență, deci nu există date de canal alfa de păstrat sau pierdut. Formatul de ieșire PNG suportă transparență, dar imaginea sursă nu conține niciuna."
+          "question": "Sunt fișierele mele încărcate pe un server?",
+          "answer": "Nu. Toată procesarea are loc local în browserul dumneavoastră. Fișierele nu părăsesc niciodată dispozitivul."
         },
         {
-          "question": "De ce fișierul PNG de ieșire este mai mare decât originalul?",
-          "answer": "PNG este un format fără pierderi care păstrează fiecare pixel fără artefacte de compresie. Fișierele fără pierderi sunt în mod natural mai mari — acest lucru este așteptat și înseamnă că nu se pierde calitate."
+          "question": "Voi pierde calitate la conversie?",
+          "answer": "PNG suportă compresie fără pierderi, păstrând calitatea originală."
         },
         {
-          "question": "Ce browsere suportă acest convertor?",
-          "answer": "Convertorul funcționează în toate browserele moderne: Chrome, Edge, Firefox și Safari. Pentru suportul formatului AVIF, utilizați Chrome 85+, Firefox 93+ sau Safari 16.4+."
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul suportă conversia în lot."
         },
         {
-          "question": "Fișierele mele sunt încărcate pe un server?",
-          "answer": "Nu. Întregul proces de conversie se execută local în browserul dumneavoastră în JavaScript. Fișierele nu părăsesc niciodată dispozitivul și nu avem acces la ele."
+          "question": "Funcționează pe dispozitive mobile?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Descoperă mai multe instrumente gratuite"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

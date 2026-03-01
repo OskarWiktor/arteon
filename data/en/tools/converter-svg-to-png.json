@@ -52,40 +52,36 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Why convert SVG to PNG?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is a lossless image format based on vector graphics. It is widely used for logos and icons and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting SVG to PNG (Portable Network Graphics) converts scalable vector graphics into a fixed-resolution raster image suitable for any context.</p><p class=\"text-mid mb-4\">PNG supports alpha transparency, preserving any transparent areas in your image. As a lossless format, PNG preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many SVG files as you need, completely free.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "SVG to PNG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
-      "type": "sectionBasic",
-      "title": "Why convert SVG to PNG?",
-      "html": "<p class=\"text-mid mb-4\">SVG (Scalable Vector Graphics) is a vector format perfect for logos, icons, and diagrams because it scales without losing clarity. However, many platforms — social media, messaging apps, email clients — do not accept SVG files.</p><p class=\"text-mid mb-4\">PNG is a universally supported raster format. Converting SVG to PNG produces a high-quality image that can be shared, embedded in documents, or uploaded anywhere.</p><p class=\"text-mid\">This converter rasterizes SVG graphics at their native resolution using the browser’s rendering engine, producing clean, anti-aliased PNG output. Everything runs locally — no server uploads.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
-      "imageAlt": "SVG to PNG converter – Arteon"
-    },
-    {
-      "type": "gap",
-      "size": "xs"
-    },
-    {
       "type": "sectionSteps",
       "title": "How to convert SVG to PNG",
-      "description": "Quick steps:",
       "grid": "three",
       "items": [
         {
-          "title": "1. Add SVG files",
-          "description": "Drag your SVG images onto the upload area or click to select them. No limit on files.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload your SVG file",
+          "description": "Drag and drop your SVG image onto the converter area or click to browse your device. You can add multiple files at once for batch conversion."
         },
         {
-          "title": "2. Convert",
-          "description": "Click Convert. Each file is processed instantly in your browser.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Adjust settings",
+          "description": "Choose your preferred quality and output options. The converter shows a live preview so you can compare the original SVG with the PNG result before downloading."
         },
         {
-          "title": "3. Download PNG",
-          "description": "Download each file or grab them all at once. Size comparison shown for every file.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Download your PNG file",
+          "description": "Click the download button to save your converted PNG file. For multiple files, use the batch download option to get all results in one click."
         }
       ]
     },
@@ -94,30 +90,38 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "SVG vs PNG – key differences",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Feature</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparency</td><td class=\"py-2 text-center\">Yes</td><td class=\"py-2 text-center\">Yes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Yes</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Browser support</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "When should you convert SVG to PNG?",
-      "description": "Common use cases:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiShareLine",
-          "title": "Social media",
-          "description": "Facebook, Instagram, and LinkedIn do not accept SVG. Convert to PNG for clean, sharp uploads."
+          "icon": "RiGlobalLine",
+          "title": "Website optimization",
+          "description": "Convert SVG to PNG to preserve transparency and image quality for web graphics."
         },
         {
           "icon": "RiMailLine",
-          "title": "Email and messaging",
-          "description": "Most email clients strip SVG attachments. PNG is displayed inline by every major client."
+          "title": "Email and sharing",
+          "description": "PNG files are universally accepted by email clients like Gmail, Outlook, and Apple Mail. Convert to PNG for high-quality images suitable for sharing."
         },
         {
-          "icon": "RiFileTextLine",
-          "title": "Documents and presentations",
-          "description": "Word, PowerPoint, and Google Slides handle PNG natively. SVG support is inconsistent."
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce and marketplaces",
+          "description": "Platforms like Amazon, eBay, Etsy, Shopify may require specific formats – converting to PNG ensures your product images meet their requirements."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Print materials",
-          "description": "Some print workflows require raster images. Convert SVG to PNG for pixel-perfect prints."
+          "title": "Documents and archival",
+          "description": "PNG is an excellent choice for archival and professional printing due to its lossless compression."
         }
       ]
     },
@@ -133,22 +137,22 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Complete privacy",
-          "description": "Files never leave your computer. Conversion uses the browser Canvas API — nothing is uploaded."
+          "description": "Your SVG files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No file limit",
-          "description": "Convert as many images as you need. All files processed in sequence."
+          "icon": "RiInfinityLine",
+          "title": "No limits",
+          "description": "Convert as many SVG files to PNG as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Instant processing",
-          "description": "Conversion happens natively in your browser. Results are ready in seconds."
+          "icon": "RiImageEditLine",
+          "title": "Quality control",
+          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "One-click download",
-          "description": "Download files individually or all at once with a single click."
+          "icon": "RiFlashlightLine",
+          "title": "Instant conversion",
+          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
         }
       ]
     },
@@ -157,33 +161,51 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "SVG to PNG conversion in practice",
+      "html": "<p class=\"text-mid mb-4\">Businesses, developers, and creators worldwide rely on image format compatibility. Whether you are preparing product images for Amazon, eBay, Etsy, Shopify, optimizing graphics for WordPress, Wix, Squarespace, or converting photos for government portals worldwide, having the right format matters.</p><p class=\"text-mid mb-4\">Modern web standards increasingly favor efficient formats. Google PageSpeed Insights and Core Web Vitals metrics reward pages that use optimized images. Converting SVG to PNG can directly improve your Largest Contentful Paint (LCP) score, which impacts both search rankings and user experience.</p><p class=\"text-mid\">For email marketing campaigns and social media, PNG offers maximum compatibility across all platforms. Whether you are a freelancer, small business owner, or enterprise user, this converter handles your image conversion needs reliably and securely.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Tips for converting SVG to PNG",
+      "html": "<ul class=\"list-disc pl-6 space-y-2\"><li><strong>Choose resolution carefully</strong> – since SVG is a vector format, you can export to any resolution. Set the desired dimensions before conversion to avoid quality issues.</li><li><strong>Batch convert for efficiency</strong> – if you have many SVG files, use the batch conversion feature to process them all at once. This saves considerable time compared to one-by-one conversion.</li><li><strong>Compare before downloading</strong> – use the live preview to compare the original SVG with the PNG result. Adjust quality settings until you find the right balance for your specific use case.</li><li><strong>Keep your originals</strong> – always save a copy of your original SVG files. Even with lossless conversion, it is good practice to keep source files.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about SVG to PNG conversion",
-      "openByDefault": 1,
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Does converting SVG to PNG lose quality?",
-          "answer": "SVG is resolution-independent, so the rasterized PNG matches the SVG’s defined dimensions. The output is a high-quality, anti-aliased image."
+          "question": "Is converting SVG to PNG free?",
+          "answer": "Yes, this SVG to PNG converter is completely free with no limits. You can convert as many files as you need without registration or watermarks."
         },
         {
-          "question": "Is transparency preserved?",
-          "answer": "Yes. If the SVG has transparent areas, the PNG will retain alpha-channel transparency."
+          "question": "Does the converter upload my files to a server?",
+          "answer": "No. All processing happens locally in your browser using JavaScript and Canvas API. Your files never leave your device, ensuring complete privacy and security."
         },
         {
-          "question": "Can I convert multiple files at once?",
-          "answer": "Yes. No file limit — add as many SVGs as you need."
+          "question": "Will I lose quality when converting SVG to PNG?",
+          "answer": "PNG supports lossless compression, so you can preserve the original image quality completely. If PNG also supports lossy mode, you can choose lower quality for smaller files."
         },
         {
-          "question": "Are files uploaded to a server?",
-          "answer": "No. Everything runs locally in your browser."
+          "question": "Can I convert multiple SVG files at once?",
+          "answer": "Yes, the converter supports batch conversion. You can add multiple SVG files and convert them all to PNG simultaneously. Use the batch download option to save all converted files at once."
         },
         {
-          "question": "What is the maximum file size?",
-          "answer": "Individual files up to 100 MB are supported."
+          "question": "What is the maximum file size I can convert?",
+          "answer": "There is no hard file size limit since processing happens in your browser. However, very large files (over 50 MB) may take longer to process depending on your device's available memory and processing power."
         },
         {
-          "question": "Does this work on mobile?",
-          "answer": "Yes, but we recommend a desktop or laptop for larger files."
+          "question": "Does the converter work on mobile devices?",
+          "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets. The interface adapts to your screen size for a comfortable experience on any device."
         }
       ]
     },
@@ -206,10 +228,6 @@
     {
       "type": "toolsCarousel",
       "title": "Explore more free tools"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

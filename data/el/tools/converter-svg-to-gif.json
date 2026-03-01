@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Πώς λειτουργεί ο μετατροπέας SVG σε GIF;",
-      "html": "<p>Μετατρεψτε διανυσματικα γραφικα SVG σε μορφη raster GIF. Η μετατροπή γίνεται εξ ολοκλήρου στο πρόγραμμα περιήγησης — τα αρχεία δεν αποστέλλονται ποτέ σε διακομιστή. Χωρίς εγγραφή, χωρίς όριο.</p>"
+      "type": "sectionBasic",
+      "title": "Γιατί να μετατρέψετε SVG σε GIF;",
+      "html": "<p class=\"text-mid mb-4\">Το Scalable Vector Graphics (SVG) είναι ένα μορφότυπο εικόνας χωρίς απώλειες. Χρησιμοποιείται ευρέως για λογότυπα και εικονίδια.</p><p class=\"text-mid mb-4\">Η μετατροπή SVG σε GIF (Graphics Interchange Format) προσφέρει περισσότερη ευελιξία.</p><p class=\"text-mid mb-4\">Το GIF υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to GIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Πώς να μετατρέψετε SVG σε GIF;",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να μετατρέψετε SVG σε GIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Ανεβάστε αρχεία",
-          "description": "Σύρετε αρχεία στη σελίδα ή κάντε κλικ για να τα επιλέξετε."
+          "icon": "RiUploadCloud2Line",
+          "title": "Ανεβάστε το αρχείο SVG",
+          "description": "Σύρετε και αφήστε την εικόνα SVG στην περιοχή μετατροπής ή κάντε κλικ για αναζήτηση. Μπορείτε να προσθέσετε πολλαπλά αρχεία ταυτόχρονα."
         },
         {
-          "position": 2,
-          "title": "Ρυθμίστε την ποιότητα",
-          "description": "Ρυθμίστε τον δείκτη ποιότητας GIF — χαμηλότερες τιμές δίνουν μικρότερα αρχεία."
+          "icon": "RiSettings3Line",
+          "title": "Προσαρμόστε τις ρυθμίσεις",
+          "description": "Επιλέξτε τις ρυθμίσεις ποιότητας και εξόδου. Ο μετατροπέας δείχνει ζωντανή προεπισκόπηση για σύγκριση του SVG με το αποτέλεσμα GIF."
         },
         {
-          "position": 3,
-          "title": "Μετατρέψτε",
-          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στο πρόγραμμα περιήγησης."
-        },
-        {
-          "position": 4,
-          "title": "Κατεβάστε",
-          "description": "Κατεβάστε τα αρχεία GIF — μεμονωμένα ή όλα μαζί."
+          "icon": "RiDownloadLine",
+          "title": "Κατεβάστε το αρχείο GIF",
+          "description": "Κάντε κλικ στο κουμπί λήψης για να αποθηκεύσετε το μετατρεμμένο αρχείο GIF. Για πολλαπλά αρχεία, χρησιμοποιήστε τη μαζική λήψη."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG έναντι GIF – βασικές διαφορές",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε πρέπει να μετατρέψετε SVG σε GIF;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Βελτιστοποίηση ιστοσελίδας",
+          "description": "SVG → GIF – WordPress, Shopify, WooCommerce."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email και κοινοποίηση",
+          "description": "GIF – Gmail, Outlook, Forthnet."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Ηλεκτρονικό εμπόριο",
+          "description": "Skroutz.gr, Public.gr, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Έγγραφα και αρχειοθέτηση",
+          "description": "GIF – τυπογραφεία."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι ξεχωρίζει αυτόν τον μετατροπέα SVG σε GIF;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρες απόρρητο",
+          "description": "Τα αρχεία SVG επεξεργάζονται αποκλειστικά στον φυλλομετρητή σας. Τίποτα δεν ανεβαίνει σε κανέναν διακομιστή."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Χωρίς όρια",
+          "description": "Μετατρέψτε όσα αρχεία SVG σε GIF χρειάζεστε. Χωρίς ημερήσια όρια, χωρίς περιορισμούς μεγέθους, χωρίς υδατογράφημα."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Έλεγχος ποιότητας",
+          "description": "Προσαρμόστε τις ρυθμίσεις συμπίεσης για την ιδανική ισορροπία μεταξύ μεγέθους και ποιότητας."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Άμεση μετατροπή",
+          "description": "Όλη η επεξεργασία γίνεται τοπικά με σύγχρονα API του φυλλομετρητή – γρήγορα και χωρίς σύνδεση."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Μετατροπή SVG σε GIF στην πράξη",
+      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας.</p><p class=\"text-mid\">Skroutz.gr, Public.gr, Marketplace – WordPress, Shopify, WooCommerce.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Συχνές ερωτήσεις",
+      "title": "Συχνές ερωτήσεις για τη μετατροπή SVG σε GIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Τι είναι η μορφή GIF;",
-          "answer": "Το GIF είναι μια ευρέως υποστηριζόμενη μορφή εικόνας που υποστηρίζει έως 256 χρώματα. Ιδανικό για απλά γραφικά και εικονίδια."
+          "question": "Είναι δωρεάν η μετατροπή SVG σε GIF;",
+          "answer": "Ναι, αυτός ο μετατροπέας SVG σε GIF είναι απολύτως δωρεάν χωρίς όρια. Δεν απαιτείται εγγραφή."
         },
         {
-          "question": "Η μετατροπή σε GIF μειώνει την ποιότητα;",
-          "answer": "Το GIF χρησιμοποιεί περιορισμένη παλέτα 256 χρωμάτων. Οι φωτογραφίες μπορεί να χάσουν λεπτομέρειες."
+          "question": "Ανεβαίνουν τα αρχεία μου σε κάποιον διακομιστή;",
+          "answer": "Όχι. Όλη η επεξεργασία γίνεται τοπικά στον φυλλομετρητή σας. Τα αρχεία δεν φεύγουν ποτέ από τη συσκευή σας."
         },
         {
-          "question": "Αποστέλλονται τα αρχεία μου σε διακομιστή;",
-          "answer": "Όχι. Η μετατροπή γίνεται εξ ολοκλήρου στο πρόγραμμα περιήγησης."
+          "question": "Θα χάσω ποιότητα;",
+          "answer": "Το GIF υποστηρίζει συμπίεση χωρίς απώλειες, διατηρώντας την αρχική ποιότητα."
+        },
+        {
+          "question": "Μπορώ να μετατρέψω πολλαπλά αρχεία;",
+          "answer": "Ναι, υποστηρίζεται μαζική μετατροπή."
+        },
+        {
+          "question": "Λειτουργεί σε κινητά;",
+          "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο φυλλομετρητή."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Χρειάζεστε περισσότερα;",
-      "description": "Επικοινωνήστε μαζί μας — θα σας βοηθήσουμε να βρείτε τη σωστή λύση.",
-      "href": "/el/epikoinonia",
-      "buttonText": "Γράψτε μας"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG to GIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

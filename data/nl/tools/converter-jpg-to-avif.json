@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Hoe werkt de JPG naar AVIF converter?",
-      "html": "<p>Converteer JPG-foto\\'s naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit. De conversie vindt volledig plaats in de browser — bestanden worden nooit naar een server gestuurd. Zonder registratie, zonder limiet.</p>"
+      "type": "sectionBasic",
+      "title": "Waarom JPG naar AVIF converteren?",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor foto's.</p><p class=\"text-mid mb-4\">Het converteren van JPG naar AVIF (AV1 Image File Format) maakt gebruik van moderne compressie voor kleinere bestanden zonder kwaliteitsverlies.</p><p class=\"text-mid mb-4\">AVIF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG to AVIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Hoe converteer je JPG naar AVIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe JPG naar AVIF converteren",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Bestanden uploaden",
-          "description": "Sleep bestanden naar de pagina of klik om ze te selecteren."
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload uw JPG-bestand",
+          "description": "Sleep uw JPG-afbeelding naar het convertergebied of klik om te bladeren. U kunt meerdere bestanden tegelijk toevoegen."
         },
         {
-          "position": 2,
-          "title": "Kwaliteit instellen",
-          "description": "Pas de AVIF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+          "icon": "RiSettings3Line",
+          "title": "Pas instellingen aan",
+          "description": "Kies uw gewenste kwaliteits- en uitvoeropties. De converter toont een live voorbeeld om het JPG-origineel te vergelijken met het AVIF-resultaat."
         },
         {
-          "position": 3,
-          "title": "Converteren",
-          "description": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
-        },
-        {
-          "position": 4,
-          "title": "Downloaden",
-          "description": "Download de AVIF-bestanden — individueel of allemaal tegelijk."
+          "icon": "RiDownloadLine",
+          "title": "Download uw AVIF-bestand",
+          "description": "Klik op de downloadknop om uw geconverteerde AVIF-bestand op te slaan. Voor meerdere bestanden kunt u de batchdownload gebruiken."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG vs AVIF – de belangrijkste verschillen",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossy</td><td class=\"py-2 text-center\">Beide</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer JPG naar AVIF converteren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-optimalisatie",
+          "description": "JPG → AVIF – WordPress, Shopify, Lightspeed."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail en delen",
+          "description": "AVIF – Gmail, Outlook, Ziggo Mail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Bol.com, Marktplaats, Amazon.nl, Coolblue."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documenten en archivering",
+          "description": "AVIF – drukkerijen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze JPG-naar-AVIF-converter anders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Uw JPG-bestanden worden uitsluitend in uw browser verwerkt. Niets wordt naar een server geüpload."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Geen limieten",
+          "description": "Converteer zoveel JPG-bestanden naar AVIF als nodig. Geen dagelijkse limieten, geen groottebeperkingen, geen watermerken."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kwaliteitscontrole",
+          "description": "Pas de compressie-instellingen aan voor de perfecte balans tussen bestandsgrootte en beeldkwaliteit."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Directe conversie",
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API’s – snel en werkt ook zonder internetverbinding."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG-naar-AVIF-conversie in de praktijk",
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens.</p><p class=\"text-mid\">Bol.com, Marktplaats, Amazon.nl, Coolblue – WordPress, Shopify, Lightspeed.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Veelgestelde vragen",
+      "title": "Veelgestelde vragen over JPG-naar-AVIF-conversie",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Wat is het AVIF-formaat?",
-          "answer": "AVIF is een modern afbeeldingsformaat gebaseerd op de AV1-codec. Het biedt uitstekende compressie — bestanden kunnen tot 50% kleiner zijn dan JPG."
+          "question": "Is het converteren van JPG naar AVIF gratis?",
+          "answer": "Ja, deze JPG-naar-AVIF-converter is volledig gratis, zonder limieten. Geen registratie, geen watermerken."
         },
         {
-          "question": "Werkt AVIF in alle browsers?",
-          "answer": "AVIF wordt ondersteund door Chrome, Edge en Firefox. Safari heeft beperkte AVIF-ondersteuning."
+          "question": "Worden mijn bestanden naar een server geüpload?",
+          "answer": "Nee. Alle verwerking gebeurt lokaal in uw browser. Uw bestanden verlaten nooit uw apparaat."
         },
         {
-          "question": "Worden mijn bestanden naar een server gestuurd?",
-          "answer": "Nee. De conversie vindt volledig plaats in de browser. Bestanden verlaten nooit uw computer."
+          "question": "Verlies ik kwaliteit bij het converteren?",
+          "answer": "AVIF gebruikt lossy compressie. Bij hogere kwaliteitsinstellingen (80-95%) is het verschil onzichtbaar voor het menselijk oog."
+        },
+        {
+          "question": "Kan ik meerdere bestanden tegelijk converteren?",
+          "answer": "Ja, de converter ondersteunt batchconversie."
+        },
+        {
+          "question": "Werkt de converter op mobiele apparaten?",
+          "answer": "Ja, hij werkt op elk apparaat met een moderne webbrowser."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Meer nodig?",
-      "description": "Neem contact op — we helpen u de juiste oplossing te vinden.",
-      "href": "/nl/contact",
-      "buttonText": "Schrijf ons"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JPG to AVIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

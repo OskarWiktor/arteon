@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți HEIC în JPG?",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia HEIC în JPG (JPEG) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">JPG nu suportă transparența – zonele transparente vor fi umplute cu o culoare de fundal.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
+      "imageAlt": "HEIC to JPG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "HEIC → JPG",
+      "title": "Cum să convertiți HEIC în JPG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Adauga fisiere",
-          "description": "Drag HEIC files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Încărcați fișierul HEIC",
+          "description": "Trageți și plasați imaginea HEIC în zona convertorului sau faceți clic pentru a naviga. Puteți adăuga mai multe fișiere simultan."
         },
         {
-          "title": "2. Seteaza calitatea",
-          "description": "JPG quality: 85% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Ajustați setările",
+          "description": "Alegeți setările preferate de calitate și ieșire. Convertorul afișează o previzualizare în timp real pentru compararea originalului HEIC cu rezultatul JPG."
         },
         {
-          "title": "3. Descarca",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Descărcați fișierul JPG",
+          "description": "Faceți clic pe butonul de descărcare pentru a salva fișierul JPG convertit. Pentru mai multe fișiere, folosiți descărcarea în lot."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC vs JPG – diferențele cheie",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Ambele</td><td class=\"py-2 text-center\">Cu pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Nu</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când să convertiți HEIC în JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimizare web",
+          "description": "HEIC → JPG – WordPress, Shopify, GomAG."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email și partajare",
+          "description": "JPG – Gmail, Outlook, Yahoo."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documente și arhivare",
+          "description": "JPG – tipografii."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Convertor HEIC in JPG",
+      "title": "Ce face acest convertor HEIC în JPG diferit?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Confidențialitate totală",
+          "description": "Fișierele HEIC sunt procesate exclusiv în browserul dumneavoastră. Nimic nu este încărcat pe niciun server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți câte fișiere HEIC în JPG aveți nevoie. Fără limite zilnice, fără restricții de mărime, fără filigrane."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Quality control",
-          "description": "Adjust JPG quality with the slider."
+          "icon": "RiImageEditLine",
+          "title": "Controlul calității",
+          "description": "Ajustați setările de compresie pentru echilibrul perfect între dimensiunea fișierului și calitatea imaginii."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului – rapid și funcțional chiar și fără conexiune."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversia HEIC în JPG în practică",
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Intrebari frecvente",
-      "openByDefault": 1,
+      "title": "Întrebări frecvente despre conversia HEIC în JPG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "HEIC → JPG?",
-          "answer": "Converteste fotografii HEIC de pe iPhone in JPG universal. Fara inregistrare, fara upload."
+          "question": "Este gratuită conversia HEIC în JPG?",
+          "answer": "Da, acest convertor HEIC în JPG este complet gratuit, fără limite. Fără înregistrare, fără filigrane."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Sunt fișierele mele încărcate pe un server?",
+          "answer": "Nu. Toată procesarea are loc local în browserul dumneavoastră. Fișierele nu părăsesc niciodată dispozitivul."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Voi pierde calitate la conversie?",
+          "answer": "JPG folosește compresie cu pierderi. La setări de calitate ridicate (80-95%), diferența este imperceptibilă."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul suportă conversia în lot."
+        },
+        {
+          "question": "Funcționează pe dispozitive mobile?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Descopera mai multe instrumente gratuite"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

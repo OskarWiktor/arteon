@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere TIFF til PNG?",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av TIFF til PNG (Portable Network Graphics) sikrer universell kompatibilitet med alle nettlesere og enheter.</p><p class=\"text-mid mb-4\">PNG støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
+      "imageAlt": "TIFF to PNG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF → PNG",
+      "title": "Slik konverterer du TIFF til PNG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Legg til filer",
-          "description": "Drag TIFF files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Last opp TIFF-filen din",
+          "description": "Dra og slipp TIFF-bildet ditt på konverteringsområdet eller klikk for å bla gjennom enheten din. Du kan legge til flere filer samtidig."
         },
         {
-          "title": "2. Konverter",
-          "description": "PNG is lossless.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Juster innstillinger",
+          "description": "Velg foretrukne kvalitets- og utgangsinnstillinger. Konverteren viser en forhåndsvisning for sammenligning av TIFF-originalen med PNG-resultatet."
         },
         {
-          "title": "3. Last ned",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Last ned PNG-filen din",
+          "description": "Klikk på nedlastingsknappen for å lagre den konverterte PNG-filen. For flere filer, bruk batch-nedlasting."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF vs PNG – de viktigste forskjellene",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tapsfri</td><td class=\"py-2 text-center\">Tapsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gjennomsiktighet</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animasjon</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Nei</td></tr><tr><td class=\"py-2\">Nettleserstøtte</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Når bør du konvertere TIFF til PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Nettstedsoptimalisering",
+          "description": "TIFF → PNG – WordPress, Shopify, Mystore."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-post og deling",
+          "description": "PNG – Gmail, Outlook, Telenor."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-handel",
+          "description": "Finn.no, Komplett.no, Elkjøp, CDON."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenter og arkivering",
+          "description": "PNG – trykkerier."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF til PNG-konverterer",
+      "title": "Hva gjør denne TIFF-til-PNG-konverteren annerledes?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Fullstendig personvern",
+          "description": "TIFF-filene dine behandles utelukkende i nettleseren din. Ingenting lastes opp til noen server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrensninger",
+          "description": "Konverter så mange TIFF-filer til PNG som du trenger. Ingen daglige grenser, ingen størrelsesbegrensninger, ingen vannmerker."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Lossless",
-          "description": "PNG preserves full image quality."
+          "title": "Kvalitetskontroll",
+          "description": "Juster komprimeringsinnstillingene for å finne den perfekte balansen mellom filstørrelse og bildekvalitet."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Øyeblikkelig konvertering",
+          "description": "All behandling skjer lokalt med moderne nettleser-API-er – raskt og fungerer også uten internettforbindelse."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF-til-PNG-konvertering i praksis",
+      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data.</p><p class=\"text-mid\">Finn.no, Komplett.no, Elkjøp, CDON – WordPress, Shopify, Mystore.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Ofte stilte sporsmal",
-      "openByDefault": 1,
+      "title": "Vanlige spørsmål om konvertering av TIFF til PNG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "TIFF → PNG?",
-          "answer": "Konverter TIFF-filer til tapsfri PNG. Bevar full kvalitet pa skanninger."
+          "question": "Er det gratis å konvertere TIFF til PNG?",
+          "answer": "Ja, denne TIFF-til-PNG-konverteren er helt gratis uten begrensninger. Ingen registrering, ingen vannmerker."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Lastes filene mine opp til en server?",
+          "answer": "Nei. All behandling skjer lokalt i nettleseren din. Filene dine forlater aldri enheten din."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Mister jeg kvalitet ved konvertering?",
+          "answer": "PNG støtter tapsfri komprimering som bevarer den originale kvaliteten."
+        },
+        {
+          "question": "Kan jeg konvertere flere filer samtidig?",
+          "answer": "Ja, konverteren støtter batchkonvertering."
+        },
+        {
+          "question": "Fungerer konverteren på mobilenheter?",
+          "answer": "Ja, den fungerer på enhver enhet med en moderne nettleser."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktoy"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

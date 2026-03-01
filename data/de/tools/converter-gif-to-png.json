@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "Warum GIF in PNG umwandeln?",
-      "html": "<p class=\"text-mid mb-4\">GIF ist auf 256 Farben beschränkt. PNG unterstützt Millionen Farben und Alpha-Transparenz. Die Konvertierung ist nützlich, um ein statisches Bild aus einem animierten GIF zu extrahieren.</p><p class=\"text-mid\">Hinweis: Dieses Tool extrahiert nur das erste Bild animierter GIFs.</p>",
+      "title": "Warum GIF in PNG konvertieren?",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) ist ein verlustfreies Bildformat mit Unterstützung für 256 Farben. Es wird häufig für einfache Animationen verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von GIF in PNG (Portable Network Graphics) bietet mehr Flexibilität bei der Verwendung Ihrer Bilder.</p><p class=\"text-mid mb-4\">PNG unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt PNG die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
-      "imageAlt": "GIF zu PNG Konverter – Arteon"
+      "imageAlt": "GIF to PNG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "GIF → PNG",
+      "title": "So konvertieren Sie GIF in PNG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Dateien hinzufügen",
-          "description": "Ziehen Sie GIF-Dateien in den Upload-Bereich oder klicken Sie, um Dateien von Ihrem Gerät auszuwählen.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "GIF-Datei hochladen",
+          "description": "Ziehen Sie Ihr GIF-Bild auf den Konverterbereich oder klicken Sie, um Dateien auszuwählen. Mehrere Dateien gleichzeitig möglich."
         },
         {
-          "title": "2. Konvertieren",
-          "description": "Klicken Sie auf Konvertieren. PNG ist verlustfrei — keine Qualitätseinstellung erforderlich.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Einstellungen anpassen",
+          "description": "Wählen Sie Qualität und Ausgabeoptionen. Der Konverter zeigt eine Live-Vorschau zum Vergleich von GIF-Original und PNG-Ergebnis."
         },
         {
-          "title": "3. Herunterladen",
-          "description": "Laden Sie die konvertierten PNG-Dateien einzeln oder alle auf einmal herunter.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "PNG-Datei herunterladen",
+          "description": "Klicken Sie auf Download, um Ihre konvertierte PNG-Datei zu speichern. Bei mehreren Dateien nutzen Sie den Stapeldownload."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "GIF vs. PNG – die wichtigsten Unterschiede",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann sollten Sie GIF in PNG konvertieren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-Optimierung",
+          "description": "GIF → PNG – WordPress, Shopify, TYPO3."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-Mail und Teilen",
+          "description": "PNG – Gmail, Outlook, GMX, Web.de."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-Commerce",
+          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumente und Archivierung",
+          "description": "PNG – Druckereien."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "GIF-zu-PNG-Konverter — Funktionen",
+      "title": "Was zeichnet diesen GIF-zu-PNG-Konverter aus?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Volle Privatsphäre",
-          "description": "Dateien verlassen Ihr Gerät nicht. Die Konvertierung läuft lokal im Browser — nichts wird auf einen Server hochgeladen."
+          "title": "Vollständiger Datenschutz",
+          "description": "Ihre GIF-Dateien werden ausschließlich in Ihrem Browser verarbeitet. Nichts wird auf einen Server hochgeladen – DSGVO-konform."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Keine Dateilimits",
-          "description": "Konvertieren Sie so viele Dateien wie nötig. Keine Einschränkungen, keine Registrierung erforderlich."
+          "icon": "RiInfinityLine",
+          "title": "Keine Limits",
+          "description": "Konvertieren Sie so viele GIF-Dateien in PNG wie nötig. Keine täglichen Limits, keine Größenbeschränkungen, keine Wasserzeichen."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Verlustfreie Ausgabe",
-          "description": "PNG bewahrt die volle Bildqualität ohne Datenverlust. Ideal für Grafiken und Weiterbearbeitung."
+          "title": "Qualitätskontrolle",
+          "description": "Passen Sie die Kompressionseinstellungen an, um die perfekte Balance zwischen Dateigröße und Bildqualität zu finden."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Stapel-Download",
-          "description": "Laden Sie konvertierte Dateien einzeln oder alle auf einmal mit einem Klick herunter."
+          "icon": "RiFlashlightLine",
+          "title": "Sofortige Konvertierung",
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs – schnell und auch ohne Internetverbindung nutzbar."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "GIF-zu-PNG-Konvertierung in der Praxis",
+      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von GIF in PNG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet PNG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,32 @@
     },
     {
       "type": "faq",
-      "title": "Häufig gestellte Fragen zur GIF-zu-PNG-Konvertierung",
-      "openByDefault": 1,
+      "title": "Häufig gestellte Fragen zur Konvertierung von GIF in PNG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Ist die Konvertierung von GIF zu PNG verlustfrei?",
-          "answer": "PNG ist ein verlustfreies Format — die Ausgabedatei bewahrt die volle Bildqualität der GIF-Originaldatei. Wenn die GIF-Datei verlustbehaftete Kompression verwendete, können diese Daten nicht wiederhergestellt werden."
-        },
-        {
-          "question": "Bleibt die Transparenz bei der Konvertierung erhalten?",
-          "answer": "Ja. PNG unterstützt Transparenz (Alphakanal), sodass transparente Bereiche aus der GIF-Datei vollständig erhalten bleiben."
-        },
-        {
-          "question": "Warum ist die PNG-Datei größer als das Original?",
-          "answer": "PNG ist ein verlustfreies Format, das jeden Pixel ohne Kompressionsartefakte bewahrt. Verlustfreie Dateien sind naturgemäß größer als verlustbehaftete Originale."
-        },
-        {
-          "question": "Welche Browser unterstützen diesen Konverter?",
-          "answer": "Der Konverter funktioniert in allen modernen Browsern: Chrome, Edge, Firefox und Safari. Für AVIF-Unterstützung verwenden Sie Chrome 85+, Firefox 93+ oder Safari 16.4+."
+          "question": "Ist die Konvertierung von GIF in PNG kostenlos?",
+          "answer": "Ja, dieser GIF-zu-PNG-Konverter ist vollständig kostenlos, ohne Limits. Keine Registrierung, keine Wasserzeichen."
         },
         {
           "question": "Werden meine Dateien auf einen Server hochgeladen?",
-          "answer": "Nein. Der gesamte Konvertierungsprozess läuft lokal in Ihrem Browser. Ihre Dateien verlassen Ihr Gerät nicht und wir haben keinen Zugriff darauf."
+          "answer": "Nein. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Dateien verlassen niemals Ihr Gerät – vollständig DSGVO-konform."
+        },
+        {
+          "question": "Verliere ich Qualität bei der Konvertierung von GIF in PNG?",
+          "answer": "PNG unterstützt verlustfreie Komprimierung, sodass die Originalqualität vollständig erhalten bleibt."
+        },
+        {
+          "question": "Kann ich mehrere GIF-Dateien gleichzeitig konvertieren?",
+          "answer": "Ja, der Konverter unterstützt Stapelkonvertierung. Fügen Sie mehrere GIF-Dateien hinzu und konvertieren Sie alle gleichzeitig in PNG."
+        },
+        {
+          "question": "Wie groß dürfen die Dateien maximal sein?",
+          "answer": "Es gibt keine feste Größenbegrenzung, da die Verarbeitung in Ihrem Browser stattfindet. Sehr große Dateien (über 50 MB) können je nach Gerät länger dauern."
+        },
+        {
+          "question": "Funktioniert der Konverter auf Mobilgeräten?",
+          "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
         }
       ]
     },
@@ -169,10 +219,6 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "JPG naar WebP converter",
-      "html": "<p class=\"text-mid\">Converteer JPG-foto's naar lichtgewicht WebP. Bespaar tot 35% bestandsgrootte.</p>",
+      "title": "Waarom JPG naar WebP converteren?",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor foto's.</p><p class=\"text-mid mb-4\">Het converteren van JPG naar WebP (WebP) maakt gebruik van moderne compressie voor kleinere bestanden zonder kwaliteitsverlies.</p><p class=\"text-mid mb-4\">WebP ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
-      "imageAlt": "JPG naar WebP converter – Arteon"
+      "imageAlt": "JPG to WebP conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "JPG → WEBP",
+      "title": "Hoe JPG naar WebP converteren",
       "grid": "three",
       "items": [
         {
-          "title": "1. Bestanden toevoegen",
-          "description": "Sleep JPG-bestanden naar het uploadveld of klik om bestanden van je apparaat te selecteren.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload uw JPG-bestand",
+          "description": "Sleep uw JPG-afbeelding naar het convertergebied of klik om te bladeren. U kunt meerdere bestanden tegelijk toevoegen."
         },
         {
-          "title": "2. Converteren",
-          "description": "Klik op converteren. Pas de WEBP-kwaliteit aan met de schuifregelaar.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Pas instellingen aan",
+          "description": "Kies uw gewenste kwaliteits- en uitvoeropties. De converter toont een live voorbeeld om het JPG-origineel te vergelijken met het WebP-resultaat."
         },
         {
-          "title": "3. Downloaden",
-          "description": "Download de geconverteerde WEBP-bestanden afzonderlijk of allemaal tegelijk.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Download uw WebP-bestand",
+          "description": "Klik op de downloadknop om uw geconverteerde WebP-bestand op te slaan. Voor meerdere bestanden kunt u de batchdownload gebruiken."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG vs WebP – de belangrijkste verschillen",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossy</td><td class=\"py-2 text-center\">Beide</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer JPG naar WebP converteren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-optimalisatie",
+          "description": "JPG → WebP – WordPress, Shopify, Lightspeed."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail en delen",
+          "description": "WebP – Gmail, Outlook, Ziggo Mail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Bol.com, Marktplaats, Amazon.nl, Coolblue."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documenten en archivering",
+          "description": "WebP – drukkerijen."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "JPG naar WEBP converter — functies",
+      "title": "Wat maakt deze JPG-naar-WebP-converter anders?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Volledige privacy",
-          "description": "Bestanden verlaten nooit je apparaat. De conversie draait lokaal in de browser — er wordt niets naar een server geüpload."
+          "description": "Uw JPG-bestanden worden uitsluitend in uw browser verwerkt. Niets wordt naar een server geüpload."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Geen bestandslimiet",
-          "description": "Converteer zoveel bestanden als je nodig hebt in één sessie. Geen beperkingen, geen registratie vereist."
+          "icon": "RiInfinityLine",
+          "title": "Geen limieten",
+          "description": "Converteer zoveel JPG-bestanden naar WebP als nodig. Geen dagelijkse limieten, geen groottebeperkingen, geen watermerken."
         },
         {
-          "icon": "RiSpeedLine",
+          "icon": "RiImageEditLine",
           "title": "Kwaliteitscontrole",
-          "description": "Pas de WEBP-uitvoerkwaliteit aan met de schuifregelaar. Hogere waarden betekenen betere kwaliteit en grotere bestanden."
+          "description": "Pas de compressie-instellingen aan voor de perfecte balans tussen bestandsgrootte en beeldkwaliteit."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Batch-download",
-          "description": "Download geconverteerde bestanden één voor één of allemaal tegelijk met één klik."
+          "icon": "RiFlashlightLine",
+          "title": "Directe conversie",
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API’s – snel en werkt ook zonder internetverbinding."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG-naar-WebP-conversie in de praktijk",
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens.</p><p class=\"text-mid\">Bol.com, Marktplaats, Amazon.nl, Coolblue – WordPress, Shopify, Lightspeed.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Veelgestelde vragen over JPG naar WEBP conversie",
-      "openByDefault": 1,
+      "title": "Veelgestelde vragen over JPG-naar-WebP-conversie",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Is de conversie van JPG naar WEBP verliesvrij?",
-          "answer": "WEBP gebruikt standaard verliesgevende compressie. Je kunt de kwaliteitsschuifregelaar aanpassen om de balans tussen bestandsgrootte en visuele kwaliteit te regelen. Hogere waarden produceren betere kwaliteit maar grotere bestanden."
-        },
-        {
-          "question": "Wordt de transparantie behouden tijdens de conversie?",
-          "answer": "JPG ondersteunt geen transparantie, dus er zijn geen alfakanaalgegevens om te behouden of te verliezen. Het uitvoerformaat WEBP ondersteunt wel transparantie, maar de bronafbeelding bevat er geen."
-        },
-        {
-          "question": "Waarom is het WEBP-uitvoerbestand groter dan het origineel?",
-          "answer": "De bestandsgrootte hangt af van de kwaliteitsinstelling en de beeldinhoud. Lagere kwaliteitswaarden produceren kleinere bestanden. Pas de schuifregelaar aan naar je behoeften."
-        },
-        {
-          "question": "Welke browsers ondersteunen deze converter?",
-          "answer": "De converter werkt in alle moderne browsers: Chrome, Edge, Firefox en Safari. Voor AVIF-ondersteuning gebruik je Chrome 85+, Firefox 93+ of Safari 16.4+."
+          "question": "Is het converteren van JPG naar WebP gratis?",
+          "answer": "Ja, deze JPG-naar-WebP-converter is volledig gratis, zonder limieten. Geen registratie, geen watermerken."
         },
         {
           "question": "Worden mijn bestanden naar een server geüpload?",
-          "answer": "Nee. Het hele conversieproces draait lokaal in je browser in JavaScript. Je bestanden verlaten nooit je apparaat en wij hebben er geen toegang toe."
+          "answer": "Nee. Alle verwerking gebeurt lokaal in uw browser. Uw bestanden verlaten nooit uw apparaat."
+        },
+        {
+          "question": "Verlies ik kwaliteit bij het converteren?",
+          "answer": "WebP gebruikt lossy compressie. Bij hogere kwaliteitsinstellingen (80-95%) is het verschil onzichtbaar voor het menselijk oog."
+        },
+        {
+          "question": "Kan ik meerdere bestanden tegelijk converteren?",
+          "answer": "Ja, de converter ondersteunt batchconversie."
+        },
+        {
+          "question": "Werkt de converter op mobiele apparaten?",
+          "answer": "Ja, hij werkt op elk apparaat met een moderne webbrowser."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

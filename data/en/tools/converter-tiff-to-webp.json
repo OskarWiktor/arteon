@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Why convert TIFF to WebP?",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is a lossless image format supporting millions colors. It is widely used for print and archival with browser support in limited.</p><p class=\"text-mid mb-4\">Converting TIFF to WebP (WebP) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">WebP supports alpha transparency, preserving any transparent areas in your image. WebP supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many TIFF files as you need, completely free.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "TIFF to WebP conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF → WebP",
+      "title": "How to convert TIFF to WebP",
       "grid": "three",
       "items": [
         {
-          "title": "1. Add files",
-          "description": "Drag TIFF files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload your TIFF file",
+          "description": "Drag and drop your TIFF image onto the converter area or click to browse your device. You can add multiple files at once for batch conversion."
         },
         {
-          "title": "2. Set quality",
-          "description": "WebP quality: 80% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Adjust settings",
+          "description": "Choose your preferred quality and output options. The converter shows a live preview so you can compare the original TIFF with the WebP result before downloading."
         },
         {
-          "title": "3. Download",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Download your WebP file",
+          "description": "Click the download button to save your converted WebP file. For multiple files, use the batch download option to get all results in one click."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF vs WebP – key differences",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Feature</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Both</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparency</td><td class=\"py-2 text-center\">Yes</td><td class=\"py-2 text-center\">Yes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Yes</td></tr><tr><td class=\"py-2\">Browser support</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert TIFF to WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website optimization",
+          "description": "Convert TIFF to WebP to significantly reduce page load times and improve Core Web Vitals scores."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email and sharing",
+          "description": "WebP files are compatible with most modern platforms. Convert to WebP for smaller attachments that stay within email size limits."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce and marketplaces",
+          "description": "Platforms like Amazon, eBay, Etsy, Shopify often prefer WebP format for product images due to its optimal balance of quality and file size."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documents and archival",
+          "description": "WebP provides a modern and efficient format for document image storage."
         }
       ]
     },
@@ -82,30 +130,48 @@
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF to WebP converter",
+      "title": "What makes this TIFF to WebP converter different?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Complete privacy",
+          "description": "Your TIFF files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
         },
         {
-          "icon": "RiInfinityFill",
+          "icon": "RiInfinityLine",
           "title": "No limits",
-          "description": "Convert as many files as you need."
+          "description": "Convert as many TIFF files to WebP as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
         },
         {
-          "icon": "RiSpeedLine",
+          "icon": "RiImageEditLine",
           "title": "Quality control",
-          "description": "Adjust WebP quality with the slider."
+          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Instant conversion",
+          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF to WebP conversion in practice",
+      "html": "<p class=\"text-mid mb-4\">Businesses, developers, and creators worldwide rely on image format compatibility. Whether you are preparing product images for Amazon, eBay, Etsy, Shopify, optimizing graphics for WordPress, Wix, Squarespace, or converting photos for government portals worldwide, having the right format matters.</p><p class=\"text-mid mb-4\">Modern web standards increasingly favor efficient formats. Google PageSpeed Insights and Core Web Vitals metrics reward pages that use optimized images. Converting TIFF to WebP can directly improve your Largest Contentful Paint (LCP) score, which impacts both search rankings and user experience.</p><p class=\"text-mid\">For email marketing campaigns and social media, WebP provides excellent compression while maintaining visual quality. Whether you are a freelancer, small business owner, or enterprise user, this converter handles your image conversion needs reliably and securely.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Tips for converting TIFF to WebP",
+      "html": "<ul class=\"list-disc pl-6 space-y-2\"><li><strong>Start with quality 85</strong> – this is typically the sweet spot for WebP compression, offering significant file size reduction with minimal visible quality loss.</li><li><strong>Batch convert for efficiency</strong> – if you have many TIFF files, use the batch conversion feature to process them all at once. This saves considerable time compared to one-by-one conversion.</li><li><strong>Compare before downloading</strong> – use the live preview to compare the original TIFF with the WebP result. Adjust quality settings until you find the right balance for your specific use case.</li><li><strong>Keep your originals</strong> – always save a copy of your original TIFF files. Lossy compression is irreversible, so having the originals allows you to re-convert with different settings later.</li></ul>"
     },
     {
       "type": "gap",
@@ -113,20 +179,36 @@
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions",
-      "openByDefault": 1,
+      "title": "Frequently asked questions about TIFF to WebP conversion",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "TIFF → WebP?",
-          "answer": "Convert TIFF files to lightweight WebP. Massive size reduction with quality preserved."
+          "question": "Is converting TIFF to WebP free?",
+          "answer": "Yes, this TIFF to WebP converter is completely free with no limits. You can convert as many files as you need without registration or watermarks."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Does the converter upload my files to a server?",
+          "answer": "No. All processing happens locally in your browser using JavaScript and Canvas API. Your files never leave your device, ensuring complete privacy and security."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Will I lose quality when converting TIFF to WebP?",
+          "answer": "WebP supports lossless compression, so you can preserve the original image quality completely. If WebP also supports lossy mode, you can choose lower quality for smaller files."
+        },
+        {
+          "question": "Can I convert multiple TIFF files at once?",
+          "answer": "Yes, the converter supports batch conversion. You can add multiple TIFF files and convert them all to WebP simultaneously. Use the batch download option to save all converted files at once."
+        },
+        {
+          "question": "Do all browsers support WebP?",
+          "answer": "WebP is supported by Chrome, Firefox, Safari 14+, Edge. For older browsers that don't support WebP, you can use the HTML &lt;picture&gt; element to provide a fallback format like JPG or PNG."
+        },
+        {
+          "question": "What is the maximum file size I can convert?",
+          "answer": "There is no hard file size limit since processing happens in your browser. However, very large files (over 50 MB) may take longer to process depending on your device's available memory and processing power."
+        },
+        {
+          "question": "Does the converter work on mobile devices?",
+          "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets. The interface adapts to your screen size for a comfortable experience on any device."
         }
       ]
     },
@@ -149,10 +231,6 @@
     {
       "type": "toolsCarousel",
       "title": "Explore more free tools"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

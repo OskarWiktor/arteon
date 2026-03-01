@@ -59,60 +59,169 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Como funciona el convertidor de BMP a AVIF?",
-      "html": "<p>Convierte archivos BMP sin comprimir a AVIF ultracompacto. La conversion se realiza completamente en tu navegador — los archivos nunca se envian a un servidor. Sin registro, sin limite de archivos.</p>"
+      "type": "sectionBasic",
+      "title": "¿Por qué convertir BMP a AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) es un formato de imagen sin pérdida que soporta millones de colores. Se utiliza ampliamente para imágenes sin compresión.</p><p class=\"text-mid mb-4\">Convertir BMP a AVIF (AV1 Image File Format) reduce significativamente el tamaño del archivo.</p><p class=\"text-mid mb-4\">AVIF soporta transparencia alfa. AVIF ofrece compresión con y sin pérdida.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP to AVIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Como convertir BMP a AVIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cómo convertir BMP a AVIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Subir archivos",
-          "description": "Arrastra archivos a la pagina o haz clic para seleccionarlos."
+          "icon": "RiUploadCloud2Line",
+          "title": "Sube tu archivo BMP",
+          "description": "Arrastra y suelta tu imagen BMP en el área del convertidor o haz clic para explorar tu dispositivo. Puedes añadir varios archivos a la vez."
         },
         {
-          "position": 2,
-          "title": "Ajustar calidad",
-          "description": "Ajusta el control de calidad AVIF — valores mas bajos producen archivos mas pequenos."
+          "icon": "RiSettings3Line",
+          "title": "Ajusta la configuración",
+          "description": "Elige tus opciones de calidad y salida preferidas. El convertidor muestra una vista previa en vivo para comparar el BMP original con el resultado AVIF."
         },
         {
-          "position": 3,
-          "title": "Convertir",
-          "description": "Haz clic en Convertir — los archivos se procesan localmente en tu navegador."
-        },
-        {
-          "position": 4,
-          "title": "Descargar",
-          "description": "Descarga los archivos AVIF — individualmente o todos a la vez."
+          "icon": "RiDownloadLine",
+          "title": "Descarga tu archivo AVIF",
+          "description": "Haz clic en el botón de descarga para guardar tu archivo AVIF convertido. Para múltiples archivos, usa la descarga por lotes."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP vs AVIF – diferencias clave",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Característica</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresión</td><td class=\"py-2 text-center\">Sin pérdida</td><td class=\"py-2 text-center\">Ambas</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparencia</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sí</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animación</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sí</td></tr><tr><td class=\"py-2\">Soporte navegador</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo conviene convertir BMP a AVIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimización web",
+          "description": "BMP → AVIF – WordPress, Shopify, PrestaShop."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Correo y compartir",
+          "description": "AVIF – Gmail, Outlook, Yahoo."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Comercio electrónico",
+          "description": "Amazon.es, Wallapop, MercadoLibre, Milanuncios."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documentos y archivo",
+          "description": "AVIF – imprentas."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué diferencia a este convertidor de BMP a AVIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Tus archivos BMP se procesan completamente en tu navegador. Nada se sube a ningún servidor – tus imágenes permanecen en tu dispositivo."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Sin límites",
+          "description": "Convierte tantos archivos BMP a AVIF como necesites. Sin límites diarios, sin restricciones de tamaño, sin marcas de agua."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control de calidad",
+          "description": "Ajusta la compresión para encontrar el equilibrio perfecto entre tamaño de archivo y calidad de imagen."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversión instantánea",
+          "description": "Todo el procesamiento ocurre localmente usando APIs modernas del navegador – rápido y funcional incluso sin conexión."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversión de BMP a AVIF en la práctica",
+      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir BMP a AVIF puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Preguntas frecuentes",
+      "title": "Preguntas frecuentes sobre la conversión de BMP a AVIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Que es el formato AVIF?",
-          "answer": "AVIF es un formato de imagen moderno basado en el codec AV1. Ofrece excelente compresion — los archivos pueden ser hasta un 50% mas pequenos que JPG."
+          "question": "¿Es gratuito convertir BMP a AVIF?",
+          "answer": "Sí, este convertidor de BMP a AVIF es completamente gratuito, sin límites. Sin registro, sin marcas de agua."
         },
         {
-          "question": "Funciona AVIF en todos los navegadores?",
-          "answer": "AVIF es compatible con Chrome, Edge y Firefox. Safari tiene soporte limitado para AVIF."
+          "question": "¿Se suben mis archivos a un servidor?",
+          "answer": "No. Todo el procesamiento ocurre localmente en tu navegador. Tus archivos nunca salen de tu dispositivo."
         },
         {
-          "question": "Se envian mis archivos a un servidor?",
-          "answer": "No. La conversion se realiza completamente en tu navegador. Los archivos nunca salen de tu computadora."
+          "question": "¿Perderé calidad al convertir BMP a AVIF?",
+          "answer": "AVIF usa compresión con pérdida. Con ajustes de calidad altos (80-95%), la diferencia es imperceptible al ojo humano."
+        },
+        {
+          "question": "¿Puedo convertir varios archivos BMP a la vez?",
+          "answer": "Sí, el convertidor soporta conversión por lotes. Añade varios archivos BMP y conviértelos todos a AVIF simultáneamente."
+        },
+        {
+          "question": "¿Cuál es el tamaño máximo de archivo?",
+          "answer": "No hay límite estricto ya que el procesamiento ocurre en tu navegador. Archivos muy grandes (más de 50 MB) pueden tardar más."
+        },
+        {
+          "question": "¿Funciona el convertidor en móviles?",
+          "answer": "Sí, funciona en cualquier dispositivo con un navegador web moderno, incluyendo smartphones y tablets."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Necesitas mas?",
-      "description": "Contactanos — te ayudaremos a encontrar la solucion adecuada.",
-      "href": "/es/contacto",
-      "buttonText": "Escribenos"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "BMP to AVIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

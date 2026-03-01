@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Miksi muuntaa TIFF JPG-muotoon?",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) on häviötön kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">TIFF:n muuntaminen JPG-muotoon (JPEG) varmistaa yleismaailmallisen yhteensopivuuden kaikkien selainten ja laitteiden kanssa.</p><p class=\"text-mid mb-4\">JPG ei tue läpinäkyvyyttä – läpinäkyvät alueet täytetään taustavärillä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
+      "imageAlt": "TIFF to JPG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF → JPG",
+      "title": "Kuinka muuntaa TIFF JPG-muotoon",
       "grid": "three",
       "items": [
         {
-          "title": "1. Lisaa tiedostoja",
-          "description": "Drag TIFF files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Lataa TIFF-tiedosto",
+          "description": "Vedä ja pudota TIFF-kuva muunnosalueelle tai napsauta selataksesi laitettasi. Voit lisätä useita tiedostoja kerralla."
         },
         {
-          "title": "2. Aseta laatu",
-          "description": "JPG quality: 85% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Säädä asetuksia",
+          "description": "Valitse haluamasi laatu- ja tulostusasetukset. Muunnin näyttää reaaliaikaisen esikatselun TIFF-alkuperäisen ja JPG-tuloksen vertailua varten."
         },
         {
-          "title": "3. Lataa",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Lataa JPG-tiedosto",
+          "description": "Napsauta latauspainiketta tallentaaksesi muunnetun JPG-tiedoston. Useille tiedostoille käytä erilatausta."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF vs JPG – keskeiset erot",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Häviöllinen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Ei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Ei</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin kannattaa muuntaa TIFF JPG-muotoon?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Verkkosivujen optimointi",
+          "description": "TIFF → JPG – WordPress, Shopify, MyCashflow."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Sähköposti ja jakaminen",
+          "description": "JPG – Gmail, Outlook, Elisa Sähköposti."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Verkkokauppa",
+          "description": "Tori.fi, Verkkokauppa.com, Gigantti, Amazon."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Asiakirjat ja arkistointi",
+          "description": "JPG – painotalot."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF JPG -muunnin",
+      "title": "Mikä erottaa tämän TIFF-JPG-muuntimen?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Complete privacy",
+          "description": "Your TIFF files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
         },
         {
-          "icon": "RiInfinityFill",
+          "icon": "RiInfinityLine",
           "title": "No limits",
-          "description": "Convert as many files as you need."
+          "description": "Convert as many TIFF files to JPG as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
         },
         {
-          "icon": "RiSpeedLine",
+          "icon": "RiImageEditLine",
           "title": "Quality control",
-          "description": "Adjust JPG quality with the slider."
+          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Instant conversion",
+          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF-JPG-muunnos käytännössä",
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja.</p><p class=\"text-mid\">Tori.fi, Verkkokauppa.com, Gigantti, Amazon – WordPress, Shopify, MyCashflow.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Usein kysytyt kysymykset",
-      "openByDefault": 1,
+      "title": "Usein kysytyt kysymykset TIFF-JPG-muunnoksesta",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "TIFF → JPG?",
-          "answer": "Muunna TIFF-tiedostot kompaktiin JPG-muotoon. Ihanteellinen skannauksille ja kuva-arkistoille."
+          "question": "Onko TIFF:n muuntaminen JPG:ksi ilmaista?",
+          "answer": "Kyllä, tämä TIFF-JPG-muunnin on täysin ilmainen ilman rajoituksia. Ei rekisteröintiä, ei vesileimoja."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Ladataanko tiedostoni palvelimelle?",
+          "answer": "Ei. Käsittely tapahtuu paikallisesti selaimessasi. Tiedostosi eivät koskaan poistu laitteeltasi."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Menetänkö laatua muunnettaessa?",
+          "answer": "JPG käyttää häviöllistä pakkausta. Korkeilla asetuksilla (80-95%) ero on silmälle huomaamaton."
+        },
+        {
+          "question": "Voinko muuntaa useita tiedostoja kerralla?",
+          "answer": "Kyllä, muunnin tukee erämuunnosta. Lisää useita TIFF-tiedostoja ja muunna ne kaikki JPG-muotoon samanaikaisesti."
+        },
+        {
+          "question": "Toimiiko muunnin mobiililaitteilla?",
+          "answer": "Kyllä, se toimii millä tahansa laitteella, jossa on moderni selain."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin tyokaluihin"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

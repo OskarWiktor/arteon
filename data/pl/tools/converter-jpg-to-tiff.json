@@ -54,55 +54,169 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Jak dziala konwerter JPG na TIFF?",
-      "html": "<p>Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja odbywa sie w calosci w przegladarce — pliki nie sa wysylane na serwer. Bez rejestracji, bez limitu plikow.</p>"
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować JPG na TIFF?",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do zdjęć.</p><p class=\"text-mid mb-4\">Konwersja JPG na TIFF (Tagged Image File Format) zachowuje każdy piksel obrazu dzięki kompresji bezstratnej.</p><p class=\"text-mid mb-4\">TIFF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, TIFF zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików JPG, ile potrzebujesz – całkowicie za darmo.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG to TIFF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Jak przekonwertowac JPG na TIFF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować JPG na TIFF?",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Wgraj pliki",
-          "description": "Przeciagnij pliki na strone lub kliknij, aby je wybrac z dysku."
+          "icon": "RiUploadCloud2Line",
+          "title": "Wgraj plik JPG",
+          "description": "Przeciągnij i upuść obraz JPG na obszar konwertera lub kliknij, aby wybrać plik z urządzenia. Możesz dodać wiele plików naraz."
         },
         {
-          "position": 2,
-          "title": "Konwertuj",
-          "description": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+          "icon": "RiSettings3Line",
+          "title": "Dostosuj ustawienia",
+          "description": "Wybierz preferowane ustawienia jakości i wyjścia. Konwerter pokazuje podgląd na żywo, dzięki czemu możesz porównać oryginał JPG z wynikiem TIFF przed pobraniem."
         },
         {
-          "position": 3,
-          "title": "Pobierz",
-          "description": "Pobierz gotowe pliki TIFF — pojedynczo lub wszystkie naraz."
+          "icon": "RiDownloadLine",
+          "title": "Pobierz plik TIFF",
+          "description": "Kliknij przycisk pobierania, aby zapisać przekonwertowany plik TIFF. W przypadku wielu plików użyj opcji zbiorczego pobierania."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG a TIFF – porównanie formatów",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Stratna</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Nie</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować JPG na TIFF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optymalizacja stron www",
+          "description": "Konwertuj JPG na TIFF, aby przygotować obrazy do publikacji w internecie."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail i udostępnianie",
+          "description": "Pliki TIFF są kompatybilne z większością nowoczesnych platform. Konwertuj na TIFF, aby uzyskać obrazy wysokiej jakości do udostępniania."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce i marketplace",
+          "description": "Platformy takie jak Allegro, OLX, Empik, Ceneo mogą wymagać określonych formatów – konwersja na TIFF zapewnia zgodność zdjęć z ich wymaganiami."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenty i archiwizacja",
+          "description": "TIFF to doskonały wybór do archiwizacji i profesjonalnego druku dzięki kompresji bezstratnej."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter JPG na TIFF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki JPG są przetwarzane wyłącznie w Twojej przeglądarce. Nic nie jest przesyłane na serwer – obrazy cały czas pozostają na Twoim urządzeniu."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez limitów",
+          "description": "Konwertuj tyle plików JPG na TIFF, ile potrzebujesz. Bez dziennych limitów, bez ograniczeń rozmiaru pliku i bez znaków wodnych."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola jakości",
+          "description": "Dostosuj ustawienia kompresji, aby znaleźć idealną równowagę między rozmiarem pliku a jakością obrazu. Podgląd zmian w czasie rzeczywistym."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Błyskawiczna konwersja",
+          "description": "Całe przetwarzanie odbywa się lokalnie z wykorzystaniem nowoczesnych API przeglądarki – konwersja jest szybka i działa nawet bez internetu po załadowaniu strony."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Konwersja JPG na TIFF w praktyce",
+      "html": "<p class=\"text-mid mb-4\">Polskie platformy sprzedażowe i serwisy ogłoszeniowe często wymagają konkretnych formatów graficznych. Niezależnie od tego, czy przygotowujesz zdjęcia produktów na Allegro, OLX, Empik, Ceneo, optymalizujesz grafiki w WordPress, Shoper, Sky-Shop, czy konwertujesz zdjęcia do gov.pl i ePUAP – odpowiedni format ma kluczowe znaczenie.</p><p class=\"text-mid mb-4\">Współczesne standardy webowe coraz bardziej faworyzują wydajne formaty. Google PageSpeed Insights i metryki Core Web Vitals nagradzają strony z zoptymalizowanymi obrazami. Konwersja JPG na TIFF może bezpośrednio poprawić wskaźnik Largest Contentful Paint (LCP), co wpływa na pozycje w wyszukiwarce i doświadczenie użytkowników.</p><p class=\"text-mid\">W przypadku kampanii e-mail marketingowych i mediów społecznościowych, TIFF oferuje doskonałą kompresję przy zachowaniu jakości wizualnej. Niezależnie od tego, czy jesteś freelancerem, właścicielem małej firmy czy użytkownikiem korporacyjnym – ten konwerter niezawodnie obsłuży Twoje potrzeby.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Najczesciej zadawane pytania",
+      "title": "Najczęściej zadawane pytania o konwersji JPG na TIFF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Czym jest format TIFF?",
-          "answer": "TIFF to profesjonalny format bezstratny uzywany w druku, fotografii i archiwizacji. Zachowuje pelna jakosc obrazu bez kompresji stratnej."
+          "question": "Czy konwersja JPG na TIFF jest darmowa?",
+          "answer": "Tak, konwerter JPG na TIFF jest całkowicie darmowy i nie ma żadnych limitów. Możesz konwertować dowolną liczbę plików bez rejestracji i bez znaków wodnych."
         },
         {
-          "question": "Dlaczego pliki TIFF sa takie duze?",
-          "answer": "TIFF przechowuje dane obrazu bez kompresji stratnej, co gwarantuje pelna jakosc, ale skutkuje wiekszymi plikami. To pozadane w profesjonalnych zastosowaniach — druku, DTP i archiwizacji."
+          "question": "Czy konwerter przesyła moje pliki na serwer?",
+          "answer": "Nie. Całe przetwarzanie odbywa się lokalnie w Twojej przeglądarce za pomocą JavaScript i Canvas API. Pliki nigdy nie opuszczają Twojego urządzenia, co gwarantuje pełną prywatność i bezpieczeństwo."
         },
         {
-          "question": "Czy moje pliki sa wysylane na serwer?",
-          "answer": "Nie. Konwersja odbywa sie w calosci w przegladarce. Pliki nie opuszczaja komputera."
+          "question": "Czy stracę jakość podczas konwersji JPG na TIFF?",
+          "answer": "TIFF obsługuje kompresję bezstratną, więc możesz zachować oryginalną jakość obrazu w całości."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików JPG naraz?",
+          "answer": "Tak, konwerter obsługuje konwersję wsadową. Możesz dodać wiele plików JPG i przekonwertować je wszystkie na TIFF jednocześnie."
+        },
+        {
+          "question": "Jaki jest maksymalny rozmiar pliku do konwersji?",
+          "answer": "Nie ma twardego limitu rozmiaru, ponieważ przetwarzanie odbywa się w przeglądarce. Bardzo duże pliki (powyżej 50 MB) mogą wymagać więcej czasu w zależności od pamięci i mocy obliczeniowej urządzenia."
+        },
+        {
+          "question": "Czy konwerter działa na urządzeniach mobilnych?",
+          "answer": "Tak, konwerter działa na każdym urządzeniu z nowoczesną przeglądarką, w tym na smartfonach i tabletach. Interfejs dostosowuje się do rozmiaru ekranu."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Potrzebujesz wiecej?",
-      "description": "Skontaktuj sie z nami — pomozemy dobrac odpowiednie rozwiazanie.",
-      "href": "/kontakt",
-      "buttonText": "Napisz do nas"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JPG to TIFF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Warum HEIC in PNG konvertieren?",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Apple-Gerätefotos verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von HEIC in PNG (Portable Network Graphics) stellt universelle Kompatibilität mit allen Browsern und Geräten sicher.</p><p class=\"text-mid mb-4\">PNG unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt PNG die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "HEIC to PNG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "HEIC → PNG",
+      "title": "So konvertieren Sie HEIC in PNG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Dateien hinzufugen",
-          "description": "Drag HEIC files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "HEIC-Datei hochladen",
+          "description": "Ziehen Sie Ihr HEIC-Bild auf den Konverterbereich oder klicken Sie, um Dateien auszuwählen. Mehrere Dateien gleichzeitig möglich."
         },
         {
-          "title": "2. Konvertieren",
-          "description": "PNG is lossless.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Einstellungen anpassen",
+          "description": "Wählen Sie Qualität und Ausgabeoptionen. Der Konverter zeigt eine Live-Vorschau zum Vergleich von HEIC-Original und PNG-Ergebnis."
         },
         {
-          "title": "3. Herunterladen",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "PNG-Datei herunterladen",
+          "description": "Klicken Sie auf Download, um Ihre konvertierte PNG-Datei zu speichern. Bei mehreren Dateien nutzen Sie den Stapeldownload."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC vs. PNG – die wichtigsten Unterschiede",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann sollten Sie HEIC in PNG konvertieren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-Optimierung",
+          "description": "HEIC → PNG – WordPress, Shopify, TYPO3."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-Mail und Teilen",
+          "description": "PNG – Gmail, Outlook, GMX, Web.de."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-Commerce",
+          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumente und Archivierung",
+          "description": "PNG – Druckereien."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "HEIC zu PNG Konverter",
+      "title": "Was zeichnet diesen HEIC-zu-PNG-Konverter aus?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Vollständiger Datenschutz",
+          "description": "Ihre HEIC-Dateien werden ausschließlich in Ihrem Browser verarbeitet. Nichts wird auf einen Server hochgeladen – DSGVO-konform."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Keine Limits",
+          "description": "Konvertieren Sie so viele HEIC-Dateien in PNG wie nötig. Keine täglichen Limits, keine Größenbeschränkungen, keine Wasserzeichen."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Lossless",
-          "description": "PNG preserves full image quality."
+          "title": "Qualitätskontrolle",
+          "description": "Passen Sie die Kompressionseinstellungen an, um die perfekte Balance zwischen Dateigröße und Bildqualität zu finden."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Sofortige Konvertierung",
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs – schnell und auch ohne Internetverbindung nutzbar."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC-zu-PNG-Konvertierung in der Praxis",
+      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von HEIC in PNG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet PNG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,32 @@
     },
     {
       "type": "faq",
-      "title": "Haufig gestellte Fragen",
-      "openByDefault": 1,
+      "title": "Häufig gestellte Fragen zur Konvertierung von HEIC in PNG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "HEIC → PNG?",
-          "answer": "iPhone HEIC-Fotos in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz."
+          "question": "Ist die Konvertierung von HEIC in PNG kostenlos?",
+          "answer": "Ja, dieser HEIC-zu-PNG-Konverter ist vollständig kostenlos, ohne Limits. Keine Registrierung, keine Wasserzeichen."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Werden meine Dateien auf einen Server hochgeladen?",
+          "answer": "Nein. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Dateien verlassen niemals Ihr Gerät – vollständig DSGVO-konform."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Verliere ich Qualität bei der Konvertierung von HEIC in PNG?",
+          "answer": "PNG unterstützt verlustfreie Komprimierung, sodass die Originalqualität vollständig erhalten bleibt."
+        },
+        {
+          "question": "Kann ich mehrere HEIC-Dateien gleichzeitig konvertieren?",
+          "answer": "Ja, der Konverter unterstützt Stapelkonvertierung. Fügen Sie mehrere HEIC-Dateien hinzu und konvertieren Sie alle gleichzeitig in PNG."
+        },
+        {
+          "question": "Wie groß dürfen die Dateien maximal sein?",
+          "answer": "Es gibt keine feste Größenbegrenzung, da die Verarbeitung in Ihrem Browser stattfindet. Sehr große Dateien (über 50 MB) können je nach Gerät länger dauern."
+        },
+        {
+          "question": "Funktioniert der Konverter auf Mobilgeräten?",
+          "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
         }
       ]
     },
@@ -149,10 +218,6 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

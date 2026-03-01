@@ -59,60 +59,182 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "How does the BMP to TIFF converter work?",
-      "html": "<p>Convert BMP files to professional TIFF format for printing. Conversion runs entirely in your browser — files are never sent to a server. No registration, no file limit.</p>"
+      "type": "sectionBasic",
+      "title": "Why convert BMP to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is a lossless image format supporting millions colors. It is widely used for uncompressed images and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting BMP to TIFF (Tagged Image File Format) gives you more flexibility in how and where you use your images.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, TIFF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many BMP files as you need, completely free.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP to TIFF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "How to convert BMP to TIFF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert BMP to TIFF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Upload files",
-          "description": "Drag files onto the page or click to select from disk."
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload your BMP file",
+          "description": "Drag and drop your BMP image onto the converter area or click to browse your device. You can add multiple files at once for batch conversion."
         },
         {
-          "position": 2,
-          "title": "Set quality",
-          "description": "Adjust the TIFF quality slider — lower values produce smaller files."
+          "icon": "RiSettings3Line",
+          "title": "Adjust settings",
+          "description": "Choose your preferred quality and output options. The converter shows a live preview so you can compare the original BMP with the TIFF result before downloading."
         },
         {
-          "position": 3,
-          "title": "Convert",
-          "description": "Click Convert — files are processed locally in your browser."
-        },
-        {
-          "position": 4,
-          "title": "Download",
-          "description": "Download the TIFF files — individually or all at once."
+          "icon": "RiDownloadLine",
+          "title": "Download your TIFF file",
+          "description": "Click the download button to save your converted TIFF file. For multiple files, use the batch download option to get all results in one click."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP vs TIFF – key differences",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Feature</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparency</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Yes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Browser support</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When should you convert BMP to TIFF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website optimization",
+          "description": "Convert BMP to TIFF to prepare images for web publication."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email and sharing",
+          "description": "TIFF files are compatible with most modern platforms. Convert to TIFF for high-quality images suitable for sharing."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce and marketplaces",
+          "description": "Platforms like Amazon, eBay, Etsy, Shopify may require specific formats – converting to TIFF ensures your product images meet their requirements."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documents and archival",
+          "description": "TIFF is an excellent choice for archival and professional printing due to its lossless compression."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this BMP to TIFF converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "Your BMP files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "No limits",
+          "description": "Convert as many BMP files to TIFF as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Quality control",
+          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Instant conversion",
+          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP to TIFF conversion in practice",
+      "html": "<p class=\"text-mid mb-4\">Businesses, developers, and creators worldwide rely on image format compatibility. Whether you are preparing product images for Amazon, eBay, Etsy, Shopify, optimizing graphics for WordPress, Wix, Squarespace, or converting photos for government portals worldwide, having the right format matters.</p><p class=\"text-mid mb-4\">Modern web standards increasingly favor efficient formats. Google PageSpeed Insights and Core Web Vitals metrics reward pages that use optimized images. Converting BMP to TIFF can directly improve your Largest Contentful Paint (LCP) score, which impacts both search rankings and user experience.</p><p class=\"text-mid\">For email marketing campaigns and social media, TIFF provides excellent compression while maintaining visual quality. Whether you are a freelancer, small business owner, or enterprise user, this converter handles your image conversion needs reliably and securely.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Tips for converting BMP to TIFF",
+      "html": "<ul class=\"list-disc pl-6 space-y-2\"><li><strong>Batch convert for efficiency</strong> – if you have many BMP files, use the batch conversion feature to process them all at once. This saves considerable time compared to one-by-one conversion.</li><li><strong>Compare before downloading</strong> – use the live preview to compare the original BMP with the TIFF result. Adjust quality settings until you find the right balance for your specific use case.</li><li><strong>Keep your originals</strong> – always save a copy of your original BMP files. Even with lossless conversion, it is good practice to keep source files.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Frequently asked questions",
+      "title": "Frequently asked questions about BMP to TIFF conversion",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "What is TIFF format?",
-          "answer": "TIFF is a professional lossless image format used in printing, publishing, and archiving. It supports high color depth and multiple layers."
+          "question": "Is converting BMP to TIFF free?",
+          "answer": "Yes, this BMP to TIFF converter is completely free with no limits. You can convert as many files as you need without registration or watermarks."
         },
         {
-          "question": "Are TIFF files larger than JPG?",
-          "answer": "Yes. TIFF files are typically much larger because they use lossless compression or no compression at all."
+          "question": "Does the converter upload my files to a server?",
+          "answer": "No. All processing happens locally in your browser using JavaScript and Canvas API. Your files never leave your device, ensuring complete privacy and security."
         },
         {
-          "question": "Are my files sent to a server?",
-          "answer": "No. Conversion runs entirely in your browser. Files never leave your computer."
+          "question": "Will I lose quality when converting BMP to TIFF?",
+          "answer": "TIFF supports lossless compression, so you can preserve the original image quality completely. If TIFF also supports lossy mode, you can choose lower quality for smaller files."
+        },
+        {
+          "question": "Can I add transparency when converting BMP to TIFF?",
+          "answer": "While TIFF supports transparency, the original BMP file does not contain transparency data. The converted TIFF file will maintain the same appearance as the original without transparent areas."
+        },
+        {
+          "question": "Can I convert multiple BMP files at once?",
+          "answer": "Yes, the converter supports batch conversion. You can add multiple BMP files and convert them all to TIFF simultaneously. Use the batch download option to save all converted files at once."
+        },
+        {
+          "question": "What is the maximum file size I can convert?",
+          "answer": "There is no hard file size limit since processing happens in your browser. However, very large files (over 50 MB) may take longer to process depending on your device's available memory and processing power."
+        },
+        {
+          "question": "Does the converter work on mobile devices?",
+          "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets. The interface adapts to your screen size for a comfortable experience on any device."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Need more?",
-      "description": "Contact us — we will help you find the right solution.",
-      "href": "/en/contact",
-      "buttonText": "Write to us"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "BMP to TIFF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

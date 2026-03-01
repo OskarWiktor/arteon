@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "Conversor PNG para JPG",
-      "html": "<p class=\"text-mid\">Converta ficheiros PNG para JPG no navegador. Sem limite de ficheiros, sem registo.</p>",
+      "title": "Por que converter PNG para JPG?",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) é um formato de imagem sem perda que suporta milhões de cores. É amplamente utilizado para gráficos com transparência.</p><p class=\"text-mid mb-4\">Converter PNG para JPG (JPEG) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">JPG não suporta transparência – as áreas transparentes serão preenchidas com uma cor de fundo. Como formato com perda, JPG atinge excelentes rácios de compressão.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
-      "imageAlt": "Conversor PNG para JPG – Arteon"
+      "imageAlt": "PNG to JPG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "PNG → JPG",
+      "title": "Como converter PNG para JPG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Adicionar ficheiros",
-          "description": "Arraste ficheiros PNG para a zona de envio ou clique para selecionar ficheiros do seu dispositivo.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Carregue o seu ficheiro PNG",
+          "description": "Arraste e solte a sua imagem PNG na área do conversor ou clique para procurar no dispositivo. Pode adicionar vários ficheiros de uma vez."
         },
         {
-          "title": "2. Converter",
-          "description": "Clique em converter. Ajuste a qualidade de JPG com o controlo deslizante.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Ajuste as configurações",
+          "description": "Escolha as suas preferências de qualidade e saída. O conversor mostra uma pré-visualização ao vivo para comparar o original PNG com o resultado JPG."
         },
         {
-          "title": "3. Transferir",
-          "description": "Transfira os ficheiros JPG convertidos individualmente ou todos de uma vez.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Descarregue o seu ficheiro JPG",
+          "description": "Clique no botão de download para guardar o ficheiro JPG convertido. Para vários ficheiros, use o download em lote."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "PNG vs JPG – diferenças principais",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caraterística</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressão</td><td class=\"py-2 text-center\">Sem perda</td><td class=\"py-2 text-center\">Com perda</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparência</td><td class=\"py-2 text-center\">Sim</td><td class=\"py-2 text-center\">Não</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animação</td><td class=\"py-2 text-center\">Não</td><td class=\"py-2 text-center\">Não</td></tr><tr><td class=\"py-2\">Suporte navegador</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando converter PNG para JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Otimização web",
+          "description": "PNG → JPG – WordPress, Shopify, Nuvemshop."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email e partilha",
+          "description": "JPG – Gmail, Outlook, UOL Mail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "OLX.pt, KuantoKusta, Amazon, Mercado Livre."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documentos e arquivo",
+          "description": "JPG – gráficas."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Funcionalidades do conversor PNG para JPG",
+      "title": "O que diferencia este conversor de PNG para JPG?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Privacidade total",
-          "description": "Os ficheiros nunca saem do seu dispositivo. A conversão é executada localmente no navegador — nada é enviado para qualquer servidor."
+          "description": "Os seus ficheiros PNG são processados inteiramente no seu navegador. Nada é enviado para servidores – conforme com o RGPD."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Sem limite de ficheiros",
-          "description": "Converta tantos ficheiros quantos precisar numa única sessão. Sem restrições, sem registo necessário."
+          "icon": "RiInfinityLine",
+          "title": "Sem limites",
+          "description": "Converta quantos ficheiros PNG para JPG precisar. Sem limites diários, sem restrições de tamanho, sem marcas de água."
         },
         {
-          "icon": "RiSpeedLine",
+          "icon": "RiImageEditLine",
           "title": "Controlo de qualidade",
-          "description": "Ajuste a qualidade de saída de JPG com o controlo deslizante. Valores mais altos significam melhor qualidade e ficheiros maiores."
+          "description": "Ajuste as definições de compressão para encontrar o equilíbrio perfeito entre tamanho e qualidade."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Transferência em lote",
-          "description": "Transfira os ficheiros convertidos um a um ou todos de uma vez com um único clique."
+          "icon": "RiFlashlightLine",
+          "title": "Conversão instantânea",
+          "description": "Todo o processamento acontece localmente com APIs modernas do navegador – rápido e funcional mesmo sem ligação."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversão de PNG para JPG na prática",
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos.</p><p class=\"text-mid\">OLX.pt, KuantoKusta, Amazon, Mercado Livre – WordPress, Shopify, Nuvemshop.</p>"
     },
     {
       "type": "gap",
@@ -126,27 +172,27 @@
     {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de PNG para JPG",
-      "openByDefault": 1,
+      "openByDefault": 0,
       "items": [
         {
-          "question": "A conversão de PNG para JPG é sem perdas?",
-          "answer": "JPG utiliza compressão com perdas por predefinição. Pode ajustar o controlo de qualidade para controlar o equilíbrio entre o tamanho do ficheiro e a qualidade visual. Valores mais altos produzem melhor qualidade mas ficheiros maiores."
-        },
-        {
-          "question": "A transparência é preservada durante a conversão?",
-          "answer": "JPG não suporta transparência. As áreas transparentes do ficheiro PNG são substituídas por um fundo branco."
-        },
-        {
-          "question": "Porque é que o ficheiro JPG de saída é maior que o original?",
-          "answer": "O tamanho do ficheiro depende do ajuste de qualidade e do conteúdo da imagem. Valores mais baixos produzem ficheiros menores. Ajuste o controlo conforme as suas necessidades."
-        },
-        {
-          "question": "Que navegadores suportam este conversor?",
-          "answer": "O conversor funciona em todos os navegadores modernos: Chrome, Edge, Firefox e Safari. Para suporte ao formato AVIF, utilize Chrome 85+, Firefox 93+ ou Safari 16.4+."
+          "question": "A conversão de PNG para JPG é gratuita?",
+          "answer": "Sim, este conversor de PNG para JPG é completamente gratuito, sem limites. Sem registo, sem marcas de água."
         },
         {
           "question": "Os meus ficheiros são enviados para um servidor?",
-          "answer": "Não. Todo o processo de conversão é executado localmente no seu navegador em JavaScript. Os seus ficheiros nunca saem do dispositivo e não temos acesso a eles."
+          "answer": "Não. Todo o processamento acontece localmente no seu navegador. Os seus ficheiros nunca saem do seu dispositivo."
+        },
+        {
+          "question": "Vou perder qualidade ao converter PNG para JPG?",
+          "answer": "JPG usa compressão com perda. Em configurações de alta qualidade (80-95%), a diferença é imperceptível."
+        },
+        {
+          "question": "Posso converter vários ficheiros PNG de uma vez?",
+          "answer": "Sim, o conversor suporta conversão em lote. Adicione vários ficheiros PNG e converta-os todos para JPG simultaneamente."
+        },
+        {
+          "question": "O conversor funciona em dispositivos móveis?",
+          "answer": "Sim, funciona em qualquer dispositivo com um navegador web moderno, incluindo smartphones e tablets."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "SVG PNG -muunnin",
-      "html": "<p class=\"text-mid\">Muunna SVG-vektorigrafiikka PNG-muotoon. Ihanteellinen dokumentteihin ja sosiaaliseen mediaan.</p>",
+      "title": "Miksi muuntaa SVG PNG-muotoon?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) on häviötön kuvaformaatti, joka perustuu vektorigrafiikkaan.</p><p class=\"text-mid mb-4\">SVG:n muuntaminen PNG-muotoon (Portable Network Graphics) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">PNG tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
-      "imageAlt": "SVG PNG -muunnin – Arteon"
+      "imageAlt": "SVG to PNG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "SVG → PNG",
+      "title": "Kuinka muuntaa SVG PNG-muotoon",
       "grid": "three",
       "items": [
         {
-          "title": "1. Lisää tiedostot",
-          "description": "Vedä SVG-tiedostot latauskenttään tai napsauta valitaksesi tiedostot laitteeltasi.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Lataa SVG-tiedosto",
+          "description": "Vedä ja pudota SVG-kuva muunnosalueelle tai napsauta selataksesi laitettasi. Voit lisätä useita tiedostoja kerralla."
         },
         {
-          "title": "2. Muunna",
-          "description": "Napsauta muunna. PNG on häviötön muoto — laatuasetusta ei tarvita.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Säädä asetuksia",
+          "description": "Valitse haluamasi laatu- ja tulostusasetukset. Muunnin näyttää reaaliaikaisen esikatselun SVG-alkuperäisen ja PNG-tuloksen vertailua varten."
         },
         {
-          "title": "3. Lataa",
-          "description": "Lataa muunnetut PNG-tiedostot yksitellen tai kaikki kerralla.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Lataa PNG-tiedosto",
+          "description": "Napsauta latauspainiketta tallentaaksesi muunnetun PNG-tiedoston. Useille tiedostoille käytä erilatausta."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs PNG – keskeiset erot",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Häviötön</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Ei</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin kannattaa muuntaa SVG PNG-muotoon?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Verkkosivujen optimointi",
+          "description": "SVG → PNG – WordPress, Shopify, MyCashflow."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Sähköposti ja jakaminen",
+          "description": "PNG – Gmail, Outlook, Elisa Sähköposti."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Verkkokauppa",
+          "description": "Tori.fi, Verkkokauppa.com, Gigantti, Amazon."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Asiakirjat ja arkistointi",
+          "description": "PNG – painotalot."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "SVG – PNG -muuntimen ominaisuudet",
+      "title": "Mikä erottaa tämän SVG-PNG-muuntimen?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Täysi yksityisyys",
-          "description": "Tiedostot eivät koskaan poistu laitteeltasi. Muunnos tapahtuu paikallisesti selaimessa — mitään ei ladata palvelimelle."
+          "title": "Complete privacy",
+          "description": "Your SVG files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Ei tiedostorajaa",
-          "description": "Muunna niin monta tiedostoa kuin tarvitset yhdessä istunnossa. Ei rajoituksia, ei rekisteröintiä."
+          "icon": "RiInfinityLine",
+          "title": "No limits",
+          "description": "Convert as many SVG files to PNG as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Häviötön tulos",
-          "description": "PNG säilyttää kuvan täyden laadun ilman tietojen menetystä. Ihanteellinen grafiikoille ja jatkokäsittelylle."
+          "title": "Quality control",
+          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Erälataus",
-          "description": "Lataa muunnetut tiedostot yksitellen tai kaikki kerralla yhdellä napsautuksella."
+          "icon": "RiFlashlightLine",
+          "title": "Instant conversion",
+          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG-PNG-muunnos käytännössä",
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja.</p><p class=\"text-mid\">Tori.fi, Verkkokauppa.com, Gigantti, Amazon – WordPress, Shopify, MyCashflow.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Usein kysytyt kysymykset SVG – PNG -muunnoksesta",
-      "openByDefault": 1,
+      "title": "Usein kysytyt kysymykset SVG-PNG-muunnoksesta",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Onko SVG – PNG -muunnos häviötön?",
-          "answer": "PNG on häviötön muoto, joten tulostiedosto säilyttää alkuperäisen SVG-tiedoston täyden kuvanlaadun. Jos SVG käytti häviöllistä pakkausta, jo menetettyä tietoa ei voida palauttaa."
-        },
-        {
-          "question": "Säilyykö läpinäkyvyys muunnoksen aikana?",
-          "answer": "Kyllä. PNG tukee läpinäkyvyyttä (alfa-kanava), joten SVG-tiedoston läpinäkyvät alueet säilyvät täysin tuloksessa."
-        },
-        {
-          "question": "Miksi PNG-tulostiedosto on suurempi kuin alkuperäinen?",
-          "answer": "PNG on häviötön muoto, joka säilyttää jokaisen pikselin ilman pakkausartefakteja. Häviöttömät tiedostot ovat luonnostaan suurempia — tämä on odotettua ja tarkoittaa, ettei laatua menetetä."
-        },
-        {
-          "question": "Mitkä selaimet tukevat tätä muunninta?",
-          "answer": "Muunnin toimii kaikissa moderneissa selaimissa: Chrome, Edge, Firefox ja Safari. AVIF-muodon tukeen käytä Chrome 85+, Firefox 93+ tai Safari 16.4+."
+          "question": "Onko SVG:n muuntaminen PNG:ksi ilmaista?",
+          "answer": "Kyllä, tämä SVG-PNG-muunnin on täysin ilmainen ilman rajoituksia. Ei rekisteröintiä, ei vesileimoja."
         },
         {
           "question": "Ladataanko tiedostoni palvelimelle?",
-          "answer": "Ei. Koko muunnosprosessi suoritetaan paikallisesti selaimessasi JavaScriptillä. Tiedostosi eivät koskaan poistu laitteeltasi, eikä meillä ole niihin pääsyä."
+          "answer": "Ei. Käsittely tapahtuu paikallisesti selaimessasi. Tiedostosi eivät koskaan poistu laitteeltasi."
+        },
+        {
+          "question": "Menetänkö laatua muunnettaessa?",
+          "answer": "PNG tukee häviötöntä pakkausta, joka säilyttää alkuperäisen laadun."
+        },
+        {
+          "question": "Voinko muuntaa useita tiedostoja kerralla?",
+          "answer": "Kyllä, muunnin tukee erämuunnosta. Lisää useita SVG-tiedostoja ja muunna ne kaikki PNG-muotoon samanaikaisesti."
+        },
+        {
+          "question": "Toimiiko muunnin mobiililaitteilla?",
+          "answer": "Kyllä, se toimii millä tahansa laitteella, jossa on moderni selain."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin työkaluihin"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

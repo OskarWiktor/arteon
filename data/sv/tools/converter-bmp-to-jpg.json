@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "BMP till JPG-konverterare",
-      "html": "<p class=\"text-mid\">Konvertera BMP-filer till lättvikts-JPG. Drastisk storleksminskning.</p>",
+      "title": "Varför konvertera BMP till JPG?",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) är ett förlustfritt bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av BMP till JPG (JPEG) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">JPG stödjer inte transparens – transparenta områden fylls med en bakgrundsfärg.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
-      "imageAlt": "BMP till JPG-konverterare – Arteon"
+      "imageAlt": "BMP to JPG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "BMP → JPG",
+      "title": "Så konverterar du BMP till JPG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Lägg till filer",
-          "description": "Dra BMP-filer till uppladdningsytan eller klicka för att välja filer från din enhet.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Ladda upp din BMP-fil",
+          "description": "Dra och släpp din BMP-bild på konverteringsområdet eller klicka för att bläddra på din enhet. Du kan lägga till flera filer samtidigt."
         },
         {
-          "title": "2. Konvertera",
-          "description": "Klicka på konvertera. Justera JPG-kvaliteten med reglaget.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Justera inställningar",
+          "description": "Välj önskade kvalitets- och utdatainställningar. Konverteraren visar en förhandsgranskning för jämförelse av BMP-originalet med JPG-resultatet."
         },
         {
-          "title": "3. Ladda ner",
-          "description": "Ladda ner de konverterade JPG-filerna enskilt eller alla på en gång.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Ladda ner din JPG-fil",
+          "description": "Klicka på nedladdningsknappen för att spara din konverterade JPG-fil. För flera filer, använd batchnedladdning."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP vs JPG – de viktigaste skillnaderna",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Förlustfri</td><td class=\"py-2 text-center\">Förlustbringande</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När ska du konvertera BMP till JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Webboptimering",
+          "description": "BMP → JPG – WordPress, Shopify, Quickbutik."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-post och delning",
+          "description": "JPG – Gmail, Outlook, Telia."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-handel",
+          "description": "Blocket.se, Tradera, CDON, Amazon.se."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokument och arkivering",
+          "description": "JPG – tryckerier."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "BMP till JPG-konverterare — funktioner",
+      "title": "Vad gör denna BMP-till-JPG-konverterare annorlunda?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Fullständig integritet",
-          "description": "Filerna lämnar aldrig din enhet. Konverteringen körs lokalt i webbläsaren — inget laddas upp till någon server."
+          "description": "Dina BMP-filer bearbetas uteslutande i din webbläsare. Inget laddas upp till någon server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Ingen filgräns",
-          "description": "Konvertera så många filer som du behöver i en enda session. Inga begränsningar, ingen registrering krävs."
+          "icon": "RiInfinityLine",
+          "title": "Inga begränsningar",
+          "description": "Konvertera så många BMP-filer till JPG som du behöver. Inga dagliga gränser, inga storleksbegränsningar, inga vattenmärken."
         },
         {
-          "icon": "RiSpeedLine",
+          "icon": "RiImageEditLine",
           "title": "Kvalitetskontroll",
-          "description": "Justera JPG-utdatakvaliteten med reglaget. Högre värden innebär bättre kvalitet och större filer."
+          "description": "Justera komprimeringsinställningarna för den perfekta balansen mellan filstorlek och bildkvalitet."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Massnedladdning",
-          "description": "Ladda ner konverterade filer en i taget eller alla på en gång med ett enda klick."
+          "icon": "RiFlashlightLine",
+          "title": "Omedelbar konvertering",
+          "description": "All bearbetning sker lokalt med moderna webbläsar-API:er – snabbt och fungerar även utan internetanslutning."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP-till-JPG-konvertering i praktiken",
+      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data.</p><p class=\"text-mid\">Blocket.se, Tradera, CDON, Amazon.se – WordPress, Shopify, Quickbutik.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Vanliga frågor om konvertering från BMP till JPG",
-      "openByDefault": 1,
+      "title": "Vanliga frågor om konvertering av BMP till JPG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Är konvertering från BMP till JPG förlustfri?",
-          "answer": "JPG använder förlustgivande komprimering som standard. Du kan justera kvalitetsreglaget för att styra balansen mellan filstorlek och visuell kvalitet. Högre värden ger bättre kvalitet men större filer."
-        },
-        {
-          "question": "Bevaras transparensen vid konvertering?",
-          "answer": "JPG stöder inte transparens. Transparenta områden från BMP-filen ersätts med en vit bakgrund."
-        },
-        {
-          "question": "Varför är JPG-utdatafilen större än originalet?",
-          "answer": "Filstorleken beror på kvalitetsinställningen och bildens innehåll. Lägre kvalitetsvärden ger mindre filer. Justera reglaget efter dina behov."
-        },
-        {
-          "question": "Vilka webbläsare stöder denna konverterare?",
-          "answer": "Konverteraren fungerar i alla moderna webbläsare: Chrome, Edge, Firefox och Safari. För AVIF-stöd använd Chrome 85+, Firefox 93+ eller Safari 16.4+."
+          "question": "Är det gratis att konvertera BMP till JPG?",
+          "answer": "Ja, denna BMP-till-JPG-konverterare är helt gratis utan begränsningar. Ingen registrering, inga vattenmärken."
         },
         {
           "question": "Laddas mina filer upp till en server?",
-          "answer": "Nej. Hela konverteringsprocessen körs lokalt i din webbläsare med JavaScript. Dina filer lämnar aldrig din enhet och vi har ingen åtkomst till dem."
+          "answer": "Nej. All bearbetning sker lokalt i din webbläsare. Dina filer lämnar aldrig din enhet."
+        },
+        {
+          "question": "Tappar jag kvalitet vid konvertering?",
+          "answer": "JPG använder förlustbringande komprimering. Vid högre kvalitetsinställningar (80-95%) är skillnaden omärkbar för ögat."
+        },
+        {
+          "question": "Kan jag konvertera flera filer samtidigt?",
+          "answer": "Ja, konverteraren stödjer batchkonvertering."
+        },
+        {
+          "question": "Fungerar konverteraren på mobila enheter?",
+          "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Utforska fler gratisverktyg"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

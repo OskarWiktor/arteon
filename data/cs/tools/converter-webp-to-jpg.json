@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "Převodník WebP na JPG",
-      "html": "<p class=\"text-mid\">Převeďte soubory WebP na univerzálně kompatibilní JPG.</p>",
+      "title": "Proč převádět WebP na JPG?",
+      "html": "<p class=\"text-mid mb-4\">WebP (WebP) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro webové obrázky.</p><p class=\"text-mid mb-4\">Převod WebP na JPG (JPEG) zajišťuje univerzální kompatibilitu se všemi prohlížeči a zařízeními.</p><p class=\"text-mid mb-4\">JPG nepodporuje průhlednost – průhledné oblasti budou vyplněny barvou pozadí. Jako ztrátový formát dosahuje JPG vynikajících kompresních poměrů.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
-      "imageAlt": "Převodník WebP na JPG – Arteon"
+      "imageAlt": "WebP to JPG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "WEBP → JPG",
+      "title": "Jak převést WebP na JPG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Přidejte soubory",
-          "description": "Přetáhněte soubory WEBP do oblasti nahrávání nebo klikněte pro výběr souborů z vašeho zařízení.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Nahrajte soubor WebP",
+          "description": "Přetáhněte obrázek WebP do oblasti převodníku nebo klikněte pro výběr souboru. Můžete přidat více souborů najednou."
         },
         {
-          "title": "2. Převeďte",
-          "description": "Klikněte na převést. Upravte kvalitu JPG pomocí posuvníku.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Upravte nastavení",
+          "description": "Zvolte preferovanou kvalitu a možnosti výstupu. Převodník zobrazuje náhled v reálném čase pro porovnání originálu WebP s výsledkem JPG."
         },
         {
-          "title": "3. Stáhněte",
-          "description": "Stáhněte převedené soubory JPG jednotlivě nebo všechny najednou.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Stáhněte soubor JPG",
+          "description": "Klikněte na tlačítko stažení pro uložení převedeného souboru JPG. Pro více souborů použijte hromadné stažení."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP vs JPG – hlavní rozdíly",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Vlastnost</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprese</td><td class=\"py-2 text-center\">Obě</td><td class=\"py-2 text-center\">Ztrátová</td></tr><tr class=\"border-b\"><td class=\"py-2\">Průhlednost</td><td class=\"py-2 text-center\">Ano</td><td class=\"py-2 text-center\">Ne</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animace</td><td class=\"py-2 text-center\">Ano</td><td class=\"py-2 text-center\">Ne</td></tr><tr><td class=\"py-2\">Podpora prohlížečů</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy převádět WebP na JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimalizace webu",
+          "description": "WebP → JPG – WordPress, Shoptet, Shopify."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail a sdílení",
+          "description": "JPG – Gmail, Outlook, Seznam."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Heureka.cz, Alza.cz, Bazár, Mall.cz."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenty a archivace",
+          "description": "JPG – tiskárny."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Funkce převodníku WEBP na JPG",
+      "title": "Čím se tento převodník WebP na JPG liší?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Plné soukromí",
-          "description": "Soubory nikdy neopustí vaše zařízení. Převod probíhá lokálně v prohlížeči — nic se nenahrává na žádný server."
+          "title": "Úplné soukromí",
+          "description": "Vaše WebP soubory jsou zpracovávány výhradně ve vašem prohlížeči. Nic se neposílá na server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Bez omezení souborů",
-          "description": "Převeďte tolik souborů, kolik potřebujete, v jedné relaci. Žádná omezení, žádná registrace."
+          "icon": "RiInfinityLine",
+          "title": "Bez limitů",
+          "description": "Převádějte tolik WebP souborů na JPG, kolik potřebujete. Žádné denní limity, žádná omezení velikosti, žádné vodoznaky."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Ovládání kvality",
-          "description": "Upravte výstupní kvalitu JPG pomocí posuvníku. Vyšší hodnoty znamenají lepší kvalitu a větší soubory."
+          "icon": "RiImageEditLine",
+          "title": "Řízení kvality",
+          "description": "Upravte nastavení komprese pro nalezení ideální rovnováhy mezi velikostí souboru a kvalitou obrázku."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Hromadné stažení",
-          "description": "Stáhněte převedené soubory jeden po druhém nebo všechny najednou jedním kliknutím."
+          "icon": "RiFlashlightLine",
+          "title": "Okamžitý převod",
+          "description": "Veškeré zpracování probíhá lokálně pomocí moderních API prohlížeče – rychle a i bez připojení k internetu."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Převod WebP na JPG v praxi",
+      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků.</p><p class=\"text-mid\">Heureka.cz, Alza.cz, Bazár, Mall.cz – WordPress, Shoptet, Shopify.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Často kladené otázky o převodu WEBP na JPG",
-      "openByDefault": 1,
+      "title": "Často kladené otázky o převodu WebP na JPG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Je převod WEBP na JPG bezeztrátový?",
-          "answer": "JPG ve výchozím nastavení používá ztrátovou kompresi. Pomocí posuvníku kvality můžete řídit rovnováhu mezi velikostí souboru a vizuální kvalitou. Vyšší hodnoty produkují lepší kvalitu, ale větší soubory."
-        },
-        {
-          "question": "Je transparentnost zachována během převodu?",
-          "answer": "JPG nepodporuje transparentnost. Průhledné oblasti ze souboru WEBP jsou nahrazeny bílým pozadím."
-        },
-        {
-          "question": "Proč je výstupní soubor JPG větší než originál?",
-          "answer": "Velikost souboru závisí na nastavení kvality a obsahu obrázku. Nižší hodnoty kvality produkují menší soubory. Upravte posuvník podle svých potřeb."
-        },
-        {
-          "question": "Které prohlížeče podporují tento převodník?",
-          "answer": "Převodník funguje ve všech moderních prohlížečích: Chrome, Edge, Firefox a Safari. Pro podporu formátu AVIF použijte Chrome 85+, Firefox 93+ nebo Safari 16.4+."
+          "question": "Je převod WebP na JPG zdarma?",
+          "answer": "Ano, tento převodník WebP na JPG je zcela zdarma bez limitů. Bez registrace, bez vodoznaků."
         },
         {
           "question": "Jsou moje soubory nahrávány na server?",
-          "answer": "Ne. Celý proces převodu probíhá lokálně ve vašem prohlížeči v JavaScriptu. Vaše soubory nikdy neopustí vaše zařízení a my k nim nemáme přístup."
+          "answer": "Ne. Veškeré zpracování probíhá lokálně ve vašem prohlížeči. Soubory nikdy neopouštějí vaše zařízení."
+        },
+        {
+          "question": "Přijdu o kvalitu při převodu WebP na JPG?",
+          "answer": "JPG používá ztrátovou kompresi. Při vyšších nastaveních kvality (80-95%) je rozdíl lidským okem nepostřehnutelný."
+        },
+        {
+          "question": "Mohu převést více WebP souborů najednou?",
+          "answer": "Ano, převodník podporuje dávkový převod. Přidejte více WebP souborů a převeďte je všechny na JPG současně."
+        },
+        {
+          "question": "Funguje převodník na mobilních zařízeních?",
+          "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem, včetně smartphoneů a tabletů."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Objevte další bezplatné nástroje"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

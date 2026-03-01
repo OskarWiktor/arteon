@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Waarom HEIC naar JPG converteren?",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van HEIC naar JPG (JPEG) zorgt voor universele compatibiliteit met alle browsers en apparaten.</p><p class=\"text-mid mb-4\">JPG ondersteunt geen transparantie – transparante gebieden worden gevuld met een achtergrondkleur.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
+      "imageAlt": "HEIC to JPG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "HEIC → JPG",
+      "title": "Hoe HEIC naar JPG converteren",
       "grid": "three",
       "items": [
         {
-          "title": "1. Bestanden toevoegen",
-          "description": "Drag HEIC files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload uw HEIC-bestand",
+          "description": "Sleep uw HEIC-afbeelding naar het convertergebied of klik om te bladeren. U kunt meerdere bestanden tegelijk toevoegen."
         },
         {
-          "title": "2. Kwaliteit instellen",
-          "description": "JPG quality: 85% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Pas instellingen aan",
+          "description": "Kies uw gewenste kwaliteits- en uitvoeropties. De converter toont een live voorbeeld om het HEIC-origineel te vergelijken met het JPG-resultaat."
         },
         {
-          "title": "3. Downloaden",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Download uw JPG-bestand",
+          "description": "Klik op de downloadknop om uw geconverteerde JPG-bestand op te slaan. Voor meerdere bestanden kunt u de batchdownload gebruiken."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC vs JPG – de belangrijkste verschillen",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Lossy</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Nee</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Nee</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer HEIC naar JPG converteren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-optimalisatie",
+          "description": "HEIC → JPG – WordPress, Shopify, Lightspeed."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail en delen",
+          "description": "JPG – Gmail, Outlook, Ziggo Mail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Bol.com, Marktplaats, Amazon.nl, Coolblue."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documenten en archivering",
+          "description": "JPG – drukkerijen."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "HEIC naar JPG converter",
+      "title": "Wat maakt deze HEIC-naar-JPG-converter anders?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Volledige privacy",
+          "description": "Uw HEIC-bestanden worden uitsluitend in uw browser verwerkt. Niets wordt naar een server geüpload."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Geen limieten",
+          "description": "Converteer zoveel HEIC-bestanden naar JPG als nodig. Geen dagelijkse limieten, geen groottebeperkingen, geen watermerken."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Quality control",
-          "description": "Adjust JPG quality with the slider."
+          "icon": "RiImageEditLine",
+          "title": "Kwaliteitscontrole",
+          "description": "Pas de compressie-instellingen aan voor de perfecte balans tussen bestandsgrootte en beeldkwaliteit."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Directe conversie",
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API’s – snel en werkt ook zonder internetverbinding."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC-naar-JPG-conversie in de praktijk",
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens.</p><p class=\"text-mid\">Bol.com, Marktplaats, Amazon.nl, Coolblue – WordPress, Shopify, Lightspeed.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Veelgestelde vragen",
-      "openByDefault": 1,
+      "title": "Veelgestelde vragen over HEIC-naar-JPG-conversie",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "HEIC → JPG?",
-          "answer": "Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie, zonder upload."
+          "question": "Is het converteren van HEIC naar JPG gratis?",
+          "answer": "Ja, deze HEIC-naar-JPG-converter is volledig gratis, zonder limieten. Geen registratie, geen watermerken."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Worden mijn bestanden naar een server geüpload?",
+          "answer": "Nee. Alle verwerking gebeurt lokaal in uw browser. Uw bestanden verlaten nooit uw apparaat."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Verlies ik kwaliteit bij het converteren?",
+          "answer": "JPG gebruikt lossy compressie. Bij hogere kwaliteitsinstellingen (80-95%) is het verschil onzichtbaar voor het menselijk oog."
+        },
+        {
+          "question": "Kan ik meerdere bestanden tegelijk converteren?",
+          "answer": "Ja, de converter ondersteunt batchconversie."
+        },
+        {
+          "question": "Werkt de converter op mobiele apparaten?",
+          "answer": "Ja, hij werkt op elk apparaat met een moderne webbrowser."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

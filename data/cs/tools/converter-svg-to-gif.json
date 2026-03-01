@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Jak funguje prevodnik SVG na GIF?",
-      "html": "<p>Prevedte vektorovou grafiku SVG na rastrovy format GIF. Konverze probiha cele v prohlizeci — soubory se nikdy neodesilaji na server. Bez registrace, bez limitu souboru.</p>"
+      "type": "sectionBasic",
+      "title": "Proč převádět SVG na GIF?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) je bezeztrátový obrazový formát založený na vektorové grafice. Je široce používán pro loga a ikony.</p><p class=\"text-mid mb-4\">Převod SVG na GIF (Graphics Interchange Format) nabízí více flexibility.</p><p class=\"text-mid mb-4\">GIF podporuje alfa průhlednost. Jako bezeztrátový formát zachovává GIF veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to GIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Jak prevest SVG na GIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak převést SVG na GIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Nahrajte soubory",
-          "description": "Pretahnete soubory na stranku nebo kliknete pro vyber z disku."
+          "icon": "RiUploadCloud2Line",
+          "title": "Nahrajte soubor SVG",
+          "description": "Přetáhněte obrázek SVG do oblasti převodníku nebo klikněte pro výběr souboru. Můžete přidat více souborů najednou."
         },
         {
-          "position": 2,
-          "title": "Nastavte kvalitu",
-          "description": "Upravte posuvnik kvality GIF — nizsi hodnoty vytvareji mensi soubory."
+          "icon": "RiSettings3Line",
+          "title": "Upravte nastavení",
+          "description": "Zvolte preferovanou kvalitu a možnosti výstupu. Převodník zobrazuje náhled v reálném čase pro porovnání originálu SVG s výsledkem GIF."
         },
         {
-          "position": 3,
-          "title": "Konvertujte",
-          "description": "Kliknete na Konvertovat — soubory se zpracuji lokalne v prohlizeci."
-        },
-        {
-          "position": 4,
-          "title": "Stahnete",
-          "description": "Stahnete hotove soubory GIF — jednotlive nebo vsechny naraz."
+          "icon": "RiDownloadLine",
+          "title": "Stáhněte soubor GIF",
+          "description": "Klikněte na tlačítko stažení pro uložení převedeného souboru GIF. Pro více souborů použijte hromadné stažení."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs GIF – hlavní rozdíly",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Vlastnost</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprese</td><td class=\"py-2 text-center\">Bezeztrátová</td><td class=\"py-2 text-center\">Bezeztrátová</td></tr><tr class=\"border-b\"><td class=\"py-2\">Průhlednost</td><td class=\"py-2 text-center\">Ano</td><td class=\"py-2 text-center\">Ano</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animace</td><td class=\"py-2 text-center\">Ano</td><td class=\"py-2 text-center\">Ano</td></tr><tr><td class=\"py-2\">Podpora prohlížečů</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy převádět SVG na GIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimalizace webu",
+          "description": "SVG → GIF – WordPress, Shoptet, Shopify."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail a sdílení",
+          "description": "GIF – Gmail, Outlook, Seznam."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Heureka.cz, Alza.cz, Bazár, Mall.cz."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenty a archivace",
+          "description": "GIF – tiskárny."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím se tento převodník SVG na GIF liší?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Úplné soukromí",
+          "description": "Vaše SVG soubory jsou zpracovávány výhradně ve vašem prohlížeči. Nic se neposílá na server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez limitů",
+          "description": "Převádějte tolik SVG souborů na GIF, kolik potřebujete. Žádné denní limity, žádná omezení velikosti, žádné vodoznaky."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Řízení kvality",
+          "description": "Upravte nastavení komprese pro nalezení ideální rovnováhy mezi velikostí souboru a kvalitou obrázku."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Okamžitý převod",
+          "description": "Veškeré zpracování probíhá lokálně pomocí moderních API prohlížeče – rychle a i bez připojení k internetu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Převod SVG na GIF v praxi",
+      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků.</p><p class=\"text-mid\">Heureka.cz, Alza.cz, Bazár, Mall.cz – WordPress, Shoptet, Shopify.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Nejcastejsi dotazy",
+      "title": "Často kladené otázky o převodu SVG na GIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Co je format GIF?",
-          "answer": "GIF je siroce podporovany obrazovy format, ktery podporuje az 256 barev. Idealni pro jednoduchou grafiku a ikony."
+          "question": "Je převod SVG na GIF zdarma?",
+          "answer": "Ano, tento převodník SVG na GIF je zcela zdarma bez limitů. Bez registrace, bez vodoznaků."
         },
         {
-          "question": "Snizuje konverze do GIF kvalitu?",
-          "answer": "GIF pouziva omezenou paletu 256 barev. Fotografie mohou ztratit detaily."
+          "question": "Jsou moje soubory nahrávány na server?",
+          "answer": "Ne. Veškeré zpracování probíhá lokálně ve vašem prohlížeči. Soubory nikdy neopouštějí vaše zařízení."
         },
         {
-          "question": "Jsou moje soubory odeslany na server?",
-          "answer": "Ne. Konverze probiha cele v prohlizeci."
+          "question": "Přijdu o kvalitu při převodu SVG na GIF?",
+          "answer": "GIF podporuje bezeztrátovou kompresi, která zachovává původní kvalitu."
+        },
+        {
+          "question": "Mohu převést více SVG souborů najednou?",
+          "answer": "Ano, převodník podporuje dávkový převod. Přidejte více SVG souborů a převeďte je všechny na GIF současně."
+        },
+        {
+          "question": "Funguje převodník na mobilních zařízeních?",
+          "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem, včetně smartphoneů a tabletů."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Potrebujete vic?",
-      "description": "Kontaktujte nas — pomuzeme vam najit spravne reseni.",
-      "href": "/cs/kontakt",
-      "buttonText": "Napiste nam"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG to GIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

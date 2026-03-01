@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Waarom AVIF naar PNG converteren?",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van AVIF naar PNG (Portable Network Graphics) zorgt voor universele compatibiliteit met alle browsers en apparaten.</p><p class=\"text-mid mb-4\">PNG ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
+      "imageAlt": "AVIF to PNG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "AVIF → PNG",
+      "title": "Hoe AVIF naar PNG converteren",
       "grid": "three",
       "items": [
         {
-          "title": "1. Bestanden toevoegen",
-          "description": "Drag AVIF files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload uw AVIF-bestand",
+          "description": "Sleep uw AVIF-afbeelding naar het convertergebied of klik om te bladeren. U kunt meerdere bestanden tegelijk toevoegen."
         },
         {
-          "title": "2. Converteren",
-          "description": "PNG is lossless.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Pas instellingen aan",
+          "description": "Kies uw gewenste kwaliteits- en uitvoeropties. De converter toont een live voorbeeld om het AVIF-origineel te vergelijken met het PNG-resultaat."
         },
         {
-          "title": "3. Downloaden",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Download uw PNG-bestand",
+          "description": "Klik op de downloadknop om uw geconverteerde PNG-bestand op te slaan. Voor meerdere bestanden kunt u de batchdownload gebruiken."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "AVIF vs PNG – de belangrijkste verschillen",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nee</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer AVIF naar PNG converteren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-optimalisatie",
+          "description": "AVIF → PNG – WordPress, Shopify, Lightspeed."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail en delen",
+          "description": "PNG – Gmail, Outlook, Ziggo Mail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Bol.com, Marktplaats, Amazon.nl, Coolblue."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documenten en archivering",
+          "description": "PNG – drukkerijen."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "AVIF naar PNG converter",
+      "title": "Wat maakt deze AVIF-naar-PNG-converter anders?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Volledige privacy",
+          "description": "Uw AVIF-bestanden worden uitsluitend in uw browser verwerkt. Niets wordt naar een server geüpload."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Geen limieten",
+          "description": "Converteer zoveel AVIF-bestanden naar PNG als nodig. Geen dagelijkse limieten, geen groottebeperkingen, geen watermerken."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Lossless",
-          "description": "PNG preserves full image quality."
+          "title": "Kwaliteitscontrole",
+          "description": "Pas de compressie-instellingen aan voor de perfecte balans tussen bestandsgrootte en beeldkwaliteit."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Directe conversie",
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API’s – snel en werkt ook zonder internetverbinding."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "AVIF-naar-PNG-conversie in de praktijk",
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens.</p><p class=\"text-mid\">Bol.com, Marktplaats, Amazon.nl, Coolblue – WordPress, Shopify, Lightspeed.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Veelgestelde vragen",
-      "openByDefault": 1,
+      "title": "Veelgestelde vragen over AVIF-naar-PNG-conversie",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "AVIF → PNG?",
-          "answer": "Converteer AVIF-bestanden naar verliesvrij PNG. Volledige kwaliteit en transparantie behouden."
+          "question": "Is het converteren van AVIF naar PNG gratis?",
+          "answer": "Ja, deze AVIF-naar-PNG-converter is volledig gratis, zonder limieten. Geen registratie, geen watermerken."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Worden mijn bestanden naar een server geüpload?",
+          "answer": "Nee. Alle verwerking gebeurt lokaal in uw browser. Uw bestanden verlaten nooit uw apparaat."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Verlies ik kwaliteit bij het converteren?",
+          "answer": "PNG ondersteunt lossless compressie, waardoor de originele kwaliteit behouden blijft."
+        },
+        {
+          "question": "Kan ik meerdere bestanden tegelijk converteren?",
+          "answer": "Ja, de converter ondersteunt batchconversie."
+        },
+        {
+          "question": "Werkt de converter op mobiele apparaten?",
+          "answer": "Ja, hij werkt op elk apparaat met een moderne webbrowser."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

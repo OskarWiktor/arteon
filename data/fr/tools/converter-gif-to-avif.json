@@ -59,60 +59,169 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Comment fonctionne le convertisseur GIF en AVIF?",
-      "html": "<p>Convertissez la premiere image GIF en image AVIF statique avec excellente compression. La conversion se fait entierement dans votre navigateur — les fichiers ne sont jamais envoyes a un serveur. Sans inscription, sans limite.</p>"
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir GIF en AVIF ?",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) est un format d’image sans perte prenant en charge 256 de couleurs. Il est largement utilisé pour les animations simples.</p><p class=\"text-mid mb-4\">La conversion de GIF en AVIF (AV1 Image File Format) réduit considérablement la taille des fichiers.</p><p class=\"text-mid mb-4\">AVIF prend en charge la transparence alpha. AVIF offre une compression avec et sans perte.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF to AVIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Comment convertir GIF en AVIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment convertir GIF en AVIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Telecharger les fichiers",
-          "description": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+          "icon": "RiUploadCloud2Line",
+          "title": "Télécharger votre fichier GIF",
+          "description": "Glissez-déposez votre image GIF sur la zone de conversion ou cliquez pour parcourir votre appareil. Vous pouvez ajouter plusieurs fichiers à la fois."
         },
         {
-          "position": 2,
-          "title": "Regler la qualite",
-          "description": "Ajustez le curseur de qualite AVIF — des valeurs plus basses donnent des fichiers plus petits."
+          "icon": "RiSettings3Line",
+          "title": "Ajuster les paramètres",
+          "description": "Choisissez vos préférences de qualité et de sortie. Le convertisseur affiche un aperçu en direct pour comparer l’original GIF avec le résultat AVIF."
         },
         {
-          "position": 3,
-          "title": "Convertir",
-          "description": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
-        },
-        {
-          "position": 4,
-          "title": "Telecharger",
-          "description": "Telechargez les fichiers AVIF — individuellement ou tous a la fois."
+          "icon": "RiDownloadLine",
+          "title": "Télécharger votre fichier AVIF",
+          "description": "Cliquez sur le bouton de téléchargement pour enregistrer votre fichier AVIF converti. Pour plusieurs fichiers, utilisez le téléchargement par lot."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "GIF vs AVIF – les différences clés",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Les deux</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand faut-il convertir GIF en AVIF ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimisation web",
+          "description": "GIF → AVIF – WordPress, PrestaShop, Shopify."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail et partage",
+          "description": "AVIF – Gmail, Outlook, La Poste."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Leboncoin, Cdiscount, Amazon.fr, Vinted."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documents et archivage",
+          "description": "AVIF – imprimeries."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui distingue ce convertisseur GIF vers AVIF ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Vos fichiers GIF sont traités entièrement dans votre navigateur. Rien n’est envoyé à un serveur – conforme au RGPD."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Sans limites",
+          "description": "Convertissez autant de fichiers GIF en AVIF que nécessaire. Pas de limites quotidiennes, pas de restrictions de taille, pas de filigranes."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Contrôle de la qualité",
+          "description": "Ajustez les paramètres de compression pour trouver l’équilibre parfait entre taille de fichier et qualité d’image."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversion instantanée",
+          "description": "Tout le traitement se fait localement grâce aux API modernes du navigateur – rapide et fonctionnel même hors connexion."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversion GIF vers AVIF en pratique",
+      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de GIF en AVIF peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Questions frequemment posees",
+      "title": "Questions fréquentes sur la conversion GIF vers AVIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Qu'est-ce que le format AVIF?",
-          "answer": "AVIF est un format d'image moderne base sur le codec AV1. Il offre une excellente compression — les fichiers peuvent etre jusqu'a 50% plus petits que JPG."
+          "question": "La conversion de GIF en AVIF est-elle gratuite ?",
+          "answer": "Oui, ce convertisseur GIF vers AVIF est entièrement gratuit, sans limites. Pas d’inscription, pas de filigrane."
         },
         {
-          "question": "AVIF fonctionne-t-il dans tous les navigateurs?",
-          "answer": "AVIF est pris en charge par Chrome, Edge et Firefox. Safari a un support limite pour AVIF."
+          "question": "Mes fichiers sont-ils envoyés sur un serveur ?",
+          "answer": "Non. Tout le traitement se fait localement dans votre navigateur. Vos fichiers ne quittent jamais votre appareil – conforme au RGPD."
         },
         {
-          "question": "Mes fichiers sont-ils envoyes a un serveur?",
-          "answer": "Non. La conversion se fait entierement dans votre navigateur. Les fichiers ne quittent jamais votre ordinateur."
+          "question": "Vais-je perdre de la qualité en convertissant GIF en AVIF ?",
+          "answer": "AVIF utilise une compression avec perte. À des paramètres de qualité élevés (80-95%), la différence est imperceptible à l’œil nu."
+        },
+        {
+          "question": "Puis-je convertir plusieurs fichiers GIF à la fois ?",
+          "answer": "Oui, le convertisseur prend en charge la conversion par lots. Ajoutez plusieurs fichiers GIF et convertissez-les tous en AVIF simultanément."
+        },
+        {
+          "question": "Quelle est la taille maximale de fichier ?",
+          "answer": "Il n’y a pas de limite stricte puisque le traitement se fait dans votre navigateur. Les fichiers très volumineux (plus de 50 Mo) peuvent être plus lents."
+        },
+        {
+          "question": "Le convertisseur fonctionne-t-il sur mobile ?",
+          "answer": "Oui, il fonctionne sur tout appareil disposant d’un navigateur web moderne, y compris smartphones et tablettes."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Besoin de plus?",
-      "description": "Contactez-nous — nous vous aiderons a trouver la bonne solution.",
-      "href": "/fr/contact",
-      "buttonText": "Ecrivez-nous"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "GIF to AVIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

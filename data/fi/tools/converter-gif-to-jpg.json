@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "GIF JPG -muunnin",
-      "html": "<p class=\"text-mid\">Vie GIF-kuvan ensimmäinen ruutu kompaktina JPG-kuvana. Pienempi tiedosto.</p>",
+      "title": "Miksi muuntaa GIF JPG-muotoon?",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) on häviötön kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">GIF:n muuntaminen JPG-muotoon (JPEG) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">JPG ei tue läpinäkyvyyttä – läpinäkyvät alueet täytetään taustavärillä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
-      "imageAlt": "GIF JPG -muunnin – Arteon"
+      "imageAlt": "GIF to JPG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "GIF → JPG",
+      "title": "Kuinka muuntaa GIF JPG-muotoon",
       "grid": "three",
       "items": [
         {
-          "title": "1. Lisää tiedostot",
-          "description": "Vedä GIF-tiedostot latauskenttään tai napsauta valitaksesi tiedostot laitteeltasi.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Lataa GIF-tiedosto",
+          "description": "Vedä ja pudota GIF-kuva muunnosalueelle tai napsauta selataksesi laitettasi. Voit lisätä useita tiedostoja kerralla."
         },
         {
-          "title": "2. Muunna",
-          "description": "Napsauta muunna. Säädä JPG-laatua liukusäätimellä.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Säädä asetuksia",
+          "description": "Valitse haluamasi laatu- ja tulostusasetukset. Muunnin näyttää reaaliaikaisen esikatselun GIF-alkuperäisen ja JPG-tuloksen vertailua varten."
         },
         {
-          "title": "3. Lataa",
-          "description": "Lataa muunnetut JPG-tiedostot yksitellen tai kaikki kerralla.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Lataa JPG-tiedosto",
+          "description": "Napsauta latauspainiketta tallentaaksesi muunnetun JPG-tiedoston. Useille tiedostoille käytä erilatausta."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "GIF vs JPG – keskeiset erot",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Häviöllinen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Ei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Ei</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin kannattaa muuntaa GIF JPG-muotoon?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Verkkosivujen optimointi",
+          "description": "GIF → JPG – WordPress, Shopify, MyCashflow."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Sähköposti ja jakaminen",
+          "description": "JPG – Gmail, Outlook, Elisa Sähköposti."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Verkkokauppa",
+          "description": "Tori.fi, Verkkokauppa.com, Gigantti, Amazon."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Asiakirjat ja arkistointi",
+          "description": "JPG – painotalot."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "GIF – JPG -muuntimen ominaisuudet",
+      "title": "Mikä erottaa tämän GIF-JPG-muuntimen?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Täysi yksityisyys",
-          "description": "Tiedostot eivät koskaan poistu laitteeltasi. Muunnos tapahtuu paikallisesti selaimessa — mitään ei ladata palvelimelle."
+          "title": "Complete privacy",
+          "description": "Your GIF files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Ei tiedostorajaa",
-          "description": "Muunna niin monta tiedostoa kuin tarvitset yhdessä istunnossa. Ei rajoituksia, ei rekisteröintiä."
+          "icon": "RiInfinityLine",
+          "title": "No limits",
+          "description": "Convert as many GIF files to JPG as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Laadun säätö",
-          "description": "Säädä JPG-tulostuslaatua liukusäätimellä. Korkeammat arvot tarkoittavat parempaa laatua ja suurempia tiedostoja."
+          "icon": "RiImageEditLine",
+          "title": "Quality control",
+          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Erälataus",
-          "description": "Lataa muunnetut tiedostot yksitellen tai kaikki kerralla yhdellä napsautuksella."
+          "icon": "RiFlashlightLine",
+          "title": "Instant conversion",
+          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "GIF-JPG-muunnos käytännössä",
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja.</p><p class=\"text-mid\">Tori.fi, Verkkokauppa.com, Gigantti, Amazon – WordPress, Shopify, MyCashflow.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Usein kysytyt kysymykset GIF – JPG -muunnoksesta",
-      "openByDefault": 1,
+      "title": "Usein kysytyt kysymykset GIF-JPG-muunnoksesta",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Onko GIF – JPG -muunnos häviötön?",
-          "answer": "JPG käyttää oletusarvoisesti häviöllistä pakkausta. Voit säätää laatuliukusäädintä hallitaksesi tiedostokoon ja visuaalisen laadun tasapainoa. Korkeammat arvot tuottavat parempaa laatua mutta suurempia tiedostoja."
-        },
-        {
-          "question": "Säilyykö läpinäkyvyys muunnoksen aikana?",
-          "answer": "JPG ei tue läpinäkyvyyttä. GIF-tiedoston läpinäkyvät alueet korvataan valkoisella taustalla."
-        },
-        {
-          "question": "Miksi JPG-tulostiedosto on suurempi kuin alkuperäinen?",
-          "answer": "Tiedostokoko riippuu laatuasetuksesta ja kuvan sisällöstä. Alemmat laatuarvot tuottavat pienempiä tiedostoja. Säädä liukusäädintä tarpeidesi mukaan."
-        },
-        {
-          "question": "Mitkä selaimet tukevat tätä muunninta?",
-          "answer": "Muunnin toimii kaikissa moderneissa selaimissa: Chrome, Edge, Firefox ja Safari. AVIF-muodon tukeen käytä Chrome 85+, Firefox 93+ tai Safari 16.4+."
+          "question": "Onko GIF:n muuntaminen JPG:ksi ilmaista?",
+          "answer": "Kyllä, tämä GIF-JPG-muunnin on täysin ilmainen ilman rajoituksia. Ei rekisteröintiä, ei vesileimoja."
         },
         {
           "question": "Ladataanko tiedostoni palvelimelle?",
-          "answer": "Ei. Koko muunnosprosessi suoritetaan paikallisesti selaimessasi JavaScriptillä. Tiedostosi eivät koskaan poistu laitteeltasi, eikä meillä ole niihin pääsyä."
+          "answer": "Ei. Käsittely tapahtuu paikallisesti selaimessasi. Tiedostosi eivät koskaan poistu laitteeltasi."
+        },
+        {
+          "question": "Menetänkö laatua muunnettaessa?",
+          "answer": "JPG käyttää häviöllistä pakkausta. Korkeilla asetuksilla (80-95%) ero on silmälle huomaamaton."
+        },
+        {
+          "question": "Voinko muuntaa useita tiedostoja kerralla?",
+          "answer": "Kyllä, muunnin tukee erämuunnosta. Lisää useita GIF-tiedostoja ja muunna ne kaikki JPG-muotoon samanaikaisesti."
+        },
+        {
+          "question": "Toimiiko muunnin mobiililaitteilla?",
+          "answer": "Kyllä, se toimii millä tahansa laitteella, jossa on moderni selain."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin työkaluihin"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

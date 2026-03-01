@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Perché convertire BMP in WebP?",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) è un formato immagine senza perdita che supporta milioni di colori. È ampiamente utilizzato per le immagini non compresse.</p><p class=\"text-mid mb-4\">La conversione da BMP a WebP (WebP) riduce significativamente le dimensioni del file.</p><p class=\"text-mid mb-4\">WebP supporta la trasparenza alfa. WebP offre compressione con e senza perdita.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "BMP to WebP conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "BMP → WebP",
+      "title": "Come convertire BMP in WebP",
       "grid": "three",
       "items": [
         {
-          "title": "1. Aggiungi file",
-          "description": "Drag BMP files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Carica il tuo file BMP",
+          "description": "Trascina il tuo file BMP nell’area del convertitore o clicca per sfogliare. Puoi aggiungere più file contemporaneamente."
         },
         {
-          "title": "2. Imposta qualita",
-          "description": "WebP quality: 80% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Regola le impostazioni",
+          "description": "Scegli le impostazioni di qualità e di output. Il convertitore mostra un’anteprima dal vivo per confrontare l’originale BMP con il risultato WebP."
         },
         {
-          "title": "3. Scarica",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Scarica il tuo file WebP",
+          "description": "Clicca il pulsante di download per salvare il file WebP convertito. Per più file, usa il download in batch."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP vs WebP – le differenze principali",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caratteristica</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressione</td><td class=\"py-2 text-center\">Senza perdita</td><td class=\"py-2 text-center\">Entrambe</td></tr><tr class=\"border-b\"><td class=\"py-2\">Trasparenza</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animazione</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr><td class=\"py-2\">Supporto browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando conviene convertire BMP in WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Ottimizzazione web",
+          "description": "BMP → WebP – WordPress, Shopify, WooCommerce."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email e condivisione",
+          "description": "WebP – Gmail, Outlook, Libero Mail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Subito.it, Amazon.it, eBay.it, Vinted."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documenti e archiviazione",
+          "description": "WebP – tipografie."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Convertitore BMP in WebP",
+      "title": "Cosa distingue questo convertitore da BMP a WebP?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Privacy completa",
+          "description": "I tuoi file BMP vengono elaborati interamente nel browser. Nulla viene caricato su server – conforme al GDPR."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Senza limiti",
+          "description": "Converti quanti file BMP in WebP desideri. Nessun limite giornaliero, nessuna restrizione di dimensione, nessun watermark."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Quality control",
-          "description": "Adjust WebP quality with the slider."
+          "icon": "RiImageEditLine",
+          "title": "Controllo qualità",
+          "description": "Regola le impostazioni di compressione per trovare il perfetto equilibrio tra dimensione del file e qualità dell’immagine."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Conversione istantanea",
+          "description": "L’elaborazione avviene localmente con le API moderne del browser – veloce e funzionante anche senza connessione."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversione da BMP a WebP nella pratica",
+      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante).</p><p class=\"text-mid\">Subito.it, Amazon.it, eBay.it, Vinted – WordPress, Shopify, WooCommerce.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,32 @@
     },
     {
       "type": "faq",
-      "title": "Domande frequenti",
-      "openByDefault": 1,
+      "title": "Domande frequenti sulla conversione da BMP a WebP",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "BMP → WebP?",
-          "answer": "Converti file BMP in WebP leggero. Riduzione delle dimensioni fino al 95%."
+          "question": "La conversione da BMP a WebP è gratuita?",
+          "answer": "Sì, questo convertitore da BMP a WebP è completamente gratuito, senza limiti. Nessuna registrazione, nessun watermark."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "I miei file vengono caricati su un server?",
+          "answer": "No. L’elaborazione avviene interamente nel tuo browser. I file non lasciano mai il tuo dispositivo – conforme al GDPR."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Perderò qualità convertendo BMP in WebP?",
+          "answer": "WebP utilizza compressione con perdita. A impostazioni di qualità elevate (80-95%), la differenza è impercettibile."
+        },
+        {
+          "question": "Posso convertire più file BMP contemporaneamente?",
+          "answer": "Sì, il convertitore supporta la conversione in batch. Aggiungi più file BMP e convertili tutti in WebP simultaneamente."
+        },
+        {
+          "question": "Qual è la dimensione massima del file?",
+          "answer": "Non c’è un limite rigido poiché l’elaborazione avviene nel browser. File molto grandi (oltre 50 MB) possono richiedere più tempo."
+        },
+        {
+          "question": "Il convertitore funziona su dispositivi mobili?",
+          "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno, inclusi smartphone e tablet."
         }
       ]
     },
@@ -149,10 +218,6 @@
     {
       "type": "toolsCarousel",
       "title": "Scopri altri strumenti gratuiti"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Miért érdemes TIFF-t WebP-re konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">A Tagged Image File Format (TIFF) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A TIFF konvertálása WebP-re (WebP) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A WebP támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
+      "imageAlt": "TIFF to WebP conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF → WebP",
+      "title": "Hogyan konvertálja TIFF-t WebP-re",
       "grid": "three",
       "items": [
         {
-          "title": "1. Fajlok hozzaadasa",
-          "description": "Drag TIFF files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Töltse fel a TIFF fájlt",
+          "description": "Húzza és dobja a TIFF képet a konverter területére, vagy kattintson a tallózáshoz. Több fájlt is hozzáadhat egyszerre."
         },
         {
-          "title": "2. Minoseg beallitasa",
-          "description": "WebP quality: 80% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Állítsa be a beállításokat",
+          "description": "Válassza ki a kívánt minőségi és kimeneti beállításokat. A konverter élő előnézetet mutat a TIFF eredeti és a WebP eredmény összehasonlításához."
         },
         {
-          "title": "3. Letoltes",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Töltse le a WebP fájlt",
+          "description": "Kattintson a letöltés gombra a konvertált WebP fájl mentéséhez. Több fájl esetén használja a kötegelt letöltést."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF vs WebP – a legfontosabb különbségek",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteségmentes</td><td class=\"py-2 text-center\">Mindkettő</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor érdemes TIFF-t WebP-re konvertálni?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weboldal-optimalizálás",
+          "description": "TIFF → WebP – WordPress, Shopify, Shoprenter."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail és megosztás",
+          "description": "WebP – Gmail, Outlook, Citromail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-kereskedelem",
+          "description": "Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumentumok és archiválás",
+          "description": "WebP – nyomdák."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF WebP konverter",
+      "title": "Mi teszi különlegessé ezt a TIFF-WebP konvertert?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Teljes adatvédelem",
+          "description": "A TIFF fájlok kizárólag a böngészőben kerülnek feldolgozásra. Semmi sem kerül fel semmilyen szerverre."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Korlátlan",
+          "description": "Konvertáljon annyi TIFF fájlt WebP-re, amennyire szüksége van. Nincsenek napi korlátok, méretkorlátozások vagy vízjelek."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Quality control",
-          "description": "Adjust WebP quality with the slider."
+          "icon": "RiImageEditLine",
+          "title": "Minőség-szabályozás",
+          "description": "Állítsa be a tömörítést a fájlméret és a képminőség tökéletes egyensúlyához."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konvertálás",
+          "description": "A feldolgozás helyben történik modern böngésző API-kkal – gyors, és internetkapcsolat nélkül is működik."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF-WebP konvertálás a gyakorlatban",
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek.</p><p class=\"text-mid\">Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace – WordPress, Shopify, Shoprenter.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Gyakran ismetelt kerdesek",
-      "openByDefault": 1,
+      "title": "Gyakran ismételt kérdések a TIFF-WebP konvertálásról",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "TIFF → WebP?",
-          "answer": "TIFF fajlok konvertalasa konnyu WebP-re. Hatalmas meretcsokkentes minoseg megorzesevel."
+          "question": "Ingyenes a TIFF WebP-re konvertálás?",
+          "answer": "Igen, ez a TIFF-WebP konverter teljesen ingyenes, korlátok nélkül. Nem szükséges regisztráció, nincsenek vízjelek."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Feltöltődnek a fájljaim valamilyen szerverre?",
+          "answer": "Nem. A teljes feldolgozás helyben, a böngészőben történik. A fájlok soha nem hagyják el az eszközét."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Vesztek minőséget a konvertáláskor?",
+          "answer": "A WebP veszteséges tömörítést használ. Magasabb minőségi beállításoknál (80-95%) a különbség szabad szemmel észrevehetetlen."
+        },
+        {
+          "question": "Konvertálhatok több fájlt egyszerre?",
+          "answer": "Igen, a konverter támogatja a kötegelt konvertálást."
+        },
+        {
+          "question": "Működik mobileszközökön?",
+          "answer": "Igen, bármely modern böngészővel rendelkező eszközön működik."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel tobb ingyenes eszkozt"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

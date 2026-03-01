@@ -59,60 +59,169 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Wie funktioniert der HEIC zu AVIF Konverter?",
-      "html": "<p>iPhone HEIC-Fotos in modernes AVIF-Format umwandeln. Die Konvertierung erfolgt vollstandig im Browser — Dateien werden nie an einen Server gesendet. Ohne Registrierung, ohne Dateilimit.</p>"
+      "type": "sectionBasic",
+      "title": "Warum HEIC in AVIF konvertieren?",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Apple-Gerätefotos verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von HEIC in AVIF (AV1 Image File Format) nutzt moderne Komprimierungstechnologie für kleinere Dateien ohne Qualitätsverlust.</p><p class=\"text-mid mb-4\">AVIF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. AVIF bietet sowohl verlustbehaftete als auch verlustfreie Komprimierung.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "HEIC to AVIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Wie konvertiert man HEIC zu AVIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So konvertieren Sie HEIC in AVIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Dateien hochladen",
-          "description": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+          "icon": "RiUploadCloud2Line",
+          "title": "HEIC-Datei hochladen",
+          "description": "Ziehen Sie Ihr HEIC-Bild auf den Konverterbereich oder klicken Sie, um Dateien auszuwählen. Mehrere Dateien gleichzeitig möglich."
         },
         {
-          "position": 2,
-          "title": "Qualitat einstellen",
-          "description": "Passen Sie den AVIF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+          "icon": "RiSettings3Line",
+          "title": "Einstellungen anpassen",
+          "description": "Wählen Sie Qualität und Ausgabeoptionen. Der Konverter zeigt eine Live-Vorschau zum Vergleich von HEIC-Original und AVIF-Ergebnis."
         },
         {
-          "position": 3,
-          "title": "Konvertieren",
-          "description": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
-        },
-        {
-          "position": 4,
-          "title": "Herunterladen",
-          "description": "Laden Sie die AVIF-Dateien herunter — einzeln oder alle auf einmal."
+          "icon": "RiDownloadLine",
+          "title": "AVIF-Datei herunterladen",
+          "description": "Klicken Sie auf Download, um Ihre konvertierte AVIF-Datei zu speichern. Bei mehreren Dateien nutzen Sie den Stapeldownload."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC vs. AVIF – die wichtigsten Unterschiede",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Beide</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann sollten Sie HEIC in AVIF konvertieren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-Optimierung",
+          "description": "HEIC → AVIF – WordPress, Shopify, TYPO3."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-Mail und Teilen",
+          "description": "AVIF – Gmail, Outlook, GMX, Web.de."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-Commerce",
+          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumente und Archivierung",
+          "description": "AVIF – Druckereien."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was zeichnet diesen HEIC-zu-AVIF-Konverter aus?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Vollständiger Datenschutz",
+          "description": "Ihre HEIC-Dateien werden ausschließlich in Ihrem Browser verarbeitet. Nichts wird auf einen Server hochgeladen – DSGVO-konform."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Keine Limits",
+          "description": "Konvertieren Sie so viele HEIC-Dateien in AVIF wie nötig. Keine täglichen Limits, keine Größenbeschränkungen, keine Wasserzeichen."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Qualitätskontrolle",
+          "description": "Passen Sie die Kompressionseinstellungen an, um die perfekte Balance zwischen Dateigröße und Bildqualität zu finden."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Sofortige Konvertierung",
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs – schnell und auch ohne Internetverbindung nutzbar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC-zu-AVIF-Konvertierung in der Praxis",
+      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von HEIC in AVIF kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet AVIF hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Haufig gestellte Fragen",
+      "title": "Häufig gestellte Fragen zur Konvertierung von HEIC in AVIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Was ist das AVIF-Format?",
-          "answer": "AVIF ist ein modernes Bildformat basierend auf dem AV1-Codec. Es bietet hervorragende Kompression — Dateien konnen bis zu 50% kleiner als JPG sein bei vergleichbarer Qualitat."
+          "question": "Ist die Konvertierung von HEIC in AVIF kostenlos?",
+          "answer": "Ja, dieser HEIC-zu-AVIF-Konverter ist vollständig kostenlos, ohne Limits. Keine Registrierung, keine Wasserzeichen."
         },
         {
-          "question": "Funktioniert AVIF in allen Browsern?",
-          "answer": "AVIF wird von Chrome, Edge und Firefox unterstutzt. Safari hat eingeschrankte AVIF-Unterstutzung."
+          "question": "Werden meine Dateien auf einen Server hochgeladen?",
+          "answer": "Nein. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Dateien verlassen niemals Ihr Gerät – vollständig DSGVO-konform."
         },
         {
-          "question": "Werden meine Dateien an einen Server gesendet?",
-          "answer": "Nein. Die Konvertierung erfolgt vollstandig im Browser. Dateien verlassen nie Ihren Computer."
+          "question": "Verliere ich Qualität bei der Konvertierung von HEIC in AVIF?",
+          "answer": "AVIF verwendet verlustbehaftete Komprimierung. Bei höheren Qualitätseinstellungen (80-95%) ist der Unterschied für das menschliche Auge kaum wahrnehmbar."
+        },
+        {
+          "question": "Kann ich mehrere HEIC-Dateien gleichzeitig konvertieren?",
+          "answer": "Ja, der Konverter unterstützt Stapelkonvertierung. Fügen Sie mehrere HEIC-Dateien hinzu und konvertieren Sie alle gleichzeitig in AVIF."
+        },
+        {
+          "question": "Wie groß dürfen die Dateien maximal sein?",
+          "answer": "Es gibt keine feste Größenbegrenzung, da die Verarbeitung in Ihrem Browser stattfindet. Sehr große Dateien (über 50 MB) können je nach Gerät länger dauern."
+        },
+        {
+          "question": "Funktioniert der Konverter auf Mobilgeräten?",
+          "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Brauchen Sie mehr?",
-      "description": "Kontaktieren Sie uns — wir helfen Ihnen, die richtige Losung zu finden.",
-      "href": "/de/kontakt",
-      "buttonText": "Schreiben Sie uns"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Tools zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "HEIC to AVIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

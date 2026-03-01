@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/konwerter-avif-na-png", "label": "Konwerter AVIF na PNG" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-avif-na-png",
+      "label": "Konwerter AVIF na PNG"
+    }
   },
   "schemas": {
     "software": {
@@ -29,67 +35,175 @@
       "name": "Jak zamienić AVIF na PNG online",
       "description": "Instrukcja konwersji plików AVIF na format PNG.",
       "steps": [
-        { "name": "Dodaj pliki AVIF", "text": "Przeciągnij pliki AVIF na wyznaczone pole albo wybierz je z dysku." },
-        { "name": "Konwertuj", "text": "Kliknij przycisk konwertuj. PNG to format bezstratny — nie ma suwaka jakości." },
-        { "name": "Pobierz pliki PNG", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+        {
+          "name": "Dodaj pliki AVIF",
+          "text": "Przeciągnij pliki AVIF na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Konwertuj",
+          "text": "Kliknij przycisk konwertuj. PNG to format bezstratny — nie ma suwaka jakości."
+        },
+        {
+          "name": "Pobierz pliki PNG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować AVIF na PNG?",
-      "html": "<p class=\"text-mid mb-4\">AVIF to nowoczesny format z doskonałą kompresją, ale ograniczoną kompatybilnością. PNG (Portable Network Graphics) to format bezstratny, który jest obsługiwany przez każdy program, przeglądarkę i system operacyjny. PNG zachowuje pełną jakość obrazu — żadne dane pikseli nie są tracone podczas zapisu.</p><p class=\"text-mid mb-4\">PNG obsługuje przezroczystość (kanał alfa), co czyni go idealnym do grafik z przezroczystym tłem — logo, ikon, nakładek. AVIF również obsługuje przezroczystość, więc konwersja na PNG zachowa tę cechę.</p><p class=\"text-mid\">Konwersja AVIF na PNG jest przydatna, gdy potrzebujesz bezstratnego pliku kompatybilnego ze starszym oprogramowaniem, chcesz zachować przezroczystość lub potrzebujesz formatu do dalszej edycji w programie graficznym.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do nowoczesnych obrazów webowych.</p><p class=\"text-mid mb-4\">Konwersja AVIF na PNG (Portable Network Graphics) zapewnia uniwersalną kompatybilność z każdą przeglądarką i urządzeniem.</p><p class=\"text-mid mb-4\">PNG obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, PNG zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików AVIF, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Konwerter AVIF na PNG – Arteon"
+      "imageAlt": "AVIF to PNG",
+      "variant": "right"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować AVIF na PNG?",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki AVIF", "description": "Przeciągnij pliki AVIF na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
-        { "title": "2. Konwertuj", "description": "Kliknij przycisk konwertuj. PNG jest bezstratny — jakość nie wymaga regulacji.", "icon": "RiLoopLeftLine" },
-        { "title": "3. Pobierz PNG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+        {
+          "icon": "RiUploadCloud2Line",
+          "title": "Wgraj plik AVIF",
+          "description": "Przeciągnij i upuść obraz AVIF na obszar konwertera lub kliknij, aby wybrać plik z urządzenia. Możesz dodać wiele plików naraz."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "Dostosuj ustawienia",
+          "description": "Wybierz preferowane ustawienia jakości i wyjścia. Konwerter pokazuje podgląd na żywo, dzięki czemu możesz porównać oryginał AVIF z wynikiem PNG przed pobraniem."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Pobierz plik PNG",
+          "description": "Kliknij przycisk pobierania, aby zapisać przekonwertowany plik PNG. W przypadku wielu plików użyj opcji zbiorczego pobierania."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "AVIF a PNG – porównanie formatów",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Obie</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Nie</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować AVIF na PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optymalizacja stron www",
+          "description": "Konwertuj AVIF na PNG, aby zachować przezroczystość i jakość grafik internetowych."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail i udostępnianie",
+          "description": "Pliki PNG są akceptowane przez klientów poczty, takich jak Gmail, Outlook, Poczta WP. Konwertuj na PNG, aby uzyskać obrazy wysokiej jakości do udostępniania."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce i marketplace",
+          "description": "Platformy takie jak Allegro, OLX, Empik, Ceneo mogą wymagać określonych formatów – konwersja na PNG zapewnia zgodność zdjęć z ich wymaganiami."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenty i archiwizacja",
+          "description": "PNG to doskonały wybór do archiwizacji i profesjonalnego druku dzięki kompresji bezstratnej."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter AVIF na PNG?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń." },
-        { "icon": "RiImageEditLine", "title": "Zachowanie przezroczystości", "description": "Przezroczyste obszary z pliku AVIF są zachowane w wynikowym PNG. Kanał alfa jest przenoszony bez zmian." },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki AVIF są przetwarzane wyłącznie w Twojej przeglądarce. Nic nie jest przesyłane na serwer – obrazy cały czas pozostają na Twoim urządzeniu."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez limitów",
+          "description": "Konwertuj tyle plików AVIF na PNG, ile potrzebujesz. Bez dziennych limitów, bez ograniczeń rozmiaru pliku i bez znaków wodnych."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola jakości",
+          "description": "Dostosuj ustawienia kompresji, aby znaleźć idealną równowagę między rozmiarem pliku a jakością obrazu. Podgląd zmian w czasie rzeczywistym."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Błyskawiczna konwersja",
+          "description": "Całe przetwarzanie odbywa się lokalnie z wykorzystaniem nowoczesnych API przeglądarki – konwersja jest szybka i działa nawet bez internetu po załadowaniu strony."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Konwersja AVIF na PNG w praktyce",
+      "html": "<p class=\"text-mid mb-4\">Polskie platformy sprzedażowe i serwisy ogłoszeniowe często wymagają konkretnych formatów graficznych. Niezależnie od tego, czy przygotowujesz zdjęcia produktów na Allegro, OLX, Empik, Ceneo, optymalizujesz grafiki w WordPress, Shoper, Sky-Shop, czy konwertujesz zdjęcia do gov.pl i ePUAP – odpowiedni format ma kluczowe znaczenie.</p><p class=\"text-mid mb-4\">Współczesne standardy webowe coraz bardziej faworyzują wydajne formaty. Google PageSpeed Insights i metryki Core Web Vitals nagradzają strony z zoptymalizowanymi obrazami. Konwersja AVIF na PNG może bezpośrednio poprawić wskaźnik Largest Contentful Paint (LCP), co wpływa na pozycje w wyszukiwarce i doświadczenie użytkowników.</p><p class=\"text-mid\">W przypadku kampanii e-mail marketingowych i mediów społecznościowych, PNG zapewnia maksymalną kompatybilność ze wszystkimi platformami. Niezależnie od tego, czy jesteś freelancerem, właścicielem małej firmy czy użytkownikiem korporacyjnym – ten konwerter niezawodnie obsłuży Twoje potrzeby.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji AVIF na PNG",
-      "openByDefault": 1,
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Czy konwersja AVIF na PNG jest bezstratna?",
-          "answer": "PNG to format bezstratny, więc wynikowy plik zachowuje pełną jakość obrazu z pliku AVIF. Jednak jeśli oryginalny AVIF był skompresowany stratnie, te utracone dane nie zostaną odzyskane."
-        },
-        { "question": "Czy przezroczystość zostanie zachowana?", "answer": "Tak. PNG obsługuje kanał alfa, więc przezroczyste obszary z pliku AVIF zostaną zachowane." },
-        {
-          "question": "Dlaczego plik PNG jest większy niż AVIF?",
-          "answer": "AVIF stosuje zaawansowaną kompresję (stratną lub bezstratną), podczas gdy PNG jest bezstratny. Pliki PNG są zwykle znacznie większe niż AVIF — to normalne i wynika z bezstratnej natury formatu PNG."
+          "question": "Czy konwersja AVIF na PNG jest darmowa?",
+          "answer": "Tak, konwerter AVIF na PNG jest całkowicie darmowy i nie ma żadnych limitów. Możesz konwertować dowolną liczbę plików bez rejestracji i bez znaków wodnych."
         },
         {
-          "question": "Czy moja przeglądarka obsługuje AVIF?",
-          "answer": "AVIF jest obsługiwany przez Chrome 85+, Firefox 93+ i Safari 16.4+. Jeśli przeglądarka nie obsługuje AVIF, zaktualizuj ją do najnowszej wersji."
+          "question": "Czy konwerter przesyła moje pliki na serwer?",
+          "answer": "Nie. Całe przetwarzanie odbywa się lokalnie w Twojej przeglądarce za pomocą JavaScript i Canvas API. Pliki nigdy nie opuszczają Twojego urządzenia, co gwarantuje pełną prywatność i bezpieczeństwo."
         },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera." }
+        {
+          "question": "Czy stracę jakość podczas konwersji AVIF na PNG?",
+          "answer": "PNG obsługuje kompresję bezstratną, więc możesz zachować oryginalną jakość obrazu w całości."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików AVIF naraz?",
+          "answer": "Tak, konwerter obsługuje konwersję wsadową. Możesz dodać wiele plików AVIF i przekonwertować je wszystkie na PNG jednocześnie."
+        },
+        {
+          "question": "Jaki jest maksymalny rozmiar pliku do konwersji?",
+          "answer": "Nie ma twardego limitu rozmiaru, ponieważ przetwarzanie odbywa się w przeglądarce. Bardzo duże pliki (powyżej 50 MB) mogą wymagać więcej czasu w zależności od pamięci i mocy obliczeniowej urządzenia."
+        },
+        {
+          "question": "Czy konwerter działa na urządzeniach mobilnych?",
+          "answer": "Tak, konwerter działa na każdym urządzeniu z nowoczesną przeglądarką, w tym na smartfonach i tabletach. Interfejs dostosowuje się do rozmiaru ekranu."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -98,8 +212,13 @@
       "imageAlt": "Konwerter AVIF na PNG – Arteon",
       "defaultSubject": "Feedback: Konwerter AVIF na PNG"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    }
   ]
 }

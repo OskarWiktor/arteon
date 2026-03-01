@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere GIF til WebP?",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) er et tabsfrit billedformat der understøtter 256 farver. Det bruges bredt til simple animationer.</p><p class=\"text-mid mb-4\">Konvertering af GIF til WebP (WebP) reducerer filstørrelsen markant.</p><p class=\"text-mid mb-4\">WebP understøtter alfa-gennemsigtighed. WebP tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+      "imageAlt": "GIF to WebP conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "GIF → WebP",
+      "title": "Sådan konverterer du GIF til WebP",
       "grid": "three",
       "items": [
         {
-          "title": "1. Tilfoej filer",
-          "description": "Drag GIF files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload din GIF-fil",
+          "description": "Træk og slip dit GIF-billede på konverteringsområdet eller klik for at gennemse din enhed. Du kan tilføje flere filer på én gang."
         },
         {
-          "title": "2. Indstil kvalitet",
-          "description": "WebP quality: 80% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Juster indstillinger",
+          "description": "Vælg din foretrukne kvalitet og outputindstillinger. Konverteren viser en live forhåndsvisning til sammenligning af GIF-originalen med WebP-resultatet."
         },
         {
-          "title": "3. Download",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Download din WebP-fil",
+          "description": "Klik på downloadknappen for at gemme din konverterede WebP-fil. Ved flere filer kan du bruge batch-download."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "GIF vs WebP – de vigtigste forskelle",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tabsfri</td><td class=\"py-2 text-center\">Begge</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår skal du konvertere GIF til WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weboptimering",
+          "description": "GIF → WebP – WordPress, Shopify, DanDomain."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail og deling",
+          "description": "WebP – Gmail, Outlook, Jubii."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-handel",
+          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenter og arkivering",
+          "description": "WebP – trykkerier."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "GIF til WebP-konverter",
+      "title": "Hvad gør denne GIF-til-WebP-konverter anderledes?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Fuld privatliv",
+          "description": "Dine GIF-filer behandles udelukkende i din browser. Intet uploades til nogen server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrænsninger",
+          "description": "Konverter så mange GIF-filer til WebP som du har brug for. Ingen daglige grænser, ingen størrelsesbegrænsninger, ingen vandmærker."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Quality control",
-          "description": "Adjust WebP quality with the slider."
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontrol",
+          "description": "Juster komprimeringsindstillingerne for at finde den perfekte balance mellem filstørrelse og billedkvalitet."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Øjeblikkelig konvertering",
+          "description": "Al behandling sker lokalt med moderne browser-API’er – hurtigt og fungerer også uden internetforbindelse."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Konvertering af GIF til WebP i praksis",
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Ofte stillede sporgsmal",
-      "openByDefault": 1,
+      "title": "Ofte stillede spørgsmål om konvertering af GIF til WebP",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "GIF → WebP?",
-          "answer": "Eksporter forste GIF-frame som let WebP. Mindre fil, hurtigere indlasning."
+          "question": "Er det gratis at konvertere GIF til WebP?",
+          "answer": "Ja, denne GIF-til-WebP-konverter er helt gratis uden begrænsninger. Ingen registrering, ingen vandmærker."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Uploades mine filer til en server?",
+          "answer": "Nej. Al behandling sker lokalt i din browser. Dine filer forlader aldrig din enhed."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Mister jeg kvalitet ved konvertering af GIF til WebP?",
+          "answer": "WebP bruger tabsgivende komprimering. Ved højere kvalitetsindstillinger (80-95%) er forskellen usynlig for det menneskelige øje."
+        },
+        {
+          "question": "Kan jeg konvertere flere GIF-filer på én gang?",
+          "answer": "Ja, konverteren understøtter batchkonvertering. Tilføj flere GIF-filer og konverter dem alle til WebP samtidigt."
+        },
+        {
+          "question": "Fungerer konverteren på mobilenheder?",
+          "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis vaerktojer"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

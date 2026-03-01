@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/konwerter-tiff-na-png", "label": "Konwerter TIFF na PNG" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-tiff-na-png",
+      "label": "Konwerter TIFF na PNG"
+    }
   },
   "schemas": {
     "software": {
@@ -29,64 +35,175 @@
       "name": "Jak zamienić TIFF na PNG online",
       "description": "Instrukcja konwersji plików TIFF na format PNG.",
       "steps": [
-        { "name": "Dodaj pliki TIFF", "text": "Przeciągnij pliki TIFF na wyznaczone pole albo wybierz je z dysku." },
-        { "name": "Konwertuj", "text": "Kliknij przycisk konwertuj. PNG to format bezstratny — nie ma suwaka jakości." },
-        { "name": "Pobierz pliki PNG", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+        {
+          "name": "Dodaj pliki TIFF",
+          "text": "Przeciągnij pliki TIFF na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Konwertuj",
+          "text": "Kliknij przycisk konwertuj. PNG to format bezstratny — nie ma suwaka jakości."
+        },
+        {
+          "name": "Pobierz pliki PNG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować TIFF na PNG?",
-      "html": "<p class=\"text-mid mb-4\">TIFF to format profesjonalny, który nie jest obsługiwany przez przeglądarki internetowe ani wiele programów biurowych. PNG (Portable Network Graphics) to format bezstratny obsługiwany przez każdą przeglądarkę i program graficzny.</p><p class=\"text-mid mb-4\">Konwersja TIFF na PNG zachowuje pełną jakość obrazu — oba formaty są bezstratne. PNG obsługuje przezroczystość (kanał alfa), co jest przydatne przy grafikach z przezroczystym tłem. Pliki PNG są mniejsze niż TIFF, choć większe niż JPG.</p><p class=\"text-mid\">Konwersja TIFF na PNG jest idealnym rozwiązaniem, gdy potrzebujesz bezstratnego pliku do dalszej edycji, archiwizacji w formacie webowym lub publikacji na stronie internetowej. Jeśli zależy Ci na mniejszym rozmiarze, rozważ <a href=\"/narzedzia/konwerter-tiff-na-jpg\">konwersję TIFF na JPG</a> lub <a href=\"/narzedzia/konwerter-tiff-na-webp\">TIFF na WebP</a>.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) to bezstratny format obsługujący miliony kolorów. Jest powszechnie stosowany do druku i archiwizacji.</p><p class=\"text-mid mb-4\">Konwersja TIFF na PNG (Portable Network Graphics) zapewnia uniwersalną kompatybilność z każdą przeglądarką i urządzeniem.</p><p class=\"text-mid mb-4\">PNG obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, PNG zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików TIFF, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Konwerter TIFF na PNG – Arteon"
+      "imageAlt": "TIFF to PNG conversion",
+      "variant": "right"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować TIFF na PNG?",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki TIFF", "description": "Przeciągnij pliki TIFF (.tiff lub .tif) na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
-        { "title": "2. Konwertuj", "description": "Kliknij przycisk konwertuj. PNG jest bezstratny — jakość nie wymaga regulacji.", "icon": "RiLoopLeftLine" },
-        { "title": "3. Pobierz PNG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+        {
+          "icon": "RiUploadCloud2Line",
+          "title": "Wgraj plik TIFF",
+          "description": "Przeciągnij i upuść obraz TIFF na obszar konwertera lub kliknij, aby wybrać plik z urządzenia. Możesz dodać wiele plików naraz."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "Dostosuj ustawienia",
+          "description": "Wybierz preferowane ustawienia jakości i wyjścia. Konwerter pokazuje podgląd na żywo, dzięki czemu możesz porównać oryginał TIFF z wynikiem PNG przed pobraniem."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Pobierz plik PNG",
+          "description": "Kliknij przycisk pobierania, aby zapisać przekonwertowany plik PNG. W przypadku wielu plików użyj opcji zbiorczego pobierania."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF a PNG – porównanie formatów",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Nie</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy konwertować TIFF na PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optymalizacja stron www",
+          "description": "Konwertuj TIFF na PNG, aby zachować przezroczystość i jakość grafik internetowych."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail i udostępnianie",
+          "description": "Pliki PNG są akceptowane przez klientów poczty, takich jak Gmail, Outlook, Poczta WP. Konwertuj na PNG, aby uzyskać obrazy wysokiej jakości do udostępniania."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce i marketplace",
+          "description": "Platformy takie jak Allegro, OLX, Empik, Ceneo mogą wymagać określonych formatów – konwersja na PNG zapewnia zgodność zdjęć z ich wymaganiami."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenty i archiwizacja",
+          "description": "PNG to doskonały wybór do archiwizacji i profesjonalnego druku dzięki kompresji bezstratnej."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter TIFF na PNG?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Skany i dokumenty nie opuszczają komputera. Konwersja odbywa się w przeglądarce." },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz." },
-        { "icon": "RiImageEditLine", "title": "Bezstratna jakość", "description": "Zarówno TIFF, jak i PNG to formaty bezstratne. Konwersja zachowuje pełną jakość obrazu." },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki TIFF są przetwarzane wyłącznie w Twojej przeglądarce. Nic nie jest przesyłane na serwer – obrazy cały czas pozostają na Twoim urządzeniu."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez limitów",
+          "description": "Konwertuj tyle plików TIFF na PNG, ile potrzebujesz. Bez dziennych limitów, bez ograniczeń rozmiaru pliku i bez znaków wodnych."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola jakości",
+          "description": "Dostosuj ustawienia kompresji, aby znaleźć idealną równowagę między rozmiarem pliku a jakością obrazu. Podgląd zmian w czasie rzeczywistym."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Błyskawiczna konwersja",
+          "description": "Całe przetwarzanie odbywa się lokalnie z wykorzystaniem nowoczesnych API przeglądarki – konwersja jest szybka i działa nawet bez internetu po załadowaniu strony."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Konwersja TIFF na PNG w praktyce",
+      "html": "<p class=\"text-mid mb-4\">Polskie platformy sprzedażowe i serwisy ogłoszeniowe często wymagają konkretnych formatów graficznych. Niezależnie od tego, czy przygotowujesz zdjęcia produktów na Allegro, OLX, Empik, Ceneo, optymalizujesz grafiki w WordPress, Shoper, Sky-Shop, czy konwertujesz zdjęcia do gov.pl i ePUAP – odpowiedni format ma kluczowe znaczenie.</p><p class=\"text-mid mb-4\">Współczesne standardy webowe coraz bardziej faworyzują wydajne formaty. Google PageSpeed Insights i metryki Core Web Vitals nagradzają strony z zoptymalizowanymi obrazami. Konwersja TIFF na PNG może bezpośrednio poprawić wskaźnik Largest Contentful Paint (LCP), co wpływa na pozycje w wyszukiwarce i doświadczenie użytkowników.</p><p class=\"text-mid\">W przypadku kampanii e-mail marketingowych i mediów społecznościowych, PNG zapewnia maksymalną kompatybilność ze wszystkimi platformami. Niezależnie od tego, czy jesteś freelancerem, właścicielem małej firmy czy użytkownikiem korporacyjnym – ten konwerter niezawodnie obsłuży Twoje potrzeby.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji TIFF na PNG",
-      "openByDefault": 1,
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Czy konwersja TIFF na PNG jest bezstratna?",
-          "answer": "Tak. Zarówno TIFF, jak i PNG to formaty bezstratne. Konwersja nie powoduje utraty jakości — wszystkie dane pikseli są zachowane."
+          "question": "Czy konwersja TIFF na PNG jest darmowa?",
+          "answer": "Tak, konwerter TIFF na PNG jest całkowicie darmowy i nie ma żadnych limitów. Możesz konwertować dowolną liczbę plików bez rejestracji i bez znaków wodnych."
         },
         {
-          "question": "Czy plik PNG będzie mniejszy niż TIFF?",
-          "answer": "Zwykle tak. PNG stosuje kompresję bezstratną (algorytm Deflate), która zmniejsza rozmiar pliku bez utraty danych. Plik PNG jest typowo 30-60% mniejszy niż nieskompresowany TIFF."
+          "question": "Czy konwerter przesyła moje pliki na serwer?",
+          "answer": "Nie. Całe przetwarzanie odbywa się lokalnie w Twojej przeglądarce za pomocą JavaScript i Canvas API. Pliki nigdy nie opuszczają Twojego urządzenia, co gwarantuje pełną prywatność i bezpieczeństwo."
         },
-        { "question": "Czy konwersja obsługuje wielostronicowe pliki TIFF?", "answer": "Narzędzie konwertuje pierwszą stronę pliku TIFF. Wielostronicowe pliki TIFF nie są w pełni obsługiwane." },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Dokumenty i skany nie opuszczają komputera." },
-        { "question": "Czy mogę konwertować wiele plików naraz?", "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie." }
+        {
+          "question": "Czy stracę jakość podczas konwersji TIFF na PNG?",
+          "answer": "PNG obsługuje kompresję bezstratną, więc możesz zachować oryginalną jakość obrazu w całości."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików TIFF naraz?",
+          "answer": "Tak, konwerter obsługuje konwersję wsadową. Możesz dodać wiele plików TIFF i przekonwertować je wszystkie na PNG jednocześnie."
+        },
+        {
+          "question": "Jaki jest maksymalny rozmiar pliku do konwersji?",
+          "answer": "Nie ma twardego limitu rozmiaru, ponieważ przetwarzanie odbywa się w przeglądarce. Bardzo duże pliki (powyżej 50 MB) mogą wymagać więcej czasu w zależności od pamięci i mocy obliczeniowej urządzenia."
+        },
+        {
+          "question": "Czy konwerter działa na urządzeniach mobilnych?",
+          "answer": "Tak, konwerter działa na każdym urządzeniu z nowoczesną przeglądarką, w tym na smartfonach i tabletach. Interfejs dostosowuje się do rozmiaru ekranu."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -95,8 +212,13 @@
       "imageAlt": "Konwerter TIFF na PNG – Arteon",
       "defaultSubject": "Feedback: Konwerter TIFF na PNG"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    }
   ]
 }

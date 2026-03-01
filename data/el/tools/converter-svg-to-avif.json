@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Πώς λειτουργεί ο μετατροπέας SVG σε AVIF;",
-      "html": "<p>Μετατρεψτε διανυσματικα γραφικα SVG σε συμπαγη μορφη raster AVIF. Η μετατροπή γίνεται εξ ολοκλήρου στο πρόγραμμα περιήγησης — τα αρχεία δεν αποστέλλονται ποτέ σε διακομιστή. Χωρίς εγγραφή, χωρίς όριο.</p>"
+      "type": "sectionBasic",
+      "title": "Γιατί να μετατρέψετε SVG σε AVIF;",
+      "html": "<p class=\"text-mid mb-4\">Το Scalable Vector Graphics (SVG) είναι ένα μορφότυπο εικόνας χωρίς απώλειες. Χρησιμοποιείται ευρέως για λογότυπα και εικονίδια.</p><p class=\"text-mid mb-4\">Η μετατροπή SVG σε AVIF (AV1 Image File Format) προσφέρει περισσότερη ευελιξία.</p><p class=\"text-mid mb-4\">Το AVIF υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to AVIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Πώς να μετατρέψετε SVG σε AVIF;",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να μετατρέψετε SVG σε AVIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Ανεβάστε αρχεία",
-          "description": "Σύρετε αρχεία στη σελίδα ή κάντε κλικ για να τα επιλέξετε."
+          "icon": "RiUploadCloud2Line",
+          "title": "Ανεβάστε το αρχείο SVG",
+          "description": "Σύρετε και αφήστε την εικόνα SVG στην περιοχή μετατροπής ή κάντε κλικ για αναζήτηση. Μπορείτε να προσθέσετε πολλαπλά αρχεία ταυτόχρονα."
         },
         {
-          "position": 2,
-          "title": "Ρυθμίστε την ποιότητα",
-          "description": "Ρυθμίστε τον δείκτη ποιότητας AVIF — χαμηλότερες τιμές δίνουν μικρότερα αρχεία."
+          "icon": "RiSettings3Line",
+          "title": "Προσαρμόστε τις ρυθμίσεις",
+          "description": "Επιλέξτε τις ρυθμίσεις ποιότητας και εξόδου. Ο μετατροπέας δείχνει ζωντανή προεπισκόπηση για σύγκριση του SVG με το αποτέλεσμα AVIF."
         },
         {
-          "position": 3,
-          "title": "Μετατρέψτε",
-          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στο πρόγραμμα περιήγησης."
-        },
-        {
-          "position": 4,
-          "title": "Κατεβάστε",
-          "description": "Κατεβάστε τα αρχεία AVIF — μεμονωμένα ή όλα μαζί."
+          "icon": "RiDownloadLine",
+          "title": "Κατεβάστε το αρχείο AVIF",
+          "description": "Κάντε κλικ στο κουμπί λήψης για να αποθηκεύσετε το μετατρεμμένο αρχείο AVIF. Για πολλαπλά αρχεία, χρησιμοποιήστε τη μαζική λήψη."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG έναντι AVIF – βασικές διαφορές",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td><td class=\"py-2 text-center\">Και τα δύο</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε πρέπει να μετατρέψετε SVG σε AVIF;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Βελτιστοποίηση ιστοσελίδας",
+          "description": "SVG → AVIF – WordPress, Shopify, WooCommerce."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email και κοινοποίηση",
+          "description": "AVIF – Gmail, Outlook, Forthnet."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Ηλεκτρονικό εμπόριο",
+          "description": "Skroutz.gr, Public.gr, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Έγγραφα και αρχειοθέτηση",
+          "description": "AVIF – τυπογραφεία."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι ξεχωρίζει αυτόν τον μετατροπέα SVG σε AVIF;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρες απόρρητο",
+          "description": "Τα αρχεία SVG επεξεργάζονται αποκλειστικά στον φυλλομετρητή σας. Τίποτα δεν ανεβαίνει σε κανέναν διακομιστή."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Χωρίς όρια",
+          "description": "Μετατρέψτε όσα αρχεία SVG σε AVIF χρειάζεστε. Χωρίς ημερήσια όρια, χωρίς περιορισμούς μεγέθους, χωρίς υδατογράφημα."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Έλεγχος ποιότητας",
+          "description": "Προσαρμόστε τις ρυθμίσεις συμπίεσης για την ιδανική ισορροπία μεταξύ μεγέθους και ποιότητας."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Άμεση μετατροπή",
+          "description": "Όλη η επεξεργασία γίνεται τοπικά με σύγχρονα API του φυλλομετρητή – γρήγορα και χωρίς σύνδεση."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Μετατροπή SVG σε AVIF στην πράξη",
+      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας.</p><p class=\"text-mid\">Skroutz.gr, Public.gr, Marketplace – WordPress, Shopify, WooCommerce.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Συχνές ερωτήσεις",
+      "title": "Συχνές ερωτήσεις για τη μετατροπή SVG σε AVIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Τι είναι η μορφή AVIF;",
-          "answer": "Το AVIF είναι μια σύγχρονη μορφή εικόνας βασισμένη στον κωδικοποιητή AV1. Προσφέρει εξαιρετική συμπίεση — τα αρχεία μπορούν να είναι έως 50% μικρότερα από JPG."
+          "question": "Είναι δωρεάν η μετατροπή SVG σε AVIF;",
+          "answer": "Ναι, αυτός ο μετατροπέας SVG σε AVIF είναι απολύτως δωρεάν χωρίς όρια. Δεν απαιτείται εγγραφή."
         },
         {
-          "question": "Λειτουργεί το AVIF σε όλα τα προγράμματα περιήγησης;",
-          "answer": "Το AVIF υποστηρίζεται από Chrome, Edge και Firefox. Το Safari έχει περιορισμένη υποστήριξη AVIF."
+          "question": "Ανεβαίνουν τα αρχεία μου σε κάποιον διακομιστή;",
+          "answer": "Όχι. Όλη η επεξεργασία γίνεται τοπικά στον φυλλομετρητή σας. Τα αρχεία δεν φεύγουν ποτέ από τη συσκευή σας."
         },
         {
-          "question": "Αποστέλλονται τα αρχεία μου σε διακομιστή;",
-          "answer": "Όχι. Η μετατροπή γίνεται εξ ολοκλήρου στο πρόγραμμα περιήγησης. Τα αρχεία δεν φεύγουν ποτέ από τον υπολογιστή σας."
+          "question": "Θα χάσω ποιότητα;",
+          "answer": "Το AVIF χρησιμοποιεί συμπίεση με απώλειες. Σε υψηλές ρυθμίσεις (80-95%) η διαφορά είναι αδιόρατη."
+        },
+        {
+          "question": "Μπορώ να μετατρέψω πολλαπλά αρχεία;",
+          "answer": "Ναι, υποστηρίζεται μαζική μετατροπή."
+        },
+        {
+          "question": "Λειτουργεί σε κινητά;",
+          "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο φυλλομετρητή."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Χρειάζεστε περισσότερα;",
-      "description": "Επικοινωνήστε μαζί μας — θα σας βοηθήσουμε να βρείτε τη σωστή λύση.",
-      "href": "/el/epikoinonia",
-      "buttonText": "Γράψτε μας"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG to AVIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

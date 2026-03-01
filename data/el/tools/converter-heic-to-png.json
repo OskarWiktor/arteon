@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Γιατί να μετατρέψετε HEIC σε PNG;",
+      "html": "<p class=\"text-mid mb-4\">Το High Efficiency Image Container (HEIC) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή HEIC σε PNG (Portable Network Graphics) εξασφαλίζει καθολική συμβατότητα με όλους τους φυλλομετρητές και συσκευές.</p><p class=\"text-mid mb-4\">Το PNG υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
+      "imageAlt": "HEIC to PNG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "HEIC → PNG",
+      "title": "Πώς να μετατρέψετε HEIC σε PNG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Προσθηκη αρχειων",
-          "description": "Drag HEIC files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Ανεβάστε το αρχείο HEIC",
+          "description": "Σύρετε και αφήστε την εικόνα HEIC στην περιοχή μετατροπής ή κάντε κλικ για αναζήτηση. Μπορείτε να προσθέσετε πολλαπλά αρχεία ταυτόχρονα."
         },
         {
-          "title": "2. Μετατροπη",
-          "description": "PNG is lossless.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Προσαρμόστε τις ρυθμίσεις",
+          "description": "Επιλέξτε τις ρυθμίσεις ποιότητας και εξόδου. Ο μετατροπέας δείχνει ζωντανή προεπισκόπηση για σύγκριση του HEIC με το αποτέλεσμα PNG."
         },
         {
-          "title": "3. Ληψη",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Κατεβάστε το αρχείο PNG",
+          "description": "Κάντε κλικ στο κουμπί λήψης για να αποθηκεύσετε το μετατρεμμένο αρχείο PNG. Για πολλαπλά αρχεία, χρησιμοποιήστε τη μαζική λήψη."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC έναντι PNG – βασικές διαφορές",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Και τα δύο</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Όχι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Όχι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε πρέπει να μετατρέψετε HEIC σε PNG;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Βελτιστοποίηση ιστοσελίδας",
+          "description": "HEIC → PNG – WordPress, Shopify, WooCommerce."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email και κοινοποίηση",
+          "description": "PNG – Gmail, Outlook, Forthnet."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Ηλεκτρονικό εμπόριο",
+          "description": "Skroutz.gr, Public.gr, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Έγγραφα και αρχειοθέτηση",
+          "description": "PNG – τυπογραφεία."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Μετατροπέας HEIC σε PNG",
+      "title": "Τι ξεχωρίζει αυτόν τον μετατροπέα HEIC σε PNG;",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Πλήρες απόρρητο",
+          "description": "Τα αρχεία HEIC επεξεργάζονται αποκλειστικά στον φυλλομετρητή σας. Τίποτα δεν ανεβαίνει σε κανέναν διακομιστή."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Χωρίς όρια",
+          "description": "Μετατρέψτε όσα αρχεία HEIC σε PNG χρειάζεστε. Χωρίς ημερήσια όρια, χωρίς περιορισμούς μεγέθους, χωρίς υδατογράφημα."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Lossless",
-          "description": "PNG preserves full image quality."
+          "title": "Έλεγχος ποιότητας",
+          "description": "Προσαρμόστε τις ρυθμίσεις συμπίεσης για την ιδανική ισορροπία μεταξύ μεγέθους και ποιότητας."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Άμεση μετατροπή",
+          "description": "Όλη η επεξεργασία γίνεται τοπικά με σύγχρονα API του φυλλομετρητή – γρήγορα και χωρίς σύνδεση."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Μετατροπή HEIC σε PNG στην πράξη",
+      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας.</p><p class=\"text-mid\">Skroutz.gr, Public.gr, Marketplace – WordPress, Shopify, WooCommerce.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Συχνες ερωτησεις",
-      "openByDefault": 1,
+      "title": "Συχνές ερωτήσεις για τη μετατροπή HEIC σε PNG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "HEIC → PNG?",
-          "answer": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG χωρις απωλειες. Πληρης ποιοτητα."
+          "question": "Είναι δωρεάν η μετατροπή HEIC σε PNG;",
+          "answer": "Ναι, αυτός ο μετατροπέας HEIC σε PNG είναι απολύτως δωρεάν χωρίς όρια. Δεν απαιτείται εγγραφή."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Ανεβαίνουν τα αρχεία μου σε κάποιον διακομιστή;",
+          "answer": "Όχι. Όλη η επεξεργασία γίνεται τοπικά στον φυλλομετρητή σας. Τα αρχεία δεν φεύγουν ποτέ από τη συσκευή σας."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Θα χάσω ποιότητα;",
+          "answer": "Το PNG υποστηρίζει συμπίεση χωρίς απώλειες, διατηρώντας την αρχική ποιότητα."
+        },
+        {
+          "question": "Μπορώ να μετατρέψω πολλαπλά αρχεία;",
+          "answer": "Ναι, υποστηρίζεται μαζική μετατροπή."
+        },
+        {
+          "question": "Λειτουργεί σε κινητά;",
+          "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο φυλλομετρητή."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Ανακαλυψτε περισσοτερα δωρεαν εργαλεια"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

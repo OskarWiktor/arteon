@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Por que converter AVIF para JPG?",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) é um formato de imagem com perda que suporta milhões de cores. É amplamente utilizado para imagens web modernas.</p><p class=\"text-mid mb-4\">Converter AVIF para JPG (JPEG) garante compatibilidade universal com todos os navegadores e dispositivos.</p><p class=\"text-mid mb-4\">JPG não suporta transparência – as áreas transparentes serão preenchidas com uma cor de fundo. Como formato com perda, JPG atinge excelentes rácios de compressão.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "AVIF to JPG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "AVIF → JPG",
+      "title": "Como converter AVIF para JPG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Adicionar ficheiros",
-          "description": "Drag AVIF files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Carregue o seu ficheiro AVIF",
+          "description": "Arraste e solte a sua imagem AVIF na área do conversor ou clique para procurar no dispositivo. Pode adicionar vários ficheiros de uma vez."
         },
         {
-          "title": "2. Definir qualidade",
-          "description": "JPG quality: 85% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Ajuste as configurações",
+          "description": "Escolha as suas preferências de qualidade e saída. O conversor mostra uma pré-visualização ao vivo para comparar o original AVIF com o resultado JPG."
         },
         {
-          "title": "3. Descarregar",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Descarregue o seu ficheiro JPG",
+          "description": "Clique no botão de download para guardar o ficheiro JPG convertido. Para vários ficheiros, use o download em lote."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "AVIF vs JPG – diferenças principais",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caraterística</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressão</td><td class=\"py-2 text-center\">Ambas</td><td class=\"py-2 text-center\">Com perda</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparência</td><td class=\"py-2 text-center\">Sim</td><td class=\"py-2 text-center\">Não</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animação</td><td class=\"py-2 text-center\">Sim</td><td class=\"py-2 text-center\">Não</td></tr><tr><td class=\"py-2\">Suporte navegador</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando converter AVIF para JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Otimização web",
+          "description": "AVIF → JPG – WordPress, Shopify, Nuvemshop."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email e partilha",
+          "description": "JPG – Gmail, Outlook, UOL Mail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "OLX.pt, KuantoKusta, Amazon, Mercado Livre."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documentos e arquivo",
+          "description": "JPG – gráficas."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Conversor AVIF para JPG",
+      "title": "O que diferencia este conversor de AVIF para JPG?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Privacidade total",
+          "description": "Os seus ficheiros AVIF são processados inteiramente no seu navegador. Nada é enviado para servidores – conforme com o RGPD."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Sem limites",
+          "description": "Converta quantos ficheiros AVIF para JPG precisar. Sem limites diários, sem restrições de tamanho, sem marcas de água."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Quality control",
-          "description": "Adjust JPG quality with the slider."
+          "icon": "RiImageEditLine",
+          "title": "Controlo de qualidade",
+          "description": "Ajuste as definições de compressão para encontrar o equilíbrio perfeito entre tamanho e qualidade."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Conversão instantânea",
+          "description": "Todo o processamento acontece localmente com APIs modernas do navegador – rápido e funcional mesmo sem ligação."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversão de AVIF para JPG na prática",
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos.</p><p class=\"text-mid\">OLX.pt, KuantoKusta, Amazon, Mercado Livre – WordPress, Shopify, Nuvemshop.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Perguntas frequentes",
-      "openByDefault": 1,
+      "title": "Perguntas frequentes sobre a conversão de AVIF para JPG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "AVIF → JPG?",
-          "answer": "Converta ficheiros AVIF para JPG universal. Compativel com qualquer programa e plataforma."
+          "question": "A conversão de AVIF para JPG é gratuita?",
+          "answer": "Sim, este conversor de AVIF para JPG é completamente gratuito, sem limites. Sem registo, sem marcas de água."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Os meus ficheiros são enviados para um servidor?",
+          "answer": "Não. Todo o processamento acontece localmente no seu navegador. Os seus ficheiros nunca saem do seu dispositivo."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Vou perder qualidade ao converter AVIF para JPG?",
+          "answer": "JPG usa compressão com perda. Em configurações de alta qualidade (80-95%), a diferença é imperceptível."
+        },
+        {
+          "question": "Posso converter vários ficheiros AVIF de uma vez?",
+          "answer": "Sim, o conversor suporta conversão em lote. Adicione vários ficheiros AVIF e converta-os todos para JPG simultaneamente."
+        },
+        {
+          "question": "O conversor funciona em dispositivos móveis?",
+          "answer": "Sim, funciona em qualquer dispositivo com um navegador web moderno, incluindo smartphones e tablets."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

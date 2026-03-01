@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "SVG PNG konverter",
-      "html": "<p class=\"text-mid\">SVG vektorgrafika konvertálása PNG-re. Ideális dokumentumokhoz és közösségi médiához.</p>",
+      "title": "Miért érdemes SVG-t PNG-re konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">A Scalable Vector Graphics (SVG) egy veszteségmentes képformátum, amely vektorgrafikán alapul. Széles körben használják logókhoz és ikonokhoz.</p><p class=\"text-mid mb-4\">A SVG konvertálása PNG-re (Portable Network Graphics) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A PNG támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
-      "imageAlt": "SVG PNG konverter – Arteon"
+      "imageAlt": "SVG to PNG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "SVG → PNG",
+      "title": "Hogyan konvertálja SVG-t PNG-re",
       "grid": "three",
       "items": [
         {
-          "title": "1. Fájlok hozzáadása",
-          "description": "Húzza a SVG fájlokat a feltöltési területre, vagy kattintson a fájlok kiválasztásához az eszközéről.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Töltse fel a SVG fájlt",
+          "description": "Húzza és dobja a SVG képet a konverter területére, vagy kattintson a tallózáshoz. Több fájlt is hozzáadhat egyszerre."
         },
         {
-          "title": "2. Konvertálás",
-          "description": "Kattintson a konvertálásra. A PNG veszteségmentes formátum — nincs szükség minőségi beállításra.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Állítsa be a beállításokat",
+          "description": "Válassza ki a kívánt minőségi és kimeneti beállításokat. A konverter élő előnézetet mutat a SVG eredeti és a PNG eredmény összehasonlításához."
         },
         {
-          "title": "3. Letöltés",
-          "description": "Töltse le a konvertált PNG fájlokat egyenként vagy egyszerre.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Töltse le a PNG fájlt",
+          "description": "Kattintson a letöltés gombra a konvertált PNG fájl mentéséhez. Több fájl esetén használja a kötegelt letöltést."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs PNG – a legfontosabb különbségek",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteségmentes</td><td class=\"py-2 text-center\">Veszteségmentes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Nem</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor érdemes SVG-t PNG-re konvertálni?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weboldal-optimalizálás",
+          "description": "SVG → PNG – WordPress, Shopify, Shoprenter."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail és megosztás",
+          "description": "PNG – Gmail, Outlook, Citromail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-kereskedelem",
+          "description": "Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumentumok és archiválás",
+          "description": "PNG – nyomdák."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "SVG – PNG konverter funkciók",
+      "title": "Mi teszi különlegessé ezt a SVG-PNG konvertert?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Teljes adatvédelem",
-          "description": "A fájlok soha nem hagyják el az eszközét. A konvertálás helyben, a böngészőben történik — semmi sem kerül feltöltésre."
+          "description": "A SVG fájlok kizárólag a böngészőben kerülnek feldolgozásra. Semmi sem kerül fel semmilyen szerverre."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Nincs fájlkorlát",
-          "description": "Konvertáljon annyi fájlt, amennyire szüksége van egyetlen munkamenetben. Nincs korlátozás, nincs regisztráció."
+          "icon": "RiInfinityLine",
+          "title": "Korlátlan",
+          "description": "Konvertáljon annyi SVG fájlt PNG-re, amennyire szüksége van. Nincsenek napi korlátok, méretkorlátozások vagy vízjelek."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Veszteségmentes kimenet",
-          "description": "A PNG megőrzi a teljes képminőséget adatveszteség nélkül. Ideális grafikákhoz és további szerkesztéshez."
+          "title": "Minőség-szabályozás",
+          "description": "Állítsa be a tömörítést a fájlméret és a képminőség tökéletes egyensúlyához."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Csoportos letöltés",
-          "description": "Töltse le a konvertált fájlokat egyenként vagy egyszerre egyetlen kattintással."
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konvertálás",
+          "description": "A feldolgozás helyben történik modern böngésző API-kkal – gyors, és internetkapcsolat nélkül is működik."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG-PNG konvertálás a gyakorlatban",
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek.</p><p class=\"text-mid\">Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace – WordPress, Shopify, Shoprenter.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Gyakran ismételt kérdések a SVG – PNG konvertálásról",
-      "openByDefault": 1,
+      "title": "Gyakran ismételt kérdések a SVG-PNG konvertálásról",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "A SVG – PNG konvertálás veszteségmentes?",
-          "answer": "A PNG veszteségmentes formátum, így a kimeneti fájl megőrzi az eredeti SVG fájl teljes képminőségét. Ha a SVG veszteséges tömörítést használt, az már elveszett adatokat nem lehet visszaállítani."
+          "question": "Ingyenes a SVG PNG-re konvertálás?",
+          "answer": "Igen, ez a SVG-PNG konverter teljesen ingyenes, korlátok nélkül. Nem szükséges regisztráció, nincsenek vízjelek."
         },
         {
-          "question": "Megmarad az átlátszóság a konvertálás során?",
-          "answer": "Igen. A PNG támogatja az átlátszóságot (alfa csatorna), így a SVG fájl átlátszó területei teljes mértékben megmaradnak a kimenetben."
+          "question": "Feltöltődnek a fájljaim valamilyen szerverre?",
+          "answer": "Nem. A teljes feldolgozás helyben, a böngészőben történik. A fájlok soha nem hagyják el az eszközét."
         },
         {
-          "question": "Miért nagyobb a kimeneti PNG fájl az eredetinél?",
-          "answer": "A PNG veszteségmentes formátum, amely minden pixelt megőriz tömörítési műtermékek nélkül. A veszteségmentes fájlok természetüknél fogva nagyobbak — ez várható, és azt jelenti, hogy nem vész el minőség."
+          "question": "Vesztek minőséget a konvertáláskor?",
+          "answer": "A PNG veszteségmentes tömörítést támogat, megőrizve az eredeti minőséget."
         },
         {
-          "question": "Mely böngészők támogatják ezt a konvertert?",
-          "answer": "A konverter minden modern böngészőben működik: Chrome, Edge, Firefox és Safari. AVIF formátum támogatásához használjon Chrome 85+, Firefox 93+ vagy Safari 16.4+ verziót."
+          "question": "Konvertálhatok több fájlt egyszerre?",
+          "answer": "Igen, a konverter támogatja a kötegelt konvertálást."
         },
         {
-          "question": "A fájljaim feltöltésre kerülnek egy szerverre?",
-          "answer": "Nem. A teljes konvertálási folyamat helyben, a böngészőjében fut JavaScript segítségével. A fájljai soha nem hagyják el az eszközét, és mi nem férünk hozzájuk."
+          "question": "Működik mobileszközökön?",
+          "answer": "Igen, bármely modern böngészővel rendelkező eszközön működik."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel további ingyenes eszközöket"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

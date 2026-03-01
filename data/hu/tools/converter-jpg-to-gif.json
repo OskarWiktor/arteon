@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Hogyan mukodik a JPG GIF konverter?",
-      "html": "<p>JPG fotok konvertalasa GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz. A konvertalas teljes egeszeben a bongeszoben tortenik — a fajlok soha nem kerulnek szerverre. Regisztracio nelkul, fajl limit nelkul.</p>"
+      "type": "sectionBasic",
+      "title": "Miért érdemes JPG-t GIF-re konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">A JPEG (JPG) egy veszteséges képformátum. Széles körben használják fényképekhez.</p><p class=\"text-mid mb-4\">A JPG konvertálása GIF-re (Graphics Interchange Format) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A GIF támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG to GIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Hogyan konvertalhato JPG GIF-ra?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan konvertálja JPG-t GIF-re",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Fajlok feltoltese",
-          "description": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+          "icon": "RiUploadCloud2Line",
+          "title": "Töltse fel a JPG fájlt",
+          "description": "Húzza és dobja a JPG képet a konverter területére, vagy kattintson a tallózáshoz. Több fájlt is hozzáadhat egyszerre."
         },
         {
-          "position": 2,
-          "title": "Minoseg beallitasa",
-          "description": "Allitsd be a GIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+          "icon": "RiSettings3Line",
+          "title": "Állítsa be a beállításokat",
+          "description": "Válassza ki a kívánt minőségi és kimeneti beállításokat. A konverter élő előnézetet mutat a JPG eredeti és a GIF eredmény összehasonlításához."
         },
         {
-          "position": 3,
-          "title": "Konvertalas",
-          "description": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
-        },
-        {
-          "position": 4,
-          "title": "Letoltes",
-          "description": "Toltsd le a GIF fajlokat — egyenkent vagy mindet egyszerre."
+          "icon": "RiDownloadLine",
+          "title": "Töltse le a GIF fájlt",
+          "description": "Kattintson a letöltés gombra a konvertált GIF fájl mentéséhez. Több fájl esetén használja a kötegelt letöltést."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG vs GIF – a legfontosabb különbségek",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteséges</td><td class=\"py-2 text-center\">Veszteségmentes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor érdemes JPG-t GIF-re konvertálni?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weboldal-optimalizálás",
+          "description": "JPG → GIF – WordPress, Shopify, Shoprenter."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail és megosztás",
+          "description": "GIF – Gmail, Outlook, Citromail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-kereskedelem",
+          "description": "Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumentumok és archiválás",
+          "description": "GIF – nyomdák."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a JPG-GIF konvertert?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "A JPG fájlok kizárólag a böngészőben kerülnek feldolgozásra. Semmi sem kerül fel semmilyen szerverre."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Korlátlan",
+          "description": "Konvertáljon annyi JPG fájlt GIF-re, amennyire szüksége van. Nincsenek napi korlátok, méretkorlátozások vagy vízjelek."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Minőség-szabályozás",
+          "description": "Állítsa be a tömörítést a fájlméret és a képminőség tökéletes egyensúlyához."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konvertálás",
+          "description": "A feldolgozás helyben történik modern böngésző API-kkal – gyors, és internetkapcsolat nélkül is működik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG-GIF konvertálás a gyakorlatban",
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek.</p><p class=\"text-mid\">Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace – WordPress, Shopify, Shoprenter.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Gyakran ismetelt kerdesek",
+      "title": "Gyakran ismételt kérdések a JPG-GIF konvertálásról",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Mi a GIF formatum?",
-          "answer": "A GIF egy szeles korben tamogatott kepformatum, amely legfeljebb 256 szint tamogat. Idealis egyszeru grafikakhoz es ikonokhoz."
+          "question": "Ingyenes a JPG GIF-re konvertálás?",
+          "answer": "Igen, ez a JPG-GIF konverter teljesen ingyenes, korlátok nélkül. Nem szükséges regisztráció, nincsenek vízjelek."
         },
         {
-          "question": "A GIF konvertalas rontja a minosegét?",
-          "answer": "A GIF korlatozott 256 szinu palettat hasznal. A fenykepek elveszithetnek reszleteket."
+          "question": "Feltöltődnek a fájljaim valamilyen szerverre?",
+          "answer": "Nem. A teljes feldolgozás helyben, a böngészőben történik. A fájlok soha nem hagyják el az eszközét."
         },
         {
-          "question": "A fajljaim elkuldésre kerulnek egy szerverre?",
-          "answer": "Nem. A konvertalas teljes egeszeben a bongeszoben tortenik."
+          "question": "Vesztek minőséget a konvertáláskor?",
+          "answer": "A GIF veszteségmentes tömörítést támogat, megőrizve az eredeti minőséget."
+        },
+        {
+          "question": "Konvertálhatok több fájlt egyszerre?",
+          "answer": "Igen, a konverter támogatja a kötegelt konvertálást."
+        },
+        {
+          "question": "Működik mobileszközökön?",
+          "answer": "Igen, bármely modern böngészővel rendelkező eszközön működik."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Tobbre van szukseged?",
-      "description": "Lepj kapcsolatba velunk — segitunk megtalalni a megfelelo megoldast.",
-      "href": "/hu/kapcsolat",
-      "buttonText": "Irj nekunk"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen nekünk fejleszteni eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JPG to GIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

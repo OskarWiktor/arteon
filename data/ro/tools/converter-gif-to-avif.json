@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Cum functioneaza convertorul GIF in AVIF?",
-      "html": "<p>Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta. Conversia se face integral in browser — fisierele nu sunt trimise niciodata pe un server. Fara inregistrare, fara limita.</p>"
+      "type": "sectionBasic",
+      "title": "De ce să convertiți GIF în AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia GIF în AVIF (AV1 Image File Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">AVIF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "GIF to AVIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Cum sa convertesti GIF in AVIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să convertiți GIF în AVIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Incarca fisiere",
-          "description": "Trage fisierele pe pagina sau da clic pentru a le selecta."
+          "icon": "RiUploadCloud2Line",
+          "title": "Încărcați fișierul GIF",
+          "description": "Trageți și plasați imaginea GIF în zona convertorului sau faceți clic pentru a naviga. Puteți adăuga mai multe fișiere simultan."
         },
         {
-          "position": 2,
-          "title": "Seteaza calitatea",
-          "description": "Ajusteaza cursorul de calitate AVIF — valori mai mici produc fisiere mai mici."
+          "icon": "RiSettings3Line",
+          "title": "Ajustați setările",
+          "description": "Alegeți setările preferate de calitate și ieșire. Convertorul afișează o previzualizare în timp real pentru compararea originalului GIF cu rezultatul AVIF."
         },
         {
-          "position": 3,
-          "title": "Converteste",
-          "description": "Da clic pe Converteste — fisierele sunt procesate local in browser."
-        },
-        {
-          "position": 4,
-          "title": "Descarca",
-          "description": "Descarca fisierele AVIF — individual sau toate deodata."
+          "icon": "RiDownloadLine",
+          "title": "Descărcați fișierul AVIF",
+          "description": "Faceți clic pe butonul de descărcare pentru a salva fișierul AVIF convertit. Pentru mai multe fișiere, folosiți descărcarea în lot."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "GIF vs AVIF – diferențele cheie",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Ambele</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când să convertiți GIF în AVIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimizare web",
+          "description": "GIF → AVIF – WordPress, Shopify, GomAG."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email și partajare",
+          "description": "AVIF – Gmail, Outlook, Yahoo."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documente și arhivare",
+          "description": "AVIF – tipografii."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor GIF în AVIF diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele GIF sunt procesate exclusiv în browserul dumneavoastră. Nimic nu este încărcat pe niciun server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți câte fișiere GIF în AVIF aveți nevoie. Fără limite zilnice, fără restricții de mărime, fără filigrane."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Controlul calității",
+          "description": "Ajustați setările de compresie pentru echilibrul perfect între dimensiunea fișierului și calitatea imaginii."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului – rapid și funcțional chiar și fără conexiune."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversia GIF în AVIF în practică",
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Intrebari frecvente",
+      "title": "Întrebări frecvente despre conversia GIF în AVIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Ce este formatul AVIF?",
-          "answer": "AVIF este un format modern de imagine bazat pe codecul AV1. Ofera compresie excelenta — fisierele pot fi cu pana la 50% mai mici decat JPG."
+          "question": "Este gratuită conversia GIF în AVIF?",
+          "answer": "Da, acest convertor GIF în AVIF este complet gratuit, fără limite. Fără înregistrare, fără filigrane."
         },
         {
-          "question": "Functioneaza AVIF in toate browserele?",
-          "answer": "AVIF este suportat de Chrome, Edge si Firefox. Safari are suport limitat pentru AVIF."
+          "question": "Sunt fișierele mele încărcate pe un server?",
+          "answer": "Nu. Toată procesarea are loc local în browserul dumneavoastră. Fișierele nu părăsesc niciodată dispozitivul."
         },
         {
-          "question": "Sunt fisierele mele trimise pe un server?",
-          "answer": "Nu. Conversia se face integral in browser. Fisierele nu parasesc niciodata computerul."
+          "question": "Voi pierde calitate la conversie?",
+          "answer": "AVIF folosește compresie cu pierderi. La setări de calitate ridicate (80-95%), diferența este imperceptibilă."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul suportă conversia în lot."
+        },
+        {
+          "question": "Funcționează pe dispozitive mobile?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Ai nevoie de mai mult?",
-      "description": "Contacteaza-ne — te vom ajuta sa gasesti solutia potrivita.",
-      "href": "/ro/contact",
-      "buttonText": "Scrie-ne"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "GIF to AVIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

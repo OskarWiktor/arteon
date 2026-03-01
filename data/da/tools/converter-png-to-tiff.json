@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Hvordan fungerer PNG til TIFF-konverteren?",
-      "html": "<p>Konverter PNG-grafik til professionelt TIFF-format. Konverteringen foregaar helt i browseren — filer sendes aldrig til en server. Uden registrering, uden begraensning.</p>"
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere PNG til TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tabsfrit billedformat der understøtter millioner farver. Det bruges bredt til grafik med gennemsigtighed.</p><p class=\"text-mid mb-4\">Konvertering af PNG til TIFF (Tagged Image File Format) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">TIFF understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer TIFF alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG to TIFF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Hvordan konverterer man PNG til TIFF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Sådan konverterer du PNG til TIFF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Upload filer",
-          "description": "Traek filer til siden eller klik for at vaelge fra disken."
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload din PNG-fil",
+          "description": "Træk og slip dit PNG-billede på konverteringsområdet eller klik for at gennemse din enhed. Du kan tilføje flere filer på én gang."
         },
         {
-          "position": 2,
-          "title": "Indstil kvalitet",
-          "description": "Juster TIFF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+          "icon": "RiSettings3Line",
+          "title": "Juster indstillinger",
+          "description": "Vælg din foretrukne kvalitet og outputindstillinger. Konverteren viser en live forhåndsvisning til sammenligning af PNG-originalen med TIFF-resultatet."
         },
         {
-          "position": 3,
-          "title": "Konverter",
-          "description": "Klik pa Konverter — filerne behandles lokalt i browseren."
-        },
-        {
-          "position": 4,
-          "title": "Download",
-          "description": "Download TIFF-filerne — enkeltvis eller alle pa en gang."
+          "icon": "RiDownloadLine",
+          "title": "Download din TIFF-fil",
+          "description": "Klik på downloadknappen for at gemme din konverterede TIFF-fil. Ved flere filer kan du bruge batch-download."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "PNG vs TIFF – de vigtigste forskelle",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tabsfri</td><td class=\"py-2 text-center\">Tabsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår skal du konvertere PNG til TIFF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weboptimering",
+          "description": "PNG → TIFF – WordPress, Shopify, DanDomain."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail og deling",
+          "description": "TIFF – Gmail, Outlook, Jubii."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-handel",
+          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenter og arkivering",
+          "description": "TIFF – trykkerier."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne PNG-til-TIFF-konverter anderledes?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatliv",
+          "description": "Dine PNG-filer behandles udelukkende i din browser. Intet uploades til nogen server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrænsninger",
+          "description": "Konverter så mange PNG-filer til TIFF som du har brug for. Ingen daglige grænser, ingen størrelsesbegrænsninger, ingen vandmærker."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontrol",
+          "description": "Juster komprimeringsindstillingerne for at finde den perfekte balance mellem filstørrelse og billedkvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Øjeblikkelig konvertering",
+          "description": "Al behandling sker lokalt med moderne browser-API’er – hurtigt og fungerer også uden internetforbindelse."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Konvertering af PNG til TIFF i praksis",
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Ofte stillede sporgsmal",
+      "title": "Ofte stillede spørgsmål om konvertering af PNG til TIFF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Hvad er TIFF-format?",
-          "answer": "TIFF er et professionelt tabsfrit billedformat, der bruges til udskrivning, publicering og arkivering."
+          "question": "Er det gratis at konvertere PNG til TIFF?",
+          "answer": "Ja, denne PNG-til-TIFF-konverter er helt gratis uden begrænsninger. Ingen registrering, ingen vandmærker."
         },
         {
-          "question": "Er TIFF-filer storre end JPG?",
-          "answer": "Ja. TIFF-filer er typisk meget storre fordi de bruger tabsfri komprimering."
+          "question": "Uploades mine filer til en server?",
+          "answer": "Nej. Al behandling sker lokalt i din browser. Dine filer forlader aldrig din enhed."
         },
         {
-          "question": "Sendes mine filer til en server?",
-          "answer": "Nej. Konverteringen foregaar helt i browseren."
+          "question": "Mister jeg kvalitet ved konvertering af PNG til TIFF?",
+          "answer": "TIFF understøtter tabsfri komprimering, der bevarer den originale kvalitet."
+        },
+        {
+          "question": "Kan jeg konvertere flere PNG-filer på én gang?",
+          "answer": "Ja, konverteren understøtter batchkonvertering. Tilføj flere PNG-filer og konverter dem alle til TIFF samtidigt."
+        },
+        {
+          "question": "Fungerer konverteren på mobilenheder?",
+          "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Har du brug for mere?",
-      "description": "Kontakt os — vi hjaelper dig med at finde den rigtige losning.",
-      "href": "/da/kontakt",
-      "buttonText": "Skriv til os"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "PNG to TIFF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

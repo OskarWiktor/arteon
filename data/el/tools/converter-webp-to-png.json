@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "Μετατροπέας WebP σε PNG",
-      "html": "<p class=\"text-mid\">Μετατρέψτε εικόνες WebP σε PNG χωρίς απώλειες. Τοπική μετατροπή.</p>",
+      "title": "Γιατί να μετατρέψετε WebP σε PNG;",
+      "html": "<p class=\"text-mid mb-4\">Το WebP (WebP) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες web.</p><p class=\"text-mid mb-4\">Η μετατροπή WebP σε PNG (Portable Network Graphics) εξασφαλίζει καθολική συμβατότητα με όλους τους φυλλομετρητές και συσκευές.</p><p class=\"text-mid mb-4\">Το PNG υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
-      "imageAlt": "Μετατροπέας WebP σε PNG – Arteon"
+      "imageAlt": "WebP to PNG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "WEBP → PNG",
+      "title": "Πώς να μετατρέψετε WebP σε PNG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Προσθήκη αρχείων",
-          "description": "Σύρετε αρχεία WEBP στην περιοχή μεταφόρτωσης ή κάντε κλικ για να τα επιλέξετε από τη συσκευή σας.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Ανεβάστε το αρχείο WebP",
+          "description": "Σύρετε και αφήστε την εικόνα WebP στην περιοχή μετατροπής ή κάντε κλικ για αναζήτηση. Μπορείτε να προσθέσετε πολλαπλά αρχεία ταυτόχρονα."
         },
         {
-          "title": "2. Μετατροπή",
-          "description": "Κάντε κλικ στο μετατροπή. Το PNG είναι μορφή χωρίς απώλειες — δεν χρειάζεται ρύθμιση ποιότητας.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Προσαρμόστε τις ρυθμίσεις",
+          "description": "Επιλέξτε τις ρυθμίσεις ποιότητας και εξόδου. Ο μετατροπέας δείχνει ζωντανή προεπισκόπηση για σύγκριση του WebP με το αποτέλεσμα PNG."
         },
         {
-          "title": "3. Λήψη",
-          "description": "Κατεβάστε τα μετατραπέντα αρχεία PNG μεμονωμένα ή όλα μαζί.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Κατεβάστε το αρχείο PNG",
+          "description": "Κάντε κλικ στο κουμπί λήψης για να αποθηκεύσετε το μετατρεμμένο αρχείο PNG. Για πολλαπλά αρχεία, χρησιμοποιήστε τη μαζική λήψη."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP έναντι PNG – βασικές διαφορές",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Και τα δύο</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε πρέπει να μετατρέψετε WebP σε PNG;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Βελτιστοποίηση ιστοσελίδας",
+          "description": "WebP → PNG – WordPress, Shopify, WooCommerce."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email και κοινοποίηση",
+          "description": "PNG – Gmail, Outlook, Forthnet."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Ηλεκτρονικό εμπόριο",
+          "description": "Skroutz.gr, Public.gr, Marketplace."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Έγγραφα και αρχειοθέτηση",
+          "description": "PNG – τυπογραφεία."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Χαρακτηριστικά μετατροπέα WEBP σε PNG",
+      "title": "Τι ξεχωρίζει αυτόν τον μετατροπέα WebP σε PNG;",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Πλήρες απόρρητο",
-          "description": "Τα αρχεία δεν φεύγουν ποτέ από τη συσκευή σας. Η μετατροπή εκτελείται τοπικά στον browser — τίποτα δεν ανεβαίνει σε κανέναν διακομιστή."
+          "description": "Τα αρχεία WebP επεξεργάζονται αποκλειστικά στον φυλλομετρητή σας. Τίποτα δεν ανεβαίνει σε κανέναν διακομιστή."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Χωρίς όριο αρχείων",
-          "description": "Μετατρέψτε όσα αρχεία χρειάζεστε σε μία συνεδρία. Χωρίς περιορισμούς, χωρίς εγγραφή."
+          "icon": "RiInfinityLine",
+          "title": "Χωρίς όρια",
+          "description": "Μετατρέψτε όσα αρχεία WebP σε PNG χρειάζεστε. Χωρίς ημερήσια όρια, χωρίς περιορισμούς μεγέθους, χωρίς υδατογράφημα."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Έξοδος χωρίς απώλειες",
-          "description": "Το PNG διατηρεί πλήρη ποιότητα εικόνας χωρίς απώλεια δεδομένων. Ιδανικό για γραφικά και περαιτέρω επεξεργασία."
+          "title": "Έλεγχος ποιότητας",
+          "description": "Προσαρμόστε τις ρυθμίσεις συμπίεσης για την ιδανική ισορροπία μεταξύ μεγέθους και ποιότητας."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Ομαδική λήψη",
-          "description": "Κατεβάστε τα μετατραπέντα αρχεία ένα-ένα ή όλα μαζί με ένα κλικ."
+          "icon": "RiFlashlightLine",
+          "title": "Άμεση μετατροπή",
+          "description": "Όλη η επεξεργασία γίνεται τοπικά με σύγχρονα API του φυλλομετρητή – γρήγορα και χωρίς σύνδεση."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Μετατροπή WebP σε PNG στην πράξη",
+      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας.</p><p class=\"text-mid\">Skroutz.gr, Public.gr, Marketplace – WordPress, Shopify, WooCommerce.</p>"
     },
     {
       "type": "gap",
@@ -125,28 +171,28 @@
     },
     {
       "type": "faq",
-      "title": "Συχνές ερωτήσεις σχετικά με τη μετατροπή WEBP σε PNG",
-      "openByDefault": 1,
+      "title": "Συχνές ερωτήσεις για τη μετατροπή WebP σε PNG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Η μετατροπή WEBP σε PNG είναι χωρίς απώλειες;",
-          "answer": "Το PNG είναι μορφή χωρίς απώλειες, οπότε το αρχείο εξόδου διατηρεί πλήρη ποιότητα εικόνας από το αρχικό αρχείο WEBP. Αν το WEBP χρησιμοποιούσε συμπίεση με απώλειες, τα ήδη χαμένα δεδομένα δεν μπορούν να ανακτηθούν."
-        },
-        {
-          "question": "Διατηρείται η διαφάνεια κατά τη μετατροπή;",
-          "answer": "Ναι. Το PNG υποστηρίζει διαφάνεια (κανάλι alfa), οπότε οι διαφανείς περιοχές από το αρχείο WEBP διατηρούνται πλήρως στην έξοδο."
-        },
-        {
-          "question": "Γιατί το αρχείο εξόδου PNG είναι μεγαλύτερο από το πρωτότυπο;",
-          "answer": "Το PNG είναι μορφή χωρίς απώλειες που διατηρεί κάθε pixel χωρίς τεχνουργήματα συμπίεσης. Τα αρχεία χωρίς απώλειες είναι φυσικά μεγαλύτερα — αυτό είναι αναμενόμενο και σημαίνει ότι δεν χάνεται ποιότητα."
-        },
-        {
-          "question": "Ποιοι browsers υποστηρίζουν αυτόν τον μετατροπέα;",
-          "answer": "Ο μετατροπέας λειτουργεί σε όλους τους σύγχρονους browsers: Chrome, Edge, Firefox και Safari. Για υποστήριξη μορφής AVIF, χρησιμοποιήστε Chrome 85+, Firefox 93+ ή Safari 16.4+."
+          "question": "Είναι δωρεάν η μετατροπή WebP σε PNG;",
+          "answer": "Ναι, αυτός ο μετατροπέας WebP σε PNG είναι απολύτως δωρεάν χωρίς όρια. Δεν απαιτείται εγγραφή."
         },
         {
           "question": "Ανεβαίνουν τα αρχεία μου σε κάποιον διακομιστή;",
-          "answer": "Όχι. Ολόκληρη η διαδικασία μετατροπής εκτελείται τοπικά στον browser σας με JavaScript. Τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας και δεν έχουμε πρόσβαση σε αυτά."
+          "answer": "Όχι. Όλη η επεξεργασία γίνεται τοπικά στον φυλλομετρητή σας. Τα αρχεία δεν φεύγουν ποτέ από τη συσκευή σας."
+        },
+        {
+          "question": "Θα χάσω ποιότητα;",
+          "answer": "Το PNG υποστηρίζει συμπίεση χωρίς απώλειες, διατηρώντας την αρχική ποιότητα."
+        },
+        {
+          "question": "Μπορώ να μετατρέψω πολλαπλά αρχεία;",
+          "answer": "Ναι, υποστηρίζεται μαζική μετατροπή."
+        },
+        {
+          "question": "Λειτουργεί σε κινητά;",
+          "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο φυλλομετρητή."
         }
       ]
     },
@@ -169,10 +215,6 @@
     {
       "type": "toolsCarousel",
       "title": "Ανακαλύψτε περισσότερα δωρεάν εργαλεία"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

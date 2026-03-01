@@ -59,60 +59,169 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Wie funktioniert der SVG zu TIFF Konverter?",
-      "html": "<p>Vektor-SVG-Grafiken in hochwertiges TIFF-Raster umwandeln. Die Konvertierung erfolgt vollstandig im Browser — Dateien werden nie an einen Server gesendet. Ohne Registrierung, ohne Dateilimit.</p>"
+      "type": "sectionBasic",
+      "title": "Warum SVG in TIFF konvertieren?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) ist ein verlustfreies Bildformat, das auf Vektorgrafiken basiert. Es wird häufig für Logos und Icons verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von SVG in TIFF (Tagged Image File Format) bietet mehr Flexibilität bei der Verwendung Ihrer Bilder.</p><p class=\"text-mid mb-4\">TIFF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt TIFF die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to TIFF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Wie konvertiert man SVG zu TIFF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So konvertieren Sie SVG in TIFF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Dateien hochladen",
-          "description": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+          "icon": "RiUploadCloud2Line",
+          "title": "SVG-Datei hochladen",
+          "description": "Ziehen Sie Ihr SVG-Bild auf den Konverterbereich oder klicken Sie, um Dateien auszuwählen. Mehrere Dateien gleichzeitig möglich."
         },
         {
-          "position": 2,
-          "title": "Qualitat einstellen",
-          "description": "Passen Sie den TIFF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+          "icon": "RiSettings3Line",
+          "title": "Einstellungen anpassen",
+          "description": "Wählen Sie Qualität und Ausgabeoptionen. Der Konverter zeigt eine Live-Vorschau zum Vergleich von SVG-Original und TIFF-Ergebnis."
         },
         {
-          "position": 3,
-          "title": "Konvertieren",
-          "description": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
-        },
-        {
-          "position": 4,
-          "title": "Herunterladen",
-          "description": "Laden Sie die TIFF-Dateien herunter — einzeln oder alle auf einmal."
+          "icon": "RiDownloadLine",
+          "title": "TIFF-Datei herunterladen",
+          "description": "Klicken Sie auf Download, um Ihre konvertierte TIFF-Datei zu speichern. Bei mehreren Dateien nutzen Sie den Stapeldownload."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs. TIFF – die wichtigsten Unterschiede",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann sollten Sie SVG in TIFF konvertieren?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Website-Optimierung",
+          "description": "SVG → TIFF – WordPress, Shopify, TYPO3."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-Mail und Teilen",
+          "description": "TIFF – Gmail, Outlook, GMX, Web.de."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-Commerce",
+          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumente und Archivierung",
+          "description": "TIFF – Druckereien."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was zeichnet diesen SVG-zu-TIFF-Konverter aus?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Vollständiger Datenschutz",
+          "description": "Ihre SVG-Dateien werden ausschließlich in Ihrem Browser verarbeitet. Nichts wird auf einen Server hochgeladen – DSGVO-konform."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Keine Limits",
+          "description": "Konvertieren Sie so viele SVG-Dateien in TIFF wie nötig. Keine täglichen Limits, keine Größenbeschränkungen, keine Wasserzeichen."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Qualitätskontrolle",
+          "description": "Passen Sie die Kompressionseinstellungen an, um die perfekte Balance zwischen Dateigröße und Bildqualität zu finden."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Sofortige Konvertierung",
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs – schnell und auch ohne Internetverbindung nutzbar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG-zu-TIFF-Konvertierung in der Praxis",
+      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von SVG in TIFF kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet TIFF hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Haufig gestellte Fragen",
+      "title": "Häufig gestellte Fragen zur Konvertierung von SVG in TIFF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Was ist das TIFF-Format?",
-          "answer": "TIFF ist ein professionelles verlustfreies Bildformat fur Druck, Verlagswesen und Archivierung."
+          "question": "Ist die Konvertierung von SVG in TIFF kostenlos?",
+          "answer": "Ja, dieser SVG-zu-TIFF-Konverter ist vollständig kostenlos, ohne Limits. Keine Registrierung, keine Wasserzeichen."
         },
         {
-          "question": "Sind TIFF-Dateien grosser als JPG?",
-          "answer": "Ja. TIFF-Dateien sind typischerweise viel grosser, da sie verlustfreie Kompression verwenden."
+          "question": "Werden meine Dateien auf einen Server hochgeladen?",
+          "answer": "Nein. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Dateien verlassen niemals Ihr Gerät – vollständig DSGVO-konform."
         },
         {
-          "question": "Werden meine Dateien an einen Server gesendet?",
-          "answer": "Nein. Die Konvertierung erfolgt vollstandig im Browser."
+          "question": "Verliere ich Qualität bei der Konvertierung von SVG in TIFF?",
+          "answer": "TIFF unterstützt verlustfreie Komprimierung, sodass die Originalqualität vollständig erhalten bleibt."
+        },
+        {
+          "question": "Kann ich mehrere SVG-Dateien gleichzeitig konvertieren?",
+          "answer": "Ja, der Konverter unterstützt Stapelkonvertierung. Fügen Sie mehrere SVG-Dateien hinzu und konvertieren Sie alle gleichzeitig in TIFF."
+        },
+        {
+          "question": "Wie groß dürfen die Dateien maximal sein?",
+          "answer": "Es gibt keine feste Größenbegrenzung, da die Verarbeitung in Ihrem Browser stattfindet. Sehr große Dateien (über 50 MB) können je nach Gerät länger dauern."
+        },
+        {
+          "question": "Funktioniert der Konverter auf Mobilgeräten?",
+          "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Brauchen Sie mehr?",
-      "description": "Kontaktieren Sie uns — wir helfen Ihnen, die richtige Losung zu finden.",
-      "href": "/de/kontakt",
-      "buttonText": "Schreiben Sie uns"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Tools zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG to TIFF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

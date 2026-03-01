@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere HEIC til JPG?",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til Apple-enhedsfotos.</p><p class=\"text-mid mb-4\">Konvertering af HEIC til JPG (JPEG) sikrer universel kompatibilitet med alle browsere og enheder.</p><p class=\"text-mid mb-4\">JPG understøtter ikke gennemsigtighed – gennemsigtige områder fyldes med en baggrundsfarve. Som tabsgivende format opnår JPG fremragende kompressionsforhold.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
+      "imageAlt": "HEIC to JPG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "HEIC → JPG",
+      "title": "Sådan konverterer du HEIC til JPG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Tilfoej filer",
-          "description": "Drag HEIC files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload din HEIC-fil",
+          "description": "Træk og slip dit HEIC-billede på konverteringsområdet eller klik for at gennemse din enhed. Du kan tilføje flere filer på én gang."
         },
         {
-          "title": "2. Indstil kvalitet",
-          "description": "JPG quality: 85% default.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Juster indstillinger",
+          "description": "Vælg din foretrukne kvalitet og outputindstillinger. Konverteren viser en live forhåndsvisning til sammenligning af HEIC-originalen med JPG-resultatet."
         },
         {
-          "title": "3. Download",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Download din JPG-fil",
+          "description": "Klik på downloadknappen for at gemme din konverterede JPG-fil. Ved flere filer kan du bruge batch-download."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC vs JPG – de vigtigste forskelle",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Begge</td><td class=\"py-2 text-center\">Tabsgivende</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår skal du konvertere HEIC til JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weboptimering",
+          "description": "HEIC → JPG – WordPress, Shopify, DanDomain."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail og deling",
+          "description": "JPG – Gmail, Outlook, Jubii."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-handel",
+          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenter og arkivering",
+          "description": "JPG – trykkerier."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "HEIC til JPG-konverter",
+      "title": "Hvad gør denne HEIC-til-JPG-konverter anderledes?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Fuld privatliv",
+          "description": "Dine HEIC-filer behandles udelukkende i din browser. Intet uploades til nogen server."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrænsninger",
+          "description": "Konverter så mange HEIC-filer til JPG som du har brug for. Ingen daglige grænser, ingen størrelsesbegrænsninger, ingen vandmærker."
         },
         {
-          "icon": "RiSpeedLine",
-          "title": "Quality control",
-          "description": "Adjust JPG quality with the slider."
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontrol",
+          "description": "Juster komprimeringsindstillingerne for at finde den perfekte balance mellem filstørrelse og billedkvalitet."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Øjeblikkelig konvertering",
+          "description": "Al behandling sker lokalt med moderne browser-API’er – hurtigt og fungerer også uden internetforbindelse."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Konvertering af HEIC til JPG i praksis",
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,28 @@
     },
     {
       "type": "faq",
-      "title": "Ofte stillede sporgsmal",
-      "openByDefault": 1,
+      "title": "Ofte stillede spørgsmål om konvertering af HEIC til JPG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "HEIC → JPG?",
-          "answer": "Konverter iPhone HEIC-fotos til universel JPG. Ingen registrering, ingen upload."
+          "question": "Er det gratis at konvertere HEIC til JPG?",
+          "answer": "Ja, denne HEIC-til-JPG-konverter er helt gratis uden begrænsninger. Ingen registrering, ingen vandmærker."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "Uploades mine filer til en server?",
+          "answer": "Nej. Al behandling sker lokalt i din browser. Dine filer forlader aldrig din enhed."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "Mister jeg kvalitet ved konvertering af HEIC til JPG?",
+          "answer": "JPG bruger tabsgivende komprimering. Ved højere kvalitetsindstillinger (80-95%) er forskellen usynlig for det menneskelige øje."
+        },
+        {
+          "question": "Kan jeg konvertere flere HEIC-filer på én gang?",
+          "answer": "Ja, konverteren understøtter batchkonvertering. Tilføj flere HEIC-filer og konverter dem alle til JPG samtidigt."
+        },
+        {
+          "question": "Fungerer konverteren på mobilenheder?",
+          "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
         }
       ]
     },
@@ -149,10 +214,6 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis vaerktojer"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

@@ -51,28 +51,76 @@
   },
   "contentBlocks": [
     {
+      "type": "sectionBasic",
+      "title": "¿Por qué convertir TIFF a PNG?",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) es un formato de imagen sin pérdida que soporta millones de colores. Se utiliza ampliamente para impresión y archivo.</p><p class=\"text-mid mb-4\">Convertir TIFF a PNG (Portable Network Graphics) garantiza compatibilidad universal con todos los navegadores y dispositivos.</p><p class=\"text-mid mb-4\">PNG soporta transparencia alfa. Como formato sin pérdida, PNG preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "TIFF to PNG conversion",
+      "variant": "right"
+    },
+    {
       "type": "gap",
       "variant": "line"
     },
     {
       "type": "sectionSteps",
-      "title": "TIFF → PNG",
+      "title": "Cómo convertir TIFF a PNG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Agregar archivos",
-          "description": "Drag TIFF files or click to select.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Sube tu archivo TIFF",
+          "description": "Arrastra y suelta tu imagen TIFF en el área del convertidor o haz clic para explorar tu dispositivo. Puedes añadir varios archivos a la vez."
         },
         {
-          "title": "2. Convertir",
-          "description": "PNG is lossless.",
-          "icon": "RiLoopLeftLine"
+          "icon": "RiSettings3Line",
+          "title": "Ajusta la configuración",
+          "description": "Elige tus opciones de calidad y salida preferidas. El convertidor muestra una vista previa en vivo para comparar el TIFF original con el resultado PNG."
         },
         {
-          "title": "3. Descargar",
-          "description": "Download individually or all at once.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Descarga tu archivo PNG",
+          "description": "Haz clic en el botón de descarga para guardar tu archivo PNG convertido. Para múltiples archivos, usa la descarga por lotes."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "TIFF vs PNG – diferencias clave",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Característica</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresión</td><td class=\"py-2 text-center\">Sin pérdida</td><td class=\"py-2 text-center\">Sin pérdida</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparencia</td><td class=\"py-2 text-center\">Sí</td><td class=\"py-2 text-center\">Sí</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animación</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Soporte navegador</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo conviene convertir TIFF a PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Optimización web",
+          "description": "TIFF → PNG – WordPress, Shopify, PrestaShop."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Correo y compartir",
+          "description": "PNG – Gmail, Outlook, Yahoo."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Comercio electrónico",
+          "description": "Amazon.es, Wallapop, MercadoLibre, Milanuncios."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documentos y archivo",
+          "description": "PNG – imprentas."
         }
       ]
     },
@@ -82,30 +130,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Convertidor TIFF a PNG",
+      "title": "¿Qué diferencia a este convertidor de TIFF a PNG?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Privacy",
-          "description": "Files stay on your device. Nothing is uploaded."
+          "title": "Privacidad total",
+          "description": "Tus archivos TIFF se procesan completamente en tu navegador. Nada se sube a ningún servidor – tus imágenes permanecen en tu dispositivo."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "No limits",
-          "description": "Convert as many files as you need."
+          "icon": "RiInfinityLine",
+          "title": "Sin límites",
+          "description": "Convierte tantos archivos TIFF a PNG como necesites. Sin límites diarios, sin restricciones de tamaño, sin marcas de agua."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Lossless",
-          "description": "PNG preserves full image quality."
+          "title": "Control de calidad",
+          "description": "Ajusta la compresión para encontrar el equilibrio perfecto entre tamaño de archivo y calidad de imagen."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Bulk download",
-          "description": "Download all files with one click."
+          "icon": "RiFlashlightLine",
+          "title": "Conversión instantánea",
+          "description": "Todo el procesamiento ocurre localmente usando APIs modernas del navegador – rápido y funcional incluso sin conexión."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversión de TIFF a PNG en la práctica",
+      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir TIFF a PNG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
     },
     {
       "type": "gap",
@@ -113,20 +170,32 @@
     },
     {
       "type": "faq",
-      "title": "Preguntas frecuentes",
-      "openByDefault": 1,
+      "title": "Preguntas frecuentes sobre la conversión de TIFF a PNG",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "TIFF → PNG?",
-          "answer": "Convierte archivos TIFF a PNG sin perdidas. Conserva la calidad de escaneos y graficos."
+          "question": "¿Es gratuito convertir TIFF a PNG?",
+          "answer": "Sí, este convertidor de TIFF a PNG es completamente gratuito, sin límites. Sin registro, sin marcas de agua."
         },
         {
-          "question": "Server upload?",
-          "answer": "No. Everything runs locally in your browser. Files never leave your device."
+          "question": "¿Se suben mis archivos a un servidor?",
+          "answer": "No. Todo el procesamiento ocurre localmente en tu navegador. Tus archivos nunca salen de tu dispositivo."
         },
         {
-          "question": "Multiple files?",
-          "answer": "Yes. Add as many files as you like. No limits."
+          "question": "¿Perderé calidad al convertir TIFF a PNG?",
+          "answer": "PNG soporta compresión sin pérdida, preservando la calidad original."
+        },
+        {
+          "question": "¿Puedo convertir varios archivos TIFF a la vez?",
+          "answer": "Sí, el convertidor soporta conversión por lotes. Añade varios archivos TIFF y conviértelos todos a PNG simultáneamente."
+        },
+        {
+          "question": "¿Cuál es el tamaño máximo de archivo?",
+          "answer": "No hay límite estricto ya que el procesamiento ocurre en tu navegador. Archivos muy grandes (más de 50 MB) pueden tardar más."
+        },
+        {
+          "question": "¿Funciona el convertidor en móviles?",
+          "answer": "Sí, funciona en cualquier dispositivo con un navegador web moderno, incluyendo smartphones y tablets."
         }
       ]
     },
@@ -149,10 +218,6 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre mas herramientas gratuitas"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

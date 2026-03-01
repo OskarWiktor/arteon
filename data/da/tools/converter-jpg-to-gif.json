@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Hvordan fungerer JPG til GIF-konverteren?",
-      "html": "<p>Konverter JPG-fotos til GIF-format. Perfekt til simpel grafik og ikoner. Konverteringen foregaar helt i browseren — filer sendes aldrig til en server. Uden registrering, uden begraensning.</p>"
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere JPG til GIF?",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til fotografier.</p><p class=\"text-mid mb-4\">Konvertering af JPG til GIF (Graphics Interchange Format) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">GIF understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer GIF alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG to GIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Hvordan konverterer man JPG til GIF?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Sådan konverterer du JPG til GIF",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Upload filer",
-          "description": "Traek filer til siden eller klik for at vaelge fra disken."
+          "icon": "RiUploadCloud2Line",
+          "title": "Upload din JPG-fil",
+          "description": "Træk og slip dit JPG-billede på konverteringsområdet eller klik for at gennemse din enhed. Du kan tilføje flere filer på én gang."
         },
         {
-          "position": 2,
-          "title": "Indstil kvalitet",
-          "description": "Juster GIF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+          "icon": "RiSettings3Line",
+          "title": "Juster indstillinger",
+          "description": "Vælg din foretrukne kvalitet og outputindstillinger. Konverteren viser en live forhåndsvisning til sammenligning af JPG-originalen med GIF-resultatet."
         },
         {
-          "position": 3,
-          "title": "Konverter",
-          "description": "Klik pa Konverter — filerne behandles lokalt i browseren."
-        },
-        {
-          "position": 4,
-          "title": "Download",
-          "description": "Download GIF-filerne — enkeltvis eller alle pa en gang."
+          "icon": "RiDownloadLine",
+          "title": "Download din GIF-fil",
+          "description": "Klik på downloadknappen for at gemme din konverterede GIF-fil. Ved flere filer kan du bruge batch-download."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG vs GIF – de vigtigste forskelle",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tabsgivende</td><td class=\"py-2 text-center\">Tabsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår skal du konvertere JPG til GIF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Weboptimering",
+          "description": "JPG → GIF – WordPress, Shopify, DanDomain."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail og deling",
+          "description": "GIF – Gmail, Outlook, Jubii."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-handel",
+          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Dokumenter og arkivering",
+          "description": "GIF – trykkerier."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne JPG-til-GIF-konverter anderledes?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatliv",
+          "description": "Dine JPG-filer behandles udelukkende i din browser. Intet uploades til nogen server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrænsninger",
+          "description": "Konverter så mange JPG-filer til GIF som du har brug for. Ingen daglige grænser, ingen størrelsesbegrænsninger, ingen vandmærker."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontrol",
+          "description": "Juster komprimeringsindstillingerne for at finde den perfekte balance mellem filstørrelse og billedkvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Øjeblikkelig konvertering",
+          "description": "Al behandling sker lokalt med moderne browser-API’er – hurtigt og fungerer også uden internetforbindelse."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Konvertering af JPG til GIF i praksis",
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Ofte stillede sporgsmal",
+      "title": "Ofte stillede spørgsmål om konvertering af JPG til GIF",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Hvad er GIF-format?",
-          "answer": "GIF er et bredt understoettet billedformat, der understoetter op til 256 farver. Ideelt til simpel grafik og ikoner."
+          "question": "Er det gratis at konvertere JPG til GIF?",
+          "answer": "Ja, denne JPG-til-GIF-konverter er helt gratis uden begrænsninger. Ingen registrering, ingen vandmærker."
         },
         {
-          "question": "Reducerer GIF-konvertering kvaliteten?",
-          "answer": "GIF bruger en begraenset 256-farve palette. Fotografier kan miste detaljer."
+          "question": "Uploades mine filer til en server?",
+          "answer": "Nej. Al behandling sker lokalt i din browser. Dine filer forlader aldrig din enhed."
         },
         {
-          "question": "Sendes mine filer til en server?",
-          "answer": "Nej. Konverteringen foregaar helt i browseren."
+          "question": "Mister jeg kvalitet ved konvertering af JPG til GIF?",
+          "answer": "GIF understøtter tabsfri komprimering, der bevarer den originale kvalitet."
+        },
+        {
+          "question": "Kan jeg konvertere flere JPG-filer på én gang?",
+          "answer": "Ja, konverteren understøtter batchkonvertering. Tilføj flere JPG-filer og konverter dem alle til GIF samtidigt."
+        },
+        {
+          "question": "Fungerer konverteren på mobilenheder?",
+          "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Har du brug for mere?",
-      "description": "Kontakt os — vi hjaelper dig med at finde den rigtige losning.",
-      "href": "/da/kontakt",
-      "buttonText": "Skriv til os"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JPG to GIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",

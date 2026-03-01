@@ -52,15 +52,12 @@
   },
   "contentBlocks": [
     {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionBasic",
-      "title": "Convertitore BMP in JPG",
-      "html": "<p class=\"text-mid\">Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni.</p>",
+      "title": "Perché convertire BMP in JPG?",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) è un formato immagine senza perdita che supporta milioni di colori. È ampiamente utilizzato per le immagini non compresse.</p><p class=\"text-mid mb-4\">La conversione da BMP a JPG (JPEG) riduce significativamente le dimensioni del file.</p><p class=\"text-mid mb-4\">JPG non supporta la trasparenza – le aree trasparenti saranno riempite con un colore di sfondo. Come formato con perdita, JPG raggiunge eccellenti rapporti di compressione.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
-      "imageAlt": "Convertitore BMP in JPG – Arteon"
+      "imageAlt": "BMP to JPG conversion",
+      "variant": "right"
     },
     {
       "type": "gap",
@@ -68,23 +65,63 @@
     },
     {
       "type": "sectionSteps",
-      "title": "BMP → JPG",
+      "title": "Come convertire BMP in JPG",
       "grid": "three",
       "items": [
         {
-          "title": "1. Aggiungi file",
-          "description": "Trascina file BMP nell'area di caricamento o clicca per selezionarli dal tuo dispositivo.",
-          "icon": "RiUploadLine"
+          "icon": "RiUploadCloud2Line",
+          "title": "Carica il tuo file BMP",
+          "description": "Trascina il tuo file BMP nell’area del convertitore o clicca per sfogliare. Puoi aggiungere più file contemporaneamente."
         },
         {
-          "title": "2. Converti",
-          "description": "Clicca su converti. Regola la qualità di JPG con il cursore.",
-          "icon": "RiEqualizerLine"
+          "icon": "RiSettings3Line",
+          "title": "Regola le impostazioni",
+          "description": "Scegli le impostazioni di qualità e di output. Il convertitore mostra un’anteprima dal vivo per confrontare l’originale BMP con il risultato JPG."
         },
         {
-          "title": "3. Scarica",
-          "description": "Scarica i file JPG convertiti singolarmente o tutti in una volta.",
-          "icon": "RiDownloadLine"
+          "icon": "RiDownloadLine",
+          "title": "Scarica il tuo file JPG",
+          "description": "Clicca il pulsante di download per salvare il file JPG convertito. Per più file, usa il download in batch."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP vs JPG – le differenze principali",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caratteristica</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressione</td><td class=\"py-2 text-center\">Senza perdita</td><td class=\"py-2 text-center\">Con perdita</td></tr><tr class=\"border-b\"><td class=\"py-2\">Trasparenza</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">No</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animazione</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Supporto browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando conviene convertire BMP in JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Ottimizzazione web",
+          "description": "BMP → JPG – WordPress, Shopify, WooCommerce."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Email e condivisione",
+          "description": "JPG – Gmail, Outlook, Libero Mail."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "E-commerce",
+          "description": "Subito.it, Amazon.it, eBay.it, Vinted."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Documenti e archiviazione",
+          "description": "JPG – tipografie."
         }
       ]
     },
@@ -94,30 +131,39 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Funzionalità del convertitore da BMP a JPG",
+      "title": "Cosa distingue questo convertitore da BMP a JPG?",
       "grid": "two",
       "items": [
         {
           "icon": "RiShieldCheckLine",
           "title": "Privacy completa",
-          "description": "I file non lasciano mai il tuo dispositivo. La conversione avviene localmente nel browser — nulla viene caricato su alcun server."
+          "description": "I tuoi file BMP vengono elaborati interamente nel browser. Nulla viene caricato su server – conforme al GDPR."
         },
         {
-          "icon": "RiInfinityFill",
-          "title": "Nessun limite di file",
-          "description": "Converti quanti file vuoi in un'unica sessione. Nessuna restrizione, nessuna registrazione richiesta."
+          "icon": "RiInfinityLine",
+          "title": "Senza limiti",
+          "description": "Converti quanti file BMP in JPG desideri. Nessun limite giornaliero, nessuna restrizione di dimensione, nessun watermark."
         },
         {
-          "icon": "RiSpeedLine",
+          "icon": "RiImageEditLine",
           "title": "Controllo qualità",
-          "description": "Regola la qualità di uscita di JPG con il cursore. Valori più alti significano qualità migliore e file più grandi."
+          "description": "Regola le impostazioni di compressione per trovare il perfetto equilibrio tra dimensione del file e qualità dell’immagine."
         },
         {
-          "icon": "RiDownloadLine",
-          "title": "Download in blocco",
-          "description": "Scarica i file convertiti uno per uno o tutti in una volta con un singolo clic."
+          "icon": "RiFlashlightLine",
+          "title": "Conversione istantanea",
+          "description": "L’elaborazione avviene localmente con le API moderne del browser – veloce e funzionante anche senza connessione."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Conversione da BMP a JPG nella pratica",
+      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante).</p><p class=\"text-mid\">Subito.it, Amazon.it, eBay.it, Vinted – WordPress, Shopify, WooCommerce.</p>"
     },
     {
       "type": "gap",
@@ -126,27 +172,31 @@
     {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da BMP a JPG",
-      "openByDefault": 1,
+      "openByDefault": 0,
       "items": [
         {
-          "question": "La conversione da BMP a JPG è senza perdita?",
-          "answer": "JPG utilizza compressione con perdita per impostazione predefinita. Puoi regolare il cursore della qualità per controllare l'equilibrio tra dimensione del file e qualità visiva. Valori più alti producono qualità migliore ma file più grandi."
-        },
-        {
-          "question": "La trasparenza viene preservata durante la conversione?",
-          "answer": "JPG non supporta la trasparenza. Le aree trasparenti del file BMP vengono sostituite con uno sfondo bianco."
-        },
-        {
-          "question": "Perché il file JPG di uscita è più grande dell'originale?",
-          "answer": "La dimensione del file dipende dall'impostazione della qualità e dal contenuto dell'immagine. Valori più bassi producono file più piccoli. Regola il cursore in base alle tue esigenze."
-        },
-        {
-          "question": "Quali browser supportano questo convertitore?",
-          "answer": "Il convertitore funziona in tutti i browser moderni: Chrome, Edge, Firefox e Safari. Per il supporto AVIF, usa Chrome 85+, Firefox 93+ o Safari 16.4+."
+          "question": "La conversione da BMP a JPG è gratuita?",
+          "answer": "Sì, questo convertitore da BMP a JPG è completamente gratuito, senza limiti. Nessuna registrazione, nessun watermark."
         },
         {
           "question": "I miei file vengono caricati su un server?",
-          "answer": "No. L'intero processo di conversione viene eseguito localmente nel tuo browser in JavaScript. I tuoi file non lasciano mai il dispositivo e non abbiamo accesso ad essi."
+          "answer": "No. L’elaborazione avviene interamente nel tuo browser. I file non lasciano mai il tuo dispositivo – conforme al GDPR."
+        },
+        {
+          "question": "Perderò qualità convertendo BMP in JPG?",
+          "answer": "JPG utilizza compressione con perdita. A impostazioni di qualità elevate (80-95%), la differenza è impercettibile."
+        },
+        {
+          "question": "Posso convertire più file BMP contemporaneamente?",
+          "answer": "Sì, il convertitore supporta la conversione in batch. Aggiungi più file BMP e convertili tutti in JPG simultaneamente."
+        },
+        {
+          "question": "Qual è la dimensione massima del file?",
+          "answer": "Non c’è un limite rigido poiché l’elaborazione avviene nel browser. File molto grandi (oltre 50 MB) possono richiedere più tempo."
+        },
+        {
+          "question": "Il convertitore funziona su dispositivi mobili?",
+          "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno, inclusi smartphone e tablet."
         }
       ]
     },
@@ -169,10 +219,6 @@
     {
       "type": "toolsCarousel",
       "title": "Scopri altri strumenti gratuiti"
-    },
-    {
-      "type": "gap",
-      "size": "sm"
     }
   ]
 }

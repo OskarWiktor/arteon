@@ -59,60 +59,165 @@
   },
   "contentBlocks": [
     {
-      "type": "section",
-      "title": "Miten SVG-GIF-muunnin toimii?",
-      "html": "<p>Muunna vektori-SVG-grafiikat GIF-rasterimuotoon. Muunnos tapahtuu kokonaan selaimessa — tiedostoja ei koskaan lahetetä palvelimelle. Ilman rekisteroitymista, ilman rajoituksia.</p>"
+      "type": "sectionBasic",
+      "title": "Miksi muuntaa SVG GIF-muotoon?",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) on häviötön kuvaformaatti, joka perustuu vektorigrafiikkaan.</p><p class=\"text-mid mb-4\">SVG:n muuntaminen GIF-muotoon (Graphics Interchange Format) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">GIF tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to GIF conversion",
+      "variant": "right"
     },
     {
-      "type": "steps",
-      "title": "Kuinka muuntaa SVG GIF-muotoon?",
-      "steps": [
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuinka muuntaa SVG GIF-muotoon",
+      "grid": "three",
+      "items": [
         {
-          "position": 1,
-          "title": "Lataa tiedostot",
-          "description": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+          "icon": "RiUploadCloud2Line",
+          "title": "Lataa SVG-tiedosto",
+          "description": "Vedä ja pudota SVG-kuva muunnosalueelle tai napsauta selataksesi laitettasi. Voit lisätä useita tiedostoja kerralla."
         },
         {
-          "position": 2,
-          "title": "Aseta laatu",
-          "description": "Saada GIF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+          "icon": "RiSettings3Line",
+          "title": "Säädä asetuksia",
+          "description": "Valitse haluamasi laatu- ja tulostusasetukset. Muunnin näyttää reaaliaikaisen esikatselun SVG-alkuperäisen ja GIF-tuloksen vertailua varten."
         },
         {
-          "position": 3,
-          "title": "Muunna",
-          "description": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
-        },
-        {
-          "position": 4,
-          "title": "Lataa",
-          "description": "Lataa GIF-tiedostot — yksittain tai kaikki kerralla."
+          "icon": "RiDownloadLine",
+          "title": "Lataa GIF-tiedosto",
+          "description": "Napsauta latauspainiketta tallentaaksesi muunnetun GIF-tiedoston. Useille tiedostoille käytä erilatausta."
         }
       ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs GIF – keskeiset erot",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Häviötön</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin kannattaa muuntaa SVG GIF-muotoon?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Verkkosivujen optimointi",
+          "description": "SVG → GIF – WordPress, Shopify, MyCashflow."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Sähköposti ja jakaminen",
+          "description": "GIF – Gmail, Outlook, Elisa Sähköposti."
+        },
+        {
+          "icon": "RiShoppingBag3Line",
+          "title": "Verkkokauppa",
+          "description": "Tori.fi, Verkkokauppa.com, Gigantti, Amazon."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Asiakirjat ja arkistointi",
+          "description": "GIF – painotalot."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä erottaa tämän SVG-GIF-muuntimen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "Your SVG files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "No limits",
+          "description": "Convert as many SVG files to GIF as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Quality control",
+          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Instant conversion",
+          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG-GIF-muunnos käytännössä",
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja.</p><p class=\"text-mid\">Tori.fi, Verkkokauppa.com, Gigantti, Amazon – WordPress, Shopify, MyCashflow.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "faq",
-      "title": "Usein kysytyt kysymykset",
+      "title": "Usein kysytyt kysymykset SVG-GIF-muunnoksesta",
+      "openByDefault": 0,
       "items": [
         {
-          "question": "Mika on GIF-muoto?",
-          "answer": "GIF on laajasti tuettu kuvamuoto, joka tukee enintaan 256 varia. Ihanteellinen yksinkertaisille grafiikoille ja kuvakkeille."
+          "question": "Onko SVG:n muuntaminen GIF:ksi ilmaista?",
+          "answer": "Kyllä, tämä SVG-GIF-muunnin on täysin ilmainen ilman rajoituksia. Ei rekisteröintiä, ei vesileimoja."
         },
         {
-          "question": "Vahentaako GIF-muunnos laatua?",
-          "answer": "GIF kayttaa rajattua 256 varin palettia. Valokuvat voivat menettaa yksityiskohtia."
+          "question": "Ladataanko tiedostoni palvelimelle?",
+          "answer": "Ei. Käsittely tapahtuu paikallisesti selaimessasi. Tiedostosi eivät koskaan poistu laitteeltasi."
         },
         {
-          "question": "Lahetetaanko tiedostoni palvelimelle?",
-          "answer": "Ei. Muunnos tapahtuu kokonaan selaimessa."
+          "question": "Menetänkö laatua muunnettaessa?",
+          "answer": "GIF tukee häviötöntä pakkausta, joka säilyttää alkuperäisen laadun."
+        },
+        {
+          "question": "Voinko muuntaa useita tiedostoja kerralla?",
+          "answer": "Kyllä, muunnin tukee erämuunnosta. Lisää useita SVG-tiedostoja ja muunna ne kaikki GIF-muotoon samanaikaisesti."
+        },
+        {
+          "question": "Toimiiko muunnin mobiililaitteilla?",
+          "answer": "Kyllä, se toimii millä tahansa laitteella, jossa on moderni selain."
         }
       ]
     },
     {
-      "type": "contact",
-      "title": "Tarvitsetko lisaa?",
-      "description": "Ota yhteytta — autamme loytamaan oikean ratkaisun.",
-      "href": "/fi/yhteystiedot",
-      "buttonText": "Kirjoita meille"
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG to GIF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "toolsCarousel",
