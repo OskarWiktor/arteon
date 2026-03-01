@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-til-JPG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av SVG til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. JPG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">SVG-vektorgrafikk kan ikke brukes overalt: sosiale medier, markedsplasser og mange CMSer godtar kun rasterformater. Konvertering til JPG skaper universelt kompatible filer.</p><p class=\"text-mid mb-4\">Rasterisering konverterer vektoren til piksler med fast oppløsning. Gjennomsiktige områder fylles med bakgrunnsfarge (standard hvit). For nettbruk anbefales 1200–2000 px bredde.</p><p class=\"text-mid\">For innlegg på sosiale medier og annonser på Finn.no, Komplett.no eller Amazon er SVG til JPG et vanlig krav.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

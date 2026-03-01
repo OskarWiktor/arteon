@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da GIF a AVIF nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da GIF a AVIF può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. AVIF fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF supera il GIF in tutto: migliore compressione, milioni di colori, animazione moderna. Per modernizzare vecchi contenuti web, GIF a AVIF è il più efficiente.</p><p class=\"text-mid mb-4\">I file AVIF da GIF sono drasticamente più piccoli e visivamente migliori. I browser vecchi non supportano ancora AVIF – un fallback tramite <code>&lt;picture&gt;</code> è consigliato.</p><p class=\"text-mid\">Per massimizzare i tempi di caricamento, il passaggio da GIF ad AVIF offre il maggior guadagno individuale di tutti i cambi di formato.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

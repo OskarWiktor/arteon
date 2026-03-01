@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-zu-WebP-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von SVG in WebP kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet WebP hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Für Webseiten, die SVG nicht direkt einbinden können oder wollen – etwa in CMS mit eingeschränkter SVG-Unterstützung – bietet WebP eine kompakte Pixeldarstellung mit minimaler Dateigröße.</p><p class=\"text-mid mb-4\">WebP-Dateien aus SVG-Quellen sind typischerweise sehr klein (5–30 KB) und laden blitzschnell. Für Icons, Logos und UI-Elemente auf Webseiten ist dies oft die pragmatischste Lösung, wenn SVG nicht direkt verwendet werden kann.</p><p class=\"text-mid\">WordPress, Shopify und viele andere CMS im DACH-Raum unterstützen WebP nativ – die Konvertierung ermöglicht den Einsatz von Vektorgrafiken auch in diesen Umgebungen.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

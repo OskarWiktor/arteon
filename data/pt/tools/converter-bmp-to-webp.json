@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de BMP para WebP na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de BMP para WebP pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. WebP proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP é inadequado para a web moderna – não comprimido e enorme. WebP reduz o tamanho até 97% com boa qualidade, modernizando imagens antigas para a web.</p><p class=\"text-mid mb-4\">A conversão moderniza arquivos antigos de Windows para sites, CMS e lojas atuais. WebP é suportado por todos os navegadores modernos e melhora os tempos de carregamento.</p><p class=\"text-mid\">Para empresas portuguesas e brasileiras que preparam arquivos antigos para a presença web, a conversão local é eficiente e conforme com o RGPD/LGPD.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

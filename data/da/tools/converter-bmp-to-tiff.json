@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af BMP til TIFF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">TIFF er industristandarden for professionelt tryk, arkivering og efterbehandling. Programmer som Adobe Photoshop, Lightroom og GIMP bruger TIFF til tabsfri redigering. Konvertering til TIFF bevarer alle billeddata inklusive farveprofiler, lag og metadata.</p><p class=\"text-mid\">Til professionel fotografi og trykproduktion sikrer TIFF tabsfri kvalitet efter branchestandarder. Lokal behandling sikrer fuld GDPR-overholdelse.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP til TIFF er nyttigt for professionel metadata-understøttelse – arkivering, trykforberedelse eller behandling i professionel software.</p><p class=\"text-mid mb-4\">TIFF bevarer fuld kvalitet og tilføjer: EXIF-metadata, CMYK-farverum og lagunderstøttelse. For langtidsarkivering er TIFF klart overlegen i forhold til BMP.</p><p class=\"text-mid\">Arkiver, biblioteker og danske virksomheder, der digitaliserer ældre samlinger, drager fordel af lokal konvertering uden cloud-afhængighed.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

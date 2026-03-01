@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod JPG na GIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Ačkoli GIF není nejefektivnější formát pro statické obrázky, zůstává nezbytný pro jednoduché animace, memy a grafiku s omezenou paletou barev. Limit 256 barev dělá GIF méně vhodným pro fotografie, ale ideálním pro ikony, loga a animovaný obsah sdílený na sociálních sítích a v komunikátorech.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. GIF nabízí maximální kompatibilitu se všemi platformami.</p>"
+      "html": "<p class=\"text-mid mb-4\">Převod JPG na GIF je užitečný, když je fotografie potřeba jako jednoduchá grafika s omezenou paletou – náhledy ve starších systémech nebo newslettery podporující pouze GIF.</p><p class=\"text-mid mb-4\">GIF omezuje paletu na 256 barev. U fotografií to způsobuje viditelnou ztrátu kvality ditherováním. Pro většinu použití jsou WebP nebo PNG lepší volbou.</p><p class=\"text-mid\">Pokud váš pracovní postup vyžaduje výhradně GIF, lokální převod nabízí rychlé a bezpečné řešení bez externích služeb.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

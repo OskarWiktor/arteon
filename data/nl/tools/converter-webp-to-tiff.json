@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-naar-TIFF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">TIFF is de industriestandaard voor professioneel drukwerk, archivering en nabewerking. Programma's als Adobe Photoshop, Lightroom en GIMP gebruiken TIFF voor verliesvrije bewerkingsworkflows. Conversie naar TIFF behoudt alle beeldgegevens inclusief kleurprofielen, lagen en metadata.</p><p class=\"text-mid\">Voor professionele fotografie en drukproductie garandeert TIFF verliesvrije kwaliteit die voldoet aan de industrienormen. Lokale verwerking garandeert volledige AVG-conformiteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionele drukworkflows vereisen vaak TIFF als invoerformaat. WebP naar TIFF maakt het mogelijk webgeoptimaliseerde afbeeldingen voor drukwerk voor te bereiden.</p><p class=\"text-mid mb-4\">TIFF slaat het beeld verliesvrij op met volledige metadata-ondersteuning. Door eerdere WebP-compressie verloren details worden niet hersteld. Voor de beste drukkwaliteit verdient het aanbeveling van het originele beeld uit te gaan.</p><p class=\"text-mid\">Voor bureaus en drukkerijen in Nederland biedt lokale conversie een veilige manier om web-assets voor drukprojecten voor te bereiden.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

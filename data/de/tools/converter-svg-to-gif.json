@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-zu-GIF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Obwohl GIF nicht das effizienteste Format für statische Bilder ist, bleibt es unverzichtbar für einfache Animationen, Memes und Grafiken mit begrenzter Farbpalette. Das Limit von 256 Farben macht GIF weniger geeignet für Fotos, aber ideal für Icons, Logos und animierte Inhalte in sozialen Medien und Messenger-Diensten.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet GIF maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">GIF wird gelegentlich für einfache Icons und Grafiken in älteren Systemen, E-Mail-Templates oder Foren benötigt. Die Konvertierung von SVG zu GIF erzeugt kompatible Dateien mit minimaler Dateigröße.</p><p class=\"text-mid mb-4\">GIF beschränkt die Farbpalette auf 256 Farben. Für einfarbige Logos und Icons ist das kein Problem, für komplexe Illustrationen mit Farbverläufen jedoch nicht ideal. Transparenz wird nur binär unterstützt.</p><p class=\"text-mid\">Für Newsletter-Templates und ältere Webplattformen, die nur GIF akzeptieren, bietet diese Konvertierung eine schnelle lokale Lösung.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

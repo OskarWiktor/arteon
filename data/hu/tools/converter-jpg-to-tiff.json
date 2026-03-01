@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-TIFF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A TIFF az iparági szabvány a professzionális nyomtatáshoz, archiváláshoz és utómunkálatokhoz. Az Adobe Photoshop, Lightroom és GIMP programok TIFF formátumot használnak veszteségmentes szerkesztési munkafolyamatokhoz. A TIFF-re konvertálás megőrzi a teljes képadatot, beleértve a színprofilokat, rétegeket és metaadatokat.</p><p class=\"text-mid\">Professzionális fotózáshoz és nyomdai termeléshez a TIFF veszteségmentes minőséget biztosít az iparági szabványoknak megfelelően. A helyi feldolgozás teljes GDPR-megfelelőséget biztosít.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professzionális nyomdák és képügynökségek gyakran TIFF-et követelnek JPEG helyett. A konvertálás megőrzi a jelenlegi minőséget és veszteségmentesen tárolja.</p><p class=\"text-mid mb-4\">A JPEG-tömörítéssel elveszett részletek nem állíthatók helyre, de a TIFF megakadályozza a további veszteségeket. Támogatja a CMYK-t, rétegeket és bővített metaadatokat – ideális professzionális nyomtatási munkafolyamatokhoz.</p><p class=\"text-mid\">Magyar fotósok és ügynökségek profitálnak a helyi feldolgozásból: ügyfélfotók és nyomtatási fájlok az eszközön maradnak.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

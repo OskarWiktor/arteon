@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-JPG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. GIF-muunnos JPG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. JPG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Vanhoja GIF-kuvia on joskus muunnettava JPG:ksi – alustoille, jotka hyväksyvät vain JPEG:n, tai sähköpostin tiedostokoon optimointiin. Vain animoidun GIF:n ensimmäinen kuva muunnetaan.</p><p class=\"text-mid mb-4\">JPG tarjoaa täydet 16,7 miljoonaa väriä GIF:n 256 värin sijaan. Vahingossa GIF:nä tallennetut valokuvat hyötyvät täydestä värisyvyydestä.</p><p class=\"text-mid\">Vanhojen grafiikoiden arkistointiin modernissa, yleisesti yhteensopivassa muodossa paikallinen muunnos on nopea ja tietosuojan mukainen.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

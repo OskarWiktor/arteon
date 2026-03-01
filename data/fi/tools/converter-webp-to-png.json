@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-PNG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. WebP-muunnos PNG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. PNG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Läpinäkyvät WebP-kuvat on joskus muunnettava PNG:ksi – grafiikkaohjelmille ilman WebP-tukea tai painotiedostoille, jotka vaativat häviötöntä laatua.</p><p class=\"text-mid mb-4\">Muunnos säilyttää läpinäkyvyyden ja laadun täysin. PNG:t ovat suurempia mutta soveltuvat paremmin Photoshopiin, Illustratoriin ja alustoille ilman WebP-tukea.</p><p class=\"text-mid\">Graafiset suunnittelijat Suomessa voivat muuntaa paikallisesti WebP-assetteja painovalmiiksi PNG-tiedostoiksi – ilman pilveä ja GDPR-yhteensopivasti.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

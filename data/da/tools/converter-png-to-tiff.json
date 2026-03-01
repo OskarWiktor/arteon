@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af PNG til TIFF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">TIFF er industristandarden for professionelt tryk, arkivering og efterbehandling. Programmer som Adobe Photoshop, Lightroom og GIMP bruger TIFF til tabsfri redigering. Konvertering til TIFF bevarer alle billeddata inklusive farveprofiler, lag og metadata.</p><p class=\"text-mid\">Til professionel fotografi og trykproduktion sikrer TIFF tabsfri kvalitet efter branchestandarder. Lokal behandling sikrer fuld GDPR-overholdelse.</p>"
+      "html": "<p class=\"text-mid mb-4\">Trykkerier, forlag og arkivsystemer kræver ofte TIFF i stedet for PNG. Konverteringen bevarer fuld kvalitet, gennemsigtighed og tilføjer professionel metadata-understøttelse.</p><p class=\"text-mid mb-4\">TIFF-filer er større end PNG, men tilbyder fordele for professionelle workflows: lagunderstøttelse i Photoshop, CMYK-farverum for tryk og komplet metadata. TIFF er industristandard for langtidsarkivering.</p><p class=\"text-mid\">Trykkerier i Danmark arbejder ofte med TIFF. Lokal konvertering muliggør behandling af fortrolige designs uden cloud-upload.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

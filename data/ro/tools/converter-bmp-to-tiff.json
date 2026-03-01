@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia BMP în TIFF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">TIFF este standardul industrial pentru tipărire profesională, arhivare și post-producție. Programe precum Adobe Photoshop, Lightroom și GIMP utilizează TIFF pentru fluxuri de lucru de editare fără pierderi. Conversia în TIFF păstrează toate datele imaginii, inclusiv profiluri de culoare, straturi și metadate.</p><p class=\"text-mid\">Pentru fotografia profesională și producția tipografică, TIFF asigură o calitate fără pierderi conformă standardelor industriale. Procesarea locală asigură conformitatea deplină cu GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP la TIFF este util pentru suport profesional de metadate – arhivare, pregatire de tipar sau procesare in software profesional.</p><p class=\"text-mid mb-4\">TIFF pastreaza calitatea completa a BMP si adauga: metadate EXIF, CMYK si straturi. Pentru arhivare pe termen lung, TIFF este clar superior BMP.</p><p class=\"text-mid\">Arhive, biblioteci si companii romanesti care digitalizeaza fonduri vechi beneficiaza de conversia locala fara dependenta de cloud.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de AVIF a JPG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir AVIF a JPG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF aún no es soportado por dispositivos antiguos, software de edición y algunas plataformas. La conversión a JPG asegura compatibilidad máxima.</p><p class=\"text-mid mb-4\">A calidad 85–90%, la calidad es casi idéntica al original AVIF. Útil para correo a destinatarios con sistemas antiguos o servicios de impresión que solo aceptan JPEG.</p><p class=\"text-mid\">Para empresas que necesitan imágenes weboptimizadas (AVIF) y universales (JPG), la conversión local es un flujo de trabajo eficiente.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre mas herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

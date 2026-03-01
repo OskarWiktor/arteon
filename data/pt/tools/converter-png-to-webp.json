@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de PNG para WebP na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de PNG para WebP pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. WebP proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">Web designers e proprietários de lojas em Portugal e no Brasil usam PNG para logótipos, recortes de produtos e elementos de interface com transparência. Ao converter para WebP, a transparência mantém-se intacta enquanto o tamanho reduz 25–35% – ganho direto nos tempos de carregamento e Core Web Vitals.</p><p class=\"text-mid mb-4\">Gráficos com grandes áreas de cor sólida (logótipos, ícones) beneficiam mais: ficheiros de 200–500 KB frequentemente descem abaixo de 100 KB. Para recortes de produtos na Amazon.pt, OLX.pt, KuantoKusta, Mercado Livre ou lojas Shopify, isto significa páginas de categoria mais rápidas.</p><p class=\"text-mid\">Todo o processamento é local no navegador – ideal para agências e empresas que precisam cumprir o RGPD. As imagens de produtos ou gráficos de clientes nunca saem do dispositivo.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

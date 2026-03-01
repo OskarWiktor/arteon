@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

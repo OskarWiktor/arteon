@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de BMP a TIFF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">TIFF es el estándar de la industria para impresión profesional, archivado y postproducción. Programas como Adobe Photoshop, Lightroom y GIMP utilizan TIFF para flujos de trabajo de edición sin pérdidas. La conversión a TIFF preserva todos los datos de imagen, incluidos perfiles de color, capas y metadatos.</p><p class=\"text-mid\">Para fotografía profesional y producción de impresión, TIFF garantiza calidad sin pérdidas que cumple con los estándares de la industria. El procesamiento local garantiza plena conformidad con el RGPD.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP a TIFF es útil para soporte profesional de metadatos – archivo, preimpresión o procesamiento en software profesional.</p><p class=\"text-mid mb-4\">TIFF preserva la calidad completa del BMP y añade: metadatos EXIF, CMYK y capas. Para archivo a largo plazo, TIFF es claramente superior a BMP.</p><p class=\"text-mid\">Archivos, bibliotecas y empresas españolas que digitalizan fondos antiguos se benefician de la conversión local sin dependencia cloud.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

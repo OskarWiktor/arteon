@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af WebP til TIFF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">TIFF er industristandarden for professionelt tryk, arkivering og efterbehandling. Programmer som Adobe Photoshop, Lightroom og GIMP bruger TIFF til tabsfri redigering. Konvertering til TIFF bevarer alle billeddata inklusive farveprofiler, lag og metadata.</p><p class=\"text-mid\">Til professionel fotografi og trykproduktion sikrer TIFF tabsfri kvalitet efter branchestandarder. Lokal behandling sikrer fuld GDPR-overholdelse.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionelle trykworkflows kræver ofte TIFF. WebP til TIFF gør det muligt at forberede weboptimerede billeder til tryk.</p><p class=\"text-mid mb-4\">TIFF gemmer tabsfrit med fuld metadata-understøttelse. Detaljer tabt ved WebP-kompression gendannes ikke – for bedste kvalitet, start fra originalen.</p><p class=\"text-mid\">For bureauer og trykkerier i Danmark tilbyder lokal konvertering en sikker måde at forberede web-assets til trykprojekter.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

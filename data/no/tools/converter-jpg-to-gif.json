@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-til-GIF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Selv om GIF ikke er det mest effektive formatet for statiske bilder, er det fortsatt uunnværlig for enkle animasjoner, memes og grafikk med begrenset fargepalett. Grensen på 256 farger gjør GIF mindre egnet for fotografier, men ideelt for ikoner, logoer og animert innhold delt på sosiale medier og meldingsapper.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. GIF tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">Konvertering av JPG til GIF er nyttig når et bilde trengs som enkel grafikk – miniatyrbilder i eldre systemer eller nyhetsbrev som kun støtter GIF.</p><p class=\"text-mid mb-4\">GIF begrenser fargepaletten til 256 farger, noe som gir synlig kvalitetstap på bilder. For de fleste formål er WebP eller PNG bedre valg.</p><p class=\"text-mid\">Hvis arbeidsflyten din utelukkende krever GIF, tilbyr lokal konvertering en rask og GDPR-kompatibel løsning.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

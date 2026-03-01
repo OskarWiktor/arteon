@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia WebP în AVIF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia WebP în AVIF poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. AVIF oferă o compresie excelentă păstrând calitatea vizuală.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF ofera compresie si mai buna decat WebP – urmatorul pas logic pentru site-uri care doresc sa optimizeze si mai mult timpii de incarcare.</p><p class=\"text-mid mb-4\">La calitate comparabila, fisierele AVIF sunt cu 20–30% mai mici decat WebP. Pentru site-uri cu sute de imagini, economia este considerabila. Fallback WebP prin <code>&lt;picture&gt;</code> acopera browserele mai vechi.</p><p class=\"text-mid\">Magazinele online romanesti care optimizeaza Core Web Vitals beneficiaza in special de AVIF. Conversia locala evita incarcarea in cloud.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

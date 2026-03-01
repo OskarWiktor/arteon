@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-til-GIF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Selv om GIF ikke er det mest effektive formatet for statiske bilder, er det fortsatt uunnværlig for enkle animasjoner, memes og grafikk med begrenset fargepalett. Grensen på 256 farger gjør GIF mindre egnet for fotografier, men ideelt for ikoner, logoer og animert innhold delt på sosiale medier og meldingsapper.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. GIF tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">GIF trengs noen ganger for ikoner i eldre systemer, e-postmaler eller forum. SVG til GIF skaper kompatible og lette filer.</p><p class=\"text-mid mb-4\">GIF begrenser til 256 farger. For enfargede logoer er det tilstrekkelig; for komplekse illustrasjoner med gradienter ikke. Gjennomsiktighet kun binær.</p><p class=\"text-mid\">For nyhetsbrevmaler og eldre nettplattformer som kun godtar GIF er dette en rask lokal løsning.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

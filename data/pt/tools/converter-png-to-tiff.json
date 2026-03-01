@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de PNG para TIFF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">O TIFF é o padrão da indústria para impressão profissional, arquivamento e pós-produção. Programas como Adobe Photoshop, Lightroom e GIMP utilizam TIFF para fluxos de trabalho de edição sem perdas. A conversão para TIFF preserva todos os dados da imagem, incluindo perfis de cor, camadas e metadados.</p><p class=\"text-mid\">Para fotografia profissional e produção gráfica, o TIFF garante qualidade sem perdas que atende aos padrões da indústria. O processamento local garante total conformidade com o RGPD.</p>"
+      "html": "<p class=\"text-mid mb-4\">Gráficas, editoras e sistemas de arquivo frequentemente exigem TIFF em vez de PNG. A conversão preserva a qualidade completa, transparência e adiciona suporte profissional de metadados.</p><p class=\"text-mid mb-4\">Os ficheiros TIFF são maiores que PNG, mas oferecem vantagens profissionais: suporte de camadas no Photoshop, espaços de cor CMYK para impressão e metadados completos. TIFF é o padrão para arquivo a longo prazo.</p><p class=\"text-mid\">As gráficas em Portugal e no Brasil trabalham frequentemente com TIFF. A conversão local permite processar maquetas confidenciais sem envio para a nuvem.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

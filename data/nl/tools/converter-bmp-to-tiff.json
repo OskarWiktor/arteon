@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-naar-TIFF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">TIFF is de industriestandaard voor professioneel drukwerk, archivering en nabewerking. Programma's als Adobe Photoshop, Lightroom en GIMP gebruiken TIFF voor verliesvrije bewerkingsworkflows. Conversie naar TIFF behoudt alle beeldgegevens inclusief kleurprofielen, lagen en metadata.</p><p class=\"text-mid\">Voor professionele fotografie en drukproductie garandeert TIFF verliesvrije kwaliteit die voldoet aan de industrienormen. Lokale verwerking garandeert volledige AVG-conformiteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP naar TIFF converteren is zinvol wanneer professionele metadata-ondersteuning nodig is – voor archivering, drukvoorbereiding of verwerking in professionele beeldbewerkingssoftware.</p><p class=\"text-mid mb-4\">TIFF behoudt de volledige beeldkwaliteit van het BMP-origineel en voegt professionele functies toe: EXIF-metadata, CMYK-kleurruimten en laagondersteuning. Voor langetermijnarchivering is TIFF duidelijk superieur aan BMP.</p><p class=\"text-mid\">Archieven, bibliotheken en bedrijven in Nederland die oude bestanden digitaliseren, profiteren van lokale conversie zonder cloud-afhankelijkheid.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de JPG para WebP na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de JPG para WebP pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. WebP proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">JPEG é o padrão para fotos digitais, mas para websites os tamanhos são frequentemente excessivos. WebP comprime imagens JPEG mais 25–35% sem perda visível de qualidade, melhorando diretamente os tempos de carregamento.</p><p class=\"text-mid mb-4\">Para lojas em Shopify, WooCommerce ou PrestaShop, a mudança de JPG para WebP acelera de forma mensurável as páginas de produto. O Google PageSpeed recomenda WebP como formato de nova geração. A qualidade 80–85%, a diferença é impercetível.</p><p class=\"text-mid\">Em Portugal e no Brasil, onde as exigências do RGPD/LGPD são rigorosas, o processamento local é especialmente valioso. As fotos de produtos não saem do dispositivo.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia BMP în GIF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Deși GIF nu este cel mai eficient format pentru imagini statice, rămâne esențial pentru animații simple, meme-uri și grafică cu paletă de culori limitată. Limita de 256 de culori face GIF-ul mai puțin potrivit pentru fotografii, dar ideal pentru pictograme, logouri și conținut animat distribuit pe rețelele sociale și aplicațiile de mesagerie.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. GIF oferă compatibilitate maximă cu toate platformele.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP la GIF este util pentru sisteme care accepta doar GIF sau grafica simpla cu putine culori unde GIF este mai compact.</p><p class=\"text-mid mb-4\">GIF suporta doar 256 de culori. Imaginile fotorealiste pierd calitate. Pentru fotografii, JPG sau WebP sunt de preferat. GIF este potrivit doar pentru grafica simpla.</p><p class=\"text-mid\">Pentru cerinte de compatibilitate ale sistemelor vechi, conversia locala ofera o solutie rapida si sigura.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

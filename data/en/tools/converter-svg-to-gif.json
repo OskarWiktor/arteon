@@ -240,6 +240,10 @@
     {
       "type": "toolsCarousel",
       "title": "Other tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

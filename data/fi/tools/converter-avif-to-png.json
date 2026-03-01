@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-PNG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. AVIF-muunnos PNG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. PNG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Läpinäkyvät AVIF-kuvat on joskus muunnettava PNG:ksi – grafiikkaohjelmille tai alustoille ilman AVIF-tukea.</p><p class=\"text-mid mb-4\">PNG säilyttää läpinäkyvyyden ja laadun häviöttömästi. Tiedostot ovat suurempia kuin AVIF mutta sopivia Photoshopiin, Figmaan, Canvaan ja painoon.</p><p class=\"text-mid\">Graafiset suunnittelijat Suomessa käyttävät paikallista muunnosta AVIF-assettien turvalliseen valmisteluun eri jakelukanaviin – GDPR-yhteensopivasti.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

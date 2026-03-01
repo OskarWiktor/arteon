@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-JPG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. BMP-muunnos JPG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. JPG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-tiedostot ovat peräisin usein vanhoista Windows-sovelluksista tai skannereista. Pakkaamattomat ja valtavan kokoisia – muunnos JPG:ksi pienentää yli 95 %.</p><p class=\"text-mid mb-4\">10 MB:n BMP-kuvakaappaus on JPG:nä tyypillisesti vain 200–400 KB. Sähköpostiin, dokumentointiin ja arkistointiin tämä on yksinkertaisin tapa säästää tilaa.</p><p class=\"text-mid\">Vanhojen kuva-arkistojen siirtoon ja skanneritulosten valmisteluun paikallinen muunnos on nopea ja tietosuojan mukainen ratkaisu.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod TIFF na JPG v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod TIFF na JPG může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. JPG nabízí maximální kompatibilitu se všemi platformami.</p>"
+      "html": "<p class=\"text-mid mb-4\">Soubory TIFF z profesionální fotografie nebo skeneru často zabírají 20–100 MB. Převod na JPG vytváří kompaktní soubory pro web, e-mail a sociální sítě – typická redukce přes 95 %.</p><p class=\"text-mid mb-4\">Průhlednost a informace o vrstvách se ztrácejí. Pro čistou fotografii to není problém. Při kvalitě 85–90 % zůstává vizuální kvalita vynikající s velikostí pár set KB.</p><p class=\"text-mid\">Fotografové a uživatelé skenerů v Česku mohou TIFF soubory lokálně a v souladu s GDPR převést na JPG připravené k odeslání.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Objevte dalsi bezplatne nastroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

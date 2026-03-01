@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-JPG konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A GIF átalakítása JPG formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. JPG maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">Régi GIF-képeket néha JPG-re kell konvertálni – kizárólag JPEG-et fogadó platformokhoz vagy e-mail fájlméret-optimalizáláshoz. Animált GIF-ből csak az első kép konvertálódik.</p><p class=\"text-mid mb-4\">A JPG teljes 16,7 millió színt kínál a GIF 256 szín helyett. Véletlenül GIF-ként elmentett fotók profitálnak a teljes színmélységből.</p><p class=\"text-mid\">Régi grafikák archiválásához modern, univerzálisan kompatibilis formátumban a helyi konvertálás gyors és adatvédelmi szempontból megfelelő.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

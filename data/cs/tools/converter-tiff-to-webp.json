@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod TIFF na WebP v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod TIFF na WebP může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. WebP poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF na WebP dosahuje největší redukce ze všech běžných změn formátu: soubory 20–100 MB se často zmenší na 200 KB – 2 MB. Pro publikaci profesionálních fotografií na webu je to nejefektivnější cesta.</p><p class=\"text-mid mb-4\">Při kvalitě 80–85 % si WebP zachovává vynikající vizuální kvalitu. Pro fotogalerie, portfolia a online magazíny: profesionální kvalita za zlomek původní velikosti.</p><p class=\"text-mid\">Fotografové a agentury v Česku mohou focení ve vysokém rozlišení lokálně převést do webově optimalizovaných formátů – bez cloudu, v souladu s GDPR.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Objevte dalsi bezplatne nastroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

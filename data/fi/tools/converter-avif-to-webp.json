@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-WebP-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. AVIF-muunnos WebP-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. WebP tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP tarjoaa laajemman selaintuen kuin AVIF (Safari 14+ vs. 16+) hyvällä pakkauksella. Jos yleisösi käyttää vanhempia selaimia, WebP on turvallisempi valinta.</p><p class=\"text-mid mb-4\">AVIF-WebP on oleellista CMS:ille ja CDN:ille ilman AVIF-tukea. WebP:tä tukevat natiivisti WordPress, Shopify, Cloudflare ja kaikki nykyaikaiset selaimet.</p><p class=\"text-mid\">Verkkoprojekteille Suomessa, jotka tarvitsevat maksimaalisen selainpeiton, WebP on edelleen luotettavin moderni muoto.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

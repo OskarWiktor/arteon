@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia PNG în TIFF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">TIFF este standardul industrial pentru tipărire profesională, arhivare și post-producție. Programe precum Adobe Photoshop, Lightroom și GIMP utilizează TIFF pentru fluxuri de lucru de editare fără pierderi. Conversia în TIFF păstrează toate datele imaginii, inclusiv profiluri de culoare, straturi și metadate.</p><p class=\"text-mid\">Pentru fotografia profesională și producția tipografică, TIFF asigură o calitate fără pierderi conformă standardelor industriale. Procesarea locală asigură conformitatea deplină cu GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">Tipografiile, editurile si sistemele de arhivare cer adesea TIFF in loc de PNG. Conversia pastreaza calitatea completa, transparenta si adauga suport profesional de metadate.</p><p class=\"text-mid mb-4\">Fisierele TIFF sunt mai mari decat PNG, dar ofera avantaje pentru fluxuri profesionale: suport straturi in Photoshop, spatii de culoare CMYK pentru tipar si metadate complete. TIFF este standardul industrial pentru arhivare pe termen lung.</p><p class=\"text-mid\">Tipografiile din Romania lucreaza frecvent cu TIFF. Conversia locala permite procesarea machetelor confidentiale fara upload in cloud.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

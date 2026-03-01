@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion AVIF vers WebP en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de AVIF en WebP peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Le WebP offre un support navigateur plus large que l'AVIF (Safari 14+ vs 16+) avec bonne compression. Si votre audience utilise des navigateurs plus anciens, le WebP est plus sûr.</p><p class=\"text-mid mb-4\">AVIF vers WebP est pertinent pour les CMS et CDN sans support AVIF. Le WebP est supporté nativement par WordPress, Shopify, Cloudflare et tous les navigateurs modernes.</p><p class=\"text-mid\">Pour les projets web en France nécessitant une couverture navigateur maximale, le WebP reste le format moderne le plus fiable.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

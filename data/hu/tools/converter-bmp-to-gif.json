@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-GIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">Bár a GIF nem a leghatékonyabb formátum statikus képekhez, továbbra is nélkülözhetetlen egyszerű animációkhoz, mémekhez és korlátozott színpalettájú grafikákhoz. A 256 színes korlát miatt a GIF kevésbé alkalmas fényképekhez, de ideális ikonokhoz, logókhoz és animált tartalmakhoz közösségi médiában és üzenetküldő alkalmazásokban.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. GIF maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">A BMP-GIF hasznos kizárólag GIF-et fogadó rendszerekhez vagy kevés színt tartalmazó egyszerű grafikákhoz.</p><p class=\"text-mid mb-4\">A GIF maximum 256 színt támogat. Fotórealisztikus képek jelentős minőséget veszítenek. Fotókhoz JPG vagy WebP jobb. A GIF csak egyszerű grafikákhoz alkalmas.</p><p class=\"text-mid\">Régi rendszerek kompatibilitási követelményeihez a helyi konvertálás gyors és biztonságos megoldást kínál.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

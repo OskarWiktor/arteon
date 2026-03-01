@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de GIF para PNG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de GIF para PNG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. PNG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">Converter GIF para PNG é útil para armazenamento sem perda ou edição em software gráfico. PNG suporta cores de 32 bits e transparência alfa gradual.</p><p class=\"text-mid mb-4\">Em GIF animados, apenas a primeira imagem é convertida. A qualidade é preservada sem perda. PNG é ideal como formato intermédio para Photoshop, Figma ou Canva.</p><p class=\"text-mid\">Para atualizar gráficos web antigos, a conversão local oferece uma solução rápida e segura sem serviços externos.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

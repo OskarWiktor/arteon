@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-zu-JPG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von GIF in JPG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet JPG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ältere GIF-Grafiken müssen manchmal in JPG konvertiert werden – für Plattformen, die nur JPEG akzeptieren, oder um die Dateigröße für E-Mail-Versand zu optimieren. Nur das erste Bild einer animierten GIF wird dabei konvertiert.</p><p class=\"text-mid mb-4\">JPG bietet volle 16,7 Millionen Farben statt der 256-Farben-Palette von GIF. Einfache Grafiken werden dadurch nicht besser, aber Fotos, die versehentlich als GIF gespeichert wurden, profitieren von der vollen Farbtiefe.</p><p class=\"text-mid\">Für das Archivieren älterer Grafiken in einem modernen, universell kompatiblen Format ist die lokale Konvertierung schnell und datenschutzkonform.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

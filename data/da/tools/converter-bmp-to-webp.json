@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af BMP til WebP i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af BMP til WebP kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. WebP giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP er fuldstændig uegnet til moderne web – ukomprimeret og enormt. WebP reducerer størrelsen med op til 97 % ved god kvalitet og moderniserer ældre billeder.</p><p class=\"text-mid mb-4\">Konverteringen moderniserer gamle filer fra Windows-systemer til aktuelle hjemmesider, CMS'er og webshops. WebP understøttes af alle moderne browsere.</p><p class=\"text-mid\">For danske virksomheder, der forbereder ældre arkiver til deres webpræsence, er lokal konvertering effektiv og GDPR-kompatibel.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis vaerktojer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

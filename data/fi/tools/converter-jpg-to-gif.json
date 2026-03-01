@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-GIF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Vaikka GIF ei ole tehokkain muoto staattisille kuville, se on edelleen välttämätön yksinkertaisille animaatioille, meemeille ja grafiikalle, jossa on rajoitettu väripaletti. 256 värin raja tekee GIF:stä vähemmän sopivan valokuville, mutta ihanteellisen kuvakkeille, logoille ja animoidulle sisällölle sosiaalisessa mediassa ja viestipalveluissa.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. GIF tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">JPG-GIF-muunnos on hyödyllinen, kun valokuvaa tarvitaan yksinkertaisena grafiikkana – esikatselukuvina vanhoissa järjestelmissä tai uutiskirjeissä, jotka tukevat vain GIF:iä.</p><p class=\"text-mid mb-4\">GIF rajoittaa paletin 256 väriin, mikä aiheuttaa näkyvää laadun heikkenemistä valokuvissa. Useimpiin käyttötarkoituksiin WebP tai PNG on parempi valinta.</p><p class=\"text-mid\">Jos työnkulkusi vaatii yksinomaan GIF:iä, paikallinen muunnos tarjoaa nopean ja tietosuojaa noudattavan ratkaisun.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

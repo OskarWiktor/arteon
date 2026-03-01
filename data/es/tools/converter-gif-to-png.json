@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de GIF a PNG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir GIF a PNG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">Convertir GIF a PNG es útil para almacenamiento sin pérdida o edición en programas gráficos. PNG soporta colores de 32 bits y transparencia alfa gradual.</p><p class=\"text-mid mb-4\">En GIF animados, solo se convierte la primera imagen. La calidad se preserva sin pérdida. PNG es ideal como formato intermedio para edición en Photoshop, Figma o Canva.</p><p class=\"text-mid\">Para actualizar gráficos web antiguos, la conversión local ofrece una solución rápida y segura sin servicios externos.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

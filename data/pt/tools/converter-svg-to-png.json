@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de SVG para PNG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de SVG para PNG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. PNG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">SVG é frequentemente convertido para PNG para redes sociais, mensagens e assinaturas de e-mail – preservando transparência com ampla compatibilidade.</p><p class=\"text-mid mb-4\">A rasterização para PNG preserva completamente as zonas transparentes – ideal para logótipos sobre diferentes fundos. Excelente também para capturas de documentação e apresentações.</p><p class=\"text-mid\">Para agências que entregam logótipos em diferentes formatos, SVG para PNG é um fluxo rápido e conforme com a proteção de dados.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

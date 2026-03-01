@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia PNG în JPG în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia PNG în JPG poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. JPG oferă compatibilitate maximă cu toate platformele.</p>"
+      "html": "<p class=\"text-mid mb-4\">Fisierele PNG cu transparenta cantaresc adesea mai multi megabytes. Cand transparenta nu este necesara – fotografii de CV, scanari de documente sau postari pe social media – conversia la JPG reduce drastic dimensiunea.</p><p class=\"text-mid mb-4\">Multe platforme precum LinkedIn, BestJobs sau portaluri de joburi accepta doar JPG. Atasamentele de e-mail beneficiaza si ele: o captura PNG de 3 MB devine doar 200–400 KB in JPG. Calitatea la 85% ofera cel mai bun compromis.</p><p class=\"text-mid\">Pentru documente de candidatura si fisiere confidentiale, procesarea locala este esentiala – fisierele dvs. nu parasesc niciodata dispozitivul. Complet conform cu GDPR.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descoperă mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-JPG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. PNG-muunnos JPG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. JPG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Läpinäkyvät PNG-tiedostot painavat usein useita megatavuja. Kun läpinäkyvyyttä ei tarvita – CV-kuvat, asiakirjojen skannaukset tai some-julkaisut – muunnos JPG:ksi pienentää kokoa dramaattisesti.</p><p class=\"text-mid mb-4\">Monet alustat kuten LinkedIn, Duunitori tai työpaikkasivustot hyväksyvät vain JPG:n. Myös sähköpostiliitteet hyötyvät: 3 MB:n PNG-kuvakaappaus on JPG:nä vain 200–400 KB. Laatu 85 %:ssa tarjoaa parhaan kompromissin.</p><p class=\"text-mid\">Työhakemusasiakirjoille ja luottamuksellisille tiedostoille paikallinen käsittely on välttämätöntä – tiedostosi eivät koskaan poistu laitteeltasi. Täysin GDPR-yhteensopiva.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

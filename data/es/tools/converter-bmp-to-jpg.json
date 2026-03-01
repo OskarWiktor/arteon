@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de BMP a JPG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir BMP a JPG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">Los archivos BMP provienen a menudo de aplicaciones Windows antiguas o escáneres. No comprimidos y muy grandes, la conversión a JPG reduce el tamaño más de un 95%.</p><p class=\"text-mid mb-4\">Un BMP de 10 MB se convierte típicamente en 200–400 KB como JPG. Para correo, documentación y archivo, es la forma más simple de ahorrar espacio y asegurar compatibilidad.</p><p class=\"text-mid\">Para migrar archivos de imágenes antiguos y preparar salidas de escáner, la conversión local es rápida y conforme con la protección de datos.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

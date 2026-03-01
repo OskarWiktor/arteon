@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion GIF vers WebP en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de GIF en WebP peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Le WebP offre une compression bien meilleure que le GIF. La modernisation des GIF en WebP accélère perceptiblement les sites web.</p><p class=\"text-mid mb-4\">Les GIF statiques deviennent 30–60% plus petits en WebP avec des millions de couleurs au lieu de 256, améliorant nettement la qualité visuelle à taille égale ou inférieure.</p><p class=\"text-mid\">Pour l'optimisation d'anciens sites en France, le passage GIF vers WebP est un moyen simple d'améliorer les Core Web Vitals.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da WebP a TIFF nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Il TIFF è lo standard del settore per la stampa professionale, l'archiviazione e la post-produzione. Programmi come Adobe Photoshop, Lightroom e GIMP utilizzano il TIFF per flussi di lavoro senza perdita di dati. La conversione in TIFF preserva tutti i dati dell'immagine, inclusi profili colore, livelli e metadati.</p><p class=\"text-mid\">Per la fotografia professionale e la produzione di stampa, il TIFF garantisce una qualità senza perdite conforme agli standard del settore. L'elaborazione locale garantisce piena conformità al GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">I flussi di stampa professionali spesso richiedono TIFF come formato di input. WebP a TIFF permette di preparare immagini web-ottimizzate per la stampa.</p><p class=\"text-mid mb-4\">TIFF memorizza senza perdita con supporto completo dei metadati. I dettagli persi dalla compressione WebP non vengono ripristinati – per la migliore qualità, partire dall'originale.</p><p class=\"text-mid\">Per agenzie e tipografie in Italia, la conversione locale offre un mezzo sicuro per preparare asset web per progetti di stampa.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

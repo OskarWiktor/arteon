@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da GIF a WebP nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da GIF a WebP può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. WebP fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP offre compressione molto migliore del GIF. La modernizzazione dei GIF in WebP velocizza percettibilmente i siti web.</p><p class=\"text-mid mb-4\">I GIF statici si riducono del 30–60% come WebP, con milioni di colori anziché 256, migliorando nettamente la qualità visiva a dimensione uguale o inferiore.</p><p class=\"text-mid\">Per ottimizzare vecchi siti in Italia, il passaggio da GIF a WebP è un modo semplice per migliorare i Core Web Vitals.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

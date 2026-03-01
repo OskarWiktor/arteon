@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de HEIC a WebP en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir HEIC a WebP puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">¿Usar fotos iPhone HEIC directamente en sitios web? WebP es el puente ideal: combina la compresión eficiente de HEIC con compatibilidad universal de navegadores (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">La conversión HEIC a WebP es especialmente eficiente, ya que ambos formatos usan algoritmos de compresión modernos. El tamaño se mantiene compacto, la calidad alta. Para blogs, tiendas online y portfolios, es la forma más rápida de publicar fotos iPhone optimizadas.</p><p class=\"text-mid\">Bloggers y e-commerce en España pueden convertir sus fotos iPhone localmente y conforme al RGPD – sin servicios cloud ni herramientas externas.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre mas herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

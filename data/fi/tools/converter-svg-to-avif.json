@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-AVIF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. SVG-muunnos AVIF-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. AVIF tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF tarjoaa parhaan pakkauksen rasteroiduille vektorigrafiikoille. Suorituskykykriittisille sivustoille SVG-AVIF on optimaalinen valinta.</p><p class=\"text-mid mb-4\">SVG-lähteistä saadut AVIF-tiedostot ovat äärimmäisen kompakteja (3–15 KB). Jokainen kilotavu merkitsee Core Web Vitals -tuloksissa: nopeampi lataus parantaa LCP:tä ja Google-sijoitusta.</p><p class=\"text-mid\">Web-kehittäjät ja SEO-asiantuntijat Suomessa käyttävät yhä enemmän AVIF:ia – paikallinen muunnos yksinkertaistaa siirtymää.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

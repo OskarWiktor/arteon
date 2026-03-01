@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-til-WebP-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av PNG til WebP kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. WebP gir utmerket komprimering med bevart visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">Norske webdesignere og nettbutikkeiere bruker PNG til logoer, produktutklipp og UI-elementer med gjennomsiktighet. Ved overgang til WebP beholdes gjennomsiktigheten fullt ut, mens filstørrelsen synker med 25–35 % – en direkte gevinst for lastetider og Core Web Vitals.</p><p class=\"text-mid mb-4\">Grafikk med store ensartede fargeflater (logoer, ikoner) drar størst nytte: filer på 200–500 KB krymper ofte til under 100 KB. For produktbilder på Finn.no, Komplett.no, Amazon eller Shopify-butikker betyr dette raskere kategorisider og bedre mobilopplevelse.</p><p class=\"text-mid\">All behandling skjer lokalt i nettleseren – ideelt for byråer og bedrifter som må overholde GDPR. Produktbilder og kundegrafikk forlater aldri enheten din.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

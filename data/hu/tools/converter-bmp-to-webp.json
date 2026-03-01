@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-WebP konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A BMP átalakítása WebP formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. WebP kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">A BMP teljesen alkalmatlan modern webes használatra – tömörítetlen és hatalmas. A WebP akár 97%-kal csökkenti a méretet jó minőség mellett, modernizálva régi képeket a webhez.</p><p class=\"text-mid mb-4\">A konvertálás modernizálja régi Windows-fájlokat jelenlegi weboldalakhoz, CMS-ekhez és webáruházakhoz. A WebP-t minden modern böngésző támogatja.</p><p class=\"text-mid\">Magyar vállalatok számára, amelyek régi archívumokat készítenek elő webes jelenlétükhöz, a helyi konvertálás hatékony és GDPR-kompatibilis.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

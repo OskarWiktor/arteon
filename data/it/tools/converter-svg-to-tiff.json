@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da SVG a TIFF nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Il TIFF è lo standard del settore per la stampa professionale, l'archiviazione e la post-produzione. Programmi come Adobe Photoshop, Lightroom e GIMP utilizzano il TIFF per flussi di lavoro senza perdita di dati. La conversione in TIFF preserva tutti i dati dell'immagine, inclusi profili colore, livelli e metadati.</p><p class=\"text-mid\">Per la fotografia professionale e la produzione di stampa, il TIFF garantisce una qualità senza perdite conforme agli standard del settore. L'elaborazione locale garantisce piena conformità al GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">Le tipografie necessitano spesso immagini TIFF anziché vettori. SVG a TIFF crea file ad alta risoluzione senza perdita per la stampa professionale.</p><p class=\"text-mid mb-4\">TIFF memorizza in qualità massima con piena profondità di colore e metadati. Per biglietti da visita, volantini e poster, si consiglia minimo 300 DPI.</p><p class=\"text-mid\">Le tipografie in Italia accettano TIFF come standard. La conversione locale protegge bozze e loghi riservati.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

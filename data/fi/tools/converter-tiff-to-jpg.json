@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-JPG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. TIFF-muunnos JPG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. JPG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ammattivalokuvauksesta tai skannereista peräisin olevat TIFF-tiedostot painavat usein 20–100 MB. Muunnos JPG:ksi tuottaa kompakteja tiedostoja – tyypillinen pienennys yli 95 %.</p><p class=\"text-mid mb-4\">Läpinäkyvyys ja tasotiedot menetetään. Puhtaalle valokuvaukselle tämä ei ole ongelma. Laatu 85–90 %:ssa visuaalinen laatu pysyy erinomaisena muutamissa sadoissa kilotavuissa.</p><p class=\"text-mid\">Valokuvaajat ja skannerin käyttäjät Suomessa voivat muuntaa TIFF-tiedostonsa paikallisesti ja GDPR-yhteensopivasti lähetysvalmiiksi JPG:ksi.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

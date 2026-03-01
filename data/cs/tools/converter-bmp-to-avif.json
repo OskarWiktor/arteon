@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod BMP na AVIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod BMP na AVIF může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. AVIF poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF nabízí nejlepší kompresi pro nekomprimované BMP: redukce přes 98 % jsou reálné. Pro modernizaci starších archivů je BMP na AVIF nejefektivnější.</p><p class=\"text-mid mb-4\">AVIF podporuje HDR, široké barevné prostory a až 12 bitů – původní kvalita je zachována co nejlépe. Chrome, Firefox a Safari 16+ podporují AVIF nativně.</p><p class=\"text-mid\">Lokální převod umožňuje migraci celých archivů bez cloudu – rychle, bezpečně a v souladu s ochranou dat.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

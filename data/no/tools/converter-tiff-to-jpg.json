@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-til-JPG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av TIFF til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. JPG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF-filer fra profesjonell fotografering eller skannere fyller ofte 20–100 MB. Konvertering til JPG skaper kompakte filer – typisk reduksjon over 95 %.</p><p class=\"text-mid mb-4\">Gjennomsiktighet og laginfo går tapt. For ren fotografering er det uproblematisk. Ved kvalitet 85–90 % forblir kvaliteten utmerket med filstørrelser på noen hundre KB.</p><p class=\"text-mid\">Fotografer og skannerbrukere i Norge kan konvertere TIFF lokalt og GDPR-kompatibelt til JPG klare for sending.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktoy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

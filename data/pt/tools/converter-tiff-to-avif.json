@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de TIFF para AVIF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de TIFF para AVIF pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. AVIF proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF oferece a compressão mais eficiente para grandes ficheiros TIFF. Fotos e digitalizações de alta resolução reduzem-se drasticamente com mínima perda de qualidade.</p><p class=\"text-mid mb-4\">Para galerias e portfólios web que procuram os melhores tempos de carregamento, TIFF para AVIF é o fluxo ótimo. Chrome, Firefox e Safari 16+ suportam AVIF; fallback WebP para navegadores antigos.</p><p class=\"text-mid\">Fotógrafos e agências fotográficas em Portugal beneficiam do processamento local: fotos de clientes de alta resolução otimizadas de forma segura e conforme com o RGPD.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

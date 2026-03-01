@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-TIFF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A TIFF az iparági szabvány a professzionális nyomtatáshoz, archiváláshoz és utómunkálatokhoz. Az Adobe Photoshop, Lightroom és GIMP programok TIFF formátumot használnak veszteségmentes szerkesztési munkafolyamatokhoz. A TIFF-re konvertálás megőrzi a teljes képadatot, beleértve a színprofilokat, rétegeket és metaadatokat.</p><p class=\"text-mid\">Professzionális fotózáshoz és nyomdai termeléshez a TIFF veszteségmentes minőséget biztosít az iparági szabványoknak megfelelően. A helyi feldolgozás teljes GDPR-megfelelőséget biztosít.</p>"
+      "html": "<p class=\"text-mid mb-4\">iPhone-nal dolgozó professzionális fotósoknak gyakran TIFF-re van szükségük Lightroom, Capture One vagy Photoshop utófeldolgozáshoz.</p><p class=\"text-mid mb-4\">A TIFF 16 bites színmélységet, rétegeket és bővített EXIF/IPTC metaadatokat támogat. Nyomtatáshoz, archiváláshoz és professzionális retusáláshoz a TIFF az előnyben részesített formátum.</p><p class=\"text-mid\">Magyarországon, ahol nyomdák és fotóügynökségek TIFF-et követelnek standardként, a helyi konvertálás biztonságos munkafolyamatot kínál bizalmas felvételekhez.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

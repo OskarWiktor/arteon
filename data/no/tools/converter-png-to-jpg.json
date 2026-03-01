@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-til-JPG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av PNG til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. JPG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">PNG-filer med gjennomsiktighet fyller ofte flere megabyte. Når gjennomsiktighet ikke trengs – CV-bilder, dokumentskanninger eller innlegg på sosiale medier – reduserer konvertering til JPG filstørrelsen drastisk.</p><p class=\"text-mid mb-4\">Mange plattformer som Finn.no, LinkedIn eller jobbportaler godtar kun JPG. E-postvedlegg drar også nytte: et PNG-skjermskudd på 3 MB blir som JPG bare 200–400 KB. Kvalitet på 85 % gir best kompromiss.</p><p class=\"text-mid\">For søknadsdokumenter og fortrolige filer er lokal behandling avgjørende – filene dine forlater aldri enheten. Fullt GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

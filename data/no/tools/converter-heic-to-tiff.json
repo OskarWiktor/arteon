@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-til-TIFF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">TIFF er bransjestandarden for profesjonell utskrift, arkivering og etterbehandling. Programmer som Adobe Photoshop, Lightroom og GIMP bruker TIFF for tapsfrie redigeringsarbeidsflyter. Konvertering til TIFF bevarer alle bildedata inkludert fargeprofiler, lag og metadata.</p><p class=\"text-mid\">For profesjonell fotografering og trykkproduksjon sikrer TIFF tapsfri kvalitet etter bransjestandarder. Lokal behandling sikrer full GDPR-samsvar.</p>"
+      "html": "<p class=\"text-mid mb-4\">Profesjonelle fotografer som jobber med iPhones trenger ofte TIFF for etterbehandling i Lightroom, Capture One eller Photoshop.</p><p class=\"text-mid mb-4\">TIFF støtter 16-bit fargedybde, lag og utvidede EXIF/IPTC-metadata. For trykk, arkivering og profesjonell retusjering er TIFF det foretrukne formatet.</p><p class=\"text-mid\">I Norge, hvor trykkerier og bildebyråer krever TIFF som standard, tilbyr lokal konvertering en sikker arbeidsflyt for fortrolige fotograferinger.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

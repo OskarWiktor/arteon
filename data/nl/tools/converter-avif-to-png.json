@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-naar-PNG-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van AVIF naar PNG kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. PNG biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF-afbeeldingen met transparantie moeten soms naar PNG worden geconverteerd – voor verdere bewerking in grafische programma's of voor platforms zonder AVIF-ondersteuning.</p><p class=\"text-mid mb-4\">PNG behoudt transparantie en beeldkwaliteit verliesvrij. De bestanden zijn groter dan AVIF, maar geschikt voor bewerking in Photoshop, Figma of Canva en voor drukwerk.</p><p class=\"text-mid\">Grafisch ontwerpers in Nederland gebruiken lokale conversie om AVIF-assets veilig en AVG-conform voor te bereiden voor verschillende uitvoerkanalen.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-zu-JPG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von PNG in JPG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet JPG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">PNG-Dateien mit Transparenz sind oft mehrere Megabyte groß. Wenn Transparenz nicht benötigt wird – etwa für Bewerbungsfotos, Dokumentenscans oder Social-Media-Posts – reduziert die Konvertierung zu JPG die Dateigröße drastisch.</p><p class=\"text-mid mb-4\">Viele Plattformen wie XING, LinkedIn oder Bewerbungsportale akzeptieren ausschließlich JPG. Auch E-Mail-Anhänge profitieren: Ein 3 MB PNG-Screenshot wird als JPG oft nur noch 200–400 KB groß. Die Qualitätseinstellung von 85% bietet den besten Kompromiss zwischen Dateigröße und visueller Qualität.</p><p class=\"text-mid\">Gerade bei Bewerbungsunterlagen und vertraulichen Dokumenten ist die lokale Verarbeitung im Browser entscheidend – Ihre Dateien verlassen niemals Ihr Gerät. Vollständig DSGVO-konform.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

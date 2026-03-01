@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da PNG a WebP nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da PNG a WebP può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. WebP fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
+      "html": "<p class=\"text-mid mb-4\">Web designer e proprietari di e-commerce in Italia usano il PNG per loghi, ritagli di prodotti ed elementi di interfaccia con trasparenza. Passando a WebP, la trasparenza resta intatta mentre la dimensione si riduce del 25–35% – un vantaggio diretto per i tempi di caricamento e i Core Web Vitals.</p><p class=\"text-mid mb-4\">Le grafiche con grandi aree di colore pieno (loghi, icone) ne beneficiano di più: file da 200–500 KB spesso scendono sotto i 100 KB. Per i ritagli di prodotti su Amazon.it, Subito.it, eBay.it o negozi Shopify, ciò significa pagine categoria più veloci e migliore esperienza mobile.</p><p class=\"text-mid\">L'elaborazione avviene interamente in locale nel browser – ideale per agenzie e aziende che devono rispettare il GDPR. Le immagini di prodotti o grafiche dei clienti non lasciano mai il dispositivo.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

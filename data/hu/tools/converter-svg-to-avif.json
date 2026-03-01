@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-AVIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A SVG átalakítása AVIF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. AVIF kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az AVIF a legjobb elérhető tömörítést kínálja raszterizált vektorgrafikákhoz. Teljesítménykritikus oldalakhoz SVG-AVIF az optimális választás.</p><p class=\"text-mid mb-4\">SVG-forrásokból készült AVIF-fájlok rendkívül kompaktak (3–15 KB). Minden kilobájt számít a Core Web Vitals-nak: gyorsabb betöltés javítja az LCP-t és a Google-rangsorolást.</p><p class=\"text-mid\">Magyar webfejlesztők és SEO-szakértők egyre inkább AVIF-et használnak – a helyi konvertálás egyszerűsíti az átállást.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

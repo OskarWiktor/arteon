@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-JPG konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A TIFF átalakítása JPG formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. JPG maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professzionális fotózásból vagy szkennerekből származó TIFF-fájlok gyakran 20–100 MB-osak. A JPG-re konvertálás kompakt fájlokat hoz létre – tipikus csökkenés 95% felett.</p><p class=\"text-mid mb-4\">Az átlátszóság és réteginformáció elvész. Tiszta fotográfiához ez nem probléma. 85–90%-os minőségnél a vizuális minőség kiváló marad néhány száz KB-ban.</p><p class=\"text-mid\">Magyar fotósok és szkennerhasználók helyben és GDPR-kompatibilisen konvertálhatják TIFF-fájljaikat küldésre kész JPG-vé.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

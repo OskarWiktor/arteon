@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-naar-WebP-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van BMP naar WebP kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. WebP biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-bestanden zijn voor modern webgebruik volstrekt ongeschikt – ongecomprimeerd en enorm. WebP reduceert de bestandsgrootte tot 97% bij goede visuele kwaliteit en maakt oudere beelden webgeschikt.</p><p class=\"text-mid mb-4\">De conversie moderniseert oude bestanden uit Windows-systemen voor actuele websites, CMS'en en webshops. WebP wordt door alle moderne browsers ondersteund en verbetert laadtijden direct.</p><p class=\"text-mid\">Voor bedrijven in Nederland die oudere beeldarchieven voor hun webpresence willen voorbereiden, is lokale conversie efficiënt en AVG-conform.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

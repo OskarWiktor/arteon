@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-zu-AVIF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von PNG in AVIF kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet AVIF hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF ist das effizienteste Bildformat der aktuellen Generation und kann PNG-Dateien um bis zu 50% verkleinern. Für leistungskritische Webprojekte, bei denen jedes Kilobyte zählt, ist PNG-zu-AVIF die optimale Konvertierung.</p><p class=\"text-mid mb-4\">AVIF unterstützt Transparenz, HDR und eine Farbtiefe von bis zu 12 Bit pro Kanal. Chrome, Firefox und Safari 16+ unterstützen AVIF nativ. Für ältere Browser empfiehlt sich ein Fallback über das HTML-Element <code>&lt;picture&gt;</code> mit PNG oder WebP als Alternative.</p><p class=\"text-mid\">Deutsche Unternehmen, die ihre PageSpeed-Insights-Werte optimieren möchten, profitieren besonders: AVIF verbessert den Largest Contentful Paint (LCP) messbar. Die lokale Verarbeitung gewährleistet DSGVO-Konformität.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

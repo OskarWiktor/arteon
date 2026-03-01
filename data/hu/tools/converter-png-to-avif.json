@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-AVIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A PNG átalakítása AVIF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. AVIF kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az AVIF a jelenlegi generáció leghatékonyabb képformátuma, és akár 50%-kal csökkentheti a PNG-fájlokat. Teljesítménykritikus webprojektekhez a PNG-AVIF konvertálás az optimális választás.</p><p class=\"text-mid mb-4\">Az AVIF támogatja az átlátszóságot, HDR-t és csatornánként akár 12 bites színmélységet. A Chrome, Firefox és Safari 16+ natívan támogatja. Régebbi böngészőkhöz fallback a <code>&lt;picture&gt;</code> elemen keresztül ajánlott.</p><p class=\"text-mid\">Magyar vállalatok, amelyek PageSpeed-eredményeiket szeretnék optimalizálni, különösen profitálnak: az AVIF mérhetően javítja a Largest Contentful Paint (LCP) értéket. A helyi feldolgozás biztosítja a GDPR-megfelelőséget.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

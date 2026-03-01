@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion TIFF vers PNG en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de TIFF en PNG peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Quand les fichiers TIFF sont nécessaires pour la retouche ou des sites avec transparence, le PNG est adapté – sans perte et universellement compatible.</p><p class=\"text-mid mb-4\">Le PNG préserve la pleine qualité et transparence du TIFF. Les fichiers sont plus petits que TIFF mais plus gros que JPEG/WebP. Pour Figma, Canva ou Photoshop, le PNG est idéal.</p><p class=\"text-mid\">Pour préparer des sorties scanner et images d'archives pour l'usage en ligne, la conversion locale offre un workflow sûr et rapide.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

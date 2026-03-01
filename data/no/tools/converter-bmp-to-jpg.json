@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-til-JPG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av BMP til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. JPG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-filer stammer ofte fra eldre Windows-applikasjoner eller skannere. Ukomprimerte og svært store – konvertering til JPG reduserer størrelsen med over 95 %.</p><p class=\"text-mid mb-4\">Et BMP-skjermskudd på 10 MB blir som JPG typisk bare 200–400 KB. For e-post, dokumentasjon og arkivering er dette den enkleste måten å spare plass.</p><p class=\"text-mid\">For migrering av eldre bildearkiver og forberedelse av skannerutdata tilbyr lokal konvertering en rask og GDPR-kompatibel løsning.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

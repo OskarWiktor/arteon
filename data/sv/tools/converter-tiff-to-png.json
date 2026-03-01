@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-till-PNG-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera TIFF till PNG kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. PNG erbjuder maximal kompatibilitet med alla plattformar.</p>"
+      "html": "<p class=\"text-mid mb-4\">När TIFF-filer behövs för redigering i grafikprogram eller webbsidor med transparens är PNG det lämpliga formatet – förlustfritt och universellt kompatibelt.</p><p class=\"text-mid mb-4\">PNG bevarar full kvalitet och transparens från TIFF-originalet. Filerna är mindre än TIFF men större än JPEG/WebP. För Figma, Canva eller Photoshop är PNG idealiskt.</p><p class=\"text-mid\">För förberedelse av skannerutdata och arkivbilder för onlineanvändning erbjuder lokal konvertering ett säkert och snabbt arbetsflöde.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

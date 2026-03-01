@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-WebP-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. BMP-muunnos WebP-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. WebP tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP on täysin soveltumaton nykyaikaiseen verkkokäyttöön – pakkaamaton ja valtava. WebP pienentää jopa 97 % hyvällä laadulla, modernisoiden vanhat kuvat verkkoon.</p><p class=\"text-mid mb-4\">Muunnos modernisoi vanhoja Windows-tiedostoja nykyaikaisille sivustoille, CMS:ille ja verkkokaupoille. WebP:tä tukevat kaikki nykyaikaiset selaimet.</p><p class=\"text-mid\">Suomalaisille yrityksille, jotka valmistelevat vanhoja arkistoja verkkoon, paikallinen muunnos on tehokas ja GDPR-yhteensopiva.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

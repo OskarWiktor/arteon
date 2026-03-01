@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-zu-JPG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von TIFF in JPG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet JPG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF-Dateien aus professioneller Fotografie oder Scannerausgaben sind oft 20–100 MB groß. Die Konvertierung zu JPG erzeugt kompakte Dateien für Web, E-Mail und Social Media – mit einer typischen Größenreduktion von über 95%.</p><p class=\"text-mid mb-4\">Transparenz und Ebeneninformationen gehen bei der Konvertierung verloren. Für reine Fotografie ist das unproblematisch. Bei Qualitätsstufe 85–90% bleibt die visuelle Qualität hervorragend, während die Dateigröße auf wenige hundert Kilobyte sinkt.</p><p class=\"text-mid\">Fotografen und Scanner-Nutzer im DACH-Raum können ihre TIFF-Dateien lokal und DSGVO-konform in versandfähige JPGs umwandeln – ideal für Kundenpräsentationen und Online-Galerien.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

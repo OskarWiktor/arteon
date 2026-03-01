@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de BMP para JPG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de BMP para JPG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. JPG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ficheiros BMP provêm frequentemente de aplicações Windows antigas ou scanners. Não comprimidos e muito grandes, a conversão para JPG reduz o tamanho mais de 95%.</p><p class=\"text-mid mb-4\">Um BMP de 10 MB torna-se tipicamente 200–400 KB como JPG. Para e-mail, documentação e arquivo, é a forma mais simples de poupar espaço e assegurar compatibilidade.</p><p class=\"text-mid\">Para migrar arquivos de imagens antigos e preparar saídas de scanner, a conversão local é rápida e conforme com a proteção de dados.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

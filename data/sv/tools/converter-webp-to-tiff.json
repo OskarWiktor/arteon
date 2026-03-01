@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-till-TIFF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">TIFF är branschstandarden för professionellt tryck, arkivering och efterbearbetning. Program som Adobe Photoshop, Lightroom och GIMP använder TIFF för förlustfria redigeringsarbetsflöden. Konvertering till TIFF bevarar all bilddata inklusive färgprofiler, lager och metadata.</p><p class=\"text-mid\">För professionell fotografi och tryckproduktion säkerställer TIFF förlustfri kvalitet enligt branschstandarder. Lokal behandling säkerställer full GDPR-efterlevnad.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionella tryckarbetsflöden kräver ofta TIFF. WebP till TIFF gör det möjligt att förbereda webboptimerade bilder för tryck.</p><p class=\"text-mid mb-4\">TIFF lagrar förlustfritt med fullt metadata-stöd. Detaljer förlorade vid WebP-komprimering återställs inte – för bäst kvalitet, utgå från originalet.</p><p class=\"text-mid\">För byråer och tryckerier i Sverige erbjuder lokal konvertering ett säkert sätt att förbereda webbtillgångar för tryckprojekt.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

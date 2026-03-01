@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod WebP na AVIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod WebP na AVIF může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. AVIF poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF nabízí ještě lepší kompresi než WebP – logický další krok pro weby, které chtějí dále optimalizovat načítání.</p><p class=\"text-mid mb-4\">Při srovnatelné kvalitě jsou soubory AVIF o 20–30 % menší než WebP. Pro weby se stovkami obrázků se úspora výrazně sčítá. Fallback WebP přes <code>&lt;picture&gt;</code> pokryje starší prohlížeče.</p><p class=\"text-mid\">České e-shopy optimalizující Core Web Vitals zvláště profitují z AVIF. Lokální převod umožňuje změnu formátu bez nahrávání do cloudu.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

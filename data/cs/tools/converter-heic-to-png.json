@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod HEIC na PNG v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod HEIC na PNG může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. PNG nabízí maximální kompatibilitu se všemi platformami.</p>"
+      "html": "<p class=\"text-mid mb-4\">Pokud chcete fotografie z iPhonu využít bezeztrátově – jako základ v Photoshopu, Figmě nebo pro tiskové projekty – PNG je ideální cílový formát.</p><p class=\"text-mid mb-4\">PNG na rozdíl od JPG podporuje průhlednost a bezeztrátové ukládání. Soubory PNG jsou však výrazně větší než HEIC nebo JPG. Pro úpravu v grafických programech to není nevýhoda – pro web se doporučuje následný převod na WebP.</p><p class=\"text-mid\">Kreativní agentury a fotografové profitují z lokálního zpracování: fotografie klientů z iPhonu zůstanou důvěrné na vlastním počítači.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Objevte dalsi bezplatne nastroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de WebP para JPG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de WebP para JPG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. JPG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP é ótimo para a web, mas serviços de impressão, Microsoft Office, software antigo e algumas redes sociais exigem JPG.</p><p class=\"text-mid mb-4\">WebP para JPG assegura compatibilidade máxima. A qualidade 85–90%, a qualidade visual é quase idêntica. Prático para enviar imagens por e-mail a destinatários que não conseguem abrir WebP.</p><p class=\"text-mid\">Para agências que precisam entregar imagens em formatos universais, a conversão local é ideal – rápida, segura e conforme com o RGPD.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

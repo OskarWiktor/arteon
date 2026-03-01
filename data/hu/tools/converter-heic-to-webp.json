@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-WebP konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A HEIC átalakítása WebP formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. WebP kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">iPhone-fotók HEIC formátumban közvetlenül weboldalakra? A WebP az ideális híd: ötvözi a HEIC hatékony tömörítését az univerzális böngésző-kompatibilitással (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">A HEIC-WebP konvertálás különösen hatékony, mivel mindkét formátum modern tömörítési algoritmusokat használ. Blogokhoz, webáruházakhoz és portfóliókhoz ez a leggyorsabb út az optimalizált iPhone-fotók közzétételéhez.</p><p class=\"text-mid\">Magyar bloggerek és webáruház-tulajdonosok helyben és GDPR-kompatibilisen konvertálhatják iPhone-fotóikat – felhőszolgáltatás vagy külső eszköz nélkül.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

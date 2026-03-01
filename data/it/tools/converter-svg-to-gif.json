@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da SVG a GIF nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Sebbene il GIF non sia il formato più efficiente per le immagini statiche, resta indispensabile per animazioni semplici, meme e grafiche con palette di colori limitata. Il limite di 256 colori rende il GIF meno adatto alle fotografie, ma ideale per icone, loghi e contenuti animati condivisi sui social media e nelle app di messaggistica.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. GIF offre la massima compatibilità con tutte le piattaforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">Il GIF è a volte necessario per icone in sistemi vecchi, template e-mail o forum. SVG a GIF crea file compatibili e leggeri.</p><p class=\"text-mid mb-4\">Il GIF limita a 256 colori. Per loghi monocromi è sufficiente; per illustrazioni complesse con sfumature, no. Trasparenza solo binaria.</p><p class=\"text-mid\">Per template newsletter e piattaforme vecchie che accettano solo GIF, è una soluzione locale rapida.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

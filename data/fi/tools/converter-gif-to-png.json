@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-PNG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. GIF-muunnos PNG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. PNG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">GIF-PNG-muunnos on hyödyllinen häviöttömään tallennukseen tai muokkaukseen grafiikkaohjelmissa. PNG tukee 32-bittisiä värejä ja asteittaista alfa-läpinäkyvyyttä.</p><p class=\"text-mid mb-4\">Animoiduista GIF:eistä muunnetaan vain ensimmäinen kuva. Laatu säilyy häviöttömänä. PNG on ihanteellinen välimuotona Photoshopiin, Figmaan tai Canvaan.</p><p class=\"text-mid\">Vanhojen verkkografiikoiden päivittämiseen paikallinen muunnos tarjoaa nopean ja turvallisen ratkaisun ilman ulkoisia palveluja.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de TIFF para JPG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de TIFF para JPG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. JPG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ficheiros TIFF de fotografia profissional ou scanners pesam frequentemente 20–100 MB. A conversão para JPG cria ficheiros compactos para web, e-mail e redes sociais – redução típica de mais de 95%.</p><p class=\"text-mid mb-4\">Transparência e camadas perdem-se na conversão. Para fotografia pura, não é problemático. A qualidade 85–90%, a qualidade visual mantém-se excelente com tamanhos de poucas centenas de KB.</p><p class=\"text-mid\">Fotógrafos e utilizadores de scanner em Portugal podem converter TIFF localmente e em conformidade com o RGPD em JPG prontos para envio.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

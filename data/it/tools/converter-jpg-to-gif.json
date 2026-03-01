@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da JPG a GIF nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Sebbene il GIF non sia il formato più efficiente per le immagini statiche, resta indispensabile per animazioni semplici, meme e grafiche con palette di colori limitata. Il limite di 256 colori rende il GIF meno adatto alle fotografie, ma ideale per icone, loghi e contenuti animati condivisi sui social media e nelle app di messaggistica.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. GIF offre la massima compatibilità con tutte le piattaforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">La conversione da JPG a GIF è utile quando serve una foto come grafica semplice con palette limitata – miniature in sistemi vecchi o newsletter che supportano solo GIF.</p><p class=\"text-mid mb-4\">Il GIF limita la palette a 256 colori. Nelle foto, ciò causa perdita visibile per dithering. Per la maggior parte degli usi, WebP o PNG sono scelte migliori.</p><p class=\"text-mid\">Se il flusso di lavoro richiede esclusivamente GIF, la conversione locale offre una soluzione rapida e conforme alla protezione dei dati.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

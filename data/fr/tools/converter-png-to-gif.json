@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion PNG vers GIF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Bien que le GIF ne soit pas le format le plus efficace pour les images statiques, il reste incontournable pour les animations simples, les mèmes et les graphiques à palette de couleurs limitée. La limite de 256 couleurs rend le GIF moins adapté aux photographies, mais idéal pour les icônes, logos et contenus animés partagés sur les réseaux sociaux et les messageries.</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Les graphiques simples (icônes, logos, diagrammes) avec palette limitée se stockent plus compactement en GIF. La conversion est utile lorsque le format GIF est imposé par la plateforme.</p><p class=\"text-mid mb-4\">Le GIF ne supporte que 256 couleurs. Les images photoréalistes perdent en qualité. La transparence n'est supportée qu'en binaire (visible/invisible), pas en alpha progressif.</p><p class=\"text-mid\">Pour les présentations, newsletters ou systèmes n'acceptant que le GIF, cette conversion est une solution rapide – entièrement locale et sans téléversement.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

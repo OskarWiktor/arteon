@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-AVIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A WebP átalakítása AVIF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. AVIF kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az AVIF még jobb tömörítést kínál, mint a WebP – a következő logikus lépés a betöltési idők további optimalizálásához.</p><p class=\"text-mid mb-4\">Összehasonlítható minőségnél az AVIF-fájlok 20–30%-kal kisebbek a WebP-nél. Több száz képet tartalmazó oldalaknál a megtakarítás jelentős. WebP-fallback <code>&lt;picture&gt;</code>-en keresztül a régebbi böngészőket fedi le.</p><p class=\"text-mid\">Magyar webáruházak, amelyek Core Web Vitals mutatóikat optimalizálják, különösen profitálnak az AVIF-ből. A helyi konvertálás elkerüli a felhőfeltöltést.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

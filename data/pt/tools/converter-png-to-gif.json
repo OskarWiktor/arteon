@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de PNG para GIF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Embora o GIF não seja o formato mais eficiente para imagens estáticas, permanece essencial para animações simples, memes e gráficos com paleta de cores limitada. O limite de 256 cores torna o GIF menos adequado para fotografias, mas ideal para ícones, logotipos e conteúdo animado partilhado nas redes sociais e aplicações de mensagens.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. GIF oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">Gráficos simples como ícones, logótipos ou diagramas com paleta limitada armazenam-se mais compactamente em GIF. A conversão é útil quando a plataforma exige formato GIF.</p><p class=\"text-mid mb-4\">O GIF suporta apenas 256 cores. Imagens PNG fotorrealistas perdem qualidade visível. A transparência é apenas binária (visível/invisível), não alfa gradual como no PNG.</p><p class=\"text-mid\">Para apresentações, gráficos de newsletters ou sistemas que só aceitam GIF, esta conversão é uma solução rápida – inteiramente local e sem upload.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

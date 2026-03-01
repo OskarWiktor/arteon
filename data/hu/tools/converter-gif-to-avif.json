@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-AVIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A GIF átalakítása AVIF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. AVIF kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az AVIF minden szempontból felülmúlja a GIF-et: jobb tömörítés, milliónyi szín, modern animációtámogatás. Régi webtartalom modernizálásához a GIF-AVIF a leghatékonyabb.</p><p class=\"text-mid mb-4\">GIF-forrásokból készült AVIF-fájlok drasztikusan kisebbek és vizuálisan jobbak. Régebbi böngészők még nem támogatják – fallback <code>&lt;picture&gt;</code>-en keresztül ajánlott.</p><p class=\"text-mid\">A betöltési idők maximalizálásához a GIF-AVIF váltás az összes formátumváltás közül a legnagyobb egyedi nyereséget kínálja.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

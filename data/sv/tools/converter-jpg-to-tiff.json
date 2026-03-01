@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-till-TIFF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">TIFF är branschstandarden för professionellt tryck, arkivering och efterbearbetning. Program som Adobe Photoshop, Lightroom och GIMP använder TIFF för förlustfria redigeringsarbetsflöden. Konvertering till TIFF bevarar all bilddata inklusive färgprofiler, lager och metadata.</p><p class=\"text-mid\">För professionell fotografi och tryckproduktion säkerställer TIFF förlustfri kvalitet enligt branschstandarder. Lokal behandling säkerställer full GDPR-efterlevnad.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionella tryckerier och bildbyråer kräver ofta TIFF istället för JPEG. Konverteringen bevarar nuvarande kvalitet och lagrar den förlustfritt.</p><p class=\"text-mid mb-4\">Detaljer förlorade vid JPEG-komprimering återställs inte, men TIFF förhindrar ytterligare förluster. Stöder CMYK, lager och utökad metadata – idealiskt för professionella tryckarbetsflöden.</p><p class=\"text-mid\">Fotografer och byråer i Sverige drar nytta av lokal bearbetning: kundfoton och tryckfiler förblir på din enhet.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

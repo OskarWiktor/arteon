@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de SVG para AVIF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de SVG para AVIF pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. AVIF proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF oferece a melhor compressão para gráficos vetoriais rasterizados. Para sites críticos em desempenho, SVG para AVIF é a escolha ótima quando o SVG direto não é possível.</p><p class=\"text-mid mb-4\">Os AVIF a partir de SVG são extremamente compactos (3–15 KB). Cada kilobyte conta para os Core Web Vitals: tempos mais rápidos melhoram o LCP e o posicionamento Google.</p><p class=\"text-mid\">Desenvolvedores web e especialistas SEO em Portugal e no Brasil usam cada vez mais AVIF – a conversão local simplifica a transição.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

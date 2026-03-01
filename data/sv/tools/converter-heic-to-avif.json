@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-till-AVIF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera HEIC till AVIF kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. AVIF ger utmärkt komprimering med bibehållen visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF erbjuder komprimeringseffektivitet jämförbar med HEIC, men som öppet format är det inte bundet till Apples ekosystem. HEIC till AVIF möjliggör den mest moderna komprimeringen med brett plattformsstöd.</p><p class=\"text-mid mb-4\">Chrome, Firefox och Safari 16+ stöder AVIF nativt. För prestandakritiska projekt – fotogallerier, portfolior, fastighetsportaler – erbjuder AVIF bäst balans.</p><p class=\"text-mid\">Lokal konvertering är särskilt relevant för fotografer: iPhone-fotograferingar konverteras direkt till det mest effektiva webbformatet – utan moln.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

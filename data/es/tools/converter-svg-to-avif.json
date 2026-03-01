@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de SVG a AVIF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir SVG a AVIF puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF ofrece la mejor compresión disponible para gráficos vectoriales rasterizados. Para sitios críticos en rendimiento, SVG a AVIF es la opción óptima cuando no se puede integrar SVG directamente.</p><p class=\"text-mid mb-4\">Los AVIF desde SVG son extremadamente compactos (3–15 KB). Cada kilobyte cuenta para Core Web Vitals: tiempos de carga más rápidos mejoran el LCP y el ranking en Google.</p><p class=\"text-mid\">Desarrolladores web y especialistas SEO en España usan cada vez más AVIF como estándar – la conversión local simplifica la transición.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

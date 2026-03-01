@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-AVIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A JPG átalakítása AVIF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. AVIF kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az AVIF akár 50%-kal jobb tömörítést ér el, mint a JPEG, összehasonlítható vizuális minőség mellett. Sok fotót tartalmazó weboldalakhoz – ingatlanportálok, online magazinok, utazási oldalak – a betöltési idők jelentősen csökkennek.</p><p class=\"text-mid mb-4\">Platformok, mint az Ingatlan.com, Booking.com vagy Jófogás egyre inkább AVIF-et használnak a jobb mobilélmény érdekében. A Chrome, Firefox és Safari 16+ natívan támogatja.</p><p class=\"text-mid\">A helyi konvertálás a böngészőben védi képeit: ingatlanfotók, termékképek vagy portrék – semmi sem kerül feltöltésre. Teljesen GDPR-kompatibilis.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

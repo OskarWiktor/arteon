@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion BMP vers TIFF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Le TIFF est le standard de l'industrie pour l'impression professionnelle, l'archivage et la post-production. Des logiciels comme Adobe Photoshop, Lightroom et GIMP utilisent le TIFF pour des flux de travail d'édition sans perte. La conversion en TIFF préserve toutes les données de l'image, y compris les profils colorimétriques, les calques et les métadonnées.</p><p class=\"text-mid\">Pour la photographie professionnelle et la production d'impression, le TIFF garantit une qualité sans perte conforme aux standards de l'industrie. Le traitement local garantit la conformité RGPD.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP vers TIFF est pertinent pour le support professionnel des métadonnées – archivage, prépresse ou traitement dans des logiciels professionnels.</p><p class=\"text-mid mb-4\">Le TIFF préserve la pleine qualité du BMP et ajoute : métadonnées EXIF, CMJN et calques. Pour l'archivage à long terme, le TIFF est nettement supérieur au BMP.</p><p class=\"text-mid\">Archives, bibliothèques et entreprises françaises numérisant des fonds anciens bénéficient de la conversion locale sans dépendance cloud.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

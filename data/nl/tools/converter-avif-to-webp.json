@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-naar-WebP-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van AVIF naar WebP kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. WebP biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP biedt bredere browserondersteuning dan AVIF (Safari 14+ vs. Safari 16+) bij goede compressie. Als uw doelgroep oudere browsers gebruikt, is WebP de veiligere keuze.</p><p class=\"text-mid mb-4\">AVIF naar WebP is bijzonder relevant voor CMS'en en CDN's die AVIF nog niet ondersteunen. WebP wordt native ondersteund door WordPress, Shopify, Cloudflare en alle moderne browsers.</p><p class=\"text-mid\">Voor webprojecten in Nederland die maximale browserdekking bij goede compressie nodig hebben, is WebP nog steeds het betrouwbaarste moderne formaat.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

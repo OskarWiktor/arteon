@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-til-PNG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av GIF til PNG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. PNG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">Konvertering av GIF til PNG er nyttig for tapsfri lagring eller redigering i grafiske programmer. PNG støtter 32-bit farger og gradvis alfa-gjennomsiktighet.</p><p class=\"text-mid mb-4\">For animerte GIFer konverteres kun første bilde. Kvaliteten bevares tapsfritt. PNG er ideelt som mellomformat til Photoshop, Figma eller Canva.</p><p class=\"text-mid\">For modernisering av eldre nettgrafikk tilbyr lokal konvertering en rask og sikker løsning uten eksterne tjenester.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

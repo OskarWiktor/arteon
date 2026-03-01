@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de SVG para JPG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de SVG para JPG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. JPG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">SVG não é aceite em todo o lado: redes sociais, marketplaces e muitos CMS só aceitam formatos raster. A conversão para JPG cria ficheiros universalmente compatíveis.</p><p class=\"text-mid mb-4\">A rasterização converte o vetor em pixéis a resolução fixa. As zonas transparentes são preenchidas com cor de fundo (branco por defeito). Para uso web, recomenda-se 1200–2000px de largura.</p><p class=\"text-mid\">Para publicações em redes sociais e anúncios no OLX.pt, Mercado Livre ou Amazon.pt, SVG para JPG é um requisito habitual.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

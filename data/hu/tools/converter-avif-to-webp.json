@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-WebP konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A AVIF átalakítása WebP formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. WebP kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">A WebP szélesebb böngészőtámogatást kínál, mint az AVIF (Safari 14+ vs. 16+) jó tömörítéssel. Ha a közönsége régebbi böngészőket használ, a WebP biztonságosabb választás.</p><p class=\"text-mid mb-4\">Az AVIF-WebP releváns AVIF-támogatás nélküli CMS-ekhez és CDN-ekhez. A WebP-t natívan támogatja a WordPress, Shopify, Cloudflare és minden modern böngésző.</p><p class=\"text-mid\">Magyar webprojektekhez, amelyeknek maximális böngészőlefedettségre van szükségük, a WebP továbbra is a legmegbízhatóbb modern formátum.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

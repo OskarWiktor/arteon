@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af GIF til JPG i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af GIF til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. JPG tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ældre GIF-billeder skal sommetider konverteres til JPG – for platforme, der kun accepterer JPEG, eller for at optimere filstørrelse til e-mail. Kun det første billede i en animeret GIF konverteres.</p><p class=\"text-mid mb-4\">JPG tilbyder fulde 16,7 millioner farver i stedet for GIF's 256-farvepalette. Fotos ved et uheld gemt som GIF drager fordel af fuld farvedybde.</p><p class=\"text-mid\">For arkivering af ældre grafik i et moderne, universelt format er lokal konvertering hurtig og GDPR-kompatibel.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

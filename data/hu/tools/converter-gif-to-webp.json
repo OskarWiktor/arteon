@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-WebP konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A GIF átalakítása WebP formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. WebP kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">A WebP lényegesen jobb tömörítést kínál, mint a GIF. Régi GIF-ek WebP-re modernizálása érzékelhetően gyorsítja a weboldalakat.</p><p class=\"text-mid mb-4\">Statikus GIF-fájlok WebP-ként jellemzően 30–60%-kal kisebbek, milliónyi színnel 256 helyett, jelentősen javítva a vizuális minőséget.</p><p class=\"text-mid\">Régi magyar weboldalak optimalizálásához a GIF-WebP váltás egyszerű módja a Core Web Vitals javításának.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

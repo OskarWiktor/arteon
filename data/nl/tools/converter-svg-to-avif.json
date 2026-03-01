@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-naar-AVIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van SVG naar AVIF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. AVIF biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF biedt de beste beschikbare compressie voor gerasteriseerde vectorafbeeldingen. Voor prestatiekritische websites is SVG-naar-AVIF de optimale keuze wanneer SVG niet direct kan worden ingebed.</p><p class=\"text-mid mb-4\">AVIF-bestanden uit SVG-bronnen zijn extreem compact – vaak slechts 3–15 KB. Voor Core Web Vitals is elke kilobyte relevant: snellere laadtijden verbeteren de LCP-score en daarmee de Google-ranking.</p><p class=\"text-mid\">Webontwikkelaars en SEO-specialisten in Nederland gebruiken AVIF steeds vaker als standaard – lokale conversie vereenvoudigt de overstap.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

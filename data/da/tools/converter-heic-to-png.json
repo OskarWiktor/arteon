@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af HEIC til PNG i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af HEIC til PNG kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. PNG tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">Vil du genbruge iPhone-fotos tabsfrit – som base i Photoshop, Figma eller til trykprojekter – er PNG det ideelle målformat.</p><p class=\"text-mid mb-4\">PNG understøtter gennemsigtighed og tabsfri lagring i modsætning til JPG. PNG-filer er dog væsentligt større end HEIC eller JPG. For redigering er det ingen ulempe – for web anbefales efterfølgende konvertering til WebP.</p><p class=\"text-mid\">Kreative bureauer og fotografer drager fordel af lokal behandling: iPhone-fotos fra kunder forbliver fortrolige på din egen computer.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis vaerktojer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

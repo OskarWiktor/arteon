@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia PNG în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia PNG în WebP poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. WebP oferă o compresie excelentă păstrând calitatea vizuală.</p>"
+      "html": "<p class=\"text-mid mb-4\">Designerii web si proprietarii de magazine online din Romania folosesc PNG pentru logo-uri, decupaje de produse si elemente de interfata cu transparenta. La trecerea la WebP, transparenta se pastreaza complet, in timp ce dimensiunea fisierului scade cu 25–35% – un castig direct pentru timpii de incarcare si Core Web Vitals.</p><p class=\"text-mid mb-4\">Grafica cu suprafete mari de culoare uniforma (logo-uri, pictograme) beneficiaza cel mai mult: fisiere de 200–500 KB scad adesea sub 100 KB. Pentru fotografii de produse pe OLX.ro, eMAG.ro, Amazon sau magazine Shopify, aceasta inseamna pagini de categorie mai rapide si o experienta mobila mai buna.</p><p class=\"text-mid\">Toata procesarea are loc local in browser – ideal pentru agentii si companii care trebuie sa respecte GDPR. Imaginile de produse sau grafica clientilor nu parasesc niciodata dispozitivul dvs.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descoperă mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

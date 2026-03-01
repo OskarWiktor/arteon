@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de GIF para WebP na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de GIF para WebP pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. WebP proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP oferece compressão muito melhor que GIF. A modernização de GIF para WebP acelera percetivelmente os websites.</p><p class=\"text-mid mb-4\">GIF estáticos ficam 30–60% menores como WebP, com milhões de cores em vez de 256, melhorando visivelmente a qualidade a tamanho igual ou menor.</p><p class=\"text-mid\">Para otimizar sites antigos em Portugal e no Brasil, a mudança de GIF para WebP é um modo simples de melhorar os Core Web Vitals.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

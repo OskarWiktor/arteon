@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de SVG para TIFF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">O TIFF é o padrão da indústria para impressão profissional, arquivamento e pós-produção. Programas como Adobe Photoshop, Lightroom e GIMP utilizam TIFF para fluxos de trabalho de edição sem perdas. A conversão para TIFF preserva todos os dados da imagem, incluindo perfis de cor, camadas e metadados.</p><p class=\"text-mid\">Para fotografia profissional e produção gráfica, o TIFF garante qualidade sem perdas que atende aos padrões da indústria. O processamento local garante total conformidade com o RGPD.</p>"
+      "html": "<p class=\"text-mid mb-4\">As gráficas necessitam frequentemente de imagens TIFF em vez de vetores. SVG para TIFF cria ficheiros de alta resolução sem perda para impressão profissional.</p><p class=\"text-mid mb-4\">TIFF armazena em qualidade máxima com plena profundidade de cor e metadados. Para cartões de visita, flyers e posters, recomenda-se mínimo 300 DPI.</p><p class=\"text-mid\">As gráficas em Portugal e no Brasil aceitam TIFF como padrão. A conversão local protege maquetas e logótipos confidenciais.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

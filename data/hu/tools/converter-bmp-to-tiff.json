@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-TIFF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A TIFF az iparági szabvány a professzionális nyomtatáshoz, archiváláshoz és utómunkálatokhoz. Az Adobe Photoshop, Lightroom és GIMP programok TIFF formátumot használnak veszteségmentes szerkesztési munkafolyamatokhoz. A TIFF-re konvertálás megőrzi a teljes képadatot, beleértve a színprofilokat, rétegeket és metaadatokat.</p><p class=\"text-mid\">Professzionális fotózáshoz és nyomdai termeléshez a TIFF veszteségmentes minőséget biztosít az iparági szabványoknak megfelelően. A helyi feldolgozás teljes GDPR-megfelelőséget biztosít.</p>"
+      "html": "<p class=\"text-mid mb-4\">A BMP-TIFF hasznos professzionális metaadat-támogatáshoz – archiváláshoz, nyomtatás-előkészítéshez vagy professzionális szoftverben való feldolgozáshoz.</p><p class=\"text-mid mb-4\">A TIFF megőrzi a BMP teljes minőségét és hozzáad: EXIF metaadatok, CMYK színterek és rétegtámogatás. Hosszú távú archiváláshoz a TIFF egyértelműen jobb a BMP-nél.</p><p class=\"text-mid\">Archívumok, könyvtárak és magyar vállalatok, amelyek régi gyűjteményeket digitalizálnak, profitálnak a helyi konvertálásból felhőfüggőség nélkül.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

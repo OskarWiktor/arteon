@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod WebP na TIFF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">TIFF je průmyslový standard pro profesionální tisk, archivaci a postprodukci. Programy jako Adobe Photoshop, Lightroom a GIMP využívají TIFF pro bezeztrátové editační workflow. Konverze do TIFF zachovává veškerá obrazová data včetně barevných profilů, vrstev a metadat.</p><p class=\"text-mid\">Pro profesionální fotografii a tiskovou produkci TIFF zajišťuje bezeztrátovou kvalitu splňující průmyslové standardy. Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">Profesionální tiskové workflow často vyžadují TIFF. WebP na TIFF umožňuje připravit webově optimalizované obrázky pro tisk.</p><p class=\"text-mid mb-4\">TIFF ukládá bezeztrátově s plnou podporou metadat. Detaily ztracené kompresí WebP se neobnoví – pro nejlepší kvalitu vycházejte z originálu.</p><p class=\"text-mid\">Pro agentury a tiskárny v Česku nabízí lokální převod bezpečný způsob přípravy webových assetů pro tiskové projekty.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de GIF para AVIF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de GIF para AVIF pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. AVIF proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF supera o GIF em tudo: melhor compressão, milhões de cores, animação moderna. Para modernizar conteúdos web antigos, GIF para AVIF é o mais eficiente.</p><p class=\"text-mid mb-4\">Os AVIF a partir de GIF são drasticamente menores e visualmente melhores. Navegadores antigos ainda não suportam AVIF – um fallback via <code>&lt;picture&gt;</code> é recomendado.</p><p class=\"text-mid\">Para maximizar tempos de carregamento, a mudança de GIF para AVIF oferece o maior ganho individual de todas as mudanças de formato.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

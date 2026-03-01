@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af SVG til GIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Selvom GIF ikke er det mest effektive format for statiske billeder, er det stadig uundværligt for simple animationer, memes og grafik med begrænset farvepalet. Grænsen på 256 farver gør GIF mindre egnet til fotografier, men ideel til ikoner, logoer og animeret indhold delt på sociale medier og beskedtjenester.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. GIF tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">GIF er sommetider nødvendigt for ikoner i ældre systemer, e-mailskabeloner eller fora. SVG til GIF skaber kompatible og lette filer.</p><p class=\"text-mid mb-4\">GIF begrænser til 256 farver. For enfarvede logoer er det tilstrækkeligt; for komplekse illustrationer med gradienter ikke. Gennemsigtighed kun binær.</p><p class=\"text-mid\">For nyhedsbrevsskabeloner og ældre webplatforme, der kun accepterer GIF, er det en hurtig lokal løsning.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-naar-WebP-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van JPG naar WebP kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. WebP biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">JPEG is het standaardformaat voor digitale foto's, maar voor websites zijn de bestandsgroottes vaak te hoog. WebP comprimeert JPEG-afbeeldingen 25–35% extra zonder zichtbaar kwaliteitsverlies, waardoor laadtijden en Core Web Vitals direct verbeteren.</p><p class=\"text-mid mb-4\">Voor webshops op Shopify, WooCommerce of Lightspeed betekent de overstap van JPG naar WebP meetbaar snellere productpagina's. Google PageSpeed Insights beveelt WebP expliciet aan als next-gen formaat. Bij kwaliteitsniveau 80–85% is het verschil visueel niet waarneembaar.</p><p class=\"text-mid\">In Nederland en België, waar strikte privacyregels gelden, is lokale beeldverwerking in de browser bijzonder waardevol. Productfoto's en klantbeelden verlaten uw apparaat niet.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

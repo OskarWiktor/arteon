@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion WebP vers JPG en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de WebP en JPG peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Le WebP est optimal pour le web, mais services d'impression, Microsoft Office, logiciels anciens et certains réseaux sociaux exigent le JPG.</p><p class=\"text-mid mb-4\">WebP vers JPG assure la compatibilité maximale. À 85–90%, la qualité reste quasi identique. Pratique pour l'envoi d'images par e-mail à des destinataires ne pouvant pas ouvrir le WebP.</p><p class=\"text-mid\">Pour les agences devant livrer en formats universels, la conversion locale est idéale – rapide, sûre et conforme au RGPD.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

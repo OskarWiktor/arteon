@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-zu-PNG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von WebP in PNG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet PNG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP-Bilder mit Transparenz müssen manchmal in PNG konvertiert werden – etwa für Grafikprogramme, die WebP nicht unterstützen, oder für Druckvorlagen, bei denen verlustfreie Qualität erforderlich ist.</p><p class=\"text-mid mb-4\">Die Konvertierung von WebP zu PNG bewahrt Transparenz und Bildqualität vollständig. PNG-Dateien sind zwar größer, eignen sich aber besser für die Weiterbearbeitung in Photoshop, Illustrator oder InDesign sowie für Plattformen ohne WebP-Unterstützung.</p><p class=\"text-mid\">Grafikdesigner im DACH-Raum können WebP-Assets lokal in druckfähige PNG-Dateien umwandeln – ohne externe Cloud-Dienste und vollständig DSGVO-konform.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

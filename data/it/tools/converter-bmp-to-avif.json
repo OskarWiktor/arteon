@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da BMP a AVIF nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da BMP a AVIF può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. AVIF fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF offre la migliore compressione per BMP non compressi: riduzioni di oltre il 98%. Per modernizzare vecchi archivi, BMP a AVIF è il più efficiente.</p><p class=\"text-mid mb-4\">AVIF supporta HDR, ampi spazi colore e fino a 12 bit – la qualità originale è preservata al meglio. Chrome, Firefox e Safari 16+ lo supportano nativamente.</p><p class=\"text-mid\">La conversione locale permette la migrazione di interi archivi senza cloud – rapida, sicura e conforme alla protezione dei dati.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de TIFF a WebP en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir TIFF a WebP puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF a WebP ofrece la mayor reducción: archivos de 20–100 MB pasan a 200 KB – 2 MB. Para publicar fotos profesionales en la web, es lo más eficiente.</p><p class=\"text-mid mb-4\">A calidad 80–85%, WebP mantiene excelente calidad visual. Para galerías, portfolios y revistas online: calidad profesional a una fracción del tamaño original.</p><p class=\"text-mid\">Fotógrafos y agencias en España pueden convertir resultados de sesiones de alta resolución en formatos web-optimizados localmente – sin cloud, conforme al RGPD.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre mas herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

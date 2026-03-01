@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-naar-TIFF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">TIFF is de industriestandaard voor professioneel drukwerk, archivering en nabewerking. Programma's als Adobe Photoshop, Lightroom en GIMP gebruiken TIFF voor verliesvrije bewerkingsworkflows. Conversie naar TIFF behoudt alle beeldgegevens inclusief kleurprofielen, lagen en metadata.</p><p class=\"text-mid\">Voor professionele fotografie en drukproductie garandeert TIFF verliesvrije kwaliteit die voldoet aan de industrienormen. Lokale verwerking garandeert volledige AVG-conformiteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionele drukkerijen en beeldbanken eisen vaak TIFF in plaats van JPEG. De conversie behoudt de huidige beeldkwaliteit en slaat deze verliesvrij op voor verdere verwerking.</p><p class=\"text-mid mb-4\">Door JPEG-compressie reeds verloren details worden niet hersteld, maar TIFF voorkomt verdere verliezen bij nabewerkingen. TIFF ondersteunt CMYK-kleurruimten, lagen en uitgebreide metadata – ideaal voor professionele drukworkflows.</p><p class=\"text-mid\">Fotografen en bureaus in Nederland en België profiteren van lokale verwerking: klantfoto's en drukbestanden blijven op uw eigen apparaat.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

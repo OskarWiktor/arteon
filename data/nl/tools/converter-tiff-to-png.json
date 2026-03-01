@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-naar-PNG-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van TIFF naar PNG kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. PNG biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">Wanneer TIFF-bestanden nodig zijn voor verdere bewerking in grafische programma's of voor websites met transparantie-eisen, is PNG het geschikte doelformaat – verliesvrij en universeel compatibel.</p><p class=\"text-mid mb-4\">PNG behoudt de volledige beeldkwaliteit en transparantie van het TIFF-origineel. De bestanden zijn kleiner dan TIFF, maar groter dan JPEG of WebP. Voor verdere bewerking in Figma, Canva of Photoshop is PNG ideaal.</p><p class=\"text-mid\">Voor het voorbereiden van scanneruitvoer en archiefbeelden voor online gebruik biedt lokale conversie een veilige en snelle workflow.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

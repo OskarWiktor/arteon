@@ -240,6 +240,10 @@
     {
       "type": "toolsCarousel",
       "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

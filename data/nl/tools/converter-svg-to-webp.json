@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-naar-WebP-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van SVG naar WebP kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. WebP biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">Voor websites die SVG niet direct kunnen inbedden – CMS'en met beperkte SVG-ondersteuning – biedt WebP een compacte pixelweergave met minimale bestandsgrootte.</p><p class=\"text-mid mb-4\">WebP-bestanden uit SVG-bronnen zijn doorgaans zeer klein (5–30 KB) en laden razendsnel. Voor iconen, logo's en UI-elementen is dit vaak de pragmatischste oplossing wanneer SVG niet direct kan worden gebruikt.</p><p class=\"text-mid\">WordPress, Shopify, Lightspeed en veel andere CMS'en in Nederland ondersteunen WebP native – de conversie maakt het gebruik van vectorafbeeldingen ook in deze omgevingen mogelijk.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

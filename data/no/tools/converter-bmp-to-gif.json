@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-til-GIF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Selv om GIF ikke er det mest effektive formatet for statiske bilder, er det fortsatt uunnværlig for enkle animasjoner, memes og grafikk med begrenset fargepalett. Grensen på 256 farger gjør GIF mindre egnet for fotografier, men ideelt for ikoner, logoer og animert innhold delt på sosiale medier og meldingsapper.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. GIF tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP til GIF er nyttig for systemer som kun godtar GIF eller enkel grafikk med få farger hvor GIF er mer kompakt.</p><p class=\"text-mid mb-4\">GIF støtter maks 256 farger. Fotorealistiske bilder mister betydelig kvalitet. For bilder er JPG eller WebP bedre. GIF egner seg kun for enkel grafikk.</p><p class=\"text-mid\">For kompatibilitetskrav fra eldre systemer tilbyr lokal konvertering en rask og sikker løsning.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

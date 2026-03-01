@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-till-TIFF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">TIFF är branschstandarden för professionellt tryck, arkivering och efterbearbetning. Program som Adobe Photoshop, Lightroom och GIMP använder TIFF för förlustfria redigeringsarbetsflöden. Konvertering till TIFF bevarar all bilddata inklusive färgprofiler, lager och metadata.</p><p class=\"text-mid\">För professionell fotografi och tryckproduktion säkerställer TIFF förlustfri kvalitet enligt branschstandarder. Lokal behandling säkerställer full GDPR-efterlevnad.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP till TIFF är användbart för professionellt metadata-stöd – arkivering, tryckförberedelse eller bearbetning i professionell programvara.</p><p class=\"text-mid mb-4\">TIFF bevarar full kvalitet och lägger till: EXIF-metadata, CMYK-färgrymder och lagerstöd. För långtidsarkivering är TIFF klart överlägset BMP.</p><p class=\"text-mid\">Arkiv, bibliotek och svenska företag som digitaliserar äldre samlingar drar nytta av lokal konvertering utan molnberoende.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-til-AVIF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av SVG til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. AVIF gir utmerket komprimering med bevart visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF tilbyr den beste komprimering for rasterisert vektorgrafikk. For ytelseskritiske nettsider er SVG til AVIF det optimale valget.</p><p class=\"text-mid mb-4\">AVIF-filer fra SVG-kilder er ekstremt kompakte (3–15 KB). Hver kilobyte teller for Core Web Vitals: raskere lasting forbedrer LCP og Google-rangering.</p><p class=\"text-mid\">Norske webutviklere og SEO-spesialister bruker AVIF i økende grad – lokal konvertering forenkler overgangen.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

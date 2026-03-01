@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-till-WebP-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera TIFF till WebP kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. WebP ger utmärkt komprimering med bibehållen visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF till WebP uppnår den största minskningen: filer på 20–100 MB krymper ofta till 200 KB – 2 MB. För publicering av professionella foton på webben är detta mest effektivt.</p><p class=\"text-mid mb-4\">Vid kvalitet 80–85 % bevarar WebP utmärkt visuell kvalitet. För fotogallerier, portfolior och nättidningar: professionell kvalitet till en bråkdel av originalstorleken.</p><p class=\"text-mid\">Fotografer och byråer i Sverige kan konvertera högupplösta fotograferingar lokalt till webboptimerade format – utan moln, GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

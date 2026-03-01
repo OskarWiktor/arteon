@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af TIFF til AVIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af TIFF til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. AVIF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF tilbyder den mest effektive kompression for store TIFF-filer. Professionelle fotos og scans reduceres drastisk med minimalt kvalitetstab.</p><p class=\"text-mid mb-4\">For fotogallerier og portfoliohjemmesider, der søger de bedste indlæsningstider, er TIFF til AVIF det optimale workflow. Chrome, Firefox og Safari 16+ understøtter AVIF.</p><p class=\"text-mid\">Professionelle fotografer i Danmark drager fordel af lokal behandling: kundefotos i høj opløsning optimeres sikkert og GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

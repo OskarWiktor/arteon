@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-till-WebP-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera HEIC till WebP kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. WebP ger utmärkt komprimering med bibehållen visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">iPhone-foton i HEIC-format direkt till webbsidor? WebP är den ideala bryggan: det kombinerar HEICs effektiva komprimering med universell webbläsarkompatibilitet (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">Konvertering från HEIC till WebP är särskilt effektiv då båda formaten använder moderna komprimeringsalgoritmer. För bloggar, webbshoppar och portfolior är detta snabbaste vägen till webbanpassade iPhone-foton.</p><p class=\"text-mid\">Svenska bloggare och webbshopsägare kan konvertera iPhone-foton lokalt och GDPR-kompatibelt – utan molntjänster.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

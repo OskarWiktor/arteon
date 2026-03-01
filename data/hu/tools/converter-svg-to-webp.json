@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-WebP konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A SVG átalakítása WebP formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. WebP kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">SVG-t közvetlenül nem tudó weboldalakhoz – korlátozott SVG-támogatású CMS-ekhez – a WebP kompakt pixelreprezentációt kínál minimális méretben.</p><p class=\"text-mid mb-4\">SVG-forrásokból készült WebP-fájlok jellemzően nagyon könnyűek (5–30 KB) és azonnal betöltődnek. Ikonokhoz és logókhoz ez a legpraktikusabb megoldás, ha az SVG közvetlen használata nem lehetséges.</p><p class=\"text-mid\">WordPress, Shoprenter és sok más magyarországi CMS natívan támogatja a WebP-t – a konvertálás lehetővé teszi vektorgrafikák használatát ezekben a környezetekben is.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion TIFF vers AVIF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de TIFF en AVIF peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">L'AVIF offre la compression la plus efficace pour les grands fichiers TIFF. Photos et scans haute résolution sont réduits drastiquement avec un minimum de perte de qualité.</p><p class=\"text-mid mb-4\">Pour galeries et portfolios web recherchant les meilleurs temps de chargement, TIFF vers AVIF est le workflow optimal. Chrome, Firefox et Safari 16+ supportent l'AVIF ; fallback WebP pour les anciens navigateurs.</p><p class=\"text-mid\">Les photographes et agences photo en France bénéficient du traitement local : photos clients haute résolution optimisées de manière sûre et conforme au RGPD.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

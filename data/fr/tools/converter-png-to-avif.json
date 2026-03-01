@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion PNG vers AVIF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de PNG en AVIF peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">L'AVIF est le format le plus efficace de la génération actuelle et peut réduire les fichiers PNG jusqu'à 50%. Pour les projets web où chaque kilooctet compte, PNG vers AVIF est optimal.</p><p class=\"text-mid mb-4\">L'AVIF supporte la transparence, le HDR et jusqu'à 12 bits par canal. Chrome, Firefox et Safari 16+ le supportent nativement. Un fallback via <code>&lt;picture&gt;</code> avec PNG ou WebP couvre les anciens navigateurs.</p><p class=\"text-mid\">Les entreprises françaises optimisant leurs scores PageSpeed en bénéficient : l'AVIF améliore mesurément le LCP. Le traitement local garantit la conformité RGPD.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

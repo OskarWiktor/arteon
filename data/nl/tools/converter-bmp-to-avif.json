@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-naar-AVIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van BMP naar AVIF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. AVIF biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF biedt de best mogelijke compressie voor ongecomprimeerde BMP-bestanden: verkleiningen van meer dan 98% zijn realistisch. Voor het moderniseren van oudere beeldarchieven is BMP-naar-AVIF de meest efficiënte keuze.</p><p class=\"text-mid mb-4\">AVIF ondersteunt HDR, brede kleurruimten en een kleurdiepte tot 12 bit – de oorspronkelijke beeldkwaliteit wordt optimaal behouden. Chrome, Firefox en Safari 16+ ondersteunen AVIF native.</p><p class=\"text-mid\">Lokale conversie in de browser maakt de migratie van complete beeldarchieven mogelijk zonder clouddiensten – snel, veilig en privacyconform.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

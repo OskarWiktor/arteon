@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-till-GIF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Även om GIF inte är det mest effektiva formatet för statiska bilder, är det fortfarande oumbärligt för enkla animationer, memes och grafik med begränsad färgpalett. Gränsen på 256 färger gör GIF mindre lämpligt för fotografier, men idealiskt för ikoner, logotyper och animerat innehåll på sociala medier och meddelandetjänster.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. GIF erbjuder maximal kompatibilitet med alla plattformar.</p>"
+      "html": "<p class=\"text-mid mb-4\">GIF-formatet behövs ibland – äldre system, nyhetsbrevverktyg eller plattformar som enbart accepterar GIF.</p><p class=\"text-mid mb-4\">GIF stöder max 256 färger. Fotorealistiska bilder förlorar kvalitet. Konverteringen passar bäst för enkel grafik, ikoner eller logotyper.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren erbjuder ett snabbt och säkert alternativ till molnbaserade konverteringstjänster.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

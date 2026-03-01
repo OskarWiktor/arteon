@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de PNG a JPG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir PNG a JPG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">Los archivos PNG con transparencia suelen pesar varios megabytes. Cuando no se necesita transparencia – fotos de currículum, escaneos de documentos o publicaciones en redes sociales – la conversión a JPG reduce drásticamente el tamaño.</p><p class=\"text-mid mb-4\">Muchas plataformas como InfoJobs, LinkedIn o portales de empleo solo aceptan JPG. Los adjuntos de correo también se benefician: una captura PNG de 3 MB en JPG ocupa solo 200–400 KB. La calidad al 85% ofrece el mejor equilibrio entre tamaño y calidad visual.</p><p class=\"text-mid\">Para documentos de candidatura y archivos confidenciales, el procesamiento local en el navegador es esencial – tus archivos nunca abandonan tu dispositivo.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

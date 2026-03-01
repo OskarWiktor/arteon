@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-TIFF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">TIFF on alan standardi ammattimaiseen tulostukseen, arkistointiin ja jälkikäsittelyyn. Ohjelmat kuten Adobe Photoshop, Lightroom ja GIMP käyttävät TIFF-muotoa häviöttömiin muokkaustyönkulkuihin. TIFF-muotoon muuntaminen säilyttää kaikki kuvatiedot, mukaan lukien väriprofiilit, tasot ja metatiedot.</p><p class=\"text-mid\">Ammattivalokuvaukseen ja painotuotantoon TIFF takaa häviöttömän laadun alan standardien mukaisesti. Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-TIFF on hyödyllinen ammattimaista metatietojen tukea varten – arkistointiin, painon esivalmisteluun tai käsittelyyn ammattiohjelmistoissa.</p><p class=\"text-mid mb-4\">TIFF säilyttää BMP:n täyden laadun ja lisää: EXIF-metatiedot, CMYK-väriavaruudet ja tasojen tuen. Pitkäaikaisarkistointiin TIFF on selvästi BMP:tä parempi.</p><p class=\"text-mid\">Arkistot, kirjastot ja suomalaiset yritykset, jotka digitoivat vanhoja kokoelmia, hyötyvät paikallisesta muunnosta ilman pilviriippuvuutta.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

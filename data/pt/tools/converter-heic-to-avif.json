@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de HEIC para AVIF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de HEIC para AVIF pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. AVIF proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF oferece eficiência de compressão similar ao HEIC, mas como formato aberto não está ligado ao ecossistema Apple. HEIC para AVIF permite a compressão mais moderna com amplo suporte multiplataforma.</p><p class=\"text-mid mb-4\">Chrome, Firefox e Safari 16+ suportam AVIF nativamente. Para projetos web críticos em desempenho – galerias, portfólios, portais imobiliários – AVIF oferece o melhor equilíbrio entre tamanho e qualidade.</p><p class=\"text-mid\">A conversão local é relevante para fotógrafos e criativos: sessões de iPhone convertem-se diretamente no formato web mais eficiente – sem cloud.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

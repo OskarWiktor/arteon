@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion HEIC vers PNG en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de HEIC en PNG peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Pour réutiliser des photos iPhone sans perte – bases Photoshop, Figma ou projets d'impression – le PNG est idéal. La conversion préserve la pleine qualité de l'original HEIC.</p><p class=\"text-mid mb-4\">Le PNG supporte la transparence et le stockage sans perte. Les fichiers sont plus volumineux que HEIC/JPG. Pour la retouche, ce n'est pas un inconvénient – pour le web, une conversion en WebP est recommandée ensuite.</p><p class=\"text-mid\">Les agences créatives bénéficient du traitement local : les photos iPhone de clients restent confidentielles sur votre machine.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

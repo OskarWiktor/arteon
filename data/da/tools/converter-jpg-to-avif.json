@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af JPG til AVIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af JPG til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. AVIF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF opnår op til 50 % bedre kompression end JPEG ved sammenlignelig visuel kvalitet. For hjemmesider med mange fotos – ejendomsportaler, onlinemagasiner, rejsesider – reduceres indlæsningstiderne betydeligt.</p><p class=\"text-mid mb-4\">Platforme som Boliga.dk, Booking.com eller DBA.dk anvender i stigende grad AVIF for bedre mobiloplevelse. Chrome, Firefox og Safari 16+ understøtter AVIF native.</p><p class=\"text-mid\">Lokal konvertering i browseren beskytter dine billeder: ejendomsfotos, produktbilleder eller portrætter – intet uploades. Fuldt GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

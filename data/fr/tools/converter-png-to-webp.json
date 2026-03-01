@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion PNG vers WebP en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de PNG en WebP peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Les webdesigners et e-commerçants en France utilisent le PNG pour les logos, détourages de produits et éléments d'interface avec transparence. Le passage au WebP conserve intégralement la transparence tout en réduisant la taille de 25 à 35% – un gain direct pour les temps de chargement.</p><p class=\"text-mid mb-4\">Les graphiques avec de grandes zones unies (logos, icônes) bénéficient le plus : des fichiers de 200–500 Ko passent souvent sous 100 Ko. Pour les détourages sur Amazon.fr, Cdiscount ou les boutiques Shopify, cela signifie des pages catégories plus rapides.</p><p class=\"text-mid\">Le traitement s'effectue entièrement en local dans votre navigateur – idéal pour les agences soumises au RGPD. Les images clients ne quittent jamais votre appareil.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

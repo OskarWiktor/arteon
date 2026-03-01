@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-GIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">Bár a GIF nem a leghatékonyabb formátum statikus képekhez, továbbra is nélkülözhetetlen egyszerű animációkhoz, mémekhez és korlátozott színpalettájú grafikákhoz. A 256 színes korlát miatt a GIF kevésbé alkalmas fényképekhez, de ideális ikonokhoz, logókhoz és animált tartalmakhoz közösségi médiában és üzenetküldő alkalmazásokban.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. GIF maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">A GIF néha szükséges ikonokhoz régi rendszerekben, e-mail sablonokban vagy fórumokon. Az SVG-GIF kompatibilis és könnyű fájlokat hoz létre.</p><p class=\"text-mid mb-4\">A GIF 256 színre korlátoz. Egyszínű logókhoz elegendő; összetett illusztrációkhoz színátmenetekkel nem. Átlátszóság csak bináris.</p><p class=\"text-mid\">Hírlevélsablonokhoz és régi platformokhoz, amelyek csak GIF-et fogadnak el, ez gyors helyi megoldás.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

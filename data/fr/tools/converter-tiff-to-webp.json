@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion TIFF vers WebP en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de TIFF en WebP peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF vers WebP offre la plus grande réduction : des fichiers de 20–100 Mo passent souvent à 200 Ko – 2 Mo. Pour publier des photos professionnelles sur le web, c'est le plus efficace.</p><p class=\"text-mid mb-4\">À 80–85%, le WebP maintient une excellente qualité visuelle. Pour galeries, portfolios et magazines en ligne : qualité professionnelle à une fraction de la taille originale.</p><p class=\"text-mid\">Les photographes et agences en France peuvent convertir des shootings haute résolution en formats web-optimisés localement – sans cloud, conforme au RGPD.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

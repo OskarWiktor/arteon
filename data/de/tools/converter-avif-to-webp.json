@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-zu-WebP-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von AVIF in WebP kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet WebP hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP bietet breitere Browserunterstützung als AVIF (Safari 14+ vs. Safari 16+) bei guter Komprimierung. Wenn Ihre Zielgruppe ältere Browser nutzt, ist WebP die sicherere Wahl.</p><p class=\"text-mid mb-4\">Die Konvertierung von AVIF zu WebP ist besonders relevant für CMS und CDN, die AVIF noch nicht unterstützen. WebP wird von WordPress, Shopify, Cloudflare und allen modernen Browsern nativ unterstützt.</p><p class=\"text-mid\">Für Webprojekte im DACH-Raum, die maximale Browserabdeckung bei guter Komprimierung benötigen, ist WebP nach wie vor das zuverlässigste moderne Format.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

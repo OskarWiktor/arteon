@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af BMP til JPG i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af BMP til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. JPG tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-filer stammer ofte fra ældre Windows-applikationer eller scannere. Ukomprimerede og meget store – konvertering til JPG reducerer størrelsen med over 95 %.</p><p class=\"text-mid mb-4\">Et BMP-skærmbillede på 10 MB bliver som JPG typisk kun 200–400 KB. For e-mail, dokumentation og arkivering er det den enkleste måde at spare plads.</p><p class=\"text-mid\">For migrering af ældre billedarkiver og forberedelse af scanneroutput tilbyder lokal konvertering en hurtig og GDPR-kompatibel løsning.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

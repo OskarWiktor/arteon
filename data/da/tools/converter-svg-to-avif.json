@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af SVG til AVIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af SVG til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. AVIF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF tilbyder den bedste kompression for rasteriseret vektorgrafik. For ydeevnekritiske hjemmesider er SVG til AVIF det optimale valg.</p><p class=\"text-mid mb-4\">AVIF-filer fra SVG-kilder er ekstremt kompakte (3–15 KB). Hver kilobyte tæller for Core Web Vitals: hurtigere indlæsning forbedrer LCP og Google-rangering.</p><p class=\"text-mid\">Webudviklere og SEO-specialister i Danmark bruger i stigende grad AVIF – lokal konvertering forenkler overgangen.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

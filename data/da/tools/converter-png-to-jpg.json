@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af PNG til JPG i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af PNG til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. JPG tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">PNG-filer med gennemsigtighed fylder ofte flere megabytes. Når gennemsigtighed ikke er nødvendig – CV-fotos, dokumentscanninger eller opslag på sociale medier – reducerer konvertering til JPG filstørrelsen drastisk.</p><p class=\"text-mid mb-4\">Mange platforme som Jobindex, LinkedIn eller jobportaler accepterer kun JPG. E-mailvedhæftninger drager også fordel: et PNG-skærmbillede på 3 MB bliver som JPG kun 200–400 KB. Kvalitet på 85 % giver det bedste kompromis.</p><p class=\"text-mid\">For ansøgningsdokumenter og fortrolige filer er lokal behandling afgørende – dine filer forlader aldrig din enhed. Fuldt GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

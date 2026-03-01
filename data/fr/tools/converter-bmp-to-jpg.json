@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion BMP vers JPG en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de BMP en JPG peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Les fichiers BMP proviennent souvent d'anciennes applications Windows ou scanners. Non comprimés et très volumineux, la conversion en JPG réduit la taille de plus de 95%.</p><p class=\"text-mid mb-4\">Un BMP de 10 Mo devient typiquement 200–400 Ko en JPG. Pour l'e-mail, la documentation et l'archivage, c'est le moyen le plus simple d'économiser de l'espace et d'assurer la compatibilité.</p><p class=\"text-mid\">Pour la migration d'archives d'images et la préparation de sorties scanner, la conversion locale offre une solution rapide et conforme aux données.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

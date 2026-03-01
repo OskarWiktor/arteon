@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia GIF în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia GIF în WebP poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. WebP oferă o compresie excelentă păstrând calitatea vizuală.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP ofera compresie mult mai buna decat GIF. Modernizarea GIF-urilor vechi la WebP accelereaza perceptibil site-urile web.</p><p class=\"text-mid mb-4\">GIF-urile statice devin cu 30–60% mai mici ca WebP, cu milioane de culori in loc de 256, imbunatatind vizibil calitatea vizuala.</p><p class=\"text-mid\">Pentru optimizarea site-urilor vechi din Romania, trecerea de la GIF la WebP este un mod simplu de a imbunatati Core Web Vitals.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descopera mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

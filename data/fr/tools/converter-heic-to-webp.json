@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion HEIC vers WebP en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de HEIC en WebP peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Photos iPhone HEIC directement pour les sites web ? Le WebP est le pont idéal : compression efficace comme HEIC avec compatibilité universelle (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">HEIC et WebP utilisent des algorithmes modernes similaires – taille compacte, haute qualité. Pour blogs, boutiques et portfolios, c'est le moyen le plus rapide de publier des photos iPhone optimisées.</p><p class=\"text-mid\">Blogueurs et e-commerçants en France peuvent convertir leurs photos iPhone localement et en conformité RGPD – sans cloud ni outils externes.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

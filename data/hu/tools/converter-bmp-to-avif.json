@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-AVIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A BMP átalakítása AVIF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. AVIF kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az AVIF a lehető legjobb tömörítést kínálja tömörítetlen BMP-fájlokhoz: 98% feletti csökkenések reálisak.</p><p class=\"text-mid mb-4\">Az AVIF támogatja a HDR-t, széles színtereket és akár 12 bitet – az eredeti minőség a lehető legjobban megmarad. Chrome, Firefox és Safari 16+ natívan támogatja.</p><p class=\"text-mid\">A helyi böngészős konvertálás lehetővé teszi teljes archívumok migrálását felhő nélkül – gyorsan, biztonságosan és adatvédelmi szempontból megfelelően.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

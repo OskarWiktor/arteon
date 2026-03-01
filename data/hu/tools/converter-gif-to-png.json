@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-PNG konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A GIF átalakítása PNG formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. PNG maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">GIF-PNG konvertálás hasznos veszteségmentes tároláshoz vagy grafikai programokban való szerkesztéshez. A PNG 32 bites színeket és fokozatos alfa-átlátszóságot támogat.</p><p class=\"text-mid mb-4\">Animált GIF-ekből csak az első kép konvertálódik. A minőség veszteségmentesen megmarad. A PNG ideális köztes formátum Photoshophoz, Figmához vagy Canvához.</p><p class=\"text-mid\">Régi webgrafikák frissítéséhez a helyi konvertálás gyors és biztonságos megoldás külső szolgáltatások nélkül.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

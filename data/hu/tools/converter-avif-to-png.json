@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-PNG konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A AVIF átalakítása PNG formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. PNG maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az átlátszó AVIF-képeket néha PNG-re kell konvertálni – grafikai programokhoz vagy AVIF-támogatás nélküli platformokhoz.</p><p class=\"text-mid mb-4\">A PNG veszteségmentesen megőrzi az átlátszóságot és minőséget. A fájlok nagyobbak az AVIF-nél, de alkalmasak Photoshophoz, Figmához, Canvához és nyomtatáshoz.</p><p class=\"text-mid\">Magyar grafikusok helyi konvertálást használnak AVIF-assetek biztonságos és GDPR-kompatibilis előkészítéséhez különböző kimeneti csatornákhoz.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion BMP vers AVIF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de BMP en AVIF peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">L'AVIF offre la meilleure compression pour les BMP non comprimés : réductions de plus de 98%. Pour moderniser d'anciennes archives, BMP vers AVIF est le plus efficace.</p><p class=\"text-mid mb-4\">L'AVIF supporte HDR, espaces colorimétriques larges et jusqu'à 12 bits – la qualité originale est préservée au mieux. Chrome, Firefox et Safari 16+ le supportent nativement.</p><p class=\"text-mid\">La conversion locale permet la migration d'archives entières sans cloud – rapide, sûre et conforme aux données.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

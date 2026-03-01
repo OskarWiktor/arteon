@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-zu-GIF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Obwohl GIF nicht das effizienteste Format für statische Bilder ist, bleibt es unverzichtbar für einfache Animationen, Memes und Grafiken mit begrenzter Farbpalette. Das Limit von 256 Farben macht GIF weniger geeignet für Fotos, aber ideal für Icons, Logos und animierte Inhalte in sozialen Medien und Messenger-Diensten.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet GIF maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Manchmal wird das GIF-Format benötigt – für ältere Systeme, Newsletter-Tools oder Plattformen, die ausschließlich GIF akzeptieren. Die Konvertierung von WebP zu GIF ist in diesen Fällen die schnellste Lösung.</p><p class=\"text-mid mb-4\">Beachten Sie: GIF unterstützt maximal 256 Farben. Fotorealistische WebP-Bilder verlieren bei der Konvertierung sichtbar an Qualität. Die Konvertierung eignet sich am besten für einfache Grafiken, Icons oder Logos.</p><p class=\"text-mid\">Die lokale Verarbeitung im Browser bietet eine schnelle, sichere Alternative zu Cloud-basierten Konvertierungsdiensten.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-til-PNG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av JPG til PNG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. PNG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">Noen ganger må et JPEG-bilde konverteres til et format som støtter gjennomsiktighet eller tapsfri lagring – f.eks. for redigering i Photoshop, Figma eller Canva.</p><p class=\"text-mid mb-4\">Konvertering fra JPG til PNG gjenoppretter ikke detaljer tapt ved JPEG-komprimering, men forhindrer ytterligere tap ved fremtidige redigeringer. PNG er ideelt når bildet brukes som base for collager eller trykklayouter.</p><p class=\"text-mid\">For grafiske designere og byråer i Norge er lokal behandling ideelt: kundemateriale forblir på din egen datamaskin.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion WebP vers AVIF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de WebP en AVIF peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">L'AVIF offre une compression encore meilleure que le WebP – l'étape logique suivante pour les sites optimisant leurs temps de chargement.</p><p class=\"text-mid mb-4\">À qualité comparable, les fichiers AVIF sont 20–30% plus petits que WebP. Pour les sites avec des centaines d'images, l'économie est considérable. Un fallback WebP via <code>&lt;picture&gt;</code> couvre les anciens navigateurs.</p><p class=\"text-mid\">Les e-commerçants français optimisant les Core Web Vitals bénéficient particulièrement de l'AVIF. La conversion locale évite l'envoi vers le cloud.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

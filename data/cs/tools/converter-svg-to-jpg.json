@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod SVG na JPG v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod SVG na JPG může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. JPG nabízí maximální kompatibilitu se všemi platformami.</p>"
+      "html": "<p class=\"text-mid mb-4\">SVG vektory nelze použít všude: sociální sítě, tržiště a mnoho CMS přijímá pouze rastrové formáty. Převod na JPG vytváří univerzálně kompatibilní soubory.</p><p class=\"text-mid mb-4\">Rasterizace převede vektor na pixelový obraz s pevným rozlišením. Průhledné oblasti se vyplní barvou pozadí (standardně bílou). Pro web se doporučuje šířka 1200–2000 px.</p><p class=\"text-mid\">Pro příspěvky na sociálních sítích a inzeráty na Bazos.cz, Heureka.cz nebo Amazon.de je převod SVG na JPG běžným požadavkem.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Objevte další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

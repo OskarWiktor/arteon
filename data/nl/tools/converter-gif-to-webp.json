@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-naar-WebP-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van GIF naar WebP kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. WebP biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP biedt aanzienlijk betere compressie dan GIF. Het moderniseren van oudere GIF-afbeeldingen naar WebP versnelt websites merkbaar.</p><p class=\"text-mid mb-4\">Statische GIF-bestanden worden als WebP doorgaans 30–60% kleiner. WebP ondersteunt miljoenen kleuren in plaats van 256, wat de visuele kwaliteit bij gelijke of kleinere bestandsgrootte duidelijk verbetert.</p><p class=\"text-mid\">Voor het optimaliseren van oudere websites en blogs in Nederland is de overstap van GIF naar WebP een eenvoudige manier om Core Web Vitals te verbeteren.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

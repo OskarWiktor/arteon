@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-PNG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. BMP-muunnos PNG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. PNG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-PNG pienentää kokoa häviöttömällä pakkauksella – täysi laatu säilyy. Ihanteellista grafiikoille terävillä reunoilla, tekstillä tai kuvakaappauksille.</p><p class=\"text-mid mb-4\">Toisin kuin JPG, PNG säilyttää tarkan pikselilaadun ilman artefakteja. Teknisiin dokumentaatioihin ja tekstin sisältäviin kuvakaappauksiin PNG on parempi valinta.</p><p class=\"text-mid\">Paikallinen muunnos sopii luottamuksellisille asiakirjoille ja sisäisille kuvakaappauksille – mitään ei lähetetä ulkoiselle palvelimelle.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

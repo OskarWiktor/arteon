@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-till-PNG-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera JPG till PNG kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. PNG erbjuder maximal kompatibilitet med alla plattformar.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ibland måste en JPEG-bild konverteras till ett format med transparensstöd eller förlustfri lagring – t.ex. för redigering i Photoshop, Figma eller Canva.</p><p class=\"text-mid mb-4\">Konvertering från JPG till PNG återställer inte detaljer förlorade vid JPEG-komprimering, men förhindrar ytterligare förluster vid framtida redigeringar. PNG är idealiskt när bilden används som bas för collage eller trycklayouter.</p><p class=\"text-mid\">För grafiska formgivare och byråer i Sverige är lokal bearbetning idealiskt: kundmaterial förblir på din egen dator.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

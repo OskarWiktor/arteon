@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-zu-JPG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von BMP in JPG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet JPG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-Dateien stammen häufig aus älteren Windows-Anwendungen, Scannern oder Screenshot-Tools. Sie sind unkomprimiert und dadurch extrem groß – die Konvertierung zu JPG reduziert die Dateigröße um über 95%.</p><p class=\"text-mid mb-4\">Ein 10 MB BMP-Screenshot wird als JPG typischerweise nur 200–400 KB groß. Für E-Mail-Versand, Dokumentation und Archivierung ist die Konvertierung zu JPG der einfachste Weg, Speicherplatz zu sparen und die Kompatibilität sicherzustellen.</p><p class=\"text-mid\">Für die Migration älterer Bildarchive und die Aufbereitung von Scanner-Ausgaben bietet die lokale Konvertierung eine schnelle und datenschutzkonforme Lösung.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

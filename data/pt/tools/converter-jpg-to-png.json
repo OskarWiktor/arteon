@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de JPG para PNG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de JPG para PNG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. PNG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">Por vezes um JPEG precisa de ser convertido para um formato com suporte de transparência ou armazenamento sem perda – por exemplo para edição em Photoshop, Figma ou Canva.</p><p class=\"text-mid mb-4\">A conversão de JPG para PNG não restaura detalhes perdidos pela compressão JPEG, mas impede perdas adicionais em edições futuras. PNG é ideal quando a imagem serve como base para colagens ou layouts de impressão.</p><p class=\"text-mid\">Para designers e agências em Portugal, o processamento local é ideal: o material de clientes permanece no próprio computador sem que um serviço externo aceda.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

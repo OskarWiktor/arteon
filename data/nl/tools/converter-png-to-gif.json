@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-naar-GIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Hoewel GIF niet het meest efficiënte formaat is voor statische afbeeldingen, blijft het onmisbaar voor eenvoudige animaties, memes en afbeeldingen met een beperkt kleurenpalet. De limiet van 256 kleuren maakt GIF minder geschikt voor foto's, maar ideaal voor iconen, logo's en geanimeerde content op sociale media en berichtenapps.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. GIF biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">Eenvoudige afbeeldingen zoals iconen, logo's of diagrammen met een beperkt kleurenpalet worden als GIF compacter opgeslagen dan als PNG. De conversie is nuttig wanneer het doelformaat GIF voorgeschreven is.</p><p class=\"text-mid mb-4\">GIF ondersteunt maximaal 256 kleuren. Fotorealistische PNG-afbeeldingen verliezen zichtbaar aan kwaliteit. Transparantie wordt alleen binair ondersteund (zichtbaar/onzichtbaar), niet als geleidelijk alfakanaal zoals bij PNG.</p><p class=\"text-mid\">Voor presentaties, nieuwsbriefgrafiek of systemen die uitsluitend GIF accepteren, is deze conversie een snelle oplossing – volledig lokaal en zonder bestandsupload.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

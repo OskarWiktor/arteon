@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-till-TIFF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">TIFF är branschstandarden för professionellt tryck, arkivering och efterbearbetning. Program som Adobe Photoshop, Lightroom och GIMP använder TIFF för förlustfria redigeringsarbetsflöden. Konvertering till TIFF bevarar all bilddata inklusive färgprofiler, lager och metadata.</p><p class=\"text-mid\">För professionell fotografi och tryckproduktion säkerställer TIFF förlustfri kvalitet enligt branschstandarder. Lokal behandling säkerställer full GDPR-efterlevnad.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionella fotografer som arbetar med iPhones behöver ofta TIFF för efterbearbetning i Lightroom, Capture One eller Photoshop.</p><p class=\"text-mid mb-4\">TIFF stöder 16-bitars färgdjup, lager och utökad EXIF/IPTC-metadata. För tryck, arkivering och professionell retusch är TIFF det föredragna formatet.</p><p class=\"text-mid\">I Sverige, där tryckerier och bildbyråer kräver TIFF som standard, erbjuder lokal konvertering ett säkert arbetsflöde för konfidentiella fotograferingar.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

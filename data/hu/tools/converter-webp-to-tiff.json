@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-TIFF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A TIFF az iparági szabvány a professzionális nyomtatáshoz, archiváláshoz és utómunkálatokhoz. Az Adobe Photoshop, Lightroom és GIMP programok TIFF formátumot használnak veszteségmentes szerkesztési munkafolyamatokhoz. A TIFF-re konvertálás megőrzi a teljes képadatot, beleértve a színprofilokat, rétegeket és metaadatokat.</p><p class=\"text-mid\">Professzionális fotózáshoz és nyomdai termeléshez a TIFF veszteségmentes minőséget biztosít az iparági szabványoknak megfelelően. A helyi feldolgozás teljes GDPR-megfelelőséget biztosít.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professzionális nyomtatási munkafolyamatok gyakran TIFF-et követelnek. A WebP-TIFF lehetővé teszi web-optimalizált képek nyomtatásra való előkészítését.</p><p class=\"text-mid mb-4\">A TIFF veszteségmentesen tárol teljes metaadat-támogatással. A WebP-tömörítéssel elveszett részletek nem állíthatók helyre – a legjobb minőséghez az eredeti képből érdemes kiindulni.</p><p class=\"text-mid\">Magyar ügynökségek és nyomdák számára a helyi konvertálás biztonságos módot kínál web-assetek nyomtatási projektekre való előkészítéséhez.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

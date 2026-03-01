@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de BMP para PNG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de BMP para PNG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. PNG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP para PNG reduz o tamanho por compressão sem perda – a qualidade completa é preservada. Ideal para gráficos com bordos nítidos, texto ou capturas de ecrã.</p><p class=\"text-mid mb-4\">Ao contrário do JPG, PNG preserva a qualidade pixel exata sem artefactos. Para documentações técnicas e capturas com texto, PNG é a melhor escolha.</p><p class=\"text-mid\">A conversão local é adequada para documentos confidenciais e capturas internas – nada é enviado para um servidor externo.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

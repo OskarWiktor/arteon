@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-zu-WebP-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von BMP in WebP kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet WebP hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-Dateien sind für moderne Webnutzung völlig ungeeignet – unkomprimiert und riesig. WebP reduziert die Dateigröße um bis zu 97% bei guter visueller Qualität und macht ältere Bilder weboptimiert nutzbar.</p><p class=\"text-mid mb-4\">Die Konvertierung modernisiert Altbestände aus älteren Windows-Systemen für aktuelle Webseiten, CMS und Online-Shops. WebP wird von allen modernen Browsern unterstützt und verbessert Ladezeiten direkt.</p><p class=\"text-mid\">Für Unternehmen im DACH-Raum, die ältere Bildarchive für ihre Webpräsenz aufbereiten möchten, ist die lokale Konvertierung effizient und DSGVO-konform.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

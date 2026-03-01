@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-zu-TIFF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">TIFF ist der Branchenstandard für professionellen Druck, Archivierung und Nachbearbeitung. Programme wie Adobe Photoshop, Lightroom und GIMP nutzen TIFF für verlustfreie Bearbeitungsworkflows. Die Konvertierung in TIFF bewahrt sämtliche Bilddaten einschließlich Farbprofile, Ebenen und Metadaten.</p><p class=\"text-mid\">Für professionelle Fotografie und Druckproduktion gewährleistet TIFF verlustfreie Qualität nach Industriestandard. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-Dateien in TIFF umzuwandeln ist sinnvoll, wenn eine professionelle Metadaten-Unterstützung benötigt wird – etwa für Archivierung, Druckvorstufe oder die Weiterverarbeitung in professionellen Bildbearbeitungsprogrammen.</p><p class=\"text-mid mb-4\">TIFF bewahrt die volle Bildqualität des BMP-Originals und ergänzt professionelle Funktionen: EXIF-Metadaten, CMYK-Farbräume und Ebenenunterstützung. Für Langzeitarchivierung ist TIFF dem BMP-Format deutlich überlegen.</p><p class=\"text-mid\">Archive, Bibliotheken und Unternehmen im DACH-Raum, die Altbestände digitalisieren, profitieren von der lokalen Konvertierung ohne Cloud-Abhängigkeit.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

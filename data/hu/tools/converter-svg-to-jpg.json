@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-JPG konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A SVG átalakítása JPG formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. JPG maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az SVG-vektorgrafikák nem használhatók mindenhol: közösségi média, piacterek és sok CMS csak raszteres formátumokat fogad el. A JPG-re konvertálás univerzálisan kompatibilis fájlokat hoz létre.</p><p class=\"text-mid mb-4\">A raszterizálás fix felbontású pixelképpé alakítja a vektort. Az átlátszó területek háttérszínnel töltődnek ki (alapértelmezetten fehér). Webes használathoz 1200–2000 px szélesség ajánlott.</p><p class=\"text-mid\">Közösségimédia-posztokhoz és hirdetésekhez a Jófogás.hu-n, Vatera.hu-n vagy Amazonnál az SVG-JPG konvertálás gyakori követelmény.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de AVIF a WebP en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir AVIF a WebP puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP ofrece mayor soporte de navegadores que AVIF (Safari 14+ vs 16+) con buena compresión. Si tu audiencia usa navegadores antiguos, WebP es más seguro.</p><p class=\"text-mid mb-4\">AVIF a WebP es relevante para CMS y CDN sin soporte AVIF. WebP es soportado nativamente por WordPress, Shopify, Cloudflare y todos los navegadores modernos.</p><p class=\"text-mid\">Para proyectos web en España que necesitan máxima cobertura de navegadores, WebP sigue siendo el formato moderno más fiable.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre mas herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

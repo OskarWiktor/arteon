@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-naar-TIFF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">TIFF is de industriestandaard voor professioneel drukwerk, archivering en nabewerking. Programma's als Adobe Photoshop, Lightroom en GIMP gebruiken TIFF voor verliesvrije bewerkingsworkflows. Conversie naar TIFF behoudt alle beeldgegevens inclusief kleurprofielen, lagen en metadata.</p><p class=\"text-mid\">Voor professionele fotografie en drukproductie garandeert TIFF verliesvrije kwaliteit die voldoet aan de industrienormen. Lokale verwerking garandeert volledige AVG-conformiteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">Drukkerijen hebben voor de productie vaak pixelafbeeldingen in TIFF nodig in plaats van vectorbestanden. SVG naar TIFF produceert hoogwaardige, verliesvrije rasterbestanden voor professioneel drukwerk.</p><p class=\"text-mid mb-4\">TIFF slaat de gerasteriseerde grafiek op in de hoogste kwaliteit met volledige kleurdiepte en metadata-ondersteuning. Voor visitekaartjes, flyers en posters is een hoge uitvoerresolutie (300 DPI of meer) aanbevolen.</p><p class=\"text-mid\">Drukkerijen in Nederland en België accepteren TIFF als standaard pixelformaat. Lokale conversie beschermt vertrouwelijke ontwerpen en merklogo's.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

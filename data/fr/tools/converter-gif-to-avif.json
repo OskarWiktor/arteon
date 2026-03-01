@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion GIF vers AVIF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de GIF en AVIF peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">L'AVIF surpasse le GIF : meilleure compression, millions de couleurs, animation moderne. Pour moderniser d'anciens contenus web, GIF vers AVIF est le plus efficace.</p><p class=\"text-mid mb-4\">Les AVIF issus de GIF sont drastiquement plus petits et visuellement meilleurs. Les anciens navigateurs ne supportent pas encore l'AVIF – un fallback via <code>&lt;picture&gt;</code> est recommandé.</p><p class=\"text-mid\">Pour maximiser les temps de chargement, le passage GIF vers AVIF offre le plus grand gain individuel de tous les changements de format.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

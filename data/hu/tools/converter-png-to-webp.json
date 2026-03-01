@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-WebP konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A PNG átalakítása WebP formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. WebP kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyar webdesignerek és webáruház-tulajdonosok PNG-t használnak logókhoz, termékfotó-kivágásokhoz és átlátszóságot igénylő felületi elemekhez. WebP-re váltáskor az átlátszóság teljesen megmarad, miközben a fájlméret 25–35%-kal csökken – közvetlen előny a betöltési időkben és a Core Web Vitals mutatókban.</p><p class=\"text-mid mb-4\">Nagy egyszínű felületeket tartalmazó grafikák (logók, ikonok) profitálnak legjobban: 200–500 KB-os fájlok gyakran 100 KB alá csökkennek. Termékfotókhoz a Vatera.hu-n, Jófogás.hu-n, eMAG.hu-n vagy Shopify webáruházakban ez gyorsabb kategóriaoldalakat jelent.</p><p class=\"text-mid\">A teljes feldolgozás helyben, a böngészőben történik – ideális ügynökségek és vállalatok számára, amelyeknek meg kell felelniük a GDPR-nak. A termékképek vagy ügyfélgrafikák soha nem hagyják el az eszközét.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

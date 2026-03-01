@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion WebP vers PNG en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de WebP en PNG peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Les images WebP avec transparence doivent parfois être converties en PNG – pour les logiciels graphiques sans support WebP ou les fichiers d'impression nécessitant une qualité sans perte.</p><p class=\"text-mid mb-4\">La conversion préserve intégralement transparence et qualité. Les PNG sont plus volumineux mais mieux adaptés à Photoshop, Illustrator, InDesign et aux plateformes sans support WebP.</p><p class=\"text-mid\">Les graphistes en France peuvent convertir localement des assets WebP en PNG prêts pour l'impression – sans cloud et en conformité RGPD.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

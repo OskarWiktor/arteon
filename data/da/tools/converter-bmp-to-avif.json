@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af BMP til AVIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af BMP til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. AVIF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF tilbyder den bedst mulige kompression for ukomprimerede BMP-filer: reduktioner på over 98 % er realistiske.</p><p class=\"text-mid mb-4\">AVIF understøtter HDR, brede farverum og farvedybde op til 12 bit – den originale kvalitet bevares optimalt. Chrome, Firefox og Safari 16+ understøtter AVIF native.</p><p class=\"text-mid\">Lokal konvertering i browseren muliggør migrering af komplette billedarkiver uden cloudtjenester – hurtigt, sikkert og GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

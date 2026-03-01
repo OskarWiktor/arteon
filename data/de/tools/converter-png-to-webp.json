@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-zu-WebP-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von PNG in WebP kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet WebP hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Webdesigner und Shopbetreiber im DACH-Raum setzen PNG für Logos, Produktfreisteller und UI-Elemente mit Transparenz ein. Beim Wechsel zu WebP bleibt die Transparenz vollständig erhalten, während die Dateigröße um 25–35% sinkt – ein direkter Gewinn für Ladezeiten und Core Web Vitals.</p><p class=\"text-mid mb-4\">Besonders bei Grafiken mit großen einfarbigen Flächen (Logos, Icons) ist die Ersparnis enorm: Dateien von 200–500 KB schrumpfen oft auf unter 100 KB. Für Produktfreisteller auf Amazon.de, Otto.de oder Shopify-Shops bedeutet das schnellere Kategorieseiten und eine bessere Nutzererfahrung auf Mobilgeräten.</p><p class=\"text-mid\">Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser – ideal für Agenturen und Unternehmen, die DSGVO-konform arbeiten müssen. Sensible Produktbilder oder Kundengrafiken verlassen niemals Ihr Gerät.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

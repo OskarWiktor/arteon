@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-TIFF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">TIFF on alan standardi ammattimaiseen tulostukseen, arkistointiin ja jälkikäsittelyyn. Ohjelmat kuten Adobe Photoshop, Lightroom ja GIMP käyttävät TIFF-muotoa häviöttömiin muokkaustyönkulkuihin. TIFF-muotoon muuntaminen säilyttää kaikki kuvatiedot, mukaan lukien väriprofiilit, tasot ja metatiedot.</p><p class=\"text-mid\">Ammattivalokuvaukseen ja painotuotantoon TIFF takaa häviöttömän laadun alan standardien mukaisesti. Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ammattivalokuvaajat, jotka työskentelevät iPhoneilla, tarvitsevat usein TIFF:iä jälkikäsittelyyn Lightroomissa, Capture Onessa tai Photoshopissa.</p><p class=\"text-mid mb-4\">TIFF tukee 16-bittistä värisyvyyttä, tasoja ja laajennettuja EXIF/IPTC-metatietoja. Painoon, arkistointiin ja ammattimaiseen retusointiin TIFF on suositeltu muoto. Tiedostot kasvavat kuitenkin huomattavasti.</p><p class=\"text-mid\">Suomessa, missä painotalot ja kuvatoimistot vaativat TIFF:iä standardina, paikallinen muunnos tarjoaa turvallisen työnkulun luottamuksellisille kuvauksille.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

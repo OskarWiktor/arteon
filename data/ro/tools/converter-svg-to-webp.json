@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia SVG în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia SVG în WebP poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. WebP oferă o compresie excelentă păstrând calitatea vizuală.</p>"
+      "html": "<p class=\"text-mid mb-4\">Pentru site-uri care nu pot integra SVG direct – CMS-uri cu suport SVG limitat – WebP ofera o reprezentare pixel compacta cu dimensiune minima.</p><p class=\"text-mid mb-4\">Fisierele WebP din surse SVG sunt de obicei foarte usoare (5–30 KB) si se incarca instantaneu. Pentru pictograme si logo-uri, este solutia cea mai pragmatica.</p><p class=\"text-mid\">WordPress, PrestaShop si multe CMS-uri din Romania suporta WebP nativ – conversia permite utilizarea graficii vectoriale si in aceste medii.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descopera mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

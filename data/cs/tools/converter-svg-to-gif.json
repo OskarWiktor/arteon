@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod SVG na GIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Ačkoli GIF není nejefektivnější formát pro statické obrázky, zůstává nezbytný pro jednoduché animace, memy a grafiku s omezenou paletou barev. Limit 256 barev dělá GIF méně vhodným pro fotografie, ale ideálním pro ikony, loga a animovaný obsah sdílený na sociálních sítích a v komunikátorech.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. GIF nabízí maximální kompatibilitu se všemi platformami.</p>"
+      "html": "<p class=\"text-mid mb-4\">GIF je občas potřeba pro ikony ve starších systémech, e-mailových šablonách nebo fórech. SVG na GIF vytváří kompatibilní a lehké soubory.</p><p class=\"text-mid mb-4\">GIF omezuje paletu na 256 barev. Pro jednobarevná loga stačí; pro složité ilustrace s přechody ne. Průhlednost pouze binární.</p><p class=\"text-mid\">Pro šablony newsletterů a starší webové platformy přijímající pouze GIF je to rychlé lokální řešení.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

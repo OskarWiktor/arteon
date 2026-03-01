@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af HEIC til WebP i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af HEIC til WebP kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. WebP giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">iPhone-fotos i HEIC-format direkte til hjemmesider? WebP er den ideelle bro: det kombinerer HEIC's effektive kompression med universel browserkompatibilitet (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">Konvertering fra HEIC til WebP er særlig effektiv, da begge formater bruger moderne kompressionsalgoritmer. For blogs, webshops og portfolios er det den hurtigste vej til weboptimerede iPhone-fotos.</p><p class=\"text-mid\">Bloggere og webshopejere i Danmark kan konvertere iPhone-fotos lokalt og GDPR-kompatibelt – uden cloudtjenester.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis vaerktojer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

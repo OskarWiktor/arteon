@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia SVG în TIFF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">TIFF este standardul industrial pentru tipărire profesională, arhivare și post-producție. Programe precum Adobe Photoshop, Lightroom și GIMP utilizează TIFF pentru fluxuri de lucru de editare fără pierderi. Conversia în TIFF păstrează toate datele imaginii, inclusiv profiluri de culoare, straturi și metadate.</p><p class=\"text-mid\">Pentru fotografia profesională și producția tipografică, TIFF asigură o calitate fără pierderi conformă standardelor industriale. Procesarea locală asigură conformitatea deplină cu GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">Tipografiile au adesea nevoie de imagini TIFF in loc de vectori. SVG la TIFF creeaza fisiere de inalta rezolutie fara pierderi pentru tipar profesional.</p><p class=\"text-mid mb-4\">TIFF stocheaza in calitate maxima cu adancime completa de culoare si metadate. Pentru carti de vizita, flyere si postere, se recomanda minim 300 DPI.</p><p class=\"text-mid\">Tipografiile din Romania accepta TIFF ca standard. Conversia locala protejeaza machetele si logo-urile confidentiale.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

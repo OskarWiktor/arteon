@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de WebP a GIF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Aunque GIF no es el formato más eficiente para imágenes estáticas, sigue siendo esencial para animaciones simples, memes y gráficos con paleta de colores limitada. El límite de 256 colores hace que GIF sea menos adecuado para fotografías, pero ideal para iconos, logotipos y contenido animado compartido en redes sociales y aplicaciones de mensajería.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">El formato GIF es necesario a veces – sistemas antiguos, herramientas de newsletter o plataformas que solo aceptan GIF. WebP a GIF es la solución más rápida.</p><p class=\"text-mid mb-4\">El GIF solo soporta 256 colores. Las imágenes fotorrealistas pierden calidad. La conversión es más adecuada para gráficos simples, iconos o logos.</p><p class=\"text-mid\">El procesamiento local ofrece una alternativa rápida y segura a los servicios de conversión en línea.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

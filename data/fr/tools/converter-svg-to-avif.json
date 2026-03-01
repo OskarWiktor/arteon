@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion SVG vers AVIF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de SVG en AVIF peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">L'AVIF offre la meilleure compression pour les vecteurs rastérisés. Pour les sites critiques en performance, SVG vers AVIF est le choix optimal quand le SVG direct est impossible.</p><p class=\"text-mid mb-4\">Les AVIF issus de SVG sont extrêmement compacts (3–15 Ko). Chaque kilooctet compte pour les Core Web Vitals : temps de chargement plus rapides améliorent le LCP et le classement Google.</p><p class=\"text-mid\">Les développeurs web et spécialistes SEO en France utilisent de plus en plus l'AVIF – la conversion locale simplifie la transition.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

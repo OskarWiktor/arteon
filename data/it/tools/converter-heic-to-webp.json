@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da HEIC a WebP nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da HEIC a WebP può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. WebP fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
+      "html": "<p class=\"text-mid mb-4\">Usare le foto iPhone HEIC direttamente sui siti web? WebP è il ponte ideale: combina la compressione efficiente di HEIC con la compatibilità universale dei browser (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">La conversione da HEIC a WebP è particolarmente efficiente, poiché entrambi i formati usano algoritmi di compressione moderni. La dimensione resta compatta, la qualità alta. Per blog, negozi online e portfolio, è il modo più rapido per pubblicare foto iPhone ottimizzate.</p><p class=\"text-mid\">Blogger e e-commerce in Italia possono convertire le foto iPhone localmente e in conformità al GDPR – senza servizi cloud né strumenti esterni.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

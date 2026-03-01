@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-zu-PNG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von TIFF in PNG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet PNG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Wenn TIFF-Dateien für die Weiterbearbeitung in Grafikprogrammen oder für Webseiten mit Transparenz-Anforderungen benötigt werden, ist PNG das passende Zielformat – verlustfrei und universell kompatibel.</p><p class=\"text-mid mb-4\">PNG bewahrt die volle Bildqualität und Transparenz des TIFF-Originals. Die Dateien sind deutlich kleiner als TIFF, aber größer als JPEG oder WebP. Für die Weiterbearbeitung in Figma, Canva oder Photoshop ist PNG ideal.</p><p class=\"text-mid\">Für die Aufbereitung von Scannerausgaben und Archivbildern zur Online-Nutzung bietet die lokale Konvertierung einen sicheren und schnellen Workflow.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

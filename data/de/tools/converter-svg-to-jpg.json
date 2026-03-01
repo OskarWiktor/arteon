@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-zu-JPG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von SVG in JPG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet JPG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">SVG-Vektorgrafiken lassen sich nicht überall verwenden: Social-Media-Plattformen, Marktplätze und viele CMS akzeptieren nur Rasterformate. Die Konvertierung zu JPG erzeugt universell kompatible Bilddateien.</p><p class=\"text-mid mb-4\">Bei der Rasterisierung wird die Vektorgrafik in eine Pixelgrafik mit fester Auflösung umgewandelt. Transparente Bereiche werden mit einer Hintergrundfarbe (standardmäßig Weiß) gefüllt. Für Webnutzung empfiehlt sich eine Auflösung von 1200–2000px Breite.</p><p class=\"text-mid\">Besonders für Social-Media-Beiträge und Marktplatzlistings auf Amazon.de, eBay Kleinanzeigen oder Etsy ist die Konvertierung von SVG zu JPG eine gängige Anforderung.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

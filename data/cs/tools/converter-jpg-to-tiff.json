@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod JPG na TIFF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">TIFF je průmyslový standard pro profesionální tisk, archivaci a postprodukci. Programy jako Adobe Photoshop, Lightroom a GIMP využívají TIFF pro bezeztrátové editační workflow. Konverze do TIFF zachovává veškerá obrazová data včetně barevných profilů, vrstev a metadat.</p><p class=\"text-mid\">Pro profesionální fotografii a tiskovou produkci TIFF zajišťuje bezeztrátovou kvalitu splňující průmyslové standardy. Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">Profesionální tiskárny a fotoagentury často vyžadují TIFF místo JPEG. Převod zachovává aktuální kvalitu a ukládá ji bezeztrátově pro další zpracování.</p><p class=\"text-mid mb-4\">Detaily ztracené kompresí JPEG se neobnoví, ale TIFF zabrání dalším ztrátám při retušování. Podporuje CMYK, vrstvy a rozšířená metadata – ideální pro profesionální tiskové workflow.</p><p class=\"text-mid\">Fotografové a agentury v Česku profitují z lokálního zpracování: fotografie klientů a tiskové soubory zůstanou na vašem zařízení.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

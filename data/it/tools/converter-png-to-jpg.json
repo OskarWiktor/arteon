@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da PNG a JPG nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da PNG a JPG può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. JPG offre la massima compatibilità con tutte le piattaforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">I file PNG con trasparenza pesano spesso diversi megabyte. Quando la trasparenza non è necessaria – foto per il CV, scansioni di documenti o post sui social – la conversione in JPG riduce drasticamente la dimensione.</p><p class=\"text-mid mb-4\">Molte piattaforme come LinkedIn, Indeed o portali di lavoro accettano solo JPG. Anche gli allegati e-mail ne beneficiano: uno screenshot PNG da 3 MB diventa solo 200–400 KB in JPG. La qualità all'85% offre il miglior compromesso tra dimensione e qualità visiva.</p><p class=\"text-mid\">Per documenti di candidatura e file riservati, l'elaborazione locale nel browser è essenziale – i file non lasciano mai il dispositivo. Pienamente conforme al GDPR.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

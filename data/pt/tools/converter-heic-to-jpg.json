@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de HEIC para JPG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de HEIC para JPG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. JPG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">Os utilizadores de iPhone conhecem o problema: as fotos HEIC não abrem em todo o lado. PCs Windows, dispositivos Android, muitos formulários web e clientes de e-mail não suportam HEIC. A conversão para JPG resolve este problema de compatibilidade imediatamente.</p><p class=\"text-mid mb-4\">A qualidade 85–90%, a diferença entre o original HEIC e o resultado JPG é visualmente quase impercetível. O tamanho é comparável, pois ambos os formatos usam compressão com perda. Especialmente prático: converter várias fotos de iPhone simultaneamente.</p><p class=\"text-mid\">Para fotos de CV, digitalizações de documentos de identidade ou documentos pessoais, o processamento local é essencial – os dados sensíveis nunca saem do dispositivo.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

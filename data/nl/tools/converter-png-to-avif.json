@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-naar-AVIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van PNG naar AVIF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. AVIF biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF is het meest efficiënte beeldformaat van de huidige generatie en kan PNG-bestanden tot 50% verkleinen. Voor prestatiekritische webprojecten waar elke kilobyte telt, is PNG-naar-AVIF de optimale conversie.</p><p class=\"text-mid mb-4\">AVIF ondersteunt transparantie, HDR en een kleurdiepte tot 12 bit per kanaal. Chrome, Firefox en Safari 16+ ondersteunen AVIF native. Voor oudere browsers is een fallback via <code>&lt;picture&gt;</code> met PNG of WebP aanbevolen.</p><p class=\"text-mid\">Nederlandse en Belgische bedrijven die hun PageSpeed-scores willen optimaliseren, profiteren bijzonder: AVIF verbetert de Largest Contentful Paint (LCP) meetbaar. Lokale verwerking garandeert AVG-conformiteit.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

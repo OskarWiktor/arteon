@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-AVIF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. GIF-muunnos AVIF-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. AVIF tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF ylittää GIF:n kaikessa: parempi pakkaus, miljoonia värejä, moderni animaatiotuki. Vanhan verkkosisällön modernisointiin GIF-AVIF on tehokkainta.</p><p class=\"text-mid mb-4\">GIF-lähteistä saadut AVIF-tiedostot ovat dramaattisesti pienempiä ja visuaalisesti parempia. Vanhemmat selaimet eivät vielä tue AVIF:ia – fallback <code>&lt;picture&gt;</code>-elementin kautta on suositeltavaa.</p><p class=\"text-mid\">Latausaikojen maksimointiin GIF-AVIF tarjoaa suurimman yksittäisen hyödyn kaikista muotomuutoksista.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

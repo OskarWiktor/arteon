@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af TIFF til JPG i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af TIFF til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. JPG tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF-filer fra professionel fotografi eller scannere fylder ofte 20–100 MB. Konvertering til JPG skaber kompakte filer til web, e-mail og sociale medier – typisk reduktion over 95 %.</p><p class=\"text-mid mb-4\">Gennemsigtighed og laginfo går tabt. For ren fotografi er det uproblematisk. Ved kvalitet 85–90 % forbliver kvaliteten fremragende med filstørrelser på få hundrede KB.</p><p class=\"text-mid\">Fotografer og scannerbrugere i Danmark kan konvertere TIFF lokalt og GDPR-kompatibelt til JPG klar til afsendelse.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis vaerktojer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

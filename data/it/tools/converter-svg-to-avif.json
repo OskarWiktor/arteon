@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da SVG a AVIF nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da SVG a AVIF può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. AVIF fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF offre la migliore compressione disponibile per grafiche vettoriali rasterizzate. Per siti critici in performance, SVG a AVIF è la scelta ottimale quando l'SVG diretto non è possibile.</p><p class=\"text-mid mb-4\">I file AVIF da SVG sono estremamente compatti (3–15 KB). Ogni kilobyte conta per i Core Web Vitals: tempi di caricamento più rapidi migliorano il LCP e il posizionamento Google.</p><p class=\"text-mid\">Sviluppatori web e specialisti SEO in Italia usano sempre più AVIF come standard – la conversione locale semplifica la transizione.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

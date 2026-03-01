@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-zu-AVIF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von WebP in AVIF kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet AVIF hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF bietet noch bessere Komprimierung als WebP – die Umstellung ist der nächste logische Schritt für Webseiten, die ihre Ladezeiten weiter optimieren möchten.</p><p class=\"text-mid mb-4\">Bei vergleichbarer visueller Qualität sind AVIF-Dateien 20–30% kleiner als WebP. Für Webseiten mit hunderten oder tausenden Bildern – Online-Shops, Fotogalerien, Nachrichtenportale – summiert sich die Ersparnis erheblich. Ein WebP-Fallback über <code>&lt;picture&gt;</code> deckt ältere Browser ab.</p><p class=\"text-mid\">Deutsche E-Commerce-Unternehmen, die ihre Core Web Vitals optimieren, profitieren besonders von AVIF. Die lokale Konvertierung ermöglicht den Formatwechsel ohne Cloud-Upload.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia WebP în TIFF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">TIFF este standardul industrial pentru tipărire profesională, arhivare și post-producție. Programe precum Adobe Photoshop, Lightroom și GIMP utilizează TIFF pentru fluxuri de lucru de editare fără pierderi. Conversia în TIFF păstrează toate datele imaginii, inclusiv profiluri de culoare, straturi și metadate.</p><p class=\"text-mid\">Pentru fotografia profesională și producția tipografică, TIFF asigură o calitate fără pierderi conformă standardelor industriale. Procesarea locală asigură conformitatea deplină cu GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">Fluxurile profesionale de tipar cer adesea TIFF. WebP la TIFF permite pregatirea imaginilor web-optimizate pentru tipar.</p><p class=\"text-mid mb-4\">TIFF stocheaza fara pierderi cu suport complet de metadate. Detaliile pierdute prin compresia WebP nu se restaureaza – pentru cea mai buna calitate, porniti de la original.</p><p class=\"text-mid\">Pentru agentii si tipografii din Romania, conversia locala ofera un mod sigur de a pregati asset-uri web pentru proiecte de tipar.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

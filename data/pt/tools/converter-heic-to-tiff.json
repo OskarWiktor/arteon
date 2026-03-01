@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de HEIC para TIFF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">O TIFF é o padrão da indústria para impressão profissional, arquivamento e pós-produção. Programas como Adobe Photoshop, Lightroom e GIMP utilizam TIFF para fluxos de trabalho de edição sem perdas. A conversão para TIFF preserva todos os dados da imagem, incluindo perfis de cor, camadas e metadados.</p><p class=\"text-mid\">Para fotografia profissional e produção gráfica, o TIFF garante qualidade sem perdas que atende aos padrões da indústria. O processamento local garante total conformidade com o RGPD.</p>"
+      "html": "<p class=\"text-mid mb-4\">Fotógrafos profissionais que trabalham com iPhone frequentemente precisam de TIFF para pós-produção em Lightroom, Capture One ou Photoshop. HEIC para TIFF preserva a qualidade completa num formato padrão da indústria.</p><p class=\"text-mid mb-4\">TIFF suporta 16 bits de profundidade, camadas e metadados EXIF/IPTC estendidos. Para impressão, arquivo e retoque profissional, TIFF é o formato preferido. Os ficheiros tornam-se consideravelmente maiores que HEIC.</p><p class=\"text-mid\">Em Portugal, onde muitas gráficas e agências fotográficas exigem TIFF como padrão, a conversão local oferece um fluxo de trabalho seguro para sessões confidenciais.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

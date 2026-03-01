@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af BMP til PNG i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af BMP til PNG kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. PNG tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP til PNG reducerer størrelsen via tabsfri kompression – fuld kvalitet bevares. Ideel for grafik med skarpe kanter, tekst eller skærmbilleder.</p><p class=\"text-mid mb-4\">I modsætning til JPG bevarer PNG den præcise pixelkvalitet uden artefakter. For teknisk dokumentation og skærmbilleder med tekst er PNG det bedre valg.</p><p class=\"text-mid\">Lokal konvertering er velegnet til fortrolige dokumenter og interne skærmbilleder – intet sendes til en ekstern server.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

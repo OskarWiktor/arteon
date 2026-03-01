@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da JPG a WebP nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da JPG a WebP può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. WebP fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
+      "html": "<p class=\"text-mid mb-4\">JPEG è lo standard per le foto digitali, ma per i siti web le dimensioni sono spesso eccessive. WebP comprime le immagini JPEG del 25–35% in più senza perdita di qualità visibile, migliorando direttamente i tempi di caricamento e i Core Web Vitals.</p><p class=\"text-mid mb-4\">Per gli e-commerce su WooCommerce, Shopify o PrestaShop, il passaggio da JPG a WebP velocizza misurabilmente le pagine prodotto. Google PageSpeed raccomanda esplicitamente WebP come formato di nuova generazione. A qualità 80–85%, la differenza è impercettibile.</p><p class=\"text-mid\">In Italia, dove le normative GDPR sono rigorose, l'elaborazione locale delle immagini nel browser è particolarmente preziosa. Le foto dei prodotti non lasciano il dispositivo.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

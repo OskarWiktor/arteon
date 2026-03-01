@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af AVIF til PNG i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af AVIF til PNG kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. PNG tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF-billeder med gennemsigtighed skal sommetider konverteres til PNG – for grafiske programmer eller platforme uden AVIF-understøttelse.</p><p class=\"text-mid mb-4\">PNG bevarer gennemsigtighed og kvalitet tabsfrit. Filerne er større end AVIF men egnede til Photoshop, Figma, Canva og tryk.</p><p class=\"text-mid\">Grafiske designere i Danmark bruger lokal konvertering til sikker forberedelse af AVIF-assets til forskellige outputkanaler – GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis vaerktojer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

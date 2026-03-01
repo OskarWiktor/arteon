@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-naar-JPG-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van PNG naar JPG kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. JPG biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">PNG-bestanden met transparantie zijn vaak meerdere megabytes groot. Wanneer transparantie niet nodig is – sollicitatiefoto's, documentscans of social-mediaposts – reduceert de conversie naar JPG de bestandsgrootte drastisch.</p><p class=\"text-mid mb-4\">Veel platforms zoals LinkedIn, Indeed of vacatureportals accepteren uitsluitend JPG. Ook e-mailbijlagen profiteren: een PNG-screenshot van 3 MB wordt als JPG vaak slechts 200–400 KB. De kwaliteitsinstelling van 85% biedt het beste compromis.</p><p class=\"text-mid\">Voor sollicitatiedocumenten en vertrouwelijke bestanden is lokale verwerking essentieel – uw bestanden verlaten nooit uw apparaat. Volledig AVG-conform.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

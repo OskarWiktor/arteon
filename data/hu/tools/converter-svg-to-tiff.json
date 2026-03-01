@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-TIFF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A TIFF az iparági szabvány a professzionális nyomtatáshoz, archiváláshoz és utómunkálatokhoz. Az Adobe Photoshop, Lightroom és GIMP programok TIFF formátumot használnak veszteségmentes szerkesztési munkafolyamatokhoz. A TIFF-re konvertálás megőrzi a teljes képadatot, beleértve a színprofilokat, rétegeket és metaadatokat.</p><p class=\"text-mid\">Professzionális fotózáshoz és nyomdai termeléshez a TIFF veszteségmentes minőséget biztosít az iparági szabványoknak megfelelően. A helyi feldolgozás teljes GDPR-megfelelőséget biztosít.</p>"
+      "html": "<p class=\"text-mid mb-4\">Nyomdák gyakran pixelképeket igényelnek TIFF-ben vektorfájlok helyett. Az SVG-TIFF nagy felbontású, veszteségmentes fájlokat hoz létre professzionális nyomtatáshoz.</p><p class=\"text-mid mb-4\">A TIFF a raszterizált grafikát a legmagasabb minőségben tárolja teljes színmélységgel és metaadat-támogatással. Névjegykártyákhoz, szórólapokhoz és plakátokhoz min. 300 DPI ajánlott.</p><p class=\"text-mid\">Magyarországi nyomdák a TIFF-et fogadják el standard pixelformátumként. A helyi konvertálás védi a bizalmas terveket és logókat.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

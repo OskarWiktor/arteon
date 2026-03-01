@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia SVG în JPG în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia SVG în JPG poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. JPG oferă compatibilitate maximă cu toate platformele.</p>"
+      "html": "<p class=\"text-mid mb-4\">Grafica vectoriala SVG nu este acceptata peste tot: retele sociale, marketplace-uri si multe CMS-uri accepta doar formate raster. Conversia la JPG creeaza fisiere universal compatibile.</p><p class=\"text-mid mb-4\">Rasterizarea converteste vectorul in pixeli la rezolutie fixa. Zonele transparente se umplu cu culoare de fundal (alb implicit). Pentru web se recomanda 1200–2000 px latime.</p><p class=\"text-mid\">Pentru postari pe social media si anunturi pe OLX.ro, eMAG.ro sau Amazon, SVG la JPG este o cerinta obisnuita.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descoperă mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

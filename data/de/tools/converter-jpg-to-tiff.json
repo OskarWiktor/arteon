@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-zu-TIFF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">TIFF ist der Branchenstandard für professionellen Druck, Archivierung und Nachbearbeitung. Programme wie Adobe Photoshop, Lightroom und GIMP nutzen TIFF für verlustfreie Bearbeitungsworkflows. Die Konvertierung in TIFF bewahrt sämtliche Bilddaten einschließlich Farbprofile, Ebenen und Metadaten.</p><p class=\"text-mid\">Für professionelle Fotografie und Druckproduktion gewährleistet TIFF verlustfreie Qualität nach Industriestandard. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionelle Druckereien und Bildagenturen verlangen häufig TIFF statt JPEG. Die Konvertierung bewahrt die aktuelle Bildqualität und speichert sie verlustfrei für die weitere Verarbeitung.</p><p class=\"text-mid mb-4\">Durch JPEG-Komprimierung bereits verlorene Details werden nicht wiederhergestellt, aber TIFF verhindert weitere Verluste bei Nachbearbeitungen. TIFF unterstützt CMYK-Farbräume, Ebenen und umfangreiche Metadaten – ideal für professionelle Print-Workflows.</p><p class=\"text-mid\">Fotografen und Agenturen im DACH-Raum profitieren von der lokalen Verarbeitung: Kundenfotos und Druckvorlagen bleiben auf dem eigenen Gerät – ohne Cloud-Upload.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

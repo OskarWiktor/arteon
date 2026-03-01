@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-zu-TIFF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">TIFF ist der Branchenstandard für professionellen Druck, Archivierung und Nachbearbeitung. Programme wie Adobe Photoshop, Lightroom und GIMP nutzen TIFF für verlustfreie Bearbeitungsworkflows. Die Konvertierung in TIFF bewahrt sämtliche Bilddaten einschließlich Farbprofile, Ebenen und Metadaten.</p><p class=\"text-mid\">Für professionelle Fotografie und Druckproduktion gewährleistet TIFF verlustfreie Qualität nach Industriestandard. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionelle Fotografen, die mit iPhones arbeiten, benötigen oft TIFF für die Nachbearbeitung in Lightroom, Capture One oder Photoshop. Die Konvertierung von HEIC zu TIFF bewahrt die volle Bildqualität in einem branchenüblichen Format.</p><p class=\"text-mid mb-4\">TIFF unterstützt 16-Bit-Farbtiefe, Ebenen und umfangreiche EXIF/IPTC-Metadaten. Für Druckprojekte, Bildarchivierung und professionelle Retouche ist TIFF das bevorzugte Ausgangsformat. Die Dateien werden allerdings erheblich größer als HEIC.</p><p class=\"text-mid\">Im DACH-Raum, wo viele Druckereien und Bildagenturen TIFF als Standard voraussetzen, bietet die lokale Konvertierung einen sicheren Workflow für vertrauliche Shootings und Kundenmaterial.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

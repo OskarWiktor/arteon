@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-til-WebP-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av HEIC til WebP kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. WebP gir utmerket komprimering med bevart visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">iPhone-bilder i HEIC-format direkte til nettsider? WebP er den ideelle broen: det kombinerer HEICs effektive komprimering med universell nettleserkompatibilitet (Chrome, Firefox, Safari 14+, Edge).</p><p class=\"text-mid mb-4\">Konvertering fra HEIC til WebP er spesielt effektiv da begge formatene bruker moderne komprimeringsalgoritmer. For blogger, nettbutikker og porteføljer er dette den raskeste veien til weboptimaliserte iPhone-bilder.</p><p class=\"text-mid\">Norske bloggere og nettbutikkeiere kan konvertere iPhone-bilder lokalt og GDPR-kompatibelt – uten skytjenester.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktoy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

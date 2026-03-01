@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-zu-WebP-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von GIF in WebP kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet WebP hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP bietet deutlich bessere Komprimierung als GIF – sowohl für statische Bilder als auch für Animationen. Die Modernisierung älterer GIF-Grafiken zu WebP beschleunigt Webseiten spürbar.</p><p class=\"text-mid mb-4\">Statische GIF-Dateien werden als WebP typischerweise 30–60% kleiner. WebP unterstützt Millionen Farben statt nur 256, was die visuelle Qualität bei gleicher oder kleinerer Dateigröße deutlich verbessert.</p><p class=\"text-mid\">Für die Optimierung älterer Webseiten und Blogs im DACH-Raum ist die Umstellung von GIF auf WebP ein einfacher Weg, Core Web Vitals zu verbessern.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

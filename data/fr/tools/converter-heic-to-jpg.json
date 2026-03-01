@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion HEIC vers JPG en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de HEIC en JPG peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Les utilisateurs d'iPhone connaissent le problème : les photos HEIC ne s'ouvrent pas partout. Windows, Android, formulaires web et clients e-mail ne supportent souvent pas le HEIC. La conversion en JPG résout ce problème.</p><p class=\"text-mid mb-4\">À 85–90% de qualité, la différence HEIC/JPG est quasi imperceptible. La taille reste comparable. Particulièrement pratique : convertir plusieurs photos iPhone simultanément.</p><p class=\"text-mid\">Pour les photos de CV, scans de pièces d'identité ou documents personnels, le traitement local est essentiel – les données sensibles ne quittent jamais votre appareil.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

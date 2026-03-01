@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-naar-TIFF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">TIFF is de industriestandaard voor professioneel drukwerk, archivering en nabewerking. Programma's als Adobe Photoshop, Lightroom en GIMP gebruiken TIFF voor verliesvrije bewerkingsworkflows. Conversie naar TIFF behoudt alle beeldgegevens inclusief kleurprofielen, lagen en metadata.</p><p class=\"text-mid\">Voor professionele fotografie en drukproductie garandeert TIFF verliesvrije kwaliteit die voldoet aan de industrienormen. Lokale verwerking garandeert volledige AVG-conformiteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionele fotografen die met iPhones werken, hebben vaak TIFF nodig voor nabewerking in Lightroom, Capture One of Photoshop. HEIC naar TIFF behoudt de volledige beeldkwaliteit in een branchestandaard formaat.</p><p class=\"text-mid mb-4\">TIFF ondersteunt 16-bit kleurdiepte, lagen en uitgebreide EXIF/IPTC-metadata. Voor drukprojecten, beeldarchivering en professionele retouche is TIFF het voorkeursformaat. De bestanden worden echter aanzienlijk groter dan HEIC.</p><p class=\"text-mid\">In Nederland en België, waar drukkerijen en beeldbanken TIFF als standaard hanteren, biedt lokale conversie een veilige workflow voor vertrouwelijke shoots.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

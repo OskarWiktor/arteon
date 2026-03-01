@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de PNG a AVIF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir PNG a AVIF puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF es el formato más eficiente de la generación actual y puede reducir archivos PNG hasta un 50%. Para proyectos web donde cada kilobyte cuenta, PNG a AVIF es la conversión óptima.</p><p class=\"text-mid mb-4\">AVIF soporta transparencia, HDR y hasta 12 bits por canal. Chrome, Firefox y Safari 16+ lo soportan nativamente. Para navegadores antiguos, un fallback con <code>&lt;picture&gt;</code> y PNG o WebP es recomendable.</p><p class=\"text-mid\">Las empresas españolas que buscan optimizar sus puntuaciones PageSpeed se benefician especialmente: AVIF mejora mediblemente el Largest Contentful Paint (LCP). El procesamiento local garantiza el cumplimiento del RGPD.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

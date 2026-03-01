@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia TIFF în AVIF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia TIFF în AVIF poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. AVIF oferă o compresie excelentă păstrând calitatea vizuală.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF ofera cea mai eficienta compresie pentru fisiere TIFF mari. Fotografii si scanari de inalta rezolutie se reduc drastic cu pierdere minima de calitate.</p><p class=\"text-mid mb-4\">Pentru galerii si site-uri portofoliu care cauta cele mai bune timpi de incarcare, TIFF la AVIF este fluxul optim. Chrome, Firefox si Safari 16+ suporta AVIF.</p><p class=\"text-mid\">Fotografii profesionisti din Romania beneficiaza de procesarea locala: fotografiile clientilor de inalta rezolutie optimizate sigur si conform GDPR.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de PNG a GIF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Aunque GIF no es el formato más eficiente para imágenes estáticas, sigue siendo esencial para animaciones simples, memes y gráficos con paleta de colores limitada. El límite de 256 colores hace que GIF sea menos adecuado para fotografías, pero ideal para iconos, logotipos y contenido animado compartido en redes sociales y aplicaciones de mensajería.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">Gráficos simples como iconos, logos o diagramas con paleta de colores limitada se almacenan más compactamente en GIF que en PNG. La conversión es útil cuando la plataforma exige formato GIF.</p><p class=\"text-mid mb-4\">El GIF solo soporta 256 colores. Las imágenes PNG fotorrealistas pierden calidad visible al convertir. La transparencia solo es binaria (visible/invisible), no alfa gradual como en PNG.</p><p class=\"text-mid\">Para presentaciones, gráficos de newsletters o sistemas que solo aceptan GIF, esta conversión es una solución rápida – completamente local y sin subida de archivos.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

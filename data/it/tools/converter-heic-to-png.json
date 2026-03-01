@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da HEIC a PNG nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da HEIC a PNG può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. PNG offre la massima compatibilità con tutte le piattaforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">Se vuoi riutilizzare le foto iPhone senza perdita – come basi in Photoshop, Figma o per progetti di stampa – il PNG è il formato ideale. La conversione preserva la qualità completa dell'originale HEIC.</p><p class=\"text-mid mb-4\">Il PNG supporta trasparenza e memorizzazione senza perdita, a differenza del JPG. I file PNG sono però significativamente più grandi di HEIC o JPG. Per la modifica in software grafici non è uno svantaggio – per l'uso web si consiglia poi una conversione in WebP.</p><p class=\"text-mid\">Agenzie creative e fotografi beneficiano dell'elaborazione locale: le foto iPhone dei clienti o degli shooting restano riservate sul proprio computer.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

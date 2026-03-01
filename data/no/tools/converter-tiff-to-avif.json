@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-til-AVIF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av TIFF til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. AVIF gir utmerket komprimering med bevart visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF tilbyr den mest effektive komprimering for store TIFF-filer. Profesjonelle bilder og skanninger reduseres drastisk med minimalt kvalitetstap.</p><p class=\"text-mid mb-4\">For fotogallerier og porteføljesider som søker de beste lastetidene er TIFF til AVIF den optimale arbeidsflyten. Chrome, Firefox og Safari 16+ støtter AVIF.</p><p class=\"text-mid\">Profesjonelle fotografer i Norge drar nytte av lokal behandling: kundebilder i høy oppløsning optimaliseres sikkert og GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

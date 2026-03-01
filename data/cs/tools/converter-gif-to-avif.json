@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod GIF na AVIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod GIF na AVIF může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. AVIF poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF překonává GIF ve všech ohledech: lepší komprese, miliony barev, moderní podpora animací. Pro modernizaci starého webového obsahu je GIF na AVIF nejefektivnější.</p><p class=\"text-mid mb-4\">AVIF soubory z GIF zdrojů jsou drasticky menší a vizuálně lepší. Starší prohlížeče AVIF nepodporují – fallback přes <code>&lt;picture&gt;</code> je doporučen.</p><p class=\"text-mid\">Pro maximalizaci rychlosti načítání nabízí přechod z GIF na AVIF největší individuální přínos ze všech změn formátu.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

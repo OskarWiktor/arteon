@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion JPG vers PNG en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de JPG en PNG peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Parfois un JPEG doit être converti en format supportant la transparence ou le stockage sans perte – pour la retouche dans Photoshop, Figma ou Canva.</p><p class=\"text-mid mb-4\">La conversion ne restaure pas les détails perdus par la compression JPEG, mais empêche toute perte supplémentaire. Le PNG est adapté quand l'image sert de base pour des collages ou mises en page.</p><p class=\"text-mid\">Pour les graphistes en France, le traitement local est idéal : le matériel client reste sur votre machine sans qu'un service externe n'y accède.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

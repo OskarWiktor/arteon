@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia WebP în GIF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Deși GIF nu este cel mai eficient format pentru imagini statice, rămâne esențial pentru animații simple, meme-uri și grafică cu paletă de culori limitată. Limita de 256 de culori face GIF-ul mai puțin potrivit pentru fotografii, dar ideal pentru pictograme, logouri și conținut animat distribuit pe rețelele sociale și aplicațiile de mesagerie.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. GIF oferă compatibilitate maximă cu toate platformele.</p>"
+      "html": "<p class=\"text-mid mb-4\">Formatul GIF este uneori necesar – sisteme vechi, instrumente de newsletter sau platforme care accepta doar GIF.</p><p class=\"text-mid mb-4\">GIF suporta maximum 256 de culori. Imaginile fotorealiste pierd calitate. Conversia este mai potrivita pentru grafica simpla, pictograme sau logo-uri.</p><p class=\"text-mid\">Procesarea locala ofera o alternativa rapida si sigura la serviciile de conversie online.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

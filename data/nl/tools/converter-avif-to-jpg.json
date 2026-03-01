@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-naar-JPG-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van AVIF naar JPG kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. JPG biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF wordt door oudere apparaten, beeldbewerkingssoftware en sommige platforms nog niet ondersteund. De conversie naar JPG garandeert maximale compatibiliteit – JPEG wordt door elk apparaat en elke software ondersteund.</p><p class=\"text-mid mb-4\">Bij kwaliteitsniveau 85–90% blijft de visuele kwaliteit nagenoeg identiek aan het AVIF-origineel. Bijzonder nuttig voor e-mailverzending aan ontvangers met oudere systemen of drukdiensten die alleen JPEG accepteren.</p><p class=\"text-mid\">Voor bedrijven in Nederland die afbeeldingen zowel webgeoptimaliseerd (AVIF) als universeel compatibel (JPG) willen aanbieden, is lokale conversie een efficiënte workflow.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

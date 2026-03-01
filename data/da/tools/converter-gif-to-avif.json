@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af GIF til AVIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af GIF til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. AVIF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF overgår GIF på alle punkter: bedre kompression, millioner af farver, moderne animationsunderstøttelse. For modernisering af ældre webindhold er GIF til AVIF mest effektivt.</p><p class=\"text-mid mb-4\">AVIF-filer fra GIF-kilder er drastisk mindre og visuelt bedre. Ældre browsere understøtter endnu ikke AVIF – en fallback via <code>&lt;picture&gt;</code> anbefales.</p><p class=\"text-mid\">For at maksimere indlæsningstider tilbyder skiftet fra GIF til AVIF den største individuelle gevinst af alle formatskift.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

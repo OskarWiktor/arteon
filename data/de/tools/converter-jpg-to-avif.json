@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-zu-AVIF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von JPG in AVIF kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet AVIF hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF erzielt bis zu 50% bessere Komprimierung als JPEG bei vergleichbarer visueller Qualität. Für Webseiten mit vielen Fotos – Reiseportale, Immobilienplattformen, Online-Magazine – bedeutet das erheblich schnellere Ladezeiten.</p><p class=\"text-mid mb-4\">Plattformen wie ImmoScout24, Booking.com oder Zalando setzen zunehmend auf AVIF, um die Nutzererfahrung auf Mobilgeräten zu verbessern. Chrome, Firefox und Safari 16+ unterstützen AVIF nativ. Für ältere Browser sollte ein WebP- oder JPG-Fallback bereitgestellt werden.</p><p class=\"text-mid\">Die lokale Konvertierung im Browser schützt Ihre Bilder: Ob Immobilienfotos, Produktbilder oder Portraitaufnahmen – nichts wird auf einen Server hochgeladen. Vollständig DSGVO-konform.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

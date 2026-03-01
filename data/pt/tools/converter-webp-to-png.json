@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de WebP para PNG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de WebP para PNG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. PNG oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">Imagens WebP com transparência por vezes precisam de ser convertidas para PNG – para software gráfico sem suporte WebP ou ficheiros de impressão que requerem qualidade sem perda.</p><p class=\"text-mid mb-4\">A conversão preserva transparência e qualidade completamente. Os PNG são maiores mas mais adequados para Photoshop, Illustrator, InDesign e plataformas sem suporte WebP.</p><p class=\"text-mid\">Os designers em Portugal podem converter localmente assets WebP em PNG prontos para impressão – sem cloud e em conformidade com o RGPD.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

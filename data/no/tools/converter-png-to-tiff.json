@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-til-TIFF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">TIFF er bransjestandarden for profesjonell utskrift, arkivering og etterbehandling. Programmer som Adobe Photoshop, Lightroom og GIMP bruker TIFF for tapsfrie redigeringsarbeidsflyter. Konvertering til TIFF bevarer alle bildedata inkludert fargeprofiler, lag og metadata.</p><p class=\"text-mid\">For profesjonell fotografering og trykkproduksjon sikrer TIFF tapsfri kvalitet etter bransjestandarder. Lokal behandling sikrer full GDPR-samsvar.</p>"
+      "html": "<p class=\"text-mid mb-4\">Trykkerier, forlag og arkivsystemer krever ofte TIFF i stedet for PNG. Konverteringen bevarer full kvalitet, gjennomsiktighet og legger til profesjonell metadata-støtte.</p><p class=\"text-mid mb-4\">TIFF-filer er større enn PNG, men tilbyr fordeler for profesjonelle arbeidsflyter: lagstøtte i Photoshop, CMYK-fargerom for trykk og komplett metadata. TIFF er industristandard for langtidsarkivering.</p><p class=\"text-mid\">Trykkerier i Norge arbeider ofte med TIFF. Lokal konvertering gjør det mulig å behandle fortrolige design uten sky-opplasting.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

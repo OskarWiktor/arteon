@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da SVG a WebP nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da SVG a WebP può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. WebP fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
+      "html": "<p class=\"text-mid mb-4\">Per i siti che non possono integrare direttamente SVG – CMS con supporto limitato – WebP offre una rappresentazione pixel compatta con dimensione minima.</p><p class=\"text-mid mb-4\">I WebP da SVG sono tipicamente molto leggeri (5–30 KB) e si caricano istantaneamente. Per icone e loghi sui siti, è la soluzione più pragmatica quando l'SVG diretto non è possibile.</p><p class=\"text-mid\">WordPress, WooCommerce e molti CMS in Italia supportano WebP nativamente – permettendo l'uso di grafiche vettoriali anche in questi ambienti.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Scopri altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

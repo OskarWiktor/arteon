@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-zu-PNG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von BMP in PNG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet PNG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-Dateien in PNG umzuwandeln reduziert die Dateigröße erheblich durch verlustfreie Komprimierung – die volle Bildqualität bleibt dabei erhalten. Ideal für Grafiken mit scharfen Kanten, Text oder Screenshots.</p><p class=\"text-mid mb-4\">Im Gegensatz zu JPG bewahrt PNG die exakte Pixelqualität ohne Komprimierungsartefakte. Für technische Dokumentationen, Screenshots und Grafiken mit Text ist PNG daher die bessere Wahl als JPG.</p><p class=\"text-mid\">Die lokale Konvertierung eignet sich besonders für vertrauliche Dokumente und interne Screenshots – nichts wird auf einen externen Server hochgeladen.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

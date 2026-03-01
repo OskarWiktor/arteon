@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-till-TIFF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">TIFF är branschstandarden för professionellt tryck, arkivering och efterbearbetning. Program som Adobe Photoshop, Lightroom och GIMP använder TIFF för förlustfria redigeringsarbetsflöden. Konvertering till TIFF bevarar all bilddata inklusive färgprofiler, lager och metadata.</p><p class=\"text-mid\">För professionell fotografi och tryckproduktion säkerställer TIFF förlustfri kvalitet enligt branschstandarder. Lokal behandling säkerställer full GDPR-efterlevnad.</p>"
+      "html": "<p class=\"text-mid mb-4\">Tryckerier behöver ofta pixelbilder i TIFF istället för vektorfiler. SVG till TIFF producerar högkvalitativa förlustfria filer för professionellt tryck.</p><p class=\"text-mid mb-4\">TIFF lagrar rastrerad grafik i högsta kvalitet med fullt färgdjup och metadata. För visitkort, flygblad och affischer rekommenderas min. 300 DPI.</p><p class=\"text-mid\">Tryckerier i Sverige accepterar TIFF som standard pixelformat. Lokal konvertering skyddar konfidentiella designer och varumärkeslogotyper.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

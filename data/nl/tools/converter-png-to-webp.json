@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-naar-WebP-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van PNG naar WebP kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. WebP biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">Webdesigners en webshophouders in Nederland en België gebruiken PNG voor logo's, productfreistellers en UI-elementen met transparantie. Bij de overstap naar WebP blijft de transparantie volledig behouden, terwijl de bestandsgrootte met 25–35% afneemt – een direct voordeel voor laadtijden en Core Web Vitals.</p><p class=\"text-mid mb-4\">Afbeeldingen met grote effen vlakken (logo's, iconen) profiteren het meest: bestanden van 200–500 KB krimpen vaak tot onder de 100 KB. Voor productfoto's op Bol.com, Marktplaats, Amazon.nl of Shopify-winkels betekent dit snellere categoriepagina's en een betere mobiele ervaring.</p><p class=\"text-mid\">De volledige verwerking vindt lokaal in uw browser plaats – ideaal voor bureaus en bedrijven die AVG/GDPR-conform moeten werken. Productafbeeldingen of klantgrafiek verlaten nooit uw apparaat.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

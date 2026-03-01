@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de GIF a AVIF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir GIF a AVIF puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF supera al GIF en todo: mejor compresión, millones de colores, animación moderna. Para modernizar contenidos web antiguos, GIF a AVIF es lo más eficiente.</p><p class=\"text-mid mb-4\">Los AVIF desde GIF son drásticamente más pequeños y visualmente mejores. Los navegadores antiguos aún no soportan AVIF – un fallback via <code>&lt;picture&gt;</code> es recomendable.</p><p class=\"text-mid\">Para maximizar tiempos de carga, el cambio de GIF a AVIF ofrece la mayor ganancia individual de todos los cambios de formato.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

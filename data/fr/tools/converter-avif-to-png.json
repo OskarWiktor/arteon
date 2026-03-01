@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion AVIF vers PNG en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de AVIF en PNG peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Les images AVIF avec transparence doivent parfois être converties en PNG – pour la retouche dans des logiciels graphiques ou plateformes sans support AVIF.</p><p class=\"text-mid mb-4\">Le PNG préserve transparence et qualité sans perte. Les fichiers sont plus gros que l'AVIF mais adaptés à Photoshop, Figma, Canva et à l'impression.</p><p class=\"text-mid\">Les graphistes en France utilisent la conversion locale pour préparer des assets AVIF pour différents canaux de sortie – sûr et conforme au RGPD.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Decouvrez nos autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

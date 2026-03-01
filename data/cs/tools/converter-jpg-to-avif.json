@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod JPG na AVIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod JPG na AVIF může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. AVIF poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF dosahuje až o 50 % lepší komprese než JPEG při srovnatelné vizuální kvalitě. Pro weby s mnoha fotografiemi – realitní portály, online magazíny, cestovatelské weby – to znamená výrazně kratší načítání.</p><p class=\"text-mid mb-4\">Platformy jako Sreality.cz, Booking.com nebo Bazos.cz stále častěji přecházejí na AVIF pro lepší mobilní zážitek. Chrome, Firefox a Safari 16+ podporují AVIF nativně.</p><p class=\"text-mid\">Lokální převod v prohlížeči chrání vaše obrázky: realitní fotografie, produktové snímky nebo portréty – nic se nenahrává na server. Plně v souladu s GDPR.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

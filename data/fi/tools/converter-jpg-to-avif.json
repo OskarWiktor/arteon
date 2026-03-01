@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-AVIF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. JPG-muunnos AVIF-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. AVIF tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF saavuttaa jopa 50 % paremman pakkauksen kuin JPEG vastaavalla visuaalisella laadulla. Runsaasti kuvia sisältäville sivustoille – kiinteistöportaalit, verkkolehdet, matkailusivut – latausajat lyhenevät huomattavasti.</p><p class=\"text-mid mb-4\">Alustat kuten Etuovi.com, Booking.com tai Tori.fi omaksuvat yhä enemmän AVIF:ia paremman mobiilikokemuksen vuoksi. Chrome, Firefox ja Safari 16+ tukevat natiivisti.</p><p class=\"text-mid\">Paikallinen muunnos selaimessa suojaa kuviasi: kiinteistökuvat, tuotekuvat tai muotokuvat – mitään ei ladata palvelimelle. Täysin GDPR-yhteensopiva.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

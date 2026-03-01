@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia PNG în AVIF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia PNG în AVIF poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. AVIF oferă o compresie excelentă păstrând calitatea vizuală.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF este cel mai eficient format de imagine al generatiei actuale si poate reduce fisierele PNG cu pana la 50%. Pentru proiecte web critice in performanta, PNG la AVIF este conversia optima.</p><p class=\"text-mid mb-4\">AVIF suporta transparenta, HDR si adancime de culoare pana la 12 biti per canal. Chrome, Firefox si Safari 16+ il suporta nativ. Pentru browsere mai vechi, un fallback prin <code>&lt;picture&gt;</code> cu PNG sau WebP este recomandat.</p><p class=\"text-mid\">Companiile romanesti care doresc sa-si optimizeze scorurile PageSpeed beneficiaza in special: AVIF imbunatateste masurabil Largest Contentful Paint (LCP). Procesarea locala garanteaza conformitatea GDPR.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

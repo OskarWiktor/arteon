@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-naar-TIFF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">TIFF is de industriestandaard voor professioneel drukwerk, archivering en nabewerking. Programma's als Adobe Photoshop, Lightroom en GIMP gebruiken TIFF voor verliesvrije bewerkingsworkflows. Conversie naar TIFF behoudt alle beeldgegevens inclusief kleurprofielen, lagen en metadata.</p><p class=\"text-mid\">Voor professionele fotografie en drukproductie garandeert TIFF verliesvrije kwaliteit die voldoet aan de industrienormen. Lokale verwerking garandeert volledige AVG-conformiteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">Drukkerijen, uitgeverijen en archiveringssystemen eisen vaak TIFF in plaats van PNG. De conversie behoudt de volledige beeldkwaliteit en transparantie en voegt professionele metadata-ondersteuning toe.</p><p class=\"text-mid mb-4\">TIFF-bestanden zijn groter dan PNG, maar bieden voordelen voor professionele workflows: laagondersteuning in Photoshop, CMYK-kleurruimten voor drukwerk en uitgebreide metadata. TIFF is de industriestandaard voor langetermijnarchivering.</p><p class=\"text-mid\">Drukkerijen in Nederland en België werken vaak met TIFF. Lokale conversie maakt het verwerken van vertrouwelijke ontwerpen mogelijk zonder cloud-upload.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

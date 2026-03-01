@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-zu-WebP-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von TIFF in WebP kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet WebP hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Die Konvertierung von TIFF zu WebP erzielt die größte Dateireduktion aller gängigen Formatwechsel: TIFF-Dateien von 20–100 MB schrumpfen oft auf 200 KB – 2 MB. Für die Veröffentlichung professioneller Fotos im Web ist dies der effizienteste Weg.</p><p class=\"text-mid mb-4\">WebP bewahrt bei Qualitätsstufe 80–85% eine hervorragende visuelle Qualität. Für Fotogalerien, Portfolio-Webseiten und Online-Magazine bedeutet das: Professionelle Bildqualität bei Bruchteilen der ursprünglichen Dateigröße.</p><p class=\"text-mid\">Fotografen und Agenturen im DACH-Raum können hochauflösende Shooting-Ergebnisse lokal in weboptimierte Formate umwandeln – ohne Cloud-Upload und vollständig DSGVO-konform.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

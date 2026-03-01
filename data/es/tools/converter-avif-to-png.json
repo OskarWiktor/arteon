@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de AVIF a PNG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir AVIF a PNG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">Las imágenes AVIF con transparencia a veces necesitan convertirse a PNG – para edición en programas gráficos o plataformas sin soporte AVIF.</p><p class=\"text-mid mb-4\">PNG preserva transparencia y calidad sin pérdida. Los archivos son más grandes que AVIF pero adecuados para Photoshop, Figma, Canva e impresión.</p><p class=\"text-mid\">Los diseñadores en España usan la conversión local para preparar assets AVIF para diferentes canales – seguro y conforme al RGPD.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre mas herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

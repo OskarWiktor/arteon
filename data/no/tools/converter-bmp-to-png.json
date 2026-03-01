@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-til-PNG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av BMP til PNG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. PNG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP til PNG reduserer størrelsen via tapsfri komprimering – full kvalitet bevares. Ideelt for grafikk med skarpe kanter, tekst eller skjermbilder.</p><p class=\"text-mid mb-4\">I motsetning til JPG bevarer PNG den nøyaktige pikselkvaliteten uten artefakter. For teknisk dokumentasjon og skjermbilder med tekst er PNG det bedre valget.</p><p class=\"text-mid\">Lokal konvertering er velegnet for fortrolige dokumenter og interne skjermbilder – ingenting sendes til en ekstern server.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

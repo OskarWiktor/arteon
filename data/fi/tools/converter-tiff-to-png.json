@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-PNG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. TIFF-muunnos PNG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. PNG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Kun TIFF-tiedostoja tarvitaan muokkaukseen grafiikkaohjelmissa tai sivustoille, joilla tarvitaan läpinäkyvyyttä, PNG on sopiva muoto – häviötön ja yleisesti yhteensopiva.</p><p class=\"text-mid mb-4\">PNG säilyttää TIFF:n täyden laadun ja läpinäkyvyyden. Tiedostot ovat pienempiä kuin TIFF mutta suurempia kuin JPEG/WebP. Figmaan, Canvaan tai Photoshopiin PNG on ihanteellinen.</p><p class=\"text-mid\">Skanneritulosten ja arkistokuvien valmisteluun verkkokäyttöön paikallinen muunnos tarjoaa turvallisen ja nopean työnkulun.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

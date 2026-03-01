@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af HEIC til TIFF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">TIFF er industristandarden for professionelt tryk, arkivering og efterbehandling. Programmer som Adobe Photoshop, Lightroom og GIMP bruger TIFF til tabsfri redigering. Konvertering til TIFF bevarer alle billeddata inklusive farveprofiler, lag og metadata.</p><p class=\"text-mid\">Til professionel fotografi og trykproduktion sikrer TIFF tabsfri kvalitet efter branchestandarder. Lokal behandling sikrer fuld GDPR-overholdelse.</p>"
+      "html": "<p class=\"text-mid mb-4\">Professionelle fotografer, der arbejder med iPhones, har ofte brug for TIFF til efterbehandling i Lightroom, Capture One eller Photoshop.</p><p class=\"text-mid mb-4\">TIFF understøtter 16-bit farvedybde, lag og udvidede EXIF/IPTC-metadata. For tryk, arkivering og professionel retouche er TIFF det foretrukne format. Filerne bliver dog væsentligt større.</p><p class=\"text-mid\">I Danmark, hvor trykkerier og billedbureauer kræver TIFF som standard, tilbyder lokal konvertering et sikkert workflow for fortrolige shoots.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

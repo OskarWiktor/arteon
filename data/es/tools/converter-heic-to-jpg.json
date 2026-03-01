@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de HEIC a JPG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir HEIC a JPG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">Los usuarios de iPhone conocen el problema: las fotos HEIC no se abren en todas partes. PCs Windows, dispositivos Android, muchos formularios web y clientes de correo no soportan HEIC. La conversión a JPG resuelve este problema de compatibilidad inmediatamente.</p><p class=\"text-mid mb-4\">A calidad 85–90%, la diferencia entre el original HEIC y el resultado JPG es visualmente imperceptible. El tamaño es comparable, ya que ambos formatos usan compresión con pérdida. Especialmente práctico: convertir varias fotos de iPhone simultáneamente.</p><p class=\"text-mid\">Para fotos de currículum, escaneos de documentos de identidad o documentos personales, el procesamiento local es esencial – los datos sensibles nunca abandonan tu dispositivo.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre mas herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

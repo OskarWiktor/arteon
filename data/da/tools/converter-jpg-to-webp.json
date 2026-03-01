@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af JPG til WebP i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af JPG til WebP kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. WebP giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">JPEG er standardformatet for digitale fotos, men for hjemmesider er filstørrelserne ofte for høje. WebP komprimerer JPEG-billeder 25–35 % ekstra uden synligt kvalitetstab og forbedrer indlæsningstider direkte.</p><p class=\"text-mid mb-4\">For webshops på Shopify, WooCommerce eller DanDomain betyder skiftet fra JPG til WebP målbart hurtigere produktsider. Google PageSpeed anbefaler WebP som next-gen-format. Ved kvalitet 80–85 % er forskellen visuelt umærkelig.</p><p class=\"text-mid\">I Danmark, hvor strenge GDPR-regler gælder, er lokal billedbehandling i browseren særlig værdifuld. Produktfotos forlader ikke din enhed.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

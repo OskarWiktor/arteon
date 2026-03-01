@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion GIF vers PNG en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de GIF en PNG peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">Convertir du GIF en PNG est pertinent pour le stockage sans perte ou la retouche dans des logiciels graphiques. Le PNG supporte les couleurs 32 bits et la transparence alpha progressive.</p><p class=\"text-mid mb-4\">Pour les GIF animés, seule la première image est convertie. La qualité est préservée sans perte. Le PNG est adapté comme format intermédiaire pour Photoshop, Figma ou Canva.</p><p class=\"text-mid\">Pour la mise à jour d'anciens graphiques web, la conversion locale offre une solution rapide et sécurisée sans services externes.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Découvrez d'autres outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

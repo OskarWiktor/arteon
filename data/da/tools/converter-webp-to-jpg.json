@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af WebP til JPG i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af WebP til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. JPG tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP er optimalt for web, men tryktjenester, Microsoft Office, ældre software og nogle sociale medier kræver JPG.</p><p class=\"text-mid mb-4\">WebP til JPG sikrer maksimal kompatibilitet. Ved kvalitet 85–90 % er kvaliteten næsten identisk. Praktisk for at sende billeder til modtagere, der ikke kan åbne WebP.</p><p class=\"text-mid\">For bureauer, der skal levere billeder i universelle formater, er lokal konvertering ideel – hurtig, sikker og GDPR-kompatibel.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Udforsk flere gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-JPG konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A BMP átalakítása JPG formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. JPG maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP-fájlok gyakran régi Windows-alkalmazásokból vagy szkennerekből származnak. Tömörítetlenek és rendkívül nagyok – a JPG-re konvertálás 95% feletti csökkenést eredményez.</p><p class=\"text-mid mb-4\">Egy 10 MB-os BMP képernyőkép JPG-ként jellemzően mindössze 200–400 KB. E-mailhez, dokumentációhoz és archiváláshoz ez a legegyszerűbb módja a helytakarékosságnak.</p><p class=\"text-mid\">Régi képarchívumok migrálásához és szkenner-kimenetek előkészítéséhez a helyi konvertálás gyors és adatvédelmi szempontból megfelelő megoldás.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

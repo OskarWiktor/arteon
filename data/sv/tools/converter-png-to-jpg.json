@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-till-JPG-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera PNG till JPG kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. JPG erbjuder maximal kompatibilitet med alla plattformar.</p>"
+      "html": "<p class=\"text-mid mb-4\">PNG-filer med transparens är ofta flera megabyte stora. När transparens inte behövs – CV-foton, dokumentskanningar eller inlägg i sociala medier – minskar konvertering till JPG filstorleken drastiskt.</p><p class=\"text-mid mb-4\">Många plattformar som LinkedIn, Arbetsförmedlingen eller jobbportaler accepterar enbart JPG. E-postbilagor drar också nytta: en PNG-skärmbild på 3 MB blir som JPG bara 200–400 KB. Kvalitet på 85 % ger bäst kompromiss.</p><p class=\"text-mid\">För ansökningsdokument och konfidentiella filer är lokal bearbetning avgörande – dina filer lämnar aldrig enheten. Fullt GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforska fler gratisverktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

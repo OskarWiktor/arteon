@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-til-PNG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av TIFF til PNG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. PNG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">Når TIFF-filer trengs for redigering i grafiske programmer eller nettsider med gjennomsiktighet, er PNG det egnede formatet – tapsfritt og universelt kompatibelt.</p><p class=\"text-mid mb-4\">PNG bevarer full kvalitet og gjennomsiktighet fra TIFF-originalen. Filene er mindre enn TIFF men større enn JPEG/WebP. For Figma, Canva eller Photoshop er PNG ideelt.</p><p class=\"text-mid\">For forberedelse av skannerutdata og arkivbilder til nettbruk tilbyr lokal konvertering en sikker og rask arbeidsflyt.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktoy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

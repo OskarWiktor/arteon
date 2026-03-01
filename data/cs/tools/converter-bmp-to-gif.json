@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod BMP na GIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Ačkoli GIF není nejefektivnější formát pro statické obrázky, zůstává nezbytný pro jednoduché animace, memy a grafiku s omezenou paletou barev. Limit 256 barev dělá GIF méně vhodným pro fotografie, ale ideálním pro ikony, loga a animovaný obsah sdílený na sociálních sítích a v komunikátorech.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. GIF nabízí maximální kompatibilitu se všemi platformami.</p>"
+      "html": "<p class=\"text-mid mb-4\">BMP na GIF je užitečný pro systémy přijímající pouze GIF nebo jednoduché grafiky s málo barvami, kde je GIF kompaktnější.</p><p class=\"text-mid mb-4\">GIF podporuje max. 256 barev. Fotorealistické obrázky výrazně ztrácejí kvalitu. Pro fotky jsou JPG nebo WebP lepší. GIF se hodí jen pro jednoduchou grafiku.</p><p class=\"text-mid\">Pro požadavky kompatibility starších systémů nabízí lokální převod rychlé a bezpečné řešení.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

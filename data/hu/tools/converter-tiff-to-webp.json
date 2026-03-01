@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-WebP konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A TIFF átalakítása WebP formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. WebP kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">A TIFF-WebP a legnagyobb csökkenést éri el: 20–100 MB-os fájlok gyakran 200 KB – 2 MB-ra zsugorodnak. Professzionális fotók webes közzétételéhez ez a leghatékonyabb út.</p><p class=\"text-mid mb-4\">80–85%-os minőségnél a WebP kiváló vizuális minőséget tart. Képgalériákhoz, portfóliókhoz és online magazinokhoz: professzionális minőség az eredeti méret töredékén.</p><p class=\"text-mid\">Magyar fotósok és ügynökségek nagyfelbontású felvételeiket helyben konvertálhatják web-optimalizált formátumokba – felhő nélkül, GDPR-kompatibilisen.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel tobb ingyenes eszkozt"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

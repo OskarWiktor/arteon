@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da TIFF a AVIF nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da TIFF a AVIF può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. AVIF fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF offre la compressione più efficiente per grandi file TIFF. Foto e scansioni ad alta risoluzione si riducono drasticamente con minima perdita di qualità.</p><p class=\"text-mid mb-4\">Per gallerie e portfolio web che cercano i migliori tempi di caricamento, TIFF a AVIF è il flusso ottimale. Chrome, Firefox e Safari 16+ supportano AVIF; fallback WebP per browser vecchi.</p><p class=\"text-mid\">Fotografi e agenzie fotografiche in Italia beneficiano dell'elaborazione locale: foto dei clienti ad alta risoluzione ottimizzate in modo sicuro e conforme al GDPR.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

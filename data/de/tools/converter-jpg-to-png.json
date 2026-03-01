@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-zu-PNG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von JPG in PNG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet PNG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Manchmal muss ein JPEG-Bild in ein Format mit Transparenz-Unterstützung oder verlustfreier Speicherung umgewandelt werden – etwa für die Weiterbearbeitung in Grafikprogrammen wie Photoshop, Figma oder Canva.</p><p class=\"text-mid mb-4\">Die Konvertierung von JPG zu PNG macht die durch JPEG-Komprimierung verlorenen Details nicht rückgängig, verhindert aber weitere Qualitätsverluste bei zukünftigen Bearbeitungen. PNG eignet sich besonders, wenn das Bild als Vorlage für Collagen, Overlays oder Print-Layouts dient.</p><p class=\"text-mid\">Für Grafiker und Agenturen in Deutschland ist die lokale Verarbeitung ideal: Kundenmaterial bleibt auf dem eigenen Rechner, ohne dass ein externer Dienst Zugriff erhält.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

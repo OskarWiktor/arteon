@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de SVG a JPG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir SVG a JPG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">Los SVG no se aceptan en todas partes: redes sociales, marketplaces y muchos CMS solo aceptan formatos ráster. La conversión a JPG crea archivos universalmente compatibles.</p><p class=\"text-mid mb-4\">La rasterización convierte el vector en píxeles a resolución fija. Las zonas transparentes se rellenan con color de fondo (blanco por defecto). Para uso web, se recomienda 1200–2000px de ancho.</p><p class=\"text-mid\">Para publicaciones en redes sociales y anuncios en Wallapop, MercadoLibre o Amazon.es, SVG a JPG es un requisito habitual.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

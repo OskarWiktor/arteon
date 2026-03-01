@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia JPG în TIFF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">TIFF este standardul industrial pentru tipărire profesională, arhivare și post-producție. Programe precum Adobe Photoshop, Lightroom și GIMP utilizează TIFF pentru fluxuri de lucru de editare fără pierderi. Conversia în TIFF păstrează toate datele imaginii, inclusiv profiluri de culoare, straturi și metadate.</p><p class=\"text-mid\">Pentru fotografia profesională și producția tipografică, TIFF asigură o calitate fără pierderi conformă standardelor industriale. Procesarea locală asigură conformitatea deplină cu GDPR.</p>"
+      "html": "<p class=\"text-mid mb-4\">Tipografiile profesionale si agentiile foto cer adesea TIFF in loc de JPEG. Conversia pastreaza calitatea actuala si o stocheaza fara pierderi pentru procesare ulterioara.</p><p class=\"text-mid mb-4\">Detaliile pierdute prin compresia JPEG nu se restaureaza, dar TIFF previne pierderi suplimentare. Suporta CMYK, straturi si metadate extinse – ideal pentru fluxuri profesionale de tipar.</p><p class=\"text-mid\">Fotografii si agentiile din Romania beneficiaza de procesarea locala: fotografiile clientilor si fisierele de tipar raman pe dispozitiv.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

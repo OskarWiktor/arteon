@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de GIF a WebP en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir GIF a WebP puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP ofrece compresión mucho mejor que GIF. La modernización de GIF a WebP acelera perceptiblemente los sitios web.</p><p class=\"text-mid mb-4\">Los GIF estáticos se reducen 30–60% como WebP, con millones de colores en lugar de 256, mejorando la calidad visual a tamaño igual o menor.</p><p class=\"text-mid\">Para optimizar sitios antiguos en España, el cambio de GIF a WebP es un modo simple de mejorar los Core Web Vitals.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre mas herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

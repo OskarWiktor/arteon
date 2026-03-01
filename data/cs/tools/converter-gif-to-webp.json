@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod GIF na WebP v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod GIF na WebP může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. WebP poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP nabízí výrazně lepší kompresi než GIF. Modernizace starých GIF na WebP znatelně zrychluje webové stránky.</p><p class=\"text-mid mb-4\">Statické GIF soubory se jako WebP typicky zmenší o 30–60 %. WebP podporuje miliony barev místo 256, což výrazně zlepšuje vizuální kvalitu.</p><p class=\"text-mid\">Pro optimalizaci starších webů v Česku je přechod z GIF na WebP jednoduchý způsob, jak zlepšit Core Web Vitals.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Objevte dalsi bezplatne nastroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

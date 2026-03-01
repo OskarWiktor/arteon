@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de JPG a AVIF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir JPG a AVIF puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF logra hasta un 50% mejor compresión que JPEG a calidad visual comparable. Para sitios con muchas fotos – portales inmobiliarios, revistas online, webs de viajes – los tiempos de carga se reducen considerablemente.</p><p class=\"text-mid mb-4\">Plataformas como Idealista, Booking.com o Wallapop adoptan cada vez más AVIF para mejorar la experiencia móvil. Chrome, Firefox y Safari 16+ lo soportan nativamente. Para navegadores antiguos, un fallback WebP o JPG es recomendable.</p><p class=\"text-mid\">La conversión local en el navegador protege tus imágenes: fotos inmobiliarias, de productos o retratos – nada se sube a ningún servidor. Conforme al RGPD.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

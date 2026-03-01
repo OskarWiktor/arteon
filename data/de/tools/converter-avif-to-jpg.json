@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-zu-JPG-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von AVIF in JPG kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet JPG maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF wird von älteren Geräten, Bildbearbeitungsprogrammen und manchen Plattformen noch nicht unterstützt. Die Konvertierung zu JPG stellt maximale Kompatibilität sicher – JPEG wird von jedem Gerät und jeder Software unterstützt.</p><p class=\"text-mid mb-4\">Bei Qualitätsstufe 85–90% bleibt die visuelle Qualität nahezu identisch zum AVIF-Original. Besonders nützlich für den E-Mail-Versand an Empfänger mit älteren Systemen oder für Plattformen wie Druckdienste, die nur JPEG akzeptieren.</p><p class=\"text-mid\">Für Unternehmen im DACH-Raum, die Bilder sowohl weboptimiert (AVIF) als auch universell kompatibel (JPG) bereithalten müssen, ist die lokale Konvertierung ein effizienter Workflow.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Weitere kostenlose Tools entdecken"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

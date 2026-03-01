@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-WebP-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. TIFF-muunnos WebP-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. WebP tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF-WebP saavuttaa suurimman pienennyksen: 20–100 MB:n tiedostot kutistuvat usein 200 KB – 2 MB:n kokoisiksi. Ammattikuvien julkaisuun verkossa tämä on tehokkain tapa.</p><p class=\"text-mid mb-4\">Laatu 80–85 %:ssa WebP säilyttää erinomaisen visuaalisen laadun. Kuvagallerioihin, portfolioihin ja verkkolehteen: ammattilaatu murto-osassa alkuperäisestä koosta.</p><p class=\"text-mid\">Valokuvaajat ja toimistot Suomessa voivat muuntaa korkearesoluutioisia kuvauksia paikallisesti verkko-optimoituihin muotoihin – ilman pilveä, GDPR-yhteensopivasti.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

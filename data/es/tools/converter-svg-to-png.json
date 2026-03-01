@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de SVG a PNG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir SVG a PNG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">Los SVG se convierten a menudo a PNG para redes sociales, mensajería y firmas de correo – preservando la transparencia con amplia compatibilidad.</p><p class=\"text-mid mb-4\">La rasterización a PNG preserva las zonas transparentes completamente – ideal para logos sobre diferentes fondos. También excelente para capturas de documentación y presentaciones.</p><p class=\"text-mid\">Para agencias que entregan logos en diferentes formatos, SVG a PNG es un flujo de trabajo rápido y conforme con la protección de datos.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-naar-GIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Hoewel GIF niet het meest efficiënte formaat is voor statische afbeeldingen, blijft het onmisbaar voor eenvoudige animaties, memes en afbeeldingen met een beperkt kleurenpalet. De limiet van 256 kleuren maakt GIF minder geschikt voor foto's, maar ideaal voor iconen, logo's en geanimeerde content op sociale media en berichtenapps.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. GIF biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">De conversie van BMP naar GIF is in speciale gevallen zinvol: voor systemen die uitsluitend GIF accepteren, of voor eenvoudige grafiek met weinig kleuren, waarbij GIF compacter is dan BMP.</p><p class=\"text-mid mb-4\">GIF ondersteunt maximaal 256 kleuren. Fotorealistische BMP-afbeeldingen verliezen aanzienlijk aan kwaliteit. Voor foto's zijn JPG of WebP de betere keuze. GIF is alleen geschikt voor eenvoudige grafiek.</p><p class=\"text-mid\">Voor specifieke compatibiliteitseisen van oudere systemen biedt lokale conversie een snelle en veilige oplossing.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

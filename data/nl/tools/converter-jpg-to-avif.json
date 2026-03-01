@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-naar-AVIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van JPG naar AVIF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. AVIF biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF bereikt tot 50% betere compressie dan JPEG bij vergelijkbare visuele kwaliteit. Voor websites met veel foto's – vastgoedportals, online magazines, reiswebsites – betekent dit aanzienlijk kortere laadtijden.</p><p class=\"text-mid mb-4\">Platforms zoals Funda.nl, Booking.com of Marktplaats adopteren steeds vaker AVIF voor een betere mobiele ervaring. Chrome, Firefox en Safari 16+ ondersteunen AVIF native. Voor oudere browsers is een WebP- of JPG-fallback aanbevolen.</p><p class=\"text-mid\">Lokale conversie in de browser beschermt uw beelden: vastgoedfoto's, productafbeeldingen of portretten – niets wordt naar een server geüpload. Volledig AVG-conform.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

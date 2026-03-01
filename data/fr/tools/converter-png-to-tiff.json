@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion PNG vers TIFF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Le TIFF est le standard de l'industrie pour l'impression professionnelle, l'archivage et la post-production. Des logiciels comme Adobe Photoshop, Lightroom et GIMP utilisent le TIFF pour des flux de travail d'édition sans perte. La conversion en TIFF préserve toutes les données de l'image, y compris les profils colorimétriques, les calques et les métadonnées.</p><p class=\"text-mid\">Pour la photographie professionnelle et la production d'impression, le TIFF garantit une qualité sans perte conforme aux standards de l'industrie. Le traitement local garantit la conformité RGPD.</p>"
+      "html": "<p class=\"text-mid mb-4\">Les imprimeurs et systèmes d'archivage exigent souvent le TIFF. La conversion préserve la pleine qualité et transparence, et ajoute le support professionnel des métadonnées.</p><p class=\"text-mid mb-4\">Les fichiers TIFF sont plus volumineux mais offrent des avantages professionnels : calques Photoshop, CMJN pour l'impression et métadonnées complètes. Le TIFF est le standard pour l'archivage à long terme.</p><p class=\"text-mid\">Les imprimeurs en France, Belgique et Suisse travaillent fréquemment avec le TIFF. La conversion locale permet de traiter des maquettes confidentielles sans envoi cloud.</p>"
     },
     {
       "type": "gap",
@@ -231,6 +231,10 @@
     {
       "type": "toolsCarousel",
       "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

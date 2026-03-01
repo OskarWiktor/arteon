@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-PNG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. HEIC-muunnos PNG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. PNG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Jos haluat käyttää iPhone-kuvia häviöttömästi – pohjina Photoshopissa, Figmassa tai painoprojekteissa – PNG on ihanteellinen kohdemuoto.</p><p class=\"text-mid mb-4\">PNG tukee läpinäkyvyyttä ja häviötöntä tallennusta toisin kuin JPG. PNG-tiedostot ovat kuitenkin huomattavasti suurempia. Grafiikkaohjelmissa muokkaukseen tämä ei ole haitta – verkkokäyttöön suositellaan jatkomuunnosta WebP:hen.</p><p class=\"text-mid\">Luovat toimistot ja valokuvaajat hyötyvät paikallisesta käsittelystä: asiakkaiden iPhone-kuvat pysyvät luottamuksellisina omalla koneella.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin tyokaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-WebP konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A JPG átalakítása WebP formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. WebP kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">A JPEG a digitális fotók szabványformátuma, de weboldalakhoz a fájlméretek gyakran túl nagyok. A WebP további 25–35%-kal tömöríti a JPEG-képeket látható minőségromlás nélkül, közvetlenül javítva a betöltési időket.</p><p class=\"text-mid mb-4\">Shopify, WooCommerce vagy Shoprenter webáruházak számára a JPG-ről WebP-re váltás mérhetően gyorsabb termékoldalakatjelent. A Google PageSpeed a WebP-t ajánlja újgenerációs formátumként. 80–85%-os minőségnél a különbség észrevehetetlen.</p><p class=\"text-mid\">Magyarországon, ahol a szigorú GDPR-szabályok érvényesek, a helyi képfeldolgozás a böngészőben különösen értékes. A termékfotók nem hagyják el az eszközét.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Fedezzen fel további ingyenes eszközöket"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

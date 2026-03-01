@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de AVIF para WebP na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de AVIF para WebP pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. WebP proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP oferece maior suporte de navegadores que AVIF (Safari 14+ vs 16+) com boa compressão. Se o público usa navegadores mais antigos, WebP é mais seguro.</p><p class=\"text-mid mb-4\">AVIF para WebP é relevante para CMS e CDN sem suporte AVIF. WebP é suportado nativamente por WordPress, Shopify, Cloudflare e todos os navegadores modernos.</p><p class=\"text-mid\">Para projetos web em Portugal que precisam de máxima cobertura de navegadores, WebP continua a ser o formato moderno mais fiável.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubra mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

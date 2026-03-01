@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af PNG til AVIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af PNG til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. AVIF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF er den mest effektive billedformat i den nuværende generation og kan reducere PNG-filer med op til 50 %. For ydeevnekritiske webprojekter er PNG til AVIF den optimale konvertering.</p><p class=\"text-mid mb-4\">AVIF understøtter gennemsigtighed, HDR og farvedybde op til 12 bit per kanal. Chrome, Firefox og Safari 16+ understøtter AVIF native. For ældre browsere anbefales fallback via <code>&lt;picture&gt;</code> med PNG eller WebP.</p><p class=\"text-mid\">Danske virksomheder, der ønsker at optimere PageSpeed-scores, drager særlig fordel: AVIF forbedrer Largest Contentful Paint (LCP) målbart. Lokal behandling sikrer GDPR-overholdelse.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

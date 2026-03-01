@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia HEIC în JPG în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia HEIC în JPG poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. JPG oferă compatibilitate maximă cu toate platformele.</p>"
+      "html": "<p class=\"text-mid mb-4\">Utilizatorii de iPhone cunosc problema: fotografiile HEIC nu se deschid peste tot. PC-uri Windows, dispozitive Android, multe formulare web si clienti de e-mail nu suporta HEIC. Conversia la JPG rezolva imediat aceasta problema de compatibilitate.</p><p class=\"text-mid mb-4\">La calitate 85–90%, diferenta intre originalul HEIC si rezultatul JPG este vizual aproape imperceptibila. Dimensiunea ramane comparabila. Deosebit de practic: convertirea mai multor fotografii iPhone simultan.</p><p class=\"text-mid\">Pentru fotografii de CV, scanari de acte de identitate sau documente personale, procesarea locala este esentiala – datele sensibile nu parasesc niciodata dispozitivul dvs.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descopera mai multe instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

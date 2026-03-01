@@ -239,6 +239,10 @@
     {
       "type": "toolsCarousel",
       "title": "Inne narzedzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

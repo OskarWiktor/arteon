@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af WebP til AVIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af WebP til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. AVIF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF tilbyder endnu bedre kompression end WebP – det næste logiske skridt for hjemmesider, der vil optimere indlæsningstider yderligere.</p><p class=\"text-mid mb-4\">Ved sammenlignelig kvalitet er AVIF-filer 20–30 % mindre end WebP. For hjemmesider med hundredvis af billeder er besparelsen betydelig. WebP-fallback via <code>&lt;picture&gt;</code> dækker ældre browsere.</p><p class=\"text-mid\">Danske webshops, der optimerer Core Web Vitals, drager særlig fordel af AVIF. Lokal konvertering undgår cloud-upload.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

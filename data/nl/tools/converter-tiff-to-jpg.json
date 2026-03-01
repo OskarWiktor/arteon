@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-naar-JPG-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van TIFF naar JPG kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. JPG biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">TIFF-bestanden uit professionele fotografie of scanners zijn vaak 20–100 MB groot. De conversie naar JPG levert compacte bestanden voor web, e-mail en social media – met een typische verkleining van meer dan 95%.</p><p class=\"text-mid mb-4\">Transparantie en laaginformatie gaan bij de conversie verloren. Voor pure fotografie is dat geen probleem. Bij kwaliteitsniveau 85–90% blijft de visuele kwaliteit uitstekend, terwijl de bestandsgrootte tot enkele honderden kilobytes daalt.</p><p class=\"text-mid\">Fotografen en scannergebruikers in Nederland kunnen hun TIFF-bestanden lokaal en AVG-conform omzetten naar verzendklare JPG's – ideaal voor klantpresentaties en online galerijen.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Ontdek meer gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

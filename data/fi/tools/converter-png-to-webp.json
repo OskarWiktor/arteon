@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-WebP-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. PNG-muunnos WebP-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. WebP tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomalaiset verkkosuunnittelijat ja verkkokauppiaat käyttävät PNG:tä logoihin, tuoteleikkauksiin ja käyttöliittymäelementteihin, joissa on läpinäkyvyys. WebP:hen siirtyessä läpinäkyvyys säilyy täysin, kun tiedostokoko pienenee 25–35 % – suora hyöty latausaikoihin ja Core Web Vitals -tuloksiin.</p><p class=\"text-mid mb-4\">Suurilla yksiväristen alueiden grafiikoilla (logot, kuvakkeet) hyöty on suurin: 200–500 KB:n tiedostot pienenevät usein alle 100 KB:n. Tuotekuville Tori.fi:ssä, Verkkokauppa.com:issa tai Shopify-kaupoissa tämä tarkoittaa nopeampia kategoriasivuja ja parempaa mobiilikokemusta.</p><p class=\"text-mid\">Kaikki käsittely tapahtuu paikallisesti selaimessa – ihanteellista toimistoille ja yrityksille, joiden on noudatettava GDPR:ää. Tuotekuvat tai asiakkaiden grafiikat eivät koskaan poistu laitteeltasi.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Tutustu muihin ilmaisiin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

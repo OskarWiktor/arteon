@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-til-AVIF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av JPG til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. AVIF gir utmerket komprimering med bevart visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">AVIF oppnår opptil 50 % bedre komprimering enn JPEG ved sammenlignbar visuell kvalitet. For nettsider med mange bilder – eiendomsportaler, nettmagasiner, reisesider – reduseres lastetidene betydelig.</p><p class=\"text-mid mb-4\">Plattformer som Finn.no, Booking.com eller Prisjakt.no tar i bruk AVIF for bedre mobilopplevelse. Chrome, Firefox og Safari 16+ støtter AVIF nativt.</p><p class=\"text-mid\">Lokal konvertering i nettleseren beskytter bildene dine: eiendomsbilder, produktbilder eller portretter – ingenting lastes opp. Fullt GDPR-kompatibelt.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

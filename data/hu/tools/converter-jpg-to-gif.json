@@ -175,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-GIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">Bár a GIF nem a leghatékonyabb formátum statikus képekhez, továbbra is nélkülözhetetlen egyszerű animációkhoz, mémekhez és korlátozott színpalettájú grafikákhoz. A 256 színes korlát miatt a GIF kevésbé alkalmas fényképekhez, de ideális ikonokhoz, logókhoz és animált tartalmakhoz közösségi médiában és üzenetküldő alkalmazásokban.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. GIF maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">A JPG-GIF konvertálás hasznos, ha egy fotóra egyszerű, korlátozott palettájú grafikaként van szükség – régi rendszerek bélyegképeihez vagy kizárólag GIF-et támogató hírlevelekhez.</p><p class=\"text-mid mb-4\">A GIF 256 színre korlátozza a palettát, ami fotóknál látható minőségromlást okoz dithering formájában. A legtöbb felhasználáshoz a WebP vagy PNG jobb választás.</p><p class=\"text-mid\">Ha a munkafolyamata kizárólag GIF-et igényel, a helyi konvertálás gyors és adatvédelmi szempontból megfelelő megoldást kínál.</p>"
     },
     {
       "type": "gap",
@@ -227,6 +227,10 @@
     {
       "type": "toolsCarousel",
       "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

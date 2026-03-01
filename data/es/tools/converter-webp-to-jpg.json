@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de WebP a JPG en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir WebP a JPG puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">WebP es óptimo para la web, pero servicios de impresión, Microsoft Office, software antiguo y algunas redes sociales requieren JPG.</p><p class=\"text-mid mb-4\">WebP a JPG asegura compatibilidad máxima. A calidad 85–90%, la calidad visual es casi idéntica. Práctico para enviar imágenes por correo a destinatarios que no pueden abrir WebP.</p><p class=\"text-mid\">Para agencias que deben entregar imágenes en formatos universales, la conversión local es ideal – rápida, segura y conforme al RGPD.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Descubre más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

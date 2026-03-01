@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-zu-WebP-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von JPG in WebP kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet WebP hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">JPEG ist das Standardformat für digitale Fotos – doch für Webseiten sind die Dateigrößen oft zu hoch. WebP komprimiert JPEG-Bilder um weitere 25–35% ohne sichtbaren Qualitätsverlust und verbessert so Ladezeiten und Core Web Vitals direkt.</p><p class=\"text-mid mb-4\">Für E-Commerce-Shops auf Shopify, WooCommerce oder TYPO3 bedeutet die Umstellung von JPG auf WebP messbar schnellere Produktseiten. Google PageSpeed Insights empfiehlt WebP explizit als „Next-Gen-Format\". Bei Qualitätsstufe 80–85% ist der Unterschied zum Original visuell nicht wahrnehmbar.</p><p class=\"text-mid\">Im DACH-Raum, wo strenge Datenschutzregeln gelten, ist die lokale Bildverarbeitung im Browser besonders wertvoll. Produktfotos und Kundenbilder verlassen Ihr Gerät nicht – vollständig DSGVO-konform.</p>"
     },
     {
       "type": "gap",
@@ -223,6 +223,10 @@
     {
       "type": "toolsCarousel",
       "title": "Entdecken Sie weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }

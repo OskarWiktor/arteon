@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-til-JPG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av GIF til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. JPG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">Eldre GIF-bilder må noen ganger konverteres til JPG – for plattformer som kun godtar JPEG eller for å optimalisere filstørrelse for e-post. Kun første bilde i en animert GIF konverteres.</p><p class=\"text-mid mb-4\">JPG tilbyr fulle 16,7 millioner farger i stedet for GIFs 256-fargepalett. Bilder ved et uhell lagret som GIF drar nytte av full fargedybde.</p><p class=\"text-mid\">For arkivering av eldre grafikk i et moderne, universelt format er lokal konvertering rask og GDPR-kompatibel.</p>"
     },
     {
       "type": "gap",
@@ -219,6 +219,10 @@
     {
       "type": "toolsCarousel",
       "title": "Utforsk flere gratisverktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
     }
   ]
 }
