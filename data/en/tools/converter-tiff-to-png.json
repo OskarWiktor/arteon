@@ -51,6 +51,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert TIFF to PNG?",
       "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is a lossless image format supporting millions colors. It is widely used for print and archival with browser support in limited.</p><p class=\"text-mid mb-4\">Converting TIFF to PNG (Portable Network Graphics) ensures universal compatibility across all platforms, browsers, and devices.</p><p class=\"text-mid mb-4\">PNG supports alpha transparency, preserving any transparent areas in your image. As a lossless format, PNG preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many TIFF files as you need, completely free.</p>",

@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "De ce să convertiți WebP în PNG?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini web.</p><p class=\"text-mid mb-4\">Conversia WebP în PNG (Portable Network Graphics) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">PNG suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
-      "imageAlt": "WebP to PNG conversion",
+      "imageAlt": "Conversie WEBP în PNG",
       "variant": "right"
     },
     {
@@ -92,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP vs PNG – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Ambele</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Ambele</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universală</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimizare web",
-          "description": "WebP → PNG – WordPress, Shopify, GomAG."
+          "description": "Convertiți WebP în PNG pentru a păstra transparența și calitatea imaginii pentru grafică web."
         },
         {
           "icon": "RiMailLine",
           "title": "Email și partajare",
-          "description": "PNG – Gmail, Outlook, Yahoo."
+          "description": "Fișierele PNG sunt acceptate fără probleme de clienții de email precum Gmail, Outlook, Yahoo. Convertiți în PNG pentru a obține imagini de înaltă calitate potrivite pentru partajare."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+          "description": "Platforme precum OLX.ro, eMAG.ro, Amazon, Marketplace pot necesita formate specifice – conversia în PNG asigură că imaginile produselor dumneavoastră îndeplinesc cerințele."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documente și arhivare",
-          "description": "PNG – tipografii."
+          "description": "Formatul PNG este o alegere excelentă pentru arhivare și tipărire profesională datorită compresiei fără pierderi."
         }
       ]
     },
@@ -163,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia WebP în PNG în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia WebP în PNG poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. PNG oferă compatibilitate maximă cu toate platformele.</p>"
     },
     {
       "type": "gap",

@@ -37,33 +37,37 @@
         {
           "position": 1,
           "name": "Upload filer",
-          "text": "Traek filer til siden eller klik for at vaelge fra disken."
+          "text": "Træk filer til siden eller klik for at vælge fra disken."
         },
         {
           "position": 2,
           "name": "Indstil kvalitet",
-          "text": "Juster GIF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+          "text": "Juster GIF-kvalitetsskyderen — lavere værdier giver mindre filer."
         },
         {
           "position": 3,
           "name": "Konverter",
-          "text": "Klik pa Konverter — filerne behandles lokalt i browseren."
+          "text": "Klik på Konverter — filerne behandles lokalt i browseren."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download GIF-filerne — enkeltvis eller alle pa en gang."
+          "text": "Download GIF-filerne — enkeltvis eller alle på en gang."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere SVG til GIF?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et tabsfrit billedformat baseret på vektorgrafik. Det bruges bredt til logoer og ikoner.</p><p class=\"text-mid mb-4\">Konvertering af SVG til GIF (Graphics Interchange Format) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">GIF understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer GIF alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "SVG to GIF conversion",
+      "imageAlt": "SVG til GIF konvertering",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG vs GIF – de vigtigste forskelle",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tabsfri</td><td class=\"py-2 text-center\">Tabsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tabsfri</td><td class=\"py-2 text-center\">Tabsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">universel</td><td class=\"py-2 text-center\">universel</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Weboptimering",
-          "description": "SVG → GIF – WordPress, Shopify, DanDomain."
+          "description": "Konverter SVG til GIF for at forberede dine billeder til webpublikation."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail og deling",
-          "description": "GIF – Gmail, Outlook, Jubii."
+          "description": "GIF-filer accepteres problemfrit af e-mailklienter som Gmail, Outlook, Jubii. Konverter til GIF for at få billeder i høj kvalitet til deling."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+          "description": "Platforme som DBA.dk, Bilka.dk, Nemlig.com, COOP kan kræve bestemte formater – konvertering til GIF sikrer, at dine produktbilleder opfylder deres krav."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumenter og arkivering",
-          "description": "GIF – trykkerier."
+          "description": "GIF-formatet tilbyder en moderne og effektiv løsning til billedlagring i dokumenter."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af SVG til GIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af SVG til GIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. GIF tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "SVG to GIF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "SVG til GIF konverter"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Andre vaerktojer"
+      "title": "Andre værktøjer"
     }
   ]
 }

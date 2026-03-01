@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "JPG GIF konverter — JPG GIF",
-    "description": "JPG fotok konvertalasa GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
+    "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/hu/eszkozok/jpg-gif-konverter"
   },
   "hero": {
     "title": "JPG GIF konverter",
-    "description": "JPG fotok konvertalasa GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
+    "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,43 +27,47 @@
       "name": "JPG GIF konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "JPG fotok konvertalasa GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
-      "featureList": ["Konvertalas GIF-re", "Minoseg beallitasa (60-95%)", "Kotegelt konvertalas", "Helyi feldolgozas a bongeszoben"]
+      "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
+      "featureList": ["Konvertálás GIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"]
     },
     "howTo": {
-      "name": "JPG konvertalasa GIF-ra",
-      "description": "JPG fotok konvertalasa GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
+      "name": "JPG konvertálása GIF-ra",
+      "description": "JPG fotok konvertálása GIF formatumra. Tokeletes egyszeru grafikakhoz es ikonokhoz.",
       "steps": [
         {
           "position": 1,
-          "name": "Fajlok feltoltese",
-          "text": "Huzd a fajlokat az oldalra vagy kattints a kivalasztasukhoz."
+          "name": "Fájlok feltöltése",
+          "text": "Húzd a fájlokat az oldalra vagy kattints a kiválasztásukhoz."
         },
         {
           "position": 2,
-          "name": "Minoseg beallitasa",
-          "text": "Allitsd be a GIF minoseg csuszkajat — alacsonyabb ertekek kisebb fajlokat eredmenyeznek."
+          "name": "Minőség beállítása",
+          "text": "Állítsd be a GIF minőség csúszkáját — alacsonyabb értékek kisebb fájlokat eredményeznek."
         },
         {
           "position": 3,
           "name": "Konvertalas",
-          "text": "Kattints a Konvertalas gombra — a fajlok helyben, a bongeszoben kerulnek feldolgozasra."
+          "text": "Kattints a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
         },
         {
           "position": 4,
           "name": "Letoltes",
-          "text": "Toltsd le a GIF fajlokat — egyenkent vagy mindet egyszerre."
+          "text": "Töltsd le a GIF fájlokat — egyenként vagy mindet egyszerre."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Miért érdemes JPG-t GIF-re konvertálni?",
       "html": "<p class=\"text-mid mb-4\">A JPEG (JPG) egy veszteséges képformátum. Széles körben használják fényképekhez.</p><p class=\"text-mid mb-4\">A JPG konvertálása GIF-re (Graphics Interchange Format) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A GIF támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "JPG to GIF conversion",
+      "imageAlt": "JPG konvertálás GIF formátumba",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG vs GIF – a legfontosabb különbségek",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteséges</td><td class=\"py-2 text-center\">Veszteségmentes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteséges</td><td class=\"py-2 text-center\">Veszteségmentes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">univerzális</td><td class=\"py-2 text-center\">univerzális</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Weboldal-optimalizálás",
-          "description": "JPG → GIF – WordPress, Shopify, Shoprenter."
+          "description": "Konvertálja JPG-t GIF-re, hogy előkészítse képeit webes publikációra."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail és megosztás",
-          "description": "GIF – Gmail, Outlook, Citromail."
+          "description": "A GIF fájlokat problémamentesen fogadják az e-mail kliensek, mint a Gmail, Outlook, Citromail. Konvertáljon GIF-re, hogy minőségi képeket kapjon megosztásra."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-kereskedelem",
-          "description": "Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace."
+          "description": "Az olyan platformok, mint a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace specifikus formátumokat követelhetnek – a GIF-re konvertálás biztosítja, hogy termékképei megfelelnek a követelményeknek."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumentumok és archiválás",
-          "description": "GIF – nyomdák."
+          "description": "A GIF formátum modern és hatékony megoldást kínál képek dokumentumokban történő tárolására."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-GIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek.</p><p class=\"text-mid\">Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace – WordPress, Shopify, Shoprenter.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A JPG átalakítása GIF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. GIF maximális kompatibilitást nyújt minden platformmal.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Segítsen nekünk fejleszteni eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "JPG to GIF converter"
+      "imageAlt": "Kapcsolat",
+      "defaultSubject": "JPG-GIF konverter"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Mas eszkozok"
+      "title": "Más eszközök"
     }
   ]
 }

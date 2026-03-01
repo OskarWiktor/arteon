@@ -37,33 +37,37 @@
         {
           "position": 1,
           "name": "Upload filer",
-          "text": "Traek filer til siden eller klik for at vaelge fra disken."
+          "text": "Træk filer til siden eller klik for at vælge fra disken."
         },
         {
           "position": 2,
           "name": "Indstil kvalitet",
-          "text": "Juster TIFF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+          "text": "Juster TIFF-kvalitetsskyderen — lavere værdier giver mindre filer."
         },
         {
           "position": 3,
           "name": "Konverter",
-          "text": "Klik pa Konverter — filerne behandles lokalt i browseren."
+          "text": "Klik på Konverter — filerne behandles lokalt i browseren."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download TIFF-filerne — enkeltvis eller alle pa en gang."
+          "text": "Download TIFF-filerne — enkeltvis eller alle på en gang."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere PNG til TIFF?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tabsfrit billedformat der understøtter millioner farver. Det bruges bredt til grafik med gennemsigtighed.</p><p class=\"text-mid mb-4\">Konvertering af PNG til TIFF (Tagged Image File Format) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">TIFF understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer TIFF alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "PNG to TIFF conversion",
+      "imageAlt": "PNG til TIFF konvertering",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG vs TIFF – de vigtigste forskelle",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tabsfri</td><td class=\"py-2 text-center\">Tabsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tabsfri</td><td class=\"py-2 text-center\">Tabsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">universel</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Weboptimering",
-          "description": "PNG → TIFF – WordPress, Shopify, DanDomain."
+          "description": "Konverter PNG til TIFF for at forberede dine billeder til webpublikation."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail og deling",
-          "description": "TIFF – Gmail, Outlook, Jubii."
+          "description": "TIFF-filer er kompatible med de fleste moderne platforme. Konverter til TIFF for at få billeder i høj kvalitet til deling."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+          "description": "Platforme som DBA.dk, Bilka.dk, Nemlig.com, COOP kan kræve bestemte formater – konvertering til TIFF sikrer, at dine produktbilleder opfylder deres krav."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumenter og arkivering",
-          "description": "TIFF – trykkerier."
+          "description": "TIFF-formatet er et fremragende valg til arkivering og professionelt tryk takket være dets tabsfri komprimering."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af PNG til TIFF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af PNG til TIFF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. TIFF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "PNG to TIFF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "PNG til TIFF konverter"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Andre vaerktojer"
+      "title": "Andre værktøjer"
     }
   ]
 }

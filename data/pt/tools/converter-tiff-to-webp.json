@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Por que converter TIFF para WebP?",
       "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) é um formato de imagem sem perda que suporta milhões de cores. É amplamente utilizado para impressão e arquivo.</p><p class=\"text-mid mb-4\">Converter TIFF para WebP (WebP) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">WebP suporta transparência alfa. WebP oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
-      "imageAlt": "TIFF to WebP conversion",
+      "imageAlt": "Conversão de TIFF para WEBP",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Otimização web",
-          "description": "TIFF → WebP – WordPress, Shopify, Nuvemshop."
+          "description": "Converta TIFF para WebP para reduzir significativamente os tempos de carregamento e melhorar as pontuações de Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email e partilha",
-          "description": "WebP – Gmail, Outlook, UOL Mail."
+          "description": "Os ficheiros WebP são compatíveis com a maioria das plataformas modernas. Converta para WebP para obter anexos mais leves dentro dos limites de tamanho."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.pt, KuantoKusta, Amazon, Mercado Livre."
+          "description": "Plataformas como OLX.pt, KuantoKusta, Amazon, Mercado Livre frequentemente preferem o formato WebP para imagens de produtos devido ao seu equilíbrio ideal entre qualidade e tamanho do ficheiro."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos e arquivo",
-          "description": "WebP – gráficas."
+          "description": "O formato WebP oferece uma solução moderna e eficiente para armazenamento de imagens em documentos."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de TIFF para WebP na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos.</p><p class=\"text-mid\">OLX.pt, KuantoKusta, Amazon, Mercado Livre – WordPress, Shopify, Nuvemshop.</p>"
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de TIFF para WebP pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. WebP proporciona excelente compressão mantendo a qualidade visual.</p>"
     },
     {
       "type": "gap",

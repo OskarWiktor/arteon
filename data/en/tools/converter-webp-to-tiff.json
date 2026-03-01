@@ -59,6 +59,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert WebP to TIFF?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) is a lossy image format supporting millions colors. It is widely used for web images with browser support in Chrome, Firefox, Safari 14+, Edge.</p><p class=\"text-mid mb-4\">Converting WebP to TIFF (Tagged Image File Format) gives you more flexibility in how and where you use your images.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, TIFF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many WebP files as you need, completely free.</p>",

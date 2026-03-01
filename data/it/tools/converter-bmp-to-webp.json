@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Perché convertire BMP in WebP?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) è un formato immagine senza perdita che supporta milioni di colori. È ampiamente utilizzato per le immagini non compresse.</p><p class=\"text-mid mb-4\">La conversione da BMP a WebP (WebP) riduce significativamente le dimensioni del file.</p><p class=\"text-mid mb-4\">WebP supporta la trasparenza alfa. WebP offre compressione con e senza perdita.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
-      "imageAlt": "BMP to WebP conversion",
+      "imageAlt": "Conversione BMP in WEBP",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP vs WebP – le differenze principali",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caratteristica</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressione</td><td class=\"py-2 text-center\">Senza perdita</td><td class=\"py-2 text-center\">Entrambe</td></tr><tr class=\"border-b\"><td class=\"py-2\">Trasparenza</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animazione</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr><td class=\"py-2\">Supporto browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caratteristica</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressione</td><td class=\"py-2 text-center\">Senza perdita</td><td class=\"py-2 text-center\">Entrambe</td></tr><tr class=\"border-b\"><td class=\"py-2\">Trasparenza</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animazione</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr><td class=\"py-2\">Supporto browser</td><td class=\"py-2 text-center\">universale</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Ottimizzazione web",
-          "description": "BMP → WebP – WordPress, Shopify, WooCommerce."
+          "description": "Converti BMP in WebP per ridurre notevolmente i tempi di caricamento delle pagine e migliorare i punteggi Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email e condivisione",
-          "description": "WebP – Gmail, Outlook, Libero Mail."
+          "description": "I file WebP sono compatibili con la maggior parte delle piattaforme moderne. Converti in WebP per ottenere allegati più leggeri entro i limiti di dimensione."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Subito.it, Amazon.it, eBay.it, Vinted."
+          "description": "Piattaforme come Subito.it, Amazon.it, eBay.it, Vinted spesso preferiscono il formato WebP per le immagini dei prodotti grazie al suo equilibrio ottimale tra qualità e dimensione del file."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documenti e archiviazione",
-          "description": "WebP – tipografie."
+          "description": "Il formato WebP offre una soluzione moderna ed efficiente per l’archiviazione delle immagini nei documenti."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da BMP a WebP nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante).</p><p class=\"text-mid\">Subito.it, Amazon.it, eBay.it, Vinted – WordPress, Shopify, WooCommerce.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da BMP a WebP può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. WebP fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
     },
     {
       "type": "gap",

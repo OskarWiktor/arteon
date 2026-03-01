@@ -37,33 +37,37 @@
         {
           "position": 1,
           "name": "Upload filer",
-          "text": "Traek filer til siden eller klik for at vaelge fra disken."
+          "text": "Træk filer til siden eller klik for at vælge fra disken."
         },
         {
           "position": 2,
           "name": "Indstil kvalitet",
-          "text": "Juster AVIF-kvalitetsskyderen — lavere vaerdier giver mindre filer."
+          "text": "Juster AVIF-kvalitetsskyderen — lavere værdier giver mindre filer."
         },
         {
           "position": 3,
           "name": "Konverter",
-          "text": "Klik pa Konverter — filerne behandles lokalt i browseren."
+          "text": "Klik på Konverter — filerne behandles lokalt i browseren."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download AVIF-filerne — enkeltvis eller alle pa en gang."
+          "text": "Download AVIF-filerne — enkeltvis eller alle på en gang."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere WebP til AVIF?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til webbilleder.</p><p class=\"text-mid mb-4\">Konvertering af WebP til AVIF (AV1 Image File Format) udnytter moderne komprimering til mindre filer uden kvalitetstab.</p><p class=\"text-mid mb-4\">AVIF understøtter alfa-gennemsigtighed. AVIF tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "WebP to AVIF conversion",
+      "imageAlt": "WEBP til AVIF konvertering",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Weboptimering",
-          "description": "WebP → AVIF – WordPress, Shopify, DanDomain."
+          "description": "Konverter WebP til AVIF for at reducere indlæsningstiderne markant og forbedre dine Core Web Vitals-scorer."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail og deling",
-          "description": "AVIF – Gmail, Outlook, Jubii."
+          "description": "AVIF-filer er kompatible med de fleste moderne platforme. Konverter til AVIF for at få mindre vedhæftninger inden for størrelsesgrænserne."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+          "description": "Platforme som DBA.dk, Bilka.dk, Nemlig.com, COOP kan kræve bestemte formater – konvertering til AVIF sikrer, at dine produktbilleder opfylder deres krav."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumenter og arkivering",
-          "description": "AVIF – trykkerier."
+          "description": "AVIF-formatet tilbyder en moderne og effektiv løsning til billedlagring i dokumenter."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af WebP til AVIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af WebP til AVIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. AVIF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "WebP to AVIF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "WEBP til AVIF konverter"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Andre vaerktojer"
+      "title": "Andre værktøjer"
     }
   ]
 }

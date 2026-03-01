@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε TIFF σε AVIF;",
       "html": "<p class=\"text-mid mb-4\">Το Tagged Image File Format (TIFF) είναι ένα μορφότυπο εικόνας χωρίς απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή TIFF σε AVIF (AV1 Image File Format) προσφέρει περισσότερη ευελιξία.</p><p class=\"text-mid mb-4\">Το AVIF υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "TIFF to AVIF conversion",
+      "imageAlt": "Μετατροπή TIFF σε AVIF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Βελτιστοποίηση ιστοσελίδας",
-          "description": "TIFF → AVIF – WordPress, Shopify, WooCommerce."
+          "description": "Μετατρέψτε TIFF σε AVIF για να μειώσετε σημαντικά τους χρόνους φόρτωσης των σελίδων και να βελτιώσετε τα Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email και κοινοποίηση",
-          "description": "AVIF – Gmail, Outlook, Forthnet."
+          "description": "Τα αρχεία AVIF είναι συμβατά με τις περισσότερες σύγχρονες πλατφόρμες. Μετατρέψτε σε AVIF για μικρότερα συνημμένα εντός των ορίων μεγέθους."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Ηλεκτρονικό εμπόριο",
-          "description": "Skroutz.gr, Public.gr, Marketplace."
+          "description": "Πλατφόρμες όπως Skroutz.gr, Public.gr, Marketplace μπορεί να απαιτούν συγκεκριμένες μορφές – η μετατροπή σε AVIF εξασφαλίζει ότι οι εικόνες προϊόντων πληρούν τις απαιτήσεις."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Έγγραφα και αρχειοθέτηση",
-          "description": "AVIF – τυπογραφεία."
+          "description": "Η μορφή AVIF προσφέρει μια σύγχρονη και αποδοτική λύση για αποθήκευση εικόνων σε έγγραφα."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Μετατροπή TIFF σε AVIF στην πράξη",
-      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας.</p><p class=\"text-mid\">Skroutz.gr, Public.gr, Marketplace – WordPress, Shopify, WooCommerce.</p>"
+      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας. Είτε προετοιμάζετε εικόνες για Skroutz.gr, Public.gr, Marketplace, βελτιστοποιείτε γραφικά σε WordPress, Shopify, WooCommerce ή μετατρέπετε φωτογραφίες για gov.gr και Taxisnet – η σωστή μορφή έχει καθοριστική σημασία.</p><p class=\"text-mid mb-4\">Τα σύγχρονα πρότυπα ιστού ευνοούν όλο και περισσότερο τα αποδοτικά φορμά. Η μετατροπή TIFF σε AVIF μπορεί να βελτιώσει άμεσα το Largest Contentful Paint (LCP), επηρεάζοντας την κατάταξη στις μηχανές αναζήτησης και την εμπειρία χρήστη.</p><p class=\"text-mid\">Η τοπική επεξεργασία εξασφαλίζει πλήρη συμμόρφωση με τον GDPR για χρήστες στην Ελλάδα και την Κύπρο. AVIF παρέχει εξαιρετική συμπίεση διατηρώντας την οπτική ποιότητα.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "TIFF to AVIF converter"
+      "imageAlt": "Επικοινωνία",
+      "defaultSubject": "Μετατροπέας TIFF σε AVIF"
     },
     {
       "type": "gap",

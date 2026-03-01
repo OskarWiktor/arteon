@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere AVIF til WebP?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til moderne webbilleder.</p><p class=\"text-mid mb-4\">Konvertering af AVIF til WebP (WebP) udnytter moderne komprimering til mindre filer uden kvalitetstab.</p><p class=\"text-mid mb-4\">WebP understøtter alfa-gennemsigtighed. WebP tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
-      "imageAlt": "AVIF to WebP conversion",
+      "imageAlt": "AVIF til WEBP konvertering",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Weboptimering",
-          "description": "AVIF → WebP – WordPress, Shopify, DanDomain."
+          "description": "Konverter AVIF til WebP for at reducere indlæsningstiderne markant og forbedre dine Core Web Vitals-scorer."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail og deling",
-          "description": "WebP – Gmail, Outlook, Jubii."
+          "description": "WebP-filer er kompatible med de fleste moderne platforme. Konverter til WebP for at få mindre vedhæftninger inden for størrelsesgrænserne."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+          "description": "Platforme som DBA.dk, Bilka.dk, Nemlig.com, COOP foretrækker ofte WebP-formatet til produktbilleder på grund af dets optimale balance mellem kvalitet og filstørrelse."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumenter og arkivering",
-          "description": "WebP – trykkerier."
+          "description": "WebP-formatet tilbyder en moderne og effektiv løsning til billedlagring i dokumenter."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af AVIF til WebP i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af AVIF til WebP kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. WebP giver fremragende komprimering med bevaret visuel kvalitet.</p>"
     },
     {
       "type": "gap",

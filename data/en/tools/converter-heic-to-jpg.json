@@ -51,6 +51,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert HEIC to JPG?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is a lossy image format supporting millions colors. It is widely used for Apple device photos with browser support in Safari only.</p><p class=\"text-mid mb-4\">Converting HEIC to JPG (JPEG) ensures universal compatibility across all platforms, browsers, and devices.</p><p class=\"text-mid mb-4\">Note that JPG does not support transparency – any transparent areas will be filled with a solid background color (typically white). As a lossy format, JPG achieves excellent compression ratios, especially for photographs and complex images.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many HEIC files as you need, completely free.</p>",

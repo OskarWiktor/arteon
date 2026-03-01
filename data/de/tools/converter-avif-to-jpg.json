@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Warum AVIF in JPG konvertieren?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für moderne Webbilder verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von AVIF in JPG (JPEG) stellt universelle Kompatibilität mit allen Browsern und Geräten sicher.</p><p class=\"text-mid mb-4\">JPG unterstützt keine Transparenz – transparente Bereiche werden mit einer Hintergrundfarbe gefüllt. Als verlustbehaftetes Format erreicht JPG hervorragende Kompressionsraten.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
-      "imageAlt": "AVIF to JPG conversion",
+      "imageAlt": "AVIF-zu-JPG-Konvertierung",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF vs. JPG – die wichtigsten Unterschiede",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Verlustbehaftet</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Verlustbehaftet</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universell</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-Optimierung",
-          "description": "AVIF → JPG – WordPress, Shopify, TYPO3."
+          "description": "Konvertieren Sie AVIF in JPG, um universelle Kompatibilität mit allen Browsern und Content-Management-Systemen wie WordPress, Shopify, TYPO3 sicherzustellen."
         },
         {
           "icon": "RiMailLine",
           "title": "E-Mail und Teilen",
-          "description": "JPG – Gmail, Outlook, GMX, Web.de."
+          "description": "JPG-Dateien werden von Gmail, Outlook, GMX, Web.de problemlos akzeptiert. JPG ist die sicherste Wahl für E-Mail-Anhänge dank seiner universellen Unterstützung."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-Commerce",
-          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+          "description": "Plattformen wie Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen bevorzugen häufig das JPG-Format für Produktbilder, da es eine optimale Balance zwischen Qualität und Dateigröße bietet."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumente und Archivierung",
-          "description": "JPG – Druckereien."
+          "description": "JPG wird in digitalen Dokumenten, Berichten und Präsentationen weithin akzeptiert."
         }
       ]
     },

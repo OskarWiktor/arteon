@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε WebP σε TIFF;",
       "html": "<p class=\"text-mid mb-4\">Το WebP (WebP) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες web.</p><p class=\"text-mid mb-4\">Η μετατροπή WebP σε TIFF (Tagged Image File Format) προσφέρει περισσότερη ευελιξία.</p><p class=\"text-mid mb-4\">Το TIFF υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "WebP to TIFF conversion",
+      "imageAlt": "Μετατροπή WEBP σε TIFF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Βελτιστοποίηση ιστοσελίδας",
-          "description": "WebP → TIFF – WordPress, Shopify, WooCommerce."
+          "description": "Μετατρέψτε WebP σε TIFF για να προετοιμάσετε τις εικόνες σας για δημοσίευση στο διαδίκτυο."
         },
         {
           "icon": "RiMailLine",
           "title": "Email και κοινοποίηση",
-          "description": "TIFF – Gmail, Outlook, Forthnet."
+          "description": "Τα αρχεία TIFF είναι συμβατά με τις περισσότερες σύγχρονες πλατφόρμες. Μετατρέψτε σε TIFF για εικόνες υψηλής ποιότητας κατάλληλες για κοινοποίηση."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Ηλεκτρονικό εμπόριο",
-          "description": "Skroutz.gr, Public.gr, Marketplace."
+          "description": "Πλατφόρμες όπως Skroutz.gr, Public.gr, Marketplace μπορεί να απαιτούν συγκεκριμένες μορφές – η μετατροπή σε TIFF εξασφαλίζει ότι οι εικόνες προϊόντων πληρούν τις απαιτήσεις."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Έγγραφα και αρχειοθέτηση",
-          "description": "TIFF – τυπογραφεία."
+          "description": "Η μορφή TIFF είναι εξαιρετική επιλογή για αρχειοθέτηση και επαγγελματική εκτύπωση χάρη στη συμπίεση χωρίς απώλειες."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Μετατροπή WebP σε TIFF στην πράξη",
-      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας.</p><p class=\"text-mid\">Skroutz.gr, Public.gr, Marketplace – WordPress, Shopify, WooCommerce.</p>"
+      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας. Είτε προετοιμάζετε εικόνες για Skroutz.gr, Public.gr, Marketplace, βελτιστοποιείτε γραφικά σε WordPress, Shopify, WooCommerce ή μετατρέπετε φωτογραφίες για gov.gr και Taxisnet – η σωστή μορφή έχει καθοριστική σημασία.</p><p class=\"text-mid mb-4\">Τα σύγχρονα πρότυπα ιστού ευνοούν όλο και περισσότερο τα αποδοτικά φορμά. Η μετατροπή WebP σε TIFF μπορεί να βελτιώσει άμεσα το Largest Contentful Paint (LCP), επηρεάζοντας την κατάταξη στις μηχανές αναζήτησης και την εμπειρία χρήστη.</p><p class=\"text-mid\">Η τοπική επεξεργασία εξασφαλίζει πλήρη συμμόρφωση με τον GDPR για χρήστες στην Ελλάδα και την Κύπρο. TIFF παρέχει εξαιρετική συμπίεση διατηρώντας την οπτική ποιότητα.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "WebP to TIFF converter"
+      "imageAlt": "Επικοινωνία",
+      "defaultSubject": "Μετατροπέας WEBP σε TIFF"
     },
     {
       "type": "gap",

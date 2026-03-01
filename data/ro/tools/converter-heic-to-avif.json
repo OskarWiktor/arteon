@@ -2,14 +2,14 @@
   "toolKey": "heicToAvif",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor HEIC in AVIF — HEIC AVIF",
-    "description": "Converteste fotografii HEIC de pe iPhone in format AVIF modern.",
+    "title": "Convertor HEIC în AVIF — HEIC AVIF",
+    "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-heic-in-avif"
   },
   "hero": {
-    "title": "Convertor HEIC in AVIF",
-    "description": "Converteste fotografii HEIC de pe iPhone in format AVIF modern.",
+    "title": "Convertor HEIC în AVIF",
+    "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -19,51 +19,55 @@
     },
     "third": {
       "href": "/ro/instrumente/convertor-heic-in-avif",
-      "label": "Convertor HEIC in AVIF"
+      "label": "Convertor HEIC în AVIF"
     }
   },
   "schemas": {
     "software": {
-      "name": "Convertor HEIC in AVIF",
+      "name": "Convertor HEIC în AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteste fotografii HEIC de pe iPhone in format AVIF modern.",
-      "featureList": ["Conversie in AVIF", "Ajustare calitate (60-95%)", "Conversie in lot", "Procesare locala in browser"]
+      "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern.",
+      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
     },
     "howTo": {
-      "name": "Cum sa convertesti HEIC in AVIF",
-      "description": "Converteste fotografii HEIC de pe iPhone in format AVIF modern.",
+      "name": "Cum să convertiți HEIC în AVIF",
+      "description": "Convertește fotografii HEIC de pe iPhone în format AVIF modern.",
       "steps": [
         {
           "position": 1,
-          "name": "Incarca fisiere",
-          "text": "Trage fisierele pe pagina sau da clic pentru a le selecta."
+          "name": "Încărcați fișiere",
+          "text": "Trageți fișierele pe pagină sau faceți clic pentru a le selecta."
         },
         {
           "position": 2,
-          "name": "Seteaza calitatea",
-          "text": "Ajusteaza cursorul de calitate AVIF — valori mai mici produc fisiere mai mici."
+          "name": "Setați calitatea",
+          "text": "Ajustați cursorul de calitate AVIF — valori mai mici produc fișiere mai mici."
         },
         {
           "position": 3,
           "name": "Converteste",
-          "text": "Da clic pe Converteste — fisierele sunt procesate local in browser."
+          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
         },
         {
           "position": 4,
           "name": "Descarca",
-          "text": "Descarca fisierele AVIF — individual sau toate deodata."
+          "text": "Descărcați fișierele AVIF — individual sau toate deodată."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "De ce să convertiți HEIC în AVIF?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia HEIC în AVIF (AV1 Image File Format) folosește compresia modernă pentru fișiere mai mici fără pierderea calității.</p><p class=\"text-mid mb-4\">AVIF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "HEIC to AVIF conversion",
+      "imageAlt": "Conversie HEIC în AVIF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimizare web",
-          "description": "HEIC → AVIF – WordPress, Shopify, GomAG."
+          "description": "Convertiți HEIC în AVIF pentru a reduce semnificativ timpii de încărcare a paginilor și a îmbunătăți scorurile Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email și partajare",
-          "description": "AVIF – Gmail, Outlook, Yahoo."
+          "description": "Fișierele AVIF sunt compatibile cu majoritatea platformelor moderne. Convertiți în AVIF pentru a obține atașamente mai mici în limitele de dimensiune."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+          "description": "Platforme precum OLX.ro, eMAG.ro, Amazon, Marketplace pot necesita formate specifice – conversia în AVIF asigură că imaginile produselor dumneavoastră îndeplinesc cerințele."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documente și arhivare",
-          "description": "AVIF – tipografii."
+          "description": "Formatul AVIF oferă o soluție modernă și eficientă pentru stocarea imaginilor în documente."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia HEIC în AVIF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia HEIC în AVIF poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. AVIF oferă o compresie excelentă păstrând calitatea vizuală.</p>"
     },
     {
       "type": "gap",
@@ -213,7 +217,7 @@
       "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Contact",
-      "defaultSubject": "HEIC to AVIF converter"
+      "defaultSubject": "Convertor HEIC în AVIF"
     },
     {
       "type": "gap",

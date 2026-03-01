@@ -51,6 +51,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert AVIF to WebP?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) is a lossy image format supporting millions colors. It is widely used for modern web images with browser support in Chrome 85+, Firefox 93+, Safari 16.4+.</p><p class=\"text-mid mb-4\">Converting AVIF to WebP (WebP) takes advantage of modern compression technology for smaller file sizes without quality loss.</p><p class=\"text-mid mb-4\">WebP supports alpha transparency, preserving any transparent areas in your image. WebP supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many AVIF files as you need, completely free.</p>",

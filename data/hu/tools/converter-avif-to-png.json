@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "AVIF PNG konverter – AVIF PNG",
-    "description": "AVIF fajlok konvertalasa vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
+    "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/avif-png-konverter"
   },
   "hero": {
     "title": "AVIF PNG konverter",
-    "description": "AVIF fajlok konvertalasa vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
+    "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,12 +27,12 @@
       "name": "AVIF PNG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "AVIF fajlok konvertalasa vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
+      "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
       "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
     },
     "howTo": {
       "name": "AVIF to PNG",
-      "description": "AVIF fajlok konvertalasa vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
+      "description": "AVIF fajlok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag megorzese.",
       "steps": [
         {
           "name": "Add AVIF files",
@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Miért érdemes AVIF-t PNG-re konvertálni?",
       "html": "<p class=\"text-mid mb-4\">A AV1 Image File Format (AVIF) egy veszteséges képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A AVIF konvertálása PNG-re (Portable Network Graphics) univerzális kompatibilitást biztosít minden böngészővel és eszközzel.</p><p class=\"text-mid mb-4\">A PNG támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
-      "imageAlt": "AVIF to PNG conversion",
+      "imageAlt": "AVIF konvertálás PNG formátumba",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF vs PNG – a legfontosabb különbségek",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Mindkettő</td><td class=\"py-2 text-center\">Veszteségmentes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Nem</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Mindkettő</td><td class=\"py-2 text-center\">Veszteségmentes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Nem</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">univerzális</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Weboldal-optimalizálás",
-          "description": "AVIF → PNG – WordPress, Shopify, Shoprenter."
+          "description": "Konvertálja AVIF-t PNG-re, hogy megőrizze az átlátszóságot és a képminőséget webes grafikákhoz."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail és megosztás",
-          "description": "PNG – Gmail, Outlook, Citromail."
+          "description": "A PNG fájlokat problémamentesen fogadják az e-mail kliensek, mint a Gmail, Outlook, Citromail. Konvertáljon PNG-re, hogy minőségi képeket kapjon megosztásra."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-kereskedelem",
-          "description": "Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace."
+          "description": "Az olyan platformok, mint a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace specifikus formátumokat követelhetnek – a PNG-re konvertálás biztosítja, hogy termékképei megfelelnek a követelményeknek."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumentumok és archiválás",
-          "description": "PNG – nyomdák."
+          "description": "A PNG formátum kiváló választás archiválásra és professzionális nyomtatásra a veszteségmentes tömörítésnek köszönhetően."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-PNG konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek.</p><p class=\"text-mid\">Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace – WordPress, Shopify, Shoprenter.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A AVIF átalakítása PNG formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. PNG maximális kompatibilitást nyújt minden platformmal.</p>"
     },
     {
       "type": "gap",

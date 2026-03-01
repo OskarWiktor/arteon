@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.",
-      "featureList": ["Muunnos GIF-muotoon", "Laadun saato (60-95%)", "Eramuunnos", "Paikallinen kasittely selaimessa"]
+      "featureList": ["Muunnos GIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"]
     },
     "howTo": {
       "name": "Kuinka muuntaa BMP GIF-muotoon",
@@ -37,33 +37,37 @@
         {
           "position": 1,
           "name": "Lataa tiedostot",
-          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levyltä."
         },
         {
           "position": 2,
           "name": "Aseta laatu",
-          "text": "Saada GIF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+          "text": "Säädä GIF-laatuliukusäädintä — alhaisemmat arvot tuottavat pienempiä tiedostoja."
         },
         {
           "position": 3,
           "name": "Muunna",
-          "text": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessa."
         },
         {
           "position": 4,
           "name": "Lataa",
-          "text": "Lataa GIF-tiedostot — yksittain tai kaikki kerralla."
+          "text": "Lataa GIF-tiedostot — yksittäin tai kaikki kerralla."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Miksi muuntaa BMP GIF-muotoon?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) on häviötön kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">BMP:n muuntaminen GIF-muotoon (Graphics Interchange Format) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">GIF tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "BMP to GIF conversion",
+      "imageAlt": "BMP-GIF-muunnos",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP vs GIF – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Häviötön</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Häviötön</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">yleinen</td><td class=\"py-2 text-center\">yleinen</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Verkkosivujen optimointi",
-          "description": "BMP → GIF – WordPress, Shopify, MyCashflow."
+          "description": "Muunna BMP GIF-muotoon valmistellaksesi kuvat verkkojulkaisua varten."
         },
         {
           "icon": "RiMailLine",
           "title": "Sähköposti ja jakaminen",
-          "description": "GIF – Gmail, Outlook, Elisa Sähköposti."
+          "description": "GIF-tiedostot hyväksytään ongelmitta sähköpostiohjelmissa kuten Gmail, Outlook, Elisa Sähköposti. Muunna GIF-muotoon laadukkaita kuvia jakamista varten."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Verkkokauppa",
-          "description": "Tori.fi, Verkkokauppa.com, Gigantti, Amazon."
+          "description": "Alustat kuten Tori.fi, Verkkokauppa.com, Gigantti, Amazon saattavat vaatia tiettejä tiedostomuotoja – GIF-muotoon muuntaminen varmistaa, että tuotekuvasi täyttävät vaatimukset."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Asiakirjat ja arkistointi",
-          "description": "GIF – painotalot."
+          "description": "GIF-muoto tarjoaa modernin ja tehokkaan ratkaisun kuvien tallentamiseen asiakirjoissa."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-GIF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja.</p><p class=\"text-mid\">Tori.fi, Verkkokauppa.com, Gigantti, Amazon – WordPress, Shopify, MyCashflow.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. BMP-muunnos GIF-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. GIF tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "BMP to GIF converter"
+      "imageAlt": "Yhteystiedot",
+      "defaultSubject": "BMP-GIF-muunnin"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Muut tyokalut"
+      "title": "Muut työkalut"
     }
   ]
 }

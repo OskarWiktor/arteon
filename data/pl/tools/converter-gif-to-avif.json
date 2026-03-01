@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować GIF na AVIF?",
       "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) to bezstratny format obsługujący 256 kolorów. Jest powszechnie stosowany do prostych animacji.</p><p class=\"text-mid mb-4\">Konwersja GIF na AVIF (AV1 Image File Format) znacznie zmniejsza rozmiar pliku, przyspieszając ładowanie stron i ułatwiając udostępnianie.</p><p class=\"text-mid mb-4\">AVIF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. AVIF obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików GIF, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "GIF to AVIF conversion",
+      "imageAlt": "Konwersja GIF na AVIF",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF a AVIF – porównanie formatów",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Obie</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Obie</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">uniwersalna</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -220,8 +224,8 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "GIF to AVIF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "Konwerter GIF na AVIF"
     },
     {
       "type": "gap",

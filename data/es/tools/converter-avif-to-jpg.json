@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "¿Por qué convertir AVIF a JPG?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) es un formato de imagen con pérdida que soporta millones de colores. Se utiliza ampliamente para imágenes web modernas.</p><p class=\"text-mid mb-4\">Convertir AVIF a JPG (JPEG) garantiza compatibilidad universal con todos los navegadores y dispositivos.</p><p class=\"text-mid mb-4\">JPG no soporta transparencia – las áreas transparentes se rellenarán con un color de fondo. Como formato con pérdida, JPG logra excelentes ratios de compresión.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
-      "imageAlt": "AVIF to JPG conversion",
+      "imageAlt": "Conversión de AVIF a JPG",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimización web",
-          "description": "AVIF → JPG – WordPress, Shopify, PrestaShop."
+          "description": "Convierte AVIF a JPG para garantizar la compatibilidad universal con todos los navegadores y sistemas de gestión de contenido como WordPress, Shopify, PrestaShop."
         },
         {
           "icon": "RiMailLine",
           "title": "Correo y compartir",
-          "description": "JPG – Gmail, Outlook, Yahoo."
+          "description": "Los archivos JPG son aceptados por clientes de correo como Gmail, Outlook, Yahoo. JPG es la opción más segura para adjuntos de correo electrónico gracias a su soporte universal."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Comercio electrónico",
-          "description": "Amazon.es, Wallapop, MercadoLibre, Milanuncios."
+          "description": "Plataformas como Amazon.es, Wallapop, MercadoLibre, Milanuncios suelen preferir el formato JPG para imágenes de productos por su equilibrio óptimo entre calidad y tamaño de archivo."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos y archivo",
-          "description": "JPG – imprentas."
+          "description": "El formato JPG es ampliamente aceptado en documentos digitales, informes y presentaciones."
         }
       ]
     },
@@ -206,7 +210,7 @@
     {
       "type": "contactForm",
       "title": "Ayudanos a mejorar las herramientas",
-      "description": "Tienes una idea, encontraste un error o quieres sugerir una funcion? Escribenos, respondemos en 24 horas.",
+      "description": "Tienes una idea, encontraste un error o quieres sugerir una funcion? Escríbenos, respondemos en 24 horas.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor AVIF a JPG – Arteon",
       "defaultSubject": "Feedback: Convertidor AVIF a JPG"

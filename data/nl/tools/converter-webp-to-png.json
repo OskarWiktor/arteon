@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Waarom WebP naar PNG converteren?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor webafbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van WebP naar PNG (Portable Network Graphics) zorgt voor universele compatibiliteit met alle browsers en apparaten.</p><p class=\"text-mid mb-4\">PNG ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
-      "imageAlt": "WebP to PNG conversion",
+      "imageAlt": "WEBP naar PNG conversie",
       "variant": "right"
     },
     {
@@ -92,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP vs PNG – de belangrijkste verschillen",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nee</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nee</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universeel</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-optimalisatie",
-          "description": "WebP → PNG – WordPress, Shopify, Lightspeed."
+          "description": "Converteer WebP naar PNG om transparantie en beeldkwaliteit voor webgraphics te behouden."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail en delen",
-          "description": "PNG – Gmail, Outlook, Ziggo Mail."
+          "description": "PNG-bestanden worden probleemloos geaccepteerd door e-mailclients zoals Gmail, Outlook, Ziggo Mail. Converteer naar PNG om afbeeldingen van hoge kwaliteit te krijgen om te delen."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Bol.com, Marktplaats, Amazon.nl, Coolblue."
+          "description": "Platformen zoals Bol.com, Marktplaats, Amazon.nl, Coolblue kunnen specifieke formaten vereisen – conversie naar PNG zorgt ervoor dat uw productafbeeldingen aan de eisen voldoen."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documenten en archivering",
-          "description": "PNG – drukkerijen."
+          "description": "Het PNG-formaat is een uitstekende keuze voor archivering en professioneel drukwerk dankzij de verliesvrije compressie."
         }
       ]
     },
@@ -163,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-naar-PNG-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens.</p><p class=\"text-mid\">Bol.com, Marktplaats, Amazon.nl, Coolblue – WordPress, Shopify, Lightspeed.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van WebP naar PNG kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. PNG biedt maximale compatibiliteit met alle platformen.</p>"
     },
     {
       "type": "gap",

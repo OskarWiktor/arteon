@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Por que converter GIF para JPG?",
       "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) é um formato de imagem sem perda que suporta 256 de cores. É amplamente utilizado para animações simples.</p><p class=\"text-mid mb-4\">Converter GIF para JPG (JPEG) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">JPG não suporta transparência – as áreas transparentes serão preenchidas com uma cor de fundo. Como formato com perda, JPG atinge excelentes rácios de compressão.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
-      "imageAlt": "GIF to JPG conversion",
+      "imageAlt": "Conversão de GIF para JPG",
       "variant": "right"
     },
     {
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Otimização web",
-          "description": "GIF → JPG – WordPress, Shopify, Nuvemshop."
+          "description": "Converta GIF para JPG para garantir compatibilidade universal com todos os navegadores e sistemas de gestão de conteúdo como WordPress, Shopify, Nuvemshop."
         },
         {
           "icon": "RiMailLine",
           "title": "Email e partilha",
-          "description": "JPG – Gmail, Outlook, UOL Mail."
+          "description": "Os ficheiros JPG são aceites por clientes de email como Gmail, Outlook, UOL Mail. O formato JPG é a escolha mais segura para anexos de email graças ao seu suporte universal."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.pt, KuantoKusta, Amazon, Mercado Livre."
+          "description": "Plataformas como OLX.pt, KuantoKusta, Amazon, Mercado Livre frequentemente preferem o formato JPG para imagens de produtos devido ao seu equilíbrio ideal entre qualidade e tamanho do ficheiro."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos e arquivo",
-          "description": "JPG – gráficas."
+          "description": "O formato JPG é amplamente aceite em documentos digitais, relatórios e apresentações."
         }
       ]
     },
@@ -163,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de GIF para JPG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos.</p><p class=\"text-mid\">OLX.pt, KuantoKusta, Amazon, Mercado Livre – WordPress, Shopify, Nuvemshop.</p>"
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de GIF para JPG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. JPG oferece máxima compatibilidade com todas as plataformas.</p>"
     },
     {
       "type": "gap",

@@ -51,6 +51,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert HEIC to PNG?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is a lossy image format supporting millions colors. It is widely used for Apple device photos with browser support in Safari only.</p><p class=\"text-mid mb-4\">Converting HEIC to PNG (Portable Network Graphics) ensures universal compatibility across all platforms, browsers, and devices.</p><p class=\"text-mid mb-4\">PNG supports alpha transparency, preserving any transparent areas in your image. As a lossless format, PNG preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many HEIC files as you need, completely free.</p>",

@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować HEIC na AVIF?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do zdjęć z urządzeń Apple.</p><p class=\"text-mid mb-4\">Konwersja HEIC na AVIF (AV1 Image File Format) pozwala wykorzystać nowoczesną kompresję, która zmniejsza rozmiar plików bez utraty jakości.</p><p class=\"text-mid mb-4\">AVIF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. AVIF obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików HEIC, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "HEIC to AVIF conversion",
+      "imageAlt": "Konwersja HEIC na AVIF",
       "variant": "right"
     },
     {
@@ -224,8 +228,8 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "HEIC to AVIF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "Konwerter HEIC na AVIF"
     },
     {
       "type": "gap",

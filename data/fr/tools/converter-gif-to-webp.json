@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Pourquoi convertir GIF en WebP ?",
       "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) est un format d’image sans perte prenant en charge 256 de couleurs. Il est largement utilisé pour les animations simples.</p><p class=\"text-mid mb-4\">La conversion de GIF en WebP (WebP) réduit considérablement la taille des fichiers.</p><p class=\"text-mid mb-4\">WebP prend en charge la transparence alpha. WebP offre une compression avec et sans perte.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
-      "imageAlt": "GIF to WebP conversion",
+      "imageAlt": "Conversion GIF en WEBP",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF vs WebP – les différences clés",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Les deux</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Les deux</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universelle</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimisation web",
-          "description": "GIF → WebP – WordPress, PrestaShop, Shopify."
+          "description": "Convertissez GIF en WebP pour réduire considérablement les temps de chargement de vos pages et améliorer vos scores Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail et partage",
-          "description": "WebP – Gmail, Outlook, La Poste."
+          "description": "Les fichiers WebP sont compatibles avec la plupart des plateformes modernes. Convertissez en WebP pour obtenir des pièces jointes plus légères respectant les limites de taille."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Leboncoin, Cdiscount, Amazon.fr, Vinted."
+          "description": "Des plateformes comme Leboncoin, Cdiscount, Amazon.fr, Vinted privilégient souvent le format WebP pour les images de produits en raison de son équilibre optimal entre qualité et taille de fichier."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents et archivage",
-          "description": "WebP – imprimeries."
+          "description": "Le format WebP offre une solution moderne et efficace pour le stockage d’images dans les documents."
         }
       ]
     },
@@ -206,7 +210,7 @@
     {
       "type": "contactForm",
       "title": "Aidez-nous a ameliorer nos outils",
-      "description": "Une idee, un bug ou une suggestion ? Ecrivez-nous, nous repondons sous 24 heures.",
+      "description": "Une idee, un bug ou une suggestion ? Écrivez-nous, nous repondons sous 24 heures.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur GIF en WebP – Arteon",
       "defaultSubject": "Feedback: Convertisseur GIF en WebP"

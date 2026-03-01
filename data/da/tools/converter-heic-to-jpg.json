@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere HEIC til JPG?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til Apple-enhedsfotos.</p><p class=\"text-mid mb-4\">Konvertering af HEIC til JPG (JPEG) sikrer universel kompatibilitet med alle browsere og enheder.</p><p class=\"text-mid mb-4\">JPG understøtter ikke gennemsigtighed – gennemsigtige områder fyldes med en baggrundsfarve. Som tabsgivende format opnår JPG fremragende kompressionsforhold.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
-      "imageAlt": "HEIC to JPG conversion",
+      "imageAlt": "HEIC til JPG konvertering",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC vs JPG – de vigtigste forskelle",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Begge</td><td class=\"py-2 text-center\">Tabsgivende</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Begge</td><td class=\"py-2 text-center\">Tabsgivende</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universel</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Weboptimering",
-          "description": "HEIC → JPG – WordPress, Shopify, DanDomain."
+          "description": "Konverter HEIC til JPG for at sikre universel kompatibilitet med alle browsere og indholdsstyringssystemer som WordPress, Shopify, DanDomain."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail og deling",
-          "description": "JPG – Gmail, Outlook, Jubii."
+          "description": "JPG-filer accepteres problemfrit af e-mailklienter som Gmail, Outlook, Jubii. JPG er det sikreste valg til e-mailvedhæftninger takket være dets universelle understøttelse."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "DBA.dk, Bilka.dk, Nemlig.com, COOP."
+          "description": "Platforme som DBA.dk, Bilka.dk, Nemlig.com, COOP foretrækker ofte JPG-formatet til produktbilleder på grund af dets optimale balance mellem kvalitet og filstørrelse."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumenter og arkivering",
-          "description": "JPG – trykkerier."
+          "description": "JPG-formatet er bredt accepteret i digitale dokumenter, rapporter og præsentationer."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af HEIC til JPG i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data.</p><p class=\"text-mid\">DBA.dk, Bilka.dk, Nemlig.com, COOP – WordPress, Shopify, DanDomain.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af HEIC til JPG kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. JPG tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
     },
     {
       "type": "gap",

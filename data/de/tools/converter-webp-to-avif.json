@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "WebP-Dateien in AVIF umwandeln. Noch bessere Kompression im modernen Format.",
-      "featureList": ["Konvertierung zu AVIF", "Qualitatsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+      "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
     },
     "howTo": {
       "name": "WebP zu AVIF konvertieren",
@@ -37,12 +37,12 @@
         {
           "position": 1,
           "name": "Dateien hochladen",
-          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwählen."
         },
         {
           "position": 2,
-          "name": "Qualitat einstellen",
-          "text": "Passen Sie den AVIF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+          "name": "Qualität einstellen",
+          "text": "Passen Sie den AVIF-Qualitätsregler an — niedrigere Werte ergeben kleinere Dateien."
         },
         {
           "position": 3,
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Warum WebP in AVIF konvertieren?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Webbilder verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von WebP in AVIF (AV1 Image File Format) nutzt moderne Komprimierungstechnologie für kleinere Dateien ohne Qualitätsverlust.</p><p class=\"text-mid mb-4\">AVIF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. AVIF bietet sowohl verlustbehaftete als auch verlustfreie Komprimierung.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "WebP to AVIF conversion",
+      "imageAlt": "WEBP-zu-AVIF-Konvertierung",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-Optimierung",
-          "description": "WebP → AVIF – WordPress, Shopify, TYPO3."
+          "description": "Konvertieren Sie WebP in AVIF, um die Ladezeiten Ihrer Webseite deutlich zu reduzieren und bessere Core Web Vitals Werte zu erzielen."
         },
         {
           "icon": "RiMailLine",
           "title": "E-Mail und Teilen",
-          "description": "AVIF – Gmail, Outlook, GMX, Web.de."
+          "description": "AVIF-Dateien werden von Gmail, Outlook, GMX, Web.de von den meisten modernen Plattformen unterstützt. Konvertieren Sie zu AVIF, um kleinere Anhänge zu erhalten, die innerhalb der E-Mail-Größenlimits bleiben."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-Commerce",
-          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+          "description": "Plattformen wie Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen können bestimmte Formate erfordern – die Konvertierung nach AVIF stellt sicher, dass Ihre Produktbilder den Anforderungen entsprechen."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumente und Archivierung",
-          "description": "AVIF – Druckereien."
+          "description": "AVIF bietet ein modernes und effizientes Format für die Bildspeicherung in Dokumenten."
         }
       ]
     },
@@ -216,8 +220,8 @@
       "title": "Helfen Sie uns, unsere Tools zu verbessern",
       "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "WebP to AVIF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "WEBP-zu-AVIF-Konverter"
     },
     {
       "type": "gap",

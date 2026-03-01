@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować TIFF na WebP?",
       "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) to bezstratny format obsługujący miliony kolorów. Jest powszechnie stosowany do druku i archiwizacji.</p><p class=\"text-mid mb-4\">Konwersja TIFF na WebP (WebP) znacznie zmniejsza rozmiar pliku, przyspieszając ładowanie stron i ułatwiając udostępnianie.</p><p class=\"text-mid mb-4\">WebP obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. WebP obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików TIFF, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "TIFF to WebP conversion",
+      "imageAlt": "Konwersja TIFF na WEBP",
       "variant": "right"
     },
     {

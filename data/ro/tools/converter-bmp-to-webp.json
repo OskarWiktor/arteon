@@ -2,14 +2,14 @@
   "toolKey": "bmpToWebp",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor BMP in WebP – BMP WebP",
-    "description": "Converteste fisiere BMP in WebP usor. Reducere de pana la 95%.",
+    "title": "Convertor BMP în WebP – BMP WebP",
+    "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-bmp-in-webp"
   },
   "hero": {
-    "title": "Convertor BMP in WebP",
-    "description": "Converteste fisiere BMP in WebP usor. Reducere de pana la 95%.",
+    "title": "Convertor BMP în WebP",
+    "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -19,20 +19,20 @@
     },
     "third": {
       "href": "/ro/instrumente/convertor-bmp-in-webp",
-      "label": "Convertor BMP in WebP"
+      "label": "Convertor BMP în WebP"
     }
   },
   "schemas": {
     "software": {
-      "name": "Convertor BMP in WebP",
+      "name": "Convertor BMP în WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteste fisiere BMP in WebP usor. Reducere de pana la 95%.",
+      "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%.",
       "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
     },
     "howTo": {
       "name": "BMP to WebP",
-      "description": "Converteste fisiere BMP in WebP usor. Reducere de pana la 95%.",
+      "description": "Convertește fișiere BMP în WebP usor. Reducere de pana la 95%.",
       "steps": [
         {
           "name": "Add BMP files",
@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "De ce să convertiți BMP în WebP?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia BMP în WebP (WebP) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">WebP suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
-      "imageAlt": "BMP to WebP conversion",
+      "imageAlt": "Conversie BMP în WEBP",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP vs WebP – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Ambele</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Ambele</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universală</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimizare web",
-          "description": "BMP → WebP – WordPress, Shopify, GomAG."
+          "description": "Convertiți BMP în WebP pentru a reduce semnificativ timpii de încărcare a paginilor și a îmbunătăți scorurile Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email și partajare",
-          "description": "WebP – Gmail, Outlook, Yahoo."
+          "description": "Fișierele WebP sunt compatibile cu majoritatea platformelor moderne. Convertiți în WebP pentru a obține atașamente mai mici în limitele de dimensiune."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+          "description": "Platforme precum OLX.ro, eMAG.ro, Amazon, Marketplace preferă adesea formatul WebP pentru imaginile de produse datorită echilibrului optim între calitate și dimensiunea fișierului."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documente și arhivare",
-          "description": "WebP – tipografii."
+          "description": "Formatul WebP oferă o soluție modernă și eficientă pentru stocarea imaginilor în documente."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia BMP în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia BMP în WebP poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. WebP oferă o compresie excelentă păstrând calitatea vizuală.</p>"
     },
     {
       "type": "gap",
@@ -202,10 +206,10 @@
     {
       "type": "contactForm",
       "title": "Ajuta-ne sa imbunatatim instrumentele",
-      "description": "Ai o idee, ai gasit un bug sau vrei sa sugerezi o functie? Scrie-ne, raspundem in 24 de ore.",
+      "description": "Ai o idee, ai gasit un bug sau vrei sa sugerezi o functie? Scriați-ne, raspundem in 24 de ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor BMP in WebP – Arteon",
-      "defaultSubject": "Feedback: Convertor BMP in WebP"
+      "defaultSubject": "Feedback: Convertor BMP în WebP"
     },
     {
       "type": "gap",

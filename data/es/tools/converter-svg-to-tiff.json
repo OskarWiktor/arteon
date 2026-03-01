@@ -28,21 +28,21 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte graficos vectoriales SVG a raster TIFF de alta calidad.",
-      "featureList": ["Conversion a TIFF", "Ajuste de calidad (60-95%)", "Conversion por lotes", "Procesamiento local en el navegador"]
+      "featureList": ["Conversión a TIFF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"]
     },
     "howTo": {
-      "name": "Como convertir SVG a TIFF",
+      "name": "Cómo convertir SVG a TIFF",
       "description": "Convierte graficos vectoriales SVG a raster TIFF de alta calidad.",
       "steps": [
         {
           "position": 1,
           "name": "Subir archivos",
-          "text": "Arrastra archivos a la pagina o haz clic para seleccionarlos."
+          "text": "Arrastra archivos a la página o haz clic para seleccionarlos."
         },
         {
           "position": 2,
           "name": "Ajustar calidad",
-          "text": "Ajusta el control de calidad TIFF — valores mas bajos producen archivos mas pequenos."
+          "text": "Ajusta el control de calidad TIFF — valores más bajos producen archivos más pequeños."
         },
         {
           "position": 3,
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "¿Por qué convertir SVG a TIFF?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) es un formato de imagen sin pérdida basado en gráficos vectoriales. Se utiliza ampliamente para logotipos e iconos.</p><p class=\"text-mid mb-4\">Convertir SVG a TIFF (Tagged Image File Format) ofrece más flexibilidad.</p><p class=\"text-mid mb-4\">TIFF soporta transparencia alfa. Como formato sin pérdida, TIFF preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "SVG to TIFF conversion",
+      "imageAlt": "Conversión de SVG a TIFF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimización web",
-          "description": "SVG → TIFF – WordPress, Shopify, PrestaShop."
+          "description": "Convierte SVG a TIFF para preparar tus imágenes para la publicación en la web."
         },
         {
           "icon": "RiMailLine",
           "title": "Correo y compartir",
-          "description": "TIFF – Gmail, Outlook, Yahoo."
+          "description": "Los archivos TIFF son compatibles con la mayoría de las plataformas modernas. Convierte a TIFF para imágenes de alta calidad adecuadas para compartir."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Comercio electrónico",
-          "description": "Amazon.es, Wallapop, MercadoLibre, Milanuncios."
+          "description": "Plataformas como Amazon.es, Wallapop, MercadoLibre, Milanuncios pueden requerir formatos específicos – convertir a TIFF asegura que tus imágenes de productos cumplan con sus requisitos."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos y archivo",
-          "description": "TIFF – imprentas."
+          "description": "El formato TIFF es una excelente opción para el archivo y la impresión profesional gracias a su compresión sin pérdida."
         }
       ]
     },
@@ -216,8 +220,8 @@
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "SVG to TIFF converter"
+      "imageAlt": "Contacto",
+      "defaultSubject": "Convertidor SVG a TIFF"
     },
     {
       "type": "gap",

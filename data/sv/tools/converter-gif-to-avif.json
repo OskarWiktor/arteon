@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera forsta GIF-bildrutan till statisk AVIF-bild med utmarkt komprimering.",
-      "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webblasaren"]
+      "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"]
     },
     "howTo": {
       "name": "Hur konverterar man GIF till AVIF",
@@ -37,33 +37,37 @@
         {
           "position": 1,
           "name": "Ladda upp filer",
-          "text": "Dra filer till sidan eller klicka for att valja fran disk."
+          "text": "Dra filer till sidan eller klicka för att välja från disk."
         },
         {
           "position": 2,
-          "name": "Stall in kvalitet",
-          "text": "Justera AVIF-kvalitetsreglaget — lagre varden ger mindre filer."
+          "name": "Ställ in kvalitet",
+          "text": "Justera AVIF-kvalitetsreglaget — lägre värden ger mindre filer."
         },
         {
           "position": 3,
           "name": "Konvertera",
-          "text": "Klicka pa Konvertera — filerna bearbetas lokalt i webblasaren."
+          "text": "Klicka på Konvertera — filerna bearbetas lokalt i webbläsaren."
         },
         {
           "position": 4,
           "name": "Ladda ner",
-          "text": "Ladda ner AVIF-filerna — enskilt eller alla pa en gang."
+          "text": "Ladda ner AVIF-filerna — enskilt eller alla på en gång."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Varför konvertera GIF till AVIF?",
       "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) är ett förlustfritt bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av GIF till AVIF (AV1 Image File Format) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">AVIF stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "GIF to AVIF conversion",
+      "imageAlt": "GIF till AVIF konvertering",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF vs AVIF – de viktigaste skillnaderna",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Förlustfri</td><td class=\"py-2 text-center\">Båda</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Förlustfri</td><td class=\"py-2 text-center\">Båda</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Webboptimering",
-          "description": "GIF → AVIF – WordPress, Shopify, Quickbutik."
+          "description": "Konvertera GIF till AVIF för att avsevärt minska laddningstiderna och förbättra dina Core Web Vitals-resultat."
         },
         {
           "icon": "RiMailLine",
           "title": "E-post och delning",
-          "description": "AVIF – Gmail, Outlook, Telia."
+          "description": "AVIF-filer är kompatibla med de flesta moderna plattformar. Konvertera till AVIF för att få mindre bilagor inom storleksgränserna."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "Blocket.se, Tradera, CDON, Amazon.se."
+          "description": "Plattformar som Blocket.se, Tradera, CDON, Amazon.se kan kräva specifika format – konvertering till AVIF säkerställer att dina produktbilder uppfyller kraven."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokument och arkivering",
-          "description": "AVIF – tryckerier."
+          "description": "AVIF-formatet erbjuder en modern och effektiv lösning för bildlagring i dokument."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF-till-AVIF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data.</p><p class=\"text-mid\">Blocket.se, Tradera, CDON, Amazon.se – WordPress, Shopify, Quickbutik.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera GIF till AVIF kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. AVIF ger utmärkt komprimering med bibehållen visuell kvalitet.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Hjälp oss förbättra våra verktyg",
       "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "GIF to AVIF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "GIF till AVIF konverterare"
     },
     {
       "type": "gap",

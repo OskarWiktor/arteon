@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "¿Por qué convertir PNG a WebP?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) es un formato de imagen sin pérdida que soporta millones de colores. Se utiliza ampliamente para gráficos con transparencia.</p><p class=\"text-mid mb-4\">Convertir PNG a WebP (WebP) reduce significativamente el tamaño del archivo.</p><p class=\"text-mid mb-4\">WebP soporta transparencia alfa. WebP ofrece compresión con y sin pérdida.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
-      "imageAlt": "PNG to WebP conversion",
+      "imageAlt": "Conversión de PNG a WEBP",
       "variant": "right"
     },
     {
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimización web",
-          "description": "PNG → WebP – WordPress, Shopify, PrestaShop."
+          "description": "Convierte PNG a WebP para reducir significativamente los tiempos de carga de tu página y mejorar las puntuaciones de Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Correo y compartir",
-          "description": "WebP – Gmail, Outlook, Yahoo."
+          "description": "Los archivos WebP son compatibles con la mayoría de las plataformas modernas. Convierte a WebP para obtener adjuntos más pequeños que respeten los límites de tamaño."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Comercio electrónico",
-          "description": "Amazon.es, Wallapop, MercadoLibre, Milanuncios."
+          "description": "Plataformas como Amazon.es, Wallapop, MercadoLibre, Milanuncios suelen preferir el formato WebP para imágenes de productos por su equilibrio óptimo entre calidad y tamaño de archivo."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos y archivo",
-          "description": "WebP – imprentas."
+          "description": "El formato WebP ofrece una solución moderna y eficiente para el almacenamiento de imágenes en documentos."
         }
       ]
     },

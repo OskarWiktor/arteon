@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Varför konvertera WebP till JPG?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) är ett förlustbringande bildformat. Det används i stor utsträckning för webbbilder.</p><p class=\"text-mid mb-4\">Konvertering av WebP till JPG (JPEG) säkerställer universell kompatibilitet med alla webbläsare och enheter.</p><p class=\"text-mid mb-4\">JPG stödjer inte transparens – transparenta områden fylls med en bakgrundsfärg.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
-      "imageAlt": "WebP to JPG conversion",
+      "imageAlt": "WEBP till JPG konvertering",
       "variant": "right"
     },
     {
@@ -92,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP vs JPG – de viktigaste skillnaderna",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Båda</td><td class=\"py-2 text-center\">Förlustbringande</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nej</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Båda</td><td class=\"py-2 text-center\">Förlustbringande</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nej</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universell</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Webboptimering",
-          "description": "WebP → JPG – WordPress, Shopify, Quickbutik."
+          "description": "Konvertera WebP till JPG för att säkerställa universell kompatibilitet med alla webbläsare och innehållshanteringssystem som WordPress, Shopify, Quickbutik."
         },
         {
           "icon": "RiMailLine",
           "title": "E-post och delning",
-          "description": "JPG – Gmail, Outlook, Telia."
+          "description": "JPG-filer accepteras utan problem av e-postklienter som Gmail, Outlook, Telia. JPG är det säkraste valet för e-postbilagor tack vare dess universella stöd."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "Blocket.se, Tradera, CDON, Amazon.se."
+          "description": "Plattformar som Blocket.se, Tradera, CDON, Amazon.se föredrar ofta JPG-formatet för produktbilder tack vare dess optimala balans mellan kvalitet och filstorlek."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokument och arkivering",
-          "description": "JPG – tryckerier."
+          "description": "JPG-formatet är brett accepterat i digitala dokument, rapporter och presentationer."
         }
       ]
     },
@@ -163,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-till-JPG-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data.</p><p class=\"text-mid\">Blocket.se, Tradera, CDON, Amazon.se – WordPress, Shopify, Quickbutik.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera WebP till JPG kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. JPG erbjuder maximal kompatibilitet med alla plattformar.</p>"
     },
     {
       "type": "gap",

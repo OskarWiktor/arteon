@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować AVIF na PNG?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do nowoczesnych obrazów webowych.</p><p class=\"text-mid mb-4\">Konwersja AVIF na PNG (Portable Network Graphics) zapewnia uniwersalną kompatybilność z każdą przeglądarką i urządzeniem.</p><p class=\"text-mid mb-4\">PNG obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, PNG zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików AVIF, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "AVIF to PNG",
+      "imageAlt": "Konwersja AVIF na PNG",
       "variant": "right"
     },
     {
@@ -92,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF a PNG – porównanie formatów",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Obie</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Nie</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Obie</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Nie</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">uniwersalna</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",

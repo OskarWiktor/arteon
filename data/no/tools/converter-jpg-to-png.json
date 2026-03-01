@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere JPG til PNG?",
       "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er et tapsbringende bildeformat. Det brukes mye til fotografier.</p><p class=\"text-mid mb-4\">Konvertering av JPG til PNG (Portable Network Graphics) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">PNG støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
-      "imageAlt": "JPG to PNG conversion",
+      "imageAlt": "JPG til PNG konvertering",
       "variant": "right"
     },
     {
@@ -92,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG vs PNG – de viktigste forskjellene",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tapsbringende</td><td class=\"py-2 text-center\">Tapsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gjennomsiktighet</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animasjon</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Nei</td></tr><tr><td class=\"py-2\">Nettleserstøtte</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tapsbringende</td><td class=\"py-2 text-center\">Tapsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gjennomsiktighet</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animasjon</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Nei</td></tr><tr><td class=\"py-2\">Nettleserstøtte</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">universell</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Nettstedsoptimalisering",
-          "description": "JPG → PNG – WordPress, Shopify, Mystore."
+          "description": "Konverter JPG til PNG for å bevare gjennomsiktighet og bildekvalitet for webgrafikk."
         },
         {
           "icon": "RiMailLine",
           "title": "E-post og deling",
-          "description": "PNG – Gmail, Outlook, Telenor."
+          "description": "PNG-filer aksepteres problemfritt av e-postklienter som Gmail, Outlook, Telenor. Konverter til PNG for å få bilder av høy kvalitet til deling."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "Finn.no, Komplett.no, Elkjøp, CDON."
+          "description": "Plattformer som Finn.no, Komplett.no, Elkjøp, CDON kan kreve spesifikke formater – konvertering til PNG sikrer at produktbildene dine oppfyller kravene."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumenter og arkivering",
-          "description": "PNG – trykkerier."
+          "description": "PNG-formatet er et fremragende valg for arkivering og profesjonell trykking takket være sin tapsfrie komprimering."
         }
       ]
     },
@@ -163,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-til-PNG-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data.</p><p class=\"text-mid\">Finn.no, Komplett.no, Elkjøp, CDON – WordPress, Shopify, Mystore.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av JPG til PNG kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. PNG tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
     },
     {
       "type": "gap",

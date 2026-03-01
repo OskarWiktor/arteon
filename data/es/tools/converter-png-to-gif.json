@@ -28,21 +28,21 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte graficos PNG a GIF. Ideal para iconos simples y graficos.",
-      "featureList": ["Conversion a GIF", "Ajuste de calidad (60-95%)", "Conversion por lotes", "Procesamiento local en el navegador"]
+      "featureList": ["Conversión a GIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"]
     },
     "howTo": {
-      "name": "Como convertir PNG a GIF",
+      "name": "Cómo convertir PNG a GIF",
       "description": "Convierte graficos PNG a GIF. Ideal para iconos simples y graficos.",
       "steps": [
         {
           "position": 1,
           "name": "Subir archivos",
-          "text": "Arrastra archivos a la pagina o haz clic para seleccionarlos."
+          "text": "Arrastra archivos a la página o haz clic para seleccionarlos."
         },
         {
           "position": 2,
           "name": "Ajustar calidad",
-          "text": "Ajusta el control de calidad GIF — valores mas bajos producen archivos mas pequenos."
+          "text": "Ajusta el control de calidad GIF — valores más bajos producen archivos más pequeños."
         },
         {
           "position": 3,
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "¿Por qué convertir PNG a GIF?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) es un formato de imagen sin pérdida que soporta millones de colores. Se utiliza ampliamente para gráficos con transparencia.</p><p class=\"text-mid mb-4\">Convertir PNG a GIF (Graphics Interchange Format) ofrece más flexibilidad.</p><p class=\"text-mid mb-4\">GIF soporta transparencia alfa. Como formato sin pérdida, GIF preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "PNG to GIF conversion",
+      "imageAlt": "Conversión de PNG a GIF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimización web",
-          "description": "PNG → GIF – WordPress, Shopify, PrestaShop."
+          "description": "Convierte PNG a GIF para preparar tus imágenes para la publicación en la web."
         },
         {
           "icon": "RiMailLine",
           "title": "Correo y compartir",
-          "description": "GIF – Gmail, Outlook, Yahoo."
+          "description": "Los archivos GIF son aceptados por clientes de correo como Gmail, Outlook, Yahoo. Convierte a GIF para imágenes de alta calidad adecuadas para compartir."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Comercio electrónico",
-          "description": "Amazon.es, Wallapop, MercadoLibre, Milanuncios."
+          "description": "Plataformas como Amazon.es, Wallapop, MercadoLibre, Milanuncios pueden requerir formatos específicos – convertir a GIF asegura que tus imágenes de productos cumplan con sus requisitos."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos y archivo",
-          "description": "GIF – imprentas."
+          "description": "El formato GIF ofrece una solución moderna y eficiente para el almacenamiento de imágenes en documentos."
         }
       ]
     },
@@ -216,8 +220,8 @@
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "PNG to GIF converter"
+      "imageAlt": "Contacto",
+      "defaultSubject": "Convertidor PNG a GIF"
     },
     {
       "type": "gap",

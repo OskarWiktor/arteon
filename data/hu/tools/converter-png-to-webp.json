@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Miért érdemes PNG-t WebP-re konvertálni?",
       "html": "<p class=\"text-mid mb-4\">A Portable Network Graphics (PNG) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A PNG konvertálása WebP-re (WebP) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A WebP támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
-      "imageAlt": "PNG to WebP conversion",
+      "imageAlt": "PNG konvertálás WEBP formátumba",
       "variant": "right"
     },
     {
@@ -92,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG vs WebP – a legfontosabb különbségek",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteségmentes</td><td class=\"py-2 text-center\">Mindkettő</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteségmentes</td><td class=\"py-2 text-center\">Mindkettő</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">univerzális</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Weboldal-optimalizálás",
-          "description": "PNG → WebP – WordPress, Shopify, Shoprenter."
+          "description": "Konvertálja PNG-t WebP-re, hogy jelentősen csökkentse az oldalbetöltési időt és javítsa a Core Web Vitals eredményeket."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail és megosztás",
-          "description": "WebP – Gmail, Outlook, Citromail."
+          "description": "A WebP fájlokat a legtöbb modern platform támogatja. Konvertáljon WebP-re, hogy kisebb mellékleteket kapjon a méretkorlátokon belül."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-kereskedelem",
-          "description": "Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace."
+          "description": "Az olyan platformok, mint a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace gyakran előnyben részesítik a WebP formátumot termékképeknél a minőség és a fájlméret optimális egyensúlya miatt."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumentumok és archiválás",
-          "description": "WebP – nyomdák."
+          "description": "A WebP formátum modern és hatékony megoldást kínál képek dokumentumokban történő tárolására."
         }
       ]
     },
@@ -163,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-WebP konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek.</p><p class=\"text-mid\">Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace – WordPress, Shopify, Shoprenter.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A PNG átalakítása WebP formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. WebP kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
     },
     {
       "type": "gap",

@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "¿Por qué convertir SVG a PNG?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) es un formato de imagen sin pérdida basado en gráficos vectoriales. Se utiliza ampliamente para logotipos e iconos.</p><p class=\"text-mid mb-4\">Convertir SVG a PNG (Portable Network Graphics) ofrece más flexibilidad.</p><p class=\"text-mid mb-4\">PNG soporta transparencia alfa. Como formato sin pérdida, PNG preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
-      "imageAlt": "SVG to PNG conversion",
+      "imageAlt": "Conversión de SVG a PNG",
       "variant": "right"
     },
     {
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimización web",
-          "description": "SVG → PNG – WordPress, Shopify, PrestaShop."
+          "description": "Convierte SVG a PNG para preservar la transparencia y la calidad de imagen para gráficos web."
         },
         {
           "icon": "RiMailLine",
           "title": "Correo y compartir",
-          "description": "PNG – Gmail, Outlook, Yahoo."
+          "description": "Los archivos PNG son aceptados por clientes de correo como Gmail, Outlook, Yahoo. Convierte a PNG para imágenes de alta calidad adecuadas para compartir."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Comercio electrónico",
-          "description": "Amazon.es, Wallapop, MercadoLibre, Milanuncios."
+          "description": "Plataformas como Amazon.es, Wallapop, MercadoLibre, Milanuncios pueden requerir formatos específicos – convertir a PNG asegura que tus imágenes de productos cumplan con sus requisitos."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos y archivo",
-          "description": "PNG – imprentas."
+          "description": "El formato PNG es una excelente opción para el archivo y la impresión profesional gracias a su compresión sin pérdida."
         }
       ]
     },

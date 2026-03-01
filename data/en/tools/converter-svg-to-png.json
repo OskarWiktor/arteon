@@ -52,6 +52,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert SVG to PNG?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is a lossless image format based on vector graphics. It is widely used for logos and icons and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting SVG to PNG (Portable Network Graphics) converts scalable vector graphics into a fixed-resolution raster image suitable for any context.</p><p class=\"text-mid mb-4\">PNG supports alpha transparency, preserving any transparent areas in your image. As a lossless format, PNG preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many SVG files as you need, completely free.</p>",

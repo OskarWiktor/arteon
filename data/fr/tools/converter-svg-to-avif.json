@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les graphiques vectoriels SVG en format raster AVIF compact.",
-      "featureList": ["Conversion en AVIF", "Reglage de la qualite (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
     },
     "howTo": {
       "name": "Comment convertir SVG en AVIF",
@@ -36,12 +36,12 @@
       "steps": [
         {
           "position": 1,
-          "name": "Telecharger les fichiers",
-          "text": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+          "name": "Télécharger les fichiers",
+          "text": "Glissez les fichiers sur la page ou cliquez pour les sélectionner."
         },
         {
           "position": 2,
-          "name": "Regler la qualite",
+          "name": "Régler la qualité",
           "text": "Ajustez le curseur de qualite AVIF — des valeurs plus basses donnent des fichiers plus petits."
         },
         {
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Pourquoi convertir SVG en AVIF ?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) est un format d’image sans perte basé sur des graphiques vectoriels. Il est largement utilisé pour les logos et icônes.</p><p class=\"text-mid mb-4\">La conversion de SVG en AVIF (AV1 Image File Format) réduit considérablement la taille des fichiers.</p><p class=\"text-mid mb-4\">AVIF prend en charge la transparence alpha. AVIF offre une compression avec et sans perte.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "SVG to AVIF conversion",
+      "imageAlt": "Conversion SVG en AVIF",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG vs AVIF – les différences clés",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Les deux</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Les deux</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universelle</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimisation web",
-          "description": "SVG → AVIF – WordPress, PrestaShop, Shopify."
+          "description": "Convertissez SVG en AVIF pour réduire considérablement les temps de chargement de vos pages et améliorer vos scores Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail et partage",
-          "description": "AVIF – Gmail, Outlook, La Poste."
+          "description": "Les fichiers AVIF sont compatibles avec la plupart des plateformes modernes. Convertissez en AVIF pour obtenir des pièces jointes plus légères respectant les limites de taille."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Leboncoin, Cdiscount, Amazon.fr, Vinted."
+          "description": "Des plateformes comme Leboncoin, Cdiscount, Amazon.fr, Vinted peuvent exiger des formats spécifiques – la conversion en AVIF garantit que vos images produits répondent à leurs exigences."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents et archivage",
-          "description": "AVIF – imprimeries."
+          "description": "Le format AVIF offre une solution moderne et efficace pour le stockage d’images dans les documents."
         }
       ]
     },
@@ -217,7 +221,7 @@
       "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Contact",
-      "defaultSubject": "SVG to AVIF converter"
+      "defaultSubject": "Convertisseur SVG en AVIF"
     },
     {
       "type": "gap",

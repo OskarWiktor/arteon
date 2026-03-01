@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Waarom JPG naar TIFF converteren?",
       "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor foto's.</p><p class=\"text-mid mb-4\">Het converteren van JPG naar TIFF (Tagged Image File Format) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">TIFF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "JPG to TIFF conversion",
+      "imageAlt": "JPG naar TIFF conversie",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG vs TIFF – de belangrijkste verschillen",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossy</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Nee</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossy</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Nee</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">universeel</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-optimalisatie",
-          "description": "JPG → TIFF – WordPress, Shopify, Lightspeed."
+          "description": "Converteer JPG naar TIFF om uw afbeeldingen voor te bereiden voor webpublicatie."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail en delen",
-          "description": "TIFF – Gmail, Outlook, Ziggo Mail."
+          "description": "TIFF-bestanden worden door de meeste moderne platformen ondersteund. Converteer naar TIFF om afbeeldingen van hoge kwaliteit te krijgen om te delen."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Bol.com, Marktplaats, Amazon.nl, Coolblue."
+          "description": "Platformen zoals Bol.com, Marktplaats, Amazon.nl, Coolblue kunnen specifieke formaten vereisen – conversie naar TIFF zorgt ervoor dat uw productafbeeldingen aan de eisen voldoen."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documenten en archivering",
-          "description": "TIFF – drukkerijen."
+          "description": "Het TIFF-formaat is een uitstekende keuze voor archivering en professioneel drukwerk dankzij de verliesvrije compressie."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-naar-TIFF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens.</p><p class=\"text-mid\">Bol.com, Marktplaats, Amazon.nl, Coolblue – WordPress, Shopify, Lightspeed.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van JPG naar TIFF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. TIFF biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
     },
     {
       "type": "gap",
@@ -213,7 +217,7 @@
       "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Contact",
-      "defaultSubject": "JPG to TIFF converter"
+      "defaultSubject": "JPG naar TIFF converter"
     },
     {
       "type": "gap",

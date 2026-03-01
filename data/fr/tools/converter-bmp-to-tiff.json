@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression.",
-      "featureList": ["Conversion en TIFF", "Reglage de la qualite (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+      "featureList": ["Conversion en TIFF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
     },
     "howTo": {
       "name": "Comment convertir BMP en TIFF",
@@ -36,12 +36,12 @@
       "steps": [
         {
           "position": 1,
-          "name": "Telecharger les fichiers",
-          "text": "Glissez les fichiers sur la page ou cliquez pour les selectionner."
+          "name": "Télécharger les fichiers",
+          "text": "Glissez les fichiers sur la page ou cliquez pour les sélectionner."
         },
         {
           "position": 2,
-          "name": "Regler la qualite",
+          "name": "Régler la qualité",
           "text": "Ajustez le curseur de qualite TIFF — des valeurs plus basses donnent des fichiers plus petits."
         },
         {
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Pourquoi convertir BMP en TIFF ?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) est un format d’image sans perte prenant en charge des millions de couleurs. Il est largement utilisé pour les images non compressées.</p><p class=\"text-mid mb-4\">La conversion de BMP en TIFF (Tagged Image File Format) offre plus de flexibilité.</p><p class=\"text-mid mb-4\">TIFF prend en charge la transparence alpha. En tant que format sans perte, TIFF préserve l’intégralité des données de l’image.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "BMP to TIFF conversion",
+      "imageAlt": "Conversion BMP en TIFF",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP vs TIFF – les différences clés",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Sans perte</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Non</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Sans perte</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Non</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universelle</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimisation web",
-          "description": "BMP → TIFF – WordPress, PrestaShop, Shopify."
+          "description": "Convertissez BMP en TIFF pour préparer vos images pour la publication sur le web."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail et partage",
-          "description": "TIFF – Gmail, Outlook, La Poste."
+          "description": "Les fichiers TIFF sont compatibles avec la plupart des plateformes modernes. Convertissez en TIFF pour des images de haute qualité adaptées au partage."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Leboncoin, Cdiscount, Amazon.fr, Vinted."
+          "description": "Des plateformes comme Leboncoin, Cdiscount, Amazon.fr, Vinted peuvent exiger des formats spécifiques – la conversion en TIFF garantit que vos images produits répondent à leurs exigences."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents et archivage",
-          "description": "TIFF – imprimeries."
+          "description": "Le format TIFF est un excellent choix pour l’archivage et l’impression professionnelle grâce à sa compression sans perte."
         }
       ]
     },
@@ -217,7 +221,7 @@
       "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Contact",
-      "defaultSubject": "BMP to TIFF converter"
+      "defaultSubject": "Convertisseur BMP en TIFF"
     },
     {
       "type": "gap",

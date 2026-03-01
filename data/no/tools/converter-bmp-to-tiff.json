@@ -37,7 +37,7 @@
         {
           "position": 1,
           "name": "Last opp filer",
-          "text": "Dra filer til siden eller klikk for a velge fra disk."
+          "text": "Dra filer til siden eller klikk for å velge fra disk."
         },
         {
           "position": 2,
@@ -47,23 +47,27 @@
         {
           "position": 3,
           "name": "Konverter",
-          "text": "Klikk pa Konverter — filene behandles lokalt i nettleseren."
+          "text": "Klikk på Konverter — filene behandles lokalt i nettleseren."
         },
         {
           "position": 4,
           "name": "Last ned",
-          "text": "Last ned TIFF-filene — enkeltvis eller alle pa en gang."
+          "text": "Last ned TIFF-filene — enkeltvis eller alle på en gang."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere BMP til TIFF?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av BMP til TIFF (Tagged Image File Format) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">TIFF støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "BMP to TIFF conversion",
+      "imageAlt": "BMP til TIFF konvertering",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP vs TIFF – de viktigste forskjellene",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tapsfri</td><td class=\"py-2 text-center\">Tapsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gjennomsiktighet</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animasjon</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Nei</td></tr><tr><td class=\"py-2\">Nettleserstøtte</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tapsfri</td><td class=\"py-2 text-center\">Tapsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gjennomsiktighet</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animasjon</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Nei</td></tr><tr><td class=\"py-2\">Nettleserstøtte</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Nettstedsoptimalisering",
-          "description": "BMP → TIFF – WordPress, Shopify, Mystore."
+          "description": "Konverter BMP til TIFF for å forberede bildene dine for publisering på nett."
         },
         {
           "icon": "RiMailLine",
           "title": "E-post og deling",
-          "description": "TIFF – Gmail, Outlook, Telenor."
+          "description": "TIFF-filer er kompatible med de fleste moderne plattformer. Konverter til TIFF for å få bilder av høy kvalitet til deling."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "Finn.no, Komplett.no, Elkjøp, CDON."
+          "description": "Plattformer som Finn.no, Komplett.no, Elkjøp, CDON kan kreve spesifikke formater – konvertering til TIFF sikrer at produktbildene dine oppfyller kravene."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumenter og arkivering",
-          "description": "TIFF – trykkerier."
+          "description": "TIFF-formatet er et fremragende valg for arkivering og profesjonell trykking takket være sin tapsfrie komprimering."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-til-TIFF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data.</p><p class=\"text-mid\">Finn.no, Komplett.no, Elkjøp, CDON – WordPress, Shopify, Mystore.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av BMP til TIFF kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. TIFF gir utmerket komprimering med bevart visuell kvalitet.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Hjelp oss med å forbedre våre verktøy",
       "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Skriv til oss – vi svarer innen 24 timer.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "BMP to TIFF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "BMP til TIFF konverterer"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Andre verktoy"
+      "title": "Andre verktøy"
     }
   ]
 }

@@ -28,21 +28,21 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
-      "featureList": ["Conversion a GIF", "Ajuste de calidad (60-95%)", "Conversion por lotes", "Procesamiento local en el navegador"]
+      "featureList": ["Conversión a GIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"]
     },
     "howTo": {
-      "name": "Como convertir WebP a GIF",
+      "name": "Cómo convertir WebP a GIF",
       "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
       "steps": [
         {
           "position": 1,
           "name": "Subir archivos",
-          "text": "Arrastra archivos a la pagina o haz clic para seleccionarlos."
+          "text": "Arrastra archivos a la página o haz clic para seleccionarlos."
         },
         {
           "position": 2,
           "name": "Ajustar calidad",
-          "text": "Ajusta el control de calidad GIF — valores mas bajos producen archivos mas pequenos."
+          "text": "Ajusta el control de calidad GIF — valores más bajos producen archivos más pequeños."
         },
         {
           "position": 3,
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "¿Por qué convertir WebP a GIF?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) es un formato de imagen con pérdida que soporta millones de colores. Se utiliza ampliamente para imágenes web.</p><p class=\"text-mid mb-4\">Convertir WebP a GIF (Graphics Interchange Format) garantiza compatibilidad universal con todos los navegadores y dispositivos.</p><p class=\"text-mid mb-4\">GIF soporta transparencia alfa. Como formato sin pérdida, GIF preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "WebP to GIF conversion",
+      "imageAlt": "Conversión de WEBP a GIF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimización web",
-          "description": "WebP → GIF – WordPress, Shopify, PrestaShop."
+          "description": "Convierte WebP a GIF para preparar tus imágenes para la publicación en la web."
         },
         {
           "icon": "RiMailLine",
           "title": "Correo y compartir",
-          "description": "GIF – Gmail, Outlook, Yahoo."
+          "description": "Los archivos GIF son aceptados por clientes de correo como Gmail, Outlook, Yahoo. Convierte a GIF para imágenes de alta calidad adecuadas para compartir."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Comercio electrónico",
-          "description": "Amazon.es, Wallapop, MercadoLibre, Milanuncios."
+          "description": "Plataformas como Amazon.es, Wallapop, MercadoLibre, Milanuncios pueden requerir formatos específicos – convertir a GIF asegura que tus imágenes de productos cumplan con sus requisitos."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos y archivo",
-          "description": "GIF – imprentas."
+          "description": "El formato GIF ofrece una solución moderna y eficiente para el almacenamiento de imágenes en documentos."
         }
       ]
     },
@@ -216,8 +220,8 @@
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "WebP to GIF converter"
+      "imageAlt": "Contacto",
+      "defaultSubject": "Convertidor WEBP a GIF"
     },
     {
       "type": "gap",

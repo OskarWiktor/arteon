@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε HEIC σε JPG;",
       "html": "<p class=\"text-mid mb-4\">Το High Efficiency Image Container (HEIC) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή HEIC σε JPG (JPEG) εξασφαλίζει καθολική συμβατότητα με όλους τους φυλλομετρητές και συσκευές.</p><p class=\"text-mid mb-4\">Το JPG δεν υποστηρίζει διαφάνεια – οι διαφανείς περιοχές θα γεμίσουν με χρώμα φόντου.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
-      "imageAlt": "HEIC to JPG conversion",
+      "imageAlt": "Μετατροπή HEIC σε JPG",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC έναντι JPG – βασικές διαφορές",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Και τα δύο</td><td class=\"py-2 text-center\">Με απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Όχι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Όχι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Και τα δύο</td><td class=\"py-2 text-center\">Με απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Όχι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Όχι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">καθολική</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Βελτιστοποίηση ιστοσελίδας",
-          "description": "HEIC → JPG – WordPress, Shopify, WooCommerce."
+          "description": "Μετατρέψτε HEIC σε JPG για να εξασφαλίσετε καθολική συμβατότητα με όλους τους φυλλομετρητές και συστήματα διαχείρισης περιεχομένου όπως WordPress, Shopify, WooCommerce."
         },
         {
           "icon": "RiMailLine",
           "title": "Email και κοινοποίηση",
-          "description": "JPG – Gmail, Outlook, Forthnet."
+          "description": "Τα αρχεία JPG γίνονται δεκτά χωρίς πρόβλημα από προγράμματα email όπως Gmail, Outlook, Forthnet. Το JPG είναι η ασφαλέστερη επιλογή για συνημμένα email χάρη στην καθολική υποστήριξή του."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Ηλεκτρονικό εμπόριο",
-          "description": "Skroutz.gr, Public.gr, Marketplace."
+          "description": "Πλατφόρμες όπως Skroutz.gr, Public.gr, Marketplace συχνά προτιμούν τη μορφή JPG για εικόνες προϊόντων λόγω της ιδανικής ισορροπίας μεταξύ ποιότητας και μεγέθους αρχείου."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Έγγραφα και αρχειοθέτηση",
-          "description": "JPG – τυπογραφεία."
+          "description": "Η μορφή JPG είναι ευρέως αποδεκτή σε ψηφιακά έγγραφα, αναφορές και παρουσιάσεις."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Μετατροπή HEIC σε JPG στην πράξη",
-      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας.</p><p class=\"text-mid\">Skroutz.gr, Public.gr, Marketplace – WordPress, Shopify, WooCommerce.</p>"
+      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας. Είτε προετοιμάζετε εικόνες για Skroutz.gr, Public.gr, Marketplace, βελτιστοποιείτε γραφικά σε WordPress, Shopify, WooCommerce ή μετατρέπετε φωτογραφίες για gov.gr και Taxisnet – η σωστή μορφή έχει καθοριστική σημασία.</p><p class=\"text-mid mb-4\">Τα σύγχρονα πρότυπα ιστού ευνοούν όλο και περισσότερο τα αποδοτικά φορμά. Η μετατροπή HEIC σε JPG μπορεί να βελτιώσει άμεσα το Largest Contentful Paint (LCP), επηρεάζοντας την κατάταξη στις μηχανές αναζήτησης και την εμπειρία χρήστη.</p><p class=\"text-mid\">Η τοπική επεξεργασία εξασφαλίζει πλήρη συμμόρφωση με τον GDPR για χρήστες στην Ελλάδα και την Κύπρο. JPG προσφέρει μέγιστη συμβατότητα με όλες τις πλατφόρμες.</p>"
     },
     {
       "type": "gap",

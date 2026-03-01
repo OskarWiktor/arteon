@@ -54,11 +54,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować BMP na TIFF?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) to bezstratny format obsługujący miliony kolorów. Jest powszechnie stosowany do obrazów bez kompresji.</p><p class=\"text-mid mb-4\">Konwersja BMP na TIFF (Tagged Image File Format) daje więcej elastyczności w użyciu obrazów.</p><p class=\"text-mid mb-4\">TIFF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, TIFF zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików BMP, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "BMP to TIFF conversion",
+      "imageAlt": "Konwersja BMP na TIFF",
       "variant": "right"
     },
     {
@@ -94,7 +98,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP a TIFF – porównanie formatów",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Nie</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Nie</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">uniwersalna</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -211,8 +215,8 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "BMP to TIFF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "Konwerter BMP na TIFF"
     },
     {
       "type": "gap",

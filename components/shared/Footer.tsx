@@ -8,7 +8,7 @@ import Image from 'next/image';
 // import { RiInstagramLine, RiFacebookFill } from 'react-icons/ri';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { getToolsList } from '@/lib/i18n/tool-registry';
+import { getFooterTools } from '@/lib/i18n/tool-registry';
 
 const ORG = {
   name: 'Arteon',
@@ -114,19 +114,26 @@ export default function Footer() {
   const gfxRight = offerLinksThree.slice(midGfx);
 
   // For PL: use hardcoded toolsLinks; for other locales: generate from registry
-  const localeToolsLinks = isPl ? toolsLinks : getToolsList(locale).map((tool) => ({ href: tool.href, label: tool.title }));
+  const localeToolsLinks = isPl ? toolsLinks : getFooterTools(locale).map((tool) => ({ href: tool.href, label: tool.title }));
   const localeLegalLinks = useDictionary().legal;
 
   const midTools = Math.ceil(localeToolsLinks.length / 2);
   const toolsLeft = localeToolsLinks.slice(0, midTools);
   const toolsRight = localeToolsLinks.slice(midTools);
 
+  // Non-PL: 4 columns of tools
+  const colSize = Math.ceil(localeToolsLinks.length / 4);
+  const toolsCol1 = localeToolsLinks.slice(0, colSize);
+  const toolsCol2 = localeToolsLinks.slice(colSize, colSize * 2);
+  const toolsCol3 = localeToolsLinks.slice(colSize * 2, colSize * 3);
+  const toolsCol4 = localeToolsLinks.slice(colSize * 3);
+
   // Non-PL: simplified footer
   if (!isPl) {
     return (
       <footer className="border-t border-neutral-200 bg-white py-4 md:py-7 lg:py-10" aria-label="Site footer">
         <Wrapper>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-5">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:auto-rows-min lg:grid-cols-6">
             <section aria-label={ft.companyDataLabel} className="lg:col-start-1 lg:row-start-1">
               <div className="mb-4">
                 <AppLink href={localeConfig.toolsIndexHref}>
@@ -139,7 +146,7 @@ export default function Footer() {
             <nav aria-label={`${ft.toolsLabel} (1)`} className="lg:col-start-2 lg:row-start-1">
               <h3 className="h6 mb-3">{ft.toolsLabel}</h3>
               <ul className="flex flex-col gap-2 text-sm">
-                {toolsLeft.map(({ href, label }) => (
+                {toolsCol1.map(({ href, label }) => (
                   <li key={href}>
                     <AppLink href={href} className="text-left">
                       {label}
@@ -152,7 +159,7 @@ export default function Footer() {
             <nav aria-label={`${ft.toolsLabel} (2)`} className="lg:col-start-3 lg:row-start-1">
               <h3 className="sr-only">{ft.toolsLabel}</h3>
               <ul className="flex flex-col gap-2 text-sm lg:mt-9">
-                {toolsRight.map(({ href, label }) => (
+                {toolsCol2.map(({ href, label }) => (
                   <li key={href}>
                     <AppLink href={href} className="text-left">
                       {label}
@@ -162,9 +169,33 @@ export default function Footer() {
               </ul>
             </nav>
 
-            <div className="hidden lg:col-start-4 lg:row-start-1 lg:block" />
+            <nav aria-label={`${ft.toolsLabel} (3)`} className="lg:col-start-4 lg:row-start-1">
+              <h3 className="sr-only">{ft.toolsLabel}</h3>
+              <ul className="flex flex-col gap-2 text-sm lg:mt-9">
+                {toolsCol3.map(({ href, label }) => (
+                  <li key={href}>
+                    <AppLink href={href} className="text-left">
+                      {label}
+                    </AppLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
-            <nav aria-label={ft.legalLabel} className="lg:col-start-5 lg:row-start-1">
+            <nav aria-label={`${ft.toolsLabel} (4)`} className="lg:col-start-5 lg:row-start-1">
+              <h3 className="sr-only">{ft.toolsLabel}</h3>
+              <ul className="flex flex-col gap-2 text-sm lg:mt-9">
+                {toolsCol4.map(({ href, label }) => (
+                  <li key={href}>
+                    <AppLink href={href} className="text-left">
+                      {label}
+                    </AppLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+
+            <nav aria-label={ft.legalLabel} className="lg:col-start-6 lg:row-start-1">
               <h3 className="h6 mb-3">{ft.legalLabel}</h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {localeLegalLinks.map((link) => (

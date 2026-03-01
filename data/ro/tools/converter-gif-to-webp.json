@@ -2,14 +2,14 @@
   "toolKey": "gifToWebp",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor GIF in WebP – GIF WebP",
-    "description": "Exporta primul cadru GIF ca WebP usor. Fisier mai mic, incarcare mai rapida.",
+    "title": "Convertor GIF în WebP – GIF WebP",
+    "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-gif-in-webp"
   },
   "hero": {
-    "title": "Convertor GIF in WebP",
-    "description": "Exporta primul cadru GIF ca WebP usor. Fisier mai mic, incarcare mai rapida.",
+    "title": "Convertor GIF în WebP",
+    "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -19,20 +19,20 @@
     },
     "third": {
       "href": "/ro/instrumente/convertor-gif-in-webp",
-      "label": "Convertor GIF in WebP"
+      "label": "Convertor GIF în WebP"
     }
   },
   "schemas": {
     "software": {
-      "name": "Convertor GIF in WebP",
+      "name": "Convertor GIF în WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exporta primul cadru GIF ca WebP usor. Fisier mai mic, incarcare mai rapida.",
+      "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
     },
     "howTo": {
       "name": "GIF to WebP",
-      "description": "Exporta primul cadru GIF ca WebP usor. Fisier mai mic, incarcare mai rapida.",
+      "description": "Exporta primul cadru GIF ca WebP usor. Fișier mai mic, incarcare mai rapida.",
       "steps": [
         {
           "name": "Add GIF files",
@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "De ce să convertiți GIF în WebP?",
       "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia GIF în WebP (WebP) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">WebP suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
-      "imageAlt": "GIF to WebP conversion",
+      "imageAlt": "Conversie GIF în WEBP",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "GIF vs WebP – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Ambele</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Ambele</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universală</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimizare web",
-          "description": "GIF → WebP – WordPress, Shopify, GomAG."
+          "description": "Convertiți GIF în WebP pentru a reduce semnificativ timpii de încărcare a paginilor și a îmbunătăți scorurile Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email și partajare",
-          "description": "WebP – Gmail, Outlook, Yahoo."
+          "description": "Fișierele WebP sunt compatibile cu majoritatea platformelor moderne. Convertiți în WebP pentru a obține atașamente mai mici în limitele de dimensiune."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+          "description": "Platforme precum OLX.ro, eMAG.ro, Amazon, Marketplace preferă adesea formatul WebP pentru imaginile de produse datorită echilibrului optim între calitate și dimensiunea fișierului."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documente și arhivare",
-          "description": "WebP – tipografii."
+          "description": "Formatul WebP oferă o soluție modernă și eficientă pentru stocarea imaginilor în documente."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia GIF în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia GIF în WebP poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. WebP oferă o compresie excelentă păstrând calitatea vizuală.</p>"
     },
     {
       "type": "gap",
@@ -202,10 +206,10 @@
     {
       "type": "contactForm",
       "title": "Ajuta-ne sa imbunatatim instrumentele",
-      "description": "Ai o idee, ai gasit un bug sau vrei sa sugerezi o functie? Scrie-ne, raspundem in 24 de ore.",
+      "description": "Ai o idee, ai gasit un bug sau vrei sa sugerezi o functie? Scriați-ne, raspundem in 24 de ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor GIF in WebP – Arteon",
-      "defaultSubject": "Feedback: Convertor GIF in WebP"
+      "defaultSubject": "Feedback: Convertor GIF în WebP"
     },
     {
       "type": "gap",

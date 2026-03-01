@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Por que converter AVIF para PNG?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) é um formato de imagem com perda que suporta milhões de cores. É amplamente utilizado para imagens web modernas.</p><p class=\"text-mid mb-4\">Converter AVIF para PNG (Portable Network Graphics) garante compatibilidade universal com todos os navegadores e dispositivos.</p><p class=\"text-mid mb-4\">PNG suporta transparência alfa. Como formato sem perda, PNG preserva todos os dados da imagem.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
-      "imageAlt": "AVIF to PNG conversion",
+      "imageAlt": "Conversão de AVIF para PNG",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Otimização web",
-          "description": "AVIF → PNG – WordPress, Shopify, Nuvemshop."
+          "description": "Converta AVIF para PNG para preservar a transparência e a qualidade das imagens para gráficos web."
         },
         {
           "icon": "RiMailLine",
           "title": "Email e partilha",
-          "description": "PNG – Gmail, Outlook, UOL Mail."
+          "description": "Os ficheiros PNG são aceites por clientes de email como Gmail, Outlook, UOL Mail. Converta para PNG para imagens de alta qualidade adequadas para partilha."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.pt, KuantoKusta, Amazon, Mercado Livre."
+          "description": "Plataformas como OLX.pt, KuantoKusta, Amazon, Mercado Livre podem exigir formatos específicos – converter para PNG garante que as suas imagens de produtos cumpram os requisitos."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos e arquivo",
-          "description": "PNG – gráficas."
+          "description": "O formato PNG é uma excelente escolha para arquivo e impressão profissional graças à sua compressão sem perdas."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de AVIF para PNG na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos.</p><p class=\"text-mid\">OLX.pt, KuantoKusta, Amazon, Mercado Livre – WordPress, Shopify, Nuvemshop.</p>"
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de AVIF para PNG pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. PNG oferece máxima compatibilidade com todas as plataformas.</p>"
     },
     {
       "type": "gap",

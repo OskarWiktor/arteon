@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "De ce să convertiți PNG în JPG?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia PNG în JPG (JPEG) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">JPG nu suportă transparența – zonele transparente vor fi umplute cu o culoare de fundal.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
-      "imageAlt": "PNG to JPG conversion",
+      "imageAlt": "Conversie PNG în JPG",
       "variant": "right"
     },
     {
@@ -92,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG vs JPG – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Cu pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Nu</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Cu pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Nu</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universală</td><td class=\"py-2 text-center\">universală</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimizare web",
-          "description": "PNG → JPG – WordPress, Shopify, GomAG."
+          "description": "Convertiți PNG în JPG pentru a asigura compatibilitatea universală cu toate browserele și sistemele de management al conținutului precum WordPress, Shopify, GomAG."
         },
         {
           "icon": "RiMailLine",
           "title": "Email și partajare",
-          "description": "JPG – Gmail, Outlook, Yahoo."
+          "description": "Fișierele JPG sunt acceptate fără probleme de clienții de email precum Gmail, Outlook, Yahoo. Formatul JPG este cea mai sigură alegere pentru atașamente email datorită suportului său universal."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+          "description": "Platforme precum OLX.ro, eMAG.ro, Amazon, Marketplace preferă adesea formatul JPG pentru imaginile de produse datorită echilibrului optim între calitate și dimensiunea fișierului."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documente și arhivare",
-          "description": "JPG – tipografii."
+          "description": "Formatul JPG este larg acceptat în documente digitale, rapoarte și prezentări."
         }
       ]
     },
@@ -163,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia PNG în JPG în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia PNG în JPG poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. JPG oferă compatibilitate maximă cu toate platformele.</p>"
     },
     {
       "type": "gap",

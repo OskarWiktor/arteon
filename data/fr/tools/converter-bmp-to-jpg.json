@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Pourquoi convertir BMP en JPG ?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) est un format d’image sans perte prenant en charge des millions de couleurs. Il est largement utilisé pour les images non compressées.</p><p class=\"text-mid mb-4\">La conversion de BMP en JPG (JPEG) réduit considérablement la taille des fichiers.</p><p class=\"text-mid mb-4\">JPG ne prend pas en charge la transparence – les zones transparentes seront remplies d’une couleur de fond. En tant que format avec perte, JPG atteint d’excellents taux de compression.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
-      "imageAlt": "BMP to JPG conversion",
+      "imageAlt": "Conversion BMP en JPG",
       "variant": "right"
     },
     {
@@ -92,7 +96,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP vs JPG – les différences clés",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Avec perte</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Non</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Non</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Avec perte</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Non</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Non</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universelle</td><td class=\"py-2 text-center\">universelle</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -106,22 +110,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimisation web",
-          "description": "BMP → JPG – WordPress, PrestaShop, Shopify."
+          "description": "Convertissez BMP en JPG pour assurer une compatibilité universelle avec tous les navigateurs et systèmes de gestion de contenu comme WordPress, PrestaShop, Shopify."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail et partage",
-          "description": "JPG – Gmail, Outlook, La Poste."
+          "description": "Les fichiers JPG sont acceptés par les clients de messagerie tels que Gmail, Outlook, La Poste. Le format JPG est le choix le plus sûr pour les pièces jointes grâce à sa prise en charge universelle."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Leboncoin, Cdiscount, Amazon.fr, Vinted."
+          "description": "Des plateformes comme Leboncoin, Cdiscount, Amazon.fr, Vinted privilégient souvent le format JPG pour les images de produits en raison de son équilibre optimal entre qualité et taille de fichier."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents et archivage",
-          "description": "JPG – imprimeries."
+          "description": "Le format JPG est largement accepté dans les documents numériques, les rapports et les présentations."
         }
       ]
     },

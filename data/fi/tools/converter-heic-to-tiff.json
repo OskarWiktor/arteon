@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna iPhonen HEIC-kuvat ammattimaiseen TIFF-muotoon.",
-      "featureList": ["Muunnos TIFF-muotoon", "Laadun saato (60-95%)", "Eramuunnos", "Paikallinen kasittely selaimessa"]
+      "featureList": ["Muunnos TIFF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"]
     },
     "howTo": {
       "name": "Kuinka muuntaa HEIC TIFF-muotoon",
@@ -37,33 +37,37 @@
         {
           "position": 1,
           "name": "Lataa tiedostot",
-          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levyltä."
         },
         {
           "position": 2,
           "name": "Aseta laatu",
-          "text": "Saada TIFF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+          "text": "Säädä TIFF-laatuliukusäädintä — alhaisemmat arvot tuottavat pienempiä tiedostoja."
         },
         {
           "position": 3,
           "name": "Muunna",
-          "text": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessa."
         },
         {
           "position": 4,
           "name": "Lataa",
-          "text": "Lataa TIFF-tiedostot — yksittain tai kaikki kerralla."
+          "text": "Lataa TIFF-tiedostot — yksittäin tai kaikki kerralla."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Miksi muuntaa HEIC TIFF-muotoon?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) on häviöllinen kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">HEIC:n muuntaminen TIFF-muotoon (Tagged Image File Format) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">TIFF tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "HEIC to TIFF conversion",
+      "imageAlt": "HEIC-TIFF-muunnos",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Verkkosivujen optimointi",
-          "description": "HEIC → TIFF – WordPress, Shopify, MyCashflow."
+          "description": "Muunna HEIC TIFF-muotoon valmistellaksesi kuvat verkkojulkaisua varten."
         },
         {
           "icon": "RiMailLine",
           "title": "Sähköposti ja jakaminen",
-          "description": "TIFF – Gmail, Outlook, Elisa Sähköposti."
+          "description": "TIFF-tiedostot ovat yhteensopivia useimpien modernien alustojen kanssa. Muunna TIFF-muotoon laadukkaita kuvia jakamista varten."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Verkkokauppa",
-          "description": "Tori.fi, Verkkokauppa.com, Gigantti, Amazon."
+          "description": "Alustat kuten Tori.fi, Verkkokauppa.com, Gigantti, Amazon saattavat vaatia tiettejä tiedostomuotoja – TIFF-muotoon muuntaminen varmistaa, että tuotekuvasi täyttävät vaatimukset."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Asiakirjat ja arkistointi",
-          "description": "TIFF – painotalot."
+          "description": "TIFF-muoto on erinomainen valinta arkistointiin ja ammattimaiseen tulostukseen häviöttömän pakkauksensa ansiosta."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-TIFF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja.</p><p class=\"text-mid\">Tori.fi, Verkkokauppa.com, Gigantti, Amazon – WordPress, Shopify, MyCashflow.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. HEIC-muunnos TIFF-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. TIFF tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "HEIC to TIFF converter"
+      "imageAlt": "Yhteystiedot",
+      "defaultSubject": "HEIC-TIFF-muunnin"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Muut tyokalut"
+      "title": "Muut työkalut"
     }
   ]
 }

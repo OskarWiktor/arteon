@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε AVIF σε PNG;",
       "html": "<p class=\"text-mid mb-4\">Το AV1 Image File Format (AVIF) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή AVIF σε PNG (Portable Network Graphics) εξασφαλίζει καθολική συμβατότητα με όλους τους φυλλομετρητές και συσκευές.</p><p class=\"text-mid mb-4\">Το PNG υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
-      "imageAlt": "AVIF to PNG conversion",
+      "imageAlt": "Μετατροπή AVIF σε PNG",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF έναντι PNG – βασικές διαφορές",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Και τα δύο</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Και τα δύο</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">καθολική</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Βελτιστοποίηση ιστοσελίδας",
-          "description": "AVIF → PNG – WordPress, Shopify, WooCommerce."
+          "description": "Μετατρέψτε AVIF σε PNG για να διατηρήσετε τη διαφάνεια και την ποιότητα εικόνας για γραφικά web."
         },
         {
           "icon": "RiMailLine",
           "title": "Email και κοινοποίηση",
-          "description": "PNG – Gmail, Outlook, Forthnet."
+          "description": "Τα αρχεία PNG γίνονται δεκτά χωρίς πρόβλημα από προγράμματα email όπως Gmail, Outlook, Forthnet. Μετατρέψτε σε PNG για εικόνες υψηλής ποιότητας κατάλληλες για κοινοποίηση."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Ηλεκτρονικό εμπόριο",
-          "description": "Skroutz.gr, Public.gr, Marketplace."
+          "description": "Πλατφόρμες όπως Skroutz.gr, Public.gr, Marketplace μπορεί να απαιτούν συγκεκριμένες μορφές – η μετατροπή σε PNG εξασφαλίζει ότι οι εικόνες προϊόντων πληρούν τις απαιτήσεις."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Έγγραφα και αρχειοθέτηση",
-          "description": "PNG – τυπογραφεία."
+          "description": "Η μορφή PNG είναι εξαιρετική επιλογή για αρχειοθέτηση και επαγγελματική εκτύπωση χάρη στη συμπίεση χωρίς απώλειες."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Μετατροπή AVIF σε PNG στην πράξη",
-      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας.</p><p class=\"text-mid\">Skroutz.gr, Public.gr, Marketplace – WordPress, Shopify, WooCommerce.</p>"
+      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας. Είτε προετοιμάζετε εικόνες για Skroutz.gr, Public.gr, Marketplace, βελτιστοποιείτε γραφικά σε WordPress, Shopify, WooCommerce ή μετατρέπετε φωτογραφίες για gov.gr και Taxisnet – η σωστή μορφή έχει καθοριστική σημασία.</p><p class=\"text-mid mb-4\">Τα σύγχρονα πρότυπα ιστού ευνοούν όλο και περισσότερο τα αποδοτικά φορμά. Η μετατροπή AVIF σε PNG μπορεί να βελτιώσει άμεσα το Largest Contentful Paint (LCP), επηρεάζοντας την κατάταξη στις μηχανές αναζήτησης και την εμπειρία χρήστη.</p><p class=\"text-mid\">Η τοπική επεξεργασία εξασφαλίζει πλήρη συμμόρφωση με τον GDPR για χρήστες στην Ελλάδα και την Κύπρο. PNG προσφέρει μέγιστη συμβατότητα με όλες τις πλατφόρμες.</p>"
     },
     {
       "type": "gap",

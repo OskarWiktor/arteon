@@ -59,6 +59,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert PNG to AVIF?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) is a lossless image format supporting millions colors. It is widely used for graphics with transparency and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting PNG to AVIF (AV1 Image File Format) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">AVIF supports alpha transparency, preserving any transparent areas in your image. AVIF supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many PNG files as you need, completely free.</p>",

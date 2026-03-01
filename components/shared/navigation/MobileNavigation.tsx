@@ -10,7 +10,7 @@ import IconText from '../../ui/IconText';
 // import SocialIconLink from '../../ui/SocialIconLink';
 import { ABOUT_NAV_ITEMS_PL, MOBILE_NAV_ITEMS_PL, OFFER_SECTIONS_PL } from '@/components/shared/navigation-data/pl';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { getToolsSections } from '@/lib/i18n/tool-registry';
+import { getMobileToolsSections } from '@/lib/i18n/tool-registry';
 import LanguageSwitcher from '@/components/shared/LanguageSwitcher';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
@@ -51,7 +51,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
   const navUi = dict.nav;
   const mobileNavUi = dict.mobileNav;
   const localeConfig = useLocaleConfig();
-  const toolsSections = getToolsSections(locale);
+  const toolsSections = getMobileToolsSections(locale);
   const legalLinks = dict.legal;
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);

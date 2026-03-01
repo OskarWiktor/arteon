@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Varför konvertera TIFF till PNG?",
       "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) är ett förlustfritt bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av TIFF till PNG (Portable Network Graphics) säkerställer universell kompatibilitet med alla webbläsare och enheter.</p><p class=\"text-mid mb-4\">PNG stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
-      "imageAlt": "TIFF to PNG conversion",
+      "imageAlt": "TIFF till PNG konvertering",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF vs PNG – de viktigaste skillnaderna",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Förlustfri</td><td class=\"py-2 text-center\">Förlustfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Förlustfri</td><td class=\"py-2 text-center\">Förlustfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universell</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Webboptimering",
-          "description": "TIFF → PNG – WordPress, Shopify, Quickbutik."
+          "description": "Konvertera TIFF till PNG för att bevara transparens och bildkvalitet för webbgrafik."
         },
         {
           "icon": "RiMailLine",
           "title": "E-post och delning",
-          "description": "PNG – Gmail, Outlook, Telia."
+          "description": "PNG-filer accepteras utan problem av e-postklienter som Gmail, Outlook, Telia. Konvertera till PNG för att få högkvalitativa bilder för delning."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-handel",
-          "description": "Blocket.se, Tradera, CDON, Amazon.se."
+          "description": "Plattformar som Blocket.se, Tradera, CDON, Amazon.se kan kräva specifika format – konvertering till PNG säkerställer att dina produktbilder uppfyller kraven."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokument och arkivering",
-          "description": "PNG – tryckerier."
+          "description": "PNG-formatet är ett utmärkt val för arkivering och professionell utskrift tack vare dess förlustfria komprimering."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-till-PNG-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data.</p><p class=\"text-mid\">Blocket.se, Tradera, CDON, Amazon.se – WordPress, Shopify, Quickbutik.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera TIFF till PNG kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. PNG erbjuder maximal kompatibilitet med alla plattformar.</p>"
     },
     {
       "type": "gap",

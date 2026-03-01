@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník WebP na TIFF — WebP TIFF",
-    "description": "Prevedte obrazky WebP na profesionalni TIFF pro tisk a archivaci.",
+    "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-webp-na-tiff"
   },
   "hero": {
     "title": "Převodník WebP na TIFF",
-    "description": "Prevedte obrazky WebP na profesionalni TIFF pro tisk a archivaci.",
+    "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,43 +27,47 @@
       "name": "Převodník WebP na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Prevedte obrazky WebP na profesionalni TIFF pro tisk a archivaci.",
-      "featureList": ["Konverze do TIFF", "Nastaveni kvality (60-95%)", "Davkova konverze", "Lokalni zpracovani v prohlizeci"]
+      "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci.",
+      "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
     },
     "howTo": {
-      "name": "Jak prevest WebP na TIFF",
-      "description": "Prevedte obrazky WebP na profesionalni TIFF pro tisk a archivaci.",
+      "name": "Jak převést WebP na TIFF",
+      "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci.",
       "steps": [
         {
           "position": 1,
           "name": "Nahrajte soubory",
-          "text": "Pretahnete soubory na stranku nebo kliknete pro vyber z disku."
+          "text": "Přetáhněte soubory na stránku nebo klikněte pro výběr z disku."
         },
         {
           "position": 2,
           "name": "Nastavte kvalitu",
-          "text": "Upravte posuvnik kvality TIFF — nizsi hodnoty vytvareji mensi soubory."
+          "text": "Upravte posuvník kvality TIFF — nižší hodnoty vytvářejí menší soubory."
         },
         {
           "position": 3,
           "name": "Konvertujte",
-          "text": "Kliknete na Konvertovat — soubory se zpracuji lokalne v prohlizeci."
+          "text": "Klikněte na Konvertovat — soubory se zpracují lokálně v prohlížeči."
         },
         {
           "position": 4,
           "name": "Stahnete",
-          "text": "Stahnete hotove soubory TIFF — jednotlive nebo vsechny naraz."
+          "text": "Stáhněte hotové soubory TIFF — jednotlivě nebo všechny naraz."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Proč převádět WebP na TIFF?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro webové obrázky.</p><p class=\"text-mid mb-4\">Převod WebP na TIFF (Tagged Image File Format) nabízí více flexibility.</p><p class=\"text-mid mb-4\">TIFF podporuje alfa průhlednost. Jako bezeztrátový formát zachovává TIFF veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "WebP to TIFF conversion",
+      "imageAlt": "Převod WEBP na TIFF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimalizace webu",
-          "description": "WebP → TIFF – WordPress, Shoptet, Shopify."
+          "description": "Převeďte WebP na TIFF, abyste připravili obrázky pro publikování na webu."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail a sdílení",
-          "description": "TIFF – Gmail, Outlook, Seznam."
+          "description": "Soubory TIFF jsou kompatibilní s většinou moderních platforem. Převeďte na TIFF, abyste získali kvalitní obrázky vhodné ke sdílení."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Heureka.cz, Alza.cz, Bazár, Mall.cz."
+          "description": "Platformy jako Heureka.cz, Alza.cz, Bazár, Mall.cz mohou vyžadovat specifické formáty – konverze na TIFF zajistí, že vaše produktové fotografie splňují požadavky."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumenty a archivace",
-          "description": "TIFF – tiskárny."
+          "description": "Formát TIFF je vynikající volbou pro archivaci a profesionální tisk díky bezeztrátové kompresi."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod WebP na TIFF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků.</p><p class=\"text-mid\">Heureka.cz, Alza.cz, Bazár, Mall.cz – WordPress, Shoptet, Shopify.</p>"
+      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod WebP na TIFF může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. TIFF poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídáme do 24 hodin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "WebP to TIFF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "Převodník WEBP na TIFF"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Dalsi nastroje"
+      "title": "Další nástroje"
     }
   ]
 }

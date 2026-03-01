@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Waarom SVG naar GIF converteren?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is een lossless afbeeldingsformaat gebaseerd op vectorafbeeldingen. Het wordt veel gebruikt voor logo's en pictogrammen.</p><p class=\"text-mid mb-4\">Het converteren van SVG naar GIF (Graphics Interchange Format) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">GIF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "SVG to GIF conversion",
+      "imageAlt": "SVG naar GIF conversie",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG vs GIF – de belangrijkste verschillen",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">universeel</td><td class=\"py-2 text-center\">universeel</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-optimalisatie",
-          "description": "SVG → GIF – WordPress, Shopify, Lightspeed."
+          "description": "Converteer SVG naar GIF om uw afbeeldingen voor te bereiden voor webpublicatie."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail en delen",
-          "description": "GIF – Gmail, Outlook, Ziggo Mail."
+          "description": "GIF-bestanden worden probleemloos geaccepteerd door e-mailclients zoals Gmail, Outlook, Ziggo Mail. Converteer naar GIF om afbeeldingen van hoge kwaliteit te krijgen om te delen."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Bol.com, Marktplaats, Amazon.nl, Coolblue."
+          "description": "Platformen zoals Bol.com, Marktplaats, Amazon.nl, Coolblue kunnen specifieke formaten vereisen – conversie naar GIF zorgt ervoor dat uw productafbeeldingen aan de eisen voldoen."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documenten en archivering",
-          "description": "GIF – drukkerijen."
+          "description": "Het GIF-formaat biedt een moderne en efficiënte oplossing voor beeldopslag in documenten."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-naar-GIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens.</p><p class=\"text-mid\">Bol.com, Marktplaats, Amazon.nl, Coolblue – WordPress, Shopify, Lightspeed.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van SVG naar GIF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. GIF biedt maximale compatibiliteit met alle platformen.</p>"
     },
     {
       "type": "gap",
@@ -213,7 +217,7 @@
       "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Contact",
-      "defaultSubject": "SVG to GIF converter"
+      "defaultSubject": "SVG naar GIF converter"
     },
     {
       "type": "gap",

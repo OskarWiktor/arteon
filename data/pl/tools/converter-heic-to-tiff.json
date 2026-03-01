@@ -54,11 +54,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować HEIC na TIFF?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do zdjęć z urządzeń Apple.</p><p class=\"text-mid mb-4\">Konwersja HEIC na TIFF (Tagged Image File Format) rozwiązuje problem kompatybilności z właściwościowym formatem Apple.</p><p class=\"text-mid mb-4\">TIFF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, TIFF zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików HEIC, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "HEIC to TIFF conversion",
+      "imageAlt": "Konwersja HEIC na TIFF",
       "variant": "right"
     },
     {
@@ -215,8 +219,8 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "HEIC to TIFF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "Konwerter HEIC na TIFF"
     },
     {
       "type": "gap",

@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε AVIF σε WebP;",
       "html": "<p class=\"text-mid mb-4\">Το AV1 Image File Format (AVIF) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή AVIF σε WebP (WebP) αξιοποιεί τη σύγχρονη συμπίεση για μικρότερα αρχεία.</p><p class=\"text-mid mb-4\">Το WebP υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
-      "imageAlt": "AVIF to WebP conversion",
+      "imageAlt": "Μετατροπή AVIF σε WEBP",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Βελτιστοποίηση ιστοσελίδας",
-          "description": "AVIF → WebP – WordPress, Shopify, WooCommerce."
+          "description": "Μετατρέψτε AVIF σε WebP για να μειώσετε σημαντικά τους χρόνους φόρτωσης των σελίδων και να βελτιώσετε τα Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email και κοινοποίηση",
-          "description": "WebP – Gmail, Outlook, Forthnet."
+          "description": "Τα αρχεία WebP είναι συμβατά με τις περισσότερες σύγχρονες πλατφόρμες. Μετατρέψτε σε WebP για μικρότερα συνημμένα εντός των ορίων μεγέθους."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Ηλεκτρονικό εμπόριο",
-          "description": "Skroutz.gr, Public.gr, Marketplace."
+          "description": "Πλατφόρμες όπως Skroutz.gr, Public.gr, Marketplace συχνά προτιμούν τη μορφή WebP για εικόνες προϊόντων λόγω της ιδανικής ισορροπίας μεταξύ ποιότητας και μεγέθους αρχείου."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Έγγραφα και αρχειοθέτηση",
-          "description": "WebP – τυπογραφεία."
+          "description": "Η μορφή WebP προσφέρει μια σύγχρονη και αποδοτική λύση για αποθήκευση εικόνων σε έγγραφα."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Μετατροπή AVIF σε WebP στην πράξη",
-      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας.</p><p class=\"text-mid\">Skroutz.gr, Public.gr, Marketplace – WordPress, Shopify, WooCommerce.</p>"
+      "html": "<p class=\"text-mid mb-4\">Στην Ελλάδα και την Κύπρο, πολλές πλατφόρμες απαιτούν συγκεκριμένες μορφές εικόνας. Είτε προετοιμάζετε εικόνες για Skroutz.gr, Public.gr, Marketplace, βελτιστοποιείτε γραφικά σε WordPress, Shopify, WooCommerce ή μετατρέπετε φωτογραφίες για gov.gr και Taxisnet – η σωστή μορφή έχει καθοριστική σημασία.</p><p class=\"text-mid mb-4\">Τα σύγχρονα πρότυπα ιστού ευνοούν όλο και περισσότερο τα αποδοτικά φορμά. Η μετατροπή AVIF σε WebP μπορεί να βελτιώσει άμεσα το Largest Contentful Paint (LCP), επηρεάζοντας την κατάταξη στις μηχανές αναζήτησης και την εμπειρία χρήστη.</p><p class=\"text-mid\">Η τοπική επεξεργασία εξασφαλίζει πλήρη συμμόρφωση με τον GDPR για χρήστες στην Ελλάδα και την Κύπρο. WebP παρέχει εξαιρετική συμπίεση διατηρώντας την οπτική ποιότητα.</p>"
     },
     {
       "type": "gap",

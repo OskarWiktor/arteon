@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Pourquoi convertir TIFF en PNG ?",
       "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) est un format d’image sans perte prenant en charge des millions de couleurs. Il est largement utilisé pour l’impression et l’archivage.</p><p class=\"text-mid mb-4\">La conversion de TIFF en PNG (Portable Network Graphics) garantit une compatibilité universelle avec tous les navigateurs et appareils.</p><p class=\"text-mid mb-4\">PNG prend en charge la transparence alpha. En tant que format sans perte, PNG préserve l’intégralité des données de l’image.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
-      "imageAlt": "TIFF to PNG conversion",
+      "imageAlt": "Conversion TIFF en PNG",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF vs PNG – les différences clés",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Sans perte</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Non</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Sans perte</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Non</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universelle</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimisation web",
-          "description": "TIFF → PNG – WordPress, PrestaShop, Shopify."
+          "description": "Convertissez TIFF en PNG pour préserver la transparence et la qualité des images pour les graphiques web."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail et partage",
-          "description": "PNG – Gmail, Outlook, La Poste."
+          "description": "Les fichiers PNG sont acceptés par les clients de messagerie tels que Gmail, Outlook, La Poste. Convertissez en PNG pour des images de haute qualité adaptées au partage."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Leboncoin, Cdiscount, Amazon.fr, Vinted."
+          "description": "Des plateformes comme Leboncoin, Cdiscount, Amazon.fr, Vinted peuvent exiger des formats spécifiques – la conversion en PNG garantit que vos images produits répondent à leurs exigences."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents et archivage",
-          "description": "PNG – imprimeries."
+          "description": "Le format PNG est un excellent choix pour l’archivage et l’impression professionnelle grâce à sa compression sans perte."
         }
       ]
     },
@@ -206,7 +210,7 @@
     {
       "type": "contactForm",
       "title": "Aidez-nous a ameliorer nos outils",
-      "description": "Une idee, un bug ou une suggestion ? Ecrivez-nous, nous repondons sous 24 heures.",
+      "description": "Une idee, un bug ou une suggestion ? Écrivez-nous, nous repondons sous 24 heures.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur TIFF en PNG – Arteon",
       "defaultSubject": "Feedback: Convertisseur TIFF en PNG"

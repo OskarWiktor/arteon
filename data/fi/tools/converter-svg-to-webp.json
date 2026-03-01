@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Miksi muuntaa SVG WebP-muotoon?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) on häviötön kuvaformaatti, joka perustuu vektorigrafiikkaan.</p><p class=\"text-mid mb-4\">SVG:n muuntaminen WebP-muotoon (WebP) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">WebP tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
-      "imageAlt": "SVG to WebP conversion",
+      "imageAlt": "SVG-WEBP-muunnos",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG vs WebP – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Molemmat</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Molemmat</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">yleinen</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Verkkosivujen optimointi",
-          "description": "SVG → WebP – WordPress, Shopify, MyCashflow."
+          "description": "Muunna SVG WebP-muotoon vähentääksesi sivujen latausaikoja merkittävästi ja parantaaksesi Core Web Vitals -tuloksia."
         },
         {
           "icon": "RiMailLine",
           "title": "Sähköposti ja jakaminen",
-          "description": "WebP – Gmail, Outlook, Elisa Sähköposti."
+          "description": "WebP-tiedostot ovat yhteensopivia useimpien modernien alustojen kanssa. Muunna WebP-muotoon saadaksesi pienempiä liitteitä kokorajoitusten puitteissa."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Verkkokauppa",
-          "description": "Tori.fi, Verkkokauppa.com, Gigantti, Amazon."
+          "description": "Alustat kuten Tori.fi, Verkkokauppa.com, Gigantti, Amazon suosivat usein WebP-muotoa tuotekuvissa sen optimaalisen laadun ja tiedostokoon tasapainon vuoksi."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Asiakirjat ja arkistointi",
-          "description": "WebP – painotalot."
+          "description": "WebP-muoto tarjoaa modernin ja tehokkaan ratkaisun kuvien tallentamiseen asiakirjoissa."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-WebP-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja.</p><p class=\"text-mid\">Tori.fi, Verkkokauppa.com, Gigantti, Amazon – WordPress, Shopify, MyCashflow.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. SVG-muunnos WebP-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. WebP tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
     },
     {
       "type": "gap",

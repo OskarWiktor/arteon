@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Pourquoi convertir TIFF en WebP ?",
       "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) est un format d’image sans perte prenant en charge des millions de couleurs. Il est largement utilisé pour l’impression et l’archivage.</p><p class=\"text-mid mb-4\">La conversion de TIFF en WebP (WebP) réduit considérablement la taille des fichiers.</p><p class=\"text-mid mb-4\">WebP prend en charge la transparence alpha. WebP offre une compression avec et sans perte.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
-      "imageAlt": "TIFF to WebP conversion",
+      "imageAlt": "Conversion TIFF en WEBP",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimisation web",
-          "description": "TIFF → WebP – WordPress, PrestaShop, Shopify."
+          "description": "Convertissez TIFF en WebP pour réduire considérablement les temps de chargement de vos pages et améliorer vos scores Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail et partage",
-          "description": "WebP – Gmail, Outlook, La Poste."
+          "description": "Les fichiers WebP sont compatibles avec la plupart des plateformes modernes. Convertissez en WebP pour obtenir des pièces jointes plus légères respectant les limites de taille."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Leboncoin, Cdiscount, Amazon.fr, Vinted."
+          "description": "Des plateformes comme Leboncoin, Cdiscount, Amazon.fr, Vinted privilégient souvent le format WebP pour les images de produits en raison de son équilibre optimal entre qualité et taille de fichier."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents et archivage",
-          "description": "WebP – imprimeries."
+          "description": "Le format WebP offre une solution moderne et efficace pour le stockage d’images dans les documents."
         }
       ]
     },
@@ -206,7 +210,7 @@
     {
       "type": "contactForm",
       "title": "Aidez-nous a ameliorer nos outils",
-      "description": "Une idee, un bug ou une suggestion ? Ecrivez-nous, nous repondons sous 24 heures.",
+      "description": "Une idee, un bug ou une suggestion ? Écrivez-nous, nous repondons sous 24 heures.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur TIFF en WebP – Arteon",
       "defaultSubject": "Feedback: Convertisseur TIFF en WebP"

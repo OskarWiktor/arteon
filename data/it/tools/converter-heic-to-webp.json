@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Perché convertire HEIC in WebP?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) è un formato immagine con perdita che supporta milioni di colori. È ampiamente utilizzato per le foto Apple.</p><p class=\"text-mid mb-4\">La conversione da HEIC a WebP (WebP) sfrutta la compressione moderna per file più leggeri senza perdita di qualità.</p><p class=\"text-mid mb-4\">WebP supporta la trasparenza alfa. WebP offre compressione con e senza perdita.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
-      "imageAlt": "HEIC to WebP conversion",
+      "imageAlt": "Conversione HEIC in WEBP",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Ottimizzazione web",
-          "description": "HEIC → WebP – WordPress, Shopify, WooCommerce."
+          "description": "Converti HEIC in WebP per ridurre notevolmente i tempi di caricamento delle pagine e migliorare i punteggi Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email e condivisione",
-          "description": "WebP – Gmail, Outlook, Libero Mail."
+          "description": "I file WebP sono compatibili con la maggior parte delle piattaforme moderne. Converti in WebP per ottenere allegati più leggeri entro i limiti di dimensione."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Subito.it, Amazon.it, eBay.it, Vinted."
+          "description": "Piattaforme come Subito.it, Amazon.it, eBay.it, Vinted spesso preferiscono il formato WebP per le immagini dei prodotti grazie al suo equilibrio ottimale tra qualità e dimensione del file."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documenti e archiviazione",
-          "description": "WebP – tipografie."
+          "description": "Il formato WebP offre una soluzione moderna ed efficiente per l’archiviazione delle immagini nei documenti."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversione da HEIC a WebP nella pratica",
-      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante).</p><p class=\"text-mid\">Subito.it, Amazon.it, eBay.it, Vinted – WordPress, Shopify, WooCommerce.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Italia, la conversione locale garantisce il rispetto delle normative sulla privacy (GDPR/Garante). Che si tratti di preparare immagini per Subito.it, Amazon.it, eBay.it, Vinted, ottimizzare grafiche per WordPress, Shopify, WooCommerce o convertire foto per SPID e portali della PA, il formato giusto fa la differenza.</p><p class=\"text-mid mb-4\">Gli standard web moderni privilegiano sempre più i formati efficienti. Google PageSpeed Insights e le metriche Core Web Vitals premiano le pagine con immagini ottimizzate. La conversione da HEIC a WebP può migliorare direttamente il punteggio Largest Contentful Paint (LCP), con effetti positivi sul posizionamento nei motori di ricerca e sull’esperienza utente.</p><p class=\"text-mid\">Il trattamento locale garantisce la piena conformità al GDPR per gli utenti in Italia. WebP fornisce un’eccellente compressione mantenendo la qualità visiva.</p>"
     },
     {
       "type": "gap",

@@ -52,6 +52,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert SVG to JPG?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is a lossless image format based on vector graphics. It is widely used for logos and icons and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting SVG to JPG (JPEG) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">Note that JPG does not support transparency – any transparent areas will be filled with a solid background color (typically white). As a lossy format, JPG achieves excellent compression ratios, especially for photographs and complex images.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many SVG files as you need, completely free.</p>",

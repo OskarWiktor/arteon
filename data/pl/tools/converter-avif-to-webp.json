@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować AVIF na WebP?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do nowoczesnych obrazów webowych.</p><p class=\"text-mid mb-4\">Konwersja AVIF na WebP (WebP) pozwala wykorzystać nowoczesną kompresję, która zmniejsza rozmiar plików bez utraty jakości.</p><p class=\"text-mid mb-4\">WebP obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. WebP obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików AVIF, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "AVIF to WebP conversion",
+      "imageAlt": "Konwersja AVIF na WEBP",
       "variant": "right"
     },
     {

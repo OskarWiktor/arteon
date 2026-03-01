@@ -28,21 +28,21 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte graficos vectoriales SVG a formato raster AVIF compacto.",
-      "featureList": ["Conversion a AVIF", "Ajuste de calidad (60-95%)", "Conversion por lotes", "Procesamiento local en el navegador"]
+      "featureList": ["Conversión a AVIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"]
     },
     "howTo": {
-      "name": "Como convertir SVG a AVIF",
+      "name": "Cómo convertir SVG a AVIF",
       "description": "Convierte graficos vectoriales SVG a formato raster AVIF compacto.",
       "steps": [
         {
           "position": 1,
           "name": "Subir archivos",
-          "text": "Arrastra archivos a la pagina o haz clic para seleccionarlos."
+          "text": "Arrastra archivos a la página o haz clic para seleccionarlos."
         },
         {
           "position": 2,
           "name": "Ajustar calidad",
-          "text": "Ajusta el control de calidad AVIF — valores mas bajos producen archivos mas pequenos."
+          "text": "Ajusta el control de calidad AVIF — valores más bajos producen archivos más pequeños."
         },
         {
           "position": 3,
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "¿Por qué convertir SVG a AVIF?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) es un formato de imagen sin pérdida basado en gráficos vectoriales. Se utiliza ampliamente para logotipos e iconos.</p><p class=\"text-mid mb-4\">Convertir SVG a AVIF (AV1 Image File Format) reduce significativamente el tamaño del archivo.</p><p class=\"text-mid mb-4\">AVIF soporta transparencia alfa. AVIF ofrece compresión con y sin pérdida.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "SVG to AVIF conversion",
+      "imageAlt": "Conversión de SVG a AVIF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimización web",
-          "description": "SVG → AVIF – WordPress, Shopify, PrestaShop."
+          "description": "Convierte SVG a AVIF para reducir significativamente los tiempos de carga de tu página y mejorar las puntuaciones de Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Correo y compartir",
-          "description": "AVIF – Gmail, Outlook, Yahoo."
+          "description": "Los archivos AVIF son compatibles con la mayoría de las plataformas modernas. Convierte a AVIF para obtener adjuntos más pequeños que respeten los límites de tamaño."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Comercio electrónico",
-          "description": "Amazon.es, Wallapop, MercadoLibre, Milanuncios."
+          "description": "Plataformas como Amazon.es, Wallapop, MercadoLibre, Milanuncios pueden requerir formatos específicos – convertir a AVIF asegura que tus imágenes de productos cumplan con sus requisitos."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos y archivo",
-          "description": "AVIF – imprentas."
+          "description": "El formato AVIF ofrece una solución moderna y eficiente para el almacenamiento de imágenes en documentos."
         }
       ]
     },
@@ -216,8 +220,8 @@
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "SVG to AVIF converter"
+      "imageAlt": "Contacto",
+      "defaultSubject": "Convertidor SVG a AVIF"
     },
     {
       "type": "gap",

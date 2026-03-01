@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG-Fotos in GIF-Format umwandeln. Perfekt fur einfache Grafiken und Icons.",
-      "featureList": ["Konvertierung zu GIF", "Qualitatsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+      "featureList": ["Konvertierung zu GIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
     },
     "howTo": {
       "name": "JPG zu GIF konvertieren",
@@ -37,12 +37,12 @@
         {
           "position": 1,
           "name": "Dateien hochladen",
-          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwählen."
         },
         {
           "position": 2,
-          "name": "Qualitat einstellen",
-          "text": "Passen Sie den GIF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+          "name": "Qualität einstellen",
+          "text": "Passen Sie den GIF-Qualitätsregler an — niedrigere Werte ergeben kleinere Dateien."
         },
         {
           "position": 3,
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Warum JPG in GIF konvertieren?",
       "html": "<p class=\"text-mid mb-4\">JPEG (JPG) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Fotos verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von JPG in GIF (Graphics Interchange Format) bietet mehr Flexibilität bei der Verwendung Ihrer Bilder.</p><p class=\"text-mid mb-4\">GIF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt GIF die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "JPG to GIF conversion",
+      "imageAlt": "JPG-zu-GIF-Konvertierung",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG vs. GIF – die wichtigsten Unterschiede",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustbehaftet</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustbehaftet</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">universell</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-Optimierung",
-          "description": "JPG → GIF – WordPress, Shopify, TYPO3."
+          "description": "Konvertieren Sie JPG in GIF, um Ihre Bilder optimal für die Veröffentlichung im Web vorzubereiten."
         },
         {
           "icon": "RiMailLine",
           "title": "E-Mail und Teilen",
-          "description": "GIF – Gmail, Outlook, GMX, Web.de."
+          "description": "GIF-Dateien werden von Gmail, Outlook, GMX, Web.de problemlos akzeptiert. Konvertieren Sie zu GIF, um hochwertige Bilder zum Teilen zu erhalten."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-Commerce",
-          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+          "description": "Plattformen wie Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen können bestimmte Formate erfordern – die Konvertierung nach GIF stellt sicher, dass Ihre Produktbilder den Anforderungen entsprechen."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumente und Archivierung",
-          "description": "GIF – Druckereien."
+          "description": "GIF bietet ein modernes und effizientes Format für die Bildspeicherung in Dokumenten."
         }
       ]
     },
@@ -216,8 +220,8 @@
       "title": "Helfen Sie uns, unsere Tools zu verbessern",
       "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "JPG to GIF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "JPG-zu-GIF-Konverter"
     },
     {
       "type": "gap",

@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Vektor-SVG-Grafiken in hochwertiges TIFF-Raster umwandeln.",
-      "featureList": ["Konvertierung zu TIFF", "Qualitatsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+      "featureList": ["Konvertierung zu TIFF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
     },
     "howTo": {
       "name": "SVG zu TIFF konvertieren",
@@ -37,12 +37,12 @@
         {
           "position": 1,
           "name": "Dateien hochladen",
-          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwahlen."
+          "text": "Dateien auf die Seite ziehen oder klicken, um sie auszuwählen."
         },
         {
           "position": 2,
-          "name": "Qualitat einstellen",
-          "text": "Passen Sie den TIFF-Qualitatsregler an — niedrigere Werte ergeben kleinere Dateien."
+          "name": "Qualität einstellen",
+          "text": "Passen Sie den TIFF-Qualitätsregler an — niedrigere Werte ergeben kleinere Dateien."
         },
         {
           "position": 3,
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Warum SVG in TIFF konvertieren?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) ist ein verlustfreies Bildformat, das auf Vektorgrafiken basiert. Es wird häufig für Logos und Icons verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von SVG in TIFF (Tagged Image File Format) bietet mehr Flexibilität bei der Verwendung Ihrer Bilder.</p><p class=\"text-mid mb-4\">TIFF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt TIFF die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "SVG to TIFF conversion",
+      "imageAlt": "SVG-zu-TIFF-Konvertierung",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG vs. TIFF – die wichtigsten Unterschiede",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-Optimierung",
-          "description": "SVG → TIFF – WordPress, Shopify, TYPO3."
+          "description": "Konvertieren Sie SVG in TIFF, um Ihre Bilder optimal für die Veröffentlichung im Web vorzubereiten."
         },
         {
           "icon": "RiMailLine",
           "title": "E-Mail und Teilen",
-          "description": "TIFF – Gmail, Outlook, GMX, Web.de."
+          "description": "TIFF-Dateien werden von Gmail, Outlook, GMX, Web.de von den meisten modernen Plattformen unterstützt. Konvertieren Sie zu TIFF, um hochwertige Bilder zum Teilen zu erhalten."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-Commerce",
-          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+          "description": "Plattformen wie Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen können bestimmte Formate erfordern – die Konvertierung nach TIFF stellt sicher, dass Ihre Produktbilder den Anforderungen entsprechen."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumente und Archivierung",
-          "description": "TIFF – Druckereien."
+          "description": "TIFF eignet sich hervorragend für die Archivierung und den professionellen Druck dank seiner verlustfreien Kompression."
         }
       ]
     },
@@ -216,8 +220,8 @@
       "title": "Helfen Sie uns, unsere Tools zu verbessern",
       "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "SVG to TIFF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "SVG-zu-TIFF-Konverter"
     },
     {
       "type": "gap",

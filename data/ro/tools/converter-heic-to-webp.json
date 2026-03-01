@@ -2,14 +2,14 @@
   "toolKey": "heicToWebp",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor HEIC in WebP – HEIC WebP",
-    "description": "Converteste fotografii HEIC de pe iPhone in WebP usor. Dimensiuni mai mici.",
+    "title": "Convertor HEIC în WebP – HEIC WebP",
+    "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-heic-in-webp"
   },
   "hero": {
-    "title": "Convertor HEIC in WebP",
-    "description": "Converteste fotografii HEIC de pe iPhone in WebP usor. Dimensiuni mai mici.",
+    "title": "Convertor HEIC în WebP",
+    "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -19,20 +19,20 @@
     },
     "third": {
       "href": "/ro/instrumente/convertor-heic-in-webp",
-      "label": "Convertor HEIC in WebP"
+      "label": "Convertor HEIC în WebP"
     }
   },
   "schemas": {
     "software": {
-      "name": "Convertor HEIC in WebP",
+      "name": "Convertor HEIC în WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteste fotografii HEIC de pe iPhone in WebP usor. Dimensiuni mai mici.",
+      "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici.",
       "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
     },
     "howTo": {
       "name": "HEIC to WebP",
-      "description": "Converteste fotografii HEIC de pe iPhone in WebP usor. Dimensiuni mai mici.",
+      "description": "Convertește fotografii HEIC de pe iPhone în WebP usor. Dimensiuni mai mici.",
       "steps": [
         {
           "name": "Add HEIC files",
@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "De ce să convertiți HEIC în WebP?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia HEIC în WebP (WebP) folosește compresia modernă pentru fișiere mai mici fără pierderea calității.</p><p class=\"text-mid mb-4\">WebP suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
-      "imageAlt": "HEIC to WebP conversion",
+      "imageAlt": "Conversie HEIC în WEBP",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimizare web",
-          "description": "HEIC → WebP – WordPress, Shopify, GomAG."
+          "description": "Convertiți HEIC în WebP pentru a reduce semnificativ timpii de încărcare a paginilor și a îmbunătăți scorurile Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email și partajare",
-          "description": "WebP – Gmail, Outlook, Yahoo."
+          "description": "Fișierele WebP sunt compatibile cu majoritatea platformelor moderne. Convertiți în WebP pentru a obține atașamente mai mici în limitele de dimensiune."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+          "description": "Platforme precum OLX.ro, eMAG.ro, Amazon, Marketplace preferă adesea formatul WebP pentru imaginile de produse datorită echilibrului optim între calitate și dimensiunea fișierului."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documente și arhivare",
-          "description": "WebP – tipografii."
+          "description": "Formatul WebP oferă o soluție modernă și eficientă pentru stocarea imaginilor în documente."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia HEIC în WebP în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia HEIC în WebP poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. WebP oferă o compresie excelentă păstrând calitatea vizuală.</p>"
     },
     {
       "type": "gap",
@@ -202,10 +206,10 @@
     {
       "type": "contactForm",
       "title": "Ajuta-ne sa imbunatatim instrumentele",
-      "description": "Ai o idee, ai gasit un bug sau vrei sa sugerezi o functie? Scrie-ne, raspundem in 24 de ore.",
+      "description": "Ai o idee, ai gasit un bug sau vrei sa sugerezi o functie? Scriați-ne, raspundem in 24 de ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor HEIC in WebP – Arteon",
-      "defaultSubject": "Feedback: Convertor HEIC in WebP"
+      "defaultSubject": "Feedback: Convertor HEIC în WebP"
     },
     {
       "type": "gap",

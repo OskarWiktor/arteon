@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna PNG-grafiikat AVIF-muotoon lapinakvyystuella. Huomattavasti pienemmat tiedostot.",
-      "featureList": ["Muunnos AVIF-muotoon", "Laadun saato (60-95%)", "Eramuunnos", "Paikallinen kasittely selaimessa"]
+      "featureList": ["Muunnos AVIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"]
     },
     "howTo": {
       "name": "Kuinka muuntaa PNG AVIF-muotoon",
@@ -37,33 +37,37 @@
         {
           "position": 1,
           "name": "Lataa tiedostot",
-          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levylta."
+          "text": "Vedä tiedostot sivulle tai napsauta valitaksesi levyltä."
         },
         {
           "position": 2,
           "name": "Aseta laatu",
-          "text": "Saada AVIF-laatuliukusaadinta — alhaisemmat arvot tuottavat pienempia tiedostoja."
+          "text": "Säädä AVIF-laatuliukusäädintä — alhaisemmat arvot tuottavat pienempiä tiedostoja."
         },
         {
           "position": 3,
           "name": "Muunna",
-          "text": "Napsauta Muunna — tiedostot kasitellaan paikallisesti selaimessa."
+          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessa."
         },
         {
           "position": 4,
           "name": "Lataa",
-          "text": "Lataa AVIF-tiedostot — yksittain tai kaikki kerralla."
+          "text": "Lataa AVIF-tiedostot — yksittäin tai kaikki kerralla."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Miksi muuntaa PNG AVIF-muotoon?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) on häviötön kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">PNG:n muuntaminen AVIF-muotoon (AV1 Image File Format) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">AVIF tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "PNG to AVIF conversion",
+      "imageAlt": "PNG-AVIF-muunnos",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG vs AVIF – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Molemmat</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Molemmat</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">yleinen</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Verkkosivujen optimointi",
-          "description": "PNG → AVIF – WordPress, Shopify, MyCashflow."
+          "description": "Muunna PNG AVIF-muotoon vähentääksesi sivujen latausaikoja merkittävästi ja parantaaksesi Core Web Vitals -tuloksia."
         },
         {
           "icon": "RiMailLine",
           "title": "Sähköposti ja jakaminen",
-          "description": "AVIF – Gmail, Outlook, Elisa Sähköposti."
+          "description": "AVIF-tiedostot ovat yhteensopivia useimpien modernien alustojen kanssa. Muunna AVIF-muotoon saadaksesi pienempiä liitteitä kokorajoitusten puitteissa."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Verkkokauppa",
-          "description": "Tori.fi, Verkkokauppa.com, Gigantti, Amazon."
+          "description": "Alustat kuten Tori.fi, Verkkokauppa.com, Gigantti, Amazon saattavat vaatia tiettejä tiedostomuotoja – AVIF-muotoon muuntaminen varmistaa, että tuotekuvasi täyttävät vaatimukset."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Asiakirjat ja arkistointi",
-          "description": "AVIF – painotalot."
+          "description": "AVIF-muoto tarjoaa modernin ja tehokkaan ratkaisun kuvien tallentamiseen asiakirjoissa."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-AVIF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja.</p><p class=\"text-mid\">Tori.fi, Verkkokauppa.com, Gigantti, Amazon – WordPress, Shopify, MyCashflow.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. PNG-muunnos AVIF-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. AVIF tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "PNG to AVIF converter"
+      "imageAlt": "Yhteystiedot",
+      "defaultSubject": "PNG-AVIF-muunnin"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Muut tyokalut"
+      "title": "Muut työkalut"
     }
   ]
 }

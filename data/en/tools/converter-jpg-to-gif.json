@@ -59,6 +59,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert JPG to GIF?",
       "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is a lossy image format supporting millions colors. It is widely used for photos and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting JPG to GIF (Graphics Interchange Format) preserves every pixel of image data with lossless compression.</p><p class=\"text-mid mb-4\">GIF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, GIF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many JPG files as you need, completely free.</p>",

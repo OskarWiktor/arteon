@@ -54,11 +54,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować SVG na GIF?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) to bezstratny format grafiki wektorowej. Jest powszechnie stosowany do logo i ikon.</p><p class=\"text-mid mb-4\">Konwersja SVG na GIF (Graphics Interchange Format) zamienia skalowalną grafikę wektorową w obraz rastrowy o ustalonej rozdzielczości.</p><p class=\"text-mid mb-4\">GIF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, GIF zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików SVG, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "SVG to GIF conversion",
+      "imageAlt": "Konwersja SVG na GIF",
       "variant": "right"
     },
     {
@@ -94,7 +98,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG a GIF – porównanie formatów",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">uniwersalna</td><td class=\"py-2 text-center\">uniwersalna</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -211,8 +215,8 @@
       "title": "Pomóż nam ulepszyć narzędzia",
       "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "SVG to GIF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "Konwerter SVG na GIF"
     },
     {
       "type": "gap",

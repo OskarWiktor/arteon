@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Pourquoi convertir AVIF en WebP ?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) est un format d’image avec perte prenant en charge des millions de couleurs. Il est largement utilisé pour les images web modernes.</p><p class=\"text-mid mb-4\">La conversion de AVIF en WebP (WebP) tire parti de la compression moderne pour des fichiers plus légers sans perte de qualité.</p><p class=\"text-mid mb-4\">WebP prend en charge la transparence alpha. WebP offre une compression avec et sans perte.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
-      "imageAlt": "AVIF to WebP conversion",
+      "imageAlt": "Conversion AVIF en WEBP",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimisation web",
-          "description": "AVIF → WebP – WordPress, PrestaShop, Shopify."
+          "description": "Convertissez AVIF en WebP pour réduire considérablement les temps de chargement de vos pages et améliorer vos scores Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail et partage",
-          "description": "WebP – Gmail, Outlook, La Poste."
+          "description": "Les fichiers WebP sont compatibles avec la plupart des plateformes modernes. Convertissez en WebP pour obtenir des pièces jointes plus légères respectant les limites de taille."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Leboncoin, Cdiscount, Amazon.fr, Vinted."
+          "description": "Des plateformes comme Leboncoin, Cdiscount, Amazon.fr, Vinted privilégient souvent le format WebP pour les images de produits en raison de son équilibre optimal entre qualité et taille de fichier."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents et archivage",
-          "description": "WebP – imprimeries."
+          "description": "Le format WebP offre une solution moderne et efficace pour le stockage d’images dans les documents."
         }
       ]
     },
@@ -206,7 +210,7 @@
     {
       "type": "contactForm",
       "title": "Aidez-nous a ameliorer nos outils",
-      "description": "Une idee, un bug ou une suggestion ? Ecrivez-nous, nous repondons sous 24 heures.",
+      "description": "Une idee, un bug ou une suggestion ? Écrivez-nous, nous repondons sous 24 heures.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur AVIF en WebP – Arteon",
       "defaultSubject": "Feedback: Convertisseur AVIF en WebP"

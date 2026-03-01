@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Warum BMP in WebP konvertieren?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) ist ein verlustfreies Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für unkomprimierte Bilder verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von BMP in WebP (WebP) reduziert die Dateigröße erheblich und beschleunigt das Laden von Webseiten.</p><p class=\"text-mid mb-4\">WebP unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. WebP bietet sowohl verlustbehaftete als auch verlustfreie Komprimierung.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
-      "imageAlt": "BMP to WebP conversion",
+      "imageAlt": "BMP-zu-WEBP-Konvertierung",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP vs. WebP – die wichtigsten Unterschiede",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Beide</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Beide</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-Optimierung",
-          "description": "BMP → WebP – WordPress, Shopify, TYPO3."
+          "description": "Konvertieren Sie BMP in WebP, um die Ladezeiten Ihrer Webseite deutlich zu reduzieren und bessere Core Web Vitals Werte zu erzielen."
         },
         {
           "icon": "RiMailLine",
           "title": "E-Mail und Teilen",
-          "description": "WebP – Gmail, Outlook, GMX, Web.de."
+          "description": "WebP-Dateien werden von Gmail, Outlook, GMX, Web.de von den meisten modernen Plattformen unterstützt. Konvertieren Sie zu WebP, um kleinere Anhänge zu erhalten, die innerhalb der E-Mail-Größenlimits bleiben."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-Commerce",
-          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+          "description": "Plattformen wie Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen bevorzugen häufig das WebP-Format für Produktbilder, da es eine optimale Balance zwischen Qualität und Dateigröße bietet."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumente und Archivierung",
-          "description": "WebP – Druckereien."
+          "description": "WebP bietet ein modernes und effizientes Format für die Bildspeicherung in Dokumenten."
         }
       ]
     },

@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Warum AVIF in PNG konvertieren?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für moderne Webbilder verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von AVIF in PNG (Portable Network Graphics) stellt universelle Kompatibilität mit allen Browsern und Geräten sicher.</p><p class=\"text-mid mb-4\">PNG unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt PNG die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
-      "imageAlt": "AVIF to PNG conversion",
+      "imageAlt": "AVIF-zu-PNG-Konvertierung",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF vs. PNG – die wichtigsten Unterschiede",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universell</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-Optimierung",
-          "description": "AVIF → PNG – WordPress, Shopify, TYPO3."
+          "description": "Konvertieren Sie AVIF in PNG, um Transparenz und Bildqualität für Webgrafiken zu erhalten."
         },
         {
           "icon": "RiMailLine",
           "title": "E-Mail und Teilen",
-          "description": "PNG – Gmail, Outlook, GMX, Web.de."
+          "description": "PNG-Dateien werden von Gmail, Outlook, GMX, Web.de problemlos akzeptiert. Konvertieren Sie zu PNG, um hochwertige Bilder zum Teilen zu erhalten."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-Commerce",
-          "description": "Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen."
+          "description": "Plattformen wie Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen können bestimmte Formate erfordern – die Konvertierung nach PNG stellt sicher, dass Ihre Produktbilder den Anforderungen entsprechen."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumente und Archivierung",
-          "description": "PNG – Druckereien."
+          "description": "PNG eignet sich hervorragend für die Archivierung und den professionellen Druck dank seiner verlustfreien Kompression."
         }
       ]
     },

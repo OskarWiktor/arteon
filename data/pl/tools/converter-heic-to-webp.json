@@ -52,11 +52,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować HEIC na WebP?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do zdjęć z urządzeń Apple.</p><p class=\"text-mid mb-4\">Konwersja HEIC na WebP (WebP) pozwala wykorzystać nowoczesną kompresję, która zmniejsza rozmiar plików bez utraty jakości.</p><p class=\"text-mid mb-4\">WebP obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. WebP obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików HEIC, ile potrzebujesz – całkowicie za darmo.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "HEIC to WebP conversion",
+      "imageAlt": "Konwersja HEIC na WEBP",
       "variant": "right"
     },
     {

@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Waarom AVIF naar WebP converteren?",
       "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van AVIF naar WebP (WebP) maakt gebruik van moderne compressie voor kleinere bestanden zonder kwaliteitsverlies.</p><p class=\"text-mid mb-4\">WebP ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
-      "imageAlt": "AVIF to WebP conversion",
+      "imageAlt": "AVIF naar WEBP conversie",
       "variant": "right"
     },
     {
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website-optimalisatie",
-          "description": "AVIF → WebP – WordPress, Shopify, Lightspeed."
+          "description": "Converteer AVIF naar WebP om de laadtijden van uw pagina aanzienlijk te verminderen en uw Core Web Vitals-scores te verbeteren."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail en delen",
-          "description": "WebP – Gmail, Outlook, Ziggo Mail."
+          "description": "WebP-bestanden worden door de meeste moderne platformen ondersteund. Converteer naar WebP om kleinere bijlagen te krijgen binnen de groottebeperkingen."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Bol.com, Marktplaats, Amazon.nl, Coolblue."
+          "description": "Platformen zoals Bol.com, Marktplaats, Amazon.nl, Coolblue geven vaak de voorkeur aan het WebP-formaat voor productafbeeldingen vanwege de optimale balans tussen kwaliteit en bestandsgrootte."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documenten en archivering",
-          "description": "WebP – drukkerijen."
+          "description": "Het WebP-formaat biedt een moderne en efficiënte oplossing voor beeldopslag in documenten."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-naar-WebP-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens.</p><p class=\"text-mid\">Bol.com, Marktplaats, Amazon.nl, Coolblue – WordPress, Shopify, Lightspeed.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van AVIF naar WebP kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. WebP biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
     },
     {
       "type": "gap",

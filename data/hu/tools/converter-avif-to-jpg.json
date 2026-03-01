@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "AVIF JPG konverter – AVIF JPG",
-    "description": "AVIF fajlok konvertalasa univerzalis JPG-re. Kompatibilis minden programmal.",
+    "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/avif-jpg-konverter"
   },
   "hero": {
     "title": "AVIF JPG konverter",
-    "description": "AVIF fajlok konvertalasa univerzalis JPG-re. Kompatibilis minden programmal.",
+    "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,12 +27,12 @@
       "name": "AVIF JPG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "AVIF fajlok konvertalasa univerzalis JPG-re. Kompatibilis minden programmal.",
+      "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal.",
       "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
     },
     "howTo": {
       "name": "AVIF to JPG",
-      "description": "AVIF fajlok konvertalasa univerzalis JPG-re. Kompatibilis minden programmal.",
+      "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal.",
       "steps": [
         {
           "name": "Add AVIF files",
@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Miért érdemes AVIF-t JPG-re konvertálni?",
       "html": "<p class=\"text-mid mb-4\">A AV1 Image File Format (AVIF) egy veszteséges képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A AVIF konvertálása JPG-re (JPEG) univerzális kompatibilitást biztosít minden böngészővel és eszközzel.</p><p class=\"text-mid mb-4\">A JPG nem támogatja az átlátszóságot – az átlátszó területek háttérszínnel lesznek kitöltve.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
-      "imageAlt": "AVIF to JPG conversion",
+      "imageAlt": "AVIF konvertálás JPG formátumba",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF vs JPG – a legfontosabb különbségek",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Mindkettő</td><td class=\"py-2 text-center\">Veszteséges</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Nem</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Nem</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Mindkettő</td><td class=\"py-2 text-center\">Veszteséges</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Nem</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Nem</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">univerzális</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Weboldal-optimalizálás",
-          "description": "AVIF → JPG – WordPress, Shopify, Shoprenter."
+          "description": "Konvertálja AVIF-t JPG-re, hogy biztosítsa az általános kompatibilitást minden böngészővel és tartalomkezelő rendszerrel, mint a WordPress, Shopify, Shoprenter."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail és megosztás",
-          "description": "JPG – Gmail, Outlook, Citromail."
+          "description": "A JPG fájlokat problémamentesen fogadják az e-mail kliensek, mint a Gmail, Outlook, Citromail. A JPG formátum a legbiztonságosabb választás e-mail mellékletekhez az általános támogatásának köszönhetően."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-kereskedelem",
-          "description": "Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace."
+          "description": "Az olyan platformok, mint a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace gyakran előnyben részesítik a JPG formátumot termékképeknél a minőség és a fájlméret optimális egyensúlya miatt."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumentumok és archiválás",
-          "description": "JPG – nyomdák."
+          "description": "A JPG formátumot széles körben elfogadják digitális dokumentumokban, jelentésekben és prezentációkban."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "AVIF-JPG konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek.</p><p class=\"text-mid\">Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace – WordPress, Shopify, Shoprenter.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A AVIF átalakítása JPG formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. JPG maximális kompatibilitást nyújt minden platformmal.</p>"
     },
     {
       "type": "gap",

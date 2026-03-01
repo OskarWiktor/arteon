@@ -2,14 +2,14 @@
   "toolKey": "pngToGif",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor PNG in GIF — PNG GIF",
-    "description": "Converteste grafice PNG in GIF. Ideal pentru pictograme simple si grafice.",
+    "title": "Convertor PNG în GIF — PNG GIF",
+    "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-png-in-gif"
   },
   "hero": {
-    "title": "Convertor PNG in GIF",
-    "description": "Converteste grafice PNG in GIF. Ideal pentru pictograme simple si grafice.",
+    "title": "Convertor PNG în GIF",
+    "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -19,51 +19,55 @@
     },
     "third": {
       "href": "/ro/instrumente/convertor-png-in-gif",
-      "label": "Convertor PNG in GIF"
+      "label": "Convertor PNG în GIF"
     }
   },
   "schemas": {
     "software": {
-      "name": "Convertor PNG in GIF",
+      "name": "Convertor PNG în GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteste grafice PNG in GIF. Ideal pentru pictograme simple si grafice.",
-      "featureList": ["Conversie in GIF", "Ajustare calitate (60-95%)", "Conversie in lot", "Procesare locala in browser"]
+      "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice.",
+      "featureList": ["Conversie în GIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
     },
     "howTo": {
-      "name": "Cum sa convertesti PNG in GIF",
-      "description": "Converteste grafice PNG in GIF. Ideal pentru pictograme simple si grafice.",
+      "name": "Cum să convertiți PNG în GIF",
+      "description": "Convertește grafice PNG în GIF. Ideal pentru pictograme simple si grafice.",
       "steps": [
         {
           "position": 1,
-          "name": "Incarca fisiere",
-          "text": "Trage fisierele pe pagina sau da clic pentru a le selecta."
+          "name": "Încărcați fișiere",
+          "text": "Trageți fișierele pe pagină sau faceți clic pentru a le selecta."
         },
         {
           "position": 2,
-          "name": "Seteaza calitatea",
-          "text": "Ajusteaza cursorul de calitate GIF — valori mai mici produc fisiere mai mici."
+          "name": "Setați calitatea",
+          "text": "Ajustați cursorul de calitate GIF — valori mai mici produc fișiere mai mici."
         },
         {
           "position": 3,
           "name": "Converteste",
-          "text": "Da clic pe Converteste — fisierele sunt procesate local in browser."
+          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
         },
         {
           "position": 4,
           "name": "Descarca",
-          "text": "Descarca fisierele GIF — individual sau toate deodata."
+          "text": "Descărcați fișierele GIF — individual sau toate deodată."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "De ce să convertiți PNG în GIF?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia PNG în GIF (Graphics Interchange Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">GIF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "PNG to GIF conversion",
+      "imageAlt": "Conversie PNG în GIF",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG vs GIF – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universală</td><td class=\"py-2 text-center\">universală</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimizare web",
-          "description": "PNG → GIF – WordPress, Shopify, GomAG."
+          "description": "Convertiți PNG în GIF pentru a pregăti imaginile pentru publicarea pe web."
         },
         {
           "icon": "RiMailLine",
           "title": "Email și partajare",
-          "description": "GIF – Gmail, Outlook, Yahoo."
+          "description": "Fișierele GIF sunt acceptate fără probleme de clienții de email precum Gmail, Outlook, Yahoo. Convertiți în GIF pentru a obține imagini de înaltă calitate potrivite pentru partajare."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+          "description": "Platforme precum OLX.ro, eMAG.ro, Amazon, Marketplace pot necesita formate specifice – conversia în GIF asigură că imaginile produselor dumneavoastră îndeplinesc cerințele."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documente și arhivare",
-          "description": "GIF – tipografii."
+          "description": "Formatul GIF oferă o soluție modernă și eficientă pentru stocarea imaginilor în documente."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia PNG în GIF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia PNG în GIF poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. GIF oferă compatibilitate maximă cu toate platformele.</p>"
     },
     {
       "type": "gap",
@@ -213,7 +217,7 @@
       "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Contact",
-      "defaultSubject": "PNG to GIF converter"
+      "defaultSubject": "Convertor PNG în GIF"
     },
     {
       "type": "gap",

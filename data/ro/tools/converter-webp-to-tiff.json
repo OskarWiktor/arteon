@@ -2,14 +2,14 @@
   "toolKey": "webpToTiff",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor WebP in TIFF — WebP TIFF",
-    "description": "Converteste imagini WebP in TIFF profesional pentru tiparire si arhivare.",
+    "title": "Convertor WebP în TIFF — WebP TIFF",
+    "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/ro/instrumente/convertor-webp-in-tiff"
   },
   "hero": {
-    "title": "Convertor WebP in TIFF",
-    "description": "Converteste imagini WebP in TIFF profesional pentru tiparire si arhivare.",
+    "title": "Convertor WebP în TIFF",
+    "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -19,51 +19,55 @@
     },
     "third": {
       "href": "/ro/instrumente/convertor-webp-in-tiff",
-      "label": "Convertor WebP in TIFF"
+      "label": "Convertor WebP în TIFF"
     }
   },
   "schemas": {
     "software": {
-      "name": "Convertor WebP in TIFF",
+      "name": "Convertor WebP în TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteste imagini WebP in TIFF profesional pentru tiparire si arhivare.",
-      "featureList": ["Conversie in TIFF", "Ajustare calitate (60-95%)", "Conversie in lot", "Procesare locala in browser"]
+      "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare.",
+      "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
     },
     "howTo": {
-      "name": "Cum sa convertesti WebP in TIFF",
-      "description": "Converteste imagini WebP in TIFF profesional pentru tiparire si arhivare.",
+      "name": "Cum să convertiți WebP în TIFF",
+      "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare.",
       "steps": [
         {
           "position": 1,
-          "name": "Incarca fisiere",
-          "text": "Trage fisierele pe pagina sau da clic pentru a le selecta."
+          "name": "Încărcați fișiere",
+          "text": "Trageți fișierele pe pagină sau faceți clic pentru a le selecta."
         },
         {
           "position": 2,
-          "name": "Seteaza calitatea",
-          "text": "Ajusteaza cursorul de calitate TIFF — valori mai mici produc fisiere mai mici."
+          "name": "Setați calitatea",
+          "text": "Ajustați cursorul de calitate TIFF — valori mai mici produc fișiere mai mici."
         },
         {
           "position": 3,
           "name": "Converteste",
-          "text": "Da clic pe Converteste — fisierele sunt procesate local in browser."
+          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
         },
         {
           "position": 4,
           "name": "Descarca",
-          "text": "Descarca fisierele TIFF — individual sau toate deodata."
+          "text": "Descărcați fișierele TIFF — individual sau toate deodată."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "De ce să convertiți WebP în TIFF?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini web.</p><p class=\"text-mid mb-4\">Conversia WebP în TIFF (Tagged Image File Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">TIFF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "WebP to TIFF conversion",
+      "imageAlt": "Conversie WEBP în TIFF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimizare web",
-          "description": "WebP → TIFF – WordPress, Shopify, GomAG."
+          "description": "Convertiți WebP în TIFF pentru a pregăti imaginile pentru publicarea pe web."
         },
         {
           "icon": "RiMailLine",
           "title": "Email și partajare",
-          "description": "TIFF – Gmail, Outlook, Yahoo."
+          "description": "Fișierele TIFF sunt compatibile cu majoritatea platformelor moderne. Convertiți în TIFF pentru a obține imagini de înaltă calitate potrivite pentru partajare."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+          "description": "Platforme precum OLX.ro, eMAG.ro, Amazon, Marketplace pot necesita formate specifice – conversia în TIFF asigură că imaginile produselor dumneavoastră îndeplinesc cerințele."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documente și arhivare",
-          "description": "TIFF – tipografii."
+          "description": "Formatul TIFF este o alegere excelentă pentru arhivare și tipărire profesională datorită compresiei fără pierderi."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia WebP în TIFF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia WebP în TIFF poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. TIFF oferă o compresie excelentă păstrând calitatea vizuală.</p>"
     },
     {
       "type": "gap",
@@ -213,7 +217,7 @@
       "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Contact",
-      "defaultSubject": "WebP to TIFF converter"
+      "defaultSubject": "Convertor WEBP în TIFF"
     },
     {
       "type": "gap",

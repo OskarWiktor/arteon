@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Miksi muuntaa TIFF PNG-muotoon?",
       "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) on häviötön kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">TIFF:n muuntaminen PNG-muotoon (Portable Network Graphics) varmistaa yleismaailmallisen yhteensopivuuden kaikkien selainten ja laitteiden kanssa.</p><p class=\"text-mid mb-4\">PNG tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
-      "imageAlt": "TIFF to PNG conversion",
+      "imageAlt": "TIFF-PNG-muunnos",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF vs PNG – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Häviötön</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Ei</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Häviötön</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Ei</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">yleinen</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Verkkosivujen optimointi",
-          "description": "TIFF → PNG – WordPress, Shopify, MyCashflow."
+          "description": "Muunna TIFF PNG-muotoon säilyttääksesi läpinäkyvyyden ja kuvanlaadun verkkografiikkaa varten."
         },
         {
           "icon": "RiMailLine",
           "title": "Sähköposti ja jakaminen",
-          "description": "PNG – Gmail, Outlook, Elisa Sähköposti."
+          "description": "PNG-tiedostot hyväksytään ongelmitta sähköpostiohjelmissa kuten Gmail, Outlook, Elisa Sähköposti. Muunna PNG-muotoon laadukkaita kuvia jakamista varten."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "Verkkokauppa",
-          "description": "Tori.fi, Verkkokauppa.com, Gigantti, Amazon."
+          "description": "Alustat kuten Tori.fi, Verkkokauppa.com, Gigantti, Amazon saattavat vaatia tiettejä tiedostomuotoja – PNG-muotoon muuntaminen varmistaa, että tuotekuvasi täyttävät vaatimukset."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Asiakirjat ja arkistointi",
-          "description": "PNG – painotalot."
+          "description": "PNG-muoto on erinomainen valinta arkistointiin ja ammattimaiseen tulostukseen häviöttömän pakkauksensa ansiosta."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF-PNG-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja.</p><p class=\"text-mid\">Tori.fi, Verkkokauppa.com, Gigantti, Amazon – WordPress, Shopify, MyCashflow.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. TIFF-muunnos PNG-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. PNG tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
     },
     {
       "type": "gap",

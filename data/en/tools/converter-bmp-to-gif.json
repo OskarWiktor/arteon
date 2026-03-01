@@ -59,6 +59,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert BMP to GIF?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is a lossless image format supporting millions colors. It is widely used for uncompressed images and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting BMP to GIF (Graphics Interchange Format) gives you more flexibility in how and where you use your images.</p><p class=\"text-mid mb-4\">GIF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, GIF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many BMP files as you need, completely free.</p>",

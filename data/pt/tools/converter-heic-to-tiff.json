@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta fotos HEIC do iPhone para formato TIFF profissional.",
-      "featureList": ["Conversao para TIFF", "Ajuste de qualidade (60-95%)", "Conversao em lote", "Processamento local no navegador"]
+      "featureList": ["Conversão para TIFF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"]
     },
     "howTo": {
       "name": "Como converter HEIC para TIFF",
@@ -37,7 +37,7 @@
         {
           "position": 1,
           "name": "Carregar ficheiros",
-          "text": "Arraste ficheiros para a pagina ou clique para selecionar."
+          "text": "Arraste ficheiros para a página ou clique para selecionar."
         },
         {
           "position": 2,
@@ -47,7 +47,7 @@
         {
           "position": 3,
           "name": "Converter",
-          "text": "Clique em Converter — os ficheiros sao processados localmente no seu navegador."
+          "text": "Clique em Converter — os ficheiros são processados localmente no seu navegador."
         },
         {
           "position": 4,
@@ -59,11 +59,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Por que converter HEIC para TIFF?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) é um formato de imagem com perda que suporta milhões de cores. É amplamente utilizado para fotos de dispositivos Apple.</p><p class=\"text-mid mb-4\">Converter HEIC para TIFF (Tagged Image File Format) resolve o problema de compatibilidade com o formato proprietário da Apple.</p><p class=\"text-mid mb-4\">TIFF suporta transparência alfa. Como formato sem perda, TIFF preserva todos os dados da imagem.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "HEIC to TIFF conversion",
+      "imageAlt": "Conversão de HEIC para TIFF",
       "variant": "right"
     },
     {
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Otimização web",
-          "description": "HEIC → TIFF – WordPress, Shopify, Nuvemshop."
+          "description": "Converta HEIC para TIFF para preparar as suas imagens para publicação na web."
         },
         {
           "icon": "RiMailLine",
           "title": "Email e partilha",
-          "description": "TIFF – Gmail, Outlook, UOL Mail."
+          "description": "Os ficheiros TIFF são compatíveis com a maioria das plataformas modernas. Converta para TIFF para imagens de alta qualidade adequadas para partilha."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.pt, KuantoKusta, Amazon, Mercado Livre."
+          "description": "Plataformas como OLX.pt, KuantoKusta, Amazon, Mercado Livre podem exigir formatos específicos – converter para TIFF garante que as suas imagens de produtos cumpram os requisitos."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documentos e arquivo",
-          "description": "TIFF – gráficas."
+          "description": "O formato TIFF é uma excelente escolha para arquivo e impressão profissional graças à sua compressão sem perdas."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de HEIC para TIFF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos.</p><p class=\"text-mid\">OLX.pt, KuantoKusta, Amazon, Mercado Livre – WordPress, Shopify, Nuvemshop.</p>"
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de HEIC para TIFF pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. TIFF proporciona excelente compressão mantendo a qualidade visual.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Ajude-nos a melhorar as nossas ferramentas",
       "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "HEIC to TIFF converter"
+      "imageAlt": "Contacto",
+      "defaultSubject": "Conversor HEIC para TIFF"
     },
     {
       "type": "gap",

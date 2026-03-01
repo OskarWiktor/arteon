@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník JPG na AVIF — JPG AVIF",
-    "description": "Prevedte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
+    "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/cs/nastroje/prevodnik-jpg-na-avif"
   },
   "hero": {
     "title": "Převodník JPG na AVIF",
-    "description": "Prevedte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
+    "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,43 +27,47 @@
       "name": "Převodník JPG na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Prevedte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
-      "featureList": ["Konverze do AVIF", "Nastaveni kvality (60-95%)", "Davkova konverze", "Lokalni zpracovani v prohlizeci"]
+      "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
+      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
     },
     "howTo": {
-      "name": "Jak prevest JPG na AVIF",
-      "description": "Prevedte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
+      "name": "Jak převést JPG na AVIF",
+      "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality.",
       "steps": [
         {
           "position": 1,
           "name": "Nahrajte soubory",
-          "text": "Pretahnete soubory na stranku nebo kliknete pro vyber z disku."
+          "text": "Přetáhněte soubory na stránku nebo klikněte pro výběr z disku."
         },
         {
           "position": 2,
           "name": "Nastavte kvalitu",
-          "text": "Upravte posuvnik kvality AVIF — nizsi hodnoty vytvareji mensi soubory."
+          "text": "Upravte posuvník kvality AVIF — nižší hodnoty vytvářejí menší soubory."
         },
         {
           "position": 3,
           "name": "Konvertujte",
-          "text": "Kliknete na Konvertovat — soubory se zpracuji lokalne v prohlizeci."
+          "text": "Klikněte na Konvertovat — soubory se zpracují lokálně v prohlížeči."
         },
         {
           "position": 4,
           "name": "Stahnete",
-          "text": "Stahnete hotove soubory AVIF — jednotlive nebo vsechny naraz."
+          "text": "Stáhněte hotové soubory AVIF — jednotlivě nebo všechny naraz."
         }
       ]
     }
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Proč převádět JPG na AVIF?",
       "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro fotografie.</p><p class=\"text-mid mb-4\">Převod JPG na AVIF (AV1 Image File Format) využívá moderní kompresi pro menší soubory bez ztráty kvality.</p><p class=\"text-mid mb-4\">AVIF podporuje alfa průhlednost. AVIF nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "JPG to AVIF conversion",
+      "imageAlt": "Převod JPG na AVIF",
       "variant": "right"
     },
     {
@@ -99,7 +103,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG vs AVIF – hlavní rozdíly",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Vlastnost</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprese</td><td class=\"py-2 text-center\">Ztrátová</td><td class=\"py-2 text-center\">Obě</td></tr><tr class=\"border-b\"><td class=\"py-2\">Průhlednost</td><td class=\"py-2 text-center\">Ne</td><td class=\"py-2 text-center\">Ano</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animace</td><td class=\"py-2 text-center\">Ne</td><td class=\"py-2 text-center\">Ano</td></tr><tr><td class=\"py-2\">Podpora prohlížečů</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Vlastnost</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprese</td><td class=\"py-2 text-center\">Ztrátová</td><td class=\"py-2 text-center\">Obě</td></tr><tr class=\"border-b\"><td class=\"py-2\">Průhlednost</td><td class=\"py-2 text-center\">Ne</td><td class=\"py-2 text-center\">Ano</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animace</td><td class=\"py-2 text-center\">Ne</td><td class=\"py-2 text-center\">Ano</td></tr><tr><td class=\"py-2\">Podpora prohlížečů</td><td class=\"py-2 text-center\">univerzální</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -113,22 +117,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimalizace webu",
-          "description": "JPG → AVIF – WordPress, Shoptet, Shopify."
+          "description": "Převeďte JPG na AVIF, abyste výrazně zkrátili dobu načítání stránek a zlepšili skóre Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "E-mail a sdílení",
-          "description": "AVIF – Gmail, Outlook, Seznam."
+          "description": "Soubory AVIF jsou kompatibilní s většinou moderních platforem. Převeďte na AVIF, abyste získali menší přílohy v rámci limitů velikosti."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "Heureka.cz, Alza.cz, Bazár, Mall.cz."
+          "description": "Platformy jako Heureka.cz, Alza.cz, Bazár, Mall.cz mohou vyžadovat specifické formáty – konverze na AVIF zajistí, že vaše produktové fotografie splňují požadavky."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Dokumenty a archivace",
-          "description": "AVIF – tiskárny."
+          "description": "Formát AVIF nabízí moderní a efektivní řešení pro ukládání obrázků v dokumentech."
         }
       ]
     },
@@ -170,7 +174,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod JPG na AVIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků.</p><p class=\"text-mid\">Heureka.cz, Alza.cz, Bazár, Mall.cz – WordPress, Shoptet, Shopify.</p>"
+      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod JPG na AVIF může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. AVIF poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
     },
     {
       "type": "gap",
@@ -212,8 +216,8 @@
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídáme do 24 hodin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
-      "imageAlt": "Contact",
-      "defaultSubject": "JPG to AVIF converter"
+      "imageAlt": "Kontakt",
+      "defaultSubject": "Převodník JPG na AVIF"
     },
     {
       "type": "gap",
@@ -221,7 +225,7 @@
     },
     {
       "type": "toolsCarousel",
-      "title": "Dalsi nastroje"
+      "title": "Další nástroje"
     }
   ]
 }

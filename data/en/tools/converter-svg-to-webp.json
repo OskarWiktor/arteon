@@ -51,6 +51,10 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "Why convert SVG to WebP?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is a lossless image format based on vector graphics. It is widely used for logos and icons and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting SVG to WebP (WebP) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">WebP supports alpha transparency, preserving any transparent areas in your image. WebP supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many SVG files as you need, completely free.</p>",

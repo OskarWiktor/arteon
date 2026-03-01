@@ -2,14 +2,14 @@
   "toolKey": "tiffToPng",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor TIFF in PNG – TIFF PNG",
-    "description": "Converteste fisiere TIFF in PNG fara pierderi. Pastreaza calitatea scanarilor.",
+    "title": "Convertor TIFF în PNG – TIFF PNG",
+    "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-tiff-in-png"
   },
   "hero": {
-    "title": "Convertor TIFF in PNG",
-    "description": "Converteste fisiere TIFF in PNG fara pierderi. Pastreaza calitatea scanarilor.",
+    "title": "Convertor TIFF în PNG",
+    "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -19,20 +19,20 @@
     },
     "third": {
       "href": "/ro/instrumente/convertor-tiff-in-png",
-      "label": "Convertor TIFF in PNG"
+      "label": "Convertor TIFF în PNG"
     }
   },
   "schemas": {
     "software": {
-      "name": "Convertor TIFF in PNG",
+      "name": "Convertor TIFF în PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteste fisiere TIFF in PNG fara pierderi. Pastreaza calitatea scanarilor.",
+      "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
     },
     "howTo": {
       "name": "TIFF to PNG",
-      "description": "Converteste fisiere TIFF in PNG fara pierderi. Pastreaza calitatea scanarilor.",
+      "description": "Convertește fișiere TIFF în PNG fara pierderi. Pastreaza calitatea scanarilor.",
       "steps": [
         {
           "name": "Add TIFF files",
@@ -51,11 +51,15 @@
   },
   "contentBlocks": [
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionBasic",
       "title": "De ce să convertiți TIFF în PNG?",
       "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia TIFF în PNG (Portable Network Graphics) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">PNG suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
-      "imageAlt": "TIFF to PNG conversion",
+      "imageAlt": "Conversie TIFF în PNG",
       "variant": "right"
     },
     {
@@ -91,7 +95,7 @@
     {
       "type": "sectionInfo",
       "title": "TIFF vs PNG – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universală</td></tr></tbody></table></div>"
     },
     {
       "type": "gap",
@@ -105,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Optimizare web",
-          "description": "TIFF → PNG – WordPress, Shopify, GomAG."
+          "description": "Convertiți TIFF în PNG pentru a păstra transparența și calitatea imaginii pentru grafică web."
         },
         {
           "icon": "RiMailLine",
           "title": "Email și partajare",
-          "description": "PNG – Gmail, Outlook, Yahoo."
+          "description": "Fișierele PNG sunt acceptate fără probleme de clienții de email precum Gmail, Outlook, Yahoo. Convertiți în PNG pentru a obține imagini de înaltă calitate potrivite pentru partajare."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce",
-          "description": "OLX.ro, eMAG.ro, Amazon, Marketplace."
+          "description": "Platforme precum OLX.ro, eMAG.ro, Amazon, Marketplace pot necesita formate specifice – conversia în PNG asigură că imaginile produselor dumneavoastră îndeplinesc cerințele."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documente și arhivare",
-          "description": "PNG – tipografii."
+          "description": "Formatul PNG este o alegere excelentă pentru arhivare și tipărire profesională datorită compresiei fără pierderi."
         }
       ]
     },
@@ -162,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia TIFF în PNG în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice.</p><p class=\"text-mid\">OLX.ro, eMAG.ro, Amazon, Marketplace – WordPress, Shopify, GomAG.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia TIFF în PNG poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. PNG oferă compatibilitate maximă cu toate platformele.</p>"
     },
     {
       "type": "gap",
@@ -202,10 +206,10 @@
     {
       "type": "contactForm",
       "title": "Ajuta-ne sa imbunatatim instrumentele",
-      "description": "Ai o idee, ai gasit un bug sau vrei sa sugerezi o functie? Scrie-ne, raspundem in 24 de ore.",
+      "description": "Ai o idee, ai gasit un bug sau vrei sa sugerezi o functie? Scriați-ne, raspundem in 24 de ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor TIFF in PNG – Arteon",
-      "defaultSubject": "Feedback: Convertor TIFF in PNG"
+      "defaultSubject": "Feedback: Convertor TIFF în PNG"
     },
     {
       "type": "gap",
