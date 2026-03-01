@@ -98,7 +98,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
     const tryRender = () => {
       if (pushed.current) return true;
 
-      if (variant !== 'tool-banner' && variant !== 'responsive' && container.getBoundingClientRect().width === 0) {
+      if (container.getBoundingClientRect().width === 0) {
         return false;
       }
 
@@ -155,6 +155,19 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
         observer.observe(container);
         cleanups.push(() => observer.disconnect());
       }
+
+      let resizeTimer: ReturnType<typeof setTimeout>;
+      const onResize = () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          if (tryRender()) window.removeEventListener('resize', onResize);
+        }, 150);
+      };
+      window.addEventListener('resize', onResize);
+      cleanups.push(() => {
+        clearTimeout(resizeTimer);
+        window.removeEventListener('resize', onResize);
+      });
     };
 
     const cleanups: Array<() => void> = [];

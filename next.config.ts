@@ -20,7 +20,7 @@ const IS_PROD = process.env.VERCEL_ENV === 'production';
 const cspDirectives = [
   "default-src 'self'",
   // Scripts: self + Google services + Vercel + Ahrefs + Metricool + inline (wymagane przez Next.js)
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://pagead2.googlesyndication.com https://*.doubleclick.net https://analytics.ahrefs.com https://tracker.metricool.com https://va.vercel-scripts.com",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://analytics.ahrefs.com https://tracker.metricool.com https://va.vercel-scripts.com",
   // Styles: self + inline (Tailwind/Next.js) + Google Fonts
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   // Images: self + data/blob (narzędzia generujące obrazy) + Google + HTTPS ogólnie (OG images itp.)
@@ -28,7 +28,7 @@ const cspDirectives = [
   // Fonts: self + Google Fonts CDN
   "font-src 'self' https://fonts.gstatic.com",
   // Connect: self + analityka + Formspree + Vercel + AdSense quality
-  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://formspree.io https://analytics.ahrefs.com https://tracker.metricool.com https://vitals.vercel-insights.com https://va.vercel-scripts.com",
+  "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://formspree.io https://analytics.ahrefs.com https://tracker.metricool.com https://vitals.vercel-insights.com https://va.vercel-scripts.com",
   // Frames: Google (AdSense iframes, reCAPTCHA, itp.)
   'frame-src https://*.google.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://*.googlesyndication.com',
   // Workers: self + blob (narzędzia client-side)
