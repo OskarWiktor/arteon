@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte imagenes WebP a formato GIF para maxima compatibilidad.",
-      "featureList": ["Conversión a GIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"]
+      "featureList": ["Conversión a GIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
+      "alternateName": ["Convertir WEBP a GIF", "Conversión de WEBP a GIF", "Convertidor WEBP a GIF gratis"]
     },
     "howTo": {
       "name": "Cómo convertir WebP a GIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir WebP a GIF?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) es un formato de imagen con pérdida que soporta millones de colores. Se utiliza ampliamente para imágenes web.</p><p class=\"text-mid mb-4\">Convertir WebP a GIF (Graphics Interchange Format) garantiza compatibilidad universal con todos los navegadores y dispositivos.</p><p class=\"text-mid mb-4\">GIF soporta transparencia alfa. Como formato sin pérdida, GIF preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP es un formato de imagen moderno desarrollado por Google que admite tanto compresión con pérdidas como sin pérdidas. Produce archivos significativamente más ligeros que PNG y JPEG con calidad visual comparable y es compatible con todos los navegadores actuales.</p><p class=\"text-mid mb-4\">GIF es el formato estándar para animaciones cortas, memes y gráficos simples con paleta de colores limitada. Con compatibilidad universal en navegadores, GIF es especialmente adecuado para contenido animado en redes sociales, aplicaciones de mensajería y firmas de correo electrónico.</p><p class=\"text-mid mb-4\">La conversión reduce la paleta a 256 colores. Es adecuada principalmente para gráficos simples o cuando el formato GIF es necesario para animaciones o por razones de compatibilidad.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversión de WEBP a GIF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de WebP a GIF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir WebP a GIF puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Aunque GIF no es el formato más eficiente para imágenes estáticas, sigue siendo esencial para animaciones simples, memes y gráficos con paleta de colores limitada. El límite de 256 colores hace que GIF sea menos adecuado para fotografías, pero ideal para iconos, logotipos y contenido animado compartido en redes sociales y aplicaciones de mensajería.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
     },
     {
       "type": "gap",

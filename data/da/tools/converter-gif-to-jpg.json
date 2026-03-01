@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "GIF til JPG-konverter",
-      "alternateName": [],
+      "alternateName": ["Konvertér GIF til JPG", "GIF til JPG konvertering", "Gratis GIF til JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Eksportér den første frame af en GIF som kompakt JPG. Mindre fil.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere GIF til JPG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) er et tabsfrit billedformat der understøtter 256 farver. Det bruges bredt til simple animationer.</p><p class=\"text-mid mb-4\">Konvertering af GIF til JPG (JPEG) reducerer filstørrelsen markant.</p><p class=\"text-mid mb-4\">JPG understøtter ikke gennemsigtighed – gennemsigtige områder fyldes med en baggrundsfarve. Som tabsgivende format opnår JPG fremragende kompressionsforhold.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) understøtter animationer og en palet på maksimalt 256 farver. GIF bruges meget til animeret indhold på sociale medier, men farvebegrænsningen gør det uegnet til fotorealistiske billeder.</p><p class=\"text-mid mb-4\">JPEG er det mest universelle billedformat – kompatibelt med enhver enhed, browser og platform. Konvertering til JPG sikrer, at dine billeder vises problemfrit overalt: fra e-mailvedhæftninger til opslag på sociale medier.</p><p class=\"text-mid mb-4\">Ved konvertering fra GIF til JPG mistes animationsframes og gennemsigtighed – kun det første billede konverteres. Du får et universelt kompatibelt fotoformat med fuld farvedybde (16,7 millioner farver).</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "GIF til JPG konvertering",
       "variant": "right"

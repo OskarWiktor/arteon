@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF.",
-      "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
+      "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
+      "alternateName": ["Převést HEIC na TIFF", "Konverze HEIC do TIFF", "Převodník HEIC na TIFF zdarma"]
     },
     "howTo": {
       "name": "Jak převést HEIC na TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět HEIC na TIFF?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro fotografie z Apple zařízení.</p><p class=\"text-mid mb-4\">Převod HEIC na TIFF (Tagged Image File Format) řeší problém kompatibility s proprietárním formátem Apple.</p><p class=\"text-mid mb-4\">TIFF podporuje alfa průhlednost. Jako bezeztrátový formát zachovává TIFF veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) je výchozí formát fotografií na zařízeních Apple od iOS 11. HEIC nabízí menší soubory než JPEG při srovnatelné kvalitě, ale není nativně podporován mimo ekosystém Apple – ani ve Windows, Androidu nebo na mnoha webových platformách.</p><p class=\"text-mid mb-4\">TIFF zachovává plnou kvalitu obrazu bez jakékoli ztráty dat a podporuje vrstvy a rozsáhlá metadata. Jako průmyslový standard pro tisk a archivaci je TIFF vhodný pro profesionální fotografy a tiskárny.</p><p class=\"text-mid mb-4\">Převod transformuje vaše iPhone fotografie do profesionálního TIFF formátu. Ideální pro fotografy, kteří chtějí archivovat mobilní snímky v bezeztrátovém formátu a dále je upravovat v Photoshopu nebo Lightroomu.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Převod HEIC na TIFF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod HEIC na TIFF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod HEIC na TIFF může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. TIFF poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
+      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">TIFF je průmyslový standard pro profesionální tisk, archivaci a postprodukci. Programy jako Adobe Photoshop, Lightroom a GIMP využívají TIFF pro bezeztrátové editační workflow. Konverze do TIFF zachovává veškerá obrazová data včetně barevných profilů, vrstev a metadat.</p><p class=\"text-mid\">Pro profesionální fotografii a tiskovou produkci TIFF zajišťuje bezeztrátovou kvalitu splňující průmyslové standardy. Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR.</p>"
     },
     {
       "type": "gap",

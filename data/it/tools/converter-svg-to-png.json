@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertitore SVG in PNG",
-      "alternateName": [],
+      "alternateName": ["Convertire SVG in PNG", "Conversione SVG in PNG", "Convertitore SVG in PNG gratuito"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti grafiche vettoriali SVG in PNG. Ideale per documenti e social media.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire SVG in PNG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) è un formato immagine senza perdita basato sulla grafica vettoriale. È ampiamente utilizzato per loghi e icone.</p><p class=\"text-mid mb-4\">La conversione da SVG a PNG (Portable Network Graphics) offre maggiore flessibilità.</p><p class=\"text-mid mb-4\">PNG supporta la trasparenza alfa. Come formato senza perdita, PNG preserva tutti i dati dell’immagine.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">Lo Scalable Vector Graphics (SVG) è un formato vettoriale basato su XML per la grafica bidimensionale. I file SVG sono indipendenti dalla risoluzione e rimangono nitidi a qualsiasi dimensione – ideali per loghi, icone e illustrazioni.</p><p class=\"text-mid mb-4\">Il PNG preserva la qualità dell'immagine completa senza artefatti di compressione e supporta la trasparenza alfa completa. Questo formato senza perdita è ideale per grafiche destinate a ulteriori elaborazioni e per immagini in cui le aree trasparenti devono essere conservate.</p><p class=\"text-mid mb-4\">La rasterizzazione da SVG a PNG converte l'immagine vettoriale in un'immagine a pixel preservando integralmente la trasparenza. Il PNG è particolarmente adatto a social media, messaggistica e firme e-mail che non supportano SVG.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione SVG in PNG",
       "variant": "right"

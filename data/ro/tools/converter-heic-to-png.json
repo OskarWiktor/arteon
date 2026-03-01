@@ -28,23 +28,24 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversie HEIC în PNG", "Lossless PNG output", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie HEIC în PNG", "Convertor HEIC în PNG", "Convertor gratuit HEIC în PNG"]
     },
     "howTo": {
-      "name": "HEIC to PNG",
+      "name": "Cum să convertiți HEIC în PNG",
       "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta.",
       "steps": [
         {
-          "name": "Add HEIC files",
-          "text": "Drag HEIC files onto the drop zone or click to select."
+          "name": "Adăugați fișiere HEIC",
+          "text": "Trageți fișierele HEIC în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv."
         },
         {
-          "name": "Convert",
-          "text": "Click convert. PNG is lossless - no quality setting needed."
+          "name": "Configurați opțiunile",
+          "text": "Alegeți setările de calitate și ieșire preferate pentru conversia în PNG."
         },
         {
-          "name": "Download PNG",
-          "text": "Download files individually or all at once."
+          "name": "Descărcați PNG",
+          "text": "Descărcați fișierele convertite individual sau pe toate odată."
         }
       ]
     }
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți HEIC în PNG?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia HEIC în PNG (Portable Network Graphics) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">PNG suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) este formatul implicit pentru fotografii pe dispozitivele Apple începând cu iOS 11. HEIC oferă fișiere mai mici decât JPEG la calitate comparabilă, dar nu este acceptat nativ în afara ecosistemului Apple – nici pe Windows, Android sau multe platforme web.</p><p class=\"text-mid mb-4\">PNG păstrează calitatea completă a imaginii fără artefacte de compresie și acceptă transparență alfa completă. Acest format fără pierderi este ideal pentru grafică destinată editării ulterioare și imagini unde zonele transparente trebuie păstrate.</p><p class=\"text-mid mb-4\">Conversia păstrează calitatea completă a originalului HEIC fără pierderi în format PNG. PNG este acceptat de toate dispozitivele și este potrivit mai ales dacă doriți să editați imaginea sau să păstrați transparența.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie HEIC în PNG",
       "variant": "right"

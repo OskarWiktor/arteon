@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertitore BMP in JPG",
-      "alternateName": [],
+      "alternateName": ["Convertire BMP in JPG", "Conversione BMP in JPG", "Convertitore BMP in JPG gratuito"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire BMP in JPG?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) è un formato immagine senza perdita che supporta milioni di colori. È ampiamente utilizzato per le immagini non compresse.</p><p class=\"text-mid mb-4\">La conversione da BMP a JPG (JPEG) riduce significativamente le dimensioni del file.</p><p class=\"text-mid mb-4\">JPG non supporta la trasparenza – le aree trasparenti saranno riempite con un colore di sfondo. Come formato con perdita, JPG raggiunge eccellenti rapporti di compressione.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">Il Bitmap (BMP) è un formato immagine Windows datato che memorizza i dati dei pixel senza compressione. I file BMP sono quindi estremamente grandi e inadatti all'uso moderno sul web, nelle e-mail o sui dispositivi mobili.</p><p class=\"text-mid mb-4\">Il JPEG è il formato immagine più universale – compatibile con ogni dispositivo, browser e piattaforma al mondo. La conversione in JPG garantisce che le vostre immagini possano essere visualizzate ovunque senza problemi: dagli allegati e-mail ai post sui social media fino ai servizi di stampa.</p><p class=\"text-mid mb-4\">I file BMP non sono compressi e sono quindi estremamente grandi. La conversione in JPEG riduce drasticamente la dimensione (spesso oltre il 95%) e produce file universalmente compatibili per tutti gli usi moderni.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione BMP in JPG",
       "variant": "right"

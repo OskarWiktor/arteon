@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertor GIF în PNG",
-      "alternateName": [],
+      "alternateName": ["Conversie GIF în PNG", "Convertor GIF în PNG", "Convertor gratuit GIF în PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportă primul cadru al unui GIF ca PNG static. Fără pierderi de calitate.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți GIF în PNG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia GIF în PNG (Portable Network Graphics) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">PNG suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) acceptă animații și o paletă de maximum 256 de culori. GIF este utilizat pe scară largă pentru conținut animat în rețelele sociale, dar limitarea de culori îl face nepotrivit pentru imagini fotorealiste.</p><p class=\"text-mid mb-4\">PNG păstrează calitatea completă a imaginii fără artefacte de compresie și acceptă transparență alfa completă. Acest format fără pierderi este ideal pentru grafică destinată editării ulterioare și imagini unde zonele transparente trebuie păstrate.</p><p class=\"text-mid mb-4\">Conversia păstrează calitatea fără pierderi și acceptă transparența binară. La GIF-urile animate, se convertește doar primul cadru. PNG este potrivit pentru editarea ulterioară a graficii GIF.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie GIF în PNG",
       "variant": "right"

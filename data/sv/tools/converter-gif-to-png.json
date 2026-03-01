@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "GIF till PNG-konverterare",
-      "alternateName": [],
+      "alternateName": ["Konvertera GIF till PNG", "GIF till PNG konvertering", "Gratis GIF till PNG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportera den första bildrutan i en GIF som statisk PNG. Utan kvalitetsförlust.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera GIF till PNG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) är ett förlustfritt bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av GIF till PNG (Portable Network Graphics) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">PNG stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) stöder animationer och en palett på maximalt 256 färger. GIF används flitigt för animerat innehåll i sociala medier, men färgbegränsningen gör det olämpligt för fotorealistiska bilder.</p><p class=\"text-mid mb-4\">PNG bevarar full bildkvalitet utan komprimeringsartefakter och stöder full alfa-transparens. Detta förlustfria format är idealiskt för grafik som ska vidarebearbetas och bilder där transparenta områden måste bevaras.</p><p class=\"text-mid mb-4\">Konverteringen bevarar kvaliteten förlustfritt och stöder binär transparens. Vid animerade GIF:ar konverteras bara den första ramen. PNG är lämpligt för vidare bearbetning av GIF-grafik.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "GIF till PNG konvertering",
       "variant": "right"

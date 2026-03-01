@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "BMP till PNG-konverterare",
-      "alternateName": [],
+      "alternateName": ["Konvertera BMP till PNG", "BMP till PNG konvertering", "Gratis BMP till PNG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera BMP-bilder till förlustfritt PNG. Kvalitet bevarad, storlek reducerad.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera BMP till PNG?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) är ett förlustfritt bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av BMP till PNG (Portable Network Graphics) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">PNG stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) är ett äldre Windows-bildformat som lagrar pixeldata utan komprimering. BMP-filer är därför extremt stora och olämpliga för modern användning på webben eller mobila enheter.</p><p class=\"text-mid mb-4\">PNG bevarar full bildkvalitet utan komprimeringsartefakter och stöder full alfa-transparens. Detta förlustfria format är idealiskt för grafik som ska vidarebearbetas och bilder där transparenta områden måste bevaras.</p><p class=\"text-mid mb-4\">Konvertering från BMP till PNG minskar storleken avsevärt genom förlustfri komprimering. Till skillnad från JPEG bevaras full kvalitet – idealiskt för grafik med skarpa kanter och text.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "BMP till PNG konvertering",
       "variant": "right"

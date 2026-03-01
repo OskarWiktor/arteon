@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertor WebP în JPG",
-      "alternateName": [],
+      "alternateName": ["Conversie WEBP în JPG", "Convertor WEBP în JPG", "Convertor gratuit WEBP în JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere WebP în JPG compatibil universal.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți WebP în JPG?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini web.</p><p class=\"text-mid mb-4\">Conversia WebP în JPG (JPEG) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">JPG nu suportă transparența – zonele transparente vor fi umplute cu o culoare de fundal.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP este un format modern de imagine dezvoltat de Google care acceptă atât compresie cu pierderi, cât și fără pierderi. Produce fișiere semnificativ mai mici decât PNG și JPEG la calitate vizuală comparabilă și este acceptat de toate browserele actuale.</p><p class=\"text-mid mb-4\">JPEG este cel mai universal format de imagine – compatibil cu orice dispozitiv, browser și platformă. Conversia în JPG asigură că imaginile dumneavoastră pot fi vizualizate oriunde fără probleme: de la atașamente email la postări pe rețele sociale.</p><p class=\"text-mid mb-4\">Conversia din WebP în JPEG asigură compatibilitate maximă. JPG este acceptat de orice dispozitiv și software – indispensabil pentru trimiterea imaginilor prin email sau încărcarea pe platforme care nu acceptă WebP.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie WEBP în JPG",
       "variant": "right"

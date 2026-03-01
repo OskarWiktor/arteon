@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "GIF elso kepkockajanak exportalasa konnyu WebP-re. Kisebb fajl, gyorsabb betoltes.",
-      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["GIF konvertálása WEBP formátumba", "GIF–WEBP átalakítás", "Ingyenes GIF–WEBP konverter"]
     },
     "howTo": {
       "name": "GIF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes GIF-t WebP-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Graphics Interchange Format (GIF) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A GIF konvertálása WebP-re (WebP) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A WebP támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Graphics Interchange Format (GIF) animációkat és legfeljebb 256 színű palettát támogat. A GIF széles körben használt animált tartalmakhoz a közösségi médiában, de a színkorlátozás miatt nem alkalmas fotórealisztikus képekhez.</p><p class=\"text-mid mb-4\">A WebP 30–35%-kal csökkenti a fájlméretet a régebbi formátumokhoz képest, látható minőségromlás nélkül. Minden modern böngésző (Chrome, Firefox, Safari 14+, Edge) teljes mértékben támogatja a WebP-t. Webhelyek számára ez gyorsabb betöltési időt és jobb Google-helyezést jelent.</p><p class=\"text-mid mb-4\">A WebP statikus képeket és animációkat is támogat, jelentősen jobb tömörítéssel, mint a GIF. Statikus GIF-eknél a konvertálás kisebb fájlokat eredményez azonos vagy jobb minőségben.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "GIF konvertálás WEBP formátumba",
       "variant": "right"

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Eksporter forste GIF-frame som let WebP. Mindre fil, hurtigere indlasning.",
-      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertér GIF til WEBP", "GIF til WEBP konvertering", "Gratis GIF til WEBP konverter"]
     },
     "howTo": {
       "name": "GIF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere GIF til WebP?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) er et tabsfrit billedformat der understøtter 256 farver. Det bruges bredt til simple animationer.</p><p class=\"text-mid mb-4\">Konvertering af GIF til WebP (WebP) reducerer filstørrelsen markant.</p><p class=\"text-mid mb-4\">WebP understøtter alfa-gennemsigtighed. WebP tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) understøtter animationer og en palet på maksimalt 256 farver. GIF bruges meget til animeret indhold på sociale medier, men farvebegrænsningen gør det uegnet til fotorealistiske billeder.</p><p class=\"text-mid mb-4\">WebP reducerer filstørrelsen med 30–35% sammenlignet med ældre formater uden synligt kvalitetstab. Alle moderne browsere (Chrome, Firefox, Safari 14+, Edge) understøtter WebP fuldt ud. For hjemmesider betyder det hurtigere indlæsningstider og bedre Google-placering.</p><p class=\"text-mid mb-4\">WebP understøtter både stillbilleder og animationer med markant bedre komprimering end GIF. Ved statiske GIF'er giver konverteringen mindre filer ved samme eller bedre kvalitet.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "GIF til WEBP konvertering",
       "variant": "right"

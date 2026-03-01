@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert AVIF files to lossless PNG. Preserve full quality and transparency.",
-      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert AVIF to PNG", "AVIF to PNG conversion", "Free AVIF to PNG converter", "Change AVIF to PNG"]
     },
     "howTo": {
       "name": "AVIF to PNG",

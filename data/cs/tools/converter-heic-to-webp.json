@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky HEIC z iPhonu na lehke WebP. Mensi velikost, rychlejsi nacitani.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Převést HEIC na WEBP", "Konverze HEIC do WEBP", "Převodník HEIC na WEBP zdarma"]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět HEIC na WebP?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro fotografie z Apple zařízení.</p><p class=\"text-mid mb-4\">Převod HEIC na WebP (WebP) využívá moderní kompresi pro menší soubory bez ztráty kvality.</p><p class=\"text-mid mb-4\">WebP podporuje alfa průhlednost. WebP nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) je výchozí formát fotografií na zařízeních Apple od iOS 11. HEIC nabízí menší soubory než JPEG při srovnatelné kvalitě, ale není nativně podporován mimo ekosystém Apple – ani ve Windows, Androidu nebo na mnoha webových platformách.</p><p class=\"text-mid mb-4\">WebP zmenšuje velikost souboru o 30–35% oproti starším formátům bez viditelné ztráty kvality. Všechny moderní prohlížeče (Chrome, Firefox, Safari 14+, Edge) plně podporují WebP. Pro webové stránky to znamená rychlejší načítání a lepší umístění v Google.</p><p class=\"text-mid mb-4\">WebP nabízí vynikající rovnováhu mezi velikostí souboru a kvalitou. Převod HEIC na WebP vytváří kompaktní soubory podporované všemi moderními prohlížeči – ideální pro webové stránky.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod HEIC na WEBP",
       "variant": "right"

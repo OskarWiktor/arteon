@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "BMP JPG -muunnin",
-      "alternateName": [],
+      "alternateName": ["Muunna BMP JPG-muotoon", "BMP:n muunto JPG-muotoon", "Ilmainen BMP–JPG-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa BMP JPG-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) on häviötön kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">BMP:n muuntaminen JPG-muotoon (JPEG) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">JPG ei tue läpinäkyvyyttä – läpinäkyvät alueet täytetään taustavärillä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) on vanhempi Windows-kuvamuoto, joka tallentaa pikselitiedot ilman pakkausta. BMP-tiedostot ovat erittäin suuria ja sopimattomia nykyaikaiseen käyttöön verkossa tai mobiililaitteilla.</p><p class=\"text-mid mb-4\">JPEG on universaalein kuvamuoto – yhteensopiva kaikkien laitteiden, selainten ja alustojen kanssa. Muuntaminen JPG-muotoon varmistaa, että kuvasi näkyvät ongelmitta kaikkialla: sähköpostiliitteistä sosiaalisen median julkaisuihin.</p><p class=\"text-mid mb-4\">BMP-tiedostot ovat pakkaamattomia ja erittäin suuria. Muuntaminen JPEG:ksi pienentää tiedostokokoa dramaattisesti (usein yli 95%) ja tuottaa universaalisti yhteensopivia tiedostoja.</p><p class=\"text-mid\">Tämä muunnin toimii kokonaan paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröitymistä. Täysin GDPR-yhteensopiva ja maksuton ilman mitään rajoituksia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "BMP-JPG-muunnos",
       "variant": "right"
@@ -140,23 +140,23 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "Your BMP files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+          "title": "Täysi yksityisyys",
+          "description": "BMP-tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata millekään palvelimelle – kuvasi pysyvät laitteellasi koko ajan."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "No limits",
-          "description": "Convert as many BMP files to JPG as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta BMP-tiedostoa JPG-muotoon kuin tarvitset. Ei päivittäisiä rajoituksia, ei tiedostokokorajoituksia, ei vesileimoja."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Quality control",
-          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+          "title": "Laadunhallinta",
+          "description": "Säädä pakkausasetuksia löytääksesi täydellisen tasapainon tiedostokoon ja kuvanlaadun välillä. Esikatsele muutoksia reaaliajassa ennen lataamista."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla – muunnos on nopea ja toimii jopa ilman internet-yhteyttä sivun latauduttua."
         }
       ]
     },

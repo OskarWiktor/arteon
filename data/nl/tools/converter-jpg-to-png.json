@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "JPG naar PNG converter",
-      "alternateName": [],
+      "alternateName": ["JPG naar PNG omzetten", "JPG naar PNG conversie", "Gratis JPG naar PNG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer JPG-afbeeldingen naar verliesvrij PNG. Lokale verwerking in de browser.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom JPG naar PNG converteren?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor foto's.</p><p class=\"text-mid mb-4\">Het converteren van JPG naar PNG (Portable Network Graphics) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">PNG ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is het meest gebruikte beeldformaat ter wereld voor digitale foto's. Het gebruikt compressie met verlies voor compacte bestanden, maar ondersteunt geen transparantie of verliesvrije opslag.</p><p class=\"text-mid mb-4\">PNG behoudt de volledige beeldkwaliteit zonder compressieartefacten en ondersteunt volledige alfa-transparantie. Dit verliesvrije formaat is ideaal voor afbeeldingen die verder bewerkt moeten worden en voor beelden waarbij transparante gebieden behouden moeten blijven.</p><p class=\"text-mid mb-4\">De conversie van JPG naar PNG zet uw afbeelding om naar een verliesvrij formaat. Details die al verloren zijn door JPEG-compressie kunnen niet worden hersteld. PNG is geschikt als u de afbeelding wilt bewerken zonder extra kwaliteitsverlies.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "JPG naar PNG conversie",
       "variant": "right"

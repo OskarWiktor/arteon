@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε PNG χωρις απωλειες. Πληρης ποιοτητα.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Μετατροπή HEIC σε PNG", "Μετατροπέας HEIC σε PNG", "Δωρεάν μετατροπέας HEIC σε PNG"]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε HEIC σε PNG;",
-      "html": "<p class=\"text-mid mb-4\">Το High Efficiency Image Container (HEIC) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή HEIC σε PNG (Portable Network Graphics) εξασφαλίζει καθολική συμβατότητα με όλους τους φυλλομετρητές και συσκευές.</p><p class=\"text-mid mb-4\">Το PNG υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το High Efficiency Image Container (HEIC) είναι η προεπιλεγμένη μορφή φωτογραφιών στις συσκευές Apple από το iOS 11. Το HEIC προσφέρει μικρότερα αρχεία από το JPEG σε συγκρίσιμη ποιότητα, αλλά δεν υποστηρίζεται εγγενώς εκτός του οικοσυστήματος Apple.</p><p class=\"text-mid mb-4\">Το PNG διατηρεί την πλήρη ποιότητα εικόνας χωρίς τεχνουργήματα συμπίεσης και υποστηρίζει πλήρη διαφάνεια άλφα. Αυτή η μορφή χωρίς απώλειες είναι ιδανική για γραφικά που χρειάζονται περαιτέρω επεξεργασία.</p><p class=\"text-mid mb-4\">Η μετατροπή διατηρεί την πλήρη ποιότητα του HEIC χωρίς απώλειες σε PNG. Το PNG υποστηρίζεται από όλες τις συσκευές και είναι κατάλληλο αν θέλετε να επεξεργαστείτε την εικόνα ή να διατηρήσετε τη διαφάνεια.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή HEIC σε PNG",
       "variant": "right"

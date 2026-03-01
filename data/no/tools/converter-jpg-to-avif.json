@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter JPG-bilder til moderne AVIF. Opptil 50% bedre komprimering enn JPG.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"]
+      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
+      "alternateName": ["Konverter JPG til AVIF", "JPG til AVIF konvertering", "Gratis JPG til AVIF konverterer"]
     },
     "howTo": {
       "name": "Hvordan konvertere JPG til AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere JPG til AVIF?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er et tapsbringende bildeformat. Det brukes mye til fotografier.</p><p class=\"text-mid mb-4\">Konvertering av JPG til AVIF (AV1 Image File Format) utnytter moderne komprimering for mindre filer uten kvalitetstap.</p><p class=\"text-mid mb-4\">AVIF støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er verdens mest brukte bildeformat for digitale fotografier. Det bruker tapskomprimering for kompakte filer, men støtter verken gjennomsiktighet eller tapsfri lagring.</p><p class=\"text-mid mb-4\">AVIF tilbyr den mest effektive komprimeringen av alle nåværende bildeformater og kan redusere filstørrelsen opptil 50% sammenlignet med JPEG. Chrome, Firefox og Safari 16+ støtter AVIF. Det er det optimale valget for ytelseskritiske nettprosjekter.</p><p class=\"text-mid mb-4\">AVIF oppnår opptil 50% bedre komprimering enn JPEG ved sammenlignbar visuell kvalitet. Dette neste generasjons formatet er ideelt for ytelseskritiske nettsider og støttes av Chrome, Firefox og Safari 16+.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "JPG til AVIF konvertering",
       "variant": "right"

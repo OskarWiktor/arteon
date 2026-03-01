@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień pierwszą klatkę GIF na nowoczesny AVIF. Mniejszy plik, lepsza jakość.",
-      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"]
+      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "alternateName": ["Zamiana GIF na AVIF", "Konwersja GIF do AVIF", "Darmowy konwerter GIF na AVIF"]
     },
     "howTo": {
       "name": "GIF to AVIF",

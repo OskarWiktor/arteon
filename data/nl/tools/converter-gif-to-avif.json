@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer het eerste GIF-frame naar statisch AVIF-beeld met uitstekende compressie.",
-      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
+      "alternateName": ["GIF naar AVIF omzetten", "GIF naar AVIF conversie", "Gratis GIF naar AVIF converter"]
     },
     "howTo": {
       "name": "GIF naar AVIF converteren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom GIF naar AVIF converteren?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van GIF naar AVIF (AV1 Image File Format) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">AVIF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) ondersteunt animaties en een palet van maximaal 256 kleuren. GIF wordt veel gebruikt voor geanimeerde content op sociale media, maar de kleurbeperking maakt het ongeschikt voor fotorealistische afbeeldingen.</p><p class=\"text-mid mb-4\">AVIF biedt de meest efficiënte compressie van alle huidige beeldformaten en kan de bestandsgrootte tot 50% verminderen ten opzichte van JPEG. Chrome, Firefox en Safari 16+ ondersteunen AVIF. Het is de optimale keuze voor prestatiekritische webprojecten.</p><p class=\"text-mid mb-4\">AVIF biedt superieure compressie ten opzichte van GIF en ondersteunt miljoenen kleuren in plaats van slechts 256. Ideaal om oudere GIF-afbeeldingen op websites te moderniseren voor betere laadtijden.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "GIF naar AVIF conversie",
       "variant": "right"

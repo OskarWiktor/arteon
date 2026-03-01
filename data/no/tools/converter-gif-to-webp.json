@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Eksporter forste GIF-bilde som lett WebP. Mindre fil, raskere lasting.",
-      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konverter GIF til WEBP", "GIF til WEBP konvertering", "Gratis GIF til WEBP konverterer"]
     },
     "howTo": {
       "name": "GIF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere GIF til WebP?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av GIF til WebP (WebP) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">WebP støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) støtter animasjoner og en palett på maksimalt 256 farger. GIF brukes mye til animert innhold i sosiale medier, men fargebegrensningen gjør det uegnet for fotorealistiske bilder.</p><p class=\"text-mid mb-4\">WebP reduserer filstørrelsen med 30–35% sammenlignet med eldre formater uten synlig kvalitetstap. Alle moderne nettlesere (Chrome, Firefox, Safari 14+, Edge) støtter WebP fullt ut. For nettsider betyr dette raskere lastetider og bedre Google-plassering.</p><p class=\"text-mid mb-4\">WebP støtter både stillbilder og animasjoner med vesentlig bedre komprimering enn GIF. Ved statiske GIF-er gir konverteringen mindre filer ved samme eller bedre kvalitet.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "GIF til WEBP konvertering",
       "variant": "right"

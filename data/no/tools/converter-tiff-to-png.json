@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter TIFF-filer til tapsfri PNG. Bevar full kvalitet pa skanninger.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konverter TIFF til PNG", "TIFF til PNG konvertering", "Gratis TIFF til PNG konverterer"]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere TIFF til PNG?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av TIFF til PNG (Portable Network Graphics) sikrer universell kompatibilitet med alle nettlesere og enheter.</p><p class=\"text-mid mb-4\">PNG støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) er bransjestandarden for profesjonell fotografering, trykk og arkivering. TIFF lagrer bilder tapsfritt med full fargedybde, lag og metadata.</p><p class=\"text-mid mb-4\">PNG bevarer full bildekvalitet uten komprimeringsartefakter og støtter full alfa-gjennomsiktighet. Dette tapsfrie formatet er ideelt for grafikk som skal viderebearbeides og bilder der gjennomsiktige områder må bevares.</p><p class=\"text-mid mb-4\">Konverteringen bevarer kvaliteten tapsfritt og bevarer gjennomsiktighet hvis den er til stede. PNG-filer er vesentlig mindre enn TIFF og støttes av alle enheter og plattformer.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "TIFF til PNG konvertering",
       "variant": "right"

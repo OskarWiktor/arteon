@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert TIFF to JPG", "TIFF to JPG conversion", "Free TIFF to JPG converter", "Change TIFF to JPG"]
     },
     "howTo": {
       "name": "TIFF to JPG",

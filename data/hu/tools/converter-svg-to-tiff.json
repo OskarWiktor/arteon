@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Vektor SVG grafika konvertálása kiváló minosegu TIFF raszterre.",
-      "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"]
+      "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
+      "alternateName": ["SVG konvertálása TIFF formátumba", "SVG–TIFF átalakítás", "Ingyenes SVG–TIFF konverter"]
     },
     "howTo": {
       "name": "SVG konvertálása TIFF-ra",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes SVG-t TIFF-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Scalable Vector Graphics (SVG) egy veszteségmentes képformátum, amely vektorgrafikán alapul. Széles körben használják logókhoz és ikonokhoz.</p><p class=\"text-mid mb-4\">A SVG konvertálása TIFF-re (Tagged Image File Format) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A TIFF támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Scalable Vector Graphics (SVG) egy XML-alapú vektorformátum kétdimenziós grafikákhoz. Az SVG fájlok felbontás-függetlenek és bármilyen méretben élesek maradnak – ideálisak logókhoz, ikonokhoz és illusztrációkhoz.</p><p class=\"text-mid mb-4\">A TIFF megőrzi a teljes képminőséget bármilyen adatveszteség nélkül, és támogatja a rétegeket és kiterjedt metaadatokat. Iparági szabványként a nyomtatáshoz és archiváláshoz a TIFF professzionális fotósok és nyomdák számára alkalmas.</p><p class=\"text-mid mb-4\">Az SVG raszterizálása TIFF-be a lehető legmagasabb minőségű veszteségmentes pixelképet eredményezi. Ideális vektorgrafika professzionális nyomtatásához fix pixelfelbontásban.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "SVG konvertálás TIFF formátumba",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-TIFF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A SVG átalakítása TIFF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. TIFF kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A TIFF az iparági szabvány a professzionális nyomtatáshoz, archiváláshoz és utómunkálatokhoz. Az Adobe Photoshop, Lightroom és GIMP programok TIFF formátumot használnak veszteségmentes szerkesztési munkafolyamatokhoz. A TIFF-re konvertálás megőrzi a teljes képadatot, beleértve a színprofilokat, rétegeket és metaadatokat.</p><p class=\"text-mid\">Professzionális fotózáshoz és nyomdai termeléshez a TIFF veszteségmentes minőséget biztosít az iparági szabványoknak megfelelően. A helyi feldolgozás teljes GDPR-megfelelőséget biztosít.</p>"
     },
     {
       "type": "gap",

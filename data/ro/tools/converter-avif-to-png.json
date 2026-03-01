@@ -28,23 +28,24 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere AVIF în PNG fara pierderi. Calitate si transparenta pastrate.",
-      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversie AVIF în PNG", "Lossless PNG output", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie AVIF în PNG", "Convertor AVIF în PNG", "Convertor gratuit AVIF în PNG"]
     },
     "howTo": {
-      "name": "AVIF to PNG",
+      "name": "Cum să convertiți AVIF în PNG",
       "description": "Convertește fișiere AVIF în PNG fara pierderi. Calitate si transparenta pastrate.",
       "steps": [
         {
-          "name": "Add AVIF files",
-          "text": "Drag AVIF files onto the drop zone or click to select."
+          "name": "Adăugați fișiere AVIF",
+          "text": "Trageți fișierele AVIF în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv."
         },
         {
-          "name": "Convert",
-          "text": "Click convert. PNG is lossless - no quality setting needed."
+          "name": "Configurați opțiunile",
+          "text": "Alegeți setările de calitate și ieșire preferate pentru conversia în PNG."
         },
         {
-          "name": "Download PNG",
-          "text": "Download files individually or all at once."
+          "name": "Descărcați PNG",
+          "text": "Descărcați fișierele convertite individual sau pe toate odată."
         }
       ]
     }
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți AVIF în PNG?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia AVIF în PNG (Portable Network Graphics) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">PNG suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) este un format de imagine de nouă generație bazat pe codecul video AV1. AVIF oferă cea mai bună compresie disponibilă – fișiere cu până la 50% mai mici decât WebP la calitate vizuală comparabilă.</p><p class=\"text-mid mb-4\">PNG păstrează calitatea completă a imaginii fără artefacte de compresie și acceptă transparență alfa completă. Acest format fără pierderi este ideal pentru grafică destinată editării ulterioare și imagini unde zonele transparente trebuie păstrate.</p><p class=\"text-mid mb-4\">Conversia păstrează calitatea fără pierderi în formatul PNG universal acceptat. PNG este potrivit dacă doriți să păstrați transparența sau să editați imaginea în programe grafice.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie AVIF în PNG",
       "variant": "right"

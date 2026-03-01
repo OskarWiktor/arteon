@@ -28,10 +28,25 @@ const hubs = [
 ];
 
 const converterKeys = [
-  'jpgToAvif', 'pngToAvif', 'webpToAvif', 'svgToAvif', 'bmpToAvif',
-  'gifToAvif', 'heicToAvif', 'tiffToAvif',
-  'jpgToGif', 'pngToGif', 'webpToGif', 'svgToGif', 'bmpToGif',
-  'jpgToTiff', 'pngToTiff', 'webpToTiff', 'svgToTiff', 'bmpToTiff', 'heicToTiff',
+  'jpgToAvif',
+  'pngToAvif',
+  'webpToAvif',
+  'svgToAvif',
+  'bmpToAvif',
+  'gifToAvif',
+  'heicToAvif',
+  'tiffToAvif',
+  'jpgToGif',
+  'pngToGif',
+  'webpToGif',
+  'svgToGif',
+  'bmpToGif',
+  'jpgToTiff',
+  'pngToTiff',
+  'webpToTiff',
+  'svgToTiff',
+  'bmpToTiff',
+  'heicToTiff',
 ];
 
 function getRegistryLocale(key, locale) {
@@ -46,14 +61,20 @@ function getRegistryLocale(key, locale) {
 
 for (const hub of hubs) {
   const filePath = path.join(appDir, hub.path);
-  if (!fs.existsSync(filePath)) { console.log('SKIP:', hub.locale); continue; }
+  if (!fs.existsSync(filePath)) {
+    console.log('SKIP:', hub.locale);
+    continue;
+  }
 
   let code = fs.readFileSync(filePath, 'utf8');
 
   // Find the last position number in schema
   const positionMatches = [...code.matchAll(/position:\s*(\d+)/g)];
-  if (!positionMatches.length) { console.log('⚠', hub.locale, '— no position found'); continue; }
-  const lastPosition = Math.max(...positionMatches.map(m => parseInt(m[1])));
+  if (!positionMatches.length) {
+    console.log('⚠', hub.locale, '— no position found');
+    continue;
+  }
+  const lastPosition = Math.max(...positionMatches.map((m) => parseInt(m[1])));
 
   // Find the closing of itemListElement array: `    ],\n  },\n};`
   // Look for the pattern `],\n  },\n};` which ends the schema

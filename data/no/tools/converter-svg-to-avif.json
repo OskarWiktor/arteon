@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter vektor-SVG-grafikk til kompakt AVIF-rasterformat.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"]
+      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
+      "alternateName": ["Konverter SVG til AVIF", "SVG til AVIF konvertering", "Gratis SVG til AVIF konverterer"]
     },
     "howTo": {
       "name": "Hvordan konvertere SVG til AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere SVG til AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et tapsfritt bildeformat basert på vektorgrafikk. Det brukes mye til logoer og ikoner.</p><p class=\"text-mid mb-4\">Konvertering av SVG til AVIF (AV1 Image File Format) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">AVIF støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et XML-basert vektorformat for todimensjonal grafikk. SVG-filer er oppløsningsuavhengige og forblir skarpe i alle størrelser – ideelle for logoer, ikoner og illustrasjoner.</p><p class=\"text-mid mb-4\">AVIF tilbyr den mest effektive komprimeringen av alle nåværende bildeformater og kan redusere filstørrelsen opptil 50% sammenlignet med JPEG. Chrome, Firefox og Safari 16+ støtter AVIF. Det er det optimale valget for ytelseskritiske nettprosjekter.</p><p class=\"text-mid mb-4\">AVIF tilbyr den beste komprimeringen for rasterisering av SVG-filer. Ideelt for ytelseskritiske nettsider der hver kilobyte bidrar til bedre lastetider og Core Web Vitals.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "SVG til AVIF konvertering",
       "variant": "right"

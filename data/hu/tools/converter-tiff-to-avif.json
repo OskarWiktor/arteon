@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "TIFF fajlok konvertálása modern AVIF-re. Hatalmas fajlmeret csokkenes.",
-      "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"]
+      "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
+      "alternateName": ["TIFF konvertálása AVIF formátumba", "TIFF–AVIF átalakítás", "Ingyenes TIFF–AVIF konverter"]
     },
     "howTo": {
       "name": "TIFF konvertálása AVIF-ra",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes TIFF-t AVIF-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Tagged Image File Format (TIFF) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A TIFF konvertálása AVIF-re (AV1 Image File Format) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A AVIF támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Tagged Image File Format (TIFF) az iparági szabvány a professzionális fotózáshoz, nyomtatáshoz és archiváláshoz. A TIFF veszteségmentesen tárolja a képeket teljes színmélységgel, rétegekkel és metaadatokkal.</p><p class=\"text-mid mb-4\">Az AVIF a leghatékonyabb tömörítést kínálja az összes jelenlegi képformátum közül, akár 50%-kal csökkentve a fájlméretet a JPEG-hez képest. A Chrome, Firefox és Safari 16+ támogatja az AVIF-ot. Optimális választás teljesítménykritikus webprojektekhez.</p><p class=\"text-mid mb-4\">Az AVIF a leghatékonyabb tömörítést kínálja nagy TIFF fájlok konvertálásához. Ideális professzionális fotózás és nagyfelbontású szkennelések webes optimalizálásához minimális minőségromlással.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "TIFF konvertálás AVIF formátumba",
       "variant": "right"

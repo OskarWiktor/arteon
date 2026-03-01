@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "PNG JPG konverter",
-      "alternateName": [],
+      "alternateName": ["PNG konvertálása JPG formátumba", "PNG–JPG átalakítás", "Ingyenes PNG–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "PNG fájlok konvertálása JPG-re a böngészőben. Korlátlan, regisztráció nélkül.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes PNG-t JPG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Portable Network Graphics (PNG) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A PNG konvertálása JPG-re (JPEG) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A JPG nem támogatja az átlátszóságot – az átlátszó területek háttérszínnel lesznek kitöltve.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Portable Network Graphics (PNG) egy veszteségmentes képformátum, amely több millió színt és teljes alfa-átlátszóságot támogat. A PNG különösen alkalmas logókhoz, ikonokhoz, képernyőképekhez és éles szélű vagy szöveges grafikákhoz.</p><p class=\"text-mid mb-4\">A JPEG a leguniverzálisabb képformátum – kompatibilis minden eszközzel, böngészővel és platformmal. A JPG-re konvertálás biztosítja, hogy képei bárhol problémamentesen megjelenjenek: e-mail mellékletektől a közösségi média bejegyzésekig.</p><p class=\"text-mid mb-4\">A PNG-ből JPG-be konvertálásnál az átlátszóság elveszik – az átlátszó területek háttérszínnel töltődnek ki. Cserébe jelentősen kisebb fájlokat kap, amelyek jobban megfelelnek fényképeknek és átlátszóságot nem igénylő webes tartalomnak.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "PNG konvertálás JPG formátumba",
       "variant": "right"

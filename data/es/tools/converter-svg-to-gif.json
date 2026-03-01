@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte graficos vectoriales SVG a formato raster GIF.",
-      "featureList": ["Conversión a GIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"]
+      "featureList": ["Conversión a GIF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
+      "alternateName": ["Convertir SVG a GIF", "Conversión de SVG a GIF", "Convertidor SVG a GIF gratis"]
     },
     "howTo": {
       "name": "Cómo convertir SVG a GIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir SVG a GIF?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) es un formato de imagen sin pérdida basado en gráficos vectoriales. Se utiliza ampliamente para logotipos e iconos.</p><p class=\"text-mid mb-4\">Convertir SVG a GIF (Graphics Interchange Format) ofrece más flexibilidad.</p><p class=\"text-mid mb-4\">GIF soporta transparencia alfa. Como formato sin pérdida, GIF preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) es un formato vectorial basado en XML para gráficos bidimensionales. Los archivos SVG son independientes de la resolución y se mantienen nítidos a cualquier tamaño, ideales para logotipos, iconos e ilustraciones.</p><p class=\"text-mid mb-4\">GIF es el formato estándar para animaciones cortas, memes y gráficos simples con paleta de colores limitada. Con compatibilidad universal en navegadores, GIF es especialmente adecuado para contenido animado en redes sociales, aplicaciones de mensajería y firmas de correo electrónico.</p><p class=\"text-mid mb-4\">La conversión transforma su imagen vectorial en una imagen de píxeles con un máximo de 256 colores. GIF es adecuado para iconos simples y gráficos animados, pero no para ilustraciones complejas con muchos colores o degradados.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversión de SVG a GIF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de SVG a GIF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir SVG a GIF puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Aunque GIF no es el formato más eficiente para imágenes estáticas, sigue siendo esencial para animaciones simples, memes y gráficos con paleta de colores limitada. El límite de 256 colores hace que GIF sea menos adecuado para fotografías, pero ideal para iconos, logotipos y contenido animado compartido en redes sociales y aplicaciones de mensajería.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
     },
     {
       "type": "gap",

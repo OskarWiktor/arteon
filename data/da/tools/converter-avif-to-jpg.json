@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter AVIF-filer til universel JPG. Kompatibel med alle programmer og platforme.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertér AVIF til JPG", "AVIF til JPG konvertering", "Gratis AVIF til JPG konverter"]
     },
     "howTo": {
       "name": "AVIF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere AVIF til JPG?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til moderne webbilleder.</p><p class=\"text-mid mb-4\">Konvertering af AVIF til JPG (JPEG) sikrer universel kompatibilitet med alle browsere og enheder.</p><p class=\"text-mid mb-4\">JPG understøtter ikke gennemsigtighed – gennemsigtige områder fyldes med en baggrundsfarve. Som tabsgivende format opnår JPG fremragende kompressionsforhold.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) er et næste generations billedformat baseret på AV1-videocodecen. AVIF tilbyder den bedste tilgængelige komprimering – filer op til 50% mindre end WebP ved sammenlignelig visuel kvalitet.</p><p class=\"text-mid mb-4\">JPEG er det mest universelle billedformat – kompatibelt med enhver enhed, browser og platform. Konvertering til JPG sikrer, at dine billeder vises problemfrit overalt: fra e-mailvedhæftninger til opslag på sociale medier.</p><p class=\"text-mid mb-4\">Konvertering fra AVIF til JPEG sikrer maksimal kompatibilitet. JPG understøttes af alle enheder – nødvendigt, når modtagere eller platforme endnu ikke understøtter det nyere AVIF-format.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "AVIF til JPG konvertering",
       "variant": "right"

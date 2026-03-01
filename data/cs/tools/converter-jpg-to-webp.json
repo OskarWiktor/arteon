@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Převodník JPG na WebP",
-      "alternateName": [],
+      "alternateName": ["Převést JPG na WEBP", "Konverze JPG do WEBP", "Převodník JPG na WEBP zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky JPG na lehké WebP. Snižte váhu obrázků až o 35%.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět JPG na WebP?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro fotografie.</p><p class=\"text-mid mb-4\">Převod JPG na WebP (WebP) využívá moderní kompresi pro menší soubory bez ztráty kvality.</p><p class=\"text-mid mb-4\">WebP podporuje alfa průhlednost. WebP nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je celosvětově nejrozšířenější formát pro digitální fotografie. Využívá ztrátovou kompresi pro kompaktní soubory, ale nepodporuje transparenci ani bezeztrátové ukládání.</p><p class=\"text-mid mb-4\">WebP zmenšuje velikost souboru o 30–35% oproti starším formátům bez viditelné ztráty kvality. Všechny moderní prohlížeče (Chrome, Firefox, Safari 14+, Edge) plně podporují WebP. Pro webové stránky to znamená rychlejší načítání a lepší umístění v Google.</p><p class=\"text-mid mb-4\">WebP dokáže zmenšit vaše JPEG fotografie o 25–35% bez viditelné ztráty kvality. Jelikož JPEG nepodporuje transparenci, při této konverzi se neztrácejí žádné obrazové informace.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod JPG na WEBP",
       "variant": "right"

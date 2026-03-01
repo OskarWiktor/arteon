@@ -17,27 +17,27 @@ let match;
 while ((match = toolRegex.exec(registryContent)) !== null) {
   const key = match[1];
   const startIdx = match.index;
-  
+
   // Find the locales block for this tool
   const localesStart = registryContent.indexOf('locales: {', startIdx);
-  const nextTool = registryContent.indexOf("\n  {", startIdx + 10);
-  
+  const nextTool = registryContent.indexOf('\n  {', startIdx + 10);
+
   if (localesStart === -1 || (nextTool !== -1 && localesStart > nextTool)) {
     toolBlocks.push({ key, locales: {}, hasImages: false });
     continue;
   }
-  
+
   // Extract image field
   const imageMatch = registryContent.substring(startIdx, localesStart).match(/image:\s*'([^']+)'/);
   const imagesMatch = registryContent.substring(startIdx, localesStart).match(/images:\s*\{([^}]+)\}/);
-  
+
   const images = {};
   if (imagesMatch) {
     const imgPairs = [...imagesMatch[1].matchAll(/(\w+):\s*'([^']+)'/g)];
-    imgPairs.forEach(p => images[p[1]] = p[2]);
+    imgPairs.forEach((p) => (images[p[1]] = p[2]));
   }
-  
-  // Extract locale entries  
+
+  // Extract locale entries
   const locales = {};
   // Find matching closing brace for locales
   let braceCount = 0;
@@ -45,34 +45,37 @@ while ((match = toolRegex.exec(registryContent)) !== null) {
   for (let i = localesStart + 10; i < registryContent.length; i++) {
     if (registryContent[i] === '{') braceCount++;
     if (registryContent[i] === '}') {
-      if (braceCount === 0) { localesEnd = i; break; }
+      if (braceCount === 0) {
+        localesEnd = i;
+        break;
+      }
       braceCount--;
     }
   }
-  
+
   const localesBlock = registryContent.substring(localesStart + 10, localesEnd);
   const localeEntries = [...localesBlock.matchAll(/(\w{2}):\s*\{\s*slug:\s*'([^']+)',\s*title:\s*'([^']+)'|(\w{2}):\s*\{\s*slug:\s*'([^']+)',\s*title:\s*'([^']+)'/g)];
-  
+
   // Better regex for locale entries
   const localeRegex = /(\w{2}):\s*\{\s*slug:\s*'([^']+)'/g;
   let lm;
   while ((lm = localeRegex.exec(localesBlock)) !== null) {
     locales[lm[1]] = lm[2];
   }
-  
+
   toolBlocks.push({ key, locales, defaultImage: imageMatch?.[1], images });
 }
 
 console.log(`\n=== CONVERTER AUDIT ===`);
 console.log(`Found ${toolBlocks.length} converter tools\n`);
 
-const ALL_LOCALES = ['pl','en','de','es','fr','pt','it','ro','nl','hu','cs','sv','da','no','fi','el'];
+const ALL_LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
 
 // ---- 2. Check locale coverage ----
 console.log('--- LOCALE COVERAGE ---');
 const missingLocales = [];
 for (const tool of toolBlocks) {
-  const missing = ALL_LOCALES.filter(l => !tool.locales[l]);
+  const missing = ALL_LOCALES.filter((l) => !tool.locales[l]);
   if (missing.length > 0 && missing.length < ALL_LOCALES.length) {
     missingLocales.push({ key: tool.key, missing });
     console.log(`⚠ ${tool.key}: missing locales: ${missing.join(', ')}`);
@@ -126,7 +129,7 @@ console.log('\n--- IMAGE LOCALIZATION ---');
 const imageIssues = [];
 for (const tool of toolBlocks) {
   if (Object.keys(tool.locales).length === 0) continue; // deprecated
-  
+
   // Check if tool has images map with locale-specific images
   const hasAnyImages = Object.keys(tool.images).length > 0;
   if (!hasAnyImages && !tool.defaultImage) {
@@ -144,23 +147,23 @@ for (const tool of toolBlocks) {
     // Try to find matching JSON file in data/{locale}/tools/
     const toolsDir = path.join(ROOT, 'data', locale, 'tools');
     if (!fs.existsSync(toolsDir)) continue;
-    
-    const files = fs.readdirSync(toolsDir).filter(f => f.endsWith('.json'));
-    const matchingFile = files.find(f => {
+
+    const files = fs.readdirSync(toolsDir).filter((f) => f.endsWith('.json'));
+    const matchingFile = files.find((f) => {
       try {
         const json = JSON.parse(fs.readFileSync(path.join(toolsDir, f), 'utf8'));
         return json.toolKey === tool.key;
-      } catch { return false; }
+      } catch {
+        return false;
+      }
     });
-    
+
     if (matchingFile) {
       const json = JSON.parse(fs.readFileSync(path.join(toolsDir, matchingFile), 'utf8'));
       // Check path matches expected
       const expectedDir = LOCALE_TOOL_DIRS[locale];
       if (expectedDir && json.metadata?.path) {
-        const expectedPath = locale === 'pl' 
-          ? `/narzedzia/${tool.locales[locale]}`
-          : `/${locale}/${expectedDir.split('/').pop()}/${tool.locales[locale]}`;
+        const expectedPath = locale === 'pl' ? `/narzedzia/${tool.locales[locale]}` : `/${locale}/${expectedDir.split('/').pop()}/${tool.locales[locale]}`;
         // Normalize
         const actualPath = json.metadata.path;
         if (!actualPath.endsWith(tool.locales[locale])) {

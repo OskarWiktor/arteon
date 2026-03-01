@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory WebP na AVIF. Jeste lepsi komprese v modernim formatu.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
+      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
+      "alternateName": ["Převést WEBP na AVIF", "Konverze WEBP do AVIF", "Převodník WEBP na AVIF zdarma"]
     },
     "howTo": {
       "name": "Jak převést WebP na AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět WebP na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro webové obrázky.</p><p class=\"text-mid mb-4\">Převod WebP na AVIF (AV1 Image File Format) využívá moderní kompresi pro menší soubory bez ztráty kvality.</p><p class=\"text-mid mb-4\">AVIF podporuje alfa průhlednost. AVIF nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP je moderní obrazový formát od Googlu podporující jak ztrátovou, tak bezeztrátovou kompresi. Vytváří výrazně menší soubory než PNG a JPEG při srovnatelné vizuální kvalitě a je podporován všemi aktuálními prohlížeči.</p><p class=\"text-mid mb-4\">AVIF nabízí nejefektivnější kompresi ze všech aktuálních obrazových formátů a dokáže zmenšit velikost až o 50% oproti JPEG. Chrome, Firefox a Safari 16+ podporují AVIF. Je to optimální volba pro výkonnostně kritické webové projekty.</p><p class=\"text-mid mb-4\">AVIF nabízí ještě lepší kompresi než WebP při srovnatelné kvalitě. Pokud chcete optimalizovat obrázky pro webové standardy nové generace, převod WebP na AVIF je logický krok.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Převod WEBP na AVIF",
       "variant": "right"

@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "JPG naar WebP converter",
-      "alternateName": [],
+      "alternateName": ["JPG naar WEBP omzetten", "JPG naar WEBP conversie", "Gratis JPG naar WEBP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer JPG-foto's naar lichtgewicht WebP. Bespaar tot 35% bestandsgrootte.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom JPG naar WebP converteren?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor foto's.</p><p class=\"text-mid mb-4\">Het converteren van JPG naar WebP (WebP) maakt gebruik van moderne compressie voor kleinere bestanden zonder kwaliteitsverlies.</p><p class=\"text-mid mb-4\">WebP ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is het meest gebruikte beeldformaat ter wereld voor digitale foto's. Het gebruikt compressie met verlies voor compacte bestanden, maar ondersteunt geen transparantie of verliesvrije opslag.</p><p class=\"text-mid mb-4\">WebP vermindert de bestandsgrootte met 30–35% ten opzichte van oudere formaten, zonder zichtbaar kwaliteitsverlies. Alle moderne browsers (Chrome, Firefox, Safari 14+, Edge) ondersteunen WebP volledig. Voor websites betekent dit snellere laadtijden en een betere Google-ranking.</p><p class=\"text-mid mb-4\">WebP kan de bestandsgrootte van uw JPEG-foto's met 25–35% verminderen zonder zichtbaar kwaliteitsverlies. Aangezien JPEG geen transparantie ondersteunt, gaat er bij deze conversie geen beeldinformatie verloren.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "JPG naar WEBP conversie",
       "variant": "right"

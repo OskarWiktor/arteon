@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "AVIF-Dateien in universelles JPG umwandeln. Kompatibel mit jedem Programm und Plattform.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["AVIF in JPG umwandeln", "AVIF zu JPG konvertieren", "Kostenloser AVIF-zu-JPG-Konverter"]
     },
     "howTo": {
       "name": "AVIF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum AVIF in JPG konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für moderne Webbilder verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von AVIF in JPG (JPEG) stellt universelle Kompatibilität mit allen Browsern und Geräten sicher.</p><p class=\"text-mid mb-4\">JPG unterstützt keine Transparenz – transparente Bereiche werden mit einer Hintergrundfarbe gefüllt. Als verlustbehaftetes Format erreicht JPG hervorragende Kompressionsraten.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) ist ein Bildformat der nächsten Generation, basierend auf dem AV1-Videocodec. AVIF bietet die aktuell beste Komprimierung – bis zu 50% kleinere Dateien als WebP bei vergleichbarer visueller Qualität.</p><p class=\"text-mid mb-4\">JPEG ist das universellste Bildformat – kompatibel mit jedem Gerät, jedem Browser und jeder Plattform weltweit. Die Konvertierung zu JPG stellt sicher, dass Ihre Bilder überall problemlos angezeigt werden können: von E-Mail-Anhängen über Social-Media-Posts bis hin zu Druckdiensten.</p><p class=\"text-mid mb-4\">Die Konvertierung von AVIF zu JPEG stellt maximale Kompatibilität sicher. JPG wird von jedem Gerät und jeder Software unterstützt – notwendig, wenn Empfänger oder Plattformen das neuere AVIF-Format noch nicht verarbeiten können.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "AVIF-zu-JPG-Konvertierung",
       "variant": "right"

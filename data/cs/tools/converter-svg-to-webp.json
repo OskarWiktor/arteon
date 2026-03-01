@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Prevedte grafiku SVG na lehke WebP. Idealni pro weby a socialni site.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Převést SVG na WEBP", "Konverze SVG do WEBP", "Převodník SVG na WEBP zdarma"]
     },
     "howTo": {
       "name": "SVG to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět SVG na WebP?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) je bezeztrátový obrazový formát založený na vektorové grafice. Je široce používán pro loga a ikony.</p><p class=\"text-mid mb-4\">Převod SVG na WebP (WebP) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">WebP podporuje alfa průhlednost. WebP nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) je vektorový formát založený na XML. SVG soubory jsou nezávislé na rozlišení a zůstávají ostré v jakékoli velikosti – ideální pro loga, ikony a ilustrace.</p><p class=\"text-mid mb-4\">WebP zmenšuje velikost souboru o 30–35% oproti starším formátům bez viditelné ztráty kvality. Všechny moderní prohlížeče (Chrome, Firefox, Safari 14+, Edge) plně podporují WebP. Pro webové stránky to znamená rychlejší načítání a lepší umístění v Google.</p><p class=\"text-mid mb-4\">Převod vytváří kompaktní pixelové obrázky z vektorové grafiky ve formátu WebP. WebP je ideální pro webové stránky, kde jsou rozhodující malé soubory a rychlé načítání.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod SVG na WEBP",
       "variant": "right"

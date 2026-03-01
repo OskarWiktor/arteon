@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Převodník JPG na PNG",
-      "alternateName": [],
+      "alternateName": ["Převést JPG na PNG", "Konverze JPG do PNG", "Převodník JPG na PNG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět JPG na PNG?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro fotografie.</p><p class=\"text-mid mb-4\">Převod JPG na PNG (Portable Network Graphics) nabízí více flexibility.</p><p class=\"text-mid mb-4\">PNG podporuje alfa průhlednost. Jako bezeztrátový formát zachovává PNG veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je celosvětově nejrozšířenější formát pro digitální fotografie. Využívá ztrátovou kompresi pro kompaktní soubory, ale nepodporuje transparenci ani bezeztrátové ukládání.</p><p class=\"text-mid mb-4\">PNG zachovává plnou kvalitu obrazu bez kompresních artefaktů a podporuje plnou alfa transparenci. Tento bezeztrátový formát je ideální pro grafiku určenou k dalšímu zpracování a pro obrázky, kde musí zůstat zachovány průhledné oblasti.</p><p class=\"text-mid mb-4\">Převod JPG na PNG převede obrázek do bezeztrátového formátu. Detaily již ztracené JPEG kompresí však nelze obnovit. PNG je vhodné, pokud chcete obrázek dále upravovat bez dalších ztrát kvality.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod JPG na PNG",
       "variant": "right"

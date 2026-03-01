@@ -25,10 +25,18 @@ const TRANSPARENCY_FMTS = new Set(['png', 'webp', 'avif', 'gif', 'tiff', 'svg'])
 
 const LOCALES = Object.keys(T);
 
-function tt(t) { return QUALITY_TARGETS.has(t) ? 'Q' : LOSSLESS_TARGETS.has(t) ? 'L' : 'G'; }
-function r(str, s, t) { return str.replace(/\{\{S\}\}/g, s.toUpperCase()).replace(/\{\{T\}\}/g, t.toUpperCase()); }
-function srcHasTransparency(s) { return TRANSPARENCY_FMTS.has(s); }
-function tgtHasTransparency(t) { return TRANSPARENCY_FMTS.has(t); }
+function tt(t) {
+  return QUALITY_TARGETS.has(t) ? 'Q' : LOSSLESS_TARGETS.has(t) ? 'L' : 'G';
+}
+function r(str, s, t) {
+  return str.replace(/\{\{S\}\}/g, s.toUpperCase()).replace(/\{\{T\}\}/g, t.toUpperCase());
+}
+function srcHasTransparency(s) {
+  return TRANSPARENCY_FMTS.has(s);
+}
+function tgtHasTransparency(t) {
+  return TRANSPARENCY_FMTS.has(t);
+}
 
 function parseFormats(filename) {
   const m = filename.match(/^converter-(\w+)-to-(\w+)\.json$/);
@@ -37,7 +45,7 @@ function parseFormats(filename) {
 }
 
 function isThin(blocks) {
-  return !blocks.some(b => b.type === 'faq');
+  return !blocks.some((b) => b.type === 'faq');
 }
 
 function buildNewBlocks(loc, s, t, existingBlocks) {
@@ -107,14 +115,14 @@ function buildNewBlocks(loc, s, t, existingBlocks) {
   });
 
   // 5. contactForm (preserved)
-  const existingContact = existingBlocks.find(b => b.type === 'contactForm');
+  const existingContact = existingBlocks.find((b) => b.type === 'contactForm');
   if (existingContact) {
     blocks.push({ type: 'gap', variant: 'line' });
     blocks.push(existingContact);
   }
 
   // 6. toolsCarousel (preserved)
-  const existingCarousel = existingBlocks.find(b => b.type === 'toolsCarousel');
+  const existingCarousel = existingBlocks.find((b) => b.type === 'toolsCarousel');
   if (existingCarousel) {
     blocks.push({ type: 'gap', variant: 'line' });
     blocks.push(existingCarousel);
@@ -131,7 +139,7 @@ function buildSchema(loc, s, t, existingSchema) {
   const software = { ...existingSchema.software };
   // Only fill featureList if empty
   if (!software.featureList || software.featureList.length === 0) {
-    software.featureList = L[`fl${ty}`].map(f => r(f, s, t));
+    software.featureList = L[`fl${ty}`].map((f) => r(f, s, t));
   }
 
   // Only fill howTo if steps are empty
@@ -160,7 +168,7 @@ for (const loc of LOCALES) {
   const dir = path.join(__dirname, '..', 'data', loc, 'tools');
   if (!fs.existsSync(dir)) continue;
 
-  const files = fs.readdirSync(dir).filter(f => f.startsWith('converter-'));
+  const files = fs.readdirSync(dir).filter((f) => f.startsWith('converter-'));
   let thinCount = 0;
   let schemaCount = 0;
   let skipCount = 0;

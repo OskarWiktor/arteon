@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const base = path.join(__dirname, '..', 'app', '(pl)', 'narzedzia', '(tools)');
-const dirs = fs.readdirSync(base).filter(d => ['-na-avif', '-na-gif', '-na-tiff'].some(s => d.includes(s)));
+const dirs = fs.readdirSync(base).filter((d) => ['-na-avif', '-na-gif', '-na-tiff'].some((s) => d.includes(s)));
 
 for (const d of dirs) {
   const p = path.join(base, d, 'page.tsx');
@@ -11,7 +11,10 @@ for (const d of dirs) {
   if (!c.includes('locale')) continue;
 
   const jsonMatch = c.match(/from '(@\/data\/pl\/tools\/[^']+)'/);
-  if (!jsonMatch) { console.log('SKIP (no json match):', d); continue; }
+  if (!jsonMatch) {
+    console.log('SKIP (no json match):', d);
+    continue;
+  }
   const jsonPath = jsonMatch[1];
 
   const fixed = `import ToolPageRenderer, { generateToolMetadata } from '@/components/sections/tools/ToolPageRenderer';

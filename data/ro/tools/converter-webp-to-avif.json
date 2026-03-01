@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere WebP în AVIF. Compresie si mai buna intr-un format modern.",
-      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
+      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie WEBP în AVIF", "Convertor WEBP în AVIF", "Convertor gratuit WEBP în AVIF"]
     },
     "howTo": {
       "name": "Cum să convertiți WebP în AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți WebP în AVIF?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini web.</p><p class=\"text-mid mb-4\">Conversia WebP în AVIF (AV1 Image File Format) folosește compresia modernă pentru fișiere mai mici fără pierderea calității.</p><p class=\"text-mid mb-4\">AVIF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP este un format modern de imagine dezvoltat de Google care acceptă atât compresie cu pierderi, cât și fără pierderi. Produce fișiere semnificativ mai mici decât PNG și JPEG la calitate vizuală comparabilă și este acceptat de toate browserele actuale.</p><p class=\"text-mid mb-4\">AVIF oferă cea mai eficientă compresie dintre toate formatele de imagine actuale, reducând dimensiunea cu până la 50% față de JPEG. Chrome, Firefox și Safari 16+ acceptă AVIF. Este alegerea optimă pentru proiecte web critice în ceea ce privește performanța.</p><p class=\"text-mid mb-4\">AVIF oferă o compresie și mai bună decât WebP la calitate vizuală comparabilă. Dacă doriți să optimizați imaginile pentru standardele web de nouă generație, conversia din WebP în AVIF este un pas logic.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversie WEBP în AVIF",
       "variant": "right"

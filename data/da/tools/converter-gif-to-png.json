@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "GIF til PNG-konverter",
-      "alternateName": [],
+      "alternateName": ["Konvertér GIF til PNG", "GIF til PNG konvertering", "Gratis GIF til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Eksportér den første frame af en GIF som statisk PNG. Uden kvalitetstab.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere GIF til PNG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) er et tabsfrit billedformat der understøtter 256 farver. Det bruges bredt til simple animationer.</p><p class=\"text-mid mb-4\">Konvertering af GIF til PNG (Portable Network Graphics) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">PNG understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer PNG alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) understøtter animationer og en palet på maksimalt 256 farver. GIF bruges meget til animeret indhold på sociale medier, men farvebegrænsningen gør det uegnet til fotorealistiske billeder.</p><p class=\"text-mid mb-4\">PNG bevarer den fulde billedkvalitet uden komprimeringsartefakter og understøtter fuld alfa-gennemsigtighed. Dette tabsfrie format er ideelt til grafik, der skal viderebearbejdes, og billeder hvor gennemsigtige områder skal bevares.</p><p class=\"text-mid mb-4\">Konverteringen bevarer kvaliteten tabsfrit og understøtter binær gennemsigtighed. Ved animerede GIF'er konverteres kun det første frame. PNG er velegnet til videre bearbejdning af GIF-grafik.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "GIF til PNG konvertering",
       "variant": "right"

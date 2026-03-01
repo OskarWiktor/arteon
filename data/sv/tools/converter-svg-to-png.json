@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "SVG till PNG-konverterare",
-      "alternateName": [],
+      "alternateName": ["Konvertera SVG till PNG", "SVG till PNG konvertering", "Gratis SVG till PNG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera SVG-vektorgrafik till PNG. Perfekt för dokument och sociala medier.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera SVG till PNG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) är ett förlustfritt bildformat baserat på vektorgrafik. Det används i stor utsträckning för logotyper och ikoner.</p><p class=\"text-mid mb-4\">Konvertering av SVG till PNG (Portable Network Graphics) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">PNG stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) är ett XML-baserat vektorformat för tvådimensionell grafik. SVG-filer är upplösningsoberoende och förblir skarpa i alla storlekar – idealiska för logotyper, ikoner och illustrationer.</p><p class=\"text-mid mb-4\">PNG bevarar full bildkvalitet utan komprimeringsartefakter och stöder full alfa-transparens. Detta förlustfria format är idealiskt för grafik som ska vidarebearbetas och bilder där transparenta områden måste bevaras.</p><p class=\"text-mid mb-4\">Rastrering från SVG till PNG konverterar vektorbilden till pixlar med full bevarande av transparens. PNG är lämpligt för sociala medier och meddelandeappar som inte stöder SVG.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "SVG till PNG konvertering",
       "variant": "right"

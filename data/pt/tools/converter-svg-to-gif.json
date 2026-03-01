@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta graficos vetoriais SVG para formato raster GIF.",
-      "featureList": ["Conversão para GIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"]
+      "featureList": ["Conversão para GIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
+      "alternateName": ["Converter SVG para GIF", "Conversão de SVG para GIF", "Conversor SVG para GIF grátis"]
     },
     "howTo": {
       "name": "Como converter SVG para GIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter SVG para GIF?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) é um formato de imagem sem perda baseado em gráficos vetoriais. É amplamente utilizado para logotipos e ícones.</p><p class=\"text-mid mb-4\">Converter SVG para GIF (Graphics Interchange Format) oferece mais flexibilidade.</p><p class=\"text-mid mb-4\">GIF suporta transparência alfa. Como formato sem perda, GIF preserva todos os dados da imagem.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Scalable Vector Graphics (SVG) é um formato vetorial baseado em XML. Os ficheiros SVG são independentes da resolução e mantêm-se nítidos em qualquer tamanho – ideais para logótipos, ícones e ilustrações.</p><p class=\"text-mid mb-4\">O GIF é o formato padrão para animações curtas, memes e gráficos simples com paleta de cores limitada. Com suporte universal nos navegadores, o GIF é especialmente adequado para conteúdos animados nas redes sociais e aplicações de mensagens.</p><p class=\"text-mid mb-4\">A conversão transforma a imagem vetorial numa imagem de pixels com no máximo 256 cores. O GIF é adequado para ícones simples e gráficos animados, mas não para ilustrações complexas com degradês.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversão de SVG para GIF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de SVG para GIF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de SVG para GIF pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. GIF oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Embora o GIF não seja o formato mais eficiente para imagens estáticas, permanece essencial para animações simples, memes e gráficos com paleta de cores limitada. O limite de 256 cores torna o GIF menos adequado para fotografias, mas ideal para ícones, logotipos e conteúdo animado partilhado nas redes sociais e aplicações de mensagens.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. GIF oferece máxima compatibilidade com todas as plataformas.</p>"
     },
     {
       "type": "gap",

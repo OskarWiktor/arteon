@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky JPG na format GIF. Ideální pro jednoduchou grafiku a ikony.",
-      "featureList": ["Konverze do GIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
+      "featureList": ["Konverze do GIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
+      "alternateName": ["Převést JPG na GIF", "Konverze JPG do GIF", "Převodník JPG na GIF zdarma"]
     },
     "howTo": {
       "name": "Jak převést JPG na GIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět JPG na GIF?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro fotografie.</p><p class=\"text-mid mb-4\">Převod JPG na GIF (Graphics Interchange Format) nabízí více flexibility.</p><p class=\"text-mid mb-4\">GIF podporuje alfa průhlednost. Jako bezeztrátový formát zachovává GIF veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je celosvětově nejrozšířenější formát pro digitální fotografie. Využívá ztrátovou kompresi pro kompaktní soubory, ale nepodporuje transparenci ani bezeztrátové ukládání.</p><p class=\"text-mid mb-4\">GIF je standardní formát pro krátké animace, memy a jednoduchou grafiku s omezenou paletou barev. S univerzální podporou v prohlížečích je GIF obzvláště vhodný pro animovaný obsah na sociálních sítích a v komunikátorech.</p><p class=\"text-mid mb-4\">Paleta barev se redukuje na 256, což u fotografií vede k viditelným ztrátám kvality. Tento převod je vhodný hlavně pro jednoduchou grafiku nebo když je GIF formát vyžadován z důvodu kompatibility.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Převod JPG na GIF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod JPG na GIF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod JPG na GIF může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. GIF nabízí maximální kompatibilitu se všemi platformami.</p>"
+      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Ačkoli GIF není nejefektivnější formát pro statické obrázky, zůstává nezbytný pro jednoduché animace, memy a grafiku s omezenou paletou barev. Limit 256 barev dělá GIF méně vhodným pro fotografie, ale ideálním pro ikony, loga a animovaný obsah sdílený na sociálních sítích a v komunikátorech.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. GIF nabízí maximální kompatibilitu se všemi platformami.</p>"
     },
     {
       "type": "gap",

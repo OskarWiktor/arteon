@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "AVIF fajlok konvertálása univerzális JPG-re. Kompatibilis minden programmal.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["AVIF konvertálása JPG formátumba", "AVIF–JPG átalakítás", "Ingyenes AVIF–JPG konverter"]
     },
     "howTo": {
       "name": "AVIF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes AVIF-t JPG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A AV1 Image File Format (AVIF) egy veszteséges képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A AVIF konvertálása JPG-re (JPEG) univerzális kompatibilitást biztosít minden böngészővel és eszközzel.</p><p class=\"text-mid mb-4\">A JPG nem támogatja az átlátszóságot – az átlátszó területek háttérszínnel lesznek kitöltve.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">Az AV1 Image File Format (AVIF) egy új generációs képformátum az AV1 videokodek alapján. Az AVIF jelenleg a legjobb elérhető tömörítést kínálja – akár 50%-kal kisebb fájlok, mint a WebP hasonló vizuális minőségben.</p><p class=\"text-mid mb-4\">A JPEG a leguniverzálisabb képformátum – kompatibilis minden eszközzel, böngészővel és platformmal. A JPG-re konvertálás biztosítja, hogy képei bárhol problémamentesen megjelenjenek: e-mail mellékletektől a közösségi média bejegyzésekig.</p><p class=\"text-mid mb-4\">Az AVIF-ból JPEG-be konvertálás maximális kompatibilitást biztosít. A JPG-t minden eszköz támogatja – szükséges, ha a címzettek vagy platformok még nem támogatják az újabb AVIF formátumot.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "AVIF konvertálás JPG formátumba",
       "variant": "right"

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta graficos PNG para GIF. Ideal para icones simples e graficos.",
-      "featureList": ["Conversão para GIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"]
+      "featureList": ["Conversão para GIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
+      "alternateName": ["Converter PNG para GIF", "Conversão de PNG para GIF", "Conversor PNG para GIF grátis"]
     },
     "howTo": {
       "name": "Como converter PNG para GIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter PNG para GIF?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) é um formato de imagem sem perda que suporta milhões de cores. É amplamente utilizado para gráficos com transparência.</p><p class=\"text-mid mb-4\">Converter PNG para GIF (Graphics Interchange Format) oferece mais flexibilidade.</p><p class=\"text-mid mb-4\">GIF suporta transparência alfa. Como formato sem perda, GIF preserva todos os dados da imagem.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Portable Network Graphics (PNG) é um formato de imagem sem perdas que suporta milhões de cores e transparência alfa completa. O PNG é especialmente indicado para logótipos, ícones, capturas de ecrã e gráficos com arestas nítidas ou texto.</p><p class=\"text-mid mb-4\">O GIF é o formato padrão para animações curtas, memes e gráficos simples com paleta de cores limitada. Com suporte universal nos navegadores, o GIF é especialmente adequado para conteúdos animados nas redes sociais e aplicações de mensagens.</p><p class=\"text-mid mb-4\">A conversão reduz a paleta para no máximo 256 cores. O resultado é adequado para gráficos simples, ícones e logótipos. A transparência é suportada apenas em modo binário (visível ou invisível), não de forma gradual.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversão de PNG para GIF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de PNG para GIF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de PNG para GIF pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. GIF oferece máxima compatibilidade com todas as plataformas.</p>"
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Embora o GIF não seja o formato mais eficiente para imagens estáticas, permanece essencial para animações simples, memes e gráficos com paleta de cores limitada. O limite de 256 cores torna o GIF menos adequado para fotografias, mas ideal para ícones, logotipos e conteúdo animado partilhado nas redes sociais e aplicações de mensagens.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. GIF oferece máxima compatibilidade com todas as plataformas.</p>"
     },
     {
       "type": "gap",

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer TIFF-bestanden naar compact JPG. Ideaal voor scans en fotoarchieven.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["TIFF naar JPG omzetten", "TIFF naar JPG conversie", "Gratis TIFF naar JPG converter"]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom TIFF naar JPG converteren?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van TIFF naar JPG (JPEG) zorgt voor universele compatibiliteit met alle browsers en apparaten.</p><p class=\"text-mid mb-4\">JPG ondersteunt geen transparantie – transparante gebieden worden gevuld met een achtergrondkleur.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is de industriestandaard voor professionele fotografie, drukwerk en archivering. TIFF slaat afbeeldingen verliesvrij op met volledige kleurdiepte, lagen en metadata.</p><p class=\"text-mid mb-4\">JPEG is het meest universele beeldformaat – compatibel met elk apparaat, elke browser en elk platform. De conversie naar JPG garandeert dat uw afbeeldingen overal probleemloos worden weergegeven: van e-mailbijlagen tot social-mediaposts.</p><p class=\"text-mid mb-4\">De conversie reduceert de vaak zeer grote TIFF-bestanden tot compacte JPEG-formaten. Eventuele transparantie en laafinformatie gaan verloren, maar u krijgt universeel compatibele bestanden voor web, e-mail en sociale media.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "TIFF naar JPG conversie",
       "variant": "right"

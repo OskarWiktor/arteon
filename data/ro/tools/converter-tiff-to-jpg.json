@@ -28,23 +28,24 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere TIFF în JPG compact. Ideal pentru scanari si arhive foto.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversie TIFF în JPG", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie TIFF în JPG", "Convertor TIFF în JPG", "Convertor gratuit TIFF în JPG"]
     },
     "howTo": {
-      "name": "TIFF to JPG",
+      "name": "Cum să convertiți TIFF în JPG",
       "description": "Convertește fișiere TIFF în JPG compact. Ideal pentru scanari si arhive foto.",
       "steps": [
         {
-          "name": "Add TIFF files",
-          "text": "Drag TIFF files onto the drop zone or click to select."
+          "name": "Adăugați fișiere TIFF",
+          "text": "Trageți fișierele TIFF în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv."
         },
         {
-          "name": "Set JPG quality",
-          "text": "Adjust quality slider (60-95%). Default 85%."
+          "name": "Setați calitatea JPG",
+          "text": "Ajustați glisorul de calitate (60–95%). Valoarea implicită este 85%."
         },
         {
-          "name": "Download JPG",
-          "text": "Download files individually or all at once."
+          "name": "Descărcați JPG",
+          "text": "Descărcați fișierele convertite individual sau pe toate odată."
         }
       ]
     }
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți TIFF în JPG?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia TIFF în JPG (JPEG) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">JPG nu suportă transparența – zonele transparente vor fi umplute cu o culoare de fundal.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) este standardul industrial pentru fotografia profesională, tipărire și arhivare. TIFF stochează imaginile fără pierderi cu adâncime completă de culoare, straturi și metadate.</p><p class=\"text-mid mb-4\">JPEG este cel mai universal format de imagine – compatibil cu orice dispozitiv, browser și platformă. Conversia în JPG asigură că imaginile dumneavoastră pot fi vizualizate oriunde fără probleme: de la atașamente email la postări pe rețele sociale.</p><p class=\"text-mid mb-4\">Conversia reduce fișierele TIFF, adesea foarte mari, la dimensiuni JPEG compacte. Transparența și informațiile de straturi se pierd, dar obțineți fișiere universal compatibile pentru web, email și rețele sociale.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie TIFF în JPG",
       "variant": "right"

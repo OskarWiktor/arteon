@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta fotos JPG para AVIF moderno. Compressao ate 50% melhor que JPG mantendo a qualidade.",
-      "featureList": ["Conversão para AVIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"]
+      "featureList": ["Conversão para AVIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
+      "alternateName": ["Converter JPG para AVIF", "Conversão de JPG para AVIF", "Conversor JPG para AVIF grátis"]
     },
     "howTo": {
       "name": "Como converter JPG para AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter JPG para AVIF?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) é um formato de imagem com perda que suporta milhões de cores. É amplamente utilizado para fotografias.</p><p class=\"text-mid mb-4\">Converter JPG para AVIF (AV1 Image File Format) aproveita a compressão moderna para ficheiros mais leves sem perda de qualidade.</p><p class=\"text-mid mb-4\">AVIF suporta transparência alfa. AVIF oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O JPEG (JPG) é o formato de imagem mais utilizado no mundo para fotografias digitais. Utiliza compressão com perdas para obter ficheiros compactos, mas não suporta transparência nem armazenamento sem perdas.</p><p class=\"text-mid mb-4\">O AVIF oferece a compressão mais eficiente de todos os formatos atuais, reduzindo o tamanho até 50% em relação ao JPEG. Chrome, Firefox e Safari 16+ suportam o AVIF. É a escolha ideal para projetos web críticos em desempenho.</p><p class=\"text-mid mb-4\">O AVIF atinge compressão até 50% melhor que o JPEG com qualidade visual comparável. Este formato de nova geração é ideal para sites web críticos em desempenho e é suportado por Chrome, Firefox e Safari 16+.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversão de JPG para AVIF",
       "variant": "right"

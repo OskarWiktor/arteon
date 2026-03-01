@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer JPG-foto\\'s naar modern AVIF. Tot 50% betere compressie dan JPG met behoud van kwaliteit.",
-      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
+      "alternateName": ["JPG naar AVIF omzetten", "JPG naar AVIF conversie", "Gratis JPG naar AVIF converter"]
     },
     "howTo": {
       "name": "JPG naar AVIF converteren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom JPG naar AVIF converteren?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor foto's.</p><p class=\"text-mid mb-4\">Het converteren van JPG naar AVIF (AV1 Image File Format) maakt gebruik van moderne compressie voor kleinere bestanden zonder kwaliteitsverlies.</p><p class=\"text-mid mb-4\">AVIF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is het meest gebruikte beeldformaat ter wereld voor digitale foto's. Het gebruikt compressie met verlies voor compacte bestanden, maar ondersteunt geen transparantie of verliesvrije opslag.</p><p class=\"text-mid mb-4\">AVIF biedt de meest efficiënte compressie van alle huidige beeldformaten en kan de bestandsgrootte tot 50% verminderen ten opzichte van JPEG. Chrome, Firefox en Safari 16+ ondersteunen AVIF. Het is de optimale keuze voor prestatiekritische webprojecten.</p><p class=\"text-mid mb-4\">AVIF bereikt een tot 50% betere compressie dan JPEG bij vergelijkbare visuele kwaliteit. Dit formaat van de volgende generatie is ideaal voor prestatiekritische websites en wordt ondersteund door Chrome, Firefox en Safari 16+.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "JPG naar AVIF conversie",
       "variant": "right"

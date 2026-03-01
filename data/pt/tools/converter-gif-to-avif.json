@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta o primeiro quadro GIF para imagem AVIF estatica com excelente compressao.",
-      "featureList": ["Conversão para AVIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"]
+      "featureList": ["Conversão para AVIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
+      "alternateName": ["Converter GIF para AVIF", "Conversão de GIF para AVIF", "Conversor GIF para AVIF grátis"]
     },
     "howTo": {
       "name": "Como converter GIF para AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter GIF para AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) é um formato de imagem sem perda que suporta 256 de cores. É amplamente utilizado para animações simples.</p><p class=\"text-mid mb-4\">Converter GIF para AVIF (AV1 Image File Format) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">AVIF suporta transparência alfa. AVIF oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Graphics Interchange Format (GIF) suporta animações e uma paleta de no máximo 256 cores. O GIF é muito utilizado para conteúdos animados nas redes sociais, mas a limitação de cores torna-o inadequado para imagens fotorrealistas.</p><p class=\"text-mid mb-4\">O AVIF oferece a compressão mais eficiente de todos os formatos atuais, reduzindo o tamanho até 50% em relação ao JPEG. Chrome, Firefox e Safari 16+ suportam o AVIF. É a escolha ideal para projetos web críticos em desempenho.</p><p class=\"text-mid mb-4\">O AVIF oferece compressão superior ao GIF e suporta milhões de cores em vez de apenas 256. Ideal para modernizar gráficos GIF antigos em sites web para melhores tempos de carregamento.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversão de GIF para AVIF",
       "variant": "right"

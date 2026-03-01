@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter TIFF-filer til moderne AVIF. Massiv filstorrelsesreduktion.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"]
+      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
+      "alternateName": ["Konvertér TIFF til AVIF", "TIFF til AVIF konvertering", "Gratis TIFF til AVIF konverter"]
     },
     "howTo": {
       "name": "Hvordan konverterer man TIFF til AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere TIFF til AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) er et tabsfrit billedformat der understøtter millioner farver. Det bruges bredt til print og arkivering.</p><p class=\"text-mid mb-4\">Konvertering af TIFF til AVIF (AV1 Image File Format) reducerer filstørrelsen markant.</p><p class=\"text-mid mb-4\">AVIF understøtter alfa-gennemsigtighed. AVIF tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) er industristandarden for professionel fotografering, tryk og arkivering. TIFF lagrer billeder tabsfrit med fuld farvedybde, lag og metadata.</p><p class=\"text-mid mb-4\">AVIF tilbyder den mest effektive komprimering af alle aktuelle billedformater og kan reducere filstørrelsen op til 50% sammenlignet med JPEG. Chrome, Firefox og Safari 16+ understøtter AVIF. Det er det optimale valg til ydelseskritiske webprojekter.</p><p class=\"text-mid mb-4\">AVIF tilbyder den mest effektive komprimering til konvertering af store TIFF-filer. Ideelt til weboptimering af professionel fotografering med minimalt kvalitetstab.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "TIFF til AVIF konvertering",
       "variant": "right"

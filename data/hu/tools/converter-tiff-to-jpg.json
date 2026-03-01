@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "TIFF fajlok konvertálása kompakt JPG-re. Idealis szkenekhez es fotoarchivumokhoz.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["TIFF konvertálása JPG formátumba", "TIFF–JPG átalakítás", "Ingyenes TIFF–JPG konverter"]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes TIFF-t JPG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Tagged Image File Format (TIFF) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A TIFF konvertálása JPG-re (JPEG) univerzális kompatibilitást biztosít minden böngészővel és eszközzel.</p><p class=\"text-mid mb-4\">A JPG nem támogatja az átlátszóságot – az átlátszó területek háttérszínnel lesznek kitöltve.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Tagged Image File Format (TIFF) az iparági szabvány a professzionális fotózáshoz, nyomtatáshoz és archiváláshoz. A TIFF veszteségmentesen tárolja a képeket teljes színmélységgel, rétegekkel és metaadatokkal.</p><p class=\"text-mid mb-4\">A JPEG a leguniverzálisabb képformátum – kompatibilis minden eszközzel, böngészővel és platformmal. A JPG-re konvertálás biztosítja, hogy képei bárhol problémamentesen megjelenjenek: e-mail mellékletektől a közösségi média bejegyzésekig.</p><p class=\"text-mid mb-4\">A konvertálás a gyakran nagyon nagy TIFF fájlokat kompakt JPEG-méretre csökkenti. Az átlátszóság és réteginformációk elvesznek, de univerzálisan kompatibilis fájlokat kap webhez, e-mailhez és közösségi médiához.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "TIFF konvertálás JPG formátumba",
       "variant": "right"

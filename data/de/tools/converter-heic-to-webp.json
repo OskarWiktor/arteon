@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "iPhone HEIC-Fotos in leichtes WebP umwandeln. Kleinere Datei, schnelleres Laden.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["HEIC in WEBP umwandeln", "HEIC zu WEBP konvertieren", "Kostenloser HEIC-zu-WEBP-Konverter"]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum HEIC in WebP konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Apple-Gerätefotos verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von HEIC in WebP (WebP) nutzt moderne Komprimierungstechnologie für kleinere Dateien ohne Qualitätsverlust.</p><p class=\"text-mid mb-4\">WebP unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. WebP bietet sowohl verlustbehaftete als auch verlustfreie Komprimierung.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) ist das Standardformat für Fotos auf Apple-Geräten seit iOS 11. HEIC bietet kleinere Dateigrößen als JPEG bei vergleichbarer Qualität, wird jedoch außerhalb des Apple-Ökosystems – unter Windows, Android und auf vielen Webplattformen – nicht nativ unterstützt.</p><p class=\"text-mid mb-4\">WebP reduziert die Dateigröße um bis zu 30–35% gegenüber älteren Formaten, ohne sichtbaren Qualitätsverlust. Alle modernen Browser (Chrome, Firefox, Safari 14+, Edge) unterstützen WebP vollständig. Für Webseiten bedeutet das schnellere Ladezeiten, bessere Core Web Vitals und ein verbessertes Google-Ranking.</p><p class=\"text-mid mb-4\">WebP bietet eine ausgezeichnete Balance zwischen Dateigröße und Qualität. Die Konvertierung von HEIC zu WebP ergibt kompakte Dateien, die von allen modernen Browsern unterstützt werden – ideal für Webseiten und Online-Plattformen.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "HEIC-zu-WEBP-Konvertierung",
       "variant": "right"

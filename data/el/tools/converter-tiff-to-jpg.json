@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε αρχεια TIFF σε συμπαγες JPG. Ιδανικο για σαρωσεις και αρχεια φωτογραφιων.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Μετατροπή TIFF σε JPG", "Μετατροπέας TIFF σε JPG", "Δωρεάν μετατροπέας TIFF σε JPG"]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε TIFF σε JPG;",
-      "html": "<p class=\"text-mid mb-4\">Το Tagged Image File Format (TIFF) είναι ένα μορφότυπο εικόνας χωρίς απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή TIFF σε JPG (JPEG) εξασφαλίζει καθολική συμβατότητα με όλους τους φυλλομετρητές και συσκευές.</p><p class=\"text-mid mb-4\">Το JPG δεν υποστηρίζει διαφάνεια – οι διαφανείς περιοχές θα γεμίσουν με χρώμα φόντου.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το Tagged Image File Format (TIFF) είναι το βιομηχανικό πρότυπο για επαγγελματική φωτογραφία, εκτύπωση και αρχειοθέτηση. Το TIFF αποθηκεύει εικόνες χωρίς απώλειες με πλήρες βάθος χρώματος, επίπεδα και μεταδεδομένα.</p><p class=\"text-mid mb-4\">Το JPEG είναι η πιο καθολική μορφή εικόνας – συμβατή με κάθε συσκευή, περιηγητή και πλατφόρμα. Η μετατροπή σε JPG εξασφαλίζει ότι οι εικόνες σας εμφανίζονται παντού χωρίς πρόβλημα: από συνημμένα email έως δημοσιεύσεις στα μέσα κοινωνικής δικτύωσης.</p><p class=\"text-mid mb-4\">Η μετατροπή μειώνει τα μεγάλα TIFF σε συμπαγή JPEG. Η διαφάνεια και οι πληροφορίες επιπέδων χάνονται, αλλά λαμβάνετε καθολικά συμβατά αρχεία για web, email και κοινωνικά δίκτυα.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή TIFF σε JPG",
       "variant": "right"

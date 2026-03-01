@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta graficos vetoriais SVG para raster TIFF de alta qualidade.",
-      "featureList": ["Conversão para TIFF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"]
+      "featureList": ["Conversão para TIFF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
+      "alternateName": ["Converter SVG para TIFF", "Conversão de SVG para TIFF", "Conversor SVG para TIFF grátis"]
     },
     "howTo": {
       "name": "Como converter SVG para TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter SVG para TIFF?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) é um formato de imagem sem perda baseado em gráficos vetoriais. É amplamente utilizado para logotipos e ícones.</p><p class=\"text-mid mb-4\">Converter SVG para TIFF (Tagged Image File Format) oferece mais flexibilidade.</p><p class=\"text-mid mb-4\">TIFF suporta transparência alfa. Como formato sem perda, TIFF preserva todos os dados da imagem.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Scalable Vector Graphics (SVG) é um formato vetorial baseado em XML. Os ficheiros SVG são independentes da resolução e mantêm-se nítidos em qualquer tamanho – ideais para logótipos, ícones e ilustrações.</p><p class=\"text-mid mb-4\">O TIFF preserva a qualidade de imagem completa sem qualquer perda de dados e suporta camadas e metadados extensos. Como padrão da indústria para impressão e arquivamento, o TIFF é adequado para fotógrafos profissionais e gráficas.</p><p class=\"text-mid mb-4\">A rasterização de SVG para TIFF produz uma imagem de pixels sem perdas na máxima qualidade. Ideal para impressão profissional de gráficos vetoriais quando é necessária uma resolução fixa.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversão de SVG para TIFF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversão de SVG para TIFF na prática",
-      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">Os padrões web modernos favorecem cada vez mais formatos eficientes. O Google PageSpeed Insights e as métricas Core Web Vitals premiam páginas com imagens otimizadas. A conversão de SVG para TIFF pode melhorar diretamente a pontuação do Largest Contentful Paint (LCP), impactando o posicionamento nos motores de busca e a experiência do utilizador.</p><p class=\"text-mid\">O processamento local garante total conformidade com o RGPD para utilizadores em Portugal e no Brasil. TIFF proporciona excelente compressão mantendo a qualidade visual.</p>"
+      "html": "<p class=\"text-mid mb-4\">Em Portugal e no Brasil, plataformas de comércio e serviços públicos frequentemente exigem formatos de imagem específicos. Seja para preparar imagens para OLX.pt, KuantoKusta, Amazon, Mercado Livre, otimizar gráficos em WordPress, Shopify, Nuvemshop ou converter fotos para ePortugal e Gov.br, o formato correto faz toda a diferença.</p><p class=\"text-mid mb-4\">O TIFF é o padrão da indústria para impressão profissional, arquivamento e pós-produção. Programas como Adobe Photoshop, Lightroom e GIMP utilizam TIFF para fluxos de trabalho de edição sem perdas. A conversão para TIFF preserva todos os dados da imagem, incluindo perfis de cor, camadas e metadados.</p><p class=\"text-mid\">Para fotografia profissional e produção gráfica, o TIFF garante qualidade sem perdas que atende aos padrões da indústria. O processamento local garante total conformidade com o RGPD.</p>"
     },
     {
       "type": "gap",

@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "BMP PNG konverter",
-      "alternateName": [],
+      "alternateName": ["BMP konvertálása PNG formátumba", "BMP–PNG átalakítás", "Ingyenes BMP–PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "BMP képek konvertálása veszteségmentes PNG-re. Minőség megőrzése, méret csökkentése.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes BMP-t PNG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Bitmap (BMP) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A BMP konvertálása PNG-re (Portable Network Graphics) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A PNG támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Bitmap (BMP) egy régebbi Windows képformátum, amely tömörítés nélkül tárolja a pixeladatokat. A BMP fájlok ezért rendkívül nagyok és alkalmatlanok modern webes vagy mobilhasználatra.</p><p class=\"text-mid mb-4\">A PNG megőrzi a teljes képminőséget tömörítési műtermékek nélkül, és támogatja a teljes alfa-átlátszóságot. Ez a veszteségmentes formátum ideális a további szerkesztésre szánt grafikákhoz és az átlátszó területeket megőrzendő képekhez.</p><p class=\"text-mid mb-4\">A BMP-ből PNG-be konvertálás jelentősen csökkenti a méretet veszteségmentes tömörítéssel. A JPEG-pel ellentétben a teljes képminőség megmarad – ideális éles szélű grafikákhoz és szövegekhez.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "BMP konvertálás PNG formátumba",
       "variant": "right"

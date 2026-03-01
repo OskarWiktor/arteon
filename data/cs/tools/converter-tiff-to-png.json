@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory TIFF na bezztratove PNG. Zachovejte plnou kvalitu skenu.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Převést TIFF na PNG", "Konverze TIFF do PNG", "Převodník TIFF na PNG zdarma"]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět TIFF na PNG?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) je bezeztrátový obrazový formát podporující miliony barev. Je široce používán pro tisk a archivaci.</p><p class=\"text-mid mb-4\">Převod TIFF na PNG (Portable Network Graphics) zajišťuje univerzální kompatibilitu se všemi prohlížeči a zařízeními.</p><p class=\"text-mid mb-4\">PNG podporuje alfa průhlednost. Jako bezeztrátový formát zachovává PNG veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) je průmyslový standard pro profesionální fotografii, tisk a archivaci. TIFF ukládá obrázky bezeztrátově s plnou barevnou hloubkou, vrstvami a metadaty.</p><p class=\"text-mid mb-4\">PNG zachovává plnou kvalitu obrazu bez kompresních artefaktů a podporuje plnou alfa transparenci. Tento bezeztrátový formát je ideální pro grafiku určenou k dalšímu zpracování a pro obrázky, kde musí zůstat zachovány průhledné oblasti.</p><p class=\"text-mid mb-4\">Převod zachovává kvalitu bezeztrátově a uchovává transparenci, pokud existuje. PNG soubory jsou výrazně menší než TIFF a jsou podporovány všemi zařízeními a platformami.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod TIFF na PNG",
       "variant": "right"

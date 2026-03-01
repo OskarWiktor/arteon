@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "SVG JPG konverter",
-      "alternateName": [],
+      "alternateName": ["SVG konvertálása JPG formátumba", "SVG–JPG átalakítás", "Ingyenes SVG–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "SVG grafikák konvertálása kompakt JPG-re. Kisebb fájl, teljes kompatibilitás.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes SVG-t JPG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Scalable Vector Graphics (SVG) egy veszteségmentes képformátum, amely vektorgrafikán alapul. Széles körben használják logókhoz és ikonokhoz.</p><p class=\"text-mid mb-4\">A SVG konvertálása JPG-re (JPEG) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A JPG nem támogatja az átlátszóságot – az átlátszó területek háttérszínnel lesznek kitöltve.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Scalable Vector Graphics (SVG) egy XML-alapú vektorformátum kétdimenziós grafikákhoz. Az SVG fájlok felbontás-függetlenek és bármilyen méretben élesek maradnak – ideálisak logókhoz, ikonokhoz és illusztrációkhoz.</p><p class=\"text-mid mb-4\">A JPEG a leguniverzálisabb képformátum – kompatibilis minden eszközzel, böngészővel és platformmal. A JPG-re konvertálás biztosítja, hogy képei bárhol problémamentesen megjelenjenek: e-mail mellékletektől a közösségi média bejegyzésekig.</p><p class=\"text-mid mb-4\">Az SVG raszterizálása JPG-be a skálázható vektorgrafikát fix felbontású pixelképpé alakítja. Az átlátszó területek háttérszínnel töltődnek ki. SVG-t nem fogadó platformokhoz alkalmas.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "SVG konvertálás JPG formátumba",
       "variant": "right"

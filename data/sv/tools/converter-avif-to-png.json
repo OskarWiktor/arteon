@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera AVIF-filer till forlustfri PNG. Behall full kvalitet och transparens.",
-      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertera AVIF till PNG", "AVIF till PNG konvertering", "Gratis AVIF till PNG konverterare"]
     },
     "howTo": {
       "name": "AVIF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera AVIF till PNG?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) är ett förlustbringande bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av AVIF till PNG (Portable Network Graphics) säkerställer universell kompatibilitet med alla webbläsare och enheter.</p><p class=\"text-mid mb-4\">PNG stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) är ett nästa generations bildformat baserat på AV1-videocodecen. AVIF erbjuder den bästa tillgängliga komprimeringen – filer upp till 50% mindre än WebP vid jämförbar visuell kvalitet.</p><p class=\"text-mid mb-4\">PNG bevarar full bildkvalitet utan komprimeringsartefakter och stöder full alfa-transparens. Detta förlustfria format är idealiskt för grafik som ska vidarebearbetas och bilder där transparenta områden måste bevaras.</p><p class=\"text-mid mb-4\">Konverteringen bevarar kvaliteten förlustfritt i det universellt stödda PNG-formatet. PNG är lämpligt om du vill bevara transparens eller redigera bilden i grafikprogram.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "AVIF till PNG konvertering",
       "variant": "right"

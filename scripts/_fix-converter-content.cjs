@@ -18,8 +18,8 @@ const { generateFaq, generateComparisonHtml, generateRegionalHtml } = require('.
 // ============================================================
 const args = process.argv.slice(2);
 const DRY_RUN = args.includes('--dry-run');
-const LOCALE_FILTER = (args.find(a => a.startsWith('--locale=')) || '').split('=')[1] || '';
-const CONV_FILTER = (args.find(a => a.startsWith('--converter=')) || '').split('=')[1] || '';
+const LOCALE_FILTER = (args.find((a) => a.startsWith('--locale=')) || '').split('=')[1] || '';
+const CONV_FILTER = (args.find((a) => a.startsWith('--converter=')) || '').split('=')[1] || '';
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const MIN_HTML_THRESHOLD = 2000; // files with >= this much HTML are skipped (already good)
@@ -50,11 +50,11 @@ function measureHtml(contentBlocks) {
 }
 
 function getExistingContactForm(contentBlocks) {
-  return contentBlocks.find(b => b.type === 'contactForm') || null;
+  return contentBlocks.find((b) => b.type === 'contactForm') || null;
 }
 
 function getExistingCarousel(contentBlocks) {
-  return contentBlocks.find(b => b.type === 'toolsCarousel') || null;
+  return contentBlocks.find((b) => b.type === 'toolsCarousel') || null;
 }
 
 // ============================================================
@@ -222,7 +222,7 @@ for (const locale of ALL_LOCALES) {
     continue;
   }
 
-  const files = fs.readdirSync(toolsDir).filter(f => f.startsWith('converter-'));
+  const files = fs.readdirSync(toolsDir).filter((f) => f.startsWith('converter-'));
   console.log(`\n=== ${locale.toUpperCase()} === (${files.length} converters)`);
 
   for (const file of files) {
@@ -267,7 +267,6 @@ for (const locale of ALL_LOCALES) {
         console.log(`  OK  ${file}: ${existingHtml} -> ${newHtml} chars`);
       }
       totalProcessed++;
-
     } catch (err) {
       console.error(`  ERROR ${file}: ${err.message}`);
       totalErrors++;

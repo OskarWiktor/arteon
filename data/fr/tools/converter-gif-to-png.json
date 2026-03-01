@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertisseur GIF en PNG",
-      "alternateName": [],
+      "alternateName": ["Convertir GIF en PNG", "Conversion GIF vers PNG", "Convertisseur GIF en PNG gratuit"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportez la première image d'un GIF en PNG sans perte. Sans inscription, sans envoi.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir GIF en PNG ?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) est un format d’image sans perte prenant en charge 256 de couleurs. Il est largement utilisé pour les animations simples.</p><p class=\"text-mid mb-4\">La conversion de GIF en PNG (Portable Network Graphics) offre plus de flexibilité.</p><p class=\"text-mid mb-4\">PNG prend en charge la transparence alpha. En tant que format sans perte, PNG préserve l’intégralité des données de l’image.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Le Graphics Interchange Format (GIF) prend en charge les animations et une palette de 256 couleurs maximum. Le GIF est largement utilisé pour les contenus animés sur les réseaux sociaux et les messageries, mais ne convient pas aux images photoréalistes en raison de sa limitation de couleurs.</p><p class=\"text-mid mb-4\">Le PNG préserve la qualité d'image complète sans artefacts de compression et prend en charge la transparence alpha complète. Ce format sans perte est idéal pour les graphiques destinés à être retravaillés et pour les images dont les zones transparentes doivent être conservées.</p><p class=\"text-mid mb-4\">La conversion préserve la qualité d'image sans perte et prend en charge la transparence binaire. Pour les GIF animés, seul le premier frame est converti. Le PNG convient particulièrement au retraitement de graphiques GIF.</p><p class=\"text-mid\">Ce convertisseur fonctionne entièrement en local dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléversement, aucun serveur, aucune inscription. Entièrement conforme au RGPD et gratuit sans aucune limitation.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Conversion GIF en PNG",
       "variant": "right"

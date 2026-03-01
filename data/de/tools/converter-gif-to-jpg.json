@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "GIF zu JPG Konverter",
-      "alternateName": [],
+      "alternateName": ["GIF in JPG umwandeln", "GIF zu JPG konvertieren", "Kostenloser GIF-zu-JPG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Erstes Bild eines GIFs als kompaktes JPG exportieren. Kleinere Datei, schnelleres Laden.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum GIF in JPG konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) ist ein verlustfreies Bildformat mit Unterstützung für 256 Farben. Es wird häufig für einfache Animationen verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von GIF in JPG (JPEG) reduziert die Dateigröße erheblich und beschleunigt das Laden von Webseiten.</p><p class=\"text-mid mb-4\">JPG unterstützt keine Transparenz – transparente Bereiche werden mit einer Hintergrundfarbe gefüllt. Als verlustbehaftetes Format erreicht JPG hervorragende Kompressionsraten.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) unterstützt Animationen und eine Palette von maximal 256 Farben. GIF ist weit verbreitet für animierte Inhalte in sozialen Medien und Messenger-Diensten, eignet sich aber wegen der Farbeinschränkung nicht für fotorealistische Bilder.</p><p class=\"text-mid mb-4\">JPEG ist das universellste Bildformat – kompatibel mit jedem Gerät, jedem Browser und jeder Plattform weltweit. Die Konvertierung zu JPG stellt sicher, dass Ihre Bilder überall problemlos angezeigt werden können: von E-Mail-Anhängen über Social-Media-Posts bis hin zu Druckdiensten.</p><p class=\"text-mid mb-4\">Bei der Konvertierung von GIF zu JPG gehen Animationsframes und Transparenz verloren – nur das erste Bild des GIFs wird konvertiert. Dafür erhalten Sie ein universell kompatibles Format mit voller Farbtiefe (16,7 Millionen Farben).</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "GIF-zu-JPG-Konvertierung",
       "variant": "right"

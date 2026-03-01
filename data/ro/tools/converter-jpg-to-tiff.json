@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii JPG în TIFF fara pierderi. Pentru tiparire si arhivare.",
-      "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
+      "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie JPG în TIFF", "Convertor JPG în TIFF", "Convertor gratuit JPG în TIFF"]
     },
     "howTo": {
       "name": "Cum să convertiți JPG în TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți JPG în TIFF?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru fotografii.</p><p class=\"text-mid mb-4\">Conversia JPG în TIFF (Tagged Image File Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">TIFF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) este cel mai utilizat format de imagine din lume pentru fotografii digitale. Folosește compresie cu pierderi pentru fișiere compacte, dar nu acceptă transparența sau stocarea fără pierderi.</p><p class=\"text-mid mb-4\">TIFF păstrează calitatea completă a imaginii fără nicio pierdere de date și acceptă straturi și metadate extinse. Ca standard industrial pentru tipărire și arhivare, TIFF este potrivit pentru fotografi profesioniști și tipografii.</p><p class=\"text-mid mb-4\">Conversia păstrează calitatea actuală a JPEG-ului și o stochează fără pierderi în format TIFF. Detaliile pierdute prin compresia JPEG nu pot fi restaurate, dar TIFF permite editarea ulterioară fără pierderi suplimentare.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversie JPG în TIFF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia JPG în TIFF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia JPG în TIFF poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. TIFF oferă o compresie excelentă păstrând calitatea vizuală.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">TIFF este standardul industrial pentru tipărire profesională, arhivare și post-producție. Programe precum Adobe Photoshop, Lightroom și GIMP utilizează TIFF pentru fluxuri de lucru de editare fără pierderi. Conversia în TIFF păstrează toate datele imaginii, inclusiv profiluri de culoare, straturi și metadate.</p><p class=\"text-mid\">Pentru fotografia profesională și producția tipografică, TIFF asigură o calitate fără pierderi conformă standardelor industriale. Procesarea locală asigură conformitatea deplină cu GDPR.</p>"
     },
     {
       "type": "gap",

@@ -49,7 +49,10 @@ const fixes = [
 let count = 0;
 for (const fix of fixes) {
   const p = path.join(dataDir, fix.file);
-  if (!fs.existsSync(p)) { console.log('SKIP:', fix.file); continue; }
+  if (!fs.existsSync(p)) {
+    console.log('SKIP:', fix.file);
+    continue;
+  }
   let raw = fs.readFileSync(p, 'utf8');
   if (raw.includes(fix.old)) {
     raw = raw.replace(fix.old, fix.rep);

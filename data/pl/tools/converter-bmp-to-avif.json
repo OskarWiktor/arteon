@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień nieskompresowane pliki BMP na nowoczesny AVIF. Ogromna redukcja rozmiaru.",
-      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"]
+      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "alternateName": ["Zamiana BMP na AVIF", "Konwersja BMP do AVIF", "Darmowy konwerter BMP na AVIF"]
     },
     "howTo": {
       "name": "BMP to AVIF",

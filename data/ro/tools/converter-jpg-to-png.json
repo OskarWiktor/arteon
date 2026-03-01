@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertor JPG în PNG",
-      "alternateName": [],
+      "alternateName": ["Conversie JPG în PNG", "Convertor JPG în PNG", "Convertor gratuit JPG în PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți JPG în PNG?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru fotografii.</p><p class=\"text-mid mb-4\">Conversia JPG în PNG (Portable Network Graphics) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">PNG suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) este cel mai utilizat format de imagine din lume pentru fotografii digitale. Folosește compresie cu pierderi pentru fișiere compacte, dar nu acceptă transparența sau stocarea fără pierderi.</p><p class=\"text-mid mb-4\">PNG păstrează calitatea completă a imaginii fără artefacte de compresie și acceptă transparență alfa completă. Acest format fără pierderi este ideal pentru grafică destinată editării ulterioare și imagini unde zonele transparente trebuie păstrate.</p><p class=\"text-mid mb-4\">Conversia din JPG în PNG transformă imaginea într-un format fără pierderi. Detaliile deja pierdute prin compresia JPEG nu pot fi restaurate. PNG este potrivit dacă doriți să editați imaginea fără pierderi suplimentare de calitate.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie JPG în PNG",
       "variant": "right"

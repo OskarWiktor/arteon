@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte nekomprimované soubory BMP na ultrakompaktní AVIF.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
+      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
+      "alternateName": ["Převést BMP na AVIF", "Konverze BMP do AVIF", "Převodník BMP na AVIF zdarma"]
     },
     "howTo": {
       "name": "Jak převést BMP na AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět BMP na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) je bezeztrátový obrazový formát podporující miliony barev. Je široce používán pro nekomprimované obrázky.</p><p class=\"text-mid mb-4\">Převod BMP na AVIF (AV1 Image File Format) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">AVIF podporuje alfa průhlednost. AVIF nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) je starší obrazový formát Windows ukládající pixelová data bez komprese. BMP soubory jsou proto extrémně velké a nevhodné pro moderní použití na webu nebo mobilních zařízeních.</p><p class=\"text-mid mb-4\">AVIF nabízí nejefektivnější kompresi ze všech aktuálních obrazových formátů a dokáže zmenšit velikost až o 50% oproti JPEG. Chrome, Firefox a Safari 16+ podporují AVIF. Je to optimální volba pro výkonnostně kritické webové projekty.</p><p class=\"text-mid mb-4\">AVIF nabízí nejlepší kompresi pro modernizaci nekomprimovaných BMP souborů. Velikost se sníží až o 98% – ideální pro migraci starých obrazových fondů do moderních formátů.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Převod BMP na AVIF",
       "variant": "right"

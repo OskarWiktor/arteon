@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε γραφικα SVG σε ελαφρυ WebP. Ιδανικο για ιστοσελιδες και κοινωνικα δικτυα.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Μετατροπή SVG σε WEBP", "Μετατροπέας SVG σε WEBP", "Δωρεάν μετατροπέας SVG σε WEBP"]
     },
     "howTo": {
       "name": "SVG to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε SVG σε WebP;",
-      "html": "<p class=\"text-mid mb-4\">Το Scalable Vector Graphics (SVG) είναι ένα μορφότυπο εικόνας χωρίς απώλειες. Χρησιμοποιείται ευρέως για λογότυπα και εικονίδια.</p><p class=\"text-mid mb-4\">Η μετατροπή SVG σε WebP (WebP) προσφέρει περισσότερη ευελιξία.</p><p class=\"text-mid mb-4\">Το WebP υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το Scalable Vector Graphics (SVG) είναι μια μορφή διανυσμάτων βασισμένη σε XML. Τα αρχεία SVG είναι ανεξάρτητα ανάλυσης και παραμένουν ευκρινή σε οποιοδήποτε μέγεθος – ιδανικά για λογότυπα, εικονίδια και εικονογραφήσεις.</p><p class=\"text-mid mb-4\">Το WebP μειώνει το μέγεθος αρχείου κατά 30–35% σε σύγκριση με παλαιότερες μορφές, χωρίς ορατή απώλεια ποιότητας. Όλοι οι σύγχρονοι περιηγητές (Chrome, Firefox, Safari 14+, Edge) υποστηρίζουν πλήρως το WebP. Για ιστοσελίδες αυτό σημαίνει ταχύτερους χρόνους φόρτωσης και καλύτερη κατάταξη στο Google.</p><p class=\"text-mid mb-4\">Η μετατροπή παράγει συμπαγείς εικόνες pixel από τα διανυσματικά γραφικά σας σε μορφή WebP. Ιδανικό για ιστοσελίδες όπου μικρά αρχεία και γρήγοροι χρόνοι φόρτωσης είναι κρίσιμοι.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή SVG σε WEBP",
       "variant": "right"

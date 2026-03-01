@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε αρχεια AVIF σε PNG χωρις απωλειες. Διατηρηση πληρους ποιοτητας.",
-      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Μετατροπή AVIF σε PNG", "Μετατροπέας AVIF σε PNG", "Δωρεάν μετατροπέας AVIF σε PNG"]
     },
     "howTo": {
       "name": "AVIF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε AVIF σε PNG;",
-      "html": "<p class=\"text-mid mb-4\">Το AV1 Image File Format (AVIF) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή AVIF σε PNG (Portable Network Graphics) εξασφαλίζει καθολική συμβατότητα με όλους τους φυλλομετρητές και συσκευές.</p><p class=\"text-mid mb-4\">Το PNG υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το AV1 Image File Format (AVIF) είναι μια μορφή εικόνας νέας γενιάς βασισμένη στον κωδικοποιητή βίντεο AV1. Το AVIF προσφέρει την καλύτερη διαθέσιμη συμπίεση – αρχεία έως 50% μικρότερα από WebP σε συγκρίσιμη οπτική ποιότητα.</p><p class=\"text-mid mb-4\">Το PNG διατηρεί την πλήρη ποιότητα εικόνας χωρίς τεχνουργήματα συμπίεσης και υποστηρίζει πλήρη διαφάνεια άλφα. Αυτή η μορφή χωρίς απώλειες είναι ιδανική για γραφικά που χρειάζονται περαιτέρω επεξεργασία.</p><p class=\"text-mid mb-4\">Η μετατροπή διατηρεί την ποιότητα χωρίς απώλειες σε μορφή PNG. Κατάλληλο αν θέλετε να διατηρήσετε τη διαφάνεια ή να επεξεργαστείτε την εικόνα σε γραφιστικά προγράμματα.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή AVIF σε PNG",
       "variant": "right"

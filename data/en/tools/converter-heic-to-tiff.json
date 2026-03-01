@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert iPhone HEIC photos to professional TIFF format.",
-      "featureList": ["Conversion to TIFF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversion to TIFF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HEIC to TIFF", "HEIC to TIFF conversion", "Free HEIC to TIFF converter", "Change HEIC to TIFF"]
     },
     "howTo": {
       "name": "How to convert HEIC to TIFF",
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC to TIFF conversion in practice",
-      "html": "<p class=\"text-mid mb-4\">Businesses, developers, and creators worldwide rely on image format compatibility. Whether you are preparing product images for Amazon, eBay, Etsy, Shopify, optimizing graphics for WordPress, Wix, Squarespace, or converting photos for government portals worldwide, having the right format matters.</p><p class=\"text-mid mb-4\">Modern web standards increasingly favor efficient formats. Google PageSpeed Insights and Core Web Vitals metrics reward pages that use optimized images. Converting HEIC to TIFF can directly improve your Largest Contentful Paint (LCP) score, which impacts both search rankings and user experience.</p><p class=\"text-mid\">For email marketing campaigns and social media, TIFF provides excellent compression while maintaining visual quality. Whether you are a freelancer, small business owner, or enterprise user, this converter handles your image conversion needs reliably and securely.</p>"
+      "html": "<p class=\"text-mid mb-4\">Businesses, developers, and creators worldwide rely on image format compatibility. Whether you are preparing product images for Amazon, eBay, Etsy, Shopify, optimizing graphics for WordPress, Wix, Squarespace, or converting photos for government portals worldwide, having the right format matters.</p><p class=\"text-mid mb-4\">TIFF is the industry standard for professional print, archiving, and post-processing workflows. Applications like Adobe Photoshop, Lightroom, and GIMP rely on TIFF for lossless editing. Converting to TIFF preserves full image data including color profiles, layers, and metadata.</p><p class=\"text-mid\">For professional photography and print production, TIFF ensures lossless quality that meets industry standards. Whether you are a freelancer, small business owner, or enterprise user, this converter handles your image conversion needs reliably and securely.</p>"
     },
     {
       "type": "gap",

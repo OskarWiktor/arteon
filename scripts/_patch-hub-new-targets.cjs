@@ -44,7 +44,9 @@ const newSchemaEntries = [
   { pos: 54, name: 'Konwerter HEIC na TIFF', desc: 'Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF.', slug: 'konwerter-heic-na-tiff' },
 ];
 
-const schemaBlock = newSchemaEntries.map(e => `      {
+const schemaBlock = newSchemaEntries
+  .map(
+    (e) => `      {
         '@type': 'WebApplication',
         position: ${e.pos},
         name: '${e.name}',
@@ -52,7 +54,9 @@ const schemaBlock = newSchemaEntries.map(e => `      {
         url: toAbsoluteUrl('/narzedzia/${e.slug}'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
-      }`).join(',\n');
+      }`,
+  )
+  .join(',\n');
 
 // Insert before the closing of itemListElement array
 const schemaInsertMarker = `        alternateName: ['Image resizer', 'Resize zdjęć online'],
@@ -61,18 +65,25 @@ const schemaInsertMarker = `        alternateName: ['Image resizer', 'Resize zdj
   },
 };`;
 
-hub = hub.replace(schemaInsertMarker,
+hub = hub.replace(
+  schemaInsertMarker,
   `        alternateName: ['Image resizer', 'Resize zdjęć online'],
       },
 ${schemaBlock},
     ],
   },
-};`);
+};`,
+);
 
 // ── 3. Add converter cards ──────────────────────────────────────────
 const newCards = [
   // → AVIF (8)
-  { title: 'Konwerter JPG na AVIF', alt: 'Konwerter JPG na AVIF Arteon', desc: 'Zamień zdjęcia JPG na nowoczesny AVIF. Kompresja nawet 50% lepsza niż JPG przy zachowaniu jakości.', slug: 'konwerter-jpg-na-avif' },
+  {
+    title: 'Konwerter JPG na AVIF',
+    alt: 'Konwerter JPG na AVIF Arteon',
+    desc: 'Zamień zdjęcia JPG na nowoczesny AVIF. Kompresja nawet 50% lepsza niż JPG przy zachowaniu jakości.',
+    slug: 'konwerter-jpg-na-avif',
+  },
   { title: 'Konwerter PNG na AVIF', alt: 'Konwerter PNG na AVIF Arteon', desc: 'Zamień grafiki PNG na AVIF z zachowaniem przezroczystości. Znacznie mniejsze pliki.', slug: 'konwerter-png-na-avif' },
   { title: 'Konwerter WebP na AVIF', alt: 'Konwerter WebP na AVIF Arteon', desc: 'Zamień pliki WebP na AVIF. Jeszcze lepsza kompresja w nowoczesnym formacie.', slug: 'konwerter-webp-na-avif' },
   { title: 'Konwerter SVG na AVIF', alt: 'Konwerter SVG na AVIF Arteon', desc: 'Zamień grafikę wektorową SVG na nowoczesny format rastrowy AVIF.', slug: 'konwerter-svg-na-avif' },
@@ -96,7 +107,9 @@ const newCards = [
   { title: 'Konwerter HEIC na TIFF', alt: 'Konwerter HEIC na TIFF Arteon', desc: 'Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji.', slug: 'konwerter-heic-na-tiff' },
 ];
 
-const cardBlocks = newCards.map(c => `            {
+const cardBlocks = newCards
+  .map(
+    (c) => `            {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
               title: '${c.title}',
               topImageAlt: '${c.alt}',
@@ -111,7 +124,9 @@ const cardBlocks = newCards.map(c => `            {
                   </div>
                 </div>
               ),
-            }`).join(',\n');
+            }`,
+  )
+  .join(',\n');
 
 // Insert before the closing of the converter SectionSteps items array
 // Find the last TIFF na WebP card closing and append after it
@@ -129,8 +144,13 @@ let searchFrom = idx;
 let braceCount = 0;
 let foundStart = false;
 for (let i = searchFrom; i < hub.length; i++) {
-  if (hub[i] === '{') { braceCount++; foundStart = true; }
-  if (hub[i] === '}') { braceCount--; }
+  if (hub[i] === '{') {
+    braceCount++;
+    foundStart = true;
+  }
+  if (hub[i] === '}') {
+    braceCount--;
+  }
   if (foundStart && braceCount === 0) {
     // i is the position of the closing } of the last card object
     // Insert the new cards after this }
@@ -140,15 +160,12 @@ for (let i = searchFrom; i < hub.length; i++) {
 }
 
 // Also update the section description count
-hub = hub.replace(
-  '24 konwertery obrazów online',
-  '44 konwertery obrazów online'
-);
+hub = hub.replace('24 konwertery obrazów online', '44 konwertery obrazów online');
 
 // Update FAQ answer to mention new formats
 hub = hub.replace(
   'konwertować obrazy między formatami (JPG, PNG, WebP, SVG, BMP, GIF, AVIF, HEIC, TIFF)',
-  'konwertować obrazy między formatami (JPG, PNG, WebP, SVG, BMP, GIF, AVIF, HEIC, TIFF) w tym do nowoczesnego AVIF, GIF i profesjonalnego TIFF'
+  'konwertować obrazy między formatami (JPG, PNG, WebP, SVG, BMP, GIF, AVIF, HEIC, TIFF) w tym do nowoczesnego AVIF, GIF i profesjonalnego TIFF',
 );
 
 fs.writeFileSync(hubPath, hub, 'utf8');

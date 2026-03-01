@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera TIFF-filer till kompakt JPG. Idealiskt for skanningar och fotoarkiv.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertera TIFF till JPG", "TIFF till JPG konvertering", "Gratis TIFF till JPG konverterare"]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera TIFF till JPG?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) är ett förlustfritt bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av TIFF till JPG (JPEG) säkerställer universell kompatibilitet med alla webbläsare och enheter.</p><p class=\"text-mid mb-4\">JPG stödjer inte transparens – transparenta områden fylls med en bakgrundsfärg.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) är branschstandarden för professionell fotografering, tryck och arkivering. TIFF lagrar bilder förlustfritt med full färgdjup, lager och metadata.</p><p class=\"text-mid mb-4\">JPEG är det mest universella bildformatet – kompatibelt med alla enheter, webbläsare och plattformar. Konvertering till JPG säkerställer att dina bilder visas problemfritt överallt: från e-postbilagor till inlägg i sociala medier.</p><p class=\"text-mid mb-4\">Konverteringen reducerar de ofta mycket stora TIFF-filerna till kompakta JPEG-storlekar. Transparens och lagerinformation förloras, men du får universellt kompatibla filer för webb, e-post och sociala medier.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "TIFF till JPG konvertering",
       "variant": "right"

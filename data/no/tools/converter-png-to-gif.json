@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter PNG-grafikk til GIF. Ideell for enkle ikoner og grafikk.",
-      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"]
+      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
+      "alternateName": ["Konverter PNG til GIF", "PNG til GIF konvertering", "Gratis PNG til GIF konverterer"]
     },
     "howTo": {
       "name": "Hvordan konvertere PNG til GIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere PNG til GIF?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av PNG til GIF (Graphics Interchange Format) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">GIF støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tapsfritt bildeformat som støtter millioner av farger og full alfa-gjennomsiktighet. PNG er spesielt egnet for logoer, ikoner, skjermbilder og grafikk med skarpe kanter eller tekst.</p><p class=\"text-mid mb-4\">GIF er standardformatet for korte animasjoner, memes og enkel grafikk med begrenset fargepalett. Med universell nettleserstøtte er GIF spesielt egnet for animert innhold i sosiale medier og meldingsapper.</p><p class=\"text-mid mb-4\">Konverteringen reduserer paletten til maksimalt 256 farger. Resultatet er egnet for enkel grafikk, ikoner og logoer. Gjennomsiktighet støttes kun binært (synlig eller usynlig), ikke gradvis.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "PNG til GIF konvertering",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-til-GIF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av PNG til GIF kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. GIF tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Selv om GIF ikke er det mest effektive formatet for statiske bilder, er det fortsatt uunnværlig for enkle animasjoner, memes og grafikk med begrenset fargepalett. Grensen på 256 farger gjør GIF mindre egnet for fotografier, men ideelt for ikoner, logoer og animert innhold delt på sosiale medier og meldingsapper.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. GIF tilbyr maksimal kompatibilitet på tvers av alle plattformer.</p>"
     },
     {
       "type": "gap",

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne.",
-      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
+      "alternateName": ["Convertir WEBP en AVIF", "Conversion WEBP vers AVIF", "Convertisseur WEBP en AVIF gratuit"]
     },
     "howTo": {
       "name": "Comment convertir WebP en AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir WebP en AVIF ?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) est un format d’image avec perte prenant en charge des millions de couleurs. Il est largement utilisé pour les images web.</p><p class=\"text-mid mb-4\">La conversion de WebP en AVIF (AV1 Image File Format) tire parti de la compression moderne pour des fichiers plus légers sans perte de qualité.</p><p class=\"text-mid mb-4\">AVIF prend en charge la transparence alpha. AVIF offre une compression avec et sans perte.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Le WebP est un format d'image moderne développé par Google, prenant en charge à la fois la compression avec et sans perte. Il produit des fichiers nettement plus légers que le PNG et le JPEG à qualité visuelle comparable, et est supporté par tous les navigateurs actuels.</p><p class=\"text-mid mb-4\">L'AVIF offre la compression la plus efficace de tous les formats d'image actuels, réduisant la taille des fichiers jusqu'à 50% par rapport au JPEG. Chrome, Firefox et Safari 16+ prennent en charge l'AVIF. C'est le choix optimal pour les projets web critiques en termes de performance et l'utilisation mobile.</p><p class=\"text-mid mb-4\">L'AVIF offre une compression encore meilleure que le WebP à qualité visuelle comparable. Si vous souhaitez optimiser vos images pour les standards web de nouvelle génération, la conversion de WebP en AVIF est une étape judicieuse.</p><p class=\"text-mid\">Ce convertisseur fonctionne entièrement en local dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléversement, aucun serveur, aucune inscription. Entièrement conforme au RGPD et gratuit sans aucune limitation.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversion WEBP en AVIF",
       "variant": "right"

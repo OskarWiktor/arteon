@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertor JPG în WebP",
-      "alternateName": [],
+      "alternateName": ["Conversie JPG în WEBP", "Convertor JPG în WEBP", "Convertor gratuit JPG în WEBP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii JPG în WebP ușor. Reducere de până la 35%.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți JPG în WebP?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru fotografii.</p><p class=\"text-mid mb-4\">Conversia JPG în WebP (WebP) folosește compresia modernă pentru fișiere mai mici fără pierderea calității.</p><p class=\"text-mid mb-4\">WebP suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) este cel mai utilizat format de imagine din lume pentru fotografii digitale. Folosește compresie cu pierderi pentru fișiere compacte, dar nu acceptă transparența sau stocarea fără pierderi.</p><p class=\"text-mid mb-4\">WebP reduce dimensiunea fișierului cu 30–35% față de formatele mai vechi, fără pierderi vizibile de calitate. Toate browserele moderne (Chrome, Firefox, Safari 14+, Edge) acceptă pe deplin WebP. Pentru site-uri web, aceasta înseamnă timpi de încărcare mai rapizi și o poziționare mai bună în Google.</p><p class=\"text-mid mb-4\">WebP poate reduce dimensiunea fotografiilor JPEG cu 25–35% fără pierderi vizibile de calitate. Deoarece JPEG nu acceptă transparența, nicio informație de imagine nu se pierde la această conversie.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie JPG în WEBP",
       "variant": "right"

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "PNG-Grafiken in AVIF umwandeln mit Transparenzunterstutzung. Deutlich kleinere Dateien.",
-      "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+      "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
+      "alternateName": ["PNG in AVIF umwandeln", "PNG zu AVIF konvertieren", "Kostenloser PNG-zu-AVIF-Konverter"]
     },
     "howTo": {
       "name": "PNG zu AVIF konvertieren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum PNG in AVIF konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) ist ein verlustfreies Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Grafiken mit Transparenz verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von PNG in AVIF (AV1 Image File Format) reduziert die Dateigröße erheblich und beschleunigt das Laden von Webseiten.</p><p class=\"text-mid mb-4\">AVIF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. AVIF bietet sowohl verlustbehaftete als auch verlustfreie Komprimierung.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) ist ein verlustfreies Bildformat, das Millionen Farben und volle Alpha-Transparenz unterstützt. PNG eignet sich besonders für Logos, Icons, Screenshots und Grafiken mit scharfen Kanten oder Text – überall dort, wo jedes Pixel zählt.</p><p class=\"text-mid mb-4\">AVIF bietet die effizienteste Komprimierung aller aktuellen Bildformate und kann die Dateigröße um bis zu 50% gegenüber JPEG reduzieren. Chrome, Firefox und Safari 16+ unterstützen AVIF. Besonders für leistungskritische Webprojekte und mobile Nutzung ist AVIF die optimale Wahl.</p><p class=\"text-mid mb-4\">AVIF bietet noch bessere Komprimierung als WebP und kann die Dateigröße Ihrer PNG-Bilder um bis zu 50% reduzieren. Alpha-Transparenz wird vollständig unterstützt. Beachten Sie, dass ältere Browser AVIF möglicherweise noch nicht unterstützen.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "PNG-zu-AVIF-Konvertierung",
       "variant": "right"

@@ -304,22 +304,35 @@ const uiStrings = {
 const targetFaqs = {
   AVIF: {
     en: [
-      { question: 'What is AVIF format?', answer: 'AVIF is a modern image format based on the AV1 codec. It offers excellent compression — files can be up to 50% smaller than JPG while maintaining comparable quality. It supports transparency and wide color gamuts.' },
+      {
+        question: 'What is AVIF format?',
+        answer:
+          'AVIF is a modern image format based on the AV1 codec. It offers excellent compression — files can be up to 50% smaller than JPG while maintaining comparable quality. It supports transparency and wide color gamuts.',
+      },
       { question: 'Does AVIF work in all browsers?', answer: 'AVIF is supported by Chrome, Edge, and Firefox. Safari has limited AVIF support.' },
       { question: 'Are my files sent to a server?', answer: 'No. Conversion runs entirely in your browser. Files never leave your computer.' },
     ],
     de: [
-      { question: 'Was ist das AVIF-Format?', answer: 'AVIF ist ein modernes Bildformat basierend auf dem AV1-Codec. Es bietet hervorragende Kompression — Dateien konnen bis zu 50% kleiner als JPG sein bei vergleichbarer Qualitat.' },
+      {
+        question: 'Was ist das AVIF-Format?',
+        answer: 'AVIF ist ein modernes Bildformat basierend auf dem AV1-Codec. Es bietet hervorragende Kompression — Dateien konnen bis zu 50% kleiner als JPG sein bei vergleichbarer Qualitat.',
+      },
       { question: 'Funktioniert AVIF in allen Browsern?', answer: 'AVIF wird von Chrome, Edge und Firefox unterstutzt. Safari hat eingeschrankte AVIF-Unterstutzung.' },
       { question: 'Werden meine Dateien an einen Server gesendet?', answer: 'Nein. Die Konvertierung erfolgt vollstandig im Browser. Dateien verlassen nie Ihren Computer.' },
     ],
     es: [
-      { question: 'Que es el formato AVIF?', answer: 'AVIF es un formato de imagen moderno basado en el codec AV1. Ofrece excelente compresion — los archivos pueden ser hasta un 50% mas pequenos que JPG.' },
+      {
+        question: 'Que es el formato AVIF?',
+        answer: 'AVIF es un formato de imagen moderno basado en el codec AV1. Ofrece excelente compresion — los archivos pueden ser hasta un 50% mas pequenos que JPG.',
+      },
       { question: 'Funciona AVIF en todos los navegadores?', answer: 'AVIF es compatible con Chrome, Edge y Firefox. Safari tiene soporte limitado para AVIF.' },
       { question: 'Se envian mis archivos a un servidor?', answer: 'No. La conversion se realiza completamente en tu navegador. Los archivos nunca salen de tu computadora.' },
     ],
     fr: [
-      { question: 'Qu\'est-ce que le format AVIF?', answer: 'AVIF est un format d\'image moderne base sur le codec AV1. Il offre une excellente compression — les fichiers peuvent etre jusqu\'a 50% plus petits que JPG.' },
+      {
+        question: "Qu'est-ce que le format AVIF?",
+        answer: "AVIF est un format d'image moderne base sur le codec AV1. Il offre une excellente compression — les fichiers peuvent etre jusqu'a 50% plus petits que JPG.",
+      },
       { question: 'AVIF fonctionne-t-il dans tous les navigateurs?', answer: 'AVIF est pris en charge par Chrome, Edge et Firefox. Safari a un support limite pour AVIF.' },
       { question: 'Mes fichiers sont-ils envoyes a un serveur?', answer: 'Non. La conversion se fait entierement dans votre navigateur. Les fichiers ne quittent jamais votre ordinateur.' },
     ],
@@ -329,7 +342,10 @@ const targetFaqs = {
       { question: 'Os meus ficheiros sao enviados para um servidor?', answer: 'Nao. A conversao e feita inteiramente no seu navegador. Os ficheiros nunca saem do seu computador.' },
     ],
     it: [
-      { question: 'Cos\'e il formato AVIF?', answer: 'AVIF e un formato immagine moderno basato sul codec AV1. Offre un\'eccellente compressione — i file possono essere fino al 50% piu piccoli di JPG.' },
+      {
+        question: "Cos'e il formato AVIF?",
+        answer: "AVIF e un formato immagine moderno basato sul codec AV1. Offre un'eccellente compressione — i file possono essere fino al 50% piu piccoli di JPG.",
+      },
       { question: 'AVIF funziona in tutti i browser?', answer: 'AVIF e supportato da Chrome, Edge e Firefox. Safari ha un supporto limitato per AVIF.' },
       { question: 'I miei file vengono inviati a un server?', answer: 'No. La conversione avviene interamente nel browser. I file non lasciano mai il tuo computer.' },
     ],
@@ -339,7 +355,10 @@ const targetFaqs = {
       { question: 'Sunt fisierele mele trimise pe un server?', answer: 'Nu. Conversia se face integral in browser. Fisierele nu parasesc niciodata computerul.' },
     ],
     nl: [
-      { question: 'Wat is het AVIF-formaat?', answer: 'AVIF is een modern afbeeldingsformaat gebaseerd op de AV1-codec. Het biedt uitstekende compressie — bestanden kunnen tot 50% kleiner zijn dan JPG.' },
+      {
+        question: 'Wat is het AVIF-formaat?',
+        answer: 'AVIF is een modern afbeeldingsformaat gebaseerd op de AV1-codec. Het biedt uitstekende compressie — bestanden kunnen tot 50% kleiner zijn dan JPG.',
+      },
       { question: 'Werkt AVIF in alle browsers?', answer: 'AVIF wordt ondersteund door Chrome, Edge en Firefox. Safari heeft beperkte AVIF-ondersteuning.' },
       { question: 'Worden mijn bestanden naar een server gestuurd?', answer: 'Nee. De conversie vindt volledig plaats in de browser. Bestanden verlaten nooit uw computer.' },
     ],
@@ -374,7 +393,10 @@ const targetFaqs = {
       { question: 'Lahetetaanko tiedostoni palvelimelle?', answer: 'Ei. Muunnos tapahtuu kokonaan selaimessa. Tiedostot eivat koskaan poistu tietokoneeltasi.' },
     ],
     el: [
-      { question: 'Τι είναι η μορφή AVIF;', answer: 'Το AVIF είναι μια σύγχρονη μορφή εικόνας βασισμένη στον κωδικοποιητή AV1. Προσφέρει εξαιρετική συμπίεση — τα αρχεία μπορούν να είναι έως 50% μικρότερα από JPG.' },
+      {
+        question: 'Τι είναι η μορφή AVIF;',
+        answer: 'Το AVIF είναι μια σύγχρονη μορφή εικόνας βασισμένη στον κωδικοποιητή AV1. Προσφέρει εξαιρετική συμπίεση — τα αρχεία μπορούν να είναι έως 50% μικρότερα από JPG.',
+      },
       { question: 'Λειτουργεί το AVIF σε όλα τα προγράμματα περιήγησης;', answer: 'Το AVIF υποστηρίζεται από Chrome, Edge και Firefox. Το Safari έχει περιορισμένη υποστήριξη AVIF.' },
       { question: 'Αποστέλλονται τα αρχεία μου σε διακομιστή;', answer: 'Όχι. Η μετατροπή γίνεται εξ ολοκλήρου στο πρόγραμμα περιήγησης. Τα αρχεία δεν φεύγουν ποτέ από τον υπολογιστή σας.' },
     ],
@@ -387,7 +409,10 @@ const targetFaqs = {
     ],
     de: [
       { question: 'Was ist das GIF-Format?', answer: 'GIF ist ein weit verbreitetes Bildformat mit bis zu 256 Farben. Ideal fur einfache Grafiken, Icons und Illustrationen.' },
-      { question: 'Verringert die GIF-Konvertierung die Qualitat?', answer: 'GIF verwendet eine begrenzte 256-Farben-Palette. Fotos konnen Details verlieren. Am besten fur Grafiken mit flachen Farben.' },
+      {
+        question: 'Verringert die GIF-Konvertierung die Qualitat?',
+        answer: 'GIF verwendet eine begrenzte 256-Farben-Palette. Fotos konnen Details verlieren. Am besten fur Grafiken mit flachen Farben.',
+      },
       { question: 'Werden meine Dateien an einen Server gesendet?', answer: 'Nein. Die Konvertierung erfolgt vollstandig im Browser.' },
     ],
     es: [
@@ -396,7 +421,7 @@ const targetFaqs = {
       { question: 'Se envian mis archivos a un servidor?', answer: 'No. La conversion se realiza completamente en tu navegador.' },
     ],
     fr: [
-      { question: 'Qu\'est-ce que le format GIF?', answer: 'GIF est un format d\'image largement supporte qui prend en charge jusqu\'a 256 couleurs. Ideal pour les graphiques simples et les icones.' },
+      { question: "Qu'est-ce que le format GIF?", answer: "GIF est un format d'image largement supporte qui prend en charge jusqu'a 256 couleurs. Ideal pour les graphiques simples et les icones." },
       { question: 'La conversion en GIF reduit-elle la qualite?', answer: 'GIF utilise une palette limitee de 256 couleurs. Les photographies peuvent perdre des details.' },
       { question: 'Mes fichiers sont-ils envoyes a un serveur?', answer: 'Non. La conversion se fait entierement dans votre navigateur.' },
     ],
@@ -406,7 +431,7 @@ const targetFaqs = {
       { question: 'Os meus ficheiros sao enviados para um servidor?', answer: 'Nao. A conversao e feita inteiramente no seu navegador.' },
     ],
     it: [
-      { question: 'Cos\'e il formato GIF?', answer: 'GIF e un formato immagine ampiamente supportato che supporta fino a 256 colori. Ideale per grafiche semplici e icone.' },
+      { question: "Cos'e il formato GIF?", answer: 'GIF e un formato immagine ampiamente supportato che supporta fino a 256 colori. Ideale per grafiche semplici e icone.' },
       { question: 'La conversione in GIF riduce la qualita?', answer: 'GIF utilizza una palette limitata di 256 colori. Le fotografie possono perdere dettagli.' },
       { question: 'I miei file vengono inviati a un server?', answer: 'No. La conversione avviene interamente nel browser.' },
     ],
@@ -417,7 +442,7 @@ const targetFaqs = {
     ],
     nl: [
       { question: 'Wat is het GIF-formaat?', answer: 'GIF is een breed ondersteund afbeeldingsformaat dat tot 256 kleuren ondersteunt. Ideaal voor eenvoudige afbeeldingen en iconen.' },
-      { question: 'Vermindert GIF-conversie de kwaliteit?', answer: 'GIF gebruikt een beperkt palet van 256 kleuren. Foto\'s kunnen detail verliezen.' },
+      { question: 'Vermindert GIF-conversie de kwaliteit?', answer: "GIF gebruikt een beperkt palet van 256 kleuren. Foto's kunnen detail verliezen." },
       { question: 'Worden mijn bestanden naar een server gestuurd?', answer: 'Nee. De conversie vindt volledig plaats in de browser.' },
     ],
     hu: [
@@ -473,7 +498,7 @@ const targetFaqs = {
       { question: 'Se envian mis archivos a un servidor?', answer: 'No. La conversion se realiza completamente en tu navegador.' },
     ],
     fr: [
-      { question: 'Qu\'est-ce que le format TIFF?', answer: 'TIFF est un format d\'image professionnel sans perte utilise pour l\'impression, l\'edition et l\'archivage.' },
+      { question: "Qu'est-ce que le format TIFF?", answer: "TIFF est un format d'image professionnel sans perte utilise pour l'impression, l'edition et l'archivage." },
       { question: 'Les fichiers TIFF sont-ils plus grands que JPG?', answer: 'Oui. Les fichiers TIFF sont generalement beaucoup plus volumineux car ils utilisent une compression sans perte.' },
       { question: 'Mes fichiers sont-ils envoyes a un serveur?', answer: 'Non. La conversion se fait entierement dans votre navigateur.' },
     ],
@@ -483,7 +508,7 @@ const targetFaqs = {
       { question: 'Os meus ficheiros sao enviados para um servidor?', answer: 'Nao. A conversao e feita inteiramente no seu navegador.' },
     ],
     it: [
-      { question: 'Cos\'e il formato TIFF?', answer: 'TIFF e un formato immagine professionale lossless utilizzato nella stampa, nell\'editoria e nell\'archiviazione.' },
+      { question: "Cos'e il formato TIFF?", answer: "TIFF e un formato immagine professionale lossless utilizzato nella stampa, nell'editoria e nell'archiviazione." },
       { question: 'I file TIFF sono piu grandi di JPG?', answer: 'Si. I file TIFF sono tipicamente molto piu grandi perche utilizzano compressione lossless.' },
       { question: 'I miei file vengono inviati a un server?', answer: 'No. La conversione avviene interamente nel browser.' },
     ],
@@ -580,7 +605,10 @@ let skipped = 0;
 for (const conv of converters) {
   for (const locale of locales) {
     const reg = getRegistryLocale(conv.key, locale);
-    if (!reg) { skipped++; continue; }
+    if (!reg) {
+      skipped++;
+      continue;
+    }
 
     const cfg = localeConfig[locale];
     const ui = uiStrings[locale];
@@ -592,9 +620,17 @@ for (const conv of converters) {
     const filePath = path.join(dirPath, fileName);
 
     // Skip if already exists
-    if (fs.existsSync(filePath)) { skipped++; continue; }
+    if (fs.existsSync(filePath)) {
+      skipped++;
+      continue;
+    }
 
-    const r = (s) => s.replace(/\{FROM\}/g, conv.from).replace(/\{TO\}/g, conv.to).replace(/\{TARGET\}/g, conv.to).replace(/\{DESC\}/g, reg.description);
+    const r = (s) =>
+      s
+        .replace(/\{FROM\}/g, conv.from)
+        .replace(/\{TO\}/g, conv.to)
+        .replace(/\{TARGET\}/g, conv.to)
+        .replace(/\{DESC\}/g, reg.description);
 
     const json = {
       toolKey: conv.key,

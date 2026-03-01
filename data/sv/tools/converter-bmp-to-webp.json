@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera BMP-filer till lattvikts-WebP. Upp till 95% storleksminskning.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertera BMP till WEBP", "BMP till WEBP konvertering", "Gratis BMP till WEBP konverterare"]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera BMP till WebP?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) är ett förlustfritt bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av BMP till WebP (WebP) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">WebP stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) är ett äldre Windows-bildformat som lagrar pixeldata utan komprimering. BMP-filer är därför extremt stora och olämpliga för modern användning på webben eller mobila enheter.</p><p class=\"text-mid mb-4\">WebP minskar filstorleken med 30–35% jämfört med äldre format utan synlig kvalitetsförlust. Alla moderna webbläsare (Chrome, Firefox, Safari 14+, Edge) stöder WebP fullt ut. För webbplatser innebär detta snabbare laddningstider och bättre Google-placering.</p><p class=\"text-mid mb-4\">WebP minskar de enorma BMP-filstorlekarna med upp till 97% med god visuell kvalitet. Konverteringen moderniserar dina äldre bilder för användning på webbplatser.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "BMP till WEBP konvertering",
       "variant": "right"

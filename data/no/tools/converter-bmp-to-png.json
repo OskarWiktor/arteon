@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "BMP til PNG-konverterer",
-      "alternateName": [],
+      "alternateName": ["Konverter BMP til PNG", "BMP til PNG konvertering", "Gratis BMP til PNG konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter BMP-bilder til tapsfritt PNG. Kvalitet bevart, størrelse redusert.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere BMP til PNG?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av BMP til PNG (Portable Network Graphics) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">PNG støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) er et eldre Windows-bildeformat som lagrer pikseldata uten komprimering. BMP-filer er derfor ekstremt store og uegnet for moderne bruk på nett eller mobile enheter.</p><p class=\"text-mid mb-4\">PNG bevarer full bildekvalitet uten komprimeringsartefakter og støtter full alfa-gjennomsiktighet. Dette tapsfrie formatet er ideelt for grafikk som skal viderebearbeides og bilder der gjennomsiktige områder må bevares.</p><p class=\"text-mid mb-4\">Konvertering fra BMP til PNG reduserer størrelsen vesentlig gjennom tapsfri komprimering. I motsetning til JPEG bevares full kvalitet – ideelt for grafikk med skarpe kanter og tekst.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "BMP til PNG konvertering",
       "variant": "right"

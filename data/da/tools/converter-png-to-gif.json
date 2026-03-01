@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter PNG-grafik til GIF. Ideel til simple ikoner og grafik.",
-      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"]
+      "featureList": ["Konvertering til GIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
+      "alternateName": ["Konvertér PNG til GIF", "PNG til GIF konvertering", "Gratis PNG til GIF konverter"]
     },
     "howTo": {
       "name": "Hvordan konverterer man PNG til GIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere PNG til GIF?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tabsfrit billedformat der understøtter millioner farver. Det bruges bredt til grafik med gennemsigtighed.</p><p class=\"text-mid mb-4\">Konvertering af PNG til GIF (Graphics Interchange Format) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">GIF understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer GIF alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tabsfrit billedformat, der understøtter millioner af farver og fuld alfa-gennemsigtighed. PNG er særligt velegnet til logoer, ikoner, skærmbilleder og grafik med skarpe kanter eller tekst.</p><p class=\"text-mid mb-4\">GIF er standardformatet for korte animationer, memes og enkel grafik med begrænset farvepalet. Med universel browserunderstøttelse er GIF særligt velegnet til animeret indhold på sociale medier og i beskedapps.</p><p class=\"text-mid mb-4\">Konverteringen reducerer paletten til maksimalt 256 farver. Resultatet er velegnet til enkel grafik, ikoner og logoer. Gennemsigtighed understøttes kun binært (synlig eller usynlig), ikke graduelt.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "PNG til GIF konvertering",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af PNG til GIF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af PNG til GIF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. GIF tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Selvom GIF ikke er det mest effektive format for statiske billeder, er det stadig uundværligt for simple animationer, memes og grafik med begrænset farvepalet. Grænsen på 256 farver gør GIF mindre egnet til fotografier, men ideel til ikoner, logoer og animeret indhold delt på sociale medier og beskedtjenester.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. GIF tilbyder maksimal kompatibilitet på tværs af alle platforme.</p>"
     },
     {
       "type": "gap",

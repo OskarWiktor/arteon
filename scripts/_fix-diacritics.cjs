@@ -309,7 +309,7 @@ const REPLACEMENTS = {
     ['Imposta qualita', 'Imposta qualità'],
     ['valori piu bassi producono file piu piccoli', 'valori più bassi producono file più piccoli'],
     ['AVIF e un formato immagine moderno', 'AVIF è un formato immagine moderno'],
-    ['un\'eccellente compressione', 'un\'eccellente compressione'],
+    ["un'eccellente compressione", "un'eccellente compressione"],
     ['i file possono essere fino al 50% piu piccoli', 'i file possono essere fino al 50% più piccoli'],
     ['AVIF e supportato da Chrome', 'AVIF è supportato da Chrome'],
     ['GIF e un formato immagine ampiamente supportato', 'GIF è un formato immagine ampiamente supportato'],
@@ -495,15 +495,35 @@ function applyReplacements(text, locale) {
 // -----------------------------------------------------------------------
 function fixObject(obj, locale) {
   if (typeof obj === 'string') return applyReplacements(obj, locale);
-  if (Array.isArray(obj)) return obj.map(item => fixObject(item, locale));
+  if (Array.isArray(obj)) return obj.map((item) => fixObject(item, locale));
   if (obj && typeof obj === 'object') {
     const result = {};
     for (const [key, value] of Object.entries(obj)) {
       // Don't touch paths, hrefs, slugs, keys, types, variants, icons, images
-      if (['href', 'path', 'slug', 'type', 'variant', 'icon', 'key', 'toolKey', 'locale',
-           'ogImage', 'backgroundImage', 'imageSrc', 'imageAlt', 'image',
-           'applicationCategory', 'applicationSubCategory', 'grid',
-           'openByDefault', 'position', 'carouselOrder'].includes(key)) {
+      if (
+        [
+          'href',
+          'path',
+          'slug',
+          'type',
+          'variant',
+          'icon',
+          'key',
+          'toolKey',
+          'locale',
+          'ogImage',
+          'backgroundImage',
+          'imageSrc',
+          'imageAlt',
+          'image',
+          'applicationCategory',
+          'applicationSubCategory',
+          'grid',
+          'openByDefault',
+          'position',
+          'carouselOrder',
+        ].includes(key)
+      ) {
         result[key] = value;
       } else {
         result[key] = fixObject(value, locale);
@@ -524,7 +544,7 @@ for (const locale of LOCALES) {
   const toolsDir = path.join(DATA, locale, 'tools');
   if (!fs.existsSync(toolsDir)) continue;
 
-  const files = fs.readdirSync(toolsDir).filter(f => f.startsWith('converter-'));
+  const files = fs.readdirSync(toolsDir).filter((f) => f.startsWith('converter-'));
 
   for (const file of files) {
     stats.filesScanned++;

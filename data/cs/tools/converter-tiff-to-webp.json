@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory TIFF na lehke WebP. Masivni snizeni velikosti se zachovanim kvality.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Převést TIFF na WEBP", "Konverze TIFF do WEBP", "Převodník TIFF na WEBP zdarma"]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět TIFF na WebP?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) je bezeztrátový obrazový formát podporující miliony barev. Je široce používán pro tisk a archivaci.</p><p class=\"text-mid mb-4\">Převod TIFF na WebP (WebP) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">WebP podporuje alfa průhlednost. WebP nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) je průmyslový standard pro profesionální fotografii, tisk a archivaci. TIFF ukládá obrázky bezeztrátově s plnou barevnou hloubkou, vrstvami a metadaty.</p><p class=\"text-mid mb-4\">WebP zmenšuje velikost souboru o 30–35% oproti starším formátům bez viditelné ztráty kvality. Všechny moderní prohlížeče (Chrome, Firefox, Safari 14+, Edge) plně podporují WebP. Pro webové stránky to znamená rychlejší načítání a lepší umístění v Google.</p><p class=\"text-mid mb-4\">WebP drasticky zmenšuje TIFF soubory – často o více než 90%. Ideální pro optimalizaci profesionálních fotografií nebo vysokorozlišovacích skenů pro webové použití.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod TIFF na WEBP",
       "variant": "right"

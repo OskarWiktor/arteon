@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "WebP til PNG-konverter",
-      "alternateName": [],
+      "alternateName": ["Konvertér WEBP til PNG", "WEBP til PNG konvertering", "Gratis WEBP til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér WebP-billeder til tabsfrit PNG. Lokal konvertering.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere WebP til PNG?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til webbilleder.</p><p class=\"text-mid mb-4\">Konvertering af WebP til PNG (Portable Network Graphics) sikrer universel kompatibilitet med alle browsere og enheder.</p><p class=\"text-mid mb-4\">PNG understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer PNG alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP er et moderne billedformat udviklet af Google, der understøtter både tabsgivende og tabsfri komprimering. Det producerer markant mindre filer end PNG og JPEG ved sammenlignelig visuel kvalitet og understøttes af alle aktuelle browsere.</p><p class=\"text-mid mb-4\">PNG bevarer den fulde billedkvalitet uden komprimeringsartefakter og understøtter fuld alfa-gennemsigtighed. Dette tabsfrie format er ideelt til grafik, der skal viderebearbejdes, og billeder hvor gennemsigtige områder skal bevares.</p><p class=\"text-mid mb-4\">Konvertering fra WebP til PNG bevarer gennemsigtigheden og gemmer billedet tabsfrit. PNG er velegnet til videre redigering i grafikprogrammer og til platforme, der ikke understøtter WebP.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "WEBP til PNG konvertering",
       "variant": "right"

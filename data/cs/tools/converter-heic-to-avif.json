@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky HEIC z iPhonu na moderni format AVIF.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
+      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
+      "alternateName": ["Převést HEIC na AVIF", "Konverze HEIC do AVIF", "Převodník HEIC na AVIF zdarma"]
     },
     "howTo": {
       "name": "Jak převést HEIC na AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět HEIC na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro fotografie z Apple zařízení.</p><p class=\"text-mid mb-4\">Převod HEIC na AVIF (AV1 Image File Format) využívá moderní kompresi pro menší soubory bez ztráty kvality.</p><p class=\"text-mid mb-4\">AVIF podporuje alfa průhlednost. AVIF nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) je výchozí formát fotografií na zařízeních Apple od iOS 11. HEIC nabízí menší soubory než JPEG při srovnatelné kvalitě, ale není nativně podporován mimo ekosystém Apple – ani ve Windows, Androidu nebo na mnoha webových platformách.</p><p class=\"text-mid mb-4\">AVIF nabízí nejefektivnější kompresi ze všech aktuálních obrazových formátů a dokáže zmenšit velikost až o 50% oproti JPEG. Chrome, Firefox a Safari 16+ podporují AVIF. Je to optimální volba pro výkonnostně kritické webové projekty.</p><p class=\"text-mid mb-4\">AVIF nabízí podobnou efektivitu komprese jako HEIC, ale jako otevřený formát má mnohem širší podporu. Převod umožňuje využít moderní kompresi bez omezení ekosystému Apple.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Převod HEIC na AVIF",
       "variant": "right"

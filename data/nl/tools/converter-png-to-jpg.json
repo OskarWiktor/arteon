@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "PNG naar JPG converter",
-      "alternateName": [],
+      "alternateName": ["PNG naar JPG omzetten", "PNG naar JPG conversie", "Gratis PNG naar JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom PNG naar JPG converteren?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen met transparantie.</p><p class=\"text-mid mb-4\">Het converteren van PNG naar JPG (JPEG) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">JPG ondersteunt geen transparantie – transparante gebieden worden gevuld met een achtergrondkleur.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) is een verliesvrij beeldformaat dat miljoenen kleuren en volledige alfa-transparantie ondersteunt. PNG is bijzonder geschikt voor logo's, pictogrammen, schermafbeeldingen en afbeeldingen met scherpe randen of tekst.</p><p class=\"text-mid mb-4\">JPEG is het meest universele beeldformaat – compatibel met elk apparaat, elke browser en elk platform. De conversie naar JPG garandeert dat uw afbeeldingen overal probleemloos worden weergegeven: van e-mailbijlagen tot social-mediaposts.</p><p class=\"text-mid mb-4\">Bij de conversie van PNG naar JPG gaat de transparantie verloren – transparante gebieden worden gevuld met een achtergrondkleur. Daar staat tegenover dat u aanzienlijk kleinere bestanden krijgt, beter geschikt voor foto's en webcontent zonder transparantie.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "PNG naar JPG conversie",
       "variant": "right"

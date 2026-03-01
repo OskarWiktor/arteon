@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter iPhone HEIC-bilder til profesjonelt TIFF-format.",
-      "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"]
+      "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
+      "alternateName": ["Konverter HEIC til TIFF", "HEIC til TIFF konvertering", "Gratis HEIC til TIFF konverterer"]
     },
     "howTo": {
       "name": "Hvordan konvertere HEIC til TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere HEIC til TIFF?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er et tapsbringende bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av HEIC til TIFF (Tagged Image File Format) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">TIFF støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er standardformatet for bilder på Apple-enheter siden iOS 11. HEIC gir mindre filer enn JPEG ved sammenlignbar kvalitet, men støttes ikke nativt utenfor Apples økosystem – verken på Windows, Android eller mange nettplattformer.</p><p class=\"text-mid mb-4\">TIFF bevarer full bildekvalitet uten noe datatap og støtter lag og omfattende metadata. Som bransjestandard for trykk og arkivering er TIFF egnet for profesjonelle fotografer og trykkerier.</p><p class=\"text-mid mb-4\">Konverteringen omdanner iPhone-fotografiene dine til det profesjonelle TIFF-formatet. Ideelt for fotografer som vil arkivere mobilbilder i et tapsfritt format og viderebearbeide dem i Photoshop eller Lightroom.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "HEIC til TIFF konvertering",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "HEIC-til-TIFF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av HEIC til TIFF kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. TIFF gir utmerket komprimering med bevart visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">TIFF er bransjestandarden for profesjonell utskrift, arkivering og etterbehandling. Programmer som Adobe Photoshop, Lightroom og GIMP bruker TIFF for tapsfrie redigeringsarbeidsflyter. Konvertering til TIFF bevarer alle bildedata inkludert fargeprofiler, lag og metadata.</p><p class=\"text-mid\">For profesjonell fotografering og trykkproduksjon sikrer TIFF tapsfri kvalitet etter bransjestandarder. Lokal behandling sikrer full GDPR-samsvar.</p>"
     },
     {
       "type": "gap",

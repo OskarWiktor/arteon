@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert PNG graphics to AVIF with transparency support. Significantly smaller files.",
-      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PNG to AVIF", "PNG to AVIF conversion", "Free PNG to AVIF converter", "Change PNG to AVIF"]
     },
     "howTo": {
       "name": "How to convert PNG to AVIF",

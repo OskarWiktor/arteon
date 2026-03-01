@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Vektor-SVG-Grafiken in GIF-Rasterformat umwandeln.",
-      "featureList": ["Konvertierung zu GIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+      "featureList": ["Konvertierung zu GIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
+      "alternateName": ["SVG in GIF umwandeln", "SVG zu GIF konvertieren", "Kostenloser SVG-zu-GIF-Konverter"]
     },
     "howTo": {
       "name": "SVG zu GIF konvertieren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum SVG in GIF konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) ist ein verlustfreies Bildformat, das auf Vektorgrafiken basiert. Es wird häufig für Logos und Icons verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von SVG in GIF (Graphics Interchange Format) bietet mehr Flexibilität bei der Verwendung Ihrer Bilder.</p><p class=\"text-mid mb-4\">GIF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt GIF die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) ist ein XML-basiertes Vektorformat für zweidimensionale Grafiken. SVG-Dateien sind auflösungsunabhängig und bleiben bei jeder Größe scharf – ideal für Logos, Icons und Illustrationen.</p><p class=\"text-mid mb-4\">GIF ist das Standardformat für kurze Animationen, Memes und einfache Grafiken mit begrenzter Farbpalette. Mit universeller Browser-Unterstützung eignet sich GIF besonders für animierte Inhalte in sozialen Medien, Messenger-Diensten und E-Mail-Signaturen.</p><p class=\"text-mid mb-4\">Die Konvertierung wandelt Ihr Vektorbild in ein Pixelbild mit maximal 256 Farben um. GIF eignet sich für einfache Icons und animierte Grafiken, nicht aber für komplexe Illustrationen mit vielen Farben oder Farbverläufen.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "SVG-zu-GIF-Konvertierung",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-zu-GIF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von SVG in GIF kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet GIF maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Obwohl GIF nicht das effizienteste Format für statische Bilder ist, bleibt es unverzichtbar für einfache Animationen, Memes und Grafiken mit begrenzter Farbpalette. Das Limit von 256 Farben macht GIF weniger geeignet für Fotos, aber ideal für Icons, Logos und animierte Inhalte in sozialen Medien und Messenger-Diensten.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet GIF maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
     },
     {
       "type": "gap",

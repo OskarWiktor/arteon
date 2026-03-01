@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Převodník SVG na PNG",
-      "alternateName": [],
+      "alternateName": ["Převést SVG na PNG", "Konverze SVG do PNG", "Převodník SVG na PNG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět SVG na PNG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) je bezeztrátový obrazový formát založený na vektorové grafice. Je široce používán pro loga a ikony.</p><p class=\"text-mid mb-4\">Převod SVG na PNG (Portable Network Graphics) nabízí více flexibility.</p><p class=\"text-mid mb-4\">PNG podporuje alfa průhlednost. Jako bezeztrátový formát zachovává PNG veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) je vektorový formát založený na XML. SVG soubory jsou nezávislé na rozlišení a zůstávají ostré v jakékoli velikosti – ideální pro loga, ikony a ilustrace.</p><p class=\"text-mid mb-4\">PNG zachovává plnou kvalitu obrazu bez kompresních artefaktů a podporuje plnou alfa transparenci. Tento bezeztrátový formát je ideální pro grafiku určenou k dalšímu zpracování a pro obrázky, kde musí zůstat zachovány průhledné oblasti.</p><p class=\"text-mid mb-4\">Rasterizace SVG na PNG převádí vektorový obrázek na pixelový se zachováním transparence. PNG je vhodný pro sociální sítě a komunikátory nepodporující SVG.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod SVG na PNG",
       "variant": "right"

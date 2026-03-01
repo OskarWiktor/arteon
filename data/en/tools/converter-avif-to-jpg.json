@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert AVIF files to universal JPG. Compatible with every app and platform.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert AVIF to JPG", "AVIF to JPG conversion", "Free AVIF to JPG converter", "Change AVIF to JPG"]
     },
     "howTo": {
       "name": "AVIF to JPG",

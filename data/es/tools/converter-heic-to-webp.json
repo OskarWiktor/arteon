@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte fotos HEIC de iPhone a WebP ligero. Menor tamano, carga mas rapida.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convertir HEIC a WEBP", "Conversión de HEIC a WEBP", "Convertidor HEIC a WEBP gratis"]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir HEIC a WebP?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) es un formato de imagen con pérdida que soporta millones de colores. Se utiliza ampliamente para fotos de dispositivos Apple.</p><p class=\"text-mid mb-4\">Convertir HEIC a WebP (WebP) aprovecha la tecnología de compresión moderna para archivos más pequeños sin pérdida de calidad.</p><p class=\"text-mid mb-4\">WebP soporta transparencia alfa. WebP ofrece compresión con y sin pérdida.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) es el formato predeterminado para fotos en dispositivos Apple desde iOS 11. HEIC ofrece archivos más ligeros que JPEG con calidad comparable, pero no es compatible de forma nativa fuera del ecosistema Apple: ni en Windows, ni en Android, ni en muchas plataformas web.</p><p class=\"text-mid mb-4\">WebP reduce el tamaño de archivo entre un 30 y un 35% respecto a formatos anteriores, sin pérdida de calidad visible. Todos los navegadores modernos (Chrome, Firefox, Safari 14+, Edge) son totalmente compatibles con WebP. Para sitios web, esto significa tiempos de carga más rápidos, mejores Core Web Vitals y un mejor posicionamiento en Google.</p><p class=\"text-mid mb-4\">WebP ofrece un excelente equilibrio entre tamaño de archivo y calidad. La conversión de HEIC a WebP produce archivos compactos compatibles con todos los navegadores modernos, ideal para sitios web y plataformas en línea.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Conversión de HEIC a WEBP",
       "variant": "right"

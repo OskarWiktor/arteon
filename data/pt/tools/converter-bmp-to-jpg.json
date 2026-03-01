@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Conversor BMP para JPG",
-      "alternateName": [],
+      "alternateName": ["Converter BMP para JPG", "Conversão de BMP para JPG", "Conversor BMP para JPG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta ficheiros BMP para JPG leve. Redução drástica do tamanho.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter BMP para JPG?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) é um formato de imagem sem perda que suporta milhões de cores. É amplamente utilizado para imagens sem compressão.</p><p class=\"text-mid mb-4\">Converter BMP para JPG (JPEG) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">JPG não suporta transparência – as áreas transparentes serão preenchidas com uma cor de fundo. Como formato com perda, JPG atinge excelentes rácios de compressão.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Bitmap (BMP) é um formato de imagem antigo do Windows que armazena dados de pixels sem compressão. Os ficheiros BMP são extremamente grandes e inadequados para utilização moderna na web ou em dispositivos móveis.</p><p class=\"text-mid mb-4\">O JPEG é o formato de imagem mais universal – compatível com todos os dispositivos, navegadores e plataformas. A conversão para JPG garante que as suas imagens podem ser visualizadas em qualquer lugar: desde anexos de e-mail a publicações nas redes sociais.</p><p class=\"text-mid mb-4\">Os ficheiros BMP não são comprimidos e são extremamente grandes. A conversão para JPEG reduz drasticamente o tamanho (frequentemente mais de 95%) e produz ficheiros universalmente compatíveis.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de BMP para JPG",
       "variant": "right"

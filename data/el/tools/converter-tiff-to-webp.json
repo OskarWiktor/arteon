@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε αρχεια TIFF σε ελαφρυ WebP. Τεραστια μειωση μεγεθους με διατηρηση ποιοτητας.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Μετατροπή TIFF σε WEBP", "Μετατροπέας TIFF σε WEBP", "Δωρεάν μετατροπέας TIFF σε WEBP"]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε TIFF σε WebP;",
-      "html": "<p class=\"text-mid mb-4\">Το Tagged Image File Format (TIFF) είναι ένα μορφότυπο εικόνας χωρίς απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή TIFF σε WebP (WebP) προσφέρει περισσότερη ευελιξία.</p><p class=\"text-mid mb-4\">Το WebP υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το Tagged Image File Format (TIFF) είναι το βιομηχανικό πρότυπο για επαγγελματική φωτογραφία, εκτύπωση και αρχειοθέτηση. Το TIFF αποθηκεύει εικόνες χωρίς απώλειες με πλήρες βάθος χρώματος, επίπεδα και μεταδεδομένα.</p><p class=\"text-mid mb-4\">Το WebP μειώνει το μέγεθος αρχείου κατά 30–35% σε σύγκριση με παλαιότερες μορφές, χωρίς ορατή απώλεια ποιότητας. Όλοι οι σύγχρονοι περιηγητές (Chrome, Firefox, Safari 14+, Edge) υποστηρίζουν πλήρως το WebP. Για ιστοσελίδες αυτό σημαίνει ταχύτερους χρόνους φόρτωσης και καλύτερη κατάταξη στο Google.</p><p class=\"text-mid mb-4\">Το WebP μειώνει δραστικά τα TIFF αρχεία – συχνά πάνω από 90%. Ιδανικό για βελτιστοποίηση επαγγελματικών φωτογραφιών για χρήση στο web.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή TIFF σε WEBP",
       "variant": "right"

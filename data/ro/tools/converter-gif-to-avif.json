@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteste primul cadru GIF in imagine AVIF statica cu compresie excelenta.",
-      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
+      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie GIF în AVIF", "Convertor GIF în AVIF", "Convertor gratuit GIF în AVIF"]
     },
     "howTo": {
       "name": "Cum să convertiți GIF în AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți GIF în AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia GIF în AVIF (AV1 Image File Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">AVIF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) acceptă animații și o paletă de maximum 256 de culori. GIF este utilizat pe scară largă pentru conținut animat în rețelele sociale, dar limitarea de culori îl face nepotrivit pentru imagini fotorealiste.</p><p class=\"text-mid mb-4\">AVIF oferă cea mai eficientă compresie dintre toate formatele de imagine actuale, reducând dimensiunea cu până la 50% față de JPEG. Chrome, Firefox și Safari 16+ acceptă AVIF. Este alegerea optimă pentru proiecte web critice în ceea ce privește performanța.</p><p class=\"text-mid mb-4\">AVIF oferă compresie superioară față de GIF și acceptă milioane de culori în loc de doar 256. Ideal pentru modernizarea graficilor GIF vechi pe site-uri web.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversie GIF în AVIF",
       "variant": "right"

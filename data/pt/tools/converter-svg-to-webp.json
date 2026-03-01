@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta graficos SVG para WebP leve. Ideal para sites e redes sociais.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Converter SVG para WEBP", "Conversão de SVG para WEBP", "Conversor SVG para WEBP grátis"]
     },
     "howTo": {
       "name": "SVG to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter SVG para WebP?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) é um formato de imagem sem perda baseado em gráficos vetoriais. É amplamente utilizado para logotipos e ícones.</p><p class=\"text-mid mb-4\">Converter SVG para WebP (WebP) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">WebP suporta transparência alfa. WebP oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Scalable Vector Graphics (SVG) é um formato vetorial baseado em XML. Os ficheiros SVG são independentes da resolução e mantêm-se nítidos em qualquer tamanho – ideais para logótipos, ícones e ilustrações.</p><p class=\"text-mid mb-4\">O WebP reduz o tamanho do ficheiro em 30–35% em relação a formatos anteriores, sem perda de qualidade visível. Todos os navegadores modernos (Chrome, Firefox, Safari 14+, Edge) suportam totalmente o WebP. Para sites web, isto significa tempos de carregamento mais rápidos e melhor posicionamento no Google.</p><p class=\"text-mid mb-4\">A conversão produz imagens de pixels compactas a partir de gráficos vetoriais no formato WebP. O WebP é ideal para sites web onde ficheiros leves e tempos de carregamento rápidos são determinantes.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de SVG para WEBP",
       "variant": "right"

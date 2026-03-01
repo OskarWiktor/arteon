@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les graphiques PNG en format TIFF professionnel.",
-      "featureList": ["Conversion en TIFF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+      "featureList": ["Conversion en TIFF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
+      "alternateName": ["Convertir PNG en TIFF", "Conversion PNG vers TIFF", "Convertisseur PNG en TIFF gratuit"]
     },
     "howTo": {
       "name": "Comment convertir PNG en TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir PNG en TIFF ?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) est un format d’image sans perte prenant en charge des millions de couleurs. Il est largement utilisé pour les graphiques avec transparence.</p><p class=\"text-mid mb-4\">La conversion de PNG en TIFF (Tagged Image File Format) offre plus de flexibilité.</p><p class=\"text-mid mb-4\">TIFF prend en charge la transparence alpha. En tant que format sans perte, TIFF préserve l’intégralité des données de l’image.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Le Portable Network Graphics (PNG) est un format d'image sans perte qui prend en charge des millions de couleurs et la transparence alpha complète. Le PNG est particulièrement adapté aux logos, icônes, captures d'écran et graphiques comportant des bords nets ou du texte – partout où chaque pixel compte.</p><p class=\"text-mid mb-4\">Le TIFF préserve la qualité d'image complète sans aucune perte de données et prend en charge les calques ainsi que des métadonnées étendues. Standard de l'industrie pour l'impression et l'archivage, le TIFF convient aux photographes professionnels, aux imprimeurs et à tous ceux qui souhaitent conserver des images en qualité maximale.</p><p class=\"text-mid mb-4\">La conversion préserve la qualité d'image complète et la transparence du PNG original au format TIFF. Le TIFF est particulièrement adapté au traitement ultérieur dans des logiciels comme Photoshop ou à l'impression professionnelle. Notez que les fichiers TIFF sont nettement plus volumineux que les PNG.</p><p class=\"text-mid\">Ce convertisseur fonctionne entièrement en local dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléversement, aucun serveur, aucune inscription. Entièrement conforme au RGPD et gratuit sans aucune limitation.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversion PNG en TIFF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion PNG vers TIFF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de PNG en TIFF peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Le TIFF est le standard de l'industrie pour l'impression professionnelle, l'archivage et la post-production. Des logiciels comme Adobe Photoshop, Lightroom et GIMP utilisent le TIFF pour des flux de travail d'édition sans perte. La conversion en TIFF préserve toutes les données de l'image, y compris les profils colorimétriques, les calques et les métadonnées.</p><p class=\"text-mid\">Pour la photographie professionnelle et la production d'impression, le TIFF garantit une qualité sans perte conforme aux standards de l'industrie. Le traitement local garantit la conformité RGPD.</p>"
     },
     {
       "type": "gap",

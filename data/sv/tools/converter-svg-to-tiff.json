@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera vektor-SVG-grafik till hogkvalitativt TIFF-raster.",
-      "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"]
+      "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
+      "alternateName": ["Konvertera SVG till TIFF", "SVG till TIFF konvertering", "Gratis SVG till TIFF konverterare"]
     },
     "howTo": {
       "name": "Hur konverterar man SVG till TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera SVG till TIFF?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) är ett förlustfritt bildformat baserat på vektorgrafik. Det används i stor utsträckning för logotyper och ikoner.</p><p class=\"text-mid mb-4\">Konvertering av SVG till TIFF (Tagged Image File Format) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">TIFF stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) är ett XML-baserat vektorformat för tvådimensionell grafik. SVG-filer är upplösningsoberoende och förblir skarpa i alla storlekar – idealiska för logotyper, ikoner och illustrationer.</p><p class=\"text-mid mb-4\">TIFF bevarar full bildkvalitet utan någon dataförlust och stöder lager och omfattande metadata. Som branschstandard för tryck och arkivering är TIFF lämpligt för professionella fotografer och tryckerier.</p><p class=\"text-mid mb-4\">Rastrering från SVG till TIFF producerar en förlustfri pixelbild i högsta kvalitet. Idealiskt för professionellt tryck av vektorgrafik när en fast pixelupplösning behövs.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "SVG till TIFF konvertering",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-till-TIFF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera SVG till TIFF kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. TIFF ger utmärkt komprimering med bibehållen visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">TIFF är branschstandarden för professionellt tryck, arkivering och efterbearbetning. Program som Adobe Photoshop, Lightroom och GIMP använder TIFF för förlustfria redigeringsarbetsflöden. Konvertering till TIFF bevarar all bilddata inklusive färgprofiler, lager och metadata.</p><p class=\"text-mid\">För professionell fotografi och tryckproduktion säkerställer TIFF förlustfri kvalitet enligt branschstandarder. Lokal behandling säkerställer full GDPR-efterlevnad.</p>"
     },
     {
       "type": "gap",

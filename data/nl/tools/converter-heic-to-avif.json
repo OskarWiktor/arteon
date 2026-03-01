@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer iPhone HEIC-foto\\'s naar modern AVIF-formaat.",
-      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
+      "alternateName": ["HEIC naar AVIF omzetten", "HEIC naar AVIF conversie", "Gratis HEIC naar AVIF converter"]
     },
     "howTo": {
       "name": "HEIC naar AVIF converteren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom HEIC naar AVIF converteren?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van HEIC naar AVIF (AV1 Image File Format) maakt gebruik van moderne compressie voor kleinere bestanden zonder kwaliteitsverlies.</p><p class=\"text-mid mb-4\">AVIF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is het standaardformaat voor foto's op Apple-apparaten sinds iOS 11. HEIC biedt kleinere bestanden dan JPEG bij vergelijkbare kwaliteit, maar wordt buiten het Apple-ecosysteem niet standaard ondersteund.</p><p class=\"text-mid mb-4\">AVIF biedt de meest efficiënte compressie van alle huidige beeldformaten en kan de bestandsgrootte tot 50% verminderen ten opzichte van JPEG. Chrome, Firefox en Safari 16+ ondersteunen AVIF. Het is de optimale keuze voor prestatiekritische webprojecten.</p><p class=\"text-mid mb-4\">AVIF biedt vergelijkbare compressie-efficiëntie als HEIC, maar wordt als open formaat veel breder ondersteund. De conversie maakt moderne compressie mogelijk zonder de beperkingen van het Apple-ecosysteem.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "HEIC naar AVIF conversie",
       "variant": "right"

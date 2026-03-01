@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Převodník PNG na WebP",
-      "alternateName": [],
+      "alternateName": ["Převést PNG na WEBP", "Konverze PNG do WEBP", "Převodník PNG na WEBP zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte grafiku PNG na WebP. Menší soubory se zachováním průhlednosti.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět PNG na WebP?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) je bezeztrátový obrazový formát podporující miliony barev. Je široce používán pro grafiku s průhledností.</p><p class=\"text-mid mb-4\">Převod PNG na WebP (WebP) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">WebP podporuje alfa průhlednost. WebP nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) je bezeztrátový obrazový formát podporující miliony barev a plnou alfa transparenci. PNG je obzvláště vhodný pro loga, ikony, snímky obrazovky a grafiku s ostrými hranami nebo textem.</p><p class=\"text-mid mb-4\">WebP zmenšuje velikost souboru o 30–35% oproti starším formátům bez viditelné ztráty kvality. Všechny moderní prohlížeče (Chrome, Firefox, Safari 14+, Edge) plně podporují WebP. Pro webové stránky to znamená rychlejší načítání a lepší umístění v Google.</p><p class=\"text-mid mb-4\">WebP podporuje alfa transparenci stejně jako PNG – všechny průhledné oblasti vašeho obrázku zůstanou plně zachovány. Můžete si vybrat mezi ztrátovou a bezeztrátovou kompresí pro optimální poměr velikosti a kvality.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod PNG na WEBP",
       "variant": "right"

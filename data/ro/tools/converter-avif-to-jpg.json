@@ -28,23 +28,24 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere AVIF în JPG universal. Compatibil cu orice program si platforma.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversie AVIF în JPG", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie AVIF în JPG", "Convertor AVIF în JPG", "Convertor gratuit AVIF în JPG"]
     },
     "howTo": {
-      "name": "AVIF to JPG",
+      "name": "Cum să convertiți AVIF în JPG",
       "description": "Convertește fișiere AVIF în JPG universal. Compatibil cu orice program si platforma.",
       "steps": [
         {
-          "name": "Add AVIF files",
-          "text": "Drag AVIF files onto the drop zone or click to select."
+          "name": "Adăugați fișiere AVIF",
+          "text": "Trageți fișierele AVIF în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv."
         },
         {
-          "name": "Set JPG quality",
-          "text": "Adjust quality slider (60-95%). Default 85%."
+          "name": "Setați calitatea JPG",
+          "text": "Ajustați glisorul de calitate (60–95%). Valoarea implicită este 85%."
         },
         {
-          "name": "Download JPG",
-          "text": "Download files individually or all at once."
+          "name": "Descărcați JPG",
+          "text": "Descărcați fișierele convertite individual sau pe toate odată."
         }
       ]
     }
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți AVIF în JPG?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia AVIF în JPG (JPEG) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">JPG nu suportă transparența – zonele transparente vor fi umplute cu o culoare de fundal.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) este un format de imagine de nouă generație bazat pe codecul video AV1. AVIF oferă cea mai bună compresie disponibilă – fișiere cu până la 50% mai mici decât WebP la calitate vizuală comparabilă.</p><p class=\"text-mid mb-4\">JPEG este cel mai universal format de imagine – compatibil cu orice dispozitiv, browser și platformă. Conversia în JPG asigură că imaginile dumneavoastră pot fi vizualizate oriunde fără probleme: de la atașamente email la postări pe rețele sociale.</p><p class=\"text-mid mb-4\">Conversia din AVIF în JPEG asigură compatibilitate maximă. JPG este acceptat de toate dispozitivele – necesar când destinatarii sau platformele nu acceptă încă formatul AVIF.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie AVIF în JPG",
       "variant": "right"

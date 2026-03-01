@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "BMP til PNG-konverter",
-      "alternateName": [],
+      "alternateName": ["Konvertér BMP til PNG", "BMP til PNG konvertering", "Gratis BMP til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér BMP-billeder til tabsfrit PNG. Kvalitet bevaret, størrelse reduceret.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere BMP til PNG?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) er et tabsfrit billedformat der understøtter millioner farver. Det bruges bredt til ukomprimerede billeder.</p><p class=\"text-mid mb-4\">Konvertering af BMP til PNG (Portable Network Graphics) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">PNG understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer PNG alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) er et ældre Windows-billedformat, der lagrer pixeldata uden komprimering. BMP-filer er derfor ekstremt store og uegnede til moderne brug på nettet eller mobile enheder.</p><p class=\"text-mid mb-4\">PNG bevarer den fulde billedkvalitet uden komprimeringsartefakter og understøtter fuld alfa-gennemsigtighed. Dette tabsfrie format er ideelt til grafik, der skal viderebearbejdes, og billeder hvor gennemsigtige områder skal bevares.</p><p class=\"text-mid mb-4\">Konvertering fra BMP til PNG reducerer størrelsen markant gennem tabsfri komprimering. I modsætning til JPEG bevares den fulde kvalitet – ideelt til grafik med skarpe kanter og tekst.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "BMP til PNG konvertering",
       "variant": "right"

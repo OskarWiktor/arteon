@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer SVG-afbeeldingen naar lichtgewicht WebP. Ideaal voor websites en social media.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["SVG naar WEBP omzetten", "SVG naar WEBP conversie", "Gratis SVG naar WEBP converter"]
     },
     "howTo": {
       "name": "SVG to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom SVG naar WebP converteren?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is een lossless afbeeldingsformaat gebaseerd op vectorafbeeldingen. Het wordt veel gebruikt voor logo's en pictogrammen.</p><p class=\"text-mid mb-4\">Het converteren van SVG naar WebP (WebP) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">WebP ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is een XML-gebaseerd vectorformaat voor tweedimensionale afbeeldingen. SVG-bestanden zijn resolutieonafhankelijk en blijven scherp op elke grootte – ideaal voor logo's, pictogrammen en illustraties.</p><p class=\"text-mid mb-4\">WebP vermindert de bestandsgrootte met 30–35% ten opzichte van oudere formaten, zonder zichtbaar kwaliteitsverlies. Alle moderne browsers (Chrome, Firefox, Safari 14+, Edge) ondersteunen WebP volledig. Voor websites betekent dit snellere laadtijden en een betere Google-ranking.</p><p class=\"text-mid mb-4\">De conversie produceert compacte pixelafbeeldingen van uw vectorgrafieken in WebP-formaat. WebP is ideaal voor websites waar kleine bestanden en snelle laadtijden bepalend zijn.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "SVG naar WEBP conversie",
       "variant": "right"

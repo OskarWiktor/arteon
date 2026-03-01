@@ -28,23 +28,24 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici.",
-      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversie AVIF în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie AVIF în WEBP", "Convertor AVIF în WEBP", "Convertor gratuit AVIF în WEBP"]
     },
     "howTo": {
       "name": "AVIF to WebP",
       "description": "Convertește fișiere AVIF în WebP. Compatibilitate larga la dimensiuni mici.",
       "steps": [
         {
-          "name": "Add AVIF files",
-          "text": "Drag AVIF files onto the drop zone or click to select."
+          "name": "Adăugați fișiere AVIF",
+          "text": "Trageți fișierele AVIF în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv."
         },
         {
-          "name": "Set WebP quality",
-          "text": "Adjust quality slider (60-95%). Default 80%."
+          "name": "Setați calitatea WEBP",
+          "text": "Ajustați glisorul de calitate (60–95%). Valoarea implicită este 85%."
         },
         {
-          "name": "Download WebP",
-          "text": "Download files individually or all at once."
+          "name": "Descărcați WEBP",
+          "text": "Descărcați fișierele convertite individual sau pe toate odată."
         }
       ]
     }
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți AVIF în WebP?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia AVIF în WebP (WebP) folosește compresia modernă pentru fișiere mai mici fără pierderea calității.</p><p class=\"text-mid mb-4\">WebP suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) este un format de imagine de nouă generație bazat pe codecul video AV1. AVIF oferă cea mai bună compresie disponibilă – fișiere cu până la 50% mai mici decât WebP la calitate vizuală comparabilă.</p><p class=\"text-mid mb-4\">WebP reduce dimensiunea fișierului cu 30–35% față de formatele mai vechi, fără pierderi vizibile de calitate. Toate browserele moderne (Chrome, Firefox, Safari 14+, Edge) acceptă pe deplin WebP. Pentru site-uri web, aceasta înseamnă timpi de încărcare mai rapizi și o poziționare mai bună în Google.</p><p class=\"text-mid mb-4\">WebP oferă compatibilitate mai largă cu browserele decât AVIF la compresie bună. Conversia are sens când platforma țintă acceptă WebP dar nu încă AVIF – un scenariu frecvent cu browsere și CMS-uri mai vechi.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie AVIF în WEBP",
       "variant": "right"

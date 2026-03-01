@@ -28,23 +28,24 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversie HEIC în JPG", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie HEIC în JPG", "Convertor HEIC în JPG", "Convertor gratuit HEIC în JPG"]
     },
     "howTo": {
-      "name": "HEIC to JPG",
+      "name": "Cum să convertiți HEIC în JPG",
       "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload.",
       "steps": [
         {
-          "name": "Add HEIC files",
-          "text": "Drag HEIC files onto the drop zone or click to select."
+          "name": "Adăugați fișiere HEIC",
+          "text": "Trageți fișierele HEIC în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv."
         },
         {
-          "name": "Set JPG quality",
-          "text": "Adjust quality slider (60-95%). Default 85%."
+          "name": "Setați calitatea JPG",
+          "text": "Ajustați glisorul de calitate (60–95%). Valoarea implicită este 85%."
         },
         {
-          "name": "Download JPG",
-          "text": "Download files individually or all at once."
+          "name": "Descărcați JPG",
+          "text": "Descărcați fișierele convertite individual sau pe toate odată."
         }
       ]
     }
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți HEIC în JPG?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia HEIC în JPG (JPEG) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">JPG nu suportă transparența – zonele transparente vor fi umplute cu o culoare de fundal.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) este formatul implicit pentru fotografii pe dispozitivele Apple începând cu iOS 11. HEIC oferă fișiere mai mici decât JPEG la calitate comparabilă, dar nu este acceptat nativ în afara ecosistemului Apple – nici pe Windows, Android sau multe platforme web.</p><p class=\"text-mid mb-4\">JPEG este cel mai universal format de imagine – compatibil cu orice dispozitiv, browser și platformă. Conversia în JPG asigură că imaginile dumneavoastră pot fi vizualizate oriunde fără probleme: de la atașamente email la postări pe rețele sociale.</p><p class=\"text-mid mb-4\">Conversia din HEIC în JPG transformă formatul proprietar Apple în formatul JPEG universal compatibil. Transparența și informațiile HDR se pierd, dar calitatea imaginii rămâne practic identică cu originalul la setări de la 85%.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie HEIC în JPG",
       "variant": "right"

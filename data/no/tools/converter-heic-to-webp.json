@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter iPhone HEIC-bilder til lett WebP. Mindre storrelse, raskere lasting.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konverter HEIC til WEBP", "HEIC til WEBP konvertering", "Gratis HEIC til WEBP konverterer"]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere HEIC til WebP?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er et tapsbringende bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av HEIC til WebP (WebP) utnytter moderne komprimering for mindre filer uten kvalitetstap.</p><p class=\"text-mid mb-4\">WebP støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er standardformatet for bilder på Apple-enheter siden iOS 11. HEIC gir mindre filer enn JPEG ved sammenlignbar kvalitet, men støttes ikke nativt utenfor Apples økosystem – verken på Windows, Android eller mange nettplattformer.</p><p class=\"text-mid mb-4\">WebP reduserer filstørrelsen med 30–35% sammenlignet med eldre formater uten synlig kvalitetstap. Alle moderne nettlesere (Chrome, Firefox, Safari 14+, Edge) støtter WebP fullt ut. For nettsider betyr dette raskere lastetider og bedre Google-plassering.</p><p class=\"text-mid mb-4\">WebP tilbyr en utmerket balanse mellom filstørrelse og kvalitet. Konvertering fra HEIC til WebP produserer kompakte filer støttet av alle moderne nettlesere – ideelt for nettsider.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "HEIC til WEBP konvertering",
       "variant": "right"

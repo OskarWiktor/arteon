@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Conversor GIF para PNG",
-      "alternateName": [],
+      "alternateName": ["Converter GIF para PNG", "Conversão de GIF para PNG", "Conversor GIF para PNG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exporte o primeiro fotograma de um GIF como PNG estático. Sem perdas de qualidade.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter GIF para PNG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) é um formato de imagem sem perda que suporta 256 de cores. É amplamente utilizado para animações simples.</p><p class=\"text-mid mb-4\">Converter GIF para PNG (Portable Network Graphics) oferece mais flexibilidade.</p><p class=\"text-mid mb-4\">PNG suporta transparência alfa. Como formato sem perda, PNG preserva todos os dados da imagem.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Graphics Interchange Format (GIF) suporta animações e uma paleta de no máximo 256 cores. O GIF é muito utilizado para conteúdos animados nas redes sociais, mas a limitação de cores torna-o inadequado para imagens fotorrealistas.</p><p class=\"text-mid mb-4\">O PNG preserva a qualidade de imagem completa sem artefactos de compressão e suporta transparência alfa completa. Este formato sem perdas é ideal para gráficos que precisam de ser editados posteriormente.</p><p class=\"text-mid mb-4\">A conversão preserva a qualidade sem perdas e suporta transparência binária. Para GIFs animados, apenas o primeiro frame é convertido. O PNG é adequado para a reedição de gráficos GIF.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de GIF para PNG",
       "variant": "right"

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter iPhone HEIC-bilder til universell JPG. Ingen registrering, ingen opplasting.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konverter HEIC til JPG", "HEIC til JPG konvertering", "Gratis HEIC til JPG konverterer"]
     },
     "howTo": {
       "name": "HEIC to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere HEIC til JPG?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er et tapsbringende bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av HEIC til JPG (JPEG) sikrer universell kompatibilitet med alle nettlesere og enheter.</p><p class=\"text-mid mb-4\">JPG støtter ikke gjennomsiktighet – gjennomsiktige områder fylles med en bakgrunnsfarge.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er standardformatet for bilder på Apple-enheter siden iOS 11. HEIC gir mindre filer enn JPEG ved sammenlignbar kvalitet, men støttes ikke nativt utenfor Apples økosystem – verken på Windows, Android eller mange nettplattformer.</p><p class=\"text-mid mb-4\">JPEG er det mest universelle bildeformatet – kompatibelt med alle enheter, nettlesere og plattformer. Konvertering til JPG sikrer at bildene dine vises problemfritt overalt: fra e-postvedlegg til innlegg i sosiale medier.</p><p class=\"text-mid mb-4\">Konvertering fra HEIC til JPG omdanner Apples proprietære format til det universelt kompatible JPEG-formatet. Eventuell gjennomsiktighet og HDR-informasjon mistes, men bildekvaliteten forblir praktisk talt identisk med originalen ved innstillinger fra 85%.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "HEIC til JPG konvertering",
       "variant": "right"

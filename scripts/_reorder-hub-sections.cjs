@@ -13,7 +13,7 @@ const converterTitles = {
   en: 'Image format converters',
   de: 'Bildformat-Konverter',
   es: 'Convertidores de formatos de imagen',
-  fr: 'Convertisseurs de formats d\'image',
+  fr: "Convertisseurs de formats d'image",
   pt: 'Conversores de formatos de imagem',
   it: 'Convertitori di formati immagine',
   ro: 'Convertoare de formate imagine',
@@ -47,10 +47,7 @@ const hubs = [
 ];
 
 // 9 most popular converter toolKeys
-const top9Keys = [
-  'jpgToWebpSimple', 'pngToJpg', 'webpToJpg', 'pngToWebpSimple',
-  'jpgToPng', 'webpToPng', 'heicToJpg', 'svgToPng', 'jpgToAvif',
-];
+const top9Keys = ['jpgToWebpSimple', 'pngToJpg', 'webpToJpg', 'pngToWebpSimple', 'jpgToPng', 'webpToPng', 'heicToJpg', 'svgToPng', 'jpgToAvif'];
 
 function findSectionSteps(code, title) {
   // Find the SectionSteps that contains the converter title
@@ -70,7 +67,7 @@ function findSectionSteps(code, title) {
   const closePattern = /\n\s*\/>/g;
   let searchFrom = titleIdx;
   // We need to find the matching />. Count < and > isn't reliable in JSX.
-  // Instead find `]}` followed by whitespace and `/>` 
+  // Instead find `]}` followed by whitespace and `/>`
   const closingRegex = /\]\}\s*\n\s*\/>/g;
   closingRegex.lastIndex = titleIdx;
   let match;
@@ -132,7 +129,10 @@ function limitTo9Items(sectionCode) {
 
 for (const hub of hubs) {
   const filePath = path.join(appDir, hub.path);
-  if (!fs.existsSync(filePath)) { console.log('SKIP:', hub.locale); continue; }
+  if (!fs.existsSync(filePath)) {
+    console.log('SKIP:', hub.locale);
+    continue;
+  }
 
   let code = fs.readFileSync(filePath, 'utf8');
   const title = converterTitles[hub.locale];
@@ -161,7 +161,7 @@ for (const hub of hubs) {
   }
 
   const converterBlock = code.slice(extractStart, extractEnd);
-  
+
   // Remove from current position
   code = code.slice(0, extractStart) + code.slice(extractEnd);
 

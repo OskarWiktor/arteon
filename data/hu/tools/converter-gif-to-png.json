@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "GIF PNG konverter",
-      "alternateName": [],
+      "alternateName": ["GIF konvertálása PNG formátumba", "GIF–PNG átalakítás", "Ingyenes GIF–PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportálja a GIF első képkockáját statikus PNG-ként. Minőségveszteség nélkül.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes GIF-t PNG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Graphics Interchange Format (GIF) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A GIF konvertálása PNG-re (Portable Network Graphics) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A PNG támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Graphics Interchange Format (GIF) animációkat és legfeljebb 256 színű palettát támogat. A GIF széles körben használt animált tartalmakhoz a közösségi médiában, de a színkorlátozás miatt nem alkalmas fotórealisztikus képekhez.</p><p class=\"text-mid mb-4\">A PNG megőrzi a teljes képminőséget tömörítési műtermékek nélkül, és támogatja a teljes alfa-átlátszóságot. Ez a veszteségmentes formátum ideális a további szerkesztésre szánt grafikákhoz és az átlátszó területeket megőrzendő képekhez.</p><p class=\"text-mid mb-4\">A konvertálás veszteségmentesen megőrzi a minőséget és támogatja a bináris átlátszóságot. Animált GIF-eknél csak az első képkocka konvertálódik. A PNG alkalmas GIF-grafikák további szerkesztéséhez.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "GIF konvertálás PNG formátumba",
       "variant": "right"

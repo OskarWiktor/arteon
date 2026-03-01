@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna TIFF-tiedostot kevyeen WebP-muotoon. Valtava kokovahenema laadun sailyttaen.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Muunna TIFF WEBP-muotoon", "TIFF:n muunto WEBP-muotoon", "Ilmainen TIFF–WEBP-muunnin"]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa TIFF WebP-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) on häviötön kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">TIFF:n muuntaminen WebP-muotoon (WebP) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">WebP tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) on alan standardi ammattimaiseen valokuvaukseen, tulostukseen ja arkistointiin. TIFF tallentaa kuvat häviöttömästi täydellä värisyvyydellä, tasoilla ja metatiedoilla.</p><p class=\"text-mid mb-4\">WebP pienentää tiedostokokoa 30–35% vanhempiin muotoihin verrattuna ilman näkyvää laadun heikkenemistä. Kaikki nykyaikaiset selaimet (Chrome, Firefox, Safari 14+, Edge) tukevat WebP:tä täysin. Verkkosivuille tämä tarkoittaa nopeampia latausaikoja ja parempaa Google-sijoitusta.</p><p class=\"text-mid mb-4\">WebP pienentää TIFF-tiedostojasi dramaattisesti – usein yli 90%. Ihanteellinen ammattimaisten valokuvien tai korkearesoluutioisten skannausten optimointiin verkkokäyttöön.</p><p class=\"text-mid\">Tämä muunnin toimii kokonaan paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröitymistä. Täysin GDPR-yhteensopiva ja maksuton ilman mitään rajoituksia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "TIFF-WEBP-muunnos",
       "variant": "right"
@@ -139,23 +140,23 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "Your TIFF files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+          "title": "Täysi yksityisyys",
+          "description": "TIFF-tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata millekään palvelimelle – kuvasi pysyvät laitteellasi koko ajan."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "No limits",
-          "description": "Convert as many TIFF files to WebP as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta TIFF-tiedostoa WEBP-muotoon kuin tarvitset. Ei päivittäisiä rajoituksia, ei tiedostokokorajoituksia, ei vesileimoja."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Quality control",
-          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+          "title": "Laadunhallinta",
+          "description": "Säädä pakkausasetuksia löytääksesi täydellisen tasapainon tiedostokoon ja kuvanlaadun välillä. Esikatsele muutoksia reaaliajassa ennen lataamista."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla – muunnos on nopea ja toimii jopa ilman internet-yhteyttä sivun latauduttua."
         }
       ]
     },

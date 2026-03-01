@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień pliki WebP na AVIF. Jeszcze lepsza kompresja w nowoczesnym formacie.",
-      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"]
+      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "alternateName": ["Zamiana WEBP na AVIF", "Konwersja WEBP do AVIF", "Darmowy konwerter WEBP na AVIF"]
     },
     "howTo": {
       "name": "WebP to AVIF",

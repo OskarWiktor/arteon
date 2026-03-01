@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert TIFF files to lossless PNG. Preserve full quality of scans and graphics.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert TIFF to PNG", "TIFF to PNG conversion", "Free TIFF to PNG converter", "Change TIFF to PNG"]
     },
     "howTo": {
       "name": "TIFF to PNG",

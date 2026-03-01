@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky HEIC z iPhonu na bezztratove PNG. Plna kvalita a pruhlednost.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Převést HEIC na PNG", "Konverze HEIC do PNG", "Převodník HEIC na PNG zdarma"]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět HEIC na PNG?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro fotografie z Apple zařízení.</p><p class=\"text-mid mb-4\">Převod HEIC na PNG (Portable Network Graphics) zajišťuje univerzální kompatibilitu se všemi prohlížeči a zařízeními.</p><p class=\"text-mid mb-4\">PNG podporuje alfa průhlednost. Jako bezeztrátový formát zachovává PNG veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) je výchozí formát fotografií na zařízeních Apple od iOS 11. HEIC nabízí menší soubory než JPEG při srovnatelné kvalitě, ale není nativně podporován mimo ekosystém Apple – ani ve Windows, Androidu nebo na mnoha webových platformách.</p><p class=\"text-mid mb-4\">PNG zachovává plnou kvalitu obrazu bez kompresních artefaktů a podporuje plnou alfa transparenci. Tento bezeztrátový formát je ideální pro grafiku určenou k dalšímu zpracování a pro obrázky, kde musí zůstat zachovány průhledné oblasti.</p><p class=\"text-mid mb-4\">Převod zachovává plnou kvalitu vašeho HEIC originálu bezeztrátově ve formátu PNG. PNG je podporován všemi zařízeními a je vhodný zejména pokud chcete obrázek dále upravovat nebo zachovat transparenci.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod HEIC na PNG",
       "variant": "right"

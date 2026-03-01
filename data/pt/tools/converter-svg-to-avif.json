@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta graficos vetoriais SVG para formato raster AVIF compacto.",
-      "featureList": ["Conversão para AVIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"]
+      "featureList": ["Conversão para AVIF", "Ajuste de qualidade (60-95%)", "Conversão em lote", "Processamento local no navegador"],
+      "alternateName": ["Converter SVG para AVIF", "Conversão de SVG para AVIF", "Conversor SVG para AVIF grátis"]
     },
     "howTo": {
       "name": "Como converter SVG para AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter SVG para AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) é um formato de imagem sem perda baseado em gráficos vetoriais. É amplamente utilizado para logotipos e ícones.</p><p class=\"text-mid mb-4\">Converter SVG para AVIF (AV1 Image File Format) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">AVIF suporta transparência alfa. AVIF oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Scalable Vector Graphics (SVG) é um formato vetorial baseado em XML. Os ficheiros SVG são independentes da resolução e mantêm-se nítidos em qualquer tamanho – ideais para logótipos, ícones e ilustrações.</p><p class=\"text-mid mb-4\">O AVIF oferece a compressão mais eficiente de todos os formatos atuais, reduzindo o tamanho até 50% em relação ao JPEG. Chrome, Firefox e Safari 16+ suportam o AVIF. É a escolha ideal para projetos web críticos em desempenho.</p><p class=\"text-mid mb-4\">O AVIF oferece a melhor compressão para a rasterização de ficheiros SVG. Ideal para sites web críticos em desempenho onde cada kilobyte contribui para melhores Core Web Vitals.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversão de SVG para AVIF",
       "variant": "right"

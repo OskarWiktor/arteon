@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert iPhone HEIC photos to universal JPG. No signup, no server uploads.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HEIC to JPG", "HEIC to JPG conversion", "Free HEIC to JPG converter", "Change HEIC to JPG"]
     },
     "howTo": {
       "name": "HEIC to JPG",

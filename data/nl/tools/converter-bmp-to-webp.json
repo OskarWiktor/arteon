@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer BMP-bestanden naar lichtgewicht WebP. Tot 95% kleiner bestandsgrootte.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["BMP naar WEBP omzetten", "BMP naar WEBP conversie", "Gratis BMP naar WEBP converter"]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom BMP naar WebP converteren?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van BMP naar WebP (WebP) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">WebP ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een ouder Windows-beeldformaat dat pixeldata ongecomprimeerd opslaat. BMP-bestanden zijn daardoor extreem groot en ongeschikt voor modern gebruik op het web of mobiele apparaten.</p><p class=\"text-mid mb-4\">WebP vermindert de bestandsgrootte met 30–35% ten opzichte van oudere formaten, zonder zichtbaar kwaliteitsverlies. Alle moderne browsers (Chrome, Firefox, Safari 14+, Edge) ondersteunen WebP volledig. Voor websites betekent dit snellere laadtijden en een betere Google-ranking.</p><p class=\"text-mid mb-4\">WebP vermindert de enorme BMP-bestandsgroottes tot 97% met goede visuele kwaliteit. De conversie moderniseert uw legacy-afbeeldingen voor gebruik op websites en in moderne applicaties.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "BMP naar WEBP conversie",
       "variant": "right"

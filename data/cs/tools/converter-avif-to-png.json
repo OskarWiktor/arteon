@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory AVIF na bezztratove PNG. Zachovani plne kvality a pruhlednosti.",
-      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Převést AVIF na PNG", "Konverze AVIF do PNG", "Převodník AVIF na PNG zdarma"]
     },
     "howTo": {
       "name": "AVIF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět AVIF na PNG?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro moderní webové obrázky.</p><p class=\"text-mid mb-4\">Převod AVIF na PNG (Portable Network Graphics) zajišťuje univerzální kompatibilitu se všemi prohlížeči a zařízeními.</p><p class=\"text-mid mb-4\">PNG podporuje alfa průhlednost. Jako bezeztrátový formát zachovává PNG veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) je obrazový formát nové generace založený na video kodeku AV1. AVIF nabízí aktuálně nejlepší dostupnou kompresi – soubory až o 50% menší než WebP při srovnatelné vizuální kvalitě.</p><p class=\"text-mid mb-4\">PNG zachovává plnou kvalitu obrazu bez kompresních artefaktů a podporuje plnou alfa transparenci. Tento bezeztrátový formát je ideální pro grafiku určenou k dalšímu zpracování a pro obrázky, kde musí zůstat zachovány průhledné oblasti.</p><p class=\"text-mid mb-4\">Převod zachovává kvalitu bezeztrátově v univerzálně podporovaném PNG formátu. PNG je vhodný pokud chcete zachovat transparenci nebo obrázek dále upravovat v grafických programech.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod AVIF na PNG",
       "variant": "right"

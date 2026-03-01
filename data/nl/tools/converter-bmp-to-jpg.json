@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "BMP naar JPG converter",
-      "alternateName": [],
+      "alternateName": ["BMP naar JPG omzetten", "BMP naar JPG conversie", "Gratis BMP naar JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom BMP naar JPG converteren?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van BMP naar JPG (JPEG) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">JPG ondersteunt geen transparantie – transparante gebieden worden gevuld met een achtergrondkleur.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een ouder Windows-beeldformaat dat pixeldata ongecomprimeerd opslaat. BMP-bestanden zijn daardoor extreem groot en ongeschikt voor modern gebruik op het web of mobiele apparaten.</p><p class=\"text-mid mb-4\">JPEG is het meest universele beeldformaat – compatibel met elk apparaat, elke browser en elk platform. De conversie naar JPG garandeert dat uw afbeeldingen overal probleemloos worden weergegeven: van e-mailbijlagen tot social-mediaposts.</p><p class=\"text-mid mb-4\">BMP-bestanden zijn ongecomprimeerd en daardoor extreem groot. De conversie naar JPEG vermindert de bestandsgrootte drastisch (vaak meer dan 95%) en produceert universeel compatibele bestanden.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "BMP naar JPG conversie",
       "variant": "right"

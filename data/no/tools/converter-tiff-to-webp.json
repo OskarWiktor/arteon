@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter TIFF-filer til lett WebP. Massiv storrelsesreduksjon med bevart kvalitet.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konverter TIFF til WEBP", "TIFF til WEBP konvertering", "Gratis TIFF til WEBP konverterer"]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere TIFF til WebP?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av TIFF til WebP (WebP) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">WebP støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) er bransjestandarden for profesjonell fotografering, trykk og arkivering. TIFF lagrer bilder tapsfritt med full fargedybde, lag og metadata.</p><p class=\"text-mid mb-4\">WebP reduserer filstørrelsen med 30–35% sammenlignet med eldre formater uten synlig kvalitetstap. Alle moderne nettlesere (Chrome, Firefox, Safari 14+, Edge) støtter WebP fullt ut. For nettsider betyr dette raskere lastetider og bedre Google-plassering.</p><p class=\"text-mid mb-4\">WebP reduserer TIFF-filenes størrelse drastisk – ofte med mer enn 90%. Ideelt for å optimalisere profesjonelle fotografier eller høyoppløselige skanninger for nettbruk.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "TIFF til WEBP konvertering",
       "variant": "right"

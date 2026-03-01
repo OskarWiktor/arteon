@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG fotok konvertálása modern AVIF formatumra. Akar 50%-kal jobb tomoritest mint JPG.",
-      "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"]
+      "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
+      "alternateName": ["JPG konvertálása AVIF formátumba", "JPG–AVIF átalakítás", "Ingyenes JPG–AVIF konverter"]
     },
     "howTo": {
       "name": "JPG konvertálása AVIF-ra",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes JPG-t AVIF-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A JPEG (JPG) egy veszteséges képformátum. Széles körben használják fényképekhez.</p><p class=\"text-mid mb-4\">A JPG konvertálása AVIF-re (AV1 Image File Format) modern tömörítést használ kisebb fájlmérethez minőségveszteség nélkül.</p><p class=\"text-mid mb-4\">A AVIF támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A JPEG (JPG) a világ legelterjedtebb képformátuma digitális fényképekhez. Veszteséges tömörítést használ kompakt fájlokhoz, de nem támogatja az átlátszóságot vagy a veszteségmentes tárolást.</p><p class=\"text-mid mb-4\">Az AVIF a leghatékonyabb tömörítést kínálja az összes jelenlegi képformátum közül, akár 50%-kal csökkentve a fájlméretet a JPEG-hez képest. A Chrome, Firefox és Safari 16+ támogatja az AVIF-ot. Optimális választás teljesítménykritikus webprojektekhez.</p><p class=\"text-mid mb-4\">Az AVIF akár 50%-kal jobb tömörítést ér el, mint a JPEG hasonló vizuális minőségben. Ez az új generációs formátum ideális teljesítménykritikus weboldalakhoz, és a Chrome, Firefox és Safari 16+ támogatja.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "JPG konvertálás AVIF formátumba",
       "variant": "right"

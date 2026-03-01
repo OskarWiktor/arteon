@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera okomprimerade BMP-filer till ultrakompakt AVIF.",
-      "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"]
+      "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
+      "alternateName": ["Konvertera BMP till AVIF", "BMP till AVIF konvertering", "Gratis BMP till AVIF konverterare"]
     },
     "howTo": {
       "name": "Hur konverterar man BMP till AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera BMP till AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) är ett förlustfritt bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av BMP till AVIF (AV1 Image File Format) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">AVIF stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) är ett äldre Windows-bildformat som lagrar pixeldata utan komprimering. BMP-filer är därför extremt stora och olämpliga för modern användning på webben eller mobila enheter.</p><p class=\"text-mid mb-4\">AVIF erbjuder den mest effektiva komprimeringen av alla aktuella bildformat och kan minska filstorleken upp till 50% jämfört med JPEG. Chrome, Firefox och Safari 16+ stöder AVIF. Det är det optimala valet för prestandakritiska webbprojekt.</p><p class=\"text-mid mb-4\">AVIF erbjuder den bästa komprimeringen för modernisering av okomprimerade BMP-filer. Storleken minskas med upp till 98% – idealiskt för migrering av gamla bildarkiv till moderna format.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "BMP till AVIF konvertering",
       "variant": "right"

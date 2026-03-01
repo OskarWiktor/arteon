@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["HEIC konvertálása PNG formátumba", "HEIC–PNG átalakítás", "Ingyenes HEIC–PNG konverter"]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes HEIC-t PNG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A High Efficiency Image Container (HEIC) egy veszteséges képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A HEIC konvertálása PNG-re (Portable Network Graphics) univerzális kompatibilitást biztosít minden böngészővel és eszközzel.</p><p class=\"text-mid mb-4\">A PNG támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A High Efficiency Image Container (HEIC) az Apple eszközök alapértelmezett fényképformátuma az iOS 11 óta. A HEIC kisebb fájlokat kínál, mint a JPEG hasonló minőségben, de az Apple ökoszisztémán kívül – Windowson, Androidon és sok webes platformon – nem támogatott natívan.</p><p class=\"text-mid mb-4\">A PNG megőrzi a teljes képminőséget tömörítési műtermékek nélkül, és támogatja a teljes alfa-átlátszóságot. Ez a veszteségmentes formátum ideális a további szerkesztésre szánt grafikákhoz és az átlátszó területeket megőrzendő képekhez.</p><p class=\"text-mid mb-4\">A konvertálás veszteségmentesen megőrzi a HEIC eredeti teljes minőségét PNG formátumban. A PNG minden eszköz által támogatott, és különösen alkalmas, ha a képet szerkeszteni vagy az átlátszóságot megőrizni szeretné.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "HEIC konvertálás PNG formátumba",
       "variant": "right"

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer ongecomprimeerde BMP-bestanden naar lichtgewicht GIF.",
-      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
+      "alternateName": ["BMP naar GIF omzetten", "BMP naar GIF conversie", "Gratis BMP naar GIF converter"]
     },
     "howTo": {
       "name": "BMP naar GIF converteren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom BMP naar GIF converteren?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van BMP naar GIF (Graphics Interchange Format) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">GIF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een ouder Windows-beeldformaat dat pixeldata ongecomprimeerd opslaat. BMP-bestanden zijn daardoor extreem groot en ongeschikt voor modern gebruik op het web of mobiele apparaten.</p><p class=\"text-mid mb-4\">GIF is het standaardformaat voor korte animaties, memes en eenvoudige afbeeldingen met beperkt kleurenpalet. Met universele browserondersteuning is GIF bijzonder geschikt voor geanimeerde content op sociale media en in berichtenapps.</p><p class=\"text-mid mb-4\">De conversie reduceert het kleurenpalet tot 256 kleuren en comprimeert het bestand aanzienlijk. Geschikt voor eenvoudige afbeeldingen uit oudere systemen, maar voor fotorealistische BMP-beelden wordt JPG of WebP aanbevolen.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "BMP naar GIF conversie",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-naar-GIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van BMP naar GIF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. GIF biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Hoewel GIF niet het meest efficiënte formaat is voor statische afbeeldingen, blijft het onmisbaar voor eenvoudige animaties, memes en afbeeldingen met een beperkt kleurenpalet. De limiet van 256 kleuren maakt GIF minder geschikt voor foto's, maar ideaal voor iconen, logo's en geanimeerde content op sociale media en berichtenapps.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. GIF biedt maximale compatibiliteit met alle platformen.</p>"
     },
     {
       "type": "gap",

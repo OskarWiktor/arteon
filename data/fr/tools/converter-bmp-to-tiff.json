@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression.",
-      "featureList": ["Conversion en TIFF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+      "featureList": ["Conversion en TIFF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
+      "alternateName": ["Convertir BMP en TIFF", "Conversion BMP vers TIFF", "Convertisseur BMP en TIFF gratuit"]
     },
     "howTo": {
       "name": "Comment convertir BMP en TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir BMP en TIFF ?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) est un format d’image sans perte prenant en charge des millions de couleurs. Il est largement utilisé pour les images non compressées.</p><p class=\"text-mid mb-4\">La conversion de BMP en TIFF (Tagged Image File Format) offre plus de flexibilité.</p><p class=\"text-mid mb-4\">TIFF prend en charge la transparence alpha. En tant que format sans perte, TIFF préserve l’intégralité des données de l’image.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Le Bitmap (BMP) est un ancien format d'image Windows qui stocke les données de pixels sans compression. Les fichiers BMP sont donc extrêmement volumineux et inadaptés à une utilisation moderne sur le web, par e-mail ou sur les appareils mobiles.</p><p class=\"text-mid mb-4\">Le TIFF préserve la qualité d'image complète sans aucune perte de données et prend en charge les calques ainsi que des métadonnées étendues. Standard de l'industrie pour l'impression et l'archivage, le TIFF convient aux photographes professionnels, aux imprimeurs et à tous ceux qui souhaitent conserver des images en qualité maximale.</p><p class=\"text-mid mb-4\">La conversion de BMP en TIFF préserve la qualité d'image complète et ajoute la prise en charge professionnelle des métadonnées. Le TIFF convient mieux que le BMP à l'archivage à long terme et aux workflows d'impression professionnels.</p><p class=\"text-mid\">Ce convertisseur fonctionne entièrement en local dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléversement, aucun serveur, aucune inscription. Entièrement conforme au RGPD et gratuit sans aucune limitation.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversion BMP en TIFF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversion BMP vers TIFF en pratique",
-      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Les standards web modernes favorisent de plus en plus les formats efficaces. La conversion de BMP en TIFF peut directement améliorer votre score Largest Contentful Paint (LCP).</p><p class=\"text-mid\">Le traitement local garantit la conformité RGPD pour les utilisateurs en France, au Canada et en Belgique.</p>"
+      "html": "<p class=\"text-mid mb-4\">En France, au Canada et en Belgique, la conformité RGPD rend la conversion locale particulièrement pertinente. Que vous prépariez des images pour Leboncoin, Cdiscount, Amazon.fr, Vinted, optimisiez des graphiques dans WordPress, PrestaShop, Shopify ou convertissiez des photos pour service-public.fr et FranceConnect, le bon format est essentiel.</p><p class=\"text-mid mb-4\">Le TIFF est le standard de l'industrie pour l'impression professionnelle, l'archivage et la post-production. Des logiciels comme Adobe Photoshop, Lightroom et GIMP utilisent le TIFF pour des flux de travail d'édition sans perte. La conversion en TIFF préserve toutes les données de l'image, y compris les profils colorimétriques, les calques et les métadonnées.</p><p class=\"text-mid\">Pour la photographie professionnelle et la production d'impression, le TIFF garantit une qualité sans perte conforme aux standards de l'industrie. Le traitement local garantit la conformité RGPD.</p>"
     },
     {
       "type": "gap",

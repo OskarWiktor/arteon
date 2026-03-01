@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "WebP JPG -muunnin",
-      "alternateName": [],
+      "alternateName": ["Muunna WEBP JPG-muotoon", "WEBP:n muunto JPG-muotoon", "Ilmainen WEBP–JPG-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna WebP-tiedostot yleisesti yhteensopivaan JPG-muotoon.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa WebP JPG-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) on häviöllinen kuvaformaatti. Sitä käytetään laajalti verkkokuviin.</p><p class=\"text-mid mb-4\">WebP:n muuntaminen JPG-muotoon (JPEG) varmistaa yleismaailmallisen yhteensopivuuden kaikkien selainten ja laitteiden kanssa.</p><p class=\"text-mid mb-4\">JPG ei tue läpinäkyvyyttä – läpinäkyvät alueet täytetään taustavärillä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP on Googlen kehittämä moderni kuvamuoto, joka tukee sekä häviöllistä että häviötöntä pakkausta. Se tuottaa huomattavasti pienempiä tiedostoja kuin PNG ja JPEG vastaavalla visuaalisella laadulla ja on kaikkien nykyisten selainten tukema.</p><p class=\"text-mid mb-4\">JPEG on universaalein kuvamuoto – yhteensopiva kaikkien laitteiden, selainten ja alustojen kanssa. Muuntaminen JPG-muotoon varmistaa, että kuvasi näkyvät ongelmitta kaikkialla: sähköpostiliitteistä sosiaalisen median julkaisuihin.</p><p class=\"text-mid mb-4\">WebP:stä JPEG:ksi muunnos varmistaa maksimaalisen yhteensopivuuden. JPG on kaikkien laitteiden ja ohjelmistojen tukema – välttämätön kuvien lähettämiseen sähköpostilla tai lataamiseen alustoille, jotka eivät hyväksy WebP:tä.</p><p class=\"text-mid\">Tämä muunnin toimii kokonaan paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröitymistä. Täysin GDPR-yhteensopiva ja maksuton ilman mitään rajoituksia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "WEBP-JPG-muunnos",
       "variant": "right"
@@ -140,23 +140,23 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "Your WebP files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+          "title": "Täysi yksityisyys",
+          "description": "WEBP-tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata millekään palvelimelle – kuvasi pysyvät laitteellasi koko ajan."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "No limits",
-          "description": "Convert as many WebP files to JPG as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta WEBP-tiedostoa JPG-muotoon kuin tarvitset. Ei päivittäisiä rajoituksia, ei tiedostokokorajoituksia, ei vesileimoja."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Quality control",
-          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+          "title": "Laadunhallinta",
+          "description": "Säädä pakkausasetuksia löytääksesi täydellisen tasapainon tiedostokoon ja kuvanlaadun välillä. Esikatsele muutoksia reaaliajassa ennen lataamista."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla – muunnos on nopea ja toimii jopa ilman internet-yhteyttä sivun latauduttua."
         }
       ]
     },

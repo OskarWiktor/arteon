@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les graphiques vectoriels SVG en format raster AVIF compact.",
-      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
+      "alternateName": ["Convertir SVG en AVIF", "Conversion SVG vers AVIF", "Convertisseur SVG en AVIF gratuit"]
     },
     "howTo": {
       "name": "Comment convertir SVG en AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir SVG en AVIF ?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) est un format d’image sans perte basé sur des graphiques vectoriels. Il est largement utilisé pour les logos et icônes.</p><p class=\"text-mid mb-4\">La conversion de SVG en AVIF (AV1 Image File Format) réduit considérablement la taille des fichiers.</p><p class=\"text-mid mb-4\">AVIF prend en charge la transparence alpha. AVIF offre une compression avec et sans perte.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Le Scalable Vector Graphics (SVG) est un format vectoriel basé sur XML pour les graphiques bidimensionnels. Les fichiers SVG sont indépendants de la résolution et restent nets à toute taille – idéal pour les logos, icônes et illustrations.</p><p class=\"text-mid mb-4\">L'AVIF offre la compression la plus efficace de tous les formats d'image actuels, réduisant la taille des fichiers jusqu'à 50% par rapport au JPEG. Chrome, Firefox et Safari 16+ prennent en charge l'AVIF. C'est le choix optimal pour les projets web critiques en termes de performance et l'utilisation mobile.</p><p class=\"text-mid mb-4\">L'AVIF offre la meilleure compression pour la rastérisation de vos fichiers SVG. Idéal pour les sites web critiques en performance où chaque kilo-octet contribue à de meilleurs temps de chargement et Core Web Vitals.</p><p class=\"text-mid\">Ce convertisseur fonctionne entièrement en local dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléversement, aucun serveur, aucune inscription. Entièrement conforme au RGPD et gratuit sans aucune limitation.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversion SVG en AVIF",
       "variant": "right"

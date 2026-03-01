@@ -6,10 +6,15 @@ const { HOW_TO_STEPS, FEATURE_ITEMS, getUseCaseItems } = require('./_converter-f
 const { generateFaq, generateComparisonHtml, generateRegionalHtml } = require('./_converter-faq.cjs');
 
 const targets = [
-  ['pl', 'avif-to-png'], ['pl', 'bmp-to-webp'],
-  ['de', 'jpg-to-png'], ['de', 'png-to-jpg'],
-  ['fr', 'jpg-to-png'], ['fr', 'jpg-to-webp'], ['fr', 'png-to-jpg'],
-  ['es', 'jpg-to-png'], ['es', 'png-to-jpg'],
+  ['pl', 'avif-to-png'],
+  ['pl', 'bmp-to-webp'],
+  ['de', 'jpg-to-png'],
+  ['de', 'png-to-jpg'],
+  ['fr', 'jpg-to-png'],
+  ['fr', 'jpg-to-webp'],
+  ['fr', 'png-to-jpg'],
+  ['es', 'jpg-to-png'],
+  ['es', 'png-to-jpg'],
 ];
 
 for (const [locale, conv] of targets) {
@@ -27,8 +32,8 @@ for (const [locale, conv] of targets) {
   const gap = () => ({ type: 'gap', variant: 'line' });
   const stepsGen = HOW_TO_STEPS[locale] || HOW_TO_STEPS.en;
   const featGen = FEATURE_ITEMS[locale] || FEATURE_ITEMS.en;
-  const existingContact = (d.contentBlocks || []).find(b => b.type === 'contactForm');
-  const existingCarousel = (d.contentBlocks || []).find(b => b.type === 'toolsCarousel');
+  const existingContact = (d.contentBlocks || []).find((b) => b.type === 'contactForm');
+  const existingCarousel = (d.contentBlocks || []).find((b) => b.type === 'toolsCarousel');
 
   const blocks = [
     { type: 'sectionBasic', title: t.why(S, T), html: generateIntroHtml(srcKey, tgtKey, locale), imageSrc: ogImage, imageAlt: S + ' to ' + T, variant: 'right' },
@@ -52,7 +57,7 @@ for (const [locale, conv] of targets) {
 
   d.contentBlocks = blocks;
   fs.writeFileSync(fp, JSON.stringify(d, null, 2) + '\n', 'utf8');
-  const secs = blocks.filter(b => b.type !== 'gap' && b.type !== 'toolsCarousel' && b.type !== 'contactForm').length;
+  const secs = blocks.filter((b) => b.type !== 'gap' && b.type !== 'toolsCarousel' && b.type !== 'contactForm').length;
   console.log('FIXED ' + locale.toUpperCase() + ' ' + conv + ': ' + secs + ' sections');
 }
 console.log('Done - ' + targets.length + ' files fixed');

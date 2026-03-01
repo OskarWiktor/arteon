@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte fotos HEIC del iPhone a formato TIFF profesional.",
-      "featureList": ["Conversión a TIFF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"]
+      "featureList": ["Conversión a TIFF", "Ajuste de calidad (60-95%)", "Conversión por lotes", "Procesamiento local en el navegador"],
+      "alternateName": ["Convertir HEIC a TIFF", "Conversión de HEIC a TIFF", "Convertidor HEIC a TIFF gratis"]
     },
     "howTo": {
       "name": "Cómo convertir HEIC a TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir HEIC a TIFF?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) es un formato de imagen con pérdida que soporta millones de colores. Se utiliza ampliamente para fotos de dispositivos Apple.</p><p class=\"text-mid mb-4\">Convertir HEIC a TIFF (Tagged Image File Format) resuelve el problema de compatibilidad con el formato propietario de Apple.</p><p class=\"text-mid mb-4\">TIFF soporta transparencia alfa. Como formato sin pérdida, TIFF preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) es el formato predeterminado para fotos en dispositivos Apple desde iOS 11. HEIC ofrece archivos más ligeros que JPEG con calidad comparable, pero no es compatible de forma nativa fuera del ecosistema Apple: ni en Windows, ni en Android, ni en muchas plataformas web.</p><p class=\"text-mid mb-4\">TIFF preserva la calidad de imagen completa sin ninguna pérdida de datos y admite capas y metadatos extensos. Como estándar de la industria para impresión y archivado, TIFF es adecuado para fotógrafos profesionales, imprentas y todos los que deseen conservar imágenes en máxima calidad.</p><p class=\"text-mid mb-4\">La conversión transforma sus fotos de iPhone al formato TIFF profesional. Ideal para fotógrafos que desean archivar sus capturas móviles en un formato sin pérdidas y editarlas en programas profesionales como Photoshop o Lightroom.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversión de HEIC a TIFF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversión de HEIC a TIFF en la práctica",
-      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">Los estándares web modernos favorecen cada vez más los formatos eficientes. Convertir HEIC a TIFF puede mejorar directamente tu puntuación LCP.</p><p class=\"text-mid\">El procesamiento local garantiza la privacidad total de tus datos.</p>"
+      "html": "<p class=\"text-mid mb-4\">En España y Latinoamérica, muchas plataformas de venta requieren imágenes en formatos específicos. Ya sea que prepares imágenes de productos para Amazon.es, Wallapop, MercadoLibre, Milanuncios u optimices gráficos en WordPress, Shopify, PrestaShop, el formato correcto es esencial.</p><p class=\"text-mid mb-4\">TIFF es el estándar de la industria para impresión profesional, archivado y postproducción. Programas como Adobe Photoshop, Lightroom y GIMP utilizan TIFF para flujos de trabajo de edición sin pérdidas. La conversión a TIFF preserva todos los datos de imagen, incluidos perfiles de color, capas y metadatos.</p><p class=\"text-mid\">Para fotografía profesional y producción de impresión, TIFF garantiza calidad sin pérdidas que cumple con los estándares de la industria. El procesamiento local garantiza plena conformidad con el RGPD.</p>"
     },
     {
       "type": "gap",

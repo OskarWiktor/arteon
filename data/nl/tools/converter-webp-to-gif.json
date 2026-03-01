@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer WebP-afbeeldingen naar GIF-formaat voor maximale compatibiliteit.",
-      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
+      "alternateName": ["WEBP naar GIF omzetten", "WEBP naar GIF conversie", "Gratis WEBP naar GIF converter"]
     },
     "howTo": {
       "name": "WebP naar GIF converteren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom WebP naar GIF converteren?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor webafbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van WebP naar GIF (Graphics Interchange Format) zorgt voor universele compatibiliteit met alle browsers en apparaten.</p><p class=\"text-mid mb-4\">GIF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP is een modern beeldformaat ontwikkeld door Google dat zowel compressie met als zonder verlies ondersteunt. Het levert aanzienlijk kleinere bestanden dan PNG en JPEG bij vergelijkbare visuele kwaliteit.</p><p class=\"text-mid mb-4\">GIF is het standaardformaat voor korte animaties, memes en eenvoudige afbeeldingen met beperkt kleurenpalet. Met universele browserondersteuning is GIF bijzonder geschikt voor geanimeerde content op sociale media en in berichtenapps.</p><p class=\"text-mid mb-4\">De conversie reduceert het kleurenpalet tot 256. Het is geschikt voor eenvoudige afbeeldingen of wanneer het GIF-formaat nodig is voor animaties of compatibiliteitsredenen.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "WEBP naar GIF conversie",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-naar-GIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van WebP naar GIF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. GIF biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Hoewel GIF niet het meest efficiënte formaat is voor statische afbeeldingen, blijft het onmisbaar voor eenvoudige animaties, memes en afbeeldingen met een beperkt kleurenpalet. De limiet van 256 kleuren maakt GIF minder geschikt voor foto's, maar ideaal voor iconen, logo's en geanimeerde content op sociale media en berichtenapps.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. GIF biedt maximale compatibiliteit met alle platformen.</p>"
     },
     {
       "type": "gap",

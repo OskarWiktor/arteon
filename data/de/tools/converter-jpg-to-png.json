@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "JPG zu PNG Konverter",
-      "alternateName": [],
+      "alternateName": ["JPG in PNG umwandeln", "JPG zu PNG konvertieren", "Kostenloser JPG-zu-PNG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG-Bilder verlustfrei in PNG umwandeln. Lokale Verarbeitung im Browser, unbegrenzte Dateien.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum JPG in PNG konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Fotos verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von JPG in PNG (Portable Network Graphics) bietet mehr Flexibilität bei der Verwendung Ihrer Bilder.</p><p class=\"text-mid mb-4\">PNG unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt PNG die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) ist das weltweit meistverbreitete Format für digitale Fotos und Bilder. Es nutzt verlustbehaftete Komprimierung für kompakte Dateigrößen, unterstützt jedoch weder Transparenz noch verlustfreie Speicherung.</p><p class=\"text-mid mb-4\">PNG bewahrt die volle Bildqualität ohne Kompressionsartefakte und unterstützt volle Alpha-Transparenz. Das verlustfreie Format eignet sich ideal für Grafiken, die weiterbearbeitet werden sollen, und für Bilder, bei denen transparente Bereiche erhalten bleiben müssen.</p><p class=\"text-mid mb-4\">Die Konvertierung von JPG zu PNG wandelt Ihr Bild in ein verlustfreies Format um. Bereits durch JPEG-Komprimierung verlorene Details können jedoch nicht wiederhergestellt werden. PNG eignet sich, wenn Sie das Bild ohne zusätzliche Qualitätsverluste weiterbearbeiten möchten.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "JPG-zu-PNG-Konvertierung",
       "variant": "right"

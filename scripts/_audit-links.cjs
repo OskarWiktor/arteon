@@ -46,7 +46,9 @@ function scanJsonFile(filePath) {
     const content = fs.readFileSync(filePath, 'utf8');
     const json = JSON.parse(content);
     findHrefs(json, filePath);
-  } catch (e) { /* skip non-JSON */ }
+  } catch (e) {
+    /* skip non-JSON */
+  }
 }
 
 function findHrefs(obj, filePath, keyPath = '') {
@@ -68,7 +70,7 @@ function findHrefs(obj, filePath, keyPath = '') {
 }
 
 // Scan all locale data JSON files
-const locales = fs.readdirSync(dataDir).filter(d => {
+const locales = fs.readdirSync(dataDir).filter((d) => {
   const stat = fs.statSync(path.join(dataDir, d));
   return stat.isDirectory() && d !== 'pl'; // PL has blog data, handle separately
 });
@@ -82,7 +84,7 @@ for (const locale of locales) {
   for (const subdir of ['pages', 'tools', 'tools-ui']) {
     const dir = path.join(localeDir, subdir);
     if (!fs.existsSync(dir)) continue;
-    for (const file of fs.readdirSync(dir).filter(f => f.endsWith('.json'))) {
+    for (const file of fs.readdirSync(dir).filter((f) => f.endsWith('.json'))) {
       scanJsonFile(path.join(dir, file));
     }
   }
@@ -94,7 +96,7 @@ for (const locale of locales) {
 // Scan navigation data files
 const navDir = path.join(__dirname, '..', 'components', 'shared', 'navigation-data');
 if (fs.existsSync(navDir)) {
-  for (const file of fs.readdirSync(navDir).filter(f => f.endsWith('.ts'))) {
+  for (const file of fs.readdirSync(navDir).filter((f) => f.endsWith('.ts'))) {
     const content = fs.readFileSync(path.join(navDir, file), 'utf8');
     const hrefMatches = content.matchAll(/href:\s*['"]([^'"]+)['"]/g);
     for (const m of hrefMatches) {

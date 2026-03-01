@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert uncompressed BMP files to ultra-compact AVIF.",
-      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert BMP to AVIF", "BMP to AVIF conversion", "Free BMP to AVIF converter", "Change BMP to AVIF"]
     },
     "howTo": {
       "name": "How to convert BMP to AVIF",

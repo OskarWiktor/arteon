@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Prevedte vektorovou grafiku SVG na kompaktni rastrovy format AVIF.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
+      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
+      "alternateName": ["Převést SVG na AVIF", "Konverze SVG do AVIF", "Převodník SVG na AVIF zdarma"]
     },
     "howTo": {
       "name": "Jak převést SVG na AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět SVG na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) je bezeztrátový obrazový formát založený na vektorové grafice. Je široce používán pro loga a ikony.</p><p class=\"text-mid mb-4\">Převod SVG na AVIF (AV1 Image File Format) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">AVIF podporuje alfa průhlednost. AVIF nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) je vektorový formát založený na XML. SVG soubory jsou nezávislé na rozlišení a zůstávají ostré v jakékoli velikosti – ideální pro loga, ikony a ilustrace.</p><p class=\"text-mid mb-4\">AVIF nabízí nejefektivnější kompresi ze všech aktuálních obrazových formátů a dokáže zmenšit velikost až o 50% oproti JPEG. Chrome, Firefox a Safari 16+ podporují AVIF. Je to optimální volba pro výkonnostně kritické webové projekty.</p><p class=\"text-mid mb-4\">AVIF nabízí nejlepší kompresi pro rasterizaci SVG souborů. Ideální pro výkonnostně kritické weby, kde každý kilobajt přispívá k lepšímu načítání a Core Web Vitals.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Převod SVG na AVIF",
       "variant": "right"

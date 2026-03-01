@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory BMP na lehke WebP. Snizeni velikosti az o 95%.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Převést BMP na WEBP", "Konverze BMP do WEBP", "Převodník BMP na WEBP zdarma"]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět BMP na WebP?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) je bezeztrátový obrazový formát podporující miliony barev. Je široce používán pro nekomprimované obrázky.</p><p class=\"text-mid mb-4\">Převod BMP na WebP (WebP) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">WebP podporuje alfa průhlednost. WebP nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) je starší obrazový formát Windows ukládající pixelová data bez komprese. BMP soubory jsou proto extrémně velké a nevhodné pro moderní použití na webu nebo mobilních zařízeních.</p><p class=\"text-mid mb-4\">WebP zmenšuje velikost souboru o 30–35% oproti starším formátům bez viditelné ztráty kvality. Všechny moderní prohlížeče (Chrome, Firefox, Safari 14+, Edge) plně podporují WebP. Pro webové stránky to znamená rychlejší načítání a lepší umístění v Google.</p><p class=\"text-mid mb-4\">WebP zmenšuje obrovské BMP soubory až o 97% s dobrou vizuální kvalitou. Převod modernizuje vaše starší obrázky pro použití na webových stránkách.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod BMP na WEBP",
       "variant": "right"

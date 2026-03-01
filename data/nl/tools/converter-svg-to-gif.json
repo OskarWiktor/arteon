@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer vector SVG-afbeeldingen naar GIF-rasterformaat.",
-      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+      "featureList": ["Conversie naar GIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
+      "alternateName": ["SVG naar GIF omzetten", "SVG naar GIF conversie", "Gratis SVG naar GIF converter"]
     },
     "howTo": {
       "name": "SVG naar GIF converteren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom SVG naar GIF converteren?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is een lossless afbeeldingsformaat gebaseerd op vectorafbeeldingen. Het wordt veel gebruikt voor logo's en pictogrammen.</p><p class=\"text-mid mb-4\">Het converteren van SVG naar GIF (Graphics Interchange Format) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">GIF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is een XML-gebaseerd vectorformaat voor tweedimensionale afbeeldingen. SVG-bestanden zijn resolutieonafhankelijk en blijven scherp op elke grootte – ideaal voor logo's, pictogrammen en illustraties.</p><p class=\"text-mid mb-4\">GIF is het standaardformaat voor korte animaties, memes en eenvoudige afbeeldingen met beperkt kleurenpalet. Met universele browserondersteuning is GIF bijzonder geschikt voor geanimeerde content op sociale media en in berichtenapps.</p><p class=\"text-mid mb-4\">De conversie zet de vectorafbeelding om naar pixels met maximaal 256 kleuren. GIF is geschikt voor eenvoudige pictogrammen en geanimeerde afbeeldingen, maar niet voor complexe illustraties met kleurverlopen.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "SVG naar GIF conversie",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-naar-GIF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van SVG naar GIF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. GIF biedt maximale compatibiliteit met alle platformen.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Hoewel GIF niet het meest efficiënte formaat is voor statische afbeeldingen, blijft het onmisbaar voor eenvoudige animaties, memes en afbeeldingen met een beperkt kleurenpalet. De limiet van 256 kleuren maakt GIF minder geschikt voor foto's, maar ideaal voor iconen, logo's en geanimeerde content op sociale media en berichtenapps.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. GIF biedt maximale compatibiliteit met alle platformen.</p>"
     },
     {
       "type": "gap",

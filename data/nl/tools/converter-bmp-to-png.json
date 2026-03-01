@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "BMP naar PNG converter",
-      "alternateName": [],
+      "alternateName": ["BMP naar PNG omzetten", "BMP naar PNG conversie", "Gratis BMP naar PNG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer BMP-afbeeldingen naar verliesvrij PNG. Kwaliteit behouden, kleiner bestand.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom BMP naar PNG converteren?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van BMP naar PNG (Portable Network Graphics) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">PNG ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een ouder Windows-beeldformaat dat pixeldata ongecomprimeerd opslaat. BMP-bestanden zijn daardoor extreem groot en ongeschikt voor modern gebruik op het web of mobiele apparaten.</p><p class=\"text-mid mb-4\">PNG behoudt de volledige beeldkwaliteit zonder compressieartefacten en ondersteunt volledige alfa-transparantie. Dit verliesvrije formaat is ideaal voor afbeeldingen die verder bewerkt moeten worden en voor beelden waarbij transparante gebieden behouden moeten blijven.</p><p class=\"text-mid mb-4\">De conversie van BMP naar PNG vermindert de bestandsgrootte aanzienlijk door verliesvrije compressie. In tegenstelling tot JPEG blijft de volledige beeldkwaliteit behouden – ideaal voor afbeeldingen met scherpe randen en tekst.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "BMP naar PNG conversie",
       "variant": "right"

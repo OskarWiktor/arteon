@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "TIFF-Dateien in modernes AVIF umwandeln. Massive Dateigrossen-Reduzierung.",
-      "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+      "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
+      "alternateName": ["TIFF in AVIF umwandeln", "TIFF zu AVIF konvertieren", "Kostenloser TIFF-zu-AVIF-Konverter"]
     },
     "howTo": {
       "name": "TIFF zu AVIF konvertieren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum TIFF in AVIF konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) ist ein verlustfreies Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Druck und Archivierung verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von TIFF in AVIF (AV1 Image File Format) reduziert die Dateigröße erheblich und beschleunigt das Laden von Webseiten.</p><p class=\"text-mid mb-4\">AVIF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. AVIF bietet sowohl verlustbehaftete als auch verlustfreie Komprimierung.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) ist der Industriestandard für professionelle Fotografie, Druck und Archivierung. TIFF speichert Bilder verlustfrei mit voller Farbtiefe, Ebenen und Metadaten – verlangt dafür aber entsprechend große Dateien.</p><p class=\"text-mid mb-4\">AVIF bietet die effizienteste Komprimierung aller aktuellen Bildformate und kann die Dateigröße um bis zu 50% gegenüber JPEG reduzieren. Chrome, Firefox und Safari 16+ unterstützen AVIF. Besonders für leistungskritische Webprojekte und mobile Nutzung ist AVIF die optimale Wahl.</p><p class=\"text-mid mb-4\">AVIF bietet die effizienteste Komprimierung für die Umwandlung großer TIFF-Dateien. Ideal für die Weboptimierung professioneller Fotografie und hochauflösender Scans mit minimaler Qualitätseinbuße.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "TIFF-zu-AVIF-Konvertierung",
       "variant": "right"

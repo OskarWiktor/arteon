@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "SVG til JPG-konverterer",
-      "alternateName": [],
+      "alternateName": ["Konverter SVG til JPG", "SVG til JPG konvertering", "Gratis SVG til JPG konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter SVG-grafikk til kompakt JPG. Mindre fil, full kompatibilitet.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere SVG til JPG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et tapsfritt bildeformat basert på vektorgrafikk. Det brukes mye til logoer og ikoner.</p><p class=\"text-mid mb-4\">Konvertering av SVG til JPG (JPEG) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">JPG støtter ikke gjennomsiktighet – gjennomsiktige områder fylles med en bakgrunnsfarge.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et XML-basert vektorformat for todimensjonal grafikk. SVG-filer er oppløsningsuavhengige og forblir skarpe i alle størrelser – ideelle for logoer, ikoner og illustrasjoner.</p><p class=\"text-mid mb-4\">JPEG er det mest universelle bildeformatet – kompatibelt med alle enheter, nettlesere og plattformer. Konvertering til JPG sikrer at bildene dine vises problemfritt overalt: fra e-postvedlegg til innlegg i sosiale medier.</p><p class=\"text-mid mb-4\">Rasterisering fra SVG til JPG konverterer den skalerbare vektorgrafikken til et pikselbilde med fast oppløsning. Gjennomsiktige områder fylles med en bakgrunnsfarge. Egnet for plattformer som ikke aksepterer SVG.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "SVG til JPG konvertering",
       "variant": "right"

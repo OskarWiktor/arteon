@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat.",
-      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+      "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
+      "alternateName": ["WEBP naar AVIF omzetten", "WEBP naar AVIF conversie", "Gratis WEBP naar AVIF converter"]
     },
     "howTo": {
       "name": "WebP naar AVIF converteren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom WebP naar AVIF converteren?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor webafbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van WebP naar AVIF (AV1 Image File Format) maakt gebruik van moderne compressie voor kleinere bestanden zonder kwaliteitsverlies.</p><p class=\"text-mid mb-4\">AVIF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP is een modern beeldformaat ontwikkeld door Google dat zowel compressie met als zonder verlies ondersteunt. Het levert aanzienlijk kleinere bestanden dan PNG en JPEG bij vergelijkbare visuele kwaliteit.</p><p class=\"text-mid mb-4\">AVIF biedt de meest efficiënte compressie van alle huidige beeldformaten en kan de bestandsgrootte tot 50% verminderen ten opzichte van JPEG. Chrome, Firefox en Safari 16+ ondersteunen AVIF. Het is de optimale keuze voor prestatiekritische webprojecten.</p><p class=\"text-mid mb-4\">AVIF biedt nog betere compressie dan WebP bij vergelijkbare visuele kwaliteit. Als u uw afbeeldingen wilt optimaliseren voor de webstandaarden van de volgende generatie, is de conversie van WebP naar AVIF een logische stap.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "WEBP naar AVIF conversie",
       "variant": "right"

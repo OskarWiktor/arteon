@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "iPhone HEIC fotok konvertálása konnyu WebP-re. Kisebb meret, gyorsabb betoltes.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["HEIC konvertálása WEBP formátumba", "HEIC–WEBP átalakítás", "Ingyenes HEIC–WEBP konverter"]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes HEIC-t WebP-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A High Efficiency Image Container (HEIC) egy veszteséges képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A HEIC konvertálása WebP-re (WebP) modern tömörítést használ kisebb fájlmérethez minőségveszteség nélkül.</p><p class=\"text-mid mb-4\">A WebP támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A High Efficiency Image Container (HEIC) az Apple eszközök alapértelmezett fényképformátuma az iOS 11 óta. A HEIC kisebb fájlokat kínál, mint a JPEG hasonló minőségben, de az Apple ökoszisztémán kívül – Windowson, Androidon és sok webes platformon – nem támogatott natívan.</p><p class=\"text-mid mb-4\">A WebP 30–35%-kal csökkenti a fájlméretet a régebbi formátumokhoz képest, látható minőségromlás nélkül. Minden modern böngésző (Chrome, Firefox, Safari 14+, Edge) teljes mértékben támogatja a WebP-t. Webhelyek számára ez gyorsabb betöltési időt és jobb Google-helyezést jelent.</p><p class=\"text-mid mb-4\">A WebP kiváló egyensúlyt kínál fájlméret és minőség között. A HEIC-ből WebP-be konvertálás kompakt fájlokat eredményez, amelyeket minden modern böngésző támogat – ideális weboldalakhoz.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "HEIC konvertálás WEBP formátumba",
       "variant": "right"

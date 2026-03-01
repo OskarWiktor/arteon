@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "GIF till JPG-konverterare",
-      "alternateName": [],
+      "alternateName": ["Konvertera GIF till JPG", "GIF till JPG konvertering", "Gratis GIF till JPG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportera den första bildrutan i en GIF som kompakt JPG. Mindre fil.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera GIF till JPG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) är ett förlustfritt bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av GIF till JPG (JPEG) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">JPG stödjer inte transparens – transparenta områden fylls med en bakgrundsfärg.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) stöder animationer och en palett på maximalt 256 färger. GIF används flitigt för animerat innehåll i sociala medier, men färgbegränsningen gör det olämpligt för fotorealistiska bilder.</p><p class=\"text-mid mb-4\">JPEG är det mest universella bildformatet – kompatibelt med alla enheter, webbläsare och plattformar. Konvertering till JPG säkerställer att dina bilder visas problemfritt överallt: från e-postbilagor till inlägg i sociala medier.</p><p class=\"text-mid mb-4\">Vid konvertering från GIF till JPG förloras animationsramar och transparens – bara den första bilden konverteras. Du får ett universellt kompatibelt fotoformat med full färgdjup (16,7 miljoner färger).</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "GIF till JPG konvertering",
       "variant": "right"

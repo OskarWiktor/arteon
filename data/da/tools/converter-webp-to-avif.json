@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter WebP-filer til AVIF. Endnu bedre komprimering i et moderne format.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"]
+      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
+      "alternateName": ["Konvertér WEBP til AVIF", "WEBP til AVIF konvertering", "Gratis WEBP til AVIF konverter"]
     },
     "howTo": {
       "name": "Hvordan konverterer man WebP til AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere WebP til AVIF?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til webbilleder.</p><p class=\"text-mid mb-4\">Konvertering af WebP til AVIF (AV1 Image File Format) udnytter moderne komprimering til mindre filer uden kvalitetstab.</p><p class=\"text-mid mb-4\">AVIF understøtter alfa-gennemsigtighed. AVIF tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP er et moderne billedformat udviklet af Google, der understøtter både tabsgivende og tabsfri komprimering. Det producerer markant mindre filer end PNG og JPEG ved sammenlignelig visuel kvalitet og understøttes af alle aktuelle browsere.</p><p class=\"text-mid mb-4\">AVIF tilbyder den mest effektive komprimering af alle aktuelle billedformater og kan reducere filstørrelsen op til 50% sammenlignet med JPEG. Chrome, Firefox og Safari 16+ understøtter AVIF. Det er det optimale valg til ydelseskritiske webprojekter.</p><p class=\"text-mid mb-4\">AVIF tilbyder endnu bedre komprimering end WebP ved sammenlignelig kvalitet. Hvis du vil optimere dine billeder til næste generations webstandarder, er konvertering fra WebP til AVIF et logisk skridt.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "WEBP til AVIF konvertering",
       "variant": "right"

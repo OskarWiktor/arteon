@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "WebP JPG konverter",
-      "alternateName": [],
+      "alternateName": ["WEBP konvertálása JPG formátumba", "WEBP–JPG átalakítás", "Ingyenes WEBP–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "WebP fájlok konvertálása univerzálisan kompatibilis JPG-re.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes WebP-t JPG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A WebP (WebP) egy veszteséges képformátum. Széles körben használják webes képekhez.</p><p class=\"text-mid mb-4\">A WebP konvertálása JPG-re (JPEG) univerzális kompatibilitást biztosít minden böngészővel és eszközzel.</p><p class=\"text-mid mb-4\">A JPG nem támogatja az átlátszóságot – az átlátszó területek háttérszínnel lesznek kitöltve.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A WebP a Google által fejlesztett modern képformátum, amely veszteséges és veszteségmentes tömörítést is támogat. Jelentősen kisebb fájlokat eredményez, mint a PNG és JPEG hasonló vizuális minőségben, és minden jelenlegi böngésző támogatja.</p><p class=\"text-mid mb-4\">A JPEG a leguniverzálisabb képformátum – kompatibilis minden eszközzel, böngészővel és platformmal. A JPG-re konvertálás biztosítja, hogy képei bárhol problémamentesen megjelenjenek: e-mail mellékletektől a közösségi média bejegyzésekig.</p><p class=\"text-mid mb-4\">A WebP-ből JPEG-be konvertálás maximális kompatibilitást biztosít. A JPG-t minden eszköz és szoftver támogatja – nélkülözhetetlen képek e-mailben való küldéséhez vagy WebP-t nem fogadó platformokra feltöltéséhez.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "WEBP konvertálás JPG formátumba",
       "variant": "right"

@@ -17,10 +17,25 @@ const hubs = [
 ];
 
 const converterKeys = [
-  'jpgToAvif', 'pngToAvif', 'webpToAvif', 'svgToAvif', 'bmpToAvif',
-  'gifToAvif', 'heicToAvif', 'tiffToAvif',
-  'jpgToGif', 'pngToGif', 'webpToGif', 'svgToGif', 'bmpToGif',
-  'jpgToTiff', 'pngToTiff', 'webpToTiff', 'svgToTiff', 'bmpToTiff', 'heicToTiff',
+  'jpgToAvif',
+  'pngToAvif',
+  'webpToAvif',
+  'svgToAvif',
+  'bmpToAvif',
+  'gifToAvif',
+  'heicToAvif',
+  'tiffToAvif',
+  'jpgToGif',
+  'pngToGif',
+  'webpToGif',
+  'svgToGif',
+  'bmpToGif',
+  'jpgToTiff',
+  'pngToTiff',
+  'webpToTiff',
+  'svgToTiff',
+  'bmpToTiff',
+  'heicToTiff',
 ];
 
 // More robust parser that handles apostrophes in values
@@ -51,7 +66,7 @@ for (const hub of hubs) {
 
   // Find the last position
   const posMatches = [...code.matchAll(/position:\s*(\d+)/g)];
-  let lastPos = Math.max(...posMatches.map(m => parseInt(m[1])));
+  let lastPos = Math.max(...posMatches.map((m) => parseInt(m[1])));
 
   // Find missing converters
   const missing = [];
@@ -67,7 +82,7 @@ for (const hub of hubs) {
     continue;
   }
 
-  console.log('⚙', hub.locale, `adding ${missing.length} missing entries:`, missing.map(m => m.key).join(', '));
+  console.log('⚙', hub.locale, `adding ${missing.length} missing entries:`, missing.map((m) => m.key).join(', '));
 
   // Find insertion point - the closing of the itemListElement
   const closingMatch = code.match(/\n(\s+)\],\s*\n\s*\},\s*\n\};/);

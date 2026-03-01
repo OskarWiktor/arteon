@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Conversor JPG para WebP",
-      "alternateName": [],
+      "alternateName": ["Converter JPG para WEBP", "Conversão de JPG para WEBP", "Conversor JPG para WEBP grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta fotos JPG para WebP leve. Reduza o peso das imagens até 35%.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter JPG para WebP?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) é um formato de imagem com perda que suporta milhões de cores. É amplamente utilizado para fotografias.</p><p class=\"text-mid mb-4\">Converter JPG para WebP (WebP) aproveita a compressão moderna para ficheiros mais leves sem perda de qualidade.</p><p class=\"text-mid mb-4\">WebP suporta transparência alfa. WebP oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O JPEG (JPG) é o formato de imagem mais utilizado no mundo para fotografias digitais. Utiliza compressão com perdas para obter ficheiros compactos, mas não suporta transparência nem armazenamento sem perdas.</p><p class=\"text-mid mb-4\">O WebP reduz o tamanho do ficheiro em 30–35% em relação a formatos anteriores, sem perda de qualidade visível. Todos os navegadores modernos (Chrome, Firefox, Safari 14+, Edge) suportam totalmente o WebP. Para sites web, isto significa tempos de carregamento mais rápidos e melhor posicionamento no Google.</p><p class=\"text-mid mb-4\">O WebP pode reduzir o tamanho das suas fotos JPEG em 25–35% sem perda de qualidade visível. Como o JPEG não suporta transparência, nenhuma informação é perdida nesta conversão.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de JPG para WEBP",
       "variant": "right"

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna iPhone HEIC-valokuvat yleiseen JPG-muotoon. Ei rekisteroitymista, ei lahetysta palvelimelle.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Muunna HEIC JPG-muotoon", "HEIC:n muunto JPG-muotoon", "Ilmainen HEIC–JPG-muunnin"]
     },
     "howTo": {
       "name": "HEIC to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa HEIC JPG-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) on häviöllinen kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">HEIC:n muuntaminen JPG-muotoon (JPEG) varmistaa yleismaailmallisen yhteensopivuuden kaikkien selainten ja laitteiden kanssa.</p><p class=\"text-mid mb-4\">JPG ei tue läpinäkyvyyttä – läpinäkyvät alueet täytetään taustavärillä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) on Apple-laitteiden oletuskuvamuoto iOS 11:stä lähtien. HEIC tarjoaa pienempiä tiedostoja kuin JPEG vastaavalla laadulla, mutta sitä ei tueta natiivisti Applen ekosysteemin ulkopuolella – ei Windowsissa, Androidissa tai monilla verkkoalustoilla.</p><p class=\"text-mid mb-4\">JPEG on universaalein kuvamuoto – yhteensopiva kaikkien laitteiden, selainten ja alustojen kanssa. Muuntaminen JPG-muotoon varmistaa, että kuvasi näkyvät ongelmitta kaikkialla: sähköpostiliitteistä sosiaalisen median julkaisuihin.</p><p class=\"text-mid mb-4\">HEIC:stä JPG:ksi muunnos muuntaa Applen oman muodon universaalisti yhteensopivaksi JPEG:ksi. Läpinäkyvyys ja HDR-tiedot menetetään, mutta kuvanlaatu pysyy lähes identtisenä alkuperäiseen 85%:n asetuksilla.</p><p class=\"text-mid\">Tämä muunnin toimii kokonaan paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröitymistä. Täysin GDPR-yhteensopiva ja maksuton ilman mitään rajoituksia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "HEIC-JPG-muunnos",
       "variant": "right"
@@ -139,23 +140,23 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "Your HEIC files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+          "title": "Täysi yksityisyys",
+          "description": "HEIC-tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata millekään palvelimelle – kuvasi pysyvät laitteellasi koko ajan."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "No limits",
-          "description": "Convert as many HEIC files to JPG as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta HEIC-tiedostoa JPG-muotoon kuin tarvitset. Ei päivittäisiä rajoituksia, ei tiedostokokorajoituksia, ei vesileimoja."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Quality control",
-          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+          "title": "Laadunhallinta",
+          "description": "Säädä pakkausasetuksia löytääksesi täydellisen tasapainon tiedostokoon ja kuvanlaadun välillä. Esikatsele muutoksia reaaliajassa ennen lataamista."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla – muunnos on nopea ja toimii jopa ilman internet-yhteyttä sivun latauduttua."
         }
       ]
     },

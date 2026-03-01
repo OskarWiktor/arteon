@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "SVG til JPG-konverter",
-      "alternateName": [],
+      "alternateName": ["Konvertér SVG til JPG", "SVG til JPG konvertering", "Gratis SVG til JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere SVG til JPG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et tabsfrit billedformat baseret på vektorgrafik. Det bruges bredt til logoer og ikoner.</p><p class=\"text-mid mb-4\">Konvertering af SVG til JPG (JPEG) reducerer filstørrelsen markant.</p><p class=\"text-mid mb-4\">JPG understøtter ikke gennemsigtighed – gennemsigtige områder fyldes med en baggrundsfarve. Som tabsgivende format opnår JPG fremragende kompressionsforhold.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et XML-baseret vektorformat til todimensionel grafik. SVG-filer er opløsningsuafhængige og forbliver skarpe i enhver størrelse – ideelle til logoer, ikoner og illustrationer.</p><p class=\"text-mid mb-4\">JPEG er det mest universelle billedformat – kompatibelt med enhver enhed, browser og platform. Konvertering til JPG sikrer, at dine billeder vises problemfrit overalt: fra e-mailvedhæftninger til opslag på sociale medier.</p><p class=\"text-mid mb-4\">Rasterisering fra SVG til JPG konverterer den skalerbare vektorgrafik til et pixelbillede med fast opløsning. Gennemsigtige områder fyldes med en baggrundsfarve. Velegnet til platforme, der ikke accepterer SVG.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "SVG til JPG konvertering",
       "variant": "right"

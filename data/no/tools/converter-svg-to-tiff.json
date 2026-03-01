@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter vektor-SVG-grafikk til hoykvalitets TIFF-raster.",
-      "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"]
+      "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
+      "alternateName": ["Konverter SVG til TIFF", "SVG til TIFF konvertering", "Gratis SVG til TIFF konverterer"]
     },
     "howTo": {
       "name": "Hvordan konvertere SVG til TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere SVG til TIFF?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et tapsfritt bildeformat basert på vektorgrafikk. Det brukes mye til logoer og ikoner.</p><p class=\"text-mid mb-4\">Konvertering av SVG til TIFF (Tagged Image File Format) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">TIFF støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et XML-basert vektorformat for todimensjonal grafikk. SVG-filer er oppløsningsuavhengige og forblir skarpe i alle størrelser – ideelle for logoer, ikoner og illustrasjoner.</p><p class=\"text-mid mb-4\">TIFF bevarer full bildekvalitet uten noe datatap og støtter lag og omfattende metadata. Som bransjestandard for trykk og arkivering er TIFF egnet for profesjonelle fotografer og trykkerier.</p><p class=\"text-mid mb-4\">Rasterisering fra SVG til TIFF produserer et tapsfritt pikselbilde i høyeste kvalitet. Ideelt for profesjonelt trykk av vektorgrafikk når en fast pikseloppløsning er nødvendig.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "SVG til TIFF konvertering",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-til-TIFF-konvertering i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">Moderne nettstandarder foretrekker i økende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimaliserte bilder. Konvertering av SVG til TIFF kan direkte forbedre din Largest Contentful Paint (LCP) score, noe som påvirker både søkerangeringer og brukeropplevelse.</p><p class=\"text-mid\">Lokal behandling i nettleseren sikrer full GDPR-samsvar. TIFF gir utmerket komprimering med bevart visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Norge og Norden er personvern avgjørende – lokal bildebehandling beskytter sensitive data. Enten du forbereder bilder for Finn.no, Komplett.no, Elkjøp, CDON, optimaliserer grafikk i WordPress, Shopify, Mystore eller konverterer bilder for Altinn og ID-porten – riktig format er avgjørende.</p><p class=\"text-mid mb-4\">TIFF er bransjestandarden for profesjonell utskrift, arkivering og etterbehandling. Programmer som Adobe Photoshop, Lightroom og GIMP bruker TIFF for tapsfrie redigeringsarbeidsflyter. Konvertering til TIFF bevarer alle bildedata inkludert fargeprofiler, lag og metadata.</p><p class=\"text-mid\">For profesjonell fotografering og trykkproduksjon sikrer TIFF tapsfri kvalitet etter bransjestandarder. Lokal behandling sikrer full GDPR-samsvar.</p>"
     },
     {
       "type": "gap",

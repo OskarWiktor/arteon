@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere BMP necomprimate în AVIF ultracompact.",
-      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
+      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie BMP în AVIF", "Convertor BMP în AVIF", "Convertor gratuit BMP în AVIF"]
     },
     "howTo": {
       "name": "Cum să convertiți BMP în AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți BMP în AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia BMP în AVIF (AV1 Image File Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">AVIF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) este un format de imagine Windows mai vechi care stochează datele pixelilor fără compresie. Fișierele BMP sunt extrem de mari și nepotrivite pentru utilizarea modernă pe web sau pe dispozitive mobile.</p><p class=\"text-mid mb-4\">AVIF oferă cea mai eficientă compresie dintre toate formatele de imagine actuale, reducând dimensiunea cu până la 50% față de JPEG. Chrome, Firefox și Safari 16+ acceptă AVIF. Este alegerea optimă pentru proiecte web critice în ceea ce privește performanța.</p><p class=\"text-mid mb-4\">AVIF oferă cea mai bună compresie pentru modernizarea fișierelor BMP necomprimate. Dimensiunea se reduce cu până la 98% – ideal pentru migrarea arhivelor de imagini vechi în formate moderne.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversie BMP în AVIF",
       "variant": "right"

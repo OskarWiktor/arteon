@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert iPhone HEIC photos to lossless PNG. Full quality and transparency.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HEIC to PNG", "HEIC to PNG conversion", "Free HEIC to PNG converter", "Change HEIC to PNG"]
     },
     "howTo": {
       "name": "HEIC to PNG",

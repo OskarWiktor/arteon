@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "PNG zu JPG Konverter",
-      "alternateName": [],
+      "alternateName": ["PNG in JPG umwandeln", "PNG zu JPG konvertieren", "Kostenloser PNG-zu-JPG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "PNG-Dateien im Browser in JPG umwandeln. Ohne Dateilimit, ohne Registrierung. Lokale Verarbeitung, kein Server-Upload.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum PNG in JPG konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) ist ein verlustfreies Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Grafiken mit Transparenz verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von PNG in JPG (JPEG) reduziert die Dateigröße erheblich und beschleunigt das Laden von Webseiten.</p><p class=\"text-mid mb-4\">JPG unterstützt keine Transparenz – transparente Bereiche werden mit einer Hintergrundfarbe gefüllt. Als verlustbehaftetes Format erreicht JPG hervorragende Kompressionsraten.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) ist ein verlustfreies Bildformat, das Millionen Farben und volle Alpha-Transparenz unterstützt. PNG eignet sich besonders für Logos, Icons, Screenshots und Grafiken mit scharfen Kanten oder Text – überall dort, wo jedes Pixel zählt.</p><p class=\"text-mid mb-4\">JPEG ist das universellste Bildformat – kompatibel mit jedem Gerät, jedem Browser und jeder Plattform weltweit. Die Konvertierung zu JPG stellt sicher, dass Ihre Bilder überall problemlos angezeigt werden können: von E-Mail-Anhängen über Social-Media-Posts bis hin zu Druckdiensten.</p><p class=\"text-mid mb-4\">Bei der Konvertierung von PNG zu JPG geht die Transparenz verloren – transparente Bereiche werden mit einer Hintergrundfarbe (standardmäßig Weiß) gefüllt. Dafür erhalten Sie deutlich kleinere Dateien, die sich besser für Fotos und Webinhalte eignen, bei denen keine Transparenz benötigt wird.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "PNG-zu-JPG-Konvertierung",
       "variant": "right"

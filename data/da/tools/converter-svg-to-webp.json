@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter SVG-grafik til let WebP. Ideel til websites og sociale medier.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertér SVG til WEBP", "SVG til WEBP konvertering", "Gratis SVG til WEBP konverter"]
     },
     "howTo": {
       "name": "SVG to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere SVG til WebP?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et tabsfrit billedformat baseret på vektorgrafik. Det bruges bredt til logoer og ikoner.</p><p class=\"text-mid mb-4\">Konvertering af SVG til WebP (WebP) reducerer filstørrelsen markant.</p><p class=\"text-mid mb-4\">WebP understøtter alfa-gennemsigtighed. WebP tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et XML-baseret vektorformat til todimensionel grafik. SVG-filer er opløsningsuafhængige og forbliver skarpe i enhver størrelse – ideelle til logoer, ikoner og illustrationer.</p><p class=\"text-mid mb-4\">WebP reducerer filstørrelsen med 30–35% sammenlignet med ældre formater uden synligt kvalitetstab. Alle moderne browsere (Chrome, Firefox, Safari 14+, Edge) understøtter WebP fuldt ud. For hjemmesider betyder det hurtigere indlæsningstider og bedre Google-placering.</p><p class=\"text-mid mb-4\">Konverteringen producerer kompakte pixelbilleder fra dine vektorgrafikker i WebP-format. WebP er ideelt til hjemmesider, hvor små filer og hurtige indlæsningstider er afgørende.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "SVG til WEBP konvertering",
       "variant": "right"

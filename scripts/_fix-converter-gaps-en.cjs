@@ -114,7 +114,7 @@ for (const locale of ALL_LOCALES) {
   const toolsDir = path.join(DATA_DIR, locale, 'tools');
   if (!fs.existsSync(toolsDir)) continue;
 
-  const files = fs.readdirSync(toolsDir).filter(f => f.startsWith('converter-'));
+  const files = fs.readdirSync(toolsDir).filter((f) => f.startsWith('converter-'));
 
   for (const file of files) {
     const conv = parseConverterName(file);
@@ -181,7 +181,6 @@ for (const locale of ALL_LOCALES) {
           fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
         }
       }
-
     } catch (err) {
       console.error(`ERROR ${locale}/${file}: ${err.message}`);
     }

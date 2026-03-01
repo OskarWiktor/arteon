@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "JPG til WebP-konverterer",
-      "alternateName": [],
+      "alternateName": ["Konverter JPG til WEBP", "JPG til WEBP konvertering", "Gratis JPG til WEBP konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter JPG-bilder til lett WebP. Spar opptil 35% filstørrelse.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere JPG til WebP?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er et tapsbringende bildeformat. Det brukes mye til fotografier.</p><p class=\"text-mid mb-4\">Konvertering av JPG til WebP (WebP) utnytter moderne komprimering for mindre filer uten kvalitetstap.</p><p class=\"text-mid mb-4\">WebP støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er verdens mest brukte bildeformat for digitale fotografier. Det bruker tapskomprimering for kompakte filer, men støtter verken gjennomsiktighet eller tapsfri lagring.</p><p class=\"text-mid mb-4\">WebP reduserer filstørrelsen med 30–35% sammenlignet med eldre formater uten synlig kvalitetstap. Alle moderne nettlesere (Chrome, Firefox, Safari 14+, Edge) støtter WebP fullt ut. For nettsider betyr dette raskere lastetider og bedre Google-plassering.</p><p class=\"text-mid mb-4\">WebP kan redusere JPEG-fotografiene dine med 25–35% uten synlig kvalitetstap. Siden JPEG ikke støtter gjennomsiktighet, mistes ingen bildeinformasjon ved denne konverteringen.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "JPG til WEBP konvertering",
       "variant": "right"

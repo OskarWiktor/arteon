@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer BMP-bestanden naar professioneel TIFF-formaat voor afdrukken.",
-      "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"]
+      "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
+      "alternateName": ["BMP naar TIFF omzetten", "BMP naar TIFF conversie", "Gratis BMP naar TIFF converter"]
     },
     "howTo": {
       "name": "BMP naar TIFF converteren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom BMP naar TIFF converteren?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van BMP naar TIFF (Tagged Image File Format) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">TIFF ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is een ouder Windows-beeldformaat dat pixeldata ongecomprimeerd opslaat. BMP-bestanden zijn daardoor extreem groot en ongeschikt voor modern gebruik op het web of mobiele apparaten.</p><p class=\"text-mid mb-4\">TIFF behoudt de volledige beeldkwaliteit zonder enig gegevensverlies en ondersteunt lagen en uitgebreide metadata. Als industriestandaard voor drukwerk en archivering is TIFF geschikt voor professionele fotografen en drukkerijen.</p><p class=\"text-mid mb-4\">De conversie van BMP naar TIFF behoudt de volledige beeldkwaliteit en voegt professionele metadata-ondersteuning toe. TIFF is geschikter dan BMP voor langdurige archivering en professionele drukworkflows.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "BMP naar TIFF conversie",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-naar-TIFF-conversie in de praktijk",
-      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">Moderne webstandaarden geven steeds meer de voorkeur aan efficiënte formaten. Google PageSpeed Insights en Core Web Vitals belonen pagina's met geoptimaliseerde afbeeldingen. Het converteren van BMP naar TIFF kan uw Largest Contentful Paint (LCP) score direct verbeteren, wat invloed heeft op zowel zoekresultaten als gebruikerservaring.</p><p class=\"text-mid\">Lokale verwerking in de browser garandeert volledige AVG/GDPR-naleving. TIFF biedt uitstekende compressie met behoud van visuele kwaliteit.</p>"
+      "html": "<p class=\"text-mid mb-4\">In Nederland en België hechten consumenten veel waarde aan privacy – lokale beeldconversie beschermt gevoelige gegevens. Of u nu afbeeldingen voorbereidt voor Bol.com, Marktplaats, Amazon.nl, Coolblue, graphics optimaliseert in WordPress, Shopify, Lightspeed of foto's converteert voor Rijksoverheid.nl en DigiD – het juiste formaat is essentieel.</p><p class=\"text-mid mb-4\">TIFF is de industriestandaard voor professioneel drukwerk, archivering en nabewerking. Programma's als Adobe Photoshop, Lightroom en GIMP gebruiken TIFF voor verliesvrije bewerkingsworkflows. Conversie naar TIFF behoudt alle beeldgegevens inclusief kleurprofielen, lagen en metadata.</p><p class=\"text-mid\">Voor professionele fotografie en drukproductie garandeert TIFF verliesvrije kwaliteit die voldoet aan de industrienormen. Lokale verwerking garandeert volledige AVG-conformiteit.</p>"
     },
     {
       "type": "gap",

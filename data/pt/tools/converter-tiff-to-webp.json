@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta ficheiros TIFF para WebP leve. Enorme reducao de tamanho com qualidade preservada.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Converter TIFF para WEBP", "Conversão de TIFF para WEBP", "Conversor TIFF para WEBP grátis"]
     },
     "howTo": {
       "name": "TIFF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter TIFF para WebP?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) é um formato de imagem sem perda que suporta milhões de cores. É amplamente utilizado para impressão e arquivo.</p><p class=\"text-mid mb-4\">Converter TIFF para WebP (WebP) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">WebP suporta transparência alfa. WebP oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Tagged Image File Format (TIFF) é o padrão da indústria para fotografia profissional, impressão e arquivamento. O TIFF armazena imagens sem perdas com profundidade de cor completa, camadas e metadados.</p><p class=\"text-mid mb-4\">O WebP reduz o tamanho do ficheiro em 30–35% em relação a formatos anteriores, sem perda de qualidade visível. Todos os navegadores modernos (Chrome, Firefox, Safari 14+, Edge) suportam totalmente o WebP. Para sites web, isto significa tempos de carregamento mais rápidos e melhor posicionamento no Google.</p><p class=\"text-mid mb-4\">O WebP reduz drasticamente o tamanho dos ficheiros TIFF – frequentemente mais de 90%. Ideal para otimizar fotografias profissionais ou digitalizações de alta resolução para a web.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de TIFF para WEBP",
       "variant": "right"

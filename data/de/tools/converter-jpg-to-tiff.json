@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG-Fotos in verlustfreies TIFF umwandeln. Zum Drucken und Archivieren.",
-      "featureList": ["Konvertierung zu TIFF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+      "featureList": ["Konvertierung zu TIFF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
+      "alternateName": ["JPG in TIFF umwandeln", "JPG zu TIFF konvertieren", "Kostenloser JPG-zu-TIFF-Konverter"]
     },
     "howTo": {
       "name": "JPG zu TIFF konvertieren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum JPG in TIFF konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Fotos verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von JPG in TIFF (Tagged Image File Format) bietet mehr Flexibilität bei der Verwendung Ihrer Bilder.</p><p class=\"text-mid mb-4\">TIFF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt TIFF die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) ist das weltweit meistverbreitete Format für digitale Fotos und Bilder. Es nutzt verlustbehaftete Komprimierung für kompakte Dateigrößen, unterstützt jedoch weder Transparenz noch verlustfreie Speicherung.</p><p class=\"text-mid mb-4\">TIFF bewahrt die volle Bildqualität ohne jeglichen Datenverlust und unterstützt Ebenen sowie umfangreiche Metadaten. Als Industriestandard für Druck und Archivierung eignet sich TIFF für professionelle Fotografen, Druckereien und alle, die Bilder in höchster Qualität aufbewahren möchten.</p><p class=\"text-mid mb-4\">Die Konvertierung bewahrt die aktuelle Bildqualität Ihres JPEGs und speichert sie verlustfrei im TIFF-Format. Bereits durch JPEG-Komprimierung verlorene Details können nicht wiederhergestellt werden, aber TIFF erlaubt verlustfreie Weiterbearbeitung ohne zusätzliche Qualitätseinbußen.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "JPG-zu-TIFF-Konvertierung",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-zu-TIFF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von JPG in TIFF kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet TIFF hervorragende Kompression bei guter Qualität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">TIFF ist der Branchenstandard für professionellen Druck, Archivierung und Nachbearbeitung. Programme wie Adobe Photoshop, Lightroom und GIMP nutzen TIFF für verlustfreie Bearbeitungsworkflows. Die Konvertierung in TIFF bewahrt sämtliche Bilddaten einschließlich Farbprofile, Ebenen und Metadaten.</p><p class=\"text-mid\">Für professionelle Fotografie und Druckproduktion gewährleistet TIFF verlustfreie Qualität nach Industriestandard. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
     },
     {
       "type": "gap",

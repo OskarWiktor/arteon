@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "SVG grafika konvertálása konnyu WebP-re. Idealis weboldalakon es kozossegi mediaban.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["SVG konvertálása WEBP formátumba", "SVG–WEBP átalakítás", "Ingyenes SVG–WEBP konverter"]
     },
     "howTo": {
       "name": "SVG to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes SVG-t WebP-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Scalable Vector Graphics (SVG) egy veszteségmentes képformátum, amely vektorgrafikán alapul. Széles körben használják logókhoz és ikonokhoz.</p><p class=\"text-mid mb-4\">A SVG konvertálása WebP-re (WebP) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A WebP támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Scalable Vector Graphics (SVG) egy XML-alapú vektorformátum kétdimenziós grafikákhoz. Az SVG fájlok felbontás-függetlenek és bármilyen méretben élesek maradnak – ideálisak logókhoz, ikonokhoz és illusztrációkhoz.</p><p class=\"text-mid mb-4\">A WebP 30–35%-kal csökkenti a fájlméretet a régebbi formátumokhoz képest, látható minőségromlás nélkül. Minden modern böngésző (Chrome, Firefox, Safari 14+, Edge) teljes mértékben támogatja a WebP-t. Webhelyek számára ez gyorsabb betöltési időt és jobb Google-helyezést jelent.</p><p class=\"text-mid mb-4\">A konvertálás kompakt pixelképeket hoz létre vektorgrafikáiból WebP formátumban. A WebP ideális weboldalakhoz, ahol a kis fájlméret és a gyors betöltési idő meghatározó.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "SVG konvertálás WEBP formátumba",
       "variant": "right"

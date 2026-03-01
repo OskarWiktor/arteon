@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "SVG til PNG-konverter",
-      "alternateName": [],
+      "alternateName": ["Konvertér SVG til PNG", "SVG til PNG konvertering", "Gratis SVG til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere SVG til PNG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et tabsfrit billedformat baseret på vektorgrafik. Det bruges bredt til logoer og ikoner.</p><p class=\"text-mid mb-4\">Konvertering af SVG til PNG (Portable Network Graphics) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">PNG understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer PNG alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) er et XML-baseret vektorformat til todimensionel grafik. SVG-filer er opløsningsuafhængige og forbliver skarpe i enhver størrelse – ideelle til logoer, ikoner og illustrationer.</p><p class=\"text-mid mb-4\">PNG bevarer den fulde billedkvalitet uden komprimeringsartefakter og understøtter fuld alfa-gennemsigtighed. Dette tabsfrie format er ideelt til grafik, der skal viderebearbejdes, og billeder hvor gennemsigtige områder skal bevares.</p><p class=\"text-mid mb-4\">Rasterisering fra SVG til PNG konverterer vektorbilledet til pixels med fuld bevarelse af gennemsigtighed. PNG er velegnet til sociale medier og beskedapps, der ikke understøtter SVG.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "SVG til PNG konvertering",
       "variant": "right"

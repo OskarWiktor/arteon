@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertisseur WebP en PNG",
-      "alternateName": [],
+      "alternateName": ["Convertir WEBP en PNG", "Conversion WEBP vers PNG", "Convertisseur WEBP en PNG gratuit"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez vos images WebP en PNG sans perte. Traitement local, rien n'est envoyé.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir WebP en PNG ?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) est un format d’image avec perte prenant en charge des millions de couleurs. Il est largement utilisé pour les images web.</p><p class=\"text-mid mb-4\">La conversion de WebP en PNG (Portable Network Graphics) garantit une compatibilité universelle avec tous les navigateurs et appareils.</p><p class=\"text-mid mb-4\">PNG prend en charge la transparence alpha. En tant que format sans perte, PNG préserve l’intégralité des données de l’image.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Le WebP est un format d'image moderne développé par Google, prenant en charge à la fois la compression avec et sans perte. Il produit des fichiers nettement plus légers que le PNG et le JPEG à qualité visuelle comparable, et est supporté par tous les navigateurs actuels.</p><p class=\"text-mid mb-4\">Le PNG préserve la qualité d'image complète sans artefacts de compression et prend en charge la transparence alpha complète. Ce format sans perte est idéal pour les graphiques destinés à être retravaillés et pour les images dont les zones transparentes doivent être conservées.</p><p class=\"text-mid mb-4\">La conversion de WebP en PNG préserve la transparence de votre image et la stocke sans perte. Le PNG convient particulièrement au traitement ultérieur dans les logiciels graphiques et pour les plateformes ne prenant pas en charge le format WebP.</p><p class=\"text-mid\">Ce convertisseur fonctionne entièrement en local dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléversement, aucun serveur, aucune inscription. Entièrement conforme au RGPD et gratuit sans aucune limitation.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Conversion WEBP en PNG",
       "variant": "right"

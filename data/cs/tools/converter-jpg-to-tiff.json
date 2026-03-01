@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte fotky JPG na bezztratovy TIFF. Pro tisk a archivaci.",
-      "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
+      "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
+      "alternateName": ["Převést JPG na TIFF", "Konverze JPG do TIFF", "Převodník JPG na TIFF zdarma"]
     },
     "howTo": {
       "name": "Jak převést JPG na TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět JPG na TIFF?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro fotografie.</p><p class=\"text-mid mb-4\">Převod JPG na TIFF (Tagged Image File Format) nabízí více flexibility.</p><p class=\"text-mid mb-4\">TIFF podporuje alfa průhlednost. Jako bezeztrátový formát zachovává TIFF veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je celosvětově nejrozšířenější formát pro digitální fotografie. Využívá ztrátovou kompresi pro kompaktní soubory, ale nepodporuje transparenci ani bezeztrátové ukládání.</p><p class=\"text-mid mb-4\">TIFF zachovává plnou kvalitu obrazu bez jakékoli ztráty dat a podporuje vrstvy a rozsáhlá metadata. Jako průmyslový standard pro tisk a archivaci je TIFF vhodný pro profesionální fotografy a tiskárny.</p><p class=\"text-mid mb-4\">Převod zachovává aktuální kvalitu vašeho JPEG a ukládá ji bezeztrátově ve formátu TIFF. Detaily ztracené JPEG kompresí nelze obnovit, ale TIFF umožňuje další úpravy bez dalších ztrát.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Převod JPG na TIFF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Převod JPG na TIFF v praxi",
-      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">Moderní webové standardy stále více upřednostňují efektivní formáty. Google PageSpeed Insights a metriky Core Web Vitals odměňují stránky s optimalizovanými obrázky. Převod JPG na TIFF může přímo zlepšit vaše skóre Largest Contentful Paint (LCP), což ovlivňuje pozice ve vyhledávání i uživatelský zážitek.</p><p class=\"text-mid\">Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR. TIFF poskytuje vynikající kompresi při zachování vizuální kvality.</p>"
+      "html": "<p class=\"text-mid mb-4\">České e-shopy a inzertní portály často vyžadují konkrétní formáty obrázků. Ať už připravujete obrázky pro Heureka.cz, Alza.cz, Bazár, Mall.cz, optimalizujete grafiku v WordPress, Shoptet, Shopify nebo konvertujete fotografie pro Datové schránky a Portál občana – správný formát má zásadní význam.</p><p class=\"text-mid mb-4\">TIFF je průmyslový standard pro profesionální tisk, archivaci a postprodukci. Programy jako Adobe Photoshop, Lightroom a GIMP využívají TIFF pro bezeztrátové editační workflow. Konverze do TIFF zachovává veškerá obrazová data včetně barevných profilů, vrstev a metadat.</p><p class=\"text-mid\">Pro profesionální fotografii a tiskovou produkci TIFF zajišťuje bezeztrátovou kvalitu splňující průmyslové standardy. Veškeré zpracování probíhá lokálně v prohlížeči, což zajišťuje plný soulad s GDPR.</p>"
     },
     {
       "type": "gap",

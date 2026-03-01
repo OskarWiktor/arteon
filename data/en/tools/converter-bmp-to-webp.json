@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert uncompressed BMP to lightweight WebP. Up to 95% size reduction.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert BMP to WEBP", "BMP to WEBP conversion", "Free BMP to WEBP converter", "Change BMP to WEBP"]
     },
     "howTo": {
       "name": "BMP to WebP",

@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "WebP til JPG-konverter",
-      "alternateName": [],
+      "alternateName": ["Konvertér WEBP til JPG", "WEBP til JPG konvertering", "Gratis WEBP til JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér WebP-filer til universelt kompatibelt JPG.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere WebP til JPG?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til webbilleder.</p><p class=\"text-mid mb-4\">Konvertering af WebP til JPG (JPEG) sikrer universel kompatibilitet med alle browsere og enheder.</p><p class=\"text-mid mb-4\">JPG understøtter ikke gennemsigtighed – gennemsigtige områder fyldes med en baggrundsfarve. Som tabsgivende format opnår JPG fremragende kompressionsforhold.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP er et moderne billedformat udviklet af Google, der understøtter både tabsgivende og tabsfri komprimering. Det producerer markant mindre filer end PNG og JPEG ved sammenlignelig visuel kvalitet og understøttes af alle aktuelle browsere.</p><p class=\"text-mid mb-4\">JPEG er det mest universelle billedformat – kompatibelt med enhver enhed, browser og platform. Konvertering til JPG sikrer, at dine billeder vises problemfrit overalt: fra e-mailvedhæftninger til opslag på sociale medier.</p><p class=\"text-mid mb-4\">Konvertering fra WebP til JPEG sikrer maksimal kompatibilitet. JPG understøttes af enhver enhed og software – uundværligt for at sende billeder via e-mail eller uploade til platforme, der ikke accepterer WebP.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "WEBP til JPG konvertering",
       "variant": "right"

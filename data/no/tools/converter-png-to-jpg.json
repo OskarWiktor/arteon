@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "PNG til JPG-konverterer",
-      "alternateName": [],
+      "alternateName": ["Konverter PNG til JPG", "PNG til JPG konvertering", "Gratis PNG til JPG konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter PNG-filer til JPG i nettleseren. Uten begrensning, uten registrering.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere PNG til JPG?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av PNG til JPG (JPEG) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">JPG støtter ikke gjennomsiktighet – gjennomsiktige områder fylles med en bakgrunnsfarge.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tapsfritt bildeformat som støtter millioner av farger og full alfa-gjennomsiktighet. PNG er spesielt egnet for logoer, ikoner, skjermbilder og grafikk med skarpe kanter eller tekst.</p><p class=\"text-mid mb-4\">JPEG er det mest universelle bildeformatet – kompatibelt med alle enheter, nettlesere og plattformer. Konvertering til JPG sikrer at bildene dine vises problemfritt overalt: fra e-postvedlegg til innlegg i sosiale medier.</p><p class=\"text-mid mb-4\">Ved konvertering fra PNG til JPG mistes gjennomsiktigheten – gjennomsiktige områder fylles med en bakgrunnsfarge. Til gjengjeld får du vesentlig mindre filer, egnet for fotografier og nettinnhold uten gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "PNG til JPG konvertering",
       "variant": "right"

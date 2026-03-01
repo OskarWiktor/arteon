@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert vector SVG graphics to compact AVIF raster format.",
-      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert SVG to AVIF", "SVG to AVIF conversion", "Free SVG to AVIF converter", "Change SVG to AVIF"]
     },
     "howTo": {
       "name": "How to convert SVG to AVIF",

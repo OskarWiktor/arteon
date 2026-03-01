@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti file AVIF in PNG lossless. Qualita e trasparenza preservate.",
-      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convertire AVIF in PNG", "Conversione AVIF in PNG", "Convertitore AVIF in PNG gratuito"]
     },
     "howTo": {
       "name": "AVIF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire AVIF in PNG?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) è un formato immagine con perdita che supporta milioni di colori. È ampiamente utilizzato per le immagini web moderne.</p><p class=\"text-mid mb-4\">La conversione da AVIF a PNG (Portable Network Graphics) garantisce la compatibilità universale con tutti i browser e dispositivi.</p><p class=\"text-mid mb-4\">PNG supporta la trasparenza alfa. Come formato senza perdita, PNG preserva tutti i dati dell’immagine.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">L'AV1 Image File Format (AVIF) è un formato immagine di nuova generazione basato sul codec video AV1. L'AVIF offre attualmente la migliore compressione disponibile – file fino al 50% più leggeri del WebP a qualità visiva comparabile.</p><p class=\"text-mid mb-4\">Il PNG preserva la qualità dell'immagine completa senza artefatti di compressione e supporta la trasparenza alfa completa. Questo formato senza perdita è ideale per grafiche destinate a ulteriori elaborazioni e per immagini in cui le aree trasparenti devono essere conservate.</p><p class=\"text-mid mb-4\">La conversione preserva la qualità dell'immagine senza perdita nel formato PNG universalmente supportato. Il PNG è particolarmente adatto se desiderate conservare la trasparenza o elaborare l'immagine in programmi grafici.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione AVIF in PNG",
       "variant": "right"

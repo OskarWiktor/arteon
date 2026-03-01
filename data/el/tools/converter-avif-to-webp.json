@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε αρχεια AVIF σε WebP. Ευρεια συμβατοτητα με μικρο μεγεθος.",
-      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Μετατροπή AVIF σε WEBP", "Μετατροπέας AVIF σε WEBP", "Δωρεάν μετατροπέας AVIF σε WEBP"]
     },
     "howTo": {
       "name": "AVIF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε AVIF σε WebP;",
-      "html": "<p class=\"text-mid mb-4\">Το AV1 Image File Format (AVIF) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή AVIF σε WebP (WebP) αξιοποιεί τη σύγχρονη συμπίεση για μικρότερα αρχεία.</p><p class=\"text-mid mb-4\">Το WebP υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το AV1 Image File Format (AVIF) είναι μια μορφή εικόνας νέας γενιάς βασισμένη στον κωδικοποιητή βίντεο AV1. Το AVIF προσφέρει την καλύτερη διαθέσιμη συμπίεση – αρχεία έως 50% μικρότερα από WebP σε συγκρίσιμη οπτική ποιότητα.</p><p class=\"text-mid mb-4\">Το WebP μειώνει το μέγεθος αρχείου κατά 30–35% σε σύγκριση με παλαιότερες μορφές, χωρίς ορατή απώλεια ποιότητας. Όλοι οι σύγχρονοι περιηγητές (Chrome, Firefox, Safari 14+, Edge) υποστηρίζουν πλήρως το WebP. Για ιστοσελίδες αυτό σημαίνει ταχύτερους χρόνους φόρτωσης και καλύτερη κατάταξη στο Google.</p><p class=\"text-mid mb-4\">Το WebP προσφέρει ευρύτερη υποστήριξη περιηγητών από AVIF με καλή συμπίεση. Η μετατροπή έχει νόημα όταν η πλατφόρμα-στόχος υποστηρίζει WebP αλλά όχι ακόμη AVIF.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή AVIF σε WEBP",
       "variant": "right"

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Μετατροπή TIFF σε PNG", "Μετατροπέας TIFF σε PNG", "Δωρεάν μετατροπέας TIFF σε PNG"]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε TIFF σε PNG;",
-      "html": "<p class=\"text-mid mb-4\">Το Tagged Image File Format (TIFF) είναι ένα μορφότυπο εικόνας χωρίς απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή TIFF σε PNG (Portable Network Graphics) εξασφαλίζει καθολική συμβατότητα με όλους τους φυλλομετρητές και συσκευές.</p><p class=\"text-mid mb-4\">Το PNG υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το Tagged Image File Format (TIFF) είναι το βιομηχανικό πρότυπο για επαγγελματική φωτογραφία, εκτύπωση και αρχειοθέτηση. Το TIFF αποθηκεύει εικόνες χωρίς απώλειες με πλήρες βάθος χρώματος, επίπεδα και μεταδεδομένα.</p><p class=\"text-mid mb-4\">Το PNG διατηρεί την πλήρη ποιότητα εικόνας χωρίς τεχνουργήματα συμπίεσης και υποστηρίζει πλήρη διαφάνεια άλφα. Αυτή η μορφή χωρίς απώλειες είναι ιδανική για γραφικά που χρειάζονται περαιτέρω επεξεργασία.</p><p class=\"text-mid mb-4\">Η μετατροπή διατηρεί την ποιότητα χωρίς απώλειες και τη διαφάνεια αν υπάρχει. Τα PNG είναι σημαντικά μικρότερα από TIFF και υποστηρίζονται από όλες τις συσκευές.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή TIFF σε PNG",
       "variant": "right"

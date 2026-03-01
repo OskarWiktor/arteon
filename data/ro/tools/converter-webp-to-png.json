@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertor WebP în PNG",
-      "alternateName": [],
+      "alternateName": ["Conversie WEBP în PNG", "Convertor WEBP în PNG", "Convertor gratuit WEBP în PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește imagini WebP în PNG fără pierderi. Conversie locală.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți WebP în PNG?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini web.</p><p class=\"text-mid mb-4\">Conversia WebP în PNG (Portable Network Graphics) asigură compatibilitate universală cu toate browserele și dispozitivele.</p><p class=\"text-mid mb-4\">PNG suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP este un format modern de imagine dezvoltat de Google care acceptă atât compresie cu pierderi, cât și fără pierderi. Produce fișiere semnificativ mai mici decât PNG și JPEG la calitate vizuală comparabilă și este acceptat de toate browserele actuale.</p><p class=\"text-mid mb-4\">PNG păstrează calitatea completă a imaginii fără artefacte de compresie și acceptă transparență alfa completă. Acest format fără pierderi este ideal pentru grafică destinată editării ulterioare și imagini unde zonele transparente trebuie păstrate.</p><p class=\"text-mid mb-4\">Conversia din WebP în PNG păstrează transparența imaginii și o stochează fără pierderi. PNG este potrivit pentru editarea ulterioară în programe grafice și pentru platforme care nu acceptă WebP.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie WEBP în PNG",
       "variant": "right"

@@ -77,7 +77,10 @@ function limitTo9Items(sectionCode) {
 
 for (const hub of hubs) {
   const filePath = path.join(appDir, hub.path);
-  if (!fs.existsSync(filePath)) { console.log('SKIP:', hub.locale); continue; }
+  if (!fs.existsSync(filePath)) {
+    console.log('SKIP:', hub.locale);
+    continue;
+  }
 
   let code = fs.readFileSync(filePath, 'utf8');
   const section = findSectionSteps(code, hub.title);

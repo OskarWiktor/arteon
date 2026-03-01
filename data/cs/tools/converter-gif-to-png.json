@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Převodník GIF na PNG",
-      "alternateName": [],
+      "alternateName": ["Převést GIF na PNG", "Konverze GIF do PNG", "Převodník GIF na PNG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportujte první snímek GIFu jako statické PNG. Bez ztráty kvality.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět GIF na PNG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) je bezeztrátový obrazový formát podporující 256 barev. Je široce používán pro jednoduché animace.</p><p class=\"text-mid mb-4\">Převod GIF na PNG (Portable Network Graphics) nabízí více flexibility.</p><p class=\"text-mid mb-4\">PNG podporuje alfa průhlednost. Jako bezeztrátový formát zachovává PNG veškerá obrazová data.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) podporuje animace a paletu maximálně 256 barev. GIF je široce používán pro animovaný obsah na sociálních sítích, ale omezení barev ho činí nevhodným pro fotorealistické snímky.</p><p class=\"text-mid mb-4\">PNG zachovává plnou kvalitu obrazu bez kompresních artefaktů a podporuje plnou alfa transparenci. Tento bezeztrátový formát je ideální pro grafiku určenou k dalšímu zpracování a pro obrázky, kde musí zůstat zachovány průhledné oblasti.</p><p class=\"text-mid mb-4\">Převod zachovává kvalitu bezeztrátově a podporuje binární transparenci. U animovaných GIF se převede pouze první snímek. PNG je vhodný pro další zpracování GIF grafiky.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod GIF na PNG",
       "variant": "right"

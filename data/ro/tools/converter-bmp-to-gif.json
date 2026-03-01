@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere BMP necomprimate în GIF usor.",
-      "featureList": ["Conversie în GIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
+      "featureList": ["Conversie în GIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie BMP în GIF", "Convertor BMP în GIF", "Convertor gratuit BMP în GIF"]
     },
     "howTo": {
       "name": "Cum să convertiți BMP în GIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți BMP în GIF?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia BMP în GIF (Graphics Interchange Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">GIF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) este un format de imagine Windows mai vechi care stochează datele pixelilor fără compresie. Fișierele BMP sunt extrem de mari și nepotrivite pentru utilizarea modernă pe web sau pe dispozitive mobile.</p><p class=\"text-mid mb-4\">GIF este formatul standard pentru animații scurte, meme-uri și grafică simplă cu paletă de culori limitată. Cu suport universal în browsere, GIF este deosebit de potrivit pentru conținut animat în rețelele sociale și aplicațiile de mesagerie.</p><p class=\"text-mid mb-4\">Conversia reduce paleta la 256 de culori și comprimă semnificativ fișierul. Potrivit pentru grafică simplă din sisteme vechi, dar pentru imagini BMP fotorealiste se recomandă JPG sau WebP.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversie BMP în GIF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia BMP în GIF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia BMP în GIF poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. GIF oferă compatibilitate maximă cu toate platformele.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Deși GIF nu este cel mai eficient format pentru imagini statice, rămâne esențial pentru animații simple, meme-uri și grafică cu paletă de culori limitată. Limita de 256 de culori face GIF-ul mai puțin potrivit pentru fotografii, dar ideal pentru pictograme, logouri și conținut animat distribuit pe rețelele sociale și aplicațiile de mesagerie.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. GIF oferă compatibilitate maximă cu toate platformele.</p>"
     },
     {
       "type": "gap",

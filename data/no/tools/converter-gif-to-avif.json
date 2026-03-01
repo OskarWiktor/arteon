@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter forste GIF-bilde til statisk AVIF-bilde med utmerket komprimering.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"]
+      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i nettleseren"],
+      "alternateName": ["Konverter GIF til AVIF", "GIF til AVIF konvertering", "Gratis GIF til AVIF konverterer"]
     },
     "howTo": {
       "name": "Hvordan konvertere GIF til AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere GIF til AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av GIF til AVIF (AV1 Image File Format) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">AVIF støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) støtter animasjoner og en palett på maksimalt 256 farger. GIF brukes mye til animert innhold i sosiale medier, men fargebegrensningen gjør det uegnet for fotorealistiske bilder.</p><p class=\"text-mid mb-4\">AVIF tilbyr den mest effektive komprimeringen av alle nåværende bildeformater og kan redusere filstørrelsen opptil 50% sammenlignet med JPEG. Chrome, Firefox og Safari 16+ støtter AVIF. Det er det optimale valget for ytelseskritiske nettprosjekter.</p><p class=\"text-mid mb-4\">AVIF tilbyr overlegen komprimering sammenlignet med GIF og støtter millioner av farger i stedet for kun 256. Ideelt for å modernisere eldre GIF-grafikk på nettsider.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "GIF til AVIF konvertering",
       "variant": "right"

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte fotos HEIC de iPhone a JPG universal. Sin registro, sin subir al servidor.",
-      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convertir HEIC a JPG", "Conversión de HEIC a JPG", "Convertidor HEIC a JPG gratis"]
     },
     "howTo": {
       "name": "HEIC to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir HEIC a JPG?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) es un formato de imagen con pérdida que soporta millones de colores. Se utiliza ampliamente para fotos de dispositivos Apple.</p><p class=\"text-mid mb-4\">Convertir HEIC a JPG (JPEG) garantiza compatibilidad universal con todos los navegadores y dispositivos.</p><p class=\"text-mid mb-4\">JPG no soporta transparencia – las áreas transparentes se rellenarán con un color de fondo. Como formato con pérdida, JPG logra excelentes ratios de compresión.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) es el formato predeterminado para fotos en dispositivos Apple desde iOS 11. HEIC ofrece archivos más ligeros que JPEG con calidad comparable, pero no es compatible de forma nativa fuera del ecosistema Apple: ni en Windows, ni en Android, ni en muchas plataformas web.</p><p class=\"text-mid mb-4\">JPEG es el formato de imagen más universal, compatible con todos los dispositivos, navegadores y plataformas del mundo. La conversión a JPG garantiza que sus imágenes puedan visualizarse sin problemas en cualquier lugar: desde adjuntos de correo electrónico hasta publicaciones en redes sociales y servicios de impresión.</p><p class=\"text-mid mb-4\">La conversión de HEIC a JPG transforma el formato propietario de Apple al formato JPEG universalmente compatible. La transparencia eventual y la información HDR se pierden, pero la calidad de imagen permanece prácticamente idéntica al original con ajustes a partir del 85%.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Conversión de HEIC a JPG",
       "variant": "right"

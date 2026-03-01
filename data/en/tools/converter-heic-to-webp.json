@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert iPhone HEIC photos to lightweight WebP. Smaller size, faster loading.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HEIC to WEBP", "HEIC to WEBP conversion", "Free HEIC to WEBP converter", "Change HEIC to WEBP"]
     },
     "howTo": {
       "name": "HEIC to WebP",

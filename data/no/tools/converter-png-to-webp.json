@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "PNG til WebP-konverterer",
-      "alternateName": [],
+      "alternateName": ["Konverter PNG til WEBP", "PNG til WEBP konvertering", "Gratis PNG til WEBP konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter PNG-grafikk til WebP. Mindre filer med bevart gjennomsiktighet.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere PNG til WebP?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tapsfritt bildeformat. Det brukes mye til bilder.</p><p class=\"text-mid mb-4\">Konvertering av PNG til WebP (WebP) gir mer fleksibilitet.</p><p class=\"text-mid mb-4\">WebP støtter alfa-gjennomsiktighet.</p><p class=\"text-mid\">Denne konverteren jobber lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tapsfritt bildeformat som støtter millioner av farger og full alfa-gjennomsiktighet. PNG er spesielt egnet for logoer, ikoner, skjermbilder og grafikk med skarpe kanter eller tekst.</p><p class=\"text-mid mb-4\">WebP reduserer filstørrelsen med 30–35% sammenlignet med eldre formater uten synlig kvalitetstap. Alle moderne nettlesere (Chrome, Firefox, Safari 14+, Edge) støtter WebP fullt ut. For nettsider betyr dette raskere lastetider og bedre Google-plassering.</p><p class=\"text-mid mb-4\">WebP støtter alfa-gjennomsiktighet akkurat som PNG – alle gjennomsiktige områder bevares fullstendig. Du kan velge mellom tapskomprimering og tapsfri komprimering for å finne den optimale balansen mellom filstørrelse og kvalitet.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "PNG til WEBP konvertering",
       "variant": "right"

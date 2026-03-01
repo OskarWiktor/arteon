@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertidor GIF a PNG",
-      "alternateName": [],
+      "alternateName": ["Convertir GIF a PNG", "Conversión de GIF a PNG", "Convertidor GIF a PNG gratis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exporta el primer fotograma de un GIF como PNG sin pérdida. Sin registro, sin subidas.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir GIF a PNG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) es un formato de imagen sin pérdida que soporta 256 de colores. Se utiliza ampliamente para animaciones simples.</p><p class=\"text-mid mb-4\">Convertir GIF a PNG (Portable Network Graphics) ofrece más flexibilidad.</p><p class=\"text-mid mb-4\">PNG soporta transparencia alfa. Como formato sin pérdida, PNG preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) admite animaciones y una paleta de máximo 256 colores. GIF es muy utilizado para contenido animado en redes sociales y aplicaciones de mensajería, pero su limitación de colores lo hace inadecuado para imágenes fotorrealistas.</p><p class=\"text-mid mb-4\">PNG preserva la calidad de imagen completa sin artefactos de compresión y admite transparencia alfa completa. Este formato sin pérdidas es ideal para gráficos que necesitan ser editados posteriormente y para imágenes donde deben conservarse las áreas transparentes.</p><p class=\"text-mid mb-4\">La conversión preserva la calidad de imagen sin pérdidas y admite transparencia binaria. En GIF animados, solo se convierte el primer frame. PNG es especialmente adecuado para el retrabajo de gráficos GIF.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Conversión de GIF a PNG",
       "variant": "right"

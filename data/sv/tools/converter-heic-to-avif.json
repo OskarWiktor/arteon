@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format.",
-      "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"]
+      "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
+      "alternateName": ["Konvertera HEIC till AVIF", "HEIC till AVIF konvertering", "Gratis HEIC till AVIF konverterare"]
     },
     "howTo": {
       "name": "Hur konverterar man HEIC till AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera HEIC till AVIF?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) är ett förlustbringande bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av HEIC till AVIF (AV1 Image File Format) utnyttjar modern komprimering för mindre filer utan kvalitetsförlust.</p><p class=\"text-mid mb-4\">AVIF stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) är standardformatet för foton på Apple-enheter sedan iOS 11. HEIC ger mindre filer än JPEG vid jämförbar kvalitet, men stöds inte nativt utanför Apples ekosystem – varken på Windows, Android eller många webbplattformar.</p><p class=\"text-mid mb-4\">AVIF erbjuder den mest effektiva komprimeringen av alla aktuella bildformat och kan minska filstorleken upp till 50% jämfört med JPEG. Chrome, Firefox och Safari 16+ stöder AVIF. Det är det optimala valet för prestandakritiska webbprojekt.</p><p class=\"text-mid mb-4\">AVIF erbjuder liknande komprimeringseffektivitet som HEIC, men stöds som öppet format mycket bredare. Konverteringen möjliggör modern komprimering utan begränsningarna i Apples ekosystem.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "HEIC till AVIF konvertering",
       "variant": "right"

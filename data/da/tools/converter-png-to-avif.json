@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter PNG-grafik til AVIF med gennemsigtighedsunderstottelse. Markant mindre filer.",
-      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"]
+      "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
+      "alternateName": ["Konvertér PNG til AVIF", "PNG til AVIF konvertering", "Gratis PNG til AVIF konverter"]
     },
     "howTo": {
       "name": "Hvordan konverterer man PNG til AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere PNG til AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tabsfrit billedformat der understøtter millioner farver. Det bruges bredt til grafik med gennemsigtighed.</p><p class=\"text-mid mb-4\">Konvertering af PNG til AVIF (AV1 Image File Format) reducerer filstørrelsen markant.</p><p class=\"text-mid mb-4\">AVIF understøtter alfa-gennemsigtighed. AVIF tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tabsfrit billedformat, der understøtter millioner af farver og fuld alfa-gennemsigtighed. PNG er særligt velegnet til logoer, ikoner, skærmbilleder og grafik med skarpe kanter eller tekst.</p><p class=\"text-mid mb-4\">AVIF tilbyder den mest effektive komprimering af alle aktuelle billedformater og kan reducere filstørrelsen op til 50% sammenlignet med JPEG. Chrome, Firefox og Safari 16+ understøtter AVIF. Det er det optimale valg til ydelseskritiske webprojekter.</p><p class=\"text-mid mb-4\">AVIF tilbyder endnu bedre komprimering end WebP og kan reducere PNG-billedernes størrelse op til 50%. Alfa-gennemsigtighed understøttes fuldt ud. Ældre browsere understøtter muligvis endnu ikke AVIF.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "PNG til AVIF konvertering",
       "variant": "right"

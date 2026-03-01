@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "JPG PNG konverter",
-      "alternateName": [],
+      "alternateName": ["JPG konvertálása PNG formátumba", "JPG–PNG átalakítás", "Ingyenes JPG–PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes JPG-t PNG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A JPEG (JPG) egy veszteséges képformátum. Széles körben használják fényképekhez.</p><p class=\"text-mid mb-4\">A JPG konvertálása PNG-re (Portable Network Graphics) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A PNG támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A JPEG (JPG) a világ legelterjedtebb képformátuma digitális fényképekhez. Veszteséges tömörítést használ kompakt fájlokhoz, de nem támogatja az átlátszóságot vagy a veszteségmentes tárolást.</p><p class=\"text-mid mb-4\">A PNG megőrzi a teljes képminőséget tömörítési műtermékek nélkül, és támogatja a teljes alfa-átlátszóságot. Ez a veszteségmentes formátum ideális a további szerkesztésre szánt grafikákhoz és az átlátszó területeket megőrzendő képekhez.</p><p class=\"text-mid mb-4\">A JPG-ből PNG-be konvertálás veszteségmentes formátumba alakítja a képet. A JPEG-tömörítés során már elveszett részletek azonban nem állíthatók helyre. A PNG alkalmas, ha a képet további minőségromlás nélkül szeretné szerkeszteni.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "JPG konvertálás PNG formátumba",
       "variant": "right"

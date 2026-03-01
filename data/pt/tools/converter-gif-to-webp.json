@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta o primeiro fotograma GIF para WebP leve. Ficheiro menor, carregamento rapido.",
-      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Converter GIF para WEBP", "Conversão de GIF para WEBP", "Conversor GIF para WEBP grátis"]
     },
     "howTo": {
       "name": "GIF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter GIF para WebP?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) é um formato de imagem sem perda que suporta 256 de cores. É amplamente utilizado para animações simples.</p><p class=\"text-mid mb-4\">Converter GIF para WebP (WebP) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">WebP suporta transparência alfa. WebP oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Graphics Interchange Format (GIF) suporta animações e uma paleta de no máximo 256 cores. O GIF é muito utilizado para conteúdos animados nas redes sociais, mas a limitação de cores torna-o inadequado para imagens fotorrealistas.</p><p class=\"text-mid mb-4\">O WebP reduz o tamanho do ficheiro em 30–35% em relação a formatos anteriores, sem perda de qualidade visível. Todos os navegadores modernos (Chrome, Firefox, Safari 14+, Edge) suportam totalmente o WebP. Para sites web, isto significa tempos de carregamento mais rápidos e melhor posicionamento no Google.</p><p class=\"text-mid mb-4\">O WebP suporta imagens estáticas e animações com compressão significativamente melhor que o GIF. Para GIFs estáticos, a conversão produz ficheiros mais leves com qualidade visual igual ou superior.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de GIF para WEBP",
       "variant": "right"

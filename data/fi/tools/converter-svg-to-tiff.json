@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna vektori-SVG-grafiikat korkealaatuiseen TIFF-rasterimuotoon.",
-      "featureList": ["Muunnos TIFF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"]
+      "featureList": ["Muunnos TIFF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
+      "alternateName": ["Muunna SVG TIFF-muotoon", "SVG:n muunto TIFF-muotoon", "Ilmainen SVG–TIFF-muunnin"]
     },
     "howTo": {
       "name": "Kuinka muuntaa SVG TIFF-muotoon",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa SVG TIFF-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) on häviötön kuvaformaatti, joka perustuu vektorigrafiikkaan.</p><p class=\"text-mid mb-4\">SVG:n muuntaminen TIFF-muotoon (Tagged Image File Format) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">TIFF tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) on XML-pohjainen vektorimuoto kaksiulotteiselle grafiikalle. SVG-tiedostot ovat resoluutioriippumattomia ja pysyvät terävinä missä tahansa koossa – ihanteellisia logoille, kuvakkeille ja kuvituksille.</p><p class=\"text-mid mb-4\">TIFF säilyttää täyden kuvanlaadun ilman minkäänlaista tietojen menetystä ja tukee tasoja ja laajoja metatietoja. Alan standardina tulostuksessa ja arkistoinnissa TIFF soveltuu ammattivalokuvaajille ja painotaloille.</p><p class=\"text-mid mb-4\">SVG:n rasterointi TIFF:ksi tuottaa häviöttömän pikselikuvan korkeimmalla laadulla. Ihanteellinen vektorigrafiikan ammattimaiseen tulostukseen kiinteällä pikseliresoluutiolla.</p><p class=\"text-mid\">Tämä muunnin toimii kokonaan paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröitymistä. Täysin GDPR-yhteensopiva ja maksuton ilman mitään rajoituksia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "SVG-TIFF-muunnos",
       "variant": "right"
@@ -147,23 +148,23 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "Your SVG files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+          "title": "Täysi yksityisyys",
+          "description": "SVG-tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata millekään palvelimelle – kuvasi pysyvät laitteellasi koko ajan."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "No limits",
-          "description": "Convert as many SVG files to TIFF as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta SVG-tiedostoa TIFF-muotoon kuin tarvitset. Ei päivittäisiä rajoituksia, ei tiedostokokorajoituksia, ei vesileimoja."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Quality control",
-          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+          "title": "Laadunhallinta",
+          "description": "Säädä pakkausasetuksia löytääksesi täydellisen tasapainon tiedostokoon ja kuvanlaadun välillä. Esikatsele muutoksia reaaliajassa ennen lataamista."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla – muunnos on nopea ja toimii jopa ilman internet-yhteyttä sivun latauduttua."
         }
       ]
     },
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-TIFF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. SVG-muunnos TIFF-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. TIFF tarjoaa erinomaisen pakkauksen säilyttäen visuaalisen laadun.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">TIFF on alan standardi ammattimaiseen tulostukseen, arkistointiin ja jälkikäsittelyyn. Ohjelmat kuten Adobe Photoshop, Lightroom ja GIMP käyttävät TIFF-muotoa häviöttömiin muokkaustyönkulkuihin. TIFF-muotoon muuntaminen säilyttää kaikki kuvatiedot, mukaan lukien väriprofiilit, tasot ja metatiedot.</p><p class=\"text-mid\">Ammattivalokuvaukseen ja painotuotantoon TIFF takaa häviöttömän laadun alan standardien mukaisesti. Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden.</p>"
     },
     {
       "type": "gap",

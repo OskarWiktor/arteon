@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter WebP-billeder til professionelt TIFF til udskrivning og arkivering.",
-      "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"]
+      "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
+      "alternateName": ["Konvertér WEBP til TIFF", "WEBP til TIFF konvertering", "Gratis WEBP til TIFF konverter"]
     },
     "howTo": {
       "name": "Hvordan konverterer man WebP til TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere WebP til TIFF?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til webbilleder.</p><p class=\"text-mid mb-4\">Konvertering af WebP til TIFF (Tagged Image File Format) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">TIFF understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer TIFF alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP er et moderne billedformat udviklet af Google, der understøtter både tabsgivende og tabsfri komprimering. Det producerer markant mindre filer end PNG og JPEG ved sammenlignelig visuel kvalitet og understøttes af alle aktuelle browsere.</p><p class=\"text-mid mb-4\">TIFF bevarer den fulde billedkvalitet uden noget datatab og understøtter lag og omfattende metadata. Som industristandard for tryk og arkivering er TIFF velegnet til professionelle fotografer og trykkerier.</p><p class=\"text-mid mb-4\">Konverteringen omdanner dine WebP-filer til det professionelle TIFF-format. Ideelt til trykproduktion og langtidsarkivering, hvor tabsfri kvalitet og fuld metadataunderstøttelse er påkrævet.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "WEBP til TIFF konvertering",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Konvertering af WebP til TIFF i praksis",
-      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">Moderne webstandarder foretrækker i stigende grad effektive formater. Google PageSpeed Insights og Core Web Vitals belonner sider med optimerede billeder. Konvertering af WebP til TIFF kan direkte forbedre din Largest Contentful Paint (LCP) score, hvilket påvirker både søgerangeringer og brugeroplevelse.</p><p class=\"text-mid\">Al behandling sker lokalt i browseren, hvilket sikrer fuld GDPR-overensstemmelse. TIFF giver fremragende komprimering med bevaret visuel kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Danmark og Norden er databeskyttelse afgørende – lokal billedbehandling beskytter følsomme data. Uanset om du forbereder billeder til DBA.dk, Bilka.dk, Nemlig.com, COOP, optimerer grafik i WordPress, Shopify, DanDomain eller konverterer fotos til borger.dk og NemID/MitID – det rigtige format er afgørende.</p><p class=\"text-mid mb-4\">TIFF er industristandarden for professionelt tryk, arkivering og efterbehandling. Programmer som Adobe Photoshop, Lightroom og GIMP bruger TIFF til tabsfri redigering. Konvertering til TIFF bevarer alle billeddata inklusive farveprofiler, lag og metadata.</p><p class=\"text-mid\">Til professionel fotografi og trykproduktion sikrer TIFF tabsfri kvalitet efter branchestandarder. Lokal behandling sikrer fuld GDPR-overholdelse.</p>"
     },
     {
       "type": "gap",

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Prevedte prvni snimek GIF na staticky obraz AVIF s vynikajici kompresi.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
+      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
+      "alternateName": ["Převést GIF na AVIF", "Konverze GIF do AVIF", "Převodník GIF na AVIF zdarma"]
     },
     "howTo": {
       "name": "Jak převést GIF na AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět GIF na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) je bezeztrátový obrazový formát podporující 256 barev. Je široce používán pro jednoduché animace.</p><p class=\"text-mid mb-4\">Převod GIF na AVIF (AV1 Image File Format) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">AVIF podporuje alfa průhlednost. AVIF nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) podporuje animace a paletu maximálně 256 barev. GIF je široce používán pro animovaný obsah na sociálních sítích, ale omezení barev ho činí nevhodným pro fotorealistické snímky.</p><p class=\"text-mid mb-4\">AVIF nabízí nejefektivnější kompresi ze všech aktuálních obrazových formátů a dokáže zmenšit velikost až o 50% oproti JPEG. Chrome, Firefox a Safari 16+ podporují AVIF. Je to optimální volba pro výkonnostně kritické webové projekty.</p><p class=\"text-mid mb-4\">AVIF nabízí nadřazenou kompresi oproti GIF a podporuje miliony barev místo pouhých 256. Ideální pro modernizaci starších GIF grafik na webových stránkách.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Převod GIF na AVIF",
       "variant": "right"

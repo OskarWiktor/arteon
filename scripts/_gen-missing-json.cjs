@@ -35,11 +35,11 @@ function getRegistryLocale(key, locale) {
   const localeIdx = area.indexOf(`${locale}: { slug: '`);
   if (localeIdx === -1) return null;
   const line = area.slice(localeIdx, area.indexOf('\n', localeIdx));
-  
+
   const slugMatch = line.match(/slug: '([^']+)'/);
   const titleMatch = line.match(/title: '([^']+)'/);
   if (!slugMatch || !titleMatch) return null;
-  
+
   const descStart = line.indexOf("description: '");
   if (descStart === -1) return null;
   const descContent = line.slice(descStart + 14);
@@ -47,7 +47,7 @@ function getRegistryLocale(key, locale) {
   const closeMatch = descContent.match(/' \}/);
   if (!closeMatch) return null;
   const description = descContent.slice(0, closeMatch.index);
-  
+
   return { slug: slugMatch[1], title: titleMatch[1], description };
 }
 
@@ -129,22 +129,34 @@ const uiStrings = {
 const targetFaqs = {
   AVIF: {
     fr: [
-      { question: "Qu'est-ce que le format AVIF?", answer: "AVIF est un format d'image moderne base sur le codec AV1. Il offre une excellente compression — les fichiers peuvent etre jusqu'a 50% plus petits que JPG." },
+      {
+        question: "Qu'est-ce que le format AVIF?",
+        answer: "AVIF est un format d'image moderne base sur le codec AV1. Il offre une excellente compression — les fichiers peuvent etre jusqu'a 50% plus petits que JPG.",
+      },
       { question: 'AVIF fonctionne-t-il dans tous les navigateurs?', answer: 'AVIF est pris en charge par Chrome, Edge et Firefox. Safari a un support limite pour AVIF.' },
       { question: 'Mes fichiers sont-ils envoyes a un serveur?', answer: 'Non. La conversion se fait entierement dans votre navigateur. Les fichiers ne quittent jamais votre ordinateur.' },
     ],
     nl: [
-      { question: 'Wat is het AVIF-formaat?', answer: 'AVIF is een modern afbeeldingsformaat gebaseerd op de AV1-codec. Het biedt uitstekende compressie — bestanden kunnen tot 50% kleiner zijn dan JPG.' },
+      {
+        question: 'Wat is het AVIF-formaat?',
+        answer: 'AVIF is een modern afbeeldingsformaat gebaseerd op de AV1-codec. Het biedt uitstekende compressie — bestanden kunnen tot 50% kleiner zijn dan JPG.',
+      },
       { question: 'Werkt AVIF in alle browsers?', answer: 'AVIF wordt ondersteund door Chrome, Edge en Firefox. Safari heeft beperkte AVIF-ondersteuning.' },
       { question: 'Worden mijn bestanden naar een server gestuurd?', answer: 'Nee. De conversie vindt volledig plaats in de browser. Bestanden verlaten nooit uw computer.' },
     ],
     it: [
-      { question: "Cos'e il formato AVIF?", answer: "AVIF e un formato immagine moderno basato sul codec AV1. Offre un'eccellente compressione — i file possono essere fino al 50% piu piccoli di JPG." },
+      {
+        question: "Cos'e il formato AVIF?",
+        answer: "AVIF e un formato immagine moderno basato sul codec AV1. Offre un'eccellente compressione — i file possono essere fino al 50% piu piccoli di JPG.",
+      },
       { question: 'AVIF funziona in tutti i browser?', answer: 'AVIF e supportato da Chrome, Edge e Firefox. Safari ha un supporto limitato per AVIF.' },
       { question: 'I miei file vengono inviati a un server?', answer: 'No. La conversione avviene interamente nel browser. I file non lasciano mai il tuo computer.' },
     ],
     el: [
-      { question: 'Τι είναι η μορφή AVIF;', answer: 'Το AVIF είναι μια σύγχρονη μορφή εικόνας βασισμένη στον κωδικοποιητή AV1. Προσφέρει εξαιρετική συμπίεση — τα αρχεία μπορούν να είναι έως 50% μικρότερα από JPG.' },
+      {
+        question: 'Τι είναι η μορφή AVIF;',
+        answer: 'Το AVIF είναι μια σύγχρονη μορφή εικόνας βασισμένη στον κωδικοποιητή AV1. Προσφέρει εξαιρετική συμπίεση — τα αρχεία μπορούν να είναι έως 50% μικρότερα από JPG.',
+      },
       { question: 'Λειτουργεί το AVIF σε όλα τα προγράμματα περιήγησης;', answer: 'Το AVIF υποστηρίζεται από Chrome, Edge και Firefox. Το Safari έχει περιορισμένη υποστήριξη AVIF.' },
       { question: 'Αποστέλλονται τα αρχεία μου σε διακομιστή;', answer: 'Όχι. Η μετατροπή γίνεται εξ ολοκλήρου στο πρόγραμμα περιήγησης. Τα αρχεία δεν φεύγουν ποτέ από τον υπολογιστή σας.' },
     ],
@@ -196,19 +208,30 @@ let created = 0;
 
 for (const m of missingFiles) {
   const reg = getRegistryLocale(m.key, m.locale);
-  if (!reg) { console.log('⚠ No registry data for', m.key, m.locale); continue; }
+  if (!reg) {
+    console.log('⚠ No registry data for', m.key, m.locale);
+    continue;
+  }
 
   const cfg = localeConfig[m.locale];
   const ui = uiStrings[m.locale];
   const faqs = targetFaqs[m.target]?.[m.locale];
-  if (!faqs) { console.log('⚠ No FAQ data for', m.target, m.locale); continue; }
+  if (!faqs) {
+    console.log('⚠ No FAQ data for', m.target, m.locale);
+    continue;
+  }
 
   const toolPath = `${cfg.base}/${reg.slug}`;
   const fileName = `converter-${m.from.toLowerCase()}-to-${m.to.toLowerCase()}.json`;
   const dirPath = path.join(dataDir, m.locale, 'tools');
   const filePath = path.join(dirPath, fileName);
 
-  const r = (s) => s.replace(/\{FROM\}/g, m.from).replace(/\{TO\}/g, m.to).replace(/\{TARGET\}/g, m.to).replace(/\{DESC\}/g, reg.description);
+  const r = (s) =>
+    s
+      .replace(/\{FROM\}/g, m.from)
+      .replace(/\{TO\}/g, m.to)
+      .replace(/\{TARGET\}/g, m.to)
+      .replace(/\{DESC\}/g, reg.description);
 
   const json = {
     toolKey: m.key,

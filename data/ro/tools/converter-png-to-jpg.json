@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertor PNG în JPG",
-      "alternateName": [],
+      "alternateName": ["Conversie PNG în JPG", "Convertor PNG în JPG", "Convertor gratuit PNG în JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere PNG în JPG în browser. Fără limită, fără înregistrare.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți PNG în JPG?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia PNG în JPG (JPEG) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">JPG nu suportă transparența – zonele transparente vor fi umplute cu o culoare de fundal.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) este un format de imagine fără pierderi care acceptă milioane de culori și transparență alfa completă. PNG este deosebit de potrivit pentru logouri, pictograme, capturi de ecran și grafică cu margini clare sau text.</p><p class=\"text-mid mb-4\">JPEG este cel mai universal format de imagine – compatibil cu orice dispozitiv, browser și platformă. Conversia în JPG asigură că imaginile dumneavoastră pot fi vizualizate oriunde fără probleme: de la atașamente email la postări pe rețele sociale.</p><p class=\"text-mid mb-4\">La conversia din PNG în JPG, transparența se pierde – zonele transparente sunt umplute cu o culoare de fundal. În schimb, obțineți fișiere semnificativ mai mici, potrivite pentru fotografii și conținut web fără transparență.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie PNG în JPG",
       "variant": "right"

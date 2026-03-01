@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "iPhone HEIC-Fotos in verlustfreies PNG umwandeln. Volle Qualitat und Transparenz.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["HEIC in PNG umwandeln", "HEIC zu PNG konvertieren", "Kostenloser HEIC-zu-PNG-Konverter"]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum HEIC in PNG konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) ist ein verlustbehaftetes Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Apple-Gerätefotos verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von HEIC in PNG (Portable Network Graphics) stellt universelle Kompatibilität mit allen Browsern und Geräten sicher.</p><p class=\"text-mid mb-4\">PNG unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt PNG die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) ist das Standardformat für Fotos auf Apple-Geräten seit iOS 11. HEIC bietet kleinere Dateigrößen als JPEG bei vergleichbarer Qualität, wird jedoch außerhalb des Apple-Ökosystems – unter Windows, Android und auf vielen Webplattformen – nicht nativ unterstützt.</p><p class=\"text-mid mb-4\">PNG bewahrt die volle Bildqualität ohne Kompressionsartefakte und unterstützt volle Alpha-Transparenz. Das verlustfreie Format eignet sich ideal für Grafiken, die weiterbearbeitet werden sollen, und für Bilder, bei denen transparente Bereiche erhalten bleiben müssen.</p><p class=\"text-mid mb-4\">Die Konvertierung bewahrt die volle Bildqualität Ihres HEIC-Originals verlustfrei im PNG-Format. PNG wird von allen Geräten und Plattformen unterstützt und eignet sich besonders, wenn Sie das Bild weiterbearbeiten oder die Transparenz erhalten möchten.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "HEIC-zu-PNG-Konvertierung",
       "variant": "right"

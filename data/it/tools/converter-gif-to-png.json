@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertitore GIF in PNG",
-      "alternateName": [],
+      "alternateName": ["Convertire GIF in PNG", "Conversione GIF in PNG", "Convertitore GIF in PNG gratuito"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Esporta il primo fotogramma di un GIF come PNG statico. Senza perdita di qualità.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire GIF in PNG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) è un formato immagine senza perdita che supporta 256 di colori. È ampiamente utilizzato per le animazioni semplici.</p><p class=\"text-mid mb-4\">La conversione da GIF a PNG (Portable Network Graphics) offre maggiore flessibilità.</p><p class=\"text-mid mb-4\">PNG supporta la trasparenza alfa. Come formato senza perdita, PNG preserva tutti i dati dell’immagine.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">Il Graphics Interchange Format (GIF) supporta le animazioni e una palette di massimo 256 colori. Il GIF è molto utilizzato per contenuti animati sui social media e nelle app di messaggistica, ma la limitazione di colori lo rende inadatto alle immagini fotorealistiche.</p><p class=\"text-mid mb-4\">Il PNG preserva la qualità dell'immagine completa senza artefatti di compressione e supporta la trasparenza alfa completa. Questo formato senza perdita è ideale per grafiche destinate a ulteriori elaborazioni e per immagini in cui le aree trasparenti devono essere conservate.</p><p class=\"text-mid mb-4\">La conversione preserva la qualità dell'immagine senza perdita e supporta la trasparenza binaria. Per i GIF animati, viene convertito solo il primo frame. Il PNG è particolarmente adatto alla rielaborazione di grafiche GIF.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione GIF in PNG",
       "variant": "right"

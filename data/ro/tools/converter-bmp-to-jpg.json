@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertor BMP în JPG",
-      "alternateName": [],
+      "alternateName": ["Conversie BMP în JPG", "Convertor BMP în JPG", "Convertor gratuit BMP în JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți BMP în JPG?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia BMP în JPG (JPEG) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">JPG nu suportă transparența – zonele transparente vor fi umplute cu o culoare de fundal.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) este un format de imagine Windows mai vechi care stochează datele pixelilor fără compresie. Fișierele BMP sunt extrem de mari și nepotrivite pentru utilizarea modernă pe web sau pe dispozitive mobile.</p><p class=\"text-mid mb-4\">JPEG este cel mai universal format de imagine – compatibil cu orice dispozitiv, browser și platformă. Conversia în JPG asigură că imaginile dumneavoastră pot fi vizualizate oriunde fără probleme: de la atașamente email la postări pe rețele sociale.</p><p class=\"text-mid mb-4\">Fișierele BMP sunt necomprimate și extrem de mari. Conversia în JPEG reduce drastic dimensiunea (adesea peste 95%) și produce fișiere universal compatibile.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie BMP în JPG",
       "variant": "right"

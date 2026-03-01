@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna GIF:n ensimmainen ruutu staattiseksi AVIF-kuvaksi erinomaisella pakkauksella.",
-      "featureList": ["Muunnos AVIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"]
+      "featureList": ["Muunnos AVIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
+      "alternateName": ["Muunna GIF AVIF-muotoon", "GIF:n muunto AVIF-muotoon", "Ilmainen GIF–AVIF-muunnin"]
     },
     "howTo": {
       "name": "Kuinka muuntaa GIF AVIF-muotoon",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa GIF AVIF-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) on häviötön kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">GIF:n muuntaminen AVIF-muotoon (AV1 Image File Format) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">AVIF tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) tukee animaatioita ja enintään 256 värin palettia. GIF on laajalti käytetty animoituun sisältöön sosiaalisessa mediassa, mutta värirajoitus tekee siitä sopimattoman valorealistisille kuville.</p><p class=\"text-mid mb-4\">AVIF tarjoaa tehokkaimman pakkauksen kaikista nykyisistä kuvamuodoista ja voi pienentää tiedostokokoa jopa 50% JPEG:hen verrattuna. Chrome, Firefox ja Safari 16+ tukevat AVIF:ia. Se on optimaalinen valinta suorituskykykriittisiin verkkoprojekteihin.</p><p class=\"text-mid mb-4\">AVIF tarjoaa ylivoimaista pakkausta GIF:iin verrattuna ja tukee miljoonia värejä 256:n sijaan. Ihanteellinen vanhojen GIF-grafiikoiden modernisointiin verkkosivuilla.</p><p class=\"text-mid\">Tämä muunnin toimii kokonaan paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröitymistä. Täysin GDPR-yhteensopiva ja maksuton ilman mitään rajoituksia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "GIF-AVIF-muunnos",
       "variant": "right"
@@ -147,23 +148,23 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "Your GIF files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+          "title": "Täysi yksityisyys",
+          "description": "GIF-tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata millekään palvelimelle – kuvasi pysyvät laitteellasi koko ajan."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "No limits",
-          "description": "Convert as many GIF files to AVIF as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta GIF-tiedostoa AVIF-muotoon kuin tarvitset. Ei päivittäisiä rajoituksia, ei tiedostokokorajoituksia, ei vesileimoja."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Quality control",
-          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+          "title": "Laadunhallinta",
+          "description": "Säädä pakkausasetuksia löytääksesi täydellisen tasapainon tiedostokoon ja kuvanlaadun välillä. Esikatsele muutoksia reaaliajassa ennen lataamista."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla – muunnos on nopea ja toimii jopa ilman internet-yhteyttä sivun latauduttua."
         }
       ]
     },

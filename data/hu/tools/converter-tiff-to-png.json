@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["TIFF konvertálása PNG formátumba", "TIFF–PNG átalakítás", "Ingyenes TIFF–PNG konverter"]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes TIFF-t PNG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Tagged Image File Format (TIFF) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A TIFF konvertálása PNG-re (Portable Network Graphics) univerzális kompatibilitást biztosít minden böngészővel és eszközzel.</p><p class=\"text-mid mb-4\">A PNG támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Tagged Image File Format (TIFF) az iparági szabvány a professzionális fotózáshoz, nyomtatáshoz és archiváláshoz. A TIFF veszteségmentesen tárolja a képeket teljes színmélységgel, rétegekkel és metaadatokkal.</p><p class=\"text-mid mb-4\">A PNG megőrzi a teljes képminőséget tömörítési műtermékek nélkül, és támogatja a teljes alfa-átlátszóságot. Ez a veszteségmentes formátum ideális a további szerkesztésre szánt grafikákhoz és az átlátszó területeket megőrzendő képekhez.</p><p class=\"text-mid mb-4\">A konvertálás veszteségmentesen megőrzi a minőséget és az átlátszóságot, ha van. A PNG fájlok jelentősen kisebbek a TIFF-nél, és minden eszköz és platform támogatja.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "TIFF konvertálás PNG formátumba",
       "variant": "right"

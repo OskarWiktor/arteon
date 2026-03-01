@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera AVIF-filer till WebP. Bred kompatibilitet vid liten filstorlek.",
-      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertera AVIF till WEBP", "AVIF till WEBP konvertering", "Gratis AVIF till WEBP konverterare"]
     },
     "howTo": {
       "name": "AVIF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera AVIF till WebP?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) är ett förlustbringande bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av AVIF till WebP (WebP) utnyttjar modern komprimering för mindre filer utan kvalitetsförlust.</p><p class=\"text-mid mb-4\">WebP stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) är ett nästa generations bildformat baserat på AV1-videocodecen. AVIF erbjuder den bästa tillgängliga komprimeringen – filer upp till 50% mindre än WebP vid jämförbar visuell kvalitet.</p><p class=\"text-mid mb-4\">WebP minskar filstorleken med 30–35% jämfört med äldre format utan synlig kvalitetsförlust. Alla moderna webbläsare (Chrome, Firefox, Safari 14+, Edge) stöder WebP fullt ut. För webbplatser innebär detta snabbare laddningstider och bättre Google-placering.</p><p class=\"text-mid mb-4\">WebP erbjuder bredare webbläsarstöd än AVIF med god komprimering. Konverteringen är meningsfull när din målplattform stöder WebP men ännu inte AVIF – ett vanligt scenario med äldre webbläsare och CMS-system.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "AVIF till WEBP konvertering",
       "variant": "right"

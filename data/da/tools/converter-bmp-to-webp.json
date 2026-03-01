@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter BMP-filer til let WebP. Op til 95% storrelsesreduktion.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertér BMP til WEBP", "BMP til WEBP konvertering", "Gratis BMP til WEBP konverter"]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere BMP til WebP?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) er et tabsfrit billedformat der understøtter millioner farver. Det bruges bredt til ukomprimerede billeder.</p><p class=\"text-mid mb-4\">Konvertering af BMP til WebP (WebP) reducerer filstørrelsen markant.</p><p class=\"text-mid mb-4\">WebP understøtter alfa-gennemsigtighed. WebP tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) er et ældre Windows-billedformat, der lagrer pixeldata uden komprimering. BMP-filer er derfor ekstremt store og uegnede til moderne brug på nettet eller mobile enheder.</p><p class=\"text-mid mb-4\">WebP reducerer filstørrelsen med 30–35% sammenlignet med ældre formater uden synligt kvalitetstab. Alle moderne browsere (Chrome, Firefox, Safari 14+, Edge) understøtter WebP fuldt ud. For hjemmesider betyder det hurtigere indlæsningstider og bedre Google-placering.</p><p class=\"text-mid mb-4\">WebP reducerer de enorme BMP-filstørrelser med op til 97% ved god visuel kvalitet. Konverteringen moderniserer dine ældre billeder til brug på hjemmesider.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "BMP til WEBP konvertering",
       "variant": "right"

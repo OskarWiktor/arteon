@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "JPG til WebP-konverter",
-      "alternateName": [],
+      "alternateName": ["Konvertér JPG til WEBP", "JPG til WEBP konvertering", "Gratis JPG til WEBP konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér JPG-fotos til let WebP. Spar op til 35% filstørrelse.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere JPG til WebP?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til fotografier.</p><p class=\"text-mid mb-4\">Konvertering af JPG til WebP (WebP) udnytter moderne komprimering til mindre filer uden kvalitetstab.</p><p class=\"text-mid mb-4\">WebP understøtter alfa-gennemsigtighed. WebP tilbyder både tabsgivende og tabsfri komprimering.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er verdens mest udbredte billedformat til digitale fotos. Det bruger tabsgivende komprimering til kompakte filer, men understøtter hverken gennemsigtighed eller tabsfri lagring.</p><p class=\"text-mid mb-4\">WebP reducerer filstørrelsen med 30–35% sammenlignet med ældre formater uden synligt kvalitetstab. Alle moderne browsere (Chrome, Firefox, Safari 14+, Edge) understøtter WebP fuldt ud. For hjemmesider betyder det hurtigere indlæsningstider og bedre Google-placering.</p><p class=\"text-mid mb-4\">WebP kan reducere dine JPEG-fotos med 25–35% uden synligt kvalitetstab. Da JPEG ikke understøtter gennemsigtighed, mistes ingen billedinformation ved denne konvertering.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "JPG til WEBP konvertering",
       "variant": "right"

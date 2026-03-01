@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień zdjęcia HEIC z iPhone na profesjonalny TIFF. Do druku i archiwizacji.",
-      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"]
+      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "alternateName": ["Zamiana HEIC na TIFF", "Konwersja HEIC do TIFF", "Darmowy konwerter HEIC na TIFF"]
     },
     "howTo": {
       "name": "HEIC to TIFF",
@@ -169,7 +170,7 @@
     {
       "type": "sectionInfo",
       "title": "Konwersja HEIC na TIFF w praktyce",
-      "html": "<p class=\"text-mid mb-4\">Polskie platformy sprzedażowe i serwisy ogłoszeniowe często wymagają konkretnych formatów graficznych. Niezależnie od tego, czy przygotowujesz zdjęcia produktów na Allegro, OLX, Empik, Ceneo, optymalizujesz grafiki w WordPress, Shoper, Sky-Shop, czy konwertujesz zdjęcia do gov.pl i ePUAP – odpowiedni format ma kluczowe znaczenie.</p><p class=\"text-mid mb-4\">Współczesne standardy webowe coraz bardziej faworyzują wydajne formaty. Google PageSpeed Insights i metryki Core Web Vitals nagradzają strony z zoptymalizowanymi obrazami. Konwersja HEIC na TIFF może bezpośrednio poprawić wskaźnik Largest Contentful Paint (LCP), co wpływa na pozycje w wyszukiwarce i doświadczenie użytkowników.</p><p class=\"text-mid\">W przypadku kampanii e-mail marketingowych i mediów społecznościowych, TIFF oferuje doskonałą kompresję przy zachowaniu jakości wizualnej. Niezależnie od tego, czy jesteś freelancerem, właścicielem małej firmy czy użytkownikiem korporacyjnym – ten konwerter niezawodnie obsłuży Twoje potrzeby.</p>"
+      "html": "<p class=\"text-mid mb-4\">Polskie platformy sprzedażowe i serwisy ogłoszeniowe często wymagają konkretnych formatów graficznych. Niezależnie od tego, czy przygotowujesz zdjęcia produktów na Allegro, OLX, Empik, Ceneo, optymalizujesz grafiki w WordPress, Shoper, Sky-Shop, czy konwertujesz zdjęcia do gov.pl i ePUAP – odpowiedni format ma kluczowe znaczenie.</p><p class=\"text-mid mb-4\">TIFF to branżowy standard dla profesjonalnego druku, archiwizacji i postprodukcji. Programy takie jak Adobe Photoshop, Lightroom i GIMP wykorzystują TIFF w bezstratnych procesach edycji. Konwersja do TIFF zachowuje pełne dane obrazu, w tym profile kolorów, warstwy i metadane.</p><p class=\"text-mid\">Dla profesjonalnej fotografii i produkcji poligraficznej TIFF zapewnia bezstratną jakość spełniającą standardy branżowe. Niezależnie od tego, czy jesteś freelancerem, właścicielem małej firmy czy użytkownikiem korporacyjnym – ten konwerter niezawodnie obsłuży Twoje potrzeby.</p>"
     },
     {
       "type": "gap",

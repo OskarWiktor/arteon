@@ -12,7 +12,7 @@ const { regionalHtml } = require('./_fix-regional-html.cjs');
 
 const DRY = process.argv.includes('--dry-run');
 const DATA = path.join(__dirname, '..', 'data');
-const LOCALES = ['en','pl','de','fr','es','it','pt','cs','da','el','fi','hu','nl','no','ro','sv'];
+const LOCALES = ['en', 'pl', 'de', 'fr', 'es', 'it', 'pt', 'cs', 'da', 'el', 'fi', 'hu', 'nl', 'no', 'ro', 'sv'];
 
 function parseConverterName(filename) {
   const m = filename.match(/^converter-(\w+)-to-(\w+)\.json$/);
@@ -46,7 +46,7 @@ for (const locale of LOCALES) {
   const toolsDir = path.join(DATA, locale, 'tools');
   if (!fs.existsSync(toolsDir)) continue;
 
-  const files = fs.readdirSync(toolsDir).filter(f => f.startsWith('converter-'));
+  const files = fs.readdirSync(toolsDir).filter((f) => f.startsWith('converter-'));
 
   for (const file of files) {
     const conv = parseConverterName(file);
@@ -74,7 +74,7 @@ for (const locale of LOCALES) {
       for (const b of blocks) {
         if (b.type === 'sectionSteps' && b.title === whenTitle && Array.isArray(b.items)) {
           // Check if any item has fragment description
-          const hasFragment = b.items.some(item => isFragmentDescription(item.description));
+          const hasFragment = b.items.some((item) => isFragmentDescription(item.description));
           if (hasFragment) {
             const newItems = useCases(conv.src, conv.tgt, locale);
             if (newItems) {

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε φωτογραφιες HEIC απο iPhone σε ελαφρυ WebP. Μικροτερο μεγεθος.",
-      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Μετατροπή HEIC σε WEBP", "Μετατροπέας HEIC σε WEBP", "Δωρεάν μετατροπέας HEIC σε WEBP"]
     },
     "howTo": {
       "name": "HEIC to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε HEIC σε WebP;",
-      "html": "<p class=\"text-mid mb-4\">Το High Efficiency Image Container (HEIC) είναι ένα μορφότυπο εικόνας με απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή HEIC σε WebP (WebP) αξιοποιεί τη σύγχρονη συμπίεση για μικρότερα αρχεία.</p><p class=\"text-mid mb-4\">Το WebP υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το High Efficiency Image Container (HEIC) είναι η προεπιλεγμένη μορφή φωτογραφιών στις συσκευές Apple από το iOS 11. Το HEIC προσφέρει μικρότερα αρχεία από το JPEG σε συγκρίσιμη ποιότητα, αλλά δεν υποστηρίζεται εγγενώς εκτός του οικοσυστήματος Apple.</p><p class=\"text-mid mb-4\">Το WebP μειώνει το μέγεθος αρχείου κατά 30–35% σε σύγκριση με παλαιότερες μορφές, χωρίς ορατή απώλεια ποιότητας. Όλοι οι σύγχρονοι περιηγητές (Chrome, Firefox, Safari 14+, Edge) υποστηρίζουν πλήρως το WebP. Για ιστοσελίδες αυτό σημαίνει ταχύτερους χρόνους φόρτωσης και καλύτερη κατάταξη στο Google.</p><p class=\"text-mid mb-4\">Το WebP προσφέρει εξαιρετική ισορροπία μεγέθους και ποιότητας. Η μετατροπή HEIC σε WebP παράγει συμπαγή αρχεία που υποστηρίζονται από όλους τους σύγχρονους περιηγητές – ιδανικό για ιστοσελίδες.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή HEIC σε WEBP",
       "variant": "right"

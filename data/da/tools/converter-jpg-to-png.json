@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "JPG til PNG-konverter",
-      "alternateName": [],
+      "alternateName": ["Konvertér JPG til PNG", "JPG til PNG konvertering", "Gratis JPG til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere JPG til PNG?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til fotografier.</p><p class=\"text-mid mb-4\">Konvertering af JPG til PNG (Portable Network Graphics) giver mere fleksibilitet.</p><p class=\"text-mid mb-4\">PNG understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer PNG alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) er verdens mest udbredte billedformat til digitale fotos. Det bruger tabsgivende komprimering til kompakte filer, men understøtter hverken gennemsigtighed eller tabsfri lagring.</p><p class=\"text-mid mb-4\">PNG bevarer den fulde billedkvalitet uden komprimeringsartefakter og understøtter fuld alfa-gennemsigtighed. Dette tabsfrie format er ideelt til grafik, der skal viderebearbejdes, og billeder hvor gennemsigtige områder skal bevares.</p><p class=\"text-mid mb-4\">Konvertering fra JPG til PNG omdanner billedet til et tabsfrit format. Detaljer allerede tabt ved JPEG-komprimering kan dog ikke gendannes. PNG er velegnet, hvis du vil redigere billedet uden yderligere kvalitetstab.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "JPG til PNG konvertering",
       "variant": "right"

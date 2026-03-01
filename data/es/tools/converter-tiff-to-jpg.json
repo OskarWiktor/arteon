@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte archivos TIFF a JPG compacto. Ideal para escaneos y archivos fotograficos.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convertir TIFF a JPG", "Conversión de TIFF a JPG", "Convertidor TIFF a JPG gratis"]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir TIFF a JPG?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) es un formato de imagen sin pérdida que soporta millones de colores. Se utiliza ampliamente para impresión y archivo.</p><p class=\"text-mid mb-4\">Convertir TIFF a JPG (JPEG) garantiza compatibilidad universal con todos los navegadores y dispositivos.</p><p class=\"text-mid mb-4\">JPG no soporta transparencia – las áreas transparentes se rellenarán con un color de fondo. Como formato con pérdida, JPG logra excelentes ratios de compresión.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) es el estándar de la industria para fotografía profesional, impresión y archivado. TIFF almacena imágenes sin pérdidas con profundidad de color completa, capas y metadatos, aunque requiere archivos proporcionalmente grandes.</p><p class=\"text-mid mb-4\">JPEG es el formato de imagen más universal, compatible con todos los dispositivos, navegadores y plataformas del mundo. La conversión a JPG garantiza que sus imágenes puedan visualizarse sin problemas en cualquier lugar: desde adjuntos de correo electrónico hasta publicaciones en redes sociales y servicios de impresión.</p><p class=\"text-mid mb-4\">La conversión reduce los archivos TIFF, a menudo muy voluminosos, a tamaños JPEG compactos. La transparencia eventual y la información de capas se pierden, pero obtiene archivos universalmente compatibles para web, correo electrónico y redes sociales.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Conversión de TIFF a JPG",
       "variant": "right"

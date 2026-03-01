@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti file BMP in WebP leggero. Riduzione delle dimensioni fino al 95%.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convertire BMP in WEBP", "Conversione BMP in WEBP", "Convertitore BMP in WEBP gratuito"]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire BMP in WebP?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) è un formato immagine senza perdita che supporta milioni di colori. È ampiamente utilizzato per le immagini non compresse.</p><p class=\"text-mid mb-4\">La conversione da BMP a WebP (WebP) riduce significativamente le dimensioni del file.</p><p class=\"text-mid mb-4\">WebP supporta la trasparenza alfa. WebP offre compressione con e senza perdita.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">Il Bitmap (BMP) è un formato immagine Windows datato che memorizza i dati dei pixel senza compressione. I file BMP sono quindi estremamente grandi e inadatti all'uso moderno sul web, nelle e-mail o sui dispositivi mobili.</p><p class=\"text-mid mb-4\">Il WebP riduce la dimensione del file del 30–35% rispetto ai formati precedenti, senza perdita di qualità visibile. Tutti i browser moderni (Chrome, Firefox, Safari 14+, Edge) supportano pienamente il WebP. Per i siti web, ciò significa tempi di caricamento più rapidi, migliori Core Web Vitals e un miglior posizionamento su Google.</p><p class=\"text-mid mb-4\">Il WebP riduce le enormi dimensioni BMP fino al 97% con buona qualità visiva. La conversione modernizza le immagini legacy per l'uso su siti web e nelle applicazioni moderne.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione BMP in WEBP",
       "variant": "right"

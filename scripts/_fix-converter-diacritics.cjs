@@ -19,13 +19,13 @@ function replace(old, corrected) {
 
 // ---- GERMAN (de) ----
 replace("Qualitat'", "Qualität'");
-replace("Qualitat.", "Qualität.");
+replace('Qualitat.', 'Qualität.');
 replace('Transparenzunterstutzung', 'Transparenzunterstützung');
-replace("fur einfache", "für einfache");
-replace("fur Druck", "für Druck");
-replace("fur maximale", "für maximale");
-replace("fur den Druck", "für den Druck");
-replace("fur hochste", "für höchste");
+replace('fur einfache', 'für einfache');
+replace('fur Druck', 'für Druck');
+replace('fur maximale', 'für maximale');
+replace('fur den Druck', 'für den Druck');
+replace('fur hochste', 'für höchste');
 
 // ---- SPANISH (es) ----
 replace('Compresion hasta', 'Compresión hasta');
@@ -38,7 +38,7 @@ replace('archivacion', 'archivación');
 
 // ---- FRENCH (fr) ----
 replace("jusqu'a 50%", "jusqu'à 50%");
-replace("premiere image", "première image");
+replace('premiere image', 'première image');
 
 // ---- PORTUGUESE (pt) ----
 replace('Compressao ate', 'Compressão até');
@@ -49,7 +49,7 @@ replace('impressao e arquivamento', 'impressão e arquivamento');
 
 // ---- ITALIAN (it) ----
 replace("qualita'", "qualità'");
-replace("qualita.", "qualità.");
+replace('qualita.', 'qualità.');
 replace('piu piccoli', 'più piccoli');
 replace('compatibilita', 'compatibilità');
 
@@ -88,10 +88,10 @@ replace('prvni snimek', 'první snímek');
 
 // ---- SWEDISH (sv) ----
 replace('battre komprimering', 'bättre komprimering');
-replace("an JPG", "än JPG");
-replace("for enkel", "för enkel");
-replace("for maximal", "för maximal");
-replace("for utskrift", "för utskrift");
+replace('an JPG', 'än JPG');
+replace('for enkel', 'för enkel');
+replace('for maximal', 'för maximal');
+replace('for utskrift', 'för utskrift');
 replace('forlustfritt', 'förlustfritt');
 replace('forlustfri', 'förlustfri');
 

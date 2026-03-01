@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera iPhone HEIC-foton till forlustfri PNG. Full kvalitet och transparens.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertera HEIC till PNG", "HEIC till PNG konvertering", "Gratis HEIC till PNG konverterare"]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera HEIC till PNG?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) är ett förlustbringande bildformat. Det används i stor utsträckning för bilder.</p><p class=\"text-mid mb-4\">Konvertering av HEIC till PNG (Portable Network Graphics) säkerställer universell kompatibilitet med alla webbläsare och enheter.</p><p class=\"text-mid mb-4\">PNG stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) är standardformatet för foton på Apple-enheter sedan iOS 11. HEIC ger mindre filer än JPEG vid jämförbar kvalitet, men stöds inte nativt utanför Apples ekosystem – varken på Windows, Android eller många webbplattformar.</p><p class=\"text-mid mb-4\">PNG bevarar full bildkvalitet utan komprimeringsartefakter och stöder full alfa-transparens. Detta förlustfria format är idealiskt för grafik som ska vidarebearbetas och bilder där transparenta områden måste bevaras.</p><p class=\"text-mid mb-4\">Konverteringen bevarar full kvalitet från HEIC-originalet förlustfritt i PNG-format. PNG stöds av alla enheter och är särskilt lämpligt om du vill redigera bilden eller bevara transparensen.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "HEIC till PNG konvertering",
       "variant": "right"

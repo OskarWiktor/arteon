@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "PNG naar WebP converter",
-      "alternateName": [],
+      "alternateName": ["PNG naar WEBP omzetten", "PNG naar WEBP conversie", "Gratis PNG naar WEBP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer PNG-afbeeldingen naar WebP. Kleinere bestanden met behoud van transparantie.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom PNG naar WebP converteren?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen met transparantie.</p><p class=\"text-mid mb-4\">Het converteren van PNG naar WebP (WebP) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">WebP ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) is een verliesvrij beeldformaat dat miljoenen kleuren en volledige alfa-transparantie ondersteunt. PNG is bijzonder geschikt voor logo's, pictogrammen, schermafbeeldingen en afbeeldingen met scherpe randen of tekst.</p><p class=\"text-mid mb-4\">WebP vermindert de bestandsgrootte met 30–35% ten opzichte van oudere formaten, zonder zichtbaar kwaliteitsverlies. Alle moderne browsers (Chrome, Firefox, Safari 14+, Edge) ondersteunen WebP volledig. Voor websites betekent dit snellere laadtijden en een betere Google-ranking.</p><p class=\"text-mid mb-4\">WebP ondersteunt alfa-transparantie precies zoals PNG – alle transparante gebieden blijven volledig behouden. U kunt kiezen tussen compressie met en zonder verlies om de optimale balans tussen bestandsgrootte en beeldkwaliteit te vinden.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "PNG naar WEBP conversie",
       "variant": "right"

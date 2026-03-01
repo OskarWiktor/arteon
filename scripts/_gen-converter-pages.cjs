@@ -65,13 +65,19 @@ let skipped = 0;
 for (const conv of converters) {
   for (const [locale, toolsDir] of Object.entries(localeToolsDirs)) {
     const slug = getSlug(conv.key, locale);
-    if (!slug) { skipped++; continue; }
+    if (!slug) {
+      skipped++;
+      continue;
+    }
 
     const jsonFile = `converter-${conv.from}-to-${conv.to}.json`;
     const pageDir = path.join(appDir, toolsDir, slug);
     const pagePath = path.join(pageDir, 'page.tsx');
 
-    if (fs.existsSync(pagePath)) { skipped++; continue; }
+    if (fs.existsSync(pagePath)) {
+      skipped++;
+      continue;
+    }
 
     const content = `import ToolPageRenderer, { generateToolMetadata } from '@/components/sections/tools/ToolPageRenderer';
 import data from '@/data/${locale}/tools/${jsonFile}';

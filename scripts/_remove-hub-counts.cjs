@@ -58,10 +58,10 @@ const patterns = [
 
   // FR
   [/34 outils gratuits/g, 'Outils gratuits'],
-  [/Un ensemble de 34 outils/g, 'Un ensemble d\'outils'],
-  [/24 convertisseurs d'images/g, 'Convertisseurs d\'images'],
-  [/24 convertisseurs d\\u2019images/g, 'Convertisseurs d\'images'],
-  [/24 convertisseurs de formats d'image/g, 'Convertisseurs de formats d\'image'],
+  [/Un ensemble de 34 outils/g, "Un ensemble d'outils"],
+  [/24 convertisseurs d'images/g, "Convertisseurs d'images"],
+  [/24 convertisseurs d\\u2019images/g, "Convertisseurs d'images"],
+  [/24 convertisseurs de formats d'image/g, "Convertisseurs de formats d'image"],
 
   // PT
   [/34 ferramentas gratuitas/g, 'Ferramentas gratuitas'],
@@ -125,7 +125,10 @@ const patterns = [
 let totalChanged = 0;
 for (const hub of hubs) {
   const p = path.join(appDir, hub.dir, hub.file);
-  if (!fs.existsSync(p)) { console.log('SKIP:', hub.locale); continue; }
+  if (!fs.existsSync(p)) {
+    console.log('SKIP:', hub.locale);
+    continue;
+  }
   let raw = fs.readFileSync(p, 'utf8');
   const original = raw;
 

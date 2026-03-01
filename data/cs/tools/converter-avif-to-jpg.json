@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory AVIF na univerzální JPG. Kompatibilní s každým programem.",
-      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Převést AVIF na JPG", "Konverze AVIF do JPG", "Převodník AVIF na JPG zdarma"]
     },
     "howTo": {
       "name": "AVIF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět AVIF na JPG?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) je ztrátový obrazový formát podporující miliony barev. Je široce používán pro moderní webové obrázky.</p><p class=\"text-mid mb-4\">Převod AVIF na JPG (JPEG) zajišťuje univerzální kompatibilitu se všemi prohlížeči a zařízeními.</p><p class=\"text-mid mb-4\">JPG nepodporuje průhlednost – průhledné oblasti budou vyplněny barvou pozadí. Jako ztrátový formát dosahuje JPG vynikajících kompresních poměrů.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) je obrazový formát nové generace založený na video kodeku AV1. AVIF nabízí aktuálně nejlepší dostupnou kompresi – soubory až o 50% menší než WebP při srovnatelné vizuální kvalitě.</p><p class=\"text-mid mb-4\">JPEG je nejuniverzálnější obrazový formát – kompatibilní s každým zařízením, prohlížečem a platformou. Převod do JPG zajistí, že vaše obrázky budou bez problémů zobrazeny kdekoli: od e-mailových příloh po příspěvky na sociálních sítích.</p><p class=\"text-mid mb-4\">Převod AVIF na JPEG zajišťuje maximální kompatibilitu. JPG je podporován všemi zařízeními – nezbytný, když příjemci nebo platformy ještě nepodporují novější formát AVIF.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod AVIF na JPG",
       "variant": "right"

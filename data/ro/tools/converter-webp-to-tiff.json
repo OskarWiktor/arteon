@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește imagini WebP în TIFF profesional pentru tiparire si arhivare.",
-      "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
+      "featureList": ["Conversie în TIFF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie WEBP în TIFF", "Convertor WEBP în TIFF", "Convertor gratuit WEBP în TIFF"]
     },
     "howTo": {
       "name": "Cum să convertiți WebP în TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți WebP în TIFF?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) este un format de imagine cu pierderi. Este utilizat pe scară largă pentru imagini web.</p><p class=\"text-mid mb-4\">Conversia WebP în TIFF (Tagged Image File Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">TIFF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP este un format modern de imagine dezvoltat de Google care acceptă atât compresie cu pierderi, cât și fără pierderi. Produce fișiere semnificativ mai mici decât PNG și JPEG la calitate vizuală comparabilă și este acceptat de toate browserele actuale.</p><p class=\"text-mid mb-4\">TIFF păstrează calitatea completă a imaginii fără nicio pierdere de date și acceptă straturi și metadate extinse. Ca standard industrial pentru tipărire și arhivare, TIFF este potrivit pentru fotografi profesioniști și tipografii.</p><p class=\"text-mid mb-4\">Conversia transformă fișierele WebP în format TIFF profesional. Ideal pentru producția tipografică și arhivarea pe termen lung unde sunt necesare calitate fără pierderi și suport complet de metadate.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversie WEBP în TIFF",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "Conversia WebP în TIFF în practică",
-      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">Standardele web moderne favorizează din ce în ce mai mult formatele eficiente. Google PageSpeed Insights și metricile Core Web Vitals răsplătesc paginile cu imagini optimizate. Conversia WebP în TIFF poate îmbunătăți direct scorul Largest Contentful Paint (LCP), ceea ce influențează atât poziția în motoarele de căutare, cât și experiența utilizatorului.</p><p class=\"text-mid\">Procesarea locală în browser asigură conformitatea deplină cu GDPR. TIFF oferă o compresie excelentă păstrând calitatea vizuală.</p>"
+      "html": "<p class=\"text-mid mb-4\">În România, platformele de comerț și serviciile publice solicită frecvent formate de imagine specifice. Fie că pregătiți imagini pentru OLX.ro, eMAG.ro, Amazon, Marketplace, optimizați grafice în WordPress, Shopify, GomAG sau convertiți fotografii pentru ghiseul.ro și SPV – formatul potrivit contează enorm.</p><p class=\"text-mid mb-4\">TIFF este standardul industrial pentru tipărire profesională, arhivare și post-producție. Programe precum Adobe Photoshop, Lightroom și GIMP utilizează TIFF pentru fluxuri de lucru de editare fără pierderi. Conversia în TIFF păstrează toate datele imaginii, inclusiv profiluri de culoare, straturi și metadate.</p><p class=\"text-mid\">Pentru fotografia profesională și producția tipografică, TIFF asigură o calitate fără pierderi conformă standardelor industriale. Procesarea locală asigură conformitatea deplină cu GDPR.</p>"
     },
     {
       "type": "gap",

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Unkomprimierte BMP-Dateien in ultrakompaktes AVIF umwandeln.",
-      "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+      "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
+      "alternateName": ["BMP in AVIF umwandeln", "BMP zu AVIF konvertieren", "Kostenloser BMP-zu-AVIF-Konverter"]
     },
     "howTo": {
       "name": "BMP zu AVIF konvertieren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum BMP in AVIF konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) ist ein verlustfreies Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für unkomprimierte Bilder verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von BMP in AVIF (AV1 Image File Format) reduziert die Dateigröße erheblich und beschleunigt das Laden von Webseiten.</p><p class=\"text-mid mb-4\">AVIF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. AVIF bietet sowohl verlustbehaftete als auch verlustfreie Komprimierung.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) ist ein älteres Windows-Bildformat, das Pixeldaten weitgehend unkomprimiert speichert. BMP-Dateien sind dadurch extrem groß und für den modernen Einsatz auf Webseiten, in E-Mails oder auf mobilen Geräten ungeeignet.</p><p class=\"text-mid mb-4\">AVIF bietet die effizienteste Komprimierung aller aktuellen Bildformate und kann die Dateigröße um bis zu 50% gegenüber JPEG reduzieren. Chrome, Firefox und Safari 16+ unterstützen AVIF. Besonders für leistungskritische Webprojekte und mobile Nutzung ist AVIF die optimale Wahl.</p><p class=\"text-mid mb-4\">AVIF bietet die beste Komprimierung für die Modernisierung unkomprimierter BMP-Dateien. Die Dateigröße wird um bis zu 98% reduziert – ideal für die Migration alter Bildbestände in moderne Formate.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "BMP-zu-AVIF-Konvertierung",
       "variant": "right"

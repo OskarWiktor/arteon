@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera JPG-foton till forlustfritt TIFF. For utskrift och arkivering.",
-      "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"]
+      "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
+      "alternateName": ["Konvertera JPG till TIFF", "JPG till TIFF konvertering", "Gratis JPG till TIFF konverterare"]
     },
     "howTo": {
       "name": "Hur konverterar man JPG till TIFF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera JPG till TIFF?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) är ett förlustbringande bildformat. Det används i stor utsträckning för fotografier.</p><p class=\"text-mid mb-4\">Konvertering av JPG till TIFF (Tagged Image File Format) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">TIFF stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) är världens mest använda bildformat för digitala fotografier. Det använder förlustbaserad komprimering för kompakta filer, men stöder varken transparens eller förlustfri lagring.</p><p class=\"text-mid mb-4\">TIFF bevarar full bildkvalitet utan någon dataförlust och stöder lager och omfattande metadata. Som branschstandard för tryck och arkivering är TIFF lämpligt för professionella fotografer och tryckerier.</p><p class=\"text-mid mb-4\">Konverteringen bevarar den aktuella kvaliteten hos din JPEG och lagrar den förlustfritt i TIFF-format. Detaljer som förlorats genom JPEG-komprimering kan inte återställas, men TIFF möjliggör vidare redigering utan ytterligare förluster.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "JPG till TIFF konvertering",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-till-TIFF-konvertering i praktiken",
-      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">Moderna webbstandarder gynnar allt mer effektiva format. Google PageSpeed Insights och Core Web Vitals belönar sidor med optimerade bilder. Att konvertera JPG till TIFF kan direkt förbättra ditt Largest Contentful Paint (LCP) resultat, vilket påverkar både sökresultat och användarupplevelse.</p><p class=\"text-mid\">Lokal bearbetning i webbläsaren säkerställer full GDPR-överensstämmelse. TIFF ger utmärkt komprimering med bibehållen visuell kvalitet.</p>"
+      "html": "<p class=\"text-mid mb-4\">I Sverige och Norden är integritet avgörande – lokal bildkonvertering skyddar känsliga data. Oavsett om du förbereder bilder för Blocket.se, Tradera, CDON, Amazon.se, optimerar grafik i WordPress, Shopify, Quickbutik eller konverterar foton för Skatteverket och BankID – rätt format är avgörande.</p><p class=\"text-mid mb-4\">TIFF är branschstandarden för professionellt tryck, arkivering och efterbearbetning. Program som Adobe Photoshop, Lightroom och GIMP använder TIFF för förlustfria redigeringsarbetsflöden. Konvertering till TIFF bevarar all bilddata inklusive färgprofiler, lager och metadata.</p><p class=\"text-mid\">För professionell fotografi och tryckproduktion säkerställer TIFF förlustfri kvalitet enligt branschstandarder. Lokal behandling säkerställer full GDPR-efterlevnad.</p>"
     },
     {
       "type": "gap",

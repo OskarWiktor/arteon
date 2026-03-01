@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "JPG till PNG-konverterare",
-      "alternateName": [],
+      "alternateName": ["Konvertera JPG till PNG", "JPG till PNG konvertering", "Gratis JPG till PNG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera JPG till PNG?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) är ett förlustbringande bildformat. Det används i stor utsträckning för fotografier.</p><p class=\"text-mid mb-4\">Konvertering av JPG till PNG (Portable Network Graphics) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">PNG stödjer alfa-transparens.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) är världens mest använda bildformat för digitala fotografier. Det använder förlustbaserad komprimering för kompakta filer, men stöder varken transparens eller förlustfri lagring.</p><p class=\"text-mid mb-4\">PNG bevarar full bildkvalitet utan komprimeringsartefakter och stöder full alfa-transparens. Detta förlustfria format är idealiskt för grafik som ska vidarebearbetas och bilder där transparenta områden måste bevaras.</p><p class=\"text-mid mb-4\">Konvertering från JPG till PNG omvandlar bilden till ett förlustfritt format. Detaljer som redan förlorats genom JPEG-komprimering kan dock inte återställas. PNG är lämpligt om du vill redigera bilden utan ytterligare kvalitetsförlust.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "JPG till PNG konvertering",
       "variant": "right"

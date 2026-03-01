@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Conversor WebP para PNG",
-      "alternateName": [],
+      "alternateName": ["Converter WEBP para PNG", "Conversão de WEBP para PNG", "Conversor WEBP para PNG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta imagens WebP para PNG sem perdas. Conversão local, nada enviado ao servidor.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter WebP para PNG?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) é um formato de imagem com perda que suporta milhões de cores. É amplamente utilizado para imagens web.</p><p class=\"text-mid mb-4\">Converter WebP para PNG (Portable Network Graphics) garante compatibilidade universal com todos os navegadores e dispositivos.</p><p class=\"text-mid mb-4\">PNG suporta transparência alfa. Como formato sem perda, PNG preserva todos os dados da imagem.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O WebP é um formato de imagem moderno desenvolvido pela Google que suporta compressão com e sem perdas. Produz ficheiros significativamente mais leves que PNG e JPEG com qualidade visual comparável e é suportado por todos os navegadores atuais.</p><p class=\"text-mid mb-4\">O PNG preserva a qualidade de imagem completa sem artefactos de compressão e suporta transparência alfa completa. Este formato sem perdas é ideal para gráficos que precisam de ser editados posteriormente.</p><p class=\"text-mid mb-4\">A conversão de WebP para PNG preserva a transparência da imagem e armazena-a sem perdas. O PNG é adequado para edição posterior em programas gráficos e para plataformas que não suportam WebP.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de WEBP para PNG",
       "variant": "right"

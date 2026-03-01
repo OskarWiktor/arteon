@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Conversor JPG para PNG",
-      "alternateName": [],
+      "alternateName": ["Converter JPG para PNG", "Conversão de JPG para PNG", "Conversor JPG para PNG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta imagens JPG para PNG sem perdas. Conversão local no navegador.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter JPG para PNG?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) é um formato de imagem com perda que suporta milhões de cores. É amplamente utilizado para fotografias.</p><p class=\"text-mid mb-4\">Converter JPG para PNG (Portable Network Graphics) oferece mais flexibilidade.</p><p class=\"text-mid mb-4\">PNG suporta transparência alfa. Como formato sem perda, PNG preserva todos os dados da imagem.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O JPEG (JPG) é o formato de imagem mais utilizado no mundo para fotografias digitais. Utiliza compressão com perdas para obter ficheiros compactos, mas não suporta transparência nem armazenamento sem perdas.</p><p class=\"text-mid mb-4\">O PNG preserva a qualidade de imagem completa sem artefactos de compressão e suporta transparência alfa completa. Este formato sem perdas é ideal para gráficos que precisam de ser editados posteriormente.</p><p class=\"text-mid mb-4\">A conversão de JPG para PNG transforma a imagem num formato sem perdas. Os detalhes já perdidos pela compressão JPEG não podem ser restaurados. PNG é adequado se pretende editar a imagem sem perdas adicionais.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de JPG para PNG",
       "variant": "right"

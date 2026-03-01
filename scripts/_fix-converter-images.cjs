@@ -38,15 +38,15 @@ const fixes = [];
 while ((match = toolBlockRegex.exec(content)) !== null) {
   const key = match[1];
   const imageLine = match[0];
-  
+
   // Check if this tool already has images: {} (look at what comes after image line)
   const afterIdx = match.index + imageLine.length;
   const nextChunk = content.substring(match.index, match.index + 200);
-  
+
   if (nextChunk.includes('images:')) {
     continue; // Already has images block
   }
-  
+
   fixes.push({ key, index: match.index, fullMatch: match[0] });
 }
 
@@ -55,12 +55,12 @@ fixes.reverse();
 for (const fix of fixes) {
   const oldLine = `image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',\n    desktopOnly:`;
   const newLine = `image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',\n    ${IMAGES_BLOCK}\n    desktopOnly:`;
-  
+
   // Find exact position of the image line in this tool block
   const blockStart = fix.index;
   const blockEnd = content.indexOf('\n  },', blockStart) + 5;
   const block = content.substring(blockStart, blockEnd);
-  
+
   if (block.includes(oldLine)) {
     const newBlock = block.replace(oldLine, newLine);
     content = content.substring(0, blockStart) + newBlock + content.substring(blockEnd);

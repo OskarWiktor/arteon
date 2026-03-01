@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "SVG naar JPG converter",
-      "alternateName": [],
+      "alternateName": ["SVG naar JPG omzetten", "SVG naar JPG conversie", "Gratis SVG naar JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer SVG-afbeeldingen naar compact JPG. Kleiner bestand, volledige compatibiliteit.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom SVG naar JPG converteren?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is een lossless afbeeldingsformaat gebaseerd op vectorafbeeldingen. Het wordt veel gebruikt voor logo's en pictogrammen.</p><p class=\"text-mid mb-4\">Het converteren van SVG naar JPG (JPEG) biedt meer flexibiliteit.</p><p class=\"text-mid mb-4\">JPG ondersteunt geen transparantie – transparante gebieden worden gevuld met een achtergrondkleur.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is een XML-gebaseerd vectorformaat voor tweedimensionale afbeeldingen. SVG-bestanden zijn resolutieonafhankelijk en blijven scherp op elke grootte – ideaal voor logo's, pictogrammen en illustraties.</p><p class=\"text-mid mb-4\">JPEG is het meest universele beeldformaat – compatibel met elk apparaat, elke browser en elk platform. De conversie naar JPG garandeert dat uw afbeeldingen overal probleemloos worden weergegeven: van e-mailbijlagen tot social-mediaposts.</p><p class=\"text-mid mb-4\">De rasterisatie van SVG naar JPG zet de schaalbare vectorafbeelding om naar een pixelafbeelding met vaste resolutie. Transparante gebieden worden gevuld met een achtergrondkleur. Geschikt voor platforms die geen SVG accepteren.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "SVG naar JPG conversie",
       "variant": "right"

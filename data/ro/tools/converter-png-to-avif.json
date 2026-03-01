@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește grafice PNG în AVIF cu suport transparenta. Fisiere semnificativ mai mici.",
-      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"]
+      "featureList": ["Conversie în AVIF", "Ajustare calitate (60-95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie PNG în AVIF", "Convertor PNG în AVIF", "Convertor gratuit PNG în AVIF"]
     },
     "howTo": {
       "name": "Cum să convertiți PNG în AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți PNG în AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) este un format de imagine fără pierderi. Este utilizat pe scară largă pentru imagini.</p><p class=\"text-mid mb-4\">Conversia PNG în AVIF (AV1 Image File Format) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">AVIF suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) este un format de imagine fără pierderi care acceptă milioane de culori și transparență alfa completă. PNG este deosebit de potrivit pentru logouri, pictograme, capturi de ecran și grafică cu margini clare sau text.</p><p class=\"text-mid mb-4\">AVIF oferă cea mai eficientă compresie dintre toate formatele de imagine actuale, reducând dimensiunea cu până la 50% față de JPEG. Chrome, Firefox și Safari 16+ acceptă AVIF. Este alegerea optimă pentru proiecte web critice în ceea ce privește performanța.</p><p class=\"text-mid mb-4\">AVIF oferă o compresie și mai bună decât WebP și poate reduce dimensiunea imaginilor PNG cu până la 50%. Transparența alfa este pe deplin acceptată. Browserele mai vechi pot să nu accepte încă AVIF.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversie PNG în AVIF",
       "variant": "right"

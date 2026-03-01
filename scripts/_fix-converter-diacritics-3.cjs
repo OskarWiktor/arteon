@@ -30,7 +30,7 @@ function fix(old, corrected) {
 const lines = content.split('\n');
 for (let i = 0; i < lines.length; i++) {
   const line = lines[i];
-  
+
   // SV lines with " an " that should be " än "
   if (line.match(/sv:.*description:/) && line.includes(' an ')) {
     // Only fix if it's clearly "than" context (after comparative)
@@ -39,31 +39,31 @@ for (let i = 0; i < lines.length; i++) {
       fixCount++;
     }
   }
-  
+
   // SV lines with " for " that should be " för "
   if (line.match(/sv:.*description:/) && line.match(/ for (enkel|maximal|utskrift|arkivering|tryck)/)) {
     lines[i] = line.replace(/ for (enkel|maximal|utskrift|arkivering|tryck)/g, ' för $1');
     fixCount++;
   }
-  
+
   // DE lines with " fur " that should be " für "
   if (line.match(/de:.*description:/) && line.includes(' fur ')) {
     lines[i] = line.replace(/ fur /g, ' für ');
     fixCount++;
   }
-  
+
   // DE "Qualitat" → "Qualität"
   if (line.match(/de:.*description:/) && line.includes('Qualitat')) {
     lines[i] = line.replace(/Qualitat/g, 'Qualität');
     fixCount++;
   }
-  
+
   // DE "Grosse" → "Größe" (in description context)
   if (line.match(/de:.*description:/) && line.match(/Grosse/)) {
     lines[i] = line.replace(/Grossenreduktion/g, 'Größenreduktion').replace(/Grosse/g, 'Größe');
     fixCount++;
   }
-  
+
   // IT "piu " → "più " and "qualita" → "qualità"
   if (line.match(/it:.*description:/)) {
     if (line.includes(' piu ')) {
@@ -75,7 +75,7 @@ for (let i = 0; i < lines.length; i++) {
       fixCount++;
     }
   }
-  
+
   // PT "ate " → "até ", "transparencia" → "transparência", "Compressao" → "Compressão", "impressao" → "impressão"
   if (line.match(/pt:.*description:/)) {
     let changed = false;
@@ -97,19 +97,19 @@ for (let i = 0; i < lines.length; i++) {
     }
     if (changed) fixCount++;
   }
-  
+
   // RO "fara " → "fără "
   if (line.match(/ro:.*description:/) && line.includes('fara ')) {
     lines[i] = line.replace(/fara /g, 'fără ');
     fixCount++;
   }
-  
+
   // HU "Akar " → "Akár "
   if (line.match(/hu:.*description:/) && line.includes('Akar ')) {
     lines[i] = line.replace(/Akar /g, 'Akár ');
     fixCount++;
   }
-  
+
   // CS "Prevedte " → "Převeďte "
   if (line.match(/cs:.*description:/) && line.includes('Prevedte ')) {
     lines[i] = line.replace(/Prevedte /g, 'Převeďte ');

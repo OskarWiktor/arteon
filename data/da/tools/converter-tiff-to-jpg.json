@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter TIFF-filer til kompakt JPG. Ideel til scanninger og fotoarkiver.",
-      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertér TIFF til JPG", "TIFF til JPG konvertering", "Gratis TIFF til JPG konverter"]
     },
     "howTo": {
       "name": "TIFF to JPG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere TIFF til JPG?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) er et tabsfrit billedformat der understøtter millioner farver. Det bruges bredt til print og arkivering.</p><p class=\"text-mid mb-4\">Konvertering af TIFF til JPG (JPEG) sikrer universel kompatibilitet med alle browsere og enheder.</p><p class=\"text-mid mb-4\">JPG understøtter ikke gennemsigtighed – gennemsigtige områder fyldes med en baggrundsfarve. Som tabsgivende format opnår JPG fremragende kompressionsforhold.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) er industristandarden for professionel fotografering, tryk og arkivering. TIFF lagrer billeder tabsfrit med fuld farvedybde, lag og metadata.</p><p class=\"text-mid mb-4\">JPEG er det mest universelle billedformat – kompatibelt med enhver enhed, browser og platform. Konvertering til JPG sikrer, at dine billeder vises problemfrit overalt: fra e-mailvedhæftninger til opslag på sociale medier.</p><p class=\"text-mid mb-4\">Konverteringen reducerer de ofte meget store TIFF-filer til kompakte JPEG-størrelser. Gennemsigtighed og laginformation mistes, men du får universelt kompatible filer til web, e-mail og sociale medier.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "TIFF til JPG konvertering",
       "variant": "right"

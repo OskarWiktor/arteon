@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "PNG-Grafiken in GIF umwandeln. Ideal fur einfache Icons und Grafiken.",
-      "featureList": ["Konvertierung zu GIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"]
+      "featureList": ["Konvertierung zu GIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
+      "alternateName": ["PNG in GIF umwandeln", "PNG zu GIF konvertieren", "Kostenloser PNG-zu-GIF-Konverter"]
     },
     "howTo": {
       "name": "PNG zu GIF konvertieren",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum PNG in GIF konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) ist ein verlustfreies Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Grafiken mit Transparenz verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von PNG in GIF (Graphics Interchange Format) bietet mehr Flexibilität bei der Verwendung Ihrer Bilder.</p><p class=\"text-mid mb-4\">GIF unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt GIF die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) ist ein verlustfreies Bildformat, das Millionen Farben und volle Alpha-Transparenz unterstützt. PNG eignet sich besonders für Logos, Icons, Screenshots und Grafiken mit scharfen Kanten oder Text – überall dort, wo jedes Pixel zählt.</p><p class=\"text-mid mb-4\">GIF ist das Standardformat für kurze Animationen, Memes und einfache Grafiken mit begrenzter Farbpalette. Mit universeller Browser-Unterstützung eignet sich GIF besonders für animierte Inhalte in sozialen Medien, Messenger-Diensten und E-Mail-Signaturen.</p><p class=\"text-mid mb-4\">Bei der Konvertierung wird die Farbpalette auf maximal 256 Farben reduziert. Das Ergebnis eignet sich für einfache Grafiken, Icons und Logos, ist aber für fotorealistische Bilder weniger geeignet. Transparenz wird unterstützt, allerdings nur binär (sichtbar oder unsichtbar), nicht stufenweise wie bei PNG.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "PNG-zu-GIF-Konvertierung",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "PNG-zu-GIF-Konvertierung in der Praxis",
-      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Moderne Webstandards bevorzugen zunehmend effiziente Formate. Google PageSpeed Insights und Core Web Vitals belohnen Seiten mit optimierten Bildern. Die Konvertierung von PNG in GIF kann Ihren Largest Contentful Paint (LCP) Wert direkt verbessern.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet GIF maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
+      "html": "<p class=\"text-mid mb-4\">Im DACH-Raum gelten strenge Datenschutzanforderungen – lokale Bildverarbeitung schützt sensible Daten. Ob Sie Produktbilder für Otto.de, Idealo, Amazon.de, eBay Kleinanzeigen vorbereiten, Grafiken in WordPress, Shopify, TYPO3 optimieren oder Bilder für Behördenportale (Elster, BundID) konvertieren – das richtige Format ist entscheidend.</p><p class=\"text-mid mb-4\">Obwohl GIF nicht das effizienteste Format für statische Bilder ist, bleibt es unverzichtbar für einfache Animationen, Memes und Grafiken mit begrenzter Farbpalette. Das Limit von 256 Farben macht GIF weniger geeignet für Fotos, aber ideal für Icons, Logos und animierte Inhalte in sozialen Medien und Messenger-Diensten.</p><p class=\"text-mid\">Für E-Mail-Marketing und Social Media bietet GIF maximale Kompatibilität. Die lokale Verarbeitung gewährleistet dabei vollständige DSGVO-Konformität.</p>"
     },
     {
       "type": "gap",

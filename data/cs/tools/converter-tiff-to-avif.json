@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte soubory TIFF na moderni AVIF. Masivni snizeni velikosti souboru.",
-      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"]
+      "featureList": ["Konverze do AVIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
+      "alternateName": ["Převést TIFF na AVIF", "Konverze TIFF do AVIF", "Převodník TIFF na AVIF zdarma"]
     },
     "howTo": {
       "name": "Jak převést TIFF na AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět TIFF na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) je bezeztrátový obrazový formát podporující miliony barev. Je široce používán pro tisk a archivaci.</p><p class=\"text-mid mb-4\">Převod TIFF na AVIF (AV1 Image File Format) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">AVIF podporuje alfa průhlednost. AVIF nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) je průmyslový standard pro profesionální fotografii, tisk a archivaci. TIFF ukládá obrázky bezeztrátově s plnou barevnou hloubkou, vrstvami a metadaty.</p><p class=\"text-mid mb-4\">AVIF nabízí nejefektivnější kompresi ze všech aktuálních obrazových formátů a dokáže zmenšit velikost až o 50% oproti JPEG. Chrome, Firefox a Safari 16+ podporují AVIF. Je to optimální volba pro výkonnostně kritické webové projekty.</p><p class=\"text-mid mb-4\">AVIF nabízí nejefektivnější kompresi pro převod velkých TIFF souborů. Ideální pro webovou optimalizaci profesionální fotografie s minimální ztrátou kvality.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Převod TIFF na AVIF",
       "variant": "right"

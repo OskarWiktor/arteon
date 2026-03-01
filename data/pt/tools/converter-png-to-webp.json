@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Conversor PNG para WebP",
-      "alternateName": [],
+      "alternateName": ["Converter PNG para WEBP", "Conversão de PNG para WEBP", "Conversor PNG para WEBP grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta gráficos PNG para WebP. Ficheiros menores mantendo a transparência.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter PNG para WebP?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) é um formato de imagem sem perda que suporta milhões de cores. É amplamente utilizado para gráficos com transparência.</p><p class=\"text-mid mb-4\">Converter PNG para WebP (WebP) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">WebP suporta transparência alfa. WebP oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Portable Network Graphics (PNG) é um formato de imagem sem perdas que suporta milhões de cores e transparência alfa completa. O PNG é especialmente indicado para logótipos, ícones, capturas de ecrã e gráficos com arestas nítidas ou texto.</p><p class=\"text-mid mb-4\">O WebP reduz o tamanho do ficheiro em 30–35% em relação a formatos anteriores, sem perda de qualidade visível. Todos os navegadores modernos (Chrome, Firefox, Safari 14+, Edge) suportam totalmente o WebP. Para sites web, isto significa tempos de carregamento mais rápidos e melhor posicionamento no Google.</p><p class=\"text-mid mb-4\">O WebP suporta transparência alfa exatamente como o PNG – todas as áreas transparentes são integralmente preservadas. Pode escolher entre compressão com e sem perdas para encontrar o equilíbrio ideal entre tamanho e qualidade.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de PNG para WEBP",
       "variant": "right"

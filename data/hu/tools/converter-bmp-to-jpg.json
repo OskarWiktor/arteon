@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "BMP JPG konverter",
-      "alternateName": [],
+      "alternateName": ["BMP konvertálása JPG formátumba", "BMP–JPG átalakítás", "Ingyenes BMP–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "BMP fájlok konvertálása könnyű JPG-re. Drasztikus méretcsökkentés.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes BMP-t JPG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Bitmap (BMP) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A BMP konvertálása JPG-re (JPEG) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A JPG nem támogatja az átlátszóságot – az átlátszó területek háttérszínnel lesznek kitöltve.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Bitmap (BMP) egy régebbi Windows képformátum, amely tömörítés nélkül tárolja a pixeladatokat. A BMP fájlok ezért rendkívül nagyok és alkalmatlanok modern webes vagy mobilhasználatra.</p><p class=\"text-mid mb-4\">A JPEG a leguniverzálisabb képformátum – kompatibilis minden eszközzel, böngészővel és platformmal. A JPG-re konvertálás biztosítja, hogy képei bárhol problémamentesen megjelenjenek: e-mail mellékletektől a közösségi média bejegyzésekig.</p><p class=\"text-mid mb-4\">A BMP fájlok tömörítetlenek és rendkívül nagyok. A JPEG-re konvertálás drasztikusan csökkenti a méretet (gyakran több mint 95%-kal) és univerzálisan kompatibilis fájlokat eredményez.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "BMP konvertálás JPG formátumba",
       "variant": "right"

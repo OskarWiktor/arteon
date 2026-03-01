@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "iPhone HEIC fotok konvertálása modern AVIF formatumra.",
-      "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"]
+      "featureList": ["Konvertálás AVIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
+      "alternateName": ["HEIC konvertálása AVIF formátumba", "HEIC–AVIF átalakítás", "Ingyenes HEIC–AVIF konverter"]
     },
     "howTo": {
       "name": "HEIC konvertálása AVIF-ra",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes HEIC-t AVIF-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A High Efficiency Image Container (HEIC) egy veszteséges képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A HEIC konvertálása AVIF-re (AV1 Image File Format) modern tömörítést használ kisebb fájlmérethez minőségveszteség nélkül.</p><p class=\"text-mid mb-4\">A AVIF támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A High Efficiency Image Container (HEIC) az Apple eszközök alapértelmezett fényképformátuma az iOS 11 óta. A HEIC kisebb fájlokat kínál, mint a JPEG hasonló minőségben, de az Apple ökoszisztémán kívül – Windowson, Androidon és sok webes platformon – nem támogatott natívan.</p><p class=\"text-mid mb-4\">Az AVIF a leghatékonyabb tömörítést kínálja az összes jelenlegi képformátum közül, akár 50%-kal csökkentve a fájlméretet a JPEG-hez képest. A Chrome, Firefox és Safari 16+ támogatja az AVIF-ot. Optimális választás teljesítménykritikus webprojektekhez.</p><p class=\"text-mid mb-4\">Az AVIF hasonló tömörítési hatékonyságot kínál, mint a HEIC, de nyílt formátumként sokkal szélesebb körben támogatott. A konvertálás modern tömörítést tesz lehetővé az Apple ökoszisztéma korlátozásai nélkül.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "HEIC konvertálás AVIF formátumba",
       "variant": "right"

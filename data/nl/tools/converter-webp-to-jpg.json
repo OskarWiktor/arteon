@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "WebP naar JPG converter",
-      "alternateName": [],
+      "alternateName": ["WEBP naar JPG omzetten", "WEBP naar JPG conversie", "Gratis WEBP naar JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer WebP-bestanden naar universeel compatibel JPG.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom WebP naar JPG converteren?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) is een lossy afbeeldingsformaat. Het wordt veel gebruikt voor webafbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van WebP naar JPG (JPEG) zorgt voor universele compatibiliteit met alle browsers en apparaten.</p><p class=\"text-mid mb-4\">JPG ondersteunt geen transparantie – transparante gebieden worden gevuld met een achtergrondkleur.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP is een modern beeldformaat ontwikkeld door Google dat zowel compressie met als zonder verlies ondersteunt. Het levert aanzienlijk kleinere bestanden dan PNG en JPEG bij vergelijkbare visuele kwaliteit.</p><p class=\"text-mid mb-4\">JPEG is het meest universele beeldformaat – compatibel met elk apparaat, elke browser en elk platform. De conversie naar JPG garandeert dat uw afbeeldingen overal probleemloos worden weergegeven: van e-mailbijlagen tot social-mediaposts.</p><p class=\"text-mid mb-4\">De conversie van WebP naar JPEG zorgt voor maximale compatibiliteit. JPG wordt ondersteund door elk apparaat en elke software – onmisbaar wanneer u afbeeldingen per e-mail wilt versturen of wilt uploaden naar platforms die geen WebP accepteren.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "WEBP naar JPG conversie",
       "variant": "right"

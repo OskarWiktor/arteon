@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert TIFF files to lightweight WebP. Massive size reduction with quality preserved.",
-      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert TIFF to WEBP", "TIFF to WEBP conversion", "Free TIFF to WEBP converter", "Change TIFF to WEBP"]
     },
     "howTo": {
       "name": "TIFF to WebP",

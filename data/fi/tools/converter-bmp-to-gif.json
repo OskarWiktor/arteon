@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna pakkaamattomat BMP-tiedostot kevyeen GIF-muotoon.",
-      "featureList": ["Muunnos GIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"]
+      "featureList": ["Muunnos GIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
+      "alternateName": ["Muunna BMP GIF-muotoon", "BMP:n muunto GIF-muotoon", "Ilmainen BMP–GIF-muunnin"]
     },
     "howTo": {
       "name": "Kuinka muuntaa BMP GIF-muotoon",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa BMP GIF-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) on häviötön kuvaformaatti. Sitä käytetään laajalti kuviin.</p><p class=\"text-mid mb-4\">BMP:n muuntaminen GIF-muotoon (Graphics Interchange Format) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">GIF tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) on vanhempi Windows-kuvamuoto, joka tallentaa pikselitiedot ilman pakkausta. BMP-tiedostot ovat erittäin suuria ja sopimattomia nykyaikaiseen käyttöön verkossa tai mobiililaitteilla.</p><p class=\"text-mid mb-4\">GIF on standardimuoto lyhyille animaatioille, meemeille ja yksinkertaiselle grafiikalle rajoitetulla väripaletilla. Universaalilla selaintuella GIF soveltuu erityisen hyvin animoituun sisältöön sosiaalisessa mediassa ja viestipalveluissa.</p><p class=\"text-mid mb-4\">Muunnos vähentää paletin 256 väriin ja pakkaa tiedoston merkittävästi. Soveltuu yksinkertaiseen grafiikkaan vanhemmista järjestelmistä, mutta valorealistisille BMP-kuville suositellaan JPG:tä tai WebP:tä.</p><p class=\"text-mid\">Tämä muunnin toimii kokonaan paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröitymistä. Täysin GDPR-yhteensopiva ja maksuton ilman mitään rajoituksia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "BMP-GIF-muunnos",
       "variant": "right"
@@ -147,23 +148,23 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "Your BMP files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+          "title": "Täysi yksityisyys",
+          "description": "BMP-tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata millekään palvelimelle – kuvasi pysyvät laitteellasi koko ajan."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "No limits",
-          "description": "Convert as many BMP files to GIF as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta BMP-tiedostoa GIF-muotoon kuin tarvitset. Ei päivittäisiä rajoituksia, ei tiedostokokorajoituksia, ei vesileimoja."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Quality control",
-          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+          "title": "Laadunhallinta",
+          "description": "Säädä pakkausasetuksia löytääksesi täydellisen tasapainon tiedostokoon ja kuvanlaadun välillä. Esikatsele muutoksia reaaliajassa ennen lataamista."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla – muunnos on nopea ja toimii jopa ilman internet-yhteyttä sivun latauduttua."
         }
       ]
     },
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "BMP-GIF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. BMP-muunnos GIF-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. GIF tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Vaikka GIF ei ole tehokkain muoto staattisille kuville, se on edelleen välttämätön yksinkertaisille animaatioille, meemeille ja grafiikalle, jossa on rajoitettu väripaletti. 256 värin raja tekee GIF:stä vähemmän sopivan valokuville, mutta ihanteellisen kuvakkeille, logoille ja animoidulle sisällölle sosiaalisessa mediassa ja viestipalveluissa.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. GIF tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
     },
     {
       "type": "gap",

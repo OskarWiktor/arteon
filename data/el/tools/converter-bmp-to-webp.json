@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Μετατρεψτε αρχεια BMP σε ελαφρυ WebP. Μειωση μεγεθους εως 95%.",
-      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["BMP to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Μετατροπή BMP σε WEBP", "Μετατροπέας BMP σε WEBP", "Δωρεάν μετατροπέας BMP σε WEBP"]
     },
     "howTo": {
       "name": "BMP to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε BMP σε WebP;",
-      "html": "<p class=\"text-mid mb-4\">Το Bitmap (BMP) είναι ένα μορφότυπο εικόνας χωρίς απώλειες. Χρησιμοποιείται ευρέως για εικόνες.</p><p class=\"text-mid mb-4\">Η μετατροπή BMP σε WebP (WebP) προσφέρει περισσότερη ευελιξία.</p><p class=\"text-mid mb-4\">Το WebP υποστηρίζει διαφάνεια alpha.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί τοπικά στον φυλλομετρητή σας – τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας. Δωρεάν και χωρίς εγγραφή.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το Bitmap (BMP) είναι μια παλαιότερη μορφή εικόνας Windows που αποθηκεύει δεδομένα pixel χωρίς συμπίεση. Τα αρχεία BMP είναι εξαιρετικά μεγάλα και ακατάλληλα για σύγχρονη χρήση στο διαδίκτυο ή σε κινητές συσκευές.</p><p class=\"text-mid mb-4\">Το WebP μειώνει το μέγεθος αρχείου κατά 30–35% σε σύγκριση με παλαιότερες μορφές, χωρίς ορατή απώλεια ποιότητας. Όλοι οι σύγχρονοι περιηγητές (Chrome, Firefox, Safari 14+, Edge) υποστηρίζουν πλήρως το WebP. Για ιστοσελίδες αυτό σημαίνει ταχύτερους χρόνους φόρτωσης και καλύτερη κατάταξη στο Google.</p><p class=\"text-mid mb-4\">Το WebP μειώνει τα τεράστια BMP αρχεία έως 97% με καλή οπτική ποιότητα. Η μετατροπή εκσυγχρονίζει παλαιές εικόνες για χρήση σε ιστοσελίδες.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή BMP σε WEBP",
       "variant": "right"

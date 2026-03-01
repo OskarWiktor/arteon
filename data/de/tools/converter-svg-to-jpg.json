@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "SVG zu JPG Konverter",
-      "alternateName": [],
+      "alternateName": ["SVG in JPG umwandeln", "SVG zu JPG konvertieren", "Kostenloser SVG-zu-JPG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "SVG-Grafiken in kompaktes JPG umwandeln. Kleinere Datei, volle Kompatibilität.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum SVG in JPG konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) ist ein verlustfreies Bildformat, das auf Vektorgrafiken basiert. Es wird häufig für Logos und Icons verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von SVG in JPG (JPEG) reduziert die Dateigröße erheblich und beschleunigt das Laden von Webseiten.</p><p class=\"text-mid mb-4\">JPG unterstützt keine Transparenz – transparente Bereiche werden mit einer Hintergrundfarbe gefüllt. Als verlustbehaftetes Format erreicht JPG hervorragende Kompressionsraten.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) ist ein XML-basiertes Vektorformat für zweidimensionale Grafiken. SVG-Dateien sind auflösungsunabhängig und bleiben bei jeder Größe scharf – ideal für Logos, Icons und Illustrationen.</p><p class=\"text-mid mb-4\">JPEG ist das universellste Bildformat – kompatibel mit jedem Gerät, jedem Browser und jeder Plattform weltweit. Die Konvertierung zu JPG stellt sicher, dass Ihre Bilder überall problemlos angezeigt werden können: von E-Mail-Anhängen über Social-Media-Posts bis hin zu Druckdiensten.</p><p class=\"text-mid mb-4\">Bei der Rasterisierung von SVG zu JPG wird das skalierbare Vektorbild in ein Pixelbild mit fester Auflösung konvertiert. Transparente Bereiche werden mit einer Hintergrundfarbe gefüllt. Das Ergebnis eignet sich für Plattformen und Anwendungen, die kein SVG akzeptieren.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "SVG-zu-JPG-Konvertierung",
       "variant": "right"

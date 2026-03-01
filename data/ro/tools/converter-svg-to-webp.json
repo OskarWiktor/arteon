@@ -28,23 +28,24 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește grafice SVG în WebP usor. Ideal pentru site-uri si retele sociale.",
-      "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversie SVG în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
+      "alternateName": ["Conversie SVG în WEBP", "Convertor SVG în WEBP", "Convertor gratuit SVG în WEBP"]
     },
     "howTo": {
       "name": "SVG to WebP",
       "description": "Convertește grafice SVG în WebP usor. Ideal pentru site-uri si retele sociale.",
       "steps": [
         {
-          "name": "Add SVG files",
-          "text": "Drag SVG files onto the drop zone or click to select."
+          "name": "Adăugați fișiere SVG",
+          "text": "Trageți fișierele SVG în zona de încărcare sau faceți clic pentru a le selecta de pe dispozitiv."
         },
         {
-          "name": "Set WebP quality",
-          "text": "Adjust quality slider (60-95%). Default 80%."
+          "name": "Setați calitatea WEBP",
+          "text": "Ajustați glisorul de calitate (60–95%). Valoarea implicită este 85%."
         },
         {
-          "name": "Download WebP",
-          "text": "Download files individually or all at once."
+          "name": "Descărcați WEBP",
+          "text": "Descărcați fișierele convertite individual sau pe toate odată."
         }
       ]
     }
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți SVG în WebP?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) este un format de imagine fără pierderi bazat pe grafică vectorială. Este utilizat pe scară largă pentru logo-uri și pictograme.</p><p class=\"text-mid mb-4\">Conversia SVG în WebP (WebP) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">WebP suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) este un format vectorial bazat pe XML pentru grafică bidimensională. Fișierele SVG sunt independente de rezoluție și rămân clare la orice dimensiune – ideale pentru logouri, pictograme și ilustrații.</p><p class=\"text-mid mb-4\">WebP reduce dimensiunea fișierului cu 30–35% față de formatele mai vechi, fără pierderi vizibile de calitate. Toate browserele moderne (Chrome, Firefox, Safari 14+, Edge) acceptă pe deplin WebP. Pentru site-uri web, aceasta înseamnă timpi de încărcare mai rapizi și o poziționare mai bună în Google.</p><p class=\"text-mid mb-4\">Conversia produce imagini de pixeli compacte din graficele vectoriale în format WebP. WebP este ideal pentru site-uri web unde fișierele mici și timpii rapizi de încărcare sunt determinanți.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie SVG în WEBP",
       "variant": "right"

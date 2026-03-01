@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "WebP kepek konvertálása professzionalis TIFF-re nyomtatashoz es archivalashoz.",
-      "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"]
+      "featureList": ["Konvertálás TIFF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
+      "alternateName": ["WEBP konvertálása TIFF formátumba", "WEBP–TIFF átalakítás", "Ingyenes WEBP–TIFF konverter"]
     },
     "howTo": {
       "name": "WebP konvertálása TIFF-ra",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes WebP-t TIFF-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A WebP (WebP) egy veszteséges képformátum. Széles körben használják webes képekhez.</p><p class=\"text-mid mb-4\">A WebP konvertálása TIFF-re (Tagged Image File Format) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A TIFF támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A WebP a Google által fejlesztett modern képformátum, amely veszteséges és veszteségmentes tömörítést is támogat. Jelentősen kisebb fájlokat eredményez, mint a PNG és JPEG hasonló vizuális minőségben, és minden jelenlegi böngésző támogatja.</p><p class=\"text-mid mb-4\">A TIFF megőrzi a teljes képminőséget bármilyen adatveszteség nélkül, és támogatja a rétegeket és kiterjedt metaadatokat. Iparági szabványként a nyomtatáshoz és archiváláshoz a TIFF professzionális fotósok és nyomdák számára alkalmas.</p><p class=\"text-mid mb-4\">A konvertálás WebP fájljait professzionális TIFF formátumba alakítja. Ideális nyomdai termeléshez és hosszú távú archiváláshoz, ahol veszteségmentes minőség és teljes metaadat-támogatás szükséges.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "WEBP konvertálás TIFF formátumba",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "WebP-TIFF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A WebP átalakítása TIFF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. TIFF kiváló tömörítést biztosít a vizuális minőség megőrzése mellett.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A TIFF az iparági szabvány a professzionális nyomtatáshoz, archiváláshoz és utómunkálatokhoz. Az Adobe Photoshop, Lightroom és GIMP programok TIFF formátumot használnak veszteségmentes szerkesztési munkafolyamatokhoz. A TIFF-re konvertálás megőrzi a teljes képadatot, beleértve a színprofilokat, rétegeket és metaadatokat.</p><p class=\"text-mid\">Professzionális fotózáshoz és nyomdai termeléshez a TIFF veszteségmentes minőséget biztosít az iparági szabványoknak megfelelően. A helyi feldolgozás teljes GDPR-megfelelőséget biztosít.</p>"
     },
     {
       "type": "gap",

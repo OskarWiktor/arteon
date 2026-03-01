@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertitore WebP in JPG",
-      "alternateName": [],
+      "alternateName": ["Convertire WEBP in JPG", "Conversione WEBP in JPG", "Convertitore WEBP in JPG gratuito"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converti file WebP in JPG compatibile ovunque. Senza limiti, senza registrazione.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire WebP in JPG?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) è un formato immagine con perdita che supporta milioni di colori. È ampiamente utilizzato per le immagini web.</p><p class=\"text-mid mb-4\">La conversione da WebP a JPG (JPEG) garantisce la compatibilità universale con tutti i browser e dispositivi.</p><p class=\"text-mid mb-4\">JPG non supporta la trasparenza – le aree trasparenti saranno riempite con un colore di sfondo. Come formato con perdita, JPG raggiunge eccellenti rapporti di compressione.</p><p class=\"text-mid\">Questo convertitore funziona localmente nel tuo browser – i tuoi file non lasciano mai il tuo dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Conforme al GDPR e completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">Il WebP è un formato immagine moderno sviluppato da Google che supporta sia la compressione con perdita sia quella senza perdita. Produce file notevolmente più leggeri di PNG e JPEG a qualità visiva comparabile ed è supportato da tutti i browser attuali.</p><p class=\"text-mid mb-4\">Il JPEG è il formato immagine più universale – compatibile con ogni dispositivo, browser e piattaforma al mondo. La conversione in JPG garantisce che le vostre immagini possano essere visualizzate ovunque senza problemi: dagli allegati e-mail ai post sui social media fino ai servizi di stampa.</p><p class=\"text-mid mb-4\">La conversione da WebP a JPEG assicura la massima compatibilità. Il JPG è supportato da ogni dispositivo e software – indispensabile per inviare immagini via e-mail o caricarle su piattaforme che non accettano il WebP.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione WEBP in JPG",
       "variant": "right"

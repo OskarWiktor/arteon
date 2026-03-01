@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konverter iPhone HEIC-fotos til tabsfri PNG. Fuld kvalitet og gennemsigtighed.",
-      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Konvertér HEIC til PNG", "HEIC til PNG konvertering", "Gratis HEIC til PNG konverter"]
     },
     "howTo": {
       "name": "HEIC to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere HEIC til PNG?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er et tabsgivende billedformat der understøtter millioner farver. Det bruges bredt til Apple-enhedsfotos.</p><p class=\"text-mid mb-4\">Konvertering af HEIC til PNG (Portable Network Graphics) sikrer universel kompatibilitet med alle browsere og enheder.</p><p class=\"text-mid mb-4\">PNG understøtter alfa-gennemsigtighed. Som tabsfrit format bevarer PNG alle billeddata.</p><p class=\"text-mid\">Denne konverter arbejder lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) er standardformatet for fotos på Apple-enheder siden iOS 11. HEIC tilbyder mindre filer end JPEG ved sammenlignelig kvalitet, men understøttes ikke nativt uden for Apples økosystem – hverken på Windows, Android eller mange webplatforme.</p><p class=\"text-mid mb-4\">PNG bevarer den fulde billedkvalitet uden komprimeringsartefakter og understøtter fuld alfa-gennemsigtighed. Dette tabsfrie format er ideelt til grafik, der skal viderebearbejdes, og billeder hvor gennemsigtige områder skal bevares.</p><p class=\"text-mid mb-4\">Konverteringen bevarer den fulde kvalitet af dit HEIC-original tabsfrit i PNG-format. PNG understøttes af alle enheder og er særligt velegnet, hvis du vil redigere billedet eller bevare gennemsigtigheden.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "HEIC til PNG konvertering",
       "variant": "right"

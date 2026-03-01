@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Muunna JPG-kuvat GIF-muotoon. Taydellinen yksinkertaisille grafiikoille ja kuvakkeille.",
-      "featureList": ["Muunnos GIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"]
+      "featureList": ["Muunnos GIF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
+      "alternateName": ["Muunna JPG GIF-muotoon", "JPG:n muunto GIF-muotoon", "Ilmainen JPG–GIF-muunnin"]
     },
     "howTo": {
       "name": "Kuinka muuntaa JPG GIF-muotoon",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa JPG GIF-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) on häviöllinen kuvaformaatti. Sitä käytetään laajalti valokuviin.</p><p class=\"text-mid mb-4\">JPG:n muuntaminen GIF-muotoon (Graphics Interchange Format) tarjoaa lisää joustavuutta.</p><p class=\"text-mid mb-4\">GIF tukee alfa-läpinäkyvyyttä.</p><p class=\"text-mid\">Tämä muunnin toimii paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröintiä. Täysin ilmainen.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) on maailman käytetyin kuvamuoto digitaalisille valokuville. Se käyttää häviöllistä pakkausta kompakteihin tiedostoihin, mutta ei tue läpinäkyvyyttä eikä häviötöntä tallennusta.</p><p class=\"text-mid mb-4\">GIF on standardimuoto lyhyille animaatioille, meemeille ja yksinkertaiselle grafiikalle rajoitetulla väripaletilla. Universaalilla selaintuella GIF soveltuu erityisen hyvin animoituun sisältöön sosiaalisessa mediassa ja viestipalveluissa.</p><p class=\"text-mid mb-4\">Väripaletti pienenee 256:een, mikä valokuvissa aiheuttaa näkyviä laadun menetyksiä. Tämä muunnos soveltuu lähinnä yksinkertaiseen grafiikkaan tai kun GIF-muoto vaaditaan yhteensopivuussyistä.</p><p class=\"text-mid\">Tämä muunnin toimii kokonaan paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröitymistä. Täysin GDPR-yhteensopiva ja maksuton ilman mitään rajoituksia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "JPG-GIF-muunnos",
       "variant": "right"
@@ -147,23 +148,23 @@
       "items": [
         {
           "icon": "RiShieldCheckLine",
-          "title": "Complete privacy",
-          "description": "Your JPG files are processed entirely in your browser. Nothing is uploaded to any server – your images stay on your device at all times."
+          "title": "Täysi yksityisyys",
+          "description": "JPG-tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata millekään palvelimelle – kuvasi pysyvät laitteellasi koko ajan."
         },
         {
           "icon": "RiInfinityLine",
-          "title": "No limits",
-          "description": "Convert as many JPG files to GIF as you need. There are no daily limits, no file size restrictions, and no watermarks on the output."
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta JPG-tiedostoa GIF-muotoon kuin tarvitset. Ei päivittäisiä rajoituksia, ei tiedostokokorajoituksia, ei vesileimoja."
         },
         {
           "icon": "RiImageEditLine",
-          "title": "Quality control",
-          "description": "Adjust compression settings to find the perfect balance between file size and image quality. Preview changes in real time before downloading."
+          "title": "Laadunhallinta",
+          "description": "Säädä pakkausasetuksia löytääksesi täydellisen tasapainon tiedostokoon ja kuvanlaadun välillä. Esikatsele muutoksia reaaliajassa ennen lataamista."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs, which means conversion is fast and works even without an internet connection after the page loads."
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla – muunnos on nopea ja toimii jopa ilman internet-yhteyttä sivun latauduttua."
         }
       ]
     },
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "JPG-GIF-muunnos käytännössä",
-      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Modernit verkkostandardit suosivat yhä enemmän tehokkaita kuvaformaatteja. Google PageSpeed Insights ja Core Web Vitals -mittarit palkitsevat sivustoja, joilla on optimoituja kuvia. JPG-muunnos GIF-muotoon voi suoraan parantaa Largest Contentful Paint (LCP) -tulosta, mikä vaikuttaa sekä hakukonesijoituksiin että käyttäjäkokemukseen.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. GIF tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomessa ja Pohjoismaissa tietosuoja on ensisijaista – paikallinen kuvanmuunnos suojaa arkaluonteisia tietoja. Olipa kyse kuvien valmistelusta kohteisiin Tori.fi, Verkkokauppa.com, Gigantti, Amazon, grafiikan optimoinnista järjestelmässä WordPress, Shopify, MyCashflow tai kuvien muuntamisesta palveluun suomi.fi ja Omakanta – oikea tiedostomuoto on ratkaisevaa.</p><p class=\"text-mid mb-4\">Vaikka GIF ei ole tehokkain muoto staattisille kuville, se on edelleen välttämätön yksinkertaisille animaatioille, meemeille ja grafiikalle, jossa on rajoitettu väripaletti. 256 värin raja tekee GIF:stä vähemmän sopivan valokuville, mutta ihanteellisen kuvakkeille, logoille ja animoidulle sisällölle sosiaalisessa mediassa ja viestipalveluissa.</p><p class=\"text-mid\">Paikallinen käsittely selaimessa takaa täyden GDPR-vaatimustenmukaisuuden. GIF tarjoaa parhaan mahdollisen yhteensopivuuden kaikkien alustojen kanssa.</p>"
     },
     {
       "type": "gap",

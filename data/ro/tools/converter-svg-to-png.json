@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertor SVG în PNG",
-      "alternateName": [],
+      "alternateName": ["Conversie SVG în PNG", "Convertor SVG în PNG", "Convertor gratuit SVG în PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertește grafice vectoriale SVG în PNG. Ideal pentru documente și social media.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți SVG în PNG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) este un format de imagine fără pierderi bazat pe grafică vectorială. Este utilizat pe scară largă pentru logo-uri și pictograme.</p><p class=\"text-mid mb-4\">Conversia SVG în PNG (Portable Network Graphics) oferă mai multă flexibilitate.</p><p class=\"text-mid mb-4\">PNG suportă transparența alpha.</p><p class=\"text-mid\">Acest convertor funcționează local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcări, fără servere, fără înregistrare. Complet gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) este un format vectorial bazat pe XML pentru grafică bidimensională. Fișierele SVG sunt independente de rezoluție și rămân clare la orice dimensiune – ideale pentru logouri, pictograme și ilustrații.</p><p class=\"text-mid mb-4\">PNG păstrează calitatea completă a imaginii fără artefacte de compresie și acceptă transparență alfa completă. Acest format fără pierderi este ideal pentru grafică destinată editării ulterioare și imagini unde zonele transparente trebuie păstrate.</p><p class=\"text-mid mb-4\">Rasterizarea SVG în PNG convertește imaginea vectorială în pixeli păstrând integral transparența. PNG este potrivit pentru rețele sociale și aplicații de mesagerie care nu acceptă SVG.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie SVG în PNG",
       "variant": "right"

@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converteer TIFF-bestanden naar verliesvrij PNG. Behoud volledige kwaliteit van scans.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["TIFF naar PNG omzetten", "TIFF naar PNG conversie", "Gratis TIFF naar PNG converter"]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom TIFF naar PNG converteren?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is een lossless afbeeldingsformaat. Het wordt veel gebruikt voor afbeeldingen.</p><p class=\"text-mid mb-4\">Het converteren van TIFF naar PNG (Portable Network Graphics) zorgt voor universele compatibiliteit met alle browsers en apparaten.</p><p class=\"text-mid mb-4\">PNG ondersteunt alfa-transparantie.</p><p class=\"text-mid\">Deze converter werkt lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is de industriestandaard voor professionele fotografie, drukwerk en archivering. TIFF slaat afbeeldingen verliesvrij op met volledige kleurdiepte, lagen en metadata.</p><p class=\"text-mid mb-4\">PNG behoudt de volledige beeldkwaliteit zonder compressieartefacten en ondersteunt volledige alfa-transparantie. Dit verliesvrije formaat is ideaal voor afbeeldingen die verder bewerkt moeten worden en voor beelden waarbij transparante gebieden behouden moeten blijven.</p><p class=\"text-mid mb-4\">De conversie behoudt de beeldkwaliteit verliesvrij en bewaart de transparantie indien aanwezig. PNG-bestanden zijn aanzienlijk kleiner dan TIFF en worden ondersteund door alle apparaten en platforms.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "TIFF naar PNG conversie",
       "variant": "right"

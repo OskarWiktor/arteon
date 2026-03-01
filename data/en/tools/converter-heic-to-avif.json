@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convert iPhone HEIC photos to modern AVIF format.",
-      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HEIC to AVIF", "HEIC to AVIF conversion", "Free HEIC to AVIF converter", "Change HEIC to AVIF"]
     },
     "howTo": {
       "name": "How to convert HEIC to AVIF",

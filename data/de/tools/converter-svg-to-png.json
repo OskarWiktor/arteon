@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "SVG zu PNG Konverter",
-      "alternateName": [],
+      "alternateName": ["SVG in PNG umwandeln", "SVG zu PNG konvertieren", "Kostenloser SVG-zu-PNG-Konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "SVG-Vektorgrafiken im Browser in PNG umwandeln. Ideal für Dokumente und Social Media.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum SVG in PNG konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) ist ein verlustfreies Bildformat, das auf Vektorgrafiken basiert. Es wird häufig für Logos und Icons verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von SVG in PNG (Portable Network Graphics) bietet mehr Flexibilität bei der Verwendung Ihrer Bilder.</p><p class=\"text-mid mb-4\">PNG unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt PNG die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) ist ein XML-basiertes Vektorformat für zweidimensionale Grafiken. SVG-Dateien sind auflösungsunabhängig und bleiben bei jeder Größe scharf – ideal für Logos, Icons und Illustrationen.</p><p class=\"text-mid mb-4\">PNG bewahrt die volle Bildqualität ohne Kompressionsartefakte und unterstützt volle Alpha-Transparenz. Das verlustfreie Format eignet sich ideal für Grafiken, die weiterbearbeitet werden sollen, und für Bilder, bei denen transparente Bereiche erhalten bleiben müssen.</p><p class=\"text-mid mb-4\">Bei der Rasterisierung von SVG zu PNG wird das Vektorbild in ein Pixelbild umgewandelt, wobei die Transparenz vollständig erhalten bleibt. PNG eignet sich besonders für Social-Media-Plattformen, Messenger und E-Mail-Signaturen, die kein SVG unterstützen.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "SVG-zu-PNG-Konvertierung",
       "variant": "right"

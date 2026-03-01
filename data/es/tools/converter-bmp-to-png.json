@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Convertidor BMP a PNG",
-      "alternateName": [],
+      "alternateName": ["Convertir BMP a PNG", "Conversión de BMP a PNG", "Convertidor BMP a PNG gratis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convierte imágenes BMP a PNG sin pérdida. Conserva la calidad con menor tamaño.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir BMP a PNG?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) es un formato de imagen sin pérdida que soporta millones de colores. Se utiliza ampliamente para imágenes sin compresión.</p><p class=\"text-mid mb-4\">Convertir BMP a PNG (Portable Network Graphics) ofrece más flexibilidad.</p><p class=\"text-mid mb-4\">PNG soporta transparencia alfa. Como formato sin pérdida, PNG preserva todos los datos de la imagen.</p><p class=\"text-mid\">Este convertidor funciona localmente en tu navegador – tus archivos nunca salen de tu dispositivo. Sin subidas, sin servidores, sin registro. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) es un formato de imagen antiguo de Windows que almacena datos de píxeles sin compresión. Los archivos BMP son extremadamente grandes y resultan inadecuados para el uso moderno en la web, correo electrónico o dispositivos móviles.</p><p class=\"text-mid mb-4\">PNG preserva la calidad de imagen completa sin artefactos de compresión y admite transparencia alfa completa. Este formato sin pérdidas es ideal para gráficos que necesitan ser editados posteriormente y para imágenes donde deben conservarse las áreas transparentes.</p><p class=\"text-mid mb-4\">La conversión de BMP a PNG reduce considerablemente el tamaño mediante compresión sin pérdidas. A diferencia de JPEG, se preserva la calidad de imagen completa, ideal para gráficos con bordes nítidos y texto.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Conversión de BMP a PNG",
       "variant": "right"

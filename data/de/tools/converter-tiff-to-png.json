@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "TIFF-Dateien in verlustfreies PNG umwandeln. Volle Qualitat von Scans erhalten.",
-      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"]
+      "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
+      "alternateName": ["TIFF in PNG umwandeln", "TIFF zu PNG konvertieren", "Kostenloser TIFF-zu-PNG-Konverter"]
     },
     "howTo": {
       "name": "TIFF to PNG",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum TIFF in PNG konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) ist ein verlustfreies Bildformat mit Unterstützung für Millionen Farben. Es wird häufig für Druck und Archivierung verwendet.</p><p class=\"text-mid mb-4\">Die Konvertierung von TIFF in PNG (Portable Network Graphics) stellt universelle Kompatibilität mit allen Browsern und Geräten sicher.</p><p class=\"text-mid mb-4\">PNG unterstützt Alpha-Transparenz – transparente Bereiche bleiben erhalten. Als verlustfreies Format bewahrt PNG die vollständige Bildqualität.</p><p class=\"text-mid\">Dieser Konverter arbeitet lokal in Ihrem Browser – Ihre Dateien verlassen Ihr Gerät nicht. Keine Uploads, keine Server, keine Registrierung. DSGVO-konform und vollständig kostenlos.</p>",
+      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) ist der Industriestandard für professionelle Fotografie, Druck und Archivierung. TIFF speichert Bilder verlustfrei mit voller Farbtiefe, Ebenen und Metadaten – verlangt dafür aber entsprechend große Dateien.</p><p class=\"text-mid mb-4\">PNG bewahrt die volle Bildqualität ohne Kompressionsartefakte und unterstützt volle Alpha-Transparenz. Das verlustfreie Format eignet sich ideal für Grafiken, die weiterbearbeitet werden sollen, und für Bilder, bei denen transparente Bereiche erhalten bleiben müssen.</p><p class=\"text-mid mb-4\">Die Konvertierung bewahrt die Bildqualität verlustfrei und erhält die Transparenz, falls vorhanden. PNG-Dateien sind deutlich kleiner als TIFF und werden von allen Geräten, Browsern und Plattformen unterstützt.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "TIFF-zu-PNG-Konvertierung",
       "variant": "right"

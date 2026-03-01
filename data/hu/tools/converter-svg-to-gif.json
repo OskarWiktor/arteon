@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Vektor SVG grafika konvertálása GIF raszter formatumra.",
-      "featureList": ["Konvertálás GIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"]
+      "featureList": ["Konvertálás GIF-re", "Minőség beállítása (60-95%)", "Kötegelt konvertálás", "Helyi feldolgozás a böngészőben"],
+      "alternateName": ["SVG konvertálása GIF formátumba", "SVG–GIF átalakítás", "Ingyenes SVG–GIF konverter"]
     },
     "howTo": {
       "name": "SVG konvertálása GIF-ra",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes SVG-t GIF-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Scalable Vector Graphics (SVG) egy veszteségmentes képformátum, amely vektorgrafikán alapul. Széles körben használják logókhoz és ikonokhoz.</p><p class=\"text-mid mb-4\">A SVG konvertálása GIF-re (Graphics Interchange Format) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A GIF támogatja az alfa átlátszóságot.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Scalable Vector Graphics (SVG) egy XML-alapú vektorformátum kétdimenziós grafikákhoz. Az SVG fájlok felbontás-függetlenek és bármilyen méretben élesek maradnak – ideálisak logókhoz, ikonokhoz és illusztrációkhoz.</p><p class=\"text-mid mb-4\">A GIF a rövid animációk, mémek és egyszerű, korlátozott színpalettájú grafikák standard formátuma. Univerzális böngészőtámogatással a GIF különösen alkalmas animált tartalmakhoz a közösségi médiában és üzenetküldő alkalmazásokban.</p><p class=\"text-mid mb-4\">A konvertálás a vektorképet legfeljebb 256 színű pixelképpé alakítja. A GIF egyszerű ikonokhoz és animált grafikákhoz alkalmas, de nem összetett, színátmenetes illusztrációkhoz.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "SVG konvertálás GIF formátumba",
       "variant": "right"
@@ -174,7 +175,7 @@
     {
       "type": "sectionInfo",
       "title": "SVG-GIF konvertálás a gyakorlatban",
-      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">A modern webes szabványok egyre inkább előnyben részesítik a hatékony formátumokat. A Google PageSpeed Insights és a Core Web Vitals mutatók jutalmazzak az optimalizált képekkel rendelkező oldalakat. A SVG átalakítása GIF formátumba közvetlenül javíthatja a Largest Contentful Paint (LCP) értéket, ami hatással van a keresőmotor-rangsorolásra és a felhasználói élményre.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. GIF maximális kompatibilitást nyújt minden platformmal.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyarországon az online piacterek és kormányzati portálok gyakran specifikus képformátumot követelnek. Legyen szó képek előkészítéséről a Jófogás.hu, Extreme Digital, eMAG.hu, Marketplace platformokra, grafikák optimalizálásáról a WordPress, Shopify, Shoprenter rendszerben, vagy fényképek konvertálásáról a Ügyfélkapu és Kormányablak számára – a megfelelő formátum döntő jelentőségű.</p><p class=\"text-mid mb-4\">Bár a GIF nem a leghatékonyabb formátum statikus képekhez, továbbra is nélkülözhetetlen egyszerű animációkhoz, mémekhez és korlátozott színpalettájú grafikákhoz. A 256 színes korlát miatt a GIF kevésbé alkalmas fényképekhez, de ideális ikonokhoz, logókhoz és animált tartalmakhoz közösségi médiában és üzenetküldő alkalmazásokban.</p><p class=\"text-mid\">A helyi feldolgozás a böngészőben teljes GDPR-megfelelőséget biztosít. GIF maximális kompatibilitást nyújt minden platformmal.</p>"
     },
     {
       "type": "gap",

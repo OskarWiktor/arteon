@@ -8,7 +8,7 @@ const path = require('path');
 const filePath = path.join(__dirname, '..', 'lib', 'i18n', 'tool-registry.ts');
 const content = fs.readFileSync(filePath, 'utf8');
 
-const ALL_LOCALES = ['pl','en','de','es','fr','pt','it','ro','nl','hu','cs','sv','da','no','fi','el'];
+const ALL_LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
 
 // Known diacritic issues by locale
 const DIACRITIC_CHECKS = {
@@ -29,10 +29,10 @@ const DIACRITIC_CHECKS = {
     { wrong: 'archivacion', correct: 'archivación' },
   ],
   fr: [
-    { wrong: 'jusqu\'a ', correct: "jusqu'à " },
+    { wrong: "jusqu'a ", correct: "jusqu'à " },
     { wrong: "jusqu'a ", correct: "jusqu'à " },
     { wrong: 'premiere ', correct: 'première ' },
-    { wrong: 'l\'impression', correct: "l'impression" }, // this is ok actually
+    { wrong: "l'impression", correct: "l'impression" }, // this is ok actually
   ],
   pt: [
     { wrong: 'Compressao ', correct: 'Compressão ' },
@@ -100,23 +100,23 @@ let match;
 while ((match = blockRegex.exec(content)) !== null) {
   const key = match[1];
   const localesBlock = match[2];
-  
+
   // Extract per-locale slug, title, description
   const localeRegex = /(\w{2}):\s*\{\s*slug:\s*'([^']+)',\s*title:\s*'([^']*?)'|(\w{2}):\s*\{\s*slug:\s*'([^']+)',\s*title:\s*"([^"]*?)"/g;
   let lm;
   const locales = {};
-  
+
   // Better: extract each locale line
   const lineRegex = /(\w{2}):\s*\{[^}]+\}/g;
   let lineMat;
   while ((lineMat = lineRegex.exec(localesBlock)) !== null) {
     const locale = lineMat[1];
     const lineContent = lineMat[0];
-    
+
     const slugM = lineContent.match(/slug:\s*'([^']+)'/);
     const titleM = lineContent.match(/title:\s*'([^']*)'/) || lineContent.match(/title:\s*"([^"]*)"/);
     const descM = lineContent.match(/description:\s*'([^']*)'/) || lineContent.match(/description:\s*"([^"]*)"/);
-    
+
     if (slugM && titleM) {
       locales[locale] = {
         slug: slugM[1],
@@ -125,7 +125,7 @@ while ((match = blockRegex.exec(content)) !== null) {
       };
     }
   }
-  
+
   converterBlocks.push({ key, locales });
 }
 
@@ -140,7 +140,7 @@ for (const tool of converterBlocks) {
   for (const [locale, checks] of Object.entries(DIACRITIC_CHECKS)) {
     const entry = tool.locales[locale];
     if (!entry) continue;
-    
+
     const fullText = `${entry.title} ${entry.description}`;
     for (const check of checks) {
       if (check.wrong === check.correct) continue; // skip self-matches

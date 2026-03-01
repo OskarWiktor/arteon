@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Converta ficheiros AVIF para WebP. Ampla compatibilidade com tamanho reduzido.",
-      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Converter AVIF para WEBP", "Conversão de AVIF para WEBP", "Conversor AVIF para WEBP grátis"]
     },
     "howTo": {
       "name": "AVIF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter AVIF para WebP?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) é um formato de imagem com perda que suporta milhões de cores. É amplamente utilizado para imagens web modernas.</p><p class=\"text-mid mb-4\">Converter AVIF para WebP (WebP) aproveita a compressão moderna para ficheiros mais leves sem perda de qualidade.</p><p class=\"text-mid mb-4\">WebP suporta transparência alfa. WebP oferece compressão com e sem perda.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O AV1 Image File Format (AVIF) é um formato de imagem de nova geração baseado no codec de vídeo AV1. O AVIF oferece atualmente a melhor compressão disponível – ficheiros até 50% mais leves que o WebP com qualidade visual comparável.</p><p class=\"text-mid mb-4\">O WebP reduz o tamanho do ficheiro em 30–35% em relação a formatos anteriores, sem perda de qualidade visível. Todos os navegadores modernos (Chrome, Firefox, Safari 14+, Edge) suportam totalmente o WebP. Para sites web, isto significa tempos de carregamento mais rápidos e melhor posicionamento no Google.</p><p class=\"text-mid mb-4\">O WebP oferece compatibilidade de navegadores mais ampla que o AVIF com boa compressão. A conversão faz sentido quando a plataforma de destino suporta WebP mas ainda não AVIF.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de AVIF para WEBP",
       "variant": "right"

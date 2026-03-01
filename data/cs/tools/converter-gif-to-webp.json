@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani.",
-      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"]
+      "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Převést GIF na WEBP", "Konverze GIF do WEBP", "Převodník GIF na WEBP zdarma"]
     },
     "howTo": {
       "name": "GIF to WebP",
@@ -57,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět GIF na WebP?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) je bezeztrátový obrazový formát podporující 256 barev. Je široce používán pro jednoduché animace.</p><p class=\"text-mid mb-4\">Převod GIF na WebP (WebP) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">WebP podporuje alfa průhlednost. WebP nabízí ztrátovou i bezeztrátovou kompresi.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) podporuje animace a paletu maximálně 256 barev. GIF je široce používán pro animovaný obsah na sociálních sítích, ale omezení barev ho činí nevhodným pro fotorealistické snímky.</p><p class=\"text-mid mb-4\">WebP zmenšuje velikost souboru o 30–35% oproti starším formátům bez viditelné ztráty kvality. Všechny moderní prohlížeče (Chrome, Firefox, Safari 14+, Edge) plně podporují WebP. Pro webové stránky to znamená rychlejší načítání a lepší umístění v Google.</p><p class=\"text-mid mb-4\">WebP podporuje jak statické obrázky, tak animace s výrazně lepší kompresí než GIF. U statických GIF převod vytváří menší soubory při stejné nebo lepší kvalitě.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod GIF na WEBP",
       "variant": "right"

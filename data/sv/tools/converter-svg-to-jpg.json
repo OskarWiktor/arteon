@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "SVG till JPG-konverterare",
-      "alternateName": [],
+      "alternateName": ["Konvertera SVG till JPG", "SVG till JPG konvertering", "Gratis SVG till JPG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Konvertera SVG-filer till kompakt JPG. Mindre fil, full kompatibilitet.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera SVG till JPG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) är ett förlustfritt bildformat baserat på vektorgrafik. Det används i stor utsträckning för logotyper och ikoner.</p><p class=\"text-mid mb-4\">Konvertering av SVG till JPG (JPEG) ger mer flexibilitet.</p><p class=\"text-mid mb-4\">JPG stödjer inte transparens – transparenta områden fylls med en bakgrundsfärg.</p><p class=\"text-mid\">Denna konverterare arbetar lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt gratis.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) är ett XML-baserat vektorformat för tvådimensionell grafik. SVG-filer är upplösningsoberoende och förblir skarpa i alla storlekar – idealiska för logotyper, ikoner och illustrationer.</p><p class=\"text-mid mb-4\">JPEG är det mest universella bildformatet – kompatibelt med alla enheter, webbläsare och plattformar. Konvertering till JPG säkerställer att dina bilder visas problemfritt överallt: från e-postbilagor till inlägg i sociala medier.</p><p class=\"text-mid mb-4\">Rastrering från SVG till JPG konverterar den skalbara vektorgrafiken till en pixelbild med fast upplösning. Transparenta områden fylls med en bakgrundsfärg. Lämpligt för plattformar som inte accepterar SVG.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "SVG till JPG konvertering",
       "variant": "right"

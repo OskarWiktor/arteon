@@ -14,10 +14,13 @@ const replacements = [
   ['edukacja/druk/materialy-drukowane-dla-firmy-ktore-zamowic', 'edukacja/grafika/materialy-drukowane-dla-firmy-ktore-zamowic'],
   ['edukacja/branding/jak-przygotowac-profesjonalna-stopke-mailowa', 'edukacja/marketing/jak-przygotowac-profesjonalna-stopke-mailowa'],
   ['edukacja/zdjecia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie', 'edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie'],
-  ['edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp', 'edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp'],
+  [
+    'edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
+    'edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
+  ],
 ];
 
-const files = fs.readdirSync(blogDir).filter(f => f.endsWith('.json'));
+const files = fs.readdirSync(blogDir).filter((f) => f.endsWith('.json'));
 
 let totalFixes = 0;
 

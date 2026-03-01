@@ -28,7 +28,8 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Convertissez les photos HEIC d\\'iPhone en format AVIF moderne.",
-      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"]
+      "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
+      "alternateName": ["Convertir HEIC en AVIF", "Conversion HEIC vers AVIF", "Convertisseur HEIC en AVIF gratuit"]
     },
     "howTo": {
       "name": "Comment convertir HEIC en AVIF",
@@ -65,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir HEIC en AVIF ?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) est un format d’image avec perte prenant en charge des millions de couleurs. Il est largement utilisé pour les photos Apple.</p><p class=\"text-mid mb-4\">La conversion de HEIC en AVIF (AV1 Image File Format) tire parti de la compression moderne pour des fichiers plus légers sans perte de qualité.</p><p class=\"text-mid mb-4\">AVIF prend en charge la transparence alpha. AVIF offre une compression avec et sans perte.</p><p class=\"text-mid\">Ce convertisseur fonctionne localement dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléchargement, aucun serveur, aucune inscription. Conforme au RGPD et entièrement gratuit.</p>",
+      "html": "<p class=\"text-mid mb-4\">Le High Efficiency Image Container (HEIC) est le format par défaut des photos sur les appareils Apple depuis iOS 11. Le HEIC offre des fichiers plus légers que le JPEG à qualité comparable, mais n'est pas pris en charge nativement en dehors de l'écosystème Apple – ni sous Windows, ni sous Android, ni sur de nombreuses plateformes web.</p><p class=\"text-mid mb-4\">L'AVIF offre la compression la plus efficace de tous les formats d'image actuels, réduisant la taille des fichiers jusqu'à 50% par rapport au JPEG. Chrome, Firefox et Safari 16+ prennent en charge l'AVIF. C'est le choix optimal pour les projets web critiques en termes de performance et l'utilisation mobile.</p><p class=\"text-mid mb-4\">L'AVIF offre une efficacité de compression similaire au HEIC, mais en tant que format ouvert, il est nettement plus largement supporté. La conversion permet d'utiliser une compression moderne sans les restrictions de l'écosystème Apple.</p><p class=\"text-mid\">Ce convertisseur fonctionne entièrement en local dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléversement, aucun serveur, aucune inscription. Entièrement conforme au RGPD et gratuit sans aucune limitation.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Conversion HEIC en AVIF",
       "variant": "right"

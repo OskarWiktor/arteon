@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Převodník SVG na JPG",
-      "alternateName": [],
+      "alternateName": ["Převést SVG na JPG", "Konverze SVG do JPG", "Převodník SVG na JPG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět SVG na JPG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) je bezeztrátový obrazový formát založený na vektorové grafice. Je široce používán pro loga a ikony.</p><p class=\"text-mid mb-4\">Převod SVG na JPG (JPEG) výrazně zmenšuje velikost souboru.</p><p class=\"text-mid mb-4\">JPG nepodporuje průhlednost – průhledné oblasti budou vyplněny barvou pozadí. Jako ztrátový formát dosahuje JPG vynikajících kompresních poměrů.</p><p class=\"text-mid\">Tento převodník pracuje lokálně ve vašem prohlížeči – soubory neopouštějí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Zcela zdarma.</p>",
+      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) je vektorový formát založený na XML. SVG soubory jsou nezávislé na rozlišení a zůstávají ostré v jakékoli velikosti – ideální pro loga, ikony a ilustrace.</p><p class=\"text-mid mb-4\">JPEG je nejuniverzálnější obrazový formát – kompatibilní s každým zařízením, prohlížečem a platformou. Převod do JPG zajistí, že vaše obrázky budou bez problémů zobrazeny kdekoli: od e-mailových příloh po příspěvky na sociálních sítích.</p><p class=\"text-mid mb-4\">Rasterizace SVG na JPG převádí škálovatelnou vektorovou grafiku na pixelový obrázek s pevným rozlišením. Průhledné oblasti se vyplní barvou pozadí. Vhodné pro platformy nepřijímající SVG.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod SVG na JPG",
       "variant": "right"

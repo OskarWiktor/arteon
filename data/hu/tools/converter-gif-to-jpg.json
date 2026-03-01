@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "GIF JPG konverter",
-      "alternateName": [],
+      "alternateName": ["GIF konvertálása JPG formátumba", "GIF–JPG átalakítás", "Ingyenes GIF–JPG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exportálja a GIF első képkockáját kompakt JPG-ként. Kisebb fájl.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes GIF-t JPG-re konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A Graphics Interchange Format (GIF) egy veszteségmentes képformátum. Széles körben használják képekhez.</p><p class=\"text-mid mb-4\">A GIF konvertálása JPG-re (JPEG) nagyobb rugalmasságot biztosít.</p><p class=\"text-mid mb-4\">A JPG nem támogatja az átlátszóságot – az átlátszó területek háttérszínnel lesznek kitöltve.</p><p class=\"text-mid\">Ez a konverter helyben, a böngészőjében működik – a fájljai soha nem hagyják el az eszközét. Feltöltés, szerver és regisztráció nélkül. Teljesen ingyenes.</p>",
+      "html": "<p class=\"text-mid mb-4\">A Graphics Interchange Format (GIF) animációkat és legfeljebb 256 színű palettát támogat. A GIF széles körben használt animált tartalmakhoz a közösségi médiában, de a színkorlátozás miatt nem alkalmas fotórealisztikus képekhez.</p><p class=\"text-mid mb-4\">A JPEG a leguniverzálisabb képformátum – kompatibilis minden eszközzel, böngészővel és platformmal. A JPG-re konvertálás biztosítja, hogy képei bárhol problémamentesen megjelenjenek: e-mail mellékletektől a közösségi média bejegyzésekig.</p><p class=\"text-mid mb-4\">A GIF-ből JPG-be konvertálásnál az animációs képkockák és az átlátszóság elvesznek – csak az első kép konvertálódik. Cserébe univerzálisan kompatibilis formátumot kap teljes színmélységgel (16,7 millió szín).</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "GIF konvertálás JPG formátumba",
       "variant": "right"

@@ -25,7 +25,7 @@
   "schemas": {
     "software": {
       "name": "Conversor GIF para JPG",
-      "alternateName": [],
+      "alternateName": ["Converter GIF para JPG", "Conversão de GIF para JPG", "Conversor GIF para JPG grátis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Exporte o primeiro fotograma de um GIF como JPG compacto. Ficheiro menor.",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter GIF para JPG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) é um formato de imagem sem perda que suporta 256 de cores. É amplamente utilizado para animações simples.</p><p class=\"text-mid mb-4\">Converter GIF para JPG (JPEG) reduz significativamente o tamanho do ficheiro.</p><p class=\"text-mid mb-4\">JPG não suporta transparência – as áreas transparentes serão preenchidas com uma cor de fundo. Como formato com perda, JPG atinge excelentes rácios de compressão.</p><p class=\"text-mid\">Este conversor funciona localmente no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem uploads, sem servidores, sem registo. Completamente gratuito.</p>",
+      "html": "<p class=\"text-mid mb-4\">O Graphics Interchange Format (GIF) suporta animações e uma paleta de no máximo 256 cores. O GIF é muito utilizado para conteúdos animados nas redes sociais, mas a limitação de cores torna-o inadequado para imagens fotorrealistas.</p><p class=\"text-mid mb-4\">O JPEG é o formato de imagem mais universal – compatível com todos os dispositivos, navegadores e plataformas. A conversão para JPG garante que as suas imagens podem ser visualizadas em qualquer lugar: desde anexos de e-mail a publicações nas redes sociais.</p><p class=\"text-mid mb-4\">Na conversão de GIF para JPG, os frames de animação e a transparência são perdidos – apenas a primeira imagem é convertida. Obtém um formato universalmente compatível com profundidade de cor completa (16,7 milhões de cores).</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de GIF para JPG",
       "variant": "right"
