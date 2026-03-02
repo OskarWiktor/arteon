@@ -278,9 +278,17 @@
       "html": "<p class=\"text-mid mb-4\">Google viser favicons ved siden af webstedets URL i søgeresultaterne. Mobile søgeresultater har vist favicons siden 2019. Desktopresultater fulgte i januar 2020. Favicon er dermed et synligt brandinglement i hver Google-søgning.</p><p class=\"text-mid mb-4\">Google stiller specifikke krav til visning af favicons. Ikonet skal være mindst 48×48 pixels. Det skal være kvadratisk. Billedet skal være tydeligt synligt på hvid baggrund. Google afviser ikoner med upassende eller tomt indhold.</p><p class=\"text-mid mb-4\">Googlebot crawler og indekserer favicons uafhængigt af sideindholdet. Opdatering af favicon i søgeresultaterne kan tage flere dage til uger. Favicon-filen må ikke være blokeret i robots.txt — ellers kan Google ikke hente den nye version.</p><p class=\"text-mid\">Bing viser også favicons i sine søgeresultater. DuckDuckGo viser webstedsikoner ved siden af hvert resultatlink. Et komplet sæt favicons sikrer et ensartet brandsudseende i alle store søgemaskiner. Brugere genkender velkendte favicons hurtigere, hvilket bidrager til en højere klikrate.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Favicon og brandidentitet i Danmark",
       "html": "<p class=\"text-mid mb-4\">Dansk designtradition værdsætter enkelhed og funktionalitet. Et rent og simpelt favicon afspejler disse værdier og styrker genkendelsen i browserfaner, bogmærker og på mobilens startskærm. Når en bruger har ti eller flere faner åbne, forbliver favicon det eneste synlige element, der identificerer webstedet.</p><p class=\"text-mid mb-4\">Visuel konsistens mellem favicon og logo forbedrer brandgenkendelsen. En forenklet version af logoet eller dets første bogstav fungerer bedst ved små pixelstørrelser. Farverne i favicon bør matche virksomhedens grafiske profil.</p><p class=\"text-mid mb-4\">Danske e-handelsplatforme som Shoporama, DanDomain og SmartWeb giver mulighed for favicon-konfiguration i temaindstillingerne. Webshops med et professionelt favicon signalerer troværdighed og skiller sig ud på prissammenligningssider.</p><p class=\"text-mid\">Webtilgængelighed i Danmark er reguleret af lov om tilgængelighed af offentlige organers websteder. Tilstrækkelig kontrast for alle visuelle elementer er et krav. Favicon skal være læsbart i både lys og mørk tilstand. Kontrastrige farver og enkle former opfylder dette krav pålideligt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

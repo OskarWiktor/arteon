@@ -141,6 +141,10 @@
       "html": "<p class=\"text-mid mb-4\">Pour les textes en français, cet outil utilise la <strong>formule Kandel-Moles</strong> — une adaptation de l’indice Flesch conçue spécifiquement pour la langue française. Les coefficients sont ajustés car le français a des mots généralement plus longs et une structure syllabique différente de l’anglais.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Très facile. Phrases courtes, mots courants.</li><li><strong>70–89</strong> — Facile. Langage conversationnel.</li><li><strong>50–69</strong> — Modéré. Rédaction commerciale et journalistique.</li><li><strong>30–49</strong> — Difficile. Phrases longues, vocabulaire spécialisé.</li><li><strong>0–29</strong> — Très difficile. Textes académiques et juridiques.</li></ul><p class=\"text-mid mt-3\">Le français comporte de nombreuses lettres muettes qui influencent le comptage de caractères. L’outil en tient compte dans ses règles syllabiques.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 métriques de texte – que mesure le compteur",
       "description": "Le compteur analyse votre texte selon onze indicateurs :",

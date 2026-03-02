@@ -143,6 +143,10 @@
       "html": "<p class=\"text-mid mb-4\">Az eszköz az olvashatósági pontszámot az átlagos mondathossz és az átlagos szótagszám alapján számítja. Az eredmény 0–100 skálán jelenik meg:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>80–100</strong> — Nagyon könnyű. Rövid mondatok, hétköznapi szavak.</li><li><strong>60–79</strong> — Könnyű. Társalgási nyelv.</li><li><strong>40–59</strong> — Közepes. Általános üzleti és újságírói szövegek.</li><li><strong>20–39</strong> — Nehéz. Hosszú mondatok, szaknyelv.</li><li><strong>0–19</strong> — Nagyon nehéz. Tudományos és jogi szövegek.</li></ul><p class=\"text-mid mt-3\">A magyar nyelv agglutináló jellegét figyelembe véve az eszköz csökkentett szótagegyütthatójú Flesch-adaptációt használ. Webes tartalmakhoz magyarul az 50–70 közötti pontszám a jó célérték.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 szövegmetrika – mit mér a számláló?",
       "description": "A számláló tizenegy mutatóval elemzi a szöveget:",

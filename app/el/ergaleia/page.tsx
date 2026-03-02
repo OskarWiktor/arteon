@@ -585,6 +585,7 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
+        <Gap size="sm" />
 
         <SectionSteps
           title="Κείμενο και SEO"

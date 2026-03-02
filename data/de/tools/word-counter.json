@@ -141,6 +141,10 @@
       "html": "<p class=\"text-mid mb-4\">Für deutsche Texte verwendet dieses Tool die <strong>Amstad-Formel</strong> — eine Adaption des Flesch-Index speziell für die deutsche Sprache:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">180 − ASL − 58,5 × ASW</code></p><p class=\"text-mid mb-4\">ASL ist die durchschnittliche Satzlänge (Wörter pro Satz), ASW die durchschnittliche Silbenzahl pro Wort. Die angepassten Koeffizienten berücksichtigen, dass deutsche Wörter im Durchschnitt länger sind als englische — vor allem durch zusammengesetzte Wörter (Komposita).</p><p class=\"text-mid\">Zusätzlich existiert die <strong>Wiener Sachtextformel</strong>, die in Österreich und der Schweiz verbreitet ist und speziell für Sachtexte entwickelt wurde.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 Textmetriken – was der Zähler misst",
       "description": "Der Zähler analysiert Ihren Text anhand von elf Indikatoren:",

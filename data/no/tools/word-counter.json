@@ -143,6 +143,10 @@
       "html": "<p class=\"text-mid mb-4\">Verktøyet beregner en lesbarhetsscore basert på gjennomsnittlig setningslengde og gjennomsnittlig antall stavelser per ord. Resultatet vises på en skala fra 0 til 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Veldig lett. Korte setninger, vanlige ord.</li><li><strong>70–89</strong> — Lett. Samtalesprak egnet for et bredt publikum.</li><li><strong>50–69</strong> — Moderat. Standard forretnings- og journalistisk skriving.</li><li><strong>30–49</strong> — Vanskelig. Lange setninger, spesialisert ordforrad.</li><li><strong>0–29</strong> — Veldig vanskelig. Akademiske og juridiske tekster.</li></ul><p class=\"text-mid mt-3\">For norsk brukes en forenklet Flesch-tilpasning med norske stavelsesregler. Norske tekster har gjennomgaende kortere ord enn engelske, sa scoren kan vaere noe hoyere for sammenlignbar tekst.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 tekstmålinger – hva telleren måler",
       "description": "Telleren analyserer teksten din med elleve indikatorer:",

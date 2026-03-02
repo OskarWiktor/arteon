@@ -282,9 +282,17 @@
       "html": "<p class=\"text-mid mb-4\">Google afișează favicon-urile lângă URL-ul site-ului în rezultatele de căutare. Rezultatele mobile arată favicon-uri din 2019. Rezultatele desktop au urmat din ianuarie 2020. Favicon-ul este un element vizual de brand prezent în fiecare căutare Google.</p><p class=\"text-mid mb-4\">Google stabilește cerințe specifice pentru afișarea favicon-urilor. Pictograma trebuie să aibă cel puțin 48×48 pixeli. Trebuie să fie pătrată. Imaginea trebuie să rămână clar vizibilă pe fundal alb. Google respinge pictogramele cu conținut inadecvat sau gol.</p><p class=\"text-mid mb-4\">Googlebot explorează și indexează favicon-urile independent de conținutul paginii. Actualizarea favicon-ului în rezultate poate dura de la câteva zile la câteva săptămâni. Fișierul favicon nu trebuie blocat în robots.txt — altfel Google nu poate prelua noua versiune.</p><p class=\"text-mid\">Bing afișează de asemenea favicon-uri în rezultatele sale. DuckDuckGo arată pictograme de site lângă fiecare link din rezultate. Un set complet de favicon-uri asigură o apariție de brand coerentă în toate motoarele de căutare majore. Utilizatorii recunosc favicon-urile familiare mai rapid, ceea ce contribuie la o rată de clic mai ridicată.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Favicon și identitate vizuală de brand în România",
       "html": "<p class=\"text-mid mb-4\">Coerența vizuală între favicon și logotip consolidează memorabilitatea brandului. Pictograma apare în tab-urile browserului, în marcaje, în istoricul de navigare și pe ecranul de start al telefonului. Când un utilizator are zece sau mai multe tab-uri deschise, favicon-ul rămâne singurul element vizibil care identifică site-ul.</p><p class=\"text-mid mb-4\">În e-commerce-ul românesc, eMAG.ro și OLX.ro sunt platforme dominante. Un favicon distinctiv diferențiază magazinul în rezultatele de căutare și pe marketplace. Comparatoarele de prețuri afișează favicon-uri lângă rezultate, crescând diferențierea vizuală între vânzători.</p><p class=\"text-mid mb-4\">Gomag — un popular sistem românesc de e-shop — permite configurarea favicon-ului în setările temei. MerchantPro și WooCommerce oferă aceeași posibilitate. O versiune simplificată a logo-ului sau prima literă funcționează cel mai bine la dimensiuni mici de pixeli.</p><p class=\"text-mid\">Legislația română privind accesibilitatea digitală (HG 1112/2018) impune contrast suficient pentru elementele vizuale ale site-urilor publice. Favicon-ul trebuie să fie lizibil atât în modul luminos, cât și în modul întunecat. Culorile contrastante și formele simple îndeplinesc această cerință în mod fiabil.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

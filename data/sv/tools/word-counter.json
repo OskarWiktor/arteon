@@ -143,6 +143,10 @@
       "html": "<p class=\"text-mid mb-4\">Verktyget beräknar en läsbarhetspoäng baserad på genomsnittlig meningslängd och genomsnittligt antal stavelser per ord. Resultatet visas på en skala från 0 till 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Mycket lätt. Korta meningar, vanliga ord.</li><li><strong>70–89</strong> — Lätt. Samtalssprak lämpligt för en bred publik.</li><li><strong>50–69</strong> — Måttligt. Affärs- och journalistiska texter.</li><li><strong>30–49</strong> — Svårt. Långa meningar, specialiserat ordforrad.</li><li><strong>0–29</strong> — Mycket svårt. Akademiska och juridiska texter.</li></ul><p class=\"text-mid mt-3\">För svenska används en förenklad Flesch-anpassning med svenska stavelseregler. Svenska och norska har generellt kortare ord än engelska, så poängen kan vara något högre för jämförbar text.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 textmätvärden – vad räknaren mäter",
       "description": "Räknaren analyserar din text med elva indikatorer:",

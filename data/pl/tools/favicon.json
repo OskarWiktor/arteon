@@ -281,9 +281,17 @@
       "html": "<p class=\"text-mid mb-4\">Google wyświetla favicon obok adresu strony w wynikach wyszukiwania. Na urządzeniach mobilnych ikona witryny pojawia się w wynikach od 2019 roku. Na komputerach stacjonarnych Google zaczął pokazywać favicon od stycznia 2020. Ikona strony jest więc widocznym elementem marki w każdym wyszukiwaniu.</p><p class=\"text-mid mb-4\">Wymagania Google wobec favicon są precyzyjne. Ikona musi mieć wymiary co najmniej 48×48 pikseli. Kształt powinien być kwadratowy. Obraz musi być wyraźnie widoczny na białym tle. Google odrzuca ikony o treści nieodpowiedniej lub pustej.</p><p class=\"text-mid mb-4\">Robot Google indeksuje favicon niezależnie od pozostałej zawartości strony. Aktualizacja ikony w wynikach wyszukiwania może potrwać od kilku dni do kilku tygodni. Plik favicon nie może być zablokowany w robots.txt — w przeciwnym razie Google nie pobierze nowej wersji.</p><p class=\"text-mid\">Profesjonalna ikona witryny zwiększa rozpoznawalność marki wśród wyników wyszukiwania. Użytkownicy szybciej identyfikują znane favicon na liście wyników. To przekłada się na wyższy współczynnik klikalności (CTR). Wyszukiwarki Bing i DuckDuckGo również wyświetlają favicon obok wyników — pełny zestaw ikon zapewnia spójny wygląd marki we wszystkich wyszukiwarkach.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Favicon jako element tożsamości wizualnej marki",
       "html": "<p class=\"text-mid mb-4\">Favicon to mikroelement brandingu widoczny w wielu miejscach jednocześnie. Ikona pojawia się w kartach przeglądarki, na liście zakładek, w historii przeglądania i na ekranie głównym telefonu. Gdy użytkownik ma otwartych kilkanaście kart, favicon pozostaje jedynym widocznym elementem identyfikującym stronę.</p><p class=\"text-mid mb-4\">Spójność kolorystyczna między favicon a logotypem firmy wzmacnia zapamiętywanie marki. Ikona witryny powinna wykorzystywać te same kolory i kształty co główne logo. Uproszczona wersja logotypu lub jego pierwszy znak najczęściej sprawdza się najlepiej w małych rozmiarach pikseli.</p><p class=\"text-mid mb-4\">W polskim e-commerce profesjonalna ikona sygnalizuje wiarygodność sklepu. Na porównywarkach cenowych takich jak Ceneo czy Skąpiec favicon wyróżnia ofertę na tle konkurencyjnych wyników. Sklepy na platformach Shoper, Sky-Shop i WooCommerce pozwalają ustawić favicon w panelu administracyjnym w sekcji ustawień wyglądu.</p><p class=\"text-mid\">Firmy usługowe — od gabinetów dentystycznych po kancelarie prawne — budują zaufanie klientów już na poziomie ikony w karcie przeglądarki. Brak favicon lub domyślna ikona przeglądarki może sugerować niski poziom profesjonalizmu strony.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

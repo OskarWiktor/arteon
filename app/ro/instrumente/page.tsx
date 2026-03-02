@@ -636,6 +636,7 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
+        <Gap size="sm" />
 
         <SectionSteps
           title="Text și SEO"

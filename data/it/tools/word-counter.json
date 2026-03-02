@@ -141,6 +141,10 @@
       "html": "<p class=\"text-mid mb-4\">Per i testi in italiano, questo strumento utilizza l’<strong>Indice Gulpease</strong> — una formula di leggibilità sviluppata specificamente per la lingua italiana:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">89 + (300 × frasi − 10 × caratteri) / parole</code></p><p class=\"text-mid mb-4\">A differenza del Flesch che si basa sulle sillabe, il Gulpease usa il numero di caratteri per parola, risultando più preciso per l’italiano.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>80–100</strong> — Facile. Comprensibile dalla scuola elementare.</li><li><strong>60–79</strong> — Medio. Adatto alla scuola media.</li><li><strong>40–59</strong> — Difficile. Richiede istruzione superiore.</li><li><strong>0–39</strong> — Molto difficile. Testi accademici e giuridici.</li></ul>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 metriche di testo – cosa misura il contatore",
       "description": "Il contatore analizza il tuo testo con undici indicatori:",

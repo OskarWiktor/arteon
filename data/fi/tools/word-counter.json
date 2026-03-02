@@ -143,6 +143,10 @@
       "html": "<p class=\"text-mid mb-4\">Työkalu laskee luettavuuspisteet keskimääräisen virkkeen pituuden ja keskimääräisen tavumäärän sanakohtaisesti. Tulos näytetään asteikolla 0–100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>80–100</strong> — Erittäin helppo. Lyhyet virkkeet, yleiset sanat.</li><li><strong>60–79</strong> — Helppo. Keskusteleva kieli laajalle yleisölle.</li><li><strong>40–59</strong> — Kohtalainen. Liike- ja journalistiset tekstit.</li><li><strong>20–39</strong> — Vaikea. Pitkät virkkeet, erikoissanasto.</li><li><strong>0–19</strong> — Erittäin vaikea. Akateemiset ja oikeudelliset tekstit.</li></ul><p class=\"text-mid mt-3\">Suomen kielelle työkalu käyttää LIX-indeksiä (Björnsson), joka perustuu sanojen pituuteen tavujen sijaan. Tämä sopii paremmin suomen agglutinatiiviseen rakenteeseen. Hyvä tavoite verkkosisällölle on 50–70.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 tekstimittaria – mitä laskuri mittaa",
       "description": "Laskuri analysoi tekstin yhdellätoista mittarilla:",

@@ -141,6 +141,10 @@
       "html": "<p class=\"text-mid mb-4\">Para textos en español, esta herramienta utiliza la <strong>fórmula Fernández-Huerta</strong> — una adaptación del índice Flesch diseñada específicamente para el castellano:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">206,84 − 60 × (sílabas/palabras) − 1,02 × (palabras/oraciones)</code></p><p class=\"text-mid mb-4\">Los coeficientes se ajustan porque el español tiene una estructura silábica más regular que el inglés. Las palabras españolas tienden a ser más largas pero con patrones de acentuación predecibles.</p><p class=\"text-mid\">Para contenido web en español, un buen objetivo es un puntaje entre 60 y 70.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 métricas de texto – qué mide el contador",
       "description": "El contador analiza tu texto con once indicadores:",

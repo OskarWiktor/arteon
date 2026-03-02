@@ -269,9 +269,17 @@
       "html": "<p class=\"text-mid mb-4\">Core Web Vitals er et sett med ytelsesmålinger som Google bruker som rangeringssignaler. En av dem — LCP (Largest Contentful Paint) — måler tiden til det største synlige elementet vises på skjermen. På mange sider er dette elementet et bilde: et hero-banner, et produktfoto eller en grafikk øverst på siden. Ukomprimerte JPG- og PNG-filer på 1–3 MB forlenger LCP-tiden og senker poengsummen i PageSpeed Insights.</p><p class=\"text-mid mb-4\">Konvertering av bilder til WebP-format reduserer filstørrelsen med 25–35 % ved sammenlignbar visuell kvalitet. Mindre bildefiler forkorter nedlastningstiden for ressurser, noe som direkte forbedrer LCP-metrikken. Ytterligere teknikker — som attributtet loading=\"lazy\" for bilder under synlig flate, <code>&lt;picture&gt;</code>-elementet med srcset for å levere passende størrelser og fetchpriority=\"high\" for hero-bildet — fremskynder samlet sidegjengivelsen.</p><p class=\"text-mid mb-4\">Den andre metrikken — CLS (Cumulative Layout Shift) — måler layoutforskyvninger under sidelasting. Bilder uten deklarerte dimensjoner (attributtene width og height) forårsaker innholdssprang etter at bildet er lastet. Å deklarere dimensjoner i HTML eller CSS eliminerer dette problemet uavhengig av filformat.</p><p class=\"text-mid\">Verktøy som PageSpeed Insights, Lighthouse og WebPageTest viser detaljerte data om bildenes innvirkning på ytelsen. Lighthouse-rapporten i kategorien Performance identifiserer spesifikke filer som bør konverteres til et neste generasjons format.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Optimalisering av produktbilder i norsk netthandel",
       "html": "<p class=\"text-mid mb-4\">Produktbilder utgjør en stor del av sidevekten i nettbutikker. En kategoriside med 40 miniatyrbilder og en produktside med et galleri på 5–8 bilder kan laste flere megabyte med bildedata ved hvert besøk. Konvertering av disse bildene til WebP reduserer dataoverføringen og fremskynder lastingen — særlig på mobile enheter, som i Norge genererer over 65 % av e-handelstrafikken.</p><p class=\"text-mid mb-4\">Prissammenligningssider og markedsplasser i Norge — Prisjakt.no, Prisguiden og Komplett — viser produktbilder ved siden av hvert tilbud. Bildekvaliteten påvirker oppfatningen av selgeren. Nettbutikker på WooCommerce, Magento og Shopify kan levere WebP i stedet for JPG via plugins eller serverkonfigurasjon.</p><p class=\"text-mid mb-4\">Miniatyrbilder på kategorisider bør dimensjoneres etter visningsrutenettet — en fil på 200×200 px som veier 8–15 KB i WebP laster raskere enn et nedskalert original på 1200×1200 px. Zoombilder på produktdetaljsiden kan beholde høyere kvalitet (85–90 %) fordi de først lastes etter brukerinteraksjon.</p><p class=\"text-mid\">Lastetiden for en produktside påvirker direkte konverteringsfrekvensen. Bransjeundersøkelser viser at hvert ekstra sekund med lastetid øker risikoen for at besøkende forlater siden. Optimalisering av produktbilder er et av de enkleste tiltakene for å korte ned lastetiden uten endringer i nettbutikkens kode.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

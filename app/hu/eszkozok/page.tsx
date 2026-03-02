@@ -614,6 +614,7 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
+        <Gap size="sm" />
 
         <SectionSteps
           title="Szöveg és SEO"

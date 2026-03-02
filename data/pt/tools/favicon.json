@@ -288,9 +288,17 @@
       "html": "<p class=\"text-mid mb-4\">O Google apresenta os favicons junto ao URL do site nos resultados de pesquisa. Os resultados em dispositivos móveis mostram favicons desde 2019. Os resultados em computador incluem-nos desde janeiro de 2020. O favicon é um elemento visual da marca presente em cada pesquisa no Google.</p><p class=\"text-mid mb-4\">O Google define requisitos específicos para a apresentação de favicons. O ícone deve ter pelo menos 48×48 píxeis. Deve ser quadrado. A imagem deve ser claramente visível sobre fundo branco. O Google rejeita ícones com conteúdo inadequado ou vazio.</p><p class=\"text-mid mb-4\">O Googlebot rastreia e indexa os favicons de forma independente do conteúdo da página. A atualização do favicon nos resultados pode demorar de vários dias a várias semanas. O ficheiro favicon não deve estar bloqueado no robots.txt — caso contrário, o Google não conseguirá obter a nova versão.</p><p class=\"text-mid\">O Bing também apresenta favicons nos seus resultados. O DuckDuckGo mostra os ícones do site junto a cada ligação. Um conjunto completo de favicons garante uma aparência de marca coerente em todos os motores de pesquisa. Os utilizadores reconhecem os favicons familiares mais rapidamente, o que contribui para uma maior taxa de cliques.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Favicon e identidade visual da marca em Portugal e no Brasil",
       "html": "<p class=\"text-mid mb-4\">A coerência visual entre o favicon e o logótipo fortalece a memorização da marca. O ícone aparece nos separadores do navegador, nos favoritos, no histórico de navegação e no ecrã inicial do telemóvel. Quando um utilizador tem dez ou mais separadores abertos, o favicon é o único elemento visível que identifica o site.</p><p class=\"text-mid mb-4\">Em Portugal, plataformas como Shopify e WooCommerce permitem configurar o favicon nas definições do tema. No Brasil, Loja Integrada e Nuvemshop facilitam a personalização visual das lojas online. O Brasil é um mercado mobile-first — mais de 80 % dos acessos à internet provêm de smartphones, tornando o favicon no ecrã inicial ainda mais relevante.</p><p class=\"text-mid mb-4\">Sites de comparação como Buscapé e Zoom exibem favicons nos resultados, aumentando a diferenciação visual entre os vendedores. Um favicon profissional sinaliza credibilidade e destaca a loja entre dezenas de resultados concorrentes.</p><p class=\"text-mid\">As empresas de serviços — desde escritórios de advocacia até clínicas médicas — constroem confiança já ao nível do ícone no separador do navegador. A ausência de favicon ou o ícone predefinido do navegador pode sugerir falta de profissionalismo.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

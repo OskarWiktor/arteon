@@ -141,6 +141,10 @@
       "html": "<p class=\"text-mid mb-4\">Para textos em português, esta ferramenta utiliza uma adaptação da <strong>fórmula Fernández-Huerta</strong>, ajustada para a estrutura silábica do português:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">206,84 − 60 × (sílabas/palavras) − 1,02 × (palavras/frases)</code></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Muito fácil. Frases curtas, palavras comuns.</li><li><strong>70–89</strong> — Fácil. Linguagem conversacional.</li><li><strong>50–69</strong> — Moderado. Textos comerciais e jornalísticos.</li><li><strong>30–49</strong> — Difícil. Frases longas, vocabulário especializado.</li><li><strong>0–29</strong> — Muito difícil. Textos académicos e jurídicos.</li></ul><p class=\"text-mid mt-3\">O movimento de <strong>Linguagem Simples</strong> no Brasil incentiva textos governamentais acessíveis. Um bom objetivo para conteúdo web é 60 a 70.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 métricas de texto – o que o contador mede",
       "description": "O contador analisa o seu texto com onze indicadores:",

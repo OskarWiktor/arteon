@@ -278,9 +278,17 @@
       "html": "<p class=\"text-mid mb-4\">A Core Web Vitals olyan teljesítménymérők összessége, amelyeket a Google rangsorolási jelként használ. Az egyik — az LCP (Largest Contentful Paint) — azt méri, mennyi idő telik el, amíg a legnagyobb látható elem megjelenik a képernyőn. Sok oldalon ez az elem egy kép: egy hero banner, egy termékfotó vagy egy grafika az oldal tetején. Tömörítetlen JPG- és PNG-fájlok 1–3 MB méretben megnövelik az LCP-időt és csökkentik a PageSpeed Insights pontszámot.</p><p class=\"text-mid mb-4\">A képek WebP formátumba konvertálása 25–35%-kal csökkenti a fájlméretet összehasonlítható vizuális minőség mellett. Kisebb képfájlok lerövidítik az erőforrások letöltési idejét, ami közvetlenül javítja az LCP-metrikát. Kiegészítő technikák — mint a loading=\"lazy\" attribútum a hajtás alatti képekhez, a <code>&lt;picture&gt;</code> elem srcset-tel a megfelelő méretek kiszolgálásához és a fetchpriority=\"high\" a hero képhez — együttesen gyorsítják az oldal megjelenítését.</p><p class=\"text-mid mb-4\">A második metrika — a CLS (Cumulative Layout Shift) — az elrendezés-eltolódásokat méri az oldal betöltése közben. A deklarált méretek nélküli képek (width és height attribútumok) tartalomugráslokat okoznak a kép betöltése után. A méretek HTML-ben vagy CSS-ben történő deklarálása kiküszöböli ezt a problémát a fájlformátumtól függetlenül.</p><p class=\"text-mid\">Az olyan eszközök, mint a PageSpeed Insights, a Lighthouse és a WebPageTest részletes adatokat jelenítenek meg a képek teljesítményre gyakorolt hatásáról. A Lighthouse-jelentés a Performance kategóriában azonosítja azokat a fájlokat, amelyeket érdemes újgenerációs formátumba konvertálni.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Termékfotók optimalizálása a magyar e-kereskedelemben",
       "html": "<p class=\"text-mid mb-4\">A termékképek a weboldalak súlyának jelentős részét alkotják a webáruházakban. Egy 40 miniatúrát tartalmazó kategóriaoldal és egy 5–8 fotóból álló galériával rendelkező termékoldal minden látogatáskor több megabájt képadatot tölthet be. Ezen fájlok WebP-re konvertálása csökkenti az adatátvitelt és gyorsítja a betöltést — különösen mobileszközökön, amelyek Magyarországon az e-kereskedelmi forgalom több mint 65%-át generálják.</p><p class=\"text-mid mb-4\">Árösszehasonlító oldalak és piacterek Magyarországon — Árukereső.hu, Shopline és eMAG.hu — termékképeket jelenítenek meg minden ajánlat mellett. A képminőség befolyásolja a bolt megítélését. A Shoprenter, WooCommerce és PrestaShop alapú webáruházak WebP-t szolgáltathatnak JPG helyett bővítmények vagy szerverkonfiguráció segítségével.</p><p class=\"text-mid mb-4\">A miniatúráknak a kategóriaoldalakon a megjelenítési rácshoz méretezetteknek kell lenniük — egy 200×200 px méretű, 8–15 KB súlyú WebP-fájl gyorsabban töltődik be, mint egy 1200×1200 px-es lekicsinyített eredeti. A zoom képek a termékrészlet oldalon megőrizhetik a magasabb minőséget (85–90%), mivel csak felhasználói interakció után töltődnek be.</p><p class=\"text-mid\">A termékoldal betöltési sebessége közvetlenül befolyásolja a konverziós arányt. Iparági kutatások szerint minden további másodperc betöltési idő növeli annak kockázatát, hogy a látogató elhagyja az oldalt. A termékképek optimalizálása az egyik legegyszerűbb intézkedés a betöltési idő csökkentésére a webáruház kódjának módosítása nélkül.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

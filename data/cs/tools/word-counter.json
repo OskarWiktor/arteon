@@ -143,6 +143,10 @@
       "html": "<p class=\"text-mid mb-4\">Nástroj počítá skóre čitelnosti na základě průměrné délky vět a průměrného počtu slabik na slovo. Výsledek se zobrazuje na stupnici 0–100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>80–100</strong> — Velmi snadný text. Krátké věty, běžná slova.</li><li><strong>60–79</strong> — Snadný. Konverzační jazyk vhodný pro široké publikum.</li><li><strong>40–59</strong> — Středně náročný. Běžné obchodní a novinářské texty.</li><li><strong>20–39</strong> — Náročný. Dlouhé věty, odborná slovní zásoba.</li><li><strong>0–19</strong> — Velmi náročný. Akademické a právní texty.</li></ul><p class=\"text-mid mt-3\">Pro češtinu nástroj používá adaptaci Fleschova vzorce se sníženým koeficientem slabik, který zohledňuje delší česká slova. Dobrý cíl pro webový obsah v češtině je 50–70.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 textových metrik – co počítadlo měří",
       "description": "Počítadlo analyzuje text pomocí jedenácti ukazatelů:",

@@ -277,9 +277,17 @@
       "html": "<p class=\"text-mid mb-4\">Core Web Vitals sind Leistungskennzahlen, die Google als Ranking-Signal verwendet. Der Wert LCP (Largest Contentful Paint) misst die Zeit, bis das größte sichtbare Element auf dem Bildschirm gerendert wird. Auf vielen Webseiten ist dieses Element ein Bild: ein Hero-Banner, ein Produktfoto oder eine Grafik im oberen Seitenbereich. Unkomprimierte JPG- und PNG-Dateien mit einer Größe von 1–3 MB verlängern die LCP-Zeit und verschlechtern den PageSpeed-Insights-Wert.</p><p class=\"text-mid mb-4\">Die Konvertierung von Bildern in das WebP-Format reduziert die Dateigröße um 25–35 % bei vergleichbarer visueller Qualität. Kleinere Bilddateien verkürzen die Ladezeit der Ressourcen, was den LCP-Wert direkt verbessert. Zusätzliche Techniken — wie das Attribut loading=\"lazy\" für Bilder unterhalb des sichtbaren Bereichs, das <code>&lt;picture&gt;</code>-Element mit srcset für die Auslieferung passender Größen und fetchpriority=\"high\" für das Hero-Bild — beschleunigen gemeinsam das Rendern der Seite.</p><p class=\"text-mid mb-4\">Der zweite Wert — CLS (Cumulative Layout Shift) — erfasst Layoutverschiebungen während des Seitenladevorgangs. Bilder ohne deklarierte Abmessungen (Attribute width und height) verursachen Inhaltssprünge nach dem Laden der Grafik. Die Angabe von Abmessungen in HTML oder CSS beseitigt dieses Problem unabhängig vom Dateiformat.</p><p class=\"text-mid\">Werkzeuge wie PageSpeed Insights, Lighthouse und WebPageTest zeigen detaillierte Daten zum Einfluss von Bildern auf die Seitenleistung. Der Lighthouse-Bericht in der Kategorie Performance benennt konkrete Dateien, die in ein Format der nächsten Generation konvertiert werden sollten.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Produktfoto-Optimierung im deutschsprachigen E-Commerce",
       "html": "<p class=\"text-mid mb-4\">Produktbilder machen einen großen Teil des Seitengewichts in Online-Shops aus. Eine Kategorieseite mit 40 Miniaturbildern und eine Produktseite mit einer Galerie von 5–8 Fotos können bei jedem Aufruf mehrere Megabyte an Bilddaten laden. Die Konvertierung dieser Grafiken in WebP reduziert den Datentransfer und beschleunigt das Laden — besonders auf Mobilgeräten, die in Deutschland über 65 % des E-Commerce-Traffics ausmachen.</p><p class=\"text-mid mb-4\">Preisvergleichsportale im DACH-Raum — idealo, CHECK24 und Geizhals — zeigen Produktbilder neben jedem Angebot. Die Bildqualität beeinflusst die Wahrnehmung des Shops. Shops auf Shopware, TYPO3 und Magento können WebP anstelle von JPG über Serverkonfiguration oder Erweiterungen ausliefern.</p><p class=\"text-mid mb-4\">Miniaturbilder auf Kategorieseiten sollten an das Anzeigeraster angepasst sein — eine Datei mit 200×200 px und 8–15 KB im WebP-Format lädt schneller als ein herunterskaliertes Original mit 1200×1200 px. Zoom-Bilder auf der Produktdetailseite können eine höhere Qualität (85–90 %) beibehalten, da sie erst nach einer Benutzerinteraktion geladen werden.</p><p class=\"text-mid\">Die Ladegeschwindigkeit einer Produktseite wirkt sich auf die Conversion-Rate aus. Branchenuntersuchungen zeigen, dass jede zusätzliche Sekunde Ladezeit das Risiko erhöht, dass ein Besucher die Seite verlässt. Die Optimierung von Produktbildern ist eine der einfachsten Maßnahmen zur Verkürzung der Ladezeit ohne Änderungen am Shop-Code.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

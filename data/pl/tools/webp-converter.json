@@ -280,9 +280,17 @@
       "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero. Nieskompresowane zdjęcia JPG i PNG o wadze 1–3 MB wydłużają czas LCP i obniżają wynik w PageSpeed Insights.</p><p class=\"text-mid mb-4\">Konwersja obrazów do formatu WebP zmniejsza rozmiar plików o 25–35% przy zachowaniu porównywalnej jakości wizualnej. Mniejsze pliki graficzne skracają czas pobierania zasobów, co bezpośrednio poprawia wskaźnik LCP. Dodatkowe techniki — takie jak atrybut loading=\"lazy\" dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem srcset do serwowania odpowiednich rozmiarów oraz atrybut fetchpriority=\"high\" dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid mb-4\">Drugi wskaźnik — CLS (Cumulative Layout Shift) — reaguje na przesunięcia układu strony podczas ładowania. Obrazy bez zadeklarowanych wymiarów (atrybuty width i height) powodują przeskoki treści po załadowaniu grafiki. Deklarowanie wymiarów w HTML lub CSS eliminuje ten problem niezależnie od formatu pliku.</p><p class=\"text-mid\">Narzędzia takie jak PageSpeed Insights, Lighthouse i WebPageTest wyświetlają szczegółowe dane o wpływie obrazów na wydajność. Raport Lighthouse w kategorii Performance wskazuje konkretne pliki, które warto przekonwertować na format nowej generacji.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Optymalizacja zdjęć produktowych w polskim e-commerce",
       "html": "<p class=\"text-mid mb-4\">Zdjęcia produktowe stanowią znaczną część wagi polskich sklepów internetowych. Strona kategorii z 40 miniaturkami i strona produktu z galerią 5–8 zdjęć mogą pobierać kilkanaście megabajtów obrazów przy każdym otwarciu. Konwersja tych grafik na WebP zmniejsza transfer danych i przyspiesza ładowanie — szczególnie na urządzeniach mobilnych, z których korzysta ponad 70% polskich kupujących online.</p><p class=\"text-mid mb-4\">Platformy handlowe w Polsce — Allegro, Ceneo i Empik Marketplace — przyjmują zdjęcia w formatach JPG i PNG. Zdjęcia przesyłane do tych platform są kompresowane po stronie serwera, ale strona własnego sklepu pozostaje w gestii sprzedawcy. Sklepy na WooCommerce, PrestaShop i Magento mogą serwować WebP zamiast JPG poprzez konfigurację serwera lub wtyczki.</p><p class=\"text-mid mb-4\">Miniaturki produktów na stronach kategorii powinny mieć rozmiar dostosowany do siatki wyświetlania — plik 200×200 px o wadze 8–15 KB w WebP ładuje się szybciej niż przeskalowany oryginał 1200×1200 px. Zdjęcia w widoku powiększenia (zoom) mogą zachować wyższą jakość (85–90%), ponieważ są ładowane dopiero po interakcji użytkownika.</p><p class=\"text-mid\">Szybkość ładowania strony produktowej wpływa na współczynnik konwersji. Badania branżowe wskazują, ze każda dodatkowa sekunda ładowania zwiększa ryzyko porzucenia strony przez odwiedzającego. Optymalizacja grafik to jedno z najprostszych działań, które skraca czas ładowania bez zmian w kodzie sklepu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

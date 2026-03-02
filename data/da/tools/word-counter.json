@@ -143,6 +143,10 @@
       "html": "<p class=\"text-mid mb-4\">Værktøjet beregner en læsbarhedsscore baseret på gennemsnitlig sætningslængde og gennemsnitligt antal stavelser per ord. Resultatet vises på en skala fra 0 til 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Meget let. Korte sætninger, almindelige ord.</li><li><strong>70–89</strong> — Let. Samtalesprog egnet til et bredt publikum.</li><li><strong>50–69</strong> — Moderat. Standard forretnings- og journalistisk skrift.</li><li><strong>30–49</strong> — Svært. Lange sætninger, specialiseret ordforråd.</li><li><strong>0–29</strong> — Meget svært. Akademiske og juridiske tekster.</li></ul><p class=\"text-mid mt-3\">For dansk bruges en forenklet Flesch-tilpasning med danske stavelsesregler. Skandinaviske sprog har generelt kortere ord end engelsk, så scoren kan være lidt højere for sammenlignelig tekst.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 tekstmetrikker – hvad tælleren måler",
       "description": "Tælleren analyserer din tekst med elleve indikatorer:",

@@ -282,9 +282,17 @@
       "html": "<p class=\"text-mid mb-4\">A Google a webhely URL-je mellett jeleníti meg a faviconokat a keresési eredményekben. A mobil keresési eredmények 2019 óta mutatják a faviconokat. Az asztali eredmények 2020 januárjától követték. A favicon tehát minden Google-keresésnél látható márkaelemként jelenik meg.</p><p class=\"text-mid mb-4\">A Google konkrét követelményeket támaszt a faviconok megjelenítéséhez. Az ikonnak legalább 48×48 pixel méretűnek kell lennie. Négyzetesnek kell lennie. A képnek fehér háttéren is egyértelműen láthatónak kell maradnia. A Google elutasítja a nem megfelelő vagy üres tartalmú ikonokat.</p><p class=\"text-mid mb-4\">A Googlebot az oldal tartalmától függetlenül indexeli a faviconokat. A favicon frissítése a keresési eredményekben néhány naptól több hétig tarthat. A favicon fájlt nem szabad blokkolni a robots.txt-ben — különben a Google nem tudja lekérni az új verziót.</p><p class=\"text-mid\">A Bing szintén megjeleníti a faviconokat az eredményeiben. A DuckDuckGo minden találati link mellett mutatja a webhely ikonját. A teljes favicon készlet egységes márkamegjelenést biztosít az összes nagy keresőmotorban. A felhasználók gyorsabban ismerik fel az ismerős faviconokat, ami magasabb kattintási arányhoz járul hozzá.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Favicon és márkaidentitás Magyarországon",
       "html": "<p class=\"text-mid mb-4\">A vizuális következetesség a favicon és a logó között erősíti a márka megjegyezhetőségét. Az ikon a böngészőfülekben, a könyvjelzőkben, a böngészési előzményekben és a telefon kezdőképernyőjén jelenik meg. Amikor egy felhasználónak tíz vagy több füle van nyitva, a favicon marad az egyetlen látható elem, amely azonosítja a webhelyet.</p><p class=\"text-mid mb-4\">A magyar e-kereskedelemben az Árukereső.hu és a Shopline megjeleníti a faviconokat az összehasonlító eredményeknél. Az eMAG.hu és a Pepita.hu webshopok számára a megkülönböztethető favicon versenyelőnyt jelent és professzionalizmust sugároz.</p><p class=\"text-mid mb-4\">A Shoprenter — népszerű magyar e-shop rendszer — lehetővé teszi a favicon beállítását a sablonbeállításokban. Az Unas és a WooCommerce ugyanezt a lehetőséget kínálja. Egy egyszerűsített logóverzió vagy az első betű működik a legjobban kis pixelméreteknél.</p><p class=\"text-mid\">A szolgáltató vállalkozások — ügyvédi irodáktól a fogorvosi rendelőkig — a böngészőfül ikonjának szintjén építik az ügyfelek bizalmát. A favicon hiánya vagy a böngésző alapértelmezett ikonja alacsony professzionalizmusra utalhat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",

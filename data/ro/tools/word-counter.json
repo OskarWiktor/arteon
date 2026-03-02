@@ -143,6 +143,10 @@
       "html": "<p class=\"text-mid mb-4\">Instrumentul calculează un scor de lizibilitate pe baza lungimii medii a propozițiilor și a numărului mediu de silabe per cuvânt. Rezultatul apare pe o scară de la 0 la 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Foarte ușor. Propoziții scurte, cuvinte comune.</li><li><strong>70–89</strong> — Ușor. Limbaj conversațional pentru un public larg.</li><li><strong>50–69</strong> — Moderat. Texte de afaceri și jurnalistice.</li><li><strong>30–49</strong> — Dificil. Propoziții lungi, vocabular specializat.</li><li><strong>0–29</strong> — Foarte dificil. Texte academice și juridice.</li></ul><p class=\"text-mid mt-3\">Pentru limba română se folosește o adaptare Flesch cu reguli de silabisire românești. Un scor de 60–70 este un obiectiv bun pentru conținutul web.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "11 metrici text – ce măsoară contorul",
       "description": "Contorul analizează textul cu unsprezece indicatori:",

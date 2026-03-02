@@ -288,9 +288,17 @@
       "html": "<p class=\"text-mid mb-4\">Google mostra i favicon accanto all'URL del sito nei risultati di ricerca. I risultati su dispositivi mobili mostrano i favicon dal 2019. I risultati su desktop li visualizzano da gennaio 2020. Il favicon è quindi un elemento visivo del marchio presente in ogni ricerca Google.</p><p class=\"text-mid mb-4\">Google impone requisiti precisi per la visualizzazione dei favicon. L'icona deve misurare almeno 48×48 pixel. Deve essere quadrata. L'immagine deve restare chiaramente visibile su sfondo bianco. Google rifiuta le icone con contenuto inappropriato o vuoto.</p><p class=\"text-mid mb-4\">Il Googlebot esplora e indicizza i favicon indipendentemente dal contenuto della pagina. L'aggiornamento del favicon nei risultati di ricerca può richiedere da qualche giorno a diverse settimane. Il file favicon non deve essere bloccato nel robots.txt — altrimenti Google non potrà recuperare la nuova versione.</p><p class=\"text-mid\">Bing mostra i favicon nei suoi risultati. DuckDuckGo visualizza le icone del sito accanto a ogni link. Un set completo di favicon garantisce un aspetto coerente del marchio in tutti i principali motori di ricerca. Gli utenti riconoscono i favicon familiari più rapidamente, il che contribuisce a un tasso di clic più elevato.</p>"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionInfo",
       "title": "Favicon e identità visuale del marchio in Italia",
       "html": "<p class=\"text-mid mb-4\">L'Italia ha una forte cultura del design — la coerenza tra favicon e logotipo aziendale riflette cura e professionalità. L'icona appare nelle schede del browser, nei preferiti, nella cronologia e sulla schermata iniziale del telefono. Quando un utente ha dieci o più schede aperte, il favicon rimane l'unico elemento visibile che identifica il sito.</p><p class=\"text-mid mb-4\">Nei marketplace come Amazon.it ed ePrice, un favicon distintivo aiuta a distinguere il negozio tra molti risultati. I comparatori di prezzo italiani mostrano i favicon accanto ai risultati, aumentando la differenziazione visiva tra i venditori.</p><p class=\"text-mid mb-4\">Le linee guida AgID (Agenzia per l'Italia Digitale) per i siti della Pubblica Amministrazione richiedono accessibilità visiva. Il favicon deve garantire un contrasto adeguato su sfondi chiari e scuri. Colori contrastati e forme semplici soddisfano questo requisito in modo affidabile.</p><p class=\"text-mid\">Piattaforme come PrestaShop e WooCommerce, molto diffuse in Italia, permettono di configurare il favicon nelle impostazioni del tema. Le aziende di servizi — dagli studi legali alle agenzie immobiliari — costruiscono la fiducia già a livello dell'icona nella scheda del browser.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
     },
     {
       "type": "sectionInfo",
