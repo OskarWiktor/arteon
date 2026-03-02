@@ -343,9 +343,10 @@ const TOOLS = [
   },
 ];
 
-// Non-tool multilingual pages (all locales except PL which has its own separate pages)
+// Non-tool multilingual pages (all 16 active locales including PL)
 const MULTILINGUAL_PAGES = [
   {
+    pl: '/o-nas',
     en: '/en/about',
     de: '/de/ueber-uns',
     es: '/es/sobre-nosotros',
@@ -363,6 +364,7 @@ const MULTILINGUAL_PAGES = [
     el: '/el/sxetika-me-emas',
   },
   {
+    pl: '/kontakt',
     en: '/en/contact',
     de: '/de/kontakt',
     es: '/es/contacto',
@@ -380,6 +382,7 @@ const MULTILINGUAL_PAGES = [
     el: '/el/epikoinonia',
   },
   {
+    pl: '/polityka-prywatnosci',
     en: '/en/privacy-policy',
     de: '/de/datenschutzrichtlinie',
     es: '/es/politica-de-privacidad',
@@ -397,6 +400,7 @@ const MULTILINGUAL_PAGES = [
     el: '/el/politiki-aporritou',
   },
   {
+    pl: '/regulamin',
     en: '/en/terms-of-service',
     de: '/de/nutzungsbedingungen',
     es: '/es/terminos-de-servicio',
@@ -549,9 +553,12 @@ module.exports = {
               loc.startsWith('/ro/') ||
               loc.startsWith('/nl/') ||
               loc.startsWith('/hu/') ||
-              loc.startsWith('/id/') ||
-              loc.startsWith('/vi/') ||
-              loc.startsWith('/tr/')
+              loc.startsWith('/cs/') ||
+              loc.startsWith('/sv/') ||
+              loc.startsWith('/da/') ||
+              loc.startsWith('/no/') ||
+              loc.startsWith('/fi/') ||
+              loc.startsWith('/el/')
             ? 0.7
             : loc.startsWith('/uslugi/')
               ? 0.8
@@ -595,9 +602,12 @@ module.exports = {
               loc.startsWith('/ro/') ||
               loc.startsWith('/nl/') ||
               loc.startsWith('/hu/') ||
-              loc.startsWith('/id/') ||
-              loc.startsWith('/vi/') ||
-              loc.startsWith('/tr/')
+              loc.startsWith('/cs/') ||
+              loc.startsWith('/sv/') ||
+              loc.startsWith('/da/') ||
+              loc.startsWith('/no/') ||
+              loc.startsWith('/fi/') ||
+              loc.startsWith('/el/')
             ? 0.7
             : loc.startsWith('/uslugi/')
               ? 0.8
