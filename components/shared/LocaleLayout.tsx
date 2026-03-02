@@ -5,6 +5,7 @@ import SkipToContent from '@/components/shared/SkipToContent';
 import { LocaleProvider } from '@/lib/LocaleContext';
 import { getClientDictionary, getLocaleConfigFor } from '@/lib/i18n/client-dictionary';
 import { getDictionary } from '@/lib/i18n/get-dictionary';
+import { LOCALE_CONFIG } from '@/lib/i18n/locale-config';
 import type { Locale } from '@/types/locale';
 
 interface LocaleLayoutProps {
@@ -15,8 +16,11 @@ interface LocaleLayoutProps {
 export default async function LocaleLayout({ locale, children }: LocaleLayoutProps) {
   const [clientDict, config, fullDict] = await Promise.all([getClientDictionary(locale), Promise.resolve(getLocaleConfigFor(locale)), getDictionary(locale)]);
 
+  const lang = LOCALE_CONFIG[locale].lang;
+
   return (
     <LocaleProvider value={locale} config={config} dict={clientDict}>
+      {locale !== 'pl' && <script dangerouslySetInnerHTML={{ __html: `document.documentElement.lang="${lang}"` }} />}
       <LazyCookieConsent translations={fullDict.cookie} />
       <SkipToContent label={fullDict.skipToContent} />
 

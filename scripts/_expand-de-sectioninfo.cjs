@@ -233,22 +233,30 @@ function extractFormats(f) {
   return m ? { source: m[1], target: m[2], key: `${m[1]}-to-${m[2]}` } : null;
 }
 
-let updated = 0, skipped = 0;
-const files = fs.readdirSync(TOOLS).filter(f => f.startsWith('converter-') && f.endsWith('.json'));
+let updated = 0,
+  skipped = 0;
+const files = fs.readdirSync(TOOLS).filter((f) => f.startsWith('converter-') && f.endsWith('.json'));
 for (const file of files) {
   const fmt = extractFormats(file);
-  if (!fmt) { skipped++; continue; }
+  if (!fmt) {
+    skipped++;
+    continue;
+  }
   const content = PAIR[fmt.key];
-  if (!content) { console.log(`SKIP (no content): ${file}`); skipped++; continue; }
+  if (!content) {
+    console.log(`SKIP (no content): ${file}`);
+    skipped++;
+    continue;
+  }
   const fp = path.join(TOOLS, file);
   const data = JSON.parse(fs.readFileSync(fp, 'utf-8'));
   // Find the "in practice" sectionInfo block (the one that is NOT a table)
-  const block = data.contentBlocks.find(b =>
-    b.type === 'sectionInfo' &&
-    !b.html.includes('<table') &&
-    (b.title.includes('Praxis') || b.title.includes('in der Praxis'))
-  );
-  if (!block) { console.log(`SKIP (no block): ${file}`); skipped++; continue; }
+  const block = data.contentBlocks.find((b) => b.type === 'sectionInfo' && !b.html.includes('<table') && (b.title.includes('Praxis') || b.title.includes('in der Praxis')));
+  if (!block) {
+    console.log(`SKIP (no block): ${file}`);
+    skipped++;
+    continue;
+  }
   block.html = `<p class="text-mid mb-4">${content.p1}</p><p class="text-mid mb-4">${content.p2}</p><p class="text-mid">${content.p3}</p>`;
   fs.writeFileSync(fp, JSON.stringify(data, null, 2) + '\n', 'utf-8');
   updated++;

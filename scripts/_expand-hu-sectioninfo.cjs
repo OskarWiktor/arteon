@@ -227,16 +227,23 @@ function extractFormats(f) {
   const m = f.match(/converter-(\w+)-to-(\w+)\.json/);
   return m ? { key: `${m[1]}-to-${m[2]}` } : null;
 }
-let updated = 0, skipped = 0;
-const files = fs.readdirSync(TOOLS).filter(f => f.startsWith('converter-') && f.endsWith('.json'));
+let updated = 0,
+  skipped = 0;
+const files = fs.readdirSync(TOOLS).filter((f) => f.startsWith('converter-') && f.endsWith('.json'));
 for (const file of files) {
   const fmt = extractFormats(file);
-  if (!fmt || !P[fmt.key]) { skipped++; continue; }
+  if (!fmt || !P[fmt.key]) {
+    skipped++;
+    continue;
+  }
   const [p1, p2, p3] = P[fmt.key];
   const fp = path.join(TOOLS, file);
   const data = JSON.parse(fs.readFileSync(fp, 'utf-8'));
-  const block = data.contentBlocks.find(b => b.type === 'sectionInfo' && !b.html.includes('<table') && (b.title.includes('gyakorlatban') || b.title.includes('a gyakorlatban')));
-  if (!block) { skipped++; continue; }
+  const block = data.contentBlocks.find((b) => b.type === 'sectionInfo' && !b.html.includes('<table') && (b.title.includes('gyakorlatban') || b.title.includes('a gyakorlatban')));
+  if (!block) {
+    skipped++;
+    continue;
+  }
   block.html = `<p class="text-mid mb-4">${p1}</p><p class="text-mid mb-4">${p2}</p><p class="text-mid">${p3}</p>`;
   fs.writeFileSync(fp, JSON.stringify(data, null, 2) + '\n', 'utf-8');
   updated++;

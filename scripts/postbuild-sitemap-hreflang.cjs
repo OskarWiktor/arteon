@@ -495,24 +495,7 @@ const MULTILINGUAL_PAGES = [
   },
 ];
 
-const LOCALES = [
-  'pl',
-  'en',
-  'de',
-  'es',
-  'fr',
-  'pt',
-  'it',
-  'ro',
-  'nl',
-  'hu',
-  'cs',
-  'sv',
-  'da',
-  'no',
-  'fi',
-  'el',
-];
+const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
 
 // ---------------------------------------------------------------------------
 // Build lookup: path → array of { hreflang, href }

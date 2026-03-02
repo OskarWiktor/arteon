@@ -57,7 +57,7 @@ const P = {
     'Fotografer og bureauer i Danmark drager fordel af lokal behandling: kundefotos og trykfiler forbliver på din enhed.',
   ],
   'heic-to-jpg': [
-    'iPhone-brugere kender problemet: HEIC-fotos kan ikke åbnes overalt. Windows-pc\'er, Android-enheder, mange webformularer og e-mailklienter understøtter ikke HEIC. Konvertering til JPG løser dette kompatibilitetsproblem øjeblikkeligt.',
+    "iPhone-brugere kender problemet: HEIC-fotos kan ikke åbnes overalt. Windows-pc'er, Android-enheder, mange webformularer og e-mailklienter understøtter ikke HEIC. Konvertering til JPG løser dette kompatibilitetsproblem øjeblikkeligt.",
     'Ved kvalitet 85–90 % er forskellen mellem HEIC-originalen og JPG-resultatet visuelt næsten umærkelig. Filstørrelsen forbliver sammenlignelig. Særlig praktisk: konverter flere iPhone-fotos samtidig.',
     'For CV-fotos, scanninger af identitetsdokumenter eller personlige dokumenter er lokal behandling afgørende – følsomme data forlader aldrig din enhed.',
   ],
@@ -67,7 +67,7 @@ const P = {
     'Kreative bureauer og fotografer drager fordel af lokal behandling: iPhone-fotos fra kunder forbliver fortrolige på din egen computer.',
   ],
   'heic-to-webp': [
-    'iPhone-fotos i HEIC-format direkte til hjemmesider? WebP er den ideelle bro: det kombinerer HEIC\'s effektive kompression med universel browserkompatibilitet (Chrome, Firefox, Safari 14+, Edge).',
+    "iPhone-fotos i HEIC-format direkte til hjemmesider? WebP er den ideelle bro: det kombinerer HEIC's effektive kompression med universel browserkompatibilitet (Chrome, Firefox, Safari 14+, Edge).",
     'Konvertering fra HEIC til WebP er særlig effektiv, da begge formater bruger moderne kompressionsalgoritmer. For blogs, webshops og portfolios er det den hurtigste vej til weboptimerede iPhone-fotos.',
     'Bloggere og webshopejere i Danmark kan konvertere iPhone-fotos lokalt og GDPR-kompatibelt – uden cloudtjenester.',
   ],
@@ -107,7 +107,7 @@ const P = {
     'For bureauer og trykkerier i Danmark tilbyder lokal konvertering en sikker måde at forberede web-assets til trykprojekter.',
   ],
   'svg-to-jpg': [
-    'SVG-vektorgrafik kan ikke bruges overalt: sociale medier, markedspladser og mange CMS\'er accepterer kun rasterformater. Konvertering til JPG skaber universelt kompatible filer.',
+    "SVG-vektorgrafik kan ikke bruges overalt: sociale medier, markedspladser og mange CMS'er accepterer kun rasterformater. Konvertering til JPG skaber universelt kompatible filer.",
     'Rasterisering konverterer vektoren til pixels med fast opløsning. Gennemsigtige områder udfyldes med baggrundsfarve (standard hvid). For web anbefales 1200–2000 px bredde.',
     'For opslag på sociale medier og annoncer på DBA.dk, Proshop.dk eller Amazon er SVG til JPG et almindeligt krav.',
   ],
@@ -117,9 +117,9 @@ const P = {
     'For bureauer, der leverer logoer i forskellige formater, er SVG til PNG et hurtigt og GDPR-kompatibelt workflow.',
   ],
   'svg-to-webp': [
-    'For hjemmesider, der ikke kan integrere SVG direkte – CMS\'er med begrænset SVG-understøttelse – tilbyder WebP en kompakt pixelrepræsentation med minimal filstørrelse.',
+    "For hjemmesider, der ikke kan integrere SVG direkte – CMS'er med begrænset SVG-understøttelse – tilbyder WebP en kompakt pixelrepræsentation med minimal filstørrelse.",
     'WebP-filer fra SVG-kilder er typisk meget små (5–30 KB) og indlæses lynhurtigt. For ikoner og logoer er det den mest pragmatiske løsning, når SVG ikke kan bruges direkte.',
-    'WordPress, DanDomain og mange andre CMS\'er i Danmark understøtter WebP native – konverteringen muliggør brug af vektorgrafik i disse miljøer.',
+    "WordPress, DanDomain og mange andre CMS'er i Danmark understøtter WebP native – konverteringen muliggør brug af vektorgrafik i disse miljøer.",
   ],
   'svg-to-avif': [
     'AVIF tilbyder den bedste kompression for rasteriseret vektorgrafik. For ydeevnekritiske hjemmesider er SVG til AVIF det optimale valg.',
@@ -138,16 +138,16 @@ const P = {
   ],
   'gif-to-jpg': [
     'Ældre GIF-billeder skal sommetider konverteres til JPG – for platforme, der kun accepterer JPEG, eller for at optimere filstørrelse til e-mail. Kun det første billede i en animeret GIF konverteres.',
-    'JPG tilbyder fulde 16,7 millioner farver i stedet for GIF\'s 256-farvepalette. Fotos ved et uheld gemt som GIF drager fordel af fuld farvedybde.',
+    "JPG tilbyder fulde 16,7 millioner farver i stedet for GIF's 256-farvepalette. Fotos ved et uheld gemt som GIF drager fordel af fuld farvedybde.",
     'For arkivering af ældre grafik i et moderne, universelt format er lokal konvertering hurtig og GDPR-kompatibel.',
   ],
   'gif-to-png': [
     'Konvertering af GIF til PNG er nyttigt for tabsfri lagring eller redigering i grafiske programmer. PNG understøtter 32-bit farver og gradvis alfagennemsigtighed.',
-    'For animerede GIF\'er konverteres kun det første billede. Kvaliteten bevares tabsfrit. PNG er ideel som mellemformat til Photoshop, Figma eller Canva.',
+    "For animerede GIF'er konverteres kun det første billede. Kvaliteten bevares tabsfrit. PNG er ideel som mellemformat til Photoshop, Figma eller Canva.",
     'For modernisering af ældre webgrafik tilbyder lokal konvertering en hurtig og sikker løsning uden eksterne tjenester.',
   ],
   'gif-to-webp': [
-    'WebP tilbyder væsentligt bedre kompression end GIF. Modernisering af ældre GIF\'er til WebP accelererer hjemmesider mærkbart.',
+    "WebP tilbyder væsentligt bedre kompression end GIF. Modernisering af ældre GIF'er til WebP accelererer hjemmesider mærkbart.",
     'Statiske GIF-filer bliver som WebP typisk 30–60 % mindre med millioner af farver i stedet for 256, hvilket forbedrer den visuelle kvalitet markant.',
     'For optimering af ældre hjemmesider i Danmark er skiftet fra GIF til WebP en enkel måde at forbedre Core Web Vitals.',
   ],
@@ -188,7 +188,7 @@ const P = {
   ],
   'bmp-to-webp': [
     'BMP er fuldstændig uegnet til moderne web – ukomprimeret og enormt. WebP reducerer størrelsen med op til 97 % ved god kvalitet og moderniserer ældre billeder.',
-    'Konverteringen moderniserer gamle filer fra Windows-systemer til aktuelle hjemmesider, CMS\'er og webshops. WebP understøttes af alle moderne browsere.',
+    "Konverteringen moderniserer gamle filer fra Windows-systemer til aktuelle hjemmesider, CMS'er og webshops. WebP understøttes af alle moderne browsere.",
     'For danske virksomheder, der forbereder ældre arkiver til deres webpræsence, er lokal konvertering effektiv og GDPR-kompatibel.',
   ],
   'bmp-to-avif': [
@@ -218,7 +218,7 @@ const P = {
   ],
   'avif-to-webp': [
     'WebP tilbyder bredere browserunderstøttelse end AVIF (Safari 14+ vs. 16+) ved god kompression. Hvis dit publikum bruger ældre browsere, er WebP det sikrere valg.',
-    'AVIF til WebP er relevant for CMS\'er og CDN\'er uden AVIF-understøttelse. WebP understøttes native af WordPress, Shopify, Cloudflare og alle moderne browsere.',
+    "AVIF til WebP er relevant for CMS'er og CDN'er uden AVIF-understøttelse. WebP understøttes native af WordPress, Shopify, Cloudflare og alle moderne browsere.",
     'For webprojekter i Danmark, der kræver maksimal browserdækning, er WebP stadig det mest pålidelige moderne format.',
   ],
 };
@@ -227,16 +227,23 @@ function extractFormats(f) {
   const m = f.match(/converter-(\w+)-to-(\w+)\.json/);
   return m ? { key: `${m[1]}-to-${m[2]}` } : null;
 }
-let updated = 0, skipped = 0;
-const files = fs.readdirSync(TOOLS).filter(f => f.startsWith('converter-') && f.endsWith('.json'));
+let updated = 0,
+  skipped = 0;
+const files = fs.readdirSync(TOOLS).filter((f) => f.startsWith('converter-') && f.endsWith('.json'));
 for (const file of files) {
   const fmt = extractFormats(file);
-  if (!fmt || !P[fmt.key]) { skipped++; continue; }
+  if (!fmt || !P[fmt.key]) {
+    skipped++;
+    continue;
+  }
   const [p1, p2, p3] = P[fmt.key];
   const fp = path.join(TOOLS, file);
   const data = JSON.parse(fs.readFileSync(fp, 'utf-8'));
-  const block = data.contentBlocks.find(b => b.type === 'sectionInfo' && !b.html.includes('<table') && (b.title.includes('praksis') || b.title.includes('i praksis')));
-  if (!block) { skipped++; continue; }
+  const block = data.contentBlocks.find((b) => b.type === 'sectionInfo' && !b.html.includes('<table') && (b.title.includes('praksis') || b.title.includes('i praksis')));
+  if (!block) {
+    skipped++;
+    continue;
+  }
   block.html = `<p class="text-mid mb-4">${p1}</p><p class="text-mid mb-4">${p2}</p><p class="text-mid">${p3}</p>`;
   fs.writeFileSync(fp, JSON.stringify(data, null, 2) + '\n', 'utf-8');
   updated++;
