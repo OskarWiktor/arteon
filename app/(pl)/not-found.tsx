@@ -1,4 +1,4 @@
-﻿import Button from '@/components/ui/buttons/Button';
+import Button from '@/components/ui/buttons/Button';
 import { getDictionary } from '@/lib/i18n/get-dictionary';
 
 export default async function NotFound() {

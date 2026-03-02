@@ -1,5 +1,13 @@
 import LocaleLayout from '@/components/shared/LocaleLayout';
+import RootHtml from '@/components/shared/RootHtml';
+import { baseMetadata } from '@/lib/shared-metadata';
+
+export const metadata = baseMetadata;
 
 export default function CsLayout({ children }: { children: React.ReactNode }) {
-  return <LocaleLayout locale="cs">{children}</LocaleLayout>;
+  return (
+    <RootHtml lang="cs">
+      <LocaleLayout locale="cs">{children}</LocaleLayout>
+    </RootHtml>
+  );
 }

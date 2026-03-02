@@ -1,6 +1,5 @@
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import type { Metadata } from 'next';
 import { Instrument_Sans } from 'next/font/google';
 import Script from 'next/script';
 import { Suspense } from 'react';
@@ -9,7 +8,7 @@ import FocusManager from '@/components/systems/FocusManager';
 import RouteAnnouncer from '@/components/systems/RouteAnnouncer';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
-import './globals.css';
+import '@/app/globals.css';
 
 const instrumentSans = Instrument_Sans({
   subsets: ['latin', 'latin-ext'],
@@ -18,35 +17,10 @@ const instrumentSans = Instrument_Sans({
   variable: '--font-sans',
 });
 
-const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 const METRICOOL_HASH = process.env.METRICOOL_HASH;
 
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
-const metadataBase = new URL(siteUrl);
-
-export const metadata: Metadata = {
-  metadataBase,
-  robots: IS_PRODUCTION ? { index: true, follow: true, 'max-image-preview': 'large' as const, 'max-snippet': -1, 'max-video-preview': -1 } : { index: false, follow: false },
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
-  },
-  openGraph: {
-    type: 'website',
-    siteName: 'arteonagency.pl',
-    url: siteUrl,
-    images: [
-      {
-        url: toAbsoluteUrl('/assets/arteon-logo-on-mockup.webp'),
-        width: 1200,
-        height: 630,
-        alt: 'Logo Arteon na plakacie',
-      },
-    ],
-  },
-};
 
 const orgJsonLd = {
   '@context': 'https://schema.org',
@@ -97,9 +71,14 @@ const websiteJsonLd = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+interface RootHtmlProps {
+  lang: string;
+  children: React.ReactNode;
+}
+
+export default function RootHtml({ lang, children }: RootHtmlProps) {
   return (
-    <html lang="pl-PL" className={instrumentSans.variable}>
+    <html lang={lang} className={instrumentSans.variable}>
       <head>
         <script
           id="google-consent-default"

@@ -1,5 +1,13 @@
 import LocaleLayout from '@/components/shared/LocaleLayout';
+import RootHtml from '@/components/shared/RootHtml';
+import { baseMetadata } from '@/lib/shared-metadata';
+
+export const metadata = baseMetadata;
 
 export default function ItLayout({ children }: { children: React.ReactNode }) {
-  return <LocaleLayout locale="it">{children}</LocaleLayout>;
+  return (
+    <RootHtml lang="it">
+      <LocaleLayout locale="it">{children}</LocaleLayout>
+    </RootHtml>
+  );
 }
