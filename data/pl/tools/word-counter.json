@@ -8,7 +8,7 @@
     "path": "/narzedzia/licznik-slow-i-znakow"
   },
   "hero": {
-    "title": "Policz słowa i znaki – sprawdź czas czytania i sformatuj tekst",
+    "title": "Licznik słów, znaków i czasu czytania z formatowaniem tekstu",
     "description": "Wklej tekst, a narzędzie policzy słowa, znaki, zdania, akapity, unikalne wyrazy i czas czytania. Zmień wielkość liter, usuń duplikaty lub posortuj linie jednym kliknięciem",
     "backgroundImage": "/assets/tools/narzedzia-licznik-slow-i-znakow.webp"
   },
