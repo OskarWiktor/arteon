@@ -664,6 +664,7 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
+        <Gap size="sm" />
 
         <SectionSteps
           title="Tekst i SEO"
@@ -976,8 +977,6 @@ export default function ToolsIndexPage() {
             },
           ]}
         />
-
-        <Gap size="sm" />
 
         <Gap variant="line" />
 
