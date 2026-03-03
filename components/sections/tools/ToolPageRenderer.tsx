@@ -246,13 +246,13 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
 
               const node = renderBlock(block, idx, pageUrl);
               const adNode = adPositions.has(idx) ? (
-                <Fragment key={`ad-after-${idx}`}>
+                <div key={`ad-after-${idx}`} className="ad-slot-wrapper">
                   <Gap variant="line" />
                   <div className="not-prose -mx-[3%] flex justify-center py-4">
                     <AdSense variant="responsive" />
                   </div>
                   <Gap variant="line" />
-                </Fragment>
+                </div>
               ) : null;
 
               if (insertRelated) {

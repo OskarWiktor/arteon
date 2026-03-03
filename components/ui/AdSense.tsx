@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import type { AdSenseProps } from '@/types/ui';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
 
@@ -84,10 +85,23 @@ function ensureAdScript() {
 export default function AdSense({ variant, adSlot, className = '' }: AdSenseProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const pushed = useRef(false);
+  const [filled, setFilled] = useState(false);
+  const pathname = usePathname();
+  const pathnameRef = useRef(pathname);
   const preset = PRESETS[variant];
   const rawSlot = adSlot || preset.slot;
   const slot = SLOT_ALIASES[rawSlot] ?? rawSlot;
   const isInArticleVariant = variant === 'in-article' || variant === 'in-article-new';
+
+  // Reset ad state on SPA navigation so new ads load on the new page
+  useEffect(() => {
+    if (pathnameRef.current !== pathname) {
+      pathnameRef.current = pathname;
+      pushed.current = false;
+      setFilled(false);
+      if (containerRef.current) containerRef.current.replaceChildren();
+    }
+  }, [pathname]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -138,6 +152,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
         pushed.current = true;
+        setFilled(true);
       } catch (err) {
         console.error('AdSense push error:', err);
       }
@@ -177,22 +192,22 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
     return () => {
       for (const fn of cleanups) fn();
     };
-  }, [variant, slot, isInArticleVariant]);
+  }, [variant, slot, isInArticleVariant, pathname]);
 
   if (variant === 'tool-banner') {
-    return <div ref={containerRef} className={`flex min-h-[90px] items-center justify-center ${className}`} />;
+    return <div ref={containerRef} className={`flex items-center justify-center ${filled ? 'min-h-[90px]' : ''} ${className}`} />;
   }
 
   if (variant === 'responsive') {
-    return <div ref={containerRef} className={`min-h-[100px] w-full ${className}`} />;
+    return <div ref={containerRef} className={`w-full ${filled ? 'min-h-[100px]' : ''} ${className}`} />;
   }
 
   if (variant === 'vertical') {
-    return <div ref={containerRef} className={`inline-block min-h-[600px] w-[160px] ${className}`} />;
+    return <div ref={containerRef} className={`inline-block ${filled ? 'min-h-[600px] w-[160px]' : ''} ${className}`} />;
   }
 
   if (isInArticleVariant) {
-    return <div ref={containerRef} className={`min-h-[280px] w-full ${className}`} />;
+    return <div ref={containerRef} className={`w-full ${filled ? 'min-h-[280px]' : ''} ${className}`} />;
   }
 
   return <div ref={containerRef} className={className} />;
