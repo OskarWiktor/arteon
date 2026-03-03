@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { usePathname } from 'next/navigation';
 import type { AdSenseProps } from '@/types/ui';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
@@ -50,8 +50,14 @@ function flushReady() {
 }
 
 function ensureAdScript() {
-  if (scriptState !== 'idle') return;
   if (typeof document === 'undefined') return;
+
+  if (scriptState === 'error') {
+    // Retry once on error (e.g. transient network issue)
+    scriptState = 'idle';
+  }
+
+  if (scriptState !== 'idle') return;
 
   const alreadyPresent = Array.from(document.scripts).some((s) => s.src.includes('adsbygoogle.js'));
   if (alreadyPresent) {
@@ -71,20 +77,52 @@ function ensureAdScript() {
   document.head.appendChild(script);
 }
 
-/**
- * AdSense ad component — uses direct DOM injection to match Google's
- * intended flow: create <ins> → append to DOM → push() immediately.
- *
- * The component self-loads the adsbygoogle.js script (singleton) so it
- * works correctly with SPA (client-side) navigation — no server-side
- * conditional loading needed.
- *
- * No React rendering of <ins> (avoids SSR hydration / auto-scan conflicts).
- * The container <div> is React-managed; the <ins> inside is DOM-managed.
- */
+/* ------------------------------------------------------------------ */
+/*  Global consent-change bus                                         */
+/*  Fires when Google CMP consent is granted (user clicks accept).    */
+/*  All mounted AdSense instances that are unfilled re-request ads.   */
+/* ------------------------------------------------------------------ */
+
+type ConsentCallback = () => void;
+const consentListeners = new Set<ConsentCallback>();
+let consentBusInitialized = false;
+
+function initConsentBus() {
+  if (consentBusInitialized || typeof window === 'undefined') return;
+  consentBusInitialized = true;
+
+  const fc = window.googlefc;
+  if (!fc) return;
+
+  fc.callbackQueue = fc.callbackQueue || [];
+
+  // CONSENT_MODE_DATA_READY fires when:
+  // - user makes a consent choice (new visitor)
+  // - stored consent is loaded (returning visitor)
+  // - consent is not applicable (non-regulated region)
+  fc.callbackQueue.push({
+    CONSENT_MODE_DATA_READY: () => {
+      for (const cb of consentListeners) cb();
+    },
+  });
+}
+
+/* ------------------------------------------------------------------ */
+/*  AdSense component                                                 */
+/*                                                                    */
+/*  Strategy:                                                         */
+/*  1. Push ad immediately when container has width (even pre-consent) */
+/*     Google handles limited ads / queuing internally.                */
+/*  2. If unfilled AND consent changes, destroy + re-push.            */
+/*  3. On SPA nav, destroy + re-push.                                 */
+/*  4. IntersectionObserver — only push when near viewport.           */
+/*  5. Collapse wrapper via CSS when data-ad-status="unfilled".       */
+/* ------------------------------------------------------------------ */
+
 export default function AdSense({ variant, adSlot, className = '' }: AdSenseProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const pushed = useRef(false);
+  const retryCount = useRef(0);
   const [filled, setFilled] = useState(false);
   const pathname = usePathname();
   const pathnameRef = useRef(pathname);
@@ -93,28 +131,17 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
   const slot = SLOT_ALIASES[rawSlot] ?? rawSlot;
   const isInArticleVariant = variant === 'in-article' || variant === 'in-article-new';
 
-  // Reset ad state on SPA navigation so new ads load on the new page
-  useEffect(() => {
-    if (pathnameRef.current !== pathname) {
-      pathnameRef.current = pathname;
-      pushed.current = false;
-      setFilled(false);
-      if (containerRef.current) containerRef.current.replaceChildren();
-    }
-  }, [pathname]);
+  const resetAd = useCallback(() => {
+    pushed.current = false;
+    retryCount.current = 0;
+    setFilled(false);
+    if (containerRef.current) containerRef.current.replaceChildren();
+  }, []);
 
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container || pushed.current) return;
-
-    ensureAdScript();
-
-    const tryRender = () => {
+  const injectAd = useCallback(
+    (container: HTMLDivElement) => {
       if (pushed.current) return true;
-
-      if (container.getBoundingClientRect().width === 0) {
-        return false;
-      }
+      if (container.getBoundingClientRect().width === 0) return false;
 
       const ins = document.createElement('ins');
       ins.className = 'adsbygoogle';
@@ -153,46 +180,101 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
         (window.adsbygoogle = window.adsbygoogle || []).push({});
         pushed.current = true;
         setFilled(true);
-      } catch (err) {
-        console.error('AdSense push error:', err);
+      } catch {
+        // Ad blocker or script not loaded — silent fail
       }
 
       return pushed.current;
-    };
+    },
+    [slot, variant, isInArticleVariant],
+  );
 
-    const attemptWithScript = () => {
-      if (tryRender()) return;
+  // Reset ad state on SPA navigation
+  useEffect(() => {
+    if (pathnameRef.current !== pathname) {
+      pathnameRef.current = pathname;
+      resetAd();
+    }
+  }, [pathname, resetAd]);
 
-      if (typeof ResizeObserver !== 'undefined') {
-        const observer = new ResizeObserver(() => {
-          if (tryRender()) observer.disconnect();
-        });
-        observer.observe(container);
-        cleanups.push(() => observer.disconnect());
-      }
+  // Main ad lifecycle
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container || pushed.current) return;
 
-      let resizeTimer: ReturnType<typeof setTimeout>;
-      const onResize = () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-          if (tryRender()) window.removeEventListener('resize', onResize);
-        }, 150);
-      };
-      window.addEventListener('resize', onResize);
-      cleanups.push(() => {
-        clearTimeout(resizeTimer);
-        window.removeEventListener('resize', onResize);
-      });
-    };
+    ensureAdScript();
+    initConsentBus();
 
     const cleanups: Array<() => void> = [];
 
-    onScriptReady(attemptWithScript);
+    const attemptRender = () => {
+      if (pushed.current) return;
+      onScriptReady(() => {
+        if (pushed.current) return;
+
+        // Try immediately
+        if (injectAd(container)) return;
+
+        // Wait for container to get width (e.g. layout shift, hidden tab)
+        if (typeof ResizeObserver !== 'undefined') {
+          const ro = new ResizeObserver(() => {
+            if (injectAd(container)) ro.disconnect();
+          });
+          ro.observe(container);
+          cleanups.push(() => ro.disconnect());
+        }
+      });
+    };
+
+    // Use IntersectionObserver — push ad when container is near viewport
+    // rootMargin: 200px so ads load slightly before scrolling into view
+    if (typeof IntersectionObserver !== 'undefined') {
+      const io = new IntersectionObserver(
+        (entries) => {
+          if (entries[0]?.isIntersecting) {
+            io.disconnect();
+            attemptRender();
+          }
+        },
+        { rootMargin: '200px' },
+      );
+      io.observe(container);
+      cleanups.push(() => io.disconnect());
+    } else {
+      // Fallback: no IO support — render immediately
+      attemptRender();
+    }
+
+    // Listen for consent changes — retry unfilled ads
+    const onConsentChange: ConsentCallback = () => {
+      if (!container) return;
+
+      const ins = container.querySelector('ins.adsbygoogle');
+      const status = ins?.getAttribute('data-ad-status');
+
+      // Only retry if ad was unfilled or never pushed, max 2 retries
+      if ((!pushed.current || status === 'unfilled') && retryCount.current < 2) {
+        retryCount.current++;
+        pushed.current = false;
+        setFilled(false);
+        container.replaceChildren();
+
+        onScriptReady(() => {
+          if (injectAd(container)) return;
+
+          // Small delay — Google needs time to process consent update
+          const t = setTimeout(() => injectAd(container), 300);
+          cleanups.push(() => clearTimeout(t));
+        });
+      }
+    };
+    consentListeners.add(onConsentChange);
+    cleanups.push(() => consentListeners.delete(onConsentChange));
 
     return () => {
       for (const fn of cleanups) fn();
     };
-  }, [variant, slot, isInArticleVariant, pathname]);
+  }, [variant, slot, isInArticleVariant, pathname, injectAd]);
 
   if (variant === 'tool-banner') {
     return <div ref={containerRef} className={`flex items-center justify-center ${filled ? 'min-h-[90px]' : ''} ${className}`} />;
