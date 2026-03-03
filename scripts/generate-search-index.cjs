@@ -1,8 +1,8 @@
 /**
- * Generates lightweight search index JSON files from full blog and projects data.
+ * Generates lightweight search index JSON files from blog category files and projects data.
  * Run before build to keep the client-side search bundle small.
  *
- * Input:  data/pl/blog.json (~883KB), data/pl/projects.json (~89KB)
+ * Input:  data/pl/blog/{category}.json, data/pl/projects.json (~89KB)
  * Output: data/pl/search-blog.json (~5KB), data/pl/search-projects.json (~2KB)
  */
 
@@ -12,10 +12,15 @@ const path = require('path');
 const DATA_DIR = path.join(__dirname, '..', 'data', 'pl');
 
 // --- Blog ---
-const blogPath = path.join(DATA_DIR, 'blog.json');
-const blog = JSON.parse(fs.readFileSync(blogPath, 'utf8'));
+const blogDir = path.join(DATA_DIR, 'blog');
+const catFiles = fs.readdirSync(blogDir).filter((f) => f.endsWith('.json') && f !== '_index.json');
+const allArticles = [];
+for (const f of catFiles) {
+  const data = JSON.parse(fs.readFileSync(path.join(blogDir, f), 'utf8'));
+  allArticles.push(...(data.articles || []));
+}
 
-const searchBlog = blog.articles.map((a) => ({
+const searchBlog = allArticles.map((a) => ({
   s: a.slug,
   t: a.title,
   e: a.excerpt.length > 140 ? a.excerpt.substring(0, 140) : a.excerpt,

@@ -24,13 +24,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego kanibalizacja osłabia widoczność w Google?</h2><p>Google ocenia strony na podstawie wielu sygnałów: ile innych witryn linkuje do danej strony, jak długo użytkownicy na niej zostają, jak szybko się ładuje. Każdy z tych sygnałów wzmacnia pozycję strony w wynikach wyszukiwania.</p><br/><p>Problem pojawia się, gdy te sygnały rozpraszają się między kilka stron zamiast wzmacniać jedną. Załóżmy, że masz dwie strony o tym samym temacie. Część linków zewnętrznych prowadzi do pierwszej, część do drugiej. Użytkownicy trafiają raz tu, raz tam. Google widzi dwie konkurujące strony z tej samej witryny i nie wie, którą pokazać wyżej.</p><br/><p>Efekt? Obie strony zajmują niższe pozycje, niż zajęłaby jedna, silniejsza strona z połączonymi sygnałami.</p><br/><h3 class='h5 mb-3 mt-4'>Przykład z praktyki</h3><p>Kancelaria prawna ma dwie strony: jedną o rozwodach i drugą o prawie rodzinnym, która też opisuje rozwody. Dla zapytania 'adwokat rozwód' Google raz wyświetla pierwszą stronę, raz drugą. Żadna nie buduje stabilnej pozycji, bo konkurują ze sobą zamiast się wzmacniać.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego kanibalizacja osłabia widoczność w Google?</h2><p>Google ocenia strony na podstawie wielu sygnałów: ile innych witryn linkuje do danej strony, jak długo użytkownicy na niej zostają, jak szybko się ładuje. Każdy z tych sygnałów wzmacnia pozycję strony w wynikach wyszukiwania.</p><br/><p>Problem pojawia się, gdy te sygnały rozpraszają się między kilka stron zamiast wzmacniać jedną. Załóżmy, że masz dwie strony o tym samym temacie. Część linków zewnętrznych prowadzi do pierwszej, część do drugiej. Użytkownicy trafiają raz tu, raz tam. Google widzi dwie konkurujące strony z tej samej witryny i nie wie, którą pokazać wyżej.</p><br/><p>Efekt? Obie strony zajmują niższe pozycje, niż zajęłaby jedna, silniejsza strona z połączonymi sygnałami.</p><br/><h3 class='h5 mb-3 mt-4'>Przykład z praktyki</h3><p>Kancelaria prawna ma dwie strony: jedną o rozwodach i drugą o prawie rodzinnym, która też opisuje rozwody. Dla zapytania 'adwokat rozwód' Google raz wyświetla pierwszą stronę, raz drugą. Żadna nie buduje stabilnej pozycji, bo konkurują ze sobą zamiast się wzmacniać.</p>",
           "breakAfter": true
         },
         {
@@ -44,18 +44,23 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co możesz zrobić, gdy masz kanibalizację?</h2><p>Gdy wykryjesz, że kilka stron konkuruje o te same frazy, masz kilka opcji. Poniżej pokazujemy najskuteczniejsze sposoby uporządkowania treści.</p><br/><h3 class='h5 mb-3 mt-4'>Połącz artykuły w jeden</h3><p>Najczęstsze rozwiązanie: zbierasz treści z kilku podobnych artykułów i tworzysz jeden, kompleksowy materiał. Przykład: masz trzy artykuły o certyfikatach SSL - jeden ogólny, drugi o typach certyfikatów, trzeci o ich instalacji. Możesz połączyć je w jeden artykuł, który odpowiada na wszystkie te pytania.</p><br/><p>Po połączeniu robisz przekierowanie 301 - to techniczne ustawienie, które mówi Google: stara strona została przeniesiona pod nowy adres. Dzięki temu wszystkie linki, które prowadziły do starych stron, automatycznie przekierowują użytkowników i Google na nową, połączoną stronę. Więcej o tym mechanizmie znajdziesz w artykule o przekierowaniach 301.</p><br/><h3 class='h5 mb-3 mt-4'>Zmień temat każdej strony</h3><p>Jeśli artykuły dotyczą pokrewnych, ale jednak innych zagadnień, możesz zmienić ich kierunek. Przykład z kancelarii prawnej: jeden artykuł skupia się na procesie rozwodu (jak przebiega, jakie dokumenty, ile trwa), a drugi na kosztach rozwodu (opłaty sądowe, koszty adwokata, alimenty). Każdy odpowiada na inne pytanie, więc nie konkurują ze sobą.</p><br/><p>Żeby to zrobić, zmieniasz tytuł, nagłówki i treść każdego artykułu - tak, by było jasne, że dotyczą innych aspektów tematu.</p><br/><h3 class='h5 mb-3 mt-4'>Wskaż Google, która strona jest główna</h3><p>Gdy masz kilka stron i chcesz, żeby jedna była priorytetowa, możesz wzmocnić ją przez linkowanie. To działa tak: z pozostałych stron dodajesz linki prowadzące do tej głównej. Przykład: artykuł o kosztach rozwodu ma link do głównego artykułu o rozwodach.</p><br/><p>Google widzi te linki i rozumie: ta strona, do której prowadzi najwięcej linków wewnętrznych, jest najważniejsza dla tego tematu. Dzięki temu wyświetla ją w wynikach wyszukiwania częściej niż pozostałe. Więcej o tym mechanizmie znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>linkowaniu wewnętrznym</a>.</p><br/><h3 class='h5 mb-3 mt-4'>Ukryj strony przed Google</h3><p>Czasami masz stronę, która jest potrzebna użytkownikom, ale nie chcesz, żeby wyświetlała się w Google. Przykład: archiwum artykułów z 2020 roku lub strona z tagiem pozycjonowanie, która pokazuje listę artykułów na ten temat.</p><br/><p>Możesz dodać znacznik noindex - to krótki kod w sekcji head strony, który mówi Google: nie wyświetlaj tej strony w wynikach wyszukiwania. Użytkownicy wciąż mogą ją odwiedzić (jeśli klikną link z innej strony w witrynie), ale Google jej nie pokaże w wynikach.</p>",
-          "breakAfter": true
-        },
-        {
           "type": "ad",
           "slot": "9459125335",
           "breakAfter": true
         },
         {
           "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co możesz zrobić, gdy masz kanibalizację?</h2><p>Gdy wykryjesz, że kilka stron konkuruje o te same frazy, masz kilka opcji. Poniżej pokazujemy najskuteczniejsze sposoby uporządkowania treści.</p><br/><h3 class='h5 mb-3 mt-4'>Połącz artykuły w jeden</h3><p>Najczęstsze rozwiązanie: zbierasz treści z kilku podobnych artykułów i tworzysz jeden, kompleksowy materiał. Przykład: masz trzy artykuły o certyfikatach SSL - jeden ogólny, drugi o typach certyfikatów, trzeci o ich instalacji. Możesz połączyć je w jeden artykuł, który odpowiada na wszystkie te pytania.</p><br/><p>Po połączeniu robisz przekierowanie 301 - to techniczne ustawienie, które mówi Google: stara strona została przeniesiona pod nowy adres. Dzięki temu wszystkie linki, które prowadziły do starych stron, automatycznie przekierowują użytkowników i Google na nową, połączoną stronę. Więcej o tym mechanizmie znajdziesz w artykule o przekierowaniach 301.</p><br/><h3 class='h5 mb-3 mt-4'>Zmień temat każdej strony</h3><p>Jeśli artykuły dotyczą pokrewnych, ale jednak innych zagadnień, możesz zmienić ich kierunek. Przykład z kancelarii prawnej: jeden artykuł skupia się na procesie rozwodu (jak przebiega, jakie dokumenty, ile trwa), a drugi na kosztach rozwodu (opłaty sądowe, koszty adwokata, alimenty). Każdy odpowiada na inne pytanie, więc nie konkurują ze sobą.</p><br/><p>Żeby to zrobić, zmieniasz tytuł, nagłówki i treść każdego artykułu - tak, by było jasne, że dotyczą innych aspektów tematu.</p><br/><h3 class='h5 mb-3 mt-4'>Wskaż Google, która strona jest główna</h3><p>Gdy masz kilka stron i chcesz, żeby jedna była priorytetowa, możesz wzmocnić ją przez linkowanie. To działa tak: z pozostałych stron dodajesz linki prowadzące do tej głównej. Przykład: artykuł o kosztach rozwodu ma link do głównego artykułu o rozwodach.</p><br/><p>Google widzi te linki i rozumie: ta strona, do której prowadzi najwięcej linków wewnętrznych, jest najważniejsza dla tego tematu. Dzięki temu wyświetla ją w wynikach wyszukiwania częściej niż pozostałe. Więcej o tym mechanizmie znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>linkowaniu wewnętrznym</a>.</p><br/><h3 class='h5 mb-3 mt-4'>Ukryj strony przed Google</h3><p>Czasami masz stronę, która jest potrzebna użytkownikom, ale nie chcesz, żeby wyświetlała się w Google. Przykład: archiwum artykułów z 2020 roku lub strona z tagiem pozycjonowanie, która pokazuje listę artykułów na ten temat.</p><br/><p>Możesz dodać znacznik noindex - to krótki kod w sekcji head strony, który mówi Google: nie wyświetlaj tej strony w wynikach wyszukiwania. Użytkownicy wciąż mogą ją odwiedzić (jeśli klikną link z innej strony w witrynie), ale Google jej nie pokaże w wynikach.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak unikać kanibalizacji od początku?</h2><p>Najskuteczniejszy sposób to zapobieganie problemowi zanim się pojawi. Poniżej pokazujemy praktyczne kroki, które pomogą Ci utrzymać porządek w treściach.</p><br/><h3 class='h5 mb-3 mt-4'>Prowadź listę wszystkich artykułów</h3><p>Zanim napiszesz nowy artykuł, sprawdź, czy nie masz już czegoś podobnego. Jak to zrobić? Stwórz prosty dokument lub arkusz (Google Sheets, Excel, zwykły plik tekstowy), w którym zapiszesz:</p><br/><ul class='list-disc ml-5'><li>Tytuł każdego artykułu</li><li>Data publikacji</li><li>Główna fraza, na którą celuje artykuł</li><li>Link do artykułu</li></ul><br/><p>Przed publikacją nowego artykułu przejrzyj tę listę. Jeśli temat już był - możesz rozbudować stary artykuł zamiast pisać nowy od zera.</p><br/><h3 class='h5 mb-3 mt-4'>Aktualizuj stare artykuły zamiast pisać nowe</h3><p>Masz artykuł o certyfikatach SSL z 2022 roku i chcesz dodać informacje o nowych typach certyfikatów? Zamiast pisać nowy artykuł, rozbuduj ten stary. Dodaj nową sekcję, zaktualizuj przykłady, popraw przestarzałe informacje.</p><br/><p>Dlaczego to działa? Artykuł, który istnieje od lat i ma linki z innych stron, ma większą wartość dla Google niż zupełnie nowy, nawet jeśli nowy jest lepiej napisany. Więcej o tym mechanizmie znajdziesz w artykule o aktualizacji starych treści.</p><br/><h3 class='h5 mb-3 mt-4'>Wybierz jedną główną stronę dla każdej frazy</h3><p>Jeśli piszesz o pozycjonowaniu lokalnym, zdecyduj: która strona ma być główna dla tej frazy? Może to być kompleksowy artykuł, który odpowiada na wszystkie pytania związane z tym tematem.</p><br/><p>Pozostałe artykuły mogą wspominać o pozycjonowaniu lokalnym, ale ich tytuły i nagłówki celują w inne frazy. Przykład: jeden artykuł ma tytuł Pozycjonowanie lokalne - jak działać?, drugi Widoczność w Google Maps - czym się różni od pozycjonowania?. Oba dotyczą podobnych zagadnień, ale odpowiadają na różne pytania.</p><br/><h3 class='h5 mb-3 mt-4'>Sprawdzaj Google Search Console co miesiąc</h3><p>Co miesiąc (lub co kilka miesięcy, jeśli masz małą witrynę) zaglądaj do <a class='underline' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a> i sprawdzaj, które strony wyświetlają się dla jakich fraz. Jeśli zauważysz, że dwie strony mają wyświetlenia dla tej samej frazy - wiesz, że zaczyna się kanibalizacja. Możesz ją naprawić zanim problem się pogłębi.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -135,13 +140,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czym są Core Web Vitals?</h2><p>Core Web Vitals to trzy wskaźniki opracowane przez Google, które mierzą jakość doświadczenia użytkownika na stronie. Każdy z nich odnosi się do innego aspektu korzystania ze strony:</p><br/><ul class='list-disc ml-5'><li><strong>LCP (Largest Contentful Paint)</strong> - mierzy czas ładowania głównej treści strony</li><li><strong>INP (Interaction to Next Paint)</strong> - mierzy responsywność strony na działania użytkownika</li><li><strong>CLS (Cumulative Layout Shift)</strong> - mierzy stabilność wizualną strony podczas ładowania</li></ul><br/><p>Wg <a class='underline' href='https://developers.google.com/search/docs/appearance/core-web-vitals' target='_blank' rel='noopener noreferrer'>dokumentacji Google Search Central</a> te trzy wskaźniki są częścią sygnałów Page Experience, które wpływają na ranking stron w wynikach wyszukiwania. Google zbiera dane o Core Web Vitals z przeglądarek Chrome użytkowników, więc wyniki odzwierciedlają rzeczywiste doświadczenia odwiedzających.</p><br/><p>Każdy wskaźnik ma określone progi: dobry, wymagający poprawy i słaby. Strona, która osiąga dobre wyniki we wszystkich trzech wskaźnikach, ma przewagę w rankingu nad stronami z gorszymi wynikami - przy założeniu, że pozostałe czynniki SEO są porównywalne.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czym są Core Web Vitals?</h2><p>Core Web Vitals to trzy wskaźniki opracowane przez Google, które mierzą jakość doświadczenia użytkownika na stronie. Każdy z nich odnosi się do innego aspektu korzystania ze strony:</p><br/><ul class='list-disc ml-5'><li><strong>LCP (Largest Contentful Paint)</strong> - mierzy czas ładowania głównej treści strony</li><li><strong>INP (Interaction to Next Paint)</strong> - mierzy responsywność strony na działania użytkownika</li><li><strong>CLS (Cumulative Layout Shift)</strong> - mierzy stabilność wizualną strony podczas ładowania</li></ul><br/><p>Wg <a class='underline' href='https://developers.google.com/search/docs/appearance/core-web-vitals' target='_blank' rel='noopener noreferrer'>dokumentacji Google Search Central</a> te trzy wskaźniki są częścią sygnałów Page Experience, które wpływają na ranking stron w wynikach wyszukiwania. Google zbiera dane o Core Web Vitals z przeglądarek Chrome użytkowników, więc wyniki odzwierciedlają rzeczywiste doświadczenia odwiedzających.</p><br/><p>Każdy wskaźnik ma określone progi: dobry, wymagający poprawy i słaby. Strona, która osiąga dobre wyniki we wszystkich trzech wskaźnikach, ma przewagę w rankingu nad stronami z gorszymi wynikami - przy założeniu, że pozostałe czynniki SEO są porównywalne.</p>",
           "breakAfter": true
         },
         {
@@ -160,13 +165,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak Core Web Vitals wpływają na pozycję w Google?</h2><p>Google oficjalnie potwierdza, że Core Web Vitals są jednym z czynników rankingowych. Wg <a class='underline' href='https://developers.google.com/search/blog/2020/11/timing-for-page-experience' target='_blank' rel='noopener noreferrer'>komunikatu Google z 2020 roku</a> wskaźniki Page Experience są brane pod uwagę przy ustalaniu pozycji stron.</p><br/><h3 class='h5 mb-3 mt-4'>Treść pozostaje najważniejsza</h3><p>Google wielokrotnie podkreślało, że jakość i trafność treści są ważniejsze niż wskaźniki techniczne. Core Web Vitals działają jako czynnik różnicujący, gdy strony są porównywalne pod względem treści.</p><br/><h3 class='h5 mb-3 mt-4'>Dane z rzeczywistego użytkowania</h3><p>Google zbiera dane Core Web Vitals z Chrome User Experience Report (CrUX) - to dane od rzeczywistych użytkowników, nie wyniki testów laboratoryjnych.</p><br/><p>Więcej o czynnikach wpływających na pozycję znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony'>czasie pozycjonowania strony firmowej</a>.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak Core Web Vitals wpływają na pozycję w Google?</h2><p>Google oficjalnie potwierdza, że Core Web Vitals są jednym z czynników rankingowych. Wg <a class='underline' href='https://developers.google.com/search/blog/2020/11/timing-for-page-experience' target='_blank' rel='noopener noreferrer'>komunikatu Google z 2020 roku</a> wskaźniki Page Experience są brane pod uwagę przy ustalaniu pozycji stron.</p><br/><h3 class='h5 mb-3 mt-4'>Treść pozostaje najważniejsza</h3><p>Google wielokrotnie podkreślało, że jakość i trafność treści są ważniejsze niż wskaźniki techniczne. Core Web Vitals działają jako czynnik różnicujący, gdy strony są porównywalne pod względem treści.</p><br/><h3 class='h5 mb-3 mt-4'>Dane z rzeczywistego użytkowania</h3><p>Google zbiera dane Core Web Vitals z Chrome User Experience Report (CrUX) - to dane od rzeczywistych użytkowników, nie wyniki testów laboratoryjnych.</p><br/><p>Więcej o czynnikach wpływających na pozycję znajdziesz w artykule o <a class='inline-link' href='/edukacja/seo/ile-czasu-trwa-pozycjonowanie-strony'>czasie pozycjonowania strony firmowej</a>.</p>",
           "breakAfter": true
         },
         {
@@ -251,18 +256,23 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest linkowanie wewnętrzne i jak działa?</h2><p>Linkowanie wewnętrzne to praktyka łączenia podstron w obrębie jednej witryny za pomocą hiperłączy. Każdy link wewnętrzny składa się z dwóch elementów: adresu URL strony docelowej oraz <span data-tooltip='Anchor text (tekst kotwicy) to widoczny, klikalny tekst linku. Google wykorzystuje go do zrozumienia, o czym jest strona docelowa.'>anchor textu</span> (tekstu kotwicy), czyli widocznego tekstu, który użytkownik klika.</p><br/><p>Przykład: zdanie &quot;Dowiedz się więcej o <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniu stron</a>&quot; zawiera link wewnętrzny. Adres URL to /uslugi/marketing/pozycjonowanie-stron, a anchor text to &quot;pozycjonowaniu stron&quot;.</p><br/><h3 class='h5 mb-3 mt-4'>Jak wyszukiwarki wykorzystują linki wewnętrzne?</h3><p>Wyszukiwarki takie jak Google używają robotów (nazywanych crawlerami lub pająkami), które przemierzają internet, przechodząc z jednej strony na drugą poprzez linki. Gdy robot Google trafia na stronę, odczytuje jej treść, a następnie podąża za wszystkimi linkami, które na niej znajdzie. W ten sposób odkrywa nowe podstrony.</p><br/><p>Linki wewnętrzne pełnią kilka funkcji dla wyszukiwarek:</p><br/><ul class='list-disc ml-5'><li><strong>Odkrywanie podstron</strong> - robot Google może dotrzeć do podstrony tylko wtedy, gdy istnieje do niej link (wewnętrzny lub zewnętrzny) lub gdy jest ona zgłoszona w <a class='underline' href='https://search.google.com/search-console/' target='_blank' rel='noopener noreferrer'>Google Search Console</a>. Podstrona bez żadnych linków prowadzących do niej jest praktycznie niewidoczna dla wyszukiwarek.</li><li><strong>Zrozumienie struktury</strong> - na podstawie tego, jak strony są ze sobą połączone, Google buduje obraz struktury witryny. Strona, do której prowadzi wiele linków wewnętrznych, jest traktowana jako ważniejsza.</li><li><strong>Przekazywanie kontekstu</strong> - anchor text linku mówi Google, o czym jest strona docelowa. Link z tekstem &quot;audyt SEO&quot; sugeruje, że strona docelowa dotyczy audytu SEO.</li></ul><br/><p>Według <a class='underline' href='https://developers.google.com/search/docs/crawling-indexing/links-crawlable' target='_blank' rel='noopener noreferrer'>dokumentacji Google Search Central</a>, linki wewnętrzne są jednym z głównych sposobów, w jaki Googlebot odkrywa nowe treści na stronie.</p>",
-          "breakAfter": true
-        },
-        {
           "type": "ad",
           "slot": "9459125335",
           "breakAfter": true
         },
         {
           "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest linkowanie wewnętrzne i jak działa?</h2><p>Linkowanie wewnętrzne to praktyka łączenia podstron w obrębie jednej witryny za pomocą hiperłączy. Każdy link wewnętrzny składa się z dwóch elementów: adresu URL strony docelowej oraz <span data-tooltip='Anchor text (tekst kotwicy) to widoczny, klikalny tekst linku. Google wykorzystuje go do zrozumienia, o czym jest strona docelowa.'>anchor textu</span> (tekstu kotwicy), czyli widocznego tekstu, który użytkownik klika.</p><br/><p>Przykład: zdanie &quot;Dowiedz się więcej o <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniu stron</a>&quot; zawiera link wewnętrzny. Adres URL to /uslugi/marketing/pozycjonowanie-stron, a anchor text to &quot;pozycjonowaniu stron&quot;.</p><br/><h3 class='h5 mb-3 mt-4'>Jak wyszukiwarki wykorzystują linki wewnętrzne?</h3><p>Wyszukiwarki takie jak Google używają robotów (nazywanych crawlerami lub pająkami), które przemierzają internet, przechodząc z jednej strony na drugą poprzez linki. Gdy robot Google trafia na stronę, odczytuje jej treść, a następnie podąża za wszystkimi linkami, które na niej znajdzie. W ten sposób odkrywa nowe podstrony.</p><br/><p>Linki wewnętrzne pełnią kilka funkcji dla wyszukiwarek:</p><br/><ul class='list-disc ml-5'><li><strong>Odkrywanie podstron</strong> - robot Google może dotrzeć do podstrony tylko wtedy, gdy istnieje do niej link (wewnętrzny lub zewnętrzny) lub gdy jest ona zgłoszona w <a class='underline' href='https://search.google.com/search-console/' target='_blank' rel='noopener noreferrer'>Google Search Console</a>. Podstrona bez żadnych linków prowadzących do niej jest praktycznie niewidoczna dla wyszukiwarek.</li><li><strong>Zrozumienie struktury</strong> - na podstawie tego, jak strony są ze sobą połączone, Google buduje obraz struktury witryny. Strona, do której prowadzi wiele linków wewnętrznych, jest traktowana jako ważniejsza.</li><li><strong>Przekazywanie kontekstu</strong> - anchor text linku mówi Google, o czym jest strona docelowa. Link z tekstem &quot;audyt SEO&quot; sugeruje, że strona docelowa dotyczy audytu SEO.</li></ul><br/><p>Według <a class='underline' href='https://developers.google.com/search/docs/crawling-indexing/links-crawlable' target='_blank' rel='noopener noreferrer'>dokumentacji Google Search Central</a>, linki wewnętrzne są jednym z głównych sposobów, w jaki Googlebot odkrywa nowe treści na stronie.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego linkowanie wewnętrzne ma znaczenie dla SEO?</h2><p>Linkowanie wewnętrzne wpływa na SEO na kilka sposobów. Zrozumienie tych mechanizmów pomoże Ci świadomie planować strukturę linków na stronie.</p><br/><h3 class='h5 mb-3 mt-4'>Dystrybucja wartości SEO (PageRank)</h3><p><span data-tooltip='PageRank to algorytm Google oceniający ważność strony na podstawie liczby i jakości linków prowadzących do niej. Choć Google nie ujawnia już publicznie wartości PageRank, algorytm nadal jest częścią systemu rankingowego.'>PageRank</span> to algorytm, który Google wykorzystuje do oceny ważności stron na podstawie linków. Każda strona ma pewną wartość SEO, którą może przekazywać dalej przez linki. Gdy strona A linkuje do strony B, część wartości strony A przepływa do strony B.</p><br/><p>Strony, do których prowadzi wiele linków wewnętrznych (np. strona główna, główne kategorie), mają wyższą wartość w oczach Google. Strony, do których nie prowadzi prawie żaden link wewnętrzny, są traktowane jako mniej istotne - nawet jeśli mają wartościową treść.</p><br/><p>Dlatego ważne jest, żeby strategicznie linkować do stron, które chcesz wypozycjonować. Jeśli masz artykuł, który chcesz, żeby zajmował wysokie pozycje w Google, zadbaj o to, żeby inne strony na witrynie do niego linkowały.</p><br/><h3 class='h5 mb-3 mt-4'>Optymalizacja crawl budget</h3><p><span data-tooltip='Crawl budget (budżet crawlowania) to liczba stron, które Googlebot przeskanuje na danej witrynie w określonym czasie. Dla małych stron nie jest to problem, ale dla dużych witryn (tysiące podstron) efektywne wykorzystanie crawl budget ma znaczenie.'>Crawl budget</span> to liczba stron, które Googlebot jest w stanie przeskanować na Twojej witrynie w określonym czasie. Dla małych stron (kilkadziesiąt podstron) nie jest to istotny problem. Jednak dla większych witryn - sklepów internetowych z tysiącami produktów czy portali z setkami artykułów - crawl budget może być ograniczający.</p><br/><p>Dobre linkowanie wewnętrzne pomaga Googlebotowi efektywnie poruszać się po stronie. Jeśli ważne podstrony są łatwo dostępne (np. maksymalnie 3-4 kliknięcia od strony głównej), robot szybciej je znajdzie i zaindeksuje. Jeśli natomiast podstrona jest &quot;zakopana&quot; głęboko w strukturze i prowadzi do niej tylko jeden link, może być odkryta znacznie później - lub wcale.</p><br/><h3 class='h5 mb-3 mt-4'>Budowanie tematycznej spójności</h3><p>Google coraz lepiej rozumie kontekst i powiązania między tematami. Strona, która ma wiele artykułów o pokrewnych tematach i łączy je linkami wewnętrznymi, sygnalizuje Google, że jest autorytetem w danej dziedzinie. To właśnie idea <span data-tooltip='Klaster tematyczny to grupa powiązanych treści na jednej witrynie, połączonych linkami wewnętrznymi wokół głównego tematu (pillar page). Strategia klastrów buduje topical authority i pomaga w pozycjonowaniu.'>klastrów tematycznych</span>, którą omówimy szczegółowo w dalszej części artykułu.</p><br/><p>Jeśli chcesz dowiedzieć się więcej o tym, jak Google ocenia treści i co wpływa na pozycję w wynikach wyszukiwania, przeczytaj nasz artykuł o <a class='inline-link' href='/edukacja/seo/jak-pisac-tresci-na-stronie-internetowej-aby-byc-wyzej-w-wyszukiwarce-google'>pisaniu treści pod SEO</a>.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -288,6 +298,11 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Na co zwrócić uwagę przy linkowaniu wewnętrznym?</h2><p>Linkowanie wewnętrzne może wspierać SEO, ale tylko wtedy, gdy jest realizowane świadomie. Poniżej najczęstsze pułapki i sposoby ich unikania.</p><br/><h3 class='h5 mb-3 mt-4'>Strony-sieroty (orphan pages)</h3><p>Strona-sierota to podstrona, do której nie prowadzi żaden link wewnętrzny. Jedyny sposób dotarcia do niej to wpisanie bezpośredniego adresu URL lub znalezienie jej w sitemap. Dla użytkowników i wyszukiwarek taka strona praktycznie nie istnieje.</p><br/><p>Rozwiązanie: regularnie przeglądaj strukturę witryny i upewniaj się, że każda ważna podstrona ma co najmniej jeden link wewnętrzny. Narzędzia takie jak <a class='underline' href='https://search.google.com/search-console/' target='_blank' rel='noopener noreferrer'>Google Search Console</a> (raport &quot;Linki&quot;) lub <a class='underline' href='https://ahrefs.com/' target='_blank' rel='noopener noreferrer'>Ahrefs Site Audit</a> mogą pomóc w identyfikacji stron-sierot.</p><br/><h3 class='h5 mb-3 mt-4'>Zbyt głęboka struktura</h3><p>Jeśli dotarcie do podstrony wymaga wielu kliknięć (np. 5-6 poziomów nawigacji), Google może traktować ją jako mniej istotną. Generalnie przyjmuje się, że każda ważna podstrona powinna być dostępna w maksymalnie 3-4 kliknięciach od strony głównej.</p><br/><p>Rozwiązanie: uprość strukturę nawigacji. Jeśli masz sklep z tysiącami produktów, zadbaj o to, żeby kategorie i podkategorie były logicznie zorganizowane, a produkty dostępne bez zbędnego zagłębiania się.</p><br/><h3 class='h5 mb-3 mt-4'>Linki, które nie działają (broken links)</h3><p>Link prowadzący do strony, która nie istnieje (błąd 404), jest bezwartościowy dla użytkownika i SEO. Użytkownik trafia na stronę błędu, a Google marnuje crawl budget na nieistniejącą stronę.</p><br/><p>Rozwiązanie: regularnie sprawdzaj, czy linki wewnętrzne działają. Po usunięciu lub przeniesieniu strony ustaw przekierowanie 301 na nową lokalizację lub zaktualizuj linki.</p><br/><h3 class='h5 mb-3 mt-4'>Zbyt wiele linków na jednej stronie</h3><p>Strona z setkami linków wewnętrznych jest trudna do nawigowania dla użytkownika, a wartość SEO każdego pojedynczego linku jest rozcieńczona. Google nie podaje konkretnego limitu, ale zdrowy rozsądek sugeruje, żeby linkować tylko tam, gdzie ma to sens dla użytkownika.</p><br/><p>Rozwiązanie: ogranicz liczbę linków do tych, które są naprawdę przydatne. Menu nawigacyjne + kilka-kilkanaście linków kontekstowych w treści to rozsądna liczba dla większości stron.</p><br/><h3 class='h5 mb-3 mt-4'>Generyczne anchor texty wszędzie</h3><p>Jeśli wszystkie Twoje linki wewnętrzne mają anchor text &quot;kliknij tutaj&quot; lub &quot;dowiedz się więcej&quot;, tracisz okazję do przekazania Google informacji o treści stron docelowych.</p><br/><p>Rozwiązanie: używaj opisowych anchor textów, które mówią, co użytkownik znajdzie po kliknięciu. Zamiast &quot;Kliknij tutaj, żeby dowiedzieć się więcej&quot; napisz &quot;Przeczytaj o <a class='inline-link' href='/uslugi/marketing/optymalizacja-seo'>optymalizacji SEO</a>&quot;.</p><br/><h3 class='h5 mb-3 mt-4'>Brak linkowania do nowych treści</h3><p>Publikujesz nowy artykuł, ale nie dodajesz do niego linków z innych stron witryny. Artykuł pozostaje odizolowany i ma słabszą pozycję wyjściową.</p><br/><p>Rozwiązanie: po opublikowaniu nowej treści przejrzyj istniejące artykuły i strony, które tematycznie pasują, i dodaj linki do nowej treści. To przyspiesza indeksowanie i buduje wartość SEO nowej strony.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -353,13 +368,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego warto mierzyć skuteczność strony?</h2><p>Strona internetowa to narzędzie, które ma realizować konkretne cele - przyciągać klientów, budować zaufanie, generować zapytania ofertowe lub sprzedaż. Bez danych nie wiesz, czy te cele są realizowane.</p><br/><p><strong>Co zyskujesz dzięki analityce?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Wiesz, skąd przychodzą odwiedzający</strong> - czy z Google, mediów społecznościowych, czy z polecenia. To pomaga ocenić, które kanały działają.</li><li><strong>Rozumiesz zachowanie użytkowników</strong> - które strony oglądają najdłużej, gdzie rezygnują, co ich interesuje.</li><li><strong>Możesz podejmować decyzje na podstawie faktów</strong> - zamiast zgadywać, co poprawić, widzisz konkretne dane.</li><li><strong>Mierzysz zwrot z inwestycji</strong> - jeśli wydajesz na reklamę lub pozycjonowanie, dane pokazują, czy to się opłaca.</li></ul><br/><p>Dla firmy produkcyjnej, która zainwestowała w nową stronę, analityka pokaże, czy strona faktycznie generuje więcej zapytań ofertowych. Dla restauracji - czy rezerwacje online rosną po wprowadzeniu formularza.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego warto mierzyć skuteczność strony?</h2><p>Strona internetowa to narzędzie, które ma realizować konkretne cele - przyciągać klientów, budować zaufanie, generować zapytania ofertowe lub sprzedaż. Bez danych nie wiesz, czy te cele są realizowane.</p><br/><p><strong>Co zyskujesz dzięki analityce?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Wiesz, skąd przychodzą odwiedzający</strong> - czy z Google, mediów społecznościowych, czy z polecenia. To pomaga ocenić, które kanały działają.</li><li><strong>Rozumiesz zachowanie użytkowników</strong> - które strony oglądają najdłużej, gdzie rezygnują, co ich interesuje.</li><li><strong>Możesz podejmować decyzje na podstawie faktów</strong> - zamiast zgadywać, co poprawić, widzisz konkretne dane.</li><li><strong>Mierzysz zwrot z inwestycji</strong> - jeśli wydajesz na reklamę lub pozycjonowanie, dane pokazują, czy to się opłaca.</li></ul><br/><p>Dla firmy produkcyjnej, która zainwestowała w nową stronę, analityka pokaże, czy strona faktycznie generuje więcej zapytań ofertowych. Dla restauracji - czy rezerwacje online rosną po wprowadzeniu formularza.</p>",
           "breakAfter": true
         },
         {
@@ -393,13 +408,13 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Najczęstsze błędy w analityce stron internetowych</h2><p>Samo posiadanie narzędzi analitycznych nie wystarczy. Ważne jest, żeby prawidłowo je skonfigurować i właściwie interpretować dane.</p><br/><p><strong>Brak filtrowania własnego ruchu</strong></p><br/><p>Jeśli nie wykluczysz swojego adresu IP z danych, Twoje własne wizyty zawyżają statystyki. Dotyczy to szczególnie małych stron, gdzie kilkanaście wizyt właściciela dziennie może stanowić znaczną część całego ruchu. W GA4 możesz zdefiniować wewnętrzny ruch i wykluczyć go z raportów.</p><br/><p><strong>Nieskonfigurowane cele (konwersje)</strong></p><br/><p>Bez zdefiniowanych celów widzisz tylko ruch, ale nie wiesz, czy ten ruch przekłada się na realne działania. Skonfiguruj jako cele najważniejsze interakcje: wysłanie formularza kontaktowego, kliknięcie w numer telefonu, pobranie cennika, dokonanie zakupu.</p><br/><p><strong>Patrzenie tylko na liczbę odwiedzin</strong></p><br/><p>10 000 odwiedzin miesięcznie brzmi imponująco, ale jeśli nikt nie wypełnia formularza kontaktowego, te odwiedziny nie mają wartości biznesowej. Jakość ruchu (zaangażowanie, konwersje) jest ważniejsza niż ilość.</p><br/><p><strong>Ignorowanie danych mobilnych</strong></p><br/><p>Według danych <a href='https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/poland' target='_blank' rel='noopener noreferrer'>StatCounter</a>, ponad 60% ruchu na polskich stronach pochodzi z urządzeń mobilnych. Sprawdź osobno statystyki dla komputerów i telefonów - mogą się znacząco różnić. Strona, która dobrze konwertuje na komputerze, ale źle na telefonie, traci większość potencjalnych klientów.</p><br/><p><strong>Brak regularności w analizie</strong></p><br/><p>Jednorazowy przegląd danych to za mało. Analityka daje największą wartość, gdy patrzysz na trendy w czasie. Ustal stały termin (np. pierwszy poniedziałek miesiąca) na przegląd kluczowych wskaźników.</p>",
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Najczęstsze błędy w analityce stron internetowych</h2><p>Samo posiadanie narzędzi analitycznych nie wystarczy. Ważne jest, żeby prawidłowo je skonfigurować i właściwie interpretować dane.</p><br/><p><strong>Brak filtrowania własnego ruchu</strong></p><br/><p>Jeśli nie wykluczysz swojego adresu IP z danych, Twoje własne wizyty zawyżają statystyki. Dotyczy to szczególnie małych stron, gdzie kilkanaście wizyt właściciela dziennie może stanowić znaczną część całego ruchu. W GA4 możesz zdefiniować wewnętrzny ruch i wykluczyć go z raportów.</p><br/><p><strong>Nieskonfigurowane cele (konwersje)</strong></p><br/><p>Bez zdefiniowanych celów widzisz tylko ruch, ale nie wiesz, czy ten ruch przekłada się na realne działania. Skonfiguruj jako cele najważniejsze interakcje: wysłanie formularza kontaktowego, kliknięcie w numer telefonu, pobranie cennika, dokonanie zakupu.</p><br/><p><strong>Patrzenie tylko na liczbę odwiedzin</strong></p><br/><p>10 000 odwiedzin miesięcznie brzmi imponująco, ale jeśli nikt nie wypełnia formularza kontaktowego, te odwiedziny nie mają wartości biznesowej. Jakość ruchu (zaangażowanie, konwersje) jest ważniejsza niż ilość.</p><br/><p><strong>Ignorowanie danych mobilnych</strong></p><br/><p>Według danych <a href='https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/poland' target='_blank' rel='noopener noreferrer'>StatCounter</a>, ponad 60% ruchu na polskich stronach pochodzi z urządzeń mobilnych. Sprawdź osobno statystyki dla komputerów i telefonów - mogą się znacząco różnić. Strona, która dobrze konwertuje na komputerze, ale źle na telefonie, traci większość potencjalnych klientów.</p><br/><p><strong>Brak regularności w analizie</strong></p><br/><p>Jednorazowy przegląd danych to za mało. Analityka daje największą wartość, gdy patrzysz na trendy w czasie. Ustal stały termin (np. pierwszy poniedziałek miesiąca) na przegląd kluczowych wskaźników.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -470,13 +485,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czym jest Google Moja Firma i dlaczego jest ważne?</h2><p><strong>Google Moja Firma</strong> (oficjalnie Google Business Profile) to bezpłatne narzędzie od Google, które pozwala zarządzać tym, jak Twoja firma wyświetla się w wyszukiwarce i w Mapach Google.</p><br/><p>Gdy ktoś wpisuje w Google nazwę Twojej firmy lub szuka usług w okolicy (np. fryzjer Kraków, mechanik Wrocław), Google może wyświetlić tzw. panel wiedzy - ramkę z podstawowymi informacjami o firmie: adresem, telefonem, godzinami otwarcia, zdjęciami i opiniami.</p><br/><p><strong>Dlaczego to ważne dla lokalnych firm?</strong></p><br/><p>Według danych <a class='inline-link' href='https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-statistics/' target='_blank' rel='noopener noreferrer'>Think with Google</a>, 76% osób, które szukają lokalnych usług lub miejsc na telefonie (np. fryzjer w pobliżu, restauracja otwarta teraz), odwiedza znalezione miejsce jeszcze tego samego dnia. To oznacza, że klient, który właśnie szuka mechanika lub dentysty, prawdopodobnie pójdzie do firmy, którą znajdzie jako pierwszą w Google. Dobrze uzupełniony profil Google Moja Firma zwiększa szansę, że to właśnie Twoja firma pojawi się w wynikach i zostanie wybrana.</p><br/><p>Profil Google Moja Firma pomaga też w pozycjonowaniu lokalnym. Firmy z kompletnymi profilami, dobrymi opiniami i aktualnymi informacjami częściej pojawiają się w tzw. Local Pack - trójce wyników wyświetlanych nad mapą w Google.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czym jest Google Moja Firma i dlaczego jest ważne?</h2><p><strong>Google Moja Firma</strong> (oficjalnie Google Business Profile) to bezpłatne narzędzie od Google, które pozwala zarządzać tym, jak Twoja firma wyświetla się w wyszukiwarce i w Mapach Google.</p><br/><p>Gdy ktoś wpisuje w Google nazwę Twojej firmy lub szuka usług w okolicy (np. fryzjer Kraków, mechanik Wrocław), Google może wyświetlić tzw. panel wiedzy - ramkę z podstawowymi informacjami o firmie: adresem, telefonem, godzinami otwarcia, zdjęciami i opiniami.</p><br/><p><strong>Dlaczego to ważne dla lokalnych firm?</strong></p><br/><p>Według danych <a class='inline-link' href='https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/local-search-statistics/' target='_blank' rel='noopener noreferrer'>Think with Google</a>, 76% osób, które szukają lokalnych usług lub miejsc na telefonie (np. fryzjer w pobliżu, restauracja otwarta teraz), odwiedza znalezione miejsce jeszcze tego samego dnia. To oznacza, że klient, który właśnie szuka mechanika lub dentysty, prawdopodobnie pójdzie do firmy, którą znajdzie jako pierwszą w Google. Dobrze uzupełniony profil Google Moja Firma zwiększa szansę, że to właśnie Twoja firma pojawi się w wynikach i zostanie wybrana.</p><br/><p>Profil Google Moja Firma pomaga też w pozycjonowaniu lokalnym. Firmy z kompletnymi profilami, dobrymi opiniami i aktualnymi informacjami częściej pojawiają się w tzw. Local Pack - trójce wyników wyświetlanych nad mapą w Google.</p>",
           "breakAfter": true
         },
         {
@@ -490,13 +505,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak zdobywać i odpowiadać na opinie klientów?</h2><p>Opinie w Google Moja Firma to jeden z najważniejszych czynników wpływających na decyzje klientów i pozycję w wynikach lokalnych.</p><br/><p><strong>Jak zachęcać klientów do wystawiania opinii?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Poproś bezpośrednio</strong> - po zakończonej usłudze lub transakcji poproś zadowolonego klienta o opinię. Możesz to zrobić osobiście, przez SMS lub e-mail.</li><li><strong>Ułatw proces</strong> - wygeneruj bezpośredni link do wystawiania opinii (znajdziesz go w panelu Google Business Profile) i udostępnij klientom.</li><li><strong>Umieść informację w widocznym miejscu</strong> - naklejka z kodem QR przy kasie lub na wizytówce może przypominać o możliwości wystawienia opinii.</li></ul><br/><p><strong>Jak odpowiadać na opinie?</strong></p><br/><p>Odpowiadaj na wszystkie opinie - zarówno pozytywne, jak i negatywne. Podziękuj za pozytywne i odnieś się do konkretów (np. Cieszymy się, że smakowała Ci kawa z Etiopii). Przy negatywnych zachowaj spokój, przeproś za niedogodności i zaproponuj rozwiązanie (np. kontakt telefoniczny). Profesjonalna odpowiedź na negatywną opinię pokazuje innym klientom, że firma dba o relacje.</p><br/><p>Według badań <a class='inline-link' href='https://www.brightlocal.com/research/local-consumer-review-survey/' target='_blank' rel='noopener noreferrer'>BrightLocal</a>, 88% konsumentów ufa opiniom online tak samo jak rekomendacjom znajomych, a 57% korzysta z usług firmy tylko wtedy, gdy ma ona ocenę 4 gwiazdki lub wyższą.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak zdobywać i odpowiadać na opinie klientów?</h2><p>Opinie w Google Moja Firma to jeden z najważniejszych czynników wpływających na decyzje klientów i pozycję w wynikach lokalnych.</p><br/><p><strong>Jak zachęcać klientów do wystawiania opinii?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Poproś bezpośrednio</strong> - po zakończonej usłudze lub transakcji poproś zadowolonego klienta o opinię. Możesz to zrobić osobiście, przez SMS lub e-mail.</li><li><strong>Ułatw proces</strong> - wygeneruj bezpośredni link do wystawiania opinii (znajdziesz go w panelu Google Business Profile) i udostępnij klientom.</li><li><strong>Umieść informację w widocznym miejscu</strong> - naklejka z kodem QR przy kasie lub na wizytówce może przypominać o możliwości wystawienia opinii.</li></ul><br/><p><strong>Jak odpowiadać na opinie?</strong></p><br/><p>Odpowiadaj na wszystkie opinie - zarówno pozytywne, jak i negatywne. Podziękuj za pozytywne i odnieś się do konkretów (np. Cieszymy się, że smakowała Ci kawa z Etiopii). Przy negatywnych zachowaj spokój, przeproś za niedogodności i zaproponuj rozwiązanie (np. kontakt telefoniczny). Profesjonalna odpowiedź na negatywną opinię pokazuje innym klientom, że firma dba o relacje.</p><br/><p>Według badań <a class='inline-link' href='https://www.brightlocal.com/research/local-consumer-review-survey/' target='_blank' rel='noopener noreferrer'>BrightLocal</a>, 88% konsumentów ufa opiniom online tak samo jak rekomendacjom znajomych, a 57% korzysta z usług firmy tylko wtedy, gdy ma ona ocenę 4 gwiazdki lub wyższą.</p>",
           "breakAfter": true
         },
         {
@@ -582,13 +597,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest meta title i gdzie się wyświetla?</h2><p><strong>Meta title</strong> to tytuł strony, który pojawia się w trzech miejscach:</p><br/><ul class='list-disc ml-5'><li><strong>Wyniki wyszukiwania Google</strong> - niebieski, klikalny nagłówek</li><li><strong>Karta przeglądarki</strong> - tekst na zakładce, gdy masz otwartą stronę</li><li><strong>Udostępnienia w mediach społecznościowych</strong> - tytuł posta, gdy ktoś udostępnia link</li></ul><br/><p>Meta title nie jest widoczny bezpośrednio na stronie - to element ukryty w kodzie HTML, który odczytują wyszukiwarki i przeglądarki.</p><br/><p><strong>Dlaczego meta title jest ważny?</strong></p><br/><p>To pierwszy element, który widzi użytkownik w Google. Jeśli tytuł jest jasny i odpowiada na pytanie użytkownika, szansa na kliknięcie rośnie. Według danych <a class='inline-link' href='https://backlinko.com/google-ctr-stats' target='_blank' rel='noopener noreferrer'>Backlinko</a>, pierwsze 3 wyniki w Google zbierają ponad 50% wszystkich kliknięć - a dobrze zoptymalizowany tytuł może zwiększyć CTR (współczynnik klikalności) nawet o kilkadziesiąt procent.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest meta title i gdzie się wyświetla?</h2><p><strong>Meta title</strong> to tytuł strony, który pojawia się w trzech miejscach:</p><br/><ul class='list-disc ml-5'><li><strong>Wyniki wyszukiwania Google</strong> - niebieski, klikalny nagłówek</li><li><strong>Karta przeglądarki</strong> - tekst na zakładce, gdy masz otwartą stronę</li><li><strong>Udostępnienia w mediach społecznościowych</strong> - tytuł posta, gdy ktoś udostępnia link</li></ul><br/><p>Meta title nie jest widoczny bezpośrednio na stronie - to element ukryty w kodzie HTML, który odczytują wyszukiwarki i przeglądarki.</p><br/><p><strong>Dlaczego meta title jest ważny?</strong></p><br/><p>To pierwszy element, który widzi użytkownik w Google. Jeśli tytuł jest jasny i odpowiada na pytanie użytkownika, szansa na kliknięcie rośnie. Według danych <a class='inline-link' href='https://backlinko.com/google-ctr-stats' target='_blank' rel='noopener noreferrer'>Backlinko</a>, pierwsze 3 wyniki w Google zbierają ponad 50% wszystkich kliknięć - a dobrze zoptymalizowany tytuł może zwiększyć CTR (współczynnik klikalności) nawet o kilkadziesiąt procent.</p>",
           "breakAfter": true
         },
         {
@@ -689,13 +704,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego pozycjonowanie sklepu różni się od pozycjonowania strony firmowej?</h2><p>Strona firmowa zwykle składa się z kilku lub kilkunastu podstron. Sklep internetowy potrafi mieć setki, tysiące, a czasem dziesiątki tysięcy adresów URL.</p><br/><p>W typowym sklepie występują:</p><ul class='list-disc ml-5'><li>kategorie i podkategorie,</li><li>produkty oraz ich warianty,</li><li>filtry i sortowanie (np. rozmiar, kolor, cena, marka),</li><li>paginacja (kolejne strony list produktów),</li><li>strony koszyka, zamówień i kont użytkowników.</li></ul><br/><p>Dla Google oznacza to więcej pracy: robot musi te adresy znaleźć, zrozumieć i zdecydować, które z nich są wartościowe. Bez przemyślanej struktury łatwo o problemy: duplikację treści, indeksowanie stron bez wartości, zbyt wiele podobnych adresów lub brak czytelnej hierarchii.</p><br/><p>Jeśli chcesz, aby SEO w sklepie miało sens, warto podejść do niego systemowo. Wtedy treści, technikalia i nawigacja zaczynają wspierać się wzajemnie, zamiast działać w izolacji.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego pozycjonowanie sklepu różni się od pozycjonowania strony firmowej?</h2><p>Strona firmowa zwykle składa się z kilku lub kilkunastu podstron. Sklep internetowy potrafi mieć setki, tysiące, a czasem dziesiątki tysięcy adresów URL.</p><br/><p>W typowym sklepie występują:</p><ul class='list-disc ml-5'><li>kategorie i podkategorie,</li><li>produkty oraz ich warianty,</li><li>filtry i sortowanie (np. rozmiar, kolor, cena, marka),</li><li>paginacja (kolejne strony list produktów),</li><li>strony koszyka, zamówień i kont użytkowników.</li></ul><br/><p>Dla Google oznacza to więcej pracy: robot musi te adresy znaleźć, zrozumieć i zdecydować, które z nich są wartościowe. Bez przemyślanej struktury łatwo o problemy: duplikację treści, indeksowanie stron bez wartości, zbyt wiele podobnych adresów lub brak czytelnej hierarchii.</p><br/><p>Jeśli chcesz, aby SEO w sklepie miało sens, warto podejść do niego systemowo. Wtedy treści, technikalia i nawigacja zaczynają wspierać się wzajemnie, zamiast działać w izolacji.</p>",
           "breakAfter": true
         },
         {
@@ -714,6 +729,11 @@
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak filtry i warianty produktów wpływają na SEO sklepu?</h2><p>Filtry są wygodne dla klienta, ale potrafią być trudne dla SEO. Dlaczego? Ponieważ jeden katalog produktów może wygenerować setki lub tysiące kombinacji adresów URL, które wyglądają podobnie, ale nie wnoszą unikalnej wartości.</p><br/><p>Przykład: jeśli klient filtruje Buty do biegania damskie po rozmiarze, kolorze i marce, sklep może tworzyć wiele podobnych podstron. Google może zacząć indeksować je masowo, a wtedy budżet indeksowania i moc SEO rozlewają się na strony, które nie są priorytetem.</p><br/><p>To temat, który warto omówić technicznie na etapie wdrożenia lub audytu, bo decyzja zależy od branży i zachowań klientów. W wielu sklepach część filtrów ma realną wartość (np. Buty do biegania damskie rozmiar 38), a część jest czysto pomocnicza (np. sortowanie od najtanszych).</p><br/><p>Jeżeli chcesz przygotować się do rozmowy z wykonawcą, pomyśl o dwóch rzeczach:</p><ul class='list-disc ml-5'><li>Jakie filtry odpowiadają realnym zapytaniom klientów w Google.</li><li>Które kombinacje filtrów mają sens jako osobne strony docelowe, a które powinny pozostać tylko funkcją na stronie.</li></ul><br/><p>Dzięki temu rozmowa z wykonawcą będzie konkretna, a decyzje techniczne - świadome.</p>",
           "breakAfter": true
@@ -724,13 +744,13 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak zaplanować linkowanie wewnętrzne, żeby sklep prowadzil do zakupu?</h2><p><strong>Linkowanie wewnętrzne</strong> to sposób, w jaki Twoje strony łączą się ze sobą. Pomaga klientowi poruszać się po ofercie i pomaga Google zrozumieć, które strony są najważniejsze.</p><br/><p>W sklepie najczęściej działa to na czterech poziomach:</p><ul class='list-disc ml-5'><li><strong>Menu i nawigacja</strong>: klient ma szybki dostęp do głównych kategorii.</li><li><strong>Breadcrumbs (okruszki)</strong>: pokazują ścieżkę, np. Strona glowna → Buty → Buty do biegania → Produkt.</li><li><strong>Powiązane produkty</strong>: sekcje typu Podobne produkty lub Klienci kupili rowniez pomagają w sprzedaży i w SEO.</li><li><strong>Linki w treści</strong>: w opisach kategorii i artykułach możesz prowadzić do konkretnych produktów i podkategorii.</li></ul><br/><p>Praktyczny przykład: jeśli masz kategorię Kurtki zimowe, to w jej opisie warto naturalnie wskazać podkategorie (np. Parki, Kurtki narciarskie) oraz kilka bestsellerów. Dzięki temu klient szybciej dociera do celu, a Google widzi, które strony mają priorytet.</p><br/><p>Linkowanie wewnętrzne to jeden z obszarów, w których systematyczna praca porządkowa często daje widoczne efekty.</p>",
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak zaplanować linkowanie wewnętrzne, żeby sklep prowadzil do zakupu?</h2><p><strong>Linkowanie wewnętrzne</strong> to sposób, w jaki Twoje strony łączą się ze sobą. Pomaga klientowi poruszać się po ofercie i pomaga Google zrozumieć, które strony są najważniejsze.</p><br/><p>W sklepie najczęściej działa to na czterech poziomach:</p><ul class='list-disc ml-5'><li><strong>Menu i nawigacja</strong>: klient ma szybki dostęp do głównych kategorii.</li><li><strong>Breadcrumbs (okruszki)</strong>: pokazują ścieżkę, np. Strona glowna → Buty → Buty do biegania → Produkt.</li><li><strong>Powiązane produkty</strong>: sekcje typu Podobne produkty lub Klienci kupili rowniez pomagają w sprzedaży i w SEO.</li><li><strong>Linki w treści</strong>: w opisach kategorii i artykułach możesz prowadzić do konkretnych produktów i podkategorii.</li></ul><br/><p>Praktyczny przykład: jeśli masz kategorię Kurtki zimowe, to w jej opisie warto naturalnie wskazać podkategorie (np. Parki, Kurtki narciarskie) oraz kilka bestsellerów. Dzięki temu klient szybciej dociera do celu, a Google widzi, które strony mają priorytet.</p><br/><p>Linkowanie wewnętrzne to jeden z obszarów, w których systematyczna praca porządkowa często daje widoczne efekty.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -806,13 +826,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>FAQ jako narzędzie SEO i domknięcia decyzji</h2><p>FAQ działa najlepiej wtedy, gdy traktujesz je jak sekcję decyzji. Użytkownik ma wątpliwość, widzi pytanie, które go dotyczy, czyta odpowiedź i podejmuje (lub nie) decyzję o kontakcie lub zakupie.</p><br/><h3 class='h5 mb-3 mt-4'>Jak FAQ wspiera SEO?</h3><p>Pytania w FAQ często odpowiadają tzw. <span data-tooltip='Long-tail keywords to frazy składające się z 3+ słów, które mają mniejszą konkurencję i często wyższą konwersję niż ogólne słowa kluczowe.'>długim zapytaniom</span> - czyli frazom wpisywanym w Google, które składają się z kilku słów. Takich fraz nie da się naturalnie wpleść w główny opis strony, na przykład: ile kosztuje zmiana instalacji w bloku z wielkiej płyty albo czy mogę zoptymalizować stronę bez jej przebudowy.</p><br/><p>Gdy Twoja odpowiedź w FAQ dokładnie odpowiada na takie zapytanie, Google może wyświetlić Twoją stronę jako wynik. To sposób na zdobycie widoczności na frazy, które mają mniejszą konkurencję, ale konkretną intencję użytkownika.</p><br/><h3 class='h5 mb-3 mt-4'>Jak FAQ wspiera konwersję?</h3><p>Większość pytań w FAQ to obiekcje klientów zapisane w formie neutralnych pytań. Klient przed podjęciem decyzji szuka odpowiedzi na pytania typu: co jeśli nie zobaczę efektów?, ile to potrwa?, czy muszę przygotować materiały?, co się stanie jeśli zmienię zdanie?</p><br/><p>Odpowiadając na te pytania w FAQ, usuwasz bariery przed kontaktem. Klient nie musi dzwonić, żeby dowiedzieć się podstawowych rzeczy - znajduje je na stronie i może od razu przejść do działania.</p><br/><h3 class='h5 mb-3 mt-4'>Trzy obszary dobrych pytań FAQ</h3><ul class='list-disc ml-5'><li><strong>Zakres i proces</strong> - co dokładnie otrzymujesz i jak wygląda współpraca</li><li><strong>Warunki i odpowiedzialność</strong> - co jest po stronie klienta, co po stronie wykonawcy</li><li><strong>Cena i decyzja</strong> - koszt, terminy, rozliczenie, ryzyko</li></ul>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>FAQ jako narzędzie SEO i domknięcia decyzji</h2><p>FAQ działa najlepiej wtedy, gdy traktujesz je jak sekcję decyzji. Użytkownik ma wątpliwość, widzi pytanie, które go dotyczy, czyta odpowiedź i podejmuje (lub nie) decyzję o kontakcie lub zakupie.</p><br/><h3 class='h5 mb-3 mt-4'>Jak FAQ wspiera SEO?</h3><p>Pytania w FAQ często odpowiadają tzw. <span data-tooltip='Long-tail keywords to frazy składające się z 3+ słów, które mają mniejszą konkurencję i często wyższą konwersję niż ogólne słowa kluczowe.'>długim zapytaniom</span> - czyli frazom wpisywanym w Google, które składają się z kilku słów. Takich fraz nie da się naturalnie wpleść w główny opis strony, na przykład: ile kosztuje zmiana instalacji w bloku z wielkiej płyty albo czy mogę zoptymalizować stronę bez jej przebudowy.</p><br/><p>Gdy Twoja odpowiedź w FAQ dokładnie odpowiada na takie zapytanie, Google może wyświetlić Twoją stronę jako wynik. To sposób na zdobycie widoczności na frazy, które mają mniejszą konkurencję, ale konkretną intencję użytkownika.</p><br/><h3 class='h5 mb-3 mt-4'>Jak FAQ wspiera konwersję?</h3><p>Większość pytań w FAQ to obiekcje klientów zapisane w formie neutralnych pytań. Klient przed podjęciem decyzji szuka odpowiedzi na pytania typu: co jeśli nie zobaczę efektów?, ile to potrwa?, czy muszę przygotować materiały?, co się stanie jeśli zmienię zdanie?</p><br/><p>Odpowiadając na te pytania w FAQ, usuwasz bariery przed kontaktem. Klient nie musi dzwonić, żeby dowiedzieć się podstawowych rzeczy - znajduje je na stronie i może od razu przejść do działania.</p><br/><h3 class='h5 mb-3 mt-4'>Trzy obszary dobrych pytań FAQ</h3><ul class='list-disc ml-5'><li><strong>Zakres i proces</strong> - co dokładnie otrzymujesz i jak wygląda współpraca</li><li><strong>Warunki i odpowiedzialność</strong> - co jest po stronie klienta, co po stronie wykonawcy</li><li><strong>Cena i decyzja</strong> - koszt, terminy, rozliczenie, ryzyko</li></ul>",
           "breakAfter": true
         },
         {
@@ -826,6 +846,11 @@
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak pisać odpowiedzi w FAQ?</h2><p>Najlepsza odpowiedź w FAQ zaczyna się od konkretu. Użytkownik ma dostać jasną informację już na początku pierwszego zdania - nie po dwóch akapitach wstępu.</p><br/><h3 class='h5 mb-3 mt-4'>Struktura odpowiedzi, która działa</h3><p><strong>1) Pierwsze zdanie - prosta odpowiedź.</strong> Odpowiedz na pytanie bezpośrednio. Jeśli pytanie brzmi Ile trwa realizacja?, zacznij od: Realizacja trwa 2-4 tygodnie w zależności od złożoności projektu.</p><br/><p><strong>2) Krótkie wyjaśnienie (2-5 zdań).</strong> Wyjaśnij, od czego to zależy, jakie są warianty, jakie są warunki. Nie pisz ogólników - podaj konkretne czynniki wpływające na odpowiedź.</p><br/><p><strong>3) Link do szczegółów.</strong> Jeśli temat wymaga rozwinięcia, poprowadź odbiorcę do odpowiedniej sekcji na stronie lub do osobnego artykułu. To jednocześnie wspiera <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>linkowanie wewnętrzne</a> i pomaga użytkownikowi.</p><br/><h3 class='h5 mb-3 mt-4'>Przykład dobrej odpowiedzi</h3><p><strong>Pytanie:</strong> Czy mogę zmienić zakres projektu po rozpoczęciu prac?</p><p><strong>Odpowiedź:</strong> Tak, zakres projektu można modyfikować w trakcie realizacji. Zmiany wprowadzamy na podstawie ustalonej procedury - opisujesz nowe wymagania, wyceniamy dodatkową pracę i po akceptacji wdrażamy zmiany. Większe modyfikacje mogą wpłynąć na termin realizacji.</p><br/><h3 class='h5 mb-3 mt-4'>Czego unikać w odpowiedziach</h3><ul class='list-disc ml-5'><li><strong>Długich wstępów</strong> - odpowiedź powinna zaczynać się od sedna, nie od kontekstu</li><li><strong>Żargonu bez wyjaśnienia</strong> - jeśli używasz terminu technicznego, wyjaśnij go lub użyj tooltipa</li><li><strong>Odpowiedzi typu to zależy bez rozwinięcia</strong> - jeśli coś zależy od warunków, wymień te warunki</li><li><strong>Zbyt długich odpowiedzi</strong> - FAQ ma być krótkie i konkretne; dłuższe tematy przenieś do osobnych artykułów</li></ul>",
           "breakAfter": true
@@ -836,13 +861,13 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Wdrożenie na stronie: czytelność, dostępność i indeksowalność</h2><p>FAQ działa wtedy, gdy użytkownik może je szybko przeczytać i łatwo obsłużyć. Ważna jest też czytelność, <a class='inline-link' href='/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie'>dostępności WCAG</a> i porządnej struktury.</p><br/><h3 class='h5 mb-3 mt-4'>Elementy dobrego wdrożenia</h3><ul class='list-disc ml-5'><li><strong>Jasny nagłówek sekcji</strong> - FAQ, Pytania i odpowiedzi, lub bardziej specyficzny (np. Najczęstsze pytania o współpracę)</li><li><strong>Akordeon z poprawną dostępnością</strong> - pytania jako przyciski, widoczne stany focus, obsługa klawiaturą (Tab, Enter, Space)</li><li><strong>Odpowiedź od razu po rozwinięciu</strong> - bez długich wstępów, konkret w pierwszym zdaniu</li><li><strong><a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>Linkowanie wewnętrzne</a></strong> - z odpowiedzi do konkretnej sekcji, artykułu lub oferty</li></ul><br/><h3 class='h5 mb-3 mt-4'>Indeksowalność przez Google</h3><p>Treść FAQ jest indeksowana, jeśli znajduje się w HTML strony (nie jest ładowana dynamicznie przez JavaScript bez SSR). Najlepszy efekt daje renderowanie treści na stronie od razu - dzięki temu Google widzi odpowiedzi bez konieczności wykonywania JavaScript.</p><br/><p>Jeśli tworzysz stronę lub rozbudowujesz istniejącą, FAQ pomoże uporządkować przekaz i zmniejszyć liczbę powtarzających się pytań przed kontaktem. W wielu przypadkach warto też dopracować całą treść strony - zobacz: <a class='inline-link' href='/uslugi/tworzenie-tresci'>Tworzenie treści</a>.</p>",
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Wdrożenie na stronie: czytelność, dostępność i indeksowalność</h2><p>FAQ działa wtedy, gdy użytkownik może je szybko przeczytać i łatwo obsłużyć. Ważna jest też czytelność, <a class='inline-link' href='/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie'>dostępności WCAG</a> i porządnej struktury.</p><br/><h3 class='h5 mb-3 mt-4'>Elementy dobrego wdrożenia</h3><ul class='list-disc ml-5'><li><strong>Jasny nagłówek sekcji</strong> - FAQ, Pytania i odpowiedzi, lub bardziej specyficzny (np. Najczęstsze pytania o współpracę)</li><li><strong>Akordeon z poprawną dostępnością</strong> - pytania jako przyciski, widoczne stany focus, obsługa klawiaturą (Tab, Enter, Space)</li><li><strong>Odpowiedź od razu po rozwinięciu</strong> - bez długich wstępów, konkret w pierwszym zdaniu</li><li><strong><a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>Linkowanie wewnętrzne</a></strong> - z odpowiedzi do konkretnej sekcji, artykułu lub oferty</li></ul><br/><h3 class='h5 mb-3 mt-4'>Indeksowalność przez Google</h3><p>Treść FAQ jest indeksowana, jeśli znajduje się w HTML strony (nie jest ładowana dynamicznie przez JavaScript bez SSR). Najlepszy efekt daje renderowanie treści na stronie od razu - dzięki temu Google widzi odpowiedzi bez konieczności wykonywania JavaScript.</p><br/><p>Jeśli tworzysz stronę lub rozbudowujesz istniejącą, FAQ pomoże uporządkować przekaz i zmniejszyć liczbę powtarzających się pytań przed kontaktem. W wielu przypadkach warto też dopracować całą treść strony - zobacz: <a class='inline-link' href='/uslugi/tworzenie-tresci'>Tworzenie treści</a>.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -926,13 +951,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego SEO wymaga czasu? Mechanizmy Google</h2><p>Google przetwarza strony w kilku etapach. Każdy z nich wymaga czasu.</p><br/><h3 class='h5 mb-3 mt-4'>Etap 1: Crawling (przeszukiwanie)</h3><p><span data-tooltip='Googlebot - robot Google, który przeszukuje strony internetowe i zbiera informacje o ich zawartości'>Googlebot</span> musi najpierw odkryć stronę. Robi to przez śledzenie linków z innych stron lub zgłoszenie w <a class='underline' target='_blank' rel='noopener noreferrer' href='https://search.google.com/search-console/about'>Google Search Console</a>. Dla nowej strony bez linków ten etap trwa od kilku dni do kilku tygodni.</p><br/><h3 class='h5 mb-3 mt-4'>Etap 2: Indeksowanie</h3><p>Po przeszukaniu Google analizuje zawartość strony i decyduje, czy dodać ją do indeksu. Pomija strony niskiej jakości, zduplikowane lub zablokowane przez robots.txt. Indeksowanie nowej strony zajmuje średnio 4-14 dni. Dla domen bez historii może trwać dłużej.</p><br/><h3 class='h5 mb-3 mt-4'>Etap 3: Ocena jakości i rankingowanie</h3><p>To najdłuższy etap. Google nie przyznaje wysokich pozycji od razu. Algorytm obserwuje reakcje użytkowników: czy klikają, ile czasu spędzają na stronie, czy wracają. Porównuje stronę z konkurencją i stopniowo dostosowuje pozycję. Ten proces trwa od kilku tygodni do kilkunastu miesięcy.</p><br/><p>Źródło: <a class='underline' target='_blank' rel='noopener noreferrer' href='https://developers.google.com/search/docs/fundamentals/how-search-works'>Google Search Central - How Search Works</a></p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego SEO wymaga czasu? Mechanizmy Google</h2><p>Google przetwarza strony w kilku etapach. Każdy z nich wymaga czasu.</p><br/><h3 class='h5 mb-3 mt-4'>Etap 1: Crawling (przeszukiwanie)</h3><p><span data-tooltip='Googlebot - robot Google, który przeszukuje strony internetowe i zbiera informacje o ich zawartości'>Googlebot</span> musi najpierw odkryć stronę. Robi to przez śledzenie linków z innych stron lub zgłoszenie w <a class='underline' target='_blank' rel='noopener noreferrer' href='https://search.google.com/search-console/about'>Google Search Console</a>. Dla nowej strony bez linków ten etap trwa od kilku dni do kilku tygodni.</p><br/><h3 class='h5 mb-3 mt-4'>Etap 2: Indeksowanie</h3><p>Po przeszukaniu Google analizuje zawartość strony i decyduje, czy dodać ją do indeksu. Pomija strony niskiej jakości, zduplikowane lub zablokowane przez robots.txt. Indeksowanie nowej strony zajmuje średnio 4-14 dni. Dla domen bez historii może trwać dłużej.</p><br/><h3 class='h5 mb-3 mt-4'>Etap 3: Ocena jakości i rankingowanie</h3><p>To najdłuższy etap. Google nie przyznaje wysokich pozycji od razu. Algorytm obserwuje reakcje użytkowników: czy klikają, ile czasu spędzają na stronie, czy wracają. Porównuje stronę z konkurencją i stopniowo dostosowuje pozycję. Ten proces trwa od kilku tygodni do kilkunastu miesięcy.</p><br/><p>Źródło: <a class='underline' target='_blank' rel='noopener noreferrer' href='https://developers.google.com/search/docs/fundamentals/how-search-works'>Google Search Central - How Search Works</a></p>",
           "breakAfter": true
         },
         {
@@ -946,6 +971,11 @@
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co przyspiesza efekty SEO?</h2><p>Kilka działań może skrócić czas oczekiwania na wyniki. Zasada jest jedna: usunąć bariery spowalniające ocenę strony przez Google.</p><br/><h3 class='h5 mb-3 mt-4'>Audyt techniczny na starcie</h3><p>Strona z błędami technicznymi to strona, którą Google trudno przeczytać. Błędy indeksowania, wolne ładowanie, brak responsywności - każdy z tych problemów opóźnia rankingowanie. Wg Semrush, strony z naprawionymi problemami technicznymi reagują na SEO nawet 40% szybciej.</p><br/><p>Najczęstsze problemy techniczne: błędy 404, wolne ładowanie (powyżej 3 sekund), brak SSL, zduplikowane treści i problemy z mobilnością. Dlatego <a class='inline-link' href='/uslugi/marketing/audyt-seo'>audyt SEO</a> powinien być pierwszym krokiem strategii pozycjonowania.</p><br/><h3 class='h5 mb-3 mt-4'>Linkowanie wewnętrzne</h3><p>Google odkrywa nowe strony przez linki. Im więcej linków prowadzi do podstrony, tym szybciej zostanie zaindeksowana. Dobra struktura <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>linkowania wewnętrznego</a> przyspiesza indeksowanie i pomaga Google zrozumieć hierarchię strony.</p><br/><h3 class='h5 mb-3 mt-4'>Aktualizacja istniejących treści</h3><p>Aktualizacja starszego artykułu daje efekty szybciej niż publikacja nowego. Strona ma już historię w Google, jest zaindeksowana i ma pozycję. Odświeżenie treści sygnalizuje Google, że strona jest aktywna. Wg HubSpot, aktualizacja treści może zwiększyć ruch organiczny o ponad 100%.</p>",
           "breakAfter": true
@@ -956,13 +986,13 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co przyspiesza efekty SEO? Sprawdzone metody</h2><p>Poniższe działania mogą skrócić czas oczekiwania na wyniki.</p><br/><h3 class='h5 mb-3 mt-4'>1. Audyt techniczny na starcie</h3><p>Strony z naprawionymi problemami technicznymi reagują na SEO nawet 40% szybciej. <a class='inline-link' href='/uslugi/marketing/audyt-seo'>Audyt SEO</a> pozwala zidentyfikować i naprawić:</p><br/><ul class='list-disc ml-5'><li>błędy indeksowania,</li><li>problemy z Core Web Vitals,</li><li>zduplikowane treści,</li><li>błędy w strukturze linków wewnętrznych,</li><li>problemy z mobilnością.</li></ul><br/><p>Źródło: <a class='underline' target='_blank' rel='noopener noreferrer' href='https://www.semrush.com/blog/site-audit/'>Semrush - Site Audit Guide</a></p><br/><h3 class='h5 mb-3 mt-4'>2. Optymalizacja istniejących treści</h3><p>Aktualizacja starszych artykułów daje efekty szybciej niż tworzenie nowych. Wg HubSpot, odświeżenie treści może zwiększyć ruch organiczny o 106%.</p><br/><p>Co aktualizować:</p><br/><ul class='list-disc ml-5'><li>nieaktualne dane i statystyki,</li><li>nowe sekcje odpowiadające na pytania użytkowników,</li><li>linkowanie do nowszych artykułów,</li><li>meta title i description.</li></ul><br/><h3 class='h5 mb-3 mt-4'>3. Strategia klastrów tematycznych</h3><p>Budowanie <span data-tooltip='Klaster tematyczny - grupa powiązanych artykułów wokół jednego głównego tematu, połączonych linkami wewnętrznymi'>klastrów tematycznych</span> (topic clusters) przyspiesza indeksowanie i buduje autorytet tematyczny. Google lepiej rozumie strukturę strony i szybciej przyznaje wyższe pozycje.</p><br/><p>Przykład: artykuł główny o pozycjonowaniu + artykuły wspierające o audycie SEO, linkach, treściach, Core Web Vitals. Wszystkie połączone linkami wewnętrznymi.</p><br/><h3 class='h5 mb-3 mt-4'>4. Dane strukturalne (Schema.org)</h3><p>Wdrożenie danych strukturalnych może przyspieszyć pojawienie się w wynikach o 2-4 tygodnie. Google lepiej rozumie zawartość strony i może wyświetlać rich snippets (rozszerzone wyniki).</p><br/><p>Źródło: <a class='underline' target='_blank' rel='noopener noreferrer' href='https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data'>Google - Introduction to structured data</a></p>",
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co przyspiesza efekty SEO? Sprawdzone metody</h2><p>Poniższe działania mogą skrócić czas oczekiwania na wyniki.</p><br/><h3 class='h5 mb-3 mt-4'>1. Audyt techniczny na starcie</h3><p>Strony z naprawionymi problemami technicznymi reagują na SEO nawet 40% szybciej. <a class='inline-link' href='/uslugi/marketing/audyt-seo'>Audyt SEO</a> pozwala zidentyfikować i naprawić:</p><br/><ul class='list-disc ml-5'><li>błędy indeksowania,</li><li>problemy z Core Web Vitals,</li><li>zduplikowane treści,</li><li>błędy w strukturze linków wewnętrznych,</li><li>problemy z mobilnością.</li></ul><br/><p>Źródło: <a class='underline' target='_blank' rel='noopener noreferrer' href='https://www.semrush.com/blog/site-audit/'>Semrush - Site Audit Guide</a></p><br/><h3 class='h5 mb-3 mt-4'>2. Optymalizacja istniejących treści</h3><p>Aktualizacja starszych artykułów daje efekty szybciej niż tworzenie nowych. Wg HubSpot, odświeżenie treści może zwiększyć ruch organiczny o 106%.</p><br/><p>Co aktualizować:</p><br/><ul class='list-disc ml-5'><li>nieaktualne dane i statystyki,</li><li>nowe sekcje odpowiadające na pytania użytkowników,</li><li>linkowanie do nowszych artykułów,</li><li>meta title i description.</li></ul><br/><h3 class='h5 mb-3 mt-4'>3. Strategia klastrów tematycznych</h3><p>Budowanie <span data-tooltip='Klaster tematyczny - grupa powiązanych artykułów wokół jednego głównego tematu, połączonych linkami wewnętrznymi'>klastrów tematycznych</span> (topic clusters) przyspiesza indeksowanie i buduje autorytet tematyczny. Google lepiej rozumie strukturę strony i szybciej przyznaje wyższe pozycje.</p><br/><p>Przykład: artykuł główny o pozycjonowaniu + artykuły wspierające o audycie SEO, linkach, treściach, Core Web Vitals. Wszystkie połączone linkami wewnętrznymi.</p><br/><h3 class='h5 mb-3 mt-4'>4. Dane strukturalne (Schema.org)</h3><p>Wdrożenie danych strukturalnych może przyspieszyć pojawienie się w wynikach o 2-4 tygodnie. Google lepiej rozumie zawartość strony i może wyświetlać rich snippets (rozszerzone wyniki).</p><br/><p>Źródło: <a class='underline' target='_blank' rel='noopener noreferrer' href='https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data'>Google - Introduction to structured data</a></p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -1036,13 +1066,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak Google ocenia strony lokalnych firm?</h2><p>Google nie wie, czy firma jest dobra w tym, co robi. Algorytm nie może ocenić, czy dentysta dobrze leczy zęby ani czy mechanik uczciwie wycenia naprawy. Zamiast tego Google ocenia sygnały, które świadczą o wiarygodności i ekspertyzie firmy.</p><br/><h3 class='h5 mb-3 mt-4'>Sygnały, które Google bierze pod uwagę</h3><p>Dla firm lokalnych kluczowe są: kompletność i aktywność profilu <span data-tooltip='Google Business Profile - profil firmy w Google, wcześniej Google Moja Firma'>Google Business Profile</span>, opinie klientów i odpowiedzi na nie, spójność danych NAP (nazwa, adres, telefon) w całym internecie, oraz - i tu pojawia się blog - jakość i zakres treści na stronie internetowej.</p><br/><p>Blog wpływa na ostatni z tych sygnałów. Strona z samym opisem usług ma ograniczoną ilość treści, którą Google może przeanalizować. Blog rozszerza tę treść o dodatkowe podstrony, które pokazują Google, że firma zna się na swojej branży.</p><br/><h3 class='h5 mb-3 mt-4'>Topical authority - autorytet tematyczny</h3><p>Google ocenia, czy strona jest autorytetem w danym temacie. Jeśli strona gabinetu stomatologicznego ma tylko 5 podstron (główna, o nas, usługi, cennik, kontakt), Google ma niewiele informacji o tym, czy gabinet zna się na stomatologii. Jeśli ta sama strona ma dodatkowo 20 artykułów odpowiadających na pytania pacjentów - jak często myć zęby, co jeść po wyrwaniu zęba, jak wygląda leczenie kanałowe - Google widzi, że strona szczegółowo pokrywa temat stomatologii.</p><br/><p>Ten mechanizm nazywa się <span data-tooltip='Topical authority - autorytet tematyczny, czyli ocena, na ile strona jest ekspertem w danym temacie'>topical authority</span>. Im więcej powiązanych tematycznie treści, tym wyższy autorytet i tym chętniej Google pokazuje stronę na zapytania związane z tą branżą.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak Google ocenia strony lokalnych firm?</h2><p>Google nie wie, czy firma jest dobra w tym, co robi. Algorytm nie może ocenić, czy dentysta dobrze leczy zęby ani czy mechanik uczciwie wycenia naprawy. Zamiast tego Google ocenia sygnały, które świadczą o wiarygodności i ekspertyzie firmy.</p><br/><h3 class='h5 mb-3 mt-4'>Sygnały, które Google bierze pod uwagę</h3><p>Dla firm lokalnych kluczowe są: kompletność i aktywność profilu <span data-tooltip='Google Business Profile - profil firmy w Google, wcześniej Google Moja Firma'>Google Business Profile</span>, opinie klientów i odpowiedzi na nie, spójność danych NAP (nazwa, adres, telefon) w całym internecie, oraz - i tu pojawia się blog - jakość i zakres treści na stronie internetowej.</p><br/><p>Blog wpływa na ostatni z tych sygnałów. Strona z samym opisem usług ma ograniczoną ilość treści, którą Google może przeanalizować. Blog rozszerza tę treść o dodatkowe podstrony, które pokazują Google, że firma zna się na swojej branży.</p><br/><h3 class='h5 mb-3 mt-4'>Topical authority - autorytet tematyczny</h3><p>Google ocenia, czy strona jest autorytetem w danym temacie. Jeśli strona gabinetu stomatologicznego ma tylko 5 podstron (główna, o nas, usługi, cennik, kontakt), Google ma niewiele informacji o tym, czy gabinet zna się na stomatologii. Jeśli ta sama strona ma dodatkowo 20 artykułów odpowiadających na pytania pacjentów - jak często myć zęby, co jeść po wyrwaniu zęba, jak wygląda leczenie kanałowe - Google widzi, że strona szczegółowo pokrywa temat stomatologii.</p><br/><p>Ten mechanizm nazywa się <span data-tooltip='Topical authority - autorytet tematyczny, czyli ocena, na ile strona jest ekspertem w danym temacie'>topical authority</span>. Im więcej powiązanych tematycznie treści, tym wyższy autorytet i tym chętniej Google pokazuje stronę na zapytania związane z tą branżą.</p>",
           "breakAfter": true
         },
         {
@@ -1056,13 +1086,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Blog obniża koszt pozyskania klienta (CAC)</h2><p>Według badań Neil Patel Digital (2024):</p><br/><ul class='list-disc ml-5'><li>treści obniżają koszt pozyskania klienta o średnio 62%,</li><li>a klienci zdobyci dzięki edukacji są 3x bardziej lojalni.</li></ul><br/><p>Źródło: <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://neilpatel.com/blog/content-marketing-roi/'>Neil Patel: Content Marketing ROI</a></p><br/><p>Dlaczego koszt spada?</p><br/><p>Bo klient:</p><br/><ul class='list-disc ml-5'><li>sam Cię znajduje,</li><li>sam Cię wybiera,</li><li>nie musisz go przekonywać płatnymi reklamami,</li><li>nie musisz tłumaczyć pewnych zagadnień (już o nich przeczytał).</li></ul>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Blog obniża koszt pozyskania klienta (CAC)</h2><p>Według badań Neil Patel Digital (2024):</p><br/><ul class='list-disc ml-5'><li>treści obniżają koszt pozyskania klienta o średnio 62%,</li><li>a klienci zdobyci dzięki edukacji są 3x bardziej lojalni.</li></ul><br/><p>Źródło: <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://neilpatel.com/blog/content-marketing-roi/'>Neil Patel: Content Marketing ROI</a></p><br/><p>Dlaczego koszt spada?</p><br/><p>Bo klient:</p><br/><ul class='list-disc ml-5'><li>sam Cię znajduje,</li><li>sam Cię wybiera,</li><li>nie musisz go przekonywać płatnymi reklamami,</li><li>nie musisz tłumaczyć pewnych zagadnień (już o nich przeczytał).</li></ul>",
           "breakAfter": true
         },
         {
@@ -1076,13 +1106,13 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak zacząć prowadzić blog krok po kroku?</h2><p>Uruchomienie bloga na stronie firmowej nie wymaga dużych nakładów. Ważne jest jednak podejście strategiczne zamiast przypadkowego publikowania.</p><br/><p><strong>Krok 1: Zbierz tematy</strong></p><br/><p>Zanotuj 15-20 pytań, które najczęściej słyszysz od klientów. Sprawdź, czego szukają ludzie w Google (można to zrobić za pomocą <a class='inline-link' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a> lub bezpłatnych narzędzi jak AnswerThePublic). Każde pytanie to potencjalny artykuł.</p><br/><p><strong>Krok 2: Ustal harmonogram</strong></p><br/><p>Regularność jest ważniejsza niż częstotliwość. Lepiej publikować 2 artykuły miesięcznie przez cały rok niż 10 artykułów w pierwszym miesiącu i potem nic. Ustal realistyczny harmonogram, który jesteś w stanie utrzymać.</p><br/><p><strong>Krok 3: Zadbaj o podstawy SEO</strong></p><br/><p>Każdy artykuł powinien mieć dobrze napisany <a class='inline-link' href='/edukacja/seo/meta-title-i-description-jak-je-napisac'>meta title i description</a>, nagłówki H2 i H3 dzielące tekst na logiczne sekcje, oraz linki wewnętrzne do stron usługowych i innych artykułów. Artykuł powinien odpowiadać na konkretne pytanie - nie być ogólnikowym tekstem o wszystkim i niczym.</p><br/><p><strong>Krok 4: Połącz blog z profilem Google</strong></p><br/><p>Nowe artykuły warto promować za pomocą postów Google w <a class='inline-link' href='/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma'>profilu Google Moja Firma</a>. To bezpłatny sposób na zwiększenie widoczności treści i pokazanie Google, że firma jest aktywna.</p><br/><p><strong>Krok 5: Mierz efekty</strong></p><br/><p>Po 3-4 miesiącach regularnej publikacji sprawdź wyniki w <a class='inline-link' href='/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej'>analityce strony</a>. Zwróć uwagę na: liczbę wyświetleń z wyszukiwarki, pozycje na konkretne frazy kluczowe, czas spędzony na stronie i współczynnik odrzuceń. Te dane pokażą, które tematy przyciągają klientów i w jakim kierunku rozwijać blog.</p><br/><p><strong>Krok 6: Optymalizuj istniejące treści</strong></p><br/><p>Blog to nie tylko publikowanie nowych artykułów. Wracaj do starszych wpisów i aktualizuj je - dodawaj nowe informacje, poprawiaj <a class='inline-link' href='/uslugi/marketing/optymalizacja-seo'>optymalizację SEO</a>, uzupełniaj o linki do nowszych artykułów. Google preferuje treści aktualne i szczegółowe.</p>",
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak zacząć prowadzić blog krok po kroku?</h2><p>Uruchomienie bloga na stronie firmowej nie wymaga dużych nakładów. Ważne jest jednak podejście strategiczne zamiast przypadkowego publikowania.</p><br/><p><strong>Krok 1: Zbierz tematy</strong></p><br/><p>Zanotuj 15-20 pytań, które najczęściej słyszysz od klientów. Sprawdź, czego szukają ludzie w Google (można to zrobić za pomocą <a class='inline-link' href='https://search.google.com/search-console' target='_blank' rel='noopener noreferrer'>Google Search Console</a> lub bezpłatnych narzędzi jak AnswerThePublic). Każde pytanie to potencjalny artykuł.</p><br/><p><strong>Krok 2: Ustal harmonogram</strong></p><br/><p>Regularność jest ważniejsza niż częstotliwość. Lepiej publikować 2 artykuły miesięcznie przez cały rok niż 10 artykułów w pierwszym miesiącu i potem nic. Ustal realistyczny harmonogram, który jesteś w stanie utrzymać.</p><br/><p><strong>Krok 3: Zadbaj o podstawy SEO</strong></p><br/><p>Każdy artykuł powinien mieć dobrze napisany <a class='inline-link' href='/edukacja/seo/meta-title-i-description-jak-je-napisac'>meta title i description</a>, nagłówki H2 i H3 dzielące tekst na logiczne sekcje, oraz linki wewnętrzne do stron usługowych i innych artykułów. Artykuł powinien odpowiadać na konkretne pytanie - nie być ogólnikowym tekstem o wszystkim i niczym.</p><br/><p><strong>Krok 4: Połącz blog z profilem Google</strong></p><br/><p>Nowe artykuły warto promować za pomocą postów Google w <a class='inline-link' href='/edukacja/seo/jak-zalozyc-i-zoptymalizowac-profil-google-moja-firma'>profilu Google Moja Firma</a>. To bezpłatny sposób na zwiększenie widoczności treści i pokazanie Google, że firma jest aktywna.</p><br/><p><strong>Krok 5: Mierz efekty</strong></p><br/><p>Po 3-4 miesiącach regularnej publikacji sprawdź wyniki w <a class='inline-link' href='/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej'>analityce strony</a>. Zwróć uwagę na: liczbę wyświetleń z wyszukiwarki, pozycje na konkretne frazy kluczowe, czas spędzony na stronie i współczynnik odrzuceń. Te dane pokażą, które tematy przyciągają klientów i w jakim kierunku rozwijać blog.</p><br/><p><strong>Krok 6: Optymalizuj istniejące treści</strong></p><br/><p>Blog to nie tylko publikowanie nowych artykułów. Wracaj do starszych wpisów i aktualizuj je - dodawaj nowe informacje, poprawiaj <a class='inline-link' href='/uslugi/marketing/optymalizacja-seo'>optymalizację SEO</a>, uzupełniaj o linki do nowszych artykułów. Google preferuje treści aktualne i szczegółowe.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -1146,13 +1176,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego Google ocenia treść jako kluczowy czynnik SEO?</h2><p>Algorytm Google nieustannie analizuje miliardy stron. Każdą z nich ocenia pod kątem <strong>użyteczności</strong>, <strong>wiarygodności</strong> i <strong>dopasowania</strong> do zamiaru wyszukiwania użytkownika. Treść to sposób, w jaki robot Google może zrozumieć, o czym jest Twoja witryna.</p><br/><p><em>Tekst zoptymalizowany pod SEO</em> działa jak tłumacz między Tobą a Google: pomaga robotowi indeksującemu lepiej zrozumieć Twoją stronę i zdecydować, kiedy ją pokazać w wynikach wyszukiwania.</p><br/><p><em>Przykłady artykułów:</em></p><p><strong>Sklep zoologiczny</strong> - artykuł „Jak wybrać najlepszą karmę dla psa małej rasy?” nie tylko zawiera słowa kluczowe, ale też realnie odpowiada na pytanie użytkownika. Google widzi, że treść pomaga w podjęciu decyzji zakupowej, więc uznaje ją za wartościową.</p><p><strong>Gabinet psychoterapeutyczny</strong> - artykuł „Jak wygląda pierwsza wizyta u psychoterapeuty?” rozwiewa obawy czytelników i zwiększa czas spędzony na stronie.</p><p><strong>Usługi remontowe</strong> - artykuł „Jak przygotować mieszkanie do malowania?” pokazuje, że firma zna się na praktyce, co buduje autorytet.</p><p><strong>Sklep odzieżowy</strong> - artykuł „Jak dobrać płaszcz dla szczupłej sylwetki?” przyciąga ruch z Google nie tylko z frazy „płaszcz”, ale też z długich zapytań („płaszcz dla szczupłej sylwetki”).</p><br/><p>Google ocenia, czy strona realnie pomaga użytkownikom - to właśnie ten sygnał zwiększa pozycję strony w Google.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego Google ocenia treść jako kluczowy czynnik SEO?</h2><p>Algorytm Google nieustannie analizuje miliardy stron. Każdą z nich ocenia pod kątem <strong>użyteczności</strong>, <strong>wiarygodności</strong> i <strong>dopasowania</strong> do zamiaru wyszukiwania użytkownika. Treść to sposób, w jaki robot Google może zrozumieć, o czym jest Twoja witryna.</p><br/><p><em>Tekst zoptymalizowany pod SEO</em> działa jak tłumacz między Tobą a Google: pomaga robotowi indeksującemu lepiej zrozumieć Twoją stronę i zdecydować, kiedy ją pokazać w wynikach wyszukiwania.</p><br/><p><em>Przykłady artykułów:</em></p><p><strong>Sklep zoologiczny</strong> - artykuł „Jak wybrać najlepszą karmę dla psa małej rasy?” nie tylko zawiera słowa kluczowe, ale też realnie odpowiada na pytanie użytkownika. Google widzi, że treść pomaga w podjęciu decyzji zakupowej, więc uznaje ją za wartościową.</p><p><strong>Gabinet psychoterapeutyczny</strong> - artykuł „Jak wygląda pierwsza wizyta u psychoterapeuty?” rozwiewa obawy czytelników i zwiększa czas spędzony na stronie.</p><p><strong>Usługi remontowe</strong> - artykuł „Jak przygotować mieszkanie do malowania?” pokazuje, że firma zna się na praktyce, co buduje autorytet.</p><p><strong>Sklep odzieżowy</strong> - artykuł „Jak dobrać płaszcz dla szczupłej sylwetki?” przyciąga ruch z Google nie tylko z frazy „płaszcz”, ale też z długich zapytań („płaszcz dla szczupłej sylwetki”).</p><br/><p>Google ocenia, czy strona realnie pomaga użytkownikom - to właśnie ten sygnał zwiększa pozycję strony w Google.</p>",
           "breakAfter": true
         },
         {
@@ -1174,6 +1204,11 @@
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak pisać nagłówki, żeby zwiększyć pozycje w Google?</h2><p>Nagłówek to pierwszy element, który czyta i użytkownik i robot Google.<br/>Dobrze zbudowany nagłówek pełni rolę mostu między wyszukiwaniem a Twoją stroną.</p><br/><p><strong>Zasady skutecznych nagłówków:</strong></p><ul class='list-disc ml-5'><li>używaj naturalnego języka, zrozumiałego dla Twoich odbiorców i klientów (zamiast „Optymalizacja SEO stron firmowych” - „Jak poprawić widoczność Twojej strony w Google”);</li><li>dodawaj frazy kluczowe na początku zdania, ale w sposób naturalny („Jak pisać treść na stronie internetowej...”);</li><li>pisz nagłówki jako pytania - <strong>Google kocha pytania</strong>, bo odpowiadają intencjom wyszukiwania.</li></ul><br/><p><strong>Przykłady:</strong></p><p><strong>Sklep zoologiczny:</strong> „Jak karmić szczeniaka, żeby rósł zdrowo?”</p><p><strong>Gabinet psychoterapeutyczny:</strong> „Jak wygląda pierwsza sesja terapii?”</p><p><strong>Usługi remontowe:</strong> „Jak zaplanować remont kuchni?”</p><p><strong>Sklep odzieżowy:</strong> „Jak dobrać rozmiar płaszcza online?”</p><br/><p>Każdy z tych nagłówków zawiera słowo kluczowe, ale przede wszystkim zaprasza do czytania. To różnica między <em>treścią napisaną dla Google</em> a <em>treścią napisaną dla człowieka</em> - a najlepiej działa ta, która łączy oba cele.</p>",
           "breakAfter": true
@@ -1186,6 +1221,11 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak linkowanie wewnętrzne wpływa na pozycjonowanie strony w Google?</h2><p><strong>Linkowanie wewnętrzne</strong> to jeden z najprostszych sposobów, aby Google zrozumiał strukturę danej witryny i priorytety tematyczne. Każdy link w tekście to dla robota Google wskazówka, które strony są powiązane i najbardziej wartościowe.</p><br/><p>Dobrze zbudowany system linków działa jak mapa myśli dla Google. Pomaga zwiększyć widoczność całej witryny i ułatwia użytkownikowi poruszanie się po stronie.</p><br/><p><strong>Praktyczne zastosowanie:</strong></p><p><strong>Sklep zoologiczny:</strong> w artykule o diecie dla psów z alergią można dodać link do kategorii „Karma bez zbóż” oraz do poradnika „Jak rozpoznać nietolerancję pokarmową u psa”. Użytkownik ma więcej wiedzy, a Google rozumie, że wszystkie te strony tworzą spójny klaster tematyczny.</p><p><strong>Gabinet psychoterapeutyczny:</strong> tekst „Jak rozpoznać objawy wypalenia zawodowego” może linkować do strony usługi „Terapia indywidualna” oraz do artykułu „Jak radzić sobie ze stresem w pracy”.</p><p><strong>Usługi remontowe:</strong> poradnik „Jak zaprojektować kuchnię w bloku” może zawierać link do realizacji projektu oraz do formularza „Zamów bezpłatną wycenę remontu”.</p><p><strong>Sklep odzieżowy:</strong> w artykule „Jak dobrać kolor marynarki do spodni” warto dodać linki do produktów oraz do poradnika „Jak zbudować styl smart casual”.</p><br/><p>Google ocenia takie linki jako dowód <em>spójności tematycznej</em> i uznaje, że strona jest dobrze zorganizowana. To realnie zwiększa pozycję nie tylko poszczególnych stron a całej witryny.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -1212,13 +1252,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak Google ocenia jakość treści i czym są wartościowe treści zgodne z E-E-A-T?</h2><p>Wartościowa treść to taka, która łączy <strong>wiedzę</strong>, <strong>doświadczenie</strong> i <strong>zaufanie</strong>. Google stale rozwija swoje algorytmy, aby lepiej promować strony, które rzeczywiście pomagają użytkownikom.</p><br/><p><strong>Cztery filar E-E-A-T:</strong></p><p><strong>Doświadczenie (Experience)</strong> - pisz na podstawie realnych sytuacji, projektów, przykładów.</p><p>Sklep zoologiczny może wspomnieć o testach karm przez weterynarzy.<br/>Gabinet terapeutyczny - o praktyce klinicznej.<br/>Firma remontowa - o zrealizowanych inwestycjach.<br/>Sklep odzieżowy - o materiałach testowanych przez zespół.</p><p><strong>Eksperckość (Expertise)</strong> - pokaż wiedzę branżową. W tekście można wyjaśniać procesy, używać terminów branżowych tłumaczonych prostym językiem.</p><p>„Psychoterapia poznawczo-behawioralna” może brzmieć skomplikowanie, więc warto dodać prosty opis, co daje ona pacjentowi.<br/>„Farba lateksowa o wysokiej odporności” - w jednym zdaniu warto wyjaśnić dlaczego sprawdza się w łazience.</p><p><strong>Autorytet (Authoritativeness)</strong> - odwołuj się do badań, źródeł i własnych osiągnięć.</p><p>Cytaty od ekspertów czy linki do renomowanych portali branżowych zwiększają znacząco zaufanie Google.</p><p><strong>Wiarygodność (Trustworthiness)</strong> - dane kontaktowe, opinie, prawdziwe zdjęcia zespołu, certyfikaty.</p><p>Dla każdej branży to równie ważne jak treść. Google ocenia całe domeny, nie tylko podstrony.</p><br/><p>Treść zgodna z E-E-A-T sprawia, że Google uznaje Twoją stronę za pewne źródło informacji, dzięki czemu wykorzystujesz cały jej potencjał SEO. Efekt to nie tylko wyższe pozycje, ale także lepszy współczynnik kliknięć (CTR) i większe zaufanie czytelników.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak Google ocenia jakość treści i czym są wartościowe treści zgodne z E-E-A-T?</h2><p>Wartościowa treść to taka, która łączy <strong>wiedzę</strong>, <strong>doświadczenie</strong> i <strong>zaufanie</strong>. Google stale rozwija swoje algorytmy, aby lepiej promować strony, które rzeczywiście pomagają użytkownikom.</p><br/><p><strong>Cztery filar E-E-A-T:</strong></p><p><strong>Doświadczenie (Experience)</strong> - pisz na podstawie realnych sytuacji, projektów, przykładów.</p><p>Sklep zoologiczny może wspomnieć o testach karm przez weterynarzy.<br/>Gabinet terapeutyczny - o praktyce klinicznej.<br/>Firma remontowa - o zrealizowanych inwestycjach.<br/>Sklep odzieżowy - o materiałach testowanych przez zespół.</p><p><strong>Eksperckość (Expertise)</strong> - pokaż wiedzę branżową. W tekście można wyjaśniać procesy, używać terminów branżowych tłumaczonych prostym językiem.</p><p>„Psychoterapia poznawczo-behawioralna” może brzmieć skomplikowanie, więc warto dodać prosty opis, co daje ona pacjentowi.<br/>„Farba lateksowa o wysokiej odporności” - w jednym zdaniu warto wyjaśnić dlaczego sprawdza się w łazience.</p><p><strong>Autorytet (Authoritativeness)</strong> - odwołuj się do badań, źródeł i własnych osiągnięć.</p><p>Cytaty od ekspertów czy linki do renomowanych portali branżowych zwiększają znacząco zaufanie Google.</p><p><strong>Wiarygodność (Trustworthiness)</strong> - dane kontaktowe, opinie, prawdziwe zdjęcia zespołu, certyfikaty.</p><p>Dla każdej branży to równie ważne jak treść. Google ocenia całe domeny, nie tylko podstrony.</p><br/><p>Treść zgodna z E-E-A-T sprawia, że Google uznaje Twoją stronę za pewne źródło informacji, dzięki czemu wykorzystujesz cały jej potencjał SEO. Efekt to nie tylko wyższe pozycje, ale także lepszy współczynnik kliknięć (CTR) i większe zaufanie czytelników.</p>",
           "breakAfter": true
         },
         {
@@ -1240,6 +1280,11 @@
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak rozpoznać treść SEO, która działa - i dlaczego nie każda dobra treść zdobywa wysokie pozycje w Google?</h2><p>Dobra treść nie zawsze oznacza wysoką pozycję. Wysoko oceniana przez użytkowników treść może nie być wystarczająco dopasowana do algorytmu Google. Z kolei tekst przygotowany z myślą o SEO, pozbawiony wartości merytorycznej, również nie utrzyma się długo w wynikach.<br/>Google stale ocenia, jak użytkownicy reagują na stronę. Analizuje, jak długo pozostaje na niej, czy przewija treść, klika w linki i wraca do niej. Wszystkie te sygnały wpływają również na ranking.</p><br/><p><strong>Treść, która działa:</strong></p><ul class='list-disc ml-5'><li>odpowiada na konkretne pytanie użytkownika,</li><li>zawiera dane, przykłady i odniesienia do źródeł,</li><li>ma klarowną strukturę i logiczne nagłówki,</li><li>prowadzi użytkownika przez kolejne etapy decyzji.</li></ul><br/><p><strong>Treść, która traci widoczność:</strong></p><ul class='list-disc ml-5'><li>jest zbyt ogólna, bez konkretów,</li><li>powiela informacje z innych stron,</li><li>skupia się wyłącznie na słowach kluczowych,</li><li>nie aktualizuje się przez wiele miesięcy a nawet lat.</li></ul><br/><p>Google ocenia nie tylko sam tekst, ale także jego kontekst - otoczenie linków, jakość i szybkość ładowania strony, dane strukturalne czy doświadczenie autora. Dlatego skuteczna strategia SEO opiera się na regularnej analizie, aktualizacjach i zrozumieniu potrzeb odbiorcy.</p>",
           "breakAfter": true
@@ -1255,6 +1300,11 @@
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak reagować na aktualizacje algorytmów Google i utrzymać pozycje treści?</h2><p>Google regularnie wprowadza tzw. <strong>Core Updates</strong>, które zmieniają sposób oceny jakości treści. Najczęściej aktualizację dotykają stron z niskim poziomem wiarygodności lub przestarzałymi informacjami.</p><br/><p><strong>Jak zabezpieczyć treści:</strong></p><ul class='list-disc ml-5'><li>Analizuj dane w Google Search Console - sprawdzaj, które frazy tracą widoczność i rozbuduj tekst o nich.</li><li>Aktualizuj treści cyklicznie - co 3-6 miesięcy dodawaj nowe dane, przykłady, odświeżaj lub dodawaj nowe akapity.</li><li>Zwiększ głębię tematyczną - dodaj powiązane artykuły, które tworzą tematyczny klaster (np. „Jak pisać treści SEO” → „Jak dobrać słowa kluczowe” → „Jak optymalizować meta description”).</li><li>Zadbaj o źródła i linki - aktualne odniesienia do badań, raportów lub autorytetów branżowych podnoszą ocenę algorytmu.</li></ul><br/><p>Aktualizacje Google to nie kara, lecz szansa na poprawę treści. Strony, które reagują na zmiany, utrzymują stabilną pozycję przez lata.</p>",
           "breakAfter": true
@@ -1262,6 +1312,11 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak tworzyć treści SEO - praktyczne podsumowanie dla każdej branży?</h2><p>Tworzenie skutecznych treści SEO to proces, który łączy analizę, planowanie i regularne doskonalenie. Poniżej znajdziesz kompletną listę, którą można zastosować zarówno w sklepie zoologicznym, jak i w gabinecie terapeutycznym, firmie remontowej czy sklepie odzieżowym.</p><br/><h3 class='h5 mb-3 mt-4'>1. Zrozum intencję użytkownika</h3><p>Każda fraza w wyszukiwarce ma swój cel: informacyjny, transakcyjny lub nawigacyjny.</p><p>„Jak wybrać karmę dla psa” - użytkownik szuka wiedzy, więc stwórz poradnik.<br/>„Psychoterapia poznawczo-behawioralna Kraków” - użytkownik szuka usługi, więc przedstaw ofertę i zbuduj zaufanie.<br/>„Remont kuchni Kraków cennik” - użytkownik jest blisko decyzji, więc pokaż orientacyjne koszty i CTA.<br/>„Sukienki jesienne 2025” - użytkownik porównuje produkty, więc dodaj zdjęcia, linki i inspiracje.</p><p>Google interpretuje intencję i dopasowuje wyniki. Tekst zgodny z tą logiką szybciej zdobywa widoczność.</p><br/><h3 class='h5 mb-3 mt-4'>2. Zaplanuj strukturę nagłówków</h3><p>Dobrze zbudowany artykuł to mapa myśli - pomaga zarówno użytkownikowi, jak i robotowi Google zrozumieć temat.</p><ul class='list-disc ml-5'><li>Jeden główny H1 (tytuł z frazą kluczową).</li><li>8-12 H2 z pytaniami lub frazami tematycznymi.</li><li>Krótkie H3 tam, gdzie rozwijasz szczegóły.</li></ul><br/><p><strong>Przykład (sklep zoologiczny):</strong><br/>H1: Jak wybrać karmę dla psa z alergią<br/>H2: Czym kierować się przy wyborze karmy<br/>H2: Jakie składniki pomagają przy problemach skórnych<br/>H2: Najczęstsze błędy przy zmianie diety</p><p>Każdy nagłówek to mini-temat, który zwiększa widoczność w wynikach wyszukiwania Google i pozwala zdobywać tzw. pozycje long-tail.</p><br/><h3 class='h5 mb-3 mt-4'>3. Pisz pełne akapity z myślą o czytelności</h3><p>Google ocenia nie tylko słowa kluczowe, ale też sposób, w jaki tekst jest odbierany.</p><ul class='list-disc ml-5'><li>Używaj akapitów po 3-5 zdań.</li><li>Wpleć przykłady, dane i porównania.</li><li>Co 300-400 słów dodaj śródtytuł czy listę punktową.</li></ul><br/><h3 class='h5 mb-3 mt-4'>4. Zadbaj o linkowanie wewnętrzne i zewnętrzne</h3><p>Każdy link w tekście to most między treściami. Google widzi, które podstrony są ze sobą powiązane, i przekazuje im część autorytetu.</p><ul class='list-disc ml-5'><li>Linkuj do ofert i artykułów powiązanych tematycznie.</li><li>Używaj anchorów z opisem, np. „sprawdź audyt SEO”, a nie „kliknij tutaj”.</li><li>Raz na kilka akapitów dodaj odniesienie do źródła lub badania - to sygnał E-E-A-T.</li></ul><br/><p><strong>Przykład:</strong><br/>Artykuł o remontach może linkować do strony „Projekt kuchni na wymiar”, a sklep odzieżowy do „Poradnika stylizacji wiosennej”.</p><br/><h3 class='h5 mb-3 mt-4'>5. Dodaj dane, które uwiarygadniają treść</h3><p>Użytkownicy i Google lepiej reagują na treści poparte faktami.</p><ul class='list-disc ml-5'><li>Liczby: „Według danych GUS, koszt remontu mieszkania w 2025 roku wzrósł o 12%.”</li><li>Cytaty: „Jak podkreśla Polskie Towarzystwo Psychologiczne, regularna terapia poprawia jakość życia nawet o 40%.”</li><li>Trendy: „W 2025 roku rośnie liczba wyszukiwań frazy ‘odzież ekologiczna’ (Google Trends).”</li></ul><br/><p>Takie elementy nie tylko zwiększają wiarygodność, ale także wzmacniają kontekst semantyczny.</p><br/><h3 class='h5 mb-3 mt-4'>6. Stosuj meta tagi i opisy z wezwaniem do działania</h3><p>Tytuł i opis to pierwszy kontakt użytkownika z Twoją stroną.</p><ul class='list-disc ml-5'><li><strong>Meta title:</strong> do 60 znaków, z frazą na początku.</li><li><strong>Meta description:</strong> do 155 znaków, z zachętą do kliknięcia.</li></ul><br/><p><strong>Przykłady:</strong></p><p><strong>Sklep zoologiczny:</strong> „Jak wybrać karmę dla psa z alergią | Porady i ranking karm.”<br/><strong>Gabinet psychoterapeutyczny:</strong> „Psychoterapia w Krakowie - zobacz, jak wygląda pierwsze spotkanie.”<br/><strong>Usługi remontowe:</strong> „Remont mieszkania w Krakowie - ile kosztuje i jak zaplanować?”<br/><strong>Sklep odzieżowy:</strong> „Płaszcze zimowe 2025 - styl, komfort i funkcjonalność.”</p><br/><h3 class='h5 mb-3 mt-4'>7. Aktualizuj treści i monitoruj wyniki</h3><p>Pozycjonowanie stron internetowych to proces. Publikacja to dopiero początek.</p><ul class='list-disc ml-5'><li>Co 3-6 miesięcy aktualizuj dane, daty i linki.</li><li>Obserwuj raport „Wydajność” w Google Search Console.</li><li>Jeśli frazy spadają, rozbuduj lub dodaj akapit, wzbogacając go o dodatkowe synonimy.</li></ul><br/><p>Google lubi świeżość - aktualizowany tekst utrzymuje wysoką pozycję przez długi czas.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -1341,13 +1396,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak działa Google i dlaczego nie widzi strony?</h2><p>Algorytm Google korzysta z tzw. <strong>robota indeksującego</strong>, znanego jako <strong>Googlebot</strong>. Ten robot odwiedza domeny, czyta ich treść, analizuje linki i zapisuje dane w indeksie. Kiedy ktoś wpisuje zapytanie w wyszukiwarkę, algorytmy porównują setki miliardów stron i wybierają te, które najlepiej pasują do intencji użytkownika.</p><br/><p>Jeśli strony nie ma w Google, oznacza to, że algorytm:</p><br/><ul class='list-disc ml-5'><li>jeszcze jej nie znalazł (brak linków lub mapy),</li><li>nie może jej odczytać (blokada w pliku robots.txt lub noindex),</li><li>nie uznał jej za wartościową (za mało treści lub niska jej jakość).</li></ul>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak działa Google i dlaczego nie widzi strony?</h2><p>Algorytm Google korzysta z tzw. <strong>robota indeksującego</strong>, znanego jako <strong>Googlebot</strong>. Ten robot odwiedza domeny, czyta ich treść, analizuje linki i zapisuje dane w indeksie. Kiedy ktoś wpisuje zapytanie w wyszukiwarkę, algorytmy porównują setki miliardów stron i wybierają te, które najlepiej pasują do intencji użytkownika.</p><br/><p>Jeśli strony nie ma w Google, oznacza to, że algorytm:</p><br/><ul class='list-disc ml-5'><li>jeszcze jej nie znalazł (brak linków lub mapy),</li><li>nie może jej odczytać (blokada w pliku robots.txt lub noindex),</li><li>nie uznał jej za wartościową (za mało treści lub niska jej jakość).</li></ul>",
           "breakAfter": true
         },
         {
@@ -1412,37 +1467,18 @@
             }
           ],
           "rows": [
-            [
-              "Indeksacja",
-              "site:twojadomena.pl",
-              "Wyszukiwarka"
-            ],
-            [
-              "Plik robots.txt",
-              "Usuń Disallow: /",
-              "twojadomena.pl/robots.txt"
-            ],
-            [
-              "Meta tagi",
-              "Usuń noindex",
-              "Kod źródłowy strony"
-            ],
-            [
-              "Sitemap",
-              "Dodaj sitemap.xml",
-              "Google Search Console"
-            ],
-            [
-              "Błędy 404",
-              "Napraw przekierowania",
-              "GSC → Stan"
-            ],
-            [
-              "Prędkość strony",
-              "LCP < 2,5 s",
-              "PageSpeed Insights"
-            ]
+            ["Indeksacja", "site:twojadomena.pl", "Wyszukiwarka"],
+            ["Plik robots.txt", "Usuń Disallow: /", "twojadomena.pl/robots.txt"],
+            ["Meta tagi", "Usuń noindex", "Kod źródłowy strony"],
+            ["Sitemap", "Dodaj sitemap.xml", "Google Search Console"],
+            ["Błędy 404", "Napraw przekierowania", "GSC → Stan"],
+            ["Prędkość strony", "LCP < 2,5 s", "PageSpeed Insights"]
           ],
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -1462,11 +1498,6 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak linkowanie wpływa na pozycję strony internetowej?</h2><p>Dzięki linkom Google rozumie, które strony są ze sobą powiązane i które zasługują na zaufanie.</p><br/><h3 class='h5 mb-3 mt-4'>Linkowanie wewnętrzne</h3><ul class='list-disc ml-5'><li>Łącz podstrony tematycznie - np. z artykułu o SEO linkuj do oferty audytu SEO.</li><li>Używaj opisowych anchorów: zamiast „kliknij tutaj”, napisz „sprawdź audyt SEO”.</li><li>Dodaj linki bezpośrednio w tekście.</li></ul><br/><h3 class='h5 mb-3 mt-4'>Linkowanie zewnętrzne</h3><ul class='list-disc ml-5'><li>Odwołuj się do zaufanych źródeł,</li><li>Nie linkuj do niepewnych domen,</li><li>Pamiętaj, że linki dofollow przekazują moc SEO, a nofollow nie - ale nadal pomagają budować wiarygodność.</li></ul>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -1505,24 +1536,9 @@
             }
           ],
           "rows": [
-            [
-              "LCP",
-              "Largest Contentful Paint",
-              "czas wczytania głównej treści",
-              "&lt; 2,5 s"
-            ],
-            [
-              "INP",
-              "Interaction to Next Paint",
-              "czas reakcji na kliknięcia",
-              "&lt; 200 ms"
-            ],
-            [
-              "CLS",
-              "Cumulative Layout Shift",
-              "stabilność wizualna",
-              "&lt; 0,1"
-            ]
+            ["LCP", "Largest Contentful Paint", "czas wczytania głównej treści", "&lt; 2,5 s"],
+            ["INP", "Interaction to Next Paint", "czas reakcji na kliknięcia", "&lt; 200 ms"],
+            ["CLS", "Cumulative Layout Shift", "stabilność wizualna", "&lt; 0,1"]
           ]
         },
         {
@@ -1533,6 +1549,11 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak sprawdzić, czy strona jest przyjazna dla urządzeń mobilnych?</h2><p>Od kilku lat Google stosuje mobile-first indexing - oznacza to, że ocenia stronę głównie na podstawie wersji mobilnej.<br/>Jeśli Twoja strona nie działa poprawnie na telefonach, może nie pojawiać się w wynikach wyszukiwania, nawet jeśli wersja komputerowa wygląda świetnie.</p><br/><p><strong>Jak to sprawdzić:</strong></p><ul class='list-disc ml-5'><br/><li>Wejdź na Mobile-Friendly Test.</li><br/><li>Wklej adres strony i kliknij „Testuj URL”.</li><br/><li>Jeśli zobaczysz komunikat „Strona jest przyjazna dla urządzeń mobilnych” - wszystko w porządku.</li><br/><li>Jeśli pojawią się błędy (np. „Treść szersza niż ekran” lub „Zbyt mały tekst”), przeprojektuj układ lub powiększ fonty.</li></ul><br/><p>💡 <em>Wersja mobilna to dziś standard, nie dodatek. Brak responsywności automatycznie obniży widoczność w wynikach wyszukiwania.</em></p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -1568,56 +1589,16 @@
             }
           ],
           "rows": [
-            [
-              "Indeksacja",
-              "Czy strona jest w indeksie (site:twojadomena.pl)?",
-              "Wyszukiwarka Google"
-            ],
-            [
-              "Plik robots.txt",
-              "Brak blokady Disallow: /",
-              "twojadomena.pl/robots.txt"
-            ],
-            [
-              "Mapa witryny (sitemap.xml)",
-              "Aktualna, zgłoszona do GSC",
-              "Google Search Console"
-            ],
-            [
-              "Błędy 404 / 500",
-              "Napraw przekierowania 301",
-              "GSC → Stan"
-            ],
-            [
-              "Meta tagi",
-              "Usuń noindex, dodaj canonical",
-              "Kod strony"
-            ],
-            [
-              "Szybkość strony",
-              "LCP < 2,5 s, INP < 200 ms",
-              "PageSpeed Insights"
-            ],
-            [
-              "Mobile-Friendly",
-              "Popraw czytelność na smartfonach",
-              "Mobile-Friendly Test"
-            ],
-            [
-              "Dane strukturalne",
-              "Article / FAQPage / Organization",
-              "Rich Results Test"
-            ],
-            [
-              "Duplikaty treści",
-              "Usuń powielone teksty",
-              "Ahrefs / Screaming Frog"
-            ],
-            [
-              "Linki zewnętrzne",
-              "Jakość i kontekst",
-              "Ahrefs / Semrush"
-            ]
+            ["Indeksacja", "Czy strona jest w indeksie (site:twojadomena.pl)?", "Wyszukiwarka Google"],
+            ["Plik robots.txt", "Brak blokady Disallow: /", "twojadomena.pl/robots.txt"],
+            ["Mapa witryny (sitemap.xml)", "Aktualna, zgłoszona do GSC", "Google Search Console"],
+            ["Błędy 404 / 500", "Napraw przekierowania 301", "GSC → Stan"],
+            ["Meta tagi", "Usuń noindex, dodaj canonical", "Kod strony"],
+            ["Szybkość strony", "LCP < 2,5 s, INP < 200 ms", "PageSpeed Insights"],
+            ["Mobile-Friendly", "Popraw czytelność na smartfonach", "Mobile-Friendly Test"],
+            ["Dane strukturalne", "Article / FAQPage / Organization", "Rich Results Test"],
+            ["Duplikaty treści", "Usuń powielone teksty", "Ahrefs / Screaming Frog"],
+            ["Linki zewnętrzne", "Jakość i kontekst", "Ahrefs / Semrush"]
           ],
           "breakAfter": true
         },
@@ -1629,6 +1610,11 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Podsumowanie - jak sprawić, by strona była widoczna w Google</h2><p>Widoczność w wyszukiwarce Google nie jest dziełem przypadku.<br/>To wynik połączenia <strong>techniki, treści i zaufania.</strong></p><br/><p>Aby Twoja strona internetowa regularnie pojawiała się w wynikach wyszukiwania, wykonaj te kroki w kolejności:</p><br/><ol class='list-decimal ml-5'><li><strong>Sprawdź zaindeksowane strony</strong> - upewnij się, że Google ma dostęp do danej witryny (polecenie site:twojadomena.pl).</li><li><strong>Napraw błędy techniczne</strong> - usuń blokady robots.txt, meta noindex i przekierowania łańcuchowe.</li><li><strong>Dodaj i zgłoś sitemap.xml</strong> - w GSC → „Mapy witryn”.</li><li><strong>Popraw strukturę i linkowanie</strong> - każda strona powinna prowadzić do innych ważnych podstron.</li><li><strong>Optymalizuj treść</strong> - pisz jasno, z przykładami, używaj nagłówków z pytaniami.</li><li><strong>Zadbaj o szybkość i mobile</strong> - Google ocenia realne dane użytkowników (Core Web Vitals).</li><li><strong>Buduj zaufanie</strong> - zdobywaj linki zewnętrzne, opinie, aktualizuj treści.</li></ol><br/><p>Pamiętaj: pozycjonowanie stron (SEO) nie działa z dnia na dzień.<br/>Google potrzebuje czasu, by zaufać nowej witrynie i powiązać ją z konkretnymi zapytaniami.<br/>Ale jeśli zastosujesz powyższe kroki, Twoja strona zacznie pojawiać się coraz częściej - nie tylko na nazwę marki, lecz także na frazy sprzedażowe i informacyjne.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {

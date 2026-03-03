@@ -91,8 +91,14 @@ function projectLastmodFromFiles(slug) {
 
 function readBlog() {
   try {
-    const blog = require('./data/pl/blog.json');
-    return Array.isArray(blog.articles) ? blog.articles : [];
+    const blogDir = path.join(process.cwd(), 'data', 'pl', 'blog');
+    const catFiles = fs.readdirSync(blogDir).filter((f) => f.endsWith('.json') && f !== '_index.json');
+    const all = [];
+    for (const f of catFiles) {
+      const data = JSON.parse(fs.readFileSync(path.join(blogDir, f), 'utf8'));
+      all.push(...(data.articles || []));
+    }
+    return all;
   } catch {
     return [];
   }
@@ -103,7 +109,7 @@ function primaryCategorySlug(article) {
 }
 function articleAssetsLastmod(article) {
   const slug = article.slug;
-  const candidates = fg.sync([`content/blog/${slug}.mdx`, `content/blog/${slug}/**/*`, `public/assets/blog/${slug}/**/*`, `data/pl/blog.json`], { dot: false });
+  const candidates = fg.sync([`content/blog/${slug}.mdx`, `content/blog/${slug}/**/*`, `public/assets/blog/${slug}/**/*`, `data/pl/blog/*.json`], { dot: false });
 
   let newest = null;
   for (const rel of candidates) {

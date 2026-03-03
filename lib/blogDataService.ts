@@ -16,9 +16,8 @@
  * Przed dodaniem nowego artykułu sprawdź checklistę w INSTRUCTIONS.md
  *
  * ARCHITEKTURA DANYCH:
- * - data/pl/blog/_index.json  — lekki indeks (~50 KB) z ArticlePreview[]
- * - data/pl/blog/{cat}.json   — pełne artykuły per primaryCategory (lazy load)
- * - data/pl/blog.json         — źródło prawdy (generuje split via scripts/split-blog.cjs)
+ * - data/pl/blog/{cat}.json   — źródło prawdy, pełne artykuły per primaryCategory
+ * - data/pl/blog/_index.json  — lekki indeks (~50 KB) z ArticlePreview[] (generowany przez scripts/split-blog.cjs)
  */
 
 import { readFileSync } from 'fs';

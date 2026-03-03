@@ -24,13 +24,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Skąd biorą się błędy 404?</h2><p>Błąd 404 pojawia się w kilku sytuacjach. Żeby zrozumieć, czy wymaga reakcji, trzeba najpierw wiedzieć, skąd się wziął.</p><br/><h3 class='h5 mb-3 mt-4'>Strona została usunięta lub przeniesiona</h3><p>Gdy usuwasz stronę ze swojej witryny lub zmieniasz jej adres, wszystkie linki prowadzące do starego adresu przestają działać. Dotyczy to <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>linków wewnętrznych</a>, linków z zewnętrznych serwisów, zakładek użytkowników i wyników wyszukiwania Google.</p><br/><p>Rozwiązanie: przekierowanie 301. To ustawienie, które mówi przeglądarce i Google: ta strona jest teraz pod innym adresem. Przeglądarka automatycznie przenosi użytkownika w nowe miejsce.</p><br/><h3 class='h5 mb-3 mt-4'>Literówka w adresie</h3><p>Użytkownik może błędnie wpisać adres w pasku przeglądarki. Może też kliknąć link, który ktoś źle skopiował. W obu przypadkach żądanie trafia pod adres, który nigdy nie istniał.</p><br/><h3 class='h5 mb-3 mt-4'>Zmiana struktury witryny</h3><p>Przy redesignie, zmianie systemu (np. z WordPress na inny CMS) lub reorganizacji treści często zmieniają się adresy URL. Jeśli nowa struktura nie uwzględnia przekierowań ze starych adresów, wszystkie historyczne linki przestają działać. </p><br/><h3 class='h5 mb-3 mt-4'>Wycofany produkt w sklepie</h3><p>W sklepach internetowych usunięcie produktu z katalogu powoduje błąd 404 na jego stronie. Jeśli produkt był linkowany z innych stron, kampanii reklamowych lub wyników wyszukiwania, użytkownicy trafią na błąd. </p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Skąd biorą się błędy 404?</h2><p>Błąd 404 pojawia się w kilku sytuacjach. Żeby zrozumieć, czy wymaga reakcji, trzeba najpierw wiedzieć, skąd się wziął.</p><br/><h3 class='h5 mb-3 mt-4'>Strona została usunięta lub przeniesiona</h3><p>Gdy usuwasz stronę ze swojej witryny lub zmieniasz jej adres, wszystkie linki prowadzące do starego adresu przestają działać. Dotyczy to <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>linków wewnętrznych</a>, linków z zewnętrznych serwisów, zakładek użytkowników i wyników wyszukiwania Google.</p><br/><p>Rozwiązanie: przekierowanie 301. To ustawienie, które mówi przeglądarce i Google: ta strona jest teraz pod innym adresem. Przeglądarka automatycznie przenosi użytkownika w nowe miejsce.</p><br/><h3 class='h5 mb-3 mt-4'>Literówka w adresie</h3><p>Użytkownik może błędnie wpisać adres w pasku przeglądarki. Może też kliknąć link, który ktoś źle skopiował. W obu przypadkach żądanie trafia pod adres, który nigdy nie istniał.</p><br/><h3 class='h5 mb-3 mt-4'>Zmiana struktury witryny</h3><p>Przy redesignie, zmianie systemu (np. z WordPress na inny CMS) lub reorganizacji treści często zmieniają się adresy URL. Jeśli nowa struktura nie uwzględnia przekierowań ze starych adresów, wszystkie historyczne linki przestają działać. </p><br/><h3 class='h5 mb-3 mt-4'>Wycofany produkt w sklepie</h3><p>W sklepach internetowych usunięcie produktu z katalogu powoduje błąd 404 na jego stronie. Jeśli produkt był linkowany z innych stron, kampanii reklamowych lub wyników wyszukiwania, użytkownicy trafią na błąd. </p>",
           "breakAfter": true
         },
         {
@@ -66,6 +66,11 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czy błędy 404 wpływają na pozycję w Google?</h2><p>Krótka odpowiedź: same w sobie nie. Google traktuje błędy 404 jako normalną część funkcjonowania witryny. Strony są usuwane, przenoszone, zmieniane - to naturalne.</p><br/><p>Ale są sytuacje, gdy błąd 404 może mieć wpływ na SEO:</p><br/><h3 class='h5 mb-3 mt-4'>Utrata linków z innych witryn</h3><p>Jeśli usunięta strona miała linki z innych serwisów (tzw. linki zwrotne), a nie ustawisz przekierowania, ta wartość przepada. Linki zwrotne to jeden z czynników, które Google bierze pod uwagę przy ocenie strony.</p><br/><h3 class='h5 mb-3 mt-4'>Soft 404</h3><p>Strony zwracające kod 200 zamiast 404 mogą być indeksowane jako strony niskiej jakości. Google może obniżyć ogólną ocenę witryny, jeśli znajdzie wiele takich stron.</p><br/><h3 class='h5 mb-3 mt-4'>Masowe błędy po migracji</h3><p>Setki lub tysiące błędów 404 po zmianie struktury witryny mogą sygnalizować Google problemy z jakością. Rozwiązanie: przygotuj mapę przekierowań przed migracją. <a class='inline-link' href='/uslugi/marketing/audyt-seo'>Audyt SEO</a> może pomóc zidentyfikować takie problemy.</p><br/><p>W praktyce dla większości witryn pojedyncze błędy 404 nie stanowią problemu. Problem pojawia się, gdy dotyczą stron z wartościowymi linkami lub występują masowo.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -135,13 +140,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak działają aktualizacje WordPressa?</h2><p>WordPress składa się z trzech części: rdzenia (core), motywów i wtyczek. Każda z nich jest aktualizowana osobno. Każda może też zawierać luki w ochronie.</p><br/><h3 class='h5 mb-3 mt-4'>Rdzeń WordPressa</h3><p>Rdzeń to główny kod systemu. Obsługuje logowanie, treści, media i inne kluczowe funkcje. Zespół WordPress wydaje dwa typy aktualizacji:</p><br/><ul class='list-disc ml-5'><li><strong>Aktualizacje główne</strong> (np. 6.4, 6.5) - dodają nowe funkcje i zmiany w interfejsie. Wychodzą kilka razy w roku.</li><li><strong>Aktualizacje ochrony</strong> (np. 6.4.1, 6.4.2) - naprawiają wykryte luki i błędy. Wychodzą w miarę potrzeb, czasem kilka w miesiącu.</li></ul><br/><p>Od wersji 3.7 WordPress sam instaluje poprawki ochrony dla rdzenia. Aktualizacje główne wymagają ręcznej decyzji.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak działają aktualizacje WordPressa?</h2><p>WordPress składa się z trzech części: rdzenia (core), motywów i wtyczek. Każda z nich jest aktualizowana osobno. Każda może też zawierać luki w ochronie.</p><br/><h3 class='h5 mb-3 mt-4'>Rdzeń WordPressa</h3><p>Rdzeń to główny kod systemu. Obsługuje logowanie, treści, media i inne kluczowe funkcje. Zespół WordPress wydaje dwa typy aktualizacji:</p><br/><ul class='list-disc ml-5'><li><strong>Aktualizacje główne</strong> (np. 6.4, 6.5) - dodają nowe funkcje i zmiany w interfejsie. Wychodzą kilka razy w roku.</li><li><strong>Aktualizacje ochrony</strong> (np. 6.4.1, 6.4.2) - naprawiają wykryte luki i błędy. Wychodzą w miarę potrzeb, czasem kilka w miesiącu.</li></ul><br/><p>Od wersji 3.7 WordPress sam instaluje poprawki ochrony dla rdzenia. Aktualizacje główne wymagają ręcznej decyzji.</p>",
           "breakAfter": true
         },
         {
@@ -237,8 +242,18 @@
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest kontrast kolorów i dlaczego ma znaczenie dla użytkowników?</h2><p>Kontrast kolorów to miara różnicy jasności między dwoma kolorami. Wyrażany jest jako stosunek - na przykład 4.5:1 lub 21:1. Skala idzie od 1:1 (brak kontrastu, np. biały tekst na białym tle - niewidoczny) do 21:1 (maksymalny kontrast, np. czarny tekst na czystej bieli). Im wyższa pierwsza liczba, tym większa różnica jasności i tym łatwiej odróżnić jeden kolor od drugiego.</p><br/><h3 class='h5 mb-3 mt-4'>Jak obliczany jest kontrast?</h3><p>Wytyczne WCAG używają pojęcia <abbr title='Relative luminance - względna jasność koloru w skali od 0 (czerń) do 1 (biel), uwzględniająca sposób, w jaki ludzkie oko postrzega różne długości fal światła' class='underline decoration-dotted cursor-help'>relative luminance</abbr> (względnej jasności). To wartość od 0 (czerń) do 1 (biel), która określa, jak jasny jest kolor z perspektywy ludzkiego oka. Wzór uwzględnia fakt, że oko różnie reaguje na czerwień, zieleń i niebieskość - zieleń postrzegamy jako jaśniejszą niż niebieskość przy tej samej intensywności.</p><br/><p>Współczynnik kontrastu oblicza się według wzoru: (L1 + 0.05) / (L2 + 0.05), gdzie L1 to jasność jaśniejszego koloru, a L2 ciemniejszego. Wartość 0.05 to korekta zapobiegająca dzieleniu przez zero i uwzględniająca rozproszenie światła na ekranach.</p><br/><p>Nie musisz znać tego wzoru, żeby sprawdzić kontrast - wystarczy użyć narzędzia takiego jak nasz <a class='inline-link' href='/narzedzia/kontrast-i-czytelnosc-kolorow'>tester kontrastu kolorów WCAG</a>, który oblicza wszystko automatycznie.</p><br/><h3 class='h5 mb-3 mt-4'>Dlaczego kontrast ma znaczenie?</h3><p>Strona restauracji z menu zapisanym jasnoszarym tekstem na białym tle może być czytelna dla osoby z dobrym wzrokiem, siedzącej w zacienionym pokoju przed wysokiej jakości monitorem. Ale dla kogoś, kto przegląda tę samą stronę na telefonie w pełnym słońcu, tekst może być praktycznie niewidoczny. A dla osoby z osłabionym wzrokiem - nieczytelny nawet w idealnych warunkach.</p><br/><p>Kontrast wpływa na:</p><br/><ul class='list-disc ml-5'><li><strong>Czytelność</strong> - użytkownik musi być w stanie przeczytać tekst bez wysiłku i bez mrużenia oczu</li><li><strong>Szybkość skanowania strony</strong> - dobry kontrast pozwala szybko znaleźć najważniejsze informacje, nagłówki i przyciski</li><li><strong>Dostępność</strong> - osoby z wadami wzroku, daltonizmem czy osłabionym wzrokiem mogą korzystać ze strony na równi z innymi</li><li><strong>Komfort długotrwałego użytkowania</strong> - słaby kontrast wymusza mrużenie oczu i powoduje szybsze zmęczenie wzroku</li><li><strong>Konwersję</strong> - jeśli użytkownik nie widzi przycisku lub nie może przeczytać ceny, nie dokona zakupu</li></ul><br/><p>O tym, jak kolory wpływają na decyzje użytkowników i ich emocje, piszemy szczegółowo w artykule <a class='inline-link' href='/edukacja/grafika/jak-kolorystyka-wplywa-na-decyzje-zakupowe-klientow'>jak kolorystyka wpływa na decyzje zakupowe klientów</a>.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Kto korzysta z dobrego kontrastu?</h2><p>Dobry kontrast kolorów to nie tylko kwestia dostępności dla osób z niepełnosprawnościami. To udogodnienie, z którego korzysta znacznie więcej użytkowników, niż mogłoby się wydawać - w tym prawdopodobnie Ty sam w pewnych sytuacjach.</p><br/><h3 class='h5 mb-3 mt-4'>Osoby słabowidzące</h3><p>Według danych <a class='underline' href='https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment' target='_blank' rel='noopener noreferrer'>Światowej Organizacji Zdrowia (WHO)</a> około 2,2 miliarda ludzi na świecie ma jakąś formę zaburzenia widzenia. Większość z nich to osoby słabowidzące, które mogą korzystać z internetu, ale potrzebują odpowiedniego kontrastu, żeby odczytać tekst. W Polsce, według <a class='underline' href='https://stat.gov.pl/' target='_blank' rel='noopener noreferrer'>GUS</a>, około 1,8 miliona osób ma orzeczenie o niepełnosprawności wzrokowej.</p><br/><h3 class='h5 mb-3 mt-4'>Osoby z daltonizmem</h3><p><abbr title='Zaburzenie widzenia kolorów, najczęściej dziedziczne, polegające na trudności w rozróżnianiu niektórych barw' class='underline decoration-dotted cursor-help'>Daltonizm</abbr> dotyka około 8% mężczyzn i 0,5% kobiet (<a class='underline' href='https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness' target='_blank' rel='noopener noreferrer'>źródło: National Eye Institute</a>). Najczęstsza forma to <abbr title='Deuteranopia i protanopia - zaburzenia rozróżniania czerwieni i zieleni' class='underline decoration-dotted cursor-help'>zaburzenie rozpoznawania czerwieni i zieleni</abbr>. Dla tych osób kontrast jasności jest często ważniejszy niż sam kolor. Mogą nie widzieć różnicy między czerwonym a zielonym przyciskiem, ale zobaczą różnicę, jeśli jeden jest ciemny, a drugi jasny. Dlatego nigdy nie polegaj wyłącznie na kolorze do przekazania informacji - zawsze dodawaj tekst, ikonę lub różnicę jasności.</p><br/><h3 class='h5 mb-3 mt-4'>Seniorzy</h3><p>Wraz z wiekiem pogarsza się zdolność rozróżniania kolorów i kontrastu. Według badań opublikowanych w <a class='underline' href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2685175/' target='_blank' rel='noopener noreferrer'>National Institutes of Health</a> osoba w wieku 60 lat potrzebuje średnio 3 razy więcej kontrastu niż 20-latek, żeby odczytać ten sam tekst. Soczewka oka żółknie z wiekiem, co zmniejsza ilość światła docierającego do siatkówki i obniża percepcję kontrastu. To naturalna część starzenia się, dotykająca każdego z nas - strona, która dziś wydaje Ci się czytelna, za 20-30 lat może być trudna do odczytania.</p><br/><h3 class='h5 mb-3 mt-4'>Użytkownicy w trudnych warunkach</h3><p>Każdy, kto kiedykolwiek próbował przeczytać coś na telefonie w pełnym słońcu, wie, jak ważny jest kontrast. Podobnie w przypadku starszych lub słabszych monitorów, źle skalibrowanych ekranów, pracy w jasno oświetlonym biurze z odbiciami na ekranie, czy korzystania z projektora w sali konferencyjnej. W takich warunkach nawet tekst spełniający minimalne wymagania WCAG AA może być trudny do odczytania.</p><br/><h3 class='h5 mb-3 mt-4'>Osoby zmęczone</h3><p>Zmęczenie oczu obniża zdolność rozróżniania kontrastu. Po całym dniu pracy przed monitorem tekst o słabym kontraście staje się trudniejszy do odczytania. Dotyczy to praktycznie każdego użytkownika w pewnych momentach dnia - dlatego dobry kontrast to nie tylko dostępność, ale także komfort użytkowania dla wszystkich.</p>",
           "breakAfter": true
         },
         {
@@ -248,22 +263,11 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Kto korzysta z dobrego kontrastu?</h2><p>Dobry kontrast kolorów to nie tylko kwestia dostępności dla osób z niepełnosprawnościami. To udogodnienie, z którego korzysta znacznie więcej użytkowników, niż mogłoby się wydawać - w tym prawdopodobnie Ty sam w pewnych sytuacjach.</p><br/><h3 class='h5 mb-3 mt-4'>Osoby słabowidzące</h3><p>Według danych <a class='underline' href='https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment' target='_blank' rel='noopener noreferrer'>Światowej Organizacji Zdrowia (WHO)</a> około 2,2 miliarda ludzi na świecie ma jakąś formę zaburzenia widzenia. Większość z nich to osoby słabowidzące, które mogą korzystać z internetu, ale potrzebują odpowiedniego kontrastu, żeby odczytać tekst. W Polsce, według <a class='underline' href='https://stat.gov.pl/' target='_blank' rel='noopener noreferrer'>GUS</a>, około 1,8 miliona osób ma orzeczenie o niepełnosprawności wzrokowej.</p><br/><h3 class='h5 mb-3 mt-4'>Osoby z daltonizmem</h3><p><abbr title='Zaburzenie widzenia kolorów, najczęściej dziedziczne, polegające na trudności w rozróżnianiu niektórych barw' class='underline decoration-dotted cursor-help'>Daltonizm</abbr> dotyka około 8% mężczyzn i 0,5% kobiet (<a class='underline' href='https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness' target='_blank' rel='noopener noreferrer'>źródło: National Eye Institute</a>). Najczęstsza forma to <abbr title='Deuteranopia i protanopia - zaburzenia rozróżniania czerwieni i zieleni' class='underline decoration-dotted cursor-help'>zaburzenie rozpoznawania czerwieni i zieleni</abbr>. Dla tych osób kontrast jasności jest często ważniejszy niż sam kolor. Mogą nie widzieć różnicy między czerwonym a zielonym przyciskiem, ale zobaczą różnicę, jeśli jeden jest ciemny, a drugi jasny. Dlatego nigdy nie polegaj wyłącznie na kolorze do przekazania informacji - zawsze dodawaj tekst, ikonę lub różnicę jasności.</p><br/><h3 class='h5 mb-3 mt-4'>Seniorzy</h3><p>Wraz z wiekiem pogarsza się zdolność rozróżniania kolorów i kontrastu. Według badań opublikowanych w <a class='underline' href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2685175/' target='_blank' rel='noopener noreferrer'>National Institutes of Health</a> osoba w wieku 60 lat potrzebuje średnio 3 razy więcej kontrastu niż 20-latek, żeby odczytać ten sam tekst. Soczewka oka żółknie z wiekiem, co zmniejsza ilość światła docierającego do siatkówki i obniża percepcję kontrastu. To naturalna część starzenia się, dotykająca każdego z nas - strona, która dziś wydaje Ci się czytelna, za 20-30 lat może być trudna do odczytania.</p><br/><h3 class='h5 mb-3 mt-4'>Użytkownicy w trudnych warunkach</h3><p>Każdy, kto kiedykolwiek próbował przeczytać coś na telefonie w pełnym słońcu, wie, jak ważny jest kontrast. Podobnie w przypadku starszych lub słabszych monitorów, źle skalibrowanych ekranów, pracy w jasno oświetlonym biurze z odbiciami na ekranie, czy korzystania z projektora w sali konferencyjnej. W takich warunkach nawet tekst spełniający minimalne wymagania WCAG AA może być trudny do odczytania.</p><br/><h3 class='h5 mb-3 mt-4'>Osoby zmęczone</h3><p>Zmęczenie oczu obniża zdolność rozróżniania kontrastu. Po całym dniu pracy przed monitorem tekst o słabym kontraście staje się trudniejszy do odczytania. Dotyczy to praktycznie każdego użytkownika w pewnych momentach dnia - dlatego dobry kontrast to nie tylko dostępność, ale także komfort użytkowania dla wszystkich.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Standard WCAG: co oznaczają poziomy AA i AAA?</h2><p><abbr title='Web Content Accessibility Guidelines - wytyczne dostępności treści internetowych, opracowane przez W3C' class='underline decoration-dotted cursor-help'>WCAG</abbr> (Web Content Accessibility Guidelines) to międzynarodowe wytyczne dostępności stron internetowych opracowane przez organizację <abbr title='World Wide Web Consortium - międzynarodowa organizacja standaryzująca technologie webowe' class='underline decoration-dotted cursor-help'>W3C</abbr>. Aktualna wersja to WCAG 2.1, a w przygotowaniu jest WCAG 2.2. Wytyczne określają minimalne wartości kontrastu, które strona powinna spełniać, żeby być czytelna dla jak największej liczby użytkowników.</p><br/><h3 class='h5 mb-3 mt-4'>Poziom AA - standard minimalny</h3><p>Poziom AA to minimum wymagane przez większość przepisów prawnych dotyczących dostępności - w tym <a class='underline' href='https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX%3A32016L2102' target='_blank' rel='noopener noreferrer'>dyrektywę Unii Europejskiej o dostępności stron internetowych</a> (2016/2102) oraz <a class='underline' href='https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20190000848' target='_blank' rel='noopener noreferrer'>polską Ustawę o dostępności cyfrowej</a>. Od czerwca 2025 roku wymogi te rozszerzą się na sektor prywatny dzięki <a class='underline' href='https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX%3A32019L0882' target='_blank' rel='noopener noreferrer'>European Accessibility Act</a>.</p><br/><p>Wymagania dla poziomu AA:</p><br/><ul class='list-disc ml-5'><li><strong>Tekst zwykły:</strong> kontrast co najmniej 4.5:1</li><li><strong>Tekst duży (18pt+ lub 14pt pogrubiony):</strong> kontrast co najmniej 3:1</li><li><strong>Elementy graficzne UI (ikony, przyciski, pola formularzy):</strong> kontrast co najmniej 3:1 (kryterium 1.4.11)</li></ul><br/><h3 class='h5 mb-3 mt-4'>Co to jest duży tekst?</h3><p>Według WCAG duży tekst to tekst o rozmiarze co najmniej 18pt (24px) lub tekst pogrubiony o rozmiarze co najmniej 14pt (około 18.5px). Duży tekst ma niższe wymagania kontrastu, ponieważ większe litery są łatwiejsze do odczytania nawet przy słabszym kontraście.</p><br/><h3 class='h5 mb-3 mt-4'>Poziom AAA - standard rozszerzony</h3><p>Poziom AAA zapewnia lepszą czytelność dla osób z poważniejszymi wadami wzroku. Nie jest wymagany prawnie, ale warto go rozważyć dla kluczowych elementów strony (nagłówki, CTA, informacje o cenach) oraz gdy grupa docelowa obejmuje seniorów lub osoby z problemami ze wzrokiem:</p><br/><ul class='list-disc ml-5'><li><strong>Tekst zwykły:</strong> kontrast co najmniej 7:1</li><li><strong>Tekst duży:</strong> kontrast co najmniej 4.5:1</li></ul><br/><h3 class='h5 mb-3 mt-4'>Co to oznacza w praktyce?</h3><p>Czarny tekst (#000000) na białym tle (#ffffff) ma kontrast 21:1 - maksymalną możliwą wartość. Ciemnoszary tekst (#333333) na białym tle ma kontrast około 12:1 - nadal bardzo dobry i spełniający oba poziomy. Natomiast jasnoszary tekst (#999999) na białym tle ma kontrast tylko 2.8:1 - nie spełnia nawet minimalnego poziomu AA dla zwykłego tekstu.</p><br/><p>Kilka przykładów popularnych kombinacji i ich kontrastów:</p><br/><ul class='list-disc ml-5'><li>#333333 na #ffffff: 12.6:1 (AA ✓, AAA ✓)</li><li>#666666 na #ffffff: 5.7:1 (AA ✓, AAA ✗)</li><li>#767676 na #ffffff: 4.5:1 (AA ✓ - minimalny, AAA ✗)</li><li>#999999 na #ffffff: 2.8:1 (AA ✗, AAA ✗)</li><li>#ffffff na #0066cc: 5.2:1 (AA ✓, AAA ✗)</li></ul>"
         },
         {
           "type": "colorPalette",
-          "colors": [
-            "#333333",
-            "#666666",
-            "#767676",
-            "#999999",
-            "#0066cc"
-          ]
+          "colors": ["#333333", "#666666", "#767676", "#999999", "#0066cc"]
         },
         {
           "type": "richtext",
@@ -286,11 +290,7 @@
         },
         {
           "type": "colorPalette",
-          "colors": [
-            "#666666",
-            "#999999",
-            "#ffffff"
-          ]
+          "colors": ["#666666", "#999999", "#ffffff"]
         },
         {
           "type": "richtext",
@@ -364,13 +364,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego warto sprawdzić stronę przed publikacją?</h2><p>Publikacja strony z błędami może kosztować więcej niż kilka godzin poświęconych na weryfikację. Niedziałający formularz kontaktowy oznacza utracone zapytania od potencjalnych klientów. Brakujące meta dane sprawiają, że strona gorzej prezentuje się w wynikach wyszukiwania. Wolno ładujące się zdjęcia zniechęcają użytkowników, zanim zdążą zobaczyć ofertę.</p><br/><p>Strona internetowa to często pierwszy kontakt potencjalnego klienta z firmą. Jeśli formularz nie działa, użytkownik nie wyśle zapytania. Jeśli strona ładuje się 10 sekund, większość osób zamknie kartę. Jeśli brakuje polityki prywatności, firma naraża się na kary.</p><br/><p>Sprawdzenie strony przed publikacją to inwestycja kilku godzin, która zapobiega problemom trwającym tygodnie lub miesiące.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego warto sprawdzić stronę przed publikacją?</h2><p>Publikacja strony z błędami może kosztować więcej niż kilka godzin poświęconych na weryfikację. Niedziałający formularz kontaktowy oznacza utracone zapytania od potencjalnych klientów. Brakujące meta dane sprawiają, że strona gorzej prezentuje się w wynikach wyszukiwania. Wolno ładujące się zdjęcia zniechęcają użytkowników, zanim zdążą zobaczyć ofertę.</p><br/><p>Strona internetowa to często pierwszy kontakt potencjalnego klienta z firmą. Jeśli formularz nie działa, użytkownik nie wyśle zapytania. Jeśli strona ładuje się 10 sekund, większość osób zamknie kartę. Jeśli brakuje polityki prywatności, firma naraża się na kary.</p><br/><p>Sprawdzenie strony przed publikacją to inwestycja kilku godzin, która zapobiega problemom trwającym tygodnie lub miesiące.</p>",
           "breakAfter": true
         },
         {
@@ -384,13 +384,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Wydajność i zdjęcia</h2><p>Szybkość ładowania strony wpływa na doświadczenie użytkownika i pozycję w wyszukiwarce. Według danych Google, gdy czas ładowania strony wzrasta z 1 do 3 sekund, prawdopodobieństwo opuszczenia strony przez użytkownika wzrasta o 32% (<a class='inline-link' href='https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/' target='_blank' rel='noopener noreferrer'>źródło: Think with Google</a>).</p><br/><p><strong>Optymalizacja zdjęć</strong></p><br/><p>Zdjęcia to często najcięższe elementy strony. Plik graficzny o wadze 5 MB ładuje się kilka sekund, podczas gdy zoptymalizowane zdjęcie o wadze 200 KB wygląda równie dobrze i ładuje się błyskawicznie.</p><br/><p>Przed publikacją sprawdź, czy wszystkie zdjęcia są zoptymalizowane. Format WebP oferuje lepszą kompresję niż tradycyjne JPG czy PNG, zachowując wysoką jakość obrazu. Więcej o optymalizacji zdjęć znajdziesz w artykule <a class='inline-link' href='/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp'>jak zoptymalizować zdjęcia na stronę WWW</a>.</p><br/><p>Jeśli potrzebujesz szybko przekonwertować zdjęcia do formatu WebP, możesz skorzystać z naszego <a class='inline-link' href='/narzedzia/jpg-png-na-webp-bez-limitu'>darmowego konwertera</a>.</p><br/><p><strong>Test szybkości</strong></p><br/><p>Narzędzie <a class='inline-link' href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> od Google pokazuje, jak szybko ładuje się strona i co można poprawić. Wynik powyżej 90 punktów na urządzeniach mobilnych to dobry rezultat. Niższy wynik wskazuje na elementy wymagające optymalizacji.</p><br/><p><strong>Rozmiary plików</strong></p><br/><p>Poza zdjęciami sprawdź też inne zasoby: pliki CSS, JavaScript, fonty. Nowoczesne strony często korzystają z wielu bibliotek i skryptów, które wydłużają czas ładowania. Usunięcie nieużywanych zasobów przyspiesza stronę.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Wydajność i zdjęcia</h2><p>Szybkość ładowania strony wpływa na doświadczenie użytkownika i pozycję w wyszukiwarce. Według danych Google, gdy czas ładowania strony wzrasta z 1 do 3 sekund, prawdopodobieństwo opuszczenia strony przez użytkownika wzrasta o 32% (<a class='inline-link' href='https://www.thinkwithgoogle.com/marketing-strategies/app-and-mobile/mobile-page-speed-new-industry-benchmarks/' target='_blank' rel='noopener noreferrer'>źródło: Think with Google</a>).</p><br/><p><strong>Optymalizacja zdjęć</strong></p><br/><p>Zdjęcia to często najcięższe elementy strony. Plik graficzny o wadze 5 MB ładuje się kilka sekund, podczas gdy zoptymalizowane zdjęcie o wadze 200 KB wygląda równie dobrze i ładuje się błyskawicznie.</p><br/><p>Przed publikacją sprawdź, czy wszystkie zdjęcia są zoptymalizowane. Format WebP oferuje lepszą kompresję niż tradycyjne JPG czy PNG, zachowując wysoką jakość obrazu. Więcej o optymalizacji zdjęć znajdziesz w artykule <a class='inline-link' href='/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp'>jak zoptymalizować zdjęcia na stronę WWW</a>.</p><br/><p>Jeśli potrzebujesz szybko przekonwertować zdjęcia do formatu WebP, możesz skorzystać z naszego <a class='inline-link' href='/narzedzia/jpg-png-na-webp-bez-limitu'>darmowego konwertera</a>.</p><br/><p><strong>Test szybkości</strong></p><br/><p>Narzędzie <a class='inline-link' href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> od Google pokazuje, jak szybko ładuje się strona i co można poprawić. Wynik powyżej 90 punktów na urządzeniach mobilnych to dobry rezultat. Niższy wynik wskazuje na elementy wymagające optymalizacji.</p><br/><p><strong>Rozmiary plików</strong></p><br/><p>Poza zdjęciami sprawdź też inne zasoby: pliki CSS, JavaScript, fonty. Nowoczesne strony często korzystają z wielu bibliotek i skryptów, które wydłużają czas ładowania. Usunięcie nieużywanych zasobów przyspiesza stronę.</p>",
           "breakAfter": true
         },
         {
@@ -404,18 +404,23 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dostępność i doświadczenie użytkownika</h2><p>Dostępność (accessibility) to zapewnienie, że strona jest użyteczna dla jak najszerszego grona odbiorców - w tym osób z niepełnosprawnościami wzroku, słuchu czy ruchu.</p><br/><p><strong>Kontrast kolorów</strong></p><br/><p>Tekst powinien być czytelny na tle, na którym się znajduje. Standard WCAG zaleca współczynnik kontrastu minimum 4,5:1 dla zwykłego tekstu i 3:1 dla dużego tekstu. Jasny tekst na jasnym tle lub ciemny na ciemnym to częsty problem, który łatwo przeoczyć. Do sprawdzenia kontrastu możesz użyć naszego <a class='inline-link' href='/narzedzia/kontrast-i-czytelnosc-kolorow'>testera kontrastu kolorów WCAG</a>. Więcej o znaczeniu kontrastu wyjaśniamy w artykule <a class='inline-link' href='/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie'>dlaczego kontrast kolorów na stronie ma znaczenie</a>.</p><br/><p><strong>Teksty alternatywne dla zdjęć (atrybut alt)</strong></p><br/><p>Każde zdjęcie na stronie powinno mieć opis alternatywny (atrybut alt). Ten tekst jest odczytywany przez czytniki ekranowe używane przez osoby niewidome i wyświetlany, gdy zdjęcie nie może się załadować. Opis powinien opisywać zawartość zdjęcia, a nie powtarzać nazwy pliku.</p><br/><p><strong>Nawigacja klawiaturą</strong></p><br/><p>Sprawdź, czy można poruszać się po stronie używając klawiatury (klawisz Tab). Wszystkie interaktywne elementy - linki, przyciski, pola formularzy - powinny być dostępne i widoczne przy nawigacji klawiaturą. To ważne dla osób, które nie mogą używać myszy.</p><br/><p><strong>Czytelność treści</strong></p><br/><p>Rozmiar czcionki powinien wynosić minimum 16 pikseli dla tekstu podstawowego. Akapity nie powinny być zbyt szerokie - optymalna długość linii to 50-75 znaków. Odstępy między wierszami (line-height) powinny wynosić przynajmniej 1,5 wartości rozmiaru czcionki. Więcej o wpływie <a class='inline-link' href='/edukacja/ux/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc'>pustej przestrzeni na czytelność strony</a> wyjaśniamy w osobnym artykule.</p><br/><p><strong>Favicon</strong></p><br/><p>Favicon to mała ikonka wyświetlana na karcie przeglądarki obok tytułu strony. Jej brak sprawia, że strona wygląda niedokończenie. Favicon powinien być czytelny w małym rozmiarze (16x16 i 32x32 pikseli). Jeśli potrzebujesz stworzyć favicon, skorzystaj z naszego <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>generatora favicon</a>. Więcej o faviconie i jego roli wyjaśniamy w artykule <a class='inline-link' href='/edukacja/grafika/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie'>czym jest favicon i jak go przygotować</a>.</p>",
-          "breakAfter": true
-        },
-        {
           "type": "ad",
           "slot": "9459125335",
           "breakAfter": true
         },
         {
           "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dostępność i doświadczenie użytkownika</h2><p>Dostępność (accessibility) to zapewnienie, że strona jest użyteczna dla jak najszerszego grona odbiorców - w tym osób z niepełnosprawnościami wzroku, słuchu czy ruchu.</p><br/><p><strong>Kontrast kolorów</strong></p><br/><p>Tekst powinien być czytelny na tle, na którym się znajduje. Standard WCAG zaleca współczynnik kontrastu minimum 4,5:1 dla zwykłego tekstu i 3:1 dla dużego tekstu. Jasny tekst na jasnym tle lub ciemny na ciemnym to częsty problem, który łatwo przeoczyć. Do sprawdzenia kontrastu możesz użyć naszego <a class='inline-link' href='/narzedzia/kontrast-i-czytelnosc-kolorow'>testera kontrastu kolorów WCAG</a>. Więcej o znaczeniu kontrastu wyjaśniamy w artykule <a class='inline-link' href='/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie'>dlaczego kontrast kolorów na stronie ma znaczenie</a>.</p><br/><p><strong>Teksty alternatywne dla zdjęć (atrybut alt)</strong></p><br/><p>Każde zdjęcie na stronie powinno mieć opis alternatywny (atrybut alt). Ten tekst jest odczytywany przez czytniki ekranowe używane przez osoby niewidome i wyświetlany, gdy zdjęcie nie może się załadować. Opis powinien opisywać zawartość zdjęcia, a nie powtarzać nazwy pliku.</p><br/><p><strong>Nawigacja klawiaturą</strong></p><br/><p>Sprawdź, czy można poruszać się po stronie używając klawiatury (klawisz Tab). Wszystkie interaktywne elementy - linki, przyciski, pola formularzy - powinny być dostępne i widoczne przy nawigacji klawiaturą. To ważne dla osób, które nie mogą używać myszy.</p><br/><p><strong>Czytelność treści</strong></p><br/><p>Rozmiar czcionki powinien wynosić minimum 16 pikseli dla tekstu podstawowego. Akapity nie powinny być zbyt szerokie - optymalna długość linii to 50-75 znaków. Odstępy między wierszami (line-height) powinny wynosić przynajmniej 1,5 wartości rozmiaru czcionki. Więcej o wpływie <a class='inline-link' href='/edukacja/ux/dlaczego-pusta-przestrzen-na-stronie-zwieksza-czytelnosc'>pustej przestrzeni na czytelność strony</a> wyjaśniamy w osobnym artykule.</p><br/><p><strong>Favicon</strong></p><br/><p>Favicon to mała ikonka wyświetlana na karcie przeglądarki obok tytułu strony. Jej brak sprawia, że strona wygląda niedokończenie. Favicon powinien być czytelny w małym rozmiarze (16x16 i 32x32 pikseli). Jeśli potrzebujesz stworzyć favicon, skorzystaj z naszego <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>generatora favicon</a>. Więcej o faviconie i jego roli wyjaśniamy w artykule <a class='inline-link' href='/edukacja/grafika/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie'>czym jest favicon i jak go przygotować</a>.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Po publikacji: co zrobić w pierwszych dniach?</h2><p>Publikacja strony to nie koniec pracy. Pierwsze dni po uruchomieniu są ważne dla widoczności w wyszukiwarkach i wykrycia problemów, które mogły umknąć przy testach.</p><br/><p><strong>Zgłoś stronę w Google Search Console</strong></p><br/><p>Zarejestruj stronę w <a href='https://search.google.com/search-console/' target='_blank' rel='noopener noreferrer'>Google Search Console</a> i zgłoś mapę strony (sitemap). To przyspiesza indeksację - bez tego Google może potrzebować dni lub tygodni, żeby odkryć nową stronę. Narzędzie pokaże też ewentualne błędy indeksacji.</p><br/><p><strong>Sprawdź indeksację po kilku dniach</strong></p><br/><p>Po 2-3 dniach od zgłoszenia wpisz w Google site:twojastrona.pl i sprawdź, czy podstrony zaczynają się pojawiać. Jeśli po tygodniu nic nie jest zaindeksowane, wróć do Google Search Console i sprawdź raport błędów. Problem może leżeć w pliku robots.txt lub meta tagu noindex. Więcej o przyczynach niewidoczności w Google wyjaśniamy w artykule <a class='inline-link' href='/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic'>dlaczego strona nie wyświetla się w Google</a>.</p><br/><p><strong>Monitoruj formularze i kontakt</strong></p><br/><p>Przez pierwszy tydzień po publikacji wyślij sobie testowe wiadomości przez formularze co kilka dni. Upewnij się, że e-maile nadal dochodzą, a formularze działają poprawnie. Czasem problemy z dostarczalnością e-maili pojawiają się dopiero po kilku dniach.</p><br/><p><strong>Załóż analitykę</strong></p><br/><p>Jeśli jeszcze tego nie zrobiłeś, skonfiguruj <a href='https://analytics.google.com/' target='_blank' rel='noopener noreferrer'>Google Analytics</a> lub inne narzędzie analityczne. Dane o ruchu na stronie, źródłach odwiedzin i zachowaniu użytkowników są niezbędne do oceny, czy strona spełnia swoje cele. Jak mierzyć skuteczność strony, wyjaśniamy w artykule <a class='inline-link' href='/edukacja/strony/jak-mierzyc-skutecznosc-strony-internetowej'>jak mierzyć skuteczność strony internetowej</a>.</p><br/><p><strong>Przekieruj starą stronę (jeśli dotyczy)</strong></p><br/><p>Jeśli nowa strona zastępuje starą pod tym samym adresem, upewnij się, że stare adresy URL są przekierowane na nowe (przekierowanie 301). Bez tego stracisz ruch z linków prowadzących do starej strony i pozycje w wyszukiwarce.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -481,13 +486,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czym jest domena i hosting?</h2><p><strong>Domena</strong> to adres strony internetowej - ciąg znaków, który wpisujesz w przeglądarkę, żeby wejść na stronę. Przykłady: google.pl, allegro.pl, mojafirma.com. Domena składa się z nazwy (np. mojafirma) i rozszerzenia (np. .pl, .com, .eu).</p><br/><p>Domenę kupujesz (a właściwie wynajmujesz) na określony czas - zwykle na rok lub dłużej. Po tym czasie musisz ją odnowić, inaczej ktoś inny może ją zarejestrować.</p><br/><p><strong>Hosting</strong> to usługa, która zapewnia miejsce na serwerze, gdzie przechowywane są pliki strony - teksty, zdjęcia, kod. Kiedy ktoś wpisuje adres strony w przeglądarkę, serwer hostingowy wysyła mu te pliki, a przeglądarka wyświetla stronę.</p><br/><p>Można to porównać do adresu i budynku. Domena to adres (ul. Główna 10), a hosting to budynek, w którym mieści się firma. Klient zna adres i wie, dokąd przyjść - ale potrzebuje też miejsca, gdzie faktycznie coś znajdzie.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czym jest domena i hosting?</h2><p><strong>Domena</strong> to adres strony internetowej - ciąg znaków, który wpisujesz w przeglądarkę, żeby wejść na stronę. Przykłady: google.pl, allegro.pl, mojafirma.com. Domena składa się z nazwy (np. mojafirma) i rozszerzenia (np. .pl, .com, .eu).</p><br/><p>Domenę kupujesz (a właściwie wynajmujesz) na określony czas - zwykle na rok lub dłużej. Po tym czasie musisz ją odnowić, inaczej ktoś inny może ją zarejestrować.</p><br/><p><strong>Hosting</strong> to usługa, która zapewnia miejsce na serwerze, gdzie przechowywane są pliki strony - teksty, zdjęcia, kod. Kiedy ktoś wpisuje adres strony w przeglądarkę, serwer hostingowy wysyła mu te pliki, a przeglądarka wyświetla stronę.</p><br/><p>Można to porównać do adresu i budynku. Domena to adres (ul. Główna 10), a hosting to budynek, w którym mieści się firma. Klient zna adres i wie, dokąd przyjść - ale potrzebuje też miejsca, gdzie faktycznie coś znajdzie.</p>",
           "breakAfter": true
         },
         {
@@ -501,13 +506,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czy warto kupować domenę i hosting w jednym miejscu?</h2><p>Wielu dostawców oferuje pakiety łączące domenę i hosting. Ma to swoje zalety i wady.</p><br/><p><strong>Zalety kupowania w jednym miejscu</strong></p><br/><ul class='list-disc ml-5'><li><strong>Prostota</strong> - jeden panel, jedna faktura, jedno miejsce do zarządzania.</li><li><strong>Automatyczna konfiguracja</strong> - domena jest od razu podpięta do hostingu, bez ręcznej konfiguracji DNS.</li><li><strong>Promocje</strong> - dostawcy często oferują darmową domenę przy zakupie hostingu na rok lub dłużej.</li></ul><br/><p><strong>Wady kupowania w jednym miejscu</strong></p><br/><ul class='list-disc ml-5'><li><strong>Uzależnienie od jednego dostawcy</strong> - jeśli zdecydujesz się zmienić hosting, przeniesienie domeny może być utrudnione.</li><li><strong>Różna jakość usług</strong> - firma, która dobrze prowadzi hosting, niekoniecznie ma najlepsze ceny domen (i odwrotnie).</li></ul><br/><p><strong>Kiedy rozdzielić?</strong></p><br/><p>Jeśli zależy Ci na elastyczności i możesz poświęcić chwilę na konfigurację, warto kupić domenę u rejestratora (np. nazwa.pl, OVH), a hosting osobno u wyspecjalizowanego dostawcy. Dzięki temu łatwiej zmienisz hosting w przyszłości, zachowując domenę.</p><br/><p>Dla małych firm, które cenią prostotę, pakiet domena + hosting w jednym miejscu jest wygodnym rozwiązaniem.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Czy warto kupować domenę i hosting w jednym miejscu?</h2><p>Wielu dostawców oferuje pakiety łączące domenę i hosting. Ma to swoje zalety i wady.</p><br/><p><strong>Zalety kupowania w jednym miejscu</strong></p><br/><ul class='list-disc ml-5'><li><strong>Prostota</strong> - jeden panel, jedna faktura, jedno miejsce do zarządzania.</li><li><strong>Automatyczna konfiguracja</strong> - domena jest od razu podpięta do hostingu, bez ręcznej konfiguracji DNS.</li><li><strong>Promocje</strong> - dostawcy często oferują darmową domenę przy zakupie hostingu na rok lub dłużej.</li></ul><br/><p><strong>Wady kupowania w jednym miejscu</strong></p><br/><ul class='list-disc ml-5'><li><strong>Uzależnienie od jednego dostawcy</strong> - jeśli zdecydujesz się zmienić hosting, przeniesienie domeny może być utrudnione.</li><li><strong>Różna jakość usług</strong> - firma, która dobrze prowadzi hosting, niekoniecznie ma najlepsze ceny domen (i odwrotnie).</li></ul><br/><p><strong>Kiedy rozdzielić?</strong></p><br/><p>Jeśli zależy Ci na elastyczności i możesz poświęcić chwilę na konfigurację, warto kupić domenę u rejestratora (np. nazwa.pl, OVH), a hosting osobno u wyspecjalizowanego dostawcy. Dzięki temu łatwiej zmienisz hosting w przyszłości, zachowując domenę.</p><br/><p>Dla małych firm, które cenią prostotę, pakiet domena + hosting w jednym miejscu jest wygodnym rozwiązaniem.</p>",
           "breakAfter": true
         },
         {
@@ -593,13 +598,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest certyfikat SSL i jak działa?</h2><p><strong>Certyfikat SSL</strong> to cyfrowy dokument, który potwierdza tożsamość strony internetowej i umożliwia szyfrowane połączenie. Gdy strona ma SSL, jej adres zaczyna się od <strong>https://</strong> zamiast http:// - ta dodatkowa litera s oznacza secure (bezpieczne).</p><br/><p><strong>Jak to działa w praktyce?</strong></p><br/><p>Gdy wchodzisz na stronę z SSL, Twoja przeglądarka i serwer wymieniają się kluczami szyfrującymi. Od tego momentu wszystkie dane przesyłane między Tobą a stroną są zaszyfrowane - nawet jeśli ktoś przechwyci tę komunikację, zobaczy tylko nieczytelny ciąg znaków.</p><br/><p>Bez SSL dane są jak kartka pocztowa - każdy po drodze może je przeczytać. Z SSL dane są zaszyfrowane i może je odczytać tylko adresat.</p><br/><p><strong>Gdzie widzisz, że strona ma SSL?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Kłódka w pasku adresu</strong> - symbol zamkniętej kłódki obok adresu strony</li><li><strong>HTTPS w adresie</strong> - adres zaczyna się od https:// zamiast http://</li><li><strong>Informacje o certyfikacie</strong> - po kliknięciu w kłódkę zobaczysz szczegóły certyfikatu</li></ul>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest certyfikat SSL i jak działa?</h2><p><strong>Certyfikat SSL</strong> to cyfrowy dokument, który potwierdza tożsamość strony internetowej i umożliwia szyfrowane połączenie. Gdy strona ma SSL, jej adres zaczyna się od <strong>https://</strong> zamiast http:// - ta dodatkowa litera s oznacza secure (bezpieczne).</p><br/><p><strong>Jak to działa w praktyce?</strong></p><br/><p>Gdy wchodzisz na stronę z SSL, Twoja przeglądarka i serwer wymieniają się kluczami szyfrującymi. Od tego momentu wszystkie dane przesyłane między Tobą a stroną są zaszyfrowane - nawet jeśli ktoś przechwyci tę komunikację, zobaczy tylko nieczytelny ciąg znaków.</p><br/><p>Bez SSL dane są jak kartka pocztowa - każdy po drodze może je przeczytać. Z SSL dane są zaszyfrowane i może je odczytać tylko adresat.</p><br/><p><strong>Gdzie widzisz, że strona ma SSL?</strong></p><br/><ul class='list-disc ml-5'><li><strong>Kłódka w pasku adresu</strong> - symbol zamkniętej kłódki obok adresu strony</li><li><strong>HTTPS w adresie</strong> - adres zaczyna się od https:// zamiast http://</li><li><strong>Informacje o certyfikacie</strong> - po kliknięciu w kłódkę zobaczysz szczegóły certyfikatu</li></ul>",
           "breakAfter": true
         },
         {
@@ -710,13 +715,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest favicon i dlaczego warto go mieć?</h2><p>Favicon to mały obrazek (najczęściej 16x16 lub 32x32 pikseli), który przeglądarka wyświetla przy nazwie Twojej strony.</p><br/><p>Kiedy ktoś ma otwartych 20 zakładek w przeglądarce, to właśnie favicon pomaga szybko znaleźć Twoją stronę. Bez niego użytkownik widzi tylko generyczną ikonkę - i Twoja strona ginie w tłumie.</p><br/><h3 class='h5 mb-3 mt-4'>Gdzie wyświetla się favicon?</h3><ul class='list-disc ml-5'><li><strong>Zakładki przeglądarki</strong> - mała ikonka przy tytule strony</li><li><strong>Lista ulubionych/zakładek</strong> - pomaga szybko rozpoznać stronę</li><li><strong>Historia przeglądania</strong> - ułatwia nawigację</li><li><strong>Wyniki wyszukiwania Google</strong> - na urządzeniach mobilnych favicon pojawia się przy wyniku</li><li><strong>Ekran główny telefonu</strong> - gdy użytkownik doda stronę jako skrót</li></ul><br/><h3 class='h5 mb-3 mt-4'>Dlaczego to ważne?</h3><ul class='list-disc ml-5'><li><strong>Rozpoznawalność</strong> - użytkownik od razu wie, która zakładka to Twoja strona</li><li><strong>Profesjonalizm</strong> - strona bez favicon wygląda na niedokończoną lub amatorską</li><li><strong>Spójność z <a class='inline-link' href='/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow'>identyfikacją wizualną</a></strong> - favicon powinien być spójny z <a class='inline-link' href='/uslugi/projekty-graficzne/projekt-logo'>logo firmy</a></li><li><strong>SEO i Lighthouse</strong> - Google Lighthouse sprawdza, czy favicon jest poprawnie skonfigurowany</li><li><strong><span data-tooltip='PWA (Progressive Web App) to strona internetowa, która może działać jak aplikacja mobilna - można ją zainstalować na telefonie.'>PWA</span></strong> - jeśli chcesz, żeby użytkownicy mogli dodać Twoją stronę do ekranu głównego telefonu, potrzebujesz odpowiednich ikon</li></ul>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Co to jest favicon i dlaczego warto go mieć?</h2><p>Favicon to mały obrazek (najczęściej 16x16 lub 32x32 pikseli), który przeglądarka wyświetla przy nazwie Twojej strony.</p><br/><p>Kiedy ktoś ma otwartych 20 zakładek w przeglądarce, to właśnie favicon pomaga szybko znaleźć Twoją stronę. Bez niego użytkownik widzi tylko generyczną ikonkę - i Twoja strona ginie w tłumie.</p><br/><h3 class='h5 mb-3 mt-4'>Gdzie wyświetla się favicon?</h3><ul class='list-disc ml-5'><li><strong>Zakładki przeglądarki</strong> - mała ikonka przy tytule strony</li><li><strong>Lista ulubionych/zakładek</strong> - pomaga szybko rozpoznać stronę</li><li><strong>Historia przeglądania</strong> - ułatwia nawigację</li><li><strong>Wyniki wyszukiwania Google</strong> - na urządzeniach mobilnych favicon pojawia się przy wyniku</li><li><strong>Ekran główny telefonu</strong> - gdy użytkownik doda stronę jako skrót</li></ul><br/><h3 class='h5 mb-3 mt-4'>Dlaczego to ważne?</h3><ul class='list-disc ml-5'><li><strong>Rozpoznawalność</strong> - użytkownik od razu wie, która zakładka to Twoja strona</li><li><strong>Profesjonalizm</strong> - strona bez favicon wygląda na niedokończoną lub amatorską</li><li><strong>Spójność z <a class='inline-link' href='/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow'>identyfikacją wizualną</a></strong> - favicon powinien być spójny z <a class='inline-link' href='/uslugi/projekty-graficzne/projekt-logo'>logo firmy</a></li><li><strong>SEO i Lighthouse</strong> - Google Lighthouse sprawdza, czy favicon jest poprawnie skonfigurowany</li><li><strong><span data-tooltip='PWA (Progressive Web App) to strona internetowa, która może działać jak aplikacja mobilna - można ją zainstalować na telefonie.'>PWA</span></strong> - jeśli chcesz, żeby użytkownicy mogli dodać Twoją stronę do ekranu głównego telefonu, potrzebujesz odpowiednich ikon</li></ul>",
           "breakAfter": true
         },
         {
@@ -730,6 +735,11 @@
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak stworzyć favicon? Dwie opcje</h2><p>Masz dwie drogi:</p><br/><p><strong>Opcja 1: Zrobić ręcznie</strong> - musisz przygotować grafikę w programie graficznym, wyeksportować ją w różnych rozmiarach, skonwertować do formatu ICO i utworzyć plik manifest. Czasochłonne i wymaga wiedzy technicznej.</p><br/><p><strong>Opcja 2: Użyć naszego generatora</strong> - wrzucasz jeden obrazek (np. swoje logo), a generator tworzy wszystkie potrzebne pliki. Pobierasz paczkę ZIP i wrzucasz na serwer. Zajmuje to dosłownie kilka minut.</p><br/><p>Pokażemy Ci, jak skorzystać z naszego narzędzia.</p>",
           "breakAfter": true
@@ -737,11 +747,6 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Instrukcja: jak stworzyć favicon w generatorze Arteon</h2><p>Nasz <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>darmowy generator favicon</a> działa w przeglądarce. Nie musisz niczego instalować ani zakładać konta.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 1: Otwórz generator</h3><p>Wejdź na stronę <a class='inline-link' href='/narzedzia/darmowy-generator-favicon-ico'>Generator favicon</a>.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 2: Wrzuć swój obrazek</h3><p>Kliknij w obszar do przesyłania pliku i wybierz obrazek ze swojego komputera. Najlepiej sprawdza się kwadratowy obrazek o rozmiarze co najmniej 512x512 pikseli. Może to być Twoje logo lub uproszczona jego wersja.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 3: Zobacz podgląd</h3><p>Generator pokaże Ci, jak favicon będzie wyglądał w różnych rozmiarach. Jeśli coś jest nieczytelne - wróć do poprzedniego kroku i użyj prostszej grafiki.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 4: Pobierz paczkę</h3><p>Kliknij przycisk Pobierz. Dostaniesz plik ZIP ze wszystkimi potrzebnymi plikami: favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png i site.webmanifest.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 5: Wgraj pliki na serwer</h3><p>Rozpakuj ZIP i wgraj pliki do głównego folderu swojej strony (tam, gdzie jest index.html). Większość hostingów pozwala to zrobić przez panel administracyjny.</p><br/><h3 class='h5 mb-3 mt-4'>Krok 6: Dodaj tagi do HTML</h3><p>W sekcji <code>&lt;head&gt;</code> swojej strony dodaj odpowiednie tagi (generator poda Ci gotowy kod do skopiowania). Jeśli używasz WordPressa lub innego CMSa, poszukaj opcji Favicon lub Site Icon w ustawieniach.</p>",
-          "breakAfter": true
-        },
-        {
-          "type": "ad",
-          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -757,6 +762,11 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Favicon a SEO i wydajność strony</h2><p>Favicon ma pośredni wpływ na SEO i wydajność strony:</p><br/><h3 class='h5 mb-3 mt-4'>Lighthouse i Core Web Vitals</h3><p>Google <span data-tooltip='Lighthouse to narzędzie Google do audytu stron pod kątem wydajności, dostępności, SEO i najlepszych praktyk.'>Lighthouse</span> sprawdza obecność favicon podczas audytu strony. Brak favicon lub nieprawidłowa konfiguracja może obniżyć ogólną ocenę. Według dokumentacji <a class='underline' href='https://developer.chrome.com/docs/lighthouse/pwa/apple-touch-icon/' target='_blank' rel='noopener noreferrer'>Chrome Developers</a>, brak apple-touch-icon jest traktowany jako błąd PWA.</p><br/><h3 class='h5 mb-3 mt-4'>Favicon w wynikach wyszukiwania</h3><p>Na urządzeniach mobilnych Google wyświetla favicon przy wynikach wyszukiwania. Strona z ładnym favicon może przyciągnąć więcej kliknięć niż strona z domyślną ikonką. To pośrednio wpływa na CTR (Click-Through Rate), który jest sygnałem jakości dla Google.</p><br/><h3 class='h5 mb-3 mt-4'>Optymalizacja plików</h3><p>Favicon powinien być lekki - plik ICO nie powinien przekraczać 100KB, a pliki PNG powinny być skompresowane. Nasz generator automatycznie optymalizuje pliki, żeby nie spowalniały ładowania strony.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -838,13 +848,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego optymalizacja zdjęć ma tak duży wpływ na szybkość strony i SEO?</h2><p>Według dokumentacji Google, obrazy są jedną z najczęstszych przyczyn wolnego ładowania strony - szczególnie na urządzeniach mobilnych (zobacz wskazówki w <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://pagespeed.web.dev/'>PageSpeed Insights</a> oraz dokumentację <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://web.dev/articles/image-optimization'>„Image Optimization” w Google Developers</a> ). Lekkie grafiki oznaczają:</p><br/><ul class='list-disc ml-5'><li>krótszy czas ładowania strony,</li><li>lepsze wskaźniki Core Web Vitals (LCP, INP, CLS),</li><li>dłuższy czas spędzony na stronie przez użytkownika,</li><li>pośrednio lepszy wynik pozycjonowania strony.</li></ul><br/><p><strong>Co to jest LCP, CLS i INP?</strong> LCP (Largest Contentful Paint) mówi, jak szybko wczytuje się największy element na stronie (często jest to właśnie zdjęcie). CLS (Cumulative Layout Shift) to „skakanie” układu podczas ładowania. INP (Interaction to Next Paint) pokazuje, czy strona szybko reaguje na kliknięcia.</p><br/><p>Algorytm wyszukiwarki nie patrzy tylko na słowa kluczowe. Bierze pod uwagę również doświadczenie użytkownika: czy strona ładuje się szybko, czy obrazy nie skaczą po ekranie, czy na telefonie wszystko jest czytelne. Odpowiednia optymalizacja zdjęć to jeden z najprostszych sposobów, aby wpłynąć na szybkość ładowania bez przebudowy całego serwisu.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego optymalizacja zdjęć ma tak duży wpływ na szybkość strony i SEO?</h2><p>Według dokumentacji Google, obrazy są jedną z najczęstszych przyczyn wolnego ładowania strony - szczególnie na urządzeniach mobilnych (zobacz wskazówki w <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://pagespeed.web.dev/'>PageSpeed Insights</a> oraz dokumentację <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://web.dev/articles/image-optimization'>„Image Optimization” w Google Developers</a> ). Lekkie grafiki oznaczają:</p><br/><ul class='list-disc ml-5'><li>krótszy czas ładowania strony,</li><li>lepsze wskaźniki Core Web Vitals (LCP, INP, CLS),</li><li>dłuższy czas spędzony na stronie przez użytkownika,</li><li>pośrednio lepszy wynik pozycjonowania strony.</li></ul><br/><p><strong>Co to jest LCP, CLS i INP?</strong> LCP (Largest Contentful Paint) mówi, jak szybko wczytuje się największy element na stronie (często jest to właśnie zdjęcie). CLS (Cumulative Layout Shift) to „skakanie” układu podczas ładowania. INP (Interaction to Next Paint) pokazuje, czy strona szybko reaguje na kliknięcia.</p><br/><p>Algorytm wyszukiwarki nie patrzy tylko na słowa kluczowe. Bierze pod uwagę również doświadczenie użytkownika: czy strona ładuje się szybko, czy obrazy nie skaczą po ekranie, czy na telefonie wszystko jest czytelne. Odpowiednia optymalizacja zdjęć to jeden z najprostszych sposobów, aby wpłynąć na szybkość ładowania bez przebudowy całego serwisu.</p>",
           "breakAfter": true
         },
         {
@@ -869,6 +879,11 @@
           "breakAfter": true
         },
         {
+          "type": "ad",
+          "slot": "9459125335",
+          "breakAfter": true
+        },
+        {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>AVIF - format jeszcze nowszy niż WebP</h2><p><span data-tooltip='AVIF (AV1 Image File Format) to format obrazu oparty na kodeku wideo AV1, oferujący jeszcze lepszą kompresję niż WebP'>AVIF</span> to format obrazu opracowany przez Alliance for Open Media (organizacja zrzeszająca m.in. Google, Netflix, Amazon). Jest oparty na kodeku wideo AV1 i oferuje jeszcze lepszą kompresję niż WebP.</p><br/><h3 class='h5 mb-3 mt-4'>Kiedy AVIF ma sens?</h3><p>Według testów Netflix Technology Blog, AVIF może być o 50% lżejszy niż JPEG przy tej samej jakości wizualnej. W porównaniu z WebP różnica wynosi około 20%.</p><br/><p>Źródło: <a class='underline' target='_blank' rel='noopener noreferrer' href='https://netflixtechblog.com/avif-for-next-generation-image-coding-b1d75675fe4'>Netflix Technology Blog - AVIF for Next-Generation Image Coding</a></p><br/><p>AVIF sprawdza się szczególnie przy:</p><br/><ul class='list-disc ml-5'><li>zdjęciach z dużą ilością detali i gradientów,</li><li>stronach, gdzie każdy kilobajt ma znaczenie (np. e-commerce z setkami produktów),</li><li>sytuacjach, gdy chcesz maksymalnie poprawić LCP.</li></ul><br/><h3 class='h5 mb-3 mt-4'>Wady AVIF</h3><p>AVIF ma też ograniczenia: wolniejsze kodowanie (konwersja trwa dłużej niż przy WebP), mniejsza kompatybilność przeglądarek (Safari dodał wsparcie dopiero w 2023), oraz problemy z bardzo małymi obrazkami (ikony, miniatury), gdzie WebP wypada lepiej.</p><br/><p>Praktyczna rekomendacja: jeśli dopiero zaczynasz optymalizację, zacznij od WebP - jest bezpieczniejszy i łatwiejszy we wdrożeniu. AVIF rozważ jako kolejny krok dla stron o dużym ruchu.</p>",
           "breakAfter": true
@@ -879,13 +894,13 @@
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Kompresja zdjęć - jak zmniejszyć rozmiar plików bez utraty jakości?</h2><p>Nawet dobrze dobrany format i rozmiar to nie wszystko. Kluczowa jest jeszcze kompresja, czyli zmniejszanie wagi pliku przy zachowaniu akceptowalnej jakości.</p><br/><h3 class='h5 mb-3 mt-4'>Kompresja stratna vs bezstratna</h3><p>Kompresja stratna (np. JPEG, WebP w trybie lossy) - celowo usuwa część informacji z obrazu. Po co? Żeby plik ważył mniej i ładował się szybciej.</p><br/><p>Kompresja bezstratna (PNG, WebP w trybie lossless) - nie usuwa danych i zachowuje pełną jakość. Po co? Gdy zależy Ci na ostrych krawędziach (np. logo) i minimalnych artefaktach.</p><br/><p>W praktyce, przy stronach WWW krytyczny jest czas ładowania strony, więc najczęściej korzysta się z kompresji stratnej z ustawieniami, które dają dobry balans między jakością obrazu a wagą pliku.</p><br/><h3 class='h5 mb-3 mt-4'>Jak praktycznie kompresować zdjęcia?</h3><p>Możesz:</p><br/><ul class='list-disc ml-5'><li>eksportować zdjęcia z np. Photoshopa z odpowiednią jakością (np. 60-80%),</li><li>skorzystać z narzędzi online do kompresji,</li><li>w przypadku WordPressa - użyć dedykowanej wtyczki do optymalizacji obrazów, która automatycznie przeliczy i zapisze pliki w WebP.</li></ul><br/><p>Według testów publikowanych w artykułach o optymalizacji SEO i Core Web Vitals, odpowiednia kompresja zdjęć potrafi obniżyć wagę strony nawet o kilkadziesiąt procent (przykładowe opracowania znajdziesz na blogach <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://blog.cloudflare.com/tag/performance/'>Cloudflare</a>, <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://web.dev/'>web.dev</a> i innych narzędzi CDN - źródła).</p>",
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Kompresja zdjęć - jak zmniejszyć rozmiar plików bez utraty jakości?</h2><p>Nawet dobrze dobrany format i rozmiar to nie wszystko. Kluczowa jest jeszcze kompresja, czyli zmniejszanie wagi pliku przy zachowaniu akceptowalnej jakości.</p><br/><h3 class='h5 mb-3 mt-4'>Kompresja stratna vs bezstratna</h3><p>Kompresja stratna (np. JPEG, WebP w trybie lossy) - celowo usuwa część informacji z obrazu. Po co? Żeby plik ważył mniej i ładował się szybciej.</p><br/><p>Kompresja bezstratna (PNG, WebP w trybie lossless) - nie usuwa danych i zachowuje pełną jakość. Po co? Gdy zależy Ci na ostrych krawędziach (np. logo) i minimalnych artefaktach.</p><br/><p>W praktyce, przy stronach WWW krytyczny jest czas ładowania strony, więc najczęściej korzysta się z kompresji stratnej z ustawieniami, które dają dobry balans między jakością obrazu a wagą pliku.</p><br/><h3 class='h5 mb-3 mt-4'>Jak praktycznie kompresować zdjęcia?</h3><p>Możesz:</p><br/><ul class='list-disc ml-5'><li>eksportować zdjęcia z np. Photoshopa z odpowiednią jakością (np. 60-80%),</li><li>skorzystać z narzędzi online do kompresji,</li><li>w przypadku WordPressa - użyć dedykowanej wtyczki do optymalizacji obrazów, która automatycznie przeliczy i zapisze pliki w WebP.</li></ul><br/><p>Według testów publikowanych w artykułach o optymalizacji SEO i Core Web Vitals, odpowiednia kompresja zdjęć potrafi obniżyć wagę strony nawet o kilkadziesiąt procent (przykładowe opracowania znajdziesz na blogach <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://blog.cloudflare.com/tag/performance/'>Cloudflare</a>, <a class='inline-link' target='_blank' rel='noopener noreferrer' href='https://web.dev/'>web.dev</a> i innych narzędzi CDN - źródła).</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {

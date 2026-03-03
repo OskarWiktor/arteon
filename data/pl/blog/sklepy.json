@@ -24,13 +24,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego sklep internetowy musi mieć regulamin?</h2><p>Obowiązek posiadania regulaminu wynika z <a class='underline' href='https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20140000827' target='_blank' rel='noopener noreferrer'>Ustawy o prawach konsumenta</a> z 30 maja 2014 roku. Ustawa nakłada na sprzedawców internetowych obowiązek podania konsumentowi określonych informacji przed zawarciem umowy.</p><br/><p>Regulamin pełni kilka ważnych funkcji:</p><br/><ul class='list-disc ml-5'><li>Informuje klientów o zasadach działania sklepu i warunkach umowy.</li><li>Określa prawa i obowiązki obu stron w sposób jasny i przejrzysty.</li><li>Stanowi podstawę prawną relacji między sprzedawcą a kupującym.</li><li>Chroni interesy obu stron. Definiuje procedury na wypadek różnych sytuacji.</li><li>Buduje zaufanie klientów przez przejrzystość zasad. Więcej o zaufaniu znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci'>społecznym dowodzie słuszności</a>.</li></ul><br/><p>Brak regulaminu lub regulamin niezgodny z prawem może skutkować karami od <a class='underline' href='https://uokik.gov.pl/' target='_blank' rel='noopener noreferrer'>UOKiK</a>. Warto zadbać o ten dokument już na etapie uruchamiania sklepu.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego sklep internetowy musi mieć regulamin?</h2><p>Obowiązek posiadania regulaminu wynika z <a class='underline' href='https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20140000827' target='_blank' rel='noopener noreferrer'>Ustawy o prawach konsumenta</a> z 30 maja 2014 roku. Ustawa nakłada na sprzedawców internetowych obowiązek podania konsumentowi określonych informacji przed zawarciem umowy.</p><br/><p>Regulamin pełni kilka ważnych funkcji:</p><br/><ul class='list-disc ml-5'><li>Informuje klientów o zasadach działania sklepu i warunkach umowy.</li><li>Określa prawa i obowiązki obu stron w sposób jasny i przejrzysty.</li><li>Stanowi podstawę prawną relacji między sprzedawcą a kupującym.</li><li>Chroni interesy obu stron. Definiuje procedury na wypadek różnych sytuacji.</li><li>Buduje zaufanie klientów przez przejrzystość zasad. Więcej o zaufaniu znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/social-proof-spoleczny-dowod-slusznosci'>społecznym dowodzie słuszności</a>.</li></ul><br/><p>Brak regulaminu lub regulamin niezgodny z prawem może skutkować karami od <a class='underline' href='https://uokik.gov.pl/' target='_blank' rel='noopener noreferrer'>UOKiK</a>. Warto zadbać o ten dokument już na etapie uruchamiania sklepu.</p>",
           "breakAfter": true
         },
         {
@@ -46,6 +46,11 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Prawo odstąpienia od umowy</h2><p>Regulamin musi informować o prawie konsumenta do odstąpienia od umowy zawartej na odległość. Konsument może odstąpić od umowy w ciągu <strong>14 dni</strong> bez podawania przyczyny. Nie ponosi kosztów, poza tymi określonymi w ustawie.</p><br/><h3 class='h5 mb-3 mt-4'>Obowiązkowe informacje o odstąpieniu</h3><p>Regulamin musi jasno określać:</p><br/><ul class='list-disc ml-5'><li>Termin na odstąpienie: 14 dni od otrzymania towaru przez konsumenta.</li><li>Sposób składania oświadczenia o odstąpieniu (formularz, e-mail, pismo).</li><li>Adres do odesłania towaru.</li><li>Kto ponosi koszty zwrotu towaru.</li><li>Termin zwrotu pieniędzy: 14 dni od otrzymania oświadczenia.</li></ul><br/><h3 class='h5 mb-3 mt-4'>Wyjątki od prawa odstąpienia</h3><p>Ustawa przewiduje wyjątki. Regulamin powinien wymienić sytuacje, w których zwrot nie przysługuje:</p><br/><ul class='list-disc ml-5'><li>Produkty wykonane na zamówienie lub zindywidualizowane.</li><li>Produkty, które po otwarciu nie nadają się do zwrotu ze względu na higienę.</li><li>Nagrania lub programy w zapieczętowanym opakowaniu po jego otwarciu.</li><li>Treści cyfrowe online, jeśli konsument zgodził się na świadczenie przed upływem terminu odstąpienia.</li><li>Produkty, które po dostarczeniu łączą się trwale z innymi rzeczami.</li></ul><br/><p>Pełna lista wyjątków jest w art. 38 Ustawy o prawach konsumenta.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
@@ -155,13 +160,13 @@
           "breakAfter": true
         },
         {
-          "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego koszty dostawy mają tak duże znaczenie?</h2><p>Koszty dostawy to jeden z głównych powodów, dla których klienci porzucają koszyki. Wg badań <a class='underline' href='https://baymard.com/lists/cart-abandonment-rate' target='_blank' rel='noopener noreferrer'>Baymard Institute</a> średni wskaźnik porzuconych koszyków w e-commerce wynosi około 70%. To oznacza, że 7 na 10 osób, które dodają produkt do koszyka, nie kończy zakupu.</p><br/><p>Co ciekawe, najczęstszym powodem porzucenia koszyka (pomijając osoby, które tylko przeglądały produkty bez zamiaru kupna) są zbyt wysokie dodatkowe koszty - w tym właśnie koszty dostawy. Wg tego samego badania 39% klientów wskazuje dodatkowe opłaty (dostawa, podatki, inne opłaty) jako powód rezygnacji z zakupu.</p><br/><p>To pokazuje, jak ważna jest strategia cenowa dotycząca dostawy. Dla wielu klientów koszt dostawy nie jest po prostu kolejną pozycją na rachunku - to bariera psychologiczna, która może zdecydować o tym, czy transakcja dojdzie do skutku.</p><br/><p>Więcej o tym, dlaczego klienci porzucają koszyki i jak temu zapobiegać, znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz'>paradoksie wyboru w e-commerce</a>.</p>",
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
-          "type": "ad",
-          "slot": "9459125335",
+          "type": "richtext",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego koszty dostawy mają tak duże znaczenie?</h2><p>Koszty dostawy to jeden z głównych powodów, dla których klienci porzucają koszyki. Wg badań <a class='underline' href='https://baymard.com/lists/cart-abandonment-rate' target='_blank' rel='noopener noreferrer'>Baymard Institute</a> średni wskaźnik porzuconych koszyków w e-commerce wynosi około 70%. To oznacza, że 7 na 10 osób, które dodają produkt do koszyka, nie kończy zakupu.</p><br/><p>Co ciekawe, najczęstszym powodem porzucenia koszyka (pomijając osoby, które tylko przeglądały produkty bez zamiaru kupna) są zbyt wysokie dodatkowe koszty - w tym właśnie koszty dostawy. Wg tego samego badania 39% klientów wskazuje dodatkowe opłaty (dostawa, podatki, inne opłaty) jako powód rezygnacji z zakupu.</p><br/><p>To pokazuje, jak ważna jest strategia cenowa dotycząca dostawy. Dla wielu klientów koszt dostawy nie jest po prostu kolejną pozycją na rachunku - to bariera psychologiczna, która może zdecydować o tym, czy transakcja dojdzie do skutku.</p><br/><p>Więcej o tym, dlaczego klienci porzucają koszyki i jak temu zapobiegać, znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz'>paradoksie wyboru w e-commerce</a>.</p>",
           "breakAfter": true
         },
         {
@@ -192,6 +197,11 @@
         {
           "type": "richtext",
           "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Aspekty prawne: co warto wiedzieć?</h2><p>Przy strategiach cenowych dotyczących dostawy warto pamiętać o wymogach prawnych.</p><br/><h3 class='h5 mb-3 mt-4'>Dyrektywa Omnibus i informowanie o cenach</h3><p>Od 2023 roku w Polsce obowiązują przepisy wynikające z Dyrektywy Omnibus. Przy promocjach i obniżkach cen sklepy muszą podawać najniższą cenę z ostatnich 30 dni przed obniżką. To dotyczy też sytuacji, gdy darmowa dostawa jest prezentowana jako promocja czasowa.</p><br/><p>Jeśli sklep reklamuje darmową dostawę jako ograniczoną czasowo promocję, musi być transparentny co do regularnych warunków. Stała darmowa dostawa (np. od określonego progu) nie podlega tym wymogom, bo nie jest promocją.</p><br/><h3 class='h5 mb-3 mt-4'>Przejrzystość kosztów</h3><p>Przepisy o ochronie konsumentów wymagają, żeby klient przed finalizacją zakupu znał wszystkie koszty - w tym koszty dostawy. Ukrywanie kosztów dostawy do ostatniego kroku checkout nie tylko jest nieetyczne, ale może naruszać przepisy.</p><br/><p>Dobrą praktyką jest pokazywanie kosztów dostawy (lub informacji o darmowej dostawie) już na stronie produktu lub w koszyku, zanim klient przejdzie do płatności.</p>",
+          "breakAfter": true
+        },
+        {
+          "type": "ad",
+          "slot": "9459125335",
           "breakAfter": true
         },
         {
