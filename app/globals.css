@@ -538,11 +538,7 @@ textarea {
   color: var(--text-mid);
 }
 
-/* ── Ad slot collapse (hide wrapper when ad is empty/unfilled) ── */
-
-.ad-slot-wrapper:not(:has(ins.adsbygoogle)) {
-  display: none;
-}
+/* ── Ad slot collapse (hide wrapper when Google marks ad unfilled) ── */
 
 .ad-slot-wrapper:has(ins.adsbygoogle[data-ad-status='unfilled']) {
   display: none;
