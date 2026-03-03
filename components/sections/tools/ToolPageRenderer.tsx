@@ -251,7 +251,6 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
                   <div className="not-prose -mx-[3%] flex justify-center py-4">
                     <AdSense variant="responsive" />
                   </div>
-                  <Gap variant="line" />
                 </div>
               ) : null;
 
