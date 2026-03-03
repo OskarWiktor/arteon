@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs TIFF – formatsammenligning",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Tabsgivende komprimering",
+          "values": {
+            "svg": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Tabsfri komprimering",
+          "values": {
+            "svg": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Gennemsigtighed (alfakanal)",
+          "values": {
+            "svg": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Animationsunderstøttelse",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Webbrowserunderstøttelse",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "svg": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af SVG til TIFF",
       "openByDefault": 0,

@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h1>Integritetspolicy</h1>
           <p className="mt-2 text-sm opacity-70">
-            Version: <strong>13.02.2026</strong>
+            Version: <strong>03.03.2026</strong>
           </p>
           <Gap size="xs" />
           <SectionInfo title="1. Personuppgiftsansvarig">
@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
               <li>tekniska uppgifter som samlas in automatiskt (IP-adress, enhetsinformation, kakor),</li>
               <li>analysdata fran Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics och Vercel Speed Insights,</li>
               <li>analysdata fran Metricool (besoksstatistik, trafikkallor),</li>
-              <li>uppgifter som samlas in av Google AdSense for att visa annonser (annonsidentifierare, annonskakor, annonsinteraktionsdata),</li>
+              <li>uppgifter som samlas in av Google AdSense for att visa annonser (annonsidentifierare, annonskakor, annonsinteraktionsdata, IAB TCF v2.3-samtyckesstranger),</li>
               <li>serverloggar och sakerhetshandelser (t.ex. tidsstamplar, IP-adresser, forfragerubriker).</li>
             </ul>
           </SectionInfo>
@@ -73,12 +73,12 @@ export default function PrivacyPolicyPage() {
                 <strong>Sakerhet och ansprak</strong> -- logghantering, missbruksprevention, faststallande/verkstallande/forsvar av ansprak (art. 6.1 f GDPR).
               </li>
               <li>
-                <strong>Annonsvisning</strong> -- visning av intressebaserade annonser via Google AdSense (art. 6.1 a GDPR -- anvandarsamtycke som ges via kakbanner).
+                <strong>Annonsvisning</strong> -- visning av intressebaserade annonser via Google AdSense (art. 6.1 a GDPR -- anvandarsamtycke som ges via Google Privacy & Messaging-dialog).
               </li>
             </ol>
           </SectionInfo>
           <Gap variant="line" size="sm" />
-          <SectionInfo title="4. Kakor">
+          <SectionInfo title="4. Kakor och samtycke">
             <p>Webbplatsen anvander kakor for foljande andamal:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>sakerstalla korrekt funktion av webbplatsen,</li>
@@ -87,6 +87,22 @@ export default function PrivacyPolicyPage() {
               <li>visning av intressebaserade annonser (Google AdSense / DoubleClick).</li>
             </ul>
             <p>Google AdSense kan anvanda DoubleClick-kakor for att visa annonser baserat pa anvandarens tidigare besok pa var webbplats eller andra webbplatser.</p>
+            <h3 className="h5 mt-4 mb-3">Samtyckehantering (CMP)</h3>
+            <p>
+              For insamling och hantering av samtycke till kakor och databehandling for annonseringsandamal anvander denna webbplats Google Privacy &amp; Messaging &mdash; en certifierad
+              samtyckehanteringsplattform (CMP) integrerad med IAB Transparency and Consent Framework (TCF) version 2.3.
+            </p>
+            <p>
+              Anvandare fran Europeiska ekonomiska samarbetsomradet (EES), Storbritannien och Schweiz ombeds ge sitt samtycke via en Google-dialog. Anvandare fran amerikanska delstater med
+              integritetslagstiftning ser ett meddelande i enlighet med delstatens regler (inklusive stod for Global Privacy Control-signaler).
+            </p>
+            <p>Du kan andra dina samtyckesinstallningar nar som helst genom att klicka pa lanken &quot;Kakinstellningar&quot; i webbplatsens sidfot.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              Webbplatsen anvander Google Consent Mode v2 i avancerat lage (Advanced). For anvandare i reglerade regioner ar alla samtyckessignaler (ad_storage, ad_user_data, ad_personalization,
+              analytics_storage) som standard installda pa &quot;denied&quot; och uppdateras forst efter samtycke. For anvandare i andra regioner ar samtycken som standard installda pa
+              &quot;granted&quot;.
+            </p>
             <p>
               Du kan inaktivera personaliserade annonser i{' '}
               <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
@@ -98,7 +114,6 @@ export default function PrivacyPolicyPage() {
               </a>
               .
             </p>
-            <p>Webbplatsen anvander Google Consent Mode v2. Det innebar att Googles analys- och annonsskript inte samlar in data forran anvandaren ger samtycke via kakbannern.</p>
             <p>Du kan hantera kakor i webblasarens installningar. Att begransa kakor kan paverka vissa funktioner pa webbplatsen.</p>
           </SectionInfo>
           <Gap variant="line" size="sm" />

@@ -1,0 +1,241 @@
+{
+  "toolKey": "csvToJson",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor CSV în JSON — CSV JSON",
+    "description": "Convertește CSV în format JSON. Parsare și formatare automată. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-csv-in-json"
+  },
+  "hero": {
+    "title": "Convertor CSV în JSON",
+    "description": "Convertește CSV în format JSON. Parsare și formatare automată. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-csv-in-json",
+      "label": "Convertor CSV în JSON"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor CSV în JSON",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Convertește CSV în format JSON. Parsare și formatare automată. Gratuit.",
+      "featureList": ["CSV to JSON conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert CSV to JSON", "CSV to JSON", "Free CSV to JSON converter"]
+    },
+    "howTo": {
+      "name": "Cum convertiți CSV în JSON",
+      "description": "Convertește CSV în format JSON. Parsare și formatare automată. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lipiți datele",
+          "text": "Lipiți datele CSV în câmpul de introducere."
+        },
+        {
+          "position": 2,
+          "name": "Convertiți",
+          "text": "Faceți clic pe Convertiți pentru a transforma datele CSV în format JSON."
+        },
+        {
+          "position": 3,
+          "name": "Copiați sau descărcați",
+          "text": "Copiați rezultatul JSON sau descărcați-l ca fișier."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți CSV în JSON?",
+      "html": "<p class=\"text-mid mb-4\">Convertește CSV în format JSON. Parsare și formatare automată. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "CSV to JSON conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum convertiți CSV în JSON",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Lipiți datele",
+          "description": "Lipiți datele CSV în câmpul de introducere.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertiți",
+          "description": "Faceți clic pe Convertiți pentru a transforma datele CSV în format JSON.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Copiați sau descărcați",
+          "description": "Copiați rezultatul JSON sau descărcați-l ca fișier.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele sunt procesate integral în browser. Nimic nu este trimis pe server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți oricâte fișiere aveți nevoie. Fără limite zilnice, fără restricții."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control al calității",
+          "description": "Ajustați setările pentru echilibrul perfect între dimensiune și calitate."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "CSV vs JSON – comparație de formate",
+      "plans": [
+        {
+          "id": "csv",
+          "name": "CSV"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Date ierarhice",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Date tabulare",
+          "values": {
+            "csv": true,
+            "json": false
+          }
+        },
+        {
+          "name": "Validare schemă",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Lizibil pentru oameni",
+          "values": {
+            "csv": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Standard API",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Sintaxă compactă",
+          "values": {
+            "csv": true,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia CSV în JSON",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Conversia din CSV în JSON este gratuită?",
+          "answer": "Da, acest convertor este complet gratuit și fără limite. Fără înregistrare, fără filigran."
+        },
+        {
+          "question": "Convertorul încarcă fișierele mele?",
+          "answer": "Nu. Toată procesarea are loc local în browser. Fișierele nu părăsesc niciodată dispozitivul."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul acceptă conversia în lot."
+        },
+        {
+          "question": "Convertorul funcționează pe mobil?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați ceva? Trimiteți-ne un mesaj – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertor CSV în JSON"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

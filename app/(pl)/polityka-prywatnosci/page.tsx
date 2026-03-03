@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h1>Polityka prywatności</h1>
           <p className="mt-2 text-sm opacity-70">
-            Wersja: <strong>13.02.2026</strong>
+            Wersja: <strong>03.03.2026</strong>
           </p>
 
           <Gap size="xs" />
@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
               <li>dane techniczne zbierane automatycznie (adres IP, informacje o urządzeniu, pliki cookie),</li>
               <li>dane analityczne z Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics i Vercel Speed Insights,</li>
               <li>dane analityczne z Metricool (statystyki odwiedzin, źródła ruchu),</li>
-              <li>dane zbierane przez Google AdSense w celu wyświetlania reklam (identyfikatory reklamowe, pliki cookie reklamowe, dane o interakcjach z reklamami),</li>
+              <li>dane zbierane przez Google AdSense w celu wyświetlania reklam (identyfikatory reklamowe, pliki cookie reklamowe, dane o interakcjach z reklamami, ciągi zgody IAB TCF v2.3),</li>
               <li>logi serwera i zdarzeń bezpieczeństwa (np. znaczniki czasu, adres IP, nagłówki żądania).</li>
             </ul>
           </SectionInfo>
@@ -76,14 +76,14 @@ export default function PrivacyPolicyPage() {
               </li>
               <li>
                 <strong>Wyświetlanie reklam</strong> - wyświetlanie reklam dopasowanych do zainteresowań użytkownika za pośrednictwem Google AdSense (art. 6 ust. 1 lit. a RODO - zgoda użytkownika
-                wyrażona w bannerze cookie).
+                wyrażona w oknie zgód Google Privacy & Messaging).
               </li>
             </ol>
           </SectionInfo>
 
           <Gap variant="line" size="sm" />
 
-          <SectionInfo title="4. Pliki cookie">
+          <SectionInfo title="4. Pliki cookie i zgody">
             <p>Strona wykorzystuje pliki cookie w celu:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>zapewnienia prawidłowego działania serwisu,</li>
@@ -95,6 +95,22 @@ export default function PrivacyPolicyPage() {
               Google AdSense może wykorzystywać pliki cookie DoubleClick do wyświetlania reklam opartych na wcześniejszych wizytach użytkownika w naszej witrynie lub innych witrynach. Zewnętrzni
               dostawcy (w tym Google) używają tych plików cookie do serwowania reklam na podstawie historii odwiedzin.
             </p>
+            <h3 className="h5 mt-4 mb-3">Zarządzanie zgodami (CMP)</h3>
+            <p>
+              Do zbierania i zarządzania zgodami na pliki cookie i przetwarzanie danych w celach reklamowych strona korzysta z narzędzia Google Privacy &amp; Messaging — certyfikowanej platformy
+              zarządzania zgodami (CMP) zintegrowanej ze standardem IAB Transparency and Consent Framework (TCF) w wersji 2.3.
+            </p>
+            <p>
+              Użytkownicy z Europejskiego Obszaru Gospodarczego (EOG), Wielkiej Brytanii i Szwajcarii zostaną poproszeni o wyrażenie zgody za pośrednictwem okna dialogowego Google. Użytkownicy ze
+              stanów USA objętych przepisami o ochronie prywatności zobaczą odpowiedni komunikat zgodny z regulacjami stanowymi (w tym obsługę sygnałów Global Privacy Control).
+            </p>
+            <p>Możesz zmienić swoje preferencje dotyczące zgód w dowolnym momencie, klikając link &quot;Ustawienia plików cookie&quot; w stopce strony.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              Strona wykorzystuje mechanizm Google Consent Mode v2 w trybie zaawansowanym (Advanced). Dla użytkowników z regionów objętych regulacjami wszystkie sygnały zgody (ad_storage,
+              ad_user_data, ad_personalization, analytics_storage) są domyślnie ustawione na &quot;denied&quot; i aktualizowane dopiero po wyrażeniu zgody. Dla użytkowników z pozostałych regionów
+              zgody są domyślnie ustawione na &quot;granted&quot;.
+            </p>
             <p>
               Możesz zrezygnować z personalizacji reklam na stronie{' '}
               <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
@@ -105,10 +121,6 @@ export default function PrivacyPolicyPage() {
                 aboutads.info
               </a>
               .
-            </p>
-            <p>
-              Strona wykorzystuje mechanizm Google Consent Mode v2. Oznacza to, że skrypty analityczne i reklamowe Google nie zbierają danych do czasu wyrażenia zgody przez użytkownika w bannerze
-              cookie.
             </p>
             <p>Możesz zarządzać plikami cookie w ustawieniach swojej przeglądarki. Ograniczenie plików cookie może wpłynąć na niektóre funkcje serwisu.</p>
           </SectionInfo>

@@ -1,0 +1,241 @@
+{
+  "toolKey": "csvToJson",
+  "locale": "fi",
+  "metadata": {
+    "title": "CSV JSON -muunnin — CSV JSON",
+    "description": "Muunna CSV JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/csv-json-muunnin"
+  },
+  "hero": {
+    "title": "CSV JSON -muunnin",
+    "description": "Muunna CSV JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/csv-json-muunnin",
+      "label": "CSV JSON -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "CSV JSON -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Muunna CSV JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+      "featureList": ["CSV to JSON conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert CSV to JSON", "CSV to JSON", "Free CSV to JSON converter"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa CSV JSON-muotoon",
+      "description": "Muunna CSV JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Liitä tietosi",
+          "text": "Liitä CSV-tiedot syöttökenttään."
+        },
+        {
+          "position": 2,
+          "name": "Muunna",
+          "text": "Napsauta Muunna muuntaaksesi CSV-tiedot JSON-muotoon."
+        },
+        {
+          "position": 3,
+          "name": "Kopioi tai lataa",
+          "text": "Kopioi JSON-tulos tai lataa tiedostona."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miksi muuntaa CSV JSON-muotoon?",
+      "html": "<p class=\"text-mid mb-4\">Muunna CSV JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "CSV to JSON conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuinka muuntaa CSV JSON-muotoon",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Liitä tietosi",
+          "description": "Liitä CSV-tiedot syöttökenttään.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Muunna",
+          "description": "Napsauta Muunna muuntaaksesi CSV-tiedot JSON-muotoon.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopioi tai lataa",
+          "description": "Kopioi JSON-tulos tai lataa tiedostona.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erilaisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täydellinen yksityisyys",
+          "description": "Tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata palvelimelle."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta tiedostoa kuin tarvitset. Ei päivittäisiä rajoja."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Laatukontrolli",
+          "description": "Säädä asetuksia löytääksesi täydellisen tasapainon tiedostokoon ja laadun välillä."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "CSV vs JSON – muotovertailu",
+      "plans": [
+        {
+          "id": "csv",
+          "name": "CSV"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sisäkkäinen data",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Taulukkodata",
+          "values": {
+            "csv": true,
+            "json": false
+          }
+        },
+        {
+          "name": "Skeemavalidointi",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Ihmisen luettavissa",
+          "values": {
+            "csv": true,
+            "json": true
+          }
+        },
+        {
+          "name": "API-standardi",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Kompakti syntaksi",
+          "values": {
+            "csv": true,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset CSV-JSON-muunnoksesta",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Onko CSV-muunnos JSON-muotoon ilmainen?",
+          "answer": "Kyllä, tämä muunnin on täysin ilmainen ja rajoittamaton. Ei rekisteröitymistä, ei vesileimoja."
+        },
+        {
+          "question": "Lataako muunnin tiedostoni palvelimelle?",
+          "answer": "Ei. Kaikki käsittely tapahtuu paikallisesti selaimessasi. Tiedostosi eivät koskaan poistu laitteeltasi."
+        },
+        {
+          "question": "Voinko muuntaa useita tiedostoja kerralla?",
+          "answer": "Kyllä, muunnin tukee erämuunnosta."
+        },
+        {
+          "question": "Toimiiko muunnin mobiilissa?",
+          "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa jotain? Lähetä meille viesti – vastaamme 24 tunnin sisällä.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "CSV JSON -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

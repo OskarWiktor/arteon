@@ -1,0 +1,286 @@
+{
+  "toolKey": "htmlToMarkdown",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter HTML na Markdown — darmowy, bez rejestracji",
+    "description": "Zamień kod HTML na czytelny Markdown. Idealny do dokumentacji, blogów i repozytoriów. Bez rejestracji — konwersja lokalna w przeglądarce.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-html-na-markdown"
+  },
+  "hero": {
+    "title": "Zamień kod HTML na czytelny Markdown",
+    "description": "Wklej kod HTML, a narzędzie zamieni go na czytelny tekst w formacie Markdown. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-html-na-markdown",
+      "label": "Konwerter HTML na Markdown"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter HTML na Markdown — darmowy, bez rejestracji",
+      "alternateName": ["Zamiana HTML na Markdown online", "Konwersja HTML do Markdown", "HTML to Markdown converter"],
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Darmowy konwerter HTML na Markdown online. Zamień dane HTML na Markdown w przeglądarce — dane nie są wysyłane na serwer.",
+      "featureList": ["Konwersja HTML na Markdown", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+    },
+    "howTo": {
+      "name": "Jak zamienić HTML na Markdown online",
+      "description": "Instrukcja konwersji danych HTML na format Markdown.",
+      "steps": [
+        {
+          "name": "Wklej dane HTML",
+          "text": "Wklej dane w formacie HTML w pole tekstowe lub wgraj plik z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Kliknij przycisk Konwertuj, aby zamienić dane na format Markdown."
+        },
+        {
+          "name": "Skopiuj lub pobierz wynik",
+          "text": "Skopiuj wynikowy Markdown do schowka lub pobierz jako plik."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować HTML na Markdown?",
+      "html": "<p class=\"text-mid mb-4\">HTML to język znaczników stron internetowych — potężny, ale trudny do czytania i edycji. Markdown to prosty format tekstowy, który jest łatwiejszy do pisania i czytania przez człowieka.</p><p class=\"text-mid mb-4\">Konwersja HTML na Markdown przydaje się, gdy przenosisz treści ze strony internetowej do repozytorium GitHub, dokumentacji technicznej lub systemu blogowego opartego na Markdown (Jekyll, Hugo, Gatsby).</p><p class=\"text-mid\">Nasz konwerter rozpoznaje tagi semantyczne HTML i zamienia je na odpowiedni Markdown — nagłówki, listy, linki, obrazy i bloki kodu.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter HTML na Markdown – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować HTML na Markdown?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wklej kod HTML",
+          "description": "Wklej kod HTML w pole tekstowe lub wgraj plik z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kliknij Konwertuj",
+          "description": "Narzędzie zamieni HTML na czytelny Markdown z poprawną składnią.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub pobierz",
+          "description": "Skopiuj wynik do schowka lub pobierz jako plik .md.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HTML vs Markdown — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">HTML</th><th class=\"text-dark py-2 text-left font-semibold\">Markdown</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Składnia</td><td class=\"text-mid py-2 pr-4\">Tagi (&lt;h1&gt;, &lt;p&gt;, &lt;a&gt;)</td><td class=\"text-mid py-2\">Prosta (# ## * - []())</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Czytelność źródła</td><td class=\"text-mid py-2 pr-4\">Niska</td><td class=\"text-mid py-2\">Wysoka</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Edycja ręczna</td><td class=\"text-mid py-2 pr-4\">Trudna</td><td class=\"text-mid py-2\">Prosta</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Strony internetowe</td><td class=\"text-mid py-2\">Dokumentacja, README, blogi</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować HTML na Markdown?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGitBranchLine",
+          "title": "Dokumentacja GitHub",
+          "description": "README i wiki na GitHubie używają Markdown — zamień treść HTML na Markdown."
+        },
+        {
+          "icon": "RiArticleLine",
+          "title": "Blog statyczny",
+          "description": "Jekyll, Hugo i Gatsby używają Markdown — przenieś treści HTML ze starego bloga."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Łatwiejsza edycja",
+          "description": "Markdown jest prostszy do edycji niż HTML — przejdź na czytelniejszy format."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Notatki",
+          "description": "Zamień skopiowany HTML ze strony na czytelne notatki w Markdown."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter HTML na Markdown?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Kod nie opuszcza komputera. Konwersja odbywa się w przeglądarce."
+        },
+        {
+          "icon": "RiMarkdownLine",
+          "title": "Czytelny wynik",
+          "description": "Markdown jest łatwiejszy do czytania i edycji niż HTML — idealny do dokumentacji."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Rozpoznawanie tagów",
+          "description": "Konwerter rozpoznaje h1–h6, p, ul, ol, a, img, code, blockquote i inne tagi."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Kopiuj lub pobierz",
+          "description": "Wynik możesz skopiować do schowka lub pobrać jako plik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji HTML na Markdown",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Konwerter rozpoznaje tagi semantyczne: h1–h6, p, ul, ol, a, img, code, blockquote, table.</li><li>Elementy HTML bez odpowiednika w Markdown (div, span) są pomijane — zachowywana jest treść tekstowa.</li><li>Inline style i klasy CSS są usuwane — Markdown nie obsługuje stylowania.</li><li>Tabele HTML są konwertowane na składnię tabel Markdown (GFM).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HTML vs Markdown – porównanie formatów",
+      "plans": [
+        {
+          "id": "html",
+          "name": "HTML"
+        },
+        {
+          "id": "markdown",
+          "name": "Markdown",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dane zagnieżdżone",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Dane tabelaryczne",
+          "values": {
+            "html": true,
+            "markdown": true
+          }
+        },
+        {
+          "name": "Walidacja schematu",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Czytelność dla człowieka",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        },
+        {
+          "name": "Standard API",
+          "values": {
+            "html": false,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Zwięzła składnia",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji HTML na Markdown",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Jakie tagi HTML obsługuje konwerter?",
+          "answer": "Konwerter obsługuje najważniejsze tagi semantyczne: nagłówki (h1–h6), paragrafy, listy (ul, ol), linki, obrazy, bloki kodu, tabele, cytaty i wyróżnienia tekstu (bold, italic)."
+        },
+        {
+          "question": "Czy kod jest wysyłany na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Kod nie opuszcza komputera."
+        },
+        {
+          "question": "Co z elementami HTML bez odpowiednika w Markdown?",
+          "answer": "Elementy bez odpowiednika w Markdown (np. div, span) są pomijane — zachowywana jest tylko treść tekstowa."
+        },
+        {
+          "question": "Do czego przydaje się Markdown?",
+          "answer": "Markdown jest standardem w repozytoriach GitHub/GitLab, dokumentacji technicznej, blogach statycznych (Jekyll, Hugo), notatnikach Jupyter i systemach CMS obsługujących Markdown."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter HTML na Markdown – Arteon",
+      "defaultSubject": "Feedback: Konwerter HTML na Markdown"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

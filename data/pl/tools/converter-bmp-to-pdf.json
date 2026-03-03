@@ -1,0 +1,293 @@
+{
+  "toolKey": "bmpToPdf",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter BMP na PDF — darmowy, bez rejestracji",
+    "description": "Zamień pliki BMP na PDF w przeglądarce. Połącz wiele obrazów w jeden dokument. Bez limitu plików, bez rejestracji — konwersja lokalna.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-bmp-na-pdf"
+  },
+  "hero": {
+    "title": "Zamień pliki BMP na dokument PDF",
+    "description": "Wgraj pliki BMP, a narzędzie zamieni je na dokument PDF. Każdy obraz trafia na osobną stronę A4. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-bmp-na-pdf",
+      "label": "Konwerter BMP na PDF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter BMP na PDF — darmowy, bez limitu",
+      "alternateName": ["Zamiana BMP na PDF online", "Konwersja BMP do PDF", "BMP to PDF converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Darmowy konwerter BMP na PDF online. Zamień pliki BMP na dokument PDF w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja BMP do PDF", "Łączenie wielu plików w jeden PDF", "Automatyczna orientacja strony A4", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić BMP na PDF online",
+      "description": "Instrukcja konwersji plików BMP na format PDF.",
+      "steps": [
+        {
+          "name": "Dodaj pliki BMP",
+          "text": "Przeciągnij pliki BMP na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Kliknij przycisk Konwertuj, aby zamienić obrazy BMP na PDF."
+        },
+        {
+          "name": "Pobierz PDF",
+          "text": "Po konwersji pobierz gotowy plik PDF."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować BMP na PDF?",
+      "html": "<p class=\"text-mid mb-4\">BMP (Bitmap) to nieskompresowany format graficzny. Pliki BMP zajmują dużo miejsca, ale zachowują pełną jakość obrazu. PDF to uniwersalny format dokumentów odczytywalny na każdym urządzeniu.</p><p class=\"text-mid mb-4\">Konwersja BMP na PDF przydaje się do archiwizacji skanów, łączenia materiałów graficznych w jeden dokument lub przygotowania plików do druku.</p><p class=\"text-mid\">Nasz konwerter działa lokalnie w przeglądarce — pliki nie opuszczają komputera.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter BMP na PDF – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować BMP na PDF?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dodaj pliki BMP",
+          "description": "Przeciągnij pliki BMP na wyznaczone pole albo wybierz je z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kliknij Konwertuj",
+          "description": "Każdy obraz BMP trafi na osobną stronę PDF z zachowaniem proporcji.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Pobierz PDF",
+          "description": "Pobierz gotowy dokument PDF jednym kliknięciem.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "BMP vs PDF — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">BMP</th><th class=\"text-dark py-2 text-left font-semibold\">PDF</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Brak (nieskompresowany)</td><td class=\"text-mid py-2\">Bez dodatkowej kompresji</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Bardzo duży</td><td class=\"text-mid py-2\">Kompaktowy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Wiele stron</td><td class=\"text-mid py-2 pr-4\">Nie</td><td class=\"text-mid py-2\">Tak</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Stare systemy Windows</td><td class=\"text-mid py-2\">Dokumenty, druk, archiwizacja</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować BMP na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiArchiveLine",
+          "title": "Archiwizacja starych grafik",
+          "description": "BMP to przestarzały format — PDF zapewnia lepszą archiwizację i kompatybilność."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Zmniejszenie rozmiaru",
+          "description": "BMP jest nieskompresowany — PDF z obrazem JPEG zajmuje wielokrotnie mniej miejsca."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Druk",
+          "description": "PDF zachowuje dokładne wymiary i proporcje obrazu na wydruku."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumentacja",
+          "description": "Połącz wiele plików BMP w jeden dokument PDF."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter BMP na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Automatyczna orientacja",
+          "description": "Orientacja strony A4 dopasowuje się automatycznie do kształtu obrazu (pionowa lub pozioma)."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pobierz gotowy PDF jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji BMP na PDF",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>BMP to format nieskompresowany — pliki BMP są wielokrotnie większe niż JPG czy PNG o tej samej rozdzielczości.</li><li>Konwersja na PDF jest dobrym sposobem na zmniejszenie rozmiaru pliku przy zachowaniu jakości.</li><li>Jeśli nie potrzebujesz dokumentu PDF, rozważ <a href=\"/narzedzia/konwerter-bmp-na-jpg\">konwersję BMP na JPG</a> lub <a href=\"/narzedzia/konwerter-bmp-na-png\">BMP na PNG</a>.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs PDF – porównanie formatów",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "bmp": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "bmp": false,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "bmp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji BMP na PDF",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy mogę połączyć wiele plików BMP w jeden PDF?",
+          "answer": "Tak, możesz dodać wiele plików BMP — każdy z nich trafi na osobną stronę w wygenerowanym dokumencie PDF."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Jaka jest jakość obrazu w PDF?",
+          "answer": "Obrazy są osadzane w PDF z jakością 92%, co zapewnia dobry kompromis między rozmiarem pliku a jakością wizualną."
+        },
+        {
+          "question": "Czy konwerter działa na telefonie?",
+          "answer": "Tak, konwerter działa w przeglądarce na urządzeniach mobilnych z systemem Android i iOS."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter BMP na PDF – Arteon",
+      "defaultSubject": "Feedback: Konwerter BMP na PDF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "toolKey": "heicToPdf",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter HEIC na PDF — zdjęcia z iPhone do PDF",
+    "description": "Zamień pliki HEIC z iPhone na PDF w przeglądarce. Połącz wiele zdjęć w jeden dokument. Bez rejestracji — konwersja lokalna.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-heic-na-pdf"
+  },
+  "hero": {
+    "title": "Zamień zdjęcia HEIC z iPhone na PDF",
+    "description": "Wgraj pliki HEIC, a narzędzie zamieni je na dokument PDF. Idealne do archiwizacji zdjęć z iPhone. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-heic-na-pdf",
+      "label": "Konwerter HEIC na PDF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter HEIC na PDF — darmowy, bez limitu",
+      "alternateName": ["Zamiana HEIC na PDF online", "Konwersja HEIC do PDF", "HEIC to PDF converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Darmowy konwerter HEIC na PDF online. Zamień pliki HEIC na dokument PDF w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja HEIC do PDF", "Łączenie wielu plików w jeden PDF", "Automatyczna orientacja strony A4", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić HEIC na PDF online",
+      "description": "Instrukcja konwersji plików HEIC na format PDF.",
+      "steps": [
+        {
+          "name": "Dodaj pliki HEIC",
+          "text": "Przeciągnij pliki HEIC na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Kliknij przycisk Konwertuj, aby zamienić obrazy HEIC na PDF."
+        },
+        {
+          "name": "Pobierz PDF",
+          "text": "Po konwersji pobierz gotowy plik PDF."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować HEIC na PDF?",
+      "html": "<p class=\"text-mid mb-4\">HEIC (High Efficiency Image Container) to domyślny format zdjęć na urządzeniach Apple od iOS 11. Oferuje lepszą kompresję niż JPG, ale nie jest uniwersalnie obsługiwany.</p><p class=\"text-mid mb-4\">Konwersja HEIC na PDF pozwala szybko połączyć zdjęcia z iPhone w jeden dokument — np. do przesłania e-mailem, archiwizacji lub druku. PDF otworzysz na każdym urządzeniu.</p><p class=\"text-mid\">Nasz konwerter dekoduje HEIC lokalnie w przeglądarce — pliki nie są wysyłane na żaden serwer.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter HEIC na PDF – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować HEIC na PDF?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dodaj pliki HEIC",
+          "description": "Przeciągnij pliki HEIC na wyznaczone pole albo wybierz je z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kliknij Konwertuj",
+          "description": "Każdy obraz HEIC trafi na osobną stronę PDF z zachowaniem proporcji.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Pobierz PDF",
+          "description": "Pobierz gotowy dokument PDF jednym kliknięciem.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC vs PDF — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">HEIC</th><th class=\"text-dark py-2 text-left font-semibold\">PDF</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Źródło</td><td class=\"text-mid py-2 pr-4\">iPhone / iPad (Apple)</td><td class=\"text-mid py-2\">Uniwersalny standard</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">HEVC — lepsza niż JPG</td><td class=\"text-mid py-2\">Bez dodatkowej kompresji</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompatybilność</td><td class=\"text-mid py-2 pr-4\">Apple + nowsze Windows</td><td class=\"text-mid py-2\">Każdy system i program</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Zdjęcia z iPhone</td><td class=\"text-mid py-2\">Dokumenty, druk, archiwizacja</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować HEIC na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Zdjęcia z iPhone",
+          "description": "iPhone domyślnie zapisuje zdjęcia w HEIC — PDF ułatwia udostępnianie na każdym urządzeniu."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Druk zdjęć Apple",
+          "description": "Większość drukarek nie obsługuje HEIC — PDF drukuje się bez problemów."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Wysyłka do klientów",
+          "description": "Klient z Windowsem może nie otworzyć HEIC — PDF otworzy każdy."
+        },
+        {
+          "icon": "RiArchiveLine",
+          "title": "Archiwizacja zdjęć",
+          "description": "PDF jest standardem archiwizacji — zdjęcia w PDF przetrwają zmiany technologii."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter HEIC na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Automatyczna orientacja",
+          "description": "Orientacja strony A4 dopasowuje się automatycznie do kształtu obrazu (pionowa lub pozioma)."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pobierz gotowy PDF jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji HEIC na PDF",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>HEIC to format Apple używany od iOS 11 — zdjęcia z iPhone i iPad są domyślnie w tym formacie.</li><li>Konwersja HEIC wymaga dekodowania w przeglądarce — obsługiwana jest na nowszych wersjach Chrome i Safari.</li><li>Jeśli chcesz zachować zdjęcia jako obrazy (nie dokument), rozważ <a href=\"/narzedzia/konwerter-heic-na-jpg\">konwersję HEIC na JPG</a>.</li><li>Dla zachowania najwyższej jakości użyj <a href=\"/narzedzia/konwerter-heic-na-png\">konwersji HEIC na PNG</a>.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs PDF – porównanie formatów",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "heic": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "heic": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "heic": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "heic": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "heic": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "heic": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "heic": true,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji HEIC na PDF",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy mogę połączyć wiele plików HEIC w jeden PDF?",
+          "answer": "Tak, możesz dodać wiele plików HEIC — każdy z nich trafi na osobną stronę w wygenerowanym dokumencie PDF."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Jaka jest jakość obrazu w PDF?",
+          "answer": "Obrazy są osadzane w PDF z jakością 92%, co zapewnia dobry kompromis między rozmiarem pliku a jakością wizualną."
+        },
+        {
+          "question": "Czy konwerter działa na telefonie?",
+          "answer": "Tak, konwerter działa w przeglądarce na urządzeniach mobilnych z systemem Android i iOS."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter HEIC na PDF – Arteon",
+      "defaultSubject": "Feedback: Konwerter HEIC na PDF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

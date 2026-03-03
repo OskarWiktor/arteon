@@ -1,0 +1,293 @@
+{
+  "toolKey": "pdfToWebp",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter PDF na WebP — lekkie obrazy ze stron PDF",
+    "description": "Zamień każdą stronę PDF na lekki obraz WebP. Idealny do stron internetowych. Bez rejestracji, bez limitu — konwersja w przeglądarce.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-pdf-na-webp"
+  },
+  "hero": {
+    "title": "Zamień strony PDF na lekkie obrazy WebP",
+    "description": "Wgraj plik PDF, a narzędzie zamieni każdą stronę na lekki obraz WebP — idealny do publikacji na stronie internetowej. Konwersja odbywa się lokalnie.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-pdf-na-webp",
+      "label": "Konwerter PDF na WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter PDF na WebP — darmowy, bez limitu stron",
+      "alternateName": ["Zamiana PDF na WebP online", "Konwersja PDF do WebP", "PDF to WebP converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Darmowy konwerter PDF na WebP online. Zamień strony PDF na obrazy WebP w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja stron PDF na WebP", "Przetwarzanie wszystkich stron dokumentu", "Renderowanie lokalne w przeglądarce", "Pobieranie pojedynczo lub wszystkich naraz"]
+    },
+    "howTo": {
+      "name": "Jak zamienić PDF na WebP online",
+      "description": "Instrukcja konwersji stron PDF na format WebP.",
+      "steps": [
+        {
+          "name": "Wgraj plik PDF",
+          "text": "Przeciągnij plik PDF na wyznaczone pole albo wybierz go z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Narzędzie wyrenderuje każdą stronę PDF jako obraz WebP."
+        },
+        {
+          "name": "Pobierz pliki WebP",
+          "text": "Pobierz każdą stronę jako osobny plik WebP lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować PDF na WebP?",
+      "html": "<p class=\"text-mid mb-4\">WebP to nowoczesny format obrazu stworzony przez Google, który oferuje doskonałą kompresję — pliki są nawet o 30% mniejsze niż JPG przy porównywalnej jakości. WebP jest obsługiwany przez wszystkie nowoczesne przeglądarki.</p><p class=\"text-mid mb-4\">Konwersja PDF na WebP przydaje się, gdy chcesz opublikować strony dokumentu na stronie internetowej — lekkie obrazy WebP ładują się szybciej i poprawiają wynik Core Web Vitals.</p><p class=\"text-mid\">Nasz konwerter renderuje PDF lokalnie w przeglądarce — pliki nie są wysyłane na żaden serwer zewnętrzny.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PDF na WebP – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować PDF na WebP?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wgraj plik PDF",
+          "description": "Przeciągnij plik PDF na wyznaczone pole albo wybierz go z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Rozpocznij konwersję",
+          "description": "Narzędzie wyrenderuje każdą stronę jako lekki obraz WebP.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Pobierz obrazy",
+          "description": "Pobierz każdą stronę jako osobny plik WebP lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "PDF vs WebP — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PDF</th><th class=\"text-dark py-2 text-left font-semibold\">WebP</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Format dokumentu</td><td class=\"text-mid py-2\">Format obrazu (web)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar</td><td class=\"text-mid py-2 pr-4\">Zależy od zawartości</td><td class=\"text-mid py-2\">Mały (lepsza kompresja niż JPG)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Obsługa przeglądarek</td><td class=\"text-mid py-2 pr-4\">Przez wtyczki/czytniki</td><td class=\"text-mid py-2\">Natywna we wszystkich nowoczesnych</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Dokumenty, druk</td><td class=\"text-mid py-2\">Strony internetowe</td></tr></tbody></table></div><p class=\"text-mid mt-4\">WebP jest idealny do publikacji stron PDF na stronach internetowych — szybkie ładowanie i dobra jakość.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować PDF na WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGlobalLine",
+          "title": "Publikacja w internecie",
+          "description": "WebP ładuje się szybciej niż JPG/PNG — idealny do osadzania stron PDF na stronie."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Core Web Vitals",
+          "description": "Lekkie obrazy WebP poprawiają wynik Largest Contentful Paint (LCP) i PageSpeed."
+        },
+        {
+          "icon": "RiShareLine",
+          "title": "Social media",
+          "description": "Nowoczesne platformy obsługują WebP — lekkie pliki szybciej się ładują."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Aplikacje mobilne",
+          "description": "WebP jest wspierany przez iOS i Android — mniejsze pliki = szybsze ładowanie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter PDF na WebP?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Renderowanie odbywa się w przeglądarce za pomocą PDF.js."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu stron",
+          "description": "Narzędzie przetworzy każdą stronę dokumentu — bez ograniczeń."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Wysoka jakość",
+          "description": "Strony PDF są renderowane w wysokiej rozdzielczości jako obrazy WebP."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pobierz strony pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji PDF na WebP",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>WebP oferuje kompresję o ok. 30% lepszą niż JPG przy porównywalnej jakości — idealny do stron internetowych.</li><li>Jeśli strona PDF zawiera dużo tekstu, WebP z wyższą jakością (90%+) zachowa czytelność.</li><li>Dla zastosowań offline (prezentacje, e-mail) rozważ <a href=\"/narzedzia/konwerter-pdf-na-jpg\">konwersję PDF na JPG</a> — lepsza kompatybilność.</li><li>WebP jest obsługiwany przez Chrome, Firefox, Safari, Edge i Opera.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs WebP – porównanie formatów",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "pdf": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "pdf": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji PDF na WebP",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Dlaczego WebP zamiast JPG lub PNG?",
+          "answer": "WebP oferuje lepszą kompresję niż JPG (o ok. 30%) i mniejsze pliki niż PNG. Jest idealny do publikacji na stronach internetowych, gdzie szybkość ładowania ma znaczenie."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą biblioteki PDF.js. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Czy WebP jest obsługiwany przez wszystkie przeglądarki?",
+          "answer": "Tak, WebP jest obsługiwany przez Chrome, Firefox, Safari, Edge i Opera. Jedynie bardzo stare przeglądarki mogą mieć problemy z wyświetlaniem."
+        },
+        {
+          "question": "Ile stron PDF mogę przekonwertować?",
+          "answer": "Nie ma limitu stron. Narzędzie przetworzy każdą stronę dokumentu PDF na osobny obraz WebP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PDF na WebP – Arteon",
+      "defaultSubject": "Feedback: Konwerter PDF na WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

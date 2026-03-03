@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "TIFF vs AVIF – comparație de formate",
+      "plans": [
+        {
+          "id": "tiff",
+          "name": "TIFF"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "tiff": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "tiff": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "tiff": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia TIFF în AVIF",
       "openByDefault": 0,

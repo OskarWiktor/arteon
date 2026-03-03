@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs AVIF – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "bmp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "bmp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a BMP-AVIF konvertálásról",
       "openByDefault": 0,

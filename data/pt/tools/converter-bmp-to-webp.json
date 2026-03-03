@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs WebP – comparação de formatos",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compressão com perda",
+          "values": {
+            "bmp": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Compressão sem perda",
+          "values": {
+            "bmp": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Transparência (canal alfa)",
+          "values": {
+            "bmp": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Suporte a animação",
+          "values": {
+            "bmp": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Suporte em navegadores",
+          "values": {
+            "bmp": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Tamanho de ficheiro compacto",
+          "values": {
+            "bmp": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadados (EXIF)",
+          "values": {
+            "bmp": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de BMP para WebP",
       "openByDefault": 0,

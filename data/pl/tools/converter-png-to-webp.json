@@ -51,7 +51,10 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować PNG na WebP?",
@@ -59,15 +62,26 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter PNG na WebP – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować PNG na WebP?",
       "description": "Konwersja PNG na WebP zajmuje kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki PNG", "description": "Przeciągnij pliki PNG na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.", "icon": "RiUploadLine" },
-        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości WebP (domyślnie 80%). Przezroczystość zostanie zachowana niezależnie od wybranej jakości.", "icon": "RiEqualizerLine" },
+        {
+          "title": "1. Dodaj pliki PNG",
+          "description": "Przeciągnij pliki PNG na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości WebP (domyślnie 80%). Przezroczystość zostanie zachowana niezależnie od wybranej jakości.",
+          "icon": "RiEqualizerLine"
+        },
         {
           "title": "3. Pobierz WebP",
           "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz. Przy każdym pliku widoczna jest informacja o zaoszczędzonym miejscu.",
@@ -75,7 +89,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kiedy konwertować PNG na WebP?",
@@ -104,19 +121,29 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "PNG vs WebP — kluczowe różnice",
       "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PNG</th><th class=\"text-dark py-2 text-left font-semibold\">WebP</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Bezstratna</td><td class=\"text-mid py-2\">Stratna lub bezstratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak (kanał alfa)</td><td class=\"text-mid py-2\">Tak (kanał alfa)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Duży</td><td class=\"text-mid py-2\">Mniejszy (~26% mniej)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Animacja</td><td class=\"text-mid py-2 pr-4\">APNG (ograniczone wsparcie)</td><td class=\"text-mid py-2\">Tak</td></tr><tr><td class=\"text-mid py-2 pr-4\">Kompatybilność</td><td class=\"text-mid py-2 pr-4\">Uniwersalna</td><td class=\"text-mid py-2\">Nowoczesne przeglądarki</td></tr></tbody></table></div><p class=\"text-mid mt-4\">WebP oferuje lepszą kompresję niż PNG zarówno w trybie stratnym, jak i bezstratnym. Przy kompresji stratnej (domyślnie 80%) różnica wizualna jest praktycznie niezauważalna, a plik jest o 25–50% mniejszy. Wszystkie nowoczesne przeglądarki (Chrome, Firefox, Safari 14+, Edge) obsługują WebP.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter PNG na WebP?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
         {
           "icon": "RiInfinityFill",
           "title": "Bez limitu plików",
@@ -127,16 +154,96 @@
           "title": "Zachowanie przezroczystości",
           "description": "Kanał alfa (przezroczystość) z pliku PNG jest zachowywany w wynikowym WebP. Nie trzeba ustawiać żadnych dodatkowych opcji."
         },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać jednym kliknięciem." }
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Przekonwertowane pliki można pobrać jednym kliknięciem."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs WebP – porównanie formatów",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "png": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "png": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "png": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "png": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "png": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "png": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "png": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji PNG na WebP",
       "openByDefault": 1,
       "items": [
-        { "question": "Czy WebP zachowuje przezroczystość PNG?", "answer": "Tak. WebP obsługuje kanał alfa (przezroczystość) tak samo jak PNG. Przezroczyste obszary zostaną zachowane w pliku WebP." },
+        {
+          "question": "Czy WebP zachowuje przezroczystość PNG?",
+          "answer": "Tak. WebP obsługuje kanał alfa (przezroczystość) tak samo jak PNG. Przezroczyste obszary zostaną zachowane w pliku WebP."
+        },
         {
           "question": "Ile miejsca mogę zaoszczędzić?",
           "answer": "Typowa oszczędność to 25–50% w porównaniu z PNG. Grafiki z dużymi jednolitymi obszarami (logo, ikony) kompresują się lepiej. Zdjęcia z przezroczystością dają mniejsze oszczędności."
@@ -153,10 +260,16 @@
           "question": "Czy mogę konwertować wiele plików naraz?",
           "answer": "Tak. Można dodać dowolną liczbę plików PNG jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
         },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." }
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -165,8 +278,17 @@
       "imageAlt": "Konwerter PNG na WebP – Arteon",
       "defaultSubject": "Feedback: Konwerter PNG na WebP"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

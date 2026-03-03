@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs GIF – srovnání formátů",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "png": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "png": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "png": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "png": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "png": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "png": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "png": false,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu PNG na GIF",
       "openByDefault": 0,

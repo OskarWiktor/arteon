@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs GIF – formatjämförelse",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Förlustrik komprimering",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Förlustfri komprimering",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Transparens (alfakanal)",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Animationsstöd",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Webbläsarstöd",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Kompakt filstorlek",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om konvertering av WebP till GIF",
       "openByDefault": 0,

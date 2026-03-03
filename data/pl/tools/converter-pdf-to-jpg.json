@@ -1,0 +1,293 @@
+{
+  "toolKey": "pdfToJpg",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter PDF na JPG — zapisz strony jako obrazy",
+    "description": "Zamień każdą stronę PDF na osobny obraz JPG. Bez rejestracji, bez limitu stron — konwersja lokalna w przeglądarce.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-pdf-na-jpg"
+  },
+  "hero": {
+    "title": "Zamień strony PDF na obrazy JPG",
+    "description": "Wgraj plik PDF, a narzędzie zamieni każdą stronę na osobny obraz JPG. Wybierz jakość i pobierz wyniki. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-pdf-na-jpg",
+      "label": "Konwerter PDF na JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter PDF na JPG — darmowy, bez limitu stron",
+      "alternateName": ["Zamiana PDF na JPG online", "Konwersja PDF do JPG", "PDF to JPG converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Darmowy konwerter PDF na JPG online. Zamień strony PDF na obrazy JPG w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja stron PDF na JPG", "Przetwarzanie wszystkich stron dokumentu", "Renderowanie lokalne w przeglądarce", "Pobieranie pojedynczo lub wszystkich naraz"]
+    },
+    "howTo": {
+      "name": "Jak zamienić PDF na JPG online",
+      "description": "Instrukcja konwersji stron PDF na format JPG.",
+      "steps": [
+        {
+          "name": "Wgraj plik PDF",
+          "text": "Przeciągnij plik PDF na wyznaczone pole albo wybierz go z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Narzędzie wyrenderuje każdą stronę PDF jako obraz JPG."
+        },
+        {
+          "name": "Pobierz pliki JPG",
+          "text": "Pobierz każdą stronę jako osobny plik JPG lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować PDF na JPG?",
+      "html": "<p class=\"text-mid mb-4\">PDF to uniwersalny format dokumentów. Czasem jednak potrzebujesz poszczególnych stron jako obrazów — np. do prezentacji, mediów społecznościowych, wstawienia do innego dokumentu lub do druku bez programu PDF.</p><p class=\"text-mid mb-4\">JPG to najbardziej rozpowszechniony format graficzny na świecie. Działa w każdym programie, przeglądarce i systemie operacyjnym. Pliki JPG mają mały rozmiar dzięki kompresji stratnej.</p><p class=\"text-mid\">Nasz konwerter renderuje PDF w przeglądarce za pomocą biblioteki PDF.js — pliki nie są wysyłane na żaden serwer zewnętrzny.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PDF na JPG – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować PDF na JPG?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wgraj plik PDF",
+          "description": "Przeciągnij plik PDF na wyznaczone pole albo wybierz go z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ustaw jakość JPG",
+          "description": "Wybierz jakość za pomocą suwaka. Domyślna wartość 85% to dobry kompromis między rozmiarem a jakością.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz obrazy",
+          "description": "Pobierz każdą stronę jako osobny plik JPG lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "PDF vs JPG — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PDF</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Format dokumentu</td><td class=\"text-mid py-2\">Format obrazu rastrowego</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Wiele stron</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie (1 obraz = 1 plik)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar</td><td class=\"text-mid py-2 pr-4\">Zależy od zawartości</td><td class=\"text-mid py-2\">Mały (kompresja stratna)</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Dokumenty, druk</td><td class=\"text-mid py-2\">Zdjęcia, web, social media</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Jeśli zależy ci na bezstratnej jakości tekstu, rozważ <a href=\"/narzedzia/konwerter-pdf-na-png\">konwersję PDF na PNG</a>.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować PDF na JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShareLine",
+          "title": "Social media",
+          "description": "Platformy społecznościowe nie obsługują PDF — zamień strony na JPG i opublikuj."
+        },
+        {
+          "icon": "RiPresentationLine",
+          "title": "Prezentacje",
+          "description": "Wstaw stronę PDF jako obraz JPG do prezentacji PowerPoint lub Google Slides."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Podgląd dokumentu",
+          "description": "Wyślij miniaturę strony PDF jako JPG zamiast całego dokumentu."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "E-mail",
+          "description": "Załącz obraz JPG strony zamiast całego PDF — szybsze ładowanie i podgląd w skrzynce."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter PDF na JPG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Renderowanie odbywa się w przeglądarce za pomocą PDF.js."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu stron",
+          "description": "Narzędzie przetworzy każdą stronę dokumentu — bez ograniczeń."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Wysoka jakość",
+          "description": "Strony PDF są renderowane w wysokiej rozdzielczości jako obrazy JPG."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pobierz strony pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji PDF na JPG",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>JPG używa kompresji stratnej — dla dokumentów z dużą ilością tekstu rozważ format PNG.</li><li>Jakość 85% to optymalny kompromis między rozmiarem pliku a czytelnością tekstu.</li><li>Każda strona PDF staje się osobnym plikiem JPG — pobierz wszystkie naraz jednym kliknięciem.</li><li>Dla obrazów do publikacji w internecie rozważ <a href=\"/narzedzia/konwerter-pdf-na-webp\">konwersję PDF na WebP</a> — mniejsze pliki.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs JPG – porównanie formatów",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "pdf": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "pdf": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "pdf": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "pdf": false,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "pdf": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "pdf": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "pdf": false,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji PDF na JPG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile stron PDF mogę przekonwertować?",
+          "answer": "Nie ma limitu stron. Narzędzie przetworzy każdą stronę dokumentu PDF na osobny obraz JPG."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą biblioteki PDF.js. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Jaka jest rozdzielczość obrazów?",
+          "answer": "Domyślna rozdzielczość to 150 DPI, co daje dobre wyniki dla wyświetlania na ekranie. Dla druku zalecamy wyższą rozdzielczość."
+        },
+        {
+          "question": "Czy mogę wybrać tylko niektóre strony?",
+          "answer": "Obecnie narzędzie konwertuje wszystkie strony dokumentu. Możesz pobrać tylko wybrane pliki JPG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PDF na JPG – Arteon",
+      "defaultSubject": "Feedback: Konwerter PDF na JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

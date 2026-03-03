@@ -1,0 +1,241 @@
+{
+  "toolKey": "jsonToYaml",
+  "locale": "nl",
+  "metadata": {
+    "title": "JSON naar YAML converter — JSON YAML",
+    "description": "Converteer JSON naar YAML-formaat. Automatisch parsen en formatteren. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/json-naar-yaml-converter"
+  },
+  "hero": {
+    "title": "JSON naar YAML converter",
+    "description": "Converteer JSON naar YAML-formaat. Automatisch parsen en formatteren. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/json-naar-yaml-converter",
+      "label": "JSON naar YAML converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JSON naar YAML converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Converteer JSON naar YAML-formaat. Automatisch parsen en formatteren. Gratis.",
+      "featureList": ["JSON to YAML conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert JSON to YAML", "JSON to YAML", "Free JSON to YAML converter"]
+    },
+    "howTo": {
+      "name": "Hoe JSON naar YAML converteren",
+      "description": "Converteer JSON naar YAML-formaat. Automatisch parsen en formatteren. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Plak je gegevens",
+          "text": "Plak je JSON-gegevens in het invoerveld."
+        },
+        {
+          "position": 2,
+          "name": "Converteren",
+          "text": "Klik op Converteren om je JSON-gegevens naar YAML-formaat om te zetten."
+        },
+        {
+          "position": 3,
+          "name": "Kopiëren of downloaden",
+          "text": "Kopieer de YAML-uitvoer of download als bestand."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Waarom JSON naar YAML converteren?",
+      "html": "<p class=\"text-mid mb-4\">Converteer JSON naar YAML-formaat. Automatisch parsen en formatteren. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JSON to YAML conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe JSON naar YAML converteren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Plak je gegevens",
+          "description": "Plak je JSON-gegevens in het invoerveld.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Converteren",
+          "description": "Klik op Converteren om je JSON-gegevens naar YAML-formaat om te zetten.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopiëren of downloaden",
+          "description": "Kopieer de YAML-uitvoer of download als bestand.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze converter anders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Je bestanden worden volledig in je browser verwerkt. Niets wordt naar een server geüpload."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Geen limieten",
+          "description": "Converteer zoveel bestanden als je nodig hebt. Geen daglimieten, geen beperkingen."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kwaliteitscontrole",
+          "description": "Pas de instellingen aan voor de perfecte balans tussen bestandsgrootte en kwaliteit."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Directe conversie",
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JSON vs YAML – formaatsvergelijking",
+      "plans": [
+        {
+          "id": "json",
+          "name": "JSON"
+        },
+        {
+          "id": "yaml",
+          "name": "YAML",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Geneste gegevens",
+          "values": {
+            "json": true,
+            "yaml": true
+          }
+        },
+        {
+          "name": "Tabelgegevens",
+          "values": {
+            "json": false,
+            "yaml": false
+          }
+        },
+        {
+          "name": "Schemavalidatie",
+          "values": {
+            "json": true,
+            "yaml": false
+          }
+        },
+        {
+          "name": "Menselijk leesbaar",
+          "values": {
+            "json": true,
+            "yaml": true
+          }
+        },
+        {
+          "name": "API-standaard",
+          "values": {
+            "json": true,
+            "yaml": false
+          }
+        },
+        {
+          "name": "Compacte syntaxis",
+          "values": {
+            "json": true,
+            "yaml": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen over JSON naar YAML conversie",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Is het converteren van JSON naar YAML gratis?",
+          "answer": "Ja, deze converter is volledig gratis en zonder limieten. Geen registratie, geen watermerken."
+        },
+        {
+          "question": "Uploadt de converter mijn bestanden?",
+          "answer": "Nee. Alle verwerking vindt lokaal plaats in je browser. Je bestanden verlaten nooit je apparaat."
+        },
+        {
+          "question": "Kan ik meerdere bestanden tegelijk converteren?",
+          "answer": "Ja, de converter ondersteunt batchconversie."
+        },
+        {
+          "question": "Werkt de converter op mobiel?",
+          "answer": "Ja, de converter werkt op elk apparaat met een moderne webbrowser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heb je een idee, een bug gevonden of wil je iets voorstellen? Stuur ons een bericht – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JSON naar YAML converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

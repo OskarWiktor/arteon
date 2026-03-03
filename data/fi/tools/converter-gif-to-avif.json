@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "GIF vs AVIF – muotovertailu",
+      "plans": [
+        {
+          "id": "gif",
+          "name": "GIF"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset GIF-AVIF-muunnoksesta",
       "openByDefault": 0,

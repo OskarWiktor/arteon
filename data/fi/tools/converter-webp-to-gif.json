@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs GIF – muotovertailu",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset WebP-GIF-muunnoksesta",
       "openByDefault": 0,

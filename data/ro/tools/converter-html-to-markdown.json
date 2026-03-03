@@ -1,0 +1,241 @@
+{
+  "toolKey": "htmlToMarkdown",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor HTML în Markdown — HTML Markdown",
+    "description": "Convertește HTML în format Markdown. Parsare și formatare automată. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-html-in-markdown"
+  },
+  "hero": {
+    "title": "Convertor HTML în Markdown",
+    "description": "Convertește HTML în format Markdown. Parsare și formatare automată. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-html-in-markdown",
+      "label": "Convertor HTML în Markdown"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor HTML în Markdown",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Convertește HTML în format Markdown. Parsare și formatare automată. Gratuit.",
+      "featureList": ["HTML to Markdown conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
+    },
+    "howTo": {
+      "name": "Cum convertiți HTML în Markdown",
+      "description": "Convertește HTML în format Markdown. Parsare și formatare automată. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lipiți datele",
+          "text": "Lipiți datele HTML în câmpul de introducere."
+        },
+        {
+          "position": 2,
+          "name": "Convertiți",
+          "text": "Faceți clic pe Convertiți pentru a transforma datele HTML în format Markdown."
+        },
+        {
+          "position": 3,
+          "name": "Copiați sau descărcați",
+          "text": "Copiați rezultatul Markdown sau descărcați-l ca fișier."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți HTML în Markdown?",
+      "html": "<p class=\"text-mid mb-4\">Convertește HTML în format Markdown. Parsare și formatare automată. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "HTML to Markdown conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum convertiți HTML în Markdown",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Lipiți datele",
+          "description": "Lipiți datele HTML în câmpul de introducere.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertiți",
+          "description": "Faceți clic pe Convertiți pentru a transforma datele HTML în format Markdown.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Copiați sau descărcați",
+          "description": "Copiați rezultatul Markdown sau descărcați-l ca fișier.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele sunt procesate integral în browser. Nimic nu este trimis pe server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți oricâte fișiere aveți nevoie. Fără limite zilnice, fără restricții."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control al calității",
+          "description": "Ajustați setările pentru echilibrul perfect între dimensiune și calitate."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HTML vs Markdown – comparație de formate",
+      "plans": [
+        {
+          "id": "html",
+          "name": "HTML"
+        },
+        {
+          "id": "markdown",
+          "name": "Markdown",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Date ierarhice",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Date tabulare",
+          "values": {
+            "html": true,
+            "markdown": true
+          }
+        },
+        {
+          "name": "Validare schemă",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Lizibil pentru oameni",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        },
+        {
+          "name": "Standard API",
+          "values": {
+            "html": false,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Sintaxă compactă",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia HTML în Markdown",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Conversia din HTML în Markdown este gratuită?",
+          "answer": "Da, acest convertor este complet gratuit și fără limite. Fără înregistrare, fără filigran."
+        },
+        {
+          "question": "Convertorul încarcă fișierele mele?",
+          "answer": "Nu. Toată procesarea are loc local în browser. Fișierele nu părăsesc niciodată dispozitivul."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul acceptă conversia în lot."
+        },
+        {
+          "question": "Convertorul funcționează pe mobil?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați ceva? Trimiteți-ne un mesaj – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertor HTML în Markdown"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

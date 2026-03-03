@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "GIF vs AVIF – σύγκριση μορφών",
+      "plans": [
+        {
+          "id": "gif",
+          "name": "GIF"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Συμπίεση με απώλειες",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Συμπίεση χωρίς απώλειες",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Διαφάνεια (κανάλι άλφα)",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Υποστήριξη κίνησης",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Υποστήριξη περιηγητών",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Συμπαγές μέγεθος αρχείου",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Μεταδεδομένα (EXIF)",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Συχνές ερωτήσεις για τη μετατροπή GIF σε AVIF",
       "openByDefault": 0,

@@ -1,0 +1,248 @@
+{
+  "toolKey": "pdfToPng",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor PDF în PNG — PDF PNG",
+    "description": "Convertește pagini PDF în imagini PNG. Calitate înaltă, fără limite. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-pdf-in-png"
+  },
+  "hero": {
+    "title": "Convertor PDF în PNG",
+    "description": "Convertește pagini PDF în imagini PNG. Calitate înaltă, fără limite. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-pdf-in-png",
+      "label": "Convertor PDF în PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor PDF în PNG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Convertește pagini PDF în imagini PNG. Calitate înaltă, fără limite. Gratuit.",
+      "featureList": ["PDF to PNG conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PDF to PNG", "PDF to PNG", "Free PDF to PNG converter"]
+    },
+    "howTo": {
+      "name": "Cum convertiți PDF în PNG",
+      "description": "Convertește pagini PDF în imagini PNG. Calitate înaltă, fără limite. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Încărcați fișierul PDF",
+          "text": "Trageți fișierul PDF pe convertor sau faceți clic pentru a răsfoi."
+        },
+        {
+          "position": 2,
+          "name": "Convertiți",
+          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
+        },
+        {
+          "position": 3,
+          "name": "Descărcați PNG",
+          "text": "Descărcați fișierul PNG convertit."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți PDF în PNG?",
+      "html": "<p class=\"text-mid mb-4\">Convertește pagini PDF în imagini PNG. Calitate înaltă, fără limite. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PDF to PNG conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum convertiți PDF în PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Încărcați fișierul PDF",
+          "description": "Trageți fișierul PDF pe convertor sau faceți clic pentru a răsfoi.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertiți",
+          "description": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Descărcați PNG",
+          "description": "Descărcați fișierul PNG convertit.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele sunt procesate integral în browser. Nimic nu este trimis pe server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți oricâte fișiere aveți nevoie. Fără limite zilnice, fără restricții."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control al calității",
+          "description": "Ajustați setările pentru echilibrul perfect între dimensiune și calitate."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs PNG – comparație de formate",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "pdf": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia PDF în PNG",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Conversia din PDF în PNG este gratuită?",
+          "answer": "Da, acest convertor este complet gratuit și fără limite. Fără înregistrare, fără filigran."
+        },
+        {
+          "question": "Convertorul încarcă fișierele mele?",
+          "answer": "Nu. Toată procesarea are loc local în browser. Fișierele nu părăsesc niciodată dispozitivul."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul acceptă conversia în lot."
+        },
+        {
+          "question": "Convertorul funcționează pe mobil?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați ceva? Trimiteți-ne un mesaj – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertor PDF în PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

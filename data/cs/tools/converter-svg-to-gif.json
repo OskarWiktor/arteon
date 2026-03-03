@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs GIF – srovnání formátů",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "svg": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "svg": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "svg": false,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu SVG na GIF",
       "openByDefault": 0,

@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs TIFF – comparație de formate",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "jpg": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "jpg": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "jpg": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "jpg": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia JPG în TIFF",
       "openByDefault": 0,

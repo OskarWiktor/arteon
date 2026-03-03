@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs WebP – formatsammenligning",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Komprimering med tap",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Komprimering uten tap",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Gjennomsiktighet (alfakanal)",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Animasjonsstøtte",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Nettleserstøtte",
+          "values": {
+            "heic": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanlige spørsmål om konvertering av HEIC til WebP",
       "openByDefault": 0,

@@ -1,0 +1,241 @@
+{
+  "toolKey": "jsonToYaml",
+  "locale": "da",
+  "metadata": {
+    "title": "JSON til YAML-konverter — JSON YAML",
+    "description": "Konverter JSON til YAML-format. Automatisk parsing og formatering. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/json-til-yaml-konverter"
+  },
+  "hero": {
+    "title": "JSON til YAML-konverter",
+    "description": "Konverter JSON til YAML-format. Automatisk parsing og formatering. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/json-til-yaml-konverter",
+      "label": "JSON til YAML-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JSON til YAML-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Konverter JSON til YAML-format. Automatisk parsing og formatering. Gratis.",
+      "featureList": ["JSON to YAML conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert JSON to YAML", "JSON to YAML", "Free JSON to YAML converter"]
+    },
+    "howTo": {
+      "name": "Sådan konverterer du JSON til YAML",
+      "description": "Konverter JSON til YAML-format. Automatisk parsing og formatering. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Indsæt dine data",
+          "text": "Indsæt dine JSON-data i inputfeltet."
+        },
+        {
+          "position": 2,
+          "name": "Konverter",
+          "text": "Klik på Konverter for at omdanne dine JSON-data til YAML-format."
+        },
+        {
+          "position": 3,
+          "name": "Kopier eller download",
+          "text": "Kopier YAML-outputtet eller download som fil."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere JSON til YAML?",
+      "html": "<p class=\"text-mid mb-4\">Konverter JSON til YAML-format. Automatisk parsing og formatering. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JSON to YAML conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Sådan konverterer du JSON til YAML",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Indsæt dine data",
+          "description": "Indsæt dine JSON-data i inputfeltet.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konverter",
+          "description": "Klik på Konverter for at omdanne dine JSON-data til YAML-format.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopier eller download",
+          "description": "Kopier YAML-outputtet eller download som fil.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne konverter anderledes?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatlivsbeskyttelse",
+          "description": "Dine filer behandles helt i din browser. Intet uploades til nogen server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrænsninger",
+          "description": "Konverter så mange filer, som du har brug for. Ingen daglige grænser."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontrol",
+          "description": "Juster indstillingerne for den perfekte balance mellem filstørrelse og kvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Øjeblikkelig konvertering",
+          "description": "Al behandling sker lokalt med moderne browser-API'er."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JSON vs YAML – formatsammenligning",
+      "plans": [
+        {
+          "id": "json",
+          "name": "JSON"
+        },
+        {
+          "id": "yaml",
+          "name": "YAML",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Indlejrede data",
+          "values": {
+            "json": true,
+            "yaml": true
+          }
+        },
+        {
+          "name": "Tabeldata",
+          "values": {
+            "json": false,
+            "yaml": false
+          }
+        },
+        {
+          "name": "Skemavalidering",
+          "values": {
+            "json": true,
+            "yaml": false
+          }
+        },
+        {
+          "name": "Menneskelæsbart",
+          "values": {
+            "json": true,
+            "yaml": true
+          }
+        },
+        {
+          "name": "API-standard",
+          "values": {
+            "json": true,
+            "yaml": false
+          }
+        },
+        {
+          "name": "Kompakt syntaks",
+          "values": {
+            "json": true,
+            "yaml": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål om JSON til YAML-konvertering",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Er konvertering af JSON til YAML gratis?",
+          "answer": "Ja, denne konverter er helt gratis og uden begrænsninger. Ingen registrering, ingen vandmærker."
+        },
+        {
+          "question": "Uploader konverteren mine filer?",
+          "answer": "Nej. Al behandling sker lokalt i din browser. Dine filer forlader aldrig din enhed."
+        },
+        {
+          "question": "Kan jeg konvertere flere filer på én gang?",
+          "answer": "Ja, konverteren understøtter batchkonvertering."
+        },
+        {
+          "question": "Virker konverteren på mobil?",
+          "answer": "Ja, den virker på enhver enhed med en moderne webbrowser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå noget? Send os en besked – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JSON til YAML-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

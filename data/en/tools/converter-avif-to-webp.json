@@ -183,6 +183,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs WebP – format comparison",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about AVIF to WebP conversion",
       "openByDefault": 0,

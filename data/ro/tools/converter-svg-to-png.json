@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs PNG – comparație de formate",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "svg": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "svg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "svg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "svg": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "svg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "svg": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "svg": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia SVG în PNG",
       "openByDefault": 0,

@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs TIFF – comparaison des formats",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compression avec perte",
+          "values": {
+            "bmp": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compression sans perte",
+          "values": {
+            "bmp": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparence (canal alpha)",
+          "values": {
+            "bmp": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Prise en charge de l'animation",
+          "values": {
+            "bmp": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Prise en charge des navigateurs",
+          "values": {
+            "bmp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Taille de fichier compacte",
+          "values": {
+            "bmp": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Métadonnées (EXIF)",
+          "values": {
+            "bmp": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Questions fréquentes sur la conversion BMP vers TIFF",
       "openByDefault": 0,

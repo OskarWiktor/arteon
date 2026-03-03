@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs TIFF – comparație de formate",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "bmp": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "bmp": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "bmp": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "bmp": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "bmp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "bmp": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "bmp": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia BMP în TIFF",
       "openByDefault": 0,

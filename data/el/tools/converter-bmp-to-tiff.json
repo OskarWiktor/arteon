@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs TIFF – σύγκριση μορφών",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Συμπίεση με απώλειες",
+          "values": {
+            "bmp": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Συμπίεση χωρίς απώλειες",
+          "values": {
+            "bmp": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Διαφάνεια (κανάλι άλφα)",
+          "values": {
+            "bmp": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Υποστήριξη κίνησης",
+          "values": {
+            "bmp": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Υποστήριξη περιηγητών",
+          "values": {
+            "bmp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Συμπαγές μέγεθος αρχείου",
+          "values": {
+            "bmp": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Μεταδεδομένα (EXIF)",
+          "values": {
+            "bmp": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Συχνές ερωτήσεις για τη μετατροπή BMP σε TIFF",
       "openByDefault": 0,

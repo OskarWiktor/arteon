@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs TIFF – srovnání formátů",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "jpg": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "jpg": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "jpg": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "jpg": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu JPG na TIFF",
       "openByDefault": 0,

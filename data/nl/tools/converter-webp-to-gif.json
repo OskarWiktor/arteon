@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs GIF – formaatsvergelijking",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy-compressie",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Lossless-compressie",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Transparantie (alfakanaal)",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Animatie-ondersteuning",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Webbrowserondersteuning",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Compact bestandsformaat",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over WebP-naar-GIF-conversie",
       "openByDefault": 0,

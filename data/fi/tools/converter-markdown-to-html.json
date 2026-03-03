@@ -1,0 +1,241 @@
+{
+  "toolKey": "markdownToHtml",
+  "locale": "fi",
+  "metadata": {
+    "title": "Markdown HTML -muunnin — Markdown HTML",
+    "description": "Muunna Markdown HTML-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/markdown-html-muunnin"
+  },
+  "hero": {
+    "title": "Markdown HTML -muunnin",
+    "description": "Muunna Markdown HTML-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/markdown-html-muunnin",
+      "label": "Markdown HTML -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Markdown HTML -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Muunna Markdown HTML-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa Markdown HTML-muotoon",
+      "description": "Muunna Markdown HTML-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Liitä tietosi",
+          "text": "Liitä Markdown-tiedot syöttökenttään."
+        },
+        {
+          "position": 2,
+          "name": "Muunna",
+          "text": "Napsauta Muunna muuntaaksesi Markdown-tiedot HTML-muotoon."
+        },
+        {
+          "position": 3,
+          "name": "Kopioi tai lataa",
+          "text": "Kopioi HTML-tulos tai lataa tiedostona."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miksi muuntaa Markdown HTML-muotoon?",
+      "html": "<p class=\"text-mid mb-4\">Muunna Markdown HTML-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Markdown to HTML conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuinka muuntaa Markdown HTML-muotoon",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Liitä tietosi",
+          "description": "Liitä Markdown-tiedot syöttökenttään.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Muunna",
+          "description": "Napsauta Muunna muuntaaksesi Markdown-tiedot HTML-muotoon.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopioi tai lataa",
+          "description": "Kopioi HTML-tulos tai lataa tiedostona.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erilaisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täydellinen yksityisyys",
+          "description": "Tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata palvelimelle."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta tiedostoa kuin tarvitset. Ei päivittäisiä rajoja."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Laatukontrolli",
+          "description": "Säädä asetuksia löytääksesi täydellisen tasapainon tiedostokoon ja laadun välillä."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Markdown vs HTML – muotovertailu",
+      "plans": [
+        {
+          "id": "markdown",
+          "name": "Markdown"
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sisäkkäinen data",
+          "values": {
+            "markdown": false,
+            "html": true
+          }
+        },
+        {
+          "name": "Taulukkodata",
+          "values": {
+            "markdown": true,
+            "html": true
+          }
+        },
+        {
+          "name": "Skeemavalidointi",
+          "values": {
+            "markdown": false,
+            "html": true
+          }
+        },
+        {
+          "name": "Ihmisen luettavissa",
+          "values": {
+            "markdown": true,
+            "html": false
+          }
+        },
+        {
+          "name": "API-standardi",
+          "values": {
+            "markdown": false,
+            "html": false
+          }
+        },
+        {
+          "name": "Kompakti syntaksi",
+          "values": {
+            "markdown": true,
+            "html": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset Markdown-HTML-muunnoksesta",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Onko Markdown-muunnos HTML-muotoon ilmainen?",
+          "answer": "Kyllä, tämä muunnin on täysin ilmainen ja rajoittamaton. Ei rekisteröitymistä, ei vesileimoja."
+        },
+        {
+          "question": "Lataako muunnin tiedostoni palvelimelle?",
+          "answer": "Ei. Kaikki käsittely tapahtuu paikallisesti selaimessasi. Tiedostosi eivät koskaan poistu laitteeltasi."
+        },
+        {
+          "question": "Voinko muuntaa useita tiedostoja kerralla?",
+          "answer": "Kyllä, muunnin tukee erämuunnosta."
+        },
+        {
+          "question": "Toimiiko muunnin mobiilissa?",
+          "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa jotain? Lähetä meille viesti – vastaamme 24 tunnin sisällä.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Markdown HTML -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

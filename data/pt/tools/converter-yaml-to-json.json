@@ -1,0 +1,241 @@
+{
+  "toolKey": "yamlToJson",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor YAML para JSON — YAML JSON",
+    "description": "Converta YAML para formato JSON. Análise e formatação automáticas. Gratuito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/pt/ferramentas/conversor-yaml-para-json"
+  },
+  "hero": {
+    "title": "Conversor YAML para JSON",
+    "description": "Converta YAML para formato JSON. Análise e formatação automáticas. Gratuito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-yaml-para-json",
+      "label": "Conversor YAML para JSON"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor YAML para JSON",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Converta YAML para formato JSON. Análise e formatação automáticas. Gratuito.",
+      "featureList": ["YAML to JSON conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert YAML to JSON", "YAML to JSON", "Free YAML to JSON converter"]
+    },
+    "howTo": {
+      "name": "Como converter YAML para JSON",
+      "description": "Converta YAML para formato JSON. Análise e formatação automáticas. Gratuito.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Cole seus dados",
+          "text": "Cole os dados YAML no campo de entrada."
+        },
+        {
+          "position": 2,
+          "name": "Converter",
+          "text": "Clique em Converter para transformar os dados YAML em formato JSON."
+        },
+        {
+          "position": 3,
+          "name": "Copiar ou descarregar",
+          "text": "Copie a saída JSON ou descarregue como ficheiro."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Por que converter YAML para JSON?",
+      "html": "<p class=\"text-mid mb-4\">Converta YAML para formato JSON. Análise e formatação automáticas. Gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "YAML to JSON conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como converter YAML para JSON",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Cole seus dados",
+          "description": "Cole os dados YAML no campo de entrada.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Converter",
+          "description": "Clique em Converter para transformar os dados YAML em formato JSON.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Copiar ou descarregar",
+          "description": "Copie a saída JSON ou descarregue como ficheiro.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que torna este conversor diferente?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Os seus ficheiros são processados inteiramente no navegador. Nada é enviado para servidores."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Sem limites",
+          "description": "Converta quantos ficheiros precisar. Sem limites diários, sem restrições de tamanho."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Controlo de qualidade",
+          "description": "Ajuste as definições para o equilíbrio perfeito entre tamanho e qualidade."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversão instantânea",
+          "description": "Todo o processamento é local com APIs modernas do navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "YAML vs JSON – comparação de formatos",
+      "plans": [
+        {
+          "id": "yaml",
+          "name": "YAML"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dados hierárquicos",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Dados tabulares",
+          "values": {
+            "yaml": false,
+            "json": false
+          }
+        },
+        {
+          "name": "Validação de schema",
+          "values": {
+            "yaml": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Legível por humanos",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Padrão API",
+          "values": {
+            "yaml": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Sintaxe compacta",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre a conversão de YAML para JSON",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "A conversão de YAML para JSON é gratuita?",
+          "answer": "Sim, este conversor é completamente gratuito e sem limites. Sem registo, sem marcas de água."
+        },
+        {
+          "question": "O conversor envia os meus ficheiros?",
+          "answer": "Não. Todo o processamento acontece localmente no seu navegador."
+        },
+        {
+          "question": "Posso converter vários ficheiros de uma vez?",
+          "answer": "Sim, o conversor suporta conversão em lote."
+        },
+        {
+          "question": "O conversor funciona no telemóvel?",
+          "answer": "Sim, funciona em qualquer dispositivo com um navegador web moderno."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um erro ou quer sugerir algo? Envie-nos uma mensagem – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Conversor YAML para JSON"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

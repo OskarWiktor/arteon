@@ -183,6 +183,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs JPG – format comparison",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "bmp": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "bmp": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "bmp": false,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "bmp": false,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "bmp": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "bmp": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "bmp": false,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about BMP to JPG conversion",
       "openByDefault": 0,

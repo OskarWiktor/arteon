@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs GIF – muotovertailu",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "png": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "png": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "png": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "png": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "png": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "png": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "png": false,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset PNG-GIF-muunnoksesta",
       "openByDefault": 0,

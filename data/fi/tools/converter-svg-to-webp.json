@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs WebP – muotovertailu",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "svg": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "svg": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset SVG-WebP-muunnoksesta",
       "openByDefault": 0,

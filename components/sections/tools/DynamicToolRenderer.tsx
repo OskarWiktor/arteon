@@ -58,6 +58,30 @@ const TOOL_COMPONENTS: Record<string, ReturnType<typeof dynamic>> = {
   bmpToTiff: dynamic(() => import('./converters/BmpToTiff'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
   avifToTiff: dynamic(() => import('./converters/AvifToTiff'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
   heicToTiff: dynamic(() => import('./converters/HeicToTiff'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  // PDF converters (Image → PDF)
+  jpgToPdf: dynamic(() => import('./converters/JpgToPdf'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  pngToPdf: dynamic(() => import('./converters/PngToPdf'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  webpToPdf: dynamic(() => import('./converters/WebpToPdf'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  heicToPdf: dynamic(() => import('./converters/HeicToPdf'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  bmpToPdf: dynamic(() => import('./converters/BmpToPdf'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  tiffToPdf: dynamic(() => import('./converters/TiffToPdf'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  svgToPdf: dynamic(() => import('./converters/SvgToPdf'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  // PDF converters (PDF → Image)
+  pdfToJpg: dynamic(() => import('./converters/PdfToJpg'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  pdfToPng: dynamic(() => import('./converters/PdfToPng'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  pdfToWebp: dynamic(() => import('./converters/PdfToWebp'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  // Data converters
+  csvToJson: dynamic(() => import('./converters/CsvToJson'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  jsonToCsv: dynamic(() => import('./converters/JsonToCsv'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  xmlToJson: dynamic(() => import('./converters/XmlToJson'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  jsonToXml: dynamic(() => import('./converters/JsonToXml'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  yamlToJson: dynamic(() => import('./converters/YamlToJson'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  jsonToYaml: dynamic(() => import('./converters/JsonToYaml'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  markdownToHtml: dynamic(() => import('./converters/MarkdownToHtml'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  htmlToMarkdown: dynamic(() => import('./converters/HtmlToMarkdown'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  // Base64 converters
+  imageToBase64: dynamic(() => import('./converters/ImageToBase64'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
+  base64ToImage: dynamic(() => import('./converters/Base64ToImage'), { ssr: false, loading: () => <ToolEditorSkeleton /> }),
 };
 
 export default function DynamicToolRenderer({ toolKey }: { toolKey: string }) {

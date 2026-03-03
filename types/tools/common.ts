@@ -60,12 +60,35 @@ export type ToolItemKey =
   | 'svgToTiff'
   | 'bmpToTiff'
   | 'avifToTiff'
-  | 'heicToTiff';
+  | 'heicToTiff'
+  // PDF converters
+  | 'jpgToPdf'
+  | 'pngToPdf'
+  | 'webpToPdf'
+  | 'heicToPdf'
+  | 'bmpToPdf'
+  | 'tiffToPdf'
+  | 'svgToPdf'
+  | 'pdfToJpg'
+  | 'pdfToPng'
+  | 'pdfToWebp'
+  // Data converters
+  | 'csvToJson'
+  | 'jsonToCsv'
+  | 'xmlToJson'
+  | 'jsonToXml'
+  | 'yamlToJson'
+  | 'jsonToYaml'
+  | 'markdownToHtml'
+  | 'htmlToMarkdown'
+  // Base64 converters
+  | 'imageToBase64'
+  | 'base64ToImage';
 
 // ---------------------------------------------------------------------------
 // Tool section key - groups tools in navigation / index page
 // ---------------------------------------------------------------------------
-export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk' | 'konwertery';
+export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk' | 'konwertery' | 'dokumenty';
 
 // ---------------------------------------------------------------------------
 // Per-locale text for a single tool (used in nav, carousel, index page)

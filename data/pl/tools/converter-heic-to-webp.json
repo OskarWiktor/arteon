@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs WebP – porównanie formatów",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "heic": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "heic": true,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji HEIC na WebP",
       "openByDefault": 0,

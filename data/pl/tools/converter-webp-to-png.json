@@ -155,6 +155,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs PNG – porównanie formatów",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "webp": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "webp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "webp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "webp": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "webp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "webp": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "webp": true,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji WebP na PNG",
       "openByDefault": 1,

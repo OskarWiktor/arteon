@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "TIFF vs PNG – formaatsvergelijking",
+      "plans": [
+        {
+          "id": "tiff",
+          "name": "TIFF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy-compressie",
+          "values": {
+            "tiff": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Lossless-compressie",
+          "values": {
+            "tiff": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparantie (alfakanaal)",
+          "values": {
+            "tiff": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animatie-ondersteuning",
+          "values": {
+            "tiff": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Webbrowserondersteuning",
+          "values": {
+            "tiff": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Compact bestandsformaat",
+          "values": {
+            "tiff": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "tiff": true,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over TIFF-naar-PNG-conversie",
       "openByDefault": 0,

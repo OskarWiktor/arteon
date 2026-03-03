@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs AVIF – formatsammenligning",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Tabsgivende komprimering",
+          "values": {
+            "svg": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Tabsfri komprimering",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Gennemsigtighed (alfakanal)",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animationsunderstøttelse",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Webbrowserunderstøttelse",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "svg": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af SVG til AVIF",
       "openByDefault": 0,

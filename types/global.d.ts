@@ -17,9 +17,25 @@ type ConsentValue = 'granted' | 'denied';
 
 interface Window {
   __GA_ID?: string;
-  ArteonConsent?: {
-    open: () => void;
-  };
+  ArteonConsent?: { open: () => void };
   gtag?: (...args: unknown[]) => void;
   dataLayer?: unknown[];
+  googlefc?: {
+    callbackQueue?: Array<Record<string, () => void>>;
+    showRevocationMessage?: () => void;
+    getConsentedProviderIds?: () => number[];
+    getGoogleConsentModeValues?: () => {
+      adStoragePurposeConsentStatus?: number;
+      adUserDataPurposeConsentStatus?: number;
+      adPersonalizationPurposeConsentStatus?: number;
+      analyticsStoragePurposeConsentStatus?: number;
+    };
+    ConsentModePurposeStatusEnum?: {
+      CONSENT_MODE_PURPOSE_STATUS_UNKNOWN: number;
+      CONSENT_MODE_PURPOSE_STATUS_GRANTED: number;
+      CONSENT_MODE_PURPOSE_STATUS_DENIED: number;
+      CONSENT_MODE_PURPOSE_STATUS_NOT_APPLICABLE: number;
+      CONSENT_MODE_PURPOSE_STATUS_NOT_CONFIGURED: number;
+    };
+  };
 }

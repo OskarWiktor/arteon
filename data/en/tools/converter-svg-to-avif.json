@@ -191,6 +191,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs AVIF – format comparison",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "svg": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "svg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "svg": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about SVG to AVIF conversion",
       "openByDefault": 0,

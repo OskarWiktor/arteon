@@ -183,6 +183,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs PNG – format comparison",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "heic": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "heic": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "heic": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "heic": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "heic": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "heic": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "heic": true,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about HEIC to PNG conversion",
       "openByDefault": 0,

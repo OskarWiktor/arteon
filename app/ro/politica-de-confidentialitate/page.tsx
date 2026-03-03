@@ -31,7 +31,7 @@ export default function PoliticaDeConfidentialitatePage() {
         <div>
           <h1>Politica de confidențialitate</h1>
           <p className="mt-2 text-sm opacity-70">
-            Versiune: <strong>13.02.2026</strong>
+            Versiune: <strong>03.03.2026</strong>
           </p>
 
           <Gap size="xs" />
@@ -54,7 +54,10 @@ export default function PoliticaDeConfidentialitatePage() {
               <li>date tehnice colectate automat (adresa IP, informații despre dispozitiv, cookie-uri),</li>
               <li>date analitice de la Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics și Vercel Speed Insights,</li>
               <li>date analitice de la Metricool (statistici de vizite, surse de trafic),</li>
-              <li>date colectate de Google AdSense în scopul afișării reclamelor (identificatori publicitari, cookie-uri publicitare, date privind interacțiunea cu reclamele),</li>
+              <li>
+                date colectate de Google AdSense în scopul afișării reclamelor (identificatori publicitari, cookie-uri publicitare, date privind interacțiunea cu reclamele, șiruri de consimțământ IAB
+                TCF v2.3),
+              </li>
               <li>jurnale de server și evenimente de securitate (de ex. marcaje temporale, adresa IP, anteturi de solicitare).</li>
             </ul>
           </SectionInfo>
@@ -79,15 +82,15 @@ export default function PoliticaDeConfidentialitatePage() {
                 <strong>Securitate și pretenții</strong> - menținerea jurnalelor, prevenirea abuzurilor, stabilirea/urmărirea/apărarea pretențiilor (Art. 6 alin. 1 lit. f RGPD).
               </li>
               <li>
-                <strong>Afișarea reclamelor</strong> - afișarea reclamelor bazate pe interese prin Google AdSense (Art. 6 alin. 1 lit. a RGPD - consimțământul utilizatorului acordat prin bannerul de
-                cookie-uri).
+                <strong>Afișarea reclamelor</strong> - afișarea reclamelor bazate pe interese prin Google AdSense (Art. 6 alin. 1 lit. a RGPD - consimțământul utilizatorului acordat prin dialogul
+                Google Privacy & Messaging).
               </li>
             </ol>
           </SectionInfo>
 
           <Gap variant="line" size="sm" />
 
-          <SectionInfo title="4. Cookie-uri">
+          <SectionInfo title="4. Cookie-uri și consimțământ">
             <p>Site-ul web utilizează cookie-uri în următoarele scopuri:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>asigurarea funcționării corecte a site-ului web,</li>
@@ -99,6 +102,22 @@ export default function PoliticaDeConfidentialitatePage() {
               Google AdSense poate utiliza cookie-uri DoubleClick pentru a afișa reclame bazate pe vizitele anterioare ale utilizatorului pe site-ul nostru sau pe alte site-uri. Furnizorii terți
               (inclusiv Google) utilizează aceste cookie-uri pentru a afișa reclame pe baza istoricului de navigare.
             </p>
+            <h3 className="h5 mt-4 mb-3">Gestionarea consimțământului (CMP)</h3>
+            <p>
+              Pentru colectarea și gestionarea consimțământului privind cookie-urile și prelucrarea datelor în scopuri publicitare, acest site utilizează Google Privacy &amp; Messaging &mdash; o
+              platformă certificată de gestionare a consimțământului (CMP) integrată cu standardul IAB Transparency and Consent Framework (TCF) versiunea 2.3.
+            </p>
+            <p>
+              Utilizatorii din Spațiul Economic European (SEE), Regatul Unit și Elveția vor fi invitați să își exprime consimțământul printr-un dialog Google. Utilizatorii din statele SUA cu
+              legislație privind confidențialitatea vor vedea un mesaj conform cu reglementările statale (inclusiv suport pentru semnalele Global Privacy Control).
+            </p>
+            <p>Puteți modifica preferințele de consimțământ în orice moment făcând clic pe linkul &quot;Setări cookie-uri&quot; din subsolul site-ului.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              Site-ul utilizează Google Consent Mode v2 în modul avansat (Advanced). Pentru utilizatorii din regiunile reglementate, toate semnalele de consimțământ (ad_storage, ad_user_data,
+              ad_personalization, analytics_storage) sunt setate implicit la &quot;denied&quot; și sunt actualizate doar după obținerea consimțământului. Pentru utilizatorii din alte regiuni,
+              consimțământurile sunt setate implicit la &quot;granted&quot;.
+            </p>
             <p>
               Puteți renunța la reclamele personalizate accesând{' '}
               <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
@@ -109,10 +128,6 @@ export default function PoliticaDeConfidentialitatePage() {
                 aboutads.info
               </a>
               .
-            </p>
-            <p>
-              Site-ul utilizează Google Consent Mode v2. Aceasta înseamnă că scripturile de analiză și publicitate Google nu colectează date până când utilizatorul își dă consimțământul prin bannerul
-              de cookie-uri.
             </p>
             <p>Puteți gestiona cookie-urile în setările browserului. Restricționarea cookie-urilor poate afecta unele funcții ale site-ului web.</p>
           </SectionInfo>

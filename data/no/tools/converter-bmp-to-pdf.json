@@ -1,0 +1,248 @@
+{
+  "toolKey": "bmpToPdf",
+  "locale": "no",
+  "metadata": {
+    "title": "BMP til PDF-konverterer — BMP PDF",
+    "description": "Konverter BMP-bilder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/bmp-til-pdf-konverterer"
+  },
+  "hero": {
+    "title": "BMP til PDF-konverterer",
+    "description": "Konverter BMP-bilder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/bmp-til-pdf-konverterer",
+      "label": "BMP til PDF-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "BMP til PDF-konverterer",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Konverter BMP-bilder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+      "featureList": ["BMP to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert BMP to PDF", "BMP to PDF", "Free BMP to PDF converter"]
+    },
+    "howTo": {
+      "name": "Slik konverterer du BMP til PDF",
+      "description": "Konverter BMP-bilder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Last opp BMP-filen din",
+          "text": "Dra BMP-filen din til konvertereren eller klikk for å bla gjennom."
+        },
+        {
+          "position": 2,
+          "name": "Konverter",
+          "text": "Klikk på Konverter — filene behandles lokalt i nettleseren din."
+        },
+        {
+          "position": 3,
+          "name": "Last ned PDF-filen",
+          "text": "Last ned den konverterte PDF-filen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere BMP til PDF?",
+      "html": "<p class=\"text-mid mb-4\">Konverter BMP-bilder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik konverterer du BMP til PDF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Last opp BMP-filen din",
+          "description": "Dra BMP-filen din til konvertereren eller klikk for å bla gjennom.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konverter",
+          "description": "Klikk på Konverter — filene behandles lokalt i nettleseren din.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Last ned PDF-filen",
+          "description": "Last ned den konverterte PDF-filen.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne konvertereren annerledes?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullstendig personvern",
+          "description": "Filene dine behandles helt i nettleseren din. Ingenting lastes opp til noen server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrensninger",
+          "description": "Konverter så mange filer du trenger. Ingen daglige grenser."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontroll",
+          "description": "Juster innstillingene for den perfekte balansen mellom filstørrelse og kvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Umiddelbar konvertering",
+          "description": "All behandling skjer lokalt med moderne nettleser-APIer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs PDF – formatsammenligning",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Komprimering med tap",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Komprimering uten tap",
+          "values": {
+            "bmp": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Gjennomsiktighet (alfakanal)",
+          "values": {
+            "bmp": false,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Animasjonsstøtte",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Nettleserstøtte",
+          "values": {
+            "bmp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om BMP til PDF-konvertering",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Er konvertering av BMP til PDF gratis?",
+          "answer": "Ja, denne konvertereren er helt gratis og uten begrensninger. Ingen registrering, ingen vannmerker."
+        },
+        {
+          "question": "Laster konvertereren opp filene mine?",
+          "answer": "Nei. All behandling skjer lokalt i nettleseren din. Filene dine forlater aldri enheten din."
+        },
+        {
+          "question": "Kan jeg konvertere flere filer samtidig?",
+          "answer": "Ja, konvertereren støtter batchkonvertering."
+        },
+        {
+          "question": "Fungerer konvertereren på mobil?",
+          "answer": "Ja, den fungerer på alle enheter med en moderne nettleser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå noe? Send oss en melding – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "BMP til PDF-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

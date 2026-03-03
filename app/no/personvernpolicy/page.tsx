@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h1>Personvernpolicy</h1>
           <p className="mt-2 text-sm opacity-70">
-            Versjon: <strong>13.02.2026</strong>
+            Versjon: <strong>03.03.2026</strong>
           </p>
           <Gap size="xs" />
           <SectionInfo title="1. Behandlingsansvarlig">
@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
               <li>tekniske data samlet inn automatisk (IP-adresse, enhetsinformasjon, informasjonskapsler),</li>
               <li>analysedata fra Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics og Vercel Speed Insights,</li>
               <li>analysedata fra Metricool (besoksstatistikk, trafikkkilder),</li>
-              <li>data samlet inn av Google AdSense for visning av annonser (annonseidentifikatorer, annonseinformasjonskapsler, annonseinteraksjonsdata),</li>
+              <li>data samlet inn av Google AdSense for visning av annonser (annonseidentifikatorer, annonseinformasjonskapsler, annonseinteraksjonsdata, IAB TCF v2.3-samtykkestrenger),</li>
               <li>serverloggfiler og sikkerhetshendelser (f.eks. tidsstempler, IP-adresser, foresporselsoverskrifter).</li>
             </ul>
           </SectionInfo>
@@ -73,12 +73,12 @@ export default function PrivacyPolicyPage() {
                 <strong>Sikkerhet og krav</strong> — logghandtering, forebygging av misbruk, fastsettelse/handheving/forsvar av krav (art. 6 nr. 1 bokstav f) GDPR).
               </li>
               <li>
-                <strong>Annonsevisning</strong> — visning av interessebaserte annonser via Google AdSense (art. 6 nr. 1 bokstav a) GDPR — brukersamtykke gitt via informasjonskapsel-banner).
+                <strong>Annonsevisning</strong> — visning av interessebaserte annonser via Google AdSense (art. 6 nr. 1 bokstav a) GDPR — brukersamtykke gitt via Google Privacy & Messaging-dialog).
               </li>
             </ol>
           </SectionInfo>
           <Gap variant="line" size="sm" />
-          <SectionInfo title="4. Informasjonskapsler">
+          <SectionInfo title="4. Informasjonskapsler og samtykke">
             <p>Nettstedet bruker informasjonskapsler til folgende formal:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>sikring av korrekt funksjon av nettstedet,</li>
@@ -87,6 +87,21 @@ export default function PrivacyPolicyPage() {
               <li>visning av interessebaserte annonser (Google AdSense / DoubleClick).</li>
             </ul>
             <p>Google AdSense kan bruke DoubleClick-informasjonskapsler for aa vise annonser basert paa brukerens tidligere besok paa vaart nettsted eller andre nettsteder.</p>
+            <h3 className="h5 mt-4 mb-3">Samtykkehaandtering (CMP)</h3>
+            <p>
+              For innsamling og haandtering av samtykke til informasjonskapsler og databehandling for annonseformaal bruker dette nettstedet Google Privacy &amp; Messaging &mdash; en sertifisert
+              samtykkehaandteringsplattform (CMP) integrert med IAB Transparency and Consent Framework (TCF) versjon 2.3.
+            </p>
+            <p>
+              Brukere fra Det europeiske okonomiske samarbeidsomraadet (EOES), Storbritannia og Sveits vil bli bedt om samtykke via en Google-dialog. Brukere fra amerikanske stater med
+              personvernlovgivning vil se en melding i samsvar med de relevante statlige reglene (inkludert stotte for Global Privacy Control-signaler).
+            </p>
+            <p>Du kan endre samtykkepreferansene dine naar som helst ved aa klikke paa lenken &quot;Informasjonskapselinnstillinger&quot; i bunnteksten paa nettstedet.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              Nettstedet bruker Google Consent Mode v2 i avansert modus (Advanced). For brukere i regulerte regioner er alle samtykke-signaler (ad_storage, ad_user_data, ad_personalization,
+              analytics_storage) som standard satt til &quot;denied&quot; og oppdateres forst etter samtykke. For brukere i andre regioner er samtykke som standard satt til &quot;granted&quot;.
+            </p>
             <p>
               Du kan deaktivere personaliserte annonser i{' '}
               <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
@@ -98,7 +113,6 @@ export default function PrivacyPolicyPage() {
               </a>
               .
             </p>
-            <p>Nettstedet bruker Google Consent Mode v2. Det betyr at Googles analyse- og annonseskript ikke samler inn data for brukeren gir samtykke via informasjonskapsel-banneret.</p>
             <p>Du kan administrere informasjonskapsler i nettleserens innstillinger. Begrensning av informasjonskapsler kan paavirke visse funksjoner paa nettstedet.</p>
           </SectionInfo>
           <Gap variant="line" size="sm" />

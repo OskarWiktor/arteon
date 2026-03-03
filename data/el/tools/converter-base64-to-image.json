@@ -1,0 +1,178 @@
+{
+  "toolKey": "base64ToImage",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας Base64 σε εικόνα — Base64 εικόνα",
+    "description": "Αποκωδικοποιήστε συμβολοσειρές Base64 σε εικόνες. Προεπισκόπηση και λήψη στον browser. Δωρεάν.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-base64-se-eikona"
+  },
+  "hero": {
+    "title": "Μετατροπέας Base64 σε εικόνα",
+    "description": "Αποκωδικοποιήστε συμβολοσειρές Base64 σε εικόνες. Προεπισκόπηση και λήψη στον browser. Δωρεάν.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-base64-se-eikona",
+      "label": "Μετατροπέας Base64 σε εικόνα"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας Base64 σε εικόνα",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Αποκωδικοποιήστε συμβολοσειρές Base64 σε εικόνες. Προεπισκόπηση και λήψη στον browser. Δωρεάν.",
+      "featureList": ["Base64 to εικόνα conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert Base64 to εικόνα", "Base64 to εικόνα", "Free Base64 to εικόνα converter"]
+    },
+    "howTo": {
+      "name": "Πώς να μετατρέψετε Base64 σε εικόνα",
+      "description": "Αποκωδικοποιήστε συμβολοσειρές Base64 σε εικόνες. Προεπισκόπηση και λήψη στον browser. Δωρεάν.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Ανεβάστε το αρχείο Base64",
+          "text": "Σύρετε το αρχείο Base64 στον μετατροπέα ή κάντε κλικ για περιήγηση."
+        },
+        {
+          "position": 2,
+          "name": "Μετατροπή",
+          "text": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας."
+        },
+        {
+          "position": 3,
+          "name": "Κατεβάστε το εικόνα",
+          "text": "Κατεβάστε το μετατρεπόμενο αρχείο εικόνα."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Γιατί να μετατρέψετε Base64 σε εικόνα;",
+      "html": "<p class=\"text-mid mb-4\">Αποκωδικοποιήστε συμβολοσειρές Base64 σε εικόνες. Προεπισκόπηση και λήψη στον browser. Δωρεάν.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Base64 to εικόνα conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να μετατρέψετε Base64 σε εικόνα",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Ανεβάστε το αρχείο Base64",
+          "description": "Σύρετε το αρχείο Base64 στον μετατροπέα ή κάντε κλικ για περιήγηση.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Μετατροπή",
+          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Κατεβάστε το εικόνα",
+          "description": "Κατεβάστε το μετατρεπόμενο αρχείο εικόνα.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα διαφορετικό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Τα αρχεία σας επεξεργάζονται εξ ολοκλήρου στον browser σας. Τίποτα δεν ανεβαίνει σε server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Χωρίς όρια",
+          "description": "Μετατρέψτε όσα αρχεία χρειάζεστε. Χωρίς ημερήσια όρια, χωρίς περιορισμούς."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Έλεγχος ποιότητας",
+          "description": "Ρυθμίστε τις παραμέτρους για την τέλεια ισορροπία μεταξύ μεγέθους και ποιότητας."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Άμεση μετατροπή",
+          "description": "Όλη η επεξεργασία γίνεται τοπικά με σύγχρονα API του browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις σχετικά με τη μετατροπή Base64 σε εικόνα",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Είναι δωρεάν η μετατροπή Base64 σε εικόνα;",
+          "answer": "Ναι, αυτός ο μετατροπέας είναι εντελώς δωρεάν και χωρίς περιορισμούς. Χωρίς εγγραφή, χωρίς υδατογράφημα."
+        },
+        {
+          "question": "Ανεβάζει ο μετατροπέας τα αρχεία μου;",
+          "answer": "Όχι. Όλη η επεξεργασία γίνεται τοπικά στον browser σας. Τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας."
+        },
+        {
+          "question": "Μπορώ να μετατρέψω πολλαπλά αρχεία ταυτόχρονα;",
+          "answer": "Ναι, ο μετατροπέας υποστηρίζει μαζική μετατροπή."
+        },
+        {
+          "question": "Λειτουργεί ο μετατροπέας σε κινητά;",
+          "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε bug ή θέλετε να προτείνετε κάτι; Στείλτε μας μήνυμα – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Μετατροπέας Base64 σε εικόνα"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

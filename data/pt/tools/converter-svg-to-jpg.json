@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs JPG – comparação de formatos",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compressão com perda",
+          "values": {
+            "svg": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Compressão sem perda",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Transparência (canal alfa)",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Suporte a animação",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Suporte em navegadores",
+          "values": {
+            "svg": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Tamanho de ficheiro compacto",
+          "values": {
+            "svg": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadados (EXIF)",
+          "values": {
+            "svg": false,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de SVG para JPG",
       "openByDefault": 0,

@@ -177,6 +177,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs GIF – porównanie formatów",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "bmp": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "bmp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "bmp": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "bmp": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "bmp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "bmp": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "bmp": false,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji BMP na GIF",
       "openByDefault": 0,

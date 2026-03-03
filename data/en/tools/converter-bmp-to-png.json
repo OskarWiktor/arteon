@@ -183,6 +183,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs PNG – format comparison",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "bmp": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "bmp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "bmp": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "bmp": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "bmp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "bmp": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "bmp": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about BMP to PNG conversion",
       "openByDefault": 0,

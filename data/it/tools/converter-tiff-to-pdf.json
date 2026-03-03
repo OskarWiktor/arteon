@@ -1,0 +1,248 @@
+{
+  "toolKey": "tiffToPdf",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore TIFF in PDF — TIFF PDF",
+    "description": "Converti immagini TIFF in documenti PDF. Combina più file in un unico PDF. Gratuito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-tiff-in-pdf"
+  },
+  "hero": {
+    "title": "Convertitore TIFF in PDF",
+    "description": "Converti immagini TIFF in documenti PDF. Combina più file in un unico PDF. Gratuito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-tiff-in-pdf",
+      "label": "Convertitore TIFF in PDF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore TIFF in PDF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Converti immagini TIFF in documenti PDF. Combina più file in un unico PDF. Gratuito.",
+      "featureList": ["TIFF to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert TIFF to PDF", "TIFF to PDF", "Free TIFF to PDF converter"]
+    },
+    "howTo": {
+      "name": "Come convertire TIFF in PDF",
+      "description": "Converti immagini TIFF in documenti PDF. Combina più file in un unico PDF. Gratuito.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Carica il tuo file TIFF",
+          "text": "Trascina il file TIFF sul convertitore o clicca per sfogliare."
+        },
+        {
+          "position": 2,
+          "name": "Converti",
+          "text": "Clicca su Converti — i file vengono elaborati localmente nel browser."
+        },
+        {
+          "position": 3,
+          "name": "Scarica il tuo PDF",
+          "text": "Scarica il file PDF convertito."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire TIFF in PDF?",
+      "html": "<p class=\"text-mid mb-4\">Converti immagini TIFF in documenti PDF. Combina più file in un unico PDF. Gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "TIFF to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come convertire TIFF in PDF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Carica il tuo file TIFF",
+          "description": "Trascina il file TIFF sul convertitore o clicca per sfogliare.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Converti",
+          "description": "Clicca su Converti — i file vengono elaborati localmente nel browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Scarica il tuo PDF",
+          "description": "Scarica il file PDF convertito.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "I tuoi file vengono elaborati interamente nel browser. Nulla viene caricato su server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Senza limiti",
+          "description": "Converti quanti file vuoi. Nessun limite giornaliero, nessuna restrizione di dimensione."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Controllo qualità",
+          "description": "Regola le impostazioni per trovare il perfetto equilibrio tra dimensione e qualità."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversione istantanea",
+          "description": "Tutta l'elaborazione avviene localmente con le API moderne del browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "TIFF vs PDF – confronto dei formati",
+      "plans": [
+        {
+          "id": "tiff",
+          "name": "TIFF"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compressione con perdita",
+          "values": {
+            "tiff": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Compressione senza perdita",
+          "values": {
+            "tiff": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Trasparenza (canale alfa)",
+          "values": {
+            "tiff": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Supporto animazione",
+          "values": {
+            "tiff": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Supporto browser",
+          "values": {
+            "tiff": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Dimensione file compatta",
+          "values": {
+            "tiff": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadati (EXIF)",
+          "values": {
+            "tiff": true,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da TIFF a PDF",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "La conversione da TIFF a PDF è gratuita?",
+          "answer": "Sì, questo convertitore è completamente gratuito e senza limiti. Nessuna registrazione, nessun watermark."
+        },
+        {
+          "question": "Il convertitore carica i miei file?",
+          "answer": "No. Tutta l'elaborazione avviene localmente nel browser. I tuoi file non lasciano mai il dispositivo."
+        },
+        {
+          "question": "Posso convertire più file contemporaneamente?",
+          "answer": "Sì, il convertitore supporta la conversione batch."
+        },
+        {
+          "question": "Il convertitore funziona su dispositivi mobili?",
+          "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire qualcosa? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertitore TIFF in PDF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

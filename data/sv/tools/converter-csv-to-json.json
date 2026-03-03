@@ -1,0 +1,241 @@
+{
+  "toolKey": "csvToJson",
+  "locale": "sv",
+  "metadata": {
+    "title": "CSV till JSON-konverterare — CSV JSON",
+    "description": "Konvertera CSV till JSON-format. Automatisk parsning och formatering. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/csv-till-json-konverterare"
+  },
+  "hero": {
+    "title": "CSV till JSON-konverterare",
+    "description": "Konvertera CSV till JSON-format. Automatisk parsning och formatering. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/csv-till-json-konverterare",
+      "label": "CSV till JSON-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "CSV till JSON-konverterare",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Konvertera CSV till JSON-format. Automatisk parsning och formatering. Gratis.",
+      "featureList": ["CSV to JSON conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert CSV to JSON", "CSV to JSON", "Free CSV to JSON converter"]
+    },
+    "howTo": {
+      "name": "Hur man konverterar CSV till JSON",
+      "description": "Konvertera CSV till JSON-format. Automatisk parsning och formatering. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Klistra in dina data",
+          "text": "Klistra in dina CSV-data i inmatningsfältet."
+        },
+        {
+          "position": 2,
+          "name": "Konvertera",
+          "text": "Klicka på Konvertera för att omvandla dina CSV-data till JSON-format."
+        },
+        {
+          "position": 3,
+          "name": "Kopiera eller ladda ner",
+          "text": "Kopiera JSON-utdatan eller ladda ner som fil."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Varför konvertera CSV till JSON?",
+      "html": "<p class=\"text-mid mb-4\">Konvertera CSV till JSON-format. Automatisk parsning och formatering. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "CSV to JSON conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hur man konverterar CSV till JSON",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Klistra in dina data",
+          "description": "Klistra in dina CSV-data i inmatningsfältet.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertera",
+          "description": "Klicka på Konvertera för att omvandla dina CSV-data till JSON-format.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopiera eller ladda ner",
+          "description": "Kopiera JSON-utdatan eller ladda ner som fil.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna konverterare annorlunda?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Dina filer bearbetas helt i din webbläsare. Inget laddas upp till någon server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Inga begränsningar",
+          "description": "Konvertera så många filer du behöver. Inga dagliga gränser, inga storleksbegränsningar."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontroll",
+          "description": "Justera inställningarna för den perfekta balansen mellan filstorlek och kvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Omedelbar konvertering",
+          "description": "All bearbetning sker lokalt med moderna webbläsar-API:er."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "CSV vs JSON – formatjämförelse",
+      "plans": [
+        {
+          "id": "csv",
+          "name": "CSV"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Nästlade data",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Tabelldata",
+          "values": {
+            "csv": true,
+            "json": false
+          }
+        },
+        {
+          "name": "Schemavalidering",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Läsbart för människor",
+          "values": {
+            "csv": true,
+            "json": true
+          }
+        },
+        {
+          "name": "API-standard",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Kompakt syntax",
+          "values": {
+            "csv": true,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om CSV till JSON-konvertering",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Är det gratis att konvertera CSV till JSON?",
+          "answer": "Ja, denna konverterare är helt gratis och utan begränsningar. Ingen registrering, inga vattenstämplar."
+        },
+        {
+          "question": "Laddar konverteraren upp mina filer?",
+          "answer": "Nej. All bearbetning sker lokalt i din webbläsare. Dina filer lämnar aldrig din enhet."
+        },
+        {
+          "question": "Kan jag konvertera flera filer samtidigt?",
+          "answer": "Ja, konverteraren stöder batchkonvertering."
+        },
+        {
+          "question": "Fungerar konverteraren på mobilen?",
+          "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå något? Skicka oss ett meddelande – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "CSV till JSON-konverterare"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

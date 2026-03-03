@@ -1,0 +1,241 @@
+{
+  "toolKey": "yamlToJson",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník YAML na JSON — YAML JSON",
+    "description": "Převeďte YAML do formátu JSON. Automatické parsování a formátování. Zdarma.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-yaml-na-json"
+  },
+  "hero": {
+    "title": "Převodník YAML na JSON",
+    "description": "Převeďte YAML do formátu JSON. Automatické parsování a formátování. Zdarma.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-yaml-na-json",
+      "label": "Převodník YAML na JSON"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník YAML na JSON",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Převeďte YAML do formátu JSON. Automatické parsování a formátování. Zdarma.",
+      "featureList": ["YAML to JSON conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert YAML to JSON", "YAML to JSON", "Free YAML to JSON converter"]
+    },
+    "howTo": {
+      "name": "Jak převést YAML na JSON",
+      "description": "Převeďte YAML do formátu JSON. Automatické parsování a formátování. Zdarma.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Vložte data",
+          "text": "Vložte YAML data do vstupního pole."
+        },
+        {
+          "position": 2,
+          "name": "Převést",
+          "text": "Klikněte na Převést pro transformaci YAML dat do formátu JSON."
+        },
+        {
+          "position": 3,
+          "name": "Zkopírovat nebo stáhnout",
+          "text": "Zkopírujte výstup JSON nebo stáhněte jako soubor."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět YAML na JSON?",
+      "html": "<p class=\"text-mid mb-4\">Převeďte YAML do formátu JSON. Automatické parsování a formátování. Zdarma.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "YAML to JSON conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak převést YAML na JSON",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Vložte data",
+          "description": "Vložte YAML data do vstupního pole.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Převést",
+          "description": "Klikněte na Převést pro transformaci YAML dat do formátu JSON.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Zkopírovat nebo stáhnout",
+          "description": "Zkopírujte výstup JSON nebo stáhněte jako soubor.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento převodník jiný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Úplné soukromí",
+          "description": "Vaše soubory jsou zpracovány výhradně v prohlížeči. Nic není odesláno na server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez omezení",
+          "description": "Převeďte tolik souborů, kolik potřebujete. Žádné denní limity, žádná omezení."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola kvality",
+          "description": "Upravte nastavení pro dokonalou rovnováhu mezi velikostí souboru a kvalitou."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Okamžitý převod",
+          "description": "Veškeré zpracování probíhá lokálně pomocí moderních API prohlížeče."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "YAML vs JSON – srovnání formátů",
+      "plans": [
+        {
+          "id": "yaml",
+          "name": "YAML"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Vnořená data",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Tabulární data",
+          "values": {
+            "yaml": false,
+            "json": false
+          }
+        },
+        {
+          "name": "Validace schématu",
+          "values": {
+            "yaml": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Lidsky čitelné",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "API standard",
+          "values": {
+            "yaml": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Kompaktní syntaxe",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o převodu YAML na JSON",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Je převod YAML na JSON zdarma?",
+          "answer": "Ano, tento převodník je zcela zdarma a bez omezení. Žádná registrace, žádné vodoznaky."
+        },
+        {
+          "question": "Nahrává převodník moje soubory?",
+          "answer": "Ne. Veškeré zpracování probíhá lokálně v prohlížeči. Soubory nikdy neopustí vaše zařízení."
+        },
+        {
+          "question": "Mohu převést více souborů najednou?",
+          "answer": "Ano, převodník podporuje dávkový převod."
+        },
+        {
+          "question": "Funguje převodník na mobilu?",
+          "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Převodník YAML na JSON"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

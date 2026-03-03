@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs AVIF – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "png": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "png": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "png": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a PNG-AVIF konvertálásról",
       "openByDefault": 0,

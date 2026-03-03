@@ -568,7 +568,13 @@
         },
         {
           "type": "colorPalette",
-          "colors": ["#1E3A5F", "#2D4A6F", "#3C5A7F", "#4B6A8F", "#5A7A9F"]
+          "colors": [
+            "#1E3A5F",
+            "#2D4A6F",
+            "#3C5A7F",
+            "#4B6A8F",
+            "#5A7A9F"
+          ]
         },
         {
           "type": "richtext",
@@ -577,7 +583,11 @@
         },
         {
           "type": "colorPalette",
-          "colors": ["#2563EB", "#0891B2", "#10B981"]
+          "colors": [
+            "#2563EB",
+            "#0891B2",
+            "#10B981"
+          ]
         },
         {
           "type": "richtext",
@@ -586,7 +596,10 @@
         },
         {
           "type": "colorPalette",
-          "colors": ["#2563EB", "#F97316"]
+          "colors": [
+            "#2563EB",
+            "#F97316"
+          ]
         },
         {
           "type": "richtext",
@@ -595,7 +608,11 @@
         },
         {
           "type": "colorPalette",
-          "colors": ["#EF4444", "#EAB308", "#2563EB"]
+          "colors": [
+            "#EF4444",
+            "#EAB308",
+            "#2563EB"
+          ]
         },
         {
           "type": "richtext",
@@ -609,7 +626,11 @@
         },
         {
           "type": "colorPalette",
-          "colors": ["#FFFFFF", "#F5F5F5", "#FF6B35"]
+          "colors": [
+            "#FFFFFF",
+            "#F5F5F5",
+            "#FF6B35"
+          ]
         },
         {
           "type": "richtext",

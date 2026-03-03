@@ -1,0 +1,293 @@
+{
+  "toolKey": "pdfToPng",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter PDF na PNG — strony PDF jako obrazy PNG",
+    "description": "Zamień każdą stronę PDF na bezstratny obraz PNG. Idealne do zrzutów, prezentacji i druku. Bez rejestracji — konwersja w przeglądarce.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-pdf-na-png"
+  },
+  "hero": {
+    "title": "Zamień strony PDF na obrazy PNG",
+    "description": "Wgraj plik PDF, a narzędzie zamieni każdą stronę na osobny obraz PNG w wysokiej jakości. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-pdf-na-png",
+      "label": "Konwerter PDF na PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter PDF na PNG — darmowy, bez limitu stron",
+      "alternateName": ["Zamiana PDF na PNG online", "Konwersja PDF do PNG", "PDF to PNG converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Darmowy konwerter PDF na PNG online. Zamień strony PDF na obrazy PNG w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja stron PDF na PNG", "Przetwarzanie wszystkich stron dokumentu", "Renderowanie lokalne w przeglądarce", "Pobieranie pojedynczo lub wszystkich naraz"]
+    },
+    "howTo": {
+      "name": "Jak zamienić PDF na PNG online",
+      "description": "Instrukcja konwersji stron PDF na format PNG.",
+      "steps": [
+        {
+          "name": "Wgraj plik PDF",
+          "text": "Przeciągnij plik PDF na wyznaczone pole albo wybierz go z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Narzędzie wyrenderuje każdą stronę PDF jako obraz PNG."
+        },
+        {
+          "name": "Pobierz pliki PNG",
+          "text": "Pobierz każdą stronę jako osobny plik PNG lub wszystkie naraz."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować PDF na PNG?",
+      "html": "<p class=\"text-mid mb-4\">PNG to bezstratny format graficzny, który zachowuje pełną jakość obrazu. Jest idealny, gdy zależy ci na ostrości tekstu i grafik — np. do prezentacji, instrukcji, materiałów marketingowych lub archiwizacji.</p><p class=\"text-mid mb-4\">Konwersja PDF na PNG przydaje się, gdy chcesz wstawić stronę dokumentu do prezentacji, opublikować jako obraz w mediach społecznościowych lub zarchiwizować dokument w postaci graficznej.</p><p class=\"text-mid\">Nasz konwerter renderuje PDF lokalnie w przeglądarce — pliki nie są wysyłane na żaden serwer zewnętrzny.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PDF na PNG – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować PDF na PNG?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wgraj plik PDF",
+          "description": "Przeciągnij plik PDF na wyznaczone pole albo wybierz go z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Rozpocznij konwersję",
+          "description": "Narzędzie automatycznie wyrenderuje każdą stronę jako obraz PNG w wysokiej jakości.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Pobierz obrazy",
+          "description": "Pobierz każdą stronę jako osobny plik PNG lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "PDF vs PNG — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PDF</th><th class=\"text-dark py-2 text-left font-semibold\">PNG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Format dokumentu</td><td class=\"text-mid py-2\">Format obrazu bezstratnego</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Jakość tekstu</td><td class=\"text-mid py-2 pr-4\">Wektorowa (skalowalna)</td><td class=\"text-mid py-2\">Rastrowa (zależy od DPI)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar</td><td class=\"text-mid py-2 pr-4\">Kompaktowy</td><td class=\"text-mid py-2\">Większy (bezstratna kompresja)</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Dokumenty, druk</td><td class=\"text-mid py-2\">Grafiki, zrzuty, dokumentacja</td></tr></tbody></table></div><p class=\"text-mid mt-4\">PNG zachowuje ostrość tekstu lepiej niż JPG — idealny dla dokumentów i zrzutów ekranu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować PDF na PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumentacja techniczna",
+          "description": "PNG zachowuje ostrość tekstu i grafik — idealny do wstawiania stron PDF w dokumentacji."
+        },
+        {
+          "icon": "RiPresentationLine",
+          "title": "Prezentacje",
+          "description": "Wstaw stronę PDF jako obraz PNG do prezentacji — ostrzejszy tekst niż JPG."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Archiwizacja stron",
+          "description": "PNG jest bezstratny — archiwizuj strony PDF w najwyższej jakości."
+        },
+        {
+          "icon": "RiShareLine",
+          "title": "Social media",
+          "description": "PNG z ostrym tekstem jest czytelniejszy na platformach społecznościowych niż JPG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter PDF na PNG?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Renderowanie odbywa się w przeglądarce za pomocą PDF.js."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu stron",
+          "description": "Narzędzie przetworzy każdą stronę dokumentu — bez ograniczeń."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Wysoka jakość",
+          "description": "Strony PDF są renderowane w wysokiej rozdzielczości jako obrazy PNG."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pobierz strony pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji PDF na PNG",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>PNG to format bezstratny — tekst i grafiki będą ostre, ale pliki będą większe niż JPG.</li><li>Dla dokumentów z dużą ilością tekstu PNG jest lepszym wyborem niż JPG (brak artefaktów kompresji).</li><li>Domyślna rozdzielczość renderowania to 2x — zapewnia dobrą jakość na ekranach Retina.</li><li>Jeśli rozmiar pliku jest ważniejszy niż jakość, rozważ <a href=\"/narzedzia/konwerter-pdf-na-jpg\">konwersję PDF na JPG</a>.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs PNG – porównanie formatów",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "pdf": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji PDF na PNG",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czym PNG różni się od JPG przy konwersji z PDF?",
+          "answer": "PNG to format bezstratny — zachowuje pełną jakość tekstu i grafik. JPG kompresuje obraz stratnie, co daje mniejsze pliki, ale może powodować artefakty. Dla dokumentów z tekstem PNG jest lepszym wyborem."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą biblioteki PDF.js. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Ile stron PDF mogę przekonwertować?",
+          "answer": "Nie ma limitu stron. Narzędzie przetworzy każdą stronę dokumentu PDF na osobny obraz PNG."
+        },
+        {
+          "question": "Czy pliki PNG będą duże?",
+          "answer": "Pliki PNG są większe niż JPG, ponieważ nie stosują kompresji stratnej. Dla typowego dokumentu A4 jeden obraz PNG waży 0,5–2 MB."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PDF na PNG – Arteon",
+      "defaultSubject": "Feedback: Konwerter PDF na PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

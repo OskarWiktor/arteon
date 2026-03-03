@@ -1,0 +1,248 @@
+{
+  "toolKey": "pdfToWebp",
+  "locale": "hu",
+  "metadata": {
+    "title": "PDF WebP konverter — PDF WebP",
+    "description": "PDF oldalak konvertálása WebP képekké. Kiváló minőség, korlátok nélkül. Ingyenes.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/pdf-webp-konverter"
+  },
+  "hero": {
+    "title": "PDF WebP konverter",
+    "description": "PDF oldalak konvertálása WebP képekké. Kiváló minőség, korlátok nélkül. Ingyenes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/pdf-webp-konverter",
+      "label": "PDF WebP konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PDF WebP konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "PDF oldalak konvertálása WebP képekké. Kiváló minőség, korlátok nélkül. Ingyenes.",
+      "featureList": ["PDF to WebP conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PDF to WebP", "PDF to WebP", "Free PDF to WebP converter"]
+    },
+    "howTo": {
+      "name": "Hogyan konvertáljuk PDF-t WebP-vé",
+      "description": "PDF oldalak konvertálása WebP képekké. Kiváló minőség, korlátok nélkül. Ingyenes.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Töltse fel a PDF fájlt",
+          "text": "Húzza a PDF fájlt a konverterre, vagy kattintson a tallózáshoz."
+        },
+        {
+          "position": 2,
+          "name": "Konvertálás",
+          "text": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+        },
+        {
+          "position": 3,
+          "name": "Töltse le a WebP fájlt",
+          "text": "Töltse le a konvertált WebP fájlt."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miért érdemes PDF-t WebP-vé konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">PDF oldalak konvertálása WebP képekké. Kiváló minőség, korlátok nélkül. Ingyenes.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PDF to WebP conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan konvertáljuk PDF-t WebP-vé",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Töltse fel a PDF fájlt",
+          "description": "Húzza a PDF fájlt a konverterre, vagy kattintson a tallózáshoz.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertálás",
+          "description": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Töltse le a WebP fájlt",
+          "description": "Töltse le a konvertált WebP fájlt.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a konvertert?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "A fájlok teljes mértékben a böngészőben kerülnek feldolgozásra. Semmi nem kerül szerverre."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Nincs korlát",
+          "description": "Konvertáljon annyi fájlt, amennyit csak akar. Nincs napi limit, nincs méretkorlátozás."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Minőségszabályozás",
+          "description": "Állítsa be a beállításokat a tökéletes egyensúly megtalálásához a fájlméret és a minőség között."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konverzió",
+          "description": "Minden feldolgozás helyben történik modern böngésző API-k segítségével."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs WebP – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "pdf": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "pdf": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a PDF-WebP konverzióról",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Ingyenes a PDF konvertálása WebP-vé?",
+          "answer": "Igen, ez a konverter teljesen ingyenes és korlátlan. Nincs regisztráció, nincs vízjel."
+        },
+        {
+          "question": "Feltölti a fájljaimat a konverter?",
+          "answer": "Nem. Minden feldolgozás helyben történik a böngészőben. A fájlok soha nem hagyják el az eszközét."
+        },
+        {
+          "question": "Konvertálhatok egyszerre több fájlt?",
+          "answer": "Igen, a konverter támogatja a kötegelt konverziót."
+        },
+        {
+          "question": "Működik a konverter mobilon?",
+          "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy javaslatot szeretne tenni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "PDF WebP konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

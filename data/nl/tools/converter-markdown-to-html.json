@@ -1,0 +1,241 @@
+{
+  "toolKey": "markdownToHtml",
+  "locale": "nl",
+  "metadata": {
+    "title": "Markdown naar HTML converter — Markdown HTML",
+    "description": "Converteer Markdown naar HTML-formaat. Automatisch parsen en formatteren. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/markdown-naar-html-converter"
+  },
+  "hero": {
+    "title": "Markdown naar HTML converter",
+    "description": "Converteer Markdown naar HTML-formaat. Automatisch parsen en formatteren. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/markdown-naar-html-converter",
+      "label": "Markdown naar HTML converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Markdown naar HTML converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Converteer Markdown naar HTML-formaat. Automatisch parsen en formatteren. Gratis.",
+      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+    },
+    "howTo": {
+      "name": "Hoe Markdown naar HTML converteren",
+      "description": "Converteer Markdown naar HTML-formaat. Automatisch parsen en formatteren. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Plak je gegevens",
+          "text": "Plak je Markdown-gegevens in het invoerveld."
+        },
+        {
+          "position": 2,
+          "name": "Converteren",
+          "text": "Klik op Converteren om je Markdown-gegevens naar HTML-formaat om te zetten."
+        },
+        {
+          "position": 3,
+          "name": "Kopiëren of downloaden",
+          "text": "Kopieer de HTML-uitvoer of download als bestand."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Waarom Markdown naar HTML converteren?",
+      "html": "<p class=\"text-mid mb-4\">Converteer Markdown naar HTML-formaat. Automatisch parsen en formatteren. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Markdown to HTML conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe Markdown naar HTML converteren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Plak je gegevens",
+          "description": "Plak je Markdown-gegevens in het invoerveld.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Converteren",
+          "description": "Klik op Converteren om je Markdown-gegevens naar HTML-formaat om te zetten.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopiëren of downloaden",
+          "description": "Kopieer de HTML-uitvoer of download als bestand.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze converter anders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Je bestanden worden volledig in je browser verwerkt. Niets wordt naar een server geüpload."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Geen limieten",
+          "description": "Converteer zoveel bestanden als je nodig hebt. Geen daglimieten, geen beperkingen."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kwaliteitscontrole",
+          "description": "Pas de instellingen aan voor de perfecte balans tussen bestandsgrootte en kwaliteit."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Directe conversie",
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Markdown vs HTML – formaatsvergelijking",
+      "plans": [
+        {
+          "id": "markdown",
+          "name": "Markdown"
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Geneste gegevens",
+          "values": {
+            "markdown": false,
+            "html": true
+          }
+        },
+        {
+          "name": "Tabelgegevens",
+          "values": {
+            "markdown": true,
+            "html": true
+          }
+        },
+        {
+          "name": "Schemavalidatie",
+          "values": {
+            "markdown": false,
+            "html": true
+          }
+        },
+        {
+          "name": "Menselijk leesbaar",
+          "values": {
+            "markdown": true,
+            "html": false
+          }
+        },
+        {
+          "name": "API-standaard",
+          "values": {
+            "markdown": false,
+            "html": false
+          }
+        },
+        {
+          "name": "Compacte syntaxis",
+          "values": {
+            "markdown": true,
+            "html": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen over Markdown naar HTML conversie",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Is het converteren van Markdown naar HTML gratis?",
+          "answer": "Ja, deze converter is volledig gratis en zonder limieten. Geen registratie, geen watermerken."
+        },
+        {
+          "question": "Uploadt de converter mijn bestanden?",
+          "answer": "Nee. Alle verwerking vindt lokaal plaats in je browser. Je bestanden verlaten nooit je apparaat."
+        },
+        {
+          "question": "Kan ik meerdere bestanden tegelijk converteren?",
+          "answer": "Ja, de converter ondersteunt batchconversie."
+        },
+        {
+          "question": "Werkt de converter op mobiel?",
+          "answer": "Ja, de converter werkt op elk apparaat met een moderne webbrowser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heb je een idee, een bug gevonden of wil je iets voorstellen? Stuur ons een bericht – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Markdown naar HTML converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

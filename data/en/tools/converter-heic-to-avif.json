@@ -191,6 +191,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs AVIF – format comparison",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "heic": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about HEIC to AVIF conversion",
       "openByDefault": 0,

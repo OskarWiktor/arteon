@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h1>Privacy Policy</h1>
           <p className="mt-2 text-sm opacity-70">
-            Version: <strong>13.02.2026</strong>
+            Version: <strong>03.03.2026</strong>
           </p>
 
           <Gap size="xs" />
@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
               <li>technical data collected automatically (IP address, device information, cookies),</li>
               <li>analytical data from Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics and Vercel Speed Insights,</li>
               <li>analytical data from Metricool (visit statistics, traffic sources),</li>
-              <li>data collected by Google AdSense for the purpose of displaying ads (advertising identifiers, advertising cookies, ad interaction data),</li>
+              <li>data collected by Google AdSense for the purpose of displaying ads (advertising identifiers, advertising cookies, ad interaction data, IAB TCF v2.3 consent strings),</li>
               <li>server and security event logs (e.g. timestamps, IP address, request headers).</li>
             </ul>
           </SectionInfo>
@@ -79,14 +79,14 @@ export default function PrivacyPolicyPage() {
                 <strong>Security and claims</strong> - maintaining logs, preventing abuse, establishing/pursuing/defending claims (Art. 6(1)(f) GDPR).
               </li>
               <li>
-                <strong>Displaying ads</strong> - displaying interest-based advertisements via Google AdSense (Art. 6(1)(a) GDPR - user consent given via the cookie banner).
+                <strong>Displaying ads</strong> - displaying interest-based advertisements via Google AdSense (Art. 6(1)(a) GDPR - user consent given via the Google Privacy & Messaging dialog).
               </li>
             </ol>
           </SectionInfo>
 
           <Gap variant="line" size="sm" />
 
-          <SectionInfo title="4. Cookies">
+          <SectionInfo title="4. Cookies and Consent">
             <p>The website uses cookies for the following purposes:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>ensuring proper website functionality,</li>
@@ -97,6 +97,21 @@ export default function PrivacyPolicyPage() {
             <p>
               Google AdSense may use DoubleClick cookies to serve ads based on a user&apos;s previous visits to our website or other websites. Third-party providers (including Google) use these
               cookies to serve ads based on browsing history.
+            </p>
+            <h3 className="h5 mt-4 mb-3">Consent Management (CMP)</h3>
+            <p>
+              To collect and manage consent for cookies and data processing for advertising purposes, this website uses Google Privacy &amp; Messaging &mdash; a certified Consent Management Platform
+              (CMP) integrated with the IAB Transparency and Consent Framework (TCF) version 2.3.
+            </p>
+            <p>
+              Users from the European Economic Area (EEA), the United Kingdom and Switzerland will be asked to give consent via a Google consent dialog. Users from US states covered by privacy
+              regulations will see a message compliant with state-level regulations (including support for Global Privacy Control signals).
+            </p>
+            <p>You can change your consent preferences at any time by clicking the &quot;Cookie settings&quot; link in the website footer.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              The website uses Google Consent Mode v2 in Advanced mode. For users in regulated regions, all consent signals (ad_storage, ad_user_data, ad_personalization, analytics_storage) default to
+              &quot;denied&quot; and are updated only after consent is given. For users in other regions, consent defaults to &quot;granted&quot;.
             </p>
             <p>
               You can opt out of personalised ads at{' '}
@@ -109,7 +124,6 @@ export default function PrivacyPolicyPage() {
               </a>
               .
             </p>
-            <p>The website uses Google Consent Mode v2. This means that Google analytics and advertising scripts do not collect data until the user gives consent via the cookie banner.</p>
             <p>You can manage cookies in your browser settings. Restricting cookies may affect some website features.</p>
           </SectionInfo>
 

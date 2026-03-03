@@ -1,0 +1,248 @@
+{
+  "toolKey": "svgToPdf",
+  "locale": "fi",
+  "metadata": {
+    "title": "SVG PDF -muunnin — SVG PDF",
+    "description": "Muunna SVG-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/svg-pdf-muunnin"
+  },
+  "hero": {
+    "title": "SVG PDF -muunnin",
+    "description": "Muunna SVG-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/svg-pdf-muunnin",
+      "label": "SVG PDF -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG PDF -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Muunna SVG-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
+      "featureList": ["SVG to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert SVG to PDF", "SVG to PDF", "Free SVG to PDF converter"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa SVG PDF-muotoon",
+      "description": "Muunna SVG-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lataa SVG-tiedosto",
+          "text": "Vedä SVG-tiedosto muuntimeen tai napsauta selataksesi."
+        },
+        {
+          "position": 2,
+          "name": "Muunna",
+          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi."
+        },
+        {
+          "position": 3,
+          "name": "Lataa PDF-tiedosto",
+          "text": "Lataa muunnettu PDF-tiedosto."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miksi muuntaa SVG PDF-muotoon?",
+      "html": "<p class=\"text-mid mb-4\">Muunna SVG-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuinka muuntaa SVG PDF-muotoon",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Lataa SVG-tiedosto",
+          "description": "Vedä SVG-tiedosto muuntimeen tai napsauta selataksesi.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Muunna",
+          "description": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Lataa PDF-tiedosto",
+          "description": "Lataa muunnettu PDF-tiedosto.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erilaisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täydellinen yksityisyys",
+          "description": "Tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata palvelimelle."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta tiedostoa kuin tarvitset. Ei päivittäisiä rajoja."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Laatukontrolli",
+          "description": "Säädä asetuksia löytääksesi täydellisen tasapainon tiedostokoon ja laadun välillä."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs PDF – muotovertailu",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "svg": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "svg": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "svg": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "svg": false,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset SVG-PDF-muunnoksesta",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Onko SVG-muunnos PDF-muotoon ilmainen?",
+          "answer": "Kyllä, tämä muunnin on täysin ilmainen ja rajoittamaton. Ei rekisteröitymistä, ei vesileimoja."
+        },
+        {
+          "question": "Lataako muunnin tiedostoni palvelimelle?",
+          "answer": "Ei. Kaikki käsittely tapahtuu paikallisesti selaimessasi. Tiedostosi eivät koskaan poistu laitteeltasi."
+        },
+        {
+          "question": "Voinko muuntaa useita tiedostoja kerralla?",
+          "answer": "Kyllä, muunnin tukee erämuunnosta."
+        },
+        {
+          "question": "Toimiiko muunnin mobiilissa?",
+          "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa jotain? Lähetä meille viesti – vastaamme 24 tunnin sisällä.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG PDF -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

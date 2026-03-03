@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs JPG – muotovertailu",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "webp": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "webp": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "webp": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "webp": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "webp": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "webp": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "webp": true,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset WebP-JPG-muunnoksesta",
       "openByDefault": 0,

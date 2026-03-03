@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs GIF – formatsammenligning",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Tabsgivende komprimering",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Tabsfri komprimering",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Gennemsigtighed (alfakanal)",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Animationsunderstøttelse",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Webbrowserunderstøttelse",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af WebP til GIF",
       "openByDefault": 0,

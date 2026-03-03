@@ -191,6 +191,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs TIFF – format comparison",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "svg": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "svg": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "svg": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "svg": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about SVG to TIFF conversion",
       "openByDefault": 0,

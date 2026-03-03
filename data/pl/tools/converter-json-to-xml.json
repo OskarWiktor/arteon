@@ -1,0 +1,286 @@
+{
+  "toolKey": "jsonToXml",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter JSON na XML — darmowy, bez rejestracji",
+    "description": "Zamień dane JSON na poprawny, sformatowany XML. Bez rejestracji, bez limitu — konwersja lokalna w przeglądarce.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-json-na-xml"
+  },
+  "hero": {
+    "title": "Zamień dane JSON na format XML",
+    "description": "Wklej dane JSON lub wgraj plik, a narzędzie zamieni je na poprawnie sformatowany XML. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-json-na-xml",
+      "label": "Konwerter JSON na XML"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter JSON na XML — darmowy, bez rejestracji",
+      "alternateName": ["Zamiana JSON na XML online", "Konwersja JSON do XML", "JSON to XML converter"],
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Darmowy konwerter JSON na XML online. Zamień dane JSON na XML w przeglądarce — dane nie są wysyłane na serwer.",
+      "featureList": ["Konwersja JSON na XML", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+    },
+    "howTo": {
+      "name": "Jak zamienić JSON na XML online",
+      "description": "Instrukcja konwersji danych JSON na format XML.",
+      "steps": [
+        {
+          "name": "Wklej dane JSON",
+          "text": "Wklej dane w formacie JSON w pole tekstowe lub wgraj plik z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Kliknij przycisk Konwertuj, aby zamienić dane na format XML."
+        },
+        {
+          "name": "Skopiuj lub pobierz wynik",
+          "text": "Skopiuj wynikowy XML do schowka lub pobierz jako plik."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować JSON na XML?",
+      "html": "<p class=\"text-mid mb-4\">JSON to standard wymiany danych w nowoczesnych aplikacjach webowych i REST API. XML to format wymagany przez wiele systemów korporacyjnych, SOAP API, konfiguracji i dokumentów strukturalnych.</p><p class=\"text-mid mb-4\">Konwersja JSON na XML przydaje się, gdy integrujesz nowoczesną aplikację ze starszym systemem, przygotowujesz dane dla SOAP API lub tworzysz konfigurację w formacie XML.</p><p class=\"text-mid\">Nasz konwerter generuje poprawny, sformatowany XML z wcięciami — gotowy do użycia.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JSON na XML – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować JSON na XML?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wklej dane JSON",
+          "description": "Wklej obiekt lub tablicę JSON w pole tekstowe lub wgraj plik z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kliknij Konwertuj",
+          "description": "Narzędzie zamieni JSON na sformatowany XML z wcięciami.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub pobierz",
+          "description": "Skopiuj wynik do schowka lub pobierz jako plik .xml.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JSON vs XML — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">JSON</th><th class=\"text-dark py-2 text-left font-semibold\">XML</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Składnia</td><td class=\"text-mid py-2 pr-4\">Nawiasy klamrowe</td><td class=\"text-mid py-2\">Tagi (znaczniki)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Czytelność</td><td class=\"text-mid py-2 pr-4\">Kompaktowy</td><td class=\"text-mid py-2\">Bardziej opisowy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Komentarze</td><td class=\"text-mid py-2 pr-4\">Nie obsługuje</td><td class=\"text-mid py-2\">Tak (&lt;!-- --&gt;)</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">REST API, web</td><td class=\"text-mid py-2\">SOAP API, systemy korporacyjne</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować JSON na XML?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiServerLine",
+          "title": "Integracja z SOAP",
+          "description": "Systemy korporacyjne i SOAP API wymagają danych w formacie XML."
+        },
+        {
+          "icon": "RiSettingsLine",
+          "title": "Konfiguracje legacy",
+          "description": "Starsze systemy Java, .NET i PHP używają XML jako formatu konfiguracji."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty strukturalne",
+          "description": "XML jest standardem dla dokumentów strukturalnych (XHTML, SVG, XSLT)."
+        },
+        {
+          "icon": "RiExchangeLine",
+          "title": "Wymiana danych B2B",
+          "description": "Wiele standardów wymiany danych B2B (EDI, UBL) bazuje na XML."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter JSON na XML?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Dane nie opuszczają komputera. Konwersja odbywa się w przeglądarce."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Poprawne formatowanie",
+          "description": "Wynikowy XML jest prawidłowo sformatowany z wcięciami i deklaracją."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Walidacja JSON",
+          "description": "Narzędzie sprawdza poprawność JSON przed konwersją."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Kopiuj lub pobierz",
+          "description": "Wynik możesz skopiować do schowka lub pobrać jako plik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji JSON na XML",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Klucze JSON stają się nazwami elementów XML — upewnij się, że nie zawierają spacji ani znaków specjalnych.</li><li>Tablice JSON generują powtarzające się elementy &lt;item&gt; w XML.</li><li>Wynikowy XML zawiera deklarację &lt;?xml version=\"1.0\"?&gt; i element główny &lt;root&gt;.</li><li>Jeśli potrzebujesz XML z atrybutami lub przestrzeniami nazw, może być konieczna ręczna edycja wyniku.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JSON vs XML – porównanie formatów",
+      "plans": [
+        {
+          "id": "json",
+          "name": "JSON"
+        },
+        {
+          "id": "xml",
+          "name": "XML",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dane zagnieżdżone",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Dane tabelaryczne",
+          "values": {
+            "json": false,
+            "xml": false
+          }
+        },
+        {
+          "name": "Walidacja schematu",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Czytelność dla człowieka",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Standard API",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Zwięzła składnia",
+          "values": {
+            "json": true,
+            "xml": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji JSON na XML",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Jak JSON jest mapowany na XML?",
+          "answer": "Klucze obiektu JSON stają się nazwami elementów XML, a wartości — ich zawartością tekstową. Tablice JSON generują powtarzające się elementy."
+        },
+        {
+          "question": "Czy dane są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Dane nie opuszczają komputera."
+        },
+        {
+          "question": "Czy wynikowy XML ma deklarację?",
+          "answer": "Tak, wynikowy XML zawiera standardową deklarację <?xml version=\"1.0\" encoding=\"UTF-8\"?>."
+        },
+        {
+          "question": "Jaki jest element główny XML?",
+          "answer": "Domyślnym elementem głównym jest <root>. Tablica JSON generuje elementy <item> wewnątrz korzenia."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JSON na XML – Arteon",
+      "defaultSubject": "Feedback: Konwerter JSON na XML"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

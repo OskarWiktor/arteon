@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "GIF vs PNG – Formatvergleich",
+      "plans": [
+        {
+          "id": "gif",
+          "name": "GIF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Verlustbehaftete Komprimierung",
+          "values": {
+            "gif": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Verlustfreie Komprimierung",
+          "values": {
+            "gif": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparenz (Alphakanal)",
+          "values": {
+            "gif": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animationsunterstützung",
+          "values": {
+            "gif": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Webbrowser-Unterstützung",
+          "values": {
+            "gif": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Kompakte Dateigröße",
+          "values": {
+            "gif": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadaten (EXIF)",
+          "values": {
+            "gif": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zur Konvertierung von GIF in PNG",
       "openByDefault": 0,

@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs GIF – comparație de formate",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "webp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "webp": true,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia WebP în GIF",
       "openByDefault": 0,

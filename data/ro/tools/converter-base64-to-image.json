@@ -1,0 +1,178 @@
+{
+  "toolKey": "base64ToImage",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor Base64 în imagine — Base64 imagine",
+    "description": "Decodifică șiruri Base64 în imagini. Previzualizare și descărcare în browser. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-base64-in-imagine"
+  },
+  "hero": {
+    "title": "Convertor Base64 în imagine",
+    "description": "Decodifică șiruri Base64 în imagini. Previzualizare și descărcare în browser. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-base64-in-imagine",
+      "label": "Convertor Base64 în imagine"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor Base64 în imagine",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Decodifică șiruri Base64 în imagini. Previzualizare și descărcare în browser. Gratuit.",
+      "featureList": ["Base64 to imagine conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert Base64 to imagine", "Base64 to imagine", "Free Base64 to imagine converter"]
+    },
+    "howTo": {
+      "name": "Cum convertiți Base64 în imagine",
+      "description": "Decodifică șiruri Base64 în imagini. Previzualizare și descărcare în browser. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Încărcați fișierul Base64",
+          "text": "Trageți fișierul Base64 pe convertor sau faceți clic pentru a răsfoi."
+        },
+        {
+          "position": 2,
+          "name": "Convertiți",
+          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
+        },
+        {
+          "position": 3,
+          "name": "Descărcați imagine",
+          "text": "Descărcați fișierul imagine convertit."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți Base64 în imagine?",
+      "html": "<p class=\"text-mid mb-4\">Decodifică șiruri Base64 în imagini. Previzualizare și descărcare în browser. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Base64 to imagine conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum convertiți Base64 în imagine",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Încărcați fișierul Base64",
+          "description": "Trageți fișierul Base64 pe convertor sau faceți clic pentru a răsfoi.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertiți",
+          "description": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Descărcați imagine",
+          "description": "Descărcați fișierul imagine convertit.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele sunt procesate integral în browser. Nimic nu este trimis pe server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți oricâte fișiere aveți nevoie. Fără limite zilnice, fără restricții."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control al calității",
+          "description": "Ajustați setările pentru echilibrul perfect între dimensiune și calitate."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia Base64 în imagine",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Conversia din Base64 în imagine este gratuită?",
+          "answer": "Da, acest convertor este complet gratuit și fără limite. Fără înregistrare, fără filigran."
+        },
+        {
+          "question": "Convertorul încarcă fișierele mele?",
+          "answer": "Nu. Toată procesarea are loc local în browser. Fișierele nu părăsesc niciodată dispozitivul."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul acceptă conversia în lot."
+        },
+        {
+          "question": "Convertorul funcționează pe mobil?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați ceva? Trimiteți-ne un mesaj – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertor Base64 în imagine"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

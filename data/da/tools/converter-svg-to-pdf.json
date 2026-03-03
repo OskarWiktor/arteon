@@ -1,0 +1,248 @@
+{
+  "toolKey": "svgToPdf",
+  "locale": "da",
+  "metadata": {
+    "title": "SVG til PDF-konverter — SVG PDF",
+    "description": "Konverter SVG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/svg-til-pdf-konverter"
+  },
+  "hero": {
+    "title": "SVG til PDF-konverter",
+    "description": "Konverter SVG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/svg-til-pdf-konverter",
+      "label": "SVG til PDF-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG til PDF-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Konverter SVG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+      "featureList": ["SVG to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert SVG to PDF", "SVG to PDF", "Free SVG to PDF converter"]
+    },
+    "howTo": {
+      "name": "Sådan konverterer du SVG til PDF",
+      "description": "Konverter SVG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload din SVG-fil",
+          "text": "Træk din SVG-fil til konverteren eller klik for at gennemse."
+        },
+        {
+          "position": 2,
+          "name": "Konverter",
+          "text": "Klik på Konverter — filerne behandles lokalt i din browser."
+        },
+        {
+          "position": 3,
+          "name": "Download din PDF",
+          "text": "Download den konverterede PDF-fil."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere SVG til PDF?",
+      "html": "<p class=\"text-mid mb-4\">Konverter SVG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Sådan konverterer du SVG til PDF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Upload din SVG-fil",
+          "description": "Træk din SVG-fil til konverteren eller klik for at gennemse.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konverter",
+          "description": "Klik på Konverter — filerne behandles lokalt i din browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Download din PDF",
+          "description": "Download den konverterede PDF-fil.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne konverter anderledes?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatlivsbeskyttelse",
+          "description": "Dine filer behandles helt i din browser. Intet uploades til nogen server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrænsninger",
+          "description": "Konverter så mange filer, som du har brug for. Ingen daglige grænser."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontrol",
+          "description": "Juster indstillingerne for den perfekte balance mellem filstørrelse og kvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Øjeblikkelig konvertering",
+          "description": "Al behandling sker lokalt med moderne browser-API'er."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs PDF – formatsammenligning",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Tabsgivende komprimering",
+          "values": {
+            "svg": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Tabsfri komprimering",
+          "values": {
+            "svg": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Gennemsigtighed (alfakanal)",
+          "values": {
+            "svg": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Animationsunderstøttelse",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Webbrowserunderstøttelse",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "svg": false,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål om SVG til PDF-konvertering",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Er konvertering af SVG til PDF gratis?",
+          "answer": "Ja, denne konverter er helt gratis og uden begrænsninger. Ingen registrering, ingen vandmærker."
+        },
+        {
+          "question": "Uploader konverteren mine filer?",
+          "answer": "Nej. Al behandling sker lokalt i din browser. Dine filer forlader aldrig din enhed."
+        },
+        {
+          "question": "Kan jeg konvertere flere filer på én gang?",
+          "answer": "Ja, konverteren understøtter batchkonvertering."
+        },
+        {
+          "question": "Virker konverteren på mobil?",
+          "answer": "Ja, den virker på enhver enhed med en moderne webbrowser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå noget? Send os en besked – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG til PDF-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

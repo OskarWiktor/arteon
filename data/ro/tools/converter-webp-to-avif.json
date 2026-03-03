@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs AVIF – comparație de formate",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia WebP în AVIF",
       "openByDefault": 0,

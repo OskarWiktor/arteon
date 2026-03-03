@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs WebP – formatjämförelse",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Förlustrik komprimering",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Förlustfri komprimering",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Transparens (alfakanal)",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Animationsstöd",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Webbläsarstöd",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Kompakt filstorlek",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "avif": true,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om konvertering av AVIF till WebP",
       "openByDefault": 0,

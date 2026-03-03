@@ -1,0 +1,286 @@
+{
+  "toolKey": "csvToJson",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter CSV na JSON — darmowy, bez rejestracji",
+    "description": "Zamień plik CSV na poprawny JSON z automatycznym formatowaniem. Bez rejestracji, bez limitu — konwersja lokalna w przeglądarce.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-csv-na-json"
+  },
+  "hero": {
+    "title": "Zamień dane CSV na format JSON",
+    "description": "Wklej dane CSV lub wgraj plik, a narzędzie zamieni je na poprawnie sformatowany JSON. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-csv-na-json",
+      "label": "Konwerter CSV na JSON"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter CSV na JSON — darmowy, bez rejestracji",
+      "alternateName": ["Zamiana CSV na JSON online", "Konwersja CSV do JSON", "CSV to JSON converter"],
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Darmowy konwerter CSV na JSON online. Zamień dane CSV na JSON w przeglądarce — dane nie są wysyłane na serwer.",
+      "featureList": ["Konwersja CSV na JSON", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+    },
+    "howTo": {
+      "name": "Jak zamienić CSV na JSON online",
+      "description": "Instrukcja konwersji danych CSV na format JSON.",
+      "steps": [
+        {
+          "name": "Wklej dane CSV",
+          "text": "Wklej dane w formacie CSV w pole tekstowe lub wgraj plik z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Kliknij przycisk Konwertuj, aby zamienić dane na format JSON."
+        },
+        {
+          "name": "Skopiuj lub pobierz wynik",
+          "text": "Skopiuj wynikowy JSON do schowka lub pobierz jako plik."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować CSV na JSON?",
+      "html": "<p class=\"text-mid mb-4\">CSV (Comma-Separated Values) to prosty format tabelaryczny powszechnie używany w arkuszach kalkulacyjnych, bazach danych i eksportach. JSON (JavaScript Object Notation) to lekki format wymiany danych — standard w API, aplikacjach webowych i konfiguracjach.</p><p class=\"text-mid mb-4\">Konwersja CSV na JSON przydaje się, gdy importujesz dane z arkusza kalkulacyjnego do aplikacji webowej, tworzysz konfigurację API lub przetwarzasz dane w JavaScript/Python.</p><p class=\"text-mid\">Nasz konwerter automatycznie rozpoznaje nagłówki kolumn CSV i tworzy tablicę obiektów JSON z odpowiednimi kluczami.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter CSV na JSON – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować CSV na JSON?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wklej dane CSV",
+          "description": "Wklej zawartość pliku CSV w pole tekstowe lub wgraj plik z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kliknij Konwertuj",
+          "description": "Narzędzie automatycznie rozpozna nagłówki i zamieni dane na JSON.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub pobierz",
+          "description": "Skopiuj wynik do schowka lub pobierz jako plik .json.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "CSV vs JSON — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">CSV</th><th class=\"text-dark py-2 text-left font-semibold\">JSON</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Struktura</td><td class=\"text-mid py-2 pr-4\">Płaska (tabela)</td><td class=\"text-mid py-2\">Zagnieżdżona (drzewo)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typy danych</td><td class=\"text-mid py-2 pr-4\">Tylko tekst</td><td class=\"text-mid py-2\">String, number, boolean, null, array, object</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Czytelność</td><td class=\"text-mid py-2 pr-4\">Otwiera się w Excelu</td><td class=\"text-mid py-2\">Czytelny dla programistów</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Arkusze, eksporty baz danych</td><td class=\"text-mid py-2\">API, aplikacje webowe, konfiguracje</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować CSV na JSON?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeLine",
+          "title": "Import do aplikacji",
+          "description": "Większość aplikacji webowych i API przyjmuje dane w formacie JSON, nie CSV."
+        },
+        {
+          "icon": "RiDatabaseLine",
+          "title": "Bazy NoSQL",
+          "description": "MongoDB, CouchDB i inne bazy NoSQL przechowują dane w formacie JSON."
+        },
+        {
+          "icon": "RiJavascriptLine",
+          "title": "Praca w JavaScript",
+          "description": "JSON jest natywnym formatem danych w JavaScript — łatwiejszy do przetwarzania."
+        },
+        {
+          "icon": "RiSettingsLine",
+          "title": "Konfiguracje",
+          "description": "Wiele narzędzi i frameworków używa JSON jako formatu konfiguracji."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter CSV na JSON?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Dane nie opuszczają komputera. Konwersja odbywa się w przeglądarce."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Poprawne formatowanie",
+          "description": "Wynikowy JSON jest prawidłowo sformatowany z wcięciami — gotowy do użycia."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Automatyczne nagłówki",
+          "description": "Pierwszy wiersz CSV jest automatycznie rozpoznawany jako nazwy kluczy."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Kopiuj lub pobierz",
+          "description": "Wynik możesz skopiować do schowka lub pobrać jako plik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji CSV na JSON",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Upewnij się, że pierwszy wiersz CSV zawiera nazwy kolumn — staną się kluczami obiektów JSON.</li><li>Konwerter automatycznie wykrywa separator (przecinek, średnik, tab) — nie musisz go konfigurować.</li><li>Jeśli dane CSV zawierają cudzysłowy lub przecinki w wartościach, powinny być otoczone cudzysłowami.</li><li>Wynikowy JSON to tablica obiektów — każdy wiersz CSV staje się jednym obiektem.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "CSV vs JSON – porównanie formatów",
+      "plans": [
+        {
+          "id": "csv",
+          "name": "CSV"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dane zagnieżdżone",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Dane tabelaryczne",
+          "values": {
+            "csv": true,
+            "json": false
+          }
+        },
+        {
+          "name": "Walidacja schematu",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Czytelność dla człowieka",
+          "values": {
+            "csv": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Standard API",
+          "values": {
+            "csv": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Zwięzła składnia",
+          "values": {
+            "csv": true,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji CSV na JSON",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Jak narzędzie rozpoznaje kolumny CSV?",
+          "answer": "Narzędzie traktuje pierwszy wiersz jako nagłówki kolumn. Separatorem jest przecinek (,). Jeśli dane używają innego separatora (np. średnika), zamień go na przecinek przed konwersją."
+        },
+        {
+          "question": "Czy dane są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Dane nie opuszczają komputera."
+        },
+        {
+          "question": "Czy konwerter obsługuje duże pliki CSV?",
+          "answer": "Konwerter działa w przeglądarce, więc sprawdzi się dla plików do kilku MB. Dla bardzo dużych zbiorów danych zalecamy narzędzia serwerowe."
+        },
+        {
+          "question": "Jaki format ma wynikowy JSON?",
+          "answer": "Wynik to tablica obiektów JSON, gdzie każdy obiekt odpowiada jednemu wierszowi CSV, a klucze pochodzą z nagłówków kolumn."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter CSV na JSON – Arteon",
+      "defaultSubject": "Feedback: Konwerter CSV na JSON"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

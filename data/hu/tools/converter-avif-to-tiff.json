@@ -1,0 +1,248 @@
+{
+  "toolKey": "avifToTiff",
+  "locale": "hu",
+  "metadata": {
+    "title": "AVIF TIFF konverter — AVIF TIFF",
+    "description": "AVIF fájlok konvertálása TIFF formátumba. Ingyenes, privát, korlátlan.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/avif-tiff-konverter"
+  },
+  "hero": {
+    "title": "AVIF TIFF konverter",
+    "description": "AVIF fájlok konvertálása TIFF formátumba. Ingyenes, privát, korlátlan.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/avif-tiff-konverter",
+      "label": "AVIF TIFF konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "AVIF TIFF konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "AVIF fájlok konvertálása TIFF formátumba. Ingyenes, privát, korlátlan.",
+      "featureList": ["AVIF to TIFF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert AVIF to TIFF", "AVIF to TIFF", "Free AVIF to TIFF converter"]
+    },
+    "howTo": {
+      "name": "Hogyan konvertáljuk AVIF-t TIFF-vé",
+      "description": "AVIF fájlok konvertálása TIFF formátumba. Ingyenes, privát, korlátlan.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Töltse fel a AVIF fájlt",
+          "text": "Húzza a AVIF fájlt a konverterre, vagy kattintson a tallózáshoz."
+        },
+        {
+          "position": 2,
+          "name": "Konvertálás",
+          "text": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+        },
+        {
+          "position": 3,
+          "name": "Töltse le a TIFF fájlt",
+          "text": "Töltse le a konvertált TIFF fájlt."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miért érdemes AVIF-t TIFF-vé konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">AVIF fájlok konvertálása TIFF formátumba. Ingyenes, privát, korlátlan.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "AVIF to TIFF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan konvertáljuk AVIF-t TIFF-vé",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Töltse fel a AVIF fájlt",
+          "description": "Húzza a AVIF fájlt a konverterre, vagy kattintson a tallózáshoz.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertálás",
+          "description": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Töltse le a TIFF fájlt",
+          "description": "Töltse le a konvertált TIFF fájlt.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a konvertert?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "A fájlok teljes mértékben a böngészőben kerülnek feldolgozásra. Semmi nem kerül szerverre."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Nincs korlát",
+          "description": "Konvertáljon annyi fájlt, amennyit csak akar. Nincs napi limit, nincs méretkorlátozás."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Minőségszabályozás",
+          "description": "Állítsa be a beállításokat a tökéletes egyensúly megtalálásához a fájlméret és a minőség között."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konverzió",
+          "description": "Minden feldolgozás helyben történik modern böngésző API-k segítségével."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs TIFF – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a AVIF-TIFF konverzióról",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Ingyenes a AVIF konvertálása TIFF-vé?",
+          "answer": "Igen, ez a konverter teljesen ingyenes és korlátlan. Nincs regisztráció, nincs vízjel."
+        },
+        {
+          "question": "Feltölti a fájljaimat a konverter?",
+          "answer": "Nem. Minden feldolgozás helyben történik a böngészőben. A fájlok soha nem hagyják el az eszközét."
+        },
+        {
+          "question": "Konvertálhatok egyszerre több fájlt?",
+          "answer": "Igen, a konverter támogatja a kötegelt konverziót."
+        },
+        {
+          "question": "Működik a konverter mobilon?",
+          "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy javaslatot szeretne tenni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "AVIF TIFF konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

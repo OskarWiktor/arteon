@@ -1,0 +1,248 @@
+{
+  "toolKey": "avifToTiff",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας AVIF σε TIFF — AVIF TIFF",
+    "description": "Μετατρέψτε αρχεία AVIF σε μορφή TIFF. Δωρεάν, ιδιωτικό και απεριόριστο.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-avif-se-tiff"
+  },
+  "hero": {
+    "title": "Μετατροπέας AVIF σε TIFF",
+    "description": "Μετατρέψτε αρχεία AVIF σε μορφή TIFF. Δωρεάν, ιδιωτικό και απεριόριστο.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-avif-se-tiff",
+      "label": "Μετατροπέας AVIF σε TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας AVIF σε TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Μετατρέψτε αρχεία AVIF σε μορφή TIFF. Δωρεάν, ιδιωτικό και απεριόριστο.",
+      "featureList": ["AVIF to TIFF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert AVIF to TIFF", "AVIF to TIFF", "Free AVIF to TIFF converter"]
+    },
+    "howTo": {
+      "name": "Πώς να μετατρέψετε AVIF σε TIFF",
+      "description": "Μετατρέψτε αρχεία AVIF σε μορφή TIFF. Δωρεάν, ιδιωτικό και απεριόριστο.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Ανεβάστε το αρχείο AVIF",
+          "text": "Σύρετε το αρχείο AVIF στον μετατροπέα ή κάντε κλικ για περιήγηση."
+        },
+        {
+          "position": 2,
+          "name": "Μετατροπή",
+          "text": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας."
+        },
+        {
+          "position": 3,
+          "name": "Κατεβάστε το TIFF",
+          "text": "Κατεβάστε το μετατρεπόμενο αρχείο TIFF."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Γιατί να μετατρέψετε AVIF σε TIFF;",
+      "html": "<p class=\"text-mid mb-4\">Μετατρέψτε αρχεία AVIF σε μορφή TIFF. Δωρεάν, ιδιωτικό και απεριόριστο.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "AVIF to TIFF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να μετατρέψετε AVIF σε TIFF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Ανεβάστε το αρχείο AVIF",
+          "description": "Σύρετε το αρχείο AVIF στον μετατροπέα ή κάντε κλικ για περιήγηση.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Μετατροπή",
+          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Κατεβάστε το TIFF",
+          "description": "Κατεβάστε το μετατρεπόμενο αρχείο TIFF.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα διαφορετικό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Τα αρχεία σας επεξεργάζονται εξ ολοκλήρου στον browser σας. Τίποτα δεν ανεβαίνει σε server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Χωρίς όρια",
+          "description": "Μετατρέψτε όσα αρχεία χρειάζεστε. Χωρίς ημερήσια όρια, χωρίς περιορισμούς."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Έλεγχος ποιότητας",
+          "description": "Ρυθμίστε τις παραμέτρους για την τέλεια ισορροπία μεταξύ μεγέθους και ποιότητας."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Άμεση μετατροπή",
+          "description": "Όλη η επεξεργασία γίνεται τοπικά με σύγχρονα API του browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs TIFF – σύγκριση μορφών",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Συμπίεση με απώλειες",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Συμπίεση χωρίς απώλειες",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Διαφάνεια (κανάλι άλφα)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Υποστήριξη κίνησης",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Υποστήριξη περιηγητών",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Συμπαγές μέγεθος αρχείου",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Μεταδεδομένα (EXIF)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις σχετικά με τη μετατροπή AVIF σε TIFF",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Είναι δωρεάν η μετατροπή AVIF σε TIFF;",
+          "answer": "Ναι, αυτός ο μετατροπέας είναι εντελώς δωρεάν και χωρίς περιορισμούς. Χωρίς εγγραφή, χωρίς υδατογράφημα."
+        },
+        {
+          "question": "Ανεβάζει ο μετατροπέας τα αρχεία μου;",
+          "answer": "Όχι. Όλη η επεξεργασία γίνεται τοπικά στον browser σας. Τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας."
+        },
+        {
+          "question": "Μπορώ να μετατρέψω πολλαπλά αρχεία ταυτόχρονα;",
+          "answer": "Ναι, ο μετατροπέας υποστηρίζει μαζική μετατροπή."
+        },
+        {
+          "question": "Λειτουργεί ο μετατροπέας σε κινητά;",
+          "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε bug ή θέλετε να προτείνετε κάτι; Στείλτε μας μήνυμα – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Μετατροπέας AVIF σε TIFF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

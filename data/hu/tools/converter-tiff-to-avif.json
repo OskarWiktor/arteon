@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "TIFF vs AVIF – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "tiff",
+          "name": "TIFF"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "tiff": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "tiff": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "tiff": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a TIFF-AVIF konvertálásról",
       "openByDefault": 0,

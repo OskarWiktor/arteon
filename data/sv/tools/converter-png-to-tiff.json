@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs TIFF – formatjämförelse",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Förlustrik komprimering",
+          "values": {
+            "png": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Förlustfri komprimering",
+          "values": {
+            "png": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparens (alfakanal)",
+          "values": {
+            "png": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Animationsstöd",
+          "values": {
+            "png": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Webbläsarstöd",
+          "values": {
+            "png": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Kompakt filstorlek",
+          "values": {
+            "png": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "png": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om konvertering av PNG till TIFF",
       "openByDefault": 0,

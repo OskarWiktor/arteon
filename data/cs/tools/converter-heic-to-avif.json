@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs AVIF – srovnání formátů",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "heic": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu HEIC na AVIF",
       "openByDefault": 0,

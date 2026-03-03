@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs AVIF – formatsammenligning",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Tabsgivende komprimering",
+          "values": {
+            "jpg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Tabsfri komprimering",
+          "values": {
+            "jpg": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Gennemsigtighed (alfakanal)",
+          "values": {
+            "jpg": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animationsunderstøttelse",
+          "values": {
+            "jpg": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Webbrowserunderstøttelse",
+          "values": {
+            "jpg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "jpg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "jpg": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af JPG til AVIF",
       "openByDefault": 0,

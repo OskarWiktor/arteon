@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs JPG – formatsammenligning",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Komprimering med tap",
+          "values": {
+            "webp": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Komprimering uten tap",
+          "values": {
+            "webp": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Gjennomsiktighet (alfakanal)",
+          "values": {
+            "webp": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Animasjonsstøtte",
+          "values": {
+            "webp": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Nettleserstøtte",
+          "values": {
+            "webp": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "webp": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "webp": true,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanlige spørsmål om konvertering av WebP til JPG",
       "openByDefault": 0,

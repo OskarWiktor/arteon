@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h1>Tietosuojakäytäntö</h1>
           <p className="mt-2 text-sm opacity-70">
-            Versio: <strong>13.02.2026</strong>
+            Versio: <strong>03.03.2026</strong>
           </p>
           <Gap size="xs" />
           <SectionInfo title="1. Rekisterinpitäjä">
@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
               <li>automaattisesti kerätyt tekniset tiedot (IP-osoite, laitetiedot, evästeet),</li>
               <li>analytiikkatiedot Google Analytics 4:stä, Ahrefs Web Analyticsistä, Vercel Analyticsistä ja Vercel Speed Insightsistä,</li>
               <li>Metricool-analytiikkatiedot (kävijätilastot, liikennelähteet),</li>
-              <li>Google AdSensen keräämät tiedot mainosten näyttämiseksi (mainostunnisteet, mainosevästeet, mainosvuorovaikutustiedot),</li>
+              <li>Google AdSensen keräämät tiedot mainosten näyttämiseksi (mainostunnisteet, mainosevästeet, mainosvuorovaikutustiedot, IAB TCF v2.3 -suostumusmerkkijonot),</li>
               <li>palvelinlokitiedostot ja turvallisuustapahtumat (esim. aikaleimat, IP-osoitteet, pyyntöotsikot).</li>
             </ul>
           </SectionInfo>
@@ -74,13 +74,13 @@ export default function PrivacyPolicyPage() {
                 alakohta).
               </li>
               <li>
-                <strong>Mainosten näyttäminen</strong> — kiinnostuksiin perustuvien mainosten näyttäminen Google AdSensen kautta (GDPR:n 6 artiklan 1 kohdan a alakohta — käyttäjän evästebannerin
-                kautta antama suostumus).
+                <strong>Mainosten näyttäminen</strong> — kiinnostuksiin perustuvien mainosten näyttäminen Google AdSensen kautta (GDPR:n 6 artiklan 1 kohdan a alakohta — käyttäjän Google Privacy &
+                Messaging -dialogin kautta antama suostumus).
               </li>
             </ol>
           </SectionInfo>
           <Gap variant="line" size="sm" />
-          <SectionInfo title="4. Evästeet">
+          <SectionInfo title="4. Evästeet ja suostumus">
             <p>Verkkosivusto käyttää evästeitä seuraaviin tarkoituksiin:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>verkkosivuston asianmukaisen toiminnan varmistaminen,</li>
@@ -89,6 +89,22 @@ export default function PrivacyPolicyPage() {
               <li>kiinnostuksiin perustuvien mainosten näyttäminen (Google AdSense / DoubleClick).</li>
             </ul>
             <p>Google AdSense voi käyttää DoubleClick-evästeitä mainosten näyttämiseksi käyttäjän aiempien vierailujen perusteella sivustollamme tai muilla sivustoilla.</p>
+            <h3 className="h5 mt-4 mb-3">Suostumuksen hallinta (CMP)</h3>
+            <p>
+              Evästeiden ja mainostarkoituksiin tapahtuvan tietojenkäsittelyn suostumuksen keräämiseksi ja hallitsemiseksi tämä sivusto käyttää Google Privacy &amp; Messaging &mdash; sertifioitua
+              suostumuksen hallintaympäristöä (CMP), joka on integroitu IAB Transparency and Consent Framework (TCF) -standardin versioon 2.3.
+            </p>
+            <p>
+              Euroopan talousalueen (ETA), Yhdistyneen kuningaskunnan ja Sveitsin käyttäjiä pyydetään antamaan suostumuksensa Google-dialogin kautta. Yhdysvaltain osavaltioiden käyttäjät, joilla on
+              tietosuojalainsäädäntö, näkevät osavaltion säännösten mukaisen viestin (mukaan lukien Global Privacy Control -signaalien tuki).
+            </p>
+            <p>Voit muuttaa suostumusasetuksiasi milloin tahansa napsauttamalla &quot;Evästeasetukset&quot; -linkkiä sivuston alatunnisteessa.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              Sivusto käyttää Google Consent Mode v2:ta edistyneessä tilassa (Advanced). Säännellyillä alueilla olevien käyttäjien kaikki suostumussignaalit (ad_storage, ad_user_data,
+              ad_personalization, analytics_storage) ovat oletuksena &quot;denied&quot; ja päivittyvät vasta suostumuksen antamisen jälkeen. Muilla alueilla olevien käyttäjien suostumukset ovat
+              oletuksena &quot;granted&quot;.
+            </p>
             <p>
               Voit poistaa personoidut mainokset käytöstä{' '}
               <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
@@ -99,10 +115,6 @@ export default function PrivacyPolicyPage() {
                 aboutads.info
               </a>
               .
-            </p>
-            <p>
-              Sivusto käyttää Google Consent Mode v2:ta. Tämä tarkoittaa, että Googlen analytiikka- ja mainoskomentosarjat eivät kerää tietoja ennen kuin käyttäjä antaa suostumuksensa evästebannerin
-              kautta.
             </p>
             <p>Voit hallita evästeitä selaimesi asetuksissa. Evästeiden rajoittaminen voi vaikuttaa joihinkin sivuston toimintoihin.</p>
           </SectionInfo>

@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "TIFF vs PNG – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "tiff",
+          "name": "TIFF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "tiff": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "tiff": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "tiff": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "tiff": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "tiff": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "tiff": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "tiff": true,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a TIFF-PNG konvertálásról",
       "openByDefault": 0,

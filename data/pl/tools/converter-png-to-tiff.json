@@ -177,6 +177,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs TIFF – porównanie formatów",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "png": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "png": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "png": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "png": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "png": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "png": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "png": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji PNG na TIFF",
       "openByDefault": 0,

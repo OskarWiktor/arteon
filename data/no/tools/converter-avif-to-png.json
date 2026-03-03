@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs PNG – formatsammenligning",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Komprimering med tap",
+          "values": {
+            "avif": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Komprimering uten tap",
+          "values": {
+            "avif": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Gjennomsiktighet (alfakanal)",
+          "values": {
+            "avif": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animasjonsstøtte",
+          "values": {
+            "avif": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Nettleserstøtte",
+          "values": {
+            "avif": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "avif": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "avif": true,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanlige spørsmål om konvertering av AVIF til PNG",
       "openByDefault": 0,

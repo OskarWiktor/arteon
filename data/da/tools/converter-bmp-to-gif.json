@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs GIF – formatsammenligning",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Tabsgivende komprimering",
+          "values": {
+            "bmp": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Tabsfri komprimering",
+          "values": {
+            "bmp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Gennemsigtighed (alfakanal)",
+          "values": {
+            "bmp": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Animationsunderstøttelse",
+          "values": {
+            "bmp": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Webbrowserunderstøttelse",
+          "values": {
+            "bmp": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "bmp": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "bmp": false,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af BMP til GIF",
       "openByDefault": 0,

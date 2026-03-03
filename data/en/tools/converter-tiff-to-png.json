@@ -183,6 +183,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "TIFF vs PNG – format comparison",
+      "plans": [
+        {
+          "id": "tiff",
+          "name": "TIFF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "tiff": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "tiff": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "tiff": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "tiff": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "tiff": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "tiff": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "tiff": true,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about TIFF to PNG conversion",
       "openByDefault": 0,

@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs TIFF – σύγκριση μορφών",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Συμπίεση με απώλειες",
+          "values": {
+            "png": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Συμπίεση χωρίς απώλειες",
+          "values": {
+            "png": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Διαφάνεια (κανάλι άλφα)",
+          "values": {
+            "png": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Υποστήριξη κίνησης",
+          "values": {
+            "png": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Υποστήριξη περιηγητών",
+          "values": {
+            "png": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Συμπαγές μέγεθος αρχείου",
+          "values": {
+            "png": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Μεταδεδομένα (EXIF)",
+          "values": {
+            "png": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Συχνές ερωτήσεις για τη μετατροπή PNG σε TIFF",
       "openByDefault": 0,

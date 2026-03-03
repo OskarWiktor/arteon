@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/konwerter-svg-na-webp", "label": "Konwerter SVG na WebP" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-svg-na-webp",
+      "label": "Konwerter SVG na WebP"
+    }
   },
   "schemas": {
     "software": {
@@ -35,14 +41,26 @@
       "name": "Jak zamienić SVG na WebP online",
       "description": "Instrukcja konwersji plików SVG na format WebP za pomocą darmowego narzędzia online.",
       "steps": [
-        { "name": "Dodaj pliki SVG", "text": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku." },
-        { "name": "Ustaw jakość WebP", "text": "Wybierz jakość wynikowego pliku WebP za pomocą suwaka (60–95%). Domyślna wartość 80% to dobry kompromis." },
-        { "name": "Pobierz pliki WebP", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+        {
+          "name": "Dodaj pliki SVG",
+          "text": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Ustaw jakość WebP",
+          "text": "Wybierz jakość wynikowego pliku WebP za pomocą suwaka (60–95%). Domyślna wartość 80% to dobry kompromis."
+        },
+        {
+          "name": "Pobierz pliki WebP",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować SVG na WebP?",
@@ -50,23 +68,37 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter SVG na WebP – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować SVG na WebP?",
       "description": "Konwersja SVG na WebP zajmuje kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki SVG", "description": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików.", "icon": "RiUploadLine" },
+        {
+          "title": "1. Dodaj pliki SVG",
+          "description": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików.",
+          "icon": "RiUploadLine"
+        },
         {
           "title": "2. Ustaw jakość",
           "description": "Wybierz poziom jakości WebP (domyślnie 80%). Niższa wartość oznacza mniejszy plik. Dla grafik wektorowych 75–85% daje dobry rezultat.",
           "icon": "RiEqualizerLine"
         },
-        { "title": "3. Pobierz WebP", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz. Przy każdym pliku widoczna jest informacja o rozmiarze.", "icon": "RiDownloadLine" }
+        {
+          "title": "3. Pobierz WebP",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz. Przy każdym pliku widoczna jest informacja o rozmiarze.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kiedy konwertować SVG na WebP?",
@@ -78,7 +110,11 @@
           "title": "Media społecznościowe",
           "description": "Facebook, Instagram i LinkedIn nie obsługują SVG. Konwersja na WebP pozwala opublikować grafikę w lekkiej formie rastrowej."
         },
-        { "icon": "RiMailLine", "title": "Newslettery i e-maile", "description": "Większość klientów pocztowych nie renderuje SVG. WebP jest lekki i obsługiwany przez nowoczesne programy pocztowe." },
+        {
+          "icon": "RiMailLine",
+          "title": "Newslettery i e-maile",
+          "description": "Większość klientów pocztowych nie renderuje SVG. WebP jest lekki i obsługiwany przez nowoczesne programy pocztowe."
+        },
         {
           "icon": "RiFileTextLine",
           "title": "Dokumenty i prezentacje",
@@ -91,25 +127,120 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Różnice między SVG a WebP",
       "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">SVG</th><th class=\"text-dark py-2 text-left font-semibold\">WebP</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Wektorowy</td><td class=\"text-mid py-2\">Rastrowy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Skalowanie</td><td class=\"text-mid py-2 pr-4\">Bez utraty jakości</td><td class=\"text-mid py-2\">Utrata jakości przy powiększaniu</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Tak</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Ikony, logo, grafiki UI</td><td class=\"text-mid py-2\">Zdjęcia, grafiki rastrowe</td></tr><tr><td class=\"text-mid py-2 pr-4\">Obsługa w mediach społecznościowych</td><td class=\"text-mid py-2 pr-4\">Brak</td><td class=\"text-mid py-2\">Tak</td></tr></tbody></table></div><p class=\"text-mid mt-4\">SVG to idealny format do wyświetlania grafik wektorowych na stronach internetowych. Jeśli potrzebujesz rastrowej wersji w innym formacie, sprawdź <a href=\"/narzedzia/konwerter-svg-na-png\">konwersję SVG na PNG</a> lub <a href=\"/narzedzia/konwerter-svg-na-jpg\">SVG na JPG</a>.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter SVG na WebP?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę grafik SVG naraz. Brak ograniczeń rozmiaru i ilości." },
-        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala dobrać kompromis między rozmiarem a jakością. 80% to dobra wartość dla większości zastosowań." },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę grafik SVG naraz. Brak ograniczeń rozmiaru i ilości."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Regulacja jakości",
+          "description": "Suwak jakości pozwala dobrać kompromis między rozmiarem a jakością. 80% to dobra wartość dla większości zastosowań."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs WebP – porównanie formatów",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "svg": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "svg": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji SVG na WebP",
@@ -131,14 +262,20 @@
           "question": "Jaki poziom jakości wybrać?",
           "answer": "Dla grafik wektorowych z ostrymi krawędziami (logo, ikony, diagramy) jakość 80–90% daje dobry kompromis. Dla grafik z gradientami lub cieniami warto wybrać 85–95%."
         },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera."
+        },
         {
           "question": "Czy mogę konwertować wiele plików naraz?",
           "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie — nie ma limitu. Wszystkie zostaną przekonwertowane, a potem można pobrać je pojedynczo lub wszystkie naraz."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -147,8 +284,17 @@
       "imageAlt": "Konwerter SVG na WebP – Arteon",
       "defaultSubject": "Feedback: Konwerter SVG na WebP"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

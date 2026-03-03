@@ -1,0 +1,178 @@
+{
+  "toolKey": "imageToBase64",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor imagine în Base64 — imagine Base64",
+    "description": "Codifică imagini în format Base64. Copiază codul gata pentru CSS sau HTML. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-imagine-in-base64"
+  },
+  "hero": {
+    "title": "Convertor imagine în Base64",
+    "description": "Codifică imagini în format Base64. Copiază codul gata pentru CSS sau HTML. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-imagine-in-base64",
+      "label": "Convertor imagine în Base64"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor imagine în Base64",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Codifică imagini în format Base64. Copiază codul gata pentru CSS sau HTML. Gratuit.",
+      "featureList": ["imagine to Base64 conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert imagine to Base64", "imagine to Base64", "Free imagine to Base64 converter"]
+    },
+    "howTo": {
+      "name": "Cum convertiți imagine în Base64",
+      "description": "Codifică imagini în format Base64. Copiază codul gata pentru CSS sau HTML. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Încărcați fișierul imagine",
+          "text": "Trageți fișierul imagine pe convertor sau faceți clic pentru a răsfoi."
+        },
+        {
+          "position": 2,
+          "name": "Convertiți",
+          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
+        },
+        {
+          "position": 3,
+          "name": "Descărcați Base64",
+          "text": "Descărcați fișierul Base64 convertit."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți imagine în Base64?",
+      "html": "<p class=\"text-mid mb-4\">Codifică imagini în format Base64. Copiază codul gata pentru CSS sau HTML. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "imagine to Base64 conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum convertiți imagine în Base64",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Încărcați fișierul imagine",
+          "description": "Trageți fișierul imagine pe convertor sau faceți clic pentru a răsfoi.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertiți",
+          "description": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Descărcați Base64",
+          "description": "Descărcați fișierul Base64 convertit.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele sunt procesate integral în browser. Nimic nu este trimis pe server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți oricâte fișiere aveți nevoie. Fără limite zilnice, fără restricții."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control al calității",
+          "description": "Ajustați setările pentru echilibrul perfect între dimensiune și calitate."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia imagine în Base64",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Conversia din imagine în Base64 este gratuită?",
+          "answer": "Da, acest convertor este complet gratuit și fără limite. Fără înregistrare, fără filigran."
+        },
+        {
+          "question": "Convertorul încarcă fișierele mele?",
+          "answer": "Nu. Toată procesarea are loc local în browser. Fișierele nu părăsesc niciodată dispozitivul."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul acceptă conversia în lot."
+        },
+        {
+          "question": "Convertorul funcționează pe mobil?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați ceva? Trimiteți-ne un mesaj – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertor imagine în Base64"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

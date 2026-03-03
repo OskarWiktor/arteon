@@ -183,6 +183,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs WebP – format comparison",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "svg": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "svg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "svg": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about SVG to WebP conversion",
       "openByDefault": 0,

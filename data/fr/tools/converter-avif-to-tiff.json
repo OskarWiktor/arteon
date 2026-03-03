@@ -1,0 +1,248 @@
+{
+  "toolKey": "avifToTiff",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur AVIF en TIFF — AVIF TIFF",
+    "description": "Convertissez vos fichiers AVIF en TIFF. Gratuit, privé et illimité.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-avif-en-tiff"
+  },
+  "hero": {
+    "title": "Convertisseur AVIF en TIFF",
+    "description": "Convertissez vos fichiers AVIF en TIFF. Gratuit, privé et illimité.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-avif-en-tiff",
+      "label": "Convertisseur AVIF en TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur AVIF en TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertissez vos fichiers AVIF en TIFF. Gratuit, privé et illimité.",
+      "featureList": ["AVIF to TIFF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert AVIF to TIFF", "AVIF to TIFF", "Free AVIF to TIFF converter"]
+    },
+    "howTo": {
+      "name": "Comment convertir AVIF en TIFF",
+      "description": "Convertissez vos fichiers AVIF en TIFF. Gratuit, privé et illimité.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Téléchargez votre fichier AVIF",
+          "text": "Glissez votre fichier AVIF sur le convertisseur ou cliquez pour parcourir."
+        },
+        {
+          "position": 2,
+          "name": "Convertir",
+          "text": "Cliquez sur Convertir — le traitement est local dans votre navigateur."
+        },
+        {
+          "position": 3,
+          "name": "Téléchargez votre TIFF",
+          "text": "Téléchargez le fichier TIFF converti."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir AVIF en TIFF ?",
+      "html": "<p class=\"text-mid mb-4\">Convertissez vos fichiers AVIF en TIFF. Gratuit, privé et illimité.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "AVIF to TIFF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment convertir AVIF en TIFF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Téléchargez votre fichier AVIF",
+          "description": "Glissez votre fichier AVIF sur le convertisseur ou cliquez pour parcourir.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertir",
+          "description": "Cliquez sur Convertir — le traitement est local dans votre navigateur.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Téléchargez votre TIFF",
+          "description": "Téléchargez le fichier TIFF converti.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu'est-ce qui rend ce convertisseur différent ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Vos fichiers sont traités entièrement dans votre navigateur. Rien n'est envoyé sur un serveur."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Sans limites",
+          "description": "Convertissez autant de fichiers que nécessaire. Pas de limites quotidiennes, pas de restrictions."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Contrôle qualité",
+          "description": "Ajustez les paramètres pour trouver l'équilibre parfait entre taille et qualité."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversion instantanée",
+          "description": "Tout le traitement se fait localement avec les API modernes du navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs TIFF – comparaison des formats",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compression avec perte",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compression sans perte",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparence (canal alpha)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Prise en charge de l'animation",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Prise en charge des navigateurs",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Taille de fichier compacte",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Métadonnées (EXIF)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion AVIF en TIFF",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "La conversion AVIF en TIFF est-elle gratuite ?",
+          "answer": "Oui, ce convertisseur est entièrement gratuit et sans limites. Pas d'inscription, pas de filigrane."
+        },
+        {
+          "question": "Le convertisseur envoie-t-il mes fichiers ?",
+          "answer": "Non. Tout le traitement se fait localement dans votre navigateur. Vos fichiers ne quittent jamais votre appareil."
+        },
+        {
+          "question": "Puis-je convertir plusieurs fichiers à la fois ?",
+          "answer": "Oui, le convertisseur prend en charge la conversion par lot."
+        },
+        {
+          "question": "Le convertisseur fonctionne-t-il sur mobile ?",
+          "answer": "Oui, il fonctionne sur tout appareil disposant d'un navigateur web moderne."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertisseur AVIF en TIFF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

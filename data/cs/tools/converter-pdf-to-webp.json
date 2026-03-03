@@ -1,0 +1,248 @@
+{
+  "toolKey": "pdfToWebp",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník PDF na WebP — PDF WebP",
+    "description": "Převeďte stránky PDF na obrázky WebP. Vysoká kvalita, bez omezení. Zdarma.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-pdf-na-webp"
+  },
+  "hero": {
+    "title": "Převodník PDF na WebP",
+    "description": "Převeďte stránky PDF na obrázky WebP. Vysoká kvalita, bez omezení. Zdarma.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-pdf-na-webp",
+      "label": "Převodník PDF na WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník PDF na WebP",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Převeďte stránky PDF na obrázky WebP. Vysoká kvalita, bez omezení. Zdarma.",
+      "featureList": ["PDF to WebP conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PDF to WebP", "PDF to WebP", "Free PDF to WebP converter"]
+    },
+    "howTo": {
+      "name": "Jak převést PDF na WebP",
+      "description": "Převeďte stránky PDF na obrázky WebP. Vysoká kvalita, bez omezení. Zdarma.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Nahrajte PDF soubor",
+          "text": "Přetáhněte PDF soubor na převodník nebo klikněte pro procházení."
+        },
+        {
+          "position": 2,
+          "name": "Převést",
+          "text": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči."
+        },
+        {
+          "position": 3,
+          "name": "Stáhněte WebP",
+          "text": "Stáhněte převedený WebP soubor."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět PDF na WebP?",
+      "html": "<p class=\"text-mid mb-4\">Převeďte stránky PDF na obrázky WebP. Vysoká kvalita, bez omezení. Zdarma.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PDF to WebP conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak převést PDF na WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Nahrajte PDF soubor",
+          "description": "Přetáhněte PDF soubor na převodník nebo klikněte pro procházení.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Převést",
+          "description": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Stáhněte WebP",
+          "description": "Stáhněte převedený WebP soubor.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento převodník jiný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Úplné soukromí",
+          "description": "Vaše soubory jsou zpracovány výhradně v prohlížeči. Nic není odesláno na server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez omezení",
+          "description": "Převeďte tolik souborů, kolik potřebujete. Žádné denní limity, žádná omezení."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola kvality",
+          "description": "Upravte nastavení pro dokonalou rovnováhu mezi velikostí souboru a kvalitou."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Okamžitý převod",
+          "description": "Veškeré zpracování probíhá lokálně pomocí moderních API prohlížeče."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs WebP – srovnání formátů",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "pdf": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "pdf": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o převodu PDF na WebP",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Je převod PDF na WebP zdarma?",
+          "answer": "Ano, tento převodník je zcela zdarma a bez omezení. Žádná registrace, žádné vodoznaky."
+        },
+        {
+          "question": "Nahrává převodník moje soubory?",
+          "answer": "Ne. Veškeré zpracování probíhá lokálně v prohlížeči. Soubory nikdy neopustí vaše zařízení."
+        },
+        {
+          "question": "Mohu převést více souborů najednou?",
+          "answer": "Ano, převodník podporuje dávkový převod."
+        },
+        {
+          "question": "Funguje převodník na mobilu?",
+          "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Převodník PDF na WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

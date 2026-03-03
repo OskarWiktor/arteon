@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs AVIF – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "heic": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "heic": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a HEIC-AVIF konvertálásról",
       "openByDefault": 0,

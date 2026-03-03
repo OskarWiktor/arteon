@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs TIFF – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "webp": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "webp": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "webp": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a WebP-TIFF konvertálásról",
       "openByDefault": 0,

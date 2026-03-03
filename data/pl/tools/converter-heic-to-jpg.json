@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/konwerter-heic-na-jpg", "label": "Konwerter HEIC na JPG" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-heic-na-jpg",
+      "label": "Konwerter HEIC na JPG"
+    }
   },
   "schemas": {
     "software": {
@@ -35,14 +41,26 @@
       "name": "Jak zamienić HEIC na JPG online",
       "description": "Instrukcja konwersji plików HEIC na format JPG za pomocą darmowego narzędzia online.",
       "steps": [
-        { "name": "Dodaj pliki HEIC", "text": "Przeciągnij pliki HEIC z iPhone lub iPad na wyznaczone pole albo wybierz je z dysku." },
-        { "name": "Ustaw jakość JPG", "text": "Wybierz jakość wynikowego pliku JPG za pomocą suwaka (60–95%). Domyślna wartość 85% to dobry kompromis." },
-        { "name": "Pobierz pliki JPG", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+        {
+          "name": "Dodaj pliki HEIC",
+          "text": "Przeciągnij pliki HEIC z iPhone lub iPad na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Ustaw jakość JPG",
+          "text": "Wybierz jakość wynikowego pliku JPG za pomocą suwaka (60–95%). Domyślna wartość 85% to dobry kompromis."
+        },
+        {
+          "name": "Pobierz pliki JPG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować HEIC na JPG?",
@@ -50,7 +68,10 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter HEIC na JPG – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować HEIC na JPG?",
@@ -62,11 +83,22 @@
           "description": "Przeciągnij pliki HEIC z iPhone lub iPad na wyznaczone pole albo wybierz je z dysku. Można dodać wiele plików naraz.",
           "icon": "RiUploadLine"
         },
-        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości JPG (domyślnie 85%). Dla zdjęć 80–85% to optymalne ustawienie.", "icon": "RiEqualizerLine" },
-        { "title": "3. Pobierz JPG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości JPG (domyślnie 85%). Dla zdjęć 80–85% to optymalne ustawienie.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz JPG",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kiedy konwertować HEIC na JPG?",
@@ -78,7 +110,11 @@
           "title": "Wysyłanie zdjęć e-mailem",
           "description": "Odbiorca bez iPhone'a może nie otworzyć pliku HEIC. JPG jest obsługiwany przez każdy program pocztowy i system operacyjny."
         },
-        { "icon": "RiGlobalLine", "title": "Publikacja w internecie", "description": "Wiele stron internetowych, formularzy i platform nie akceptuje HEIC. JPG jest uniwersalnie obsługiwany." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Publikacja w internecie",
+          "description": "Wiele stron internetowych, formularzy i platform nie akceptuje HEIC. JPG jest uniwersalnie obsługiwany."
+        },
         {
           "icon": "RiFileTextLine",
           "title": "Dokumenty i formularze",
@@ -91,13 +127,19 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Różnice między HEIC a JPG",
       "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">HEIC</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">O 40–50% lepsza niż JPG</td><td class=\"text-mid py-2\">Dobra, stratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Obsługa</td><td class=\"text-mid py-2 pr-4\">Apple, nowe Windows</td><td class=\"text-mid py-2\">Wszystkie urządzenia</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Źródło</td><td class=\"text-mid py-2 pr-4\">iPhone, iPad (iOS 11+)</td><td class=\"text-mid py-2\">Wszystkie aparaty</td></tr><tr><td class=\"text-mid py-2 pr-4\">Rozmiar pliku (typowe zdjęcie)</td><td class=\"text-mid py-2 pr-4\">1–3 MB</td><td class=\"text-mid py-2\">2–5 MB</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Jeśli potrzebujesz zachować przezroczystość lub mniejszy rozmiar pliku, rozważ <a href=\"/narzedzia/konwerter-heic-na-png\">konwersję HEIC na PNG</a> lub <a href=\"/narzedzia/konwerter-heic-na-webp\">HEIC na WebP</a>.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter HEIC na JPG?",
@@ -108,12 +150,97 @@
           "title": "Pełna prywatność",
           "description": "Zdjęcia z iPhone nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer. Po zamknięciu strony dane są usuwane."
         },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę zdjęć naraz. Brak ograniczeń rozmiaru i ilości." },
-        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala wybrać kompromis między rozmiarem a jakością obrazu." },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę zdjęć naraz. Brak ograniczeń rozmiaru i ilości."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Regulacja jakości",
+          "description": "Suwak jakości pozwala wybrać kompromis między rozmiarem a jakością obrazu."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs JPG – porównanie formatów",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "heic": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "heic": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "heic": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "heic": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "heic": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "heic": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "heic": true,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji HEIC na JPG",
@@ -145,7 +272,10 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -154,8 +284,17 @@
       "imageAlt": "Konwerter HEIC na JPG – Arteon",
       "defaultSubject": "Feedback: Konwerter HEIC na JPG"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

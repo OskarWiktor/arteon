@@ -1,0 +1,248 @@
+{
+  "toolKey": "avifToTiff",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor AVIF în TIFF — AVIF TIFF",
+    "description": "Convertește fișiere AVIF în format TIFF. Gratuit, privat și nelimitat.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-avif-in-tiff"
+  },
+  "hero": {
+    "title": "Convertor AVIF în TIFF",
+    "description": "Convertește fișiere AVIF în format TIFF. Gratuit, privat și nelimitat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-avif-in-tiff",
+      "label": "Convertor AVIF în TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor AVIF în TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Convertește fișiere AVIF în format TIFF. Gratuit, privat și nelimitat.",
+      "featureList": ["AVIF to TIFF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert AVIF to TIFF", "AVIF to TIFF", "Free AVIF to TIFF converter"]
+    },
+    "howTo": {
+      "name": "Cum convertiți AVIF în TIFF",
+      "description": "Convertește fișiere AVIF în format TIFF. Gratuit, privat și nelimitat.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Încărcați fișierul AVIF",
+          "text": "Trageți fișierul AVIF pe convertor sau faceți clic pentru a răsfoi."
+        },
+        {
+          "position": 2,
+          "name": "Convertiți",
+          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
+        },
+        {
+          "position": 3,
+          "name": "Descărcați TIFF",
+          "text": "Descărcați fișierul TIFF convertit."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți AVIF în TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Convertește fișiere AVIF în format TIFF. Gratuit, privat și nelimitat.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "AVIF to TIFF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum convertiți AVIF în TIFF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Încărcați fișierul AVIF",
+          "description": "Trageți fișierul AVIF pe convertor sau faceți clic pentru a răsfoi.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertiți",
+          "description": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Descărcați TIFF",
+          "description": "Descărcați fișierul TIFF convertit.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele sunt procesate integral în browser. Nimic nu este trimis pe server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți oricâte fișiere aveți nevoie. Fără limite zilnice, fără restricții."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control al calității",
+          "description": "Ajustați setările pentru echilibrul perfect între dimensiune și calitate."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs TIFF – comparație de formate",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia AVIF în TIFF",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Conversia din AVIF în TIFF este gratuită?",
+          "answer": "Da, acest convertor este complet gratuit și fără limite. Fără înregistrare, fără filigran."
+        },
+        {
+          "question": "Convertorul încarcă fișierele mele?",
+          "answer": "Nu. Toată procesarea are loc local în browser. Fișierele nu părăsesc niciodată dispozitivul."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul acceptă conversia în lot."
+        },
+        {
+          "question": "Convertorul funcționează pe mobil?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați ceva? Trimiteți-ne un mesaj – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertor AVIF în TIFF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

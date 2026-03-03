@@ -400,7 +400,7 @@ export default function DesktopNavigation() {
             style={{ top: headerBottom }}
           >
             <Wrapper>
-              <div ref={toolsMenuRef} onKeyDown={handleToolsMenuKeyDown} className="grid grid-cols-5 gap-0">
+              <div ref={toolsMenuRef} onKeyDown={handleToolsMenuKeyDown} className="grid gap-0" style={{ gridTemplateColumns: 'minmax(180px, auto) 1fr' }}>
                 <div className="border-primary-light border-r pr-4">
                   <div className="flex flex-col gap-1">
                     {toolsSections.map((section) => {
@@ -432,9 +432,24 @@ export default function DesktopNavigation() {
                   </div>
                 </div>
 
-                <div className="col-span-4 pl-6">
+                <div className="pl-6">
                   <div key={activeToolsCategory} className="animate-fade-slide-in">
-                    <div className="grid grid-cols-4 gap-2">
+                    <div
+                      className={activeToolsCategory === 'konwertery' ? 'grid grid-cols-6 gap-2' : activeToolsCategory === 'dokumenty' ? 'grid grid-cols-4 gap-2' : 'grid grid-cols-4 gap-2'}
+                      style={
+                        activeToolsCategory === 'konwertery'
+                          ? {
+                              gridAutoFlow: 'column',
+                              gridTemplateRows: `repeat(${Math.ceil(activeToolsSection.items.length / 6)}, minmax(0, 1fr))`,
+                            }
+                          : activeToolsCategory === 'dokumenty'
+                            ? {
+                                gridAutoFlow: 'column',
+                                gridTemplateRows: `repeat(${Math.ceil(activeToolsSection.items.length / 4)}, minmax(0, 1fr))`,
+                              }
+                            : undefined
+                      }
+                    >
                       {activeToolsSection.items.map((item) => {
                         const ItemIcon = item.icon;
                         return (

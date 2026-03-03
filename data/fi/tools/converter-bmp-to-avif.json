@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs AVIF – muotovertailu",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "bmp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "bmp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset BMP-AVIF-muunnoksesta",
       "openByDefault": 0,

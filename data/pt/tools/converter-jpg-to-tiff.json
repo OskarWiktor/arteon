@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs TIFF – comparação de formatos",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compressão com perda",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compressão sem perda",
+          "values": {
+            "jpg": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparência (canal alfa)",
+          "values": {
+            "jpg": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Suporte a animação",
+          "values": {
+            "jpg": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Suporte em navegadores",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Tamanho de ficheiro compacto",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadados (EXIF)",
+          "values": {
+            "jpg": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de JPG para TIFF",
       "openByDefault": 0,

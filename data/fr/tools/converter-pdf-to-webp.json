@@ -1,0 +1,248 @@
+{
+  "toolKey": "pdfToWebp",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur PDF en WebP — PDF WebP",
+    "description": "Convertissez les pages PDF en images WebP. Haute qualité, sans limites. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-pdf-en-webp"
+  },
+  "hero": {
+    "title": "Convertisseur PDF en WebP",
+    "description": "Convertissez les pages PDF en images WebP. Haute qualité, sans limites. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-pdf-en-webp",
+      "label": "Convertisseur PDF en WebP"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur PDF en WebP",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Convertissez les pages PDF en images WebP. Haute qualité, sans limites. Gratuit.",
+      "featureList": ["PDF to WebP conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PDF to WebP", "PDF to WebP", "Free PDF to WebP converter"]
+    },
+    "howTo": {
+      "name": "Comment convertir PDF en WebP",
+      "description": "Convertissez les pages PDF en images WebP. Haute qualité, sans limites. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Téléchargez votre fichier PDF",
+          "text": "Glissez votre fichier PDF sur le convertisseur ou cliquez pour parcourir."
+        },
+        {
+          "position": 2,
+          "name": "Convertir",
+          "text": "Cliquez sur Convertir — le traitement est local dans votre navigateur."
+        },
+        {
+          "position": 3,
+          "name": "Téléchargez votre WebP",
+          "text": "Téléchargez le fichier WebP converti."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir PDF en WebP ?",
+      "html": "<p class=\"text-mid mb-4\">Convertissez les pages PDF en images WebP. Haute qualité, sans limites. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PDF to WebP conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment convertir PDF en WebP",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Téléchargez votre fichier PDF",
+          "description": "Glissez votre fichier PDF sur le convertisseur ou cliquez pour parcourir.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertir",
+          "description": "Cliquez sur Convertir — le traitement est local dans votre navigateur.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Téléchargez votre WebP",
+          "description": "Téléchargez le fichier WebP converti.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu'est-ce qui rend ce convertisseur différent ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Vos fichiers sont traités entièrement dans votre navigateur. Rien n'est envoyé sur un serveur."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Sans limites",
+          "description": "Convertissez autant de fichiers que nécessaire. Pas de limites quotidiennes, pas de restrictions."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Contrôle qualité",
+          "description": "Ajustez les paramètres pour trouver l'équilibre parfait entre taille et qualité."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversion instantanée",
+          "description": "Tout le traitement se fait localement avec les API modernes du navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs WebP – comparaison des formats",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compression avec perte",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Compression sans perte",
+          "values": {
+            "pdf": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Transparence (canal alpha)",
+          "values": {
+            "pdf": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Prise en charge de l'animation",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Prise en charge des navigateurs",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Taille de fichier compacte",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Métadonnées (EXIF)",
+          "values": {
+            "pdf": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion PDF en WebP",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "La conversion PDF en WebP est-elle gratuite ?",
+          "answer": "Oui, ce convertisseur est entièrement gratuit et sans limites. Pas d'inscription, pas de filigrane."
+        },
+        {
+          "question": "Le convertisseur envoie-t-il mes fichiers ?",
+          "answer": "Non. Tout le traitement se fait localement dans votre navigateur. Vos fichiers ne quittent jamais votre appareil."
+        },
+        {
+          "question": "Puis-je convertir plusieurs fichiers à la fois ?",
+          "answer": "Oui, le convertisseur prend en charge la conversion par lot."
+        },
+        {
+          "question": "Le convertisseur fonctionne-t-il sur mobile ?",
+          "answer": "Oui, il fonctionne sur tout appareil disposant d'un navigateur web moderne."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertisseur PDF en WebP"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "toolKey": "webpToPdf",
+  "locale": "fi",
+  "metadata": {
+    "title": "WebP PDF -muunnin — WebP PDF",
+    "description": "Muunna WebP-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/webp-pdf-muunnin"
+  },
+  "hero": {
+    "title": "WebP PDF -muunnin",
+    "description": "Muunna WebP-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/webp-pdf-muunnin",
+      "label": "WebP PDF -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP PDF -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Muunna WebP-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
+      "featureList": ["WebP to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert WebP to PDF", "WebP to PDF", "Free WebP to PDF converter"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa WebP PDF-muotoon",
+      "description": "Muunna WebP-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lataa WebP-tiedosto",
+          "text": "Vedä WebP-tiedosto muuntimeen tai napsauta selataksesi."
+        },
+        {
+          "position": 2,
+          "name": "Muunna",
+          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi."
+        },
+        {
+          "position": 3,
+          "name": "Lataa PDF-tiedosto",
+          "text": "Lataa muunnettu PDF-tiedosto."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miksi muuntaa WebP PDF-muotoon?",
+      "html": "<p class=\"text-mid mb-4\">Muunna WebP-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuinka muuntaa WebP PDF-muotoon",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Lataa WebP-tiedosto",
+          "description": "Vedä WebP-tiedosto muuntimeen tai napsauta selataksesi.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Muunna",
+          "description": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Lataa PDF-tiedosto",
+          "description": "Lataa muunnettu PDF-tiedosto.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erilaisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täydellinen yksityisyys",
+          "description": "Tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata palvelimelle."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta tiedostoa kuin tarvitset. Ei päivittäisiä rajoja."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Laatukontrolli",
+          "description": "Säädä asetuksia löytääksesi täydellisen tasapainon tiedostokoon ja laadun välillä."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs PDF – muotovertailu",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "webp": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "webp": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset WebP-PDF-muunnoksesta",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Onko WebP-muunnos PDF-muotoon ilmainen?",
+          "answer": "Kyllä, tämä muunnin on täysin ilmainen ja rajoittamaton. Ei rekisteröitymistä, ei vesileimoja."
+        },
+        {
+          "question": "Lataako muunnin tiedostoni palvelimelle?",
+          "answer": "Ei. Kaikki käsittely tapahtuu paikallisesti selaimessasi. Tiedostosi eivät koskaan poistu laitteeltasi."
+        },
+        {
+          "question": "Voinko muuntaa useita tiedostoja kerralla?",
+          "answer": "Kyllä, muunnin tukee erämuunnosta."
+        },
+        {
+          "question": "Toimiiko muunnin mobiilissa?",
+          "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa jotain? Lähetä meille viesti – vastaamme 24 tunnin sisällä.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "WebP PDF -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

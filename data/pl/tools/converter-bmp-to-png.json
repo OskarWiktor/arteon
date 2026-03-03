@@ -51,7 +51,10 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować BMP na PNG?",
@@ -59,19 +62,37 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter BMP na PNG – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować BMP na PNG?",
       "description": "Konwersja BMP na PNG zajmuje kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki BMP", "description": "Przeciągnij pliki BMP na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.", "icon": "RiUploadLine" },
-        { "title": "2. Konwertuj", "description": "Konwersja BMP na PNG jest bezstratna — nie ma suwaka jakości. Kliknij przycisk, aby rozpocząć konwersję.", "icon": "RiEqualizerLine" },
-        { "title": "3. Pobierz PNG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz. Przy każdym pliku widoczna jest informacja o rozmiarze.", "icon": "RiDownloadLine" }
+        {
+          "title": "1. Dodaj pliki BMP",
+          "description": "Przeciągnij pliki BMP na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Konwertuj",
+          "description": "Konwersja BMP na PNG jest bezstratna — nie ma suwaka jakości. Kliknij przycisk, aby rozpocząć konwersję.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz PNG",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz. Przy każdym pliku widoczna jest informacja o rozmiarze.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kiedy konwertować BMP na PNG?",
@@ -99,29 +120,120 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter BMP na PNG?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę obrazów BMP naraz." },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę obrazów BMP naraz."
+        },
         {
           "icon": "RiSpeedLine",
           "title": "Bezstratna kompresja",
           "description": "Konwersja BMP na PNG nie powoduje żadnej utraty jakości. Obraz wynikowy jest piksel w piksel identyczny z oryginałem."
         },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs PNG – porównanie formatów",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "bmp": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "bmp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "bmp": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "bmp": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "bmp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "bmp": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "bmp": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji BMP na PNG",
       "openByDefault": 1,
       "items": [
-        { "question": "Czy konwersja BMP na PNG jest bezstratna?", "answer": "Tak. PNG stosuje kompresję bezstratną — plik jest mniejszy niż BMP, ale jakość obrazu jest identyczna piksel w piksel." },
+        {
+          "question": "Czy konwersja BMP na PNG jest bezstratna?",
+          "answer": "Tak. PNG stosuje kompresję bezstratną — plik jest mniejszy niż BMP, ale jakość obrazu jest identyczna piksel w piksel."
+        },
         {
           "question": "Ile miejsca mogę zaoszczędzić?",
           "answer": "Typowa redukcja to 30–70%, zależnie od treści obrazu. Grafiki z jednolitymi kolorami kompresują się lepiej niż zdjęcia. Jeśli priorytetem jest minimalny rozmiar, rozważ <a href=\"/narzedzia/konwerter-bmp-na-jpg\">konwersję na JPG</a>."
@@ -134,10 +246,16 @@
           "question": "Czy mogę konwertować wiele plików naraz?",
           "answer": "Tak. Można dodać dowolną liczbę plików BMP jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
         },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." }
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -146,8 +264,17 @@
       "imageAlt": "Konwerter BMP na PNG – Arteon",
       "defaultSubject": "Feedback: Konwerter BMP na PNG"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

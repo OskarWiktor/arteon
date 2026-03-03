@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs JPG – muotovertailu",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "svg": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "svg": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "svg": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "svg": false,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset SVG-JPG-muunnoksesta",
       "openByDefault": 0,

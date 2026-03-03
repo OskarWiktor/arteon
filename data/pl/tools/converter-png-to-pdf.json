@@ -1,0 +1,293 @@
+{
+  "toolKey": "pngToPdf",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter PNG na PDF — darmowy, bez rejestracji",
+    "description": "Zamień pliki PNG na PDF z zachowaniem jakości. Połącz wiele grafik w jeden dokument. Bez limitu plików — konwersja w przeglądarce.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-png-na-pdf"
+  },
+  "hero": {
+    "title": "Zamień grafiki PNG na dokument PDF",
+    "description": "Wgraj pliki PNG, a narzędzie zamieni je na dokument PDF. Każdy obraz trafia na osobną stronę A4 z zachowaniem proporcji. Konwersja odbywa się lokalnie.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-png-na-pdf",
+      "label": "Konwerter PNG na PDF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter PNG na PDF — darmowy, bez limitu",
+      "alternateName": ["Zamiana PNG na PDF online", "Konwersja PNG do PDF", "PNG to PDF converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Darmowy konwerter PNG na PDF online. Zamień pliki PNG na dokument PDF w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja PNG do PDF", "Łączenie wielu plików w jeden PDF", "Automatyczna orientacja strony A4", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić PNG na PDF online",
+      "description": "Instrukcja konwersji plików PNG na format PDF.",
+      "steps": [
+        {
+          "name": "Dodaj pliki PNG",
+          "text": "Przeciągnij pliki PNG na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Kliknij przycisk Konwertuj, aby zamienić obrazy PNG na PDF."
+        },
+        {
+          "name": "Pobierz PDF",
+          "text": "Po konwersji pobierz gotowy plik PDF."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować PNG na PDF?",
+      "html": "<p class=\"text-mid mb-4\">PNG to bezstratny format graficzny, idealny do grafik, zrzutów ekranu i materiałów z przezroczystym tłem. PDF to uniwersalny format dokumentów odczytywalny na każdym urządzeniu.</p><p class=\"text-mid mb-4\">Konwersja PNG na PDF jest przydatna, gdy chcesz połączyć zrzuty ekranu w jedną instrukcję, przygotować portfolio grafik lub wysłać dokumenty w jednym pliku.</p><p class=\"text-mid\">Nasz konwerter działa lokalnie w przeglądarce — pliki nie są wysyłane na serwer. Jakość obrazu jest zachowana w pełni.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PNG na PDF – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować PNG na PDF?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dodaj pliki PNG",
+          "description": "Przeciągnij pliki PNG na wyznaczone pole albo wybierz je z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kliknij Konwertuj",
+          "description": "Każdy obraz PNG trafi na osobną stronę PDF z zachowaniem proporcji.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Pobierz PDF",
+          "description": "Pobierz gotowy dokument PDF jednym kliknięciem.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "PNG vs PDF — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PNG</th><th class=\"text-dark py-2 text-left font-semibold\">PDF</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Bezstratna</td><td class=\"text-mid py-2\">Bez dodatkowej kompresji</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak (kanał alfa)</td><td class=\"text-mid py-2\">Nie dotyczy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Wiele stron</td><td class=\"text-mid py-2 pr-4\">Nie</td><td class=\"text-mid py-2\">Tak</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Grafiki, zrzuty ekranu</td><td class=\"text-mid py-2\">Dokumenty, druk</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować PNG na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty ze zrzutami",
+          "description": "Połącz zrzuty ekranu PNG w jeden PDF — idealny do dokumentacji technicznej."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Druk grafik",
+          "description": "PNG zachowuje pełną jakość — PDF zapewnia poprawne wymiary na wydruku."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Wysyłka wielu grafik",
+          "description": "Zamiast wielu plików PNG wyślij jeden kompaktowy PDF."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Archiwizacja projektów",
+          "description": "PDF to uniwersalny format archiwizacji — zachowuje jakość PNG na lata."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter PNG na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Automatyczna orientacja",
+          "description": "Orientacja strony A4 dopasowuje się automatycznie do kształtu obrazu (pionowa lub pozioma)."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pobierz gotowy PDF jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji PNG na PDF",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>PNG to format bezstratny — jakość obrazu w PDF będzie identyczna jak w oryginale.</li><li>Przezroczyste tło PNG zostanie zamienione na białe w PDF (PDF nie obsługuje przezroczystości tła strony).</li><li>Dla zrzutów ekranu z tekstem PNG jest lepszym źródłem niż JPG — tekst pozostaje ostry.</li><li>Jeśli grafiki zawierają zdjęcia, rozważ konwersję przez <a href=\"/narzedzia/konwerter-jpg-na-pdf\">JPG na PDF</a> — mniejszy rozmiar pliku.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs PDF – porównanie formatów",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "png": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "png": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "png": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "png": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "png": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "png": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "png": false,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji PNG na PDF",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy mogę połączyć wiele plików PNG w jeden PDF?",
+          "answer": "Tak, możesz dodać wiele plików PNG — każdy z nich trafi na osobną stronę w wygenerowanym dokumencie PDF."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Jaka jest jakość obrazu w PDF?",
+          "answer": "Obrazy są osadzane w PDF z jakością 92%, co zapewnia dobry kompromis między rozmiarem pliku a jakością wizualną."
+        },
+        {
+          "question": "Czy konwerter działa na telefonie?",
+          "answer": "Tak, konwerter działa w przeglądarce na urządzeniach mobilnych z systemem Android i iOS."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter PNG na PDF – Arteon",
+      "defaultSubject": "Feedback: Konwerter PNG na PDF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

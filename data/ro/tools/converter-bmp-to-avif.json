@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs AVIF – comparație de formate",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "bmp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "bmp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia BMP în AVIF",
       "openByDefault": 0,

@@ -1,0 +1,293 @@
+{
+  "toolKey": "svgToPdf",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter SVG na PDF — darmowy, bez rejestracji",
+    "description": "Zamień pliki SVG na PDF w przeglądarce. Idealne do przygotowania logotypów i grafik wektorowych do druku. Bez limitu — konwersja lokalna.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-svg-na-pdf"
+  },
+  "hero": {
+    "title": "Zamień grafikę wektorową SVG na PDF",
+    "description": "Wgraj pliki SVG, a narzędzie zamieni je na dokument PDF. Idealne do przygotowania logotypów i grafik wektorowych do druku lub archiwizacji.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-svg-na-pdf",
+      "label": "Konwerter SVG na PDF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter SVG na PDF — darmowy, bez limitu",
+      "alternateName": ["Zamiana SVG na PDF online", "Konwersja SVG do PDF", "SVG to PDF converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Darmowy konwerter SVG na PDF online. Zamień pliki SVG na dokument PDF w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja SVG do PDF", "Łączenie wielu plików w jeden PDF", "Automatyczna orientacja strony A4", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić SVG na PDF online",
+      "description": "Instrukcja konwersji plików SVG na format PDF.",
+      "steps": [
+        {
+          "name": "Dodaj pliki SVG",
+          "text": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Kliknij przycisk Konwertuj, aby zamienić obrazy SVG na PDF."
+        },
+        {
+          "name": "Pobierz PDF",
+          "text": "Po konwersji pobierz gotowy plik PDF."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować SVG na PDF?",
+      "html": "<p class=\"text-mid mb-4\">SVG (Scalable Vector Graphics) to format grafiki wektorowej, idealny do logotypów, ikon i ilustracji. Grafiki SVG skalują się bez utraty jakości, ale nie każdy program potrafi je otworzyć.</p><p class=\"text-mid mb-4\">Konwersja SVG na PDF pozwala przygotować grafikę wektorową do druku, prezentacji lub archiwizacji w uniwersalnym formacie PDF otwieralnym na każdym urządzeniu.</p><p class=\"text-mid\">Nasz konwerter renderuje SVG lokalnie w przeglądarce — pliki nie opuszczają komputera.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter SVG na PDF – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować SVG na PDF?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dodaj pliki SVG",
+          "description": "Przeciągnij pliki SVG na wyznaczone pole albo wybierz je z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kliknij Konwertuj",
+          "description": "Każdy obraz SVG trafi na osobną stronę PDF z zachowaniem proporcji.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Pobierz PDF",
+          "description": "Pobierz gotowy dokument PDF jednym kliknięciem.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG vs PDF — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">SVG</th><th class=\"text-dark py-2 text-left font-semibold\">PDF</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Grafika wektorowa (XML)</td><td class=\"text-mid py-2\">Format dokumentu</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Skalowalność</td><td class=\"text-mid py-2 pr-4\">Nieskończona</td><td class=\"text-mid py-2\">Zależy od zawartości</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Edycja</td><td class=\"text-mid py-2 pr-4\">Kod XML / Illustrator</td><td class=\"text-mid py-2\">Acrobat / edytory PDF</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Logo, ikony, web</td><td class=\"text-mid py-2\">Dokumenty, druk, prezentacje</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować SVG na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Druk logo i grafik",
+          "description": "PDF zachowuje wektorową jakość SVG na wydruku w każdym rozmiarze."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Wysyłka materiałów",
+          "description": "Nie każdy ma program do otwierania SVG — PDF otworzy każdy odbiorca."
+        },
+        {
+          "icon": "RiPresentationLine",
+          "title": "Prezentacje",
+          "description": "Wstaw logo lub grafikę SVG do dokumentu PDF do prezentacji."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumentacja techniczna",
+          "description": "Schematy i diagramy SVG w PDF są łatwe do udostępniania."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter SVG na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Automatyczna orientacja",
+          "description": "Orientacja strony A4 dopasowuje się automatycznie do kształtu obrazu (pionowa lub pozioma)."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pobierz gotowy PDF jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji SVG na PDF",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>SVG to format wektorowy — po konwersji na PDF obraz jest rasteryzowany (zamieniony na piksele).</li><li>Dla zachowania jakości wektorowej w druku profesjonalnym użyj dedykowanego programu (Illustrator, Inkscape).</li><li>Nasz konwerter renderuje SVG w wysokiej rozdzielczości, co wystarcza do większości zastosowań.</li><li>Jeśli potrzebujesz obrazu rastrowego zamiast PDF, rozważ <a href=\"/narzedzia/konwerter-svg-na-png\">konwersję SVG na PNG</a>.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs PDF – porównanie formatów",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "svg": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "svg": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "svg": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "svg": false,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji SVG na PDF",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy mogę połączyć wiele plików SVG w jeden PDF?",
+          "answer": "Tak, możesz dodać wiele plików SVG — każdy z nich trafi na osobną stronę w wygenerowanym dokumencie PDF."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Jaka jest jakość obrazu w PDF?",
+          "answer": "Obrazy są osadzane w PDF z jakością 92%, co zapewnia dobry kompromis między rozmiarem pliku a jakością wizualną."
+        },
+        {
+          "question": "Czy konwerter działa na telefonie?",
+          "answer": "Tak, konwerter działa w przeglądarce na urządzeniach mobilnych z systemem Android i iOS."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter SVG na PDF – Arteon",
+      "defaultSubject": "Feedback: Konwerter SVG na PDF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

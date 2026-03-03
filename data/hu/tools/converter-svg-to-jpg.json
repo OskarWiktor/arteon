@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs JPG – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "svg": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "svg": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "svg": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "svg": false,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a SVG-JPG konvertálásról",
       "openByDefault": 0,

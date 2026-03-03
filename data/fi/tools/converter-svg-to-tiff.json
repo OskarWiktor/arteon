@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs TIFF – muotovertailu",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "svg": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "svg": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "svg": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "svg": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset SVG-TIFF-muunnoksesta",
       "openByDefault": 0,

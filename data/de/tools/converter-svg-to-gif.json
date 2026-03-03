@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs GIF – Formatvergleich",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Verlustbehaftete Komprimierung",
+          "values": {
+            "svg": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Verlustfreie Komprimierung",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Transparenz (Alphakanal)",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Animationsunterstützung",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Webbrowser-Unterstützung",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Kompakte Dateigröße",
+          "values": {
+            "svg": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadaten (EXIF)",
+          "values": {
+            "svg": false,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zur Konvertierung von SVG in GIF",
       "openByDefault": 0,

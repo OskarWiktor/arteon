@@ -1,0 +1,248 @@
+{
+  "toolKey": "svgToPdf",
+  "locale": "hu",
+  "metadata": {
+    "title": "SVG PDF konverter — SVG PDF",
+    "description": "SVG képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/svg-pdf-konverter"
+  },
+  "hero": {
+    "title": "SVG PDF konverter",
+    "description": "SVG képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/svg-pdf-konverter",
+      "label": "SVG PDF konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "SVG PDF konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "SVG képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.",
+      "featureList": ["SVG to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert SVG to PDF", "SVG to PDF", "Free SVG to PDF converter"]
+    },
+    "howTo": {
+      "name": "Hogyan konvertáljuk SVG-t PDF-vé",
+      "description": "SVG képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Töltse fel a SVG fájlt",
+          "text": "Húzza a SVG fájlt a konverterre, vagy kattintson a tallózáshoz."
+        },
+        {
+          "position": 2,
+          "name": "Konvertálás",
+          "text": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+        },
+        {
+          "position": 3,
+          "name": "Töltse le a PDF fájlt",
+          "text": "Töltse le a konvertált PDF fájlt."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miért érdemes SVG-t PDF-vé konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">SVG képek konvertálása PDF dokumentummá. Több fájl egyesítése egy PDF-be. Ingyenes.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "SVG to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan konvertáljuk SVG-t PDF-vé",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Töltse fel a SVG fájlt",
+          "description": "Húzza a SVG fájlt a konverterre, vagy kattintson a tallózáshoz.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertálás",
+          "description": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Töltse le a PDF fájlt",
+          "description": "Töltse le a konvertált PDF fájlt.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a konvertert?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "A fájlok teljes mértékben a böngészőben kerülnek feldolgozásra. Semmi nem kerül szerverre."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Nincs korlát",
+          "description": "Konvertáljon annyi fájlt, amennyit csak akar. Nincs napi limit, nincs méretkorlátozás."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Minőségszabályozás",
+          "description": "Állítsa be a beállításokat a tökéletes egyensúly megtalálásához a fájlméret és a minőség között."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konverzió",
+          "description": "Minden feldolgozás helyben történik modern böngésző API-k segítségével."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs PDF – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "svg": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "svg": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "svg": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "svg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "svg": false,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a SVG-PDF konverzióról",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Ingyenes a SVG konvertálása PDF-vé?",
+          "answer": "Igen, ez a konverter teljesen ingyenes és korlátlan. Nincs regisztráció, nincs vízjel."
+        },
+        {
+          "question": "Feltölti a fájljaimat a konverter?",
+          "answer": "Nem. Minden feldolgozás helyben történik a böngészőben. A fájlok soha nem hagyják el az eszközét."
+        },
+        {
+          "question": "Konvertálhatok egyszerre több fájlt?",
+          "answer": "Igen, a konverter támogatja a kötegelt konverziót."
+        },
+        {
+          "question": "Működik a konverter mobilon?",
+          "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy javaslatot szeretne tenni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "SVG PDF konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "toolKey": "yamlToJson",
+  "locale": "fi",
+  "metadata": {
+    "title": "YAML JSON -muunnin — YAML JSON",
+    "description": "Muunna YAML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fi/tyokalut/yaml-json-muunnin"
+  },
+  "hero": {
+    "title": "YAML JSON -muunnin",
+    "description": "Muunna YAML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/yaml-json-muunnin",
+      "label": "YAML JSON -muunnin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "YAML JSON -muunnin",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Muunna YAML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+      "featureList": ["YAML to JSON conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert YAML to JSON", "YAML to JSON", "Free YAML to JSON converter"]
+    },
+    "howTo": {
+      "name": "Kuinka muuntaa YAML JSON-muotoon",
+      "description": "Muunna YAML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Liitä tietosi",
+          "text": "Liitä YAML-tiedot syöttökenttään."
+        },
+        {
+          "position": 2,
+          "name": "Muunna",
+          "text": "Napsauta Muunna muuntaaksesi YAML-tiedot JSON-muotoon."
+        },
+        {
+          "position": 3,
+          "name": "Kopioi tai lataa",
+          "text": "Kopioi JSON-tulos tai lataa tiedostona."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miksi muuntaa YAML JSON-muotoon?",
+      "html": "<p class=\"text-mid mb-4\">Muunna YAML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "YAML to JSON conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kuinka muuntaa YAML JSON-muotoon",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Liitä tietosi",
+          "description": "Liitä YAML-tiedot syöttökenttään.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Muunna",
+          "description": "Napsauta Muunna muuntaaksesi YAML-tiedot JSON-muotoon.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopioi tai lataa",
+          "description": "Kopioi JSON-tulos tai lataa tiedostona.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erilaisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täydellinen yksityisyys",
+          "description": "Tiedostosi käsitellään kokonaan selaimessasi. Mitään ei ladata palvelimelle."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ei rajoituksia",
+          "description": "Muunna niin monta tiedostoa kuin tarvitset. Ei päivittäisiä rajoja."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Laatukontrolli",
+          "description": "Säädä asetuksia löytääksesi täydellisen tasapainon tiedostokoon ja laadun välillä."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Välitön muunnos",
+          "description": "Kaikki käsittely tapahtuu paikallisesti modernien selainrajapintojen avulla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "YAML vs JSON – muotovertailu",
+      "plans": [
+        {
+          "id": "yaml",
+          "name": "YAML"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sisäkkäinen data",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Taulukkodata",
+          "values": {
+            "yaml": false,
+            "json": false
+          }
+        },
+        {
+          "name": "Skeemavalidointi",
+          "values": {
+            "yaml": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Ihmisen luettavissa",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "API-standardi",
+          "values": {
+            "yaml": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Kompakti syntaksi",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset YAML-JSON-muunnoksesta",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Onko YAML-muunnos JSON-muotoon ilmainen?",
+          "answer": "Kyllä, tämä muunnin on täysin ilmainen ja rajoittamaton. Ei rekisteröitymistä, ei vesileimoja."
+        },
+        {
+          "question": "Lataako muunnin tiedostoni palvelimelle?",
+          "answer": "Ei. Kaikki käsittely tapahtuu paikallisesti selaimessasi. Tiedostosi eivät koskaan poistu laitteeltasi."
+        },
+        {
+          "question": "Voinko muuntaa useita tiedostoja kerralla?",
+          "answer": "Kyllä, muunnin tukee erämuunnosta."
+        },
+        {
+          "question": "Toimiiko muunnin mobiilissa?",
+          "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa jotain? Lähetä meille viesti – vastaamme 24 tunnin sisällä.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "YAML JSON -muunnin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

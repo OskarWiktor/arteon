@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs GIF – comparație de formate",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "png": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "png": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "png": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "png": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "png": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "png": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "png": false,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia PNG în GIF",
       "openByDefault": 0,

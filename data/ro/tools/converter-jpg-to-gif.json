@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs GIF – comparație de formate",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "jpg": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "jpg": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "jpg": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "jpg": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "jpg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "jpg": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "jpg": true,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia JPG în GIF",
       "openByDefault": 0,

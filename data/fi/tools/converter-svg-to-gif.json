@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs GIF – muotovertailu",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "svg": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "svg": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "svg": false,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset SVG-GIF-muunnoksesta",
       "openByDefault": 0,

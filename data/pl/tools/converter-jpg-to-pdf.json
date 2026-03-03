@@ -1,0 +1,293 @@
+{
+  "toolKey": "jpgToPdf",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter JPG na PDF — darmowy, bez limitu plików",
+    "description": "Zamień pliki JPG na PDF w przeglądarce. Połącz wiele zdjęć w jeden dokument. Bez rejestracji, bez limitu — konwersja lokalna.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-jpg-na-pdf"
+  },
+  "hero": {
+    "title": "Zamień zdjęcia JPG na dokument PDF",
+    "description": "Wgraj pliki JPG, a narzędzie zamieni je na dokument PDF. Każdy obraz trafia na osobną stronę A4 z zachowaniem proporcji. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-jpg-na-pdf",
+      "label": "Konwerter JPG na PDF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter JPG na PDF — darmowy, bez limitu",
+      "alternateName": ["Zamiana JPG na PDF online", "Konwersja JPG do PDF", "JPG to PDF converter"],
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Darmowy konwerter JPG na PDF online. Zamień pliki JPG na dokument PDF w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Konwersja JPG do PDF", "Łączenie wielu plików w jeden PDF", "Automatyczna orientacja strony A4", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zamienić JPG na PDF online",
+      "description": "Instrukcja konwersji plików JPG na format PDF.",
+      "steps": [
+        {
+          "name": "Dodaj pliki JPG",
+          "text": "Przeciągnij pliki JPG na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Kliknij przycisk Konwertuj, aby zamienić obrazy JPG na PDF."
+        },
+        {
+          "name": "Pobierz PDF",
+          "text": "Po konwersji pobierz gotowy plik PDF."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować JPG na PDF?",
+      "html": "<p class=\"text-mid mb-4\">JPG (JPEG) to najpopularniejszy format zdjęć na świecie. PDF to uniwersalny format dokumentów, który wygląda tak samo na każdym urządzeniu, systemie operacyjnym i w każdej drukarce.</p><p class=\"text-mid mb-4\">Konwersja JPG na PDF przydaje się, gdy chcesz wysłać kilka zdjęć jako jeden plik, przygotować portfolio, zarchiwizować skany dokumentów lub stworzyć prezentację. Kancelarie prawne łączą skany umów, gabinety lekarskie — dokumentację medyczną, a agencje nieruchomości — zdjęcia ofert.</p><p class=\"text-mid\">Nasz konwerter działa w przeglądarce — pliki nie są wysyłane na żaden serwer. Każdy obraz trafia na osobną stronę A4 z zachowaniem proporcji.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JPG na PDF – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować JPG na PDF?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Dodaj pliki JPG",
+          "description": "Przeciągnij pliki JPG na wyznaczone pole albo wybierz je z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kliknij Konwertuj",
+          "description": "Każdy obraz JPG trafi na osobną stronę PDF z zachowaniem proporcji.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Pobierz PDF",
+          "description": "Pobierz gotowy dokument PDF jednym kliknięciem.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JPG vs PDF — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">JPG</th><th class=\"text-dark py-2 text-left font-semibold\">PDF</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Format obrazu rastrowego</td><td class=\"text-mid py-2\">Format dokumentu</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Stratna (JPEG)</td><td class=\"text-mid py-2\">Bez dodatkowej kompresji</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Wiele stron</td><td class=\"text-mid py-2 pr-4\">Nie</td><td class=\"text-mid py-2\">Tak</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Druk</td><td class=\"text-mid py-2 pr-4\">Zależy od rozdzielczości</td><td class=\"text-mid py-2\">Idealny do druku</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Zdjęcia, web</td><td class=\"text-mid py-2\">Dokumenty, archiwizacja</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować JPG na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Druk zdjęć",
+          "description": "PDF zachowuje dokładne wymiary i proporcje — idealne do druku zdjęć na papierze A4."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Wysyłka e-mailem",
+          "description": "Jeden plik PDF zamiast wielu osobnych zdjęć JPG — łatwiej wysłać i odebrać."
+        },
+        {
+          "icon": "RiArchiveLine",
+          "title": "Archiwizacja",
+          "description": "PDF to standard archiwizacji dokumentów — zdjęcia w PDF są łatwe do katalogowania."
+        },
+        {
+          "icon": "RiPresentationLine",
+          "title": "Prezentacja portfolio",
+          "description": "Połącz zdjęcia w jeden dokument PDF do prezentacji klientom lub pracodawcom."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter JPG na PDF?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Automatyczna orientacja",
+          "description": "Orientacja strony A4 dopasowuje się automatycznie do kształtu obrazu (pionowa lub pozioma)."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pobierz gotowy PDF jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji JPG na PDF",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Używaj zdjęć JPG w wysokiej rozdzielczości (min. 300 DPI) dla najlepszej jakości druku.</li><li>Jeśli chcesz połączyć wiele zdjęć w jeden PDF, dodaj je wszystkie naraz — każde trafi na osobną stronę.</li><li>Narzędzie automatycznie dopasowuje orientację strony (pionowa/pozioma) do proporcji obrazu.</li><li>Dla dokumentów skanowanych rozważ również <a href=\"/narzedzia/konwerter-png-na-pdf\">konwersję PNG na PDF</a> — PNG lepiej zachowuje ostrość tekstu.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs PDF – porównanie formatów",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "jpg": false,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "jpg": false,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "jpg": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji JPG na PDF",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy mogę połączyć wiele plików JPG w jeden PDF?",
+          "answer": "Tak, możesz dodać wiele plików JPG — każdy z nich trafi na osobną stronę w wygenerowanym dokumencie PDF."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Jaka jest jakość obrazu w PDF?",
+          "answer": "Obrazy są osadzane w PDF z jakością 92%, co zapewnia dobry kompromis między rozmiarem pliku a jakością wizualną."
+        },
+        {
+          "question": "Czy konwerter działa na telefonie?",
+          "answer": "Tak, konwerter działa w przeglądarce na urządzeniach mobilnych z systemem Android i iOS."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter JPG na PDF – Arteon",
+      "defaultSubject": "Feedback: Konwerter JPG na PDF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

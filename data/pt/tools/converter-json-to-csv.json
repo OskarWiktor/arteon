@@ -1,0 +1,241 @@
+{
+  "toolKey": "jsonToCsv",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor JSON para CSV — JSON CSV",
+    "description": "Converta JSON para formato CSV. Análise e formatação automáticas. Gratuito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/pt/ferramentas/conversor-json-para-csv"
+  },
+  "hero": {
+    "title": "Conversor JSON para CSV",
+    "description": "Converta JSON para formato CSV. Análise e formatação automáticas. Gratuito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-json-para-csv",
+      "label": "Conversor JSON para CSV"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor JSON para CSV",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Converta JSON para formato CSV. Análise e formatação automáticas. Gratuito.",
+      "featureList": ["JSON to CSV conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert JSON to CSV", "JSON to CSV", "Free JSON to CSV converter"]
+    },
+    "howTo": {
+      "name": "Como converter JSON para CSV",
+      "description": "Converta JSON para formato CSV. Análise e formatação automáticas. Gratuito.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Cole seus dados",
+          "text": "Cole os dados JSON no campo de entrada."
+        },
+        {
+          "position": 2,
+          "name": "Converter",
+          "text": "Clique em Converter para transformar os dados JSON em formato CSV."
+        },
+        {
+          "position": 3,
+          "name": "Copiar ou descarregar",
+          "text": "Copie a saída CSV ou descarregue como ficheiro."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Por que converter JSON para CSV?",
+      "html": "<p class=\"text-mid mb-4\">Converta JSON para formato CSV. Análise e formatação automáticas. Gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JSON to CSV conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como converter JSON para CSV",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Cole seus dados",
+          "description": "Cole os dados JSON no campo de entrada.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Converter",
+          "description": "Clique em Converter para transformar os dados JSON em formato CSV.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Copiar ou descarregar",
+          "description": "Copie a saída CSV ou descarregue como ficheiro.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que torna este conversor diferente?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Os seus ficheiros são processados inteiramente no navegador. Nada é enviado para servidores."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Sem limites",
+          "description": "Converta quantos ficheiros precisar. Sem limites diários, sem restrições de tamanho."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Controlo de qualidade",
+          "description": "Ajuste as definições para o equilíbrio perfeito entre tamanho e qualidade."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversão instantânea",
+          "description": "Todo o processamento é local com APIs modernas do navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JSON vs CSV – comparação de formatos",
+      "plans": [
+        {
+          "id": "json",
+          "name": "JSON"
+        },
+        {
+          "id": "csv",
+          "name": "CSV",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dados hierárquicos",
+          "values": {
+            "json": true,
+            "csv": false
+          }
+        },
+        {
+          "name": "Dados tabulares",
+          "values": {
+            "json": false,
+            "csv": true
+          }
+        },
+        {
+          "name": "Validação de schema",
+          "values": {
+            "json": true,
+            "csv": false
+          }
+        },
+        {
+          "name": "Legível por humanos",
+          "values": {
+            "json": true,
+            "csv": true
+          }
+        },
+        {
+          "name": "Padrão API",
+          "values": {
+            "json": true,
+            "csv": false
+          }
+        },
+        {
+          "name": "Sintaxe compacta",
+          "values": {
+            "json": true,
+            "csv": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes sobre a conversão de JSON para CSV",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "A conversão de JSON para CSV é gratuita?",
+          "answer": "Sim, este conversor é completamente gratuito e sem limites. Sem registo, sem marcas de água."
+        },
+        {
+          "question": "O conversor envia os meus ficheiros?",
+          "answer": "Não. Todo o processamento acontece localmente no seu navegador."
+        },
+        {
+          "question": "Posso converter vários ficheiros de uma vez?",
+          "answer": "Sim, o conversor suporta conversão em lote."
+        },
+        {
+          "question": "O conversor funciona no telemóvel?",
+          "answer": "Sim, funciona em qualquer dispositivo com um navegador web moderno."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um erro ou quer sugerir algo? Envie-nos uma mensagem – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Conversor JSON para CSV"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Outras ferramentas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

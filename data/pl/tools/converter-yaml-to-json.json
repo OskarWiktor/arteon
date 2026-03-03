@@ -1,0 +1,286 @@
+{
+  "toolKey": "yamlToJson",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter YAML na JSON — darmowy, z walidacją",
+    "description": "Zamień dane YAML na poprawny JSON z walidacją składni. Idealny do Docker, Kubernetes, CI/CD. Bez rejestracji — konwersja lokalna.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-yaml-na-json"
+  },
+  "hero": {
+    "title": "Zamień konfigurację YAML na JSON",
+    "description": "Wklej kod YAML, a narzędzie zamieni go na poprawnie sformatowany JSON z walidacją składni. Konwersja odbywa się lokalnie w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-yaml-na-json",
+      "label": "Konwerter YAML na JSON"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter YAML na JSON — darmowy, bez rejestracji",
+      "alternateName": ["Zamiana YAML na JSON online", "Konwersja YAML do JSON", "YAML to JSON converter"],
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Darmowy konwerter YAML na JSON online. Zamień dane YAML na JSON w przeglądarce — dane nie są wysyłane na serwer.",
+      "featureList": ["Konwersja YAML na JSON", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
+    },
+    "howTo": {
+      "name": "Jak zamienić YAML na JSON online",
+      "description": "Instrukcja konwersji danych YAML na format JSON.",
+      "steps": [
+        {
+          "name": "Wklej dane YAML",
+          "text": "Wklej dane w formacie YAML w pole tekstowe lub wgraj plik z dysku."
+        },
+        {
+          "name": "Rozpocznij konwersję",
+          "text": "Kliknij przycisk Konwertuj, aby zamienić dane na format JSON."
+        },
+        {
+          "name": "Skopiuj lub pobierz wynik",
+          "text": "Skopiuj wynikowy JSON do schowka lub pobierz jako plik."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto konwertować YAML na JSON?",
+      "html": "<p class=\"text-mid mb-4\">YAML (YAML Ain't Markup Language) to czytelny format konfiguracji używany w Docker Compose, Kubernetes, GitHub Actions, Ansible i wielu innych narzędziach DevOps. JSON to format wymiany danych preferowany przez API i programy.</p><p class=\"text-mid mb-4\">Konwersja YAML na JSON przydaje się, gdy potrzebujesz danych konfiguracyjnych w formacie JSON — np. do przekazania do API, zaimportowania do aplikacji lub debugowania struktury danych.</p><p class=\"text-mid\">Nasz konwerter waliduje składnię YAML i informuje o błędach wcięć lub struktury.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter YAML na JSON – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak przekonwertować YAML na JSON?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wklej kod YAML",
+          "description": "Wklej zawartość pliku YAML w pole tekstowe lub wgraj plik z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Kliknij Konwertuj",
+          "description": "Narzędzie zwaliduje YAML i zamieni go na sformatowany JSON.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub pobierz",
+          "description": "Skopiuj wynik do schowka lub pobierz jako plik .json.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "YAML vs JSON — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">YAML</th><th class=\"text-dark py-2 text-left font-semibold\">JSON</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Składnia</td><td class=\"text-mid py-2 pr-4\">Wcięcia (bez nawiasów)</td><td class=\"text-mid py-2\">Nawiasy klamrowe i kwadratowe</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Komentarze</td><td class=\"text-mid py-2 pr-4\">Tak (#)</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Czytelność</td><td class=\"text-mid py-2 pr-4\">Bardzo czytelny</td><td class=\"text-mid py-2\">Kompaktowy</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Docker, Kubernetes, CI/CD</td><td class=\"text-mid py-2\">API, aplikacje webowe</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto konwertować YAML na JSON?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeLine",
+          "title": "Debugowanie konfiguracji",
+          "description": "JSON jest łatwiejszy do walidacji programowej — sprawdź strukturę danych YAML."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Import do API",
+          "description": "API REST przyjmuje JSON — zamień konfigurację YAML na dane wejściowe API."
+        },
+        {
+          "icon": "RiTerminalLine",
+          "title": "Skrypty automatyzacji",
+          "description": "Programy i skrypty łatwiej parsują JSON niż YAML."
+        },
+        {
+          "icon": "RiDatabaseLine",
+          "title": "Zapis w bazie",
+          "description": "Bazy danych przechowują JSON natywnie — zamień konfigurację na dane."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter YAML na JSON?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Dane nie opuszczają komputera. Konwersja odbywa się w przeglądarce."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Walidacja YAML",
+          "description": "Narzędzie sprawdza poprawność składni YAML przed konwersją."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Poprawne formatowanie",
+          "description": "Wynikowy JSON jest prawidłowo sformatowany z wcięciami."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Kopiuj lub pobierz",
+          "description": "Wynik możesz skopiować do schowka lub pobrać jako plik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące konwersji YAML na JSON",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>YAML jest wrażliwy na wcięcia — upewnij się, że używasz spacji (nie tabulatorów) i że wcięcia są spójne.</li><li>Komentarze YAML (#) są pomijane przy konwersji — JSON nie obsługuje komentarzy.</li><li>Kotwice i aliasy YAML (&amp; i *) są rozwijane w wynikowym JSON.</li><li>YAML obsługuje typy danych (boolean, null, date) — konwerter zamieni je na odpowiednie typy JSON.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "YAML vs JSON – porównanie formatów",
+      "plans": [
+        {
+          "id": "yaml",
+          "name": "YAML"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dane zagnieżdżone",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Dane tabelaryczne",
+          "values": {
+            "yaml": false,
+            "json": false
+          }
+        },
+        {
+          "name": "Walidacja schematu",
+          "values": {
+            "yaml": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Czytelność dla człowieka",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Standard API",
+          "values": {
+            "yaml": false,
+            "json": true
+          }
+        },
+        {
+          "name": "Zwięzła składnia",
+          "values": {
+            "yaml": true,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o konwersji YAML na JSON",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Jakie pliki YAML obsługuje konwerter?",
+          "answer": "Konwerter obsługuje standardowe pliki YAML, w tym pliki konfiguracyjne Docker Compose, Kubernetes, GitHub Actions, Ansible i inne."
+        },
+        {
+          "question": "Czy dane są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Dane nie opuszczają komputera."
+        },
+        {
+          "question": "Co jeśli YAML ma błędy wcięć?",
+          "answer": "Narzędzie wyświetli komunikat o błędzie składni z informacją o problematycznej linii. Popraw wcięcia i spróbuj ponownie."
+        },
+        {
+          "question": "Czy obsługiwane są kotwice YAML (&, *)?",
+          "answer": "Tak, konwerter obsługuje kotwice i aliasy YAML — zostaną rozwinięte w wynikowym JSON."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter YAML na JSON – Arteon",
+      "defaultSubject": "Feedback: Konwerter YAML na JSON"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs JPG – srovnání formátů",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "heic": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "heic": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "heic": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "heic": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "heic": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "heic": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "heic": true,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu HEIC na JPG",
       "openByDefault": 0,

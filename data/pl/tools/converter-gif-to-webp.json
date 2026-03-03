@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/konwerter-gif-na-webp", "label": "Konwerter GIF na WebP" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-gif-na-webp",
+      "label": "Konwerter GIF na WebP"
+    }
   },
   "schemas": {
     "software": {
@@ -29,14 +35,26 @@
       "name": "Jak zamienić GIF na WebP online",
       "description": "Instrukcja konwersji plików GIF na format WebP za pomocą darmowego narzędzia online.",
       "steps": [
-        { "name": "Dodaj pliki GIF", "text": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku." },
-        { "name": "Ustaw jakość WebP", "text": "Wybierz jakość wynikowego pliku WebP za pomocą suwaka (60–95%)." },
-        { "name": "Pobierz pliki WebP", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+        {
+          "name": "Dodaj pliki GIF",
+          "text": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Ustaw jakość WebP",
+          "text": "Wybierz jakość wynikowego pliku WebP za pomocą suwaka (60–95%)."
+        },
+        {
+          "name": "Pobierz pliki WebP",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować GIF na WebP?",
@@ -44,47 +62,169 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter GIF na WebP – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować GIF na WebP?",
       "description": "Konwersja GIF na WebP zajmuje kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki GIF", "description": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
-        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości WebP (domyślnie 80%). Dla miniaturek i podglądów wystarczy 70–80%.", "icon": "RiEqualizerLine" },
-        { "title": "3. Pobierz WebP", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+        {
+          "title": "1. Dodaj pliki GIF",
+          "description": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości WebP (domyślnie 80%). Dla miniaturek i podglądów wystarczy 70–80%.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz WebP",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kiedy konwertować GIF na WebP?",
       "grid": "two",
       "items": [
-        { "icon": "RiGlobalLine", "title": "Miniaturki animacji", "description": "Potrzebujesz statycznego podglądu animacji GIF na stronie? WebP da lekki plik idealny jako miniaturka." },
-        { "icon": "RiMailLine", "title": "Memy i grafiki", "description": "Statyczne GIF-y (memy, reakcje) zamienione na WebP ważą wielokrotnie mniej i ładują się szybciej." },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Miniaturki animacji",
+          "description": "Potrzebujesz statycznego podglądu animacji GIF na stronie? WebP da lekki plik idealny jako miniaturka."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Memy i grafiki",
+          "description": "Statyczne GIF-y (memy, reakcje) zamienione na WebP ważą wielokrotnie mniej i ładują się szybciej."
+        },
         {
           "icon": "RiFileTextLine",
           "title": "Optymalizacja strony",
           "description": "GIF-y na stronie spowalniają ładowanie. Zamiana statycznych GIF-ów na WebP poprawia wyniki w <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a>."
         },
-        { "icon": "RiShieldCheckLine", "title": "Formularze i platformy", "description": "Niektóre platformy nie akceptują GIF. WebP jest powszechnie obsługiwany i zajmuje mniej miejsca." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Formularze i platformy",
+          "description": "Niektóre platformy nie akceptują GIF. WebP jest powszechnie obsługiwany i zajmuje mniej miejsca."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter GIF na WebP?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń." },
-        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala dobrać kompromis między rozmiarem a jakością obrazu." },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Regulacja jakości",
+          "description": "Suwak jakości pozwala dobrać kompromis między rozmiarem a jakością obrazu."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "GIF vs WebP – porównanie formatów",
+      "plans": [
+        {
+          "id": "gif",
+          "name": "GIF"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "gif": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "gif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "gif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "gif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "gif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "gif": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "gif": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji GIF na WebP",
@@ -94,13 +234,28 @@
           "question": "Czy konwersja zachowuje animację GIF?",
           "answer": "Nie. Narzędzie eksportuje pierwszą klatkę animacji jako statyczny obraz WebP. Pełna animacja GIF nie jest przenoszona do WebP w tej wersji narzędzia."
         },
-        { "question": "Ile miejsca mogę zaoszczędzić?", "answer": "Statyczny GIF o rozmiarze 500 KB po konwersji na WebP przy jakości 80% zwykle zajmuje 30–80 KB — to redukcja o 80–95%." },
-        { "question": "Czy WebP obsługuje przezroczystość?", "answer": "Tak. WebP obsługuje kanał alfa, więc przezroczyste piksele z GIF-a zostaną zachowane." },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera." },
-        { "question": "Czy mogę konwertować wiele plików naraz?", "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie. Wszystkie zostaną przekonwertowane." }
+        {
+          "question": "Ile miejsca mogę zaoszczędzić?",
+          "answer": "Statyczny GIF o rozmiarze 500 KB po konwersji na WebP przy jakości 80% zwykle zajmuje 30–80 KB — to redukcja o 80–95%."
+        },
+        {
+          "question": "Czy WebP obsługuje przezroczystość?",
+          "answer": "Tak. WebP obsługuje kanał alfa, więc przezroczyste piksele z GIF-a zostaną zachowane."
+        },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików naraz?",
+          "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie. Wszystkie zostaną przekonwertowane."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -109,8 +264,17 @@
       "imageAlt": "Konwerter GIF na WebP – Arteon",
       "defaultSubject": "Feedback: Konwerter GIF na WebP"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

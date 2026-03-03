@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs TIFF – comparație de formate",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "svg": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "svg": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "svg": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "svg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "svg": false,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia SVG în TIFF",
       "openByDefault": 0,

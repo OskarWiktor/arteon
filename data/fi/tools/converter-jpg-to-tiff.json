@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs TIFF – muotovertailu",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "jpg": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "jpg": false,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "jpg": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "jpg": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "jpg": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset JPG-TIFF-muunnoksesta",
       "openByDefault": 0,

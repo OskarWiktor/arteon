@@ -1,0 +1,223 @@
+{
+  "toolKey": "imageToBase64",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter obraz na Base64 — zakoduj obraz do CSS i HTML",
+    "description": "Zakoduj obraz (JPG, PNG, WebP, SVG, GIF) do formatu Base64. Gotowy ciąg do CSS, HTML lub JSON. Bez rejestracji — konwersja lokalna.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-obraz-na-base64"
+  },
+  "hero": {
+    "title": "Zakoduj obraz do formatu Base64",
+    "description": "Wgraj obraz (JPG, PNG, WebP, SVG, GIF), a narzędzie zamieni go na ciąg Base64 gotowy do osadzenia w CSS, HTML lub JSON. Konwersja lokalna w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-obraz-na-base64",
+      "label": "Konwerter obraz na Base64"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter obraz na Base64 — darmowy, bez rejestracji",
+      "alternateName": ["Kodowanie obrazu do Base64", "Image to Base64 encoder", "Obraz na data URI"],
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Darmowy konwerter obrazu na Base64 online. Zakoduj JPG, PNG, WebP lub SVG do Base64 w przeglądarce — pliki nie są wysyłane na serwer.",
+      "featureList": ["Kodowanie obrazu do Base64", "Generowanie data URI z typem MIME", "Obsługa JPG, PNG, WebP, SVG, GIF", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak zakodować obraz do Base64",
+      "description": "Instrukcja kodowania obrazu do formatu Base64.",
+      "steps": [
+        {
+          "name": "Wgraj obraz",
+          "text": "Przeciągnij obraz na wyznaczone pole albo wybierz go z dysku."
+        },
+        {
+          "name": "Skopiuj Base64",
+          "text": "Skopiuj wygenerowany ciąg Base64 z typem MIME (data URI)."
+        },
+        {
+          "name": "Użyj w kodzie",
+          "text": "Wklej ciąg Base64 do CSS (background-image), HTML (src) lub JSON."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto kodować obrazy do Base64?",
+      "html": "<p class=\"text-mid mb-4\">Base64 to sposób zapisu danych binarnych (np. obrazów) jako ciągu znaków tekstowych. Zakodowany obraz można osadzić bezpośrednio w kodzie HTML, CSS lub JSON — bez konieczności linkowania zewnętrznego pliku.</p><p class=\"text-mid mb-4\">Kodowanie Base64 przydaje się do osadzania małych ikon i logotypów bezpośrednio w CSS (background-image: url(data:...)), szablonów e-mail, podpisów w Outlooku oraz danych wejściowych dla API.</p><p class=\"text-mid\">Pamiętaj, że Base64 zwiększa rozmiar danych o ok. 33%. Dla małych obrazów (ikony, logotypy do 10 KB) korzyść z redukcji zapytań HTTP przeważa nad wzrostem rozmiaru. Dla dużych zdjęć lepiej użyć normalnych plików.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter obraz na Base64 – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak zakodować obraz do Base64?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wgraj obraz",
+          "description": "Przeciągnij obraz (JPG, PNG, WebP, SVG, GIF) na pole lub wybierz z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Skopiuj Base64",
+          "description": "Narzędzie automatycznie wygeneruje ciąg Base64 z typem MIME (data URI).",
+          "icon": "RiFileCopyLine"
+        },
+        {
+          "title": "3. Użyj w kodzie",
+          "description": "Wklej ciąg Base64 do CSS, HTML, JSON lub przekaż do API.",
+          "icon": "RiCodeLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Obraz vs Base64 — różnice formatów",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Plik obrazu</th><th class=\"text-dark py-2 text-left font-semibold\">Base64</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Format</td><td class=\"text-mid py-2 pr-4\">Binarny (JPG, PNG, WebP)</td><td class=\"text-mid py-2\">Tekstowy (ciąg znaków ASCII)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar</td><td class=\"text-mid py-2 pr-4\">Oryginalny</td><td class=\"text-mid py-2\">~33% większy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Osadzanie w kodzie</td><td class=\"text-mid py-2 pr-4\">Wymaga osobnego pliku</td><td class=\"text-mid py-2\">Bezpośrednio w CSS/HTML/JSON</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Zapytania HTTP</td><td class=\"text-mid py-2 pr-4\">Osobne zapytanie na każdy obraz</td><td class=\"text-mid py-2\">Zero dodatkowych zapytań</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Strony, programy, druk</td><td class=\"text-mid py-2\">Ikony inline, e-maile, API</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto kodować obraz do Base64?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCss3Line",
+          "title": "Ikony inline w CSS",
+          "description": "Małe ikony (do 10 KB) warto osadzić bezpośrednio w CSS — mniej zapytań HTTP."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Szablony e-mail",
+          "description": "E-maile nie ładują zewnętrznych obrazów domyślnie — Base64 wyświetla się od razu."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Dane wejściowe API",
+          "description": "Wiele API (np. OpenAI Vision) przyjmuje obrazy jako ciąg Base64."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Podpisy Outlook",
+          "description": "Logo w podpisie e-mail lepiej osadzić jako Base64 — działa bez serwera obrazów."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter obraz na Base64?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Plik nie opuszcza komputera. Kodowanie odbywa się w przeglądarce."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Gotowy data URI",
+          "description": "Wynik zawiera pełny data URI z typem MIME — gotowy do wklejenia w CSS lub HTML."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Wiele formatów",
+          "description": "Obsługa JPG, PNG, WebP, SVG, GIF, BMP i TIFF."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "Szybkie kopiowanie",
+          "description": "Skopiuj wynik do schowka jednym kliknięciem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące kodowania Base64",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Base64 zwiększa rozmiar danych o ok. 33% — używaj go tylko dla małych obrazów (do 10 KB).</li><li>Dla większych obrazów (zdjęcia, banery) lepiej użyć normalnych plików — Base64 spowolni ładowanie strony.</li><li>Data URI zawiera typ MIME (np. data:image/png;base64,...) — narzędzie generuje go automatycznie.</li><li>W CSS użyj: background-image: url(data:image/png;base64,...) — skopiuj cały ciąg z narzędzia.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o kodowaniu Base64",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Co to jest Base64?",
+          "answer": "Base64 to sposób kodowania danych binarnych jako ciągu znaków ASCII. Pozwala osadzić obraz bezpośrednio w kodzie HTML, CSS lub JSON bez konieczności linkowania zewnętrznego pliku."
+        },
+        {
+          "question": "Czy Base64 zwiększa rozmiar pliku?",
+          "answer": "Tak, kodowanie Base64 zwiększa rozmiar danych o ok. 33%. Dlatego Base64 sprawdza się najlepiej dla małych obrazów (ikony, logotypy do 10 KB). Dla większych plików lepiej użyć normalnych obrazów."
+        },
+        {
+          "question": "Jak użyć Base64 w CSS?",
+          "answer": "Użyj właściwości background-image z data URI: background-image: url(data:image/png;base64,iVBOR...). Narzędzie generuje gotowy ciąg do skopiowania."
+        },
+        {
+          "question": "Czy plik jest wysyłany na serwer?",
+          "answer": "Nie. Kodowanie odbywa się lokalnie w przeglądarce za pomocą FileReader API. Plik nie opuszcza komputera."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter obraz na Base64 – Arteon",
+      "defaultSubject": "Feedback: Konwerter obraz na Base64"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

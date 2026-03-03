@@ -1,0 +1,178 @@
+{
+  "toolKey": "imageToBase64",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore immagine in Base64 — immagine Base64",
+    "description": "Codifica immagini in formato Base64. Copia il codice pronto per CSS o HTML. Gratuito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-immagine-in-base64"
+  },
+  "hero": {
+    "title": "Convertitore immagine in Base64",
+    "description": "Codifica immagini in formato Base64. Copia il codice pronto per CSS o HTML. Gratuito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-immagine-in-base64",
+      "label": "Convertitore immagine in Base64"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore immagine in Base64",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Codifica immagini in formato Base64. Copia il codice pronto per CSS o HTML. Gratuito.",
+      "featureList": ["immagine to Base64 conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert immagine to Base64", "immagine to Base64", "Free immagine to Base64 converter"]
+    },
+    "howTo": {
+      "name": "Come convertire immagine in Base64",
+      "description": "Codifica immagini in formato Base64. Copia il codice pronto per CSS o HTML. Gratuito.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Carica il tuo file immagine",
+          "text": "Trascina il file immagine sul convertitore o clicca per sfogliare."
+        },
+        {
+          "position": 2,
+          "name": "Converti",
+          "text": "Clicca su Converti — i file vengono elaborati localmente nel browser."
+        },
+        {
+          "position": 3,
+          "name": "Scarica il tuo Base64",
+          "text": "Scarica il file Base64 convertito."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire immagine in Base64?",
+      "html": "<p class=\"text-mid mb-4\">Codifica immagini in formato Base64. Copia il codice pronto per CSS o HTML. Gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "immagine to Base64 conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come convertire immagine in Base64",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Carica il tuo file immagine",
+          "description": "Trascina il file immagine sul convertitore o clicca per sfogliare.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Converti",
+          "description": "Clicca su Converti — i file vengono elaborati localmente nel browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Scarica il tuo Base64",
+          "description": "Scarica il file Base64 convertito.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "I tuoi file vengono elaborati interamente nel browser. Nulla viene caricato su server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Senza limiti",
+          "description": "Converti quanti file vuoi. Nessun limite giornaliero, nessuna restrizione di dimensione."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Controllo qualità",
+          "description": "Regola le impostazioni per trovare il perfetto equilibrio tra dimensione e qualità."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversione istantanea",
+          "description": "Tutta l'elaborazione avviene localmente con le API moderne del browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da immagine a Base64",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "La conversione da immagine a Base64 è gratuita?",
+          "answer": "Sì, questo convertitore è completamente gratuito e senza limiti. Nessuna registrazione, nessun watermark."
+        },
+        {
+          "question": "Il convertitore carica i miei file?",
+          "answer": "No. Tutta l'elaborazione avviene localmente nel browser. I tuoi file non lasciano mai il dispositivo."
+        },
+        {
+          "question": "Posso convertire più file contemporaneamente?",
+          "answer": "Sì, il convertitore supporta la conversione batch."
+        },
+        {
+          "question": "Il convertitore funziona su dispositivi mobili?",
+          "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire qualcosa? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertitore immagine in Base64"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

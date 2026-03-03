@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs WebP – comparação de formatos",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compressão com perda",
+          "values": {
+            "jpg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Compressão sem perda",
+          "values": {
+            "jpg": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Transparência (canal alfa)",
+          "values": {
+            "jpg": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Suporte a animação",
+          "values": {
+            "jpg": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Suporte em navegadores",
+          "values": {
+            "jpg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Tamanho de ficheiro compacto",
+          "values": {
+            "jpg": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadados (EXIF)",
+          "values": {
+            "jpg": true,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de JPG para WebP",
       "openByDefault": 0,

@@ -31,7 +31,7 @@ export default function PrivacybeleidPage() {
         <div>
           <h1>Privacybeleid</h1>
           <p className="mt-2 text-sm opacity-70">
-            Versie: <strong>13.02.2026</strong>
+            Versie: <strong>03.03.2026</strong>
           </p>
 
           <Gap size="xs" />
@@ -54,7 +54,10 @@ export default function PrivacybeleidPage() {
               <li>automatisch verzamelde technische gegevens (IP-adres, apparaatinformatie, cookies),</li>
               <li>analytische gegevens van Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics en Vercel Speed Insights,</li>
               <li>analytische gegevens van Metricool (bezoekstatistieken, verkeersbronnen),</li>
-              <li>gegevens verzameld door Google AdSense voor het weergeven van advertenties (advertentie-ID&apos;s, advertentiecookies, interactiegegevens met advertenties),</li>
+              <li>
+                gegevens verzameld door Google AdSense voor het weergeven van advertenties (advertentie-ID&apos;s, advertentiecookies, interactiegegevens met advertenties, IAB TCF
+                v2.3-toestemmingsreeksen),
+              </li>
               <li>server- en beveiligingslogboeken (bijv. tijdstempels, IP-adres, verzoekheaders).</li>
             </ul>
           </SectionInfo>
@@ -79,15 +82,15 @@ export default function PrivacybeleidPage() {
                 <strong>Beveiliging en vorderingen</strong> - bijhouden van logboeken, voorkomen van misbruik, vaststelling/uitoefening/verdediging van vorderingen (Art. 6 lid 1 sub f AVG).
               </li>
               <li>
-                <strong>Weergave van advertenties</strong> - weergave van op interesses gebaseerde advertenties via Google AdSense (Art. 6 lid 1 sub a AVG - toestemming van de gebruiker via de
-                cookiebanner).
+                <strong>Weergave van advertenties</strong> - weergave van op interesses gebaseerde advertenties via Google AdSense (Art. 6 lid 1 sub a AVG - toestemming van de gebruiker via het Google
+                Privacy & Messaging-dialoogvenster).
               </li>
             </ol>
           </SectionInfo>
 
           <Gap variant="line" size="sm" />
 
-          <SectionInfo title="4. Cookies">
+          <SectionInfo title="4. Cookies en toestemming">
             <p>De website maakt gebruik van cookies voor de volgende doeleinden:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>het waarborgen van de goede werking van de website,</li>
@@ -99,6 +102,22 @@ export default function PrivacybeleidPage() {
               Google AdSense kan DoubleClick-cookies gebruiken om advertenties weer te geven op basis van eerdere bezoeken van de gebruiker aan onze website of andere websites. Externe partijen
               (waaronder Google) gebruiken deze cookies om advertenties weer te geven op basis van browsegeschiedenis.
             </p>
+            <h3 className="h5 mt-4 mb-3">Toestemmingsbeheer (CMP)</h3>
+            <p>
+              Voor het verzamelen en beheren van toestemming voor cookies en gegevensverwerking voor advertentiedoeleinden maakt deze website gebruik van Google Privacy &amp; Messaging &mdash; een
+              gecertificeerd Consent Management Platform (CMP) dat is geïntegreerd met de IAB Transparency and Consent Framework (TCF) versie 2.3.
+            </p>
+            <p>
+              Gebruikers uit de Europese Economische Ruimte (EER), het Verenigd Koninkrijk en Zwitserland worden via een Google-dialoogvenster om toestemming gevraagd. Gebruikers uit Amerikaanse
+              staten met privacywetgeving zien een bericht dat voldoet aan de regelgeving van hun staat (inclusief ondersteuning voor Global Privacy Control-signalen).
+            </p>
+            <p>U kunt uw toestemmingsvoorkeuren op elk moment wijzigen door te klikken op de link &quot;Cookie-instellingen&quot; in de voettekst van de website.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              De website maakt gebruik van Google Consent Mode v2 in geavanceerde modus (Advanced). Voor gebruikers in gereguleerde regio&apos;s zijn alle toestemmingssignalen (ad_storage,
+              ad_user_data, ad_personalization, analytics_storage) standaard ingesteld op &quot;denied&quot; en worden pas bijgewerkt nadat toestemming is verleend. Voor gebruikers in andere
+              regio&apos;s zijn de toestemmingen standaard ingesteld op &quot;granted&quot;.
+            </p>
             <p>
               U kunt gepersonaliseerde advertenties uitschakelen via{' '}
               <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
@@ -109,10 +128,6 @@ export default function PrivacybeleidPage() {
                 aboutads.info
               </a>
               .
-            </p>
-            <p>
-              De website maakt gebruik van Google Consent Mode v2. Dit betekent dat Google-analyse- en advertentiescripts geen gegevens verzamelen totdat de gebruiker toestemming geeft via de
-              cookiebanner.
             </p>
             <p>U kunt cookies beheren in uw browserinstellingen. Het beperken van cookies kan sommige functies van de website beïnvloeden.</p>
           </SectionInfo>

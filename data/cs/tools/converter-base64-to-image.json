@@ -1,0 +1,178 @@
+{
+  "toolKey": "base64ToImage",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník Base64 na obrázek — Base64 obrázek",
+    "description": "Dekódujte řetězce Base64 na obrázky. Náhled a stažení v prohlížeči. Zdarma.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-base64-na-obrazek"
+  },
+  "hero": {
+    "title": "Převodník Base64 na obrázek",
+    "description": "Dekódujte řetězce Base64 na obrázky. Náhled a stažení v prohlížeči. Zdarma.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-base64-na-obrazek",
+      "label": "Převodník Base64 na obrázek"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník Base64 na obrázek",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Dekódujte řetězce Base64 na obrázky. Náhled a stažení v prohlížeči. Zdarma.",
+      "featureList": ["Base64 to obrázek conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert Base64 to obrázek", "Base64 to obrázek", "Free Base64 to obrázek converter"]
+    },
+    "howTo": {
+      "name": "Jak převést Base64 na obrázek",
+      "description": "Dekódujte řetězce Base64 na obrázky. Náhled a stažení v prohlížeči. Zdarma.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Nahrajte Base64 soubor",
+          "text": "Přetáhněte Base64 soubor na převodník nebo klikněte pro procházení."
+        },
+        {
+          "position": 2,
+          "name": "Převést",
+          "text": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči."
+        },
+        {
+          "position": 3,
+          "name": "Stáhněte obrázek",
+          "text": "Stáhněte převedený obrázek soubor."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět Base64 na obrázek?",
+      "html": "<p class=\"text-mid mb-4\">Dekódujte řetězce Base64 na obrázky. Náhled a stažení v prohlížeči. Zdarma.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Base64 to obrázek conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak převést Base64 na obrázek",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Nahrajte Base64 soubor",
+          "description": "Přetáhněte Base64 soubor na převodník nebo klikněte pro procházení.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Převést",
+          "description": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Stáhněte obrázek",
+          "description": "Stáhněte převedený obrázek soubor.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento převodník jiný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Úplné soukromí",
+          "description": "Vaše soubory jsou zpracovány výhradně v prohlížeči. Nic není odesláno na server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez omezení",
+          "description": "Převeďte tolik souborů, kolik potřebujete. Žádné denní limity, žádná omezení."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola kvality",
+          "description": "Upravte nastavení pro dokonalou rovnováhu mezi velikostí souboru a kvalitou."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Okamžitý převod",
+          "description": "Veškeré zpracování probíhá lokálně pomocí moderních API prohlížeče."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o převodu Base64 na obrázek",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Je převod Base64 na obrázek zdarma?",
+          "answer": "Ano, tento převodník je zcela zdarma a bez omezení. Žádná registrace, žádné vodoznaky."
+        },
+        {
+          "question": "Nahrává převodník moje soubory?",
+          "answer": "Ne. Veškeré zpracování probíhá lokálně v prohlížeči. Soubory nikdy neopustí vaše zařízení."
+        },
+        {
+          "question": "Mohu převést více souborů najednou?",
+          "answer": "Ano, převodník podporuje dávkový převod."
+        },
+        {
+          "question": "Funguje převodník na mobilu?",
+          "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Převodník Base64 na obrázek"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

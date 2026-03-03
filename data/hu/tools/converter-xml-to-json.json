@@ -1,0 +1,241 @@
+{
+  "toolKey": "xmlToJson",
+  "locale": "hu",
+  "metadata": {
+    "title": "XML JSON konverter — XML JSON",
+    "description": "XML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/xml-json-konverter"
+  },
+  "hero": {
+    "title": "XML JSON konverter",
+    "description": "XML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/xml-json-konverter",
+      "label": "XML JSON konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "XML JSON konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "XML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.",
+      "featureList": ["XML to JSON conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert XML to JSON", "XML to JSON", "Free XML to JSON converter"]
+    },
+    "howTo": {
+      "name": "Hogyan konvertáljuk XML-t JSON-vé",
+      "description": "XML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Illessze be az adatokat",
+          "text": "Illessze be a XML adatokat a beviteli mezőbe."
+        },
+        {
+          "position": 2,
+          "name": "Konvertálás",
+          "text": "Kattintson a Konvertálás gombra a XML adatok JSON formátumba alakításához."
+        },
+        {
+          "position": 3,
+          "name": "Másolás vagy letöltés",
+          "text": "Másolja a JSON kimenetet, vagy töltse le fájlként."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miért érdemes XML-t JSON-vé konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">XML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "XML to JSON conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan konvertáljuk XML-t JSON-vé",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Illessze be az adatokat",
+          "description": "Illessze be a XML adatokat a beviteli mezőbe.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertálás",
+          "description": "Kattintson a Konvertálás gombra a XML adatok JSON formátumba alakításához.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Másolás vagy letöltés",
+          "description": "Másolja a JSON kimenetet, vagy töltse le fájlként.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a konvertert?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "A fájlok teljes mértékben a böngészőben kerülnek feldolgozásra. Semmi nem kerül szerverre."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Nincs korlát",
+          "description": "Konvertáljon annyi fájlt, amennyit csak akar. Nincs napi limit, nincs méretkorlátozás."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Minőségszabályozás",
+          "description": "Állítsa be a beállításokat a tökéletes egyensúly megtalálásához a fájlméret és a minőség között."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konverzió",
+          "description": "Minden feldolgozás helyben történik modern böngésző API-k segítségével."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "XML vs JSON – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "xml",
+          "name": "XML"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Beágyazott adatok",
+          "values": {
+            "xml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Táblázatos adatok",
+          "values": {
+            "xml": false,
+            "json": false
+          }
+        },
+        {
+          "name": "Sémavalidáció",
+          "values": {
+            "xml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Ember által olvasható",
+          "values": {
+            "xml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "API-szabvány",
+          "values": {
+            "xml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Kompakt szintaxis",
+          "values": {
+            "xml": false,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a XML-JSON konverzióról",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Ingyenes a XML konvertálása JSON-vé?",
+          "answer": "Igen, ez a konverter teljesen ingyenes és korlátlan. Nincs regisztráció, nincs vízjel."
+        },
+        {
+          "question": "Feltölti a fájljaimat a konverter?",
+          "answer": "Nem. Minden feldolgozás helyben történik a böngészőben. A fájlok soha nem hagyják el az eszközét."
+        },
+        {
+          "question": "Konvertálhatok egyszerre több fájlt?",
+          "answer": "Igen, a konverter támogatja a kötegelt konverziót."
+        },
+        {
+          "question": "Működik a konverter mobilon?",
+          "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy javaslatot szeretne tenni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "XML JSON konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

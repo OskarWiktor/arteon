@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs PNG – formaatsvergelijking",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy-compressie",
+          "values": {
+            "webp": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Lossless-compressie",
+          "values": {
+            "webp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparantie (alfakanaal)",
+          "values": {
+            "webp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animatie-ondersteuning",
+          "values": {
+            "webp": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Webbrowserondersteuning",
+          "values": {
+            "webp": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Compact bestandsformaat",
+          "values": {
+            "webp": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "webp": true,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over WebP-naar-PNG-conversie",
       "openByDefault": 0,

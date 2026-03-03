@@ -157,6 +157,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs PNG – porównanie formatów",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "jpg": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "jpg": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "jpg": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "jpg": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "jpg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "jpg": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "jpg": true,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji JPG na PNG",
       "openByDefault": 1,

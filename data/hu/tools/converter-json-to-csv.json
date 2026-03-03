@@ -1,0 +1,241 @@
+{
+  "toolKey": "jsonToCsv",
+  "locale": "hu",
+  "metadata": {
+    "title": "JSON CSV konverter — JSON CSV",
+    "description": "JSON konvertálása CSV formátumba. Automatikus elemzés és formázás. Ingyenes.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/json-csv-konverter"
+  },
+  "hero": {
+    "title": "JSON CSV konverter",
+    "description": "JSON konvertálása CSV formátumba. Automatikus elemzés és formázás. Ingyenes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/json-csv-konverter",
+      "label": "JSON CSV konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JSON CSV konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "JSON konvertálása CSV formátumba. Automatikus elemzés és formázás. Ingyenes.",
+      "featureList": ["JSON to CSV conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert JSON to CSV", "JSON to CSV", "Free JSON to CSV converter"]
+    },
+    "howTo": {
+      "name": "Hogyan konvertáljuk JSON-t CSV-vé",
+      "description": "JSON konvertálása CSV formátumba. Automatikus elemzés és formázás. Ingyenes.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Illessze be az adatokat",
+          "text": "Illessze be a JSON adatokat a beviteli mezőbe."
+        },
+        {
+          "position": 2,
+          "name": "Konvertálás",
+          "text": "Kattintson a Konvertálás gombra a JSON adatok CSV formátumba alakításához."
+        },
+        {
+          "position": 3,
+          "name": "Másolás vagy letöltés",
+          "text": "Másolja a CSV kimenetet, vagy töltse le fájlként."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miért érdemes JSON-t CSV-vé konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">JSON konvertálása CSV formátumba. Automatikus elemzés és formázás. Ingyenes.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JSON to CSV conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan konvertáljuk JSON-t CSV-vé",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Illessze be az adatokat",
+          "description": "Illessze be a JSON adatokat a beviteli mezőbe.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertálás",
+          "description": "Kattintson a Konvertálás gombra a JSON adatok CSV formátumba alakításához.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Másolás vagy letöltés",
+          "description": "Másolja a CSV kimenetet, vagy töltse le fájlként.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a konvertert?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "A fájlok teljes mértékben a böngészőben kerülnek feldolgozásra. Semmi nem kerül szerverre."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Nincs korlát",
+          "description": "Konvertáljon annyi fájlt, amennyit csak akar. Nincs napi limit, nincs méretkorlátozás."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Minőségszabályozás",
+          "description": "Állítsa be a beállításokat a tökéletes egyensúly megtalálásához a fájlméret és a minőség között."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konverzió",
+          "description": "Minden feldolgozás helyben történik modern böngésző API-k segítségével."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JSON vs CSV – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "json",
+          "name": "JSON"
+        },
+        {
+          "id": "csv",
+          "name": "CSV",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Beágyazott adatok",
+          "values": {
+            "json": true,
+            "csv": false
+          }
+        },
+        {
+          "name": "Táblázatos adatok",
+          "values": {
+            "json": false,
+            "csv": true
+          }
+        },
+        {
+          "name": "Sémavalidáció",
+          "values": {
+            "json": true,
+            "csv": false
+          }
+        },
+        {
+          "name": "Ember által olvasható",
+          "values": {
+            "json": true,
+            "csv": true
+          }
+        },
+        {
+          "name": "API-szabvány",
+          "values": {
+            "json": true,
+            "csv": false
+          }
+        },
+        {
+          "name": "Kompakt szintaxis",
+          "values": {
+            "json": true,
+            "csv": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a JSON-CSV konverzióról",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Ingyenes a JSON konvertálása CSV-vé?",
+          "answer": "Igen, ez a konverter teljesen ingyenes és korlátlan. Nincs regisztráció, nincs vízjel."
+        },
+        {
+          "question": "Feltölti a fájljaimat a konverter?",
+          "answer": "Nem. Minden feldolgozás helyben történik a böngészőben. A fájlok soha nem hagyják el az eszközét."
+        },
+        {
+          "question": "Konvertálhatok egyszerre több fájlt?",
+          "answer": "Igen, a konverter támogatja a kötegelt konverziót."
+        },
+        {
+          "question": "Működik a konverter mobilon?",
+          "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy javaslatot szeretne tenni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JSON CSV konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

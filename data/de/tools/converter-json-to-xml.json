@@ -1,0 +1,241 @@
+{
+  "toolKey": "jsonToXml",
+  "locale": "de",
+  "metadata": {
+    "title": "JSON-zu-XML-Konverter — JSON XML",
+    "description": "JSON in XML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/json-zu-xml-konverter"
+  },
+  "hero": {
+    "title": "JSON-zu-XML-Konverter",
+    "description": "JSON in XML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/json-zu-xml-konverter",
+      "label": "JSON-zu-XML-Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JSON-zu-XML-Konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "JSON in XML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
+      "featureList": ["JSON to XML conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert JSON to XML", "JSON to XML", "Free JSON to XML converter"]
+    },
+    "howTo": {
+      "name": "So konvertieren Sie JSON in XML",
+      "description": "JSON in XML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Daten einfügen",
+          "text": "Fügen Sie Ihre JSON-Daten in das Eingabefeld ein."
+        },
+        {
+          "position": 2,
+          "name": "Konvertieren",
+          "text": "Klicken Sie auf Konvertieren, um Ihre JSON-Daten in XML-Format umzuwandeln."
+        },
+        {
+          "position": 3,
+          "name": "Kopieren oder herunterladen",
+          "text": "Kopieren Sie die XML-Ausgabe oder laden Sie sie als Datei herunter."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Warum JSON in XML konvertieren?",
+      "html": "<p class=\"text-mid mb-4\">JSON in XML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JSON to XML conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So konvertieren Sie JSON in XML",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Daten einfügen",
+          "description": "Fügen Sie Ihre JSON-Daten in das Eingabefeld ein.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertieren",
+          "description": "Klicken Sie auf Konvertieren, um Ihre JSON-Daten in XML-Format umzuwandeln.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopieren oder herunterladen",
+          "description": "Kopieren Sie die XML-Ausgabe oder laden Sie sie als Datei herunter.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Vollständige Privatsphäre",
+          "description": "Ihre Dateien werden vollständig in Ihrem Browser verarbeitet. Nichts wird auf einen Server hochgeladen."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Keine Limits",
+          "description": "Konvertieren Sie beliebig viele Dateien. Keine Tageslimits, keine Größenbeschränkungen, keine Wasserzeichen."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Qualitätskontrolle",
+          "description": "Passen Sie die Einstellungen an, um die perfekte Balance zwischen Dateigröße und Qualität zu finden."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Sofortige Konvertierung",
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs — schnell und funktioniert offline."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JSON vs XML – Formatvergleich",
+      "plans": [
+        {
+          "id": "json",
+          "name": "JSON"
+        },
+        {
+          "id": "xml",
+          "name": "XML",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Verschachtelte Daten",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Tabellarische Daten",
+          "values": {
+            "json": false,
+            "xml": false
+          }
+        },
+        {
+          "name": "Schema-Validierung",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Menschenlesbar",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "API-Standard",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Kompakte Syntax",
+          "values": {
+            "json": true,
+            "xml": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zur JSON-zu-XML-Konvertierung",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Ist die Konvertierung von JSON zu XML kostenlos?",
+          "answer": "Ja, dieser Konverter ist völlig kostenlos und ohne Einschränkungen. Keine Registrierung, keine Wasserzeichen."
+        },
+        {
+          "question": "Werden meine Dateien hochgeladen?",
+          "answer": "Nein. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Dateien verlassen nie Ihr Gerät."
+        },
+        {
+          "question": "Kann ich mehrere Dateien gleichzeitig konvertieren?",
+          "answer": "Ja, der Konverter unterstützt die Stapelkonvertierung."
+        },
+        {
+          "question": "Funktioniert der Konverter auf Mobilgeräten?",
+          "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder einen Vorschlag? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JSON-zu-XML-Konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

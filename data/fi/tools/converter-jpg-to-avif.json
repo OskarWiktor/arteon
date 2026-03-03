@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs AVIF – muotovertailu",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Häviöllinen pakkaus",
+          "values": {
+            "jpg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Häviötön pakkaus",
+          "values": {
+            "jpg": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Läpinäkyvyys (alfakanava)",
+          "values": {
+            "jpg": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animaatiotuki",
+          "values": {
+            "jpg": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Selaintuki",
+          "values": {
+            "jpg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Pieni tiedostokoko",
+          "values": {
+            "jpg": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metatiedot (EXIF)",
+          "values": {
+            "jpg": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset JPG-AVIF-muunnoksesta",
       "openByDefault": 0,

@@ -183,6 +183,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "GIF vs WebP – format comparison",
+      "plans": [
+        {
+          "id": "gif",
+          "name": "GIF"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "gif": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "gif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "gif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "gif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "gif": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "gif": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "gif": false,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about GIF to WebP conversion",
       "openByDefault": 0,

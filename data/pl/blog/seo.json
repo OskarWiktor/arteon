@@ -1412,12 +1412,36 @@
             }
           ],
           "rows": [
-            ["Indeksacja", "site:twojadomena.pl", "Wyszukiwarka"],
-            ["Plik robots.txt", "Usuń Disallow: /", "twojadomena.pl/robots.txt"],
-            ["Meta tagi", "Usuń noindex", "Kod źródłowy strony"],
-            ["Sitemap", "Dodaj sitemap.xml", "Google Search Console"],
-            ["Błędy 404", "Napraw przekierowania", "GSC → Stan"],
-            ["Prędkość strony", "LCP < 2,5 s", "PageSpeed Insights"]
+            [
+              "Indeksacja",
+              "site:twojadomena.pl",
+              "Wyszukiwarka"
+            ],
+            [
+              "Plik robots.txt",
+              "Usuń Disallow: /",
+              "twojadomena.pl/robots.txt"
+            ],
+            [
+              "Meta tagi",
+              "Usuń noindex",
+              "Kod źródłowy strony"
+            ],
+            [
+              "Sitemap",
+              "Dodaj sitemap.xml",
+              "Google Search Console"
+            ],
+            [
+              "Błędy 404",
+              "Napraw przekierowania",
+              "GSC → Stan"
+            ],
+            [
+              "Prędkość strony",
+              "LCP < 2,5 s",
+              "PageSpeed Insights"
+            ]
           ],
           "breakAfter": true
         },
@@ -1481,9 +1505,24 @@
             }
           ],
           "rows": [
-            ["LCP", "Largest Contentful Paint", "czas wczytania głównej treści", "&lt; 2,5 s"],
-            ["INP", "Interaction to Next Paint", "czas reakcji na kliknięcia", "&lt; 200 ms"],
-            ["CLS", "Cumulative Layout Shift", "stabilność wizualna", "&lt; 0,1"]
+            [
+              "LCP",
+              "Largest Contentful Paint",
+              "czas wczytania głównej treści",
+              "&lt; 2,5 s"
+            ],
+            [
+              "INP",
+              "Interaction to Next Paint",
+              "czas reakcji na kliknięcia",
+              "&lt; 200 ms"
+            ],
+            [
+              "CLS",
+              "Cumulative Layout Shift",
+              "stabilność wizualna",
+              "&lt; 0,1"
+            ]
           ]
         },
         {
@@ -1529,16 +1568,56 @@
             }
           ],
           "rows": [
-            ["Indeksacja", "Czy strona jest w indeksie (site:twojadomena.pl)?", "Wyszukiwarka Google"],
-            ["Plik robots.txt", "Brak blokady Disallow: /", "twojadomena.pl/robots.txt"],
-            ["Mapa witryny (sitemap.xml)", "Aktualna, zgłoszona do GSC", "Google Search Console"],
-            ["Błędy 404 / 500", "Napraw przekierowania 301", "GSC → Stan"],
-            ["Meta tagi", "Usuń noindex, dodaj canonical", "Kod strony"],
-            ["Szybkość strony", "LCP < 2,5 s, INP < 200 ms", "PageSpeed Insights"],
-            ["Mobile-Friendly", "Popraw czytelność na smartfonach", "Mobile-Friendly Test"],
-            ["Dane strukturalne", "Article / FAQPage / Organization", "Rich Results Test"],
-            ["Duplikaty treści", "Usuń powielone teksty", "Ahrefs / Screaming Frog"],
-            ["Linki zewnętrzne", "Jakość i kontekst", "Ahrefs / Semrush"]
+            [
+              "Indeksacja",
+              "Czy strona jest w indeksie (site:twojadomena.pl)?",
+              "Wyszukiwarka Google"
+            ],
+            [
+              "Plik robots.txt",
+              "Brak blokady Disallow: /",
+              "twojadomena.pl/robots.txt"
+            ],
+            [
+              "Mapa witryny (sitemap.xml)",
+              "Aktualna, zgłoszona do GSC",
+              "Google Search Console"
+            ],
+            [
+              "Błędy 404 / 500",
+              "Napraw przekierowania 301",
+              "GSC → Stan"
+            ],
+            [
+              "Meta tagi",
+              "Usuń noindex, dodaj canonical",
+              "Kod strony"
+            ],
+            [
+              "Szybkość strony",
+              "LCP < 2,5 s, INP < 200 ms",
+              "PageSpeed Insights"
+            ],
+            [
+              "Mobile-Friendly",
+              "Popraw czytelność na smartfonach",
+              "Mobile-Friendly Test"
+            ],
+            [
+              "Dane strukturalne",
+              "Article / FAQPage / Organization",
+              "Rich Results Test"
+            ],
+            [
+              "Duplikaty treści",
+              "Usuń powielone teksty",
+              "Ahrefs / Screaming Frog"
+            ],
+            [
+              "Linki zewnętrzne",
+              "Jakość i kontekst",
+              "Ahrefs / Semrush"
+            ]
           ],
           "breakAfter": true
         },

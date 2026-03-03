@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs PNG – comparación de formatos",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresión con pérdida",
+          "values": {
+            "svg": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Compresión sin pérdida",
+          "values": {
+            "svg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparencia (canal alfa)",
+          "values": {
+            "svg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Soporte de animación",
+          "values": {
+            "svg": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Compatibilidad con navegadores",
+          "values": {
+            "svg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Tamaño de archivo compacto",
+          "values": {
+            "svg": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadatos (EXIF)",
+          "values": {
+            "svg": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Preguntas frecuentes sobre la conversión de SVG a PNG",
       "openByDefault": 0,

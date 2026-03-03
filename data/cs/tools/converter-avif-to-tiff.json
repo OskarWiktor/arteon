@@ -1,0 +1,248 @@
+{
+  "toolKey": "avifToTiff",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník AVIF na TIFF — AVIF TIFF",
+    "description": "Převeďte soubory AVIF do formátu TIFF. Zdarma, soukromě a bez omezení.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-avif-na-tiff"
+  },
+  "hero": {
+    "title": "Převodník AVIF na TIFF",
+    "description": "Převeďte soubory AVIF do formátu TIFF. Zdarma, soukromě a bez omezení.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-avif-na-tiff",
+      "label": "Převodník AVIF na TIFF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník AVIF na TIFF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "ImageConverter",
+      "description": "Převeďte soubory AVIF do formátu TIFF. Zdarma, soukromě a bez omezení.",
+      "featureList": ["AVIF to TIFF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert AVIF to TIFF", "AVIF to TIFF", "Free AVIF to TIFF converter"]
+    },
+    "howTo": {
+      "name": "Jak převést AVIF na TIFF",
+      "description": "Převeďte soubory AVIF do formátu TIFF. Zdarma, soukromě a bez omezení.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Nahrajte AVIF soubor",
+          "text": "Přetáhněte AVIF soubor na převodník nebo klikněte pro procházení."
+        },
+        {
+          "position": 2,
+          "name": "Převést",
+          "text": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči."
+        },
+        {
+          "position": 3,
+          "name": "Stáhněte TIFF",
+          "text": "Stáhněte převedený TIFF soubor."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět AVIF na TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Převeďte soubory AVIF do formátu TIFF. Zdarma, soukromě a bez omezení.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "AVIF to TIFF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak převést AVIF na TIFF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Nahrajte AVIF soubor",
+          "description": "Přetáhněte AVIF soubor na převodník nebo klikněte pro procházení.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Převést",
+          "description": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Stáhněte TIFF",
+          "description": "Stáhněte převedený TIFF soubor.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento převodník jiný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Úplné soukromí",
+          "description": "Vaše soubory jsou zpracovány výhradně v prohlížeči. Nic není odesláno na server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez omezení",
+          "description": "Převeďte tolik souborů, kolik potřebujete. Žádné denní limity, žádná omezení."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola kvality",
+          "description": "Upravte nastavení pro dokonalou rovnováhu mezi velikostí souboru a kvalitou."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Okamžitý převod",
+          "description": "Veškeré zpracování probíhá lokálně pomocí moderních API prohlížeče."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs TIFF – srovnání formátů",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "avif": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "avif": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o převodu AVIF na TIFF",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Je převod AVIF na TIFF zdarma?",
+          "answer": "Ano, tento převodník je zcela zdarma a bez omezení. Žádná registrace, žádné vodoznaky."
+        },
+        {
+          "question": "Nahrává převodník moje soubory?",
+          "answer": "Ne. Veškeré zpracování probíhá lokálně v prohlížeči. Soubory nikdy neopustí vaše zařízení."
+        },
+        {
+          "question": "Mohu převést více souborů najednou?",
+          "answer": "Ano, převodník podporuje dávkový převod."
+        },
+        {
+          "question": "Funguje převodník na mobilu?",
+          "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Převodník AVIF na TIFF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

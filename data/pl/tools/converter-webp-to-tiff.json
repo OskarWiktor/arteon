@@ -177,6 +177,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs TIFF – porównanie formatów",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "webp": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "webp": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "webp": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji WebP na TIFF",
       "openByDefault": 0,

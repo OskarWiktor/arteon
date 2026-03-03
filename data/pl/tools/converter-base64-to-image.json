@@ -1,0 +1,223 @@
+{
+  "toolKey": "base64ToImage",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter Base64 na obraz — odkoduj i pobierz plik",
+    "description": "Odkoduj ciąg Base64 na obraz z podglądem i pobieraniem. Obsługa JPG, PNG, WebP, SVG, GIF. Bez rejestracji — konwersja lokalna.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-base64-na-obraz"
+  },
+  "hero": {
+    "title": "Odkoduj Base64 na obraz z podglądem",
+    "description": "Wklej ciąg Base64 (data URI), a narzędzie wyświetli podgląd obrazu i pozwoli go pobrać jako plik. Konwersja lokalna w przeglądarce.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-base64-na-obraz",
+      "label": "Konwerter Base64 na obraz"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter Base64 na obraz — darmowy, bez rejestracji",
+      "alternateName": ["Dekodowanie Base64 na obraz", "Base64 to image decoder", "Data URI na obraz"],
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Darmowy konwerter Base64 na obraz online. Odkoduj ciąg Base64 na obraz z podglądem w przeglądarce — dane nie są wysyłane na serwer.",
+      "featureList": ["Dekodowanie Base64 na obraz", "Podgląd obrazu w przeglądarce", "Pobieranie jako plik graficzny", "Przetwarzanie lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak odkodować Base64 na obraz",
+      "description": "Instrukcja dekodowania ciągu Base64 na plik graficzny.",
+      "steps": [
+        {
+          "name": "Wklej ciąg Base64",
+          "text": "Wklej ciąg Base64 (z prefiksem data:image/... lub sam ciąg) w pole tekstowe."
+        },
+        {
+          "name": "Zobacz podgląd",
+          "text": "Narzędzie automatycznie wyświetli podgląd odkodowanego obrazu."
+        },
+        {
+          "name": "Pobierz obraz",
+          "text": "Pobierz odkodowany obraz jako plik graficzny."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto dekodować Base64 na obraz?",
+      "html": "<p class=\"text-mid mb-4\">Base64 to sposób zapisu danych binarnych jako tekstu. Obrazy zakodowane w Base64 można spotkać w kodzie źródłowym stron, szablonach e-mail, odpowiedziach API i plikach konfiguracyjnych. Czasem trzeba zobaczyć, jak wygląda zakodowany obraz, lub pobrać go jako normalny plik.</p><p class=\"text-mid mb-4\">Dekodowanie Base64 przydaje się przy debugowaniu kodu, analizie szablonów e-mail, pracy z API zwracającym obrazy jako Base64 lub odzyskiwaniu obrazów z plików JSON/XML.</p><p class=\"text-mid\">Nasz konwerter automatycznie rozpoznaje typ MIME z prefiksu data URI i wyświetla podgląd obrazu w przeglądarce.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter Base64 na obraz – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak odkodować Base64 na obraz?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wklej Base64",
+          "description": "Wklej ciąg Base64 (z prefiksem data:image/... lub bez) w pole tekstowe.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Zobacz podgląd",
+          "description": "Narzędzie automatycznie wyświetli podgląd odkodowanego obrazu.",
+          "icon": "RiEyeLine"
+        },
+        {
+          "title": "3. Pobierz obraz",
+          "description": "Pobierz odkodowany obraz jako plik JPG, PNG, WebP lub inny format.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Base64 vs plik obrazu — różnice",
+      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Base64</th><th class=\"text-dark py-2 text-left font-semibold\">Plik obrazu</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Format</td><td class=\"text-mid py-2 pr-4\">Tekstowy (ciąg znaków)</td><td class=\"text-mid py-2\">Binarny (JPG, PNG, WebP)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Podgląd</td><td class=\"text-mid py-2 pr-4\">Wymaga dekodera</td><td class=\"text-mid py-2\">Natychmiast w każdym programie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Edycja</td><td class=\"text-mid py-2 pr-4\">Niemożliwa</td><td class=\"text-mid py-2\">W dowolnym edytorze graficznym</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Osadzony w kodzie/JSON</td><td class=\"text-mid py-2\">Normalne użycie obrazów</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy warto dekodować Base64 na obraz?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiSearchLine",
+          "title": "Debugowanie kodu",
+          "description": "Sprawdź, jak wygląda obraz zakodowany w CSS, HTML lub odpowiedzi API."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Analiza e-maili",
+          "description": "Szablony e-mail i podpisy Outlook zawierają obrazy Base64 — zobacz ich podgląd."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Odzyskanie obrazu",
+          "description": "Wyciągnij obraz z kodu źródłowego strony, pliku JSON lub bazy danych."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Podgląd API",
+          "description": "API zwróciło obraz jako Base64 — zobacz podgląd i pobierz jako plik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia konwerter Base64 na obraz?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Dane nie opuszczają komputera. Dekodowanie odbywa się w przeglądarce."
+        },
+        {
+          "icon": "RiEyeLine",
+          "title": "Podgląd na żywo",
+          "description": "Obraz jest wyświetlany natychmiast po wklejeniu ciągu Base64."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Wiele formatów",
+          "description": "Automatyczne rozpoznanie JPG, PNG, WebP, SVG, GIF z data URI."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Pobieranie pliku",
+          "description": "Pobierz odkodowany obraz jako normalny plik graficzny."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wskazówki dotyczące dekodowania Base64",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Konwerter przyjmuje zarówno pełny data URI (data:image/png;base64,...) jak i sam ciąg Base64.</li><li>Jeśli brak prefiksu data URI, narzędzie spróbuje automatycznie rozpoznać format obrazu.</li><li>Dekoder obsługuje wszystkie formaty obsługiwane przez przeglądarkę: JPG, PNG, WebP, SVG, GIF, BMP.</li><li>Po dekodowaniu możesz pobrać obraz jako normalny plik graficzny do dalszej edycji.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania o dekodowaniu Base64",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy muszę wklejać prefiks data:image/...?",
+          "answer": "Nie, konwerter przyjmuje zarówno pełny data URI (data:image/png;base64,...) jak i sam ciąg Base64. Jeśli brak prefiksu, narzędzie spróbuje automatycznie rozpoznać format."
+        },
+        {
+          "question": "Czy dane są wysyłane na serwer?",
+          "answer": "Nie. Dekodowanie odbywa się lokalnie w przeglądarce. Dane nie opuszczają komputera."
+        },
+        {
+          "question": "Jakie formaty obrazów obsługuje dekoder?",
+          "answer": "Dekoder obsługuje wszystkie formaty obsługiwane przez przeglądarkę: JPG, PNG, WebP, SVG, GIF, BMP i ICO."
+        },
+        {
+          "question": "Gdzie można spotkać obrazy w Base64?",
+          "answer": "Obrazy Base64 można znaleźć w kodzie źródłowym stron (inline CSS/HTML), szablonach e-mail, odpowiedziach API, podpisach Outlook, plikach JSON/XML i bazach danych."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Konwerter Base64 na obraz – Arteon",
+      "defaultSubject": "Feedback: Konwerter Base64 na obraz"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

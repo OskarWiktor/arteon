@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs AVIF – formaatsvergelijking",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy-compressie",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Lossless-compressie",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Transparantie (alfakanaal)",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animatie-ondersteuning",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Webbrowserondersteuning",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Compact bestandsformaat",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "webp": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over WebP-naar-AVIF-conversie",
       "openByDefault": 0,

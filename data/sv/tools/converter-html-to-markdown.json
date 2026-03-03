@@ -1,0 +1,241 @@
+{
+  "toolKey": "htmlToMarkdown",
+  "locale": "sv",
+  "metadata": {
+    "title": "HTML till Markdown-konverterare — HTML Markdown",
+    "description": "Konvertera HTML till Markdown-format. Automatisk parsning och formatering. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/html-till-markdown-konverterare"
+  },
+  "hero": {
+    "title": "HTML till Markdown-konverterare",
+    "description": "Konvertera HTML till Markdown-format. Automatisk parsning och formatering. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/html-till-markdown-konverterare",
+      "label": "HTML till Markdown-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HTML till Markdown-konverterare",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Konvertera HTML till Markdown-format. Automatisk parsning och formatering. Gratis.",
+      "featureList": ["HTML to Markdown conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
+    },
+    "howTo": {
+      "name": "Hur man konverterar HTML till Markdown",
+      "description": "Konvertera HTML till Markdown-format. Automatisk parsning och formatering. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Klistra in dina data",
+          "text": "Klistra in dina HTML-data i inmatningsfältet."
+        },
+        {
+          "position": 2,
+          "name": "Konvertera",
+          "text": "Klicka på Konvertera för att omvandla dina HTML-data till Markdown-format."
+        },
+        {
+          "position": 3,
+          "name": "Kopiera eller ladda ner",
+          "text": "Kopiera Markdown-utdatan eller ladda ner som fil."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Varför konvertera HTML till Markdown?",
+      "html": "<p class=\"text-mid mb-4\">Konvertera HTML till Markdown-format. Automatisk parsning och formatering. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "HTML to Markdown conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hur man konverterar HTML till Markdown",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Klistra in dina data",
+          "description": "Klistra in dina HTML-data i inmatningsfältet.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertera",
+          "description": "Klicka på Konvertera för att omvandla dina HTML-data till Markdown-format.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopiera eller ladda ner",
+          "description": "Kopiera Markdown-utdatan eller ladda ner som fil.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna konverterare annorlunda?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Dina filer bearbetas helt i din webbläsare. Inget laddas upp till någon server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Inga begränsningar",
+          "description": "Konvertera så många filer du behöver. Inga dagliga gränser, inga storleksbegränsningar."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontroll",
+          "description": "Justera inställningarna för den perfekta balansen mellan filstorlek och kvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Omedelbar konvertering",
+          "description": "All bearbetning sker lokalt med moderna webbläsar-API:er."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HTML vs Markdown – formatjämförelse",
+      "plans": [
+        {
+          "id": "html",
+          "name": "HTML"
+        },
+        {
+          "id": "markdown",
+          "name": "Markdown",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Nästlade data",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Tabelldata",
+          "values": {
+            "html": true,
+            "markdown": true
+          }
+        },
+        {
+          "name": "Schemavalidering",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Läsbart för människor",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        },
+        {
+          "name": "API-standard",
+          "values": {
+            "html": false,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Kompakt syntax",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om HTML till Markdown-konvertering",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Är det gratis att konvertera HTML till Markdown?",
+          "answer": "Ja, denna konverterare är helt gratis och utan begränsningar. Ingen registrering, inga vattenstämplar."
+        },
+        {
+          "question": "Laddar konverteraren upp mina filer?",
+          "answer": "Nej. All bearbetning sker lokalt i din webbläsare. Dina filer lämnar aldrig din enhet."
+        },
+        {
+          "question": "Kan jag konvertera flera filer samtidigt?",
+          "answer": "Ja, konverteraren stöder batchkonvertering."
+        },
+        {
+          "question": "Fungerar konverteraren på mobilen?",
+          "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå något? Skicka oss ett meddelande – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "HTML till Markdown-konverterare"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

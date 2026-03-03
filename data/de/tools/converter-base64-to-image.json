@@ -1,0 +1,178 @@
+{
+  "toolKey": "base64ToImage",
+  "locale": "de",
+  "metadata": {
+    "title": "Base64-zu-Bild-Konverter — Base64 Bild",
+    "description": "Base64-Zeichenketten in Bilder dekodieren. Vorschau und Download im Browser. Kostenlos.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/de/werkzeuge/base64-zu-bild-konverter"
+  },
+  "hero": {
+    "title": "Base64-zu-Bild-Konverter",
+    "description": "Base64-Zeichenketten in Bilder dekodieren. Vorschau und Download im Browser. Kostenlos.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/base64-zu-bild-konverter",
+      "label": "Base64-zu-Bild-Konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Base64-zu-Bild-Konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Base64-Zeichenketten in Bilder dekodieren. Vorschau und Download im Browser. Kostenlos.",
+      "featureList": ["Base64 to Bild conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert Base64 to Bild", "Base64 to Bild", "Free Base64 to Bild converter"]
+    },
+    "howTo": {
+      "name": "So konvertieren Sie Base64 in Bild",
+      "description": "Base64-Zeichenketten in Bilder dekodieren. Vorschau und Download im Browser. Kostenlos.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Base64-String einfügen",
+          "text": "Fügen Sie den Base64-kodierten String in das Eingabefeld ein."
+        },
+        {
+          "position": 2,
+          "name": "Konvertieren",
+          "text": "Klicken Sie auf Konvertieren — die Verarbeitung erfolgt lokal in Ihrem Browser."
+        },
+        {
+          "position": 3,
+          "name": "Bild-Datei herunterladen",
+          "text": "Laden Sie die konvertierte Bild-Datei herunter."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Warum Base64 in Bild konvertieren?",
+      "html": "<p class=\"text-mid mb-4\">Base64-Zeichenketten in Bilder dekodieren. Vorschau und Download im Browser. Kostenlos.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Base64 to Bild conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So konvertieren Sie Base64 in Bild",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Base64-String einfügen",
+          "description": "Fügen Sie den Base64-kodierten String in das Eingabefeld ein.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertieren",
+          "description": "Klicken Sie auf Konvertieren — die Verarbeitung erfolgt lokal in Ihrem Browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Bild-Datei herunterladen",
+          "description": "Laden Sie die konvertierte Bild-Datei herunter.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Vollständige Privatsphäre",
+          "description": "Ihre Dateien werden vollständig in Ihrem Browser verarbeitet. Nichts wird auf einen Server hochgeladen."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Keine Limits",
+          "description": "Konvertieren Sie beliebig viele Dateien. Keine Tageslimits, keine Größenbeschränkungen, keine Wasserzeichen."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Qualitätskontrolle",
+          "description": "Passen Sie die Einstellungen an, um die perfekte Balance zwischen Dateigröße und Qualität zu finden."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Sofortige Konvertierung",
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs — schnell und funktioniert offline."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen zur Base64-zu-Bild-Konvertierung",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Ist die Konvertierung von Base64 zu Bild kostenlos?",
+          "answer": "Ja, dieser Konverter ist völlig kostenlos und ohne Einschränkungen. Keine Registrierung, keine Wasserzeichen."
+        },
+        {
+          "question": "Werden meine Dateien hochgeladen?",
+          "answer": "Nein. Die gesamte Verarbeitung erfolgt lokal in Ihrem Browser. Ihre Dateien verlassen nie Ihr Gerät."
+        },
+        {
+          "question": "Kann ich mehrere Dateien gleichzeitig konvertieren?",
+          "answer": "Ja, der Konverter unterstützt die Stapelkonvertierung."
+        },
+        {
+          "question": "Funktioniert der Konverter auf Mobilgeräten?",
+          "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder einen Vorschlag? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Base64-zu-Bild-Konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

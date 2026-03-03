@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs GIF – formatsammenligning",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Komprimering med tap",
+          "values": {
+            "svg": false,
+            "gif": false
+          }
+        },
+        {
+          "name": "Komprimering uten tap",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Gjennomsiktighet (alfakanal)",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Animasjonsstøtte",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Nettleserstøtte",
+          "values": {
+            "svg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "svg": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "svg": false,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanlige spørsmål om konvertering av SVG til GIF",
       "openByDefault": 0,

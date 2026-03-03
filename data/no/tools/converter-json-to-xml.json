@@ -1,0 +1,241 @@
+{
+  "toolKey": "jsonToXml",
+  "locale": "no",
+  "metadata": {
+    "title": "JSON til XML-konverterer — JSON XML",
+    "description": "Konverter JSON til XML-format. Automatisk parsing og formatering. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/json-til-xml-konverterer"
+  },
+  "hero": {
+    "title": "JSON til XML-konverterer",
+    "description": "Konverter JSON til XML-format. Automatisk parsing og formatering. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/json-til-xml-konverterer",
+      "label": "JSON til XML-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JSON til XML-konverterer",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Konverter JSON til XML-format. Automatisk parsing og formatering. Gratis.",
+      "featureList": ["JSON to XML conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert JSON to XML", "JSON to XML", "Free JSON to XML converter"]
+    },
+    "howTo": {
+      "name": "Slik konverterer du JSON til XML",
+      "description": "Konverter JSON til XML-format. Automatisk parsing og formatering. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lim inn dataene dine",
+          "text": "Lim inn JSON-dataene i inndatafeltet."
+        },
+        {
+          "position": 2,
+          "name": "Konverter",
+          "text": "Klikk på Konverter for å gjøre om JSON-data til XML-format."
+        },
+        {
+          "position": 3,
+          "name": "Kopier eller last ned",
+          "text": "Kopier XML-utdataene eller last ned som fil."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere JSON til XML?",
+      "html": "<p class=\"text-mid mb-4\">Konverter JSON til XML-format. Automatisk parsing og formatering. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JSON to XML conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik konverterer du JSON til XML",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Lim inn dataene dine",
+          "description": "Lim inn JSON-dataene i inndatafeltet.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konverter",
+          "description": "Klikk på Konverter for å gjøre om JSON-data til XML-format.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Kopier eller last ned",
+          "description": "Kopier XML-utdataene eller last ned som fil.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne konvertereren annerledes?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullstendig personvern",
+          "description": "Filene dine behandles helt i nettleseren din. Ingenting lastes opp til noen server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrensninger",
+          "description": "Konverter så mange filer du trenger. Ingen daglige grenser."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontroll",
+          "description": "Juster innstillingene for den perfekte balansen mellom filstørrelse og kvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Umiddelbar konvertering",
+          "description": "All behandling skjer lokalt med moderne nettleser-APIer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JSON vs XML – formatsammenligning",
+      "plans": [
+        {
+          "id": "json",
+          "name": "JSON"
+        },
+        {
+          "id": "xml",
+          "name": "XML",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Nestede data",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Tabelldata",
+          "values": {
+            "json": false,
+            "xml": false
+          }
+        },
+        {
+          "name": "Skjemavalidering",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Lesbart for mennesker",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "API-standard",
+          "values": {
+            "json": true,
+            "xml": true
+          }
+        },
+        {
+          "name": "Kompakt syntaks",
+          "values": {
+            "json": true,
+            "xml": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om JSON til XML-konvertering",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Er konvertering av JSON til XML gratis?",
+          "answer": "Ja, denne konvertereren er helt gratis og uten begrensninger. Ingen registrering, ingen vannmerker."
+        },
+        {
+          "question": "Laster konvertereren opp filene mine?",
+          "answer": "Nei. All behandling skjer lokalt i nettleseren din. Filene dine forlater aldri enheten din."
+        },
+        {
+          "question": "Kan jeg konvertere flere filer samtidig?",
+          "answer": "Ja, konvertereren støtter batchkonvertering."
+        },
+        {
+          "question": "Fungerer konvertereren på mobil?",
+          "answer": "Ja, den fungerer på alle enheter med en moderne nettleser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå noe? Send oss en melding – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JSON til XML-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

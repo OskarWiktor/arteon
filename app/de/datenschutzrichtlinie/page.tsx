@@ -31,7 +31,7 @@ export default function DatenschutzrichtliniePage() {
         <div>
           <h1>Datenschutzrichtlinie</h1>
           <p className="mt-2 text-sm opacity-70">
-            Version: <strong>13.02.2026</strong>
+            Version: <strong>03.03.2026</strong>
           </p>
 
           <Gap size="xs" />
@@ -54,7 +54,7 @@ export default function DatenschutzrichtliniePage() {
               <li>automatisch erhobene technische Daten (IP-Adresse, Geräteinformationen, Cookies),</li>
               <li>Analysedaten von Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics und Vercel Speed Insights,</li>
               <li>Analysedaten von Metricool (Besuchsstatistiken, Traffic-Quellen),</li>
-              <li>von Google AdSense erhobene Daten zur Anzeigenausspielung (Werbe-IDs, Werbe-Cookies, Daten zu Anzeigeninteraktionen),</li>
+              <li>von Google AdSense erhobene Daten zur Anzeigenausspielung (Werbe-IDs, Werbe-Cookies, Daten zu Anzeigeninteraktionen, IAB-TCF-v2.3-Einwilligungszeichenfolgen),</li>
               <li>Server- und Sicherheitsprotokolle (z.{'\u00a0'}B. Zeitstempel, IP-Adresse, Anforderungsheader).</li>
             </ul>
           </SectionInfo>
@@ -79,14 +79,15 @@ export default function DatenschutzrichtliniePage() {
                 <strong>Sicherheit und Ansprüche</strong> - Protokollführung, Missbrauchsprävention, Geltendmachung/Verfolgung/Abwehr von Ansprüchen (Art. 6 Abs. 1 lit. f DSGVO).
               </li>
               <li>
-                <strong>Anzeigenanzeige</strong> - Anzeige interessenbasierter Werbung über Google AdSense (Art. 6 Abs. 1 lit. a DSGVO - Einwilligung des Nutzers über das Cookie-Banner).
+                <strong>Anzeigenanzeige</strong> - Anzeige interessenbasierter Werbung über Google AdSense (Art. 6 Abs. 1 lit. a DSGVO - Einwilligung des Nutzers über den
+                Google-Privacy-&amp;-Messaging-Dialog).
               </li>
             </ol>
           </SectionInfo>
 
           <Gap variant="line" size="sm" />
 
-          <SectionInfo title="4. Cookies">
+          <SectionInfo title="4. Cookies und Einwilligung">
             <p>Die Website verwendet Cookies zu folgenden Zwecken:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>Sicherstellung der ordnungsgemäßen Funktion der Website,</li>
@@ -97,6 +98,22 @@ export default function DatenschutzrichtliniePage() {
             <p>
               Google AdSense kann DoubleClick-Cookies verwenden, um Anzeigen basierend auf früheren Besuchen des Nutzers auf unserer Website oder anderen Websites auszuliefern. Drittanbieter
               (einschließlich Google) verwenden diese Cookies, um Anzeigen basierend auf dem Browserverlauf auszuliefern.
+            </p>
+            <h3 className="h5 mt-4 mb-3">Einwilligungsverwaltung (CMP)</h3>
+            <p>
+              Zur Erhebung und Verwaltung von Einwilligungen für Cookies und Datenverarbeitung zu Werbezwecken verwendet diese Website Google Privacy &amp; Messaging &mdash; eine zertifizierte
+              Consent-Management-Plattform (CMP), die mit dem IAB Transparency and Consent Framework (TCF) Version 2.3 integriert ist.
+            </p>
+            <p>
+              Nutzer aus dem Europäischen Wirtschaftsraum (EWR), dem Vereinigten Königreich und der Schweiz werden über einen Google-Einwilligungsdialog um ihre Zustimmung gebeten. Nutzer aus
+              US-Bundesstaaten mit Datenschutzgesetzen sehen eine entsprechende Meldung gemäß den jeweiligen Vorschriften (einschließlich Unterstützung für Global-Privacy-Control-Signale).
+            </p>
+            <p>Sie können Ihre Einwilligungspräferenzen jederzeit ändern, indem Sie auf den Link &quot;Cookie-Einstellungen&quot; in der Fußzeile der Website klicken.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              Die Website verwendet Google Consent Mode v2 im erweiterten Modus (Advanced). Für Nutzer in regulierten Regionen sind alle Einwilligungssignale (ad_storage, ad_user_data,
+              ad_personalization, analytics_storage) standardmäßig auf &quot;denied&quot; gesetzt und werden erst nach Erteilung der Einwilligung aktualisiert. Für Nutzer in anderen Regionen sind die
+              Einwilligungen standardmäßig auf &quot;granted&quot; gesetzt.
             </p>
             <p>
               Sie können personalisierte Werbung deaktivieren unter{' '}
@@ -109,7 +126,6 @@ export default function DatenschutzrichtliniePage() {
               </a>
               .
             </p>
-            <p>Die Website verwendet Google Consent Mode v2. Das bedeutet, dass Google-Analyse- und Werbeskripte keine Daten erheben, bis der Nutzer im Cookie-Banner seine Einwilligung erteilt.</p>
             <p>Sie können Cookies in Ihren Browsereinstellungen verwalten. Die Einschränkung von Cookies kann einige Funktionen der Website beeinträchtigen.</p>
           </SectionInfo>
 

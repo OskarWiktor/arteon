@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h1>Zasady ochrany osobnich udaju</h1>
           <p className="mt-2 text-sm opacity-70">
-            Verze: <strong>13.02.2026</strong>
+            Verze: <strong>03.03.2026</strong>
           </p>
           <Gap size="xs" />
           <SectionInfo title="1. Spravce dat">
@@ -50,7 +50,9 @@ export default function PrivacyPolicyPage() {
               <li>technicke udaje shromazdovane automaticky (IP adresa, informace o zarizeni, soubory cookie),</li>
               <li>analyticke udaje z Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics a Vercel Speed Insights,</li>
               <li>analyticke udaje z Metricool (statistiky navstev, zdroje provozu),</li>
-              <li>udaje shromazdovane sluzbou Google AdSense za ucelem zobrazeni reklam (reklamni identifikatory, reklamni soubory cookie, udaje o interakci s reklamou),</li>
+              <li>
+                udaje shromazdovane sluzbou Google AdSense za ucelem zobrazeni reklam (reklamni identifikatory, reklamni soubory cookie, udaje o interakci s reklamou, retezce souhlasu IAB TCF v2.3),
+              </li>
               <li>serverove logy a bezpecnostni udalosti (napr. casova razitka, IP adresy, hlavicky pozadavku).</li>
             </ul>
           </SectionInfo>
@@ -73,13 +75,13 @@ export default function PrivacyPolicyPage() {
                 <strong>Bezpecnost a naroky</strong> -- vedeni logu, prevence zneuziti, uplatneni/vymahani/obhajoba naroku (cl. 6 odst. 1 pism. f) GDPR).
               </li>
               <li>
-                <strong>Zobrazeni reklam</strong> -- zobrazeni reklam na zaklade zajmu prostrednictvim Google AdSense (cl. 6 odst. 1 pism. a) GDPR -- souhlas uzivatele udeleny prostrednictvim cookie
-                banneru).
+                <strong>Zobrazeni reklam</strong> -- zobrazeni reklam na zaklade zajmu prostrednictvim Google AdSense (cl. 6 odst. 1 pism. a) GDPR -- souhlas uzivatele udeleny prostrednictvim dialogu
+                Google Privacy & Messaging).
               </li>
             </ol>
           </SectionInfo>
           <Gap variant="line" size="sm" />
-          <SectionInfo title="4. Soubory cookie">
+          <SectionInfo title="4. Soubory cookie a souhlas">
             <p>Webove stranky pouzivaji soubory cookie pro nasledujici ucely:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>zajisteni spravneho fungovani webovych stranek,</li>
@@ -88,6 +90,22 @@ export default function PrivacyPolicyPage() {
               <li>zobrazeni reklam na zaklade zajmu (Google AdSense / DoubleClick).</li>
             </ul>
             <p>Google AdSense muze pouzivat soubory cookie DoubleClick k zobrazovani reklam na zaklade predchozich navstev uzivatele nasich webovych stranek nebo jinych webovych stranek.</p>
+            <h3 className="h5 mt-4 mb-3">Sprava souhlasu (CMP)</h3>
+            <p>
+              Pro sber a spravu souhlasu s cookies a zpracovanim dat pro reklamni ucely vyuziva tento web Google Privacy &amp; Messaging &mdash; certifikovanou platformu pro spravu souhlasu (CMP)
+              integrovanou se standardem IAB Transparency and Consent Framework (TCF) verze 2.3.
+            </p>
+            <p>
+              Uzivatele z Evropskeho hospodarskeho prostoru (EHP), Velke Britanie a Svycarska budou pozadani o souhlas prostrednictvim dialogu Google. Uzivatele ze statu USA s predpisy o ochrane
+              soukromi uvidi zpravu v souladu se statnimi predpisy (vcetne podpory signalu Global Privacy Control).
+            </p>
+            <p>Sve preference souhlasu muzete kdykoli zmenit kliknutim na odkaz &quot;Nastaveni cookies&quot; v zapati webu.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              Web vyuziva Google Consent Mode v2 v pokrocilem rezimu (Advanced). Pro uzivatele z regulovanych regionu jsou vsechny signaly souhlasu (ad_storage, ad_user_data, ad_personalization,
+              analytics_storage) ve vychozim stavu nastaveny na &quot;denied&quot; a aktualizovany az po udeleni souhlasu. Pro uzivatele z ostatnich regionu jsou souhlasy ve vychozim stavu nastaveny
+              na &quot;granted&quot;.
+            </p>
             <p>
               Personalizovane reklamy muzete deaktivovat v{' '}
               <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
@@ -99,7 +117,6 @@ export default function PrivacyPolicyPage() {
               </a>
               .
             </p>
-            <p>Web pouziva Google Consent Mode v2. To znamena, ze analyticke a reklamni skripty Google neshromazduji data, dokud uzivatel neudeli souhlas prostrednictvim cookie banneru.</p>
             <p>Soubory cookie muzete spravovat v nastaveni prohlizece. Omezeni souboru cookie muze ovlivnit nektere funkce webu.</p>
           </SectionInfo>
           <Gap variant="line" size="sm" />

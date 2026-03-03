@@ -1,0 +1,241 @@
+{
+  "toolKey": "htmlToMarkdown",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας HTML σε Markdown — HTML Markdown",
+    "description": "Μετατρέψτε HTML σε μορφή Markdown. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-html-se-markdown"
+  },
+  "hero": {
+    "title": "Μετατροπέας HTML σε Markdown",
+    "description": "Μετατρέψτε HTML σε μορφή Markdown. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-html-se-markdown",
+      "label": "Μετατροπέας HTML σε Markdown"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας HTML σε Markdown",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Μετατρέψτε HTML σε μορφή Markdown. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.",
+      "featureList": ["HTML to Markdown conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
+    },
+    "howTo": {
+      "name": "Πώς να μετατρέψετε HTML σε Markdown",
+      "description": "Μετατρέψτε HTML σε μορφή Markdown. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Επικολλήστε τα δεδομένα",
+          "text": "Επικολλήστε τα δεδομένα HTML στο πεδίο εισαγωγής."
+        },
+        {
+          "position": 2,
+          "name": "Μετατροπή",
+          "text": "Κάντε κλικ στο Μετατροπή για να μετατρέψετε τα δεδομένα HTML σε μορφή Markdown."
+        },
+        {
+          "position": 3,
+          "name": "Αντιγραφή ή λήψη",
+          "text": "Αντιγράψτε την έξοδο Markdown ή κατεβάστε ως αρχείο."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Γιατί να μετατρέψετε HTML σε Markdown;",
+      "html": "<p class=\"text-mid mb-4\">Μετατρέψτε HTML σε μορφή Markdown. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "HTML to Markdown conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να μετατρέψετε HTML σε Markdown",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Επικολλήστε τα δεδομένα",
+          "description": "Επικολλήστε τα δεδομένα HTML στο πεδίο εισαγωγής.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Μετατροπή",
+          "description": "Κάντε κλικ στο Μετατροπή για να μετατρέψετε τα δεδομένα HTML σε μορφή Markdown.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Αντιγραφή ή λήψη",
+          "description": "Αντιγράψτε την έξοδο Markdown ή κατεβάστε ως αρχείο.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα διαφορετικό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Τα αρχεία σας επεξεργάζονται εξ ολοκλήρου στον browser σας. Τίποτα δεν ανεβαίνει σε server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Χωρίς όρια",
+          "description": "Μετατρέψτε όσα αρχεία χρειάζεστε. Χωρίς ημερήσια όρια, χωρίς περιορισμούς."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Έλεγχος ποιότητας",
+          "description": "Ρυθμίστε τις παραμέτρους για την τέλεια ισορροπία μεταξύ μεγέθους και ποιότητας."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Άμεση μετατροπή",
+          "description": "Όλη η επεξεργασία γίνεται τοπικά με σύγχρονα API του browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HTML vs Markdown – σύγκριση μορφών",
+      "plans": [
+        {
+          "id": "html",
+          "name": "HTML"
+        },
+        {
+          "id": "markdown",
+          "name": "Markdown",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ιεραρχικά δεδομένα",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Δεδομένα πίνακα",
+          "values": {
+            "html": true,
+            "markdown": true
+          }
+        },
+        {
+          "name": "Επαλήθευση σχήματος",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Αναγνώσιμο από ανθρώπους",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        },
+        {
+          "name": "Πρότυπο API",
+          "values": {
+            "html": false,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Συμπαγής σύνταξη",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις σχετικά με τη μετατροπή HTML σε Markdown",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Είναι δωρεάν η μετατροπή HTML σε Markdown;",
+          "answer": "Ναι, αυτός ο μετατροπέας είναι εντελώς δωρεάν και χωρίς περιορισμούς. Χωρίς εγγραφή, χωρίς υδατογράφημα."
+        },
+        {
+          "question": "Ανεβάζει ο μετατροπέας τα αρχεία μου;",
+          "answer": "Όχι. Όλη η επεξεργασία γίνεται τοπικά στον browser σας. Τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας."
+        },
+        {
+          "question": "Μπορώ να μετατρέψω πολλαπλά αρχεία ταυτόχρονα;",
+          "answer": "Ναι, ο μετατροπέας υποστηρίζει μαζική μετατροπή."
+        },
+        {
+          "question": "Λειτουργεί ο μετατροπέας σε κινητά;",
+          "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε bug ή θέλετε να προτείνετε κάτι; Στείλτε μας μήνυμα – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Μετατροπέας HTML σε Markdown"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

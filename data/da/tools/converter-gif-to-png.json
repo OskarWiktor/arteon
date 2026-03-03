@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "GIF vs PNG – formatsammenligning",
+      "plans": [
+        {
+          "id": "gif",
+          "name": "GIF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Tabsgivende komprimering",
+          "values": {
+            "gif": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Tabsfri komprimering",
+          "values": {
+            "gif": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Gennemsigtighed (alfakanal)",
+          "values": {
+            "gif": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animationsunderstøttelse",
+          "values": {
+            "gif": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Webbrowserunderstøttelse",
+          "values": {
+            "gif": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "gif": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "gif": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af GIF til PNG",
       "openByDefault": 0,

@@ -1,0 +1,178 @@
+{
+  "toolKey": "base64ToImage",
+  "locale": "no",
+  "metadata": {
+    "title": "Base64 til bilde-konverterer — Base64 bilde",
+    "description": "Dekod Base64-strenger til bilder. Forhåndsvisning og nedlasting i nettleseren. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/no/verktoy/base64-til-bilde-konverterer"
+  },
+  "hero": {
+    "title": "Base64 til bilde-konverterer",
+    "description": "Dekod Base64-strenger til bilder. Forhåndsvisning og nedlasting i nettleseren. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/base64-til-bilde-konverterer",
+      "label": "Base64 til bilde-konverterer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Base64 til bilde-konverterer",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Dekod Base64-strenger til bilder. Forhåndsvisning og nedlasting i nettleseren. Gratis.",
+      "featureList": ["Base64 to bilde conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert Base64 to bilde", "Base64 to bilde", "Free Base64 to bilde converter"]
+    },
+    "howTo": {
+      "name": "Slik konverterer du Base64 til bilde",
+      "description": "Dekod Base64-strenger til bilder. Forhåndsvisning og nedlasting i nettleseren. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Last opp Base64-filen din",
+          "text": "Dra Base64-filen din til konvertereren eller klikk for å bla gjennom."
+        },
+        {
+          "position": 2,
+          "name": "Konverter",
+          "text": "Klikk på Konverter — filene behandles lokalt i nettleseren din."
+        },
+        {
+          "position": 3,
+          "name": "Last ned bilde-filen",
+          "text": "Last ned den konverterte bilde-filen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere Base64 til bilde?",
+      "html": "<p class=\"text-mid mb-4\">Dekod Base64-strenger til bilder. Forhåndsvisning og nedlasting i nettleseren. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Base64 to bilde conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik konverterer du Base64 til bilde",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Last opp Base64-filen din",
+          "description": "Dra Base64-filen din til konvertereren eller klikk for å bla gjennom.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konverter",
+          "description": "Klikk på Konverter — filene behandles lokalt i nettleseren din.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Last ned bilde-filen",
+          "description": "Last ned den konverterte bilde-filen.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne konvertereren annerledes?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullstendig personvern",
+          "description": "Filene dine behandles helt i nettleseren din. Ingenting lastes opp til noen server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrensninger",
+          "description": "Konverter så mange filer du trenger. Ingen daglige grenser."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontroll",
+          "description": "Juster innstillingene for den perfekte balansen mellom filstørrelse og kvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Umiddelbar konvertering",
+          "description": "All behandling skjer lokalt med moderne nettleser-APIer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om Base64 til bilde-konvertering",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Er konvertering av Base64 til bilde gratis?",
+          "answer": "Ja, denne konvertereren er helt gratis og uten begrensninger. Ingen registrering, ingen vannmerker."
+        },
+        {
+          "question": "Laster konvertereren opp filene mine?",
+          "answer": "Nei. All behandling skjer lokalt i nettleseren din. Filene dine forlater aldri enheten din."
+        },
+        {
+          "question": "Kan jeg konvertere flere filer samtidig?",
+          "answer": "Ja, konvertereren støtter batchkonvertering."
+        },
+        {
+          "question": "Fungerer konvertereren på mobil?",
+          "answer": "Ja, den fungerer på alle enheter med en moderne nettleser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå noe? Send oss en melding – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Base64 til bilde-konverterer"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

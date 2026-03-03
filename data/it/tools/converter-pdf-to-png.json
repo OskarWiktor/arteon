@@ -1,0 +1,248 @@
+{
+  "toolKey": "pdfToPng",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore PDF in PNG — PDF PNG",
+    "description": "Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-pdf-in-png"
+  },
+  "hero": {
+    "title": "Convertitore PDF in PNG",
+    "description": "Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-pdf-in-png",
+      "label": "Convertitore PDF in PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore PDF in PNG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.",
+      "featureList": ["PDF to PNG conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PDF to PNG", "PDF to PNG", "Free PDF to PNG converter"]
+    },
+    "howTo": {
+      "name": "Come convertire PDF in PNG",
+      "description": "Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Carica il tuo file PDF",
+          "text": "Trascina il file PDF sul convertitore o clicca per sfogliare."
+        },
+        {
+          "position": 2,
+          "name": "Converti",
+          "text": "Clicca su Converti — i file vengono elaborati localmente nel browser."
+        },
+        {
+          "position": 3,
+          "name": "Scarica il tuo PNG",
+          "text": "Scarica il file PNG convertito."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire PDF in PNG?",
+      "html": "<p class=\"text-mid mb-4\">Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PDF to PNG conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come convertire PDF in PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Carica il tuo file PDF",
+          "description": "Trascina il file PDF sul convertitore o clicca per sfogliare.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Converti",
+          "description": "Clicca su Converti — i file vengono elaborati localmente nel browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Scarica il tuo PNG",
+          "description": "Scarica il file PNG convertito.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "I tuoi file vengono elaborati interamente nel browser. Nulla viene caricato su server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Senza limiti",
+          "description": "Converti quanti file vuoi. Nessun limite giornaliero, nessuna restrizione di dimensione."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Controllo qualità",
+          "description": "Regola le impostazioni per trovare il perfetto equilibrio tra dimensione e qualità."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversione istantanea",
+          "description": "Tutta l'elaborazione avviene localmente con le API moderne del browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs PNG – confronto dei formati",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compressione con perdita",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Compressione senza perdita",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Trasparenza (canale alfa)",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Supporto animazione",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Supporto browser",
+          "values": {
+            "pdf": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Dimensione file compatta",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadati (EXIF)",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da PDF a PNG",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "La conversione da PDF a PNG è gratuita?",
+          "answer": "Sì, questo convertitore è completamente gratuito e senza limiti. Nessuna registrazione, nessun watermark."
+        },
+        {
+          "question": "Il convertitore carica i miei file?",
+          "answer": "No. Tutta l'elaborazione avviene localmente nel browser. I tuoi file non lasciano mai il dispositivo."
+        },
+        {
+          "question": "Posso convertire più file contemporaneamente?",
+          "answer": "Sì, il convertitore supporta la conversione batch."
+        },
+        {
+          "question": "Il convertitore funziona su dispositivi mobili?",
+          "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire qualcosa? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertitore PDF in PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "toolKey": "pdfToPng",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας PDF σε PNG — PDF PNG",
+    "description": "Μετατρέψτε σελίδες PDF σε εικόνες PNG. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-pdf-se-png"
+  },
+  "hero": {
+    "title": "Μετατροπέας PDF σε PNG",
+    "description": "Μετατρέψτε σελίδες PDF σε εικόνες PNG. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-pdf-se-png",
+      "label": "Μετατροπέας PDF σε PNG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας PDF σε PNG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Μετατρέψτε σελίδες PDF σε εικόνες PNG. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.",
+      "featureList": ["PDF to PNG conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PDF to PNG", "PDF to PNG", "Free PDF to PNG converter"]
+    },
+    "howTo": {
+      "name": "Πώς να μετατρέψετε PDF σε PNG",
+      "description": "Μετατρέψτε σελίδες PDF σε εικόνες PNG. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Ανεβάστε το αρχείο PDF",
+          "text": "Σύρετε το αρχείο PDF στον μετατροπέα ή κάντε κλικ για περιήγηση."
+        },
+        {
+          "position": 2,
+          "name": "Μετατροπή",
+          "text": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας."
+        },
+        {
+          "position": 3,
+          "name": "Κατεβάστε το PNG",
+          "text": "Κατεβάστε το μετατρεπόμενο αρχείο PNG."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Γιατί να μετατρέψετε PDF σε PNG;",
+      "html": "<p class=\"text-mid mb-4\">Μετατρέψτε σελίδες PDF σε εικόνες PNG. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PDF to PNG conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να μετατρέψετε PDF σε PNG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Ανεβάστε το αρχείο PDF",
+          "description": "Σύρετε το αρχείο PDF στον μετατροπέα ή κάντε κλικ για περιήγηση.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Μετατροπή",
+          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Κατεβάστε το PNG",
+          "description": "Κατεβάστε το μετατρεπόμενο αρχείο PNG.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα διαφορετικό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Τα αρχεία σας επεξεργάζονται εξ ολοκλήρου στον browser σας. Τίποτα δεν ανεβαίνει σε server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Χωρίς όρια",
+          "description": "Μετατρέψτε όσα αρχεία χρειάζεστε. Χωρίς ημερήσια όρια, χωρίς περιορισμούς."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Έλεγχος ποιότητας",
+          "description": "Ρυθμίστε τις παραμέτρους για την τέλεια ισορροπία μεταξύ μεγέθους και ποιότητας."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Άμεση μετατροπή",
+          "description": "Όλη η επεξεργασία γίνεται τοπικά με σύγχρονα API του browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs PNG – σύγκριση μορφών",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Συμπίεση με απώλειες",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Συμπίεση χωρίς απώλειες",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Διαφάνεια (κανάλι άλφα)",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Υποστήριξη κίνησης",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Υποστήριξη περιηγητών",
+          "values": {
+            "pdf": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Συμπαγές μέγεθος αρχείου",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Μεταδεδομένα (EXIF)",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις σχετικά με τη μετατροπή PDF σε PNG",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Είναι δωρεάν η μετατροπή PDF σε PNG;",
+          "answer": "Ναι, αυτός ο μετατροπέας είναι εντελώς δωρεάν και χωρίς περιορισμούς. Χωρίς εγγραφή, χωρίς υδατογράφημα."
+        },
+        {
+          "question": "Ανεβάζει ο μετατροπέας τα αρχεία μου;",
+          "answer": "Όχι. Όλη η επεξεργασία γίνεται τοπικά στον browser σας. Τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας."
+        },
+        {
+          "question": "Μπορώ να μετατρέψω πολλαπλά αρχεία ταυτόχρονα;",
+          "answer": "Ναι, ο μετατροπέας υποστηρίζει μαζική μετατροπή."
+        },
+        {
+          "question": "Λειτουργεί ο μετατροπέας σε κινητά;",
+          "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε bug ή θέλετε να προτείνετε κάτι; Στείλτε μας μήνυμα – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Μετατροπέας PDF σε PNG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

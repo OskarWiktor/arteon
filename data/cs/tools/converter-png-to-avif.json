@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs AVIF – srovnání formátů",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "png": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "png": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "png": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu PNG na AVIF",
       "openByDefault": 0,

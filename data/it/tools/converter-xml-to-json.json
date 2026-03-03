@@ -1,0 +1,241 @@
+{
+  "toolKey": "xmlToJson",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore XML in JSON — XML JSON",
+    "description": "Converti XML in formato JSON. Analisi e formattazione automatiche. Gratuito.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/it/strumenti/convertitore-xml-in-json"
+  },
+  "hero": {
+    "title": "Convertitore XML in JSON",
+    "description": "Converti XML in formato JSON. Analisi e formattazione automatiche. Gratuito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-xml-in-json",
+      "label": "Convertitore XML in JSON"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore XML in JSON",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Converti XML in formato JSON. Analisi e formattazione automatiche. Gratuito.",
+      "featureList": ["XML to JSON conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert XML to JSON", "XML to JSON", "Free XML to JSON converter"]
+    },
+    "howTo": {
+      "name": "Come convertire XML in JSON",
+      "description": "Converti XML in formato JSON. Analisi e formattazione automatiche. Gratuito.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Incolla i tuoi dati",
+          "text": "Incolla i dati XML nel campo di input."
+        },
+        {
+          "position": 2,
+          "name": "Converti",
+          "text": "Clicca su Converti per trasformare i dati XML in formato JSON."
+        },
+        {
+          "position": 3,
+          "name": "Copia o scarica",
+          "text": "Copia l'output JSON o scaricalo come file."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Perché convertire XML in JSON?",
+      "html": "<p class=\"text-mid mb-4\">Converti XML in formato JSON. Analisi e formattazione automatiche. Gratuito.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "XML to JSON conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come convertire XML in JSON",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Incolla i tuoi dati",
+          "description": "Incolla i dati XML nel campo di input.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Converti",
+          "description": "Clicca su Converti per trasformare i dati XML in formato JSON.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Copia o scarica",
+          "description": "Copia l'output JSON o scaricalo come file.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "I tuoi file vengono elaborati interamente nel browser. Nulla viene caricato su server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Senza limiti",
+          "description": "Converti quanti file vuoi. Nessun limite giornaliero, nessuna restrizione di dimensione."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Controllo qualità",
+          "description": "Regola le impostazioni per trovare il perfetto equilibrio tra dimensione e qualità."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversione istantanea",
+          "description": "Tutta l'elaborazione avviene localmente con le API moderne del browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "XML vs JSON – confronto dei formati",
+      "plans": [
+        {
+          "id": "xml",
+          "name": "XML"
+        },
+        {
+          "id": "json",
+          "name": "JSON",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dati gerarchici",
+          "values": {
+            "xml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Dati tabulari",
+          "values": {
+            "xml": false,
+            "json": false
+          }
+        },
+        {
+          "name": "Validazione schema",
+          "values": {
+            "xml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Leggibile dall'uomo",
+          "values": {
+            "xml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Standard API",
+          "values": {
+            "xml": true,
+            "json": true
+          }
+        },
+        {
+          "name": "Sintassi compatta",
+          "values": {
+            "xml": false,
+            "json": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti sulla conversione da XML a JSON",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "La conversione da XML a JSON è gratuita?",
+          "answer": "Sì, questo convertitore è completamente gratuito e senza limiti. Nessuna registrazione, nessun watermark."
+        },
+        {
+          "question": "Il convertitore carica i miei file?",
+          "answer": "No. Tutta l'elaborazione avviene localmente nel browser. I tuoi file non lasciano mai il dispositivo."
+        },
+        {
+          "question": "Posso convertire più file contemporaneamente?",
+          "answer": "Sì, il convertitore supporta la conversione batch."
+        },
+        {
+          "question": "Il convertitore funziona su dispositivi mobili?",
+          "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire qualcosa? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertitore XML in JSON"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -27,6 +27,7 @@ import { getToolHref } from '@/lib/i18n/tool-registry';
 import { getToolIcon } from '@/lib/tools/icon-registry';
 import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
 import ToolContactForm from './ToolContactForm';
+import RelatedConverters from './RelatedConverters';
 
 const AD_SECTION_INTERVAL = 4;
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
@@ -238,16 +239,37 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
               }
             });
 
+            let relatedInserted = false;
             return data.contentBlocks.map((block, idx) => {
+              const insertRelated = !relatedInserted && block.type === 'faq';
+              if (insertRelated) relatedInserted = true;
+
               const node = renderBlock(block, idx, pageUrl);
-              if (adPositions.has(idx)) {
+              const adNode = adPositions.has(idx) ? (
+                <Fragment key={`ad-after-${idx}`}>
+                  <Gap variant="line" />
+                  <div className="not-prose -mx-[3%] flex justify-center py-4">
+                    <AdSense variant="responsive" />
+                  </div>
+                  <Gap variant="line" />
+                </Fragment>
+              ) : null;
+
+              if (insertRelated) {
+                return (
+                  <Fragment key={`block-rel-${idx}`}>
+                    <RelatedConverters toolKey={data.toolKey} locale={data.locale as Locale} />
+                    {node}
+                    {adNode}
+                  </Fragment>
+                );
+              }
+
+              if (adNode) {
                 return (
                   <Fragment key={`block-ad-${idx}`}>
                     {node}
-                    <Gap variant="line" />
-                    <div className="not-prose flex justify-center">
-                      <AdSense variant="responsive" />
-                    </div>
+                    {adNode}
                   </Fragment>
                 );
               }

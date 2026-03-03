@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs AVIF – formatsammenligning",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Komprimering med tap",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Komprimering uten tap",
+          "values": {
+            "bmp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Gjennomsiktighet (alfakanal)",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animasjonsstøtte",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Nettleserstøtte",
+          "values": {
+            "bmp": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "bmp": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanlige spørsmål om konvertering av BMP til AVIF",
       "openByDefault": 0,

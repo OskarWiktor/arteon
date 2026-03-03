@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs TIFF – comparación de formatos",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresión con pérdida",
+          "values": {
+            "heic": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compresión sin pérdida",
+          "values": {
+            "heic": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Transparencia (canal alfa)",
+          "values": {
+            "heic": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Soporte de animación",
+          "values": {
+            "heic": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Compatibilidad con navegadores",
+          "values": {
+            "heic": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Tamaño de archivo compacto",
+          "values": {
+            "heic": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadatos (EXIF)",
+          "values": {
+            "heic": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Preguntas frecuentes sobre la conversión de HEIC a TIFF",
       "openByDefault": 0,

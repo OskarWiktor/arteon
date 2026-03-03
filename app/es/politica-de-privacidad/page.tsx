@@ -31,7 +31,7 @@ export default function PoliticaDePrivacidadPage() {
         <div>
           <h1>Política de privacidad</h1>
           <p className="mt-2 text-sm opacity-70">
-            Versión: <strong>13.02.2026</strong>
+            Versión: <strong>03.03.2026</strong>
           </p>
 
           <Gap size="xs" />
@@ -54,7 +54,10 @@ export default function PoliticaDePrivacidadPage() {
               <li>datos técnicos recopilados automáticamente (dirección IP, información del dispositivo, cookies),</li>
               <li>datos analíticos de Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics y Vercel Speed Insights,</li>
               <li>datos analíticos de Metricool (estadísticas de visitas, fuentes de tráfico),</li>
-              <li>datos recopilados por Google AdSense para mostrar anuncios (identificadores publicitarios, cookies publicitarias, datos de interacción con anuncios),</li>
+              <li>
+                datos recopilados por Google AdSense para mostrar anuncios (identificadores publicitarios, cookies publicitarias, datos de interacción con anuncios, cadenas de consentimiento IAB TCF
+                v2.3),
+              </li>
               <li>registros del servidor y eventos de seguridad (p. ej., marcas de tiempo, dirección IP, encabezados de solicitud).</li>
             </ul>
           </SectionInfo>
@@ -80,14 +83,14 @@ export default function PoliticaDePrivacidadPage() {
               </li>
               <li>
                 <strong>Visualización de anuncios</strong> - visualización de publicidad basada en intereses a través de Google AdSense (art. 6.1.a del RGPD - consentimiento del usuario a través del
-                banner de cookies).
+                diálogo de Google Privacy & Messaging).
               </li>
             </ol>
           </SectionInfo>
 
           <Gap variant="line" size="sm" />
 
-          <SectionInfo title="4. Cookies">
+          <SectionInfo title="4. Cookies y consentimiento">
             <p>El sitio web utiliza cookies con los siguientes fines:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>garantizar el correcto funcionamiento del sitio web,</li>
@@ -99,6 +102,22 @@ export default function PoliticaDePrivacidadPage() {
               Google AdSense puede utilizar cookies de DoubleClick para mostrar anuncios basados en visitas anteriores del usuario a nuestro sitio web u otros sitios. Los proveedores externos
               (incluido Google) utilizan estas cookies para ofrecer anuncios basados en el historial de navegación.
             </p>
+            <h3 className="h5 mt-4 mb-3">Gestión del consentimiento (CMP)</h3>
+            <p>
+              Para recopilar y gestionar el consentimiento para cookies y el tratamiento de datos con fines publicitarios, este sitio web utiliza Google Privacy &amp; Messaging &mdash; una plataforma
+              de gestión de consentimiento (CMP) certificada, integrada con el estándar IAB Transparency and Consent Framework (TCF) versión 2.3.
+            </p>
+            <p>
+              Los usuarios del Espacio Económico Europeo (EEE), el Reino Unido y Suiza serán invitados a otorgar su consentimiento a través de un diálogo de Google. Los usuarios de estados de EE. UU.
+              con leyes de privacidad verán un mensaje conforme a las regulaciones estatales (incluida la compatibilidad con señales Global Privacy Control).
+            </p>
+            <p>Puede cambiar sus preferencias de consentimiento en cualquier momento haciendo clic en el enlace &quot;Configuración de cookies&quot; en el pie de página del sitio web.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              El sitio web utiliza Google Consent Mode v2 en modo avanzado (Advanced). Para los usuarios de regiones reguladas, todas las señales de consentimiento (ad_storage, ad_user_data,
+              ad_personalization, analytics_storage) están configuradas por defecto como &quot;denied&quot; y se actualizan solo después de otorgar el consentimiento. Para los usuarios de otras
+              regiones, los consentimientos están configurados por defecto como &quot;granted&quot;.
+            </p>
             <p>
               Puede desactivar los anuncios personalizados en{' '}
               <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
@@ -109,10 +128,6 @@ export default function PoliticaDePrivacidadPage() {
                 aboutads.info
               </a>
               .
-            </p>
-            <p>
-              El sitio web utiliza Google Consent Mode v2. Esto significa que los scripts de análisis y publicidad de Google no recopilan datos hasta que el usuario otorga su consentimiento a través
-              del banner de cookies.
             </p>
             <p>Puede gestionar las cookies en la configuración de su navegador. La restricción de cookies puede afectar a algunas funciones del sitio web.</p>
           </SectionInfo>

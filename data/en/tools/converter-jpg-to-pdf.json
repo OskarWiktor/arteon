@@ -1,0 +1,248 @@
+{
+  "toolKey": "jpgToPdf",
+  "locale": "en",
+  "metadata": {
+    "title": "JPG to PDF converter — JPG PDF",
+    "description": "Convert JPG images to PDF documents. Combine multiple files into one PDF. Free, no registration.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/en/tools/jpg-to-pdf-converter"
+  },
+  "hero": {
+    "title": "JPG to PDF converter",
+    "description": "Convert JPG images to PDF documents. Combine multiple files into one PDF. Free, no registration.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/jpg-to-pdf-converter",
+      "label": "JPG to PDF converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "JPG to PDF converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Convert JPG images to PDF documents. Combine multiple files into one PDF. Free, no registration.",
+      "featureList": ["JPG to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert JPG to PDF", "JPG to PDF", "Free JPG to PDF converter"]
+    },
+    "howTo": {
+      "name": "How to convert JPG to PDF",
+      "description": "Convert JPG images to PDF documents. Combine multiple files into one PDF. Free, no registration.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload your JPG file",
+          "text": "Drag and drop your JPG file onto the converter or click to browse."
+        },
+        {
+          "position": 2,
+          "name": "Convert",
+          "text": "Click Convert — files are processed locally in your browser."
+        },
+        {
+          "position": 3,
+          "name": "Download your PDF",
+          "text": "Download the converted PDF file."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Why convert JPG to PDF?",
+      "html": "<p class=\"text-mid mb-4\">Convert JPG images to PDF documents. Combine multiple files into one PDF. Free, no registration.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to convert JPG to PDF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Upload your JPG file",
+          "description": "Drag and drop your JPG file onto the converter or click to browse.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convert",
+          "description": "Click Convert — files are processed locally in your browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Download your PDF",
+          "description": "Download the converted PDF file.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "Your files are processed entirely in your browser. Nothing is uploaded to any server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "No limits",
+          "description": "Convert as many files as you need. No daily limits, no file size restrictions, no watermarks."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Quality control",
+          "description": "Adjust settings to find the perfect balance between file size and quality."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Instant conversion",
+          "description": "All processing happens locally using modern browser APIs — fast and works offline after loading."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs PDF – format comparison",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "jpg": false,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "jpg": false,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "jpg": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions about JPG to PDF conversion",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Is converting JPG to PDF free?",
+          "answer": "Yes, this converter is completely free with no limits. No registration, no watermarks."
+        },
+        {
+          "question": "Does the converter upload my files?",
+          "answer": "No. All processing happens locally in your browser. Your files never leave your device."
+        },
+        {
+          "question": "Can I convert multiple files at once?",
+          "answer": "Yes, the converter supports batch conversion. Add multiple files and convert them all simultaneously."
+        },
+        {
+          "question": "Does the converter work on mobile?",
+          "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "JPG to PDF converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Other tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -119,19 +119,111 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter SVG na PNG?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików SVG naraz." },
-        { "icon": "RiSpeedLine", "title": "Zachowanie przezroczystości", "description": "Jeśli SVG ma przezroczyste tło, przezroczystość zostanie zachowana w wynikowym PNG z pełnym kanałem alfa." },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików SVG naraz."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Zachowanie przezroczystości",
+          "description": "Jeśli SVG ma przezroczyste tło, przezroczystość zostanie zachowana w wynikowym PNG z pełnym kanałem alfa."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs PNG – porównanie formatów",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "svg": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "svg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "svg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "svg": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "svg": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "svg": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "svg": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji SVG na PNG",
@@ -157,10 +249,16 @@
           "question": "Czy mogę konwertować wiele plików naraz?",
           "answer": "Tak. Można dodać dowolną liczbę plików SVG jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
         },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." }
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -169,8 +267,17 @@
       "imageAlt": "Konwerter SVG na PNG – Arteon",
       "defaultSubject": "Feedback: Konwerter SVG na PNG"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

@@ -1,0 +1,248 @@
+{
+  "toolKey": "pngToPdf",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník PNG na PDF — PNG PDF",
+    "description": "Převeďte obrázky PNG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-png-na-pdf"
+  },
+  "hero": {
+    "title": "Převodník PNG na PDF",
+    "description": "Převeďte obrázky PNG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-png-na-pdf",
+      "label": "Převodník PNG na PDF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník PNG na PDF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Převeďte obrázky PNG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
+      "featureList": ["PNG to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PNG to PDF", "PNG to PDF", "Free PNG to PDF converter"]
+    },
+    "howTo": {
+      "name": "Jak převést PNG na PDF",
+      "description": "Převeďte obrázky PNG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Nahrajte PNG soubor",
+          "text": "Přetáhněte PNG soubor na převodník nebo klikněte pro procházení."
+        },
+        {
+          "position": 2,
+          "name": "Převést",
+          "text": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči."
+        },
+        {
+          "position": 3,
+          "name": "Stáhněte PDF",
+          "text": "Stáhněte převedený PDF soubor."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět PNG na PDF?",
+      "html": "<p class=\"text-mid mb-4\">Převeďte obrázky PNG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PNG to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak převést PNG na PDF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Nahrajte PNG soubor",
+          "description": "Přetáhněte PNG soubor na převodník nebo klikněte pro procházení.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Převést",
+          "description": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Stáhněte PDF",
+          "description": "Stáhněte převedený PDF soubor.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento převodník jiný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Úplné soukromí",
+          "description": "Vaše soubory jsou zpracovány výhradně v prohlížeči. Nic není odesláno na server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez omezení",
+          "description": "Převeďte tolik souborů, kolik potřebujete. Žádné denní limity, žádná omezení."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola kvality",
+          "description": "Upravte nastavení pro dokonalou rovnováhu mezi velikostí souboru a kvalitou."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Okamžitý převod",
+          "description": "Veškeré zpracování probíhá lokálně pomocí moderních API prohlížeče."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs PDF – srovnání formátů",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "png": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "png": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "png": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "png": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "png": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "png": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "png": false,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o převodu PNG na PDF",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Je převod PNG na PDF zdarma?",
+          "answer": "Ano, tento převodník je zcela zdarma a bez omezení. Žádná registrace, žádné vodoznaky."
+        },
+        {
+          "question": "Nahrává převodník moje soubory?",
+          "answer": "Ne. Veškeré zpracování probíhá lokálně v prohlížeči. Soubory nikdy neopustí vaše zařízení."
+        },
+        {
+          "question": "Mohu převést více souborů najednou?",
+          "answer": "Ano, převodník podporuje dávkový převod."
+        },
+        {
+          "question": "Funguje převodník na mobilu?",
+          "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Převodník PNG na PDF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

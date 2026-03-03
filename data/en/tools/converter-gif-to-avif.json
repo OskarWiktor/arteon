@@ -191,6 +191,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "GIF vs AVIF – format comparison",
+      "plans": [
+        {
+          "id": "gif",
+          "name": "GIF"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about GIF to AVIF conversion",
       "openByDefault": 0,

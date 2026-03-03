@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs TIFF – srovnání formátů",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "webp": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "webp": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "webp": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "webp": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu WebP na TIFF",
       "openByDefault": 0,

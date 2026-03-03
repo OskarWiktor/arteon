@@ -1,0 +1,248 @@
+{
+  "toolKey": "pdfToPng",
+  "locale": "nl",
+  "metadata": {
+    "title": "PDF naar PNG converter — PDF PNG",
+    "description": "Converteer PDF-pagina's naar PNG-afbeeldingen. Hoge kwaliteit, geen limieten. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/nl/tools/pdf-naar-png-converter"
+  },
+  "hero": {
+    "title": "PDF naar PNG converter",
+    "description": "Converteer PDF-pagina's naar PNG-afbeeldingen. Hoge kwaliteit, geen limieten. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/pdf-naar-png-converter",
+      "label": "PDF naar PNG converter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "PDF naar PNG converter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Converteer PDF-pagina's naar PNG-afbeeldingen. Hoge kwaliteit, geen limieten. Gratis.",
+      "featureList": ["PDF to PNG conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PDF to PNG", "PDF to PNG", "Free PDF to PNG converter"]
+    },
+    "howTo": {
+      "name": "Hoe PDF naar PNG converteren",
+      "description": "Converteer PDF-pagina's naar PNG-afbeeldingen. Hoge kwaliteit, geen limieten. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload je PDF-bestand",
+          "text": "Sleep je PDF-bestand naar de converter of klik om te bladeren."
+        },
+        {
+          "position": 2,
+          "name": "Converteren",
+          "text": "Klik op Converteren — bestanden worden lokaal in je browser verwerkt."
+        },
+        {
+          "position": 3,
+          "name": "Download je PNG",
+          "text": "Download het geconverteerde PNG-bestand."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Waarom PDF naar PNG converteren?",
+      "html": "<p class=\"text-mid mb-4\">Converteer PDF-pagina's naar PNG-afbeeldingen. Hoge kwaliteit, geen limieten. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PDF to PNG conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe PDF naar PNG converteren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Upload je PDF-bestand",
+          "description": "Sleep je PDF-bestand naar de converter of klik om te bladeren.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Converteren",
+          "description": "Klik op Converteren — bestanden worden lokaal in je browser verwerkt.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Download je PNG",
+          "description": "Download het geconverteerde PNG-bestand.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze converter anders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Je bestanden worden volledig in je browser verwerkt. Niets wordt naar een server geüpload."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Geen limieten",
+          "description": "Converteer zoveel bestanden als je nodig hebt. Geen daglimieten, geen beperkingen."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kwaliteitscontrole",
+          "description": "Pas de instellingen aan voor de perfecte balans tussen bestandsgrootte en kwaliteit."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Directe conversie",
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs PNG – formaatsvergelijking",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy-compressie",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Lossless-compressie",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Transparantie (alfakanaal)",
+          "values": {
+            "pdf": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animatie-ondersteuning",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Webbrowserondersteuning",
+          "values": {
+            "pdf": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Compact bestandsformaat",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "pdf": false,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen over PDF naar PNG conversie",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Is het converteren van PDF naar PNG gratis?",
+          "answer": "Ja, deze converter is volledig gratis en zonder limieten. Geen registratie, geen watermerken."
+        },
+        {
+          "question": "Uploadt de converter mijn bestanden?",
+          "answer": "Nee. Alle verwerking vindt lokaal plaats in je browser. Je bestanden verlaten nooit je apparaat."
+        },
+        {
+          "question": "Kan ik meerdere bestanden tegelijk converteren?",
+          "answer": "Ja, de converter ondersteunt batchconversie."
+        },
+        {
+          "question": "Werkt de converter op mobiel?",
+          "answer": "Ja, de converter werkt op elk apparaat met een moderne webbrowser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heb je een idee, een bug gevonden of wil je iets voorstellen? Stuur ons een bericht – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "PDF naar PNG converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

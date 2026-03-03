@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "GIF vs AVIF – formatjämförelse",
+      "plans": [
+        {
+          "id": "gif",
+          "name": "GIF"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Förlustrik komprimering",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Förlustfri komprimering",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Transparens (alfakanal)",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Animationsstöd",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Webbläsarstöd",
+          "values": {
+            "gif": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Kompakt filstorlek",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "gif": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om konvertering av GIF till AVIF",
       "openByDefault": 0,

@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "SVG vs JPG – srovnání formátů",
+      "plans": [
+        {
+          "id": "svg",
+          "name": "SVG"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "svg": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "svg": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "svg": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "svg": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "svg": false,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu SVG na JPG",
       "openByDefault": 0,

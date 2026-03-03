@@ -13,8 +13,14 @@
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
-    "second": { "href": "/narzedzia", "label": "Narzędzia" },
-    "third": { "href": "/narzedzia/konwerter-avif-na-jpg", "label": "Konwerter AVIF na JPG" }
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-avif-na-jpg",
+      "label": "Konwerter AVIF na JPG"
+    }
   },
   "schemas": {
     "software": {
@@ -29,14 +35,26 @@
       "name": "Jak zamienić AVIF na JPG online",
       "description": "Instrukcja konwersji plików AVIF na format JPG.",
       "steps": [
-        { "name": "Dodaj pliki AVIF", "text": "Przeciągnij pliki AVIF na wyznaczone pole albo wybierz je z dysku." },
-        { "name": "Ustaw jakość JPG", "text": "Wybierz jakość za pomocą suwaka (60–95%). Domyślna wartość 85% to dobry kompromis." },
-        { "name": "Pobierz pliki JPG", "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz." }
+        {
+          "name": "Dodaj pliki AVIF",
+          "text": "Przeciągnij pliki AVIF na wyznaczone pole albo wybierz je z dysku."
+        },
+        {
+          "name": "Ustaw jakość JPG",
+          "text": "Wybierz jakość za pomocą suwaka (60–95%). Domyślna wartość 85% to dobry kompromis."
+        },
+        {
+          "name": "Pobierz pliki JPG",
+          "text": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz."
+        }
       ]
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować AVIF na JPG?",
@@ -44,36 +62,146 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter AVIF na JPG – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować AVIF na JPG?",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki AVIF", "description": "Przeciągnij pliki AVIF na wyznaczone pole albo wybierz je z dysku.", "icon": "RiUploadLine" },
-        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości JPG (domyślnie 85%). Dla zdjęć 80–85% to optymalne ustawienie.", "icon": "RiEqualizerLine" },
-        { "title": "3. Pobierz JPG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+        {
+          "title": "1. Dodaj pliki AVIF",
+          "description": "Przeciągnij pliki AVIF na wyznaczone pole albo wybierz je z dysku.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości JPG (domyślnie 85%). Dla zdjęć 80–85% to optymalne ustawienie.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz JPG",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionInfo",
       "title": "Różnice między AVIF a JPG",
       "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">AVIF</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">O 20–50% lepsza niż JPG</td><td class=\"text-mid py-2\">Dobra, stratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">HDR</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Obsługa przeglądarek</td><td class=\"text-mid py-2 pr-4\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"text-mid py-2\">Wszystkie</td></tr><tr><td class=\"text-mid py-2 pr-4\">Kompatybilność z programami</td><td class=\"text-mid py-2 pr-4\">Ograniczona</td><td class=\"text-mid py-2\">Uniwersalna</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Jeśli potrzebujesz zachować przezroczystość, rozważ <a href=\"/narzedzia/konwerter-avif-na-png\">konwersję AVIF na PNG</a> lub <a href=\"/narzedzia/konwerter-avif-na-webp\">AVIF na WebP</a>.</p>"
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter AVIF na JPG?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń." },
-        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala dobrać kompromis między rozmiarem a jakością." },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików naraz. Brak ograniczeń."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Regulacja jakości",
+          "description": "Suwak jakości pozwala dobrać kompromis między rozmiarem a jakością."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs JPG – porównanie formatów",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "avif": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "avif": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "avif": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "avif": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "avif": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "avif": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "avif": true,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji AVIF na JPG",
@@ -91,14 +219,20 @@
           "question": "Co się stanie z przezroczystością?",
           "answer": "JPG nie obsługuje przezroczystości. Przezroczyste obszary zostaną zastąpione białym tłem. Jeśli potrzebujesz zachować przezroczystość, użyj konwersji na PNG lub WebP."
         },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera." },
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce. Pliki nie opuszczają komputera."
+        },
         {
           "question": "Skąd biorą się pliki AVIF?",
           "answer": "AVIF jest używany przez nowoczesne strony internetowe, niektóre aparaty i programy graficzne. Chrome i Firefox mogą zapisywać obrazy w formacie AVIF. Apple używa AVIF w niektórych usługach."
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -107,8 +241,17 @@
       "imageAlt": "Konwerter AVIF na JPG – Arteon",
       "defaultSubject": "Feedback: Konwerter AVIF na JPG"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

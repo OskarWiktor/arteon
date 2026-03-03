@@ -51,7 +51,10 @@
     }
   },
   "contentBlocks": [
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować GIF na JPG?",
@@ -59,19 +62,37 @@
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter GIF na JPG – Arteon"
     },
-    { "type": "gap", "size": "xs" },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
     {
       "type": "sectionSteps",
       "title": "Jak przekonwertować GIF na JPG?",
       "description": "Konwersja GIF na JPG zajmuje kilka sekund:",
       "grid": "three",
       "items": [
-        { "title": "1. Dodaj pliki GIF", "description": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.", "icon": "RiUploadLine" },
-        { "title": "2. Ustaw jakość", "description": "Wybierz poziom jakości JPG (domyślnie 85%). Niższa wartość oznacza mniejszy plik.", "icon": "RiEqualizerLine" },
-        { "title": "3. Pobierz JPG", "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.", "icon": "RiDownloadLine" }
+        {
+          "title": "1. Dodaj pliki GIF",
+          "description": "Przeciągnij pliki GIF na wyznaczone pole albo wybierz je z dysku. Można dodać dowolną liczbę plików naraz.",
+          "icon": "RiUploadLine"
+        },
+        {
+          "title": "2. Ustaw jakość",
+          "description": "Wybierz poziom jakości JPG (domyślnie 85%). Niższa wartość oznacza mniejszy plik.",
+          "icon": "RiEqualizerLine"
+        },
+        {
+          "title": "3. Pobierz JPG",
+          "description": "Po konwersji pobierz pliki pojedynczo lub wszystkie naraz.",
+          "icon": "RiDownloadLine"
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Kiedy konwertować GIF na JPG?",
@@ -99,19 +120,111 @@
         }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter GIF na JPG?",
       "grid": "two",
       "items": [
-        { "icon": "RiShieldCheckLine", "title": "Pełna prywatność", "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer." },
-        { "icon": "RiInfinityFill", "title": "Bez limitu plików", "description": "Można przekonwertować dowolną liczbę plików GIF naraz." },
-        { "icon": "RiSpeedLine", "title": "Regulacja jakości", "description": "Suwak jakości pozwala wybrać kompromis między rozmiarem a jakością wynikowego JPG." },
-        { "icon": "RiDownloadLine", "title": "Szybkie pobieranie", "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem." }
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+        },
+        {
+          "icon": "RiInfinityFill",
+          "title": "Bez limitu plików",
+          "description": "Można przekonwertować dowolną liczbę plików GIF naraz."
+        },
+        {
+          "icon": "RiSpeedLine",
+          "title": "Regulacja jakości",
+          "description": "Suwak jakości pozwala wybrać kompromis między rozmiarem a jakością wynikowego JPG."
+        },
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szybkie pobieranie",
+          "description": "Przekonwertowane pliki można pobrać pojedynczo lub wszystkie naraz jednym kliknięciem."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "GIF vs JPG – porównanie formatów",
+      "plans": [
+        {
+          "id": "gif",
+          "name": "GIF"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "gif": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "gif": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "gif": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "gif": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "gif": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "gif": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "gif": false,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji GIF na JPG",
@@ -125,15 +238,24 @@
           "question": "Co się stanie z przezroczystością?",
           "answer": "JPG nie obsługuje przezroczystości. Przezroczyste obszary GIF-a zostaną zastąpione białym tłem. Jeśli potrzebujesz zachować przezroczystość, użyj <a href=\"/narzedzia/konwerter-gif-na-png\">konwertera GIF na PNG</a>."
         },
-        { "question": "Jaki poziom jakości wybrać?", "answer": "Dla miniaturek i podglądów 80–85% to wystarczająca wartość. Dla grafik z ostrymi krawędziami (tekst, diagramy) lepiej wybrać 90–95%." },
+        {
+          "question": "Jaki poziom jakości wybrać?",
+          "answer": "Dla miniaturek i podglądów 80–85% to wystarczająca wartość. Dla grafik z ostrymi krawędziami (tekst, diagramy) lepiej wybrać 90–95%."
+        },
         {
           "question": "Czy mogę konwertować wiele plików naraz?",
           "answer": "Tak. Można dodać dowolną liczbę plików GIF jednocześnie. Wszystkie zostaną przekonwertowane, a wyniki można pobrać pojedynczo lub wszystkie naraz."
         },
-        { "question": "Czy pliki są wysyłane na serwer?", "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera." }
+        {
+          "question": "Czy pliki są wysyłane na serwer?",
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera."
+        }
       ]
     },
-    { "type": "gap", "variant": "line" },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
@@ -142,8 +264,17 @@
       "imageAlt": "Konwerter GIF na JPG – Arteon",
       "defaultSubject": "Feedback: Konwerter GIF na JPG"
     },
-    { "type": "gap", "variant": "line" },
-    { "type": "toolsCarousel", "title": "Sprawdź inne narzędzia" },
-    { "type": "gap", "size": "sm" }
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
   ]
 }

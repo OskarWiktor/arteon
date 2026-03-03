@@ -1,0 +1,178 @@
+{
+  "toolKey": "imageToBase64",
+  "locale": "el",
+  "metadata": {
+    "title": "Μετατροπέας εικόνα σε Base64 — εικόνα Base64",
+    "description": "Κωδικοποιήστε εικόνες σε Base64. Αντιγράψτε έτοιμο κώδικα για CSS ή HTML. Δωρεάν.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/el/ergaleia/metatropeas-eikona-se-base64"
+  },
+  "hero": {
+    "title": "Μετατροπέας εικόνα σε Base64",
+    "description": "Κωδικοποιήστε εικόνες σε Base64. Αντιγράψτε έτοιμο κώδικα για CSS ή HTML. Δωρεάν.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-eikona-se-base64",
+      "label": "Μετατροπέας εικόνα σε Base64"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Μετατροπέας εικόνα σε Base64",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Κωδικοποιήστε εικόνες σε Base64. Αντιγράψτε έτοιμο κώδικα για CSS ή HTML. Δωρεάν.",
+      "featureList": ["εικόνα to Base64 conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert εικόνα to Base64", "εικόνα to Base64", "Free εικόνα to Base64 converter"]
+    },
+    "howTo": {
+      "name": "Πώς να μετατρέψετε εικόνα σε Base64",
+      "description": "Κωδικοποιήστε εικόνες σε Base64. Αντιγράψτε έτοιμο κώδικα για CSS ή HTML. Δωρεάν.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Ανεβάστε το αρχείο εικόνα",
+          "text": "Σύρετε το αρχείο εικόνα στον μετατροπέα ή κάντε κλικ για περιήγηση."
+        },
+        {
+          "position": 2,
+          "name": "Μετατροπή",
+          "text": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας."
+        },
+        {
+          "position": 3,
+          "name": "Κατεβάστε το Base64",
+          "text": "Κατεβάστε το μετατρεπόμενο αρχείο Base64."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Γιατί να μετατρέψετε εικόνα σε Base64;",
+      "html": "<p class=\"text-mid mb-4\">Κωδικοποιήστε εικόνες σε Base64. Αντιγράψτε έτοιμο κώδικα για CSS ή HTML. Δωρεάν.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "εικόνα to Base64 conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να μετατρέψετε εικόνα σε Base64",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Ανεβάστε το αρχείο εικόνα",
+          "description": "Σύρετε το αρχείο εικόνα στον μετατροπέα ή κάντε κλικ για περιήγηση.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Μετατροπή",
+          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Κατεβάστε το Base64",
+          "description": "Κατεβάστε το μετατρεπόμενο αρχείο Base64.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα διαφορετικό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Τα αρχεία σας επεξεργάζονται εξ ολοκλήρου στον browser σας. Τίποτα δεν ανεβαίνει σε server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Χωρίς όρια",
+          "description": "Μετατρέψτε όσα αρχεία χρειάζεστε. Χωρίς ημερήσια όρια, χωρίς περιορισμούς."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Έλεγχος ποιότητας",
+          "description": "Ρυθμίστε τις παραμέτρους για την τέλεια ισορροπία μεταξύ μεγέθους και ποιότητας."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Άμεση μετατροπή",
+          "description": "Όλη η επεξεργασία γίνεται τοπικά με σύγχρονα API του browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις σχετικά με τη μετατροπή εικόνα σε Base64",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Είναι δωρεάν η μετατροπή εικόνα σε Base64;",
+          "answer": "Ναι, αυτός ο μετατροπέας είναι εντελώς δωρεάν και χωρίς περιορισμούς. Χωρίς εγγραφή, χωρίς υδατογράφημα."
+        },
+        {
+          "question": "Ανεβάζει ο μετατροπέας τα αρχεία μου;",
+          "answer": "Όχι. Όλη η επεξεργασία γίνεται τοπικά στον browser σας. Τα αρχεία σας δεν φεύγουν ποτέ από τη συσκευή σας."
+        },
+        {
+          "question": "Μπορώ να μετατρέψω πολλαπλά αρχεία ταυτόχρονα;",
+          "answer": "Ναι, ο μετατροπέας υποστηρίζει μαζική μετατροπή."
+        },
+        {
+          "question": "Λειτουργεί ο μετατροπέας σε κινητά;",
+          "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε bug ή θέλετε να προτείνετε κάτι; Στείλτε μας μήνυμα – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Μετατροπέας εικόνα σε Base64"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

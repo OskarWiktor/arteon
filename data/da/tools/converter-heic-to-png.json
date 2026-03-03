@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs PNG – formatsammenligning",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "png",
+          "name": "PNG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Tabsgivende komprimering",
+          "values": {
+            "heic": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Tabsfri komprimering",
+          "values": {
+            "heic": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Gennemsigtighed (alfakanal)",
+          "values": {
+            "heic": true,
+            "png": true
+          }
+        },
+        {
+          "name": "Animationsunderstøttelse",
+          "values": {
+            "heic": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Webbrowserunderstøttelse",
+          "values": {
+            "heic": false,
+            "png": true
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "heic": true,
+            "png": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "heic": true,
+            "png": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af HEIC til PNG",
       "openByDefault": 0,

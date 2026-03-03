@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs GIF – comparación de formatos",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "gif",
+          "name": "GIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresión con pérdida",
+          "values": {
+            "jpg": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Compresión sin pérdida",
+          "values": {
+            "jpg": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Transparencia (canal alfa)",
+          "values": {
+            "jpg": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Soporte de animación",
+          "values": {
+            "jpg": false,
+            "gif": true
+          }
+        },
+        {
+          "name": "Compatibilidad con navegadores",
+          "values": {
+            "jpg": true,
+            "gif": true
+          }
+        },
+        {
+          "name": "Tamaño de archivo compacto",
+          "values": {
+            "jpg": true,
+            "gif": false
+          }
+        },
+        {
+          "name": "Metadatos (EXIF)",
+          "values": {
+            "jpg": true,
+            "gif": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Preguntas frecuentes sobre la conversión de JPG a GIF",
       "openByDefault": 0,

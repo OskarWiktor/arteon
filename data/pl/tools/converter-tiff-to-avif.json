@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "TIFF vs AVIF – porównanie formatów",
+      "plans": [
+        {
+          "id": "tiff",
+          "name": "TIFF"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Kompresja stratna",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Kompresja bezstratna",
+          "values": {
+            "tiff": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Przezroczystość (kanał alfa)",
+          "values": {
+            "tiff": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Obsługa animacji",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Obsługa w przeglądarkach",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Mały rozmiar pliku",
+          "values": {
+            "tiff": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadane (EXIF)",
+          "values": {
+            "tiff": true,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji TIFF na AVIF",
       "openByDefault": 0,

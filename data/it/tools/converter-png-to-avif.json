@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "PNG vs AVIF – confronto dei formati",
+      "plans": [
+        {
+          "id": "png",
+          "name": "PNG"
+        },
+        {
+          "id": "avif",
+          "name": "AVIF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compressione con perdita",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Compressione senza perdita",
+          "values": {
+            "png": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Trasparenza (canale alfa)",
+          "values": {
+            "png": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Supporto animazione",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Supporto browser",
+          "values": {
+            "png": true,
+            "avif": true
+          }
+        },
+        {
+          "name": "Dimensione file compatta",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        },
+        {
+          "name": "Metadati (EXIF)",
+          "values": {
+            "png": false,
+            "avif": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da PNG a AVIF",
       "openByDefault": 0,

@@ -1,0 +1,248 @@
+{
+  "toolKey": "jpgToPdf",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor JPG în PDF — JPG PDF",
+    "description": "Convertește imagini JPG în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-jpg-in-pdf"
+  },
+  "hero": {
+    "title": "Convertor JPG în PDF",
+    "description": "Convertește imagini JPG în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-jpg-in-pdf",
+      "label": "Convertor JPG în PDF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor JPG în PDF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Convertește imagini JPG în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
+      "featureList": ["JPG to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert JPG to PDF", "JPG to PDF", "Free JPG to PDF converter"]
+    },
+    "howTo": {
+      "name": "Cum convertiți JPG în PDF",
+      "description": "Convertește imagini JPG în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Încărcați fișierul JPG",
+          "text": "Trageți fișierul JPG pe convertor sau faceți clic pentru a răsfoi."
+        },
+        {
+          "position": 2,
+          "name": "Convertiți",
+          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
+        },
+        {
+          "position": 3,
+          "name": "Descărcați PDF",
+          "text": "Descărcați fișierul PDF convertit."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți JPG în PDF?",
+      "html": "<p class=\"text-mid mb-4\">Convertește imagini JPG în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JPG to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum convertiți JPG în PDF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Încărcați fișierul JPG",
+          "description": "Trageți fișierul JPG pe convertor sau faceți clic pentru a răsfoi.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertiți",
+          "description": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Descărcați PDF",
+          "description": "Descărcați fișierul PDF convertit.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele sunt procesate integral în browser. Nimic nu este trimis pe server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți oricâte fișiere aveți nevoie. Fără limite zilnice, fără restricții."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control al calității",
+          "description": "Ajustați setările pentru echilibrul perfect între dimensiune și calitate."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JPG vs PDF – comparație de formate",
+      "plans": [
+        {
+          "id": "jpg",
+          "name": "JPG"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "jpg": false,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "jpg": false,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "jpg": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "jpg": true,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia JPG în PDF",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Conversia din JPG în PDF este gratuită?",
+          "answer": "Da, acest convertor este complet gratuit și fără limite. Fără înregistrare, fără filigran."
+        },
+        {
+          "question": "Convertorul încarcă fișierele mele?",
+          "answer": "Nu. Toată procesarea are loc local în browser. Fișierele nu părăsesc niciodată dispozitivul."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul acceptă conversia în lot."
+        },
+        {
+          "question": "Convertorul funcționează pe mobil?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați ceva? Trimiteți-ne un mesaj – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertor JPG în PDF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

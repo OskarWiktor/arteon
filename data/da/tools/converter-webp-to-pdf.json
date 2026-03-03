@@ -1,0 +1,248 @@
+{
+  "toolKey": "webpToPdf",
+  "locale": "da",
+  "metadata": {
+    "title": "WebP til PDF-konverter — WebP PDF",
+    "description": "Konverter WebP-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/da/vaerktojer/webp-til-pdf-konverter"
+  },
+  "hero": {
+    "title": "WebP til PDF-konverter",
+    "description": "Konverter WebP-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/webp-til-pdf-konverter",
+      "label": "WebP til PDF-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "WebP til PDF-konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Konverter WebP-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+      "featureList": ["WebP to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert WebP to PDF", "WebP to PDF", "Free WebP to PDF converter"]
+    },
+    "howTo": {
+      "name": "Sådan konverterer du WebP til PDF",
+      "description": "Konverter WebP-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Upload din WebP-fil",
+          "text": "Træk din WebP-fil til konverteren eller klik for at gennemse."
+        },
+        {
+          "position": 2,
+          "name": "Konverter",
+          "text": "Klik på Konverter — filerne behandles lokalt i din browser."
+        },
+        {
+          "position": 3,
+          "name": "Download din PDF",
+          "text": "Download den konverterede PDF-fil."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvorfor konvertere WebP til PDF?",
+      "html": "<p class=\"text-mid mb-4\">Konverter WebP-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "WebP to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Sådan konverterer du WebP til PDF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Upload din WebP-fil",
+          "description": "Træk din WebP-fil til konverteren eller klik for at gennemse.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konverter",
+          "description": "Klik på Konverter — filerne behandles lokalt i din browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Download din PDF",
+          "description": "Download den konverterede PDF-fil.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad gør denne konverter anderledes?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatlivsbeskyttelse",
+          "description": "Dine filer behandles helt i din browser. Intet uploades til nogen server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Ingen begrænsninger",
+          "description": "Konverter så mange filer, som du har brug for. Ingen daglige grænser."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontrol",
+          "description": "Juster indstillingerne for den perfekte balance mellem filstørrelse og kvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Øjeblikkelig konvertering",
+          "description": "Al behandling sker lokalt med moderne browser-API'er."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "WebP vs PDF – formatsammenligning",
+      "plans": [
+        {
+          "id": "webp",
+          "name": "WebP"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Tabsgivende komprimering",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Tabsfri komprimering",
+          "values": {
+            "webp": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Gennemsigtighed (alfakanal)",
+          "values": {
+            "webp": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Animationsunderstøttelse",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Webbrowserunderstøttelse",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kompakt filstørrelse",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "webp": true,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål om WebP til PDF-konvertering",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Er konvertering af WebP til PDF gratis?",
+          "answer": "Ja, denne konverter er helt gratis og uden begrænsninger. Ingen registrering, ingen vandmærker."
+        },
+        {
+          "question": "Uploader konverteren mine filer?",
+          "answer": "Nej. Al behandling sker lokalt i din browser. Dine filer forlader aldrig din enhed."
+        },
+        {
+          "question": "Kan jeg konvertere flere filer på én gang?",
+          "answer": "Ja, konverteren understøtter batchkonvertering."
+        },
+        {
+          "question": "Virker konverteren på mobil?",
+          "answer": "Ja, den virker på enhver enhed med en moderne webbrowser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå noget? Send os en besked – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "WebP til PDF-konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

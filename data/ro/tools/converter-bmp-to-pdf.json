@@ -1,0 +1,248 @@
+{
+  "toolKey": "bmpToPdf",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor BMP în PDF — BMP PDF",
+    "description": "Convertește imagini BMP în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-bmp-in-pdf"
+  },
+  "hero": {
+    "title": "Convertor BMP în PDF",
+    "description": "Convertește imagini BMP în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-bmp-in-pdf",
+      "label": "Convertor BMP în PDF"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor BMP în PDF",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Convertește imagini BMP în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
+      "featureList": ["BMP to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert BMP to PDF", "BMP to PDF", "Free BMP to PDF converter"]
+    },
+    "howTo": {
+      "name": "Cum convertiți BMP în PDF",
+      "description": "Convertește imagini BMP în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Încărcați fișierul BMP",
+          "text": "Trageți fișierul BMP pe convertor sau faceți clic pentru a răsfoi."
+        },
+        {
+          "position": 2,
+          "name": "Convertiți",
+          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
+        },
+        {
+          "position": 3,
+          "name": "Descărcați PDF",
+          "text": "Descărcați fișierul PDF convertit."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți BMP în PDF?",
+      "html": "<p class=\"text-mid mb-4\">Convertește imagini BMP în documente PDF. Combină mai multe fișiere într-un PDF. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "BMP to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum convertiți BMP în PDF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Încărcați fișierul BMP",
+          "description": "Trageți fișierul BMP pe convertor sau faceți clic pentru a răsfoi.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertiți",
+          "description": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Descărcați PDF",
+          "description": "Descărcați fișierul PDF convertit.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele sunt procesate integral în browser. Nimic nu este trimis pe server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți oricâte fișiere aveți nevoie. Fără limite zilnice, fără restricții."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control al calității",
+          "description": "Ajustați setările pentru echilibrul perfect între dimensiune și calitate."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "BMP vs PDF – comparație de formate",
+      "plans": [
+        {
+          "id": "bmp",
+          "name": "BMP"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "bmp": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "bmp": false,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "bmp": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "bmp": false,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia BMP în PDF",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Conversia din BMP în PDF este gratuită?",
+          "answer": "Da, acest convertor este complet gratuit și fără limite. Fără înregistrare, fără filigran."
+        },
+        {
+          "question": "Convertorul încarcă fișierele mele?",
+          "answer": "Nu. Toată procesarea are loc local în browser. Fișierele nu părăsesc niciodată dispozitivul."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul acceptă conversia în lot."
+        },
+        {
+          "question": "Convertorul funcționează pe mobil?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați ceva? Trimiteți-ne un mesaj – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertor BMP în PDF"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

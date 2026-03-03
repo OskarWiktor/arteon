@@ -183,6 +183,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs JPG – format comparison",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Lossy compression",
+          "values": {
+            "heic": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Lossless compression",
+          "values": {
+            "heic": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Transparency (alpha channel)",
+          "values": {
+            "heic": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Animation support",
+          "values": {
+            "heic": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Web browser support",
+          "values": {
+            "heic": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Compact file size",
+          "values": {
+            "heic": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "heic": true,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about HEIC to JPG conversion",
       "openByDefault": 0,

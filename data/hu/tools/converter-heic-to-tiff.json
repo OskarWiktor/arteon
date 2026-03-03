@@ -182,6 +182,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs TIFF – formátum-összehasonlítás",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "tiff",
+          "name": "TIFF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Veszteséges tömörítés",
+          "values": {
+            "heic": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Veszteségmentes tömörítés",
+          "values": {
+            "heic": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Átlátszóság (alfa csatorna)",
+          "values": {
+            "heic": true,
+            "tiff": true
+          }
+        },
+        {
+          "name": "Animáció támogatás",
+          "values": {
+            "heic": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Böngészőtámogatás",
+          "values": {
+            "heic": false,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Kis fájlméret",
+          "values": {
+            "heic": true,
+            "tiff": false
+          }
+        },
+        {
+          "name": "Metaadatok (EXIF)",
+          "values": {
+            "heic": true,
+            "tiff": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a HEIC-TIFF konvertálásról",
       "openByDefault": 0,

@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <h1>Πολιτική απορρήτου</h1>
           <p className="mt-2 text-sm opacity-70">
-            Έκδοση: <strong>13.02.2026</strong>
+            Έκδοση: <strong>03.03.2026</strong>
           </p>
           <Gap size="xs" />
           <SectionInfo title="1. Υπεύθυνος επεξεργασίας">
@@ -50,7 +50,7 @@ export default function PrivacyPolicyPage() {
               <li>αυτόματα συλλεγόμενα τεχνικά δεδομένα (IP, δεδομένα συσκευής, cookies),</li>
               <li>αναλυτικά δεδομένα από Google Analytics 4, Ahrefs Web Analytics, Vercel Analytics και Vercel Speed Insights,</li>
               <li>αναλυτικά δεδομένα από Metricool (στατιστικά επισκέψεων, πηγές κίνησης),</li>
-              <li>δεδομένα που συλλέγει το Google AdSense για προβολή διαφημίσεων (αναγνωριστικά, cookies διαφημίσεων, δεδομένα αλληλεπίδρασης),</li>
+              <li>δεδομένα που συλλέγει το Google AdSense για προβολή διαφημίσεων (αναγνωριστικά, cookies διαφημίσεων, δεδομένα αλληλεπίδρασης, συμβολοσειρές συγκατάθεσης IAB TCF v2.3),</li>
               <li>αρχεία καταγραφής διακομιστή και συμβάντα ασφαλείας (π.χ. χρονοσφραγίδες, IP, κεφαλίδες αιτημάτων).</li>
             </ul>
           </SectionInfo>
@@ -73,12 +73,12 @@ export default function PrivacyPolicyPage() {
                 <strong>Ασφάλεια</strong> — αρχεία καταγραφής, πρόληψη κατάχρησης (Άρθρο 6(1)(στ) GDPR).
               </li>
               <li>
-                <strong>Προβολή διαφημίσεων</strong> — μέσω Google AdSense (Άρθρο 6(1)(α) GDPR — συγκατάθεση).
+                <strong>Προβολή διαφημίσεων</strong> — μέσω Google AdSense (Άρθρο 6(1)(α) GDPR — συγκατάθεση μέσω Google Privacy & Messaging).
               </li>
             </ol>
           </SectionInfo>
           <Gap variant="line" size="sm" />
-          <SectionInfo title="4. Cookies">
+          <SectionInfo title="4. Cookies και συγκατάθεση">
             <p>Η ιστοσελίδα χρησιμοποιεί cookies για:</p>
             <ul className="list-disc space-y-1 pl-6">
               <li>σωστή λειτουργία,</li>
@@ -86,6 +86,22 @@ export default function PrivacyPolicyPage() {
               <li>σκοπούς μάρκετινγκ,</li>
               <li>προβολή διαφημίσεων (Google AdSense / DoubleClick).</li>
             </ul>
+            <h3 className="h5 mt-4 mb-3">Διαχείριση συγκατάθεσης (CMP)</h3>
+            <p>
+              Για τη συλλογή και διαχείριση συγκαταθέσεων για cookies και επεξεργασία δεδομένων για διαφημιστικούς σκοπούς, η ιστοσελίδα χρησιμοποιεί το Google Privacy &amp; Messaging &mdash; μια
+              πιστοποιημένη πλατφόρμα διαχείρισης συγκατάθεσης (CMP) ενσωματωμένη με το πρότυπο IAB Transparency and Consent Framework (TCF) έκδοση 2.3.
+            </p>
+            <p>
+              Οι χρήστες από τον Ευρωπαϊκό Οικονομικό Χώρο (ΕΟΧ), το Ηνωμένο Βασίλειο και την Ελβετία θα κληθούν να δώσουν τη συγκατάθεσή τους μέσω διαλόγου Google. Οι χρήστες από πολιτείες των ΗΠΑ με
+              νομοθεσία περί απορρήτου θα δουν ένα μήνυμα σύμφωνο με τους κανονισμούς (συμπεριλαμβανομένης της υποστήριξης σημάτων Global Privacy Control).
+            </p>
+            <p>Μπορείτε να αλλάξετε τις προτιμήσεις συγκατάθεσης ανά πάσα στιγμή κάνοντας κλικ στον σύνδεσμο &quot;Ρυθμίσεις cookies&quot; στο υποσέλιδο.</p>
+            <h3 className="h5 mt-4 mb-3">Google Consent Mode v2</h3>
+            <p>
+              Η ιστοσελίδα χρησιμοποιεί Google Consent Mode v2 σε προηγμένη λειτουργία (Advanced). Για χρήστες σε ρυθμιζόμενες περιοχές, όλα τα σήματα συγκατάθεσης (ad_storage, ad_user_data,
+              ad_personalization, analytics_storage) είναι από προεπιλογή &quot;denied&quot; και ενημερώνονται μόνο μετά τη συγκατάθεση. Για χρήστες σε άλλες περιοχές, οι συγκαταθέσεις είναι από
+              προεπιλογή &quot;granted&quot;.
+            </p>
             <p>
               Μπορείτε να απενεργοποιήσετε εξατομικευμένες διαφημίσεις στις{' '}
               <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" className="inline-link">
@@ -97,7 +113,6 @@ export default function PrivacyPolicyPage() {
               </a>
               .
             </p>
-            <p>Η σελίδα χρησιμοποιεί Google Consent Mode v2. Τα scripts δεν συλλέγουν δεδομένα μέχρι τη συγκατάθεση μέσω banner cookies.</p>
             <p>Μπορείτε να διαχειριστείτε τα cookies στις ρυθμίσεις του προγράμματος περιήγησης.</p>
           </SectionInfo>
           <Gap variant="line" size="sm" />

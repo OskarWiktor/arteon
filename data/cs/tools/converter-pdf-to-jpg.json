@@ -1,0 +1,248 @@
+{
+  "toolKey": "pdfToJpg",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník PDF na JPG — PDF JPG",
+    "description": "Převeďte stránky PDF na obrázky JPG. Vysoká kvalita, bez omezení. Zdarma.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-pdf-na-jpg"
+  },
+  "hero": {
+    "title": "Převodník PDF na JPG",
+    "description": "Převeďte stránky PDF na obrázky JPG. Vysoká kvalita, bez omezení. Zdarma.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-pdf-na-jpg",
+      "label": "Převodník PDF na JPG"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník PDF na JPG",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Převeďte stránky PDF na obrázky JPG. Vysoká kvalita, bez omezení. Zdarma.",
+      "featureList": ["PDF to JPG conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert PDF to JPG", "PDF to JPG", "Free PDF to JPG converter"]
+    },
+    "howTo": {
+      "name": "Jak převést PDF na JPG",
+      "description": "Převeďte stránky PDF na obrázky JPG. Vysoká kvalita, bez omezení. Zdarma.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Nahrajte PDF soubor",
+          "text": "Přetáhněte PDF soubor na převodník nebo klikněte pro procházení."
+        },
+        {
+          "position": 2,
+          "name": "Převést",
+          "text": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči."
+        },
+        {
+          "position": 3,
+          "name": "Stáhněte JPG",
+          "text": "Stáhněte převedený JPG soubor."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět PDF na JPG?",
+      "html": "<p class=\"text-mid mb-4\">Převeďte stránky PDF na obrázky JPG. Vysoká kvalita, bez omezení. Zdarma.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "PDF to JPG conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak převést PDF na JPG",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Nahrajte PDF soubor",
+          "description": "Přetáhněte PDF soubor na převodník nebo klikněte pro procházení.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Převést",
+          "description": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Stáhněte JPG",
+          "description": "Stáhněte převedený JPG soubor.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento převodník jiný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Úplné soukromí",
+          "description": "Vaše soubory jsou zpracovány výhradně v prohlížeči. Nic není odesláno na server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez omezení",
+          "description": "Převeďte tolik souborů, kolik potřebujete. Žádné denní limity, žádná omezení."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola kvality",
+          "description": "Upravte nastavení pro dokonalou rovnováhu mezi velikostí souboru a kvalitou."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Okamžitý převod",
+          "description": "Veškeré zpracování probíhá lokálně pomocí moderních API prohlížeče."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "PDF vs JPG – srovnání formátů",
+      "plans": [
+        {
+          "id": "pdf",
+          "name": "PDF"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Ztrátová komprese",
+          "values": {
+            "pdf": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Bezeztrátová komprese",
+          "values": {
+            "pdf": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Průhlednost (alfa kanál)",
+          "values": {
+            "pdf": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Podpora animací",
+          "values": {
+            "pdf": false,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Podpora webových prohlížečů",
+          "values": {
+            "pdf": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Malá velikost souboru",
+          "values": {
+            "pdf": false,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "pdf": false,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o převodu PDF na JPG",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Je převod PDF na JPG zdarma?",
+          "answer": "Ano, tento převodník je zcela zdarma a bez omezení. Žádná registrace, žádné vodoznaky."
+        },
+        {
+          "question": "Nahrává převodník moje soubory?",
+          "answer": "Ne. Veškeré zpracování probíhá lokálně v prohlížeči. Soubory nikdy neopustí vaše zařízení."
+        },
+        {
+          "question": "Mohu převést více souborů najednou?",
+          "answer": "Ano, převodník podporuje dávkový převod."
+        },
+        {
+          "question": "Funguje převodník na mobilu?",
+          "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Převodník PDF na JPG"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

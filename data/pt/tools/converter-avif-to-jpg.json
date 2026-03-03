@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "AVIF vs JPG – comparação de formatos",
+      "plans": [
+        {
+          "id": "avif",
+          "name": "AVIF"
+        },
+        {
+          "id": "jpg",
+          "name": "JPG",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compressão com perda",
+          "values": {
+            "avif": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Compressão sem perda",
+          "values": {
+            "avif": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Transparência (canal alfa)",
+          "values": {
+            "avif": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Suporte a animação",
+          "values": {
+            "avif": true,
+            "jpg": false
+          }
+        },
+        {
+          "name": "Suporte em navegadores",
+          "values": {
+            "avif": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Tamanho de ficheiro compacto",
+          "values": {
+            "avif": true,
+            "jpg": true
+          }
+        },
+        {
+          "name": "Metadados (EXIF)",
+          "values": {
+            "avif": true,
+            "jpg": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de AVIF para JPG",
       "openByDefault": 0,

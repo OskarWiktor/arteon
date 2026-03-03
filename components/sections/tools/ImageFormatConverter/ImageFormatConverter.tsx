@@ -15,7 +15,7 @@ import { useDictionary } from '@/lib/LocaleContext';
 import { downloadBlob } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 
-import FormatSelector from './FormatSelector';
+import { FormatSelector } from '@/components/sections/tools/FormatPicker';
 import { useConversionQueue } from './useConversionQueue';
 import { FORMAT_EXTENSION, FORMAT_LABELS, hasQualitySlider, type ImageFormatConverterProps } from './types';
 

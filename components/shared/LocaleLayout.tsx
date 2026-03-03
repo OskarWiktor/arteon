@@ -1,5 +1,5 @@
+import ConsentListener from '@/components/shared/ConsentListener';
 import Footer from '@/components/shared/Footer';
-import LazyCookieConsent from '@/components/shared/LazyCookieConsent';
 import Navigation from '@/components/shared/Navigation';
 import SkipToContent from '@/components/shared/SkipToContent';
 import { LocaleProvider } from '@/lib/LocaleContext';
@@ -17,7 +17,7 @@ export default async function LocaleLayout({ locale, children }: LocaleLayoutPro
 
   return (
     <LocaleProvider value={locale} config={config} dict={clientDict}>
-      <LazyCookieConsent translations={fullDict.cookie} />
+      <ConsentListener />
       <SkipToContent label={fullDict.skipToContent} />
 
       <Navigation />

@@ -1,0 +1,241 @@
+{
+  "toolKey": "markdownToHtml",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník Markdown na HTML — Markdown HTML",
+    "description": "Převeďte Markdown do formátu HTML. Automatické parsování a formátování. Zdarma.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/cs/nastroje/prevodnik-markdown-na-html"
+  },
+  "hero": {
+    "title": "Převodník Markdown na HTML",
+    "description": "Převeďte Markdown do formátu HTML. Automatické parsování a formátování. Zdarma.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-markdown-na-html",
+      "label": "Převodník Markdown na HTML"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník Markdown na HTML",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Převeďte Markdown do formátu HTML. Automatické parsování a formátování. Zdarma.",
+      "featureList": ["Markdown to HTML conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert Markdown to HTML", "Markdown to HTML", "Free Markdown to HTML converter"]
+    },
+    "howTo": {
+      "name": "Jak převést Markdown na HTML",
+      "description": "Převeďte Markdown do formátu HTML. Automatické parsování a formátování. Zdarma.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Vložte data",
+          "text": "Vložte Markdown data do vstupního pole."
+        },
+        {
+          "position": 2,
+          "name": "Převést",
+          "text": "Klikněte na Převést pro transformaci Markdown dat do formátu HTML."
+        },
+        {
+          "position": 3,
+          "name": "Zkopírovat nebo stáhnout",
+          "text": "Zkopírujte výstup HTML nebo stáhněte jako soubor."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Proč převádět Markdown na HTML?",
+      "html": "<p class=\"text-mid mb-4\">Převeďte Markdown do formátu HTML. Automatické parsování a formátování. Zdarma.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Markdown to HTML conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak převést Markdown na HTML",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Vložte data",
+          "description": "Vložte Markdown data do vstupního pole.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Převést",
+          "description": "Klikněte na Převést pro transformaci Markdown dat do formátu HTML.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Zkopírovat nebo stáhnout",
+          "description": "Zkopírujte výstup HTML nebo stáhněte jako soubor.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento převodník jiný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Úplné soukromí",
+          "description": "Vaše soubory jsou zpracovány výhradně v prohlížeči. Nic není odesláno na server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Bez omezení",
+          "description": "Převeďte tolik souborů, kolik potřebujete. Žádné denní limity, žádná omezení."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kontrola kvality",
+          "description": "Upravte nastavení pro dokonalou rovnováhu mezi velikostí souboru a kvalitou."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Okamžitý převod",
+          "description": "Veškeré zpracování probíhá lokálně pomocí moderních API prohlížeče."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Markdown vs HTML – srovnání formátů",
+      "plans": [
+        {
+          "id": "markdown",
+          "name": "Markdown"
+        },
+        {
+          "id": "html",
+          "name": "HTML",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Vnořená data",
+          "values": {
+            "markdown": false,
+            "html": true
+          }
+        },
+        {
+          "name": "Tabulární data",
+          "values": {
+            "markdown": true,
+            "html": true
+          }
+        },
+        {
+          "name": "Validace schématu",
+          "values": {
+            "markdown": false,
+            "html": true
+          }
+        },
+        {
+          "name": "Lidsky čitelné",
+          "values": {
+            "markdown": true,
+            "html": false
+          }
+        },
+        {
+          "name": "API standard",
+          "values": {
+            "markdown": false,
+            "html": false
+          }
+        },
+        {
+          "name": "Kompaktní syntaxe",
+          "values": {
+            "markdown": true,
+            "html": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o převodu Markdown na HTML",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Je převod Markdown na HTML zdarma?",
+          "answer": "Ano, tento převodník je zcela zdarma a bez omezení. Žádná registrace, žádné vodoznaky."
+        },
+        {
+          "question": "Nahrává převodník moje soubory?",
+          "answer": "Ne. Veškeré zpracování probíhá lokálně v prohlížeči. Soubory nikdy neopustí vaše zařízení."
+        },
+        {
+          "question": "Mohu převést více souborů najednou?",
+          "answer": "Ano, převodník podporuje dávkový převod."
+        },
+        {
+          "question": "Funguje převodník na mobilu?",
+          "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Převodník Markdown na HTML"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

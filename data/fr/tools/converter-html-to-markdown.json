@@ -1,0 +1,241 @@
+{
+  "toolKey": "htmlToMarkdown",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur HTML en Markdown — HTML Markdown",
+    "description": "Convertissez HTML en format Markdown. Analyse et formatage automatiques. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/fr/outils/convertisseur-html-en-markdown"
+  },
+  "hero": {
+    "title": "Convertisseur HTML en Markdown",
+    "description": "Convertissez HTML en format Markdown. Analyse et formatage automatiques. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-html-en-markdown",
+      "label": "Convertisseur HTML en Markdown"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur HTML en Markdown",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Convertissez HTML en format Markdown. Analyse et formatage automatiques. Gratuit.",
+      "featureList": ["HTML to Markdown conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HTML to Markdown", "HTML to Markdown", "Free HTML to Markdown converter"]
+    },
+    "howTo": {
+      "name": "Comment convertir HTML en Markdown",
+      "description": "Convertissez HTML en format Markdown. Analyse et formatage automatiques. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Collez vos données",
+          "text": "Collez vos données HTML dans le champ de saisie."
+        },
+        {
+          "position": 2,
+          "name": "Convertir",
+          "text": "Cliquez sur Convertir pour transformer vos données HTML en format Markdown."
+        },
+        {
+          "position": 3,
+          "name": "Copier ou télécharger",
+          "text": "Copiez la sortie Markdown ou téléchargez-la."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Pourquoi convertir HTML en Markdown ?",
+      "html": "<p class=\"text-mid mb-4\">Convertissez HTML en format Markdown. Analyse et formatage automatiques. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "HTML to Markdown conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment convertir HTML en Markdown",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Collez vos données",
+          "description": "Collez vos données HTML dans le champ de saisie.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertir",
+          "description": "Cliquez sur Convertir pour transformer vos données HTML en format Markdown.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Copier ou télécharger",
+          "description": "Copiez la sortie Markdown ou téléchargez-la.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu'est-ce qui rend ce convertisseur différent ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Vos fichiers sont traités entièrement dans votre navigateur. Rien n'est envoyé sur un serveur."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Sans limites",
+          "description": "Convertissez autant de fichiers que nécessaire. Pas de limites quotidiennes, pas de restrictions."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Contrôle qualité",
+          "description": "Ajustez les paramètres pour trouver l'équilibre parfait entre taille et qualité."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversion instantanée",
+          "description": "Tout le traitement se fait localement avec les API modernes du navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HTML vs Markdown – comparaison des formats",
+      "plans": [
+        {
+          "id": "html",
+          "name": "HTML"
+        },
+        {
+          "id": "markdown",
+          "name": "Markdown",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Données hiérarchiques",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Données tabulaires",
+          "values": {
+            "html": true,
+            "markdown": true
+          }
+        },
+        {
+          "name": "Validation de schéma",
+          "values": {
+            "html": true,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Lisible par un humain",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        },
+        {
+          "name": "Standard API",
+          "values": {
+            "html": false,
+            "markdown": false
+          }
+        },
+        {
+          "name": "Syntaxe compacte",
+          "values": {
+            "html": false,
+            "markdown": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes sur la conversion HTML en Markdown",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "La conversion HTML en Markdown est-elle gratuite ?",
+          "answer": "Oui, ce convertisseur est entièrement gratuit et sans limites. Pas d'inscription, pas de filigrane."
+        },
+        {
+          "question": "Le convertisseur envoie-t-il mes fichiers ?",
+          "answer": "Non. Tout le traitement se fait localement dans votre navigateur. Vos fichiers ne quittent jamais votre appareil."
+        },
+        {
+          "question": "Puis-je convertir plusieurs fichiers à la fois ?",
+          "answer": "Oui, le convertisseur prend en charge la conversion par lot."
+        },
+        {
+          "question": "Le convertisseur fonctionne-t-il sur mobile ?",
+          "answer": "Oui, il fonctionne sur tout appareil disposant d'un navigateur web moderne."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertisseur HTML en Markdown"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Autres outils"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

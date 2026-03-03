@@ -174,6 +174,76 @@
       "variant": "line"
     },
     {
+      "type": "sectionFeatureComparison",
+      "title": "TIFF vs WebP – comparație de formate",
+      "plans": [
+        {
+          "id": "tiff",
+          "name": "TIFF"
+        },
+        {
+          "id": "webp",
+          "name": "WebP",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Compresie cu pierderi",
+          "values": {
+            "tiff": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Compresie fără pierderi",
+          "values": {
+            "tiff": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Transparență (canal alfa)",
+          "values": {
+            "tiff": true,
+            "webp": true
+          }
+        },
+        {
+          "name": "Suport pentru animații",
+          "values": {
+            "tiff": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Suport în browsere",
+          "values": {
+            "tiff": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Dimensiune compactă",
+          "values": {
+            "tiff": false,
+            "webp": true
+          }
+        },
+        {
+          "name": "Metadate (EXIF)",
+          "values": {
+            "tiff": true,
+            "webp": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia TIFF în WebP",
       "openByDefault": 0,

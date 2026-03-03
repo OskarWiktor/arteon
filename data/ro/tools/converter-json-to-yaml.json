@@ -1,0 +1,241 @@
+{
+  "toolKey": "jsonToYaml",
+  "locale": "ro",
+  "metadata": {
+    "title": "Convertor JSON în YAML — JSON YAML",
+    "description": "Convertește JSON în format YAML. Parsare și formatare automată. Gratuit.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/ro/instrumente/convertor-json-in-yaml"
+  },
+  "hero": {
+    "title": "Convertor JSON în YAML",
+    "description": "Convertește JSON în format YAML. Parsare și formatare automată. Gratuit.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-json-in-yaml",
+      "label": "Convertor JSON în YAML"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertor JSON în YAML",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Convertește JSON în format YAML. Parsare și formatare automată. Gratuit.",
+      "featureList": ["JSON to YAML conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert JSON to YAML", "JSON to YAML", "Free JSON to YAML converter"]
+    },
+    "howTo": {
+      "name": "Cum convertiți JSON în YAML",
+      "description": "Convertește JSON în format YAML. Parsare și formatare automată. Gratuit.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Lipiți datele",
+          "text": "Lipiți datele JSON în câmpul de introducere."
+        },
+        {
+          "position": 2,
+          "name": "Convertiți",
+          "text": "Faceți clic pe Convertiți pentru a transforma datele JSON în format YAML."
+        },
+        {
+          "position": 3,
+          "name": "Copiați sau descărcați",
+          "text": "Copiați rezultatul YAML sau descărcați-l ca fișier."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "De ce să convertiți JSON în YAML?",
+      "html": "<p class=\"text-mid mb-4\">Convertește JSON în format YAML. Parsare și formatare automată. Gratuit.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "JSON to YAML conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum convertiți JSON în YAML",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Lipiți datele",
+          "description": "Lipiți datele JSON în câmpul de introducere.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Convertiți",
+          "description": "Faceți clic pe Convertiți pentru a transforma datele JSON în format YAML.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Copiați sau descărcați",
+          "description": "Copiați rezultatul YAML sau descărcați-l ca fișier.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor diferit?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate totală",
+          "description": "Fișierele sunt procesate integral în browser. Nimic nu este trimis pe server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Fără limite",
+          "description": "Convertiți oricâte fișiere aveți nevoie. Fără limite zilnice, fără restricții."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Control al calității",
+          "description": "Ajustați setările pentru echilibrul perfect între dimensiune și calitate."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Conversie instantanee",
+          "description": "Toată procesarea are loc local cu API-uri moderne ale browserului."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "JSON vs YAML – comparație de formate",
+      "plans": [
+        {
+          "id": "json",
+          "name": "JSON"
+        },
+        {
+          "id": "yaml",
+          "name": "YAML",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Date ierarhice",
+          "values": {
+            "json": true,
+            "yaml": true
+          }
+        },
+        {
+          "name": "Date tabulare",
+          "values": {
+            "json": false,
+            "yaml": false
+          }
+        },
+        {
+          "name": "Validare schemă",
+          "values": {
+            "json": true,
+            "yaml": false
+          }
+        },
+        {
+          "name": "Lizibil pentru oameni",
+          "values": {
+            "json": true,
+            "yaml": true
+          }
+        },
+        {
+          "name": "Standard API",
+          "values": {
+            "json": true,
+            "yaml": false
+          }
+        },
+        {
+          "name": "Sintaxă compactă",
+          "values": {
+            "json": true,
+            "yaml": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente despre conversia JSON în YAML",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Conversia din JSON în YAML este gratuită?",
+          "answer": "Da, acest convertor este complet gratuit și fără limite. Fără înregistrare, fără filigran."
+        },
+        {
+          "question": "Convertorul încarcă fișierele mele?",
+          "answer": "Nu. Toată procesarea are loc local în browser. Fișierele nu părăsesc niciodată dispozitivul."
+        },
+        {
+          "question": "Pot converti mai multe fișiere simultan?",
+          "answer": "Da, convertorul acceptă conversia în lot."
+        },
+        {
+          "question": "Convertorul funcționează pe mobil?",
+          "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați ceva? Trimiteți-ne un mesaj – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Convertor JSON în YAML"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

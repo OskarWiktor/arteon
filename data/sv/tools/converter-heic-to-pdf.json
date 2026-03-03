@@ -1,0 +1,248 @@
+{
+  "toolKey": "heicToPdf",
+  "locale": "sv",
+  "metadata": {
+    "title": "HEIC till PDF-konverterare — HEIC PDF",
+    "description": "Konvertera HEIC-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/sv/verktyg/heic-till-pdf-konverterare"
+  },
+  "hero": {
+    "title": "HEIC till PDF-konverterare",
+    "description": "Konvertera HEIC-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/heic-till-pdf-konverterare",
+      "label": "HEIC till PDF-konverterare"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEIC till PDF-konverterare",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "FileConverter",
+      "description": "Konvertera HEIC-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
+      "featureList": ["HEIC to PDF conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert HEIC to PDF", "HEIC to PDF", "Free HEIC to PDF converter"]
+    },
+    "howTo": {
+      "name": "Hur man konverterar HEIC till PDF",
+      "description": "Konvertera HEIC-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Ladda upp din HEIC-fil",
+          "text": "Dra din HEIC-fil till konverteraren eller klicka för att bläddra."
+        },
+        {
+          "position": 2,
+          "name": "Konvertera",
+          "text": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare."
+        },
+        {
+          "position": 3,
+          "name": "Ladda ner din PDF",
+          "text": "Ladda ner den konverterade PDF-filen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Varför konvertera HEIC till PDF?",
+      "html": "<p class=\"text-mid mb-4\">Konvertera HEIC-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "HEIC to PDF conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hur man konverterar HEIC till PDF",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Ladda upp din HEIC-fil",
+          "description": "Dra din HEIC-fil till konverteraren eller klicka för att bläddra.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertera",
+          "description": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Ladda ner din PDF",
+          "description": "Ladda ner den konverterade PDF-filen.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna konverterare annorlunda?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Dina filer bearbetas helt i din webbläsare. Inget laddas upp till någon server."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Inga begränsningar",
+          "description": "Konvertera så många filer du behöver. Inga dagliga gränser, inga storleksbegränsningar."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Kvalitetskontroll",
+          "description": "Justera inställningarna för den perfekta balansen mellan filstorlek och kvalitet."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Omedelbar konvertering",
+          "description": "All bearbetning sker lokalt med moderna webbläsar-API:er."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HEIC vs PDF – formatjämförelse",
+      "plans": [
+        {
+          "id": "heic",
+          "name": "HEIC"
+        },
+        {
+          "id": "pdf",
+          "name": "PDF",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Förlustrik komprimering",
+          "values": {
+            "heic": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Förlustfri komprimering",
+          "values": {
+            "heic": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Transparens (alfakanal)",
+          "values": {
+            "heic": true,
+            "pdf": true
+          }
+        },
+        {
+          "name": "Animationsstöd",
+          "values": {
+            "heic": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Webbläsarstöd",
+          "values": {
+            "heic": false,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Kompakt filstorlek",
+          "values": {
+            "heic": true,
+            "pdf": false
+          }
+        },
+        {
+          "name": "Metadata (EXIF)",
+          "values": {
+            "heic": true,
+            "pdf": false
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor om HEIC till PDF-konvertering",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Är det gratis att konvertera HEIC till PDF?",
+          "answer": "Ja, denna konverterare är helt gratis och utan begränsningar. Ingen registrering, inga vattenstämplar."
+        },
+        {
+          "question": "Laddar konverteraren upp mina filer?",
+          "answer": "Nej. All bearbetning sker lokalt i din webbläsare. Dina filer lämnar aldrig din enhet."
+        },
+        {
+          "question": "Kan jag konvertera flera filer samtidigt?",
+          "answer": "Ja, konverteraren stöder batchkonvertering."
+        },
+        {
+          "question": "Fungerar konverteraren på mobilen?",
+          "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå något? Skicka oss ett meddelande – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "HEIC till PDF-konverterare"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

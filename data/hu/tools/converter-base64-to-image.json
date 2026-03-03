@@ -1,0 +1,178 @@
+{
+  "toolKey": "base64ToImage",
+  "locale": "hu",
+  "metadata": {
+    "title": "Base64 kép konverter — Base64 kép",
+    "description": "Base64 karakterláncok dekódolása képekké. Előnézet és letöltés a böngészőben. Ingyenes.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/hu/eszkozok/base64-kep-konverter"
+  },
+  "hero": {
+    "title": "Base64 kép konverter",
+    "description": "Base64 karakterláncok dekódolása képekké. Előnézet és letöltés a böngészőben. Ingyenes.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/base64-kep-konverter",
+      "label": "Base64 kép konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Base64 kép konverter",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "DataConverter",
+      "description": "Base64 karakterláncok dekódolása képekké. Előnézet és letöltés a böngészőben. Ingyenes.",
+      "featureList": ["Base64 to kép conversion", "Batch conversion", "Local browser processing"],
+      "alternateName": ["Convert Base64 to kép", "Base64 to kép", "Free Base64 to kép converter"]
+    },
+    "howTo": {
+      "name": "Hogyan konvertáljuk Base64-t kép-vé",
+      "description": "Base64 karakterláncok dekódolása képekké. Előnézet és letöltés a böngészőben. Ingyenes.",
+      "steps": [
+        {
+          "position": 1,
+          "name": "Töltse fel a Base64 fájlt",
+          "text": "Húzza a Base64 fájlt a konverterre, vagy kattintson a tallózáshoz."
+        },
+        {
+          "position": 2,
+          "name": "Konvertálás",
+          "text": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+        },
+        {
+          "position": 3,
+          "name": "Töltse le a kép fájlt",
+          "text": "Töltse le a konvertált kép fájlt."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Miért érdemes Base64-t kép-vé konvertálni?",
+      "html": "<p class=\"text-mid mb-4\">Base64 karakterláncok dekódolása képekké. Előnézet és letöltés a böngészőben. Ingyenes.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Base64 to kép conversion",
+      "variant": "right"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan konvertáljuk Base64-t kép-vé",
+      "grid": "three",
+      "items": [
+        {
+          "title": "Töltse fel a Base64 fájlt",
+          "description": "Húzza a Base64 fájlt a konverterre, vagy kattintson a tallózáshoz.",
+          "icon": "RiUploadCloud2Line"
+        },
+        {
+          "title": "Konvertálás",
+          "description": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
+          "icon": "RiSettings3Line"
+        },
+        {
+          "title": "Töltse le a kép fájlt",
+          "description": "Töltse le a konvertált kép fájlt.",
+          "icon": "RiDownloadLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt a konvertert?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "A fájlok teljes mértékben a böngészőben kerülnek feldolgozásra. Semmi nem kerül szerverre."
+        },
+        {
+          "icon": "RiInfinityLine",
+          "title": "Nincs korlát",
+          "description": "Konvertáljon annyi fájlt, amennyit csak akar. Nincs napi limit, nincs méretkorlátozás."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Minőségszabályozás",
+          "description": "Állítsa be a beállításokat a tökéletes egyensúly megtalálásához a fájlméret és a minőség között."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Azonnali konverzió",
+          "description": "Minden feldolgozás helyben történik modern böngésző API-k segítségével."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések a Base64-kép konverzióról",
+      "openByDefault": 0,
+      "items": [
+        {
+          "question": "Ingyenes a Base64 konvertálása kép-vé?",
+          "answer": "Igen, ez a konverter teljesen ingyenes és korlátlan. Nincs regisztráció, nincs vízjel."
+        },
+        {
+          "question": "Feltölti a fájljaimat a konverter?",
+          "answer": "Nem. Minden feldolgozás helyben történik a böngészőben. A fájlok soha nem hagyják el az eszközét."
+        },
+        {
+          "question": "Konvertálhatok egyszerre több fájlt?",
+          "answer": "Igen, a konverter támogatja a kötegelt konverziót."
+        },
+        {
+          "question": "Működik a konverter mobilon?",
+          "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy javaslatot szeretne tenni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Contact",
+      "defaultSubject": "Base64 kép konverter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}
