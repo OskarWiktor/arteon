@@ -4,13 +4,13 @@
   "metadata": {
     "title": "YAML to JSON converter — YAML JSON",
     "description": "Convert YAML to JSON format. Automatic parsing and formatting. Free, no registration.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/yaml-to-json-converter"
   },
   "hero": {
     "title": "YAML to JSON converter",
     "description": "Convert YAML to JSON format. Automatic parsing and formatting. Free, no registration.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Why convert YAML to JSON?",
-      "html": "<p class=\"text-mid mb-4\">Convert YAML to JSON format. Automatic parsing and formatting. Free, no registration.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">YAML is a widely used file format with broad compatibility across devices and software. However, depending on your use case, converting to JSON can offer significant advantages — whether it's smaller file sizes, better quality preservation, broader platform support, or specific feature requirements.</p><p class=\"text-mid mb-4\">This free online converter transforms your YAML files into JSON format directly in the browser. No files are uploaded to any server — the entire conversion process happens locally on your device using modern browser APIs. This means your data stays private and secure at all times.</p><p class=\"text-mid\">You can convert as many files as you need with no daily limits, no registration, and no watermarks. Simply drag and drop your files, adjust quality settings if available, and download the results individually or all at once.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
     },
@@ -191,6 +191,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting YAML to JSON?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for converting YAML to JSON",
+      "description": "A few tips to help you avoid common issues during conversion:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Very large files",
+          "description": "Converting images above 4000×4000 pixels may be slower and strain the browser. If processing many large files, consider splitting them into batches of 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Already compressed files",
+          "description": "If the original YAML file was already heavily compressed, converting to JSON may not yield significant size savings. Try different quality settings."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparency",
+          "description": "The JSON format does not support transparency. Transparent areas will be replaced with a white background. Consider PNG or WebP for transparency."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Keep your originals",
+          "description": "Lossy conversion is irreversible. Keep copies of original YAML files so you can re-convert with different settings if needed."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about YAML to JSON conversion",
       "openByDefault": 0,
@@ -210,6 +251,18 @@
         {
           "question": "Does the converter work on mobile?",
           "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets."
+        },
+        {
+          "question": "Is converting YAML to JSON safe for my files?",
+          "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
+        },
+        {
+          "question": "Can I convert multiple YAML files at once?",
+          "answer": "Yes. The tool supports batch conversion with no file limit. Drag all files onto the converter or select them from your device."
+        },
+        {
+          "question": "Is JSON supported by all browsers?",
+          "answer": "The JSON format is widely supported by modern browsers: Chrome, Firefox, Safari, Edge, and Opera."
         }
       ]
     },
@@ -221,7 +274,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Contact",
       "defaultSubject": "YAML to JSON converter"
     },

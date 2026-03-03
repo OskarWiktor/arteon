@@ -244,6 +244,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kvalitet — hva velge ved konvertering BMP til JPG?",
+      "html": "<p class=\"text-mid\">Glideren tillater 60%-95%. Hoyere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — bra for nettsider, blogger, artikler.</strong></li><li><strong>85–90% — for produktbilder, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 85% er forskjellen mellom BMP og JPG praktisk talt umerkelig.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan bildekonvertering pavirker hastighet og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ytelsesindikatorer. LCP maler tiden til det storste synlige elementet vises.</p><p class=\"text-mid mb-4\">Konvertering av BMP til JPG reduserer filstorrelse, forkorter nedlasting og forbedrer LCP. Mindre filer = raskere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> akselererer rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identifiserer filer som bor optimaliseres.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for konvertering BMP til JPG",
+      "description": "Tips for a unnga vanlige problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Veldig store filer",
+          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerte",
+          "description": "Hvis BMP allerede var sterkt komprimert, gir konvertering til JPG kanskje ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "JPG stotter ikke transparens. Transparente omrader blir hvite. Vurder PNG eller WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originalene",
+          "description": "Tapsbringende konvertering er irreversibel. Behold kopier av BMP-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanlige spørsmål om konvertering av BMP til JPG",
       "openByDefault": 0,
@@ -267,6 +317,18 @@
         {
           "question": "Fungerer konverteren på mobilenheter?",
           "answer": "Ja, den fungerer på enhver enhet med en moderne nettleser."
+        },
+        {
+          "question": "Er konvertering BMP til JPG trygt?",
+          "answer": "Ja. Alt skjer lokalt i nettleseren via Canvas API. Ingenting sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere BMP-filer?",
+          "answer": "Ja. Batchkonvertering uten begrensning. Dra filer til konverteringsomradet."
+        },
+        {
+          "question": "Stottes JPG av alle nettlesere?",
+          "answer": "JPG stottes av Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },

@@ -244,6 +244,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Poiotita — ti na epilexete gia metatropi HEIC se WebP;",
+      "html": "<p class=\"text-mid\">To slider epitrepei 60%-95%. Ypsilotero = kaliteri poiotita alla megalytera archeia.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (proepilogi) — kalo gia istoselides, blogs, arthra.</strong></li><li><strong>85–90% — gia fotografies proionton, portfolio kai galleries.</strong></li><li><strong>60–70% — otan to megethos archeiou einai proteraiotita.</strong></li></ul><p class=\"text-mid mt-3\">Se 80% i diafora metaxy HEIC kai WebP einai praktika adiaistiti.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Poso exoikonomeis metatrepontas HEIC se WebP;",
+      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pos i metatropi eikonas epireazei tachitita kai SEO",
+      "html": "<p class=\"text-mid mb-4\">Ta Core Web Vitals einai metrikes Google. To LCP metrai ton chrono eos to megalitero orato stoicheio.</p><p class=\"text-mid mb-4\">I metatropi HEIC se WebP meionei to megethos, syntomevei ti fortosi kai veltionei to LCP. Mikrotera archeia = griorteri fortosi se kinita. <code>loading=\"lazy\"</code> kai <code>fetchpriority=\"high\"</code> epitachynoun to rendering.</p><p class=\"text-mid\">To <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> kai to Lighthouse vriskoyn archeia pros veltiosi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Symvoules gia metatropi HEIC se WebP",
+      "description": "Symvoules gia apofygi provlimaton:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Poly megala archeia",
+          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Idi sympiesmena",
+          "description": "An to HEIC itan idi sympiesmeno, i metatropi se WebP mporei na min exoikonomisi polla."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Diafaneia",
+          "description": "To WebP ypostirizei alfa kanali. Oi diafaneis perioches tou HEIC diatirountai."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Kratiste ta prototypa",
+          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton HEIC archeion."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Συχνές ερωτήσεις για τη μετατροπή HEIC σε WebP",
       "openByDefault": 0,
@@ -267,6 +326,18 @@
         {
           "question": "Λειτουργεί σε κινητά;",
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο φυλλομετρητή."
+        },
+        {
+          "question": "Einai asfalis i metatropi HEIC se WebP;",
+          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+        },
+        {
+          "question": "Mporo na metatrepso polla archeia HEIC;",
+          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+        },
+        {
+          "question": "Ypostirizoun oloi oi browsers to WebP;",
+          "answer": "To WebP ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
         }
       ]
     },

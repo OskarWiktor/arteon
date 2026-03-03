@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore PNG in TIFF — PNG TIFF",
     "description": "Converti grafiche PNG in formato TIFF professionale. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-png-in-tiff"
   },
   "hero": {
     "title": "Convertitore PNG in TIFF",
     "description": "Converti grafiche PNG in formato TIFF professionale. Strumento gratuito nel browser — senza registrazione, senza limiti, privacy totale.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Perché convertire PNG in TIFF?",
       "html": "<p class=\"text-mid mb-4\">Il Portable Network Graphics (PNG) è un formato immagine senza perdita che supporta milioni di colori e la trasparenza alfa completa. Il PNG è particolarmente indicato per loghi, icone, screenshot e grafiche con bordi netti o testo – ovunque ogni pixel conti.</p><p class=\"text-mid mb-4\">Il TIFF preserva la qualità dell'immagine completa senza alcuna perdita di dati e supporta livelli e metadati estesi. Come standard industriale per la stampa e l'archiviazione, il TIFF è adatto a fotografi professionisti, tipografie e chiunque desideri conservare immagini alla massima qualità.</p><p class=\"text-mid mb-4\">La conversione preserva la qualità completa e la trasparenza del PNG originale nel formato TIFF. Il TIFF è particolarmente adatto all'elaborazione successiva in programmi come Photoshop o alla stampa professionale. Tenete presente che i file TIFF possono essere significativamente più grandi dei PNG.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione PNG in TIFF",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Quanto risparmiare convertendo PNG in TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Il risparmio dipende dal tipo di file e dalla compressione originale:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto fotocamera</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Immagine prodotto</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Il risparmio reale varia in base a contenuto e impostazioni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Consigli per convertire PNG in TIFF",
+      "description": "Consigli per evitare problemi comuni:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "File molto grandi",
+          "description": "Immagini sopra 4000×4000 px possono essere piu lente. Dividi in lotti da 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "File gia compressi",
+          "description": "Se il PNG era gia compresso, la conversione in TIFF potrebbe risparmiare poco."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Trasparenza",
+          "description": "TIFF supporta canale alfa. Le aree trasparenti del PNG vengono preservate."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conserva originali",
+          "description": "La conversione con perdita e irreversibile. Conserva copie dei file PNG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da PNG a TIFF",
       "openByDefault": 0,
@@ -279,6 +320,14 @@
         {
           "question": "Il convertitore funziona su dispositivi mobili?",
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno, inclusi smartphone e tablet."
+        },
+        {
+          "question": "E sicuro convertire PNG in TIFF?",
+          "answer": "Si. Tutto avviene localmente nel browser via Canvas API. Niente viene inviato a server."
+        },
+        {
+          "question": "Posso convertire piu file PNG?",
+          "answer": "Si. Conversione batch senza limiti. Trascina i file nel convertitore."
         }
       ]
     },
@@ -290,7 +339,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzione? Scrivici – rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Contatto",
       "defaultSubject": "Convertitore PNG in TIFF"
     },

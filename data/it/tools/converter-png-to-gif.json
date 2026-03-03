@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore PNG in GIF — PNG GIF",
     "description": "Converti grafiche PNG in GIF. Ideale per icone semplici e grafiche. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-png-in-gif"
   },
   "hero": {
     "title": "Convertitore PNG in GIF",
     "description": "Converti grafiche PNG in GIF. Ideale per icone semplici e grafiche. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Perché convertire PNG in GIF?",
       "html": "<p class=\"text-mid mb-4\">Il Portable Network Graphics (PNG) è un formato immagine senza perdita che supporta milioni di colori e la trasparenza alfa completa. Il PNG è particolarmente indicato per loghi, icone, screenshot e grafiche con bordi netti o testo – ovunque ogni pixel conti.</p><p class=\"text-mid mb-4\">Il GIF è il formato standard per brevi animazioni, meme e grafiche semplici con palette di colori limitata. Con supporto universale nei browser, il GIF è particolarmente adatto ai contenuti animati sui social media, nelle app di messaggistica e nelle firme e-mail.</p><p class=\"text-mid mb-4\">La conversione riduce la palette a un massimo di 256 colori. Il risultato è adatto a grafiche semplici, icone e loghi, ma meno indicato per immagini fotorealistiche. La trasparenza è supportata, ma solo in modo binario (visibile o invisibile), non in modo graduale.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione PNG in GIF",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Quanto risparmiare convertendo PNG in GIF?",
+      "html": "<p class=\"text-mid mb-4\">Il risparmio dipende dal tipo di file e dalla compressione originale:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto fotocamera</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Immagine prodotto</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Il risparmio reale varia in base a contenuto e impostazioni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come la conversione influisce su velocita e SEO",
+      "html": "<p class=\"text-mid mb-4\">I Core Web Vitals sono metriche Google. Il LCP misura il tempo per visualizzare l'elemento piu grande.</p><p class=\"text-mid mb-4\">Convertire PNG in GIF riduce le dimensioni, accorcia il download e migliora il LCP. File piu piccoli = caricamento rapido su mobile. <code>loading=\"lazy\"</code> e <code>fetchpriority=\"high\"</code> velocizzano il rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> e Lighthouse identificano file da ottimizzare.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Consigli per convertire PNG in GIF",
+      "description": "Consigli per evitare problemi comuni:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "File molto grandi",
+          "description": "Immagini sopra 4000×4000 px possono essere piu lente. Dividi in lotti da 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "File gia compressi",
+          "description": "Se il PNG era gia compresso, la conversione in GIF potrebbe risparmiare poco."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Trasparenza",
+          "description": "GIF supporta canale alfa. Le aree trasparenti del PNG vengono preservate."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conserva originali",
+          "description": "La conversione con perdita e irreversibile. Conserva copie dei file PNG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da PNG a GIF",
       "openByDefault": 0,
@@ -279,6 +329,14 @@
         {
           "question": "Il convertitore funziona su dispositivi mobili?",
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno, inclusi smartphone e tablet."
+        },
+        {
+          "question": "E sicuro convertire PNG in GIF?",
+          "answer": "Si. Tutto avviene localmente nel browser via Canvas API. Niente viene inviato a server."
+        },
+        {
+          "question": "Posso convertire piu file PNG?",
+          "answer": "Si. Conversione batch senza limiti. Trascina i file nel convertitore."
         }
       ]
     },
@@ -290,7 +348,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzione? Scrivici – rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Contatto",
       "defaultSubject": "Convertitore PNG in GIF"
     },

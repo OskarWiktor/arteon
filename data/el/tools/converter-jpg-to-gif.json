@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας JPG σε GIF — JPG GIF",
     "description": "Μετατρεψτε φωτογραφιες JPG σε μορφη GIF. Ιδανικο για απλα γραφικα και εικονιδια. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-jpg-se-gif"
   },
   "hero": {
     "title": "Μετατροπέας JPG σε GIF",
     "description": "Μετατρεψτε φωτογραφιες JPG σε μορφη GIF. Ιδανικο για απλα γραφικα και εικονιδια. Εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας. Χωρίς μεταφόρτωση σε διακομιστή.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε JPG σε GIF;",
       "html": "<p class=\"text-mid mb-4\">Το JPEG (JPG) είναι η πιο διαδεδομένη μορφή εικόνας στον κόσμο για ψηφιακές φωτογραφίες. Χρησιμοποιεί συμπίεση με απώλειες για συμπαγή αρχεία, αλλά δεν υποστηρίζει διαφάνεια ούτε αποθήκευση χωρίς απώλειες.</p><p class=\"text-mid mb-4\">Το GIF είναι η τυπική μορφή για σύντομες κινούμενες εικόνες, memes και απλά γραφικά με περιορισμένη παλέτα χρωμάτων. Με καθολική υποστήριξη περιηγητών, το GIF είναι ιδιαίτερα κατάλληλο για κινούμενο περιεχόμενο σε μέσα κοινωνικής δικτύωσης.</p><p class=\"text-mid mb-4\">Η παλέτα χρωμάτων μειώνεται σε 256, προκαλώντας ορατές απώλειες ποιότητας σε φωτογραφίες. Η μετατροπή αυτή είναι κατάλληλη κυρίως για απλά γραφικά ή όταν απαιτείται GIF για λόγους συμβατότητας.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή JPG σε GIF",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Poso exoikonomeis metatrepontas JPG se GIF;",
+      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pos i metatropi eikonas epireazei tachitita kai SEO",
+      "html": "<p class=\"text-mid mb-4\">Ta Core Web Vitals einai metrikes Google. To LCP metrai ton chrono eos to megalitero orato stoicheio.</p><p class=\"text-mid mb-4\">I metatropi JPG se GIF meionei to megethos, syntomevei ti fortosi kai veltionei to LCP. Mikrotera archeia = griorteri fortosi se kinita. <code>loading=\"lazy\"</code> kai <code>fetchpriority=\"high\"</code> epitachynoun to rendering.</p><p class=\"text-mid\">To <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> kai to Lighthouse vriskoyn archeia pros veltiosi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Symvoules gia metatropi JPG se GIF",
+      "description": "Symvoules gia apofygi provlimaton:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Poly megala archeia",
+          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Idi sympiesmena",
+          "description": "An to JPG itan idi sympiesmeno, i metatropi se GIF mporei na min exoikonomisi polla."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Diafaneia",
+          "description": "To GIF ypostirizei alfa kanali. Oi diafaneis perioches tou JPG diatirountai."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Kratiste ta prototypa",
+          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton JPG archeion."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Συχνές ερωτήσεις για τη μετατροπή JPG σε GIF",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Λειτουργεί σε κινητά;",
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο φυλλομετρητή."
+        },
+        {
+          "question": "Einai asfalis i metatropi JPG se GIF;",
+          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+        },
+        {
+          "question": "Mporo na metatrepso polla archeia JPG;",
+          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+        },
+        {
+          "question": "Ypostirizoun oloi oi browsers to GIF;",
+          "answer": "To GIF ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Επικοινωνία",
       "defaultSubject": "Μετατροπέας JPG σε GIF"
     },

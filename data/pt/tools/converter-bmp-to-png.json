@@ -244,6 +244,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Quanto economizar convertendo BMP para PNG?",
+      "html": "<p class=\"text-mid mb-4\">A economia depende do tipo de arquivo e compressao original:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto de camera</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagem de produto</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">A economia real varia conforme conteudo e configuracoes.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como a conversao impacta velocidade e SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals sao metricas do Google. LCP mede o tempo ate o maior elemento visivel aparecer.</p><p class=\"text-mid mb-4\">Converter BMP para PNG reduz tamanho, encurta download e melhora LCP. Arquivos menores = carregamento rapido em moveis. <code>loading=\"lazy\"</code> e <code>fetchpriority=\"high\"</code> aceleram renderizacao.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> e Lighthouse identificam arquivos a otimizar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Dicas para converter BMP para PNG",
+      "description": "Dicas para evitar problemas comuns:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Arquivos muito grandes",
+          "description": "Imagens acima de 4000×4000 px podem ser mais lentas. Divida em lotes de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Ja comprimidos",
+          "description": "Se o BMP ja estava muito comprimido, a conversao para PNG pode nao economizar muito."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparencia",
+          "description": "PNG suporta canal alfa. Areas transparentes do BMP serao preservadas."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Mantenha originais",
+          "description": "Conversao com perdas e irreversivel. Mantenha copias dos arquivos BMP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de BMP para PNG",
       "openByDefault": 0,
@@ -267,6 +317,18 @@
         {
           "question": "O conversor funciona em dispositivos móveis?",
           "answer": "Sim, funciona em qualquer dispositivo com um navegador web moderno, incluindo smartphones e tablets."
+        },
+        {
+          "question": "Converter BMP para PNG e seguro?",
+          "answer": "Sim. Tudo acontece localmente no navegador via Canvas API. Nada e enviado a servidores."
+        },
+        {
+          "question": "Posso converter varios BMP de uma vez?",
+          "answer": "Sim. Conversao em lote sem limite. Arraste para o conversor."
+        },
+        {
+          "question": "PNG e compativel com todos os navegadores?",
+          "answer": "PNG e suportado por Chrome, Firefox, Safari, Edge e Opera."
         }
       ]
     },

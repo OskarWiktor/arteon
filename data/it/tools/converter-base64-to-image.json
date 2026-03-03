@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore Base64 in immagine — Base64 immagine",
     "description": "Decodifica stringhe Base64 in immagini. Anteprima e download nel browser. Gratuito.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-base64-in-immagine"
   },
   "hero": {
     "title": "Convertitore Base64 in immagine",
     "description": "Decodifica stringhe Base64 in immagini. Anteprima e download nel browser. Gratuito.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire Base64 in immagine?",
-      "html": "<p class=\"text-mid mb-4\">Decodifica stringhe Base64 in immagini. Anteprima e download nel browser. Gratuito.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">BASE64 e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in IMAGE puo offrire vantaggi significativi — file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file BASE64 nel formato IMAGE direttamente nel browser. Nessun file viene inviato a server — l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Base64 to immagine conversion",
       "variant": "right"
     },
@@ -128,6 +128,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Quanto risparmiare convertendo BASE64 in IMAGE?",
+      "html": "<p class=\"text-mid mb-4\">Il risparmio dipende dal tipo di file e dalla compressione originale:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto fotocamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Immagine prodotto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Il risparmio reale varia in base a contenuto e impostazioni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Consigli per convertire BASE64 in IMAGE",
+      "description": "Consigli per evitare problemi comuni:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "File molto grandi",
+          "description": "Immagini sopra 4000×4000 px possono essere piu lente. Dividi in lotti da 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "File gia compressi",
+          "description": "Se il BASE64 era gia compresso, la conversione in IMAGE potrebbe risparmiare poco."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Trasparenza",
+          "description": "IMAGE non supporta trasparenza. Le aree trasparenti diventano bianche. Considera PNG o WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conserva originali",
+          "description": "La conversione con perdita e irreversibile. Conserva copie dei file BASE64."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da Base64 a immagine",
       "openByDefault": 0,
@@ -147,6 +188,18 @@
         {
           "question": "Il convertitore funziona su dispositivi mobili?",
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
+        },
+        {
+          "question": "E sicuro convertire BASE64 in IMAGE?",
+          "answer": "Si. Tutto avviene localmente nel browser via Canvas API. Niente viene inviato a server."
+        },
+        {
+          "question": "Posso convertire piu file BASE64?",
+          "answer": "Si. Conversione batch senza limiti. Trascina i file nel convertitore."
+        },
+        {
+          "question": "IMAGE e supportato da tutti i browser?",
+          "answer": "IMAGE e supportato da Chrome, Firefox, Safari, Edge e Opera."
         }
       ]
     },
@@ -158,7 +211,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea, trovato un bug o vuoi suggerire qualcosa? Scrivici – rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Convertitore Base64 in immagine"
     },

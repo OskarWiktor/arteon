@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertisseur BMP en TIFF — BMP TIFF",
     "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-bmp-en-tiff"
   },
   "hero": {
     "title": "Convertisseur BMP en TIFF",
     "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Pourquoi convertir BMP en TIFF ?",
       "html": "<p class=\"text-mid mb-4\">Le Bitmap (BMP) est un ancien format d'image Windows qui stocke les données de pixels sans compression. Les fichiers BMP sont donc extrêmement volumineux et inadaptés à une utilisation moderne sur le web, par e-mail ou sur les appareils mobiles.</p><p class=\"text-mid mb-4\">Le TIFF préserve la qualité d'image complète sans aucune perte de données et prend en charge les calques ainsi que des métadonnées étendues. Standard de l'industrie pour l'impression et l'archivage, le TIFF convient aux photographes professionnels, aux imprimeurs et à tous ceux qui souhaitent conserver des images en qualité maximale.</p><p class=\"text-mid mb-4\">La conversion de BMP en TIFF préserve la qualité d'image complète et ajoute la prise en charge professionnelle des métadonnées. Le TIFF convient mieux que le BMP à l'archivage à long terme et aux workflows d'impression professionnels.</p><p class=\"text-mid\">Ce convertisseur fonctionne entièrement en local dans votre navigateur – vos fichiers ne quittent jamais votre appareil. Aucun téléversement, aucun serveur, aucune inscription. Entièrement conforme au RGPD et gratuit sans aucune limitation.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Conversion BMP en TIFF",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Combien economiser en convertissant BMP en TIFF ?",
+      "html": "<p class=\"text-mid mb-4\">Les economies dependent du type de fichier source et sa compression :</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo d'appareil</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Image produit</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Capture / banniere</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Les economies reelles varient selon le contenu et les reglages.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Conseils pour convertir BMP en TIFF",
+      "description": "Conseils pour eviter les problemes courants :",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Fichiers volumineux",
+          "description": "Images de plus de 4000×4000 px peuvent etre plus lentes. Divisez en lots de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Fichiers deja compresses",
+          "description": "Si le BMP original etait deja compresse, la conversion en TIFF peut ne pas economiser beaucoup."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparence",
+          "description": "TIFF supporte le canal alpha. Les zones transparentes du BMP seront conservees."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conservez les originaux",
+          "description": "La conversion avec perte est irreversible. Conservez des copies des fichiers BMP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Questions fréquentes sur la conversion BMP vers TIFF",
       "openByDefault": 0,
@@ -279,6 +320,14 @@
         {
           "question": "Le convertisseur fonctionne-t-il sur mobile ?",
           "answer": "Oui, il fonctionne sur tout appareil disposant d’un navigateur web moderne, y compris smartphones et tablettes."
+        },
+        {
+          "question": "La conversion BMP en TIFF est-elle sure ?",
+          "answer": "Oui. Tout se fait localement dans le navigateur via Canvas API. Rien n'est envoye a un serveur."
+        },
+        {
+          "question": "Puis-je convertir plusieurs fichiers BMP ?",
+          "answer": "Oui. Conversion par lots sans limite. Glissez les fichiers sur le convertisseur."
         }
       ]
     },
@@ -290,7 +339,7 @@
       "type": "contactForm",
       "title": "Aidez-nous à améliorer nos outils",
       "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Convertisseur BMP en TIFF"
     },

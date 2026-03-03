@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník BMP na GIF — BMP GIF",
     "description": "Převeďte nekomprimované soubory BMP na lehky GIF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-bmp-na-gif"
   },
   "hero": {
     "title": "Převodník BMP na GIF",
     "description": "Převeďte nekomprimované soubory BMP na lehky GIF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Proč převádět BMP na GIF?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) je starší obrazový formát Windows ukládající pixelová data bez komprese. BMP soubory jsou proto extrémně velké a nevhodné pro moderní použití na webu nebo mobilních zařízeních.</p><p class=\"text-mid mb-4\">GIF je standardní formát pro krátké animace, memy a jednoduchou grafiku s omezenou paletou barev. S univerzální podporou v prohlížečích je GIF obzvláště vhodný pro animovaný obsah na sociálních sítích a v komunikátorech.</p><p class=\"text-mid mb-4\">Převod redukuje paletu na 256 barev a soubor výrazně komprimuje. Vhodné pro jednoduchou grafiku ze starších systémů, ale pro fotorealistické BMP se doporučuje JPG nebo WebP.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod BMP na GIF",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kolik usetrite konverzi BMP na GIF?",
+      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak konverze ovlivnuje rychlost a SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals jsou metriky Google. LCP meri cas do zobrazeni nejvetsiho prvku.</p><p class=\"text-mid mb-4\">Konverze BMP na GIF zmensuje soubory, zkracuje stahovani a zlepsuje LCP. Mensi soubory = rychlejsi nacitani na mobilu. <code>loading=\"lazy\"</code> a <code>fetchpriority=\"high\"</code> urychluji rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> a Lighthouse identifikuji soubory k optimalizaci.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipy pro konverzi BMP na GIF",
+      "description": "Tipy jak se vyhnout problemum:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Velmi velke soubory",
+          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jiz komprimovane",
+          "description": "Pokud byl BMP jiz silne komprimovany, konverze na GIF nemusi usetrit mnoho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Pruhlednost",
+          "description": "GIF podporuje alfa kanal. Pruhledne oblasti BMP budou zachovany."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Uchovejte originaly",
+          "description": "Ztratova konverze je nevratna. Uchovejte kopie BMP souboru."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu BMP na GIF",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Funguje převodník na mobilních zařízeních?",
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem, včetně smartphoneů a tabletů."
+        },
+        {
+          "question": "Je konverze BMP na GIF bezpecna?",
+          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+        },
+        {
+          "question": "Mohu konvertovat vice souboru BMP?",
+          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+        },
+        {
+          "question": "Je GIF podporovan vsemi prohlizeci?",
+          "answer": "GIF je podporovan v Chrome, Firefox, Safari, Edge a Opera."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "Převodník BMP na GIF"
     },

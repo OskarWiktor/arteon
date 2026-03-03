@@ -253,6 +253,24 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting SVG to PNG?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them — LCP (Largest Contentful Paint) — measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting SVG images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading — especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about SVG to PNG conversion",
       "openByDefault": 0,
@@ -280,6 +298,14 @@
         {
           "question": "Does the converter work on mobile devices?",
           "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets. The interface adapts to your screen size for a comfortable experience on any device."
+        },
+        {
+          "question": "Is converting SVG to PNG safe for my files?",
+          "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
+        },
+        {
+          "question": "Is PNG supported by all browsers?",
+          "answer": "The PNG format is widely supported by modern browsers: Chrome, Firefox, Safari, Edge, and Opera."
         }
       ]
     },

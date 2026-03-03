@@ -4,13 +4,13 @@
   "metadata": {
     "title": "HEIC to TIFF converter — HEIC TIFF",
     "description": "Convert iPhone HEIC photos to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/heic-to-tiff-converter"
   },
   "hero": {
     "title": "HEIC to TIFF converter",
     "description": "Convert iPhone HEIC photos to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Why convert HEIC to TIFF?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is a lossy image format supporting millions colors. It is widely used for Apple device photos with browser support in Safari only.</p><p class=\"text-mid mb-4\">Converting HEIC to TIFF (Tagged Image File Format) solves the compatibility challenge with Apple&apos;s proprietary format.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, TIFF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many HEIC files as you need, completely free.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "HEIC to TIFF conversion",
       "variant": "right"
     },
@@ -307,7 +307,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Contact",
       "defaultSubject": "HEIC to TIFF converter"
     },

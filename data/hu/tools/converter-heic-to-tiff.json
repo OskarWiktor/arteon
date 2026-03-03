@@ -4,13 +4,13 @@
   "metadata": {
     "title": "HEIC TIFF konverter — HEIC TIFF",
     "description": "iPhone HEIC fotok konvertálása professzionalis TIFF formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/heic-tiff-konverter"
   },
   "hero": {
     "title": "HEIC TIFF konverter",
     "description": "iPhone HEIC fotok konvertálása professzionalis TIFF formatumra. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Miért érdemes HEIC-t TIFF-re konvertálni?",
       "html": "<p class=\"text-mid mb-4\">A High Efficiency Image Container (HEIC) az Apple eszközök alapértelmezett fényképformátuma az iOS 11 óta. A HEIC kisebb fájlokat kínál, mint a JPEG hasonló minőségben, de az Apple ökoszisztémán kívül – Windowson, Androidon és sok webes platformon – nem támogatott natívan.</p><p class=\"text-mid mb-4\">A TIFF megőrzi a teljes képminőséget bármilyen adatveszteség nélkül, és támogatja a rétegeket és kiterjedt metaadatokat. Iparági szabványként a nyomtatáshoz és archiváláshoz a TIFF professzionális fotósok és nyomdák számára alkalmas.</p><p class=\"text-mid mb-4\">A konvertálás iPhone-fényképeit professzionális TIFF formátumba alakítja. Ideális fotósok számára, akik mobilfelvételeiket veszteségmentes formátumban szeretnék archiválni és Photoshopban vagy Lightroomban szerkeszteni.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "HEIC konvertálás TIFF formátumba",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Mennyit takarit meg HEIC TIFF konvertalasaval?",
+      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tippek HEIC TIFF konvertalasahoz",
+      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Nagyon nagy fajlok",
+          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Mar tomoriteett fajlok",
+          "description": "Ha a HEIC mar erosen tomoriteett volt, TIFF konvertalas keveset takarithat."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Atlatszosag",
+          "description": "TIFF tamogatja az alfa csatornat. A HEIC atlatszo terultei megmaradnak."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Orizze meg az eredetiket",
+          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a HEIC fajlok masolatait."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a HEIC-TIFF konvertálásról",
       "openByDefault": 0,
@@ -275,6 +316,18 @@
         {
           "question": "Működik mobileszközökön?",
           "answer": "Igen, bármely modern böngészővel rendelkező eszközön működik."
+        },
+        {
+          "question": "Biztonsagos HEIC TIFF konvertalasa?",
+          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+        },
+        {
+          "question": "Konvertalhatok tobb HEIC fajlt egyszerre?",
+          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+        },
+        {
+          "question": "Minden bongeszo tamogatja a TIFF-t?",
+          "answer": "TIFF-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
         }
       ]
     },
@@ -286,7 +339,7 @@
       "type": "contactForm",
       "title": "Segítsen nekünk fejleszteni eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "Kapcsolat",
       "defaultSubject": "HEIC-TIFF konverter"
     },

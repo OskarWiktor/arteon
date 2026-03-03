@@ -1,79 +1,100 @@
 /**
- * Add localized images to converter tools that only have a default PL image.
- * All converters should use locale-specific versions of the old WebP converter image.
+ * One-time script: fix converter images across the project
+ *
+ * 1. tool-registry.ts — expand `images` for 20 converters that only have `pl`
+ * 2. data/<locale>/tools/converter-*.json — replace PL imageSrc with locale-correct
+ *    images in sectionBasic, contactForm, hero.backgroundImage, metadata.ogImage
  */
 const fs = require('fs');
 const path = require('path');
 
-const filePath = path.join(__dirname, '..', 'lib', 'i18n', 'tool-registry.ts');
-let content = fs.readFileSync(filePath, 'utf8');
+// ── Image map: locale → image filename in jpg-png-to-webp-converter/ ──
+const IMG_DIR = '/assets/tools/jpg-png-to-webp-converter';
+const IMG_MAP = {
+  pl: 'jpg-png-na-webp-bez-limitu-pl.webp',
+  en: 'jpg-png-to-webp-unlimited-en.webp',
+  es: 'convertidor-jpg-png-a-webp-es.webp',
+  fr: 'convertisseur-jpg-png-en-webp-fr.webp',
+  de: 'jpg-png-zu-webp-konverter-de.webp',
+  pt: 'conversor-jpg-png-para-webp-pt.webp',
+  it: 'convertitore-jpg-png-in-webp-it.webp',
+  ro: 'convertor-jpg-png-in-webp-ro.webp',
+  nl: 'jpg-png-naar-webp-converter-nl.webp',
+  hu: 'jpg-png-webp-konverter-hu.webp',
+  cs: 'konvertor-jpg-png-na-webp-cs.webp',
+  sv: 'jpg-png-till-webp-konverterare-sv.webp',
+  da: 'jpg-png-til-webp-konverter-da.webp',
+  no: 'jpg-png-til-webp-konverterer-no.webp',
+  fi: 'jpg-png-webp-muunnin-fi.webp',
+  el: 'metatropeas-jpg-png-se-webp-el.webp',
+};
 
-const IMAGES_BLOCK = `images: {
-      pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
-      en: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
-      es: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
-      fr: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
-      de: '/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp',
-      pt: '/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp',
-      it: '/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp',
-      ro: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
-      nl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
-      hu: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp',
-      cs: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
-      sv: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
-      da: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
-      no: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp',
-      fi: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
-      el: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
-    },`;
+const PL_IMG = `${IMG_DIR}/${IMG_MAP.pl}`;
 
-// Find all converter tool blocks that have section: 'konwertery'
-// and have image: but NOT images:
-const toolBlockRegex = /\{\s*\n\s*key:\s*'([^']+)',\s*\n\s*section:\s*'konwertery',\s*\n\s*icon:\s*\w+,\s*\n\s*image:\s*'([^']+)',\s*\n\s*desktopOnly:/g;
+function imgForLocale(locale) {
+  return `${IMG_DIR}/${IMG_MAP[locale] || IMG_MAP.pl}`;
+}
 
-let fixCount = 0;
-let match;
-const fixes = [];
+// ── PART 1: Fix tool-registry.ts ──────────────────────────────────────
+function fixRegistry() {
+  const file = path.join(__dirname, '..', 'lib', 'i18n', 'tool-registry.ts');
+  let content = fs.readFileSync(file, 'utf8');
 
-while ((match = toolBlockRegex.exec(content)) !== null) {
-  const key = match[1];
-  const imageLine = match[0];
+  // Build the full images block (indented with 6 spaces as in existing entries)
+  const fullImagesBlock = Object.entries(IMG_MAP)
+    .map(([loc, fname]) => `      ${loc}: '${IMG_DIR}/${fname}',`)
+    .join('\n');
 
-  // Check if this tool already has images: {} (look at what comes after image line)
-  const afterIdx = match.index + imageLine.length;
-  const nextChunk = content.substring(match.index, match.index + 200);
+  // Replace single-locale images blocks:
+  //   images: {
+  //     pl: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+  //   },
+  const singlePl = `images: {\n      pl: '${PL_IMG}',\n    },`;
+  const fullBlock = `images: {\n${fullImagesBlock}\n    },`;
 
-  if (nextChunk.includes('images:')) {
-    continue; // Already has images block
+  const count = (content.match(new RegExp(singlePl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
+  content = content.split(singlePl).join(fullBlock);
+
+  fs.writeFileSync(file, content, 'utf8');
+  console.log(`[registry] Expanded ${count} images blocks to all 16 locales`);
+}
+
+// ── PART 2: Fix JSON data files ───────────────────────────────────────
+function fixJsonFiles() {
+  const dataDir = path.join(__dirname, '..', 'data');
+  const locales = Object.keys(IMG_MAP).filter(l => l !== 'pl');
+  let filesFixed = 0;
+  let blocksFixed = 0;
+
+  for (const locale of locales) {
+    const toolsDir = path.join(dataDir, locale, 'tools');
+    if (!fs.existsSync(toolsDir)) continue;
+
+    const files = fs.readdirSync(toolsDir).filter(f => f.startsWith('converter-') && f.endsWith('.json'));
+
+    for (const file of files) {
+      const filePath = path.join(toolsDir, file);
+      const raw = fs.readFileSync(filePath, 'utf8');
+      const correctImg = imgForLocale(locale);
+      let modified = false;
+
+      // Simple string replace: swap PL image path with locale-correct one
+      if (raw.includes(PL_IMG)) {
+        const updated = raw.split(PL_IMG).join(correctImg);
+        fs.writeFileSync(filePath, updated, 'utf8');
+        const replacements = (raw.match(new RegExp(PL_IMG.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
+        blocksFixed += replacements;
+        modified = true;
+      }
+
+      if (modified) filesFixed++;
+    }
   }
 
-  fixes.push({ key, index: match.index, fullMatch: match[0] });
+  console.log(`[json] Fixed ${blocksFixed} image references across ${filesFixed} files`);
 }
 
-// Apply fixes in reverse order to preserve indices
-fixes.reverse();
-for (const fix of fixes) {
-  const oldLine = `image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',\n    desktopOnly:`;
-  const newLine = `image: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',\n    ${IMAGES_BLOCK}\n    desktopOnly:`;
-
-  // Find exact position of the image line in this tool block
-  const blockStart = fix.index;
-  const blockEnd = content.indexOf('\n  },', blockStart) + 5;
-  const block = content.substring(blockStart, blockEnd);
-
-  if (block.includes(oldLine)) {
-    const newBlock = block.replace(oldLine, newLine);
-    content = content.substring(0, blockStart) + newBlock + content.substring(blockEnd);
-    fixCount++;
-    console.log(`✓ Added images to: ${fix.key}`);
-  } else {
-    console.log(`⚠ Could not find exact pattern in: ${fix.key}`);
-  }
-}
-
-if (fixCount > 0) {
-  fs.writeFileSync(filePath, content, 'utf8');
-  console.log(`\n✅ Added localized images to ${fixCount} converter tools`);
-} else {
-  console.log('\n✅ All converter tools already have localized images');
-}
+// ── Run ───────────────────────────────────────────────────────────────
+fixRegistry();
+fixJsonFiles();
+console.log('Done!');

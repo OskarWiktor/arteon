@@ -244,6 +244,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Qualitatseinstellungen — was bei Konvertierung von HEIC nach JPG wahlen?",
+      "html": "<p class=\"text-mid\">Der Qualitatsregler ermoglicht Werte von 60% bis 95%. Hohere Werte bedeuten bessere Bildqualitat, aber grossere Dateien.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (Standard) — guter Kompromiss fur Firmenwebsites, Blogs, Artikel.</strong></li><li><strong>85–90% — fur Produktfotos, Portfolios und Galerien.</strong></li><li><strong>60–70% — wenn Dateigrosse-Minimierung Prioritat hat.</strong></li></ul><p class=\"text-mid mt-3\">Bei 85% ist der Unterschied zwischen Original HEIC und JPG kaum erkennbar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie viel sparen Sie bei Konvertierung von HEIC zu JPG?",
+      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie Bildkonvertierung Seitengeschwindigkeit und SEO beeinflusst",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals sind Leistungskennzahlen von Google. LCP misst die Zeit bis das grosste sichtbare Element erscheint.</p><p class=\"text-mid mb-4\">Konvertierung von HEIC zu JPG reduziert die Dateigrosse, verkurzt Ladezeit und verbessert LCP. Kleinere Dateien bedeuten schnelleres Laden auf Mobilgeraten. <code>loading=\"lazy\"</code> und <code>fetchpriority=\"high\"</code> beschleunigen das Rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> und Lighthouse identifizieren optimierungswurdige Dateien.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipps fur Konvertierung von HEIC zu JPG",
+      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Sehr grosse Dateien",
+          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Bereits komprimierte Dateien",
+          "description": "Stark komprimierte HEIC-Dateien bringen bei Konvertierung zu JPG moglicherweise wenig Einsparung."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparenz",
+          "description": "JPG unterstutzt keine Transparenz. Transparente Bereiche werden weiss. Verwenden Sie PNG oder WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Originale aufbewahren",
+          "description": "Verlustbehaftete Konvertierung ist irreversibel. Bewahren Sie Kopien der HEIC-Originale auf."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zur Konvertierung von HEIC in JPG",
       "openByDefault": 0,
@@ -271,6 +330,14 @@
         {
           "question": "Funktioniert der Konverter auf Mobilgeräten?",
           "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
+        },
+        {
+          "question": "Ist Konvertierung von HEIC zu JPG sicher?",
+          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+        },
+        {
+          "question": "Wird JPG von allen Browsern unterstutzt?",
+          "answer": "JPG wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
         }
       ]
     },

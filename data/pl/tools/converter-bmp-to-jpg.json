@@ -132,7 +132,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -226,6 +226,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ustawienia jakości — co wybrać przy konwersji BMP na JPG?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem BMP a wynikowym JPG jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ile można zaoszczędzić konwertując BMP na JPG?",
+      "html": "<p class=\"text-mid mb-4\">Oszczędności zależą od rodzaju pliku źródłowego i jego oryginalnej kompresji. Poniżej przykładowe wyniki dla typowych plików BMP:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjęcie z aparatu</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczędności mogą się różnić w zależności od zawartości obrazu i ustawień jakości. Konwerter pokazuje dokładny rozmiar przed i po konwersji dla każdego pliku.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów BMP na JPG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Na co zwrócić uwagę przy konwersji BMP na JPG?",
+      "description": "Kilka wskazówek, które pomogą uniknąć problemów podczas konwersji:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Bardzo duże pliki",
+          "description": "Konwersja obrazów o rozdzielczości powyżej 4000×4000 pikseli może być wolniejsza i obciążać przeglądarkę. Jeśli przetwarzasz wiele dużych plików, rozważ dzielenie ich na mniejsze partie po 10–20 sztuk."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Już skompresowane pliki",
+          "description": "Jeśli oryginalny plik BMP był już mocno skompresowany, konwersja na JPG może nie przynieść dużych oszczędności rozmiaru. W takim przypadku warto eksperymentować z różnymi ustawieniami jakości."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Przezroczystość",
+          "description": "Format JPG nie obsługuje przezroczystości. Przezroczyste obszary z oryginalnego pliku zostaną zastąpione białym tłem. Jeśli potrzebujesz zachować przezroczystość, rozważ konwersję na format PNG lub WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Zachowaj oryginały",
+          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików BMP, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji BMP na JPG",
       "openByDefault": 1,
@@ -249,6 +308,18 @@
         {
           "question": "Czy pliki są wysyłane na serwer?",
           "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera."
+        },
+        {
+          "question": "Czy konwersja BMP na JPG jest bezpieczna dla moich plików?",
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików BMP jednocześnie?",
+          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+        },
+        {
+          "question": "Czy JPG jest obsługiwany przez wszystkie przeglądarki?",
+          "answer": "Format JPG jest uniwersalnie obsługiwany przez praktycznie wszystkie przeglądarki, systemy operacyjne i programy graficzne. To jeden z najpowszechniej wspieranych formatów obrazów."
         }
       ]
     },

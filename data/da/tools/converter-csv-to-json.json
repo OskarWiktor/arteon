@@ -4,13 +4,13 @@
   "metadata": {
     "title": "CSV til JSON-konverter — CSV JSON",
     "description": "Konverter CSV til JSON-format. Automatisk parsing og formatering. Gratis.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/csv-til-json-konverter"
   },
   "hero": {
     "title": "CSV til JSON-konverter",
     "description": "Konverter CSV til JSON-format. Automatisk parsing og formatering. Gratis.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere CSV til JSON?",
-      "html": "<p class=\"text-mid mb-4\">Konverter CSV til JSON-format. Automatisk parsing og formatering. Gratis.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">CSV er et udbredt filformat med bred kompatibilitet. Afhaengigt af brugen kan konvertering til JSON give betydelige fordele — mindre filer, bedre kvalitet eller bredere platformsunderstottelse.</p><p class=\"text-mid mb-4\">Denne gratis online-konverter omdanner dine CSV-filer til JSON-format direkte i browseren. Ingen filer uploades — hele processen foregaar lokalt pa din enhed.</p><p class=\"text-mid\">Konverter sa mange filer, du vil, uden daglige begraensninger, uden registrering og uden vandmaerker. Traek og slip filer, juster kvaliteten og download resultaterne.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "CSV to JSON conversion",
       "variant": "right"
     },
@@ -191,6 +191,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hvor meget sparer du ved konvertering CSV til JSON?",
+      "html": "<p class=\"text-mid mb-4\">Besparelser afhaenger af filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbillede</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skaermbillede / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer efter indhold og indstillinger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips til konvertering CSV til JSON",
+      "description": "Tips for at undga problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Meget store filer",
+          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerede",
+          "description": "Hvis CSV allerede var komprimeret, giver konvertering til JSON maske ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "JSON understotter ikke transparens. Transparente omrader bliver hvide. Overvej PNG eller WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originaler",
+          "description": "Tabsgivende konvertering er irreversibel. Behold kopier af CSV-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om CSV til JSON-konvertering",
       "openByDefault": 0,
@@ -210,6 +251,18 @@
         {
           "question": "Virker konverteren på mobil?",
           "answer": "Ja, den virker på enhver enhed med en moderne webbrowser."
+        },
+        {
+          "question": "Er konvertering CSV til JSON sikker?",
+          "answer": "Ja. Alt sker lokalt i browseren via Canvas API. Intet sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere CSV-filer?",
+          "answer": "Ja. Batchkonvertering uden begraensning. Traek filer til konverteringsomradet."
+        },
+        {
+          "question": "Understotter alle browsere JSON?",
+          "answer": "JSON understttes af Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },
@@ -221,7 +274,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå noget? Send os en besked – vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "Contact",
       "defaultSubject": "CSV til JSON-konverter"
     },

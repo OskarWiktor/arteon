@@ -4,13 +4,13 @@
   "metadata": {
     "title": "SVG to TIFF converter — SVG TIFF",
     "description": "Convert vector SVG graphics to high-quality TIFF raster. No installation needed, works on any device. Free, private, and unlimited.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/svg-to-tiff-converter"
   },
   "hero": {
     "title": "SVG to TIFF converter",
     "description": "Convert vector SVG graphics to high-quality TIFF raster. No installation needed, works on any device. Free, private, and unlimited.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Why convert SVG to TIFF?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is a lossless image format based on vector graphics. It is widely used for logos and icons and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting SVG to TIFF (Tagged Image File Format) converts scalable vector graphics into a fixed-resolution raster image suitable for any context.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, TIFF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many SVG files as you need, completely free.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "SVG to TIFF conversion",
       "variant": "right"
     },
@@ -261,6 +261,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting SVG to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about SVG to TIFF conversion",
       "openByDefault": 0,
@@ -288,6 +297,14 @@
         {
           "question": "Does the converter work on mobile devices?",
           "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets. The interface adapts to your screen size for a comfortable experience on any device."
+        },
+        {
+          "question": "Is converting SVG to TIFF safe for my files?",
+          "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
+        },
+        {
+          "question": "Is TIFF supported by all browsers?",
+          "answer": "The TIFF format is widely supported by modern browsers: Chrome, Firefox, Safari, Edge, and Opera."
         }
       ]
     },
@@ -299,7 +316,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Contact",
       "defaultSubject": "SVG to TIFF converter"
     },

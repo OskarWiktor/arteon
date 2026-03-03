@@ -244,6 +244,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Combien economiser en convertissant AVIF en PNG ?",
+      "html": "<p class=\"text-mid mb-4\">Les economies dependent du type de fichier source et sa compression :</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo d'appareil</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Image produit</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Capture / banniere</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Les economies reelles varient selon le contenu et les reglages.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Impact de la conversion d'images sur vitesse et SEO",
+      "html": "<p class=\"text-mid mb-4\">Les Core Web Vitals sont des metriques Google. Le LCP mesure le temps d'affichage du plus grand element visible.</p><p class=\"text-mid mb-4\">Convertir AVIF en PNG reduit la taille, raccourcit le telechargement et ameliore le LCP. Fichiers plus petits = chargement plus rapide sur mobile. <code>loading=\"lazy\"</code> et <code>fetchpriority=\"high\"</code> accelerent le rendu.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> et Lighthouse identifient les fichiers a optimiser.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Conseils pour convertir AVIF en PNG",
+      "description": "Conseils pour eviter les problemes courants :",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Fichiers volumineux",
+          "description": "Images de plus de 4000×4000 px peuvent etre plus lentes. Divisez en lots de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Fichiers deja compresses",
+          "description": "Si le AVIF original etait deja compresse, la conversion en PNG peut ne pas economiser beaucoup."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparence",
+          "description": "PNG supporte le canal alpha. Les zones transparentes du AVIF seront conservees."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conservez les originaux",
+          "description": "La conversion avec perte est irreversible. Conservez des copies des fichiers AVIF."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Questions fréquentes sur la conversion AVIF vers PNG",
       "openByDefault": 0,
@@ -271,6 +321,14 @@
         {
           "question": "Le convertisseur fonctionne-t-il sur mobile ?",
           "answer": "Oui, il fonctionne sur tout appareil disposant d’un navigateur web moderne, y compris smartphones et tablettes."
+        },
+        {
+          "question": "La conversion AVIF en PNG est-elle sure ?",
+          "answer": "Oui. Tout se fait localement dans le navigateur via Canvas API. Rien n'est envoye a un serveur."
+        },
+        {
+          "question": "Puis-je convertir plusieurs fichiers AVIF ?",
+          "answer": "Oui. Conversion par lots sans limite. Glissez les fichiers sur le convertisseur."
         }
       ]
     },

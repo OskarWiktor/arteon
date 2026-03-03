@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník obrázek na Base64 — obrázek Base64",
     "description": "Zakódujte obrázky do formátu Base64. Zkopírujte hotový kód pro CSS nebo HTML. Zdarma.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-obrazek-na-base64"
   },
   "hero": {
     "title": "Převodník obrázek na Base64",
     "description": "Zakódujte obrázky do formátu Base64. Zkopírujte hotový kód pro CSS nebo HTML. Zdarma.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět obrázek na Base64?",
-      "html": "<p class=\"text-mid mb-4\">Zakódujte obrázky do formátu Base64. Zkopírujte hotový kód pro CSS nebo HTML. Zdarma.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">IMAGE je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na BASE64 prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase IMAGE soubory do formatu BASE64 primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "obrázek to Base64 conversion",
       "variant": "right"
     },
@@ -128,6 +128,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kolik usetrite konverzi IMAGE na BASE64?",
+      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipy pro konverzi IMAGE na BASE64",
+      "description": "Tipy jak se vyhnout problemum:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Velmi velke soubory",
+          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jiz komprimovane",
+          "description": "Pokud byl IMAGE jiz silne komprimovany, konverze na BASE64 nemusi usetrit mnoho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Pruhlednost",
+          "description": "BASE64 nepodporuje pruhlednost. Pruhledne oblasti budou bile. Pouzijte PNG nebo WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Uchovejte originaly",
+          "description": "Ztratova konverze je nevratna. Uchovejte kopie IMAGE souboru."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu obrázek na Base64",
       "openByDefault": 0,
@@ -147,6 +188,18 @@
         {
           "question": "Funguje převodník na mobilu?",
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        },
+        {
+          "question": "Je konverze IMAGE na BASE64 bezpecna?",
+          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+        },
+        {
+          "question": "Mohu konvertovat vice souboru IMAGE?",
+          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+        },
+        {
+          "question": "Je BASE64 podporovan vsemi prohlizeci?",
+          "answer": "BASE64 je podporovan v Chrome, Firefox, Safari, Edge a Opera."
         }
       ]
     },
@@ -158,7 +211,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Převodník obrázek na Base64"
     },

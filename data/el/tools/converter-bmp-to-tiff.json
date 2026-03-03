@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας BMP σε TIFF — BMP TIFF",
     "description": "Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-bmp-se-tiff"
   },
   "hero": {
     "title": "Μετατροπέας BMP σε TIFF",
     "description": "Μετατρεψτε αρχεια BMP σε επαγγελματικη μορφη TIFF για εκτυπωση. Η επεξεργασία γίνεται τοπικά στο πρόγραμμα περιήγησης — τα αρχεία δεν φεύγουν από τη συσκευή σας.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε BMP σε TIFF;",
       "html": "<p class=\"text-mid mb-4\">Το Bitmap (BMP) είναι μια παλαιότερη μορφή εικόνας Windows που αποθηκεύει δεδομένα pixel χωρίς συμπίεση. Τα αρχεία BMP είναι εξαιρετικά μεγάλα και ακατάλληλα για σύγχρονη χρήση στο διαδίκτυο ή σε κινητές συσκευές.</p><p class=\"text-mid mb-4\">Το TIFF διατηρεί την πλήρη ποιότητα εικόνας χωρίς καμία απώλεια δεδομένων και υποστηρίζει επίπεδα και εκτεταμένα μεταδεδομένα. Ως βιομηχανικό πρότυπο για εκτύπωση και αρχειοθέτηση, το TIFF είναι κατάλληλο για επαγγελματίες φωτογράφους και τυπογραφεία.</p><p class=\"text-mid mb-4\">Η μετατροπή BMP σε TIFF διατηρεί πλήρη ποιότητα και προσθέτει υποστήριξη μεταδεδομένων. Το TIFF είναι καταλληλότερο από BMP για μακροπρόθεσμη αρχειοθέτηση.</p><p class=\"text-mid\">Αυτός ο μετατροπέας λειτουργεί εξ ολοκλήρου τοπικά στον περιηγητή σας – τα αρχεία σας δεν εγκαταλείπουν ποτέ τη συσκευή σας. Χωρίς μεταφορτώσεις, χωρίς διακομιστές, χωρίς εγγραφή. Πλήρως συμβατό με GDPR και δωρεάν χωρίς κανέναν περιορισμό.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Μετατροπή BMP σε TIFF",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Poso exoikonomeis metatrepontas BMP se TIFF;",
+      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Symvoules gia metatropi BMP se TIFF",
+      "description": "Symvoules gia apofygi provlimaton:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Poly megala archeia",
+          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Idi sympiesmena",
+          "description": "An to BMP itan idi sympiesmeno, i metatropi se TIFF mporei na min exoikonomisi polla."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Diafaneia",
+          "description": "To TIFF ypostirizei alfa kanali. Oi diafaneis perioches tou BMP diatirountai."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Kratiste ta prototypa",
+          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton BMP archeion."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Συχνές ερωτήσεις για τη μετατροπή BMP σε TIFF",
       "openByDefault": 0,
@@ -275,6 +316,18 @@
         {
           "question": "Λειτουργεί σε κινητά;",
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο φυλλομετρητή."
+        },
+        {
+          "question": "Einai asfalis i metatropi BMP se TIFF;",
+          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+        },
+        {
+          "question": "Mporo na metatrepso polla archeia BMP;",
+          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+        },
+        {
+          "question": "Ypostirizoun oloi oi browsers to TIFF;",
+          "answer": "To TIFF ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
         }
       ]
     },
@@ -286,7 +339,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε σφάλμα ή θέλετε να προτείνετε λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Επικοινωνία",
       "defaultSubject": "Μετατροπέας BMP σε TIFF"
     },

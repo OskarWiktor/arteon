@@ -4,13 +4,13 @@
   "metadata": {
     "title": "TIFF to AVIF converter — TIFF AVIF",
     "description": "Convert TIFF files to modern AVIF. Massive file size reduction. Runs entirely in your browser. No server uploads, no registration required.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/tiff-to-avif-converter"
   },
   "hero": {
     "title": "TIFF to AVIF converter",
     "description": "Convert TIFF files to modern AVIF. Massive file size reduction. Runs entirely in your browser. No server uploads, no registration required.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Why convert TIFF to AVIF?",
       "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is a lossless image format supporting millions colors. It is widely used for print and archival with browser support in limited.</p><p class=\"text-mid mb-4\">Converting TIFF to AVIF (AV1 Image File Format) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">AVIF supports alpha transparency, preserving any transparent areas in your image. AVIF supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many TIFF files as you need, completely free.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "TIFF to AVIF conversion",
       "variant": "right"
     },
@@ -303,7 +303,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Contact",
       "defaultSubject": "TIFF to AVIF converter"
     },

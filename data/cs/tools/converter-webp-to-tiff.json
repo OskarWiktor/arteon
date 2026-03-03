@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník WebP na TIFF — WebP TIFF",
     "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-webp-na-tiff"
   },
   "hero": {
     "title": "Převodník WebP na TIFF",
     "description": "Převeďte obrázky WebP na profesionální TIFF pro tisk a archivaci. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Proč převádět WebP na TIFF?",
       "html": "<p class=\"text-mid mb-4\">WebP je moderní obrazový formát od Googlu podporující jak ztrátovou, tak bezeztrátovou kompresi. Vytváří výrazně menší soubory než PNG a JPEG při srovnatelné vizuální kvalitě a je podporován všemi aktuálními prohlížeči.</p><p class=\"text-mid mb-4\">TIFF zachovává plnou kvalitu obrazu bez jakékoli ztráty dat a podporuje vrstvy a rozsáhlá metadata. Jako průmyslový standard pro tisk a archivaci je TIFF vhodný pro profesionální fotografy a tiskárny.</p><p class=\"text-mid mb-4\">Převod transformuje vaše WebP soubory do profesionálního TIFF formátu. Ideální pro tiskovou produkci a dlouhodobou archivaci, kde je vyžadována bezeztrátová kvalita a plná podpora metadat.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod WEBP na TIFF",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kolik usetrite konverzi WebP na TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipy pro konverzi WebP na TIFF",
+      "description": "Tipy jak se vyhnout problemum:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Velmi velke soubory",
+          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jiz komprimovane",
+          "description": "Pokud byl WebP jiz silne komprimovany, konverze na TIFF nemusi usetrit mnoho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Pruhlednost",
+          "description": "TIFF podporuje alfa kanal. Pruhledne oblasti WebP budou zachovany."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Uchovejte originaly",
+          "description": "Ztratova konverze je nevratna. Uchovejte kopie WebP souboru."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu WebP na TIFF",
       "openByDefault": 0,
@@ -275,6 +316,18 @@
         {
           "question": "Funguje převodník na mobilních zařízeních?",
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem, včetně smartphoneů a tabletů."
+        },
+        {
+          "question": "Je konverze WebP na TIFF bezpecna?",
+          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+        },
+        {
+          "question": "Mohu konvertovat vice souboru WebP?",
+          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+        },
+        {
+          "question": "Je TIFF podporovan vsemi prohlizeci?",
+          "answer": "TIFF je podporovan v Chrome, Firefox, Safari, Edge a Opera."
         }
       ]
     },
@@ -286,7 +339,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "Převodník WEBP na TIFF"
     },

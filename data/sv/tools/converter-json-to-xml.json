@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JSON till XML-konverterare — JSON XML",
     "description": "Konvertera JSON till XML-format. Automatisk parsning och formatering. Gratis.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/json-till-xml-konverterare"
   },
   "hero": {
     "title": "JSON till XML-konverterare",
     "description": "Konvertera JSON till XML-format. Automatisk parsning och formatering. Gratis.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera JSON till XML?",
-      "html": "<p class=\"text-mid mb-4\">Konvertera JSON till XML-format. Automatisk parsning och formatering. Gratis.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">JSON ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till XML erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina JSON-filer till XML-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "JSON to XML conversion",
       "variant": "right"
     },
@@ -191,6 +191,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hur mycket sparar du vid konvertering JSON till XML?",
+      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for konvertering JSON till XML",
+      "description": "Tips for att undvika vanliga problem:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Mycket stora filer",
+          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Redan komprimerade",
+          "description": "Om JSON redan var kraftigt komprimerad kanske konvertering till XML inte sparar mycket."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "XML stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Spara originalen",
+          "description": "Forlustkomprimering ar irreversibel. Spara kopior av JSON-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om JSON till XML-konvertering",
       "openByDefault": 0,
@@ -210,6 +251,18 @@
         {
           "question": "Fungerar konverteraren på mobilen?",
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
+        },
+        {
+          "question": "Ar konvertering JSON till XML saker?",
+          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+        },
+        {
+          "question": "Kan jag konvertera flera JSON-filer samtidigt?",
+          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+        },
+        {
+          "question": "Stods XML av alla webblasare?",
+          "answer": "XML stods av Chrome, Firefox, Safari, Edge och Opera."
         }
       ]
     },
@@ -221,7 +274,7 @@
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
       "description": "Har du en idé, hittat en bugg eller vill föreslå något? Skicka oss ett meddelande – vi svarar inom 24 timmar.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "Contact",
       "defaultSubject": "JSON till XML-konverterare"
     },

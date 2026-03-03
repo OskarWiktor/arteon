@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP AVIF -muunnin — WebP AVIF",
     "description": "Muunna WebP-tiedostot AVIF-muotoon. Viela parempi pakkaus modernissa formaatissa. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/webp-avif-muunnin"
   },
   "hero": {
     "title": "WebP AVIF -muunnin",
     "description": "Muunna WebP-tiedostot AVIF-muotoon. Viela parempi pakkaus modernissa formaatissa. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Miksi muuntaa WebP AVIF-muotoon?",
       "html": "<p class=\"text-mid mb-4\">WebP on Googlen kehittämä moderni kuvamuoto, joka tukee sekä häviöllistä että häviötöntä pakkausta. Se tuottaa huomattavasti pienempiä tiedostoja kuin PNG ja JPEG vastaavalla visuaalisella laadulla ja on kaikkien nykyisten selainten tukema.</p><p class=\"text-mid mb-4\">AVIF tarjoaa tehokkaimman pakkauksen kaikista nykyisistä kuvamuodoista ja voi pienentää tiedostokokoa jopa 50% JPEG:hen verrattuna. Chrome, Firefox ja Safari 16+ tukevat AVIF:ia. Se on optimaalinen valinta suorituskykykriittisiin verkkoprojekteihin.</p><p class=\"text-mid mb-4\">AVIF tarjoaa vielä parempaa pakkausta kuin WebP vastaavalla laadulla. Jos haluat optimoida kuvasi seuraavan sukupolven verkkostandardeille, WebP:stä AVIF:iin muunnos on looginen askel.</p><p class=\"text-mid\">Tämä muunnin toimii kokonaan paikallisesti selaimessasi – tiedostosi eivät koskaan poistu laitteeltasi. Ei latauksia, ei palvelimia, ei rekisteröitymistä. Täysin GDPR-yhteensopiva ja maksuton ilman mitään rajoituksia.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "WEBP-AVIF-muunnos",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Laatuasetukset — mita valita muunnoksessa WebP AVIF?",
+      "html": "<p class=\"text-mid\">Liukusaadin 60%-95%. Korkeampi = parempi laatu mutta suurempi tiedosto.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (oletus) — hyva verkkosivuille, blogeille, artikkeleille.</strong></li><li><strong>85–90% — tuotekuville, portfolioille ja gallerioille.</strong></li><li><strong>60–70% — kun tiedostokoon minimointi on tarkeaa.</strong></li></ul><p class=\"text-mid mt-3\">80% laadulla ero WebP:n ja AVIF:n valilla on kaytannossa huomaamaton.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten kuvamuunnos vaikuttaa nopeuteen ja SEO:hon",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman nakyvam elementin nayttamiseen.</p><p class=\"text-mid mb-4\">WebP-kuvien muuntaminen AVIF-muotoon pienentaa tiedostokokoa, lyhentaa latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vinkkeja WebP-AVIF-muunnokseen",
+      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Erittain suuret tiedostot",
+          "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jo pakatut",
+          "description": "Jos WebP oli jo voimakkaasti pakattu, muunnos AVIF-muotoon ei valttamatta saasta paljon."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Lapinakyvy",
+          "description": "AVIF tukee alfakanavaa. WebP:n lapinakyyt alueet sailyvat."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Sailyta alkuperaiset",
+          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot WebP-tiedostoista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset WebP-AVIF-muunnoksesta",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Toimiiko muunnin mobiililaitteilla?",
           "answer": "Kyllä, se toimii millä tahansa laitteella, jossa on moderni selain."
+        },
+        {
+          "question": "Onko WebP AVIF muunnos turvallinen?",
+          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+        },
+        {
+          "question": "Voinko muuntaa useita WebP-tiedostoja kerralla?",
+          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+        },
+        {
+          "question": "Tukevatko kaikki selaimet AVIF-muotoa?",
+          "answer": "AVIF-muotoa tukevat Chrome, Firefox, Safari, Edge ja Opera."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "Yhteystiedot",
       "defaultSubject": "WEBP-AVIF-muunnin"
     },

@@ -244,6 +244,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Qualita — cosa scegliere per WebP in JPG?",
+      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predefinito) — buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% — per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% — quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la differenza tra WebP originale e JPG risultante e impercettibile.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quanto risparmiare convertendo WebP in JPG?",
+      "html": "<p class=\"text-mid mb-4\">Il risparmio dipende dal tipo di file e dalla compressione originale:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto fotocamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Immagine prodotto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Il risparmio reale varia in base a contenuto e impostazioni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come la conversione influisce su velocita e SEO",
+      "html": "<p class=\"text-mid mb-4\">I Core Web Vitals sono metriche Google. Il LCP misura il tempo per visualizzare l'elemento piu grande.</p><p class=\"text-mid mb-4\">Convertire WebP in JPG riduce le dimensioni, accorcia il download e migliora il LCP. File piu piccoli = caricamento rapido su mobile. <code>loading=\"lazy\"</code> e <code>fetchpriority=\"high\"</code> velocizzano il rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> e Lighthouse identificano file da ottimizzare.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Consigli per convertire WebP in JPG",
+      "description": "Consigli per evitare problemi comuni:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "File molto grandi",
+          "description": "Immagini sopra 4000×4000 px possono essere piu lente. Dividi in lotti da 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "File gia compressi",
+          "description": "Se il WebP era gia compresso, la conversione in JPG potrebbe risparmiare poco."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Trasparenza",
+          "description": "JPG non supporta trasparenza. Le aree trasparenti diventano bianche. Considera PNG o WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conserva originali",
+          "description": "La conversione con perdita e irreversibile. Conserva copie dei file WebP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da WebP a JPG",
       "openByDefault": 0,
@@ -271,6 +330,14 @@
         {
           "question": "Il convertitore funziona su dispositivi mobili?",
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno, inclusi smartphone e tablet."
+        },
+        {
+          "question": "E sicuro convertire WebP in JPG?",
+          "answer": "Si. Tutto avviene localmente nel browser via Canvas API. Niente viene inviato a server."
+        },
+        {
+          "question": "Posso convertire piu file WebP?",
+          "answer": "Si. Conversione batch senza limiti. Trascina i file nel convertitore."
         }
       ]
     },

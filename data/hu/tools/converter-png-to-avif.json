@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG AVIF konverter — PNG AVIF",
     "description": "PNG grafika konvertálása AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/png-avif-konverter"
   },
   "hero": {
     "title": "PNG AVIF konverter",
     "description": "PNG grafika konvertálása AVIF-re atlatszosag megtartasaval. Jelentosen kisebb fajlok. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Miért érdemes PNG-t AVIF-re konvertálni?",
       "html": "<p class=\"text-mid mb-4\">A Portable Network Graphics (PNG) egy veszteségmentes képformátum, amely több millió színt és teljes alfa-átlátszóságot támogat. A PNG különösen alkalmas logókhoz, ikonokhoz, képernyőképekhez és éles szélű vagy szöveges grafikákhoz.</p><p class=\"text-mid mb-4\">Az AVIF a leghatékonyabb tömörítést kínálja az összes jelenlegi képformátum közül, akár 50%-kal csökkentve a fájlméretet a JPEG-hez képest. A Chrome, Firefox és Safari 16+ támogatja az AVIF-ot. Optimális választás teljesítménykritikus webprojektekhez.</p><p class=\"text-mid mb-4\">Az AVIF még jobb tömörítést kínál, mint a WebP, és akár 50%-kal csökkentheti a PNG-képek méretét. Az alfa-átlátszóság teljes mértékben támogatott. A régebbi böngészők esetleg még nem támogatják az AVIF-ot.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "PNG konvertálás AVIF formátumba",
       "variant": "right"
     },
@@ -252,6 +252,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Minosegi beallitasok — mit valassz PNG AVIF konvertalasahoz?",
+      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (alap) — jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% — termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% — amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">80%-os minosegnel a kulonbseg PNG es AVIF kozott szabad szemmel eszrevehetetlen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Mennyit takarit meg PNG AVIF konvertalasaval?",
+      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan hat a kepkonvertalas az oldalsebessegeere es SEO-ra",
+      "html": "<p class=\"text-mid mb-4\">A Core Web Vitals Google teljesitmenymutatoi. Az LCP a legnagyobb lathato elem megjelenesi idejet meri.</p><p class=\"text-mid mb-4\">PNG kepek AVIF formaba konvertalasa csokkenti a fajlmeretet, javitja az LCP-t. Kisebb fajlok = gyorsabb betoltes mobilon. <code>loading=\"lazy\"</code> es <code>fetchpriority=\"high\"</code> gyorsitjak a renderelest.</p><p class=\"text-mid\">A <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> es Lighthouse azonositjak az optimalizalando fajlokat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tippek PNG AVIF konvertalasahoz",
+      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Nagyon nagy fajlok",
+          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Mar tomoriteett fajlok",
+          "description": "Ha a PNG mar erosen tomoriteett volt, AVIF konvertalas keveset takarithat."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Atlatszosag",
+          "description": "AVIF tamogatja az alfa csatornat. A PNG atlatszo terultei megmaradnak."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Orizze meg az eredetiket",
+          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a PNG fajlok masolatait."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a PNG-AVIF konvertálásról",
       "openByDefault": 0,
@@ -275,6 +334,18 @@
         {
           "question": "Működik mobileszközökön?",
           "answer": "Igen, bármely modern böngészővel rendelkező eszközön működik."
+        },
+        {
+          "question": "Biztonsagos PNG AVIF konvertalasa?",
+          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+        },
+        {
+          "question": "Konvertalhatok tobb PNG fajlt egyszerre?",
+          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+        },
+        {
+          "question": "Minden bongeszo tamogatja a AVIF-t?",
+          "answer": "AVIF-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
         }
       ]
     },
@@ -286,7 +357,7 @@
       "type": "contactForm",
       "title": "Segítsen nekünk fejleszteni eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "Kapcsolat",
       "defaultSubject": "PNG-AVIF konverter"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG zu TIFF Konverter — PNG TIFF",
     "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/png-zu-tiff-konverter"
   },
   "hero": {
     "title": "PNG zu TIFF Konverter",
     "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Warum PNG in TIFF konvertieren?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) ist ein verlustfreies Bildformat, das Millionen Farben und volle Alpha-Transparenz unterstützt. PNG eignet sich besonders für Logos, Icons, Screenshots und Grafiken mit scharfen Kanten oder Text – überall dort, wo jedes Pixel zählt.</p><p class=\"text-mid mb-4\">TIFF bewahrt die volle Bildqualität ohne jeglichen Datenverlust und unterstützt Ebenen sowie umfangreiche Metadaten. Als Industriestandard für Druck und Archivierung eignet sich TIFF für professionelle Fotografen, Druckereien und alle, die Bilder in höchster Qualität aufbewahren möchten.</p><p class=\"text-mid mb-4\">Die Konvertierung bewahrt die volle Bildqualität und Transparenz des PNG-Originals im TIFF-Format. TIFF eignet sich besonders für die Weiterverarbeitung in Programmen wie Photoshop oder für den professionellen Druck. Beachten Sie, dass TIFF-Dateien deutlich größer sein können als PNG.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "PNG-zu-TIFF-Konvertierung",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Wie viel sparen Sie bei Konvertierung von PNG zu TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipps fur Konvertierung von PNG zu TIFF",
+      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Sehr grosse Dateien",
+          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Bereits komprimierte Dateien",
+          "description": "Stark komprimierte PNG-Dateien bringen bei Konvertierung zu TIFF moglicherweise wenig Einsparung."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparenz",
+          "description": "TIFF unterstutzt Alphakanal. Transparente Bereiche der PNG-Datei werden beibehalten."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Originale aufbewahren",
+          "description": "Verlustbehaftete Konvertierung ist irreversibel. Bewahren Sie Kopien der PNG-Originale auf."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zur Konvertierung von PNG in TIFF",
       "openByDefault": 0,
@@ -279,6 +320,14 @@
         {
           "question": "Funktioniert der Konverter auf Mobilgeräten?",
           "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
+        },
+        {
+          "question": "Ist Konvertierung von PNG zu TIFF sicher?",
+          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+        },
+        {
+          "question": "Wird TIFF von allen Browsern unterstutzt?",
+          "answer": "TIFF wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
         }
       ]
     },
@@ -290,7 +339,7 @@
       "type": "contactForm",
       "title": "Helfen Sie uns, unsere Tools zu verbessern",
       "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "PNG-zu-TIFF-Konverter"
     },

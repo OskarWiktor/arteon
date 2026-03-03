@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP GIF konverter — WebP GIF",
     "description": "WebP kepek konvertálása GIF formatumra maximalis kompatibilitassal. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/webp-gif-konverter"
   },
   "hero": {
     "title": "WebP GIF konverter",
     "description": "WebP kepek konvertálása GIF formatumra maximalis kompatibilitassal. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Miért érdemes WebP-t GIF-re konvertálni?",
       "html": "<p class=\"text-mid mb-4\">A WebP a Google által fejlesztett modern képformátum, amely veszteséges és veszteségmentes tömörítést is támogat. Jelentősen kisebb fájlokat eredményez, mint a PNG és JPEG hasonló vizuális minőségben, és minden jelenlegi böngésző támogatja.</p><p class=\"text-mid mb-4\">A GIF a rövid animációk, mémek és egyszerű, korlátozott színpalettájú grafikák standard formátuma. Univerzális böngészőtámogatással a GIF különösen alkalmas animált tartalmakhoz a közösségi médiában és üzenetküldő alkalmazásokban.</p><p class=\"text-mid mb-4\">A konvertálás 256 színre csökkenti a palettát. Egyszerű grafikákhoz alkalmas, vagy amikor a GIF formátum animációkhoz vagy kompatibilitási okokból szükséges.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "WEBP konvertálás GIF formátumba",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Mennyit takarit meg WebP GIF konvertalasaval?",
+      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan hat a kepkonvertalas az oldalsebessegeere es SEO-ra",
+      "html": "<p class=\"text-mid mb-4\">A Core Web Vitals Google teljesitmenymutatoi. Az LCP a legnagyobb lathato elem megjelenesi idejet meri.</p><p class=\"text-mid mb-4\">WebP kepek GIF formaba konvertalasa csokkenti a fajlmeretet, javitja az LCP-t. Kisebb fajlok = gyorsabb betoltes mobilon. <code>loading=\"lazy\"</code> es <code>fetchpriority=\"high\"</code> gyorsitjak a renderelest.</p><p class=\"text-mid\">A <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> es Lighthouse azonositjak az optimalizalando fajlokat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tippek WebP GIF konvertalasahoz",
+      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Nagyon nagy fajlok",
+          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Mar tomoriteett fajlok",
+          "description": "Ha a WebP mar erosen tomoriteett volt, GIF konvertalas keveset takarithat."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Atlatszosag",
+          "description": "GIF tamogatja az alfa csatornat. A WebP atlatszo terultei megmaradnak."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Orizze meg az eredetiket",
+          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a WebP fajlok masolatait."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a WebP-GIF konvertálásról",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Működik mobileszközökön?",
           "answer": "Igen, bármely modern böngészővel rendelkező eszközön működik."
+        },
+        {
+          "question": "Biztonsagos WebP GIF konvertalasa?",
+          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+        },
+        {
+          "question": "Konvertalhatok tobb WebP fajlt egyszerre?",
+          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+        },
+        {
+          "question": "Minden bongeszo tamogatja a GIF-t?",
+          "answer": "GIF-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Segítsen nekünk fejleszteni eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "Kapcsolat",
       "defaultSubject": "WEBP-GIF konverter"
     },

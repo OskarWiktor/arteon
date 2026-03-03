@@ -244,6 +244,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kvalitet — hvad vaelge ved konvertering HEIC til JPG?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 85% er forskellen mellem HEIC og JPG praktisk talt umaerkelig.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af HEIC til JPG reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips til konvertering HEIC til JPG",
+      "description": "Tips for at undga problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Meget store filer",
+          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerede",
+          "description": "Hvis HEIC allerede var komprimeret, giver konvertering til JPG maske ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "JPG understotter ikke transparens. Transparente omrader bliver hvide. Overvej PNG eller WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originaler",
+          "description": "Tabsgivende konvertering er irreversibel. Behold kopier af HEIC-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af HEIC til JPG",
       "openByDefault": 0,
@@ -267,6 +317,18 @@
         {
           "question": "Fungerer konverteren på mobilenheder?",
           "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
+        },
+        {
+          "question": "Er konvertering HEIC til JPG sikker?",
+          "answer": "Ja. Alt sker lokalt i browseren via Canvas API. Intet sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere HEIC-filer?",
+          "answer": "Ja. Batchkonvertering uden begraensning. Traek filer til konverteringsomradet."
+        },
+        {
+          "question": "Understotter alle browsere JPG?",
+          "answer": "JPG understttes af Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },

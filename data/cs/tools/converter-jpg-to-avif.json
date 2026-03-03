@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník JPG na AVIF — JPG AVIF",
     "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-jpg-na-avif"
   },
   "hero": {
     "title": "Převodník JPG na AVIF",
     "description": "Převeďte fotky JPG na moderni AVIF. Az o 50% lepsi komprese nez JPG pri zachovani kvality. Běží přímo v prohlížeči. Žádné nahrávání na server, žádná registrace.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Proč převádět JPG na AVIF?",
       "html": "<p class=\"text-mid mb-4\">JPEG (JPG) je celosvětově nejrozšířenější formát pro digitální fotografie. Využívá ztrátovou kompresi pro kompaktní soubory, ale nepodporuje transparenci ani bezeztrátové ukládání.</p><p class=\"text-mid mb-4\">AVIF nabízí nejefektivnější kompresi ze všech aktuálních obrazových formátů a dokáže zmenšit velikost až o 50% oproti JPEG. Chrome, Firefox a Safari 16+ podporují AVIF. Je to optimální volba pro výkonnostně kritické webové projekty.</p><p class=\"text-mid mb-4\">AVIF dosahuje až o 50% lepší komprese než JPEG při srovnatelné vizuální kvalitě. Tento formát nové generace je ideální pro výkonnostně kritické webové stránky a je podporován Chrome, Firefox a Safari 16+.</p><p class=\"text-mid\">Tento převodník pracuje zcela lokálně ve vašem prohlížeči – soubory nikdy neopustí vaše zařízení. Žádné nahrávání, žádné servery, žádná registrace. Plně v souladu s GDPR a zdarma bez jakýchkoli omezení.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převod JPG na AVIF",
       "variant": "right"
     },
@@ -252,6 +252,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Nastaveni kvality — co zvolit pri konverzi JPG na AVIF?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 80% je rozdil mezi originalnim JPG a vyslednym AVIF nepostrehnutelny.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kolik usetrite konverzi JPG na AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak konverze ovlivnuje rychlost a SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals jsou metriky Google. LCP meri cas do zobrazeni nejvetsiho prvku.</p><p class=\"text-mid mb-4\">Konverze JPG na AVIF zmensuje soubory, zkracuje stahovani a zlepsuje LCP. Mensi soubory = rychlejsi nacitani na mobilu. <code>loading=\"lazy\"</code> a <code>fetchpriority=\"high\"</code> urychluji rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> a Lighthouse identifikuji soubory k optimalizaci.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipy pro konverzi JPG na AVIF",
+      "description": "Tipy jak se vyhnout problemum:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Velmi velke soubory",
+          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jiz komprimovane",
+          "description": "Pokud byl JPG jiz silne komprimovany, konverze na AVIF nemusi usetrit mnoho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Pruhlednost",
+          "description": "AVIF podporuje alfa kanal. Pruhledne oblasti JPG budou zachovany."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Uchovejte originaly",
+          "description": "Ztratova konverze je nevratna. Uchovejte kopie JPG souboru."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu JPG na AVIF",
       "openByDefault": 0,
@@ -275,6 +334,18 @@
         {
           "question": "Funguje převodník na mobilních zařízeních?",
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem, včetně smartphoneů a tabletů."
+        },
+        {
+          "question": "Je konverze JPG na AVIF bezpecna?",
+          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+        },
+        {
+          "question": "Mohu konvertovat vice souboru JPG?",
+          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+        },
+        {
+          "question": "Je AVIF podporovan vsemi prohlizeci?",
+          "answer": "AVIF je podporovan v Chrome, Firefox, Safari, Edge a Opera."
         }
       ]
     },
@@ -286,7 +357,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídáme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "Převodník JPG na AVIF"
     },

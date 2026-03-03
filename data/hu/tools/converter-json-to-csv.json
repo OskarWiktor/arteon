@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JSON CSV konverter — JSON CSV",
     "description": "JSON konvertálása CSV formátumba. Automatikus elemzés és formázás. Ingyenes.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/json-csv-konverter"
   },
   "hero": {
     "title": "JSON CSV konverter",
     "description": "JSON konvertálása CSV formátumba. Automatikus elemzés és formázás. Ingyenes.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes JSON-t CSV-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">JSON konvertálása CSV formátumba. Automatikus elemzés és formázás. Ingyenes.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">A JSON szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a CSV formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a JSON fajlokat CSV formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "JSON to CSV conversion",
       "variant": "right"
     },
@@ -191,6 +191,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Mennyit takarit meg JSON CSV konvertalasaval?",
+      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tippek JSON CSV konvertalasahoz",
+      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Nagyon nagy fajlok",
+          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Mar tomoriteett fajlok",
+          "description": "Ha a JSON mar erosen tomoriteett volt, CSV konvertalas keveset takarithat."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Atlatszosag",
+          "description": "CSV nem tamogatja az atlatszosagot. Feher hatter lesz. Hasznaljon PNG-t vagy WebP-t."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Orizze meg az eredetiket",
+          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a JSON fajlok masolatait."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a JSON-CSV konverzióról",
       "openByDefault": 0,
@@ -210,6 +251,18 @@
         {
           "question": "Működik a konverter mobilon?",
           "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
+        },
+        {
+          "question": "Biztonsagos JSON CSV konvertalasa?",
+          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+        },
+        {
+          "question": "Konvertalhatok tobb JSON fajlt egyszerre?",
+          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+        },
+        {
+          "question": "Minden bongeszo tamogatja a CSV-t?",
+          "answer": "CSV-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
         }
       ]
     },
@@ -221,7 +274,7 @@
       "type": "contactForm",
       "title": "Segítsen javítani eszközeinket",
       "description": "Van ötlete, hibát talált vagy javaslatot szeretne tenni? Írjon nekünk – 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "Contact",
       "defaultSubject": "JSON CSV konverter"
     },

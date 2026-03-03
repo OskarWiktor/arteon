@@ -4,13 +4,13 @@
   "metadata": {
     "title": "HEIC naar TIFF converter — HEIC TIFF",
     "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/heic-naar-tiff-converter"
   },
   "hero": {
     "title": "HEIC naar TIFF converter",
     "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Waarom HEIC naar TIFF converteren?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is het standaardformaat voor foto's op Apple-apparaten sinds iOS 11. HEIC biedt kleinere bestanden dan JPEG bij vergelijkbare kwaliteit, maar wordt buiten het Apple-ecosysteem niet standaard ondersteund.</p><p class=\"text-mid mb-4\">TIFF behoudt de volledige beeldkwaliteit zonder enig gegevensverlies en ondersteunt lagen en uitgebreide metadata. Als industriestandaard voor drukwerk en archivering is TIFF geschikt voor professionele fotografen en drukkerijen.</p><p class=\"text-mid mb-4\">De conversie zet uw iPhone-foto's om naar het professionele TIFF-formaat. Ideaal voor fotografen die hun mobiele opnamen willen archiveren in verliesvrij formaat en verder bewerken in Photoshop of Lightroom.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "HEIC naar TIFF conversie",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hoeveel besparen bij conversie HEIC naar TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips voor conversie HEIC naar TIFF",
+      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Zeer grote bestanden",
+          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Reeds gecomprimeerd",
+          "description": "Als het HEIC-bestand al sterk gecomprimeerd was, levert conversie naar TIFF mogelijk weinig besparing."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparantie",
+          "description": "TIFF ondersteunt alfakanaal. Transparante gebieden van HEIC worden behouden."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Bewaar originelen",
+          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van HEIC-bestanden."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over HEIC-naar-TIFF-conversie",
       "openByDefault": 0,
@@ -275,6 +316,18 @@
         {
           "question": "Werkt de converter op mobiele apparaten?",
           "answer": "Ja, hij werkt op elk apparaat met een moderne webbrowser."
+        },
+        {
+          "question": "Is conversie HEIC naar TIFF veilig?",
+          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+        },
+        {
+          "question": "Kan ik meerdere HEIC-bestanden tegelijk converteren?",
+          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+        },
+        {
+          "question": "Wordt TIFF door alle browsers ondersteund?",
+          "answer": "TIFF wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
         }
       ]
     },
@@ -286,7 +339,7 @@
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
       "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "Contact",
       "defaultSubject": "HEIC naar TIFF converter"
     },

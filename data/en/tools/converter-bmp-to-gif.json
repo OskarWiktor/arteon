@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP to GIF converter — BMP GIF",
     "description": "Convert uncompressed BMP files to lightweight GIF. No installation needed, works on any device. Free, private, and unlimited.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/bmp-to-gif-converter"
   },
   "hero": {
     "title": "BMP to GIF converter",
     "description": "Convert uncompressed BMP files to lightweight GIF. No installation needed, works on any device. Free, private, and unlimited.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Why convert BMP to GIF?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is a lossless image format supporting millions colors. It is widely used for uncompressed images and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting BMP to GIF (Graphics Interchange Format) gives you more flexibility in how and where you use your images.</p><p class=\"text-mid mb-4\">GIF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, GIF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many BMP files as you need, completely free.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "BMP to GIF conversion",
       "variant": "right"
     },
@@ -261,6 +261,24 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting BMP to GIF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them — LCP (Largest Contentful Paint) — measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting BMP images to GIF reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading — especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about BMP to GIF conversion",
       "openByDefault": 0,
@@ -303,7 +321,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Contact",
       "defaultSubject": "BMP to GIF converter"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG till GIF-konverterare — PNG GIF",
     "description": "Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/png-till-gif-konverterare"
   },
   "hero": {
     "title": "PNG till GIF-konverterare",
     "description": "Konvertera PNG-grafik till GIF. Idealiskt for enkla ikoner och grafik. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Varför konvertera PNG till GIF?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) är ett förlustfritt bildformat som stöder miljontals färger och full alfa-transparens. PNG är särskilt lämpligt för logotyper, ikoner, skärmbilder och grafik med skarpa kanter eller text.</p><p class=\"text-mid mb-4\">GIF är standardformatet för korta animationer, memes och enkel grafik med begränsad färgpalett. Med universellt webbläsarstöd är GIF särskilt lämpligt för animerat innehåll i sociala medier och meddelandeappar.</p><p class=\"text-mid mb-4\">Konverteringen reducerar paletten till maximalt 256 färger. Resultatet är lämpligt för enkel grafik, ikoner och logotyper. Transparens stöds endast binärt (synlig eller osynlig), inte gradvis.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "PNG till GIF konvertering",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hur mycket sparar du vid konvertering PNG till GIF?",
+      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur bildkonvertering paverkar hastighet och SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ar Google-prestandamatt. LCP mater tiden till det storsta synliga elementet visas.</p><p class=\"text-mid mb-4\">Konvertering av PNG till GIF minskar filstorlek, forkortar nedladdning och forbattrar LCP. Mindre filer = snabbare pa mobil. <code>loading=\"lazy\"</code> och <code>fetchpriority=\"high\"</code> snabbar upp rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> och Lighthouse identifierar filer att optimera.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for konvertering PNG till GIF",
+      "description": "Tips for att undvika vanliga problem:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Mycket stora filer",
+          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Redan komprimerade",
+          "description": "Om PNG redan var kraftigt komprimerad kanske konvertering till GIF inte sparar mycket."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "GIF stoder alfakanal. Transparenta omraden i PNG bevaras."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Spara originalen",
+          "description": "Forlustkomprimering ar irreversibel. Spara kopior av PNG-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om konvertering av PNG till GIF",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Fungerar konverteraren på mobila enheter?",
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
+        },
+        {
+          "question": "Ar konvertering PNG till GIF saker?",
+          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+        },
+        {
+          "question": "Kan jag konvertera flera PNG-filer samtidigt?",
+          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+        },
+        {
+          "question": "Stods GIF av alla webblasare?",
+          "answer": "GIF stods av Chrome, Firefox, Safari, Edge och Opera."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
       "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "PNG till GIF konverterare"
     },

@@ -244,6 +244,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Setari calitate — ce alegi la conversia BMP in JPG?",
+      "html": "<p class=\"text-mid\">Cursorul permite 60%-95%. Mai mare = calitate mai buna dar fisiere mai mari.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (implicit) — echilibru bun pentru site-uri, bloguri, articole.</strong></li><li><strong>85–90% — pentru fotografii de produse, portofolii si galerii.</strong></li><li><strong>60–70% — cand minimizarea dimensiunii e prioritara.</strong></li></ul><p class=\"text-mid mt-3\">La 85% diferenta vizuala dintre BMP original si JPG rezultat e imperceptibila.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cat economisiti convertind BMP in JPG?",
+      "html": "<p class=\"text-mid mb-4\">Economiile depind de tipul fisierului si compresia originala:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto camera</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagine produs</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Economiile reale variaza in functie de continut si setari.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum afecteaza conversia viteza paginii si SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals sunt metrici Google. LCP masoara timpul pana la aparitia celui mai mare element vizibil.</p><p class=\"text-mid mb-4\">Conversia BMP in JPG reduce dimensiunea, scurteaza descarcarea si imbunatateste LCP. Fisiere mai mici = incarcare rapida pe mobil. <code>loading=\"lazy\"</code> si <code>fetchpriority=\"high\"</code> accelereaza randarea.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> si Lighthouse identifica fisierele de optimizat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Sfaturi pentru conversia BMP in JPG",
+      "description": "Sfaturi pentru evitarea problemelor:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Fisiere foarte mari",
+          "description": "Imaginile peste 4000×4000 px pot fi mai lente. Impartiti in loturi de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Fisiere deja comprimate",
+          "description": "Daca BMP era deja comprimat, conversia in JPG poate nu economisi mult."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparenta",
+          "description": "JPG nu suporta transparenta. Zonele transparente devin albe. Luati in considerare PNG sau WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Pastrati originalele",
+          "description": "Conversia cu pierderi e ireversibila. Pastrati copii ale fisierelor BMP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia BMP în JPG",
       "openByDefault": 0,
@@ -267,6 +326,18 @@
         {
           "question": "Funcționează pe dispozitive mobile?",
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        },
+        {
+          "question": "E sigura conversia BMP in JPG?",
+          "answer": "Da. Totul se face local in browser via Canvas API. Nimic nu e trimis la servere."
+        },
+        {
+          "question": "Pot converti mai multe fisiere BMP?",
+          "answer": "Da. Conversie in lot fara limita. Trageti fisierele in convertor."
+        },
+        {
+          "question": "JPG e suportat de toate browserele?",
+          "answer": "JPG e suportat de Chrome, Firefox, Safari, Edge si Opera."
         }
       ]
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Conversor BMP para PDF — BMP PDF",
     "description": "Converta imagens BMP para documentos PDF. Combine vários ficheiros num só PDF. Gratuito.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-bmp-para-pdf"
   },
   "hero": {
     "title": "Conversor BMP para PDF",
     "description": "Converta imagens BMP para documentos PDF. Combine vários ficheiros num só PDF. Gratuito.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter BMP para PDF?",
-      "html": "<p class=\"text-mid mb-4\">Converta imagens BMP para documentos PDF. Combine vários ficheiros num só PDF. Gratuito.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">BMP e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para PDF pode oferecer vantagens significativas — arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversor online gratuito transforma seus arquivos BMP para o formato PDF diretamente no navegador. Nenhum arquivo e enviado a servidores — todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "BMP to PDF conversion",
       "variant": "right"
     },
@@ -198,6 +198,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Qualidade — o que escolher ao converter BMP para PDF?",
+      "html": "<p class=\"text-mid\">O controle permite 60% a 95%. Mais alto = melhor qualidade mas arquivos maiores.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (padrao) — bom equilibrio para sites, blogs, artigos.</strong></li><li><strong>85–90% — para fotos de produtos, portfolios e galerias.</strong></li><li><strong>60–70% — quando minimizar tamanho e prioridade.</strong></li></ul><p class=\"text-mid mt-3\">Com 85% a diferenca visual entre BMP original e PDF resultante e imperceptivel.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quanto economizar convertendo BMP para PDF?",
+      "html": "<p class=\"text-mid mb-4\">A economia depende do tipo de arquivo e compressao original:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto de camera</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagem de produto</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">A economia real varia conforme conteudo e configuracoes.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Dicas para converter BMP para PDF",
+      "description": "Dicas para evitar problemas comuns:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Arquivos muito grandes",
+          "description": "Imagens acima de 4000×4000 px podem ser mais lentas. Divida em lotes de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Ja comprimidos",
+          "description": "Se o BMP ja estava muito comprimido, a conversao para PDF pode nao economizar muito."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparencia",
+          "description": "PDF nao suporta transparencia. Areas transparentes viram fundo branco. Considere PNG ou WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Mantenha originais",
+          "description": "Conversao com perdas e irreversivel. Mantenha copias dos arquivos BMP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de BMP para PDF",
       "openByDefault": 0,
@@ -217,6 +267,18 @@
         {
           "question": "O conversor funciona no telemóvel?",
           "answer": "Sim, funciona em qualquer dispositivo com um navegador web moderno."
+        },
+        {
+          "question": "Converter BMP para PDF e seguro?",
+          "answer": "Sim. Tudo acontece localmente no navegador via Canvas API. Nada e enviado a servidores."
+        },
+        {
+          "question": "Posso converter varios BMP de uma vez?",
+          "answer": "Sim. Conversao em lote sem limite. Arraste para o conversor."
+        },
+        {
+          "question": "PDF e compativel com todos os navegadores?",
+          "answer": "PDF e suportado por Chrome, Firefox, Safari, Edge e Opera."
         }
       ]
     },
@@ -228,7 +290,7 @@
       "type": "contactForm",
       "title": "Ajude-nos a melhorar as nossas ferramentas",
       "description": "Tem uma ideia, encontrou um erro ou quer sugerir algo? Envie-nos uma mensagem – respondemos em 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Conversor BMP para PDF"
     },

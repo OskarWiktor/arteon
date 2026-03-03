@@ -4,13 +4,13 @@
   "metadata": {
     "title": "SVG naar TIFF converter — SVG TIFF",
     "description": "Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/svg-naar-tiff-converter"
   },
   "hero": {
     "title": "SVG naar TIFF converter",
     "description": "Converteer vector SVG-afbeeldingen naar hoogwaardig TIFF-raster. Geen installatie nodig, werkt op elk apparaat. Gratis, privé en onbeperkt.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Waarom SVG naar TIFF converteren?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is een XML-gebaseerd vectorformaat voor tweedimensionale afbeeldingen. SVG-bestanden zijn resolutieonafhankelijk en blijven scherp op elke grootte – ideaal voor logo's, pictogrammen en illustraties.</p><p class=\"text-mid mb-4\">TIFF behoudt de volledige beeldkwaliteit zonder enig gegevensverlies en ondersteunt lagen en uitgebreide metadata. Als industriestandaard voor drukwerk en archivering is TIFF geschikt voor professionele fotografen en drukkerijen.</p><p class=\"text-mid mb-4\">De rasterisatie van SVG naar TIFF produceert een verliesvrije pixelafbeelding in de hoogste kwaliteit. Ideaal voor professioneel drukwerk van vectorgrafieken wanneer een vaste pixelresolutie nodig is.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "SVG naar TIFF conversie",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hoeveel besparen bij conversie SVG naar TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips voor conversie SVG naar TIFF",
+      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Zeer grote bestanden",
+          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Reeds gecomprimeerd",
+          "description": "Als het SVG-bestand al sterk gecomprimeerd was, levert conversie naar TIFF mogelijk weinig besparing."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparantie",
+          "description": "TIFF ondersteunt alfakanaal. Transparante gebieden van SVG worden behouden."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Bewaar originelen",
+          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van SVG-bestanden."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over SVG-naar-TIFF-conversie",
       "openByDefault": 0,
@@ -275,6 +316,18 @@
         {
           "question": "Werkt de converter op mobiele apparaten?",
           "answer": "Ja, hij werkt op elk apparaat met een moderne webbrowser."
+        },
+        {
+          "question": "Is conversie SVG naar TIFF veilig?",
+          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+        },
+        {
+          "question": "Kan ik meerdere SVG-bestanden tegelijk converteren?",
+          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+        },
+        {
+          "question": "Wordt TIFF door alle browsers ondersteund?",
+          "answer": "TIFF wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
         }
       ]
     },
@@ -286,7 +339,7 @@
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
       "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "Contact",
       "defaultSubject": "SVG naar TIFF converter"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Base64 til billede-konverter — Base64 billede",
     "description": "Afkod Base64-strenge til billeder. Forhåndsvisning og download i browseren. Gratis.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/base64-til-billede-konverter"
   },
   "hero": {
     "title": "Base64 til billede-konverter",
     "description": "Afkod Base64-strenge til billeder. Forhåndsvisning og download i browseren. Gratis.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere Base64 til billede?",
-      "html": "<p class=\"text-mid mb-4\">Afkod Base64-strenge til billeder. Forhåndsvisning og download i browseren. Gratis.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">BASE64 er et udbredt filformat med bred kompatibilitet. Afhaengigt af brugen kan konvertering til IMAGE give betydelige fordele — mindre filer, bedre kvalitet eller bredere platformsunderstottelse.</p><p class=\"text-mid mb-4\">Denne gratis online-konverter omdanner dine BASE64-filer til IMAGE-format direkte i browseren. Ingen filer uploades — hele processen foregaar lokalt pa din enhed.</p><p class=\"text-mid\">Konverter sa mange filer, du vil, uden daglige begraensninger, uden registrering og uden vandmaerker. Traek og slip filer, juster kvaliteten og download resultaterne.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "Base64 to billede conversion",
       "variant": "right"
     },
@@ -128,6 +128,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hvor meget sparer du ved konvertering BASE64 til IMAGE?",
+      "html": "<p class=\"text-mid mb-4\">Besparelser afhaenger af filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbillede</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skaermbillede / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer efter indhold og indstillinger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips til konvertering BASE64 til IMAGE",
+      "description": "Tips for at undga problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Meget store filer",
+          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerede",
+          "description": "Hvis BASE64 allerede var komprimeret, giver konvertering til IMAGE maske ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "IMAGE understotter ikke transparens. Transparente omrader bliver hvide. Overvej PNG eller WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originaler",
+          "description": "Tabsgivende konvertering er irreversibel. Behold kopier af BASE64-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om Base64 til billede-konvertering",
       "openByDefault": 0,
@@ -147,6 +188,18 @@
         {
           "question": "Virker konverteren på mobil?",
           "answer": "Ja, den virker på enhver enhed med en moderne webbrowser."
+        },
+        {
+          "question": "Er konvertering BASE64 til IMAGE sikker?",
+          "answer": "Ja. Alt sker lokalt i browseren via Canvas API. Intet sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere BASE64-filer?",
+          "answer": "Ja. Batchkonvertering uden begraensning. Traek filer til konverteringsomradet."
+        },
+        {
+          "question": "Understotter alle browsere IMAGE?",
+          "answer": "IMAGE understttes af Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },
@@ -158,7 +211,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå noget? Send os en besked – vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Base64 til billede-konverter"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor SVG a AVIF — SVG AVIF",
     "description": "Convierte graficos vectoriales SVG a formato raster AVIF compacto. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-svg-a-avif"
   },
   "hero": {
     "title": "Convertidor SVG a AVIF",
     "description": "Convierte graficos vectoriales SVG a formato raster AVIF compacto. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "¿Por qué convertir SVG a AVIF?",
       "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) es un formato vectorial basado en XML para gráficos bidimensionales. Los archivos SVG son independientes de la resolución y se mantienen nítidos a cualquier tamaño, ideales para logotipos, iconos e ilustraciones.</p><p class=\"text-mid mb-4\">AVIF ofrece la compresión más eficiente de todos los formatos de imagen actuales, reduciendo el tamaño hasta un 50% respecto a JPEG. Chrome, Firefox y Safari 16+ son compatibles con AVIF. Es la opción óptima para proyectos web críticos en rendimiento y uso móvil.</p><p class=\"text-mid mb-4\">AVIF ofrece la mejor compresión para la rasterización de sus archivos SVG. Ideal para sitios web críticos en rendimiento donde cada kilobyte contribuye a mejores tiempos de carga y Core Web Vitals.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Conversión de SVG a AVIF",
       "variant": "right"
     },
@@ -252,6 +252,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ajustes de calidad — que elegir al convertir SVG a AVIF?",
+      "html": "<p class=\"text-mid\">El control permite valores entre 60% y 95%. Valores mas altos = mejor calidad pero archivos mas grandes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (predeterminado) — buen equilibrio para sitios web, blogs, articulos.</strong></li><li><strong>85–90% — para fotografia de productos, portfolios y galerias.</strong></li><li><strong>60–70% — cuando minimizar tamano es la prioridad.</strong></li></ul><p class=\"text-mid mt-3\">Con 80% la diferencia visual entre SVG original y AVIF resultante es imperceptible.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cuanto ahorras convirtiendo SVG a AVIF?",
+      "html": "<p class=\"text-mid mb-4\">El ahorro depende del tipo de archivo y su compresion original:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto de camara</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagen de producto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">El ahorro real varia segun contenido y ajustes de calidad.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como la conversion de imagenes afecta velocidad y SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals son metricas que Google usa al evaluar sitios. LCP mide el tiempo hasta que aparece el elemento visible mas grande.</p><p class=\"text-mid mb-4\">Convertir SVG a AVIF reduce el tamano, acorta descarga y mejora LCP. Archivos mas pequenos = carga mas rapida en moviles. <code>loading=\"lazy\"</code> y <code>fetchpriority=\"high\"</code> aceleran el renderizado.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> y Lighthouse identifican archivos a optimizar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Consejos para convertir SVG a AVIF",
+      "description": "Consejos para evitar problemas:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Archivos muy grandes",
+          "description": "Imagenes de mas de 4000×4000 px pueden ser mas lentas. Divide en lotes de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Archivos ya comprimidos",
+          "description": "Si el SVG ya estaba muy comprimido, la conversion a AVIF puede no ahorrar mucho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparencia",
+          "description": "AVIF admite canal alfa. Areas transparentes del SVG se conservan."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conserva originales",
+          "description": "La conversion con perdida es irreversible. Conserva copias de los archivos SVG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Preguntas frecuentes sobre la conversión de SVG a AVIF",
       "openByDefault": 0,
@@ -279,6 +338,14 @@
         {
           "question": "¿Funciona el convertidor en móviles?",
           "answer": "Sí, funciona en cualquier dispositivo con un navegador web moderno, incluyendo smartphones y tablets."
+        },
+        {
+          "question": "Es seguro convertir SVG a AVIF?",
+          "answer": "Si. Todo se procesa localmente en tu navegador via Canvas API. Los archivos nunca salen de tu dispositivo."
+        },
+        {
+          "question": "Puedo convertir varios archivos SVG a la vez?",
+          "answer": "Si. Conversion por lotes sin limite. Arrastra archivos al convertidor."
         }
       ]
     },
@@ -290,7 +357,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Contacto",
       "defaultSubject": "Convertidor SVG a AVIF"
     },

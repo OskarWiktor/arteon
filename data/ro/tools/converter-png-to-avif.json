@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertor PNG în AVIF — PNG AVIF",
     "description": "Convertește grafice PNG în AVIF cu suport transparenta. Fisiere semnificativ mai mici. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-png-in-avif"
   },
   "hero": {
     "title": "Convertor PNG în AVIF",
     "description": "Convertește grafice PNG în AVIF cu suport transparenta. Fisiere semnificativ mai mici. Funcționează direct în browser. Fără upload pe server, fără înregistrare.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "De ce să convertiți PNG în AVIF?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) este un format de imagine fără pierderi care acceptă milioane de culori și transparență alfa completă. PNG este deosebit de potrivit pentru logouri, pictograme, capturi de ecran și grafică cu margini clare sau text.</p><p class=\"text-mid mb-4\">AVIF oferă cea mai eficientă compresie dintre toate formatele de imagine actuale, reducând dimensiunea cu până la 50% față de JPEG. Chrome, Firefox și Safari 16+ acceptă AVIF. Este alegerea optimă pentru proiecte web critice în ceea ce privește performanța.</p><p class=\"text-mid mb-4\">AVIF oferă o compresie și mai bună decât WebP și poate reduce dimensiunea imaginilor PNG cu până la 50%. Transparența alfa este pe deplin acceptată. Browserele mai vechi pot să nu accepte încă AVIF.</p><p class=\"text-mid\">Acest convertor funcționează în întregime local în browserul dumneavoastră – fișierele nu părăsesc niciodată dispozitivul. Fără încărcare, fără servere, fără înregistrare. Complet conform cu GDPR și gratuit fără nicio limitare.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Conversie PNG în AVIF",
       "variant": "right"
     },
@@ -252,6 +252,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Setari calitate — ce alegi la conversia PNG in AVIF?",
+      "html": "<p class=\"text-mid\">Cursorul permite 60%-95%. Mai mare = calitate mai buna dar fisiere mai mari.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (implicit) — echilibru bun pentru site-uri, bloguri, articole.</strong></li><li><strong>85–90% — pentru fotografii de produse, portofolii si galerii.</strong></li><li><strong>60–70% — cand minimizarea dimensiunii e prioritara.</strong></li></ul><p class=\"text-mid mt-3\">La 80% diferenta vizuala dintre PNG original si AVIF rezultat e imperceptibila.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cat economisiti convertind PNG in AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Economiile depind de tipul fisierului si compresia originala:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto camera</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagine produs</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Economiile reale variaza in functie de continut si setari.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum afecteaza conversia viteza paginii si SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals sunt metrici Google. LCP masoara timpul pana la aparitia celui mai mare element vizibil.</p><p class=\"text-mid mb-4\">Conversia PNG in AVIF reduce dimensiunea, scurteaza descarcarea si imbunatateste LCP. Fisiere mai mici = incarcare rapida pe mobil. <code>loading=\"lazy\"</code> si <code>fetchpriority=\"high\"</code> accelereaza randarea.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> si Lighthouse identifica fisierele de optimizat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Sfaturi pentru conversia PNG in AVIF",
+      "description": "Sfaturi pentru evitarea problemelor:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Fisiere foarte mari",
+          "description": "Imaginile peste 4000×4000 px pot fi mai lente. Impartiti in loturi de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Fisiere deja comprimate",
+          "description": "Daca PNG era deja comprimat, conversia in AVIF poate nu economisi mult."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparenta",
+          "description": "AVIF suporta canal alfa. Zonele transparente din PNG se pastreaza."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Pastrati originalele",
+          "description": "Conversia cu pierderi e ireversibila. Pastrati copii ale fisierelor PNG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Întrebări frecvente despre conversia PNG în AVIF",
       "openByDefault": 0,
@@ -275,6 +334,18 @@
         {
           "question": "Funcționează pe dispozitive mobile?",
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
+        },
+        {
+          "question": "E sigura conversia PNG in AVIF?",
+          "answer": "Da. Totul se face local in browser via Canvas API. Nimic nu e trimis la servere."
+        },
+        {
+          "question": "Pot converti mai multe fisiere PNG?",
+          "answer": "Da. Conversie in lot fara limita. Trageti fisierele in convertor."
+        },
+        {
+          "question": "AVIF e suportat de toate browserele?",
+          "answer": "AVIF e suportat de Chrome, Firefox, Safari, Edge si Opera."
         }
       ]
     },
@@ -286,7 +357,7 @@
       "type": "contactForm",
       "title": "Ajutați-ne să îmbunătățim instrumentele noastre",
       "description": "Aveți o idee, ați găsit un bug sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Convertor PNG în AVIF"
     },

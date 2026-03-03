@@ -4,13 +4,13 @@
   "metadata": {
     "title": "YAML JSON -muunnin — YAML JSON",
     "description": "Muunna YAML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/yaml-json-muunnin"
   },
   "hero": {
     "title": "YAML JSON -muunnin",
     "description": "Muunna YAML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa YAML JSON-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">Muunna YAML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">YAML on laajalti kaytetty tiedostomuoto laajalla yhteensopivuudella. Kayttotapauksesta riippuen muuntaminen JSON-muotoon voi tarjota merkittavia etuja — pienemmat tiedostot, parempi laatu tai laajempi alusta tuki.</p><p class=\"text-mid mb-4\">Tama ilmainen verkkomuunnin muuntaa YAML-tiedostosi JSON-muotoon suoraan selaimessa. Tiedostoja ei laheteta palvelimille — koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman paivittaisia rajoituksia, rekisteroitymista tai vesileimoja. Vedaa ja pudota tiedostot, saada laatua ja lataa tulokset.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
     },
@@ -191,6 +191,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kuinka paljon saastat muuntamalla YAML JSON?",
+      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vinkkeja YAML-JSON-muunnokseen",
+      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Erittain suuret tiedostot",
+          "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jo pakatut",
+          "description": "Jos YAML oli jo voimakkaasti pakattu, muunnos JSON-muotoon ei valttamatta saasta paljon."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Lapinakyvy",
+          "description": "JSON ei tue lapinakyyytta. Lapinakyyt alueet muuttuvat valkoisiksi. Harkitse PNG:ta tai WebP:ta."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Sailyta alkuperaiset",
+          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot YAML-tiedostoista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset YAML-JSON-muunnoksesta",
       "openByDefault": 0,
@@ -210,6 +251,18 @@
         {
           "question": "Toimiiko muunnin mobiilissa?",
           "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
+        },
+        {
+          "question": "Onko YAML JSON muunnos turvallinen?",
+          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+        },
+        {
+          "question": "Voinko muuntaa useita YAML-tiedostoja kerralla?",
+          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+        },
+        {
+          "question": "Tukevatko kaikki selaimet JSON-muotoa?",
+          "answer": "JSON-muotoa tukevat Chrome, Firefox, Safari, Edge ja Opera."
         }
       ]
     },
@@ -221,7 +274,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa jotain? Lähetä meille viesti – vastaamme 24 tunnin sisällä.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "Contact",
       "defaultSubject": "YAML JSON -muunnin"
     },

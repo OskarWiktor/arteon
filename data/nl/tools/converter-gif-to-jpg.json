@@ -244,6 +244,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kwaliteit — wat kiezen bij conversie GIF naar JPG?",
+      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standaard) — goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% — voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% — wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 85% is het verschil tussen origineel GIF en JPG praktisch onzichtbaar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoeveel besparen bij conversie GIF naar JPG?",
+      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">2 MB → 120 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">500 KB → 40 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~92%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">200 KB → 25 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~88%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe beeldconversie paginasnelheid en SEO beinvloedt",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals zijn Google-prestatiemetrieken. LCP meet de tijd tot het grootste zichtbare element verschijnt.</p><p class=\"text-mid mb-4\">Conversie van GIF naar JPG verkleint bestanden, verkort downloadtijd en verbetert LCP. Kleinere bestanden = sneller laden op mobiel. <code>loading=\"lazy\"</code> en <code>fetchpriority=\"high\"</code> versnellen rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> en Lighthouse identificeren te optimaliseren bestanden.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips voor conversie GIF naar JPG",
+      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Zeer grote bestanden",
+          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Reeds gecomprimeerd",
+          "description": "Als het GIF-bestand al sterk gecomprimeerd was, levert conversie naar JPG mogelijk weinig besparing."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparantie",
+          "description": "JPG ondersteunt geen transparantie. Wordt wit. Overweeg PNG of WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Bewaar originelen",
+          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van GIF-bestanden."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over GIF-naar-JPG-conversie",
       "openByDefault": 0,
@@ -267,6 +326,18 @@
         {
           "question": "Werkt de converter op mobiele apparaten?",
           "answer": "Ja, hij werkt op elk apparaat met een moderne webbrowser."
+        },
+        {
+          "question": "Is conversie GIF naar JPG veilig?",
+          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+        },
+        {
+          "question": "Kan ik meerdere GIF-bestanden tegelijk converteren?",
+          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+        },
+        {
+          "question": "Wordt JPG door alle browsers ondersteund?",
+          "answer": "JPG wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
         }
       ]
     },

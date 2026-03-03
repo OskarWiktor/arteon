@@ -4,13 +4,13 @@
   "metadata": {
     "title": "HEIC till AVIF-konverterare — HEIC AVIF",
     "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/heic-till-avif-konverterare"
   },
   "hero": {
     "title": "HEIC till AVIF-konverterare",
     "description": "Konvertera iPhone HEIC-foton till modernt AVIF-format. Körs helt i din webbläsare. Ingen serveruppladdning, ingen registrering krävs.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Varför konvertera HEIC till AVIF?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) är standardformatet för foton på Apple-enheter sedan iOS 11. HEIC ger mindre filer än JPEG vid jämförbar kvalitet, men stöds inte nativt utanför Apples ekosystem – varken på Windows, Android eller många webbplattformar.</p><p class=\"text-mid mb-4\">AVIF erbjuder den mest effektiva komprimeringen av alla aktuella bildformat och kan minska filstorleken upp till 50% jämfört med JPEG. Chrome, Firefox och Safari 16+ stöder AVIF. Det är det optimala valet för prestandakritiska webbprojekt.</p><p class=\"text-mid mb-4\">AVIF erbjuder liknande komprimeringseffektivitet som HEIC, men stöds som öppet format mycket bredare. Konverteringen möjliggör modern komprimering utan begränsningarna i Apples ekosystem.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "HEIC till AVIF konvertering",
       "variant": "right"
     },
@@ -252,6 +252,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kvalitet — vad valja vid konvertering HEIC till AVIF?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 80% ar skillnaden mellan HEIC och AVIF praktiskt taget omarkbar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur mycket sparar du vid konvertering HEIC till AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur bildkonvertering paverkar hastighet och SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ar Google-prestandamatt. LCP mater tiden till det storsta synliga elementet visas.</p><p class=\"text-mid mb-4\">Konvertering av HEIC till AVIF minskar filstorlek, forkortar nedladdning och forbattrar LCP. Mindre filer = snabbare pa mobil. <code>loading=\"lazy\"</code> och <code>fetchpriority=\"high\"</code> snabbar upp rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> och Lighthouse identifierar filer att optimera.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for konvertering HEIC till AVIF",
+      "description": "Tips for att undvika vanliga problem:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Mycket stora filer",
+          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Redan komprimerade",
+          "description": "Om HEIC redan var kraftigt komprimerad kanske konvertering till AVIF inte sparar mycket."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "AVIF stoder alfakanal. Transparenta omraden i HEIC bevaras."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Spara originalen",
+          "description": "Forlustkomprimering ar irreversibel. Spara kopior av HEIC-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om konvertering av HEIC till AVIF",
       "openByDefault": 0,
@@ -275,6 +334,18 @@
         {
           "question": "Fungerar konverteraren på mobila enheter?",
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
+        },
+        {
+          "question": "Ar konvertering HEIC till AVIF saker?",
+          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+        },
+        {
+          "question": "Kan jag konvertera flera HEIC-filer samtidigt?",
+          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+        },
+        {
+          "question": "Stods AVIF av alla webblasare?",
+          "answer": "AVIF stods av Chrome, Firefox, Safari, Edge och Opera."
         }
       ]
     },
@@ -286,7 +357,7 @@
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
       "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "HEIC till AVIF konverterare"
     },

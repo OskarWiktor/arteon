@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore PDF in PNG — PDF PNG",
     "description": "Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-pdf-in-png"
   },
   "hero": {
     "title": "Convertitore PDF in PNG",
     "description": "Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire PDF in PNG?",
-      "html": "<p class=\"text-mid mb-4\">Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">PDF e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PNG puo offrire vantaggi significativi — file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file PDF nel formato PNG direttamente nel browser. Nessun file viene inviato a server — l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "PDF to PNG conversion",
       "variant": "right"
     },
@@ -198,6 +198,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Quanto risparmiare convertendo PDF in PNG?",
+      "html": "<p class=\"text-mid mb-4\">Il risparmio dipende dal tipo di file e dalla compressione originale:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto fotocamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Immagine prodotto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Il risparmio reale varia in base a contenuto e impostazioni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come la conversione influisce su velocita e SEO",
+      "html": "<p class=\"text-mid mb-4\">I Core Web Vitals sono metriche Google. Il LCP misura il tempo per visualizzare l'elemento piu grande.</p><p class=\"text-mid mb-4\">Convertire PDF in PNG riduce le dimensioni, accorcia il download e migliora il LCP. File piu piccoli = caricamento rapido su mobile. <code>loading=\"lazy\"</code> e <code>fetchpriority=\"high\"</code> velocizzano il rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> e Lighthouse identificano file da ottimizzare.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Consigli per convertire PDF in PNG",
+      "description": "Consigli per evitare problemi comuni:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "File molto grandi",
+          "description": "Immagini sopra 4000×4000 px possono essere piu lente. Dividi in lotti da 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "File gia compressi",
+          "description": "Se il PDF era gia compresso, la conversione in PNG potrebbe risparmiare poco."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Trasparenza",
+          "description": "PNG supporta canale alfa. Le aree trasparenti del PDF vengono preservate."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conserva originali",
+          "description": "La conversione con perdita e irreversibile. Conserva copie dei file PDF."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da PDF a PNG",
       "openByDefault": 0,
@@ -217,6 +267,18 @@
         {
           "question": "Il convertitore funziona su dispositivi mobili?",
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
+        },
+        {
+          "question": "E sicuro convertire PDF in PNG?",
+          "answer": "Si. Tutto avviene localmente nel browser via Canvas API. Niente viene inviato a server."
+        },
+        {
+          "question": "Posso convertire piu file PDF?",
+          "answer": "Si. Conversione batch senza limiti. Trascina i file nel convertitore."
+        },
+        {
+          "question": "PNG e supportato da tutti i browser?",
+          "answer": "PNG e supportato da Chrome, Firefox, Safari, Edge e Opera."
         }
       ]
     },
@@ -228,7 +290,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea, trovato un bug o vuoi suggerire qualcosa? Scrivici – rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Convertitore PDF in PNG"
     },

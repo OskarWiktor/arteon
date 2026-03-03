@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP GIF konverter — BMP GIF",
     "description": "Tömörítetlen BMP fajlok konvertálása konnyu GIF-re. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/bmp-gif-konverter"
   },
   "hero": {
     "title": "BMP GIF konverter",
     "description": "Tömörítetlen BMP fajlok konvertálása konnyu GIF-re. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Miért érdemes BMP-t GIF-re konvertálni?",
       "html": "<p class=\"text-mid mb-4\">A Bitmap (BMP) egy régebbi Windows képformátum, amely tömörítés nélkül tárolja a pixeladatokat. A BMP fájlok ezért rendkívül nagyok és alkalmatlanok modern webes vagy mobilhasználatra.</p><p class=\"text-mid mb-4\">A GIF a rövid animációk, mémek és egyszerű, korlátozott színpalettájú grafikák standard formátuma. Univerzális böngészőtámogatással a GIF különösen alkalmas animált tartalmakhoz a közösségi médiában és üzenetküldő alkalmazásokban.</p><p class=\"text-mid mb-4\">A konvertálás 256 színre csökkenti a palettát és jelentősen tömöríti a fájlt. Régebbi rendszerek egyszerű grafikáihoz alkalmas, de fotórealisztikus BMP-képekhez JPG vagy WebP ajánlott.</p><p class=\"text-mid\">Ez a konverter teljes mértékben helyben, a böngészőjében működik – fájljai soha nem hagyják el az eszközét. Nincs feltöltés, nincs szerver, nincs regisztráció. Teljes mértékben GDPR-kompatibilis és korlátlanul ingyenes.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "BMP konvertálás GIF formátumba",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Mennyit takarit meg BMP GIF konvertalasaval?",
+      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan hat a kepkonvertalas az oldalsebessegeere es SEO-ra",
+      "html": "<p class=\"text-mid mb-4\">A Core Web Vitals Google teljesitmenymutatoi. Az LCP a legnagyobb lathato elem megjelenesi idejet meri.</p><p class=\"text-mid mb-4\">BMP kepek GIF formaba konvertalasa csokkenti a fajlmeretet, javitja az LCP-t. Kisebb fajlok = gyorsabb betoltes mobilon. <code>loading=\"lazy\"</code> es <code>fetchpriority=\"high\"</code> gyorsitjak a renderelest.</p><p class=\"text-mid\">A <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> es Lighthouse azonositjak az optimalizalando fajlokat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tippek BMP GIF konvertalasahoz",
+      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Nagyon nagy fajlok",
+          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Mar tomoriteett fajlok",
+          "description": "Ha a BMP mar erosen tomoriteett volt, GIF konvertalas keveset takarithat."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Atlatszosag",
+          "description": "GIF tamogatja az alfa csatornat. A BMP atlatszo terultei megmaradnak."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Orizze meg az eredetiket",
+          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a BMP fajlok masolatait."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Gyakran ismételt kérdések a BMP-GIF konvertálásról",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Működik mobileszközökön?",
           "answer": "Igen, bármely modern böngészővel rendelkező eszközön működik."
+        },
+        {
+          "question": "Biztonsagos BMP GIF konvertalasa?",
+          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+        },
+        {
+          "question": "Konvertalhatok tobb BMP fajlt egyszerre?",
+          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+        },
+        {
+          "question": "Minden bongeszo tamogatja a GIF-t?",
+          "answer": "GIF-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Segítsen nekünk fejleszteni eszközeinket",
       "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "Kapcsolat",
       "defaultSubject": "BMP-GIF konverter"
     },

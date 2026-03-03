@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας PDF σε WebP — PDF WebP",
     "description": "Μετατρέψτε σελίδες PDF σε εικόνες WebP. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-pdf-se-webp"
   },
   "hero": {
     "title": "Μετατροπέας PDF σε WebP",
     "description": "Μετατρέψτε σελίδες PDF σε εικόνες WebP. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε PDF σε WebP;",
-      "html": "<p class=\"text-mid mb-4\">Μετατρέψτε σελίδες PDF σε εικόνες WebP. Υψηλή ποιότητα, χωρίς όρια. Δωρεάν.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">To PDF einai ena eyrytera chrisimopoioumeno format archeiou me megali symvatotita. Analoga me ti chrisi, i metatropi se WebP mporei na prosferei simantika pleonektimata — mikrotera archeia, kaliteri poiotita i eyriteri ypostirixi platformon.</p><p class=\"text-mid mb-4\">Aytos o dorean online metatropeas metatrepei ta archeia PDF se format WebP apeytheias ston browser. Kanena archeio den anevasei se server — oli i diadikasia ginetai topika sti syskevi sas.</p><p class=\"text-mid\">Metatrepste osa archeia thelete choris imerisia oria, choris eggraphi kai choris ydrografimatam. Syrete ta archeia, prosamoste tin poiotita kai katevaste ta apotelesmata.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "PDF to WebP conversion",
       "variant": "right"
     },
@@ -198,6 +198,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Poiotita — ti na epilexete gia metatropi PDF se WebP;",
+      "html": "<p class=\"text-mid\">To slider epitrepei 60%-95%. Ypsilotero = kaliteri poiotita alla megalytera archeia.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (proepilogi) — kalo gia istoselides, blogs, arthra.</strong></li><li><strong>85–90% — gia fotografies proionton, portfolio kai galleries.</strong></li><li><strong>60–70% — otan to megethos archeiou einai proteraiotita.</strong></li></ul><p class=\"text-mid mt-3\">Se 80% i diafora metaxy PDF kai WebP einai praktika adiaistiti.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Poso exoikonomeis metatrepontas PDF se WebP;",
+      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Pos i metatropi eikonas epireazei tachitita kai SEO",
+      "html": "<p class=\"text-mid mb-4\">Ta Core Web Vitals einai metrikes Google. To LCP metrai ton chrono eos to megalitero orato stoicheio.</p><p class=\"text-mid mb-4\">I metatropi PDF se WebP meionei to megethos, syntomevei ti fortosi kai veltionei to LCP. Mikrotera archeia = griorteri fortosi se kinita. <code>loading=\"lazy\"</code> kai <code>fetchpriority=\"high\"</code> epitachynoun to rendering.</p><p class=\"text-mid\">To <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> kai to Lighthouse vriskoyn archeia pros veltiosi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Symvoules gia metatropi PDF se WebP",
+      "description": "Symvoules gia apofygi provlimaton:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Poly megala archeia",
+          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Idi sympiesmena",
+          "description": "An to PDF itan idi sympiesmeno, i metatropi se WebP mporei na min exoikonomisi polla."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Diafaneia",
+          "description": "To WebP ypostirizei alfa kanali. Oi diafaneis perioches tou PDF diatirountai."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Kratiste ta prototypa",
+          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton PDF archeion."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Συχνές ερωτήσεις σχετικά με τη μετατροπή PDF σε WebP",
       "openByDefault": 0,
@@ -217,6 +276,18 @@
         {
           "question": "Λειτουργεί ο μετατροπέας σε κινητά;",
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
+        },
+        {
+          "question": "Einai asfalis i metatropi PDF se WebP;",
+          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+        },
+        {
+          "question": "Mporo na metatrepso polla archeia PDF;",
+          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+        },
+        {
+          "question": "Ypostirizoun oloi oi browsers to WebP;",
+          "answer": "To WebP ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
         }
       ]
     },
@@ -228,7 +299,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε bug ή θέλετε να προτείνετε κάτι; Στείλτε μας μήνυμα – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Μετατροπέας PDF σε WebP"
     },

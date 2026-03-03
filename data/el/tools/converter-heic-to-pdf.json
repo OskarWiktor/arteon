@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Μετατροπέας HEIC σε PDF — HEIC PDF",
     "description": "Μετατρέψτε εικόνες HEIC σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-heic-se-pdf"
   },
   "hero": {
     "title": "Μετατροπέας HEIC σε PDF",
     "description": "Μετατρέψτε εικόνες HEIC σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε HEIC σε PDF;",
-      "html": "<p class=\"text-mid mb-4\">Μετατρέψτε εικόνες HEIC σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">To HEIC einai ena eyrytera chrisimopoioumeno format archeiou me megali symvatotita. Analoga me ti chrisi, i metatropi se PDF mporei na prosferei simantika pleonektimata — mikrotera archeia, kaliteri poiotita i eyriteri ypostirixi platformon.</p><p class=\"text-mid mb-4\">Aytos o dorean online metatropeas metatrepei ta archeia HEIC se format PDF apeytheias ston browser. Kanena archeio den anevasei se server — oli i diadikasia ginetai topika sti syskevi sas.</p><p class=\"text-mid\">Metatrepste osa archeia thelete choris imerisia oria, choris eggraphi kai choris ydrografimatam. Syrete ta archeia, prosamoste tin poiotita kai katevaste ta apotelesmata.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "HEIC to PDF conversion",
       "variant": "right"
     },
@@ -198,6 +198,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Poiotita — ti na epilexete gia metatropi HEIC se PDF;",
+      "html": "<p class=\"text-mid\">To slider epitrepei 60%-95%. Ypsilotero = kaliteri poiotita alla megalytera archeia.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (proepilogi) — kalo gia istoselides, blogs, arthra.</strong></li><li><strong>85–90% — gia fotografies proionton, portfolio kai galleries.</strong></li><li><strong>60–70% — otan to megethos archeiou einai proteraiotita.</strong></li></ul><p class=\"text-mid mt-3\">Se 85% i diafora metaxy HEIC kai PDF einai praktika adiaistiti.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Poso exoikonomeis metatrepontas HEIC se PDF;",
+      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Symvoules gia metatropi HEIC se PDF",
+      "description": "Symvoules gia apofygi provlimaton:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Poly megala archeia",
+          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Idi sympiesmena",
+          "description": "An to HEIC itan idi sympiesmeno, i metatropi se PDF mporei na min exoikonomisi polla."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Diafaneia",
+          "description": "To PDF den ypostirizei diafaneia. Oi diafaneis perioches ginontai lefkes. Skeftite PNG i WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Kratiste ta prototypa",
+          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton HEIC archeion."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Συχνές ερωτήσεις σχετικά με τη μετατροπή HEIC σε PDF",
       "openByDefault": 0,
@@ -217,6 +267,18 @@
         {
           "question": "Λειτουργεί ο μετατροπέας σε κινητά;",
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
+        },
+        {
+          "question": "Einai asfalis i metatropi HEIC se PDF;",
+          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+        },
+        {
+          "question": "Mporo na metatrepso polla archeia HEIC;",
+          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+        },
+        {
+          "question": "Ypostirizoun oloi oi browsers to PDF;",
+          "answer": "To PDF ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
         }
       ]
     },
@@ -228,7 +290,7 @@
       "type": "contactForm",
       "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
       "description": "Έχετε μια ιδέα, βρήκατε bug ή θέλετε να προτείνετε κάτι; Στείλτε μας μήνυμα – απαντάμε εντός 24 ωρών.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Μετατροπέας HEIC σε PDF"
     },

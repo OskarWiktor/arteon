@@ -4,13 +4,13 @@
   "metadata": {
     "title": "GIF til AVIF-konverter — GIF AVIF",
     "description": "Konverter forste GIF-billede til statisk AVIF-billede med fremragende komprimering. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/gif-til-avif-konverter"
   },
   "hero": {
     "title": "GIF til AVIF-konverter",
     "description": "Konverter forste GIF-billede til statisk AVIF-billede med fremragende komprimering. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Hvorfor konvertere GIF til AVIF?",
       "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) understøtter animationer og en palet på maksimalt 256 farver. GIF bruges meget til animeret indhold på sociale medier, men farvebegrænsningen gør det uegnet til fotorealistiske billeder.</p><p class=\"text-mid mb-4\">AVIF tilbyder den mest effektive komprimering af alle aktuelle billedformater og kan reducere filstørrelsen op til 50% sammenlignet med JPEG. Chrome, Firefox og Safari 16+ understøtter AVIF. Det er det optimale valg til ydelseskritiske webprojekter.</p><p class=\"text-mid mb-4\">AVIF tilbyder overlegen komprimering sammenlignet med GIF og understøtter millioner af farver i stedet for kun 256. Ideelt til at modernisere ældre GIF-grafik på hjemmesider.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "GIF til AVIF konvertering",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kvalitet — hvad vaelge ved konvertering GIF til AVIF?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem GIF og AVIF praktisk talt umaerkelig.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af GIF til AVIF reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips til konvertering GIF til AVIF",
+      "description": "Tips for at undga problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Meget store filer",
+          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerede",
+          "description": "Hvis GIF allerede var komprimeret, giver konvertering til AVIF maske ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "AVIF understotter alfakanal. Transparente omrader i GIF bevares."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originaler",
+          "description": "Tabsgivende konvertering er irreversibel. Behold kopier af GIF-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af GIF til AVIF",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Fungerer konverteren på mobilenheder?",
           "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
+        },
+        {
+          "question": "Er konvertering GIF til AVIF sikker?",
+          "answer": "Ja. Alt sker lokalt i browseren via Canvas API. Intet sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere GIF-filer?",
+          "answer": "Ja. Batchkonvertering uden begraensning. Traek filer til konverteringsomradet."
+        },
+        {
+          "question": "Understotter alle browsere AVIF?",
+          "answer": "AVIF understttes af Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "GIF til AVIF konverter"
     },

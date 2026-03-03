@@ -4,13 +4,13 @@
   "metadata": {
     "title": "HEIC till TIFF-konverterare — HEIC TIFF",
     "description": "Konvertera iPhone HEIC-foton till professionellt TIFF-format. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/heic-till-tiff-konverterare"
   },
   "hero": {
     "title": "HEIC till TIFF-konverterare",
     "description": "Konvertera iPhone HEIC-foton till professionellt TIFF-format. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Varför konvertera HEIC till TIFF?",
       "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) är standardformatet för foton på Apple-enheter sedan iOS 11. HEIC ger mindre filer än JPEG vid jämförbar kvalitet, men stöds inte nativt utanför Apples ekosystem – varken på Windows, Android eller många webbplattformar.</p><p class=\"text-mid mb-4\">TIFF bevarar full bildkvalitet utan någon dataförlust och stöder lager och omfattande metadata. Som branschstandard för tryck och arkivering är TIFF lämpligt för professionella fotografer och tryckerier.</p><p class=\"text-mid mb-4\">Konverteringen omvandlar dina iPhone-foton till det professionella TIFF-formatet. Idealiskt för fotografer som vill arkivera mobilbilder i ett förlustfritt format och vidarebearbeta dem i Photoshop eller Lightroom.</p><p class=\"text-mid\">Denna konverterare körs helt lokalt i din webbläsare – dina filer lämnar aldrig din enhet. Inga uppladdningar, inga servrar, ingen registrering. Helt GDPR-kompatibel och gratis utan några begränsningar.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "HEIC till TIFF konvertering",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hur mycket sparar du vid konvertering HEIC till TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for konvertering HEIC till TIFF",
+      "description": "Tips for att undvika vanliga problem:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Mycket stora filer",
+          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Redan komprimerade",
+          "description": "Om HEIC redan var kraftigt komprimerad kanske konvertering till TIFF inte sparar mycket."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "TIFF stoder alfakanal. Transparenta omraden i HEIC bevaras."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Spara originalen",
+          "description": "Forlustkomprimering ar irreversibel. Spara kopior av HEIC-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om konvertering av HEIC till TIFF",
       "openByDefault": 0,
@@ -275,6 +316,18 @@
         {
           "question": "Fungerar konverteraren på mobila enheter?",
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
+        },
+        {
+          "question": "Ar konvertering HEIC till TIFF saker?",
+          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+        },
+        {
+          "question": "Kan jag konvertera flera HEIC-filer samtidigt?",
+          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+        },
+        {
+          "question": "Stods TIFF av alla webblasare?",
+          "answer": "TIFF stods av Chrome, Firefox, Safari, Edge och Opera."
         }
       ]
     },
@@ -286,7 +339,7 @@
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
       "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "HEIC till TIFF konverterare"
     },

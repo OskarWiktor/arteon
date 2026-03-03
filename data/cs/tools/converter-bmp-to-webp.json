@@ -244,6 +244,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Nastaveni kvality — co zvolit pri konverzi BMP na WebP?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 80% je rozdil mezi originalnim BMP a vyslednym WebP nepostrehnutelny.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kolik usetrite konverzi BMP na WebP?",
+      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak konverze ovlivnuje rychlost a SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals jsou metriky Google. LCP meri cas do zobrazeni nejvetsiho prvku.</p><p class=\"text-mid mb-4\">Konverze BMP na WebP zmensuje soubory, zkracuje stahovani a zlepsuje LCP. Mensi soubory = rychlejsi nacitani na mobilu. <code>loading=\"lazy\"</code> a <code>fetchpriority=\"high\"</code> urychluji rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> a Lighthouse identifikuji soubory k optimalizaci.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipy pro konverzi BMP na WebP",
+      "description": "Tipy jak se vyhnout problemum:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Velmi velke soubory",
+          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jiz komprimovane",
+          "description": "Pokud byl BMP jiz silne komprimovany, konverze na WebP nemusi usetrit mnoho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Pruhlednost",
+          "description": "WebP podporuje alfa kanal. Pruhledne oblasti BMP budou zachovany."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Uchovejte originaly",
+          "description": "Ztratova konverze je nevratna. Uchovejte kopie BMP souboru."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu BMP na WebP",
       "openByDefault": 0,
@@ -267,6 +326,18 @@
         {
           "question": "Funguje převodník na mobilních zařízeních?",
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem, včetně smartphoneů a tabletů."
+        },
+        {
+          "question": "Je konverze BMP na WebP bezpecna?",
+          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+        },
+        {
+          "question": "Mohu konvertovat vice souboru BMP?",
+          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+        },
+        {
+          "question": "Je WebP podporovan vsemi prohlizeci?",
+          "answer": "WebP je podporovan v Chrome, Firefox, Safari, Edge a Opera."
         }
       ]
     },

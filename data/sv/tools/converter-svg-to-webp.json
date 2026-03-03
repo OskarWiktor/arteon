@@ -244,6 +244,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kvalitet — vad valja vid konvertering SVG till WebP?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 80% ar skillnaden mellan SVG och WebP praktiskt taget omarkbar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur mycket sparar du vid konvertering SVG till WebP?",
+      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur bildkonvertering paverkar hastighet och SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ar Google-prestandamatt. LCP mater tiden till det storsta synliga elementet visas.</p><p class=\"text-mid mb-4\">Konvertering av SVG till WebP minskar filstorlek, forkortar nedladdning och forbattrar LCP. Mindre filer = snabbare pa mobil. <code>loading=\"lazy\"</code> och <code>fetchpriority=\"high\"</code> snabbar upp rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> och Lighthouse identifierar filer att optimera.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for konvertering SVG till WebP",
+      "description": "Tips for att undvika vanliga problem:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Mycket stora filer",
+          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Redan komprimerade",
+          "description": "Om SVG redan var kraftigt komprimerad kanske konvertering till WebP inte sparar mycket."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "WebP stoder alfakanal. Transparenta omraden i SVG bevaras."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Spara originalen",
+          "description": "Forlustkomprimering ar irreversibel. Spara kopior av SVG-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om konvertering av SVG till WebP",
       "openByDefault": 0,
@@ -267,6 +326,18 @@
         {
           "question": "Fungerar konverteraren på mobila enheter?",
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
+        },
+        {
+          "question": "Ar konvertering SVG till WebP saker?",
+          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+        },
+        {
+          "question": "Kan jag konvertera flera SVG-filer samtidigt?",
+          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+        },
+        {
+          "question": "Stods WebP av alla webblasare?",
+          "answer": "WebP stods av Chrome, Firefox, Safari, Edge och Opera."
         }
       ]
     },

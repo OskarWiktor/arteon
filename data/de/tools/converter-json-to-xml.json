@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JSON-zu-XML-Konverter — JSON XML",
     "description": "JSON in XML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/json-zu-xml-konverter"
   },
   "hero": {
     "title": "JSON-zu-XML-Konverter",
     "description": "JSON in XML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Warum JSON in XML konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">JSON in XML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">JSON ist ein weit verbreitetes Dateiformat mit breiter Kompatibilitat. Je nach Anwendungsfall kann die Konvertierung in XML erhebliche Vorteile bieten — kleinere Dateien, bessere Qualitat oder breitere Plattformunterstutzung.</p><p class=\"text-mid mb-4\">Dieser kostenlose Online-Konverter wandelt Ihre JSON-Dateien direkt im Browser in das XML-Format um. Es werden keine Dateien auf einen Server hochgeladen — der gesamte Prozess findet lokal auf Ihrem Gerat statt.</p><p class=\"text-mid\">Konvertieren Sie beliebig viele Dateien ohne tagliche Limits, ohne Registrierung und ohne Wasserzeichen. Ziehen Sie Ihre Dateien per Drag & Drop, passen Sie die Qualitat an und laden Sie die Ergebnisse herunter.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "JSON to XML conversion",
       "variant": "right"
     },
@@ -191,6 +191,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Wie viel sparen Sie bei Konvertierung von JSON zu XML?",
+      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipps fur Konvertierung von JSON zu XML",
+      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Sehr grosse Dateien",
+          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Bereits komprimierte Dateien",
+          "description": "Stark komprimierte JSON-Dateien bringen bei Konvertierung zu XML moglicherweise wenig Einsparung."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparenz",
+          "description": "XML unterstutzt keine Transparenz. Transparente Bereiche werden weiss. Verwenden Sie PNG oder WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Originale aufbewahren",
+          "description": "Verlustbehaftete Konvertierung ist irreversibel. Bewahren Sie Kopien der JSON-Originale auf."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zur JSON-zu-XML-Konvertierung",
       "openByDefault": 0,
@@ -210,6 +251,18 @@
         {
           "question": "Funktioniert der Konverter auf Mobilgeräten?",
           "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser."
+        },
+        {
+          "question": "Ist Konvertierung von JSON zu XML sicher?",
+          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+        },
+        {
+          "question": "Kann ich mehrere JSON-Dateien gleichzeitig konvertieren?",
+          "answer": "Ja. Stapelkonvertierung ohne Limit. Ziehen Sie Dateien auf den Konverterbereich."
+        },
+        {
+          "question": "Wird XML von allen Browsern unterstutzt?",
+          "answer": "XML wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
         }
       ]
     },
@@ -221,7 +274,7 @@
       "type": "contactForm",
       "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
       "description": "Haben Sie eine Idee, einen Fehler gefunden oder einen Vorschlag? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Contact",
       "defaultSubject": "JSON-zu-XML-Konverter"
     },

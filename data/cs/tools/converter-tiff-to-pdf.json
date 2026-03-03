@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník TIFF na PDF — TIFF PDF",
     "description": "Převeďte obrázky TIFF na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-tiff-na-pdf"
   },
   "hero": {
     "title": "Převodník TIFF na PDF",
     "description": "Převeďte obrázky TIFF na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět TIFF na PDF?",
-      "html": "<p class=\"text-mid mb-4\">Převeďte obrázky TIFF na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">TIFF je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na PDF prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase TIFF soubory do formatu PDF primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "TIFF to PDF conversion",
       "variant": "right"
     },
@@ -198,6 +198,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Nastaveni kvality — co zvolit pri konverzi TIFF na PDF?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 85% je rozdil mezi originalnim TIFF a vyslednym PDF nepostrehnutelny.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kolik usetrite konverzi TIFF na PDF?",
+      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipy pro konverzi TIFF na PDF",
+      "description": "Tipy jak se vyhnout problemum:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Velmi velke soubory",
+          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jiz komprimovane",
+          "description": "Pokud byl TIFF jiz silne komprimovany, konverze na PDF nemusi usetrit mnoho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Pruhlednost",
+          "description": "PDF nepodporuje pruhlednost. Pruhledne oblasti budou bile. Pouzijte PNG nebo WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Uchovejte originaly",
+          "description": "Ztratova konverze je nevratna. Uchovejte kopie TIFF souboru."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu TIFF na PDF",
       "openByDefault": 0,
@@ -217,6 +267,18 @@
         {
           "question": "Funguje převodník na mobilu?",
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        },
+        {
+          "question": "Je konverze TIFF na PDF bezpecna?",
+          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+        },
+        {
+          "question": "Mohu konvertovat vice souboru TIFF?",
+          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+        },
+        {
+          "question": "Je PDF podporovan vsemi prohlizeci?",
+          "answer": "PDF je podporovan v Chrome, Firefox, Safari, Edge a Opera."
         }
       ]
     },
@@ -228,7 +290,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Převodník TIFF na PDF"
     },

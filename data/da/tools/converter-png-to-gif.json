@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG til GIF-konverter — PNG GIF",
     "description": "Konverter PNG-grafik til GIF. Ideel til simple ikoner og grafik. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/png-til-gif-konverter"
   },
   "hero": {
     "title": "PNG til GIF-konverter",
     "description": "Konverter PNG-grafik til GIF. Ideel til simple ikoner og grafik. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Hvorfor konvertere PNG til GIF?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tabsfrit billedformat, der understøtter millioner af farver og fuld alfa-gennemsigtighed. PNG er særligt velegnet til logoer, ikoner, skærmbilleder og grafik med skarpe kanter eller tekst.</p><p class=\"text-mid mb-4\">GIF er standardformatet for korte animationer, memes og enkel grafik med begrænset farvepalet. Med universel browserunderstøttelse er GIF særligt velegnet til animeret indhold på sociale medier og i beskedapps.</p><p class=\"text-mid mb-4\">Konverteringen reducerer paletten til maksimalt 256 farver. Resultatet er velegnet til enkel grafik, ikoner og logoer. Gennemsigtighed understøttes kun binært (synlig eller usynlig), ikke graduelt.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "PNG til GIF konvertering",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af PNG til GIF reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips til konvertering PNG til GIF",
+      "description": "Tips for at undga problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Meget store filer",
+          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerede",
+          "description": "Hvis PNG allerede var komprimeret, giver konvertering til GIF maske ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "GIF understotter alfakanal. Transparente omrader i PNG bevares."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originaler",
+          "description": "Tabsgivende konvertering er irreversibel. Behold kopier af PNG-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvor meget sparer du ved konvertering PNG til GIF?",
+      "html": "<p class=\"text-mid mb-4\">Besparelser afhaenger af filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbillede</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skaermbillede / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer efter indhold og indstillinger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af PNG til GIF",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Fungerer konverteren på mobilenheder?",
           "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
+        },
+        {
+          "question": "Er konvertering PNG til GIF sikker?",
+          "answer": "Ja. Alt sker lokalt i browseren via Canvas API. Intet sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere PNG-filer?",
+          "answer": "Ja. Batchkonvertering uden begraensning. Traek filer til konverteringsomradet."
+        },
+        {
+          "question": "Understotter alle browsere GIF?",
+          "answer": "GIF understttes af Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "PNG til GIF konverter"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PDF-zu-JPG-Konverter — PDF JPG",
     "description": "PDF-Seiten in JPG-Bilder umwandeln. Hohe Qualität, ohne Limits. Kostenlos.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/pdf-zu-jpg-konverter"
   },
   "hero": {
     "title": "PDF-zu-JPG-Konverter",
     "description": "PDF-Seiten in JPG-Bilder umwandeln. Hohe Qualität, ohne Limits. Kostenlos.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Warum PDF in JPG konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">PDF-Seiten in JPG-Bilder umwandeln. Hohe Qualität, ohne Limits. Kostenlos.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">PDF ist ein weit verbreitetes Dateiformat mit breiter Kompatibilitat. Je nach Anwendungsfall kann die Konvertierung in JPG erhebliche Vorteile bieten — kleinere Dateien, bessere Qualitat oder breitere Plattformunterstutzung.</p><p class=\"text-mid mb-4\">Dieser kostenlose Online-Konverter wandelt Ihre PDF-Dateien direkt im Browser in das JPG-Format um. Es werden keine Dateien auf einen Server hochgeladen — der gesamte Prozess findet lokal auf Ihrem Gerat statt.</p><p class=\"text-mid\">Konvertieren Sie beliebig viele Dateien ohne tagliche Limits, ohne Registrierung und ohne Wasserzeichen. Ziehen Sie Ihre Dateien per Drag & Drop, passen Sie die Qualitat an und laden Sie die Ergebnisse herunter.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "PDF to JPG conversion",
       "variant": "right"
     },
@@ -198,6 +198,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Qualitatseinstellungen — was bei Konvertierung von PDF nach JPG wahlen?",
+      "html": "<p class=\"text-mid\">Der Qualitatsregler ermoglicht Werte von 60% bis 95%. Hohere Werte bedeuten bessere Bildqualitat, aber grossere Dateien.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (Standard) — guter Kompromiss fur Firmenwebsites, Blogs, Artikel.</strong></li><li><strong>85–90% — fur Produktfotos, Portfolios und Galerien.</strong></li><li><strong>60–70% — wenn Dateigrosse-Minimierung Prioritat hat.</strong></li></ul><p class=\"text-mid mt-3\">Bei 85% ist der Unterschied zwischen Original PDF und JPG kaum erkennbar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie viel sparen Sie bei Konvertierung von PDF zu JPG?",
+      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie Bildkonvertierung Seitengeschwindigkeit und SEO beeinflusst",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals sind Leistungskennzahlen von Google. LCP misst die Zeit bis das grosste sichtbare Element erscheint.</p><p class=\"text-mid mb-4\">Konvertierung von PDF zu JPG reduziert die Dateigrosse, verkurzt Ladezeit und verbessert LCP. Kleinere Dateien bedeuten schnelleres Laden auf Mobilgeraten. <code>loading=\"lazy\"</code> und <code>fetchpriority=\"high\"</code> beschleunigen das Rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> und Lighthouse identifizieren optimierungswurdige Dateien.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipps fur Konvertierung von PDF zu JPG",
+      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Sehr grosse Dateien",
+          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Bereits komprimierte Dateien",
+          "description": "Stark komprimierte PDF-Dateien bringen bei Konvertierung zu JPG moglicherweise wenig Einsparung."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparenz",
+          "description": "JPG unterstutzt keine Transparenz. Transparente Bereiche werden weiss. Verwenden Sie PNG oder WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Originale aufbewahren",
+          "description": "Verlustbehaftete Konvertierung ist irreversibel. Bewahren Sie Kopien der PDF-Originale auf."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zur PDF-zu-JPG-Konvertierung",
       "openByDefault": 0,
@@ -217,6 +276,18 @@
         {
           "question": "Funktioniert der Konverter auf Mobilgeräten?",
           "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser."
+        },
+        {
+          "question": "Ist Konvertierung von PDF zu JPG sicher?",
+          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+        },
+        {
+          "question": "Kann ich mehrere PDF-Dateien gleichzeitig konvertieren?",
+          "answer": "Ja. Stapelkonvertierung ohne Limit. Ziehen Sie Dateien auf den Konverterbereich."
+        },
+        {
+          "question": "Wird JPG von allen Browsern unterstutzt?",
+          "answer": "JPG wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
         }
       ]
     },
@@ -228,7 +299,7 @@
       "type": "contactForm",
       "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
       "description": "Haben Sie eine Idee, einen Fehler gefunden oder einen Vorschlag? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Contact",
       "defaultSubject": "PDF-zu-JPG-Konverter"
     },

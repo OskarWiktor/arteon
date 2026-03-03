@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertisseur YAML en JSON — YAML JSON",
     "description": "Convertissez YAML en format JSON. Analyse et formatage automatiques. Gratuit.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-yaml-en-json"
   },
   "hero": {
     "title": "Convertisseur YAML en JSON",
     "description": "Convertissez YAML en format JSON. Analyse et formatage automatiques. Gratuit.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir YAML en JSON ?",
-      "html": "<p class=\"text-mid mb-4\">Convertissez YAML en format JSON. Analyse et formatage automatiques. Gratuit.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">YAML est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en JSON peut offrir des avantages significatifs — fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers YAML au format JSON directement dans le navigateur. Aucun fichier n'est envoye sur un serveur — tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
     },
@@ -191,6 +191,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Combien economiser en convertissant YAML en JSON ?",
+      "html": "<p class=\"text-mid mb-4\">Les economies dependent du type de fichier source et sa compression :</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo d'appareil</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Image produit</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Capture / banniere</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Les economies reelles varient selon le contenu et les reglages.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Conseils pour convertir YAML en JSON",
+      "description": "Conseils pour eviter les problemes courants :",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Fichiers volumineux",
+          "description": "Images de plus de 4000×4000 px peuvent etre plus lentes. Divisez en lots de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Fichiers deja compresses",
+          "description": "Si le YAML original etait deja compresse, la conversion en JSON peut ne pas economiser beaucoup."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparence",
+          "description": "JSON ne supporte pas la transparence. Zones transparentes remplacees par fond blanc. Utilisez PNG ou WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conservez les originaux",
+          "description": "La conversion avec perte est irreversible. Conservez des copies des fichiers YAML."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Questions fréquentes sur la conversion YAML en JSON",
       "openByDefault": 0,
@@ -210,6 +251,18 @@
         {
           "question": "Le convertisseur fonctionne-t-il sur mobile ?",
           "answer": "Oui, il fonctionne sur tout appareil disposant d'un navigateur web moderne."
+        },
+        {
+          "question": "La conversion YAML en JSON est-elle sure ?",
+          "answer": "Oui. Tout se fait localement dans le navigateur via Canvas API. Rien n'est envoye a un serveur."
+        },
+        {
+          "question": "Puis-je convertir plusieurs fichiers YAML ?",
+          "answer": "Oui. Conversion par lots sans limite. Glissez les fichiers sur le convertisseur."
+        },
+        {
+          "question": "JSON est-il supporte par tous les navigateurs ?",
+          "answer": "JSON est supporte par Chrome, Firefox, Safari, Edge et Opera."
         }
       ]
     },
@@ -221,7 +274,7 @@
       "type": "contactForm",
       "title": "Aidez-nous à améliorer nos outils",
       "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message – nous répondons sous 24 heures.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Convertisseur YAML en JSON"
     },

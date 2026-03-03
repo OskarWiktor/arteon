@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Conversor HEIC para AVIF — HEIC AVIF",
     "description": "Converta fotos HEIC do iPhone para formato AVIF moderno. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-heic-para-avif"
   },
   "hero": {
     "title": "Conversor HEIC para AVIF",
     "description": "Converta fotos HEIC do iPhone para formato AVIF moderno. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Por que converter HEIC para AVIF?",
       "html": "<p class=\"text-mid mb-4\">O High Efficiency Image Container (HEIC) é o formato predefinido para fotos em dispositivos Apple desde o iOS 11. O HEIC oferece ficheiros mais leves que o JPEG com qualidade comparável, mas não é suportado nativamente fora do ecossistema Apple.</p><p class=\"text-mid mb-4\">O AVIF oferece a compressão mais eficiente de todos os formatos atuais, reduzindo o tamanho até 50% em relação ao JPEG. Chrome, Firefox e Safari 16+ suportam o AVIF. É a escolha ideal para projetos web críticos em desempenho.</p><p class=\"text-mid mb-4\">O AVIF oferece eficiência de compressão semelhante ao HEIC, mas como formato aberto tem suporte muito mais amplo. A conversão permite utilizar compressão moderna sem as restrições do ecossistema Apple.</p><p class=\"text-mid\">Este conversor funciona inteiramente em local no seu navegador – os seus ficheiros nunca saem do seu dispositivo. Sem carregamentos, sem servidores, sem registo. Totalmente conforme com o RGPD e gratuito sem qualquer limitação.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Conversão de HEIC para AVIF",
       "variant": "right"
     },
@@ -252,6 +252,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Qualidade — o que escolher ao converter HEIC para AVIF?",
+      "html": "<p class=\"text-mid\">O controle permite 60% a 95%. Mais alto = melhor qualidade mas arquivos maiores.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (padrao) — bom equilibrio para sites, blogs, artigos.</strong></li><li><strong>85–90% — para fotos de produtos, portfolios e galerias.</strong></li><li><strong>60–70% — quando minimizar tamanho e prioridade.</strong></li></ul><p class=\"text-mid mt-3\">Com 80% a diferenca visual entre HEIC original e AVIF resultante e imperceptivel.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quanto economizar convertendo HEIC para AVIF?",
+      "html": "<p class=\"text-mid mb-4\">A economia depende do tipo de arquivo e compressao original:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto de camera</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagem de produto</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">A economia real varia conforme conteudo e configuracoes.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como a conversao impacta velocidade e SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals sao metricas do Google. LCP mede o tempo ate o maior elemento visivel aparecer.</p><p class=\"text-mid mb-4\">Converter HEIC para AVIF reduz tamanho, encurta download e melhora LCP. Arquivos menores = carregamento rapido em moveis. <code>loading=\"lazy\"</code> e <code>fetchpriority=\"high\"</code> aceleram renderizacao.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> e Lighthouse identificam arquivos a otimizar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Dicas para converter HEIC para AVIF",
+      "description": "Dicas para evitar problemas comuns:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Arquivos muito grandes",
+          "description": "Imagens acima de 4000×4000 px podem ser mais lentas. Divida em lotes de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Ja comprimidos",
+          "description": "Se o HEIC ja estava muito comprimido, a conversao para AVIF pode nao economizar muito."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparencia",
+          "description": "AVIF suporta canal alfa. Areas transparentes do HEIC serao preservadas."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Mantenha originais",
+          "description": "Conversao com perdas e irreversivel. Mantenha copias dos arquivos HEIC."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Perguntas frequentes sobre a conversão de HEIC para AVIF",
       "openByDefault": 0,
@@ -275,6 +334,18 @@
         {
           "question": "O conversor funciona em dispositivos móveis?",
           "answer": "Sim, funciona em qualquer dispositivo com um navegador web moderno, incluindo smartphones e tablets."
+        },
+        {
+          "question": "Converter HEIC para AVIF e seguro?",
+          "answer": "Sim. Tudo acontece localmente no navegador via Canvas API. Nada e enviado a servidores."
+        },
+        {
+          "question": "Posso converter varios HEIC de uma vez?",
+          "answer": "Sim. Conversao em lote sem limite. Arraste para o conversor."
+        },
+        {
+          "question": "AVIF e compativel com todos os navegadores?",
+          "answer": "AVIF e suportado por Chrome, Firefox, Safari, Edge e Opera."
         }
       ]
     },
@@ -286,7 +357,7 @@
       "type": "contactForm",
       "title": "Ajude-nos a melhorar as nossas ferramentas",
       "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "Contacto",
       "defaultSubject": "Conversor HEIC para AVIF"
     },

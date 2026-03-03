@@ -244,6 +244,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af AVIF til PNG reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips til konvertering AVIF til PNG",
+      "description": "Tips for at undga problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Meget store filer",
+          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerede",
+          "description": "Hvis AVIF allerede var komprimeret, giver konvertering til PNG maske ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "PNG understotter alfakanal. Transparente omrader i AVIF bevares."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originaler",
+          "description": "Tabsgivende konvertering er irreversibel. Behold kopier af AVIF-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvor meget sparer du ved konvertering AVIF til PNG?",
+      "html": "<p class=\"text-mid mb-4\">Besparelser afhaenger af filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbillede</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skaermbillede / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer efter indhold og indstillinger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af AVIF til PNG",
       "openByDefault": 0,
@@ -267,6 +317,18 @@
         {
           "question": "Fungerer konverteren på mobilenheder?",
           "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
+        },
+        {
+          "question": "Er konvertering AVIF til PNG sikker?",
+          "answer": "Ja. Alt sker lokalt i browseren via Canvas API. Intet sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere AVIF-filer?",
+          "answer": "Ja. Batchkonvertering uden begraensning. Traek filer til konverteringsomradet."
+        },
+        {
+          "question": "Understotter alle browsere PNG?",
+          "answer": "PNG understttes af Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },

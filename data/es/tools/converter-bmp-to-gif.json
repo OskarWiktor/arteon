@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor BMP a GIF — BMP GIF",
     "description": "Convierte archivos BMP sin comprimir a GIF ligero. Sin instalación, funciona en cualquier dispositivo. Gratis, privado e ilimitado.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-bmp-a-gif"
   },
   "hero": {
     "title": "Convertidor BMP a GIF",
     "description": "Convierte archivos BMP sin comprimir a GIF ligero. Sin instalación, funciona en cualquier dispositivo. Gratis, privado e ilimitado.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "¿Por qué convertir BMP a GIF?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) es un formato de imagen antiguo de Windows que almacena datos de píxeles sin compresión. Los archivos BMP son extremadamente grandes y resultan inadecuados para el uso moderno en la web, correo electrónico o dispositivos móviles.</p><p class=\"text-mid mb-4\">GIF es el formato estándar para animaciones cortas, memes y gráficos simples con paleta de colores limitada. Con compatibilidad universal en navegadores, GIF es especialmente adecuado para contenido animado en redes sociales, aplicaciones de mensajería y firmas de correo electrónico.</p><p class=\"text-mid mb-4\">La conversión reduce la paleta a 256 colores y comprime considerablemente el archivo. Adecuado para gráficos simples de sistemas antiguos, pero para imágenes BMP fotorrealistas se recomienda JPG o WebP.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Conversión de BMP a GIF",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Cuanto ahorras convirtiendo BMP a GIF?",
+      "html": "<p class=\"text-mid mb-4\">El ahorro depende del tipo de archivo y su compresion original:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto de camara</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagen de producto</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">El ahorro real varia segun contenido y ajustes de calidad.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como la conversion de imagenes afecta velocidad y SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals son metricas que Google usa al evaluar sitios. LCP mide el tiempo hasta que aparece el elemento visible mas grande.</p><p class=\"text-mid mb-4\">Convertir BMP a GIF reduce el tamano, acorta descarga y mejora LCP. Archivos mas pequenos = carga mas rapida en moviles. <code>loading=\"lazy\"</code> y <code>fetchpriority=\"high\"</code> aceleran el renderizado.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> y Lighthouse identifican archivos a optimizar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Consejos para convertir BMP a GIF",
+      "description": "Consejos para evitar problemas:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Archivos muy grandes",
+          "description": "Imagenes de mas de 4000×4000 px pueden ser mas lentas. Divide en lotes de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Archivos ya comprimidos",
+          "description": "Si el BMP ya estaba muy comprimido, la conversion a GIF puede no ahorrar mucho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparencia",
+          "description": "GIF admite canal alfa. Areas transparentes del BMP se conservan."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conserva originales",
+          "description": "La conversion con perdida es irreversible. Conserva copias de los archivos BMP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Preguntas frecuentes sobre la conversión de BMP a GIF",
       "openByDefault": 0,
@@ -279,6 +329,14 @@
         {
           "question": "¿Funciona el convertidor en móviles?",
           "answer": "Sí, funciona en cualquier dispositivo con un navegador web moderno, incluyendo smartphones y tablets."
+        },
+        {
+          "question": "Es seguro convertir BMP a GIF?",
+          "answer": "Si. Todo se procesa localmente en tu navegador via Canvas API. Los archivos nunca salen de tu dispositivo."
+        },
+        {
+          "question": "Puedo convertir varios archivos BMP a la vez?",
+          "answer": "Si. Conversion por lotes sin limite. Arrastra archivos al convertidor."
         }
       ]
     },
@@ -290,7 +348,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Contacto",
       "defaultSubject": "Convertidor BMP a GIF"
     },

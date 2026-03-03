@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertidor WebP a TIFF — WebP TIFF",
     "description": "Convierte imagenes WebP a TIFF profesional para impresion y archivado. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-webp-a-tiff"
   },
   "hero": {
     "title": "Convertidor WebP a TIFF",
     "description": "Convierte imagenes WebP a TIFF profesional para impresion y archivado. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "¿Por qué convertir WebP a TIFF?",
       "html": "<p class=\"text-mid mb-4\">WebP es un formato de imagen moderno desarrollado por Google que admite tanto compresión con pérdidas como sin pérdidas. Produce archivos significativamente más ligeros que PNG y JPEG con calidad visual comparable y es compatible con todos los navegadores actuales.</p><p class=\"text-mid mb-4\">TIFF preserva la calidad de imagen completa sin ninguna pérdida de datos y admite capas y metadatos extensos. Como estándar de la industria para impresión y archivado, TIFF es adecuado para fotógrafos profesionales, imprentas y todos los que deseen conservar imágenes en máxima calidad.</p><p class=\"text-mid mb-4\">La conversión transforma sus archivos WebP al formato TIFF profesional. Ideal para producción de impresión y archivado a largo plazo, donde se requiere calidad sin pérdidas y soporte completo de metadatos.</p><p class=\"text-mid\">Este convertidor funciona completamente en local en su navegador: sus archivos nunca abandonan su dispositivo. Sin subidas, sin servidores, sin registro. Totalmente conforme con el RGPD y gratuito sin ninguna limitación.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Conversión de WEBP a TIFF",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Cuanto ahorras convirtiendo WebP a TIFF?",
+      "html": "<p class=\"text-mid mb-4\">El ahorro depende del tipo de archivo y su compresion original:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto de camara</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagen de producto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">El ahorro real varia segun contenido y ajustes de calidad.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Consejos para convertir WebP a TIFF",
+      "description": "Consejos para evitar problemas:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Archivos muy grandes",
+          "description": "Imagenes de mas de 4000×4000 px pueden ser mas lentas. Divide en lotes de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Archivos ya comprimidos",
+          "description": "Si el WebP ya estaba muy comprimido, la conversion a TIFF puede no ahorrar mucho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparencia",
+          "description": "TIFF admite canal alfa. Areas transparentes del WebP se conservan."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conserva originales",
+          "description": "La conversion con perdida es irreversible. Conserva copias de los archivos WebP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Preguntas frecuentes sobre la conversión de WebP a TIFF",
       "openByDefault": 0,
@@ -279,6 +320,14 @@
         {
           "question": "¿Funciona el convertidor en móviles?",
           "answer": "Sí, funciona en cualquier dispositivo con un navegador web moderno, incluyendo smartphones y tablets."
+        },
+        {
+          "question": "Es seguro convertir WebP a TIFF?",
+          "answer": "Si. Todo se procesa localmente en tu navegador via Canvas API. Los archivos nunca salen de tu dispositivo."
+        },
+        {
+          "question": "Puedo convertir varios archivos WebP a la vez?",
+          "answer": "Si. Conversion por lotes sin limite. Arrastra archivos al convertidor."
         }
       ]
     },
@@ -290,7 +339,7 @@
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
       "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Contacto",
       "defaultSubject": "Convertidor WEBP a TIFF"
     },

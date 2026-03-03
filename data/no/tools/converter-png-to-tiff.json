@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG til TIFF-konverterer — PNG TIFF",
     "description": "Konverter PNG-grafikk til profesjonelt TIFF-format. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/png-til-tiff-konverterer"
   },
   "hero": {
     "title": "PNG til TIFF-konverterer",
     "description": "Konverter PNG-grafikk til profesjonelt TIFF-format. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Hvorfor konvertere PNG til TIFF?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) er et tapsfritt bildeformat som støtter millioner av farger og full alfa-gjennomsiktighet. PNG er spesielt egnet for logoer, ikoner, skjermbilder og grafikk med skarpe kanter eller tekst.</p><p class=\"text-mid mb-4\">TIFF bevarer full bildekvalitet uten noe datatap og støtter lag og omfattende metadata. Som bransjestandard for trykk og arkivering er TIFF egnet for profesjonelle fotografer og trykkerier.</p><p class=\"text-mid mb-4\">Konverteringen bevarer full kvalitet og gjennomsiktighet fra PNG-originalen i TIFF-format. TIFF er egnet for videre behandling i Photoshop eller profesjonelt trykk. TIFF-filer er større enn PNG.</p><p class=\"text-mid\">Denne konverteren kjører helt lokalt i nettleseren din – filene dine forlater aldri enheten din. Ingen opplastinger, ingen servere, ingen registrering. Fullt GDPR-kompatibel og gratis uten noen begrensninger.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "PNG til TIFF konvertering",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Tips for konvertering PNG til TIFF",
+      "description": "Tips for a unnga vanlige problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Veldig store filer",
+          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerte",
+          "description": "Hvis PNG allerede var sterkt komprimert, gir konvertering til TIFF kanskje ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "TIFF stotter alfakanal. Transparente omrader i PNG bevares."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originalene",
+          "description": "Tapsbringende konvertering er irreversibel. Behold kopier av PNG-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvor mye sparer du ved konvertering PNG til TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Besparelsene avhenger av filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerabilde</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbilde</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skjermbilde / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer etter innhold og innstillinger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanlige spørsmål om konvertering av PNG til TIFF",
       "openByDefault": 0,
@@ -275,6 +316,18 @@
         {
           "question": "Fungerer konverteren på mobilenheter?",
           "answer": "Ja, den fungerer på enhver enhet med en moderne nettleser."
+        },
+        {
+          "question": "Er konvertering PNG til TIFF trygt?",
+          "answer": "Ja. Alt skjer lokalt i nettleseren via Canvas API. Ingenting sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere PNG-filer?",
+          "answer": "Ja. Batchkonvertering uten begrensning. Dra filer til konverteringsomradet."
+        },
+        {
+          "question": "Stottes TIFF av alle nettlesere?",
+          "answer": "TIFF stottes av Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },
@@ -286,7 +339,7 @@
       "type": "contactForm",
       "title": "Hjelp oss med å forbedre våre verktøy",
       "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Skriv til oss – vi svarer innen 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "PNG til TIFF konverterer"
     },

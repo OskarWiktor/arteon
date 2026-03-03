@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP till PDF-konverterare — BMP PDF",
     "description": "Konvertera BMP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/bmp-till-pdf-konverterare"
   },
   "hero": {
     "title": "BMP till PDF-konverterare",
     "description": "Konvertera BMP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera BMP till PDF?",
-      "html": "<p class=\"text-mid mb-4\">Konvertera BMP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">BMP ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till PDF erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina BMP-filer till PDF-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "BMP to PDF conversion",
       "variant": "right"
     },
@@ -198,6 +198,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kvalitet — vad valja vid konvertering BMP till PDF?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan BMP och PDF praktiskt taget omarkbar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for konvertering BMP till PDF",
+      "description": "Tips for att undvika vanliga problem:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Mycket stora filer",
+          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Redan komprimerade",
+          "description": "Om BMP redan var kraftigt komprimerad kanske konvertering till PDF inte sparar mycket."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "PDF stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Spara originalen",
+          "description": "Forlustkomprimering ar irreversibel. Spara kopior av BMP-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur mycket sparar du vid konvertering BMP till PDF?",
+      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om BMP till PDF-konvertering",
       "openByDefault": 0,
@@ -217,6 +267,18 @@
         {
           "question": "Fungerar konverteraren på mobilen?",
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
+        },
+        {
+          "question": "Ar konvertering BMP till PDF saker?",
+          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+        },
+        {
+          "question": "Kan jag konvertera flera BMP-filer samtidigt?",
+          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+        },
+        {
+          "question": "Stods PDF av alla webblasare?",
+          "answer": "PDF stods av Chrome, Firefox, Safari, Edge och Opera."
         }
       ]
     },
@@ -228,7 +290,7 @@
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
       "description": "Har du en idé, hittat en bugg eller vill föreslå något? Skicka oss ett meddelande – vi svarar inom 24 timmar.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "Contact",
       "defaultSubject": "BMP till PDF-konverterare"
     },

@@ -140,7 +140,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -243,6 +243,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ustawienia jakości — co wybrać przy konwersji JPG na PDF?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem JPG a wynikowym PDF jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Ile można zaoszczędzić konwertując JPG na PDF?",
+      "html": "<p class=\"text-mid mb-4\">Oszczędności zależą od rodzaju pliku źródłowego i jego oryginalnej kompresji. Poniżej przykładowe wyniki dla typowych plików JPG:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjęcie z aparatu</p><p class=\"text-light text-sm\">2.4 MB → 1.1 MB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~54%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">500 KB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~44%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">1 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~58%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczędności mogą się różnić w zależności od zawartości obrazu i ustawień jakości. Konwerter pokazuje dokładny rozmiar przed i po konwersji dla każdego pliku.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Na co zwrócić uwagę przy konwersji JPG na PDF?",
+      "description": "Kilka wskazówek, które pomogą uniknąć problemów podczas konwersji:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Bardzo duże pliki",
+          "description": "Konwersja obrazów o rozdzielczości powyżej 4000×4000 pikseli może być wolniejsza i obciążać przeglądarkę. Jeśli przetwarzasz wiele dużych plików, rozważ dzielenie ich na mniejsze partie po 10–20 sztuk."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Już skompresowane pliki",
+          "description": "Jeśli oryginalny plik JPG był już mocno skompresowany, konwersja na PDF może nie przynieść dużych oszczędności rozmiaru. W takim przypadku warto eksperymentować z różnymi ustawieniami jakości."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Przezroczystość",
+          "description": "Format PDF nie obsługuje przezroczystości. Przezroczyste obszary z oryginalnego pliku zostaną zastąpione białym tłem. Jeśli potrzebujesz zachować przezroczystość, rozważ konwersję na format PNG lub WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Zachowaj oryginały",
+          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików JPG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji JPG na PDF",
       "openByDefault": 1,
@@ -262,6 +312,18 @@
         {
           "question": "Czy konwerter działa na telefonie?",
           "answer": "Tak, konwerter działa w przeglądarce na urządzeniach mobilnych z systemem Android i iOS."
+        },
+        {
+          "question": "Czy konwersja JPG na PDF jest bezpieczna dla moich plików?",
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+        },
+        {
+          "question": "Czy mogę konwertować wiele plików JPG jednocześnie?",
+          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+        },
+        {
+          "question": "Do czego najlepiej nadaje się format PDF?",
+          "answer": "PDF to uniwersalny format dokumentów, który zachowuje układ strony niezależnie od urządzenia. Jest idealny do druków, prezentacji, dokumentacji technicznej i archiwizacji. Pliki PDF można otwierać na każdym komputerze, telefonie i tablecie."
         }
       ]
     },

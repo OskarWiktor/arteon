@@ -244,6 +244,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Qualitatseinstellungen — was bei Konvertierung von AVIF nach WebP wahlen?",
+      "html": "<p class=\"text-mid\">Der Qualitatsregler ermoglicht Werte von 60% bis 95%. Hohere Werte bedeuten bessere Bildqualitat, aber grossere Dateien.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (Standard) — guter Kompromiss fur Firmenwebsites, Blogs, Artikel.</strong></li><li><strong>85–90% — fur Produktfotos, Portfolios und Galerien.</strong></li><li><strong>60–70% — wenn Dateigrosse-Minimierung Prioritat hat.</strong></li></ul><p class=\"text-mid mt-3\">Bei 80% ist der Unterschied zwischen Original AVIF und WebP kaum erkennbar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie viel sparen Sie bei Konvertierung von AVIF zu WebP?",
+      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie Bildkonvertierung Seitengeschwindigkeit und SEO beeinflusst",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals sind Leistungskennzahlen von Google. LCP misst die Zeit bis das grosste sichtbare Element erscheint.</p><p class=\"text-mid mb-4\">Konvertierung von AVIF zu WebP reduziert die Dateigrosse, verkurzt Ladezeit und verbessert LCP. Kleinere Dateien bedeuten schnelleres Laden auf Mobilgeraten. <code>loading=\"lazy\"</code> und <code>fetchpriority=\"high\"</code> beschleunigen das Rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> und Lighthouse identifizieren optimierungswurdige Dateien.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipps fur Konvertierung von AVIF zu WebP",
+      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Sehr grosse Dateien",
+          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Bereits komprimierte Dateien",
+          "description": "Stark komprimierte AVIF-Dateien bringen bei Konvertierung zu WebP moglicherweise wenig Einsparung."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparenz",
+          "description": "WebP unterstutzt Alphakanal. Transparente Bereiche der AVIF-Datei werden beibehalten."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Originale aufbewahren",
+          "description": "Verlustbehaftete Konvertierung ist irreversibel. Bewahren Sie Kopien der AVIF-Originale auf."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zur Konvertierung von AVIF in WebP",
       "openByDefault": 0,
@@ -271,6 +330,14 @@
         {
           "question": "Funktioniert der Konverter auf Mobilgeräten?",
           "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
+        },
+        {
+          "question": "Ist Konvertierung von AVIF zu WebP sicher?",
+          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+        },
+        {
+          "question": "Wird WebP von allen Browsern unterstutzt?",
+          "answer": "WebP wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
         }
       ]
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Convertitore TIFF in AVIF — TIFF AVIF",
     "description": "Converti file TIFF in AVIF moderno. Riduzione massiva delle dimensioni del file. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-tiff-in-avif"
   },
   "hero": {
     "title": "Convertitore TIFF in AVIF",
     "description": "Converti file TIFF in AVIF moderno. Riduzione massiva delle dimensioni del file. Funziona direttamente nel browser. Nessun upload sul server, nessuna registrazione.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Perché convertire TIFF in AVIF?",
       "html": "<p class=\"text-mid mb-4\">Il Tagged Image File Format (TIFF) è lo standard industriale per la fotografia professionale, la stampa e l'archiviazione. Il TIFF memorizza le immagini senza perdita con profondità di colore completa, livelli e metadati – ma richiede file proporzionalmente grandi.</p><p class=\"text-mid mb-4\">L'AVIF offre la compressione più efficiente tra tutti i formati immagine attuali, riducendo la dimensione fino al 50% rispetto al JPEG. Chrome, Firefox e Safari 16+ supportano l'AVIF. È la scelta ottimale per progetti web critici in termini di prestazioni e per l'uso mobile.</p><p class=\"text-mid mb-4\">L'AVIF offre la compressione più efficiente per la conversione di file TIFF grandi. Ideale per l'ottimizzazione web della fotografia professionale e delle scansioni ad alta risoluzione con perdita di qualità minima.</p><p class=\"text-mid\">Questo convertitore funziona interamente in locale nel vostro browser – i file non lasciano mai il vostro dispositivo. Nessun caricamento, nessun server, nessuna registrazione. Pienamente conforme al GDPR e gratuito senza alcuna limitazione.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Conversione TIFF in AVIF",
       "variant": "right"
     },
@@ -252,6 +252,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Qualita — cosa scegliere per TIFF in AVIF?",
+      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (predefinito) — buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% — per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% — quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 80% la differenza tra TIFF originale e AVIF risultante e impercettibile.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quanto risparmiare convertendo TIFF in AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Il risparmio dipende dal tipo di file e dalla compressione originale:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto fotocamera</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Immagine prodotto</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Il risparmio reale varia in base a contenuto e impostazioni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come la conversione influisce su velocita e SEO",
+      "html": "<p class=\"text-mid mb-4\">I Core Web Vitals sono metriche Google. Il LCP misura il tempo per visualizzare l'elemento piu grande.</p><p class=\"text-mid mb-4\">Convertire TIFF in AVIF riduce le dimensioni, accorcia il download e migliora il LCP. File piu piccoli = caricamento rapido su mobile. <code>loading=\"lazy\"</code> e <code>fetchpriority=\"high\"</code> velocizzano il rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> e Lighthouse identificano file da ottimizzare.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Consigli per convertire TIFF in AVIF",
+      "description": "Consigli per evitare problemi comuni:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "File molto grandi",
+          "description": "Immagini sopra 4000×4000 px possono essere piu lente. Dividi in lotti da 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "File gia compressi",
+          "description": "Se il TIFF era gia compresso, la conversione in AVIF potrebbe risparmiare poco."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Trasparenza",
+          "description": "AVIF supporta canale alfa. Le aree trasparenti del TIFF vengono preservate."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conserva originali",
+          "description": "La conversione con perdita e irreversibile. Conserva copie dei file TIFF."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da TIFF a AVIF",
       "openByDefault": 0,
@@ -279,6 +338,14 @@
         {
           "question": "Il convertitore funziona su dispositivi mobili?",
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno, inclusi smartphone e tablet."
+        },
+        {
+          "question": "E sicuro convertire TIFF in AVIF?",
+          "answer": "Si. Tutto avviene localmente nel browser via Canvas API. Niente viene inviato a server."
+        },
+        {
+          "question": "Posso convertire piu file TIFF?",
+          "answer": "Si. Conversione batch senza limiti. Trascina i file nel convertitore."
         }
       ]
     },
@@ -290,7 +357,7 @@
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
       "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzione? Scrivici – rispondiamo entro 24 ore.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Contatto",
       "defaultSubject": "Convertitore TIFF in AVIF"
     },

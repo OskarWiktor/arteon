@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP zu GIF Konverter — WebP GIF",
     "description": "WebP-Bilder in GIF-Format umwandeln fur maximale Kompatibilitat. Verarbeitung direkt im Browser — Dateien verlassen Ihr Gerät nicht.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/webp-zu-gif-konverter"
   },
   "hero": {
     "title": "WebP zu GIF Konverter",
     "description": "WebP-Bilder in GIF-Format umwandeln fur maximale Kompatibilitat. Verarbeitung direkt im Browser — Dateien verlassen Ihr Gerät nicht.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Warum WebP in GIF konvertieren?",
       "html": "<p class=\"text-mid mb-4\">WebP ist ein modernes Bildformat von Google, das sowohl verlustbehaftete als auch verlustfreie Komprimierung unterstützt. Es bietet deutlich kleinere Dateien als PNG und JPEG bei vergleichbarer visueller Qualität und wird von allen aktuellen Browsern unterstützt.</p><p class=\"text-mid mb-4\">GIF ist das Standardformat für kurze Animationen, Memes und einfache Grafiken mit begrenzter Farbpalette. Mit universeller Browser-Unterstützung eignet sich GIF besonders für animierte Inhalte in sozialen Medien, Messenger-Diensten und E-Mail-Signaturen.</p><p class=\"text-mid mb-4\">Bei der Konvertierung wird die Farbpalette auf 256 Farben reduziert. Diese Konvertierung eignet sich hauptsächlich für einfache Grafiken oder wenn das GIF-Format für Animationen oder aus Kompatibilitätsgründen erforderlich ist.</p><p class=\"text-mid\">Dieser Konverter arbeitet vollständig lokal in Ihrem Browser – Ihre Dateien verlassen niemals Ihr Gerät. Keine Uploads, keine Server, keine Registrierung. Vollständig DSGVO-konform und ohne Einschränkungen kostenlos.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "WEBP-zu-GIF-Konvertierung",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Wie viel sparen Sie bei Konvertierung von WebP zu GIF?",
+      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie Bildkonvertierung Seitengeschwindigkeit und SEO beeinflusst",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals sind Leistungskennzahlen von Google. LCP misst die Zeit bis das grosste sichtbare Element erscheint.</p><p class=\"text-mid mb-4\">Konvertierung von WebP zu GIF reduziert die Dateigrosse, verkurzt Ladezeit und verbessert LCP. Kleinere Dateien bedeuten schnelleres Laden auf Mobilgeraten. <code>loading=\"lazy\"</code> und <code>fetchpriority=\"high\"</code> beschleunigen das Rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> und Lighthouse identifizieren optimierungswurdige Dateien.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipps fur Konvertierung von WebP zu GIF",
+      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Sehr grosse Dateien",
+          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Bereits komprimierte Dateien",
+          "description": "Stark komprimierte WebP-Dateien bringen bei Konvertierung zu GIF moglicherweise wenig Einsparung."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparenz",
+          "description": "GIF unterstutzt Alphakanal. Transparente Bereiche der WebP-Datei werden beibehalten."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Originale aufbewahren",
+          "description": "Verlustbehaftete Konvertierung ist irreversibel. Bewahren Sie Kopien der WebP-Originale auf."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Häufig gestellte Fragen zur Konvertierung von WebP in GIF",
       "openByDefault": 0,
@@ -279,6 +329,14 @@
         {
           "question": "Funktioniert der Konverter auf Mobilgeräten?",
           "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser, einschließlich Smartphones und Tablets."
+        },
+        {
+          "question": "Ist Konvertierung von WebP zu GIF sicher?",
+          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+        },
+        {
+          "question": "Wird GIF von allen Browsern unterstutzt?",
+          "answer": "GIF wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
         }
       ]
     },
@@ -290,7 +348,7 @@
       "type": "contactForm",
       "title": "Helfen Sie uns, unsere Tools zu verbessern",
       "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "WEBP-zu-GIF-Konverter"
     },

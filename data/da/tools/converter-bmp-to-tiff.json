@@ -4,13 +4,13 @@
   "metadata": {
     "title": "BMP til TIFF-konverter — BMP TIFF",
     "description": "Konverter BMP-filer til professionelt TIFF-format til udskrivning. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/bmp-til-tiff-konverter"
   },
   "hero": {
     "title": "BMP til TIFF-konverter",
     "description": "Konverter BMP-filer til professionelt TIFF-format til udskrivning. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Hvorfor konvertere BMP til TIFF?",
       "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) er et ældre Windows-billedformat, der lagrer pixeldata uden komprimering. BMP-filer er derfor ekstremt store og uegnede til moderne brug på nettet eller mobile enheder.</p><p class=\"text-mid mb-4\">TIFF bevarer den fulde billedkvalitet uden noget datatab og understøtter lag og omfattende metadata. Som industristandard for tryk og arkivering er TIFF velegnet til professionelle fotografer og trykkerier.</p><p class=\"text-mid mb-4\">Konvertering fra BMP til TIFF bevarer den fulde kvalitet og tilføjer professionel metadataunderstøttelse. TIFF er bedre egnet end BMP til langtidsarkivering og professionelle tryk-workflows.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "BMP til TIFF konvertering",
       "variant": "right"
     },
@@ -252,6 +252,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionSteps",
+      "title": "Tips til konvertering BMP til TIFF",
+      "description": "Tips for at undga problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Meget store filer",
+          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerede",
+          "description": "Hvis BMP allerede var komprimeret, giver konvertering til TIFF maske ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "TIFF understotter alfakanal. Transparente omrader i BMP bevares."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originaler",
+          "description": "Tabsgivende konvertering er irreversibel. Behold kopier af BMP-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvor meget sparer du ved konvertering BMP til TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Besparelser afhaenger af filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbillede</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skaermbillede / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer efter indhold og indstillinger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af BMP til TIFF",
       "openByDefault": 0,
@@ -275,6 +316,18 @@
         {
           "question": "Fungerer konverteren på mobilenheder?",
           "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
+        },
+        {
+          "question": "Er konvertering BMP til TIFF sikker?",
+          "answer": "Ja. Alt sker lokalt i browseren via Canvas API. Intet sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere BMP-filer?",
+          "answer": "Ja. Batchkonvertering uden begraensning. Traek filer til konverteringsomradet."
+        },
+        {
+          "question": "Understotter alle browsere TIFF?",
+          "answer": "TIFF understttes af Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },
@@ -286,7 +339,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "BMP til TIFF konverter"
     },

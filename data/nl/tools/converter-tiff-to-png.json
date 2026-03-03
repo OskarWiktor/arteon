@@ -244,6 +244,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hoeveel besparen bij conversie TIFF naar PNG?",
+      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe beeldconversie paginasnelheid en SEO beinvloedt",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals zijn Google-prestatiemetrieken. LCP meet de tijd tot het grootste zichtbare element verschijnt.</p><p class=\"text-mid mb-4\">Conversie van TIFF naar PNG verkleint bestanden, verkort downloadtijd en verbetert LCP. Kleinere bestanden = sneller laden op mobiel. <code>loading=\"lazy\"</code> en <code>fetchpriority=\"high\"</code> versnellen rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> en Lighthouse identificeren te optimaliseren bestanden.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips voor conversie TIFF naar PNG",
+      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Zeer grote bestanden",
+          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Reeds gecomprimeerd",
+          "description": "Als het TIFF-bestand al sterk gecomprimeerd was, levert conversie naar PNG mogelijk weinig besparing."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparantie",
+          "description": "PNG ondersteunt alfakanaal. Transparante gebieden van TIFF worden behouden."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Bewaar originelen",
+          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van TIFF-bestanden."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over TIFF-naar-PNG-conversie",
       "openByDefault": 0,
@@ -267,6 +317,18 @@
         {
           "question": "Werkt de converter op mobiele apparaten?",
           "answer": "Ja, hij werkt op elk apparaat met een moderne webbrowser."
+        },
+        {
+          "question": "Is conversie TIFF naar PNG veilig?",
+          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+        },
+        {
+          "question": "Kan ik meerdere TIFF-bestanden tegelijk converteren?",
+          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+        },
+        {
+          "question": "Wordt PNG door alle browsers ondersteund?",
+          "answer": "PNG wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
         }
       ]
     },

@@ -244,6 +244,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Miten kuvamuunnos vaikuttaa nopeuteen ja SEO:hon",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman nakyvam elementin nayttamiseen.</p><p class=\"text-mid mb-4\">GIF-kuvien muuntaminen PNG-muotoon pienentaa tiedostokokoa, lyhentaa latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vinkkeja GIF-PNG-muunnokseen",
+      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Erittain suuret tiedostot",
+          "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jo pakatut",
+          "description": "Jos GIF oli jo voimakkaasti pakattu, muunnos PNG-muotoon ei valttamatta saasta paljon."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Lapinakyvy",
+          "description": "PNG tukee alfakanavaa. GIF:n lapinakyyt alueet sailyvat."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Sailyta alkuperaiset",
+          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot GIF-tiedostoista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kuinka paljon saastat muuntamalla GIF PNG?",
+      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2 MB → 120 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 40 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~92%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">200 KB → 25 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~88%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset GIF-PNG-muunnoksesta",
       "openByDefault": 0,
@@ -267,6 +317,18 @@
         {
           "question": "Toimiiko muunnin mobiililaitteilla?",
           "answer": "Kyllä, se toimii millä tahansa laitteella, jossa on moderni selain."
+        },
+        {
+          "question": "Onko GIF PNG muunnos turvallinen?",
+          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+        },
+        {
+          "question": "Voinko muuntaa useita GIF-tiedostoja kerralla?",
+          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+        },
+        {
+          "question": "Tukevatko kaikki selaimet PNG-muotoa?",
+          "answer": "PNG-muotoa tukevat Chrome, Firefox, Safari, Edge ja Opera."
         }
       ]
     },

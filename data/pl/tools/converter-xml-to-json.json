@@ -236,6 +236,47 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Ile mozna zaoszczedzic konwertujac XML na JSON?",
+      "html": "<p class=\"text-mid mb-4\">Oszczednosci zaleza od rodzaju pliku zrodlowego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjecie z aparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczednosci moga sie roznic. Konwerter pokazuje dokladny rozmiar przed i po konwersji.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Na co zwrocic uwage przy konwersji XML na JSON?",
+      "description": "Kilka wskazowek, ktore pomoga uniknac problemow:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Bardzo duze pliki",
+          "description": "Konwersja obrazow powyzej 4000×4000 pikseli moze byc wolniejsza. Rozwaz dzielenie ich na partie po 10–20 sztuk."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Juz skompresowane pliki",
+          "description": "Jesli oryginalny plik XML byl juz mocno skompresowany, konwersja na JSON moze nie przyniesc duzych oszczednosci."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Przezroczystosc",
+          "description": "Format JSON nie obsluguje przezroczystosci. Przezroczyste obszary zostana zastapione bialym tlem. Rozwaz PNG lub WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Zachowaj oryginaly",
+          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plikow XML aby moc powtorzyc konwersje."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Najczęściej zadawane pytania o konwersji XML na JSON",
       "openByDefault": 1,
@@ -255,6 +296,18 @@
         {
           "question": "Czy narzędzie obsługuje przestrzenie nazw (namespaces)?",
           "answer": "Tak, przestrzenie nazw XML są zachowane w wynikowym JSON jako prefiksy kluczy."
+        },
+        {
+          "question": "Czy konwersja XML na JSON jest bezpieczna?",
+          "answer": "Tak. Cala konwersja odbywa sie lokalnie w przegladarce za pomoca Canvas API. Pliki nie sa wysylane na zaden serwer. Po zamknieciu strony dane sa usuwane automatycznie."
+        },
+        {
+          "question": "Czy moge konwertowac wiele plikow XML jednoczesnie?",
+          "answer": "Tak. Narzedzie obsluguje konwersje wielu plikow naraz bez limitu. Przeciagnij pliki na pole konwertera lub wybierz z dysku."
+        },
+        {
+          "question": "Czy JSON jest obslugiwany przez wszystkie przegladarki?",
+          "answer": "Format JSON jest szeroko obslugiwany przez nowoczesne przegladarki: Chrome, Firefox, Safari, Edge i Opera."
         }
       ]
     },

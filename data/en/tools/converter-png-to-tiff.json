@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PNG to TIFF converter — PNG TIFF",
     "description": "Convert PNG graphics to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/png-to-tiff-converter"
   },
   "hero": {
     "title": "PNG to TIFF converter",
     "description": "Convert PNG graphics to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Why convert PNG to TIFF?",
       "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) is a lossless image format supporting millions colors. It is widely used for graphics with transparency and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting PNG to TIFF (Tagged Image File Format) gives you more flexibility in how and where you use your images.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, TIFF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many PNG files as you need, completely free.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to TIFF conversion",
       "variant": "right"
     },
@@ -261,6 +261,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting PNG to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about PNG to TIFF conversion",
       "openByDefault": 0,
@@ -288,6 +297,14 @@
         {
           "question": "Does the converter work on mobile devices?",
           "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets. The interface adapts to your screen size for a comfortable experience on any device."
+        },
+        {
+          "question": "Is converting PNG to TIFF safe for my files?",
+          "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
+        },
+        {
+          "question": "Is TIFF supported by all browsers?",
+          "answer": "The TIFF format is widely supported by modern browsers: Chrome, Firefox, Safari, Edge, and Opera."
         }
       ]
     },
@@ -299,7 +316,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Contact",
       "defaultSubject": "PNG to TIFF converter"
     },

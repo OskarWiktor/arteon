@@ -244,6 +244,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Reglages de qualite — que choisir pour PNG vers JPG ?",
+      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (defaut) — bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% — pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% — quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 85% la difference visuelle entre PNG original et JPG resultant est imperceptible.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Combien economiser en convertissant PNG en JPG ?",
+      "html": "<p class=\"text-mid mb-4\">Les economies dependent du type de fichier source et sa compression :</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo d'appareil</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Image produit</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Capture / banniere</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Les economies reelles varient selon le contenu et les reglages.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Impact de la conversion d'images sur vitesse et SEO",
+      "html": "<p class=\"text-mid mb-4\">Les Core Web Vitals sont des metriques Google. Le LCP mesure le temps d'affichage du plus grand element visible.</p><p class=\"text-mid mb-4\">Convertir PNG en JPG reduit la taille, raccourcit le telechargement et ameliore le LCP. Fichiers plus petits = chargement plus rapide sur mobile. <code>loading=\"lazy\"</code> et <code>fetchpriority=\"high\"</code> accelerent le rendu.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> et Lighthouse identifient les fichiers a optimiser.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Conseils pour convertir PNG en JPG",
+      "description": "Conseils pour eviter les problemes courants :",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Fichiers volumineux",
+          "description": "Images de plus de 4000×4000 px peuvent etre plus lentes. Divisez en lots de 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Fichiers deja compresses",
+          "description": "Si le PNG original etait deja compresse, la conversion en JPG peut ne pas economiser beaucoup."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparence",
+          "description": "JPG ne supporte pas la transparence. Zones transparentes remplacees par fond blanc. Utilisez PNG ou WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Conservez les originaux",
+          "description": "La conversion avec perte est irreversible. Conservez des copies des fichiers PNG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Questions fréquentes sur la conversion PNG vers JPG",
       "openByDefault": 0,
@@ -271,6 +330,14 @@
         {
           "question": "Le convertisseur fonctionne-t-il sur mobile ?",
           "answer": "Oui, il fonctionne sur tout appareil disposant d’un navigateur web moderne, y compris smartphones et tablettes."
+        },
+        {
+          "question": "La conversion PNG en JPG est-elle sure ?",
+          "answer": "Oui. Tout se fait localement dans le navigateur via Canvas API. Rien n'est envoye a un serveur."
+        },
+        {
+          "question": "Puis-je convertir plusieurs fichiers PNG ?",
+          "answer": "Oui. Conversion par lots sans limite. Glissez les fichiers sur le convertisseur."
         }
       ]
     },

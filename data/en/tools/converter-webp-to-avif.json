@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP to AVIF converter — WebP AVIF",
     "description": "Convert WebP files to AVIF. Even better compression in a modern format. All processing happens locally in your browser — files never leave your device.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/webp-to-avif-converter"
   },
   "hero": {
     "title": "WebP to AVIF converter",
     "description": "Convert WebP files to AVIF. Even better compression in a modern format. All processing happens locally in your browser — files never leave your device.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Why convert WebP to AVIF?",
       "html": "<p class=\"text-mid mb-4\">WebP (WebP) is a lossy image format supporting millions colors. It is widely used for web images with browser support in Chrome, Firefox, Safari 14+, Edge.</p><p class=\"text-mid mb-4\">Converting WebP to AVIF (AV1 Image File Format) takes advantage of modern compression technology for smaller file sizes without quality loss.</p><p class=\"text-mid mb-4\">AVIF supports alpha transparency, preserving any transparent areas in your image. AVIF supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many WebP files as you need, completely free.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "WebP to AVIF conversion",
       "variant": "right"
     },
@@ -303,7 +303,7 @@
       "type": "contactForm",
       "title": "Help us improve our tools",
       "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Contact",
       "defaultSubject": "WebP to AVIF converter"
     },

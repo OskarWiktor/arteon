@@ -4,13 +4,13 @@
   "metadata": {
     "title": "PDF JPG -muunnin — PDF JPG",
     "description": "Muunna PDF-sivut JPG-kuviksi. Korkea laatu, ei rajoituksia. Ilmainen.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/pdf-jpg-muunnin"
   },
   "hero": {
     "title": "PDF JPG -muunnin",
     "description": "Muunna PDF-sivut JPG-kuviksi. Korkea laatu, ei rajoituksia. Ilmainen.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa PDF JPG-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">Muunna PDF-sivut JPG-kuviksi. Korkea laatu, ei rajoituksia. Ilmainen.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">PDF on laajalti kaytetty tiedostomuoto laajalla yhteensopivuudella. Kayttotapauksesta riippuen muuntaminen JPG-muotoon voi tarjota merkittavia etuja — pienemmat tiedostot, parempi laatu tai laajempi alusta tuki.</p><p class=\"text-mid mb-4\">Tama ilmainen verkkomuunnin muuntaa PDF-tiedostosi JPG-muotoon suoraan selaimessa. Tiedostoja ei laheteta palvelimille — koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman paivittaisia rajoituksia, rekisteroitymista tai vesileimoja. Vedaa ja pudota tiedostot, saada laatua ja lataa tulokset.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "PDF to JPG conversion",
       "variant": "right"
     },
@@ -198,6 +198,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Laatuasetukset — mita valita muunnoksessa PDF JPG?",
+      "html": "<p class=\"text-mid\">Liukusaadin 60%-95%. Korkeampi = parempi laatu mutta suurempi tiedosto.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (oletus) — hyva verkkosivuille, blogeille, artikkeleille.</strong></li><li><strong>85–90% — tuotekuville, portfolioille ja gallerioille.</strong></li><li><strong>60–70% — kun tiedostokoon minimointi on tarkeaa.</strong></li></ul><p class=\"text-mid mt-3\">85% laadulla ero PDF:n ja JPG:n valilla on kaytannossa huomaamaton.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten kuvamuunnos vaikuttaa nopeuteen ja SEO:hon",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman nakyvam elementin nayttamiseen.</p><p class=\"text-mid mb-4\">PDF-kuvien muuntaminen JPG-muotoon pienentaa tiedostokokoa, lyhentaa latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vinkkeja PDF-JPG-muunnokseen",
+      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Erittain suuret tiedostot",
+          "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jo pakatut",
+          "description": "Jos PDF oli jo voimakkaasti pakattu, muunnos JPG-muotoon ei valttamatta saasta paljon."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Lapinakyvy",
+          "description": "JPG ei tue lapinakyyytta. Lapinakyyt alueet muuttuvat valkoisiksi. Harkitse PNG:ta tai WebP:ta."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Sailyta alkuperaiset",
+          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot PDF-tiedostoista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kuinka paljon saastat muuntamalla PDF JPG?",
+      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Usein kysytyt kysymykset PDF-JPG-muunnoksesta",
       "openByDefault": 0,
@@ -217,6 +276,18 @@
         {
           "question": "Toimiiko muunnin mobiilissa?",
           "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
+        },
+        {
+          "question": "Onko PDF JPG muunnos turvallinen?",
+          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+        },
+        {
+          "question": "Voinko muuntaa useita PDF-tiedostoja kerralla?",
+          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+        },
+        {
+          "question": "Tukevatko kaikki selaimet JPG-muotoa?",
+          "answer": "JPG-muotoa tukevat Chrome, Firefox, Safari, Edge ja Opera."
         }
       ]
     },
@@ -228,7 +299,7 @@
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
       "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa jotain? Lähetä meille viesti – vastaamme 24 tunnin sisällä.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "Contact",
       "defaultSubject": "PDF JPG -muunnin"
     },

@@ -4,13 +4,13 @@
   "metadata": {
     "title": "JPG naar GIF converter — JPG GIF",
     "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/jpg-naar-gif-converter"
   },
   "hero": {
     "title": "JPG naar GIF converter",
     "description": "Converteer JPG-foto\\'s naar GIF-formaat. Perfect voor eenvoudige afbeeldingen en iconen. Draait volledig in je browser. Geen serveruploads, geen registratie nodig.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Waarom JPG naar GIF converteren?",
       "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is het meest gebruikte beeldformaat ter wereld voor digitale foto's. Het gebruikt compressie met verlies voor compacte bestanden, maar ondersteunt geen transparantie of verliesvrije opslag.</p><p class=\"text-mid mb-4\">GIF is het standaardformaat voor korte animaties, memes en eenvoudige afbeeldingen met beperkt kleurenpalet. Met universele browserondersteuning is GIF bijzonder geschikt voor geanimeerde content op sociale media en in berichtenapps.</p><p class=\"text-mid mb-4\">Het kleurenpalet wordt gereduceerd tot 256, wat bij foto's tot zichtbaar kwaliteitsverlies leidt. Deze conversie is vooral geschikt voor eenvoudige afbeeldingen of wanneer het GIF-formaat om compatibiliteitsredenen vereist is.</p><p class=\"text-mid\">Deze converter werkt volledig lokaal in uw browser – uw bestanden verlaten nooit uw apparaat. Geen uploads, geen servers, geen registratie. Volledig AVG-conform en gratis zonder enige beperking.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "JPG naar GIF conversie",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hoeveel besparen bij conversie JPG naar GIF?",
+      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe beeldconversie paginasnelheid en SEO beinvloedt",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals zijn Google-prestatiemetrieken. LCP meet de tijd tot het grootste zichtbare element verschijnt.</p><p class=\"text-mid mb-4\">Conversie van JPG naar GIF verkleint bestanden, verkort downloadtijd en verbetert LCP. Kleinere bestanden = sneller laden op mobiel. <code>loading=\"lazy\"</code> en <code>fetchpriority=\"high\"</code> versnellen rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> en Lighthouse identificeren te optimaliseren bestanden.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips voor conversie JPG naar GIF",
+      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Zeer grote bestanden",
+          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Reeds gecomprimeerd",
+          "description": "Als het JPG-bestand al sterk gecomprimeerd was, levert conversie naar GIF mogelijk weinig besparing."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparantie",
+          "description": "GIF ondersteunt alfakanaal. Transparante gebieden van JPG worden behouden."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Bewaar originelen",
+          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van JPG-bestanden."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Veelgestelde vragen over JPG-naar-GIF-conversie",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Werkt de converter op mobiele apparaten?",
           "answer": "Ja, hij werkt op elk apparaat met een moderne webbrowser."
+        },
+        {
+          "question": "Is conversie JPG naar GIF veilig?",
+          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+        },
+        {
+          "question": "Kan ik meerdere JPG-bestanden tegelijk converteren?",
+          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+        },
+        {
+          "question": "Wordt GIF door alle browsers ondersteund?",
+          "answer": "GIF wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
       "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "Contact",
       "defaultSubject": "JPG naar GIF converter"
     },

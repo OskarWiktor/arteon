@@ -4,13 +4,13 @@
   "metadata": {
     "title": "SVG til PDF-konverterer — SVG PDF",
     "description": "Konverter SVG-bilder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/svg-til-pdf-konverterer"
   },
   "hero": {
     "title": "SVG til PDF-konverterer",
     "description": "Konverter SVG-bilder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere SVG til PDF?",
-      "html": "<p class=\"text-mid mb-4\">Konverter SVG-bilder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">SVG er et mye brukt filformat med bred kompatibilitet. Avhengig av bruksomradet kan konvertering til PDF gi betydelige fordeler — mindre filer, bedre kvalitet eller bredere plattformstotte.</p><p class=\"text-mid mb-4\">Denne gratis nettkonverteren gjor om SVG-filene dine til PDF-format direkte i nettleseren. Ingen filer lastes opp — hele prosessen skjer lokalt pa enheten din.</p><p class=\"text-mid\">Konverter sa mange filer du vil uten daglige begrensninger, uten registrering og uten vannmerker. Dra og slipp filer, juster kvaliteten og last ned resultatene.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "SVG to PDF conversion",
       "variant": "right"
     },
@@ -198,6 +198,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Kvalitet — hva velge ved konvertering SVG til PDF?",
+      "html": "<p class=\"text-mid\">Glideren tillater 60%-95%. Hoyere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — bra for nettsider, blogger, artikler.</strong></li><li><strong>85–90% — for produktbilder, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 85% er forskjellen mellom SVG og PDF praktisk talt umerkelig.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips for konvertering SVG til PDF",
+      "description": "Tips for a unnga vanlige problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Veldig store filer",
+          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerte",
+          "description": "Hvis SVG allerede var sterkt komprimert, gir konvertering til PDF kanskje ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "PDF stotter ikke transparens. Transparente omrader blir hvite. Vurder PNG eller WebP."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originalene",
+          "description": "Tapsbringende konvertering er irreversibel. Behold kopier av SVG-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvor mye sparer du ved konvertering SVG til PDF?",
+      "html": "<p class=\"text-mid mb-4\">Besparelsene avhenger av filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerabilde</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbilde</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skjermbilde / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer etter innhold og innstillinger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stilte spørsmål om SVG til PDF-konvertering",
       "openByDefault": 0,
@@ -217,6 +267,18 @@
         {
           "question": "Fungerer konvertereren på mobil?",
           "answer": "Ja, den fungerer på alle enheter med en moderne nettleser."
+        },
+        {
+          "question": "Er konvertering SVG til PDF trygt?",
+          "answer": "Ja. Alt skjer lokalt i nettleseren via Canvas API. Ingenting sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere SVG-filer?",
+          "answer": "Ja. Batchkonvertering uten begrensning. Dra filer til konverteringsomradet."
+        },
+        {
+          "question": "Stottes PDF av alle nettlesere?",
+          "answer": "PDF stottes av Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },
@@ -228,7 +290,7 @@
       "type": "contactForm",
       "title": "Hjelp oss å forbedre verktøyene våre",
       "description": "Har du en idé, funnet en feil eller vil foreslå noe? Send oss en melding – vi svarer innen 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "Contact",
       "defaultSubject": "SVG til PDF-konverterer"
     },

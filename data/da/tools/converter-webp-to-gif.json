@@ -4,13 +4,13 @@
   "metadata": {
     "title": "WebP til GIF-konverter — WebP GIF",
     "description": "Konverter WebP-billeder til GIF-format for maksimal kompatibilitet. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/webp-til-gif-konverter"
   },
   "hero": {
     "title": "WebP til GIF-konverter",
     "description": "Konverter WebP-billeder til GIF-format for maksimal kompatibilitet. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -67,7 +67,7 @@
       "type": "sectionBasic",
       "title": "Hvorfor konvertere WebP til GIF?",
       "html": "<p class=\"text-mid mb-4\">WebP er et moderne billedformat udviklet af Google, der understøtter både tabsgivende og tabsfri komprimering. Det producerer markant mindre filer end PNG og JPEG ved sammenlignelig visuel kvalitet og understøttes af alle aktuelle browsere.</p><p class=\"text-mid mb-4\">GIF er standardformatet for korte animationer, memes og enkel grafik med begrænset farvepalet. Med universel browserunderstøttelse er GIF særligt velegnet til animeret indhold på sociale medier og i beskedapps.</p><p class=\"text-mid mb-4\">Konverteringen reducerer paletten til 256 farver. Den er velegnet til enkel grafik eller når GIF-formatet er nødvendigt til animationer eller af kompatibilitetsårsager.</p><p class=\"text-mid\">Denne konverter kører helt lokalt i din browser – dine filer forlader aldrig din enhed. Ingen uploads, ingen servere, ingen registrering. Fuldt GDPR-kompatibel og gratis uden nogen begrænsninger.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "WEBP til GIF konvertering",
       "variant": "right"
     },
@@ -252,6 +252,56 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af WebP til GIF reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tips til konvertering WebP til GIF",
+      "description": "Tips for at undga problemer:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Meget store filer",
+          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Allerede komprimerede",
+          "description": "Hvis WebP allerede var komprimeret, giver konvertering til GIF maske ikke stor besparelse."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Transparens",
+          "description": "GIF understotter alfakanal. Transparente omrader i WebP bevares."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Behold originaler",
+          "description": "Tabsgivende konvertering er irreversibel. Behold kopier af WebP-filer."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvor meget sparer du ved konvertering WebP til GIF?",
+      "html": "<p class=\"text-mid mb-4\">Besparelser afhaenger af filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbillede</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skaermbillede / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer efter indhold og indstillinger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Ofte stillede spørgsmål om konvertering af WebP til GIF",
       "openByDefault": 0,
@@ -275,6 +325,18 @@
         {
           "question": "Fungerer konverteren på mobilenheder?",
           "answer": "Ja, den fungerer på enhver enhed med en moderne webbrowser, herunder smartphones og tablets."
+        },
+        {
+          "question": "Er konvertering WebP til GIF sikker?",
+          "answer": "Ja. Alt sker lokalt i browseren via Canvas API. Intet sendes til servere."
+        },
+        {
+          "question": "Kan jeg konvertere flere WebP-filer?",
+          "answer": "Ja. Batchkonvertering uden begraensning. Traek filer til konverteringsomradet."
+        },
+        {
+          "question": "Understotter alle browsere GIF?",
+          "answer": "GIF understttes af Chrome, Firefox, Safari, Edge og Opera."
         }
       ]
     },
@@ -286,7 +348,7 @@
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
       "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "Kontakt",
       "defaultSubject": "WEBP til GIF konverter"
     },

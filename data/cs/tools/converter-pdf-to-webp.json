@@ -4,13 +4,13 @@
   "metadata": {
     "title": "Převodník PDF na WebP — PDF WebP",
     "description": "Převeďte stránky PDF na obrázky WebP. Vysoká kvalita, bez omezení. Zdarma.",
-    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-pdf-na-webp"
   },
   "hero": {
     "title": "Převodník PDF na WebP",
     "description": "Převeďte stránky PDF na obrázky WebP. Vysoká kvalita, bez omezení. Zdarma.",
-    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -61,8 +61,8 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět PDF na WebP?",
-      "html": "<p class=\"text-mid mb-4\">Převeďte stránky PDF na obrázky WebP. Vysoká kvalita, bez omezení. Zdarma.</p>",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "html": "<p class=\"text-mid mb-4\">PDF je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na WebP prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase PDF soubory do formatu WebP primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "PDF to WebP conversion",
       "variant": "right"
     },
@@ -198,6 +198,65 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "Nastaveni kvality — co zvolit pri konverzi PDF na WebP?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 80% je rozdil mezi originalnim PDF a vyslednym WebP nepostrehnutelny.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kolik usetrite konverzi PDF na WebP?",
+      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak konverze ovlivnuje rychlost a SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals jsou metriky Google. LCP meri cas do zobrazeni nejvetsiho prvku.</p><p class=\"text-mid mb-4\">Konverze PDF na WebP zmensuje soubory, zkracuje stahovani a zlepsuje LCP. Mensi soubory = rychlejsi nacitani na mobilu. <code>loading=\"lazy\"</code> a <code>fetchpriority=\"high\"</code> urychluji rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> a Lighthouse identifikuji soubory k optimalizaci.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Tipy pro konverzi PDF na WebP",
+      "description": "Tipy jak se vyhnout problemum:",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiFileImageLine",
+          "title": "Velmi velke soubory",
+          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Jiz komprimovane",
+          "description": "Pokud byl PDF jiz silne komprimovany, konverze na WebP nemusi usetrit mnoho."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Pruhlednost",
+          "description": "WebP podporuje alfa kanal. Pruhledne oblasti PDF budou zachovany."
+        },
+        {
+          "icon": "RiStackLine",
+          "title": "Uchovejte originaly",
+          "description": "Ztratova konverze je nevratna. Uchovejte kopie PDF souboru."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu PDF na WebP",
       "openByDefault": 0,
@@ -217,6 +276,18 @@
         {
           "question": "Funguje převodník na mobilu?",
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
+        },
+        {
+          "question": "Je konverze PDF na WebP bezpecna?",
+          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+        },
+        {
+          "question": "Mohu konvertovat vice souboru PDF?",
+          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+        },
+        {
+          "question": "Je WebP podporovan vsemi prohlizeci?",
+          "answer": "WebP je podporovan v Chrome, Firefox, Safari, Edge a Opera."
         }
       ]
     },
@@ -228,7 +299,7 @@
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
       "description": "Máte nápad, našli jste chybu nebo chcete něco navrhnout? Napište nám – odpovíme do 24 hodin.",
-      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Contact",
       "defaultSubject": "Převodník PDF na WebP"
     },
