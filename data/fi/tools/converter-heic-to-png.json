@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "HEIC vs PNG – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Molemmat</td><td class=\"py-2 text-center\">Häviötön</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Ei</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">yleinen</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Milloin kannattaa muuntaa HEIC PNG-muotoon?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Selaintuki",
           "values": {
-            "heic": false,
-            "png": true
+            "heic": "Safari 13+ (macOS / iOS)",
+            "png": "Kaikki selaimet"
+          }
+        },
+        {
+          "name": "Värisyvyys",
+          "values": {
+            "heic": "8/10-bit, HDR",
+            "png": "8/16-bit"
           }
         },
         {
@@ -237,7 +235,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

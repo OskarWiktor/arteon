@@ -123,7 +123,7 @@ function renderBlock(block: ToolContentBlock, idx: number, pageUrl: string): Rea
       );
 
     case 'sectionFeatureComparison':
-      return <SectionFeatureComparison key={`comparison-${idx}`} title={block.title} plans={block.plans} features={block.features} />;
+      return <SectionFeatureComparison key={`comparison-${idx}`} title={block.title} featureLabel={block.featureLabel} plans={block.plans} features={block.features} />;
 
     case 'sectionTimeline':
       return (

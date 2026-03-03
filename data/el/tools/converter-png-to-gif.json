@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PNG έναντι GIF – βασικές διαφορές",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Όχι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">καθολική</td><td class=\"py-2 text-center\">καθολική</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Πότε πρέπει να μετατρέψετε PNG σε GIF;",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Υποστήριξη περιηγητών",
           "values": {
-            "png": true,
-            "gif": true
+            "png": "Όλοι οι περιηγητές",
+            "gif": "Όλοι οι περιηγητές"
+          }
+        },
+        {
+          "name": "Βάθος χρώματος",
+          "values": {
+            "png": "8/16-bit",
+            "gif": "8-bit (256)"
           }
         },
         {
@@ -245,7 +243,8 @@
             "gif": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Χαρακτηριστικό"
     },
     {
       "type": "gap",

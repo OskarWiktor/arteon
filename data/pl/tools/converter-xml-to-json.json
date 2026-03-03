@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "XML vs JSON — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">XML</th><th class=\"text-dark py-2 text-left font-semibold\">JSON</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Składnia</td><td class=\"text-mid py-2 pr-4\">Tagi (znaczniki)</td><td class=\"text-mid py-2\">Nawiasy klamrowe i kwadratowe</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar</td><td class=\"text-mid py-2 pr-4\">Większy (redundancja tagów)</td><td class=\"text-mid py-2\">Mniejszy (bardziej kompaktowy)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Atrybuty</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie (tylko klucze-wartości)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Walidacja schematu</td><td class=\"text-mid py-2 pr-4\">XSD, DTD</td><td class=\"text-mid py-2\">JSON Schema</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">SOAP API, konfiguracje korporacyjne</td><td class=\"text-mid py-2\">REST API, aplikacje webowe</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować XML na JSON?",
       "grid": "two",
@@ -229,7 +220,8 @@
             "json": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

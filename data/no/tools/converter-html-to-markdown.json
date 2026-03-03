@@ -184,7 +184,8 @@
             "markdown": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funksjon"
     },
     {
       "type": "gap",

@@ -97,15 +97,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP a TIFF – porównanie formatów",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Nie</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">uniwersalna</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy konwertować BMP na TIFF?",
       "grid": "two",
@@ -222,8 +213,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "bmp": true,
-            "tiff": false
+            "bmp": "Wszystkie przeglądarki",
+            "tiff": "Tylko Safari"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -240,7 +238,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

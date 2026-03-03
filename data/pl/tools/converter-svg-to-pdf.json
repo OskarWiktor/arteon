@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "SVG vs PDF — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">SVG</th><th class=\"text-dark py-2 text-left font-semibold\">PDF</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Grafika wektorowa (XML)</td><td class=\"text-mid py-2\">Format dokumentu</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Skalowalność</td><td class=\"text-mid py-2 pr-4\">Nieskończona</td><td class=\"text-mid py-2\">Zależy od zawartości</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Edycja</td><td class=\"text-mid py-2 pr-4\">Kod XML / Illustrator</td><td class=\"text-mid py-2\">Acrobat / edytory PDF</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Logo, ikony, web</td><td class=\"text-mid py-2\">Dokumenty, druk, prezentacje</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować SVG na PDF?",
       "grid": "two",
@@ -218,8 +209,8 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "svg": true,
-            "pdf": false
+            "svg": "Wszystkie przeglądarki",
+            "pdf": "Wbudowana przeglądarka PDF"
           }
         },
         {
@@ -236,7 +227,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

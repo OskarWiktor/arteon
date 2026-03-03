@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "GIF vs AVIF – de belangrijkste verschillen",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Beide</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">universeel</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Wanneer GIF naar AVIF converteren?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Webbrowserondersteuning",
           "values": {
-            "gif": true,
-            "avif": true
+            "gif": "Alle browsers",
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          }
+        },
+        {
+          "name": "Kleurdiepte",
+          "values": {
+            "gif": "8-bit (256)",
+            "avif": "8/10/12-bit, HDR"
           }
         },
         {
@@ -245,7 +243,8 @@
             "avif": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Functie"
     },
     {
       "type": "gap",

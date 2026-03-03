@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "TIFF vs JPG – hlavní rozdíly",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Vlastnost</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprese</td><td class=\"py-2 text-center\">Bezeztrátová</td><td class=\"py-2 text-center\">Ztrátová</td></tr><tr class=\"border-b\"><td class=\"py-2\">Průhlednost</td><td class=\"py-2 text-center\">Ano</td><td class=\"py-2 text-center\">Ne</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animace</td><td class=\"py-2 text-center\">Ne</td><td class=\"py-2 text-center\">Ne</td></tr><tr><td class=\"py-2\">Podpora prohlížečů</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">univerzální</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kdy převádět TIFF na JPG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Podpora webových prohlížečů",
           "values": {
-            "tiff": false,
-            "jpg": true
+            "tiff": "Pouze Safari",
+            "jpg": "Všechny prohlížeče"
+          }
+        },
+        {
+          "name": "Hloubka barev",
+          "values": {
+            "tiff": "8/16/32-bit",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkce"
     },
     {
       "type": "gap",

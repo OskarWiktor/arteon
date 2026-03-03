@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "WebP vs JPG – diferencias clave",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Característica</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresión</td><td class=\"py-2 text-center\">Ambas</td><td class=\"py-2 text-center\">Con pérdida</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparencia</td><td class=\"py-2 text-center\">Sí</td><td class=\"py-2 text-center\">No</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animación</td><td class=\"py-2 text-center\">Sí</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Soporte navegador</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "¿Cuándo conviene convertir WebP a JPG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Compatibilidad con navegadores",
           "values": {
-            "webp": true,
-            "jpg": true
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "jpg": "Todos los navegadores"
+          }
+        },
+        {
+          "name": "Profundidad de color",
+          "values": {
+            "webp": "8-bit (16.7M)",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Característica"
     },
     {
       "type": "gap",

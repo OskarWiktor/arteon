@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "SVG vs WebP – key differences",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Feature</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Both</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparency</td><td class=\"py-2 text-center\">Yes</td><td class=\"py-2 text-center\">Yes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Yes</td><td class=\"py-2 text-center\">Yes</td></tr><tr><td class=\"py-2\">Browser support</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "When should you convert SVG to WebP?",
       "grid": "two",
@@ -228,8 +219,15 @@
         {
           "name": "Web browser support",
           "values": {
-            "svg": true,
-            "webp": true
+            "svg": "All browsers",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Color depth",
+          "values": {
+            "svg": "N/A (vector)",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -246,7 +244,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

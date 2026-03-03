@@ -173,8 +173,8 @@
         {
           "name": "Prise en charge des navigateurs",
           "values": {
-            "png": true,
-            "pdf": false
+            "png": "Tous les navigateurs",
+            "pdf": "Visionneuse PDF intégrée"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Fonctionnalité"
     },
     {
       "type": "gap",

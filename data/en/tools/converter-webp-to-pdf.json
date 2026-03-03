@@ -173,8 +173,8 @@
         {
           "name": "Web browser support",
           "values": {
-            "webp": true,
-            "pdf": false
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "pdf": "Built-in PDF viewer"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

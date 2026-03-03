@@ -173,8 +173,8 @@
         {
           "name": "Suport în browsere",
           "values": {
-            "pdf": false,
-            "png": true
+            "pdf": "Vizualizator PDF integrat",
+            "png": "Toate browserele"
           }
         },
         {
@@ -191,7 +191,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcționalitate"
     },
     {
       "type": "gap",

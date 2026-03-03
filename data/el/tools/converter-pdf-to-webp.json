@@ -173,8 +173,8 @@
         {
           "name": "Υποστήριξη περιηγητών",
           "values": {
-            "pdf": false,
-            "webp": true
+            "pdf": "Ενσωματωμένη προβολή PDF",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
           }
         },
         {
@@ -191,7 +191,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Χαρακτηριστικό"
     },
     {
       "type": "gap",

@@ -184,7 +184,8 @@
             "csv": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Fonctionnalité"
     },
     {
       "type": "gap",

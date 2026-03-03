@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "WebP έναντι TIFF – βασικές διαφορές",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Και τα δύο</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Πότε πρέπει να μετατρέψετε WebP σε TIFF;",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Υποστήριξη περιηγητών",
           "values": {
-            "webp": true,
-            "tiff": false
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "tiff": "Μόνο Safari"
+          }
+        },
+        {
+          "name": "Βάθος χρώματος",
+          "values": {
+            "webp": "8-bit (16.7M)",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -245,7 +243,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Χαρακτηριστικό"
     },
     {
       "type": "gap",

@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "SVG vs. AVIF – die wichtigsten Unterschiede",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Beide</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Wann sollten Sie SVG in AVIF konvertieren?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Webbrowser-Unterstützung",
           "values": {
-            "svg": true,
-            "avif": true
+            "svg": "Alle Browser",
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          }
+        },
+        {
+          "name": "Farbtiefe",
+          "values": {
+            "svg": "N/A (Vektor)",
+            "avif": "8/10/12-bit, HDR"
           }
         },
         {
@@ -245,7 +243,8 @@
             "avif": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

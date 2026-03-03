@@ -173,8 +173,8 @@
         {
           "name": "Compatibilidad con navegadores",
           "values": {
-            "heic": false,
-            "pdf": false
+            "heic": "Safari 13+ (macOS / iOS)",
+            "pdf": "Visor PDF integrado"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Característica"
     },
     {
       "type": "gap",

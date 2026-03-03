@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "JPG vs PNG – hlavní rozdíly",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Vlastnost</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprese</td><td class=\"py-2 text-center\">Ztrátová</td><td class=\"py-2 text-center\">Bezeztrátová</td></tr><tr class=\"border-b\"><td class=\"py-2\">Průhlednost</td><td class=\"py-2 text-center\">Ne</td><td class=\"py-2 text-center\">Ano</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animace</td><td class=\"py-2 text-center\">Ne</td><td class=\"py-2 text-center\">Ne</td></tr><tr><td class=\"py-2\">Podpora prohlížečů</td><td class=\"py-2 text-center\">univerzální</td><td class=\"py-2 text-center\">univerzální</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kdy převádět JPG na PNG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Podpora webových prohlížečů",
           "values": {
-            "jpg": true,
-            "png": true
+            "jpg": "Všechny prohlížeče",
+            "png": "Všechny prohlížeče"
+          }
+        },
+        {
+          "name": "Hloubka barev",
+          "values": {
+            "jpg": "8-bit (16.7M)",
+            "png": "8/16-bit"
           }
         },
         {
@@ -237,7 +235,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkce"
     },
     {
       "type": "gap",

@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP vs TIFF – key differences",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Feature</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparency</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Yes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Browser support</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "When should you convert BMP to TIFF?",
       "grid": "two",
@@ -236,8 +227,15 @@
         {
           "name": "Web browser support",
           "values": {
-            "bmp": true,
-            "tiff": false
+            "bmp": "All browsers",
+            "tiff": "Safari only"
+          }
+        },
+        {
+          "name": "Color depth",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -254,7 +252,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

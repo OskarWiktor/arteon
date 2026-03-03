@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PNG vs WebP – les différences clés",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Les deux</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Oui</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universelle</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Quand faut-il convertir PNG en WebP ?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Prise en charge des navigateurs",
           "values": {
-            "png": true,
-            "webp": true
+            "png": "Tous les navigateurs",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Profondeur de couleur",
+          "values": {
+            "png": "8/16-bit",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Fonctionnalité"
     },
     {
       "type": "gap",

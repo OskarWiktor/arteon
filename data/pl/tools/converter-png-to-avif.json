@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PNG a AVIF – porównanie formatów",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Bezstratna</td><td class=\"py-2 text-center\">Obie</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Tak</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Tak</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">uniwersalna</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy konwertować PNG na AVIF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "png": true,
-            "avif": true
+            "png": "Wszystkie przeglądarki",
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "png": "8/16-bit",
+            "avif": "8/10/12-bit, HDR"
           }
         },
         {
@@ -245,7 +243,8 @@
             "avif": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

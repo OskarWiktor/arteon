@@ -173,8 +173,8 @@
         {
           "name": "Podpora webových prohlížečů",
           "values": {
-            "pdf": false,
-            "jpg": true
+            "pdf": "Vestavěný prohlížeč PDF",
+            "jpg": "Všechny prohlížeče"
           }
         },
         {
@@ -191,7 +191,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkce"
     },
     {
       "type": "gap",

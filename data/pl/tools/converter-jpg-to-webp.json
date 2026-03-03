@@ -279,8 +279,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "jpg": true,
-            "webp": true
+            "jpg": "Wszystkie przeglądarki",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "jpg": "8-bit (16.7M)",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -297,7 +304,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

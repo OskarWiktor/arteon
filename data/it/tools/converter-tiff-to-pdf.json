@@ -173,8 +173,8 @@
         {
           "name": "Supporto browser",
           "values": {
-            "tiff": false,
-            "pdf": false
+            "tiff": "Solo Safari",
+            "pdf": "Visualizzatore PDF integrato"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funzionalità"
     },
     {
       "type": "gap",

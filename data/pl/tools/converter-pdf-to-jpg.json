@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PDF vs JPG — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PDF</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Format dokumentu</td><td class=\"text-mid py-2\">Format obrazu rastrowego</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Wiele stron</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie (1 obraz = 1 plik)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar</td><td class=\"text-mid py-2 pr-4\">Zależy od zawartości</td><td class=\"text-mid py-2\">Mały (kompresja stratna)</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Dokumenty, druk</td><td class=\"text-mid py-2\">Zdjęcia, web, social media</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Jeśli zależy ci na bezstratnej jakości tekstu, rozważ <a href=\"/narzedzia/konwerter-pdf-na-png\">konwersję PDF na PNG</a>.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować PDF na JPG?",
       "grid": "two",
@@ -218,8 +209,8 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "pdf": false,
-            "jpg": true
+            "pdf": "Wbudowana przeglądarka PDF",
+            "jpg": "Wszystkie przeglądarki"
           }
         },
         {
@@ -236,7 +227,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

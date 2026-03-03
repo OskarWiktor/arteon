@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "TIFF vs PNG – key differences",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Feature</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparency</td><td class=\"py-2 text-center\">Yes</td><td class=\"py-2 text-center\">Yes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Browser support</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "When should you convert TIFF to PNG?",
       "grid": "two",
@@ -228,8 +219,15 @@
         {
           "name": "Web browser support",
           "values": {
-            "tiff": false,
-            "png": true
+            "tiff": "Safari only",
+            "png": "All browsers"
+          }
+        },
+        {
+          "name": "Color depth",
+          "values": {
+            "tiff": "8/16/32-bit",
+            "png": "8/16-bit"
           }
         },
         {
@@ -246,7 +244,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

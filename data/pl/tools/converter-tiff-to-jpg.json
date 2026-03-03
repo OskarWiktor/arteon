@@ -130,15 +130,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Różnice między TIFF a JPG",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">TIFF</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Bezstratna (lub brak)</td><td class=\"text-mid py-2\">Stratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Bardzo duży (25-100 MB)</td><td class=\"text-mid py-2\">Mały (0,5-3 MB)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Poligrafia, skany, archiwizacja</td><td class=\"text-mid py-2\">Internet, e-mail, codzienne użycie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Obsługa w przeglądarkach</td><td class=\"text-mid py-2 pr-4\">Brak</td><td class=\"text-mid py-2\">Wszystkie</td></tr><tr><td class=\"text-mid py-2 pr-4\">Warstwy i strony</td><td class=\"text-mid py-2 pr-4\">Tak (wielostronicowe)</td><td class=\"text-mid py-2\">Nie</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Narzędzie konwertuje pierwszą stronę pliku TIFF. Jeśli plik TIFF jest wielostronicowy, tylko pierwsza strona zostanie wyeksportowana. Do bezstratnej konwersji rozważ <a href=\"/narzedzia/konwerter-tiff-na-png\">TIFF na PNG</a>.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter TIFF na JPG?",
       "grid": "two",
@@ -215,8 +206,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "tiff": false,
-            "jpg": true
+            "tiff": "Tylko Safari",
+            "jpg": "Wszystkie przeglądarki"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "tiff": "8/16/32-bit",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -233,7 +231,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

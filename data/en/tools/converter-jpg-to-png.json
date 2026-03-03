@@ -209,8 +209,15 @@
         {
           "name": "Web browser support",
           "values": {
-            "jpg": true,
-            "png": true
+            "jpg": "All browsers",
+            "png": "All browsers"
+          }
+        },
+        {
+          "name": "Color depth",
+          "values": {
+            "jpg": "8-bit (16.7M)",
+            "png": "8/16-bit"
           }
         },
         {
@@ -227,7 +234,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

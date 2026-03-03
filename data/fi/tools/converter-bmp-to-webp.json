@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP vs WebP – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Molemmat</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">yleinen</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Milloin kannattaa muuntaa BMP WebP-muotoon?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Selaintuki",
           "values": {
-            "bmp": true,
-            "webp": true
+            "bmp": "Kaikki selaimet",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Värisyvyys",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "JPG vs GIF – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviöllinen</td><td class=\"py-2 text-center\">Häviötön</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Ei</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">yleinen</td><td class=\"py-2 text-center\">yleinen</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Milloin kannattaa muuntaa JPG GIF-muotoon?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Selaintuki",
           "values": {
-            "jpg": true,
-            "gif": true
+            "jpg": "Kaikki selaimet",
+            "gif": "Kaikki selaimet"
+          }
+        },
+        {
+          "name": "Värisyvyys",
+          "values": {
+            "jpg": "8-bit (16.7M)",
+            "gif": "8-bit (256)"
           }
         },
         {
@@ -245,7 +243,8 @@
             "gif": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

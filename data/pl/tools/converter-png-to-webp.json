@@ -126,15 +126,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PNG vs WebP — kluczowe różnice",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PNG</th><th class=\"text-dark py-2 text-left font-semibold\">WebP</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Bezstratna</td><td class=\"text-mid py-2\">Stratna lub bezstratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak (kanał alfa)</td><td class=\"text-mid py-2\">Tak (kanał alfa)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Duży</td><td class=\"text-mid py-2\">Mniejszy (~26% mniej)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Animacja</td><td class=\"text-mid py-2 pr-4\">APNG (ograniczone wsparcie)</td><td class=\"text-mid py-2\">Tak</td></tr><tr><td class=\"text-mid py-2 pr-4\">Kompatybilność</td><td class=\"text-mid py-2 pr-4\">Uniwersalna</td><td class=\"text-mid py-2\">Nowoczesne przeglądarki</td></tr></tbody></table></div><p class=\"text-mid mt-4\">WebP oferuje lepszą kompresję niż PNG zarówno w trybie stratnym, jak i bezstratnym. Przy kompresji stratnej (domyślnie 80%) różnica wizualna jest praktycznie niezauważalna, a plik jest o 25–50% mniejszy. Wszystkie nowoczesne przeglądarki (Chrome, Firefox, Safari 14+, Edge) obsługują WebP.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter PNG na WebP?",
       "grid": "two",
@@ -211,8 +202,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "png": true,
-            "webp": true
+            "png": "Wszystkie przeglądarki",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "png": "8/16-bit",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -229,7 +227,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

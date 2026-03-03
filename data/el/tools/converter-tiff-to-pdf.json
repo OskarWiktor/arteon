@@ -173,8 +173,8 @@
         {
           "name": "Υποστήριξη περιηγητών",
           "values": {
-            "tiff": false,
-            "pdf": false
+            "tiff": "Μόνο Safari",
+            "pdf": "Ενσωματωμένη προβολή PDF"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Χαρακτηριστικό"
     },
     {
       "type": "gap",

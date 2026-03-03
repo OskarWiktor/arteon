@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP vs WebP – le differenze principali",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caratteristica</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressione</td><td class=\"py-2 text-center\">Senza perdita</td><td class=\"py-2 text-center\">Entrambe</td></tr><tr class=\"border-b\"><td class=\"py-2\">Trasparenza</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animazione</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr><td class=\"py-2\">Supporto browser</td><td class=\"py-2 text-center\">universale</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Quando conviene convertire BMP in WebP?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Supporto browser",
           "values": {
-            "bmp": true,
-            "webp": true
+            "bmp": "Tutti i browser",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Profondità colore",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funzionalità"
     },
     {
       "type": "gap",

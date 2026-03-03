@@ -133,15 +133,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Różnice między PNG a JPG",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PNG</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Bezstratna</td><td class=\"text-mid py-2\">Stratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak (kanał alfa)</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Duży</td><td class=\"text-mid py-2\">Mały</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Grafiki, logo, ikony</td><td class=\"text-mid py-2\">Zdjęcia, obrazy</td></tr><tr><td class=\"text-mid py-2 pr-4\">Kompatybilność</td><td class=\"text-mid py-2 pr-4\">Uniwersalna</td><td class=\"text-mid py-2\">Uniwersalna</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Przy konwersji PNG na JPG przezroczysty kanał alfa jest zastępowany białym tłem. Jeśli obraz wymaga przezroczystości (np. logo na kolorowym tle), lepiej pozostać przy formacie PNG lub rozważyć <a href=\"/narzedzia/konwerter-png-na-webp\">konwersję na WebP</a>, który obsługuje przezroczystość przy mniejszym rozmiarze.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter PNG na JPG?",
       "grid": "two",
@@ -218,8 +209,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "png": true,
-            "jpg": true
+            "png": "Wszystkie przeglądarki",
+            "jpg": "Wszystkie przeglądarki"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "png": "8/16-bit",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -236,7 +234,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Obraz vs Base64 — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Plik obrazu</th><th class=\"text-dark py-2 text-left font-semibold\">Base64</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Format</td><td class=\"text-mid py-2 pr-4\">Binarny (JPG, PNG, WebP)</td><td class=\"text-mid py-2\">Tekstowy (ciąg znaków ASCII)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar</td><td class=\"text-mid py-2 pr-4\">Oryginalny</td><td class=\"text-mid py-2\">~33% większy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Osadzanie w kodzie</td><td class=\"text-mid py-2 pr-4\">Wymaga osobnego pliku</td><td class=\"text-mid py-2\">Bezpośrednio w CSS/HTML/JSON</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Zapytania HTTP</td><td class=\"text-mid py-2 pr-4\">Osobne zapytanie na każdy obraz</td><td class=\"text-mid py-2\">Zero dodatkowych zapytań</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Strony, programy, druk</td><td class=\"text-mid py-2\">Ikony inline, e-maile, API</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto kodować obraz do Base64?",
       "grid": "two",

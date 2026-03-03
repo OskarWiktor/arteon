@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "TIFF vs PDF — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">TIFF</th><th class=\"text-dark py-2 text-left font-semibold\">PDF</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Bezstratna (LZW)</td><td class=\"text-mid py-2\">Różne metody</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Duży</td><td class=\"text-mid py-2\">Kompaktowy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Wiele stron</td><td class=\"text-mid py-2 pr-4\">Tak (multi-page TIFF)</td><td class=\"text-mid py-2\">Tak</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Profesjonalna grafika, skanowanie</td><td class=\"text-mid py-2\">Dokumenty, druk, archiwizacja</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować TIFF na PDF?",
       "grid": "two",
@@ -218,8 +209,8 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "tiff": false,
-            "pdf": false
+            "tiff": "Tylko Safari",
+            "pdf": "Wbudowana przeglądarka PDF"
           }
         },
         {
@@ -236,7 +227,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

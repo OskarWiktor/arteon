@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "SVG vs JPG – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Häviötön</td><td class=\"py-2 text-center\">Häviöllinen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Ei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Ei</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">yleinen</td><td class=\"py-2 text-center\">yleinen</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Milloin kannattaa muuntaa SVG JPG-muotoon?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Selaintuki",
           "values": {
-            "svg": true,
-            "jpg": true
+            "svg": "Kaikki selaimet",
+            "jpg": "Kaikki selaimet"
+          }
+        },
+        {
+          "name": "Värisyvyys",
+          "values": {
+            "svg": "N/A (vektori)",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

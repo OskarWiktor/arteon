@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "WebP vs JPG – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Molemmat</td><td class=\"py-2 text-center\">Häviöllinen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Ei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Ei</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">yleinen</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Milloin kannattaa muuntaa WebP JPG-muotoon?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Selaintuki",
           "values": {
-            "webp": true,
-            "jpg": true
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "jpg": "Kaikki selaimet"
+          }
+        },
+        {
+          "name": "Värisyvyys",
+          "values": {
+            "webp": "8-bit (16.7M)",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

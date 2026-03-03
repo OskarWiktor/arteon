@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "JSON vs XML — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">JSON</th><th class=\"text-dark py-2 text-left font-semibold\">XML</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Składnia</td><td class=\"text-mid py-2 pr-4\">Nawiasy klamrowe</td><td class=\"text-mid py-2\">Tagi (znaczniki)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Czytelność</td><td class=\"text-mid py-2 pr-4\">Kompaktowy</td><td class=\"text-mid py-2\">Bardziej opisowy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Komentarze</td><td class=\"text-mid py-2 pr-4\">Nie obsługuje</td><td class=\"text-mid py-2\">Tak (&lt;!-- --&gt;)</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">REST API, web</td><td class=\"text-mid py-2\">SOAP API, systemy korporacyjne</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować JSON na XML?",
       "grid": "two",
@@ -229,7 +220,8 @@
             "xml": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

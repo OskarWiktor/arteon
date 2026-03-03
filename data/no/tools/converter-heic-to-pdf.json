@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "heic": false,
-            "pdf": false
+            "heic": "Safari 13+ (macOS / iOS)",
+            "pdf": "Innebygd PDF-visning"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funksjon"
     },
     {
       "type": "gap",

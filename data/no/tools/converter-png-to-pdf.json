@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "png": true,
-            "pdf": false
+            "png": "Alle nettlesere",
+            "pdf": "Innebygd PDF-visning"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funksjon"
     },
     {
       "type": "gap",

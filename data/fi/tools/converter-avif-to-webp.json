@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "AVIF vs WebP – keskeiset erot",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Ominaisuus</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Pakkaus</td><td class=\"py-2 text-center\">Molemmat</td><td class=\"py-2 text-center\">Molemmat</td></tr><tr class=\"border-b\"><td class=\"py-2\">Läpinäkyvyys</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animaatio</td><td class=\"py-2 text-center\">Kyllä</td><td class=\"py-2 text-center\">Kyllä</td></tr><tr><td class=\"py-2\">Selaintuki</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Milloin kannattaa muuntaa AVIF WebP-muotoon?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Selaintuki",
           "values": {
-            "avif": true,
-            "webp": true
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Värisyvyys",
+          "values": {
+            "avif": "8/10/12-bit, HDR",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

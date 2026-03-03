@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "WebP vs PNG – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Ambele</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">universală</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Când să convertiți WebP în PNG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Suport în browsere",
           "values": {
-            "webp": true,
-            "png": true
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "png": "Toate browserele"
+          }
+        },
+        {
+          "name": "Adâncime de culoare",
+          "values": {
+            "webp": "8-bit (16.7M)",
+            "png": "8/16-bit"
           }
         },
         {
@@ -237,7 +235,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcționalitate"
     },
     {
       "type": "gap",

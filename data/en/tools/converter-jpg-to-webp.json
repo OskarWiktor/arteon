@@ -202,8 +202,15 @@
         {
           "name": "Web browser support",
           "values": {
-            "jpg": true,
-            "webp": true
+            "jpg": "All browsers",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Color depth",
+          "values": {
+            "jpg": "8-bit (16.7M)",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -220,7 +227,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "WebP vs TIFF – les différences clés",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Les deux</td><td class=\"py-2 text-center\">Sans perte</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Oui</td><td class=\"py-2 text-center\">Non</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Quand faut-il convertir WebP en TIFF ?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Prise en charge des navigateurs",
           "values": {
-            "webp": true,
-            "tiff": false
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "tiff": "Safari uniquement"
+          }
+        },
+        {
+          "name": "Profondeur de couleur",
+          "values": {
+            "webp": "8-bit (16.7M)",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -245,7 +243,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Fonctionnalité"
     },
     {
       "type": "gap",

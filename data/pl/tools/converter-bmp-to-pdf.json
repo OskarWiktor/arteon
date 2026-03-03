@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP vs PDF — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">BMP</th><th class=\"text-dark py-2 text-left font-semibold\">PDF</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Brak (nieskompresowany)</td><td class=\"text-mid py-2\">Bez dodatkowej kompresji</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar pliku</td><td class=\"text-mid py-2 pr-4\">Bardzo duży</td><td class=\"text-mid py-2\">Kompaktowy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Wiele stron</td><td class=\"text-mid py-2 pr-4\">Nie</td><td class=\"text-mid py-2\">Tak</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Stare systemy Windows</td><td class=\"text-mid py-2\">Dokumenty, druk, archiwizacja</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować BMP na PDF?",
       "grid": "two",
@@ -218,8 +209,8 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "bmp": true,
-            "pdf": false
+            "bmp": "Wszystkie przeglądarki",
+            "pdf": "Wbudowana przeglądarka PDF"
           }
         },
         {
@@ -236,7 +227,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

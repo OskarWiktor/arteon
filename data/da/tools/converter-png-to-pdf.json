@@ -173,8 +173,8 @@
         {
           "name": "Webbrowserunderstøttelse",
           "values": {
-            "png": true,
-            "pdf": false
+            "png": "Alle browsere",
+            "pdf": "Indbygget PDF-fremviser"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP έναντι WebP – βασικές διαφορές",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Χωρίς απώλειες</td><td class=\"py-2 text-center\">Και τα δύο</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Όχι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Όχι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">καθολική</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Πότε πρέπει να μετατρέψετε BMP σε WebP;",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Υποστήριξη περιηγητών",
           "values": {
-            "bmp": true,
-            "webp": true
+            "bmp": "Όλοι οι περιηγητές",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Βάθος χρώματος",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Χαρακτηριστικό"
     },
     {
       "type": "gap",

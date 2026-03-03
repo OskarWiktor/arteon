@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "AVIF vs PNG – diferencias clave",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Característica</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresión</td><td class=\"py-2 text-center\">Ambas</td><td class=\"py-2 text-center\">Sin pérdida</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparencia</td><td class=\"py-2 text-center\">Sí</td><td class=\"py-2 text-center\">Sí</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animación</td><td class=\"py-2 text-center\">Sí</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Soporte navegador</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "¿Cuándo conviene convertir AVIF a PNG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Compatibilidad con navegadores",
           "values": {
-            "avif": true,
-            "png": true
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "png": "Todos los navegadores"
+          }
+        },
+        {
+          "name": "Profundidad de color",
+          "values": {
+            "avif": "8/10/12-bit, HDR",
+            "png": "8/16-bit"
           }
         },
         {
@@ -237,7 +235,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Característica"
     },
     {
       "type": "gap",

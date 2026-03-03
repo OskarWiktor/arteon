@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "HEIC vs TIFF – le differenze principali",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caratteristica</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressione</td><td class=\"py-2 text-center\">Entrambe</td><td class=\"py-2 text-center\">Senza perdita</td></tr><tr class=\"border-b\"><td class=\"py-2\">Trasparenza</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">Sì</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animazione</td><td class=\"py-2 text-center\">No</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Supporto browser</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Quando conviene convertire HEIC in TIFF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Supporto browser",
           "values": {
-            "heic": false,
-            "tiff": false
+            "heic": "Safari 13+ (macOS / iOS)",
+            "tiff": "Solo Safari"
+          }
+        },
+        {
+          "name": "Profondità colore",
+          "values": {
+            "heic": "8/10-bit, HDR",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -245,7 +243,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funzionalità"
     },
     {
       "type": "gap",

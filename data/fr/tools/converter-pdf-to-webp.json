@@ -173,8 +173,8 @@
         {
           "name": "Prise en charge des navigateurs",
           "values": {
-            "pdf": false,
-            "webp": true
+            "pdf": "Visionneuse PDF intégrée",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
           }
         },
         {
@@ -191,7 +191,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Fonctionnalité"
     },
     {
       "type": "gap",

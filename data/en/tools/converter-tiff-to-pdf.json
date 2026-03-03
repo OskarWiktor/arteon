@@ -173,8 +173,8 @@
         {
           "name": "Web browser support",
           "values": {
-            "tiff": false,
-            "pdf": false
+            "tiff": "Safari only",
+            "pdf": "Built-in PDF viewer"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

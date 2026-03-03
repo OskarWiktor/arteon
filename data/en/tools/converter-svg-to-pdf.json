@@ -173,8 +173,8 @@
         {
           "name": "Web browser support",
           "values": {
-            "svg": true,
-            "pdf": false
+            "svg": "All browsers",
+            "pdf": "Built-in PDF viewer"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

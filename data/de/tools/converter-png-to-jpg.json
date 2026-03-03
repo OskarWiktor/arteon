@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PNG vs. JPG – die wichtigsten Unterschiede",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Verlustbehaftet</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nein</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Nein</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">universell</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Wann sollten Sie PNG in JPG konvertieren?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Webbrowser-Unterstützung",
           "values": {
-            "png": true,
-            "jpg": true
+            "png": "Alle Browser",
+            "jpg": "Alle Browser"
+          }
+        },
+        {
+          "name": "Farbtiefe",
+          "values": {
+            "png": "8/16-bit",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

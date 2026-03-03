@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "WebP vs AVIF – le differenze principali",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caratteristica</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressione</td><td class=\"py-2 text-center\">Entrambe</td><td class=\"py-2 text-center\">Entrambe</td></tr><tr class=\"border-b\"><td class=\"py-2\">Trasparenza</td><td class=\"py-2 text-center\">Sì</td><td class=\"py-2 text-center\">Sì</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animazione</td><td class=\"py-2 text-center\">Sì</td><td class=\"py-2 text-center\">Sì</td></tr><tr><td class=\"py-2\">Supporto browser</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Quando conviene convertire WebP in AVIF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Supporto browser",
           "values": {
-            "webp": true,
-            "avif": true
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          }
+        },
+        {
+          "name": "Profondità colore",
+          "values": {
+            "webp": "8-bit (16.7M)",
+            "avif": "8/10/12-bit, HDR"
           }
         },
         {
@@ -245,7 +243,8 @@
             "avif": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funzionalità"
     },
     {
       "type": "gap",

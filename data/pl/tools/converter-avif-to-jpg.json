@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Różnice między AVIF a JPG",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">AVIF</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">O 20–50% lepsza niż JPG</td><td class=\"text-mid py-2\">Dobra, stratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">HDR</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Obsługa przeglądarek</td><td class=\"text-mid py-2 pr-4\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"text-mid py-2\">Wszystkie</td></tr><tr><td class=\"text-mid py-2 pr-4\">Kompatybilność z programami</td><td class=\"text-mid py-2 pr-4\">Ograniczona</td><td class=\"text-mid py-2\">Uniwersalna</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Jeśli potrzebujesz zachować przezroczystość, rozważ <a href=\"/narzedzia/konwerter-avif-na-png\">konwersję AVIF na PNG</a> lub <a href=\"/narzedzia/konwerter-avif-na-webp\">AVIF na WebP</a>.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter AVIF na JPG?",
       "grid": "two",
@@ -178,8 +169,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "avif": true,
-            "jpg": true
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "jpg": "Wszystkie przeglądarki"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "avif": "8/10/12-bit, HDR",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -196,7 +194,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

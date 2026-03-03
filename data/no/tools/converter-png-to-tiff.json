@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PNG vs TIFF – de viktigste forskjellene",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tapsfri</td><td class=\"py-2 text-center\">Tapsfri</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gjennomsiktighet</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animasjon</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Nei</td></tr><tr><td class=\"py-2\">Nettleserstøtte</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Når bør du konvertere PNG til TIFF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "png": true,
-            "tiff": false
+            "png": "Alle nettlesere",
+            "tiff": "Kun Safari"
+          }
+        },
+        {
+          "name": "Fargedybde",
+          "values": {
+            "png": "8/16-bit",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -245,7 +243,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funksjon"
     },
     {
       "type": "gap",

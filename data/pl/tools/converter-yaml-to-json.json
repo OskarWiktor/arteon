@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "YAML vs JSON — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">YAML</th><th class=\"text-dark py-2 text-left font-semibold\">JSON</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Składnia</td><td class=\"text-mid py-2 pr-4\">Wcięcia (bez nawiasów)</td><td class=\"text-mid py-2\">Nawiasy klamrowe i kwadratowe</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Komentarze</td><td class=\"text-mid py-2 pr-4\">Tak (#)</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Czytelność</td><td class=\"text-mid py-2 pr-4\">Bardzo czytelny</td><td class=\"text-mid py-2\">Kompaktowy</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Docker, Kubernetes, CI/CD</td><td class=\"text-mid py-2\">API, aplikacje webowe</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować YAML na JSON?",
       "grid": "two",
@@ -229,7 +220,8 @@
             "json": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

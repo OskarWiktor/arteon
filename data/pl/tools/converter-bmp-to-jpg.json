@@ -201,8 +201,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "bmp": true,
-            "jpg": true
+            "bmp": "Wszystkie przeglądarki",
+            "jpg": "Wszystkie przeglądarki"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -219,7 +226,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

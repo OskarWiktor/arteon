@@ -200,8 +200,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "svg": true,
-            "png": true
+            "svg": "Wszystkie przeglądarki",
+            "png": "Wszystkie przeglądarki"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "svg": "N/A (wektor)",
+            "png": "8/16-bit"
           }
         },
         {
@@ -218,7 +225,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

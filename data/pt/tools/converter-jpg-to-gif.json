@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "JPG vs GIF – diferenças principais",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caraterística</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressão</td><td class=\"py-2 text-center\">Com perda</td><td class=\"py-2 text-center\">Sem perda</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparência</td><td class=\"py-2 text-center\">Não</td><td class=\"py-2 text-center\">Sim</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animação</td><td class=\"py-2 text-center\">Não</td><td class=\"py-2 text-center\">Sim</td></tr><tr><td class=\"py-2\">Suporte navegador</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Quando converter JPG para GIF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Suporte em navegadores",
           "values": {
-            "jpg": true,
-            "gif": true
+            "jpg": "Todos os navegadores",
+            "gif": "Todos os navegadores"
+          }
+        },
+        {
+          "name": "Profundidade de cor",
+          "values": {
+            "jpg": "8-bit (16.7M)",
+            "gif": "8-bit (256)"
           }
         },
         {
@@ -245,7 +243,8 @@
             "gif": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcionalidade"
     },
     {
       "type": "gap",

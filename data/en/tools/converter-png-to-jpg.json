@@ -133,15 +133,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PNG vs JPG – key differences",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Feature</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PNG</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Compression</td><td class=\"text-mid py-2 pr-4\">Lossless</td><td class=\"text-mid py-2\">Lossy</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Transparency</td><td class=\"text-mid py-2 pr-4\">Yes (alpha channel)</td><td class=\"text-mid py-2\">No</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">File size</td><td class=\"text-mid py-2 pr-4\">Large</td><td class=\"text-mid py-2\">Small</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Best for</td><td class=\"text-mid py-2 pr-4\">Graphics, logos, icons</td><td class=\"text-mid py-2\">Photos, illustrations</td></tr><tr><td class=\"text-mid py-2 pr-4\">Compatibility</td><td class=\"text-mid py-2 pr-4\">Universal</td><td class=\"text-mid py-2\">Universal</td></tr></tbody></table></div><p class=\"text-mid mt-4\">When converting PNG to JPG, transparent areas are replaced with a white background. If your image requires transparency (e.g., a logo on a coloured backdrop), keep the PNG format or consider <a href=\"/en/tools/png-to-webp-converter\">converting to WebP</a>, which supports transparency at a smaller file size.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "What makes this PNG to JPG converter different?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Web browser support",
           "values": {
-            "png": true,
-            "jpg": true
+            "png": "All browsers",
+            "jpg": "All browsers"
+          }
+        },
+        {
+          "name": "Color depth",
+          "values": {
+            "png": "8/16-bit",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -245,7 +243,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

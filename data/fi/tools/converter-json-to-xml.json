@@ -184,7 +184,8 @@
             "xml": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

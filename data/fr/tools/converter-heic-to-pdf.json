@@ -173,8 +173,8 @@
         {
           "name": "Prise en charge des navigateurs",
           "values": {
-            "heic": false,
-            "pdf": false
+            "heic": "Safari 13+ (macOS / iOS)",
+            "pdf": "Visionneuse PDF intégrée"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Fonctionnalité"
     },
     {
       "type": "gap",

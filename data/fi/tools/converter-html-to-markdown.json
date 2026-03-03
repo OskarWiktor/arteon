@@ -184,7 +184,8 @@
             "markdown": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

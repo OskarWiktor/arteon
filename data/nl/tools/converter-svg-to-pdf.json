@@ -173,8 +173,8 @@
         {
           "name": "Webbrowserondersteuning",
           "values": {
-            "svg": true,
-            "pdf": false
+            "svg": "Alle browsers",
+            "pdf": "Ingebouwde PDF-viewer"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Functie"
     },
     {
       "type": "gap",

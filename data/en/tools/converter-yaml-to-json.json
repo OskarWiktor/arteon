@@ -184,7 +184,8 @@
             "json": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

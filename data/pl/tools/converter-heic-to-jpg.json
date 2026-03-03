@@ -132,15 +132,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Różnice między HEIC a JPG",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">HEIC</th><th class=\"text-dark py-2 text-left font-semibold\">JPG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">O 40–50% lepsza niż JPG</td><td class=\"text-mid py-2\">Dobra, stratna</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Przezroczystość</td><td class=\"text-mid py-2 pr-4\">Tak</td><td class=\"text-mid py-2\">Nie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Obsługa</td><td class=\"text-mid py-2 pr-4\">Apple, nowe Windows</td><td class=\"text-mid py-2\">Wszystkie urządzenia</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Źródło</td><td class=\"text-mid py-2 pr-4\">iPhone, iPad (iOS 11+)</td><td class=\"text-mid py-2\">Wszystkie aparaty</td></tr><tr><td class=\"text-mid py-2 pr-4\">Rozmiar pliku (typowe zdjęcie)</td><td class=\"text-mid py-2 pr-4\">1–3 MB</td><td class=\"text-mid py-2\">2–5 MB</td></tr></tbody></table></div><p class=\"text-mid mt-4\">Jeśli potrzebujesz zachować przezroczystość lub mniejszy rozmiar pliku, rozważ <a href=\"/narzedzia/konwerter-heic-na-png\">konwersję HEIC na PNG</a> lub <a href=\"/narzedzia/konwerter-heic-na-webp\">HEIC na WebP</a>.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Co wyróżnia konwerter HEIC na JPG?",
       "grid": "two",
@@ -217,8 +208,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "heic": false,
-            "jpg": true
+            "heic": "Safari 13+ (macOS / iOS)",
+            "jpg": "Wszystkie przeglądarki"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "heic": "8/10-bit, HDR",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -235,7 +233,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

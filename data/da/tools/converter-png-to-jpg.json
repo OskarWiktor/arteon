@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PNG vs JPG – de vigtigste forskelle",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tabsfri</td><td class=\"py-2 text-center\">Tabsgivende</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nej</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">universel</td><td class=\"py-2 text-center\">universel</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Hvornår skal du konvertere PNG til JPG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Webbrowserunderstøttelse",
           "values": {
-            "png": true,
-            "jpg": true
+            "png": "Alle browsere",
+            "jpg": "Alle browsere"
+          }
+        },
+        {
+          "name": "Farvedybde",
+          "values": {
+            "png": "8/16-bit",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

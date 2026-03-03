@@ -173,8 +173,8 @@
         {
           "name": "Compatibilidad con navegadores",
           "values": {
-            "tiff": false,
-            "pdf": false
+            "tiff": "Solo Safari",
+            "pdf": "Visor PDF integrado"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Característica"
     },
     {
       "type": "gap",

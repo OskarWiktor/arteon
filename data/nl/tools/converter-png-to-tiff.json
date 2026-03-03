@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PNG vs TIFF – de belangrijkste verschillen",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Lossless</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Nee</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">universeel</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Wanneer PNG naar TIFF converteren?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Webbrowserondersteuning",
           "values": {
-            "png": true,
-            "tiff": false
+            "png": "Alle browsers",
+            "tiff": "Alleen Safari"
+          }
+        },
+        {
+          "name": "Kleurdiepte",
+          "values": {
+            "png": "8/16-bit",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -245,7 +243,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Functie"
     },
     {
       "type": "gap",

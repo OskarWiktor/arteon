@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "HEIC a PNG – porównanie formatów",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Cecha</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompresja</td><td class=\"py-2 text-center\">Obie</td><td class=\"py-2 text-center\">Bezstratna</td></tr><tr class=\"border-b\"><td class=\"py-2\">Przezroczystość</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Tak</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animacja</td><td class=\"py-2 text-center\">Nie</td><td class=\"py-2 text-center\">Nie</td></tr><tr><td class=\"py-2\">Obsługa przeglądarek</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">uniwersalna</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy konwertować HEIC na PNG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "heic": false,
-            "png": true
+            "heic": "Safari 13+ (macOS / iOS)",
+            "png": "Wszystkie przeglądarki"
+          }
+        },
+        {
+          "name": "Głębia kolorów",
+          "values": {
+            "heic": "8/10-bit, HDR",
+            "png": "8/16-bit"
           }
         },
         {
@@ -237,7 +235,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

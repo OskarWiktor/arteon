@@ -173,8 +173,8 @@
         {
           "name": "Suporte em navegadores",
           "values": {
-            "bmp": true,
-            "pdf": false
+            "bmp": "Todos os navegadores",
+            "pdf": "Visualizador PDF integrado"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcionalidade"
     },
     {
       "type": "gap",

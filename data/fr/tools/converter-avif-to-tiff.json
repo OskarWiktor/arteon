@@ -173,8 +173,15 @@
         {
           "name": "Prise en charge des navigateurs",
           "values": {
-            "avif": true,
-            "tiff": false
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "tiff": "Safari uniquement"
+          }
+        },
+        {
+          "name": "Profondeur de couleur",
+          "values": {
+            "avif": "8/10/12-bit, HDR",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -191,7 +198,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Fonctionnalité"
     },
     {
       "type": "gap",

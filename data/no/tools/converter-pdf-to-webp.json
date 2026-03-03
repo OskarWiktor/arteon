@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "pdf": false,
-            "webp": true
+            "pdf": "Innebygd PDF-visning",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
           }
         },
         {
@@ -191,7 +191,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funksjon"
     },
     {
       "type": "gap",

@@ -173,8 +173,8 @@
         {
           "name": "Compatibilidad con navegadores",
           "values": {
-            "pdf": false,
-            "png": true
+            "pdf": "Visor PDF integrado",
+            "png": "Todos los navegadores"
           }
         },
         {
@@ -191,7 +191,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Característica"
     },
     {
       "type": "gap",

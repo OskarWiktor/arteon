@@ -173,8 +173,8 @@
         {
           "name": "Suporte em navegadores",
           "values": {
-            "pdf": false,
-            "webp": true
+            "pdf": "Visualizador PDF integrado",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
           }
         },
         {
@@ -191,7 +191,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcionalidade"
     },
     {
       "type": "gap",

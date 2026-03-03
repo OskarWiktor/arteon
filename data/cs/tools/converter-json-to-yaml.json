@@ -184,7 +184,8 @@
             "yaml": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkce"
     },
     {
       "type": "gap",

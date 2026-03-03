@@ -184,7 +184,8 @@
             "yaml": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcionalidade"
     },
     {
       "type": "gap",

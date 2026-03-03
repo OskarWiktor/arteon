@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "WebP έναντι AVIF – βασικές διαφορές",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Και τα δύο</td><td class=\"py-2 text-center\">Και τα δύο</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Ναι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Πότε πρέπει να μετατρέψετε WebP σε AVIF;",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Υποστήριξη περιηγητών",
           "values": {
-            "webp": true,
-            "avif": true
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          }
+        },
+        {
+          "name": "Βάθος χρώματος",
+          "values": {
+            "webp": "8-bit (16.7M)",
+            "avif": "8/10/12-bit, HDR"
           }
         },
         {
@@ -245,7 +243,8 @@
             "avif": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Χαρακτηριστικό"
     },
     {
       "type": "gap",

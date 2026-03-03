@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "TIFF vs PNG – a legfontosabb különbségek",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteségmentes</td><td class=\"py-2 text-center\">Veszteségmentes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Igen</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Nem</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">univerzális</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Mikor érdemes TIFF-t PNG-re konvertálni?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Böngészőtámogatás",
           "values": {
-            "tiff": false,
-            "png": true
+            "tiff": "Csak Safari",
+            "png": "Minden böngésző"
+          }
+        },
+        {
+          "name": "Színmélység",
+          "values": {
+            "tiff": "8/16/32-bit",
+            "png": "8/16-bit"
           }
         },
         {
@@ -237,7 +235,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkció"
     },
     {
       "type": "gap",

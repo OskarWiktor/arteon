@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "HTML vs Markdown — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">HTML</th><th class=\"text-dark py-2 text-left font-semibold\">Markdown</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Składnia</td><td class=\"text-mid py-2 pr-4\">Tagi (&lt;h1&gt;, &lt;p&gt;, &lt;a&gt;)</td><td class=\"text-mid py-2\">Prosta (# ## * - []())</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Czytelność źródła</td><td class=\"text-mid py-2 pr-4\">Niska</td><td class=\"text-mid py-2\">Wysoka</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Edycja ręczna</td><td class=\"text-mid py-2 pr-4\">Trudna</td><td class=\"text-mid py-2\">Prosta</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Strony internetowe</td><td class=\"text-mid py-2\">Dokumentacja, README, blogi</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować HTML na Markdown?",
       "grid": "two",
@@ -229,7 +220,8 @@
             "markdown": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

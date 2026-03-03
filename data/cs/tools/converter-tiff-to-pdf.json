@@ -173,8 +173,8 @@
         {
           "name": "Podpora webových prohlížečů",
           "values": {
-            "tiff": false,
-            "pdf": false
+            "tiff": "Pouze Safari",
+            "pdf": "Vestavěný prohlížeč PDF"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkce"
     },
     {
       "type": "gap",

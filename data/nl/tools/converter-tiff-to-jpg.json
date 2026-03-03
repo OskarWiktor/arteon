@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "TIFF vs JPG – de belangrijkste verschillen",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">TIFF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Lossy</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nee</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Nee</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">limited</td><td class=\"py-2 text-center\">universeel</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Wanneer TIFF naar JPG converteren?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Webbrowserondersteuning",
           "values": {
-            "tiff": false,
-            "jpg": true
+            "tiff": "Alleen Safari",
+            "jpg": "Alle browsers"
+          }
+        },
+        {
+          "name": "Kleurdiepte",
+          "values": {
+            "tiff": "8/16/32-bit",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Functie"
     },
     {
       "type": "gap",

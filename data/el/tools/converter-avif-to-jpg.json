@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "AVIF έναντι JPG – βασικές διαφορές",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Χαρακτηριστικό</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Συμπίεση</td><td class=\"py-2 text-center\">Και τα δύο</td><td class=\"py-2 text-center\">Με απώλειες</td></tr><tr class=\"border-b\"><td class=\"py-2\">Διαφάνεια</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ναι</td><td class=\"py-2 text-center\">Όχι</td></tr><tr><td class=\"py-2\">Υποστήριξη φυλλομετρητή</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">καθολική</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Πότε πρέπει να μετατρέψετε AVIF σε JPG;",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Υποστήριξη περιηγητών",
           "values": {
-            "avif": true,
-            "jpg": true
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "jpg": "Όλοι οι περιηγητές"
+          }
+        },
+        {
+          "name": "Βάθος χρώματος",
+          "values": {
+            "avif": "8/10/12-bit, HDR",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Χαρακτηριστικό"
     },
     {
       "type": "gap",

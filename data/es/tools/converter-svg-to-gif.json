@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "SVG vs GIF – diferencias clave",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Característica</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresión</td><td class=\"py-2 text-center\">Sin pérdida</td><td class=\"py-2 text-center\">Sin pérdida</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparencia</td><td class=\"py-2 text-center\">Sí</td><td class=\"py-2 text-center\">Sí</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animación</td><td class=\"py-2 text-center\">Sí</td><td class=\"py-2 text-center\">Sí</td></tr><tr><td class=\"py-2\">Soporte navegador</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "¿Cuándo conviene convertir SVG a GIF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Compatibilidad con navegadores",
           "values": {
-            "svg": true,
-            "gif": true
+            "svg": "Todos los navegadores",
+            "gif": "Todos los navegadores"
+          }
+        },
+        {
+          "name": "Profundidad de color",
+          "values": {
+            "svg": "N/A (vector)",
+            "gif": "8-bit (256)"
           }
         },
         {
@@ -245,7 +243,8 @@
             "gif": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Característica"
     },
     {
       "type": "gap",

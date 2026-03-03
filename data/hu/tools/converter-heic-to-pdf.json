@@ -173,8 +173,8 @@
         {
           "name": "Böngészőtámogatás",
           "values": {
-            "heic": false,
-            "pdf": false
+            "heic": "Safari 13+ (macOS / iOS)",
+            "pdf": "Beépített PDF-megjelenítő"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkció"
     },
     {
       "type": "gap",

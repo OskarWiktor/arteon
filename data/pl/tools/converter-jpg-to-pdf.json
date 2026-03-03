@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "JPG vs PDF — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">JPG</th><th class=\"text-dark py-2 text-left font-semibold\">PDF</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Format obrazu rastrowego</td><td class=\"text-mid py-2\">Format dokumentu</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Kompresja</td><td class=\"text-mid py-2 pr-4\">Stratna (JPEG)</td><td class=\"text-mid py-2\">Bez dodatkowej kompresji</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Wiele stron</td><td class=\"text-mid py-2 pr-4\">Nie</td><td class=\"text-mid py-2\">Tak</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Druk</td><td class=\"text-mid py-2 pr-4\">Zależy od rozdzielczości</td><td class=\"text-mid py-2\">Idealny do druku</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Zdjęcia, web</td><td class=\"text-mid py-2\">Dokumenty, archiwizacja</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować JPG na PDF?",
       "grid": "two",
@@ -218,8 +209,8 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "jpg": true,
-            "pdf": false
+            "jpg": "Wszystkie przeglądarki",
+            "pdf": "Wbudowana przeglądarka PDF"
           }
         },
         {
@@ -236,7 +227,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

@@ -173,8 +173,8 @@
         {
           "name": "Webbrowserunderstøttelse",
           "values": {
-            "tiff": false,
-            "pdf": false
+            "tiff": "Kun Safari",
+            "pdf": "Indbygget PDF-fremviser"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

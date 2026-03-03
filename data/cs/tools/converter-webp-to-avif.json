@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "WebP vs AVIF – hlavní rozdíly",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Vlastnost</th><th class=\"py-2 text-center\">WebP</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprese</td><td class=\"py-2 text-center\">Obě</td><td class=\"py-2 text-center\">Obě</td></tr><tr class=\"border-b\"><td class=\"py-2\">Průhlednost</td><td class=\"py-2 text-center\">Ano</td><td class=\"py-2 text-center\">Ano</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animace</td><td class=\"py-2 text-center\">Ano</td><td class=\"py-2 text-center\">Ano</td></tr><tr><td class=\"py-2\">Podpora prohlížečů</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kdy převádět WebP na AVIF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Podpora webových prohlížečů",
           "values": {
-            "webp": true,
-            "avif": true
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          }
+        },
+        {
+          "name": "Hloubka barev",
+          "values": {
+            "webp": "8-bit (16.7M)",
+            "avif": "8/10/12-bit, HDR"
           }
         },
         {
@@ -245,7 +243,8 @@
             "avif": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkce"
     },
     {
       "type": "gap",

@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP vs WebP – de viktigaste skillnaderna",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Förlustfri</td><td class=\"py-2 text-center\">Båda</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "När ska du konvertera BMP till WebP?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Webbläsarstöd",
           "values": {
-            "bmp": true,
-            "webp": true
+            "bmp": "Alla webbläsare",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Färgdjup",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

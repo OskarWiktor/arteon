@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "GIF vs WebP – de belangrijkste verschillen",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Lossless</td><td class=\"py-2 text-center\">Beide</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">universeel</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Wanneer GIF naar WebP converteren?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Webbrowserondersteuning",
           "values": {
-            "gif": true,
-            "webp": true
+            "gif": "Alle browsers",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Kleurdiepte",
+          "values": {
+            "gif": "8-bit (256)",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Functie"
     },
     {
       "type": "gap",

@@ -173,8 +173,8 @@
         {
           "name": "Selaintuki",
           "values": {
-            "pdf": false,
-            "jpg": true
+            "pdf": "Sisäänrakennettu PDF-katselin",
+            "jpg": "Kaikki selaimet"
           }
         },
         {
@@ -191,7 +191,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

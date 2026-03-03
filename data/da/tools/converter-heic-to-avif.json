@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "HEIC vs AVIF – de vigtigste forskelle",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskab</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Begge</td><td class=\"py-2 text-center\">Begge</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gennemsigtighed</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nej</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunderstøttelse</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Hvornår skal du konvertere HEIC til AVIF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Webbrowserunderstøttelse",
           "values": {
-            "heic": false,
-            "avif": true
+            "heic": "Safari 13+ (macOS / iOS)",
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          }
+        },
+        {
+          "name": "Farvedybde",
+          "values": {
+            "heic": "8/10-bit, HDR",
+            "avif": "8/10/12-bit, HDR"
           }
         },
         {
@@ -245,7 +243,8 @@
             "avif": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

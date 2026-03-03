@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PDF vs WebP — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PDF</th><th class=\"text-dark py-2 text-left font-semibold\">WebP</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Format dokumentu</td><td class=\"text-mid py-2\">Format obrazu (web)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar</td><td class=\"text-mid py-2 pr-4\">Zależy od zawartości</td><td class=\"text-mid py-2\">Mały (lepsza kompresja niż JPG)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Obsługa przeglądarek</td><td class=\"text-mid py-2 pr-4\">Przez wtyczki/czytniki</td><td class=\"text-mid py-2\">Natywna we wszystkich nowoczesnych</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Dokumenty, druk</td><td class=\"text-mid py-2\">Strony internetowe</td></tr></tbody></table></div><p class=\"text-mid mt-4\">WebP jest idealny do publikacji stron PDF na stronach internetowych — szybkie ładowanie i dobra jakość.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować PDF na WebP?",
       "grid": "two",
@@ -218,8 +209,8 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "pdf": false,
-            "webp": true
+            "pdf": "Wbudowana przeglądarka PDF",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
           }
         },
         {
@@ -236,7 +227,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

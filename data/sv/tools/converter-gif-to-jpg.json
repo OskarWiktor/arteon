@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "GIF vs JPG – de viktigaste skillnaderna",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">GIF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Förlustfri</td><td class=\"py-2 text-center\">Förlustbringande</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparens</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nej</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Nej</td></tr><tr><td class=\"py-2\">Webbläsarstöd</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">universell</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "När ska du konvertera GIF till JPG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Webbläsarstöd",
           "values": {
-            "gif": true,
-            "jpg": true
+            "gif": "Alla webbläsare",
+            "jpg": "Alla webbläsare"
+          }
+        },
+        {
+          "name": "Färgdjup",
+          "values": {
+            "gif": "8-bit (256)",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

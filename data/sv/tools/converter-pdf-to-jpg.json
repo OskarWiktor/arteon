@@ -173,8 +173,8 @@
         {
           "name": "Webbläsarstöd",
           "values": {
-            "pdf": false,
-            "jpg": true
+            "pdf": "Inbyggd PDF-visare",
+            "jpg": "Alla webbläsare"
           }
         },
         {
@@ -191,7 +191,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

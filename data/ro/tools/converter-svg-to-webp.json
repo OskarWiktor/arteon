@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "SVG vs WebP – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Ambele</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universală</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Când să convertiți SVG în WebP?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Suport în browsere",
           "values": {
-            "svg": true,
-            "webp": true
+            "svg": "Toate browserele",
+            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+          }
+        },
+        {
+          "name": "Adâncime de culoare",
+          "values": {
+            "svg": "N/A (vector)",
+            "webp": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "webp": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcționalitate"
     },
     {
       "type": "gap",

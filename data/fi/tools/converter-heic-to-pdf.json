@@ -173,8 +173,8 @@
         {
           "name": "Selaintuki",
           "values": {
-            "heic": false,
-            "pdf": false
+            "heic": "Safari 13+ (macOS / iOS)",
+            "pdf": "Sisäänrakennettu PDF-katselin"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Ominaisuus"
     },
     {
       "type": "gap",

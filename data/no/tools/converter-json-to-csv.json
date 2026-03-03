@@ -184,7 +184,8 @@
             "csv": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funksjon"
     },
     {
       "type": "gap",

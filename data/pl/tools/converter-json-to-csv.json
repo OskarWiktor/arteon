@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "JSON vs CSV — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">JSON</th><th class=\"text-dark py-2 text-left font-semibold\">CSV</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Struktura</td><td class=\"text-mid py-2 pr-4\">Zagnieżdżona (drzewo)</td><td class=\"text-mid py-2\">Płaska (tabela)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Edycja</td><td class=\"text-mid py-2 pr-4\">Edytor kodu</td><td class=\"text-mid py-2\">Excel, Google Sheets</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Import</td><td class=\"text-mid py-2 pr-4\">API, programy</td><td class=\"text-mid py-2\">Arkusze kalkulacyjne, bazy SQL</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Aplikacje webowe</td><td class=\"text-mid py-2\">Analiza danych, raporty</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować JSON na CSV?",
       "grid": "two",
@@ -229,7 +220,8 @@
             "csv": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Markdown vs HTML — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Markdown</th><th class=\"text-dark py-2 text-left font-semibold\">HTML</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Składnia</td><td class=\"text-mid py-2 pr-4\">Prosta (# ## * - []())</td><td class=\"text-mid py-2\">Złożona (tagi &lt;h1&gt; &lt;p&gt; &lt;a&gt;)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Czytelność źródła</td><td class=\"text-mid py-2 pr-4\">Bardzo dobra</td><td class=\"text-mid py-2\">Słaba (dużo znaczników)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Możliwości formatowania</td><td class=\"text-mid py-2 pr-4\">Podstawowe</td><td class=\"text-mid py-2\">Pełne (CSS, klasy, atrybuty)</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Dokumentacja, README, blogi</td><td class=\"text-mid py-2\">Strony internetowe, e-maile</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować Markdown na HTML?",
       "grid": "two",
@@ -229,7 +220,8 @@
             "html": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

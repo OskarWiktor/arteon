@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "Base64 vs plik obrazu — różnice",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Base64</th><th class=\"text-dark py-2 text-left font-semibold\">Plik obrazu</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Format</td><td class=\"text-mid py-2 pr-4\">Tekstowy (ciąg znaków)</td><td class=\"text-mid py-2\">Binarny (JPG, PNG, WebP)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Podgląd</td><td class=\"text-mid py-2 pr-4\">Wymaga dekodera</td><td class=\"text-mid py-2\">Natychmiast w każdym programie</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Edycja</td><td class=\"text-mid py-2 pr-4\">Niemożliwa</td><td class=\"text-mid py-2\">W dowolnym edytorze graficznym</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Osadzony w kodzie/JSON</td><td class=\"text-mid py-2\">Normalne użycie obrazów</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto dekodować Base64 na obraz?",
       "grid": "two",

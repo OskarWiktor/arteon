@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP vs AVIF – les différences clés",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caractéristique</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compression</td><td class=\"py-2 text-center\">Sans perte</td><td class=\"py-2 text-center\">Les deux</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparence</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Oui</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Non</td><td class=\"py-2 text-center\">Oui</td></tr><tr><td class=\"py-2\">Support navigateur</td><td class=\"py-2 text-center\">universelle</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Quand faut-il convertir BMP en AVIF ?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Prise en charge des navigateurs",
           "values": {
-            "bmp": true,
-            "avif": true
+            "bmp": "Tous les navigateurs",
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          }
+        },
+        {
+          "name": "Profondeur de couleur",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "avif": "8/10/12-bit, HDR"
           }
         },
         {
@@ -245,7 +243,8 @@
             "avif": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Fonctionnalité"
     },
     {
       "type": "gap",

@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "SVG vs TIFF – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Da</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universală</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Când să convertiți SVG în TIFF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Suport în browsere",
           "values": {
-            "svg": true,
-            "tiff": false
+            "svg": "Toate browserele",
+            "tiff": "Doar Safari"
+          }
+        },
+        {
+          "name": "Adâncime de culoare",
+          "values": {
+            "svg": "N/A (vector)",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -245,7 +243,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcționalitate"
     },
     {
       "type": "gap",

@@ -173,8 +173,8 @@
         {
           "name": "Webbrowserondersteuning",
           "values": {
-            "tiff": false,
-            "pdf": false
+            "tiff": "Alleen Safari",
+            "pdf": "Ingebouwde PDF-viewer"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Functie"
     },
     {
       "type": "gap",

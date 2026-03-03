@@ -184,7 +184,8 @@
             "html": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Functie"
     },
     {
       "type": "gap",

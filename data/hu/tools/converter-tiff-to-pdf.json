@@ -173,8 +173,8 @@
         {
           "name": "Böngészőtámogatás",
           "values": {
-            "tiff": false,
-            "pdf": false
+            "tiff": "Csak Safari",
+            "pdf": "Beépített PDF-megjelenítő"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkció"
     },
     {
       "type": "gap",

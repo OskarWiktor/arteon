@@ -173,8 +173,8 @@
         {
           "name": "Webbrowser-Unterstützung",
           "values": {
-            "jpg": true,
-            "pdf": false
+            "jpg": "Alle Browser",
+            "pdf": "Integrierter PDF-Viewer"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

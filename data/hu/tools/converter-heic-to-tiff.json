@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "HEIC vs TIFF – a legfontosabb különbségek",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">TIFF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Mindkettő</td><td class=\"py-2 text-center\">Veszteségmentes</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Nem</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">limited</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Mikor érdemes HEIC-t TIFF-re konvertálni?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Böngészőtámogatás",
           "values": {
-            "heic": false,
-            "tiff": false
+            "heic": "Safari 13+ (macOS / iOS)",
+            "tiff": "Csak Safari"
+          }
+        },
+        {
+          "name": "Színmélység",
+          "values": {
+            "heic": "8/10-bit, HDR",
+            "tiff": "8/16/32-bit"
           }
         },
         {
@@ -245,7 +243,8 @@
             "tiff": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkció"
     },
     {
       "type": "gap",

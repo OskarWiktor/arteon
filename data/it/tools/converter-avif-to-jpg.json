@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "AVIF vs JPG – le differenze principali",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caratteristica</th><th class=\"py-2 text-center\">AVIF</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressione</td><td class=\"py-2 text-center\">Entrambe</td><td class=\"py-2 text-center\">Con perdita</td></tr><tr class=\"border-b\"><td class=\"py-2\">Trasparenza</td><td class=\"py-2 text-center\">Sì</td><td class=\"py-2 text-center\">No</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animazione</td><td class=\"py-2 text-center\">Sì</td><td class=\"py-2 text-center\">No</td></tr><tr><td class=\"py-2\">Supporto browser</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td><td class=\"py-2 text-center\">universale</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Quando conviene convertire AVIF in JPG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Supporto browser",
           "values": {
-            "avif": true,
-            "jpg": true
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+",
+            "jpg": "Tutti i browser"
+          }
+        },
+        {
+          "name": "Profondità colore",
+          "values": {
+            "avif": "8/10/12-bit, HDR",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funzionalità"
     },
     {
       "type": "gap",

@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP vs GIF – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Fără pierderi</td><td class=\"py-2 text-center\">Fără pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Da</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">universală</td><td class=\"py-2 text-center\">universală</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Când să convertiți BMP în GIF?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Suport în browsere",
           "values": {
-            "bmp": true,
-            "gif": true
+            "bmp": "Toate browserele",
+            "gif": "Toate browserele"
+          }
+        },
+        {
+          "name": "Adâncime de culoare",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "gif": "8-bit (256)"
           }
         },
         {
@@ -245,7 +243,8 @@
             "gif": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcționalitate"
     },
     {
       "type": "gap",

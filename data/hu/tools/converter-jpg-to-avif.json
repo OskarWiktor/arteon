@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "JPG vs AVIF – a legfontosabb különbségek",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Jellemző</th><th class=\"py-2 text-center\">JPG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Tömörítés</td><td class=\"py-2 text-center\">Veszteséges</td><td class=\"py-2 text-center\">Mindkettő</td></tr><tr class=\"border-b\"><td class=\"py-2\">Átlátszóság</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animáció</td><td class=\"py-2 text-center\">Nem</td><td class=\"py-2 text-center\">Igen</td></tr><tr><td class=\"py-2\">Böngészőtámogatás</td><td class=\"py-2 text-center\">univerzális</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Mikor érdemes JPG-t AVIF-re konvertálni?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Böngészőtámogatás",
           "values": {
-            "jpg": true,
-            "avif": true
+            "jpg": "Minden böngésző",
+            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
+          }
+        },
+        {
+          "name": "Színmélység",
+          "values": {
+            "jpg": "8-bit (16.7M)",
+            "avif": "8/10/12-bit, HDR"
           }
         },
         {
@@ -245,7 +243,8 @@
             "avif": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkció"
     },
     {
       "type": "gap",

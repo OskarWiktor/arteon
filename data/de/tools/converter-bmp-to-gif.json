@@ -102,15 +102,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "BMP vs. GIF – die wichtigsten Unterschiede",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschaft</th><th class=\"py-2 text-center\">BMP</th><th class=\"py-2 text-center\">GIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Kompression</td><td class=\"py-2 text-center\">Verlustfrei</td><td class=\"py-2 text-center\">Verlustfrei</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparenz</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animation</td><td class=\"py-2 text-center\">Nein</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Browserunterstützung</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">universell</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Wann sollten Sie BMP in GIF konvertieren?",
       "grid": "two",
@@ -227,8 +218,15 @@
         {
           "name": "Webbrowser-Unterstützung",
           "values": {
-            "bmp": true,
-            "gif": true
+            "bmp": "Alle Browser",
+            "gif": "Alle Browser"
+          }
+        },
+        {
+          "name": "Farbtiefe",
+          "values": {
+            "bmp": "1/4/8/24/32-bit",
+            "gif": "8-bit (256)"
           }
         },
         {
@@ -245,7 +243,8 @@
             "gif": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funktion"
     },
     {
       "type": "gap",

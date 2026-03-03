@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "CSV vs JSON — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">CSV</th><th class=\"text-dark py-2 text-left font-semibold\">JSON</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Struktura</td><td class=\"text-mid py-2 pr-4\">Płaska (tabela)</td><td class=\"text-mid py-2\">Zagnieżdżona (drzewo)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typy danych</td><td class=\"text-mid py-2 pr-4\">Tylko tekst</td><td class=\"text-mid py-2\">String, number, boolean, null, array, object</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Czytelność</td><td class=\"text-mid py-2 pr-4\">Otwiera się w Excelu</td><td class=\"text-mid py-2\">Czytelny dla programistów</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Arkusze, eksporty baz danych</td><td class=\"text-mid py-2\">API, aplikacje webowe, konfiguracje</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować CSV na JSON?",
       "grid": "two",
@@ -229,7 +220,8 @@
             "json": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

@@ -173,8 +173,8 @@
         {
           "name": "Böngészőtámogatás",
           "values": {
-            "svg": true,
-            "pdf": false
+            "svg": "Minden böngésző",
+            "pdf": "Beépített PDF-megjelenítő"
           }
         },
         {
@@ -191,7 +191,8 @@
             "pdf": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkció"
     },
     {
       "type": "gap",

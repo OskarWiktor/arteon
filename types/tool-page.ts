@@ -129,6 +129,7 @@ export interface SectionTabsBlock {
 export interface SectionFeatureComparisonBlock {
   type: 'sectionFeatureComparison';
   title?: string;
+  featureLabel?: string;
   plans: {
     id: string;
     name: string;
@@ -136,7 +137,7 @@ export interface SectionFeatureComparisonBlock {
   }[];
   features: {
     name: string;
-    values: Record<string, boolean>;
+    values: Record<string, boolean | string>;
   }[];
 }
 

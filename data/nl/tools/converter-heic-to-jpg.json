@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "HEIC vs JPG – de belangrijkste verschillen",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Eigenschap</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressie</td><td class=\"py-2 text-center\">Beide</td><td class=\"py-2 text-center\">Lossy</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparantie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Nee</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animatie</td><td class=\"py-2 text-center\">Nee</td><td class=\"py-2 text-center\">Nee</td></tr><tr><td class=\"py-2\">Browserondersteuning</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universeel</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Wanneer HEIC naar JPG converteren?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Webbrowserondersteuning",
           "values": {
-            "heic": false,
-            "jpg": true
+            "heic": "Safari 13+ (macOS / iOS)",
+            "jpg": "Alle browsers"
+          }
+        },
+        {
+          "name": "Kleurdiepte",
+          "values": {
+            "heic": "8/10-bit, HDR",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Functie"
     },
     {
       "type": "gap",

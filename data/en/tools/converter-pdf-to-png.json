@@ -173,8 +173,8 @@
         {
           "name": "Web browser support",
           "values": {
-            "pdf": false,
-            "png": true
+            "pdf": "Built-in PDF viewer",
+            "png": "All browsers"
           }
         },
         {
@@ -191,7 +191,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Feature"
     },
     {
       "type": "gap",

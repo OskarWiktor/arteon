@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "SVG vs PNG – diferenças principais",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caraterística</th><th class=\"py-2 text-center\">SVG</th><th class=\"py-2 text-center\">PNG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compressão</td><td class=\"py-2 text-center\">Sem perda</td><td class=\"py-2 text-center\">Sem perda</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparência</td><td class=\"py-2 text-center\">Sim</td><td class=\"py-2 text-center\">Sim</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animação</td><td class=\"py-2 text-center\">Sim</td><td class=\"py-2 text-center\">Não</td></tr><tr><td class=\"py-2\">Suporte navegador</td><td class=\"py-2 text-center\">universal</td><td class=\"py-2 text-center\">universal</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Quando converter SVG para PNG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Suporte em navegadores",
           "values": {
-            "svg": true,
-            "png": true
+            "svg": "Todos os navegadores",
+            "png": "Todos os navegadores"
+          }
+        },
+        {
+          "name": "Profundidade de cor",
+          "values": {
+            "svg": "N/A (vetor)",
+            "png": "8/16-bit"
           }
         },
         {
@@ -237,7 +235,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcionalidade"
     },
     {
       "type": "gap",

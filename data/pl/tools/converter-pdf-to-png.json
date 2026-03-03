@@ -93,15 +93,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "PDF vs PNG — różnice formatów",
-      "html": "<div class=\"mt-4 overflow-x-auto\"><table class=\"w-full text-sm!\"><thead><tr class=\"border-b border-neutral-200\"><th class=\"text-dark py-2 pr-4 text-left font-semibold\">Cecha</th><th class=\"text-dark py-2 pr-4 text-left font-semibold\">PDF</th><th class=\"text-dark py-2 text-left font-semibold\">PNG</th></tr></thead><tbody><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Typ</td><td class=\"text-mid py-2 pr-4\">Format dokumentu</td><td class=\"text-mid py-2\">Format obrazu bezstratnego</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Jakość tekstu</td><td class=\"text-mid py-2 pr-4\">Wektorowa (skalowalna)</td><td class=\"text-mid py-2\">Rastrowa (zależy od DPI)</td></tr><tr class=\"border-b border-neutral-100\"><td class=\"text-mid py-2 pr-4\">Rozmiar</td><td class=\"text-mid py-2 pr-4\">Kompaktowy</td><td class=\"text-mid py-2\">Większy (bezstratna kompresja)</td></tr><tr><td class=\"text-mid py-2 pr-4\">Zastosowanie</td><td class=\"text-mid py-2 pr-4\">Dokumenty, druk</td><td class=\"text-mid py-2\">Grafiki, zrzuty, dokumentacja</td></tr></tbody></table></div><p class=\"text-mid mt-4\">PNG zachowuje ostrość tekstu lepiej niż JPG — idealny dla dokumentów i zrzutów ekranu.</p>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Kiedy warto konwertować PDF na PNG?",
       "grid": "two",
@@ -218,8 +209,8 @@
         {
           "name": "Obsługa w przeglądarkach",
           "values": {
-            "pdf": false,
-            "png": true
+            "pdf": "Wbudowana przeglądarka PDF",
+            "png": "Wszystkie przeglądarki"
           }
         },
         {
@@ -236,7 +227,8 @@
             "png": false
           }
         }
-      ]
+      ],
+      "featureLabel": "Funkcja"
     },
     {
       "type": "gap",

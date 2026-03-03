@@ -94,15 +94,6 @@
       "variant": "line"
     },
     {
-      "type": "sectionInfo",
-      "title": "HEIC vs JPG – diferențele cheie",
-      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Caracteristică</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">JPG</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Compresie</td><td class=\"py-2 text-center\">Ambele</td><td class=\"py-2 text-center\">Cu pierderi</td></tr><tr class=\"border-b\"><td class=\"py-2\">Transparență</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Nu</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animație</td><td class=\"py-2 text-center\">Nu</td><td class=\"py-2 text-center\">Nu</td></tr><tr><td class=\"py-2\">Suport browser</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">universală</td></tr></tbody></table></div>"
-    },
-    {
-      "type": "gap",
-      "variant": "line"
-    },
-    {
       "type": "sectionSteps",
       "title": "Când să convertiți HEIC în JPG?",
       "grid": "two",
@@ -219,8 +210,15 @@
         {
           "name": "Suport în browsere",
           "values": {
-            "heic": false,
-            "jpg": true
+            "heic": "Safari 13+ (macOS / iOS)",
+            "jpg": "Toate browserele"
+          }
+        },
+        {
+          "name": "Adâncime de culoare",
+          "values": {
+            "heic": "8/10-bit, HDR",
+            "jpg": "8-bit (16.7M)"
           }
         },
         {
@@ -237,7 +235,8 @@
             "jpg": true
           }
         }
-      ]
+      ],
+      "featureLabel": "Funcționalitate"
     },
     {
       "type": "gap",
