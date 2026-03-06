@@ -236,7 +236,7 @@ export default function Footer() {
             {/* 1.1 Dane firmy + Logo + Social */}
             <section aria-label="Dane firmy i lokalizacja" className="lg:col-start-1 lg:row-start-1">
               <div className="mb-4">
-                <Image src="/assets/arteon-logo.webp" width={140} height={50} alt="Logo Arteon" />
+                <Image src="/assets/arteon-logo.webp" width={140} height={50} alt="Logo Arteon" unoptimized />
               </div>
               <address className="text-dark mb-4 text-base not-italic">
                 <p>

@@ -294,7 +294,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                           scroll={false}
                           onClick={(e) => handleLinkClick(e, item.href)}
                           className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-lg border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
-                          prefetch={true}
+                          prefetch={false}
                         >
                           {item.label}
                         </Link>
@@ -347,7 +347,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                           scroll={false}
                           onClick={(e) => handleLinkClick(e, href)}
                           className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-lg border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
-                          prefetch={true}
+                          prefetch={false}
                         >
                           {FORMAT_DISPLAY_LABELS[fmt]}
                         </Link>
