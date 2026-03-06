@@ -1,0 +1,289 @@
+{
+  "toolKey": "mbpsToMBs",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter Mbps na MB/s – prędkość internetu",
+    "description": "Przelicz megabity na megabajty na sekundę. Konwerter pomoże sprawdzić rzeczywistą prędkość pobierania plików. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-mbps-na-mbs"
+  },
+  "hero": {
+    "title": "Przelicz Mbps na MB/s",
+    "description": "Ten konwerter przelicza megabity na sekundę (Mbps) na megabajty na sekundę (MB/s) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-mbps-na-mbs",
+      "label": "Mbps na MB/s"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter Mbps na MB/s – prędkość internetu",
+      "alternateName": ["Przelicznik Mbps MB/s", "Kalkulator prędkości internetu", "Megabity na megabajty"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz megabity na megabajty na sekundę. Konwerter pomoże sprawdzić rzeczywistą prędkość pobierania plików. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera Mbps na MB/s",
+      "description": "Instrukcja użycia: mbps na mb/s.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego Mbps to nie to samo co MB/s?",
+      "html": "<p class=\"text-mid mb-4\">Operatorzy internetu podają prędkość w megabitach na sekundę (Mbps). Rozmiar plików mierzymy w megabajtach (MB). 1 bajt = 8 bitów, więc 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">Internet 100 Mbps = 12,5 MB/s. To oznacza, że plik 1 GB pobierzesz w około 80 sekund (teoretycznie). W praktyce będzie wolniej z powodu narzutu protokołów, serwera źródłowego i obciążenia sieci.</p><p class=\"text-mid mb-4\">Łącze światłowodowe 1 Gbps = 125 MB/s. Pobieranie filmu 4K (ok. 5 GB) trwałoby 40 sekund przy pełnej prędkości.</p><p class=\"text-mid\">Uwaga: duża litera B = bajty (MB/s), mała litera b = bity (Mbps). To kluczowa różnica.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Mbps na MB/s – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szacowanie pobierania",
+          "description": "100 Mbps = plik 1 GB w ok. 80 sekund."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Wybór pakietu",
+          "description": "Porównaj oferty operatorów w realnych MB/s."
+        },
+        {
+          "icon": "RiVideoLine",
+          "title": "Streaming",
+          "description": "Netflix 4K wymaga 25 Mbps = 3,1 MB/s."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Hosting",
+          "description": "Transfer serwera: 1 TB/miesiąc = ile Mbps potrzebujesz?"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja Mbps na MB/s?",
+      "html": "<p class=\"text-mid mb-4\">Megabity na sekundę (Mbps) i megabajty na sekundę (MB/s) to dwie różne jednostki przepustowości, które często są mylone. Jeden bajt składa się z 8 bitów, dlatego aby przeliczyć Mbps na MB/s, wystarczy podzielić wartość przez 8.</p><p class=\"text-mid mb-4\">Na przykład łącze internetowe o prędkości 100 Mbps pozwala pobierać dane z maksymalną prędkością 12,5 MB/s. Oznacza to, że plik o rozmiarze 1 GB (1 024 MB) pobrany na łączu 100 Mbps zajmie minimum 82 sekundy w idealnych warunkach.</p><p class=\"text-mid\">Dostawcy internetu podają prędkość w Mbps (megabitach), natomiast programy do pobierania plików i przeglądarki wyświetlają prędkość w MB/s (megabajtach). Ta różnica często sprawia, że realna prędkość pobierania wydaje się 8 razy niższa niż deklarowana przez operatora.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>100 Mbps = 12,5 MB/s. 1 Gbps = 125 MB/s.</li><li>Realna prędkość to ok. 70–85% teoretycznej (narzut TCP/IP, serwer).</li><li>Netflix 4K: min. 25 Mbps. YouTube 4K: min. 20 Mbps. Zoom HD: 3 Mbps.</li><li>Duże B = bajty (MB/s), małe b = bity (Mbps). 8-krotna różnica.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mbps (megabity/s) vs MB/s (megabajty/s) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Mbps (megabity/s)"
+        },
+        {
+          "id": "unit2",
+          "name": "MB/s (megabajty/s)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Jednostka",
+          "values": {
+            "unit1": "Megabit (Mb)",
+            "unit2": "Megabajt (MB)"
+          }
+        },
+        {
+          "name": "Relacja",
+          "values": {
+            "unit1": "1 Mbps",
+            "unit2": "0,125 MB/s"
+          }
+        },
+        {
+          "name": "Użycie",
+          "values": {
+            "unit1": "Operatorzy, testy",
+            "unit2": "Menedżery pobierania"
+          }
+        },
+        {
+          "name": "100 Mbps =",
+          "values": {
+            "unit1": "100 Mbps",
+            "unit2": "12,5 MB/s"
+          }
+        },
+        {
+          "name": "1 Gbps =",
+          "values": {
+            "unit1": "1 000 Mbps",
+            "unit2": "125 MB/s"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile MB/s to 100 Mbps?",
+          "answer": "100 Mbps = 12,5 MB/s (100 ÷ 8)."
+        },
+        {
+          "question": "Dlaczego operatorzy podają prędkość w Mbps?",
+          "answer": "Mbps to większa liczba niż MB/s, więc wygląda korzystniej w ofercie. 100 Mbps brzmi lepiej niż 12,5 MB/s."
+        },
+        {
+          "question": "Ile Mbps potrzebuję do Netflix 4K?",
+          "answer": "Netflix zaleca minimum 25 Mbps dla strumienia 4K Ultra HD."
+        },
+        {
+          "question": "Jak długo trwa pobranie 1 GB przy 100 Mbps?",
+          "answer": "Teoretycznie: 1 024 MB ÷ 12,5 MB/s ≈ 82 sekundy. Realnie: ok. 100–120 sekund."
+        },
+        {
+          "question": "Co to jest Gbps?",
+          "answer": "1 Gbps = 1 000 Mbps = 125 MB/s. Standard nowoczesnych łączy światłowodowych."
+        },
+        {
+          "question": "Dlaczego rzeczywista prędkość jest niższa?",
+          "answer": "Narzut protokołów TCP/IP (ok. 5–10%), ograniczenia serwera źródłowego, obciążenie sieci, jakość routera."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Mbps na MB/s – Arteon",
+      "defaultSubject": "Feedback: Mbps na MB/s"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

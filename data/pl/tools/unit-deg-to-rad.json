@@ -1,0 +1,289 @@
+{
+  "toolKey": "degToRad",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter stopni na radiany – DEG ↔ RAD",
+    "description": "Przelicz stopnie na radiany i odwrotnie. Konwerter jest przydatny w matematyce, programowaniu i grafice 3D. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-stopni-na-radiany"
+  },
+  "hero": {
+    "title": "Przelicz stopnie na radiany",
+    "description": "Ten konwerter przelicza stopnie na radiany i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-stopni-na-radiany",
+      "label": "stopnie na radiany"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter stopni na radiany – DEG ↔ RAD",
+      "alternateName": ["Przelicznik stopni radiany", "Kalkulator kątów", "Degrees to radians"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz stopnie na radiany i odwrotnie. Konwerter jest przydatny w matematyce, programowaniu i grafice 3D. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera stopnie na radiany",
+      "description": "Instrukcja użycia: stopnie na radiany.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy potrzebne jest przeliczanie stopni na radiany?",
+      "html": "<p class=\"text-mid mb-4\">Stopnie (°) i radiany (rad) to dwie jednostki miary kątów. Pełny obrót = 360° = 2π rad. Kąt prosty = 90° = π/2 rad.</p><p class=\"text-mid mb-4\">W codziennym użytku dominują stopnie. Radiany są standardem w matematyce, fizyce i programowaniu – funkcje trygonometryczne (sin, cos, tan) w większości języków programowania przyjmują argumenty w radianach.</p><p class=\"text-mid mb-4\">Przykład: <code>Math.sin(90)</code> w JavaScript nie da 1, bo 90 to radiany (ok. 5156°). Poprawnie: <code>Math.sin(90 * Math.PI / 180)</code> = 1.</p><p class=\"text-mid\">Radiany są wygodniejsze w obliczeniach różniczkowych – pochodna sin(x) = cos(x) działa bezpośrednio dla radianów.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "stopnie na radiany – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Programowanie",
+          "description": "Math.sin(), Math.cos() wymagają radianów."
+        },
+        {
+          "icon": "RiCompassLine",
+          "title": "Fizyka",
+          "description": "Ruch obrotowy, prędkość kątowa w rad/s."
+        },
+        {
+          "icon": "RiGamepadLine",
+          "title": "Gamedev / 3D",
+          "description": "Rotacje obiektów, kamery, animacje."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Inżynieria",
+          "description": "Obliczenia konstrukcyjne, nachylenia, kąty."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja stopni na radiany?",
+      "html": "<p class=\"text-mid mb-4\">Stopnie i radiany to dwa sposoby mierzenia kątów. Pełne koło ma 360 stopni lub 2π radianów (około 6,2832 rad). Jeden radian to kąt, którego łuk ma długość równą promieniowi koła — wynosi to około 57,296 stopnia.</p><p class=\"text-mid mb-4\">Aby przeliczyć stopnie na radiany, narzędzie mnoży wartość przez π i dzieli przez 180. Na przykład kąt prosty 90° to π/2 radiana (około 1,5708 rad), a 45° to π/4 radiana (około 0,7854 rad). W drugą stronę — aby zamienić radiany na stopnie — wystarczy pomnożyć wartość przez 180 i podzielić przez π.</p><p class=\"text-mid\">Radiany są standardową jednostką kątów w matematyce, fizyce i programowaniu — większość funkcji trygonometrycznych w językach programowania (sin, cos, tan) przyjmuje argumenty w radianach, nie w stopniach.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>90° = π/2 ≈ 1,5708 rad. 180° = π ≈ 3,1416 rad. 360° = 2π ≈ 6,2832 rad.</li><li>JavaScript: <code>Math.PI</code> = 3.141592653589793.</li><li>CSS <code>rotate()</code> przyjmuje stopnie: <code>rotate(90deg)</code>. Ale CSS Houdini i WebGL – radiany.</li><li>1 radian ≈ 57,2958° (stosunek promienia do łuku).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Stopnie (°) vs Radiany (rad) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Stopnie (°)"
+        },
+        {
+          "id": "unit2",
+          "name": "Radiany (rad)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Pełny obrót",
+          "values": {
+            "unit1": "360°",
+            "unit2": "2π ≈ 6,2832"
+          }
+        },
+        {
+          "name": "Kąt prosty",
+          "values": {
+            "unit1": "90°",
+            "unit2": "π/2 ≈ 1,5708"
+          }
+        },
+        {
+          "name": "Użycie",
+          "values": {
+            "unit1": "Codzienne, nawigacja",
+            "unit2": "Matematyka, programowanie"
+          }
+        },
+        {
+          "name": "CSS",
+          "values": {
+            "unit1": "rotate(90deg)",
+            "unit2": "Nie obsługiwane"
+          }
+        },
+        {
+          "name": "Trygonometria (JS)",
+          "values": {
+            "unit1": "Wymaga konwersji",
+            "unit2": "Natywne (Math.sin)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile radianów ma 180 stopni?",
+          "answer": "180° = π radianów ≈ 3,14159."
+        },
+        {
+          "question": "Dlaczego funkcje Math.sin() używają radianów?",
+          "answer": "Standard IEEE 754 i konwencja matematyczna – radiany upraszczają wzory. Pochodna sin(x) = cos(x) działa tylko w radianach."
+        },
+        {
+          "question": "Ile stopni ma 1 radian?",
+          "answer": "1 rad = 180/π ≈ 57,2958°."
+        },
+        {
+          "question": "Jak przeliczyć stopnie na radiany w JavaScript?",
+          "answer": "<code>const rad = deg * Math.PI / 180;</code>"
+        },
+        {
+          "question": "Co to jest prędkość kątowa?",
+          "answer": "Prędkość kątowa w rad/s – ile radianów na sekundę. 1 obrót/s = 2π rad/s."
+        },
+        {
+          "question": "Czy CSS używa radianów?",
+          "answer": "Standardowe CSS używa stopni (deg). WebGL i Canvas API używają radianów."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "stopnie na radiany – Arteon",
+      "defaultSubject": "Feedback: stopnie na radiany"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -6,11 +6,11 @@
   },
   "hero": {
     "title": "Kontakta Arteon-teamet",
-    "description": "Rapportera ett fel, föreslå ett nytt verktyg eller ställ en fråga — vi svarar inom en arbetsdag"
+    "description": "Rapportera ett fel, föreslå ett nytt verktyg eller ställ en fråga - vi svarar inom en arbetsdag"
   },
   "intro": {
     "title": "Har du en fråga eller ett förslag?",
-    "textBefore": "Vi tar gärna emot din feedback om våra verktyg. Om du har hittat ett fel, har en idé för ett nytt verktyg eller behöver hjälp — skriv till oss på",
+    "textBefore": "Vi tar gärna emot din feedback om våra verktyg. Om du har hittat ett fel, har en idé för ett nytt verktyg eller behöver hjälp - skriv till oss på",
     "textAfter": ". Vi svarar inom en arbetsdag."
   },
   "formTitle": "Skicka ett meddelande",

@@ -2,8 +2,8 @@
   "toolKey": "jsonToCsv",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JSON na CSV — darmowy, bez rejestracji",
-    "description": "Zamień dane JSON na plik CSV gotowy do otwarcia w Excelu. Bez rejestracji, bez limitu — konwersja lokalna w przeglądarce.",
+    "title": "Konwerter JSON na CSV - darmowy, bez rejestracji",
+    "description": "Zamień dane JSON na plik CSV gotowy do otwarcia w Excelu. Bez rejestracji, bez limitu - konwersja lokalna w przeglądarce.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-csv"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter JSON na CSV — darmowy, bez rejestracji",
+      "name": "Konwerter JSON na CSV - darmowy, bez rejestracji",
       "alternateName": ["Zamiana JSON na CSV online", "Konwersja JSON do CSV", "JSON to CSV converter"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter JSON na CSV online. Zamień dane JSON na CSV w przeglądarce — dane nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter JSON na CSV online. Zamień dane JSON na CSV w przeglądarce - dane nie są wysyłane na serwer.",
       "featureList": ["Konwersja JSON na CSV", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować JSON na CSV?",
-      "html": "<p class=\"text-mid mb-4\">JSON to standard wymiany danych w aplikacjach webowych i API. CSV to prosty format tabelaryczny, który otworzy się w Excelu, Google Sheets i każdym arkuszu kalkulacyjnym.</p><p class=\"text-mid mb-4\">Konwersja JSON na CSV przydaje się, gdy chcesz przeanalizować dane z API w arkuszu kalkulacyjnym, przygotować raport lub zaimportować dane do bazy danych.</p><p class=\"text-mid\">Nasz konwerter automatycznie wyodrębnia klucze obiektów JSON jako nagłówki kolumn CSV.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON to standard wymiany danych w REST API, aplikacjach webowych i bazach NoSQL. Jednak do analizy danych, raportów i importu do baz SQL potrzebny jest format tabelaryczny. CSV (Comma-Separated Values) otwiera się bezpośrednio w Excelu, Google Sheets, LibreOffice Calc i każdym innym arkuszu kalkulacyjnym — bez instalacji dodatkowego oprogramowania.</p><p class=\"text-mid mb-4\">Konwersja JSON na CSV zamienia tablicę obiektów JSON w płaską tabelę, gdzie klucze obiektów stają się nagłówkami kolumn, a wartości — wierszami. To niezbędne, gdy pobierasz dane z API (np. Stripe, Shopify, Google Analytics) i chcesz przeanalizować je w arkuszu kalkulacyjnym lub zaimportować do bazy relacyjnej (MySQL, PostgreSQL).</p><p class=\"text-mid mb-4\">Konwerter obsługuje zagnieżdżone obiekty JSON — spłaszcza je do płaskiej struktury CSV z kluczami w notacji kropkowej (np. <code>adres.miasto</code>). Tablice w wartościach są serializowane jako tekst.</p><p class=\"text-mid\">Cała konwersja odbywa się lokalnie w przeglądarce — dane nie są wysyłane na serwer. Bez rejestracji, bez limitów, bez śledzenia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter JSON na CSV – Arteon"
     },
@@ -99,23 +99,23 @@
       "items": [
         {
           "icon": "RiFileExcelLine",
-          "title": "Analiza w Excelu",
-          "description": "CSV otwiera się bezpośrednio w Excelu i Google Sheets — łatwa analiza danych."
+          "title": "Analiza danych z API",
+          "description": "Pobrałeś dane z API Stripe, Shopify lub Google Analytics w formacie JSON? Konwersja na CSV pozwala otworzyć je bezpośrednio w Excelu i Google Sheets do analizy, filtrowania i tworzenia wykresów."
         },
         {
           "icon": "RiDatabaseLine",
           "title": "Import do bazy SQL",
-          "description": "Bazy relacyjne (MySQL, PostgreSQL) łatwiej importują dane z CSV niż z JSON."
+          "description": "MySQL, PostgreSQL i SQLite mają wbudowane narzędzia importu CSV (LOAD DATA, COPY, .import). Konwersja JSON na CSV to najszybszy sposób na przeniesienie danych z API do bazy relacyjnej."
         },
         {
           "icon": "RiBarChartLine",
-          "title": "Raporty",
-          "description": "CSV to standardowy format eksportu danych do raportów i dashboardów."
+          "title": "Raporty i dashboardy",
+          "description": "Narzędzia BI (Power BI, Tableau, Metabase) i arkusze kalkulacyjne preferują CSV jako format wejściowy. Konwersja JSON na CSV przygotowuje dane do wizualizacji i raportowania."
         },
         {
           "icon": "RiMailLine",
-          "title": "Udostępnianie",
-          "description": "CSV jest prostszy — każdy otworzy go w arkuszu kalkulacyjnym bez specjalistycznej wiedzy."
+          "title": "Udostępnianie nietechnicznym odbiorcom",
+          "description": "Każdy otworzy plik CSV w arkuszu kalkulacyjnym bez specjalistycznej wiedzy. Konwersja JSON na CSV to najlepszy sposób na udostępnienie danych klientowi, księgowej lub managerowi."
         }
       ]
     },
@@ -157,7 +157,7 @@
     {
       "type": "sectionInfo",
       "title": "Wskazówki dotyczące konwersji JSON na CSV",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>JSON musi być tablicą obiektów (np. [{\"name\":\"Jan\"}]) — klucze pierwszego obiektu staną się nagłówkami CSV.</li><li>Zagnieżdżone obiekty i tablice są konwertowane na ciąg tekstowy w odpowiedniej komórce CSV.</li><li>Jeśli obiekty mają różne klucze, brakujące wartości będą puste w CSV.</li><li>Wynikowy CSV używa przecinka jako separatora — jeśli potrzebujesz średnika, zmień go po pobraniu.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>JSON musi być tablicą obiektów (np. [{\"name\":\"Jan\"}]) - klucze pierwszego obiektu staną się nagłówkami CSV.</li><li>Zagnieżdżone obiekty i tablice są konwertowane na ciąg tekstowy w odpowiedniej komórce CSV.</li><li>Jeśli obiekty mają różne klucze, brakujące wartości będą puste w CSV.</li><li>Wynikowy CSV używa przecinka jako separatora - jeśli potrzebujesz średnika, zmień go po pobraniu.</li></ul>"
     },
     {
       "type": "gap",
@@ -229,8 +229,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ile mozna zaoszczedzic konwertujac JSON na CSV?",
-      "html": "<p class=\"text-mid mb-4\">Oszczednosci zaleza od rodzaju pliku zrodlowego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjecie z aparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczednosci moga sie roznic. Konwerter pokazuje dokladny rozmiar przed i po konwersji.</p>"
+      "title": "Jak działa konwersja JSON na CSV?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja JSON na CSV polega na spłaszczeniu struktury obiektów do formatu tabelarycznego. Narzędzie analizuje tablicę obiektów JSON, wyodrębnia wszystkie unikalne klucze i tworzy z nich nagłówki kolumn CSV. Wartości każdego obiektu trafiają do odpowiednich kolumn.</p><p class=\"text-mid mb-4\">Na przykład tablica <code>[{\"imię\": \"Jan\", \"wiek\": 30}, {\"imię\": \"Anna\", \"wiek\": 25}]</code> zostanie zamieniona na plik CSV z nagłówkami <code>imię,wiek</code> i dwoma wierszami danych.</p><p class=\"text-mid\">Zagnieżdżone obiekty i tablice w JSON są konwertowane na ciąg tekstowy w odpowiedniej komórce CSV, ponieważ format CSV nie obsługuje struktur wielopoziomowych. Dla płaskich danych konwersja jest bezstratna.</p>"
     },
     {
       "type": "gap",
@@ -238,29 +238,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Na co zwrocic uwage przy konwersji JSON na CSV?",
-      "description": "Kilka wskazowek, ktore pomoga uniknac problemow:",
+      "title": "Na co zwrócić uwagę przy konwersji JSON na CSV?",
+      "description": "Kilka wskazówek, które pomogą uniknąć problemów:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Bardzo duze pliki",
-          "description": "Konwersja obrazow powyzej 4000×4000 pikseli moze byc wolniejsza. Rozwaz dzielenie ich na partie po 10–20 sztuk."
+          "icon": "RiNodeTree",
+          "title": "Zagnieżdżone dane",
+          "description": "CSV to format płaski i nie obsługuje zagnieżdżeń. Obiekty i tablice wewnątrz JSON zostaną zapisane jako tekst w pojedynczej komórce."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Juz skompresowane pliki",
-          "description": "Jesli oryginalny plik JSON byl juz mocno skompresowany, konwersja na CSV moze nie przyniesc duzych oszczednosci."
+          "icon": "RiTableLine",
+          "title": "Różne klucze w obiektach",
+          "description": "Jeśli obiekty JSON mają różne zestawy kluczy, brakujące wartości będą puste w wynikowym CSV. Nagłówki zawierają sumę wszystkich kluczy."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Przezroczystosc",
-          "description": "Format CSV nie obsluguje przezroczystosci. Przezroczyste obszary zostana zastapione bialym tlem. Rozwaz PNG lub WebP."
+          "icon": "RiFileTextLine",
+          "title": "Separator w Excelu",
+          "description": "Wynikowy CSV używa przecinka jako separatora. Jeśli Excel nie rozdziela kolumn prawidłowo, zmień separator w ustawieniach lub użyj importu danych."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Zachowaj oryginaly",
-          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plikow JSON aby moc powtorzyc konwersje."
+          "icon": "RiAlertLine",
+          "title": "Tablica obiektów",
+          "description": "Konwerter oczekuje tablicy obiektów JSON. Pojedynczy obiekt lub tablica wartości prostych mogą wymagać innego podejścia do konwersji."
         }
       ]
     },
@@ -291,15 +291,15 @@
         },
         {
           "question": "Czy konwersja JSON na CSV jest bezpieczna?",
-          "answer": "Tak. Cala konwersja odbywa sie lokalnie w przegladarce za pomoca Canvas API. Pliki nie sa wysylane na zaden serwer. Po zamknieciu strony dane sa usuwane automatycznie."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce — dane nie są wysyłane na żaden serwer. Po zamknięciu strony dane są automatycznie usuwane z pamięci."
         },
         {
-          "question": "Czy moge konwertowac wiele plikow JSON jednoczesnie?",
-          "answer": "Tak. Narzedzie obsluguje konwersje wielu plikow naraz bez limitu. Przeciagnij pliki na pole konwertera lub wybierz z dysku."
+          "question": "Czy tracę dane przy konwersji JSON na CSV?",
+          "answer": "Dla płaskich tablic obiektów konwersja jest bezstratna. Zagnieżdżone struktury (obiekty w obiektach, tablice) zostaną zapisane jako tekst JSON w komórkach CSV, więc ich oryginalna struktura wymaga ponownego parsowania."
         },
         {
-          "question": "Czy CSV jest obslugiwany przez wszystkie przegladarki?",
-          "answer": "Format CSV jest szeroko obslugiwany przez nowoczesne przegladarki: Chrome, Firefox, Safari, Edge i Opera."
+          "question": "Jak otworzyć wynikowy CSV w Excelu z polskimi znakami?",
+          "answer": "Wynikowy plik CSV jest zapisany w kodowaniu UTF-8. W Excelu użyj opcji Dane → Pobierz dane → Z pliku tekstowego/CSV i wybierz kodowanie UTF-8, aby polskie znaki wyświetlały się poprawnie."
         }
       ]
     },

@@ -2,7 +2,7 @@
   "toolKey": "base64ToImage",
   "locale": "it",
   "metadata": {
-    "title": "Convertitore Base64 in immagine — Base64 immagine",
+    "title": "Convertitore Base64 in immagine - Base64 immagine",
     "description": "Decodifica stringhe Base64 in immagini. Anteprima e download nel browser. Gratuito.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-base64-in-immagine"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Converti",
-          "text": "Clicca su Converti — i file vengono elaborati localmente nel browser."
+          "text": "Clicca su Converti - i file vengono elaborati localmente nel browser."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire Base64 in immagine?",
-      "html": "<p class=\"text-mid mb-4\">BASE64 e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in IMAGE puo offrire vantaggi significativi — file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file BASE64 nel formato IMAGE direttamente nel browser. Nessun file viene inviato a server — l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">BASE64 e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in IMAGE puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file BASE64 nel formato IMAGE direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Base64 to immagine conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Converti",
-          "description": "Clicca su Converti — i file vengono elaborati localmente nel browser.",
+          "description": "Clicca su Converti - i file vengono elaborati localmente nel browser.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Quanto risparmiare convertendo BASE64 in IMAGE?",
-      "html": "<p class=\"text-mid mb-4\">Il risparmio dipende dal tipo di file e dalla compressione originale:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto fotocamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Immagine prodotto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Il risparmio reale varia in base a contenuto e impostazioni.</p>"
+      "title": "Come funziona la decodifica da Base64 a immagine?",
+      "html": "<p class=\"text-mid mb-4\">La decodifica Base64 \u00e8 l'operazione inversa della codifica Base64 \u2014 riconverte una stringa di testo in dati binari di immagine. Il convertitore legge la stringa Base64 (con o senza prefisso Data URI), la decodifica in byte grezzi e ricostruisce il file immagine originale.</p><p class=\"text-mid mb-4\">Il prefisso Data URI (es. data:image/png;base64,) indica al convertitore quale formato di immagine usare. Se il prefisso \u00e8 assente, il convertitore rileva automaticamente il formato dalla firma binaria (byte magici) dei dati decodificati.</p><p class=\"text-mid\">Questo strumento \u00e8 utile quando devi estrarre un'immagine da una pagina HTML, un file CSS, una risposta API o un database che memorizza le immagini come stringhe Base64. La conversione avviene interamente nel tuo browser.</p>"
     },
     {
       "type": "gap",
@@ -138,29 +138,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Consigli per convertire BASE64 in IMAGE",
-      "description": "Consigli per evitare problemi comuni:",
+      "title": "Consigli per la decodifica da Base64 a immagine",
+      "description": "Alcuni consigli per evitare problemi comuni:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "File molto grandi",
-          "description": "Immagini sopra 4000×4000 px possono essere piu lente. Dividi in lotti da 10–20."
+          "title": "Prefisso Data URI",
+          "description": "Il convertitore accetta stringhe Base64 con e senza prefisso Data URI (data:image/...). Se il prefisso \u00e8 presente, viene usato per determinare il formato di output."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "File gia compressi",
-          "description": "Se il BASE64 era gia compresso, la conversione in IMAGE potrebbe risparmiare poco."
+          "icon": "RiCodeLine",
+          "title": "Caratteri non validi",
+          "description": "Le stringhe Base64 devono contenere solo A\u2013Z, a\u2013z, 0\u20139, +, / e = (padding). Gli spazi e le interruzioni di riga vengono rimossi automaticamente prima della decodifica."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Trasparenza",
-          "description": "IMAGE non supporta trasparenza. Le aree trasparenti diventano bianche. Considera PNG o WebP."
+          "icon": "RiFileImageLine",
+          "title": "Formato di output",
+          "description": "L'immagine decodificata viene salvata nel formato indicato dal prefisso Data URI. Senza prefisso, il convertitore rileva automaticamente il formato."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Conserva originali",
-          "description": "La conversione con perdita e irreversibile. Conserva copie dei file BASE64."
+          "icon": "RiFileCodeLine",
+          "title": "Stringhe lunghe",
+          "description": "Le stringhe Base64 molto lunghe (che rappresentano immagini grandi) possono richiedere un momento per la decodifica. Il convertitore elabora stringhe di qualsiasi lunghezza gestibile dal browser."
         }
       ]
     },
@@ -190,16 +190,16 @@
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
         },
         {
-          "question": "E sicuro convertire BASE64 in IMAGE?",
-          "answer": "Si. Tutto avviene localmente nel browser via Canvas API. Niente viene inviato a server."
+          "question": "\u00c8 sicura la decodifica da Base64 a immagine?",
+          "answer": "S\u00ec. Il processo di decodifica avviene interamente nel tuo browser. I tuoi dati non vengono mai inviati a un server."
         },
         {
-          "question": "Posso convertire piu file BASE64?",
-          "answer": "Si. Conversione batch senza limiti. Trascina i file nel convertitore."
+          "question": "Quali formati di immagine sono supportati?",
+          "answer": "Il convertitore pu\u00f2 decodificare stringhe Base64 in PNG, JPG, GIF, WebP, SVG, BMP e altri formati di immagine standard. Il formato viene rilevato automaticamente dal prefisso Data URI o dal contenuto binario."
         },
         {
-          "question": "IMAGE e supportato da tutti i browser?",
-          "answer": "IMAGE e supportato da Chrome, Firefox, Safari, Edge e Opera."
+          "question": "Come ottengo la stringa Base64 di un'immagine?",
+          "answer": "Puoi trovare stringhe Base64 di immagini nel codice sorgente HTML (attributi src), file CSS (background-image), risposte API o database. Cerca stringhe che iniziano con data:image/ seguite da base64,."
         }
       ]
     },

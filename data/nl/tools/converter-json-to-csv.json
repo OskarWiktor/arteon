@@ -2,7 +2,7 @@
   "toolKey": "jsonToCsv",
   "locale": "nl",
   "metadata": {
-    "title": "JSON naar CSV converter — JSON CSV",
+    "title": "JSON naar CSV converter - JSON CSV",
     "description": "Converteer JSON naar CSV-formaat. Automatisch parsen en formatteren. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/json-naar-csv-converter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom JSON naar CSV converteren?",
-      "html": "<p class=\"text-mid mb-4\">JSON is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar CSV aanzienlijke voordelen bieden — kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw JSON-bestanden direct in de browser om naar het CSV-formaat. Er worden geen bestanden naar een server geupload — het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar CSV aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw JSON-bestanden direct in de browser om naar het CSV-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "JSON to CSV conversion",
       "variant": "right"
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Directe conversie",
-          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's - snel en werkt ook offline."
         }
       ]
     },
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hoeveel besparen bij conversie JSON naar CSV?",
-      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+      "title": "Hoe werkt de conversie van JSON naar CSV?",
+      "html": "<p class=\"text-mid mb-4\">JSON (JavaScript Object Notation) slaat gegevens op als gestructureerde objecten met key-value paren. CSV (Comma-Separated Values) organiseert gegevens in een plat tabelformaat met rijen en kolommen. De converter zet JSON-objecten om naar tabelrijen met de eigenschapsnamen als kolomkoppen.</p><p class=\"text-mid mb-4\">Voor een array van JSON-objecten wordt elk object een rij in de CSV-uitvoer. De converter extraheert alle unieke sleutels en gebruikt deze als kolomkoppen in de eerste rij.</p><p class=\"text-mid\">Het resulterende CSV-bestand gebruikt standaard opmaak met kommascheidingsteken en correcte aanhalingstekens. Alle conversie vindt lokaal plaats in je browser — er worden geen gegevens naar een server gestuurd.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips voor conversie JSON naar CSV",
-      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "title": "Tips voor de conversie van JSON naar CSV",
+      "description": "Enkele tips om veelvoorkomende problemen te voorkomen:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Zeer grote bestanden",
-          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+          "icon": "RiNodeTree",
+          "title": "Geneste objecten",
+          "description": "CSV is een plat formaat en kan geen geneste structuren weergeven. Geneste JSON-objecten worden afgeplat met puntnotatie (bijv. adres.stad)."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Reeds gecomprimeerd",
-          "description": "Als het JSON-bestand al sterk gecomprimeerd was, levert conversie naar CSV mogelijk weinig besparing."
+          "icon": "RiListCheck2",
+          "title": "Arrays in waarden",
+          "description": "Als een JSON-eigenschap een array bevat, wordt deze geserialiseerd als string in de CSV-cel. Voor complexe geneste data is XML of YAML geschikter dan CSV."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparantie",
-          "description": "CSV ondersteunt geen transparantie. Wordt wit. Overweeg PNG of WebP."
+          "icon": "RiFileTextLine",
+          "title": "Uniforme structuur",
+          "description": "Gebruik voor de beste resultaten JSON-arrays waarin alle objecten dezelfde sleutels hebben. Objecten met verschillende sleutels werken ook, ontbrekende waarden verschijnen als lege cellen."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Bewaar originelen",
-          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van JSON-bestanden."
+          "icon": "RiFileCodeLine",
+          "title": "Grote datasets",
+          "description": "De converter verwerkt efficiënt grote JSON-bestanden in de browser. Voor bestanden groter dan 10 MB kan de verwerking enkele seconden duren, afhankelijk van het apparaat."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Handling nested JSON structures",
+      "html": "<p class=\"text-mid mb-4\">CSV is a flat tabular format — it cannot natively represent nested objects or arrays. The converter handles nesting in several ways:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Nested objects</strong> – flattened using dot notation. <code>{\"address\": {\"city\": \"Warsaw\"}}</code> becomes a column called <code>address.city</code>.</li><li><strong>Arrays of primitives</strong> – serialized as comma-separated strings within a single cell.</li><li><strong>Arrays of objects</strong> – serialized as JSON strings within the cell, preserving the structure for manual parsing.</li><li><strong>Null values</strong> – converted to empty cells in CSV.</li></ul><p class=\"text-mid mt-3\">For best results, use JSON with a flat structure (array of objects with primitive values). Deeply nested JSON may produce many columns with dot-notation headers.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, de converter werkt op elk apparaat met een moderne webbrowser."
         },
         {
-          "question": "Is conversie JSON naar CSV veilig?",
-          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+          "question": "Is de conversie van JSON naar CSV veilig?",
+          "answer": "Ja. Alle conversie vindt lokaal plaats in je browser. Je gegevens worden nooit naar een server gestuurd."
         },
         {
-          "question": "Kan ik meerdere JSON-bestanden tegelijk converteren?",
-          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+          "question": "Kan ik het CSV openen in Excel?",
+          "answer": "Ja. CSV-bestanden kunnen direct geopend worden in Microsoft Excel, Google Sheets, LibreOffice Calc en elk ander spreadsheetprogramma."
         },
         {
-          "question": "Wordt CSV door alle browsers ondersteund?",
-          "answer": "CSV wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
+          "question": "Wat gebeurt er met geneste JSON-objecten?",
+          "answer": "Geneste objecten worden afgeplat voor de CSV-uitvoer. Eigenschappen worden weergegeven met puntnotatie (bijv. adres.stad). Arrays in waarden worden geserialiseerd als strings."
         }
       ]
     },

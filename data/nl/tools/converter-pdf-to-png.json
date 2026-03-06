@@ -2,7 +2,7 @@
   "toolKey": "pdfToPng",
   "locale": "nl",
   "metadata": {
-    "title": "PDF naar PNG converter — PDF PNG",
+    "title": "PDF naar PNG converter - PDF PNG",
     "description": "Converteer PDF-pagina's naar PNG-afbeeldingen. Hoge kwaliteit, geen limieten. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/pdf-naar-png-converter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Converteren",
-          "text": "Klik op Converteren — bestanden worden lokaal in je browser verwerkt."
+          "text": "Klik op Converteren - bestanden worden lokaal in je browser verwerkt."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom PDF naar PNG converteren?",
-      "html": "<p class=\"text-mid mb-4\">PDF is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar PNG aanzienlijke voordelen bieden — kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw PDF-bestanden direct in de browser om naar het PNG-formaat. Er worden geen bestanden naar een server geupload — het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar PNG aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw PDF-bestanden direct in de browser om naar het PNG-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "PDF to PNG conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Converteren",
-          "description": "Klik op Converteren — bestanden worden lokaal in je browser verwerkt.",
+          "description": "Klik op Converteren - bestanden worden lokaal in je browser verwerkt.",
           "icon": "RiSettings3Line"
         },
         {
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Directe conversie",
-          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's - snel en werkt ook offline."
         }
       ]
     },
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose PNG vs JPG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">PNG is lossless — it preserves sharp text edges, clean lines, and exact colors without compression artifacts. This makes PNG ideal for documents with text, technical drawings, invoices, and any content with sharp edges.</p><p class=\"text-mid mb-4\">JPG uses lossy compression and may show visible artifacts around text and sharp edges (known as \"ringing\"). However, JPG produces smaller files, which is better for photo-heavy PDFs like product catalogs or photo albums.</p><p class=\"text-mid\">Rule of thumb: choose PNG for documents with text and diagrams, JPG for photo-heavy PDFs, and WebP for the best balance of quality and size.</p>"
     },
     {
       "type": "faq",

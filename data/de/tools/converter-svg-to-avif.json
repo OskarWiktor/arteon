@@ -2,14 +2,14 @@
   "toolKey": "svgToAvif",
   "locale": "de",
   "metadata": {
-    "title": "SVG zu AVIF Konverter — SVG AVIF",
-    "description": "Vektor-SVG-Grafiken in kompaktes AVIF-Rasterformat umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
+    "title": "SVG zu AVIF Konverter - SVG AVIF",
+    "description": "Vektor-SVG-Grafiken in kompaktes AVIF-Rasterformat umwandeln. Kostenloses Browser-Tool - ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/svg-zu-avif-konverter"
   },
   "hero": {
     "title": "SVG zu AVIF Konverter",
-    "description": "Vektor-SVG-Grafiken in kompaktes AVIF-Rasterformat umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
+    "description": "Vektor-SVG-Grafiken in kompaktes AVIF-Rasterformat umwandeln. Kostenloses Browser-Tool - ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG zu AVIF Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Vektor-SVG-Grafiken in kompaktes AVIF-Rasterformat umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
+      "description": "Vektor-SVG-Grafiken in kompaktes AVIF-Rasterformat umwandeln. Kostenloses Browser-Tool - ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
       "featureList": ["Konvertierung zu AVIF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
       "alternateName": ["SVG in AVIF umwandeln", "SVG zu AVIF konvertieren", "Kostenloser SVG-zu-AVIF-Konverter"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Qualität einstellen",
-          "text": "Passen Sie den AVIF-Qualitätsregler an — niedrigere Werte ergeben kleinere Dateien."
+          "text": "Passen Sie den AVIF-Qualitätsregler an - niedrigere Werte ergeben kleinere Dateien."
         },
         {
           "position": 3,
           "name": "Konvertieren",
-          "text": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+          "text": "Klicken Sie auf Konvertieren - Dateien werden lokal im Browser verarbeitet."
         },
         {
           "position": 4,
           "name": "Herunterladen",
-          "text": "Laden Sie die AVIF-Dateien herunter — einzeln oder alle auf einmal."
+          "text": "Laden Sie die AVIF-Dateien herunter - einzeln oder alle auf einmal."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Qualitatseinstellungen — was bei Konvertierung von SVG nach AVIF wahlen?",
-      "html": "<p class=\"text-mid\">Der Qualitatsregler ermoglicht Werte von 60% bis 95%. Hohere Werte bedeuten bessere Bildqualitat, aber grossere Dateien.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (Standard) — guter Kompromiss fur Firmenwebsites, Blogs, Artikel.</strong></li><li><strong>85–90% — fur Produktfotos, Portfolios und Galerien.</strong></li><li><strong>60–70% — wenn Dateigrosse-Minimierung Prioritat hat.</strong></li></ul><p class=\"text-mid mt-3\">Bei 80% ist der Unterschied zwischen Original SVG und AVIF kaum erkennbar.</p>"
+      "title": "Qualitatseinstellungen - was bei Konvertierung von SVG nach AVIF wahlen?",
+      "html": "<p class=\"text-mid\">Der Qualitatsregler ermoglicht Werte von 60% bis 95%. Hohere Werte bedeuten bessere Bildqualitat, aber grossere Dateien.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (Standard) - guter Kompromiss fur Firmenwebsites, Blogs, Artikel.</strong></li><li><strong>85–90% - fur Produktfotos, Portfolios und Galerien.</strong></li><li><strong>60–70% - wenn Dateigrosse-Minimierung Prioritat hat.</strong></li></ul><p class=\"text-mid mt-3\">Bei 80% ist der Unterschied zwischen Original SVG und AVIF kaum erkennbar.</p>"
     },
     {
       "type": "gap",
@@ -262,7 +262,7 @@
     {
       "type": "sectionInfo",
       "title": "Wie viel sparen Sie bei Konvertierung von SVG zu AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+      "html": "<p class=\"text-mid mb-4\">Einsparungen hängen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsächliche Einsparungen variieren je nach Bildinhalt und Qualität.</p>"
     },
     {
       "type": "gap",
@@ -279,24 +279,24 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipps fur Konvertierung von SVG zu AVIF",
-      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "title": "Tipps für Konvertierung von SVG zu AVIF",
+      "description": "Tipps, um häufige Probleme zu vermeiden:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Sehr grosse Dateien",
-          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+          "title": "Sehr große Dateien",
+          "description": "Bilder über 4000×4000 Pixel können langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Bereits komprimierte Dateien",
-          "description": "Stark komprimierte SVG-Dateien bringen bei Konvertierung zu AVIF moglicherweise wenig Einsparung."
+          "description": "Stark komprimierte SVG-Dateien bringen bei Konvertierung zu AVIF möglicherweise wenig Einsparung."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparenz",
-          "description": "AVIF unterstutzt Alphakanal. Transparente Bereiche der SVG-Datei werden beibehalten."
+          "description": "AVIF unterstützt Alphakanal. Transparente Bereiche der SVG-Datei werden beibehalten."
         },
         {
           "icon": "RiStackLine",
@@ -340,11 +340,11 @@
         },
         {
           "question": "Ist Konvertierung von SVG zu AVIF sicher?",
-          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+          "answer": "Ja. Alles geschieht lokal in Ihrem Browser. Dateien verlassen nie Ihr Gerät."
         },
         {
-          "question": "Wird AVIF von allen Browsern unterstutzt?",
-          "answer": "AVIF wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
+          "question": "Wird AVIF von allen Browsern unterstützt?",
+          "answer": "AVIF wird von Chrome, Firefox, Safari, Edge und Opera unterstützt."
         }
       ]
     },

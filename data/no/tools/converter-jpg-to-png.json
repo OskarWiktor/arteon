@@ -3,13 +3,13 @@
   "locale": "no",
   "metadata": {
     "title": "JPG til PNG-konverterer – JPG PNG",
-    "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
+    "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren. Gratis nettleserverktøy - uten registrering, uten filbegrensning, full personvern.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/jpg-til-png-konverterer"
   },
   "hero": {
     "title": "JPG til PNG-konverterer",
-    "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
+    "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren. Gratis nettleserverktøy - uten registrering, uten filbegrensning, full personvern.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konverter JPG til PNG", "JPG til PNG konvertering", "Gratis JPG til PNG konverterer"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren. Gratis nettleserverktøy — uten registrering, uten filbegrensning, full personvern.",
+      "description": "Konverter JPG-bilder til tapsfritt PNG. Lokal konvertering i nettleseren. Gratis nettleserverktøy - uten registrering, uten filbegrensning, full personvern.",
       "featureList": ["JPG til PNG-konvertering", "Tapsfri PNG-utdata", "Batchkonvertering", "Lokal nettleserbehandling", "Ingen filopplasting kreves"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Konverter til PNG",
-          "text": "Klikk på konverter. PNG er tapsfritt — ingen kvalitetsinnstilling nødvendig."
+          "text": "Klikk på konverter. PNG er tapsfritt - ingen kvalitetsinnstilling nødvendig."
         },
         {
           "name": "Last ned PNG-filer",
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan bildekonvertering pavirker hastighet og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ytelsesindikatorer. LCP maler tiden til det storste synlige elementet vises.</p><p class=\"text-mid mb-4\">Konvertering av JPG til PNG reduserer filstorrelse, forkorter nedlasting og forbedrer LCP. Mindre filer = raskere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> akselererer rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identifiserer filer som bor optimaliseres.</p>"
+      "title": "Hvordan bildekonvertering påvirker hastighet og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ytelsesindikatorer. LCP måler tiden til det største synlige elementet vises.</p><p class=\"text-mid mb-4\">Konvertering av JPG til PNG reduserer filstørrelse, forkorter nedlasting og forbedrer LCP. Mindre filer = raskere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> akselererer rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identifiserer filer som bør optimaliseres.</p>"
     },
     {
       "type": "gap",
@@ -254,13 +254,13 @@
     {
       "type": "sectionSteps",
       "title": "Tips for konvertering JPG til PNG",
-      "description": "Tips for a unnga vanlige problemer:",
+      "description": "Tips for å unngå vanlige problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Veldig store filer",
-          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+          "description": "Bilder over 4000×4000 px kan være tregere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
@@ -270,7 +270,7 @@
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "PNG stotter alfakanal. Transparente omrader i JPG bevares."
+          "description": "PNG støtter alfakanal. Transparente områder i JPG bevares."
         },
         {
           "icon": "RiStackLine",
@@ -338,7 +338,7 @@
     {
       "type": "contactForm",
       "title": "Hjelp oss å forbedre verktøyene våre",
-      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding - vi svarer innen 24 timer.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "JPG til PNG-konverterer – Arteon",
       "defaultSubject": "Feedback: JPG til PNG-konverterer"

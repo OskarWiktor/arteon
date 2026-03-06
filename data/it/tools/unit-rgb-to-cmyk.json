@@ -1,0 +1,273 @@
+{
+  "toolKey": "rgbToCmyk",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore RGB in CMYK – colori",
+    "description": "Converti valori colore RGB in CMYK. Per preparare grafiche web per la stampa.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-rgb-in-cmyk"
+  },
+  "hero": {
+    "title": "Convertire RGB in CMYK",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-rgb-in-cmyk",
+      "label": "RGB in CMYK"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore RGB in CMYK – colori",
+      "alternateName": ["Convertire RGB in CMYK"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti valori colore RGB in CMYK. Per preparare grafiche web per la stampa.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire RGB in CMYK?",
+      "html": "<p class=\"text-mid mb-4\">RGB (Rosso, Verde, Blu) è il modello additivo per schermi. CMYK (Ciano, Magenta, Giallo, Nero) è il modello sottrattivo per la stampa. I colori appaiono diversi in ciascun modello.</p><p class=\"text-mid mb-4\">La conversione è importante per preparare design digitali per la stampa. Il gamut CMYK è più piccolo di RGB.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore RGB in CMYK – colori – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato appare istantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Copia il risultato o inverti la direzione di conversione.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Preparazione stampa",
+          "description": "Converti colori schermo in CMYK prima di inviare allo stampatore."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Brand guide",
+          "description": "Specifica colori del brand in RGB (schermo) e CMYK (stampa)."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Packaging",
+          "description": "I packaging prodotto usano stampa CMYK."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografia",
+          "description": "Comprendi come le foto digitali appariranno in stampa CMYK."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Converti in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Tabella con valori comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">Normalizza RGB a 0–1. K = 1 − max(R’, G’, B’). C, M, Y calcolati da K.</p><p class=\"text-mid\">Per lavoro critico di colore, usa sempre profili ICC e prove di stampa.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">Normalizza RGB a 0–1. K = 1 − max(R’, G’, B’). C, M, Y calcolati da K.</p><p class=\"text-mid\">Per lavoro critico di colore, usa sempre profili ICC e prove di stampa.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs CMYK – confronto",
+      "featureLabel": "Caratteristica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "CMYK",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Modello",
+          "values": {
+            "unit1": "Additivo (luce)",
+            "unit2": "Sottrattivo (inchiostro)"
+          }
+        },
+        {
+          "name": "Usato per",
+          "values": {
+            "unit1": "Schermi, web",
+            "unit2": "Stampa, packaging"
+          }
+        },
+        {
+          "name": "Gamut",
+          "values": {
+            "unit1": "Più grande",
+            "unit2": "Più piccolo"
+          }
+        },
+        {
+          "name": "Nero",
+          "values": {
+            "unit1": "R=0, G=0, B=0",
+            "unit2": "K=100%"
+          }
+        },
+        {
+          "name": "Bianco",
+          "values": {
+            "unit1": "R=255, G=255, B=255",
+            "unit2": "Nessun inchiostro (carta)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Perché le stampe CMYK sono diverse dallo schermo?",
+          "answer": "Gli schermi emettono luce (RGB), le stampanti usano inchiostro (CMYK). Il gamut CMYK è più piccolo."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "RGB na CMYK – Arteon",
+      "defaultSubject": "Feedback: rgb-to-cmyk"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

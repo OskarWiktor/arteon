@@ -2,14 +2,14 @@
   "toolKey": "webpToGif",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník WebP na GIF — WebP GIF",
-    "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
+    "title": "Převodník WebP na GIF - WebP GIF",
+    "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-webp-na-gif"
   },
   "hero": {
     "title": "Převodník WebP na GIF",
-    "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
+    "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník WebP na GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
+      "description": "Převeďte obrázky WebP na format GIF pro maximalni kompatibilitu. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
       "featureList": ["Konverze do GIF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést WEBP na GIF", "Konverze WEBP do GIF", "Převodník WEBP na GIF zdarma"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Nastavte kvalitu",
-          "text": "Upravte posuvník kvality GIF — nižší hodnoty vytvářejí menší soubory."
+          "text": "Upravte posuvník kvality GIF - nižší hodnoty vytvářejí menší soubory."
         },
         {
           "position": 3,
           "name": "Konvertujte",
-          "text": "Klikněte na Konvertovat — soubory se zpracují lokálně v prohlížeči."
+          "text": "Klikněte na Konvertovat - soubory se zpracují lokálně v prohlížeči."
         },
         {
           "position": 4,
           "name": "Stahnete",
-          "text": "Stáhněte hotové soubory GIF — jednotlivě nebo všechny naraz."
+          "text": "Stáhněte hotové soubory GIF - jednotlivě nebo všechny naraz."
         }
       ]
     }
@@ -299,6 +299,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting WebP images to GIF reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",

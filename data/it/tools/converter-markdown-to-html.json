@@ -2,7 +2,7 @@
   "toolKey": "markdownToHtml",
   "locale": "it",
   "metadata": {
-    "title": "Convertitore Markdown in HTML — Markdown HTML",
+    "title": "Convertitore Markdown in HTML - Markdown HTML",
     "description": "Converti Markdown in formato HTML. Analisi e formattazione automatiche. Gratuito.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-markdown-in-html"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire Markdown in HTML?",
-      "html": "<p class=\"text-mid mb-4\">MARKDOWN e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in HTML puo offrire vantaggi significativi — file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file MARKDOWN nel formato HTML direttamente nel browser. Nessun file viene inviato a server — l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">MARKDOWN e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in HTML puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file MARKDOWN nel formato HTML direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Quanto risparmiare convertendo MARKDOWN in HTML?",
-      "html": "<p class=\"text-mid mb-4\">Il risparmio dipende dal tipo di file e dalla compressione originale:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto fotocamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Immagine prodotto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Il risparmio reale varia in base a contenuto e impostazioni.</p>"
+      "title": "Come funziona la conversione da Markdown a HTML?",
+      "html": "<p class=\"text-mid mb-4\">Markdown è un linguaggio di markup leggero che usa simboli semplici per la formattazione: # per i titoli, ** per il grassetto, * per il corsivo, - per le liste e [Testo](URL) per i link. Il convertitore analizza queste convenzioni Markdown e produce i tag HTML corrispondenti.</p><p class=\"text-mid mb-4\">Ad esempio, # Titolo diventa &lt;h1&gt;Titolo&lt;/h1&gt;, **grassetto** diventa &lt;strong&gt;grassetto&lt;/strong&gt; e le liste puntate diventano strutture &lt;ul&gt;&lt;li&gt;. Il convertitore supporta la specifica completa CommonMark inclusi blocchi di codice, citazioni, tabelle e HTML inline.</p><p class=\"text-mid\">La conversione da Markdown a HTML è essenziale per pubblicare articoli di blog, documentazione e file README. La conversione avviene interamente nel tuo browser.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Consigli per convertire MARKDOWN in HTML",
-      "description": "Consigli per evitare problemi comuni:",
+      "title": "Consigli per la conversione da Markdown a HTML",
+      "description": "Alcuni consigli per evitare problemi comuni:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "File molto grandi",
-          "description": "Immagini sopra 4000×4000 px possono essere piu lente. Dividi in lotti da 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Struttura dei titoli",
+          "description": "Usa # a ###### per i titoli (h1–h6). Una gerarchia corretta dei titoli migliora l'accessibilità e il SEO della pagina HTML risultante."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "File gia compressi",
-          "description": "Se il MARKDOWN era gia compresso, la conversione in HTML potrebbe risparmiare poco."
+          "title": "Blocchi di codice",
+          "description": "I blocchi di codice delimitati (```) vengono convertiti in elementi &lt;pre&gt;&lt;code&gt;. Puoi specificare un linguaggio dopo i backtick per la colorazione sintattica."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Trasparenza",
-          "description": "HTML non supporta trasparenza. Le aree trasparenti diventano bianche. Considera PNG o WebP."
+          "icon": "RiCodeLine",
+          "title": "HTML inline",
+          "description": "Markdown consente HTML inline. Tutti i tag HTML nel tuo Markdown vengono passati direttamente nell'output, permettendoti di mescolare liberamente Markdown e HTML."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Conserva originali",
-          "description": "La conversione con perdita e irreversibile. Conserva copie dei file MARKDOWN."
+          "icon": "RiFileTextLine",
+          "title": "Tabelle",
+          "description": "Le tabelle separate da pipe (| Col1 | Col2 |) vengono convertite in elementi HTML &lt;table&gt; corretti con &lt;thead&gt; e &lt;tbody&gt;."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What Markdown syntax is supported?",
+      "html": "<p class=\"text-mid mb-4\">The converter supports standard Markdown (CommonMark) syntax including:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – # through ###### (h1–h6)</li><li><strong>Text formatting</strong> – **bold**, *italic*, ~~strikethrough~~, `inline code`</li><li><strong>Links and images</strong> – [text](url) and ![alt](src)</li><li><strong>Lists</strong> – unordered (-, *, +) and ordered (1., 2., 3.)</li><li><strong>Code blocks</strong> – fenced (```) and indented (4 spaces)</li><li><strong>Blockquotes</strong> – > prefix</li><li><strong>Tables</strong> – pipe-separated with header row</li><li><strong>Horizontal rules</strong> – ---, ***, ___</li></ul><p class=\"text-mid mt-3\">Output is clean, semantic HTML without unnecessary wrapper divs. Ready to paste into any CMS, email template, or web page.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
         },
         {
-          "question": "E sicuro convertire MARKDOWN in HTML?",
-          "answer": "Si. Tutto avviene localmente nel browser via Canvas API. Niente viene inviato a server."
+          "question": "È sicura la conversione da Markdown a HTML?",
+          "answer": "Sì. Tutta la conversione avviene localmente nel tuo browser. Nessun dato viene inviato a un server."
         },
         {
-          "question": "Posso convertire piu file MARKDOWN?",
-          "answer": "Si. Conversione batch senza limiti. Trascina i file nel convertitore."
+          "question": "Quale sintassi Markdown è supportata?",
+          "answer": "Il convertitore supporta la specifica completa CommonMark: titoli, grassetto, corsivo, link, immagini, liste, blocchi di codice, citazioni, tabelle e linee orizzontali. Sono supportate anche le estensioni GitHub Flavored Markdown come liste di attività e testo barrato."
         },
         {
-          "question": "HTML e supportato da tutti i browser?",
-          "answer": "HTML e supportato da Chrome, Firefox, Safari, Edge e Opera."
+          "question": "Posso usare l'output HTML sul mio sito web?",
+          "answer": "Sì. L'output è HTML pulito e semantico che puoi inserire direttamente in qualsiasi sito web, CMS, template email o applicazione web. Puoi stilizzarlo con il tuo CSS."
         }
       ]
     },

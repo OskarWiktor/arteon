@@ -1,0 +1,273 @@
+{
+  "toolKey": "litersToGallons",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de litros para galões",
+    "description": "Converta litros para galões US e vice-versa. Para consumo de combustível e cozinha.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-litros-para-galoes"
+  },
+  "hero": {
+    "title": "Converter litros para galões",
+    "description": "Este conversor converte instantaneamente. Introduza um valor e o resultado aparece imediatamente.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-litros-para-galoes",
+      "label": "L para gal"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de litros para galões",
+      "alternateName": ["Converter litros para galões"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converta litros para galões US e vice-versa. Para consumo de combustível e cozinha.",
+      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+    },
+    "howTo": {
+      "name": "Como usar o conversor",
+      "description": "Guia rápido para usar o conversor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduzir valor",
+          "text": "Escreva um número no campo de entrada à esquerda."
+        },
+        {
+          "name": "Ler o resultado",
+          "text": "O resultado da conversão aparece instantaneamente no campo ao lado."
+        },
+        {
+          "name": "Copiar ou inverter",
+          "text": "Clique em Copiar resultado ou em Inverter para converter na direção oposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa converter litros em galões?",
+      "html": "<p class=\"text-mid mb-4\">O litro (L) é a unidade padrão de volume no sistema métrico. O galão americano = 3,78541 litros. O galão imperial (UK) = 4,54609 litros.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Conversor de litros para galões – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o conversor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Insira um valor",
+          "description": "Digite um número no campo de entrada. Pode usar ponto ou vírgula como separador decimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leia o resultado",
+          "description": "O resultado da conversão aparece instantaneamente no campo adjacente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copie ou inverta",
+          "description": "Clique em Copiar resultado ou use o botão Inverter para converter na direção oposta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando este conversor é útil?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGasStationLine",
+          "title": "Combustível",
+          "description": "Os postos nos EUA vendem em galões. 40 L = 10,6 gal."
+        },
+        {
+          "icon": "RiCarLine",
+          "title": "Culinária",
+          "description": "Receitas dos EUA usam galões, quartos e xícaras. 1 galão = 3,785 L."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Aquários",
+          "description": "Aquários dos EUA em galões: 10 gal = 37,9 L, 55 gal = 208,2 L."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Piscina e jardim",
+          "description": "Produtos químicos e irrigação podem usar galões."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que diferencia este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os cálculos são executados localmente no seu navegador. Nenhum dado é enviado."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados em tempo real",
+          "description": "O resultado atualiza instantaneamente enquanto digita."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversão bidirecional",
+          "description": "O botão Inverter permite converter em ambas as direções com um clique."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela de referência",
+          "description": "Uma tabela com valores de conversão comuns e descrições contextuais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">1 galão US = 3,785411784 litros (exato). 1 galão UK = 4,54609 litros.</p><p class=\"text-mid\">Estimativa rápida: divida os litros por 4.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">1 galão US = 3,785411784 litros (exato). 1 galão UK = 4,54609 litros.</p><p class=\"text-mid\">Estimativa rápida: divida os litros por 4.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Litro vs Galão US – comparação",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Litro (L)"
+        },
+        {
+          "id": "unit2",
+          "name": "Galão US (gal)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistema",
+          "values": {
+            "unit1": "Métrico (SI)",
+            "unit2": "US Customary"
+          }
+        },
+        {
+          "name": "Valor base",
+          "values": {
+            "unit1": "1.000 mL",
+            "unit2": "3.785,41 mL"
+          }
+        },
+        {
+          "name": "Combustível",
+          "values": {
+            "unit1": "L/100km (Europa)",
+            "unit2": "MPG (EUA)"
+          }
+        },
+        {
+          "name": "Culinária",
+          "values": {
+            "unit1": "mL/L (internacional)",
+            "unit2": "Xícaras/gal (EUA)"
+          }
+        },
+        {
+          "name": "Galão UK",
+          "values": {
+            "unit1": "4,546 L",
+            "unit2": "1,201 gal US"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quantos litros é 1 galão US?",
+          "answer": "1 galão US = 3,78541 litros."
+        },
+        {
+          "question": "Os cálculos são feitos localmente?",
+          "answer": "Sim. Todos os cálculos são executados no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "l na galony – Arteon",
+      "defaultSubject": "Feedback: liters-to-gallons"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "toolKey": "mbpsToMBs",
+  "locale": "ro",
+  "metadata": {
+    "title": "Mbps în MB/s – convertor",
+    "description": "Convertiți Mbps în MB/s și invers.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-mbps-in-mbs"
+  },
+  "hero": {
+    "title": "Mbps în MB/s",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-mbps-in-mbs",
+      "label": "Mbps în MB/s"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Mbps în MB/s – convertor",
+      "alternateName": ["Mbps în MB/s"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți Mbps în MB/s și invers.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: Mbps în MB/s?",
+      "html": "<p class=\"text-mid mb-4\">Internet speeds are advertised in megabits per second (Mbps), but file sizes and download speeds are typically shown in megabytes per second (MB/s). 1 byte = 8 bits, so 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">This means a \"100 Mbps\" connection downloads at a maximum of 12.5 MB/s. A \"1 Gbps\" connection = 125 MB/s.</p><p class=\"text-mid mb-4\">This conversion is essential for estimating download times, choosing an internet plan, and understanding the difference between advertised and actual speeds.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps în MB/s – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szacowanie pobierania",
+          "description": "100 Mbps = plik 1 GB w ok. 80 sekund."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Internet",
+          "description": "Porównaj oferty operatorów w realnych MB/s."
+        },
+        {
+          "icon": "RiVideoLine",
+          "title": "Streaming",
+          "description": "Netflix 4K wymaga 25 Mbps = 3,1 MB/s."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Hosting",
+          "description": "Transfer serwera: 1 TB/miesiąc = ile Mbps potrzebujesz?"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bits. Therefore: Mbps ÷ 8 = MB/s, and MB/s × 8 = Mbps.</p><p class=\"text-mid mb-4\">Example: 200 Mbps ÷ 8 = 25 MB/s. This is the theoretical maximum download speed.</p><p class=\"text-mid\">Actual speeds are typically 70–90% of the advertised maximum due to protocol overhead, network congestion, and other factors.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>50 Mbps = 6.25 MB/s. Good for streaming, browsing, video calls.</li><li>100 Mbps = 12.5 MB/s. Good for multiple devices, 4K streaming.</li><li>500 Mbps = 62.5 MB/s. Good for large downloads, gaming.</li><li>1 Gbps = 125 MB/s. 1 GB downloads in ~8 seconds.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mbps vs MB/s – comparație",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Megabit/s (Mbps)"
+        },
+        {
+          "id": "unit2",
+          "name": "Megabyte/s (MB/s)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Unit",
+          "values": {
+            "unit1": "Bits",
+            "unit2": "Bytes"
+          }
+        },
+        {
+          "name": "Ratio",
+          "values": {
+            "unit1": "8 Mbps",
+            "unit2": "= 1 MB/s"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "ISP speeds, bandwidth",
+            "unit2": "File downloads, transfers"
+          }
+        },
+        {
+          "name": "100 Mbps",
+          "values": {
+            "unit1": "100 Mbps",
+            "unit2": "12.5 MB/s"
+          }
+        },
+        {
+          "name": "1 Gbps",
+          "values": {
+            "unit1": "1,000 Mbps",
+            "unit2": "125 MB/s"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Câți MB/s sind 100 Mbps?",
+          "answer": "100 Mbps = 12,5 MB/s. Teilen Sie Mbps durch 8."
+        },
+        {
+          "question": "De ce ist mein Download langsamer als beworben?",
+          "answer": "ISPs werben in Mbps (Bits), Downloads zeigen MB/s (Bytes). 100 Mbps = max 12,5 MB/s. Tatsächliche Viteză ist typischerweise 70–90% davon."
+        },
+        {
+          "question": "Cât de lunge dauert 1 GB Download bei 100 Mbps?",
+          "answer": "1 GB = 1.000 MB. Bei 12,5 MB/s: ~80 Sekunden. In der Praxis ca. 90–100 Sekunden."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Da. Toate calculele se fac în browserul dvs."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps în MB/s – Arteon",
+      "defaultSubject": "Feedback: mbps-to-mbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

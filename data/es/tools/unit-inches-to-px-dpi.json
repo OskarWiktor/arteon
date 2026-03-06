@@ -1,0 +1,277 @@
+{
+  "toolKey": "inchesToPxDpi",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de pulgadas a píxeles (DPI)",
+    "description": "Convierte pulgadas a píxeles a cualquier resolución DPI. Para diseño de impresión.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-pulgadas-a-px"
+  },
+  "hero": {
+    "title": "Convertir pulgadas a píxeles",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-pulgadas-a-px",
+      "label": "in a px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de pulgadas a píxeles (DPI)",
+      "alternateName": ["Convertir pulgadas a píxeles"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte pulgadas a píxeles a cualquier resolución DPI. Para diseño de impresión.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir pulgadas a píxeles?",
+      "html": "<p class=\"text-mid mb-4\">Los formatos de papel de EE. UU. y las especificaciones de impresión usan pulgadas. Para datos de impresión digitales: Píxeles = pulgadas × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) a 300 DPI = 2.550 × 3.300 píxeles. Una foto de 4 × 6″ a 300 DPI = 1.200 × 1.800 píxeles.</p><p class=\"text-mid mb-4\">Este convertidor es importante para formatos de impresión de EE. UU., plantillas de documentos y cálculos de resolución de imagen.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de pulgadas a píxeles (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado aparece instantáneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Copia el resultado o invierte la dirección de conversión.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Impresiones fotográficas",
+          "description": "Estándar: 4×6″ = 1.200×1.800 px, 8×10″ = 2.400×3.000 px a 300 DPI."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Formatos de papel de EE. UU.",
+          "description": "Letter (8,5×11″) a 300 DPI = 2.550×3.300 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Banners y pósteres",
+          "description": "Póster 24×36″ a 150 DPI = 3.600×5.400 px."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Pantallas",
+          "description": "Densidad de píxeles: monitor 27″ 4K = 163 PPI. 24″ 1080p = 92 PPI."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza mientras escribes."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "Convierte en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Tabla con valores comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">La fórmula es simple: Píxeles = pulgadas × DPI.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 pulgada = 300 píxeles. A 72 DPI: 1 pulgada = 72 píxeles.</p><p class=\"text-mid\">Para encontrar el DPI necesario: DPI = Píxeles / pulgadas.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">La fórmula es simple: Píxeles = pulgadas × DPI.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 pulgada = 300 píxeles. A 72 DPI: 1 pulgada = 72 píxeles.</p><p class=\"text-mid\">Para encontrar el DPI necesario: DPI = Píxeles / pulgadas.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Formatos de impresión comunes a 300 DPI",
+      "featureLabel": "Formato",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Pulgadas"
+        },
+        {
+          "id": "unit2",
+          "name": "Píxeles (300 DPI)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Foto pasaporte",
+          "values": {
+            "unit1": "2,5 × 3,5″",
+            "unit2": "750 × 1.050"
+          }
+        },
+        {
+          "name": "Foto 4×6",
+          "values": {
+            "unit1": "4 × 6″",
+            "unit2": "1.200 × 1.800"
+          }
+        },
+        {
+          "name": "Foto 8×10",
+          "values": {
+            "unit1": "8 × 10″",
+            "unit2": "2.400 × 3.000"
+          }
+        },
+        {
+          "name": "US Letter",
+          "values": {
+            "unit1": "8,5 × 11″",
+            "unit2": "2.550 × 3.300"
+          }
+        },
+        {
+          "name": "Póster (24×36)",
+          "values": {
+            "unit1": "24 × 36″",
+            "unit2": "7.200 × 10.800"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos píxeles es 1 pulgada a 300 DPI?",
+          "answer": "1 pulgada a 300 DPI = 300 píxeles."
+        },
+        {
+          "question": "¿Qué DPI tiene mi pantalla?",
+          "answer": "Valores comunes: 96 PPI (Windows), 72 PPI (Mac), 110 PPI (24″ 1080p), 163 PPI (27″ 4K)."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "cale na px – Arteon",
+      "defaultSubject": "Feedback: inches-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

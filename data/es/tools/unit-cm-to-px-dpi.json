@@ -1,0 +1,281 @@
+{
+  "toolKey": "cmToPxDpi",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de cm a píxeles (DPI)",
+    "description": "Convierte centímetros a píxeles a cualquier resolución DPI. Para diseño de impresión y preparación de imágenes.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-cm-a-px"
+  },
+  "hero": {
+    "title": "Convertir cm a píxeles",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-cm-a-px",
+      "label": "cm a px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de cm a píxeles (DPI)",
+      "alternateName": ["Convertir cm a píxeles"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte centímetros a píxeles a cualquier resolución DPI. Para diseño de impresión y preparación de imágenes.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir cm a píxeles?",
+      "html": "<p class=\"text-mid mb-4\">En diseño de impresión las medidas se dan en centímetros, pero las imágenes digitales se miden en píxeles. La conversión depende de la resolución DPI: Píxeles = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Resolución estándar de impresión 300 DPI: 10 cm = 1.181 píxeles, ancho A4 (21 cm) = 2.480 píxeles. Web 72 DPI: 10 cm = 283 píxeles.</p><p class=\"text-mid mb-4\">Este convertidor es importante para preparación de impresión, plantillas de documentos y cálculo de resolución de imagen necesaria.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de cm a píxeles (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado aparece instantáneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Copia el resultado o invierte la dirección de conversión.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Diseño de impresión",
+          "description": "Prepara imágenes a 300 DPI. A4 a 300 DPI = 2.480 × 3.508 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Impresión gran formato",
+          "description": "Banners y pósteres usan 150 DPI. Banner de 100 cm a 150 DPI = 5.906 px de ancho."
+        },
+        {
+          "icon": "RiArtboardLine",
+          "title": "Gráficos web",
+          "description": "Resolución de pantalla 72–96 DPI. Calcula píxeles para elementos web."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Fotografía",
+          "description": "Calcula si la resolución de tu cámara es suficiente para un tamaño de impresión específico."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza mientras escribes."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "Convierte en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Tabla con valores comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: Píxeles = cm × DPI / 2,54. DPI = puntos por pulgada, 1 pulgada = 2,54 cm.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 cm = 118,11 píxeles. A 72 DPI: 1 cm = 28,35 píxeles.</p><p class=\"text-mid\">Mayor DPI = más píxeles por cm = impresión más nítida. 300 DPI es el estándar para impresión profesional.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: Píxeles = cm × DPI / 2,54. DPI = puntos por pulgada, 1 pulgada = 2,54 cm.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 cm = 118,11 píxeles. A 72 DPI: 1 cm = 28,35 píxeles.</p><p class=\"text-mid\">Mayor DPI = más píxeles por cm = impresión más nítida. 300 DPI es el estándar para impresión profesional.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Resoluciones DPI comparadas",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI (impresión)"
+        },
+        {
+          "id": "unit2",
+          "name": "72 DPI (pantalla)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "10 cm",
+          "values": {
+            "unit1": "1.181 px",
+            "unit2": "283 px"
+          }
+        },
+        {
+          "name": "A4 ancho (21 cm)",
+          "values": {
+            "unit1": "2.480 px",
+            "unit2": "595 px"
+          }
+        },
+        {
+          "name": "A4 alto (29,7 cm)",
+          "values": {
+            "unit1": "3.508 px",
+            "unit2": "842 px"
+          }
+        },
+        {
+          "name": "Aplicación",
+          "values": {
+            "unit1": "Impresión profesional",
+            "unit2": "Gráficos web"
+          }
+        },
+        {
+          "name": "Calidad",
+          "values": {
+            "unit1": "Nítida a cualquier tamaño",
+            "unit2": "Solo para pantalla"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos píxeles es 1 cm a 300 DPI?",
+          "answer": "1 cm a 300 DPI = 118,11 píxeles. Fórmula: cm × 300 / 2,54."
+        },
+        {
+          "question": "¿Qué DPI para impresión?",
+          "answer": "300 DPI para impresión profesional. 150 DPI para gran formato. 72 DPI solo para pantalla."
+        },
+        {
+          "question": "¿Qué resolución tiene A4 a 300 DPI?",
+          "answer": "A4 (21 × 29,7 cm) a 300 DPI = 2.480 × 3.508 píxeles."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "cm na px – Arteon",
+      "defaultSubject": "Feedback: cm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

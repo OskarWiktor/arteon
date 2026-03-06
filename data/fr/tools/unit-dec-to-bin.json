@@ -1,0 +1,277 @@
+{
+  "toolKey": "decToBin",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur décimal en binaire",
+    "description": "Convertissez les nombres décimaux en binaire. Utile pour la programmation et l'informatique.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-decimal-en-binaire"
+  },
+  "hero": {
+    "title": "Convertir décimal en binaire",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-decimal-en-binaire",
+      "label": "déc en bin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur décimal en binaire",
+      "alternateName": ["Convertir décimal en binaire"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez les nombres décimaux en binaire. Utile pour la programmation et l'informatique.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir du décimal en binaire ?",
+      "html": "<p class=\"text-mid mb-4\">Le binaire (base 2) est le système numérique fondamental des ordinateurs. Chaque donnée est stockée comme une séquence de 0 et de 1.</p><p class=\"text-mid mb-4\">Chaque chiffre binaire (bit) représente une puissance de 2. Exemple : décimal 42 = binaire 101010 (32+8+2).</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur décimal en binaire – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat apparaît instantanément.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Copiez le résultat ou inversez la direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Programmation",
+          "description": "Comprenez les opérations bit à bit, les flags de bits et l’arithmétique binaire."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Réseaux",
+          "description": "Adresses IP et masques de sous-réseau en binaire. 255.255.255.0 = 11111111.11111111.11111111.00000000."
+        },
+        {
+          "icon": "RiShieldKeyholeLine",
+          "title": "Permissions",
+          "description": "Permissions fichiers Unix : chmod 755 = rwxr-xr-x = 111101101."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Informatique",
+          "description": "Comprenez comment les ordinateurs stockent les nombres."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Convertissez dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Tableau avec valeurs courantes et descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Divisez répétitivement par 2 et notez les restes. Lisez de bas en haut. Exemple : 42 : 42÷2=21 R0, 21÷2=10 R1, 10÷2=5 R0, 5÷2=2 R1, 2÷2=1 R0, 1÷2=0 R1 → 101010.</p><p class=\"text-mid\">8 bits = 1 octet = valeurs 0–255.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Divisez répétitivement par 2 et notez les restes. Lisez de bas en haut. Exemple : 42 : 42÷2=21 R0, 21÷2=10 R1, 10÷2=5 R0, 5÷2=2 R1, 2÷2=1 R0, 1÷2=0 R1 → 101010.</p><p class=\"text-mid\">8 bits = 1 octet = valeurs 0–255.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Décimal vs Binaire",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Décimal (base 10)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binaire (base 2)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Chiffres",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–1"
+          }
+        },
+        {
+          "name": "Utilisé par",
+          "values": {
+            "unit1": "Humains",
+            "unit2": "Ordinateurs"
+          }
+        },
+        {
+          "name": "Exemple : 42",
+          "values": {
+            "unit1": "42",
+            "unit2": "101010"
+          }
+        },
+        {
+          "name": "Exemple : 255",
+          "values": {
+            "unit1": "255",
+            "unit2": "11111111"
+          }
+        },
+        {
+          "name": "Lisibilité",
+          "values": {
+            "unit1": "Facile",
+            "unit2": "Long mais natif pour les ordinateurs"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Que vaut 10 en binaire ?",
+          "answer": "Décimal 10 = binaire 1010 (8+2)."
+        },
+        {
+          "question": "Que vaut 255 en binaire ?",
+          "answer": "255 = 11111111 (huit uns). Maximum d’un octet."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "dziesiętny na binarny – Arteon",
+      "defaultSubject": "Feedback : dec-to-bin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

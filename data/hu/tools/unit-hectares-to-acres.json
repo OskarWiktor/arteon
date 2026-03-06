@@ -1,0 +1,277 @@
+{
+  "toolKey": "hectaresToAcres",
+  "locale": "hu",
+  "metadata": {
+    "title": "Ha acre-ra – átváltó",
+    "description": "Hektár átváltása acre-ra és fordítva.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/hu/eszkozok/hektar-acre-atvalto"
+  },
+  "hero": {
+    "title": "Ha acre-ra",
+    "description": "Ez az átváltó azonnal átszámol. Adjon meg egy értéket és az eredmény azonnal megjelenik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/hektar-acre-atvalto",
+      "label": "ha acre-ra"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ha acre-ra – átváltó",
+      "alternateName": ["Ha acre-ra"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Hektár átváltása acre-ra és fordítva.",
+      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+    },
+    "howTo": {
+      "name": "Hogyan használja az átváltót",
+      "description": "Gyors útmutató az átváltó használatához.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Érték megadása",
+          "text": "Írjon be egy számot a bal oldali beviteli mezőbe."
+        },
+        {
+          "name": " Eredmény leolvasása",
+          "text": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben."
+        },
+        {
+          "name": "Másolás vagy megfordítás",
+          "text": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikor kell használni: Ha acre-ra?",
+      "html": "<p class=\"text-mid mb-4\">Hektar (ha) ist eine metrische Flächeneinheit gleich 10.000 m² (100 m × 100 m). Acre ist eine imperiale Einheit gleich 4.046,86 m². Die átváltás: 1 Hektar = 2,47105 Acres.</p><p class=\"text-mid mb-4\">Diese átváltás ist wichtig für internationale Immobilien, Landwirtschaft, Forstwirtschaft und Landmanagement.</p><p class=\"text-mid mb-4\">Größenreferenz: Ein Fußballfeld ist ca. 0,7 ha (1,7 Acres).</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik — semmilyen adat nem kerül szerverre.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Ha acre-ra – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az átváltót?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Érték megadása",
+          "description": "Írjon be egy számot a beviteli mezőbe. Használhat pontot vagy vesszőt tizedesjegyként.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Eredmény leolvasása",
+          "description": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben – kattintás nélkül.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Másolás vagy megfordítás",
+          "description": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor hasznos ez az átváltó?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPlantLine",
+          "title": "Mezőgazdaság",
+          "description": "Porównaj powierzchnię gruntów rolnych w hektarach i akrach."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Nieruchomości",
+          "description": "Amerykańskie ogłoszenia o działkach podają powierzchnię w akrach."
+        },
+        {
+          "icon": "RiTreeLine",
+          "title": "Leśnictwo",
+          "description": "Powierzchnie lasów w dokumentach międzynarodowych podaje się w obu jednostkach."
+        },
+        {
+          "icon": "RiMapLine",
+          "title": "Kartografia",
+          "description": "Mapy i dane geodezyjne z różnych krajów używają różnych jednostek powierzchni."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt az átváltót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "Minden számítás helyben, a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Azonnali eredmények",
+          "description": "Az eredmény azonnal frissül gépelés közben – nem kell semmilyen gombra kattintani."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kétirányú átváltás",
+          "description": "A Megfordítás gomb segítségével egy kattintással válthat irányt."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencia táblázat",
+          "description": "Kész táblázat gyakran átváltott értékekkel és kontextuális leírásokkal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az átváltás?",
+      "html": "<p class=\"text-mid mb-4\">1 Hektar = 10.000 m². 1 Acre = 4.046,8564224 m². Daher: 1 ha = 2,47105 Acres.</p><p class=\"text-mid mb-4\">Um Hektar in Acres umzurechnen, szorozza meg 2,47105.</p><p class=\"text-mid\">Schnelle Schätzung: 1 Hektar ≈ 2,5 Acres.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gyakorlati tippek",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Soccer field: approximately 0.7 ha = 1.7 acres.</li><li>Average US farm: 180 ha = 445 acres.</li><li>1 km² = 100 ha = 247 acres.</li><li>Central Park (NYC): 341 ha = 843 acres.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Hectare (ha) vs Acre (ac) – összehasonlítás",
+      "featureLabel": "Tulajdonság",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Hectare (ha)"
+        },
+        {
+          "id": "unit2",
+          "name": "Acre (ac)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Rendszer",
+          "values": {
+            "unit1": "Metric",
+            "unit2": "Angolszász"
+          }
+        },
+        {
+          "name": "Area",
+          "values": {
+            "unit1": "10,000 m²",
+            "unit2": "4,046.86 m²"
+          }
+        },
+        {
+          "name": "Dimensions",
+          "values": {
+            "unit1": "100 m × 100 m",
+            "unit2": "~63.6 m × 63.6 m"
+          }
+        },
+        {
+          "name": "Real estate",
+          "values": {
+            "unit1": "International",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Farming",
+          "values": {
+            "unit1": "International",
+            "unit2": "USA/UK"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hány Acres ist 1 Hektar?",
+          "answer": "1 Hektar = 2,47105 Acres. Etwa 2,5 Acres."
+        },
+        {
+          "question": "Mekkora ist 1 Hektar?",
+          "answer": "1 Hektar = 10.000 m² = ein Quadrat von 100 m Seitenlänge. Etwa 1,4 Fußballfelder."
+        },
+        {
+          "question": "Helyben történnek a számítások?",
+          "answer": "Igen. Minden számítás a böngészőjében történik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "ha acre-ra – Arteon",
+      "defaultSubject": "Visszajelzés: hectares-to-acres"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "További ingyenes eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

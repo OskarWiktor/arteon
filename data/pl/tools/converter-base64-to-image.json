@@ -2,8 +2,8 @@
   "toolKey": "base64ToImage",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter Base64 na obraz — odkoduj i pobierz plik",
-    "description": "Odkoduj ciąg Base64 na obraz z podglądem i pobieraniem. Obsługa JPG, PNG, WebP, SVG, GIF. Bez rejestracji — konwersja lokalna.",
+    "title": "Konwerter Base64 na obraz - odkoduj i pobierz plik",
+    "description": "Odkoduj ciąg Base64 na obraz z podglądem i pobieraniem. Obsługa JPG, PNG, WebP, SVG, GIF. Bez rejestracji - konwersja lokalna.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-base64-na-obraz"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter Base64 na obraz — darmowy, bez rejestracji",
+      "name": "Konwerter Base64 na obraz - darmowy, bez rejestracji",
       "alternateName": ["Dekodowanie Base64 na obraz", "Base64 to image decoder", "Data URI na obraz"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter Base64 na obraz online. Odkoduj ciąg Base64 na obraz z podglądem w przeglądarce — dane nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter Base64 na obraz online. Odkoduj ciąg Base64 na obraz z podglądem w przeglądarce - dane nie są wysyłane na serwer.",
       "featureList": ["Dekodowanie Base64 na obraz", "Podgląd obrazu w przeglądarce", "Pobieranie jako plik graficzny", "Przetwarzanie lokalne w przeglądarce"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto dekodować Base64 na obraz?",
-      "html": "<p class=\"text-mid mb-4\">Base64 to sposób zapisu danych binarnych jako tekstu. Obrazy zakodowane w Base64 można spotkać w kodzie źródłowym stron, szablonach e-mail, odpowiedziach API i plikach konfiguracyjnych. Czasem trzeba zobaczyć, jak wygląda zakodowany obraz, lub pobrać go jako normalny plik.</p><p class=\"text-mid mb-4\">Dekodowanie Base64 przydaje się przy debugowaniu kodu, analizie szablonów e-mail, pracy z API zwracającym obrazy jako Base64 lub odzyskiwaniu obrazów z plików JSON/XML.</p><p class=\"text-mid\">Nasz konwerter automatycznie rozpoznaje typ MIME z prefiksu data URI i wyświetla podgląd obrazu w przeglądarce.</p>",
+      "html": "<p class=\"text-mid mb-4\">Base64 to sposób zapisu danych binarnych jako ciągu znaków tekstowych. Obrazy zakodowane w Base64 występują w wielu miejscach: właściwości <code>background-image</code> w CSS, atrybuty <code>src</code> tagów <code>&lt;img&gt;</code>, odpowiedzi API (np. OpenAI Vision, Google Cloud Vision), pliki JSON/XML, szablony e-mail i podpisy w Outlooku. Konwersja Base64 na obraz pozwala zobaczyć podgląd i pobrać plik.</p><p class=\"text-mid mb-4\">Dekodowanie Base64 jest niezbędne przy debugowaniu kodu frontendowego (sprawdzenie, co kryje się za długim ciągiem znaków), analizie szablonów e-mail (weryfikacja osądzonych obrazów), pracy z API zwracającym obrazy jako Base64 oraz odzyskiwaniu grafik z plików konfiguracyjnych i baz danych.</p><p class=\"text-mid mb-4\">Konwerter automatycznie rozpoznaje typ MIME z prefiksu data URI (np. <code>data:image/png;base64,</code>) i wyświetla podgląd obrazu. Obsługuje formaty JPG, PNG, WebP, GIF, SVG i BMP. Surowy ciąg Base64 bez prefiksu też jest obsługiwany — konwerter próbuje automatycznie wykryć format.</p><p class=\"text-mid\">Cała konwersja odbywa się lokalnie w przeglądarce — dane nie są wysyłane na serwer. Bez rejestracji, bez limitów, bez śledzenia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter Base64 na obraz – Arteon"
     },
@@ -99,23 +99,23 @@
       "items": [
         {
           "icon": "RiSearchLine",
-          "title": "Debugowanie kodu",
-          "description": "Sprawdź, jak wygląda obraz zakodowany w CSS, HTML lub odpowiedzi API."
+          "title": "Debugowanie CSS / HTML",
+          "description": "Znalazłeś długi ciąg Base64 w kodzie źródłowym i chcesz zobaczyć, co się za nim kryje? Wklej go do konwertera, aby wyświetlić podgląd obrazu i sprawdzić jego wymiary i format."
         },
         {
           "icon": "RiMailLine",
-          "title": "Analiza e-maili",
-          "description": "Szablony e-mail i podpisy Outlook zawierają obrazy Base64 — zobacz ich podgląd."
+          "title": "Analiza szablonów e-mail",
+          "description": "Szablony HTML e-mail i podpisy Outlook osadzają obrazy jako Base64. Dekodowanie pozwala zweryfikować treść osądzonych grafik i pobrać je jako osobne pliki."
         },
         {
           "icon": "RiDownloadLine",
-          "title": "Odzyskanie obrazu",
-          "description": "Wyciągnij obraz z kodu źródłowego strony, pliku JSON lub bazy danych."
+          "title": "Odzyskanie grafik z kodu",
+          "description": "Wyciągnij obraz z pliku JSON, XML, bazy danych lub kodu źródłowego strony. Konwerter zamieni ciąg Base64 w normalny plik obrazu, który można zapisać na dysku."
         },
         {
           "icon": "RiImageLine",
-          "title": "Podgląd API",
-          "description": "API zwróciło obraz jako Base64 — zobacz podgląd i pobierz jako plik."
+          "title": "Podgląd odpowiedzi API",
+          "description": "API takie jak OpenAI Vision, Google Cloud Vision i Tesseract OCR zwracają obrazy jako Base64. Konwerter wyświetli podgląd i pozwoli pobrać wynik jako plik."
         }
       ]
     },
@@ -165,8 +165,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ile mozna zaoszczedzic konwertujac BASE64 na IMAGE?",
-      "html": "<p class=\"text-mid mb-4\">Oszczednosci zaleza od rodzaju pliku zrodlowego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjecie z aparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczednosci moga sie roznic. Konwerter pokazuje dokladny rozmiar przed i po konwersji.</p>"
+      "title": "Jak działa dekodowanie Base64?",
+      "html": "<p class=\"text-mid mb-4\">Dekodowanie Base64 to proces odwrotny do kodowania — ciąg znaków ASCII jest zamieniany z powrotem na dane binarne obrazu. Każde 4 znaki Base64 są dekodowane na 3 bajty oryginalnych danych, co przywraca pełny plik graficzny.</p><p class=\"text-mid mb-4\">Jeśli ciąg Base64 zawiera prefiks data URI (np. <code>data:image/png;base64,...</code>), narzędzie automatycznie rozpoznaje format obrazu z informacji o typie MIME. Jeśli prefiks jest pominięty, dekoder analizuje nagłówek danych binarnych, aby ustalić format.</p><p class=\"text-mid\">Dekodowanie jest operacją bezstratną — wynikowy obraz jest identyczny z oryginałem, który został zakodowany. Cała operacja odbywa się w przeglądarce za pomocą natywnych API JavaScript.</p>"
     },
     {
       "type": "gap",
@@ -174,29 +174,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Na co zwrocic uwage przy konwersji BASE64 na IMAGE?",
-      "description": "Kilka wskazowek, ktore pomoga uniknac problemow:",
+      "title": "Na co zwrócić uwagę przy dekodowaniu Base64?",
+      "description": "Kilka wskazówek, które pomogą uniknąć problemów:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Bardzo duze pliki",
-          "description": "Konwersja obrazow powyzej 4000×4000 pikseli moze byc wolniejsza. Rozwaz dzielenie ich na partie po 10–20 sztuk."
+          "icon": "RiFileTextLine",
+          "title": "Poprawny ciąg Base64",
+          "description": "Upewnij się, że wklejany ciąg jest kompletny i nie został obcięty. Niepełny ciąg Base64 spowoduje błąd dekodowania lub uszkodzony obraz."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Juz skompresowane pliki",
-          "description": "Jesli oryginalny plik BASE64 byl juz mocno skompresowany, konwersja na IMAGE moze nie przyniesc duzych oszczednosci."
+          "icon": "RiImageLine",
+          "title": "Prefiks data URI",
+          "description": "Narzędzie przyjmuje zarówno pełny data URI (data:image/png;base64,...) jak i sam ciąg Base64. Z prefiksem format jest rozpoznawany automatycznie."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Przezroczystosc",
-          "description": "Format IMAGE nie obsluguje przezroczystosci. Przezroczyste obszary zostana zastapione bialym tlem. Rozwaz PNG lub WebP."
+          "icon": "RiDownloadLine",
+          "title": "Format pobierania",
+          "description": "Odkodowany obraz możesz pobrać w oryginalnym formacie (rozpoznanym z data URI) lub jako PNG, jeśli format nie został określony."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Zachowaj oryginaly",
-          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plikow BASE64 aby moc powtorzyc konwersje."
+          "icon": "RiAlertLine",
+          "title": "Długie ciągi tekstu",
+          "description": "Obrazy zakodowane w Base64 generują bardzo długie ciągi tekstu. Kopiowanie dużych ciągów (>1 MB) może chwilę potrwać — to normalne zachowanie przeglądarki."
         }
       ]
     },
@@ -226,16 +226,16 @@
           "answer": "Obrazy Base64 można znaleźć w kodzie źródłowym stron (inline CSS/HTML), szablonach e-mail, odpowiedziach API, podpisach Outlook, plikach JSON/XML i bazach danych."
         },
         {
-          "question": "Czy konwersja BASE64 na IMAGE jest bezpieczna?",
-          "answer": "Tak. Cala konwersja odbywa sie lokalnie w przegladarce za pomoca Canvas API. Pliki nie sa wysylane na zaden serwer. Po zamknieciu strony dane sa usuwane automatycznie."
+          "question": "Czy dekodowanie Base64 jest bezpieczne?",
+          "answer": "Tak. Dekodowanie odbywa się całkowicie lokalnie w przeglądarce. Ciąg Base64 nie jest wysyłany na żaden serwer. Po zamknięciu strony dane są automatycznie usuwane z pamięci."
         },
         {
-          "question": "Czy moge konwertowac wiele plikow BASE64 jednoczesnie?",
-          "answer": "Tak. Narzedzie obsluguje konwersje wielu plikow naraz bez limitu. Przeciagnij pliki na pole konwertera lub wybierz z dysku."
+          "question": "Czy dekodowanie jest bezstratne?",
+          "answer": "Tak. Dekodowanie Base64 jest operacją w pełni bezstratną — wynikowy obraz jest identyczny bajt po bajcie z oryginalnym plikiem, który został zakodowany."
         },
         {
-          "question": "Czy IMAGE jest obslugiwany przez wszystkie przegladarki?",
-          "answer": "Format IMAGE jest szeroko obslugiwany przez nowoczesne przegladarki: Chrome, Firefox, Safari, Edge i Opera."
+          "question": "Skąd wziąć ciąg Base64 do dekodowania?",
+          "answer": "Ciągi Base64 można znaleźć w kodzie źródłowym stron (inline CSS/HTML), odpowiedziach API, szablonach e-mail, podpisach Outlook, plikach JSON/XML i bazach danych. Szukaj ciągów zaczynających się od data:image/."
         }
       ]
     },

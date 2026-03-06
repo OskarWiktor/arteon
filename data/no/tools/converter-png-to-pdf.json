@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "png": "Alle nettlesere",
-            "pdf": "Innebygd PDF-visning"
+            "png": true,
+            "pdf": false
           }
         },
         {
@@ -191,8 +191,7 @@
             "pdf": false
           }
         }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",
@@ -247,6 +246,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">PNG to PDF conversion creates document files for sharing and printing. When PDFs are downloaded from websites, file size directly affects the user experience — large PDFs cause slow downloads and increase bounce rates.</p><p class=\"text-mid mb-4\">The converter packages PNG images into a compact PDF. Since PNG is lossless, the internal image quality is preserved. A typical multi-page PDF from 10 PNG screenshots will be approximately 10–20 MB.</p><p class=\"text-mid\">For web display, keep images as PNG or convert to WebP for optimal performance. Use PDF only when you need a printable, shareable multi-page document.</p>"
     },
     {
       "type": "faq",

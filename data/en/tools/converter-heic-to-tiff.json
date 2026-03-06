@@ -2,14 +2,14 @@
   "toolKey": "heicToTiff",
   "locale": "en",
   "metadata": {
-    "title": "HEIC to TIFF converter — HEIC TIFF",
-    "description": "Convert iPhone HEIC photos to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "title": "HEIC to TIFF converter - HEIC TIFF",
+    "description": "Convert iPhone HEIC photos to professional TIFF format. Free browser-based tool - no signup, no file limits, complete privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/heic-to-tiff-converter"
   },
   "hero": {
     "title": "HEIC to TIFF converter",
-    "description": "Convert iPhone HEIC photos to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "description": "Convert iPhone HEIC photos to professional TIFF format. Free browser-based tool - no signup, no file limits, complete privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC to TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert iPhone HEIC photos to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
+      "description": "Convert iPhone HEIC photos to professional TIFF format. Free browser-based tool - no signup, no file limits, complete privacy.",
       "featureList": ["Conversion to TIFF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert HEIC to TIFF", "HEIC to TIFF conversion", "Free HEIC to TIFF converter", "Change HEIC to TIFF"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Set quality",
-          "text": "Adjust the TIFF quality slider — lower values produce smaller files."
+          "text": "Adjust the TIFF quality slider - lower values produce smaller files."
         },
         {
           "position": 3,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download the TIFF files — individually or all at once."
+          "text": "Download the TIFF files - individually or all at once."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert HEIC to TIFF?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is a lossy image format supporting millions colors. It is widely used for Apple device photos with browser support in Safari only.</p><p class=\"text-mid mb-4\">Converting HEIC to TIFF (Tagged Image File Format) solves the compatibility challenge with Apple&apos;s proprietary format.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, TIFF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many HEIC files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC is the default photo format on Apple devices — compact and efficient for mobile use. TIFF is the industry standard for professional print production, desktop publishing, medical imaging, and archival storage. Converting HEIC to TIFF prepares iPhone photos for professional workflows.</p><p class=\"text-mid mb-4\">TIFF supports lossless LZW compression, 16/32-bit color depth, CMYK color space, multiple layers, and embedded ICC profiles. The conversion preserves full image quality from the HEIC source. TIFF files will be significantly larger than HEIC.</p><p class=\"text-mid mb-4\">If you need images for web publishing rather than print, consider converting to JPG, WebP, or AVIF instead — they produce much smaller files optimized for screen display.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "HEIC to TIFF conversion",
       "variant": "right"
@@ -258,6 +258,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What to expect when converting HEIC to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">HEIC uses lossy HEVC compression while TIFF is typically lossless. The conversion decodes the HEIC data and saves every pixel as-is in TIFF format. No additional quality loss occurs during conversion.</p><p class=\"text-mid mb-4\">TIFF files will be dramatically larger than the original HEIC — a 2 MB HEIC photo may become 18–25 MB in uncompressed TIFF, or 8–12 MB with LZW compression. This is expected.</p><p class=\"text-mid\">Convert to TIFF only when the target system requires it: offset printing, desktop publishing, medical imaging, or professional archival. For general sharing, JPG or WebP produces much smaller files.</p>"
     },
     {
       "type": "faq",

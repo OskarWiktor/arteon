@@ -2,7 +2,7 @@
   "toolKey": "jsonToXml",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor JSON în XML — JSON XML",
+    "title": "Convertor JSON în XML - JSON XML",
     "description": "Convertește JSON în format XML. Parsare și formatare automată. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-json-in-xml"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți JSON în XML?",
-      "html": "<p class=\"text-mid mb-4\">JSON este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in XML poate oferi avantaje semnificative — fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele JSON in format XML direct in browser. Niciun fisier nu este trimis la servere — intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in XML poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele JSON in format XML direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "JSON to XML conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cat economisiti convertind JSON in XML?",
-      "html": "<p class=\"text-mid mb-4\">Economiile depind de tipul fisierului si compresia originala:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto camera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagine produs</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Economiile reale variaza in functie de continut si setari.</p>"
+      "title": "Cum funcționează conversia din JSON în XML?",
+      "html": "<p class=\"text-mid mb-4\">JSON și XML sunt ambele formate de date structurate, dar folosesc sintaxă fundamental diferită. JSON folosește acolade și perechi cheie-valoare, în timp ce XML folosește tag-uri de deschidere și închidere pentru definirea elementelor. Convertorul asociază fiecare proprietate JSON unui element XML și păstrează structura ierarhică.</p><p class=\"text-mid mb-4\">Obiectele JSON devin elemente XML, array-urile JSON devin elemente repetate, iar valorile primitive (șiruri, numere, booleene) devin conținut text în tag-urile părinte. Convertorul produce XML bine format cu indentare și antet de declarație.</p><p class=\"text-mid\">XML este utilizat pe scară largă în sisteme enterprise, servicii web SOAP, fișiere de configurare și schimb de date cu validare strictă de schemă. Conversia se face complet în browserul tău.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Sfaturi pentru conversia JSON in XML",
-      "description": "Sfaturi pentru evitarea problemelor:",
+      "title": "Sfaturi pentru conversia din JSON în XML",
+      "description": "Câteva sfaturi pentru a evita problemele comune:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Fisiere foarte mari",
-          "description": "Imaginile peste 4000×4000 px pot fi mai lente. Impartiti in loturi de 10–20."
+          "icon": "RiCodeLine",
+          "title": "Element rădăcină",
+          "description": "XML necesită un singur element rădăcină. Dacă JSON-ul tău este un array, convertorul îl înfășoară într-un element rădăcină."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Fisiere deja comprimate",
-          "description": "Daca JSON era deja comprimat, conversia in XML poate nu economisi mult."
+          "icon": "RiNodeTree",
+          "title": "Gestionarea array-urilor",
+          "description": "Array-urile JSON sunt convertite în elemente XML repetate cu același nume de tag. Numele elementului este derivat din cheia părinte."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparenta",
-          "description": "XML nu suporta transparenta. Zonele transparente devin albe. Luati in considerare PNG sau WebP."
+          "icon": "RiFileTextLine",
+          "title": "Caractere speciale",
+          "description": "Caracterele ca &lt;, &gt;, &amp; și ghilimelele sunt înlocuite automat cu entități XML standard pentru markup valid."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Pastrati originalele",
-          "description": "Conversia cu pierderi e ireversibila. Pastrati copii ale fisierelor JSON."
+          "icon": "RiFileCodeLine",
+          "title": "Atribute vs elemente",
+          "description": "Standard, toate proprietățile JSON devin elemente XML copil. JSON nu are un concept nativ de atribute XML, deci nu sunt generate atribute."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JSON to XML mapping rules",
+      "html": "<p class=\"text-mid mb-4\">The converter maps JSON structures to XML elements following these rules:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Objects</strong> – each key becomes an XML element. <code>{\"name\": \"John\"}</code> → <code>&lt;name&gt;John&lt;/name&gt;</code></li><li><strong>Arrays</strong> – each item becomes a repeating element with the key name. <code>{\"items\": [1, 2]}</code> → <code>&lt;items&gt;1&lt;/items&gt;&lt;items&gt;2&lt;/items&gt;</code></li><li><strong>Primitives</strong> – strings, numbers, booleans become text content of their parent element.</li><li><strong>Null values</strong> – converted to empty elements or omitted.</li></ul><p class=\"text-mid mt-3\">The output includes a proper XML declaration and uses 2-space indentation for readability. Element names are derived directly from JSON keys.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         },
         {
-          "question": "E sigura conversia JSON in XML?",
-          "answer": "Da. Totul se face local in browser via Canvas API. Nimic nu e trimis la servere."
+          "question": "Este conversia din JSON în XML sigură?",
+          "answer": "Da. Toată conversia se face local în browserul tău. Nicio dată nu este trimisă la vreun server."
         },
         {
-          "question": "Pot converti mai multe fisiere JSON?",
-          "answer": "Da. Conversie in lot fara limita. Trageti fisierele in convertor."
+          "question": "Este conversia fără pierderi?",
+          "answer": "Da. Toate datele din intrarea JSON sunt păstrate în rezultatul XML. Structura și valorile rămân intacte, doar sintaxa se schimbă."
         },
         {
-          "question": "XML e suportat de toate browserele?",
-          "answer": "XML e suportat de Chrome, Firefox, Safari, Edge si Opera."
+          "question": "Pot valida rezultatul XML?",
+          "answer": "Convertorul produce XML bine format care trece validarea XML standard. Pentru validarea schemei (XSD), poți aplica schema separat pe rezultat."
         }
       ]
     },

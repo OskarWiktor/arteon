@@ -25,4 +25,7 @@ export const baseMetadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+  },
 };

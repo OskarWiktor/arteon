@@ -2,14 +2,14 @@
   "toolKey": "pngToTiff",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PNG na TIFF — PNG TIFF",
-    "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
+    "title": "Konwerter PNG na TIFF - PNG TIFF",
+    "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-png-na-tiff"
   },
   "hero": {
     "title": "Konwerter PNG na TIFF",
-    "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
+    "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,8 +27,8 @@
       "name": "Konwerter PNG na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
-      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "description": "Zamień grafiki PNG na profesjonalny format TIFF. Do druku i dalszej obróbki. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
+      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
       "alternateName": ["Zamiana PNG na TIFF", "Konwersja PNG do TIFF", "Darmowy konwerter PNG na TIFF"]
     },
     "howTo": {
@@ -43,12 +43,12 @@
         {
           "position": 2,
           "name": "Konwertuj",
-          "text": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+          "text": "Kliknij Konwertuj - pliki zostaną przetworzone lokalnie w przeglądarce."
         },
         {
           "position": 3,
           "name": "Pobierz",
-          "text": "Pobierz gotowe pliki TIFF — pojedynczo lub wszystkie naraz."
+          "text": "Pobierz gotowe pliki TIFF - pojedynczo lub wszystkie naraz."
         }
       ]
     }
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować PNG na TIFF?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) to bezstratny format obsługujący miliony kolorów. Jest powszechnie stosowany do grafik z przezroczystością.</p><p class=\"text-mid mb-4\">Konwersja PNG na TIFF (Tagged Image File Format) daje więcej elastyczności w użyciu obrazów.</p><p class=\"text-mid mb-4\">TIFF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, TIFF zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików PNG, ile potrzebujesz – całkowicie za darmo.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG to bezstratny format rastrowy ze wsparciem przezroczystości, popularny w grafice webowej i zrzutach ekranu. Jednak wiele profesjonalnych narzędzi — systemów DTP, oprogramowania poligraficznego i archiwów cyfrowych — preferuje lub wymaga formatu TIFF.</p><p class=\"text-mid mb-4\">TIFF (Tagged Image File Format) obsługuje głębię 16 i 32 bitów na kanał, profile kolorów ICC (sRGB, Adobe RGB, CMYK), kompresję bezstratną LZW oraz wielostronicowe dokumenty. Konwersja PNG na TIFF zachowuje pełną jakość obrazu — oba formaty są bezstratne, więc żadne dane pikselowe nie są tracone.</p><p class=\"text-mid mb-4\">Przezroczystość (kanał alfa) z pliku PNG zostanie zachowana w pliku TIFF. To ważne przy konwersji grafik z wyciętym tłem — logo, ikon, zdjęć produktowych — na potrzeby składu DTP i druku.</p><p class=\"text-mid\">Konwerter przetwarza pliki lokalnie w przeglądarce — nic nie jest wysyłane na serwer. Bez rejestracji, bez limitów, bez znaków wodnych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwersja PNG na TIFF",
       "variant": "right"
@@ -102,24 +102,24 @@
       "grid": "two",
       "items": [
         {
-          "icon": "RiGlobalLine",
-          "title": "Optymalizacja stron www",
-          "description": "Konwertuj PNG na TIFF, aby przygotować obrazy do publikacji w internecie."
-        },
-        {
-          "icon": "RiMailLine",
-          "title": "E-mail i udostępnianie",
-          "description": "Pliki TIFF są kompatybilne z większością nowoczesnych platform. Konwertuj na TIFF, aby uzyskać obrazy wysokiej jakości do udostępniania."
-        },
-        {
-          "icon": "RiShoppingBag3Line",
-          "title": "E-commerce i marketplace",
-          "description": "Platformy takie jak Allegro, OLX, Empik, Ceneo mogą wymagać określonych formatów – konwersja na TIFF zapewnia zgodność zdjęć z ich wymaganiami."
-        },
-        {
           "icon": "RiPrinterLine",
-          "title": "Dokumenty i archiwizacja",
-          "description": "TIFF to doskonały wybór do archiwizacji i profesjonalnego druku dzięki kompresji bezstratnej."
+          "title": "Druk i poligrafia",
+          "description": "Programy DTP (InDesign, QuarkXPress) i drukarnie preferują TIFF. Konwersja grafik PNG na TIFF z profilem CMYK przygotowuje materiały do druku offsetowego i wielkoformatowego."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Edycja z większą głębią kolorów",
+          "description": "PNG obsługuje do 8 bitów na kanał, TIFF do 32 bitów. Konwersja na TIFF 16-bit daje większy zakres tonalny do korekcji kolorów i retuszu w Photoshopie lub Lightroom."
+        },
+        {
+          "icon": "RiArchiveDrawerLine",
+          "title": "Archiwizacja cyfrowa",
+          "description": "TIFF jest standardem archiwizacji w bibliotekach, muzeach i instytucjach państwowych. Obsługuje wielostronicowe dokumenty w jednym pliku — PNG nie ma tej możliwości."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Skład katalogów produktowych",
+          "description": "Zdjęcia produktowe PNG z wyciętym tłem można konwertować na TIFF z kanałem alfa, zachowując przezroczystość do umieszczenia na dowolnym tle w składzie DTP."
         }
       ]
     },
@@ -278,7 +278,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PNG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PNG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -317,11 +317,11 @@
         },
         {
           "question": "Czy konwersja PNG na TIFF jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików PNG jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy TIFF zachowuje przezroczystość z pliku PNG?",
+          "answer": "Tak. Format TIFF obsługuje kanał alfa, więc przezroczyste obszary z oryginalnego pliku PNG zostaną zachowane. To ważne przy konwersji grafik z wyciętym tłem — np. zdjęć produktowych, logo i ikon na potrzeby składu DTP."
         }
       ]
     },

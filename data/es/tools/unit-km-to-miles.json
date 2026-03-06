@@ -1,0 +1,281 @@
+{
+  "toolKey": "kmToMiles",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de kilómetros a millas",
+    "description": "Convierte km a millas y viceversa. Esencial para conducir, correr y ciclismo.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-km-a-millas"
+  },
+  "hero": {
+    "title": "Convertir kilómetros a millas",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-km-a-millas",
+      "label": "km a millas"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de kilómetros a millas",
+      "alternateName": ["Convertir kilómetros a millas"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte km a millas y viceversa. Esencial para conducir, correr y ciclismo.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir kilómetros a millas?",
+      "html": "<p class=\"text-mid mb-4\">El kilómetro (km) es la unidad métrica estándar de distancia. La milla terrestre = 1,60934 km. EE. UU. y el Reino Unido son los principales países que usan millas para señalización vial y distancias.</p><p class=\"text-mid mb-4\">Esta conversión es necesaria al conducir en EE. UU./UK, alquilar coches, usar GPS, comparar distancias de vuelos y seguir competiciones deportivas en millas.</p><p class=\"text-mid mb-4\">Ejemplos: 1 km = 0,621 mi, 100 km = 62,1 mi, 1 milla = 1,609 km.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador — nada se envía a ningún servidor.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de kilómetros a millas – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada. Puedes usar punto o coma como separador decimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado de la conversión aparece instantáneamente en el campo contiguo.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Haz clic en Copiar resultado o usa el botón Invertir para convertir en dirección opuesta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Conducción",
+          "description": "Señales de tráfico en EE. UU./UK en millas. 60 mph = 96,6 km/h."
+        },
+        {
+          "icon": "RiRunLine",
+          "title": "Alquiler de coches",
+          "description": "Odometrías en millas. 30.000 mi = 48.280 km."
+        },
+        {
+          "icon": "RiMapPinLine",
+          "title": "Carreras deportivas",
+          "description": "Maratón: 26,2 millas = 42,195 km. Media maratón: 13,1 mi = 21,1 km."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Aviación",
+          "description": "Milla náutica (1,852 km) se usa en aviación, diferente de la milla terrestre."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador. Ningún dato se envía a ningún servidor."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza instantáneamente mientras escribes, sin necesidad de pulsar ningún botón."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "El botón Invertir te permite convertir en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Una tabla con valores de conversión comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 milla = 1,609344 km exactamente. Para convertir km a millas, divide entre 1,60934. Para millas a km, multiplica por 1,60934.</p><p class=\"text-mid mb-4\">Ejemplo: 200 km / 1,60934 = 124,3 millas.</p><p class=\"text-mid\">Estimación rápida: multiplica km por 0,6 o divide entre 1,6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 milla = 1,609344 km exactamente. Para convertir km a millas, divide entre 1,60934. Para millas a km, multiplica por 1,60934.</p><p class=\"text-mid mb-4\">Ejemplo: 200 km / 1,60934 = 124,3 millas.</p><p class=\"text-mid\">Estimación rápida: multiplica km por 0,6 o divide entre 1,6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilómetro vs Milla – comparación",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilómetro (km)"
+        },
+        {
+          "id": "unit2",
+          "name": "Milla (mi)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistema",
+          "values": {
+            "unit1": "Métrico (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Valor base",
+          "values": {
+            "unit1": "1.000 m",
+            "unit2": "1.609,34 m"
+          }
+        },
+        {
+          "name": "Señalización vial",
+          "values": {
+            "unit1": "Internacional",
+            "unit2": "EE. UU./UK"
+          }
+        },
+        {
+          "name": "Relación",
+          "values": {
+            "unit1": "1 km",
+            "unit2": "0,6214 mi"
+          }
+        },
+        {
+          "name": "Deporte",
+          "values": {
+            "unit1": "Internacional (km)",
+            "unit2": "EE. UU. (millas)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos km es 1 milla?",
+          "answer": "1 milla = 1,60934 km exactamente."
+        },
+        {
+          "question": "¿Cuántas millas son 100 km?",
+          "answer": "100 km = 62,14 millas."
+        },
+        {
+          "question": "¿Qué diferencia hay entre milla terrestre y milla náutica?",
+          "answer": "Milla terrestre = 1,609 km. Milla náutica = 1,852 km. La náutica se usa en aviación y navegación marítima."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "km na mile – Arteon",
+      "defaultSubject": "Feedback: km-to-miles"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

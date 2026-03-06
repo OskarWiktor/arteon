@@ -34,7 +34,7 @@ function getSvgDimensions(dataUrl: string): { width: number; height: number } | 
     const vbMatch = raw.match(/viewBox\s*=\s*["']\s*[\d.]+\s+[\d.]+\s+([\d.]+)\s+([\d.]+)/);
     if (vbMatch) return { width: Math.round(parseFloat(vbMatch[1])), height: Math.round(parseFloat(vbMatch[2])) };
   } catch {
-    // Parsing failed — fall through
+    // Parsing failed - fall through
   }
   return null;
 }
@@ -176,7 +176,7 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
           fullCtx.putImageData(imgData, 0, 0);
           tmpCtx.drawImage(fullCanvas, 0, 0, srcW, srcH);
         } else {
-          // Pixel budget exceeded — draw tiles
+          // Pixel budget exceeded - draw tiles
           tmpCtx.putImageData(imgData, 0, 0);
         }
       }
@@ -243,7 +243,7 @@ export async function convertImage(file: File, options: ConvertImageOptions): Pr
     throw new Error(errorMessages?.canvasNotSupported ?? 'Canvas is not supported.');
   }
 
-  // JPG does not support transparency — fill with white background
+  // JPG does not support transparency - fill with white background
   if (targetMime === 'image/jpeg') {
     ctx.fillStyle = '#FFFFFF';
     ctx.fillRect(0, 0, w, h);

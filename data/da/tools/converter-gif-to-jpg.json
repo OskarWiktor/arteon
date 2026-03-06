@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — hvad vaelge ved konvertering GIF til JPG?",
-      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 85% er forskellen mellem GIF og JPG praktisk talt umaerkelig.</p>"
+      "title": "Kvalitet - hvad vaelge ved konvertering GIF til JPG?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) - godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% - til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% - nar filstørrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 85% er forskellen mellem GIF og JPG praktisk talt umaerkelig.</p>"
     },
     {
       "type": "gap",
@@ -253,8 +253,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af GIF til JPG reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+      "title": "Hvordan billedkonvertering påvirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP måler tiden til det største synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af GIF til JPG reducerer filstørrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
     },
     {
       "type": "gap",
@@ -263,18 +263,18 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering GIF til JPG",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis GIF allerede var komprimeret, giver konvertering til JPG maske ikke stor besparelse."
+          "description": "Hvis GIF allerede var komprimeret, giver konvertering til JPG måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "GIF to JPG – file size comparison",
+      "html": "<p class=\"text-mid mb-4\">File size comparison depends on the image content. Simple graphics may be smaller in GIF, while complex images compress better in JPG:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Simple icon</p><p class=\"text-light text-sm\">GIF: 8 KB → JPG: 12 KB</p><p class=\"text-light mt-1 text-sm\">JPG larger (simple graphic)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo-like GIF</p><p class=\"text-light text-sm\">GIF: 180 KB → JPG: 95 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~47%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Complex graphic</p><p class=\"text-light text-sm\">GIF: 250 KB → JPG: 120 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~52%</p></div></div><p class=\"text-light mt-4 text-sm\">JPG works best for photographic content. For simple icons and logos, GIF or PNG may actually produce smaller files.</p>"
     },
     {
       "type": "faq",
@@ -338,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
-      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked - vi svarer inden for 24 timer.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "GIF til JPG-konverter – Arteon",
       "defaultSubject": "Feedback: GIF til JPG-konverter"

@@ -1,0 +1,277 @@
+{
+  "toolKey": "dpiToPpi",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de DPI a PPI",
+    "description": "Entiende la diferencia entre DPI y PPI. Útil para diseño de impresión y pantalla.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-dpi-a-ppi"
+  },
+  "hero": {
+    "title": "Convertir DPI a PPI",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-dpi-a-ppi",
+      "label": "DPI a PPI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de DPI a PPI",
+      "alternateName": ["Convertir DPI a PPI"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Entiende la diferencia entre DPI y PPI. Útil para diseño de impresión y pantalla.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuál es la diferencia entre DPI y PPI?",
+      "html": "<p class=\"text-mid mb-4\">DPI (puntos por pulgada) se refiere a los puntos físicos de tinta de una impresora. PPI (píxeles por pulgada) se refiere a la densidad de píxeles de una pantalla o imagen. En la práctica, estos términos se usan indistintamente.</p><p class=\"text-mid mb-4\">Una impresora de 1200 DPI coloca 1200 puntos de tinta por pulgada. Una pantalla de 110 PPI muestra 110 píxeles por pulgada. Una imagen a 300 PPI tiene 300 píxeles por pulgada al imprimir en tamaño original.</p><p class=\"text-mid mb-4\">Para imágenes digitales: usa PPI. Para impresoras: usa DPI.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de DPI a PPI – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado aparece instantáneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Copia el resultado o invierte la dirección de conversión.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Preparación de impresión",
+          "description": "Configura la resolución de imagen a 300 PPI para impresión profesional."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Diseño de pantalla",
+          "description": "Conoce el PPI de tu pantalla: 110 PPI (1080p 24″), 163 PPI (4K 27″)."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografía",
+          "description": "La resolución en megapíxeles determina el tamaño máximo de impresión a 300 PPI."
+        },
+        {
+          "icon": "RiQuestionLine",
+          "title": "Preimpresión",
+          "description": "Entiende la relación entre PPI de imagen y DPI de impresora."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza mientras escribes."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "Convierte en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Tabla con valores comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo se relacionan DPI y PPI?",
+      "html": "<p class=\"text-mid mb-4\">Numéricamente, DPI y PPI usan el mismo valor para resolución de imagen. Una imagen de “300 DPI” es en realidad 300 PPI.</p><p class=\"text-mid mb-4\">La impresora usa su propio DPI: una impresora de 1200 DPI usa ~16 puntos (4×4) por cada píxel de una imagen de 300 PPI.</p><p class=\"text-mid\">Para la mayoría de propósitos, DPI y PPI son intercambiables al hablar de resolución de imagen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo se relacionan DPI y PPI?",
+      "html": "<p class=\"text-mid mb-4\">Numéricamente, DPI y PPI usan el mismo valor para resolución de imagen. Una imagen de “300 DPI” es en realidad 300 PPI.</p><p class=\"text-mid mb-4\">La impresora usa su propio DPI: una impresora de 1200 DPI usa ~16 puntos (4×4) por cada píxel de una imagen de 300 PPI.</p><p class=\"text-mid\">Para la mayoría de propósitos, DPI y PPI son intercambiables al hablar de resolución de imagen.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "DPI vs PPI – comparación",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "DPI (puntos por pulgada)"
+        },
+        {
+          "id": "unit2",
+          "name": "PPI (píxeles por pulgada)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Aplica a",
+          "values": {
+            "unit1": "Impresoras",
+            "unit2": "Pantallas e imágenes"
+          }
+        },
+        {
+          "name": "Mide",
+          "values": {
+            "unit1": "Puntos físicos de tinta",
+            "unit2": "Píxeles digitales"
+          }
+        },
+        {
+          "name": "Valores típicos",
+          "values": {
+            "unit1": "600–4800 DPI",
+            "unit2": "72–460 PPI"
+          }
+        },
+        {
+          "name": "Calidad de impresión",
+          "values": {
+            "unit1": "Mayor = más fino",
+            "unit2": "300 PPI estándar"
+          }
+        },
+        {
+          "name": "Confusión",
+          "values": {
+            "unit1": "Usado erróneamente para imágenes",
+            "unit2": "Término correcto"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Es DPI lo mismo que PPI?",
+          "answer": "No exactamente. DPI mide puntos de impresora, PPI mide píxeles de pantalla/imagen. En la práctica se usan indistintamente para resolución de imagen."
+        },
+        {
+          "question": "¿Qué PPI para impresión?",
+          "answer": "300 PPI para impresión profesional. 150 PPI para gran formato. 72 PPI solo para pantalla."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "DPI na PPI – Arteon",
+      "defaultSubject": "Feedback: dpi-to-ppi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

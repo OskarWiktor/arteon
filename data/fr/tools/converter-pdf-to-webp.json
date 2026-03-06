@@ -2,7 +2,7 @@
   "toolKey": "pdfToWebp",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur PDF en WebP — PDF WebP",
+    "title": "Convertisseur PDF en WebP - PDF WebP",
     "description": "Convertissez les pages PDF en images WebP. Haute qualité, sans limites. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-pdf-en-webp"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Convertir",
-          "text": "Cliquez sur Convertir — le traitement est local dans votre navigateur."
+          "text": "Cliquez sur Convertir - le traitement est local dans votre navigateur."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir PDF en WebP ?",
-      "html": "<p class=\"text-mid mb-4\">PDF est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en WebP peut offrir des avantages significatifs — fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers PDF au format WebP directement dans le navigateur. Aucun fichier n'est envoye sur un serveur — tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en WebP peut offrir des avantages significatifs - fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers PDF au format WebP directement dans le navigateur. Aucun fichier n'est envoye sur un serveur - tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "PDF to WebP conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Convertir",
-          "description": "Cliquez sur Convertir — le traitement est local dans votre navigateur.",
+          "description": "Cliquez sur Convertir - le traitement est local dans votre navigateur.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Reglages de qualite — que choisir pour PDF vers WebP ?",
-      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (defaut) — bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% — pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% — quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 80% la difference visuelle entre PDF original et WebP resultant est imperceptible.</p>"
+      "title": "Reglages de qualite - que choisir pour PDF vers WebP ?",
+      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (defaut) - bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% - pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% - quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 80% la difference visuelle entre PDF original et WebP resultant est imperceptible.</p>"
     },
     {
       "type": "gap",
@@ -256,6 +256,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose WebP vs JPG vs PNG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">WebP offers the best balance of quality and file size for web use. Files are 25–35% smaller than JPG at equivalent quality and support both lossy and lossless compression modes.</p><p class=\"text-mid mb-4\">Choose WebP when the images will be displayed on websites or shared digitally. Choose JPG when you need maximum compatibility (older devices, email clients). Choose PNG when you need lossless quality (documents with text, technical drawings).</p><p class=\"text-mid\">WebP is supported by all modern browsers (Chrome, Firefox, Safari 14+, Edge). For the few remaining users on very old browsers, serve JPG as a fallback using the HTML &lt;picture&gt; element.</p>"
     },
     {
       "type": "faq",

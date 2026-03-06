@@ -1,0 +1,273 @@
+{
+  "toolKey": "rgbToCmyk",
+  "locale": "fi",
+  "metadata": {
+    "title": "RGB CMYK:ksi – muunnin",
+    "description": "Muunna RGB CMYK:ksi ja päinvastoin. Painovalmisteluun.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/rgb-cmyk-muunnin"
+  },
+  "hero": {
+    "title": "RGB CMYK:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/rgb-cmyk-muunnin",
+      "label": "RGB CMYK:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "RGB CMYK:ksi – muunnin",
+      "alternateName": ["RGB CMYK:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna RGB CMYK:ksi ja päinvastoin. Painovalmisteluun.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin tarvitset: RGB CMYK:ksi?",
+      "html": "<p class=\"text-mid mb-4\">RGB (Red, Green, Blue) is the additive color model used by screens. CMYK (Cyan, Magenta, Yellow, Key/Black) is the subtractive model used by printers. Colors look different in each model because they work differently.</p><p class=\"text-mid mb-4\">Converting RGB to CMYK is essential when preparing digital designs for print. Without conversion, bright screen colors may appear dull or shifted when printed.</p><p class=\"text-mid mb-4\">Not all RGB colors can be reproduced in CMYK — the CMYK gamut is smaller. Vivid neon greens, bright blues, and saturated oranges are particularly affected.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB CMYK:ksi – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät muunninta",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään. Voit käyttää pistettä tai pilkkua.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä – ilman napsautusta.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai käännä",
+          "description": "Napsauta Kopioi tulos tai käytä Käännä-painiketta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tulostus",
+          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Värienhallinta",
+          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Materiały brandingowe",
+          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografia",
+          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi tietosuoja",
+          "description": "Kaikki laskelmat tehdään paikallisesti selaimessasi. Mitään tietoja ei lähetetä palvelimelle."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy välittömästi kirjoittaessasi – ei tarvitse napsauttaa mitään."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Käännä-painikkeella voit muuntaa kumpaankin suuntaan yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Valmis taulukko usein muunnetuilla arvoilla ja kontekstuaalisilla kuvauksilla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">First, normalize RGB to 0–1 range: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">This is a mathematical conversion. Actual printed results depend on ink, paper, and ICC profiles. For production printing, use ICC profile-based conversion in Photoshop or InDesign.</p><p class=\"text-mid\">This converter provides a mathematical estimate. For critical color work, always use proper ICC profiles and get a proof print.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Käytännön vinkkejä",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Pure black: RGB(0,0,0) = CMYK(0,0,0,100). Rich black for print: CMYK(60,40,40,100).</li><li>Pure white: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Bright colors lose vibrancy in CMYK. Design with CMYK gamut in mind from the start.</li><li>Total ink coverage should not exceed 300% for most printing processes.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs CMYK – vertailu",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "CMYK",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Model",
+          "values": {
+            "unit1": "Additive (light)",
+            "unit2": "Subtractive (ink)"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "Screens, web",
+            "unit2": "Print, packaging"
+          }
+        },
+        {
+          "name": "Gamut",
+          "values": {
+            "unit1": "Wider (more colors)",
+            "unit2": "Narrower"
+          }
+        },
+        {
+          "name": "Black",
+          "values": {
+            "unit1": "R=0, G=0, B=0",
+            "unit2": "K=100%"
+          }
+        },
+        {
+          "name": "White",
+          "values": {
+            "unit1": "R=255, G=255, B=255",
+            "unit2": "No ink (paper)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Miksi sehen CMYK-Drucke anders aus?",
+          "answer": "Bildschirme strahlen Licht aus (RGB), Drucker verwenden Tinte (CMYK). Der CMYK-Farbraum ist kleiner."
+        },
+        {
+          "question": "Tehdäänkö laskelmat paikallisesti?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB CMYK:ksi – Arteon",
+      "defaultSubject": "Palaute: rgb-to-cmyk"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

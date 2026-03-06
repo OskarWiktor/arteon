@@ -1,0 +1,289 @@
+{
+  "toolKey": "hectaresToAcres",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter hektarów na akry – przelicz powierzchnię",
+    "description": "Przelicz hektary na akry i odwrotnie. Konwerter jest przydatny w rolnictwie, nieruchomościach i leśnictwie. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-hektary-na-akry"
+  },
+  "hero": {
+    "title": "Przelicz hektary na akry",
+    "description": "Ten konwerter przelicza hektary na akry i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-hektary-na-akry",
+      "label": "ha na akry"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter hektarów na akry – przelicz powierzchnię",
+      "alternateName": ["Przelicznik ha na akry", "Kalkulator hektarów na akry", "Zamiana hektarów na akry"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz hektary na akry i odwrotnie. Konwerter jest przydatny w rolnictwie, nieruchomościach i leśnictwie. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera ha na akry",
+      "description": "Instrukcja użycia: ha na akry.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy przydaje się przeliczanie hektarów na akry?",
+      "html": "<p class=\"text-mid mb-4\">Hektar (ha) to jednostka powierzchni równa 10 000 m² (100 × 100 m). Akr (ac) to jednostka używana w USA, UK i Kanadzie, równa 4 046,86 m². 1 ha = 2,47105 akra.</p><p class=\"text-mid mb-4\">Przeliczanie hektarów na akry jest potrzebne w rolnictwie międzynarodowym, handlu ziemią rolną, leśnictwie oraz przy analizowaniu amerykańskich ogłoszeń o sprzedaży gruntów.</p><p class=\"text-mid mb-4\">W Polsce powierzchnię gruntów podaje się w hektarach i arach. W USA i Kanadzie standardem są akry. Farma o powierzchni 100 akrów to 40,47 ha.</p><p class=\"text-mid\">Akr historycznie oznaczał powierzchnię, którą jeden człowiek mógł zaorać jednym wołem w ciągu jednego dnia. Dziś jest zdefiniowany jako 43 560 ft².</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "ha na akry – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPlantLine",
+          "title": "Rolnictwo",
+          "description": "Porównaj powierzchnię gruntów rolnych w hektarach i akrach."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Nieruchomości",
+          "description": "Amerykańskie ogłoszenia o działkach podają powierzchnię w akrach."
+        },
+        {
+          "icon": "RiTreeLine",
+          "title": "Leśnictwo",
+          "description": "Powierzchnie lasów w dokumentach międzynarodowych podaje się w obu jednostkach."
+        },
+        {
+          "icon": "RiMapLine",
+          "title": "Kartografia",
+          "description": "Mapy i dane geodezyjne z różnych krajów używają różnych jednostek powierzchni."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja hektarów na akry?",
+      "html": "<p class=\"text-mid mb-4\">Hektar i akr to dwie popularne jednostki powierzchni stosowane w rolnictwie i obrocie nieruchomościami. Jeden hektar to 10 000 metrów kwadratowych (100 m × 100 m), natomiast jeden akr to 4 046,86 metra kwadratowego — czyli akr jest mniejszy od hektara o ponad połowę.</p><p class=\"text-mid mb-4\">Aby przeliczyć hektary na akry, narzędzie mnoży wartość przez 2,47105. Na przykład działka o powierzchni 5 hektarów to około 12,36 akra. W drugą stronę, 10 akrów to około 4,05 hektara. Szybkie przybliżenie: pomnóż hektary przez 2,5 — błąd wyniesie zaledwie około 1,2%.</p><p class=\"text-mid\">Hektar jest standardową jednostką powierzchni gruntów w Polsce i większości krajów europejskich. Akr jest powszechnie stosowany w USA, Wielkiej Brytanii i Kanadzie, szczególnie w kontekście nieruchomości i rolnictwa.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>1 ha = 2,47 akra. Szybkie: ha × 2,5 – błąd około 1,2%.</li><li>1 akr = 4 047 m² ≈ 0,4 ha.</li><li>1 ar = 100 m². 1 ha = 100 arów.</li><li>Boisko piłkarskie (FIFA): ok. 0,7 ha = 1,73 akra.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Hektar (ha) vs Akr (ac) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Hektar (ha)"
+        },
+        {
+          "id": "unit2",
+          "name": "Akr (ac)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metryczny",
+            "unit2": "Imperialny"
+          }
+        },
+        {
+          "name": "Wartość",
+          "values": {
+            "unit1": "10 000 m²",
+            "unit2": "4 046,86 m²"
+          }
+        },
+        {
+          "name": "Rolnictwo",
+          "values": {
+            "unit1": "Hektary (Europa)",
+            "unit2": "Akry (USA/UK)"
+          }
+        },
+        {
+          "name": "Podjednostka",
+          "values": {
+            "unit1": "Ar (100 m²)",
+            "unit2": "Brak"
+          }
+        },
+        {
+          "name": "Typowa działka",
+          "values": {
+            "unit1": "0,1–0,3 ha",
+            "unit2": "0,25–0,5 ac"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile akrów ma 1 hektar?",
+          "answer": "1 hektar = 2,47105 akra."
+        },
+        {
+          "question": "Ile hektarów to 1 akr?",
+          "answer": "1 akr = 0,404686 ha = 4 046,86 m²."
+        },
+        {
+          "question": "Ile m² ma 1 akr?",
+          "answer": "1 akr = 4 046,86 m² = 43 560 ft²."
+        },
+        {
+          "question": "Jaka jest typowa farma w USA?",
+          "answer": "Przeciętna farma w USA ma około 445 akrów (180 ha). Farmy w średnim zachodzie mogą mieć tysiące akrów."
+        },
+        {
+          "question": "Jak duże jest boisko piłkarskie w hektarach?",
+          "answer": "Boisko FIFA (105 × 68 m) ma powierzchnię 0,714 ha = 1,764 akra."
+        },
+        {
+          "question": "Czym różni się ar od hektara?",
+          "answer": "1 ar = 100 m² (10 × 10 m). 1 hektar = 100 arów = 10 000 m²."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "ha na akry – Arteon",
+      "defaultSubject": "Feedback: ha na akry"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

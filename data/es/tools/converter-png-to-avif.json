@@ -2,7 +2,7 @@
   "toolKey": "pngToAvif",
   "locale": "es",
   "metadata": {
-    "title": "Convertidor PNG a AVIF — PNG AVIF",
+    "title": "Convertidor PNG a AVIF - PNG AVIF",
     "description": "Convierte graficos PNG a AVIF con soporte de transparencia. Archivos significativamente mas pequenos. Funciona directamente en tu navegador. Sin subidas al servidor, sin registro.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-png-a-avif"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Ajustar calidad",
-          "text": "Ajusta el control de calidad AVIF — valores más bajos producen archivos más pequeños."
+          "text": "Ajusta el control de calidad AVIF - valores más bajos producen archivos más pequeños."
         },
         {
           "position": 3,
           "name": "Convertir",
-          "text": "Haz clic en Convertir — los archivos se procesan localmente en tu navegador."
+          "text": "Haz clic en Convertir - los archivos se procesan localmente en tu navegador."
         },
         {
           "position": 4,
           "name": "Descargar",
-          "text": "Descarga los archivos AVIF — individualmente o todos a la vez."
+          "text": "Descarga los archivos AVIF - individualmente o todos a la vez."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ajustes de calidad — que elegir al convertir PNG a AVIF?",
-      "html": "<p class=\"text-mid\">El control permite valores entre 60% y 95%. Valores mas altos = mejor calidad pero archivos mas grandes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (predeterminado) — buen equilibrio para sitios web, blogs, articulos.</strong></li><li><strong>85–90% — para fotografia de productos, portfolios y galerias.</strong></li><li><strong>60–70% — cuando minimizar tamano es la prioridad.</strong></li></ul><p class=\"text-mid mt-3\">Con 80% la diferencia visual entre PNG original y AVIF resultante es imperceptible.</p>"
+      "title": "Ajustes de calidad - que elegir al convertir PNG a AVIF?",
+      "html": "<p class=\"text-mid\">El control permite valores entre 60% y 95%. Valores mas altos = mejor calidad pero archivos mas grandes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (predeterminado) - buen equilibrio para sitios web, blogs, articulos.</strong></li><li><strong>85–90% - para fotografia de productos, portfolios y galerias.</strong></li><li><strong>60–70% - cuando minimizar tamano es la prioridad.</strong></li></ul><p class=\"text-mid mt-3\">Con 80% la diferencia visual entre PNG original y AVIF resultante es imperceptible.</p>"
     },
     {
       "type": "gap",

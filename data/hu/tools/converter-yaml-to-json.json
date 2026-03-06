@@ -2,7 +2,7 @@
   "toolKey": "yamlToJson",
   "locale": "hu",
   "metadata": {
-    "title": "YAML JSON konverter — YAML JSON",
+    "title": "YAML JSON konverter - YAML JSON",
     "description": "YAML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/yaml-json-konverter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes YAML-t JSON-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A YAML szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a JSON formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a YAML fajlokat JSON formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A YAML szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a JSON formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a YAML fajlokat JSON formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Mennyit takarit meg YAML JSON konvertalasaval?",
-      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+      "title": "Hogyan m\u0171k\u00f6dik a YAML JSON konvert\u00e1l\u00e1s?",
+      "html": "<p class=\"text-mid mb-4\">A YAML beh\u00faz\u00e1st \u00e9s minim\u00e1lis szintaxist haszn\u00e1l a struktur\u00e1lt adatok \u00e1br\u00e1zol\u00e1s\u00e1ra, m\u00edg a JSON kapcsos z\u00e1r\u00f3jeleket, sz\u00f6gletes z\u00e1r\u00f3jeleket \u00e9s explicit id\u00e9z\u0151jeleket haszn\u00e1l. A konvert\u00e1l\u00f3 elemzi a YAML strukt\u00far\u00e1t \u00e9s megfelel\u0151 form\u00e1z\u00e1s\u00fa egyenl\u0151 JSON-t \u00e1ll\u00edt el\u0151.</p><p class=\"text-mid mb-4\">A YAML beh\u00faz\u00e1s JSON be\u00e1gyaz\u00e1ss\u00e1, a k\u00f6t\u0151jeles elemek JSON t\u00f6mbelemekk\u00e9, a YAML kulcs-\u00e9rt\u00e9k p\u00e1rok JSON objektum tulajdons\u00e1gokk\u00e1 v\u00e1lnak. Az adatt\u00edpusok meg\u0151rz\u0151dnek: karakterl\u00e1ncok, sz\u00e1mok, logikai, null, t\u00f6mb\u00f6k \u00e9s objektumok k\u00f6zvetlen\u00fcl \u00e1tviv\u0151dnek.</p><p class=\"text-mid\">A YAML JSON konvert\u00e1l\u00e1s hasznos, amikor a konfigur\u00e1ci\u00f3s adatokat webes alkalmaz\u00e1sokba, REST API-kba vagy JSON bemenetet v\u00e1r\u00f3 rendszerekbe kell integr\u00e1lni. A konvert\u00e1l\u00e1s teljes eg\u00e9sz\u00e9ben a b\u00f6ng\u00e9sz\u0151dben t\u00f6rt\u00e9nik.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tippek YAML JSON konvertalasahoz",
-      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "title": "Tippek a YAML JSON konvert\u00e1l\u00e1shoz",
+      "description": "N\u00e9h\u00e1ny tipp a gyakori probl\u00e9m\u00e1k elker\u00fcl\u00e9s\u00e9re:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Nagyon nagy fajlok",
-          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+          "icon": "RiFileTextLine",
+          "title": "Beh\u00faz\u00e1s konzisztencia",
+          "description": "A YAML \u00e9rz\u00e9keny a beh\u00faz\u00e1sra. Ha a f\u00e1jl tabul\u00e1torokat \u00e9s sz\u00f3k\u00f6z\u00f6ket kever, a feldolgoz\u00e1s sikertelen lehet. A konvert\u00e1l\u00f3 jelzi az \u00e9szlelt beh\u00faz\u00e1si hib\u00e1kat."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Mar tomoriteett fajlok",
-          "description": "Ha a YAML mar erosen tomoriteett volt, JSON konvertalas keveset takarithat."
+          "title": "Megjegyz\u00e9sek elt\u00e1vol\u00edt\u00e1sa",
+          "description": "A JSON nem t\u00e1mogatja a megjegyz\u00e9seket. A YAML f\u00e1jlb\u00f3l az \u00f6sszes #-megjegyz\u00e9s nem jelenik meg a JSON kimenetben. \u0150rizze meg az eredeti YAML f\u00e1jlt."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Atlatszosag",
-          "description": "JSON nem tamogatja az atlatszosagot. Feher hatter lesz. Hasznaljon PNG-t vagy WebP-t."
+          "icon": "RiCodeLine",
+          "title": "T\u00f6bb dokumentumos YAML",
+          "description": "A YAML f\u00e1jlok t\u00f6bb dokumentumot tartalmazhatnak --- elv\u00e1laszt\u00f3val. A konvert\u00e1l\u00f3 alap\u00e9rtelmezetten az els\u0151 dokumentumot dolgozza fel."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Orizze meg az eredetiket",
-          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a YAML fajlok masolatait."
+          "icon": "RiFileCodeLine",
+          "title": "Horgonyok \u00e9s \u00e1lnevek",
+          "description": "A YAML horgonyok (&) \u00e9s \u00e1lnevek (*) felold\u00e1sra ker\u00fclnek a konvert\u00e1l\u00e1s sor\u00e1n. A JSON kimenet a kibontott \u00e9rt\u00e9keket tartalmazza, nem a YAML hivatkoz\u00e1sokat."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
         },
         {
-          "question": "Biztonsagos YAML JSON konvertalasa?",
-          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+          "question": "Biztons\u00e1gos a YAML JSON konvert\u00e1l\u00e1s?",
+          "answer": "Igen. Az eg\u00e9sz konvert\u00e1l\u00e1s helyben t\u00f6rt\u00e9nik a b\u00f6ng\u00e9sz\u0151dben. Semmilyen adat nem ker\u00fcl szerverre."
         },
         {
-          "question": "Konvertalhatok tobb YAML fajlt egyszerre?",
-          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+          "question": "Meg\u0151rz\u0151dnek a YAML megjegyz\u00e9sek?",
+          "answer": "Nem. A JSON nem t\u00e1mogatja a megjegyz\u00e9seket, ez\u00e9rt az \u00f6sszes #-megjegyz\u00e9s a YAML f\u00e1jlb\u00f3l elt\u00e1vol\u00edt\u00e1sra ker\u00fcl a konvert\u00e1l\u00e1s sor\u00e1n. \u0150rizze meg az eredeti YAML f\u00e1jlt."
         },
         {
-          "question": "Minden bongeszo tamogatja a JSON-t?",
-          "answer": "JSON-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
+          "question": "Vesztes\u00e9gmentes a konvert\u00e1l\u00e1s?",
+          "answer": "Igen, az adatokat illet\u0151en. Minden karakterl\u00e1nc, sz\u00e1m, logikai, null \u00e9rt\u00e9k, t\u00f6mb \u00e9s objektum pontosan meg\u0151rz\u0151dik. Csak a YAML-specifikus funkci\u00f3k, mint a megjegyz\u00e9sek \u00e9s horgonyok nem ker\u00fclnek \u00e1t a JSON-ba."
         }
       ]
     },

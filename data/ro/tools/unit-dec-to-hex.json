@@ -1,0 +1,277 @@
+{
+  "toolKey": "decToHex",
+  "locale": "ro",
+  "metadata": {
+    "title": "DEC în HEX – convertor",
+    "description": "Convertiți numere zecimale în hexazecimale și invers.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-zecimal-in-hex"
+  },
+  "hero": {
+    "title": "DEC în HEX",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-zecimal-in-hex",
+      "label": "DEC în HEX"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "DEC în HEX – convertor",
+      "alternateName": ["DEC în HEX"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți numere zecimale în hexazecimale și invers.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: DEC în HEX?",
+      "html": "<p class=\"text-mid mb-4\">Hexadecimal (base-16) uses digits 0–9 and letters A–F. It is a compact way to represent binary data: each hex digit = 4 bits. This makes hex essential for programming, web colors, and memory addresses.</p><p class=\"text-mid mb-4\">Web colors use hex: #FF5733 = red 255, green 87, blue 51. Memory addresses: 0x7FFF = 32,767. Unicode: U+00E9 = é.</p><p class=\"text-mid mb-4\">Hex is more compact than binary: the byte 11111111 (8 digits) = FF (2 digits). This is why hex is preferred for displaying binary data.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DEC în HEX – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Managementul culorilor",
+          "description": "#FF0000 = 255 (czerwony), #00FF00 = 255 (zielony)."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Dezvoltare web",
+          "description": "Adresy pamięci, bajty, kody znaków Unicode."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Internet",
+          "description": "Adresy MAC, IPv6, protokoły sieciowe."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Debugowanie",
+          "description": "Hex dump pamięci, analiza plików binarnych."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">Repeatedly divide by 16 and record remainders (using A–F for 10–15). Read remainders bottom-to-top.</p><p class=\"text-mid mb-4\">Example: 255 ÷ 16 = 15 R15 → F, 15 ÷ 16 = 0 R15 → F. Result: FF.</p><p class=\"text-mid\">Each hex digit = 4 bits. Two hex digits = 1 byte (0–255). Four hex digits = 2 bytes (0–65,535).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Hex digits: 0123456789ABCDEF. A=10, B=11, C=12, D=13, E=14, F=15.</li><li>1 byte: 00–FF (0–255). 2 bytes: 0000–FFFF (0–65,535).</li><li>Common prefixes: 0x (programming), # (CSS colors), U+ (Unicode).</li><li>MAC address: 6 bytes in hex, e.g. AA:BB:CC:DD:EE:FF.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimal vs Hexadecimal",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimal (base-10)"
+        },
+        {
+          "id": "unit2",
+          "name": "Hexadecimal (base-16)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Digits",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–9, A–F"
+          }
+        },
+        {
+          "name": "Example: 255",
+          "values": {
+            "unit1": "255",
+            "unit2": "FF"
+          }
+        },
+        {
+          "name": "Example: 1000",
+          "values": {
+            "unit1": "1000",
+            "unit2": "3E8"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "Everyday math",
+            "unit2": "Colors, addresses, data"
+          }
+        },
+        {
+          "name": "Compactness",
+          "values": {
+            "unit1": "Standard",
+            "unit2": "More compact than binary"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ce este 255 in Hex?",
+          "answer": "255 = FF in Hexadezimal. Maximum eines Bytes."
+        },
+        {
+          "question": "Was bedeutet 0x?",
+          "answer": "0x ist ein Präfix für Hexadezimalzahlen in den meisten Sprachen (C, JavaScript, Python)."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DEC în HEX – Arteon",
+      "defaultSubject": "Feedback: dec-to-hex"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

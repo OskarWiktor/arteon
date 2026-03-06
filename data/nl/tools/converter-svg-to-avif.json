@@ -2,14 +2,14 @@
   "toolKey": "svgToAvif",
   "locale": "nl",
   "metadata": {
-    "title": "SVG naar AVIF converter — SVG AVIF",
-    "description": "Converteer vector SVG-afbeeldingen naar compact AVIF-rasterformaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "title": "SVG naar AVIF converter - SVG AVIF",
+    "description": "Converteer vector SVG-afbeeldingen naar compact AVIF-rasterformaat. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/svg-naar-avif-converter"
   },
   "hero": {
     "title": "SVG naar AVIF converter",
-    "description": "Converteer vector SVG-afbeeldingen naar compact AVIF-rasterformaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "description": "Converteer vector SVG-afbeeldingen naar compact AVIF-rasterformaat. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG naar AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer vector SVG-afbeeldingen naar compact AVIF-rasterformaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+      "description": "Converteer vector SVG-afbeeldingen naar compact AVIF-rasterformaat. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["SVG naar AVIF omzetten", "SVG naar AVIF conversie", "Gratis SVG naar AVIF converter"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Kwaliteit instellen",
-          "text": "Pas de AVIF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+          "text": "Pas de AVIF-kwaliteitsschuifregelaar aan - lagere waarden geven kleinere bestanden."
         },
         {
           "position": 3,
           "name": "Converteren",
-          "text": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
+          "text": "Klik op Converteren - bestanden worden lokaal in de browser verwerkt."
         },
         {
           "position": 4,
           "name": "Downloaden",
-          "text": "Download de AVIF-bestanden — individueel of allemaal tegelijk."
+          "text": "Download de AVIF-bestanden - individueel of allemaal tegelijk."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kwaliteit — wat kiezen bij conversie SVG naar AVIF?",
-      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standaard) — goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% — voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% — wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 80% is het verschil tussen origineel SVG en AVIF praktisch onzichtbaar.</p>"
+      "title": "Kwaliteit - wat kiezen bij conversie SVG naar AVIF?",
+      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standaard) - goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% - voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% - wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 80% is het verschil tussen origineel SVG en AVIF praktisch onzichtbaar.</p>"
     },
     {
       "type": "gap",

@@ -2,7 +2,7 @@
   "toolKey": "pdfToWebp",
   "locale": "hu",
   "metadata": {
-    "title": "PDF WebP konverter — PDF WebP",
+    "title": "PDF WebP konverter - PDF WebP",
     "description": "PDF oldalak konvertálása WebP képekké. Kiváló minőség, korlátok nélkül. Ingyenes.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/pdf-webp-konverter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertálás",
-          "text": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+          "text": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes PDF-t WebP-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A PDF szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a WebP formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a PDF fajlokat WebP formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A PDF szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a WebP formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a PDF fajlokat WebP formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "PDF to WebP conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertálás",
-          "description": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
+          "description": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Minosegi beallitasok — mit valassz PDF WebP konvertalasahoz?",
-      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (alap) — jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% — termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% — amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">80%-os minosegnel a kulonbseg PDF es WebP kozott szabad szemmel eszrevehetetlen.</p>"
+      "title": "Minosegi beallitasok - mit valassz PDF WebP konvertalasahoz?",
+      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (alap) - jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% - termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% - amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">80%-os minosegnel a kulonbseg PDF es WebP kozott szabad szemmel eszrevehetetlen.</p>"
     },
     {
       "type": "gap",
@@ -320,6 +320,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose WebP vs JPG vs PNG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">WebP offers the best balance of quality and file size for web use. Files are 25–35% smaller than JPG at equivalent quality and support both lossy and lossless compression modes.</p><p class=\"text-mid mb-4\">Choose WebP when the images will be displayed on websites or shared digitally. Choose JPG when you need maximum compatibility (older devices, email clients). Choose PNG when you need lossless quality (documents with text, technical drawings).</p><p class=\"text-mid\">WebP is supported by all modern browsers (Chrome, Firefox, Safari 14+, Edge). For the few remaining users on very old browsers, serve JPG as a fallback using the HTML &lt;picture&gt; element.</p>"
     },
     {
       "type": "faq",

@@ -2,7 +2,7 @@
   "toolKey": "tiffToPdf",
   "locale": "da",
   "metadata": {
-    "title": "TIFF til PDF-konverter — TIFF PDF",
+    "title": "TIFF til PDF-konverter - TIFF PDF",
     "description": "Konverter TIFF-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/tiff-til-pdf-konverter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konverter",
-          "text": "Klik på Konverter — filerne behandles lokalt i din browser."
+          "text": "Klik på Konverter - filerne behandles lokalt i din browser."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere TIFF til PDF?",
-      "html": "<p class=\"text-mid mb-4\">TIFF er et udbredt filformat med bred kompatibilitet. Afhaengigt af brugen kan konvertering til PDF give betydelige fordele — mindre filer, bedre kvalitet eller bredere platformsunderstottelse.</p><p class=\"text-mid mb-4\">Denne gratis online-konverter omdanner dine TIFF-filer til PDF-format direkte i browseren. Ingen filer uploades — hele processen foregaar lokalt pa din enhed.</p><p class=\"text-mid\">Konverter sa mange filer, du vil, uden daglige begraensninger, uden registrering og uden vandmaerker. Traek og slip filer, juster kvaliteten og download resultaterne.</p>",
+      "html": "<p class=\"text-mid mb-4\">TIFF er et udbredt filformat med bred kompatibilitet. Afhaengigt af brugen kan konvertering til PDF give betydelige fordele - mindre filer, bedre kvalitet eller bredere platformsunderstottelse.</p><p class=\"text-mid mb-4\">Denne gratis online-konverter omdanner dine TIFF-filer til PDF-format direkte i browseren. Ingen filer uploades - hele processen foregaar lokalt pa din enhed.</p><p class=\"text-mid\">Konverter sa mange filer, du vil, uden daglige begraensninger, uden registrering og uden vandmaerker. Traek og slip filer, juster kvaliteten og download resultaterne.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "TIFF to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konverter",
-          "description": "Klik på Konverter — filerne behandles lokalt i din browser.",
+          "description": "Klik på Konverter - filerne behandles lokalt i din browser.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — hvad vaelge ved konvertering TIFF til PDF?",
-      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 85% er forskellen mellem TIFF og PDF praktisk talt umaerkelig.</p>"
+      "title": "Kvalitet - hvad vaelge ved konvertering TIFF til PDF?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) - godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% - til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% - nar filstørrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 85% er forskellen mellem TIFF og PDF praktisk talt umaerkelig.</p>"
     },
     {
       "type": "gap",
@@ -210,18 +210,18 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering TIFF til PDF",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis TIFF allerede var komprimeret, giver konvertering til PDF maske ikke stor besparelse."
+          "description": "Hvis TIFF allerede var komprimeret, giver konvertering til PDF måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">TIFF to PDF conversion is commonly used for document archival and sharing. TIFF files cannot be viewed in web browsers or opened easily on most devices, while PDF is universally readable.</p><p class=\"text-mid mb-4\">When sharing PDFs online, file size matters. TIFF files are large (10–50 MB each), but the converter compresses images within the PDF to produce more manageable file sizes. A 10-page PDF from TIFF scans will typically be 10–30 MB.</p><p class=\"text-mid\">For web display, consider converting TIFF directly to JPG, WebP, or AVIF instead. These formats produce much smaller files optimized for browser display.</p>"
     },
     {
       "type": "faq",

@@ -28,7 +28,7 @@
       "alternateName": ["Zamiana AVIF na WebP online", "Konwersja AVIF do WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter AVIF na WebP online. Zamień pliki AVIF na WebP z szeroką kompatybilnością — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter AVIF na WebP online. Zamień pliki AVIF na WebP z szeroką kompatybilnością - pliki nie są wysyłane na serwer.",
       "featureList": ["Konwersja AVIF do WebP", "Regulacja poziomu jakości", "Zachowanie przezroczystości", "Przetwarzanie lokalne w przeglądarce"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować AVIF na WebP?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do nowoczesnych obrazów webowych.</p><p class=\"text-mid mb-4\">Konwersja AVIF na WebP (WebP) pozwala wykorzystać nowoczesną kompresję, która zmniejsza rozmiar plików bez utraty jakości.</p><p class=\"text-mid mb-4\">WebP obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. WebP obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików AVIF, ile potrzebujesz – całkowicie za darmo.</p>",
+      "html": "<p class=\"text-mid mb-4\">AVIF oferuje najlepszą kompresję spośród wszystkich formatów obrazów w przeglądarkach, ale jego wsparcie jest wciąż ograniczone — Safari obsługuje AVIF dopiero od wersji 16.4 (2023), a wiele CMS-ów, wtyczek i CDN-ów nadal nie generuje wariantów AVIF. WebP jest bezpieczniejszą alternatywą: obsługiwany przez wszystkie nowoczesne przeglądarki od 2020 roku.</p><p class=\"text-mid mb-4\">WebP oferuje kompresję o 25–35% lepszą niż JPG, obsługuje kanał alfa (przezroczystość), kompresję stratną i bezstratną oraz animacje. Konwersja AVIF na WebP to kompromis — pliki będą nieco większe niż AVIF, ale kompatybilne z szerszą gamą urządzeń i platform.</p><p class=\"text-mid mb-4\">Konwersja jest szczególnie przydatna, gdy Twój CMS (WordPress, Shopify, Shoper) obsługuje WebP, ale nie AVIF, lub gdy dostarczasz obrazy przez CDN, który nie wspiera AVIF. Przezroczystość z pliku AVIF zostanie zachowana w WebP.</p><p class=\"text-mid\">Konwerter przetwarza pliki lokalnie w przeglądarce — nic nie jest wysyłane na serwer. Bez rejestracji, bez limitów, bez znaków wodnych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwersja AVIF na WEBP",
       "variant": "right"
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji AVIF na WebP?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem AVIF a wynikowym WebP jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji AVIF na WebP?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem AVIF a wynikowym WebP jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -263,7 +263,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów AVIF na WebP zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów AVIF na WebP zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -293,7 +293,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików AVIF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików AVIF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },

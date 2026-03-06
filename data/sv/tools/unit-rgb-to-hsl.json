@@ -1,0 +1,273 @@
+{
+  "toolKey": "rgbToHsl",
+  "locale": "sv",
+  "metadata": {
+    "title": "RGB till HSL – omvandlare",
+    "description": "Omvandla RGB till HSL och tvärtom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/sv/verktyg/rgb-till-hsl-omvandlare"
+  },
+  "hero": {
+    "title": "RGB till HSL",
+    "description": "Denna omvandlare räknar om direkt. Ange ett värde så visas resultatet omedelbart.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/rgb-till-hsl-omvandlare",
+      "label": "RGB till HSL"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "RGB till HSL – omvandlare",
+      "alternateName": ["RGB till HSL"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Omvandla RGB till HSL och tvärtom.",
+      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+    },
+    "howTo": {
+      "name": "Så använder du omvandlaren",
+      "description": "Snabbguide för att använda omvandlaren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Ange värde",
+          "text": "Skriv ett tal i inmatningsfältet till vänster."
+        },
+        {
+          "name": "Läs av resultatet",
+          "text": "Konverteringsresultatet visas omedelbart i fältet bredvid."
+        },
+        {
+          "name": "Kopiera eller vänd",
+          "text": "Klicka på Kopiera resultat eller på Vänd för att konvertera i andra riktningen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "När ska man omvandla RGB till HSL?",
+      "html": "<p class=\"text-mid mb-4\">HSL (Nyans, Mättnad, Ljushet) är en mer intuitiv färgrepresentation. Nyans = färgvinkel (0–360°), Mättnad = intensitet (0–100%), Ljushet = ljus/mörk (0–100%).</p><p class=\"text-mid\">Alla beräkningar körs lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB to HSL converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Så använder du omvandlaren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ange värde",
+          "description": "Skriv ett tal i inmatningsfältet. Du kan använda punkt eller komma som decimalavskiljare.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Läs av resultatet",
+          "description": "Konverteringsresultatet visas omedelbart i fältet bredvid – utan att klicka.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiera eller vänd",
+          "description": "Klicka på Kopiera resultat eller använd knappen Vänd.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När är denna omvandlare användbar?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Färghantering",
+          "description": "HSL gör hover enklare: mörkare genom att sänka L, avsätta genom att sänka S."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webbutveckling",
+          "description": "Konsekventa färgskalor via ljushetsvariation."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Färgteori",
+          "description": "HSL motsvarar färghjulet. Komplementär = H+180°."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Tillgänglighet",
+          "description": "HSL-ljushet hjälper till att säkerställa tillräcklig kontrast."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna omvandlare speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Alla beräkningar görs lokalt i din webbläsare. Ingen data skickas till någon server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultat i realtid",
+          "description": "Resultatet uppdateras omedelbart när du skriver – inget klick krävs."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Dubbelriktad konvertering",
+          "description": "Vänd-knappen låter dig konvertera i båda riktningarna med ett klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenstabell",
+          "description": "En färdig tabell med ofta konverterade värden och kontextuella beskrivningar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">Normalisera RGB till 0–1. Hitta max och min. L = (max + min) / 2.</p><p class=\"text-mid\">HSL är helt reversibel — tillbaka till RGB ger exakt samma färg.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">Normalisera RGB till 0–1. Hitta max och min. L = (max + min) / 2.</p><p class=\"text-mid\">HSL är helt reversibel — tillbaka till RGB ger exakt samma färg.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs HSL",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "HSL",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Modell",
+          "values": {
+            "unit1": "Additiva kanaler",
+            "unit2": "Nyans/Mättnad/Ljushet"
+          }
+        },
+        {
+          "name": "Värden",
+          "values": {
+            "unit1": "0–255 per kanal",
+            "unit2": "H: 0–360°, S/L: 0–100%"
+          }
+        },
+        {
+          "name": "Intuitiv",
+          "values": {
+            "unit1": "Svår att förutse",
+            "unit2": "Lätt att justera"
+          }
+        },
+        {
+          "name": "Färgteori",
+          "values": {
+            "unit1": "Inte cirkelbaserad",
+            "unit2": "Motsvarar färghjulet"
+          }
+        },
+        {
+          "name": "CSS",
+          "values": {
+            "unit1": "rgb(R, G, B)",
+            "unit2": "hsl(H, S%, L%)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Vad är HSL?",
+          "answer": "Nyans (vinkel 0–360°), Mättnad (intensitet 0–100%), Ljushet (0–100%)."
+        },
+        {
+          "question": "Körs beräkningarna lokalt?",
+          "answer": "Ja. Alla beräkningar körs i din webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB till HSL – Arteon",
+      "defaultSubject": "Feedback: rgb-to-hsl"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra gratis verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

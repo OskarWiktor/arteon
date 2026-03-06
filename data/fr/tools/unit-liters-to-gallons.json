@@ -1,0 +1,277 @@
+{
+  "toolKey": "litersToGallons",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur litres en gallons",
+    "description": "Convertissez litres en gallons US et vice versa. Pour la consommation et la cuisine.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-litres-en-gallons"
+  },
+  "hero": {
+    "title": "Convertir litres en gallons",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-litres-en-gallons",
+      "label": "L en gal"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur litres en gallons",
+      "alternateName": ["Convertir litres en gallons"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez litres en gallons US et vice versa. Pour la consommation et la cuisine.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des litres en gallons ?",
+      "html": "<p class=\"text-mid mb-4\">Le litre (L) est l’unité standard de volume du système métrique. Le gallon américain = 3,78541 litres. Le gallon impérial (UK) = 4,54609 litres. Ce convertisseur utilise le gallon américain.</p><p class=\"text-mid mb-4\">Carburant : un réservoir de 50 L = 13,2 gallons. Consommation : 7 L/100km ≈ 33,6 mpg (US).</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur litres en gallons – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGasStationLine",
+          "title": "Carburant",
+          "description": "Les stations-service US vendent en gallons. 40 L = 10,6 gal."
+        },
+        {
+          "icon": "RiCarLine",
+          "title": "Cuisine",
+          "description": "Les recettes US utilisent gallons, quarts et tasses. 1 gallon = 3,785 L."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Aquariums",
+          "description": "Tailles d’aquariums US en gallons : 10 gal = 37,9 L, 55 gal = 208,2 L."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Piscine et jardin",
+          "description": "Produits chimiques et arrosage peuvent utiliser des gallons."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 gallon US = 3,785411784 litres (exact). 1 gallon UK = 4,54609 litres.</p><p class=\"text-mid\">Estimation rapide : divisez les litres par 4.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 gallon US = 3,785411784 litres (exact). 1 gallon UK = 4,54609 litres.</p><p class=\"text-mid\">Estimation rapide : divisez les litres par 4.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Litre vs Gallon US – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Litre (L)"
+        },
+        {
+          "id": "unit2",
+          "name": "Gallon US (gal)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Système",
+          "values": {
+            "unit1": "Métrique (SI)",
+            "unit2": "US Customary"
+          }
+        },
+        {
+          "name": "Valeur de base",
+          "values": {
+            "unit1": "1 000 mL",
+            "unit2": "3 785,41 mL"
+          }
+        },
+        {
+          "name": "Carburant",
+          "values": {
+            "unit1": "L/100km (Europe)",
+            "unit2": "MPG (USA)"
+          }
+        },
+        {
+          "name": "Cuisine",
+          "values": {
+            "unit1": "mL/L (international)",
+            "unit2": "Tasses/gal (USA)"
+          }
+        },
+        {
+          "name": "Gallon UK",
+          "values": {
+            "unit1": "4,546 L",
+            "unit2": "1,201 gal US"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de litres fait 1 gallon US ?",
+          "answer": "1 gallon US = 3,78541 litres."
+        },
+        {
+          "question": "Comment convertir L/100km en mpg ?",
+          "answer": "Divisez 235,215 par L/100km. Exemple : 8 L/100km = 29,4 mpg (US)."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "l na galony – Arteon",
+      "defaultSubject": "Feedback : liters-to-gallons"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

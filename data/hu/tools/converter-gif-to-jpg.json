@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Minosegi beallitasok — mit valassz GIF JPG konvertalasahoz?",
-      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (alap) — jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% — termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% — amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">85%-os minosegnel a kulonbseg GIF es JPG kozott szabad szemmel eszrevehetetlen.</p>"
+      "title": "Minosegi beallitasok - mit valassz GIF JPG konvertalasahoz?",
+      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (alap) - jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% - termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% - amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">85%-os minosegnel a kulonbseg GIF es JPG kozott szabad szemmel eszrevehetetlen.</p>"
     },
     {
       "type": "gap",
@@ -347,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Segítsen javítani eszközeinket",
-      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
+      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk - 24 órán belül válaszolunk.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "GIF JPG konverter – Arteon",
       "defaultSubject": "Feedback: GIF JPG konverter"

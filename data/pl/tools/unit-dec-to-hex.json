@@ -1,0 +1,289 @@
+{
+  "toolKey": "decToHex",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter dziesiętny na szesnastkowy – DEC ↔ HEX",
+    "description": "Przelicz liczby dziesiętne na szesnastkowe i odwrotnie. Konwerter jest przydatny w informatyce i programowaniu. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-dziesietny-na-szesnastkowy"
+  },
+  "hero": {
+    "title": "Przelicz system dziesiętny na szesnastkowy",
+    "description": "Ten konwerter przelicza liczby dziesiętne na szesnastkowe (HEX) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-dziesietny-na-szesnastkowy",
+      "label": "dziesiętny na szesnastkowy"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter dziesiętny na szesnastkowy – DEC ↔ HEX",
+      "alternateName": ["Przelicznik DEC HEX", "Kalkulator szesnastkowy", "Decimal to hexadecimal"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz liczby dziesiętne na szesnastkowe i odwrotnie. Konwerter jest przydatny w informatyce i programowaniu. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera dziesiętny na szesnastkowy",
+      "description": "Instrukcja użycia: dziesiętny na szesnastkowy.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy potrzebne jest przeliczanie na system szesnastkowy?",
+      "html": "<p class=\"text-mid mb-4\">System szesnastkowy (heksadecymalny) używa cyfr 0–9 i liter A–F (10–15). Jest zwięzłym sposobem zapisu wartości binarnych – każda cyfra HEX odpowiada dokładnie 4 bitom.</p><p class=\"text-mid mb-4\">Kolory CSS używają HEX: <code>#FF0000</code> (czerwony), <code>#00FF00</code> (zielony). Adresy pamięci, wartości bajtów i kody Unicode zapisuje się szesnastkowo.</p><p class=\"text-mid mb-4\">Adres MAC karty sieciowej: <code>00:1A:2B:3C:4D:5E</code> – 6 bajtów w zapisie HEX. Adresy IPv6 także używają HEX: <code>2001:0db8:85a3::8a2e:0370:7334</code>.</p><p class=\"text-mid\">255 dziesiętnie = FF szesnastkowo = 11111111 binarnie. Każdy bajt to dwie cyfry HEX (00–FF).</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "dziesiętny na szesnastkowy – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Kolory CSS",
+          "description": "#FF0000 = 255 (czerwony), #00FF00 = 255 (zielony)."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Programowanie",
+          "description": "Adresy pamięci, bajty, kody znaków Unicode."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Sieci",
+          "description": "Adresy MAC, IPv6, protokoły sieciowe."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Debugowanie",
+          "description": "Hex dump pamięci, analiza plików binarnych."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja DEC na HEX?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja z systemu dziesiętnego (DEC) na szesnastkowy (HEX) polega na wielokrotnym dzieleniu liczby przez 16 i zapisywaniu reszt w odwrotnej kolejności. Każda reszta z dzielenia jest jedną cyfrą szesnastkową, przy czym wartości 10–15 zapisuje się literami A–F.</p><p class=\"text-mid mb-4\">Na przykład liczba 255 dzielona przez 16 daje 15 z resztą 15. Reszta 15 to F w systemie szesnastkowym, a wynik 15 również daje F — stąd 255 dziesiętnie to FF szesnastkowo. Z kolei 256 daje wynik 100 w HEX, ponieważ po podzieleniu przez 16 otrzymujemy 16 z resztą 0, a 16 dzielone przez 16 to 1 z resztą 0.</p><p class=\"text-mid\">System szesnastkowy jest powszechnie stosowany w informatyce, ponieważ jeden bajt (8 bitów) odpowiada dokładnie dwóm cyfrom HEX, co czyni ten zapis zwięzłym i czytelnym dla programistów.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>255 = FF, 256 = 100, 65 535 = FFFF (16-bit max).</li><li>Prefiks 0x w programowaniu: <code>0xFF</code> = 255.</li><li>Kolor biały: #FFFFFF = rgb(255, 255, 255) = 16 777 215.</li><li>Każdy bajt = 2 cyfry HEX (00–FF).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Dziesiętny (DEC) vs Szesnastkowy (HEX) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Dziesiętny (DEC)"
+        },
+        {
+          "id": "unit2",
+          "name": "Szesnastkowy (HEX)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Podstawa",
+          "values": {
+            "unit1": "10",
+            "unit2": "16"
+          }
+        },
+        {
+          "name": "Cyfry",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–9, A–F"
+          }
+        },
+        {
+          "name": "Bajt (max)",
+          "values": {
+            "unit1": "255",
+            "unit2": "FF"
+          }
+        },
+        {
+          "name": "Prefiks",
+          "values": {
+            "unit1": "Brak",
+            "unit2": "0x (programowanie)"
+          }
+        },
+        {
+          "name": "Kolory CSS",
+          "values": {
+            "unit1": "rgb(255, 0, 0)",
+            "unit2": "#FF0000"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile to FF szesnastkowo?",
+          "answer": "FF = 15×16 + 15 = 255 dziesiętnie. To maksymalna wartość bajtu."
+        },
+        {
+          "question": "Jak przeliczyć HEX na DEC?",
+          "answer": "Mnoż każdą cyfrę przez odpowiednią potęgę 16. Przykład: 1A = 1×16 + 10×1 = 26."
+        },
+        {
+          "question": "Co oznacza 0x w kodzie?",
+          "answer": "Prefiks 0x informuje kompilator, że następująca liczba jest szesnastkowa: <code>0xFF</code> = 255."
+        },
+        {
+          "question": "Dlaczego kolory CSS używają HEX?",
+          "answer": "Każdy kanał (R, G, B) ma zakres 0–255 = 00–FF. Trzy pary HEX = 6 znaków = pełny kolor."
+        },
+        {
+          "question": "Ile to FFFFFF szesnastkowo?",
+          "answer": "FFFFFF = 16 777 215 dziesiętnie. To maksymalna wartość 24-bitowa (3 bajty, kolor biały)."
+        },
+        {
+          "question": "Jak przeliczyć HEX w języku JavaScript?",
+          "answer": "W JavaScript można zamienić liczbę dziesiętną na szesnastkową za pomocą metody toString(16), a w drugą stronę — za pomocą parseInt z podstawą 16. Na przykład liczba 255 po konwersji daje ff, a ciąg ff przeliczony z powrotem daje 255."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "dziesiętny na szesnastkowy – Arteon",
+      "defaultSubject": "Feedback: dziesiętny na szesnastkowy"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "JPG PNG konverter – JPG PNG",
-    "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+    "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/jpg-png-konverter"
   },
   "hero": {
     "title": "JPG PNG konverter",
-    "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+    "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["JPG konvertálása PNG formátumba", "JPG–PNG átalakítás", "Ingyenes JPG–PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+      "description": "JPG képek konvertálása veszteségmentes PNG-re. Helyi feldolgozás a böngészőben. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["JPG – PNG konvertálás", "Veszteségmentes PNG kimenet", "Csoportos konvertálás", "Helyi böngészős feldolgozás", "Nincs fájlfeltöltés"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Konvertálás PNG formátumra",
-          "text": "Kattintson a konvertálásra. A PNG veszteségmentes — nincs szükség minőségi beállításra."
+          "text": "Kattintson a konvertálásra. A PNG veszteségmentes - nincs szükség minőségi beállításra."
         },
         {
           "name": "PNG fájlok letöltése",
@@ -338,7 +338,7 @@
     {
       "type": "contactForm",
       "title": "Segítsen javítani eszközeinket",
-      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk — 24 órán belül válaszolunk.",
+      "description": "Van ötlete, hibát talált vagy funkciót javasol? Írjon nekünk - 24 órán belül válaszolunk.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "JPG PNG konverter – Arteon",
       "defaultSubject": "Feedback: JPG PNG konverter"

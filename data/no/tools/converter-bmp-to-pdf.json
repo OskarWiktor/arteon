@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "bmp": "Alle nettlesere",
-            "pdf": "Innebygd PDF-visning"
+            "bmp": true,
+            "pdf": false
           }
         },
         {
@@ -191,8 +191,7 @@
             "pdf": false
           }
         }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",
@@ -247,6 +246,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">BMP to PDF conversion creates document files for sharing and archiving. When embedding or linking PDFs on websites, file size directly affects download speed and user experience.</p><p class=\"text-mid mb-4\">BMP files are uncompressed, but the converter compresses images within the PDF to produce manageable file sizes. A typical 18 MB BMP becomes approximately 1–2 MB within a PDF thanks to internal JPEG compression.</p><p class=\"text-mid\">For web publishing, consider converting BMP directly to WebP or AVIF instead of PDF. These modern formats produce the smallest files optimized for browser display.</p>"
     },
     {
       "type": "faq",

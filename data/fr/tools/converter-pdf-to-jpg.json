@@ -2,7 +2,7 @@
   "toolKey": "pdfToJpg",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur PDF en JPG — PDF JPG",
+    "title": "Convertisseur PDF en JPG - PDF JPG",
     "description": "Convertissez les pages PDF en images JPG. Haute qualité, sans limites. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-pdf-en-jpg"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Convertir",
-          "text": "Cliquez sur Convertir — le traitement est local dans votre navigateur."
+          "text": "Cliquez sur Convertir - le traitement est local dans votre navigateur."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir PDF en JPG ?",
-      "html": "<p class=\"text-mid mb-4\">PDF est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en JPG peut offrir des avantages significatifs — fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers PDF au format JPG directement dans le navigateur. Aucun fichier n'est envoye sur un serveur — tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en JPG peut offrir des avantages significatifs - fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers PDF au format JPG directement dans le navigateur. Aucun fichier n'est envoye sur un serveur - tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "PDF to JPG conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Convertir",
-          "description": "Cliquez sur Convertir — le traitement est local dans votre navigateur.",
+          "description": "Cliquez sur Convertir - le traitement est local dans votre navigateur.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Reglages de qualite — que choisir pour PDF vers JPG ?",
-      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (defaut) — bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% — pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% — quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 85% la difference visuelle entre PDF original et JPG resultant est imperceptible.</p>"
+      "title": "Reglages de qualite - que choisir pour PDF vers JPG ?",
+      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (defaut) - bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% - pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% - quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 85% la difference visuelle entre PDF original et JPG resultant est imperceptible.</p>"
     },
     {
       "type": "gap",
@@ -256,6 +256,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose JPG vs PNG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">JPG uses lossy compression optimized for photographs. It produces small files but may show visible artifacts around text and sharp edges. Choose JPG for photo-heavy PDFs like catalogs, brochures, and photo albums.</p><p class=\"text-mid mb-4\">PNG is lossless and preserves sharp edges perfectly. Choose PNG for documents with text, technical drawings, invoices, and diagrams. PNG files will be 3–5× larger than JPG.</p><p class=\"text-mid\">For web use, consider WebP — it offers better compression than both JPG and PNG while supporting transparency. Use <a href=\"/en/tools/pdf-to-webp-converter\">our PDF to WebP converter</a> for optimal web performance.</p>"
     },
     {
       "type": "faq",

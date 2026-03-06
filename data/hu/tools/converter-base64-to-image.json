@@ -2,7 +2,7 @@
   "toolKey": "base64ToImage",
   "locale": "hu",
   "metadata": {
-    "title": "Base64 kép konverter — Base64 kép",
+    "title": "Base64 kép konverter - Base64 kép",
     "description": "Base64 karakterláncok dekódolása képekké. Előnézet és letöltés a böngészőben. Ingyenes.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/base64-kep-konverter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertálás",
-          "text": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+          "text": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes Base64-t kép-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A BASE64 szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a IMAGE formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a BASE64 fajlokat IMAGE formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A BASE64 szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a IMAGE formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a BASE64 fajlokat IMAGE formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "Base64 to kép conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertálás",
-          "description": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
+          "description": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Mennyit takarit meg BASE64 IMAGE konvertalasaval?",
-      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+      "title": "Hogyan m\u0171k\u00f6dik a Base64 k\u00e9p dek\u00f3dol\u00e1s?",
+      "html": "<p class=\"text-mid mb-4\">A Base64 dek\u00f3dol\u00e1s a Base64 k\u00f3dol\u00e1s ford\u00edtott m\u0171velete \u2014 a sz\u00f6veges karakterl\u00e1ncot visszaalak\u00edtja bin\u00e1ris k\u00e9padatokk\u00e1. A konvert\u00e1l\u00f3 beolvassa a Base64 karakterl\u00e1ncot (Data URI el\u0151taggal vagy an\u00e9lk\u00fcl), dek\u00f3dolja nyers b\u00e1jtokk\u00e1 \u00e9s helyre\u00e1ll\u00edtja az eredeti k\u00e9pf\u00e1jlt.</p><p class=\"text-mid mb-4\">A Data URI el\u0151tag (pl. data:image/png;base64,) megmondja a konvert\u00e1l\u00f3nak, milyen k\u00e9pform\u00e1tumot haszn\u00e1ljon. Ha az el\u0151tag hi\u00e1nyzik, a konvert\u00e1l\u00f3 automatikusan \u00e9szleli a form\u00e1tumot a dek\u00f3dolt adatok bin\u00e1ris al\u00e1\u00edr\u00e1s\u00e1b\u00f3l (magic bytes).</p><p class=\"text-mid\">Ez az eszk\u00f6z hasznos, ha k\u00e9pet kell kinyernie HTML oldalb\u00f3l, CSS f\u00e1jlb\u00f3l, API v\u00e1laszb\u00f3l vagy adatb\u00e1zisb\u00f3l, amely k\u00e9peket Base64 karakterl\u00e1nck\u00e9nt t\u00e1rol. A konvert\u00e1l\u00e1s teljes eg\u00e9sz\u00e9ben a b\u00f6ng\u00e9sz\u0151dben t\u00f6rt\u00e9nik.</p>"
     },
     {
       "type": "gap",
@@ -138,29 +138,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tippek BASE64 IMAGE konvertalasahoz",
-      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "title": "Tippek a Base64 k\u00e9p dek\u00f3dol\u00e1shoz",
+      "description": "N\u00e9h\u00e1ny tipp a gyakori probl\u00e9m\u00e1k elker\u00fcl\u00e9s\u00e9re:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Nagyon nagy fajlok",
-          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+          "title": "Data URI el\u0151tag",
+          "description": "A konvert\u00e1l\u00f3 elfogadja a Base64 karakterl\u00e1ncokat Data URI el\u0151taggal \u00e9s an\u00e9lk\u00fcl (data:image/...). Ha az el\u0151tag l\u00e9tezik, a kimeneti form\u00e1tum meghat\u00e1roz\u00e1s\u00e1ra szolg\u00e1l."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Mar tomoriteett fajlok",
-          "description": "Ha a BASE64 mar erosen tomoriteett volt, IMAGE konvertalas keveset takarithat."
+          "icon": "RiCodeLine",
+          "title": "\u00c9rv\u00e9nytelen karakterek",
+          "description": "A Base64 karakterl\u00e1ncok csak A\u2013Z, a\u2013z, 0\u20139, +, / \u00e9s = (kit\u00f6lt\u00e9s) karaktereket tartalmazhatnak. A sz\u00f3k\u00f6z\u00f6k \u00e9s sort\u00f6r\u00e9sek automatikusan elt\u00e1vol\u00edt\u00e1sra ker\u00fclnek dek\u00f3dol\u00e1s el\u0151tt."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Atlatszosag",
-          "description": "IMAGE nem tamogatja az atlatszosagot. Feher hatter lesz. Hasznaljon PNG-t vagy WebP-t."
+          "icon": "RiFileImageLine",
+          "title": "Kimeneti form\u00e1tum",
+          "description": "A dek\u00f3dolt k\u00e9p a Data URI el\u0151tag \u00e1ltal meghat\u00e1rozott form\u00e1tumban ment\u0151dik. El\u0151tag n\u00e9lk\u00fcl a konvert\u00e1l\u00f3 automatikusan \u00e9szleli a form\u00e1tumot."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Orizze meg az eredetiket",
-          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a BASE64 fajlok masolatait."
+          "icon": "RiFileCodeLine",
+          "title": "Hossz\u00fa karakterl\u00e1ncok",
+          "description": "A nagyon hossz\u00fa Base64 karakterl\u00e1ncok (nagy k\u00e9peket k\u00e9pviselve) dek\u00f3dol\u00e1sa id\u0151be telhet. A konvert\u00e1l\u00f3 b\u00e1rmilyen hossz\u00fas\u00e1g\u00fa karakterl\u00e1ncot feldolgoz, amelyet a b\u00f6ng\u00e9sz\u0151je kezelni tud."
         }
       ]
     },
@@ -190,16 +190,16 @@
           "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
         },
         {
-          "question": "Biztonsagos BASE64 IMAGE konvertalasa?",
-          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+          "question": "Biztons\u00e1gos a Base64 k\u00e9p dek\u00f3dol\u00e1s?",
+          "answer": "Igen. A dek\u00f3dol\u00e1si folyamat teljes eg\u00e9sz\u00e9ben a b\u00f6ng\u00e9sz\u0151dben t\u00f6rt\u00e9nik. Az adatai soha nem ker\u00fclnek szerverre."
         },
         {
-          "question": "Konvertalhatok tobb BASE64 fajlt egyszerre?",
-          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+          "question": "Milyen k\u00e9pform\u00e1tumok t\u00e1mogatottak?",
+          "answer": "A konvert\u00e1l\u00f3 k\u00e9pes Base64 karakterl\u00e1ncokat PNG, JPG, GIF, WebP, SVG, BMP \u00e9s m\u00e1s szabv\u00e1nyos form\u00e1tumokba dek\u00f3dolni. A form\u00e1tum automatikusan \u00e9szlel\u0151dik a Data URI el\u0151tagb\u00f3l vagy bin\u00e1ris tartalomb\u00f3l."
         },
         {
-          "question": "Minden bongeszo tamogatja a IMAGE-t?",
-          "answer": "IMAGE-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
+          "question": "Hogyan kapok Base64 karakterl\u00e1ncot egy k\u00e9pb\u0151l?",
+          "answer": "K\u00e9pek Base64 karakterl\u00e1ncai megtal\u00e1lhat\u00f3k HTML forr\u00e1sk\u00f3dban (src attrib\u00fatum), CSS f\u00e1jlokban (background-image), API v\u00e1laszokban vagy adatb\u00e1zisokban. Keressen data:image/ kezdet\u0171 karakterl\u00e1ncokat, amelyeket base64, k\u00f6vet."
         }
       ]
     },

@@ -140,7 +140,7 @@ export default function PrivacybeleidPage() {
               <li>hosting-/applicatieproviders (bijv. Vercel),</li>
               <li>aanbieders van analysetools (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),</li>
               <li>aanbieders van advertentiediensten (Google Ireland Ltd. - Google AdSense),</li>
-              <li>boekhoudkantoor, betalingsverwerkers of juridische adviseurs — indien nodig.</li>
+              <li>boekhoudkantoor, betalingsverwerkers of juridische adviseurs - indien nodig.</li>
             </ul>
             <p>Alle ontvangers verwerken gegevens in overeenstemming met de AVG op basis van passende overeenkomsten.</p>
           </SectionInfo>
@@ -164,10 +164,10 @@ export default function PrivacybeleidPage() {
 
           <SectionInfo title="8. Bewaartermijn van gegevens">
             <ul className="list-disc space-y-1 pl-6">
-              <li>Gegevens uit het contactformulier — tot 12 maanden na het einde van de correspondentie.</li>
-              <li>Klantgegevens — voor de wettelijk vereiste periode (boekhoudkundige documentatie).</li>
-              <li>Analytische gegevens — conform het Google Analytics-beleid (bijv. 26 maanden).</li>
-              <li>Logboeken — voor de periode die nodig is voor beveiliging en verantwoording (doorgaans tot 12 maanden, tenzij regelgeving anders bepaalt).</li>
+              <li>Gegevens uit het contactformulier - tot 12 maanden na het einde van de correspondentie.</li>
+              <li>Klantgegevens - voor de wettelijk vereiste periode (boekhoudkundige documentatie).</li>
+              <li>Analytische gegevens - conform het Google Analytics-beleid (bijv. 26 maanden).</li>
+              <li>Logboeken - voor de periode die nodig is voor beveiliging en verantwoording (doorgaans tot 12 maanden, tenzij regelgeving anders bepaalt).</li>
             </ul>
           </SectionInfo>
 

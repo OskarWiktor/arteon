@@ -43,7 +43,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Gratis onlineverktyg — bildkonverterare, SEO, färger, favicon',
+  name: 'Gratis onlineverktyg - bildkonverterare, SEO, färger, favicon',
   description:
     'Gratis onlineverktyg: 24 bildkonverterare (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, bildredigerare, texträknare, färgpaletter och QR-koder. Utan registrering.',
   url: toAbsoluteUrl('/sv/verktyg'),
@@ -549,12 +549,12 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Bildredigerare online',
               topImageAlt: 'Bildredigerare online Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/bildredigerare-online-sv.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/bildredigerare-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>Förbered den perfekta beskärningen för sociala medier eller din webbplats. Välj ett färdigt format eller ange egna pixelmått och ladda ner bilden som PNG, JPG eller WebP.</p>
                   <div className="mt-4">
-                    <Button arrow link="/sv/verktyg/bildredigerare-online">
+                    <Button arrow link="/sv/verktyg/bildredigerare">
                       Öppna verktyg
                     </Button>
                   </div>
@@ -615,6 +615,23 @@ export default function ToolsIndexPage() {
                   <div className="mt-4">
                     <Button arrow link="/sv/verktyg/ord-och-teckenraknare">
                       Oppna verktyget
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Lorem Ipsum-generator',
+              topImageAlt: 'Lorem Ipsum-generator Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Generera utfyllnadstext i 8 stilar och 9 lägen. Lorem Ipsum, Hipster, Business, Bacon och fler. Kopiera som text eller HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/lorem-ipsum-generator">
+                      Öppna verktyget
                     </Button>
                   </div>
                 </div>
@@ -733,7 +750,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Bildformatskonverterare"
-          description="24 bildkonverterare online — konvertera mellan JPG, PNG, WebP, SVG, BMP och GIF. Konvertering i webbläsaren, inga filer skickas."
+          description="24 bildkonverterare online - konvertera mellan JPG, PNG, WebP, SVG, BMP och GIF. Konvertering i webbläsaren, inga filer skickas."
           grid="three"
           items={[
             {
@@ -832,17 +849,26 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Datakonverterare"
+          description="Online dataformatkonverterare — konvertera mellan CSV, JSON, XML, YAML, Markdown och HTML. Bearbetning i webbläsaren."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG till PNG-konverterare',
-              topImageAlt: 'SVG till PNG-konverterare Arteon',
+              title: 'CSV till JSON',
+              topImageAlt: 'CSV till JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Konvertera SVG-vektorgrafik till PNG. Perfekt för dokument och sociala medier.</p>
+                  <p>Konvertera CSV till JSON-format. Automatisk avskiljardetektion och formatering.</p>
                   <div className="mt-4">
-                    <Button arrow link="/sv/verktyg/svg-till-png-konverterare">
-                      Öppna verktyg
+                    <Button arrow link="/sv/verktyg/csv-till-json-konverterare">
+                      Öppna verktyget
                     </Button>
                   </div>
                 </div>
@@ -850,15 +876,15 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG till JPG-konverterare',
-              topImageAlt: 'SVG till JPG-konverterare Arteon',
+              title: 'JSON till CSV',
+              topImageAlt: 'JSON till CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Konvertera SVG-filer till kompakt JPG. Mindre fil, full kompatibilitet.</p>
+                  <p>Konvertera JSON-data till CSV-format. Bearbetning i webbläsaren.</p>
                   <div className="mt-4">
-                    <Button arrow link="/sv/verktyg/svg-till-jpg-konverterare">
-                      Öppna verktyg
+                    <Button arrow link="/sv/verktyg/json-till-csv-konverterare">
+                      Öppna verktyget
                     </Button>
                   </div>
                 </div>
@@ -866,15 +892,63 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP till JPG-konverterare',
-              topImageAlt: 'BMP till JPG-konverterare Arteon',
+              title: 'XML till JSON',
+              topImageAlt: 'XML till JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Konvertera BMP-filer till lättvikts-JPG. Drastisk storleksminskning.</p>
+                  <p>Konvertera XML-data till JSON. Webbläsarbaserad konvertering med validering.</p>
                   <div className="mt-4">
-                    <Button arrow link="/sv/verktyg/bmp-till-jpg-konverterare">
-                      Öppna verktyg
+                    <Button arrow link="/sv/verktyg/xml-till-json-konverterare">
+                      Öppna verktyget
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON till XML',
+              topImageAlt: 'JSON till XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera JSON-data till giltig XML. Konvertering med formatering.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/json-till-xml-konverterare">
+                      Öppna verktyget
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML till JSON',
+              topImageAlt: 'YAML till JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera YAML-konfiguration till JSON. Validering och formatering.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/yaml-till-json-konverterare">
+                      Öppna verktyget
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON till YAML',
+              topImageAlt: 'JSON till YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konvertera JSON-data till läsbar YAML. Bearbetning i webbläsaren.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/sv/verktyg/json-till-yaml-konverterare">
+                      Öppna verktyget
                     </Button>
                   </div>
                 </div>
@@ -911,6 +985,7 @@ export default function ToolsIndexPage() {
             { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Tillgangligt pa svenska', description: 'Alla verktyg ar tillgangliga pa svenska -- granssnitt, instruktioner och meddelanden.' },
           ]}
         />
+
         <Gap variant="line" />
         <FaqPanels items={faqItems} title="Vanliga fragor om vara verktyg" />
         <Gap size="sm" />

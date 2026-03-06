@@ -1,0 +1,277 @@
+{
+  "toolKey": "gramsToOunces",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur grammes en onces",
+    "description": "Convertissez grammes en onces et vice versa. Pour la cuisine, la bijouterie et les poids postaux.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-grammes-en-onces"
+  },
+  "hero": {
+    "title": "Convertir grammes en onces",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-grammes-en-onces",
+      "label": "g en oz"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur grammes en onces",
+      "alternateName": ["Convertir grammes en onces"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez grammes en onces et vice versa. Pour la cuisine, la bijouterie et les poids postaux.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des grammes en onces ?",
+      "html": "<p class=\"text-mid mb-4\">Le gramme (g) est une unité métrique de masse égale à 1/1000 de kilogramme. L’once (oz) est une unité impériale égale à 28,3495 grammes. Cette conversion est importante pour la cuisine, la bijouterie, le courrier et la nutrition.</p><p class=\"text-mid mb-4\">Exemples : 100 g = 3,53 oz, 250 g = 8,82 oz, 500 g = 17,64 oz.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur grammes en onces – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Cuisine et pâtisserie",
+          "description": "Les recettes US/UK utilisent des onces. 100 g = 3,5 oz, 250 g de beurre = 8,8 oz."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Bijouterie",
+          "description": "Les métaux précieux utilisent l’once troy (31,1 g). Le prix de l’or est coté par once troy."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Courrier",
+          "description": "Les tarifs postaux US sont basés sur les onces. Lettre standard < 1 oz = 28,35 g."
+        },
+        {
+          "icon": "RiHeartLine",
+          "title": "Nutrition",
+          "description": "Les tableaux nutritionnels US indiquent les portions en onces."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">L’once avoirdupois (standard US/UK) = 28,349523125 g exactement. Pour convertir grammes en onces, divisez par 28,3495.</p><p class=\"text-mid mb-4\">Note : l’once troy (métaux précieux) = 31,1035 g. Ce convertisseur utilise les onces avoirdupois.</p><p class=\"text-mid\">Estimation rapide : divisez les grammes par 28.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">L’once avoirdupois (standard US/UK) = 28,349523125 g exactement. Pour convertir grammes en onces, divisez par 28,3495.</p><p class=\"text-mid mb-4\">Note : l’once troy (métaux précieux) = 31,1035 g. Ce convertisseur utilise les onces avoirdupois.</p><p class=\"text-mid\">Estimation rapide : divisez les grammes par 28.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Gramme vs Once – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Gramme (g)"
+        },
+        {
+          "id": "unit2",
+          "name": "Once (oz)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Système",
+          "values": {
+            "unit1": "Métrique (SI)",
+            "unit2": "Impérial"
+          }
+        },
+        {
+          "name": "Valeur de base",
+          "values": {
+            "unit1": "1/1000 kg",
+            "unit2": "28,35 g"
+          }
+        },
+        {
+          "name": "Cuisine",
+          "values": {
+            "unit1": "Recettes internationales",
+            "unit2": "Recettes US/UK"
+          }
+        },
+        {
+          "name": "Bijouterie",
+          "values": {
+            "unit1": "Métrique (g)",
+            "unit2": "Once troy (31,1 g)"
+          }
+        },
+        {
+          "name": "Science",
+          "values": {
+            "unit1": "Standard SI",
+            "unit2": "Non utilisée"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de grammes fait 1 once ?",
+          "answer": "1 once avoirdupois = 28,3495 grammes. 1 once troy = 31,1035 grammes."
+        },
+        {
+          "question": "Combien d’onces font 100 grammes ?",
+          "answer": "100 grammes = 3,527 onces."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "g na uncje – Arteon",
+      "defaultSubject": "Feedback : grams-to-ounces"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

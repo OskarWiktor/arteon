@@ -1,0 +1,273 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de metros para pés",
+    "description": "Converta metros para pés e vice-versa. Para altura, construção e aviação.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-metros-para-pes"
+  },
+  "hero": {
+    "title": "Converter metros para pés",
+    "description": "Este conversor converte instantaneamente. Introduza um valor e o resultado aparece imediatamente.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-metros-para-pes",
+      "label": "m para ft"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de metros para pés",
+      "alternateName": ["Converter metros para pés"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converta metros para pés e vice-versa. Para altura, construção e aviação.",
+      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+    },
+    "howTo": {
+      "name": "Como usar o conversor",
+      "description": "Guia rápido para usar o conversor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduzir valor",
+          "text": "Escreva um número no campo de entrada à esquerda."
+        },
+        {
+          "name": "Ler o resultado",
+          "text": "O resultado da conversão aparece instantaneamente no campo ao lado."
+        },
+        {
+          "name": "Copiar ou inverter",
+          "text": "Clique em Copiar resultado ou em Inverter para converter na direção oposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa converter metros em pés?",
+      "html": "<p class=\"text-mid mb-4\">O metro (m) é a unidade base de comprimento do sistema métrico. O pé (ft) é uma unidade imperial igual a 0,3048 m. 1 metro = 3,28084 pés.</p><p class=\"text-mid mb-4\">Exemplos: 1,80 m = 5,91 ft (5’11″), 10 m = 32,8 ft, 100 m = 328 ft.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Conversor de metros para pés – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o conversor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Insira um valor",
+          "description": "Digite um número no campo de entrada. Pode usar ponto ou vírgula como separador decimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leia o resultado",
+          "description": "O resultado da conversão aparece instantaneamente no campo adjacente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copie ou inverta",
+          "description": "Clique em Copiar resultado ou use o botão Inverter para converter na direção oposta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando este conversor é útil?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuildingLine",
+          "title": "Aviação",
+          "description": "A altitude de voo é em pés: 35.000 ft = 10.668 m."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Imóveis",
+          "description": "Dimensões de cômodos nos EUA: 12×14 ft = 3,66×4,27 m."
+        },
+        {
+          "icon": "RiBodyScanLine",
+          "title": "Altura",
+          "description": "Nos EUA em pés e polegadas: 6’0″ = 1,83 m."
+        },
+        {
+          "icon": "RiMountainLine",
+          "title": "Mergulho",
+          "description": "Profundidades de mergulho: 60 ft = 18,3 m."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que diferencia este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os cálculos são executados localmente no seu navegador. Nenhum dado é enviado."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados em tempo real",
+          "description": "O resultado atualiza instantaneamente enquanto digita."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversão bidirecional",
+          "description": "O botão Inverter permite converter em ambas as direções com um clique."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela de referência",
+          "description": "Uma tabela com valores de conversão comuns e descrições contextuais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">1 pé = 0,3048 metros exatamente. Para converter metros em pés, divida por 0,3048.</p><p class=\"text-mid\">1 pé = 12 polegadas.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">1 pé = 0,3048 metros exatamente. Para converter metros em pés, divida por 0,3048.</p><p class=\"text-mid\">1 pé = 12 polegadas.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Metro vs Pé – comparação",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Metro (m)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pé (ft)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistema",
+          "values": {
+            "unit1": "Métrico (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Valor base",
+          "values": {
+            "unit1": "1 m",
+            "unit2": "0,3048 m"
+          }
+        },
+        {
+          "name": "Aviação",
+          "values": {
+            "unit1": "Não usado",
+            "unit2": "Padrão (pés)"
+          }
+        },
+        {
+          "name": "Imóveis",
+          "values": {
+            "unit1": "Europa",
+            "unit2": "EUA"
+          }
+        },
+        {
+          "name": "Altura",
+          "values": {
+            "unit1": "Internacional (cm/m)",
+            "unit2": "EUA (ft/in)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quantos pés é 1 metro?",
+          "answer": "1 metro = 3,28084 pés."
+        },
+        {
+          "question": "Os cálculos são feitos localmente?",
+          "answer": "Sim. Todos os cálculos são executados no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "m na stopy – Arteon",
+      "defaultSubject": "Feedback: meters-to-feet"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

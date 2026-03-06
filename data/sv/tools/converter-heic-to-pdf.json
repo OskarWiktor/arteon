@@ -2,7 +2,7 @@
   "toolKey": "heicToPdf",
   "locale": "sv",
   "metadata": {
-    "title": "HEIC till PDF-konverterare — HEIC PDF",
+    "title": "HEIC till PDF-konverterare - HEIC PDF",
     "description": "Konvertera HEIC-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/heic-till-pdf-konverterare"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertera",
-          "text": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare."
+          "text": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera HEIC till PDF?",
-      "html": "<p class=\"text-mid mb-4\">HEIC ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till PDF erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina HEIC-filer till PDF-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till PDF erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina HEIC-filer till PDF-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "HEIC to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertera",
-          "description": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare.",
+          "description": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — vad valja vid konvertering HEIC till PDF?",
-      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan HEIC och PDF praktiskt taget omarkbar.</p>"
+      "title": "Kvalitet - vad valja vid konvertering HEIC till PDF?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) - bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% - for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% - nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan HEIC och PDF praktiskt taget omarkbar.</p>"
     },
     {
       "type": "gap",
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos online, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
     },
     {
       "type": "faq",

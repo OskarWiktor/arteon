@@ -1,0 +1,289 @@
+{
+  "toolKey": "cmToInches",
+  "locale": "en",
+  "metadata": {
+    "title": "CM to inches converter – quick length conversion",
+    "description": "Convert centimeters to inches and vice versa. Useful for screen sizes, clothing, furniture, and bicycle wheels.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/cm-to-inches-converter"
+  },
+  "hero": {
+    "title": "Convert centimeters to inches",
+    "description": "This converter converts centimeters to inches and vice versa. Enter a value and the result appears instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/cm-to-inches-converter",
+      "label": "cm to inches"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "CM to inches converter",
+      "alternateName": ["Centimeter to inch calculator", "cm to in converter", "Inch to cm conversion"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert centimeters to inches and vice versa. Useful for screen sizes, clothing, and furniture.",
+      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the cm to inches converter",
+      "description": "Instructions: cm to inches.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter a value",
+          "text": "Type a number in the input field."
+        },
+        {
+          "name": "Read the result",
+          "text": "The conversion appears instantly."
+        },
+        {
+          "name": "Copy or reverse",
+          "text": "Click Copy or Reverse to convert the other way."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert cm to inches?",
+      "html": "<p class=\"text-mid mb-4\">Centimeter (cm) is a metric length unit equal to 1/100 of a meter. Inch (in or ″) is an imperial unit equal to exactly 2.54 cm. The conversion factor is precise and internationally standardized since 1959.</p><p class=\"text-mid mb-4\">Converting cm to inches is essential when buying monitors and TVs (screen diagonals are in inches), clothing from US or UK stores, furniture from US catalogs, and bicycles (wheel and frame sizes are in inches).</p><p class=\"text-mid mb-4\">In electronics: smartphone screens (6.1″ = 15.49 cm), laptops (15.6″ = 39.62 cm), and US paper sizes (Letter: 8.5 × 11″).</p><p class=\"text-mid\">Height in the US is given in feet and inches: 5'9″ = 175.26 cm. Knowing the conversion is useful for visa forms and medical records abroad.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "CM to inches converter – quick length conversion – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTvLine",
+          "title": "Ekrany i monitory",
+          "description": "Przekątne telewizorów i monitorów podaje się w calach: 27″ = 68,58 cm, 55″ = 139,7 cm."
+        },
+        {
+          "icon": "RiTShirt2Line",
+          "title": "Odzież zagraniczna",
+          "description": "Amerykańskie tabele rozmiarów podają obwód klatki, talii i bioder w calach."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Budownictwo i DIY",
+          "description": "Rury, śruby i elementy złączne często mają wymiary w calach."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Rowery i koła",
+          "description": "Rozmiary kół rowerowych (26″, 27,5″, 29″) i opon podaje się w calach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does cm to inches conversion work?",
+      "html": "<p class=\"text-mid mb-4\">The conversion is based on the international definition established in 1959: one inch equals exactly 2.54 centimeters. This is one of the few units with an exact, unrounded conversion factor.</p><p class=\"text-mid mb-4\">To convert cm to inches, divide by 2.54. For example: 10 cm / 2.54 = 3.937 inches. To convert inches to cm, multiply by 2.54.</p><p class=\"text-mid\">The converter displays results with full precision. The cm-to-inches conversion factor is particularly useful when comparing screen sizes (specified in inches) with physical dimensions in the metric system.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Screen diagonal: 1″ = 2.54 cm. A 55″ TV has a diagonal of 139.7 cm.</li><li>Height: 6'0″ (6 feet) = 182.88 cm. 1 foot = 12 inches = 30.48 cm.</li><li>Paper: A4 = 21 × 29.7 cm. US Letter = 8.5 × 11″ = 21.59 × 27.94 cm.</li><li>Waist size: 32″ (pants) = 81.28 cm.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Centimeter (cm) vs Inch (in) – comparison",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Centimeter (cm)"
+        },
+        {
+          "id": "unit2",
+          "name": "Inch (in)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metric (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Base value",
+          "values": {
+            "unit1": "1/100 meter",
+            "unit2": "2.54 cm"
+          }
+        },
+        {
+          "name": "Screens",
+          "values": {
+            "unit1": "Centimeters (diagonal)",
+            "unit2": "Inches (standard)"
+          }
+        },
+        {
+          "name": "Clothing",
+          "values": {
+            "unit1": "Europe (cm)",
+            "unit2": "USA/UK (inches)"
+          }
+        },
+        {
+          "name": "Construction",
+          "values": {
+            "unit1": "Metric system",
+            "unit2": "Pipes and screws in inches"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many centimeters is 1 inch?",
+          "answer": "Exactly 2.54 cm. This is the international definition established in 1959."
+        },
+        {
+          "question": "How many inches is 10 cm?",
+          "answer": "10 cm = 3.937 inches, just under 4 inches."
+        },
+        {
+          "question": "How do I convert a TV diagonal to centimeters?",
+          "answer": "Multiply inches by 2.54. For example: 65″ TV has a diagonal of 165.1 cm."
+        },
+        {
+          "question": "How many cm is 5'10″?",
+          "answer": "5 feet 10 inches = 70 inches = 177.8 cm. Convert feet to inches (5×12=60), add remaining inches, multiply by 2.54."
+        },
+        {
+          "question": "Is 1 inch exactly 2.54 cm?",
+          "answer": "Yes. Since 1959, the international inch is defined as exactly 25.4 mm (2.54 cm). This is a precise definition, not an approximation."
+        },
+        {
+          "question": "How can I quickly estimate inches to cm?",
+          "answer": "Multiply inches by 2.5 — the result will be about 1.6% less than exact. Example: 10″ × 2.5 = 25 cm (exact: 25.4 cm)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "cm na cale – Arteon",
+      "defaultSubject": "Feedback: cm-to-inches"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

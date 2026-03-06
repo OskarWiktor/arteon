@@ -23,7 +23,7 @@
     "title": "Dette verktøyet fungerer på en større skjerm",
     "description": "For å bruke dette verktøyet komfortabelt, åpne det på en bærbar datamaskin, stasjonær datamaskin eller nettbrett i liggende modus.",
     "tipTitle": "Tips",
-    "tipText": "Hvis du bruker et nettbrett, bytt til liggende modus — når vindusbredden er tilstrekkelig, lastes verktøyet automatisk."
+    "tipText": "Hvis du bruker et nettbrett, bytt til liggende modus - når vindusbredden er tilstrekkelig, lastes verktøyet automatisk."
   },
   "cookie": {
     "title": "Informasjonskapsler og personvern",
@@ -109,6 +109,20 @@
     "text": "E-postsignatur-generatoren er oppdatert – oppdag nye funksjoner",
     "linkText": "verktøy"
   },
+  "search": {
+    "placeholder": "Søk verktøy, sider...",
+    "emptyHint": "Skriv en frase, f.eks. \"favicon-generator\", \"bilderedigerer\" eller \"kontakt\" for å finne en relatert side.",
+    "noResults": "Ingen resultater for",
+    "contactUs": "Kontakt oss",
+    "ariaLabel": "Søk",
+    "ariaClose": "Lukk",
+    "ariaSearch": "Søk",
+    "categoryServices": "Tjenester",
+    "categoryTools": "Verktøy",
+    "categoryEducation": "Utdanning",
+    "categoryProjects": "Prosjekter",
+    "categoryPages": "Sider"
+  },
   "imageConverter": {
     "addFiles": "Legg til filer",
     "dragDrop": "Dra og slipp {{format}}-filer her",
@@ -150,9 +164,31 @@
     "errorCanvas": "Canvas støttes ikke i denne nettleseren.",
     "errorGeneration": "Kunne ikke generere {{format}}-fil.",
     "errorTooLarge": "Filen er for stor (maks 100 MB).",
-    "errorWrongFormat": "Legg til {{format}}-filer — andre formater hoppes over.",
+    "errorWrongFormat": "Legg til {{format}}-filer - andre formater hoppes over.",
     "errorNoFiles": "Legg til minst én {{format}}-fil.",
-    "errorAvifNotSupported": "Nettleseren din støtter ikke AVIF-koding. Bruk Chrome, Edge eller Firefox."
+    "errorAvifNotSupported": "Nettleseren din støtter ikke AVIF-koding. Bruk Chrome, Edge eller Firefox.",
+    "pasteOrTypeData": "Lim inn eller skriv data i {{format}}-format",
+    "fileReadError": "Kunne ikke lese filen.",
+    "uploadFile": "Last opp {{format}}-fil",
+    "conversionResult": "Konverteringsresultat ({{format}})",
+    "copied": "✓ Kopiert",
+    "copy": "Kopier",
+    "onlyImageFiles": "Kun bildefiler støttes (JPG, PNG, WebP, SVG, GIF, BMP).",
+    "base64PasteEmpty": "Lim inn en Base64-bildestreng.",
+    "base64Invalid": "Ugyldig Base64-streng - ikke et gyldig bilde.",
+    "imageHeading": "Bilde",
+    "dragImageHere": "Dra et bilde hit",
+    "fileLabel": "Fil:",
+    "base64Placeholder": "Base64-koden vises her etter at et bilde er lagt til",
+    "base64PastePlaceholder": "Lim inn en Base64-bildestreng (med eller uten data:image/...-prefiks)",
+    "decodeBtn": "Dekod",
+    "imagePreview": "Bildeforhåndsvisning",
+    "base64DecodeHint": "Lim inn Base64 og klikk Dekod for å se forhåndsvisning",
+    "enterValue": "Skriv inn {{label}}...",
+    "resultIn": "Resultat i {{label}}...",
+    "swapOrder": "Bytt rekkefølge",
+    "copyResult": "Kopier resultat",
+    "pageLabel": "s."
   },
   "errorPages": {
     "notFound": {

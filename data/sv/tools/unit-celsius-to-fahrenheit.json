@@ -1,0 +1,277 @@
+{
+  "toolKey": "celsiusToFahrenheit",
+  "locale": "sv",
+  "metadata": {
+    "title": "°C till °F – omvandlare",
+    "description": "Omvandla Celsius till Fahrenheit och tvärtom. Omedelbara resultat.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/sv/verktyg/celsius-till-fahrenheit-omvandlare"
+  },
+  "hero": {
+    "title": "°C till °F",
+    "description": "Denna omvandlare räknar om direkt. Ange ett värde så visas resultatet omedelbart.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/celsius-till-fahrenheit-omvandlare",
+      "label": "°C till °F"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "°C till °F – omvandlare",
+      "alternateName": ["°C till °F"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Omvandla Celsius till Fahrenheit och tvärtom. Omedelbara resultat.",
+      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+    },
+    "howTo": {
+      "name": "Så använder du omvandlaren",
+      "description": "Snabbguide för att använda omvandlaren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Ange värde",
+          "text": "Skriv ett tal i inmatningsfältet till vänster."
+        },
+        {
+          "name": "Läs av resultatet",
+          "text": "Konverteringsresultatet visas omedelbart i fältet bredvid."
+        },
+        {
+          "name": "Kopiera eller vänd",
+          "text": "Klicka på Kopiera resultat eller på Vänd för att konvertera i andra riktningen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "När ska man omvandla Celsius till Fahrenheit?",
+      "html": "<p class=\"text-mid mb-4\">Celsius (°C) används världen över, Fahrenheit (°F) i USA och några andra länder. Formel: °F = °C × 9/5 + 32.</p><p class=\"text-mid mb-4\">Viktiga referenspunkter: 0°C = 32°F (fryspunkt), 37°C = 98,6°F (kroppstemperatur), 100°C = 212°F (kokpunkt).</p><p class=\"text-mid\">Alla beräkningar körs lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Celsius to Fahrenheit converter – temperature conversion – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Så använder du omvandlaren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ange värde",
+          "description": "Skriv ett tal i inmatningsfältet. Du kan använda punkt eller komma som decimalavskiljare.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Läs av resultatet",
+          "description": "Konverteringsresultatet visas omedelbart i fältet bredvid – utan att klicka.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiera eller vänd",
+          "description": "Klicka på Kopiera resultat eller använd knappen Vänd.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När är denna omvandlare användbar?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiSunLine",
+          "title": "Resor till USA",
+          "description": "Väderrapporter i °F. 77°F = 25°C."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Matlagning",
+          "description": "Amerikanska recept i °F. 350°F = 177°C."
+        },
+        {
+          "icon": "RiHeartPulseLine",
+          "title": "Medicinskt",
+          "description": "Feber: 38°C = 100,4°F."
+        },
+        {
+          "icon": "RiFlaskLine",
+          "title": "Vetenskap",
+          "description": "Kelvin, Celsius och Fahrenheit jämförelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna omvandlare speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Alla beräkningar görs lokalt i din webbläsare. Ingen data skickas till någon server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultat i realtid",
+          "description": "Resultatet uppdateras omedelbart när du skriver – inget klick krävs."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Dubbelriktad konvertering",
+          "description": "Vänd-knappen låter dig konvertera i båda riktningarna med ett klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenstabell",
+          "description": "En färdig tabell med ofta konverterade värden och kontextuella beskrivningar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">°F = °C × 9/5 + 32. Omvänt: °C = (°F − 32) × 5/9.</p><p class=\"text-mid\">Korsningspunkt: −40°C = −40°F.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">°F = °C × 9/5 + 32. Omvänt: °C = (°F − 32) × 5/9.</p><p class=\"text-mid\">Korsningspunkt: −40°C = −40°F.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Celsius vs Fahrenheit",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Celsius (°C)"
+        },
+        {
+          "id": "unit2",
+          "name": "Fahrenheit (°F)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Fryspunkt vatten",
+          "values": {
+            "unit1": "0°C",
+            "unit2": "32°F"
+          }
+        },
+        {
+          "name": "Kokpunkt vatten",
+          "values": {
+            "unit1": "100°C",
+            "unit2": "212°F"
+          }
+        },
+        {
+          "name": "Kroppstemperatur",
+          "values": {
+            "unit1": "37°C",
+            "unit2": "98,6°F"
+          }
+        },
+        {
+          "name": "Absoluta nollpunkten",
+          "values": {
+            "unit1": "−273,15°C",
+            "unit2": "−459,67°F"
+          }
+        },
+        {
+          "name": "Användning",
+          "values": {
+            "unit1": "Världen över",
+            "unit2": "USA"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hur många Fahrenheit är 0°C?",
+          "answer": "0°C = 32°F."
+        },
+        {
+          "question": "Vad är formeln?",
+          "answer": "°F = °C × 9/5 + 32. Omvänt: °C = (°F − 32) × 5/9."
+        },
+        {
+          "question": "Körs beräkningarna lokalt?",
+          "answer": "Ja. Alla beräkningar körs i din webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "°C till °F – Arteon",
+      "defaultSubject": "Feedback: celsius-to-fahrenheit"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra gratis verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

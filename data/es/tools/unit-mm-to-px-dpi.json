@@ -1,0 +1,277 @@
+{
+  "toolKey": "mmToPxDpi",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de mm a píxeles (DPI)",
+    "description": "Convierte milímetros a píxeles a cualquier resolución DPI. Para diseño de empaques y gráficos.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-mm-a-px"
+  },
+  "hero": {
+    "title": "Convertir mm a píxeles",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-mm-a-px",
+      "label": "mm a px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de mm a píxeles (DPI)",
+      "alternateName": ["Convertir mm a píxeles"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte milímetros a píxeles a cualquier resolución DPI. Para diseño de empaques y gráficos.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir mm a píxeles?",
+      "html": "<p class=\"text-mid mb-4\">En trabajo de precisión las medidas se dan en milímetros. Para imágenes digitales: Píxeles = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">Esta conversión es importante para diseño de envases, impresión de etiquetas, fotografía de producto y mapeo preciso de mm a píxeles.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 mm = 11,81 píxeles, 85 mm (ancho de tarjeta de visita) = 1.004 píxeles.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de mm a píxeles (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado aparece instantáneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Copia el resultado o invierte la dirección de conversión.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Diseño de envases",
+          "description": "Las medidas de envases en mm necesitan datos de impresión en píxeles. Etiqueta de 100 mm a 300 DPI = 1.181 px."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Tarjetas de visita",
+          "description": "Estándar: 85 × 55 mm a 300 DPI = 1.004 × 650 px (más sangrado)."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Etiquetas y pegatinas",
+          "description": "Las etiquetas de producto requieren medidas precisas en mm a píxeles."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Impresión 3D",
+          "description": "Convierte medidas de impresión 3D (mm) en resolución de textura (píxeles)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza mientras escribes."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "Convierte en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Tabla con valores comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: Píxeles = mm × DPI / 25,4. Ya que 1 pulgada = 25,4 mm exactamente.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 mm = 11,811 píxeles. A 600 DPI: 1 mm = 23,622 píxeles.</p><p class=\"text-mid\">Sangrado: añadir 3 mm (estándar) en cada borde.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: Píxeles = mm × DPI / 25,4. Ya que 1 pulgada = 25,4 mm exactamente.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 mm = 11,811 píxeles. A 600 DPI: 1 mm = 23,622 píxeles.</p><p class=\"text-mid\">Sangrado: añadir 3 mm (estándar) en cada borde.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "mm a píxeles a diferentes DPI",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI"
+        },
+        {
+          "id": "unit2",
+          "name": "600 DPI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1 mm",
+          "values": {
+            "unit1": "11,81 px",
+            "unit2": "23,62 px"
+          }
+        },
+        {
+          "name": "10 mm",
+          "values": {
+            "unit1": "118 px",
+            "unit2": "236 px"
+          }
+        },
+        {
+          "name": "85 mm (tarjeta)",
+          "values": {
+            "unit1": "1.004 px",
+            "unit2": "2.008 px"
+          }
+        },
+        {
+          "name": "Aplicación",
+          "values": {
+            "unit1": "Impresión estándar",
+            "unit2": "Arte / medicina"
+          }
+        },
+        {
+          "name": "Tamaño de archivo",
+          "values": {
+            "unit1": "Estándar",
+            "unit2": "4× más grande"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos píxeles es 1 mm a 300 DPI?",
+          "answer": "1 mm a 300 DPI = 11,811 píxeles."
+        },
+        {
+          "question": "¿Qué es el sangrado y cómo lo calculo?",
+          "answer": "El sangrado es área adicional (típicamente 3 mm) más allá del borde. Añade 3 mm en cada borde."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "mm na px – Arteon",
+      "defaultSubject": "Feedback: mm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

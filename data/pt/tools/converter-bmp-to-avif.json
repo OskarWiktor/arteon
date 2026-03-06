@@ -2,7 +2,7 @@
   "toolKey": "bmpToAvif",
   "locale": "pt",
   "metadata": {
-    "title": "Conversor BMP para AVIF — BMP AVIF",
+    "title": "Conversor BMP para AVIF - BMP AVIF",
     "description": "Converta ficheiros BMP não comprimidos para AVIF ultracompacto. Sem instalação, funciona em qualquer dispositivo. Gratuito, privado e ilimitado.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-bmp-para-avif"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Definir qualidade",
-          "text": "Ajuste o controlo de qualidade AVIF — valores mais baixos produzem ficheiros mais pequenos."
+          "text": "Ajuste o controlo de qualidade AVIF - valores mais baixos produzem ficheiros mais pequenos."
         },
         {
           "position": 3,
           "name": "Converter",
-          "text": "Clique em Converter — os ficheiros são processados localmente no seu navegador."
+          "text": "Clique em Converter - os ficheiros são processados localmente no seu navegador."
         },
         {
           "position": 4,
           "name": "Descarregar",
-          "text": "Descarregue os ficheiros AVIF — individualmente ou todos de uma vez."
+          "text": "Descarregue os ficheiros AVIF - individualmente ou todos de uma vez."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Qualidade — o que escolher ao converter BMP para AVIF?",
-      "html": "<p class=\"text-mid\">O controle permite 60% a 95%. Mais alto = melhor qualidade mas arquivos maiores.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (padrao) — bom equilibrio para sites, blogs, artigos.</strong></li><li><strong>85–90% — para fotos de produtos, portfolios e galerias.</strong></li><li><strong>60–70% — quando minimizar tamanho e prioridade.</strong></li></ul><p class=\"text-mid mt-3\">Com 80% a diferenca visual entre BMP original e AVIF resultante e imperceptivel.</p>"
+      "title": "Qualidade - o que escolher ao converter BMP para AVIF?",
+      "html": "<p class=\"text-mid\">O controle permite 60% a 95%. Mais alto = melhor qualidade mas arquivos maiores.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (padrao) - bom equilibrio para sites, blogs, artigos.</strong></li><li><strong>85–90% - para fotos de produtos, portfolios e galerias.</strong></li><li><strong>60–70% - quando minimizar tamanho e prioridade.</strong></li></ul><p class=\"text-mid mt-3\">Com 80% a diferenca visual entre BMP original e AVIF resultante e imperceptivel.</p>"
     },
     {
       "type": "gap",

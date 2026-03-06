@@ -2,14 +2,14 @@
   "toolKey": "webpToAvif",
   "locale": "nl",
   "metadata": {
-    "title": "WebP naar AVIF converter — WebP AVIF",
-    "description": "Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
+    "title": "WebP naar AVIF converter - WebP AVIF",
+    "description": "Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/webp-naar-avif-converter"
   },
   "hero": {
     "title": "WebP naar AVIF converter",
-    "description": "Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
+    "description": "Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "WebP naar AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
+      "description": "Converteer WebP-bestanden naar AVIF. Nog betere compressie in een modern formaat. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
       "featureList": ["Conversie naar AVIF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["WEBP naar AVIF omzetten", "WEBP naar AVIF conversie", "Gratis WEBP naar AVIF converter"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Kwaliteit instellen",
-          "text": "Pas de AVIF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+          "text": "Pas de AVIF-kwaliteitsschuifregelaar aan - lagere waarden geven kleinere bestanden."
         },
         {
           "position": 3,
           "name": "Converteren",
-          "text": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
+          "text": "Klik op Converteren - bestanden worden lokaal in de browser verwerkt."
         },
         {
           "position": 4,
           "name": "Downloaden",
-          "text": "Download de AVIF-bestanden — individueel of allemaal tegelijk."
+          "text": "Download de AVIF-bestanden - individueel of allemaal tegelijk."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kwaliteit — wat kiezen bij conversie WebP naar AVIF?",
-      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standaard) — goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% — voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% — wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 80% is het verschil tussen origineel WebP en AVIF praktisch onzichtbaar.</p>"
+      "title": "Kwaliteit - wat kiezen bij conversie WebP naar AVIF?",
+      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standaard) - goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% - voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% - wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 80% is het verschil tussen origineel WebP en AVIF praktisch onzichtbaar.</p>"
     },
     {
       "type": "gap",

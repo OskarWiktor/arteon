@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować PNG na WebP?",
-      "html": "<p class=\"text-mid mb-4\">PNG to format bezstratny z obsługą przezroczystości, ale pliki PNG są stosunkowo duże. WebP oferuje lepszą kompresję — pliki WebP są średnio o 26% mniejsze niż PNG przy zachowaniu porównywalnej jakości i obsługi kanału alfa (przezroczystości).</p><p class=\"text-mid mb-4\">Konwersja PNG na WebP jest szczególnie korzystna dla grafik z przezroczystością używanych na stronach internetowych — logo, ikony, elementy interfejsu. Format JPG nie obsługuje przezroczystości, więc WebP jest jedyną alternatywą, która łączy mniejszy rozmiar z zachowaniem przezroczystych obszarów.</p><p class=\"text-mid\">Konwerter obsługuje pliki PNG dowolnej wielkości. Możesz przekonwertować dowolną liczbę plików naraz — wszystkie zostaną przetworzone lokalnie w przeglądarce, bez wysyłania na serwer.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG to format bezstratny z obsługą przezroczystości, ale pliki PNG są stosunkowo duże. WebP oferuje lepszą kompresję - pliki WebP są średnio o 26% mniejsze niż PNG przy zachowaniu porównywalnej jakości i obsługi kanału alfa (przezroczystości).</p><p class=\"text-mid mb-4\">Konwersja PNG na WebP jest szczególnie korzystna dla grafik z przezroczystością używanych na stronach internetowych - logo, ikony, elementy interfejsu. Format JPG nie obsługuje przezroczystości, więc WebP jest jedyną alternatywą, która łączy mniejszy rozmiar z zachowaniem przezroczystych obszarów.</p><p class=\"text-mid\">Konwerter obsługuje pliki PNG dowolnej wielkości. Możesz przekonwertować dowolną liczbę plików naraz - wszystkie zostaną przetworzone lokalnie w przeglądarce, bez wysyłania na serwer.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter PNG na WebP – Arteon"
     },
@@ -102,7 +102,7 @@
         {
           "icon": "RiGlobalLine",
           "title": "Logo i ikony na stronie",
-          "description": "Logo i ikony w PNG z przezroczystością po konwersji na WebP zachowują przezroczystość przy mniejszym rozmiarze — strona ładuje się szybciej."
+          "description": "Logo i ikony w PNG z przezroczystością po konwersji na WebP zachowują przezroczystość przy mniejszym rozmiarze - strona ładuje się szybciej."
         },
         {
           "icon": "RiShoppingCartLine",
@@ -133,7 +133,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
+          "description": "Pliki nie opuszczają komputera - cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -236,8 +236,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji PNG na WebP?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem PNG a wynikowym WebP jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji PNG na WebP?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem PNG a wynikowym WebP jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -255,7 +255,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów PNG na WebP zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów PNG na WebP zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -285,7 +285,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PNG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PNG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -324,11 +324,11 @@
         },
         {
           "question": "Czy konwersja PNG na WebP jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików PNG jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy WebP zachowa przezroczystość z pliku PNG?",
+          "answer": "Tak. WebP obsługuje kanał alfa z płynną przezroczystością, tak samo jak PNG. Przezroczyste i półprzezroczyste piksele zostaną zachowane w pliku WebP."
         }
       ]
     },
@@ -339,7 +339,7 @@
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
-      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas - odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter PNG na WebP – Arteon",
       "defaultSubject": "Feedback: Konwerter PNG na WebP"

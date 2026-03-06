@@ -1,0 +1,289 @@
+{
+  "toolKey": "kmhToMph",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter km/h na mph – przelicz prędkość",
+    "description": "Przelicz kilometry na godzinę na mile na godzinę i odwrotnie. Konwerter jest przydatny podczas podróży do USA i UK. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-kmh-na-mph"
+  },
+  "hero": {
+    "title": "Przelicz km/h na mph",
+    "description": "Ten konwerter przelicza kilometry na godzinę na mile na godzinę i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-kmh-na-mph",
+      "label": "km/h na mph"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter km/h na mph – przelicz prędkość",
+      "alternateName": ["Przelicznik prędkości km/h mph", "Kalkulator km/h na mph"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz kilometry na godzinę na mile na godzinę i odwrotnie. Konwerter jest przydatny podczas podróży do USA i UK. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera km/h na mph",
+      "description": "Instrukcja użycia: km/h na mph.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto przeliczać km/h na mph?",
+      "html": "<p class=\"text-mid mb-4\">Kilometr na godzinę (km/h) to jednostka prędkości stosowana w większości krajów, w tym w Polsce. Mila na godzinę (mph) to jednostka używana w USA i Wielkiej Brytanii. 1 km/h = 0,621371 mph.</p><p class=\"text-mid mb-4\">Przeliczanie prędkości jest niezbędne podczas jazdy samochodem w USA lub UK, gdzie ograniczenia prędkości podaje się w mph. Limit 65 mph na amerykańskiej autostradzie to 104,6 km/h, a 30 mph w strefie miejskiej w Londynie to 48,3 km/h.</p><p class=\"text-mid mb-4\">Przelicznik przydaje się też kibicom sportów motorowych – prędkość maksymalna w Formule 1 (około 370 km/h = 230 mph) czy NASCAR (320 km/h = 199 mph) jest często podawana w obu jednostkach.</p><p class=\"text-mid\">Współczynnik konwersji jest identyczny jak dla kilometrów na mile (0,621371), ponieważ czas (godzina) jest wspólny dla obu jednostek.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "km/h na mph – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Jazda w USA/UK",
+          "description": "Ograniczenia prędkości: 25 mph (miasto) = 40 km/h, 65 mph (autostrada) = 105 km/h."
+        },
+        {
+          "icon": "RiDashboardLine",
+          "title": "Prędkościomierz",
+          "description": "Importowane samochody mogą mieć prędkościomierz w mph – przelicz na km/h."
+        },
+        {
+          "icon": "RiFlagLine",
+          "title": "Sporty motorowe",
+          "description": "Porównaj prędkości w F1, NASCAR i MotoGP podawane w różnych jednostkach."
+        },
+        {
+          "icon": "RiWindyLine",
+          "title": "Meteorologia",
+          "description": "Prędkość wiatru w amerykańskich prognozach podaje się w mph."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja km/h na mph?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja km/h na mph wykorzystuje ten sam przelicznik co kilometry na mile, ponieważ obie jednostki mierzą prędkość w tych samych odcinkach czasu (na godzinę). Jedna mila wynosi 1,60934 km, dlatego aby zamienić km/h na mph, narzędzie mnoży wartość przez 0,621371.</p><p class=\"text-mid mb-4\">Na przykład prędkość 120 km/h to około 74,56 mph, a 100 km/h to 62,14 mph. W drugą stronę, 60 mph to około 96,56 km/h. Szybkie przybliżenie w pamięci: podziel km/h przez 1,6 — wynik będzie bardzo zbliżony do wartości w mph.</p><p class=\"text-mid\">Prędkość w mph jest standardem na drogach w USA i Wielkiej Brytanii, natomiast km/h obowiązuje w Polsce i większości krajów świata. Znajomość przelicznika jest przydatna podczas podróży zagranicznych i korzystania z nawigacji GPS.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Autostrada w Polsce: 140 km/h = 87 mph. Autostrada w USA: 65–75 mph = 105–121 km/h.</li><li>Strefa miejska UK: 30 mph = 48,3 km/h (zbliżone do polskich 50 km/h).</li><li>100 km/h = 62,14 mph – warto zapamiętać jako punkt odniesienia.</li><li>Prędkość dźwięku to około 1 235 km/h = 767 mph (Mach 1).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "km/h vs mph – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "km/h"
+        },
+        {
+          "id": "unit2",
+          "name": "mph",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metryczny",
+            "unit2": "Imperialny"
+          }
+        },
+        {
+          "name": "Znaki drogowe",
+          "values": {
+            "unit1": "Europa, Azja",
+            "unit2": "USA, UK"
+          }
+        },
+        {
+          "name": "Autostrada",
+          "values": {
+            "unit1": "120–140 km/h",
+            "unit2": "65–75 mph"
+          }
+        },
+        {
+          "name": "Miasto",
+          "values": {
+            "unit1": "50 km/h",
+            "unit2": "25–30 mph"
+          }
+        },
+        {
+          "name": "Lotnictwo",
+          "values": {
+            "unit1": "Nie używane",
+            "unit2": "Węzły (knots)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile mph to 100 km/h?",
+          "answer": "100 km/h = 62,14 mph."
+        },
+        {
+          "question": "Ile km/h to 60 mph?",
+          "answer": "60 mph = 96,56 km/h – typowy limit na amerykańskiej drodze ekspresowej."
+        },
+        {
+          "question": "Jaki jest limit prędkości na autostradzie w USA?",
+          "answer": "Zależy od stanu: najczęściej 65–75 mph (105–121 km/h). W Teksasie niektóre odcinki mają limit 85 mph."
+        },
+        {
+          "question": "Jak szybko przeliczyć km/h na mph w pamięci?",
+          "answer": "Podziel km/h przez 8, pomnóż przez 5. Na przykład: 80 km/h ÷ 8 = 10, 10 × 5 = 50 mph (dokładnie: 49,7 mph)."
+        },
+        {
+          "question": "Czy w lotnictwie używa się km/h lub mph?",
+          "answer": "Nie. W lotnictwie standardową jednostką prędkości jest węzeł (knot) = 1,852 km/h = 1,151 mph."
+        },
+        {
+          "question": "Ile mph to prędkość dźwięku?",
+          "answer": "Prędkość dźwięku (Mach 1) to około 1 235 km/h = 767 mph na poziomie morza przy 20°C."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "km/h na mph – Arteon",
+      "defaultSubject": "Feedback: km/h na mph"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "toolKey": "decToBin",
+  "locale": "el",
+  "metadata": {
+    "title": "DEC σε BIN – μετατροπέας",
+    "description": "Μετατρέψτε δεκαδικούς σε δυαδικούς αριθμούς.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-dekadiko-se-dyad"
+  },
+  "hero": {
+    "title": "DEC σε BIN",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-dekadiko-se-dyad",
+      "label": "DEC σε BIN"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "DEC σε BIN – μετατροπέας",
+      "alternateName": ["DEC σε BIN"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε δεκαδικούς σε δυαδικούς αριθμούς.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: DEC σε BIN?",
+      "html": "<p class=\"text-mid mb-4\">Binary (base-2) is the fundamental number system of computers. Every piece of data — text, images, programs — is stored as sequences of 0s and 1s. Understanding binary is essential for programming, networking, and computer science.</p><p class=\"text-mid mb-4\">Each binary digit (bit) represents a power of 2: ...128, 64, 32, 16, 8, 4, 2, 1. For example: decimal 42 = binary 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Common uses: IP addresses, subnet masks, bitwise operations, permissions (chmod), and understanding how computers store numbers.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DEC σε BIN – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web ανάπτυξη",
+          "description": "Operacje bitowe, maski, flagi: 0xFF = 11111111."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Internet",
+          "description": "Maski podsieci: 255.255.255.0 = /24 (24 jedynki binarnie)."
+        },
+        {
+          "icon": "RiShieldKeyholeLine",
+          "title": "Uprawnienia Unix",
+          "description": "chmod 755 = 111 101 101 binarnie."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Elektronika",
+          "description": "Rejestry, porty I/O, protokoły komunikacyjne."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">Wiederholt durch 2 teilen und Reste notieren. Von unten nach oben lesen.</p><p class=\"text-mid\">8 Bit = 1 Byte = Werte 0–255.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Powers of 2: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</li><li>1 byte = 8 bits = 0–255. Common in RGB colors, ASCII codes.</li><li>IP address: 192.168.1.1 = 11000000.10101000.00000001.00000001.</li><li>Negative numbers use two's complement in most systems.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimal vs Binary",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimal (base-10)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binary (base-2)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Digits",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–1"
+          }
+        },
+        {
+          "name": "Used by",
+          "values": {
+            "unit1": "Humans",
+            "unit2": "Computers"
+          }
+        },
+        {
+          "name": "Example: 42",
+          "values": {
+            "unit1": "42",
+            "unit2": "101010"
+          }
+        },
+        {
+          "name": "Example: 255",
+          "values": {
+            "unit1": "255",
+            "unit2": "11111111"
+          }
+        },
+        {
+          "name": "Readability",
+          "values": {
+            "unit1": "Easy for humans",
+            "unit2": "Long but computer-native"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Τι είναι 10 in Binär?",
+          "answer": "Dezimal 10 = Binär 1010 (8+2)."
+        },
+        {
+          "question": "Τι είναι 255 in Binär?",
+          "answer": "255 = 11111111 (acht Einsen). Maximum eines Bytes."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DEC σε BIN – Arteon",
+      "defaultSubject": "Feedback: dec-to-bin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

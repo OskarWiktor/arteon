@@ -1,0 +1,273 @@
+{
+  "toolKey": "celsiusToFahrenheit",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník Celsius na Fahrenheit",
+    "description": "Převést Celsius na Fahrenheit a naopak. Užitečné pro vaření, cestování a počasí. Bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/cs/nastroje/prevodnik-celsius-na-fahrenheit"
+  },
+  "hero": {
+    "title": "Převést Celsius na Fahrenheit",
+    "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-celsius-na-fahrenheit",
+      "label": "°C na °F"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník Celsius na Fahrenheit",
+      "alternateName": ["Převést Celsius na Fahrenheit"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převést Celsius na Fahrenheit a naopak. Užitečné pro vaření, cestování a počasí. Bez registrace.",
+      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+    },
+    "howTo": {
+      "name": "Jak používat převodník",
+      "description": "Rychlý průvodce použitím převodníku.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadat hodnotu",
+          "text": "Zadejte číslo do vstupního pole vlevo."
+        },
+        {
+          "name": "Přečíst výsledek",
+          "text": "Výsledek konverze se okamžitě zobrazí v sousedním poli."
+        },
+        {
+          "name": "Kopírovat nebo obrátit",
+          "text": "Klikněte na Kopírovat výsledek nebo na Obrátit pro konverzi v opačném směru."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kdy je potřeba převádět Celsius na Fahrenheit?",
+      "html": "<p class=\"text-mid mb-4\">Celsius (°C) je standard ve většině světa. Fahrenheit (°F) se používá v USA. Vzorec: °F = °C × 9/5 + 32.</p><p class=\"text-mid mb-4\">0°C = 32°F (mrznutí), 37°C = 98,6°F (tělo), 100°C = 212°F (var).</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Převodník Celsius na Fahrenheit – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak použít převodník?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Zadejte hodnotu",
+          "description": "Zadejte číslo do vstupního pole.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Přečtěte výsledek",
+          "description": "Výsledek se zobrazí okamžitě.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Zkopírujte nebo obraťte",
+          "description": "Zkopírujte výsledek nebo obraťte směr převodu.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy je tento převodník užitečný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiSunLine",
+          "title": "Cesty do USA",
+          "description": "Počasí v USA v °F: 70°F = 21°C."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Vaření",
+          "description": "350°F = 177°C, 400°F = 204°C."
+        },
+        {
+          "icon": "RiHeartPulseLine",
+          "title": "Medicína",
+          "description": "98,6°F = 37°C. Horečka: 100,4°F = 38°C."
+        },
+        {
+          "icon": "RiFlaskLine",
+          "title": "Klimatizace",
+          "description": "Termostaty v USA v °F: 72°F = 22,2°C."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím se tento převodník liší?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Plné soukromí",
+          "description": "Všechny výpočty probíhají lokálně ve vašem prohlížeči."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Výsledky v reálném čase",
+          "description": "Výsledek se aktualizuje během zadávání."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obousměrný převod",
+          "description": "Převádějte oběma směry jedním kliknutím."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenční tabulka",
+          "description": "Tabulka s běžnými hodnotami a kontextovými popisy."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">°F = °C × 9/5 + 32. Obráceně: °C = (°F − 32) × 5/9.</p><p class=\"text-mid\">Stupnice se shodují při −40°.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">°F = °C × 9/5 + 32. Obráceně: °C = (°F − 32) × 5/9.</p><p class=\"text-mid\">Stupnice se shodují při −40°.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Celsius vs Fahrenheit",
+      "featureLabel": "Vlastnost",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Celsius (°C)"
+        },
+        {
+          "id": "unit2",
+          "name": "Fahrenheit (°F)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Mrznutí",
+          "values": {
+            "unit1": "0°C",
+            "unit2": "32°F"
+          }
+        },
+        {
+          "name": "Var",
+          "values": {
+            "unit1": "100°C",
+            "unit2": "212°F"
+          }
+        },
+        {
+          "name": "Tělo",
+          "values": {
+            "unit1": "37°C",
+            "unit2": "98,6°F"
+          }
+        },
+        {
+          "name": "Použití",
+          "values": {
+            "unit1": "Mezinárodní",
+            "unit2": "USA"
+          }
+        },
+        {
+          "name": "Věda",
+          "values": {
+            "unit1": "Kelvin",
+            "unit2": "Rankine"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Jak převedu °C na °F?",
+          "answer": "°C × 1,8 + 32. Příklad: 25°C = 77°F."
+        },
+        {
+          "question": "Probíhají výpočty lokálně?",
+          "answer": "Ano. Veškeré výpočty probíhají ve vašem prohlížeči."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "°C na °F – Arteon",
+      "defaultSubject": "Feedback: celsius-to-fahrenheit"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

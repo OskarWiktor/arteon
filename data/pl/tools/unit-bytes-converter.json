@@ -1,0 +1,289 @@
+{
+  "toolKey": "bytesConverter",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter bajtów – B, KB, MB, GB, TB",
+    "description": "Przelicz bajty na kilobajty, megabajty, gigabajty i terabajty. Wynik pojawia się natychmiast. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-bajtow"
+  },
+  "hero": {
+    "title": "Przelicz bajty na KB, MB, GB",
+    "description": "Ten konwerter przelicza bajty na kilobajty, megabajty, gigabajty i terabajty. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-bajtow",
+      "label": "bajty na KB/MB/GB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter bajtów – B, KB, MB, GB, TB",
+      "alternateName": ["Przelicznik bajtów", "Kalkulator KB MB GB", "Konwerter wielkości plików"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz bajty na kilobajty, megabajty, gigabajty i terabajty. Wynik pojawia się natychmiast. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera bajty na KB/MB/GB",
+      "description": "Instrukcja użycia: bajty na kb/mb/gb.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Jak przeliczać bajty na kilobajty i megabajty?",
+      "html": "<p class=\"text-mid mb-4\">W informatyce 1 KB = 1 024 B (system binarny, IEC: 1 KiB). Producenci dysków używają systemu dziesiętnego: 1 KB = 1 000 B. Ten konwerter używa systemu binarnego (1 024).</p><p class=\"text-mid mb-4\">Hierarchia: 1 KB = 1 024 B, 1 MB = 1 024 KB = 1 048 576 B, 1 GB = 1 024 MB, 1 TB = 1 024 GB.</p><p class=\"text-mid mb-4\">Dlatego dysk “500 GB” (producent, system 1000) ma w systemie 1024 około 465 GB. Różnica rośnie z wielkością – dysk 1 TB “traci” 7,4%.</p><p class=\"text-mid\">Przeliczanie bajtów przydaje się przy szacowaniu przestrzeni dyskowej, limitów przesyłania plików i planowaniu pojemności serwerów.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "bajty na KB/MB/GB – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Pojemność dysków",
+          "description": "Dysk 1 TB (producent) = 931 GB w systemie binarnym."
+        },
+        {
+          "icon": "RiUploadCloudLine",
+          "title": "Limity przesyłania",
+          "description": "Załącznik e-mail: 25 MB = 26 214 400 B."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Serwery",
+          "description": "Planowanie pojemności: RAM, dyski, transfer."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Pamięć urządzeń",
+          "description": "Telefon 128 GB = 137 438 953 472 B."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa przeliczanie jednostek danych?",
+      "html": "<p class=\"text-mid mb-4\">W informatyce istnieją dwa systemy przeliczania jednostek danych: binarny i dziesiętny. W systemie binarnym (używanym przez systemy operacyjne) każda kolejna jednostka jest 1 024 razy większa od poprzedniej — jeden kilobajt to 1 024 bajtów, jeden megabajt to 1 024 kilobajtów (czyli 1 048 576 bajtów), a jeden gigabajt to 1 024 megabajtów.</p><p class=\"text-mid mb-4\">W systemie dziesiętnym (stosowanym przez producentów dysków) każda jednostka jest 1 000 razy większa — dlatego dysk o pojemności 500 GB (dziesiętnie) wyświetla się w systemie jako około 465 GB (binarnie). Ta różnica wyjaśnia, dlaczego nowy dysk zawsze wydaje się mieć mniej miejsca niż deklarowana pojemność.</p><p class=\"text-mid\">Konwerter obsługuje oba systemy i pozwala przeliczać między bajtami, kilobajtami, megabajtami, gigabajtami i terabajtami. Mnożnik 1 024 wynika z tego, że komputery operują w systemie dwójkowym, gdzie 2 do potęgi 10 wynosi dokładnie 1 024.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Dysk 1 TB (1 000 000 000 000 B) = 931,32 GiB w systemie 1024.</li><li>Załącznik Gmail: max 25 MB. Google Drive: 15 GB darmowej przestrzeni.</li><li>Zdjęcie RAW: 25–80 MB. Film 4K (1 min): ~375 MB.</li><li>1 bit = 1/8 bajta. 1 bajt = 8 bitów.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "System binarny (1024) vs System dziesiętny (1000) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "System binarny (1024)"
+        },
+        {
+          "id": "unit2",
+          "name": "System dziesiętny (1000)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Mnożnik",
+          "values": {
+            "unit1": "1 024",
+            "unit2": "1 000"
+          }
+        },
+        {
+          "name": "Standard",
+          "values": {
+            "unit1": "IEC (KiB, MiB, GiB)",
+            "unit2": "SI (KB, MB, GB)"
+          }
+        },
+        {
+          "name": "Użycie",
+          "values": {
+            "unit1": "Systemy operacyjne",
+            "unit2": "Producenci dysków"
+          }
+        },
+        {
+          "name": "1 TB =",
+          "values": {
+            "unit1": "1 099 511 627 776 B",
+            "unit2": "1 000 000 000 000 B"
+          }
+        },
+        {
+          "name": "Różnica",
+          "values": {
+            "unit1": "Większe jednostki",
+            "unit2": "Mniejsze jednostki"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile KB to 1 MB?",
+          "answer": "1 MB = 1 024 KB (binarnie) lub 1 000 KB (dziesiętnie)."
+        },
+        {
+          "question": "Dlaczego dysk 1 TB pokazuje 931 GB?",
+          "answer": "Producent liczy 1 TB = 1 000 000 000 000 B. System operacyjny liczy 1 GB = 1 073 741 824 B, więc wychodzi 931 GB."
+        },
+        {
+          "question": "Jaka jest różnica między KB a KiB?",
+          "answer": "KB w systemie dziesiętnym = 1 000 B. KiB (kibibajt) = 1 024 B. W praktyce większość osób używa KB oznaczając 1 024 B."
+        },
+        {
+          "question": "Ile MB ma zdjęcie?",
+          "answer": "JPG ze smartfona: 3–10 MB. RAW z aparatu: 25–80 MB. PNG bez kompresji: zależy od rozdzielczości."
+        },
+        {
+          "question": "Ile GB to 1 TB?",
+          "answer": "1 TB = 1 024 GB (binarnie). W systemie producentów: 1 TB = 1 000 GB."
+        },
+        {
+          "question": "Czy bit i bajt to to samo?",
+          "answer": "Nie. 1 bajt = 8 bitów. Prędkość internetu podaje się w bitach (Mbps), rozmiar plików w bajtach (MB)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "bajty na KB/MB/GB – Arteon",
+      "defaultSubject": "Feedback: bajty na KB/MB/GB"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

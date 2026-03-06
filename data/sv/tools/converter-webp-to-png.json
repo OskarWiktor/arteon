@@ -41,7 +41,7 @@
         },
         {
           "name": "Konvertera till PNG",
-          "text": "Klicka på konvertera. PNG är förlustfritt — ingen kvalitetsinställning behövs."
+          "text": "Klicka på konvertera. PNG är förlustfritt - ingen kvalitetsinställning behövs."
         },
         {
           "name": "Ladda ner PNG-filer",
@@ -293,6 +293,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP to PNG – typical file sizes",
+      "html": "<p class=\"text-mid mb-4\">PNG files are larger than WebP because PNG uses lossless compression while WebP uses lossy:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo</p><p class=\"text-light text-sm\">WebP: 240 KB → PNG: 1.2 MB</p><p class=\"text-light mt-1 text-sm\">5× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">WebP: 85 KB → PNG: 320 KB</p><p class=\"text-light mt-1 text-sm\">3.8× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Icon with transparency</p><p class=\"text-light text-sm\">WebP: 12 KB → PNG: 28 KB</p><p class=\"text-light mt-1 text-sm\">2.3× larger (lossless)</p></div></div><p class=\"text-light mt-4 text-sm\">The size increase is normal. PNG prioritizes universal compatibility and lossless quality over file size.</p>"
+    },
+    {
       "type": "faq",
       "title": "Vanliga frågor om konvertering av WebP till PNG",
       "openByDefault": 0,
@@ -338,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
-      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande — vi svarar inom 24 timmar.",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande - vi svarar inom 24 timmar.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "WebP till PNG-konverterare – Arteon",
       "defaultSubject": "Feedback: WebP till PNG-konverterare"

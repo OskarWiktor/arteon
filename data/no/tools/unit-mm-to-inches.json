@@ -1,0 +1,273 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "no",
+  "metadata": {
+    "title": "Mm til tommer – kalkulator",
+    "description": "Regn om millimeter til tommer og omvendt.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/no/verktoy/mm-til-tommer-kalkulator"
+  },
+  "hero": {
+    "title": "Mm til tommer",
+    "description": "Denne kalkulatoren regner om umiddelbart. Skriv inn en verdi og resultatet vises med en gang.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/mm-til-tommer-kalkulator",
+      "label": "mm til tommer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Mm til tommer – kalkulator",
+      "alternateName": ["Mm til tommer"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Regn om millimeter til tommer og omvendt.",
+      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+    },
+    "howTo": {
+      "name": "Slik bruker du kalkulatoren",
+      "description": "Hurtigguide for bruk av kalkulatoren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Skriv inn verdi",
+          "text": "Skriv inn et tall i inputfeltet til venstre."
+        },
+        {
+          "name": "Les av resultatet",
+          "text": "Konverteringsresultatet vises umiddelbart i feltet ved siden av."
+        },
+        {
+          "name": "Kopier eller snu",
+          "text": "Klikk på Kopier resultat eller på Snu for å konvertere i motsatt retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Når bør man omregne millimeter til tommer?",
+      "html": "<p class=\"text-mid mb-4\">Millimeter (mm) brukes for presisjonsarbeid i det metriske systemet. Tommer er standard i USA/UK. 1 tomme = 25,4 mm nøyaktig.</p><p class=\"text-mid mb-4\">Skruer: M6 = 6 mm ≈ 15/64\". Rør: 1/2\" = 12,7 mm.</p><p class=\"text-mid\">Alle beregninger kjører lokalt i nettleseren din.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Millimeters to inches converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruker du omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Skriv inn en verdi",
+          "description": "Tast inn et tall i inntastingsfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Les resultatet",
+          "description": "Resultatet vises umiddelbart.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopier eller bytt",
+          "description": "Kopier resultatet eller bytt omregningsretning.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Når er denne kalkulatoren nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiToolsLine",
+          "title": "Tekniske anvendelser",
+          "description": "Nøkler og bor: 10 mm ≈ 3/8\"."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Utskrift",
+          "description": "Kontakter og PCB-mål i mm."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Smykker",
+          "description": "Ringmål i mm og tommer."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Design og måling",
+          "description": "Europeiske planker (mm) vs amerikanske (tommer)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne omregneren spesiell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Full personvern",
+          "description": "Alle beregninger kjører lokalt i nettleseren din."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Sanntidsresultater",
+          "description": "Resultatet oppdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Toveis omregning",
+          "description": "Omregn begge veier med ett klikk."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referansetabell",
+          "description": "Tabell med vanlige verdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">1 tomme = 25,4 mm (eksakt). mm til tommer: del med 25,4.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">1 tomme = 25,4 mm (eksakt). mm til tommer: del med 25,4.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Millimeter vs Tomme",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Millimeter (mm)"
+        },
+        {
+          "id": "unit2",
+          "name": "Tomme (in)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisk (SI)",
+            "unit2": "Imperisk"
+          }
+        },
+        {
+          "name": "Definisjon",
+          "values": {
+            "unit1": "1/1 000 meter",
+            "unit2": "25,4 mm"
+          }
+        },
+        {
+          "name": "Presisjon",
+          "values": {
+            "unit1": "Standard for teknikk",
+            "unit2": "Brøkdeler (1/16, 1/32)"
+          }
+        },
+        {
+          "name": "Verktøy",
+          "values": {
+            "unit1": "Europa, Asia",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Elektronikk",
+          "values": {
+            "unit1": "Universelt",
+            "unit2": "PCB noen ganger i mil (1/1000\")"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange mm er 1 tomme?",
+          "answer": "1 tomme = 25,4 mm nøyaktig."
+        },
+        {
+          "question": "Kjører beregningene lokalt?",
+          "answer": "Ja. Alle beregninger kjører i nettleseren din."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "mm til tommer – Arteon",
+      "defaultSubject": "Tilbakemelding: mm-to-inches"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "toolKey": "bytesConverter",
+  "locale": "da",
+  "metadata": {
+    "title": "Konverter bytes til KB, MB, GB, TB",
+    "description": "Konverter bytes til KB, MB, GB, TB og omvendt. Nyttig til it og datahåndtering. Ingen registrering krævet.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/da/vaerktojer/bytes-konverter"
+  },
+  "hero": {
+    "title": "Konverter bytes til KB, MB, GB, TB",
+    "description": "Denne konverter konverterer øjeblikkeligt. Indtast en værdi, og resultatet vises med det samme.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/bytes-konverter",
+      "label": "Bytes-konverter"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konverter bytes til KB, MB, GB, TB",
+      "alternateName": ["Konverter bytes til KB, MB, GB, TB"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konverter bytes til KB, MB, GB, TB og omvendt. Nyttig til it og datahåndtering. Ingen registrering krævet.",
+      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+    },
+    "howTo": {
+      "name": "Sådan bruger du konverteren",
+      "description": "Hurtigguide til brug af konverteren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Indtast værdi",
+          "text": "Skriv et tal i inputfeltet til venstre."
+        },
+        {
+          "name": "Aflæs resultatet",
+          "text": "Konverteringsresultatet vises øjeblikkeligt i feltet ved siden af."
+        },
+        {
+          "name": "Kopier eller vend om",
+          "text": "Klik på Kopier resultat eller på Vend om for at konvertere i den anden retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvornår skal man omregne bytes?",
+      "html": "<p class=\"text-mid mb-4\">Digital lagring måles i bytes: KB, MB, GB, TB. Decimalt system (1 KB = 1.000 bytes) vs binært (1 KiB = 1.024 bytes).</p><p class=\"text-mid mb-4\">Producenter bruger decimalt (disk &quot;1 TB&quot; = 1.000.000.000.000 bytes), OS bruger binært (~931 GiB).</p><p class=\"text-mid\">Alle beregninger kører lokalt i din browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Konverter bytes til KB, MB, GB, TB – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruger man omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Indtast en værdi",
+          "description": "Skriv et tal i inputfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Læs resultatet",
+          "description": "Resultatet vises øjeblikkeligt.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiér eller vend",
+          "description": "Kopiér resultatet eller vend omregningsretningen.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår er denne omregner nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Lagerkapacitet",
+          "description": "Disk &quot;1 TB&quot; viser 931 GiB i Windows."
+        },
+        {
+          "icon": "RiUploadCloudLine",
+          "title": "Filøverførsel",
+          "description": "Netværk i bits (Mbps), filer i bytes."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Cloud",
+          "description": "Hvor mange GB dine filer fylder."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Programmering",
+          "description": "Buffere og hukommelsesallokering."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad adskiller denne omregner?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatliv",
+          "description": "Alle beregninger kører lokalt i din browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Realtidsresultater",
+          "description": "Resultatet opdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tovejsomregning",
+          "description": "Omregn begge veje med ét klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencetabel",
+          "description": "Tabel med almindelige værdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer byte-omregning?",
+      "html": "<p class=\"text-mid mb-4\">Decimalt: 1 KB = 1.000 bytes. Hvert niveau × 1.000.</p><p class=\"text-mid mb-4\">Binært: 1 KiB = 1.024 bytes. Hvert niveau × 1.024.</p><p class=\"text-mid\">Forskellen vokser: 1 TB (dek.) = 0,909 TiB (bin.).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer byte-omregning?",
+      "html": "<p class=\"text-mid mb-4\">Decimalt: 1 KB = 1.000 bytes. Hvert niveau × 1.000.</p><p class=\"text-mid mb-4\">Binært: 1 KiB = 1.024 bytes. Hvert niveau × 1.024.</p><p class=\"text-mid\">Forskellen vokser: 1 TB (dek.) = 0,909 TiB (bin.).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimalt vs Binært",
+      "featureLabel": "Egenskab",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimalt (SI)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binært (IEC)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Multiplikator",
+          "values": {
+            "unit1": "1.000",
+            "unit2": "1.024"
+          }
+        },
+        {
+          "name": "Enheder",
+          "values": {
+            "unit1": "KB, MB, GB",
+            "unit2": "KiB, MiB, GiB"
+          }
+        },
+        {
+          "name": "Bruges af",
+          "values": {
+            "unit1": "Diskproducenter",
+            "unit2": "OS, RAM"
+          }
+        },
+        {
+          "name": "1 TB",
+          "values": {
+            "unit1": "1.000.000.000.000 B",
+            "unit2": "1.099.511.627.776 B"
+          }
+        },
+        {
+          "name": "Forskel",
+          "values": {
+            "unit1": "1 TB",
+            "unit2": "0,909 TiB"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange MB er 1 GB?",
+          "answer": "1 GB = 1.000 MB (dek.) eller 1 GiB = 1.024 MiB (bin.)."
+        },
+        {
+          "question": "Hvorfor viser disken mindre plads?",
+          "answer": "Producenter bruger decimalt, OS bruger binært system."
+        },
+        {
+          "question": "Kører beregningerne lokalt?",
+          "answer": "Ja. Alle beregninger kører i din browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "bajty na KB/MB/GB – Arteon",
+      "defaultSubject": "Feedback: bytes-converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

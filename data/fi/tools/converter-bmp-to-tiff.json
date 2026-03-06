@@ -2,14 +2,14 @@
   "toolKey": "bmpToTiff",
   "locale": "fi",
   "metadata": {
-    "title": "BMP TIFF -muunnin — BMP TIFF",
-    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
+    "title": "BMP TIFF -muunnin - BMP TIFF",
+    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa - tiedostot eivät poistu laitteeltasi.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/bmp-tiff-muunnin"
   },
   "hero": {
     "title": "BMP TIFF -muunnin",
-    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
+    "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa - tiedostot eivät poistu laitteeltasi.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP TIFF -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
+      "description": "Muunna BMP-tiedostot ammattimaiseen TIFF-muotoon tulostusta varten. Kaikki käsittely tapahtuu paikallisesti selaimessa - tiedostot eivät poistu laitteeltasi.",
       "featureList": ["Muunnos TIFF-muotoon", "Laadun säätö (60-95%)", "Erämuunnos", "Paikallinen käsittely selaimessa"],
       "alternateName": ["Muunna BMP TIFF-muotoon", "BMP:n muunto TIFF-muotoon", "Ilmainen BMP–TIFF-muunnin"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Aseta laatu",
-          "text": "Säädä TIFF-laatuliukusäädintä — alhaisemmat arvot tuottavat pienempiä tiedostoja."
+          "text": "Säädä TIFF-laatuliukusäädintä - alhaisemmat arvot tuottavat pienempiä tiedostoja."
         },
         {
           "position": 3,
           "name": "Muunna",
-          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessa."
+          "text": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessa."
         },
         {
           "position": 4,
           "name": "Lataa",
-          "text": "Lataa TIFF-tiedostot — yksittäin tai kaikki kerralla."
+          "text": "Lataa TIFF-tiedostot - yksittäin tai kaikki kerralla."
         }
       ]
     }
@@ -253,28 +253,28 @@
     {
       "type": "sectionSteps",
       "title": "Vinkkeja BMP-TIFF-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "description": "Vinkkeja yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
+          "title": "Erittäin suuret tiedostot",
           "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Jo pakatut",
-          "description": "Jos BMP oli jo voimakkaasti pakattu, muunnos TIFF-muotoon ei valttamatta saasta paljon."
+          "description": "Jos BMP oli jo voimakkaasti pakattu, muunnos TIFF-muotoon ei välttämättä säästä paljon."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "TIFF tukee alfakanavaa. BMP:n lapinakyyt alueet sailyvat."
+          "title": "Läpinäkyvyys",
+          "description": "TIFF tukee alfakanavaa. BMP:n läpinäkyvät alueet säilyvät."
         },
         {
           "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot BMP-tiedostoista."
+          "title": "Säilytä alkuperäiset",
+          "description": "Häviöllinen muunnos on peruuttamaton. Säilytä kopiot BMP-tiedostoista."
         }
       ]
     },
@@ -284,12 +284,21 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla BMP TIFF?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Kuinka paljon säästät muuntamalla BMP TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Säästöt riippuvat tiedostotyypistä ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Näyttökuva / banneri</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset säästöt vaihtelevat sisällön ja asetusten mukaan.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting BMP to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",
@@ -318,11 +327,11 @@
         },
         {
           "question": "Onko BMP TIFF muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "answer": "Kyllä. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitään ei lähetetä palvelimille."
         },
         {
           "question": "Voinko muuntaa useita BMP-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "answer": "Kyllä. Erämuunnos ilman rajaa. Vedä tiedostot muuntimeen."
         },
         {
           "question": "Tukevatko kaikki selaimet TIFF-muotoa?",

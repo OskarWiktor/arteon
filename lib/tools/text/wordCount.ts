@@ -68,7 +68,7 @@ export function analyzeText(text: string, locale: Locale = 'en'): TextMetrics {
 }
 
 // ---------------------------------------------------------------------------
-// Reading-time i18n (kept minimal — only formatting, no page-type evaluation)
+// Reading-time i18n (kept minimal - only formatting, no page-type evaluation)
 // ---------------------------------------------------------------------------
 const READING_TIME_FMT: Record<Locale, (m: number) => string> = {
   pl: (m) => (m === 1 ? '1 minuta' : m >= 2 && m <= 4 ? `${m} minuty` : `${m} minut`),

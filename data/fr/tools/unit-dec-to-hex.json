@@ -1,0 +1,277 @@
+{
+  "toolKey": "decToHex",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur décimal en hexadécimal",
+    "description": "Convertissez les nombres décimaux en hexadécimal. Essentiel pour les couleurs web et la programmation.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-decimal-en-hex"
+  },
+  "hero": {
+    "title": "Convertir décimal en hexadécimal",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-decimal-en-hex",
+      "label": "déc en hex"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur décimal en hexadécimal",
+      "alternateName": ["Convertir décimal en hexadécimal"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez les nombres décimaux en hexadécimal. Essentiel pour les couleurs web et la programmation.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir du décimal en hexadécimal ?",
+      "html": "<p class=\"text-mid mb-4\">L’hexadécimal (base 16) utilise les chiffres 0–9 et les lettres A–F. C’est une représentation compacte des données binaires : un chiffre hex = 4 bits.</p><p class=\"text-mid mb-4\">Les couleurs web utilisent l’hex : #FF5733 = Rouge 255, Vert 87, Bleu 51. Adresses mémoire : 0x7FFF = 32 767.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur décimal en hexadécimal – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat apparaît instantanément.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Copiez le résultat ou inversez la direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Couleurs web",
+          "description": "Couleurs CSS en hex : #FF0000 = Rouge, #00FF00 = Vert."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Programmation",
+          "description": "Adresses mémoire et valeurs d’octets en hex."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Unicode",
+          "description": "Points de code Unicode en hex : U+0041 = A, U+00E9 = é."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Débogage",
+          "description": "Les dumps hex montrent les contenus de fichiers de manière compacte."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Convertissez dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Tableau avec valeurs courantes et descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Divisez répétitivement par 16 et notez les restes (A–F pour 10–15). Lisez de bas en haut.</p><p class=\"text-mid\">Chaque chiffre hex = 4 bits. Deux chiffres hex = 1 octet (0–255).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Divisez répétitivement par 16 et notez les restes (A–F pour 10–15). Lisez de bas en haut.</p><p class=\"text-mid\">Chaque chiffre hex = 4 bits. Deux chiffres hex = 1 octet (0–255).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Décimal vs Hexadécimal",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Décimal (base 10)"
+        },
+        {
+          "id": "unit2",
+          "name": "Hexadécimal (base 16)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Chiffres",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–9, A–F"
+          }
+        },
+        {
+          "name": "Exemple : 255",
+          "values": {
+            "unit1": "255",
+            "unit2": "FF"
+          }
+        },
+        {
+          "name": "Exemple : 1000",
+          "values": {
+            "unit1": "1000",
+            "unit2": "3E8"
+          }
+        },
+        {
+          "name": "Utilisé pour",
+          "values": {
+            "unit1": "Calcul quotidien",
+            "unit2": "Couleurs, adresses"
+          }
+        },
+        {
+          "name": "Compacité",
+          "values": {
+            "unit1": "Standard",
+            "unit2": "Plus compact que le binaire"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Que vaut 255 en hex ?",
+          "answer": "255 = FF en hexadécimal. Maximum d’un octet."
+        },
+        {
+          "question": "Que signifie 0x ?",
+          "answer": "0x est un préfixe pour les nombres hexadécimaux dans la plupart des langages (C, JavaScript, Python)."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "dziesiętny na szesnastkowy – Arteon",
+      "defaultSubject": "Feedback : dec-to-hex"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

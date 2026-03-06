@@ -1,0 +1,273 @@
+{
+  "toolKey": "cmToPxDpi",
+  "locale": "da",
+  "metadata": {
+    "title": "Konverter cm til pixels (DPI)",
+    "description": "Konverter cm til pixels (DPI) og omvendt. Nyttig til trykdesign og billedforberedelse. Ingen registrering krævet.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/da/vaerktojer/cm-til-px-konverter"
+  },
+  "hero": {
+    "title": "Konverter cm til pixels (DPI)",
+    "description": "Denne konverter konverterer øjeblikkeligt. Indtast en værdi, og resultatet vises med det samme.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/cm-til-px-konverter",
+      "label": "cm til px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konverter cm til pixels (DPI)",
+      "alternateName": ["Konverter cm til pixels (DPI)"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konverter cm til pixels (DPI) og omvendt. Nyttig til trykdesign og billedforberedelse. Ingen registrering krævet.",
+      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+    },
+    "howTo": {
+      "name": "Sådan bruger du konverteren",
+      "description": "Hurtigguide til brug af konverteren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Indtast værdi",
+          "text": "Skriv et tal i inputfeltet til venstre."
+        },
+        {
+          "name": "Aflæs resultatet",
+          "text": "Konverteringsresultatet vises øjeblikkeligt i feltet ved siden af."
+        },
+        {
+          "name": "Kopier eller vend om",
+          "text": "Klik på Kopier resultat eller på Vend om for at konvertere i den anden retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvornår skal man omregne cm til pixels?",
+      "html": "<p class=\"text-mid mb-4\">Trykdesign bruger centimeter, digitale billeder pixels. Omregningen afhænger af DPI: Pixels = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Ved 300 DPI: 10 cm = 1.181 px, A4-bredde (21 cm) = 2.480 px.</p><p class=\"text-mid\">Alle beregninger kører lokalt i din browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Konverter cm til pixels (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruger man omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Indtast en værdi",
+          "description": "Skriv et tal i inputfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Læs resultatet",
+          "description": "Resultatet vises øjeblikkeligt.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiér eller vend",
+          "description": "Kopiér resultatet eller vend omregningsretningen.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår er denne omregner nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Trykdesign",
+          "description": "A4 ved 300 DPI = 2.480 × 3.508 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Storformat",
+          "description": "Bannere og plakater: 150 DPI."
+        },
+        {
+          "icon": "RiArtboardLine",
+          "title": "Webgrafik",
+          "description": "Skærmopløsning 72–96 DPI."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Fotografi",
+          "description": "Tjek om kameraopløsningen rækker til trykstørrelsen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad adskiller denne omregner?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatliv",
+          "description": "Alle beregninger kører lokalt i din browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Realtidsresultater",
+          "description": "Resultatet opdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tovejsomregning",
+          "description": "Omregn begge veje med ét klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencetabel",
+          "description": "Tabel med almindelige værdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">Pixels = cm × DPI / 2,54. Ved 300 DPI: 1 cm = 118,11 px.</p><p class=\"text-mid\">Mere DPI = flere px/cm = skærpere tryk.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">Pixels = cm × DPI / 2,54. Ved 300 DPI: 1 cm = 118,11 px.</p><p class=\"text-mid\">Mere DPI = flere px/cm = skærpere tryk.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "DPI-opløsninger sammenlignet",
+      "featureLabel": "Egenskab",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI (tryk)"
+        },
+        {
+          "id": "unit2",
+          "name": "72 DPI (skærm)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "10 cm",
+          "values": {
+            "unit1": "1.181 px",
+            "unit2": "283 px"
+          }
+        },
+        {
+          "name": "A4 bredde",
+          "values": {
+            "unit1": "2.480 px",
+            "unit2": "595 px"
+          }
+        },
+        {
+          "name": "A4 højde",
+          "values": {
+            "unit1": "3.508 px",
+            "unit2": "842 px"
+          }
+        },
+        {
+          "name": "Anvendelse",
+          "values": {
+            "unit1": "Professionelt tryk",
+            "unit2": "Webgrafik"
+          }
+        },
+        {
+          "name": "Kvalitet",
+          "values": {
+            "unit1": "Skarp i alle størrelser",
+            "unit2": "Kun til skærm"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange px er 1 cm ved 300 DPI?",
+          "answer": "1 cm ved 300 DPI = 118,11 px."
+        },
+        {
+          "question": "Kører beregningerne lokalt?",
+          "answer": "Ja. Alle beregninger kører i din browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "cm na px – Arteon",
+      "defaultSubject": "Feedback: cm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

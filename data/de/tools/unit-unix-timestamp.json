@@ -1,0 +1,277 @@
+{
+  "toolKey": "unixTimestamp",
+  "locale": "de",
+  "metadata": {
+    "title": "Unix-Zeitstempel umrechnen – Epoch-Rechner",
+    "description": "Rechnen Sie Unix-Zeitstempel in lesbare Daten um und umgekehrt. Unverzichtbar für Entwickler und Log-Analyse.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/unix-timestamp-umrechner"
+  },
+  "hero": {
+    "title": "Unix-Zeitstempel umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/unix-timestamp-umrechner",
+      "label": "Unix-Zeitstempel"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Unix-Zeitstempel umrechnen – Epoch-Rechner",
+      "alternateName": ["Unix-Zeitstempel umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Rechnen Sie Unix-Zeitstempel in lesbare Daten um und umgekehrt. Unverzichtbar für Entwickler und Log-Analyse.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter Unix Timestamp na datę",
+      "description": "Anleitung: unix timestamp na datę.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann muss man Unix-Zeitstempel umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Der Unix-Zeitstempel (Unix Timestamp oder Epoch) zählt die Sekunden seit dem 1. Januar 1970, 00:00:00 UTC. Es ist der universelle Standard zur Speicherung von Datum und Uhrzeit in Computersystemen.</p><p class=\"text-mid mb-4\">Beispiel: 1709251200 = 1. März 2024, 00:00:00 UTC. Zeitstempel sind zeitzonenunabhängig.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Unix-Zeitstempel umrechnen – Epoch-Rechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wie benutzt man den Umrechner?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Ergebnis erscheint sofort.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Kopieren Sie das Ergebnis oder kehren Sie die Umrechnungsrichtung um.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Umrechner nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDatabase2Line",
+          "title": "Webentwicklung",
+          "description": "APIs und Datenbanken speichern Daten als Zeitstempel. Zum Debugging umrechnen."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Log-Analyse",
+          "description": "Server-Logs verwenden Unix-Zeitstempel."
+        },
+        {
+          "icon": "RiTerminalBoxLine",
+          "title": "Datenbanken",
+          "description": "MySQL UNIX_TIMESTAMP(), PostgreSQL extract(epoch from...) geben Zeitstempel zurück."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Programmierung",
+          "description": "JavaScript Date.now() gibt Millisekunden seit Epoch zurück. Durch 1.000 teilen für Sekunden."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was unterscheidet diesen Umrechner?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen werden lokal in Ihrem Browser durchgeführt."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich während der Eingabe."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Umrechnung",
+          "description": "Rechnen Sie mit einem Klick in beide Richtungen um."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Tabelle mit gängigen Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktionieren Unix-Zeitstempel?",
+      "html": "<p class=\"text-mid mb-4\">Die Unix-Zeit zählt Sekunden seit der Epoche (Epoch): 1. Januar 1970, 00:00:00 UTC. Der Wert ist immer UTC.</p><p class=\"text-mid\">JavaScript: Date.now() gibt Millisekunden zurück. Python: time.time() gibt Sekunden mit Dezimalstellen zurück.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktionieren Unix-Zeitstempel?",
+      "html": "<p class=\"text-mid mb-4\">Die Unix-Zeit zählt Sekunden seit der Epoche (Epoch): 1. Januar 1970, 00:00:00 UTC. Der Wert ist immer UTC.</p><p class=\"text-mid\">JavaScript: Date.now() gibt Millisekunden zurück. Python: time.time() gibt Sekunden mit Dezimalstellen zurück.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Unix-Zeitstempel vs ISO-Datum",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Unix-Zeitstempel"
+        },
+        {
+          "id": "unit2",
+          "name": "ISO 8601 Datum",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Format",
+          "values": {
+            "unit1": "1709251200",
+            "unit2": "2024-03-01T00:00:00Z"
+          }
+        },
+        {
+          "name": "Lesbarkeit",
+          "values": {
+            "unit1": "Nur für Maschinen",
+            "unit2": "Für Menschen lesbar"
+          }
+        },
+        {
+          "name": "Zeitzone",
+          "values": {
+            "unit1": "Immer UTC",
+            "unit2": "Enthält Zeitzone (Z, +02:00)"
+          }
+        },
+        {
+          "name": "Vergleich",
+          "values": {
+            "unit1": "Einfach (größer = später)",
+            "unit2": "Erfordert Parsing"
+          }
+        },
+        {
+          "name": "Speicher",
+          "values": {
+            "unit1": "4–8 Bytes",
+            "unit2": "20+ Bytes"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Was ist die Unix-Epoche?",
+          "answer": "Der 1. Januar 1970 um 00:00:00 UTC. Alle Zeitstempel werden ab diesem Punkt gemessen."
+        },
+        {
+          "question": "Was ist das Jahr-2038-Problem?",
+          "answer": "32-Bit-Zeitstempel mit Vorzeichen laufen am 19. Januar 2038 um 03:14:07 UTC über. Moderne Systeme verwenden 64 Bit."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Unix Timestamp na datę – Arteon",
+      "defaultSubject": "Feedback: unix-timestamp"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "toolKey": "jpgToGif",
   "locale": "pt",
   "metadata": {
-    "title": "Conversor JPG para GIF — JPG GIF",
+    "title": "Conversor JPG para GIF - JPG GIF",
     "description": "Converta fotos JPG para formato GIF. Perfeito para graficos simples e icones. Funciona diretamente no navegador. Sem envio para servidor, sem registo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-jpg-para-gif"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Definir qualidade",
-          "text": "Ajuste o controlo de qualidade GIF — valores mais baixos produzem ficheiros mais pequenos."
+          "text": "Ajuste o controlo de qualidade GIF - valores mais baixos produzem ficheiros mais pequenos."
         },
         {
           "position": 3,
           "name": "Converter",
-          "text": "Clique em Converter — os ficheiros são processados localmente no seu navegador."
+          "text": "Clique em Converter - os ficheiros são processados localmente no seu navegador."
         },
         {
           "position": 4,
           "name": "Descarregar",
-          "text": "Descarregue os ficheiros GIF — individualmente ou todos de uma vez."
+          "text": "Descarregue os ficheiros GIF - individualmente ou todos de uma vez."
         }
       ]
     }
@@ -299,6 +299,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting JPG images to GIF reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",

@@ -1,0 +1,273 @@
+{
+  "toolKey": "dpiToPpi",
+  "locale": "ro",
+  "metadata": {
+    "title": "DPI în PPI – convertor",
+    "description": "Comparați DPI și PPI — rezoluție de tipărire vs ecran.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-dpi-in-ppi"
+  },
+  "hero": {
+    "title": "DPI în PPI",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-dpi-in-ppi",
+      "label": "DPI în PPI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "DPI în PPI – convertor",
+      "alternateName": ["DPI în PPI"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Comparați DPI și PPI — rezoluție de tipărire vs ecran.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "What is the difference between DPI and PPI?",
+      "html": "<p class=\"text-mid mb-4\">DPI (dots per inch) refers to the physical dots a printer can place per inch. PPI (pixels per inch) refers to the pixel density of a digital screen or image. In practice, these terms are often used interchangeably, but they describe different things.</p><p class=\"text-mid mb-4\">A printer at 1200 DPI places 1200 ink dots per inch. A screen at 110 PPI displays 110 pixels per inch. An image at 300 PPI has 300 pixels per inch when printed at 100% size.</p><p class=\"text-mid mb-4\">For digital images: use PPI. For printers: use DPI. When someone says “300 DPI image,” they technically mean 300 PPI.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DPI to PPI converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tipărire",
+          "description": "Drukarnia żąda 300 DPI – oznacza to, że grafika musi mieć 300 PPI."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Ekrany i wyświetlacze",
+          "description": "iPhone 15 Pro: 460 PPI. Monitor 27″ 4K: 163 PPI."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Eksport grafik",
+          "description": "Photoshop “DPI” = PPI. 72 DPI dla web, 300 DPI dla druku."
+        },
+        {
+          "icon": "RiQuestionLine",
+          "title": "Edukacja",
+          "description": "Zrozum różnicę między DPI (druk) a PPI (ekran)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How do DPI and PPI relate?",
+      "html": "<p class=\"text-mid mb-4\">Numerically, DPI and PPI use the same value when specifying image resolution for print. A “300 DPI” image file is actually 300 PPI — it has 300 pixels per inch.</p><p class=\"text-mid mb-4\">The printer then uses its own DPI to reproduce each pixel. A 1200 DPI printer uses ~16 dots (4×4) to reproduce each pixel of a 300 PPI image.</p><p class=\"text-mid\">For most practical purposes, DPI and PPI are interchangeable when discussing image resolution. The distinction matters mainly in pre-press and printer calibration.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Image resolution: always specified in PPI. 300 PPI = print quality, 72 PPI = web.</li><li>Printer resolution: inkjet printers typically 1200–4800 DPI. Laser: 600–1200 DPI.</li><li>Screen PPI: MacBook Pro 14″ = 254 PPI, iPhone 15 = 460 PPI.</li><li>Changing PPI in Photoshop without resampling just changes the print size, not the pixel count.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "DPI vs PPI – comparație",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "DPI (dots per inch)"
+        },
+        {
+          "id": "unit2",
+          "name": "PPI (pixels per inch)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Applies to",
+          "values": {
+            "unit1": "Printers",
+            "unit2": "Screens and images"
+          }
+        },
+        {
+          "name": "Measures",
+          "values": {
+            "unit1": "Physical ink dots",
+            "unit2": "Digital pixels"
+          }
+        },
+        {
+          "name": "Typical values",
+          "values": {
+            "unit1": "600–4800 DPI",
+            "unit2": "72–460 PPI"
+          }
+        },
+        {
+          "name": "Print quality",
+          "values": {
+            "unit1": "Higher = finer detail",
+            "unit2": "300 PPI standard"
+          }
+        },
+        {
+          "name": "Common confusion",
+          "values": {
+            "unit1": "Used for images (incorrectly)",
+            "unit2": "Correct term for images"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ist DPI gleich PPI?",
+          "answer": "Nicht genau. DPI misst Druckerpunkte, PPI Bildschirm-/Bildpixel. In der Praxis sind sie für die Bildauflösung austauschbar."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DPI în PPI – Arteon",
+      "defaultSubject": "Feedback: dpi-to-ppi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

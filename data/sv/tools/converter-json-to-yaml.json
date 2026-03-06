@@ -2,7 +2,7 @@
   "toolKey": "jsonToYaml",
   "locale": "sv",
   "metadata": {
-    "title": "JSON till YAML-konverterare — JSON YAML",
+    "title": "JSON till YAML-konverterare - JSON YAML",
     "description": "Konvertera JSON till YAML-format. Automatisk parsning och formatering. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/json-till-yaml-konverterare"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera JSON till YAML?",
-      "html": "<p class=\"text-mid mb-4\">JSON ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till YAML erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina JSON-filer till YAML-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till YAML erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina JSON-filer till YAML-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "JSON to YAML conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur mycket sparar du vid konvertering JSON till YAML?",
-      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+      "title": "Hur fungerar konvertering från JSON till YAML?",
+      "html": "<p class=\"text-mid mb-4\">JSON och YAML representerar båda strukturerad data, men YAML använder en indragningsbaserad syntax som är renare, utan klammerparenteser eller citattecken runt nycklar. Konverteraren analyserar JSON-strukturen och formaterar den enligt YAML-konventioner: indragning för nästling, bindestreck för arrayelement och kolon för nyckel-värde-par.</p><p class=\"text-mid mb-4\">T.ex. blir ett JSON-objekt som {\"namn\": \"Erik\", \"ålder\": 30} två YAML-rader: namn: Erik och ålder: 30. Nästlade objekt använder djupare indragning, och arrayer använder bindestreck-mellanslag-prefix.</p><p class=\"text-mid\">YAML används ofta för konfigurationsfiler (Docker Compose, Kubernetes, GitHub Actions, Ansible) tack vare sin bättre läsbarhet. Konverteringen sker helt i din webbläsare.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering JSON till YAML",
-      "description": "Tips for att undvika vanliga problem:",
+      "title": "Tips för konvertering från JSON till YAML",
+      "description": "Några tips för att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Mycket stora filer",
-          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Indragning är avgörande",
+          "description": "YAML använder mellanslag för indragning (inte tabbar). Konverteraren genererar konsekvent indragning med 2 mellanslag."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Redan komprimerade",
-          "description": "Om JSON redan var kraftigt komprimerad kanske konvertering till YAML inte sparar mycket."
+          "title": "Citattecken i strängar",
+          "description": "YAML behöver bara citattecken runt strängar som innehåller specialtecken (kolon, hashtaggar, hakparenteser). Enkla strängar förblir utan citattecken för renare utdata."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "YAML stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+          "icon": "RiCodeLine",
+          "title": "Kommentarer",
+          "description": "JSON stöder inte kommentarer, så det finns inget att överföra. I YAML kan du fritt lägga till kommentarer med #."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Spara originalen",
-          "description": "Forlustkomprimering ar irreversibel. Spara kopior av JSON-filer."
+          "icon": "RiFileCodeLine",
+          "title": "Flerradiga strängar",
+          "description": "Långa textvärden med radbrytningar formateras i YAML-blocksyntax (| eller >) för bättre läsbarhet."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Common YAML pitfalls to watch out for",
+      "html": "<p class=\"text-mid mb-4\">YAML is sensitive to formatting. Here are common issues when working with converted YAML:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Indentation</strong> – YAML uses spaces (not tabs) for structure. The converter uses 2-space indentation consistently.</li><li><strong>Special characters in strings</strong> – values containing colons, hashes, or brackets may need quoting. The converter handles this automatically.</li><li><strong>Boolean gotchas</strong> – YAML treats <code>yes</code>, <code>no</code>, <code>on</code>, <code>off</code> as booleans. If these appear as string values in JSON, the converter wraps them in quotes.</li><li><strong>Number precision</strong> – large numbers and floating-point values are preserved exactly as they appear in the JSON source.</li></ul><p class=\"text-mid mt-3\">The converter generates valid YAML that passes <code>yamllint</code> validation. If you encounter issues, check for mixed indentation or unquoted special characters.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         },
         {
-          "question": "Ar konvertering JSON till YAML saker?",
-          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+          "question": "Är konverteringen från JSON till YAML säker?",
+          "answer": "Ja. All konvertering sker lokalt i din webbläsare. Ingen data skickas till någon server."
         },
         {
-          "question": "Kan jag konvertera flera JSON-filer samtidigt?",
-          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+          "question": "Kan jag använda YAML-utdata i Docker eller Kubernetes?",
+          "answer": "Ja. Utdata är standard-YAML, kompatibel med Docker Compose, Kubernetes-manifest, GitHub Actions-arbetsflöden, Ansible-playbooks och alla verktyg som läser YAML."
         },
         {
-          "question": "Stods YAML av alla webblasare?",
-          "answer": "YAML stods av Chrome, Firefox, Safari, Edge och Opera."
+          "question": "Är konverteringen förlustfri?",
+          "answer": "Ja. Alla datatyper (strängar, tal, booleska, null, arrayer, objekt) bevaras exakt. YAML stöder samma datatyper som JSON."
         }
       ]
     },

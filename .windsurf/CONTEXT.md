@@ -1,4 +1,4 @@
-# Arteon — Pełny kontekst dla Cascade (synchronizacja między urządzeniami)
+# Arteon - Pełny kontekst dla Cascade (synchronizacja między urządzeniami)
 
 > **CEL**: Ten plik zawiera WSZYSTKIE ustalenia, wspomnienia, konwencje i decyzje z sesji roboczych.
 > Na nowym urządzeniu poproś Cascade: "Przeczytaj `.windsurf/CONTEXT.md` i zapamiętaj wszystko co tam jest."
@@ -33,7 +33,7 @@
 | **pt**          | pt    | `/pt/ferramentas`  | `/pt/ferramentas/verificador-de-contraste-de-cores`    |
 | **it**          | it    | `/it/strumenti`    | `/it/strumenti/verificatore-contrasto-colori`          |
 
-### 2.2 Planowane lokalizacje (NASTĘPNA FAZA — do implementacji)
+### 2.2 Planowane lokalizacje (NASTĘPNA FAZA - do implementacji)
 
 - **RO** (Romanian)
 - **NL** (Dutch)
@@ -43,14 +43,14 @@
 
 Każda nowa lokalizacja wymaga zmian w:
 
-1. **`dictionaries/{locale}.json`** — słownik UI (nav, footer, legal, desktopOnly)
-2. **`lib/i18n/locales.ts`** — dodać import + `LOCALE_CONFIG` entry (lang, hreflang, label, name, toolsBasePath, toolsIndexHref, aboutHref, contactHref, privacyHref)
-3. **`lib/i18n/tool-registry.ts`** — dodać locale entry w każdym `TOOL_SECTIONS[].locales` i `TOOL_REGISTRY[].locales` (slug, title, description)
-4. **`lib/i18n/tools/*.ts`** — dodać tłumaczenia UI narzędzi (10 plików: `color-palette.ts`, `email-signature.ts`, `favicon.ts`, `image-resize.ts`, `jpg-png-webp.ts`, `meta-title.ts`, `palette-extractor.ts`, `qr-code.ts`, `wcag-contrast.ts`, `word-count.ts`)
-5. **`lib/i18n/pages/*.ts`** — dodać tłumaczenia stron statycznych (about.ts, contact.ts, privacy.ts, tool-meta.ts)
-6. **`data/{locale}/tools/*.json`** — 10 plików JSON z contentBlocks (treść narzędzi)
-7. **`app/{locale}/`** — routing Next.js (katalogi stron: tools/index, tools/desktop-only, tools/[slug], about, contact, privacy-policy)
-8. **`types/locale.ts`** — dodać nowy locale do typu `Locale`
+1. **`dictionaries/{locale}.json`** - słownik UI (nav, footer, legal, desktopOnly)
+2. **`lib/i18n/locales.ts`** - dodać import + `LOCALE_CONFIG` entry (lang, hreflang, label, name, toolsBasePath, toolsIndexHref, aboutHref, contactHref, privacyHref)
+3. **`lib/i18n/tool-registry.ts`** - dodać locale entry w każdym `TOOL_SECTIONS[].locales` i `TOOL_REGISTRY[].locales` (slug, title, description)
+4. **`lib/i18n/tools/*.ts`** - dodać tłumaczenia UI narzędzi (10 plików: `color-palette.ts`, `email-signature.ts`, `favicon.ts`, `image-resize.ts`, `jpg-png-webp.ts`, `meta-title.ts`, `palette-extractor.ts`, `qr-code.ts`, `wcag-contrast.ts`, `word-count.ts`)
+5. **`lib/i18n/pages/*.ts`** - dodać tłumaczenia stron statycznych (about.ts, contact.ts, privacy.ts, tool-meta.ts)
+6. **`data/{locale}/tools/*.json`** - 10 plików JSON z contentBlocks (treść narzędzi)
+7. **`app/{locale}/`** - routing Next.js (katalogi stron: tools/index, tools/desktop-only, tools/[slug], about, contact, privacy-policy)
+8. **`types/locale.ts`** - dodać nowy locale do typu `Locale`
 
 ### 2.4 Struktura pliku JSON narzędzia (`data/{locale}/tools/*.json`)
 
@@ -117,10 +117,10 @@ Każda lokalizacja (poza PL) ma:
 
 - **Długość**: 50-60 znaków
 - **Front-load keyword**: główne słowo kluczowe na POCZĄTKU tytułu
-- **Power words**: "Free", "Instant", "No signup", "One-click" — zwiększają CTR
+- **Power words**: "Free", "Instant", "No signup", "One-click" - zwiększają CTR
 - **Numery**: konkretne liczby zwiększają CTR
 - **ZAKAZ**: słowa "online" (nic nie wnosi, zabiera miejsce)
-- **Wzorzec CTR**: `[Keyword] — [benefit/differentiator] | Arteon`
+- **Wzorzec CTR**: `[Keyword] - [benefit/differentiator] | Arteon`
 
 ### 4.2 Meta Description
 
@@ -133,10 +133,10 @@ Każda lokalizacja (poza PL) ma:
 
 ### 4.3 Hero Title
 
-- **BEZ słowa "online"** — usunięte z WSZYSTKICH lokalizacji
+- **BEZ słowa "online"** - usunięte z WSZYSTKICH lokalizacji
 - Powinien komunikować korzyść, nie tylko nazwę narzędzia
 
-### 4.4 Favicon — specjalne zasady
+### 4.4 Favicon - specjalne zasady
 
 - Narzędzie favicon generuje **favicon.ico** (nie jest generatorem ikon ogólnych)
 - **ZAKAZ** fraz "icon generator" / "generator ikon" w treści i schematach
@@ -149,13 +149,13 @@ Każda lokalizacja (poza PL) ma:
 
 ### 5.1 Kodowanie
 
-- **UTF-8 bez BOM** — zawsze
+- **UTF-8 bez BOM** - zawsze
 - Używaj prawdziwych znaków (ą, ę, ć, ł, ń, ó, ś, ź, ż, è, ù, ñ itd.) zamiast Unicode escape (`\u00e8`)
 - Unicode escape (`\u2013`, `\u00f9` itd.) **tylko** gdy absolutnie konieczne dla poprawności JSON
 
 ### 5.2 Cudzysłowy w JSON
 
-- **ZAKAZ** polskich cudzysłowów typograficznych `„"` — psują parser JSON
+- **ZAKAZ** polskich cudzysłowów typograficznych `„"` - psują parser JSON
 - Rozwiązania: usuń cudzysłowy, użyj `&quot;`, lub użyj apostrofów `''`
 - Dotyczy WSZYSTKICH pól HTML w JSON (`html`, `answer`, `description`)
 
@@ -223,7 +223,7 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 
 ### 8.1 Routing
 
-- PL jest master locale — strony w `app/(pl)/` (bez prefiksu w URL)
+- PL jest master locale - strony w `app/(pl)/` (bez prefiksu w URL)
 - Pozostałe locale mają prefiks: `app/{locale}/`
 - Desktop-only tools używają route group: `tools/(desktop-only)/[slug]/`
 
@@ -236,7 +236,7 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 ### 8.3 Schema.org
 
 - Każda strona narzędzia ma: `SoftwareApplication`, `HowTo`, `WebPage`, `BreadcrumbList`, `FAQPage`
-- Schematy powinny być jak najbogatsze — zwiększają widoczność w wyszukiwarkach i indeksację AI
+- Schematy powinny być jak najbogatsze - zwiększają widoczność w wyszukiwarkach i indeksację AI
 - Waluta w `offers.priceCurrency`: PL→PLN, DE/ES/FR/PT/IT→EUR, EN→USD
 
 ### 8.4 AI Discoverability
@@ -255,7 +255,7 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 
 - **Główny tytuł sekcji**: `<h2>` z klasą `h3` (np. `<h2 className="h3 ...">`)
 - **Podtytuł wewnątrz sekcji**: `<h3>` z klasą `h5` (np. `<h3 className="h5 ...">`)
-- **NIGDY** podtytuł z klasą `h3` lub `h4` — podtytuły ZAWSZE `h5`
+- **NIGDY** podtytuł z klasą `h3` lub `h4` - podtytuły ZAWSZE `h5`
 - Dotyczy: stron narzędzi, artykułów, usług, realizacji, komponentów (SectionDemo, SectionSteps)
 - W artykułach blogowych (`blog.json`): H2 main `class='h3 mb-5 scroll-mt-26 lg:mb-6'`, H3 subtitle `class='h5 mb-3 mt-4'`
 
@@ -263,10 +263,10 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 
 | Tier                      | Klasa CSS                                                         | Zastosowanie                             |
 | ------------------------- | ----------------------------------------------------------------- | ---------------------------------------- |
-| **A — Section Headers**   | `h6` (17-19px, fw600)                                             | "Narzędzia kadrowania", "Dodaj zdjęcie"  |
-| **B — Functional Labels** | `text-[14px]! font-medium`                                        | Etykiety inputów, checkboxów, przycisków |
-| **C — Helpers/Info**      | `text-light text-xs!`                                             | Info o pliku, helper quality, notatki    |
-| **D — Dropzone text**     | Primary: `text-sm! font-medium`, Secondary: `text-light text-xs!` | Tekst dropzone                           |
+| **A - Section Headers**   | `h6` (17-19px, fw600)                                             | "Narzędzia kadrowania", "Dodaj zdjęcie"  |
+| **B - Functional Labels** | `text-[14px]! font-medium`                                        | Etykiety inputów, checkboxów, przycisków |
+| **C - Helpers/Info**      | `text-light text-xs!`                                             | Info o pliku, helper quality, notatki    |
+| **D - Dropzone text**     | Primary: `text-sm! font-medium`, Secondary: `text-light text-xs!` | Tekst dropzone                           |
 
 **Zakazane wzorce w narzędziach** (zastąpione wszędzie):
 
@@ -283,12 +283,12 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 - **Refaktory/logika** (hooks/utils/split) NIE MOGĄ zmieniać UI/UX ani treści
 - **Reuse first**: zawsze szukaj istniejących komponentów/hooków/utils zanim tworzysz nowe
 - **Puste pliki po splicie**: usuwaj natychmiast (bez pustych barrel exports)
-- Typografia: usunięto `Text.tsx` i `Heading.tsx` — używamy semantycznego HTML (`h1`-`h6`, `p`, `span`) + global/tailwind classes (`.h*`, `.p`, `text-sm`, `text-xs`, `.text-light/.text-mid/.text-dark/.text-white`)
+- Typografia: usunięto `Text.tsx` i `Heading.tsx` - używamy semantycznego HTML (`h1`-`h6`, `p`, `span`) + global/tailwind classes (`.h*`, `.p`, `text-sm`, `text-xs`, `.text-light/.text-mid/.text-dark/.text-white`)
 - `components/ui/typography/` zawiera tylko: `Eyebrow.tsx` i `SectionHeader.tsx`
 - Content renderer: wspólny `HTMLContent` + wspólny `RenderBlocks` (warianty dla typów danych)
 - `Badge` → jeden komponent + warianty; `Tag` docelowo nie istnieje
 - `Button` → warianty "jednorazowe" nie wchodzą do API; `totop` jest lokalny w `ButtonToTop`
-- `Tooltip` → zostaje (jedyny wyjątek — może być chwilowo nieużywany)
+- `Tooltip` → zostaje (jedyny wyjątek - może być chwilowo nieużywany)
 
 ### 8.8a Konwencje nazewnictwa plików
 
@@ -304,7 +304,7 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 
 ### 8.8b Konwencje UI/styl
 
-- **Kolory tekstu**: `.text-light`, `.text-mid`, `.text-dark` — **ZAKAZ** `text-gray-*`, `text-neutral-*`, raw hexy
+- **Kolory tekstu**: `.text-light`, `.text-mid`, `.text-dark` - **ZAKAZ** `text-gray-*`, `text-neutral-*`, raw hexy
 - **Ikony**: zawsze kolor `text-[#1b2632]`
 - **Globals-first typografia**: bazujemy na `.h*` i `.p` / globalnych regułach, wyjątki przez klasy
 - **Tailwind klasy przy refaktorze**: zachowujemy 1:1 (chyba że zadanie mówi inaczej)
@@ -331,7 +331,7 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 
 ### 8.11 Chronione pliki konfiguracji SEO
 
-- **`next-sitemap.config.cjs`** i **`public/robots.txt`** — **NIE EDYTOWAĆ** bez wyraźnego polecenia użytkownika
+- **`next-sitemap.config.cjs`** i **`public/robots.txt`** - **NIE EDYTOWAĆ** bez wyraźnego polecenia użytkownika
 - `additionalPaths` służy WYŁĄCZNIE do dynamicznych ścieżek (projects, edukacja)
 - NIE dodawać logiki skanowania stron w `additionalPaths` (strony statyczne → `transform`)
 - Historia: duplikacje w sitemapie z podwójnego skanowania
@@ -363,7 +363,7 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 2. Jeśli ✅ i nie AUDIT: **USUŃ** z `docs/TASKS.md` (nie tylko oznacz!) + dodaj wpis do `docs/DONE_TASKS.md`
 3. **KRYTYCZNE**: zaktualizuj odpowiedni `*_CATALOG.md` (PAGES, TOOLS, COMPONENTS, HOOKS, BLOG, PROJECTS)
 4. Domyślnie: `npm run lint` i `npm run build` muszą przejść
-5. Wyjątek: zadania COPY-_, AUDIT-_, content-only — bez build verification (jawnie: "Weryfikacja: nie jest wymagana")
+5. Wyjątek: zadania COPY-_, AUDIT-_, content-only - bez build verification (jawnie: "Weryfikacja: nie jest wymagana")
 
 ### 9.2 Kategorie zadań
 
@@ -376,14 +376,14 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 | `CONTENT-*`  | Treści blogowe               | ❌ (content-only) | CONTENT-001 excerpt rule |
 | `COPY-*`     | Korekta copy/tonu            | ❌ (COPY-only)    | COPY-### per strona      |
 | `AUDIT-*`    | Audyty                       | ❌ (AUDIT-only)   | AUDIT-003 cleanup        |
-| `IDEA-*`     | Pomysły (backlog)            | —                 | IDEA-019 "Jak pracujemy" |
+| `IDEA-*`     | Pomysły (backlog)            | -                 | IDEA-019 "Jak pracujemy" |
 | `STYLES-*`   | Style/typografia             | ✅                | STYLES-001 typography    |
 | `SECURITY-*` | Bezpieczeństwo               | ✅                | SECURITY-001 rel attrs   |
 
 ### 9.3 Zasady audytów
 
 - Wynik audytu = **konkretne zadania follow-up** z kryteriami akceptacji, NIE "wykryte problemy" bez zadań
-- Audyty NIE trafiają do sekcji Pomysły — mają być egzekwowalnym backlogiem
+- Audyty NIE trafiają do sekcji Pomysły - mają być egzekwowalnym backlogiem
 - Po audycie: dopisz wpis do `DONE_TASKS.md` z zakresem + ID utworzonych zadań
 
 ### 9.4 Dokumentacja projektu (catalogi)
@@ -408,24 +408,24 @@ Wszystkie 7 lokalizacji × 10 narzędzi:
 
 ### 10.1 Ton i styl
 
-- **Ton**: mentorski, życzliwy, prosty, "przy kawie" — bez pouczania
-- **Narracja**: 2 os. l.poj. dla czytelnika ("Twoja firma", "na swojej stronie" — NIE "na Twojej stronie"), 1 os. l.mn. dla Arteon ("wyjaśniamy")
+- **Ton**: mentorski, życzliwy, prosty, "przy kawie" - bez pouczania
+- **Narracja**: 2 os. l.poj. dla czytelnika ("Twoja firma", "na swojej stronie" - NIE "na Twojej stronie"), 1 os. l.mn. dla Arteon ("wyjaśniamy")
 - **Benefit-first**: korzyść → dlaczego ważne → narzędzie
 - Termin techniczny → od razu "co to jest?" i "po co to?"
-- Bez skoków myślowych — spójny tok narracji
+- Bez skoków myślowych - spójny tok narracji
 
 ### 10.2 Zakazy stylistyczne (OBOWIĄZUJĄ ZAWSZE)
 
-- **"online"** — NIGDY w meta titles, descriptions, hero titles, treści narzędzi
-- **Emotki** — NIGDY w treści
-- **Korpo-język** — NIGDY ("leveragujemy synergię", "holistycznie")
-- **Clickbait** — NIGDY ("Nie uwierzysz co...", "Szok!")
-- **Źródła bez linków** — NIGDY (każda statystyka/fakt musi mieć źródło z linkiem)
-- **Anglicyzmy** — polskie odpowiedniki (social media → media społecznościowe)
-- **Rekomendowanie konkurencji** — NIGDY (tylko "skontaktuj się z nami" + link do `/kontakt`)
-- **Łagodne określenia** — "słabsze" zamiast "słabe", "mniej skuteczne" zamiast "złe"
-- **Niedoprecyzowania** — NIGDY; wszystko musi być 100% zgodne z rzeczywistością i jednoznaczne
-- **Przykłady z branży Arteon** — NIGDY; używaj: prawo, medycyna, gastronomia, nieruchomości, e-commerce, produkcja
+- **"online"** - NIGDY w meta titles, descriptions, hero titles, treści narzędzi
+- **Emotki** - NIGDY w treści
+- **Korpo-język** - NIGDY ("leveragujemy synergię", "holistycznie")
+- **Clickbait** - NIGDY ("Nie uwierzysz co...", "Szok!")
+- **Źródła bez linków** - NIGDY (każda statystyka/fakt musi mieć źródło z linkiem)
+- **Anglicyzmy** - polskie odpowiedniki (social media → media społecznościowe)
+- **Rekomendowanie konkurencji** - NIGDY (tylko "skontaktuj się z nami" + link do `/kontakt`)
+- **Łagodne określenia** - "słabsze" zamiast "słabe", "mniej skuteczne" zamiast "złe"
+- **Niedoprecyzowania** - NIGDY; wszystko musi być 100% zgodne z rzeczywistością i jednoznaczne
+- **Przykłady z branży Arteon** - NIGDY; używaj: prawo, medycyna, gastronomia, nieruchomości, e-commerce, produkcja
 
 ### 10.3 CTR i marketing psychologiczny (narzędzia i meta)
 
@@ -453,7 +453,7 @@ Wszystkie meta titles/descriptions i treści narzędzi MUSZĄ stosować:
 - **Linki wewnętrzne**: min. 6-8 per artykuł
 - **Linki zewnętrzne**: min. 4-6 per artykuł (zawsze z linkiem do źródła)
 - **Intencja wyszukiwania**: KAŻDA treść odpowiada na pytanie "czego szuka użytkownik?"
-- **Nasycenie fraz kluczowych**: w nagłówkach H2/H3 — dotyczy WSZYSTKICH treści
+- **Nasycenie fraz kluczowych**: w nagłówkach H2/H3 - dotyczy WSZYSTKICH treści
 - **Linki do zewnętrznych narzędzi**: zawsze dodawać linki (GSC, PageSpeed Insights itp.)
 - **Zaimki dzierżawcze**: "na swojej stronie" zamiast "na Twojej stronie"
 
@@ -471,29 +471,29 @@ Wszystkie meta titles/descriptions i treści narzędzi MUSZĄ stosować:
 ### 🔴 NAJWYŻSZY PRIORYTET: Nowe lokalizacje (RO, NL, HU)
 
 - Pełna checklist implementacji: patrz §14
-- Status: **pending** — czeka na review usera po fazie SEO & Content Refinement
+- Status: **pending** - czeka na review usera po fazie SEO & Content Refinement
 
 ### 🟡 Pending audyty
 
-- `AUDIT-003` — cleanup (puste pliki, martwe exporty, nieużywany kod)
-- `AUDIT-004` — SEO sanity-check (canonical/OG/schema/robots/sitemap) — **ZROBIONY**, follow-up SEO-013/016/017 pending
-- `AUDIT-005` — performance (client components, rerender, obrazy)
-- `AUDIT-009` — blog rozbudowa artykułów pod SEO
-- `AUDIT-010..015` — audyty tonu marki (strony info, usługi, narzędzia, realizacje)
+- `AUDIT-003` - cleanup (puste pliki, martwe exporty, nieużywany kod)
+- `AUDIT-004` - SEO sanity-check (canonical/OG/schema/robots/sitemap) - **ZROBIONY**, follow-up SEO-013/016/017 pending
+- `AUDIT-005` - performance (client components, rerender, obrazy)
+- `AUDIT-009` - blog rozbudowa artykułów pod SEO
+- `AUDIT-010..015` - audyty tonu marki (strony info, usługi, narzędzia, realizacje)
 
 ### 🟡 Pending zadania techniczne
 
-- `CLEANUP-013` — downloadBlob util (ujednolicić pobieranie Blob)
-- `CLEANUP-014` — useCopyToClipboard → useTimeout
-- `TOOLS-060` — zipFromUrls helper (re-use ZIP w narzędziach)
-- `CONTENT-001` — dodać wytyczną excerpt 220-230 znaków do INSTRUCTIONS.md
+- `CLEANUP-013` - downloadBlob util (ujednolicić pobieranie Blob)
+- `CLEANUP-014` - useCopyToClipboard → useTimeout
+- `TOOLS-060` - zipFromUrls helper (re-use ZIP w narzędziach)
+- `CONTENT-001` - dodać wytyczną excerpt 220-230 znaków do INSTRUCTIONS.md
 
 ### 🟡 Pending realizacje
 
-- `PROJECT-002` — galerie contentBlocks + ALT (brakujące screeny/mockupy)
-- `PROJECT-003` — outcomes[] (metryki efektów)
-- `PROJECT-004` — FAQ dla realizacji bez FAQ
-- `PROJECT-006` — komplet danych case study (client/deliverables/stack)
+- `PROJECT-002` - galerie contentBlocks + ALT (brakujące screeny/mockupy)
+- `PROJECT-003` - outcomes[] (metryki efektów)
+- `PROJECT-004` - FAQ dla realizacji bez FAQ
+- `PROJECT-006` - komplet danych case study (client/deliverables/stack)
 
 ### 📝 Pomysły (IDEA-\*)
 
@@ -556,7 +556,7 @@ Get-ChildItem "data\*\tools\*.json" -Recurse | ForEach-Object { $j = Get-Content
 | Plik                                     | Opis                                                              |
 | ---------------------------------------- | ----------------------------------------------------------------- |
 | `middleware.ts`                          | Security (bad bots, blocked paths/ext), redirects, canonical host |
-| `next-sitemap.config.cjs`                | Konfiguracja sitemap (**CHRONIONY — nie edytować bez polecenia**) |
+| `next-sitemap.config.cjs`                | Konfiguracja sitemap (**CHRONIONY - nie edytować bez polecenia**) |
 | `scripts/postbuild-sitemap-hreflang.cjs` | Dodaje hreflang do sitemap po build                               |
 | `scripts/generate-search-index.cjs`      | Prebuild: generuje lekkie search-\*.json                          |
 | `app/(pl)/`                              | Routing PL (master, bez prefiksu URL)                             |
@@ -580,41 +580,41 @@ Get-ChildItem "data\*\tools\*.json" -Recurse | ForEach-Object { $j = Get-Content
 
 | Plik                                                             | Opis                                           |
 | ---------------------------------------------------------------- | ---------------------------------------------- |
-| `lib/tools/text/wordCount.ts`                                    | `PAGE_TYPES` + `EVAL_UI` — wymaga locale entry |
-| `components/sections/tools/ImageResizeTool/ui.ts`                | UI strings — wymaga locale entry               |
-| `components/sections/tools/EmailSignatureGenerator/constants.ts` | Email sig constants — wymaga locale entry      |
-| `types/ui.ts`                                                    | `BreadcrumbsProps` — locale prop               |
+| `lib/tools/text/wordCount.ts`                                    | `PAGE_TYPES` + `EVAL_UI` - wymaga locale entry |
+| `components/sections/tools/ImageResizeTool/ui.ts`                | UI strings - wymaga locale entry               |
+| `components/sections/tools/EmailSignatureGenerator/constants.ts` | Email sig constants - wymaga locale entry      |
+| `types/ui.ts`                                                    | `BreadcrumbsProps` - locale prop               |
 | `components/sections/BreadCrumbs.tsx`                            | Breadcrumbs komponent                          |
 
 ---
 
-## 14. Dodawanie nowego locale — PEŁNA CHECKLIST
+## 14. Dodawanie nowego locale - PEŁNA CHECKLIST
 
 Sprawdzony proces (użyty dla ES, FR, PT, IT):
 
 ### Faza 1: Infrastruktura TypeScript
 
-1. `types/locale.ts` — dodaj `'{locale}'` do union type `Locale`
-2. `dictionaries/{locale}.json` — stwórz (bazuj na `en.json`): `navigation`, `footer`, `legal[]`, `desktopOnly`
-3. `lib/i18n/locales.ts` — dodaj `LOCALE_CONFIG['{locale}']` z: `lang`, `hreflang`, `label`, `name`, `toolsBasePath`, `toolsIndexHref`, `aboutHref`, `contactHref`, `privacyHref`
-4. `lib/i18n/get-dictionary.ts` — dodaj import case dla nowego locale
+1. `types/locale.ts` - dodaj `'{locale}'` do union type `Locale`
+2. `dictionaries/{locale}.json` - stwórz (bazuj na `en.json`): `navigation`, `footer`, `legal[]`, `desktopOnly`
+3. `lib/i18n/locales.ts` - dodaj `LOCALE_CONFIG['{locale}']` z: `lang`, `hreflang`, `label`, `name`, `toolsBasePath`, `toolsIndexHref`, `aboutHref`, `contactHref`, `privacyHref`
+4. `lib/i18n/get-dictionary.ts` - dodaj import case dla nowego locale
 
 ### Faza 2: Tool Registry
 
-5. `lib/i18n/tool-registry.ts` — dodaj locale entry w KAŻDYM:
+5. `lib/i18n/tool-registry.ts` - dodaj locale entry w KAŻDYM:
    - `TOOL_SECTIONS[].locales` (5 sekcji: obrazy, seo, email, kolory, druk)
    - `TOOL_REGISTRY[].locales` (10 narzędzi: slug + title + description)
-6. `lib/i18n/tools/*.ts` — dodaj tłumaczenia w 10 plikach (UI etykiety, placeholdery, alerty)
+6. `lib/i18n/tools/*.ts` - dodaj tłumaczenia w 10 plikach (UI etykiety, placeholdery, alerty)
 
 ### Faza 3: Strony statyczne
 
-7. `lib/i18n/pages/about.ts` — dodaj tłumaczenia about page
-8. `lib/i18n/pages/contact.ts` — dodaj tłumaczenia contact page
-9. `lib/i18n/pages/privacy.ts` — dodaj tłumaczenia privacy page
+7. `lib/i18n/pages/about.ts` - dodaj tłumaczenia about page
+8. `lib/i18n/pages/contact.ts` - dodaj tłumaczenia contact page
+9. `lib/i18n/pages/privacy.ts` - dodaj tłumaczenia privacy page
 
 ### Faza 4: Content JSON
 
-10. `data/{locale}/tools/*.json` — stwórz 10 plików:
+10. `data/{locale}/tools/*.json` - stwórz 10 plików:
     - `contrast-checker.json`, `color-palette.json`, `email-signature.json`
     - `favicon.json`, `image-editor.json`, `meta-counter.json`
     - `palette-extractor.json`, `qr-code.json`, `webp-converter.json`, `word-counter.json`
@@ -622,34 +622,34 @@ Sprawdzony proces (użyty dla ES, FR, PT, IT):
 
 ### Faza 5: Routing Next.js
 
-11. `app/{locale}/layout.tsx` — layout z `getDictionary('{locale}')`
-12. `app/{locale}/tools/page.tsx` — tools index
-13. `app/{locale}/tools/loading.tsx` — loading state
-14. `app/{locale}/tools/(desktop-only)/layout.tsx` — desktop-only layout
+11. `app/{locale}/layout.tsx` - layout z `getDictionary('{locale}')`
+12. `app/{locale}/tools/page.tsx` - tools index
+13. `app/{locale}/tools/loading.tsx` - loading state
+14. `app/{locale}/tools/(desktop-only)/layout.tsx` - desktop-only layout
 15. Stwórz 10 stron narzędzi (6 regular + 4 desktop-only):
     - Regular: `tools/{slug}/page.tsx`
     - Desktop-only: `tools/(desktop-only)/{slug}/page.tsx`
-16. `app/{locale}/about/page.tsx` — strona O nas
-17. `app/{locale}/contact/page.tsx` — strona Kontakt
-18. `app/{locale}/privacy-policy/page.tsx` — polityka prywatności
+16. `app/{locale}/about/page.tsx` - strona O nas
+17. `app/{locale}/contact/page.tsx` - strona Kontakt
+18. `app/{locale}/privacy-policy/page.tsx` - polityka prywatności
 
 ### Faza 6: Aktualizacje globalne
 
-19. `components/shared/LanguageSwitcher.tsx` — dodaj nowy locale
-20. `components/shared/Navigation.tsx` — upewnij się że obsługuje nowy locale
-21. `components/shared/MobileNavigation.tsx` — j.w.
-22. `components/sections/tools/ToolsCarousel.tsx` — j.w.
-23. `components/sections/tools/ImageResizeTool/ui.ts` — dodaj UI strings
-24. `components/sections/tools/EmailSignatureGenerator/constants.ts` — dodaj constants
-25. `lib/tools/text/wordCount.ts` — dodaj `PAGE_TYPES` + `EVAL_UI`
-26. `lib/i18n/pages/tool-meta.ts` — dodaj `priceCurrency` mapping (RO→RON, HU→HUF, NL→EUR)
+19. `components/shared/LanguageSwitcher.tsx` - dodaj nowy locale
+20. `components/shared/Navigation.tsx` - upewnij się że obsługuje nowy locale
+21. `components/shared/MobileNavigation.tsx` - j.w.
+22. `components/sections/tools/ToolsCarousel.tsx` - j.w.
+23. `components/sections/tools/ImageResizeTool/ui.ts` - dodaj UI strings
+24. `components/sections/tools/EmailSignatureGenerator/constants.ts` - dodaj constants
+25. `lib/tools/text/wordCount.ts` - dodaj `PAGE_TYPES` + `EVAL_UI`
+26. `lib/i18n/pages/tool-meta.ts` - dodaj `priceCurrency` mapping (RO→RON, HU→HUF, NL→EUR)
 
 ### Faza 7: Walidacja
 
 27. Waliduj wszystkie JSON: `Get-ChildItem "data\{locale}\tools\*.json" -Recurse | ForEach-Object { ... ConvertFrom-Json ... }`
-28. `npm run lint` — musi przejść
-29. `npm run build` — musi przejść
-30. Sprawdź sitemap — hreflang musi obejmować nowy locale
+28. `npm run lint` - musi przejść
+29. `npm run build` - musi przejść
+30. Sprawdź sitemap - hreflang musi obejmować nowy locale
 
 ---
 
@@ -684,8 +684,8 @@ Sprawdzony proces (użyty dla ES, FR, PT, IT):
 
 ### 15.5 ✅ SEO Audit (AUDIT-004)
 
-- Canonical/OG/Schema URL — all absolute
-- Robots/sitemap — no regressions
+- Canonical/OG/Schema URL - all absolute
+- Robots/sitemap - no regressions
 - Follow-up: SEO-013, SEO-016, SEO-017
 
 ### 15.6 ✅ Strona "Dołącz do sieci"
@@ -701,10 +701,10 @@ Sprawdzony proces (użyty dla ES, FR, PT, IT):
 
 ### 15.8 ✅ ToolsCarousel
 
-- `components/sections/tools/ToolsCarousel.tsx` — karuzela narzędzi na stronie głównej
+- `components/sections/tools/ToolsCarousel.tsx` - karuzela narzędzi na stronie głównej
 - `CarouselCard` variant `'tool'` z `title`, `href`, `icon`
 
-### 15.9 ✅ Edukacja — per-category content
+### 15.9 ✅ Edukacja - per-category content
 
 - `CATEGORY_CONTENT_BY_SLUG` + `DEFAULT_*` fallbacks
 - Per-category HeroBanner description + metadata + OG

@@ -37,6 +37,7 @@ export async function getClientDictionary(locale: Locale): Promise<ClientDiction
     languageSwitcher: full.languageSwitcher,
     mobileNav: full.mobileNav,
     infoBanner: full.infoBanner,
+    search: full.search,
     imageConverter: full.imageConverter,
   };
 }

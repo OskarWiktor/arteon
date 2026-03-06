@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "GIF naar WebP converter – GIF WebP",
-    "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
+    "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/gif-naar-webp-converter"
   },
   "hero": {
     "title": "GIF naar WebP converter",
-    "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
+    "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF naar WebP converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden. Alle verwerking gebeurt lokaal in je browser — bestanden verlaten je apparaat niet.",
+      "description": "Exporteer het eerste GIF-frame als lichtgewicht WebP. Kleiner bestand, sneller laden. Alle verwerking gebeurt lokaal in je browser - bestanden verlaten je apparaat niet.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["GIF naar WEBP omzetten", "GIF naar WEBP conversie", "Gratis GIF naar WEBP converter"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kwaliteit — wat kiezen bij conversie GIF naar WebP?",
-      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standaard) — goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% — voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% — wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 80% is het verschil tussen origineel GIF en WebP praktisch onzichtbaar.</p>"
+      "title": "Kwaliteit - wat kiezen bij conversie GIF naar WebP?",
+      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standaard) - goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% - voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% - wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 80% is het verschil tussen origineel GIF en WebP praktisch onzichtbaar.</p>"
     },
     {
       "type": "gap",

@@ -2,14 +2,14 @@
   "toolKey": "pngToTiff",
   "locale": "da",
   "metadata": {
-    "title": "PNG til TIFF-konverter — PNG TIFF",
-    "description": "Konverter PNG-grafik til professionelt TIFF-format. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
+    "title": "PNG til TIFF-konverter - PNG TIFF",
+    "description": "Konverter PNG-grafik til professionelt TIFF-format. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/png-til-tiff-konverter"
   },
   "hero": {
     "title": "PNG til TIFF-konverter",
-    "description": "Konverter PNG-grafik til professionelt TIFF-format. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
+    "description": "Konverter PNG-grafik til professionelt TIFF-format. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG til TIFF-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter PNG-grafik til professionelt TIFF-format. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
+      "description": "Konverter PNG-grafik til professionelt TIFF-format. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
       "featureList": ["Konvertering til TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
       "alternateName": ["Konvertér PNG til TIFF", "PNG til TIFF konvertering", "Gratis PNG til TIFF konverter"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Indstil kvalitet",
-          "text": "Juster TIFF-kvalitetsskyderen — lavere værdier giver mindre filer."
+          "text": "Juster TIFF-kvalitetsskyderen - lavere værdier giver mindre filer."
         },
         {
           "position": 3,
           "name": "Konverter",
-          "text": "Klik på Konverter — filerne behandles lokalt i browseren."
+          "text": "Klik på Konverter - filerne behandles lokalt i browseren."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download TIFF-filerne — enkeltvis eller alle på en gang."
+          "text": "Download TIFF-filerne - enkeltvis eller alle på en gang."
         }
       ]
     }
@@ -253,23 +253,23 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering PNG til TIFF",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis PNG allerede var komprimeret, giver konvertering til TIFF maske ikke stor besparelse."
+          "description": "Hvis PNG allerede var komprimeret, giver konvertering til TIFF måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "TIFF understotter alfakanal. Transparente omrader i PNG bevares."
+          "description": "TIFF understøtter alfakanal. Transparente områder i PNG bevares."
         },
         {
           "icon": "RiStackLine",
@@ -290,6 +290,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting PNG to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

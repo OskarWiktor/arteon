@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "TIFF till JPG-konverterare – TIFF JPG",
-    "description": "Konvertera TIFF-filer till kompakt JPG. Idealiskt for skanningar och fotoarkiv. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "description": "Konvertera TIFF-filer till kompakt JPG. Idealiskt for skanningar och fotoarkiv. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/tiff-till-jpg-konverterare"
   },
   "hero": {
     "title": "TIFF till JPG-konverterare",
-    "description": "Konvertera TIFF-filer till kompakt JPG. Idealiskt for skanningar och fotoarkiv. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "description": "Konvertera TIFF-filer till kompakt JPG. Idealiskt for skanningar och fotoarkiv. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF till JPG-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera TIFF-filer till kompakt JPG. Idealiskt for skanningar och fotoarkiv. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+      "description": "Konvertera TIFF-filer till kompakt JPG. Idealiskt for skanningar och fotoarkiv. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertera TIFF till JPG", "TIFF till JPG konvertering", "Gratis TIFF till JPG konverterare"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — vad valja vid konvertering TIFF till JPG?",
-      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan TIFF och JPG praktiskt taget omarkbar.</p>"
+      "title": "Kvalitet - vad valja vid konvertering TIFF till JPG?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) - bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% - for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% - nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan TIFF och JPG praktiskt taget omarkbar.</p>"
     },
     {
       "type": "gap",

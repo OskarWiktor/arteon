@@ -2,7 +2,7 @@
   "toolKey": "yamlToJson",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník YAML na JSON — YAML JSON",
+    "title": "Převodník YAML na JSON - YAML JSON",
     "description": "Převeďte YAML do formátu JSON. Automatické parsování a formátování. Zdarma.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-yaml-na-json"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět YAML na JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase YAML soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase YAML soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kolik usetrite konverzi YAML na JSON?",
-      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+      "title": "Jak funguje konverze z YAML do JSON?",
+      "html": "<p class=\"text-mid mb-4\">YAML pou\u017e\u00edv\u00e1 odsazen\u00ed a minim\u00e1ln\u00ed syntaxi pro reprezentaci strukturovan\u00fdch dat, zat\u00edmco JSON pou\u017e\u00edv\u00e1 slo\u017een\u00e9 z\u00e1vorky, hranat\u00e9 z\u00e1vorky a explicitn\u00ed uvozovky. Konvertor analyzuje YAML strukturu a produkuje ekvivalentn\u00ed JSON se spr\u00e1vn\u00fdm form\u00e1tov\u00e1n\u00edm.</p><p class=\"text-mid mb-4\">YAML odsazen\u00ed se stane JSON vno\u0159en\u00edm, prvky s poml\u010dkami se stanou JSON prvky pole a YAML p\u00e1ry kl\u00ed\u010d-hodnota se stanou vlastnostmi JSON objektu. Datov\u00e9 typy jsou zachov\u00e1ny: \u0159et\u011bzce, \u010d\u00edsla, booleovsk\u00e9, null, pole a objekty se p\u0159enesou p\u0159\u00edmo.</p><p class=\"text-mid\">Konverze z YAML do JSON je u\u017eite\u010dn\u00e1, kdy\u017e konfigura\u010dn\u00ed data pot\u0159ebuj\u00ed b\u00fdt integrovan\u00e1 do webov\u00fdch aplikac\u00ed, REST API nebo syst\u00e9m\u016f o\u010dek\u00e1vaj\u00edc\u00edch JSON vstup. Konverze prob\u00edh\u00e1 zcela ve va\u0161em prohl\u00ed\u017ee\u010di.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipy pro konverzi YAML na JSON",
-      "description": "Tipy jak se vyhnout problemum:",
+      "title": "Tipy pro konverzi z YAML do JSON",
+      "description": "N\u011bkolik tip\u016f, jak se vyhnout b\u011b\u017en\u00fdm probl\u00e9m\u016fm:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Velmi velke soubory",
-          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Konzistence odsazen\u00ed",
+          "description": "YAML je citliv\u00fd na odsazen\u00ed. Pokud v\u00e1\u0161 soubor m\u00edch\u00e1 tabel\u00e1tory a mezery, parsov\u00e1n\u00ed m\u016f\u017ee selhat. Konvertor hl\u00e1s\u00ed zji\u0161t\u011bn\u00e9 chyby odsazen\u00ed."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Jiz komprimovane",
-          "description": "Pokud byl YAML jiz silne komprimovany, konverze na JSON nemusi usetrit mnoho."
+          "title": "Koment\u00e1\u0159e se odstra\u0148uj\u00ed",
+          "description": "JSON nepodporuje koment\u00e1\u0159e. V\u0161echny #-koment\u00e1\u0159e z va\u0161eho YAML souboru se neobjev\u00ed v JSON v\u00fdstupu. Uchovejte sv\u016fj p\u016fvodn\u00ed YAML soubor."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Pruhlednost",
-          "description": "JSON nepodporuje pruhlednost. Pruhledne oblasti budou bile. Pouzijte PNG nebo WebP."
+          "icon": "RiCodeLine",
+          "title": "V\u00edcedokumentov\u00fd YAML",
+          "description": "YAML soubory mohou obsahovat v\u00edce dokument\u016f odd\u011blen\u00fdch ---. Konvertor standardn\u011b zpracov\u00e1v\u00e1 prvn\u00ed dokument."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Uchovejte originaly",
-          "description": "Ztratova konverze je nevratna. Uchovejte kopie YAML souboru."
+          "icon": "RiFileCodeLine",
+          "title": "Kotvy a aliasy",
+          "description": "YAML kotvy (&) a aliasy (*) se vy\u0159e\u0161\u00ed b\u011bhem konverze. JSON v\u00fdstup obsahuje rozlo\u017een\u00e9 hodnoty, ne YAML reference."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
         },
         {
-          "question": "Je konverze YAML na JSON bezpecna?",
-          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+          "question": "Je konverze z YAML do JSON bezpe\u010dn\u00e1?",
+          "answer": "Ano. Ve\u0161ker\u00e1 konverze prob\u00edh\u00e1 lok\u00e1ln\u011b ve va\u0161em prohl\u00ed\u017ee\u010di. \u017d\u00e1dn\u00e1 data se neodes\u00edlaj\u00ed na server."
         },
         {
-          "question": "Mohu konvertovat vice souboru YAML?",
-          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+          "question": "Zachovaj\u00ed se YAML koment\u00e1\u0159e?",
+          "answer": "Ne. JSON nepodporuje koment\u00e1\u0159e, tak\u017ee v\u0161echny #-koment\u00e1\u0159e z va\u0161eho YAML souboru se b\u011bhem konverze odstran\u00ed. Uchovejte sv\u016fj p\u016fvodn\u00ed YAML soubor."
         },
         {
-          "question": "Je JSON podporovan vsemi prohlizeci?",
-          "answer": "JSON je podporovan v Chrome, Firefox, Safari, Edge a Opera."
+          "question": "Je konverze bezeztr\u00e1tov\u00e1?",
+          "answer": "Ano, pro datov\u00e9 hodnoty. V\u0161echny \u0159et\u011bzce, \u010d\u00edsla, booleovsk\u00e9, null hodnoty, pole a objekty se zachovaj\u00ed p\u0159esn\u011b. Pouze YAML-specifick\u00e9 funkce jako koment\u00e1\u0159e a kotvy se nep\u0159en\u00e1\u0161ej\u00ed do JSON."
         }
       ]
     },

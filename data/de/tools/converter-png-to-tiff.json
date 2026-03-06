@@ -2,14 +2,14 @@
   "toolKey": "pngToTiff",
   "locale": "de",
   "metadata": {
-    "title": "PNG zu TIFF Konverter — PNG TIFF",
-    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
+    "title": "PNG zu TIFF Konverter - PNG TIFF",
+    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool - ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/png-zu-tiff-konverter"
   },
   "hero": {
     "title": "PNG zu TIFF Konverter",
-    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
+    "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool - ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG zu TIFF Konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool — ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
+      "description": "PNG-Grafiken in professionelles TIFF-Format umwandeln. Kostenloses Browser-Tool - ohne Anmeldung, ohne Dateilimit, volle Privatsphäre.",
       "featureList": ["Konvertierung zu TIFF", "Qualitätsanpassung (60-95%)", "Stapelkonvertierung", "Lokale Verarbeitung im Browser"],
       "alternateName": ["PNG in TIFF umwandeln", "PNG zu TIFF konvertieren", "Kostenloser PNG-zu-TIFF-Konverter"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Qualität einstellen",
-          "text": "Passen Sie den TIFF-Qualitätsregler an — niedrigere Werte ergeben kleinere Dateien."
+          "text": "Passen Sie den TIFF-Qualitätsregler an - niedrigere Werte ergeben kleinere Dateien."
         },
         {
           "position": 3,
           "name": "Konvertieren",
-          "text": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+          "text": "Klicken Sie auf Konvertieren - Dateien werden lokal im Browser verarbeitet."
         },
         {
           "position": 4,
           "name": "Herunterladen",
-          "text": "Laden Sie die TIFF-Dateien herunter — einzeln oder alle auf einmal."
+          "text": "Laden Sie die TIFF-Dateien herunter - einzeln oder alle auf einmal."
         }
       ]
     }
@@ -253,7 +253,7 @@
     {
       "type": "sectionInfo",
       "title": "Wie viel sparen Sie bei Konvertierung von PNG zu TIFF?",
-      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+      "html": "<p class=\"text-mid mb-4\">Einsparungen hängen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsächliche Einsparungen variieren je nach Bildinhalt und Qualität.</p>"
     },
     {
       "type": "gap",
@@ -261,24 +261,24 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipps fur Konvertierung von PNG zu TIFF",
-      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "title": "Tipps für Konvertierung von PNG zu TIFF",
+      "description": "Tipps, um häufige Probleme zu vermeiden:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Sehr grosse Dateien",
-          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+          "title": "Sehr große Dateien",
+          "description": "Bilder über 4000×4000 Pixel können langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Bereits komprimierte Dateien",
-          "description": "Stark komprimierte PNG-Dateien bringen bei Konvertierung zu TIFF moglicherweise wenig Einsparung."
+          "description": "Stark komprimierte PNG-Dateien bringen bei Konvertierung zu TIFF möglicherweise wenig Einsparung."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparenz",
-          "description": "TIFF unterstutzt Alphakanal. Transparente Bereiche der PNG-Datei werden beibehalten."
+          "description": "TIFF unterstützt Alphakanal. Transparente Bereiche der PNG-Datei werden beibehalten."
         },
         {
           "icon": "RiStackLine",
@@ -290,6 +290,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting PNG to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",
@@ -322,11 +331,11 @@
         },
         {
           "question": "Ist Konvertierung von PNG zu TIFF sicher?",
-          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+          "answer": "Ja. Alles geschieht lokal in Ihrem Browser. Dateien verlassen nie Ihr Gerät."
         },
         {
-          "question": "Wird TIFF von allen Browsern unterstutzt?",
-          "answer": "TIFF wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
+          "question": "Wird TIFF von allen Browsern unterstützt?",
+          "answer": "TIFF wird von Chrome, Firefox, Safari, Edge und Opera unterstützt."
         }
       ]
     },

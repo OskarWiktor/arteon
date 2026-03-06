@@ -1,0 +1,273 @@
+{
+  "toolKey": "cmToPxDpi",
+  "locale": "sv",
+  "metadata": {
+    "title": "Cm till px – omvandlare",
+    "description": "Omvandla cm till pixlar med DPI-stöd.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/sv/verktyg/cm-till-px-omvandlare"
+  },
+  "hero": {
+    "title": "Cm till px",
+    "description": "Denna omvandlare räknar om direkt. Ange ett värde så visas resultatet omedelbart.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/cm-till-px-omvandlare",
+      "label": "cm till px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Cm till px – omvandlare",
+      "alternateName": ["Cm till px"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Omvandla cm till pixlar med DPI-stöd.",
+      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+    },
+    "howTo": {
+      "name": "Så använder du omvandlaren",
+      "description": "Snabbguide för att använda omvandlaren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Ange värde",
+          "text": "Skriv ett tal i inmatningsfältet till vänster."
+        },
+        {
+          "name": "Läs av resultatet",
+          "text": "Konverteringsresultatet visas omedelbart i fältet bredvid."
+        },
+        {
+          "name": "Kopiera eller vänd",
+          "text": "Klicka på Kopiera resultat eller på Vänd för att konvertera i andra riktningen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "När ska man omvandla cm till pixlar?",
+      "html": "<p class=\"text-mid mb-4\">Tryckdesign använder centimeter, digitala bilder pixlar. Omvandlingen beror på DPI: Pixlar = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Vid 300 DPI: 10 cm = 1 181 px, A4-bredd (21 cm) = 2 480 px.</p><p class=\"text-mid\">Alla beräkningar körs lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "CM to pixels (DPI) converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Så använder du omvandlaren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ange värde",
+          "description": "Skriv ett tal i inmatningsfältet. Du kan använda punkt eller komma som decimalavskiljare.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Läs av resultatet",
+          "description": "Konverteringsresultatet visas omedelbart i fältet bredvid – utan att klicka.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiera eller vänd",
+          "description": "Klicka på Kopiera resultat eller använd knappen Vänd.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När är denna omvandlare användbar?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Utskrift",
+          "description": "A4 vid 300 DPI = 2 480 × 3 508 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Storformat",
+          "description": "Banderoller och affischer: 150 DPI."
+        },
+        {
+          "icon": "RiArtboardLine",
+          "title": "Webbgrafik",
+          "description": "Skärmupplösning 72–96 DPI."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Fotografi",
+          "description": "Kontrollera om kameraupplösningen räcker för tryckstorleken."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna omvandlare speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Alla beräkningar görs lokalt i din webbläsare. Ingen data skickas till någon server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultat i realtid",
+          "description": "Resultatet uppdateras omedelbart när du skriver – inget klick krävs."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Dubbelriktad konvertering",
+          "description": "Vänd-knappen låter dig konvertera i båda riktningarna med ett klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenstabell",
+          "description": "En färdig tabell med ofta konverterade värden och kontextuella beskrivningar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">Pixlar = cm × DPI / 2,54. Vid 300 DPI: 1 cm = 118,11 px.</p><p class=\"text-mid\">Mer DPI = fler px/cm = skarpare tryck.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">Pixlar = cm × DPI / 2,54. Vid 300 DPI: 1 cm = 118,11 px.</p><p class=\"text-mid\">Mer DPI = fler px/cm = skarpare tryck.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "DPI-upplösningar jämförda",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI (tryck)"
+        },
+        {
+          "id": "unit2",
+          "name": "72 DPI (skärm)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "10 cm",
+          "values": {
+            "unit1": "1 181 px",
+            "unit2": "283 px"
+          }
+        },
+        {
+          "name": "A4 bredd",
+          "values": {
+            "unit1": "2 480 px",
+            "unit2": "595 px"
+          }
+        },
+        {
+          "name": "A4 höjd",
+          "values": {
+            "unit1": "3 508 px",
+            "unit2": "842 px"
+          }
+        },
+        {
+          "name": "Användning",
+          "values": {
+            "unit1": "Professionellt tryck",
+            "unit2": "Webbgrafik"
+          }
+        },
+        {
+          "name": "Kvalitet",
+          "values": {
+            "unit1": "Skarpt i alla storlekar",
+            "unit2": "Bara för skärm"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hur många px är 1 cm vid 300 DPI?",
+          "answer": "1 cm vid 300 DPI = 118,11 px."
+        },
+        {
+          "question": "Körs beräkningarna lokalt?",
+          "answer": "Ja. Alla beräkningar körs i din webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "cm till px – Arteon",
+      "defaultSubject": "Feedback: cm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra gratis verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

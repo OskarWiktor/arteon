@@ -1,0 +1,289 @@
+{
+  "toolKey": "hexToRgb",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter HEX na RGB – przelicz kolory",
+    "description": "Przelicz kolory HEX na RGB i odwrotnie. Konwerter jest przydatny w CSS i projektowaniu stron internetowych. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-hex-na-rgb"
+  },
+  "hero": {
+    "title": "Przelicz kolory HEX na RGB",
+    "description": "Ten konwerter przelicza kolory z formatu HEX na RGB i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-hex-na-rgb",
+      "label": "HEX na RGB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter HEX na RGB – przelicz kolory",
+      "alternateName": ["Przelicznik kolorów HEX RGB", "Kalkulator HEX na RGB", "Konwerter kolorów CSS"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz kolory HEX na RGB i odwrotnie. Konwerter jest przydatny w CSS i projektowaniu stron internetowych. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera HEX na RGB",
+      "description": "Instrukcja użycia: hex na rgb.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Jak działa konwersja HEX na RGB?",
+      "html": "<p class=\"text-mid mb-4\">HEX to szesnastkowy zapis koloru używany w CSS i HTML (np. <code>#3B82F6</code>). RGB to trzy wartości liczbowe 0–255 dla kanałów czerwonego, zielonego i niebieskiego (np. <code>rgb(59, 130, 246)</code>).</p><p class=\"text-mid mb-4\">Każda para znaków w kodzie HEX odpowiada jednemu kanałowi: <code>#<strong>3B</strong>82F6</code> → R=3B=59, <code>#3B<strong>82</strong>F6</code> → G=82=130, <code>#3B82<strong>F6</strong></code> → B=F6=246.</p><p class=\"text-mid mb-4\">W CSS można używać obu zapisów zamiennie. HEX jest krótszy, RGB jest bardziej czytelny i pozwala łatwiej modyfikować poszczególne kanały. CSS obsługuje też zapis skrócony: <code>#FFF</code> = <code>#FFFFFF</code>.</p><p class=\"text-mid\">Wartości HEX są głównym formatem kolorów w Figma, Sketch i Adobe XD. Konwersja na RGB przydaje się do obliczania kontrastów, tworzenia palet i pracy z kanałem alfa (RGBA).</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "HEX na RGB – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "CSS / HTML",
+          "description": "Konwertuj <code>#3B82F6</code> na <code>rgb(59, 130, 246)</code> w arkuszach stylów."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Projektowanie UI",
+          "description": "Eksport kolorów z Figma/Sketch na wartości CSS."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Dostępność",
+          "description": "Obliczanie kontrastu WCAG wymaga wartości RGB."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Palety kolorów",
+          "description": "Modyfikowanie poszczególnych kanałów (R, G, B) do tworzenia wariantów."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja HEX na RGB?",
+      "html": "<p class=\"text-mid mb-4\">Kod koloru HEX składa się z sześciu znaków szesnastkowych (0–9 i A–F), podzielonych na trzy pary. Każda para odpowiada jednemu kanałowi koloru: pierwsza para to czerwony (R), druga to zielony (G), a trzecia to niebieski (B).</p><p class=\"text-mid mb-4\">Konwersja polega na zamianie każdej pary znaków szesnastkowych na liczbę dziesiętną z zakresu 0–255. Na przykład w kodzie <code>#3B82F6</code> para 3B odpowiada wartości 59, para 82 to 130, a F6 to 246 — co daje kolor rgb(59, 130, 246).</p><p class=\"text-mid\">Konwersja w drugą stronę działa analogicznie: każdą wartość RGB (0–255) zamienia się na dwuznakowy zapis szesnastkowy. Wartości jednocyfrowe otrzymują zero wiodące, np. wartość 10 staje się 0A.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>HEX skrócony: <code>#FFF</code> = <code>#FFFFFF</code> = rgb(255,255,255).</li><li>Czerń: <code>#000000</code> = rgb(0,0,0). Biel: <code>#FFFFFF</code> = rgb(255,255,255).</li><li>HEX z alfa: <code>#3B82F680</code> – ostatnie 2 znaki = przezroczystość (80 = 50%).</li><li>Kontrast WCAG: minimum 4,5:1 dla tekstu, 3:1 dla dużego tekstu.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HEX vs RGB – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "HEX"
+        },
+        {
+          "id": "unit2",
+          "name": "RGB",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Zapis",
+          "values": {
+            "unit1": "#RRGGBB",
+            "unit2": "rgb(R, G, B)"
+          }
+        },
+        {
+          "name": "Zakres",
+          "values": {
+            "unit1": "00–FF na kanał",
+            "unit2": "0–255 na kanał"
+          }
+        },
+        {
+          "name": "Alfa (przezroczystość)",
+          "values": {
+            "unit1": "#RRGGBBAA",
+            "unit2": "rgba(R, G, B, A)"
+          }
+        },
+        {
+          "name": "Skrót",
+          "values": {
+            "unit1": "#RGB (3 znaki)",
+            "unit2": "Brak"
+          }
+        },
+        {
+          "name": "Użycie",
+          "values": {
+            "unit1": "CSS, HTML, Figma",
+            "unit2": "CSS, obliczenia, WCAG"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Jak przeliczyć HEX na RGB?",
+          "answer": "Każdą parę znaków kodu HEX należy przeliczyć z systemu szesnastkowego na dziesiętny. Na przykład w kodzie #3B82F6 para 3B daje wartość 59 dla kanału czerwonego, 82 daje 130 dla zielonego, a F6 daje 246 dla niebieskiego — wynik to rgb(59, 130, 246)."
+        },
+        {
+          "question": "Co oznacza # w kodzie koloru?",
+          "answer": "Hash (#) to prefix kodu HEX. Nie jest częścią wartości – oznacza jedynie, że następujące znaki to kod szesnastkowy."
+        },
+        {
+          "question": "Czy #FFF i #FFFFFF to ten sam kolor?",
+          "answer": "Tak. Zapis skrócony powtarza każdy znak: #FFF = #FFFFFF, #38F = #3388FF."
+        },
+        {
+          "question": "Jak dodać przezroczystość do HEX?",
+          "answer": "Dodaj 2 znaki na końcu: <code>#3B82F680</code>. 80 (hex) = 128 = 50% przezroczystości. FF = 100%, 00 = 0%."
+        },
+        {
+          "question": "Jaki jest HEX dla białego koloru?",
+          "answer": "<code>#FFFFFF</code> = rgb(255, 255, 255). Skrót: <code>#FFF</code>."
+        },
+        {
+          "question": "Czy RGB i HEX dają ten sam kolor?",
+          "answer": "Tak, to dwa różne zapisy tego samego koloru. <code>#FF0000</code> i <code>rgb(255, 0, 0)</code> to identyczna czerwień."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "HEX na RGB – Arteon",
+      "defaultSubject": "Feedback: HEX na RGB"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

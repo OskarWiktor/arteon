@@ -2,7 +2,7 @@
   "toolKey": "webpToTiff",
   "locale": "en",
   "metadata": {
-    "title": "WebP to TIFF converter — WebP TIFF",
+    "title": "WebP to TIFF converter - WebP TIFF",
     "description": "Convert WebP images to professional TIFF for printing and archiving. Runs entirely in your browser. No server uploads, no registration required.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/webp-to-tiff-converter"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Set quality",
-          "text": "Adjust the TIFF quality slider — lower values produce smaller files."
+          "text": "Adjust the TIFF quality slider - lower values produce smaller files."
         },
         {
           "position": 3,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download the TIFF files — individually or all at once."
+          "text": "Download the TIFF files - individually or all at once."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert WebP to TIFF?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) is a lossy image format supporting millions colors. It is widely used for web images with browser support in Chrome, Firefox, Safari 14+, Edge.</p><p class=\"text-mid mb-4\">Converting WebP to TIFF (Tagged Image File Format) gives you more flexibility in how and where you use your images.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, TIFF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many WebP files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP is a modern web format created by Google — optimized for fast loading but not always accepted by professional print software, desktop publishing tools (InDesign, QuarkXPress), and medical imaging systems. TIFF is the industry standard for these workflows. Converting WebP to TIFF prepares web images for print production and archival storage.</p><p class=\"text-mid mb-4\">TIFF (Tagged Image File Format) supports lossless compression (LZW), CMYK color space, 16/32-bit depth, multiple layers, and embedded ICC profiles. Transparency from WebP is preserved in TIFF. TIFF files will be significantly larger than WebP — this is expected, as TIFF prioritizes quality over file size.</p><p class=\"text-mid mb-4\">If you need to edit web images in professional software that doesn't support WebP, converting to TIFF gives you maximum compatibility with print workflows. For general editing, PNG may be a lighter alternative.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "WebP to TIFF conversion",
       "variant": "right"

@@ -2,7 +2,7 @@
   "toolKey": "htmlToMarkdown",
   "locale": "sv",
   "metadata": {
-    "title": "HTML till Markdown-konverterare — HTML Markdown",
+    "title": "HTML till Markdown-konverterare - HTML Markdown",
     "description": "Konvertera HTML till Markdown-format. Automatisk parsning och formatering. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/html-till-markdown-konverterare"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera HTML till Markdown?",
-      "html": "<p class=\"text-mid mb-4\">HTML ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till MARKDOWN erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina HTML-filer till MARKDOWN-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">HTML ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till MARKDOWN erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina HTML-filer till MARKDOWN-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "HTML to Markdown conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur mycket sparar du vid konvertering HTML till MARKDOWN?",
-      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+      "title": "Hur fungerar konvertering från HTML till Markdown?",
+      "html": "<p class=\"text-mid mb-4\">HTML använder taggar som &lt;h1&gt;, &lt;strong&gt;, &lt;a&gt; och &lt;ul&gt; för att strukturera innehåll. Markdown använder enklare symboler: # för rubriker, ** för fetstil, [Text](URL) för länkar och - för listor. Konverteraren analyserar HTML-dokumentträdet och kopplar varje element till dess Markdown-motsvarighet.</p><p class=\"text-mid mb-4\">T.ex. blir &lt;h1&gt;Titel&lt;/h1&gt; # Titel, &lt;strong&gt;fetstil&lt;/strong&gt; blir **fetstil** och &lt;a href=\"url\"&gt;Länk&lt;/a&gt; blir [Länk](url). Komplexa strukturer som tabeller, kodblock och nästlade listor hanteras också.</p><p class=\"text-mid\">Konvertering från HTML till Markdown är användbar för att migrera webbinnehåll till dokumentationssystem, statiska webbplatsgeneratorer eller plattformar som använder Markdown. Konverteringen sker helt i din webbläsare.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering HTML till MARKDOWN",
-      "description": "Tips for att undvika vanliga problem:",
+      "title": "Tips för konvertering från HTML till Markdown",
+      "description": "Några tips för att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Mycket stora filer",
-          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Inline-stilar tas bort",
+          "description": "Markdown stöder inte CSS. Inline-stilar, klasser och ID:n från din HTML tas bort under konverteringen. Bara den semantiska strukturen och textinnehållet bevaras."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Redan komprimerade",
-          "description": "Om HTML redan var kraftigt komprimerad kanske konvertering till MARKDOWN inte sparar mycket."
+          "title": "Komplexa layouter",
+          "description": "HTML-layouter med divar, grids eller flexbox kan inte representeras i Markdown. Konverteraren extraherar textinnehållet och bevarar rubriker, listor och länkar."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "MARKDOWN stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+          "icon": "RiCodeLine",
+          "title": "Bilder och länkar",
+          "description": "HTML &lt;img&gt;-taggar blir ![Alt](Src) och &lt;a&gt;-taggar blir [Text](URL) i Markdown. Relativa URL:er bevaras som de är."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Spara originalen",
-          "description": "Forlustkomprimering ar irreversibel. Spara kopior av HTML-filer."
+          "icon": "RiFileTextLine",
+          "title": "Tabeller",
+          "description": "HTML-tabeller konverteras till Markdown-tabeller med pipe-tecken när det är möjligt. Komplexa tabeller med colspan eller rowspan kan förenklas."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What HTML elements are converted?",
+      "html": "<p class=\"text-mid mb-4\">The converter handles all common semantic HTML elements:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – &lt;h1&gt; through &lt;h6&gt; → # through ######</li><li><strong>Text formatting</strong> – &lt;strong&gt;/&lt;b&gt; → **bold**, &lt;em&gt;/&lt;i&gt; → *italic*, &lt;del&gt; → ~~strikethrough~~</li><li><strong>Links</strong> – &lt;a href&gt; → [text](url)</li><li><strong>Images</strong> – &lt;img&gt; → ![alt](src)</li><li><strong>Lists</strong> – &lt;ul&gt;/&lt;ol&gt; → - / 1. list items</li><li><strong>Code</strong> – &lt;code&gt; → `inline`, &lt;pre&gt;&lt;code&gt; → fenced blocks</li><li><strong>Tables</strong> – &lt;table&gt; → pipe-separated Markdown tables</li></ul><p class=\"text-mid mt-3\">Non-semantic elements (div, span, script, style) are stripped. Only meaningful content is preserved in the Markdown output.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         },
         {
-          "question": "Ar konvertering HTML till MARKDOWN saker?",
-          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+          "question": "Är konverteringen från HTML till Markdown säker?",
+          "answer": "Ja. All konvertering sker lokalt i din webbläsare. Ingen data skickas till någon server."
         },
         {
-          "question": "Kan jag konvertera flera HTML-filer samtidigt?",
-          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+          "question": "Går formatering förlorad vid konverteringen?",
+          "answer": "Markdown stöder rubriker, fetstil, kursiv, länkar, bilder, listor, kodblock, citat och tabeller. HTML-exklusiva funktioner som anpassad CSS, färger och komplexa layouter kan inte representeras i Markdown och förenklas."
         },
         {
-          "question": "Stods MARKDOWN av alla webblasare?",
-          "answer": "MARKDOWN stods av Chrome, Firefox, Safari, Edge och Opera."
+          "question": "Kan jag använda Markdown-utdata på GitHub?",
+          "answer": "Ja. Utdata följer standard Markdown-syntax, kompatibel med GitHub, GitLab, Bitbucket, Notion, Obsidian och alla andra plattformar som renderar Markdown."
         }
       ]
     },

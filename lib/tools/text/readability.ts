@@ -84,7 +84,7 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
       break;
     }
     case 'it': {
-      // Gulpease index (Italian) — native scale 0-100, character-based
+      // Gulpease index (Italian) - native scale 0-100, character-based
       const chars = text.replace(/\s/g, '').length;
       const gulpease = 89 + (300 * sentences - 10 * chars) / words;
       fleschScore = Math.min(100, Math.max(0, gulpease));
@@ -99,26 +99,26 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
       break;
     }
     case 'pl': {
-      // Polish adaptation — reduced ASW coefficient (84.6 → 60) to account for
+      // Polish adaptation - reduced ASW coefficient (84.6 → 60) to account for
       // Polish inflectional morphology producing longer words (~1.9 syl/word vs EN ~1.3)
       fleschScore = 206.835 - 1.015 * ASL - 60 * ASW;
       fleschGrade = scoreToGrade(fleschScore);
       break;
     }
     case 'cs': {
-      // Czech adaptation — Slavic inflectional language; higher ASW than Polish
+      // Czech adaptation - Slavic inflectional language; higher ASW than Polish
       fleschScore = 206.835 - 1.015 * ASL - 52 * ASW;
       fleschGrade = scoreToGrade(fleschScore);
       break;
     }
     case 'hu': {
-      // Hungarian adaptation — agglutinative language with very long words (~2.0+ syl/word)
+      // Hungarian adaptation - agglutinative language with very long words (~2.0+ syl/word)
       fleschScore = 206.835 - 1.015 * ASL - 55 * ASW;
       fleschGrade = scoreToGrade(fleschScore);
       break;
     }
     case 'el': {
-      // Greek adaptation — inflectional, longer words than EN but less extreme than PL/HU
+      // Greek adaptation - inflectional, longer words than EN but less extreme than PL/HU
       fleschScore = 206.835 - 1.015 * ASL - 66 * ASW;
       fleschGrade = scoreToGrade(fleschScore);
       break;
@@ -127,7 +127,7 @@ export function calculateReadability(text: string, locale: Locale = 'en'): Reada
     case 'da':
     case 'no':
     case 'fi': {
-      // LIX — Björnsson Readability Index (Scandinavian + Finnish)
+      // LIX - Björnsson Readability Index (Scandinavian + Finnish)
       // Finnish is agglutinative with very long compound words;
       // LIX (word-length-based) is a better fit than syllable-based Flesch.
       // LIX = ASL + (percentage of words longer than 6 characters)
@@ -210,7 +210,7 @@ const DEFAULT_THRESHOLDS: [number, number, number, number] = [90, 70, 50, 30];
  *   0-19   Very difficult (specialist)
  */
 export function getReadabilityLabel(score: number | null, locale: Locale = 'en'): string {
-  if (score === null) return '—';
+  if (score === null) return '-';
   const labels = READABILITY_LABELS[locale];
   const [veryEasy, easy, moderate, difficult] = READABILITY_THRESHOLDS[locale] ?? DEFAULT_THRESHOLDS;
   if (score >= veryEasy) return labels.veryEasy;

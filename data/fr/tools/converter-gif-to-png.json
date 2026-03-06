@@ -41,7 +41,7 @@
         },
         {
           "name": "Convertir en PNG",
-          "text": "Cliquez sur convertir. PNG est sans perte — aucun réglage de qualité nécessaire."
+          "text": "Cliquez sur convertir. PNG est sans perte - aucun réglage de qualité nécessaire."
         },
         {
           "name": "Télécharger les fichiers PNG",
@@ -293,6 +293,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting GIF images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
+    },
+    {
       "type": "faq",
       "title": "Questions fréquentes sur la conversion GIF vers PNG",
       "openByDefault": 0,
@@ -338,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Aidez-nous à améliorer nos outils",
-      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message — nous répondons sous 24 heures.",
+      "description": "Une idée, un bug ou une suggestion ? Envoyez-nous un message - nous répondons sous 24 heures.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Convertisseur GIF en PNG – Arteon",
       "defaultSubject": "Feedback: Convertisseur GIF en PNG"

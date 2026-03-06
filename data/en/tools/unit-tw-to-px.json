@@ -1,0 +1,285 @@
+﻿{
+  "toolKey": "twToPx",
+  "locale": "en",
+  "metadata": {
+    "title": "Tailwind spacing to pixels converter",
+    "description": "Convert Tailwind CSS spacing units to pixels and vice versa. Essential for developers using Tailwind CSS framework.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/tailwind-css-spacing-to-px-converter"
+  },
+  "hero": {
+    "title": "Convert Tailwind units to pixels",
+    "description": "This converter converts Tailwind CSS spacing values to pixel equivalents. Enter a value and the result appears instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/tailwind-css-spacing-to-px-converter",
+      "label": "tw to px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Tailwind spacing to pixels converter",
+      "alternateName": ["Tailwind CSS spacing calculator", "Tailwind to pixel converter", "TW unit converter"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert Tailwind CSS spacing units to pixels and vice versa. Essential for developers using Tailwind CSS framework.",
+      "featureList": ["Real-time conversion", "Tailwind CSS reference", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the Tailwind to px converter",
+      "description": "Instructions: Tailwind units to pixels.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter Tailwind value",
+          "text": "Type a Tailwind spacing number (e.g. 4, 8, 16)."
+        },
+        {
+          "name": "Read pixels",
+          "text": "The pixel equivalent appears instantly."
+        },
+        {
+          "name": "Reference table",
+          "text": "Check the table below for common values."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert Tailwind units to pixels?",
+      "html": "<p class=\"text-mid mb-4\">Tailwind CSS uses a spacing scale where each unit = 0.25 rem = 4 px (at default 16px root). So p-4 = 1 rem = 16 px, p-8 = 2 rem = 32 px, w-64 = 16 rem = 256 px.</p><p class=\"text-mid mb-4\">This converter helps developers quickly translate Tailwind spacing values to exact pixel measurements for debugging, design handoff, and documentation.</p><p class=\"text-mid mb-4\">Tailwind also has special values: 0.5 = 2px, 1.5 = 6px, 2.5 = 10px, 3.5 = 14px, and named sizes like full = 100%, screen = 100vw.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Tailwind spacing to pixels converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Debugowanie CSS",
+          "description": "Ile px ma p-6? Odpowiedź: 24 px (1,5 rem)."
+        },
+        {
+          "icon": "RiLayout2Line",
+          "title": "Konwersja z Figma",
+          "description": "Projekt w px → odpowiednie klasy Tailwind."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Pixel-perfect",
+          "description": "Dopasowanie układu do wymaganego projektu graficznego."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Współpraca z designerami",
+          "description": "Designer podaje px, programista potrzebuje klas Tailwind."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does Tailwind spacing work?",
+      "html": "<p class=\"text-mid mb-4\">Tailwind spacing = value × 0.25 rem. At 16px root: spacing × 4 = pixels.</p><p class=\"text-mid mb-4\">p-1 = 4px, p-2 = 8px, p-4 = 16px, p-8 = 32px, p-16 = 64px, p-32 = 128px, p-64 = 256px.</p><p class=\"text-mid\">Font sizes use different values: text-sm = 14px, text-base = 16px, text-lg = 18px, text-xl = 20px, text-2xl = 24px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Spacing: p-1 = 4px, p-2 = 8px, p-3 = 12px, p-4 = 16px, p-6 = 24px, p-8 = 32px.</li><li>Width: w-1 = 4px, w-4 = 16px, w-12 = 48px, w-24 = 96px, w-48 = 192px, w-64 = 256px.</li><li>Breakpoints: sm ≥ 640px, md ≥ 768px, lg ≥ 1024px, xl ≥ 1280px.</li><li>Max-width: max-w-sm = 384px, max-w-md = 448px, max-w-lg = 512px, max-w-xl = 576px.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Tailwind spacing scale",
+      "featureLabel": "Tailwind",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "rem"
+        },
+        {
+          "id": "unit2",
+          "name": "px (at 16px root)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1",
+          "values": {
+            "unit1": "0.25rem",
+            "unit2": "4px"
+          }
+        },
+        {
+          "name": "4",
+          "values": {
+            "unit1": "1rem",
+            "unit2": "16px"
+          }
+        },
+        {
+          "name": "8",
+          "values": {
+            "unit1": "2rem",
+            "unit2": "32px"
+          }
+        },
+        {
+          "name": "16",
+          "values": {
+            "unit1": "4rem",
+            "unit2": "64px"
+          }
+        },
+        {
+          "name": "64",
+          "values": {
+            "unit1": "16rem",
+            "unit2": "256px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "What is p-4 in pixels?",
+          "answer": "p-4 = 1rem = 16px at default root font size."
+        },
+        {
+          "question": "How do Tailwind spacing units work?",
+          "answer": "Each unit = 0.25rem. So multiply by 4 to get pixels: p-6 = 6 × 4 = 24px."
+        },
+        {
+          "question": "What are Tailwind breakpoints in pixels?",
+          "answer": "sm = 640px, md = 768px, lg = 1024px, xl = 1280px, 2xl = 1536px."
+        },
+        {
+          "question": "Can I customize the spacing scale?",
+          "answer": "Yes, in tailwind.config.js under theme.spacing. You can override or extend default values."
+        },
+        {
+          "question": "Are calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Tailwind na px – Arteon",
+      "defaultSubject": "Feedback: tw-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

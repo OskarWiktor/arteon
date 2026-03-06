@@ -1,0 +1,273 @@
+{
+  "toolKey": "sqmToSqft",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník m² na ft²",
+    "description": "Převést m² na ft² a naopak. Užitečné pro reality a stavebnictví. Bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/cs/nastroje/prevodnik-m2-na-stopy2"
+  },
+  "hero": {
+    "title": "Převést m² na ft²",
+    "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-m2-na-stopy2",
+      "label": "m² na ft²"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník m² na ft²",
+      "alternateName": ["Převést m² na ft²"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převést m² na ft² a naopak. Užitečné pro reality a stavebnictví. Bez registrace.",
+      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+    },
+    "howTo": {
+      "name": "Jak používat převodník",
+      "description": "Rychlý průvodce použitím převodníku.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadat hodnotu",
+          "text": "Zadejte číslo do vstupního pole vlevo."
+        },
+        {
+          "name": "Přečíst výsledek",
+          "text": "Výsledek konverze se okamžitě zobrazí v sousedním poli."
+        },
+        {
+          "name": "Kopírovat nebo obrátit",
+          "text": "Klikněte na Kopírovat výsledek nebo na Obrátit pro konverzi v opačném směru."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kdy je potřeba převádět m² na ft²?",
+      "html": "<p class=\"text-mid mb-4\">Metr čtvereční (m²) je standard v metrickém systému. Stopa čtvereční (ft²) se používá v USA/UK. 1 m² = 10,7639 ft².</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Převodník m² na ft² – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak použít převodník?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Zadejte hodnotu",
+          "description": "Zadejte číslo do vstupního pole.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Přečtěte výsledek",
+          "description": "Výsledek se zobrazí okamžitě.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Zkopírujte nebo obraťte",
+          "description": "Zkopírujte výsledek nebo obraťte směr převodu.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy je tento převodník užitečný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHome4Line",
+          "title": "Nemovitosti",
+          "description": "USA používají ft². 80 m² = 861 ft²."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Interiéry",
+          "description": "Měření místností a nábytku."
+        },
+        {
+          "icon": "RiBuildingLine",
+          "title": "Kanceláře",
+          "description": "Pronájmy v USA v ft²."
+        },
+        {
+          "icon": "RiMoneyDollarCircleLine",
+          "title": "Stavba",
+          "description": "Povolení v m² nebo ft²."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím se tento převodník liší?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Plné soukromí",
+          "description": "Všechny výpočty probíhají lokálně ve vašem prohlížeči."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Výsledky v reálném čase",
+          "description": "Výsledek se aktualizuje během zadávání."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obousměrný převod",
+          "description": "Převádějte oběma směry jedním kliknutím."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenční tabulka",
+          "description": "Tabulka s běžnými hodnotami a kontextovými popisy."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">1 ft² = 0,092903 m². Tedy 1 m² = 10,7639 ft². Odhad: násobte m² číslem 11.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">1 ft² = 0,092903 m². Tedy 1 m² = 10,7639 ft². Odhad: násobte m² číslem 11.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "m² vs ft²",
+      "featureLabel": "Vlastnost",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "m²"
+        },
+        {
+          "id": "unit2",
+          "name": "ft²",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Systém",
+          "values": {
+            "unit1": "Metrický (SI)",
+            "unit2": "Imperální"
+          }
+        },
+        {
+          "name": "Základ",
+          "values": {
+            "unit1": "1m × 1m",
+            "unit2": "0,3048m × 0,3048m"
+          }
+        },
+        {
+          "name": "Nemovitosti",
+          "values": {
+            "unit1": "Mezinárodní",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "1 m²",
+          "values": {
+            "unit1": "1 m²",
+            "unit2": "10,764 ft²"
+          }
+        },
+        {
+          "name": "Stavba",
+          "values": {
+            "unit1": "Mezinárodní",
+            "unit2": "USA/UK"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik ft² je 1 m²?",
+          "answer": "1 m² = 10,7639 ft²."
+        },
+        {
+          "question": "Probíhají výpočty lokálně?",
+          "answer": "Ano. Veškeré výpočty probíhají ve vašem prohlížeči."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "m² na ft² – Arteon",
+      "defaultSubject": "Feedback: sqm-to-sqft"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

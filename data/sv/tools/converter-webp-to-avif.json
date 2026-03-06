@@ -2,14 +2,14 @@
   "toolKey": "webpToAvif",
   "locale": "sv",
   "metadata": {
-    "title": "WebP till AVIF-konverterare — WebP AVIF",
-    "description": "Konvertera WebP-filer till AVIF. Annu battre komprimering i ett modernt format. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
+    "title": "WebP till AVIF-konverterare - WebP AVIF",
+    "description": "Konvertera WebP-filer till AVIF. Annu battre komprimering i ett modernt format. All bearbetning sker lokalt i webbläsaren - filerna lämnar aldrig din enhet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/webp-till-avif-konverterare"
   },
   "hero": {
     "title": "WebP till AVIF-konverterare",
-    "description": "Konvertera WebP-filer till AVIF. Annu battre komprimering i ett modernt format. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
+    "description": "Konvertera WebP-filer till AVIF. Annu battre komprimering i ett modernt format. All bearbetning sker lokalt i webbläsaren - filerna lämnar aldrig din enhet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "WebP till AVIF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera WebP-filer till AVIF. Annu battre komprimering i ett modernt format. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
+      "description": "Konvertera WebP-filer till AVIF. Annu battre komprimering i ett modernt format. All bearbetning sker lokalt i webbläsaren - filerna lämnar aldrig din enhet.",
       "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera WEBP till AVIF", "WEBP till AVIF konvertering", "Gratis WEBP till AVIF konverterare"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Ställ in kvalitet",
-          "text": "Justera AVIF-kvalitetsreglaget — lägre värden ger mindre filer."
+          "text": "Justera AVIF-kvalitetsreglaget - lägre värden ger mindre filer."
         },
         {
           "position": 3,
           "name": "Konvertera",
-          "text": "Klicka på Konvertera — filerna bearbetas lokalt i webbläsaren."
+          "text": "Klicka på Konvertera - filerna bearbetas lokalt i webbläsaren."
         },
         {
           "position": 4,
           "name": "Ladda ner",
-          "text": "Ladda ner AVIF-filerna — enskilt eller alla på en gång."
+          "text": "Ladda ner AVIF-filerna - enskilt eller alla på en gång."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — vad valja vid konvertering WebP till AVIF?",
-      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 80% ar skillnaden mellan WebP och AVIF praktiskt taget omarkbar.</p>"
+      "title": "Kvalitet - vad valja vid konvertering WebP till AVIF?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) - bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% - for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% - nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 80% ar skillnaden mellan WebP och AVIF praktiskt taget omarkbar.</p>"
     },
     {
       "type": "gap",

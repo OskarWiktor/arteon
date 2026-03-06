@@ -1,0 +1,285 @@
+{
+  "toolKey": "barToPsi",
+  "locale": "ro",
+  "metadata": {
+    "title": "Bar în PSI – convertor",
+    "description": "Convertiți bar în PSI și invers.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-bar-in-psi"
+  },
+  "hero": {
+    "title": "Bar în PSI",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-bar-in-psi",
+      "label": "bar în PSI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bar în PSI – convertor",
+      "alternateName": ["Bar în PSI"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți bar în PSI și invers.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: Bar în PSI?",
+      "html": "<p class=\"text-mid mb-4\">Bar ist eine metrische Druckeinheit gleich 100.000 Pascal (100 kPa). PSI (Pfund pro Quadratzoll) este unitatea standardă-Druckeinheit im imperialen System, hauptsächlich in den USA und UK verwendet.</p><p class=\"text-mid mb-4\">Der conversiesfaktor ist: 1 Bar = 14,5038 PSI. Dies ist wichtig für Reifendruck (europäische Autos geben Bar an, US-Autos PSI), HLK-Systeme, Industrieausrüstung und Tauchen.</p><p class=\"text-mid mb-4\">Reifendruck-Beispiele: 2,2 Bar = 31,9 PSI, 2,5 Bar = 36,3 PSI, 3,0 Bar = 43,5 PSI. Die meisten PKW empfehlen 2,0–2,5 Bar (29–36 PSI).</p><p class=\"text-mid\">Toate calculele se fac local, în browserul dvs. — nimic nu este trimis la vreun server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Bar în PSI – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Călătorii în străinătate",
+          "description": "Europejskie: 2,0–2,5 bar. Amerykańskie: 29–36 PSI."
+        },
+        {
+          "icon": "RiAnchorLine",
+          "title": "Nurkowanie",
+          "description": "Butla nurkowa: 200 bar = 2 900 PSI."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Aplicații tehnice",
+          "description": "Sprężarki i narzędzia pneumatyczne: 6–10 bar = 87–145 PSI."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Opony rowerowe",
+          "description": "Rower szosowy: 6–8 bar = 87–116 PSI. Górski: 2–3 bar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">Die conversie basiert auf: 1 Bar = 100.000 Pa und 1 PSI = 6.894,757 Pa. Daher: 1 Bar = 100.000 / 6.894,757 ≈ 14,5038 PSI.</p><p class=\"text-mid mb-4\">Um Bar in PSI umzurechnen, înmulțiți cu 14,5038. Um PSI in Bar umzurechnen, teilen Sie durch 14,5038.</p><p class=\"text-mid\">Der conversiesfaktor ist konstant und exakt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Standard atmospheric pressure: 1.01325 bar = 14.696 PSI.</li><li>Car tire pressure typically ranges from 2.0–2.5 bar (29–36 PSI).</li><li>Bicycle tires: road bikes 6–8 bar (87–116 PSI), mountain bikes 2–3 bar (29–44 PSI).</li><li>Scuba tanks: 200–300 bar (2,900–4,350 PSI) when full.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Bar vs PSI – comparație",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Bar"
+        },
+        {
+          "id": "unit2",
+          "name": "PSI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistem",
+          "values": {
+            "unit1": "Metric",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Valoare de bază",
+          "values": {
+            "unit1": "100,000 Pa",
+            "unit2": "6,894.76 Pa"
+          }
+        },
+        {
+          "name": "Tire pressure",
+          "values": {
+            "unit1": "Europe (bar)",
+            "unit2": "USA/UK (PSI)"
+          }
+        },
+        {
+          "name": "Industry",
+          "values": {
+            "unit1": "International standard",
+            "unit2": "US standard"
+          }
+        },
+        {
+          "name": "Atmosphere",
+          "values": {
+            "unit1": "1.013 bar",
+            "unit2": "14.696 PSI"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Câți PSI ist 1 Bar?",
+          "answer": "Genau 14,5038 PSI."
+        },
+        {
+          "question": "Câți Bar sind 30 PSI?",
+          "answer": "30 PSI = 2,068 Bar. Ein gängiger Reifendruck für PKW."
+        },
+        {
+          "question": "Ce este normaler Reifendruck?",
+          "answer": "Die meisten PKW empfehlen 2,0–2,5 Bar (29–36 PSI). Prüfen Sie den Aufkleber an der Fahrertür."
+        },
+        {
+          "question": "Ist 1 Bar gleich 1 Atmosphäre?",
+          "answer": "Nahe, aber nicht genau. 1 Atmosphäre = 1,01325 Bar = 14,696 PSI."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Da. Toate calculele se fac în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "bar în PSI – Arteon",
+      "defaultSubject": "Feedback: bar-to-psi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

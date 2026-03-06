@@ -1,0 +1,273 @@
+{
+  "toolKey": "dpiToPpi",
+  "locale": "nl",
+  "metadata": {
+    "title": "DPI naar PPI – converter",
+    "description": "Vergelijk DPI en PPI — afdruk- vs schermresolutie.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/nl/tools/dpi-naar-ppi-converter"
+  },
+  "hero": {
+    "title": "DPI naar PPI",
+    "description": "Deze converter rekent direct om. Voer een waarde in en het resultaat verschijnt onmiddellijk.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/dpi-naar-ppi-converter",
+      "label": "DPI naar PPI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "DPI naar PPI – converter",
+      "alternateName": ["DPI naar PPI"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Vergelijk DPI en PPI — afdruk- vs schermresolutie.",
+      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+    },
+    "howTo": {
+      "name": "Hoe de converter te gebruiken",
+      "description": "Snelle handleiding voor de converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Waarde invoeren",
+          "text": "Typ een getal in het invoerveld aan de linkerkant."
+        },
+        {
+          "name": "Resultaat aflezen",
+          "text": "Het conversieresultaat verschijnt direct in het veld ernaast."
+        },
+        {
+          "name": "Kopiëren of omdraaien",
+          "text": "Klik op Resultaat kopiëren of op Omdraaien om in de andere richting te converteren."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wat is het verschil tussen DPI en PPI?",
+      "html": "<p class=\"text-mid mb-4\">DPI (dots per inch) verwijst naar fysieke inktpunten van een printer. PPI (pixels per inch) verwijst naar de pixeldichtheid van een scherm of afbeelding. In de praktijk worden ze vaak door elkaar gebruikt.</p><p class=\"text-mid mb-4\">Voor digitale afbeeldingen: gebruik PPI. Voor printers: gebruik DPI.</p><p class=\"text-mid\">Alle berekeningen draaien lokaal in je browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DPI to PPI converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe gebruik je de omrekentool?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voer een waarde in",
+          "description": "Typ een getal in het invoerveld.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lees het resultaat",
+          "description": "Het resultaat verschijnt direct.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieer of wissel",
+          "description": "Kopieer het resultaat of wissel de richting.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer is deze converter nuttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Afdrukken",
+          "description": "Stel beeldresolutie in op 300 PPI voor professioneel drukwerk."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Schermdesign",
+          "description": "Monitor-PPI: 110 (1080p 24″), 163 (4K 27″)."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografie",
+          "description": "Megapixelresolutie bepaalt max drukformaat bij 300 PPI."
+        },
+        {
+          "icon": "RiQuestionLine",
+          "title": "Prepress",
+          "description": "Begrijp de relatie tussen beeld-PPI en printer-DPI."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze tool bijzonder?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Alle berekeningen draaien lokaal in je browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Directe resultaten",
+          "description": "Het resultaat wordt bijgewerkt terwijl je typt."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tweerichtingsomrekening",
+          "description": "Wissel de richting met één klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referentietabel",
+          "description": "Tabel met gangbare waarden en context."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe hangen DPI en PPI samen?",
+      "html": "<p class=\"text-mid mb-4\">Numeriek gebruiken DPI en PPI dezelfde waarde voor beeldresolutie. Een beeld van &quot;300 DPI&quot; is eigenlijk 300 PPI.</p><p class=\"text-mid\">Voor de meeste doeleinden zijn DPI en PPI uitwisselbaar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe hangen DPI en PPI samen?",
+      "html": "<p class=\"text-mid mb-4\">Numeriek gebruiken DPI en PPI dezelfde waarde voor beeldresolutie. Een beeld van &quot;300 DPI&quot; is eigenlijk 300 PPI.</p><p class=\"text-mid\">Voor de meeste doeleinden zijn DPI en PPI uitwisselbaar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "DPI vs PPI – vergelijking",
+      "featureLabel": "Eigenschap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "DPI"
+        },
+        {
+          "id": "unit2",
+          "name": "PPI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Geldt voor",
+          "values": {
+            "unit1": "Printers",
+            "unit2": "Schermen en afbeeldingen"
+          }
+        },
+        {
+          "name": "Meet",
+          "values": {
+            "unit1": "Fysieke inktpunten",
+            "unit2": "Digitale pixels"
+          }
+        },
+        {
+          "name": "Typische waarden",
+          "values": {
+            "unit1": "600–4.800 DPI",
+            "unit2": "72–460 PPI"
+          }
+        },
+        {
+          "name": "Drukkwaliteit",
+          "values": {
+            "unit1": "Meer = fijner",
+            "unit2": "300 PPI standaard"
+          }
+        },
+        {
+          "name": "Verwarring",
+          "values": {
+            "unit1": "Foutief gebruikt voor beelden",
+            "unit2": "Correct begrip"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Is DPI hetzelfde als PPI?",
+          "answer": "Niet precies. DPI meet printerpunten, PPI beeldpixels. In de praktijk uitwisselbaar voor beeldresolutie."
+        },
+        {
+          "question": "Worden berekeningen lokaal uitgevoerd?",
+          "answer": "Ja. Alle berekeningen draaien in je browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DPI naar PPI – Arteon",
+      "defaultSubject": "Feedback: dpi-to-ppi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "toolKey": "kmhToMph",
+  "locale": "sv",
+  "metadata": {
+    "title": "Km/h till mph – omvandlare",
+    "description": "Omvandla km/h till mph och tvärtom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/sv/verktyg/kmh-till-mph-omvandlare"
+  },
+  "hero": {
+    "title": "Km/h till mph",
+    "description": "Denna omvandlare räknar om direkt. Ange ett värde så visas resultatet omedelbart.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/kmh-till-mph-omvandlare",
+      "label": "km/h till mph"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Km/h till mph – omvandlare",
+      "alternateName": ["Km/h till mph"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Omvandla km/h till mph och tvärtom.",
+      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+    },
+    "howTo": {
+      "name": "Så använder du omvandlaren",
+      "description": "Snabbguide för att använda omvandlaren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Ange värde",
+          "text": "Skriv ett tal i inmatningsfältet till vänster."
+        },
+        {
+          "name": "Läs av resultatet",
+          "text": "Konverteringsresultatet visas omedelbart i fältet bredvid."
+        },
+        {
+          "name": "Kopiera eller vänd",
+          "text": "Klicka på Kopiera resultat eller på Vänd för att konvertera i andra riktningen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "När ska man omvandla km/h till mph?",
+      "html": "<p class=\"text-mid mb-4\">km/h är den metriska hastighetsenheten. mph används i USA och UK. 1 km/h = 0,621 mph.</p><p class=\"text-mid\">Alla beräkningar körs lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "KM/H to MPH converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Så använder du omvandlaren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ange värde",
+          "description": "Skriv ett tal i inmatningsfältet. Du kan använda punkt eller komma som decimalavskiljare.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Läs av resultatet",
+          "description": "Konverteringsresultatet visas omedelbart i fältet bredvid – utan att klicka.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiera eller vänd",
+          "description": "Klicka på Kopiera resultat eller använd knappen Vänd.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När är denna omvandlare användbar?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Utlandsresor",
+          "description": "Hastighetsbegränsningar: 65 mph = 105 km/h."
+        },
+        {
+          "icon": "RiDashboardLine",
+          "title": "Bilar",
+          "description": "0–100 km/h vs 0–60 mph."
+        },
+        {
+          "icon": "RiFlagLine",
+          "title": "Sport",
+          "description": "Baseboll: 100 mph = 161 km/h."
+        },
+        {
+          "icon": "RiWindyLine",
+          "title": "Meteorologi",
+          "description": "Vindhastighet i mph eller km/h."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna omvandlare speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Alla beräkningar görs lokalt i din webbläsare. Ingen data skickas till någon server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultat i realtid",
+          "description": "Resultatet uppdateras omedelbart när du skriver – inget klick krävs."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Dubbelriktad konvertering",
+          "description": "Vänd-knappen låter dig konvertera i båda riktningarna med ett klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenstabell",
+          "description": "En färdig tabell med ofta konverterade värden och kontextuella beskrivningar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">1 mile = 1,609 km. km/h till mph: dela med 1,60934. Tumregel: × 0,6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">1 mile = 1,609 km. km/h till mph: dela med 1,60934. Tumregel: × 0,6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "km/h vs mph",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "km/h"
+        },
+        {
+          "id": "unit2",
+          "name": "mph",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metriskt",
+            "unit2": "Imperialt"
+          }
+        },
+        {
+          "name": "Förhållande",
+          "values": {
+            "unit1": "1 km/h",
+            "unit2": "0,621 mph"
+          }
+        },
+        {
+          "name": "Vägskyltar",
+          "values": {
+            "unit1": "Internationellt",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Hastighetmätare",
+          "values": {
+            "unit1": "EU",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Flyg",
+          "values": {
+            "unit1": "Inte standard",
+            "unit2": "Inte standard (knop)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hur många mph är 100 km/h?",
+          "answer": "100 km/h = 62,14 mph."
+        },
+        {
+          "question": "Körs beräkningarna lokalt?",
+          "answer": "Ja. Alla beräkningar körs i din webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "km/h till mph – Arteon",
+      "defaultSubject": "Feedback: kmh-to-mph"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra gratis verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

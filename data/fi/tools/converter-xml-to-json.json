@@ -2,7 +2,7 @@
   "toolKey": "xmlToJson",
   "locale": "fi",
   "metadata": {
-    "title": "XML JSON -muunnin — XML JSON",
+    "title": "XML JSON -muunnin - XML JSON",
     "description": "Muunna XML JSON-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/xml-json-muunnin"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa XML JSON-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">XML on laajalti kaytetty tiedostomuoto laajalla yhteensopivuudella. Kayttotapauksesta riippuen muuntaminen JSON-muotoon voi tarjota merkittavia etuja — pienemmat tiedostot, parempi laatu tai laajempi alusta tuki.</p><p class=\"text-mid mb-4\">Tama ilmainen verkkomuunnin muuntaa XML-tiedostosi JSON-muotoon suoraan selaimessa. Tiedostoja ei laheteta palvelimille — koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman paivittaisia rajoituksia, rekisteroitymista tai vesileimoja. Vedaa ja pudota tiedostot, saada laatua ja lataa tulokset.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML on laajalti käytetty tiedostomuoto laajalla yhteensopivuudella. Käyttötapauksesta riippuen muuntaminen JSON-muotoon voi tarjota merkittäviä etuja - pienemmat tiedostot, parempi laatu tai laajempi alustatuki.</p><p class=\"text-mid mb-4\">Tämä ilmainen verkkomuunnin muuntaa XML-tiedostosi JSON-muotoon suoraan selaimessa. Tiedostoja ei lähetetä palvelimille - koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman päivittäisiä rajoituksia, rekisteröitymistä tai vesileimoja. Vedä ja pudota tiedostot, säädä laatua ja lataa tulokset.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla XML JSON?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Miten XML:n muuntaminen JSON:ksi toimii?",
+      "html": "<p class=\"text-mid mb-4\">XML k\u00e4ytt\u00e4\u00e4 tagipohjaista hierarkiaa avaus- ja sulkuelementeill\u00e4, kun taas JSON k\u00e4ytt\u00e4\u00e4 kevyit\u00e4 aaltosulkeita ja avain-arvo-pareja. Muunnin j\u00e4sent\u00e4\u00e4 XML-dokumenttipuun ja yhdist\u00e4\u00e4 jokaisen elementin vastaavaan JSON-rakenteeseen.</p><p class=\"text-mid mb-4\">XML-elementeist\u00e4 tulee JSON-objekteja, toistuvista samannimisist\u00e4 elementeist\u00e4 tulee JSON-taulukoita ja tekstisis\u00e4ll\u00f6st\u00e4 tulee merkkijonoarvoja. XML-attribuutit n\u00e4kyv\u00e4t erityisin\u00e4 ominaisuuksina (@-etuliitteell\u00e4) JSON-objektissa.</p><p class=\"text-mid\">JSON on suosittu muoto moderneille web-API:ille, JavaScript-sovelluksille ja NoSQL-tietokannoille. Kaikki muunnos tapahtuu paikallisesti selaimessasi.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vinkkeja XML-JSON-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "title": "Vinkkej\u00e4 XML:n muuntamiseen JSON:ksi",
+      "description": "Muutamia vinkkej\u00e4 yleisten ongelmien v\u00e4ltt\u00e4miseksi:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
-          "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
+          "icon": "RiCodeLine",
+          "title": "XML-attribuutit",
+          "description": "XML-attribuutit muunnetaan JSON-ominaisuuksiksi @-etuliitteell\u00e4. Esim. &lt;item id='1'&gt; tulee muotoon: {\"@id\": \"1\"}."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Jo pakatut",
-          "description": "Jos XML oli jo voimakkaasti pakattu, muunnos JSON-muotoon ei valttamatta saasta paljon."
+          "icon": "RiNodeTree",
+          "title": "Nimiavaruudet",
+          "description": "XML-nimiavaruudet s\u00e4ilyv\u00e4t JSON-tuloksessa osana elementtien nimi\u00e4. Monimutkaiset nimiavaruusm\u00e4\u00e4rittelyt voivat vaatia manuaalista s\u00e4\u00e4t\u00f6\u00e4."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "JSON ei tue lapinakyyytta. Lapinakyyt alueet muuttuvat valkoisiksi. Harkitse PNG:ta tai WebP:ta."
+          "icon": "RiFileTextLine",
+          "title": "Sekainen sis\u00e4lt\u00f6",
+          "description": "XML-elementit, jotka sis\u00e4lt\u00e4v\u00e4t sek\u00e4 teksti\u00e4 ett\u00e4 alielementtej\u00e4, k\u00e4sitell\u00e4\u00e4n sijoittamalla teksti erityiseen #text-ominaisuuteen JSON:ssa."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot XML-tiedostoista."
+          "icon": "RiFileCodeLine",
+          "title": "CDATA-osiot",
+          "description": "XML:n CDATA-osiot muunnetaan tavallisiksi merkkijonoarvoiksi JSON:ssa. CDATA-k\u00e4\u00e4re poistetaan ja sis\u00e4lt\u00f6 s\u00e4ilyy muuttumattomana."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
         },
         {
-          "question": "Onko XML JSON muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "question": "Onko XML:n muuntaminen JSON:ksi turvallista?",
+          "answer": "Kyll\u00e4. Kaikki muunnos tapahtuu paikallisesti selaimessasi. Mit\u00e4\u00e4n tietoja ei l\u00e4hetet\u00e4 millek\u00e4\u00e4n palvelimelle."
         },
         {
-          "question": "Voinko muuntaa useita XML-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "question": "H\u00e4vi\u00e4v\u00e4tk\u00f6 XML-attribuutit muunnoksessa?",
+          "answer": "Eiv\u00e4t. XML-attribuutit s\u00e4ilyv\u00e4t JSON-tuloksessa @-etuliitteellisin\u00e4 ominaisuuksina. Esim. id='123' tulee muotoon: \"@id\": \"123\" JSON-objektissa."
         },
         {
-          "question": "Tukevatko kaikki selaimet JSON-muotoa?",
-          "answer": "JSON-muotoa tukevat Chrome, Firefox, Safari, Edge ja Opera."
+          "question": "Voinko k\u00e4ytt\u00e4\u00e4 JSON-tulosta JavaScriptiss\u00e4?",
+          "answer": "Kyll\u00e4. Tulos on standardi JSON, jota voidaan k\u00e4ytt\u00e4\u00e4 JSON.parse()-funktiolla JavaScriptiss\u00e4, tai suoraan miss\u00e4 tahansa ohjelmointikieless\u00e4, API:ssa tai tietokannassa."
         }
       ]
     },

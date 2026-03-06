@@ -1,0 +1,285 @@
+{
+  "toolKey": "kmhToMph",
+  "locale": "ro",
+  "metadata": {
+    "title": "Km/h în mph – convertor",
+    "description": "Convertiți km/h în mph și invers.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-kmh-in-mph"
+  },
+  "hero": {
+    "title": "Km/h în mph",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-kmh-in-mph",
+      "label": "km/h în mph"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Km/h în mph – convertor",
+      "alternateName": ["Km/h în mph"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți km/h în mph și invers.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: Km/h în mph?",
+      "html": "<p class=\"text-mid mb-4\">kilometri pro Stunde (km/h) este unitatea standardă-Vitezăseinheit in den meisten Ländern. mile pro Stunde (mph) wird in den USA, UK und einigen anderen Ländern verwendet. 1 km/h = 0,621371 mph, oder 1 mph = 1,60934 km/h.</p><p class=\"text-mid mb-4\">Die conversie ist wichtig beim Autofahren in den USA oder UK (Tempolimits in mph), Vergleich von Fahrzeugdaten, Wetterberichten und internationalen Vitezăsangaben.</p><p class=\"text-mid mb-4\">Gängige Tempolimits: 50 km/h = 31 mph (Stadt), 100 km/h = 62 mph (Landstraße), 130 km/h = 81 mph (Autobahn).</p><p class=\"text-mid\">Toate calculele se fac local, în browserul dvs. — nimic nu este trimis la vreun server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Km/h în mph – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Călătorii în străinătate",
+          "description": "Ograniczenia prędkości: 25 mph (miasto) = 40 km/h, 65 mph (autostrada) = 105 km/h."
+        },
+        {
+          "icon": "RiDashboardLine",
+          "title": "Prędkościomierz",
+          "description": "Importowane samochody mogą mieć prędkościomierz w mph – przelicz na km/h."
+        },
+        {
+          "icon": "RiFlagLine",
+          "title": "Sporty motorowe",
+          "description": "Porównaj prędkości w F1, NASCAR i MotoGP podawane w różnych jednostkach."
+        },
+        {
+          "icon": "RiWindyLine",
+          "title": "Meteorologia",
+          "description": "Prędkość wiatru w amerykańskich prognozach podaje się w mph."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">Da 1 Meile = 1,60934 km, gilt: 1 km/h = 1/1,60934 = 0,621371 mph.</p><p class=\"text-mid mb-4\">Um km/h in mph umzurechnen, înmulțiți cu 0,621371. Um mph in km/h umzurechnen, înmulțiți cu 1,60934.</p><p class=\"text-mid\">Calcul mental rapid: Înm ulțiți km/h mit 0,6 oder teilen Sie durch 1,6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>City speed: 50 km/h = 31 mph. Residential: 30 km/h = 19 mph.</li><li>Highway: 100 km/h = 62 mph, 120 km/h = 75 mph, 130 km/h = 81 mph.</li><li>Speed of sound: 1,235 km/h = 767 mph (at sea level, 20°C).</li><li>F1 top speed: ~370 km/h = 230 mph.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "km/h vs mph – comparație",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "km/h"
+        },
+        {
+          "id": "unit2",
+          "name": "mph",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistem",
+          "values": {
+            "unit1": "Metric",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Valoare de bază",
+          "values": {
+            "unit1": "1 km per hour",
+            "unit2": "1.609 km per hour"
+          }
+        },
+        {
+          "name": "Indicatoare rutiere",
+          "values": {
+            "unit1": "Majoritatea țărilor",
+            "unit2": "USA, UK, Myanmar"
+          }
+        },
+        {
+          "name": "Aviation",
+          "values": {
+            "unit1": "Not used (knots)",
+            "unit2": "Not used (knots)"
+          }
+        },
+        {
+          "name": "Știință",
+          "values": {
+            "unit1": "m/s preferred",
+            "unit2": "Nefolosit"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Câți mph sind 100 km/h?",
+          "answer": "100 km/h = 62,14 mph."
+        },
+        {
+          "question": "Câți km/h sind 60 mph?",
+          "answer": "60 mph = 96,56 km/h."
+        },
+        {
+          "question": "Ce este das US-Autobahnlimit in km/h?",
+          "answer": "US-Highway-Limits liegen bei 65–75 mph = 105–121 km/h."
+        },
+        {
+          "question": "Quick way to convert?",
+          "answer": "Multiply km/h by 0.6 or divide by 1.6. Example: 120 km/h × 0.6 = 72 mph (exact: 74.6 mph)."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Da. Toate calculele se fac în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "km/h în mph – Arteon",
+      "defaultSubject": "Feedback: kmh-to-mph"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

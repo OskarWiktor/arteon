@@ -1,0 +1,277 @@
+{
+  "toolKey": "degToRad",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore gradi in radianti",
+    "description": "Converti gradi in radianti e viceversa. Essenziale per trigonometria e fisica.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-gradi-in-radianti"
+  },
+  "hero": {
+    "title": "Convertire gradi in radianti",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-gradi-in-radianti",
+      "label": "gradi in rad"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore gradi in radianti",
+      "alternateName": ["Convertire gradi in radianti"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti gradi in radianti e viceversa. Essenziale per trigonometria e fisica.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire gradi in radianti?",
+      "html": "<p class=\"text-mid mb-4\">I gradi (°) e i radianti (rad) sono due modi per misurare gli angoli. Un cerchio completo = 360° = 2π rad. Conversione: radianti = gradi × π/180.</p><p class=\"text-mid mb-4\">Le funzioni Math di JavaScript (sin, cos, tan) richiedono angoli in radianti. Le trasformazioni CSS usano gradi.</p><p class=\"text-mid mb-4\">Angoli comuni: 90° = π/2 rad, 180° = π rad, 45° = π/4 rad.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore gradi in radianti – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato appare istantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Copia il risultato o inverti la direzione di conversione.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Programmazione",
+          "description": "JavaScript Math.sin() richiede radianti. 90° = π/2 ≈ 1,5708 rad."
+        },
+        {
+          "icon": "RiCompassLine",
+          "title": "Fisica",
+          "description": "Velocità angolare (ω), moto rotatorio e equazioni d’onda."
+        },
+        {
+          "icon": "RiGamepadLine",
+          "title": "Sviluppo giochi",
+          "description": "Calcoli di rotazione 2D/3D usano radianti internamente."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Ingegneria",
+          "description": "Angoli servomotori, cinematica robotica."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Converti in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Tabella con valori comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">Formula: radianti = gradi × π / 180. Inversa: gradi = radianti × 180 / π.</p><p class=\"text-mid\">1 radiante ≈ 57,296°. L’angolo dove la lunghezza dell’arco uguaglia il raggio.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">Formula: radianti = gradi × π / 180. Inversa: gradi = radianti × 180 / π.</p><p class=\"text-mid\">1 radiante ≈ 57,296°. L’angolo dove la lunghezza dell’arco uguaglia il raggio.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Gradi vs Radianti",
+      "featureLabel": "Caratteristica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Gradi (°)"
+        },
+        {
+          "id": "unit2",
+          "name": "Radianti (rad)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Cerchio completo",
+          "values": {
+            "unit1": "360°",
+            "unit2": "2π ≈ 6,283"
+          }
+        },
+        {
+          "name": "Angolo retto",
+          "values": {
+            "unit1": "90°",
+            "unit2": "π/2 ≈ 1,571"
+          }
+        },
+        {
+          "name": "Usato in",
+          "values": {
+            "unit1": "Quotidiano, CSS, geometria",
+            "unit2": "Matematica, fisica, programmazione"
+          }
+        },
+        {
+          "name": "Intuitivo",
+          "values": {
+            "unit1": "Sì (familiare)",
+            "unit2": "Meno intuitivo"
+          }
+        },
+        {
+          "name": "Matematicamente naturale",
+          "values": {
+            "unit1": "No (arbitrario)",
+            "unit2": "Sì (arco/raggio)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanti radianti sono 180°?",
+          "answer": "180° = π radianti ≈ 3,14159 radianti."
+        },
+        {
+          "question": "Quanti gradi è 1 radiante?",
+          "answer": "1 radiante = 180/π ≈ 57,296°."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "stopnie na radiany – Arteon",
+      "defaultSubject": "Feedback: deg-to-rad"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "toolKey": "whToMah",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de Wh para mAh – baterias",
+    "description": "Converta watts-hora para miliampères-hora. Para comparações de baterias e powerbanks.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-wh-para-mah"
+  },
+  "hero": {
+    "title": "Converter Wh para mAh",
+    "description": "Este conversor converte instantaneamente. Introduza um valor e o resultado aparece imediatamente.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-wh-para-mah",
+      "label": "Wh para mAh"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de Wh para mAh – baterias",
+      "alternateName": ["Converter Wh para mAh"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converta watts-hora para miliampères-hora. Para comparações de baterias e powerbanks.",
+      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+    },
+    "howTo": {
+      "name": "Como usar o conversor",
+      "description": "Guia rápido para usar o conversor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduzir valor",
+          "text": "Escreva um número no campo de entrada à esquerda."
+        },
+        {
+          "name": "Ler o resultado",
+          "text": "O resultado da conversão aparece instantaneamente no campo ao lado."
+        },
+        {
+          "name": "Copiar ou inverter",
+          "text": "Clique em Copiar resultado ou em Inverter para converter na direção oposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa converter Wh em mAh?",
+      "html": "<p class=\"text-mid mb-4\">Os watts-hora (Wh) e miliampères-hora (mAh) medem a capacidade da bateria, mas em escalas diferentes. A relação depende da tensão: mAh = Wh × 1.000 / V.</p><p class=\"text-mid mb-4\">As baterias de telefones são em mAh (ex. 5.000 mAh a 3,7V = 18,5 Wh). As baterias de notebooks e powerbanks usam Wh (ex. 100 Wh é o limite aéreo em cabine).</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Conversor de Wh para mAh – baterias – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o conversor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Insira um valor",
+          "description": "Digite um número no campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leia o resultado",
+          "description": "O resultado aparece instantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copie ou inverta",
+          "description": "Copie o resultado ou inverta a direção de conversão.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando este conversor é útil?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBattery2ChargeLine",
+          "title": "Powerbanks",
+          "description": "Limite aéreo: 100 Wh. 20.000 mAh a 3,7V = 74 Wh (permitido)."
+        },
+        {
+          "icon": "RiFlightTakeoffLine",
+          "title": "Telefones",
+          "description": "Compare: 5.000 mAh a 3,7V = 18,5 Wh. Mais Wh = mais energia."
+        },
+        {
+          "icon": "RiLaptopLine",
+          "title": "Notebooks",
+          "description": "Baterias de 40–99 Wh. Compare com mAh conforme a tensão."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Solar e nobreaks",
+          "description": "Painéis solares produzem Wh. Baterias armazenam mAh."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que diferencia este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os cálculos são executados localmente no seu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados em tempo real",
+          "description": "O resultado atualiza enquanto digita."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversão bidirecional",
+          "description": "Converta em ambas as direções com um clique."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela de referência",
+          "description": "Tabela com valores comuns e descrições contextuais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Energia (Wh) = Capacidade (Ah) × Tensão (V). Portanto: mAh = Wh × 1.000 / V.</p><p class=\"text-mid\">A tensão é fundamental! Mesmos Wh dão diferentes mAh em diferentes tensões.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Energia (Wh) = Capacidade (Ah) × Tensão (V). Portanto: mAh = Wh × 1.000 / V.</p><p class=\"text-mid\">A tensão é fundamental! Mesmos Wh dão diferentes mAh em diferentes tensões.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Wh vs mAh – comparação",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Watt-hora (Wh)"
+        },
+        {
+          "id": "unit2",
+          "name": "Miliampère-hora (mAh)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Mede",
+          "values": {
+            "unit1": "Energia",
+            "unit2": "Carga"
+          }
+        },
+        {
+          "name": "Inclui tensão",
+          "values": {
+            "unit1": "Sim",
+            "unit2": "Não (precisa de tensão)"
+          }
+        },
+        {
+          "name": "Usado para",
+          "values": {
+            "unit1": "Notebooks, EVs",
+            "unit2": "Telefones, powerbanks"
+          }
+        },
+        {
+          "name": "Comparação",
+          "values": {
+            "unit1": "Direta a qualquer tensão",
+            "unit2": "Apenas na mesma tensão"
+          }
+        },
+        {
+          "name": "Limite aéreo",
+          "values": {
+            "unit1": "100 Wh",
+            "unit2": "~27.000 mAh a 3,7V"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Como converter Wh em mAh?",
+          "answer": "mAh = Wh × 1.000 / tensão. Exemplo: 100 Wh a 3,7V = 27.027 mAh."
+        },
+        {
+          "question": "Qual é o limite de powerbank em aviões?",
+          "answer": "A maioria das companhias permite até 100 Wh. A 3,7V = ~27.000 mAh."
+        },
+        {
+          "question": "Os cálculos são feitos localmente?",
+          "answer": "Sim. Todos os cálculos são executados no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "Wh na mAh – Arteon",
+      "defaultSubject": "Feedback: wh-to-mah"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

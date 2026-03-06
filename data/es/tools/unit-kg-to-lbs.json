@@ -1,0 +1,281 @@
+{
+  "toolKey": "kgToLbs",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de kilogramos a libras",
+    "description": "Convierte kg a lbs y viceversa. Esencial para fitness, viajes y envíos internacionales.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-kg-a-libras"
+  },
+  "hero": {
+    "title": "Convertir kilogramos a libras",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-kg-a-libras",
+      "label": "kg a lbs"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de kilogramos a libras",
+      "alternateName": ["Convertir kilogramos a libras"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte kg a lbs y viceversa. Esencial para fitness, viajes y envíos internacionales.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir kilogramos a libras?",
+      "html": "<p class=\"text-mid mb-4\">El kilogramo (kg) es la unidad básica de masa en el sistema métrico. La libra (lb) es la unidad estándar de masa en el sistema imperial, usada en EE. UU. y parcialmente en el Reino Unido. 1 kg = 2,20462 lb.</p><p class=\"text-mid mb-4\">Esta conversión es necesaria al hacer compras en EE. UU. (alimentos en libras), ver pesos en gimnasios estadounidenses (discos y mancuernas en lbs), comparar pesos de equipaje para vuelos internacionales y leer fichas técnicas de vehículos.</p><p class=\"text-mid mb-4\">Ejemplos: 70 kg = 154,3 lb, 100 kg = 220,5 lb, 1 lb = 453,6 g.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador — nada se envía a ningún servidor.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de kilogramos a libras – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada. Puedes usar punto o coma como separador decimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado de la conversión aparece instantáneamente en el campo contiguo.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Haz clic en Copiar resultado o usa el botón Invertir para convertir en dirección opuesta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiScales3Line",
+          "title": "Gimnasio y fitness",
+          "description": "Las pesas en gimnasios de EE. UU. están en libras. Disco de 45 lb = 20,4 kg."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Equipaje aéreo",
+          "description": "Algunas aerolíneas indican límites en libras: 50 lb = 22,7 kg."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Cocina",
+          "description": "Recetas estadounidenses usan libras y onzas para ingredientes como carne y harina."
+        },
+        {
+          "icon": "RiMedicineBottleLine",
+          "title": "Peso corporal",
+          "description": "En EE. UU. el peso se indica en libras: 150 lb = 68 kg, 200 lb = 90,7 kg."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador. Ningún dato se envía a ningún servidor."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza instantáneamente mientras escribes, sin necesidad de pulsar ningún botón."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "El botón Invertir te permite convertir en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Una tabla con valores de conversión comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 libra (avoirdupois) = 0,45359237 kg exactamente. Para convertir kg a lb, multiplica por 2,20462. Para convertir lb a kg, multiplica por 0,45359.</p><p class=\"text-mid mb-4\">Ejemplo: 80 kg × 2,20462 = 176,37 lb.</p><p class=\"text-mid\">Estimación rápida: multiplica kg por 2,2.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 libra (avoirdupois) = 0,45359237 kg exactamente. Para convertir kg a lb, multiplica por 2,20462. Para convertir lb a kg, multiplica por 0,45359.</p><p class=\"text-mid mb-4\">Ejemplo: 80 kg × 2,20462 = 176,37 lb.</p><p class=\"text-mid\">Estimación rápida: multiplica kg por 2,2.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilogramo vs Libra – comparación",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilogramo (kg)"
+        },
+        {
+          "id": "unit2",
+          "name": "Libra (lb)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistema",
+          "values": {
+            "unit1": "Métrico (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Valor base",
+          "values": {
+            "unit1": "1.000 g",
+            "unit2": "453,59 g"
+          }
+        },
+        {
+          "name": "Peso corporal",
+          "values": {
+            "unit1": "Europa, América Latina",
+            "unit2": "EE. UU., parcialmente UK"
+          }
+        },
+        {
+          "name": "Ciencia",
+          "values": {
+            "unit1": "Estándar SI",
+            "unit2": "No utilizada"
+          }
+        },
+        {
+          "name": "Gimnasio",
+          "values": {
+            "unit1": "Discos en kg (Europa)",
+            "unit2": "Discos en lb (EE. UU.)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántas libras es 1 kg?",
+          "answer": "1 kg = 2,20462 libras."
+        },
+        {
+          "question": "¿Cuántos kg es 1 libra?",
+          "answer": "1 libra = 0,4536 kg = 453,6 gramos."
+        },
+        {
+          "question": "¿Qué diferencia hay entre libra y stone?",
+          "answer": "1 stone = 14 libras = 6,35 kg. Stone se usa en el Reino Unido para peso corporal."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "kg na funty – Arteon",
+      "defaultSubject": "Feedback: kg-to-lbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

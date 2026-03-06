@@ -94,6 +94,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "HEIC vs WebP – de viktigste forskjellene",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">HEIC</th><th class=\"py-2 text-center\">WebP</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Begge</td><td class=\"py-2 text-center\">Begge</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gjennomsiktighet</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animasjon</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Nettleserstøtte</td><td class=\"py-2 text-center\">Safari only</td><td class=\"py-2 text-center\">Chrome, Firefox, Safari 14+, Edge</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Når bør du konvertere HEIC til WebP?",
       "grid": "two",
@@ -210,15 +219,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "heic": "Safari 13+ (macOS / iOS)",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
-          }
-        },
-        {
-          "name": "Fargedybde",
-          "values": {
-            "heic": "8/10-bit, HDR",
-            "webp": "8-bit (16.7M)"
+            "heic": false,
+            "webp": true
           }
         },
         {
@@ -235,8 +237,7 @@
             "webp": true
           }
         }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

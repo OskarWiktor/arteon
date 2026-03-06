@@ -2,7 +2,7 @@
   "toolKey": "base64ToImage",
   "locale": "sv",
   "metadata": {
-    "title": "Base64 till bild-konverterare — Base64 bild",
+    "title": "Base64 till bild-konverterare - Base64 bild",
     "description": "Avkoda Base64-strängar till bilder. Förhandsgranska och ladda ner i webbläsaren. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/base64-till-bild-konverterare"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertera",
-          "text": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare."
+          "text": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera Base64 till bild?",
-      "html": "<p class=\"text-mid mb-4\">BASE64 ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till IMAGE erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina BASE64-filer till IMAGE-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">BASE64 ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till IMAGE erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina BASE64-filer till IMAGE-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "Base64 to bild conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertera",
-          "description": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare.",
+          "description": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur mycket sparar du vid konvertering BASE64 till IMAGE?",
-      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+      "title": "Hur fungerar avkodning fr\u00e5n Base64 till bild?",
+      "html": "<p class=\"text-mid mb-4\">Base64-avkodning \u00e4r den omv\u00e4nda operationen av Base64-kodning \u2014 den konverterar en textstr\u00e4ng tillbaka till bin\u00e4r bilddata. Konverteraren l\u00e4ser Base64-str\u00e4ngen (med eller utan Data URI-prefix), avkodar den till r\u00e5a bytes och \u00e5terskapar den ursprungliga bildfilen.</p><p class=\"text-mid mb-4\">Data URI-prefixet (t.ex. data:image/png;base64,) talar om f\u00f6r konverteraren vilket bildformat som ska anv\u00e4ndas. Om prefixet saknas detekterar konverteraren automatiskt formatet fr\u00e5n den bin\u00e4ra signaturen (magic bytes) i den avkodade datan.</p><p class=\"text-mid\">Detta verktyg \u00e4r anv\u00e4ndbart n\u00e4r du beh\u00f6ver extrahera en bild fr\u00e5n en HTML-sida, CSS-fil, API-svar eller databas som lagrar bilder som Base64-str\u00e4ngar. Konverteringen sker helt i din webbl\u00e4sare.</p>"
     },
     {
       "type": "gap",
@@ -138,29 +138,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering BASE64 till IMAGE",
-      "description": "Tips for att undvika vanliga problem:",
+      "title": "Tips f\u00f6r avkodning fr\u00e5n Base64 till bild",
+      "description": "N\u00e5gra tips f\u00f6r att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Mycket stora filer",
-          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+          "title": "Data URI-prefix",
+          "description": "Konverteraren accepterar Base64-str\u00e4ngar med och utan Data URI-prefix (data:image/...). Om prefixet finns anv\u00e4nds det f\u00f6r att best\u00e4mma utdataformatet."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Redan komprimerade",
-          "description": "Om BASE64 redan var kraftigt komprimerad kanske konvertering till IMAGE inte sparar mycket."
+          "icon": "RiCodeLine",
+          "title": "Ogiltiga tecken",
+          "description": "Base64-str\u00e4ngar f\u00e5r bara inneh\u00e5lla A\u2013Z, a\u2013z, 0\u20139, +, / och = (padding). Mellanslag och radbrytningar tas bort automatiskt f\u00f6re avkodningen."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "IMAGE stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+          "icon": "RiFileImageLine",
+          "title": "Utdataformat",
+          "description": "Den avkodade bilden sparas i formatet som anges av Data URI-prefixet. Utan prefix detekterar konverteraren automatiskt formatet."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Spara originalen",
-          "description": "Forlustkomprimering ar irreversibel. Spara kopior av BASE64-filer."
+          "icon": "RiFileCodeLine",
+          "title": "L\u00e5nga str\u00e4ngar",
+          "description": "Mycket l\u00e5nga Base64-str\u00e4ngar (som representerar stora bilder) kan ta en stund att avkoda. Konverteraren hanterar str\u00e4ngar av alla l\u00e4ngder som din webbl\u00e4sare klarar."
         }
       ]
     },
@@ -190,16 +190,16 @@
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         },
         {
-          "question": "Ar konvertering BASE64 till IMAGE saker?",
-          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+          "question": "Är avkodningen från Base64 till bild säker?",
+          "answer": "Ja. Avkodningsprocessen sker helt i din webbläsare. Din data skickas aldrig till någon server."
         },
         {
-          "question": "Kan jag konvertera flera BASE64-filer samtidigt?",
-          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+          "question": "Vilka bildformat stöds?",
+          "answer": "Konverteraren kan avkoda Base64-strängar till PNG, JPG, GIF, WebP, SVG, BMP och andra standardbildformat. Formatet detekteras automatiskt från Data URI-prefixet eller det binära innehållet."
         },
         {
-          "question": "Stods IMAGE av alla webblasare?",
-          "answer": "IMAGE stods av Chrome, Firefox, Safari, Edge och Opera."
+          "question": "Hur får jag Base64-strängen från en bild?",
+          "answer": "Du kan hitta Base64-strängar för bilder i HTML-källkod (src-attribut), CSS-filer (background-image), API-svar eller databaser. Leta efter strängar som börjar med data:image/ följt av base64,."
         }
       ]
     },

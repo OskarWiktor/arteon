@@ -2,7 +2,7 @@
   "toolKey": "htmlToMarkdown",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor HTML în Markdown — HTML Markdown",
+    "title": "Convertor HTML în Markdown - HTML Markdown",
     "description": "Convertește HTML în format Markdown. Parsare și formatare automată. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-html-in-markdown"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți HTML în Markdown?",
-      "html": "<p class=\"text-mid mb-4\">HTML este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in MARKDOWN poate oferi avantaje semnificative — fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele HTML in format MARKDOWN direct in browser. Niciun fisier nu este trimis la servere — intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">HTML este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in MARKDOWN poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele HTML in format MARKDOWN direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "HTML to Markdown conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cat economisiti convertind HTML in MARKDOWN?",
-      "html": "<p class=\"text-mid mb-4\">Economiile depind de tipul fisierului si compresia originala:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto camera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagine produs</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Economiile reale variaza in functie de continut si setari.</p>"
+      "title": "Cum funcționează conversia din HTML în Markdown?",
+      "html": "<p class=\"text-mid mb-4\">HTML folosește tag-uri ca &lt;h1&gt;, &lt;strong&gt;, &lt;a&gt; și &lt;ul&gt; pentru structurarea conținutului. Markdown folosește simboluri mai simple: # pentru titluri, ** pentru bold, [Text](URL) pentru linkuri și - pentru liste. Convertorul analizează arborele documentului HTML și asociază fiecare element echivalentului său Markdown.</p><p class=\"text-mid mb-4\">De ex. &lt;h1&gt;Titlu&lt;/h1&gt; devine # Titlu, &lt;strong&gt;bold&lt;/strong&gt; devine **bold** și &lt;a href=\"url\"&gt;Link&lt;/a&gt; devine [Link](url). Structurile complexe ca tabelele, blocurile de cod și listele imbricate sunt de asemenea procesate.</p><p class=\"text-mid\">Conversia din HTML în Markdown este utilă pentru migrarea conținutului web către sisteme de documentație, generatoare de site-uri statice sau platforme care folosesc Markdown. Conversia se face complet în browserul tău.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Sfaturi pentru conversia HTML in MARKDOWN",
-      "description": "Sfaturi pentru evitarea problemelor:",
+      "title": "Sfaturi pentru conversia din HTML în Markdown",
+      "description": "Câteva sfaturi pentru a evita problemele comune:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Fisiere foarte mari",
-          "description": "Imaginile peste 4000×4000 px pot fi mai lente. Impartiti in loturi de 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Stilurile inline se elimină",
+          "description": "Markdown nu suportă CSS. Stilurile inline, clasele și ID-urile din HTML sunt eliminate în timpul conversiei. Se păstrează doar structura semantică și conținutul text."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Fisiere deja comprimate",
-          "description": "Daca HTML era deja comprimat, conversia in MARKDOWN poate nu economisi mult."
+          "title": "Layout-uri complexe",
+          "description": "Layout-urile HTML cu div-uri, grid-uri sau flexbox nu pot fi reprezentate în Markdown. Convertorul extrage conținutul text și păstrează titlurile, listele și linkurile."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparenta",
-          "description": "MARKDOWN nu suporta transparenta. Zonele transparente devin albe. Luati in considerare PNG sau WebP."
+          "icon": "RiCodeLine",
+          "title": "Imagini și linkuri",
+          "description": "Tag-urile HTML &lt;img&gt; devin ![Alt](Src) și tag-urile &lt;a&gt; devin [Text](URL) în Markdown. URL-urile relative sunt păstrate neschimbate."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Pastrati originalele",
-          "description": "Conversia cu pierderi e ireversibila. Pastrati copii ale fisierelor HTML."
+          "icon": "RiFileTextLine",
+          "title": "Tabele",
+          "description": "Tabelele HTML sunt convertite în tabele Markdown cu pipe-uri unde este posibil. Tabelele complexe cu colspan sau rowspan pot fi simplificate."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What HTML elements are converted?",
+      "html": "<p class=\"text-mid mb-4\">The converter handles all common semantic HTML elements:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – &lt;h1&gt; through &lt;h6&gt; → # through ######</li><li><strong>Text formatting</strong> – &lt;strong&gt;/&lt;b&gt; → **bold**, &lt;em&gt;/&lt;i&gt; → *italic*, &lt;del&gt; → ~~strikethrough~~</li><li><strong>Links</strong> – &lt;a href&gt; → [text](url)</li><li><strong>Images</strong> – &lt;img&gt; → ![alt](src)</li><li><strong>Lists</strong> – &lt;ul&gt;/&lt;ol&gt; → - / 1. list items</li><li><strong>Code</strong> – &lt;code&gt; → `inline`, &lt;pre&gt;&lt;code&gt; → fenced blocks</li><li><strong>Tables</strong> – &lt;table&gt; → pipe-separated Markdown tables</li></ul><p class=\"text-mid mt-3\">Non-semantic elements (div, span, script, style) are stripped. Only meaningful content is preserved in the Markdown output.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         },
         {
-          "question": "E sigura conversia HTML in MARKDOWN?",
-          "answer": "Da. Totul se face local in browser via Canvas API. Nimic nu e trimis la servere."
+          "question": "Este conversia din HTML în Markdown sigură?",
+          "answer": "Da. Toată conversia se face local în browserul tău. Nicio dată nu este trimisă la vreun server."
         },
         {
-          "question": "Pot converti mai multe fisiere HTML?",
-          "answer": "Da. Conversie in lot fara limita. Trageti fisierele in convertor."
+          "question": "Se pierde formatarea la conversie?",
+          "answer": "Markdown suportă titluri, bold, italic, linkuri, imagini, liste, blocuri de cod, citate și tabele. Funcționalitățile exclusive HTML ca CSS personalizat, culori și layout-uri complexe nu pot fi reprezentate în Markdown și sunt simplificate."
         },
         {
-          "question": "MARKDOWN e suportat de toate browserele?",
-          "answer": "MARKDOWN e suportat de Chrome, Firefox, Safari, Edge si Opera."
+          "question": "Pot folosi rezultatul Markdown pe GitHub?",
+          "answer": "Da. Rezultatul respectă sintaxa Markdown standard, compatibilă cu GitHub, GitLab, Bitbucket, Notion, Obsidian și toate celelalte platforme care randează Markdown."
         }
       ]
     },

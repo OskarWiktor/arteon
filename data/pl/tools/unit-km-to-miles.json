@@ -1,0 +1,289 @@
+{
+  "toolKey": "kmToMiles",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter km na mile – darmowy, natychmiastowy wynik",
+    "description": "Przelicz kilometry na mile i odwrotnie. Wynik pojawia się natychmiast w przeglądarce, bez rejestracji i wysyłania danych na serwer.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-km-na-mile"
+  },
+  "hero": {
+    "title": "Przelicz kilometry na mile",
+    "description": "Wpisz wartość, a konwerter natychmiast pokaże wynik w milach. Możesz też przeliczać w drugą stronę.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-km-na-mile",
+      "label": "km na mile"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter km na mile – darmowy, natychmiastowy wynik",
+      "alternateName": ["Przelicznik km na mile", "Kalkulator kilometrów na mile", "Zamiana km na mi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz kilometry na mile i odwrotnie. Wynik pojawia się natychmiast w przeglądarce, bez rejestracji i wysyłania danych na serwer.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera km na mile",
+      "description": "Instrukcja użycia: km na mile.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy przydaje się przeliczanie kilometrów na mile?",
+      "html": "<p class=\"text-mid mb-4\">Kilometr (km) to podstawowa jednostka długości w systemie metrycznym, stosowanym w Polsce i większości krajów świata. Mila lądowa (mi) to jednostka używana w Stanach Zjednoczonych, Wielkiej Brytanii i kilku innych krajach anglosaskich. 1 km odpowiada dokładnie 0,621371 mili.</p><p class=\"text-mid mb-4\">Przeliczanie kilometrów na mile jest potrzebne podczas planowania podróży do USA lub Wielkiej Brytanii, gdzie znaki drogowe i nawigacja podają odległości w milach. Również w sporcie – popularne dystanse biegowe, takie jak 5K (5 km = 3,11 mi) czy maraton (42,195 km = 26,22 mi), często są podawane w obu jednostkach.</p><p class=\"text-mid mb-4\">W logistyce międzynarodowej i transporcie morskim odległości bywają podawane w milach. Znajomość przelicznika pozwala szybko oszacować czas przejazdu i koszty paliwa bez sięgania po kalkulator.</p><p class=\"text-mid\">Współczynnik konwersji 0,621371 wynika z międzynarodowej definicji mili, która wynosi dokładnie 1 609,344 metra. Ta wartość jest stała i niezależna od kontekstu – konwerter używa jej z pełną precyzją.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "km na mile – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Podróże zagraniczne",
+          "description": "Przelicz odległości na drogach w USA i Wielkiej Brytanii, gdzie znaki podają mile."
+        },
+        {
+          "icon": "RiRunLine",
+          "title": "Biegi i sport",
+          "description": "Porównaj dystanse treningowe: 5K, 10K, półmaraton i maraton w kilometrach i milach."
+        },
+        {
+          "icon": "RiMapPinLine",
+          "title": "Nawigacja GPS",
+          "description": "Niektóre urządzenia GPS pokazują odległości w milach – przelicz je na kilometry."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Logistyka i transport",
+          "description": "Przelicz odległości w dokumentach spedycyjnych i międzynarodowych zleceniach transportowych."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja km na mile?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja kilometrów na mile opiera się na międzynarodowej definicji mili lądowej, która wynosi dokładnie 1 609,344 metra. Aby przeliczyć kilometry na mile, narzędzie mnoży podaną wartość przez współczynnik 0,621371 — jest to odwrotność stosunku 1 609,344 metra do 1 000 metrów.</p><p class=\"text-mid mb-4\">W drugą stronę, aby zamienić mile na kilometry, wystarczy pomnożyć liczbę mil przez 1,60934. Na przykład dystans 100 km to około 62,14 mili, a 100 mil to około 160,93 km.</p><p class=\"text-mid\">Konwerter stosuje pełną precyzję współczynnika i wyświetla wyniki z dokładnością do czterech miejsc po przecinku. Warto pamiętać, że mila morska (nautical mile) to inna jednostka — wynosi 1 852 metry i nie jest obsługiwana przez ten konwerter.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Szybkie przybliżenie: podziel kilometry przez 1,6 – dostaniesz przybliżoną wartość w milach.</li><li>Maraton to 42,195 km, czyli 26,2188 mil. Półmaraton to 21,0975 km = 13,1094 mi.</li><li>W Wielkiej Brytanii odległości drogowe podaje się w milach, ale prędkość również – 60 mph to około 96,6 km/h.</li><li>Mila morska (1 852 m) to inna jednostka niż mila lądowa (1 609,344 m) – ten konwerter przelicza mile lądowe.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilometr (km) vs Mila (mi) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilometr (km)"
+        },
+        {
+          "id": "unit2",
+          "name": "Mila (mi)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metryczny (SI)",
+            "unit2": "Imperialny"
+          }
+        },
+        {
+          "name": "Użycie na świecie",
+          "values": {
+            "unit1": "Większość krajów",
+            "unit2": "USA, UK, Mjanma"
+          }
+        },
+        {
+          "name": "Bazowa wartość",
+          "values": {
+            "unit1": "1 000 metrów",
+            "unit2": "1 609,344 metra"
+          }
+        },
+        {
+          "name": "Znaki drogowe",
+          "values": {
+            "unit1": "Europa, Azja, Afryka",
+            "unit2": "USA, UK"
+          }
+        },
+        {
+          "name": "Sport (biegi)",
+          "values": {
+            "unit1": "5K, 10K, maraton",
+            "unit2": "Mile run, 5-miler"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile mil ma 1 kilometr?",
+          "answer": "1 kilometr to dokładnie 0,621371 mili. W przybliżeniu można przyjąć, że 1 km to około 0,62 mili."
+        },
+        {
+          "question": "Ile kilometrów ma 1 mila?",
+          "answer": "1 mila lądowa to dokładnie 1,609344 km. Zaokrąglając: 1 mila ≈ 1,61 km."
+        },
+        {
+          "question": "Ile kilometrów liczy maraton?",
+          "answer": "Oficjalny dystans maratonu to 42,195 km, co odpowiada 26,2188 mili. Półmaraton to 21,0975 km (13,1094 mi)."
+        },
+        {
+          "question": "Czy konwerter uwzględnia mile morskie?",
+          "answer": "Nie. Ten konwerter przelicza mile lądowe (statute miles), które mają 1 609,344 m. Mila morska (nautical mile) to 1 852 m i wymaga innego przelicznika."
+        },
+        {
+          "question": "Czy wyniki są dokładne?",
+          "answer": "Tak. Konwerter używa pełnego współczynnika 0,621371192 zgodnego z międzynarodową definicją mili. Wyniki są precyzyjne do 4 miejsc po przecinku."
+        },
+        {
+          "question": "Jak szybko przeliczyć km na mile w pamięci?",
+          "answer": "Podziel liczbę kilometrów przez 8, a następnie pomnóż przez 5. Na przykład: 80 km ÷ 8 = 10, 10 × 5 = 50 mil. Wynik przybliżony, ale wystarczający do szybkiej orientacji."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "km na mile – Arteon",
+      "defaultSubject": "Feedback: km na mile"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

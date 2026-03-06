@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "PNG till JPG-konverterare – PNG JPG",
-    "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/png-till-jpg-konverterare"
   },
   "hero": {
     "title": "PNG till JPG-konverterare",
-    "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertera PNG till JPG", "PNG till JPG konvertering", "Gratis PNG till JPG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+      "description": "Konvertera PNG-filer till JPG i webbläsaren. Utan begränsning, utan registrering. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["PNG till JPG-konvertering", "JPG-kvalitetskontroll", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — vad valja vid konvertering PNG till JPG?",
-      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan PNG och JPG praktiskt taget omarkbar.</p>"
+      "title": "Kvalitet - vad valja vid konvertering PNG till JPG?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) - bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% - for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% - nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan PNG och JPG praktiskt taget omarkbar.</p>"
     },
     {
       "type": "gap",
@@ -347,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
-      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande — vi svarar inom 24 timmar.",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande - vi svarar inom 24 timmar.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "PNG till JPG-konverterare – Arteon",
       "defaultSubject": "Feedback: PNG till JPG-konverterare"

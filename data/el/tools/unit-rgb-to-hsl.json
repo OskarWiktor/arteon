@@ -1,0 +1,273 @@
+{
+  "toolKey": "rgbToHsl",
+  "locale": "el",
+  "metadata": {
+    "title": "RGB σε HSL – μετατροπέας",
+    "description": "Μετατρέψτε RGB σε HSL και αντίστροφα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-rgb-se-hsl"
+  },
+  "hero": {
+    "title": "RGB σε HSL",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-rgb-se-hsl",
+      "label": "RGB σε HSL"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "RGB σε HSL – μετατροπέας",
+      "alternateName": ["RGB σε HSL"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε RGB σε HSL και αντίστροφα.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: RGB σε HSL?",
+      "html": "<p class=\"text-mid mb-4\">HSL (Hue, Saturation, Lightness) is an alternative way to specify colors that is more intuitive for humans. Hue is the color angle (0–360°), Saturation is the color intensity (0–100%), and Lightness is how light/dark (0–100%).</p><p class=\"text-mid mb-4\">HSL makes it easy to create color variations: adjust lightness for tints/shades, adjust saturation for muted/vivid versions, or shift hue for complementary colors.</p><p class=\"text-mid mb-4\">CSS supports hsl() natively: hsl(14, 100%, 60%) is equivalent to rgb(255, 87, 51) and #FF5733.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB σε HSL – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Διαχείριση χρωμάτων",
+          "description": "Tworzenie wariantów: zmieniaj L (jasność) przy stałym H i S."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web ανάπτυξη",
+          "description": "<code>hsl(217, 91%, 60%)</code> – intuicyjny zapis kolorów."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Tryb ciemny",
+          "description": "Zmiana L z 95% na 10% tworzy wariant ciemnego motywu."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Projektowanie",
+          "description": "HSL ułatwia tworzenie spójnych palet: obróć H o 120° = kolor komplementarny."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">RGB auf 0–1 normalisieren. Max und Min finden. L = (max + min) / 2.</p><p class=\"text-mid\">HSL ist vollständig umkehrbar — zurück zu RGB ergibt exakt dieselbe Farbe.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Red: hsl(0, 100%, 50%). Green: hsl(120, 100%, 50%). Blue: hsl(240, 100%, 50%).</li><li>Complementary color: add 180° to hue. Red (0°) → Cyan (180°).</li><li>Lighten: increase L%. Darken: decrease L%. L=0% = black, L=100% = white.</li><li>Desaturate: decrease S%. S=0% = grayscale. S=100% = pure color.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs HSL – σύγκριση",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "HSL",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Model",
+          "values": {
+            "unit1": "Additive channels",
+            "unit2": "Hue/Saturation/Lightness"
+          }
+        },
+        {
+          "name": "Values",
+          "values": {
+            "unit1": "0–255 per channel",
+            "unit2": "H: 0–360°, S/L: 0–100%"
+          }
+        },
+        {
+          "name": "Intuitive",
+          "values": {
+            "unit1": "Hard to predict colors",
+            "unit2": "Easy to adjust colors"
+          }
+        },
+        {
+          "name": "Color theory",
+          "values": {
+            "unit1": "Not color-wheel based",
+            "unit2": "Maps to color wheel"
+          }
+        },
+        {
+          "name": "CSS support",
+          "values": {
+            "unit1": "rgb(R, G, B)",
+            "unit2": "hsl(H, S%, L%)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Τι είναι HSL?",
+          "answer": "Farbton (Winkel 0–360°), Sättigung (Intensität 0–100 %), Helligkeit (0–100 %). Intuitivere Farbarbeit."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB σε HSL – Arteon",
+      "defaultSubject": "Feedback: rgb-to-hsl"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

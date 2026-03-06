@@ -2,7 +2,7 @@
   "toolKey": "webpToPdf",
   "locale": "sv",
   "metadata": {
-    "title": "WebP till PDF-konverterare — WebP PDF",
+    "title": "WebP till PDF-konverterare - WebP PDF",
     "description": "Konvertera WebP-bilder till PDF-dokument. Kombinera flera filer till en PDF. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/webp-till-pdf-konverterare"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertera",
-          "text": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare."
+          "text": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera WebP till PDF?",
-      "html": "<p class=\"text-mid mb-4\">WebP ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till PDF erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina WebP-filer till PDF-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till PDF erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina WebP-filer till PDF-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "WebP to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertera",
-          "description": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare.",
+          "description": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — vad valja vid konvertering WebP till PDF?",
-      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan WebP och PDF praktiskt taget omarkbar.</p>"
+      "title": "Kvalitet - vad valja vid konvertering WebP till PDF?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) - bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% - for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% - nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan WebP och PDF praktiskt taget omarkbar.</p>"
     },
     {
       "type": "gap",
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">While WebP to PDF conversion creates documents rather than web images, PDF file size affects the user experience when PDFs are shared or downloaded from websites. Large PDFs frustrate users and increase bounce rates.</p><p class=\"text-mid mb-4\">The converter optimizes PDF output to balance quality and size. WebP images are already compressed, so the resulting PDF will be reasonably compact. A typical 10-image PDF from WebP sources will be approximately 5–15 MB.</p><p class=\"text-mid\">If you need to display images on a web page rather than in a PDF, keep them as WebP — it’s already the optimal format for web delivery.</p>"
     },
     {
       "type": "faq",

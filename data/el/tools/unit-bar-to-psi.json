@@ -1,0 +1,285 @@
+{
+  "toolKey": "barToPsi",
+  "locale": "el",
+  "metadata": {
+    "title": "Bar σε PSI – μετατροπέας",
+    "description": "Μετατρέψτε bar σε PSI και αντίστροφα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-bar-se-psi"
+  },
+  "hero": {
+    "title": "Bar σε PSI",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-bar-se-psi",
+      "label": "bar σε PSI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bar σε PSI – μετατροπέας",
+      "alternateName": ["Bar σε PSI"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε bar σε PSI και αντίστροφα.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: Bar σε PSI?",
+      "html": "<p class=\"text-mid mb-4\">Bar ist eine metrische Druckeinheit gleich 100.000 Pascal (100 kPa). PSI (Pfund pro Quadratzoll) είναι η τυπική μονάδα-Druckeinheit im imperialen System, hauptsächlich in den USA und UK verwendet.</p><p class=\"text-mid mb-4\">Der μετατροπήsfaktor ist: 1 Bar = 14,5038 PSI. Dies ist wichtig für Reifendruck (europäische Autos geben Bar an, US-Autos PSI), HLK-Systeme, Industrieausrüstung und Tauchen.</p><p class=\"text-mid mb-4\">Reifendruck-Beispiele: 2,2 Bar = 31,9 PSI, 2,5 Bar = 36,3 PSI, 3,0 Bar = 43,5 PSI. Die meisten PKW empfehlen 2,0–2,5 Bar (29–36 PSI).</p><p class=\"text-mid\">Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας — τίποτα δεν στέλνεται σε server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Bar σε PSI – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Ταξίδια στο εξωτερικό",
+          "description": "Europejskie: 2,0–2,5 bar. Amerykańskie: 29–36 PSI."
+        },
+        {
+          "icon": "RiAnchorLine",
+          "title": "Nurkowanie",
+          "description": "Butla nurkowa: 200 bar = 2 900 PSI."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Τεχνικές εφαρμογές",
+          "description": "Sprężarki i narzędzia pneumatyczne: 6–10 bar = 87–145 PSI."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Opony rowerowe",
+          "description": "Rower szosowy: 6–8 bar = 87–116 PSI. Górski: 2–3 bar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">Die μετατροπή basiert auf: 1 Bar = 100.000 Pa und 1 PSI = 6.894,757 Pa. Daher: 1 Bar = 100.000 / 6.894,757 ≈ 14,5038 PSI.</p><p class=\"text-mid mb-4\">Um Bar in PSI umzurechnen, πολλαπλασιάστε με 14,5038. Um PSI in Bar umzurechnen, teilen Sie durch 14,5038.</p><p class=\"text-mid\">Der μετατροπήsfaktor ist konstant und exakt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Standard atmospheric pressure: 1.01325 bar = 14.696 PSI.</li><li>Car tire pressure typically ranges from 2.0–2.5 bar (29–36 PSI).</li><li>Bicycle tires: road bikes 6–8 bar (87–116 PSI), mountain bikes 2–3 bar (29–44 PSI).</li><li>Scuba tanks: 200–300 bar (2,900–4,350 PSI) when full.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Bar vs PSI – σύγκριση",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Bar"
+        },
+        {
+          "id": "unit2",
+          "name": "PSI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Σύστημα",
+          "values": {
+            "unit1": "Metric",
+            "unit2": "Αυτοκρατορικό"
+          }
+        },
+        {
+          "name": "Βασική τιμή",
+          "values": {
+            "unit1": "100,000 Pa",
+            "unit2": "6,894.76 Pa"
+          }
+        },
+        {
+          "name": "Tire pressure",
+          "values": {
+            "unit1": "Europe (bar)",
+            "unit2": "USA/UK (PSI)"
+          }
+        },
+        {
+          "name": "Industry",
+          "values": {
+            "unit1": "International standard",
+            "unit2": "US standard"
+          }
+        },
+        {
+          "name": "Atmosphere",
+          "values": {
+            "unit1": "1.013 bar",
+            "unit2": "14.696 PSI"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Πόσα PSI ist 1 Bar?",
+          "answer": "Genau 14,5038 PSI."
+        },
+        {
+          "question": "Πόσα Bar sind 30 PSI?",
+          "answer": "30 PSI = 2,068 Bar. Ein gängiger Reifendruck für PKW."
+        },
+        {
+          "question": "Τι είναι normaler Reifendruck?",
+          "answer": "Die meisten PKW empfehlen 2,0–2,5 Bar (29–36 PSI). Prüfen Sie den Aufkleber an der Fahrertür."
+        },
+        {
+          "question": "Ist 1 Bar gleich 1 Atmosphäre?",
+          "answer": "Nahe, aber nicht genau. 1 Atmosphäre = 1,01325 Bar = 14,696 PSI."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ναι. Όλοι οι υπολογισμοί γίνονται στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "bar σε PSI – Arteon",
+      "defaultSubject": "Feedback: bar-to-psi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -198,7 +198,7 @@
         {
           "icon": "RiBrushLine",
           "title": "Farben erscheinen zu ähnlich",
-          "description": "Bei Bildern mit feinen Farbverläufen (z. B. Himmel) liegen die extrahierten Farben oft nah beieinander — das entspricht der tatsächlichen Farbverteilung."
+          "description": "Bei Bildern mit feinen Farbverläufen (z. B. Himmel) liegen die extrahierten Farben oft nah beieinander - das entspricht der tatsächlichen Farbverteilung."
         }
       ]
     },
@@ -256,7 +256,7 @@
         {
           "icon": "RiInfinityLine",
           "title": "Keine Limits",
-          "description": "Beliebig viele Bilder analysieren — ohne Registrierung und ohne Limits."
+          "description": "Beliebig viele Bilder analysieren - ohne Registrierung und ohne Limits."
         }
       ]
     },
@@ -267,7 +267,7 @@
     {
       "type": "sectionInfo",
       "title": "Farben aus deutschen Landschaften und Architektur extrahieren",
-      "html": "<p class=\"text-mid mb-4\">Deutsche Landschaften liefern vielfältige Farbpaletten, die sich direkt aus Fotos extrahieren lassen. Der Schwarzwald bietet tiefes Tannengrün, moosige Brauntöne und nebeliges Grau. Die Nordseeküste bringt Stahlblau, Sandbeige, Dünengrün und Schlickbraun — eine gedämpfte Palette, die Ruhe und Weite vermittelt. Die Weinberge an Mosel und Rhein liefern im Herbst warmes Gold, Rostrot und sattes Grün auf kalksteinfarbenem Grund.</p><p class=\"text-mid mb-4\">Die Architektur deutscher Städte ist ein reiches Quellmaterial für Farbextraktion. Münchens Altstadt zeigt warme Ockertöne, Terrakottadächer und cremefarbene Putzfassaden. Hamburgs Speicherstadt liefert das charakteristische Backsteinrot neben dem dunklen Grün der Fleete und dem Stahlgrau der Brücken. Berliner Gründerzeitviertel verbinden sandsteinfarbene Fassaden mit dunkelgrünen Fenstern und grauen Zinkdächern.</p><p class=\"text-mid\">Laden Sie ein Foto einer deutschen Stadtansicht oder Landschaft in den Extraktor hoch und nutzen Sie die gewonnenen HEX-Codes als Ausgangspunkt für Projekte im Bereich Tourismus, Gastronomie oder regionales Branding. Ein Foto des Heidelberger Schlosses ergibt eine warme Palette aus Sandstein-Beige, Efeugrün und dem hellen Blau des Neckars.</p>"
+      "html": "<p class=\"text-mid mb-4\">Deutsche Landschaften liefern vielfältige Farbpaletten, die sich direkt aus Fotos extrahieren lassen. Der Schwarzwald bietet tiefes Tannengrün, moosige Brauntöne und nebeliges Grau. Die Nordseeküste bringt Stahlblau, Sandbeige, Dünengrün und Schlickbraun - eine gedämpfte Palette, die Ruhe und Weite vermittelt. Die Weinberge an Mosel und Rhein liefern im Herbst warmes Gold, Rostrot und sattes Grün auf kalksteinfarbenem Grund.</p><p class=\"text-mid mb-4\">Die Architektur deutscher Städte ist ein reiches Quellmaterial für Farbextraktion. Münchens Altstadt zeigt warme Ockertöne, Terrakottadächer und cremefarbene Putzfassaden. Hamburgs Speicherstadt liefert das charakteristische Backsteinrot neben dem dunklen Grün der Fleete und dem Stahlgrau der Brücken. Berliner Gründerzeitviertel verbinden sandsteinfarbene Fassaden mit dunkelgrünen Fenstern und grauen Zinkdächern.</p><p class=\"text-mid\">Laden Sie ein Foto einer deutschen Stadtansicht oder Landschaft in den Extraktor hoch und nutzen Sie die gewonnenen HEX-Codes als Ausgangspunkt für Projekte im Bereich Tourismus, Gastronomie oder regionales Branding. Ein Foto des Heidelberger Schlosses ergibt eine warme Palette aus Sandstein-Beige, Efeugrün und dem hellen Blau des Neckars.</p>"
     },
     {
       "type": "gap",
@@ -276,7 +276,7 @@
     {
       "type": "sectionInfo",
       "title": "Farbextraktion für deutschen E-Commerce und Produktfotografie",
-      "html": "<p class=\"text-mid mb-4\">Konsistente Farben in einem Onlineshop schaffen Vertrauen und Professionalität. Der Farbextraktor analysiert ein Produktfoto und liefert die dominanten Farbtöne als HEX- und RGB-Codes. Diese Werte lassen sich direkt für Hintergründe, Banner und Social-Media-Grafiken verwenden — so entsteht ein einheitlicher visueller Auftritt über alle Kanäle.</p><p class=\"text-mid mb-4\">Deutsche Lebensmittel- und Getränkemarken haben ausgeprägte Farbidentitäten. Biermarken nutzen Gold, Bernstein und dunkles Braun. Schwarzwälder Schinken wird in Verbindung mit tiefem Rot und warmem Holzbraun vermarktet. Bio-Produkte setzen auf gedämpftes Grün, Naturbraun und Cremefarben. Laden Sie ein Foto der Produktverpackung hoch und extrahieren Sie die Farbcodes — sie bilden die Grundlage für ein konsistentes Shop-Design.</p><p class=\"text-mid\">Produktfotos auf weißem Hintergrund liefern die genauesten Ergebnisse, weil der Extraktor nur die Farben des Produkts selbst erfasst. Bei Lifestyle-Fotos mit Dekoration und Hintergrund werden auch diese Farben analysiert. Schneiden Sie das Bild vor dem Hochladen auf den relevanten Bereich zu oder verwenden Sie eine PNG-Datei mit transparentem Hintergrund.</p>"
+      "html": "<p class=\"text-mid mb-4\">Konsistente Farben in einem Onlineshop schaffen Vertrauen und Professionalität. Der Farbextraktor analysiert ein Produktfoto und liefert die dominanten Farbtöne als HEX- und RGB-Codes. Diese Werte lassen sich direkt für Hintergründe, Banner und Social-Media-Grafiken verwenden - so entsteht ein einheitlicher visueller Auftritt über alle Kanäle.</p><p class=\"text-mid mb-4\">Deutsche Lebensmittel- und Getränkemarken haben ausgeprägte Farbidentitäten. Biermarken nutzen Gold, Bernstein und dunkles Braun. Schwarzwälder Schinken wird in Verbindung mit tiefem Rot und warmem Holzbraun vermarktet. Bio-Produkte setzen auf gedämpftes Grün, Naturbraun und Cremefarben. Laden Sie ein Foto der Produktverpackung hoch und extrahieren Sie die Farbcodes - sie bilden die Grundlage für ein konsistentes Shop-Design.</p><p class=\"text-mid\">Produktfotos auf weißem Hintergrund liefern die genauesten Ergebnisse, weil der Extraktor nur die Farben des Produkts selbst erfasst. Bei Lifestyle-Fotos mit Dekoration und Hintergrund werden auch diese Farben analysiert. Schneiden Sie das Bild vor dem Hochladen auf den relevanten Bereich zu oder verwenden Sie eine PNG-Datei mit transparentem Hintergrund.</p>"
     },
     {
       "type": "gap",
@@ -284,7 +284,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Farbpaletten aus Innenräumen extrahieren — Trends im deutschen Design",
+      "title": "Farbpaletten aus Innenräumen extrahieren - Trends im deutschen Design",
       "html": "<p class=\"text-mid mb-4\">Innenarchitekten und Raumgestalter nutzen Referenzfotos als ersten Schritt der Farbplanung. Der Extraktor wandelt ein Foto eines Raumes in konkrete HEX-Codes um, die sich sofort in Präsentationen, Websites oder Moodboards einsetzen lassen. Ein Foto eines Berliner Altbau-Wohnzimmers ergibt typischerweise: warmes Parkettbraun, Stuck-Weiß, Pflanzengrün und einen farbigen Akzent von Kissen oder Kunst.</p><p class=\"text-mid mb-4\">Im deutschen Innendesign lassen sich zwei Hauptströmungen erkennen. Der skandinavisch beeinflusste Minimalismus arbeitet mit Weiß, hellem Holz, Betongrau und einzelnen Akzenten in Senfgelb oder Salbeigrün. Die industrielle Ästhetik setzt auf Sichtbeton, Metallgrau, Schwarzstahl und warme Holztöne als Kontrast. Beide Richtungen ergeben Paletten mit niedrigem Sättigungswert, die der Extraktor präzise aus einem einzigen Raumfoto erfasst.</p><p class=\"text-mid\">Hotels, Restaurants und Büros profitieren besonders von dieser Methode. Die Website eines Hotels sollte farblich zum tatsächlichen Erscheinungsbild der Räume passen. Laden Sie ein Foto der Lobby oder eines Zimmers hoch, extrahieren Sie 6–8 dominante Farben und nutzen Sie diese als Farbsystem der gesamten Internetpräsenz.</p>"
     },
     {

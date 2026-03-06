@@ -3,13 +3,13 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor HEIC a JPG – HEIC JPG",
-    "description": "Convierte fotos HEIC de iPhone a JPG universal. Sin registro, sin subir al servidor. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
+    "description": "Convierte fotos HEIC de iPhone a JPG universal. Sin registro, sin subir al servidor. Herramienta gratuita en el navegador - sin registro, sin límites, privacidad total.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-heic-a-jpg"
   },
   "hero": {
     "title": "Convertidor HEIC a JPG",
-    "description": "Convierte fotos HEIC de iPhone a JPG universal. Sin registro, sin subir al servidor. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
+    "description": "Convierte fotos HEIC de iPhone a JPG universal. Sin registro, sin subir al servidor. Herramienta gratuita en el navegador - sin registro, sin límites, privacidad total.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertidor HEIC a JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte fotos HEIC de iPhone a JPG universal. Sin registro, sin subir al servidor. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
+      "description": "Convierte fotos HEIC de iPhone a JPG universal. Sin registro, sin subir al servidor. Herramienta gratuita en el navegador - sin registro, sin límites, privacidad total.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir HEIC a JPG", "Conversión de HEIC a JPG", "Convertidor HEIC a JPG gratis"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ajustes de calidad — que elegir al convertir HEIC a JPG?",
-      "html": "<p class=\"text-mid\">El control permite valores entre 60% y 95%. Valores mas altos = mejor calidad pero archivos mas grandes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predeterminado) — buen equilibrio para sitios web, blogs, articulos.</strong></li><li><strong>85–90% — para fotografia de productos, portfolios y galerias.</strong></li><li><strong>60–70% — cuando minimizar tamano es la prioridad.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la diferencia visual entre HEIC original y JPG resultante es imperceptible.</p>"
+      "title": "Ajustes de calidad - que elegir al convertir HEIC a JPG?",
+      "html": "<p class=\"text-mid\">El control permite valores entre 60% y 95%. Valores mas altos = mejor calidad pero archivos mas grandes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predeterminado) - buen equilibrio para sitios web, blogs, articulos.</strong></li><li><strong>85–90% - para fotografia de productos, portfolios y galerias.</strong></li><li><strong>60–70% - cuando minimizar tamano es la prioridad.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la diferencia visual entre HEIC original y JPG resultante es imperceptible.</p>"
     },
     {
       "type": "gap",

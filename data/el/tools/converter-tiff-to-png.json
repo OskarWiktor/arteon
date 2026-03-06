@@ -3,13 +3,13 @@
   "locale": "el",
   "metadata": {
     "title": "Μετατροπέας TIFF σε PNG – TIFF PNG",
-    "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
+    "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης - χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-tiff-se-png"
   },
   "hero": {
     "title": "Μετατροπέας TIFF σε PNG",
-    "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
+    "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης - χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Μετατροπέας TIFF σε PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης — χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
+      "description": "Μετατρεψτε αρχεια TIFF σε PNG χωρις απωλειες. Διατηρηση ποιοτητας σαρωσεων. Δωρεάν εργαλείο στο πρόγραμμα περιήγησης - χωρίς εγγραφή, χωρίς όρια αρχείων, πλήρης ιδιωτικότητα.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Μετατροπή TIFF σε PNG", "Μετατροπέας TIFF σε PNG", "Δωρεάν μετατροπέας TIFF σε PNG"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poso exoikonomeis metatrepontas TIFF se PNG;",
-      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+      "title": "Πόσο εξοικονομείτε μετατρέποντας TIFF σε PNG;",
+      "html": "<p class=\"text-mid mb-4\">Η εξοικονόμηση εξαρτάται από τον τύπο αρχείου και τη συμπίεση:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Φωτογραφία κάμερας</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Εικόνα προϊόντος</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Στιγμιότυπο / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Η πραγματική εξοικονόμηση ποικίλλει ανάλογα με το περιεχόμενο.</p>"
     },
     {
       "type": "gap",
@@ -253,8 +253,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Pos i metatropi eikonas epireazei tachitita kai SEO",
-      "html": "<p class=\"text-mid mb-4\">Ta Core Web Vitals einai metrikes Google. To LCP metrai ton chrono eos to megalitero orato stoicheio.</p><p class=\"text-mid mb-4\">I metatropi TIFF se PNG meionei to megethos, syntomevei ti fortosi kai veltionei to LCP. Mikrotera archeia = griorteri fortosi se kinita. <code>loading=\"lazy\"</code> kai <code>fetchpriority=\"high\"</code> epitachynoun to rendering.</p><p class=\"text-mid\">To <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> kai to Lighthouse vriskoyn archeia pros veltiosi.</p>"
+      "title": "Πώς η μετατροπή εικόνας επηρεάζει ταχύτητα και SEO",
+      "html": "<p class=\"text-mid mb-4\">Τα Core Web Vitals είναι μετρικές Google. Το LCP μετρά τον χρόνο έως το μεγαλύτερο ορατό στοιχείο.</p><p class=\"text-mid mb-4\">Η μετατροπή TIFF σε PNG μειώνει το μέγεθος, συντομεύει τη φόρτωση και βελτιώνει το LCP. Μικρότερα αρχεία = γρηγορότερη φόρτωση σε κινητά. <code>loading=\"lazy\"</code> kai <code>fetchpriority=\"high\"</code> επιταχύνουν το rendering.</p><p class=\"text-mid\">Το <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> και το Lighthouse βρίσκουν αρχεία προς βελτίωση.</p>"
     },
     {
       "type": "gap",
@@ -262,35 +262,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Symvoules gia metatropi TIFF se PNG",
-      "description": "Symvoules gia apofygi provlimaton:",
+      "title": "Συμβουλές για μετατροπή TIFF σε PNG",
+      "description": "Συμβουλές για αποφυγή προβλημάτων:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Poly megala archeia",
-          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+          "title": "Πολύ μεγάλα αρχεία",
+          "description": "Εικόνες πάνω από 4000×4000 px μπορεί να είναι πιο αργές. Χωρίστε σε ομάδες των 10–20."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Idi sympiesmena",
-          "description": "An to TIFF itan idi sympiesmeno, i metatropi se PNG mporei na min exoikonomisi polla."
+          "title": "Ήδη συμπιεσμένα",
+          "description": "Αν το TIFF ήταν ήδη συμπιεσμένο, η μετατροπή σε PNG μπορεί να μην εξοικονομήσει πολλά."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Diafaneia",
+          "title": "Διαφάνεια",
           "description": "To PNG ypostirizei alfa kanali. Oi diafaneis perioches tou TIFF diatirountai."
         },
         {
           "icon": "RiStackLine",
-          "title": "Kratiste ta prototypa",
-          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton TIFF archeion."
+          "title": "Κρατήστε τα πρωτότυπα",
+          "description": "Η μετατροπή με απώλειες δεν αναιρείται. Κρατήστε αντίγραφα των TIFF αρχείων."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting TIFF images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",
@@ -318,16 +327,16 @@
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο φυλλομετρητή."
         },
         {
-          "question": "Einai asfalis i metatropi TIFF se PNG;",
-          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+          "question": "Είναι ασφαλής η μετατροπή TIFF σε PNG;",
+          "answer": "Ναι. Όλη η επεξεργασία γίνεται τοπικά στον περιηγητή σας μέσω Canvas API. Τίποτα δεν αποστέλλεται σε διακομιστή."
         },
         {
-          "question": "Mporo na metatrepso polla archeia TIFF;",
-          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+          "question": "Μπορώ να μετατρέψω πολλά αρχεία TIFF;",
+          "answer": "Ναι. Ομαδική μετατροπή χωρίς όριο. Σύρετε τα αρχεία στον μετατροπέα."
         },
         {
-          "question": "Ypostirizoun oloi oi browsers to PNG;",
-          "answer": "To PNG ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
+          "question": "Υποστηρίζουν όλοι οι browsers το PNG;",
+          "answer": "Το PNG υποστηρίζεται από Chrome, Firefox, Safari, Edge και Opera."
         }
       ]
     },

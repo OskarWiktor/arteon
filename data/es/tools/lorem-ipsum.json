@@ -1,0 +1,521 @@
+{
+  "toolKey": "loremIpsum",
+  "locale": "es",
+  "metadata": {
+    "title": "Generador Lorem Ipsum — texto de ejemplo, párrafos, oraciones y palabras aleatorias",
+    "description": "Generador Lorem Ipsum gratuito — 8 estilos: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business y más. 9 modos de generación. Copie como texto o HTML.",
+    "ogImage": "/assets/tools/lorem-ipsum-generator/generador-lorem-ipsum-es.webp",
+    "path": "/herramientas/generador-lorem-ipsum"
+  },
+  "hero": {
+    "title": "Generador Lorem Ipsum — texto de ejemplo, párrafos, oraciones y palabras aleatorias",
+    "description": "8 estilos de texto: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal y relleno en español. 9 modos: párrafos, oraciones, palabras, listas, encabezados, enlaces, tablas, citas, definiciones.",
+    "backgroundImage": "/assets/tools/lorem-ipsum-generator/generador-lorem-ipsum-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/herramientas/generador-lorem-ipsum",
+      "label": "Generador Lorem Ipsum"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generador Lorem Ipsum — texto de ejemplo, párrafos, oraciones y palabras aleatorias",
+      "alternateName": [
+        "Lorem Ipsum Generator",
+        "Bacon Ipsum generator",
+        "Cupcake Ipsum generator",
+        "Pirate Ipsum generator",
+        "Legal Ipsum generator",
+        "Hipster Ipsum generator",
+        "Business Ipsum generator",
+        "Dummy text generator online"
+      ],
+      "applicationSubCategory": "TextApplication",
+      "description": "Generador Lorem Ipsum gratuito — 8 estilos: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business y más. 9 modos de generación. Copie como texto o HTML.",
+      "featureList": [
+        "Generar párrafos de Lorem Ipsum",
+        "Generar oraciones individuales",
+        "Generar palabras aleatorias",
+        "Generar listas numeradas y con viñetas",
+        "Generar encabezados H1–H6",
+        "Generar enlaces con URLs de ejemplo",
+        "Generar tablas con datos aleatorios",
+        "Generar citas",
+        "Generar listas de definiciones",
+        "Lorem Ipsum — latín de De Finibus",
+        "Hipster Ipsum — vocabulario hipster",
+        "Business Ipsum — jerga corporativa",
+        "Relleno en español — palabras en idioma local",
+        "Bacon Ipsum — carne y parrilla",
+        "Cupcake Ipsum — repostería y dulces",
+        "Pirate Ipsum — vocabulario pirata",
+        "Legal Ipsum — terminología jurídica",
+        "Formato de salida: texto plano o HTML",
+        "Control de longitud del párrafo (corto, medio, largo)",
+        "Estadísticas: palabras, caracteres, oraciones, párrafos, tiempo de lectura",
+        "Copiar texto al portapapeles",
+        "Copiar código HTML al portapapeles",
+        "Descargar como archivo .txt",
+        "Procesamiento local en el navegador"
+      ]
+    },
+    "howTo": {
+      "name": "Cómo usar el Generador Lorem Ipsum",
+      "description": "Genere texto de relleno Lorem Ipsum en segundos. Elija modo, estilo y formato, luego copie o descargue el resultado.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Elegir un modo de generación",
+          "text": "Seleccione uno de 9 modos: párrafos, oraciones, palabras, listas, encabezados, enlaces, tabla, citas o definiciones. Establezca la cantidad."
+        },
+        {
+          "name": "Elegir un estilo de texto",
+          "text": "Elija uno de 8 estilos: Lorem Ipsum, Hipster, Business, Relleno en español, Bacon, Cupcake, Pirate o Legal Ipsum."
+        },
+        {
+          "name": "Configurar el formato de salida",
+          "text": "Elija texto plano o HTML con etiquetas. Ajuste la longitud del párrafo según sea necesario."
+        },
+        {
+          "name": "Copiar o descargar el resultado",
+          "text": "Haga clic en Generar, luego copie el texto, el código HTML o descargue un archivo .txt."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Qué es Lorem Ipsum y para qué sirve",
+      "html": "<p class=\"text-mid\">Lorem Ipsum es el texto de relleno estándar utilizado en las industrias de impresión, diseño gráfico y desarrollo web desde hace más de 500 años. El texto proviene de <em>De Finibus Bonorum et Malorum</em> (Sobre los límites del bien y del mal) escrito por Marco Tulio Cicerón en el 45 a. C. El pasaje original fue deliberadamente alterado — se añadieron, eliminaron y reordenaron palabras — de modo que el texto no tiene significado pero conserva un ritmo natural y una distribución de letras similar al idioma real.</p><p class=\"text-mid mt-3\">El Generador Lorem Ipsum le permite crear rápidamente cualquier cantidad de texto de relleno para maquetas, prototipos de interfaz, diseños gráficos y pruebas de composición tipográfica. La herramienta ofrece 9 modos de generación (párrafos, oraciones, palabras, listas, encabezados, enlaces, tablas, citas, definiciones), 8 estilos de texto y estadísticas en tiempo real.</p>",
+      "imageSrc": "/assets/tools/lorem-ipsum-generator/generador-lorem-ipsum-es.webp",
+      "imageAlt": "Generador Lorem Ipsum — Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cómo usar el Generador Lorem Ipsum",
+      "description": "Genere texto de relleno en cuatro pasos:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Elija un modo",
+          "description": "Seleccione uno de 9 modos: párrafos, oraciones, palabras, listas, encabezados, enlaces, tabla, citas o definiciones."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "2. Elija un estilo",
+          "description": "8 estilos: Lorem Ipsum, Hipster, Business, Relleno en español, Bacon, Cupcake, Pirate y Legal — cada uno con su propio banco de palabras."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Ajuste las opciones",
+          "description": "Configure la longitud del párrafo (corto, medio, largo) y el formato de salida (texto plano o HTML con etiquetas)."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Copie el resultado",
+          "description": "Haga clic en Generar, luego copie el texto, el HTML o descargue un archivo .txt. Las estadísticas muestran el conteo de palabras y caracteres."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "La historia de Lorem Ipsum — de Cicerón al diseño moderno",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum tiene más de 2.000 años de historia. El pasaje original proviene de la sección 1.10.32 de <em>De Finibus Bonorum et Malorum</em> de Cicerón, escrito en el 45 a. C. La obra es un tratado filosófico sobre ética — Cicerón analizó el hedonismo y el estoicismo, argumentando a favor de un enfoque equilibrado del placer y el dolor.</p><p class=\"text-mid mb-4\">El uso de este texto como relleno en la imprenta se remonta al siglo XVI, cuando un impresor desconocido utilizó el pasaje de Cicerón para crear un muestrario tipográfico. El texto sobrevivió cinco siglos, pasando por las épocas de la composición manual, el Linotype y la fotocomposición.</p><p class=\"text-mid mb-4\">La popularidad moderna de Lorem Ipsum comenzó en la década de 1960, cuando Letraset incluyó el texto en hojas de letras transferibles utilizadas en estudios de diseño. El avance definitivo llegó en 1985, cuando Aldus Corporation incorporó Lorem Ipsum como texto de relleno predeterminado en PageMaker — uno de los primeros programas de autoedición (DTP). A partir de ese momento, Lorem Ipsum se convirtió en el estándar de la industria.</p><p class=\"text-mid\">Richard McClintock, profesor de latín en el Hampden-Sydney College de Virginia, identificó la fuente del texto en la década de 1980, descubriendo que las palabras lorem ipsum son un fragmento corrupto del latín de la obra de Cicerón. Su investigación confirmó que Lorem Ipsum no es una colección aleatoria de palabras, sino que tiene raíces literarias genuinas.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "9 modos de generación de contenido",
+      "description": "El generador ofrece 9 tipos de contenido diferentes — desde párrafos clásicos hasta tablas y definiciones:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiParagraph",
+          "title": "Párrafos",
+          "description": "Bloques de texto clásicos con longitud controlada (corto, medio, largo). Ideal para maquetas web, plantillas CMS y prototipos de interfaz."
+        },
+        {
+          "icon": "RiTextSnippet",
+          "title": "Oraciones",
+          "description": "Oraciones individuales de longitud aleatoria (5–15 palabras). Útiles para probar campos de formulario, descripciones de productos y bloques de texto cortos."
+        },
+        {
+          "icon": "RiFontSize",
+          "title": "Palabras",
+          "description": "Palabras individuales aleatorias del banco seleccionado. Ideal para etiquetas, categorías y pruebas de longitud de texto en componentes de interfaz."
+        },
+        {
+          "icon": "RiListUnordered",
+          "title": "Listas",
+          "description": "Listas numeradas (texto) o &lt;ul&gt;&lt;li&gt; (HTML). Para menús de navegación, listas de características, especificaciones de productos y preguntas frecuentes."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Encabezados",
+          "description": "Encabezados H1–H6 aleatorios en formato Markdown o HTML. Para probar la jerarquía tipográfica y la estructura del contenido."
+        },
+        {
+          "icon": "RiLink",
+          "title": "Enlaces",
+          "description": "Enlaces con texto aleatorio y URLs de ejemplo. En formato Markdown o &lt;a href&gt; HTML. Para prototipar navegación y menús."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla",
+          "description": "Tabla con encabezados y datos aleatorios en 3–5 columnas. Formato Markdown o &lt;table&gt; HTML. Para maquetas de precios y fichas técnicas."
+        },
+        {
+          "icon": "RiDoubleQuotesL",
+          "title": "Citas",
+          "description": "Bloques de cita (blockquote) con 1–3 oraciones. Para probar estilos de cita, testimonios y secciones de texto destacado."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Definiciones",
+          "description": "Pares de término + descripción en &lt;dl&gt;&lt;dt&gt;&lt;dd&gt; HTML o texto. Para glosarios, secciones de preguntas frecuentes y documentación."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cuándo usar Lorem Ipsum y cuándo usar texto real",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum funciona bien en cualquier lugar donde el contenido aún no esté listo pero el diseño necesite ser presentado o probado:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Prototipos de interfaz y wireframes</strong> — diseñar la estructura de la página sin esperar el texto final del cliente.</li><li><strong>Maquetas gráficas</strong> — presentar un diseño con texto de apariencia realista en lugar de rectángulos vacíos.</li><li><strong>Pruebas de tipografía y fuentes</strong> — evaluar legibilidad, interlineado, kerning y jerarquía de encabezados en un bloque de texto real.</li><li><strong>Plantillas CMS y temas</strong> — demostrar la apariencia de una plantilla de WordPress, Shopify u otro CMS con contenido de ejemplo.</li><li><strong>Materiales impresos</strong> — folletos, catálogos, tarjetas de visita en la fase de diseño.</li></ul><p class=\"text-mid mb-4\"><strong>Cuándo NO usar Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Sitios web en producción</strong> — Google indexa el texto de relleno y puede considerar la página de baja calidad.</li><li><strong>Contenido SEO final</strong> — los meta títulos, descripciones y encabezados H1 deben contener palabras clave reales.</li><li><strong>Email marketing</strong> — enviar mensajes con Lorem Ipsum es poco profesional y puede acabar en spam.</li><li><strong>Pruebas de usabilidad con usuarios</strong> — los usuarios se centran en el contenido. El texto de relleno distorsiona los resultados UX.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Para quién es el Generador Lorem Ipsum?",
+      "description": "La herramienta es útil para cualquiera que trabaje con maquetación de texto:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Diseñadores y diseñadores UI",
+          "description": "Rellenar rápidamente maquetas y prototipos con texto de apariencia realista. Probar jerarquía tipográfica y diseños de columnas."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Desarrolladores frontend",
+          "description": "Generar texto de relleno para probar componentes, responsividad del diseño y comportamiento CSS con diferentes longitudes de contenido."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Redactores",
+          "description": "Prototipar la estructura del texto: cuántos párrafos, longitud de oraciones, cómo se ven listas y encabezados en el diseño final."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Impresores y editores",
+          "description": "Rellenar plantillas de folletos, catálogos y trípticos con texto de ejemplo para la aprobación del cliente."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Propietarios de sitios web",
+          "description": "Probar la apariencia de una nueva plantilla CMS o tema con contenido de ejemplo. Evaluar cuánto texto se necesita por página."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Estudiantes de diseño",
+          "description": "Aprender maquetación gráfica, tipografía y composición con texto de relleno profesional en lugar de caracteres aleatorios."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Comparación de estilos de texto",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "classic",
+          "name": "Lorem Ipsum",
+          "highlighted": true
+        },
+        {
+          "id": "hipster",
+          "name": "Hipster"
+        },
+        {
+          "id": "business",
+          "name": "Business"
+        },
+        {
+          "id": "polish",
+          "name": "Local"
+        },
+        {
+          "id": "bacon",
+          "name": "Bacon"
+        },
+        {
+          "id": "cupcake",
+          "name": "Cupcake"
+        },
+        {
+          "id": "pirate",
+          "name": "Pirate"
+        },
+        {
+          "id": "legal",
+          "name": "Legal"
+        }
+      ],
+      "features": [
+        {
+          "name": "Idioma",
+          "values": {
+            "classic": "Latín",
+            "hipster": "Inglés",
+            "business": "Inglés",
+            "polish": "Local",
+            "bacon": "Inglés",
+            "cupcake": "Inglés",
+            "pirate": "Inglés",
+            "legal": "Inglés"
+          }
+        },
+        {
+          "name": "Tema",
+          "values": {
+            "classic": "Filosofía",
+            "hipster": "Estilo de vida",
+            "business": "Corporativo",
+            "polish": "General",
+            "bacon": "Gastronomía",
+            "cupcake": "Repostería",
+            "pirate": "Aventura",
+            "legal": "Derecho"
+          }
+        },
+        {
+          "name": "Neutralidad visual",
+          "values": {
+            "classic": true,
+            "hipster": false,
+            "business": false,
+            "polish": false,
+            "bacon": false,
+            "cupcake": false,
+            "pirate": false,
+            "legal": false
+          }
+        },
+        {
+          "name": "Ritmo natural",
+          "values": {
+            "classic": true,
+            "hipster": true,
+            "business": true,
+            "polish": true,
+            "bacon": true,
+            "cupcake": true,
+            "pirate": true,
+            "legal": true
+          }
+        },
+        {
+          "name": "Estándar de la industria",
+          "values": {
+            "classic": true,
+            "hipster": false,
+            "business": false,
+            "polish": false,
+            "bacon": false,
+            "cupcake": false,
+            "pirate": false,
+            "legal": false
+          }
+        },
+        {
+          "name": "Humor / carácter",
+          "values": {
+            "classic": "Neutral",
+            "hipster": "Medio",
+            "business": "Bajo",
+            "polish": "Bajo",
+            "bacon": "Alto",
+            "cupcake": "Alto",
+            "pirate": "Alto",
+            "legal": "Bajo"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "8 estilos de texto de relleno — todos disponibles en el generador",
+      "html": "<p class=\"text-mid mb-4\">Nuestro generador ofrece 8 estilos únicos de texto de relleno — desde el latín clásico hasta la jerga jurídica. Cada estilo tiene su propio banco de más de 90 palabras y genera texto con ritmo natural:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — el texto de relleno clásico en latín de la obra de Cicerón. Estándar de la industria durante más de 500 años.</li><li><strong>Hipster Ipsum</strong> — vocabulario de la cultura hipster: artesanal, aguacate, vintage, mindfulness. Ideal para proyectos de estilo de vida.</li><li><strong>Business Ipsum</strong> — jerga corporativa: sinergia, leverage, stakeholder, KPI. Para maquetas de presentaciones y sitios web corporativos.</li><li><strong>Relleno en español</strong> — palabras aleatorias en el idioma local de diversos campos. Muestra al cliente cómo se verá el texto en el diseño.</li><li><strong>Bacon Ipsum</strong> — vocabulario de carne y parrilla: steak, brisket, barbacoa. Popular entre desarrolladores.</li><li><strong>Cupcake Ipsum</strong> — vocabulario de repostería: muffin, chocolate, caramelo, glaseado. Para proyectos de la industria alimentaria.</li><li><strong>Pirate Ipsum</strong> — texto pirata: ahoy, tesoro, galeón, ron. Para proyectos de entretenimiento y videojuegos.</li><li><strong>Legal Ipsum</strong> — terminología jurídica: jurisdicción, demandante, estatuto, responsabilidad. Para maquetas de sitios de bufetes.</li></ul><p class=\"text-mid mb-4\">Las variantes divertidas (Bacon, Cupcake, Pirate) funcionan bien en presentaciones internas donde el humor mejora la comunicación del equipo. Para presentaciones profesionales use Lorem Ipsum clásico o Legal Ipsum — son neutrales y no distraen del diseño.</p><p class=\"text-mid\">El relleno en español es una opción única — las palabras en idioma local preservan las proporciones naturales de letras y longitudes de palabra del idioma objetivo. Ideal para mostrar a los clientes una vista previa realista del texto.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lorem Ipsum y SEO — ¿el texto de relleno perjudica el posicionamiento?",
+      "html": "<p class=\"text-mid mb-4\">Sí — publicar Lorem Ipsum en un sitio web en producción puede afectar negativamente el posicionamiento en buscadores. Google analiza el contenido de cada página indexada y reconoce el texto de relleno:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Thin content</strong> — una página con texto de relleno no ofrece valor a los usuarios. Google la clasifica como contenido pobre y reduce su posición.</li><li><strong>Indexación basura</strong> — los bots de Google indexan Lorem Ipsum como contenido de página. Puede aparecer en los resultados de búsqueda afectando la imagen de marca.</li><li><strong>Desperdicio de presupuesto de rastreo</strong> — Google asigna un presupuesto de rastreo limitado. Las páginas con Lorem Ipsum lo consumen sin beneficio.</li><li><strong>Core Web Vitals</strong> — el texto de relleno no afecta directamente las métricas, pero las páginas de baja calidad pueden posicionarse peor.</li></ul><p class=\"text-mid mb-4\">Cómo evitar el problema: antes de publicar, busque en su sitio &quot;lorem ipsum&quot; o &quot;dolor sit amet&quot;. En Google Search Console compruebe que ninguna página indexada contenga texto de relleno. Use <code>site:sudominio.com &quot;lorem ipsum&quot;</code> en Google.</p><p class=\"text-mid\">El Generador Lorem Ipsum es una herramienta para la fase de diseño. El texto de relleno debe reemplazarse con contenido real antes de publicar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace especial a este Generador Lorem Ipsum?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "9 modos de generación",
+          "description": "Párrafos, oraciones, palabras, listas, encabezados, enlaces, tablas, citas y definiciones — control total sobre cantidad y formato."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "8 estilos de texto únicos",
+          "description": "Lorem Ipsum, Hipster, Business, Relleno en español, Bacon, Cupcake, Pirate y Legal. Cada estilo tiene más de 90 palabras."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Código HTML listo",
+          "description": "Genere texto con etiquetas HTML y copie el código listo. Ahorra tiempo al crear prototipos de sitios web."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Estadísticas de texto",
+          "description": "Palabras, caracteres, oraciones, párrafos, tiempo de lectura y tamaño en bytes — visibles inmediatamente tras la generación."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Procesamiento local",
+          "description": "El texto se genera en su navegador. Nada se envía a un servidor. Funciona sin conexión después de cargar la página."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Sin registro ni límites",
+          "description": "Completamente gratuita. Sin registro, sin inicio de sesión ni datos personales. Sin publicidad en el texto generado."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes sobre el Generador Lorem Ipsum",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Qué es Lorem Ipsum?",
+          "answer": "Lorem Ipsum es el texto de relleno estándar de las industrias de impresión, diseño gráfico y desarrollo web. Se usa para llenar maquetas con texto de apariencia realista cuando el contenido final aún no está listo. Tiene un ritmo natural y distribución de letras similar al idioma real.",
+          "answerSchemaText": "Lorem Ipsum es el texto de relleno estándar de las industrias de impresión, diseño gráfico y desarrollo web."
+        },
+        {
+          "question": "¿De dónde viene Lorem Ipsum?",
+          "answer": "Lorem Ipsum proviene de De Finibus Bonorum et Malorum de Marco Tulio Cicerón, escrito en el 45 a. C. Es un tratado filosófico sobre ética. El pasaje original fue alterado por un impresor desconocido en el siglo XVI — se añadieron, eliminaron y reordenaron palabras.",
+          "answerSchemaText": "Lorem Ipsum proviene de De Finibus Bonorum et Malorum de Cicerón, escrito en el 45 a. C."
+        },
+        {
+          "question": "¿Es Lorem Ipsum latín real?",
+          "answer": "Parcialmente. Contiene palabras latinas reales de la obra de Cicerón, pero el texto fue deliberadamente alterado. Las palabras están desordenadas y a algunas les faltan terminaciones. Palabras individuales como dolor (dolor), amet (ama) e ipsum (mismo) son términos latinos genuinos.",
+          "answerSchemaText": "Parcialmente — contiene palabras latinas reales de Cicerón pero el texto fue alterado y no tiene significado."
+        },
+        {
+          "question": "¿Cuántos párrafos necesito para una maqueta?",
+          "answer": "Depende del tipo de página. Landing page: 5–8 párrafos. Página de servicios: 4–6. Artículo de blog: 8–15 (1.500–2.500 palabras). Ficha de producto: 2–3. El generador crea exactamente la cantidad que necesite.",
+          "answerSchemaText": "Depende del tipo: landing page 5–8, servicios 4–6, blog 8–15, producto 2–3 párrafos."
+        },
+        {
+          "question": "¿Puedo usar Lorem Ipsum en un sitio en producción?",
+          "answer": "No. Lorem Ipsum es solo para la fase de diseño. Publicar texto de relleno perjudica el SEO (Google lo clasifica como thin content), afecta la imagen de marca y puede indexarse en resultados de búsqueda. Siempre reemplace el texto de relleno antes de publicar.",
+          "answerSchemaText": "No — perjudica el SEO y la imagen de marca. Reemplácelo siempre con contenido real antes de publicar."
+        },
+        {
+          "question": "¿Lorem Ipsum perjudica el SEO?",
+          "answer": "Sí, si se publica en un sitio en producción. Google reconoce el texto de relleno y puede considerar la página de baja calidad. Use site:sudominio.com lorem ipsum en Google para comprobarlo.",
+          "answerSchemaText": "Sí, en sitios en producción — Google reconoce el texto de relleno y lo clasifica como thin content."
+        },
+        {
+          "question": "¿Qué son Hipster Ipsum y Business Ipsum?",
+          "answer": "Son variantes temáticas de texto de relleno. Hipster Ipsum usa vocabulario hipster (artesanal, aguacate, vintage). Business Ipsum es jerga corporativa (sinergia, leverage, stakeholder, KPI). Ambos generan texto con ritmo natural y vocabulario sectorial.",
+          "answerSchemaText": "Variantes temáticas — Hipster usa vocabulario lifestyle, Business usa jerga corporativa."
+        },
+        {
+          "question": "¿Cómo genero Lorem Ipsum con etiquetas HTML?",
+          "answer": "En los ajustes, cambie el formato de Texto a HTML. El generador envuelve párrafos con &lt;p&gt; y listas con &lt;ul&gt;&lt;li&gt;. Haga clic en Copiar HTML. El código puede pegarse directamente en un editor HTML o CMS.",
+          "answerSchemaText": "Cambie el formato a HTML en los ajustes, genere texto y haga clic en Copiar HTML."
+        },
+        {
+          "question": "¿El generador es gratuito y seguro?",
+          "answer": "Sí. Completamente gratuito, sin registro y sin límites. Todo se genera localmente en su navegador — nada se envía a un servidor. Sin tracking, sin cookies, funciona offline tras cargar la página.",
+          "answerSchemaText": "Sí — gratuito, sin registro, procesamiento local, sin recopilación de datos."
+        },
+        {
+          "question": "¿Cuántas palabras tiene un párrafo estándar?",
+          "answer": "Depende de la configuración: corto (2–4 oraciones, aprox. 20–50 palabras), medio (4–7 oraciones, aprox. 40–90 palabras), largo (7–12 oraciones, aprox. 70–150 palabras). El primer párrafo original de Cicerón tiene unas 69 palabras.",
+          "answerSchemaText": "Corto 20–50 palabras, medio 40–90 palabras, largo 70–150 palabras."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdenos a mejorar nuestras herramientas",
+      "description": "¿Tiene una idea para una nueva función, encontró un error o quiere sugerir otra herramienta? Escríbanos — respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/lorem-ipsum-generator/generador-lorem-ipsum-es.webp",
+      "imageAlt": "Generador Lorem Ipsum — Arteon",
+      "defaultSubject": "Feedback: Generador Lorem Ipsum"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Descubra otras herramientas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

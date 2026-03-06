@@ -2,7 +2,7 @@
   "toolKey": "jsonToXml",
   "locale": "fi",
   "metadata": {
-    "title": "JSON XML -muunnin — JSON XML",
+    "title": "JSON XML -muunnin - JSON XML",
     "description": "Muunna JSON XML-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/json-xml-muunnin"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa JSON XML-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">JSON on laajalti kaytetty tiedostomuoto laajalla yhteensopivuudella. Kayttotapauksesta riippuen muuntaminen XML-muotoon voi tarjota merkittavia etuja — pienemmat tiedostot, parempi laatu tai laajempi alusta tuki.</p><p class=\"text-mid mb-4\">Tama ilmainen verkkomuunnin muuntaa JSON-tiedostosi XML-muotoon suoraan selaimessa. Tiedostoja ei laheteta palvelimille — koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman paivittaisia rajoituksia, rekisteroitymista tai vesileimoja. Vedaa ja pudota tiedostot, saada laatua ja lataa tulokset.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON on laajalti käytetty tiedostomuoto laajalla yhteensopivuudella. Käyttötapauksesta riippuen muuntaminen XML-muotoon voi tarjota merkittäviä etuja - pienemmat tiedostot, parempi laatu tai laajempi alustatuki.</p><p class=\"text-mid mb-4\">Tämä ilmainen verkkomuunnin muuntaa JSON-tiedostosi XML-muotoon suoraan selaimessa. Tiedostoja ei lähetetä palvelimille - koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman päivittäisiä rajoituksia, rekisteröitymistä tai vesileimoja. Vedä ja pudota tiedostot, säädä laatua ja lataa tulokset.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "JSON to XML conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla JSON XML?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Miten JSON:n muuntaminen XML:ksi toimii?",
+      "html": "<p class=\"text-mid mb-4\">JSON ja XML ovat molemmat rakenteisia tietomuotoja, mutta ne käyttävät perustavanlaatuisesti erilaista syntaksia. JSON käyttää aaltosulkeita ja avain-arvo-pareja, kun taas XML käyttää avaus- ja sulkutageja elementtien määrittämiseen. Muunnin yhdistää jokaisen JSON-ominaisuuden XML-elementtiin säilyttäen hierarkkisen rakenteen.</p><p class=\"text-mid mb-4\">JSON-objekteista tulee XML-elementtejä, JSON-taulukoista tulee toistuvia elementtejä, ja primitiiviarvoista (merkkijonot, numerot, totuusarvot) tulee tekstisisältöä ylätason tageissa. Muunnin tuottaa hyvämuotoista XML:ää sisännyksin ja deklaraatio-otsikolla.</p><p class=\"text-mid\">XML:ää käytetään laajalti yritysjärjestelmissä, SOAP-verkkopalveluissa, asetustiedostoissa ja tiedonvaihdossa tiukalla skeemavalidoinnilla. Kaikki muunnos tapahtuu paikallisesti selaimessasi.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vinkkeja JSON-XML-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "title": "Vinkkejä JSON:n muuntamiseen XML:ksi",
+      "description": "Muutamia vinkkejä yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
-          "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
+          "icon": "RiCodeLine",
+          "title": "Juurielementti",
+          "description": "XML vaatii yhden juurielementin. Jos JSON on taulukko, muunnin kietoo sen juurielementtiin."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Jo pakatut",
-          "description": "Jos JSON oli jo voimakkaasti pakattu, muunnos XML-muotoon ei valttamatta saasta paljon."
+          "icon": "RiNodeTree",
+          "title": "Taulukoiden käsittely",
+          "description": "JSON-taulukot muunnetaan toistuviksi XML-elementeiksi identtisillä taginimellä. Elementin nimi johdetaan ylätason avaimesta."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "XML ei tue lapinakyyytta. Lapinakyyt alueet muuttuvat valkoisiksi. Harkitse PNG:ta tai WebP:ta."
+          "icon": "RiFileTextLine",
+          "title": "Erikoismerkit",
+          "description": "Merkit kuten &lt;, &gt;, &amp; ja lainausmerkit pakotetaan automaattisesti standardi XML-entiteeteiksi kelvollista merkintää varten."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot JSON-tiedostoista."
+          "icon": "RiFileCodeLine",
+          "title": "Attribuutit vs elementit",
+          "description": "Oletuksena kaikki JSON-ominaisuudet muuttuvat XML-alielementeiksi. JSON:ssa ei ole natiivia XML-attribuuttikonseptia, joten attribuutteja ei luoda."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JSON to XML mapping rules",
+      "html": "<p class=\"text-mid mb-4\">The converter maps JSON structures to XML elements following these rules:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Objects</strong> – each key becomes an XML element. <code>{\"name\": \"John\"}</code> → <code>&lt;name&gt;John&lt;/name&gt;</code></li><li><strong>Arrays</strong> – each item becomes a repeating element with the key name. <code>{\"items\": [1, 2]}</code> → <code>&lt;items&gt;1&lt;/items&gt;&lt;items&gt;2&lt;/items&gt;</code></li><li><strong>Primitives</strong> – strings, numbers, booleans become text content of their parent element.</li><li><strong>Null values</strong> – converted to empty elements or omitted.</li></ul><p class=\"text-mid mt-3\">The output includes a proper XML declaration and uses 2-space indentation for readability. Element names are derived directly from JSON keys.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
         },
         {
-          "question": "Onko JSON XML muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "question": "Onko JSON:n muuntaminen XML:ksi turvallista?",
+          "answer": "Kyllä. Kaikki muunnos tapahtuu paikallisesti selaimessasi. Mitään tietoja ei lähetetä millekään palvelimelle."
         },
         {
-          "question": "Voinko muuntaa useita JSON-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "question": "Onko muunnos häviötön?",
+          "answer": "Kyllä. Kaikki JSON-syötteen tiedot säilyvät XML-tuloksessa. Rakenne ja arvot pysyvät muuttumattomina, vain syntaksi muuttuu."
         },
         {
-          "question": "Tukevatko kaikki selaimet XML-muotoa?",
-          "answer": "XML-muotoa tukevat Chrome, Firefox, Safari, Edge ja Opera."
+          "question": "Voinko validoida XML-tuloksen?",
+          "answer": "Muunnin tuottaa hyvämuotoista XML:ää, joka noudattaa standardi XML-validointia. Skeemavalidointia (XSD) varten voit erikseen soveltaa skeemaasi tulokseen."
         }
       ]
     },

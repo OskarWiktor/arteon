@@ -1,0 +1,273 @@
+{
+  "toolKey": "vwToPx",
+  "locale": "fi",
+  "metadata": {
+    "title": "Vw px:ksi – muunnin",
+    "description": "Muunna CSS vw pikseleiksi. Säädettävä viewport-leveys.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/vw-px-muunnin"
+  },
+  "hero": {
+    "title": "Vw px:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/vw-px-muunnin",
+      "label": "vw px:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Vw px:ksi – muunnin",
+      "alternateName": ["Vw px:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna CSS vw pikseleiksi. Säädettävä viewport-leveys.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin vw muunnetaan pikseleiksi?",
+      "html": "<p class=\"text-mid mb-4\">CSS-yksikkö vw = 1% viewport-leveydestä. 1920px:llä: 1vw = 19,2px, 50vw = 960px, 100vw = 1920px.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "VW to pixels converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiLayoutLine",
+          "title": "Responsiivinen suunnittelu",
+          "description": "50vw = 960px 1920px:llä."
+        },
+        {
+          "icon": "RiFontSizeLine",
+          "title": "Joustava typografia",
+          "description": "font-size: 2,5vw = 48px 1920px:llä."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Asettelun virheiden selvitys",
+          "description": "Tarkista vw-asettelut breakpointeilla."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web-kehitys",
+          "description": "Muunna vw pikseleiksi kohdenäytöille."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">px = vw × viewport-leveys / 100.</p><p class=\"text-mid\">1920px:llä: 1vw = 19,2px. 375px:llä (iPhone): 1vw = 3,75px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">px = vw × viewport-leveys / 100.</p><p class=\"text-mid\">1920px:llä: 1vw = 19,2px. 375px:llä (iPhone): 1vw = 3,75px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "vw eri viewport-leveyksillä",
+      "featureLabel": "vw",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "1920px:llä"
+        },
+        {
+          "id": "unit2",
+          "name": "375px:llä",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1vw",
+          "values": {
+            "unit1": "19,2px",
+            "unit2": "3,75px"
+          }
+        },
+        {
+          "name": "10vw",
+          "values": {
+            "unit1": "192px",
+            "unit2": "37,5px"
+          }
+        },
+        {
+          "name": "50vw",
+          "values": {
+            "unit1": "960px",
+            "unit2": "187,5px"
+          }
+        },
+        {
+          "name": "100vw",
+          "values": {
+            "unit1": "1920px",
+            "unit2": "375px"
+          }
+        },
+        {
+          "name": "2,5vw",
+          "values": {
+            "unit1": "48px",
+            "unit2": "9,4px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta px on 1vw?",
+          "answer": "1vw = 1% viewport-leveydestä. 1920px:llä: 19,2px."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "vw px:ksi – Arteon",
+      "defaultSubject": "Palaute: vw-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

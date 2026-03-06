@@ -2,7 +2,7 @@
   "toolKey": "imageToBase64",
   "locale": "fi",
   "metadata": {
-    "title": "kuva Base64 -muunnin — kuva Base64",
+    "title": "kuva Base64 -muunnin - kuva Base64",
     "description": "Koodaa kuvat Base64-muotoon. Kopioi valmis koodi CSS:ää tai HTML:ää varten. Ilmainen.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/kuva-base64-muunnin"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Muunna",
-          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi."
+          "text": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessasi."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa kuva Base64-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">IMAGE on laajalti kaytetty tiedostomuoto laajalla yhteensopivuudella. Kayttotapauksesta riippuen muuntaminen BASE64-muotoon voi tarjota merkittavia etuja — pienemmat tiedostot, parempi laatu tai laajempi alusta tuki.</p><p class=\"text-mid mb-4\">Tama ilmainen verkkomuunnin muuntaa IMAGE-tiedostosi BASE64-muotoon suoraan selaimessa. Tiedostoja ei laheteta palvelimille — koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman paivittaisia rajoituksia, rekisteroitymista tai vesileimoja. Vedaa ja pudota tiedostot, saada laatua ja lataa tulokset.</p>",
+      "html": "<p class=\"text-mid mb-4\">IMAGE on laajalti käytetty tiedostomuoto laajalla yhteensopivuudella. Käyttötapauksesta riippuen muuntaminen BASE64-muotoon voi tarjota merkittäviä etuja - pienemmat tiedostot, parempi laatu tai laajempi alustatuki.</p><p class=\"text-mid mb-4\">Tämä ilmainen verkkomuunnin muuntaa IMAGE-tiedostosi BASE64-muotoon suoraan selaimessa. Tiedostoja ei lähetetä palvelimille - koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman päivittäisiä rajoituksia, rekisteröitymistä tai vesileimoja. Vedä ja pudota tiedostot, säädä laatua ja lataa tulokset.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "kuva to Base64 conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Muunna",
-          "description": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi.",
+          "description": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessasi.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla IMAGE BASE64?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Miten kuvan muuntaminen Base64-koodaukseksi toimii?",
+      "html": "<p class=\"text-mid mb-4\">Base64-koodaus muuntaa kuvan binääridatan tekstimerkkijonoksi käyttäen 64 tulostettavaa ASCII-merkkiä (A–Z, a–z, 0–9, +, /). Jokainen 3 tavun binääridataryhmä muuttuu 4 Base64-merkiksi, mikä tarkoittaa, että koodattu merkkijono on noin 33% alkuperäistä tiedostoa suurempi.</p><p class=\"text-mid mb-4\">Muunnin lukee kuvatiedostosi, koodaa sen Base64-merkkijonoksi ja lisää oikean Data URI -etuliitteen (esim. data:image/png;base64,). Tämä luo itsenäisen merkkijonon, joka voidaan upottaa suoraan HTML:ään, CSS:ään tai JSON:iin ilman erillistä kuvatiedostoa.</p><p class=\"text-mid\">Base64-koodattuja kuvia käytetään usein pienille ikoneille, logoille ja käyttöliittymäelementeille, joissa ylimääräisen HTTP-pyynnön poistaminen parantaa latausaikaa. Kaikki muunnos tapahtuu paikallisesti selaimessasi.</p>"
     },
     {
       "type": "gap",
@@ -138,35 +138,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vinkkeja IMAGE-BASE64-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "title": "Vinkkejä kuvan Base64-koodaukseen",
+      "description": "Muutamia vinkkejä yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
-          "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
+          "title": "Koon kasvu",
+          "description": "Base64-koodaus kasvattaa tiedostokokoa noin 33%. 10 KB:n kuva muuttuu noin 13,3 KB:n Base64-merkkijonoksi. Ihanteellinen pienille kuville alle 10 KB."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Jo pakatut",
-          "description": "Jos IMAGE oli jo voimakkaasti pakattu, muunnos BASE64-muotoon ei valttamatta saasta paljon."
+          "title": "Data URI -muoto",
+          "description": "Tulos sisältää täydellisen Data URI -etuliitteen (data:image/png;base64,...) — valmis lisättäväksi HTML src-attribuuttiin tai CSS background-image-ominaisuuteen."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "BASE64 ei tue lapinakyyytta. Lapinakyyt alueet muuttuvat valkoisiksi. Harkitse PNG:ta tai WebP:ta."
+          "icon": "RiCodeLine",
+          "title": "Tuetut muodot",
+          "description": "Muunnin hyväksyy PNG, JPG, GIF, WebP, SVG ja BMP. MIME-tyyppi Data URI:ssa asetetaan automaattisesti syötemuodon perusteella."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot IMAGE-tiedostoista."
+          "icon": "RiFileCodeLine",
+          "title": "Välimuistinharkintoja",
+          "description": "Upotettuja Base64-kuvia ei voi välimuistittaa erikseen selaimessa. Useilla sivuilla käytetyille kuville erilliset tiedostot välimuistiotsikoilla ovat tehokkaampia."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to use Base64 encoding vs regular image files",
+      "html": "<p class=\"text-mid mb-4\">Base64 encoding is beneficial in specific scenarios, but not always the right choice:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Use Base64 for</strong> – small images under 10 KB (icons, logos), email templates with embedded images, API requests requiring image data in JSON, self-contained HTML files.</li><li><strong>Use regular files for</strong> – large images over 50 KB, website hero images and photos, images that need browser caching, content served via CDN.</li></ul><p class=\"text-mid mt-3\">Base64 increases data size by 33% and prevents browser caching. For web performance, only inline very small assets. For everything else, serve images as regular files with proper caching headers.</p>"
     },
     {
       "type": "faq",
@@ -190,16 +199,16 @@
           "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
         },
         {
-          "question": "Onko IMAGE BASE64 muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "question": "Onko kuvan Base64-koodaus turvallista?",
+          "answer": "Kyllä. Kaikki muunnos tapahtuu paikallisesti selaimessasi. Kuviasi ei koskaan lähetetä millekään palvelimelle."
         },
         {
-          "question": "Voinko muuntaa useita IMAGE-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "question": "Milloin minun pitäisi käyttää Base64:a kuvatiedostojen sijaan?",
+          "answer": "Base64 on ihanteellinen pienille kuville (ikonit, logot alle 10 KB), joissa HTTP-pyynnön säästäminen on tärkeää. Suuremmille kuville erilliset tiedostot ovat tehokkaampia, koska selain voi välimuistittaa ne."
         },
         {
-          "question": "Tukevatko kaikki selaimet BASE64-muotoa?",
-          "answer": "BASE64-muotoa tukevat Chrome, Firefox, Safari, Edge ja Opera."
+          "question": "Mitä kuvamuotoja tuetaan?",
+          "answer": "Muunnin hyväksyy PNG, JPG, GIF, WebP, SVG, BMP ja muut standardi kuvamuodot. MIME-tyyppi Data URI:ssa tunnistetaan automaattisesti."
         }
       ]
     },

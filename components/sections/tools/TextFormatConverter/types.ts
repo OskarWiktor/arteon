@@ -4,5 +4,5 @@ export interface TextFormatConverterProps {
   conversionType: TextConversionType;
   sourceLabel: string;
   targetLabel: string;
-  sourcePlaceholder: string;
+  sourcePlaceholder?: string;
 }

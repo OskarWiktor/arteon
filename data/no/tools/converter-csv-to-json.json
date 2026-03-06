@@ -2,7 +2,7 @@
   "toolKey": "csvToJson",
   "locale": "no",
   "metadata": {
-    "title": "CSV til JSON-konverterer — CSV JSON",
+    "title": "CSV til JSON-konverterer - CSV JSON",
     "description": "Konverter CSV til JSON-format. Automatisk parsing og formatering. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/csv-til-json-konverterer"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere CSV til JSON?",
-      "html": "<p class=\"text-mid mb-4\">CSV er et mye brukt filformat med bred kompatibilitet. Avhengig av bruksomradet kan konvertering til JSON gi betydelige fordeler — mindre filer, bedre kvalitet eller bredere plattformstotte.</p><p class=\"text-mid mb-4\">Denne gratis nettkonverteren gjor om CSV-filene dine til JSON-format direkte i nettleseren. Ingen filer lastes opp — hele prosessen skjer lokalt pa enheten din.</p><p class=\"text-mid\">Konverter sa mange filer du vil uten daglige begrensninger, uten registrering og uten vannmerker. Dra og slipp filer, juster kvaliteten og last ned resultatene.</p>",
+      "html": "<p class=\"text-mid mb-4\">CSV er et mye brukt filformat med bred kompatibilitet. Avhengig av bruksomradet kan konvertering til JSON gi betydelige fordeler - mindre filer, bedre kvalitet eller bredere plattformstotte.</p><p class=\"text-mid mb-4\">Denne gratis nettkonverteren gjor om CSV-filene dine til JSON-format direkte i nettleseren. Ingen filer lastes opp - hele prosessen skjer lokalt pa enheten din.</p><p class=\"text-mid\">Konverter sa mange filer du vil uten daglige begrensninger, uten registrering og uten vannmerker. Dra og slipp filer, juster kvaliteten og last ned resultatene.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "CSV to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvor mye sparer du ved konvertering CSV til JSON?",
-      "html": "<p class=\"text-mid mb-4\">Besparelsene avhenger av filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerabilde</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbilde</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skjermbilde / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer etter innhold og innstillinger.</p>"
+      "title": "Hvordan fungerer CSV til JSON-konvertering?",
+      "html": "<p class=\"text-mid mb-4\">CSV-formatet (Comma-Separated Values) lagrer data som tekstrader der verdiene er atskilt med komma eller semikolon. JSON-formatet (JavaScript Object Notation) organiserer de samme dataene som en array av objekter med nøkkel-verdi-par, der hver rad blir et objekt og hver kolonneoverskrift blir en nøkkel.</p><p class=\"text-mid mb-4\">Konverteren leser den første raden i CSV-filen som kolonneoverskrifter og bruker dem som egenskapsnavn i hvert JSON-objekt. Hver etterfølgende rad blir et eget objekt i det resulterende JSON-arrayet.</p><p class=\"text-mid\">Resultatet er korrekt formatert JSON med innrykk for bedre lesbarhet. All konvertering skjer lokalt i nettleseren din — ingen data sendes til noen server.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering CSV til JSON",
-      "description": "Tips for a unnga vanlige problemer:",
+      "title": "Tips for CSV til JSON-konvertering",
+      "description": "Noen tips for å unngå vanlige problemer:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Veldig store filer",
-          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Kolonneoverskrifter",
+          "description": "Sørg for at CSV-filen har en overskriftsrad. Konverteren bruker den første raden som JSON-egenskapsnavn."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Allerede komprimerte",
-          "description": "Hvis CSV allerede var sterkt komprimert, gir konvertering til JSON kanskje ikke stor besparelse."
+          "icon": "RiSeparator",
+          "title": "Separatorgjenkjenning",
+          "description": "Konverteren oppdager automatisk om CSV-en bruker komma, semikolon eller tabulator som separator."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "JSON stotter ikke transparens. Transparente omrader blir hvite. Vurder PNG eller WebP."
+          "icon": "RiCodeLine",
+          "title": "Spesialtegn",
+          "description": "Verdier som inneholder komma, anførselstegn eller linjeskift må være omgitt av doble anførselstegn. Konverteren håndterer automatisk standard CSV-escaping."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Behold originalene",
-          "description": "Tapsbringende konvertering er irreversibel. Behold kopier av CSV-filer."
+          "icon": "RiFileCodeLine",
+          "title": "Tegnkoding",
+          "description": "For best resultat bør du bruke UTF-8-kodede CSV-filer. Filer med andre kodinger kan vise spesialtegn feil i JSON."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Common CSV formatting issues and how to handle them",
+      "html": "<p class=\"text-mid mb-4\">CSV files from different sources can have inconsistent formatting. Here are common issues the converter handles:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Different separators</strong> – commas, semicolons, tabs. European exports from Excel often use semicolons because commas are used as decimal separators.</li><li><strong>Quoted values</strong> – values containing commas or newlines must be wrapped in double quotes. The converter handles this correctly.</li><li><strong>Unicode and special characters</strong> – accented characters, CJK text, and emoji are preserved in the JSON output.</li><li><strong>Empty values</strong> – empty cells are converted to empty strings or null in JSON, depending on context.</li></ul><p class=\"text-mid mt-3\">If conversion fails, check that your CSV has consistent column counts across all rows and that quoted values use proper double-quote escaping.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, den fungerer på alle enheter med en moderne nettleser."
         },
         {
-          "question": "Er konvertering CSV til JSON trygt?",
-          "answer": "Ja. Alt skjer lokalt i nettleseren via Canvas API. Ingenting sendes til servere."
+          "question": "Er CSV til JSON-konvertering trygt?",
+          "answer": "Ja. All konvertering skjer lokalt i nettleseren din. Ingen data sendes til noen server."
         },
         {
-          "question": "Kan jeg konvertere flere CSV-filer?",
-          "answer": "Ja. Batchkonvertering uten begrensning. Dra filer til konverteringsomradet."
+          "question": "Kan jeg bruke JSON-resultatet i applikasjonen min?",
+          "answer": "Ja. Resultatet er standard JSON, kompatibelt med alle programmeringsspråk, databaser eller API-er — JavaScript, Python, PHP, Java og mange flere."
         },
         {
-          "question": "Stottes JSON av alle nettlesere?",
-          "answer": "JSON stottes av Chrome, Firefox, Safari, Edge og Opera."
+          "question": "Hva skjer med tomme verdier i CSV?",
+          "answer": "Tomme celler i CSV blir til tomme strenger i JSON. Etterfølgende komma og inkonsistent antall kolonner håndteres korrekt."
         }
       ]
     },

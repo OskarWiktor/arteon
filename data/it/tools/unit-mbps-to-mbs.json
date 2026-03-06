@@ -1,0 +1,273 @@
+{
+  "toolKey": "mbpsToMBs",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore Mbps in MB/s – internet",
+    "description": "Converti megabit al secondo in megabyte al secondo. Comprendi la tua velocità internet.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-mbps-in-mbs"
+  },
+  "hero": {
+    "title": "Convertire Mbps in MB/s",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-mbps-in-mbs",
+      "label": "Mbps in MB/s"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore Mbps in MB/s – internet",
+      "alternateName": ["Convertire Mbps in MB/s"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti megabit al secondo in megabyte al secondo. Comprendi la tua velocità internet.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire Mbps in MB/s?",
+      "html": "<p class=\"text-mid mb-4\">Le velocità internet sono annunciate in megabit al secondo (Mbps), ma le dimensioni dei file si misurano in megabyte al secondo (MB/s). 1 byte = 8 bit, quindi 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">Una connessione da “100 Mbps” scarica al massimo a 12,5 MB/s.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore Mbps in MB/s – internet – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento. Puoi usare punto o virgola come separatore decimale.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato della conversione appare istantaneamente nel campo adiacente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Clicca su Copia risultato o usa il pulsante Inverti per convertire nella direzione opposta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDownloadLine",
+          "title": "Velocità di download",
+          "description": "Verifica: 100 Mbps = 12,5 MB/s. 1 GB in ~80 secondi."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Piani internet",
+          "description": "Confronta: 50 Mbps = 6,25 MB/s, 1 Gbps = 125 MB/s."
+        },
+        {
+          "icon": "RiVideoLine",
+          "title": "Streaming",
+          "description": "Netflix 4K: ~25 Mbps. 1080p: ~5 Mbps."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Trasferimento file",
+          "description": "Stima: 10 GB a 100 Mbps = ~13 minuti."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser. Nessun dato viene inviato."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna istantaneamente mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Il pulsante Inverti permette di convertire in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Una tabella con valori di conversione comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bit. Mbps ÷ 8 = MB/s e MB/s × 8 = Mbps.</p><p class=\"text-mid\">Le velocità reali sono tipicamente il 70–90% del massimo annunciato.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bit. Mbps ÷ 8 = MB/s e MB/s × 8 = Mbps.</p><p class=\"text-mid\">Le velocità reali sono tipicamente il 70–90% del massimo annunciato.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mbps vs MB/s – confronto",
+      "featureLabel": "Caratteristica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Megabit/s (Mbps)"
+        },
+        {
+          "id": "unit2",
+          "name": "Megabyte/s (MB/s)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Unità",
+          "values": {
+            "unit1": "Bit",
+            "unit2": "Byte"
+          }
+        },
+        {
+          "name": "Rapporto",
+          "values": {
+            "unit1": "8 Mbps",
+            "unit2": "= 1 MB/s"
+          }
+        },
+        {
+          "name": "Usato per",
+          "values": {
+            "unit1": "Velocità ISP",
+            "unit2": "Download file"
+          }
+        },
+        {
+          "name": "100 Mbps",
+          "values": {
+            "unit1": "100 Mbps",
+            "unit2": "12,5 MB/s"
+          }
+        },
+        {
+          "name": "1 Gbps",
+          "values": {
+            "unit1": "1.000 Mbps",
+            "unit2": "125 MB/s"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanti MB/s sono 100 Mbps?",
+          "answer": "100 Mbps = 12,5 MB/s. Dividi Mbps per 8."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Mbps na MB/s – Arteon",
+      "defaultSubject": "Feedback: mbps-to-mbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

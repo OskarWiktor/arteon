@@ -1,0 +1,277 @@
+{
+  "toolKey": "kgToLbs",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore chilogrammi in libbre",
+    "description": "Converti kg in lbs e viceversa. Essenziale per fitness, viaggi e spedizioni internazionali.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-kg-in-libbre"
+  },
+  "hero": {
+    "title": "Convertire chilogrammi in libbre",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-kg-in-libbre",
+      "label": "kg in lbs"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore chilogrammi in libbre",
+      "alternateName": ["Convertire chilogrammi in libbre"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti kg in lbs e viceversa. Essenziale per fitness, viaggi e spedizioni internazionali.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire kilogrammi in libbre?",
+      "html": "<p class=\"text-mid mb-4\">Il kilogrammo (kg) è l’unità base di massa del sistema metrico. La libbra (lb) è l’unità standard nel sistema imperiale, usata negli USA. 1 kg = 2,20462 lb.</p><p class=\"text-mid mb-4\">Questa conversione è necessaria per acquisti negli USA (alimenti in libbre), pesi in palestra americana, bagagli aerei e schede tecniche veicoli.</p><p class=\"text-mid mb-4\">Esempi: 70 kg = 154,3 lb, 100 kg = 220,5 lb, 1 lb = 453,6 g.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore chilogrammi in libbre – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento. Puoi usare punto o virgola come separatore decimale.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato della conversione appare istantaneamente nel campo adiacente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Clicca su Copia risultato o usa il pulsante Inverti per convertire nella direzione opposta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiScales3Line",
+          "title": "Palestra e fitness",
+          "description": "I pesi nelle palestre USA sono in libbre. Disco da 45 lb = 20,4 kg."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Bagagli aerei",
+          "description": "Alcune compagnie indicano limiti in libbre: 50 lb = 22,7 kg."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Cucina",
+          "description": "Le ricette americane usano libbre e once per carne e farina."
+        },
+        {
+          "icon": "RiMedicineBottleLine",
+          "title": "Peso corporeo",
+          "description": "Negli USA il peso si esprime in libbre: 150 lb = 68 kg."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser. Nessun dato viene inviato."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna istantaneamente mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Il pulsante Inverti permette di convertire in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Una tabella con valori di conversione comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">1 libbra (avoirdupois) = 0,45359237 kg esattamente. Per convertire kg in lb, moltiplica per 2,20462.</p><p class=\"text-mid\">Stima rapida: moltiplica i kg per 2,2.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">1 libbra (avoirdupois) = 0,45359237 kg esattamente. Per convertire kg in lb, moltiplica per 2,20462.</p><p class=\"text-mid\">Stima rapida: moltiplica i kg per 2,2.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilogrammo vs Libbra – confronto",
+      "featureLabel": "Caratteristica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilogrammo (kg)"
+        },
+        {
+          "id": "unit2",
+          "name": "Libbra (lb)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistema",
+          "values": {
+            "unit1": "Metrico (SI)",
+            "unit2": "Imperiale"
+          }
+        },
+        {
+          "name": "Valore base",
+          "values": {
+            "unit1": "1.000 g",
+            "unit2": "453,59 g"
+          }
+        },
+        {
+          "name": "Peso corporeo",
+          "values": {
+            "unit1": "Europa, America Latina",
+            "unit2": "USA, parzialmente UK"
+          }
+        },
+        {
+          "name": "Scienza",
+          "values": {
+            "unit1": "Standard SI",
+            "unit2": "Non utilizzata"
+          }
+        },
+        {
+          "name": "Sport",
+          "values": {
+            "unit1": "Dischi in kg (Europa)",
+            "unit2": "Dischi in lb (USA)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quante libbre è 1 kg?",
+          "answer": "1 kg = 2,20462 libbre."
+        },
+        {
+          "question": "Quanti kg è 1 libbra?",
+          "answer": "1 libbra = 0,4536 kg = 453,6 grammi."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "kg na funty – Arteon",
+      "defaultSubject": "Feedback: kg-to-lbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

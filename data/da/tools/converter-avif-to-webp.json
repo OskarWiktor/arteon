@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "AVIF til WebP-konverter – AVIF WebP",
-    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstorrelse. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
+    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstørrelse. Al behandling sker lokalt i browseren - filer forlader aldrig din enhed.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/avif-til-webp-konverter"
   },
   "hero": {
     "title": "AVIF til WebP-konverter",
-    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstorrelse. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
+    "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstørrelse. Al behandling sker lokalt i browseren - filer forlader aldrig din enhed.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -27,13 +27,13 @@
       "name": "AVIF til WebP-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstorrelse. Al behandling sker lokalt i browseren — filer forlader aldrig din enhed.",
+      "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstørrelse. Al behandling sker lokalt i browseren - filer forlader aldrig din enhed.",
       "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertér AVIF til WEBP", "AVIF til WEBP konvertering", "Gratis AVIF til WEBP konverter"]
     },
     "howTo": {
       "name": "AVIF to WebP",
-      "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstorrelse.",
+      "description": "Konverter AVIF-filer til WebP. Bred kompatibilitet ved lille filstørrelse.",
       "steps": [
         {
           "name": "Add AVIF files",
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — hvad vaelge ved konvertering AVIF til WebP?",
-      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem AVIF og WebP praktisk talt umaerkelig.</p>"
+      "title": "Kvalitet - hvad vaelge ved konvertering AVIF til WebP?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) - godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% - til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% - nar filstørrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem AVIF og WebP praktisk talt umaerkelig.</p>"
     },
     {
       "type": "gap",
@@ -253,8 +253,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af AVIF til WebP reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+      "title": "Hvordan billedkonvertering påvirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP måler tiden til det største synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af AVIF til WebP reducerer filstørrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
     },
     {
       "type": "gap",
@@ -263,23 +263,23 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering AVIF til WebP",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis AVIF allerede var komprimeret, giver konvertering til WebP maske ikke stor besparelse."
+          "description": "Hvis AVIF allerede var komprimeret, giver konvertering til WebP måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "WebP understotter alfakanal. Transparente omrader i AVIF bevares."
+          "description": "WebP understøtter alfakanal. Transparente områder i AVIF bevares."
         },
         {
           "icon": "RiStackLine",
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "AVIF vs WebP – file size comparison",
+      "html": "<p class=\"text-mid mb-4\">WebP files are slightly larger than AVIF but significantly smaller than JPG or PNG. Example comparisons:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">AVIF: 180 KB → WebP: 240 KB</p><p class=\"text-light mt-1 text-sm\">vs JPG: 450 KB</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">AVIF: 85 KB → WebP: 115 KB</p><p class=\"text-light mt-1 text-sm\">vs JPG: 210 KB</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">AVIF: 120 KB → WebP: 160 KB</p><p class=\"text-light mt-1 text-sm\">vs PNG: 850 KB</p></div></div><p class=\"text-light mt-4 text-sm\">WebP is 20–30% larger than AVIF but supported by more browsers. Use the HTML &lt;picture&gt; element to serve AVIF with WebP as fallback.</p>"
     },
     {
       "type": "faq",

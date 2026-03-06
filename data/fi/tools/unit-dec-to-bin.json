@@ -1,0 +1,277 @@
+{
+  "toolKey": "decToBin",
+  "locale": "fi",
+  "metadata": {
+    "title": "DEC BIN:ksi – muunnin",
+    "description": "Muunna desimaaliluvut binääriluvuiksi ja päinvastoin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/desimaali-binaari-muunnin"
+  },
+  "hero": {
+    "title": "DEC BIN:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/desimaali-binaari-muunnin",
+      "label": "DEC BIN:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "DEC BIN:ksi – muunnin",
+      "alternateName": ["DEC BIN:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna desimaaliluvut binääriluvuiksi ja päinvastoin.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin tarvitset: DEC BIN:ksi?",
+      "html": "<p class=\"text-mid mb-4\">Binary (base-2) is the fundamental number system of computers. Every piece of data — text, images, programs — is stored as sequences of 0s and 1s. Understanding binary is essential for programming, networking, and computer science.</p><p class=\"text-mid mb-4\">Each binary digit (bit) represents a power of 2: ...128, 64, 32, 16, 8, 4, 2, 1. For example: decimal 42 = binary 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Common uses: IP addresses, subnet masks, bitwise operations, permissions (chmod), and understanding how computers store numbers.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DEC BIN:ksi – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät muunninta",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään. Voit käyttää pistettä tai pilkkua.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä – ilman napsautusta.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai käännä",
+          "description": "Napsauta Kopioi tulos tai käytä Käännä-painiketta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web-kehitys",
+          "description": "Operacje bitowe, maski, flagi: 0xFF = 11111111."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Internet",
+          "description": "Maski podsieci: 255.255.255.0 = /24 (24 jedynki binarnie)."
+        },
+        {
+          "icon": "RiShieldKeyholeLine",
+          "title": "Uprawnienia Unix",
+          "description": "chmod 755 = 111 101 101 binarnie."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Elektronika",
+          "description": "Rejestry, porty I/O, protokoły komunikacyjne."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi tietosuoja",
+          "description": "Kaikki laskelmat tehdään paikallisesti selaimessasi. Mitään tietoja ei lähetetä palvelimelle."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy välittömästi kirjoittaessasi – ei tarvitse napsauttaa mitään."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Käännä-painikkeella voit muuntaa kumpaankin suuntaan yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Valmis taulukko usein muunnetuilla arvoilla ja kontekstuaalisilla kuvauksilla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">Wiederholt durch 2 teilen und Reste notieren. Von unten nach oben lesen.</p><p class=\"text-mid\">8 Bit = 1 Byte = Werte 0–255.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Käytännön vinkkejä",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Powers of 2: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</li><li>1 byte = 8 bits = 0–255. Common in RGB colors, ASCII codes.</li><li>IP address: 192.168.1.1 = 11000000.10101000.00000001.00000001.</li><li>Negative numbers use two's complement in most systems.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimal vs Binary",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimal (base-10)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binary (base-2)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Digits",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–1"
+          }
+        },
+        {
+          "name": "Used by",
+          "values": {
+            "unit1": "Humans",
+            "unit2": "Computers"
+          }
+        },
+        {
+          "name": "Example: 42",
+          "values": {
+            "unit1": "42",
+            "unit2": "101010"
+          }
+        },
+        {
+          "name": "Example: 255",
+          "values": {
+            "unit1": "255",
+            "unit2": "11111111"
+          }
+        },
+        {
+          "name": "Readability",
+          "values": {
+            "unit1": "Easy for humans",
+            "unit2": "Long but computer-native"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Mikä on 10 in Binär?",
+          "answer": "Dezimal 10 = Binär 1010 (8+2)."
+        },
+        {
+          "question": "Mikä on 255 in Binär?",
+          "answer": "255 = 11111111 (acht Einsen). Maximum eines Bytes."
+        },
+        {
+          "question": "Tehdäänkö laskelmat paikallisesti?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DEC BIN:ksi – Arteon",
+      "defaultSubject": "Palaute: dec-to-bin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

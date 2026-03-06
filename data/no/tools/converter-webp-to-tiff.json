@@ -2,7 +2,7 @@
   "toolKey": "webpToTiff",
   "locale": "no",
   "metadata": {
-    "title": "WebP til TIFF-konverterer — WebP TIFF",
+    "title": "WebP til TIFF-konverterer - WebP TIFF",
     "description": "Konverter WebP-bilder til profesjonelt TIFF for utskrift og arkivering. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/webp-til-tiff-konverterer"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Still inn kvalitet",
-          "text": "Juster TIFF-kvalitetsglideren — lavere verdier gir mindre filer."
+          "text": "Juster TIFF-kvalitetsglideren - lavere verdier gir mindre filer."
         },
         {
           "position": 3,
           "name": "Konverter",
-          "text": "Klikk på Konverter — filene behandles lokalt i nettleseren."
+          "text": "Klikk på Konverter - filene behandles lokalt i nettleseren."
         },
         {
           "position": 4,
           "name": "Last ned",
-          "text": "Last ned TIFF-filene — enkeltvis eller alle på en gang."
+          "text": "Last ned TIFF-filene - enkeltvis eller alle på en gang."
         }
       ]
     }
@@ -253,13 +253,13 @@
     {
       "type": "sectionSteps",
       "title": "Tips for konvertering WebP til TIFF",
-      "description": "Tips for a unnga vanlige problemer:",
+      "description": "Tips for å unngå vanlige problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Veldig store filer",
-          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+          "description": "Bilder over 4000×4000 px kan være tregere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
@@ -269,7 +269,7 @@
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "TIFF stotter alfakanal. Transparente omrader i WebP bevares."
+          "description": "TIFF støtter alfakanal. Transparente områder i WebP bevares."
         },
         {
           "icon": "RiStackLine",
@@ -290,6 +290,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting WebP to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

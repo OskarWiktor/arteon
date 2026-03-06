@@ -1,0 +1,277 @@
+{
+  "toolKey": "twToPx",
+  "locale": "hu",
+  "metadata": {
+    "title": "Tailwind CSS px-re – átváltó",
+    "description": "Tailwind CSS spacing átváltása pixelre. Alap: 1 unit = 4 px.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/hu/eszkozok/tailwind-css-spacing-px-atvalto"
+  },
+  "hero": {
+    "title": "Tailwind CSS px-re",
+    "description": "Ez az átváltó azonnal átszámol. Adjon meg egy értéket és az eredmény azonnal megjelenik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/tailwind-css-spacing-px-atvalto",
+      "label": "Tailwind CSS px-re"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Tailwind CSS px-re – átváltó",
+      "alternateName": ["Tailwind CSS px-re"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Tailwind CSS spacing átváltása pixelre. Alap: 1 unit = 4 px.",
+      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+    },
+    "howTo": {
+      "name": "Hogyan használja az átváltót",
+      "description": "Gyors útmutató az átváltó használatához.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Érték megadása",
+          "text": "Írjon be egy számot a bal oldali beviteli mezőbe."
+        },
+        {
+          "name": " Eredmény leolvasása",
+          "text": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben."
+        },
+        {
+          "name": "Másolás vagy megfordítás",
+          "text": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikor kell használni: Tailwind CSS px-re?",
+      "html": "<p class=\"text-mid mb-4\">Tailwind CSS uses a spacing scale where each unit = 0.25 rem = 4 px (at default 16px root). So p-4 = 1 rem = 16 px, p-8 = 2 rem = 32 px, w-64 = 16 rem = 256 px.</p><p class=\"text-mid mb-4\">This converter helps developers quickly translate Tailwind spacing values to exact pixel measurements for debugging, design handoff, and documentation.</p><p class=\"text-mid mb-4\">Tailwind also has special values: 0.5 = 2px, 1.5 = 6px, 2.5 = 10px, 3.5 = 14px, and named sizes like full = 100%, screen = 100vw.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Tailwind CSS px-re – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az átváltót?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Érték megadása",
+          "description": "Írjon be egy számot a beviteli mezőbe. Használhat pontot vagy vesszőt tizedesjegyként.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Eredmény leolvasása",
+          "description": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben – kattintás nélkül.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Másolás vagy megfordítás",
+          "description": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor hasznos ez az átváltó?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webfejlesztés",
+          "description": "Ile px ma p-6? Odpowiedź: 24 px (1,5 rem)."
+        },
+        {
+          "icon": "RiLayout2Line",
+          "title": "Konwersja z Figma",
+          "description": "Projekt w px → odpowiednie klasy Tailwind."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Tervezés és mérés",
+          "description": "Dopasowanie układu do wymaganego projektu graficznego."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Współpraca z designerami",
+          "description": "Designer podaje px, programista potrzebuje klas Tailwind."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt az átváltót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "Minden számítás helyben, a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Azonnali eredmények",
+          "description": "Az eredmény azonnal frissül gépelés közben – nem kell semmilyen gombra kattintani."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kétirányú átváltás",
+          "description": "A Megfordítás gomb segítségével egy kattintással válthat irányt."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencia táblázat",
+          "description": "Kész táblázat gyakran átváltott értékekkel és kontextuális leírásokkal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az átváltás?",
+      "html": "<p class=\"text-mid mb-4\">Tailwind spacing = value × 0.25 rem. At 16px root: spacing × 4 = pixels.</p><p class=\"text-mid mb-4\">p-1 = 4px, p-2 = 8px, p-4 = 16px, p-8 = 32px, p-16 = 64px, p-32 = 128px, p-64 = 256px.</p><p class=\"text-mid\">Font sizes use different values: text-sm = 14px, text-base = 16px, text-lg = 18px, text-xl = 20px, text-2xl = 24px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gyakorlati tippek",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Spacing: p-1 = 4px, p-2 = 8px, p-3 = 12px, p-4 = 16px, p-6 = 24px, p-8 = 32px.</li><li>Width: w-1 = 4px, w-4 = 16px, w-12 = 48px, w-24 = 96px, w-48 = 192px, w-64 = 256px.</li><li>Breakpoints: sm ≥ 640px, md ≥ 768px, lg ≥ 1024px, xl ≥ 1280px.</li><li>Max-width: max-w-sm = 384px, max-w-md = 448px, max-w-lg = 512px, max-w-xl = 576px.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Tailwind spacing scale",
+      "featureLabel": "Tailwind",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "rem"
+        },
+        {
+          "id": "unit2",
+          "name": "px (at 16px root)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1",
+          "values": {
+            "unit1": "0.25rem",
+            "unit2": "4px"
+          }
+        },
+        {
+          "name": "4",
+          "values": {
+            "unit1": "1rem",
+            "unit2": "16px"
+          }
+        },
+        {
+          "name": "8",
+          "values": {
+            "unit1": "2rem",
+            "unit2": "32px"
+          }
+        },
+        {
+          "name": "16",
+          "values": {
+            "unit1": "4rem",
+            "unit2": "64px"
+          }
+        },
+        {
+          "name": "64",
+          "values": {
+            "unit1": "16rem",
+            "unit2": "256px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Mennyi ist p-4 in Pixel?",
+          "answer": "p-4 = 1rem = 16px bei der Standard-Wurzelschriftgröße."
+        },
+        {
+          "question": "Was sind die Tailwind-Breakpoints in Pixel?",
+          "answer": "sm = 640px, md = 768px, lg = 1024px, xl = 1280px, 2xl = 1536px."
+        },
+        {
+          "question": "Helyben történnek a számítások?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Tailwind CSS px-re – Arteon",
+      "defaultSubject": "Visszajelzés: tw-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "További ingyenes eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

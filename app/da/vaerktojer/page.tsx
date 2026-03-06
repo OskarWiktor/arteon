@@ -43,7 +43,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Gratis onlineværktøjer — billedkonvertere, SEO, farver, favicon',
+  name: 'Gratis onlineværktøjer - billedkonvertere, SEO, farver, favicon',
   description:
     'Gratis onlineværktøjer: 12 billedkonvertere (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, billedredaktør, teksttæller, farvepaletter og QR-koder. Uden registrering.',
   url: toAbsoluteUrl('/da/vaerktojer'),
@@ -556,7 +556,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Online billedredaktør',
               topImageAlt: 'Online billedredaktør Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/online-billedredaktor-da.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/billedrediger-da.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -624,6 +624,23 @@ export default function ToolsIndexPage() {
                   <div className="mt-4">
                     <Button arrow link="/da/vaerktojer/ord-og-tegntaeller">
                       Abn vaerktojet
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Lorem Ipsum-generator',
+              topImageAlt: 'Lorem Ipsum-generator Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-da.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Generer udfyldningstekst i 8 stilarter og 9 tilstande. Lorem Ipsum, Hipster, Business, Bacon og mere. Kopiér som tekst eller HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/da/vaerktojer/lorem-ipsum-generator">
+                      Åbn værktøj
                     </Button>
                   </div>
                 </div>
@@ -742,7 +759,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Billedformat-konvertere"
-          description="12 online billedkonvertere — konvertér mellem JPG, PNG, WebP, SVG, BMP og GIF. Konvertering i browseren, ingen filer sendes."
+          description="12 online billedkonvertere - konvertér mellem JPG, PNG, WebP, SVG, BMP og GIF. Konvertering i browseren, ingen filer sendes."
           grid="three"
           items={[
             {
@@ -841,16 +858,25 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Datakonvertere"
+          description="Online dataformatkonvertere — konverter mellem CSV, JSON, XML, YAML, Markdown og HTML. Behandling i browseren."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG til PNG-konverter',
-              topImageAlt: 'SVG til PNG-konverter Arteon',
+              title: 'CSV til JSON',
+              topImageAlt: 'CSV til JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Konvertér SVG-vektorgrafik til PNG. Ideel til dokumenter og sociale medier.</p>
+                  <p>Konverter CSV til JSON-format. Automatisk separatordetektion og formatering.</p>
                   <div className="mt-4">
-                    <Button arrow link="/da/vaerktojer/svg-til-png-konverter">
+                    <Button arrow link="/da/vaerktojer/csv-til-json-konverter">
                       Åbn værktøj
                     </Button>
                   </div>
@@ -859,14 +885,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG til JPG-konverter',
-              topImageAlt: 'SVG til JPG-konverter Arteon',
+              title: 'JSON til CSV',
+              topImageAlt: 'JSON til CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Konvertér SVG-grafik til kompakt JPG. Mindre fil, fuld kompatibilitet.</p>
+                  <p>Konverter JSON-data til CSV-format. Behandling i browseren.</p>
                   <div className="mt-4">
-                    <Button arrow link="/da/vaerktojer/svg-til-jpg-konverter">
+                    <Button arrow link="/da/vaerktojer/json-til-csv-konverter">
                       Åbn værktøj
                     </Button>
                   </div>
@@ -875,14 +901,62 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP til JPG-konverter',
-              topImageAlt: 'BMP til JPG-konverter Arteon',
+              title: 'XML til JSON',
+              topImageAlt: 'XML til JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Konvertér BMP-filer til let JPG. Drastisk størrelsesreduktion.</p>
+                  <p>Konverter XML-data til JSON. Browserbaseret konvertering med validering.</p>
                   <div className="mt-4">
-                    <Button arrow link="/da/vaerktojer/bmp-til-jpg-konverter">
+                    <Button arrow link="/da/vaerktojer/xml-til-json-konverter">
+                      Åbn værktøj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON til XML',
+              topImageAlt: 'JSON til XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter JSON-data til gyldig XML. Konvertering med formatering.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/da/vaerktojer/json-til-xml-konverter">
+                      Åbn værktøj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML til JSON',
+              topImageAlt: 'YAML til JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter YAML-konfiguration til JSON. Validering og formatering.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/da/vaerktojer/yaml-til-json-konverter">
+                      Åbn værktøj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON til YAML',
+              topImageAlt: 'JSON til YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Konverter JSON-data til læsbar YAML. Behandling i browseren.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/da/vaerktojer/json-til-yaml-konverter">
                       Åbn værktøj
                     </Button>
                   </div>
@@ -920,6 +994,7 @@ export default function ToolsIndexPage() {
             { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Tilgaengelig pa dansk', description: 'Alle vaerktojer er tilgaengelige pa dansk -- graenseflade, vejledninger og beskeder.' },
           ]}
         />
+
         <Gap variant="line" />
         <FaqPanels items={faqItems} title="Ofte stillede sporgsmal om vores vaerktojer" />
         <Gap size="sm" />

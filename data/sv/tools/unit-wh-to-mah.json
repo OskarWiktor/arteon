@@ -1,0 +1,273 @@
+{
+  "toolKey": "whToMah",
+  "locale": "sv",
+  "metadata": {
+    "title": "Wh till mAh – omvandlare",
+    "description": "Omvandla Wh till mAh och tvärtom. Justerbar spänning.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/sv/verktyg/wh-till-mah-omvandlare"
+  },
+  "hero": {
+    "title": "Wh till mAh",
+    "description": "Denna omvandlare räknar om direkt. Ange ett värde så visas resultatet omedelbart.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/wh-till-mah-omvandlare",
+      "label": "Wh till mAh"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Wh till mAh – omvandlare",
+      "alternateName": ["Wh till mAh"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Omvandla Wh till mAh och tvärtom. Justerbar spänning.",
+      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+    },
+    "howTo": {
+      "name": "Så använder du omvandlaren",
+      "description": "Snabbguide för att använda omvandlaren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Ange värde",
+          "text": "Skriv ett tal i inmatningsfältet till vänster."
+        },
+        {
+          "name": "Läs av resultatet",
+          "text": "Konverteringsresultatet visas omedelbart i fältet bredvid."
+        },
+        {
+          "name": "Kopiera eller vänd",
+          "text": "Klicka på Kopiera resultat eller på Vänd för att konvertera i andra riktningen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "När ska man omvandla Wh till mAh?",
+      "html": "<p class=\"text-mid mb-4\">Wattimmar (Wh) och milliamperetimmar (mAh) mäter batterikapacitet. Förhållandet beror på spänning: mAh = Wh × 1 000 / V.</p><p class=\"text-mid mb-4\">Telefoner i mAh (t.ex. 5 000 mAh vid 3,7V = 18,5 Wh). Laptops och powerbanks i Wh (flyggräns: 100 Wh).</p><p class=\"text-mid\">Alla beräkningar körs lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Wh to mAh converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Så använder du omvandlaren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ange värde",
+          "description": "Skriv ett tal i inmatningsfältet. Du kan använda punkt eller komma som decimalavskiljare.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Läs av resultatet",
+          "description": "Konverteringsresultatet visas omedelbart i fältet bredvid – utan att klicka.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiera eller vänd",
+          "description": "Klicka på Kopiera resultat eller använd knappen Vänd.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När är denna omvandlare användbar?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBattery2ChargeLine",
+          "title": "Powerbanks",
+          "description": "Flyggräns: 100 Wh. 20 000 mAh vid 3,7V = 74 Wh (tillåtet)."
+        },
+        {
+          "icon": "RiFlightTakeoffLine",
+          "title": "Telefoner",
+          "description": "5 000 mAh vid 3,7V = 18,5 Wh."
+        },
+        {
+          "icon": "RiLaptopLine",
+          "title": "Laptops",
+          "description": "Batterier på 40–99 Wh."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Tekniska tillämpningar",
+          "description": "Paneler producerar Wh, batterier lagrar mAh."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna omvandlare speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Alla beräkningar görs lokalt i din webbläsare. Ingen data skickas till någon server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultat i realtid",
+          "description": "Resultatet uppdateras omedelbart när du skriver – inget klick krävs."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Dubbelriktad konvertering",
+          "description": "Vänd-knappen låter dig konvertera i båda riktningarna med ett klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenstabell",
+          "description": "En färdig tabell med ofta konverterade värden och kontextuella beskrivningar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">Energi (Wh) = Kapacitet (Ah) × Spänning (V). Alltså: mAh = Wh × 1 000 / V.</p><p class=\"text-mid\">Spänningen är avgörande! Samma Wh ger olika mAh vid olika spänningar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">Energi (Wh) = Kapacitet (Ah) × Spänning (V). Alltså: mAh = Wh × 1 000 / V.</p><p class=\"text-mid\">Spänningen är avgörande! Samma Wh ger olika mAh vid olika spänningar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Wh vs mAh",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Wh"
+        },
+        {
+          "id": "unit2",
+          "name": "mAh",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Mäter",
+          "values": {
+            "unit1": "Energi",
+            "unit2": "Laddning"
+          }
+        },
+        {
+          "name": "Inkluderar spänning",
+          "values": {
+            "unit1": "Ja",
+            "unit2": "Nej (kräver V)"
+          }
+        },
+        {
+          "name": "Användning",
+          "values": {
+            "unit1": "Laptops, EV",
+            "unit2": "Telefoner, powerbanks"
+          }
+        },
+        {
+          "name": "Jämförelse",
+          "values": {
+            "unit1": "Direkt vid alla V",
+            "unit2": "Bara vid samma V"
+          }
+        },
+        {
+          "name": "Flyggräns",
+          "values": {
+            "unit1": "100 Wh",
+            "unit2": "~27 000 mAh vid 3,7V"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hur omvandlar jag Wh till mAh?",
+          "answer": "mAh = Wh × 1 000 / spänning. 100 Wh vid 3,7V = 27 027 mAh."
+        },
+        {
+          "question": "Körs beräkningarna lokalt?",
+          "answer": "Ja. Alla beräkningar körs i din webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Wh till mAh – Arteon",
+      "defaultSubject": "Feedback: wh-to-mah"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra gratis verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

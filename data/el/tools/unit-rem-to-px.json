@@ -1,0 +1,277 @@
+{
+  "toolKey": "remToPx",
+  "locale": "el",
+  "metadata": {
+    "title": "Rem σε px – μετατροπέας",
+    "description": "Μετατρέψτε CSS rem σε pixel και αντίστροφα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-rem-se-px"
+  },
+  "hero": {
+    "title": "Rem σε px",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-rem-se-px",
+      "label": "rem σε px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Rem σε px – μετατροπέας",
+      "alternateName": ["Rem σε px"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε CSS rem σε pixel και αντίστροφα.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: Rem σε px?",
+      "html": "<p class=\"text-mid mb-4\">The CSS rem unit is relative to the root element (html) font size. By default, browsers set this to 16px, so 1rem = 16px. Unlike em, rem does not compound — it always references the root.</p><p class=\"text-mid mb-4\">Rem is the recommended unit for modern responsive web design. It provides consistent, scalable sizing that respects user accessibility preferences.</p><p class=\"text-mid mb-4\">Converting rem to px helps understand the actual rendered size when designing or debugging CSS layouts.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Rem σε px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web ανάπτυξη",
+          "description": "Przeliczanie makiet (px) na rem: padding 24 px = 1,5 rem."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Responsywność",
+          "description": "Rem skaluje się z preferencjami użytkownika – lepsze od stałych pikseli."
+        },
+        {
+          "icon": "RiAccessibilityLine",
+          "title": "Dostępność (WCAG)",
+          "description": "Rem respektuje ustawienia rozmiaru tekstu użytkownika."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Systemy projektowe",
+          "description": "Skale spacing w rem: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">px = rem × root font size. Default root font size = 16px.</p><p class=\"text-mid mb-4\">If html { font-size: 62.5% }, root = 10px, so 1.6rem = 16px.</p><p class=\"text-mid\">Rem never compounds. 1rem is always the same regardless of nesting depth. This makes it more predictable than em.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>At 16px root: 0.75rem = 12px, 0.875rem = 14px, 1rem = 16px, 1.25rem = 20px, 1.5rem = 24px, 2rem = 32px.</li><li>Tailwind: text-sm = 0.875rem (14px), text-base = 1rem (16px), text-lg = 1.125rem (18px).</li><li>Minimum touch target: WCAG recommends 44×44px = 2.75rem at 16px root.</li><li>Media queries in rem: @media (min-width: 48rem) = 768px at 16px root.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "rem vs em vs px",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "rem"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Reference",
+          "values": {
+            "unit1": "Root font size",
+            "unit2": "Fixed pixel"
+          }
+        },
+        {
+          "name": "Compounds",
+          "values": {
+            "unit1": "No (always root)",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Responsive",
+          "values": {
+            "unit1": "Yes",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Accessibility",
+          "values": {
+            "unit1": "Respects user settings",
+            "unit2": "Fixed size"
+          }
+        },
+        {
+          "name": "Predictability",
+          "values": {
+            "unit1": "Consistent everywhere",
+            "unit2": "Always consistent"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Πόσα Pixel sind 1rem?",
+          "answer": "Standardmäßig 1rem = 16px. Änderbar durch Anpassung der Wurzel-Schriftgröße."
+        },
+        {
+          "question": "Sollte man rem oder px verwenden?",
+          "answer": "Rem für Typografie, Abstände und Layout. Px für Rahmen, Schatten und nicht-skalierende Eigenschaften."
+        },
+        {
+          "question": "Should I use rem or px?",
+          "answer": "Use rem for typography, spacing, and layout. Use px for borders, box-shadows, and properties that should not scale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "rem σε px – Arteon",
+      "defaultSubject": "Feedback: rem-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

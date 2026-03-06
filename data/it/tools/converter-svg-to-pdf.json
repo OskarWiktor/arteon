@@ -2,7 +2,7 @@
   "toolKey": "svgToPdf",
   "locale": "it",
   "metadata": {
-    "title": "Convertitore SVG in PDF — SVG PDF",
+    "title": "Convertitore SVG in PDF - SVG PDF",
     "description": "Converti immagini SVG in documenti PDF. Combina più file in un unico PDF. Gratuito.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-svg-in-pdf"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Converti",
-          "text": "Clicca su Converti — i file vengono elaborati localmente nel browser."
+          "text": "Clicca su Converti - i file vengono elaborati localmente nel browser."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire SVG in PDF?",
-      "html": "<p class=\"text-mid mb-4\">SVG e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PDF puo offrire vantaggi significativi — file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file SVG nel formato PDF direttamente nel browser. Nessun file viene inviato a server — l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">SVG e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PDF puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file SVG nel formato PDF direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "SVG to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Converti",
-          "description": "Clicca su Converti — i file vengono elaborati localmente nel browser.",
+          "description": "Clicca su Converti - i file vengono elaborati localmente nel browser.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Qualita — cosa scegliere per SVG in PDF?",
-      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predefinito) — buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% — per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% — quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la differenza tra SVG originale e PDF risultante e impercettibile.</p>"
+      "title": "Qualita - cosa scegliere per SVG in PDF?",
+      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predefinito) - buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% - per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% - quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la differenza tra SVG originale e PDF risultante e impercettibile.</p>"
     },
     {
       "type": "gap",
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How SVG to PDF conversion preserves vector quality",
+      "html": "<p class=\"text-mid mb-4\">SVG and PDF are both capable of storing vector data. When converting SVG to PDF, the vector paths, curves, and shapes are preserved — the output scales to any size without pixelation, just like the original SVG.</p><p class=\"text-mid mb-4\">This makes SVG to PDF conversion ideal for logos, brand assets, technical diagrams, and any graphics that need to be printed at various sizes. The PDF output is print-ready with sharp edges at any resolution.</p><p class=\"text-mid\">Text in SVG may be converted to outlines (paths) in the PDF output, ensuring correct rendering regardless of available fonts on the viewer’s system.</p>"
     },
     {
       "type": "faq",

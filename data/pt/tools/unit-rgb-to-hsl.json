@@ -1,0 +1,273 @@
+{
+  "toolKey": "rgbToHsl",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de RGB para HSL – cores",
+    "description": "Converta valores de cor RGB para HSL. Para manipulação de cores em CSS.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-rgb-para-hsl"
+  },
+  "hero": {
+    "title": "Converter RGB para HSL",
+    "description": "Este conversor converte instantaneamente. Introduza um valor e o resultado aparece imediatamente.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-rgb-para-hsl",
+      "label": "RGB para HSL"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de RGB para HSL – cores",
+      "alternateName": ["Converter RGB para HSL"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converta valores de cor RGB para HSL. Para manipulação de cores em CSS.",
+      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+    },
+    "howTo": {
+      "name": "Como usar o conversor",
+      "description": "Guia rápido para usar o conversor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduzir valor",
+          "text": "Escreva um número no campo de entrada à esquerda."
+        },
+        {
+          "name": "Ler o resultado",
+          "text": "O resultado da conversão aparece instantaneamente no campo ao lado."
+        },
+        {
+          "name": "Copiar ou inverter",
+          "text": "Clique em Copiar resultado ou em Inverter para converter na direção oposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa converter RGB em HSL?",
+      "html": "<p class=\"text-mid mb-4\">HSL (Matiz, Saturação, Luminosidade) é uma representação de cor mais intuitiva. Matiz = ângulo de cor (0–360°), Saturação = intensidade (0–100%), Luminosidade = claro/escuro (0–100%).</p><p class=\"text-mid mb-4\">HSL facilita as variações: luminosidade para tons/sombras, saturação para versões suaves/vibrantes, matiz para cores complementares.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Conversor de RGB para HSL – cores – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o conversor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Insira um valor",
+          "description": "Digite um número no campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leia o resultado",
+          "description": "O resultado aparece instantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copie ou inverta",
+          "description": "Copie o resultado ou inverta a direção de conversão.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando este conversor é útil?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Manipulação CSS",
+          "description": "HSL facilita estados hover: escurecer reduzindo L, dessaturar reduzindo S."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Design systems",
+          "description": "Crie escalas de cor consistentes variando a luminosidade."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Teoria das cores",
+          "description": "HSL corresponde ao círculo cromático. Complementar = H+180°."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Acessibilidade",
+          "description": "A luminosidade HSL ajuda a garantir contraste suficiente."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que diferencia este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os cálculos são executados localmente no seu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados em tempo real",
+          "description": "O resultado atualiza enquanto digita."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversão bidirecional",
+          "description": "Converta em ambas as direções com um clique."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela de referência",
+          "description": "Tabela com valores comuns e descrições contextuais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Normalize RGB para 0–1. Encontre max e min. L = (max + min) / 2.</p><p class=\"text-mid\">HSL é completamente reversível — de HSL para RGB obtém-se exatamente a mesma cor.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Normalize RGB para 0–1. Encontre max e min. L = (max + min) / 2.</p><p class=\"text-mid\">HSL é completamente reversível — de HSL para RGB obtém-se exatamente a mesma cor.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs HSL – comparação",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "HSL",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Modelo",
+          "values": {
+            "unit1": "Canais aditivos",
+            "unit2": "Matiz/Saturação/Luminosidade"
+          }
+        },
+        {
+          "name": "Valores",
+          "values": {
+            "unit1": "0–255 por canal",
+            "unit2": "H: 0–360°, S/L: 0–100%"
+          }
+        },
+        {
+          "name": "Intuitivo",
+          "values": {
+            "unit1": "Difícil de prever",
+            "unit2": "Fácil de ajustar"
+          }
+        },
+        {
+          "name": "Teoria das cores",
+          "values": {
+            "unit1": "Não baseado em círculo",
+            "unit2": "Corresponde ao círculo cromático"
+          }
+        },
+        {
+          "name": "CSS",
+          "values": {
+            "unit1": "rgb(R, G, B)",
+            "unit2": "hsl(H, S%, L%)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "O que é HSL?",
+          "answer": "Matiz (ângulo 0–360°), Saturação (intensidade 0–100%), Luminosidade (0–100%). Trabalho de cor mais intuitivo."
+        },
+        {
+          "question": "Os cálculos são feitos localmente?",
+          "answer": "Sim. Todos os cálculos são executados no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "RGB na HSL – Arteon",
+      "defaultSubject": "Feedback: rgb-to-hsl"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

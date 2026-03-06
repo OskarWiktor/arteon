@@ -1,0 +1,289 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "de",
+  "metadata": {
+    "title": "Meter in Fuß umrechnen – Längenrechner",
+    "description": "Rechnen Sie Meter in Fuß um und umgekehrt. Unverzichtbar für Körpergröße, Bau und Luftfahrt.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/meter-in-fuss-umrechner"
+  },
+  "hero": {
+    "title": "Meter in Fuß umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/meter-in-fuss-umrechner",
+      "label": "m in ft"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Meter in Fuß umrechnen – Längenrechner",
+      "alternateName": ["Meter in Fuß umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Rechnen Sie Meter in Fuß um und umgekehrt. Unverzichtbar für Körpergröße, Bau und Luftfahrt.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter m na stopy",
+      "description": "Anleitung: m na stopy.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann muss man Meter in Fuß umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Meter (m) ist die Basislängeneinheit im metrischen System. Fuß (ft) ist die Standard-Längeneinheit im imperialen System. 1 m = 3,28084 Fuß, oder 1 Fuß = 0,3048 m genau.</p><p class=\"text-mid mb-4\">Die Umrechnung ist wichtig für Körpergröße (US-Formulare verwenden Fuß/Zoll), Bau und Immobilien (US-Grundstücksmaße), Luftfahrt (Flughöhe in Fuß) und Sport.</p><p class=\"text-mid mb-4\">Körpergröße: 1,70 m = 5'7″, 1,80 m = 5'11″, 1,90 m = 6'3″. Zimmerhöhe: 2,5 m = 8,2 ft.</p><p class=\"text-mid\">Alle Berechnungen laufen lokal in Ihrem Browser — nichts wird an einen Server gesendet.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Meter in Fuß umrechnen – Längenrechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So verwenden Sie den Konverter",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein. Sie können einen Punkt oder ein Komma als Dezimaltrennzeichen verwenden.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Konvertierungsergebnis erscheint sofort im Feld daneben – ohne Klicken.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Klicken Sie auf Ergebnis kopieren oder verwenden Sie die Umkehren-Taste.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Konverter nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuildingLine",
+          "title": "Budownictwo",
+          "description": "Amerykańskie projekty budowlane podają wymiary pomieszczeń i działek w stopach."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Lotnictwo",
+          "description": "Wysokość lotu podaje się w stopach: 30 000 ft = 9 144 m."
+        },
+        {
+          "icon": "RiBodyScanLine",
+          "title": "Wzrost",
+          "description": "Nutzen Sie diesen Konverter für schnelle und präzise Umrechnungen."
+        },
+        {
+          "icon": "RiMountainLine",
+          "title": "Geografia",
+          "description": "Wysokości szczytów górskich często podaje się w stopach: Everest = 29 032 ft."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen laufen lokal in Ihrem Browser. Keine Daten werden an einen Server gesendet."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich sofort beim Tippen – ohne Klicken."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Konvertierung",
+          "description": "Die Umkehren-Taste ermöglicht die Konvertierung in beide Richtungen mit einem Klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Eine fertige Tabelle mit häufig konvertierten Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung?",
+      "html": "<p class=\"text-mid mb-4\">Der internationale Fuß ist als genau 0,3048 Meter definiert. Daher gilt: 1 Meter = 1/0,3048 = 3,28084 Fuß.</p><p class=\"text-mid mb-4\">Um Meter in Fuß umzurechnen, multiplizieren Sie mit 3,28084. Um Fuß in Meter umzurechnen, multiplizieren Sie mit 0,3048.</p><p class=\"text-mid\">Für Fuß und Zoll: Multiplizieren Sie Meter mit 3,28084, nehmen Sie die ganze Zahl als Fuß, multiplizieren Sie die Nachkommastellen mit 12 für Zoll.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktische Tipps",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Körpergröße: 1,60 m = 5'3″, 1,70 m = 5'7″, 1,80 m = 5'11″, 1,90 m = 6'3″, 2,00 m = 6'7″.</li><li>Zimmer: Deckenhöhe 2,4 m = 7,9 ft, 2,7 m = 8,9 ft, 3,0 m = 9,8 ft.</li><li>1 Yard = 3 Fuß = 0,9144 m.</li><li>Mount Everest: 8.849 m = 29.032 ft. Burj Khalifa: 828 m = 2.717 ft.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Meter (m) vs. Fuß (ft) – Vergleich",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Meter (m)"
+        },
+        {
+          "id": "unit2",
+          "name": "Fuß (ft)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisch (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Basiswert",
+          "values": {
+            "unit1": "SI-Basiseinheit",
+            "unit2": "0,3048 m"
+          }
+        },
+        {
+          "name": "Körpergröße",
+          "values": {
+            "unit1": "International (m)",
+            "unit2": "USA (ft/in)"
+          }
+        },
+        {
+          "name": "Luftfahrt",
+          "values": {
+            "unit1": "Pistenlänge",
+            "unit2": "Höhenstandard"
+          }
+        },
+        {
+          "name": "Immobilien",
+          "values": {
+            "unit1": "International (m²)",
+            "unit2": "USA (ft²)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele Fuß ist 1 Meter?",
+          "answer": "1 Meter = 3,28084 Fuß. Etwa 3 Fuß 3 Zoll."
+        },
+        {
+          "question": "Wie rechne ich Meter in Fuß und Zoll um?",
+          "answer": "Multiplizieren Sie Meter mit 3,28084. Die ganze Zahl = Fuß. Nachkommastellen × 12 = Zoll. Beispiel: 1,80 m = 5,906 ft = 5 ft 10,87 in ≈ 5'11″."
+        },
+        {
+          "question": "Wie viele Meter sind 6 Fuß?",
+          "answer": "6 Fuß = 1,8288 Meter."
+        },
+        {
+          "question": "Wie groß ist 1,80 m in Fuß?",
+          "answer": "1,80 m = 5 Fuß 10,87 Zoll, gerundet 5'11″."
+        },
+        {
+          "question": "Warum verwendet die Luftfahrt Fuß?",
+          "answer": "Die ICAO hat die Flughöhe in Fuß standardisiert. Die meisten Länder verwenden Fuß für Höhenangaben, auch wenn sie sonst das metrische System nutzen."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen laufen in Ihrem Browser. Es werden keine Daten an einen Server gesendet."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "m na stopy – Arteon",
+      "defaultSubject": "Feedback: meters-to-feet"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "toolKey": "webpToTiff",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter WebP na TIFF — WebP TIFF",
+    "title": "Konwerter WebP na TIFF - WebP TIFF",
     "description": "Zamień pliki WebP na bezstratny TIFF. Z formatu webowego do profesjonalnego. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-webp-na-tiff"
@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień pliki WebP na bezstratny TIFF. Z formatu webowego do profesjonalnego. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
-      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
       "alternateName": ["Zamiana WEBP na TIFF", "Konwersja WEBP do TIFF", "Darmowy konwerter WEBP na TIFF"]
     },
     "howTo": {
@@ -43,12 +43,12 @@
         {
           "position": 2,
           "name": "Konwertuj",
-          "text": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+          "text": "Kliknij Konwertuj - pliki zostaną przetworzone lokalnie w przeglądarce."
         },
         {
           "position": 3,
           "name": "Pobierz",
-          "text": "Pobierz gotowe pliki TIFF — pojedynczo lub wszystkie naraz."
+          "text": "Pobierz gotowe pliki TIFF - pojedynczo lub wszystkie naraz."
         }
       ]
     }
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować WebP na TIFF?",
-      "html": "<p class=\"text-mid mb-4\">WebP (WebP) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do obrazów internetowych.</p><p class=\"text-mid mb-4\">Konwersja WebP na TIFF (Tagged Image File Format) daje więcej elastyczności w użyciu obrazów.</p><p class=\"text-mid mb-4\">TIFF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, TIFF zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików WebP, ile potrzebujesz – całkowicie za darmo.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP to format obrazu stworzony przez Google, zoptymalizowany pod kątem internetu. Oferuje kompresję o 25–35% lepszą niż JPG, ale nie jest obsługiwany przez wiele programów graficznych, systemów DTP i drukarni. Gdy zdjęcie WebP musi trafić do profesjonalnej obróbki lub druku, konwersja na TIFF jest naturalnym wyborem.</p><p class=\"text-mid mb-4\">TIFF (Tagged Image File Format) to standard branżowy w poligrafii, fotografii i archiwizacji. Obsługuje kompresję bezstratną (LZW), profile kolorów ICC (sRGB, Adobe RGB, CMYK), głębię 16 i 32 bitów na kanał oraz kanał alfa. Konwersja WebP na TIFF zamraża aktualny stan obrazu w formacie, który nie degraduje przy kolejnych zapisach.</p><p class=\"text-mid mb-4\">Jeśli oryginalny plik WebP używał kompresji stratnej, konwersja na TIFF nie odtworzy utraconych danych — ale zapobiegnie dalszej degradacji. WebP bezstratny konwertuje się na TIFF bez jakiejkolwiek utraty jakości.</p><p class=\"text-mid\">Konwerter przetwarza pliki lokalnie w przeglądarce — nic nie jest wysyłane na serwer. Bez rejestracji, bez limitów, bez znaków wodnych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwersja WEBP na TIFF",
       "variant": "right"
@@ -102,24 +102,24 @@
       "grid": "two",
       "items": [
         {
-          "icon": "RiGlobalLine",
-          "title": "Optymalizacja stron www",
-          "description": "Konwertuj WebP na TIFF, aby przygotować obrazy do publikacji w internecie."
-        },
-        {
-          "icon": "RiMailLine",
-          "title": "E-mail i udostępnianie",
-          "description": "Pliki TIFF są kompatybilne z większością nowoczesnych platform. Konwertuj na TIFF, aby uzyskać obrazy wysokiej jakości do udostępniania."
-        },
-        {
-          "icon": "RiShoppingBag3Line",
-          "title": "E-commerce i marketplace",
-          "description": "Platformy takie jak Allegro, OLX, Empik, Ceneo mogą wymagać określonych formatów – konwersja na TIFF zapewnia zgodność zdjęć z ich wymaganiami."
-        },
-        {
           "icon": "RiPrinterLine",
-          "title": "Dokumenty i archiwizacja",
-          "description": "TIFF to doskonały wybór do archiwizacji i profesjonalnego druku dzięki kompresji bezstratnej."
+          "title": "Przygotowanie do druku",
+          "description": "Drukarnie nie obsługują formatu WebP. Konwersja na TIFF z profilem CMYK przygotowuje zdjęcia do druku offsetowego, wielkoformatowego i cyfrowego."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Edycja w Photoshopie / Lightroom",
+          "description": "Starsze wersje Photoshop CC nie otwierają plików WebP bez wtyczki. TIFF jest natywnie obsługiwany przez wszystkie wersje i zachowuje pełną jakość do retuszu i korekcji kolorów."
+        },
+        {
+          "icon": "RiArchiveDrawerLine",
+          "title": "Archiwizacja zdjęć ze stron",
+          "description": "Jeśli pobrałeś zdjęcia WebP ze strony internetowej i chcesz je przechować długoterminowo, konwersja na TIFF zamraża jakość i zapewnia kompatybilność z przyszłym oprogramowaniem."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Skład publikacji",
+          "description": "InDesign, QuarkXPress i Scribus nie importują plików WebP. TIFF to preferowany format do składu katalogów, broszur i książek."
         }
       ]
     },
@@ -278,7 +278,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików WebP, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików WebP, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -317,11 +317,11 @@
         },
         {
           "question": "Czy konwersja WebP na TIFF jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików WebP jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy plik TIFF będzie większy niż oryginalny WebP?",
+          "answer": "Tak, znacznie. WebP stosuje agresywną kompresję (stratne WebP są o 25–35% mniejsze niż JPG), a TIFF jest formatem bezstratnym. Plik TIFF może być 10–50× większy niż WebP — to normalne i zamierzone. Większy rozmiar to cena za pełną jakość i kompatybilność z profesjonalnym oprogramowaniem."
         }
       ]
     },

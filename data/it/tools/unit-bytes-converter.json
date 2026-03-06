@@ -1,0 +1,277 @@
+{
+  "toolKey": "bytesConverter",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore di byte – KB, MB, GB, TB",
+    "description": "Converti tra byte, kilobyte, megabyte, gigabyte e terabyte. Supporta unità binarie e decimali.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-bytes"
+  },
+  "hero": {
+    "title": "Convertire byte, KB, MB, GB, TB",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-bytes",
+      "label": "Convertitore byte"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore di byte – KB, MB, GB, TB",
+      "alternateName": ["Convertire byte, KB, MB, GB, TB"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti tra byte, kilobyte, megabyte, gigabyte e terabyte. Supporta unità binarie e decimali.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire byte?",
+      "html": "<p class=\"text-mid mb-4\">L’archiviazione digitale si misura in byte e multipli: kilobyte (KB), megabyte (MB), gigabyte (GB) e terabyte (TB). Esistono due sistemi: decimale (1 KB = 1.000 byte) e binario (1 KiB = 1.024 byte).</p><p class=\"text-mid mb-4\">I produttori usano il decimale (un disco da “500 GB” = 500.000.000.000 byte), mentre i sistemi operativi usano il binario (~465 GiB per lo stesso disco).</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore di byte – KB, MB, GB, TB – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento. Puoi usare punto o virgola come separatore decimale.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato della conversione appare istantaneamente nel campo adiacente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Clicca su Copia risultato o usa il pulsante Inverti per convertire nella direzione opposta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Capacità di archiviazione",
+          "description": "Confronta spazio annunciato vs reale: un disco da “1 TB” mostra 931 GiB su Windows."
+        },
+        {
+          "icon": "RiUploadCloudLine",
+          "title": "Trasferimento file",
+          "description": "Calcola tempi di trasferimento: la rete usa bit (Mbps), i file byte."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Cloud storage",
+          "description": "Pianifica i costi cloud capendo quanti GB occupano i tuoi file."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Programmazione",
+          "description": "Buffer, allocazione memoria e strutture dati richiedono calcoli precisi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser. Nessun dato viene inviato."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna istantaneamente mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Il pulsante Inverti permette di convertire in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Una tabella con valori di conversione comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione byte?",
+      "html": "<p class=\"text-mid mb-4\">Decimale (SI): 1 KB = 1.000 byte, 1 MB = 1.000 KB. Ogni livello moltiplica per 1.000.</p><p class=\"text-mid mb-4\">Binario (IEC): 1 KiB = 1.024 byte, 1 MiB = 1.024 KiB. Ogni livello moltiplica per 1.024.</p><p class=\"text-mid\">La differenza cresce: 1 TB (decimale) = 0,909 TiB (binario).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione byte?",
+      "html": "<p class=\"text-mid mb-4\">Decimale (SI): 1 KB = 1.000 byte, 1 MB = 1.000 KB. Ogni livello moltiplica per 1.000.</p><p class=\"text-mid mb-4\">Binario (IEC): 1 KiB = 1.024 byte, 1 MiB = 1.024 KiB. Ogni livello moltiplica per 1.024.</p><p class=\"text-mid\">La differenza cresce: 1 TB (decimale) = 0,909 TiB (binario).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimale vs Binario – confronto",
+      "featureLabel": "Caratteristica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimale (SI)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binario (IEC)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Moltiplicatore",
+          "values": {
+            "unit1": "1.000",
+            "unit2": "1.024"
+          }
+        },
+        {
+          "name": "Unità",
+          "values": {
+            "unit1": "KB, MB, GB, TB",
+            "unit2": "KiB, MiB, GiB, TiB"
+          }
+        },
+        {
+          "name": "Usato da",
+          "values": {
+            "unit1": "Produttori di archiviazione",
+            "unit2": "Sistemi operativi, RAM"
+          }
+        },
+        {
+          "name": "1 TB equivale a",
+          "values": {
+            "unit1": "1.000.000.000.000 byte",
+            "unit2": "1.099.511.627.776 byte"
+          }
+        },
+        {
+          "name": "Differenza a 1 TB",
+          "values": {
+            "unit1": "1 TB",
+            "unit2": "0,909 TiB"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanti MB è 1 GB?",
+          "answer": "1 GB = 1.000 MB (decimale) o 1 GiB = 1.024 MiB (binario)."
+        },
+        {
+          "question": "Perché il mio disco mostra meno spazio?",
+          "answer": "I produttori usano il decimale, il SO il binario. Un disco da “1 TB” mostra ~931 GiB."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "bajty na KB/MB/GB – Arteon",
+      "defaultSubject": "Feedback: bytes-converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

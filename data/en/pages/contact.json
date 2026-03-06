@@ -6,11 +6,11 @@
   },
   "hero": {
     "title": "Get in touch with the Arteon team",
-    "description": "Report a bug, suggest a new tool, or ask a question — we respond within one business day"
+    "description": "Report a bug, suggest a new tool, or ask a question - we respond within one business day"
   },
   "intro": {
     "title": "Have a question or suggestion?",
-    "textBefore": "We are happy to hear your feedback about our tools. If you found a bug, have an idea for a new tool, or need help — write to us at",
+    "textBefore": "We are happy to hear your feedback about our tools. If you found a bug, have an idea for a new tool, or need help - write to us at",
     "textAfter": ". We respond within one business day."
   },
   "formTitle": "Send us a message",

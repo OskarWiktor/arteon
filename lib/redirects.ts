@@ -103,6 +103,11 @@ export const EDUCATION_REDIRECTS: Record<string, string> = {
   '/edukacja/zdjecia/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie': '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
   '/edukacja/zdjecia/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp':
     '/edukacja/strony/jak-zoptymalizowac-zdjecia-na-strone-www-aby-byla-szybsza-rozmiary-formaty-i-webp',
+  // Błędne kategorie zgłoszone przez Bing Webmaster Tools (2026-03-06)
+  '/edukacja/grafika/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie': '/edukacja/strony/favicon-co-to-za-ikona-jak-ja-stworzyc-i-przygotowac-aby-dzialala-poprawnie',
+  '/edukacja/grafika/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie': '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
+  '/edukacja/ux/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie': '/edukacja/strony/kontrast-kolorow-na-stronie-dlaczego-ma-znaczenie',
+  '/edukacja/strony/jak-mierzyc-skutecznosc-strony-internetowej': '/edukacja/seo/jak-mierzyc-skutecznosc-strony-internetowej',
 };
 
 /**

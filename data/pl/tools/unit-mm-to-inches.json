@@ -1,0 +1,289 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter mm na cale – precyzyjny przelicznik",
+    "description": "Przelicz milimetry na cale i odwrotnie. Konwerter jest przydatny w mechanice, elektronice i druku. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-mm-na-cale"
+  },
+  "hero": {
+    "title": "Przelicz milimetry na cale",
+    "description": "Ten konwerter przelicza milimetry na cale i odwrotnie. Jest szczególnie przydatny w mechanice, druku i elektronice.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-mm-na-cale",
+      "label": "mm na cale"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter mm na cale – precyzyjny przelicznik",
+      "alternateName": ["Przelicznik mm na cale", "Kalkulator milimetrów na cale", "Zamiana mm na in"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz milimetry na cale i odwrotnie. Konwerter jest przydatny w mechanice, elektronice i druku. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera mm na cale",
+      "description": "Instrukcja użycia: mm na cale.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy potrzebne jest przeliczanie milimetrów na cale?",
+      "html": "<p class=\"text-mid mb-4\">Milimetr (mm) to jednostka długości równa 1/1000 metra. Cal (in) wynosi dokładnie 25,4 mm. Przelicznik jest stały i precyzyjny – bez zaokrągleń.</p><p class=\"text-mid mb-4\">W mechanice wymiary śrub, nakrętek, rur i elementów złącznych często podaje się w calach (np. śruba 1/4″ = 6,35 mm, 3/8″ = 9,525 mm). Znajomość przelicznika pozwala dobrać odpowiednie narzędzia.</p><p class=\"text-mid mb-4\">W poligrafii i druku grubość papieru, marginesy i wymiary grafik często podaje się w milimetrach (Europa) lub calach (USA). Format A4 to 210 × 297 mm, a amerykański Letter to 8,5 × 11″ = 215,9 × 279,4 mm.</p><p class=\"text-mid\">W elektronice wymiary komponentów, rozstawy pinów i grubości płytek PCB podaje się w milach (1 mil = 1/1000 cala = 0,0254 mm) lub milimetrach. Precyzyjne przeliczanie jest tu niezbędne.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "mm na cale – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiToolsLine",
+          "title": "Mechanika",
+          "description": "Śruby i nakrętki calowe: 1/4″ = 6,35 mm, 1/2″ = 12,7 mm."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Druk i poligrafia",
+          "description": "Marginesy i wymiary grafik: format Letter vs A4, DPI i rozdzielczość."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Elektronika",
+          "description": "Wymiary komponentów, rozstawy pinów, grubości płytek PCB."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Rzemiosło",
+          "description": "Przelicz wymiary materiałów (drewno, metal, tworzywa) z mm na cale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja mm na cale?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja milimetrów na cale wykorzystuje dokładną definicję międzynarodową, według której jeden cal wynosi dokładnie 25,4 milimetra. Ten przelicznik jest precyzyjny i nie zawiera żadnych zaokrągleń — został ustalony jako standard w 1959 roku.</p><p class=\"text-mid mb-4\">Aby zamienić milimetry na cale, narzędzie dzieli podaną wartość przez 25,4. Na przykład 100 mm to około 3,937 cala, a popularna grubość blachy 2 mm to około 0,079 cala. W drugą stronę — aby zamienić cale na milimetry — wystarczy pomnożyć wartość przez 25,4.</p><p class=\"text-mid\">Przelicznik mm na cale jest szczególnie przydatny w mechanice, elektronice i obróbce materiałów, gdzie wymiary często podaje się w milimetrach w Europie, a w calach w krajach anglosaskich.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Popularne śruby calowe: 1/4″ = 6,35 mm, 5/16″ = 7,94 mm, 3/8″ = 9,53 mm, 1/2″ = 12,7 mm.</li><li>1 cal = 25,4 mm. Szybkie przybliżenie: podziel mm przez 25.</li><li>W elektronice 1 mil = 0,001 cala = 0,0254 mm. Rozstaw pinów 2,54 mm = 100 mil.</li><li>Grubość papieru biurowego: około 0,1 mm = 0,004″.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Milimetr (mm) vs Cal (in) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Milimetr (mm)"
+        },
+        {
+          "id": "unit2",
+          "name": "Cal (in)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metryczny (SI)",
+            "unit2": "Imperialny"
+          }
+        },
+        {
+          "name": "Przelicznik",
+          "values": {
+            "unit1": "1 mm = 0,03937″",
+            "unit2": "1″ = 25,4 mm"
+          }
+        },
+        {
+          "name": "Mechanika",
+          "values": {
+            "unit1": "Klucze metryczne",
+            "unit2": "Klucze calowe"
+          }
+        },
+        {
+          "name": "Druk",
+          "values": {
+            "unit1": "Format A (A4, A3)",
+            "unit2": "Format Letter, Legal"
+          }
+        },
+        {
+          "name": "Precyzja",
+          "values": {
+            "unit1": "μm (mikrometry)",
+            "unit2": "mils (tys. cala)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile milimetrów ma 1 cal?",
+          "answer": "Dokładnie 25,4 mm. To definicja międzynarodowa, nie przybliżenie."
+        },
+        {
+          "question": "Ile cali ma 10 mm?",
+          "answer": "10 mm = 0,3937″, czyli nieco mniej niż 4/10 cala."
+        },
+        {
+          "question": "Jak przeliczyć ułamki calowe na mm?",
+          "answer": "Pomnóż ułamek przez 25,4. Na przykład: 3/8″ = 0,375 × 25,4 = 9,525 mm."
+        },
+        {
+          "question": "Jaka jest różnica między calem a milem (mil)?",
+          "answer": "1 mil = 1/1000 cala = 0,0254 mm. Mils używa się w elektronice do określania grubości płytek i rozstawów pinów."
+        },
+        {
+          "question": "Jaki rozmiar ma śruba M6 w calach?",
+          "answer": "Śruba M6 ma średnicę 6 mm = 0,236″. Najbliższy odpowiednik calowy to 1/4″ (6,35 mm) – ale nie są zamienne."
+        },
+        {
+          "question": "Czy konwerter obsługuje ułamki calowe?",
+          "answer": "Konwerter przyjmuje wartości dziesiętne. Aby przeliczyć 3/8″, wpisz 0.375 (wynik ułamka 3 ÷ 8)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "mm na cale – Arteon",
+      "defaultSubject": "Feedback: mm na cale"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

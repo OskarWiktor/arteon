@@ -2,7 +2,7 @@
   "toolKey": "xmlToJson",
   "locale": "it",
   "metadata": {
-    "title": "Convertitore XML in JSON — XML JSON",
+    "title": "Convertitore XML in JSON - XML JSON",
     "description": "Converti XML in formato JSON. Analisi e formattazione automatiche. Gratuito.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-xml-in-json"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire XML in JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in JSON puo offrire vantaggi significativi — file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file XML nel formato JSON direttamente nel browser. Nessun file viene inviato a server — l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in JSON puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file XML nel formato JSON direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Quanto risparmiare convertendo XML in JSON?",
-      "html": "<p class=\"text-mid mb-4\">Il risparmio dipende dal tipo di file e dalla compressione originale:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto fotocamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Immagine prodotto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Risparmio: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Il risparmio reale varia in base a contenuto e impostazioni.</p>"
+      "title": "Come funziona la conversione da XML a JSON?",
+      "html": "<p class=\"text-mid mb-4\">XML usa una gerarchia basata su tag con elementi di apertura e chiusura, mentre JSON usa parentesi graffe leggere e coppie chiave-valore. Il convertitore analizza l'albero del documento XML e associa ogni elemento a una struttura JSON corrispondente.</p><p class=\"text-mid mb-4\">Gli elementi XML diventano oggetti JSON, gli elementi ripetuti con lo stesso nome di tag diventano array JSON, e il contenuto testuale diventa valori stringa. Gli attributi XML sono rappresentati come propriet\u00e0 speciali (con prefisso @) nell'oggetto JSON.</p><p class=\"text-mid\">JSON \u00e8 il formato preferito per le API web moderne, le applicazioni JavaScript e i database NoSQL. La conversione avviene interamente nel tuo browser.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Consigli per convertire XML in JSON",
-      "description": "Consigli per evitare problemi comuni:",
+      "title": "Consigli per la conversione da XML a JSON",
+      "description": "Alcuni consigli per evitare problemi comuni:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "File molto grandi",
-          "description": "Immagini sopra 4000×4000 px possono essere piu lente. Dividi in lotti da 10–20."
+          "icon": "RiCodeLine",
+          "title": "Attributi XML",
+          "description": "Gli attributi XML vengono convertiti in propriet\u00e0 JSON con prefisso @. Ad esempio, &lt;item id='1'&gt; diventa {\"@id\": \"1\"}."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "File gia compressi",
-          "description": "Se il XML era gia compresso, la conversione in JSON potrebbe risparmiare poco."
+          "icon": "RiNodeTree",
+          "title": "Namespace",
+          "description": "I namespace XML vengono conservati nell'output JSON come parte dei nomi degli elementi. Le dichiarazioni complesse di namespace possono richiedere pulizia manuale."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Trasparenza",
-          "description": "JSON non supporta trasparenza. Le aree trasparenti diventano bianche. Considera PNG o WebP."
+          "icon": "RiFileTextLine",
+          "title": "Contenuto misto",
+          "description": "Gli elementi XML che contengono sia testo che elementi figli vengono gestiti posizionando il testo in una propriet\u00e0 speciale #text nel JSON."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Conserva originali",
-          "description": "La conversione con perdita e irreversibile. Conserva copie dei file XML."
+          "icon": "RiFileCodeLine",
+          "title": "Sezioni CDATA",
+          "description": "Le sezioni CDATA in XML vengono convertite in valori stringa semplici in JSON. L'involucro CDATA viene rimosso e il contenuto viene conservato intatto."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Sì, funziona su qualsiasi dispositivo con un browser web moderno."
         },
         {
-          "question": "E sicuro convertire XML in JSON?",
-          "answer": "Si. Tutto avviene localmente nel browser via Canvas API. Niente viene inviato a server."
+          "question": "\u00c8 sicura la conversione da XML a JSON?",
+          "answer": "S\u00ec. Tutta la conversione avviene localmente nel tuo browser. Nessun dato viene inviato a un server."
         },
         {
-          "question": "Posso convertire piu file XML?",
-          "answer": "Si. Conversione batch senza limiti. Trascina i file nel convertitore."
+          "question": "Gli attributi XML vengono persi durante la conversione?",
+          "answer": "No. Gli attributi XML vengono conservati nell'output JSON come propriet\u00e0 con prefisso @. Ad esempio, id='123' diventa \"@id\": \"123\" nell'oggetto JSON."
         },
         {
-          "question": "JSON e supportato da tutti i browser?",
-          "answer": "JSON e supportato da Chrome, Firefox, Safari, Edge e Opera."
+          "question": "Posso usare l'output JSON in JavaScript?",
+          "answer": "S\u00ec. L'output \u00e8 JSON standard utilizzabile con JSON.parse() in JavaScript o direttamente in qualsiasi linguaggio di programmazione, API o database."
         }
       ]
     },

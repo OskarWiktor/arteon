@@ -1,0 +1,273 @@
+{
+  "toolKey": "cmToPxDpi",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de cm para pixels (DPI)",
+    "description": "Converta centímetros para pixels em qualquer resolução DPI. Para design de impressão.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-cm-para-px"
+  },
+  "hero": {
+    "title": "Converter cm para pixels",
+    "description": "Este conversor converte instantaneamente. Introduza um valor e o resultado aparece imediatamente.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-cm-para-px",
+      "label": "cm para px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de cm para pixels (DPI)",
+      "alternateName": ["Converter cm para pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converta centímetros para pixels em qualquer resolução DPI. Para design de impressão.",
+      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+    },
+    "howTo": {
+      "name": "Como usar o conversor",
+      "description": "Guia rápido para usar o conversor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduzir valor",
+          "text": "Escreva um número no campo de entrada à esquerda."
+        },
+        {
+          "name": "Ler o resultado",
+          "text": "O resultado da conversão aparece instantaneamente no campo ao lado."
+        },
+        {
+          "name": "Copiar ou inverter",
+          "text": "Clique em Copiar resultado ou em Inverter para converter na direção oposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa converter cm em pixels?",
+      "html": "<p class=\"text-mid mb-4\">No design de impressão as medidas são em centímetros, mas as imagens digitais em pixels. A conversão depende da resolução DPI: Pixels = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Resolução de impressão padrão 300 DPI: 10 cm = 1.181 pixels, largura A4 (21 cm) = 2.480 pixels.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Conversor de cm para pixels (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o conversor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Insira um valor",
+          "description": "Digite um número no campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leia o resultado",
+          "description": "O resultado aparece instantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copie ou inverta",
+          "description": "Copie o resultado ou inverta a direção de conversão.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando este conversor é útil?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Design de impressão",
+          "description": "Prepare imagens a 300 DPI. A4 a 300 DPI = 2.480 × 3.508 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grande formato",
+          "description": "Banners e pôsteres: 150 DPI."
+        },
+        {
+          "icon": "RiArtboardLine",
+          "title": "Gráficos web",
+          "description": "Resolução de tela 72–96 DPI."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Fotografia",
+          "description": "Verifique se a resolução da câmera é suficiente para um tamanho de impressão."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que diferencia este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os cálculos são executados localmente no seu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados em tempo real",
+          "description": "O resultado atualiza enquanto digita."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversão bidirecional",
+          "description": "Converta em ambas as direções com um clique."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela de referência",
+          "description": "Tabela com valores comuns e descrições contextuais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: Pixels = cm × DPI / 2,54. A 300 DPI: 1 cm = 118,11 pixels.</p><p class=\"text-mid\">Mais DPI = mais pixels por cm = impressão mais nítida. 300 DPI é o padrão profissional.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: Pixels = cm × DPI / 2,54. A 300 DPI: 1 cm = 118,11 pixels.</p><p class=\"text-mid\">Mais DPI = mais pixels por cm = impressão mais nítida. 300 DPI é o padrão profissional.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Resoluções DPI comparadas",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI (impressão)"
+        },
+        {
+          "id": "unit2",
+          "name": "72 DPI (tela)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "10 cm",
+          "values": {
+            "unit1": "1.181 px",
+            "unit2": "283 px"
+          }
+        },
+        {
+          "name": "A4 largura (21 cm)",
+          "values": {
+            "unit1": "2.480 px",
+            "unit2": "595 px"
+          }
+        },
+        {
+          "name": "A4 altura (29,7 cm)",
+          "values": {
+            "unit1": "3.508 px",
+            "unit2": "842 px"
+          }
+        },
+        {
+          "name": "Aplicação",
+          "values": {
+            "unit1": "Impressão profissional",
+            "unit2": "Gráficos web"
+          }
+        },
+        {
+          "name": "Qualidade",
+          "values": {
+            "unit1": "Nítida em qualquer tamanho",
+            "unit2": "Apenas para tela"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quantos pixels é 1 cm a 300 DPI?",
+          "answer": "1 cm a 300 DPI = 118,11 pixels."
+        },
+        {
+          "question": "Os cálculos são feitos localmente?",
+          "answer": "Sim. Todos os cálculos são executados no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "cm na px – Arteon",
+      "defaultSubject": "Feedback: cm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

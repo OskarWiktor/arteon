@@ -2,7 +2,7 @@
   "toolKey": "imageToBase64",
   "locale": "sv",
   "metadata": {
-    "title": "bild till Base64-konverterare — bild Base64",
+    "title": "bild till Base64-konverterare - bild Base64",
     "description": "Koda bilder till Base64-format. Kopiera färdig kod för CSS eller HTML. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/bild-till-base64-konverterare"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertera",
-          "text": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare."
+          "text": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera bild till Base64?",
-      "html": "<p class=\"text-mid mb-4\">IMAGE ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till BASE64 erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina IMAGE-filer till BASE64-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">IMAGE ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till BASE64 erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina IMAGE-filer till BASE64-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "bild to Base64 conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertera",
-          "description": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare.",
+          "description": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur mycket sparar du vid konvertering IMAGE till BASE64?",
-      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+      "title": "Hur fungerar kodning från bild till Base64?",
+      "html": "<p class=\"text-mid mb-4\">Base64-kodning konverterar binärdata från en bild till en textsträng med 64 utskrivbara ASCII-tecken (A–Z, a–z, 0–9, +, /). Varje grupp om 3 byte binärdata blir 4 Base64-tecken, vilket innebär att den kodade strängen är ungefär 33% större än originalfilen.</p><p class=\"text-mid mb-4\">Konverteraren läser din bildfil, kodar den till en Base64-sträng och lägger till rätt Data URI-prefix (t.ex. data:image/png;base64,). Detta skapar en fristående sträng som kan bäddas in direkt i HTML, CSS eller JSON utan att behöva en separat bildfil.</p><p class=\"text-mid\">Base64-kodade bilder används ofta för små ikoner, logotyper och gränssnittselement där eliminering av en extra HTTP-förfrågan förbättrar laddningstiden. Konverteringen sker helt i din webbläsare.</p>"
     },
     {
       "type": "gap",
@@ -138,35 +138,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering IMAGE till BASE64",
-      "description": "Tips for att undvika vanliga problem:",
+      "title": "Tips för kodning från bild till Base64",
+      "description": "Några tips för att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Mycket stora filer",
-          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+          "title": "Storleksökning",
+          "description": "Base64-kodning ökar filstorleken med ungefär 33%. En bild på 10 KB blir en Base64-sträng på ungefär 13,3 KB. Idealiskt för små bilder under 10 KB."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Redan komprimerade",
-          "description": "Om IMAGE redan var kraftigt komprimerad kanske konvertering till BASE64 inte sparar mycket."
+          "title": "Data URI-format",
+          "description": "Utdata inkluderar det fullständiga Data URI-prefixet (data:image/png;base64,...) — redo att klistra in i ett HTML src-attribut eller CSS background-image-egenskap."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "BASE64 stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+          "icon": "RiCodeLine",
+          "title": "Format som stöds",
+          "description": "Konverteraren accepterar PNG, JPG, GIF, WebP, SVG och BMP. MIME-typen i Data URI ställs in automatiskt baserat på indataformatet."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Spara originalen",
-          "description": "Forlustkomprimering ar irreversibel. Spara kopior av IMAGE-filer."
+          "icon": "RiFileCodeLine",
+          "title": "Cache-överväganden",
+          "description": "Inbäddade Base64-bilder kan inte cachas separat av webbläsaren. För bilder som används på flera sidor är separata filer med cache-headers effektivare."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to use Base64 encoding vs regular image files",
+      "html": "<p class=\"text-mid mb-4\">Base64 encoding is beneficial in specific scenarios, but not always the right choice:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Use Base64 for</strong> – small images under 10 KB (icons, logos), email templates with embedded images, API requests requiring image data in JSON, self-contained HTML files.</li><li><strong>Use regular files for</strong> – large images over 50 KB, website hero images and photos, images that need browser caching, content served via CDN.</li></ul><p class=\"text-mid mt-3\">Base64 increases data size by 33% and prevents browser caching. For web performance, only inline very small assets. For everything else, serve images as regular files with proper caching headers.</p>"
     },
     {
       "type": "faq",
@@ -190,16 +199,16 @@
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         },
         {
-          "question": "Ar konvertering IMAGE till BASE64 saker?",
-          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+          "question": "Är kodningen från bild till Base64 säker?",
+          "answer": "Ja. All konvertering sker lokalt i din webbläsare. Dina bilder skickas aldrig till någon server."
         },
         {
-          "question": "Kan jag konvertera flera IMAGE-filer samtidigt?",
-          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+          "question": "När ska man använda Base64 istället för bildfiler?",
+          "answer": "Base64 är idealiskt för små bilder (ikoner, logotyper under 10 KB) där det är viktigt att spara en HTTP-förfrågan. För större bilder är separata filer effektivare eftersom de kan cachas av webbläsaren."
         },
         {
-          "question": "Stods BASE64 av alla webblasare?",
-          "answer": "BASE64 stods av Chrome, Firefox, Safari, Edge och Opera."
+          "question": "Vilka bildformat stöds?",
+          "answer": "Konverteraren accepterar PNG, JPG, GIF, WebP, SVG, BMP och andra standardbildformat. MIME-typen i Data URI detekteras automatiskt."
         }
       ]
     },

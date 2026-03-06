@@ -1,0 +1,289 @@
+{
+  "toolKey": "remToPx",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter rem na px – przelicz jednostki CSS",
+    "description": "Przelicz rem na piksele i odwrotnie z możliwością ustawienia bazowego font-size. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-rem-na-px"
+  },
+  "hero": {
+    "title": "Przelicz rem na piksele",
+    "description": "Ten konwerter przelicza jednostki rem na piksele i odwrotnie. Możesz ustawić bazowy font-size, a wynik pojawi się natychmiast.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-rem-na-px",
+      "label": "rem na px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter rem na px – przelicz jednostki CSS",
+      "alternateName": ["Przelicznik rem na px", "Kalkulator rem CSS", "rem to pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz rem na piksele i odwrotnie z możliwością ustawienia bazowego font-size. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera rem na px",
+      "description": "Instrukcja użycia: rem na px.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Czym jest rem i kiedy warto przeliczać na piksele?",
+      "html": "<p class=\"text-mid mb-4\">Jednostka <code>rem</code> (root em) w CSS odnosi się do wielkości czcionki elementu głównego (<code>&lt;html&gt;</code>). Domyślnie przeglądarki ustawiają bazowy font-size na 16 px, więc 1 rem = 16 px.</p><p class=\"text-mid mb-4\">Rem jest preferowanym sposobem definiowania wymiarów w responsywnym CSS. Dzięki temu cały układ strony skaluje się proporcjonalnie, gdy użytkownik zmieni rozmiar czcionki w ustawieniach przeglądarki (dostępność WCAG).</p><p class=\"text-mid mb-4\">W praktyce projektanci dostarczają makiety z wymiarami w pikselach, a programiści muszą przeliczyć je na rem. Na przykład: padding 24 px = 1,5 rem, margin 32 px = 2 rem.</p><p class=\"text-mid\">Jeśli projekt używa bazowego font-size innego niż 16 px (np. 10 px przy technice “62,5%”), konwerter pozwala ustawić dowolną wartość bazową.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "rem na px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Kodowanie CSS",
+          "description": "Przeliczanie makiet (px) na rem: padding 24 px = 1,5 rem."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Responsywność",
+          "description": "Rem skaluje się z preferencjami użytkownika – lepsze od stałych pikseli."
+        },
+        {
+          "icon": "RiAccessibilityLine",
+          "title": "Dostępność (WCAG)",
+          "description": "Rem respektuje ustawienia rozmiaru tekstu użytkownika."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Systemy projektowe",
+          "description": "Skale spacing w rem: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja rem na px?",
+      "html": "<p class=\"text-mid mb-4\">Jednostka rem (root em) w CSS odnosi się do rozmiaru czcionki elementu głównego dokumentu (html). Domyślnie przeglądarki ustawiają bazowy rozmiar czcionki na 16 pikseli, co oznacza, że 1 rem = 16 px. Aby przeliczyć rem na piksele, wystarczy pomnożyć wartość rem przez bazowy rozmiar czcionki.</p><p class=\"text-mid mb-4\">Na przykład przy domyślnym ustawieniu 2 rem to 32 px, a 0,875 rem to 14 px. Popularna technika CSS polega na ustawieniu font-size: 62.5% na elemencie html, co zmienia bazę na 10 px — wówczas 1 rem = 10 px i przeliczanie staje się znacznie prostsze.</p><p class=\"text-mid\">Jednostka rem jest preferowana w nowoczesnym CSS, ponieważ zapewnia spójne skalowanie całego interfejsu — zmiana bazowego rozmiaru czcionki automatycznie dostosowuje wszystkie elementy korzystające z rem.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Szybki przelicznik: px ÷ 16 = rem. Na przykład: 24 px ÷ 16 = 1,5 rem.</li><li>Tailwind CSS używa rem: <code>p-4</code> = 1 rem = 16 px.</li><li>Technika 62,5%: <code>html { font-size: 62.5% }</code> → 1 rem = 10 px (prostsze przeliczanie).</li><li>Nie myl rem z em – rem odnosi się do <code>&lt;html&gt;</code>, em do rodzica.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "rem vs px – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "rem"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Typ",
+          "values": {
+            "unit1": "Relatywna (root)",
+            "unit2": "Absolutna"
+          }
+        },
+        {
+          "name": "Odniesienie",
+          "values": {
+            "unit1": "font-size <html>",
+            "unit2": "Stała wartość"
+          }
+        },
+        {
+          "name": "Dostępność",
+          "values": {
+            "unit1": "Skaluje się z preferencjami",
+            "unit2": "Stała niezależnie od ustawień"
+          }
+        },
+        {
+          "name": "Responsywność",
+          "values": {
+            "unit1": "Automatyczna",
+            "unit2": "Wymaga media queries"
+          }
+        },
+        {
+          "name": "Tailwind",
+          "values": {
+            "unit1": "Domyślna jednostka",
+            "unit2": "Używana w konfiguracji"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile pikseli ma 1 rem?",
+          "answer": "Domyślnie 1 rem = 16 px. Zależy to od bazowego font-size ustawionego na elemencie <code>&lt;html&gt;</code>."
+        },
+        {
+          "question": "Jak przeliczyć piksele na rem?",
+          "answer": "Podziel piksele przez bazowy font-size. Przykład: 24 px ÷ 16 = 1,5 rem."
+        },
+        {
+          "question": "Jaka jest różnica między rem a em?",
+          "answer": "Rem odnosi się do font-size elementu <code>&lt;html&gt;</code> (stała wartość na całej stronie). Em odnosi się do font-size elementu nadrzędnego (zmienia się w zależności od kontekstu)."
+        },
+        {
+          "question": "Co to jest technika 62,5%?",
+          "answer": "Ustawienie <code>html { font-size: 62.5% }</code> zmienia bazowy font-size na 10 px. Dzięki temu 1 rem = 10 px i przeliczanie jest prostsze (np. 2,4 rem = 24 px)."
+        },
+        {
+          "question": "Czy Tailwind CSS używa rem?",
+          "answer": "Tak. Tailwind konwertuje spacing na rem: <code>p-4</code> = 1 rem = 16 px, <code>p-8</code> = 2 rem = 32 px."
+        },
+        {
+          "question": "Czy powinienem używać rem zamiast px?",
+          "answer": "Rem jest zalecany dla tekstu i spacingów – skaluje się z preferencjami użytkownika. Piksele są odpowiednie dla borderów, cieni i stałych wymiarów."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "rem na px – Arteon",
+      "defaultSubject": "Feedback: rem na px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

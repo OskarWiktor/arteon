@@ -2,7 +2,7 @@
   "toolKey": "pngToGif",
   "locale": "hu",
   "metadata": {
-    "title": "PNG GIF konverter — PNG GIF",
+    "title": "PNG GIF konverter - PNG GIF",
     "description": "PNG grafika konvertálása GIF-re. Idealis egyszeru ikonokhoz es grafikakhoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/png-gif-konverter"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Minőség beállítása",
-          "text": "Állítsd be a GIF minőség csúszkáját — alacsonyabb értékek kisebb fájlokat eredményeznek."
+          "text": "Állítsd be a GIF minőség csúszkáját - alacsonyabb értékek kisebb fájlokat eredményeznek."
         },
         {
           "position": 3,
           "name": "Konvertalas",
-          "text": "Kattints a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+          "text": "Kattints a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra."
         },
         {
           "position": 4,
           "name": "Letoltes",
-          "text": "Töltsd le a GIF fájlokat — egyenként vagy mindet egyszerre."
+          "text": "Töltsd le a GIF fájlokat - egyenként vagy mindet egyszerre."
         }
       ]
     }
@@ -299,6 +299,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting PNG images to GIF reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",

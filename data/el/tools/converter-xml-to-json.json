@@ -2,7 +2,7 @@
   "toolKey": "xmlToJson",
   "locale": "el",
   "metadata": {
-    "title": "Μετατροπέας XML σε JSON — XML JSON",
+    "title": "Μετατροπέας XML σε JSON - XML JSON",
     "description": "Μετατρέψτε XML σε μορφή JSON. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-xml-se-json"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε XML σε JSON;",
-      "html": "<p class=\"text-mid mb-4\">To XML einai ena eyrytera chrisimopoioumeno format archeiou me megali symvatotita. Analoga me ti chrisi, i metatropi se JSON mporei na prosferei simantika pleonektimata — mikrotera archeia, kaliteri poiotita i eyriteri ypostirixi platformon.</p><p class=\"text-mid mb-4\">Aytos o dorean online metatropeas metatrepei ta archeia XML se format JSON apeytheias ston browser. Kanena archeio den anevasei se server — oli i diadikasia ginetai topika sti syskevi sas.</p><p class=\"text-mid\">Metatrepste osa archeia thelete choris imerisia oria, choris eggraphi kai choris ydrografimatam. Syrete ta archeia, prosamoste tin poiotita kai katevaste ta apotelesmata.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το XML είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε JSON μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία XML σε format JSON απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poso exoikonomeis metatrepontas XML se JSON;",
-      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+      "title": "Πώς λειτουργεί η μετατροπή XML σε JSON;",
+      "html": "<p class=\"text-mid mb-4\">Η XML χρησιμοποιεί ιεραρχία βασισμένη σε ετικέτες με στοιχεία ανοίγματος και κλεισίματος, ενώ η JSON χρησιμοποιεί ελαφριές αγκύλες και ζεύγη κλειδιού-τιμής. Ο μετατροπέας αναλύει το δέντρο εγγράφου XML και αντιστοιχίζει κάθε στοιχείο στην αντίστοιχη δομή JSON.</p><p class=\"text-mid mb-4\">Στοιχεία XML γίνονται αντικείμενα JSON, επαναλαμβανόμενα ομώνυμα στοιχεία γίνονται πίνακες JSON, και περιεχόμενο κειμένου γίνεται τιμές συμβολοσειράς. Γνωρίσματα XML εμφανίζονται ως ειδικές ιδιότητες (με πρόθεμα @) στο αντικείμενο JSON.</p><p class=\"text-mid\">Η JSON είναι η προτιμώμενη μορφή για σύγχρονα web API, εφαρμογές JavaScript και βάσεις δεδομένων NoSQL. Όλη η μετατροπή γίνεται τοπικά στον περιηγητή σας.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Symvoules gia metatropi XML se JSON",
-      "description": "Symvoules gia apofygi provlimaton:",
+      "title": "Συμβουλές για μετατροπή XML σε JSON",
+      "description": "Μερικές συμβουλές για την αποφυγή συνηθισμένων προβλημάτων:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Poly megala archeia",
-          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+          "icon": "RiCodeLine",
+          "title": "Γνωρίσματα XML",
+          "description": "Γνωρίσματα XML μετατρέπονται σε ιδιότητες JSON με πρόθεμα @. Π.χ. &lt;item id='1'&gt; γίνεται: {\"@id\": \"1\"}."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Idi sympiesmena",
-          "description": "An to XML itan idi sympiesmeno, i metatropi se JSON mporei na min exoikonomisi polla."
+          "icon": "RiNodeTree",
+          "title": "Χώροι ονομάτων",
+          "description": "Οι χώροι ονομάτων XML διατηρούνται στην έξοδο JSON ως μέρος των ονομάτων στοιχείων. Σύνθετες δηλώσεις χώρων ονομάτων μπορεί να χρειαστούν χειροκίνητη προσαρμογή."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Diafaneia",
-          "description": "To JSON den ypostirizei diafaneia. Oi diafaneis perioches ginontai lefkes. Skeftite PNG i WebP."
+          "icon": "RiFileTextLine",
+          "title": "Μεικτό περιεχόμενο",
+          "description": "Στοιχεία XML που περιέχουν τόσο κείμενο όσο και υποστοιχεία χειρίζονται τοποθετώντας το κείμενο σε ειδική ιδιότητα #text στη JSON."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Kratiste ta prototypa",
-          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton XML archeion."
+          "icon": "RiFileCodeLine",
+          "title": "Ενότητες CDATA",
+          "description": "Οι ενότητες CDATA της XML μετατρέπονται σε απλές τιμές συμβολοσειράς στη JSON. Η περιτύλιξη CDATA αφαιρείται και το περιεχόμενο παραμένει ανέπαφο."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
         },
         {
-          "question": "Einai asfalis i metatropi XML se JSON;",
-          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+          "question": "Είναι ασφαλής η μετατροπή XML σε JSON;",
+          "answer": "Ναι. Όλη η μετατροπή γίνεται τοπικά στον περιηγητή σας. Κανένα δεδομένο δεν αποστέλλεται σε κανέναν διακομιστή."
         },
         {
-          "question": "Mporo na metatrepso polla archeia XML;",
-          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+          "question": "Χάνονται τα γνωρίσματα XML κατά τη μετατροπή;",
+          "answer": "Όχι. Γνωρίσματα XML διατηρούνται στην έξοδο JSON ως ιδιότητες με πρόθεμα @. Π.χ. id='123' γίνεται: \"@id\": \"123\" στο αντικείμενο JSON."
         },
         {
-          "question": "Ypostirizoun oloi oi browsers to JSON;",
-          "answer": "To JSON ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
+          "question": "Μπορώ να χρησιμοποιήσω την έξοδο JSON σε JavaScript;",
+          "answer": "Ναι. Η έξοδος είναι τυπική JSON που μπορεί να χρησιμοποιηθεί με JSON.parse() σε JavaScript, ή απευθείας σε οποιαδήποτε γλώσσα προγραμματισμού, API ή βάση δεδομένων."
         }
       ]
     },

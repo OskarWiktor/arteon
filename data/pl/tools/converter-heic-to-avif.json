@@ -2,7 +2,7 @@
   "toolKey": "heicToAvif",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter HEIC na AVIF — HEIC AVIF",
+    "title": "Konwerter HEIC na AVIF - HEIC AVIF",
     "description": "Zamień zdjęcia HEIC z iPhone na AVIF. Nowoczesny format webowy o doskonałej kompresji. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-heic-na-avif"
@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień zdjęcia HEIC z iPhone na AVIF. Nowoczesny format webowy o doskonałej kompresji. Darmowe narzędzie działające lokalnie w przeglądarce. Bez przesyłania na serwer.",
-      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "featureList": ["Konwersja do AVIF", "Regulacja jakości (60-95%)", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
       "alternateName": ["Zamiana HEIC na AVIF", "Konwersja HEIC do AVIF", "Darmowy konwerter HEIC na AVIF"]
     },
     "howTo": {
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Ustaw jakosc",
-          "text": "Dostosuj suwak jakosci AVIF — nizsze wartosci daja mniejsze pliki."
+          "text": "Dostosuj suwak jakosci AVIF - nizsze wartosci daja mniejsze pliki."
         },
         {
           "position": 3,
           "name": "Konwertuj",
-          "text": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+          "text": "Kliknij Konwertuj - pliki zostaną przetworzone lokalnie w przeglądarce."
         },
         {
           "position": 4,
           "name": "Pobierz",
-          "text": "Pobierz gotowe pliki AVIF — pojedynczo lub wszystkie naraz."
+          "text": "Pobierz gotowe pliki AVIF - pojedynczo lub wszystkie naraz."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować HEIC na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do zdjęć z urządzeń Apple.</p><p class=\"text-mid mb-4\">Konwersja HEIC na AVIF (AV1 Image File Format) pozwala wykorzystać nowoczesną kompresję, która zmniejsza rozmiar plików bez utraty jakości.</p><p class=\"text-mid mb-4\">AVIF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. AVIF obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików HEIC, ile potrzebujesz – całkowicie za darmo.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC (High Efficiency Image Container) to format zdjęć stosowany domyślnie na iPhone'ach i iPadach od iOS 11. Oferuje dobrą kompresję, ale jest formatem właściwościowym Apple — nie jest natywnie obsługiwany przez przeglądarki Chrome, Firefox i Edge na Windows/Linux. AVIF rozwiązuje oba problemy: jest otwarty i oferuje kompresję o 20–30% lepszą niż HEIC.</p><p class=\"text-mid mb-4\">AVIF (AV1 Image File Format) to następca zarówno HEIC, jak i WebP. Obsługuje kompresję stratną i bezstratną, kanał alfa, HDR, szeroką gamę kolorów i głębię do 12 bitów na kanał. Jest wspierany przez Chrome 85+, Firefox 93+, Edge 85+ i Safari 16.4+ — co oznacza ponad 95% przeglądarek na rynku.</p><p class=\"text-mid mb-4\">Konwersja HEIC na AVIF jest idealna, gdy chcesz opublikować zdjęcia z iPhone'a na stronie internetowej w najlżejszym możliwym formacie. Zdjęcie HEIC 2–3 MB z aparatu iPhone'a może ważyć 500 KB–1 MB w AVIF przy porównywalnej jakości — to szybsze ładowanie i lepsze Core Web Vitals.</p><p class=\"text-mid\">Konwerter przetwarza pliki lokalnie w przeglądarce — nic nie jest wysyłane na serwer. Bez rejestracji, bez limitów, bez znaków wodnych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwersja HEIC na AVIF",
       "variant": "right"
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakosci — co wybrac przy konwersji HEIC na AVIF?",
-      "html": "<p class=\"text-mid\">Suwak jakosci pozwala ustawic wartosc od 60% do 95%. Wyzsza wartosc oznacza lepsza jakosc obrazu, ale tez wiekszy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyslne) — dobry kompromis dla wiekszosci zastosowan: strony firmowe, blogi, artykuly. Roznica wizualna jest praktycznie niezauwazalna.</strong></li><li><strong>85–90% — dla zdjec produktowych, portfolio i galerii, gdzie jakosc jest priorytetem.</strong></li><li><strong>60–70% — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii.</strong></li></ul><p class=\"text-mid mt-3\">Przy jakosci 80% roznica wizualna miedzy oryginalem HEIC a wynikowym AVIF jest praktycznie niezauwazalna golym okiem, a plik jest znaczaco mniejszy.</p>"
+      "title": "Ustawienia jako\u015bci \u2014 co wybra\u0107 przy konwersji HEIC na AVIF?",
+      "html": "<p class=\"text-mid\">Suwak jako\u015bci pozwala ustawi\u0107 warto\u015b\u0107 od 60% do 95%. Wy\u017csza warto\u015b\u0107 oznacza lepsz\u0105 jako\u015b\u0107 obrazu, ale te\u017c wi\u0119kszy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domy\u015blne) \u2014 dobry kompromis dla wi\u0119kszo\u015bci zastosowa\u0144: strony firmowe, blogi, artyku\u0142y. R\u00f3\u017cnica wizualna jest praktycznie niezauwa\u017calna.</strong></li><li><strong>85\u201390% \u2014 dla zdj\u0119\u0107 produktowych, portfolio i galerii, gdzie jako\u015b\u0107 jest priorytetem.</strong></li><li><strong>60\u201370% \u2014 gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii.</strong></li></ul><p class=\"text-mid mt-3\">Przy jako\u015bci 80% r\u00f3\u017cnica wizualna mi\u0119dzy orygina\u0142em HEIC a wynikowym AVIF jest praktycznie niezauwa\u017calna go\u0142ym okiem, a plik jest znacz\u0105co mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -261,8 +261,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ile mozna zaoszczedzic konwertujac HEIC na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Oszczednosci zaleza od rodzaju pliku zrodlowego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjecie z aparatu</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczednosci moga sie roznic. Konwerter pokazuje dokladny rozmiar przed i po konwersji.</p>"
+      "title": "Ile mo\u017cna zaoszcz\u0119dzi\u0107 konwertuj\u0105c HEIC na AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Oszcz\u0119dno\u015bci zale\u017c\u0105 od rodzaju pliku \u017ar\u00f3d\u0142owego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdj\u0119cie z aparatu</p><p class=\"text-light text-sm\">4 MB \u2192 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszcz\u0119dno\u015b\u0107: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">2.5 MB \u2192 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszcz\u0119dno\u015b\u0107: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">1.5 MB \u2192 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszcz\u0119dno\u015b\u0107: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszcz\u0119dno\u015bci mog\u0105 si\u0119 r\u00f3\u017cni\u0107. Konwerter pokazuje dok\u0142adny rozmiar przed i po konwersji.</p>"
     },
     {
       "type": "gap",
@@ -270,8 +270,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Wplyw konwersji obrazow na szybkosc strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaznikow wydajnosci, ktore Google wykorzystuje przy ocenie stron. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyswietlenia najwiekszego widocznego elementu na ekranie.</p><p class=\"text-mid mb-4\">Konwersja obrazow HEIC na AVIF zmniejsza rozmiar plikow graficznych, co bezposrednio skraca czas pobierania zasobow i poprawia wskaznik LCP. Mniejsze pliki oznaczaja szybsze ladowanie strony — szczegolnie istotne na urzadzeniach mobilnych. Dodatkowe techniki — <code>loading=\"lazy\"</code> i <code>fetchpriority=\"high\"</code> — przyspieszaja renderowanie.</p><p class=\"text-mid\">Narzedzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazuja pliki do optymalizacji.</p>"
+      "title": "Wp\u0142yw konwersji obraz\u00f3w na szybko\u015b\u0107 strony i SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wska\u017anik\u00f3w wydajno\u015bci, kt\u00f3re Google wykorzystuje przy ocenie stron. Jeden z nich \u2014 LCP (Largest Contentful Paint) \u2014 mierzy czas wy\u015bwietlenia najwi\u0119kszego widocznego elementu na ekranie.</p><p class=\"text-mid mb-4\">Konwersja obraz\u00f3w HEIC na AVIF zmniejsza rozmiar plik\u00f3w graficznych, co bezpo\u015brednio skraca czas pobierania zasob\u00f3w i poprawia wska\u017anik LCP. Mniejsze pliki oznaczaj\u0105 szybsze \u0142adowanie strony \u2014 szczeg\u00f3lnie istotne na urz\u0105dzeniach mobilnych. Dodatkowe techniki \u2014 <code>loading=\"lazy\"</code> i <code>fetchpriority=\"high\"</code> \u2014 przyspieszaj\u0105 renderowanie.</p><p class=\"text-mid\">Narz\u0119dzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazuj\u0105 pliki do optymalizacji.</p>"
     },
     {
       "type": "gap",
@@ -279,29 +279,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Na co zwrocic uwage przy konwersji HEIC na AVIF?",
-      "description": "Kilka wskazowek, ktore pomoga uniknac problemow:",
+      "title": "Na co zwr\u00f3ci\u0107 uwag\u0119 przy konwersji HEIC na AVIF?",
+      "description": "Kilka wskaz\u00f3wek, kt\u00f3re pomog\u0105 unikn\u0105\u0107 problem\u00f3w:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Bardzo duze pliki",
-          "description": "Konwersja obrazow powyzej 4000×4000 pikseli moze byc wolniejsza. Rozwaz dzielenie ich na partie po 10–20 sztuk."
+          "title": "Bardzo du\u017ce pliki",
+          "description": "Konwersja obraz\u00f3w powy\u017cej 4000\u00d74000 pikseli mo\u017ce by\u0107 wolniejsza. Rozwa\u017c dzielenie ich na partie po 10\u201320 sztuk."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Juz skompresowane pliki",
-          "description": "Jesli oryginalny plik HEIC byl juz mocno skompresowany, konwersja na AVIF moze nie przyniesc duzych oszczednosci."
+          "title": "Ju\u017c skompresowane pliki",
+          "description": "Je\u015bli oryginalny plik HEIC by\u0142 ju\u017c mocno skompresowany, konwersja na AVIF mo\u017ce nie przynie\u015b\u0107 du\u017cych oszcz\u0119dno\u015bci."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Przezroczystosc",
-          "description": "Format AVIF obsluguje kanal alfa. Przezroczyste obszary pliku HEIC zostana zachowane."
+          "title": "Przezroczysto\u015b\u0107",
+          "description": "Format AVIF obs\u0142uguje kana\u0142 alfa. Przezroczyste obszary pliku HEIC zostan\u0105 zachowane."
         },
         {
           "icon": "RiStackLine",
-          "title": "Zachowaj oryginaly",
-          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plikow HEIC aby moc powtorzyc konwersje."
+          "title": "Zachowaj orygina\u0142y",
+          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plik\u00f3w HEIC, aby m\u00f3c powt\u00f3rzy\u0107 konwersj\u0119."
         }
       ]
     },

@@ -2,7 +2,7 @@
   "toolKey": "jpgToPdf",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník JPG na PDF — JPG PDF",
+    "title": "Převodník JPG na PDF - JPG PDF",
     "description": "Převeďte obrázky JPG na dokumenty PDF. Spojte více souborů do jednoho PDF. Zdarma.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-jpg-na-pdf"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Převést",
-          "text": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči."
+          "text": "Klikněte na Převést - soubory se zpracovávají lokálně v prohlížeči."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět JPG na PDF?",
-      "html": "<p class=\"text-mid mb-4\">JPG je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na PDF prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase JPG soubory do formatu PDF primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPG je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na PDF prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase JPG soubory do formatu PDF primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "JPG to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Převést",
-          "description": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči.",
+          "description": "Klikněte na Převést - soubory se zpracovávají lokálně v prohlížeči.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Nastaveni kvality — co zvolit pri konverzi JPG na PDF?",
-      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 85% je rozdil mezi originalnim JPG a vyslednym PDF nepostrehnutelny.</p>"
+      "title": "Nastaveni kvality - co zvolit pri konverzi JPG na PDF?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (vychozi) - dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% - pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% - kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 85% je rozdil mezi originalnim JPG a vyslednym PDF nepostrehnutelny.</p>"
     },
     {
       "type": "gap",
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">While JPG to PDF conversion creates documents rather than web images, it's worth noting that PDF files embedded or linked on websites also affect page performance. Large PDFs slow down downloads and frustrate users.</p><p class=\"text-mid mb-4\">When creating PDFs from JPG images, use appropriate quality settings. For web-shared PDFs, quality 80–85 produces files that look great while keeping the PDF size manageable. For print, use quality 90–95.</p><p class=\"text-mid\">If you need to display the images on a web page rather than in a PDF, consider converting to WebP or AVIF instead for optimal web performance.</p>"
     },
     {
       "type": "faq",

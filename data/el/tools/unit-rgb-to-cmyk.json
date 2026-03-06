@@ -1,0 +1,273 @@
+{
+  "toolKey": "rgbToCmyk",
+  "locale": "el",
+  "metadata": {
+    "title": "RGB σε CMYK – μετατροπέας",
+    "description": "Μετατρέψτε RGB σε CMYK και αντίστροφα. Για προετοιμασία εκτύπωσης.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-rgb-se-cmyk"
+  },
+  "hero": {
+    "title": "RGB σε CMYK",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-rgb-se-cmyk",
+      "label": "RGB σε CMYK"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "RGB σε CMYK – μετατροπέας",
+      "alternateName": ["RGB σε CMYK"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε RGB σε CMYK και αντίστροφα. Για προετοιμασία εκτύπωσης.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: RGB σε CMYK?",
+      "html": "<p class=\"text-mid mb-4\">RGB (Red, Green, Blue) is the additive color model used by screens. CMYK (Cyan, Magenta, Yellow, Key/Black) is the subtractive model used by printers. Colors look different in each model because they work differently.</p><p class=\"text-mid mb-4\">Converting RGB to CMYK is essential when preparing digital designs for print. Without conversion, bright screen colors may appear dull or shifted when printed.</p><p class=\"text-mid mb-4\">Not all RGB colors can be reproduced in CMYK — the CMYK gamut is smaller. Vivid neon greens, bright blues, and saturated oranges are particularly affected.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB σε CMYK – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Εκτύπωση",
+          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Διαχείριση χρωμάτων",
+          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Materiały brandingowe",
+          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografia",
+          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">First, normalize RGB to 0–1 range: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">This is a mathematical conversion. Actual printed results depend on ink, paper, and ICC profiles. For production printing, use ICC profile-based conversion in Photoshop or InDesign.</p><p class=\"text-mid\">This converter provides a mathematical estimate. For critical color work, always use proper ICC profiles and get a proof print.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Pure black: RGB(0,0,0) = CMYK(0,0,0,100). Rich black for print: CMYK(60,40,40,100).</li><li>Pure white: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Bright colors lose vibrancy in CMYK. Design with CMYK gamut in mind from the start.</li><li>Total ink coverage should not exceed 300% for most printing processes.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs CMYK – σύγκριση",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "CMYK",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Model",
+          "values": {
+            "unit1": "Additive (light)",
+            "unit2": "Subtractive (ink)"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "Screens, web",
+            "unit2": "Print, packaging"
+          }
+        },
+        {
+          "name": "Gamut",
+          "values": {
+            "unit1": "Wider (more colors)",
+            "unit2": "Narrower"
+          }
+        },
+        {
+          "name": "Black",
+          "values": {
+            "unit1": "R=0, G=0, B=0",
+            "unit2": "K=100%"
+          }
+        },
+        {
+          "name": "White",
+          "values": {
+            "unit1": "R=255, G=255, B=255",
+            "unit2": "No ink (paper)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Γιατί sehen CMYK-Drucke anders aus?",
+          "answer": "Bildschirme strahlen Licht aus (RGB), Drucker verwenden Tinte (CMYK). Der CMYK-Farbraum ist kleiner."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB σε CMYK – Arteon",
+      "defaultSubject": "Feedback: rgb-to-cmyk"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

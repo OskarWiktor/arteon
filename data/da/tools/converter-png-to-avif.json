@@ -2,7 +2,7 @@
   "toolKey": "pngToAvif",
   "locale": "da",
   "metadata": {
-    "title": "PNG til AVIF-konverter — PNG AVIF",
+    "title": "PNG til AVIF-konverter - PNG AVIF",
     "description": "Konverter PNG-grafik til AVIF med gennemsigtighedsunderstottelse. Markant mindre filer. Kører helt i din browser. Ingen serveruploads, ingen registrering påkrævet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/png-til-avif-konverter"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Indstil kvalitet",
-          "text": "Juster AVIF-kvalitetsskyderen — lavere værdier giver mindre filer."
+          "text": "Juster AVIF-kvalitetsskyderen - lavere værdier giver mindre filer."
         },
         {
           "position": 3,
           "name": "Konverter",
-          "text": "Klik på Konverter — filerne behandles lokalt i browseren."
+          "text": "Klik på Konverter - filerne behandles lokalt i browseren."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download AVIF-filerne — enkeltvis eller alle på en gang."
+          "text": "Download AVIF-filerne - enkeltvis eller alle på en gang."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — hvad vaelge ved konvertering PNG til AVIF?",
-      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem PNG og AVIF praktisk talt umaerkelig.</p>"
+      "title": "Kvalitet - hvad vaelge ved konvertering PNG til AVIF?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) - godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% - til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% - nar filstørrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem PNG og AVIF praktisk talt umaerkelig.</p>"
     },
     {
       "type": "gap",
@@ -261,8 +261,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af PNG til AVIF reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+      "title": "Hvordan billedkonvertering påvirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP måler tiden til det største synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af PNG til AVIF reducerer filstørrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
     },
     {
       "type": "gap",
@@ -271,23 +271,23 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering PNG til AVIF",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis PNG allerede var komprimeret, giver konvertering til AVIF maske ikke stor besparelse."
+          "description": "Hvis PNG allerede var komprimeret, giver konvertering til AVIF måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "AVIF understotter alfakanal. Transparente omrader i PNG bevares."
+          "description": "AVIF understøtter alfakanal. Transparente områder i PNG bevares."
         },
         {
           "icon": "RiStackLine",
@@ -299,6 +299,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting PNG to AVIF?",
+      "html": "<p class=\"text-mid mb-4\">PNG files are lossless and therefore relatively large. AVIF provides substantial savings:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">1.2 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~85%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo (PNG)</p><p class=\"text-light text-sm\">3.5 MB → 250 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Icon / logo</p><p class=\"text-light text-sm\">45 KB → 12 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~73%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

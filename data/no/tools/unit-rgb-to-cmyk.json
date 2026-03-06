@@ -1,0 +1,273 @@
+{
+  "toolKey": "rgbToCmyk",
+  "locale": "no",
+  "metadata": {
+    "title": "RGB til CMYK – kalkulator",
+    "description": "Regn om RGB til CMYK og omvendt. For trykkforberedelse.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/no/verktoy/rgb-til-cmyk-kalkulator"
+  },
+  "hero": {
+    "title": "RGB til CMYK",
+    "description": "Denne kalkulatoren regner om umiddelbart. Skriv inn en verdi og resultatet vises med en gang.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/rgb-til-cmyk-kalkulator",
+      "label": "RGB til CMYK"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "RGB til CMYK – kalkulator",
+      "alternateName": ["RGB til CMYK"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Regn om RGB til CMYK og omvendt. For trykkforberedelse.",
+      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+    },
+    "howTo": {
+      "name": "Slik bruker du kalkulatoren",
+      "description": "Hurtigguide for bruk av kalkulatoren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Skriv inn verdi",
+          "text": "Skriv inn et tall i inputfeltet til venstre."
+        },
+        {
+          "name": "Les av resultatet",
+          "text": "Konverteringsresultatet vises umiddelbart i feltet ved siden av."
+        },
+        {
+          "name": "Kopier eller snu",
+          "text": "Klikk på Kopier resultat eller på Snu for å konvertere i motsatt retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Når bør man omregne RGB til CMYK?",
+      "html": "<p class=\"text-mid mb-4\">RGB (additiv modell for skjermer) og CMYK (subtraktiv modell for trykk). Farger ser ulike ut i hver modell. CMYK-gamut er mindre enn RGB.</p><p class=\"text-mid\">Alle beregninger kjører lokalt i nettleseren din.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB to CMYK converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruker du omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Skriv inn en verdi",
+          "description": "Tast inn et tall i inntastingsfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Les resultatet",
+          "description": "Resultatet vises umiddelbart.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopier eller bytt",
+          "description": "Kopier resultatet eller bytt omregningsretning.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Når er denne kalkulatoren nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Utskrift",
+          "description": "Omregn skjermfarger til CMYK før trykk."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Fargestyring",
+          "description": "Merkevarefarger i RGB (skjerm) og CMYK (trykk)."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Emballasje",
+          "description": "Produktemballasje bruker CMYK-trykk."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografi",
+          "description": "Forstå hvordan digitalbilder ser ut i CMYK."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne omregneren spesiell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Full personvern",
+          "description": "Alle beregninger kjører lokalt i nettleseren din."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Sanntidsresultater",
+          "description": "Resultatet oppdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Toveis omregning",
+          "description": "Omregn begge veier med ett klikk."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referansetabell",
+          "description": "Tabell med vanlige verdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">Normaliser RGB til 0–1. K = 1 − max(R', G', B'). C, M, Y beregnes fra K.</p><p class=\"text-mid\">For kritisk fargearbeid bruk alltid ICC-profiler og prøvetrykk.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">Normaliser RGB til 0–1. K = 1 − max(R', G', B'). C, M, Y beregnes fra K.</p><p class=\"text-mid\">For kritisk fargearbeid bruk alltid ICC-profiler og prøvetrykk.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs CMYK",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "CMYK",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Modell",
+          "values": {
+            "unit1": "Additiv (lys)",
+            "unit2": "Subtraktiv (blekk)"
+          }
+        },
+        {
+          "name": "Brukes til",
+          "values": {
+            "unit1": "Skjermer, web",
+            "unit2": "Trykk, emballasje"
+          }
+        },
+        {
+          "name": "Gamut",
+          "values": {
+            "unit1": "Større",
+            "unit2": "Mindre"
+          }
+        },
+        {
+          "name": "Svart",
+          "values": {
+            "unit1": "R=0, G=0, B=0",
+            "unit2": "K=100%"
+          }
+        },
+        {
+          "name": "Hvit",
+          "values": {
+            "unit1": "R=255, G=255, B=255",
+            "unit2": "Ingen blekk"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvorfor ser CMYK-trykk annerledes ut?",
+          "answer": "Skjermer sender ut lys (RGB), skrivere bruker blekk (CMYK). CMYK-gamut er mindre."
+        },
+        {
+          "question": "Kjører beregningene lokalt?",
+          "answer": "Ja. Alle beregninger kjører i nettleseren din."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB til CMYK – Arteon",
+      "defaultSubject": "Tilbakemelding: rgb-to-cmyk"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

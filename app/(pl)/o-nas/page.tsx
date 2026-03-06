@@ -13,8 +13,23 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import Link from 'next/link';
 import { RiCodeSSlashFill, RiLightbulbFlashLine, RiMegaphoneLine, RiPaletteLine } from 'react-icons/ri';
-import { toAbsoluteUrl } from '@/utils/absoluteUrl';
+import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getAboutAlternates } from '@/lib/i18n/pages/about';
+
+const profilePageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Organization',
+    '@id': `${siteUrl}#organization`,
+    name: 'Arteon',
+    url: siteUrl,
+    foundingDate: '2020',
+    knowsAbout: ['Web Development', 'Web Design', 'Graphic Design', 'E-commerce', 'SEO', 'WordPress', 'Next.js', 'Online Marketing', 'Brand Identity', 'UI/UX Design'],
+  },
+  dateCreated: '2024-01-01',
+  dateModified: '2025-03-05',
+};
 
 export const metadata = {
   title: 'O nas - strategia, kreacja i widoczność - Arteon',
@@ -40,6 +55,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }} />
       <HeroBanner
         title="O nas"
         description="Arteon - strategia, kreacja i widoczność, które przynoszą rezultaty"

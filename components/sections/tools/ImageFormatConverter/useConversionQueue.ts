@@ -75,7 +75,7 @@ export function useConversionQueue(options: ConversionQueueOptions) {
     setIsConverting(true);
     const targetMime = FORMAT_MIME[targetFormat];
 
-    // Use ref to get the latest files snapshot — avoids stale closure
+    // Use ref to get the latest files snapshot - avoids stale closure
     const pending = filesRef.current.filter((f) => f.status === 'pending' || f.status === 'error');
     for (const entry of pending) {
       // Check if file was removed while we were processing the queue

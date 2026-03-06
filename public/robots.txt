@@ -6,6 +6,38 @@ Disallow: /api/
 Disallow: /fonts/
 Disallow: /favicon.ico
 
+# AI search crawlers — allowed (enables citation in AI Overviews)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Unwanted AI training crawlers — blocked
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
 Host: https://www.arteonagency.pl
 
 Sitemap: https://www.arteonagency.pl/sitemap.xml

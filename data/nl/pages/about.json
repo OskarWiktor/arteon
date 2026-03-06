@@ -6,12 +6,12 @@
   },
   "hero": {
     "title": "Gratis online tools gemaakt door een creatief bureau",
-    "description": "10 browsertools voor afbeeldingen, SEO, kleuren, e-mailhandtekeningen en QR-codes — zonder registratie, zonder bestandsuploads, zonder limieten"
+    "description": "10 browsertools voor afbeeldingen, SEO, kleuren, e-mailhandtekeningen en QR-codes - zonder registratie, zonder bestandsuploads, zonder limieten"
   },
   "whoWeAre": {
     "title": "Wie wij zijn",
     "p1": "Arteon is een Pools creatief bureau. Naast ons commerciële werk bouwen en onderhouden we een groeiende collectie gratis online tools voor ondernemers, websitebouwers, ontwerpers, marketeers en iedereen die met digitale content werkt.",
-    "p2": "Elke tool die we maken lost een specifiek, alledaags probleem op: afbeeldingen converteren, kleurcontrast controleren, favicons genereren, QR-codes maken en meer. Ons doel is een compleet pakket tools te bouwen waar u alles vindt wat u nodig heeft op één plek — zonder te schakelen tussen tientallen verschillende websites."
+    "p2": "Elke tool die we maken lost een specifiek, alledaags probleem op: afbeeldingen converteren, kleurcontrast controleren, favicons genereren, QR-codes maken en meer. Ons doel is een compleet pakket tools te bouwen waar u alles vindt wat u nodig heeft op één plek - zonder te schakelen tussen tientallen verschillende websites."
   },
   "whyFree": {
     "title": "Waarom wij gratis tools aanbieden",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Privacy voorop",
-        "description": "Uw bestanden verlaten nooit uw apparaat. Alle verwerking gebeurt lokaal in uw browser — wij sturen uw gegevens niet naar een server."
+        "description": "Uw bestanden verlaten nooit uw apparaat. Alle verwerking gebeurt lokaal in uw browser - wij sturen uw gegevens niet naar een server."
       },
       {
         "title": "Gemaakt vanuit echte behoeften",
@@ -61,7 +61,7 @@
   },
   "whatsNext": {
     "title": "Wat komt er nog",
-    "text": "We werken actief aan het uitbreiden van het toolpakket. Nieuwe tools worden regelmatig toegevoegd op basis van gebruikersfeedback en onze eigen ervaring. Het doel is één platform waar ondernemers, ontwerpers en ontwikkelaars toegang hebben tot elke essentiële tool — alles op één plek, alles gratis."
+    "text": "We werken actief aan het uitbreiden van het toolpakket. Nieuwe tools worden regelmatig toegevoegd op basis van gebruikersfeedback en onze eigen ervaring. Het doel is één platform waar ondernemers, ontwerpers en ontwikkelaars toegang hebben tot elke essentiële tool - alles op één plek, alles gratis."
   },
   "privacy": {
     "title": "Privacy en veiligheid",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Probeer onze tools",
-    "description": "Gratis online tools — zonder registratie, zonder limieten, zonder bestandsuploads naar servers",
+    "description": "Gratis online tools - zonder registratie, zonder limieten, zonder bestandsuploads naar servers",
     "btnOne": "Naar de tools",
     "btnTwo": "Contact"
   }

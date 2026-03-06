@@ -1,0 +1,281 @@
+{
+  "toolKey": "bytesConverter",
+  "locale": "de",
+  "metadata": {
+    "title": "Bytes-Rechner – KB, MB, GB, TB umrechnen",
+    "description": "Rechnen Sie zwischen Bytes, Kilobytes, Megabytes, Gigabytes und Terabytes um. Unterstützt binäre und dezimale Einheiten.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/bytes-umrechner"
+  },
+  "hero": {
+    "title": "Bytes, KB, MB, GB, TB umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/bytes-umrechner",
+      "label": "Bytes-Rechner"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bytes-Rechner – KB, MB, GB, TB umrechnen",
+      "alternateName": ["Bytes, KB, MB, GB, TB umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Rechnen Sie zwischen Bytes, Kilobytes, Megabytes, Gigabytes und Terabytes um. Unterstützt binäre und dezimale Einheiten.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter bajty na KB/MB/GB",
+      "description": "Anleitung: bajty na kb/mb/gb.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann muss man Bytes umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Digitaler Speicher wird in Bytes und deren Vielfachen gemessen: Kilobyte (KB), Megabyte (MB), Gigabyte (GB) und Terabyte (TB). Es gibt zwei Systeme: dezimal (1 KB = 1.000 Bytes) und binär (1 KiB = 1.024 Bytes).</p><p class=\"text-mid mb-4\">Speicherhersteller verwenden dezimale Einheiten (eine „500 GB“-Festplatte = 500.000.000.000 Bytes), während Betriebssysteme binäre Einheiten verwenden (zeigt ~465 GiB für dieselbe Festplatte).</p><p class=\"text-mid mb-4\">Dateigrößen, RAM, Netzwerkgeschwindigkeiten und Speicherkapazität verwenden unterschiedliche Konventionen. Dieser Konverter behandelt beide Systeme.</p><p class=\"text-mid\">Alle Berechnungen laufen lokal in Ihrem Browser — nichts wird an einen Server gesendet.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Bytes-Rechner – KB, MB, GB, TB umrechnen – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So verwenden Sie den Konverter",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein. Sie können einen Punkt oder ein Komma als Dezimaltrennzeichen verwenden.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Konvertierungsergebnis erscheint sofort im Feld daneben – ohne Klicken.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Klicken Sie auf Ergebnis kopieren oder verwenden Sie die Umkehren-Taste.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Konverter nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Pojemność dysków",
+          "description": "Dysk 1 TB (producent) = 931 GB w systemie binarnym."
+        },
+        {
+          "icon": "RiUploadCloudLine",
+          "title": "Limity przesyłania",
+          "description": "Załącznik e-mail: 25 MB = 26 214 400 B."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Serwery",
+          "description": "Planowanie pojemności: RAM, dyski, transfer."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Pamięć urządzeń",
+          "description": "Telefon 128 GB = 137 438 953 472 B."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen laufen lokal in Ihrem Browser. Keine Daten werden an einen Server gesendet."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich sofort beim Tippen – ohne Klicken."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Konvertierung",
+          "description": "Die Umkehren-Taste ermöglicht die Konvertierung in beide Richtungen mit einem Klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Eine fertige Tabelle mit häufig konvertierten Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Byte-Umrechnung?",
+      "html": "<p class=\"text-mid mb-4\">Im dezimalen (SI) System: 1 KB = 1.000 Bytes, 1 MB = 1.000 KB, 1 GB = 1.000 MB, 1 TB = 1.000 GB. Jede Stufe multipliziert mit 1.000.</p><p class=\"text-mid mb-4\">Im binären (IEC) System: 1 KiB = 1.024 Bytes, 1 MiB = 1.024 KiB, 1 GiB = 1.024 MiB. Jede Stufe multipliziert mit 1.024.</p><p class=\"text-mid\">Der Unterschied wächst mit der Größe: 1 TB (dezimal) = 0,909 TiB (binär).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktische Tipps",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Typisches Foto (12 MP): 3–5 MB. 256 GB Telefon = ~50.000–85.000 Fotos.</li><li>Typischer Song (MP3): 3–5 MB. 1 GB Playlist = ~200–300 Songs.</li><li>Full-HD-Film: 4–8 GB. 4K-Film: 15–30 GB.</li><li>1 Mbps = 125 KB/s. 100-Mbps-Verbindung = ~12,5 MB/s Download.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Dezimal vs. Binär – Vergleich",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Dezimal (SI)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binär (IEC)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Multiplikator",
+          "values": {
+            "unit1": "1.000",
+            "unit2": "1.024"
+          }
+        },
+        {
+          "name": "Einheiten",
+          "values": {
+            "unit1": "KB, MB, GB, TB",
+            "unit2": "KiB, MiB, GiB, TiB"
+          }
+        },
+        {
+          "name": "Verwendet von",
+          "values": {
+            "unit1": "Speicherhersteller",
+            "unit2": "Betriebssysteme, RAM"
+          }
+        },
+        {
+          "name": "1 TB entspricht",
+          "values": {
+            "unit1": "1.000.000.000.000 Bytes",
+            "unit2": "1.099.511.627.776 Bytes"
+          }
+        },
+        {
+          "name": "Unterschied bei 1 TB",
+          "values": {
+            "unit1": "1 TB",
+            "unit2": "0,909 TiB"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele MB ist 1 GB?",
+          "answer": "1 GB = 1.000 MB (dezimal) oder 1 GiB = 1.024 MiB (binär)."
+        },
+        {
+          "question": "Warum zeigt meine Festplatte weniger Speicher?",
+          "answer": "Hersteller verwenden dezimale Einheiten (1 TB = 1.000.000.000.000 Bytes), aber Ihr Betriebssystem verwendet binäre Einheiten (1 TiB = 1.099.511.627.776 Bytes). Eine „1 TB“-Festplatte zeigt ~931 GiB."
+        },
+        {
+          "question": "Wie viele Fotos passen in 1 GB?",
+          "answer": "Ca. 200–300 Fotos bei 3–5 MB (12 MP Smartphone). RAW-Fotos (25–50 MB) passen 20–40 pro GB."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen laufen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "bajty na KB/MB/GB – Arteon",
+      "defaultSubject": "Feedback: bytes-converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

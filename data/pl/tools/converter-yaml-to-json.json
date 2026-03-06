@@ -2,8 +2,8 @@
   "toolKey": "yamlToJson",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter YAML na JSON — darmowy, z walidacją",
-    "description": "Zamień dane YAML na poprawny JSON z walidacją składni. Idealny do Docker, Kubernetes, CI/CD. Bez rejestracji — konwersja lokalna.",
+    "title": "Konwerter YAML na JSON - darmowy, z walidacją",
+    "description": "Zamień dane YAML na poprawny JSON z walidacją składni. Idealny do Docker, Kubernetes, CI/CD. Bez rejestracji - konwersja lokalna.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-yaml-na-json"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter YAML na JSON — darmowy, bez rejestracji",
+      "name": "Konwerter YAML na JSON - darmowy, bez rejestracji",
       "alternateName": ["Zamiana YAML na JSON online", "Konwersja YAML do JSON", "YAML to JSON converter"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter YAML na JSON online. Zamień dane YAML na JSON w przeglądarce — dane nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter YAML na JSON online. Zamień dane YAML na JSON w przeglądarce - dane nie są wysyłane na serwer.",
       "featureList": ["Konwersja YAML na JSON", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować YAML na JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML (YAML Ain't Markup Language) to czytelny format konfiguracji używany w Docker Compose, Kubernetes, GitHub Actions, Ansible i wielu innych narzędziach DevOps. JSON to format wymiany danych preferowany przez API i programy.</p><p class=\"text-mid mb-4\">Konwersja YAML na JSON przydaje się, gdy potrzebujesz danych konfiguracyjnych w formacie JSON — np. do przekazania do API, zaimportowania do aplikacji lub debugowania struktury danych.</p><p class=\"text-mid\">Nasz konwerter waliduje składnię YAML i informuje o błędach wcięć lub struktury.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML to czytelny format konfiguracji używany w Docker Compose, Kubernetes, GitHub Actions, GitLab CI, Ansible, Helm i wielu innych narzędziach DevOps. Jednak API REST, biblioteki JavaScript/Python i bazy NoSQL wymagają danych w formacie JSON. Konwersja YAML na JSON to codzienne zadanie developerów i DevOpsów.</p><p class=\"text-mid mb-4\">YAML używa wcięć zamiast nawiasów, obsługuje komentarze i jest czytelniejszy dla człowieka. Jednak maszyny preferują JSON — jest jednoznaczny, szybszy do parsowania i ma ścisłą specyfikację. Konwersja YAML na JSON eliminuje pułapki składniowe YAML (np. <code>yes</code>/<code>no</code> interpretowane jako boolean, błędy wcięć) i daje format akceptowany przez każdy język programowania.</p><p class=\"text-mid mb-4\">Konwerter waliduje składnię YAML przed konwersją, informuje o błędach wcięć i generuje poprawny JSON z formatowaniem. Obsługuje zagnieżdżone struktury, tablice, anchory/aliasy YAML i wieloliniowe stringi.</p><p class=\"text-mid\">Cała konwersja odbywa się lokalnie w przeglądarce — dane nie są wysyłane na serwer. Bez rejestracji, bez limitów, bez śledzenia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter YAML na JSON – Arteon"
     },
@@ -99,23 +99,23 @@
       "items": [
         {
           "icon": "RiCodeLine",
-          "title": "Debugowanie konfiguracji",
-          "description": "JSON jest łatwiejszy do walidacji programowej — sprawdź strukturę danych YAML."
+          "title": "Debugowanie konfiguracji K8s / Docker",
+          "description": "YAML pozwala na niejednoznaczności (yes/no jako boolean, błędy wcięć). Konwersja na JSON ujawnia rzeczywistą strukturę danych — idealny sposób na debugowanie problemów z manifestami Kubernetes."
         },
         {
           "icon": "RiServerLine",
-          "title": "Import do API",
-          "description": "API REST przyjmuje JSON — zamień konfigurację YAML na dane wejściowe API."
+          "title": "Wysyłanie danych do API",
+          "description": "API REST przyjmuje JSON jako body zapytania. Konwersja YAML na JSON pozwala użyć danych z plików konfiguracyjnych jako wejścia do API bez ręcznego przepisywania."
         },
         {
           "icon": "RiTerminalLine",
-          "title": "Skrypty automatyzacji",
-          "description": "Programy i skrypty łatwiej parsują JSON niż YAML."
+          "title": "Skrypty automatyzacji i CI/CD",
+          "description": "Skrypty w Bash, Python i Node.js łatwiej parsują JSON (jq, JSON.parse, json.loads) niż YAML. Konwersja na JSON upraszcza przetwarzanie danych w pipeline’ach CI/CD."
         },
         {
           "icon": "RiDatabaseLine",
-          "title": "Zapis w bazie",
-          "description": "Bazy danych przechowują JSON natywnie — zamień konfigurację na dane."
+          "title": "Import do bazy danych",
+          "description": "MongoDB, Firebase i CouchDB przechowują dane jako JSON. Konwersja konfiguracji YAML na JSON to pierwszy krok przy zapisie danych konfiguracyjnych w bazie dokumentowej."
         }
       ]
     },
@@ -157,7 +157,7 @@
     {
       "type": "sectionInfo",
       "title": "Wskazówki dotyczące konwersji YAML na JSON",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>YAML jest wrażliwy na wcięcia — upewnij się, że używasz spacji (nie tabulatorów) i że wcięcia są spójne.</li><li>Komentarze YAML (#) są pomijane przy konwersji — JSON nie obsługuje komentarzy.</li><li>Kotwice i aliasy YAML (&amp; i *) są rozwijane w wynikowym JSON.</li><li>YAML obsługuje typy danych (boolean, null, date) — konwerter zamieni je na odpowiednie typy JSON.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>YAML jest wrażliwy na wcięcia - upewnij się, że używasz spacji (nie tabulatorów) i że wcięcia są spójne.</li><li>Komentarze YAML (#) są pomijane przy konwersji - JSON nie obsługuje komentarzy.</li><li>Kotwice i aliasy YAML (&amp; i *) są rozwijane w wynikowym JSON.</li><li>YAML obsługuje typy danych (boolean, null, date) - konwerter zamieni je na odpowiednie typy JSON.</li></ul>"
     },
     {
       "type": "gap",
@@ -229,8 +229,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ile mozna zaoszczedzic konwertujac YAML na JSON?",
-      "html": "<p class=\"text-mid mb-4\">Oszczednosci zaleza od rodzaju pliku zrodlowego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjecie z aparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczednosci moga sie roznic. Konwerter pokazuje dokladny rozmiar przed i po konwersji.</p>"
+      "title": "Jak działa konwersja YAML na JSON?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja YAML na JSON polega na zamianie formatu opartego na wcięciach na składnię z nawiasami klamrowymi i cudzysłowami. Klucze YAML stają się kluczami JSON w cudzysłowach, a zagnieżdżenia wyrażane wcięciami są zamieniane na zagnieżdżone obiekty.</p><p class=\"text-mid mb-4\">Listy YAML (linie z myślnikiem) są konwertowane na tablice JSON. Typy danych YAML — liczby, wartości logiczne (true/false), null i daty — są mapowane na odpowiednie typy JSON. Komentarze YAML są pomijane, ponieważ JSON nie obsługuje komentarzy.</p><p class=\"text-mid\">Narzędzie waliduje składnię YAML przed konwersją i informuje o błędach wcięć lub struktury. Wynikowy JSON jest sformatowany z wcięciami dla czytelności.</p>"
     },
     {
       "type": "gap",
@@ -238,29 +238,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Na co zwrocic uwage przy konwersji YAML na JSON?",
-      "description": "Kilka wskazowek, ktore pomoga uniknac problemow:",
+      "title": "Na co zwrócić uwagę przy konwersji YAML na JSON?",
+      "description": "Kilka wskazówek, które pomogą uniknąć problemów:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Bardzo duze pliki",
-          "description": "Konwersja obrazow powyzej 4000×4000 pikseli moze byc wolniejsza. Rozwaz dzielenie ich na partie po 10–20 sztuk."
+          "icon": "RiSpacingLine",
+          "title": "Spójne wcięcia",
+          "description": "YAML wymaga spójnych wcięć — używaj tylko spacji, nigdy tabulatorów. Mieszanie spacji i tabulatorów spowoduje błąd parsowania."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Juz skompresowane pliki",
-          "description": "Jesli oryginalny plik YAML byl juz mocno skompresowany, konwersja na JSON moze nie przyniesc duzych oszczednosci."
+          "icon": "RiChat3Line",
+          "title": "Komentarze zostaną usunięte",
+          "description": "Komentarze YAML (linie zaczynające się od #) są pomijane podczas konwersji, ponieważ format JSON nie posiada odpowiednika komentarzy."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Przezroczystosc",
-          "description": "Format JSON nie obsluguje przezroczystosci. Przezroczyste obszary zostana zastapione bialym tlem. Rozwaz PNG lub WebP."
+          "icon": "RiCalendarLine",
+          "title": "Daty w YAML",
+          "description": "YAML automatycznie rozpoznaje daty (np. 2024-01-15). W JSON zostaną zapisane jako ciąg tekstowy, ponieważ JSON nie ma wbudowanego typu daty."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Zachowaj oryginaly",
-          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plikow YAML aby moc powtorzyc konwersje."
+          "icon": "RiAlertLine",
+          "title": "Kotwice i aliasy",
+          "description": "Jeśli YAML używa kotwic (&) i aliasów (*), zostaną one rozwinięte w wynikowym JSON — każde odwołanie będzie zawierać pełną kopię danych."
         }
       ]
     },
@@ -287,19 +287,19 @@
         },
         {
           "question": "Czy obsługiwane są kotwice YAML (&, *)?",
-          "answer": "Tak, konwerter obsługuje kotwice i aliasy YAML — zostaną rozwinięte w wynikowym JSON."
+          "answer": "Tak, konwerter obsługuje kotwice i aliasy YAML - zostaną rozwinięte w wynikowym JSON."
         },
         {
           "question": "Czy konwersja YAML na JSON jest bezpieczna?",
-          "answer": "Tak. Cala konwersja odbywa sie lokalnie w przegladarce za pomoca Canvas API. Pliki nie sa wysylane na zaden serwer. Po zamknieciu strony dane sa usuwane automatycznie."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce — dane nie są wysyłane na żaden serwer. Po zamknięciu strony dane są automatycznie usuwane z pamięci."
         },
         {
-          "question": "Czy moge konwertowac wiele plikow YAML jednoczesnie?",
-          "answer": "Tak. Narzedzie obsluguje konwersje wielu plikow naraz bez limitu. Przeciagnij pliki na pole konwertera lub wybierz z dysku."
+          "question": "Czy konwersja YAML na JSON jest bezstratna?",
+          "answer": "Konwersja jest bezstratna pod względem danych, ale komentarze YAML zostaną usunięte, ponieważ JSON nie obsługuje komentarzy. Wszystkie inne dane są zachowane."
         },
         {
-          "question": "Czy JSON jest obslugiwany przez wszystkie przegladarki?",
-          "answer": "Format JSON jest szeroko obslugiwany przez nowoczesne przegladarki: Chrome, Firefox, Safari, Edge i Opera."
+          "question": "Czy mogę użyć wynikowego JSON w API REST?",
+          "answer": "Tak. Wynikowy JSON jest poprawnie sformatowany i można go użyć bezpośrednio jako ciało żądania API REST, plik konfiguracyjny lub dane wejściowe programu."
         }
       ]
     },

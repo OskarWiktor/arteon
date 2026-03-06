@@ -6,11 +6,11 @@
   },
   "hero": {
     "title": "Contacte a equipa Arteon",
-    "description": "Reporte um erro, sugira uma nova ferramenta ou faça uma pergunta — respondemos num dia útil"
+    "description": "Reporte um erro, sugira uma nova ferramenta ou faça uma pergunta - respondemos num dia útil"
   },
   "intro": {
     "title": "Tem uma pergunta ou sugestão?",
-    "textBefore": "Temos todo o gosto em receber o seu feedback sobre as nossas ferramentas. Se encontrou um erro, tem uma ideia para uma nova ferramenta ou precisa de ajuda — escreva-nos para",
+    "textBefore": "Temos todo o gosto em receber o seu feedback sobre as nossas ferramentas. Se encontrou um erro, tem uma ideia para uma nova ferramenta ou precisa de ajuda - escreva-nos para",
     "textAfter": ". Respondemos num dia útil."
   },
   "formTitle": "Envie-nos uma mensagem",

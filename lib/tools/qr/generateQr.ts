@@ -1,15 +1,22 @@
 import QRCode from 'qrcode';
 import type { QrOptions, VCardData, EmailData } from '@/types/tools/qr';
 
-export function buildVCardString(data: VCardData): string {
-  const lines = ['BEGIN:VCARD', 'VERSION:3.0', `N:${data.lastName};${data.firstName};;;`, `FN:${data.firstName} ${data.lastName}`];
+/** Escape special vCard characters: backslash, semicolon, comma, newline */
+function escapeVCard(s: string): string {
+  return s.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
+}
 
-  if (data.organization) lines.push(`ORG:${data.organization}`);
-  if (data.title) lines.push(`TITLE:${data.title}`);
-  if (data.phone) lines.push(`TEL:${data.phone}`);
+export function buildVCardString(data: VCardData): string {
+  const fn = escapeVCard(data.firstName);
+  const ln = escapeVCard(data.lastName);
+  const lines = ['BEGIN:VCARD', 'VERSION:3.0', `N:${ln};${fn};;;`, `FN:${fn} ${ln}`];
+
+  if (data.organization) lines.push(`ORG:${escapeVCard(data.organization)}`);
+  if (data.title) lines.push(`TITLE:${escapeVCard(data.title)}`);
+  if (data.phone) lines.push(`TEL:${data.phone.replace(/[^\d+\-() ]/g, '')}`);
   if (data.email) lines.push(`EMAIL:${data.email}`);
   if (data.website) lines.push(`URL:${data.website}`);
-  if (data.address) lines.push(`ADR:;;${data.address};;;;`);
+  if (data.address) lines.push(`ADR:;;${escapeVCard(data.address)};;;;`);
 
   lines.push('END:VCARD');
   return lines.join('\n');

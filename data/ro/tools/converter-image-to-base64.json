@@ -2,7 +2,7 @@
   "toolKey": "imageToBase64",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor imagine în Base64 — imagine Base64",
+    "title": "Convertor imagine în Base64 - imagine Base64",
     "description": "Codifică imagini în format Base64. Copiază codul gata pentru CSS sau HTML. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-imagine-in-base64"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Convertiți",
-          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
+          "text": "Faceți clic pe Convertiți - fișierele sunt procesate local în browser."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți imagine în Base64?",
-      "html": "<p class=\"text-mid mb-4\">IMAGE este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in BASE64 poate oferi avantaje semnificative — fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele IMAGE in format BASE64 direct in browser. Niciun fisier nu este trimis la servere — intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">IMAGE este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in BASE64 poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele IMAGE in format BASE64 direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "imagine to Base64 conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Convertiți",
-          "description": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser.",
+          "description": "Faceți clic pe Convertiți - fișierele sunt procesate local în browser.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cat economisiti convertind IMAGE in BASE64?",
-      "html": "<p class=\"text-mid mb-4\">Economiile depind de tipul fisierului si compresia originala:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto camera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagine produs</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Economiile reale variaza in functie de continut si setari.</p>"
+      "title": "Cum funcționează codificarea imaginii în Base64?",
+      "html": "<p class=\"text-mid mb-4\">Codificarea Base64 converteste datele binare ale unei imagini într-un șir de text folosind 64 de caractere ASCII tipăribile (A–Z, a–z, 0–9, +, /). Fiecare grup de 3 octeți de date binare devine 4 caractere Base64, ceea ce înseamnă că șirul codificat este cu aproximativ 33% mai mare decât fișierul original.</p><p class=\"text-mid mb-4\">Convertorul citește fișierul tău de imagine, îl codifică într-un șir Base64 și adaugă prefixul Data URI corect (de ex. data:image/png;base64,). Aceasta creează un șir autonom care poate fi încorporat direct în HTML, CSS sau JSON fără a necesita un fișier de imagine separat.</p><p class=\"text-mid\">Imaginile codificate Base64 sunt frecvent folosite pentru pictograme mici, logo-uri și elemente de interfață unde eliminarea unei cereri HTTP suplimentare îmbunătățește timpul de încărcare. Conversia se face complet în browserul tău.</p>"
     },
     {
       "type": "gap",
@@ -138,35 +138,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Sfaturi pentru conversia IMAGE in BASE64",
-      "description": "Sfaturi pentru evitarea problemelor:",
+      "title": "Sfaturi pentru codificarea imaginii în Base64",
+      "description": "Câteva sfaturi pentru a evita problemele comune:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Fisiere foarte mari",
-          "description": "Imaginile peste 4000×4000 px pot fi mai lente. Impartiti in loturi de 10–20."
+          "title": "Creșterea dimensiunii",
+          "description": "Codificarea Base64 mărește dimensiunea fișierului cu aproximativ 33%. O imagine de 10 KB devine un șir Base64 de aproximativ 13,3 KB. Ideal pentru imagini mici sub 10 KB."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Fisiere deja comprimate",
-          "description": "Daca IMAGE era deja comprimat, conversia in BASE64 poate nu economisi mult."
+          "title": "Format Data URI",
+          "description": "Rezultatul include prefixul Data URI complet (data:image/png;base64,...) — gata de inserat într-un atribut HTML src sau o proprietate CSS background-image."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparenta",
-          "description": "BASE64 nu suporta transparenta. Zonele transparente devin albe. Luati in considerare PNG sau WebP."
+          "icon": "RiCodeLine",
+          "title": "Formate suportate",
+          "description": "Convertorul acceptă PNG, JPG, GIF, WebP, SVG și BMP. Tipul MIME din Data URI este setat automat în funcție de formatul de intrare."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Pastrati originalele",
-          "description": "Conversia cu pierderi e ireversibila. Pastrati copii ale fisierelor IMAGE."
+          "icon": "RiFileCodeLine",
+          "title": "Considerații de cache",
+          "description": "Imaginile Base64 încorporate nu pot fi cache-uite separat de browser. Pentru imagini folosite pe mai multe pagini, fișierele separate cu headere de cache sunt mai eficiente."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to use Base64 encoding vs regular image files",
+      "html": "<p class=\"text-mid mb-4\">Base64 encoding is beneficial in specific scenarios, but not always the right choice:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Use Base64 for</strong> – small images under 10 KB (icons, logos), email templates with embedded images, API requests requiring image data in JSON, self-contained HTML files.</li><li><strong>Use regular files for</strong> – large images over 50 KB, website hero images and photos, images that need browser caching, content served via CDN.</li></ul><p class=\"text-mid mt-3\">Base64 increases data size by 33% and prevents browser caching. For web performance, only inline very small assets. For everything else, serve images as regular files with proper caching headers.</p>"
     },
     {
       "type": "faq",
@@ -190,16 +199,16 @@
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         },
         {
-          "question": "E sigura conversia IMAGE in BASE64?",
-          "answer": "Da. Totul se face local in browser via Canvas API. Nimic nu e trimis la servere."
+          "question": "Este codificarea imaginii în Base64 sigură?",
+          "answer": "Da. Toată conversia se face local în browserul tău. Imaginile tale nu sunt trimise niciodată la vreun server."
         },
         {
-          "question": "Pot converti mai multe fisiere IMAGE?",
-          "answer": "Da. Conversie in lot fara limita. Trageti fisierele in convertor."
+          "question": "Când să folosesc Base64 în loc de fișiere de imagine?",
+          "answer": "Base64 este ideal pentru imagini mici (pictograme, logo-uri sub 10 KB) unde este important să economisești o cerere HTTP. Pentru imagini mai mari, fișierele separate sunt mai eficiente deoarece browserul le poate cache-ui."
         },
         {
-          "question": "BASE64 e suportat de toate browserele?",
-          "answer": "BASE64 e suportat de Chrome, Firefox, Safari, Edge si Opera."
+          "question": "Ce formate de imagine sunt suportate?",
+          "answer": "Convertorul acceptă PNG, JPG, GIF, WebP, SVG, BMP și alte formate standard de imagine. Tipul MIME din Data URI este detectat automat."
         }
       ]
     },

@@ -51,6 +51,12 @@ export async function exportCroppedImage(options: ExportCroppedImageOptions): Pr
   const targetAspect = W / H;
   const crop = getCropRect(options.originalWidth, options.originalHeight, targetAspect, options.cropX, options.cropY, options.cropZoom);
 
+  // JPEG has no transparency — fill white background to prevent black areas
+  if (options.outputFormat === 'jpg') {
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillRect(0, 0, W, H);
+  }
+
   ctx.save();
 
   if (options.shape === 'circle') {

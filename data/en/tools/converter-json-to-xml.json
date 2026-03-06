@@ -2,7 +2,7 @@
   "toolKey": "jsonToXml",
   "locale": "en",
   "metadata": {
-    "title": "JSON to XML converter — JSON XML",
+    "title": "JSON to XML converter - JSON XML",
     "description": "Convert JSON to XML format. Automatic parsing and formatting. Free, no registration.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/json-to-xml-converter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert JSON to XML?",
-      "html": "<p class=\"text-mid mb-4\">JSON is a widely used file format with broad compatibility across devices and software. However, depending on your use case, converting to XML can offer significant advantages — whether it's smaller file sizes, better quality preservation, broader platform support, or specific feature requirements.</p><p class=\"text-mid mb-4\">This free online converter transforms your JSON files into XML format directly in the browser. No files are uploaded to any server — the entire conversion process happens locally on your device using modern browser APIs. This means your data stays private and secure at all times.</p><p class=\"text-mid\">You can convert as many files as you need with no daily limits, no registration, and no watermarks. Simply drag and drop your files, adjust quality settings if available, and download the results individually or all at once.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON is the standard for REST APIs and modern web apps. However, many enterprise systems, SOAP APIs, B2B data exchange standards (EDI, UBL, e-invoicing), and configuration files require XML. Converting JSON to XML bridges the gap between modern and legacy systems.</p><p class=\"text-mid mb-4\">XML supports schema validation (XSD), namespaces, XSLT transformations, and digital signatures — features JSON lacks. In the enterprise world, XML remains the standard for SAP, Oracle, banking APIs (ISO 20022), and government systems.</p><p class=\"text-mid mb-4\">The converter maps JSON objects to XML elements, arrays to repeating elements, and primitive types to text values. It generates well-formed, indented XML with a proper <code>&lt;?xml version=&quot;1.0&quot;?&gt;</code> declaration.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no tracking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "JSON to XML conversion",
       "variant": "right"
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs — fast and works offline after loading."
+          "description": "All processing happens locally using modern browser APIs - fast and works offline after loading."
         }
       ]
     },
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How much can you save by converting JSON to XML?",
-      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
+      "title": "How does JSON to XML conversion work?",
+      "html": "<p class=\"text-mid mb-4\">JSON and XML are both structured data formats, but they use fundamentally different syntax. JSON uses curly braces and key-value pairs, while XML uses opening and closing tags to define elements. The converter maps each JSON property to an XML element, preserving the hierarchical structure.</p><p class=\"text-mid mb-4\">JSON objects become XML elements, JSON arrays become repeated elements, and primitive values (strings, numbers, booleans) become text content within their parent tags. The converter generates well-formed XML with proper indentation and an XML declaration header.</p><p class=\"text-mid\">XML is widely used in enterprise systems, SOAP web services, configuration files, and data interchange where strict schema validation is required. The conversion runs entirely in your browser — no data is sent to any server.</p>"
     },
     {
       "type": "gap",
@@ -207,30 +207,39 @@
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Very large files",
-          "description": "Converting images above 4000×4000 pixels may be slower and strain the browser. If processing many large files, consider splitting them into batches of 10–20."
+          "icon": "RiCodeLine",
+          "title": "Root element",
+          "description": "XML requires a single root element. If your JSON is an array, the converter wraps it in a root element. You can customize the root element name if needed."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Already compressed files",
-          "description": "If the original JSON file was already heavily compressed, converting to XML may not yield significant size savings. Try different quality settings."
+          "icon": "RiNodeTree",
+          "title": "Array handling",
+          "description": "JSON arrays are converted to repeated XML elements with the same tag name. The element name is derived from the parent key or uses a generic item tag."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparency",
-          "description": "The XML format does not support transparency. Transparent areas will be replaced with a white background. Consider PNG or WebP for transparency."
+          "icon": "RiFileTextLine",
+          "title": "Special characters",
+          "description": "Characters like &lt;, &gt;, &amp;, and quotes are automatically escaped in the XML output using standard XML entities to ensure valid markup."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Keep your originals",
-          "description": "Lossy conversion is irreversible. Keep copies of original JSON files so you can re-convert with different settings if needed."
+          "icon": "RiFileCodeLine",
+          "title": "Attributes vs elements",
+          "description": "By default, all JSON properties become XML child elements. JSON does not have a native concept of XML attributes, so no attributes are generated."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JSON to XML mapping rules",
+      "html": "<p class=\"text-mid mb-4\">The converter maps JSON structures to XML elements following these rules:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Objects</strong> – each key becomes an XML element. <code>{\"name\": \"John\"}</code> → <code>&lt;name&gt;John&lt;/name&gt;</code></li><li><strong>Arrays</strong> – each item becomes a repeating element with the key name. <code>{\"items\": [1, 2]}</code> → <code>&lt;items&gt;1&lt;/items&gt;&lt;items&gt;2&lt;/items&gt;</code></li><li><strong>Primitives</strong> – strings, numbers, booleans become text content of their parent element.</li><li><strong>Null values</strong> – converted to empty elements or omitted.</li></ul><p class=\"text-mid mt-3\">The output includes a proper XML declaration and uses 2-space indentation for readability. Element names are derived directly from JSON keys.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets."
         },
         {
-          "question": "Is converting JSON to XML safe for my files?",
-          "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
+          "question": "Is converting JSON to XML safe?",
+          "answer": "Yes. The entire conversion runs locally in your browser. Your data is never sent to any server. When you close the page, all data is automatically cleared from memory."
         },
         {
-          "question": "Can I convert multiple JSON files at once?",
-          "answer": "Yes. The tool supports batch conversion with no file limit. Drag all files onto the converter or select them from your device."
+          "question": "Is the conversion lossless?",
+          "answer": "Yes. All data from the JSON input is preserved in the XML output. The structure and values remain intact, though the syntax changes from JSON to XML notation."
         },
         {
-          "question": "Is XML supported by all browsers?",
-          "answer": "The XML format is widely supported by modern browsers: Chrome, Firefox, Safari, Edge, and Opera."
+          "question": "Can I validate the XML output?",
+          "answer": "The converter produces well-formed XML that passes standard XML validation. If you need schema validation (XSD), you can apply your schema to the output separately."
         }
       ]
     },

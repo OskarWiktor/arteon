@@ -2,7 +2,7 @@
   "toolKey": "markdownToHtml",
   "locale": "no",
   "metadata": {
-    "title": "Markdown til HTML-konverterer — Markdown HTML",
+    "title": "Markdown til HTML-konverterer - Markdown HTML",
     "description": "Konverter Markdown til HTML-format. Automatisk parsing og formatering. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/markdown-til-html-konverterer"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere Markdown til HTML?",
-      "html": "<p class=\"text-mid mb-4\">MARKDOWN er et mye brukt filformat med bred kompatibilitet. Avhengig av bruksomradet kan konvertering til HTML gi betydelige fordeler — mindre filer, bedre kvalitet eller bredere plattformstotte.</p><p class=\"text-mid mb-4\">Denne gratis nettkonverteren gjor om MARKDOWN-filene dine til HTML-format direkte i nettleseren. Ingen filer lastes opp — hele prosessen skjer lokalt pa enheten din.</p><p class=\"text-mid\">Konverter sa mange filer du vil uten daglige begrensninger, uten registrering og uten vannmerker. Dra og slipp filer, juster kvaliteten og last ned resultatene.</p>",
+      "html": "<p class=\"text-mid mb-4\">MARKDOWN er et mye brukt filformat med bred kompatibilitet. Avhengig av bruksomradet kan konvertering til HTML gi betydelige fordeler - mindre filer, bedre kvalitet eller bredere plattformstotte.</p><p class=\"text-mid mb-4\">Denne gratis nettkonverteren gjor om MARKDOWN-filene dine til HTML-format direkte i nettleseren. Ingen filer lastes opp - hele prosessen skjer lokalt pa enheten din.</p><p class=\"text-mid\">Konverter sa mange filer du vil uten daglige begrensninger, uten registrering og uten vannmerker. Dra og slipp filer, juster kvaliteten og last ned resultatene.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvor mye sparer du ved konvertering MARKDOWN til HTML?",
-      "html": "<p class=\"text-mid mb-4\">Besparelsene avhenger av filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerabilde</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbilde</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skjermbilde / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer etter innhold og innstillinger.</p>"
+      "title": "Hvordan fungerer Markdown til HTML-konvertering?",
+      "html": "<p class=\"text-mid mb-4\">Markdown er et lett markup-språk som bruker enkle symboler for formatering: # for overskrifter, ** for fet, * for kursiv, - for lister og [Tekst](URL) for lenker. Konverteren analyserer disse Markdown-konvensjonene og produserer de tilsvarende HTML-taggene.</p><p class=\"text-mid mb-4\">For eksempel blir # Overskrift til &lt;h1&gt;Overskrift&lt;/h1&gt;, **fet** blir til &lt;strong&gt;fet&lt;/strong&gt;, og punktlister blir til &lt;ul&gt;&lt;li&gt;-strukturer. Konverteren støtter den fulle CommonMark-spesifikasjonen inkludert kodeblokker, sitater, tabeller og inline HTML.</p><p class=\"text-mid\">Markdown til HTML-konvertering er essensiell for publisering av blogginnlegg, dokumentasjon og README-filer. All konvertering skjer lokalt i nettleseren din.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering MARKDOWN til HTML",
-      "description": "Tips for a unnga vanlige problemer:",
+      "title": "Tips for Markdown til HTML-konvertering",
+      "description": "Noen tips for å unngå vanlige problemer:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Veldig store filer",
-          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Overskriftsstruktur",
+          "description": "Bruk # til ###### for overskrifter (h1–h6). Et korrekt overskriftshierarki forbedrer tilgjengeligheten og SEO for den resulterende HTML-siden."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Allerede komprimerte",
-          "description": "Hvis MARKDOWN allerede var sterkt komprimert, gir konvertering til HTML kanskje ikke stor besparelse."
+          "title": "Kodeblokker",
+          "description": "Avgrenset kodeblokker (```) konverteres til &lt;pre&gt;&lt;code&gt;-elementer. Du kan angi et språk etter backticks for syntaksutheving."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "HTML stotter ikke transparens. Transparente omrader blir hvite. Vurder PNG eller WebP."
+          "icon": "RiCodeLine",
+          "title": "Inline HTML",
+          "description": "Markdown tillater inline HTML. Alle HTML-tagger i Markdown sendes direkte til outputtet, så du fritt kan kombinere Markdown og HTML."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Behold originalene",
-          "description": "Tapsbringende konvertering er irreversibel. Behold kopier av MARKDOWN-filer."
+          "icon": "RiFileTextLine",
+          "title": "Tabeller",
+          "description": "Pipe-separerte tabeller (| Kol1 | Kol2 |) konverteres til korrekte HTML &lt;table&gt;-elementer med &lt;thead&gt; og &lt;tbody&gt;."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What Markdown syntax is supported?",
+      "html": "<p class=\"text-mid mb-4\">The converter supports standard Markdown (CommonMark) syntax including:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – # through ###### (h1–h6)</li><li><strong>Text formatting</strong> – **bold**, *italic*, ~~strikethrough~~, `inline code`</li><li><strong>Links and images</strong> – [text](url) and ![alt](src)</li><li><strong>Lists</strong> – unordered (-, *, +) and ordered (1., 2., 3.)</li><li><strong>Code blocks</strong> – fenced (```) and indented (4 spaces)</li><li><strong>Blockquotes</strong> – > prefix</li><li><strong>Tables</strong> – pipe-separated with header row</li><li><strong>Horizontal rules</strong> – ---, ***, ___</li></ul><p class=\"text-mid mt-3\">Output is clean, semantic HTML without unnecessary wrapper divs. Ready to paste into any CMS, email template, or web page.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, den fungerer på alle enheter med en moderne nettleser."
         },
         {
-          "question": "Er konvertering MARKDOWN til HTML trygt?",
-          "answer": "Ja. Alt skjer lokalt i nettleseren via Canvas API. Ingenting sendes til servere."
+          "question": "Er Markdown til HTML-konvertering trygt?",
+          "answer": "Ja. All konvertering skjer lokalt i nettleseren din. Ingen data sendes til noen server."
         },
         {
-          "question": "Kan jeg konvertere flere MARKDOWN-filer?",
-          "answer": "Ja. Batchkonvertering uten begrensning. Dra filer til konverteringsomradet."
+          "question": "Hvilken Markdown-syntaks støttes?",
+          "answer": "Konverteren støtter den fulle CommonMark-spesifikasjonen: overskrifter, fet, kursiv, lenker, bilder, lister, kodeblokker, sitater, tabeller og horisontale linjer. GitHub Flavored Markdown-utvidelser som oppgavelister og gjennomstreking støttes også."
         },
         {
-          "question": "Stottes HTML av alle nettlesere?",
-          "answer": "HTML stottes av Chrome, Firefox, Safari, Edge og Opera."
+          "question": "Kan jeg bruke HTML-outputtet på nettsiden min?",
+          "answer": "Ja. Outputtet er ren, semantisk HTML som du direkte kan sette inn i enhver nettside, CMS, e-postmal eller webapplikasjon. Du kan style det med din egen CSS."
         }
       ]
     },

@@ -1,0 +1,273 @@
+{
+  "toolKey": "mmToPxDpi",
+  "locale": "nl",
+  "metadata": {
+    "title": "Mm naar px – converter",
+    "description": "Reken mm om naar pixels met DPI-ondersteuning.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/nl/tools/mm-naar-px-converter"
+  },
+  "hero": {
+    "title": "Mm naar px",
+    "description": "Deze converter rekent direct om. Voer een waarde in en het resultaat verschijnt onmiddellijk.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/mm-naar-px-converter",
+      "label": "mm naar px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Mm naar px – converter",
+      "alternateName": ["Mm naar px"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Reken mm om naar pixels met DPI-ondersteuning.",
+      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+    },
+    "howTo": {
+      "name": "Hoe de converter te gebruiken",
+      "description": "Snelle handleiding voor de converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Waarde invoeren",
+          "text": "Typ een getal in het invoerveld aan de linkerkant."
+        },
+        {
+          "name": "Resultaat aflezen",
+          "text": "Het conversieresultaat verschijnt direct in het veld ernaast."
+        },
+        {
+          "name": "Kopiëren of omdraaien",
+          "text": "Klik op Resultaat kopiëren of op Omdraaien om in de andere richting te converteren."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wanneer heb je nodig: Mm naar px?",
+      "html": "<p class=\"text-mid mb-4\">Precisiewerk meet in mm. Voor digitale afbeeldingen: Pixels = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">Bij 300 DPI: 1 mm = 11,81 px, visitekaartbreedte (85 mm) = 1.004 px.</p><p class=\"text-mid\">Alle berekeningen draaien lokaal in je browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mm naar px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe gebruik je de omrekentool?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voer een waarde in",
+          "description": "Typ een getal in het invoerveld.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lees het resultaat",
+          "description": "Het resultaat verschijnt direct.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieer of wissel",
+          "description": "Kopieer het resultaat of wissel de richting.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer is deze converter nuttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Afdrukken",
+          "description": "Verpakkingsmaten in mm. Etiket 100 mm = 1.181 px."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Visitekaartjes",
+          "description": "85 × 55 mm bij 300 DPI = 1.004 × 650 px (+ afloop)."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Etiketten",
+          "description": "Precieze omrekeningen mm naar px."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Ontwerp en meting",
+          "description": "Reken 3D-maten (mm) om naar textuurresolutie (px)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze tool bijzonder?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Alle berekeningen draaien lokaal in je browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Directe resultaten",
+          "description": "Het resultaat wordt bijgewerkt terwijl je typt."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tweerichtingsomrekening",
+          "description": "Wissel de richting met één klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referentietabel",
+          "description": "Tabel met gangbare waarden en context."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">Pixels = mm × DPI / 25,4. Bij 300 DPI: 1 mm = 11,811 px.</p><p class=\"text-mid\">Afloop: voeg 3 mm toe aan elke zijde.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">Pixels = mm × DPI / 25,4. Bij 300 DPI: 1 mm = 11,811 px.</p><p class=\"text-mid\">Afloop: voeg 3 mm toe aan elke zijde.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "mm naar px bij verschillende DPI",
+      "featureLabel": "Eigenschap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI"
+        },
+        {
+          "id": "unit2",
+          "name": "600 DPI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1 mm",
+          "values": {
+            "unit1": "11,81 px",
+            "unit2": "23,62 px"
+          }
+        },
+        {
+          "name": "10 mm",
+          "values": {
+            "unit1": "118 px",
+            "unit2": "236 px"
+          }
+        },
+        {
+          "name": "85 mm",
+          "values": {
+            "unit1": "1.004 px",
+            "unit2": "2.008 px"
+          }
+        },
+        {
+          "name": "Toepassing",
+          "values": {
+            "unit1": "Standaard druk",
+            "unit2": "Kunst / medisch"
+          }
+        },
+        {
+          "name": "Bestandsgrootte",
+          "values": {
+            "unit1": "Standaard",
+            "unit2": "4× groter"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hoeveel px is 1 mm bij 300 DPI?",
+          "answer": "1 mm bij 300 DPI = 11,811 px."
+        },
+        {
+          "question": "Worden berekeningen lokaal uitgevoerd?",
+          "answer": "Ja. Alle berekeningen draaien in je browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "mm naar px – Arteon",
+      "defaultSubject": "Feedback: mm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

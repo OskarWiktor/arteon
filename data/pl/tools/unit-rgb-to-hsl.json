@@ -1,0 +1,289 @@
+{
+  "toolKey": "rgbToHsl",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter RGB na HSL – przelicz kolory",
+    "description": "Przelicz kolory RGB na HSL i odwrotnie. Konwerter jest przydatny w CSS i przy tworzeniu palet kolorów. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-rgb-na-hsl"
+  },
+  "hero": {
+    "title": "Przelicz kolory RGB na HSL",
+    "description": "Ten konwerter przelicza kolory z formatu RGB na HSL i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-rgb-na-hsl",
+      "label": "RGB na HSL"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter RGB na HSL – przelicz kolory",
+      "alternateName": ["Przelicznik RGB na HSL", "Kalkulator kolorów HSL", "RGB to HSL converter"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz kolory RGB na HSL i odwrotnie. Konwerter jest przydatny w CSS i przy tworzeniu palet kolorów. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera RGB na HSL",
+      "description": "Instrukcja użycia: rgb na hsl.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Czym jest HSL i kiedy warto używać tego formatu?",
+      "html": "<p class=\"text-mid mb-4\">HSL to sposób opisu kolorów oparty na trzech parametrach: H (Hue – barwa, 0–360°), S (Saturation – nasycenie, 0–100%), L (Lightness – jasność, 0–100%).</p><p class=\"text-mid mb-4\">HSL jest bardziej intuicyjny niż RGB – łatwiej wyobrazić sobie kolor jako “czerwony o nasyceniu 80% i jasności 50%” niż “rgb(204, 51, 51)”. Dlatego HSL jest preferowany przy tworzeniu palet kolorów.</p><p class=\"text-mid mb-4\">W CSS: <code>hsl(217, 91%, 60%)</code> = niebieski Tailwind blue-500. Zmiana L (jasności) tworzy warianty: L=30% = ciemny, L=50% = bazowy, L=80% = jasny.</p><p class=\"text-mid\">Tailwind CSS v4 używa formatu oklch (następca HSL), ale HSL pozostaje standardem w CSS i jest obsługiwany przez wszystkie przeglądarki. Konwersja RGB ↔ HSL jest niezbędna przy pracy z paletami kolorów.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "RGB na HSL – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Palety kolorów",
+          "description": "Tworzenie wariantów: zmieniaj L (jasność) przy stałym H i S."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "CSS",
+          "description": "<code>hsl(217, 91%, 60%)</code> – intuicyjny zapis kolorów."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Tryb ciemny",
+          "description": "Zmiana L z 95% na 10% tworzy wariant ciemnego motywu."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Projektowanie",
+          "description": "HSL ułatwia tworzenie spójnych palet: obróć H o 120° = kolor komplementarny."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja RGB na HSL?",
+      "html": "<p class=\"text-mid mb-4\">RGB i HSL to dwa sposoby opisywania tego samego koloru. RGB (Red, Green, Blue) definiuje kolor przez intensywność trzech kanałów świetlnych. HSL (Hue, Saturation, Lightness) opisuje kolor bardziej intuicyjnie: odcień jako kąt na kole barw (0–360°), nasycenie jako procent czystości koloru i jasność jako procent od czarnego do białego.</p><p class=\"text-mid mb-4\">Konwersja polega na analizie proporcji między kanałami RGB. Odcień (H) wynika z tego, który kanał jest dominujący i jak bardzo różni się od pozostałych. Jasność (L) to średnia między najjaśniejszym a najciemniejszym kanałem. Nasycenie (S) określa, jak daleko kolor jest od szarości o tej samej jasności.</p><p class=\"text-mid\">Model HSL jest szczególnie przydatny dla projektantów, ponieważ pozwala łatwo tworzyć warianty koloru — na przykład jaśniejszą lub ciemniejszą wersję — przez zmianę jednego parametru, zamiast modyfikowania trzech wartości RGB jednocześnie.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>H = 0° czerwony, 120° zielony, 240° niebieski, 360° = 0° (koło barw).</li><li>S = 0% = szary. S = 100% = pełne nasycenie.</li><li>L = 0% = czarny. L = 50% = pełny kolor. L = 100% = biały.</li><li>Paleta monochromatyczna: stałe H i S, zmienne L (np. 20%, 40%, 60%, 80%).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs HSL – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "HSL",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Zapis",
+          "values": {
+            "unit1": "rgb(R, G, B)",
+            "unit2": "hsl(H, S%, L%)"
+          }
+        },
+        {
+          "name": "Intuicyjność",
+          "values": {
+            "unit1": "Niska",
+            "unit2": "Wysoka"
+          }
+        },
+        {
+          "name": "Tworzenie palet",
+          "values": {
+            "unit1": "Trudne",
+            "unit2": "Łatwe (zmieniaj H, S, L)"
+          }
+        },
+        {
+          "name": "Tryb ciemny",
+          "values": {
+            "unit1": "Wymaga ręcznej zmiany",
+            "unit2": "Zmień L"
+          }
+        },
+        {
+          "name": "CSS",
+          "values": {
+            "unit1": "rgb(59, 130, 246)",
+            "unit2": "hsl(217, 91%, 60%)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Co oznaczają litery H, S, L?",
+          "answer": "H = Hue (barwa, 0–360° na kole barw). S = Saturation (nasycenie, 0–100%). L = Lightness (jasność, 0–100%)."
+        },
+        {
+          "question": "Jak stworzyć paletę kolorów w HSL?",
+          "answer": "Ustaw H i S, potem tworzysz warianty zmieniając L: 20% (ciemny), 40%, 50% (bazowy), 70%, 90% (jasny)."
+        },
+        {
+          "question": "Jaka jest różnica między HSL a HSB/HSV?",
+          "answer": "HSL i HSV używają innej definicji jasności. W HSL L=50% to pełny kolor. W HSV V=100% to pełny kolor. Photoshop używa HSB/HSV."
+        },
+        {
+          "question": "Czy HSL jest obsługiwany w CSS?",
+          "answer": "Tak. CSS obsługuje hsl() i hsla() we wszystkich nowoczesnych przeglądarkach."
+        },
+        {
+          "question": "Jak obrócić kolor o 180°?",
+          "answer": "Dodaj 180 do H. To daje kolor komplementarny. Np. H=0° (czerwony) → H=180° (cyan)."
+        },
+        {
+          "question": "Co to jest oklch?",
+          "answer": "oklch to nowszy format kolorów w CSS (lepiej oddaje percepcję ludzką). Tailwind CSS v4 używa oklch, ale HSL nadal działa wszędzie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "RGB na HSL – Arteon",
+      "defaultSubject": "Feedback: RGB na HSL"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

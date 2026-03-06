@@ -2,7 +2,7 @@
   "toolKey": "heicToPdf",
   "locale": "en",
   "metadata": {
-    "title": "HEIC to PDF converter — HEIC PDF",
+    "title": "HEIC to PDF converter - HEIC PDF",
     "description": "Convert HEIC images to PDF documents. Combine multiple files into one PDF. Free, no registration.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/heic-to-pdf-converter"
@@ -43,12 +43,12 @@
         {
           "position": 2,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 3,
           "name": "Download your PDF",
-          "text": "Download the converted PDF file."
+          "text": "Download the converted PDF file with a single click. For multiple files, use the bulk download option to save everything as a ZIP."
         }
       ]
     }
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert HEIC to PDF?",
-      "html": "<p class=\"text-mid mb-4\">HEIC is a widely used file format with broad compatibility across devices and software. However, depending on your use case, converting to PDF can offer significant advantages — whether it's smaller file sizes, better quality preservation, broader platform support, or specific feature requirements.</p><p class=\"text-mid mb-4\">This free online converter transforms your HEIC files into PDF format directly in the browser. No files are uploaded to any server — the entire conversion process happens locally on your device using modern browser APIs. This means your data stays private and secure at all times.</p><p class=\"text-mid\">You can convert as many files as you need with no daily limits, no registration, and no watermarks. Simply drag and drop your files, adjust quality settings if available, and download the results individually or all at once.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC is the default photo format on iPhones and iPads since iOS 11. However, HEIC files cannot be opened directly on Windows, most Android devices, or many web platforms. Converting HEIC to PDF creates a universally readable document that can be viewed on any device and easily shared via email.</p><p class=\"text-mid mb-4\">Converting multiple HEIC photos into a single multi-page PDF is ideal for creating photo albums, insurance documentation, real estate listings, and medical records from iPhone photos. PDF preserves image quality and can be printed at full resolution.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "HEIC to PDF conversion",
       "variant": "right"
@@ -82,12 +82,12 @@
         },
         {
           "title": "Convert",
-          "description": "Click Convert — files are processed locally in your browser.",
+          "description": "Click Convert - files are processed locally in your browser.",
           "icon": "RiSettings3Line"
         },
         {
           "title": "Download your PDF",
-          "description": "Download the converted PDF file.",
+          "description": "Download the converted PDF file with a single click. For multiple files, use the bulk download option to save everything as a ZIP.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs — fast and works offline after loading."
+          "description": "All processing happens locally using modern browser APIs - fast and works offline after loading."
         }
       ]
     },
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Quality settings — what to choose when converting HEIC to PDF?",
-      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (default) — a good balance for most use cases: business websites, blogs, articles. The visual difference compared to the original is virtually unnoticeable.</strong></li><li><strong>85–90% — for product photography, portfolios, and galleries where quality is the priority.</strong></li><li><strong>60–70% — when minimizing file size is the priority, e.g. thumbnails in category grids.</strong></li></ul><p class=\"text-mid mt-3\">At 85% quality, the visual difference between the original HEIC and the resulting PDF is virtually imperceptible to the naked eye, while the file is significantly smaller.</p>"
+      "title": "Quality settings - what to choose when converting HEIC to PDF?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (default) - a good balance for most use cases: business websites, blogs, articles. The visual difference compared to the original is virtually unnoticeable.</strong></li><li><strong>85–90% - for product photography, portfolios, and galleries where quality is the priority.</strong></li><li><strong>60–70% - when minimizing file size is the priority, e.g. thumbnails in category grids.</strong></li></ul><p class=\"text-mid mt-3\">At 85% quality, the visual difference between the original HEIC and the resulting PDF is virtually imperceptible to the naked eye, while the file is significantly smaller.</p>"
     },
     {
       "type": "gap",
@@ -249,6 +249,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">HEIC to PDF conversion creates document files. When sharing PDFs containing photos online, file size matters — large PDFs slow down downloads and may exceed email attachment limits (typically 10–25 MB).</p><p class=\"text-mid mb-4\">The converter optimizes the PDF output to balance quality and file size. A typical 12 MP iPhone photo produces a PDF page of about 1–2 MB, meaning a 10-photo PDF will be approximately 15–20 MB.</p><p class=\"text-mid\">For smaller PDFs, consider reducing quality settings. For web sharing, you may want to convert HEIC to JPG or WebP instead and display images directly on a web page.</p>"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about HEIC to PDF conversion",
       "openByDefault": 0,
@@ -274,8 +283,8 @@
           "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
         },
         {
-          "question": "Can I convert multiple HEIC files at once?",
-          "answer": "Yes. The tool supports batch conversion with no file limit. Drag all files onto the converter or select them from your device."
+          "question": "Can I set the photo order in the PDF?",
+          "answer": "Yes. HEIC photos are added to the PDF in the order you upload them. You can rearrange the order before conversion by dragging files in the list."
         },
         {
           "question": "Is PDF supported by all browsers?",

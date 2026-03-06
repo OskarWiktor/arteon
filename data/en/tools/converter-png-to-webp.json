@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert PNG to WebP?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) is a lossless image format supporting millions colors. It is widely used for graphics with transparency and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting PNG to WebP (WebP) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">WebP supports alpha transparency, preserving any transparent areas in your image. WebP supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many PNG files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG is a lossless format that produces relatively large files — ideal for editing but heavy for web delivery. WebP typically produces files 50–70% smaller than PNG at comparable visual quality, making it one of the most effective image optimizations for websites.</p><p class=\"text-mid mb-4\">WebP supports both lossy and lossless compression modes, alpha transparency, and millions of colors. It is supported by all modern browsers: Chrome, Firefox, Safari 14+, and Edge. Lossy WebP at quality 80 is visually indistinguishable from lossless PNG for most images.</p><p class=\"text-mid mb-4\">If transparency is important, WebP preserves it from the original PNG. Google PageSpeed Insights recommends serving images in next-gen formats like WebP for better Core Web Vitals scores.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to WebP conversion",
       "variant": "right"
@@ -101,22 +101,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert PNG to WebP to significantly reduce page load times and improve Core Web Vitals scores."
+          "description": "PNG files are large — a single screenshot can be 2–10 MB. Converting to WebP reduces size by 50–70% while preserving transparency. Google PageSpeed specifically recommends WebP for better Core Web Vitals scores."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "WebP files are compatible with most modern platforms. Convert to WebP for smaller attachments that stay within email size limits."
+          "description": "WebP files are significantly smaller than PNG, reducing attachment sizes and download times. Transparency from PNG is preserved in WebP, so logos and graphics with transparent backgrounds remain intact."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify often prefer WebP format for product images due to its optimal balance of quality and file size."
+          "description": "Product images with transparent backgrounds (PNG) become much smaller when converted to WebP. WebP supports alpha transparency, so cutout product photos work perfectly on any modern browser."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "WebP provides a modern and efficient format for document image storage."
+          "description": "Converting PNG collections to WebP reduces storage by 50–70% while maintaining excellent visual quality. WebP is supported by all modern browsers and image viewers."
         }
       ]
     },
@@ -252,6 +252,24 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting PNG to WebP?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) – a good balance for most use cases. The visual difference compared to lossless PNG is virtually imperceptible while file size drops by 50–70%.</strong></li><li><strong>85–90% – for product photography and portfolios where quality is the priority.</strong></li><li><strong>60–70% – when minimizing file size is the priority, e.g. thumbnails in category grids.</strong></li></ul><p class=\"text-mid mt-3\">At 80% quality, WebP produces results that are visually indistinguishable from lossless PNG for most photographic content. For pixel-perfect accuracy, use WebP lossless mode if available.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting PNG to WebP?",
+      "html": "<p class=\"text-mid mb-4\">PNG is lossless and produces relatively large files. WebP provides substantial savings:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">PNG: 1.2 MB → WebP: 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo</p><p class=\"text-light text-sm\">PNG: 3.5 MB → WebP: 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~88%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Icon / logo</p><p class=\"text-light text-sm\">PNG: 45 KB → WebP: 18 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~60%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows exact sizes for each file.</p>"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about PNG to WebP conversion",
       "openByDefault": 0,
@@ -293,7 +311,7 @@
     {
       "type": "contactForm",
       "title": "Help us improve our tools",
-      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message - we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to WebP converter – Arteon",
       "defaultSubject": "Feedback: PNG to WebP converter"

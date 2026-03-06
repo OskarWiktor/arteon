@@ -2,7 +2,7 @@
   "toolKey": "csvToJson",
   "locale": "hu",
   "metadata": {
-    "title": "CSV JSON konverter — CSV JSON",
+    "title": "CSV JSON konverter - CSV JSON",
     "description": "CSV konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/csv-json-konverter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes CSV-t JSON-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A CSV szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a JSON formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a CSV fajlokat JSON formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A CSV szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a JSON formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a CSV fajlokat JSON formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "CSV to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Mennyit takarit meg CSV JSON konvertalasaval?",
-      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+      "title": "Hogyan működik a CSV JSON konvertálás?",
+      "html": "<p class=\"text-mid mb-4\">A CSV (Comma-Separated Values) formátum szövegsorokban tárolja az adatokat, ahol az értékeket vessző vagy pontosvessző választja el. A JSON (JavaScript Object Notation) formátum ugyanazokat az adatokat objektumok tömbjéként szervezi kulcs-érték párokkal, ahol minden sor egy objektummá válik, és minden oszlopfejléc kulccsá lesz.</p><p class=\"text-mid mb-4\">A konvertáló a CSV fájl első sorát oszlopfejlécként olvassa be, és tulajdonságnevekként használja minden egyes JSON objektumban. Minden további sor külön objektummá válik az eredmény JSON tömbben.</p><p class=\"text-mid\">A kimenet megfelelően formázott JSON behúzással a jobb olvashatóság érdekében. Az egész konvertálás helyben történik a böngésződben — semmilyen adat nem kerül szerverre.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tippek CSV JSON konvertalasahoz",
-      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "title": "Tippek a CSV JSON konvertáláshoz",
+      "description": "Néhány tipp a gyakori problémák elkerülésére:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Nagyon nagy fajlok",
-          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+          "icon": "RiFileTextLine",
+          "title": "Oszlopfejlécek",
+          "description": "Győződjön meg róla, hogy a CSV fájlnak van fejlécsora. A konvertáló az első sort használja JSON tulajdonságnevekként."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Mar tomoriteett fajlok",
-          "description": "Ha a CSV mar erosen tomoriteett volt, JSON konvertalas keveset takarithat."
+          "icon": "RiSeparator",
+          "title": "Elválasztó észlelés",
+          "description": "A konvertáló automatikusan észleli, hogy a CSV vesszőt, pontosvesszőt vagy tabultor-jelet használ elválasztóként."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Atlatszosag",
-          "description": "JSON nem tamogatja az atlatszosagot. Feher hatter lesz. Hasznaljon PNG-t vagy WebP-t."
+          "icon": "RiCodeLine",
+          "title": "Speciális karakterek",
+          "description": "A vesszőket, idézőjeleket vagy sortöréseket tartalmazó értékeknek duplán idézőjelezve kell lenniük. A konvertáló automatikusan kezeli a szabványos CSV escape-elést."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Orizze meg az eredetiket",
-          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a CSV fajlok masolatait."
+          "icon": "RiFileCodeLine",
+          "title": "Karakterkódolás",
+          "description": "A legjobb eredményért használjon UTF-8 kódolású CSV fájlokat. Más kódolású fájlok hibásan jeleníthetik meg a speciális karaktereket."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Common CSV formatting issues and how to handle them",
+      "html": "<p class=\"text-mid mb-4\">CSV files from different sources can have inconsistent formatting. Here are common issues the converter handles:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Different separators</strong> – commas, semicolons, tabs. European exports from Excel often use semicolons because commas are used as decimal separators.</li><li><strong>Quoted values</strong> – values containing commas or newlines must be wrapped in double quotes. The converter handles this correctly.</li><li><strong>Unicode and special characters</strong> – accented characters, CJK text, and emoji are preserved in the JSON output.</li><li><strong>Empty values</strong> – empty cells are converted to empty strings or null in JSON, depending on context.</li></ul><p class=\"text-mid mt-3\">If conversion fails, check that your CSV has consistent column counts across all rows and that quoted values use proper double-quote escaping.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
         },
         {
-          "question": "Biztonsagos CSV JSON konvertalasa?",
-          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+          "question": "Biztonságos a CSV JSON konvertálás?",
+          "answer": "Igen. Az egész konvertálás helyben történik a böngésződben. Semmilyen adat nem kerül szerverre."
         },
         {
-          "question": "Konvertalhatok tobb CSV fajlt egyszerre?",
-          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+          "question": "Használhatom a JSON kimenetet az alkalmazásomban?",
+          "answer": "Igen. A kimenet szabványos JSON, kompatibilis minden programozási nyelvvel, adatbázissal vagy API-val — JavaScript, Python, PHP, Java és sok más."
         },
         {
-          "question": "Minden bongeszo tamogatja a JSON-t?",
-          "answer": "JSON-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
+          "question": "Mi történik az üres értékekkel a CSV-ben?",
+          "answer": "Az üres cellák a CSV-ben üres karakterláncokká válnak a JSON-ban. A záró vesszők és az inkonzisztens oszlopszám helyesen kezelve lesznek."
         }
       ]
     },

@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert WebP to JPG?",
-      "html": "<p class=\"text-mid mb-4\">WebP is a modern image format developed by Google that offers excellent compression. However, not every application supports WebP — older image editors, some email clients, and certain document workflows still expect JPG or PNG files.</p><p class=\"text-mid mb-4\">Converting WebP to JPG gives you a universally compatible image that opens in every program, browser, and operating system. JPG is the most widely supported photo format and is accepted by virtually every platform.</p><p class=\"text-mid mb-4\">Common reasons to convert include: uploading to platforms that reject WebP, attaching images to emails, inserting photos into documents, or sharing with recipients whose software does not handle WebP.</p><p class=\"text-mid\">This converter runs 100% in your browser. Files are never sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP is a modern image format developed by Google that offers excellent compression. However, not every application supports WebP - older image editors, some email clients, and certain document workflows still expect JPG or PNG files.</p><p class=\"text-mid mb-4\">Converting WebP to JPG gives you a universally compatible image that opens in every program, browser, and operating system. JPG is the most widely supported photo format and is accepted by virtually every platform.</p><p class=\"text-mid mb-4\">Common reasons to convert include: uploading to platforms that reject WebP, attaching images to emails, inserting photos into documents, or sharing with recipients whose software does not handle WebP.</p><p class=\"text-mid\">This converter runs 100% in your browser. Files are never sent to any server.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "WebP to JPG converter – Arteon"
     },
@@ -133,7 +133,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Complete privacy",
-          "description": "Files stay on your device. Conversion uses the browser Canvas API — nothing is uploaded."
+          "description": "Files stay on your device. Conversion uses the browser Canvas API - nothing is uploaded."
         },
         {
           "icon": "RiInfinityFill",
@@ -148,7 +148,7 @@
         {
           "icon": "RiDownloadLine",
           "title": "Bulk download",
-          "description": "Download all converted files with one click."
+          "description": "Download all converted files with one click as a ZIP archive. Ideal when batch-processing multiple images — no need to download them one by one."
         }
       ]
     },
@@ -236,8 +236,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Quality settings — what to choose when converting WebP to JPG?",
-      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (default) — a good balance for most use cases: business websites, blogs, articles. The visual difference compared to the original is virtually unnoticeable.</strong></li><li><strong>85–90% — for product photography, portfolios, and galleries where quality is the priority.</strong></li><li><strong>60–70% — when minimizing file size is the priority, e.g. thumbnails in category grids.</strong></li></ul><p class=\"text-mid mt-3\">At 85% quality, the visual difference between the original WebP and the resulting JPG is virtually imperceptible to the naked eye, while the file is significantly smaller.</p>"
+      "title": "Quality settings - what to choose when converting WebP to JPG?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (default) - a good balance for most use cases: business websites, blogs, articles. The visual difference compared to the original is virtually unnoticeable.</strong></li><li><strong>85–90% - for product photography, portfolios, and galleries where quality is the priority.</strong></li><li><strong>60–70% - when minimizing file size is the priority, e.g. thumbnails in category grids.</strong></li></ul><p class=\"text-mid mt-3\">At 85% quality, the visual difference between the original WebP and the resulting JPG is virtually imperceptible to the naked eye, while the file is significantly smaller.</p>"
     },
     {
       "type": "gap",
@@ -246,7 +246,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them — LCP (Largest Contentful Paint) — measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting WebP images to JPG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading — especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting WebP images to JPG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "gap",
@@ -308,7 +308,7 @@
         },
         {
           "question": "Can I convert multiple files at once?",
-          "answer": "Yes. Add as many files as you like — there is no limit. All images are converted in sequence."
+          "answer": "Yes. Add as many files as you like - there is no limit. All images are converted in sequence."
         },
         {
           "question": "Are my files uploaded to a server?",
@@ -339,7 +339,7 @@
     {
       "type": "contactForm",
       "title": "Help us improve our tools",
-      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message - we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "WebP to JPG converter – Arteon",
       "defaultSubject": "Feedback: WebP to JPG converter"

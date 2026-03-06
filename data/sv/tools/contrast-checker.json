@@ -323,7 +323,7 @@
     {
       "type": "sectionInfo",
       "title": "Tillgänglighetskrav i Sverige",
-      "html": "<p class=\"text-mid mb-4\">Sverige har implementerat EU:s webbtillgänglighetsdirektiv genom <strong>DOS-lagen (2018:1937)</strong> — Lagen om tillgänglighet till digital offentlig service.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Offentlig sektor</strong> — alla statliga, regionala och kommunala webbplatser och appar ska uppfylla WCAG 2.1 nivå AA. Myndigheten för digital förvaltning (DIGG) övervakar efterlevnaden.</li><li><strong>EU:s tillgänglighetsdirektiv (EAA)</strong> — från juni 2025 utvidgas kraven till den privata sektorn: e-handel, banker, transporttjänster och medieplattformar.</li><li><strong>Svensk tillgänglighetskultur</strong> — Sverige har en stark tradition av inkluderande design. Många svenska företag uppfyller redan WCAG AA frivilligt, och konsumenter förväntar sig tillgängliga digitala tjänster.</li></ul><p class=\"text-mid mt-3\">Kontrastförhållandet 4,5:1 för normal text och 3:1 för stor text är ett lagkrav. Detta verktyg kontrollerar exakt dessa tröskelvärden.</p>"
+      "html": "<p class=\"text-mid mb-4\">Sverige har implementerat EU:s webbtillgänglighetsdirektiv genom <strong>DOS-lagen (2018:1937)</strong> - Lagen om tillgänglighet till digital offentlig service.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Offentlig sektor</strong> - alla statliga, regionala och kommunala webbplatser och appar ska uppfylla WCAG 2.1 nivå AA. Myndigheten för digital förvaltning (DIGG) övervakar efterlevnaden.</li><li><strong>EU:s tillgänglighetsdirektiv (EAA)</strong> - från juni 2025 utvidgas kraven till den privata sektorn: e-handel, banker, transporttjänster och medieplattformar.</li><li><strong>Svensk tillgänglighetskultur</strong> - Sverige har en stark tradition av inkluderande design. Många svenska företag uppfyller redan WCAG AA frivilligt, och konsumenter förväntar sig tillgängliga digitala tjänster.</li></ul><p class=\"text-mid mt-3\">Kontrastförhållandet 4,5:1 för normal text och 3:1 för stor text är ett lagkrav. Detta verktyg kontrollerar exakt dessa tröskelvärden.</p>"
     },
     {
       "type": "gap",
@@ -409,7 +409,7 @@
         },
         {
           "question": "Vad är skillnaden mellan WCAG AA och AAA?",
-          "answer": "AA kräver 4,5:1 kontrast för normal text och 3:1 för stor text — detta är det lagstadgade minimumet. AAA kräver 7:1 för normal text och 4,5:1 för stor text — bättre läsbarhet men svårare att uppnå."
+          "answer": "AA kräver 4,5:1 kontrast för normal text och 3:1 för stor text - detta är det lagstadgade minimumet. AAA kräver 7:1 för normal text och 4,5:1 för stor text - bättre läsbarhet men svårare att uppnå."
         },
         {
           "question": "Vilka färgpar bör jag kontrollera först?",

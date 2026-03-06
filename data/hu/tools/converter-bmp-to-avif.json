@@ -2,7 +2,7 @@
   "toolKey": "bmpToAvif",
   "locale": "hu",
   "metadata": {
-    "title": "BMP AVIF konverter — BMP AVIF",
+    "title": "BMP AVIF konverter - BMP AVIF",
     "description": "Tömörítetlen BMP fájlok konvertálása ultrakompakt AVIF-re. Telepítés nélkül, bármilyen eszközön működik. Ingyenes, privát és korlátlan.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/bmp-avif-konverter"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Minőség beállítása",
-          "text": "Állítsd be a AVIF minőség csúszkáját — alacsonyabb értékek kisebb fájlokat eredményeznek."
+          "text": "Állítsd be a AVIF minőség csúszkáját - alacsonyabb értékek kisebb fájlokat eredményeznek."
         },
         {
           "position": 3,
           "name": "Konvertalas",
-          "text": "Kattints a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+          "text": "Kattints a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra."
         },
         {
           "position": 4,
           "name": "Letoltes",
-          "text": "Töltsd le a AVIF fájlokat — egyenként vagy mindet egyszerre."
+          "text": "Töltsd le a AVIF fájlokat - egyenként vagy mindet egyszerre."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Minosegi beallitasok — mit valassz BMP AVIF konvertalasahoz?",
-      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (alap) — jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% — termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% — amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">80%-os minosegnel a kulonbseg BMP es AVIF kozott szabad szemmel eszrevehetetlen.</p>"
+      "title": "Minosegi beallitasok - mit valassz BMP AVIF konvertalasahoz?",
+      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (alap) - jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% - termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% - amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">80%-os minosegnel a kulonbseg BMP es AVIF kozott szabad szemmel eszrevehetetlen.</p>"
     },
     {
       "type": "gap",

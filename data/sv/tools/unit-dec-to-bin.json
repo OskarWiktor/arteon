@@ -1,0 +1,277 @@
+{
+  "toolKey": "decToBin",
+  "locale": "sv",
+  "metadata": {
+    "title": "DEC till BIN – omvandlare",
+    "description": "Omvandla decimaltal till binära tal och tvärtom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/sv/verktyg/decimal-till-binaer-omvandlare"
+  },
+  "hero": {
+    "title": "DEC till BIN",
+    "description": "Denna omvandlare räknar om direkt. Ange ett värde så visas resultatet omedelbart.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/decimal-till-binaer-omvandlare",
+      "label": "DEC till BIN"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "DEC till BIN – omvandlare",
+      "alternateName": ["DEC till BIN"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Omvandla decimaltal till binära tal och tvärtom.",
+      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+    },
+    "howTo": {
+      "name": "Så använder du omvandlaren",
+      "description": "Snabbguide för att använda omvandlaren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Ange värde",
+          "text": "Skriv ett tal i inmatningsfältet till vänster."
+        },
+        {
+          "name": "Läs av resultatet",
+          "text": "Konverteringsresultatet visas omedelbart i fältet bredvid."
+        },
+        {
+          "name": "Kopiera eller vänd",
+          "text": "Klicka på Kopiera resultat eller på Vänd för att konvertera i andra riktningen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "När ska man omvandla decimal till binär?",
+      "html": "<p class=\"text-mid mb-4\">Det binära talsystemet (bas-2) är datorernas grundläggande talsystem. Varje bit representerar en potens av 2. Exempel: 42 = 101010 (32+8+2).</p><p class=\"text-mid\">Alla beräkningar körs lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Decimal to binary converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Så använder du omvandlaren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ange värde",
+          "description": "Skriv ett tal i inmatningsfältet. Du kan använda punkt eller komma som decimalavskiljare.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Läs av resultatet",
+          "description": "Konverteringsresultatet visas omedelbart i fältet bredvid – utan att klicka.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiera eller vänd",
+          "description": "Klicka på Kopiera resultat eller använd knappen Vänd.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När är denna omvandlare användbar?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webbutveckling",
+          "description": "Bitoperationer, bitflaggor och binär aritmetik."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Internet",
+          "description": "IP-adresser och subnätmasker i binär."
+        },
+        {
+          "icon": "RiShieldKeyholeLine",
+          "title": "Rättigheter",
+          "description": "Unix: chmod 755 = rwxr-xr-x = 111101101."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Datavetenskap",
+          "description": "Hur datorer lagrar tal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna omvandlare speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Alla beräkningar görs lokalt i din webbläsare. Ingen data skickas till någon server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultat i realtid",
+          "description": "Resultatet uppdateras omedelbart när du skriver – inget klick krävs."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Dubbelriktad konvertering",
+          "description": "Vänd-knappen låter dig konvertera i båda riktningarna med ett klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenstabell",
+          "description": "En färdig tabell med ofta konverterade värden och kontextuella beskrivningar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">Dela upprepat med 2 och notera resterna. Läs nedifrån och upp.</p><p class=\"text-mid\">8 bitar = 1 byte = värden 0–255.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">Dela upprepat med 2 och notera resterna. Läs nedifrån och upp.</p><p class=\"text-mid\">8 bitar = 1 byte = värden 0–255.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimal vs Binär",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimal (bas-10)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binär (bas-2)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Siffror",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–1"
+          }
+        },
+        {
+          "name": "Används av",
+          "values": {
+            "unit1": "Människor",
+            "unit2": "Datorer"
+          }
+        },
+        {
+          "name": "Exempel: 42",
+          "values": {
+            "unit1": "42",
+            "unit2": "101010"
+          }
+        },
+        {
+          "name": "Exempel: 255",
+          "values": {
+            "unit1": "255",
+            "unit2": "11111111"
+          }
+        },
+        {
+          "name": "Läsbarhet",
+          "values": {
+            "unit1": "Enkel",
+            "unit2": "Lång men nativ"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Vad är 10 i binär?",
+          "answer": "10 = 1010 (8+2)."
+        },
+        {
+          "question": "Vad är 255 i binär?",
+          "answer": "255 = 11111111 (åtta ettor). Maximum för en byte."
+        },
+        {
+          "question": "Körs beräkningarna lokalt?",
+          "answer": "Ja. Alla beräkningar körs i din webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DEC till BIN – Arteon",
+      "defaultSubject": "Feedback: dec-to-bin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra gratis verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

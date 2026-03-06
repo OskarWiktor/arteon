@@ -2,7 +2,7 @@
   "toolKey": "pdfToPng",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor PDF în PNG — PDF PNG",
+    "title": "Convertor PDF în PNG - PDF PNG",
     "description": "Convertește pagini PDF în imagini PNG. Calitate înaltă, fără limite. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-pdf-in-png"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Convertiți",
-          "text": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser."
+          "text": "Faceți clic pe Convertiți - fișierele sunt procesate local în browser."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți PDF în PNG?",
-      "html": "<p class=\"text-mid mb-4\">PDF este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in PNG poate oferi avantaje semnificative — fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele PDF in format PNG direct in browser. Niciun fisier nu este trimis la servere — intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in PNG poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele PDF in format PNG direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "PDF to PNG conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Convertiți",
-          "description": "Faceți clic pe Convertiți — fișierele sunt procesate local în browser.",
+          "description": "Faceți clic pe Convertiți - fișierele sunt procesate local în browser.",
           "icon": "RiSettings3Line"
         },
         {
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose PNG vs JPG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">PNG is lossless — it preserves sharp text edges, clean lines, and exact colors without compression artifacts. This makes PNG ideal for documents with text, technical drawings, invoices, and any content with sharp edges.</p><p class=\"text-mid mb-4\">JPG uses lossy compression and may show visible artifacts around text and sharp edges (known as \"ringing\"). However, JPG produces smaller files, which is better for photo-heavy PDFs like product catalogs or photo albums.</p><p class=\"text-mid\">Rule of thumb: choose PNG for documents with text and diagrams, JPG for photo-heavy PDFs, and WebP for the best balance of quality and size.</p>"
     },
     {
       "type": "faq",

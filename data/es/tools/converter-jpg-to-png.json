@@ -3,7 +3,7 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor JPG a PNG – formato sin pérdida gratis",
-    "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
+    "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor. Herramienta gratuita en el navegador - sin registro, sin límites, privacidad total.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-jpg-a-png"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Convertir JPG a PNG", "Conversión de JPG a PNG", "Convertidor JPG a PNG gratis"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
+      "description": "Convierte imágenes JPG a PNG sin pérdida en el navegador. Sin límites, sin registro, sin subidas al servidor. Herramienta gratuita en el navegador - sin registro, sin límites, privacidad total.",
       "featureList": ["Conversión de JPG a PNG", "Salida PNG sin pérdidas", "Conversión por lotes", "Procesamiento local en el navegador", "Sin subida de archivos"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Convertir a PNG",
-          "text": "Haz clic en convertir. PNG es sin pérdidas — no necesita ajuste de calidad."
+          "text": "Haz clic en convertir. PNG es sin pérdidas - no necesita ajuste de calidad."
         },
         {
           "name": "Descargar archivos PNG",
@@ -338,7 +338,7 @@
     {
       "type": "contactForm",
       "title": "Ayúdanos a mejorar nuestras herramientas",
-      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje — respondemos en 24 horas.",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Envíanos un mensaje - respondemos en 24 horas.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "Convertidor JPG a PNG – Arteon",
       "defaultSubject": "Feedback: Convertidor JPG a PNG"

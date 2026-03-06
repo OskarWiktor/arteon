@@ -1,0 +1,289 @@
+{
+  "toolKey": "dpiToPpi",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter DPI na PPI – rozdzielczość druku i ekranu",
+    "description": "Ten konwerter pomoże zrozumieć różnicę między DPI a PPI i dobrać odpowiednią rozdzielczość. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-dpi-na-ppi"
+  },
+  "hero": {
+    "title": "DPI vs PPI – porównanie rozdzielczości",
+    "description": "Ten konwerter pomoże zrozumieć różnice między DPI (rozdzielczość druku) a PPI (rozdzielczość ekranu) i dobrać odpowiednie ustawienia.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-dpi-na-ppi",
+      "label": "DPI na PPI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter DPI na PPI – rozdzielczość druku i ekranu",
+      "alternateName": ["Przelicznik DPI PPI", "DPI vs PPI", "Rozdzielczość druku i ekranu"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Ten konwerter pomoże zrozumieć różnicę między DPI a PPI i dobrać odpowiednią rozdzielczość. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera DPI na PPI",
+      "description": "Instrukcja użycia: dpi na ppi.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Jaka jest różnica między DPI a PPI?",
+      "html": "<p class=\"text-mid mb-4\">DPI (Dots Per Inch) to gęstość punktów w druku – ile fizycznych kropel tuszu drukarki przypada na cal. PPI (Pixels Per Inch) to gęstość pikseli na ekranie – ile pikseli wyświetlacza przypada na cal.</p><p class=\"text-mid mb-4\">Numerycznie DPI i PPI mogą mieć tę samą wartość, ale dotyczą różnych rzeczy. Grafika o rozdzielczości 300 PPI wyświetlana na ekranie będzie wyglądać tak samo jak grafika 72 PPI (piksel = piksel). Różnica ujawnia się dopiero przy druku.</p><p class=\"text-mid mb-4\">W praktyce terminów DPI i PPI używa się zamiennie – nawet programy graficzne takie jak Photoshop używają “DPI”, mając na myśli PPI. To uproszczenie, ale powszechnie akceptowane.</p><p class=\"text-mid\">Ten konwerter pokazuje, że numerycznie DPI = PPI (1:1), ale wyjaśnia różnice kontekstowe między tymi pojęciami.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "DPI na PPI – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Przygotowanie do druku",
+          "description": "Drukarnia żąda 300 DPI – oznacza to, że grafika musi mieć 300 PPI."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Ekrany i wyświetlacze",
+          "description": "iPhone 15 Pro: 460 PPI. Monitor 27″ 4K: 163 PPI."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Eksport grafik",
+          "description": "Photoshop “DPI” = PPI. 72 DPI dla web, 300 DPI dla druku."
+        },
+        {
+          "icon": "RiQuestionLine",
+          "title": "Edukacja",
+          "description": "Zrozum różnicę między DPI (druk) a PPI (ekran)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja DPI na PPI?",
+      "html": "<p class=\"text-mid mb-4\">DPI (dots per inch) i PPI (pixels per inch) to dwie jednostki opisujące gęstość punktów na cal, ale stosowane w różnych kontekstach. DPI odnosi się do druku i oznacza liczbę fizycznych kropel tuszu na cal, natomiast PPI odnosi się do ekranów i oznacza liczbę pikseli na cal.</p><p class=\"text-mid mb-4\">Numerycznie wartości DPI i PPI są identyczne — konwersja to prosta zamiana 1:1. Na przykład obraz o rozdzielczości 300 DPI ma 300 PPI. Różnica polega wyłącznie na kontekście użycia: DPI mówi drukarce, ile kropel tuszu nałożyć na cal papieru, a PPI informuje o gęstości pikseli na ekranie.</p><p class=\"text-mid\">W codziennej praktyce oba terminy są często używane zamiennie, choć technicznie DPI dotyczy druku, a PPI — wyświetlaczy. Narzędzie pomaga wyjaśnić tę zależność i przeliczyć wartości między kontekstem druku a ekranu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Druk fotograficzny: 300 DPI. Druk gazetowy: 150 DPI. Bilbordy: 30–72 DPI.</li><li>Windows standard: 96 PPI. macOS: 72 PPI (klasycznie), 110+ PPI (Retina).</li><li>iPhone 15 Pro: 460 PPI. iPad Pro: 264 PPI.</li><li>Zmiana DPI/PPI w Photoshopie bez resamplingu nie zmienia jakości – tylko rozmiar druku.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "DPI (Dots Per Inch) vs PPI (Pixels Per Inch) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "DPI (Dots Per Inch)"
+        },
+        {
+          "id": "unit2",
+          "name": "PPI (Pixels Per Inch)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dotyczy",
+          "values": {
+            "unit1": "Druku",
+            "unit2": "Ekranów"
+          }
+        },
+        {
+          "name": "Fizyczne elementy",
+          "values": {
+            "unit1": "Kropki tuszu",
+            "unit2": "Piksele wyświetlacza"
+          }
+        },
+        {
+          "name": "Typowa wartość",
+          "values": {
+            "unit1": "150–300 (druk)",
+            "unit2": "72–460 (ekrany)"
+          }
+        },
+        {
+          "name": "Standard web",
+          "values": {
+            "unit1": "72 (eksport)",
+            "unit2": "96 (CSS/Windows)"
+          }
+        },
+        {
+          "name": "Wartość numeryczna",
+          "values": {
+            "unit1": "Taka sama",
+            "unit2": "Taka sama"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Czy DPI i PPI to to samo?",
+          "answer": "Numerycznie tak (1:1), ale dotyczą różnych rzeczy. DPI = gęstość punktów druku. PPI = gęstość pikseli ekranu."
+        },
+        {
+          "question": "Jakie DPI ustawić w Photoshopie?",
+          "answer": "300 DPI (PPI) dla druku, 72–96 DPI dla web. Photoshop używa terminu DPI, ale chodzi o PPI."
+        },
+        {
+          "question": "Czy zmiana DPI poprawia jakość zdjęcia?",
+          "answer": "Nie, jeśli nie zmienisz rozmiaru pikseli (bez resamplingu). DPI wpływa tylko na fizyczny rozmiar wydruku."
+        },
+        {
+          "question": "Ile PPI ma iPhone?",
+          "answer": "iPhone 15 Pro: 460 PPI. iPhone 15: 460 PPI. iPhone SE: 326 PPI."
+        },
+        {
+          "question": "Ile PPI ma monitor 27 cali 4K?",
+          "answer": "Monitor 27″ o rozdzielczości 3840×2160 px ma około 163 PPI."
+        },
+        {
+          "question": "Dlaczego graficy mówią DPI zamiast PPI?",
+          "answer": "To historyczne uproszczenie. Terminy DPI i PPI są używane zamiennie w świecie grafiki, choć technicznie mają różne znaczenia."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "DPI na PPI – Arteon",
+      "defaultSubject": "Feedback: DPI na PPI"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

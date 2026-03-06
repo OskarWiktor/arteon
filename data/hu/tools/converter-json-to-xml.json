@@ -2,7 +2,7 @@
   "toolKey": "jsonToXml",
   "locale": "hu",
   "metadata": {
-    "title": "JSON XML konverter — JSON XML",
+    "title": "JSON XML konverter - JSON XML",
     "description": "JSON konvertálása XML formátumba. Automatikus elemzés és formázás. Ingyenes.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/json-xml-konverter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes JSON-t XML-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A JSON szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a XML formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a JSON fajlokat XML formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A JSON szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a XML formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a JSON fajlokat XML formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "JSON to XML conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Mennyit takarit meg JSON XML konvertalasaval?",
-      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+      "title": "Hogyan működik a JSON XML konvertálás?",
+      "html": "<p class=\"text-mid mb-4\">A JSON és az XML mindketten strukturált adatformátumok, de alapvetően eltérő szintaxist használnak. A JSON kapcsos zárójeleket és kulcs-érték párokat használ, míg az XML nyitó és záró címkéket az elemek definiálására. A konvertáló minden JSON tulajdonságot XML elemhez rendel, megőrizve a hierarchikus struktúrát.</p><p class=\"text-mid mb-4\">A JSON objektumok XML elemekké, a JSON tömbök ismétlődő elemekké, a primitív értékek (karakterláncok, számok, logikai) pedig a szülő címkék szöveges tartalmává válnak. A konvertáló jól formázott XML-t állít elő behúzással és deklarációs fejléccel.</p><p class=\"text-mid\">Az XML széles körben használt vállalati rendszerekben, SOAP webszolgáltatásokban, konfigurációs fájlokban és adatcserében szigorú sémavalidációval. A konvertálás teljes egészében a böngésződben történik.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tippek JSON XML konvertalasahoz",
-      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "title": "Tippek a JSON XML konvertáláshoz",
+      "description": "Néhány tipp a gyakori problémák elkerülésére:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Nagyon nagy fajlok",
-          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+          "icon": "RiCodeLine",
+          "title": "Gyökérelem",
+          "description": "Az XML egyetlen gyökérelemet igényel. Ha a JSON tömb, a konvertáló gyökérelembe csomagolja."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Mar tomoriteett fajlok",
-          "description": "Ha a JSON mar erosen tomoriteett volt, XML konvertalas keveset takarithat."
+          "icon": "RiNodeTree",
+          "title": "Tömbök kezelése",
+          "description": "A JSON tömbök ismétlődő XML elemekké konvertálódnak azonos címkenevekkel. Az elem neve a szülő kulcsból származik."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Atlatszosag",
-          "description": "XML nem tamogatja az atlatszosagot. Feher hatter lesz. Hasznaljon PNG-t vagy WebP-t."
+          "icon": "RiFileTextLine",
+          "title": "Speciális karakterek",
+          "description": "Az olyan karakterek, mint &lt;, &gt;, &amp; és idézőjelek automatikusan szabványos XML entitásokra cserélődnek az érvényes markup érdekében."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Orizze meg az eredetiket",
-          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a JSON fajlok masolatait."
+          "icon": "RiFileCodeLine",
+          "title": "Attribútumok vs elemek",
+          "description": "Alapértelmezetten minden JSON tulajdonság XML gyermekelemmé válik. A JSON-nak nincs natív XML attribútum fogalma, ezért attribútumok nem generálódnak."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JSON to XML mapping rules",
+      "html": "<p class=\"text-mid mb-4\">The converter maps JSON structures to XML elements following these rules:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Objects</strong> – each key becomes an XML element. <code>{\"name\": \"John\"}</code> → <code>&lt;name&gt;John&lt;/name&gt;</code></li><li><strong>Arrays</strong> – each item becomes a repeating element with the key name. <code>{\"items\": [1, 2]}</code> → <code>&lt;items&gt;1&lt;/items&gt;&lt;items&gt;2&lt;/items&gt;</code></li><li><strong>Primitives</strong> – strings, numbers, booleans become text content of their parent element.</li><li><strong>Null values</strong> – converted to empty elements or omitted.</li></ul><p class=\"text-mid mt-3\">The output includes a proper XML declaration and uses 2-space indentation for readability. Element names are derived directly from JSON keys.</p>"
     },
     {
       "type": "faq",
@@ -250,20 +259,16 @@
           "answer": "Igen, a konverter támogatja a kötegelt konverziót."
         },
         {
-          "question": "Működik a konverter mobilon?",
-          "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
+          "question": "Biztonságos a JSON XML konvertálás?",
+          "answer": "Igen. Az egész konvertálás helyben történik a böngésződben. Semmilyen adat nem kerül szerverre."
         },
         {
-          "question": "Biztonsagos JSON XML konvertalasa?",
-          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+          "question": "Veszteségmentes a konvertálás?",
+          "answer": "Igen. A JSON bemenet összes adata megőrződik az XML kimenetben. A struktúra és az értékek érintetlenek maradnak, csak a szintaxis változik."
         },
         {
-          "question": "Konvertalhatok tobb JSON fajlt egyszerre?",
-          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
-        },
-        {
-          "question": "Minden bongeszo tamogatja a XML-t?",
-          "answer": "XML-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
+          "question": "Validálhatom az XML kimenetet?",
+          "answer": "A konvertáló jól formázott XML-t állít elő, amely megfelel a szabványos XML validációnak. Sémavalidáláshoz (XSD) külön alkalmazhatja a sémáját a kimenetre."
         }
       ]
     },

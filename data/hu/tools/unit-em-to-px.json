@@ -1,0 +1,277 @@
+{
+  "toolKey": "emToPx",
+  "locale": "hu",
+  "metadata": {
+    "title": "Em px-re – átváltó",
+    "description": "CSS em átváltása pixelre és fordítva.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/hu/eszkozok/em-px-atvalto"
+  },
+  "hero": {
+    "title": "Em px-re",
+    "description": "Ez az átváltó azonnal átszámol. Adjon meg egy értéket és az eredmény azonnal megjelenik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/em-px-atvalto",
+      "label": "em px-re"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Em px-re – átváltó",
+      "alternateName": ["Em px-re"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "CSS em átváltása pixelre és fordítva.",
+      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+    },
+    "howTo": {
+      "name": "Hogyan használja az átváltót",
+      "description": "Gyors útmutató az átváltó használatához.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Érték megadása",
+          "text": "Írjon be egy számot a bal oldali beviteli mezőbe."
+        },
+        {
+          "name": " Eredmény leolvasása",
+          "text": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben."
+        },
+        {
+          "name": "Másolás vagy megfordítás",
+          "text": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikor kell használni: Em px-re?",
+      "html": "<p class=\"text-mid mb-4\">Die CSS-Einheit em ist relativ zur Schriftgröße des übergeordneten Elements. Bei der Standardgröße von 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Im Gegensatz zu rem (relativ zum Wurzelelement) kaskadiert em: 1,5em × 1,5em = 2,25× der Basisgröße.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Em px-re – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az átváltót?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Érték megadása",
+          "description": "Írjon be egy számot a beviteli mezőbe. Használhat pontot vagy vesszőt tizedesjegyként.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Eredmény leolvasása",
+          "description": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben – kattintás nélkül.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Másolás vagy megfordítás",
+          "description": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor hasznos ez az átváltó?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTextSpacing",
+          "title": "Typografia",
+          "description": "Line-height 1,5 em = 150% rozmiaru czcionki rodzica."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Przyciski",
+          "description": "Padding w em skaluje się z rozmiarem tekstu przycisku."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Komponenty",
+          "description": "Wymiary proporcjonalne do tekstu w komponentach UI."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webfejlesztés",
+          "description": "Breakpointy w em są odporne na zmianę bazowego font-size."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt az átváltót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "Minden számítás helyben, a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Azonnali eredmények",
+          "description": "Az eredmény azonnal frissül gépelés közben – nem kell semmilyen gombra kattintani."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kétirányú átváltás",
+          "description": "A Megfordítás gomb segítségével egy kattintással válthat irányt."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencia táblázat",
+          "description": "Kész táblázat gyakran átváltott értékekkel és kontextuális leírásokkal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az átváltás?",
+      "html": "<p class=\"text-mid mb-4\">px = em × parent font size. By default, the browser base font size is 16px.</p><p class=\"text-mid mb-4\">Em compounds through the DOM tree. If body is 16px and a div is 1.5em (24px), a paragraph inside at 1.5em will be 1.5 × 24 = 36px.</p><p class=\"text-mid\">For predictable sizing, consider using rem units instead — they always reference the root element font size.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gyakorlati tippek",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Default browser font: 16px. 1em = 16px, 0.875em = 14px, 1.25em = 20px.</li><li>Common heading sizes: h1 = 2em (32px), h2 = 1.5em (24px), h3 = 1.17em (18.7px).</li><li>Padding/margin in em scales with font size — useful for responsive components.</li><li>62.5% trick: setting html font-size to 62.5% makes 1em = 10px for easier math.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "em vs px vs rem",
+      "featureLabel": "Tulajdonság",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "em"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Reference",
+          "values": {
+            "unit1": "Parent font size",
+            "unit2": "Fixed pixel"
+          }
+        },
+        {
+          "name": "Compounds",
+          "values": {
+            "unit1": "Yes (nests)",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Responsive",
+          "values": {
+            "unit1": "Yes",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Accessibility",
+          "values": {
+            "unit1": "Respects user settings",
+            "unit2": "Fixed size"
+          }
+        },
+        {
+          "name": "Predictability",
+          "values": {
+            "unit1": "Context-dependent",
+            "unit2": "Always consistent"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hány Pixel sind 1em?",
+          "answer": "Standardmäßig 1em = 16px (Browser-Standard). Aber em ist relativ zum übergeordneten Element."
+        },
+        {
+          "question": "Mi az a der Unterschied zwischen em und rem?",
+          "answer": "em bezieht sich auf die Eltern-Schriftgröße. rem bezieht sich auf die Wurzel-Schriftgröße (html). rem ist vorhersagbarer."
+        },
+        {
+          "question": "When should I use em instead of px?",
+          "answer": "Use em for typography and spacing that should scale with font size. Use px for borders, shadows, and other properties that should stay fixed."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "em px-re – Arteon",
+      "defaultSubject": "Visszajelzés: em-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "További ingyenes eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

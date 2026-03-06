@@ -6,12 +6,12 @@
   },
   "hero": {
     "title": "Strumenti online gratuiti creati da un’agenzia creativa",
-    "description": "Strumenti nel browser per immagini, SEO, colori, firme e-mail e codici QR — senza registrazione, senza upload, senza limiti"
+    "description": "Strumenti nel browser per immagini, SEO, colori, firme e-mail e codici QR - senza registrazione, senza upload, senza limiti"
   },
   "whoWeAre": {
     "title": "Chi siamo",
     "p1": "Arteon è un’agenzia creativa polacca. Oltre al nostro lavoro commerciale, sviluppiamo e manteniamo una collezione crescente di strumenti online gratuiti pensati per imprenditori, creatori di siti web, designer, specialisti di marketing e chiunque lavori con contenuti digitali.",
-    "p2": "Ogni strumento che creiamo risolve un problema specifico e quotidiano: convertire immagini, verificare il contrasto dei colori, generare favicon, creare codici QR e molto altro. Il nostro obiettivo è costruire un toolkit completo dove trovare tutto ciò di cui hai bisogno in un unico posto — senza navigare tra decine di siti diversi."
+    "p2": "Ogni strumento che creiamo risolve un problema specifico e quotidiano: convertire immagini, verificare il contrasto dei colori, generare favicon, creare codici QR e molto altro. Il nostro obiettivo è costruire un toolkit completo dove trovare tutto ciò di cui hai bisogno in un unico posto - senza navigare tra decine di siti diversi."
   },
   "whyFree": {
     "title": "Perché offriamo strumenti gratuiti",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Privacy prima di tutto",
-        "description": "I tuoi file non lasciano mai il tuo dispositivo. Tutta l’elaborazione avviene localmente nel browser — non inviamo i tuoi dati a nessun server."
+        "description": "I tuoi file non lasciano mai il tuo dispositivo. Tutta l’elaborazione avviene localmente nel browser - non inviamo i tuoi dati a nessun server."
       },
       {
         "title": "Creati da esigenze reali",
@@ -61,7 +61,7 @@
   },
   "whatsNext": {
     "title": "Cosa ci aspetta",
-    "text": "Stiamo lavorando attivamente per ampliare il toolkit. Nuovi strumenti vengono aggiunti regolarmente in base ai feedback degli utenti e alla nostra esperienza. L’obiettivo è una piattaforma unica dove imprenditori, designer e sviluppatori abbiano accesso a ogni strumento essenziale — tutto in un posto, tutto gratis."
+    "text": "Stiamo lavorando attivamente per ampliare il toolkit. Nuovi strumenti vengono aggiunti regolarmente in base ai feedback degli utenti e alla nostra esperienza. L’obiettivo è una piattaforma unica dove imprenditori, designer e sviluppatori abbiano accesso a ogni strumento essenziale - tutto in un posto, tutto gratis."
   },
   "privacy": {
     "title": "Privacy e sicurezza",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Prova i nostri strumenti",
-    "description": "Strumenti online gratuiti — senza registrazione, senza limiti, senza upload di file su server",
+    "description": "Strumenti online gratuiti - senza registrazione, senza limiti, senza upload di file su server",
     "btnOne": "Vai agli strumenti",
     "btnTwo": "Contatto"
   }

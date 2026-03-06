@@ -50,6 +50,22 @@ function toRoute(file) {
   if (r === '/_not-found' || r === '/api') return null;
   return r;
 }
+/**
+ * For tool pages, extract the JSON data import path from page.tsx.
+ * Returns the absolute path to the JSON data file, or null.
+ */
+function extractToolDataFile(pageTsxPath) {
+  try {
+    const src = fs.readFileSync(pageTsxPath, 'utf8');
+    // Match: import data from '@/data/en/tools/converter-avif-to-jpg.json';
+    const m = src.match(/from\s+['"]@\/data\/([^'"]+\.json)['"]/);
+    if (!m) return null;
+    return path.join(process.cwd(), 'data', m[1]);
+  } catch {
+    return null;
+  }
+}
+
 function buildRouteLastmodMap() {
   const appDir = path.join(process.cwd(), 'app');
   const files = fg.sync(['**/page.{ts,tsx,mdx}'], {
@@ -62,8 +78,17 @@ function buildRouteLastmodMap() {
     const abs = path.join(appDir, f);
     const route = toRoute(f);
     if (!route) continue;
-    const gitDate = gitLastCommitISO(abs);
-    const lastmod = gitDate || fileMTimeISO(abs);
+
+    // For tool pages: use the JSON data file's git date (content source)
+    // instead of page.tsx git date (code wrapper that changes on refactors).
+    const dataFile = extractToolDataFile(abs);
+    let lastmod;
+    if (dataFile && fs.existsSync(dataFile)) {
+      lastmod = gitLastCommitISO(dataFile) || fileMTimeISO(dataFile);
+    } else {
+      lastmod = gitLastCommitISO(abs) || fileMTimeISO(abs);
+    }
+
     if (lastmod) map.set(route, lastmod);
   }
   return map;
@@ -464,6 +489,53 @@ function getAlternateRefs(loc) {
   return [];
 }
 
+// ---------------------------------------------------------------------------
+// Priority & changefreq classification
+// ---------------------------------------------------------------------------
+const LOCALE_PREFIXES = ['en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
+const TOOLS_BASE_PATHS = Object.values(LOCALE_TOOLS_BASE);
+
+function isToolPage(loc) {
+  if (TOOLS_BASE_PATHS.includes(loc)) return true;
+  for (const base of TOOLS_BASE_PATHS) {
+    if (loc.startsWith(base + '/')) return true;
+  }
+  return false;
+}
+
+function isServicePage(loc) {
+  return loc.startsWith('/uslugi');
+}
+
+function isArticlePage(loc) {
+  return loc.startsWith('/edukacja');
+}
+
+function isProjectPage(loc) {
+  return loc.startsWith('/realizacje');
+}
+
+function getPagePriority(loc) {
+  if (loc === '/') return 1.0;
+  if (isToolPage(loc)) return 0.9;
+  if (isServicePage(loc)) return 0.8;
+  if (isArticlePage(loc)) return 0.7;
+  if (isProjectPage(loc)) return 0.5;
+  return 0.4;
+}
+
+function getPageChangefreq(loc) {
+  if (loc === '/') return 'daily';
+  // Tools index pages
+  if (TOOLS_BASE_PATHS.includes(loc)) return 'daily';
+  if (isToolPage(loc)) return 'weekly';
+  if (isServicePage(loc)) return 'weekly';
+  if (isArticlePage(loc)) return 'monthly';
+  if (isProjectPage(loc)) return 'monthly';
+  // Legal pages, about, contact, etc.
+  return 'monthly';
+}
+
 const ROUTE_IMAGE = new Map();
 
 ROUTE_IMAGE.set('/', '/assets/arteon-logo-on-mockup.webp');
@@ -546,33 +618,8 @@ module.exports = {
   transform: async (config, loc) => {
     const base = {
       loc,
-      changefreq: 'weekly',
-      priority:
-        loc === '/'
-          ? 1.0
-          : loc.startsWith('/en/') ||
-              loc.startsWith('/de/') ||
-              loc.startsWith('/es/') ||
-              loc.startsWith('/fr/') ||
-              loc.startsWith('/pt/') ||
-              loc.startsWith('/it/') ||
-              loc.startsWith('/ro/') ||
-              loc.startsWith('/nl/') ||
-              loc.startsWith('/hu/') ||
-              loc.startsWith('/cs/') ||
-              loc.startsWith('/sv/') ||
-              loc.startsWith('/da/') ||
-              loc.startsWith('/no/') ||
-              loc.startsWith('/fi/') ||
-              loc.startsWith('/el/')
-            ? 0.7
-            : loc.startsWith('/uslugi/')
-              ? 0.8
-              : loc.startsWith('/edukacja')
-                ? 0.75
-                : loc.startsWith('/realizacje')
-                  ? 0.6
-                  : 0.7,
+      changefreq: getPageChangefreq(loc),
+      priority: getPagePriority(loc),
       alternateRefs: [],
     };
     const lastmod = ROUTE_LASTMOD.get(loc);
@@ -596,34 +643,7 @@ module.exports = {
       // Skip individual project pages - added from PROJECTS data below with images
       if (loc.startsWith('/realizacje/') && loc !== '/realizacje') continue;
 
-      const priority =
-        loc === '/'
-          ? 1.0
-          : loc.startsWith('/en/') ||
-              loc.startsWith('/de/') ||
-              loc.startsWith('/es/') ||
-              loc.startsWith('/fr/') ||
-              loc.startsWith('/pt/') ||
-              loc.startsWith('/it/') ||
-              loc.startsWith('/ro/') ||
-              loc.startsWith('/nl/') ||
-              loc.startsWith('/hu/') ||
-              loc.startsWith('/cs/') ||
-              loc.startsWith('/sv/') ||
-              loc.startsWith('/da/') ||
-              loc.startsWith('/no/') ||
-              loc.startsWith('/fi/') ||
-              loc.startsWith('/el/')
-            ? 0.7
-            : loc.startsWith('/uslugi/')
-              ? 0.8
-              : loc.startsWith('/edukacja')
-                ? 0.75
-                : loc.startsWith('/realizacje')
-                  ? 0.6
-                  : 0.7;
-
-      const entry = { loc, changefreq: 'weekly', priority };
+      const entry = { loc, changefreq: getPageChangefreq(loc), priority: getPagePriority(loc) };
       if (last) entry.lastmod = last;
       const img = ROUTE_IMAGE.get(loc);
       if (img) entry.images = sitemapImage(img);
@@ -635,7 +655,7 @@ module.exports = {
       const loc = `/realizacje/${p.slug}`;
       const iso = (p.updatedAt && parseISO(p.updatedAt)) || projectLastmodFromFiles(p.slug) || ROUTE_LASTMOD.get(loc) || null;
 
-      const entry = { loc, changefreq: 'weekly', priority: 0.6 };
+      const entry = { loc, changefreq: getPageChangefreq(loc), priority: getPagePriority(loc) };
       if (iso) entry.lastmod = iso;
       if (p.image) entry.images = sitemapImage(p.image);
       add.push(entry);
@@ -647,7 +667,7 @@ module.exports = {
       const fromData = parseISO(a.dateModified) || parseISO(a.datePublished);
       const fallback = articleAssetsLastmod(a);
       const lastmod = fromData || fallback;
-      const entry = { loc, changefreq: 'weekly', priority: 0.72 };
+      const entry = { loc, changefreq: getPageChangefreq(loc), priority: getPagePriority(loc) };
       if (lastmod) entry.lastmod = lastmod;
       if (a.cover) entry.images = sitemapImage(a.cover);
       add.push(entry);
@@ -674,6 +694,38 @@ module.exports = {
         'Disallow: /api/',
         'Disallow: /fonts/',
         'Disallow: /favicon.ico',
+        '',
+        '# AI search crawlers — allowed (enables citation in AI Overviews)',
+        'User-agent: GPTBot',
+        'Allow: /',
+        '',
+        'User-agent: Google-Extended',
+        'Allow: /',
+        '',
+        'User-agent: ChatGPT-User',
+        'Allow: /',
+        '',
+        'User-agent: Applebot-Extended',
+        'Allow: /',
+        '',
+        'User-agent: anthropic-ai',
+        'Allow: /',
+        '',
+        'User-agent: ClaudeBot',
+        'Allow: /',
+        '',
+        'User-agent: PerplexityBot',
+        'Allow: /',
+        '',
+        'User-agent: cohere-ai',
+        'Allow: /',
+        '',
+        '# Unwanted AI training crawlers — blocked',
+        'User-agent: Bytespider',
+        'Disallow: /',
+        '',
+        'User-agent: CCBot',
+        'Disallow: /',
         '',
         `Host: ${SITE_URL}`,
         '',

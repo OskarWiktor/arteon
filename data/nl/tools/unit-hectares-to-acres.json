@@ -1,0 +1,273 @@
+{
+  "toolKey": "hectaresToAcres",
+  "locale": "nl",
+  "metadata": {
+    "title": "Ha naar acres – converter",
+    "description": "Reken hectaren om naar acres en andersom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/nl/tools/hectare-naar-acres-converter"
+  },
+  "hero": {
+    "title": "Ha naar acres",
+    "description": "Deze converter rekent direct om. Voer een waarde in en het resultaat verschijnt onmiddellijk.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/hectare-naar-acres-converter",
+      "label": "ha naar acres"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ha naar acres – converter",
+      "alternateName": ["Ha naar acres"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Reken hectaren om naar acres en andersom.",
+      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+    },
+    "howTo": {
+      "name": "Hoe de converter te gebruiken",
+      "description": "Snelle handleiding voor de converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Waarde invoeren",
+          "text": "Typ een getal in het invoerveld aan de linkerkant."
+        },
+        {
+          "name": "Resultaat aflezen",
+          "text": "Het conversieresultaat verschijnt direct in het veld ernaast."
+        },
+        {
+          "name": "Kopiëren of omdraaien",
+          "text": "Klik op Resultaat kopiëren of op Omdraaien om in de andere richting te converteren."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wanneer heb je nodig: Ha naar acres?",
+      "html": "<p class=\"text-mid mb-4\">Hectare (ha) = 10.000 m². Acre = 4.046,86 m². 1 ha = 2,47105 acres.</p><p class=\"text-mid\">Alle berekeningen draaien lokaal in je browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Ha naar acres – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe gebruik je de omrekentool?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voer een waarde in",
+          "description": "Typ een getal in het invoerveld.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lees het resultaat",
+          "description": "Het resultaat verschijnt direct.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieer of wissel",
+          "description": "Kopieer het resultaat of wissel de richting.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer is deze converter nuttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPlantLine",
+          "title": "Landbouw",
+          "description": "VS/VK gebruiken acres. Internationaal hectare."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Landbouw",
+          "description": "Opbrengsten per hectare of acre."
+        },
+        {
+          "icon": "RiTreeLine",
+          "title": "Bosbouw",
+          "description": "Bosbeheer in hectare."
+        },
+        {
+          "icon": "RiMapLine",
+          "title": "Landmeting",
+          "description": "Rapporten gebruiken beide eenheden."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze tool bijzonder?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Alle berekeningen draaien lokaal in je browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Directe resultaten",
+          "description": "Het resultaat wordt bijgewerkt terwijl je typt."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tweerichtingsomrekening",
+          "description": "Wissel de richting met één klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referentietabel",
+          "description": "Tabel met gangbare waarden en context."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">1 ha = 10.000 m² = 2,47105 acres. Vuistregel: 1 ha ≈ 2,5 acres.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">1 ha = 10.000 m² = 2,47105 acres. Vuistregel: 1 ha ≈ 2,5 acres.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Hectare vs Acre",
+      "featureLabel": "Eigenschap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Hectare (ha)"
+        },
+        {
+          "id": "unit2",
+          "name": "Acre (ac)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Systeem",
+          "values": {
+            "unit1": "Metrisch",
+            "unit2": "Imperiaal"
+          }
+        },
+        {
+          "name": "Oppervlakte",
+          "values": {
+            "unit1": "10.000 m²",
+            "unit2": "4.047 m²"
+          }
+        },
+        {
+          "name": "Afmetingen",
+          "values": {
+            "unit1": "100×100 m",
+            "unit2": "~63,6×63,6 m"
+          }
+        },
+        {
+          "name": "Vastgoed",
+          "values": {
+            "unit1": "Internationaal",
+            "unit2": "VS/VK"
+          }
+        },
+        {
+          "name": "Landbouw",
+          "values": {
+            "unit1": "Internationaal",
+            "unit2": "VS/VK"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hoeveel acres is 1 hectare?",
+          "answer": "1 ha = 2,47105 acres."
+        },
+        {
+          "question": "Worden berekeningen lokaal uitgevoerd?",
+          "answer": "Ja. Alle berekeningen draaien in je browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "ha naar acres – Arteon",
+      "defaultSubject": "Feedback: hectares-to-acres"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "pdf": "Innebygd PDF-visning",
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+"
+            "pdf": false,
+            "webp": true
           }
         },
         {
@@ -191,8 +191,7 @@
             "webp": true
           }
         }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",
@@ -256,6 +255,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose WebP vs JPG vs PNG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">WebP offers the best balance of quality and file size for web use. Files are 25–35% smaller than JPG at equivalent quality and support both lossy and lossless compression modes.</p><p class=\"text-mid mb-4\">Choose WebP when the images will be displayed on websites or shared digitally. Choose JPG when you need maximum compatibility (older devices, email clients). Choose PNG when you need lossless quality (documents with text, technical drawings).</p><p class=\"text-mid\">WebP is supported by all modern browsers (Chrome, Firefox, Safari 14+, Edge). For the few remaining users on very old browsers, serve JPG as a fallback using the HTML &lt;picture&gt; element.</p>"
     },
     {
       "type": "faq",

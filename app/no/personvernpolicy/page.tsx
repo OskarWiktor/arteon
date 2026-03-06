@@ -58,22 +58,22 @@ export default function PrivacyPolicyPage() {
           <SectionInfo title="3. Formal og rettsgrunnlag for behandling">
             <ol className="list-decimal space-y-1 pl-6">
               <li>
-                <strong>Kundekommunikasjon</strong> — besvarelse av henvendelser fra kontaktskjemaet (art. 6 nr. 1 bokstav b) og f) GDPR).
+                <strong>Kundekommunikasjon</strong> - besvarelse av henvendelser fra kontaktskjemaet (art. 6 nr. 1 bokstav b) og f) GDPR).
               </li>
               <li>
-                <strong>Markedsforing og analyse</strong> — nettstedsstatistikk, innholdsoptimalisering (art. 6 nr. 1 bokstav f) GDPR).
+                <strong>Markedsforing og analyse</strong> - nettstedsstatistikk, innholdsoptimalisering (art. 6 nr. 1 bokstav f) GDPR).
               </li>
               <li>
-                <strong>Levering av tjenester</strong> — utarbeidelse av tilbud, kontrakter, fakturaer (art. 6 nr. 1 bokstav b) GDPR).
+                <strong>Levering av tjenester</strong> - utarbeidelse av tilbud, kontrakter, fakturaer (art. 6 nr. 1 bokstav b) GDPR).
               </li>
               <li>
-                <strong>Rettslige forpliktelser</strong> — f.eks. oppbevaring av regnskapsdokumentasjon (art. 6 nr. 1 bokstav c) GDPR).
+                <strong>Rettslige forpliktelser</strong> - f.eks. oppbevaring av regnskapsdokumentasjon (art. 6 nr. 1 bokstav c) GDPR).
               </li>
               <li>
-                <strong>Sikkerhet og krav</strong> — logghandtering, forebygging av misbruk, fastsettelse/handheving/forsvar av krav (art. 6 nr. 1 bokstav f) GDPR).
+                <strong>Sikkerhet og krav</strong> - logghandtering, forebygging av misbruk, fastsettelse/handheving/forsvar av krav (art. 6 nr. 1 bokstav f) GDPR).
               </li>
               <li>
-                <strong>Annonsevisning</strong> — visning av interessebaserte annonser via Google AdSense (art. 6 nr. 1 bokstav a) GDPR — brukersamtykke gitt via Google Privacy & Messaging-dialog).
+                <strong>Annonsevisning</strong> - visning av interessebaserte annonser via Google AdSense (art. 6 nr. 1 bokstav a) GDPR - brukersamtykke gitt via Google Privacy & Messaging-dialog).
               </li>
             </ol>
           </SectionInfo>
@@ -121,8 +121,8 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-1 pl-6">
               <li>hosting-/applikasjonsleverandor (f.eks. Vercel),</li>
               <li>leverandorer av analyseverktoy (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),</li>
-              <li>leverandor av annonsetjenester (Google Ireland Ltd. — Google AdSense),</li>
-              <li>revisjonsfirma, betalingsformidler eller juridisk raadgiver — om nodvendig.</li>
+              <li>leverandor av annonsetjenester (Google Ireland Ltd. - Google AdSense),</li>
+              <li>revisjonsfirma, betalingsformidler eller juridisk raadgiver - om nodvendig.</li>
             </ul>
             <p>Alle mottakere behandler data i samsvar med GDPR basert paa passende avtaler.</p>
           </SectionInfo>
@@ -140,10 +140,10 @@ export default function PrivacyPolicyPage() {
           <Gap variant="line" size="sm" />
           <SectionInfo title="8. Oppbevaringsperiode for data">
             <ul className="list-disc space-y-1 pl-6">
-              <li>Data fra kontaktskjemaet — opptil 12 maaneder etter avslutning av korrespondansen.</li>
-              <li>Kundedata — i den perioden som kreves ved lov (regnskapsdokumentasjon).</li>
-              <li>Analysedata — i henhold til Google Analytics-retningslinjer (f.eks. 26 maaneder).</li>
-              <li>Loggfiler — i den perioden som er nodvendig for sikkerhet og ansvarlighet (typisk opptil 12 maaneder, med mindre regler foreskriver annet).</li>
+              <li>Data fra kontaktskjemaet - opptil 12 maaneder etter avslutning av korrespondansen.</li>
+              <li>Kundedata - i den perioden som kreves ved lov (regnskapsdokumentasjon).</li>
+              <li>Analysedata - i henhold til Google Analytics-retningslinjer (f.eks. 26 maaneder).</li>
+              <li>Loggfiler - i den perioden som er nodvendig for sikkerhet og ansvarlighet (typisk opptil 12 maaneder, med mindre regler foreskriver annet).</li>
             </ul>
           </SectionInfo>
           <Gap variant="line" size="sm" />

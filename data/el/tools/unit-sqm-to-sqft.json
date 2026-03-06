@@ -1,0 +1,277 @@
+{
+  "toolKey": "sqmToSqft",
+  "locale": "el",
+  "metadata": {
+    "title": "M² σε ft² – μετατροπέας",
+    "description": "Μετατρέψτε τετραγωνικά μέτρα σε τετραγωνικά πόδια.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-tm-se-tetragpodia"
+  },
+  "hero": {
+    "title": "M² σε ft²",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-tm-se-tetragpodia",
+      "label": "m² σε ft²"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "M² σε ft² – μετατροπέας",
+      "alternateName": ["M² σε ft²"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε τετραγωνικά μέτρα σε τετραγωνικά πόδια.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: M² σε ft²?",
+      "html": "<p class=\"text-mid mb-4\">Quadratmeter (m²) είναι η τυπική μονάδα-Flächeneinheit im metrischen System. Quadratfuß (ft²) wird in den USA, UK und einigen asiatischen Ländern für Immobilien und Bau verwendet. 1 m² = 10,7639 ft².</p><p class=\"text-mid mb-4\">Diese μετατροπή ist wichtig für Immobilien (internationale Größenvergleiche), Innenarchitektur, Bau und Büroflächenplanung.</p><p class=\"text-mid mb-4\">Beispiele: 50 m² = 538 ft², 100 m² = 1.076 ft², 200 m² = 2.153 ft².</p><p class=\"text-mid\">Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας — τίποτα δεν στέλνεται σε server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "M² σε ft² – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHome4Line",
+          "title": "Nieruchomości",
+          "description": "Amerykańskie ogłoszenia podają metraż w ft²: 1 000 ft² = 92,9 m²."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Projektowanie wnętrz",
+          "description": "Oblicz ilość materiałów wykończeniowych na podstawie metrażu."
+        },
+        {
+          "icon": "RiBuildingLine",
+          "title": "Κατασκευές",
+          "description": "Χρησιμοποιήστε αυτόν τον μετατροπέα για γρήγορες και ακριβείς μετατροπές."
+        },
+        {
+          "icon": "RiMoneyDollarCircleLine",
+          "title": "Ceny za m²",
+          "description": "Porównaj ceny nieruchomości w różnych krajach, przeliczając zł/m² na $/ft²."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">Da 1 Fuß = 0,3048 m, gilt: 1 ft² = 0,3048² = 0,092903 m². Daher: 1 m² = 10,7639 ft².</p><p class=\"text-mid mb-4\">Um m² in ft² umzurechnen, πολλαπλασιάστε με 10,7639.</p><p class=\"text-mid\">Schnelle Schätzung: Πολλαπλασιάστε m² mit 11.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Studio apartment: 30–40 m² = 323–431 ft².</li><li>2-bedroom apartment: 60–80 m² = 646–861 ft².</li><li>Average US home: 200 m² = 2,153 ft².</li><li>Tennis court: 261 m² = 2,808 ft².</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Square meter (m²) vs Square foot (ft²)",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Square meter (m²)"
+        },
+        {
+          "id": "unit2",
+          "name": "Square foot (ft²)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Σύστημα",
+          "values": {
+            "unit1": "Μετρικό (SI)",
+            "unit2": "Αυτοκρατορικό"
+          }
+        },
+        {
+          "name": "Βασική τιμή",
+          "values": {
+            "unit1": "1 m × 1 m",
+            "unit2": "0.3048 m × 0.3048 m"
+          }
+        },
+        {
+          "name": "Real estate",
+          "values": {
+            "unit1": "International",
+            "unit2": "USA/UK/India"
+          }
+        },
+        {
+          "name": "1 m² equals",
+          "values": {
+            "unit1": "1 m²",
+            "unit2": "10.764 ft²"
+          }
+        },
+        {
+          "name": "Construction",
+          "values": {
+            "unit1": "International standard",
+            "unit2": "US/UK standard"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Πόσα ft² ist 1 m²?",
+          "answer": "1 m² = 10,7639 ft²."
+        },
+        {
+          "question": "Πόσα m² sind 1.000 ft²?",
+          "answer": "1.000 ft² = 92,9 m²."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ναι. Όλοι οι υπολογισμοί γίνονται στον browser σας."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "m² σε ft² – Arteon",
+      "defaultSubject": "Feedback: sqm-to-sqft"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

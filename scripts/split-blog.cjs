@@ -1,67 +1,66 @@
 /**
- * Generate _index.json from per-category blog files.
- *
- * Source of truth: data/pl/blog/{category}.json
- * Output:          data/pl/blog/_index.json — ArticlePreview[] (lightweight)
- *
- * Run: node scripts/split-blog.cjs
- * Also runs as prebuild step via package.json
+ * Split blog script
+ * Generates lightweight _index.json from category JSON files
+ * Run during prebuild: npm run prebuild
  */
-const fs = require('fs');
-const path = require('path');
 
-const BLOG_DIR = path.join(__dirname, '..', 'data', 'pl', 'blog');
+const fs = require('node:fs');
+const path = require('node:path');
 
-// Read all category files (everything except _index.json)
-const catFiles = fs.readdirSync(BLOG_DIR).filter((f) => f.endsWith('.json') && f !== '_index.json');
+const BLOG_DIR = path.join(process.cwd(), 'data', 'pl', 'blog');
+const INDEX_FILE = path.join(BLOG_DIR, '_index.json');
 
-if (catFiles.length === 0) {
-  console.error('[split-blog] No category files found in data/pl/blog/');
-  process.exit(1);
+// Category files to process
+const CATEGORY_FILES = [
+  'grafika.json',
+  'marketing.json',
+  'psychologia.json',
+  'seo.json',
+  'sklepy.json',
+  'strony.json',
+  'ux.json'
+];
+
+function main() {
+  const allPreviews = [];
+
+  for (const file of CATEGORY_FILES) {
+    const filePath = path.join(BLOG_DIR, file);
+    if (!fs.existsSync(filePath)) {
+      console.log(`⚠ Skipping missing file: ${file}`);
+      continue;
+    }
+
+    try {
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      const articles = data.articles || [];
+
+      for (const article of articles) {
+        allPreviews.push({
+          slug: article.slug,
+          title: article.title,
+          excerpt: article.excerpt,
+          cover: article.cover,
+          primaryCategory: article.primaryCategory,
+          readingTime: article.readingTime,
+          datePublished: article.datePublished,
+          seo: article.seo
+        });
+      }
+    } catch (err) {
+      console.error(`✗ Error processing ${file}:`, err.message);
+    }
+  }
+
+  // Sort by datePublished descending (newest first)
+  allPreviews.sort((a, b) => {
+    const dateA = new Date(a.datePublished || '1970-01-01');
+    const dateB = new Date(b.datePublished || '1970-01-01');
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  fs.writeFileSync(INDEX_FILE, JSON.stringify(allPreviews, null, 2), 'utf8');
+  console.log(`✓ Generated ${INDEX_FILE} with ${allPreviews.length} articles`);
 }
 
-const allArticles = [];
-let totalSize = 0;
-
-for (const f of catFiles.sort()) {
-  const filePath = path.join(BLOG_DIR, f);
-  const raw = fs.readFileSync(filePath, 'utf8');
-  totalSize += Buffer.byteLength(raw);
-  const data = JSON.parse(raw);
-  const articles = data.articles || [];
-  allArticles.push(...articles);
-}
-
-if (allArticles.length === 0) {
-  console.error('[split-blog] No articles found in category files');
-  process.exit(1);
-}
-
-// Build _index.json — lightweight preview data for lists and carousels
-const index = allArticles.map((a) => ({
-  slug: a.slug,
-  title: a.title,
-  excerpt: a.excerpt,
-  cover: a.cover,
-  primaryCategory: a.primaryCategory,
-  category: a.category,
-  tags: a.tags,
-  readingTime: a.readingTime,
-  datePublished: a.datePublished,
-  seo: a.seo,
-}));
-
-fs.writeFileSync(path.join(BLOG_DIR, '_index.json'), JSON.stringify(index, null, 2) + '\n', 'utf8');
-
-// Report
-const indexSize = Buffer.byteLength(fs.readFileSync(path.join(BLOG_DIR, '_index.json')));
-console.log('[split-blog] Categories: ' + catFiles.length + ' (' + (totalSize / 1024).toFixed(1) + ' KB total)');
-console.log('[split-blog] Articles: ' + allArticles.length);
-console.log('[split-blog] _index.json: ' + (indexSize / 1024).toFixed(1) + ' KB');
-for (const f of catFiles.sort()) {
-  const filePath = path.join(BLOG_DIR, f);
-  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-  const count = (data.articles || []).length;
-  const size = Buffer.byteLength(fs.readFileSync(filePath));
-  console.log('  ' + f + ': ' + (size / 1024).toFixed(1) + ' KB (' + count + ' articles)');
-}
+main();

@@ -1,48 +1,64 @@
 /**
- * Generates lightweight search index JSON files from blog category files and projects data.
- * Run before build to keep the client-side search bundle small.
- *
- * Input:  data/pl/blog/{category}.json, data/pl/projects.json (~89KB)
- * Output: data/pl/search-blog.json (~5KB), data/pl/search-projects.json (~2KB)
+ * Generate search index script
+ * Creates lightweight search-blog.json and search-projects.json
+ * Run during prebuild: npm run prebuild
  */
 
-const fs = require('fs');
-const path = require('path');
+const fs = require('node:fs');
+const path = require('node:path');
 
-const DATA_DIR = path.join(__dirname, '..', 'data', 'pl');
+const DATA_DIR = path.join(process.cwd(), 'data', 'pl');
+const BLOG_INDEX = path.join(DATA_DIR, 'blog', '_index.json');
+const PROJECTS_FILE = path.join(DATA_DIR, 'projects.json');
+const SEARCH_BLOG_FILE = path.join(DATA_DIR, 'search-blog.json');
+const SEARCH_PROJECTS_FILE = path.join(DATA_DIR, 'search-projects.json');
 
-// --- Blog ---
-const blogDir = path.join(DATA_DIR, 'blog');
-const catFiles = fs.readdirSync(blogDir).filter((f) => f.endsWith('.json') && f !== '_index.json');
-const allArticles = [];
-for (const f of catFiles) {
-  const data = JSON.parse(fs.readFileSync(path.join(blogDir, f), 'utf8'));
-  allArticles.push(...(data.articles || []));
+function truncate(str, maxLen) {
+  if (!str || str.length <= maxLen) return str;
+  return str.slice(0, maxLen);
 }
 
-const searchBlog = allArticles.map((a) => ({
-  s: a.slug,
-  t: a.title,
-  e: a.excerpt.length > 140 ? a.excerpt.substring(0, 140) : a.excerpt,
-  c: a.primaryCategory,
-  k: a.tags,
-}));
+function generateSearchBlog() {
+  if (!fs.existsSync(BLOG_INDEX)) {
+    console.log('⚠ Blog index not found, skipping search-blog.json');
+    return;
+  }
 
-fs.writeFileSync(path.join(DATA_DIR, 'search-blog.json'), JSON.stringify(searchBlog), 'utf8');
+  const articles = JSON.parse(fs.readFileSync(BLOG_INDEX, 'utf8'));
+  const searchItems = articles.map(a => ({
+    s: a.slug,                           // slug
+    t: a.title,                          // title
+    e: truncate(a.excerpt, 140),         // excerpt (truncated)
+    c: a.primaryCategory,                // category
+    k: a.tags || []                      // keywords
+  }));
 
-// --- Projects ---
-const projectsPath = path.join(DATA_DIR, 'projects.json');
-const projects = JSON.parse(fs.readFileSync(projectsPath, 'utf8'));
+  fs.writeFileSync(SEARCH_BLOG_FILE, JSON.stringify(searchItems), 'utf8');
+  console.log(`✓ Generated ${SEARCH_BLOG_FILE} with ${searchItems.length} items`);
+}
 
-const searchProjects = projects.projects.map((p) => ({
-  s: p.slug,
-  t: p.title,
-  d: p.short,
-  k: p.category,
-}));
+function generateSearchProjects() {
+  if (!fs.existsSync(PROJECTS_FILE)) {
+    console.log('⚠ Projects file not found, skipping search-projects.json');
+    return;
+  }
 
-fs.writeFileSync(path.join(DATA_DIR, 'search-projects.json'), JSON.stringify(searchProjects), 'utf8');
+  const data = JSON.parse(fs.readFileSync(PROJECTS_FILE, 'utf8'));
+  const projects = data.projects || [];
+  const searchItems = projects.map(p => ({
+    s: p.slug,                           // slug
+    t: p.title,                          // title
+    d: truncate(p.short || p.excerpt || '', 140),  // description (truncated)
+    k: p.tags || p.category || []        // keywords
+  }));
 
-const blogSize = Buffer.byteLength(JSON.stringify(searchBlog));
-const projSize = Buffer.byteLength(JSON.stringify(searchProjects));
-console.log(`[search-index] Generated search-blog.json (${(blogSize / 1024).toFixed(1)}KB) and search-projects.json (${(projSize / 1024).toFixed(1)}KB)`);
+  fs.writeFileSync(SEARCH_PROJECTS_FILE, JSON.stringify(searchItems), 'utf8');
+  console.log(`✓ Generated ${SEARCH_PROJECTS_FILE} with ${searchItems.length} items`);
+}
+
+function main() {
+  generateSearchBlog();
+  generateSearchProjects();
+}
+
+main();

@@ -2,7 +2,7 @@
   "toolKey": "jsonToCsv",
   "locale": "de",
   "metadata": {
-    "title": "JSON-zu-CSV-Konverter — JSON CSV",
+    "title": "JSON-zu-CSV-Konverter - JSON CSV",
     "description": "JSON in CSV-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/json-zu-csv-konverter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum JSON in CSV konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">JSON ist ein weit verbreitetes Dateiformat mit breiter Kompatibilitat. Je nach Anwendungsfall kann die Konvertierung in CSV erhebliche Vorteile bieten — kleinere Dateien, bessere Qualitat oder breitere Plattformunterstutzung.</p><p class=\"text-mid mb-4\">Dieser kostenlose Online-Konverter wandelt Ihre JSON-Dateien direkt im Browser in das CSV-Format um. Es werden keine Dateien auf einen Server hochgeladen — der gesamte Prozess findet lokal auf Ihrem Gerat statt.</p><p class=\"text-mid\">Konvertieren Sie beliebig viele Dateien ohne tagliche Limits, ohne Registrierung und ohne Wasserzeichen. Ziehen Sie Ihre Dateien per Drag & Drop, passen Sie die Qualitat an und laden Sie die Ergebnisse herunter.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON ist ein weit verbreitetes Dateiformat mit breiter Kompatibilitat. Je nach Anwendungsfall kann die Konvertierung in CSV erhebliche Vorteile bieten - kleinere Dateien, bessere Qualitat oder breitere Plattformunterstutzung.</p><p class=\"text-mid mb-4\">Dieser kostenlose Online-Konverter wandelt Ihre JSON-Dateien direkt im Browser in das CSV-Format um. Es werden keine Dateien auf einen Server hochgeladen - der gesamte Prozess findet lokal auf Ihrem Gerat statt.</p><p class=\"text-mid\">Konvertieren Sie beliebig viele Dateien ohne tagliche Limits, ohne Registrierung und ohne Wasserzeichen. Ziehen Sie Ihre Dateien per Drag & Drop, passen Sie die Qualitat an und laden Sie die Ergebnisse herunter.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "JSON to CSV conversion",
       "variant": "right"
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Sofortige Konvertierung",
-          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs — schnell und funktioniert offline."
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs - schnell und funktioniert offline."
         }
       ]
     },
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Wie viel sparen Sie bei Konvertierung von JSON zu CSV?",
-      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+      "title": "Wie funktioniert die JSON-zu-CSV-Konvertierung?",
+      "html": "<p class=\"text-mid mb-4\">JSON (JavaScript Object Notation) speichert Daten als strukturierte Objekte mit Schlüssel-Wert-Paaren. CSV (Comma-Separated Values) organisiert Daten in einem flachen Tabellenformat mit Zeilen und Spalten. Der Konverter wandelt JSON-Objekte in tabellarische Zeilen um und verwendet die Eigenschaftsnamen als Spaltenüberschriften.</p><p class=\"text-mid mb-4\">Bei einem Array von JSON-Objekten wird jedes Objekt zu einer Zeile in der CSV-Ausgabe. Der Konverter extrahiert alle eindeutigen Schlüssel und verwendet sie als Spaltenüberschriften in der ersten Zeile.</p><p class=\"text-mid\">Die resultierende CSV-Datei verwendet Standardformatierung mit Komma-Trennzeichen und korrekter Quotierung. Die gesamte Konvertierung erfolgt lokal in Ihrem Browser — es werden keine Daten an einen Server gesendet.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipps fur Konvertierung von JSON zu CSV",
-      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "title": "Tipps für die JSON-zu-CSV-Konvertierung",
+      "description": "Einige Hinweise, um häufige Probleme zu vermeiden:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Sehr grosse Dateien",
-          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+          "icon": "RiNodeTree",
+          "title": "Verschachtelte Objekte",
+          "description": "CSV ist ein flaches Format und kann keine verschachtelten Strukturen darstellen. Verschachtelte JSON-Objekte werden mittels Punkt-Notation abgeflacht (z.B. adresse.stadt)."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Bereits komprimierte Dateien",
-          "description": "Stark komprimierte JSON-Dateien bringen bei Konvertierung zu CSV moglicherweise wenig Einsparung."
+          "icon": "RiListCheck2",
+          "title": "Arrays in Werten",
+          "description": "Wenn eine JSON-Eigenschaft ein Array enthält, wird es als String in der CSV-Zelle serialisiert. Für komplexe verschachtelte Daten empfiehlt sich XML oder YAML statt CSV."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparenz",
-          "description": "CSV unterstutzt keine Transparenz. Transparente Bereiche werden weiss. Verwenden Sie PNG oder WebP."
+          "icon": "RiFileTextLine",
+          "title": "Einheitliche Struktur",
+          "description": "Für beste Ergebnisse verwenden Sie JSON-Arrays, in denen alle Objekte dieselben Schlüssel haben. Objekte mit unterschiedlichen Schlüsseln funktionieren ebenfalls, fehlende Werte erscheinen als leere Zellen."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Originale aufbewahren",
-          "description": "Verlustbehaftete Konvertierung ist irreversibel. Bewahren Sie Kopien der JSON-Originale auf."
+          "icon": "RiFileCodeLine",
+          "title": "Große Datensätze",
+          "description": "Der Konverter verarbeitet große JSON-Dateien effizient im Browser. Bei Dateien über 10 MB kann die Verarbeitung je nach Gerät einige Sekunden dauern."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Handling nested JSON structures",
+      "html": "<p class=\"text-mid mb-4\">CSV is a flat tabular format — it cannot natively represent nested objects or arrays. The converter handles nesting in several ways:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Nested objects</strong> – flattened using dot notation. <code>{\"address\": {\"city\": \"Warsaw\"}}</code> becomes a column called <code>address.city</code>.</li><li><strong>Arrays of primitives</strong> – serialized as comma-separated strings within a single cell.</li><li><strong>Arrays of objects</strong> – serialized as JSON strings within the cell, preserving the structure for manual parsing.</li><li><strong>Null values</strong> – converted to empty cells in CSV.</li></ul><p class=\"text-mid mt-3\">For best results, use JSON with a flat structure (array of objects with primitive values). Deeply nested JSON may produce many columns with dot-notation headers.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser."
         },
         {
-          "question": "Ist Konvertierung von JSON zu CSV sicher?",
-          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+          "question": "Ist die JSON-zu-CSV-Konvertierung sicher?",
+          "answer": "Ja. Die gesamte Konvertierung erfolgt lokal in Ihrem Browser. Ihre Daten werden nie an einen Server gesendet. Beim Schließen der Seite werden alle Daten automatisch gelöscht."
         },
         {
-          "question": "Kann ich mehrere JSON-Dateien gleichzeitig konvertieren?",
-          "answer": "Ja. Stapelkonvertierung ohne Limit. Ziehen Sie Dateien auf den Konverterbereich."
+          "question": "Kann ich die CSV-Ausgabe in Excel öffnen?",
+          "answer": "Ja. CSV-Dateien können direkt in Microsoft Excel, Google Sheets, LibreOffice Calc und jeder anderen Tabellenkalkulation geöffnet werden."
         },
         {
-          "question": "Wird CSV von allen Browsern unterstutzt?",
-          "answer": "CSV wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
+          "question": "Was passiert mit verschachtelten JSON-Objekten?",
+          "answer": "Verschachtelte Objekte werden für die CSV-Ausgabe abgeflacht. Eigenschaften werden mittels Punkt-Notation dargestellt (z.B. adresse.stadt). Arrays innerhalb von Werten werden als Strings serialisiert."
         }
       ]
     },

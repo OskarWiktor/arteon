@@ -36,13 +36,26 @@ async function decodeToCanvas(file: File, sourceFormat: ImageFormat): Promise<HT
     const rgba = UTIF.toRGBA8(ifds[0]);
     const w = ifds[0].width;
     const h = ifds[0].height;
+    // putImageData replaces pixels (no compositing), so use a temp canvas
+    // then drawImage onto the white-filled output canvas for proper alpha blending
+    const tmpCanvas = document.createElement('canvas');
+    tmpCanvas.width = w;
+    tmpCanvas.height = h;
+    const tmpCtx = tmpCanvas.getContext('2d');
+    if (!tmpCtx) throw new Error('Canvas is not supported.');
+    const imageData = tmpCtx.createImageData(w, h);
+    imageData.data.set(new Uint8ClampedArray(rgba.buffer));
+    tmpCtx.putImageData(imageData, 0, 0);
+
     const canvas = document.createElement('canvas');
     canvas.width = w;
     canvas.height = h;
-    const ctx = canvas.getContext('2d')!;
-    const imageData = ctx.createImageData(w, h);
-    imageData.data.set(new Uint8ClampedArray(rgba.buffer));
-    ctx.putImageData(imageData, 0, 0);
+    const ctx = canvas.getContext('2d');
+    if (!ctx) throw new Error('Canvas is not supported.');
+    // Fill white background — output is JPEG which has no transparency
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillRect(0, 0, w, h);
+    ctx.drawImage(tmpCanvas, 0, 0);
     return canvas;
   }
 
@@ -58,7 +71,11 @@ async function decodeToCanvas(file: File, sourceFormat: ImageFormat): Promise<HT
     const canvas = document.createElement('canvas');
     canvas.width = img.naturalWidth;
     canvas.height = img.naturalHeight;
-    const ctx = canvas.getContext('2d')!;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) throw new Error('Canvas is not supported.');
+    // Fill white background — output is JPEG which has no transparency
+    ctx.fillStyle = '#FFFFFF';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 0, 0);
     return canvas;
   } finally {

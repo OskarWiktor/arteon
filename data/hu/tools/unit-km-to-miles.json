@@ -1,0 +1,285 @@
+{
+  "toolKey": "kmToMiles",
+  "locale": "hu",
+  "metadata": {
+    "title": "Km mérföldre – átváltó",
+    "description": "Kilométer átváltása mérföldre és fordítva. Azonnali eredmények.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/hu/eszkozok/km-merfold-atvalto"
+  },
+  "hero": {
+    "title": "Km mérföldre",
+    "description": "Ez az átváltó azonnal átszámol. Adjon meg egy értéket és az eredmény azonnal megjelenik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/km-merfold-atvalto",
+      "label": "km mérföldre"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Km mérföldre – átváltó",
+      "alternateName": ["Km mérföldre"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Kilométer átváltása mérföldre és fordítva. Azonnali eredmények.",
+      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+    },
+    "howTo": {
+      "name": "Hogyan használja az átváltót",
+      "description": "Gyors útmutató az átváltó használatához.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Érték megadása",
+          "text": "Írjon be egy számot a bal oldali beviteli mezőbe."
+        },
+        {
+          "name": " Eredmény leolvasása",
+          "text": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben."
+        },
+        {
+          "name": "Másolás vagy megfordítás",
+          "text": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikor kell használni: Km mérföldre?",
+      "html": "<p class=\"text-mid mb-4\">kilométer (km) a szabványos-Entfernungseinheit im metrischen System. Meile (mi) wird in den USA, UK und einigen anderen Ländern verwendet. Der átváltássfaktor ist: 1 km = 0,621371 mérföld, oder 1 Meile = 1,60934 km.</p><p class=\"text-mid mb-4\">Die átváltás ist wichtig beim Autofahren in den USA oder UK, für Laufdistanzen (Maraton: 42,195 km = 26,219 mérföld), Sebességsbegrenzungen und internationale Entfernungsvergleiche.</p><p class=\"text-mid mb-4\">Gyakori Entfernungen: 5 km = 3,1 mérföld, 10 km = 6,2 mérföld, 100 km = 62,1 mérföld.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik — semmilyen adat nem kerül szerverre.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Km mérföldre – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az átváltót?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Érték megadása",
+          "description": "Írjon be egy számot a beviteli mezőbe. Használhat pontot vagy vesszőt tizedesjegyként.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Eredmény leolvasása",
+          "description": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben – kattintás nélkül.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Másolás vagy megfordítás",
+          "description": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor hasznos ez az átváltó?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Külföldi utazás",
+          "description": "Számítsa át a távolságokat az USA és az Egyesült Királyság útjain, ahol a táblák mérföldet jelölnek."
+        },
+        {
+          "icon": "RiRunLine",
+          "title": "Futás és sport",
+          "description": "Porównaj dystanse treningowe: 5K, 10K, półmaraton i maraton w kilometrach i milach."
+        },
+        {
+          "icon": "RiMapPinLine",
+          "title": "GPS navigáció",
+          "description": "Niektóre urządzenia GPS pokazują odległości w milach – przelicz je na kilometry."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Logisztika és szállítás",
+          "description": "Számítsa át a távolságokat szállítmányozási dokumentumokban és nemzetközi szállítási megrendelésekben."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt az átváltót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "Minden számítás helyben, a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Azonnali eredmények",
+          "description": "Az eredmény azonnal frissül gépelés közben – nem kell semmilyen gombra kattintani."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kétirányú átváltás",
+          "description": "A Megfordítás gomb segítségével egy kattintással válthat irányt."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencia táblázat",
+          "description": "Kész táblázat gyakran átváltott értékekkel és kontextuális leírásokkal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az átváltás?",
+      "html": "<p class=\"text-mid mb-4\">Die internationale Meile ist als genau 1.609,344 méter definiert. Daher gilt: 1 km = 1.000/1.609,344 = 0,621371 mérföld.</p><p class=\"text-mid mb-4\">Um km in mérföld umzurechnen, szorozza meg 0,621371. Um mérföld in km umzurechnen, szorozza meg 1,60934.</p><p class=\"text-mid\">Gyors fejszámolás: Szorozza meg km mit 0,6. Oder nutzen Sie die Fibonacci-Näherung: aufeinanderfolgende Fibonacci-Zahlen nähern das km/mérföld-Verhältnis an (8 km ≈ 5 mérföld).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gyakorlati tippek",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Marathon: 42.195 km = 26.219 miles. Half marathon: 21.0975 km = 13.109 miles.</li><li>Speed: 100 km/h = 62.1 mph. 120 km/h = 74.6 mph.</li><li>1 nautical mile = 1.852 km = 1.151 miles (used in aviation and maritime).</li><li>US highway speed limits: 65 mph = 105 km/h, 70 mph = 113 km/h.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilometer (km) vs Mile (mi) – összehasonlítás",
+      "featureLabel": "Tulajdonság",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilometer (km)"
+        },
+        {
+          "id": "unit2",
+          "name": "Mile (mi)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Rendszer",
+          "values": {
+            "unit1": "Metrikus (SI)",
+            "unit2": "Angolszász"
+          }
+        },
+        {
+          "name": "Alapérték",
+          "values": {
+            "unit1": "1,000 meters",
+            "unit2": "1,609.344 meters"
+          }
+        },
+        {
+          "name": "Úttáblák",
+          "values": {
+            "unit1": "A legtöbb ország",
+            "unit2": "USA, UK, Myanmar"
+          }
+        },
+        {
+          "name": "Futás",
+          "values": {
+            "unit1": "5K, 10K races",
+            "unit2": "Mile races"
+          }
+        },
+        {
+          "name": "Tudomány",
+          "values": {
+            "unit1": "SI szabvány",
+            "unit2": "Tudományban nem használt"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hány mérföld ist 1 km?",
+          "answer": "1 km = 0,621371 mérföld. Etwa 5 km = 3,1 mérföld."
+        },
+        {
+          "question": "Hány km ist 1 Meile?",
+          "answer": "1 Meile = 1,60934 km. Eine Meile ist körülbelül 61% länger als ein kilométer."
+        },
+        {
+          "question": "Milyen hosszú ist ein Maraton in mérföld?",
+          "answer": "Ein Maraton ist 42,195 km = 26,219 mérföld. Ein Félmaraton ist 21,0975 km = 13,109 mérföld."
+        },
+        {
+          "question": "Hogyan számítom át schnell km in mérföld um?",
+          "answer": "Szorozza meg mit 0,6 für eine grobe Schätzung. Für bessere Genauigkeit: Fibonacci-Trick: 5 km ≈ 3 mérföld, 8 km ≈ 5 mérföld."
+        },
+        {
+          "question": "Helyben történnek a számítások?",
+          "answer": "Igen. Minden számítás a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "km mérföldre – Arteon",
+      "defaultSubject": "Visszajelzés: km-to-miles"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "További ingyenes eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

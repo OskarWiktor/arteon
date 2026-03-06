@@ -429,7 +429,7 @@
         },
         {
           "question": "¿Cómo afecta la EAA a mi sitio web en España?",
-          "answer": "La Ley Europea de Accesibilidad (EAA) está en vigor desde junio de 2025. Obliga a empresas del sector privado que operan en la UE — comercio electrónico, banca, transporte — a garantizar la accesibilidad digital. La norma referenciada es EN 301 549, que mapea a WCAG 2.1 AA, incluidos los umbrales de contraste 4,5:1 y 3:1."
+          "answer": "La Ley Europea de Accesibilidad (EAA) está en vigor desde junio de 2025. Obliga a empresas del sector privado que operan en la UE - comercio electrónico, banca, transporte - a garantizar la accesibilidad digital. La norma referenciada es EN 301 549, que mapea a WCAG 2.1 AA, incluidos los umbrales de contraste 4,5:1 y 3:1."
         },
         {
           "question": "¿Los sitios web en Latinoamérica también deben cumplir el contraste?",

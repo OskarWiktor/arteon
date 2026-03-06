@@ -41,7 +41,7 @@
         },
         {
           "name": "Uruchom konwersję",
-          "text": "Kliknij przycisk Konwertuj. PNG jest bezstratny — nie ma suwaka jakości."
+          "text": "Kliknij przycisk Konwertuj. PNG jest bezstratny - nie ma suwaka jakości."
         },
         {
           "name": "Pobierz pliki PNG",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować WebP na PNG?",
-      "html": "<p class=\"text-mid mb-4\">WebP to nowoczesny format obrazów, który oferuje mniejsze pliki niż PNG. Jednak nie każdy program obsługuje WebP — starsze edytory graficzne, systemy druku i niektóre platformy wymagają plików PNG. Konwersja WebP na PNG zapewnia pełną kompatybilność.</p><p class=\"text-mid mb-4\">PNG to format bezstratny z obsługą przezroczystości (kanał alfa). Przy konwersji WebP na PNG obraz zachowuje pełną jakość pikseli, a jeśli oryginalny WebP miał przezroczyste obszary, zostaną one zachowane w pliku PNG.</p><p class=\"text-mid\">Konwersja jest szczególnie przydatna, gdy potrzebujesz edytować obraz pobrany ze strony internetowej w formacie WebP. PNG zapewnia, że kolejne edycje i zapisy nie spowodują utraty jakości.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP to nowoczesny format obrazów, który oferuje mniejsze pliki niż PNG. Jednak nie każdy program obsługuje WebP - starsze edytory graficzne, systemy druku i niektóre platformy wymagają plików PNG. Konwersja WebP na PNG zapewnia pełną kompatybilność.</p><p class=\"text-mid mb-4\">PNG to format bezstratny z obsługą przezroczystości (kanał alfa). Przy konwersji WebP na PNG obraz zachowuje pełną jakość pikseli, a jeśli oryginalny WebP miał przezroczyste obszary, zostaną one zachowane w pliku PNG.</p><p class=\"text-mid\">Konwersja jest szczególnie przydatna, gdy potrzebujesz edytować obraz pobrany ze strony internetowej w formacie WebP. PNG zapewnia, że kolejne edycje i zapisy nie spowodują utraty jakości.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter WebP na PNG – Arteon"
     },
@@ -83,7 +83,7 @@
         },
         {
           "title": "3. Pobierz PNG",
-          "description": "Pobierz pliki pojedynczo lub wszystkie naraz.",
+          "description": "Pobierz przekonwertowane pliki PNG pojedynczo lub użyj opcji zbiorczego pobierania, aby zapisać wszystkie naraz jako archiwum.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -115,7 +115,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Archiwizacja bezstratna",
-          "description": "PNG jest formatem bezstratnym — konwersja z WebP zachowuje pełną jakość do długoterminowego przechowywania."
+          "description": "PNG jest formatem bezstratnym - konwersja z WebP zachowuje pełną jakość do długoterminowego przechowywania."
         }
       ]
     },
@@ -131,7 +131,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
+          "description": "Pliki nie opuszczają komputera - cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -244,7 +244,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów WebP na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów WebP na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -274,7 +274,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików WebP, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików WebP, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -309,11 +309,11 @@
         },
         {
           "question": "Czy konwersja WebP na PNG jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików WebP jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy konwersja WebP na PNG jest bezstratna?",
+          "answer": "Konwersja zachowuje wszystkie dane pikselowe z pliku WebP. Jeśli oryginalny WebP używał kompresji stratnej, te straty już miały miejsce — PNG nie odtworzy utraconych danych, ale też nie doda nowych strat."
         },
         {
           "question": "Czy PNG jest obsługiwany przez wszystkie przeglądarki?",
@@ -328,7 +328,7 @@
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
-      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas - odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter WebP na PNG – Arteon",
       "defaultSubject": "Feedback: Konwerter WebP na PNG"

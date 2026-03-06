@@ -2,7 +2,7 @@
   "toolKey": "svgToTiff",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur SVG en TIFF — SVG TIFF",
+    "title": "Convertisseur SVG en TIFF - SVG TIFF",
     "description": "Convertissez les graphiques vectoriels SVG en raster TIFF haute qualite. Sans installation, fonctionne sur tout appareil. Gratuit, privé et illimité.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-svg-en-tiff"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Régler la qualité",
-          "text": "Ajustez le curseur de qualite TIFF — des valeurs plus basses donnent des fichiers plus petits."
+          "text": "Ajustez le curseur de qualite TIFF - des valeurs plus basses donnent des fichiers plus petits."
         },
         {
           "position": 3,
           "name": "Convertir",
-          "text": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+          "text": "Cliquez sur Convertir - les fichiers sont traites localement dans votre navigateur."
         },
         {
           "position": 4,
           "name": "Telecharger",
-          "text": "Telechargez les fichiers TIFF — individuellement ou tous a la fois."
+          "text": "Telechargez les fichiers TIFF - individuellement ou tous a la fois."
         }
       ]
     }
@@ -290,6 +290,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting SVG to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

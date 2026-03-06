@@ -1,0 +1,281 @@
+{
+  "toolKey": "gramsToOunces",
+  "locale": "el",
+  "metadata": {
+    "title": "G σε oz – μετατροπέας",
+    "description": "Μετατρέψτε γραμμάρια σε ουγγιές και αντίστροφα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-grammaria-se-oungies"
+  },
+  "hero": {
+    "title": "G σε oz",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-grammaria-se-oungies",
+      "label": "g σε oz"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "G σε oz – μετατροπέας",
+      "alternateName": ["G σε oz"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε γραμμάρια σε ουγγιές και αντίστροφα.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: G σε oz?",
+      "html": "<p class=\"text-mid mb-4\">Gram (g) is a metric mass unit equal to 1/1000 of a kilogram. Ounce (oz) is an imperial unit equal to 28.3495 grams. This conversion is essential for cooking, jewelry, postal weights, and nutrition.</p><p class=\"text-mid mb-4\">American and British recipes use ounces for ingredients. Jewelry and precious metals are measured in troy ounces (31.1035 g). Postal services use ounces for letter weights.</p><p class=\"text-mid mb-4\">Common examples: 100 g = 3.53 oz, 250 g = 8.82 oz, 500 g = 17.64 oz. A standard letter weighs about 5 g = 0.18 oz.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "G σε oz – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Gotowanie",
+          "description": "Amerykańskie przepisy: 4 oz masła = 113 g, 6 oz czekolady = 170 g."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Zakupy",
+          "description": "Waga produktów importowanych z USA podawana w uncjach."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Przesyłki",
+          "description": "Waga listów i paczek w systemie pocztowym USA podawana w uncjach."
+        },
+        {
+          "icon": "RiHeartLine",
+          "title": "Dietetyka",
+          "description": "Porcje jedzenia w amerykańskich tabelach wartości odżywczych podaje się w oz."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">Die Avoirdupois-Unze (Standard US/UK) = 28,349523125 g genau. Um Gramm in Unzen umzurechnen, teilen Sie durch 28,3495.</p><p class=\"text-mid mb-4\">Hinweis: Feinunzen (Edelmetalle) = 31,1035 g. Dieser Konverter verwendet Avoirdupois-Unzen.</p><p class=\"text-mid\">Schnelle Schätzung: Teilen Sie Gramm durch 28.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Butter: 1 US stick = 4 oz = 113.4 g. 1 cup = 8 oz = 226.8 g.</li><li>Flour: 1 US cup = about 4.25 oz = 120 g.</li><li>Gold: 1 troy oz = 31.1035 g (different from regular ounces!).</li><li>1 pound = 16 oz = 453.59 g.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Gram (g) vs Ounce (oz) – σύγκριση",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Gram (g)"
+        },
+        {
+          "id": "unit2",
+          "name": "Ounce (oz)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Σύστημα",
+          "values": {
+            "unit1": "Μετρικό (SI)",
+            "unit2": "Αυτοκρατορικό"
+          }
+        },
+        {
+          "name": "Βασική τιμή",
+          "values": {
+            "unit1": "1/1000 kg",
+            "unit2": "28.35 g"
+          }
+        },
+        {
+          "name": "Cooking",
+          "values": {
+            "unit1": "International recipes",
+            "unit2": "US/UK recipes"
+          }
+        },
+        {
+          "name": "Jewelry",
+          "values": {
+            "unit1": "Metric (g)",
+            "unit2": "Troy oz (31.1 g)"
+          }
+        },
+        {
+          "name": "Επιστήμη",
+          "values": {
+            "unit1": "Πρότυπο SI",
+            "unit2": "Δεν χρησιμοποιείται στην επιστήμη"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Πόσα Gramm ist 1 Unze?",
+          "answer": "1 Avoirdupois-Unze = 28,3495 Gramm. 1 Feinunze = 31,1035 Gramm."
+        },
+        {
+          "question": "Πόσα Unzen sind 100 Gramm?",
+          "answer": "100 Gramm = 3,527 Unzen."
+        },
+        {
+          "question": "Τι είναι der Unterschied zwischen oz und Feinunze?",
+          "answer": "Avoirdupois-oz = 28,35 g (Alltag). Feinunze = 31,10 g (Gold, Silber). Feinunzen sind ca. 9,7% schwerer."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ναι. Όλοι οι υπολογισμοί γίνονται στον browser σας."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "g σε oz – Arteon",
+      "defaultSubject": "Feedback: grams-to-ounces"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

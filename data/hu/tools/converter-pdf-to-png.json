@@ -2,7 +2,7 @@
   "toolKey": "pdfToPng",
   "locale": "hu",
   "metadata": {
-    "title": "PDF PNG konverter — PDF PNG",
+    "title": "PDF PNG konverter - PDF PNG",
     "description": "PDF oldalak konvertálása PNG képekké. Kiváló minőség, korlátok nélkül. Ingyenes.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/pdf-png-konverter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertálás",
-          "text": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+          "text": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes PDF-t PNG-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A PDF szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a PNG formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a PDF fajlokat PNG formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A PDF szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a PNG formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a PDF fajlokat PNG formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "PDF to PNG conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertálás",
-          "description": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
+          "description": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
           "icon": "RiSettings3Line"
         },
         {
@@ -311,6 +311,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose PNG vs JPG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">PNG is lossless — it preserves sharp text edges, clean lines, and exact colors without compression artifacts. This makes PNG ideal for documents with text, technical drawings, invoices, and any content with sharp edges.</p><p class=\"text-mid mb-4\">JPG uses lossy compression and may show visible artifacts around text and sharp edges (known as \"ringing\"). However, JPG produces smaller files, which is better for photo-heavy PDFs like product catalogs or photo albums.</p><p class=\"text-mid\">Rule of thumb: choose PNG for documents with text and diagrams, JPG for photo-heavy PDFs, and WebP for the best balance of quality and size.</p>"
     },
     {
       "type": "faq",

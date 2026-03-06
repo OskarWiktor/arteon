@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "TIFF to JPG converter – TIFF JPG",
-    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool - no signup, no file limits, complete privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/tiff-to-jpg-converter"
   },
   "hero": {
     "title": "TIFF to JPG converter",
-    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool - no signup, no file limits, complete privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF to JPG converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool — no signup, no file limits, complete privacy.",
+      "description": "Convert TIFF files to compact JPG. Ideal for scans, documents and photo archives. Free browser-based tool - no signup, no file limits, complete privacy.",
       "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert TIFF to JPG", "TIFF to JPG conversion", "Free TIFF to JPG converter", "Change TIFF to JPG"]
     },
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert TIFF to JPG?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is a lossless image format supporting millions colors. It is widely used for print and archival with browser support in limited.</p><p class=\"text-mid mb-4\">Converting TIFF to JPG (JPEG) ensures universal compatibility across all platforms, browsers, and devices.</p><p class=\"text-mid mb-4\">Note that JPG does not support transparency – any transparent areas will be filled with a solid background color (typically white). As a lossy format, JPG achieves excellent compression ratios, especially for photographs and complex images.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many TIFF files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">TIFF is used in professional print, medical imaging, and archival workflows, but TIFF files are very large and cannot be opened in web browsers. JPG is the most universally compatible image format — supported by every device, browser, email client, and social media platform.</p><p class=\"text-mid mb-4\">Converting TIFF to JPG is essential when sharing professional images online, uploading to e-commerce platforms, or sending photos via email. JPG uses lossy compression, producing files that are 10–50× smaller than the original TIFF with minimal visible quality loss at quality 85–90.</p><p class=\"text-mid mb-4\">JPG does not support transparency or CMYK color space — TIFF images with these features will be flattened and converted to RGB. For lossless conversion, use PNG instead. For web-optimized files, consider WebP or AVIF.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "TIFF to JPG conversion",
       "variant": "right"
@@ -250,6 +250,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting TIFF to JPG?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (recommended) – the best balance for most use cases. The visual difference compared to the TIFF original is virtually imperceptible while file size drops dramatically.</strong></li><li><strong>90–95% – for professional photography and printing where maximum detail is essential.</strong></li><li><strong>60–75% – for email attachments, social media, and web thumbnails where file size is the priority.</strong></li></ul><p class=\"text-mid mt-3\">TIFF files are typically 10–50 MB. At quality 85, JPG reduces them to 500 KB–2 MB while maintaining excellent visual quality for screen display.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting TIFF to JPG?",
+      "html": "<p class=\"text-mid mb-4\">TIFF files are very large. JPG provides dramatic file size reduction:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo (TIFF)</p><p class=\"text-light text-sm\">25 MB → 1.2 MB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~95%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Scanned document</p><p class=\"text-light text-sm\">15 MB → 650 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~96%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo</p><p class=\"text-light text-sm\">8 MB → 480 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~94%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows exact sizes for each file.</p>"
     },
     {
       "type": "faq",

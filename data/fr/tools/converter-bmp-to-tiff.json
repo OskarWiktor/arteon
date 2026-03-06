@@ -2,14 +2,14 @@
   "toolKey": "bmpToTiff",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur BMP en TIFF — BMP TIFF",
-    "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
+    "title": "Convertisseur BMP en TIFF - BMP TIFF",
+    "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-bmp-en-tiff"
   },
   "hero": {
     "title": "Convertisseur BMP en TIFF",
-    "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
+    "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur BMP en TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
+      "description": "Convertissez les fichiers BMP en format TIFF professionnel pour impression. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
       "featureList": ["Conversion en TIFF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
       "alternateName": ["Convertir BMP en TIFF", "Conversion BMP vers TIFF", "Convertisseur BMP en TIFF gratuit"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Régler la qualité",
-          "text": "Ajustez le curseur de qualite TIFF — des valeurs plus basses donnent des fichiers plus petits."
+          "text": "Ajustez le curseur de qualite TIFF - des valeurs plus basses donnent des fichiers plus petits."
         },
         {
           "position": 3,
           "name": "Convertir",
-          "text": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+          "text": "Cliquez sur Convertir - les fichiers sont traites localement dans votre navigateur."
         },
         {
           "position": 4,
           "name": "Telecharger",
-          "text": "Telechargez les fichiers TIFF — individuellement ou tous a la fois."
+          "text": "Telechargez les fichiers TIFF - individuellement ou tous a la fois."
         }
       ]
     }
@@ -290,6 +290,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting BMP to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

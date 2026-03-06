@@ -2,7 +2,7 @@
   "toolKey": "pdfToPng",
   "locale": "fi",
   "metadata": {
-    "title": "PDF PNG -muunnin — PDF PNG",
+    "title": "PDF PNG -muunnin - PDF PNG",
     "description": "Muunna PDF-sivut PNG-kuviksi. Korkea laatu, ei rajoituksia. Ilmainen.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/pdf-png-muunnin"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Muunna",
-          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi."
+          "text": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessasi."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa PDF PNG-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">PDF on laajalti kaytetty tiedostomuoto laajalla yhteensopivuudella. Kayttotapauksesta riippuen muuntaminen PNG-muotoon voi tarjota merkittavia etuja — pienemmat tiedostot, parempi laatu tai laajempi alusta tuki.</p><p class=\"text-mid mb-4\">Tama ilmainen verkkomuunnin muuntaa PDF-tiedostosi PNG-muotoon suoraan selaimessa. Tiedostoja ei laheteta palvelimille — koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman paivittaisia rajoituksia, rekisteroitymista tai vesileimoja. Vedaa ja pudota tiedostot, saada laatua ja lataa tulokset.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF on laajalti käytetty tiedostomuoto laajalla yhteensopivuudella. Käyttötapauksesta riippuen muuntaminen PNG-muotoon voi tarjota merkittäviä etuja - pienemmat tiedostot, parempi laatu tai laajempi alustatuki.</p><p class=\"text-mid mb-4\">Tämä ilmainen verkkomuunnin muuntaa PDF-tiedostosi PNG-muotoon suoraan selaimessa. Tiedostoja ei lähetetä palvelimille - koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman päivittäisiä rajoituksia, rekisteröitymistä tai vesileimoja. Vedä ja pudota tiedostot, säädä laatua ja lataa tulokset.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "PDF to PNG conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Muunna",
-          "description": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi.",
+          "description": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessasi.",
           "icon": "RiSettings3Line"
         },
         {
@@ -201,7 +201,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten kuvamuunnos vaikuttaa nopeuteen ja SEO:hon",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman nakyvam elementin nayttamiseen.</p><p class=\"text-mid mb-4\">PDF-kuvien muuntaminen PNG-muotoon pienentaa tiedostokokoa, lyhentaa latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman näkyvän elementin näyttämiseen.</p><p class=\"text-mid mb-4\">PDF-kuvien muuntaminen PNG-muotoon pienentää tiedostokokoa, lyhentää latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
     },
     {
       "type": "gap",
@@ -210,28 +210,28 @@
     {
       "type": "sectionSteps",
       "title": "Vinkkeja PDF-PNG-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "description": "Vinkkeja yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
+          "title": "Erittäin suuret tiedostot",
           "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Jo pakatut",
-          "description": "Jos PDF oli jo voimakkaasti pakattu, muunnos PNG-muotoon ei valttamatta saasta paljon."
+          "description": "Jos PDF oli jo voimakkaasti pakattu, muunnos PNG-muotoon ei välttämättä säästä paljon."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "PNG tukee alfakanavaa. PDF:n lapinakyyt alueet sailyvat."
+          "title": "Läpinäkyvyys",
+          "description": "PNG tukee alfakanavaa. PDF:n läpinäkyvät alueet säilyvät."
         },
         {
           "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot PDF-tiedostoista."
+          "title": "Säilytä alkuperäiset",
+          "description": "Häviöllinen muunnos on peruuttamaton. Säilytä kopiot PDF-tiedostoista."
         }
       ]
     },
@@ -241,12 +241,21 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla PDF PNG?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Kuinka paljon säästät muuntamalla PDF PNG?",
+      "html": "<p class=\"text-mid mb-4\">Säästöt riippuvat tiedostotyypistä ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Näyttökuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset säästöt vaihtelevat sisällön ja asetusten mukaan.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose PNG vs JPG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">PNG is lossless — it preserves sharp text edges, clean lines, and exact colors without compression artifacts. This makes PNG ideal for documents with text, technical drawings, invoices, and any content with sharp edges.</p><p class=\"text-mid mb-4\">JPG uses lossy compression and may show visible artifacts around text and sharp edges (known as \"ringing\"). However, JPG produces smaller files, which is better for photo-heavy PDFs like product catalogs or photo albums.</p><p class=\"text-mid\">Rule of thumb: choose PNG for documents with text and diagrams, JPG for photo-heavy PDFs, and WebP for the best balance of quality and size.</p>"
     },
     {
       "type": "faq",
@@ -271,11 +280,11 @@
         },
         {
           "question": "Onko PDF PNG muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "answer": "Kyllä. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitään ei lähetetä palvelimille."
         },
         {
           "question": "Voinko muuntaa useita PDF-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "answer": "Kyllä. Erämuunnos ilman rajaa. Vedä tiedostot muuntimeen."
         },
         {
           "question": "Tukevatko kaikki selaimet PNG-muotoa?",

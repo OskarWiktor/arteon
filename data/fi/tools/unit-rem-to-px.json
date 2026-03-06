@@ -1,0 +1,273 @@
+{
+  "toolKey": "remToPx",
+  "locale": "fi",
+  "metadata": {
+    "title": "Rem px:ksi – muunnin",
+    "description": "Muunna CSS rem pikseleiksi ja päinvastoin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/rem-px-muunnin"
+  },
+  "hero": {
+    "title": "Rem px:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/rem-px-muunnin",
+      "label": "rem px:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Rem px:ksi – muunnin",
+      "alternateName": ["Rem px:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna CSS rem pikseleiksi ja päinvastoin.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin rem muunnetaan pikseleiksi?",
+      "html": "<p class=\"text-mid mb-4\">CSS-yksikkö rem on suhteellinen juurielementtiin (html). Oletus: 16px, joten 1rem = 16px. Toisin kuin em, rem ei kaskadoi.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "REM to pixels converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web-kehitys",
+          "description": "Muunna rem pikseleihin virheiden selvittämiseen."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Suunnittelujärjestelmät",
+          "description": "Määrittele väliasteikot rem:ssä."
+        },
+        {
+          "icon": "RiAccessibilityLine",
+          "title": "Saavutettavuus",
+          "description": "rem kunnioittaa käyttäjäasetuksia."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Tailwind CSS",
+          "description": "p-4 = 1rem = 16px."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">px = rem × juurikirjasinkoko. Oletus = 16px.</p><p class=\"text-mid\">rem ei koskaan kaskadoi. 1rem on aina sama.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">px = rem × juurikirjasinkoko. Oletus = 16px.</p><p class=\"text-mid\">rem ei koskaan kaskadoi. 1rem on aina sama.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "rem vs em vs px",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "rem"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Viite",
+          "values": {
+            "unit1": "Juurikirjasin",
+            "unit2": "Kiinteä pikseli"
+          }
+        },
+        {
+          "name": "Kaskadoi",
+          "values": {
+            "unit1": "Ei",
+            "unit2": "Ei"
+          }
+        },
+        {
+          "name": "Responsiivinen",
+          "values": {
+            "unit1": "Kyllä",
+            "unit2": "Ei"
+          }
+        },
+        {
+          "name": "Saavutettavuus",
+          "values": {
+            "unit1": "Kunnioittaa asetuksia",
+            "unit2": "Kiinteä koko"
+          }
+        },
+        {
+          "name": "Ennakoitavuus",
+          "values": {
+            "unit1": "Aina johdonmukainen",
+            "unit2": "Aina vakio"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta px on 1rem?",
+          "answer": "Oletuksena 1rem = 16px. Säädettävissä juurikirjasinkoolla."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "rem px:ksi – Arteon",
+      "defaultSubject": "Palaute: rem-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

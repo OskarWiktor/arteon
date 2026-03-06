@@ -97,7 +97,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <h3 className="h5 mt-4 mb-3">Zarządzanie zgodami (CMP)</h3>
             <p>
-              Do zbierania i zarządzania zgodami na pliki cookie i przetwarzanie danych w celach reklamowych strona korzysta z narzędzia Google Privacy &amp; Messaging — certyfikowanej platformy
+              Do zbierania i zarządzania zgodami na pliki cookie i przetwarzanie danych w celach reklamowych strona korzysta z narzędzia Google Privacy &amp; Messaging - certyfikowanej platformy
               zarządzania zgodami (CMP) zintegrowanej ze standardem IAB Transparency and Consent Framework (TCF) w wersji 2.3.
             </p>
             <p>

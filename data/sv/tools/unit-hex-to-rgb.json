@@ -1,0 +1,273 @@
+{
+  "toolKey": "hexToRgb",
+  "locale": "sv",
+  "metadata": {
+    "title": "HEX till RGB – omvandlare",
+    "description": "Omvandla HEX-färgkoder till RGB och tvärtom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/sv/verktyg/hex-till-rgb-omvandlare"
+  },
+  "hero": {
+    "title": "HEX till RGB",
+    "description": "Denna omvandlare räknar om direkt. Ange ett värde så visas resultatet omedelbart.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/hex-till-rgb-omvandlare",
+      "label": "HEX till RGB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEX till RGB – omvandlare",
+      "alternateName": ["HEX till RGB"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Omvandla HEX-färgkoder till RGB och tvärtom.",
+      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+    },
+    "howTo": {
+      "name": "Så använder du omvandlaren",
+      "description": "Snabbguide för att använda omvandlaren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Ange värde",
+          "text": "Skriv ett tal i inmatningsfältet till vänster."
+        },
+        {
+          "name": "Läs av resultatet",
+          "text": "Konverteringsresultatet visas omedelbart i fältet bredvid."
+        },
+        {
+          "name": "Kopiera eller vänd",
+          "text": "Klicka på Kopiera resultat eller på Vänd för att konvertera i andra riktningen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "När ska man omvandla HEX till RGB?",
+      "html": "<p class=\"text-mid mb-4\">HEX-färger (#FF5733) och RGB (rgb(255, 87, 51)) representerar samma färger i olika notation. HEX är vanligt i CSS, RGB i programmering.</p><p class=\"text-mid mb-4\">Varje HEX-färg har 6 siffror: de första 2 för röd (00–FF), nästa 2 för grön, sista 2 för blå. RGB använder värden 0–255.</p><p class=\"text-mid\">Alla beräkningar körs lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "HEX to RGB color converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Så använder du omvandlaren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ange värde",
+          "description": "Skriv ett tal i inmatningsfältet. Du kan använda punkt eller komma som decimalavskiljare.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Läs av resultatet",
+          "description": "Konverteringsresultatet visas omedelbart i fältet bredvid – utan att klicka.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiera eller vänd",
+          "description": "Klicka på Kopiera resultat eller använd knappen Vänd.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När är denna omvandlare användbar?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webbutveckling",
+          "description": "Omvandla HEX från mockuper till RGB för rgba() med transparens."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Färghantering",
+          "description": "Dokumentera färger i både HEX och RGB."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "JavaScript/Canvas",
+          "description": "Canvas API kräver RGB-värden."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Tillgänglighet",
+          "description": "Beräkna färgkontraster med RGB för WCAG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna omvandlare speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Alla beräkningar görs lokalt i din webbläsare. Ingen data skickas till någon server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultat i realtid",
+          "description": "Resultatet uppdateras omedelbart när du skriver – inget klick krävs."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Dubbelriktad konvertering",
+          "description": "Vänd-knappen låter dig konvertera i båda riktningarna med ett klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenstabell",
+          "description": "En färdig tabell med ofta konverterade värden och kontextuella beskrivningar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">HEX använder bas-16: varje sifferpar (00–FF) omvandlas till decimal 0–255. #FF5733: FF=255, 57=87, 33=51.</p><p class=\"text-mid\">HEX-förkortning: #F53 blir #FF5533.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">HEX använder bas-16: varje sifferpar (00–FF) omvandlas till decimal 0–255. #FF5733: FF=255, 57=87, 33=51.</p><p class=\"text-mid\">HEX-förkortning: #F53 blir #FF5533.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HEX vs RGB",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "HEX"
+        },
+        {
+          "id": "unit2",
+          "name": "RGB",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Format",
+          "values": {
+            "unit1": "#RRGGBB",
+            "unit2": "rgb(R, G, B)"
+          }
+        },
+        {
+          "name": "Värden",
+          "values": {
+            "unit1": "00–FF (hex)",
+            "unit2": "0–255 (decimal)"
+          }
+        },
+        {
+          "name": "Transparens",
+          "values": {
+            "unit1": "#RRGGBBAA",
+            "unit2": "rgba(R, G, B, A)"
+          }
+        },
+        {
+          "name": "Förkortning",
+          "values": {
+            "unit1": "#RGB",
+            "unit2": "Ingen"
+          }
+        },
+        {
+          "name": "Används i",
+          "values": {
+            "unit1": "CSS, designverktyg",
+            "unit2": "CSS, programmering"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hur omvandlar jag HEX till RGB?",
+          "answer": "Omvandla varje hex-par till decimal. #FF5733: FF=255, 57=87, 33=51 → rgb(255, 87, 51)."
+        },
+        {
+          "question": "Körs beräkningarna lokalt?",
+          "answer": "Ja. Alla beräkningar körs i din webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "HEX till RGB – Arteon",
+      "defaultSubject": "Feedback: hex-to-rgb"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra gratis verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

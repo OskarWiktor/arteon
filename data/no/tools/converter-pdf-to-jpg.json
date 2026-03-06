@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "pdf": "Innebygd PDF-visning",
-            "jpg": "Alle nettlesere"
+            "pdf": false,
+            "jpg": true
           }
         },
         {
@@ -191,8 +191,7 @@
             "jpg": true
           }
         }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",
@@ -256,6 +255,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose JPG vs PNG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">JPG uses lossy compression optimized for photographs. It produces small files but may show visible artifacts around text and sharp edges. Choose JPG for photo-heavy PDFs like catalogs, brochures, and photo albums.</p><p class=\"text-mid mb-4\">PNG is lossless and preserves sharp edges perfectly. Choose PNG for documents with text, technical drawings, invoices, and diagrams. PNG files will be 3–5× larger than JPG.</p><p class=\"text-mid\">For web use, consider WebP — it offers better compression than both JPG and PNG while supporting transparency. Use <a href=\"/en/tools/pdf-to-webp-converter\">our PDF to WebP converter</a> for optimal web performance.</p>"
     },
     {
       "type": "faq",

@@ -2,7 +2,7 @@
   "toolKey": "jsonToYaml",
   "locale": "de",
   "metadata": {
-    "title": "JSON-zu-YAML-Konverter — JSON YAML",
+    "title": "JSON-zu-YAML-Konverter - JSON YAML",
     "description": "JSON in YAML-Format konvertieren. Automatisches Parsen und Formatieren. Kostenlos.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/json-zu-yaml-konverter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Warum JSON in YAML konvertieren?",
-      "html": "<p class=\"text-mid mb-4\">JSON ist ein weit verbreitetes Dateiformat mit breiter Kompatibilitat. Je nach Anwendungsfall kann die Konvertierung in YAML erhebliche Vorteile bieten — kleinere Dateien, bessere Qualitat oder breitere Plattformunterstutzung.</p><p class=\"text-mid mb-4\">Dieser kostenlose Online-Konverter wandelt Ihre JSON-Dateien direkt im Browser in das YAML-Format um. Es werden keine Dateien auf einen Server hochgeladen — der gesamte Prozess findet lokal auf Ihrem Gerat statt.</p><p class=\"text-mid\">Konvertieren Sie beliebig viele Dateien ohne tagliche Limits, ohne Registrierung und ohne Wasserzeichen. Ziehen Sie Ihre Dateien per Drag & Drop, passen Sie die Qualitat an und laden Sie die Ergebnisse herunter.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON ist ein weit verbreitetes Dateiformat mit breiter Kompatibilitat. Je nach Anwendungsfall kann die Konvertierung in YAML erhebliche Vorteile bieten - kleinere Dateien, bessere Qualitat oder breitere Plattformunterstutzung.</p><p class=\"text-mid mb-4\">Dieser kostenlose Online-Konverter wandelt Ihre JSON-Dateien direkt im Browser in das YAML-Format um. Es werden keine Dateien auf einen Server hochgeladen - der gesamte Prozess findet lokal auf Ihrem Gerat statt.</p><p class=\"text-mid\">Konvertieren Sie beliebig viele Dateien ohne tagliche Limits, ohne Registrierung und ohne Wasserzeichen. Ziehen Sie Ihre Dateien per Drag & Drop, passen Sie die Qualitat an und laden Sie die Ergebnisse herunter.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
       "imageAlt": "JSON to YAML conversion",
       "variant": "right"
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Sofortige Konvertierung",
-          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs — schnell und funktioniert offline."
+          "description": "Die gesamte Verarbeitung erfolgt lokal mit modernen Browser-APIs - schnell und funktioniert offline."
         }
       ]
     },
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Wie viel sparen Sie bei Konvertierung von JSON zu YAML?",
-      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+      "title": "Wie funktioniert die JSON-zu-YAML-Konvertierung?",
+      "html": "<p class=\"text-mid mb-4\">JSON und YAML repräsentieren beide strukturierte Daten, aber YAML verwendet eine sauberere, einrückungsbasierte Syntax ohne geschweifte Klammern oder Anführungszeichen um Schlüssel. Der Konverter analysiert die JSON-Struktur und formatiert sie nach YAML-Konventionen: Einrückung für Verschachtelung, Bindestriche für Array-Elemente und Doppelpunkte für Schlüssel-Wert-Paare.</p><p class=\"text-mid mb-4\">Zum Beispiel wird ein JSON-Objekt wie {\"name\": \"Max\", \"alter\": 30} zu zwei Zeilen in YAML: name: Max und alter: 30. Verschachtelte Objekte verwenden tiefere Einrückung, und Arrays verwenden den Bindestrich-Leerzeichen-Präfix.</p><p class=\"text-mid\">YAML wird häufig für Konfigurationsdateien (Docker Compose, Kubernetes, GitHub Actions, Ansible) verwendet, da es besser lesbar ist als JSON. Die Konvertierung erfolgt vollständig lokal in Ihrem Browser.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipps fur Konvertierung von JSON zu YAML",
-      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "title": "Tipps für die JSON-zu-YAML-Konvertierung",
+      "description": "Einige Hinweise, um häufige Probleme zu vermeiden:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Sehr grosse Dateien",
-          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Einrückung ist entscheidend",
+          "description": "YAML verwendet Leerzeichen für die Einrückung (keine Tabulatoren). Der Konverter gibt konsistente 2-Leerzeichen-Einrückung aus."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Bereits komprimierte Dateien",
-          "description": "Stark komprimierte JSON-Dateien bringen bei Konvertierung zu YAML moglicherweise wenig Einsparung."
+          "title": "String-Quotierung",
+          "description": "YAML benötigt nur Anführungszeichen um Strings, die Sonderzeichen enthalten (Doppelpunkte, Rauten, Klammern). Einfache Strings bleiben für sauberere Ausgabe unquotiert."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparenz",
-          "description": "YAML unterstutzt keine Transparenz. Transparente Bereiche werden weiss. Verwenden Sie PNG oder WebP."
+          "icon": "RiCodeLine",
+          "title": "Kommentare",
+          "description": "JSON unterstützt keine Kommentare, daher gibt es keine zu übertragen. Im YAML-Format können Sie jedoch frei #-Kommentare hinzufügen."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Originale aufbewahren",
-          "description": "Verlustbehaftete Konvertierung ist irreversibel. Bewahren Sie Kopien der JSON-Originale auf."
+          "icon": "RiFileCodeLine",
+          "title": "Mehrzeilige Strings",
+          "description": "Lange String-Werte mit Zeilenumbrüchen werden in YAML-Block-Skalar-Syntax (| oder >) formatiert für bessere Lesbarkeit."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Common YAML pitfalls to watch out for",
+      "html": "<p class=\"text-mid mb-4\">YAML is sensitive to formatting. Here are common issues when working with converted YAML:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Indentation</strong> – YAML uses spaces (not tabs) for structure. The converter uses 2-space indentation consistently.</li><li><strong>Special characters in strings</strong> – values containing colons, hashes, or brackets may need quoting. The converter handles this automatically.</li><li><strong>Boolean gotchas</strong> – YAML treats <code>yes</code>, <code>no</code>, <code>on</code>, <code>off</code> as booleans. If these appear as string values in JSON, the converter wraps them in quotes.</li><li><strong>Number precision</strong> – large numbers and floating-point values are preserved exactly as they appear in the JSON source.</li></ul><p class=\"text-mid mt-3\">The converter generates valid YAML that passes <code>yamllint</code> validation. If you encounter issues, check for mixed indentation or unquoted special characters.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, der Konverter funktioniert auf jedem Gerät mit einem modernen Webbrowser."
         },
         {
-          "question": "Ist Konvertierung von JSON zu YAML sicher?",
-          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+          "question": "Ist die JSON-zu-YAML-Konvertierung sicher?",
+          "answer": "Ja. Die gesamte Konvertierung erfolgt lokal in Ihrem Browser. Ihre Daten werden nie an einen Server gesendet. Beim Schließen der Seite werden alle Daten automatisch gelöscht."
         },
         {
-          "question": "Kann ich mehrere JSON-Dateien gleichzeitig konvertieren?",
-          "answer": "Ja. Stapelkonvertierung ohne Limit. Ziehen Sie Dateien auf den Konverterbereich."
+          "question": "Kann ich die YAML-Ausgabe in Docker oder Kubernetes verwenden?",
+          "answer": "Ja. Die Ausgabe ist Standard-YAML, kompatibel mit Docker Compose, Kubernetes-Manifesten, GitHub-Actions-Workflows, Ansible-Playbooks und jedem anderen Tool, das YAML liest."
         },
         {
-          "question": "Wird YAML von allen Browsern unterstutzt?",
-          "answer": "YAML wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
+          "question": "Ist die Konvertierung verlustfrei?",
+          "answer": "Ja. Alle Datentypen (Strings, Zahlen, Booleans, null, Arrays, Objekte) werden exakt beibehalten. YAML unterstützt dieselben Datentypen wie JSON."
         }
       ]
     },

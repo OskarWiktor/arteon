@@ -1,0 +1,289 @@
+{
+  "toolKey": "rgbToCmyk",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter RGB na CMYK – kolory ekranowe na druk",
+    "description": "Przelicz kolory RGB na CMYK i odwrotnie. Konwerter jest przydatny przy przygotowywaniu grafik do druku. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-rgb-na-cmyk"
+  },
+  "hero": {
+    "title": "Przelicz kolory RGB na CMYK",
+    "description": "Ten konwerter przelicza kolory z przestrzeni ekranowej (RGB) na drukarską (CMYK) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-rgb-na-cmyk",
+      "label": "RGB na CMYK"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter RGB na CMYK – kolory ekranowe na druk",
+      "alternateName": ["Przelicznik RGB CMYK", "Kalkulator kolorów do druku", "RGB to CMYK converter"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz kolory RGB na CMYK i odwrotnie. Konwerter jest przydatny przy przygotowywaniu grafik do druku. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera RGB na CMYK",
+      "description": "Instrukcja użycia: rgb na cmyk.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Dlaczego warto przeliczać RGB na CMYK?",
+      "html": "<p class=\"text-mid mb-4\">RGB (Red, Green, Blue) to model kolorów ekranowych – mieszanie światła. CMYK (Cyan, Magenta, Yellow, Key/Black) to model drukowski – mieszanie tuszów.</p><p class=\"text-mid mb-4\">Kolory wyglądające żywo na ekranie (RGB) mogą wyjść matowo w druku (CMYK). Dotyczy to szczególnie jaskrawych niebieski, zieleni i neonów – te kolory są poza zakresem CMYK (gamut).</p><p class=\"text-mid mb-4\">Drukarnie wymagają plików w CMYK. Konwersja z RGB na CMYK pozwala sprawdzić wartości procentowe tuszów przed wysłaniem do druku.</p><p class=\"text-mid\">Ten konwerter używa algorytmu matematycznego. Profesjonalna konwersja uwzględnia profil ICC drukarki (np. Fogra39), ale wartości orientacyjne są wystarczające do szybkiego podglądu.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "RGB na CMYK – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Przygotowanie do druku",
+          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Weryfikacja kolorów",
+          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Materiały brandingowe",
+          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografia",
+          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja RGB na CMYK?",
+      "html": "<p class=\"text-mid mb-4\">RGB i CMYK to dwa fundamentalnie różne modele kolorów. RGB (Red, Green, Blue) jest modelem addytywnym używanym na ekranach — kolory powstają przez dodawanie światła. CMYK (Cyan, Magenta, Yellow, Key/Black) jest modelem subtraktywnym używanym w druku — kolory powstają przez nakładanie farb, które pochłaniają światło.</p><p class=\"text-mid mb-4\">Konwersja polega na obliczeniu, ile każdej farby drukarskiej potrzeba, aby odwzorować dany kolor ekranowy. Najpierw wyznaczany jest kanał czarny (K) na podstawie najjaśniejszego składnika RGB, a następnie obliczane są wartości cyjanu, magenty i żółtego. Wyniki wyrażane są w procentach od 0% do 100%.</p><p class=\"text-mid\">Warto pamiętać, że nie wszystkie kolory RGB mają dokładny odpowiednik w CMYK — ekrany wyświetlają szerszy zakres kolorów (gamut) niż drukarki. Kolory neonowe i bardzo nasycone mogą wyglądać inaczej po wydrukowaniu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Czysty czarny w RGB (0,0,0) = CMYK (0%, 0%, 0%, 100%). “Rich black” drukarski: C60 M40 Y40 K100.</li><li>Jaskrawe neony RGB nie mają odpowiednika w CMYK – wyglądają matowo w druku.</li><li>Drukarnie wymagają profil ICC (np. Fogra39 dla druku offsetowego w Europie).</li><li>Biały = brak tuszu: CMYK (0%, 0%, 0%, 0%).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs CMYK – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "CMYK",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Model",
+          "values": {
+            "unit1": "Addytywny (światło)",
+            "unit2": "Subtraktywny (tusze)"
+          }
+        },
+        {
+          "name": "Medium",
+          "values": {
+            "unit1": "Ekrany",
+            "unit2": "Druk"
+          }
+        },
+        {
+          "name": "Zakres (gamut)",
+          "values": {
+            "unit1": "Szerszy",
+            "unit2": "Węższy"
+          }
+        },
+        {
+          "name": "Czarny kolor",
+          "values": {
+            "unit1": "R0 G0 B0",
+            "unit2": "C0 M0 Y0 K100"
+          }
+        },
+        {
+          "name": "Biały kolor",
+          "values": {
+            "unit1": "R255 G255 B255",
+            "unit2": "C0 M0 Y0 K0 (brak tuszu)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Dlaczego kolory wyglądają inaczej na ekranie i w druku?",
+          "answer": "Ekrany używają światła (RGB – szerszy zakres kolorów). Druk używa tuszów (CMYK – węższy zakres). Jaskrawe kolory RGB nie mają dokładnego odpowiednika w CMYK."
+        },
+        {
+          "question": "Czy konwersja matematyczna wystarczy do druku?",
+          "answer": "Do szybkiego podglądu – tak. Do profesjonalnego druku lepiej użyć profilu ICC w Photoshopie lub InDesign."
+        },
+        {
+          "question": "Co to jest “rich black”?",
+          "answer": "Głęboki czarny w druku: C60 M40 Y40 K100. Czysty K100 może wyglądać szarawo."
+        },
+        {
+          "question": "Czy CMYK obsługuje neony?",
+          "answer": "Nie. Kolory neonowe wymagają tuszów spot (np. Pantone Neon)."
+        },
+        {
+          "question": "Co to jest profil ICC?",
+          "answer": "Plik opisujący charakterystykę urządzenia (drukarki, monitora). Fogra39 to standard druku offsetowego w Europie."
+        },
+        {
+          "question": "Jaki format pliku do druku?",
+          "answer": "PDF/X-1a lub PDF/X-4 z osadzonymi profilami ICC i kolorami w CMYK."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "RGB na CMYK – Arteon",
+      "defaultSubject": "Feedback: RGB na CMYK"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

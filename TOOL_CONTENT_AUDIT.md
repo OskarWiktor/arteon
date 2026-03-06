@@ -97,24 +97,24 @@
 
 ### Factual Inaccuracies (CRITICAL)
 
-1. **WCAG Contrast Checker** — schema `alternateName` "Sprawdzanie kolorów dla daltonistów" was misleading (tool checks luminance contrast, not daltonism simulation). Changed to "Dostępność kolorów na stronie internetowej". DE/ES/FR were clean.
-2. **WebP Converter** — schema `featureList` claimed quality range "1-100%" but tool actually uses 60-95% (MIN_QUALITY=60, MAX_QUALITY=95). Fixed in PL, DE, ES, FR.
-3. **Favicon Generator** — 3 claims that the tool "generates/suggests HTML code" were false (the tool generates icon files, the page content provides HTML examples separately). Fixed in PL, DE, ES, FR, EN.
+1. **WCAG Contrast Checker** - schema `alternateName` "Sprawdzanie kolorów dla daltonistów" was misleading (tool checks luminance contrast, not daltonism simulation). Changed to "Dostępność kolorów na stronie internetowej". DE/ES/FR were clean.
+2. **WebP Converter** - schema `featureList` claimed quality range "1-100%" but tool actually uses 60-95% (MIN_QUALITY=60, MAX_QUALITY=95). Fixed in PL, DE, ES, FR.
+3. **Favicon Generator** - 3 claims that the tool "generates/suggests HTML code" were false (the tool generates icon files, the page content provides HTML examples separately). Fixed in PL, DE, ES, FR, EN.
 
 ### Breadcrumbs Typos
 
-4. **Meta Title Checker (PL)** — "Narzędzie" → "Narzędzia" (singular → plural). DE/ES/FR were clean.
-5. **Email Signature Generator (PL)** — same fix.
+4. **Meta Title Checker (PL)** - "Narzędzie" → "Narzędzia" (singular → plural). DE/ES/FR were clean.
+5. **Email Signature Generator (PL)** - same fix.
 
 ### Missing CSS Classes (text-mid)
 
-6. **Color Extractor (PL, ES)** — first SectionInfo paragraphs missing `text-mid`.
-7. **Favicon Generator (PL, ES)** — first SectionInfo + sizes SectionInfo paragraphs missing `text-mid`.
-8. **WebP Converter (PL, DE, ES, FR)** — first SectionInfo + savings SectionInfo paragraphs missing `text-mid`.
+6. **Color Extractor (PL, ES)** - first SectionInfo paragraphs missing `text-mid`.
+7. **Favicon Generator (PL, ES)** - first SectionInfo + sizes SectionInfo paragraphs missing `text-mid`.
+8. **WebP Converter (PL, DE, ES, FR)** - first SectionInfo + savings SectionInfo paragraphs missing `text-mid`.
 
 ### Layout Consistency
 
-9. **Image Editor (PL, ES)** — `<Gap size="sm" />` before ToolsCarousel changed to `<Gap variant="line" />` for consistency with all other tool pages. DE/FR were already correct.
+9. **Image Editor (PL, ES)** - `<Gap size="sm" />` before ToolsCarousel changed to `<Gap variant="line" />` for consistency with all other tool pages. DE/FR were already correct.
 
 ### Tools With No Issues Found
 

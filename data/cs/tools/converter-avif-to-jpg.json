@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Nastaveni kvality — co zvolit pri konverzi AVIF na JPG?",
-      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 85% je rozdil mezi originalnim AVIF a vyslednym JPG nepostrehnutelny.</p>"
+      "title": "Nastaveni kvality - co zvolit pri konverzi AVIF na JPG?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (vychozi) - dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% - pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% - kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 85% je rozdil mezi originalnim AVIF a vyslednym JPG nepostrehnutelny.</p>"
     },
     {
       "type": "gap",

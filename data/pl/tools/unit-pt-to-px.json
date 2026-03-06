@@ -1,0 +1,289 @@
+{
+  "toolKey": "ptToPx",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter pt na px – punkty typograficzne na piksele",
+    "description": "Przelicz punkty typograficzne (pt) na piksele (px) i odwrotnie. Konwerter jest przydatny przy projektowaniu stron i dokumentów. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-pt-na-px"
+  },
+  "hero": {
+    "title": "Przelicz punkty na piksele",
+    "description": "Ten konwerter przelicza punkty typograficzne (pt) na piksele (px) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-pt-na-px",
+      "label": "pt na px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter pt na px – punkty typograficzne na piksele",
+      "alternateName": ["Przelicznik pt na px", "Kalkulator punktów na piksele", "Points to pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz punkty typograficzne (pt) na piksele (px) i odwrotnie. Konwerter jest przydatny przy projektowaniu stron i dokumentów. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera pt na px",
+      "description": "Instrukcja użycia: pt na px.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy potrzebne jest przeliczanie pt na px?",
+      "html": "<p class=\"text-mid mb-4\">Punkt typograficzny (pt) to tradycyjna jednostka miary w poligrafii. 1 pt = 1/72 cala. Piksel (px) to jednostka ekranowa – przy standardowym DPI (96) 1 pt = 1,333 px.</p><p class=\"text-mid mb-4\">Programy graficzne (Adobe InDesign, Illustrator) używają punktów do określania wielkości czcionek. CSS i przeglądarki operują pikselami. Projektant eksportujący makietę z programu do CSS musi przeliczyć pt na px.</p><p class=\"text-mid mb-4\">W systemie Windows domyślne DPI to 96, w macOS klasycznym było to 72 (wtedy 1 pt = 1 px). Dziś ekrany Retina mają wyższe PPI, ale CSS nadal bazuje na 96 DPI.</p><p class=\"text-mid\">Standardowy tekst w dokumentach to 12 pt = 16 px (wartość domyślna <code>1rem</code> w przeglądarkach). Nagłówek H1 to zazwyczaj 24–36 pt = 32–48 px.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "pt na px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Projektowanie UI",
+          "description": "Eksport wielkości czcionek z Figma/Sketch do CSS: 12 pt = 16 px."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty",
+          "description": "Konwersja rozmiarów z Word/InDesign na wartości pikselowe."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "CSS / frontend",
+          "description": "Przeliczanie pt na px przy kodowaniu styli czcionek."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Druk vs ekran",
+          "description": "Dopasowanie wielkości tekstu do wyświetlania na ekranie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja pt na px?",
+      "html": "<p class=\"text-mid mb-4\">Punkt typograficzny (pt) to tradycyjna jednostka używana w typografii i druku, gdzie jeden punkt wynosi 1/72 cala. Piksel (px) jest jednostką ekranową, a jego fizyczny rozmiar zależy od rozdzielczości wyświetlacza (DPI). Przy standardowej rozdzielczości 96 DPI (domyślna na Windows) jeden punkt to około 1,333 piksela.</p><p class=\"text-mid mb-4\">Konwersja opiera się na stosunku DPI ekranu do DPI typograficznego: przy 96 DPI stosunek wynosi 96/72 = 1,333. Na przykład tekst o rozmiarze 12 pt to 16 px przy 96 DPI. Na starszych komputerach Mac z rozdzielczością 72 DPI stosunek wynosił 1:1, czyli 1 pt = 1 px.</p><p class=\"text-mid\">Punkt typograficzny jest nadal standardem w programach do składu tekstu (Adobe InDesign, Microsoft Word), natomiast piksel dominuje w projektowaniu stron internetowych i interfejsów.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>12 pt = 16 px = 1 rem – domyślny rozmiar tekstu w przeglądarkach.</li><li>9 pt = 12 px – tekst drobny (stopki, adnotacje).</li><li>18 pt = 24 px – typowy rozmiar nagłówków.</li><li>72 pt = 96 px = 1 cal na ekranie (96 DPI).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Punkt (pt) vs Piksel (px) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Punkt (pt)"
+        },
+        {
+          "id": "unit2",
+          "name": "Piksel (px)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Definicja",
+          "values": {
+            "unit1": "1/72 cala",
+            "unit2": "Jednostka ekranowa"
+          }
+        },
+        {
+          "name": "Programy",
+          "values": {
+            "unit1": "InDesign, Word",
+            "unit2": "CSS, Figma"
+          }
+        },
+        {
+          "name": "Tekst podstawowy",
+          "values": {
+            "unit1": "12 pt",
+            "unit2": "16 px"
+          }
+        },
+        {
+          "name": "Nagłówek",
+          "values": {
+            "unit1": "24–36 pt",
+            "unit2": "32–48 px"
+          }
+        },
+        {
+          "name": "Zależność od DPI",
+          "values": {
+            "unit1": "Nie",
+            "unit2": "Tak (96 DPI standard)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile pikseli ma 12 pt?",
+          "answer": "12 pt = 16 px (przy standardowym 96 DPI). To domyślny rozmiar tekstu w przeglądarkach (1 rem)."
+        },
+        {
+          "question": "Jaki jest wzór na przeliczenie pt na px?",
+          "answer": "px = pt × (DPI/72). Przy DPI = 96: px = pt × 1,333."
+        },
+        {
+          "question": "Czy pt i px to to samo na Maku?",
+          "answer": "Na starszych Makach (72 DPI) 1 pt = 1 px. Na Retina proporcja jest inna, ale CSS nadal używa 96 DPI."
+        },
+        {
+          "question": "Ile pt to 1 rem?",
+          "answer": "1 rem = 16 px = 12 pt (przy domyślnym font-size 16 px i 96 DPI)."
+        },
+        {
+          "question": "Jaki rozmiar czcionki powinienem użyć na stronie?",
+          "answer": "Minimum 16 px (12 pt) dla tekstu podstawowego. WCAG zaleca przynajmniej ten rozmiar dla czytelności."
+        },
+        {
+          "question": "Czy konwerter uwzględnia różne DPI?",
+          "answer": "Konwerter przelicza przy standardowym 96 DPI. Dla innego DPI użyj wzoru: px = pt × (DPI/72)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "pt na px – Arteon",
+      "defaultSubject": "Feedback: pt na px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

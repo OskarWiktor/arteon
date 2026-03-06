@@ -2,7 +2,7 @@
   "toolKey": "markdownToHtml",
   "locale": "en",
   "metadata": {
-    "title": "Markdown to HTML converter — Markdown HTML",
+    "title": "Markdown to HTML converter - Markdown HTML",
     "description": "Convert Markdown to HTML format. Automatic parsing and formatting. Free, no registration.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/markdown-to-html-converter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert Markdown to HTML?",
-      "html": "<p class=\"text-mid mb-4\">MARKDOWN is a widely used file format with broad compatibility across devices and software. However, depending on your use case, converting to HTML can offer significant advantages — whether it's smaller file sizes, better quality preservation, broader platform support, or specific feature requirements.</p><p class=\"text-mid mb-4\">This free online converter transforms your MARKDOWN files into HTML format directly in the browser. No files are uploaded to any server — the entire conversion process happens locally on your device using modern browser APIs. This means your data stays private and secure at all times.</p><p class=\"text-mid\">You can convert as many files as you need with no daily limits, no registration, and no watermarks. Simply drag and drop your files, adjust quality settings if available, and download the results individually or all at once.</p>",
+      "html": "<p class=\"text-mid mb-4\">Markdown is great for writing, but web browsers, email clients, and CMS platforms need HTML. Converting Markdown to HTML transforms readable plain text into properly structured HTML ready for publishing on websites, blogs, newsletters, and documentation portals.</p><p class=\"text-mid mb-4\">Markdown to HTML conversion is essential for static site generators, web publishing workflows, email marketing (converting Markdown drafts to HTML emails), and embedding content in CMS platforms that accept HTML input.</p><p class=\"text-mid mb-4\">The converter supports standard Markdown syntax: headings (#), bold/italic (**bold**, *italic*), links, images, ordered and unordered lists, code blocks (fenced and indented), blockquotes, horizontal rules, and tables. Output is clean, semantic HTML without unnecessary wrapper elements.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no tracking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs — fast and works offline after loading."
+          "description": "All processing happens locally using modern browser APIs - fast and works offline after loading."
         }
       ]
     },
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How much can you save by converting MARKDOWN to HTML?",
-      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
+      "title": "How does Markdown to HTML conversion work?",
+      "html": "<p class=\"text-mid mb-4\">Markdown is a lightweight markup language that uses simple symbols for formatting: # for headings, ** for bold, * for italic, - for lists, and [text](url) for links. The converter parses these Markdown conventions and generates the corresponding HTML tags.</p><p class=\"text-mid mb-4\">For example, # Heading becomes &lt;h1&gt;Heading&lt;/h1&gt;, **bold** becomes &lt;strong&gt;bold&lt;/strong&gt;, and bullet lists become &lt;ul&gt;&lt;li&gt; structures. The converter supports the full CommonMark specification including code blocks, blockquotes, tables, and inline HTML.</p><p class=\"text-mid\">Markdown to HTML conversion is essential for publishing blog posts, documentation, README files, and any content written in Markdown that needs to be displayed on a website. The conversion runs entirely in your browser — no data is sent to any server.</p>"
     },
     {
       "type": "gap",
@@ -208,29 +208,38 @@
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Very large files",
-          "description": "Converting images above 4000×4000 pixels may be slower and strain the browser. If processing many large files, consider splitting them into batches of 10–20."
+          "title": "Heading structure",
+          "description": "Use # through ###### for headings (h1–h6). Proper heading hierarchy improves both accessibility and SEO of the resulting HTML page."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Already compressed files",
-          "description": "If the original MARKDOWN file was already heavily compressed, converting to HTML may not yield significant size savings. Try different quality settings."
+          "title": "Code blocks",
+          "description": "Fenced code blocks (```) are converted to &lt;pre&gt;&lt;code&gt; elements. You can specify a language after the opening backticks for syntax highlighting hints."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparency",
-          "description": "The HTML format does not support transparency. Transparent areas will be replaced with a white background. Consider PNG or WebP for transparency."
+          "icon": "RiCodeLine",
+          "title": "Inline HTML",
+          "description": "Markdown allows inline HTML. Any HTML tags in your Markdown are passed through to the output as-is, so you can mix Markdown and HTML freely."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Keep your originals",
-          "description": "Lossy conversion is irreversible. Keep copies of original MARKDOWN files so you can re-convert with different settings if needed."
+          "icon": "RiFileTextLine",
+          "title": "Tables",
+          "description": "Pipe-delimited tables (| col1 | col2 |) are converted to proper HTML &lt;table&gt; elements with &lt;thead&gt; and &lt;tbody&gt; sections."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What Markdown syntax is supported?",
+      "html": "<p class=\"text-mid mb-4\">The converter supports standard Markdown (CommonMark) syntax including:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – # through ###### (h1–h6)</li><li><strong>Text formatting</strong> – **bold**, *italic*, ~~strikethrough~~, `inline code`</li><li><strong>Links and images</strong> – [text](url) and ![alt](src)</li><li><strong>Lists</strong> – unordered (-, *, +) and ordered (1., 2., 3.)</li><li><strong>Code blocks</strong> – fenced (```) and indented (4 spaces)</li><li><strong>Blockquotes</strong> – > prefix</li><li><strong>Tables</strong> – pipe-separated with header row</li><li><strong>Horizontal rules</strong> – ---, ***, ___</li></ul><p class=\"text-mid mt-3\">Output is clean, semantic HTML without unnecessary wrapper divs. Ready to paste into any CMS, email template, or web page.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets."
         },
         {
-          "question": "Is converting MARKDOWN to HTML safe for my files?",
-          "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
+          "question": "Is converting Markdown to HTML safe?",
+          "answer": "Yes. The entire conversion runs locally in your browser. Your data is never sent to any server. When you close the page, all data is automatically cleared from memory."
         },
         {
-          "question": "Can I convert multiple MARKDOWN files at once?",
-          "answer": "Yes. The tool supports batch conversion with no file limit. Drag all files onto the converter or select them from your device."
+          "question": "Which Markdown syntax is supported?",
+          "answer": "The converter supports the full CommonMark specification, including headings, bold, italic, links, images, lists, code blocks, blockquotes, tables, and horizontal rules. GitHub Flavored Markdown extensions like task lists and strikethrough are also supported."
         },
         {
-          "question": "Is HTML supported by all browsers?",
-          "answer": "The HTML format is widely supported by modern browsers: Chrome, Firefox, Safari, Edge, and Opera."
+          "question": "Can I use the HTML output on my website?",
+          "answer": "Yes. The output is clean, semantic HTML that you can paste directly into any website, CMS, email template, or web application. You can style it with your own CSS."
         }
       ]
     },

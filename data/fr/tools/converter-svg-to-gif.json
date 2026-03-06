@@ -2,14 +2,14 @@
   "toolKey": "svgToGif",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur SVG en GIF — SVG GIF",
-    "description": "Convertissez les graphiques vectoriels SVG en format raster GIF. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
+    "title": "Convertisseur SVG en GIF - SVG GIF",
+    "description": "Convertissez les graphiques vectoriels SVG en format raster GIF. Outil gratuit dans le navigateur - sans inscription, sans limite, confidentialité totale.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-svg-en-gif"
   },
   "hero": {
     "title": "Convertisseur SVG en GIF",
-    "description": "Convertissez les graphiques vectoriels SVG en format raster GIF. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
+    "description": "Convertissez les graphiques vectoriels SVG en format raster GIF. Outil gratuit dans le navigateur - sans inscription, sans limite, confidentialité totale.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur SVG en GIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les graphiques vectoriels SVG en format raster GIF. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
+      "description": "Convertissez les graphiques vectoriels SVG en format raster GIF. Outil gratuit dans le navigateur - sans inscription, sans limite, confidentialité totale.",
       "featureList": ["Conversion en GIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
       "alternateName": ["Convertir SVG en GIF", "Conversion SVG vers GIF", "Convertisseur SVG en GIF gratuit"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Régler la qualité",
-          "text": "Ajustez le curseur de qualite GIF — des valeurs plus basses donnent des fichiers plus petits."
+          "text": "Ajustez le curseur de qualite GIF - des valeurs plus basses donnent des fichiers plus petits."
         },
         {
           "position": 3,
           "name": "Convertir",
-          "text": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+          "text": "Cliquez sur Convertir - les fichiers sont traites localement dans votre navigateur."
         },
         {
           "position": 4,
           "name": "Telecharger",
-          "text": "Telechargez les fichiers GIF — individuellement ou tous a la fois."
+          "text": "Telechargez les fichiers GIF - individuellement ou tous a la fois."
         }
       ]
     }
@@ -299,6 +299,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting SVG images to GIF reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",

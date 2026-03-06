@@ -1,0 +1,289 @@
+{
+  "toolKey": "celsiusToFahrenheit",
+  "locale": "ro",
+  "metadata": {
+    "title": "°C în °F – convertor",
+    "description": "Convertiți Celsius în Fahrenheit și invers. Rezultate instantanee.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-celsius-in-fahrenheit"
+  },
+  "hero": {
+    "title": "°C în °F",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-celsius-in-fahrenheit",
+      "label": "°C în °F"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "°C în °F – convertor",
+      "alternateName": ["°C în °F"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți Celsius în Fahrenheit și invers. Rezultate instantanee.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: °C în °F?",
+      "html": "<p class=\"text-mid mb-4\">Celsius (°C) ist die Temperaturskala, die von den meisten Ländern weltweit verwendet wird. Fahrenheit (°F) wird hauptsächlich in den USA verwendet. Die conversiesformel lautet: °F = °C × 9/5 + 32.</p><p class=\"text-mid mb-4\">Wichtige Referenzpunkte: Wasser gefriert bei 0°C (32°F) und siedet bei 100°C (212°F). Normale Körpertemperatur: 36,6°C (97,9°F). Raumtemperatur: 20–22°C (68–72°F).</p><p class=\"text-mid mb-4\">Diese conversie ist wichtig bei Reisen in die USA, amerikanischen Rezepten (Ofentemperaturen in °F), US-Wetterberichten und medizinischen Temperaturangaben.</p><p class=\"text-mid\">Toate calculele se fac local, în browserul dvs. — nimic nu este trimis la vreun server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "°C în °F – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiSunLine",
+          "title": "Pogoda w USA",
+          "description": "Amerykańskie prognozy pogody podają temperaturę w Fahrenheitach – przelicz na Celsjusza."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Gotowanie",
+          "description": "Amerykańskie przepisy podają temperatury piekarnika w °F: 350°F = 177°C, 400°F = 204°C."
+        },
+        {
+          "icon": "RiHeartPulseLine",
+          "title": "Medycyna",
+          "description": "Temperatura ciała 98,6°F to norma w USA. Gorączka zaczyna się od 100,4°F (38°C)."
+        },
+        {
+          "icon": "RiFlaskLine",
+          "title": "Nauka i technika",
+          "description": "Wiele publikacji naukowych z USA podaje temperatury w Fahrenheitach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">Die Formel lautet: °F = °C × 9/5 + 32. Umgekehrt: °C = (°F − 32) × 5/9.</p><p class=\"text-mid mb-4\">Die Skalen schneiden sich bei −40°: −40°C = −40°F. Dies ist die einzige Temperatur, bei der beide Skalen denselben Wert haben.</p><p class=\"text-mid\">Calcul mental rapid: Verdoppeln Sie den Celsius-Wert, ziehen Sie 10% ab, addieren Sie 32. Beispiel: 25°C → 50 − 5 + 32 = 77°F.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Water freezes: 0°C = 32°F. Water boils: 100°C = 212°F.</li><li>Room temperature: 20°C = 68°F. Comfortable range: 20–24°C (68–75°F).</li><li>Body temperature: 36.6°C = 97.9°F. Fever threshold: 38°C = 100.4°F.</li><li>Oven temperatures: 180°C = 356°F, 200°C = 392°F, 220°C = 428°F.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Celsius vs Fahrenheit – comparație",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Celsius (°C)"
+        },
+        {
+          "id": "unit2",
+          "name": "Fahrenheit (°F)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistem",
+          "values": {
+            "unit1": "Metric (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Freezing point",
+          "values": {
+            "unit1": "0°C",
+            "unit2": "32°F"
+          }
+        },
+        {
+          "name": "Boiling point",
+          "values": {
+            "unit1": "100°C",
+            "unit2": "212°F"
+          }
+        },
+        {
+          "name": "Used by",
+          "values": {
+            "unit1": "Majoritatea țărilor",
+            "unit2": "USA, some Caribbean"
+          }
+        },
+        {
+          "name": "Body temp",
+          "values": {
+            "unit1": "36.6°C",
+            "unit2": "97.9°F"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Cum convertesc Celsius in Fahrenheit um?",
+          "answer": "Înm ulțiți mit 9/5 (oder 1,8) und addieren Sie 32. Beispiel: 25°C × 1,8 + 32 = 77°F."
+        },
+        {
+          "question": "Ce este 0°C in Fahrenheit?",
+          "answer": "0°C = 32°F. Dies ist der Gefrierpunkt von Wasser."
+        },
+        {
+          "question": "Ce este 100°F in Celsius?",
+          "answer": "100°F = 37,78°C. Etwas über der normalen Körpertemperatur."
+        },
+        {
+          "question": "Bei welcher Temperatur sind Celsius und Fahrenheit gleich?",
+          "answer": "Bei −40°: −40°C = −40°F. Dies ist der einzige Punkt, an dem beide Skalen denselben Wert haben."
+        },
+        {
+          "question": "Ab wann hat man Fieber in Fahrenheit?",
+          "answer": "Fieber wird typischerweise ab einer Körpertemperatur über 100,4°F (38°C) definiert."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Da. Toate calculele se fac în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "°C în °F – Arteon",
+      "defaultSubject": "Feedback: celsius-to-fahrenheit"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

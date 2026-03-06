@@ -23,7 +23,7 @@
     "title": "Tento nástroj funguje na větší obrazovce",
     "description": "Pro pohodlné použití tohoto nástroje jej otevřete na notebooku, stolním počítači nebo tabletu v režimu na šířku.",
     "tipTitle": "Tip",
-    "tipText": "Pokud používáte tablet, přepněte do režimu na šířku — jakmile bude okno dostatečně široké, nástroj se automaticky načte."
+    "tipText": "Pokud používáte tablet, přepněte do režimu na šířku - jakmile bude okno dostatečně široké, nástroj se automaticky načte."
   },
   "cookie": {
     "title": "Cookies a soukromí",
@@ -109,6 +109,20 @@
     "text": "Aktualizace generátoru e-mailového podpisu – objevte nové funkce",
     "linkText": "nástroje"
   },
+  "search": {
+    "placeholder": "Hledat nástroje, stránky...",
+    "emptyHint": "Zadejte frázi, např. \"generátor favicon\", \"editor obrázků\" nebo \"kontakt\" pro nalezení související stránky.",
+    "noResults": "Žádné výsledky pro",
+    "contactUs": "Kontaktujte nás",
+    "ariaLabel": "Vyhledávání",
+    "ariaClose": "Zavřít",
+    "ariaSearch": "Hledat",
+    "categoryServices": "Služby",
+    "categoryTools": "Nástroje",
+    "categoryEducation": "Vzdělávání",
+    "categoryProjects": "Projekty",
+    "categoryPages": "Stránky"
+  },
   "imageConverter": {
     "addFiles": "Přidat soubory",
     "dragDrop": "Přetáhněte soubory {{format}} sem",
@@ -150,9 +164,31 @@
     "errorCanvas": "Prohlížeč nepodporuje canvas.",
     "errorGeneration": "Nepodařilo se vygenerovat soubor {{format}}.",
     "errorTooLarge": "Soubor je příliš velký (max 100 MB).",
-    "errorWrongFormat": "Přidejte soubory {{format}} — ostatní formáty jsou přeskočeny.",
+    "errorWrongFormat": "Přidejte soubory {{format}} - ostatní formáty jsou přeskočeny.",
     "errorNoFiles": "Přidejte alespoň jeden soubor {{format}}.",
-    "errorAvifNotSupported": "Váš prohlížeč nepodporuje kódování AVIF. Použijte Chrome, Edge nebo Firefox."
+    "errorAvifNotSupported": "Váš prohlížeč nepodporuje kódování AVIF. Použijte Chrome, Edge nebo Firefox.",
+    "pasteOrTypeData": "Vložte nebo zadejte data ve formátu {{format}}",
+    "fileReadError": "Nepodařilo se přečíst soubor.",
+    "uploadFile": "Nahrát soubor {{format}}",
+    "conversionResult": "Výsledek převodu ({{format}})",
+    "copied": "✓ Zkopírováno",
+    "copy": "Kopírovat",
+    "onlyImageFiles": "Podporovány jsou pouze obrázkové soubory (JPG, PNG, WebP, SVG, GIF, BMP).",
+    "base64PasteEmpty": "Vložte Base64 řetězec obrázku.",
+    "base64Invalid": "Neplatný Base64 řetězec - nejedná se o obrázek.",
+    "imageHeading": "Obrázek",
+    "dragImageHere": "Přetáhněte obrázek sem",
+    "fileLabel": "Soubor:",
+    "base64Placeholder": "Base64 kód se zde zobrazí po přidání obrázku",
+    "base64PastePlaceholder": "Vložte Base64 řetězec obrázku (s prefixem data:image/... nebo bez něj)",
+    "decodeBtn": "Dekódovat",
+    "imagePreview": "Náhled obrázku",
+    "base64DecodeHint": "Vložte Base64 a klikněte na Dekódovat pro zobrazení náhledu",
+    "enterValue": "Zadejte {{label}}...",
+    "resultIn": "Výsledek v {{label}}...",
+    "swapOrder": "Prohodit pořadí",
+    "copyResult": "Kopírovat výsledek",
+    "pageLabel": "str."
   },
   "errorPages": {
     "notFound": {

@@ -1,0 +1,273 @@
+{
+  "toolKey": "hexToRgb",
+  "locale": "fi",
+  "metadata": {
+    "title": "HEX RGB:ksi – muunnin",
+    "description": "Muunna HEX-värikoodit RGB:ksi ja päinvastoin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/hex-rgb-muunnin"
+  },
+  "hero": {
+    "title": "HEX RGB:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/hex-rgb-muunnin",
+      "label": "HEX RGB:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "HEX RGB:ksi – muunnin",
+      "alternateName": ["HEX RGB:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna HEX-värikoodit RGB:ksi ja päinvastoin.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin tarvitset: HEX RGB:ksi?",
+      "html": "<p class=\"text-mid mb-4\">HEX-Farben (#FF5733) und RGB (rgb(255, 87, 51)) stellen dieselben Farben in unterschiedlicher Notation dar. HEX ist in CSS und Design-Tools üblich, RGB in der Programmierung.</p><p class=\"text-mid mb-4\">Jede HEX-Farbe hat 6 Ziffern: die ersten 2 für Rot (00–FF), die nächsten 2 für Grün, die letzten 2 für Blau. RGB verwendet Dezimalwerte 0–255.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "HEX RGB:ksi – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät muunninta",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään. Voit käyttää pistettä tai pilkkua.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä – ilman napsautusta.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai käännä",
+          "description": "Napsauta Kopioi tulos tai käytä Käännä-painiketta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web-kehitys",
+          "description": "Konwertuj <code>#3B82F6</code> na <code>rgb(59, 130, 246)</code> w arkuszach stylów."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Värienhallinta",
+          "description": "Eksport kolorów z Figma/Sketch na wartości CSS."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Dostępność",
+          "description": "Obliczanie kontrastu WCAG wymaga wartości RGB."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Palety kolorów",
+          "description": "Modyfikowanie poszczególnych kanałów (R, G, B) do tworzenia wariantów."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi tietosuoja",
+          "description": "Kaikki laskelmat tehdään paikallisesti selaimessasi. Mitään tietoja ei lähetetä palvelimelle."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy välittömästi kirjoittaessasi – ei tarvitse napsauttaa mitään."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Käännä-painikkeella voit muuntaa kumpaankin suuntaan yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Valmis taulukko usein muunnetuilla arvoilla ja kontekstuaalisilla kuvauksilla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">HEX nutzt Basis-16: Jedes Ziffernpaar (00–FF) wird in Dezimal 0–255 umgerechnet. #FF5733: FF=255 (Rot), 57=87 (Grün), 33=51 (Blau).</p><p class=\"text-mid\">HEX-Kurzform: #F53 wird zu #FF5533.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Käytännön vinkkejä",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = black. #FFFFFF = rgb(255,255,255) = white.</li><li>#FF0000 = pure red. #00FF00 = pure green. #0000FF = pure blue.</li><li>For opacity: use rgba(255, 87, 51, 0.5) — HEX doesn't natively support alpha (except 8-digit HEX: #FF573380).</li><li>CSS supports both: color: #FF5733 and color: rgb(255, 87, 51) are identical.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HEX vs RGB – vertailu",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "HEX"
+        },
+        {
+          "id": "unit2",
+          "name": "RGB",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Format",
+          "values": {
+            "unit1": "#RRGGBB",
+            "unit2": "rgb(R, G, B)"
+          }
+        },
+        {
+          "name": "Values",
+          "values": {
+            "unit1": "00–FF (hex)",
+            "unit2": "0–255 (decimal)"
+          }
+        },
+        {
+          "name": "Opacity",
+          "values": {
+            "unit1": "8-digit (#RRGGBBAA)",
+            "unit2": "rgba(R, G, B, A)"
+          }
+        },
+        {
+          "name": "Shorthand",
+          "values": {
+            "unit1": "#RGB (3 digits)",
+            "unit2": "No shorthand"
+          }
+        },
+        {
+          "name": "Used in",
+          "values": {
+            "unit1": "CSS, design tools",
+            "unit2": "CSS, programming"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie rechnet man HEX in RGB um?",
+          "answer": "Rechnen Sie jedes Hex-Paar in Dezimal um. #FF5733: FF=255, 57=87, 33=51 → rgb(255, 87, 51)."
+        },
+        {
+          "question": "Tehdäänkö laskelmat paikallisesti?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "HEX RGB:ksi – Arteon",
+      "defaultSubject": "Palaute: hex-to-rgb"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

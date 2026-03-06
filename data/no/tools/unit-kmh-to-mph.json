@@ -1,0 +1,273 @@
+{
+  "toolKey": "kmhToMph",
+  "locale": "no",
+  "metadata": {
+    "title": "Km/t til mph – kalkulator",
+    "description": "Regn om km/t til mph og omvendt.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/no/verktoy/kmh-til-mph-kalkulator"
+  },
+  "hero": {
+    "title": "Km/t til mph",
+    "description": "Denne kalkulatoren regner om umiddelbart. Skriv inn en verdi og resultatet vises med en gang.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/kmh-til-mph-kalkulator",
+      "label": "km/t til mph"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Km/t til mph – kalkulator",
+      "alternateName": ["Km/t til mph"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Regn om km/t til mph og omvendt.",
+      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+    },
+    "howTo": {
+      "name": "Slik bruker du kalkulatoren",
+      "description": "Hurtigguide for bruk av kalkulatoren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Skriv inn verdi",
+          "text": "Skriv inn et tall i inputfeltet til venstre."
+        },
+        {
+          "name": "Les av resultatet",
+          "text": "Konverteringsresultatet vises umiddelbart i feltet ved siden av."
+        },
+        {
+          "name": "Kopier eller snu",
+          "text": "Klikk på Kopier resultat eller på Snu for å konvertere i motsatt retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Når bør man omregne km/t til mph?",
+      "html": "<p class=\"text-mid mb-4\">km/t er den metriske hastighetsenheten. mph brukes i USA og UK. 1 km/t = 0,621 mph.</p><p class=\"text-mid\">Alle beregninger kjører lokalt i nettleseren din.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "KM/H to MPH converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruker du omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Skriv inn en verdi",
+          "description": "Tast inn et tall i inntastingsfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Les resultatet",
+          "description": "Resultatet vises umiddelbart.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopier eller bytt",
+          "description": "Kopier resultatet eller bytt omregningsretning.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Når er denne kalkulatoren nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Utenlandsreiser",
+          "description": "Fartsgrenser: 65 mph = 105 km/t."
+        },
+        {
+          "icon": "RiDashboardLine",
+          "title": "Biler",
+          "description": "0–100 km/t vs 0–60 mph."
+        },
+        {
+          "icon": "RiFlagLine",
+          "title": "Sport",
+          "description": "Baseball: 100 mph = 161 km/t."
+        },
+        {
+          "icon": "RiWindyLine",
+          "title": "Meteorologi",
+          "description": "Vindhastighet i mph eller km/t."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne omregneren spesiell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Full personvern",
+          "description": "Alle beregninger kjører lokalt i nettleseren din."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Sanntidsresultater",
+          "description": "Resultatet oppdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Toveis omregning",
+          "description": "Omregn begge veier med ett klikk."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referansetabell",
+          "description": "Tabell med vanlige verdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">1 mile = 1,609 km. km/t til mph: del med 1,60934. Tommelfingerregel: × 0,6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">1 mile = 1,609 km. km/t til mph: del med 1,60934. Tommelfingerregel: × 0,6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "km/t vs mph",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "km/t"
+        },
+        {
+          "id": "unit2",
+          "name": "mph",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisk",
+            "unit2": "Imperisk"
+          }
+        },
+        {
+          "name": "Forhold",
+          "values": {
+            "unit1": "1 km/t",
+            "unit2": "0,621 mph"
+          }
+        },
+        {
+          "name": "Skilt",
+          "values": {
+            "unit1": "Internasjonalt",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Speedometer",
+          "values": {
+            "unit1": "EU",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Luftfart",
+          "values": {
+            "unit1": "Ikke standard",
+            "unit2": "Ikke standard (knop)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange mph er 100 km/t?",
+          "answer": "100 km/t = 62,14 mph."
+        },
+        {
+          "question": "Kjører beregningene lokalt?",
+          "answer": "Ja. Alle beregninger kjører i nettleseren din."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "km/t til mph – Arteon",
+      "defaultSubject": "Tilbakemelding: kmh-to-mph"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "toolKey": "kgToLbs",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur kilogrammes en livres",
+    "description": "Convertissez kg en lbs et vice versa. Essentiel pour le fitness, les voyages et l'expédition.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-kg-en-livres"
+  },
+  "hero": {
+    "title": "Convertir kilogrammes en livres",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-kg-en-livres",
+      "label": "kg en lbs"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur kilogrammes en livres",
+      "alternateName": ["Convertir kilogrammes en livres"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez kg en lbs et vice versa. Essentiel pour le fitness, les voyages et l'expédition.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des kilogrammes en livres ?",
+      "html": "<p class=\"text-mid mb-4\">Le kilogramme (kg) est l’unité de base de masse du système métrique. La livre (lb) est l’unité standard de masse du système impérial, utilisée aux États-Unis. 1 kg = 2,20462 lb.</p><p class=\"text-mid mb-4\">Cette conversion est nécessaire pour les achats aux États-Unis (aliments en livres), les poids en salle de sport américaine (haltères en lbs), les bagages aériens et les fiches techniques de véhicules.</p><p class=\"text-mid mb-4\">Exemples : 70 kg = 154,3 lb, 100 kg = 220,5 lb, 1 lb = 453,6 g.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur kilogrammes en livres – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiScales3Line",
+          "title": "Salle de sport",
+          "description": "Les poids aux États-Unis sont en livres. Disque de 45 lb = 20,4 kg."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Bagages aériens",
+          "description": "Certaines compagnies indiquent les limites en livres : 50 lb = 22,7 kg."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Cuisine",
+          "description": "Les recettes américaines utilisent livres et onces pour viande et farine."
+        },
+        {
+          "icon": "RiMedicineBottleLine",
+          "title": "Poids corporel",
+          "description": "Aux États-Unis, le poids s’exprime en livres : 150 lb = 68 kg."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 livre (avoirdupois) = 0,45359237 kg exactement. Pour convertir kg en lb, multipliez par 2,20462.</p><p class=\"text-mid mb-4\">Exemple : 80 kg × 2,20462 = 176,37 lb.</p><p class=\"text-mid\">Estimation rapide : multipliez les kg par 2,2.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 livre (avoirdupois) = 0,45359237 kg exactement. Pour convertir kg en lb, multipliez par 2,20462.</p><p class=\"text-mid mb-4\">Exemple : 80 kg × 2,20462 = 176,37 lb.</p><p class=\"text-mid\">Estimation rapide : multipliez les kg par 2,2.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilogramme vs Livre – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilogramme (kg)"
+        },
+        {
+          "id": "unit2",
+          "name": "Livre (lb)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Système",
+          "values": {
+            "unit1": "Métrique (SI)",
+            "unit2": "Impérial"
+          }
+        },
+        {
+          "name": "Valeur de base",
+          "values": {
+            "unit1": "1 000 g",
+            "unit2": "453,59 g"
+          }
+        },
+        {
+          "name": "Poids corporel",
+          "values": {
+            "unit1": "Europe, Amérique latine",
+            "unit2": "États-Unis, partiellement UK"
+          }
+        },
+        {
+          "name": "Science",
+          "values": {
+            "unit1": "Standard SI",
+            "unit2": "Non utilisée"
+          }
+        },
+        {
+          "name": "Sport",
+          "values": {
+            "unit1": "Disques en kg (Europe)",
+            "unit2": "Disques en lb (USA)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de livres fait 1 kg ?",
+          "answer": "1 kg = 2,20462 livres."
+        },
+        {
+          "question": "Combien de kg fait 1 livre ?",
+          "answer": "1 livre = 0,4536 kg = 453,6 grammes."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "kg na funty – Arteon",
+      "defaultSubject": "Feedback : kg-to-lbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

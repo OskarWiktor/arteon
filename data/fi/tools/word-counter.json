@@ -140,7 +140,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten luettavuusarvio toimii",
-      "html": "<p class=\"text-mid mb-4\">Työkalu laskee luettavuuspisteet keskimääräisen virkkeen pituuden ja keskimääräisen tavumäärän sanakohtaisesti. Tulos näytetään asteikolla 0–100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>80–100</strong> — Erittäin helppo. Lyhyet virkkeet, yleiset sanat.</li><li><strong>60–79</strong> — Helppo. Keskusteleva kieli laajalle yleisölle.</li><li><strong>40–59</strong> — Kohtalainen. Liike- ja journalistiset tekstit.</li><li><strong>20–39</strong> — Vaikea. Pitkät virkkeet, erikoissanasto.</li><li><strong>0–19</strong> — Erittäin vaikea. Akateemiset ja oikeudelliset tekstit.</li></ul><p class=\"text-mid mt-3\">Suomen kielelle työkalu käyttää LIX-indeksiä (Björnsson), joka perustuu sanojen pituuteen tavujen sijaan. Tämä sopii paremmin suomen agglutinatiiviseen rakenteeseen. Hyvä tavoite verkkosisällölle on 50–70.</p>"
+      "html": "<p class=\"text-mid mb-4\">Työkalu laskee luettavuuspisteet keskimääräisen virkkeen pituuden ja keskimääräisen tavumäärän sanakohtaisesti. Tulos näytetään asteikolla 0–100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>80–100</strong> - Erittäin helppo. Lyhyet virkkeet, yleiset sanat.</li><li><strong>60–79</strong> - Helppo. Keskusteleva kieli laajalle yleisölle.</li><li><strong>40–59</strong> - Kohtalainen. Liike- ja journalistiset tekstit.</li><li><strong>20–39</strong> - Vaikea. Pitkät virkkeet, erikoissanasto.</li><li><strong>0–19</strong> - Erittäin vaikea. Akateemiset ja oikeudelliset tekstit.</li></ul><p class=\"text-mid mt-3\">Suomen kielelle työkalu käyttää LIX-indeksiä (Björnsson), joka perustuu sanojen pituuteen tavujen sijaan. Tämä sopii paremmin suomen agglutinatiiviseen rakenteeseen. Hyvä tavoite verkkosisällölle on 50–70.</p>"
     },
     {
       "type": "gap",
@@ -170,7 +170,7 @@
         {
           "icon": "RiChatQuoteLine",
           "title": "Lauseet",
-          "description": "Lauseiden määrä tekstissä. Auttaa arvioimaan monimutkaisuutta ja luettavuutta — lyhyemmät lauseet ovat helpompia omaksua."
+          "description": "Lauseiden määrä tekstissä. Auttaa arvioimaan monimutkaisuutta ja luettavuutta - lyhyemmät lauseet ovat helpompia omaksua."
         },
         {
           "icon": "RiParagraph",
@@ -185,7 +185,7 @@
         {
           "icon": "RiRulerLine",
           "title": "Keskimääräinen sanan pituus",
-          "description": "Keskimääräinen merkkimäärä per sana. Tekstin monimutkaisuuden mittari — tekniset tekstit sisältävät pidempiä sanoja."
+          "description": "Keskimääräinen merkkimäärä per sana. Tekstin monimutkaisuuden mittari - tekniset tekstit sisältävät pidempiä sanoja."
         },
         {
           "icon": "RiTimeLine",
@@ -329,7 +329,7 @@
     {
       "type": "sectionInfo",
       "title": "Miksi luettavuus on tärkeää SEO:lle",
-      "html": "<p class=\"text-mid mb-4\">Hakukoneet priorisoivat sisältöä, joka vastaa käyttäjän hakuaikomusta. Luettava teksti vaikuttaa suoraan tärkeisiin sitoutumismittareihin:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Sivulla vietetty aika</strong> — kävijät viipyvät pidempään sivuilla, joita on helppo lukea. Google tulkitsee pidemmät vierailut laatusignaaliksi.</li><li><strong>Välitön poistumisprosentti</strong> — tiheä, vaikealukuinen teksti karkottaa kävijöitä. Luettavuuspistemäärä alle 30 yleissivulla korreloi usein korkean poistumisprosentin kanssa.</li><li><strong>Esitellyt katkelmat</strong> — Google valitsee selkeitä, ytimekkäitä vastauksia esillepantuihin katkelmiin. Lyhyemmät virkkeet ja suora kieli lisäävät mahdollisuutta tulla valituksi.</li><li><strong>Mobiililuettavuus</strong> — pienillä näytöillä pitkät virkkeet ja monimutkainen sanasto ovat vielä vaikeampia seurata. Pisteet 60+ parantavat mobiilikokomusta.</li></ul><p class=\"text-mid mt-3\">Hyvä tavoite verkkosisällölle on luettavuuspisteet 60–70 — riittävän selkeä useimmille lukijoille, riittävän yksityiskohtainen asiantuntemuksen välittämiseen.</p>"
+      "html": "<p class=\"text-mid mb-4\">Hakukoneet priorisoivat sisältöä, joka vastaa käyttäjän hakuaikomusta. Luettava teksti vaikuttaa suoraan tärkeisiin sitoutumismittareihin:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Sivulla vietetty aika</strong> - kävijät viipyvät pidempään sivuilla, joita on helppo lukea. Google tulkitsee pidemmät vierailut laatusignaaliksi.</li><li><strong>Välitön poistumisprosentti</strong> - tiheä, vaikealukuinen teksti karkottaa kävijöitä. Luettavuuspistemäärä alle 30 yleissivulla korreloi usein korkean poistumisprosentin kanssa.</li><li><strong>Esitellyt katkelmat</strong> - Google valitsee selkeitä, ytimekkäitä vastauksia esillepantuihin katkelmiin. Lyhyemmät virkkeet ja suora kieli lisäävät mahdollisuutta tulla valituksi.</li><li><strong>Mobiililuettavuus</strong> - pienillä näytöillä pitkät virkkeet ja monimutkainen sanasto ovat vielä vaikeampia seurata. Pisteet 60+ parantavat mobiilikokomusta.</li></ul><p class=\"text-mid mt-3\">Hyvä tavoite verkkosisällölle on luettavuuspisteet 60–70 - riittävän selkeä useimmille lukijoille, riittävän yksityiskohtainen asiantuntemuksen välittämiseen.</p>"
     },
     {
       "type": "gap",
@@ -348,7 +348,7 @@
         {
           "icon": "RiTextWrap",
           "title": "10 muokkaustyökalua",
-          "description": "Kirjainkoon muunnos, välilyöntien, tyhjien rivien ja kaksoiskappalerivien poisto sekä lajittelu — ilman lisäohjelmistoa."
+          "description": "Kirjainkoon muunnos, välilyöntien, tyhjien rivien ja kaksoiskappalerivien poisto sekä lajittelu - ilman lisäohjelmistoa."
         },
         {
           "icon": "RiUserLine",
@@ -379,7 +379,7 @@
     {
       "type": "sectionInfo",
       "title": "Ihanteellinen tekstipituus suomalaisille verkkosivuille",
-      "html": "<p class=\"text-mid mb-4\">Suomenkieliset blogikirjoitukset menestyvät hakutuloksissa parhaiten 1 200–2 000 sanan pituisina. Lyhyemmät kirjoitukset (600–1 000 sanaa) toimivat käytännön oppaisiin ja vastauksia tiettyihin kysymyksiin. Alle 500 sanan kirjoitukset saavuttavat harvoin korkeita sijoituksia, ellei ne vastaa hyvin täsmälliseen hakukyselyyn.</p><p class=\"text-mid mb-4\">Tuotekuvaukset suomalaisissa verkkokaupoissa tulisi olla 150–300 sanaa pitkiä. Tori.fi-ilmoitusten otsikoissa on noin 70 merkin raja. Kategoriakuvaukset 200–400 sanalla auttavat hakukoneita ymmärtämään sivun aihepiiriä. Verkkokauppa.comissa ja muilla suomalaisilla alustoilla yksityiskohtaiset tuotekuvaukset ovat kilpailuetu.</p><p class=\"text-mid\">Palvelusivut (hammaslääkärivastaanotto, lakiasiaintoimisto, remonttiyritys) tarvitsevat 500–800 sanaa konkreettisella sisällöllä: palveluvalikoima, toiminta-alue, yhteystiedot. Sanamäärä yksinään ei ole laadun mittari — tiivis 600 sanan teksti hyödyllisellä sisällöllä päihittää paisutetun 2 000 sanan tekstin ilman lisäarvoa.</p>"
+      "html": "<p class=\"text-mid mb-4\">Suomenkieliset blogikirjoitukset menestyvät hakutuloksissa parhaiten 1 200–2 000 sanan pituisina. Lyhyemmät kirjoitukset (600–1 000 sanaa) toimivat käytännön oppaisiin ja vastauksia tiettyihin kysymyksiin. Alle 500 sanan kirjoitukset saavuttavat harvoin korkeita sijoituksia, ellei ne vastaa hyvin täsmälliseen hakukyselyyn.</p><p class=\"text-mid mb-4\">Tuotekuvaukset suomalaisissa verkkokaupoissa tulisi olla 150–300 sanaa pitkiä. Tori.fi-ilmoitusten otsikoissa on noin 70 merkin raja. Kategoriakuvaukset 200–400 sanalla auttavat hakukoneita ymmärtämään sivun aihepiiriä. Verkkokauppa.comissa ja muilla suomalaisilla alustoilla yksityiskohtaiset tuotekuvaukset ovat kilpailuetu.</p><p class=\"text-mid\">Palvelusivut (hammaslääkärivastaanotto, lakiasiaintoimisto, remonttiyritys) tarvitsevat 500–800 sanaa konkreettisella sisällöllä: palveluvalikoima, toiminta-alue, yhteystiedot. Sanamäärä yksinään ei ole laadun mittari - tiivis 600 sanan teksti hyödyllisellä sisällöllä päihittää paisutetun 2 000 sanan tekstin ilman lisäarvoa.</p>"
     },
     {
       "type": "gap",
@@ -388,7 +388,7 @@
     {
       "type": "sectionInfo",
       "title": "Standardisivu ja käännösnormit Suomessa",
-      "html": "<p class=\"text-mid mb-4\">Käännöstoimistot Suomessa laskuttavat sanaa tai standardisivua kohti. Yksi standardisivu vastaa 1 500 merkkiä välilyönteineen (noin 200–250 sanaa). Ennen tarjouspyyntöä liitä teksti laskuriin ja tarkista merkkimäärä välilyönteineen kustannusarvion laskemiseksi. 15 000 merkin teksti välilyönteineen vastaa 10 standardisivua.</p><p class=\"text-mid mb-4\">Suomalaiset kustantamot mittaavat käsikirjoituksia standardisivuina tai sanamäärinä. Toimittajat ja oikolukijat käyttävät merkkilaskuria arvioidakseen käsikirjoituksen laajuutta nopeasti ennen hinnan ehdottamista. Standardisivu on myös tavanomainen yksikkö toimitustyössä ja oikoluvussa.</p><p class=\"text-mid\">Suomalaiset yliopistot ilmoittavat opinnäytetyövaatimukset sanamäärinä. Kandidaatintutkielma käsittää tyypillisesti 8 000–12 000 sanaa, pro gradu -tutkielma 15 000–30 000 sanaa ja väitöskirja yli 50 000 sanaa. Vaatimukset vaihtelevat yliopistojen ja tiedekuntien välillä — tarkista aina oman koulutusohjelmasi opetussuunnitelma.</p>"
+      "html": "<p class=\"text-mid mb-4\">Käännöstoimistot Suomessa laskuttavat sanaa tai standardisivua kohti. Yksi standardisivu vastaa 1 500 merkkiä välilyönteineen (noin 200–250 sanaa). Ennen tarjouspyyntöä liitä teksti laskuriin ja tarkista merkkimäärä välilyönteineen kustannusarvion laskemiseksi. 15 000 merkin teksti välilyönteineen vastaa 10 standardisivua.</p><p class=\"text-mid mb-4\">Suomalaiset kustantamot mittaavat käsikirjoituksia standardisivuina tai sanamäärinä. Toimittajat ja oikolukijat käyttävät merkkilaskuria arvioidakseen käsikirjoituksen laajuutta nopeasti ennen hinnan ehdottamista. Standardisivu on myös tavanomainen yksikkö toimitustyössä ja oikoluvussa.</p><p class=\"text-mid\">Suomalaiset yliopistot ilmoittavat opinnäytetyövaatimukset sanamäärinä. Kandidaatintutkielma käsittää tyypillisesti 8 000–12 000 sanaa, pro gradu -tutkielma 15 000–30 000 sanaa ja väitöskirja yli 50 000 sanaa. Vaatimukset vaihtelevat yliopistojen ja tiedekuntien välillä - tarkista aina oman koulutusohjelmasi opetussuunnitelma.</p>"
     },
     {
       "type": "gap",
@@ -396,8 +396,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Luettavuus suomeksi — pitkät yhdyssanat ja agglutinatiivinen rakenne",
-      "html": "<p class=\"text-mid mb-4\">Suomi on agglutinatiivinen kieli, jossa sanoja muodostetaan liittämällä päätteitä ja johtimia peräkkäin. Sana &quot;hakukoneoptimointi&quot; on 18 merkkiä pitkä, ja pitempiä yhdyssanoja esiintyy arkikielessäkin. Tämä nostaa suomen keskimääräistä sananpituutta 7–8 merkkiin — selvästi enemmän kuin englannin 4–5 merkkiä. Flesch-kaava antaa siksi suomenkielisille teksteille luontaisesti matalammat pisteet kuin vastaavan vaikeustason englanninkielisille teksteille.</p><p class=\"text-mid mb-4\">Hyvä tavoite suomenkieliselle verkkosisällölle on Flesch-pistemäärä 45–60. Lyhyet lauseet (15–20 sanaa) ja lyhyet kappaleet (3–4 lausetta) parantavat luettavuutta näytöillä merkittävästi. Yli 25 sanan lauseet kannattaa jakaa kahdeksi lyhyemmäksi.</p><p class=\"text-mid\">Ainutlaatuisten sanojen suhde kokonaissanamäärään kertoo sanaston rikkaudesta. 1 000 sanan tekstissä 400–500 ainutlaatuista sanaa viittaa monipuoliseen sanastoon. Jos suhde laskee alle 30 %, teksti voi kuulostaa toistavalta — korvaa toistuvia sanoja synonyymeillä tai muotoile lauseita uudelleen toiston vähentämiseksi.</p>"
+      "title": "Luettavuus suomeksi - pitkät yhdyssanat ja agglutinatiivinen rakenne",
+      "html": "<p class=\"text-mid mb-4\">Suomi on agglutinatiivinen kieli, jossa sanoja muodostetaan liittämällä päätteitä ja johtimia peräkkäin. Sana &quot;hakukoneoptimointi&quot; on 18 merkkiä pitkä, ja pitempiä yhdyssanoja esiintyy arkikielessäkin. Tämä nostaa suomen keskimääräistä sananpituutta 7–8 merkkiin - selvästi enemmän kuin englannin 4–5 merkkiä. Flesch-kaava antaa siksi suomenkielisille teksteille luontaisesti matalammat pisteet kuin vastaavan vaikeustason englanninkielisille teksteille.</p><p class=\"text-mid mb-4\">Hyvä tavoite suomenkieliselle verkkosisällölle on Flesch-pistemäärä 45–60. Lyhyet lauseet (15–20 sanaa) ja lyhyet kappaleet (3–4 lausetta) parantavat luettavuutta näytöillä merkittävästi. Yli 25 sanan lauseet kannattaa jakaa kahdeksi lyhyemmäksi.</p><p class=\"text-mid\">Ainutlaatuisten sanojen suhde kokonaissanamäärään kertoo sanaston rikkaudesta. 1 000 sanan tekstissä 400–500 ainutlaatuista sanaa viittaa monipuoliseen sanastoon. Jos suhde laskee alle 30 %, teksti voi kuulostaa toistavalta - korvaa toistuvia sanoja synonyymeillä tai muotoile lauseita uudelleen toiston vähentämiseksi.</p>"
     },
     {
       "type": "gap",
@@ -451,7 +451,7 @@
         },
         {
           "question": "Mikä ero on lukuajalla ja puheajalla?",
-          "answer": "Lukuaika olettaa 200 sanaa minuutissa — keskimääräinen hiljainen lukunopeus. Puheaika käyttää 130 sanaa minuutissa, luonnollista tahtia esityksille ja podcasteille, sisältäen tauot ja hengityksen. 1 000 sanan teksti kestää noin 5 minuuttia lukea mutta 7,5 minuuttia puhua."
+          "answer": "Lukuaika olettaa 200 sanaa minuutissa - keskimääräinen hiljainen lukunopeus. Puheaika käyttää 130 sanaa minuutissa, luonnollista tahtia esityksille ja podcasteille, sisältäen tauot ja hengityksen. 1 000 sanan teksti kestää noin 5 minuuttia lukea mutta 7,5 minuuttia puhua."
         }
       ]
     },

@@ -1,0 +1,273 @@
+{
+  "toolKey": "inchesToPxDpi",
+  "locale": "da",
+  "metadata": {
+    "title": "Konverter inches til pixels (DPI)",
+    "description": "Konverter inches til pixels (DPI) og omvendt. Nyttig til trykdesign og billedforberedelse. Ingen registrering krævet.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/da/vaerktojer/tommer-til-px-konverter"
+  },
+  "hero": {
+    "title": "Konverter inches til pixels (DPI)",
+    "description": "Denne konverter konverterer øjeblikkeligt. Indtast en værdi, og resultatet vises med det samme.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/tommer-til-px-konverter",
+      "label": "tommer til px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konverter inches til pixels (DPI)",
+      "alternateName": ["Konverter inches til pixels (DPI)"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konverter inches til pixels (DPI) og omvendt. Nyttig til trykdesign og billedforberedelse. Ingen registrering krævet.",
+      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+    },
+    "howTo": {
+      "name": "Sådan bruger du konverteren",
+      "description": "Hurtigguide til brug af konverteren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Indtast værdi",
+          "text": "Skriv et tal i inputfeltet til venstre."
+        },
+        {
+          "name": "Aflæs resultatet",
+          "text": "Konverteringsresultatet vises øjeblikkeligt i feltet ved siden af."
+        },
+        {
+          "name": "Kopier eller vend om",
+          "text": "Klik på Kopier resultat eller på Vend om for at konvertere i den anden retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvornår skal man omregne tommer til pixels?",
+      "html": "<p class=\"text-mid mb-4\">Amerikanske papirformater bruger tommer. For digitale trykdata: Pixels = tommer × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) ved 300 DPI = 2.550 × 3.300 px. Foto 4 × 6″ = 1.200 × 1.800 px.</p><p class=\"text-mid\">Alle beregninger kører lokalt i din browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Konverter inches til pixels (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruger man omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Indtast en værdi",
+          "description": "Skriv et tal i inputfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Læs resultatet",
+          "description": "Resultatet vises øjeblikkeligt.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiér eller vend",
+          "description": "Kopiér resultatet eller vend omregningsretningen.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår er denne omregner nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Fotoprint",
+          "description": "4×6″ = 1.200×1.800 px ved 300 DPI."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "US-papirformater",
+          "description": "Letter ved 300 DPI = 2.550×3.300 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Plakater",
+          "description": "24×36″ ved 150 DPI = 3.600×5.400 px."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Skærme",
+          "description": "27″ 4K-monitor = 163 PPI."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad adskiller denne omregner?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatliv",
+          "description": "Alle beregninger kører lokalt i din browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Realtidsresultater",
+          "description": "Resultatet opdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tovejsomregning",
+          "description": "Omregn begge veje med ét klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencetabel",
+          "description": "Tabel med almindelige værdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">Pixels = tommer × DPI. Ved 300 DPI: 1 tomme = 300 px.</p><p class=\"text-mid\">For at finde nødvendig DPI: DPI = Pixels / tommer.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">Pixels = tommer × DPI. Ved 300 DPI: 1 tomme = 300 px.</p><p class=\"text-mid\">For at finde nødvendig DPI: DPI = Pixels / tommer.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Almindelige trykformater ved 300 DPI",
+      "featureLabel": "Format",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Tommer"
+        },
+        {
+          "id": "unit2",
+          "name": "Pixels (300 DPI)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Pasfoto",
+          "values": {
+            "unit1": "2,5 × 3,5″",
+            "unit2": "750 × 1.050"
+          }
+        },
+        {
+          "name": "Foto 4×6",
+          "values": {
+            "unit1": "4 × 6″",
+            "unit2": "1.200 × 1.800"
+          }
+        },
+        {
+          "name": "Foto 8×10",
+          "values": {
+            "unit1": "8 × 10″",
+            "unit2": "2.400 × 3.000"
+          }
+        },
+        {
+          "name": "US Letter",
+          "values": {
+            "unit1": "8,5 × 11″",
+            "unit2": "2.550 × 3.300"
+          }
+        },
+        {
+          "name": "Plakat",
+          "values": {
+            "unit1": "24 × 36″",
+            "unit2": "7.200 × 10.800"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange px er 1 tomme ved 300 DPI?",
+          "answer": "1 tomme ved 300 DPI = 300 px."
+        },
+        {
+          "question": "Kører beregningerne lokalt?",
+          "answer": "Ja. Alle beregninger kører i din browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "cale na px – Arteon",
+      "defaultSubject": "Feedback: inches-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

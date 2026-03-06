@@ -6,12 +6,12 @@
   },
   "hero": {
     "title": "Bezplatné nástroje od kreativní agentury",
-    "description": "10 nástrojů v prohlížeči pro obrázky, SEO, barvy, e-mailové podpisy a QR kódy — bez registrace, bez nahrávání souborů, bez omezení"
+    "description": "10 nástrojů v prohlížeči pro obrázky, SEO, barvy, e-mailové podpisy a QR kódy - bez registrace, bez nahrávání souborů, bez omezení"
   },
   "whoWeAre": {
     "title": "Kdo jsme",
     "p1": "Arteon je polská kreativní agentura. Kromě naší komerční práce vytváříme a udržujeme rostoucí sbírku bezplatných nástrojů určených pro podnikatele, tvůrce webů, designéry, marketéry a každého, kdo pracuje s digitálním obsahem.",
-    "p2": "Každý nástroj, který vytváříme, řeší konkrétní každodenní problém: konverze obrázků, kontrola kontrastu barev, generování favicon, vytváření QR kódů a další. Naším cílem je vybudovat komplexní sadu nástrojů, kde najdete vše potřebné na jednom místě — bez přepínání mezi desítkami různých webů."
+    "p2": "Každý nástroj, který vytváříme, řeší konkrétní každodenní problém: konverze obrázků, kontrola kontrastu barev, generování favicon, vytváření QR kódů a další. Naším cílem je vybudovat komplexní sadu nástrojů, kde najdete vše potřebné na jednom místě - bez přepínání mezi desítkami různých webů."
   },
   "whyFree": {
     "title": "Proč nabízíme bezplatné nástroje",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Soukromí na prvním místě",
-        "description": "Vaše soubory nikdy neopustí vaše zařízení. Veškeré zpracování probíhá lokálně v prohlížeči — vaše data neposíláme na žádný server."
+        "description": "Vaše soubory nikdy neopustí vaše zařízení. Veškeré zpracování probíhá lokálně v prohlížeči - vaše data neposíláme na žádný server."
       },
       {
         "title": "Vznikly ze skutečných potřeb",
@@ -61,7 +61,7 @@
   },
   "whatsNext": {
     "title": "Co nás čeká",
-    "text": "Aktivně pracujeme na rozšiřování sady nástrojů. Nové nástroje přidáváme pravidelně na základě zpětné vazby uživatelů a vlastních zkušeností. Cílem je jediná platforma, kde podnikatelé, designéři a vývojáři mají přístup ke každému důležitému nástroji — vše na jednom místě, vše zdarma."
+    "text": "Aktivně pracujeme na rozšiřování sady nástrojů. Nové nástroje přidáváme pravidelně na základě zpětné vazby uživatelů a vlastních zkušeností. Cílem je jediná platforma, kde podnikatelé, designéři a vývojáři mají přístup ke každému důležitému nástroji - vše na jednom místě, vše zdarma."
   },
   "privacy": {
     "title": "Soukromí a bezpečnost",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Vyzkoušejte naše nástroje",
-    "description": "Bezplatných nástrojů — bez registrace, bez omezení, bez nahrávání souborů na server",
+    "description": "Bezplatných nástrojů - bez registrace, bez omezení, bez nahrávání souborů na server",
     "btnOne": "Přejít na nástroje",
     "btnTwo": "Kontakt"
   }

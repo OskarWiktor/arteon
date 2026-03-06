@@ -1,0 +1,273 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "da",
+  "metadata": {
+    "title": "Konverter mm til inches",
+    "description": "Konverter mm til inches og omvendt. Nyttig til teknik, 3D-print og smykker. Ingen registrering krævet.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/da/vaerktojer/mm-til-tommer-konverter"
+  },
+  "hero": {
+    "title": "Konverter mm til inches",
+    "description": "Denne konverter konverterer øjeblikkeligt. Indtast en værdi, og resultatet vises med det samme.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/mm-til-tommer-konverter",
+      "label": "mm til tommer"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konverter mm til inches",
+      "alternateName": ["Konverter mm til inches"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konverter mm til inches og omvendt. Nyttig til teknik, 3D-print og smykker. Ingen registrering krævet.",
+      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+    },
+    "howTo": {
+      "name": "Sådan bruger du konverteren",
+      "description": "Hurtigguide til brug af konverteren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Indtast værdi",
+          "text": "Skriv et tal i inputfeltet til venstre."
+        },
+        {
+          "name": "Aflæs resultatet",
+          "text": "Konverteringsresultatet vises øjeblikkeligt i feltet ved siden af."
+        },
+        {
+          "name": "Kopier eller vend om",
+          "text": "Klik på Kopier resultat eller på Vend om for at konvertere i den anden retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvornår skal man omregne mm til tommer?",
+      "html": "<p class=\"text-mid mb-4\">Millimeter (mm) = 1/1000 meter. Tomme = præcis 25,4 mm. Vigtigt for ingeniørarbejde, fremstilling og 3D-print.</p><p class=\"text-mid\">Alle beregninger kører lokalt i din browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Konverter mm til inches – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruger man omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Indtast en værdi",
+          "description": "Skriv et tal i inputfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Læs resultatet",
+          "description": "Resultatet vises øjeblikkeligt.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiér eller vend",
+          "description": "Kopiér resultatet eller vend omregningsretningen.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår er denne omregner nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiToolsLine",
+          "title": "Ingeniørarbejde og CNC",
+          "description": "Tekniske tegninger i mm eller tommer."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "3D-print",
+          "description": "Dysediameter 0,4 mm = 0,016″."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Smykker",
+          "description": "Ringstørrelser og ædelstensmål."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "VVS",
+          "description": "1/2″ = 12,7 mm."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad adskiller denne omregner?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatliv",
+          "description": "Alle beregninger kører lokalt i din browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Realtidsresultater",
+          "description": "Resultatet opdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tovejsomregning",
+          "description": "Omregn begge veje med ét klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencetabel",
+          "description": "Tabel med almindelige værdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">1 tomme = 25,4 mm præcis. Brøker: 1/8″ = 3,175 mm, 1/4″ = 6,35 mm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">1 tomme = 25,4 mm præcis. Brøker: 1/8″ = 3,175 mm, 1/4″ = 6,35 mm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Millimeter vs Tomme",
+      "featureLabel": "Egenskab",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Millimeter (mm)"
+        },
+        {
+          "id": "unit2",
+          "name": "Tomme (in)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisk (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Basis",
+          "values": {
+            "unit1": "1/1000 m",
+            "unit2": "25,4 mm"
+          }
+        },
+        {
+          "name": "Ingeniørarbejde",
+          "values": {
+            "unit1": "International",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Præcision",
+          "values": {
+            "unit1": "0,01 mm",
+            "unit2": "1/1000″"
+          }
+        },
+        {
+          "name": "VVS",
+          "values": {
+            "unit1": "Metrisk",
+            "unit2": "NPT/BSP"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange mm er 1 tomme?",
+          "answer": "Præcis 25,4 mm."
+        },
+        {
+          "question": "Kører beregningerne lokalt?",
+          "answer": "Ja. Alle beregninger kører i din browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "mm na cale – Arteon",
+      "defaultSubject": "Feedback: mm-to-inches"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

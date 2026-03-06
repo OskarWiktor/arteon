@@ -1,0 +1,273 @@
+{
+  "toolKey": "hexToRgb",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de HEX para RGB – cores",
+    "description": "Converta códigos de cor HEX para valores RGB. Essencial para web design e CSS.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-hex-para-rgb"
+  },
+  "hero": {
+    "title": "Converter HEX para RGB",
+    "description": "Este conversor converte instantaneamente. Introduza um valor e o resultado aparece imediatamente.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-hex-para-rgb",
+      "label": "HEX para RGB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de HEX para RGB – cores",
+      "alternateName": ["Converter HEX para RGB"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converta códigos de cor HEX para valores RGB. Essencial para web design e CSS.",
+      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+    },
+    "howTo": {
+      "name": "Como usar o conversor",
+      "description": "Guia rápido para usar o conversor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduzir valor",
+          "text": "Escreva um número no campo de entrada à esquerda."
+        },
+        {
+          "name": "Ler o resultado",
+          "text": "O resultado da conversão aparece instantaneamente no campo ao lado."
+        },
+        {
+          "name": "Copiar ou inverter",
+          "text": "Clique em Copiar resultado ou em Inverter para converter na direção oposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa converter HEX em RGB?",
+      "html": "<p class=\"text-mid mb-4\">As cores HEX (#FF5733) e RGB (rgb(255, 87, 51)) representam as mesmas cores em notação diferente. HEX é comum em CSS, RGB em programação e funções CSS.</p><p class=\"text-mid mb-4\">Cada cor HEX tem 6 dígitos: os 2 primeiros para vermelho (00–FF), os 2 seguintes para verde, os 2 últimos para azul. RGB usa valores decimais 0–255.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Conversor de HEX para RGB – cores – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o conversor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Insira um valor",
+          "description": "Digite um número no campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leia o resultado",
+          "description": "O resultado aparece instantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copie ou inverta",
+          "description": "Copie o resultado ou inverta a direção de conversão.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando este conversor é útil?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Desenvolvimento CSS",
+          "description": "Converta cores HEX de mockups em RGB para funções rgba() com opacidade."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Design systems",
+          "description": "Documente cores em HEX e RGB para consistência multiplataforma."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "JavaScript/Canvas",
+          "description": "A API Canvas e algumas bibliotecas JS requerem valores RGB."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Acessibilidade",
+          "description": "Calcule contrastes de cor com valores RGB para conformidade WCAG."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que diferencia este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os cálculos são executados localmente no seu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados em tempo real",
+          "description": "O resultado atualiza enquanto digita."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversão bidirecional",
+          "description": "Converta em ambas as direções com um clique."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela de referência",
+          "description": "Tabela com valores comuns e descrições contextuais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">HEX usa base-16: cada par de dígitos (00–FF) se converte em decimal 0–255. #FF5733: FF=255 (Vermelho), 57=87 (Verde), 33=51 (Azul).</p><p class=\"text-mid\">HEX abreviado: #F53 vira #FF5533.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">HEX usa base-16: cada par de dígitos (00–FF) se converte em decimal 0–255. #FF5733: FF=255 (Vermelho), 57=87 (Verde), 33=51 (Azul).</p><p class=\"text-mid\">HEX abreviado: #F53 vira #FF5533.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "HEX vs RGB – comparação",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "HEX"
+        },
+        {
+          "id": "unit2",
+          "name": "RGB",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Formato",
+          "values": {
+            "unit1": "#RRGGBB",
+            "unit2": "rgb(R, G, B)"
+          }
+        },
+        {
+          "name": "Valores",
+          "values": {
+            "unit1": "00–FF (hex)",
+            "unit2": "0–255 (decimal)"
+          }
+        },
+        {
+          "name": "Opacidade",
+          "values": {
+            "unit1": "8 dígitos (#RRGGBBAA)",
+            "unit2": "rgba(R, G, B, A)"
+          }
+        },
+        {
+          "name": "Abreviado",
+          "values": {
+            "unit1": "#RGB (3 dígitos)",
+            "unit2": "Sem abreviação"
+          }
+        },
+        {
+          "name": "Usado em",
+          "values": {
+            "unit1": "CSS, ferramentas de design",
+            "unit2": "CSS, programação"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Como converter HEX em RGB?",
+          "answer": "Converta cada par hex em decimal. #FF5733: FF=255, 57=87, 33=51 → rgb(255, 87, 51)."
+        },
+        {
+          "question": "Os cálculos são feitos localmente?",
+          "answer": "Sim. Todos os cálculos são executados no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "HEX na RGB – Arteon",
+      "defaultSubject": "Feedback: hex-to-rgb"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

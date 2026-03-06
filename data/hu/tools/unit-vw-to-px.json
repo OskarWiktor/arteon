@@ -1,0 +1,273 @@
+{
+  "toolKey": "vwToPx",
+  "locale": "hu",
+  "metadata": {
+    "title": "Vw px-re – átváltó",
+    "description": "CSS vw átváltása pixelre. Állítható viewport szélesség.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/hu/eszkozok/vw-px-atvalto"
+  },
+  "hero": {
+    "title": "Vw px-re",
+    "description": "Ez az átváltó azonnal átszámol. Adjon meg egy értéket és az eredmény azonnal megjelenik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/vw-px-atvalto",
+      "label": "vw px-re"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Vw px-re – átváltó",
+      "alternateName": ["Vw px-re"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "CSS vw átváltása pixelre. Állítható viewport szélesség.",
+      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+    },
+    "howTo": {
+      "name": "Hogyan használja az átváltót",
+      "description": "Gyors útmutató az átváltó használatához.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Érték megadása",
+          "text": "Írjon be egy számot a bal oldali beviteli mezőbe."
+        },
+        {
+          "name": " Eredmény leolvasása",
+          "text": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben."
+        },
+        {
+          "name": "Másolás vagy megfordítás",
+          "text": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikor kell használni: Vw px-re?",
+      "html": "<p class=\"text-mid mb-4\">Die CSS-Einheit vw egyenlő 1 % der Viewport-Breite. Bei einem 1920px-Bildschirm: 1vw = 19,2px, 50vw = 960px, 100vw = 1920px.</p><p class=\"text-mid mb-4\">vw wird häufig für Fluid Typography verwendet: font-size: clamp(1rem, 2.5vw, 2rem).</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Vw px-re – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az átváltót?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Érték megadása",
+          "description": "Írjon be egy számot a beviteli mezőbe. Használhat pontot vagy vesszőt tizedesjegyként.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Eredmény leolvasása",
+          "description": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben – kattintás nélkül.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Másolás vagy megfordítás",
+          "description": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor hasznos ez az átváltó?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiLayoutLine",
+          "title": "Responsywne układy",
+          "description": "Sekcje pełnoekranowe: width: 100vw, height: 100vh."
+        },
+        {
+          "icon": "RiFontSizeLine",
+          "title": "Fluid typography",
+          "description": "Tytuły skalowane: font-size: clamp(2rem, 5vw, 4rem)."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mobile first",
+          "description": "Marginesy i paddingi w vw skalują się z ekranem."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webfejlesztés",
+          "description": "Sprawdź, ile px ma dany vw na konkretnym urządzeniu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt az átváltót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "Minden számítás helyben, a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Azonnali eredmények",
+          "description": "Az eredmény azonnal frissül gépelés közben – nem kell semmilyen gombra kattintani."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kétirányú átváltás",
+          "description": "A Megfordítás gomb segítségével egy kattintással válthat irányt."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencia táblázat",
+          "description": "Kész táblázat gyakran átváltott értékekkel és kontextuális leírásokkal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az átváltás?",
+      "html": "<p class=\"text-mid mb-4\">The formula is: px = vw × viewport_width / 100.</p><p class=\"text-mid mb-4\">At 1920px viewport: 1vw = 19.2px. At 1280px: 1vw = 12.8px. At 375px (iPhone): 1vw = 3.75px.</p><p class=\"text-mid\">Related units: vh = 1% viewport height, vmin = 1% of smaller dimension, vmax = 1% of larger dimension.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gyakorlati tippek",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>100vw includes scrollbar width. Use width: 100% for content width without scrollbar.</li><li>Fluid typography: font-size: clamp(1rem, 2.5vw, 2rem) limits minimum and maximum size.</li><li>Common viewports: 375px (iPhone), 768px (iPad), 1280px (laptop), 1920px (desktop).</li><li>vw is recalculated on window resize. CSS calc() works with vw: width: calc(100vw - 2rem).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "vw at different viewport widths",
+      "featureLabel": "vw value",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "At 1920px"
+        },
+        {
+          "id": "unit2",
+          "name": "At 375px (mobile)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1vw",
+          "values": {
+            "unit1": "19.2px",
+            "unit2": "3.75px"
+          }
+        },
+        {
+          "name": "10vw",
+          "values": {
+            "unit1": "192px",
+            "unit2": "37.5px"
+          }
+        },
+        {
+          "name": "50vw",
+          "values": {
+            "unit1": "960px",
+            "unit2": "187.5px"
+          }
+        },
+        {
+          "name": "100vw",
+          "values": {
+            "unit1": "1920px",
+            "unit2": "375px"
+          }
+        },
+        {
+          "name": "2.5vw (font)",
+          "values": {
+            "unit1": "48px",
+            "unit2": "9.4px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Mennyi ist 1vw in Pixel?",
+          "answer": "1vw = 1 % der Viewport-Breite. Bei 1920px: 19,2px. Bei 375px: 3,75px."
+        },
+        {
+          "question": "Helyben történnek a számítások?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "vw px-re – Arteon",
+      "defaultSubject": "Visszajelzés: vw-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "További ingyenes eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

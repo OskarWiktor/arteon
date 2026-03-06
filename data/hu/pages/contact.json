@@ -6,11 +6,11 @@
   },
   "hero": {
     "title": "Lépjen kapcsolatba az Arteon csapatával",
-    "description": "Jelentsen hibát, javasoljon új eszközt vagy tegyen fel kérdést — egy munkanapon belül válaszolunk"
+    "description": "Jelentsen hibát, javasoljon új eszközt vagy tegyen fel kérdést - egy munkanapon belül válaszolunk"
   },
   "intro": {
     "title": "Van kérdése vagy javaslata?",
-    "textBefore": "Örömmel fogadjuk visszajelzését eszközeinkről. Ha hibát talált, ötlete van új eszközre vagy segítségre van szüksége — írjon nekünk a",
+    "textBefore": "Örömmel fogadjuk visszajelzését eszközeinkről. Ha hibát talált, ötlete van új eszközre vagy segítségre van szüksége - írjon nekünk a",
     "textAfter": " címre. Egy munkanapon belül válaszolunk."
   },
   "formTitle": "Küldjön nekünk üzenetet",

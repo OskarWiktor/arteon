@@ -2,7 +2,7 @@
   "toolKey": "jsonToYaml",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník JSON na YAML — JSON YAML",
+    "title": "Převodník JSON na YAML - JSON YAML",
     "description": "Převeďte JSON do formátu YAML. Automatické parsování a formátování. Zdarma.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-json-na-yaml"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět JSON na YAML?",
-      "html": "<p class=\"text-mid mb-4\">JSON je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na YAML prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase JSON soubory do formatu YAML primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na YAML prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase JSON soubory do formatu YAML primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "JSON to YAML conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kolik usetrite konverzi JSON na YAML?",
-      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+      "title": "Jak funguje konverze z JSON do YAML?",
+      "html": "<p class=\"text-mid mb-4\">JSON a YAML oba reprezentují strukturovaná data, ale YAML používá syntaxi založenou na odsazení, která je čistší, bez složených závorek nebo uvozovek kolem klíčů. Konvertor analyzuje JSON strukturu a naformátuje ji podle YAML konvencí: odsazení pro vnoření, pomlčky pro prvky pole a dvojtečky pro páry klíč-hodnota.</p><p class=\"text-mid mb-4\">Například JSON objekt {\"jmeno\": \"Jan\", \"vek\": 30} se stane dvěma YAML řádky: jmeno: Jan a vek: 30. Vnořené objekty používají hlubší odsazení a pole používají prefix pomlčka-mezera.</p><p class=\"text-mid\">YAML se široce používá pro konfigurační soubory (Docker Compose, Kubernetes, GitHub Actions, Ansible) díky lepší čitelnosti. Konverze probíhá zcela ve vašem prohlížeči.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipy pro konverzi JSON na YAML",
-      "description": "Tipy jak se vyhnout problemum:",
+      "title": "Tipy pro konverzi z JSON do YAML",
+      "description": "Několik tipů, jak se vyhnout běžným problémům:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Velmi velke soubory",
-          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Odsazení je klíčové",
+          "description": "YAML používá mezery pro odsazení (ne tabelátory). Konvertor generuje konzistentní odsazení 2 mezerami."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Jiz komprimovane",
-          "description": "Pokud byl JSON jiz silne komprimovany, konverze na YAML nemusi usetrit mnoho."
+          "title": "Uvozovky u řetězců",
+          "description": "YAML vyžaduje uvozovky pouze kolem řetězců obsahujících speciální znaky (dvojtečky, mřížky, závorky). Jednoduché řetězce zůstanou bez uvozovek."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Pruhlednost",
-          "description": "YAML nepodporuje pruhlednost. Pruhledne oblasti budou bile. Pouzijte PNG nebo WebP."
+          "icon": "RiCodeLine",
+          "title": "Komentáře",
+          "description": "JSON nepodporuje komentáře, takže není co přenášet. V YAML můžete volně přidávat komentáře pomocí #."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Uchovejte originaly",
-          "description": "Ztratova konverze je nevratna. Uchovejte kopie JSON souboru."
+          "icon": "RiFileCodeLine",
+          "title": "Víceřádkové řetězce",
+          "description": "Dlouhé textové hodnoty s konci řádků se formátují v YAML blokové syntaxi (| nebo >) pro lepší čitelnost."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Common YAML pitfalls to watch out for",
+      "html": "<p class=\"text-mid mb-4\">YAML is sensitive to formatting. Here are common issues when working with converted YAML:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Indentation</strong> – YAML uses spaces (not tabs) for structure. The converter uses 2-space indentation consistently.</li><li><strong>Special characters in strings</strong> – values containing colons, hashes, or brackets may need quoting. The converter handles this automatically.</li><li><strong>Boolean gotchas</strong> – YAML treats <code>yes</code>, <code>no</code>, <code>on</code>, <code>off</code> as booleans. If these appear as string values in JSON, the converter wraps them in quotes.</li><li><strong>Number precision</strong> – large numbers and floating-point values are preserved exactly as they appear in the JSON source.</li></ul><p class=\"text-mid mt-3\">The converter generates valid YAML that passes <code>yamllint</code> validation. If you encounter issues, check for mixed indentation or unquoted special characters.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
         },
         {
-          "question": "Je konverze JSON na YAML bezpecna?",
-          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+          "question": "Je konverze z JSON do YAML bezpečná?",
+          "answer": "Ano. Veškerá konverze probíhá lokálně ve vašem prohlížeči. Žádná data se neodesílají na server."
         },
         {
-          "question": "Mohu konvertovat vice souboru JSON?",
-          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+          "question": "Mohu použít YAML výstup v Dockeru nebo Kubernetes?",
+          "answer": "Ano. Výstup je standardní YAML, kompatibilní s Docker Compose, Kubernetes manifesty, GitHub Actions workflows, Ansible playbooks a všemi nástroji, které čtou YAML."
         },
         {
-          "question": "Je YAML podporovan vsemi prohlizeci?",
-          "answer": "YAML je podporovan v Chrome, Firefox, Safari, Edge a Opera."
+          "question": "Je konverze bezeztrátová?",
+          "answer": "Ano. Všechny datové typy (řetězce, čísla, booleovské, null, pole, objekty) se zachovají přesně. YAML podporuje stejné datové typy jako JSON."
         }
       ]
     },

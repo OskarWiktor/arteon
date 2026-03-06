@@ -58,7 +58,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
       void (async () => {
         try {
           const pdfjsLib = await import('pdfjs-dist');
-          pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
+          pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
           for (const pdfFile of pdfFiles) {
             const buffer = await pdfFile.arrayBuffer();
@@ -72,7 +72,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
                 id: `pdi-${++fileIdCounter}`,
                 file: pdfFile,
                 pageIndex: i,
-                pageLabel: `${baseName} — str. ${i}/${numPages}`,
+                pageLabel: `${baseName} - ${t.pageLabel} ${i}/${numPages}`,
                 status: 'idle',
                 outputBlob: null,
                 outputUrl: null,
@@ -118,7 +118,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
 
       try {
         const pdfjsLib = await import('pdfjs-dist');
-        pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
+        pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
         const mime = FORMAT_MIME[targetFormat];
         const pending = pagesRef.current.filter((p) => p.status === 'idle' || p.status === 'error');
@@ -138,7 +138,8 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
             const canvas = document.createElement('canvas');
             canvas.width = viewport.width;
             canvas.height = viewport.height;
-            const ctx = canvas.getContext('2d')!;
+            const ctx = canvas.getContext('2d');
+            if (!ctx) throw new Error('Canvas is not supported.');
 
             await page.render({ canvasContext: ctx, viewport, canvas } as never).promise;
 

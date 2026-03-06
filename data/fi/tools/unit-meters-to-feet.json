@@ -1,0 +1,273 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "fi",
+  "metadata": {
+    "title": "M jaloiksi – muunnin",
+    "description": "Muunna metrit jaloiksi ja päinvastoin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/metrit-jaloiksi-muunnin"
+  },
+  "hero": {
+    "title": "M jaloiksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/metrit-jaloiksi-muunnin",
+      "label": "m jaloiksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "M jaloiksi – muunnin",
+      "alternateName": ["M jaloiksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna metrit jaloiksi ja päinvastoin.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin metrit muunnetaan jaloiksi?",
+      "html": "<p class=\"text-mid mb-4\">Metri (m) on SI-standardi pituudelle. Jalkoja (ft) käytetään USA:ssa ja Iso-Britanniassa. 1 m = 3,28084 ft.</p><p class=\"text-mid mb-4\">Pituus: 1,80 m = 5'11\". Lentokorkeus: 10 000 m = 32 808 ft.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Meters to feet converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuildingLine",
+          "title": "Rakentaminen",
+          "description": "1,75 m = 5'9\". USA/UK käyttää jalkoja/tuumia."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Ilmailu",
+          "description": "Lentokorkeudet jaloissa. 10 000 m = 32 808 ft."
+        },
+        {
+          "icon": "RiBodyScanLine",
+          "title": "Kiinteistöt",
+          "description": "Huonekorkeus: 2,7 m = 8,86 ft."
+        },
+        {
+          "icon": "RiMountainLine",
+          "title": "Rakentaminen",
+          "description": "Kansainväliset projektit sekayksiköillä."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 jalka = 0,3048 m (tarkka). m jaloiksi: jaa 0,3048:lla tai kerro 3,28084:llä.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 jalka = 0,3048 m (tarkka). m jaloiksi: jaa 0,3048:lla tai kerro 3,28084:llä.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Metri vs Jalka",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Metri (m)"
+        },
+        {
+          "id": "unit2",
+          "name": "Jalka (ft)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Järjestelmä",
+          "values": {
+            "unit1": "Metrinen (SI)",
+            "unit2": "Imperiaalinen"
+          }
+        },
+        {
+          "name": "Määritelmä",
+          "values": {
+            "unit1": "SI-perusyksikkö",
+            "unit2": "0,3048 m"
+          }
+        },
+        {
+          "name": "Pituus",
+          "values": {
+            "unit1": "Kansainvälinen",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Ilmailu",
+          "values": {
+            "unit1": "Ei standardi",
+            "unit2": "Standardi (ft)"
+          }
+        },
+        {
+          "name": "Alajako",
+          "values": {
+            "unit1": "100 cm",
+            "unit2": "12 tuumaa"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta jalkaa on 1 metri?",
+          "answer": "1 metri = 3,28084 jalkaa."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "m jaloiksi – Arteon",
+      "defaultSubject": "Palaute: meters-to-feet"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

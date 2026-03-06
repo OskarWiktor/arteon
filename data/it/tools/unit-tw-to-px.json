@@ -1,0 +1,277 @@
+{
+  "toolKey": "twToPx",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore Tailwind in pixel – CSS",
+    "description": "Converti valori spacing Tailwind CSS in pixel. Per sviluppatori Tailwind.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-tailwind-css-spacing-in-px"
+  },
+  "hero": {
+    "title": "Convertire Tailwind in pixel",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-tailwind-css-spacing-in-px",
+      "label": "tw in px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore Tailwind in pixel – CSS",
+      "alternateName": ["Convertire Tailwind in pixel"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti valori spacing Tailwind CSS in pixel. Per sviluppatori Tailwind.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire unità Tailwind in pixel?",
+      "html": "<p class=\"text-mid mb-4\">Tailwind CSS usa una scala di spaziatura dove ogni unità = 0,25 rem = 4 px (con radice 16px). Così p-4 = 1 rem = 16 px, p-8 = 2 rem = 32 px.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore Tailwind in pixel – CSS – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato appare istantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Copia il risultato o inverti la direzione di conversione.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Debug CSS",
+          "description": "Verifica dimensioni: p-6 = 24 px, m-8 = 32 px, gap-4 = 16 px."
+        },
+        {
+          "icon": "RiLayout2Line",
+          "title": "Consegna design",
+          "description": "Traduci classi Tailwind in valori pixel per i designer."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Design responsive",
+          "description": "Breakpoint: sm = 640px, md = 768px, lg = 1024px, xl = 1280px."
+        },
+        {
+          "icon": "RiTeamLine",
+          "title": "Configurazione personalizzata",
+          "description": "Pianifica scale personalizzate conoscendo i valori standard."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Converti in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Tabella con valori comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona lo spacing Tailwind?",
+      "html": "<p class=\"text-mid mb-4\">Spacing Tailwind = valore × 0,25 rem. Con radice 16px: spacing × 4 = pixel.</p><p class=\"text-mid\">Dimensioni font: text-sm = 14px, text-base = 16px, text-lg = 18px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona lo spacing Tailwind?",
+      "html": "<p class=\"text-mid mb-4\">Spacing Tailwind = valore × 0,25 rem. Con radice 16px: spacing × 4 = pixel.</p><p class=\"text-mid\">Dimensioni font: text-sm = 14px, text-base = 16px, text-lg = 18px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Scala spacing Tailwind",
+      "featureLabel": "Tailwind",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "rem"
+        },
+        {
+          "id": "unit2",
+          "name": "px (radice 16px)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1",
+          "values": {
+            "unit1": "0,25rem",
+            "unit2": "4px"
+          }
+        },
+        {
+          "name": "4",
+          "values": {
+            "unit1": "1rem",
+            "unit2": "16px"
+          }
+        },
+        {
+          "name": "8",
+          "values": {
+            "unit1": "2rem",
+            "unit2": "32px"
+          }
+        },
+        {
+          "name": "16",
+          "values": {
+            "unit1": "4rem",
+            "unit2": "64px"
+          }
+        },
+        {
+          "name": "64",
+          "values": {
+            "unit1": "16rem",
+            "unit2": "256px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanto è p-4 in pixel?",
+          "answer": "p-4 = 1rem = 16px con la dimensione font radice standard."
+        },
+        {
+          "question": "Quali sono i breakpoint Tailwind in pixel?",
+          "answer": "sm = 640px, md = 768px, lg = 1024px, xl = 1280px, 2xl = 1536px."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "Tailwind na px – Arteon",
+      "defaultSubject": "Feedback: tw-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

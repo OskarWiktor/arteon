@@ -2,7 +2,7 @@
   "toolKey": "base64ToImage",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník Base64 na obrázek — Base64 obrázek",
+    "title": "Převodník Base64 na obrázek - Base64 obrázek",
     "description": "Dekódujte řetězce Base64 na obrázky. Náhled a stažení v prohlížeči. Zdarma.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-base64-na-obrazek"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Převést",
-          "text": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči."
+          "text": "Klikněte na Převést - soubory se zpracovávají lokálně v prohlížeči."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět Base64 na obrázek?",
-      "html": "<p class=\"text-mid mb-4\">BASE64 je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na IMAGE prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase BASE64 soubory do formatu IMAGE primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">BASE64 je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na IMAGE prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase BASE64 soubory do formatu IMAGE primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Base64 to obrázek conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Převést",
-          "description": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči.",
+          "description": "Klikněte na Převést - soubory se zpracovávají lokálně v prohlížeči.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kolik usetrite konverzi BASE64 na IMAGE?",
-      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+      "title": "Jak funguje dek\u00f3dov\u00e1n\u00ed z Base64 na obr\u00e1zek?",
+      "html": "<p class=\"text-mid mb-4\">Base64 dek\u00f3dov\u00e1n\u00ed je opa\u010dn\u00e1 operace k Base64 k\u00f3dov\u00e1n\u00ed \u2014 p\u0159ev\u00e1d\u00ed textov\u00fd \u0159et\u011bzec zp\u011bt na bin\u00e1rn\u00ed obrazov\u00e1 data. Konvertor p\u0159e\u010dte Base64 \u0159et\u011bzec (s nebo bez Data URI prefixu), dek\u00f3duje ho na surov\u00e9 byty a obnov\u00ed p\u016fvodn\u00ed soubor s obr\u00e1zkem.</p><p class=\"text-mid mb-4\">Data URI prefix (nap\u0159. data:image/png;base64,) sd\u011bl\u00ed konvertoru, jak\u00fd form\u00e1t obr\u00e1zku pou\u017e\u00edt. Pokud prefix chyb\u00ed, konvertor automaticky detekuje form\u00e1t z bin\u00e1rn\u00ed signatury (magic bytes) v dek\u00f3dovan\u00fdch datech.</p><p class=\"text-mid\">Tento n\u00e1stroj je u\u017eite\u010dn\u00fd, kdy\u017e pot\u0159ebujete extrahovat obr\u00e1zek z HTML str\u00e1nky, CSS souboru, API odpov\u011bdi nebo datab\u00e1ze, kter\u00e1 ukl\u00e1d\u00e1 obr\u00e1zky jako Base64 \u0159et\u011bzce. Konverze prob\u00edh\u00e1 zcela ve va\u0161em prohl\u00ed\u017ee\u010di.</p>"
     },
     {
       "type": "gap",
@@ -138,29 +138,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipy pro konverzi BASE64 na IMAGE",
-      "description": "Tipy jak se vyhnout problemum:",
+      "title": "Tipy pro dek\u00f3dov\u00e1n\u00ed z Base64 na obr\u00e1zek",
+      "description": "N\u011bkolik tip\u016f, jak se vyhnout b\u011b\u017en\u00fdm probl\u00e9m\u016fm:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Velmi velke soubory",
-          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+          "title": "Data URI prefix",
+          "description": "Konvertor p\u0159ij\u00edm\u00e1 Base64 \u0159et\u011bzce s i bez Data URI prefixu (data:image/...). Pokud prefix existuje, pou\u017eije se pro ur\u010den\u00ed v\u00fdstupn\u00edho form\u00e1tu."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Jiz komprimovane",
-          "description": "Pokud byl BASE64 jiz silne komprimovany, konverze na IMAGE nemusi usetrit mnoho."
+          "icon": "RiCodeLine",
+          "title": "Neplatn\u00e9 znaky",
+          "description": "Base64 \u0159et\u011bzce sm\u00ed obsahovat pouze A\u2013Z, a\u2013z, 0\u20139, +, / a = (padding). Mezery a konce \u0159\u00e1dk\u016f se automaticky odstran\u00ed p\u0159ed dek\u00f3dov\u00e1n\u00edm."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Pruhlednost",
-          "description": "IMAGE nepodporuje pruhlednost. Pruhledne oblasti budou bile. Pouzijte PNG nebo WebP."
+          "icon": "RiFileImageLine",
+          "title": "V\u00fdstupn\u00ed form\u00e1t",
+          "description": "Dek\u00f3dovan\u00fd obr\u00e1zek se ulo\u017e\u00ed ve form\u00e1tu ur\u010den\u00e9m Data URI prefixem. Bez prefixu konvertor automaticky detekuje form\u00e1t."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Uchovejte originaly",
-          "description": "Ztratova konverze je nevratna. Uchovejte kopie BASE64 souboru."
+          "icon": "RiFileCodeLine",
+          "title": "Dlouh\u00e9 \u0159et\u011bzce",
+          "description": "Velmi dlouh\u00e9 Base64 \u0159et\u011bzce (reprezentuj\u00edc\u00ed velk\u00e9 obr\u00e1zky) mohou chv\u00edli trvat p\u0159i dek\u00f3dov\u00e1n\u00ed. Konvertor zpracuje \u0159et\u011bzce jak\u00e9koli d\u00e9lky, kterou v\u00e1\u0161 prohl\u00ed\u017ee\u010d zvl\u00e1dne."
         }
       ]
     },
@@ -190,16 +190,16 @@
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
         },
         {
-          "question": "Je konverze BASE64 na IMAGE bezpecna?",
-          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+          "question": "Je dek\u00f3dov\u00e1n\u00ed z Base64 na obr\u00e1zek bezpe\u010dn\u00e9?",
+          "answer": "Ano. Proces dek\u00f3dov\u00e1n\u00ed prob\u00edh\u00e1 zcela ve va\u0161em prohl\u00ed\u017ee\u010di. Va\u0161e data se nikdy neodes\u00edlaj\u00ed na server."
         },
         {
-          "question": "Mohu konvertovat vice souboru BASE64?",
-          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+          "question": "Jak\u00e9 form\u00e1ty obr\u00e1zk\u016f jsou podporov\u00e1ny?",
+          "answer": "Konvertor dok\u00e1\u017ee dek\u00f3dovat Base64 \u0159et\u011bzce do PNG, JPG, GIF, WebP, SVG, BMP a dal\u0161\u00edch standardn\u00edch form\u00e1t\u016f. Form\u00e1t se detekuje automaticky z Data URI prefixu nebo bin\u00e1rn\u00edho obsahu."
         },
         {
-          "question": "Je IMAGE podporovan vsemi prohlizeci?",
-          "answer": "IMAGE je podporovan v Chrome, Firefox, Safari, Edge a Opera."
+          "question": "Jak z\u00edsk\u00e1m Base64 \u0159et\u011bzec z obr\u00e1zku?",
+          "answer": "Base64 \u0159et\u011bzce obr\u00e1zk\u016f najdete ve zdrojov\u00e9m k\u00f3du HTML (src atribut), CSS souborech (background-image), API odpov\u011bd\u00edch nebo datab\u00e1z\u00edch. Hledejte \u0159et\u011bzce za\u010d\u00ednaj\u00edc\u00ed data:image/ n\u00e1sledovan\u00e9 base64,."
         }
       ]
     },

@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Qualita — cosa scegliere per SVG in JPG?",
-      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predefinito) — buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% — per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% — quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la differenza tra SVG originale e JPG risultante e impercettibile.</p>"
+      "title": "Qualita - cosa scegliere per SVG in JPG?",
+      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predefinito) - buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% - per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% - quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la differenza tra SVG originale e JPG risultante e impercettibile.</p>"
     },
     {
       "type": "gap",
@@ -347,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
-      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
+      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio - rispondiamo entro 24 ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore SVG in JPG – Arteon",
       "defaultSubject": "Feedback: Convertitore SVG in JPG"

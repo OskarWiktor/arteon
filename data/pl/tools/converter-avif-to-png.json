@@ -28,7 +28,7 @@
       "alternateName": ["Zamiana AVIF na PNG online", "Konwersja AVIF do PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter AVIF na PNG online. Zamień pliki AVIF na bezstratny PNG z zachowaniem przezroczystości — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter AVIF na PNG online. Zamień pliki AVIF na bezstratny PNG z zachowaniem przezroczystości - pliki nie są wysyłane na serwer.",
       "featureList": ["Konwersja AVIF do PNG", "Zachowanie przezroczystości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Konwertuj",
-          "text": "Kliknij przycisk konwertuj. PNG to format bezstratny — nie ma suwaka jakości."
+          "text": "Kliknij przycisk konwertuj. PNG to format bezstratny - nie ma suwaka jakości."
         },
         {
           "name": "Pobierz pliki PNG",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować AVIF na PNG?",
-      "html": "<p class=\"text-mid mb-4\">AV1 Image File Format (AVIF) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do nowoczesnych obrazów webowych.</p><p class=\"text-mid mb-4\">Konwersja AVIF na PNG (Portable Network Graphics) zapewnia uniwersalną kompatybilność z każdą przeglądarką i urządzeniem.</p><p class=\"text-mid mb-4\">PNG obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, PNG zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików AVIF, ile potrzebujesz – całkowicie za darmo.</p>",
+      "html": "<p class=\"text-mid mb-4\">AVIF to nowoczesny format obrazu o doskonałej kompresji, ale nie każdy program go obsługuje. Starsze edytory graficzne, systemy CMS, platformy e-commerce i klienty e-mail często wymagają formatu PNG. Konwersja AVIF na PNG zapewnia uniwersalną kompatybilność — PNG jest obsługiwany przez każdą przeglądarkę, każdy system operacyjny i każdy edytor graficzny.</p><p class=\"text-mid mb-4\">PNG to format bezstratny z obsługą kanału alfa (przezroczystość). Konwersja zachowuje pełną jakość wizualną obrazu AVIF w formacie, który nie degraduje przy kolejnych zapisach. Przezroczyste obszary z pliku AVIF zostaną zachowane w PNG.</p><p class=\"text-mid mb-4\">Pliki PNG będą większe niż oryginalne AVIF — to normalne, ponieważ PNG nie stosuje tak agresywnej kompresji. Jeśli zależy Ci na małym rozmiarze pliku, rozważ konwersję na WebP lub JPG zamiast PNG.</p><p class=\"text-mid\">Konwerter przetwarza pliki lokalnie w przeglądarce — nic nie jest wysyłane na serwer. Bez rejestracji, bez limitów, bez znaków wodnych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwersja AVIF na PNG",
       "variant": "right"
@@ -254,7 +254,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów AVIF na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów AVIF na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -284,7 +284,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików AVIF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików AVIF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -323,11 +323,11 @@
         },
         {
           "question": "Czy konwersja AVIF na PNG jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików AVIF jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy konwersja AVIF na PNG zmienia rozdzielczość obrazu?",
+          "answer": "Nie. Konwersja zachowuje oryginalną rozdzielczość i wymiary pikseli. Plik PNG będzie miał dokładnie taki sam rozmiar w pikselach jak oryginalny AVIF — zmienia się tylko format zapisu, nie zawartość obrazu."
         }
       ]
     },

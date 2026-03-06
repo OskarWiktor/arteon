@@ -2,14 +2,14 @@
   "toolKey": "heicToTiff",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník HEIC na TIFF — HEIC TIFF",
-    "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
+    "title": "Převodník HEIC na TIFF - HEIC TIFF",
+    "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-heic-na-tiff"
   },
   "hero": {
     "title": "Převodník HEIC na TIFF",
-    "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
+    "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník HEIC na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
+      "description": "Převeďte fotky HEIC z iPhonu na profesionální formát TIFF. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["Konverze do TIFF", "Nastavení kvality (60-95%)", "Dávková konverze", "Lokální zpracování v prohlížeči"],
       "alternateName": ["Převést HEIC na TIFF", "Konverze HEIC do TIFF", "Převodník HEIC na TIFF zdarma"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Nastavte kvalitu",
-          "text": "Upravte posuvník kvality TIFF — nižší hodnoty vytvářejí menší soubory."
+          "text": "Upravte posuvník kvality TIFF - nižší hodnoty vytvářejí menší soubory."
         },
         {
           "position": 3,
           "name": "Konvertujte",
-          "text": "Klikněte na Konvertovat — soubory se zpracují lokálně v prohlížeči."
+          "text": "Klikněte na Konvertovat - soubory se zpracují lokálně v prohlížeči."
         },
         {
           "position": 4,
           "name": "Stahnete",
-          "text": "Stáhněte hotové soubory TIFF — jednotlivě nebo všechny naraz."
+          "text": "Stáhněte hotové soubory TIFF - jednotlivě nebo všechny naraz."
         }
       ]
     }
@@ -290,6 +290,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What to expect when converting HEIC to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">HEIC uses lossy HEVC compression while TIFF is typically lossless. The conversion decodes the HEIC data and saves every pixel as-is in TIFF format. No additional quality loss occurs during conversion.</p><p class=\"text-mid mb-4\">TIFF files will be dramatically larger than the original HEIC — a 2 MB HEIC photo may become 18–25 MB in uncompressed TIFF, or 8–12 MB with LZW compression. This is expected.</p><p class=\"text-mid\">Convert to TIFF only when the target system requires it: offset printing, desktop publishing, medical imaging, or professional archival. For general sharing, JPG or WebP produces much smaller files.</p>"
     },
     {
       "type": "faq",

@@ -2,7 +2,7 @@
   "toolKey": "bmpToAvif",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter BMP na AVIF — BMP AVIF",
+    "title": "Konwerter BMP na AVIF - BMP AVIF",
     "description": "Zamień nieskompresowane pliki BMP na nowoczesny AVIF. Ogromna redukcja rozmiaru. Bez instalacji, bez logowania. Działa na każdym urządzeniu z przeglądarką.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-bmp-na-avif"
@@ -28,7 +28,7 @@
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
       "description": "Zamień nieskompresowane pliki BMP na nowoczesny AVIF. Ogromna redukcja rozmiaru. Bez instalacji, bez logowania. Działa na każdym urządzeniu z przeglądarką.",
-      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "featureList": ["Konwersja do AVIF", "Regulacja jakości (60-95%)", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
       "alternateName": ["Zamiana BMP na AVIF", "Konwersja BMP do AVIF", "Darmowy konwerter BMP na AVIF"]
     },
     "howTo": {
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Ustaw jakosc",
-          "text": "Dostosuj suwak jakosci AVIF — nizsze wartosci daja mniejsze pliki."
+          "text": "Dostosuj suwak jakosci AVIF - nizsze wartosci daja mniejsze pliki."
         },
         {
           "position": 3,
           "name": "Konwertuj",
-          "text": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+          "text": "Kliknij Konwertuj - pliki zostaną przetworzone lokalnie w przeglądarce."
         },
         {
           "position": 4,
           "name": "Pobierz",
-          "text": "Pobierz gotowe pliki AVIF — pojedynczo lub wszystkie naraz."
+          "text": "Pobierz gotowe pliki AVIF - pojedynczo lub wszystkie naraz."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować BMP na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) to bezstratny format obsługujący miliony kolorów. Jest powszechnie stosowany do obrazów bez kompresji.</p><p class=\"text-mid mb-4\">Konwersja BMP na AVIF (AV1 Image File Format) znacznie zmniejsza rozmiar pliku, przyspieszając ładowanie stron i ułatwiając udostępnianie.</p><p class=\"text-mid mb-4\">AVIF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. AVIF obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików BMP, ile potrzebujesz – całkowicie za darmo.</p>",
+      "html": "<p class=\"text-mid mb-4\">BMP (Bitmap) to nieskompresowany format rastrowy, w którym każdy piksel jest zapisany osobno. Plik BMP o rozdzielczości 3000×2000 pikseli waży około 18 MB — to kilkadziesiąt razy więcej niż ten sam obraz w AVIF. Format BMP pochodzi z ery Windows 3.1 i nadal jest generowany przez niektóre skanery, urządzenia medyczne i starsze oprogramowanie.</p><p class=\"text-mid mb-4\">AVIF (AV1 Image File Format) to najnowocześniejszy format obrazu, który oferuje kompresję o 30–50% lepszą niż JPG i o 20% lepszą niż WebP. Konwersja BMP na AVIF redukuje rozmiar pliku o ponad 95% — obraz 18 MB w BMP może ważyć 200–400 KB w AVIF przy zachowaniu porównywalnej jakości wizualnej.</p><p class=\"text-mid mb-4\">AVIF obsługuje kompresję stratną i bezstratną, kanał alfa, HDR i głębię do 12 bitów na kanał. Jest wspierany przez Chrome 85+, Firefox 93+, Edge 85+ i Safari 16.4+. To idealny format docelowy dla plików BMP, które muszą trafić na stronę internetową.</p><p class=\"text-mid\">Konwerter przetwarza pliki lokalnie w przeglądarce — nic nie jest wysyłane na serwer. Bez rejestracji, bez limitów, bez znaków wodnych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwersja BMP na AVIF",
       "variant": "right"
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji BMP na AVIF?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem BMP a wynikowym AVIF jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji BMP na AVIF?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem BMP a wynikowym AVIF jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -271,7 +271,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów BMP na AVIF zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów BMP na AVIF zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -301,7 +301,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików BMP, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików BMP, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },

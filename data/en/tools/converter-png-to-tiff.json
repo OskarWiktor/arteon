@@ -2,14 +2,14 @@
   "toolKey": "pngToTiff",
   "locale": "en",
   "metadata": {
-    "title": "PNG to TIFF converter — PNG TIFF",
-    "description": "Convert PNG graphics to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "title": "PNG to TIFF converter - PNG TIFF",
+    "description": "Convert PNG graphics to professional TIFF format. Free browser-based tool - no signup, no file limits, complete privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/png-to-tiff-converter"
   },
   "hero": {
     "title": "PNG to TIFF converter",
-    "description": "Convert PNG graphics to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "description": "Convert PNG graphics to professional TIFF format. Free browser-based tool - no signup, no file limits, complete privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "PNG to TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert PNG graphics to professional TIFF format. Free browser-based tool — no signup, no file limits, complete privacy.",
+      "description": "Convert PNG graphics to professional TIFF format. Free browser-based tool - no signup, no file limits, complete privacy.",
       "featureList": ["Conversion to TIFF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert PNG to TIFF", "PNG to TIFF conversion", "Free PNG to TIFF converter", "Change PNG to TIFF"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Set quality",
-          "text": "Adjust the TIFF quality slider — lower values produce smaller files."
+          "text": "Adjust the TIFF quality slider - lower values produce smaller files."
         },
         {
           "position": 3,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download the TIFF files — individually or all at once."
+          "text": "Download the TIFF files - individually or all at once."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert PNG to TIFF?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) is a lossless image format supporting millions colors. It is widely used for graphics with transparency and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting PNG to TIFF (Tagged Image File Format) gives you more flexibility in how and where you use your images.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, TIFF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many PNG files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG is a lossless web format — great for browsers but not always accepted by professional print and publishing software. TIFF (Tagged Image File Format) is the industry standard for prepress, offset printing, medical imaging, and archival storage. Converting PNG to TIFF prepares images for workflows that require TIFF specifically.</p><p class=\"text-mid mb-4\">Both PNG and TIFF are lossless, so conversion preserves every pixel exactly. TIFF adds support for CMYK color space, 16/32-bit depth, multiple layers, and embedded ICC profiles — features needed for professional print production. Transparency from PNG is preserved in TIFF.</p><p class=\"text-mid mb-4\">TIFF files will be larger than PNG because TIFF uses less aggressive compression (LZW vs Deflate). If you need web-optimized files, keep them as PNG or convert to WebP.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to TIFF conversion",
       "variant": "right"

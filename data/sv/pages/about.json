@@ -6,12 +6,12 @@
   },
   "hero": {
     "title": "Gratis verktyg från en kreativ byrå",
-    "description": "10 webbläsarverktyg för bilder, SEO, färger, e-postsignaturer och QR-koder — utan registrering, utan filuppladdning, utan begränsningar"
+    "description": "10 webbläsarverktyg för bilder, SEO, färger, e-postsignaturer och QR-koder - utan registrering, utan filuppladdning, utan begränsningar"
   },
   "whoWeAre": {
     "title": "Vilka vi är",
     "p1": "Arteon är en polsk kreativ byrå. Utöver vårt kommersiella arbete bygger och underhåller vi en växande samling gratis verktyg utformade för företagare, webbskapare, designers, marknadsförare och alla som arbetar med digitalt innehåll.",
-    "p2": "Varje verktyg vi skapar löser ett specifikt vardagsproblem: konvertera bilder, kontrollera färgkontrast, generera favicons, skapa QR-koder och mer. Vårt mål är att bygga en komplett verktygslåda där du hittar allt du behöver på ett ställe — utan att behöva växla mellan dussintals olika webbplatser."
+    "p2": "Varje verktyg vi skapar löser ett specifikt vardagsproblem: konvertera bilder, kontrollera färgkontrast, generera favicons, skapa QR-koder och mer. Vårt mål är att bygga en komplett verktygslåda där du hittar allt du behöver på ett ställe - utan att behöva växla mellan dussintals olika webbplatser."
   },
   "whyFree": {
     "title": "Varför vi erbjuder gratisverktyg",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Integritet först",
-        "description": "Dina filer lämnar aldrig din enhet. All bearbetning sker lokalt i webbläsaren — vi skickar inte dina data till någon server."
+        "description": "Dina filer lämnar aldrig din enhet. All bearbetning sker lokalt i webbläsaren - vi skickar inte dina data till någon server."
       },
       {
         "title": "Skapade från verkliga behov",
@@ -61,7 +61,7 @@
   },
   "whatsNext": {
     "title": "Vad som kommer härnäst",
-    "text": "Vi arbetar aktivt med att utöka verktygslådan. Nya verktyg läggs till regelbundet baserat på användarfeedback och vår egen erfarenhet. Målet är en enda plattform där företagare, designers och utvecklare har tillgång till varje viktigt verktyg — allt på ett ställe, allt gratis."
+    "text": "Vi arbetar aktivt med att utöka verktygslådan. Nya verktyg läggs till regelbundet baserat på användarfeedback och vår egen erfarenhet. Målet är en enda plattform där företagare, designers och utvecklare har tillgång till varje viktigt verktyg - allt på ett ställe, allt gratis."
   },
   "privacy": {
     "title": "Integritet och säkerhet",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Testa våra verktyg",
-    "description": "Gratis verktyg — utan registrering, utan begränsningar, utan filuppladdning till servrar",
+    "description": "Gratis verktyg - utan registrering, utan begränsningar, utan filuppladdning till servrar",
     "btnOne": "Till verktygen",
     "btnTwo": "Kontakt"
   }

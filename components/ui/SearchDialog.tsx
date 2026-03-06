@@ -7,6 +7,7 @@ import { RiSearchLine, RiCloseLine, RiArrowRightLine } from 'react-icons/ri';
 import { createPortal } from 'react-dom';
 import { useSearch } from '@/hooks/useSearch';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
+import { useDictionary, useLocale, useLocaleConfig } from '@/lib/LocaleContext';
 import type { SearchCategory, SearchItem } from '@/lib/search/searchIndex';
 
 type SearchDialogProps = {
@@ -16,22 +17,26 @@ type SearchDialogProps = {
 
 const CATEGORY_ORDER: SearchCategory[] = ['uslugi', 'narzedzia', 'edukacja', 'realizacje', 'inne'];
 
-const CATEGORY_LABELS: Record<SearchCategory, string> = {
-  uslugi: 'Usługi',
-  narzedzia: 'Narzędzia',
-  edukacja: 'Edukacja',
-  realizacje: 'Realizacje',
-  inne: 'Strony',
-};
-
 export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
   const router = useRouter();
+  const locale = useLocale();
+  const dict = useDictionary();
+  const t = dict.search;
+  const localeConfig = useLocaleConfig();
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(-1);
   const [mounted, setMounted] = useState(false);
 
-  const { query, setQuery, results, groupedResults, hasResults, clearSearch } = useSearch({ debounceMs: 150, limit: 24 });
+  const CATEGORY_LABELS: Record<SearchCategory, string> = {
+    uslugi: t.categoryServices,
+    narzedzia: t.categoryTools,
+    edukacja: t.categoryEducation,
+    realizacje: t.categoryProjects,
+    inne: t.categoryPages,
+  };
+
+  const { query, setQuery, results, groupedResults, hasResults, clearSearch } = useSearch({ locale, debounceMs: 150, limit: 24 });
 
   const flatResults = results;
 
@@ -98,15 +103,17 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
 
   const renderResults = () => {
     if (!query.trim()) {
-      return <div className="text-light px-4 py-8 text-center text-sm">Wpisz frazę, np. „strony internetowe”, „generator favicon” albo „realizacje” a zobaczysz powiązaną z nią stronę.</div>;
+      return <div className="text-light px-4 py-8 text-center text-sm">{t.emptyHint}</div>;
     }
 
     if (!hasResults) {
       return (
         <div className="px-4 py-8 text-center">
-          <p className="text-light text-sm">Brak wyników dla „{query}”</p>
-          <Link href="/kontakt" onClick={onClose} className="text-dark inline-link mt-2 inline-block text-sm font-medium">
-            Skontaktuj się z nami
+          <p className="text-light text-sm">
+            {t.noResults} „{query}”
+          </p>
+          <Link href={localeConfig.contactHref ?? '/kontakt'} onClick={onClose} className="text-dark inline-link mt-2 inline-block text-sm font-medium">
+            {t.contactUs}
           </Link>
         </div>
       );
@@ -144,7 +151,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
       onClick={handleBackdropClick}
       role="dialog"
       aria-modal="true"
-      aria-label="Wyszukiwarka"
+      aria-label={t.ariaLabel}
     >
       <div className="animate-modal-content w-full max-w-xl overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5">
         <div className="flex items-center gap-2 border-b border-neutral-200 px-4 py-1">
@@ -155,11 +162,11 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Szukaj usług, narzędzi, artykułów..."
+            placeholder={t.placeholder}
             className="text-mid placeholder:text-light h-7 flex-1 bg-transparent text-sm placeholder:opacity-80 focus:outline-none"
-            aria-label="Wyszukaj"
+            aria-label={t.ariaSearch}
           />
-          <button type="button" onClick={onClose} className="text-primary hover:bg-primary-light rounded p-0.5" aria-label="Zamknij">
+          <button type="button" onClick={onClose} className="text-primary hover:bg-primary-light rounded p-0.5" aria-label={t.ariaClose}>
             <RiCloseLine className="h-4 w-4" />
           </button>
         </div>

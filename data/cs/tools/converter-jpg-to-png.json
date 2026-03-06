@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník JPG na PNG – JPG PNG",
-    "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
+    "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-jpg-na-png"
   },
   "hero": {
     "title": "Převodník JPG na PNG",
-    "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
+    "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést JPG na PNG", "Konverze JPG do PNG", "Převodník JPG na PNG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
+      "description": "Převeďte obrázky JPG na bezeztrátové PNG. Lokální zpracování v prohlížeči. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["Převod JPG na PNG", "Bezeztrátový výstup PNG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Převeďte na PNG",
-          "text": "Klikněte na převést. PNG je bezeztrátový — není potřeba nastavovat kvalitu."
+          "text": "Klikněte na převést. PNG je bezeztrátový - není potřeba nastavovat kvalitu."
         },
         {
           "name": "Stáhněte soubory PNG",
@@ -338,7 +338,7 @@
     {
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
-      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám - odpovídáme do 24 hodin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník JPG na PNG – Arteon",
       "defaultSubject": "Feedback: Převodník JPG na PNG"

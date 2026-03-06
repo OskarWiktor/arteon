@@ -1,12 +1,67 @@
 'use client';
 
 import Link from 'next/link';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { RiArrowDownSLine, RiCloseLine } from 'react-icons/ri';
 
 import { useLocale } from '@/lib/LocaleContext';
+import { getToolHref } from '@/lib/i18n/tool-registry';
+import type { Locale } from '@/types/locale';
+import { UNIT_CONVERSIONS } from '@/components/sections/tools/UnitConverter/conversions';
 
-import { CATEGORY_LABELS, FORMAT_CATEGORIES, FORMAT_DISPLAY_LABELS, getConversionHref, type FormatCategory, type UniversalFormat } from './allConversionRoutes';
+import { CATEGORY_LABELS, FORMAT_CATEGORIES, FORMAT_DISPLAY_LABELS, getAllRoutes, getConversionHref, type FormatCategory, type UniversalFormat } from './allConversionRoutes';
+
+// ---------------------------------------------------------------------------
+// Unit helpers – build deduplicated unit lists for source / target side
+// ---------------------------------------------------------------------------
+
+interface UnitOption {
+  id: string;
+  label: string;
+  href: string;
+}
+
+function unitId(field: { label: string; suffix: string }): string {
+  return field.suffix || field.label;
+}
+
+function unitDisplayLabel(field: { label: string; suffix: string }): string {
+  return field.suffix || field.label;
+}
+
+function getUnitOptions(side: 'source' | 'target', locale: Locale, currentToolKey?: string): UnitOption[] {
+  const seen = new Set<string>();
+  const items: UnitOption[] = [];
+
+  // Determine the "other side" unit to filter against
+  const current = currentToolKey ? UNIT_CONVERSIONS.find((c) => c.toolKey === currentToolKey) : undefined;
+  const otherSideId = current ? unitId(side === 'source' ? current.targetField : current.sourceField) : undefined;
+
+  for (const conv of UNIT_CONVERSIONS) {
+    const href = getToolHref(conv.toolKey, locale);
+    if (href === '#') continue;
+
+    const field = side === 'source' ? conv.sourceField : conv.targetField;
+    const id = unitId(field);
+
+    if (seen.has(id)) continue;
+    seen.add(id);
+
+    // Check if this unit can pair with the other side
+    if (otherSideId) {
+      const hasPair = UNIT_CONVERSIONS.some((c) => {
+        const cField = side === 'source' ? c.sourceField : c.targetField;
+        const cOther = side === 'source' ? c.targetField : c.sourceField;
+        return unitId(cField) === id && unitId(cOther) === otherSideId && getToolHref(c.toolKey, locale) !== '#';
+      });
+      items.push({ id, label: unitDisplayLabel(field), href: hasPair ? href : '' });
+    } else {
+      items.push({ id, label: unitDisplayLabel(field), href });
+    }
+  }
+
+  return items;
+}
 
 const PICKER_HEADER: Record<PickerSide, Record<string, string>> = {
   source: {
@@ -56,21 +111,23 @@ type PickerSide = 'source' | 'target';
 interface FormatPickerModalProps {
   /** Which side this picker controls */
   side: PickerSide;
-  /** Current source format */
-  currentSource: UniversalFormat;
-  /** Current target format */
-  currentTarget: UniversalFormat;
+  /** Current source format (optional in unit mode) */
+  currentSource?: UniversalFormat;
+  /** Current target format (optional in unit mode) */
+  currentTarget?: UniversalFormat;
   /** Whether user has unsaved work (files in queue) */
   hasFiles?: boolean;
   /** Confirmation message when navigating with files */
   confirmMessage?: string;
+  /** When set, picker opens in unit-converter mode (units tab active, current unit highlighted) */
+  unitToolKey?: string;
 }
 
 // ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
 
-export default function FormatPickerModal({ side, currentSource, currentTarget, hasFiles, confirmMessage }: FormatPickerModalProps) {
+export default function FormatPickerModal({ side, currentSource, currentTarget, hasFiles, confirmMessage, unitToolKey }: FormatPickerModalProps) {
   const locale = useLocale();
   const [open, setOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState<FormatCategory>('images');
@@ -79,6 +136,14 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
   const overlayRef = useRef<HTMLDivElement>(null);
 
   const currentFormat = side === 'source' ? currentSource : currentTarget;
+
+  const { currentUnitId, unitTriggerLabel } = useMemo(() => {
+    if (!unitToolKey) return { currentUnitId: null, unitTriggerLabel: null };
+    const conv = UNIT_CONVERSIONS.find((c) => c.toolKey === unitToolKey);
+    if (!conv) return { currentUnitId: null, unitTriggerLabel: null };
+    const field = side === 'source' ? conv.sourceField : conv.targetField;
+    return { currentUnitId: unitId(field), unitTriggerLabel: unitDisplayLabel(field) };
+  }, [unitToolKey, side]);
 
   // Close on Escape
   useEffect(() => {
@@ -120,10 +185,13 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
 
   const handleToggle = useCallback(() => {
     setOpen((v) => !v);
-    // Set active category to match current format
-    const cat = FORMAT_CATEGORIES.find((c) => c.formats.includes(currentFormat));
-    if (cat) setActiveCategory(cat.key);
-  }, [currentFormat]);
+    if (unitToolKey) {
+      setActiveCategory('units');
+    } else if (currentFormat) {
+      const cat = FORMAT_CATEGORIES.find((c) => c.formats.includes(currentFormat));
+      if (cat) setActiveCategory(cat.key);
+    }
+  }, [currentFormat, unitToolKey]);
 
   const handleLinkClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, href: string | null) => {
@@ -157,11 +225,11 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
         aria-expanded={open}
         aria-haspopup="dialog"
       >
-        {FORMAT_DISPLAY_LABELS[currentFormat]}
+        {unitTriggerLabel ?? (currentFormat ? FORMAT_DISPLAY_LABELS[currentFormat] : '')}
         <RiArrowDownSLine className={`h-3.5 w-3.5 transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
 
-      {/* Panel — desktop: absolute submenu, mobile: fixed modal */}
+      {/* Panel - desktop: absolute submenu, mobile: fixed modal */}
       {open && (
         <>
           {/* Mobile overlay */}
@@ -196,52 +264,97 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                 ))}
               </nav>
 
-              {/* Formats grid */}
+              {/* Content area */}
               <div className="flex-1 overflow-y-auto p-3">
-                <div className="grid grid-cols-3 gap-2">
-                  {formats.map((fmt) => {
-                    const isCurrent = fmt === currentFormat;
-                    // Determine the href: for "source" picker, we keep current target; for "target" picker, we keep current source
-                    const newSource = side === 'source' ? fmt : currentSource;
-                    const newTarget = side === 'target' ? fmt : currentTarget;
-                    const href = newSource === newTarget ? null : getConversionHref(newSource, newTarget, locale);
-                    const isAvailable = !!href;
-                    const isDisabled = !isAvailable && !isCurrent;
-
-                    if (isCurrent) {
+                {activeCategory === 'units' ? (
+                  <div className="grid grid-cols-3 gap-1.5">
+                    {getUnitOptions(side, locale, unitToolKey).map((item) => {
+                      if (currentUnitId === item.id) {
+                        return (
+                          <span key={item.id} className="bg-primary flex items-center justify-center rounded-lg px-2 py-2.5 text-center text-xs font-semibold text-white" aria-current="true">
+                            {item.label}
+                          </span>
+                        );
+                      }
+                      if (!item.href) {
+                        return (
+                          <span
+                            key={item.id}
+                            className="flex cursor-not-allowed items-center justify-center rounded-lg border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300"
+                            aria-disabled="true"
+                          >
+                            {item.label}
+                          </span>
+                        );
+                      }
                       return (
-                        <span key={fmt} className="bg-primary flex items-center justify-center rounded-lg px-2 py-2.5 text-center text-xs font-semibold text-white" aria-current="true">
-                          {FORMAT_DISPLAY_LABELS[fmt]}
-                        </span>
+                        <Link
+                          key={item.id}
+                          href={item.href}
+                          scroll={false}
+                          onClick={(e) => handleLinkClick(e, item.href)}
+                          className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-lg border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
+                          prefetch={true}
+                        >
+                          {item.label}
+                        </Link>
                       );
-                    }
+                    })}
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-3 gap-2">
+                    {formats.map((fmt) => {
+                      const isCurrent = !!currentFormat && fmt === currentFormat;
+                      const newSource = side === 'source' ? fmt : currentSource;
+                      const newTarget = side === 'target' ? fmt : currentTarget;
 
-                    if (isDisabled) {
+                      let href: string | null = null;
+                      if (newSource && newTarget && newSource !== newTarget) {
+                        href = getConversionHref(newSource, newTarget, locale);
+                      } else if (newSource && !newTarget) {
+                        href = getAllRoutes(locale).find((r) => r.source === newSource)?.href ?? null;
+                      } else if (!newSource && newTarget) {
+                        href = getAllRoutes(locale).find((r) => r.target === newTarget)?.href ?? null;
+                      }
+
+                      const isAvailable = !!href;
+                      const isDisabled = !isAvailable && !isCurrent;
+
+                      if (isCurrent) {
+                        return (
+                          <span key={fmt} className="bg-primary flex items-center justify-center rounded-lg px-2 py-2.5 text-center text-xs font-semibold text-white" aria-current="true">
+                            {FORMAT_DISPLAY_LABELS[fmt]}
+                          </span>
+                        );
+                      }
+
+                      if (isDisabled) {
+                        return (
+                          <span
+                            key={fmt}
+                            className="flex cursor-not-allowed items-center justify-center rounded-lg border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300"
+                            aria-disabled="true"
+                          >
+                            {FORMAT_DISPLAY_LABELS[fmt]}
+                          </span>
+                        );
+                      }
+
                       return (
-                        <span
+                        <Link
                           key={fmt}
-                          className="flex cursor-not-allowed items-center justify-center rounded-lg border border-neutral-100 bg-neutral-50 px-2 py-2.5 text-center text-xs font-medium text-neutral-300"
-                          aria-disabled="true"
+                          href={href!}
+                          scroll={false}
+                          onClick={(e) => handleLinkClick(e, href)}
+                          className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-lg border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
+                          prefetch={true}
                         >
                           {FORMAT_DISPLAY_LABELS[fmt]}
-                        </span>
+                        </Link>
                       );
-                    }
-
-                    return (
-                      <Link
-                        key={fmt}
-                        href={href!}
-                        scroll={false}
-                        onClick={(e) => handleLinkClick(e, href)}
-                        className="border-primary/20 hover:bg-primary/5 hover:border-primary/40 flex items-center justify-center rounded-lg border bg-white px-2 py-2.5 text-center text-xs font-semibold transition-colors"
-                        prefetch={true}
-                      >
-                        {FORMAT_DISPLAY_LABELS[fmt]}
-                      </Link>
-                    );
-                  })}
-                </div>
+                    })}
+                  </div>
+                )}
               </div>
             </div>
           </div>

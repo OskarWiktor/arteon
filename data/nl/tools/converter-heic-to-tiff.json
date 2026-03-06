@@ -2,14 +2,14 @@
   "toolKey": "heicToTiff",
   "locale": "nl",
   "metadata": {
-    "title": "HEIC naar TIFF converter — HEIC TIFF",
-    "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "title": "HEIC naar TIFF converter - HEIC TIFF",
+    "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/heic-naar-tiff-converter"
   },
   "hero": {
     "title": "HEIC naar TIFF converter",
-    "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC naar TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+      "description": "Converteer iPhone HEIC-foto\\'s naar professioneel TIFF-formaat. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["Conversie naar TIFF", "Kwaliteitsaanpassing (60-95%)", "Batchconversie", "Lokale verwerking in de browser"],
       "alternateName": ["HEIC naar TIFF omzetten", "HEIC naar TIFF conversie", "Gratis HEIC naar TIFF converter"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Kwaliteit instellen",
-          "text": "Pas de TIFF-kwaliteitsschuifregelaar aan — lagere waarden geven kleinere bestanden."
+          "text": "Pas de TIFF-kwaliteitsschuifregelaar aan - lagere waarden geven kleinere bestanden."
         },
         {
           "position": 3,
           "name": "Converteren",
-          "text": "Klik op Converteren — bestanden worden lokaal in de browser verwerkt."
+          "text": "Klik op Converteren - bestanden worden lokaal in de browser verwerkt."
         },
         {
           "position": 4,
           "name": "Downloaden",
-          "text": "Download de TIFF-bestanden — individueel of allemaal tegelijk."
+          "text": "Download de TIFF-bestanden - individueel of allemaal tegelijk."
         }
       ]
     }
@@ -290,6 +290,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What to expect when converting HEIC to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">HEIC uses lossy HEVC compression while TIFF is typically lossless. The conversion decodes the HEIC data and saves every pixel as-is in TIFF format. No additional quality loss occurs during conversion.</p><p class=\"text-mid mb-4\">TIFF files will be dramatically larger than the original HEIC — a 2 MB HEIC photo may become 18–25 MB in uncompressed TIFF, or 8–12 MB with LZW compression. This is expected.</p><p class=\"text-mid\">Convert to TIFF only when the target system requires it: offset printing, desktop publishing, medical imaging, or professional archival. For general sharing, JPG or WebP produces much smaller files.</p>"
     },
     {
       "type": "faq",

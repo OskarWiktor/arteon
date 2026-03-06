@@ -43,7 +43,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Ilmaiset online-työkalut — kuvamuuntimet, SEO, värit, favicon',
+  name: 'Ilmaiset online-työkalut - kuvamuuntimet, SEO, värit, favicon',
   description:
     '22 ilmaista online-työkalua: 12 kuvamuunninta (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generaattori, kuvaeditori, tekstilaskuri, väripaletit ja QR-koodit. Ilman rekisteröitymistä.',
   url: toAbsoluteUrl('/fi/tyokalut'),
@@ -630,6 +630,23 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Lorem Ipsum -generaattori',
+              topImageAlt: 'Lorem Ipsum -generaattori Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generaattori-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Luo täytetekstiä 8 tyylillä ja 9 tilassa. Lorem Ipsum, Hipster, Business, Bacon ja lisää. Kopioi tekstinä tai HTML:nä.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/lorem-ipsum-generaattori">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
         <Gap size="sm" />
@@ -743,7 +760,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Kuvaformaattimuuntimet"
-          description="12 online-kuvamuunninta — muunna JPG, PNG, WebP, SVG, BMP ja GIF välillä. Muunnos selaimessa, tiedostoja ei lähetetä."
+          description="12 online-kuvamuunninta - muunna JPG, PNG, WebP, SVG, BMP ja GIF välillä. Muunnos selaimessa, tiedostoja ei lähetetä."
           grid="three"
           items={[
             {
@@ -842,16 +859,25 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Datamuuntimet"
+          description="Online-tiedostomuotomuuntimet — muunna CSV:n, JSON:n, XML:n, YAML:n, Markdownin ja HTML:n välillä. Käsittely selaimessa."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG PNG -muunnin',
-              topImageAlt: 'SVG PNG -muunnin Arteon',
+              title: 'CSV JSON',
+              topImageAlt: 'CSV JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Muunna SVG-vektorigrafiikka PNG-muotoon. Ihanteellinen dokumentteihin ja sosiaaliseen mediaan.</p>
+                  <p>Muunna CSV JSON-muotoon. Automaattinen erottimen tunnistus ja muotoilu.</p>
                   <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/svg-png-muunnin">
+                    <Button arrow link="/fi/tyokalut/csv-json-muunnin">
                       Avaa työkalu
                     </Button>
                   </div>
@@ -860,14 +886,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG JPG -muunnin',
-              topImageAlt: 'SVG JPG -muunnin Arteon',
+              title: 'JSON CSV',
+              topImageAlt: 'JSON CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Muunna SVG-grafiikat kompaktiin JPG-muotoon. Pienempi tiedosto, täysi yhteensopivuus.</p>
+                  <p>Muunna JSON-tiedot CSV-muotoon. Käsittely selaimessa.</p>
                   <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/svg-jpg-muunnin">
+                    <Button arrow link="/fi/tyokalut/json-csv-muunnin">
                       Avaa työkalu
                     </Button>
                   </div>
@@ -876,14 +902,62 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP JPG -muunnin',
-              topImageAlt: 'BMP JPG -muunnin Arteon',
+              title: 'XML JSON',
+              topImageAlt: 'XML JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen.</p>
+                  <p>Muunna XML-tiedot JSON-muotoon. Selainpohjainen muuntaminen validoinnilla.</p>
                   <div className="mt-4">
-                    <Button arrow link="/fi/tyokalut/bmp-jpg-muunnin">
+                    <Button arrow link="/fi/tyokalut/xml-json-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON XML',
+              topImageAlt: 'JSON XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna JSON-tiedot kelvolliseksi XML:ksi. Muotoilu selaimessa.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/json-xml-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML JSON',
+              topImageAlt: 'YAML JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna YAML-konfiguraatio JSON-muotoon. Validointi ja muotoilu.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/yaml-json-muunnin">
+                      Avaa työkalu
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON YAML',
+              topImageAlt: 'JSON YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Muunna JSON-tiedot luettavaksi YAML:ksi. Käsittely selaimessa.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fi/tyokalut/json-yaml-muunnin">
                       Avaa työkalu
                     </Button>
                   </div>
@@ -922,6 +996,7 @@ export default function ToolsIndexPage() {
             { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Saatavilla suomeksi', description: 'Kaikki työkalut ovat saatavilla suomeksi – käyttöliittymä, ohjeet ja ilmoitukset.' },
           ]}
         />
+
         <Gap variant="line" />
         <FaqPanels items={faqItems} title="Usein kysytyt kysymykset työkaluistamme" />
         <Gap size="sm" />

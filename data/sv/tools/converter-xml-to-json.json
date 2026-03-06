@@ -2,7 +2,7 @@
   "toolKey": "xmlToJson",
   "locale": "sv",
   "metadata": {
-    "title": "XML till JSON-konverterare — XML JSON",
+    "title": "XML till JSON-konverterare - XML JSON",
     "description": "Konvertera XML till JSON-format. Automatisk parsning och formatering. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/xml-till-json-konverterare"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera XML till JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till JSON erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina XML-filer till JSON-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till JSON erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina XML-filer till JSON-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur mycket sparar du vid konvertering XML till JSON?",
-      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+      "title": "Hur fungerar konvertering fr\u00e5n XML till JSON?",
+      "html": "<p class=\"text-mid mb-4\">XML anv\u00e4nder en taggbaserad hierarki med \u00f6ppnings- och st\u00e4ngningselement, medan JSON anv\u00e4nder l\u00e4ttviktiga klammerparenteser och nyckel-v\u00e4rde-par. Konverteraren analyserar XML-dokumenttr\u00e4det och kopplar varje element till en motsvarande JSON-struktur.</p><p class=\"text-mid mb-4\">XML-element blir JSON-objekt, upprepade element med samma taggnamn blir JSON-arrayer, och textinneh\u00e5ll blir str\u00e4ngv\u00e4rden. XML-attribut representeras som speciella egenskaper (med @-prefix) i JSON-objektet.</p><p class=\"text-mid\">JSON \u00e4r det f\u00f6redragna formatet f\u00f6r moderna webb-API:er, JavaScript-applikationer och NoSQL-databaser. Konverteringen sker helt i din webbl\u00e4sare.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering XML till JSON",
-      "description": "Tips for att undvika vanliga problem:",
+      "title": "Tips f\u00f6r konvertering fr\u00e5n XML till JSON",
+      "description": "N\u00e5gra tips f\u00f6r att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Mycket stora filer",
-          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+          "icon": "RiCodeLine",
+          "title": "XML-attribut",
+          "description": "XML-attribut konverteras till JSON-egenskaper med @-prefix. T.ex. &lt;item id='1'&gt; blir {\"@id\": \"1\"}."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Redan komprimerade",
-          "description": "Om XML redan var kraftigt komprimerad kanske konvertering till JSON inte sparar mycket."
+          "icon": "RiNodeTree",
+          "title": "Namnrymder",
+          "description": "XML-namnrymder bevaras i JSON-utdata som en del av elementnamnen. Komplexa namnrymdsdeklarationer kan kr\u00e4va manuell rensning."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "JSON stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+          "icon": "RiFileTextLine",
+          "title": "Blandat inneh\u00e5ll",
+          "description": "XML-element som inneh\u00e5ller b\u00e5de text och barnelement hanteras genom att placera texten i en speciell #text-egenskap i JSON."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Spara originalen",
-          "description": "Forlustkomprimering ar irreversibel. Spara kopior av XML-filer."
+          "icon": "RiFileCodeLine",
+          "title": "CDATA-sektioner",
+          "description": "CDATA-sektioner i XML konverteras till vanliga str\u00e4ngv\u00e4rden i JSON. CDATA-omslutningen tas bort och inneh\u00e5llet bevaras intakt."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         },
         {
-          "question": "Ar konvertering XML till JSON saker?",
-          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+          "question": "Är konverteringen från XML till JSON säker?",
+          "answer": "Ja. All konvertering sker lokalt i din webbläsare. Ingen data skickas till någon server."
         },
         {
-          "question": "Kan jag konvertera flera XML-filer samtidigt?",
-          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+          "question": "Går XML-attribut förlorade vid konverteringen?",
+          "answer": "Nej. XML-attribut bevaras i JSON-utdata som egenskaper med @-prefix. T.ex. id='123' blir \"@id\": \"123\" i JSON-objektet."
         },
         {
-          "question": "Stods JSON av alla webblasare?",
-          "answer": "JSON stods av Chrome, Firefox, Safari, Edge och Opera."
+          "question": "Kan jag använda JSON-utdata i JavaScript?",
+          "answer": "Ja. Utdata är standard-JSON som kan användas med JSON.parse() i JavaScript eller direkt i alla programmeringsspråk, API:er eller databaser."
         }
       ]
     },

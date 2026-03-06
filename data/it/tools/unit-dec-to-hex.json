@@ -1,0 +1,277 @@
+{
+  "toolKey": "decToHex",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore decimale in esadecimale",
+    "description": "Converti numeri decimali in esadecimale. Essenziale per colori web e programmazione.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-decimale-in-hex"
+  },
+  "hero": {
+    "title": "Convertire decimale in esadecimale",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-decimale-in-hex",
+      "label": "dec in hex"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore decimale in esadecimale",
+      "alternateName": ["Convertire decimale in esadecimale"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti numeri decimali in esadecimale. Essenziale per colori web e programmazione.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire decimale in esadecimale?",
+      "html": "<p class=\"text-mid mb-4\">L’esadecimale (base-16) usa le cifre 0–9 e le lettere A–F. È una rappresentazione compatta dei dati binari: una cifra hex = 4 bit.</p><p class=\"text-mid mb-4\">I colori web usano hex: #FF5733 = Rosso 255, Verde 87, Blu 51. Indirizzi memoria: 0x7FFF = 32.767.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore decimale in esadecimale – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato appare istantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Copia il risultato o inverti la direzione di conversione.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Colori web",
+          "description": "Colori CSS in hex: #FF0000 = Rosso, #00FF00 = Verde."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Programmazione",
+          "description": "Indirizzi memoria e valori byte in hex."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Unicode",
+          "description": "Punti di codice Unicode in hex: U+0041 = A, U+00E9 = é."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Debug",
+          "description": "I dump hex mostrano contenuti file in modo compatto."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Converti in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Tabella con valori comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">Dividi ripetutamente per 16 e annota i resti (A–F per 10–15). Leggi dal basso verso l’alto.</p><p class=\"text-mid\">Ogni cifra hex = 4 bit. Due cifre hex = 1 byte (0–255).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">Dividi ripetutamente per 16 e annota i resti (A–F per 10–15). Leggi dal basso verso l’alto.</p><p class=\"text-mid\">Ogni cifra hex = 4 bit. Due cifre hex = 1 byte (0–255).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimale vs Esadecimale",
+      "featureLabel": "Caratteristica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimale (base-10)"
+        },
+        {
+          "id": "unit2",
+          "name": "Esadecimale (base-16)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Cifre",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–9, A–F"
+          }
+        },
+        {
+          "name": "Esempio: 255",
+          "values": {
+            "unit1": "255",
+            "unit2": "FF"
+          }
+        },
+        {
+          "name": "Esempio: 1000",
+          "values": {
+            "unit1": "1000",
+            "unit2": "3E8"
+          }
+        },
+        {
+          "name": "Usato per",
+          "values": {
+            "unit1": "Calcolo quotidiano",
+            "unit2": "Colori, indirizzi"
+          }
+        },
+        {
+          "name": "Compattezza",
+          "values": {
+            "unit1": "Standard",
+            "unit2": "Più compatto del binario"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanto è 255 in hex?",
+          "answer": "255 = FF in esadecimale. Massimo di un byte."
+        },
+        {
+          "question": "Cosa significa 0x?",
+          "answer": "0x è un prefisso per numeri esadecimali nella maggior parte dei linguaggi (C, JavaScript, Python)."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "dziesiętny na szesnastkowy – Arteon",
+      "defaultSubject": "Feedback: dec-to-hex"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

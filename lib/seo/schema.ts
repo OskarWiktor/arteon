@@ -5,9 +5,9 @@
  * All schema generation should use these helpers to ensure consistency.
  *
  * Related files:
- * - utils/absoluteUrl.ts — siteUrl constant and URL helpers
- * - lib/serviceSchema.ts — Service schema builder (uses helpers from here)
- * - lib/i18n/pages/tool-meta.ts — Tool schema builders
+ * - utils/absoluteUrl.ts - siteUrl constant and URL helpers
+ * - lib/serviceSchema.ts - Service schema builder (uses helpers from here)
+ * - lib/i18n/pages/tool-meta.ts - Tool schema builders
  */
 
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';

@@ -2,7 +2,10 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import { searchItems, groupSearchResults, type SearchItem, type SearchCategory } from '@/lib/search/searchIndex';
 import { useDebouncedEffect } from '@/hooks/useDebouncedEffect';
 
+import type { Locale } from '@/types/locale';
+
 type UseSearchOptions = {
+  locale: Locale;
   debounceMs?: number;
   limit?: number;
 };
@@ -17,8 +20,8 @@ type UseSearchReturn = {
   clearSearch: () => void;
 };
 
-export function useSearch(options: UseSearchOptions = {}): UseSearchReturn {
-  const { debounceMs = 150, limit = 20 } = options;
+export function useSearch(options: UseSearchOptions): UseSearchReturn {
+  const { locale, debounceMs = 150, limit = 20 } = options;
 
   const [query, setQuery] = useState('');
   const [debouncedQuery, setDebouncedQuery] = useState('');
@@ -46,8 +49,8 @@ export function useSearch(options: UseSearchOptions = {}): UseSearchReturn {
 
   const results = useMemo(() => {
     if (!debouncedQuery.trim()) return [];
-    return searchItems(debouncedQuery, limit);
-  }, [debouncedQuery, limit]);
+    return searchItems(debouncedQuery, locale, limit);
+  }, [debouncedQuery, locale, limit]);
 
   const groupedResults = useMemo(() => groupSearchResults(results), [results]);
 

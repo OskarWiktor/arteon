@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor HEIC în JPG – HEIC JPG",
-    "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+    "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-heic-in-jpg"
   },
   "hero": {
     "title": "Convertor HEIC în JPG",
-    "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+    "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor HEIC în JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+      "description": "Convertește fotografii HEIC de pe iPhone în JPG universal. Fara inregistrare, fara upload. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie HEIC în JPG", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie HEIC în JPG", "Convertor HEIC în JPG", "Convertor gratuit HEIC în JPG"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Setari calitate — ce alegi la conversia HEIC in JPG?",
-      "html": "<p class=\"text-mid\">Cursorul permite 60%-95%. Mai mare = calitate mai buna dar fisiere mai mari.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (implicit) — echilibru bun pentru site-uri, bloguri, articole.</strong></li><li><strong>85–90% — pentru fotografii de produse, portofolii si galerii.</strong></li><li><strong>60–70% — cand minimizarea dimensiunii e prioritara.</strong></li></ul><p class=\"text-mid mt-3\">La 85% diferenta vizuala dintre HEIC original si JPG rezultat e imperceptibila.</p>"
+      "title": "Setari calitate - ce alegi la conversia HEIC in JPG?",
+      "html": "<p class=\"text-mid\">Cursorul permite 60%-95%. Mai mare = calitate mai buna dar fisiere mai mari.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (implicit) - echilibru bun pentru site-uri, bloguri, articole.</strong></li><li><strong>85–90% - pentru fotografii de produse, portofolii si galerii.</strong></li><li><strong>60–70% - cand minimizarea dimensiunii e prioritara.</strong></li></ul><p class=\"text-mid mt-3\">La 85% diferenta vizuala dintre HEIC original si JPG rezultat e imperceptibila.</p>"
     },
     {
       "type": "gap",

@@ -1,0 +1,277 @@
+{
+  "toolKey": "decToBin",
+  "locale": "nl",
+  "metadata": {
+    "title": "DEC naar BIN – converter",
+    "description": "Reken decimale getallen om naar binair en andersom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/nl/tools/decimaal-naar-binair-converter"
+  },
+  "hero": {
+    "title": "DEC naar BIN",
+    "description": "Deze converter rekent direct om. Voer een waarde in en het resultaat verschijnt onmiddellijk.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/decimaal-naar-binair-converter",
+      "label": "DEC naar BIN"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "DEC naar BIN – converter",
+      "alternateName": ["DEC naar BIN"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Reken decimale getallen om naar binair en andersom.",
+      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+    },
+    "howTo": {
+      "name": "Hoe de converter te gebruiken",
+      "description": "Snelle handleiding voor de converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Waarde invoeren",
+          "text": "Typ een getal in het invoerveld aan de linkerkant."
+        },
+        {
+          "name": "Resultaat aflezen",
+          "text": "Het conversieresultaat verschijnt direct in het veld ernaast."
+        },
+        {
+          "name": "Kopiëren of omdraaien",
+          "text": "Klik op Resultaat kopiëren of op Omdraaien om in de andere richting te converteren."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wanneer heb je nodig: DEC naar BIN?",
+      "html": "<p class=\"text-mid mb-4\">Het binaire talsysteem (basis-2) is het fundamentele talsysteem van computers. Elke bit vertegenwoordigt een macht van 2. Voorbeeld: 42 = 101010 (32+8+2).</p><p class=\"text-mid\">Alle berekeningen draaien lokaal in je browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DEC naar BIN – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe gebruik je de omrekentool?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voer een waarde in",
+          "description": "Typ een getal in het invoerveld.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lees het resultaat",
+          "description": "Het resultaat verschijnt direct.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieer of wissel",
+          "description": "Kopieer het resultaat of wissel de richting.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer is deze converter nuttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webontwikkeling",
+          "description": "Bitbewerkingen, bitvlaggen en binaire rekenkunde."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Internet",
+          "description": "IP-adressen en subnetmaskers in binair."
+        },
+        {
+          "icon": "RiShieldKeyholeLine",
+          "title": "Rechten",
+          "description": "Unix: chmod 755 = rwxr-xr-x = 111101101."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Informatica",
+          "description": "Hoe computers getallen opslaan."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze tool bijzonder?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Alle berekeningen draaien lokaal in je browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Directe resultaten",
+          "description": "Het resultaat wordt bijgewerkt terwijl je typt."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tweerichtingsomrekening",
+          "description": "Wissel de richting met één klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referentietabel",
+          "description": "Tabel met gangbare waarden en context."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">Deel herhaaldelijk door 2 en noteer de resten. Lees van onder naar boven.</p><p class=\"text-mid\">8 bits = 1 byte = waarden 0–255.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">Deel herhaaldelijk door 2 en noteer de resten. Lees van onder naar boven.</p><p class=\"text-mid\">8 bits = 1 byte = waarden 0–255.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimaal vs Binair",
+      "featureLabel": "Eigenschap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimaal (basis-10)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binair (basis-2)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Cijfers",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–1"
+          }
+        },
+        {
+          "name": "Gebruikt door",
+          "values": {
+            "unit1": "Mensen",
+            "unit2": "Computers"
+          }
+        },
+        {
+          "name": "Voorbeeld: 42",
+          "values": {
+            "unit1": "42",
+            "unit2": "101010"
+          }
+        },
+        {
+          "name": "Voorbeeld: 255",
+          "values": {
+            "unit1": "255",
+            "unit2": "11111111"
+          }
+        },
+        {
+          "name": "Leesbaarheid",
+          "values": {
+            "unit1": "Gemakkelijk",
+            "unit2": "Lang maar natief"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wat is 10 in binair?",
+          "answer": "10 = 1010 (8+2)."
+        },
+        {
+          "question": "Wat is 255 in binair?",
+          "answer": "255 = 11111111 (acht enen). Maximum voor een byte."
+        },
+        {
+          "question": "Worden berekeningen lokaal uitgevoerd?",
+          "answer": "Ja. Alle berekeningen draaien in je browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DEC naar BIN – Arteon",
+      "defaultSubject": "Feedback: dec-to-bin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

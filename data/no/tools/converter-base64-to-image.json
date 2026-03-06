@@ -2,7 +2,7 @@
   "toolKey": "base64ToImage",
   "locale": "no",
   "metadata": {
-    "title": "Base64 til bilde-konverterer — Base64 bilde",
+    "title": "Base64 til bilde-konverterer - Base64 bilde",
     "description": "Dekod Base64-strenger til bilder. Forhåndsvisning og nedlasting i nettleseren. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/base64-til-bilde-konverterer"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konverter",
-          "text": "Klikk på Konverter — filene behandles lokalt i nettleseren din."
+          "text": "Klikk på Konverter - filene behandles lokalt i nettleseren din."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere Base64 til bilde?",
-      "html": "<p class=\"text-mid mb-4\">BASE64 er et mye brukt filformat med bred kompatibilitet. Avhengig av bruksomradet kan konvertering til IMAGE gi betydelige fordeler — mindre filer, bedre kvalitet eller bredere plattformstotte.</p><p class=\"text-mid mb-4\">Denne gratis nettkonverteren gjor om BASE64-filene dine til IMAGE-format direkte i nettleseren. Ingen filer lastes opp — hele prosessen skjer lokalt pa enheten din.</p><p class=\"text-mid\">Konverter sa mange filer du vil uten daglige begrensninger, uten registrering og uten vannmerker. Dra og slipp filer, juster kvaliteten og last ned resultatene.</p>",
+      "html": "<p class=\"text-mid mb-4\">BASE64 er et mye brukt filformat med bred kompatibilitet. Avhengig av bruksomradet kan konvertering til IMAGE gi betydelige fordeler - mindre filer, bedre kvalitet eller bredere plattformstotte.</p><p class=\"text-mid mb-4\">Denne gratis nettkonverteren gjor om BASE64-filene dine til IMAGE-format direkte i nettleseren. Ingen filer lastes opp - hele prosessen skjer lokalt pa enheten din.</p><p class=\"text-mid\">Konverter sa mange filer du vil uten daglige begrensninger, uten registrering og uten vannmerker. Dra og slipp filer, juster kvaliteten og last ned resultatene.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "Base64 to bilde conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konverter",
-          "description": "Klikk på Konverter — filene behandles lokalt i nettleseren din.",
+          "description": "Klikk på Konverter - filene behandles lokalt i nettleseren din.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvor mye sparer du ved konvertering BASE64 til IMAGE?",
-      "html": "<p class=\"text-mid mb-4\">Besparelsene avhenger av filtype og komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerabilde</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbilde</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skjermbilde / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparelse: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiske besparelser varierer etter innhold og innstillinger.</p>"
+      "title": "Hvordan fungerer Base64 til bilde-dekoding?",
+      "html": "<p class=\"text-mid mb-4\">Base64-dekoding er den omvendte operasjonen av Base64-koding — den konverterer en tekststreng tilbake til binære bildedata. Konverteren leser Base64-strengen (med eller uten Data URI-prefiks), dekoder den til råbytes og gjenskaper den originale bildefilen.</p><p class=\"text-mid mb-4\">Data URI-prefikset (f.eks. data:image/png;base64,) forteller konverteren hvilket bildeformat som skal brukes. Hvis prefikset mangler, registrerer konverteren automatisk formatet fra de dekodede dataenes binære signatur (magic bytes).</p><p class=\"text-mid\">Dette verktøyet er nyttig når du trenger å hente ut et bilde fra en HTML-side, CSS-fil, API-svar eller database som lagrer bilder som Base64-strenger. All konvertering skjer lokalt i nettleseren din.</p>"
     },
     {
       "type": "gap",
@@ -138,29 +138,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering BASE64 til IMAGE",
-      "description": "Tips for a unnga vanlige problemer:",
+      "title": "Tips for Base64 til bilde-dekoding",
+      "description": "Noen tips for å unngå vanlige problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Veldig store filer",
-          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+          "title": "Data URI-prefiks",
+          "description": "Konverteren aksepterer Base64-strenger med og uten Data URI-prefiks (data:image/...). Hvis prefikset finnes, brukes det til å bestemme outputformatet."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Allerede komprimerte",
-          "description": "Hvis BASE64 allerede var sterkt komprimert, gir konvertering til IMAGE kanskje ikke stor besparelse."
+          "icon": "RiCodeLine",
+          "title": "Ugyldige tegn",
+          "description": "Base64-strenger kan bare inneholde A–Z, a–z, 0–9, +, / og = (padding). Mellomrom og linjeskift fjernes automatisk før dekoding."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "IMAGE stotter ikke transparens. Transparente omrader blir hvite. Vurder PNG eller WebP."
+          "icon": "RiFileImageLine",
+          "title": "Outputformat",
+          "description": "Det dekodede bildet lagres i formatet angitt av Data URI-prefikset. Uten prefiks registrerer konverteren automatisk formatet."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Behold originalene",
-          "description": "Tapsbringende konvertering er irreversibel. Behold kopier av BASE64-filer."
+          "icon": "RiFileCodeLine",
+          "title": "Lange strenger",
+          "description": "Veldig lange Base64-strenger (som representerer store bilder) kan ta litt tid å dekode. Konverteren håndterer strenger av enhver lengde som nettleseren din kan behandle."
         }
       ]
     },
@@ -190,16 +190,16 @@
           "answer": "Ja, den fungerer på alle enheter med en moderne nettleser."
         },
         {
-          "question": "Er konvertering BASE64 til IMAGE trygt?",
-          "answer": "Ja. Alt skjer lokalt i nettleseren via Canvas API. Ingenting sendes til servere."
+          "question": "Er Base64 til bilde-dekoding trygt?",
+          "answer": "Ja. Dekodingsprosessen skjer helt lokalt i nettleseren din. Dataene dine sendes aldri til noen server."
         },
         {
-          "question": "Kan jeg konvertere flere BASE64-filer?",
-          "answer": "Ja. Batchkonvertering uten begrensning. Dra filer til konverteringsomradet."
+          "question": "Hvilke bildeformater støttes?",
+          "answer": "Konverteren kan dekode Base64-strenger til PNG, JPG, GIF, WebP, SVG, BMP og andre standardformater. Formatet registreres automatisk fra Data URI-prefikset eller det binære innholdet."
         },
         {
-          "question": "Stottes IMAGE av alle nettlesere?",
-          "answer": "IMAGE stottes av Chrome, Firefox, Safari, Edge og Opera."
+          "question": "Hvordan får jeg en Base64-streng fra et bilde?",
+          "answer": "Base64-strenger for bilder finnes i HTML-kildekode (src-attributt), CSS-filer (background-image), API-svar eller databaser. Søk etter strenger som starter med data:image/ etterfulgt av base64,."
         }
       ]
     },

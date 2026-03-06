@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert HEIC to WebP?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is a lossy image format supporting millions colors. It is widely used for Apple device photos with browser support in Safari only.</p><p class=\"text-mid mb-4\">Converting HEIC to WebP (WebP) takes advantage of modern compression technology for smaller file sizes without quality loss.</p><p class=\"text-mid mb-4\">WebP supports alpha transparency, preserving any transparent areas in your image. WebP supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many HEIC files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC is the default photo format on Apple devices but is not supported on Windows, Android, or most web platforms. WebP is a modern format supported by all major browsers (Chrome, Firefox, Safari 14+, Edge) that offers excellent compression — comparable to HEIC but with universal web compatibility.</p><p class=\"text-mid mb-4\">Converting HEIC to WebP is ideal for publishing iPhone photos on websites, e-commerce platforms, and social media. WebP files are typically 25–35% smaller than JPG and support both lossy and lossless compression with alpha transparency.</p><p class=\"text-mid mb-4\">For maximum compression with the latest browsers, consider AVIF. For maximum device compatibility (including email clients and legacy software), convert to JPG instead.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "HEIC to WebP conversion",
       "variant": "right"
@@ -101,22 +101,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert HEIC to WebP to significantly reduce page load times and improve Core Web Vitals scores."
+          "description": "HEIC photos from iPhone cannot be displayed in web browsers. Converting to WebP creates web-optimized images supported by all modern browsers (Chrome, Firefox, Safari 14+, Edge) with excellent compression."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "WebP files are compatible with most modern platforms. Convert to WebP for smaller attachments that stay within email size limits."
+          "description": "WebP files are compact and widely supported. Converting HEIC to WebP makes iPhone photos easy to share via email and messaging while keeping file sizes small."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify often prefer WebP format for product images due to its optimal balance of quality and file size."
+          "description": "iPhone product photos in HEIC need conversion for web use. WebP provides excellent compression for product listings, supported by all major e-commerce platforms and content management systems."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "WebP provides a modern and efficient format for document image storage."
+          "description": "WebP is a well-established format with broad tool support. Converting HEIC photo collections to WebP ensures compatibility with a wider range of applications and platforms than Apple-only HEIC."
         }
       ]
     },
@@ -250,6 +250,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting HEIC to WebP?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) – a good balance for web publishing and sharing. The visual difference compared to the original HEIC is virtually unnoticeable.</strong></li><li><strong>85–90% – for product photography and portfolios where quality is the priority.</strong></li><li><strong>60–70% – for email attachments and thumbnails where file size matters most.</strong></li></ul><p class=\"text-mid mt-3\">WebP files are typically slightly larger than HEIC at equivalent quality, since HEIC uses more advanced compression (HEVC). The benefit is universal browser compatibility.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC vs WebP – file size comparison",
+      "html": "<p class=\"text-mid mb-4\">WebP files are slightly larger than HEIC but significantly smaller than JPG:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (12 MP)</p><p class=\"text-light text-sm\">HEIC: 2.1 MB → WebP: 2.4 MB</p><p class=\"text-light mt-1 text-sm\">vs JPG: 2.8 MB</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Portrait mode</p><p class=\"text-light text-sm\">HEIC: 1.5 MB → WebP: 1.7 MB</p><p class=\"text-light mt-1 text-sm\">vs JPG: 1.9 MB</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Landscape photo</p><p class=\"text-light text-sm\">HEIC: 3.2 MB → WebP: 3.5 MB</p><p class=\"text-light mt-1 text-sm\">vs JPG: 4.2 MB</p></div></div><p class=\"text-light mt-4 text-sm\">WebP is the best middle ground between file size and compatibility. Supported by all modern browsers since Safari 14 (2020).</p>"
     },
     {
       "type": "faq",

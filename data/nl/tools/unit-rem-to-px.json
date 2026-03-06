@@ -1,0 +1,273 @@
+{
+  "toolKey": "remToPx",
+  "locale": "nl",
+  "metadata": {
+    "title": "Rem naar px – converter",
+    "description": "Reken CSS rem om naar pixels en andersom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/nl/tools/rem-naar-px-converter"
+  },
+  "hero": {
+    "title": "Rem naar px",
+    "description": "Deze converter rekent direct om. Voer een waarde in en het resultaat verschijnt onmiddellijk.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/rem-naar-px-converter",
+      "label": "rem naar px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Rem naar px – converter",
+      "alternateName": ["Rem naar px"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Reken CSS rem om naar pixels en andersom.",
+      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+    },
+    "howTo": {
+      "name": "Hoe de converter te gebruiken",
+      "description": "Snelle handleiding voor de converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Waarde invoeren",
+          "text": "Typ een getal in het invoerveld aan de linkerkant."
+        },
+        {
+          "name": "Resultaat aflezen",
+          "text": "Het conversieresultaat verschijnt direct in het veld ernaast."
+        },
+        {
+          "name": "Kopiëren of omdraaien",
+          "text": "Klik op Resultaat kopiëren of op Omdraaien om in de andere richting te converteren."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wanneer heb je nodig: Rem naar px?",
+      "html": "<p class=\"text-mid mb-4\">De CSS-eenheid rem is relatief aan het rootelement (html). Standaard: 16px, dus 1rem = 16px. In tegenstelling tot em cascadeert rem niet.</p><p class=\"text-mid\">Alle berekeningen draaien lokaal in je browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Rem naar px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe gebruik je de omrekentool?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voer een waarde in",
+          "description": "Typ een getal in het invoerveld.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lees het resultaat",
+          "description": "Het resultaat verschijnt direct.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieer of wissel",
+          "description": "Kopieer het resultaat of wissel de richting.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer is deze converter nuttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webontwikkeling",
+          "description": "Reken rem om naar px bij debugging."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Designsystemen",
+          "description": "Definieer afstandsschalen in rem."
+        },
+        {
+          "icon": "RiAccessibilityLine",
+          "title": "Toegankelijkheid",
+          "description": "rem respecteert gebruikersinstellingen."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Tailwind CSS",
+          "description": "p-4 = 1rem = 16px."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze tool bijzonder?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Alle berekeningen draaien lokaal in je browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Directe resultaten",
+          "description": "Het resultaat wordt bijgewerkt terwijl je typt."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tweerichtingsomrekening",
+          "description": "Wissel de richting met één klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referentietabel",
+          "description": "Tabel met gangbare waarden en context."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">px = rem × rootlettergrootte. Standaard = 16px.</p><p class=\"text-mid\">rem cascadeert nooit. 1rem is altijd hetzelfde.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">px = rem × rootlettergrootte. Standaard = 16px.</p><p class=\"text-mid\">rem cascadeert nooit. 1rem is altijd hetzelfde.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "rem vs em vs px",
+      "featureLabel": "Eigenschap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "rem"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Referentie",
+          "values": {
+            "unit1": "Rootlettergrootte",
+            "unit2": "Vaste pixel"
+          }
+        },
+        {
+          "name": "Cascadeert",
+          "values": {
+            "unit1": "Nee",
+            "unit2": "Nee"
+          }
+        },
+        {
+          "name": "Responsief",
+          "values": {
+            "unit1": "Ja",
+            "unit2": "Nee"
+          }
+        },
+        {
+          "name": "Toegankelijkheid",
+          "values": {
+            "unit1": "Respecteert instellingen",
+            "unit2": "Vaste grootte"
+          }
+        },
+        {
+          "name": "Voorspelbaarheid",
+          "values": {
+            "unit1": "Altijd consistent",
+            "unit2": "Altijd constant"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hoeveel px is 1rem?",
+          "answer": "Standaard 1rem = 16px. Instelbaar via rootlettergrootte."
+        },
+        {
+          "question": "Worden berekeningen lokaal uitgevoerd?",
+          "answer": "Ja. Alle berekeningen draaien in je browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "rem naar px – Arteon",
+      "defaultSubject": "Feedback: rem-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

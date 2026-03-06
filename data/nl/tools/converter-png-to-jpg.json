@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "PNG naar JPG converter – PNG JPG",
-    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/png-naar-jpg-converter"
   },
   "hero": {
     "title": "PNG naar JPG converter",
-    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["PNG naar JPG omzetten", "PNG naar JPG conversie", "Gratis PNG naar JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+      "description": "Converteer PNG-bestanden naar JPG in de browser. Zonder limiet, zonder registratie. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["PNG naar JPG conversie", "JPG-kwaliteitscontrole", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kwaliteit — wat kiezen bij conversie PNG naar JPG?",
-      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standaard) — goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% — voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% — wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 85% is het verschil tussen origineel PNG en JPG praktisch onzichtbaar.</p>"
+      "title": "Kwaliteit - wat kiezen bij conversie PNG naar JPG?",
+      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standaard) - goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% - voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% - wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 85% is het verschil tussen origineel PNG en JPG praktisch onzichtbaar.</p>"
     },
     {
       "type": "gap",
@@ -347,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
-      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
+      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht - we reageren binnen 24 uur.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "PNG naar JPG converter – Arteon",
       "defaultSubject": "Feedback: PNG naar JPG converter"

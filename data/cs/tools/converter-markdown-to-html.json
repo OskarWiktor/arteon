@@ -2,7 +2,7 @@
   "toolKey": "markdownToHtml",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník Markdown na HTML — Markdown HTML",
+    "title": "Převodník Markdown na HTML - Markdown HTML",
     "description": "Převeďte Markdown do formátu HTML. Automatické parsování a formátování. Zdarma.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-markdown-na-html"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět Markdown na HTML?",
-      "html": "<p class=\"text-mid mb-4\">MARKDOWN je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na HTML prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase MARKDOWN soubory do formatu HTML primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">MARKDOWN je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na HTML prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase MARKDOWN soubory do formatu HTML primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Markdown to HTML conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kolik usetrite konverzi MARKDOWN na HTML?",
-      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+      "title": "Jak funguje konverze z Markdown do HTML?",
+      "html": "<p class=\"text-mid mb-4\">Markdown je lehký značkovací jazyk, který používá jednoduché symboly pro formátování: # pro nadpisy, ** pro tučné, * pro kurzívu, - pro seznamy a [Text](URL) pro odkazy. Konvertor analyzuje tyto Markdown konvence a produkuje odpovídající HTML tagy.</p><p class=\"text-mid mb-4\">Například # Nadpis se stane &lt;h1&gt;Nadpis&lt;/h1&gt;, **tučné** se stane &lt;strong&gt;tučné&lt;/strong&gt; a odrážkové seznamy se stanou &lt;ul&gt;&lt;li&gt; strukturami. Konvertor podporuje plnou specifikaci CommonMark včetně kódových bloků, citátů, tabulek a inline HTML.</p><p class=\"text-mid\">Konverze z Markdown do HTML je nezbytná pro publikování blogovych článků, dokumentace a README souborů. Konverze probíhá zcela ve vašem prohlížeči.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipy pro konverzi MARKDOWN na HTML",
-      "description": "Tipy jak se vyhnout problemum:",
+      "title": "Tipy pro konverzi z Markdown do HTML",
+      "description": "Několik tipů, jak se vyhnout běžným problémům:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Velmi velke soubory",
-          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Struktura nadpisů",
+          "description": "Používejte # až ###### pro nadpisy (h1–h6). Správná hierarchie nadpisů zlepšuje přístupnost a SEO výsledné HTML stránky."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Jiz komprimovane",
-          "description": "Pokud byl MARKDOWN jiz silne komprimovany, konverze na HTML nemusi usetrit mnoho."
+          "title": "Kódové bloky",
+          "description": "Ohraničené kódové bloky (```) se převedou na &lt;pre&gt;&lt;code&gt; elementy. Můžete specifikovat jazyk za backticky pro zvýraznění syntaxe."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Pruhlednost",
-          "description": "HTML nepodporuje pruhlednost. Pruhledne oblasti budou bile. Pouzijte PNG nebo WebP."
+          "icon": "RiCodeLine",
+          "title": "Inline HTML",
+          "description": "Markdown umožňuje inline HTML. Všechny HTML tagy ve vašem Markdown se předají přímo do výstupu, takže můžete volně míchat Markdown a HTML."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Uchovejte originaly",
-          "description": "Ztratova konverze je nevratna. Uchovejte kopie MARKDOWN souboru."
+          "icon": "RiFileTextLine",
+          "title": "Tabulky",
+          "description": "Tabulky oddělené svíslými čárami (| Sloupec1 | Sloupec2 |) se převedou na správné HTML &lt;table&gt; elementy s &lt;thead&gt; a &lt;tbody&gt;."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What Markdown syntax is supported?",
+      "html": "<p class=\"text-mid mb-4\">The converter supports standard Markdown (CommonMark) syntax including:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – # through ###### (h1–h6)</li><li><strong>Text formatting</strong> – **bold**, *italic*, ~~strikethrough~~, `inline code`</li><li><strong>Links and images</strong> – [text](url) and ![alt](src)</li><li><strong>Lists</strong> – unordered (-, *, +) and ordered (1., 2., 3.)</li><li><strong>Code blocks</strong> – fenced (```) and indented (4 spaces)</li><li><strong>Blockquotes</strong> – > prefix</li><li><strong>Tables</strong> – pipe-separated with header row</li><li><strong>Horizontal rules</strong> – ---, ***, ___</li></ul><p class=\"text-mid mt-3\">Output is clean, semantic HTML without unnecessary wrapper divs. Ready to paste into any CMS, email template, or web page.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
         },
         {
-          "question": "Je konverze MARKDOWN na HTML bezpecna?",
-          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+          "question": "Je konverze z Markdown do HTML bezpečná?",
+          "answer": "Ano. Veškerá konverze probíhá lokálně ve vašem prohlížeči. Žádná data se neodesílají na server."
         },
         {
-          "question": "Mohu konvertovat vice souboru MARKDOWN?",
-          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+          "question": "Jakou Markdown syntaxi konvertor podporuje?",
+          "answer": "Konvertor podporuje plnou specifikaci CommonMark: nadpisy, tučné, kurzívu, odkazy, obrázky, seznamy, kódové bloky, citáty, tabulky a horizontální čáry. Rozšíření GitHub Flavored Markdown jako seznamy úkolů a přeškrtnutý text jsou také podporovány."
         },
         {
-          "question": "Je HTML podporovan vsemi prohlizeci?",
-          "answer": "HTML je podporovan v Chrome, Firefox, Safari, Edge a Opera."
+          "question": "Mohu použít HTML výstup na svém webu?",
+          "answer": "Ano. Výstup je čisté, sémantické HTML, které můžete přímo vložit do jakékoli webové stránky, CMS, e-mailové šablony nebo webové aplikace. Stylovat ho můžete vlastním CSS."
         }
       ]
     },

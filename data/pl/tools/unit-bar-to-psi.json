@@ -1,0 +1,289 @@
+{
+  "toolKey": "barToPsi",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter bar na PSI – przelicz ciśnienie",
+    "description": "Przelicz bary na PSI i odwrotnie. Konwerter jest przydatny w motoryzacji, pneumatyce i nurkowaniu. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-bar-na-psi"
+  },
+  "hero": {
+    "title": "Przelicz bary na PSI",
+    "description": "Ten konwerter przelicza bary na PSI i odwrotnie. Jest szczególnie przydatny w motoryzacji i technice.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-bar-na-psi",
+      "label": "bar na PSI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter bar na PSI – przelicz ciśnienie",
+      "alternateName": ["Przelicznik bar PSI", "Kalkulator ciśnienia", "Zamiana bar na psi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz bary na PSI i odwrotnie. Konwerter jest przydatny w motoryzacji, pneumatyce i nurkowaniu. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera bar na PSI",
+      "description": "Instrukcja użycia: bar na psi.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy potrzebne jest przeliczanie bar na PSI?",
+      "html": "<p class=\"text-mid mb-4\">Bar to jednostka ciśnienia równa 100 000 paskali (100 kPa). PSI (pound per square inch) to jednostka używana w USA i UK. 1 bar = 14,5038 PSI.</p><p class=\"text-mid mb-4\">Przeliczanie bar na PSI jest potrzebne przy pompowaniu opon – europejskie zalecenia podaje się w barach, a amerykańskie w PSI. Typowe ciśnienie w oponie samochodu osobowego: 2,0–2,5 bar = 29–36 PSI.</p><p class=\"text-mid mb-4\">W nurkowaniu ciśnienie w butelce podaje się w barach (200–300 bar), ale amerykański sprzęt nurkowy używa PSI (2 900–4 350 PSI).</p><p class=\"text-mid\">W pneumatyce ciśnienie robocze sprężarek, narzędzi pneumatycznych i instalacji podaje się w barach (Europa) lub PSI (USA). Znajomość przelicznika jest niezbędna przy pracy z importowanym sprzętem.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "bar na PSI – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Opony samochodowe",
+          "description": "Europejskie: 2,0–2,5 bar. Amerykańskie: 29–36 PSI."
+        },
+        {
+          "icon": "RiAnchorLine",
+          "title": "Nurkowanie",
+          "description": "Butla nurkowa: 200 bar = 2 900 PSI."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Pneumatyka",
+          "description": "Sprężarki i narzędzia pneumatyczne: 6–10 bar = 87–145 PSI."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Opony rowerowe",
+          "description": "Rower szosowy: 6–8 bar = 87–116 PSI. Górski: 2–3 bar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja bar na PSI?",
+      "html": "<p class=\"text-mid mb-4\">Bar i PSI (pounds per square inch) to dwie popularne jednostki ciśnienia. Jeden bar odpowiada ciśnieniu atmosferycznemu na poziomie morza i wynosi dokładnie 100 000 paskali. Jeden PSI to ciśnienie wywierane przez siłę jednego funta na powierzchnię jednego cala kwadratowego.</p><p class=\"text-mid mb-4\">Aby przeliczyć bar na PSI, narzędzie mnoży wartość przez 14,5038. Na przykład ciśnienie 2 bar to około 29,01 PSI. W drugą stronę, 30 PSI to około 2,07 bar. Szybkie przybliżenie: pomnóż bar przez 14,5 — wynik będzie bardzo zbliżony do dokładnego.</p><p class=\"text-mid\">Bar jest powszechnie stosowany w Europie do pomiaru ciśnienia w oponach i systemach hydraulicznych, natomiast PSI dominuje w Stanach Zjednoczonych i Wielkiej Brytanii.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Opony samochodu: 2,2 bar = 32 PSI – typowe ciśnienie zalecane.</li><li>Rower szosowy: 7 bar = 102 PSI. Rower górski: 2 bar = 29 PSI.</li><li>Ciśnienie atmosferyczne: 1,01325 bar = 14,696 PSI.</li><li>Butla nurkowa pełna: 200–300 bar = 2 900–4 350 PSI.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Bar vs PSI – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Bar"
+        },
+        {
+          "id": "unit2",
+          "name": "PSI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metryczny",
+            "unit2": "Imperialny"
+          }
+        },
+        {
+          "name": "Definicja",
+          "values": {
+            "unit1": "100 000 Pa",
+            "unit2": "6 894,76 Pa"
+          }
+        },
+        {
+          "name": "Opony samochodów",
+          "values": {
+            "unit1": "2,0–2,5 bar",
+            "unit2": "29–36 PSI"
+          }
+        },
+        {
+          "name": "Sprężarki",
+          "values": {
+            "unit1": "6–10 bar",
+            "unit2": "87–145 PSI"
+          }
+        },
+        {
+          "name": "Nurkowanie",
+          "values": {
+            "unit1": "200–300 bar",
+            "unit2": "2 900–4 350 PSI"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile PSI ma 1 bar?",
+          "answer": "1 bar = 14,5038 PSI."
+        },
+        {
+          "question": "Ile bar to 30 PSI?",
+          "answer": "30 PSI = 2,07 bar – typowe ciśnienie w oponie samochodu osobowego."
+        },
+        {
+          "question": "Jakie ciśnienie w oponach samochodu?",
+          "answer": "Typowe: 2,0–2,5 bar (29–36 PSI). Sprawdź naklejkę na słupku drzwi kierowcy."
+        },
+        {
+          "question": "Ile PSI ma opona rowerowa szosowa?",
+          "answer": "Opony szosowe: 6–8 bar = 87–116 PSI. Opony górskie: 1,5–3 bar = 22–44 PSI."
+        },
+        {
+          "question": "Czym jest ciśnienie atmosferyczne w barach?",
+          "answer": "Ciśnienie atmosferyczne na poziomie morza: 1,01325 bar = 14,696 PSI = 101,325 kPa."
+        },
+        {
+          "question": "Czy bar i atm to to samo?",
+          "answer": "Prawie. 1 bar = 0,986923 atm. Różnica wynosi 1,3%. W praktyce często używa się ich zamiennie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "bar na PSI – Arteon",
+      "defaultSubject": "Feedback: bar na PSI"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

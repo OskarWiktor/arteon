@@ -20,50 +20,76 @@ const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
 
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
 
-const orgJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  '@id': `${siteUrl}#organization`,
-  name: 'Arteon',
-  url: siteUrl,
-  logo: {
-    '@type': 'ImageObject',
-    url: ORG_LOGO,
-    width: 512,
-    height: 512,
-  },
-  image: ORG_LOGO,
-  sameAs: ['https://www.facebook.com/people/Arteon/61583260915021/'],
-  contactPoint: [
-    {
-      '@type': 'ContactPoint',
-      contactType: 'customer support',
-      telephone: '+48 516 466 255',
-      email: 'kontakt@arteonagency.pl',
-      availableLanguage: ['pl'],
-      areaServed: 'PL',
-    },
-    {
-      '@type': 'ContactPoint',
-      contactType: 'customer support',
-      telephone: '+48 516 466 255',
-      email: 'contact@arteonagency.com',
-      availableLanguage: ['en', 'de', 'fr', 'es', 'pt', 'it', 'nl', 'ro', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'],
-      areaServed: 'Worldwide',
-    },
-  ],
-  areaServed: 'Worldwide',
-  knowsLanguage: ['en', 'de', 'fr', 'es', 'pt', 'it', 'nl', 'ro', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'],
-  foundingDate: '2020',
-  description: 'Arteon - agencja tworząca strony internetowe, sklepy online, projekty graficzne oraz treści i kampanie marketingowe udostępniająca darmowe narzędzia dla wszystkich.',
+const ORG_DESCRIPTIONS: Record<string, string> = {
+  'pl-PL': 'Arteon - agencja tworząca strony internetowe, sklepy online, projekty graficzne oraz treści i kampanie marketingowe udostępniająca darmowe narzędzia dla wszystkich.',
+  en: 'Arteon - web development and design agency creating websites, online stores, graphic designs, content, and marketing campaigns with free online tools for everyone.',
+  de: 'Arteon - Agentur für Webentwicklung und Design, die Websites, Online-Shops, Grafikdesign, Inhalte und Marketingkampagnen erstellt und kostenlose Online-Tools anbietet.',
+  es: 'Arteon - agencia de desarrollo web y diseño que crea sitios web, tiendas online, diseño gráfico, contenido y campañas de marketing con herramientas online gratuitas.',
+  fr: 'Arteon - agence de développement web et design créant des sites web, boutiques en ligne, design graphique, contenu et campagnes marketing avec des outils en ligne gratuits.',
+  pt: 'Arteon - agência de desenvolvimento web e design que cria sites, lojas online, design gráfico, conteúdo e campanhas de marketing com ferramentas online gratuitas.',
+  it: 'Arteon - agenzia di sviluppo web e design che crea siti web, negozi online, design grafico, contenuti e campagne di marketing con strumenti online gratuiti.',
+  ro: 'Arteon - agenție de dezvoltare web și design care creează site-uri web, magazine online, design grafic, conținut și campanii de marketing cu instrumente online gratuite.',
+  nl: 'Arteon - webontwikkeling en design bureau dat websites, webshops, grafisch ontwerp, content en marketingcampagnes maakt met gratis online tools.',
+  hu: 'Arteon - webfejlesztő és design ügynökség, amely weboldalakat, webáruházakat, grafikai terveket, tartalmakat és marketing kampányokat készít ingyenes online eszközökkel.',
+  cs: 'Arteon - agentura pro vývoj webů a design vytvářející webové stránky, e-shopy, grafický design, obsah a marketingové kampaně s bezplatnými online nástroji.',
+  sv: 'Arteon - webbutvecklings- och designbyrå som skapar webbplatser, webbutiker, grafisk design, innehåll och marknadsföringskampanjer med gratis onlineverktyg.',
+  da: 'Arteon - webudviklings- og designbureau der skaber hjemmesider, webshops, grafisk design, indhold og marketingkampagner med gratis onlineværktøjer.',
+  no: 'Arteon - webutviklings- og designbyrå som lager nettsteder, nettbutikker, grafisk design, innhold og markedsføringskampanjer med gratis nettverktøy.',
+  fi: 'Arteon - verkkokehitys- ja suunnittelutoimisto, joka luo verkkosivuja, verkkokauppoja, graafista suunnittelua, sisältöä ja markkinointikampanjoita ilmaisilla verkkotyökaluilla.',
+  el: 'Arteon - εταιρεία ανάπτυξης ιστοσελίδων και σχεδιασμού που δημιουργεί ιστοσελίδες, ηλεκτρονικά καταστήματα, γραφιστικό σχεδιασμό, περιεχόμενο και εκστρατείες μάρκετινγκ με δωρεάν διαδικτυακά εργαλεία.',
 };
+
+function getOrgDescription(lang: string): string {
+  return ORG_DESCRIPTIONS[lang] || ORG_DESCRIPTIONS[lang.split('-')[0]] || ORG_DESCRIPTIONS['en'];
+}
+
+function buildOrgJsonLd(lang: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${siteUrl}#organization`,
+    name: 'Arteon',
+    url: siteUrl,
+    logo: {
+      '@type': 'ImageObject',
+      url: ORG_LOGO,
+      width: 512,
+      height: 512,
+    },
+    image: ORG_LOGO,
+    sameAs: ['https://www.facebook.com/people/Arteon/61583260915021/', 'https://www.instagram.com/arteon.pl'],
+    knowsAbout: ['Web Development', 'Web Design', 'Graphic Design', 'E-commerce', 'SEO', 'WordPress', 'Next.js', 'Online Marketing', 'Brand Identity', 'UI/UX Design'],
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'customer support',
+        telephone: '+48 516 466 255',
+        email: 'kontakt@arteonagency.pl',
+        availableLanguage: ['pl'],
+        areaServed: 'PL',
+      },
+      {
+        '@type': 'ContactPoint',
+        contactType: 'customer support',
+        telephone: '+48 516 466 255',
+        email: 'contact@arteonagency.com',
+        availableLanguage: ['en', 'de', 'fr', 'es', 'pt', 'it', 'nl', 'ro', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'],
+        areaServed: 'Worldwide',
+      },
+    ],
+    areaServed: 'Worldwide',
+    knowsLanguage: ['en', 'de', 'fr', 'es', 'pt', 'it', 'nl', 'ro', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'],
+    foundingDate: '2020',
+    description: getOrgDescription(lang),
+  };
+}
 
 const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Arteon',
   url: siteUrl,
-  inLanguage: 'pl',
+  inLanguage: ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'],
   publisher: {
     '@id': `${siteUrl}#organization`,
   },
@@ -118,6 +144,10 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
         <link rel="dns-prefetch" href="https://fundingchoices.google.com" />
         <link rel="dns-prefetch" href="https://tpc.googlesyndication.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://formspree.io" />
+        <link rel="dns-prefetch" href="https://vitals.vercel-insights.com" />
+
+        <meta name="theme-color" content="#171717" />
 
         {/* AdSense + Google CMP (consent dialog) — loaded before GA4 for faster consent prompt */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845947936813012" crossOrigin="anonymous" />
@@ -132,7 +162,7 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
           />
         )}
 
-        <script id="schema-org-organization" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
+        <script id="schema-org-organization" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildOrgJsonLd(lang)) }} />
 
         <script id="schema-org-website" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       </head>

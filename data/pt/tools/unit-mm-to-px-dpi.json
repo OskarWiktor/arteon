@@ -1,0 +1,273 @@
+{
+  "toolKey": "mmToPxDpi",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de mm para pixels (DPI)",
+    "description": "Converta milímetros para pixels em qualquer resolução DPI. Para embalagem e gráficos.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-mm-para-px"
+  },
+  "hero": {
+    "title": "Converter mm para pixels",
+    "description": "Este conversor converte instantaneamente. Introduza um valor e o resultado aparece imediatamente.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-mm-para-px",
+      "label": "mm para px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de mm para pixels (DPI)",
+      "alternateName": ["Converter mm para pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converta milímetros para pixels em qualquer resolução DPI. Para embalagem e gráficos.",
+      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+    },
+    "howTo": {
+      "name": "Como usar o conversor",
+      "description": "Guia rápido para usar o conversor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduzir valor",
+          "text": "Escreva um número no campo de entrada à esquerda."
+        },
+        {
+          "name": "Ler o resultado",
+          "text": "O resultado da conversão aparece instantaneamente no campo ao lado."
+        },
+        {
+          "name": "Copiar ou inverter",
+          "text": "Clique em Copiar resultado ou em Inverter para converter na direção oposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa converter mm em pixels?",
+      "html": "<p class=\"text-mid mb-4\">Em trabalho de precisão as medidas são em milímetros. Para imagens digitais: Pixels = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">A 300 DPI: 1 mm = 11,81 pixels, 85 mm (largura cartão de visita) = 1.004 pixels.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Conversor de mm para pixels (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o conversor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Insira um valor",
+          "description": "Digite um número no campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leia o resultado",
+          "description": "O resultado aparece instantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copie ou inverta",
+          "description": "Copie o resultado ou inverta a direção de conversão.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando este conversor é útil?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Design de embalagem",
+          "description": "Medidas de embalagem em mm. Etiqueta de 100 mm a 300 DPI = 1.181 px."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Cartões de visita",
+          "description": "Padrão: 85 × 55 mm a 300 DPI = 1.004 × 650 px (+ sangria)."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Etiquetas",
+          "description": "Etiquetas de produto: medidas precisas de mm para pixels."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Impressão 3D",
+          "description": "Converta medidas 3D (mm) em resolução de textura (pixels)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que diferencia este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os cálculos são executados localmente no seu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados em tempo real",
+          "description": "O resultado atualiza enquanto digita."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversão bidirecional",
+          "description": "Converta em ambas as direções com um clique."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela de referência",
+          "description": "Tabela com valores comuns e descrições contextuais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: Pixels = mm × DPI / 25,4. A 300 DPI: 1 mm = 11,811 pixels.</p><p class=\"text-mid\">Sangria: adicione 3 mm (padrão) em cada lado.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: Pixels = mm × DPI / 25,4. A 300 DPI: 1 mm = 11,811 pixels.</p><p class=\"text-mid\">Sangria: adicione 3 mm (padrão) em cada lado.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "mm em pixels a diferentes DPI",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI"
+        },
+        {
+          "id": "unit2",
+          "name": "600 DPI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1 mm",
+          "values": {
+            "unit1": "11,81 px",
+            "unit2": "23,62 px"
+          }
+        },
+        {
+          "name": "10 mm",
+          "values": {
+            "unit1": "118 px",
+            "unit2": "236 px"
+          }
+        },
+        {
+          "name": "85 mm (cartão)",
+          "values": {
+            "unit1": "1.004 px",
+            "unit2": "2.008 px"
+          }
+        },
+        {
+          "name": "Aplicação",
+          "values": {
+            "unit1": "Impressão padrão",
+            "unit2": "Arte / medicina"
+          }
+        },
+        {
+          "name": "Tamanho do arquivo",
+          "values": {
+            "unit1": "Padrão",
+            "unit2": "4× maior"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quantos pixels é 1 mm a 300 DPI?",
+          "answer": "1 mm a 300 DPI = 11,811 pixels."
+        },
+        {
+          "question": "Os cálculos são feitos localmente?",
+          "answer": "Sim. Todos os cálculos são executados no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "mm na px – Arteon",
+      "defaultSubject": "Feedback: mm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

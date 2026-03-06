@@ -9,7 +9,7 @@
     "prebuild": "node -e \"const fs=require('fs');const p='node_modules/next/dist/compiled/anser/package.json';try{if(!fs.existsSync(p))process.exit(0);const s=fs.readFileSync(p,'utf8');if(s && s.charCodeAt(0)===0xFEFF){fs.writeFileSync(p,s.slice(1),'utf8');}}catch(e){process.exit(0);}\" && node scripts/split-blog.cjs && node scripts/generate-search-index.cjs",
     "build": "next build",
     "postinstall": "node -e \"const fs=require('fs');const p='node_modules/next/dist/compiled/anser/package.json';try{if(!fs.existsSync(p))process.exit(0);const s=fs.readFileSync(p,'utf8');if(s.charCodeAt(0)===0xFEFF){fs.writeFileSync(p,s.slice(1),'utf8');}}catch(e){/* ignore */}\"",
-    "postbuild": "next-sitemap --config next-sitemap.config.cjs && node scripts/postbuild-sitemap-hreflang.cjs",
+    "postbuild": "next-sitemap --config next-sitemap.config.cjs && node scripts/postbuild-sitemap-hreflang.cjs && node scripts/indexnow-notify.cjs",
     "start": "next start",
     "lint": "eslint app --ext .ts,.tsx",
     "format": "prettier --write .",
@@ -33,6 +33,7 @@
     "react-icons": "^5.5.0",
     "sharp": "^0.34.5",
     "turndown": "^7.2.2",
+    "turndown-plugin-gfm": "^1.0.2",
     "utif2": "^4.1.0",
     "zod": "^4.3.6"
   },

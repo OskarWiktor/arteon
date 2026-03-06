@@ -1,0 +1,273 @@
+{
+  "toolKey": "ptToPx",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur points en pixels – typographie",
+    "description": "Convertissez points typographiques en pixels. Pour la typographie web et impression.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-pt-en-px"
+  },
+  "hero": {
+    "title": "Convertir points en pixels",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-pt-en-px",
+      "label": "pt en px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur points en pixels – typographie",
+      "alternateName": ["Convertir points en pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez points typographiques en pixels. Pour la typographie web et impression.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des points en pixels ?",
+      "html": "<p class=\"text-mid mb-4\">Les points (pt) sont une unité typographique d’impression : 1 pt = 1/72 de pouce. Les pixels (px) sont des unités d’écran. Avec 96 PPI standard : 1 pt = 1,333 px.</p><p class=\"text-mid mb-4\">Tailles courantes : 12 pt = 16 px (standard navigateur), 10 pt = 13,3 px, 18 pt = 24 px.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur points en pixels – typographie – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat apparaît instantanément.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Copiez le résultat ou inversez la direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Design web",
+          "description": "Convertissez des tailles de police d’impression en CSS : 12 pt = 16 px."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Conversion de documents",
+          "description": "Pour transférer des designs Word/PDF vers le web."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Modèles d’email",
+          "description": "Les clients email rendent les polices différemment en pt ou px."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Typographie",
+          "description": "Comprenez la relation entre impression (pt) et écran (px)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Convertissez dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Tableau avec valeurs courantes et descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 point = 1/72 de pouce. Avec 96 PPI : 1 pt = 96/72 = 1,333 px.</p><p class=\"text-mid\">Formule : px = pt × PPI / 72.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 point = 1/72 de pouce. Avec 96 PPI : 1 pt = 96/72 = 1,333 px.</p><p class=\"text-mid\">Formule : px = pt × PPI / 72.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Points (pt) vs Pixels (px)",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Points (pt)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pixels (px)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Définition",
+          "values": {
+            "unit1": "1/72 pouce",
+            "unit2": "1/96 pouce (CSS)"
+          }
+        },
+        {
+          "name": "Utilisé dans",
+          "values": {
+            "unit1": "Impression, Word, PDF",
+            "unit2": "Web, CSS, écrans"
+          }
+        },
+        {
+          "name": "12 pt =",
+          "values": {
+            "unit1": "12 pt",
+            "unit2": "16 px"
+          }
+        },
+        {
+          "name": "Texte courant",
+          "values": {
+            "unit1": "10–12 pt",
+            "unit2": "14–18 px"
+          }
+        },
+        {
+          "name": "En-tête",
+          "values": {
+            "unit1": "18–24 pt",
+            "unit2": "24–32 px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de pixels font 12 pt ?",
+          "answer": "12 pt = 16 px avec 96 PPI. C’est la taille de police standard des navigateurs."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "pt na px – Arteon",
+      "defaultSubject": "Feedback : pt-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

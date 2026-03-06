@@ -1,0 +1,273 @@
+{
+  "toolKey": "kmhToMph",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník km/h na mph",
+    "description": "Převést km/h na mph a naopak. Užitečné pro rychlostní limity a údaje o vozidlech. Bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/cs/nastroje/prevodnik-kmh-na-mph"
+  },
+  "hero": {
+    "title": "Převést km/h na mph",
+    "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-kmh-na-mph",
+      "label": "km/h na mph"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník km/h na mph",
+      "alternateName": ["Převést km/h na mph"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převést km/h na mph a naopak. Užitečné pro rychlostní limity a údaje o vozidlech. Bez registrace.",
+      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+    },
+    "howTo": {
+      "name": "Jak používat převodník",
+      "description": "Rychlý průvodce použitím převodníku.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadat hodnotu",
+          "text": "Zadejte číslo do vstupního pole vlevo."
+        },
+        {
+          "name": "Přečíst výsledek",
+          "text": "Výsledek konverze se okamžitě zobrazí v sousedním poli."
+        },
+        {
+          "name": "Kopírovat nebo obrátit",
+          "text": "Klikněte na Kopírovat výsledek nebo na Obrátit pro konverzi v opačném směru."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kdy je potřeba převádět km/h na mph?",
+      "html": "<p class=\"text-mid mb-4\">km/h je metrická jednotka rychlosti. mph se používá v USA a UK. 1 km/h = 0,621 mph.</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Převodník km/h na mph – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak použít převodník?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Zadejte hodnotu",
+          "description": "Zadejte číslo do vstupního pole.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Přečtěte výsledek",
+          "description": "Výsledek se zobrazí okamžitě.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Zkopírujte nebo obraťte",
+          "description": "Zkopírujte výsledek nebo obraťte směr převodu.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy je tento převodník užitečný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Řízení",
+          "description": "Limity: 65 mph = 105 km/h."
+        },
+        {
+          "icon": "RiDashboardLine",
+          "title": "Auta",
+          "description": "0–100 km/h vs 0–60 mph."
+        },
+        {
+          "icon": "RiFlagLine",
+          "title": "Sport",
+          "description": "Baseball: 100 mph = 161 km/h."
+        },
+        {
+          "icon": "RiWindyLine",
+          "title": "Meteorologie",
+          "description": "Vítr v mph nebo km/h."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím se tento převodník liší?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Plné soukromí",
+          "description": "Všechny výpočty probíhají lokálně ve vašem prohlížeči."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Výsledky v reálném čase",
+          "description": "Výsledek se aktualizuje během zadávání."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obousměrný převod",
+          "description": "Převádějte oběma směry jedním kliknutím."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenční tabulka",
+          "description": "Tabulka s běžnými hodnotami a kontextovými popisy."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">1 míle = 1,609 km. km/h na mph: dělte 1,60934. Odhad: × 0,6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">1 míle = 1,609 km. km/h na mph: dělte 1,60934. Odhad: × 0,6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "km/h vs mph",
+      "featureLabel": "Vlastnost",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "km/h"
+        },
+        {
+          "id": "unit2",
+          "name": "mph",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Systém",
+          "values": {
+            "unit1": "Metrický",
+            "unit2": "Imperální"
+          }
+        },
+        {
+          "name": "Poměr",
+          "values": {
+            "unit1": "1 km/h",
+            "unit2": "0,621 mph"
+          }
+        },
+        {
+          "name": "Značky",
+          "values": {
+            "unit1": "Mezinárodní",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Tachometr",
+          "values": {
+            "unit1": "EU",
+            "unit2": "US/UK"
+          }
+        },
+        {
+          "name": "Letectví",
+          "values": {
+            "unit1": "Nepoužívá se",
+            "unit2": "Nepoužívá se (uzly)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik mph je 100 km/h?",
+          "answer": "100 km/h = 62,14 mph."
+        },
+        {
+          "question": "Probíhají výpočty lokálně?",
+          "answer": "Ano. Veškeré výpočty probíhají ve vašem prohlížeči."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "km/h na mph – Arteon",
+      "defaultSubject": "Feedback: kmh-to-mph"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

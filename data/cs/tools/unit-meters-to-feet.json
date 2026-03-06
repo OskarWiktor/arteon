@@ -1,0 +1,273 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník meters na feet",
+    "description": "Převést meters na feet a naopak. Užitečné pro výšku, stavebnictví a letectví. Bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/cs/nastroje/prevodnik-metry-na-stopy"
+  },
+  "hero": {
+    "title": "Převést meters na feet",
+    "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-metry-na-stopy",
+      "label": "m na ft"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník meters na feet",
+      "alternateName": ["Převést meters na feet"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převést meters na feet a naopak. Užitečné pro výšku, stavebnictví a letectví. Bez registrace.",
+      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+    },
+    "howTo": {
+      "name": "Jak používat převodník",
+      "description": "Rychlý průvodce použitím převodníku.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadat hodnotu",
+          "text": "Zadejte číslo do vstupního pole vlevo."
+        },
+        {
+          "name": "Přečíst výsledek",
+          "text": "Výsledek konverze se okamžitě zobrazí v sousedním poli."
+        },
+        {
+          "name": "Kopírovat nebo obrátit",
+          "text": "Klikněte na Kopírovat výsledek nebo na Obrátit pro konverzi v opačném směru."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kdy je potřeba převádět metry na stopy?",
+      "html": "<p class=\"text-mid mb-4\">Metr (m) je základní jednotka délky SI. Stopa (ft) = 0,3048 m. 1 m = 3,28084 ft.</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Převodník meters na feet – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak použít převodník?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Zadejte hodnotu",
+          "description": "Zadejte číslo do vstupního pole.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Přečtěte výsledek",
+          "description": "Výsledek se zobrazí okamžitě.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Zkopírujte nebo obraťte",
+          "description": "Zkopírujte výsledek nebo obraťte směr převodu.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy je tento převodník užitečný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuildingLine",
+          "title": "Letectví",
+          "description": "Nadmořská výška: 35 000 ft = 10 668 m."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Nemovitosti",
+          "description": "Rozměry v USA: 12×14 ft = 3,66×4,27 m."
+        },
+        {
+          "icon": "RiBodyScanLine",
+          "title": "Výška",
+          "description": "V USA: 6’0″ = 1,83 m."
+        },
+        {
+          "icon": "RiMountainLine",
+          "title": "Potápění",
+          "description": "Hloubky: 60 ft = 18,3 m."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím se tento převodník liší?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Plné soukromí",
+          "description": "Všechny výpočty probíhají lokálně ve vašem prohlížeči."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Výsledky v reálném čase",
+          "description": "Výsledek se aktualizuje během zadávání."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obousměrný převod",
+          "description": "Převádějte oběma směry jedním kliknutím."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenční tabulka",
+          "description": "Tabulka s běžnými hodnotami a kontextovými popisy."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">1 stopa = 0,3048 m přesně. 1 stopa = 12 palců.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">1 stopa = 0,3048 m přesně. 1 stopa = 12 palců.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Metr vs Stopa",
+      "featureLabel": "Vlastnost",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Metr (m)"
+        },
+        {
+          "id": "unit2",
+          "name": "Stopa (ft)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Systém",
+          "values": {
+            "unit1": "Metrický (SI)",
+            "unit2": "Imperální"
+          }
+        },
+        {
+          "name": "Základ",
+          "values": {
+            "unit1": "1 m",
+            "unit2": "0,3048 m"
+          }
+        },
+        {
+          "name": "Letectví",
+          "values": {
+            "unit1": "Nepoužívá se",
+            "unit2": "Standard"
+          }
+        },
+        {
+          "name": "Nemovitosti",
+          "values": {
+            "unit1": "Evropa",
+            "unit2": "USA"
+          }
+        },
+        {
+          "name": "Výška",
+          "values": {
+            "unit1": "cm/m",
+            "unit2": "ft/in"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik stop je 1 metr?",
+          "answer": "1 m = 3,28084 stopy."
+        },
+        {
+          "question": "Probíhají výpočty lokálně?",
+          "answer": "Ano. Veškeré výpočty probíhají ve vašem prohlížeči."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "m na stopy – Arteon",
+      "defaultSubject": "Feedback: meters-to-feet"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

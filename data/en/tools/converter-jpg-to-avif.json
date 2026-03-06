@@ -2,7 +2,7 @@
   "toolKey": "jpgToAvif",
   "locale": "en",
   "metadata": {
-    "title": "JPG to AVIF converter — JPG AVIF",
+    "title": "JPG to AVIF converter - JPG AVIF",
     "description": "Convert JPG photos to modern AVIF. Up to 50% better compression than JPG while maintaining quality. Runs entirely in your browser. No server uploads, no registration required.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/jpg-to-avif-converter"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Set quality",
-          "text": "Adjust the AVIF quality slider — lower values produce smaller files."
+          "text": "Adjust the AVIF quality slider - lower values produce smaller files."
         },
         {
           "position": 3,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download the AVIF files — individually or all at once."
+          "text": "Download the AVIF files - individually or all at once."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert JPG to AVIF?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) is a lossy image format supporting millions colors. It is widely used for photos and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting JPG to AVIF (AV1 Image File Format) takes advantage of modern compression technology for smaller file sizes without quality loss.</p><p class=\"text-mid mb-4\">AVIF supports alpha transparency, preserving any transparent areas in your image. AVIF supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many JPG files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPG has been the standard photo format for decades, but AVIF (AV1 Image File Format) delivers 30–50% better compression at equivalent visual quality. AVIF is based on the AV1 video codec and excels at preserving fine details and smooth gradients even at very low file sizes.</p><p class=\"text-mid mb-4\">AVIF supports millions of colors, alpha transparency, HDR content, and both lossy and lossless modes. It is supported in Chrome 85+, Firefox 93+, Safari 16.4+, and Edge 121+. Converting JPG to AVIF is one of the most impactful optimizations for website performance.</p><p class=\"text-mid mb-4\">Google PageSpeed Insights specifically recommends serving images in next-gen formats like AVIF. Use the HTML <code>&lt;picture&gt;</code> element to serve AVIF with JPG as a fallback for older browsers.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "JPG to AVIF conversion",
       "variant": "right"
@@ -109,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert JPG to AVIF to significantly reduce page load times and improve Core Web Vitals scores."
+          "description": "AVIF files are 30–50% smaller than JPG at equivalent visual quality. Converting your JPG images to AVIF is one of the most impactful optimizations for website performance and Core Web Vitals scores."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "AVIF files are compatible with most modern platforms. Convert to AVIF for smaller attachments that stay within email size limits."
+          "description": "AVIF produces significantly smaller files than JPG, making photos easier to share via email and messaging. The quality difference is imperceptible at typical compression settings."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify may require specific formats – converting to AVIF ensures your product images meet their requirements."
+          "description": "Product photography galleries with hundreds of JPG images benefit enormously from AVIF conversion. The 30–50% size reduction means faster page loads and lower hosting costs."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "AVIF provides a modern and efficient format for document image storage."
+          "description": "Converting JPG photo archives to AVIF can reduce storage by 30–50% while maintaining equivalent visual quality. AVIF is an open, royalty-free format backed by major tech companies."
         }
       ]
     },
@@ -258,6 +258,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting JPG to AVIF?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) – a good balance for most use cases: business websites, blogs, articles. The visual difference compared to the original JPG is virtually unnoticeable.</strong></li><li><strong>85–90% – for product photography, portfolios, and galleries where every detail matters.</strong></li><li><strong>60–70% – when minimizing file size is the priority, e.g. thumbnails in category grids.</strong></li></ul><p class=\"text-mid mt-3\">At 80% quality, AVIF typically produces files 30–50% smaller than the original JPG while maintaining visual quality indistinguishable to the human eye.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting JPG to AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the original JPG’s compression level. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 650 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~73%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 150 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~70%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 120 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~66%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

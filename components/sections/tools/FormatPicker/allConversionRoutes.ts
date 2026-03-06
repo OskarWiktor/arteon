@@ -8,12 +8,13 @@ import { getToolHref } from '@/lib/i18n/tool-registry';
 
 export type UniversalFormat = 'jpg' | 'png' | 'webp' | 'gif' | 'bmp' | 'svg' | 'avif' | 'heic' | 'tiff' | 'pdf' | 'csv' | 'json' | 'xml' | 'yaml' | 'markdown' | 'html' | 'base64';
 
-export type FormatCategory = 'images' | 'documents' | 'data';
+export type FormatCategory = 'images' | 'documents' | 'data' | 'units';
 
 export const FORMAT_CATEGORIES: { key: FormatCategory; formats: UniversalFormat[] }[] = [
   { key: 'images', formats: ['jpg', 'png', 'webp', 'avif', 'gif', 'bmp', 'svg', 'heic', 'tiff'] },
   { key: 'documents', formats: ['pdf'] },
   { key: 'data', formats: ['csv', 'json', 'xml', 'yaml', 'markdown', 'html', 'base64'] },
+  { key: 'units', formats: [] },
 ];
 
 export const FORMAT_DISPLAY_LABELS: Record<UniversalFormat, string> = {
@@ -91,6 +92,24 @@ export const CATEGORY_LABELS: Record<FormatCategory, Record<string, string>> = {
     no: 'Data',
     fi: 'Data',
     el: 'Δεδομένα',
+  },
+  units: {
+    pl: 'Jednostki',
+    en: 'Units',
+    de: 'Einheiten',
+    es: 'Unidades',
+    fr: 'Unités',
+    pt: 'Unidades',
+    it: 'Unità',
+    ro: 'Unități',
+    nl: 'Eenheden',
+    hu: 'Mértékegységek',
+    cs: 'Jednotky',
+    sv: 'Enheter',
+    da: 'Enheder',
+    no: 'Enheter',
+    fi: 'Yksiköt',
+    el: 'Μονάδες',
   },
 };
 
@@ -176,7 +195,12 @@ const ALL_CONVERSION_DEFS: ConversionDef[] = [
   { source: 'html', target: 'markdown', toolKey: 'htmlToMarkdown' },
 
   // ── Base64 ──
-  // base64 converters use a different component so we don't map them here
+  { source: 'jpg', target: 'base64', toolKey: 'imageToBase64' },
+  { source: 'png', target: 'base64', toolKey: 'imageToBase64' },
+  { source: 'webp', target: 'base64', toolKey: 'imageToBase64' },
+  { source: 'base64', target: 'jpg', toolKey: 'base64ToImage' },
+  { source: 'base64', target: 'png', toolKey: 'base64ToImage' },
+  { source: 'base64', target: 'webp', toolKey: 'base64ToImage' },
 ];
 
 export interface ResolvedRoute {

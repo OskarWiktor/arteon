@@ -2,7 +2,7 @@
   "toolKey": "pdfToJpg",
   "locale": "sv",
   "metadata": {
-    "title": "PDF till JPG-konverterare — PDF JPG",
+    "title": "PDF till JPG-konverterare - PDF JPG",
     "description": "Konvertera PDF-sidor till JPG-bilder. Hög kvalitet, inga begränsningar. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/pdf-till-jpg-konverterare"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertera",
-          "text": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare."
+          "text": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera PDF till JPG?",
-      "html": "<p class=\"text-mid mb-4\">PDF ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till JPG erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina PDF-filer till JPG-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till JPG erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina PDF-filer till JPG-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "PDF to JPG conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertera",
-          "description": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare.",
+          "description": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — vad valja vid konvertering PDF till JPG?",
-      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan PDF och JPG praktiskt taget omarkbar.</p>"
+      "title": "Kvalitet - vad valja vid konvertering PDF till JPG?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) - bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% - for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% - nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 85% ar skillnaden mellan PDF och JPG praktiskt taget omarkbar.</p>"
     },
     {
       "type": "gap",
@@ -256,6 +256,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose JPG vs PNG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">JPG uses lossy compression optimized for photographs. It produces small files but may show visible artifacts around text and sharp edges. Choose JPG for photo-heavy PDFs like catalogs, brochures, and photo albums.</p><p class=\"text-mid mb-4\">PNG is lossless and preserves sharp edges perfectly. Choose PNG for documents with text, technical drawings, invoices, and diagrams. PNG files will be 3–5× larger than JPG.</p><p class=\"text-mid\">For web use, consider WebP — it offers better compression than both JPG and PNG while supporting transparency. Use <a href=\"/en/tools/pdf-to-webp-converter\">our PDF to WebP converter</a> for optimal web performance.</p>"
     },
     {
       "type": "faq",

@@ -1,0 +1,277 @@
+{
+  "toolKey": "bytesConverter",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur d'octets – Ko, Mo, Go, To",
+    "description": "Convertissez entre octets, kilo-octets, méga-octets, giga-octets et téra-octets.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-octets"
+  },
+  "hero": {
+    "title": "Convertir octets, Ko, Mo, Go, To",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-octets",
+      "label": "Convertisseur d'octets"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur d'octets – Ko, Mo, Go, To",
+      "alternateName": ["Convertir octets, Ko, Mo, Go, To"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez entre octets, kilo-octets, méga-octets, giga-octets et téra-octets.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des octets ?",
+      "html": "<p class=\"text-mid mb-4\">Le stockage numérique se mesure en octets et leurs multiples : kilo-octet (Ko), mégaoctet (Mo), gigaoctet (Go) et téraoctet (To). Deux systèmes existent : décimal (1 Ko = 1 000 octets) et binaire (1 Kio = 1 024 octets).</p><p class=\"text-mid mb-4\">Les fabricants utilisent le décimal (un disque de « 500 Go » = 500 000 000 000 octets), tandis que les systèmes d’exploitation utilisent le binaire (affichant ~465 Gio pour le même disque).</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur d'octets – Ko, Mo, Go, To – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Capacité de stockage",
+          "description": "Comparez stockage annoncé vs réel : un disque de « 1 To » affiche 931 Gio sous Windows."
+        },
+        {
+          "icon": "RiUploadCloudLine",
+          "title": "Transfert de fichiers",
+          "description": "Calculez les temps de transfert : le réseau utilise des bits (Mbps), les fichiers des octets."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Stockage cloud",
+          "description": "Planifiez les coûts cloud en comprenant les Go consommés."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Programmation",
+          "description": "Tampons, allocation mémoire et structures de données nécessitent des calculs précis."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Décimal (SI) : 1 Ko = 1 000 octets, 1 Mo = 1 000 Ko, 1 Go = 1 000 Mo. Chaque niveau multiplie par 1 000.</p><p class=\"text-mid mb-4\">Binaire (IEC) : 1 Kio = 1 024 octets, 1 Mio = 1 024 Kio. Chaque niveau multiplie par 1 024.</p><p class=\"text-mid\">La différence croît : 1 To (décimal) = 0,909 Tio (binaire).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Décimal (SI) : 1 Ko = 1 000 octets, 1 Mo = 1 000 Ko, 1 Go = 1 000 Mo. Chaque niveau multiplie par 1 000.</p><p class=\"text-mid mb-4\">Binaire (IEC) : 1 Kio = 1 024 octets, 1 Mio = 1 024 Kio. Chaque niveau multiplie par 1 024.</p><p class=\"text-mid\">La différence croît : 1 To (décimal) = 0,909 Tio (binaire).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Décimal vs Binaire – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Décimal (SI)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binaire (IEC)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Multiplicateur",
+          "values": {
+            "unit1": "1 000",
+            "unit2": "1 024"
+          }
+        },
+        {
+          "name": "Unités",
+          "values": {
+            "unit1": "Ko, Mo, Go, To",
+            "unit2": "Kio, Mio, Gio, Tio"
+          }
+        },
+        {
+          "name": "Utilisé par",
+          "values": {
+            "unit1": "Fabricants de stockage",
+            "unit2": "Systèmes d’exploitation, RAM"
+          }
+        },
+        {
+          "name": "1 To équivaut à",
+          "values": {
+            "unit1": "1 000 000 000 000 octets",
+            "unit2": "1 099 511 627 776 octets"
+          }
+        },
+        {
+          "name": "Différence pour 1 To",
+          "values": {
+            "unit1": "1 To",
+            "unit2": "0,909 Tio"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de Mo fait 1 Go ?",
+          "answer": "1 Go = 1 000 Mo (décimal) ou 1 Gio = 1 024 Mio (binaire)."
+        },
+        {
+          "question": "Pourquoi mon disque affiche-t-il moins ?",
+          "answer": "Les fabricants utilisent le décimal (1 To = 1 000 000 000 000 octets), votre OS le binaire. Un disque de « 1 To » affiche ~931 Gio."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "bajty na KB/MB/GB – Arteon",
+      "defaultSubject": "Feedback : bytes-converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

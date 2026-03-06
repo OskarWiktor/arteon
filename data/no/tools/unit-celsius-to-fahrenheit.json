@@ -1,0 +1,277 @@
+{
+  "toolKey": "celsiusToFahrenheit",
+  "locale": "no",
+  "metadata": {
+    "title": "°C til °F – kalkulator",
+    "description": "Regn om Celsius til Fahrenheit og omvendt. Umiddelbare resultater.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/no/verktoy/celsius-til-fahrenheit-kalkulator"
+  },
+  "hero": {
+    "title": "°C til °F",
+    "description": "Denne kalkulatoren regner om umiddelbart. Skriv inn en verdi og resultatet vises med en gang.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/celsius-til-fahrenheit-kalkulator",
+      "label": "°C til °F"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "°C til °F – kalkulator",
+      "alternateName": ["°C til °F"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Regn om Celsius til Fahrenheit og omvendt. Umiddelbare resultater.",
+      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+    },
+    "howTo": {
+      "name": "Slik bruker du kalkulatoren",
+      "description": "Hurtigguide for bruk av kalkulatoren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Skriv inn verdi",
+          "text": "Skriv inn et tall i inputfeltet til venstre."
+        },
+        {
+          "name": "Les av resultatet",
+          "text": "Konverteringsresultatet vises umiddelbart i feltet ved siden av."
+        },
+        {
+          "name": "Kopier eller snu",
+          "text": "Klikk på Kopier resultat eller på Snu for å konvertere i motsatt retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Når bør man omregne Celsius til Fahrenheit?",
+      "html": "<p class=\"text-mid mb-4\">Celsius (°C) brukes over hele verden, Fahrenheit (°F) i USA og noen andre land. Formel: °F = °C × 9/5 + 32.</p><p class=\"text-mid mb-4\">Viktige referansepunkter: 0°C = 32°F (frysepunkt), 37°C = 98,6°F (kroppstemperatur), 100°C = 212°F (kokepunkt).</p><p class=\"text-mid\">Alle beregninger kjører lokalt i nettleseren din.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Celsius to Fahrenheit converter – temperature conversion – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruker du omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Skriv inn en verdi",
+          "description": "Tast inn et tall i inntastingsfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Les resultatet",
+          "description": "Resultatet vises umiddelbart.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopier eller bytt",
+          "description": "Kopier resultatet eller bytt omregningsretning.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Når er denne kalkulatoren nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiSunLine",
+          "title": "Reise til USA",
+          "description": "Værmeldinger i °F. 77°F = 25°C."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Matlaging",
+          "description": "Amerikanske oppskrifter i °F. 350°F = 177°C."
+        },
+        {
+          "icon": "RiHeartPulseLine",
+          "title": "Medisinsk",
+          "description": "Feber: 38°C = 100,4°F."
+        },
+        {
+          "icon": "RiFlaskLine",
+          "title": "Vitenskap",
+          "description": "Kelvin, Celsius og Fahrenheit sammenligninger."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne omregneren spesiell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Full personvern",
+          "description": "Alle beregninger kjører lokalt i nettleseren din."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Sanntidsresultater",
+          "description": "Resultatet oppdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Toveis omregning",
+          "description": "Omregn begge veier med ett klikk."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referansetabell",
+          "description": "Tabell med vanlige verdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">°F = °C × 9/5 + 32. Omvendt: °C = (°F − 32) × 5/9.</p><p class=\"text-mid\">Krysningspunkt: −40°C = −40°F.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">°F = °C × 9/5 + 32. Omvendt: °C = (°F − 32) × 5/9.</p><p class=\"text-mid\">Krysningspunkt: −40°C = −40°F.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Celsius vs Fahrenheit",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Celsius (°C)"
+        },
+        {
+          "id": "unit2",
+          "name": "Fahrenheit (°F)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Frysepunkt vann",
+          "values": {
+            "unit1": "0°C",
+            "unit2": "32°F"
+          }
+        },
+        {
+          "name": "Kokepunkt vann",
+          "values": {
+            "unit1": "100°C",
+            "unit2": "212°F"
+          }
+        },
+        {
+          "name": "Kroppstemperatur",
+          "values": {
+            "unit1": "37°C",
+            "unit2": "98,6°F"
+          }
+        },
+        {
+          "name": "Absolutt nullpunkt",
+          "values": {
+            "unit1": "−273,15°C",
+            "unit2": "−459,67°F"
+          }
+        },
+        {
+          "name": "Bruk",
+          "values": {
+            "unit1": "Hele verden",
+            "unit2": "USA"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange Fahrenheit er 0°C?",
+          "answer": "0°C = 32°F."
+        },
+        {
+          "question": "Hva er formelen?",
+          "answer": "°F = °C × 9/5 + 32. Omvendt: °C = (°F − 32) × 5/9."
+        },
+        {
+          "question": "Kjører beregningene lokalt?",
+          "answer": "Ja. Alle beregninger kjører i nettleseren din."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "°C til °F – Arteon",
+      "defaultSubject": "Tilbakemelding: celsius-to-fahrenheit"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

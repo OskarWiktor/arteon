@@ -1,0 +1,289 @@
+{
+  "toolKey": "inchesToPxDpi",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter cali na piksele (DPI) – inches to px",
+    "description": "Przelicz cale na piksele z regulowanym DPI. Konwerter jest przydatny dla formatów amerykańskich (Letter, Legal). Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-cale-na-px"
+  },
+  "hero": {
+    "title": "Przelicz cale na piksele",
+    "description": "Ten konwerter przelicza cale na piksele z uwzględnieniem DPI. Jest szczególnie przydatny przy amerykańskich formatach druku.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-cale-na-px",
+      "label": "cale na px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter cali na piksele (DPI) – inches to px",
+      "alternateName": ["Przelicznik cali na px", "Kalkulator inches to pixels", "Zamiana cali na piksele"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz cale na piksele z regulowanym DPI. Konwerter jest przydatny dla formatów amerykańskich (Letter, Legal). Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera cale na px",
+      "description": "Instrukcja użycia: cale na px.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy potrzebne jest przeliczanie cali na piksele?",
+      "html": "<p class=\"text-mid mb-4\">Cal (in) to podstawowa jednostka długości w systemie imperialnym. W grafice przeliczenie cali na piksele wymaga znajomości DPI: px = cale × DPI.</p><p class=\"text-mid mb-4\">Amerykańskie formaty papieru podaje się w calach: Letter (8,5 × 11″), Legal (8,5 × 14″), Tabloid (11 × 17″). Przeliczenie na piksele przy 300 DPI: Letter = 2 550 × 3 300 px.</p><p class=\"text-mid mb-4\">Monitory mierzy się w calach przekątnej (24″, 27″, 32″), a ich rozdzielczość podaje się w pikselach. Znajomość PPI monitora pozwala obliczyć, ile pikseli przypada na cal.</p><p class=\"text-mid\">W CSS cal jest zdefiniowany jako 96 px (niezależnie od fizycznego DPI ekranu). Dlatego <code>width: 1in</code> w CSS = 96 px.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "cale na px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Druk US",
+          "description": "Letter 8,5 × 11″ przy 300 DPI = 2 550 × 3 300 px."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Monitory",
+          "description": "Oblicz PPI monitora: 27″ 4K (3840px) = 163 PPI."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografia",
+          "description": "Wydruk zdjęcia 4 × 6″ przy 300 DPI = 1 200 × 1 800 px."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "CSS",
+          "description": "W CSS 1 in = 96 px (definicja CSS)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja cali na px?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja cali na piksele to najprostsza ze wszystkich konwersji fizycznych na cyfrowe, ponieważ DPI (dots per inch) bezpośrednio oznacza liczbę pikseli na cal. Aby zamienić cale na piksele, wystarczy pomnożyć wartość w calach przez DPI — bez żadnych dodatkowych stałych.</p><p class=\"text-mid mb-4\">Na przykład przy 300 DPI (standard druku) jeden cal to 300 pikseli, a obraz o wymiarach 4 × 6 cali ma 1 200 × 1 800 px. Przy 96 DPI (standard ekranu Windows) ten sam cal to zaledwie 96 pikseli.</p><p class=\"text-mid\">Konwerter pozwala ustawić dowolną wartość DPI. Znajomość tej zależności jest kluczowa przy przygotowywaniu grafik do druku — pozwala określić, czy rozdzielczość obrazu jest wystarczająca do wydruku w żądanym rozmiarze.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Letter (8,5 × 11″) przy 300 DPI = 2 550 × 3 300 px.</li><li>Zdjęcie 4 × 6″ przy 300 DPI = 1 200 × 1 800 px – minimum dla dobrego druku.</li><li>W CSS: 1 in = 96 px, 1 cm = 37,8 px, 1 mm = 3,78 px.</li><li>PPI monitora 27″ 4K = 3840 ÷ 23,5″ (szer.) ≈ 163 PPI.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Cal (in) vs Piksel (px) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Cal (in)"
+        },
+        {
+          "id": "unit2",
+          "name": "Piksel (px)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Typ",
+          "values": {
+            "unit1": "Fizyczna (imperialna)",
+            "unit2": "Ekranowa"
+          }
+        },
+        {
+          "name": "CSS",
+          "values": {
+            "unit1": "1 in = 96 px",
+            "unit2": "1 px = 1/96 in"
+          }
+        },
+        {
+          "name": "Druk 300 DPI",
+          "values": {
+            "unit1": "1″ = 300 px",
+            "unit2": "1 px = 0,0033″"
+          }
+        },
+        {
+          "name": "Letter",
+          "values": {
+            "unit1": "8,5 × 11″",
+            "unit2": "2 550 × 3 300 px (300 DPI)"
+          }
+        },
+        {
+          "name": "Zdjęcie 4×6″",
+          "values": {
+            "unit1": "4 × 6″",
+            "unit2": "1 200 × 1 800 px (300 DPI)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile pikseli ma 1 cal przy 300 DPI?",
+          "answer": "Dokładnie 300 px. To najprostszy przelicznik: px = cale × DPI."
+        },
+        {
+          "question": "Jakie wymiary pikseli ma format Letter?",
+          "answer": "Letter (8,5 × 11″) przy 300 DPI = 2 550 × 3 300 px."
+        },
+        {
+          "question": "Ile pikseli ma cal w CSS?",
+          "answer": "96 px. W CSS 1 cal jest zdefiniowany jako 96 px, niezależnie od fizycznego DPI ekranu."
+        },
+        {
+          "question": "Jak obliczyć PPI monitora?",
+          "answer": "Oblicz przekątną w pikselach (√(szer²+wys²)) i podziel przez przekątną w calach. Przykład: 27″ 4K = √(3840²+2160²)/27 = 163 PPI."
+        },
+        {
+          "question": "Jaka rozdzielczość wystarczy do druku zdjęć?",
+          "answer": "Minimum 200 DPI, optymalnie 300 DPI. Zdjęcie 4×6″ przy 300 DPI wymaga co najmniej 1 200×1 800 px."
+        },
+        {
+          "question": "Czy DPI i PPI to to samo?",
+          "answer": "DPI dotyczy druku (dots), PPI dotyczy ekranów (pixels). W kontekście grafiki cyfrowej używa się ich zamiennie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "cale na px – Arteon",
+      "defaultSubject": "Feedback: cale na px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

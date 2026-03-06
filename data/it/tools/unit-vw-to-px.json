@@ -1,0 +1,273 @@
+{
+  "toolKey": "vwToPx",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore vw in pixel – CSS viewport",
+    "description": "Converti unità CSS vw in pixel. Per design responsive e calcoli di layout.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-vw-in-px"
+  },
+  "hero": {
+    "title": "Convertire vw in pixel",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-vw-in-px",
+      "label": "vw in px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore vw in pixel – CSS viewport",
+      "alternateName": ["Convertire vw in pixel"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti unità CSS vw in pixel. Per design responsive e calcoli di layout.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire vw in pixel?",
+      "html": "<p class=\"text-mid mb-4\">L’unità CSS vw equivale all’1% della larghezza del viewport. Su uno schermo di 1920px: 1vw = 19,2px, 50vw = 960px, 100vw = 1920px.</p><p class=\"text-mid mb-4\">vw è frequentemente usato per la Fluid Typography: font-size: clamp(1rem, 2.5vw, 2rem).</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore vw in pixel – CSS viewport – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato appare istantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Copia il risultato o inverti la direzione di conversione.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiLayoutLine",
+          "title": "Design responsive",
+          "description": "Calcola dimensioni a diversi viewport: 50vw = 960px su 1920px."
+        },
+        {
+          "icon": "RiFontSizeLine",
+          "title": "Tipografia fluida",
+          "description": "font-size: 2,5vw = 48px su 1920px, 32px su 1280px."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Debug layout",
+          "description": "Verifica il rendering dei layout basati su vw ai breakpoint."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Documentazione design",
+          "description": "Converti valori vw in pixel per dimensioni schermo target."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Converti in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Tabella con valori comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">px = vw × larghezza viewport / 100.</p><p class=\"text-mid\">Su 1920px: 1vw = 19,2px. Su 375px (iPhone): 1vw = 3,75px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">px = vw × larghezza viewport / 100.</p><p class=\"text-mid\">Su 1920px: 1vw = 19,2px. Su 375px (iPhone): 1vw = 3,75px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "vw a diverse larghezze viewport",
+      "featureLabel": "Valore vw",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Su 1920px"
+        },
+        {
+          "id": "unit2",
+          "name": "Su 375px (mobile)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1vw",
+          "values": {
+            "unit1": "19,2px",
+            "unit2": "3,75px"
+          }
+        },
+        {
+          "name": "10vw",
+          "values": {
+            "unit1": "192px",
+            "unit2": "37,5px"
+          }
+        },
+        {
+          "name": "50vw",
+          "values": {
+            "unit1": "960px",
+            "unit2": "187,5px"
+          }
+        },
+        {
+          "name": "100vw",
+          "values": {
+            "unit1": "1920px",
+            "unit2": "375px"
+          }
+        },
+        {
+          "name": "2,5vw (font)",
+          "values": {
+            "unit1": "48px",
+            "unit2": "9,4px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanto è 1vw in pixel?",
+          "answer": "1vw = 1% della larghezza del viewport. Su 1920px: 19,2px. Su 375px: 3,75px."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "vw na px – Arteon",
+      "defaultSubject": "Feedback: vw-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

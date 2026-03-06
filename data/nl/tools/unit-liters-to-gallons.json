@@ -1,0 +1,273 @@
+{
+  "toolKey": "litersToGallons",
+  "locale": "nl",
+  "metadata": {
+    "title": "L naar gal – converter",
+    "description": "Reken liters om naar US gallons en andersom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/nl/tools/liter-naar-gallon-converter"
+  },
+  "hero": {
+    "title": "L naar gal",
+    "description": "Deze converter rekent direct om. Voer een waarde in en het resultaat verschijnt onmiddellijk.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/liter-naar-gallon-converter",
+      "label": "l naar gal"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "L naar gal – converter",
+      "alternateName": ["L naar gal"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Reken liters om naar US gallons en andersom.",
+      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+    },
+    "howTo": {
+      "name": "Hoe de converter te gebruiken",
+      "description": "Snelle handleiding voor de converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Waarde invoeren",
+          "text": "Typ een getal in het invoerveld aan de linkerkant."
+        },
+        {
+          "name": "Resultaat aflezen",
+          "text": "Het conversieresultaat verschijnt direct in het veld ernaast."
+        },
+        {
+          "name": "Kopiëren of omdraaien",
+          "text": "Klik op Resultaat kopiëren of op Omdraaien om in de andere richting te converteren."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wanneer heb je nodig: L naar gal?",
+      "html": "<p class=\"text-mid mb-4\">Liter (L) is de metrische volume-eenheid. US gallon = 3,785 L. UK gallon = 4,546 L.</p><p class=\"text-mid\">Alle berekeningen draaien lokaal in je browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "L naar gal – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe gebruik je de omrekentool?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voer een waarde in",
+          "description": "Typ een getal in het invoerveld.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lees het resultaat",
+          "description": "Het resultaat verschijnt direct.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieer of wissel",
+          "description": "Kopieer het resultaat of wissel de richting.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer is deze converter nuttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGasStationLine",
+          "title": "Brandstofverbruik",
+          "description": "VS verkoopt in gallons. 40 L = 10,6 gal."
+        },
+        {
+          "icon": "RiCarLine",
+          "title": "Buitenlandse reizen",
+          "description": "Amerikaanse recepten in gallons en cups."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Koken en recepten",
+          "description": "10 gal = 37,9 L, 55 gal = 208 L."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Landbouw",
+          "description": "Chemicaliën en bewatering in gallons."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze tool bijzonder?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Alle berekeningen draaien lokaal in je browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Directe resultaten",
+          "description": "Het resultaat wordt bijgewerkt terwijl je typt."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tweerichtingsomrekening",
+          "description": "Wissel de richting met één klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referentietabel",
+          "description": "Tabel met gangbare waarden en context."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">1 US gallon = 3,785 L exact. 1 UK gallon = 4,546 L.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">1 US gallon = 3,785 L exact. 1 UK gallon = 4,546 L.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Liter vs US Gallon",
+      "featureLabel": "Eigenschap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Liter (L)"
+        },
+        {
+          "id": "unit2",
+          "name": "US Gallon",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Systeem",
+          "values": {
+            "unit1": "Metrisch",
+            "unit2": "US Customary"
+          }
+        },
+        {
+          "name": "Basis",
+          "values": {
+            "unit1": "1.000 mL",
+            "unit2": "3.785 mL"
+          }
+        },
+        {
+          "name": "Brandstof",
+          "values": {
+            "unit1": "L/100km",
+            "unit2": "MPG"
+          }
+        },
+        {
+          "name": "Koken",
+          "values": {
+            "unit1": "mL/L",
+            "unit2": "Cups/gal"
+          }
+        },
+        {
+          "name": "UK gallon",
+          "values": {
+            "unit1": "4,546 L",
+            "unit2": "1,201 US gal"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hoeveel liter is 1 US gallon?",
+          "answer": "1 US gallon = 3,78541 L."
+        },
+        {
+          "question": "Worden berekeningen lokaal uitgevoerd?",
+          "answer": "Ja. Alle berekeningen draaien in je browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "l naar gal – Arteon",
+      "defaultSubject": "Feedback: liters-to-gallons"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

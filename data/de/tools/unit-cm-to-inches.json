@@ -1,0 +1,289 @@
+{
+  "toolKey": "cmToInches",
+  "locale": "de",
+  "metadata": {
+    "title": "CM in Zoll umrechnen – Längenrechner",
+    "description": "Rechnen Sie Zentimeter in Zoll um und umgekehrt. Nützlich für Bildschirmgrößen, Kleidung, Möbel und Fahrräder.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/cm-in-zoll-umrechner"
+  },
+  "hero": {
+    "title": "Zentimeter in Zoll umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/cm-in-zoll-umrechner",
+      "label": "cm in Zoll"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "CM in Zoll umrechnen – Längenrechner",
+      "alternateName": ["Zentimeter in Zoll umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Rechnen Sie Zentimeter in Zoll um und umgekehrt. Nützlich für Bildschirmgrößen, Kleidung, Möbel und Fahrräder.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter cm na cale",
+      "description": "Anleitung: cm na cale.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann muss man Zentimeter in Zoll umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Zentimeter (cm) ist eine metrische Längeneinheit, die 1/100 eines Meters entspricht. Zoll (in oder ″) ist eine imperiale Einheit, die genau 2,54 cm entspricht. Dieser Umrechnungsfaktor ist seit 1959 international standardisiert.</p><p class=\"text-mid mb-4\">Die Umrechnung von cm in Zoll ist wichtig beim Kauf von Monitoren und Fernsehern (Bildschirmdiagonalen in Zoll), Kleidung aus US- oder UK-Shops, Möbeln aus US-Katalogen und Fahrrädern (Rad- und Rahmengrößen in Zoll).</p><p class=\"text-mid mb-4\">In der Elektronik: Smartphone-Displays (6,1″ = 15,49 cm), Laptops (15,6″ = 39,62 cm) und US-Papierformate (Letter: 8,5 × 11″).</p><p class=\"text-mid\">Alle Berechnungen laufen lokal in Ihrem Browser — nichts wird an einen Server gesendet.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "CM in Zoll umrechnen – Längenrechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So verwenden Sie den Konverter",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein. Sie können einen Punkt oder ein Komma als Dezimaltrennzeichen verwenden.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Konvertierungsergebnis erscheint sofort im Feld daneben – ohne Klicken.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Klicken Sie auf Ergebnis kopieren oder verwenden Sie die Umkehren-Taste.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Konverter nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTvLine",
+          "title": "Ekrany i monitory",
+          "description": "Przekątne telewizorów i monitorów podaje się w calach: 27″ = 68,58 cm, 55″ = 139,7 cm."
+        },
+        {
+          "icon": "RiTShirt2Line",
+          "title": "Odzież zagraniczna",
+          "description": "Amerykańskie tabele rozmiarów podają obwód klatki, talii i bioder w calach."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Budownictwo i DIY",
+          "description": "Rury, śruby i elementy złączne często mają wymiary w calach."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Rowery i koła",
+          "description": "Rozmiary kół rowerowych (26″, 27,5″, 29″) i opon podaje się w calach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen laufen lokal in Ihrem Browser. Keine Daten werden an einen Server gesendet."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich sofort beim Tippen – ohne Klicken."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Konvertierung",
+          "description": "Die Umkehren-Taste ermöglicht die Konvertierung in beide Richtungen mit einem Klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Eine fertige Tabelle mit häufig konvertierten Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung von cm in Zoll?",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung basiert auf der internationalen Definition von 1959: Ein Zoll entspricht genau 2,54 Zentimetern. Dies ist einer der wenigen Einheiten mit einem exakten, ungerundeten Umrechnungsfaktor.</p><p class=\"text-mid mb-4\">Um cm in Zoll umzurechnen, teilen Sie durch 2,54. Beispiel: 10 cm / 2,54 = 3,937 Zoll. Um Zoll in cm umzurechnen, multiplizieren Sie mit 2,54.</p><p class=\"text-mid\">Der Konverter zeigt Ergebnisse mit voller Präzision an.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktische Tipps",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Bildschirmdiagonale: 1″ = 2,54 cm. Ein 55″-TV hat eine Diagonale von 139,7 cm.</li><li>Körpergröße: 6'0″ (6 Fuß) = 182,88 cm. 1 Fuß = 12 Zoll = 30,48 cm.</li><li>Papier: A4 = 21 × 29,7 cm. US Letter = 8,5 × 11″ = 21,59 × 27,94 cm.</li><li>Hosengröße: 32″ = 81,28 cm Taillenumfang.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Zentimeter (cm) vs. Zoll (in) – Vergleich",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Zentimeter (cm)"
+        },
+        {
+          "id": "unit2",
+          "name": "Zoll (in)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisch (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Basiswert",
+          "values": {
+            "unit1": "1/100 Meter",
+            "unit2": "2,54 cm"
+          }
+        },
+        {
+          "name": "Bildschirme",
+          "values": {
+            "unit1": "Zentimeter",
+            "unit2": "Zoll (Standard)"
+          }
+        },
+        {
+          "name": "Kleidung",
+          "values": {
+            "unit1": "Europa (cm)",
+            "unit2": "USA/UK (Zoll)"
+          }
+        },
+        {
+          "name": "Bau",
+          "values": {
+            "unit1": "Metrisches System",
+            "unit2": "Rohre/Schrauben in Zoll"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele Zentimeter ist 1 Zoll?",
+          "answer": "Genau 2,54 cm. Dies ist die seit 1959 gültige internationale Definition."
+        },
+        {
+          "question": "Wie viele Zoll sind 10 cm?",
+          "answer": "10 cm = 3,937 Zoll, knapp unter 4 Zoll."
+        },
+        {
+          "question": "Wie rechne ich eine TV-Diagonale in cm um?",
+          "answer": "Multiplizieren Sie Zoll mit 2,54. Beispiel: 65″-TV = 165,1 cm Diagonale."
+        },
+        {
+          "question": "Wie viel cm sind 5'10″?",
+          "answer": "5 Fuß 10 Zoll = 70 Zoll = 177,8 cm."
+        },
+        {
+          "question": "Ist 1 Zoll genau 2,54 cm?",
+          "answer": "Ja. Seit 1959 ist der internationale Zoll als genau 25,4 mm (2,54 cm) definiert. Dies ist eine exakte Definition, keine Annäherung."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen laufen in Ihrem Browser. Es werden keine Daten an einen Server gesendet."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "cm na cale – Arteon",
+      "defaultSubject": "Feedback: cm-to-inches"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -2,14 +2,14 @@
   "toolKey": "svgToAvif",
   "locale": "da",
   "metadata": {
-    "title": "SVG til AVIF-konverter — SVG AVIF",
-    "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
+    "title": "SVG til AVIF-konverter - SVG AVIF",
+    "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/svg-til-avif-konverter"
   },
   "hero": {
     "title": "SVG til AVIF-konverter",
-    "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
+    "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG til AVIF-konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
+      "description": "Konverter vektor-SVG-grafik til kompakt AVIF-rasterformat. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
       "featureList": ["Konvertering til AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal behandling i browseren"],
       "alternateName": ["Konvertér SVG til AVIF", "SVG til AVIF konvertering", "Gratis SVG til AVIF konverter"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Indstil kvalitet",
-          "text": "Juster AVIF-kvalitetsskyderen — lavere værdier giver mindre filer."
+          "text": "Juster AVIF-kvalitetsskyderen - lavere værdier giver mindre filer."
         },
         {
           "position": 3,
           "name": "Konverter",
-          "text": "Klik på Konverter — filerne behandles lokalt i browseren."
+          "text": "Klik på Konverter - filerne behandles lokalt i browseren."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download AVIF-filerne — enkeltvis eller alle på en gang."
+          "text": "Download AVIF-filerne - enkeltvis eller alle på en gang."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — hvad vaelge ved konvertering SVG til AVIF?",
-      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem SVG og AVIF praktisk talt umaerkelig.</p>"
+      "title": "Kvalitet - hvad vaelge ved konvertering SVG til AVIF?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) - godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% - til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% - nar filstørrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem SVG og AVIF praktisk talt umaerkelig.</p>"
     },
     {
       "type": "gap",
@@ -261,8 +261,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af SVG til AVIF reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+      "title": "Hvordan billedkonvertering påvirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP måler tiden til det største synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af SVG til AVIF reducerer filstørrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
     },
     {
       "type": "gap",
@@ -271,23 +271,23 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering SVG til AVIF",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis SVG allerede var komprimeret, giver konvertering til AVIF maske ikke stor besparelse."
+          "description": "Hvis SVG allerede var komprimeret, giver konvertering til AVIF måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "AVIF understotter alfakanal. Transparente omrader i SVG bevares."
+          "description": "AVIF understøtter alfakanal. Transparente områder i SVG bevares."
         },
         {
           "icon": "RiStackLine",
@@ -299,6 +299,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG to AVIF – when does it make sense?",
+      "html": "<p class=\"text-mid mb-4\">SVG files are typically small (5–100 KB) since they store vector data as text. Converting to AVIF makes sense when:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>The target platform does not support SVG</strong> – email clients, some CMS systems, and social media require raster images.</li><li><strong>You need a fixed-resolution preview</strong> – AVIF provides the smallest raster format for thumbnails and previews.</li><li><strong>Complex SVGs with many paths</strong> – very complex SVGs can actually be larger than a rasterized AVIF, especially at moderate resolutions.</li></ul><p class=\"text-mid mt-3\">For web use where SVG is supported, keep the original SVG — it scales to any size and is typically smaller than any raster format. Use AVIF only when SVG is not an option.</p>"
     },
     {
       "type": "faq",

@@ -43,7 +43,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Bezplatné online nástroje — převodníky obrázků, SEO, barvy, favicon',
+  name: 'Bezplatné online nástroje - převodníky obrázků, SEO, barvy, favicon',
   description:
     'Bezplatné online nástroje: 12 převodníků obrázků (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generátor favicon, editor obrázků, počítadlo textu, barevné palety a QR kódy. Bez registrace.',
   url: toAbsoluteUrl('/cs/nastroje'),
@@ -63,7 +63,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 1,
         name: 'Konvertor JPG/PNG na WebP',
-        description: 'Bezplatny konvertor JPG a PNG na WebP. Zmensete velikost souboru az o 35 % bez ztraty kvality. Bez registrace — soubory zustavaji v prohlizeci.',
+        description: 'Bezplatny konvertor JPG a PNG na WebP. Zmensete velikost souboru az o 35 % bez ztraty kvality. Bez registrace - soubory zustavaji v prohlizeci.',
         url: toAbsoluteUrl('/cs/nastroje/prevodnik-jpg-na-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -81,7 +81,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 3,
         name: 'Generator favicon',
-        description: 'Bezplatny generator favicon. Vytvorte favicon.ico a PNG ikony (16x16 az 512x512) z jednoho obrazku — v souladu s pozadavky prohlizecu a Lighthouse.',
+        description: 'Bezplatny generator favicon. Vytvorte favicon.ico a PNG ikony (16x16 az 512x512) z jednoho obrazku - v souladu s pozadavky prohlizecu a Lighthouse.',
         url: toAbsoluteUrl('/cs/nastroje/generator-favicon-zdarma'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -126,7 +126,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 8,
         name: 'Generator barevnych palet',
-        description: 'Vytvorte barevnou paletu z jedne zakladni barvy. Monochromaticka, triadicka, analogicka, komplementarni a dalsi — vcetne pastelove, tmave a minimalisticke varianty.',
+        description: 'Vytvorte barevnou paletu z jedne zakladni barvy. Monochromaticka, triadicka, analogicka, komplementarni a dalsi - vcetne pastelove, tmave a minimalisticke varianty.',
         url: toAbsoluteUrl('/cs/nastroje/generator-barevnych-palet'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -544,7 +544,7 @@ const faqItems = [
   { question: 'Kolik nastroje stoji?', answer: 'Nic. Vsechny nastroje jsou zdarma, bez predplatneho a bez skrytych poplatku.' },
   { question: 'Odesilaji se soubory na server?', answer: 'Ne. Vsechny nastroje bezi kompletne v prohlizeci. Soubory nikdy neopousteji pocitac a nejsou nikde ukladany.' },
   { question: 'Potrebuji ucet?', answer: 'Ne. Muzete je pouzivat rovnou bez prihlaseni nebo vytvareni uctu.' },
-  { question: 'Existuji nejake limity pouziti?', answer: 'Ne. Pouzivejte bez omezeni — zadny denni limit, zadny limit souboru, zadny limit konverzi.' },
+  { question: 'Existuji nejake limity pouziti?', answer: 'Ne. Pouzivejte bez omezeni - zadny denni limit, zadny limit souboru, zadny limit konverzi.' },
   {
     question: 'K cemu tyto nastroje slouzi?',
     answer: 'Pomahaji pripravit materialy pro web, socialni site a tisk: optimalizovat obrazky, vytvorit favicon, zkontrolovat delku textu, vytvorit QR kod, vybrat barvy a overit jejich citelnost.',
@@ -594,7 +594,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Vytvorte <strong>favicon.ico</strong> a PNG ikony 180x180, 192x192 a 512x512 z jednoho obrazku — v souladu s pozadavky prohlizecu a Lighthouse.
+                    Vytvorte <strong>favicon.ico</strong> a PNG ikony 180x180, 192x192 a 512x512 z jednoho obrazku - v souladu s pozadavky prohlizecu a Lighthouse.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/cs/nastroje/generator-favicon-zdarma">
@@ -620,7 +620,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/kontrola-meta-titulku-a-popisu-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Zkontrolujte pocet znaku, pocet slov a sirku v pixelech — s nahledem Google. Vyhnete se oriznutym titulkum a popisum ve vysledcich vyhledavani.</p>
+                  <p>Zkontrolujte pocet znaku, pocet slov a sirku v pixelech - s nahledem Google. Vyhnete se oriznutym titulkum a popisum ve vysledcich vyhledavani.</p>
                   <div className="mt-4">
                     <Button arrow link="/cs/nastroje/kontrola-meta-titulku-a-popisu">
                       Otevrit nastroj
@@ -640,6 +640,23 @@ export default function ToolsIndexPage() {
                   <div className="mt-4">
                     <Button arrow link="/cs/nastroje/pocitadlo-slov-a-znaku">
                       Otevrit nastroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Generátor Lorem Ipsum',
+              topImageAlt: 'Generátor Lorem Ipsum Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Vygenerujte zástupný text v 8 stylech a 9 režimech. Lorem Ipsum, Hipster, Business, Bacon a další. Zkopírujte jako text nebo HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/generator-lorem-ipsum">
+                      Otevřít nástroj
                     </Button>
                   </div>
                 </div>
@@ -688,7 +705,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/qr-code-generator/generator-qr-kodu-zdarma-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Vytvorte QR kod pro web, vCard, menu restaurace nebo letak. Export do PNG a SVG — bez prihlaseni, bez limitu.</p>
+                  <p>Vytvorte QR kod pro web, vCard, menu restaurace nebo letak. Export do PNG a SVG - bez prihlaseni, bez limitu.</p>
                   <div className="mt-4">
                     <Button arrow link="/cs/nastroje/generator-qr-kodu-zdarma">
                       Otevrit nastroj
@@ -733,7 +750,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/image-color-extractor/extraktor-barev-z-obrazku-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Nahrajte fotografii nebo logo — nastroj extrahuje dominantni barvy. Zkopirujte HEX kody jednim kliknutim a pouzijte je kdekoliv.</p>
+                  <p>Nahrajte fotografii nebo logo - nastroj extrahuje dominantni barvy. Zkopirujte HEX kody jednim kliknutim a pouzijte je kdekoliv.</p>
                   <div className="mt-4">
                     <Button arrow link="/cs/nastroje/extraktor-barev-z-obrazku">
                       Otevrit nastroj
@@ -765,7 +782,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Převodníky obrazových formátů"
-          description="12 online převodníků obrázků — převádějte mezi JPG, PNG, WebP, SVG, BMP a GIF. Převod v prohlížeči, bez odesílání souborů."
+          description="12 online převodníků obrázků - převádějte mezi JPG, PNG, WebP, SVG, BMP a GIF. Převod v prohlížeči, bez odesílání souborů."
           grid="three"
           items={[
             {
@@ -864,16 +881,25 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Datové převodníky"
+          description="Online převodníky datových formátů — převádějte mezi CSV, JSON, XML, YAML, Markdown a HTML. Zpracování v prohlížeči."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Převodník SVG na PNG',
-              topImageAlt: 'Převodník SVG na PNG Arteon',
+              title: 'CSV na JSON',
+              topImageAlt: 'CSV na JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Převeďte vektorovou grafiku SVG na rastrové PNG. Ideální pro dokumenty a sociální sítě.</p>
+                  <p>Převeďte CSV do formátu JSON. Automatické rozpoznání oddělovačů a formátování.</p>
                   <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-svg-na-png">
+                    <Button arrow link="/cs/nastroje/prevodnik-csv-na-json">
                       Otevřít nástroj
                     </Button>
                   </div>
@@ -882,14 +908,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Převodník SVG na JPG',
-              topImageAlt: 'Převodník SVG na JPG Arteon',
+              title: 'JSON na CSV',
+              topImageAlt: 'JSON na CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Převeďte grafiku SVG na kompaktní JPG. Menší soubor, plná kompatibilita.</p>
+                  <p>Převeďte JSON data do formátu CSV. Zpracování v prohlížeči.</p>
                   <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-svg-na-jpg">
+                    <Button arrow link="/cs/nastroje/prevodnik-json-na-csv">
                       Otevřít nástroj
                     </Button>
                   </div>
@@ -898,14 +924,62 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Převodník BMP na JPG',
-              topImageAlt: 'Převodník BMP na JPG Arteon',
+              title: 'XML na JSON',
+              topImageAlt: 'XML na JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Převeďte soubory BMP na lehké JPG. Drastické zmenšení velikosti.</p>
+                  <p>Převeďte XML data do JSON. Konverze v prohlížeči s validací struktury.</p>
                   <div className="mt-4">
-                    <Button arrow link="/cs/nastroje/prevodnik-bmp-na-jpg">
+                    <Button arrow link="/cs/nastroje/prevodnik-xml-na-json">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON na XML',
+              topImageAlt: 'JSON na XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte JSON data do platného XML. Konverze v prohlížeči s formátováním.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-json-na-xml">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML na JSON',
+              topImageAlt: 'YAML na JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte YAML konfiguraci do JSON. Validace a formátování v prohlížeči.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-yaml-na-json">
+                      Otevřít nástroj
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON na YAML',
+              topImageAlt: 'JSON na YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Převeďte JSON data do čitelného YAML. Zpracování v prohlížeči.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/cs/nastroje/prevodnik-json-na-yaml">
                       Otevřít nástroj
                     </Button>
                   </div>
@@ -921,9 +995,9 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Co jsou nastroje Arteon?">
           <p className="mb-4">
-            34 bezplatnych nastroju pro pripravu materialu pro web, socialni site a tisk — konvertor WebP, generator favicon, pocitadlo textu, extraktor barev, generator palet a QR kod.
+            34 bezplatnych nastroju pro pripravu materialu pro web, socialni site a tisk - konvertor WebP, generator favicon, pocitadlo textu, extraktor barev, generator palet a QR kod.
           </p>
-          <p>Vsechny nastroje bezi v prohlizeci — soubory se nikdy neodesilaji na server. Pouzivejte bez registrace a bez omezeni.</p>
+          <p>Vsechny nastroje bezi v prohlizeci - soubory se nikdy neodesilaji na server. Pouzivejte bez registrace a bez omezeni.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -935,15 +1009,15 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Uplne soukromi',
-              description: 'Vsechny nastroje zpracovavaji soubory lokalne v prohlizeci. Nic se neodesila na server — data zmizi po zavreni karty.',
+              description: 'Vsechny nastroje zpracovavaji soubory lokalne v prohlizeci. Nic se neodesila na server - data zmizi po zavreni karty.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Bez omezeni pouziti',
-              description: 'Pouzivejte bez omezeni — zadny denni limit, zadny limit souboru, zadny limit konverzi. Kolikrat potrebujete.',
+              description: 'Pouzivejte bez omezeni - zadny denni limit, zadny limit souboru, zadny limit konverzi. Kolikrat potrebujete.',
             },
             { icon: <RiLockLine className="h-6 w-6" />, title: 'Bez registrace', description: 'Nepotrebujete ucet. Otevrete nastroj, pouzijte, hotovo.' },
-            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'K dispozici v cestine', description: 'Vsechny nastroje jsou k dispozici v cestine — rozhrani, navody i hlasky.' },
+            { icon: <RiGlobalLine className="h-6 w-6" />, title: 'K dispozici v cestine', description: 'Vsechny nastroje jsou k dispozici v cestine - rozhrani, navody i hlasky.' },
           ]}
         />
 

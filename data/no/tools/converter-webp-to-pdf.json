@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "webp": "Chrome 32+, Firefox 65+, Edge 18+, Safari 14+",
-            "pdf": "Innebygd PDF-visning"
+            "webp": true,
+            "pdf": false
           }
         },
         {
@@ -191,8 +191,7 @@
             "pdf": false
           }
         }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",
@@ -247,6 +246,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">While WebP to PDF conversion creates documents rather than web images, PDF file size affects the user experience when PDFs are shared or downloaded from websites. Large PDFs frustrate users and increase bounce rates.</p><p class=\"text-mid mb-4\">The converter optimizes PDF output to balance quality and size. WebP images are already compressed, so the resulting PDF will be reasonably compact. A typical 10-image PDF from WebP sources will be approximately 5–15 MB.</p><p class=\"text-mid\">If you need to display images on a web page rather than in a PDF, keep them as WebP — it’s already the optimal format for web delivery.</p>"
     },
     {
       "type": "faq",

@@ -6,11 +6,11 @@
   },
   "hero": {
     "title": "Contacte con el equipo de Arteon",
-    "description": "Informe de un error, sugiera una nueva herramienta o haga una pregunta — respondemos en un día laborable"
+    "description": "Informe de un error, sugiera una nueva herramienta o haga una pregunta - respondemos en un día laborable"
   },
   "intro": {
     "title": "¿Tiene una pregunta o sugerencia?",
-    "textBefore": "Nos encanta recibir sus comentarios sobre nuestras herramientas. Si encontró un error, tiene una idea para una nueva herramienta o necesita ayuda — escríbanos a",
+    "textBefore": "Nos encanta recibir sus comentarios sobre nuestras herramientas. Si encontró un error, tiene una idea para una nueva herramienta o necesita ayuda - escríbanos a",
     "textAfter": ". Respondemos en un día laborable."
   },
   "formTitle": "Envíenos un mensaje",

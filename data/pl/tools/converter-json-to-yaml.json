@@ -2,8 +2,8 @@
   "toolKey": "jsonToYaml",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JSON na YAML — darmowy, bez rejestracji",
-    "description": "Zamień dane JSON na czytelny YAML. Idealny do konfiguracji Docker, Kubernetes, CI/CD. Bez rejestracji — konwersja lokalna.",
+    "title": "Konwerter JSON na YAML - darmowy, bez rejestracji",
+    "description": "Zamień dane JSON na czytelny YAML. Idealny do konfiguracji Docker, Kubernetes, CI/CD. Bez rejestracji - konwersja lokalna.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-json-na-yaml"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter JSON na YAML — darmowy, bez rejestracji",
+      "name": "Konwerter JSON na YAML - darmowy, bez rejestracji",
       "alternateName": ["Zamiana JSON na YAML online", "Konwersja JSON do YAML", "JSON to YAML converter"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter JSON na YAML online. Zamień dane JSON na YAML w przeglądarce — dane nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter JSON na YAML online. Zamień dane JSON na YAML w przeglądarce - dane nie są wysyłane na serwer.",
       "featureList": ["Konwersja JSON na YAML", "Walidacja danych wejściowych", "Przetwarzanie lokalne w przeglądarce", "Kopiowanie do schowka lub pobieranie"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować JSON na YAML?",
-      "html": "<p class=\"text-mid mb-4\">JSON to uniwersalny format wymiany danych, ale jest trudny do czytania i edycji przez człowieka — zwłaszcza w przypadku zagnieżdżonych struktur. YAML to bardziej czytelna alternatywa preferowana w plikach konfiguracyjnych.</p><p class=\"text-mid mb-4\">Konwersja JSON na YAML przydaje się, gdy tworzysz pliki konfiguracyjne Docker Compose, Kubernetes, GitHub Actions lub Ansible na podstawie danych w formacie JSON.</p><p class=\"text-mid\">Nasz konwerter generuje czytelny YAML z poprawnymi wcięciami — gotowy do użycia w plikach konfiguracyjnych.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON to uniwersalny format wymiany danych, ale przy złożonych, zagnieżdżonych strukturach staje się trudny do czytania — nawiasy klamrowe, kwadratowe, cudzysłowy i przecinki zaciemniają treść. YAML eliminuje ten problem: używa wcięć zamiast nawiasów, nie wymaga cudzysłowów wokół kluczy i obsługuje komentarze (których JSON nie ma).</p><p class=\"text-mid mb-4\">YAML to standard konfiguracji w ekosystemie DevOps: Docker Compose, Kubernetes (manifesty podów, serwisów, deploymentów), GitHub Actions, GitLab CI, Ansible, Terraform (alternatywnie) i Helm. Konwersja JSON na YAML to codzienne zadanie developerów i DevOpsów pracujących z tymi narzędziami.</p><p class=\"text-mid mb-4\">Konwerter generuje poprawny YAML z odpowiednimi wcięciami (2 spacje), obsługuje tablice, obiekty zagnieżdżone, wartości wieloliniowe i typy prymitywne (string, number, boolean, null). Wynik jest gotowy do wklejenia do pliku <code>docker-compose.yml</code>, <code>deployment.yaml</code> czy <code>.github/workflows/*.yml</code>.</p><p class=\"text-mid\">Cała konwersja odbywa się lokalnie w przeglądarce — dane nie są wysyłane na serwer. Bez rejestracji, bez limitów, bez śledzenia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter JSON na YAML – Arteon"
     },
@@ -99,23 +99,23 @@
       "items": [
         {
           "icon": "RiSettingsLine",
-          "title": "Konfiguracja DevOps",
-          "description": "Docker Compose, Kubernetes i GitHub Actions używają YAML — zamień dane JSON na plik konfiguracyjny."
+          "title": "Docker Compose i Kubernetes",
+          "description": "Masz konfigurację w JSON i chcesz ją przekształcić w docker-compose.yml lub manifest Kubernetes? Konwerter zamienia JSON na YAML z poprawnymi wcięciami, gotowy do wklejenia."
         },
         {
           "icon": "RiEyeLine",
-          "title": "Lepsza czytelność",
-          "description": "YAML jest łatwiejszy do czytania i edycji niż JSON — zwłaszcza dla zagnieżdżonych struktur."
+          "title": "GitHub Actions / GitLab CI",
+          "description": "Workflowy CI/CD są definiowane w YAML. Konwersja JSON na YAML pomaga szybko prototypować pipeline’y na podstawie danych JSON z API lub konfiguracji."
         },
         {
           "icon": "RiEditLine",
-          "title": "Ręczna edycja",
-          "description": "YAML nie wymaga nawiasów, cudzysłowów ani przecinków — mniej błędów przy edycji."
+          "title": "Czytelna edycja konfiguracji",
+          "description": "YAML nie wymaga nawiasów, cudzysłowów wokół kluczy ani przecinków — mniej błędów składniowych przy ręcznej edycji. Obsługuje też komentarze, których JSON nie posiada."
         },
         {
           "icon": "RiTeamLine",
-          "title": "Współpraca w zespole",
-          "description": "YAML jest czytelniejszy w przeglądach kodu (pull requests) niż JSON."
+          "title": "Code review i dokumentacja",
+          "description": "YAML jest czytelniejszy w pull requestach i dokumentacji technicznej. Różnice między wersjami są łatwiejsze do zrozumienia niż w JSON dzięki brakowi nawiasów."
         }
       ]
     },
@@ -136,7 +136,7 @@
         {
           "icon": "RiEyeLine",
           "title": "Czytelny wynik",
-          "description": "YAML jest łatwiejszy do czytania i edycji niż JSON — idealny do konfiguracji."
+          "description": "YAML jest łatwiejszy do czytania i edycji niż JSON - idealny do konfiguracji."
         },
         {
           "icon": "RiCheckboxCircleLine",
@@ -157,7 +157,7 @@
     {
       "type": "sectionInfo",
       "title": "Wskazówki dotyczące konwersji JSON na YAML",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Wynikowy YAML używa 2 spacji jako wcięcia — standard zgodny z większością narzędzi DevOps.</li><li>Ciągi zawierające znaki specjalne (dwukropki, cudzysłowy) będą automatycznie otoczone cudzysłowami.</li><li>JSON nie obsługuje komentarzy — jeśli potrzebujesz komentarzy w YAML, dodaj je po konwersji.</li><li>Konwerter przyjmuje zarówno sformatowany, jak i zminifikowany JSON.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Wynikowy YAML używa 2 spacji jako wcięcia - standard zgodny z większością narzędzi DevOps.</li><li>Ciągi zawierające znaki specjalne (dwukropki, cudzysłowy) będą automatycznie otoczone cudzysłowami.</li><li>JSON nie obsługuje komentarzy - jeśli potrzebujesz komentarzy w YAML, dodaj je po konwersji.</li><li>Konwerter przyjmuje zarówno sformatowany, jak i zminifikowany JSON.</li></ul>"
     },
     {
       "type": "gap",
@@ -229,8 +229,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ile mozna zaoszczedzic konwertujac JSON na YAML?",
-      "html": "<p class=\"text-mid mb-4\">Oszczednosci zaleza od rodzaju pliku zrodlowego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjecie z aparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczednosci moga sie roznic. Konwerter pokazuje dokladny rozmiar przed i po konwersji.</p>"
+      "title": "Jak działa konwersja JSON na YAML?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja JSON na YAML polega na zamianie składni opartej na nawiasach i cudzysłowach na format oparty na wcięciach. Klucze obiektów JSON stają się kluczami YAML bez cudzysłowów, a zagnieżdżenia są wyrażane przez wcięcia (standardowo 2 spacje).</p><p class=\"text-mid mb-4\">Tablice JSON są konwertowane na listy YAML z myślnikami. Na przykład <code>[\"a\", \"b\"]</code> w JSON staje się dwoma liniami z prefiksem <code>- </code> w YAML. Wartości logiczne, null i liczby są zachowane bez zmian.</p><p class=\"text-mid\">Wynikowy YAML jest czytelniejszy dla człowieka i gotowy do użycia jako plik konfiguracyjny Docker Compose, Kubernetes, GitHub Actions czy Ansible. Konwerter waliduje poprawność JSON przed konwersją.</p>"
     },
     {
       "type": "gap",
@@ -238,29 +238,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Na co zwrocic uwage przy konwersji JSON na YAML?",
-      "description": "Kilka wskazowek, ktore pomoga uniknac problemow:",
+      "title": "Na co zwrócić uwagę przy konwersji JSON na YAML?",
+      "description": "Kilka wskazówek, które pomogą uniknąć problemów:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Bardzo duze pliki",
-          "description": "Konwersja obrazow powyzej 4000×4000 pikseli moze byc wolniejsza. Rozwaz dzielenie ich na partie po 10–20 sztuk."
+          "icon": "RiSpacingLine",
+          "title": "Wcięcia w YAML",
+          "description": "YAML używa wcięć zamiast nawiasów. Konwerter generuje standardowe 2 spacje na poziom — nie zmieniaj ich na tabulatory, bo YAML ich nie akceptuje."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Juz skompresowane pliki",
-          "description": "Jesli oryginalny plik JSON byl juz mocno skompresowany, konwersja na YAML moze nie przyniesc duzych oszczednosci."
+          "icon": "RiDoubleQuotesL",
+          "title": "Znaki specjalne w wartościach",
+          "description": "Wartości zawierające dwukropki, cudzysłowy lub znaki specjalne są automatycznie otaczane cudzysłowami w wynikowym YAML, aby zachować poprawność składni."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Przezroczystosc",
-          "description": "Format YAML nie obsluguje przezroczystosci. Przezroczyste obszary zostana zastapione bialym tlem. Rozwaz PNG lub WebP."
+          "icon": "RiChat3Line",
+          "title": "Brak komentarzy w JSON",
+          "description": "JSON nie obsługuje komentarzy, więc wynikowy YAML również ich nie będzie zawierał. Jeśli potrzebujesz komentarzy, dodaj je ręcznie po konwersji."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Zachowaj oryginaly",
-          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plikow JSON aby moc powtorzyc konwersje."
+          "icon": "RiAlertLine",
+          "title": "Wieloliniowe ciągi tekstu",
+          "description": "Długie ciągi tekstu z JSON są zapisywane w YAML w jednej linii. Możesz je ręcznie zamienić na bloki wieloliniowe (używając | lub >)."
         }
       ]
     },
@@ -275,7 +275,7 @@
       "items": [
         {
           "question": "Jaki styl YAML generuje konwerter?",
-          "answer": "Konwerter generuje YAML ze standardowymi wcięciami (2 spacje), bez cudzysłowów wokół kluczy — czytelny i zgodny z konwencjami narzędzi DevOps."
+          "answer": "Konwerter generuje YAML ze standardowymi wcięciami (2 spacje), bez cudzysłowów wokół kluczy - czytelny i zgodny z konwencjami narzędzi DevOps."
         },
         {
           "question": "Czy dane są wysyłane na serwer?",
@@ -291,15 +291,15 @@
         },
         {
           "question": "Czy konwersja JSON na YAML jest bezpieczna?",
-          "answer": "Tak. Cala konwersja odbywa sie lokalnie w przegladarce za pomoca Canvas API. Pliki nie sa wysylane na zaden serwer. Po zamknieciu strony dane sa usuwane automatycznie."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce — dane nie są wysyłane na żaden serwer. Po zamknięciu strony dane są automatycznie usuwane z pamięci."
         },
         {
-          "question": "Czy moge konwertowac wiele plikow JSON jednoczesnie?",
-          "answer": "Tak. Narzedzie obsluguje konwersje wielu plikow naraz bez limitu. Przeciagnij pliki na pole konwertera lub wybierz z dysku."
+          "question": "Czy wynikowy YAML można od razu użyć w Docker Compose?",
+          "answer": "Wynikowy YAML ma poprawne wcięcia i składnię zgodną ze standardem. Możesz go użyć bezpośrednio jako plik konfiguracyjny Docker Compose, Kubernetes lub innego narzędzia DevOps."
         },
         {
-          "question": "Czy YAML jest obslugiwany przez wszystkie przegladarki?",
-          "answer": "Format YAML jest szeroko obslugiwany przez nowoczesne przegladarki: Chrome, Firefox, Safari, Edge i Opera."
+          "question": "Czy konwersja jest bezstratna?",
+          "answer": "Tak, konwersja JSON na YAML jest w pełni bezstratna — oba formaty obsługują te same typy danych. Wynikowy YAML można przekonwertować z powrotem na identyczny JSON."
         }
       ]
     },

@@ -2,7 +2,7 @@
   "toolKey": "csvToJson",
   "locale": "sv",
   "metadata": {
-    "title": "CSV till JSON-konverterare — CSV JSON",
+    "title": "CSV till JSON-konverterare - CSV JSON",
     "description": "Konvertera CSV till JSON-format. Automatisk parsning och formatering. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/csv-till-json-konverterare"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera CSV till JSON?",
-      "html": "<p class=\"text-mid mb-4\">CSV ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till JSON erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina CSV-filer till JSON-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">CSV ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till JSON erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina CSV-filer till JSON-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "CSV to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur mycket sparar du vid konvertering CSV till JSON?",
-      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+      "title": "Hur fungerar konvertering från CSV till JSON?",
+      "html": "<p class=\"text-mid mb-4\">CSV-formatet (Comma-Separated Values) lagrar data som textrader där värden separeras med kommatecken eller semikolon. JSON-formatet (JavaScript Object Notation) organiserar samma data som en array av nyckel-värde-objekt, där varje rad blir ett objekt och varje kolumnrubrik blir en nyckel.</p><p class=\"text-mid mb-4\">Konverteraren läser första raden i CSV-filen som kolumnrubriker och använder dessa som egenskapsnamn i varje JSON-objekt. Varje efterföljande rad blir ett separat objekt i den resulterande JSON-arrayen.</p><p class=\"text-mid\">Utdata är korrekt formaterad JSON med indragning för bättre läsbarhet. All konvertering sker lokalt i din webbläsare — ingen data skickas till någon server.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering CSV till JSON",
-      "description": "Tips for att undvika vanliga problem:",
+      "title": "Tips för konvertering från CSV till JSON",
+      "description": "Några tips för att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Mycket stora filer",
-          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Kolumnrubriker",
+          "description": "Se till att din CSV-fil har en rubrikrad. Konverteraren använder första raden som JSON-egenskapsnamn."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Redan komprimerade",
-          "description": "Om CSV redan var kraftigt komprimerad kanske konvertering till JSON inte sparar mycket."
+          "icon": "RiSeparator",
+          "title": "Avgränsardetektering",
+          "description": "Konverteraren detekterar automatiskt om din CSV använder kommatecken, semikolon eller tabb som avgränsare."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "JSON stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+          "icon": "RiCodeLine",
+          "title": "Specialtecken",
+          "description": "Värden som innehåller kommatecken, citattecken eller radbrytningar måste omslutas av dubbla citattecken. Konverteraren hanterar standard CSV-escaping automatiskt."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Spara originalen",
-          "description": "Forlustkomprimering ar irreversibel. Spara kopior av CSV-filer."
+          "icon": "RiFileCodeLine",
+          "title": "Teckenkodning",
+          "description": "För bästa resultat, använd UTF-8-kodade CSV-filer. Filer med andra kodningar kan visa specialtecken felaktigt i JSON."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Common CSV formatting issues and how to handle them",
+      "html": "<p class=\"text-mid mb-4\">CSV files from different sources can have inconsistent formatting. Here are common issues the converter handles:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Different separators</strong> – commas, semicolons, tabs. European exports from Excel often use semicolons because commas are used as decimal separators.</li><li><strong>Quoted values</strong> – values containing commas or newlines must be wrapped in double quotes. The converter handles this correctly.</li><li><strong>Unicode and special characters</strong> – accented characters, CJK text, and emoji are preserved in the JSON output.</li><li><strong>Empty values</strong> – empty cells are converted to empty strings or null in JSON, depending on context.</li></ul><p class=\"text-mid mt-3\">If conversion fails, check that your CSV has consistent column counts across all rows and that quoted values use proper double-quote escaping.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         },
         {
-          "question": "Ar konvertering CSV till JSON saker?",
-          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+          "question": "Är konvertering CSV till JSON säker?",
+          "answer": "Ja. All konvertering sker lokalt i din webbläsare. Din data skickas aldrig till någon server."
         },
         {
-          "question": "Kan jag konvertera flera CSV-filer samtidigt?",
-          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+          "question": "Kan jag använda JSON-utdata i min applikation?",
+          "answer": "Ja. Utdata är standard-JSON kompatibel med alla programmeringsspråk, databaser eller API:er — JavaScript, Python, PHP, Java och många fler."
         },
         {
-          "question": "Stods JSON av alla webblasare?",
-          "answer": "JSON stods av Chrome, Firefox, Safari, Edge och Opera."
+          "question": "Vad händer med tomma värden i CSV?",
+          "answer": "Tomma celler i CSV blir tomma strängar i JSON. Avslutande kommatecken eller inkonsekvent antal kolumner hanteras korrekt."
         }
       ]
     },

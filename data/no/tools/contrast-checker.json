@@ -323,7 +323,7 @@
     {
       "type": "sectionInfo",
       "title": "Krav til universell utforming i Norge",
-      "html": "<p class=\"text-mid mb-4\">Norge har en av Europas strengeste lover om universell utforming — den gjelder <strong>også privat sektor</strong>, ikke bare offentlige virksomheter:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Forskrift om universell utforming av IKT</strong> — krever at alle nettsteder og apper rettet mot allmennheten oppfyller WCAG 2.1 nivå AA. Gjelder både offentlig og privat sektor.</li><li><strong>Likestillings- og diskrimineringsloven</strong> — forbyr diskriminering på grunn av funksjonsnedsettelse, inkludert utilgjengelige digitale tjenester.</li><li><strong>Digitaliseringsdirektoratet (Digdir)</strong> — fører tilsyn og kan gi pålegg og dagbøter ved brudd.</li><li><strong>Strengere enn EU</strong> — mens EU-direktivet primært dekker offentlig sektor (med EAA fra 2025 for privat), har Norge allerede krevd universell utforming fra privat sektor i mange år.</li></ul><p class=\"text-mid mt-3\">Kontrastforholdet 4,5:1 for vanlig tekst og 3:1 for stor tekst er lovpålagt. Dette verktøyet sjekker nøyaktig disse tersklene.</p>"
+      "html": "<p class=\"text-mid mb-4\">Norge har en av Europas strengeste lover om universell utforming - den gjelder <strong>også privat sektor</strong>, ikke bare offentlige virksomheter:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Forskrift om universell utforming av IKT</strong> - krever at alle nettsteder og apper rettet mot allmennheten oppfyller WCAG 2.1 nivå AA. Gjelder både offentlig og privat sektor.</li><li><strong>Likestillings- og diskrimineringsloven</strong> - forbyr diskriminering på grunn av funksjonsnedsettelse, inkludert utilgjengelige digitale tjenester.</li><li><strong>Digitaliseringsdirektoratet (Digdir)</strong> - fører tilsyn og kan gi pålegg og dagbøter ved brudd.</li><li><strong>Strengere enn EU</strong> - mens EU-direktivet primært dekker offentlig sektor (med EAA fra 2025 for privat), har Norge allerede krevd universell utforming fra privat sektor i mange år.</li></ul><p class=\"text-mid mt-3\">Kontrastforholdet 4,5:1 for vanlig tekst og 3:1 for stor tekst er lovpålagt. Dette verktøyet sjekker nøyaktig disse tersklene.</p>"
     },
     {
       "type": "gap",
@@ -393,7 +393,7 @@
         },
         {
           "question": "Gjelder krav om fargekontrast også for private nettsider i Norge?",
-          "answer": "Ja. Forskrift om universell utforming av IKT krever at alle nettsteder og apper rettet mot allmennheten oppfyller WCAG 2.1 AA — dette gjelder både offentlig og privat sektor. Norge er strengere enn EU på dette punktet."
+          "answer": "Ja. Forskrift om universell utforming av IKT krever at alle nettsteder og apper rettet mot allmennheten oppfyller WCAG 2.1 AA - dette gjelder både offentlig og privat sektor. Norge er strengere enn EU på dette punktet."
         },
         {
           "question": "Hva er konsekvensene av å ikke oppfylle kravene?",
@@ -409,7 +409,7 @@
         },
         {
           "question": "Hva er forskjellen mellom WCAG AA og AAA?",
-          "answer": "AA krever 4,5:1 kontrast for vanlig tekst og 3:1 for stor tekst — dette er det lovpålagte minimumskravet. AAA krever 7:1 for vanlig tekst og 4,5:1 for stor tekst — bedre lesbarhet, men vanskeligere å oppnå."
+          "answer": "AA krever 4,5:1 kontrast for vanlig tekst og 3:1 for stor tekst - dette er det lovpålagte minimumskravet. AAA krever 7:1 for vanlig tekst og 4,5:1 for stor tekst - bedre lesbarhet, men vanskeligere å oppnå."
         },
         {
           "question": "Hvilke fargepar bør jeg sjekke først?",

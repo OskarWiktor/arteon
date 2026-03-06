@@ -1,0 +1,273 @@
+{
+  "toolKey": "whToMah",
+  "locale": "no",
+  "metadata": {
+    "title": "Wh til mAh – kalkulator",
+    "description": "Regn om Wh til mAh og omvendt. Justerbar spenning.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/no/verktoy/wh-til-mah-kalkulator"
+  },
+  "hero": {
+    "title": "Wh til mAh",
+    "description": "Denne kalkulatoren regner om umiddelbart. Skriv inn en verdi og resultatet vises med en gang.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/wh-til-mah-kalkulator",
+      "label": "Wh til mAh"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Wh til mAh – kalkulator",
+      "alternateName": ["Wh til mAh"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Regn om Wh til mAh og omvendt. Justerbar spenning.",
+      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+    },
+    "howTo": {
+      "name": "Slik bruker du kalkulatoren",
+      "description": "Hurtigguide for bruk av kalkulatoren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Skriv inn verdi",
+          "text": "Skriv inn et tall i inputfeltet til venstre."
+        },
+        {
+          "name": "Les av resultatet",
+          "text": "Konverteringsresultatet vises umiddelbart i feltet ved siden av."
+        },
+        {
+          "name": "Kopier eller snu",
+          "text": "Klikk på Kopier resultat eller på Snu for å konvertere i motsatt retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Når bør man omregne Wh til mAh?",
+      "html": "<p class=\"text-mid mb-4\">Wattimer (Wh) og milliamperetimer (mAh) måler batterikapasitet. Forholdet avhenger av spenning: mAh = Wh × 1 000 / V.</p><p class=\"text-mid mb-4\">Telefoner i mAh (f.eks. 5 000 mAh ved 3,7V = 18,5 Wh). Bærbare og powerbanker i Wh (flygrense: 100 Wh).</p><p class=\"text-mid\">Alle beregninger kjører lokalt i nettleseren din.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Wh to mAh converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruker du omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Skriv inn en verdi",
+          "description": "Tast inn et tall i inntastingsfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Les resultatet",
+          "description": "Resultatet vises umiddelbart.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopier eller bytt",
+          "description": "Kopier resultatet eller bytt omregningsretning.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Når er denne kalkulatoren nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBattery2ChargeLine",
+          "title": "Powerbanker",
+          "description": "Flygrense: 100 Wh. 20 000 mAh ved 3,7V = 74 Wh (tillatt)."
+        },
+        {
+          "icon": "RiFlightTakeoffLine",
+          "title": "Telefoner",
+          "description": "5 000 mAh ved 3,7V = 18,5 Wh."
+        },
+        {
+          "icon": "RiLaptopLine",
+          "title": "Bærbare",
+          "description": "Batterier på 40–99 Wh."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Tekniske anvendelser",
+          "description": "Paneler produserer Wh, batterier lagrer mAh."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne omregneren spesiell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Full personvern",
+          "description": "Alle beregninger kjører lokalt i nettleseren din."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Sanntidsresultater",
+          "description": "Resultatet oppdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Toveis omregning",
+          "description": "Omregn begge veier med ett klikk."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referansetabell",
+          "description": "Tabell med vanlige verdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">Energi (Wh) = Kapasitet (Ah) × Spenning (V). Altså: mAh = Wh × 1 000 / V.</p><p class=\"text-mid\">Spenningen er avgjørende! Samme Wh gir ulike mAh ved ulike spenninger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">Energi (Wh) = Kapasitet (Ah) × Spenning (V). Altså: mAh = Wh × 1 000 / V.</p><p class=\"text-mid\">Spenningen er avgjørende! Samme Wh gir ulike mAh ved ulike spenninger.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Wh vs mAh",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Wh"
+        },
+        {
+          "id": "unit2",
+          "name": "mAh",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Måler",
+          "values": {
+            "unit1": "Energi",
+            "unit2": "Ladning"
+          }
+        },
+        {
+          "name": "Inkluderer spenning",
+          "values": {
+            "unit1": "Ja",
+            "unit2": "Nei (krever V)"
+          }
+        },
+        {
+          "name": "Bruk",
+          "values": {
+            "unit1": "Bærbare, EV",
+            "unit2": "Telefoner, powerbanker"
+          }
+        },
+        {
+          "name": "Sammenligning",
+          "values": {
+            "unit1": "Direkte ved alle V",
+            "unit2": "Kun ved samme V"
+          }
+        },
+        {
+          "name": "Flygrense",
+          "values": {
+            "unit1": "100 Wh",
+            "unit2": "~27 000 mAh ved 3,7V"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvordan omregner jeg Wh til mAh?",
+          "answer": "mAh = Wh × 1 000 / spenning. 100 Wh ved 3,7V = 27 027 mAh."
+        },
+        {
+          "question": "Kjører beregningene lokalt?",
+          "answer": "Ja. Alle beregninger kjører i nettleseren din."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Wh til mAh – Arteon",
+      "defaultSubject": "Tilbakemelding: wh-to-mah"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

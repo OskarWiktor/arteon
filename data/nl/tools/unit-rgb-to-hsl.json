@@ -1,0 +1,273 @@
+{
+  "toolKey": "rgbToHsl",
+  "locale": "nl",
+  "metadata": {
+    "title": "RGB naar HSL – converter",
+    "description": "Reken RGB om naar HSL en andersom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/nl/tools/rgb-naar-hsl-converter"
+  },
+  "hero": {
+    "title": "RGB naar HSL",
+    "description": "Deze converter rekent direct om. Voer een waarde in en het resultaat verschijnt onmiddellijk.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nl/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/nl/tools/rgb-naar-hsl-converter",
+      "label": "RGB naar HSL"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "RGB naar HSL – converter",
+      "alternateName": ["RGB naar HSL"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Reken RGB om naar HSL en andersom.",
+      "featureList": ["Bidirectionele realtime-conversie", "Alle converters op één plek", "Resultaat naar klembord kopiëren", "Lokale berekening in de browser"]
+    },
+    "howTo": {
+      "name": "Hoe de converter te gebruiken",
+      "description": "Snelle handleiding voor de converter.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Waarde invoeren",
+          "text": "Typ een getal in het invoerveld aan de linkerkant."
+        },
+        {
+          "name": "Resultaat aflezen",
+          "text": "Het conversieresultaat verschijnt direct in het veld ernaast."
+        },
+        {
+          "name": "Kopiëren of omdraaien",
+          "text": "Klik op Resultaat kopiëren of op Omdraaien om in de andere richting te converteren."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wanneer heb je nodig: RGB naar HSL?",
+      "html": "<p class=\"text-mid mb-4\">HSL (Tint, Verzadiging, Lichtheid) is een intuïtievere kleurrepresentatie. Tint = kleurhoek (0–360°), Verzadiging = intensiteit (0–100%), Lichtheid = licht/donker (0–100%).</p><p class=\"text-mid\">Alle berekeningen draaien lokaal in je browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB naar HSL – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hoe gebruik je de omrekentool?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Voer een waarde in",
+          "description": "Typ een getal in het invoerveld.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lees het resultaat",
+          "description": "Het resultaat verschijnt direct.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieer of wissel",
+          "description": "Kopieer het resultaat of wissel de richting.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wanneer is deze converter nuttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaletteLine",
+          "title": "Kleurbeheer",
+          "description": "HSL maakt hover makkelijker: donkerder door L te verlagen, ontverzadigen door S te verlagen."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webontwikkeling",
+          "description": "Consistente kleurschalen via lichtheidsvariatie."
+        },
+        {
+          "icon": "RiContrastLine",
+          "title": "Kleurtheorie",
+          "description": "HSL komt overeen met het kleurenwiel. Complementair = H+180°."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Toegankelijkheid",
+          "description": "HSL-lichtheid helpt bij het waarborgen van voldoende contrast."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wat maakt deze tool bijzonder?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volledige privacy",
+          "description": "Alle berekeningen draaien lokaal in je browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Directe resultaten",
+          "description": "Het resultaat wordt bijgewerkt terwijl je typt."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tweerichtingsomrekening",
+          "description": "Wissel de richting met één klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referentietabel",
+          "description": "Tabel met gangbare waarden en context."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">Normaliseer RGB naar 0–1. Vind max en min. L = (max + min) / 2.</p><p class=\"text-mid\">HSL is volledig omkeerbaar — terug naar RGB geeft exact dezelfde kleur.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hoe werkt de omrekening?",
+      "html": "<p class=\"text-mid mb-4\">Normaliseer RGB naar 0–1. Vind max en min. L = (max + min) / 2.</p><p class=\"text-mid\">HSL is volledig omkeerbaar — terug naar RGB geeft exact dezelfde kleur.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs HSL",
+      "featureLabel": "Eigenschap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "HSL",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Model",
+          "values": {
+            "unit1": "Additieve kanalen",
+            "unit2": "Tint/Verzadiging/Lichtheid"
+          }
+        },
+        {
+          "name": "Waarden",
+          "values": {
+            "unit1": "0–255 per kanaal",
+            "unit2": "H: 0–360°, S/L: 0–100%"
+          }
+        },
+        {
+          "name": "Intuïtief",
+          "values": {
+            "unit1": "Moeilijk te voorspellen",
+            "unit2": "Makkelijk aan te passen"
+          }
+        },
+        {
+          "name": "Kleurtheorie",
+          "values": {
+            "unit1": "Niet cirkelgebaseerd",
+            "unit2": "Komt overeen met kleurenwiel"
+          }
+        },
+        {
+          "name": "CSS",
+          "values": {
+            "unit1": "rgb(R, G, B)",
+            "unit2": "hsl(H, S%, L%)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Veelgestelde vragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wat is HSL?",
+          "answer": "Tint (hoek 0–360°), Verzadiging (intensiteit 0–100%), Lichtheid (0–100%)."
+        },
+        {
+          "question": "Worden berekeningen lokaal uitgevoerd?",
+          "answer": "Ja. Alle berekeningen draaien in je browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help ons onze tools te verbeteren",
+      "description": "Heeft u een idee, een bug gevonden of wilt u een functie voorstellen? Schrijf ons – we reageren binnen 24 uur.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB naar HSL – Arteon",
+      "defaultSubject": "Feedback: rgb-to-hsl"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andere gratis tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

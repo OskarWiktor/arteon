@@ -220,7 +220,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Herramientas online gratuitas — convertidores de imágenes, SEO, colores, favicon',
+  name: 'Herramientas online gratuitas - convertidores de imágenes, SEO, colores, favicon',
   description:
     'Herramientas gratuitas: Convertidores de imágenes (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generador de favicon, editor de imágenes, contador de texto, paletas de colores y códigos QR. Sin registro.',
   url: toAbsoluteUrl('/es/herramientas'),
@@ -681,6 +681,23 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Generador Lorem Ipsum',
+              topImageAlt: 'Generador Lorem Ipsum Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/generador-lorem-ipsum-es.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Genera texto de relleno en 8 estilos y 9 modos. Lorem Ipsum, Hipster, Business, Bacon y más. Copia como texto o HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/es/herramientas/generador-lorem-ipsum">
+                      Abrir herramienta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -801,7 +818,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Convertidores de formatos de imagen"
-          description="Convertidores de imágenes online — cambie el formato entre JPG, PNG, WebP, SVG, BMP y GIF. Conversión en el navegador, sin envío de archivos."
+          description="Convertidores de imágenes online - cambie el formato entre JPG, PNG, WebP, SVG, BMP y GIF. Conversión en el navegador, sin envío de archivos."
           grid="three"
           items={[
             {
@@ -900,16 +917,25 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Conversores de datos"
+          description="Conversores de formatos de datos en línea — convierte entre CSV, JSON, XML, YAML, Markdown y HTML. Procesamiento en el navegador."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Convertidor SVG a PNG',
-              topImageAlt: 'Convertidor SVG a PNG Arteon',
+              title: 'CSV a JSON',
+              topImageAlt: 'CSV a JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convierte gráficos vectoriales SVG a PNG. Ideal para documentos y redes sociales.</p>
+                  <p>Convierte CSV a formato JSON. Detección automática de separadores y formato del resultado.</p>
                   <div className="mt-4">
-                    <Button arrow link="/es/herramientas/convertidor-svg-a-png">
+                    <Button arrow link="/es/herramientas/convertidor-csv-a-json">
                       Abrir herramienta
                     </Button>
                   </div>
@@ -918,14 +944,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Convertidor SVG a JPG',
-              topImageAlt: 'Convertidor SVG a JPG Arteon',
+              title: 'JSON a CSV',
+              topImageAlt: 'JSON a CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convierte gráficos SVG a JPG compacto. Archivo más pequeño, compatibilidad total.</p>
+                  <p>Convierte datos JSON a formato CSV. Procesamiento en el navegador.</p>
                   <div className="mt-4">
-                    <Button arrow link="/es/herramientas/convertidor-svg-a-jpg">
+                    <Button arrow link="/es/herramientas/convertidor-json-a-csv">
                       Abrir herramienta
                     </Button>
                   </div>
@@ -934,14 +960,62 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Convertidor BMP a JPG',
-              topImageAlt: 'Convertidor BMP a JPG Arteon',
+              title: 'XML a JSON',
+              topImageAlt: 'XML a JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convierte archivos BMP sin comprimir a JPG ligero. Reducción drástica del tamaño.</p>
+                  <p>Convierte datos XML a JSON. Conversión en el navegador con validación.</p>
                   <div className="mt-4">
-                    <Button arrow link="/es/herramientas/convertidor-bmp-a-jpg">
+                    <Button arrow link="/es/herramientas/convertidor-xml-a-json">
+                      Abrir herramienta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON a XML',
+              topImageAlt: 'JSON a XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convierte datos JSON a XML válido. Conversión en el navegador con formato.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/es/herramientas/convertidor-json-a-xml">
+                      Abrir herramienta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML a JSON',
+              topImageAlt: 'YAML a JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convierte configuración YAML a JSON. Validación y formato en el navegador.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/es/herramientas/convertidor-yaml-a-json">
+                      Abrir herramienta
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON a YAML',
+              topImageAlt: 'JSON a YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convierte datos JSON a YAML legible. Conversión en el navegador.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/es/herramientas/convertidor-json-a-yaml">
                       Abrir herramienta
                     </Button>
                   </div>

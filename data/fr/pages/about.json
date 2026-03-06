@@ -6,12 +6,12 @@
   },
   "hero": {
     "title": "Outils en ligne gratuits conçus par une agence créative",
-    "description": "Outils dans le navigateur pour les images, le SEO, les couleurs, les signatures e-mail et les codes QR — sans inscription, sans envoi de fichiers, sans limites"
+    "description": "Outils dans le navigateur pour les images, le SEO, les couleurs, les signatures e-mail et les codes QR - sans inscription, sans envoi de fichiers, sans limites"
   },
   "whoWeAre": {
     "title": "Qui sommes-nous",
     "p1": "Arteon est une agence créative polonaise. En plus de notre travail commercial, nous développons et maintenons une collection grandissante d'outils en ligne gratuits destinés aux propriétaires d'entreprises, créateurs de sites web, designers, spécialistes du marketing et toute personne travaillant avec du contenu numérique.",
-    "p2": "Chaque outil que nous créons résout un problème concret et quotidien : convertir des images, vérifier le contraste des couleurs, générer des favicons, créer des codes QR et bien plus. Notre objectif est de construire une boîte à outils complète où vous trouverez tout ce dont vous avez besoin en un seul endroit — sans naviguer entre des dizaines de sites différents."
+    "p2": "Chaque outil que nous créons résout un problème concret et quotidien : convertir des images, vérifier le contraste des couleurs, générer des favicons, créer des codes QR et bien plus. Notre objectif est de construire une boîte à outils complète où vous trouverez tout ce dont vous avez besoin en un seul endroit - sans naviguer entre des dizaines de sites différents."
   },
   "whyFree": {
     "title": "Pourquoi nous proposons des outils gratuits",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Confidentialité avant tout",
-        "description": "Vos fichiers ne quittent jamais votre appareil. Tout le traitement se fait localement dans votre navigateur — nous n'envoyons vos données à aucun serveur."
+        "description": "Vos fichiers ne quittent jamais votre appareil. Tout le traitement se fait localement dans votre navigateur - nous n'envoyons vos données à aucun serveur."
       },
       {
         "title": "Créés à partir de besoins réels",
@@ -61,7 +61,7 @@
   },
   "whatsNext": {
     "title": "Et ensuite",
-    "text": "Nous travaillons activement à l'élargissement de la boîte à outils. De nouveaux outils sont ajoutés régulièrement en fonction des retours des utilisateurs et de notre propre expérience. L'objectif est une plateforme unique où propriétaires d'entreprises, designers et développeurs ont accès à chaque outil essentiel — tout en un lieu, tout gratuitement."
+    "text": "Nous travaillons activement à l'élargissement de la boîte à outils. De nouveaux outils sont ajoutés régulièrement en fonction des retours des utilisateurs et de notre propre expérience. L'objectif est une plateforme unique où propriétaires d'entreprises, designers et développeurs ont accès à chaque outil essentiel - tout en un lieu, tout gratuitement."
   },
   "privacy": {
     "title": "Confidentialité et sécurité",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Essayez nos outils",
-    "description": "Outils en ligne gratuits — sans inscription, sans limites, sans envoi de fichiers sur des serveurs",
+    "description": "Outils en ligne gratuits - sans inscription, sans limites, sans envoi de fichiers sur des serveurs",
     "btnOne": "Voir les outils",
     "btnTwo": "Contact"
   }

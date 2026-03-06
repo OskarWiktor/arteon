@@ -2,8 +2,8 @@
   "toolKey": "jpgToPdf",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JPG na PDF — darmowy, bez limitu plików",
-    "description": "Zamień pliki JPG na PDF w przeglądarce. Połącz wiele zdjęć w jeden dokument. Bez rejestracji, bez limitu — konwersja lokalna.",
+    "title": "Konwerter JPG na PDF - darmowy, bez limitu plików",
+    "description": "Zamień pliki JPG na PDF w przeglądarce. Połącz wiele zdjęć w jeden dokument. Bez rejestracji, bez limitu - konwersja lokalna.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-jpg-na-pdf"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter JPG na PDF — darmowy, bez limitu",
+      "name": "Konwerter JPG na PDF - darmowy, bez limitu",
       "alternateName": ["Zamiana JPG na PDF online", "Konwersja JPG do PDF", "JPG to PDF converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
-      "description": "Darmowy konwerter JPG na PDF online. Zamień pliki JPG na dokument PDF w przeglądarce — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter JPG na PDF online. Zamień pliki JPG na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": ["Konwersja JPG do PDF", "Łączenie wielu plików w jeden PDF", "Automatyczna orientacja strony A4", "Przetwarzanie lokalne w przeglądarce"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować JPG na PDF?",
-      "html": "<p class=\"text-mid mb-4\">JPG (JPEG) to najpopularniejszy format zdjęć na świecie. PDF to uniwersalny format dokumentów, który wygląda tak samo na każdym urządzeniu, systemie operacyjnym i w każdej drukarce.</p><p class=\"text-mid mb-4\">Konwersja JPG na PDF przydaje się, gdy chcesz wysłać kilka zdjęć jako jeden plik, przygotować portfolio, zarchiwizować skany dokumentów lub stworzyć prezentację. Kancelarie prawne łączą skany umów, gabinety lekarskie — dokumentację medyczną, a agencje nieruchomości — zdjęcia ofert.</p><p class=\"text-mid\">Nasz konwerter działa w przeglądarce — pliki nie są wysyłane na żaden serwer. Każdy obraz trafia na osobną stronę A4 z zachowaniem proporcji.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPG (JPEG) to najpopularniejszy format zdjęć na świecie. PDF to uniwersalny format dokumentów, który wygląda tak samo na każdym urządzeniu, systemie operacyjnym i w każdej drukarce.</p><p class=\"text-mid mb-4\">Konwersja JPG na PDF przydaje się, gdy chcesz wysłać kilka zdjęć jako jeden plik, przygotować portfolio, zarchiwizować skany dokumentów lub stworzyć prezentację. Kancelarie prawne łączą skany umów, gabinety lekarskie - dokumentację medyczną, a agencje nieruchomości - zdjęcia ofert.</p><p class=\"text-mid\">Nasz konwerter działa w przeglądarce - pliki nie są wysyłane na żaden serwer. Każdy obraz trafia na osobną stronę A4 z zachowaniem proporcji.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter JPG na PDF – Arteon"
     },
@@ -83,7 +83,7 @@
         },
         {
           "title": "3. Pobierz PDF",
-          "description": "Pobierz gotowy dokument PDF jednym kliknięciem.",
+          "description": "Pobierz gotowy dokument PDF jednym kliknięciem. Przy wielu plikach użyj opcji zbiorczego pobierania jako archiwum ZIP.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -100,17 +100,17 @@
         {
           "icon": "RiPrinterLine",
           "title": "Druk zdjęć",
-          "description": "PDF zachowuje dokładne wymiary i proporcje — idealne do druku zdjęć na papierze A4."
+          "description": "PDF zachowuje dokładne wymiary i proporcje - idealne do druku zdjęć na papierze A4."
         },
         {
           "icon": "RiMailLine",
           "title": "Wysyłka e-mailem",
-          "description": "Jeden plik PDF zamiast wielu osobnych zdjęć JPG — łatwiej wysłać i odebrać."
+          "description": "Jeden plik PDF zamiast wielu osobnych zdjęć JPG - łatwiej wysłać i odebrać."
         },
         {
           "icon": "RiArchiveLine",
           "title": "Archiwizacja",
-          "description": "PDF to standard archiwizacji dokumentów — zdjęcia w PDF są łatwe do katalogowania."
+          "description": "PDF to standard archiwizacji dokumentów - zdjęcia w PDF są łatwe do katalogowania."
         },
         {
           "icon": "RiPresentationLine",
@@ -131,7 +131,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
+          "description": "Pliki nie opuszczają komputera - cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -146,7 +146,7 @@
         {
           "icon": "RiDownloadLine",
           "title": "Szybkie pobieranie",
-          "description": "Pobierz gotowy PDF jednym kliknięciem."
+          "description": "Pobierz gotowy plik PDF jednym kliknięciem lub użyj opcji zbiorczego pobierania, aby zapisać wszystkie dokumenty naraz."
         }
       ]
     },
@@ -157,7 +157,7 @@
     {
       "type": "sectionInfo",
       "title": "Wskazówki dotyczące konwersji JPG na PDF",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Używaj zdjęć JPG w wysokiej rozdzielczości (min. 300 DPI) dla najlepszej jakości druku.</li><li>Jeśli chcesz połączyć wiele zdjęć w jeden PDF, dodaj je wszystkie naraz — każde trafi na osobną stronę.</li><li>Narzędzie automatycznie dopasowuje orientację strony (pionowa/pozioma) do proporcji obrazu.</li><li>Dla dokumentów skanowanych rozważ również <a href=\"/narzedzia/konwerter-png-na-pdf\">konwersję PNG na PDF</a> — PNG lepiej zachowuje ostrość tekstu.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Używaj zdjęć JPG w wysokiej rozdzielczości (min. 300 DPI) dla najlepszej jakości druku.</li><li>Jeśli chcesz połączyć wiele zdjęć w jeden PDF, dodaj je wszystkie naraz - każde trafi na osobną stronę.</li><li>Narzędzie automatycznie dopasowuje orientację strony (pionowa/pozioma) do proporcji obrazu.</li><li>Dla dokumentów skanowanych rozważ również <a href=\"/narzedzia/konwerter-png-na-pdf\">konwersję PNG na PDF</a> - PNG lepiej zachowuje ostrość tekstu.</li></ul>"
     },
     {
       "type": "gap",
@@ -236,8 +236,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji JPG na PDF?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem JPG a wynikowym PDF jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji JPG na PDF?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem JPG a wynikowym PDF jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -276,7 +276,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików JPG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików JPG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -291,7 +291,7 @@
       "items": [
         {
           "question": "Czy mogę połączyć wiele plików JPG w jeden PDF?",
-          "answer": "Tak, możesz dodać wiele plików JPG — każdy z nich trafi na osobną stronę w wygenerowanym dokumencie PDF."
+          "answer": "Tak, możesz dodać wiele plików JPG - każdy z nich trafi na osobną stronę w wygenerowanym dokumencie PDF."
         },
         {
           "question": "Czy pliki są wysyłane na serwer?",
@@ -307,11 +307,11 @@
         },
         {
           "question": "Czy konwersja JPG na PDF jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików JPG jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy mogę ustawić kolejność stron w PDF?",
+          "answer": "Tak. Pliki JPG są dodawane do PDF w kolejności, w jakiej je wgrasz. Możesz zmienić kolejność przed konwersją, przeciągając pliki w liście."
         },
         {
           "question": "Do czego najlepiej nadaje się format PDF?",

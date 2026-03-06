@@ -2,8 +2,8 @@
   "toolKey": "imageToBase64",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter obraz na Base64 — zakoduj obraz do CSS i HTML",
-    "description": "Zakoduj obraz (JPG, PNG, WebP, SVG, GIF) do formatu Base64. Gotowy ciąg do CSS, HTML lub JSON. Bez rejestracji — konwersja lokalna.",
+    "title": "Konwerter obraz na Base64 - zakoduj obraz do CSS i HTML",
+    "description": "Zakoduj obraz (JPG, PNG, WebP, SVG, GIF) do formatu Base64. Gotowy ciąg do CSS, HTML lub JSON. Bez rejestracji - konwersja lokalna.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-obraz-na-base64"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter obraz na Base64 — darmowy, bez rejestracji",
+      "name": "Konwerter obraz na Base64 - darmowy, bez rejestracji",
       "alternateName": ["Kodowanie obrazu do Base64", "Image to Base64 encoder", "Obraz na data URI"],
       "applicationCategory": "DeveloperApplication",
       "applicationSubCategory": "DataConverter",
-      "description": "Darmowy konwerter obrazu na Base64 online. Zakoduj JPG, PNG, WebP lub SVG do Base64 w przeglądarce — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter obrazu na Base64 online. Zakoduj JPG, PNG, WebP lub SVG do Base64 w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": ["Kodowanie obrazu do Base64", "Generowanie data URI z typem MIME", "Obsługa JPG, PNG, WebP, SVG, GIF", "Przetwarzanie lokalne w przeglądarce"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto kodować obrazy do Base64?",
-      "html": "<p class=\"text-mid mb-4\">Base64 to sposób zapisu danych binarnych (np. obrazów) jako ciągu znaków tekstowych. Zakodowany obraz można osadzić bezpośrednio w kodzie HTML, CSS lub JSON — bez konieczności linkowania zewnętrznego pliku.</p><p class=\"text-mid mb-4\">Kodowanie Base64 przydaje się do osadzania małych ikon i logotypów bezpośrednio w CSS (background-image: url(data:...)), szablonów e-mail, podpisów w Outlooku oraz danych wejściowych dla API.</p><p class=\"text-mid\">Pamiętaj, że Base64 zwiększa rozmiar danych o ok. 33%. Dla małych obrazów (ikony, logotypy do 10 KB) korzyść z redukcji zapytań HTTP przeważa nad wzrostem rozmiaru. Dla dużych zdjęć lepiej użyć normalnych plików.</p>",
+      "html": "<p class=\"text-mid mb-4\">Base64 to sposób zapisu danych binarnych jako ciągu znaków tekstowych. Zakodowany obraz można osadziæ bezpośrednio w kodzie HTML (<code>&lt;img src=\"data:image/png;base64,...\"&gt;</code>), CSS (<code>background-image: url(data:...)</code>), JSON lub przekazać do API — bez konieczności hostowania pliku na serwerze.</p><p class=\"text-mid mb-4\">Kodowanie Base64 jest niezbędne w kilku scenariuszach: osadzanie małych ikon i logotypów inline w CSS (eliminacja zapytań HTTP), tworzenie szablonów e-mail z osadzonymi obrazami (Outlook blokuje zewnętrzne obrazy domyślnie), przesyłanie obrazów do API (OpenAI Vision, Google Cloud Vision) oraz generowanie samodzielnych plików HTML bez zależności.</p><p class=\"text-mid mb-4\">Base64 zwiększa rozmiar danych o ok. 33% (3 bajty binarne = 4 znaki Base64). Dla małych obrazów do 10 KB korzyść z eliminacji zapytań HTTP przeważa nad wzrostem rozmiaru. Dla dużych zdjęć (>50 KB) lepiej użyć normalnych plików — Base64 zwiększyłby rozmiar strony i spowolnił ładowanie.</p><p class=\"text-mid\">Cała konwersja odbywa się lokalnie w przeglądarce — dane nie są wysyłane na serwer. Bez rejestracji, bez limitów, bez śledzenia.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter obraz na Base64 – Arteon"
     },
@@ -99,23 +99,23 @@
       "items": [
         {
           "icon": "RiCss3Line",
-          "title": "Ikony inline w CSS",
-          "description": "Małe ikony (do 10 KB) warto osadzić bezpośrednio w CSS — mniej zapytań HTTP."
+          "title": "Ikony i logotypy inline w CSS",
+          "description": "Małe ikony i logotypy (do 10 KB) warto osadziæ bezpośrednio w CSS jako Base64. Eliminuje to dodatkowe zapytania HTTP i przyspiesza ładowanie strony — szczególnie ważne dla ikon w nawigacji i przyciskach."
         },
         {
           "icon": "RiMailLine",
-          "title": "Szablony e-mail",
-          "description": "E-maile nie ładują zewnętrznych obrazów domyślnie — Base64 wyświetla się od razu."
+          "title": "Szablony e-mail i podpisy",
+          "description": "Outlook, Gmail i inne klienty e-mail blokują zewnętrzne obrazy domyślnie. Osadzenie logo i grafik jako Base64 gwarantuje ich wyświetlanie bez klikania ‘Załaduj obrazy’."
         },
         {
           "icon": "RiCodeLine",
-          "title": "Dane wejściowe API",
-          "description": "Wiele API (np. OpenAI Vision) przyjmuje obrazy jako ciąg Base64."
+          "title": "Przesyłanie do API",
+          "description": "API takie jak OpenAI Vision, Google Cloud Vision, Tesseract OCR i wiele innych przyjmują obrazy jako ciąg Base64 w body zapytania POST. Konwerter generuje gotowy string."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Podpisy Outlook",
-          "description": "Logo w podpisie e-mail lepiej osadzić jako Base64 — działa bez serwera obrazów."
+          "title": "Samodzielne pliki HTML",
+          "description": "Tworzysz plik HTML, który musi działać offline bez serwera? Osadzenie obrazów jako Base64 eliminuje zależność od zewnętrznych plików — cała treść w jednym pliku."
         }
       ]
     },
@@ -136,17 +136,17 @@
         {
           "icon": "RiCodeLine",
           "title": "Gotowy data URI",
-          "description": "Wynik zawiera pełny data URI z typem MIME — gotowy do wklejenia w CSS lub HTML."
+          "description": "Wynik zawiera pełny data URI z typem MIME - gotowy do wklejenia w CSS lub HTML."
         },
         {
           "icon": "RiImageLine",
           "title": "Wiele formatów",
-          "description": "Obsługa JPG, PNG, WebP, SVG, GIF, BMP i TIFF."
+          "description": "Obsługa formatów JPG, PNG, WebP, SVG, GIF, BMP i TIFF — zakoduj dowolny obraz jako ciąg Base64 bez instalacji."
         },
         {
           "icon": "RiFileCopyLine",
           "title": "Szybkie kopiowanie",
-          "description": "Skopiuj wynik do schowka jednym kliknięciem."
+          "description": "Skopiuj zakodowany ciąg Base64 do schowka jednym kliknięciem i wklej go bezpośrednio do kodu HTML, CSS lub JavaScript."
         }
       ]
     },
@@ -157,7 +157,7 @@
     {
       "type": "sectionInfo",
       "title": "Wskazówki dotyczące kodowania Base64",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Base64 zwiększa rozmiar danych o ok. 33% — używaj go tylko dla małych obrazów (do 10 KB).</li><li>Dla większych obrazów (zdjęcia, banery) lepiej użyć normalnych plików — Base64 spowolni ładowanie strony.</li><li>Data URI zawiera typ MIME (np. data:image/png;base64,...) — narzędzie generuje go automatycznie.</li><li>W CSS użyj: background-image: url(data:image/png;base64,...) — skopiuj cały ciąg z narzędzia.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Base64 zwiększa rozmiar danych o ok. 33% - używaj go tylko dla małych obrazów (do 10 KB).</li><li>Dla większych obrazów (zdjęcia, banery) lepiej użyć normalnych plików - Base64 spowolni ładowanie strony.</li><li>Data URI zawiera typ MIME (np. data:image/png;base64,...) - narzędzie generuje go automatycznie.</li><li>W CSS użyj: background-image: url(data:image/png;base64,...) - skopiuj cały ciąg z narzędzia.</li></ul>"
     },
     {
       "type": "gap",
@@ -165,8 +165,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ile mozna zaoszczedzic konwertujac IMAGE na BASE64?",
-      "html": "<p class=\"text-mid mb-4\">Oszczednosci zaleza od rodzaju pliku zrodlowego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjecie z aparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczednosci moga sie roznic. Konwerter pokazuje dokladny rozmiar przed i po konwersji.</p>"
+      "title": "Jak działa kodowanie Base64?",
+      "html": "<p class=\"text-mid mb-4\">Kodowanie Base64 zamienia dane binarne (bajty obrazu) na ciąg znaków ASCII składający się z liter (A–Z, a–z), cyfr (0–9) oraz znaków + i /. Każde 3 bajty danych są kodowane jako 4 znaki Base64 — dlatego wynik jest o około 33% większy niż oryginalny plik.</p><p class=\"text-mid mb-4\">Narzędzie generuje pełny data URI w formacie <code>data:image/png;base64,iVBOR...</code>, który zawiera informację o typie MIME obrazu. Taki ciąg można wkleić bezpośrednio do kodu HTML (atrybut src) lub CSS (background-image).</p><p class=\"text-mid\">Kodowanie odbywa się w przeglądarce za pomocą FileReader API — plik nie jest wysyłany na serwer. Cała operacja jest natychmiastowa nawet dla większych obrazów.</p>"
     },
     {
       "type": "gap",
@@ -174,29 +174,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Na co zwrocic uwage przy konwersji IMAGE na BASE64?",
-      "description": "Kilka wskazowek, ktore pomoga uniknac problemow:",
+      "title": "Na co zwrócić uwagę przy kodowaniu Base64?",
+      "description": "Kilka wskazówek, które pomogą optymalnie wykorzystać Base64:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Bardzo duze pliki",
-          "description": "Konwersja obrazow powyzej 4000×4000 pikseli moze byc wolniejsza. Rozwaz dzielenie ich na partie po 10–20 sztuk."
+          "icon": "RiScalesLine",
+          "title": "Rozmiar pliku",
+          "description": "Base64 zwiększa rozmiar o ok. 33%. Dla ikon do 10 KB korzyść z redukcji zapytań HTTP przeważa. Dla dużych zdjęć lepiej użyć normalnych plików."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Juz skompresowane pliki",
-          "description": "Jesli oryginalny plik IMAGE byl juz mocno skompresowany, konwersja na BASE64 moze nie przyniesc duzych oszczednosci."
+          "icon": "RiSpeedLine",
+          "title": "Wydajność strony",
+          "description": "Osadzenie dużego obrazu Base64 w CSS lub HTML zwiększa rozmiar dokumentu i spowalnia parsowanie. Stosuj Base64 głównie dla małych grafik."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Przezroczystosc",
-          "description": "Format BASE64 nie obsluguje przezroczystosci. Przezroczyste obszary zostana zastapione bialym tlem. Rozwaz PNG lub WebP."
+          "icon": "RiCss3Line",
+          "title": "Użycie w CSS",
+          "description": "W CSS użyj: background-image: url(data:image/png;base64,...). Narzędzie generuje pełny data URI gotowy do skopiowania."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Zachowaj oryginaly",
-          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plikow IMAGE aby moc powtorzyc konwersje."
+          "icon": "RiMailLine",
+          "title": "Szablony e-mail",
+          "description": "Klienty e-mail (Outlook, Gmail) blokują zewnętrzne obrazy domyślnie. Base64 wyświetla się od razu, ale zwiększa rozmiar wiadomości."
         }
       ]
     },
@@ -226,16 +226,16 @@
           "answer": "Nie. Kodowanie odbywa się lokalnie w przeglądarce za pomocą FileReader API. Plik nie opuszcza komputera."
         },
         {
-          "question": "Czy konwersja IMAGE na BASE64 jest bezpieczna?",
-          "answer": "Tak. Cala konwersja odbywa sie lokalnie w przegladarce za pomoca Canvas API. Pliki nie sa wysylane na zaden serwer. Po zamknieciu strony dane sa usuwane automatycznie."
+          "question": "Czy kodowanie Base64 jest bezpieczne?",
+          "answer": "Tak. Kodowanie odbywa się całkowicie lokalnie w przeglądarce za pomocą FileReader API. Plik nie jest wysyłany na żaden serwer. Po zamknięciu strony dane są automatycznie usuwane z pamięci."
         },
         {
-          "question": "Czy moge konwertowac wiele plikow IMAGE jednoczesnie?",
-          "answer": "Tak. Narzedzie obsluguje konwersje wielu plikow naraz bez limitu. Przeciagnij pliki na pole konwertera lub wybierz z dysku."
+          "question": "Czy Base64 działa we wszystkich przeglądarkach?",
+          "answer": "Tak. Data URI z Base64 są obsługiwane przez wszystkie nowoczesne przeglądarki: Chrome, Firefox, Safari, Edge i Opera. Działają również w większości klientów e-mail."
         },
         {
-          "question": "Czy BASE64 jest obslugiwany przez wszystkie przegladarki?",
-          "answer": "Format BASE64 jest szeroko obslugiwany przez nowoczesne przegladarki: Chrome, Firefox, Safari, Edge i Opera."
+          "question": "Jaki jest maksymalny rozmiar obrazu dla Base64?",
+          "answer": "Nie ma twardego limitu, ale praktyczna granica to ok. 100 KB oryginalnego pliku. Większe obrazy generują bardzo długie ciągi tekstu, które mogą spowalniać ładowanie strony."
         }
       ]
     },

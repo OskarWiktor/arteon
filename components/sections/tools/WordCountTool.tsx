@@ -75,10 +75,10 @@ export default function WordCountTool() {
               value={
                 metrics.fleschScore !== null ? (
                   <span className={readabilityColor}>
-                    {metrics.fleschScore} — {readabilityLabel}
+                    {metrics.fleschScore} - {readabilityLabel}
                   </span>
                 ) : (
-                  '—'
+                  '-'
                 )
               }
             />

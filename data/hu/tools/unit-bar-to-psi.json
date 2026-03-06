@@ -1,0 +1,285 @@
+{
+  "toolKey": "barToPsi",
+  "locale": "hu",
+  "metadata": {
+    "title": "Bar PSI-ra – átváltó",
+    "description": "Bar átváltása PSI-ra és fordítva.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/hu/eszkozok/bar-psi-atvalto"
+  },
+  "hero": {
+    "title": "Bar PSI-ra",
+    "description": "Ez az átváltó azonnal átszámol. Adjon meg egy értéket és az eredmény azonnal megjelenik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/bar-psi-atvalto",
+      "label": "bar PSI-ra"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bar PSI-ra – átváltó",
+      "alternateName": ["Bar PSI-ra"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Bar átváltása PSI-ra és fordítva.",
+      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+    },
+    "howTo": {
+      "name": "Hogyan használja az átváltót",
+      "description": "Gyors útmutató az átváltó használatához.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Érték megadása",
+          "text": "Írjon be egy számot a bal oldali beviteli mezőbe."
+        },
+        {
+          "name": " Eredmény leolvasása",
+          "text": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben."
+        },
+        {
+          "name": "Másolás vagy megfordítás",
+          "text": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikor kell használni: Bar PSI-ra?",
+      "html": "<p class=\"text-mid mb-4\">Bar ist eine metrische Druckeinheit gleich 100.000 Pascal (100 kPa). PSI (Pfund pro Quadratzoll) a szabványos-Druckeinheit im imperialen System, hauptsächlich in den USA und UK verwendet.</p><p class=\"text-mid mb-4\">Der átváltássfaktor ist: 1 Bar = 14,5038 PSI. Dies ist wichtig für Reifendruck (europäische Autos geben Bar an, US-Autos PSI), HLK-Systeme, Industrieausrüstung und Tauchen.</p><p class=\"text-mid mb-4\">Reifendruck-Beispiele: 2,2 Bar = 31,9 PSI, 2,5 Bar = 36,3 PSI, 3,0 Bar = 43,5 PSI. Die meisten PKW empfehlen 2,0–2,5 Bar (29–36 PSI).</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik — semmilyen adat nem kerül szerverre.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Bar PSI-ra – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az átváltót?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Érték megadása",
+          "description": "Írjon be egy számot a beviteli mezőbe. Használhat pontot vagy vesszőt tizedesjegyként.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Eredmény leolvasása",
+          "description": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben – kattintás nélkül.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Másolás vagy megfordítás",
+          "description": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor hasznos ez az átváltó?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Külföldi utazás",
+          "description": "Europejskie: 2,0–2,5 bar. Amerykańskie: 29–36 PSI."
+        },
+        {
+          "icon": "RiAnchorLine",
+          "title": "Nurkowanie",
+          "description": "Butla nurkowa: 200 bar = 2 900 PSI."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Műszaki alkalmazás",
+          "description": "Sprężarki i narzędzia pneumatyczne: 6–10 bar = 87–145 PSI."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Opony rowerowe",
+          "description": "Rower szosowy: 6–8 bar = 87–116 PSI. Górski: 2–3 bar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt az átváltót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "Minden számítás helyben, a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Azonnali eredmények",
+          "description": "Az eredmény azonnal frissül gépelés közben – nem kell semmilyen gombra kattintani."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kétirányú átváltás",
+          "description": "A Megfordítás gomb segítségével egy kattintással válthat irányt."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencia táblázat",
+          "description": "Kész táblázat gyakran átváltott értékekkel és kontextuális leírásokkal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az átváltás?",
+      "html": "<p class=\"text-mid mb-4\">Die átváltás basiert auf: 1 Bar = 100.000 Pa und 1 PSI = 6.894,757 Pa. Daher: 1 Bar = 100.000 / 6.894,757 ≈ 14,5038 PSI.</p><p class=\"text-mid mb-4\">Um Bar in PSI umzurechnen, szorozza meg 14,5038. Um PSI in Bar umzurechnen, teilen Sie durch 14,5038.</p><p class=\"text-mid\">Der átváltássfaktor ist konstant und exakt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gyakorlati tippek",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Standard atmospheric pressure: 1.01325 bar = 14.696 PSI.</li><li>Car tire pressure typically ranges from 2.0–2.5 bar (29–36 PSI).</li><li>Bicycle tires: road bikes 6–8 bar (87–116 PSI), mountain bikes 2–3 bar (29–44 PSI).</li><li>Scuba tanks: 200–300 bar (2,900–4,350 PSI) when full.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Bar vs PSI – összehasonlítás",
+      "featureLabel": "Tulajdonság",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Bar"
+        },
+        {
+          "id": "unit2",
+          "name": "PSI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Rendszer",
+          "values": {
+            "unit1": "Metric",
+            "unit2": "Angolszász"
+          }
+        },
+        {
+          "name": "Alapérték",
+          "values": {
+            "unit1": "100,000 Pa",
+            "unit2": "6,894.76 Pa"
+          }
+        },
+        {
+          "name": "Tire pressure",
+          "values": {
+            "unit1": "Europe (bar)",
+            "unit2": "USA/UK (PSI)"
+          }
+        },
+        {
+          "name": "Industry",
+          "values": {
+            "unit1": "International standard",
+            "unit2": "US standard"
+          }
+        },
+        {
+          "name": "Atmosphere",
+          "values": {
+            "unit1": "1.013 bar",
+            "unit2": "14.696 PSI"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hány PSI ist 1 Bar?",
+          "answer": "Genau 14,5038 PSI."
+        },
+        {
+          "question": "Hány Bar sind 30 PSI?",
+          "answer": "30 PSI = 2,068 Bar. Ein gängiger Reifendruck für PKW."
+        },
+        {
+          "question": "Mi az a normaler Reifendruck?",
+          "answer": "Die meisten PKW empfehlen 2,0–2,5 Bar (29–36 PSI). Prüfen Sie den Aufkleber an der Fahrertür."
+        },
+        {
+          "question": "Ist 1 Bar gleich 1 Atmosphäre?",
+          "answer": "Nahe, aber nicht genau. 1 Atmosphäre = 1,01325 Bar = 14,696 PSI."
+        },
+        {
+          "question": "Helyben történnek a számítások?",
+          "answer": "Igen. Minden számítás a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "bar PSI-ra – Arteon",
+      "defaultSubject": "Visszajelzés: bar-to-psi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "További ingyenes eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

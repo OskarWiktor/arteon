@@ -220,7 +220,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Instrumente online gratuite — convertoare de imagini, SEO, culori, favicon',
+  name: 'Instrumente online gratuite - convertoare de imagini, SEO, culori, favicon',
   description:
     'Instrumente gratuite: Convertoare de imagini (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), generator de favicon, editor de imagini, contor de text, palete de culori și coduri QR. Fără înregistrare.',
   url: toAbsoluteUrl('/ro/instrumente'),
@@ -244,7 +244,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 1,
         name: 'Convertor JPG și PNG în WebP online',
-        description: 'Convertor gratuit online JPG și PNG în WebP. Reduceți dimensiunea fișierelor cu până la 35% fără pierderi vizibile de calitate. Fără înregistrare — fișierele rămân în browser.',
+        description: 'Convertor gratuit online JPG și PNG în WebP. Reduceți dimensiunea fișierelor cu până la 35% fără pierderi vizibile de calitate. Fără înregistrare - fișierele rămân în browser.',
         url: toAbsoluteUrl('/ro/instrumente/convertor-jpg-in-webp'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -262,7 +262,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 3,
         name: 'Generator de favicon online',
-        description: 'Generator gratuit de favicon online. Creați favicon.ico și pictograme PNG (16×16 până la 512×512) dintr-o singură imagine — conform cerințelor browserelor și Lighthouse.',
+        description: 'Generator gratuit de favicon online. Creați favicon.ico și pictograme PNG (16×16 până la 512×512) dintr-o singură imagine - conform cerințelor browserelor și Lighthouse.',
         url: toAbsoluteUrl('/ro/instrumente/generator-favicon-gratuit'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -307,7 +307,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 8,
         name: 'Generator de palete de culori online',
-        description: 'Generați palete de culori dintr-o culoare de bază. Monocromatică, triadică, analogă, complementară și multe altele — plus variante pastel, întunecate și minimaliste.',
+        description: 'Generați palete de culori dintr-o culoare de bază. Monocromatică, triadică, analogă, complementară și multe altele - plus variante pastel, întunecate și minimaliste.',
         url: toAbsoluteUrl('/ro/instrumente/generator-de-palete-de-culori'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -566,7 +566,7 @@ const faqItems = [
   },
   {
     question: 'Există o limită de utilizare?',
-    answer: 'Nu. Utilizați fără restricții — fără limite zilnice, fără limite de fișiere, fără limite de conversii.',
+    answer: 'Nu. Utilizați fără restricții - fără limite zilnice, fără limite de fișiere, fără limite de conversii.',
   },
   {
     question: 'Pentru ce sunt aceste instrumente?',
@@ -601,7 +601,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Editor de imagini online',
               topImageAlt: 'Editor de imagini online Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagini-online-ro.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/editor-de-imagini-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -609,7 +609,7 @@ export default function ToolsIndexPage() {
                     WebP.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/ro/instrumente/editor-de-imagini-online">
+                    <Button arrow link="/ro/instrumente/editor-de-imagini">
                       Deschide instrumentul
                     </Button>
                   </div>
@@ -624,7 +624,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Generați <strong>favicon.ico</strong> și pictograme PNG 180x180, 192x192 și 512x512 dintr-o singură imagine — conform cerințelor browserelor și Lighthouse.
+                    Generați <strong>favicon.ico</strong> și pictograme PNG 180x180, 192x192 și 512x512 dintr-o singură imagine - conform cerințelor browserelor și Lighthouse.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/ro/instrumente/generator-favicon-gratuit">
@@ -650,7 +650,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/verificator-meta-titlu-si-descriere-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Verificați numărul de caractere, numărul de cuvinte și lățimea în pixeli — cu previzualizare Google. Evitați titlurile și descrierile trunchiate în rezultatele căutării.</p>
+                  <p>Verificați numărul de caractere, numărul de cuvinte și lățimea în pixeli - cu previzualizare Google. Evitați titlurile și descrierile trunchiate în rezultatele căutării.</p>
                   <div className="mt-4">
                     <Button arrow link="/ro/instrumente/verificator-meta-titlu-si-descriere">
                       Deschide instrumentul
@@ -672,6 +672,23 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/ro/instrumente/contor-cuvinte-si-caractere">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Generator Lorem Ipsum',
+              topImageAlt: 'Generator Lorem Ipsum Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Generează text de umplutură în 8 stiluri și 9 moduri. Lorem Ipsum, Hipster, Business, Bacon și altele. Copiază ca text sau HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/generator-lorem-ipsum">
                       Deschide instrumentul
                     </Button>
                   </div>
@@ -721,7 +738,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/qr-code-generator/generator-coduri-qr-gratuit-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Creați un cod QR pentru un site web, vCard, meniu de restaurant sau pliant. Export PNG și SVG — fără înregistrare, fără limite.</p>
+                  <p>Creați un cod QR pentru un site web, vCard, meniu de restaurant sau pliant. Export PNG și SVG - fără înregistrare, fără limite.</p>
                   <div className="mt-4">
                     <Button arrow link="/ro/instrumente/generator-coduri-qr-gratuit">
                       Deschide instrumentul
@@ -766,7 +783,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/image-color-extractor/extractor-culori-din-imagine-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Încărcați o fotografie sau un logo — instrumentul va extrage culorile dominante. Copiați codurile HEX cu un singur clic și utilizați-le oriunde.</p>
+                  <p>Încărcați o fotografie sau un logo - instrumentul va extrage culorile dominante. Copiați codurile HEX cu un singur clic și utilizați-le oriunde.</p>
                   <div className="mt-4">
                     <Button arrow link="/ro/instrumente/extractor-culori-din-imagine">
                       Deschide instrumentul
@@ -798,7 +815,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Convertoare de formate imagine"
-          description="Convertoare de imagini online — convertiți între JPG, PNG, WebP, SVG, BMP și GIF. Conversie în browser, fără trimitere de fișiere."
+          description="Convertoare de imagini online - convertiți între JPG, PNG, WebP, SVG, BMP și GIF. Conversie în browser, fără trimitere de fișiere."
           grid="three"
           items={[
             {
@@ -897,16 +914,25 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Convertoare de date"
+          description="Convertoare de formate de date online — convertiți între CSV, JSON, XML, YAML, Markdown și HTML. Procesare în browser."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Convertor SVG în PNG',
-              topImageAlt: 'Convertor SVG în PNG Arteon',
+              title: 'CSV în JSON',
+              topImageAlt: 'CSV în JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convertește grafice vectoriale SVG în PNG. Ideal pentru documente și social media.</p>
+                  <p>Convertiți CSV în format JSON. Detectare automată a separatoarelor și formatare.</p>
                   <div className="mt-4">
-                    <Button arrow link="/ro/instrumente/convertor-svg-in-png">
+                    <Button arrow link="/ro/instrumente/convertor-csv-in-json">
                       Deschide instrumentul
                     </Button>
                   </div>
@@ -915,14 +941,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Convertor SVG în JPG',
-              topImageAlt: 'Convertor SVG în JPG Arteon',
+              title: 'JSON în CSV',
+              topImageAlt: 'JSON în CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convertește grafice SVG în JPG compact. Fișier mai mic, compatibilitate totală.</p>
+                  <p>Convertiți date JSON în format CSV. Procesare în browser.</p>
                   <div className="mt-4">
-                    <Button arrow link="/ro/instrumente/convertor-svg-in-jpg">
+                    <Button arrow link="/ro/instrumente/convertor-json-in-csv">
                       Deschide instrumentul
                     </Button>
                   </div>
@@ -931,14 +957,62 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Convertor BMP în JPG',
-              topImageAlt: 'Convertor BMP în JPG Arteon',
+              title: 'XML în JSON',
+              topImageAlt: 'XML în JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convertește fișiere BMP în JPG ușor. Reducere drastică a dimensiunii.</p>
+                  <p>Convertiți date XML în JSON. Conversie în browser cu validare.</p>
                   <div className="mt-4">
-                    <Button arrow link="/ro/instrumente/convertor-bmp-in-jpg">
+                    <Button arrow link="/ro/instrumente/convertor-xml-in-json">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON în XML',
+              topImageAlt: 'JSON în XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertiți date JSON în XML valid. Conversie în browser cu formatare.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-json-in-xml">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML în JSON',
+              topImageAlt: 'YAML în JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertiți configurația YAML în JSON. Validare și formatare în browser.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-yaml-in-json">
+                      Deschide instrumentul
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON în YAML',
+              topImageAlt: 'JSON în YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertiți date JSON în YAML lizibil. Procesare în browser.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/ro/instrumente/convertor-json-in-yaml">
                       Deschide instrumentul
                     </Button>
                   </div>
@@ -954,10 +1028,10 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Ce sunt instrumentele Arteon?">
           <p className="mb-4">
-            34 instrumente online gratuite pentru pregătirea materialelor pentru site-uri web, social media și tipărire — convertor WebP, generator favicon, contor de text, extractor de culori,
+            34 instrumente online gratuite pentru pregătirea materialelor pentru site-uri web, social media și tipărire - convertor WebP, generator favicon, contor de text, extractor de culori,
             generator de palete și coduri QR.
           </p>
-          <p>Toate instrumentele rulează în browserul dvs. — fișierele nu sunt trimise niciodată pe un server. Utilizați-le fără înregistrare și fără limite.</p>
+          <p>Toate instrumentele rulează în browserul dvs. - fișierele nu sunt trimise niciodată pe un server. Utilizați-le fără înregistrare și fără limite.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -969,12 +1043,12 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Confidențialitate totală',
-              description: 'Toate instrumentele procesează fișierele local în browserul dvs. Nimic nu este trimis pe un server — datele dispar când închideți tab-ul.',
+              description: 'Toate instrumentele procesează fișierele local în browserul dvs. Nimic nu este trimis pe un server - datele dispar când închideți tab-ul.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Fără limite de utilizare',
-              description: 'Utilizați fără restricții — fără limite zilnice, fără limite de fișiere, fără limite de conversii. De câte ori aveți nevoie.',
+              description: 'Utilizați fără restricții - fără limite zilnice, fără limite de fișiere, fără limite de conversii. De câte ori aveți nevoie.',
             },
             {
               icon: <RiLockLine className="h-6 w-6" />,
@@ -984,7 +1058,7 @@ export default function ToolsIndexPage() {
             {
               icon: <RiGlobalLine className="h-6 w-6" />,
               title: 'Disponibil în română',
-              description: 'Toate instrumentele sunt disponibile în limba română — interfață, instrucțiuni și mesaje.',
+              description: 'Toate instrumentele sunt disponibile în limba română - interfață, instrucțiuni și mesaje.',
             },
           ]}
         />

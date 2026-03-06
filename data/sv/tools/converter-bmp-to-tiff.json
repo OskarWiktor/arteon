@@ -2,14 +2,14 @@
   "toolKey": "bmpToTiff",
   "locale": "sv",
   "metadata": {
-    "title": "BMP till TIFF-konverterare — BMP TIFF",
-    "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
+    "title": "BMP till TIFF-konverterare - BMP TIFF",
+    "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift. All bearbetning sker lokalt i webbläsaren - filerna lämnar aldrig din enhet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/bmp-till-tiff-konverterare"
   },
   "hero": {
     "title": "BMP till TIFF-konverterare",
-    "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
+    "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift. All bearbetning sker lokalt i webbläsaren - filerna lämnar aldrig din enhet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP till TIFF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift. All bearbetning sker lokalt i webbläsaren — filerna lämnar aldrig din enhet.",
+      "description": "Konvertera BMP-filer till professionellt TIFF-format for utskrift. All bearbetning sker lokalt i webbläsaren - filerna lämnar aldrig din enhet.",
       "featureList": ["Konvertering till TIFF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera BMP till TIFF", "BMP till TIFF konvertering", "Gratis BMP till TIFF konverterare"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Ställ in kvalitet",
-          "text": "Justera TIFF-kvalitetsreglaget — lägre värden ger mindre filer."
+          "text": "Justera TIFF-kvalitetsreglaget - lägre värden ger mindre filer."
         },
         {
           "position": 3,
           "name": "Konvertera",
-          "text": "Klicka på Konvertera — filerna bearbetas lokalt i webbläsaren."
+          "text": "Klicka på Konvertera - filerna bearbetas lokalt i webbläsaren."
         },
         {
           "position": 4,
           "name": "Ladda ner",
-          "text": "Ladda ner TIFF-filerna — enskilt eller alla på en gång."
+          "text": "Ladda ner TIFF-filerna - enskilt eller alla på en gång."
         }
       ]
     }
@@ -290,6 +290,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting BMP to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

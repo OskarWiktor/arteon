@@ -9,7 +9,7 @@
   },
   "hero": {
     "title": "JPG to PNG converter – switch to lossless quality",
-    "description": "Convert JPG photos to lossless PNG format. Add files, convert instantly, and download. Runs entirely in your browser — files never leave your device.",
+    "description": "Convert JPG photos to lossless PNG format. Add files, convert instantly, and download. Runs entirely in your browser - files never leave your device.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["JPEG to PNG converter", "Convert JPG to PNG online", "Change JPEG to PNG", "Free JPG to PNG tool"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online JPG to PNG converter. Transform JPEG images to lossless PNG directly in your browser — no files are uploaded. Unlimited conversions, no signup.",
+      "description": "Free online JPG to PNG converter. Transform JPEG images to lossless PNG directly in your browser - no files are uploaded. Unlimited conversions, no signup.",
       "featureList": [
         "JPG to PNG conversion",
         "Lossless output preserving all details",
@@ -65,7 +65,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert JPG to PNG?",
-      "html": "<p class=\"text-mid mb-4\">JPG (JPEG) is a lossy format optimised for photographs. Every time a JPG file is re-saved, the image loses a small amount of detail due to lossy compression. PNG, on the other hand, uses lossless compression — no data is discarded, so the image remains pixel-perfect.</p><p class=\"text-mid mb-4\">Converting JPG to PNG is useful when you need to edit an image further without accumulating compression artefacts, when a platform requires PNG uploads, or when you want to add transparency later in a graphics editor.</p><p class=\"text-mid mb-4\">Keep in mind that converting a JPG to PNG does not restore detail already lost during the original JPG compression. The resulting PNG will be a faithful, lossless copy of the JPG — but at a larger file size.</p><p class=\"text-mid\">This tool processes everything locally in your browser. Your images are never uploaded to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPG (JPEG) is a lossy format optimised for photographs. Every time a JPG file is re-saved, the image loses a small amount of detail due to lossy compression. PNG, on the other hand, uses lossless compression - no data is discarded, so the image remains pixel-perfect.</p><p class=\"text-mid mb-4\">Converting JPG to PNG is useful when you need to edit an image further without accumulating compression artefacts, when a platform requires PNG uploads, or when you want to add transparency later in a graphics editor.</p><p class=\"text-mid mb-4\">Keep in mind that converting a JPG to PNG does not restore detail already lost during the original JPG compression. The resulting PNG will be a faithful, lossless copy of the JPG - but at a larger file size.</p><p class=\"text-mid\">This tool processes everything locally in your browser. Your images are never uploaded to any server.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "JPG to PNG converter – Arteon"
     },
@@ -140,7 +140,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Complete privacy",
-          "description": "Files never leave your computer. Conversion uses the browser Canvas API — nothing is sent to any server."
+          "description": "Files never leave your computer. Conversion uses the browser Canvas API - nothing is sent to any server."
         },
         {
           "icon": "RiInfinityFill",
@@ -244,7 +244,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them — LCP (Largest Contentful Paint) — measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting JPG images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading — especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting JPG images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "gap",
@@ -298,7 +298,7 @@
       "items": [
         {
           "question": "Does converting JPG to PNG improve image quality?",
-          "answer": "No. PNG is lossless, but it cannot restore detail already discarded by JPG compression. The resulting PNG is a pixel-perfect copy of the JPG — just stored in a lossless container."
+          "answer": "No. PNG is lossless, but it cannot restore detail already discarded by JPG compression. The resulting PNG is a pixel-perfect copy of the JPG - just stored in a lossless container."
         },
         {
           "question": "Why is the PNG file larger than the original JPG?",
@@ -337,7 +337,7 @@
     {
       "type": "contactForm",
       "title": "Help us improve our tools",
-      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool? Drop us a message — we respond within 24 hours.",
+      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool? Drop us a message - we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "JPG to PNG converter – Arteon",
       "defaultSubject": "Feedback: JPG to PNG converter"

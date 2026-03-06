@@ -1,0 +1,285 @@
+﻿{
+  "toolKey": "cmToPxDpi",
+  "locale": "en",
+  "metadata": {
+    "title": "CM to pixels (DPI) converter",
+    "description": "Convert centimeters to pixels at any DPI resolution. Essential for print design, web graphics, and image preparation.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/cm-to-px-converter"
+  },
+  "hero": {
+    "title": "Convert CM to pixels",
+    "description": "Convert centimeters to pixels at your chosen DPI. Enter dimensions and DPI to get the pixel count instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/cm-to-px-converter",
+      "label": "cm to px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "CM to pixels (DPI) converter",
+      "alternateName": ["CM to pixel calculator", "Print resolution converter", "DPI pixel calculator"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert centimeters to pixels at any DPI resolution. Essential for print design, web graphics, and image preparation.",
+      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the cm to px converter",
+      "description": "Instructions: cm to pixels at DPI.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter dimensions",
+          "text": "Type a value in centimeters."
+        },
+        {
+          "name": "Set DPI",
+          "text": "Choose your target DPI resolution."
+        },
+        {
+          "name": "Read pixels",
+          "text": "The pixel count appears instantly."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert cm to pixels?",
+      "html": "<p class=\"text-mid mb-4\">In print design, dimensions are specified in centimeters or inches, but digital images are measured in pixels. The conversion depends on the DPI (dots per inch) resolution: pixels = cm × DPI / 2.54.</p><p class=\"text-mid mb-4\">Standard print resolution is 300 DPI: 10 cm = 1,181 pixels, 21 cm (A4 width) = 2,480 pixels. Web resolution is typically 72 DPI: 10 cm = 283 pixels.</p><p class=\"text-mid mb-4\">This converter is essential for preparing images for print, setting up document templates, and calculating the required image resolution for a specific print size.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "CM to pixels (DPI) converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Przygotowanie do druku",
+          "description": "A4 przy 300 DPI = 2 480 × 3 508 px. Plakat A3 = 3 508 × 4 961 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Grafika na stronę",
+          "description": "Baner 20 × 6 cm przy 96 DPI = 756 × 227 px."
+        },
+        {
+          "icon": "RiArtboardLine",
+          "title": "Social media",
+          "description": "Oblicz wymiary pikseli dla grafik o zadanym rozmiarze fizycznym."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Fotoksiążki",
+          "description": "Przelicz wymiary stron fotoksiążki (cm) na wymogi pikseli drukarni."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does cm to pixel conversion work?",
+      "html": "<p class=\"text-mid mb-4\">The formula is: pixels = cm × DPI / 2.54. DPI means dots per inch, and 1 inch = 2.54 cm.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 cm = 118.11 pixels. At 72 DPI: 1 cm = 28.35 pixels.</p><p class=\"text-mid\">Higher DPI = more pixels per centimeter = sharper print. 300 DPI is the standard for professional print quality.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>300 DPI (print quality): A4 = 2,480 × 3,508 px, A3 = 3,508 × 4,961 px.</li><li>150 DPI (large format): A2 poster = 2,480 × 3,508 px.</li><li>72 DPI (screen): 10 cm = 283 px, 20 cm = 567 px.</li><li>12 MP camera (4,000 × 3,000 px) prints up to 33.9 × 25.4 cm at 300 DPI.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Common DPI resolutions",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI (print)"
+        },
+        {
+          "id": "unit2",
+          "name": "72 DPI (screen)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "10 cm",
+          "values": {
+            "unit1": "1,181 px",
+            "unit2": "283 px"
+          }
+        },
+        {
+          "name": "A4 width (21 cm)",
+          "values": {
+            "unit1": "2,480 px",
+            "unit2": "595 px"
+          }
+        },
+        {
+          "name": "A4 height (29.7 cm)",
+          "values": {
+            "unit1": "3,508 px",
+            "unit2": "842 px"
+          }
+        },
+        {
+          "name": "Use case",
+          "values": {
+            "unit1": "Professional print",
+            "unit2": "Web graphics"
+          }
+        },
+        {
+          "name": "Quality",
+          "values": {
+            "unit1": "Sharp at any size",
+            "unit2": "Screen-only"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many pixels is 1 cm at 300 DPI?",
+          "answer": "1 cm at 300 DPI = 118.11 pixels. Formula: cm × 300 / 2.54."
+        },
+        {
+          "question": "What DPI should I use for printing?",
+          "answer": "300 DPI for professional print (brochures, photos). 150 DPI for large format (posters, banners). 72 DPI for screen only."
+        },
+        {
+          "question": "How big can I print a 12 MP photo?",
+          "answer": "12 MP = 4,000 × 3,000 px. At 300 DPI: 33.9 × 25.4 cm. At 150 DPI: 67.7 × 50.8 cm."
+        },
+        {
+          "question": "What resolution is A4 at 300 DPI?",
+          "answer": "A4 (21 × 29.7 cm) at 300 DPI = 2,480 × 3,508 pixels."
+        },
+        {
+          "question": "Are calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "cm na px – Arteon",
+      "defaultSubject": "Feedback: cm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

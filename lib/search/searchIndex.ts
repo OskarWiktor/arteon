@@ -1,15 +1,22 @@
-import { OFFER_SECTIONS_PL, TOOLS_SECTIONS_PL, ABOUT_NAV_ITEMS_PL } from '@/components/shared/navigation-data/pl';
+import { OFFER_SECTIONS_PL, ABOUT_NAV_ITEMS_PL } from '@/components/shared/navigation-data/pl';
 import searchBlog from '@/data/pl/search-blog.json';
 import searchProjects from '@/data/pl/search-projects.json';
 import { slugify } from '@/utils/slugify';
+import { getToolsList } from '@/lib/i18n/tool-registry';
+import { LOCALE_CONFIG } from '@/lib/i18n/locale-config';
 
+import type { Locale } from '@/types/locale';
 import type { SearchCategory, SearchItem } from '@/types/search';
 export type { SearchCategory, SearchItem } from '@/types/search';
 
 type SearchBlogEntry = { s: string; t: string; e: string; c: string; k: string[] };
 type SearchProjectEntry = { s: string; t: string; d: string; k: string[] };
 
-const STATIC_PAGES: SearchItem[] = [
+// ---------------------------------------------------------------------------
+// PL-only static pages (services, blog, projects, about sub-pages exist only for PL)
+// ---------------------------------------------------------------------------
+
+const STATIC_PAGES_PL: SearchItem[] = [
   {
     title: 'Strona główna',
     description: 'Arteon - strony internetowe, sklepy, marketing i projekty graficzne',
@@ -68,6 +75,121 @@ const STATIC_PAGES: SearchItem[] = [
   },
 ];
 
+// ---------------------------------------------------------------------------
+// Non-PL static pages (tools index + about + contact + privacy + terms)
+// ---------------------------------------------------------------------------
+
+interface StaticPageDef {
+  titleKey: string;
+  hrefKey: 'toolsIndexHref' | 'aboutHref' | 'contactHref' | 'privacyHref';
+  category: SearchCategory;
+}
+
+const NON_PL_PAGE_DEFS: StaticPageDef[] = [
+  { titleKey: 'toolsIndex', hrefKey: 'toolsIndexHref', category: 'narzedzia' },
+  { titleKey: 'about', hrefKey: 'aboutHref', category: 'inne' },
+  { titleKey: 'contact', hrefKey: 'contactHref', category: 'inne' },
+  { titleKey: 'privacy', hrefKey: 'privacyHref', category: 'inne' },
+];
+
+const NON_PL_PAGE_TITLES: Record<string, Record<string, string>> = {
+  toolsIndex: {
+    en: 'Tools',
+    de: 'Werkzeuge',
+    es: 'Herramientas',
+    fr: 'Outils',
+    pt: 'Ferramentas',
+    it: 'Strumenti',
+    ro: 'Instrumente',
+    nl: 'Tools',
+    hu: 'Eszközök',
+    cs: 'Nástroje',
+    sv: 'Verktyg',
+    da: 'Værktøjer',
+    no: 'Verktøy',
+    fi: 'Työkalut',
+    el: 'Εργαλεία',
+  },
+  about: {
+    en: 'About',
+    de: 'Über uns',
+    es: 'Sobre nosotros',
+    fr: 'À propos',
+    pt: 'Sobre nós',
+    it: 'Chi siamo',
+    ro: 'Despre noi',
+    nl: 'Over ons',
+    hu: 'Rólunk',
+    cs: 'O nás',
+    sv: 'Om oss',
+    da: 'Om os',
+    no: 'Om oss',
+    fi: 'Tietoa meistä',
+    el: 'Σχετικά με εμάς',
+  },
+  contact: {
+    en: 'Contact',
+    de: 'Kontakt',
+    es: 'Contacto',
+    fr: 'Contact',
+    pt: 'Contacto',
+    it: 'Contatto',
+    ro: 'Contact',
+    nl: 'Contact',
+    hu: 'Kapcsolat',
+    cs: 'Kontakt',
+    sv: 'Kontakt',
+    da: 'Kontakt',
+    no: 'Kontakt',
+    fi: 'Yhteystiedot',
+    el: 'Επικοινωνία',
+  },
+  privacy: {
+    en: 'Privacy Policy',
+    de: 'Datenschutzrichtlinie',
+    es: 'Política de privacidad',
+    fr: 'Politique de confidentialité',
+    pt: 'Política de privacidade',
+    it: 'Informativa sulla privacy',
+    ro: 'Politica de confidențialitate',
+    nl: 'Privacybeleid',
+    hu: 'Adatvédelmi irányelvek',
+    cs: 'Zásady ochrany soukromí',
+    sv: 'Integritetspolicy',
+    da: 'Privatlivspolitik',
+    no: 'Personvernpolicy',
+    fi: 'Tietosuojakäytäntö',
+    el: 'Πολιτική απορρήτου',
+  },
+};
+
+function buildStaticPagesForLocale(locale: Locale, categoryLabels: Record<SearchCategory, string>): SearchItem[] {
+  if (locale === 'pl') return STATIC_PAGES_PL;
+
+  const config = LOCALE_CONFIG[locale];
+  const pages: SearchItem[] = [];
+
+  for (const def of NON_PL_PAGE_DEFS) {
+    const href = config[def.hrefKey];
+    if (!href) continue;
+    const title = NON_PL_PAGE_TITLES[def.titleKey]?.[locale];
+    if (!title) continue;
+
+    pages.push({
+      title,
+      href,
+      category: def.category,
+      categoryLabel: categoryLabels[def.category],
+    });
+  }
+
+  return pages;
+}
+
+// ---------------------------------------------------------------------------
+// PL-only: services, about sub-pages, blog, projects
+// ---------------------------------------------------------------------------
+
 function buildServicesIndex(): SearchItem[] {
   const items: SearchItem[] = [];
 
@@ -88,25 +210,6 @@ function buildServicesIndex(): SearchItem[] {
         href: item.href,
         category: 'uslugi',
         categoryLabel: 'Usługi',
-      });
-    }
-  }
-
-  return items;
-}
-
-function buildToolsIndex(): SearchItem[] {
-  const items: SearchItem[] = [];
-
-  for (const section of TOOLS_SECTIONS_PL) {
-    for (const item of section.items) {
-      items.push({
-        title: item.title,
-        description: item.description,
-        href: item.href,
-        category: 'narzedzia',
-        categoryLabel: 'Narzędzia',
-        keywords: [section.title.toLowerCase()],
       });
     }
   }
@@ -145,22 +248,60 @@ function buildProjectsIndex(): SearchItem[] {
   }));
 }
 
-let cachedIndex: SearchItem[] | null = null;
+// ---------------------------------------------------------------------------
+// Tools index — built from TOOL_REGISTRY for all locales
+// ---------------------------------------------------------------------------
 
-export function getSearchIndex(): SearchItem[] {
-  if (cachedIndex) return cachedIndex;
-
-  cachedIndex = [...STATIC_PAGES, ...buildServicesIndex(), ...buildToolsIndex(), ...buildAboutIndex(), ...buildBlogIndex(), ...buildProjectsIndex()];
-
-  return cachedIndex;
+function buildToolsIndex(locale: Locale, categoryLabel: string): SearchItem[] {
+  return getToolsList(locale).map((tool) => ({
+    title: tool.title,
+    description: tool.description,
+    href: tool.href,
+    category: 'narzedzia' as SearchCategory,
+    categoryLabel,
+  }));
 }
 
-export function searchItems(query: string, limit = 20): SearchItem[] {
+// ---------------------------------------------------------------------------
+// Per-locale cached index
+// ---------------------------------------------------------------------------
+
+const cachedIndexes = new Map<Locale, SearchItem[]>();
+
+export function getSearchIndex(locale: Locale, categoryLabels?: Record<SearchCategory, string>): SearchItem[] {
+  const cached = cachedIndexes.get(locale);
+  if (cached) return cached;
+
+  const labels: Record<SearchCategory, string> = categoryLabels ?? {
+    uslugi: 'Usługi',
+    narzedzia: 'Narzędzia',
+    edukacja: 'Edukacja',
+    realizacje: 'Realizacje',
+    inne: 'Strony',
+  };
+
+  const toolsLabel = labels.narzedzia;
+  const staticPages = buildStaticPagesForLocale(locale, labels);
+  const tools = buildToolsIndex(locale, toolsLabel);
+
+  let index: SearchItem[];
+
+  if (locale === 'pl') {
+    index = [...staticPages, ...buildServicesIndex(), ...tools, ...buildAboutIndex(), ...buildBlogIndex(), ...buildProjectsIndex()];
+  } else {
+    index = [...staticPages, ...tools];
+  }
+
+  cachedIndexes.set(locale, index);
+  return index;
+}
+
+export function searchItems(query: string, locale: Locale, limit = 20, categoryLabels?: Record<SearchCategory, string>): SearchItem[] {
   if (!query.trim()) return [];
 
   const normalizedQuery = query.toLowerCase().trim();
   const terms = normalizedQuery.split(/\s+/).filter(Boolean);
-  const index = getSearchIndex();
+  const index = getSearchIndex(locale, categoryLabels);
 
   const scored = index
     .map((item) => {

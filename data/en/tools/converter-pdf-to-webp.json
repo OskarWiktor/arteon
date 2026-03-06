@@ -2,7 +2,7 @@
   "toolKey": "pdfToWebp",
   "locale": "en",
   "metadata": {
-    "title": "PDF to WebP converter — PDF WebP",
+    "title": "PDF to WebP converter - PDF WebP",
     "description": "Convert PDF pages to WebP images. High quality, no file limits. Free, no registration.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/pdf-to-webp-converter"
@@ -48,7 +48,7 @@
         {
           "position": 3,
           "name": "Download your WebP",
-          "text": "Download the converted WebP file."
+          "text": "Download the converted WebP file individually, or use the bulk download option to save all converted pages as a ZIP archive."
         }
       ]
     }
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert PDF to WebP?",
-      "html": "<p class=\"text-mid mb-4\">PDF is a widely used file format with broad compatibility across devices and software. However, depending on your use case, converting to WebP can offer significant advantages — whether it's smaller file sizes, better quality preservation, broader platform support, or specific feature requirements.</p><p class=\"text-mid mb-4\">This free online converter transforms your PDF files into WebP format directly in the browser. No files are uploaded to any server — the entire conversion process happens locally on your device using modern browser APIs. This means your data stays private and secure at all times.</p><p class=\"text-mid\">You can convert as many files as you need with no daily limits, no registration, and no watermarks. Simply drag and drop your files, adjust quality settings if available, and download the results individually or all at once.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF is the standard for documents, but web pages load faster with optimized image formats. WebP offers 25–35% better compression than JPG at equivalent quality, making it ideal for embedding PDF page images on websites, blogs, and online documentation.</p><p class=\"text-mid mb-4\">Each PDF page becomes a separate WebP file. WebP supports both lossy and lossless compression. It is supported by all modern browsers (Chrome, Firefox, Safari 14+, Edge). For maximum compatibility with older browsers, consider converting to JPG or PNG instead.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PDF to WebP conversion",
       "variant": "right"
@@ -87,7 +87,7 @@
         },
         {
           "title": "Download your WebP",
-          "description": "Download the converted WebP file.",
+          "description": "Download the converted WebP file individually, or use the bulk download option to save all converted pages as a ZIP archive.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs — fast and works offline after loading."
+          "description": "All processing happens locally using modern browser APIs - fast and works offline after loading."
         }
       ]
     },
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Quality settings — what to choose when converting PDF to WebP?",
-      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) — a good balance for most use cases: business websites, blogs, articles. The visual difference compared to the original is virtually unnoticeable.</strong></li><li><strong>85–90% — for product photography, portfolios, and galleries where quality is the priority.</strong></li><li><strong>60–70% — when minimizing file size is the priority, e.g. thumbnails in category grids.</strong></li></ul><p class=\"text-mid mt-3\">At 80% quality, the visual difference between the original PDF and the resulting WebP is virtually imperceptible to the naked eye, while the file is significantly smaller.</p>"
+      "title": "Quality settings - what to choose when converting PDF to WebP?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) - a good balance for most use cases: business websites, blogs, articles. The visual difference compared to the original is virtually unnoticeable.</strong></li><li><strong>85–90% - for product photography, portfolios, and galleries where quality is the priority.</strong></li><li><strong>60–70% - when minimizing file size is the priority, e.g. thumbnails in category grids.</strong></li></ul><p class=\"text-mid mt-3\">At 80% quality, the visual difference between the original PDF and the resulting WebP is virtually imperceptible to the naked eye, while the file is significantly smaller.</p>"
     },
     {
       "type": "gap",
@@ -210,7 +210,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them — LCP (Largest Contentful Paint) — measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting PDF images to WebP reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading — especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting PDF images to WebP reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "gap",
@@ -258,6 +258,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose WebP vs JPG vs PNG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">WebP offers the best balance of quality and file size for web use. Files are 25–35% smaller than JPG at equivalent quality and support both lossy and lossless compression modes.</p><p class=\"text-mid mb-4\">Choose WebP when the images will be displayed on websites or shared digitally. Choose JPG when you need maximum compatibility (older devices, email clients). Choose PNG when you need lossless quality (documents with text, technical drawings).</p><p class=\"text-mid\">WebP is supported by all modern browsers (Chrome, Firefox, Safari 14+, Edge). For the few remaining users on very old browsers, serve JPG as a fallback using the HTML &lt;picture&gt; element.</p>"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about PDF to WebP conversion",
       "openByDefault": 0,
@@ -283,8 +292,8 @@
           "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
         },
         {
-          "question": "Can I convert multiple PDF files at once?",
-          "answer": "Yes. The tool supports batch conversion with no file limit. Drag all files onto the converter or select them from your device."
+          "question": "What resolution will the output WebP images have?",
+          "answer": "The output resolution depends on the PDF page dimensions and rendering settings. WebP offers excellent compression — output files will be significantly smaller than equivalent JPG or PNG while maintaining comparable visual quality."
         },
         {
           "question": "Is WebP supported by all browsers?",

@@ -2,7 +2,7 @@
   "toolKey": "jsonToCsv",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor JSON în CSV — JSON CSV",
+    "title": "Convertor JSON în CSV - JSON CSV",
     "description": "Convertește JSON în format CSV. Parsare și formatare automată. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-json-in-csv"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți JSON în CSV?",
-      "html": "<p class=\"text-mid mb-4\">JSON este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in CSV poate oferi avantaje semnificative — fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele JSON in format CSV direct in browser. Niciun fisier nu este trimis la servere — intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in CSV poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele JSON in format CSV direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "JSON to CSV conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cat economisiti convertind JSON in CSV?",
-      "html": "<p class=\"text-mid mb-4\">Economiile depind de tipul fisierului si compresia originala:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto camera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagine produs</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Economiile reale variaza in functie de continut si setari.</p>"
+      "title": "Cum funcționează conversia din JSON în CSV?",
+      "html": "<p class=\"text-mid mb-4\">JSON (JavaScript Object Notation) stochează datele ca obiecte structurate cu perechi cheie-valoare. CSV (Comma-Separated Values) organizează datele într-un format tabelar plat cu rânduri și coloane. Convertorul transformă obiectele JSON în rânduri tabulare cu numele proprietăților ca antete de coloane.</p><p class=\"text-mid mb-4\">Pentru un array de obiecte JSON, fiecare obiect devine un rând în rezultatul CSV. Convertorul extrage toate cheile unice și le folosește ca antete de coloane în primul rând.</p><p class=\"text-mid\">Fișierul CSV rezultat folosește formatarea standard cu separator virgulă și citare corectă. Toată conversia se face local în browserul tău — nicio dată nu este trimisă la vreun server.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Sfaturi pentru conversia JSON in CSV",
-      "description": "Sfaturi pentru evitarea problemelor:",
+      "title": "Sfaturi pentru conversia din JSON în CSV",
+      "description": "Câteva sfaturi pentru a evita problemele comune:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Fisiere foarte mari",
-          "description": "Imaginile peste 4000×4000 px pot fi mai lente. Impartiti in loturi de 10–20."
+          "icon": "RiNodeTree",
+          "title": "Obiecte imbricate",
+          "description": "CSV este un format plat și nu poate reprezenta structuri imbricate. Obiectele JSON imbricate sunt aplatizate folosind notația cu punct (ex. adresa.oras)."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Fisiere deja comprimate",
-          "description": "Daca JSON era deja comprimat, conversia in CSV poate nu economisi mult."
+          "icon": "RiListCheck2",
+          "title": "Array-uri în valori",
+          "description": "Dacă o proprietate JSON conține un array, acesta este serializat ca șir în celula CSV. Pentru date imbricate complexe, XML sau YAML sunt mai potrivite."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparenta",
-          "description": "CSV nu suporta transparenta. Zonele transparente devin albe. Luati in considerare PNG sau WebP."
+          "icon": "RiFileTextLine",
+          "title": "Structură uniformă",
+          "description": "Pentru cele mai bune rezultate, folosește un array JSON unde toate obiectele au aceleași chei. Obiectele cu chei diferite funcționează și ele, valorile lipsă apar ca celule goale."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Pastrati originalele",
-          "description": "Conversia cu pierderi e ireversibila. Pastrati copii ale fisierelor JSON."
+          "icon": "RiFileCodeLine",
+          "title": "Seturi mari de date",
+          "description": "Convertorul procesează eficient fișiere JSON mari în browser. Pentru fișiere peste 10 MB, procesarea poate dura câteva secunde în funcție de dispozitiv."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Handling nested JSON structures",
+      "html": "<p class=\"text-mid mb-4\">CSV is a flat tabular format — it cannot natively represent nested objects or arrays. The converter handles nesting in several ways:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Nested objects</strong> – flattened using dot notation. <code>{\"address\": {\"city\": \"Warsaw\"}}</code> becomes a column called <code>address.city</code>.</li><li><strong>Arrays of primitives</strong> – serialized as comma-separated strings within a single cell.</li><li><strong>Arrays of objects</strong> – serialized as JSON strings within the cell, preserving the structure for manual parsing.</li><li><strong>Null values</strong> – converted to empty cells in CSV.</li></ul><p class=\"text-mid mt-3\">For best results, use JSON with a flat structure (array of objects with primitive values). Deeply nested JSON may produce many columns with dot-notation headers.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         },
         {
-          "question": "E sigura conversia JSON in CSV?",
-          "answer": "Da. Totul se face local in browser via Canvas API. Nimic nu e trimis la servere."
+          "question": "Este conversia din JSON în CSV sigură?",
+          "answer": "Da. Toată conversia se face local în browserul tău. Nicio dată nu este trimisă la vreun server."
         },
         {
-          "question": "Pot converti mai multe fisiere JSON?",
-          "answer": "Da. Conversie in lot fara limita. Trageti fisierele in convertor."
+          "question": "Pot deschide fișierul CSV în Excel?",
+          "answer": "Da. Fișierele CSV pot fi deschise direct în Microsoft Excel, Google Sheets, LibreOffice Calc și toate celelalte programe de calcul tabelar."
         },
         {
-          "question": "CSV e suportat de toate browserele?",
-          "answer": "CSV e suportat de Chrome, Firefox, Safari, Edge si Opera."
+          "question": "Ce se întâmplă cu obiectele JSON imbricate?",
+          "answer": "Obiectele imbricate sunt aplatizate pentru rezultatul CSV. Proprietățile sunt reprezentate cu notație cu punct (ex. adresa.oras). Array-urile din valori sunt serializate ca șiruri."
         }
       ]
     },

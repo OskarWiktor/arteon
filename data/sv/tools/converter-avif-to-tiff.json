@@ -2,7 +2,7 @@
   "toolKey": "avifToTiff",
   "locale": "sv",
   "metadata": {
-    "title": "AVIF till TIFF-konverterare — AVIF TIFF",
+    "title": "AVIF till TIFF-konverterare - AVIF TIFF",
     "description": "Konvertera AVIF-filer till TIFF-format. Gratis, privat och obegränsat.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/avif-till-tiff-konverterare"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertera",
-          "text": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare."
+          "text": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera AVIF till TIFF?",
-      "html": "<p class=\"text-mid mb-4\">AVIF ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till TIFF erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina AVIF-filer till TIFF-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">AVIF ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till TIFF erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina AVIF-filer till TIFF-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "AVIF to TIFF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertera",
-          "description": "Klicka på Konvertera — filerna bearbetas lokalt i din webbläsare.",
+          "description": "Klicka på Konvertera - filerna bearbetas lokalt i din webbläsare.",
           "icon": "RiSettings3Line"
         },
         {
@@ -245,6 +245,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What to expect when converting AVIF to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">AVIF uses lossy compression while TIFF is a lossless format. The conversion preserves the pixel data from the decoded AVIF exactly as-is in the TIFF output. No additional quality loss occurs during conversion.</p><p class=\"text-mid mb-4\">TIFF files will be significantly larger than the AVIF originals — this is expected. A 200 KB AVIF file may become 15–25 MB in TIFF because TIFF stores every pixel without compression (or with lossless LZW compression).</p><p class=\"text-mid\">For the best results, use high-quality AVIF source files. If the original AVIF was heavily compressed, the quality limitations will carry over to the TIFF output. TIFF cannot recover detail that was lost during AVIF compression.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When should you keep AVIF instead of converting to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">TIFF is designed for print and archival workflows. If your images are intended for web delivery, social media, or digital-only use, AVIF is the better choice — files are dramatically smaller and load faster in browsers.</p><p class=\"text-mid mb-4\">Convert to TIFF only when the target system specifically requires it: offset printing, desktop publishing (InDesign, QuarkXPress), medical imaging software, or professional photo archival systems. For general editing, PNG is a lighter lossless alternative.</p><p class=\"text-mid\">If you need to share images digitally while maintaining quality, consider WebP or PNG as intermediate formats. TIFF should be reserved for professional print workflows where its CMYK support and ICC profiles are needed.</p>"
     },
     {
       "type": "faq",

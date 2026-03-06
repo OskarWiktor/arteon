@@ -2,7 +2,7 @@
   "toolKey": "yamlToJson",
   "locale": "sv",
   "metadata": {
-    "title": "YAML till JSON-konverterare — YAML JSON",
+    "title": "YAML till JSON-konverterare - YAML JSON",
     "description": "Konvertera YAML till JSON-format. Automatisk parsning och formatering. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/yaml-till-json-konverterare"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera YAML till JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till JSON erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina YAML-filer till JSON-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till JSON erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina YAML-filer till JSON-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur mycket sparar du vid konvertering YAML till JSON?",
-      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+      "title": "Hur fungerar konvertering fr\u00e5n YAML till JSON?",
+      "html": "<p class=\"text-mid mb-4\">YAML anv\u00e4nder indragning och minimal syntax f\u00f6r att representera strukturerad data, medan JSON anv\u00e4nder klammerparenteser, hakparenteser och explicita citattecken. Konverteraren analyserar YAML-strukturen och producerar motsvarande JSON med korrekt formatering.</p><p class=\"text-mid mb-4\">YAML-indragning blir JSON-n\u00e4stling, element med bindestreck blir JSON-arrayelement, och YAML nyckel-v\u00e4rde-par blir JSON-objektegenskaper. Datatyper bevaras: str\u00e4ngar, tal, booleska, null, arrayer och objekt \u00f6verf\u00f6rs direkt.</p><p class=\"text-mid\">Konvertering fr\u00e5n YAML till JSON \u00e4r anv\u00e4ndbar n\u00e4r konfigurationsdata beh\u00f6ver integreras i webbapplikationer, REST-API:er eller system som f\u00f6rv\u00e4ntar JSON-indata. Konverteringen sker helt i din webbl\u00e4sare.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering YAML till JSON",
-      "description": "Tips for att undvika vanliga problem:",
+      "title": "Tips f\u00f6r konvertering fr\u00e5n YAML till JSON",
+      "description": "N\u00e5gra tips f\u00f6r att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Mycket stora filer",
-          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Indragningskonsekvens",
+          "description": "YAML \u00e4r k\u00e4nsligt f\u00f6r indragning. Om din fil blandar tabbar och mellanslag kan tolkningen misslyckas. Konverteraren rapporterar uppt\u00e4ckta indragningsfel."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Redan komprimerade",
-          "description": "Om YAML redan var kraftigt komprimerad kanske konvertering till JSON inte sparar mycket."
+          "title": "Kommentarer tas bort",
+          "description": "JSON st\u00f6der inte kommentarer. Alla #-kommentarer fr\u00e5n din YAML-fil visas inte i JSON-utdata. Bevara din ursprungliga YAML-fil."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "JSON stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+          "icon": "RiCodeLine",
+          "title": "Flerdokument-YAML",
+          "description": "YAML-filer kan inneh\u00e5lla flera dokument separerade med ---. Konverteraren bearbetar som standard det f\u00f6rsta dokumentet."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Spara originalen",
-          "description": "Forlustkomprimering ar irreversibel. Spara kopior av YAML-filer."
+          "icon": "RiFileCodeLine",
+          "title": "Ankare och alias",
+          "description": "YAML-ankare (&) och alias (*) l\u00f6ses upp under konverteringen. JSON-utdata inneh\u00e5ller de expanderade v\u00e4rdena, inte YAML-referenserna."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         },
         {
-          "question": "Ar konvertering YAML till JSON saker?",
-          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+          "question": "Är konverteringen från YAML till JSON säker?",
+          "answer": "Ja. All konvertering sker lokalt i din webbläsare. Ingen data skickas till någon server."
         },
         {
-          "question": "Kan jag konvertera flera YAML-filer samtidigt?",
-          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+          "question": "Bevaras YAML-kommentarer?",
+          "answer": "Nej. JSON stöder inte kommentarer, så alla #-kommentarer från din YAML-fil tas bort under konverteringen. Bevara din ursprungliga YAML-fil."
         },
         {
-          "question": "Stods JSON av alla webblasare?",
-          "answer": "JSON stods av Chrome, Firefox, Safari, Edge och Opera."
+          "question": "Är konverteringen förlustfri?",
+          "answer": "Ja, för datavärdena. Alla strängar, tal, booleska, null-värden, arrayer och objekt bevaras exakt. Bara YAML-specifika funktioner som kommentarer och ankare överförs inte till JSON."
         }
       ]
     },

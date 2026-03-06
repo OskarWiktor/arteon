@@ -1,0 +1,281 @@
+{
+  "toolKey": "decToBin",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de decimal a binario",
+    "description": "Convierte números decimales a binario y viceversa. Útil para programación e informática.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-decimal-a-binario"
+  },
+  "hero": {
+    "title": "Convertir decimal a binario",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-decimal-a-binario",
+      "label": "dec a bin"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de decimal a binario",
+      "alternateName": ["Convertir decimal a binario"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte números decimales a binario y viceversa. Útil para programación e informática.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir decimal a binario?",
+      "html": "<p class=\"text-mid mb-4\">Binario (base-2) es el sistema numérico fundamental de los ordenadores. Cada dato — texto, imágenes, programas — se almacena como secuencia de 0s y 1s.</p><p class=\"text-mid mb-4\">Cada dígito binario (bit) representa una potencia de 2: ...128, 64, 32, 16, 8, 4, 2, 1. Ejemplo: decimal 42 = binario 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Aplicaciones comunes: direcciones IP, máscaras de subred, operaciones a nivel de bits, permisos (chmod).</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de decimal a binario – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado aparece instantáneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Copia el resultado o invierte la dirección de conversión.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Programación",
+          "description": "Entiende operaciones bit a bit, flags de bits y aritmética binaria."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Redes",
+          "description": "Direcciones IP y máscaras de subred son binarias. 255.255.255.0 = 11111111.11111111.11111111.00000000."
+        },
+        {
+          "icon": "RiShieldKeyholeLine",
+          "title": "Permisos",
+          "description": "Permisos de archivo Unix: chmod 755 = rwxr-xr-x = 111101101."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Informática",
+          "description": "Entiende cómo los ordenadores almacenan números y realizan aritmética."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza mientras escribes."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "Convierte en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Tabla con valores comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">Divide repetidamente entre 2 y anota los restos. Lee los restos de abajo arriba. Ejemplo: 42: 42÷2=21 R0, 21÷2=10 R1, 10÷2=5 R0, 5÷2=2 R1, 2÷2=1 R0, 1÷2=0 R1 → 101010.</p><p class=\"text-mid mb-4\">Binario a decimal: multiplica cada bit por su valor posicional. 101010 = 32+8+2 = 42.</p><p class=\"text-mid\">8 bits = 1 byte = valores 0–255. 16 bits = 0–65.535.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">Divide repetidamente entre 2 y anota los restos. Lee los restos de abajo arriba. Ejemplo: 42: 42÷2=21 R0, 21÷2=10 R1, 10÷2=5 R0, 5÷2=2 R1, 2÷2=1 R0, 1÷2=0 R1 → 101010.</p><p class=\"text-mid mb-4\">Binario a decimal: multiplica cada bit por su valor posicional. 101010 = 32+8+2 = 42.</p><p class=\"text-mid\">8 bits = 1 byte = valores 0–255. 16 bits = 0–65.535.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimal vs Binario",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimal (base-10)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binario (base-2)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dígitos",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–1"
+          }
+        },
+        {
+          "name": "Usado por",
+          "values": {
+            "unit1": "Humanos",
+            "unit2": "Ordenadores"
+          }
+        },
+        {
+          "name": "Ejemplo: 42",
+          "values": {
+            "unit1": "42",
+            "unit2": "101010"
+          }
+        },
+        {
+          "name": "Ejemplo: 255",
+          "values": {
+            "unit1": "255",
+            "unit2": "11111111"
+          }
+        },
+        {
+          "name": "Legibilidad",
+          "values": {
+            "unit1": "Fácil",
+            "unit2": "Largo pero nativo para ordenadores"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Qué es 10 en binario?",
+          "answer": "Decimal 10 = binario 1010 (8+2)."
+        },
+        {
+          "question": "¿Qué es 255 en binario?",
+          "answer": "255 = 11111111 (ocho unos). Máximo de un byte."
+        },
+        {
+          "question": "¿Qué es 1024 en binario?",
+          "answer": "1024 = 10000000000. Es 2^10, por eso 1 KB = 1.024 bytes."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "dziesiętny na binarny – Arteon",
+      "defaultSubject": "Feedback: dec-to-bin"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

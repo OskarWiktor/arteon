@@ -2,8 +2,8 @@
   "toolKey": "pngToPdf",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PNG na PDF — darmowy, bez rejestracji",
-    "description": "Zamień pliki PNG na PDF z zachowaniem jakości. Połącz wiele grafik w jeden dokument. Bez limitu plików — konwersja w przeglądarce.",
+    "title": "Konwerter PNG na PDF - darmowy, bez rejestracji",
+    "description": "Zamień pliki PNG na PDF z zachowaniem jakości. Połącz wiele grafik w jeden dokument. Bez limitu plików - konwersja w przeglądarce.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-png-na-pdf"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter PNG na PDF — darmowy, bez limitu",
+      "name": "Konwerter PNG na PDF - darmowy, bez limitu",
       "alternateName": ["Zamiana PNG na PDF online", "Konwersja PNG do PDF", "PNG to PDF converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
-      "description": "Darmowy konwerter PNG na PDF online. Zamień pliki PNG na dokument PDF w przeglądarce — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter PNG na PDF online. Zamień pliki PNG na dokument PDF w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": ["Konwersja PNG do PDF", "Łączenie wielu plików w jeden PDF", "Automatyczna orientacja strony A4", "Przetwarzanie lokalne w przeglądarce"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować PNG na PDF?",
-      "html": "<p class=\"text-mid mb-4\">PNG to bezstratny format graficzny, idealny do grafik, zrzutów ekranu i materiałów z przezroczystym tłem. PDF to uniwersalny format dokumentów odczytywalny na każdym urządzeniu.</p><p class=\"text-mid mb-4\">Konwersja PNG na PDF jest przydatna, gdy chcesz połączyć zrzuty ekranu w jedną instrukcję, przygotować portfolio grafik lub wysłać dokumenty w jednym pliku.</p><p class=\"text-mid\">Nasz konwerter działa lokalnie w przeglądarce — pliki nie są wysyłane na serwer. Jakość obrazu jest zachowana w pełni.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG to bezstratny format graficzny, idealny do grafik, zrzutów ekranu i materiałów z przezroczystym tłem. PDF to uniwersalny format dokumentów odczytywalny na każdym urządzeniu.</p><p class=\"text-mid mb-4\">Konwersja PNG na PDF jest przydatna, gdy chcesz połączyć zrzuty ekranu w jedną instrukcję, przygotować portfolio grafik lub wysłać dokumenty w jednym pliku.</p><p class=\"text-mid\">Nasz konwerter działa lokalnie w przeglądarce - pliki nie są wysyłane na serwer. Jakość obrazu jest zachowana w pełni.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter PNG na PDF – Arteon"
     },
@@ -83,7 +83,7 @@
         },
         {
           "title": "3. Pobierz PDF",
-          "description": "Pobierz gotowy dokument PDF jednym kliknięciem.",
+          "description": "Pobierz gotowy dokument PDF jednym kliknięciem. Przy wielu plikach użyj opcji zbiorczego pobierania jako archiwum ZIP.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -100,12 +100,12 @@
         {
           "icon": "RiFileTextLine",
           "title": "Dokumenty ze zrzutami",
-          "description": "Połącz zrzuty ekranu PNG w jeden PDF — idealny do dokumentacji technicznej."
+          "description": "Połącz zrzuty ekranu PNG w jeden PDF - idealny do dokumentacji technicznej."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Druk grafik",
-          "description": "PNG zachowuje pełną jakość — PDF zapewnia poprawne wymiary na wydruku."
+          "description": "PNG zachowuje pełną jakość - PDF zapewnia poprawne wymiary na wydruku."
         },
         {
           "icon": "RiMailLine",
@@ -115,7 +115,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Archiwizacja projektów",
-          "description": "PDF to uniwersalny format archiwizacji — zachowuje jakość PNG na lata."
+          "description": "PDF to uniwersalny format archiwizacji - zachowuje jakość PNG na lata."
         }
       ]
     },
@@ -131,7 +131,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
+          "description": "Pliki nie opuszczają komputera - cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -146,7 +146,7 @@
         {
           "icon": "RiDownloadLine",
           "title": "Szybkie pobieranie",
-          "description": "Pobierz gotowy PDF jednym kliknięciem."
+          "description": "Pobierz gotowy plik PDF jednym kliknięciem lub użyj opcji zbiorczego pobierania, aby zapisać wszystkie dokumenty naraz."
         }
       ]
     },
@@ -157,7 +157,7 @@
     {
       "type": "sectionInfo",
       "title": "Wskazówki dotyczące konwersji PNG na PDF",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>PNG to format bezstratny — jakość obrazu w PDF będzie identyczna jak w oryginale.</li><li>Przezroczyste tło PNG zostanie zamienione na białe w PDF (PDF nie obsługuje przezroczystości tła strony).</li><li>Dla zrzutów ekranu z tekstem PNG jest lepszym źródłem niż JPG — tekst pozostaje ostry.</li><li>Jeśli grafiki zawierają zdjęcia, rozważ konwersję przez <a href=\"/narzedzia/konwerter-jpg-na-pdf\">JPG na PDF</a> — mniejszy rozmiar pliku.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>PNG to format bezstratny - jakość obrazu w PDF będzie identyczna jak w oryginale.</li><li>Przezroczyste tło PNG zostanie zamienione na białe w PDF (PDF nie obsługuje przezroczystości tła strony).</li><li>Dla zrzutów ekranu z tekstem PNG jest lepszym źródłem niż JPG - tekst pozostaje ostry.</li><li>Jeśli grafiki zawierają zdjęcia, rozważ konwersję przez <a href=\"/narzedzia/konwerter-jpg-na-pdf\">JPG na PDF</a> - mniejszy rozmiar pliku.</li></ul>"
     },
     {
       "type": "gap",
@@ -236,8 +236,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji PNG na PDF?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem PNG a wynikowym PDF jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji PNG na PDF?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem PNG a wynikowym PDF jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -276,7 +276,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PNG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PNG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -291,7 +291,7 @@
       "items": [
         {
           "question": "Czy mogę połączyć wiele plików PNG w jeden PDF?",
-          "answer": "Tak, możesz dodać wiele plików PNG — każdy z nich trafi na osobną stronę w wygenerowanym dokumencie PDF."
+          "answer": "Tak, możesz dodać wiele plików PNG - każdy z nich trafi na osobną stronę w wygenerowanym dokumencie PDF."
         },
         {
           "question": "Czy pliki są wysyłane na serwer?",
@@ -307,11 +307,11 @@
         },
         {
           "question": "Czy konwersja PNG na PDF jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików PNG jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy mogę ustawić kolejność stron w PDF?",
+          "answer": "Tak. Pliki PNG są dodawane do PDF w kolejności, w jakiej je wgrasz. Możesz zmienić kolejność przed konwersją, przeciągając pliki w liście."
         },
         {
           "question": "Do czego najlepiej nadaje się format PDF?",

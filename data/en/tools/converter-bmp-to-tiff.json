@@ -2,14 +2,14 @@
   "toolKey": "bmpToTiff",
   "locale": "en",
   "metadata": {
-    "title": "BMP to TIFF converter — BMP TIFF",
-    "description": "Convert BMP files to professional TIFF format for printing. All processing happens locally in your browser — files never leave your device.",
+    "title": "BMP to TIFF converter - BMP TIFF",
+    "description": "Convert BMP files to professional TIFF format for printing. All processing happens locally in your browser - files never leave your device.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/bmp-to-tiff-converter"
   },
   "hero": {
     "title": "BMP to TIFF converter",
-    "description": "Convert BMP files to professional TIFF format for printing. All processing happens locally in your browser — files never leave your device.",
+    "description": "Convert BMP files to professional TIFF format for printing. All processing happens locally in your browser - files never leave your device.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "BMP to TIFF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert BMP files to professional TIFF format for printing. All processing happens locally in your browser — files never leave your device.",
+      "description": "Convert BMP files to professional TIFF format for printing. All processing happens locally in your browser - files never leave your device.",
       "featureList": ["Conversion to TIFF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert BMP to TIFF", "BMP to TIFF conversion", "Free BMP to TIFF converter", "Change BMP to TIFF"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Set quality",
-          "text": "Adjust the TIFF quality slider — lower values produce smaller files."
+          "text": "Adjust the TIFF quality slider - lower values produce smaller files."
         },
         {
           "position": 3,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download the TIFF files — individually or all at once."
+          "text": "Download the TIFF files - individually or all at once."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert BMP to TIFF?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is a lossless image format supporting millions colors. It is widely used for uncompressed images and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting BMP to TIFF (Tagged Image File Format) gives you more flexibility in how and where you use your images.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, preserving any transparent areas in your image. As a lossless format, TIFF preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many BMP files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">BMP (Bitmap) stores raw pixel data without compression — great for preserving original quality, but impractical for professional workflows. TIFF (Tagged Image File Format) is the industry standard for print, publishing, medical imaging, and archival storage. It supports lossless LZW compression, reducing file size by 30–70% while preserving every pixel.</p><p class=\"text-mid mb-4\">TIFF supports alpha transparency, multiple layers, 16-bit and 32-bit color depth, CMYK color space, and embedded ICC profiles — features that BMP lacks entirely. Converting BMP to TIFF prepares images for professional print workflows and long-term archival storage.</p><p class=\"text-mid mb-4\">TIFF files are larger than JPG or WebP but smaller than raw BMP thanks to LZW compression. If you need images for web publishing rather than print, consider converting to PNG or WebP instead.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "BMP to TIFF conversion",
       "variant": "right"

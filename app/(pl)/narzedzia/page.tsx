@@ -51,7 +51,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Darmowe narzędzia online — konwertery obrazów, SEO, kolory, favicon',
+  name: 'Darmowe narzędzia online - konwertery obrazów, SEO, kolory, favicon',
   description:
     'Darmowe narzędzia online: Konwertery obrazów (JPG, PNG, WebP, SVG, BMP, GIF, HEIC, TIFF, AVIF), generator favicon, edytor zdjęć, licznik tekstu, palety kolorów i kody QR. Bez rejestracji, bez limitu.',
   url: toAbsoluteUrl('/narzedzia'),
@@ -66,7 +66,7 @@ const schema = {
     { '@type': 'Thing', name: 'Konwerter JPG PNG WebP SVG BMP GIF HEIC TIFF AVIF' },
     { '@type': 'Thing', name: 'Optymalizacja obrazów na stronę WWW' },
     { '@type': 'Thing', name: 'Zmiana formatu zdjęć online' },
-    { '@type': 'Thing', name: 'SEO — meta title, meta description' },
+    { '@type': 'Thing', name: 'SEO - meta title, meta description' },
     { '@type': 'Thing', name: 'Kolory, palety, kontrast WCAG' },
     { '@type': 'Thing', name: 'Generator favicon, QR, stopka e-mail' },
   ],
@@ -77,7 +77,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 1,
-        name: 'Konwerter JPG na WebP — zmniejsz wagę zdjęć',
+        name: 'Konwerter JPG na WebP - zmniejsz wagę zdjęć',
         description: 'Darmowy konwerter JPG na WebP online. Zmniejsz wagę zdjęć nawet o 35% bez utraty jakości. Konwersja w przeglądarce, bez rejestracji.',
         url: toAbsoluteUrl('/narzedzia/konwerter-jpg-na-webp'),
         applicationCategory: 'MultimediaApplication',
@@ -98,7 +98,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 3,
         name: 'Konwerter WebP na JPG online',
-        description: 'Zamień pliki WebP na JPG. Kompatybilność z każdym programem i platformą — konwersja lokalna w przeglądarce.',
+        description: 'Zamień pliki WebP na JPG. Kompatybilność z każdym programem i platformą - konwersja lokalna w przeglądarce.',
         url: toAbsoluteUrl('/narzedzia/konwerter-webp-na-jpg'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -298,7 +298,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 25,
-        name: 'Edytor zdjęć online — kadrowanie i zmiana rozmiaru',
+        name: 'Edytor zdjęć online - kadrowanie i zmiana rozmiaru',
         description: 'Kadrowanie i zmiana rozmiaru zdjęć pod media społecznościowe i strony WWW. Gotowe presety, własne wymiary w pikselach, okrągłe avatary.',
         url: toAbsoluteUrl('/narzedzia/edytor-zdjec-online'),
         applicationCategory: 'MultimediaApplication',
@@ -329,7 +329,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 28,
         name: 'Generator stopki mailowej HTML',
-        description: 'Darmowy generator podpisu e-mail HTML. Dane kontaktowe, link CTA, profile social media — gotowy kod do Gmaila i Outlooka.',
+        description: 'Darmowy generator podpisu e-mail HTML. Dane kontaktowe, link CTA, profile social media - gotowy kod do Gmaila i Outlooka.',
         url: toAbsoluteUrl('/narzedzia/darmowy-generator-stopki-mailowej'),
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Any',
@@ -338,7 +338,7 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 29,
-        name: 'Kontrast i czytelność kolorów — WCAG checker',
+        name: 'Kontrast i czytelność kolorów - WCAG checker',
         description: 'Sprawdź kontrast tekstu i tła według WCAG 2.1. Automatyczne dopasowanie koloru do wymaganego poziomu AA lub AAA.',
         url: toAbsoluteUrl('/narzedzia/kontrast-i-czytelnosc-kolorow'),
         applicationCategory: 'DesignApplication',
@@ -706,6 +706,23 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Generator Lorem Ipsum',
+              topImageAlt: 'Generator Lorem Ipsum Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Wygeneruj tekst zastępczy w 8 stylach i 9 trybach. Lorem Ipsum, Hipster, Business, Bacon i więcej. Kopiuj jako tekst lub HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/generator-lorem-ipsum">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -826,7 +843,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Konwertery formatów obrazów"
-          description="Konwertery obrazów online — zamień format zdjęć między JPG, PNG, WebP, SVG, BMP, GIF, AVIF, HEIC i TIFF. Konwersja w przeglądarce, bez wysyłania plików na serwer."
+          description="Konwertery obrazów online - zamień format zdjęć między JPG, PNG, WebP, SVG, BMP, GIF, AVIF, HEIC i TIFF. Konwersja w przeglądarce, bez wysyłania plików na serwer."
           grid="three"
           items={[
             {
@@ -870,7 +887,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Zamień pliki WebP na JPG — format kompatybilny z każdym programem, platformą sprzedażową i klientem e-mail.</p>
+                  <p>Zamień pliki WebP na JPG - format kompatybilny z każdym programem, platformą sprzedażową i klientem e-mail.</p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/konwerter-webp-na-jpg">
                       Otwórz narzędzie
@@ -886,7 +903,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Zamień grafiki PNG na WebP. Mniejsze pliki przy zachowaniu przezroczystości — idealne do stron WWW.</p>
+                  <p>Zamień grafiki PNG na WebP. Mniejsze pliki przy zachowaniu przezroczystości - idealne do stron WWW.</p>
                   <div className="mt-4">
                     <Button arrow link="/narzedzia/konwerter-png-na-webp">
                       Otwórz narzędzie
@@ -927,16 +944,25 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Konwertery danych"
+          description="Konwertery formatów danych online — zamień między CSV, JSON, XML, YAML, Markdown i HTML. Konwersja w przeglądarce, bez wysyłania danych."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Konwerter SVG na PNG',
-              topImageAlt: 'Konwerter SVG na PNG Arteon',
+              title: 'CSV na JSON',
+              topImageAlt: 'CSV na JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Zamień grafikę wektorową SVG na rastrowy PNG. Idealne do dokumentów i mediów społecznościowych.</p>
+                  <p>Zamień plik CSV na poprawny JSON. Automatyczne wykrywanie separatorów i formatowanie wyniku.</p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/konwerter-svg-na-png">
+                    <Button arrow link="/narzedzia/konwerter-csv-na-json">
                       Otwórz narzędzie
                     </Button>
                   </div>
@@ -945,14 +971,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Konwerter SVG na JPG',
-              topImageAlt: 'Konwerter SVG na JPG Arteon',
+              title: 'JSON na CSV',
+              topImageAlt: 'JSON na CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Zamień grafikę wektorową SVG na JPG. Mniejszy plik, pełna kompatybilność z każdą platformą.</p>
+                  <p>Zamień dane JSON na plik CSV. Konwersja w przeglądarce, bez wysyłania danych na serwer.</p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/konwerter-svg-na-jpg">
+                    <Button arrow link="/narzedzia/konwerter-json-na-csv">
                       Otwórz narzędzie
                     </Button>
                   </div>
@@ -961,14 +987,62 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Konwerter BMP na JPG',
-              topImageAlt: 'Konwerter BMP na JPG Arteon',
+              title: 'XML na JSON',
+              topImageAlt: 'XML na JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Zamień nieskompresowane pliki BMP na lekki JPG. Redukcja rozmiaru bez widocznej utraty jakości.</p>
+                  <p>Zamień dane XML na JSON. Konwersja w przeglądarce z walidacją struktury.</p>
                   <div className="mt-4">
-                    <Button arrow link="/narzedzia/konwerter-bmp-na-jpg">
+                    <Button arrow link="/narzedzia/konwerter-xml-na-json">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON na XML',
+              topImageAlt: 'JSON na XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień dane JSON na poprawny XML. Konwersja w przeglądarce z formatowaniem wyniku.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-json-na-xml">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML na JSON',
+              topImageAlt: 'YAML na JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień konfigurację YAML na JSON. Walidacja i formatowanie wyniku w przeglądarce.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-yaml-na-json">
+                      Otwórz narzędzie
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON na YAML',
+              topImageAlt: 'JSON na YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Zamień dane JSON na czytelny YAML. Konwersja w przeglądarce z formatowaniem.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/narzedzia/konwerter-json-na-yaml">
                       Otwórz narzędzie
                     </Button>
                   </div>
@@ -985,7 +1059,7 @@ export default function ToolsIndexPage() {
             Zestaw darmowych narzędzi online do przygotowania materiałów na stronę internetową, do mediów społecznościowych i do druku. Konwertery formatów obrazów (JPG, PNG, WebP, SVG, BMP, GIF,
             AVIF, HEIC, TIFF), edytor zdjęć, generator favicon, licznik tekstu, ekstraktor kolorów, generator palet i kody QR.
           </p>
-          <p className="mb-4">Wszystkie narzędzia działają w przeglądarce — pliki nie są wysyłane na serwer. Korzystasz bez rejestracji i bez limitu.</p>
+          <p className="mb-4">Wszystkie narzędzia działają w przeglądarce - pliki nie są wysyłane na serwer. Korzystasz bez rejestracji i bez limitu.</p>
           <p>
             Jeśli potrzebujesz pomocy z projektem strony lub identyfikacji wizualnej, <Link href="/kontakt">skontaktuj się z nami</Link>.
           </p>

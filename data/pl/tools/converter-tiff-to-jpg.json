@@ -28,7 +28,7 @@
       "alternateName": ["Zamiana TIFF na JPG online", "Konwersja TIFF do JPG", "TIFF to JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter TIFF na JPG online. Zamień pliki TIFF na kompaktowy JPG w przeglądarce — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter TIFF na JPG online. Zamień pliki TIFF na kompaktowy JPG w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": [
         "Konwersja TIFF do JPG",
         "Regulacja poziomu jakości (60-95%)",
@@ -64,7 +64,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować TIFF na JPG?",
-      "html": "<p class=\"text-mid mb-4\">TIFF (Tagged Image File Format) to format używany w profesjonalnej fotografii, poligrafii i archiwizacji dokumentów. TIFF przechowuje dane bezstratnie, co oznacza pełną jakość obrazu — ale też bardzo duże pliki. Pojedynczy skan A4 w rozdzielczości 300 DPI w formacie TIFF może ważyć 25-50 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) to najbardziej rozpowszechniony format graficzny. Stosuje kompresję stratną, dzięki której pliki są wielokrotnie mniejsze. Przy jakości 85% różnica wizualna między TIFF a JPG jest praktycznie niezauważalna dla ludzkiego oka.</p><p class=\"text-mid\">Konwersja TIFF na JPG jest przydatna, gdy potrzebujesz udostępnić skany, wysłać dokumenty e-mailem, opublikować zdjęcia w internecie lub zmniejszyć rozmiar archiwum fotograficznego.</p>",
+      "html": "<p class=\"text-mid mb-4\">TIFF (Tagged Image File Format) to format używany w profesjonalnej fotografii, poligrafii i archiwizacji dokumentów. TIFF przechowuje dane bezstratnie, co oznacza pełną jakość obrazu - ale też bardzo duże pliki. Pojedynczy skan A4 w rozdzielczości 300 DPI w formacie TIFF może ważyć 25-50 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) to najbardziej rozpowszechniony format graficzny. Stosuje kompresję stratną, dzięki której pliki są wielokrotnie mniejsze. Przy jakości 85% różnica wizualna między TIFF a JPG jest praktycznie niezauważalna dla ludzkiego oka.</p><p class=\"text-mid\">Konwersja TIFF na JPG jest przydatna, gdy potrzebujesz udostępnić skany, wysłać dokumenty e-mailem, opublikować zdjęcia w internecie lub zmniejszyć rozmiar archiwum fotograficznego.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter TIFF na JPG – Arteon"
     },
@@ -137,7 +137,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Skany i dokumenty nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer."
+          "description": "Skany i dokumenty nie opuszczają komputera. Konwersja odbywa się w przeglądarce - nic nie jest wysyłane na serwer."
         },
         {
           "icon": "RiInfinityFill",
@@ -240,8 +240,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji TIFF na JPG?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem TIFF a wynikowym JPG jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji TIFF na JPG?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem TIFF a wynikowym JPG jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -259,7 +259,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów TIFF na JPG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów TIFF na JPG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -289,7 +289,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików TIFF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików TIFF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -304,7 +304,7 @@
       "items": [
         {
           "question": "Co to jest format TIFF?",
-          "answer": "TIFF (Tagged Image File Format) to format graficzny używany w profesjonalnej fotografii, poligrafii i archiwizacji. Przechowuje dane bezstratnie, co oznacza pełną jakość — ale też bardzo duże pliki. TIFF obsługuje wielostronicowość, warstwy i profile kolorów CMYK."
+          "answer": "TIFF (Tagged Image File Format) to format graficzny używany w profesjonalnej fotografii, poligrafii i archiwizacji. Przechowuje dane bezstratnie, co oznacza pełną jakość - ale też bardzo duże pliki. TIFF obsługuje wielostronicowość, warstwy i profile kolorów CMYK."
         },
         {
           "question": "Ile miejsca mogę zaoszczędzić?",
@@ -328,11 +328,11 @@
         },
         {
           "question": "Czy konwersja TIFF na JPG jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików TIFF jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy konwersja TIFF na JPG zmieni rozdzielczość?",
+          "answer": "Nie. Konwersja zachowuje oryginalne wymiary pikseli. Zmienia się format zapisu i stosowana jest kompresja stratna JPG, ale rozdzielczość obrazu pozostaje identyczna."
         }
       ]
     },

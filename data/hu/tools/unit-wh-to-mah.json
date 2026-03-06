@@ -1,0 +1,281 @@
+{
+  "toolKey": "whToMah",
+  "locale": "hu",
+  "metadata": {
+    "title": "Wh mAh-ra – átváltó",
+    "description": "Wh átváltása mAh-ra és fordítva. Állítható feszültség.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/hu/eszkozok/wh-mah-atvalto"
+  },
+  "hero": {
+    "title": "Wh mAh-ra",
+    "description": "Ez az átváltó azonnal átszámol. Adjon meg egy értéket és az eredmény azonnal megjelenik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/wh-mah-atvalto",
+      "label": "Wh mAh-ra"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Wh mAh-ra – átváltó",
+      "alternateName": ["Wh mAh-ra"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Wh átváltása mAh-ra és fordítva. Állítható feszültség.",
+      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+    },
+    "howTo": {
+      "name": "Hogyan használja az átváltót",
+      "description": "Gyors útmutató az átváltó használatához.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Érték megadása",
+          "text": "Írjon be egy számot a bal oldali beviteli mezőbe."
+        },
+        {
+          "name": " Eredmény leolvasása",
+          "text": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben."
+        },
+        {
+          "name": "Másolás vagy megfordítás",
+          "text": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikor kell használni: Wh mAh-ra?",
+      "html": "<p class=\"text-mid mb-4\">Watt-hours (Wh) and milliamp-hours (mAh) both measure battery capacity, but at different scales. The relationship depends on voltage: mAh = Wh × 1000 / V.</p><p class=\"text-mid mb-4\">Phone batteries are typically rated in mAh (e.g., 5,000 mAh at 3.7V = 18.5 Wh). Laptop batteries and power banks often use Wh (e.g., 100 Wh is the airline carry-on limit).</p><p class=\"text-mid mb-4\">This conversion is essential for comparing battery capacities, checking airline power bank limits, and sizing solar/UPS systems.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Wh mAh-ra – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az átváltót?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Érték megadása",
+          "description": "Írjon be egy számot a beviteli mezőbe. Használhat pontot vagy vesszőt tizedesjegyként.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Eredmény leolvasása",
+          "description": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben – kattintás nélkül.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Másolás vagy megfordítás",
+          "description": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor hasznos ez az átváltó?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBattery2ChargeLine",
+          "title": "Powerbanki",
+          "description": "Porównaj pojemności: 20 000 mAh × 3,7 V = 74 Wh."
+        },
+        {
+          "icon": "RiFlightTakeoffLine",
+          "title": "Przepisy lotnicze",
+          "description": "Limit 100 Wh w samolocie – ile to mAh?"
+        },
+        {
+          "icon": "RiLaptopLine",
+          "title": "Laptopy",
+          "description": "Bateria laptopa: 56 Wh. Ile godzin pracy?"
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Műszaki alkalmazás",
+          "description": "Baterie LiPo: mAh × V = Wh energii lotu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt az átváltót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "Minden számítás helyben, a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Azonnali eredmények",
+          "description": "Az eredmény azonnal frissül gépelés közben – nem kell semmilyen gombra kattintani."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kétirányú átváltás",
+          "description": "A Megfordítás gomb segítségével egy kattintással válthat irányt."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencia táblázat",
+          "description": "Kész táblázat gyakran átváltott értékekkel és kontextuális leírásokkal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az átváltás?",
+      "html": "<p class=\"text-mid mb-4\">Energy (Wh) = Capacity (Ah) × Voltage (V). Therefore: mAh = Wh × 1,000 / V, and Wh = mAh × V / 1,000.</p><p class=\"text-mid mb-4\">Example: 100 Wh battery at 3.7V = 100 × 1,000 / 3.7 = 27,027 mAh.</p><p class=\"text-mid\">The voltage matters! The same Wh rating gives different mAh at different voltages. Always specify voltage for accurate conversion.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gyakorlati tippek",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Airline limit: 100 Wh. At 3.7V = 27,027 mAh. Most 20,000 mAh power banks = 74 Wh (allowed).</li><li>Phone battery: 5,000 mAh × 3.7V = 18.5 Wh.</li><li>Laptop: MacBook Air = 52.6 Wh. MacBook Pro 16\" = 99.6 Wh.</li><li>18650 cell: 3,000 mAh × 3.7V = 11.1 Wh. Tesla uses thousands of these.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Wh vs mAh – összehasonlítás",
+      "featureLabel": "Tulajdonság",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Watt-hour (Wh)"
+        },
+        {
+          "id": "unit2",
+          "name": "Milliamp-hour (mAh)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Measures",
+          "values": {
+            "unit1": "Energy",
+            "unit2": "Charge"
+          }
+        },
+        {
+          "name": "Includes voltage",
+          "values": {
+            "unit1": "Yes",
+            "unit2": "No (needs voltage)"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "Laptops, EVs",
+            "unit2": "Phones, power banks"
+          }
+        },
+        {
+          "name": "Comparison",
+          "values": {
+            "unit1": "Direct at any voltage",
+            "unit2": "Only at same voltage"
+          }
+        },
+        {
+          "name": "Airline limit",
+          "values": {
+            "unit1": "100 Wh",
+            "unit2": "~27,000 mAh at 3.7V"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hogyan számítom át Wh in mAh um?",
+          "answer": "mAh = Wh × 1.000 / Spannung. Beispiel: 100 Wh bei 3,7V = 27.027 mAh."
+        },
+        {
+          "question": "Mi az a das Flug-Powerbank-Limit?",
+          "answer": "Die meisten Fluglinien erlauben Powerbanks bis 100 Wh. Bei 3,7V = ~27.000 mAh."
+        },
+        {
+          "question": "Ist mAh oder Wh besser zum Vergleichen?",
+          "answer": "Wh ist genauer, weil es die Spannung berücksichtigt."
+        },
+        {
+          "question": "Helyben történnek a számítások?",
+          "answer": "Igen. Minden számítás a böngészőjében történik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Wh mAh-ra – Arteon",
+      "defaultSubject": "Visszajelzés: wh-to-mah"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "További ingyenes eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "toolKey": "ptToPx",
+  "locale": "el",
+  "metadata": {
+    "title": "Pt σε px – μετατροπέας",
+    "description": "Μετατρέψτε σημεία σε pixel και αντίστροφα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-pt-se-px"
+  },
+  "hero": {
+    "title": "Pt σε px",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-pt-se-px",
+      "label": "pt σε px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Pt σε px – μετατροπέας",
+      "alternateName": ["Pt σε px"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε σημεία σε pixel και αντίστροφα.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: Pt σε px?",
+      "html": "<p class=\"text-mid mb-4\">Points (pt) are a typographic unit used in print design: 1 pt = 1/72 inch. Pixels (px) are screen units. At the standard 96 PPI screen resolution: 1 pt = 1.333 px (96/72).</p><p class=\"text-mid mb-4\">This conversion is essential when translating print designs to web, setting CSS font sizes from print specifications, and understanding the relationship between print and screen typography.</p><p class=\"text-mid mb-4\">Common sizes: 12 pt = 16 px (browser default), 10 pt = 13.3 px, 14 pt = 18.7 px, 18 pt = 24 px, 24 pt = 32 px.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Pt σε px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Γραφιστικός σχεδιασμός",
+          "description": "Eksport wielkości czcionek z Figma/Sketch do CSS: 12 pt = 16 px."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Dokumenty",
+          "description": "Konwersja rozmiarów z Word/InDesign na wartości pikselowe."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web ανάπτυξη",
+          "description": "Przeliczanie pt na px przy kodowaniu styli czcionek."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Εκτύπωση",
+          "description": "Dopasowanie wielkości tekstu do wyświetlania na ekranie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">1 point = 1/72 inch. At 96 PPI (standard Windows/web): 1 pt = 96/72 = 1.333 px. At 72 PPI (old Mac): 1 pt = 1 px.</p><p class=\"text-mid mb-4\">The formula: px = pt × PPI / 72. At 96 PPI: px = pt × 1.333.</p><p class=\"text-mid\">CSS defines 1 px as 1/96 of an inch (at 96 DPI). On high-DPI screens, 1 CSS px may be multiple device pixels.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Browser default: 12 pt = 16 px = 1 rem.</li><li>Common conversions: 8 pt = 10.7 px, 10 pt = 13.3 px, 11 pt = 14.7 px, 12 pt = 16 px, 14 pt = 18.7 px.</li><li>Word default body: 11 pt = 14.7 px. Google Docs: 11 pt.</li><li>Minimum readable: 9 pt = 12 px on screen. Print can be smaller (6–7 pt fine print).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Points (pt) vs Pixels (px)",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Points (pt)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pixels (px)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Definition",
+          "values": {
+            "unit1": "1/72 inch",
+            "unit2": "1/96 inch (CSS)"
+          }
+        },
+        {
+          "name": "Used in",
+          "values": {
+            "unit1": "Print, Word, PDF",
+            "unit2": "Web, CSS, screens"
+          }
+        },
+        {
+          "name": "12 pt =",
+          "values": {
+            "unit1": "12 pt",
+            "unit2": "16 px"
+          }
+        },
+        {
+          "name": "Body text",
+          "values": {
+            "unit1": "10–12 pt",
+            "unit2": "14–18 px"
+          }
+        },
+        {
+          "name": "Heading",
+          "values": {
+            "unit1": "18–24 pt",
+            "unit2": "24–32 px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Πόσα Pixel sind 12 pt?",
+          "answer": "12 pt = 16 px bei 96 PPI. Das είναι η τυπική μονάδα-Schriftgröße der Browser."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "pt σε px – Arteon",
+      "defaultSubject": "Feedback: pt-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

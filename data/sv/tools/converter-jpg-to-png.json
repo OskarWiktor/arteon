@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "JPG till PNG-konverterare – JPG PNG",
-    "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/jpg-till-png-konverterare"
   },
   "hero": {
     "title": "JPG till PNG-konverterare",
-    "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertera JPG till PNG", "JPG till PNG konvertering", "Gratis JPG till PNG konverterare"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+      "description": "Konvertera JPG-bilder till förlustfritt PNG. Lokal konvertering i webbläsaren. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["JPG till PNG-konvertering", "Förlustfri PNG-utdata", "Batchkonvertering", "Lokal webbläsarbearbetning", "Ingen filuppladdning krävs"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Konvertera till PNG",
-          "text": "Klicka på konvertera. PNG är förlustfritt — ingen kvalitetsinställning behövs."
+          "text": "Klicka på konvertera. PNG är förlustfritt - ingen kvalitetsinställning behövs."
         },
         {
           "name": "Ladda ner PNG-filer",
@@ -338,7 +338,7 @@
     {
       "type": "contactForm",
       "title": "Hjälp oss förbättra våra verktyg",
-      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande — vi svarar inom 24 timmar.",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skicka ett meddelande - vi svarar inom 24 timmar.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "JPG till PNG-konverterare – Arteon",
       "defaultSubject": "Feedback: JPG till PNG-konverterare"

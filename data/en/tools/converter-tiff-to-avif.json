@@ -2,7 +2,7 @@
   "toolKey": "tiffToAvif",
   "locale": "en",
   "metadata": {
-    "title": "TIFF to AVIF converter — TIFF AVIF",
+    "title": "TIFF to AVIF converter - TIFF AVIF",
     "description": "Convert TIFF files to modern AVIF. Massive file size reduction. Runs entirely in your browser. No server uploads, no registration required.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/tiff-to-avif-converter"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Set quality",
-          "text": "Adjust the AVIF quality slider — lower values produce smaller files."
+          "text": "Adjust the AVIF quality slider - lower values produce smaller files."
         },
         {
           "position": 3,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download the AVIF files — individually or all at once."
+          "text": "Download the AVIF files - individually or all at once."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert TIFF to AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is a lossless image format supporting millions colors. It is widely used for print and archival with browser support in limited.</p><p class=\"text-mid mb-4\">Converting TIFF to AVIF (AV1 Image File Format) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">AVIF supports alpha transparency, preserving any transparent areas in your image. AVIF supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many TIFF files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">TIFF is the standard for professional imaging — used in print production, medical imaging, and archival storage. However, TIFF files are extremely large and cannot be displayed in web browsers. AVIF (AV1 Image File Format) delivers exceptional compression: files are 60–80% smaller than TIFF while maintaining excellent visual quality.</p><p class=\"text-mid mb-4\">AVIF supports millions of colors, alpha transparency, HDR content, and both lossy and lossless compression. It is supported in Chrome 85+, Firefox 93+, Safari 16.4+, and Edge 121+. Converting TIFF to AVIF is essential when preparing professional images for web publishing.</p><p class=\"text-mid mb-4\">Note that AVIF uses lossy compression by default — some pixel-level detail may differ from the original TIFF. For archival purposes, keep the original TIFF. For web use, AVIF provides the best file-size-to-quality ratio available today.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "TIFF to AVIF conversion",
       "variant": "right"
@@ -109,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert TIFF to AVIF to significantly reduce page load times and improve Core Web Vitals scores."
+          "description": "TIFF files are extremely large and cannot be displayed in browsers. Converting to AVIF reduces file size by 60–80% and creates web-ready images. Essential for publishing professional photos online."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "AVIF files are compatible with most modern platforms. Convert to AVIF for smaller attachments that stay within email size limits."
+          "description": "TIFF files are too large for email (often 20–50 MB). Converting to AVIF creates compact files that are easy to share via email and messaging apps while maintaining excellent visual quality."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify may require specific formats – converting to AVIF ensures your product images meet their requirements."
+          "description": "Professional product photography is often captured in TIFF for maximum quality. Converting to AVIF for web listings produces the smallest possible files with the best quality-to-size ratio available."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "AVIF provides a modern and efficient format for document image storage."
+          "description": "AVIF provides efficient long-term storage for large image collections. Converting TIFF archives to AVIF can reduce storage requirements by 80% or more while maintaining excellent visual quality."
         }
       ]
     },
@@ -258,6 +258,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting TIFF to AVIF?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) – a good balance for most use cases: web publishing, blogs, articles. The visual difference compared to the original is virtually unnoticeable.</strong></li><li><strong>85–90% – for high-quality product photography, portfolios, and galleries where every detail matters.</strong></li><li><strong>60–70% – when minimizing file size is the priority, e.g. thumbnails or preview images.</strong></li></ul><p class=\"text-mid mt-3\">TIFF files are typically very large (20–50 MB). At 80% quality, AVIF reduces them to 200–500 KB with minimal visible quality loss — a 95%+ reduction in file size.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting TIFF to AVIF?",
+      "html": "<p class=\"text-mid mb-4\">TIFF files are uncompressed or use lossless compression, making them extremely large. AVIF provides dramatic savings:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo (TIFF)</p><p class=\"text-light text-sm\">25 MB → 450 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~98%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Scanned document</p><p class=\"text-light text-sm\">15 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~99%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo</p><p class=\"text-light text-sm\">8 MB → 250 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~97%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

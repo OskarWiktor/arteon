@@ -28,7 +28,7 @@
       "alternateName": ["Zamiana SVG na WebP online", "Konwersja SVG do WebP", "SVG to WebP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter SVG na WebP online. Zamień grafikę wektorową SVG na lekki rastrowy WebP w przeglądarce — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter SVG na WebP online. Zamień grafikę wektorową SVG na lekki rastrowy WebP w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": [
         "Konwersja SVG do WebP",
         "Regulacja poziomu jakości (60–95%)",
@@ -64,7 +64,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować SVG na WebP?",
-      "html": "<p class=\"text-mid mb-4\">SVG (Scalable Vector Graphics) to format wektorowy, który skaluje się bez utraty jakości. Jest idealny do ikon, logotypów i prostych grafik. Jednak nie wszystkie platformy i aplikacje obsługują SVG — na przykład większość platform społecznościowych (Facebook, Instagram, LinkedIn) wymaga formatów rastrowych.</p><p class=\"text-mid mb-4\">WebP to nowoczesny format rastrowy opracowany przez Google, który oferuje kompresję stratną i bezstratną. Pliki WebP są średnio o 25–35% mniejsze niż JPG przy porównywalnej jakości wizualnej. Format obsługuje przezroczystość (kanał alfa), co czyni go dobrą alternatywą zarówno dla JPG, jak i PNG.</p><p class=\"text-mid\">Konwersja SVG na WebP ma sens, gdy potrzebujesz rastrowej wersji grafiki wektorowej — na przykład do postów w mediach społecznościowych, miniatur na stronie internetowej lub obrazów w newsletterach.</p>",
+      "html": "<p class=\"text-mid mb-4\">SVG (Scalable Vector Graphics) to format wektorowy, który skaluje się bez utraty jakości. Jest idealny do ikon, logotypów i prostych grafik. Jednak nie wszystkie platformy i aplikacje obsługują SVG - na przykład większość platform społecznościowych (Facebook, Instagram, LinkedIn) wymaga formatów rastrowych.</p><p class=\"text-mid mb-4\">WebP to nowoczesny format rastrowy opracowany przez Google, który oferuje kompresję stratną i bezstratną. Pliki WebP są średnio o 25–35% mniejsze niż JPG przy porównywalnej jakości wizualnej. Format obsługuje przezroczystość (kanał alfa), co czyni go dobrą alternatywą zarówno dla JPG, jak i PNG.</p><p class=\"text-mid\">Konwersja SVG na WebP ma sens, gdy potrzebujesz rastrowej wersji grafiki wektorowej - na przykład do postów w mediach społecznościowych, miniatur na stronie internetowej lub obrazów w newsletterach.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter SVG na WebP – Arteon"
     },
@@ -139,7 +139,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
+          "description": "Pliki nie opuszczają komputera - cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -242,8 +242,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji SVG na WebP?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem SVG a wynikowym WebP jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji SVG na WebP?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem SVG a wynikowym WebP jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -261,7 +261,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów SVG na WebP zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów SVG na WebP zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -291,7 +291,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików SVG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików SVG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -326,15 +326,15 @@
         },
         {
           "question": "Czy mogę konwertować wiele plików naraz?",
-          "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie — nie ma limitu. Wszystkie zostaną przekonwertowane, a potem można pobrać je pojedynczo lub wszystkie naraz."
+          "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie - nie ma limitu. Wszystkie zostaną przekonwertowane, a potem można pobrać je pojedynczo lub wszystkie naraz."
         },
         {
           "question": "Czy konwersja SVG na WebP jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików SVG jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Jaką rozdzielczość będzie miał wynikowy WebP?",
+          "answer": "Rozdzielczość zależy od wymiarów ustawionych w pliku SVG (atrybuty width/height lub viewBox). Konwerter renderuje SVG w rozdzielczości przeglądarki i zapisuje wynik jako WebP."
         }
       ]
     },

@@ -1,0 +1,289 @@
+{
+  "toolKey": "emToPx",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter em na px – przelicz jednostki CSS",
+    "description": "Przelicz em na piksele i odwrotnie z regulowanym font-size rodzica. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-em-na-px"
+  },
+  "hero": {
+    "title": "Przelicz em na piksele",
+    "description": "Ten konwerter przelicza jednostki em na piksele i odwrotnie. Możesz ustawić font-size elementu nadrzędnego, a wynik pojawi się natychmiast.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-em-na-px",
+      "label": "em na px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter em na px – przelicz jednostki CSS",
+      "alternateName": ["Przelicznik em na px", "Kalkulator em CSS", "em to pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz em na piksele i odwrotnie z regulowanym font-size rodzica. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera em na px",
+      "description": "Instrukcja użycia: em na px.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Czym jest em i kiedy warto przeliczać na piksele?",
+      "html": "<p class=\"text-mid mb-4\">Jednostka <code>em</code> w CSS odnosi się do wielkości czcionki elementu nadrzędnego. Jeśli rodzic ma font-size 16 px, to 1 em = 16 px, 1,5 em = 24 px.</p><p class=\"text-mid mb-4\">W odróżnieniu od <code>rem</code>, wartość <code>em</code> zmienia się w zależności od kontekstu. Jeśli nagłówek ma font-size 24 px, to padding 0,5 em na tym nagłówku = 12 px, a nie 8 px.</p><p class=\"text-mid mb-4\">Jednostka em jest przydatna tam, gdzie wymiar ma skalować się proporcjonalnie do tekstu – np. padding wokół przycisku, odstępy w typografii, line-height.</p><p class=\"text-mid\">Problem z em pojawia się przy zagnieżdżaniu elementów – efekt kumulacji (1,2 em × 1,2 em × 1,2 em…) może prowadzić do nieoczekiwanych rozmiarów. Dlatego dla font-size lepiej używać rem.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "em na px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTextSpacing",
+          "title": "Typografia",
+          "description": "Line-height 1,5 em = 150% rozmiaru czcionki rodzica."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Przyciski",
+          "description": "Padding w em skaluje się z rozmiarem tekstu przycisku."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Komponenty",
+          "description": "Wymiary proporcjonalne do tekstu w komponentach UI."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "CSS media queries",
+          "description": "Breakpointy w em są odporne na zmianę bazowego font-size."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja em na px?",
+      "html": "<p class=\"text-mid mb-4\">Jednostka em w CSS jest relatywna i odnosi się do rozmiaru czcionki elementu nadrzędnego (rodzica). Jeśli element nadrzędny ma rozmiar czcionki 16 px (domyślna wartość przeglądarki), to 1 em = 16 px. Aby przeliczyć em na piksele, wystarczy pomnożyć wartość em przez rozmiar czcionki rodzica.</p><p class=\"text-mid mb-4\">Na przykład jeśli rodzic ma font-size 20 px, to 1,5 em = 30 px. Kluczowa różnica między em a rem polega na tym, że em odnosi się do rodzica, a rem zawsze do elementu głównego (html). Oznacza to, że wartości em mogą się kumulować przy zagnieżdżaniu elementów.</p><p class=\"text-mid\">Jednostka em jest szczególnie przydatna do definiowania paddingów, marginów i odstępów, które powinny być proporcjonalne do rozmiaru tekstu w danym kontekście. Konwerter pozwala ustawić dowolną wartość font-size rodzica.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Używaj em do paddingów i marginów, które mają być proporcjonalne do tekstu.</li><li>Używaj rem do font-size – unikniesz efektu kumulacji.</li><li>Line-height: 1,5 em to standard dla tekstu czytelnego (WCAG).</li><li>Media queries: em jest bardziej niezawodne niż px (respektuje zoom przeglądarki).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "em vs px – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "em"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Typ",
+          "values": {
+            "unit1": "Relatywna (rodzic)",
+            "unit2": "Absolutna"
+          }
+        },
+        {
+          "name": "Odniesienie",
+          "values": {
+            "unit1": "font-size rodzica",
+            "unit2": "Stała wartość"
+          }
+        },
+        {
+          "name": "Zagnieżdżanie",
+          "values": {
+            "unit1": "Kumuluje się",
+            "unit2": "Brak efektu"
+          }
+        },
+        {
+          "name": "Zastosowanie",
+          "values": {
+            "unit1": "Padding, margin, line-height",
+            "unit2": "Border, shadow, stałe wymiary"
+          }
+        },
+        {
+          "name": "Media queries",
+          "values": {
+            "unit1": "Respektuje zoom",
+            "unit2": "Nie respektuje zoom"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile pikseli ma 1 em?",
+          "answer": "Zależy od font-size rodzica. Przy domyślnym 16 px: 1 em = 16 px."
+        },
+        {
+          "question": "Jaka jest różnica między em a rem?",
+          "answer": "Em odnosi się do font-size rodzica (zmienia się w kontekście). Rem odnosi się do font-size elementu <code>&lt;html&gt;</code> (stała wartość)."
+        },
+        {
+          "question": "Kiedy używać em zamiast rem?",
+          "answer": "Em sprawdza się przy padding i margin, które powinny skalować się z rozmiarem tekstu elementu. Rem jest lepszy do font-size."
+        },
+        {
+          "question": "Co to jest efekt kumulacji em?",
+          "answer": "Jeśli zagnieżdżone elementy używają font-size w em, każdy kolejny mnoży wartość. Np. 3 poziomy × 1,2 em = 1,728-krotność oryginalnego rozmiaru."
+        },
+        {
+          "question": "Czy em jest lepsze od px w CSS?",
+          "answer": "Em jest elastyczniejsze – skaluje się z tekstem. Piksele są przewidywalne. Wybór zależy od kontekstu."
+        },
+        {
+          "question": "Jaki line-height ustawiać w em?",
+          "answer": "1,4–1,6 em (lub unitless 1.4–1.6) to zalecany zakres dla tekstu ciągłego. WCAG zaleca minimum 1,5."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "em na px – Arteon",
+      "defaultSubject": "Feedback: em na px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

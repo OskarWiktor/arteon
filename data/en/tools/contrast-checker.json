@@ -327,7 +327,7 @@
     {
       "type": "sectionInfo",
       "title": "International accessibility laws that require color contrast",
-      "html": "<p class=\"text-mid mb-4\">Color contrast is not just a best practice — it is a legal requirement in many countries. Here are the key regulations that reference WCAG contrast standards:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>European Union — Web Accessibility Directive (2016/2102)</strong>: All public sector websites and apps must meet WCAG 2.1 Level AA. The <a href=\"https://ec.europa.eu/social/main.jsp?catId=1202\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">European Accessibility Act (2019/882)</a> extends this to private sector products and services from June 2025.</li><li><strong>United States — ADA &amp; Section 508</strong>: The Americans with Disabilities Act (ADA) and Section 508 of the Rehabilitation Act require federal agencies and organizations receiving federal funding to meet WCAG 2.0 AA standards. Courts have increasingly applied ADA requirements to commercial websites.</li><li><strong>United Kingdom — Equality Act 2010</strong>: Public sector bodies must meet WCAG 2.1 AA under the <a href=\"https://www.legislation.gov.uk/uksi/2018/952/contents/made\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Public Sector Bodies Accessibility Regulations 2018</a>. The Equality Act also covers private sector services.</li><li><strong>Canada — Accessible Canada Act (2019)</strong>: Federal organizations must ensure digital accessibility. Ontario's AODA requires WCAG 2.0 AA compliance for all public and large private organizations.</li><li><strong>Australia — Disability Discrimination Act (1992)</strong>: Australian courts have ruled that websites must be accessible, referencing WCAG standards in multiple landmark cases.</li><li><strong>Japan — JIS X 8341-3</strong>: Japan's accessibility standard is based on WCAG 2.0 and applies to government and public-facing websites.</li></ul><p class=\"text-mid mt-3\">Regardless of your location, meeting WCAG 2.1 Level AA contrast requirements protects your organization from legal risk and ensures your content reaches the widest possible audience.</p>"
+      "html": "<p class=\"text-mid mb-4\">Color contrast is not just a best practice - it is a legal requirement in many countries. Here are the key regulations that reference WCAG contrast standards:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>European Union - Web Accessibility Directive (2016/2102)</strong>: All public sector websites and apps must meet WCAG 2.1 Level AA. The <a href=\"https://ec.europa.eu/social/main.jsp?catId=1202\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">European Accessibility Act (2019/882)</a> extends this to private sector products and services from June 2025.</li><li><strong>United States - ADA &amp; Section 508</strong>: The Americans with Disabilities Act (ADA) and Section 508 of the Rehabilitation Act require federal agencies and organizations receiving federal funding to meet WCAG 2.0 AA standards. Courts have increasingly applied ADA requirements to commercial websites.</li><li><strong>United Kingdom - Equality Act 2010</strong>: Public sector bodies must meet WCAG 2.1 AA under the <a href=\"https://www.legislation.gov.uk/uksi/2018/952/contents/made\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Public Sector Bodies Accessibility Regulations 2018</a>. The Equality Act also covers private sector services.</li><li><strong>Canada - Accessible Canada Act (2019)</strong>: Federal organizations must ensure digital accessibility. Ontario's AODA requires WCAG 2.0 AA compliance for all public and large private organizations.</li><li><strong>Australia - Disability Discrimination Act (1992)</strong>: Australian courts have ruled that websites must be accessible, referencing WCAG standards in multiple landmark cases.</li><li><strong>Japan - JIS X 8341-3</strong>: Japan's accessibility standard is based on WCAG 2.0 and applies to government and public-facing websites.</li></ul><p class=\"text-mid mt-3\">Regardless of your location, meeting WCAG 2.1 Level AA contrast requirements protects your organization from legal risk and ensures your content reaches the widest possible audience.</p>"
     },
     {
       "type": "gap",
@@ -336,7 +336,7 @@
     {
       "type": "sectionInfo",
       "title": "How the contrast ratio is calculated",
-      "html": "<p class=\"text-mid mb-4\">The contrast ratio uses relative luminance — how bright a color appears to the human eye. The WCAG 2.1 formula is:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">(L1 + 0.05) / (L2 + 0.05)</code></p><p class=\"text-mid mb-4\">L1 is the luminance of the lighter color, L2 of the darker. Luminance is derived by converting sRGB to linear light, then weighting channels: 0.2126 × R + 0.7152 × G + 0.0722 × B.</p><p class=\"text-mid\">The result ranges from 1:1 (identical) to 21:1 (black on white). This removes subjectivity — the ratio stays the same regardless of monitor, lighting, or personal vision.</p>"
+      "html": "<p class=\"text-mid mb-4\">The contrast ratio uses relative luminance - how bright a color appears to the human eye. The WCAG 2.1 formula is:</p><p class=\"text-mid mb-4\"><code class=\"rounded bg-black/5 px-2 py-1\">(L1 + 0.05) / (L2 + 0.05)</code></p><p class=\"text-mid mb-4\">L1 is the luminance of the lighter color, L2 of the darker. Luminance is derived by converting sRGB to linear light, then weighting channels: 0.2126 × R + 0.7152 × G + 0.0722 × B.</p><p class=\"text-mid\">The result ranges from 1:1 (identical) to 21:1 (black on white). This removes subjectivity - the ratio stays the same regardless of monitor, lighting, or personal vision.</p>"
     },
     {
       "type": "gap",
@@ -360,7 +360,7 @@
         {
           "icon": "RiPaletteLine",
           "title": "Light gray text on white",
-          "description": "Gray #999 on white #fff gives only 2.8:1 — well below 4.5:1. Use at least #767676 for AA on white backgrounds."
+          "description": "Gray #999 on white #fff gives only 2.8:1 - well below 4.5:1. Use at least #767676 for AA on white backgrounds."
         },
         {
           "icon": "RiImageLine",
@@ -476,15 +476,15 @@
         },
         {
           "question": "Does this tool work for dark mode designs?",
-          "answer": "Yes. The tool checks the contrast ratio between any two colors regardless of which is lighter. For dark mode, you would typically enter a light text color and a dark background color. The same WCAG thresholds apply — 4.5:1 for normal text (AA) and 7:1 (AAA)."
+          "answer": "Yes. The tool checks the contrast ratio between any two colors regardless of which is lighter. For dark mode, you would typically enter a light text color and a dark background color. The same WCAG thresholds apply - 4.5:1 for normal text (AA) and 7:1 (AAA)."
         },
         {
           "question": "What is a safe minimum text color on a white background?",
-          "answer": "The darkest gray that still passes WCAG AA on pure white (#ffffff) is #767676, which gives exactly 4.54:1. Anything lighter — for example #999999 at 2.85:1 — fails. For AAA compliance (7:1) you need at least #595959."
+          "answer": "The darkest gray that still passes WCAG AA on pure white (#ffffff) is #767676, which gives exactly 4.54:1. Anything lighter - for example #999999 at 2.85:1 - fails. For AAA compliance (7:1) you need at least #595959."
         },
         {
           "question": "Does the European Accessibility Act (EAA) affect my website?",
-          "answer": "If you sell products or services to consumers in the EU, yes. The EAA (Directive 2019/882) took effect in June 2025 and extends accessibility obligations beyond public sector to private e-commerce, banking, transport, and media. It references the EN 301 549 standard, which maps to WCAG 2.1 AA — including the 4.5:1 and 3:1 contrast thresholds checked by this tool."
+          "answer": "If you sell products or services to consumers in the EU, yes. The EAA (Directive 2019/882) took effect in June 2025 and extends accessibility obligations beyond public sector to private e-commerce, banking, transport, and media. It references the EN 301 549 standard, which maps to WCAG 2.1 AA - including the 4.5:1 and 3:1 contrast thresholds checked by this tool."
         },
         {
           "question": "How do I test contrast for text over a gradient or image?",
@@ -492,7 +492,7 @@
         },
         {
           "question": "What is APCA and should I use it instead of WCAG contrast?",
-          "answer": "APCA (Advanced Perceptual Contrast Algorithm) is a proposed replacement for the current WCAG contrast formula, developed as part of the WCAG 3.0 draft. It considers font size, weight, and text polarity for a more perceptually accurate score. However, WCAG 3.0 is not yet a W3C Recommendation and no law currently references APCA. Until it is finalized, use the WCAG 2.1 formula — which is what this tool calculates."
+          "answer": "APCA (Advanced Perceptual Contrast Algorithm) is a proposed replacement for the current WCAG contrast formula, developed as part of the WCAG 3.0 draft. It considers font size, weight, and text polarity for a more perceptually accurate score. However, WCAG 3.0 is not yet a W3C Recommendation and no law currently references APCA. Until it is finalized, use the WCAG 2.1 formula - which is what this tool calculates."
         }
       ]
     },

@@ -140,7 +140,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az olvashatósági értékelés",
-      "html": "<p class=\"text-mid mb-4\">Az eszköz az olvashatósági pontszámot az átlagos mondathossz és az átlagos szótagszám alapján számítja. Az eredmény 0–100 skálán jelenik meg:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>80–100</strong> — Nagyon könnyű. Rövid mondatok, hétköznapi szavak.</li><li><strong>60–79</strong> — Könnyű. Társalgási nyelv.</li><li><strong>40–59</strong> — Közepes. Általános üzleti és újságírói szövegek.</li><li><strong>20–39</strong> — Nehéz. Hosszú mondatok, szaknyelv.</li><li><strong>0–19</strong> — Nagyon nehéz. Tudományos és jogi szövegek.</li></ul><p class=\"text-mid mt-3\">A magyar nyelv agglutináló jellegét figyelembe véve az eszköz csökkentett szótagegyütthatójú Flesch-adaptációt használ. Webes tartalmakhoz magyarul az 50–70 közötti pontszám a jó célérték.</p>"
+      "html": "<p class=\"text-mid mb-4\">Az eszköz az olvashatósági pontszámot az átlagos mondathossz és az átlagos szótagszám alapján számítja. Az eredmény 0–100 skálán jelenik meg:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>80–100</strong> - Nagyon könnyű. Rövid mondatok, hétköznapi szavak.</li><li><strong>60–79</strong> - Könnyű. Társalgási nyelv.</li><li><strong>40–59</strong> - Közepes. Általános üzleti és újságírói szövegek.</li><li><strong>20–39</strong> - Nehéz. Hosszú mondatok, szaknyelv.</li><li><strong>0–19</strong> - Nagyon nehéz. Tudományos és jogi szövegek.</li></ul><p class=\"text-mid mt-3\">A magyar nyelv agglutináló jellegét figyelembe véve az eszköz csökkentett szótagegyütthatójú Flesch-adaptációt használ. Webes tartalmakhoz magyarul az 50–70 közötti pontszám a jó célérték.</p>"
     },
     {
       "type": "gap",
@@ -170,7 +170,7 @@
         {
           "icon": "RiChatQuoteLine",
           "title": "Mondatok",
-          "description": "A mondatok száma a szövegben. Segít felmérni a bonyolultságot és olvashatóságot — a rövidebb mondatok könnyebben befogadhatók."
+          "description": "A mondatok száma a szövegben. Segít felmérni a bonyolultságot és olvashatóságot - a rövidebb mondatok könnyebben befogadhatók."
         },
         {
           "icon": "RiParagraph",
@@ -185,7 +185,7 @@
         {
           "icon": "RiRulerLine",
           "title": "Átlagos szóhossz",
-          "description": "A karakterek átlagos száma szavanként. A szöveg bonyolultságának mutatója — a technikai szövegek hosszabb szavakat tartalmaznak."
+          "description": "A karakterek átlagos száma szavanként. A szöveg bonyolultságának mutatója - a technikai szövegek hosszabb szavakat tartalmaznak."
         },
         {
           "icon": "RiTimeLine",
@@ -329,7 +329,7 @@
     {
       "type": "sectionInfo",
       "title": "Miért fontos az olvashatóság a SEO szempontjából",
-      "html": "<p class=\"text-mid mb-4\">A keresőmotorok a felhasználói szándékot kielégítő tartalmakat részesítik előnyben. Az olvasható szöveg közvetlenül befolyásolja a kulcsfontosságú elköteleződési mutatókat:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Oldalon töltött idő</strong> — a látogatók tovább maradnak a könnyen olvasható oldalakon. A Google a hosszabb látogatásokat minőségi jelzésként értelmezi.</li><li><strong>Visszafordulási arány</strong> — a sűrű, nehezen olvasható szöveg elriasztja a látogatókat. Egy 30 alatti Flesch-pontszám általános oldalon gyakran magas visszafordulási aránnyal jár együtt.</li><li><strong>Kiemelt részletek</strong> — a Google világos, tömör válaszokat választ a kiemelt részletekhez. A rövidebb mondatok és a közvetlen nyelvezet növeli a kiválasztás esélyét.</li><li><strong>Mobil olvashatóság</strong> — kis képernyőkön a hosszú mondatok és a komplex szókincs még nehezebben követhető. A 60+ pontos érték javítja a mobil élményt.</li></ul><p class=\"text-mid mt-3\">Egy jó cél webes tartalomhoz az 50–60 közötti Flesch-pontszám — elég világos a legtöbb olvasó számára, elég részletes a szakértelem közvetítéséhez.</p>"
+      "html": "<p class=\"text-mid mb-4\">A keresőmotorok a felhasználói szándékot kielégítő tartalmakat részesítik előnyben. Az olvasható szöveg közvetlenül befolyásolja a kulcsfontosságú elköteleződési mutatókat:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Oldalon töltött idő</strong> - a látogatók tovább maradnak a könnyen olvasható oldalakon. A Google a hosszabb látogatásokat minőségi jelzésként értelmezi.</li><li><strong>Visszafordulási arány</strong> - a sűrű, nehezen olvasható szöveg elriasztja a látogatókat. Egy 30 alatti Flesch-pontszám általános oldalon gyakran magas visszafordulási aránnyal jár együtt.</li><li><strong>Kiemelt részletek</strong> - a Google világos, tömör válaszokat választ a kiemelt részletekhez. A rövidebb mondatok és a közvetlen nyelvezet növeli a kiválasztás esélyét.</li><li><strong>Mobil olvashatóság</strong> - kis képernyőkön a hosszú mondatok és a komplex szókincs még nehezebben követhető. A 60+ pontos érték javítja a mobil élményt.</li></ul><p class=\"text-mid mt-3\">Egy jó cél webes tartalomhoz az 50–60 közötti Flesch-pontszám - elég világos a legtöbb olvasó számára, elég részletes a szakértelem közvetítéséhez.</p>"
     },
     {
       "type": "gap",
@@ -348,7 +348,7 @@
         {
           "icon": "RiTextWrap",
           "title": "10 formázó eszköz",
-          "description": "Betűméret-átalakítás, szóközök, üres sorok, ismétlődések eltávolítása és rendezés — további szoftver telepítése nélkül."
+          "description": "Betűméret-átalakítás, szóközök, üres sorok, ismétlődések eltávolítása és rendezés - további szoftver telepítése nélkül."
         },
         {
           "icon": "RiUserLine",
@@ -379,7 +379,7 @@
     {
       "type": "sectionInfo",
       "title": "Ideális szöveghossz magyar weboldalakhoz",
-      "html": "<p class=\"text-mid mb-4\">Magyar nyelvű blogbejegyzések a keresőkben 1 200–2 000 szó hosszúságnál teljesítenek a legjobban. Rövidebb cikkek (600–1 000 szó) praktikus útmutatókhoz és konkrét kérdésekre adott válaszokhoz működnek. Az 500 szó alatti cikkek ritkán érnek el magas pozíciókat, kivéve ha nagyon specifikus keresést céloznak.</p><p class=\"text-mid mb-4\">Terméklírások magyar webáruházakban 150–300 szó tartalmúak legyenek. A Jófogás.hu hirdetéscímeknek 60 karakteres korlátja van. Kategórialeírások 200–400 szóval segítik a keresőmotorokat a tematikus besorolásban. Az eMAG.hu-n és más magyar platformokon a részletes termékleírások versenyelőnyt jelentenek.</p><p class=\"text-mid\">Szolgáltatási oldalak (fogorvosi rendelő, ügyvédi iroda, építőipari vállalkozás) 500–800 szót igényelnek konkrét információkkal: szolgáltatási kör, működési terület, elérhetőség. A szószám önmagában nem minőségi mutató — egy tömör, 600 szavas szöveg hasznos információkkal felülmúl egy felfújt, 2 000 szavas szöveget hozzáadott érték nélkül.</p>"
+      "html": "<p class=\"text-mid mb-4\">Magyar nyelvű blogbejegyzések a keresőkben 1 200–2 000 szó hosszúságnál teljesítenek a legjobban. Rövidebb cikkek (600–1 000 szó) praktikus útmutatókhoz és konkrét kérdésekre adott válaszokhoz működnek. Az 500 szó alatti cikkek ritkán érnek el magas pozíciókat, kivéve ha nagyon specifikus keresést céloznak.</p><p class=\"text-mid mb-4\">Terméklírások magyar webáruházakban 150–300 szó tartalmúak legyenek. A Jófogás.hu hirdetéscímeknek 60 karakteres korlátja van. Kategórialeírások 200–400 szóval segítik a keresőmotorokat a tematikus besorolásban. Az eMAG.hu-n és más magyar platformokon a részletes termékleírások versenyelőnyt jelentenek.</p><p class=\"text-mid\">Szolgáltatási oldalak (fogorvosi rendelő, ügyvédi iroda, építőipari vállalkozás) 500–800 szót igényelnek konkrét információkkal: szolgáltatási kör, működési terület, elérhetőség. A szószám önmagában nem minőségi mutató - egy tömör, 600 szavas szöveg hasznos információkkal felülmúl egy felfújt, 2 000 szavas szöveget hozzáadott érték nélkül.</p>"
     },
     {
       "type": "gap",
@@ -388,7 +388,7 @@
     {
       "type": "sectionInfo",
       "title": "Normáloldal és fordítási normák Magyarországon",
-      "html": "<p class=\"text-mid mb-4\">A fordítóirodák Magyarországon normáloldalanként vagy szavanként számláznak. Egy normáloldal 1 800 karakternek felel meg szóközökkel (körülbelül 250–300 szó). Árajánlatkérés előtt illessze be a szöveget a számlálóba és ellenőrizze a karakterszámot szóközökkel a költség becsléséhez. Egy 18 000 karakteres szöveg szóközökkel pontosan 10 normáloldal.</p><p class=\"text-mid mb-4\">Magyar kiadók a kéziratokat normáloldalakban vagy szószámban mérik. Szerkesztők és lektorok a karakterszámlálót használják a kézirat terjedelmének gyors felméréséhez, mielőtt árat ajánlanának. A normáloldal a szerkesztői és lektori munka szokásos egysége is Magyarországon.</p><p class=\"text-mid\">Magyar egyetemek a szakdolgozatok követelményeit szószámban vagy karakterszámban adják meg. Egy alapszakos szakdolgozat általában 30 000–50 000 karaktert igényel szóközökkel, egy mesterszakos diplomamunka 50 000–80 000 karaktert, egy doktori értekezés pedig 100 000 karakter fölött van. A követelmények egyetemenként és karonként eltérnek — mindig ellenőrizze saját képzési programjának tanulmányi és vizsgaszabályzatát.</p>"
+      "html": "<p class=\"text-mid mb-4\">A fordítóirodák Magyarországon normáloldalanként vagy szavanként számláznak. Egy normáloldal 1 800 karakternek felel meg szóközökkel (körülbelül 250–300 szó). Árajánlatkérés előtt illessze be a szöveget a számlálóba és ellenőrizze a karakterszámot szóközökkel a költség becsléséhez. Egy 18 000 karakteres szöveg szóközökkel pontosan 10 normáloldal.</p><p class=\"text-mid mb-4\">Magyar kiadók a kéziratokat normáloldalakban vagy szószámban mérik. Szerkesztők és lektorok a karakterszámlálót használják a kézirat terjedelmének gyors felméréséhez, mielőtt árat ajánlanának. A normáloldal a szerkesztői és lektori munka szokásos egysége is Magyarországon.</p><p class=\"text-mid\">Magyar egyetemek a szakdolgozatok követelményeit szószámban vagy karakterszámban adják meg. Egy alapszakos szakdolgozat általában 30 000–50 000 karaktert igényel szóközökkel, egy mesterszakos diplomamunka 50 000–80 000 karaktert, egy doktori értekezés pedig 100 000 karakter fölött van. A követelmények egyetemenként és karonként eltérnek - mindig ellenőrizze saját képzési programjának tanulmányi és vizsgaszabályzatát.</p>"
     },
     {
       "type": "gap",
@@ -396,8 +396,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Olvashatóság magyarul — agglutináló nyelv hosszú ragozott szavakkal",
-      "html": "<p class=\"text-mid mb-4\">A magyar agglutináló nyelv, ahol a szavakat toldalékok (ragok, jelek, képzők) hozzáfűzésével képezik. A &quot;keresőmotor-optimalizálás&quot; 26 karakter hosszú, és még hosszabb összetett szavak is előfordulnak a hétköznapi nyelvben. Ez a magyar átlagos szóhosszúságát 7–8 karakterre emeli — jóval több, mint az angol 4–5 karakter. A Flesch-képlet ezért a magyar szövegeknek természetesen alacsonyabb pontszámot ad, mint azonos nehézségű angol szövegeknek.</p><p class=\"text-mid mb-4\">Magyar webes tartalmakhoz jó célérték a Flesch-pontszám 45–55. Rövid mondatok (15–20 szó) és rövid bekezdések (3–4 mondat) jelentősen javítják az olvashatóságot képernyőkön. A 25 szónál hosszabb mondatokat érdemes kettéosztani.</p><p class=\"text-mid\">Az egyedi szavak aránya az összszószámhoz képest jelzi a szókincs gazdagságát. Egy 1 000 szavas szövegben 400–500 egyedi szó változatos szókincsre utal. Ha az arány 30% alá csökken, a szöveg ismétlődőnek tűnhet — ilyenkor érdemes szinonimákat használni vagy a mondatokat átfogalmazni az ismétlődés csökkentéséhez.</p>"
+      "title": "Olvashatóság magyarul - agglutináló nyelv hosszú ragozott szavakkal",
+      "html": "<p class=\"text-mid mb-4\">A magyar agglutináló nyelv, ahol a szavakat toldalékok (ragok, jelek, képzők) hozzáfűzésével képezik. A &quot;keresőmotor-optimalizálás&quot; 26 karakter hosszú, és még hosszabb összetett szavak is előfordulnak a hétköznapi nyelvben. Ez a magyar átlagos szóhosszúságát 7–8 karakterre emeli - jóval több, mint az angol 4–5 karakter. A Flesch-képlet ezért a magyar szövegeknek természetesen alacsonyabb pontszámot ad, mint azonos nehézségű angol szövegeknek.</p><p class=\"text-mid mb-4\">Magyar webes tartalmakhoz jó célérték a Flesch-pontszám 45–55. Rövid mondatok (15–20 szó) és rövid bekezdések (3–4 mondat) jelentősen javítják az olvashatóságot képernyőkön. A 25 szónál hosszabb mondatokat érdemes kettéosztani.</p><p class=\"text-mid\">Az egyedi szavak aránya az összszószámhoz képest jelzi a szókincs gazdagságát. Egy 1 000 szavas szövegben 400–500 egyedi szó változatos szókincsre utal. Ha az arány 30% alá csökken, a szöveg ismétlődőnek tűnhet - ilyenkor érdemes szinonimákat használni vagy a mondatokat átfogalmazni az ismétlődés csökkentéséhez.</p>"
     },
     {
       "type": "gap",
@@ -451,7 +451,7 @@
         },
         {
           "question": "Mi a különbség az olvasási idő és a beszédidő között?",
-          "answer": "Az olvasási idő 200 szó/perc sebességgel számol — az átlagos csendes olvasási sebesség. A beszédidő 130 szó/perc sebességet használ, ami a természetes tempó prezentációkhoz és podcastokhoz, beleértve a szüneteket és a légzést. Egy 1 000 szavas szöveg kb. 5 percet vesz igénybe olvasásra, de 7,5 percet beszédre."
+          "answer": "Az olvasási idő 200 szó/perc sebességgel számol - az átlagos csendes olvasási sebesség. A beszédidő 130 szó/perc sebességet használ, ami a természetes tempó prezentációkhoz és podcastokhoz, beleértve a szüneteket és a légzést. Egy 1 000 szavas szöveg kb. 5 percet vesz igénybe olvasásra, de 7,5 percet beszédre."
         }
       ]
     },

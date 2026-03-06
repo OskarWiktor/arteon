@@ -1,1 +1,4 @@
+OWNERDOMAIN=arteonagency.pl
+MANAGERDOMAIN=arteonagency.pl
+
 google.com, pub-7845947936813012, DIRECT, f08c47fec0942fa0

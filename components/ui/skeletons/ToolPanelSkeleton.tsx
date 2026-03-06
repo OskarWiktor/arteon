@@ -29,7 +29,7 @@ function ButtonShimmer({ width = 'w-28' }: { width?: string }) {
   return <Shimmer className={`h-9 ${width} !rounded-lg`} />;
 }
 
-/* ── Variant: default (QR Code — 2:3 grid, inputs + preview) ── */
+/* ── Variant: default (QR Code - 2:3 grid, inputs + preview) ── */
 
 function DefaultPanel() {
   return (
@@ -118,7 +118,7 @@ function ContrastCheckerPanel() {
   );
 }
 
-/* ── Variant: upload-tool (Favicon, WebP, Extractor — dropzone + results) ── */
+/* ── Variant: upload-tool (Favicon, WebP, Extractor - dropzone + results) ── */
 
 function UploadToolPanel() {
   return (
@@ -145,7 +145,7 @@ function UploadToolPanel() {
   );
 }
 
-/* ── Variant: word-count (1:2 grid — stats left, textarea right) ── */
+/* ── Variant: word-count (1:2 grid - stats left, textarea right) ── */
 
 function WordCountPanel() {
   return (
@@ -185,7 +185,7 @@ function WordCountPanel() {
   );
 }
 
-/* ── Variant: image-editor (1.3:2.5 grid — upload left, canvas right) ── */
+/* ── Variant: image-editor (1.3:2.5 grid - upload left, canvas right) ── */
 
 function ImageEditorPanel() {
   return (
@@ -226,7 +226,7 @@ function ImageEditorPanel() {
   );
 }
 
-/* ── Variant: color-palette (stacked — toolbar + palette grid) ── */
+/* ── Variant: color-palette (stacked - toolbar + palette grid) ── */
 
 function ColorPalettePanel() {
   return (

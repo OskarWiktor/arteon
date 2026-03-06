@@ -1,0 +1,273 @@
+{
+  "toolKey": "inchesToPxDpi",
+  "locale": "fi",
+  "metadata": {
+    "title": "Tuumat px:ksi – muunnin",
+    "description": "Muunna tuumat pikseleiksi DPI-tuella.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/tuumat-px-muunnin"
+  },
+  "hero": {
+    "title": "Tuumat px:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/tuumat-px-muunnin",
+      "label": "tuumat px:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Tuumat px:ksi – muunnin",
+      "alternateName": ["Tuumat px:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna tuumat pikseleiksi DPI-tuella.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin tarvitset: Tuumat px:ksi?",
+      "html": "<p class=\"text-mid mb-4\">US paper sizes and print specifications use inches. To prepare digital artwork, convert to pixels: pixels = inches × DPI.</p><p class=\"text-mid mb-4\">US Letter paper (8.5 × 11″) at 300 DPI = 2,550 × 3,300 pixels. A 4 × 6″ photo print at 300 DPI = 1,200 × 1,800 pixels.</p><p class=\"text-mid mb-4\">This conversion is essential for preparing images for US print shops, setting up document templates, and calculating required image resolution.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Tuumat px:ksi – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät muunninta",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään. Voit käyttää pistettä tai pilkkua.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä – ilman napsautusta.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai käännä",
+          "description": "Napsauta Kopioi tulos tai käytä Käännä-painiketta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tulostus",
+          "description": "Letter 8,5 × 11″ przy 300 DPI = 2 550 × 3 300 px."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Monitory",
+          "description": "Oblicz PPI monitora: 27″ 4K (3840px) = 163 PPI."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografia",
+          "description": "Wydruk zdjęcia 4 × 6″ przy 300 DPI = 1 200 × 1 800 px."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web-kehitys",
+          "description": "W CSS 1 in = 96 px (definicja CSS)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi tietosuoja",
+          "description": "Kaikki laskelmat tehdään paikallisesti selaimessasi. Mitään tietoja ei lähetetä palvelimelle."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy välittömästi kirjoittaessasi – ei tarvitse napsauttaa mitään."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Käännä-painikkeella voit muuntaa kumpaankin suuntaan yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Valmis taulukko usein muunnetuilla arvoilla ja kontekstuaalisilla kuvauksilla."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">The formula is simply: pixels = inches × DPI. No additional conversion factor needed since DPI is already dots per inch.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 inch = 300 pixels. At 72 DPI: 1 inch = 72 pixels.</p><p class=\"text-mid\">To find required DPI: DPI = pixels / inches. A 4,000 px image printed at 8″ wide = 500 DPI.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Käytännön vinkkejä",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Photo prints: 4×6″ at 300 DPI = 1,200×1,800 px (2.16 MP minimum).</li><li>US Letter: 8.5×11″ at 300 DPI = 2,550×3,300 px.</li><li>US Tabloid: 11×17″ at 300 DPI = 3,300×5,100 px.</li><li>Retina display: effective 2× DPI. A “72 DPI” screen image actually needs 144 px per inch on Retina.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Common print sizes at 300 DPI",
+      "featureLabel": "Print size",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Inches"
+        },
+        {
+          "id": "unit2",
+          "name": "Pixels (300 DPI)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Wallet",
+          "values": {
+            "unit1": "2.5 × 3.5″",
+            "unit2": "750 × 1,050"
+          }
+        },
+        {
+          "name": "4×6 photo",
+          "values": {
+            "unit1": "4 × 6″",
+            "unit2": "1,200 × 1,800"
+          }
+        },
+        {
+          "name": "8×10 photo",
+          "values": {
+            "unit1": "8 × 10″",
+            "unit2": "2,400 × 3,000"
+          }
+        },
+        {
+          "name": "US Letter",
+          "values": {
+            "unit1": "8.5 × 11″",
+            "unit2": "2,550 × 3,300"
+          }
+        },
+        {
+          "name": "Poster (24×36)",
+          "values": {
+            "unit1": "24 × 36″",
+            "unit2": "7,200 × 10,800"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta Pixel sind 1 Zoll bei 300 DPI?",
+          "answer": "1 Zoll bei 300 DPI = 300 Pixel."
+        },
+        {
+          "question": "Tehdäänkö laskelmat paikallisesti?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "tuumat px:ksi – Arteon",
+      "defaultSubject": "Palaute: inches-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "toolKey": "xmlToJson",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur XML en JSON — XML JSON",
+    "title": "Convertisseur XML en JSON - XML JSON",
     "description": "Convertissez XML en format JSON. Analyse et formatage automatiques. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-xml-en-json"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir XML en JSON ?",
-      "html": "<p class=\"text-mid mb-4\">XML est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en JSON peut offrir des avantages significatifs — fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers XML au format JSON directement dans le navigateur. Aucun fichier n'est envoye sur un serveur — tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en JSON peut offrir des avantages significatifs - fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers XML au format JSON directement dans le navigateur. Aucun fichier n'est envoye sur un serveur - tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Combien economiser en convertissant XML en JSON ?",
-      "html": "<p class=\"text-mid mb-4\">Les economies dependent du type de fichier source et sa compression :</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo d'appareil</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Image produit</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Capture / banniere</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Les economies reelles varient selon le contenu et les reglages.</p>"
+      "title": "Comment fonctionne la conversion XML en JSON ?",
+      "html": "<p class=\"text-mid mb-4\">XML utilise une hi\u00e9rarchie bas\u00e9e sur des balises avec des \u00e9l\u00e9ments ouvrants et fermants, tandis que JSON utilise des accolades l\u00e9g\u00e8res et des paires cl\u00e9-valeur. Le convertisseur analyse l\u2019arborescence du document XML et associe chaque \u00e9l\u00e9ment \u00e0 une structure JSON correspondante.</p><p class=\"text-mid mb-4\">Les \u00e9l\u00e9ments XML deviennent des objets JSON, les \u00e9l\u00e9ments r\u00e9p\u00e9t\u00e9s avec le m\u00eame nom de balise des tableaux JSON, et les contenus texte des valeurs cha\u00eene. Les attributs XML sont repr\u00e9sent\u00e9s comme propri\u00e9t\u00e9s sp\u00e9ciales (avec pr\u00e9fixe @) dans l\u2019objet JSON.</p><p class=\"text-mid\">JSON est le format privil\u00e9gi\u00e9 pour les API web modernes, les applications JavaScript et les bases de donn\u00e9es NoSQL. La conversion s\u2019effectue enti\u00e8rement dans votre navigateur.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Conseils pour convertir XML en JSON",
-      "description": "Conseils pour eviter les problemes courants :",
+      "title": "Conseils pour la conversion XML en JSON",
+      "description": "Quelques conseils pour \u00e9viter les probl\u00e8mes courants :",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Fichiers volumineux",
-          "description": "Images de plus de 4000×4000 px peuvent etre plus lentes. Divisez en lots de 10–20."
+          "icon": "RiCodeLine",
+          "title": "Attributs XML",
+          "description": "Les attributs XML sont convertis en propri\u00e9t\u00e9s JSON avec pr\u00e9fixe @. Par exemple, &lt;item id='1'&gt; devient {\"@id\": \"1\"}."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Fichiers deja compresses",
-          "description": "Si le XML original etait deja compresse, la conversion en JSON peut ne pas economiser beaucoup."
+          "icon": "RiNodeTree",
+          "title": "Espaces de noms",
+          "description": "Les espaces de noms XML sont conserv\u00e9s dans la sortie JSON comme partie des noms d\u2019\u00e9l\u00e9ments. Les d\u00e9clarations complexes de namespaces peuvent n\u00e9cessiter un nettoyage manuel."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparence",
-          "description": "JSON ne supporte pas la transparence. Zones transparentes remplacees par fond blanc. Utilisez PNG ou WebP."
+          "icon": "RiFileTextLine",
+          "title": "Contenu mixte",
+          "description": "Les \u00e9l\u00e9ments XML contenant \u00e0 la fois du texte et des \u00e9l\u00e9ments enfants sont trait\u00e9s en pla\u00e7ant le texte dans une propri\u00e9t\u00e9 sp\u00e9ciale #text."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Conservez les originaux",
-          "description": "La conversion avec perte est irreversible. Conservez des copies des fichiers XML."
+          "icon": "RiFileCodeLine",
+          "title": "Sections CDATA",
+          "description": "Les sections CDATA en XML sont converties en valeurs cha\u00eenes simples en JSON. L\u2019enveloppe CDATA est retir\u00e9e et le contenu est conserv\u00e9 intact."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Oui, il fonctionne sur tout appareil disposant d'un navigateur web moderne."
         },
         {
-          "question": "La conversion XML en JSON est-elle sure ?",
-          "answer": "Oui. Tout se fait localement dans le navigateur via Canvas API. Rien n'est envoye a un serveur."
+          "question": "La conversion XML en JSON est-elle s\u00e9curis\u00e9e ?",
+          "answer": "Oui. Toute la conversion s\u2019effectue localement dans votre navigateur. Aucune donn\u00e9e n\u2019est envoy\u00e9e \u00e0 un serveur."
         },
         {
-          "question": "Puis-je convertir plusieurs fichiers XML ?",
-          "answer": "Oui. Conversion par lots sans limite. Glissez les fichiers sur le convertisseur."
+          "question": "Les attributs XML sont-ils perdus lors de la conversion ?",
+          "answer": "Non. Les attributs XML sont conserv\u00e9s dans la sortie JSON comme propri\u00e9t\u00e9s avec pr\u00e9fixe @. Par exemple, id='123' devient \"@id\": \"123\" dans l\u2019objet JSON."
         },
         {
-          "question": "JSON est-il supporte par tous les navigateurs ?",
-          "answer": "JSON est supporte par Chrome, Firefox, Safari, Edge et Opera."
+          "question": "Puis-je utiliser la sortie JSON en JavaScript ?",
+          "answer": "Oui. La sortie est du JSON standard utilisable avec JSON.parse() en JavaScript ou directement dans tout langage de programmation, API ou base de donn\u00e9es."
         }
       ]
     },

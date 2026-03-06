@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert GIF to PNG?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) is a lossless image format supporting 256 colors. It is widely used for simple animations and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting GIF to PNG (Portable Network Graphics) gives you more flexibility in how and where you use your images.</p><p class=\"text-mid mb-4\">PNG supports alpha transparency, preserving any transparent areas in your image. As a lossless format, PNG preserves all image data without any quality degradation.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many GIF files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">GIF is limited to 256 colors and only supports binary transparency (a pixel is either fully transparent or fully opaque). PNG removes both limitations — it supports millions of colors and full alpha transparency with smooth semi-transparent edges. Converting GIF to PNG gives you a higher-quality image file.</p><p class=\"text-mid mb-4\">PNG is a lossless format supported by every browser, operating system, and image editor. The binary transparency from your GIF will be preserved in PNG, and you'll gain the ability to edit the image with full color depth in any graphics application.</p><p class=\"text-mid mb-4\">PNG files may be slightly larger than GIF for very simple graphics, but the gain in color depth and transparency quality is significant. For web optimization, consider converting to WebP instead.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "GIF to PNG conversion",
       "variant": "right"
@@ -263,7 +263,7 @@
     {
       "type": "sectionInfo",
       "title": "How image conversion impacts page speed and SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them — LCP (Largest Contentful Paint) — measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting GIF images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading — especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting GIF images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "gap",
@@ -315,7 +315,7 @@
     {
       "type": "contactForm",
       "title": "Help us improve our tools",
-      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message - we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "GIF to PNG converter – Arteon",
       "defaultSubject": "Feedback: GIF to PNG converter"

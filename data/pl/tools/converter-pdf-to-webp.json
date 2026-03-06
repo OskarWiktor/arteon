@@ -2,14 +2,14 @@
   "toolKey": "pdfToWebp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PDF na WebP — lekkie obrazy ze stron PDF",
-    "description": "Zamień każdą stronę PDF na lekki obraz WebP. Idealny do stron internetowych. Bez rejestracji, bez limitu — konwersja w przeglądarce.",
+    "title": "Konwerter PDF na WebP - lekkie obrazy ze stron PDF",
+    "description": "Zamień każdą stronę PDF na lekki obraz WebP. Idealny do stron internetowych. Bez rejestracji, bez limitu - konwersja w przeglądarce.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-pdf-na-webp"
   },
   "hero": {
     "title": "Zamień strony PDF na lekkie obrazy WebP",
-    "description": "Wgraj plik PDF, a narzędzie zamieni każdą stronę na lekki obraz WebP — idealny do publikacji na stronie internetowej. Konwersja odbywa się lokalnie.",
+    "description": "Wgraj plik PDF, a narzędzie zamieni każdą stronę na lekki obraz WebP - idealny do publikacji na stronie internetowej. Konwersja odbywa się lokalnie.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter PDF na WebP — darmowy, bez limitu stron",
+      "name": "Konwerter PDF na WebP - darmowy, bez limitu stron",
       "alternateName": ["Zamiana PDF na WebP online", "Konwersja PDF do WebP", "PDF to WebP converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
-      "description": "Darmowy konwerter PDF na WebP online. Zamień strony PDF na obrazy WebP w przeglądarce — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter PDF na WebP online. Zamień strony PDF na obrazy WebP w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": ["Konwersja stron PDF na WebP", "Przetwarzanie wszystkich stron dokumentu", "Renderowanie lokalne w przeglądarce", "Pobieranie pojedynczo lub wszystkich naraz"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować PDF na WebP?",
-      "html": "<p class=\"text-mid mb-4\">WebP to nowoczesny format obrazu stworzony przez Google, który oferuje doskonałą kompresję — pliki są nawet o 30% mniejsze niż JPG przy porównywalnej jakości. WebP jest obsługiwany przez wszystkie nowoczesne przeglądarki.</p><p class=\"text-mid mb-4\">Konwersja PDF na WebP przydaje się, gdy chcesz opublikować strony dokumentu na stronie internetowej — lekkie obrazy WebP ładują się szybciej i poprawiają wynik Core Web Vitals.</p><p class=\"text-mid\">Nasz konwerter renderuje PDF lokalnie w przeglądarce — pliki nie są wysyłane na żaden serwer zewnętrzny.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP to nowoczesny format obrazu stworzony przez Google, który oferuje doskonałą kompresję - pliki są nawet o 30% mniejsze niż JPG przy porównywalnej jakości. WebP jest obsługiwany przez wszystkie nowoczesne przeglądarki.</p><p class=\"text-mid mb-4\">Konwersja PDF na WebP przydaje się, gdy chcesz opublikować strony dokumentu na stronie internetowej - lekkie obrazy WebP ładują się szybciej i poprawiają wynik Core Web Vitals.</p><p class=\"text-mid\">Nasz konwerter renderuje PDF lokalnie w przeglądarce - pliki nie są wysyłane na żaden serwer zewnętrzny.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter PDF na WebP – Arteon"
     },
@@ -100,7 +100,7 @@
         {
           "icon": "RiGlobalLine",
           "title": "Publikacja w internecie",
-          "description": "WebP ładuje się szybciej niż JPG/PNG — idealny do osadzania stron PDF na stronie."
+          "description": "WebP ładuje się szybciej niż JPG/PNG - idealny do osadzania stron PDF na stronie."
         },
         {
           "icon": "RiSpeedLine",
@@ -110,12 +110,12 @@
         {
           "icon": "RiShareLine",
           "title": "Social media",
-          "description": "Nowoczesne platformy obsługują WebP — lekkie pliki szybciej się ładują."
+          "description": "Nowoczesne platformy obsługują WebP - lekkie pliki szybciej się ładują."
         },
         {
           "icon": "RiSmartphoneLine",
           "title": "Aplikacje mobilne",
-          "description": "WebP jest wspierany przez iOS i Android — mniejsze pliki = szybsze ładowanie."
+          "description": "WebP jest wspierany przez iOS i Android - mniejsze pliki = szybsze ładowanie."
         }
       ]
     },
@@ -136,7 +136,7 @@
         {
           "icon": "RiInfinityFill",
           "title": "Bez limitu stron",
-          "description": "Narzędzie przetworzy każdą stronę dokumentu — bez ograniczeń."
+          "description": "Narzędzie przetworzy każdą stronę dokumentu - bez ograniczeń."
         },
         {
           "icon": "RiImageLine",
@@ -157,7 +157,7 @@
     {
       "type": "sectionInfo",
       "title": "Wskazówki dotyczące konwersji PDF na WebP",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>WebP oferuje kompresję o ok. 30% lepszą niż JPG przy porównywalnej jakości — idealny do stron internetowych.</li><li>Jeśli strona PDF zawiera dużo tekstu, WebP z wyższą jakością (90%+) zachowa czytelność.</li><li>Dla zastosowań offline (prezentacje, e-mail) rozważ <a href=\"/narzedzia/konwerter-pdf-na-jpg\">konwersję PDF na JPG</a> — lepsza kompatybilność.</li><li>WebP jest obsługiwany przez Chrome, Firefox, Safari, Edge i Opera.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>WebP oferuje kompresję o ok. 30% lepszą niż JPG przy porównywalnej jakości - idealny do stron internetowych.</li><li>Jeśli strona PDF zawiera dużo tekstu, WebP z wyższą jakością (90%+) zachowa czytelność.</li><li>Dla zastosowań offline (prezentacje, e-mail) rozważ <a href=\"/narzedzia/konwerter-pdf-na-jpg\">konwersję PDF na JPG</a> - lepsza kompatybilność.</li><li>WebP jest obsługiwany przez Chrome, Firefox, Safari, Edge i Opera.</li></ul>"
     },
     {
       "type": "gap",
@@ -236,8 +236,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji PDF na WebP?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem PDF a wynikowym WebP jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji PDF na WebP?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem PDF a wynikowym WebP jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -255,7 +255,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów PDF na WebP zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów PDF na WebP zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -285,7 +285,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PDF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PDF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -316,11 +316,11 @@
         },
         {
           "question": "Czy konwersja PDF na WebP jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
           "question": "Czy mogę konwertować wiele plików PDF jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz - nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
         }
       ]
     },

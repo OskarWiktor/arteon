@@ -1,0 +1,289 @@
+{
+  "toolKey": "sqmToSqft",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter m² na stopy kwadratowe – przelicz powierzchnię",
+    "description": "Przelicz metry kwadratowe na stopy kwadratowe i odwrotnie. Konwerter jest przydatny w branży nieruchomości i budownictwie. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-metry-kwadratowe-na-stopy"
+  },
+  "hero": {
+    "title": "Przelicz metry kwadratowe na stopy",
+    "description": "Ten konwerter przelicza metry kwadratowe na stopy kwadratowe i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-metry-kwadratowe-na-stopy",
+      "label": "m² na ft²"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter m² na stopy kwadratowe – przelicz powierzchnię",
+      "alternateName": ["Przelicznik m2 na ft2", "Kalkulator powierzchni", "Zamiana metrów kwadratowych na stopy"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz metry kwadratowe na stopy kwadratowe i odwrotnie. Konwerter jest przydatny w branży nieruchomości i budownictwie. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera m² na ft²",
+      "description": "Instrukcja użycia: m² na ft².",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy potrzebne jest przeliczanie metrów kwadratowych na stopy?",
+      "html": "<p class=\"text-mid mb-4\">Metr kwadratowy (m²) to jednostka powierzchni w systemie metrycznym. Stopa kwadratowa (ft² lub sq ft) to jednostka stosowana w USA, Wielkiej Brytanii i Kanadzie. 1 m² = 10,7639 ft².</p><p class=\"text-mid mb-4\">Przeliczanie powierzchni jest niezbędne w branży nieruchomości – amerykańskie ogłoszenia podają metraż w stopach kwadratowych. Mieszkanie o powierzchni 50 m² to 538 ft², a dom 150 m² = 1 615 ft².</p><p class=\"text-mid mb-4\">W budownictwie i projektowaniu wnętrz przeliczanie powierzchni jest codziennością: obliczanie ilości materiałów (paneli, płytek, farby), porównywanie ofert od dostawców z różnych krajów czy analizowanie planów architektonicznych.</p><p class=\"text-mid\">Ceny nieruchomości w USA podaje się za stopę kwadratową ($/ft²). żeby porównać z cenami w Polsce (zł/m²), trzeba pomnożyć cenę za ft² przez 10,764.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "m² na ft² – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHome4Line",
+          "title": "Nieruchomości",
+          "description": "Amerykańskie ogłoszenia podają metraż w ft²: 1 000 ft² = 92,9 m²."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Projektowanie wnętrz",
+          "description": "Oblicz ilość materiałów wykończeniowych na podstawie metrażu."
+        },
+        {
+          "icon": "RiBuildingLine",
+          "title": "Budownictwo",
+          "description": "Przelicz powierzchnię działki, pomieszczenia lub całego budynku."
+        },
+        {
+          "icon": "RiMoneyDollarCircleLine",
+          "title": "Ceny za m²",
+          "description": "Porównaj ceny nieruchomości w różnych krajach, przeliczając zł/m² na $/ft²."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja m² na ft²?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja metrów kwadratowych na stopy kwadratowe opiera się na przeliczniku liniowym podniesiony do kwadratu. Ponieważ jedna stopa wynosi 0,3048 metra, to jedna stopa kwadratowa to 0,3048² = 0,0929 metra kwadratowego. W drugą stronę: jeden metr kwadratowy to 10,7639 stopy kwadratowej.</p><p class=\"text-mid mb-4\">Na przykład mieszkanie o powierzchni 50 m² ma około 538 ft², a dom o powierzchni 2 000 ft² to około 186 m². Szybkie przybliżenie: pomnóż metry kwadratowe przez 11 — wynik będzie zbliżony do wartości w stopach kwadratowych.</p><p class=\"text-mid\">Stopa kwadratowa (square foot, ft² lub sq ft) jest standardową jednostką powierzchni w USA i Wielkiej Brytanii, stosowaną przede wszystkim na rynku nieruchomości. W Polsce i Europie powierzchnię podaje się w metrach kwadratowych.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Szybkie przybliżenie: pomnóż m² przez 11 – błąd wynosi około 2%.</li><li>Typowe mieszkanie w Polsce (50 m²) to 538 ft².</li><li>Cena 5 000 zł/m² to około 465 zł/ft².</li><li>Akr (amerykańska jednostka powierzchni gruntów) = 43 560 ft² = 4 047 m².</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Metr kwadratowy (m²) vs Stopa kwadratowa (ft²) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Metr kwadratowy (m²)"
+        },
+        {
+          "id": "unit2",
+          "name": "Stopa kwadratowa (ft²)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metryczny (SI)",
+            "unit2": "Imperialny"
+          }
+        },
+        {
+          "name": "Nieruchomości",
+          "values": {
+            "unit1": "Cena za m²",
+            "unit2": "Cena za ft²"
+          }
+        },
+        {
+          "name": "Bazowa wartość",
+          "values": {
+            "unit1": "1 m × 1 m",
+            "unit2": "1 ft × 1 ft = 929 cm²"
+          }
+        },
+        {
+          "name": "Budownictwo",
+          "values": {
+            "unit1": "Europa",
+            "unit2": "USA, UK, Kanada"
+          }
+        },
+        {
+          "name": "Działki",
+          "values": {
+            "unit1": "Ary, hektary",
+            "unit2": "Akry"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile stóp kwadratowych ma 1 metr kwadratowy?",
+          "answer": "1 m² = 10,7639 ft². W przybliżeniu: 1 m² ≈ 10,8 ft²."
+        },
+        {
+          "question": "Ile metrów kwadratowych to 1000 ft²?",
+          "answer": "1 000 ft² = 92,9 m² – to typowy amerykański metraż mieszkania dwupokojowego."
+        },
+        {
+          "question": "Jak porównać ceny nieruchomości w m² i ft²?",
+          "answer": "Podziel cenę za m² przez 10,764, aby uzyskać cenę za ft². Lub pomnóż cenę za ft² przez 10,764 dla ceny za m²."
+        },
+        {
+          "question": "Ile m² ma typowe mieszkanie w USA?",
+          "answer": "Typowe amerykańskie mieszkanie to 800–1 200 ft², czyli 74–111 m². Dom jednorodzinny: 1 500–2 500 ft² = 139–232 m²."
+        },
+        {
+          "question": "Jak szybko oszacować ft² na m²?",
+          "answer": "Podziel ft² przez 11 – błąd wynosi około 2%."
+        },
+        {
+          "question": "Czy konwerter obsługuje duże powierzchnie?",
+          "answer": "Tak. Konwerter obsługuje dowolne wartości – od centymetrów kwadratowych po hektary i akry."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "m² na ft² – Arteon",
+      "defaultSubject": "Feedback: m² na ft²"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

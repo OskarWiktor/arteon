@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "TIFF PNG konverter – TIFF PNG",
-    "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+    "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/tiff-png-konverter"
   },
   "hero": {
     "title": "TIFF PNG konverter",
-    "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+    "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF PNG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+      "description": "TIFF fajlok konvertálása vesztesgmentes PNG-re. Szkenek teljes minosege megorzese. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["TIFF konvertálása PNG formátumba", "TIFF–PNG átalakítás", "Ingyenes TIFF–PNG konverter"]
     },
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting TIFF images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",

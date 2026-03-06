@@ -2,14 +2,14 @@
   "toolKey": "svgToAvif",
   "locale": "sv",
   "metadata": {
-    "title": "SVG till AVIF-konverterare — SVG AVIF",
-    "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "title": "SVG till AVIF-konverterare - SVG AVIF",
+    "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/svg-till-avif-konverterare"
   },
   "hero": {
     "title": "SVG till AVIF-konverterare",
-    "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG till AVIF-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+      "description": "Konvertera vektor-SVG-grafik till kompakt AVIF-rasterformat. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["Konvertering till AVIF", "Kvalitetsjustering (60-95%)", "Batchkonvertering", "Lokal bearbetning i webbläsaren"],
       "alternateName": ["Konvertera SVG till AVIF", "SVG till AVIF konvertering", "Gratis SVG till AVIF konverterare"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Ställ in kvalitet",
-          "text": "Justera AVIF-kvalitetsreglaget — lägre värden ger mindre filer."
+          "text": "Justera AVIF-kvalitetsreglaget - lägre värden ger mindre filer."
         },
         {
           "position": 3,
           "name": "Konvertera",
-          "text": "Klicka på Konvertera — filerna bearbetas lokalt i webbläsaren."
+          "text": "Klicka på Konvertera - filerna bearbetas lokalt i webbläsaren."
         },
         {
           "position": 4,
           "name": "Ladda ner",
-          "text": "Ladda ner AVIF-filerna — enskilt eller alla på en gång."
+          "text": "Ladda ner AVIF-filerna - enskilt eller alla på en gång."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — vad valja vid konvertering SVG till AVIF?",
-      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% — for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% — nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 80% ar skillnaden mellan SVG och AVIF praktiskt taget omarkbar.</p>"
+      "title": "Kvalitet - vad valja vid konvertering SVG till AVIF?",
+      "html": "<p class=\"text-mid\">Reglagen 60%-95%. Hogre = battre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) - bra for webbplatser, bloggar, artiklar.</strong></li><li><strong>85–90% - for produktfoton, portfolior och gallerier.</strong></li><li><strong>60–70% - nar filstorlek ska minimeras.</strong></li></ul><p class=\"text-mid mt-3\">Vid 80% ar skillnaden mellan SVG och AVIF praktiskt taget omarkbar.</p>"
     },
     {
       "type": "gap",

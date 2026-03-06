@@ -1,0 +1,277 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore metri in piedi",
+    "description": "Converti metri in piedi e viceversa. Per altezza, costruzione e aviazione.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-metri-in-piedi"
+  },
+  "hero": {
+    "title": "Convertire metri in piedi",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-metri-in-piedi",
+      "label": "m in ft"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore metri in piedi",
+      "alternateName": ["Convertire metri in piedi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti metri in piedi e viceversa. Per altezza, costruzione e aviazione.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire metri in piedi?",
+      "html": "<p class=\"text-mid mb-4\">Il metro (m) è l’unità base di lunghezza del sistema metrico. Il piede (ft) è un’unità imperiale pari a 0,3048 m. 1 metro = 3,28084 piedi.</p><p class=\"text-mid mb-4\">Esempi: 1,80 m = 5,91 ft (5’11″), 10 m = 32,8 ft, 100 m = 328 ft.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore metri in piedi – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento. Puoi usare punto o virgola come separatore decimale.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato della conversione appare istantaneamente nel campo adiacente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Clicca su Copia risultato o usa il pulsante Inverti per convertire nella direzione opposta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuildingLine",
+          "title": "Aviazione",
+          "description": "L’altitudine di volo è in piedi: 35.000 ft = 10.668 m."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Immobiliare",
+          "description": "Dimensioni stanze negli USA: 12×14 ft = 3,66×4,27 m."
+        },
+        {
+          "icon": "RiBodyScanLine",
+          "title": "Altezza",
+          "description": "Negli USA in piedi e pollici: 6’0″ = 1,83 m."
+        },
+        {
+          "icon": "RiMountainLine",
+          "title": "Subacquea",
+          "description": "Profondità di immersione: 60 ft = 18,3 m."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser. Nessun dato viene inviato."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna istantaneamente mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Il pulsante Inverti permette di convertire in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Una tabella con valori di conversione comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">1 piede = 0,3048 metri esattamente. Per convertire metri in piedi, dividi per 0,3048.</p><p class=\"text-mid\">1 piede = 12 pollici.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">1 piede = 0,3048 metri esattamente. Per convertire metri in piedi, dividi per 0,3048.</p><p class=\"text-mid\">1 piede = 12 pollici.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Metro vs Piede – confronto",
+      "featureLabel": "Caratteristica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Metro (m)"
+        },
+        {
+          "id": "unit2",
+          "name": "Piede (ft)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistema",
+          "values": {
+            "unit1": "Metrico (SI)",
+            "unit2": "Imperiale"
+          }
+        },
+        {
+          "name": "Valore base",
+          "values": {
+            "unit1": "1 m",
+            "unit2": "0,3048 m"
+          }
+        },
+        {
+          "name": "Aviazione",
+          "values": {
+            "unit1": "Non usato",
+            "unit2": "Standard (piedi)"
+          }
+        },
+        {
+          "name": "Immobiliare",
+          "values": {
+            "unit1": "Europa",
+            "unit2": "USA"
+          }
+        },
+        {
+          "name": "Altezza",
+          "values": {
+            "unit1": "Internazionale (cm/m)",
+            "unit2": "USA (ft/in)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanti piedi è 1 metro?",
+          "answer": "1 metro = 3,28084 piedi."
+        },
+        {
+          "question": "Quanto misura 6 piedi in metri?",
+          "answer": "6 piedi = 1,8288 metri."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "m na stopy – Arteon",
+      "defaultSubject": "Feedback: meters-to-feet"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

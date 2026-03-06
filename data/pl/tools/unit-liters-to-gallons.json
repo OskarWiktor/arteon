@@ -1,0 +1,289 @@
+{
+  "toolKey": "litersToGallons",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter litrów na galony – przelicz objętość",
+    "description": "Przelicz litry na galony amerykańskie (US) i odwrotnie. Konwerter jest przydatny przy planowaniu podróży do USA. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-litry-na-galony"
+  },
+  "hero": {
+    "title": "Przelicz litry na galony",
+    "description": "Ten konwerter przelicza litry na galony amerykańskie (US) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-litry-na-galony",
+      "label": "l na galony"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter litrów na galony – przelicz objętość",
+      "alternateName": ["Przelicznik litrów na galony", "Kalkulator l na gal", "Zamiana litrów na galony US"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz litry na galony amerykańskie (US) i odwrotnie. Konwerter jest przydatny przy planowaniu podróży do USA. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera l na galony",
+      "description": "Instrukcja użycia: l na galony.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Do czego przydaje się przeliczanie litrów na galony?",
+      "html": "<p class=\"text-mid mb-4\">Litr (l) to jednostka objętości w systemie metrycznym, równa 1 decymetrowi sześciennemu. Galon amerykański (US gallon) to jednostka używana w USA, równa 3,78541 litra. Istnieje też galon imperialny (UK gallon = 4,546 l) – ten konwerter przelicza galony amerykańskie.</p><p class=\"text-mid mb-4\">Przeliczanie litrów na galony jest przydatne przy planowaniu podróży samochodem w USA (zużycie paliwa podaje się w milach na galon – MPG), zakupie płynów w amerykańskich sklepach oraz porównywaniu cen paliwa.</p><p class=\"text-mid mb-4\">Ceny benzyny w USA podaje się za galon. żeby porównać z cenami europejskimi, trzeba podzielić cenę za galon przez 3,785. Na przykład: 3,50 USD/gal ≈ 0,92 USD/l.</p><p class=\"text-mid\">Zużycie paliwa w USA wyraża się w MPG (miles per gallon), a w Europie w l/100 km. To odwrotne miary – im wyższe MPG, tym niższe zużycie. 30 MPG ≈ 7,84 l/100 km.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "l na galony – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGasStationLine",
+          "title": "Paliwo w USA",
+          "description": "Porównaj ceny benzyny za galon z cenami za litr w Polsce."
+        },
+        {
+          "icon": "RiCarLine",
+          "title": "Zużycie paliwa",
+          "description": "Przelicz MPG (mile na galon) na l/100 km i odwrotnie."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Płyny domowe",
+          "description": "Amerykańskie produkty (mleko, woda) sprzedaje się w galonach."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Ogrodnictwo",
+          "description": "Amerykańskie poradniki ogrodnicze podają ilości wody w galonach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja litrów na galony?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja litrów na galony wymaga rozróżnienia między galonem amerykańskim (US gallon) a galonem imperialnym (UK gallon). Ten konwerter przelicza galony amerykańskie, które wynoszą 3,78541 litra. Galon imperialny jest większy i wynosi 4,54609 litra.</p><p class=\"text-mid mb-4\">Aby przeliczyć litry na galony amerykańskie, narzędzie mnoży wartość przez 0,264172. Na przykład 10 litrów to około 2,64 galona, a bak o pojemności 50 litrów mieści około 13,21 galona. Szybkie przybliżenie: podziel litry przez 4 — wynik będzie zbliżony do liczby galonów.</p><p class=\"text-mid\">Galon jest powszechnie stosowany w USA do mierzenia pojemności zbiorników paliwa, objętości płynów w handlu oraz zużycia paliwa (mile na galon). W Europie i większości świata standardem jest litr.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>1 galon US = 3,785 l. Szybkie przybliżenie: podziel litry przez 4 i dodaj 5%.</li><li>Galon imperialny (UK) jest większy: 4,546 l. Sprawdź, który galon jest używany.</li><li>30 MPG ≈ 7,84 l/100 km. Wzór: l/100km = 235,215 ÷ MPG.</li><li>Typowy bak w USA mieści 12–16 galonów = 45–61 litrów.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Litr (l) vs Galon US (gal) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Litr (l)"
+        },
+        {
+          "id": "unit2",
+          "name": "Galon US (gal)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metryczny",
+            "unit2": "Amerykański"
+          }
+        },
+        {
+          "name": "Bazowa wartość",
+          "values": {
+            "unit1": "1 dm³ = 1000 ml",
+            "unit2": "3,78541 litra"
+          }
+        },
+        {
+          "name": "Paliwo",
+          "values": {
+            "unit1": "Cena za litr",
+            "unit2": "Cena za galon"
+          }
+        },
+        {
+          "name": "Zużycie",
+          "values": {
+            "unit1": "l/100 km",
+            "unit2": "MPG (mile na galon)"
+          }
+        },
+        {
+          "name": "Użycie",
+          "values": {
+            "unit1": "Cały świat",
+            "unit2": "USA"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile litrów ma 1 galon?",
+          "answer": "1 galon amerykański (US) = 3,78541 litra. 1 galon imperialny (UK) = 4,54609 litra."
+        },
+        {
+          "question": "Ile galonów to 10 litrów?",
+          "answer": "10 litrów to 2,6417 galona amerykańskiego."
+        },
+        {
+          "question": "Jaka jest różnica między galonem US a UK?",
+          "answer": "Galon amerykański (3,785 l) jest mniejszy od galona imperialnego (4,546 l) o około 20%. Ten konwerter przelicza galony amerykańskie."
+        },
+        {
+          "question": "Jak przeliczyć MPG na l/100 km?",
+          "answer": "Podziel 235,215 przez wartość MPG. Na przykład: 25 MPG = 235,215 ÷ 25 = 9,41 l/100 km."
+        },
+        {
+          "question": "Ile kosztuje benzyna w USA w przeliczeniu na litry?",
+          "answer": "Podziel cenę za galon przez 3,785. Jeśli galon kosztuje 3,50 USD, to litr kosztuje 0,92 USD."
+        },
+        {
+          "question": "Dlaczego USA nie używają litrów?",
+          "answer": "USA jest jednym z trzech krajów na świecie, które oficjalnie nie przyjęły systemu metrycznego. Galony są głęboko zakorzenione w amerykańskim handlu i codziennym życiu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "l na galony – Arteon",
+      "defaultSubject": "Feedback: l na galony"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

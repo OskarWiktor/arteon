@@ -2,7 +2,7 @@
   "toolKey": "imageToBase64",
   "locale": "nl",
   "metadata": {
-    "title": "afbeelding naar Base64 converter — afbeelding Base64",
+    "title": "afbeelding naar Base64 converter - afbeelding Base64",
     "description": "Codeer afbeeldingen naar Base64-formaat. Kopieer kant-en-klare code voor CSS of HTML. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/afbeelding-naar-base64-converter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Converteren",
-          "text": "Klik op Converteren — bestanden worden lokaal in je browser verwerkt."
+          "text": "Klik op Converteren - bestanden worden lokaal in je browser verwerkt."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom afbeelding naar Base64 converteren?",
-      "html": "<p class=\"text-mid mb-4\">IMAGE is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar BASE64 aanzienlijke voordelen bieden — kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw IMAGE-bestanden direct in de browser om naar het BASE64-formaat. Er worden geen bestanden naar een server geupload — het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">IMAGE is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar BASE64 aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw IMAGE-bestanden direct in de browser om naar het BASE64-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "afbeelding to Base64 conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Converteren",
-          "description": "Klik op Converteren — bestanden worden lokaal in je browser verwerkt.",
+          "description": "Klik op Converteren - bestanden worden lokaal in je browser verwerkt.",
           "icon": "RiSettings3Line"
         },
         {
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Directe conversie",
-          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's - snel en werkt ook offline."
         }
       ]
     },
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hoeveel besparen bij conversie IMAGE naar BASE64?",
-      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+      "title": "Hoe werkt de codering van afbeelding naar Base64?",
+      "html": "<p class=\"text-mid mb-4\">Base64-codering converteert de binaire gegevens van een afbeelding naar een tekststring met behulp van 64 afdrukbare ASCII-tekens (A–Z, a–z, 0–9, +, /). Elke groep van 3 bytes binaire gegevens wordt 4 Base64-tekens, wat betekent dat de gecodeerde string ongeveer 33% groter is dan het oorspronkelijke bestand.</p><p class=\"text-mid mb-4\">De converter leest je afbeeldingsbestand, codeert het naar een Base64-string en voegt het juiste Data URI-prefix toe (bijv. data:image/png;base64,). Dit creëert een zelfstandige string die direct kan worden ingebed in HTML, CSS of JSON zonder een apart afbeeldingsbestand nodig te hebben.</p><p class=\"text-mid\">Base64-gecodeerde afbeeldingen worden vaak gebruikt voor kleine pictogrammen, logo's en interface-elementen waarbij het elimineren van een extra HTTP-verzoek de laadtijd verbetert. De conversie vindt volledig plaats in je browser.</p>"
     },
     {
       "type": "gap",
@@ -138,35 +138,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips voor conversie IMAGE naar BASE64",
-      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "title": "Tips voor de codering van afbeelding naar Base64",
+      "description": "Enkele tips om veelvoorkomende problemen te voorkomen:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Zeer grote bestanden",
-          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+          "title": "Toename in grootte",
+          "description": "Base64-codering vergroot het bestand met ongeveer 33%. Een afbeelding van 10 KB wordt een Base64-string van ongeveer 13,3 KB. Ideaal voor kleine afbeeldingen onder 10 KB."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Reeds gecomprimeerd",
-          "description": "Als het IMAGE-bestand al sterk gecomprimeerd was, levert conversie naar BASE64 mogelijk weinig besparing."
+          "title": "Data URI-formaat",
+          "description": "De uitvoer bevat het volledige Data URI-prefix (data:image/png;base64,...) — klaar om te plakken in een HTML src-attribuut of CSS background-image eigenschap."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparantie",
-          "description": "BASE64 ondersteunt geen transparantie. Wordt wit. Overweeg PNG of WebP."
+          "icon": "RiCodeLine",
+          "title": "Ondersteunde formaten",
+          "description": "De converter accepteert PNG, JPG, GIF, WebP, SVG en BMP. Het MIME-type in de Data URI wordt automatisch ingesteld op basis van het invoerformaat."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Bewaar originelen",
-          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van IMAGE-bestanden."
+          "icon": "RiFileCodeLine",
+          "title": "Cache-overwegingen",
+          "description": "Ingebedde Base64-afbeeldingen kunnen niet apart door de browser worden gecachet. Voor afbeeldingen die op meerdere pagina's worden gebruikt, zijn aparte bestanden met cache-headers efficiënter."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to use Base64 encoding vs regular image files",
+      "html": "<p class=\"text-mid mb-4\">Base64 encoding is beneficial in specific scenarios, but not always the right choice:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Use Base64 for</strong> – small images under 10 KB (icons, logos), email templates with embedded images, API requests requiring image data in JSON, self-contained HTML files.</li><li><strong>Use regular files for</strong> – large images over 50 KB, website hero images and photos, images that need browser caching, content served via CDN.</li></ul><p class=\"text-mid mt-3\">Base64 increases data size by 33% and prevents browser caching. For web performance, only inline very small assets. For everything else, serve images as regular files with proper caching headers.</p>"
     },
     {
       "type": "faq",
@@ -190,16 +199,16 @@
           "answer": "Ja, de converter werkt op elk apparaat met een moderne webbrowser."
         },
         {
-          "question": "Is conversie IMAGE naar BASE64 veilig?",
-          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+          "question": "Is de codering van afbeelding naar Base64 veilig?",
+          "answer": "Ja. Alle conversie vindt lokaal plaats in je browser. Je afbeeldingen worden nooit naar een server gestuurd."
         },
         {
-          "question": "Kan ik meerdere IMAGE-bestanden tegelijk converteren?",
-          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+          "question": "Wanneer Base64 gebruiken in plaats van afbeeldingsbestanden?",
+          "answer": "Base64 is ideaal voor kleine afbeeldingen (pictogrammen, logo's onder 10 KB) waarbij het besparen van een HTTP-verzoek belangrijk is. Voor grotere afbeeldingen zijn aparte bestanden efficiënter omdat ze door de browser gecachet kunnen worden."
         },
         {
-          "question": "Wordt BASE64 door alle browsers ondersteund?",
-          "answer": "BASE64 wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
+          "question": "Welke afbeeldingsformaten worden ondersteund?",
+          "answer": "De converter accepteert PNG, JPG, GIF, WebP, SVG, BMP en andere standaard afbeeldingsformaten. Het MIME-type in de Data URI wordt automatisch gedetecteerd."
         }
       ]
     },

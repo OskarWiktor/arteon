@@ -2,7 +2,7 @@
   "toolKey": "htmlToMarkdown",
   "locale": "fi",
   "metadata": {
-    "title": "HTML Markdown -muunnin — HTML Markdown",
+    "title": "HTML Markdown -muunnin - HTML Markdown",
     "description": "Muunna HTML Markdown-muotoon. Automaattinen jäsennys ja muotoilu. Ilmainen.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/html-markdown-muunnin"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa HTML Markdown-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">HTML on laajalti kaytetty tiedostomuoto laajalla yhteensopivuudella. Kayttotapauksesta riippuen muuntaminen MARKDOWN-muotoon voi tarjota merkittavia etuja — pienemmat tiedostot, parempi laatu tai laajempi alusta tuki.</p><p class=\"text-mid mb-4\">Tama ilmainen verkkomuunnin muuntaa HTML-tiedostosi MARKDOWN-muotoon suoraan selaimessa. Tiedostoja ei laheteta palvelimille — koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman paivittaisia rajoituksia, rekisteroitymista tai vesileimoja. Vedaa ja pudota tiedostot, saada laatua ja lataa tulokset.</p>",
+      "html": "<p class=\"text-mid mb-4\">HTML on laajalti käytetty tiedostomuoto laajalla yhteensopivuudella. Käyttötapauksesta riippuen muuntaminen MARKDOWN-muotoon voi tarjota merkittäviä etuja - pienemmat tiedostot, parempi laatu tai laajempi alustatuki.</p><p class=\"text-mid mb-4\">Tämä ilmainen verkkomuunnin muuntaa HTML-tiedostosi MARKDOWN-muotoon suoraan selaimessa. Tiedostoja ei lähetetä palvelimille - koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman päivittäisiä rajoituksia, rekisteröitymistä tai vesileimoja. Vedä ja pudota tiedostot, säädä laatua ja lataa tulokset.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "HTML to Markdown conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla HTML MARKDOWN?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Miten HTML:n muuntaminen Markdowniksi toimii?",
+      "html": "<p class=\"text-mid mb-4\">HTML käyttää tageja kuten &lt;h1&gt;, &lt;strong&gt;, &lt;a&gt; ja &lt;ul&gt; sisällön rakenteistamiseen. Markdown käyttää yksinkertaisempia symboleja: # otsikoille, ** lihavoidulle, [Teksti](URL) linkeille ja - listoille. Muunnin jäsentää HTML-dokumenttipuun ja yhdistää jokaisen elementin sen Markdown-vastineeseen.</p><p class=\"text-mid mb-4\">Esim. &lt;h1&gt;Otsikko&lt;/h1&gt; muuttuu # Otsikko:ksi, &lt;strong&gt;lihavoitu&lt;/strong&gt; muuttuu **lihavoitu**:ksi ja &lt;a href=\"url\"&gt;Linkki&lt;/a&gt; muuttuu [Linkki](url):ksi. Monimutkaiset rakenteet kuten taulukot, koodilohkot ja sisäkkäiset listat käsitellään myös.</p><p class=\"text-mid\">HTML:n muuntaminen Markdowniksi on hyödyllistä verkkosisällön siirtämisessä dokumentaatiojärjestelmiin, staattisiin sivugeneraattoreihin tai Markdownia käyttäviin alustoihin. Kaikki muunnos tapahtuu paikallisesti selaimessasi.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vinkkeja HTML-MARKDOWN-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "title": "Vinkkejä HTML:n muuntamiseen Markdowniksi",
+      "description": "Muutamia vinkkejä yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
-          "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
+          "icon": "RiFileTextLine",
+          "title": "Inline-tyylit poistetaan",
+          "description": "Markdown ei tue CSS:ää. Inline-tyylit, luokat ja ID:t HTML:stä poistetaan muunnoksen aikana. Vain semanttinen rakenne ja tekstisisältö säilyvät."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Jo pakatut",
-          "description": "Jos HTML oli jo voimakkaasti pakattu, muunnos MARKDOWN-muotoon ei valttamatta saasta paljon."
+          "title": "Monimutkaiset asettelut",
+          "description": "HTML-asettelut div-elementeillä, grideillä tai flexboxilla eivät ole esitettävissä Markdownissa. Muunnin poimii tekstisisällön ja säilyttää otsikot, listat ja linkit."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "MARKDOWN ei tue lapinakyyytta. Lapinakyyt alueet muuttuvat valkoisiksi. Harkitse PNG:ta tai WebP:ta."
+          "icon": "RiCodeLine",
+          "title": "Kuvat ja linkit",
+          "description": "HTML &lt;img&gt;-tagit muuttuvat ![Alt](Src):ksi ja &lt;a&gt;-tagit muuttuvat [Teksti](URL):ksi Markdownissa. Suhteelliset URL:t säilyvät muuttumattomina."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot HTML-tiedostoista."
+          "icon": "RiFileTextLine",
+          "title": "Taulukot",
+          "description": "HTML-taulukot muunnetaan putkierotelluiksi Markdown-taulukoiksi mahdollisuuksien mukaan. Monimutkaiset taulukot colspan- tai rowspan-attribuuteilla voivat yksinkertaistua."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What HTML elements are converted?",
+      "html": "<p class=\"text-mid mb-4\">The converter handles all common semantic HTML elements:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – &lt;h1&gt; through &lt;h6&gt; → # through ######</li><li><strong>Text formatting</strong> – &lt;strong&gt;/&lt;b&gt; → **bold**, &lt;em&gt;/&lt;i&gt; → *italic*, &lt;del&gt; → ~~strikethrough~~</li><li><strong>Links</strong> – &lt;a href&gt; → [text](url)</li><li><strong>Images</strong> – &lt;img&gt; → ![alt](src)</li><li><strong>Lists</strong> – &lt;ul&gt;/&lt;ol&gt; → - / 1. list items</li><li><strong>Code</strong> – &lt;code&gt; → `inline`, &lt;pre&gt;&lt;code&gt; → fenced blocks</li><li><strong>Tables</strong> – &lt;table&gt; → pipe-separated Markdown tables</li></ul><p class=\"text-mid mt-3\">Non-semantic elements (div, span, script, style) are stripped. Only meaningful content is preserved in the Markdown output.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
         },
         {
-          "question": "Onko HTML MARKDOWN muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "question": "Onko HTML:n muuntaminen Markdowniksi turvallista?",
+          "answer": "Kyllä. Kaikki muunnos tapahtuu paikallisesti selaimessasi. Mitään tietoja ei lähetetä millekään palvelimelle."
         },
         {
-          "question": "Voinko muuntaa useita HTML-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "question": "Häviääkö muotoilu muunnoksessa?",
+          "answer": "Markdown tukee otsikoita, lihavointia, kursiivia, linkkejä, kuvia, listoja, koodilohkoja, lainauksia ja taulukoita. Yksinomaiset HTML-ominaisuudet kuten mukautettu CSS, värit ja monimutkaiset asettelut eivät ole esitettävissä Markdownissa ja yksinkertaistuvat."
         },
         {
-          "question": "Tukevatko kaikki selaimet MARKDOWN-muotoa?",
-          "answer": "MARKDOWN-muotoa tukevat Chrome, Firefox, Safari, Edge ja Opera."
+          "question": "Voinko käyttää Markdown-tulosta GitHubissa?",
+          "answer": "Kyllä. Tulos noudattaa standardi Markdown-syntaksia, yhteensopiva GitHubin, GitLabin, Bitbucketin, Notionin, Obsidianin ja kaikkien muiden Markdownia renderöivien alustojen kanssa."
         }
       ]
     },

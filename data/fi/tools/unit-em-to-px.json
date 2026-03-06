@@ -1,0 +1,277 @@
+{
+  "toolKey": "emToPx",
+  "locale": "fi",
+  "metadata": {
+    "title": "Em px:ksi – muunnin",
+    "description": "Muunna CSS em pikseleiksi ja päinvastoin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/em-px-muunnin"
+  },
+  "hero": {
+    "title": "Em px:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/em-px-muunnin",
+      "label": "em px:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Em px:ksi – muunnin",
+      "alternateName": ["Em px:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna CSS em pikseleiksi ja päinvastoin.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin em muunnetaan pikseleiksi?",
+      "html": "<p class=\"text-mid mb-4\">CSS-yksikkö em on suhteellinen isäntäelementin kirjasinkokoon. Oletuksella 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Toisin kuin rem (suhteellinen juureen), em kaskadoi: 1,5em × 1,5em = 2,25× peruskoko.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "EM to pixels converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTextSpacing",
+          "title": "Verkkokehitys",
+          "description": "Muunna em pikseleihin todellisten kokojen ymmärtämiseksi."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Typografia",
+          "description": "body 1em = 16px, h1 2,5em = 40px."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Responsiivinen suunnittelu",
+          "description": "em breakpointeille ja välyksille."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Web-kehitys",
+          "description": "em kunnioittaa käyttäjän kirjasinasetuksia."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">px = em × isäntäelementin kirjasinkoko. Oletus: 16px.</p><p class=\"text-mid\">Em kaskadoi: body 16px, div 1,5em (24px), p sen sisällä 1,5em:llä = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">px = em × isäntäelementin kirjasinkoko. Oletus: 16px.</p><p class=\"text-mid\">Em kaskadoi: body 16px, div 1,5em (24px), p sen sisällä 1,5em:llä = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "em vs px vs rem",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "em"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Viite",
+          "values": {
+            "unit1": "Isäntäelementin kirjasin",
+            "unit2": "Kiinteä pikseli"
+          }
+        },
+        {
+          "name": "Kaskadoi",
+          "values": {
+            "unit1": "Kyllä",
+            "unit2": "Ei"
+          }
+        },
+        {
+          "name": "Responsiivinen",
+          "values": {
+            "unit1": "Kyllä",
+            "unit2": "Ei"
+          }
+        },
+        {
+          "name": "Saavutettavuus",
+          "values": {
+            "unit1": "Kunnioittaa asetuksia",
+            "unit2": "Kiinteä koko"
+          }
+        },
+        {
+          "name": "Ennakoitavuus",
+          "values": {
+            "unit1": "Kontekstiriippuvainen",
+            "unit2": "Aina vakio"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta px on 1em?",
+          "answer": "Oletuksena 1em = 16px. Mutta em on suhteellinen isäntäelementtiin."
+        },
+        {
+          "question": "Mikä ero on em:llä ja rem:llä?",
+          "answer": "em viittaa isäntäelementtiin, rem juureen (html). rem on ennakoitavampi."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "em px:ksi – Arteon",
+      "defaultSubject": "Palaute: em-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "toolKey": "barToPsi",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de bar a PSI – conversión de presión",
+    "description": "Convierte bar a PSI y viceversa. Útil para presión de neumáticos, equipos industriales y sistemas HVAC.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-bar-a-psi"
+  },
+  "hero": {
+    "title": "Convertir bar a PSI",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-bar-a-psi",
+      "label": "bar a PSI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de bar a PSI – conversión de presión",
+      "alternateName": ["Convertir bar a PSI"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte bar a PSI y viceversa. Útil para presión de neumáticos, equipos industriales y sistemas HVAC.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir bar a PSI?",
+      "html": "<p class=\"text-mid mb-4\">Bar es una unidad métrica de presión usada en Europa. PSI (libras por pulgada cuadrada) es la unidad de presión estándar en EE. UU. 1 bar = 14,5038 PSI.</p><p class=\"text-mid mb-4\">Esta conversión es esencial para la presión de neumáticos (2,2 bar = 32 PSI), compresores de aire, equipos de buceo y especificaciones industriales.</p><p class=\"text-mid mb-4\">Ejemplos: 1 bar = 14,5 PSI, 2,5 bar = 36,3 PSI, 3 bar = 43,5 PSI.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de bar a PSI – conversión de presión – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada. Puedes usar punto o coma como separador decimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado de la conversión aparece instantáneamente en el campo contiguo.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Haz clic en Copiar resultado o usa el botón Invertir para convertir en dirección opuesta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Neumáticos",
+          "description": "Presión de neumáticos: Europa en bar, EE. UU. en PSI. 2,3 bar = 33 PSI."
+        },
+        {
+          "icon": "RiAnchorLine",
+          "title": "Industria",
+          "description": "Compresores, hidráulica y neumática en bar (Europa) o PSI (EE. UU.)."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Buceo",
+          "description": "Presión de botellas: 200 bar = 2.901 PSI. Presión submarítima a 10 m ≈ 2 bar."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Meteorología",
+          "description": "Presión atmosférica: 1,01325 bar = 14,696 PSI a nivel del mar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador. Ningún dato se envía a ningún servidor."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza instantáneamente mientras escribes, sin necesidad de pulsar ningún botón."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "El botón Invertir te permite convertir en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Una tabla con valores de conversión comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 bar = 100.000 pascales = 14,50377 PSI exactamente. Para convertir bar a PSI, multiplica por 14,5038.</p><p class=\"text-mid mb-4\">Ejemplo: 2,5 bar × 14,5038 = 36,26 PSI.</p><p class=\"text-mid\">La presión atmosférica estándar es 1,01325 bar = 14,696 PSI = 1 atm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 bar = 100.000 pascales = 14,50377 PSI exactamente. Para convertir bar a PSI, multiplica por 14,5038.</p><p class=\"text-mid mb-4\">Ejemplo: 2,5 bar × 14,5038 = 36,26 PSI.</p><p class=\"text-mid\">La presión atmosférica estándar es 1,01325 bar = 14,696 PSI = 1 atm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Bar vs PSI – comparación",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Bar"
+        },
+        {
+          "id": "unit2",
+          "name": "PSI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistema",
+          "values": {
+            "unit1": "Métrico",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Valor base",
+          "values": {
+            "unit1": "100.000 Pa",
+            "unit2": "6.894,76 Pa"
+          }
+        },
+        {
+          "name": "Neumáticos",
+          "values": {
+            "unit1": "Europa (bar)",
+            "unit2": "EE. UU. (PSI)"
+          }
+        },
+        {
+          "name": "Industria",
+          "values": {
+            "unit1": "Europa",
+            "unit2": "EE. UU."
+          }
+        },
+        {
+          "name": "Atmósfera",
+          "values": {
+            "unit1": "1,013 bar",
+            "unit2": "14,696 PSI"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos PSI es 1 bar?",
+          "answer": "1 bar = 14,5038 PSI."
+        },
+        {
+          "question": "¿Cuántos bar son 30 PSI?",
+          "answer": "30 PSI = 2,07 bar. Presión típica de un neumático de coche."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "bar na PSI – Arteon",
+      "defaultSubject": "Feedback: bar-to-psi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

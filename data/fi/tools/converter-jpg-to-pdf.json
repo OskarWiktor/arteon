@@ -2,7 +2,7 @@
   "toolKey": "jpgToPdf",
   "locale": "fi",
   "metadata": {
-    "title": "JPG PDF -muunnin — JPG PDF",
+    "title": "JPG PDF -muunnin - JPG PDF",
     "description": "Muunna JPG-kuvat PDF-dokumenteiksi. Yhdistä useita tiedostoja yhdeksi PDF:ksi. Ilmainen.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/jpg-pdf-muunnin"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Muunna",
-          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi."
+          "text": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessasi."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa JPG PDF-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">JPG on laajalti kaytetty tiedostomuoto laajalla yhteensopivuudella. Kayttotapauksesta riippuen muuntaminen PDF-muotoon voi tarjota merkittavia etuja — pienemmat tiedostot, parempi laatu tai laajempi alusta tuki.</p><p class=\"text-mid mb-4\">Tama ilmainen verkkomuunnin muuntaa JPG-tiedostosi PDF-muotoon suoraan selaimessa. Tiedostoja ei laheteta palvelimille — koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman paivittaisia rajoituksia, rekisteroitymista tai vesileimoja. Vedaa ja pudota tiedostot, saada laatua ja lataa tulokset.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPG on laajalti käytetty tiedostomuoto laajalla yhteensopivuudella. Käyttötapauksesta riippuen muuntaminen PDF-muotoon voi tarjota merkittäviä etuja - pienemmat tiedostot, parempi laatu tai laajempi alustatuki.</p><p class=\"text-mid mb-4\">Tämä ilmainen verkkomuunnin muuntaa JPG-tiedostosi PDF-muotoon suoraan selaimessa. Tiedostoja ei lähetetä palvelimille - koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman päivittäisiä rajoituksia, rekisteröitymistä tai vesileimoja. Vedä ja pudota tiedostot, säädä laatua ja lataa tulokset.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "JPG to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Muunna",
-          "description": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi.",
+          "description": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessasi.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Laatuasetukset — mita valita muunnoksessa JPG PDF?",
-      "html": "<p class=\"text-mid\">Liukusaadin 60%-95%. Korkeampi = parempi laatu mutta suurempi tiedosto.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (oletus) — hyva verkkosivuille, blogeille, artikkeleille.</strong></li><li><strong>85–90% — tuotekuville, portfolioille ja gallerioille.</strong></li><li><strong>60–70% — kun tiedostokoon minimointi on tarkeaa.</strong></li></ul><p class=\"text-mid mt-3\">85% laadulla ero JPG:n ja PDF:n valilla on kaytannossa huomaamaton.</p>"
+      "title": "Laatuasetukset - mita valita muunnoksessa JPG PDF?",
+      "html": "<p class=\"text-mid\">Liukusaadin 60%-95%. Korkeampi = parempi laatu mutta suurempi tiedosto.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (oletus) - hyva verkkosivuille, blogeille, artikkeleille.</strong></li><li><strong>85–90% - tuotekuville, portfolioille ja gallerioille.</strong></li><li><strong>60–70% - kun tiedostokoon minimointi on tarkeaa.</strong></li></ul><p class=\"text-mid mt-3\">85% laadulla ero JPG:n ja PDF:n valilla on kaytannossa huomaamaton.</p>"
     },
     {
       "type": "gap",
@@ -210,28 +210,28 @@
     {
       "type": "sectionSteps",
       "title": "Vinkkeja JPG-PDF-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "description": "Vinkkeja yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
+          "title": "Erittäin suuret tiedostot",
           "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Jo pakatut",
-          "description": "Jos JPG oli jo voimakkaasti pakattu, muunnos PDF-muotoon ei valttamatta saasta paljon."
+          "description": "Jos JPG oli jo voimakkaasti pakattu, muunnos PDF-muotoon ei välttämättä säästä paljon."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "PDF ei tue lapinakyyytta. Lapinakyyt alueet muuttuvat valkoisiksi. Harkitse PNG:ta tai WebP:ta."
+          "title": "Läpinäkyvyys",
+          "description": "PDF ei tue läpinäkyvyyttä. Läpinäkyvät alueet muuttuvat valkoisiksi. Harkitse PNG:tä tai WebP:tä."
         },
         {
           "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot JPG-tiedostoista."
+          "title": "Säilytä alkuperäiset",
+          "description": "Häviöllinen muunnos on peruuttamaton. Säilytä kopiot JPG-tiedostoista."
         }
       ]
     },
@@ -241,12 +241,21 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla JPG PDF?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Kuinka paljon säästät muuntamalla JPG PDF?",
+      "html": "<p class=\"text-mid mb-4\">Säästöt riippuvat tiedostotyypistä ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Näyttökuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset säästöt vaihtelevat sisällön ja asetusten mukaan.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">While JPG to PDF conversion creates documents rather than web images, it's worth noting that PDF files embedded or linked on websites also affect page performance. Large PDFs slow down downloads and frustrate users.</p><p class=\"text-mid mb-4\">When creating PDFs from JPG images, use appropriate quality settings. For web-shared PDFs, quality 80–85 produces files that look great while keeping the PDF size manageable. For print, use quality 90–95.</p><p class=\"text-mid\">If you need to display the images on a web page rather than in a PDF, consider converting to WebP or AVIF instead for optimal web performance.</p>"
     },
     {
       "type": "faq",
@@ -271,11 +280,11 @@
         },
         {
           "question": "Onko JPG PDF muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "answer": "Kyllä. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitään ei lähetetä palvelimille."
         },
         {
           "question": "Voinko muuntaa useita JPG-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "answer": "Kyllä. Erämuunnos ilman rajaa. Vedä tiedostot muuntimeen."
         },
         {
           "question": "Tukevatko kaikki selaimet PDF-muotoa?",

@@ -1,0 +1,277 @@
+{
+  "toolKey": "tonnesToPounds",
+  "locale": "ro",
+  "metadata": {
+    "title": "T în lbs – convertor",
+    "description": "Convertiți tone în livre și invers.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-tone-in-livre"
+  },
+  "hero": {
+    "title": "T în lbs",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-tone-in-livre",
+      "label": "t în lbs"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "T în lbs – convertor",
+      "alternateName": ["T în lbs"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți tone în livre și invers.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: T în lbs?",
+      "html": "<p class=\"text-mid mb-4\">Metrische Tonne (t) = 1.000 kg. Pfund (lb) este unitatea standardă-Masseeinheit im US-System. 1 Tonne = 2.204,62 Pfund.</p><p class=\"text-mid mb-4\">Diese conversie ist wichtig für internationalen Versand, Frachtlogistik, Landwirtschaft und Schwerindustrie.</p><p class=\"text-mid mb-4\">Beispiele: 1 t = 2.205 lbs, 5 t = 11.023 lbs. Ein typisches Auto wiegt ca. 1,5 t = 3.307 lbs.</p><p class=\"text-mid\">Toate calculele se fac local, în browserul dvs. — nimic nu este trimis la vreun server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "T în lbs – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShipLine",
+          "title": "Transport morski",
+          "description": "Ładowność statków i kontenerów podaje się w tonach lub funtach."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Logistică și transport",
+          "description": "Amerykańskie firmy transportowe podają limity wagi w funtach."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Agricultură",
+          "description": "Plony i ceny zbóż w USA: funty lub buszle."
+        },
+        {
+          "icon": "RiBuildingLine",
+          "title": "Construcții",
+          "description": "Waga materiałów budowlanych (stal, beton) w tonach lub funtach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">1 metrische Tonne = 1.000 kg. 1 kg = 2,20462 lbs. Daher: 1 Tonne = 2.204,62 lbs.</p><p class=\"text-mid mb-4\">Hinweis: Die US Short Ton = 2.000 lbs = 907,185 kg. Die UK Long Ton = 2.240 lbs = 1.016,05 kg. Dieser Konverter verwendet die metrische Tonne (1.000 kg).</p><p class=\"text-mid\">Um Tonnen in Pfund umzurechnen, înmulțiți cu 2.204,62.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Car: 1.2–2.0 t = 2,646–4,409 lbs. SUV: 2.0–2.5 t = 4,409–5,512 lbs.</li><li>Shipping container (20ft, loaded): up to 21.6 t = 47,620 lbs.</li><li>US short ton = 2,000 lbs = 907 kg (not a metric tonne!).</li><li>1 metric tonne of water = 1,000 liters = 264 US gallons.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Metric tonne (t) vs Pound (lb)",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Tonne (t)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pound (lb)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistem",
+          "values": {
+            "unit1": "Metric (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Valoare de bază",
+          "values": {
+            "unit1": "1,000 kg",
+            "unit2": "0.4536 kg"
+          }
+        },
+        {
+          "name": "Shipping",
+          "values": {
+            "unit1": "International",
+            "unit2": "USA"
+          }
+        },
+        {
+          "name": "Vehicles",
+          "values": {
+            "unit1": "Europe (kg/t)",
+            "unit2": "USA (lbs)"
+          }
+        },
+        {
+          "name": "Agriculture",
+          "values": {
+            "unit1": "Tonnes/hectare",
+            "unit2": "Pounds/acre"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Câți Pfund ist 1 Tonne?",
+          "answer": "1 metrische Tonne = 2.204,62 Pfund."
+        },
+        {
+          "question": "Ce este der Unterschied zwischen Tonne und Ton?",
+          "answer": "Metrische Tonne = 1.000 kg = 2.205 lbs. US Short Ton = 2.000 lbs = 907 kg. UK Long Ton = 2.240 lbs = 1.016 kg."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Da. Toate calculele se fac în browserul dvs."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "t în lbs – Arteon",
+      "defaultSubject": "Feedback: tonnes-to-pounds"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

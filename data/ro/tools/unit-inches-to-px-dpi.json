@@ -1,0 +1,273 @@
+{
+  "toolKey": "inchesToPxDpi",
+  "locale": "ro",
+  "metadata": {
+    "title": "Inci în px – convertor",
+    "description": "Convertiți inci în pixeli cu suport DPI.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-inci-in-px"
+  },
+  "hero": {
+    "title": "Inci în px",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-inci-in-px",
+      "label": "inci în px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Inci în px – convertor",
+      "alternateName": ["Inci în px"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți inci în pixeli cu suport DPI.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: Inci în px?",
+      "html": "<p class=\"text-mid mb-4\">US paper sizes and print specifications use inches. To prepare digital artwork, convert to pixels: pixels = inches × DPI.</p><p class=\"text-mid mb-4\">US Letter paper (8.5 × 11″) at 300 DPI = 2,550 × 3,300 pixels. A 4 × 6″ photo print at 300 DPI = 1,200 × 1,800 pixels.</p><p class=\"text-mid mb-4\">This conversion is essential for preparing images for US print shops, setting up document templates, and calculating required image resolution.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Inci în px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tipărire",
+          "description": "Letter 8,5 × 11″ przy 300 DPI = 2 550 × 3 300 px."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Monitory",
+          "description": "Oblicz PPI monitora: 27″ 4K (3840px) = 163 PPI."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografia",
+          "description": "Wydruk zdjęcia 4 × 6″ przy 300 DPI = 1 200 × 1 800 px."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Dezvoltare web",
+          "description": "W CSS 1 in = 96 px (definicja CSS)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">The formula is simply: pixels = inches × DPI. No additional conversion factor needed since DPI is already dots per inch.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 inch = 300 pixels. At 72 DPI: 1 inch = 72 pixels.</p><p class=\"text-mid\">To find required DPI: DPI = pixels / inches. A 4,000 px image printed at 8″ wide = 500 DPI.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Photo prints: 4×6″ at 300 DPI = 1,200×1,800 px (2.16 MP minimum).</li><li>US Letter: 8.5×11″ at 300 DPI = 2,550×3,300 px.</li><li>US Tabloid: 11×17″ at 300 DPI = 3,300×5,100 px.</li><li>Retina display: effective 2× DPI. A “72 DPI” screen image actually needs 144 px per inch on Retina.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Common print sizes at 300 DPI",
+      "featureLabel": "Print size",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Inches"
+        },
+        {
+          "id": "unit2",
+          "name": "Pixels (300 DPI)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Wallet",
+          "values": {
+            "unit1": "2.5 × 3.5″",
+            "unit2": "750 × 1,050"
+          }
+        },
+        {
+          "name": "4×6 photo",
+          "values": {
+            "unit1": "4 × 6″",
+            "unit2": "1,200 × 1,800"
+          }
+        },
+        {
+          "name": "8×10 photo",
+          "values": {
+            "unit1": "8 × 10″",
+            "unit2": "2,400 × 3,000"
+          }
+        },
+        {
+          "name": "US Letter",
+          "values": {
+            "unit1": "8.5 × 11″",
+            "unit2": "2,550 × 3,300"
+          }
+        },
+        {
+          "name": "Poster (24×36)",
+          "values": {
+            "unit1": "24 × 36″",
+            "unit2": "7,200 × 10,800"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Câți Pixel sind 1 Zoll bei 300 DPI?",
+          "answer": "1 Zoll bei 300 DPI = 300 Pixel."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "inci în px – Arteon",
+      "defaultSubject": "Feedback: inches-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

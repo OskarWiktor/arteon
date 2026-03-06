@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert SVG to JPG?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is a lossless image format based on vector graphics. It is widely used for logos and icons and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting SVG to JPG (JPEG) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">Note that JPG does not support transparency – any transparent areas will be filled with a solid background color (typically white). As a lossy format, JPG achieves excellent compression ratios, especially for photographs and complex images.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many SVG files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">SVG is a vector format that scales to any size without pixelation — perfect for logos, icons, and technical diagrams. However, many platforms require raster images: social media (Instagram, Facebook), email campaigns, marketplaces, and some CMS systems only accept JPG, PNG, or WebP.</p><p class=\"text-mid mb-4\">Converting SVG to JPG rasterizes the vector image and applies lossy compression, producing a compact file universally supported by every device and application. JPG is the best choice for photographic or complex SVG graphics where file size matters.</p><p class=\"text-mid mb-4\">Note that JPG does not support transparency — transparent areas in your SVG will be filled with a solid background color (typically white). If transparency is important, convert to PNG or WebP instead. Keep the original SVG for editing and scaling.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "SVG to JPG conversion",
       "variant": "right"
@@ -252,6 +252,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting SVG to JPG?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (recommended) – the best balance for most SVG-to-JPG conversions. Produces clean raster images from vector sources.</strong></li><li><strong>90–95% – for detailed illustrations with gradients and subtle color transitions.</strong></li><li><strong>60–75% – for thumbnails and small preview images where file size is the priority.</strong></li></ul><p class=\"text-mid mt-3\">Since SVG is a vector format, the quality of the JPG output also depends on the rasterization resolution. Make sure the output dimensions match your intended display size.</p>"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about SVG to JPG conversion",
       "openByDefault": 0,
@@ -293,7 +302,7 @@
     {
       "type": "contactForm",
       "title": "Help us improve our tools",
-      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message — we respond within 24 hours.",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message - we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "SVG to JPG converter – Arteon",
       "defaultSubject": "Feedback: SVG to JPG converter"

@@ -33,22 +33,21 @@ function loadMetricool() {
  * @see https://developers.google.com/funding-choices/fc-api-docs
  */
 function isAnalyticsAllowed(fc: any): boolean {
-  // eslint-disable-line @typescript-eslint/no-explicit-any
   try {
     const cm = fc.getGoogleConsentModeValues?.();
-    if (!cm) return true; // API not available — rest of world, defaults granted
+    if (!cm) return true; // API not available - rest of world, defaults granted
 
     const status = cm.analyticsStoragePurposeConsentStatus;
     const StatusEnum = fc.ConsentModePurposeStatusEnum;
 
-    if (!StatusEnum) return true; // Enum not loaded — safe fallback
+    if (!StatusEnum) return true; // Enum not loaded - safe fallback
 
     // Allow: GRANTED, NOT_APPLICABLE (region not regulated), NOT_CONFIGURED (not set up in P&M UI)
     return (
       status === StatusEnum.CONSENT_MODE_PURPOSE_STATUS_GRANTED || status === StatusEnum.CONSENT_MODE_PURPOSE_STATUS_NOT_APPLICABLE || status === StatusEnum.CONSENT_MODE_PURPOSE_STATUS_NOT_CONFIGURED
     );
   } catch {
-    return true; // Error — safe fallback (defaults are granted for non-regulated regions)
+    return true; // Error - safe fallback (defaults are granted for non-regulated regions)
   }
 }
 
@@ -57,7 +56,7 @@ function isAnalyticsAllowed(fc: any): boolean {
  * and loads third-party analytics scripts when analytics_storage is granted.
  *
  * GA4 is loaded unconditionally in Advanced Consent Mode (see RootHtml.tsx)
- * and respects Consent Mode natively — no manual handling needed.
+ * and respects Consent Mode natively - no manual handling needed.
  *
  * Ahrefs and Metricool are NOT Consent-Mode-aware, so we load them
  * only after the user grants analytics consent (or if consent is

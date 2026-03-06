@@ -136,7 +136,7 @@
         {
           "icon": "RiFileTextLine",
           "title": "Freitext",
-          "description": "Beliebiger Text — Notizen, Anleitungen, WLAN-Zugangsdaten oder kurze Nachrichten."
+          "description": "Beliebiger Text - Notizen, Anleitungen, WLAN-Zugangsdaten oder kurze Nachrichten."
         },
         {
           "icon": "RiContactsLine",
@@ -320,7 +320,7 @@
         {
           "icon": "RiInfinityLine",
           "title": "Ohne Limits",
-          "description": "Beliebig viele QR-Codes erstellen — ohne Registrierung und ohne Einschränkungen."
+          "description": "Beliebig viele QR-Codes erstellen - ohne Registrierung und ohne Einschränkungen."
         },
         {
           "icon": "RiPaletteLine",

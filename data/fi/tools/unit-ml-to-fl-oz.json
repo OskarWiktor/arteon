@@ -1,0 +1,273 @@
+{
+  "toolKey": "mlToFlOz",
+  "locale": "fi",
+  "metadata": {
+    "title": "Ml fl oz:ksi – muunnin",
+    "description": "Muunna millilitrat nesteunssiksi ja päinvastoin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/ml-nesteunssiksi-muunnin"
+  },
+  "hero": {
+    "title": "Ml fl oz:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/ml-nesteunssiksi-muunnin",
+      "label": "ml fl oz:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ml fl oz:ksi – muunnin",
+      "alternateName": ["Ml fl oz:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna millilitrat nesteunssiksi ja päinvastoin.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin mL muunnetaan fl oz:ksi?",
+      "html": "<p class=\"text-mid mb-4\">Millilitra (mL) on metrinen tilavuusyksikkö. US fluid ounce (fl oz) = 29,5735 mL.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Milliliters to fluid ounces converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Ruoanlaitto",
+          "description": "1 US cup = 8 fl oz = 236,6 mL."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Ruoanlaitto ja reseptit",
+          "description": "Tuotteet mL:ssä ja fl oz:ssä."
+        },
+        {
+          "icon": "RiGobletLine",
+          "title": "Lääketiede",
+          "description": "Nestemäiset lääkkeet mL:ssä tai fl oz:ssä."
+        },
+        {
+          "icon": "RiMedicineBottleLine",
+          "title": "Lentomatkat",
+          "description": "TSA-raja: 3,4 fl oz = 100 mL."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 fl oz US = 29,5735 mL. Jaa mL 29,57:llä. Nyrkkisääntö: jaa 30:llä.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 fl oz US = 29,5735 mL. Jaa mL 29,57:llä. Nyrkkisääntö: jaa 30:llä.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "mL vs fl oz",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "mL"
+        },
+        {
+          "id": "unit2",
+          "name": "US fl oz",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Järjestelmä",
+          "values": {
+            "unit1": "Metrinen",
+            "unit2": "US Customary"
+          }
+        },
+        {
+          "name": "Perusta",
+          "values": {
+            "unit1": "1/1000 L",
+            "unit2": "29,57 mL"
+          }
+        },
+        {
+          "name": "Ruoanlaitto",
+          "values": {
+            "unit1": "Kansainvälinen",
+            "unit2": "USA"
+          }
+        },
+        {
+          "name": "Juomat",
+          "values": {
+            "unit1": "mL",
+            "unit2": "fl oz"
+          }
+        },
+        {
+          "name": "UK fl oz",
+          "values": {
+            "unit1": "28,41 mL",
+            "unit2": "29,57 mL (US)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta mL on 1 fl oz?",
+          "answer": "1 US fl oz = 29,5735 mL."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "ml fl oz:ksi – Arteon",
+      "defaultSubject": "Palaute: ml-to-fl-oz"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

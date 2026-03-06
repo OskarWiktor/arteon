@@ -7,14 +7,21 @@ export function clamp(value: number, min: number, max: number): number {
 export function hexToRgb(hex: string): RGB | null {
   let value = hex.trim().replace('#', '');
 
-  if (value.length === 3) {
+  if (!/^[0-9A-Fa-f]+$/.test(value)) return null;
+
+  if (value.length === 3 || value.length === 4) {
+    // #RGB or #RGBA — expand to 6 chars (ignore alpha)
     value = value
+      .slice(0, 3)
       .split('')
       .map((c) => c + c)
       .join('');
+  } else if (value.length === 8) {
+    // #RRGGBBAA — strip alpha channel
+    value = value.slice(0, 6);
+  } else if (value.length !== 6) {
+    return null;
   }
-
-  if (value.length !== 6) return null;
 
   const r = parseInt(value.slice(0, 2), 16);
   const g = parseInt(value.slice(2, 4), 16);

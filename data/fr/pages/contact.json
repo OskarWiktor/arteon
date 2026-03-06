@@ -6,11 +6,11 @@
   },
   "hero": {
     "title": "Contactez l’équipe Arteon",
-    "description": "Signalez un bug, suggérez un nouvel outil ou posez une question — nous répondons sous un jour ouvrable"
+    "description": "Signalez un bug, suggérez un nouvel outil ou posez une question - nous répondons sous un jour ouvrable"
   },
   "intro": {
     "title": "Une question ou une suggestion ?",
-    "textBefore": "Nous sommes ravis de recevoir vos retours sur nos outils. Si vous avez trouvé un bug, avez une idée pour un nouvel outil ou avez besoin d'aide — écrivez-nous à",
+    "textBefore": "Nous sommes ravis de recevoir vos retours sur nos outils. Si vous avez trouvé un bug, avez une idée pour un nouvel outil ou avez besoin d'aide - écrivez-nous à",
     "textAfter": ". Nous répondons sous un jour ouvrable."
   },
   "formTitle": "Envoyez-nous un message",

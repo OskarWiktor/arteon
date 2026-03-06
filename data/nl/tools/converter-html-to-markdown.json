@@ -2,7 +2,7 @@
   "toolKey": "htmlToMarkdown",
   "locale": "nl",
   "metadata": {
-    "title": "HTML naar Markdown converter — HTML Markdown",
+    "title": "HTML naar Markdown converter - HTML Markdown",
     "description": "Converteer HTML naar Markdown-formaat. Automatisch parsen en formatteren. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/html-naar-markdown-converter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom HTML naar Markdown converteren?",
-      "html": "<p class=\"text-mid mb-4\">HTML is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar MARKDOWN aanzienlijke voordelen bieden — kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw HTML-bestanden direct in de browser om naar het MARKDOWN-formaat. Er worden geen bestanden naar een server geupload — het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">HTML is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar MARKDOWN aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw HTML-bestanden direct in de browser om naar het MARKDOWN-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "HTML to Markdown conversion",
       "variant": "right"
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Directe conversie",
-          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's - snel en werkt ook offline."
         }
       ]
     },
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hoeveel besparen bij conversie HTML naar MARKDOWN?",
-      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+      "title": "Hoe werkt de conversie van HTML naar Markdown?",
+      "html": "<p class=\"text-mid mb-4\">HTML gebruikt tags zoals &lt;h1&gt;, &lt;strong&gt;, &lt;a&gt; en &lt;ul&gt; om content te structureren. Markdown gebruikt eenvoudigere symbolen: # voor koppen, ** voor vetgedrukt, [Tekst](URL) voor links en - voor lijsten. De converter analyseert de HTML-documentboom en koppelt elk element aan zijn Markdown-equivalent.</p><p class=\"text-mid mb-4\">Bijvoorbeeld, &lt;h1&gt;Titel&lt;/h1&gt; wordt # Titel, &lt;strong&gt;vetgedrukt&lt;/strong&gt; wordt **vetgedrukt** en &lt;a href=\"url\"&gt;Link&lt;/a&gt; wordt [Link](url). Complexe structuren zoals tabellen, codeblokken en geneste lijsten worden ook verwerkt.</p><p class=\"text-mid\">De conversie van HTML naar Markdown is nuttig voor het migreren van webcontent naar documentatiesystemen, statische sitegeneratoren of platforms die Markdown gebruiken. De conversie vindt volledig plaats in je browser.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips voor conversie HTML naar MARKDOWN",
-      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "title": "Tips voor de conversie van HTML naar Markdown",
+      "description": "Enkele tips om veelvoorkomende problemen te voorkomen:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Zeer grote bestanden",
-          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Inline stijlen worden verwijderd",
+          "description": "Markdown ondersteunt geen CSS. Inline stijlen, klassen en ID's uit je HTML worden verwijderd tijdens de conversie. Alleen de semantische structuur en tekstinhoud blijven behouden."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Reeds gecomprimeerd",
-          "description": "Als het HTML-bestand al sterk gecomprimeerd was, levert conversie naar MARKDOWN mogelijk weinig besparing."
+          "title": "Complexe layouts",
+          "description": "HTML-layouts met divs, grids of flexbox kunnen niet worden weergegeven in Markdown. De converter extraheert de tekstinhoud en behoudt koppen, lijsten en links."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparantie",
-          "description": "MARKDOWN ondersteunt geen transparantie. Wordt wit. Overweeg PNG of WebP."
+          "icon": "RiCodeLine",
+          "title": "Afbeeldingen en links",
+          "description": "HTML &lt;img&gt;-tags worden ![Alt](Src) en &lt;a&gt;-tags worden [Tekst](URL) in Markdown. Relatieve URL's worden ongewijzigd bewaard."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Bewaar originelen",
-          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van HTML-bestanden."
+          "icon": "RiFileTextLine",
+          "title": "Tabellen",
+          "description": "HTML-tabellen worden geconverteerd naar Markdown-tabellen met pipes waar mogelijk. Complexe tabellen met colspan of rowspan kunnen worden vereenvoudigd."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What HTML elements are converted?",
+      "html": "<p class=\"text-mid mb-4\">The converter handles all common semantic HTML elements:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – &lt;h1&gt; through &lt;h6&gt; → # through ######</li><li><strong>Text formatting</strong> – &lt;strong&gt;/&lt;b&gt; → **bold**, &lt;em&gt;/&lt;i&gt; → *italic*, &lt;del&gt; → ~~strikethrough~~</li><li><strong>Links</strong> – &lt;a href&gt; → [text](url)</li><li><strong>Images</strong> – &lt;img&gt; → ![alt](src)</li><li><strong>Lists</strong> – &lt;ul&gt;/&lt;ol&gt; → - / 1. list items</li><li><strong>Code</strong> – &lt;code&gt; → `inline`, &lt;pre&gt;&lt;code&gt; → fenced blocks</li><li><strong>Tables</strong> – &lt;table&gt; → pipe-separated Markdown tables</li></ul><p class=\"text-mid mt-3\">Non-semantic elements (div, span, script, style) are stripped. Only meaningful content is preserved in the Markdown output.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, de converter werkt op elk apparaat met een moderne webbrowser."
         },
         {
-          "question": "Is conversie HTML naar MARKDOWN veilig?",
-          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+          "question": "Is de conversie van HTML naar Markdown veilig?",
+          "answer": "Ja. Alle conversie vindt lokaal plaats in je browser. Er worden geen gegevens naar een server gestuurd."
         },
         {
-          "question": "Kan ik meerdere HTML-bestanden tegelijk converteren?",
-          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+          "question": "Gaat er opmaak verloren bij de conversie?",
+          "answer": "Markdown ondersteunt koppen, vetgedrukt, cursief, links, afbeeldingen, lijsten, codeblokken, citaten en tabellen. HTML-exclusieve functies zoals aangepaste CSS, kleuren en complexe layouts kunnen niet worden weergegeven in Markdown en worden vereenvoudigd."
         },
         {
-          "question": "Wordt MARKDOWN door alle browsers ondersteund?",
-          "answer": "MARKDOWN wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
+          "question": "Kan ik de Markdown-uitvoer gebruiken op GitHub?",
+          "answer": "Ja. De uitvoer volgt de standaard Markdown-syntaxis, compatibel met GitHub, GitLab, Bitbucket, Notion, Obsidian en elk ander platform dat Markdown rendert."
         }
       ]
     },

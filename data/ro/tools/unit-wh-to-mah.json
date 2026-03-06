@@ -1,0 +1,281 @@
+{
+  "toolKey": "whToMah",
+  "locale": "ro",
+  "metadata": {
+    "title": "Wh în mAh – convertor",
+    "description": "Convertiți Wh în mAh și invers. Tensiune reglabilă.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-wh-in-mah"
+  },
+  "hero": {
+    "title": "Wh în mAh",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-wh-in-mah",
+      "label": "Wh în mAh"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Wh în mAh – convertor",
+      "alternateName": ["Wh în mAh"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți Wh în mAh și invers. Tensiune reglabilă.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: Wh în mAh?",
+      "html": "<p class=\"text-mid mb-4\">Watt-hours (Wh) and milliamp-hours (mAh) both measure battery capacity, but at different scales. The relationship depends on voltage: mAh = Wh × 1000 / V.</p><p class=\"text-mid mb-4\">Phone batteries are typically rated in mAh (e.g., 5,000 mAh at 3.7V = 18.5 Wh). Laptop batteries and power banks often use Wh (e.g., 100 Wh is the airline carry-on limit).</p><p class=\"text-mid mb-4\">This conversion is essential for comparing battery capacities, checking airline power bank limits, and sizing solar/UPS systems.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Wh în mAh – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBattery2ChargeLine",
+          "title": "Powerbanki",
+          "description": "Porównaj pojemności: 20 000 mAh × 3,7 V = 74 Wh."
+        },
+        {
+          "icon": "RiFlightTakeoffLine",
+          "title": "Przepisy lotnicze",
+          "description": "Limit 100 Wh w samolocie – ile to mAh?"
+        },
+        {
+          "icon": "RiLaptopLine",
+          "title": "Laptopy",
+          "description": "Bateria laptopa: 56 Wh. Ile godzin pracy?"
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Aplicații tehnice",
+          "description": "Baterie LiPo: mAh × V = Wh energii lotu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">Energy (Wh) = Capacity (Ah) × Voltage (V). Therefore: mAh = Wh × 1,000 / V, and Wh = mAh × V / 1,000.</p><p class=\"text-mid mb-4\">Example: 100 Wh battery at 3.7V = 100 × 1,000 / 3.7 = 27,027 mAh.</p><p class=\"text-mid\">The voltage matters! The same Wh rating gives different mAh at different voltages. Always specify voltage for accurate conversion.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Airline limit: 100 Wh. At 3.7V = 27,027 mAh. Most 20,000 mAh power banks = 74 Wh (allowed).</li><li>Phone battery: 5,000 mAh × 3.7V = 18.5 Wh.</li><li>Laptop: MacBook Air = 52.6 Wh. MacBook Pro 16\" = 99.6 Wh.</li><li>18650 cell: 3,000 mAh × 3.7V = 11.1 Wh. Tesla uses thousands of these.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Wh vs mAh – comparație",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Watt-hour (Wh)"
+        },
+        {
+          "id": "unit2",
+          "name": "Milliamp-hour (mAh)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Measures",
+          "values": {
+            "unit1": "Energy",
+            "unit2": "Charge"
+          }
+        },
+        {
+          "name": "Includes voltage",
+          "values": {
+            "unit1": "Yes",
+            "unit2": "No (needs voltage)"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "Laptops, EVs",
+            "unit2": "Phones, power banks"
+          }
+        },
+        {
+          "name": "Comparison",
+          "values": {
+            "unit1": "Direct at any voltage",
+            "unit2": "Only at same voltage"
+          }
+        },
+        {
+          "name": "Airline limit",
+          "values": {
+            "unit1": "100 Wh",
+            "unit2": "~27,000 mAh at 3.7V"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Cum convertesc Wh in mAh um?",
+          "answer": "mAh = Wh × 1.000 / Spannung. Beispiel: 100 Wh bei 3,7V = 27.027 mAh."
+        },
+        {
+          "question": "Ce este das Flug-Powerbank-Limit?",
+          "answer": "Die meisten Fluglinien erlauben Powerbanks bis 100 Wh. Bei 3,7V = ~27.000 mAh."
+        },
+        {
+          "question": "Ist mAh oder Wh besser zum Vergleichen?",
+          "answer": "Wh ist genauer, weil es die Spannung berücksichtigt."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Da. Toate calculele se fac în browserul dvs."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Wh în mAh – Arteon",
+      "defaultSubject": "Feedback: wh-to-mah"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

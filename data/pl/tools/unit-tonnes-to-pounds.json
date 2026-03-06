@@ -1,0 +1,289 @@
+{
+  "toolKey": "tonnesToPounds",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter ton metrycznych na funty – przelicz masę",
+    "description": "Przelicz tony metryczne na funty i odwrotnie. Konwerter jest przydatny w logistyce i transporcie międzynarodowym. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-tony-na-funty"
+  },
+  "hero": {
+    "title": "Przelicz tony na funty",
+    "description": "Ten konwerter przelicza tony metryczne na funty (lbs) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-tony-na-funty",
+      "label": "tony na funty"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter ton metrycznych na funty – przelicz masę",
+      "alternateName": ["Przelicznik ton na funty", "Kalkulator ton na lbs", "Zamiana ton na funty"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz tony metryczne na funty i odwrotnie. Konwerter jest przydatny w logistyce i transporcie międzynarodowym. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera tony na funty",
+      "description": "Instrukcja użycia: tony na funty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy przydaje się przeliczanie ton na funty?",
+      "html": "<p class=\"text-mid mb-4\">Tona metryczna (t) to 1 000 kg. Funt (lb) to jednostka masy w systemie imperialnym = 453,592 g. 1 tona = 2 204,62 funta.</p><p class=\"text-mid mb-4\">Przeliczanie ton na funty jest potrzebne w logistyce międzynarodowej, transporcie morskim i lotniczym oraz handlu towarami masowymi. Amerykańskie firmy transportowe podają ładowność w funtach.</p><p class=\"text-mid mb-4\">W rolnictwie amerykańskim plony i ceny zbóż podaje się w funtach lub buszelach. W przemyśle stalowym i budowlanym waga materiałów często pojawia się w obu jednostkach.</p><p class=\"text-mid\">Istnieje też tona krótka (US ton = 2 000 lbs = 907,185 kg) i tona długa (UK ton = 2 240 lbs = 1 016,047 kg). Ten konwerter przelicza tony metryczne (1 000 kg).</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "tony na funty – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShipLine",
+          "title": "Transport morski",
+          "description": "Ładowność statków i kontenerów podaje się w tonach lub funtach."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Logistyka",
+          "description": "Amerykańskie firmy transportowe podają limity wagi w funtach."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Rolnictwo",
+          "description": "Plony i ceny zbóż w USA: funty lub buszle."
+        },
+        {
+          "icon": "RiBuildingLine",
+          "title": "Budownictwo",
+          "description": "Waga materiałów budowlanych (stal, beton) w tonach lub funtach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja ton na funty?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja ton metrycznych na funty opiera się na relacji między kilogramem a funtem avoirdupois. Jedna tona metryczna to dokładnie 1 000 kilogramów, a jeden funt wynosi 0,45359237 kg — stąd jedna tona metryczna to 2 204,62 funta.</p><p class=\"text-mid mb-4\">Warto pamiętać, że istnieją trzy rodzaje ton: tona metryczna (1 000 kg = 2 204,62 lb), tona krótka amerykańska (short ton, 2 000 lb = 907,18 kg) oraz tona długa brytyjska (long ton, 2 240 lb = 1 016,05 kg). Ten konwerter przelicza tony metryczne, które są standardem w Polsce i większości świata.</p><p class=\"text-mid\">Na przykład samochód ważący 1,5 tony waży około 3 307 funtów, a ładunek o masie 10 000 funtów to około 4,54 tony metrycznej.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>1 tona metryczna ≈ 2 205 lb (szybkie przybliżenie).</li><li>Tona krótka (US ton) = 2 000 lb = 907,18 kg – mniejsza od metrycznej.</li><li>Tona długa (UK ton) = 2 240 lb = 1 016,05 kg – większa od metrycznej.</li><li>Kontener 20-stopowy (TEU) ma ładowność około 28 ton = 61 729 lb.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Tona metryczna (t) vs Funt (lb) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Tona metryczna (t)"
+        },
+        {
+          "id": "unit2",
+          "name": "Funt (lb)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Wartość",
+          "values": {
+            "unit1": "1 000 kg",
+            "unit2": "0,4536 kg"
+          }
+        },
+        {
+          "name": "Transport",
+          "values": {
+            "unit1": "Tony (Europa)",
+            "unit2": "Funty (USA)"
+          }
+        },
+        {
+          "name": "Warianty",
+          "values": {
+            "unit1": "Tona metryczna",
+            "unit2": "Tona krótka US / długa UK"
+          }
+        },
+        {
+          "name": "Rolnictwo",
+          "values": {
+            "unit1": "Tony",
+            "unit2": "Funty i buszle"
+          }
+        },
+        {
+          "name": "Przelicznik",
+          "values": {
+            "unit1": "1 t = 2 204,62 lb",
+            "unit2": "1 lb = 0,000454 t"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile funtów ma 1 tona?",
+          "answer": "1 tona metryczna = 2 204,62 lb. 1 tona krótka (US) = 2 000 lb. 1 tona długa (UK) = 2 240 lb."
+        },
+        {
+          "question": "Jaka jest różnica między toną metryczną a amerykańską?",
+          "answer": "Tona metryczna = 1 000 kg. Tona amerykańska (short ton) = 907,185 kg = 2 000 lb. Tona metryczna jest cięższa o 10,2%."
+        },
+        {
+          "question": "Ile ton to 10 000 funtów?",
+          "answer": "10 000 lb = 4,536 ton metrycznych."
+        },
+        {
+          "question": "Jak szybko oszacować tony na funty?",
+          "answer": "Pomnóż tony przez 2 200 – błąd wynosi 0,2%."
+        },
+        {
+          "question": "Czy konwerter obsługuje tony krótkie (US)?",
+          "answer": "Ten konwerter przelicza tony metryczne (1 000 kg). Dla ton krótkich pomnóż wynik przez 0,907185."
+        },
+        {
+          "question": "Ile waży kontener 20-stopowy?",
+          "answer": "Masa własna kontenera 20’ to około 2,3 tony. Maksymalna ładowność to około 28 ton = 61 729 lb."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "tony na funty – Arteon",
+      "defaultSubject": "Feedback: tony na funty"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

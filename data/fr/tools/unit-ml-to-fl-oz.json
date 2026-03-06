@@ -1,0 +1,277 @@
+{
+  "toolKey": "mlToFlOz",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur millilitres en onces liquides",
+    "description": "Convertissez mL en fl oz et vice versa. Pour la cuisine, les cosmétiques et la pharmacie.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-ml-en-fl-oz"
+  },
+  "hero": {
+    "title": "Convertir millilitres en onces liquides",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-ml-en-fl-oz",
+      "label": "mL en fl oz"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur millilitres en onces liquides",
+      "alternateName": ["Convertir millilitres en onces liquides"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez mL en fl oz et vice versa. Pour la cuisine, les cosmétiques et la pharmacie.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des mL en fl oz ?",
+      "html": "<p class=\"text-mid mb-4\">Le millilitre (mL) est une unité métrique de volume. L’once liquide américaine (fl oz) = 29,5735 mL.</p><p class=\"text-mid mb-4\">Exemples : 250 mL = 8,45 fl oz, 330 mL = 11,2 fl oz, 500 mL = 16,9 fl oz.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur millilitres en onces liquides – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Cuisine et boissons",
+          "description": "Recettes US en fl oz. 1 tasse US = 8 fl oz = 236,6 mL."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Cosmétique",
+          "description": "Produits de beauté en mL et fl oz."
+        },
+        {
+          "icon": "RiGobletLine",
+          "title": "Pharmacie",
+          "description": "Médicaments liquides en mL ou fl oz."
+        },
+        {
+          "icon": "RiMedicineBottleLine",
+          "title": "Voyage aérien",
+          "description": "Limite TSA : 3,4 fl oz = 100 mL par contenant en cabine."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 fl oz US = 29,5735 mL. Pour convertir mL en fl oz, divisez par 29,5735.</p><p class=\"text-mid\">Estimation rapide : divisez les mL par 30.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 fl oz US = 29,5735 mL. Pour convertir mL en fl oz, divisez par 29,5735.</p><p class=\"text-mid\">Estimation rapide : divisez les mL par 30.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "mL vs fl oz – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Millilitre (mL)"
+        },
+        {
+          "id": "unit2",
+          "name": "Once liquide US",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Système",
+          "values": {
+            "unit1": "Métrique (SI)",
+            "unit2": "US Customary"
+          }
+        },
+        {
+          "name": "Valeur de base",
+          "values": {
+            "unit1": "1/1000 litre",
+            "unit2": "29,57 mL"
+          }
+        },
+        {
+          "name": "Cuisine",
+          "values": {
+            "unit1": "International",
+            "unit2": "Recettes US"
+          }
+        },
+        {
+          "name": "Boissons",
+          "values": {
+            "unit1": "International (mL)",
+            "unit2": "USA (fl oz)"
+          }
+        },
+        {
+          "name": "UK fl oz",
+          "values": {
+            "unit1": "28,41 mL",
+            "unit2": "29,57 mL (US)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de mL fait 1 fl oz ?",
+          "answer": "1 once liquide US = 29,5735 mL."
+        },
+        {
+          "question": "Combien de fl oz font 100 mL ?",
+          "answer": "100 mL = 3,38 fl oz US. C’est la limite de liquides TSA en cabine."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "ml na fl oz – Arteon",
+      "defaultSubject": "Feedback : ml-to-fl-oz"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

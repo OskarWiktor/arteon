@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — hvad vaelge ved konvertering TIFF til WebP?",
-      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem TIFF og WebP praktisk talt umaerkelig.</p>"
+      "title": "Kvalitet - hvad vaelge ved konvertering TIFF til WebP?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) - godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% - til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% - nar filstørrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem TIFF og WebP praktisk talt umaerkelig.</p>"
     },
     {
       "type": "gap",
@@ -253,8 +253,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af TIFF til WebP reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+      "title": "Hvordan billedkonvertering påvirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP måler tiden til det største synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af TIFF til WebP reducerer filstørrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
     },
     {
       "type": "gap",
@@ -263,23 +263,23 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering TIFF til WebP",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis TIFF allerede var komprimeret, giver konvertering til WebP maske ikke stor besparelse."
+          "description": "Hvis TIFF allerede var komprimeret, giver konvertering til WebP måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "WebP understotter alfakanal. Transparente omrader i TIFF bevares."
+          "description": "WebP understøtter alfakanal. Transparente områder i TIFF bevares."
         },
         {
           "icon": "RiStackLine",
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting TIFF to WebP?",
+      "html": "<p class=\"text-mid mb-4\">TIFF files are extremely large. WebP provides dramatic file size reductions:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo (TIFF)</p><p class=\"text-light text-sm\">25 MB → 650 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~97%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Scanned document</p><p class=\"text-light text-sm\">15 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~98%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo</p><p class=\"text-light text-sm\">8 MB → 350 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~96%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

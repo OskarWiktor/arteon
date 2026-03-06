@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "jpg": "Alle nettlesere",
-            "pdf": "Innebygd PDF-visning"
+            "jpg": true,
+            "pdf": false
           }
         },
         {
@@ -191,8 +191,7 @@
             "pdf": false
           }
         }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",
@@ -247,6 +246,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">While JPG to PDF conversion creates documents rather than web images, it's worth noting that PDF files embedded or linked on websites also affect page performance. Large PDFs slow down downloads and frustrate users.</p><p class=\"text-mid mb-4\">When creating PDFs from JPG images, use appropriate quality settings. For web-shared PDFs, quality 80–85 produces files that look great while keeping the PDF size manageable. For print, use quality 90–95.</p><p class=\"text-mid\">If you need to display the images on a web page rather than in a PDF, consider converting to WebP or AVIF instead for optimal web performance.</p>"
     },
     {
       "type": "faq",

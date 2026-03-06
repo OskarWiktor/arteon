@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "HEIC naar JPG converter – HEIC JPG",
-    "description": "Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie, zonder upload. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "description": "Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie, zonder upload. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/heic-naar-jpg-converter"
   },
   "hero": {
     "title": "HEIC naar JPG converter",
-    "description": "Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie, zonder upload. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "description": "Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie, zonder upload. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC naar JPG converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie, zonder upload. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+      "description": "Converteer iPhone HEIC-fotos naar universeel JPG. Zonder registratie, zonder upload. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["HEIC naar JPG omzetten", "HEIC naar JPG conversie", "Gratis HEIC naar JPG converter"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kwaliteit — wat kiezen bij conversie HEIC naar JPG?",
-      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standaard) — goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% — voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% — wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 85% is het verschil tussen origineel HEIC en JPG praktisch onzichtbaar.</p>"
+      "title": "Kwaliteit - wat kiezen bij conversie HEIC naar JPG?",
+      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standaard) - goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% - voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% - wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 85% is het verschil tussen origineel HEIC en JPG praktisch onzichtbaar.</p>"
     },
     {
       "type": "gap",

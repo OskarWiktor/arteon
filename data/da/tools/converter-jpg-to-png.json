@@ -3,13 +3,13 @@
   "locale": "da",
   "metadata": {
     "title": "JPG til PNG-konverter – JPG PNG",
-    "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
+    "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/jpg-til-png-konverter"
   },
   "hero": {
     "title": "JPG til PNG-konverter",
-    "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
+    "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Konvertér JPG til PNG", "JPG til PNG konvertering", "Gratis JPG til PNG konverter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren. Gratis browserværktøj — uden registrering, uden filbegrænsning, fuld privatliv.",
+      "description": "Konvertér JPG-billeder til tabsfrit PNG. Lokal konvertering i browseren. Gratis browserværktøj - uden registrering, uden filbegrænsning, fuld privatliv.",
       "featureList": ["JPG til PNG-konvertering", "Tabsfrit PNG-output", "Batchkonvertering", "Lokal browserbehandling", "Ingen filupload påkrævet"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Konverter til PNG",
-          "text": "Klik på konverter. PNG er tabsfrit — ingen kvalitetsindstilling nødvendig."
+          "text": "Klik på konverter. PNG er tabsfrit - ingen kvalitetsindstilling nødvendig."
         },
         {
           "name": "Download PNG-filer",
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af JPG til PNG reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+      "title": "Hvordan billedkonvertering påvirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP måler tiden til det største synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af JPG til PNG reducerer filstørrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
     },
     {
       "type": "gap",
@@ -254,23 +254,23 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering JPG til PNG",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis JPG allerede var komprimeret, giver konvertering til PNG maske ikke stor besparelse."
+          "description": "Hvis JPG allerede var komprimeret, giver konvertering til PNG måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "PNG understotter alfakanal. Transparente omrader i JPG bevares."
+          "description": "PNG understøtter alfakanal. Transparente områder i JPG bevares."
         },
         {
           "icon": "RiStackLine",
@@ -338,7 +338,7 @@
     {
       "type": "contactForm",
       "title": "Hjælp os med at forbedre vores værktøjer",
-      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked — vi svarer inden for 24 timer.",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Send os en besked - vi svarer inden for 24 timer.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "JPG til PNG-konverter – Arteon",
       "defaultSubject": "Feedback: JPG til PNG-konverter"

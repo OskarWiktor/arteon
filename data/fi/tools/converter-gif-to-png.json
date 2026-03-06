@@ -41,7 +41,7 @@
         },
         {
           "name": "Muunna PNG-muotoon",
-          "text": "Napsauta muunna. PNG on häviötön — laatuasetusta ei tarvita."
+          "text": "Napsauta muunna. PNG on häviötön - laatuasetusta ei tarvita."
         },
         {
           "name": "Lataa PNG-tiedostot",
@@ -245,7 +245,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten kuvamuunnos vaikuttaa nopeuteen ja SEO:hon",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman nakyvam elementin nayttamiseen.</p><p class=\"text-mid mb-4\">GIF-kuvien muuntaminen PNG-muotoon pienentaa tiedostokokoa, lyhentaa latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman näkyvän elementin näyttämiseen.</p><p class=\"text-mid mb-4\">GIF-kuvien muuntaminen PNG-muotoon pienentää tiedostokokoa, lyhentää latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
     },
     {
       "type": "gap",
@@ -254,28 +254,28 @@
     {
       "type": "sectionSteps",
       "title": "Vinkkeja GIF-PNG-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "description": "Vinkkeja yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
+          "title": "Erittäin suuret tiedostot",
           "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Jo pakatut",
-          "description": "Jos GIF oli jo voimakkaasti pakattu, muunnos PNG-muotoon ei valttamatta saasta paljon."
+          "description": "Jos GIF oli jo voimakkaasti pakattu, muunnos PNG-muotoon ei välttämättä säästä paljon."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "PNG tukee alfakanavaa. GIF:n lapinakyyt alueet sailyvat."
+          "title": "Läpinäkyvyys",
+          "description": "PNG tukee alfakanavaa. GIF:n läpinäkyvät alueet säilyvät."
         },
         {
           "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot GIF-tiedostoista."
+          "title": "Säilytä alkuperäiset",
+          "description": "Häviöllinen muunnos on peruuttamaton. Säilytä kopiot GIF-tiedostoista."
         }
       ]
     },
@@ -285,12 +285,21 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla GIF PNG?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2 MB → 120 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 40 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~92%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">200 KB → 25 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~88%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Kuinka paljon säästät muuntamalla GIF PNG?",
+      "html": "<p class=\"text-mid mb-4\">Säästöt riippuvat tiedostotyypistä ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2 MB → 120 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 40 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~92%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Näyttökuva / banneri</p><p class=\"text-light text-sm\">200 KB → 25 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~88%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset säästöt vaihtelevat sisällön ja asetusten mukaan.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting GIF images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",
@@ -319,11 +328,11 @@
         },
         {
           "question": "Onko GIF PNG muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "answer": "Kyllä. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitään ei lähetetä palvelimille."
         },
         {
           "question": "Voinko muuntaa useita GIF-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "answer": "Kyllä. Erämuunnos ilman rajaa. Vedä tiedostot muuntimeen."
         },
         {
           "question": "Tukevatko kaikki selaimet PNG-muotoa?",
@@ -338,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
-      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti - vastaamme 24 tunnin kuluessa.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "GIF PNG -muunnin – Arteon",
       "defaultSubject": "Feedback: GIF PNG -muunnin"

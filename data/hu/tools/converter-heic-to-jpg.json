@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "HEIC JPG konverter – HEIC JPG",
-    "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+    "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/heic-jpg-konverter"
   },
   "hero": {
     "title": "HEIC JPG konverter",
-    "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+    "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC JPG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+      "description": "iPhone HEIC fotok konvertálása univerzális JPG-re. Regisztracio nelkul, szerverre kuldes nelkul. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["HEIC konvertálása JPG formátumba", "HEIC–JPG átalakítás", "Ingyenes HEIC–JPG konverter"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Minosegi beallitasok — mit valassz HEIC JPG konvertalasahoz?",
-      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (alap) — jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% — termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% — amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">85%-os minosegnel a kulonbseg HEIC es JPG kozott szabad szemmel eszrevehetetlen.</p>"
+      "title": "Minosegi beallitasok - mit valassz HEIC JPG konvertalasahoz?",
+      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (alap) - jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% - termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% - amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">85%-os minosegnel a kulonbseg HEIC es JPG kozott szabad szemmel eszrevehetetlen.</p>"
     },
     {
       "type": "gap",

@@ -1,0 +1,273 @@
+{
+  "toolKey": "cmToPxDpi",
+  "locale": "fi",
+  "metadata": {
+    "title": "Cm px:ksi – muunnin",
+    "description": "Muunna cm pikseleiksi DPI-tuella.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/cm-px-muunnin"
+  },
+  "hero": {
+    "title": "Cm px:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/cm-px-muunnin",
+      "label": "cm px:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Cm px:ksi – muunnin",
+      "alternateName": ["Cm px:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna cm pikseleiksi DPI-tuella.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin cm muunnetaan pikseleiksi?",
+      "html": "<p class=\"text-mid mb-4\">Painosuunnittelu käyttää senttimetrejä, digitaalikuvat pikseleitä. Muunnos riippuu DPI:stä: Pikselit = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">300 DPI:llä: 10 cm = 1 181 px, A4-leveys (21 cm) = 2 480 px.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "CM to pixels (DPI) converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tulostus",
+          "description": "A4 300 DPI:llä = 2 480 × 3 508 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Suurkuva",
+          "description": "Banderollit ja julisteet: 150 DPI."
+        },
+        {
+          "icon": "RiArtboardLine",
+          "title": "Verkkografiikka",
+          "description": "Näyttöresoluutio 72–96 DPI."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Valokuvaus",
+          "description": "Tarkista riittääkö kameran resoluutio painokokoon."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">Pikselit = cm × DPI / 2,54. 300 DPI:llä: 1 cm = 118,11 px.</p><p class=\"text-mid\">Enemmän DPI = enemmän px/cm = terävämpi paino.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">Pikselit = cm × DPI / 2,54. 300 DPI:llä: 1 cm = 118,11 px.</p><p class=\"text-mid\">Enemmän DPI = enemmän px/cm = terävämpi paino.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "DPI-resoluutiot vertailussa",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI (paino)"
+        },
+        {
+          "id": "unit2",
+          "name": "72 DPI (näyttö)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "10 cm",
+          "values": {
+            "unit1": "1 181 px",
+            "unit2": "283 px"
+          }
+        },
+        {
+          "name": "A4 leveys",
+          "values": {
+            "unit1": "2 480 px",
+            "unit2": "595 px"
+          }
+        },
+        {
+          "name": "A4 korkeus",
+          "values": {
+            "unit1": "3 508 px",
+            "unit2": "842 px"
+          }
+        },
+        {
+          "name": "Käyttö",
+          "values": {
+            "unit1": "Ammattimainen paino",
+            "unit2": "Verkkografiikka"
+          }
+        },
+        {
+          "name": "Laatu",
+          "values": {
+            "unit1": "Terävä kaikissa koissa",
+            "unit2": "Vain näytölle"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta px on 1 cm 300 DPI:llä?",
+          "answer": "1 cm 300 DPI:llä = 118,11 px."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "cm px:ksi – Arteon",
+      "defaultSubject": "Palaute: cm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "toolKey": "csvToJson",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur CSV en JSON — CSV JSON",
+    "title": "Convertisseur CSV en JSON - CSV JSON",
     "description": "Convertissez CSV en format JSON. Analyse et formatage automatiques. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-csv-en-json"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir CSV en JSON ?",
-      "html": "<p class=\"text-mid mb-4\">CSV est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en JSON peut offrir des avantages significatifs — fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers CSV au format JSON directement dans le navigateur. Aucun fichier n'est envoye sur un serveur — tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
+      "html": "<p class=\"text-mid mb-4\">CSV est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en JSON peut offrir des avantages significatifs - fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers CSV au format JSON directement dans le navigateur. Aucun fichier n'est envoye sur un serveur - tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "CSV to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Combien economiser en convertissant CSV en JSON ?",
-      "html": "<p class=\"text-mid mb-4\">Les economies dependent du type de fichier source et sa compression :</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo d'appareil</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Image produit</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Capture / banniere</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Les economies reelles varient selon le contenu et les reglages.</p>"
+      "title": "Comment fonctionne la conversion CSV en JSON ?",
+      "html": "<p class=\"text-mid mb-4\">Le format CSV (Comma-Separated Values) stocke les données sous forme de lignes de texte où les valeurs sont séparées par des virgules ou des points-virgules. Le format JSON (JavaScript Object Notation) organise les mêmes données sous forme d’un tableau d’objets clé-valeur, où chaque ligne devient un objet et chaque en-tête de colonne devient une clé.</p><p class=\"text-mid mb-4\">Le convertisseur lit la première ligne du fichier CSV comme en-têtes de colonnes et les utilise comme noms de propriétés dans chaque objet JSON. Chaque ligne suivante devient un objet séparé dans le tableau JSON résultant.</p><p class=\"text-mid\">La sortie est du JSON correctement formaté avec indentation pour une meilleure lisibilité. Toute la conversion s’effectue localement dans votre navigateur — aucune donnée n’est envoyée à un serveur.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Conseils pour convertir CSV en JSON",
-      "description": "Conseils pour eviter les problemes courants :",
+      "title": "Conseils pour la conversion CSV en JSON",
+      "description": "Quelques conseils pour éviter les problèmes courants :",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Fichiers volumineux",
-          "description": "Images de plus de 4000×4000 px peuvent etre plus lentes. Divisez en lots de 10–20."
+          "icon": "RiFileTextLine",
+          "title": "En-têtes de colonnes",
+          "description": "Assurez-vous que votre fichier CSV contient une ligne d’en-tête. Le convertisseur utilise la première ligne comme noms de propriétés JSON."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Fichiers deja compresses",
-          "description": "Si le CSV original etait deja compresse, la conversion en JSON peut ne pas economiser beaucoup."
+          "icon": "RiSeparator",
+          "title": "Détection du séparateur",
+          "description": "Le convertisseur détecte automatiquement si votre CSV utilise des virgules, des points-virgules ou des tabulations comme séparateurs."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparence",
-          "description": "JSON ne supporte pas la transparence. Zones transparentes remplacees par fond blanc. Utilisez PNG ou WebP."
+          "icon": "RiCodeLine",
+          "title": "Caractères spéciaux",
+          "description": "Les valeurs contenant des virgules, des guillemets ou des sauts de ligne doivent être entre guillemets doubles. Le convertisseur gère automatiquement l’échappement CSV standard."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Conservez les originaux",
-          "description": "La conversion avec perte est irreversible. Conservez des copies des fichiers CSV."
+          "icon": "RiFileCodeLine",
+          "title": "Encodage des caractères",
+          "description": "Pour de meilleurs résultats, utilisez des fichiers CSV encodés en UTF-8. Les fichiers avec d’autres encodages peuvent afficher incorrectement les caractères spéciaux dans le JSON."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Common CSV formatting issues and how to handle them",
+      "html": "<p class=\"text-mid mb-4\">CSV files from different sources can have inconsistent formatting. Here are common issues the converter handles:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Different separators</strong> – commas, semicolons, tabs. European exports from Excel often use semicolons because commas are used as decimal separators.</li><li><strong>Quoted values</strong> – values containing commas or newlines must be wrapped in double quotes. The converter handles this correctly.</li><li><strong>Unicode and special characters</strong> – accented characters, CJK text, and emoji are preserved in the JSON output.</li><li><strong>Empty values</strong> – empty cells are converted to empty strings or null in JSON, depending on context.</li></ul><p class=\"text-mid mt-3\">If conversion fails, check that your CSV has consistent column counts across all rows and that quoted values use proper double-quote escaping.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Oui, il fonctionne sur tout appareil disposant d'un navigateur web moderne."
         },
         {
-          "question": "La conversion CSV en JSON est-elle sure ?",
-          "answer": "Oui. Tout se fait localement dans le navigateur via Canvas API. Rien n'est envoye a un serveur."
+          "question": "La conversion CSV en JSON est-elle sécurisée ?",
+          "answer": "Oui. Toute la conversion s’effectue localement dans votre navigateur. Vos données ne sont jamais envoyées à un serveur. À la fermeture de la page, toutes les données sont automatiquement supprimées."
         },
         {
-          "question": "Puis-je convertir plusieurs fichiers CSV ?",
-          "answer": "Oui. Conversion par lots sans limite. Glissez les fichiers sur le convertisseur."
+          "question": "Puis-je utiliser la sortie JSON dans mon application ?",
+          "answer": "Oui. La sortie est du JSON standard compatible avec tout langage de programmation, base de données ou API — JavaScript, Python, PHP, Java et bien d’autres."
         },
         {
-          "question": "JSON est-il supporte par tous les navigateurs ?",
-          "answer": "JSON est supporte par Chrome, Firefox, Safari, Edge et Opera."
+          "question": "Que se passe-t-il avec les valeurs vides dans le CSV ?",
+          "answer": "Les cellules vides dans le CSV deviennent des chaînes vides dans le JSON. Les virgules en fin de ligne ou les nombres incohérents de colonnes sont correctement gérés."
         }
       ]
     },

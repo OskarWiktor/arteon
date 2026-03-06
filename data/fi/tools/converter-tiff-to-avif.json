@@ -2,7 +2,7 @@
   "toolKey": "tiffToAvif",
   "locale": "fi",
   "metadata": {
-    "title": "TIFF AVIF -muunnin — TIFF AVIF",
+    "title": "TIFF AVIF -muunnin - TIFF AVIF",
     "description": "Muunna TIFF-tiedostot moderniin AVIF-muotoon. Valtava tiedostokoon pienennys. Toimii kokonaan selaimessasi. Ei palvelinlatauksia, ei rekisteröitymistä.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/tiff-avif-muunnin"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Aseta laatu",
-          "text": "Säädä AVIF-laatuliukusäädintä — alhaisemmat arvot tuottavat pienempiä tiedostoja."
+          "text": "Säädä AVIF-laatuliukusäädintä - alhaisemmat arvot tuottavat pienempiä tiedostoja."
         },
         {
           "position": 3,
           "name": "Muunna",
-          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessa."
+          "text": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessa."
         },
         {
           "position": 4,
           "name": "Lataa",
-          "text": "Lataa AVIF-tiedostot — yksittäin tai kaikki kerralla."
+          "text": "Lataa AVIF-tiedostot - yksittäin tai kaikki kerralla."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Laatuasetukset — mita valita muunnoksessa TIFF AVIF?",
-      "html": "<p class=\"text-mid\">Liukusaadin 60%-95%. Korkeampi = parempi laatu mutta suurempi tiedosto.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (oletus) — hyva verkkosivuille, blogeille, artikkeleille.</strong></li><li><strong>85–90% — tuotekuville, portfolioille ja gallerioille.</strong></li><li><strong>60–70% — kun tiedostokoon minimointi on tarkeaa.</strong></li></ul><p class=\"text-mid mt-3\">80% laadulla ero TIFF:n ja AVIF:n valilla on kaytannossa huomaamaton.</p>"
+      "title": "Laatuasetukset - mita valita muunnoksessa TIFF AVIF?",
+      "html": "<p class=\"text-mid\">Liukusaadin 60%-95%. Korkeampi = parempi laatu mutta suurempi tiedosto.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (oletus) - hyva verkkosivuille, blogeille, artikkeleille.</strong></li><li><strong>85–90% - tuotekuville, portfolioille ja gallerioille.</strong></li><li><strong>60–70% - kun tiedostokoon minimointi on tarkeaa.</strong></li></ul><p class=\"text-mid mt-3\">80% laadulla ero TIFF:n ja AVIF:n valilla on kaytannossa huomaamaton.</p>"
     },
     {
       "type": "gap",
@@ -262,7 +262,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten kuvamuunnos vaikuttaa nopeuteen ja SEO:hon",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman nakyvam elementin nayttamiseen.</p><p class=\"text-mid mb-4\">TIFF-kuvien muuntaminen AVIF-muotoon pienentaa tiedostokokoa, lyhentaa latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman näkyvän elementin näyttämiseen.</p><p class=\"text-mid mb-4\">TIFF-kuvien muuntaminen AVIF-muotoon pienentää tiedostokokoa, lyhentää latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
     },
     {
       "type": "gap",
@@ -271,34 +271,43 @@
     {
       "type": "sectionSteps",
       "title": "Vinkkeja TIFF-AVIF-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "description": "Vinkkeja yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
+          "title": "Erittäin suuret tiedostot",
           "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Jo pakatut",
-          "description": "Jos TIFF oli jo voimakkaasti pakattu, muunnos AVIF-muotoon ei valttamatta saasta paljon."
+          "description": "Jos TIFF oli jo voimakkaasti pakattu, muunnos AVIF-muotoon ei välttämättä säästä paljon."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "AVIF tukee alfakanavaa. TIFF:n lapinakyyt alueet sailyvat."
+          "title": "Läpinäkyvyys",
+          "description": "AVIF tukee alfakanavaa. TIFF:n läpinäkyvät alueet säilyvät."
         },
         {
           "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot TIFF-tiedostoista."
+          "title": "Säilytä alkuperäiset",
+          "description": "Häviöllinen muunnos on peruuttamaton. Säilytä kopiot TIFF-tiedostoista."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting TIFF to AVIF?",
+      "html": "<p class=\"text-mid mb-4\">TIFF files are uncompressed or use lossless compression, making them extremely large. AVIF provides dramatic savings:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo (TIFF)</p><p class=\"text-light text-sm\">25 MB → 450 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~98%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Scanned document</p><p class=\"text-light text-sm\">15 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~99%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo</p><p class=\"text-light text-sm\">8 MB → 250 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~97%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",
@@ -327,11 +336,11 @@
         },
         {
           "question": "Onko TIFF AVIF muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "answer": "Kyllä. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitään ei lähetetä palvelimille."
         },
         {
           "question": "Voinko muuntaa useita TIFF-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "answer": "Kyllä. Erämuunnos ilman rajaa. Vedä tiedostot muuntimeen."
         },
         {
           "question": "Tukevatko kaikki selaimet AVIF-muotoa?",

@@ -140,7 +140,7 @@
     {
       "type": "sectionInfo",
       "title": "Slik fungerer lesbarhetsvurderingen",
-      "html": "<p class=\"text-mid mb-4\">Verktøyet beregner en lesbarhetsscore basert på gjennomsnittlig setningslengde og gjennomsnittlig antall stavelser per ord. Resultatet vises på en skala fra 0 til 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Veldig lett. Korte setninger, vanlige ord.</li><li><strong>70–89</strong> — Lett. Samtalesprak egnet for et bredt publikum.</li><li><strong>50–69</strong> — Moderat. Standard forretnings- og journalistisk skriving.</li><li><strong>30–49</strong> — Vanskelig. Lange setninger, spesialisert ordforrad.</li><li><strong>0–29</strong> — Veldig vanskelig. Akademiske og juridiske tekster.</li></ul><p class=\"text-mid mt-3\">For norsk brukes en forenklet Flesch-tilpasning med norske stavelsesregler. Norske tekster har gjennomgaende kortere ord enn engelske, sa scoren kan vaere noe hoyere for sammenlignbar tekst.</p>"
+      "html": "<p class=\"text-mid mb-4\">Verktøyet beregner en lesbarhetsscore basert på gjennomsnittlig setningslengde og gjennomsnittlig antall stavelser per ord. Resultatet vises på en skala fra 0 til 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> - Veldig lett. Korte setninger, vanlige ord.</li><li><strong>70–89</strong> - Lett. Samtalesprak egnet for et bredt publikum.</li><li><strong>50–69</strong> - Moderat. Standard forretnings- og journalistisk skriving.</li><li><strong>30–49</strong> - Vanskelig. Lange setninger, spesialisert ordforrad.</li><li><strong>0–29</strong> - Veldig vanskelig. Akademiske og juridiske tekster.</li></ul><p class=\"text-mid mt-3\">For norsk brukes en forenklet Flesch-tilpasning med norske stavelsesregler. Norske tekster har gjennomgaende kortere ord enn engelske, sa scoren kan vaere noe hoyere for sammenlignbar tekst.</p>"
     },
     {
       "type": "gap",
@@ -170,7 +170,7 @@
         {
           "icon": "RiChatQuoteLine",
           "title": "Setninger",
-          "description": "Antall setninger i teksten. Hjelper med å vurdere kompleksitet og lesbarhet — kortere setninger er lettere å ta til seg."
+          "description": "Antall setninger i teksten. Hjelper med å vurdere kompleksitet og lesbarhet - kortere setninger er lettere å ta til seg."
         },
         {
           "icon": "RiParagraph",
@@ -185,7 +185,7 @@
         {
           "icon": "RiRulerLine",
           "title": "Gjennomsnittlig ordlengde",
-          "description": "Gjennomsnittlig antall tegn per ord. En indikator på tekstkompleksitet — tekniske tekster har lengre ord."
+          "description": "Gjennomsnittlig antall tegn per ord. En indikator på tekstkompleksitet - tekniske tekster har lengre ord."
         },
         {
           "icon": "RiTimeLine",
@@ -329,7 +329,7 @@
     {
       "type": "sectionInfo",
       "title": "Hvorfor lesbarhet er viktig for SEO",
-      "html": "<p class=\"text-mid mb-4\">Søkemotorer prioriterer innhold som oppfyller brukerens søkehensikt. Lesbar tekst påvirker direkte viktige engasjementsmålinger:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tid på siden</strong> — besøkende blir lenger på sider som er lette å lese. Google tolker lengre besøk som kvalitetssignal.</li><li><strong>Avvisningsrate</strong> — tett, vanskelig tekst driver besøkende bort. En lesbarhetspoeng under 30 på en generell side korrelerer ofte med høy avvisningsrate.</li><li><strong>Utvalgte utdrag</strong> — Google velger klare, konsise svar til utvalgte utdrag. Kortere setninger og direkte språk øker sjansen for å bli valgt.</li><li><strong>Mobil lesbarhet</strong> — på små skjermer er lange setninger og komplekst ordforråd enda vanskeligere å følge. En poeng på 60+ forbedrer mobilopplevelsen.</li></ul><p class=\"text-mid mt-3\">Et godt mål for nettinnhold er en lesbarhetspoeng mellom 60 og 70 — tydelig nok for de fleste lesere, detaljert nok til å formidle ekspertise.</p>"
+      "html": "<p class=\"text-mid mb-4\">Søkemotorer prioriterer innhold som oppfyller brukerens søkehensikt. Lesbar tekst påvirker direkte viktige engasjementsmålinger:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tid på siden</strong> - besøkende blir lenger på sider som er lette å lese. Google tolker lengre besøk som kvalitetssignal.</li><li><strong>Avvisningsrate</strong> - tett, vanskelig tekst driver besøkende bort. En lesbarhetspoeng under 30 på en generell side korrelerer ofte med høy avvisningsrate.</li><li><strong>Utvalgte utdrag</strong> - Google velger klare, konsise svar til utvalgte utdrag. Kortere setninger og direkte språk øker sjansen for å bli valgt.</li><li><strong>Mobil lesbarhet</strong> - på små skjermer er lange setninger og komplekst ordforråd enda vanskeligere å følge. En poeng på 60+ forbedrer mobilopplevelsen.</li></ul><p class=\"text-mid mt-3\">Et godt mål for nettinnhold er en lesbarhetspoeng mellom 60 og 70 - tydelig nok for de fleste lesere, detaljert nok til å formidle ekspertise.</p>"
     },
     {
       "type": "gap",
@@ -348,7 +348,7 @@
         {
           "icon": "RiTextWrap",
           "title": "10 formateringsverktøy",
-          "description": "Bokstavstørrelsekonvertering, fjerning av mellomrom, tomme linjer, duplikater og sortering — uten ekstra programvare."
+          "description": "Bokstavstørrelsekonvertering, fjerning av mellomrom, tomme linjer, duplikater og sortering - uten ekstra programvare."
         },
         {
           "icon": "RiUserLine",
@@ -379,7 +379,7 @@
     {
       "type": "sectionInfo",
       "title": "Ideell tekstlengde for norske nettsider",
-      "html": "<p class=\"text-mid mb-4\">Blogginnlegg på norsk oppnår de beste søkeresultatene ved en lengde på 1 200–2 000 ord. Kortere innlegg (600–1 000 ord) fungerer for praktiske guider og svar på spesifikke spørsmål. Innlegg under 500 ord når sjelden høye posisjoner, med mindre de besvarer et veldig spesifikt søk.</p><p class=\"text-mid mb-4\">Produktbeskrivelser i norske nettbutikker bør inneholde 150–300 ord. På FINN.no har annonsetitler en grense på ca. 60 tegn. Kategoribeskrivelser med 200–400 ord hjelper søkemotorer med å forstå sidens tematikk. På Elkjøp og andre norske plattformer er detaljerte produktbeskrivelser et konkurransefortrinn.</p><p class=\"text-mid\">Tjenestesider (tannklinikk, advokatkontor, håndverker) trenger 500–800 ord med konkret informasjon: tjenestetilbud, dekningsområde, kontaktinformasjon. Antall ord alene er ikke et kvalitetsmål — en konsis tekst på 600 ord med nyttig informasjon overgår en oppblåst tekst på 2 000 ord uten merverdi.</p>"
+      "html": "<p class=\"text-mid mb-4\">Blogginnlegg på norsk oppnår de beste søkeresultatene ved en lengde på 1 200–2 000 ord. Kortere innlegg (600–1 000 ord) fungerer for praktiske guider og svar på spesifikke spørsmål. Innlegg under 500 ord når sjelden høye posisjoner, med mindre de besvarer et veldig spesifikt søk.</p><p class=\"text-mid mb-4\">Produktbeskrivelser i norske nettbutikker bør inneholde 150–300 ord. På FINN.no har annonsetitler en grense på ca. 60 tegn. Kategoribeskrivelser med 200–400 ord hjelper søkemotorer med å forstå sidens tematikk. På Elkjøp og andre norske plattformer er detaljerte produktbeskrivelser et konkurransefortrinn.</p><p class=\"text-mid\">Tjenestesider (tannklinikk, advokatkontor, håndverker) trenger 500–800 ord med konkret informasjon: tjenestetilbud, dekningsområde, kontaktinformasjon. Antall ord alene er ikke et kvalitetsmål - en konsis tekst på 600 ord med nyttig informasjon overgår en oppblåst tekst på 2 000 ord uten merverdi.</p>"
     },
     {
       "type": "gap",
@@ -388,7 +388,7 @@
     {
       "type": "sectionInfo",
       "title": "Standardside og oversettelsesnormer i Norge",
-      "html": "<p class=\"text-mid mb-4\">Oversettelsesbyråer i Norge fakturerer per ord eller per standardside. En standardside tilsvarer 1 500 tegn inkludert mellomrom (ca. 200–250 ord). Før du ber om et tilbud, lim inn teksten i telleren og kontroller antall tegn med mellomrom for å estimere kostnaden. En tekst med 15 000 tegn inkludert mellomrom tilsvarer 10 standardsider.</p><p class=\"text-mid mb-4\">Norske forlag måler manuskripter i standardsider eller antall ord. Redaktører og korrekturlesere bruker tegntelleren for å raskt vurdere et manuskripts omfang før de foreslår en pris. Valget mellom bokmål og nynorsk påvirker ordlengden noe — nynorsk har enkelte kortere ordformer, men forskjellen er marginal for ordtelling.</p><p class=\"text-mid\">Norske universiteter angir krav til oppgaver i antall ord. En bacheloroppgave omfatter typisk 8 000–12 000 ord, en masteroppgave 15 000–30 000 ord og en doktoravhandling over 50 000 ord. Kravene varierer mellom læresteder og fakulteter — sjekk alltid studieplanen for din utdanning.</p>"
+      "html": "<p class=\"text-mid mb-4\">Oversettelsesbyråer i Norge fakturerer per ord eller per standardside. En standardside tilsvarer 1 500 tegn inkludert mellomrom (ca. 200–250 ord). Før du ber om et tilbud, lim inn teksten i telleren og kontroller antall tegn med mellomrom for å estimere kostnaden. En tekst med 15 000 tegn inkludert mellomrom tilsvarer 10 standardsider.</p><p class=\"text-mid mb-4\">Norske forlag måler manuskripter i standardsider eller antall ord. Redaktører og korrekturlesere bruker tegntelleren for å raskt vurdere et manuskripts omfang før de foreslår en pris. Valget mellom bokmål og nynorsk påvirker ordlengden noe - nynorsk har enkelte kortere ordformer, men forskjellen er marginal for ordtelling.</p><p class=\"text-mid\">Norske universiteter angir krav til oppgaver i antall ord. En bacheloroppgave omfatter typisk 8 000–12 000 ord, en masteroppgave 15 000–30 000 ord og en doktoravhandling over 50 000 ord. Kravene varierer mellom læresteder og fakulteter - sjekk alltid studieplanen for din utdanning.</p>"
     },
     {
       "type": "gap",
@@ -396,8 +396,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Lesbarhet på norsk — LIX-indeksen og bokmål versus nynorsk",
-      "html": "<p class=\"text-mid mb-4\">Norge bruker LIX (Lesbarhetsindeks) som standard for tekstens vanskelighetsgrad. LIX beregnes ved å legge sammen andelen lange ord (mer enn 6 tegn) med gjennomsnittlig setningslengde. En LIX under 30 betyr veldig lettlest tekst, 30–40 lettlest, 40–50 middels, 50–60 vanskelig og over 60 veldig vanskelig. For nettinnhold på norsk er målet en LIX under 40.</p><p class=\"text-mid mb-4\">Bokmål og nynorsk har noe ulik ordlengde. Nynorsk har enkelte kortere ordformer (t.d. &quot;skule&quot; i stedet for &quot;skole&quot;), men forskjellen påvirker sjelden LIX-verdien med mer enn 1–2 poeng. Korte setninger (15–20 ord) og korte avsnitt (3–4 setninger) forbedrer lesbarheten på skjermer uavhengig av målform.</p><p class=\"text-mid\">Den gjennomsnittlige ordlengden i norsk ligger på 5–6 tegn — høyere enn engelskens 4–5 tegn. Det skyldes sammensatte ord og bøyningsendelser. Sammenlign derfor lesbarhetsverider bare innenfor samme språk. Et Flesch-verdi på 55 for en norsk tekst tilsvarer ikke samme vanskelighetsgrad som 55 for en engelsk tekst.</p>"
+      "title": "Lesbarhet på norsk - LIX-indeksen og bokmål versus nynorsk",
+      "html": "<p class=\"text-mid mb-4\">Norge bruker LIX (Lesbarhetsindeks) som standard for tekstens vanskelighetsgrad. LIX beregnes ved å legge sammen andelen lange ord (mer enn 6 tegn) med gjennomsnittlig setningslengde. En LIX under 30 betyr veldig lettlest tekst, 30–40 lettlest, 40–50 middels, 50–60 vanskelig og over 60 veldig vanskelig. For nettinnhold på norsk er målet en LIX under 40.</p><p class=\"text-mid mb-4\">Bokmål og nynorsk har noe ulik ordlengde. Nynorsk har enkelte kortere ordformer (t.d. &quot;skule&quot; i stedet for &quot;skole&quot;), men forskjellen påvirker sjelden LIX-verdien med mer enn 1–2 poeng. Korte setninger (15–20 ord) og korte avsnitt (3–4 setninger) forbedrer lesbarheten på skjermer uavhengig av målform.</p><p class=\"text-mid\">Den gjennomsnittlige ordlengden i norsk ligger på 5–6 tegn - høyere enn engelskens 4–5 tegn. Det skyldes sammensatte ord og bøyningsendelser. Sammenlign derfor lesbarhetsverider bare innenfor samme språk. Et Flesch-verdi på 55 for en norsk tekst tilsvarer ikke samme vanskelighetsgrad som 55 for en engelsk tekst.</p>"
     },
     {
       "type": "gap",
@@ -451,7 +451,7 @@
         },
         {
           "question": "Hva er forskjellen mellom lesetid og taletid?",
-          "answer": "Lesetid antar 200 ord per minutt — gjennomsnittlig stille lesehastighet. Taletid bruker 130 ord per minutt, det naturlige tempoet for presentasjoner og podkaster, inkludert pauser og pusting. En tekst på 1 000 ord tar cirka 5 minutter å lese men 7,5 minutter å snakke."
+          "answer": "Lesetid antar 200 ord per minutt - gjennomsnittlig stille lesehastighet. Taletid bruker 130 ord per minutt, det naturlige tempoet for presentasjoner og podkaster, inkludert pauser og pusting. En tekst på 1 000 ord tar cirka 5 minutter å lese men 7,5 minutter å snakke."
         }
       ]
     },

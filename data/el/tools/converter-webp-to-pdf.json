@@ -2,7 +2,7 @@
   "toolKey": "webpToPdf",
   "locale": "el",
   "metadata": {
-    "title": "Μετατροπέας WebP σε PDF — WebP PDF",
+    "title": "Μετατροπέας WebP σε PDF - WebP PDF",
     "description": "Μετατρέψτε εικόνες WebP σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-webp-se-pdf"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Μετατροπή",
-          "text": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας."
+          "text": "Κάντε κλικ στο Μετατροπή - τα αρχεία επεξεργάζονται τοπικά στον browser σας."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε WebP σε PDF;",
-      "html": "<p class=\"text-mid mb-4\">To WebP einai ena eyrytera chrisimopoioumeno format archeiou me megali symvatotita. Analoga me ti chrisi, i metatropi se PDF mporei na prosferei simantika pleonektimata — mikrotera archeia, kaliteri poiotita i eyriteri ypostirixi platformon.</p><p class=\"text-mid mb-4\">Aytos o dorean online metatropeas metatrepei ta archeia WebP se format PDF apeytheias ston browser. Kanena archeio den anevasei se server — oli i diadikasia ginetai topika sti syskevi sas.</p><p class=\"text-mid\">Metatrepste osa archeia thelete choris imerisia oria, choris eggraphi kai choris ydrografimatam. Syrete ta archeia, prosamoste tin poiotita kai katevaste ta apotelesmata.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το WebP είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε PDF μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία WebP σε format PDF απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "WebP to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Μετατροπή",
-          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
+          "description": "Κάντε κλικ στο Μετατροπή - τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poiotita — ti na epilexete gia metatropi WebP se PDF;",
-      "html": "<p class=\"text-mid\">To slider epitrepei 60%-95%. Ypsilotero = kaliteri poiotita alla megalytera archeia.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (proepilogi) — kalo gia istoselides, blogs, arthra.</strong></li><li><strong>85–90% — gia fotografies proionton, portfolio kai galleries.</strong></li><li><strong>60–70% — otan to megethos archeiou einai proteraiotita.</strong></li></ul><p class=\"text-mid mt-3\">Se 85% i diafora metaxy WebP kai PDF einai praktika adiaistiti.</p>"
+      "title": "Ποιότητα - τι να επιλέξετε για μετατροπή WebP σε PDF;",
+      "html": "<p class=\"text-mid\">Το slider επιτρέπει 60%-95%. Υψηλότερο = καλύτερη ποιότητα αλλά μεγαλύτερα αρχεία.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (προεπιλογή) - καλό για ιστοσελίδες, blogs, άρθρα.</strong></li><li><strong>85–90% - για φωτογραφίες προϊόντων, portfolio και galleries.</strong></li><li><strong>60–70% - όταν το μέγεθος αρχείου είναι προτεραιότητα.</strong></li></ul><p class=\"text-mid mt-3\">Σε 85% η διαφορά μεταξύ WebP και PDF είναι πρακτικά αδιαίσθητη.</p>"
     },
     {
       "type": "gap",
@@ -209,8 +209,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poso exoikonomeis metatrepontas WebP se PDF;",
-      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+      "title": "Πόσο εξοικονομείτε μετατρέποντας WebP σε PDF;",
+      "html": "<p class=\"text-mid mb-4\">Η εξοικονόμηση εξαρτάται από τον τύπο αρχείου και τη συμπίεση:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Φωτογραφία κάμερας</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Εικόνα προϊόντος</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Στιγμιότυπο / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Η πραγματική εξοικονόμηση ποικίλλει ανάλογα με το περιεχόμενο.</p>"
     },
     {
       "type": "gap",
@@ -218,35 +218,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Symvoules gia metatropi WebP se PDF",
-      "description": "Symvoules gia apofygi provlimaton:",
+      "title": "Συμβουλές για μετατροπή WebP σε PDF",
+      "description": "Συμβουλές για αποφυγή προβλημάτων:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Poly megala archeia",
-          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+          "title": "Πολύ μεγάλα αρχεία",
+          "description": "Εικόνες πάνω από 4000×4000 px μπορεί να είναι πιο αργές. Χωρίστε σε ομάδες των 10–20."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Idi sympiesmena",
-          "description": "An to WebP itan idi sympiesmeno, i metatropi se PDF mporei na min exoikonomisi polla."
+          "title": "Ήδη συμπιεσμένα",
+          "description": "Αν το WebP ήταν ήδη συμπιεσμένο, η μετατροπή σε PDF μπορεί να μην εξοικονομήσει πολλά."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Diafaneia",
+          "title": "Διαφάνεια",
           "description": "To PDF den ypostirizei diafaneia. Oi diafaneis perioches ginontai lefkes. Skeftite PNG i WebP."
         },
         {
           "icon": "RiStackLine",
-          "title": "Kratiste ta prototypa",
-          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton WebP archeion."
+          "title": "Κρατήστε τα πρωτότυπα",
+          "description": "Η μετατροπή με απώλειες δεν αναιρείται. Κρατήστε αντίγραφα των WebP αρχείων."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">While WebP to PDF conversion creates documents rather than web images, PDF file size affects the user experience when PDFs are shared or downloaded from websites. Large PDFs frustrate users and increase bounce rates.</p><p class=\"text-mid mb-4\">The converter optimizes PDF output to balance quality and size. WebP images are already compressed, so the resulting PDF will be reasonably compact. A typical 10-image PDF from WebP sources will be approximately 5–15 MB.</p><p class=\"text-mid\">If you need to display images on a web page rather than in a PDF, keep them as WebP — it’s already the optimal format for web delivery.</p>"
     },
     {
       "type": "faq",
@@ -270,16 +279,16 @@
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
         },
         {
-          "question": "Einai asfalis i metatropi WebP se PDF;",
-          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+          "question": "Είναι ασφαλής η μετατροπή WebP σε PDF;",
+          "answer": "Ναι. Όλη η επεξεργασία γίνεται τοπικά στον περιηγητή σας μέσω Canvas API. Τίποτα δεν αποστέλλεται σε διακομιστή."
         },
         {
-          "question": "Mporo na metatrepso polla archeia WebP;",
-          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+          "question": "Μπορώ να μετατρέψω πολλά αρχεία WebP;",
+          "answer": "Ναι. Ομαδική μετατροπή χωρίς όριο. Σύρετε τα αρχεία στον μετατροπέα."
         },
         {
-          "question": "Ypostirizoun oloi oi browsers to PDF;",
-          "answer": "To PDF ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
+          "question": "Υποστηρίζουν όλοι οι browsers το PDF;",
+          "answer": "Το PDF υποστηρίζεται από Chrome, Firefox, Safari, Edge και Opera."
         }
       ]
     },

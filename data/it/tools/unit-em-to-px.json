@@ -1,0 +1,277 @@
+{
+  "toolKey": "emToPx",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore em in pixel – CSS",
+    "description": "Converti unità CSS em in pixel. Per il design web responsive.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-em-in-px"
+  },
+  "hero": {
+    "title": "Convertire em in pixel",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-em-in-px",
+      "label": "em in px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore em in pixel – CSS",
+      "alternateName": ["Convertire em in pixel"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti unità CSS em in pixel. Per il design web responsive.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire em in pixel?",
+      "html": "<p class=\"text-mid mb-4\">L’unità CSS em è relativa alla dimensione del font dell’elemento genitore. Con la dimensione standard di 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">A differenza di rem (relativo alla radice), em si accumula: 1,5em × 1,5em = 2,25× la dimensione base.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore em in pixel – CSS – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato appare istantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Copia il risultato o inverti la direzione di conversione.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTextSpacing",
+          "title": "Sviluppo web",
+          "description": "Converti valori em in pixel per capire le dimensioni reali durante il debug CSS."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Tipografia",
+          "description": "Imposta le dimensioni in em per la scalabilità: body 1em = 16px, h1 2,5em = 40px."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Design responsive",
+          "description": "Usa em per breakpoint e spaziatura che scalano con la dimensione del font."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Accessibilità",
+          "description": "Le unità em rispettano le impostazioni di dimensione font dell’utente."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Converti in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Tabella con valori comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">px = em × dimensione font del genitore. Default: 16px.</p><p class=\"text-mid\">Em si accumula: body 16px, div 1,5em (24px), paragrafo dentro a 1,5em = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">px = em × dimensione font del genitore. Default: 16px.</p><p class=\"text-mid\">Em si accumula: body 16px, div 1,5em (24px), paragrafo dentro a 1,5em = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "em vs px vs rem",
+      "featureLabel": "Caratteristica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "em"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Riferimento",
+          "values": {
+            "unit1": "Font del genitore",
+            "unit2": "Pixel fisso"
+          }
+        },
+        {
+          "name": "Si accumula",
+          "values": {
+            "unit1": "Sì (annidato)",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Responsive",
+          "values": {
+            "unit1": "Sì",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Accessibilità",
+          "values": {
+            "unit1": "Rispetta impostazioni",
+            "unit2": "Dimensione fissa"
+          }
+        },
+        {
+          "name": "Prevedibilità",
+          "values": {
+            "unit1": "Dipende dal contesto",
+            "unit2": "Sempre costante"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanti pixel è 1em?",
+          "answer": "Di default 1em = 16px (standard browser). Ma em è relativo al genitore."
+        },
+        {
+          "question": "Qual è la differenza tra em e rem?",
+          "answer": "em fa riferimento al font del genitore. rem fa riferimento al font radice (html). rem è più prevedibile."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "em na px – Arteon",
+      "defaultSubject": "Feedback: em-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

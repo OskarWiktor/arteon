@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "HEIC PNG konverter – HEIC PNG",
-    "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+    "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/heic-png-konverter"
   },
   "hero": {
     "title": "HEIC PNG konverter",
-    "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+    "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC PNG konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag. Ingyenes böngészőeszköz — regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
+      "description": "iPhone HEIC fotok konvertálása vesztesgmentes PNG-re. Teljes minoseg es atlatszosag. Ingyenes böngészőeszköz - regisztráció nélkül, fájllimit nélkül, teljes adatvédelem.",
       "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["HEIC konvertálása PNG formátumba", "HEIC–PNG átalakítás", "Ingyenes HEIC–PNG konverter"]
     },
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC to PNG – typical file sizes",
+      "html": "<p class=\"text-mid mb-4\">PNG files are larger than HEIC because PNG uses lossless compression while HEIC uses lossy HEVC:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (12 MP)</p><p class=\"text-light text-sm\">HEIC: 2.1 MB → PNG: 12 MB</p><p class=\"text-light mt-1 text-sm\">6× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">HEIC: 800 KB → PNG: 2.5 MB</p><p class=\"text-light mt-1 text-sm\">3× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (48 MP)</p><p class=\"text-light text-sm\">HEIC: 5 MB → PNG: 35 MB</p><p class=\"text-light mt-1 text-sm\">7× larger (lossless)</p></div></div><p class=\"text-light mt-4 text-sm\">The size increase is expected. PNG prioritizes quality and compatibility over file size. Use JPG or WebP if smaller files are needed.</p>"
     },
     {
       "type": "faq",

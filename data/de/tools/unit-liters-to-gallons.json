@@ -1,0 +1,281 @@
+{
+  "toolKey": "litersToGallons",
+  "locale": "de",
+  "metadata": {
+    "title": "Liter in Gallonen umrechnen – Volumenrechner",
+    "description": "Rechnen Sie Liter in US-Gallonen um und umgekehrt. Nützlich für Kraftstoffverbrauch und Kochen.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/liter-in-gallonen-umrechner"
+  },
+  "hero": {
+    "title": "Liter in Gallonen umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/liter-in-gallonen-umrechner",
+      "label": "L in gal"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Liter in Gallonen umrechnen – Volumenrechner",
+      "alternateName": ["Liter in Gallonen umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Rechnen Sie Liter in US-Gallonen um und umgekehrt. Nützlich für Kraftstoffverbrauch und Kochen.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter l na galony",
+      "description": "Anleitung: l na galony.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann muss man Liter in Gallonen umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Liter (L) ist die Standard-Volumeneinheit im metrischen System. US-Gallone = 3,78541 Liter. UK (imperiale) Gallone = 4,54609 Liter. Dieser Konverter verwendet standardmäßig US-Gallonen.</p><p class=\"text-mid mb-4\">Diese Umrechnung ist wichtig für Kraftstoffverbrauch (L/100km vs. mpg), Kochen, Aquarien und Flüssigkeitsvolumen im US-Kontext.</p><p class=\"text-mid mb-4\">Kraftstoff: Ein 50-L-Tank = 13,2 US-Gallonen. Verbrauch: 7 L/100km ≈ 33,6 mpg (US).</p><p class=\"text-mid\">Alle Berechnungen laufen lokal in Ihrem Browser — nichts wird an einen Server gesendet.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Liter in Gallonen umrechnen – Volumenrechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So verwenden Sie den Konverter",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein. Sie können einen Punkt oder ein Komma als Dezimaltrennzeichen verwenden.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Konvertierungsergebnis erscheint sofort im Feld daneben – ohne Klicken.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Klicken Sie auf Ergebnis kopieren oder verwenden Sie die Umkehren-Taste.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Konverter nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGasStationLine",
+          "title": "Paliwo w USA",
+          "description": "Porównaj ceny benzyny za galon z cenami za litr w Polsce."
+        },
+        {
+          "icon": "RiCarLine",
+          "title": "Zużycie paliwa",
+          "description": "Rechnen Sie MPG (Meilen pro Gallone) in l/100 km um und umgekehrt."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Płyny domowe",
+          "description": "Amerykańskie produkty (mleko, woda) sprzedaje się w galonach."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Ogrodnictwo",
+          "description": "Amerykańskie poradniki ogrodnicze podają ilości wody w galonach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen laufen lokal in Ihrem Browser. Keine Daten werden an einen Server gesendet."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich sofort beim Tippen – ohne Klicken."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Konvertierung",
+          "description": "Die Umkehren-Taste ermöglicht die Konvertierung in beide Richtungen mit einem Klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Eine fertige Tabelle mit häufig konvertierten Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung?",
+      "html": "<p class=\"text-mid mb-4\">1 US-Gallone = 231 Kubikzoll = 3,785411784 Liter (exakt). 1 UK-Gallone = 4,54609 Liter.</p><p class=\"text-mid mb-4\">Um Liter in US-Gallonen umzurechnen, teilen Sie durch 3,78541.</p><p class=\"text-mid\">Schnelle Schätzung: Teilen Sie Liter durch 4 (leicht überschätzt).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktische Tipps",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>US-Gallone = 3,785 L. UK-Gallone = 4,546 L (20% größer!).</li><li>1 US-Gallone = 4 Quarts = 8 Pints = 128 fl oz.</li><li>Verbrauch: 1 L/100km ≈ 235,2/x mpg (US). 7 L/100km = 33,6 mpg.</li><li>Milch: US-Gallonenkrug = 3,785 L.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Liter vs. US-Gallone – Vergleich",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Liter (L)"
+        },
+        {
+          "id": "unit2",
+          "name": "US-Gallone (gal)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisch (SI)",
+            "unit2": "US Customary"
+          }
+        },
+        {
+          "name": "Basiswert",
+          "values": {
+            "unit1": "1.000 mL",
+            "unit2": "3.785,41 mL"
+          }
+        },
+        {
+          "name": "Kraftstoff",
+          "values": {
+            "unit1": "L/100km (Europa)",
+            "unit2": "MPG (USA)"
+          }
+        },
+        {
+          "name": "Kochen",
+          "values": {
+            "unit1": "mL/L (international)",
+            "unit2": "Cups/gal (US)"
+          }
+        },
+        {
+          "name": "UK-Gallone",
+          "values": {
+            "unit1": "4,546 L",
+            "unit2": "1,201 US gal"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele Liter ist 1 US-Gallone?",
+          "answer": "1 US-Gallone = 3,78541 Liter."
+        },
+        {
+          "question": "Wie viele Liter ist 1 UK-Gallone?",
+          "answer": "1 UK (imperiale) Gallone = 4,54609 Liter. UK-Gallonen sind ca. 20% größer als US-Gallonen."
+        },
+        {
+          "question": "Wie rechne ich L/100km in mpg um?",
+          "answer": "Teilen Sie 235,215 durch L/100km. Beispiel: 8 L/100km = 235,215/8 = 29,4 mpg (US)."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen laufen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "l na galony – Arteon",
+      "defaultSubject": "Feedback: liters-to-gallons"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

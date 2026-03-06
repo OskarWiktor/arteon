@@ -2,7 +2,7 @@
   "toolKey": "imageToBase64",
   "locale": "el",
   "metadata": {
-    "title": "Μετατροπέας εικόνα σε Base64 — εικόνα Base64",
+    "title": "Μετατροπέας εικόνα σε Base64 - εικόνα Base64",
     "description": "Κωδικοποιήστε εικόνες σε Base64. Αντιγράψτε έτοιμο κώδικα για CSS ή HTML. Δωρεάν.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-eikona-se-base64"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Μετατροπή",
-          "text": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας."
+          "text": "Κάντε κλικ στο Μετατροπή - τα αρχεία επεξεργάζονται τοπικά στον browser σας."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε εικόνα σε Base64;",
-      "html": "<p class=\"text-mid mb-4\">To IMAGE einai ena eyrytera chrisimopoioumeno format archeiou me megali symvatotita. Analoga me ti chrisi, i metatropi se BASE64 mporei na prosferei simantika pleonektimata — mikrotera archeia, kaliteri poiotita i eyriteri ypostirixi platformon.</p><p class=\"text-mid mb-4\">Aytos o dorean online metatropeas metatrepei ta archeia IMAGE se format BASE64 apeytheias ston browser. Kanena archeio den anevasei se server — oli i diadikasia ginetai topika sti syskevi sas.</p><p class=\"text-mid\">Metatrepste osa archeia thelete choris imerisia oria, choris eggraphi kai choris ydrografimatam. Syrete ta archeia, prosamoste tin poiotita kai katevaste ta apotelesmata.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το IMAGE είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε BASE64 μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία IMAGE σε format BASE64 απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "εικόνα to Base64 conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Μετατροπή",
-          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
+          "description": "Κάντε κλικ στο Μετατροπή - τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poso exoikonomeis metatrepontas IMAGE se BASE64;",
-      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+      "title": "Πώς λειτουργεί η μετατροπή εικόνας σε Base64;",
+      "html": "<p class=\"text-mid mb-4\">Η κωδικοποίηση Base64 μετατρέπει τα δυαδικά δεδομένα εικόνας σε συμβολοσειρά κειμένου χρησιμοποιώντας 64 εκτυπώσιμους χαρακτήρες ASCII (A–Z, a–z, 0–9, +, /). Κάθε ομάδα 3 bytes γίνεται 4 χαρακτήρες Base64, που σημαίνει ότι η κωδικοποιημένη συμβολοσειρά είναι περίπου 33% μεγαλύτερη από το αρχικό αρχείο.</p><p class=\"text-mid mb-4\">Ο μετατροπέας διαβάζει το αρχείο εικόνας, το κωδικοποιεί σε Base64 και προσθέτει το σωστό Data URI πρόθεμα (data:image/png;base64,). Αυτό δημιουργεί μια αυτόνομη συμβολοσειρά που μπορεί να ενσωματωθεί απευθείας σε HTML, CSS ή JSON χωρίς ξεχωριστό αρχείο εικόνας.</p><p class=\"text-mid\">Οι κωδικοποιημένες Base64 εικόνες χρησιμοποιούνται συχνά για μικρά εικονίδια, λογότυπα και στοιχεία UI όπου η ελάττωση HTTP αιτημάτων βελτιώνει τον χρόνο φόρτωσης. Όλη η μετατροπή γίνεται τοπικά στον περιηγητή σας.</p>"
     },
     {
       "type": "gap",
@@ -138,35 +138,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Symvoules gia metatropi IMAGE se BASE64",
-      "description": "Symvoules gia apofygi provlimaton:",
+      "title": "Συμβουλές για κωδικοποίηση εικόνας σε Base64",
+      "description": "Μερικές συμβουλές για την αποφυγή συνηθισμένων προβλημάτων:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Poly megala archeia",
-          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+          "title": "Αύξηση μεγέθους",
+          "description": "Η κωδικοποίηση Base64 αυξάνει το μέγεθος κατά περίπου 33%. Μια εικόνα 10 KB γίνεται περίπου 13,3 KB συμβολοσειρά Base64. Ιδανικό για μικρές εικόνες κάτω των 10 KB."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Idi sympiesmena",
-          "description": "An to IMAGE itan idi sympiesmeno, i metatropi se BASE64 mporei na min exoikonomisi polla."
+          "title": "Μορφή Data URI",
+          "description": "Η έξοδος περιλαμβάνει το πλήρες Data URI πρόθεμα (data:image/png;base64,...) — έτοιμο για χρήση σε HTML src ή CSS background-image."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Diafaneia",
-          "description": "To BASE64 den ypostirizei diafaneia. Oi diafaneis perioches ginontai lefkes. Skeftite PNG i WebP."
+          "icon": "RiCodeLine",
+          "title": "Υποστηριζόμενες μορφές",
+          "description": "Ο μετατροπέας δέχεται PNG, JPG, GIF, WebP, SVG και BMP. Ο τύπος MIME στο Data URI ορίζεται αυτόματα βάσει της μορφής εισόδου."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Kratiste ta prototypa",
-          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton IMAGE archeion."
+          "icon": "RiFileCodeLine",
+          "title": "Ζητήματα cache",
+          "description": "Οι ενσωματωμένες Base64 εικόνες δεν μπορούν να αποθηκευτούν σε cache ξεχωριστά. Για εικόνες σε πολλές σελίδες, ξεχωριστά αρχεία με cache headers είναι αποδοτικότερα."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to use Base64 encoding vs regular image files",
+      "html": "<p class=\"text-mid mb-4\">Base64 encoding is beneficial in specific scenarios, but not always the right choice:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Use Base64 for</strong> – small images under 10 KB (icons, logos), email templates with embedded images, API requests requiring image data in JSON, self-contained HTML files.</li><li><strong>Use regular files for</strong> – large images over 50 KB, website hero images and photos, images that need browser caching, content served via CDN.</li></ul><p class=\"text-mid mt-3\">Base64 increases data size by 33% and prevents browser caching. For web performance, only inline very small assets. For everything else, serve images as regular files with proper caching headers.</p>"
     },
     {
       "type": "faq",
@@ -190,16 +199,16 @@
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
         },
         {
-          "question": "Einai asfalis i metatropi IMAGE se BASE64;",
-          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+          "question": "Είναι ασφαλής η κωδικοποίηση εικόνας σε Base64;",
+          "answer": "Ναι. Όλη η μετατροπή γίνεται τοπικά στον περιηγητή σας. Οι εικόνες σας δεν αποστέλλονται ποτέ σε κανέναν διακομιστή."
         },
         {
-          "question": "Mporo na metatrepso polla archeia IMAGE;",
-          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+          "question": "Πότε πρέπει να χρησιμοποιήσω Base64 αντί για αρχεία εικόνας;",
+          "answer": "Η Base64 είναι ιδανική για μικρές εικόνες (εικονίδια, λογότυπα κάτω των 10 KB) όπου η εξοικονόμηση HTTP αιτήματος είναι σημαντική. Για μεγαλύτερες εικόνες, ξεχωριστά αρχεία είναι αποδοτικότερα λόγω cache."
         },
         {
-          "question": "Ypostirizoun oloi oi browsers to BASE64;",
-          "answer": "To BASE64 ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
+          "question": "Ποιες μορφές εικόνας υποστηρίζονται;",
+          "answer": "Ο μετατροπέας δέχεται PNG, JPG, GIF, WebP, SVG, BMP και άλλες τυπικές μορφές εικόνας. Ο τύπος MIME αναγνωρίζεται αυτόματα στο Data URI."
         }
       ]
     },

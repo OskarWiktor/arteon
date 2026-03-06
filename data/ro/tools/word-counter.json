@@ -140,7 +140,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează evaluarea lizibilității",
-      "html": "<p class=\"text-mid mb-4\">Instrumentul calculează un scor de lizibilitate pe baza lungimii medii a propozițiilor și a numărului mediu de silabe per cuvânt. Rezultatul apare pe o scară de la 0 la 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Foarte ușor. Propoziții scurte, cuvinte comune.</li><li><strong>70–89</strong> — Ușor. Limbaj conversațional pentru un public larg.</li><li><strong>50–69</strong> — Moderat. Texte de afaceri și jurnalistice.</li><li><strong>30–49</strong> — Dificil. Propoziții lungi, vocabular specializat.</li><li><strong>0–29</strong> — Foarte dificil. Texte academice și juridice.</li></ul><p class=\"text-mid mt-3\">Pentru limba română se folosește o adaptare Flesch cu reguli de silabisire românești. Un scor de 60–70 este un obiectiv bun pentru conținutul web.</p>"
+      "html": "<p class=\"text-mid mb-4\">Instrumentul calculează un scor de lizibilitate pe baza lungimii medii a propozițiilor și a numărului mediu de silabe per cuvânt. Rezultatul apare pe o scară de la 0 la 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> - Foarte ușor. Propoziții scurte, cuvinte comune.</li><li><strong>70–89</strong> - Ușor. Limbaj conversațional pentru un public larg.</li><li><strong>50–69</strong> - Moderat. Texte de afaceri și jurnalistice.</li><li><strong>30–49</strong> - Dificil. Propoziții lungi, vocabular specializat.</li><li><strong>0–29</strong> - Foarte dificil. Texte academice și juridice.</li></ul><p class=\"text-mid mt-3\">Pentru limba română se folosește o adaptare Flesch cu reguli de silabisire românești. Un scor de 60–70 este un obiectiv bun pentru conținutul web.</p>"
     },
     {
       "type": "gap",
@@ -170,7 +170,7 @@
         {
           "icon": "RiChatQuoteLine",
           "title": "Propoziții",
-          "description": "Numărul de propoziții din text. Ajută la evaluarea complexității și lizibilității — propozițiile mai scurte sunt mai ușor de absorbit."
+          "description": "Numărul de propoziții din text. Ajută la evaluarea complexității și lizibilității - propozițiile mai scurte sunt mai ușor de absorbit."
         },
         {
           "icon": "RiParagraph",
@@ -185,7 +185,7 @@
         {
           "icon": "RiRulerLine",
           "title": "Lungimea medie a cuvintelor",
-          "description": "Numărul mediu de caractere pe cuvânt. Un indicator al complexității textului — textele tehnice au cuvinte mai lungi."
+          "description": "Numărul mediu de caractere pe cuvânt. Un indicator al complexității textului - textele tehnice au cuvinte mai lungi."
         },
         {
           "icon": "RiTimeLine",
@@ -329,7 +329,7 @@
     {
       "type": "sectionInfo",
       "title": "De ce lizibilitatea contează pentru SEO",
-      "html": "<p class=\"text-mid mb-4\">Motoarele de căutare prioritizează conținutul care satisface intenția utilizatorului. Textul lizibil afectează direct metricile de engagement:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Timpul pe pagină</strong> — vizitatorii petrec mai mult timp pe paginile ușor de citit. Google interpretează vizitele mai lungi ca semnal de calitate.</li><li><strong>Rata de respingere</strong> — textul dens și dificil alungă cititorii. Un scor Flesch sub 30 pe o pagină generală se corelează adesea cu rate mari de respingere.</li><li><strong>Fragmente recomandate</strong> — Google tinde să selecteze răspunsuri clare și concise. Propozițiile mai scurte și limbajul direct cresc șansele de a fi selectat.</li><li><strong>Lizibilitate mobilă</strong> — pe ecrane mici, propozițiile lungi și vocabularul complex sunt și mai greu de urmărit. Un scor de 60+ îmbunătățește experiența mobilă.</li></ul><p class=\"text-mid mt-3\">Un obiectiv bun pentru conținut web este un scor Flesch între 60 și 70 — suficient de clar pentru majoritatea cititorilor, suficient de detaliat pentru a transmite expertiză.</p>"
+      "html": "<p class=\"text-mid mb-4\">Motoarele de căutare prioritizează conținutul care satisface intenția utilizatorului. Textul lizibil afectează direct metricile de engagement:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Timpul pe pagină</strong> - vizitatorii petrec mai mult timp pe paginile ușor de citit. Google interpretează vizitele mai lungi ca semnal de calitate.</li><li><strong>Rata de respingere</strong> - textul dens și dificil alungă cititorii. Un scor Flesch sub 30 pe o pagină generală se corelează adesea cu rate mari de respingere.</li><li><strong>Fragmente recomandate</strong> - Google tinde să selecteze răspunsuri clare și concise. Propozițiile mai scurte și limbajul direct cresc șansele de a fi selectat.</li><li><strong>Lizibilitate mobilă</strong> - pe ecrane mici, propozițiile lungi și vocabularul complex sunt și mai greu de urmărit. Un scor de 60+ îmbunătățește experiența mobilă.</li></ul><p class=\"text-mid mt-3\">Un obiectiv bun pentru conținut web este un scor Flesch între 60 și 70 - suficient de clar pentru majoritatea cititorilor, suficient de detaliat pentru a transmite expertiză.</p>"
     },
     {
       "type": "gap",
@@ -343,12 +343,12 @@
         {
           "icon": "RiBarChartLine",
           "title": "11 metrici + scor de lizibilitate",
-          "description": "Cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și Flesch-Kincaid — totul într-un singur panou."
+          "description": "Cuvinte, caractere, silabe, propoziții, paragrafe, cuvinte unice, timp de citire, timp de vorbire și Flesch-Kincaid - totul într-un singur panou."
         },
         {
           "icon": "RiTextWrap",
           "title": "10 instrumente de formatare",
-          "description": "Conversie majuscule, eliminare spații, linii goale, duplicate și sortare — fără a instala software suplimentar."
+          "description": "Conversie majuscule, eliminare spații, linii goale, duplicate și sortare - fără a instala software suplimentar."
         },
         {
           "icon": "RiUserLine",
@@ -379,7 +379,7 @@
     {
       "type": "sectionInfo",
       "title": "Lungimea ideală a textului pentru site-uri românești",
-      "html": "<p class=\"text-mid mb-4\">Articolele de blog în limba română obțin cele mai bune rezultate în motoarele de căutare la o lungime de 1 200–2 000 de cuvinte. Articolele mai scurte (600–1 000 de cuvinte) funcționează pentru ghiduri practice și răspunsuri la întrebări specifice. Articolele sub 500 de cuvinte ajung rareori pe poziții înalte, cu excepția cazului în care răspund unei interogări foarte specifice.</p><p class=\"text-mid mb-4\">Descrierile de produse în magazinele online românești trebuie să conțină 150–300 de cuvinte. Pe eMAG.ro, titlurile de produse au limite de caractere — folosiți acest spațiu pentru informații concrete despre caracteristici, materiale și dimensiuni. Pe OLX.ro, titlurile de anunțuri au o limită de circa 70 de caractere.</p><p class=\"text-mid\">Paginile de servicii (cabinet dentar, cabinet de avocatură, firmă de construcții) au nevoie de 500–800 de cuvinte cu informații concrete: gamă de servicii, zonă de acoperire, date de contact. Numărul de cuvinte în sine nu este un indicator de calitate — un text concis de 600 de cuvinte cu informații utile depășește un text umflat de 2 000 de cuvinte fără valoare adăugată.</p>"
+      "html": "<p class=\"text-mid mb-4\">Articolele de blog în limba română obțin cele mai bune rezultate în motoarele de căutare la o lungime de 1 200–2 000 de cuvinte. Articolele mai scurte (600–1 000 de cuvinte) funcționează pentru ghiduri practice și răspunsuri la întrebări specifice. Articolele sub 500 de cuvinte ajung rareori pe poziții înalte, cu excepția cazului în care răspund unei interogări foarte specifice.</p><p class=\"text-mid mb-4\">Descrierile de produse în magazinele online românești trebuie să conțină 150–300 de cuvinte. Pe eMAG.ro, titlurile de produse au limite de caractere - folosiți acest spațiu pentru informații concrete despre caracteristici, materiale și dimensiuni. Pe OLX.ro, titlurile de anunțuri au o limită de circa 70 de caractere.</p><p class=\"text-mid\">Paginile de servicii (cabinet dentar, cabinet de avocatură, firmă de construcții) au nevoie de 500–800 de cuvinte cu informații concrete: gamă de servicii, zonă de acoperire, date de contact. Numărul de cuvinte în sine nu este un indicator de calitate - un text concis de 600 de cuvinte cu informații utile depășește un text umflat de 2 000 de cuvinte fără valoare adăugată.</p>"
     },
     {
       "type": "gap",
@@ -388,7 +388,7 @@
     {
       "type": "sectionInfo",
       "title": "Pagina standard și normele de traducere în România",
-      "html": "<p class=\"text-mid mb-4\">Agențiile de traduceri din România facturează pe pagină standard sau pe cuvânt. O pagină standard corespunde la 1 800 de caractere cu spații (aproximativ 250–300 de cuvinte). Înainte de a solicita o ofertă de preț, lipiți textul în contor și verificați numărul de caractere cu spații pentru a estima costul. Un text de 18 000 de caractere cu spații corespunde exact 10 pagini standard.</p><p class=\"text-mid mb-4\">Editurile românești măsoară manuscrisele în pagini standard sau număr de cuvinte. Redactorii și corectorii folosesc contorul de caractere pentru a evalua rapid volumul unui manuscris înainte de a propune un tarif. Pagina standard este și unitatea obișnuită pentru munca de redactare și corectură în România.</p><p class=\"text-mid\">Universitățile românești exprimă cerințele pentru lucrări de licență și disertații în număr de cuvinte sau caractere. O lucrare de licență necesită de obicei 30 000–50 000 de caractere cu spații, o disertație de master 50 000–80 000 de caractere, iar o teză de doctorat peste 100 000 de caractere. Cerințele variază între universități — verificați întotdeauna regulamentul programului dumneavoastră de studii.</p>"
+      "html": "<p class=\"text-mid mb-4\">Agențiile de traduceri din România facturează pe pagină standard sau pe cuvânt. O pagină standard corespunde la 1 800 de caractere cu spații (aproximativ 250–300 de cuvinte). Înainte de a solicita o ofertă de preț, lipiți textul în contor și verificați numărul de caractere cu spații pentru a estima costul. Un text de 18 000 de caractere cu spații corespunde exact 10 pagini standard.</p><p class=\"text-mid mb-4\">Editurile românești măsoară manuscrisele în pagini standard sau număr de cuvinte. Redactorii și corectorii folosesc contorul de caractere pentru a evalua rapid volumul unui manuscris înainte de a propune un tarif. Pagina standard este și unitatea obișnuită pentru munca de redactare și corectură în România.</p><p class=\"text-mid\">Universitățile românești exprimă cerințele pentru lucrări de licență și disertații în număr de cuvinte sau caractere. O lucrare de licență necesită de obicei 30 000–50 000 de caractere cu spații, o disertație de master 50 000–80 000 de caractere, iar o teză de doctorat peste 100 000 de caractere. Cerințele variază între universități - verificați întotdeauna regulamentul programului dumneavoastră de studii.</p>"
     },
     {
       "type": "gap",
@@ -396,8 +396,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Lizibilitate în română — diacritice și structura flexionară",
-      "html": "<p class=\"text-mid mb-4\">Româna este o limbă flexionară cu diacritice specifice: ă, â, î, ș, ț. Aceste caractere ocupă fiecare o poziție, la fel ca literele de bază — nu afectează numărarea caracterelor. Cuvintul mediu în română are 5–6 caractere, similar cu franceza și italiana. Acest lucru înseamnă că scorurile Flesch pentru texte românești vor fi ușor mai scăzute decât pentru texte engleze de dificultate comparabilă.</p><p class=\"text-mid mb-4\">Un obiectiv bun pentru conținut web în română este un scor Flesch între 50 și 60. Propozițiile scurte (15–20 de cuvinte) și paragrafele scurte (3–4 propoziții) îmbunătățesc semnificativ lizibilitatea pe ecrane. Stilul academic și jurnalistic românesc tinde să folosească propoziții lungi cu multiple subordonate. Această structură este naturală în registrul formal, dar reduce lizibilitatea pe dispozitive digitale.</p><p class=\"text-mid\">Comparați scorurile de lizibilitate doar în cadrul aceleiași limbi. Un scor Flesch de 55 pentru un text românesc nu corespunde aceluiași grad de dificultate ca 55 pentru un text englezesc, deoarece formulele folosesc coeficienți diferiți. Instrumentul selectează automat formula corectă în funcție de limba interfeței.</p>"
+      "title": "Lizibilitate în română - diacritice și structura flexionară",
+      "html": "<p class=\"text-mid mb-4\">Româna este o limbă flexionară cu diacritice specifice: ă, â, î, ș, ț. Aceste caractere ocupă fiecare o poziție, la fel ca literele de bază - nu afectează numărarea caracterelor. Cuvintul mediu în română are 5–6 caractere, similar cu franceza și italiana. Acest lucru înseamnă că scorurile Flesch pentru texte românești vor fi ușor mai scăzute decât pentru texte engleze de dificultate comparabilă.</p><p class=\"text-mid mb-4\">Un obiectiv bun pentru conținut web în română este un scor Flesch între 50 și 60. Propozițiile scurte (15–20 de cuvinte) și paragrafele scurte (3–4 propoziții) îmbunătățesc semnificativ lizibilitatea pe ecrane. Stilul academic și jurnalistic românesc tinde să folosească propoziții lungi cu multiple subordonate. Această structură este naturală în registrul formal, dar reduce lizibilitatea pe dispozitive digitale.</p><p class=\"text-mid\">Comparați scorurile de lizibilitate doar în cadrul aceleiași limbi. Un scor Flesch de 55 pentru un text românesc nu corespunde aceluiași grad de dificultate ca 55 pentru un text englezesc, deoarece formulele folosesc coeficienți diferiți. Instrumentul selectează automat formula corectă în funcție de limba interfeței.</p>"
     },
     {
       "type": "gap",
@@ -451,7 +451,7 @@
         },
         {
           "question": "Care este diferența dintre timpul de citire și timpul de vorbire?",
-          "answer": "Timpul de citire folosește 200 de cuvinte pe minut — viteza medie de citire silențioasă. Timpul de vorbire folosește 130 de cuvinte pe minut, ritmul natural pentru prezentări și podcasturi, care include pauze și respirație. Un text de 1 000 de cuvinte durează circa 5 minute de citit, dar 7,5 minute de vorbit."
+          "answer": "Timpul de citire folosește 200 de cuvinte pe minut - viteza medie de citire silențioasă. Timpul de vorbire folosește 130 de cuvinte pe minut, ritmul natural pentru prezentări și podcasturi, care include pauze și respirație. Un text de 1 000 de cuvinte durează circa 5 minute de citit, dar 7,5 minute de vorbit."
         }
       ]
     },

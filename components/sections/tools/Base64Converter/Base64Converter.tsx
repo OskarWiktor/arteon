@@ -3,6 +3,7 @@
 import { useCallback, useState } from 'react';
 
 import Button from '@/components/ui/buttons/Button';
+import FormatSelector from '@/components/sections/tools/FormatPicker/FormatSelector';
 import ToolAlert from '@/components/ui/tools/ToolAlert';
 import ToolFileDropzone from '@/components/ui/tools/ToolFileDropzone';
 import ToolSection from '@/components/ui/tools/ToolSection';
@@ -21,31 +22,34 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
   const [copied, setCopied] = useState(false);
 
   // ENCODE: image file → Base64 string
-  const handleAddFiles = useCallback((fileList: FileList | null) => {
-    if (!fileList || fileList.length === 0) return;
-    setError(null);
-    const file = fileList[0];
+  const handleAddFiles = useCallback(
+    (fileList: FileList | null) => {
+      if (!fileList || fileList.length === 0) return;
+      setError(null);
+      const file = fileList[0];
 
-    if (!file.type.startsWith('image/')) {
-      setError('Obsługiwane są tylko pliki graficzne (JPG, PNG, WebP, SVG, GIF, BMP).');
-      return;
-    }
+      if (!file.type.startsWith('image/')) {
+        setError(t.onlyImageFiles);
+        return;
+      }
 
-    setFileName(file.name);
-    const reader = new FileReader();
-    reader.onload = () => {
-      const dataUrl = reader.result as string;
-      setBase64(dataUrl);
-      setPreviewUrl(dataUrl);
-    };
-    reader.onerror = () => setError('Nie udało się odczytać pliku.');
-    reader.readAsDataURL(file);
-  }, []);
+      setFileName(file.name);
+      const reader = new FileReader();
+      reader.onload = () => {
+        const dataUrl = reader.result as string;
+        setBase64(dataUrl);
+        setPreviewUrl(dataUrl);
+      };
+      reader.onerror = () => setError(t.fileReadError);
+      reader.readAsDataURL(file);
+    },
+    [t],
+  );
 
   // DECODE: Base64 string → image preview
   const handleDecode = useCallback(() => {
     if (!base64.trim()) {
-      setError('Wklej ciąg Base64 obrazu.');
+      setError(t.base64PasteEmpty);
       return;
     }
     setError(null);
@@ -53,13 +57,21 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     let dataUrl = base64.trim();
     // Add data URL prefix if missing
     if (!dataUrl.startsWith('data:')) {
-      // Try to detect image type from base64 header
-      const header = atob(dataUrl.slice(0, 16));
       let mime = 'image/png';
-      if (header.startsWith('\xFF\xD8')) mime = 'image/jpeg';
-      else if (header.startsWith('\x89PNG')) mime = 'image/png';
-      else if (header.startsWith('GIF')) mime = 'image/gif';
-      else if (header.startsWith('RIFF') && header.includes('WEBP')) mime = 'image/webp';
+      try {
+        const header = atob(dataUrl.slice(0, 24));
+        if (header.startsWith('\xFF\xD8')) mime = 'image/jpeg';
+        else if (header.startsWith('\x89PNG')) mime = 'image/png';
+        else if (header.startsWith('GIF')) mime = 'image/gif';
+        else if (header.startsWith('RIFF') && header.includes('WEBP')) mime = 'image/webp';
+        else if (header.startsWith('<svg') || header.startsWith('<?xml')) mime = 'image/svg+xml';
+        else if (header.includes('ftypavif')) mime = 'image/avif';
+        else if (header.startsWith('II') || header.startsWith('MM')) mime = 'image/tiff';
+      } catch {
+        setError(t.base64Invalid);
+        setPreviewUrl(null);
+        return;
+      }
       dataUrl = `data:${mime};base64,${dataUrl}`;
     }
 
@@ -70,11 +82,11 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
       setFileName(null);
     };
     img.onerror = () => {
-      setError('Nieprawidłowy ciąg Base64 — nie jest to obraz.');
+      setError(t.base64Invalid);
       setPreviewUrl(null);
     };
     img.src = dataUrl;
-  }, [base64]);
+  }, [base64, t]);
 
   const handleCopy = useCallback(async () => {
     if (!base64) return;
@@ -106,6 +118,8 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
       'image/gif': '.gif',
       'image/svg+xml': '.svg',
       'image/bmp': '.bmp',
+      'image/avif': '.avif',
+      'image/tiff': '.tiff',
     };
     const ext = extMap[mime] ?? '.png';
 
@@ -129,15 +143,16 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
   if (mode === 'encode') {
     return (
       <div className="overflow-hidden">
+        <FormatSelector currentSource="jpg" currentTarget="base64" hasFiles={!!base64} />
         <div className="grid gap-4 md:grid-cols-2">
           <ToolSection className="space-y-3">
-            <h2 className="h6">Obraz</h2>
+            <h2 className="h6">{t.imageHeading}</h2>
             <ToolFileDropzone accept="image/*" onFiles={handleAddFiles} className="tool-upload-area">
-              <ToolUploadContent dragLabel="Przeciągnij obraz tutaj" clickLabel={t.clickToSelect} formatsLabel="JPG, PNG, WebP, SVG, GIF, BMP" />
+              <ToolUploadContent dragLabel={t.dragImageHere} clickLabel={t.clickToSelect} formatsLabel="JPG, PNG, WebP, SVG, GIF, BMP" />
             </ToolFileDropzone>
             {fileName && (
               <p className="tool-meta">
-                Plik: <strong>{fileName}</strong>
+                {t.fileLabel} <strong>{fileName}</strong>
               </p>
             )}
             {error && <ToolAlert variant="error">{error}</ToolAlert>}
@@ -152,12 +167,12 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
               className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-xs! transition outline-none focus:border-neutral-300 focus:bg-white"
               value={base64}
               readOnly
-              placeholder="Kod Base64 pojawi się tutaj po dodaniu obrazu"
+              placeholder={t.base64Placeholder}
               spellCheck={false}
             />
             <div className="flex flex-wrap gap-3">
               <Button onClick={handleCopy} disabled={!base64} className="disabled:opacity-40" size="small">
-                {copied ? '✓ Skopiowano' : 'Kopiuj'}
+                {copied ? t.copied : t.copy}
               </Button>
             </div>
           </ToolSection>
@@ -169,6 +184,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
   // mode === 'decode'
   return (
     <div className="overflow-hidden">
+      <FormatSelector currentSource="base64" currentTarget="jpg" hasFiles={!!base64} />
       <div className="grid gap-4 md:grid-cols-2">
         <ToolSection className="space-y-3">
           <h2 className="h6">Base64</h2>
@@ -176,13 +192,13 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
             className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-xs! transition outline-none focus:border-neutral-300 focus:bg-white"
             value={base64}
             onChange={(e) => setBase64(e.target.value)}
-            placeholder="Wklej ciąg Base64 obrazu (z prefixem data:image/... lub bez)"
+            placeholder={t.base64PastePlaceholder}
             spellCheck={false}
           />
           {error && <ToolAlert variant="error">{error}</ToolAlert>}
           <div className="flex flex-wrap gap-3">
             <Button variant="accent" onClick={handleDecode} disabled={!base64.trim()} className="disabled:opacity-60" size="small">
-              Dekoduj
+              {t.decodeBtn}
             </Button>
             <Button onClick={handleClear} disabled={!base64} className="disabled:opacity-40" size="small">
               {t.clearAll}
@@ -191,7 +207,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
         </ToolSection>
 
         <ToolSection className="space-y-3">
-          <h2 className="h6">Podgląd obrazu</h2>
+          <h2 className="h6">{t.imagePreview}</h2>
           {previewUrl ? (
             <div className="space-y-3">
               <div className="flex items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50 p-4">
@@ -204,7 +220,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
             </div>
           ) : (
             <div className="flex min-h-[300px] items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50 p-4">
-              <p className="tool-meta">Wklej Base64 i kliknij Dekoduj, aby zobaczyć podgląd</p>
+              <p className="tool-meta">{t.base64DecodeHint}</p>
             </div>
           )}
         </ToolSection>

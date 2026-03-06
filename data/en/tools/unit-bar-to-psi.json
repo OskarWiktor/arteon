@@ -1,0 +1,289 @@
+{
+  "toolKey": "barToPsi",
+  "locale": "en",
+  "metadata": {
+    "title": "Bar to PSI converter – quick pressure conversion",
+    "description": "Convert bar to PSI and vice versa. Useful for tire pressure, industrial systems, and HVAC equipment. No registration required.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/bar-to-psi-converter"
+  },
+  "hero": {
+    "title": "Convert bar to PSI",
+    "description": "This converter converts bar to PSI and vice versa. Just enter a value and the result appears instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/bar-to-psi-converter",
+      "label": "bar to PSI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bar to PSI converter – quick pressure conversion",
+      "alternateName": ["Bar to PSI calculator", "Pressure unit converter", "Bar PSI conversion"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert bar to PSI and vice versa. Useful for tire pressure, industrial systems, and HVAC equipment.",
+      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the bar to PSI converter",
+      "description": "Instructions: bar to PSI.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter a value",
+          "text": "Type a number in the input field on the left."
+        },
+        {
+          "name": "Read the result",
+          "text": "The conversion result appears instantly in the field on the right."
+        },
+        {
+          "name": "Copy or reverse",
+          "text": "Click Copy result or Reverse to convert in the opposite direction."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert bar to PSI?",
+      "html": "<p class=\"text-mid mb-4\">Bar is a metric pressure unit equal to 100,000 pascals (100 kPa). PSI (pounds per square inch) is the standard pressure unit in the imperial system, used primarily in the US, UK, and other countries that use imperial measurements.</p><p class=\"text-mid mb-4\">The conversion factor is: 1 bar = 14.5038 PSI. This is essential for tire pressure (European cars specify bar, US cars specify PSI), HVAC systems, industrial equipment, and scuba diving (tank pressure).</p><p class=\"text-mid mb-4\">Tire pressure example: 2.2 bar = 31.9 PSI, 2.5 bar = 36.3 PSI, 3.0 bar = 43.5 PSI. Most passenger cars recommend 2.0–2.5 bar (29–36 PSI).</p><p class=\"text-mid\">This converter calculates with full precision. All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Bar to PSI converter – quick pressure conversion – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Opony samochodowe",
+          "description": "Europejskie: 2,0–2,5 bar. Amerykańskie: 29–36 PSI."
+        },
+        {
+          "icon": "RiAnchorLine",
+          "title": "Nurkowanie",
+          "description": "Butla nurkowa: 200 bar = 2 900 PSI."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Pneumatyka",
+          "description": "Sprężarki i narzędzia pneumatyczne: 6–10 bar = 87–145 PSI."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Opony rowerowe",
+          "description": "Rower szosowy: 6–8 bar = 87–116 PSI. Górski: 2–3 bar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does bar to PSI conversion work?",
+      "html": "<p class=\"text-mid mb-4\">The conversion is based on the definition: 1 bar = 100,000 Pa, and 1 PSI = 6,894.757 Pa. Therefore, 1 bar = 100,000 / 6,894.757 ≈ 14.5038 PSI.</p><p class=\"text-mid mb-4\">To convert bar to PSI, multiply by 14.5038. To convert PSI to bar, divide by 14.5038 (or multiply by 0.0689476).</p><p class=\"text-mid\">The converter displays results with full precision. The bar-to-PSI conversion factor is constant and exact.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Standard atmospheric pressure: 1.01325 bar = 14.696 PSI.</li><li>Car tire pressure typically ranges from 2.0–2.5 bar (29–36 PSI).</li><li>Bicycle tires: road bikes 6–8 bar (87–116 PSI), mountain bikes 2–3 bar (29–44 PSI).</li><li>Scuba tanks: 200–300 bar (2,900–4,350 PSI) when full.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Bar vs PSI – comparison",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Bar"
+        },
+        {
+          "id": "unit2",
+          "name": "PSI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metric",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Base value",
+          "values": {
+            "unit1": "100,000 Pa",
+            "unit2": "6,894.76 Pa"
+          }
+        },
+        {
+          "name": "Tire pressure",
+          "values": {
+            "unit1": "Europe (bar)",
+            "unit2": "USA/UK (PSI)"
+          }
+        },
+        {
+          "name": "Industry",
+          "values": {
+            "unit1": "International standard",
+            "unit2": "US standard"
+          }
+        },
+        {
+          "name": "Atmosphere",
+          "values": {
+            "unit1": "1.013 bar",
+            "unit2": "14.696 PSI"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many PSI is 1 bar?",
+          "answer": "Exactly 14.5038 PSI. This is derived from the definition of bar (100,000 Pa) divided by PSI (6,894.757 Pa)."
+        },
+        {
+          "question": "How many bar is 30 PSI?",
+          "answer": "30 PSI = 2.068 bar. This is a common tire pressure for passenger cars."
+        },
+        {
+          "question": "What is normal tire pressure in bar and PSI?",
+          "answer": "Most passenger cars recommend 2.0–2.5 bar (29–36 PSI). Check the sticker on the driver's door jamb for your specific vehicle."
+        },
+        {
+          "question": "Is 1 bar the same as 1 atmosphere?",
+          "answer": "Close but not exactly. 1 atmosphere = 1.01325 bar = 14.696 PSI. 1 bar is about 98.7% of 1 atmosphere."
+        },
+        {
+          "question": "What pressure do bicycle tires need?",
+          "answer": "Road bikes: 6–8 bar (87–116 PSI). Mountain bikes: 2–3 bar (29–44 PSI). Hybrid/city bikes: 3–5 bar (44–73 PSI)."
+        },
+        {
+          "question": "Are the calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "bar na PSI – Arteon",
+      "defaultSubject": "Feedback: bar-to-psi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

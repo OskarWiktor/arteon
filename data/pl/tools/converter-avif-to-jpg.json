@@ -3,7 +3,7 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter AVIF na JPG – zamień nowoczesny format na uniwersalny",
-    "description": "Zamień pliki AVIF na uniwersalny JPG w przeglądarce. Bez limitu plików, bez rejestracji. Konwersja lokalna — pliki nie są wysyłane na serwer.",
+    "description": "Zamień pliki AVIF na uniwersalny JPG w przeglądarce. Bez limitu plików, bez rejestracji. Konwersja lokalna - pliki nie są wysyłane na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-avif-na-jpg"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Zamiana AVIF na JPG online", "Konwersja AVIF do JPG", "AVIF to JPG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter AVIF na JPG online. Zamień pliki AVIF na uniwersalny JPG w przeglądarce — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter AVIF na JPG online. Zamień pliki AVIF na uniwersalny JPG w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": ["Konwersja AVIF do JPG", "Regulacja poziomu jakości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować AVIF na JPG?",
-      "html": "<p class=\"text-mid mb-4\">AVIF (AV1 Image File Format) to nowoczesny format obrazu oparty na kodeku wideo AV1. Oferuje kompresję o 20–50% lepszą niż JPG przy porównywalnej jakości wizualnej. AVIF obsługuje HDR, szeroką gamę kolorów i przezroczystość.</p><p class=\"text-mid mb-4\">Jednak AVIF nie jest jeszcze uniwersalnie obsługiwany. Starsze przeglądarki, wiele programów graficznych i platform społecznościowych nie otwiera plików AVIF. JPG (JPEG) to najbardziej rozpowszechniony format graficzny — działa w każdym programie, przeglądarce i systemie operacyjnym.</p><p class=\"text-mid\">Konwersja AVIF na JPG jest przydatna, gdy potrzebujesz pliku kompatybilnego ze starszym oprogramowaniem, chcesz wysłać zdjęcie e-mailem lub opublikować na platformie, która nie obsługuje AVIF.</p>",
+      "html": "<p class=\"text-mid mb-4\">AVIF (AV1 Image File Format) to nowoczesny format obrazu oparty na kodeku wideo AV1. Oferuje kompresję o 20–50% lepszą niż JPG przy porównywalnej jakości wizualnej. AVIF obsługuje HDR, szeroką gamę kolorów i przezroczystość.</p><p class=\"text-mid mb-4\">Jednak AVIF nie jest jeszcze uniwersalnie obsługiwany. Starsze przeglądarki, wiele programów graficznych i platform społecznościowych nie otwiera plików AVIF. JPG (JPEG) to najbardziej rozpowszechniony format graficzny - działa w każdym programie, przeglądarce i systemie operacyjnym.</p><p class=\"text-mid\">Konwersja AVIF na JPG jest przydatna, gdy potrzebujesz pliku kompatybilnego ze starszym oprogramowaniem, chcesz wysłać zdjęcie e-mailem lub opublikować na platformie, która nie obsługuje AVIF.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter AVIF na JPG – Arteon"
     },
@@ -100,7 +100,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
+          "description": "Pliki nie opuszczają komputera - cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -203,8 +203,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji AVIF na JPG?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem AVIF a wynikowym JPG jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji AVIF na JPG?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem AVIF a wynikowym JPG jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -222,7 +222,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów AVIF na JPG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów AVIF na JPG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -252,7 +252,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików AVIF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików AVIF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -267,7 +267,7 @@
       "items": [
         {
           "question": "Czy moja przeglądarka obsługuje AVIF?",
-          "answer": "AVIF jest obsługiwany przez Chrome 85+ (sierpień 2020), Firefox 93+ (październik 2021) i Safari 16.4+ (marzec 2023). Jeśli przeglądarka nie obsługuje AVIF, konwersja nie będzie możliwa — zaktualizuj przeglądarkę do najnowszej wersji."
+          "answer": "AVIF jest obsługiwany przez Chrome 85+ (sierpień 2020), Firefox 93+ (październik 2021) i Safari 16.4+ (marzec 2023). Jeśli przeglądarka nie obsługuje AVIF, konwersja nie będzie możliwa - zaktualizuj przeglądarkę do najnowszej wersji."
         },
         {
           "question": "Czy konwersja AVIF na JPG powoduje utratę jakości?",
@@ -287,11 +287,11 @@
         },
         {
           "question": "Czy konwersja AVIF na JPG jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
           "question": "Czy mogę konwertować wiele plików AVIF jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz - nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
         },
         {
           "question": "Czy JPG jest obsługiwany przez wszystkie przeglądarki?",

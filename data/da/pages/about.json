@@ -6,12 +6,12 @@
   },
   "hero": {
     "title": "Gratis værktøjer fra et kreativt bureau",
-    "description": "10 browserværktøjer til billeder, SEO, farver, e-mailsignaturer og QR-koder — uden tilmelding, uden filupload, uden begrænsninger"
+    "description": "10 browserværktøjer til billeder, SEO, farver, e-mailsignaturer og QR-koder - uden tilmelding, uden filupload, uden begrænsninger"
   },
   "whoWeAre": {
     "title": "Hvem vi er",
     "p1": "Arteon er et polsk kreativt bureau. Ud over vores kommercielle arbejde bygger og vedligeholder vi en voksende samling gratis værktøjer designet til virksomhedsejere, webskabere, designere, marketingfolk og alle, der arbejder med digitalt indhold.",
-    "p2": "Hvert værktøj, vi skaber, løser et specifikt hverdagsproblem: konvertering af billeder, kontrol af farvekontrast, generering af favicons, oprettelse af QR-koder og mere. Vores mål er at bygge en komplet værktøjskasse, hvor du finder alt, hvad du har brug for ét sted — uden at skifte mellem snesevis af forskellige websteder."
+    "p2": "Hvert værktøj, vi skaber, løser et specifikt hverdagsproblem: konvertering af billeder, kontrol af farvekontrast, generering af favicons, oprettelse af QR-koder og mere. Vores mål er at bygge en komplet værktøjskasse, hvor du finder alt, hvad du har brug for ét sted - uden at skifte mellem snesevis af forskellige websteder."
   },
   "whyFree": {
     "title": "Hvorfor vi tilbyder gratis værktøjer",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Privatliv først",
-        "description": "Dine filer forlader aldrig din enhed. Al behandling sker lokalt i browseren — vi sender ikke dine data til nogen server."
+        "description": "Dine filer forlader aldrig din enhed. Al behandling sker lokalt i browseren - vi sender ikke dine data til nogen server."
       },
       {
         "title": "Skabt ud fra reelle behov",
@@ -61,7 +61,7 @@
   },
   "whatsNext": {
     "title": "Hvad der kommer",
-    "text": "Vi arbejder aktivt på at udvide værktøjskassen. Nye værktøjer tilføjes regelmæssigt baseret på brugerfeedback og vores egen erfaring. Målet er én platform, hvor virksomhedsejere, designere og udviklere har adgang til hvert vigtigt værktøj — alt ét sted, alt gratis."
+    "text": "Vi arbejder aktivt på at udvide værktøjskassen. Nye værktøjer tilføjes regelmæssigt baseret på brugerfeedback og vores egen erfaring. Målet er én platform, hvor virksomhedsejere, designere og udviklere har adgang til hvert vigtigt værktøj - alt ét sted, alt gratis."
   },
   "privacy": {
     "title": "Privatliv og sikkerhed",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Prøv vores værktøjer",
-    "description": "Gratis værktøjer — uden tilmelding, uden begrænsninger, uden filupload til servere",
+    "description": "Gratis værktøjer - uden tilmelding, uden begrænsninger, uden filupload til servere",
     "btnOne": "Gå til værktøjerne",
     "btnTwo": "Kontakt"
   }

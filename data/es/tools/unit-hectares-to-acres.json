@@ -1,0 +1,277 @@
+{
+  "toolKey": "hectaresToAcres",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de hectáreas a acres",
+    "description": "Convierte hectáreas a acres y viceversa. Útil para bienes raíces y agricultura.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-hectareas-a-acres"
+  },
+  "hero": {
+    "title": "Convertir hectáreas a acres",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-hectareas-a-acres",
+      "label": "ha a ac"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de hectáreas a acres",
+      "alternateName": ["Convertir hectáreas a acres"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte hectáreas a acres y viceversa. Útil para bienes raíces y agricultura.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir hectáreas a acres?",
+      "html": "<p class=\"text-mid mb-4\">La hectárea (ha) es una unidad métrica de superficie igual a 10.000 m² (100 m × 100 m). El acre es una unidad imperial igual a 4.046,86 m². La conversión: 1 hectárea = 2,47105 acres.</p><p class=\"text-mid mb-4\">Esta conversión es importante para inmuebles internacionales, agricultura, silvicultura y gestión territorial.</p><p class=\"text-mid mb-4\">Referencia: un campo de fútbol mide aproximadamente 0,7 ha (1,7 acres).</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de hectáreas a acres – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada. Puedes usar punto o coma como separador decimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado de la conversión aparece instantáneamente en el campo contiguo.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Haz clic en Copiar resultado o usa el botón Invertir para convertir en dirección opuesta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPlantLine",
+          "title": "Inmuebles",
+          "description": "Los anuncios inmobiliarios en EE. UU./UK usan acres. Los internacionales usan hectáreas."
+        },
+        {
+          "icon": "RiHome4Line",
+          "title": "Agricultura",
+          "description": "Rendimientos agrícolas y precios de terrenos se indican por hectárea (internacional) o acre (EE. UU./UK)."
+        },
+        {
+          "icon": "RiTreeLine",
+          "title": "Silvicultura",
+          "description": "La gestión forestal usa hectáreas en la mayoría de países."
+        },
+        {
+          "icon": "RiMapLine",
+          "title": "Topografía",
+          "description": "Los informes de topografía pueden usar una u otra unidad según el país."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador. Ningún dato se envía a ningún servidor."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza instantáneamente mientras escribes, sin necesidad de pulsar ningún botón."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "El botón Invertir te permite convertir en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Una tabla con valores de conversión comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 hectárea = 10.000 m². 1 acre = 4.046,8564224 m². Por tanto: 1 ha = 2,47105 acres.</p><p class=\"text-mid mb-4\">Para convertir hectáreas a acres, multiplica por 2,47105.</p><p class=\"text-mid\">Estimación rápida: 1 hectárea ≈ 2,5 acres.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 hectárea = 10.000 m². 1 acre = 4.046,8564224 m². Por tanto: 1 ha = 2,47105 acres.</p><p class=\"text-mid mb-4\">Para convertir hectáreas a acres, multiplica por 2,47105.</p><p class=\"text-mid\">Estimación rápida: 1 hectárea ≈ 2,5 acres.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Hectárea vs Acre – comparación",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Hectárea (ha)"
+        },
+        {
+          "id": "unit2",
+          "name": "Acre (ac)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistema",
+          "values": {
+            "unit1": "Métrico",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Superficie",
+          "values": {
+            "unit1": "10.000 m²",
+            "unit2": "4.046,86 m²"
+          }
+        },
+        {
+          "name": "Dimensiones",
+          "values": {
+            "unit1": "100 m × 100 m",
+            "unit2": "~63,6 m × 63,6 m"
+          }
+        },
+        {
+          "name": "Inmuebles",
+          "values": {
+            "unit1": "Internacional",
+            "unit2": "EE. UU./UK"
+          }
+        },
+        {
+          "name": "Agricultura",
+          "values": {
+            "unit1": "Internacional",
+            "unit2": "EE. UU./UK"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos acres es 1 hectárea?",
+          "answer": "1 hectárea = 2,47105 acres. Aproximadamente 2,5 acres."
+        },
+        {
+          "question": "¿Qué tamaño tiene 1 hectárea?",
+          "answer": "1 hectárea = 10.000 m² = un cuadrado de 100 m de lado. Aproximadamente 1,4 campos de fútbol."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "ha na akry – Arteon",
+      "defaultSubject": "Feedback: hectares-to-acres"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

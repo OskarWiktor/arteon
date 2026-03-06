@@ -1,0 +1,273 @@
+{
+  "toolKey": "dpiToPpi",
+  "locale": "de",
+  "metadata": {
+    "title": "DPI in PPI umrechnen – Auflösungsrechner",
+    "description": "Verstehen Sie den Unterschied zwischen DPI und PPI. Nützlich für Druck- und Bildschirmdesign.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/dpi-in-ppi-umrechner"
+  },
+  "hero": {
+    "title": "DPI in PPI umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/dpi-in-ppi-umrechner",
+      "label": "DPI in PPI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "DPI in PPI umrechnen – Auflösungsrechner",
+      "alternateName": ["DPI in PPI umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Verstehen Sie den Unterschied zwischen DPI und PPI. Nützlich für Druck- und Bildschirmdesign.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter DPI na PPI",
+      "description": "Anleitung: dpi na ppi.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Was ist der Unterschied zwischen DPI und PPI?",
+      "html": "<p class=\"text-mid mb-4\">DPI (Punkte pro Zoll) bezieht sich auf die physischen Tintenpunkte eines Druckers. PPI (Pixel pro Zoll) bezieht sich auf die Pixeldichte eines Bildschirms oder Bildes. In der Praxis werden beide Begriffe oft austauschbar verwendet.</p><p class=\"text-mid mb-4\">Für digitale Bilder: verwenden Sie PPI. Für Drucker: verwenden Sie DPI.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "DPI in PPI umrechnen – Auflösungsrechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wie benutzt man den Umrechner?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Ergebnis erscheint sofort.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Kopieren Sie das Ergebnis oder kehren Sie die Umrechnungsrichtung um.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Umrechner nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Druckvorbereitung",
+          "description": "Stellen Sie die Bildauflösung auf 300 PPI für professionellen Druck ein."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Bildschirmdesign",
+          "description": "Kennen Sie den PPI Ihres Bildschirms: 110 PPI (1080p 24″), 163 PPI (4K 27″)."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografie",
+          "description": "Die Megapixel-Auflösung bestimmt die maximale Druckgröße bei 300 PPI."
+        },
+        {
+          "icon": "RiQuestionLine",
+          "title": "Druckvorstufe",
+          "description": "Verstehen Sie die Beziehung zwischen Bild-PPI und Drucker-DPI."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was unterscheidet diesen Umrechner?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen werden lokal in Ihrem Browser durchgeführt."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich während der Eingabe."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Umrechnung",
+          "description": "Rechnen Sie mit einem Klick in beide Richtungen um."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Tabelle mit gängigen Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie hängen DPI und PPI zusammen?",
+      "html": "<p class=\"text-mid mb-4\">Numerisch verwenden DPI und PPI denselben Wert für die Bildauflösung. Ein Bild mit „300 DPI“ hat in Wirklichkeit 300 PPI.</p><p class=\"text-mid\">Für die meisten Anwendungen sind DPI und PPI für die Bildauflösung austauschbar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie hängen DPI und PPI zusammen?",
+      "html": "<p class=\"text-mid mb-4\">Numerisch verwenden DPI und PPI denselben Wert für die Bildauflösung. Ein Bild mit „300 DPI“ hat in Wirklichkeit 300 PPI.</p><p class=\"text-mid\">Für die meisten Anwendungen sind DPI und PPI für die Bildauflösung austauschbar.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "DPI vs PPI – Vergleich",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "DPI (Punkte pro Zoll)"
+        },
+        {
+          "id": "unit2",
+          "name": "PPI (Pixel pro Zoll)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Gilt für",
+          "values": {
+            "unit1": "Drucker",
+            "unit2": "Bildschirme und Bilder"
+          }
+        },
+        {
+          "name": "Misst",
+          "values": {
+            "unit1": "Physische Tintenpunkte",
+            "unit2": "Digitale Pixel"
+          }
+        },
+        {
+          "name": "Typische Werte",
+          "values": {
+            "unit1": "600–4.800 DPI",
+            "unit2": "72–460 PPI"
+          }
+        },
+        {
+          "name": "Druckqualität",
+          "values": {
+            "unit1": "Mehr = feiner",
+            "unit2": "300 PPI Standard"
+          }
+        },
+        {
+          "name": "Verwechslung",
+          "values": {
+            "unit1": "Falsch für Bilder verwendet",
+            "unit2": "Korrekter Begriff"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ist DPI gleich PPI?",
+          "answer": "Nicht genau. DPI misst Druckerpunkte, PPI Bildschirm-/Bildpixel. In der Praxis sind sie für die Bildauflösung austauschbar."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "DPI na PPI – Arteon",
+      "defaultSubject": "Feedback: dpi-to-ppi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník BMP na PNG – BMP PNG",
-    "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
+    "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-bmp-na-png"
   },
   "hero": {
     "title": "Převodník BMP na PNG",
-    "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
+    "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Převést BMP na PNG", "Konverze BMP do PNG", "Převodník BMP na PNG zdarma"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
+      "description": "Převeďte obrázky BMP na bezeztrátové PNG. Kvalita zachována, velikost snížena. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
       "featureList": ["Převod BMP na PNG", "Bezeztrátový výstup PNG", "Hromadný převod", "Lokální zpracování v prohlížeči", "Bez nahrávání souborů"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Převeďte na PNG",
-          "text": "Klikněte na převést. PNG je bezeztrátový — není potřeba nastavovat kvalitu."
+          "text": "Klikněte na převést. PNG je bezeztrátový - není potřeba nastavovat kvalitu."
         },
         {
           "name": "Stáhněte soubory PNG",
@@ -293,6 +293,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting BMP images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
+    },
+    {
       "type": "faq",
       "title": "Často kladené otázky o převodu BMP na PNG",
       "openByDefault": 0,
@@ -338,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Pomozte nám vylepšit naše nástroje",
-      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám — odpovídáme do 24 hodin.",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám - odpovídáme do 24 hodin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "Převodník BMP na PNG – Arteon",
       "defaultSubject": "Feedback: Převodník BMP na PNG"

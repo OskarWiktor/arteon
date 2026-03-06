@@ -1,0 +1,289 @@
+{
+  "toolKey": "unixTimestamp",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter Unix Timestamp – czas epoch na datę",
+    "description": "Przelicz Unix timestamp na datę i czas. Konwerter jest przydatny dla programistów i administratorów. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-unix-timestamp"
+  },
+  "hero": {
+    "title": "Przelicz Unix Timestamp na datę",
+    "description": "Ten konwerter przelicza Unix timestamp (epoch) na czytelny format daty i czasu. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-unix-timestamp",
+      "label": "Unix Timestamp na datę"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter Unix Timestamp – czas epoch na datę",
+      "alternateName": ["Przelicznik Unix timestamp", "Epoch converter", "Kalkulator czasu Unix"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz Unix timestamp na datę i czas. Konwerter jest przydatny dla programistów i administratorów. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera Unix Timestamp na datę",
+      "description": "Instrukcja użycia: unix timestamp na datę.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Czym jest Unix Timestamp?",
+      "html": "<p class=\"text-mid mb-4\">Unix Timestamp (epoch) to liczba sekund, która upłynęła od 1 stycznia 1970 roku 00:00:00 UTC. To uniwersalny sposób reprezentacji czasu w systemach komputerowych.</p><p class=\"text-mid mb-4\">Wartość 1 700 000 000 oznacza 14 listopada 2023, 22:13:20 UTC. Aktualny timestamp to około 1,7 miliarda.</p><p class=\"text-mid mb-4\">Timestamp jest używany w bazach danych, API, logach serwerów i tokenach JWT. Jest niezależny od strefy czasowej – ten sam timestamp oznacza ten sam moment na całym świecie.</p><p class=\"text-mid\">Problem roku 2038: 32-bitowy timestamp przepełni się 19 stycznia 2038. Nowoczesne systemy używają 64-bitowych timestampów.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Unix Timestamp na datę – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDatabase2Line",
+          "title": "Bazy danych",
+          "description": "Pola created_at, updated_at przechowują timestamp."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "API i JWT",
+          "description": "Tokeny JWT: pole exp (wygaśnięcie) to timestamp."
+        },
+        {
+          "icon": "RiTerminalBoxLine",
+          "title": "Logi serwerów",
+          "description": "Odczytuj timestampy z logów systemowych i aplikacyjnych."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Debugowanie",
+          "description": "Szybkie sprawdzenie, kiedy wystąpił błąd na podstawie timestamp."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa Unix timestamp?",
+      "html": "<p class=\"text-mid mb-4\">Unix timestamp (znacznik czasu Unix) to sposób reprezentowania daty i czasu jako pojedynczej liczby — oznaczającej liczbę sekund, które upłynęły od 1 stycznia 1970 roku o godzinie 00:00:00 UTC. Ten punkt początkowy nazywany jest epoką Unix (Unix epoch).</p><p class=\"text-mid mb-4\">Na przykład timestamp 1700000000 odpowiada dacie 14 listopada 2023, godzina 22:13:20 UTC. Aby zamienić timestamp na datę, narzędzie oblicza, ile dni, godzin, minut i sekund mieści się w podanej liczbie sekund od epoki. Konwersja uwzględnia strefy czasowe i czas letni.</p><p class=\"text-mid\">Unix timestamp jest standardem w programowaniu, bazach danych i systemach operacyjnych. Jest jednoznaczny (nie zależy od strefy czasowej), łatwy do porównywania (wystarczy porównać dwie liczby) i kompaktowy. Warto wiedzieć, że JavaScript używa milisekund zamiast sekund — dlatego timestamp JS jest 1 000 razy większy od unixowego.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Epoka Unix: 1 stycznia 1970 00:00:00 UTC = timestamp 0.</li><li>Problem Y2K38: 32-bit max = 2 147 483 647 = 19 stycznia 2038.</li><li>JavaScript: <code>Date.now()</code> zwraca milisekundy, nie sekundy.</li><li>Ujemne timestampy = daty przed 1970 (np. −1 = 31 grudnia 1969).</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Unix Timestamp vs Data i czas – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Unix Timestamp"
+        },
+        {
+          "id": "unit2",
+          "name": "Data i czas",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Format",
+          "values": {
+            "unit1": "Liczba całkowita",
+            "unit2": "YYYY-MM-DD HH:MM:SS"
+          }
+        },
+        {
+          "name": "Strefa czasowa",
+          "values": {
+            "unit1": "Zawsze UTC",
+            "unit2": "Zależy od lokalizacji"
+          }
+        },
+        {
+          "name": "Zakres (32-bit)",
+          "values": {
+            "unit1": "0 – 2 147 483 647",
+            "unit2": "1970–2038"
+          }
+        },
+        {
+          "name": "Zakres (64-bit)",
+          "values": {
+            "unit1": "Praktycznie nieograniczony",
+            "unit2": "Miliardy lat"
+          }
+        },
+        {
+          "name": "Sortowanie",
+          "values": {
+            "unit1": "Naturalne (liczby)",
+            "unit2": "Wymaga parsowania"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Co to jest Unix epoch?",
+          "answer": "1 stycznia 1970 00:00:00 UTC – punkt początkowy, od którego liczony jest timestamp (wartość 0)."
+        },
+        {
+          "question": "Jaki jest aktualny timestamp?",
+          "answer": "Sprawdź wpisując aktualną datę w konwerterze. W marcu 2026 to około 1 772 000 000."
+        },
+        {
+          "question": "Co to jest problem roku 2038?",
+          "answer": "32-bitowy timestamp osiągnie maksimum (2 147 483 647) 19 stycznia 2038. Systemy 64-bitowe nie mają tego problemu."
+        },
+        {
+          "question": "Czy timestamp uwzględnia strefy czasowe?",
+          "answer": "Nie. Timestamp jest zawsze w UTC. Konwersja na czas lokalny zależy od strefy czasowej odbiorcy."
+        },
+        {
+          "question": "Jak uzyskać timestamp w JavaScript?",
+          "answer": "<code>Math.floor(Date.now() / 1000)</code> – Date.now() zwraca milisekundy."
+        },
+        {
+          "question": "Czy timestamp może być ujemny?",
+          "answer": "Tak. Ujemne wartości oznaczają daty przed 1 stycznia 1970."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "Unix Timestamp na datę – Arteon",
+      "defaultSubject": "Feedback: Unix Timestamp na datę"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

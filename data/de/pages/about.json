@@ -6,12 +6,12 @@
   },
   "hero": {
     "title": "Kostenlose Online-Tools von einer Kreativagentur",
-    "description": "10 Browser-Tools für Bilder, SEO, Farben, E-Mail-Signaturen und QR-Codes — ohne Registrierung, ohne Datei-Upload, ohne Limits"
+    "description": "10 Browser-Tools für Bilder, SEO, Farben, E-Mail-Signaturen und QR-Codes - ohne Registrierung, ohne Datei-Upload, ohne Limits"
   },
   "whoWeAre": {
     "title": "Wer wir sind",
     "p1": "Arteon ist eine polnische Kreativagentur. Neben unserer kommerziellen Arbeit entwickeln und pflegen wir eine wachsende Sammlung kostenloser Online-Tools für Unternehmer, Website-Ersteller, Designer, Marketer und alle, die mit digitalen Inhalten arbeiten.",
-    "p2": "Jedes Tool, das wir entwickeln, löst ein konkretes, alltägliches Problem: Bilder konvertieren, Farbkontraste prüfen, Favicons generieren, QR-Codes erstellen und mehr. Unser Ziel ist es, ein umfassendes Toolkit aufzubauen, in dem alles an einem Ort zu finden ist — ohne zwischen dutzenden verschiedenen Websites wechseln zu müssen."
+    "p2": "Jedes Tool, das wir entwickeln, löst ein konkretes, alltägliches Problem: Bilder konvertieren, Farbkontraste prüfen, Favicons generieren, QR-Codes erstellen und mehr. Unser Ziel ist es, ein umfassendes Toolkit aufzubauen, in dem alles an einem Ort zu finden ist - ohne zwischen dutzenden verschiedenen Websites wechseln zu müssen."
   },
   "whyFree": {
     "title": "Warum wir kostenlose Tools anbieten",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Datenschutz an erster Stelle",
-        "description": "Ihre Dateien verlassen nie Ihr Gerät. Die gesamte Verarbeitung erfolgt lokal im Browser — wir senden Ihre Daten nicht an Server."
+        "description": "Ihre Dateien verlassen nie Ihr Gerät. Die gesamte Verarbeitung erfolgt lokal im Browser - wir senden Ihre Daten nicht an Server."
       },
       {
         "title": "Aus echten Bedürfnissen entstanden",
@@ -61,7 +61,7 @@
   },
   "whatsNext": {
     "title": "Was kommt als Nächstes",
-    "text": "Wir arbeiten aktiv daran, das Toolkit zu erweitern. Neue Tools werden regelmäßig auf Basis von Nutzerfeedback und unserer eigenen Erfahrung hinzugefügt. Das Ziel ist eine einzige Plattform, auf der Unternehmer, Designer und Entwickler Zugang zu jedem wichtigen Tool haben — alles an einem Ort, alles kostenlos."
+    "text": "Wir arbeiten aktiv daran, das Toolkit zu erweitern. Neue Tools werden regelmäßig auf Basis von Nutzerfeedback und unserer eigenen Erfahrung hinzugefügt. Das Ziel ist eine einzige Plattform, auf der Unternehmer, Designer und Entwickler Zugang zu jedem wichtigen Tool haben - alles an einem Ort, alles kostenlos."
   },
   "privacy": {
     "title": "Datenschutz und Sicherheit",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Testen Sie unsere Tools",
-    "description": "Kostenlose Online-Tools — ohne Registrierung, ohne Limits, ohne Datei-Upload auf Server",
+    "description": "Kostenlose Online-Tools - ohne Registrierung, ohne Limits, ohne Datei-Upload auf Server",
     "btnOne": "Zu den Tools",
     "btnTwo": "Kontakt"
   }

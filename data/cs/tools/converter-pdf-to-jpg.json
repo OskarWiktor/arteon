@@ -2,7 +2,7 @@
   "toolKey": "pdfToJpg",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník PDF na JPG — PDF JPG",
+    "title": "Převodník PDF na JPG - PDF JPG",
     "description": "Převeďte stránky PDF na obrázky JPG. Vysoká kvalita, bez omezení. Zdarma.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-pdf-na-jpg"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Převést",
-          "text": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči."
+          "text": "Klikněte na Převést - soubory se zpracovávají lokálně v prohlížeči."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět PDF na JPG?",
-      "html": "<p class=\"text-mid mb-4\">PDF je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JPG prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase PDF soubory do formatu JPG primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JPG prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase PDF soubory do formatu JPG primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "PDF to JPG conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Převést",
-          "description": "Klikněte na Převést — soubory se zpracovávají lokálně v prohlížeči.",
+          "description": "Klikněte na Převést - soubory se zpracovávají lokálně v prohlížeči.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Nastaveni kvality — co zvolit pri konverzi PDF na JPG?",
-      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 85% je rozdil mezi originalnim PDF a vyslednym JPG nepostrehnutelny.</p>"
+      "title": "Nastaveni kvality - co zvolit pri konverzi PDF na JPG?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (vychozi) - dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% - pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% - kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 85% je rozdil mezi originalnim PDF a vyslednym JPG nepostrehnutelny.</p>"
     },
     {
       "type": "gap",
@@ -256,6 +256,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose JPG vs PNG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">JPG uses lossy compression optimized for photographs. It produces small files but may show visible artifacts around text and sharp edges. Choose JPG for photo-heavy PDFs like catalogs, brochures, and photo albums.</p><p class=\"text-mid mb-4\">PNG is lossless and preserves sharp edges perfectly. Choose PNG for documents with text, technical drawings, invoices, and diagrams. PNG files will be 3–5× larger than JPG.</p><p class=\"text-mid\">For web use, consider WebP — it offers better compression than both JPG and PNG while supporting transparency. Use <a href=\"/en/tools/pdf-to-webp-converter\">our PDF to WebP converter</a> for optimal web performance.</p>"
     },
     {
       "type": "faq",

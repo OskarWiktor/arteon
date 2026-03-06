@@ -41,7 +41,7 @@
         },
         {
           "name": "Muunna PNG-muotoon",
-          "text": "Napsauta muunna. PNG on häviötön — laatuasetusta ei tarvita."
+          "text": "Napsauta muunna. PNG on häviötön - laatuasetusta ei tarvita."
         },
         {
           "name": "Lataa PNG-tiedostot",
@@ -245,7 +245,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten kuvamuunnos vaikuttaa nopeuteen ja SEO:hon",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman nakyvam elementin nayttamiseen.</p><p class=\"text-mid mb-4\">WebP-kuvien muuntaminen PNG-muotoon pienentaa tiedostokokoa, lyhentaa latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman näkyvän elementin näyttämiseen.</p><p class=\"text-mid mb-4\">WebP-kuvien muuntaminen PNG-muotoon pienentää tiedostokokoa, lyhentää latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
     },
     {
       "type": "gap",
@@ -254,28 +254,28 @@
     {
       "type": "sectionSteps",
       "title": "Vinkkeja WebP-PNG-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "description": "Vinkkeja yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
+          "title": "Erittäin suuret tiedostot",
           "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Jo pakatut",
-          "description": "Jos WebP oli jo voimakkaasti pakattu, muunnos PNG-muotoon ei valttamatta saasta paljon."
+          "description": "Jos WebP oli jo voimakkaasti pakattu, muunnos PNG-muotoon ei välttämättä säästä paljon."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "PNG tukee alfakanavaa. WebP:n lapinakyyt alueet sailyvat."
+          "title": "Läpinäkyvyys",
+          "description": "PNG tukee alfakanavaa. WebP:n läpinäkyvät alueet säilyvät."
         },
         {
           "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot WebP-tiedostoista."
+          "title": "Säilytä alkuperäiset",
+          "description": "Häviöllinen muunnos on peruuttamaton. Säilytä kopiot WebP-tiedostoista."
         }
       ]
     },
@@ -285,12 +285,21 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla WebP PNG?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Kuinka paljon säästät muuntamalla WebP PNG?",
+      "html": "<p class=\"text-mid mb-4\">Säästöt riippuvat tiedostotyypistä ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Näyttökuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Säästö: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset säästöt vaihtelevat sisällön ja asetusten mukaan.</p>"
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP to PNG – typical file sizes",
+      "html": "<p class=\"text-mid mb-4\">PNG files are larger than WebP because PNG uses lossless compression while WebP uses lossy:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo</p><p class=\"text-light text-sm\">WebP: 240 KB → PNG: 1.2 MB</p><p class=\"text-light mt-1 text-sm\">5× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">WebP: 85 KB → PNG: 320 KB</p><p class=\"text-light mt-1 text-sm\">3.8× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Icon with transparency</p><p class=\"text-light text-sm\">WebP: 12 KB → PNG: 28 KB</p><p class=\"text-light mt-1 text-sm\">2.3× larger (lossless)</p></div></div><p class=\"text-light mt-4 text-sm\">The size increase is normal. PNG prioritizes universal compatibility and lossless quality over file size.</p>"
     },
     {
       "type": "faq",
@@ -319,11 +328,11 @@
         },
         {
           "question": "Onko WebP PNG muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "answer": "Kyllä. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitään ei lähetetä palvelimille."
         },
         {
           "question": "Voinko muuntaa useita WebP-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "answer": "Kyllä. Erämuunnos ilman rajaa. Vedä tiedostot muuntimeen."
         },
         {
           "question": "Tukevatko kaikki selaimet PNG-muotoa?",
@@ -338,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
-      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti - vastaamme 24 tunnin kuluessa.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "WebP PNG -muunnin – Arteon",
       "defaultSubject": "Feedback: WebP PNG -muunnin"

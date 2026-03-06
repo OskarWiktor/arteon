@@ -33,7 +33,7 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
 
   const handleConvert = useCallback(async () => {
     if (!input.trim()) {
-      setError(`Wklej lub wpisz dane w formacie ${sourceLabel}`);
+      setError(t.pasteOrTypeData?.replace('{{format}}', sourceLabel) ?? `Paste or type ${sourceLabel} data`);
       return;
     }
     setError(null);
@@ -46,26 +46,29 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
       setOutput('');
     }
     setIsConverting(false);
-  }, [input, conversionType, sourceLabel]);
+  }, [input, conversionType, sourceLabel, t]);
 
-  const handleFileUpload = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    setFileName(file.name);
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      const text = ev.target?.result;
-      if (typeof text === 'string') {
-        setInput(text);
-        setError(null);
-      }
-    };
-    reader.onerror = () => {
-      setError('Nie udało się odczytać pliku');
-    };
-    reader.readAsText(file);
-    if (fileInputRef.current) fileInputRef.current.value = '';
-  }, []);
+  const handleFileUpload = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const file = e.target.files?.[0];
+      if (!file) return;
+      setFileName(file.name);
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const text = ev.target?.result;
+        if (typeof text === 'string') {
+          setInput(text);
+          setError(null);
+        }
+      };
+      reader.onerror = () => {
+        setError(t.fileReadError);
+      };
+      reader.readAsText(file);
+      if (fileInputRef.current) fileInputRef.current.value = '';
+    },
+    [t],
+  );
 
   const handleCopy = useCallback(async () => {
     if (!output) return;
@@ -137,14 +140,14 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
             <h2 className="h6">{sourceLabel}</h2>
             <label className="text-primary-mid hover:text-primary cursor-pointer text-xs font-medium transition-colors">
               <input ref={fileInputRef} type="file" accept={acceptExt} onChange={handleFileUpload} className="hidden" />
-              {fileName ? fileName : `Wgraj plik ${sourceLabel}`}
+              {fileName ? fileName : (t.uploadFile?.replace('{{format}}', sourceLabel) ?? `Upload ${sourceLabel}`)}
             </label>
           </div>
           <textarea
             className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-sm! transition outline-none focus:border-neutral-300 focus:bg-white"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={sourcePlaceholder}
+            placeholder={sourcePlaceholder ?? t.pasteOrTypeData?.replace('{{format}}', sourceLabel) ?? `Paste or type ${sourceLabel} data`}
             spellCheck={false}
           />
           {error && <ToolAlert variant="error">{error}</ToolAlert>}
@@ -164,12 +167,12 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
             className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-sm! transition outline-none focus:border-neutral-300 focus:bg-white"
             value={output}
             readOnly
-            placeholder={`Wynik konwersji (${targetLabel})`}
+            placeholder={t.conversionResult?.replace('{{format}}', targetLabel) ?? `Conversion result (${targetLabel})`}
             spellCheck={false}
           />
           <div className="flex flex-wrap gap-3">
             <Button onClick={handleCopy} disabled={!output} className="disabled:opacity-40" size="small">
-              {copied ? '✓ Skopiowano' : 'Kopiuj'}
+              {copied ? t.copied : t.copy}
             </Button>
             <Button onClick={handleDownload} disabled={!output} className="disabled:opacity-40" size="small">
               {t.download}

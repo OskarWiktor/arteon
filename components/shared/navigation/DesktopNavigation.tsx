@@ -8,7 +8,7 @@ import Wrapper from '@/components/ui/Wrapper';
 import AppLink from '@/components/ui/Link';
 import { ABOUT_NAV_ITEMS_PL, DESKTOP_NAV_ITEMS_PL, OFFER_SECTIONS_PL, type OfferSectionKey } from '@/components/shared/navigation-data/pl';
 import { useLocale, useDictionary, useLocaleConfig } from '@/lib/LocaleContext';
-import { getToolsSections, type ToolsSectionKey } from '@/lib/i18n/tool-registry';
+import { getDesktopToolsSections, type ToolsSectionKey } from '@/lib/i18n/tool-registry';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useMenuKeyboardNavigation } from '@/hooks/useMenuKeyboardNavigation';
@@ -26,7 +26,7 @@ export default function DesktopNavigation() {
   const isPl = locale === 'pl';
   const t = useDictionary().nav;
   const localeConfig = useLocaleConfig();
-  const toolsSections = getToolsSections(locale);
+  const toolsSections = getDesktopToolsSections(locale);
   const pathname = usePathname();
   const [isOfferOpen, setIsOfferOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
@@ -435,19 +435,16 @@ export default function DesktopNavigation() {
                 <div className="pl-6">
                   <div key={activeToolsCategory} className="animate-fade-slide-in">
                     <div
-                      className={activeToolsCategory === 'konwertery' ? 'grid grid-cols-6 gap-2' : activeToolsCategory === 'dokumenty' ? 'grid grid-cols-4 gap-2' : 'grid grid-cols-4 gap-2'}
+                      className={
+                        activeToolsCategory === 'konwertery' || activeToolsCategory === 'jednostki' || activeToolsCategory === 'dokumenty' ? 'grid grid-cols-6 gap-2' : 'grid grid-cols-4 gap-2'
+                      }
                       style={
-                        activeToolsCategory === 'konwertery'
+                        activeToolsCategory === 'konwertery' || activeToolsCategory === 'jednostki' || activeToolsCategory === 'dokumenty'
                           ? {
                               gridAutoFlow: 'column',
                               gridTemplateRows: `repeat(${Math.ceil(activeToolsSection.items.length / 6)}, minmax(0, 1fr))`,
                             }
-                          : activeToolsCategory === 'dokumenty'
-                            ? {
-                                gridAutoFlow: 'column',
-                                gridTemplateRows: `repeat(${Math.ceil(activeToolsSection.items.length / 4)}, minmax(0, 1fr))`,
-                              }
-                            : undefined
+                          : undefined
                       }
                     >
                       {activeToolsSection.items.map((item) => {

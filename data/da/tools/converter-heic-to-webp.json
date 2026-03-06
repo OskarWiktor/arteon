@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — hvad vaelge ved konvertering HEIC til WebP?",
-      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem HEIC og WebP praktisk talt umaerkelig.</p>"
+      "title": "Kvalitet - hvad vaelge ved konvertering HEIC til WebP?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (standard) - godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% - til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% - nar filstørrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 80% er forskellen mellem HEIC og WebP praktisk talt umaerkelig.</p>"
     },
     {
       "type": "gap",
@@ -253,8 +253,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan billedkonvertering pavirker hastighed og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP maler tiden til det storste synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af HEIC til WebP reducerer filstorrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
+      "title": "Hvordan billedkonvertering påvirker hastighed og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ydelsesindikatorer. LCP måler tiden til det største synlige element vises.</p><p class=\"text-mid mb-4\">Konvertering af HEIC til WebP reducerer filstørrelse, forkorter download og forbedrer LCP. Mindre filer = hurtigere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> fremskynder rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identificerer filer til optimering.</p>"
     },
     {
       "type": "gap",
@@ -263,23 +263,23 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering HEIC til WebP",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis HEIC allerede var komprimeret, giver konvertering til WebP maske ikke stor besparelse."
+          "description": "Hvis HEIC allerede var komprimeret, giver konvertering til WebP måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "WebP understotter alfakanal. Transparente omrader i HEIC bevares."
+          "description": "WebP understøtter alfakanal. Transparente områder i HEIC bevares."
         },
         {
           "icon": "RiStackLine",
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC vs WebP – file size comparison",
+      "html": "<p class=\"text-mid mb-4\">WebP files are slightly larger than HEIC but significantly smaller than JPG:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (12 MP)</p><p class=\"text-light text-sm\">HEIC: 2.1 MB → WebP: 2.4 MB</p><p class=\"text-light mt-1 text-sm\">vs JPG: 2.8 MB</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Portrait mode</p><p class=\"text-light text-sm\">HEIC: 1.5 MB → WebP: 1.7 MB</p><p class=\"text-light mt-1 text-sm\">vs JPG: 1.9 MB</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Landscape photo</p><p class=\"text-light text-sm\">HEIC: 3.2 MB → WebP: 3.5 MB</p><p class=\"text-light mt-1 text-sm\">vs JPG: 4.2 MB</p></div></div><p class=\"text-light mt-4 text-sm\">WebP is the best middle ground between file size and compatibility. Supported by all modern browsers since Safari 14 (2020).</p>"
     },
     {
       "type": "faq",

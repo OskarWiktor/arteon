@@ -323,7 +323,7 @@
     {
       "type": "sectionInfo",
       "title": "Tilgængelighedskrav i Danmark",
-      "html": "<p class=\"text-mid mb-4\">Danmark har implementeret EU's webtilgængelighedsdirektiv gennem <strong>Webtilgængelighedsloven (Lov nr. 692 af 8. juni 2018)</strong>. Loven kræver, at alle offentlige organers websteder og mobilapplikationer overholder WCAG 2.1 niveau AA.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Offentlig sektor</strong> — alle statslige, regionale og kommunale websteder skal overholde WCAG 2.1 AA. Digitaliseringsstyrelsen fører tilsyn.</li><li><strong>EU's tilgængelighedslov (EAA)</strong> — fra juni 2025 udvides kravene til den private sektor: webshops, banker, transporttjenester og medieplatforme.</li><li><strong>Skandinavisk kontekst</strong> — Danmark, Sverige og Norge deler en stærk tilgængelighedskultur. Danske virksomheder, der opererer i hele Skandinavien, bør opfylde det strengeste krav (Norges lov dækker også den private sektor).</li></ul><p class=\"text-mid mt-3\">Kontrastforholdet 4,5:1 for normal tekst og 3:1 for stor tekst er lovkrav. Dette værktøj kontrollerer netop disse tærskler.</p>"
+      "html": "<p class=\"text-mid mb-4\">Danmark har implementeret EU's webtilgængelighedsdirektiv gennem <strong>Webtilgængelighedsloven (Lov nr. 692 af 8. juni 2018)</strong>. Loven kræver, at alle offentlige organers websteder og mobilapplikationer overholder WCAG 2.1 niveau AA.</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Offentlig sektor</strong> - alle statslige, regionale og kommunale websteder skal overholde WCAG 2.1 AA. Digitaliseringsstyrelsen fører tilsyn.</li><li><strong>EU's tilgængelighedslov (EAA)</strong> - fra juni 2025 udvides kravene til den private sektor: webshops, banker, transporttjenester og medieplatforme.</li><li><strong>Skandinavisk kontekst</strong> - Danmark, Sverige og Norge deler en stærk tilgængelighedskultur. Danske virksomheder, der opererer i hele Skandinavien, bør opfylde det strengeste krav (Norges lov dækker også den private sektor).</li></ul><p class=\"text-mid mt-3\">Kontrastforholdet 4,5:1 for normal tekst og 3:1 for stor tekst er lovkrav. Dette værktøj kontrollerer netop disse tærskler.</p>"
     },
     {
       "type": "gap",
@@ -405,11 +405,11 @@
         },
         {
           "question": "Virker dette værktøj til mørk tilstand?",
-          "answer": "Ja. Værktøjet tjekker kontrastforholdet mellem to farver uanset hvilken der er lysere. For mørk tilstand indtaster du en lys tekstfarve og en mørk baggrundsfarve. De samme WCAG-tærskler gælder — 4,5:1 for normal tekst (AA) og 7:1 (AAA)."
+          "answer": "Ja. Værktøjet tjekker kontrastforholdet mellem to farver uanset hvilken der er lysere. For mørk tilstand indtaster du en lys tekstfarve og en mørk baggrundsfarve. De samme WCAG-tærskler gælder - 4,5:1 for normal tekst (AA) og 7:1 (AAA)."
         },
         {
           "question": "Hvad er forskellen mellem WCAG-niveau AA og AAA?",
-          "answer": "AA kræver 4,5:1 kontrast for normal tekst og 3:1 for stor tekst — dette er det lovmæssige minimum. AAA kræver 7:1 for normal tekst og 4,5:1 for stor tekst — bedre læsbarhed, men sværere at opnå. For kritisk indhold (advarsler, sikkerhedsinstruktioner) anbefales AAA."
+          "answer": "AA kræver 4,5:1 kontrast for normal tekst og 3:1 for stor tekst - dette er det lovmæssige minimum. AAA kræver 7:1 for normal tekst og 4,5:1 for stor tekst - bedre læsbarhed, men sværere at opnå. For kritisk indhold (advarsler, sikkerhedsinstruktioner) anbefales AAA."
         },
         {
           "question": "Hvilke farvepar på min hjemmeside skal jeg tjekke først?",

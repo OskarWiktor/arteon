@@ -115,7 +115,7 @@ function initConsentBus() {
 /*     Google handles limited ads / queuing internally.                */
 /*  2. If unfilled AND consent changes, destroy + re-push.            */
 /*  3. On SPA nav, destroy + re-push.                                 */
-/*  4. IntersectionObserver — only push when near viewport.           */
+/*  4. IntersectionObserver - only push when near viewport.           */
 /*  5. Collapse wrapper via CSS when data-ad-status="unfilled".       */
 /* ------------------------------------------------------------------ */
 
@@ -181,7 +181,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
         pushed.current = true;
         setFilled(true);
       } catch {
-        // Ad blocker or script not loaded — silent fail
+        // Ad blocker or script not loaded - silent fail
       }
 
       return pushed.current;
@@ -226,7 +226,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
       });
     };
 
-    // Use IntersectionObserver — push ad when container is near viewport
+    // Use IntersectionObserver - push ad when container is near viewport
     // rootMargin: 200px so ads load slightly before scrolling into view
     if (typeof IntersectionObserver !== 'undefined') {
       const io = new IntersectionObserver(
@@ -241,11 +241,11 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
       io.observe(container);
       cleanups.push(() => io.disconnect());
     } else {
-      // Fallback: no IO support — render immediately
+      // Fallback: no IO support - render immediately
       attemptRender();
     }
 
-    // Listen for consent changes — retry unfilled ads
+    // Listen for consent changes - retry unfilled ads
     const onConsentChange: ConsentCallback = () => {
       if (!container) return;
 
@@ -262,7 +262,7 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
         onScriptReady(() => {
           if (injectAd(container)) return;
 
-          // Small delay — Google needs time to process consent update
+          // Small delay - Google needs time to process consent update
           const t = setTimeout(() => injectAd(container), 300);
           cleanups.push(() => clearTimeout(t));
         });

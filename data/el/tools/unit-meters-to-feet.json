@@ -1,0 +1,289 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "el",
+  "metadata": {
+    "title": "M σε πόδια – μετατροπέας",
+    "description": "Μετατρέψτε μέτρα σε πόδια και αντίστροφα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-metra-se-podia"
+  },
+  "hero": {
+    "title": "M σε πόδια",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-metra-se-podia",
+      "label": "m σε πόδια"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "M σε πόδια – μετατροπέας",
+      "alternateName": ["M σε πόδια"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε μέτρα σε πόδια και αντίστροφα.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: M σε πόδια?",
+      "html": "<p class=\"text-mid mb-4\">Meter (m) ist die Basislängeneinheit im metrischen System. Fuß (ft) είναι η τυπική μονάδα-Längeneinheit im imperialen System. 1 m = 3,28084 Fuß, oder 1 Fuß = 0,3048 m genau.</p><p class=\"text-mid mb-4\">Die μετατροπή ist wichtig für Körpergröße (US-Formulare verwenden Fuß/Zoll), Bau und Immobilien (US-Grundstücksmaße), Luftfahrt (Flughöhe in Fuß) und Sport.</p><p class=\"text-mid mb-4\">Körpergröße: 1,70 m = 5'7″, 1,80 m = 5'11″, 1,90 m = 6'3″. Zimmerhöhe: 2,5 m = 8,2 ft.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας — τίποτα δεν στέλνεται σε server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "M σε πόδια – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuildingLine",
+          "title": "Κατασκευές",
+          "description": "Amerykańskie projekty budowlane podają wymiary pomieszczeń i działek w stopach."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Lotnictwo",
+          "description": "Wysokość lotu podaje się w stopach: 30 000 ft = 9 144 m."
+        },
+        {
+          "icon": "RiBodyScanLine",
+          "title": "Wzrost",
+          "description": "Χρησιμοποιήστε αυτόν τον μετατροπέα για γρήγορες και ακριβείς μετατροπές."
+        },
+        {
+          "icon": "RiMountainLine",
+          "title": "Geografia",
+          "description": "Wysokości szczytów górskich często podaje się w stopach: Everest = 29 032 ft."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">Der internationale Fuß ist als genau 0,3048 Meter definiert. Daher gilt: 1 Meter = 1/0,3048 = 3,28084 Fuß.</p><p class=\"text-mid mb-4\">Um Meter in Fuß umzurechnen, πολλαπλασιάστε με 3,28084. Um Fuß in Meter umzurechnen, πολλαπλασιάστε με 0,3048.</p><p class=\"text-mid\">Für Fuß und Zoll: Πολλαπλασιάστε Meter mit 3,28084, nehmen Sie die ganze Zahl als Fuß, multiplizieren Sie die Nachkommastellen mit 12 für Zoll.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Height: 1.60 m = 5'3″, 1.70 m = 5'7″, 1.80 m = 5'11″, 1.90 m = 6'3″, 2.00 m = 6'7″.</li><li>Room: ceiling height 2.4 m = 7.9 ft, 2.7 m = 8.9 ft, 3.0 m = 9.8 ft.</li><li>1 yard = 3 feet = 0.9144 m. 1 fathom = 6 feet = 1.8288 m.</li><li>Mount Everest: 8,849 m = 29,032 ft. Burj Khalifa: 828 m = 2,717 ft.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Meter (m) vs Foot (ft) – σύγκριση",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Meter (m)"
+        },
+        {
+          "id": "unit2",
+          "name": "Foot (ft)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Σύστημα",
+          "values": {
+            "unit1": "Μετρικό (SI)",
+            "unit2": "Αυτοκρατορικό"
+          }
+        },
+        {
+          "name": "Βασική τιμή",
+          "values": {
+            "unit1": "SI base unit",
+            "unit2": "0.3048 m"
+          }
+        },
+        {
+          "name": "Height",
+          "values": {
+            "unit1": "International (m)",
+            "unit2": "USA (ft/in)"
+          }
+        },
+        {
+          "name": "Aviation",
+          "values": {
+            "unit1": "Used for runway length",
+            "unit2": "Altitude standard"
+          }
+        },
+        {
+          "name": "Real estate",
+          "values": {
+            "unit1": "International (m²)",
+            "unit2": "USA (ft²)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Πόσα Fuß ist 1 Meter?",
+          "answer": "1 Meter = 3,28084 Fuß. Etwa 3 Fuß 3 Zoll."
+        },
+        {
+          "question": "Πώς μετατρέπω Meter in Fuß und Zoll um?",
+          "answer": "Πολλαπλασιάστε Meter mit 3,28084. Die ganze Zahl = Fuß. Nachkommastellen × 12 = Zoll. Beispiel: 1,80 m = 5,906 ft = 5 ft 10,87 in ≈ 5'11″."
+        },
+        {
+          "question": "Πόσα Meter sind 6 Fuß?",
+          "answer": "6 Fuß = 1,8288 Meter."
+        },
+        {
+          "question": "Πόσο μεγάλο ist 1,80 m in Fuß?",
+          "answer": "1,80 m = 5 Fuß 10,87 Zoll, gerundet 5'11″."
+        },
+        {
+          "question": "Γιατί verwendet die Luftfahrt Fuß?",
+          "answer": "Die ICAO hat die Flughöhe in Fuß standardisiert. Die meisten Länder verwenden Fuß für Höhenangaben, auch wenn sie sonst das metrische System nutzen."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ναι. Όλοι οι υπολογισμοί γίνονται στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "m σε πόδια – Arteon",
+      "defaultSubject": "Feedback: meters-to-feet"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

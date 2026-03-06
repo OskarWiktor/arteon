@@ -2,14 +2,14 @@
   "toolKey": "gifToAvif",
   "locale": "en",
   "metadata": {
-    "title": "GIF to AVIF converter — GIF AVIF",
-    "description": "Convert GIF first frame to static AVIF image with excellent compression. All processing happens locally in your browser — files never leave your device.",
+    "title": "GIF to AVIF converter - GIF AVIF",
+    "description": "Convert GIF first frame to static AVIF image with excellent compression. All processing happens locally in your browser - files never leave your device.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/gif-to-avif-converter"
   },
   "hero": {
     "title": "GIF to AVIF converter",
-    "description": "Convert GIF first frame to static AVIF image with excellent compression. All processing happens locally in your browser — files never leave your device.",
+    "description": "Convert GIF first frame to static AVIF image with excellent compression. All processing happens locally in your browser - files never leave your device.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "GIF to AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert GIF first frame to static AVIF image with excellent compression. All processing happens locally in your browser — files never leave your device.",
+      "description": "Convert GIF first frame to static AVIF image with excellent compression. All processing happens locally in your browser - files never leave your device.",
       "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert GIF to AVIF", "GIF to AVIF conversion", "Free GIF to AVIF converter", "Change GIF to AVIF"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Set quality",
-          "text": "Adjust the AVIF quality slider — lower values produce smaller files."
+          "text": "Adjust the AVIF quality slider - lower values produce smaller files."
         },
         {
           "position": 3,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download the AVIF files — individually or all at once."
+          "text": "Download the AVIF files - individually or all at once."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert GIF to AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) is a lossless image format supporting 256 colors. It is widely used for simple animations and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting GIF to AVIF (AV1 Image File Format) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">AVIF supports alpha transparency, preserving any transparent areas in your image. AVIF supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many GIF files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">GIF is limited to 256 colors and uses legacy LZW compression from 1987. AVIF (AV1 Image File Format) is a next-generation format based on the AV1 video codec, offering dramatically better compression: AVIF files are typically 50–70% smaller than equivalent GIFs while supporting millions of colors, alpha transparency, and HDR.</p><p class=\"text-mid mb-4\">AVIF is supported in Chrome 85+, Firefox 93+, Safari 16.4+, and Edge 121+. Browser support continues to expand rapidly. For maximum compatibility with older browsers, consider WebP as an alternative.</p><p class=\"text-mid mb-4\">Converting GIF to AVIF is ideal for web optimization: smaller files mean faster page loads and lower bandwidth costs. AVIF preserves transparency from the original GIF and removes the 256-color limitation, producing higher-quality results.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "GIF to AVIF conversion",
       "variant": "right"
@@ -109,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert GIF to AVIF to significantly reduce page load times and improve Core Web Vitals scores."
+          "description": "AVIF files are 50–70% smaller than GIF at equivalent quality, with support for millions of colors instead of 256. Converting GIF graphics to AVIF dramatically reduces page weight and improves Core Web Vitals scores."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "AVIF files are compatible with most modern platforms. Convert to AVIF for smaller attachments that stay within email size limits."
+          "description": "AVIF produces much smaller files than GIF, making images easier to share via email and messaging apps. Smaller attachments stay within email size limits and download faster for recipients."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify may require specific formats – converting to AVIF ensures your product images meet their requirements."
+          "description": "Product images with flat colors and icons often start as GIF. Converting to AVIF removes the 256-color limitation and produces sharper, smaller files for product listings on Shopify, Amazon, and other platforms."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "AVIF provides a modern and efficient format for document image storage."
+          "description": "AVIF provides superior compression for archiving graphics and diagrams. Images stored as AVIF take up significantly less disk space than GIF while preserving higher quality with full color depth."
         }
       ]
     },
@@ -258,6 +258,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting GIF to AVIF?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) – a good balance for most use cases. GIF’s 256 colors are preserved fully at this setting, and the AVIF file will be dramatically smaller.</strong></li><li><strong>85–90% – for graphics where you want maximum sharpness, e.g. detailed icons or diagrams.</strong></li><li><strong>60–70% – when minimizing file size is the priority, e.g. thumbnails in category grids.</strong></li></ul><p class=\"text-mid mt-3\">Since GIF is limited to 256 colors, even lower AVIF quality settings produce excellent results. The visual difference is minimal while the file size reduction is substantial.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting GIF to AVIF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on image complexity and the original GIF’s color usage. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Simple icon</p><p class=\"text-light text-sm\">45 KB → 8 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~82%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Diagram / chart</p><p class=\"text-light text-sm\">120 KB → 25 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~79%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Complex graphic</p><p class=\"text-light text-sm\">250 KB → 65 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~74%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

@@ -1,0 +1,281 @@
+{
+  "toolKey": "unixTimestamp",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de marca de tiempo Unix",
+    "description": "Convierte marcas de tiempo Unix a fechas legibles. Esencial para desarrolladores y análisis de logs.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-unix-timestamp"
+  },
+  "hero": {
+    "title": "Convertir marca de tiempo Unix",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-unix-timestamp",
+      "label": "Unix timestamp"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de marca de tiempo Unix",
+      "alternateName": ["Convertir marca de tiempo Unix"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte marcas de tiempo Unix a fechas legibles. Esencial para desarrolladores y análisis de logs.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir marcas de tiempo Unix?",
+      "html": "<p class=\"text-mid mb-4\">La marca de tiempo Unix (Unix timestamp o Epoch) cuenta los segundos transcurridos desde el 1 de enero de 1970, 00:00:00 UTC. Es el estándar universal para almacenar fecha y hora en sistemas informáticos.</p><p class=\"text-mid mb-4\">Ejemplo: 1709251200 = 1 de marzo de 2024, 00:00:00 UTC. Las marcas de tiempo son independientes de zona horaria y no se ven afectadas por horario de verano.</p><p class=\"text-mid mb-4\">Este convertidor traduce entre marcas de tiempo Unix y fechas legibles, útil para desarrollo, depuración, análisis de logs y administración de bases de datos.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de marca de tiempo Unix – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado aparece instantáneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Copia el resultado o invierte la dirección de conversión.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDatabase2Line",
+          "title": "Desarrollo web",
+          "description": "Las APIs y bases de datos almacenan fechas como timestamps. Convierte para depuración."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Análisis de logs",
+          "description": "Los logs de servidor usan timestamps Unix. Convierte para leer tiempos exactos."
+        },
+        {
+          "icon": "RiTerminalBoxLine",
+          "title": "Bases de datos",
+          "description": "MySQL UNIX_TIMESTAMP(), PostgreSQL extract(epoch from...) devuelven timestamps."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Programación",
+          "description": "JavaScript Date.now() devuelve milisegundos desde Epoch. Divide entre 1000 para segundos."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza mientras escribes."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "Convierte en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Tabla con valores comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funcionan las marcas de tiempo Unix?",
+      "html": "<p class=\"text-mid mb-4\">El tiempo Unix cuenta segundos desde la época (epoch): 1 de enero de 1970, 00:00:00 UTC. El valor es siempre UTC, independiente de zona horaria.</p><p class=\"text-mid mb-4\">Ejemplo: 0 = 1 ene 1970. 1000000000 = 9 sep 2001. Valores negativos = fechas antes de 1970.</p><p class=\"text-mid\">JavaScript: Date.now() devuelve milisegundos. Python: time.time() devuelve segundos con decimales.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funcionan las marcas de tiempo Unix?",
+      "html": "<p class=\"text-mid mb-4\">El tiempo Unix cuenta segundos desde la época (epoch): 1 de enero de 1970, 00:00:00 UTC. El valor es siempre UTC, independiente de zona horaria.</p><p class=\"text-mid mb-4\">Ejemplo: 0 = 1 ene 1970. 1000000000 = 9 sep 2001. Valores negativos = fechas antes de 1970.</p><p class=\"text-mid\">JavaScript: Date.now() devuelve milisegundos. Python: time.time() devuelve segundos con decimales.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Timestamp Unix vs Fecha ISO",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Timestamp Unix"
+        },
+        {
+          "id": "unit2",
+          "name": "Fecha ISO 8601",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Formato",
+          "values": {
+            "unit1": "1709251200",
+            "unit2": "2024-03-01T00:00:00Z"
+          }
+        },
+        {
+          "name": "Legibilidad",
+          "values": {
+            "unit1": "Solo para máquinas",
+            "unit2": "Legible por humanos"
+          }
+        },
+        {
+          "name": "Zona horaria",
+          "values": {
+            "unit1": "Siempre UTC",
+            "unit2": "Incluye zona (Z, +02:00)"
+          }
+        },
+        {
+          "name": "Comparación",
+          "values": {
+            "unit1": "Simple (mayor = más tarde)",
+            "unit2": "Requiere parsing"
+          }
+        },
+        {
+          "name": "Almacenamiento",
+          "values": {
+            "unit1": "4–8 bytes",
+            "unit2": "20+ bytes"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Qué es la época Unix?",
+          "answer": "1 de enero de 1970, 00:00:00 UTC. Todas las marcas de tiempo se miden desde este punto."
+        },
+        {
+          "question": "¿Por qué se usa el 1 de enero de 1970?",
+          "answer": "Los creadores de Unix eligieron esta fecha como referencia al diseñar el sistema en 1969–1970."
+        },
+        {
+          "question": "¿Qué es el problema del año 2038?",
+          "answer": "Los timestamps de 32 bits con signo se desbordan el 19 de enero de 2038 a las 03:14:07 UTC. Los sistemas modernos usan 64 bits."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "Unix Timestamp na datę – Arteon",
+      "defaultSubject": "Feedback: unix-timestamp"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

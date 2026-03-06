@@ -58,23 +58,23 @@ export default function PrivacyPolicyPage() {
           <SectionInfo title="3. Käsittelyn tarkoitukset ja oikeusperusta">
             <ol className="list-decimal space-y-1 pl-6">
               <li>
-                <strong>Asiakasviestintä</strong> — yhteydenottolomakkeen kautta tulleiden tiedustelujen käsittely (GDPR:n 6 artiklan 1 kohdan b ja f alakohta).
+                <strong>Asiakasviestintä</strong> - yhteydenottolomakkeen kautta tulleiden tiedustelujen käsittely (GDPR:n 6 artiklan 1 kohdan b ja f alakohta).
               </li>
               <li>
-                <strong>Markkinointi ja analytiikka</strong> — verkkosivuston tilastot, sisällön optimointi (GDPR:n 6 artiklan 1 kohdan f alakohta).
+                <strong>Markkinointi ja analytiikka</strong> - verkkosivuston tilastot, sisällön optimointi (GDPR:n 6 artiklan 1 kohdan f alakohta).
               </li>
               <li>
-                <strong>Palvelujen toimittaminen</strong> — tarjousten, sopimusten ja laskujen laatiminen (GDPR:n 6 artiklan 1 kohdan b alakohta).
+                <strong>Palvelujen toimittaminen</strong> - tarjousten, sopimusten ja laskujen laatiminen (GDPR:n 6 artiklan 1 kohdan b alakohta).
               </li>
               <li>
-                <strong>Lakisääteiset velvoitteet</strong> — esim. kirjanpitoasiakirjojen säilyttäminen (GDPR:n 6 artiklan 1 kohdan c alakohta).
+                <strong>Lakisääteiset velvoitteet</strong> - esim. kirjanpitoasiakirjojen säilyttäminen (GDPR:n 6 artiklan 1 kohdan c alakohta).
               </li>
               <li>
-                <strong>Turvallisuus ja vaatimukset</strong> — lokien käsittely, väärinkäytösten ehkäisy, vaatimusten vahvistaminen/täytäntöönpano/puolustaminen (GDPR:n 6 artiklan 1 kohdan f
+                <strong>Turvallisuus ja vaatimukset</strong> - lokien käsittely, väärinkäytösten ehkäisy, vaatimusten vahvistaminen/täytäntöönpano/puolustaminen (GDPR:n 6 artiklan 1 kohdan f
                 alakohta).
               </li>
               <li>
-                <strong>Mainosten näyttäminen</strong> — kiinnostuksiin perustuvien mainosten näyttäminen Google AdSensen kautta (GDPR:n 6 artiklan 1 kohdan a alakohta — käyttäjän Google Privacy &
+                <strong>Mainosten näyttäminen</strong> - kiinnostuksiin perustuvien mainosten näyttäminen Google AdSensen kautta (GDPR:n 6 artiklan 1 kohdan a alakohta - käyttäjän Google Privacy &
                 Messaging -dialogin kautta antama suostumus).
               </li>
             </ol>
@@ -124,8 +124,8 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-1 pl-6">
               <li>hosting-/sovelluspalveluntarjoaja (esim. Vercel),</li>
               <li>analytiikkatyökalujen tarjoajat (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),</li>
-              <li>mainospalveluntarjoaja (Google Ireland Ltd. — Google AdSense),</li>
-              <li>tilintarkastusyhtiö, maksunvälittäjä tai oikeudellinen neuvonantaja — tarvittaessa.</li>
+              <li>mainospalveluntarjoaja (Google Ireland Ltd. - Google AdSense),</li>
+              <li>tilintarkastusyhtiö, maksunvälittäjä tai oikeudellinen neuvonantaja - tarvittaessa.</li>
             </ul>
             <p>Kaikki vastaanottajat käsittelevät tietoja GDPR:n mukaisesti asianmukaisten sopimusten perusteella.</p>
           </SectionInfo>
@@ -146,10 +146,10 @@ export default function PrivacyPolicyPage() {
           <Gap variant="line" size="sm" />
           <SectionInfo title="8. Tietojen säilytysaika">
             <ul className="list-disc space-y-1 pl-6">
-              <li>Yhteydenottolomakkeen tiedot — enintään 12 kuukautta kirjeenvaihdon päättymisestä.</li>
-              <li>Asiakastiedot — lain edellyttämän ajan (kirjanpitoasiakirjat).</li>
-              <li>Analytiikkatiedot — Google Analytics -käytäntöjen mukaisesti (esim. 26 kuukautta).</li>
-              <li>Lokitiedostot — turvallisuuden ja vastuullisuuden edellyttämän ajan (yleensä enintään 12 kuukautta, ellei säännöksistä muuta johdu).</li>
+              <li>Yhteydenottolomakkeen tiedot - enintään 12 kuukautta kirjeenvaihdon päättymisestä.</li>
+              <li>Asiakastiedot - lain edellyttämän ajan (kirjanpitoasiakirjat).</li>
+              <li>Analytiikkatiedot - Google Analytics -käytäntöjen mukaisesti (esim. 26 kuukautta).</li>
+              <li>Lokitiedostot - turvallisuuden ja vastuullisuuden edellyttämän ajan (yleensä enintään 12 kuukautta, ellei säännöksistä muuta johdu).</li>
             </ul>
           </SectionInfo>
           <Gap variant="line" size="sm" />

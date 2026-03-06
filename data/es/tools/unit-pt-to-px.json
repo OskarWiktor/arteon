@@ -1,0 +1,281 @@
+{
+  "toolKey": "ptToPx",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de puntos a píxeles – tipografía",
+    "description": "Convierte puntos tipográficos a píxeles. Para tipografía web e impresión.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-pt-a-px"
+  },
+  "hero": {
+    "title": "Convertir puntos a píxeles",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-pt-a-px",
+      "label": "pt a px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de puntos a píxeles – tipografía",
+      "alternateName": ["Convertir puntos a píxeles"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte puntos tipográficos a píxeles. Para tipografía web e impresión.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir puntos a píxeles?",
+      "html": "<p class=\"text-mid mb-4\">Los puntos (pt) son una unidad tipográfica de impresión: 1 pt = 1/72 de pulgada. Los píxeles (px) son unidades de pantalla. Con 96 PPI estándar: 1 pt = 1,333 px (96/72).</p><p class=\"text-mid mb-4\">Esta conversión es importante al trasladar diseños de impresión a web, configurar tamaños de fuente CSS desde especificaciones de impresión y entender la relación entre tipografía de impresión y pantalla.</p><p class=\"text-mid mb-4\">Tamaños comunes: 12 pt = 16 px (estándar del navegador), 10 pt = 13,3 px, 18 pt = 24 px.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de puntos a píxeles – tipografía – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada. Puedes usar punto o coma como separador decimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado aparece instantáneamente en el campo contiguo.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Haz clic en Copiar o usa el botón Invertir para convertir en dirección opuesta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Diseño web",
+          "description": "Convierte tamaños de fuente de impresión a CSS: 12 pt = 16 px, 24 pt = 32 px."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Conversión de documentos",
+          "description": "Al trasladar diseños de Word/PDF a web: convierte pt a px."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Plantillas de email",
+          "description": "Los clientes de email renderizan fuentes en pt o px de forma diferente."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tipografía",
+          "description": "Entiende la relación entre impresión (pt) y pantalla (px)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza instantáneamente mientras escribes."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "Convierte en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Una tabla con valores de conversión comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 punto = 1/72 de pulgada. Con 96 PPI (estándar web): 1 pt = 96/72 = 1,333 px.</p><p class=\"text-mid mb-4\">Fórmula: px = pt × PPI / 72. Con 96 PPI: px = pt × 1,333.</p><p class=\"text-mid\">CSS define 1 px como 1/96 de pulgada. En pantallas Retina, 1 px CSS puede ser varios píxeles físicos.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">1 punto = 1/72 de pulgada. Con 96 PPI (estándar web): 1 pt = 96/72 = 1,333 px.</p><p class=\"text-mid mb-4\">Fórmula: px = pt × PPI / 72. Con 96 PPI: px = pt × 1,333.</p><p class=\"text-mid\">CSS define 1 px como 1/96 de pulgada. En pantallas Retina, 1 px CSS puede ser varios píxeles físicos.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Puntos (pt) vs Píxeles (px)",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Puntos (pt)"
+        },
+        {
+          "id": "unit2",
+          "name": "Píxeles (px)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Definición",
+          "values": {
+            "unit1": "1/72 pulgada",
+            "unit2": "1/96 pulgada (CSS)"
+          }
+        },
+        {
+          "name": "Usado en",
+          "values": {
+            "unit1": "Impresión, Word, PDF",
+            "unit2": "Web, CSS, pantallas"
+          }
+        },
+        {
+          "name": "12 pt =",
+          "values": {
+            "unit1": "12 pt",
+            "unit2": "16 px"
+          }
+        },
+        {
+          "name": "Texto corrido",
+          "values": {
+            "unit1": "10–12 pt",
+            "unit2": "14–18 px"
+          }
+        },
+        {
+          "name": "Encabezado",
+          "values": {
+            "unit1": "18–24 pt",
+            "unit2": "24–32 px"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos píxeles son 12 pt?",
+          "answer": "12 pt = 16 px con 96 PPI. Es el tamaño de fuente estándar del navegador."
+        },
+        {
+          "question": "¿Cuántos pt es 1 px?",
+          "answer": "1 px = 0,75 pt con 96 PPI (72/96)."
+        },
+        {
+          "question": "¿Cuál es el tamaño de fuente estándar en navegadores?",
+          "answer": "16 px = 12 pt = 1 rem. Todos los navegadores usan este estándar."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "pt na px – Arteon",
+      "defaultSubject": "Feedback: pt-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

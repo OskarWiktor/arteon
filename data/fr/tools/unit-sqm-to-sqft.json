@@ -1,0 +1,277 @@
+{
+  "toolKey": "sqmToSqft",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur mètres carrés en pieds carrés",
+    "description": "Convertissez m² en ft² et vice versa. Pour l'immobilier et la construction.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-m2-en-pieds-carres"
+  },
+  "hero": {
+    "title": "Convertir m² en pieds carrés",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-m2-en-pieds-carres",
+      "label": "m² en ft²"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur mètres carrés en pieds carrés",
+      "alternateName": ["Convertir m² en pieds carrés"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez m² en ft² et vice versa. Pour l'immobilier et la construction.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des m² en ft² ?",
+      "html": "<p class=\"text-mid mb-4\">Le mètre carré (m²) est l’unité standard de surface du système métrique. Le pied carré (ft²) est utilisé aux USA, UK et dans certains pays asiatiques. 1 m² = 10,7639 ft².</p><p class=\"text-mid mb-4\">Exemples : 50 m² = 538 ft², 100 m² = 1 076 ft², 200 m² = 2 153 ft².</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur mètres carrés en pieds carrés – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHome4Line",
+          "title": "Immobilier",
+          "description": "L’immobilier aux USA utilise des ft². 80 m² = 861 ft²."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Décoration intérieure",
+          "description": "Mesures de pièces et calculs de mobilier."
+        },
+        {
+          "icon": "RiBuildingLine",
+          "title": "Bureaux",
+          "description": "Les loyers aux USA sont en ft². Convertissez en m² pour comparer."
+        },
+        {
+          "icon": "RiMoneyDollarCircleLine",
+          "title": "Construction",
+          "description": "Permis de construire et plans en m² ou ft²."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 pied = 0,3048 m, donc 1 ft² = 0,092903 m². Soit 1 m² = 10,7639 ft².</p><p class=\"text-mid\">Estimation rapide : multipliez les m² par 11.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 pied = 0,3048 m, donc 1 ft² = 0,092903 m². Soit 1 m² = 10,7639 ft².</p><p class=\"text-mid\">Estimation rapide : multipliez les m² par 11.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "m² vs ft² – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Mètre carré (m²)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pied carré (ft²)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Système",
+          "values": {
+            "unit1": "Métrique (SI)",
+            "unit2": "Impérial"
+          }
+        },
+        {
+          "name": "Valeur de base",
+          "values": {
+            "unit1": "1 m × 1 m",
+            "unit2": "0,3048 m × 0,3048 m"
+          }
+        },
+        {
+          "name": "Immobilier",
+          "values": {
+            "unit1": "International",
+            "unit2": "USA/UK/Inde"
+          }
+        },
+        {
+          "name": "1 m² équivaut à",
+          "values": {
+            "unit1": "1 m²",
+            "unit2": "10,764 ft²"
+          }
+        },
+        {
+          "name": "Construction",
+          "values": {
+            "unit1": "Standard international",
+            "unit2": "Standard USA/UK"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de ft² fait 1 m² ?",
+          "answer": "1 m² = 10,7639 ft²."
+        },
+        {
+          "question": "Combien de m² font 1 000 ft² ?",
+          "answer": "1 000 ft² = 92,9 m²."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "m² na ft² – Arteon",
+      "defaultSubject": "Feedback : sqm-to-sqft"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

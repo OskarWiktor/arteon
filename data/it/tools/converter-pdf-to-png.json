@@ -2,7 +2,7 @@
   "toolKey": "pdfToPng",
   "locale": "it",
   "metadata": {
-    "title": "Convertitore PDF in PNG — PDF PNG",
+    "title": "Convertitore PDF in PNG - PDF PNG",
     "description": "Converti pagine PDF in immagini PNG. Alta qualità, senza limiti. Gratuito.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-pdf-in-png"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Converti",
-          "text": "Clicca su Converti — i file vengono elaborati localmente nel browser."
+          "text": "Clicca su Converti - i file vengono elaborati localmente nel browser."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire PDF in PNG?",
-      "html": "<p class=\"text-mid mb-4\">PDF e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PNG puo offrire vantaggi significativi — file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file PDF nel formato PNG direttamente nel browser. Nessun file viene inviato a server — l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">PDF e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PNG puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file PDF nel formato PNG direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "PDF to PNG conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Converti",
-          "description": "Clicca su Converti — i file vengono elaborati localmente nel browser.",
+          "description": "Clicca su Converti - i file vengono elaborati localmente nel browser.",
           "icon": "RiSettings3Line"
         },
         {
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to choose PNG vs JPG for PDF page extraction",
+      "html": "<p class=\"text-mid mb-4\">PNG is lossless — it preserves sharp text edges, clean lines, and exact colors without compression artifacts. This makes PNG ideal for documents with text, technical drawings, invoices, and any content with sharp edges.</p><p class=\"text-mid mb-4\">JPG uses lossy compression and may show visible artifacts around text and sharp edges (known as \"ringing\"). However, JPG produces smaller files, which is better for photo-heavy PDFs like product catalogs or photo albums.</p><p class=\"text-mid\">Rule of thumb: choose PNG for documents with text and diagrams, JPG for photo-heavy PDFs, and WebP for the best balance of quality and size.</p>"
     },
     {
       "type": "faq",

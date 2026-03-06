@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poiotita — ti na epilexete gia metatropi HEIC se WebP;",
-      "html": "<p class=\"text-mid\">To slider epitrepei 60%-95%. Ypsilotero = kaliteri poiotita alla megalytera archeia.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (proepilogi) — kalo gia istoselides, blogs, arthra.</strong></li><li><strong>85–90% — gia fotografies proionton, portfolio kai galleries.</strong></li><li><strong>60–70% — otan to megethos archeiou einai proteraiotita.</strong></li></ul><p class=\"text-mid mt-3\">Se 80% i diafora metaxy HEIC kai WebP einai praktika adiaistiti.</p>"
+      "title": "Ποιότητα - τι να επιλέξετε για μετατροπή HEIC σε WebP;",
+      "html": "<p class=\"text-mid\">Το slider επιτρέπει 60%-95%. Υψηλότερο = καλύτερη ποιότητα αλλά μεγαλύτερα αρχεία.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (προεπιλογή) - καλό για ιστοσελίδες, blogs, άρθρα.</strong></li><li><strong>85–90% - για φωτογραφίες προϊόντων, portfolio και galleries.</strong></li><li><strong>60–70% - όταν το μέγεθος αρχείου είναι προτεραιότητα.</strong></li></ul><p class=\"text-mid mt-3\">Σε 80% η διαφορά μεταξύ HEIC και WebP είναι πρακτικά αδιαίσθητη.</p>"
     },
     {
       "type": "gap",
@@ -253,8 +253,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poso exoikonomeis metatrepontas HEIC se WebP;",
-      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+      "title": "Πόσο εξοικονομείτε μετατρέποντας HEIC σε WebP;",
+      "html": "<p class=\"text-mid mb-4\">Η εξοικονόμηση εξαρτάται από τον τύπο αρχείου και τη συμπίεση:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Φωτογραφία κάμερας</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Εικόνα προϊόντος</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Στιγμιότυπο / banner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Η πραγματική εξοικονόμηση ποικίλλει ανάλογα με το περιεχόμενο.</p>"
     },
     {
       "type": "gap",
@@ -262,8 +262,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Pos i metatropi eikonas epireazei tachitita kai SEO",
-      "html": "<p class=\"text-mid mb-4\">Ta Core Web Vitals einai metrikes Google. To LCP metrai ton chrono eos to megalitero orato stoicheio.</p><p class=\"text-mid mb-4\">I metatropi HEIC se WebP meionei to megethos, syntomevei ti fortosi kai veltionei to LCP. Mikrotera archeia = griorteri fortosi se kinita. <code>loading=\"lazy\"</code> kai <code>fetchpriority=\"high\"</code> epitachynoun to rendering.</p><p class=\"text-mid\">To <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> kai to Lighthouse vriskoyn archeia pros veltiosi.</p>"
+      "title": "Πώς η μετατροπή εικόνας επηρεάζει ταχύτητα και SEO",
+      "html": "<p class=\"text-mid mb-4\">Τα Core Web Vitals είναι μετρικές Google. Το LCP μετρά τον χρόνο έως το μεγαλύτερο ορατό στοιχείο.</p><p class=\"text-mid mb-4\">Η μετατροπή HEIC σε WebP μειώνει το μέγεθος, συντομεύει τη φόρτωση και βελτιώνει το LCP. Μικρότερα αρχεία = γρηγορότερη φόρτωση σε κινητά. <code>loading=\"lazy\"</code> kai <code>fetchpriority=\"high\"</code> επιταχύνουν το rendering.</p><p class=\"text-mid\">Το <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> και το Lighthouse βρίσκουν αρχεία προς βελτίωση.</p>"
     },
     {
       "type": "gap",
@@ -271,29 +271,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Symvoules gia metatropi HEIC se WebP",
-      "description": "Symvoules gia apofygi provlimaton:",
+      "title": "Συμβουλές για μετατροπή HEIC σε WebP",
+      "description": "Συμβουλές για αποφυγή προβλημάτων:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Poly megala archeia",
-          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+          "title": "Πολύ μεγάλα αρχεία",
+          "description": "Εικόνες πάνω από 4000×4000 px μπορεί να είναι πιο αργές. Χωρίστε σε ομάδες των 10–20."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Idi sympiesmena",
-          "description": "An to HEIC itan idi sympiesmeno, i metatropi se WebP mporei na min exoikonomisi polla."
+          "title": "Ήδη συμπιεσμένα",
+          "description": "Αν το HEIC ήταν ήδη συμπιεσμένο, η μετατροπή σε WebP μπορεί να μην εξοικονομήσει πολλά."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Diafaneia",
+          "title": "Διαφάνεια",
           "description": "To WebP ypostirizei alfa kanali. Oi diafaneis perioches tou HEIC diatirountai."
         },
         {
           "icon": "RiStackLine",
-          "title": "Kratiste ta prototypa",
-          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton HEIC archeion."
+          "title": "Κρατήστε τα πρωτότυπα",
+          "description": "Η μετατροπή με απώλειες δεν αναιρείται. Κρατήστε αντίγραφα των HEIC αρχείων."
         }
       ]
     },
@@ -327,16 +327,16 @@
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο φυλλομετρητή."
         },
         {
-          "question": "Einai asfalis i metatropi HEIC se WebP;",
-          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+          "question": "Είναι ασφαλής η μετατροπή HEIC σε WebP;",
+          "answer": "Ναι. Όλη η επεξεργασία γίνεται τοπικά στον περιηγητή σας μέσω Canvas API. Τίποτα δεν αποστέλλεται σε διακομιστή."
         },
         {
-          "question": "Mporo na metatrepso polla archeia HEIC;",
-          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+          "question": "Μπορώ να μετατρέψω πολλά αρχεία HEIC;",
+          "answer": "Ναι. Ομαδική μετατροπή χωρίς όριο. Σύρετε τα αρχεία στον μετατροπέα."
         },
         {
-          "question": "Ypostirizoun oloi oi browsers to WebP;",
-          "answer": "To WebP ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
+          "question": "Υποστηρίζουν όλοι οι browsers το WebP;",
+          "answer": "Το WebP υποστηρίζεται από Chrome, Firefox, Safari, Edge και Opera."
         }
       ]
     },

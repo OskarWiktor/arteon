@@ -2,7 +2,7 @@
   "toolKey": "yamlToJson",
   "locale": "nl",
   "metadata": {
-    "title": "YAML naar JSON converter — YAML JSON",
+    "title": "YAML naar JSON converter - YAML JSON",
     "description": "Converteer YAML naar JSON-formaat. Automatisch parsen en formatteren. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/yaml-naar-json-converter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom YAML naar JSON converteren?",
-      "html": "<p class=\"text-mid mb-4\">YAML is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar JSON aanzienlijke voordelen bieden — kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw YAML-bestanden direct in de browser om naar het JSON-formaat. Er worden geen bestanden naar een server geupload — het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar JSON aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw YAML-bestanden direct in de browser om naar het JSON-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Directe conversie",
-          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's - snel en werkt ook offline."
         }
       ]
     },
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hoeveel besparen bij conversie YAML naar JSON?",
-      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+      "title": "Hoe werkt de conversie van YAML naar JSON?",
+      "html": "<p class=\"text-mid mb-4\">YAML gebruikt inspringing en minimale syntaxis om gestructureerde gegevens weer te geven, terwijl JSON accolades, vierkante haken en expliciete aanhalingstekens gebruikt. De converter analyseert de YAML-structuur en produceert equivalent JSON met correcte opmaak.</p><p class=\"text-mid mb-4\">YAML-inspringing wordt JSON-nesting, elementen met streepjes worden JSON-array-elementen, en YAML key-value paren worden JSON-objecteigenschappen. Datatypes worden behouden: strings, getallen, booleans, null, arrays en objecten worden direct overgedragen.</p><p class=\"text-mid\">De conversie van YAML naar JSON is nuttig wanneer configuratiegegevens ge\u00efntegreerd moeten worden in webapplicaties, REST-API's of systemen die JSON-invoer verwachten. De conversie vindt volledig plaats in je browser.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips voor conversie YAML naar JSON",
-      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "title": "Tips voor de conversie van YAML naar JSON",
+      "description": "Enkele tips om veelvoorkomende problemen te voorkomen:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Zeer grote bestanden",
-          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Consistentie van inspringing",
+          "description": "YAML is gevoelig voor inspringing. Als je bestand tabs en spaties mixt, kan de parsing mislukken. De converter rapporteert gedetecteerde inspringingsfouten."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Reeds gecomprimeerd",
-          "description": "Als het YAML-bestand al sterk gecomprimeerd was, levert conversie naar JSON mogelijk weinig besparing."
+          "title": "Opmerkingen worden verwijderd",
+          "description": "JSON ondersteunt geen opmerkingen. Alle #-opmerkingen uit je YAML-bestand verschijnen niet in de JSON-uitvoer. Bewaar je oorspronkelijke YAML-bestand."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparantie",
-          "description": "JSON ondersteunt geen transparantie. Wordt wit. Overweeg PNG of WebP."
+          "icon": "RiCodeLine",
+          "title": "Multi-document YAML",
+          "description": "YAML-bestanden kunnen meerdere documenten bevatten gescheiden door ---. De converter verwerkt standaard het eerste document."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Bewaar originelen",
-          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van YAML-bestanden."
+          "icon": "RiFileCodeLine",
+          "title": "Ankers en aliassen",
+          "description": "YAML-ankers (&) en aliassen (*) worden opgelost tijdens de conversie. De JSON-uitvoer bevat de uitgevouwen waarden, niet de YAML-referenties."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Ja, de converter werkt op elk apparaat met een moderne webbrowser."
         },
         {
-          "question": "Is conversie YAML naar JSON veilig?",
-          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+          "question": "Is de conversie van YAML naar JSON veilig?",
+          "answer": "Ja. Alle conversie vindt lokaal plaats in je browser. Er worden geen gegevens naar een server gestuurd."
         },
         {
-          "question": "Kan ik meerdere YAML-bestanden tegelijk converteren?",
-          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+          "question": "Worden YAML-opmerkingen behouden?",
+          "answer": "Nee. JSON ondersteunt geen opmerkingen, dus alle #-opmerkingen uit je YAML-bestand worden verwijderd tijdens de conversie. Bewaar je oorspronkelijke YAML-bestand."
         },
         {
-          "question": "Wordt JSON door alle browsers ondersteund?",
-          "answer": "JSON wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
+          "question": "Is de conversie verliesvrij?",
+          "answer": "Ja, voor de datawaarden. Alle strings, getallen, booleans, null-waarden, arrays en objecten worden exact behouden. Alleen YAML-specifieke functies zoals opmerkingen en ankers worden niet overgedragen naar JSON."
         }
       ]
     },

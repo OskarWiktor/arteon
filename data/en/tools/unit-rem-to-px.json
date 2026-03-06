@@ -1,0 +1,285 @@
+{
+  "toolKey": "remToPx",
+  "locale": "en",
+  "metadata": {
+    "title": "REM to pixels converter",
+    "description": "Convert CSS rem units to pixels and vice versa. Set your root font size and get instant pixel values for responsive design.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/rem-to-px-converter"
+  },
+  "hero": {
+    "title": "Convert REM to pixels",
+    "description": "Convert CSS rem units to pixels based on your root font size. Enter a value and the result appears instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/rem-to-px-converter",
+      "label": "rem to px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "REM to pixels converter",
+      "alternateName": ["CSS rem to pixel calculator", "rem unit converter", "Root em calculator"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert CSS rem units to pixels and vice versa. Set your root font size and get instant pixel values for responsive design.",
+      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the rem to px converter",
+      "description": "Instructions: rem to px.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter value",
+          "text": "Type a rem value."
+        },
+        {
+          "name": "Set root size",
+          "text": "Adjust the root font size (default: 16px)."
+        },
+        {
+          "name": "Read the result",
+          "text": "The result in pixels appears instantly."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert rem to px?",
+      "html": "<p class=\"text-mid mb-4\">The CSS rem unit is relative to the root element (html) font size. By default, browsers set this to 16px, so 1rem = 16px. Unlike em, rem does not compound — it always references the root.</p><p class=\"text-mid mb-4\">Rem is the recommended unit for modern responsive web design. It provides consistent, scalable sizing that respects user accessibility preferences.</p><p class=\"text-mid mb-4\">Converting rem to px helps understand the actual rendered size when designing or debugging CSS layouts.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "REM to pixels converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Kodowanie CSS",
+          "description": "Przeliczanie makiet (px) na rem: padding 24 px = 1,5 rem."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Responsywność",
+          "description": "Rem skaluje się z preferencjami użytkownika – lepsze od stałych pikseli."
+        },
+        {
+          "icon": "RiAccessibilityLine",
+          "title": "Dostępność (WCAG)",
+          "description": "Rem respektuje ustawienia rozmiaru tekstu użytkownika."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Systemy projektowe",
+          "description": "Skale spacing w rem: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does rem to px conversion work?",
+      "html": "<p class=\"text-mid mb-4\">px = rem × root font size. Default root font size = 16px.</p><p class=\"text-mid mb-4\">If html { font-size: 62.5% }, root = 10px, so 1.6rem = 16px.</p><p class=\"text-mid\">Rem never compounds. 1rem is always the same regardless of nesting depth. This makes it more predictable than em.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>At 16px root: 0.75rem = 12px, 0.875rem = 14px, 1rem = 16px, 1.25rem = 20px, 1.5rem = 24px, 2rem = 32px.</li><li>Tailwind: text-sm = 0.875rem (14px), text-base = 1rem (16px), text-lg = 1.125rem (18px).</li><li>Minimum touch target: WCAG recommends 44×44px = 2.75rem at 16px root.</li><li>Media queries in rem: @media (min-width: 48rem) = 768px at 16px root.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "rem vs em vs px",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "rem"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Reference",
+          "values": {
+            "unit1": "Root font size",
+            "unit2": "Fixed pixel"
+          }
+        },
+        {
+          "name": "Compounds",
+          "values": {
+            "unit1": "No (always root)",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Responsive",
+          "values": {
+            "unit1": "Yes",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Accessibility",
+          "values": {
+            "unit1": "Respects user settings",
+            "unit2": "Fixed size"
+          }
+        },
+        {
+          "name": "Predictability",
+          "values": {
+            "unit1": "Consistent everywhere",
+            "unit2": "Always consistent"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many pixels is 1rem?",
+          "answer": "By default, 1rem = 16px. This can change if you modify the root font size in CSS."
+        },
+        {
+          "question": "What is the difference between rem and em?",
+          "answer": "rem always references the root element font size. em references the parent element font size and compounds through nesting."
+        },
+        {
+          "question": "Should I use rem or px?",
+          "answer": "Use rem for typography, spacing, and layout. Use px for borders, box-shadows, and properties that should not scale."
+        },
+        {
+          "question": "How does Tailwind use rem?",
+          "answer": "Tailwind spacing uses 0.25rem increments: p-1 = 0.25rem (4px), p-4 = 1rem (16px), p-8 = 2rem (32px)."
+        },
+        {
+          "question": "Are calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "rem na px – Arteon",
+      "defaultSubject": "Feedback: rem-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

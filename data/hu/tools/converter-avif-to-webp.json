@@ -3,13 +3,13 @@
   "locale": "hu",
   "metadata": {
     "title": "AVIF WebP konverter – AVIF WebP",
-    "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
+    "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel. A feldolgozás a böngészőben történik - a fájlok nem hagyják el az eszközödet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/avif-webp-konverter"
   },
   "hero": {
     "title": "AVIF WebP konverter",
-    "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
+    "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel. A feldolgozás a böngészőben történik - a fájlok nem hagyják el az eszközödet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "AVIF WebP konverter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel. A feldolgozás a böngészőben történik — a fájlok nem hagyják el az eszközödet.",
+      "description": "AVIF fajlok konvertálása WebP-re. Szeles kompatibilitas kis fajlmerettel. A feldolgozás a böngészőben történik - a fájlok nem hagyják el az eszközödet.",
       "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["AVIF konvertálása WEBP formátumba", "AVIF–WEBP átalakítás", "Ingyenes AVIF–WEBP konverter"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Minosegi beallitasok — mit valassz AVIF WebP konvertalasahoz?",
-      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (alap) — jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% — termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% — amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">80%-os minosegnel a kulonbseg AVIF es WebP kozott szabad szemmel eszrevehetetlen.</p>"
+      "title": "Minosegi beallitasok - mit valassz AVIF WebP konvertalasahoz?",
+      "html": "<p class=\"text-mid\">Csuszka 60%-95%. Magasabb = jobb minoseg de nagyobb fajl.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (alap) - jo kompromisszum weboldalakhoz, blogokhoz, cikkekhez.</strong></li><li><strong>85–90% - termekfotokhoz, portfoliokhoz es galeriakhoz.</strong></li><li><strong>60–70% - amikor fajlmeret minimalizalasa a cel.</strong></li></ul><p class=\"text-mid mt-3\">80%-os minosegnel a kulonbseg AVIF es WebP kozott szabad szemmel eszrevehetetlen.</p>"
     },
     {
       "type": "gap",

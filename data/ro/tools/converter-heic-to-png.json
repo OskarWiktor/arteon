@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor HEIC în PNG – HEIC PNG",
-    "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+    "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-heic-in-png"
   },
   "hero": {
     "title": "Convertor HEIC în PNG",
-    "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+    "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor HEIC în PNG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+      "description": "Convertește fotografii HEIC de pe iPhone în PNG fara pierderi. Calitate si transparenta. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie HEIC în PNG", "Lossless PNG output", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie HEIC în PNG", "Convertor HEIC în PNG", "Convertor gratuit HEIC în PNG"]
     },
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC to PNG – typical file sizes",
+      "html": "<p class=\"text-mid mb-4\">PNG files are larger than HEIC because PNG uses lossless compression while HEIC uses lossy HEVC:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (12 MP)</p><p class=\"text-light text-sm\">HEIC: 2.1 MB → PNG: 12 MB</p><p class=\"text-light mt-1 text-sm\">6× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">HEIC: 800 KB → PNG: 2.5 MB</p><p class=\"text-light mt-1 text-sm\">3× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (48 MP)</p><p class=\"text-light text-sm\">HEIC: 5 MB → PNG: 35 MB</p><p class=\"text-light mt-1 text-sm\">7× larger (lossless)</p></div></div><p class=\"text-light mt-4 text-sm\">The size increase is expected. PNG prioritizes quality and compatibility over file size. Use JPG or WebP if smaller files are needed.</p>"
     },
     {
       "type": "faq",

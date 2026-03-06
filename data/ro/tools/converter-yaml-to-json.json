@@ -2,7 +2,7 @@
   "toolKey": "yamlToJson",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor YAML în JSON — YAML JSON",
+    "title": "Convertor YAML în JSON - YAML JSON",
     "description": "Convertește YAML în format JSON. Parsare și formatare automată. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-yaml-in-json"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți YAML în JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in JSON poate oferi avantaje semnificative — fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele YAML in format JSON direct in browser. Niciun fisier nu este trimis la servere — intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in JSON poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele YAML in format JSON direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cat economisiti convertind YAML in JSON?",
-      "html": "<p class=\"text-mid mb-4\">Economiile depind de tipul fisierului si compresia originala:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto camera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagine produs</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Economiile reale variaza in functie de continut si setari.</p>"
+      "title": "Cum func\u021bioneaz\u0103 conversia din YAML \u00een JSON?",
+      "html": "<p class=\"text-mid mb-4\">YAML folose\u0219te indentare \u0219i sintax\u0103 minimal\u0103 pentru a reprezenta date structurate, \u00een timp ce JSON folose\u0219te acolade, paranteze p\u0103trate \u0219i ghilimele explicite. Convertorul analizeaz\u0103 structura YAML \u0219i produce JSON echivalent cu formatare corect\u0103.</p><p class=\"text-mid mb-4\">Indentarea YAML devine imbricare JSON, elementele cu linioare devin elemente de array JSON, iar perechile cheie-valoare YAML devin propriet\u0103\u021bi ale obiectului JSON. Tipurile de date sunt p\u0103strate: \u0219iruri, numere, booleene, null, array-uri \u0219i obiecte se transfer\u0103 direct.</p><p class=\"text-mid\">Conversia din YAML \u00een JSON este util\u0103 c\u00e2nd datele de configurare trebuie integrate \u00een aplica\u021bii web, API-uri REST sau sisteme care a\u0219teapt\u0103 intrare JSON. Conversia se face complet \u00een browserul t\u0103u.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Sfaturi pentru conversia YAML in JSON",
-      "description": "Sfaturi pentru evitarea problemelor:",
+      "title": "Sfaturi pentru conversia din YAML \u00een JSON",
+      "description": "C\u00e2teva sfaturi pentru a evita problemele comune:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Fisiere foarte mari",
-          "description": "Imaginile peste 4000×4000 px pot fi mai lente. Impartiti in loturi de 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Consisten\u021ba indent\u0103rii",
+          "description": "YAML este sensibil la indentare. Dac\u0103 fi\u0219ierul amestec\u0103 tab-uri \u0219i spa\u021bii, parsarea poate e\u0219ua. Convertorul raporteaz\u0103 erorile de indentare detectate."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Fisiere deja comprimate",
-          "description": "Daca YAML era deja comprimat, conversia in JSON poate nu economisi mult."
+          "title": "Comentariile se elimin\u0103",
+          "description": "JSON nu suport\u0103 comentarii. Toate comentariile # din fi\u0219ierul YAML nu vor ap\u0103rea \u00een rezultatul JSON. P\u0103streaz\u0103 fi\u0219ierul YAML original."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparenta",
-          "description": "JSON nu suporta transparenta. Zonele transparente devin albe. Luati in considerare PNG sau WebP."
+          "icon": "RiCodeLine",
+          "title": "YAML multi-document",
+          "description": "Fi\u0219ierele YAML pot con\u021bine mai multe documente separate prin ---. Convertorul proceseaz\u0103 standard primul document."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Pastrati originalele",
-          "description": "Conversia cu pierderi e ireversibila. Pastrati copii ale fisierelor YAML."
+          "icon": "RiFileCodeLine",
+          "title": "Ancore \u0219i aliasuri",
+          "description": "Ancorele YAML (&) \u0219i aliasurile (*) sunt rezolvate \u00een timpul conversiei. Rezultatul JSON con\u021bine valorile expandate, nu referin\u021bele YAML."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         },
         {
-          "question": "E sigura conversia YAML in JSON?",
-          "answer": "Da. Totul se face local in browser via Canvas API. Nimic nu e trimis la servere."
+          "question": "Este conversia din YAML \u00een JSON sigur\u0103?",
+          "answer": "Da. Toat\u0103 conversia se face local \u00een browserul t\u0103u. Nicio dat\u0103 nu este trimis\u0103 la vreun server."
         },
         {
-          "question": "Pot converti mai multe fisiere YAML?",
-          "answer": "Da. Conversie in lot fara limita. Trageti fisierele in convertor."
+          "question": "Se p\u0103streaz\u0103 comentariile YAML?",
+          "answer": "Nu. JSON nu suport\u0103 comentarii, a\u0219a c\u0103 toate comentariile # din fi\u0219ierul YAML sunt eliminate \u00een timpul conversiei. P\u0103streaz\u0103 fi\u0219ierul YAML original."
         },
         {
-          "question": "JSON e suportat de toate browserele?",
-          "answer": "JSON e suportat de Chrome, Firefox, Safari, Edge si Opera."
+          "question": "Este conversia f\u0103r\u0103 pierderi?",
+          "answer": "Da, pentru valorile de date. Toate \u0219irurile, numerele, booleenele, valorile null, array-urile \u0219i obiectele sunt p\u0103strate exact. Doar func\u021bionalit\u0103\u021bile specifice YAML ca comentariile \u0219i ancorele nu se transfer\u0103 \u00een JSON."
         }
       ]
     },

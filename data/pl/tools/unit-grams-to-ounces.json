@@ -1,0 +1,289 @@
+{
+  "toolKey": "gramsToOunces",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter gramów na uncje – przelicz masę",
+    "description": "Przelicz gramy na uncje i odwrotnie. Konwerter jest przydatny w kuchni i handlu międzynarodowym. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-gramy-na-uncje"
+  },
+  "hero": {
+    "title": "Przelicz gramy na uncje",
+    "description": "Ten konwerter przelicza gramy na uncje (oz) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-gramy-na-uncje",
+      "label": "g na uncje"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter gramów na uncje – przelicz masę",
+      "alternateName": ["Przelicznik g na oz", "Kalkulator gramów na uncje", "Zamiana gramów na uncje"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz gramy na uncje i odwrotnie. Konwerter jest przydatny w kuchni i handlu międzynarodowym. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera g na uncje",
+      "description": "Instrukcja użycia: g na uncje.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy potrzebne jest przeliczanie gramów na uncje?",
+      "html": "<p class=\"text-mid mb-4\">Gram (g) to jednostka masy równa 1/1000 kilograma. Uncja (oz) to jednostka w systemie imperialnym, równa 28,3495 grama. 1 gram = 0,035274 uncji.</p><p class=\"text-mid mb-4\">Przeliczanie gramów na uncje jest szczególnie przydatne w kuchni – amerykańskie i brytyjskie przepisy kulinarne podają ilości składników w uncjach. Na przykład: 4 oz masła = 113 g, 8 oz mąki = 227 g.</p><p class=\"text-mid mb-4\">W handlu międzynarodowym waga produktów na rynek amerykański jest podawana w uncjach. Opakowanie 100 g to 3,53 oz.</p><p class=\"text-mid\">W jubilerstwie używa się uncji trojskiej (31,1035 g), która jest cięższa od uncji avoirdupois (28,3495 g). Ten konwerter przelicza uncje avoirdupois – te stosowane w codziennym życiu.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "g na uncje – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Gotowanie",
+          "description": "Amerykańskie przepisy: 4 oz masła = 113 g, 6 oz czekolady = 170 g."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Zakupy",
+          "description": "Waga produktów importowanych z USA podawana w uncjach."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Przesyłki",
+          "description": "Waga listów i paczek w systemie pocztowym USA podawana w uncjach."
+        },
+        {
+          "icon": "RiHeartLine",
+          "title": "Dietetyka",
+          "description": "Porcje jedzenia w amerykańskich tabelach wartości odżywczych podaje się w oz."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja gramów na uncje?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja gramów na uncje opiera się na uncji avoirdupois, która wynosi dokładnie 28,349523125 grama. Jest to standardowa uncja stosowana w handlu i życiu codziennym w krajach anglosaskich — nie należy jej mylić z uncją trojską używaną w jubilerstwie (31,1035 g).</p><p class=\"text-mid mb-4\">Aby przeliczyć gramy na uncje, narzędzie mnoży wartość przez 0,035274. Na przykład 100 gramów to około 3,53 uncji, a 500 gramów to około 17,64 uncji. Szybkie przybliżenie w pamięci: podziel gramy przez 28 — wynik będzie bardzo zbliżony do dokładnego.</p><p class=\"text-mid\">W drugą stronę, aby zamienić uncje na gramy, wystarczy pomnożyć wartość przez 28,3495. Warto pamiętać, że 16 uncji to jeden funt (pound), co odpowiada około 453,6 gramom.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>1 uncja = 28,35 g. Szybkie: podziel gramy przez 30, wynik będzie nieco za mały.</li><li>1 funt = 16 uncji = 453,59 g.</li><li>Uncja trojska (złoto, srebro) = 31,10 g – większa niż uncja zwykła (28,35 g).</li><li>Amerykańska porcja mięsa: 3–4 oz = 85–113 g.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Gram (g) vs Uncja (oz) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Gram (g)"
+        },
+        {
+          "id": "unit2",
+          "name": "Uncja (oz)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metryczny (SI)",
+            "unit2": "Imperialny"
+          }
+        },
+        {
+          "name": "Bazowa wartość",
+          "values": {
+            "unit1": "1/1000 kg",
+            "unit2": "28,3495 g"
+          }
+        },
+        {
+          "name": "Kuchnia",
+          "values": {
+            "unit1": "Gramy (Europa)",
+            "unit2": "Uncje (USA/UK)"
+          }
+        },
+        {
+          "name": "Jubilerstwo",
+          "values": {
+            "unit1": "Gramy",
+            "unit2": "Uncje trojskie (31,10 g)"
+          }
+        },
+        {
+          "name": "Poczta",
+          "values": {
+            "unit1": "Gramy",
+            "unit2": "Uncje (USA)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile gramów ma 1 uncja?",
+          "answer": "1 uncja avoirdupois = 28,3495 g. 1 uncja trojska (jubilerska) = 31,1035 g."
+        },
+        {
+          "question": "Ile uncji to 100 gramów?",
+          "answer": "100 g = 3,5274 oz – około 3,5 uncji."
+        },
+        {
+          "question": "Jaka jest różnica między uncją a uncją trojską?",
+          "answer": "Uncja avoirdupois (28,35 g) jest używana w codziennym życiu. Uncja trojska (31,10 g) jest stosowana wyłącznie w handlu metalami szlachetnymi i jubilerstwie."
+        },
+        {
+          "question": "Ile uncji ma funt?",
+          "answer": "1 funt = 16 uncji. Jeśli przepis podaje 24 oz, to 1,5 funta = 680 g."
+        },
+        {
+          "question": "Jak przeliczyć uncje na gramy przy gotowaniu?",
+          "answer": "Pomnóż uncje przez 28,35. Na przykład: 8 oz mąki = 8 × 28,35 = 226,8 g ≈ 227 g."
+        },
+        {
+          "question": "Czy konwerter przelicza uncje trojskie?",
+          "answer": "Nie. Ten konwerter przelicza uncje avoirdupois (28,3495 g) – te używane w kuchni i handlu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "g na uncje – Arteon",
+      "defaultSubject": "Feedback: g na uncje"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

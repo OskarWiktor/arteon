@@ -41,7 +41,7 @@
         },
         {
           "name": "Konverter til PNG",
-          "text": "Klikk på konverter. PNG er tapsfritt — ingen kvalitetsinnstilling nødvendig."
+          "text": "Klikk på konverter. PNG er tapsfritt - ingen kvalitetsinnstilling nødvendig."
         },
         {
           "name": "Last ned PNG-filer",
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan bildekonvertering pavirker hastighet og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ytelsesindikatorer. LCP maler tiden til det storste synlige elementet vises.</p><p class=\"text-mid mb-4\">Konvertering av WebP til PNG reduserer filstorrelse, forkorter nedlasting og forbedrer LCP. Mindre filer = raskere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> akselererer rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identifiserer filer som bor optimaliseres.</p>"
+      "title": "Hvordan bildekonvertering påvirker hastighet og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ytelsesindikatorer. LCP måler tiden til det største synlige elementet vises.</p><p class=\"text-mid mb-4\">Konvertering av WebP til PNG reduserer filstørrelse, forkorter nedlasting og forbedrer LCP. Mindre filer = raskere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> akselererer rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identifiserer filer som bør optimaliseres.</p>"
     },
     {
       "type": "gap",
@@ -254,13 +254,13 @@
     {
       "type": "sectionSteps",
       "title": "Tips for konvertering WebP til PNG",
-      "description": "Tips for a unnga vanlige problemer:",
+      "description": "Tips for å unngå vanlige problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Veldig store filer",
-          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+          "description": "Bilder over 4000×4000 px kan være tregere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
@@ -270,7 +270,7 @@
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "PNG stotter alfakanal. Transparente omrader i WebP bevares."
+          "description": "PNG støtter alfakanal. Transparente områder i WebP bevares."
         },
         {
           "icon": "RiStackLine",
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "WebP to PNG – typical file sizes",
+      "html": "<p class=\"text-mid mb-4\">PNG files are larger than WebP because PNG uses lossless compression while WebP uses lossy:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo</p><p class=\"text-light text-sm\">WebP: 240 KB → PNG: 1.2 MB</p><p class=\"text-light mt-1 text-sm\">5× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">WebP: 85 KB → PNG: 320 KB</p><p class=\"text-light mt-1 text-sm\">3.8× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Icon with transparency</p><p class=\"text-light text-sm\">WebP: 12 KB → PNG: 28 KB</p><p class=\"text-light mt-1 text-sm\">2.3× larger (lossless)</p></div></div><p class=\"text-light mt-4 text-sm\">The size increase is normal. PNG prioritizes universal compatibility and lossless quality over file size.</p>"
     },
     {
       "type": "faq",
@@ -338,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Hjelp oss å forbedre verktøyene våre",
-      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding - vi svarer innen 24 timer.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "WebP til PNG-konverterer – Arteon",
       "defaultSubject": "Feedback: WebP til PNG-konverterer"

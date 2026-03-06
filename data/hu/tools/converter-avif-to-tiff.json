@@ -2,7 +2,7 @@
   "toolKey": "avifToTiff",
   "locale": "hu",
   "metadata": {
-    "title": "AVIF TIFF konverter — AVIF TIFF",
+    "title": "AVIF TIFF konverter - AVIF TIFF",
     "description": "AVIF fájlok konvertálása TIFF formátumba. Ingyenes, privát, korlátlan.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/avif-tiff-konverter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertálás",
-          "text": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+          "text": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes AVIF-t TIFF-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A AVIF szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a TIFF formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a AVIF fajlokat TIFF formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A AVIF szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a TIFF formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a AVIF fajlokat TIFF formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "AVIF to TIFF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertálás",
-          "description": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
+          "description": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
           "icon": "RiSettings3Line"
         },
         {
@@ -309,6 +309,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What to expect when converting AVIF to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">AVIF uses lossy compression while TIFF is a lossless format. The conversion preserves the pixel data from the decoded AVIF exactly as-is in the TIFF output. No additional quality loss occurs during conversion.</p><p class=\"text-mid mb-4\">TIFF files will be significantly larger than the AVIF originals — this is expected. A 200 KB AVIF file may become 15–25 MB in TIFF because TIFF stores every pixel without compression (or with lossless LZW compression).</p><p class=\"text-mid\">For the best results, use high-quality AVIF source files. If the original AVIF was heavily compressed, the quality limitations will carry over to the TIFF output. TIFF cannot recover detail that was lost during AVIF compression.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When should you keep AVIF instead of converting to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">TIFF is designed for print and archival workflows. If your images are intended for web delivery, social media, or digital-only use, AVIF is the better choice — files are dramatically smaller and load faster in browsers.</p><p class=\"text-mid mb-4\">Convert to TIFF only when the target system specifically requires it: offset printing, desktop publishing (InDesign, QuarkXPress), medical imaging software, or professional photo archival systems. For general editing, PNG is a lighter lossless alternative.</p><p class=\"text-mid\">If you need to share images digitally while maintaining quality, consider WebP or PNG as intermediate formats. TIFF should be reserved for professional print workflows where its CMYK support and ICC profiles are needed.</p>"
     },
     {
       "type": "faq",

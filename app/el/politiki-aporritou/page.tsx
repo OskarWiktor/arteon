@@ -58,22 +58,22 @@ export default function PrivacyPolicyPage() {
           <SectionInfo title="3. Σκοποί και νομική βάση">
             <ol className="list-decimal space-y-1 pl-6">
               <li>
-                <strong>Επικοινωνία με πελάτες</strong> — επεξεργασία ερωτημάτων φόρμας (Άρθρο 6(1)(β) και (στ) GDPR).
+                <strong>Επικοινωνία με πελάτες</strong> - επεξεργασία ερωτημάτων φόρμας (Άρθρο 6(1)(β) και (στ) GDPR).
               </li>
               <li>
-                <strong>Μάρκετινγκ και αναλυτικά</strong> — στατιστικά ιστοσελίδας, βελτιστοποίηση περιεχομένου (Άρθρο 6(1)(στ) GDPR).
+                <strong>Μάρκετινγκ και αναλυτικά</strong> - στατιστικά ιστοσελίδας, βελτιστοποίηση περιεχομένου (Άρθρο 6(1)(στ) GDPR).
               </li>
               <li>
-                <strong>Παροχή υπηρεσιών</strong> — προσφορές, συμβάσεις, τιμολόγια (Άρθρο 6(1)(β) GDPR).
+                <strong>Παροχή υπηρεσιών</strong> - προσφορές, συμβάσεις, τιμολόγια (Άρθρο 6(1)(β) GDPR).
               </li>
               <li>
-                <strong>Νομικές υποχρεώσεις</strong> — π.χ. φύλαξη λογιστικών εγγράφων (Άρθρο 6(1)(γ) GDPR).
+                <strong>Νομικές υποχρεώσεις</strong> - π.χ. φύλαξη λογιστικών εγγράφων (Άρθρο 6(1)(γ) GDPR).
               </li>
               <li>
-                <strong>Ασφάλεια</strong> — αρχεία καταγραφής, πρόληψη κατάχρησης (Άρθρο 6(1)(στ) GDPR).
+                <strong>Ασφάλεια</strong> - αρχεία καταγραφής, πρόληψη κατάχρησης (Άρθρο 6(1)(στ) GDPR).
               </li>
               <li>
-                <strong>Προβολή διαφημίσεων</strong> — μέσω Google AdSense (Άρθρο 6(1)(α) GDPR — συγκατάθεση μέσω Google Privacy & Messaging).
+                <strong>Προβολή διαφημίσεων</strong> - μέσω Google AdSense (Άρθρο 6(1)(α) GDPR - συγκατάθεση μέσω Google Privacy & Messaging).
               </li>
             </ol>
           </SectionInfo>
@@ -121,8 +121,8 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-1 pl-6">
               <li>πάροχο φιλοξενίας (π.χ. Vercel),</li>
               <li>παρόχους αναλυτικών (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),</li>
-              <li>πάροχο διαφημίσεων (Google Ireland Ltd. — Google AdSense),</li>
-              <li>ελεγκτή, πάροχο πληρωμών ή νομικό σύμβουλο — κατά περίπτωση.</li>
+              <li>πάροχο διαφημίσεων (Google Ireland Ltd. - Google AdSense),</li>
+              <li>ελεγκτή, πάροχο πληρωμών ή νομικό σύμβουλο - κατά περίπτωση.</li>
             </ul>
             <p>Όλοι οι αποδέκτες επεξεργάζονται δεδομένα σύμφωνα με τον GDPR.</p>
           </SectionInfo>
@@ -137,10 +137,10 @@ export default function PrivacyPolicyPage() {
           <Gap variant="line" size="sm" />
           <SectionInfo title="8. Περίοδος διατήρησης">
             <ul className="list-disc space-y-1 pl-6">
-              <li>Φόρμα επικοινωνίας — έως 12 μήνες.</li>
-              <li>Δεδομένα πελατών — σύμφωνα με τη νομοθεσία.</li>
-              <li>Αναλυτικά — σύμφωνα με Google Analytics (π.χ. 26 μήνες).</li>
-              <li>Αρχεία καταγραφής — έως 12 μήνες.</li>
+              <li>Φόρμα επικοινωνίας - έως 12 μήνες.</li>
+              <li>Δεδομένα πελατών - σύμφωνα με τη νομοθεσία.</li>
+              <li>Αναλυτικά - σύμφωνα με Google Analytics (π.χ. 26 μήνες).</li>
+              <li>Αρχεία καταγραφής - έως 12 μήνες.</li>
             </ul>
           </SectionInfo>
           <Gap variant="line" size="sm" />

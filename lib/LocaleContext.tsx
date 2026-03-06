@@ -47,6 +47,20 @@ export interface ClientDictionary {
   };
   mobileNav: { close: string; services: string; contact: string };
   infoBanner: { text: string; linkText: string };
+  search: {
+    placeholder: string;
+    emptyHint: string;
+    noResults: string;
+    contactUs: string;
+    ariaLabel: string;
+    ariaClose: string;
+    ariaSearch: string;
+    categoryServices: string;
+    categoryTools: string;
+    categoryEducation: string;
+    categoryProjects: string;
+    categoryPages: string;
+  };
   imageConverter: {
     addFiles: string;
     dragDrop: string;
@@ -91,6 +105,28 @@ export interface ClientDictionary {
     errorWrongFormat: string;
     errorNoFiles: string;
     errorAvifNotSupported: string;
+    pasteOrTypeData: string;
+    fileReadError: string;
+    uploadFile: string;
+    conversionResult: string;
+    copied: string;
+    copy: string;
+    onlyImageFiles: string;
+    base64PasteEmpty: string;
+    base64Invalid: string;
+    imageHeading: string;
+    dragImageHere: string;
+    fileLabel: string;
+    base64Placeholder: string;
+    base64PastePlaceholder: string;
+    decodeBtn: string;
+    imagePreview: string;
+    base64DecodeHint: string;
+    enterValue: string;
+    resultIn: string;
+    swapOrder: string;
+    copyResult: string;
+    pageLabel: string;
   };
 }
 

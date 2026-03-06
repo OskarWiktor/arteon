@@ -2,7 +2,7 @@
   "toolKey": "jsonToCsv",
   "locale": "sv",
   "metadata": {
-    "title": "JSON till CSV-konverterare — JSON CSV",
+    "title": "JSON till CSV-konverterare - JSON CSV",
     "description": "Konvertera JSON till CSV-format. Automatisk parsning och formatering. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/json-till-csv-konverterare"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Varför konvertera JSON till CSV?",
-      "html": "<p class=\"text-mid mb-4\">JSON ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till CSV erbjuda betydande fordelar — mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina JSON-filer till CSV-format direkt i webblasaren. Inga filer laddas upp — hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON ar ett brett anvant filformat med stor kompatibilitet. Beroende pa anvandningsfallet kan konvertering till CSV erbjuda betydande fordelar - mindre filer, battre kvalitet eller bredare plattformsstod.</p><p class=\"text-mid mb-4\">Denna gratis onlinekonverterare omvandlar dina JSON-filer till CSV-format direkt i webblasaren. Inga filer laddas upp - hela processen sker lokalt pa din enhet.</p><p class=\"text-mid\">Konvertera sa manga filer du vill utan dagliga begransningar, utan registrering och utan vattenstamplar. Dra och slapp filer, justera kvaliteten och ladda ner resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
       "imageAlt": "JSON to CSV conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hur mycket sparar du vid konvertering JSON till CSV?",
-      "html": "<p class=\"text-mid mb-4\">Besparingarna beror pa filtyp och komprimering:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Skarmavbild / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Faktiska besparingar varierar beroende pa innehall och installningar.</p>"
+      "title": "Hur fungerar konvertering från JSON till CSV?",
+      "html": "<p class=\"text-mid mb-4\">JSON (JavaScript Object Notation) lagrar data som strukturerade objekt med nyckel-värde-par. CSV (Comma-Separated Values) organiserar data i ett platt tabellformat med rader och kolumner. Konverteraren omvandlar JSON-objekt till tabellrader med egenskapsnamnen som kolumnrubriker.</p><p class=\"text-mid mb-4\">För en array av JSON-objekt blir varje objekt en rad i CSV-utdata. Konverteraren extraherar alla unika nycklar och använder dem som kolumnrubriker i första raden.</p><p class=\"text-mid\">Den resulterande CSV-filen använder standardformatering med kommaavgränsare och korrekt citering. All konvertering sker lokalt i din webbläsare — ingen data skickas till någon server.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips for konvertering JSON till CSV",
-      "description": "Tips for att undvika vanliga problem:",
+      "title": "Tips för konvertering från JSON till CSV",
+      "description": "Några tips för att undvika vanliga problem:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Mycket stora filer",
-          "description": "Bilder over 4000×4000 px kan vara langsammare. Dela i omgangar om 10–20."
+          "icon": "RiNodeTree",
+          "title": "Nästlade objekt",
+          "description": "CSV är ett platt format och kan inte representera nästlade strukturer. Nästlade JSON-objekt plattas ut med punktnotation (t.ex. adress.stad)."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Redan komprimerade",
-          "description": "Om JSON redan var kraftigt komprimerad kanske konvertering till CSV inte sparar mycket."
+          "icon": "RiListCheck2",
+          "title": "Arrayer i värden",
+          "description": "Om en JSON-egenskap innehåller en array serialiseras den som sträng i CSV-cellen. För komplex nästlad data är XML eller YAML att föredra framför CSV."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparens",
-          "description": "CSV stoder inte transparens. Transparenta omraden blir vita. Overag PNG eller WebP."
+          "icon": "RiFileTextLine",
+          "title": "Enhetlig struktur",
+          "description": "För bästa resultat, använd JSON-arrayer där alla objekt har samma nycklar. Objekt med olika nycklar fungerar också, saknade värden visas som tomma celler."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Spara originalen",
-          "description": "Forlustkomprimering ar irreversibel. Spara kopior av JSON-filer."
+          "icon": "RiFileCodeLine",
+          "title": "Stora datamängder",
+          "description": "Konverteraren bearbetar effektivt stora JSON-filer i webbläsaren. För filer över 10 MB kan bearbetningen ta några sekunder beroende på enheten."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Handling nested JSON structures",
+      "html": "<p class=\"text-mid mb-4\">CSV is a flat tabular format — it cannot natively represent nested objects or arrays. The converter handles nesting in several ways:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Nested objects</strong> – flattened using dot notation. <code>{\"address\": {\"city\": \"Warsaw\"}}</code> becomes a column called <code>address.city</code>.</li><li><strong>Arrays of primitives</strong> – serialized as comma-separated strings within a single cell.</li><li><strong>Arrays of objects</strong> – serialized as JSON strings within the cell, preserving the structure for manual parsing.</li><li><strong>Null values</strong> – converted to empty cells in CSV.</li></ul><p class=\"text-mid mt-3\">For best results, use JSON with a flat structure (array of objects with primitive values). Deeply nested JSON may produce many columns with dot-notation headers.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, den fungerar på alla enheter med en modern webbläsare."
         },
         {
-          "question": "Ar konvertering JSON till CSV saker?",
-          "answer": "Ja. Allt sker lokalt i webblasaren via Canvas API. Inget skickas till servrar."
+          "question": "Är konverteringen från JSON till CSV säker?",
+          "answer": "Ja. All konvertering sker lokalt i din webbläsare. Din data skickas aldrig till någon server."
         },
         {
-          "question": "Kan jag konvertera flera JSON-filer samtidigt?",
-          "answer": "Ja. Batchkonvertering utan begransning. Dra filer till konverteringsomradet."
+          "question": "Kan jag öppna CSV-filen i Excel?",
+          "answer": "Ja. CSV-filer kan öppnas direkt i Microsoft Excel, Google Sheets, LibreOffice Calc och alla andra kalkylbladsprogram."
         },
         {
-          "question": "Stods CSV av alla webblasare?",
-          "answer": "CSV stods av Chrome, Firefox, Safari, Edge och Opera."
+          "question": "Vad händer med nästlade JSON-objekt?",
+          "answer": "Nästlade objekt plattas ut för CSV-utdata. Egenskaper representeras med punktnotation (t.ex. adress.stad). Arrayer i värden serialiseras som strängar."
         }
       ]
     },

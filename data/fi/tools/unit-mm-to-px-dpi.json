@@ -1,0 +1,273 @@
+{
+  "toolKey": "mmToPxDpi",
+  "locale": "fi",
+  "metadata": {
+    "title": "Mm px:ksi – muunnin",
+    "description": "Muunna mm pikseleiksi DPI-tuella.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/mm-px-muunnin"
+  },
+  "hero": {
+    "title": "Mm px:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/mm-px-muunnin",
+      "label": "mm px:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Mm px:ksi – muunnin",
+      "alternateName": ["Mm px:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna mm pikseleiksi DPI-tuella.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin mm muunnetaan pikseleiksi?",
+      "html": "<p class=\"text-mid mb-4\">Tarkkuustyö mittaa millimetreissä. Digitaalikuville: Pikselit = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">300 DPI:llä: 1 mm = 11,81 px, käyntikortin leveys (85 mm) = 1 004 px.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "MM to pixels (DPI) converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tulostus",
+          "description": "Pakkausmitat mm:ssä. Etiketti 100 mm = 1 181 px."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Käyntikortit",
+          "description": "85 × 55 mm 300 DPI:llä = 1 004 × 650 px (+ leikkausvara)."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Etiketit",
+          "description": "Tarkat muunnokset mm:stä px:iin."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Suunnittelu ja mittaus",
+          "description": "Muunna 3D-mitat (mm) tekstuuriresoluutioksi (px)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">Pikselit = mm × DPI / 25,4. 300 DPI:llä: 1 mm = 11,811 px.</p><p class=\"text-mid\">Leikkausvara: lisää 3 mm joka puolelle.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">Pikselit = mm × DPI / 25,4. 300 DPI:llä: 1 mm = 11,811 px.</p><p class=\"text-mid\">Leikkausvara: lisää 3 mm joka puolelle.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "mm pikseleihin eri DPI:llä",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI"
+        },
+        {
+          "id": "unit2",
+          "name": "600 DPI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1 mm",
+          "values": {
+            "unit1": "11,81 px",
+            "unit2": "23,62 px"
+          }
+        },
+        {
+          "name": "10 mm",
+          "values": {
+            "unit1": "118 px",
+            "unit2": "236 px"
+          }
+        },
+        {
+          "name": "85 mm",
+          "values": {
+            "unit1": "1 004 px",
+            "unit2": "2 008 px"
+          }
+        },
+        {
+          "name": "Käyttö",
+          "values": {
+            "unit1": "Normaali paino",
+            "unit2": "Taide / lääketiede"
+          }
+        },
+        {
+          "name": "Tiedostokoko",
+          "values": {
+            "unit1": "Normaali",
+            "unit2": "4× suurempi"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta px on 1 mm 300 DPI:llä?",
+          "answer": "1 mm 300 DPI:llä = 11,811 px."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "mm px:ksi – Arteon",
+      "defaultSubject": "Palaute: mm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

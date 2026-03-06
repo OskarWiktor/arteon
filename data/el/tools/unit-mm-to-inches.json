@@ -1,0 +1,281 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "el",
+  "metadata": {
+    "title": "Mm σε ίντσες – μετατροπέας",
+    "description": "Μετατρέψτε χιλιοστά σε ίντσες και αντίστροφα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-mm-se-intses"
+  },
+  "hero": {
+    "title": "Mm σε ίντσες",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-mm-se-intses",
+      "label": "mm σε ίντσες"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Mm σε ίντσες – μετατροπέας",
+      "alternateName": ["Mm σε ίντσες"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε χιλιοστά σε ίντσες και αντίστροφα.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: Mm σε ίντσες?",
+      "html": "<p class=\"text-mid mb-4\">Millimeter (mm) is a metric unit equal to 1/1000 of a meter. Inch (in) is an imperial unit equal to 25.4 mm exactly. This conversion is essential for engineering, manufacturing, 3D printing, and precision work.</p><p class=\"text-mid mb-4\">Many industries mix metric and imperial measurements: CNC machining, jewelry (ring sizes), phone screen dimensions, drill bit sizes, and plumbing fittings.</p><p class=\"text-mid mb-4\">Common examples: 10 mm = 0.394″, 25.4 mm = 1″ (exact), 50 mm = 1.969″. Phone thickness: 8 mm = 0.315″.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mm σε ίντσες – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiToolsLine",
+          "title": "Τεχνικές εφαρμογές",
+          "description": "Śruby i nakrętki calowe: 1/4″ = 6,35 mm, 1/2″ = 12,7 mm."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Εκτύπωση",
+          "description": "Marginesy i wymiary grafik: format Letter vs A4, DPI i rozdzielczość."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Elektronika",
+          "description": "Wymiary komponentów, rozstawy pinów, grubości płytek PCB."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Σχεδιασμός και μέτρηση",
+          "description": "Χρησιμοποιήστε αυτόν τον μετατροπέα για γρήγορες και ακριβείς μετατροπές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">Die μετατροπή basiert auf der exakten Definition: 1 Zoll = 25,4 mm. Um mm in Zoll umzurechnen, teilen Sie durch 25,4.</p><p class=\"text-mid mb-4\">Beispiel: 50 mm / 25,4 = 1,9685 Zoll.</p><p class=\"text-mid\">Brüche: 1/8″ = 3,175 mm, 1/4″ = 6,35 mm, 3/8″ = 9,525 mm, 1/2″ = 12,7 mm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Drill bits: 1/8″ = 3.175 mm, 1/4″ = 6.35 mm, 3/8″ = 9.525 mm, 1/2″ = 12.7 mm.</li><li>Paper: 80 gsm A4 paper is about 0.1 mm thick. 1 mm = ~10 sheets.</li><li>Phone thickness: typically 7–9 mm = 0.28–0.35 inches.</li><li>Coin: US quarter diameter = 24.26 mm = 0.955″.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Millimeter (mm) vs Inch (in) – σύγκριση",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Millimeter (mm)"
+        },
+        {
+          "id": "unit2",
+          "name": "Inch (in)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Σύστημα",
+          "values": {
+            "unit1": "Μετρικό (SI)",
+            "unit2": "Αυτοκρατορικό"
+          }
+        },
+        {
+          "name": "Βασική τιμή",
+          "values": {
+            "unit1": "1/1000 meter",
+            "unit2": "25.4 mm"
+          }
+        },
+        {
+          "name": "Engineering",
+          "values": {
+            "unit1": "International standard",
+            "unit2": "US/UK standard"
+          }
+        },
+        {
+          "name": "Ακρίβεια",
+          "values": {
+            "unit1": "0.01 mm typical",
+            "unit2": "1/1000″ typical"
+          }
+        },
+        {
+          "name": "Plumbing",
+          "values": {
+            "unit1": "Metric pipes",
+            "unit2": "NPT/BSP pipes"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Πόσα mm ist 1 Zoll?",
+          "answer": "Genau 25,4 mm. Dies ist eine exakte Definition."
+        },
+        {
+          "question": "Πόσα Zoll sind 10 mm?",
+          "answer": "10 mm = 0,3937 Zoll, knapp unter 3/8 Zoll."
+        },
+        {
+          "question": "Τι είναι 1/4 Zoll in mm?",
+          "answer": "1/4 Zoll = 6,35 mm genau."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ναι. Όλοι οι υπολογισμοί γίνονται στον browser σας."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "mm σε ίντσες – Arteon",
+      "defaultSubject": "Feedback: mm-to-inches"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

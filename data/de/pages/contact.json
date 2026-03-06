@@ -6,11 +6,11 @@
   },
   "hero": {
     "title": "Kontakt zum Arteon-Team aufnehmen",
-    "description": "Fehler melden, neues Tool vorschlagen oder eine Frage stellen — wir antworten innerhalb eines Werktags"
+    "description": "Fehler melden, neues Tool vorschlagen oder eine Frage stellen - wir antworten innerhalb eines Werktags"
   },
   "intro": {
     "title": "Frage oder Vorschlag?",
-    "textBefore": "Wir freuen uns über Ihr Feedback zu unseren Tools. Wenn Sie einen Fehler gefunden haben, eine Idee für ein neues Tool haben oder Hilfe benötigen — schreiben Sie uns an",
+    "textBefore": "Wir freuen uns über Ihr Feedback zu unseren Tools. Wenn Sie einen Fehler gefunden haben, eine Idee für ein neues Tool haben oder Hilfe benötigen - schreiben Sie uns an",
     "textAfter": ". Wir antworten innerhalb eines Werktags."
   },
   "formTitle": "Nachricht senden",

@@ -2,7 +2,7 @@
   "toolKey": "pngToGif",
   "locale": "no",
   "metadata": {
-    "title": "PNG til GIF-konverterer — PNG GIF",
+    "title": "PNG til GIF-konverterer - PNG GIF",
     "description": "Konverter PNG-grafikk til GIF. Ideell for enkle ikoner og grafikk. Kjører helt i nettleseren din. Ingen serveropplasting, ingen registrering nødvendig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
     "path": "/no/verktoy/png-til-gif-konverterer"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Still inn kvalitet",
-          "text": "Juster GIF-kvalitetsglideren — lavere verdier gir mindre filer."
+          "text": "Juster GIF-kvalitetsglideren - lavere verdier gir mindre filer."
         },
         {
           "position": 3,
           "name": "Konverter",
-          "text": "Klikk på Konverter — filene behandles lokalt i nettleseren."
+          "text": "Klikk på Konverter - filene behandles lokalt i nettleseren."
         },
         {
           "position": 4,
           "name": "Last ned",
-          "text": "Last ned GIF-filene — enkeltvis eller alle på en gang."
+          "text": "Last ned GIF-filene - enkeltvis eller alle på en gang."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan bildekonvertering pavirker hastighet og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ytelsesindikatorer. LCP maler tiden til det storste synlige elementet vises.</p><p class=\"text-mid mb-4\">Konvertering av PNG til GIF reduserer filstorrelse, forkorter nedlasting og forbedrer LCP. Mindre filer = raskere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> akselererer rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identifiserer filer som bor optimaliseres.</p>"
+      "title": "Hvordan bildekonvertering påvirker hastighet og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ytelsesindikatorer. LCP måler tiden til det største synlige elementet vises.</p><p class=\"text-mid mb-4\">Konvertering av PNG til GIF reduserer filstørrelse, forkorter nedlasting og forbedrer LCP. Mindre filer = raskere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> akselererer rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identifiserer filer som bør optimaliseres.</p>"
     },
     {
       "type": "gap",
@@ -262,13 +262,13 @@
     {
       "type": "sectionSteps",
       "title": "Tips for konvertering PNG til GIF",
-      "description": "Tips for a unnga vanlige problemer:",
+      "description": "Tips for å unngå vanlige problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Veldig store filer",
-          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+          "description": "Bilder over 4000×4000 px kan være tregere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
@@ -278,7 +278,7 @@
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "GIF stotter alfakanal. Transparente omrader i PNG bevares."
+          "description": "GIF støtter alfakanal. Transparente områder i PNG bevares."
         },
         {
           "icon": "RiStackLine",
@@ -299,6 +299,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting PNG images to GIF reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",

@@ -2,7 +2,7 @@
   "toolKey": "pngToPdf",
   "locale": "nl",
   "metadata": {
-    "title": "PNG naar PDF converter — PNG PDF",
+    "title": "PNG naar PDF converter - PNG PDF",
     "description": "Converteer PNG-afbeeldingen naar PDF-documenten. Combineer meerdere bestanden in één PDF. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/png-naar-pdf-converter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Converteren",
-          "text": "Klik op Converteren — bestanden worden lokaal in je browser verwerkt."
+          "text": "Klik op Converteren - bestanden worden lokaal in je browser verwerkt."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom PNG naar PDF converteren?",
-      "html": "<p class=\"text-mid mb-4\">PNG is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar PDF aanzienlijke voordelen bieden — kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw PNG-bestanden direct in de browser om naar het PDF-formaat. Er worden geen bestanden naar een server geupload — het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar PDF aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw PNG-bestanden direct in de browser om naar het PDF-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "PNG to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Converteren",
-          "description": "Klik op Converteren — bestanden worden lokaal in je browser verwerkt.",
+          "description": "Klik op Converteren - bestanden worden lokaal in je browser verwerkt.",
           "icon": "RiSettings3Line"
         },
         {
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Directe conversie",
-          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's - snel en werkt ook offline."
         }
       ]
     },
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kwaliteit — wat kiezen bij conversie PNG naar PDF?",
-      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standaard) — goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% — voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% — wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 85% is het verschil tussen origineel PNG en PDF praktisch onzichtbaar.</p>"
+      "title": "Kwaliteit - wat kiezen bij conversie PNG naar PDF?",
+      "html": "<p class=\"text-mid\">Regelaar 60%-95%. Hoger = betere kwaliteit maar grotere bestanden.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standaard) - goed compromis voor websites, blogs, artikelen.</strong></li><li><strong>85–90% - voor productfoto's, portfolio's en galerijen.</strong></li><li><strong>60–70% - wanneer bestandsgrootte minimaliseren prioriteit heeft.</strong></li></ul><p class=\"text-mid mt-3\">Bij 85% is het verschil tussen origineel PNG en PDF praktisch onzichtbaar.</p>"
     },
     {
       "type": "gap",
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">PNG to PDF conversion creates document files for sharing and printing. When PDFs are downloaded from websites, file size directly affects the user experience — large PDFs cause slow downloads and increase bounce rates.</p><p class=\"text-mid mb-4\">The converter packages PNG images into a compact PDF. Since PNG is lossless, the internal image quality is preserved. A typical multi-page PDF from 10 PNG screenshots will be approximately 10–20 MB.</p><p class=\"text-mid\">For web display, keep images as PNG or convert to WebP for optimal performance. Use PDF only when you need a printable, shareable multi-page document.</p>"
     },
     {
       "type": "faq",

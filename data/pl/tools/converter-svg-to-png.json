@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować SVG na PNG?",
-      "html": "<p class=\"text-mid mb-4\">SVG (Scalable Vector Graphics) to format wektorowy, który opisuje obraz za pomocą kształtów matematycznych. Pliki SVG są skalowalne bez utraty jakości, ale nie każdy program i platforma je obsługuje. Wiele platform społecznościowych (Facebook, Instagram, LinkedIn) nie przyjmuje plików SVG jako obrazów.</p><p class=\"text-mid mb-4\">PNG to format rastrowy (pikselowy), który jest obsługiwany wszędzie — w przeglądarkach, programach biurowych, platformach społecznościowych i systemach druku. Konwersja SVG na PNG tworzy obraz pikselowy o wymiarach oryginalnego SVG.</p><p class=\"text-mid\">Konwersja jest szczególnie przydatna, gdy potrzebujesz wstawić logo wektorowe do dokumentu Word, przesłać ikonę na platformę społecznościową lub udostępnić grafikę osobie, która nie ma programu do otwierania plików SVG.</p>",
+      "html": "<p class=\"text-mid mb-4\">SVG (Scalable Vector Graphics) to format wektorowy, który opisuje obraz za pomocą kształtów matematycznych. Pliki SVG są skalowalne bez utraty jakości, ale nie każdy program i platforma je obsługuje. Wiele platform społecznościowych (Facebook, Instagram, LinkedIn) nie przyjmuje plików SVG jako obrazów.</p><p class=\"text-mid mb-4\">PNG to format rastrowy (pikselowy), który jest obsługiwany wszędzie - w przeglądarkach, programach biurowych, platformach społecznościowych i systemach druku. Konwersja SVG na PNG tworzy obraz pikselowy o wymiarach oryginalnego SVG.</p><p class=\"text-mid\">Konwersja jest szczególnie przydatna, gdy potrzebujesz wstawić logo wektorowe do dokumentu Word, przesłać ikonę na platformę społecznościową lub udostępnić grafikę osobie, która nie ma programu do otwierania plików SVG.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter SVG na PNG – Arteon"
     },
@@ -83,7 +83,7 @@
         },
         {
           "title": "3. Pobierz PNG",
-          "description": "Pobierz pliki pojedynczo lub wszystkie naraz.",
+          "description": "Pobierz przekonwertowane pliki PNG pojedynczo lub użyj opcji zbiorczego pobierania, aby zapisać wszystkie naraz jako archiwum.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -131,7 +131,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
+          "description": "Pliki nie opuszczają komputera - cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -244,7 +244,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów SVG na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów SVG na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -274,7 +274,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików SVG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików SVG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -297,7 +297,7 @@
         },
         {
           "question": "Czy tekst w SVG zostanie zachowany?",
-          "answer": "Tak, ale jako piksele — nie jako edytowalny tekst. Po konwersji na PNG grafika staje się rastrowa i nie można edytować poszczególnych elementów."
+          "answer": "Tak, ale jako piksele - nie jako edytowalny tekst. Po konwersji na PNG grafika staje się rastrowa i nie można edytować poszczególnych elementów."
         },
         {
           "question": "Czy mogę zmienić rozmiar wynikowego PNG?",
@@ -313,11 +313,11 @@
         },
         {
           "question": "Czy konwersja SVG na PNG jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików SVG jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Jaką rozdzielczość będzie miał wynikowy PNG?",
+          "answer": "Rozdzielczość zależy od wymiarów ustawionych w pliku SVG (atrybuty width/height lub viewBox). Konwerter renderuje SVG w rozdzielczości przeglądarki. Do druku zaleca się grafiki o wymiarach co najmniej 3000 pikseli na dłuższym boku."
         }
       ]
     },
@@ -328,7 +328,7 @@
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
-      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas - odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter SVG na PNG – Arteon",
       "defaultSubject": "Feedback: Konwerter SVG na PNG"

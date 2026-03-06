@@ -1,0 +1,285 @@
+{
+  "toolKey": "barToPsi",
+  "locale": "de",
+  "metadata": {
+    "title": "Bar in PSI umrechnen – Druckeinheiten-Rechner",
+    "description": "Rechnen Sie Bar in PSI um und umgekehrt. Nützlich für Reifendruck, Industrieausrüstung und HLK-Systeme. Ohne Registrierung.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/bar-in-psi-umrechner"
+  },
+  "hero": {
+    "title": "Bar in PSI umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/bar-in-psi-umrechner",
+      "label": "Bar in PSI"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bar in PSI umrechnen – Druckeinheiten-Rechner",
+      "alternateName": ["Bar in PSI umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Rechnen Sie Bar in PSI um und umgekehrt. Nützlich für Reifendruck, Industrieausrüstung und HLK-Systeme. Ohne Registrierung.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter bar na PSI",
+      "description": "Anleitung: bar na psi.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann muss man Bar in PSI umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Bar ist eine metrische Druckeinheit gleich 100.000 Pascal (100 kPa). PSI (Pfund pro Quadratzoll) ist die Standard-Druckeinheit im imperialen System, hauptsächlich in den USA und UK verwendet.</p><p class=\"text-mid mb-4\">Der Umrechnungsfaktor ist: 1 Bar = 14,5038 PSI. Dies ist wichtig für Reifendruck (europäische Autos geben Bar an, US-Autos PSI), HLK-Systeme, Industrieausrüstung und Tauchen.</p><p class=\"text-mid mb-4\">Reifendruck-Beispiele: 2,2 Bar = 31,9 PSI, 2,5 Bar = 36,3 PSI, 3,0 Bar = 43,5 PSI. Die meisten PKW empfehlen 2,0–2,5 Bar (29–36 PSI).</p><p class=\"text-mid\">Alle Berechnungen laufen lokal in Ihrem Browser — nichts wird an einen Server gesendet.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Bar in PSI umrechnen – Druckeinheiten-Rechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So verwenden Sie den Konverter",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein. Sie können einen Punkt oder ein Komma als Dezimaltrennzeichen verwenden.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Konvertierungsergebnis erscheint sofort im Feld daneben – ohne Klicken.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Klicken Sie auf Ergebnis kopieren oder verwenden Sie die Umkehren-Taste.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Konverter nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Opony samochodowe",
+          "description": "Europejskie: 2,0–2,5 bar. Amerykańskie: 29–36 PSI."
+        },
+        {
+          "icon": "RiAnchorLine",
+          "title": "Nurkowanie",
+          "description": "Butla nurkowa: 200 bar = 2 900 PSI."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Pneumatyka",
+          "description": "Sprężarki i narzędzia pneumatyczne: 6–10 bar = 87–145 PSI."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Opony rowerowe",
+          "description": "Rower szosowy: 6–8 bar = 87–116 PSI. Górski: 2–3 bar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen laufen lokal in Ihrem Browser. Keine Daten werden an einen Server gesendet."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich sofort beim Tippen – ohne Klicken."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Konvertierung",
+          "description": "Die Umkehren-Taste ermöglicht die Konvertierung in beide Richtungen mit einem Klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Eine fertige Tabelle mit häufig konvertierten Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung?",
+      "html": "<p class=\"text-mid mb-4\">Die Umrechnung basiert auf: 1 Bar = 100.000 Pa und 1 PSI = 6.894,757 Pa. Daher: 1 Bar = 100.000 / 6.894,757 ≈ 14,5038 PSI.</p><p class=\"text-mid mb-4\">Um Bar in PSI umzurechnen, multiplizieren Sie mit 14,5038. Um PSI in Bar umzurechnen, teilen Sie durch 14,5038.</p><p class=\"text-mid\">Der Umrechnungsfaktor ist konstant und exakt.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktische Tipps",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Standard-Atmosphärendruck: 1,01325 Bar = 14,696 PSI.</li><li>PKW-Reifendruck: 2,0–2,5 Bar (29–36 PSI).</li><li>Fahrradreifen: Rennrad 6–8 Bar (87–116 PSI), MTB 2–3 Bar (29–44 PSI).</li><li>Tauchflaschen: 200–300 Bar (2.900–4.350 PSI) bei voller Füllung.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Bar vs. PSI – Vergleich",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Bar"
+        },
+        {
+          "id": "unit2",
+          "name": "PSI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisch",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Basiswert",
+          "values": {
+            "unit1": "100.000 Pa",
+            "unit2": "6.894,76 Pa"
+          }
+        },
+        {
+          "name": "Reifendruck",
+          "values": {
+            "unit1": "Europa (Bar)",
+            "unit2": "USA/UK (PSI)"
+          }
+        },
+        {
+          "name": "Industrie",
+          "values": {
+            "unit1": "Internationaler Standard",
+            "unit2": "US-Standard"
+          }
+        },
+        {
+          "name": "Atmosphäre",
+          "values": {
+            "unit1": "1,013 Bar",
+            "unit2": "14,696 PSI"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele PSI ist 1 Bar?",
+          "answer": "Genau 14,5038 PSI."
+        },
+        {
+          "question": "Wie viele Bar sind 30 PSI?",
+          "answer": "30 PSI = 2,068 Bar. Ein gängiger Reifendruck für PKW."
+        },
+        {
+          "question": "Was ist normaler Reifendruck?",
+          "answer": "Die meisten PKW empfehlen 2,0–2,5 Bar (29–36 PSI). Prüfen Sie den Aufkleber an der Fahrertür."
+        },
+        {
+          "question": "Ist 1 Bar gleich 1 Atmosphäre?",
+          "answer": "Nahe, aber nicht genau. 1 Atmosphäre = 1,01325 Bar = 14,696 PSI."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen laufen in Ihrem Browser. Es werden keine Daten an einen Server gesendet."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "bar na PSI – Arteon",
+      "defaultSubject": "Feedback: bar-to-psi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

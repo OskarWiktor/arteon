@@ -1,0 +1,277 @@
+{
+  "toolKey": "mlToFlOz",
+  "locale": "ro",
+  "metadata": {
+    "title": "Ml în fl oz – convertor",
+    "description": "Convertiți mililitri în uncii lichide și invers.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-ml-in-fl-oz"
+  },
+  "hero": {
+    "title": "Ml în fl oz",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-ml-in-fl-oz",
+      "label": "ml în fl oz"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Ml în fl oz – convertor",
+      "alternateName": ["Ml în fl oz"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți mililitri în uncii lichide și invers.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: Ml în fl oz?",
+      "html": "<p class=\"text-mid mb-4\">Milliliter (mL) is a metric volume unit. US fluid ounce (fl oz) = 29.5735 mL. UK fluid ounce = 28.4131 mL. This converter uses US fluid ounces.</p><p class=\"text-mid mb-4\">This conversion is essential for cooking, beverages (US drink sizes), cosmetics (product labeling), and pharmaceutical dosing.</p><p class=\"text-mid mb-4\">Examples: 250 mL = 8.45 fl oz, 330 mL (can) = 11.2 fl oz, 500 mL = 16.9 fl oz, 750 mL (wine) = 25.4 fl oz.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Ml în fl oz – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Gotowanie",
+          "description": "Amerykańska szklanka (cup) = 8 fl oz = 236,6 ml."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Gătit și rețete",
+          "description": "Pojemności kosmetyków z USA podaje się w fl oz: 1 fl oz = 29,6 ml."
+        },
+        {
+          "icon": "RiGobletLine",
+          "title": "Napoje",
+          "description": "Puszka w USA = 12 fl oz = 355 ml. Butelka 16,9 fl oz = 500 ml."
+        },
+        {
+          "icon": "RiMedicineBottleLine",
+          "title": "Farmacja",
+          "description": "Dawkowanie leków płynnych w USA podaje się w uncjach płynnych."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">1 US-Flüssigunze = 29,5735296 mL. Um mL in US fl oz umzurechnen, teilen Sie durch 29,5735.</p><p class=\"text-mid mb-4\">1 UK-Flüssigunze = 28,4130625 mL (aproximativs kleiner als US).</p><p class=\"text-mid\">Schnelle Schätzung: Teilen Sie mL durch 30.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>TSA limit: 100 mL = 3.4 fl oz.</li><li>Soda can: 330 mL = 11.2 fl oz (US standard: 12 fl oz = 355 mL).</li><li>Wine bottle: 750 mL = 25.4 fl oz.</li><li>US cup = 8 fl oz = 236.6 mL. US pint = 16 fl oz = 473.2 mL.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Milliliter (mL) vs Fluid ounce (fl oz)",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Milliliter (mL)"
+        },
+        {
+          "id": "unit2",
+          "name": "US Fluid ounce",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistem",
+          "values": {
+            "unit1": "Metric (SI)",
+            "unit2": "US Customary"
+          }
+        },
+        {
+          "name": "Valoare de bază",
+          "values": {
+            "unit1": "1/1000 liter",
+            "unit2": "29.57 mL"
+          }
+        },
+        {
+          "name": "Cooking",
+          "values": {
+            "unit1": "International",
+            "unit2": "US recipes"
+          }
+        },
+        {
+          "name": "Beverages",
+          "values": {
+            "unit1": "International (mL)",
+            "unit2": "US (fl oz)"
+          }
+        },
+        {
+          "name": "UK fl oz",
+          "values": {
+            "unit1": "28.41 mL",
+            "unit2": "29.57 mL (US)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Câți mL ist 1 fl oz?",
+          "answer": "1 US-Flüssigunze = 29,5735 mL."
+        },
+        {
+          "question": "Câți fl oz sind 100 mL?",
+          "answer": "100 mL = 3,38 US fl oz. Das ist das TSA-Handgepäck-Flüssiglimit."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Da. Toate calculele se fac în browserul dvs."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "ml în fl oz – Arteon",
+      "defaultSubject": "Feedback: ml-to-fl-oz"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

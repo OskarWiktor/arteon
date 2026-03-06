@@ -2,7 +2,7 @@
   "toolKey": "base64ToImage",
   "locale": "el",
   "metadata": {
-    "title": "Μετατροπέας Base64 σε εικόνα — Base64 εικόνα",
+    "title": "Μετατροπέας Base64 σε εικόνα - Base64 εικόνα",
     "description": "Αποκωδικοποιήστε συμβολοσειρές Base64 σε εικόνες. Προεπισκόπηση και λήψη στον browser. Δωρεάν.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-base64-se-eikona"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Μετατροπή",
-          "text": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας."
+          "text": "Κάντε κλικ στο Μετατροπή - τα αρχεία επεξεργάζονται τοπικά στον browser σας."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε Base64 σε εικόνα;",
-      "html": "<p class=\"text-mid mb-4\">To BASE64 einai ena eyrytera chrisimopoioumeno format archeiou me megali symvatotita. Analoga me ti chrisi, i metatropi se IMAGE mporei na prosferei simantika pleonektimata — mikrotera archeia, kaliteri poiotita i eyriteri ypostirixi platformon.</p><p class=\"text-mid mb-4\">Aytos o dorean online metatropeas metatrepei ta archeia BASE64 se format IMAGE apeytheias ston browser. Kanena archeio den anevasei se server — oli i diadikasia ginetai topika sti syskevi sas.</p><p class=\"text-mid\">Metatrepste osa archeia thelete choris imerisia oria, choris eggraphi kai choris ydrografimatam. Syrete ta archeia, prosamoste tin poiotita kai katevaste ta apotelesmata.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το BASE64 είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε IMAGE μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία BASE64 σε format IMAGE απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "Base64 to εικόνα conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Μετατροπή",
-          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
+          "description": "Κάντε κλικ στο Μετατροπή - τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poso exoikonomeis metatrepontas BASE64 se IMAGE;",
-      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+      "title": "Πώς λειτουργεί η μετατροπή Base64 σε εικόνα;",
+      "html": "<p class=\"text-mid mb-4\">Η αποκωδικοποίηση Base64 είναι η αντίστροφη διαδικασία της κωδικοποίησης Base64 — μετατρέπει μια συμβολοσειρά κειμένου πίσω σε δυαδικά δεδομένα εικόνας. Ο μετατροπέας διαβάζει τη συμβολοσειρά Base64 (με ή χωρίς Data URI πρόθεμα), την αποκωδικοποιεί και αναδημιουργεί το αρχικό αρχείο εικόνας.</p><p class=\"text-mid mb-4\">Η Data URI πρόθεση (data:image/png;base64,) λέει στον μετατροπέα τη μορφή εικόνας. Αν λείπει, ο μετατροπέας αναγνωρίζει αυτόματα τη μορφή από τη δυαδική υπογραφή (magic bytes).</p><p class=\"text-mid\">Αυτό το εργαλείο είναι χρήσιμο όταν πρέπει να εξάγετε μια εικόνα από HTML, CSS, API απάντηση ή βάση δεδομένων που αποθηκεύει εικόνες ως Base64 συμβολοσειρές. Όλη η μετατροπή γίνεται τοπικά στον περιηγητή σας.</p>"
     },
     {
       "type": "gap",
@@ -138,29 +138,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Symvoules gia metatropi BASE64 se IMAGE",
-      "description": "Symvoules gia apofygi provlimaton:",
+      "title": "Συμβουλές για μετατροπή Base64 σε εικόνα",
+      "description": "Μερικές συμβουλές για την αποφυγή συνηθισμένων προβλημάτων:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Poly megala archeia",
-          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+          "title": "Data URI πρόθεμα",
+          "description": "Ο μετατροπέας δέχεται συμβολοσειρές Base64 με και χωρίς Data URI πρόθεμα. Αν υπάρχει πρόθεμα, χρησιμοποιείται για τη μορφή εξόδου."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Idi sympiesmena",
-          "description": "An to BASE64 itan idi sympiesmeno, i metatropi se IMAGE mporei na min exoikonomisi polla."
+          "icon": "RiCodeLine",
+          "title": "Μη έγκυροι χαρακτήρες",
+          "description": "Οι συμβολοσειρές Base64 επιτρέπουν μόνο A–Z, a–z, 0–9, +, / και = (συμπλήρωση). Κενά και αλλαγές γραμμής αφαιρούνται αυτόματα πριν την αποκωδικοποίηση."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Diafaneia",
-          "description": "To IMAGE den ypostirizei diafaneia. Oi diafaneis perioches ginontai lefkes. Skeftite PNG i WebP."
+          "icon": "RiFileImageLine",
+          "title": "Μορφή εξόδου",
+          "description": "Η αποκωδικοποιημένη εικόνα αποθηκεύεται στη μορφή που ορίζει το Data URI πρόθεμα. Χωρίς πρόθεμα, ο μετατροπέας αναγνωρίζει αυτόματα τη μορφή."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Kratiste ta prototypa",
-          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton BASE64 archeion."
+          "icon": "RiFileCodeLine",
+          "title": "Μεγάλες συμβολοσειρές",
+          "description": "Πολύ μεγάλες συμβολοσειρές Base64 (που αντιπροσωπεύουν μεγάλες εικόνες) μπορεί να πάρουν λίγο χρόνο για αποκωδικοποίηση. Ο μετατροπέας χειρίζεται οποιοδήποτε μήκος."
         }
       ]
     },
@@ -190,16 +190,16 @@
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
         },
         {
-          "question": "Einai asfalis i metatropi BASE64 se IMAGE;",
-          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+          "question": "Είναι ασφαλής η μετατροπή Base64 σε εικόνα;",
+          "answer": "Ναι. Η αποκωδικοποίηση γίνεται πλήρως τοπικά στον περιηγητή σας. Κανένα δεδομένο δεν αποστέλλεται σε διακομιστή."
         },
         {
-          "question": "Mporo na metatrepso polla archeia BASE64;",
-          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+          "question": "Ποιες μορφές εικόνας υποστηρίζονται;",
+          "answer": "Ο μετατροπέας μπορεί να αποκωδικοποιήσει συμβολοσειρές Base64 σε PNG, JPG, GIF, WebP, SVG, BMP και άλλες τυπικές μορφές. Η μορφή αναγνωρίζεται αυτόματα από το Data URI ή το δυαδικό περιεχόμενο."
         },
         {
-          "question": "Ypostirizoun oloi oi browsers to IMAGE;",
-          "answer": "To IMAGE ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
+          "question": "Πώς βρίσκω τη συμβολοσειρά Base64 μιας εικόνας;",
+          "answer": "Συμβολοσειρές Base64 εικόνων βρίσκονται σε HTML πηγαίο κώδικα (src attribute), αρχεία CSS (background-image), API απαντήσεις ή βάσεις δεδομένων. Αναζητήστε συμβολοσειρές που αρχίζουν με data:image/ ακολουθούμενο από base64,."
         }
       ]
     },

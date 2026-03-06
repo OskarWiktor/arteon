@@ -2,7 +2,7 @@
   "toolKey": "jsonToYaml",
   "locale": "ro",
   "metadata": {
-    "title": "Convertor JSON în YAML — JSON YAML",
+    "title": "Convertor JSON în YAML - JSON YAML",
     "description": "Convertește JSON în format YAML. Parsare și formatare automată. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-json-in-yaml"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "De ce să convertiți JSON în YAML?",
-      "html": "<p class=\"text-mid mb-4\">JSON este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in YAML poate oferi avantaje semnificative — fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele JSON in format YAML direct in browser. Niciun fisier nu este trimis la servere — intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON este un format larg utilizat cu compatibilitate mare. In functie de nevoie, conversia in YAML poate oferi avantaje semnificative - fisiere mai mici, calitate mai buna sau suport mai larg de platforme.</p><p class=\"text-mid mb-4\">Acest convertor online gratuit transforma fisierele JSON in format YAML direct in browser. Niciun fisier nu este trimis la servere - intregul proces are loc local pe dispozitivul tau.</p><p class=\"text-mid\">Converteste cate fisiere ai nevoie fara limite zilnice, fara inregistrare si fara filigran. Trage si plaseaza fisierele, ajusteaza calitatea si descarca rezultatele.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "JSON to YAML conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cat economisiti convertind JSON in YAML?",
-      "html": "<p class=\"text-mid mb-4\">Economiile depind de tipul fisierului si compresia originala:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto camera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagine produs</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Economiile reale variaza in functie de continut si setari.</p>"
+      "title": "Cum funcționează conversia din JSON în YAML?",
+      "html": "<p class=\"text-mid mb-4\">JSON și YAML reprezintă ambele date structurate, dar YAML folosește o sintaxă bazată pe indentare care este mai curată, fără acolade sau ghilimele în jurul cheilor. Convertorul analizează structura JSON și o formatează conform convențiilor YAML: indentare pentru imbricare, linioare pentru elementele array și două puncte pentru perechile cheie-valoare.</p><p class=\"text-mid mb-4\">De exemplu, un obiect JSON {\"nume\": \"Ion\", \"varsta\": 30} devine două rânduri YAML: nume: Ion și varsta: 30. Obiectele imbricate folosesc indentare mai adâncă, iar array-urile folosesc prefixul linioara-spațiu.</p><p class=\"text-mid\">YAML este utilizat pe scară largă pentru fișiere de configurare (Docker Compose, Kubernetes, GitHub Actions, Ansible) datorită lizibilității superioare. Conversia se face complet în browserul tău.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Sfaturi pentru conversia JSON in YAML",
-      "description": "Sfaturi pentru evitarea problemelor:",
+      "title": "Sfaturi pentru conversia din JSON în YAML",
+      "description": "Câteva sfaturi pentru a evita problemele comune:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Fisiere foarte mari",
-          "description": "Imaginile peste 4000×4000 px pot fi mai lente. Impartiti in loturi de 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Indentarea este esențială",
+          "description": "YAML folosește spații pentru indentare (nu tab-uri). Convertorul generează indentare consistentă de 2 spații."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Fisiere deja comprimate",
-          "description": "Daca JSON era deja comprimat, conversia in YAML poate nu economisi mult."
+          "title": "Ghilimele în șiruri",
+          "description": "YAML necesită ghilimele doar în jurul șirurilor care conțin caractere speciale (două puncte, diez, paranteze). Șirurile simple rămân fără ghilimele."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparenta",
-          "description": "YAML nu suporta transparenta. Zonele transparente devin albe. Luati in considerare PNG sau WebP."
+          "icon": "RiCodeLine",
+          "title": "Comentarii",
+          "description": "JSON nu suportă comentarii, deci nu există nimic de transferat. În YAML poți adăuga liber comentarii cu #."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Pastrati originalele",
-          "description": "Conversia cu pierderi e ireversibila. Pastrati copii ale fisierelor JSON."
+          "icon": "RiFileCodeLine",
+          "title": "Șiruri multi-linie",
+          "description": "Valorile text lungi cu întreruperi de linie sunt formatate în sintaxa bloc YAML (| sau >) pentru o lizibilitate mai bună."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Common YAML pitfalls to watch out for",
+      "html": "<p class=\"text-mid mb-4\">YAML is sensitive to formatting. Here are common issues when working with converted YAML:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Indentation</strong> – YAML uses spaces (not tabs) for structure. The converter uses 2-space indentation consistently.</li><li><strong>Special characters in strings</strong> – values containing colons, hashes, or brackets may need quoting. The converter handles this automatically.</li><li><strong>Boolean gotchas</strong> – YAML treats <code>yes</code>, <code>no</code>, <code>on</code>, <code>off</code> as booleans. If these appear as string values in JSON, the converter wraps them in quotes.</li><li><strong>Number precision</strong> – large numbers and floating-point values are preserved exactly as they appear in the JSON source.</li></ul><p class=\"text-mid mt-3\">The converter generates valid YAML that passes <code>yamllint</code> validation. If you encounter issues, check for mixed indentation or unquoted special characters.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Da, funcționează pe orice dispozitiv cu un browser web modern."
         },
         {
-          "question": "E sigura conversia JSON in YAML?",
-          "answer": "Da. Totul se face local in browser via Canvas API. Nimic nu e trimis la servere."
+          "question": "Este conversia din JSON în YAML sigură?",
+          "answer": "Da. Toată conversia se face local în browserul tău. Nicio dată nu este trimisă la vreun server."
         },
         {
-          "question": "Pot converti mai multe fisiere JSON?",
-          "answer": "Da. Conversie in lot fara limita. Trageti fisierele in convertor."
+          "question": "Pot folosi rezultatul YAML în Docker sau Kubernetes?",
+          "answer": "Da. Rezultatul este YAML standard, compatibil cu Docker Compose, manifeste Kubernetes, workflow-uri GitHub Actions, playbook-uri Ansible și toate instrumentele care citesc YAML."
         },
         {
-          "question": "YAML e suportat de toate browserele?",
-          "answer": "YAML e suportat de Chrome, Firefox, Safari, Edge si Opera."
+          "question": "Este conversia fără pierderi?",
+          "answer": "Da. Toate tipurile de date (șiruri, numere, booleene, null, array-uri, obiecte) sunt păstrate exact. YAML suportă aceleași tipuri de date ca JSON."
         }
       ]
     },

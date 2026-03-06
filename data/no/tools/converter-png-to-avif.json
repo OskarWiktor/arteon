@@ -102,6 +102,15 @@
       "variant": "line"
     },
     {
+      "type": "sectionInfo",
+      "title": "PNG vs AVIF – de viktigste forskjellene",
+      "html": "<div class=\"overflow-x-auto\"><table class=\"w-full text-sm\"><thead><tr class=\"border-b\"><th class=\"py-2 text-left\">Egenskap</th><th class=\"py-2 text-center\">PNG</th><th class=\"py-2 text-center\">AVIF</th></tr></thead><tbody><tr class=\"border-b\"><td class=\"py-2\">Komprimering</td><td class=\"py-2 text-center\">Tapsfri</td><td class=\"py-2 text-center\">Begge</td></tr><tr class=\"border-b\"><td class=\"py-2\">Gjennomsiktighet</td><td class=\"py-2 text-center\">Ja</td><td class=\"py-2 text-center\">Ja</td></tr><tr class=\"border-b\"><td class=\"py-2\">Animasjon</td><td class=\"py-2 text-center\">Nei</td><td class=\"py-2 text-center\">Ja</td></tr><tr><td class=\"py-2\">Nettleserstøtte</td><td class=\"py-2 text-center\">universell</td><td class=\"py-2 text-center\">Chrome 85+, Firefox 93+, Safari 16.4+</td></tr></tbody></table></div>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
       "type": "sectionSteps",
       "title": "Når bør du konvertere PNG til AVIF?",
       "grid": "two",
@@ -218,15 +227,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "png": "Alle nettlesere",
-            "avif": "Chrome 85+, Firefox 93+, Edge 85+, Safari 16.4+"
-          }
-        },
-        {
-          "name": "Fargedybde",
-          "values": {
-            "png": "8/16-bit",
-            "avif": "8/10/12-bit, HDR"
+            "png": true,
+            "avif": true
           }
         },
         {
@@ -243,8 +245,7 @@
             "avif": true
           }
         }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",

@@ -173,8 +173,8 @@
         {
           "name": "Nettleserstøtte",
           "values": {
-            "svg": "Alle nettlesere",
-            "pdf": "Innebygd PDF-visning"
+            "svg": true,
+            "pdf": false
           }
         },
         {
@@ -191,8 +191,7 @@
             "pdf": false
           }
         }
-      ],
-      "featureLabel": "Funksjon"
+      ]
     },
     {
       "type": "gap",
@@ -247,6 +246,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How SVG to PDF conversion preserves vector quality",
+      "html": "<p class=\"text-mid mb-4\">SVG and PDF are both capable of storing vector data. When converting SVG to PDF, the vector paths, curves, and shapes are preserved — the output scales to any size without pixelation, just like the original SVG.</p><p class=\"text-mid mb-4\">This makes SVG to PDF conversion ideal for logos, brand assets, technical diagrams, and any graphics that need to be printed at various sizes. The PDF output is print-ready with sharp edges at any resolution.</p><p class=\"text-mid\">Text in SVG may be converted to outlines (paths) in the PDF output, ensuring correct rendering regardless of available fonts on the viewer’s system.</p>"
     },
     {
       "type": "faq",

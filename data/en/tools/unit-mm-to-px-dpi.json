@@ -1,0 +1,281 @@
+﻿{
+  "toolKey": "mmToPxDpi",
+  "locale": "en",
+  "metadata": {
+    "title": "MM to pixels (DPI) converter",
+    "description": "Convert millimeters to pixels at any DPI resolution. Essential for print design, packaging, and precise graphic work.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/mm-to-px-converter"
+  },
+  "hero": {
+    "title": "Convert MM to pixels",
+    "description": "Convert millimeters to pixels at your chosen DPI. Enter dimensions and DPI to get the pixel count instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/mm-to-px-converter",
+      "label": "mm to px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "MM to pixels (DPI) converter",
+      "alternateName": ["MM to pixel calculator", "Millimeter to pixel converter", "Print resolution calculator"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert millimeters to pixels at any DPI resolution. Essential for print design, packaging, and precise graphic work.",
+      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the mm to px converter",
+      "description": "Instructions: mm to pixels at DPI.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter dimensions",
+          "text": "Type a value in millimeters."
+        },
+        {
+          "name": "Set DPI",
+          "text": "Choose your target DPI resolution."
+        },
+        {
+          "name": "Read pixels",
+          "text": "The pixel count appears instantly."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert mm to pixels?",
+      "html": "<p class=\"text-mid mb-4\">In precision design work, dimensions are often specified in millimeters. To prepare digital images, you need to convert mm to pixels at the target DPI: pixels = mm × DPI / 25.4.</p><p class=\"text-mid mb-4\">This conversion is essential for packaging design, label printing, product photography, and any work requiring precise mm-to-pixel mapping.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 mm = 11.81 pixels, 85 mm (business card width) = 1,004 pixels.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "MM to pixels (DPI) converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Poligrafia",
+          "description": "Wizytówka 85 × 55 mm = 1 004 × 650 px przy 300 DPI."
+        },
+        {
+          "icon": "RiFileTextLine",
+          "title": "Ulotki",
+          "description": "Ulotka DL 99 × 210 mm = 1 169 × 2 480 px przy 300 DPI."
+        },
+        {
+          "icon": "RiCropLine",
+          "title": "Spady (bleed)",
+          "description": "Oblicz dodatkowe piksele na 3–5 mm spadów wymaganych przez drukarnię."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Projektowanie opakowaniach",
+          "description": "Precyzyjne wymiary etykiet, naklejek i opakowaniach w mm → px."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does mm to pixel conversion work?",
+      "html": "<p class=\"text-mid mb-4\">The formula is: pixels = mm × DPI / 25.4. Since 1 inch = 25.4 mm exactly.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 mm = 11.811 pixels. At 600 DPI: 1 mm = 23.622 pixels.</p><p class=\"text-mid\">For bleed area: add 3 mm (standard) to each edge. A 100 × 50 mm design with 3 mm bleed = 106 × 56 mm = 1,252 × 661 px at 300 DPI.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Business card: 85 × 55 mm + 3 mm bleed = 91 × 61 mm = 1,075 × 720 px at 300 DPI.</li><li>Standard label: 50 × 25 mm at 300 DPI = 591 × 295 px.</li><li>Wine label: 90 × 120 mm at 300 DPI = 1,063 × 1,417 px.</li><li>Minimum text: 8pt font needs at least 150 DPI to be readable.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "MM to pixels at various DPI",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "300 DPI"
+        },
+        {
+          "id": "unit2",
+          "name": "600 DPI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "1 mm",
+          "values": {
+            "unit1": "11.81 px",
+            "unit2": "23.62 px"
+          }
+        },
+        {
+          "name": "10 mm",
+          "values": {
+            "unit1": "118 px",
+            "unit2": "236 px"
+          }
+        },
+        {
+          "name": "85 mm (card)",
+          "values": {
+            "unit1": "1,004 px",
+            "unit2": "2,008 px"
+          }
+        },
+        {
+          "name": "Use case",
+          "values": {
+            "unit1": "Standard print",
+            "unit2": "Fine art / medical"
+          }
+        },
+        {
+          "name": "File size",
+          "values": {
+            "unit1": "Standard",
+            "unit2": "4× larger"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many pixels is 1 mm at 300 DPI?",
+          "answer": "1 mm at 300 DPI = 11.811 pixels. Formula: mm × 300 / 25.4."
+        },
+        {
+          "question": "What is bleed and how do I calculate it?",
+          "answer": "Bleed is extra area (typically 3 mm) beyond the trim edge to prevent white borders. Add 3 mm to each edge and convert to pixels."
+        },
+        {
+          "question": "What DPI for business cards?",
+          "answer": "300 DPI minimum. Some printers request 600 DPI for small text and fine details."
+        },
+        {
+          "question": "Are calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "mm na px – Arteon",
+      "defaultSubject": "Feedback: mm-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

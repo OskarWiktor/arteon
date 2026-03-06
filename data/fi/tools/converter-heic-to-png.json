@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "HEIC PNG -muunnin – HEIC PNG",
-    "description": "Muunna iPhone HEIC-valokuvat haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
+    "description": "Muunna iPhone HEIC-valokuvat häviöttömään PNG-muotoon. Täysi laatu ja läpinäkyvyys. Ilmainen selaintyökalu - ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/heic-png-muunnin"
   },
   "hero": {
     "title": "HEIC PNG -muunnin",
-    "description": "Muunna iPhone HEIC-valokuvat haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
+    "description": "Muunna iPhone HEIC-valokuvat häviöttömään PNG-muotoon. Täysi laatu ja läpinäkyvyys. Ilmainen selaintyökalu - ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -27,13 +27,13 @@
       "name": "HEIC PNG -muunnin",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna iPhone HEIC-valokuvat haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys. Ilmainen selaintyökalu — ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
+      "description": "Muunna iPhone HEIC-valokuvat häviöttömään PNG-muotoon. Täysi laatu ja läpinäkyvyys. Ilmainen selaintyökalu - ilman rekisteröitymistä, ilman tiedostorajoituksia, täysi yksityisyys.",
       "featureList": ["HEIC to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Muunna HEIC PNG-muotoon", "HEIC:n muunto PNG-muotoon", "Ilmainen HEIC–PNG-muunnin"]
     },
     "howTo": {
       "name": "HEIC to PNG",
-      "description": "Muunna iPhone HEIC-valokuvat haviottomaan PNG-muotoon. Taysi laatu ja lapinakyvyys.",
+      "description": "Muunna iPhone HEIC-valokuvat häviöttömään PNG-muotoon. Täysi laatu ja läpinäkyvyys.",
       "steps": [
         {
           "name": "Add HEIC files",
@@ -245,7 +245,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten kuvamuunnos vaikuttaa nopeuteen ja SEO:hon",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman nakyvam elementin nayttamiseen.</p><p class=\"text-mid mb-4\">HEIC-kuvien muuntaminen PNG-muotoon pienentaa tiedostokokoa, lyhentaa latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman näkyvän elementin näyttämiseen.</p><p class=\"text-mid mb-4\">HEIC-kuvien muuntaminen PNG-muotoon pienentää tiedostokokoa, lyhentää latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
     },
     {
       "type": "gap",
@@ -254,34 +254,52 @@
     {
       "type": "sectionSteps",
       "title": "Vinkkeja HEIC-PNG-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "description": "Vinkkeja yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
+          "title": "Erittäin suuret tiedostot",
           "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Jo pakatut",
-          "description": "Jos HEIC oli jo voimakkaasti pakattu, muunnos PNG-muotoon ei valttamatta saasta paljon."
+          "description": "Jos HEIC oli jo voimakkaasti pakattu, muunnos PNG-muotoon ei välttämättä säästä paljon."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "PNG tukee alfakanavaa. HEIC:n lapinakyyt alueet sailyvat."
+          "title": "Läpinäkyvyys",
+          "description": "PNG tukee alfakanavaa. HEIC:n läpinäkyvät alueet säilyvät."
         },
         {
           "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot HEIC-tiedostoista."
+          "title": "Säilytä alkuperäiset",
+          "description": "Häviöllinen muunnos on peruuttamaton. Säilytä kopiot HEIC-tiedostoista."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What to expect when converting HEIC to PNG?",
+      "html": "<p class=\"text-mid mb-4\">HEIC uses lossy HEVC compression while PNG is a lossless format. The conversion decodes the HEIC data and saves every pixel exactly as-is in PNG. No additional quality loss occurs during conversion.</p><p class=\"text-mid mb-4\">PNG files will be significantly larger than the original HEIC — a 2 MB HEIC photo may become 8–15 MB in PNG. This is expected because PNG stores all pixel data without lossy compression.</p><p class=\"text-mid\">If file size is a concern, consider converting to JPG (lossy, much smaller) or WebP (modern, smaller than both) instead. PNG is the right choice when you need lossless quality and universal compatibility.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "HEIC to PNG – typical file sizes",
+      "html": "<p class=\"text-mid mb-4\">PNG files are larger than HEIC because PNG uses lossless compression while HEIC uses lossy HEVC:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (12 MP)</p><p class=\"text-light text-sm\">HEIC: 2.1 MB → PNG: 12 MB</p><p class=\"text-light mt-1 text-sm\">6× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">HEIC: 800 KB → PNG: 2.5 MB</p><p class=\"text-light mt-1 text-sm\">3× larger (lossless)</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (48 MP)</p><p class=\"text-light text-sm\">HEIC: 5 MB → PNG: 35 MB</p><p class=\"text-light mt-1 text-sm\">7× larger (lossless)</p></div></div><p class=\"text-light mt-4 text-sm\">The size increase is expected. PNG prioritizes quality and compatibility over file size. Use JPG or WebP if smaller files are needed.</p>"
     },
     {
       "type": "faq",
@@ -310,11 +328,11 @@
         },
         {
           "question": "Onko HEIC PNG muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "answer": "Kyllä. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitään ei lähetetä palvelimille."
         },
         {
           "question": "Voinko muuntaa useita HEIC-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "answer": "Kyllä. Erämuunnos ilman rajaa. Vedä tiedostot muuntimeen."
         },
         {
           "question": "Tukevatko kaikki selaimet PNG-muotoa?",

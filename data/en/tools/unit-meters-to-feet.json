@@ -1,0 +1,289 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "en",
+  "metadata": {
+    "title": "Meters to feet converter",
+    "description": "Convert meters to feet and vice versa. Essential for height, construction, aviation, and international measurements.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/meters-to-feet-converter"
+  },
+  "hero": {
+    "title": "Convert meters to feet",
+    "description": "This converter converts meters to feet and vice versa. Enter a value and the result appears instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/meters-to-feet-converter",
+      "label": "m to ft"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Meters to feet converter",
+      "alternateName": ["Meter to foot calculator", "m to ft converter", "Height converter"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert meters to feet and vice versa. Essential for height, construction, aviation, and international measurements.",
+      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the meters to feet converter",
+      "description": "Instructions: meters to feet.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter length",
+          "text": "Type a length in meters."
+        },
+        {
+          "name": "Read the result",
+          "text": "The result in feet appears instantly."
+        },
+        {
+          "name": "Copy or reverse",
+          "text": "Click Copy or Reverse to convert feet to meters."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert meters to feet?",
+      "html": "<p class=\"text-mid mb-4\">Meter (m) is the base unit of length in the metric system. Foot (ft) is the standard length unit in the imperial system. The conversion factor is: 1 m = 3.28084 feet, or 1 foot = 0.3048 m exactly.</p><p class=\"text-mid mb-4\">Converting meters to feet is essential for height (US medical forms use feet/inches), construction and real estate (US property dimensions), aviation (altitude in feet), and sports (field dimensions).</p><p class=\"text-mid mb-4\">Height examples: 1.70 m = 5'7″, 1.80 m = 5'11″, 1.90 m = 6'3″. Room height: 2.5 m = 8.2 ft.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Meters to feet converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuildingLine",
+          "title": "Budownictwo",
+          "description": "Amerykańskie projekty budowlane podają wymiary pomieszczeń i działek w stopach."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Lotnictwo",
+          "description": "Wysokość lotu podaje się w stopach: 30 000 ft = 9 144 m."
+        },
+        {
+          "icon": "RiBodyScanLine",
+          "title": "Wzrost",
+          "description": "Przelicz swój wzrost na stopy i cale przy wypełnianiu formularzy za granicą."
+        },
+        {
+          "icon": "RiMountainLine",
+          "title": "Geografia",
+          "description": "Wysokości szczytów górskich często podaje się w stopach: Everest = 29 032 ft."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does meters to feet conversion work?",
+      "html": "<p class=\"text-mid mb-4\">The international foot is defined as exactly 0.3048 meters. Therefore, 1 meter = 1/0.3048 = 3.28084 feet.</p><p class=\"text-mid mb-4\">To convert meters to feet, multiply by 3.28084. To convert feet to meters, multiply by 0.3048.</p><p class=\"text-mid\">To convert to feet and inches: multiply meters by 3.28084, take the whole number as feet, multiply the decimal by 12 for inches. Example: 1.75 m = 5.741 ft = 5 ft 8.9 in ≈ 5'9″.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Height: 1.60 m = 5'3″, 1.70 m = 5'7″, 1.80 m = 5'11″, 1.90 m = 6'3″, 2.00 m = 6'7″.</li><li>Room: ceiling height 2.4 m = 7.9 ft, 2.7 m = 8.9 ft, 3.0 m = 9.8 ft.</li><li>1 yard = 3 feet = 0.9144 m. 1 fathom = 6 feet = 1.8288 m.</li><li>Mount Everest: 8,849 m = 29,032 ft. Burj Khalifa: 828 m = 2,717 ft.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Meter (m) vs Foot (ft) – comparison",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Meter (m)"
+        },
+        {
+          "id": "unit2",
+          "name": "Foot (ft)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metric (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Base value",
+          "values": {
+            "unit1": "SI base unit",
+            "unit2": "0.3048 m"
+          }
+        },
+        {
+          "name": "Height",
+          "values": {
+            "unit1": "International (m)",
+            "unit2": "USA (ft/in)"
+          }
+        },
+        {
+          "name": "Aviation",
+          "values": {
+            "unit1": "Used for runway length",
+            "unit2": "Altitude standard"
+          }
+        },
+        {
+          "name": "Real estate",
+          "values": {
+            "unit1": "International (m²)",
+            "unit2": "USA (ft²)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many feet is 1 meter?",
+          "answer": "1 meter = 3.28084 feet. Approximately 1 meter is a bit more than 3 feet 3 inches."
+        },
+        {
+          "question": "How do I convert meters to feet and inches?",
+          "answer": "Multiply meters by 3.28084. The whole number is feet. Multiply the decimal by 12 for inches. Example: 1.80 m = 5.906 ft = 5 ft 10.87 in ≈ 5'11″."
+        },
+        {
+          "question": "What is 6 feet in meters?",
+          "answer": "6 feet = 1.8288 meters. This is a common height conversion for US medical forms."
+        },
+        {
+          "question": "How tall is 1.80 m in feet?",
+          "answer": "1.80 m = 5 feet 10.87 inches, commonly rounded to 5'11″."
+        },
+        {
+          "question": "Why does aviation use feet?",
+          "answer": "The International Civil Aviation Organization (ICAO) standardized altitude in feet for global consistency. Most countries use feet for altitude even if they use metric otherwise."
+        },
+        {
+          "question": "Are calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "m na stopy – Arteon",
+      "defaultSubject": "Feedback: meters-to-feet"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

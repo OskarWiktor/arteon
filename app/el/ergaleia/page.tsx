@@ -43,7 +43,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Δωρεάν online εργαλεία — μετατροπείς εικόνων, SEO, χρώματα, favicon',
+  name: 'Δωρεάν online εργαλεία - μετατροπείς εικόνων, SEO, χρώματα, favicon',
   description:
     '22 δωρεάν online εργαλεία: 12 μετατροπείς εικόνων (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), δημιουργία favicon, επεξεργασία εικόνας, μετρητής κειμένου, παλέτες χρωμάτων και κωδικοί QR. Χωρίς εγγραφή.',
   url: toAbsoluteUrl('/el/ergaleia'),
@@ -626,6 +626,23 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Γεννήτρια Lorem Ipsum',
+              topImageAlt: 'Γεννήτρια Lorem Ipsum Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/gennitra-lorem-ipsum-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Δημιουργήστε κείμενο πλήρωσης σε 8 στυλ και 9 λειτουργίες. Lorem Ipsum, Hipster, Business, Bacon και άλλα. Αντιγράψτε ως κείμενο ή HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/gennitra-lorem-ipsum">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
         <Gap size="sm" />
@@ -739,7 +756,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Μετατροπείς μορφών εικόνας"
-          description="12 online μετατροπείς εικόνων — μετατρέψτε μεταξύ JPG, PNG, WebP, SVG, BMP και GIF. Μετατροπή στο πρόγραμμα περιήγησης, χωρίς αποστολή αρχείων."
+          description="12 online μετατροπείς εικόνων - μετατρέψτε μεταξύ JPG, PNG, WebP, SVG, BMP και GIF. Μετατροπή στο πρόγραμμα περιήγησης, χωρίς αποστολή αρχείων."
           grid="three"
           items={[
             {
@@ -838,16 +855,25 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Μετατροπείς δεδομένων"
+          description="Online μετατροπείς μορφών δεδομένων — μετατρέψτε μεταξύ CSV, JSON, XML, YAML, Markdown και HTML. Επεξεργασία στο πρόγραμμα περιήγησης."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Μετατροπέας SVG σε PNG',
-              topImageAlt: 'Μετατροπέας SVG σε PNG Arteon',
+              title: 'CSV σε JSON',
+              topImageAlt: 'CSV σε JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε διανυσματικά SVG σε PNG. Ιδανικό για έγγραφα και κοινωνικά δίκτυα.</p>
+                  <p>Μετατρέψτε CSV σε μορφή JSON. Αυτόματη ανίχνευση διαχωριστικών και μορφοποίηση.</p>
                   <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-svg-se-png">
+                    <Button arrow link="/el/ergaleia/metatropeas-csv-se-json">
                       Άνοιγμα εργαλείου
                     </Button>
                   </div>
@@ -856,14 +882,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Μετατροπέας SVG σε JPG',
-              topImageAlt: 'Μετατροπέας SVG σε JPG Arteon',
+              title: 'JSON σε CSV',
+              topImageAlt: 'JSON σε CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε γραφικά SVG σε συμπαγές JPG. Μικρότερο αρχείο, πλήρης συμβατότητα.</p>
+                  <p>Μετατρέψτε δεδομένα JSON σε μορφή CSV. Επεξεργασία στο πρόγραμμα περιήγησης.</p>
                   <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-svg-se-jpg">
+                    <Button arrow link="/el/ergaleia/metatropeas-json-se-csv">
                       Άνοιγμα εργαλείου
                     </Button>
                   </div>
@@ -872,14 +898,62 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Μετατροπέας BMP σε JPG',
-              topImageAlt: 'Μετατροπέας BMP σε JPG Arteon',
+              title: 'XML σε JSON',
+              topImageAlt: 'XML σε JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Μετατρέψτε αρχεία BMP σε ελαφρύ JPG. Δραστική μείωση μεγέθους.</p>
+                  <p>Μετατρέψτε δεδομένα XML σε JSON. Μετατροπή στο πρόγραμμα περιήγησης με επικύρωση.</p>
                   <div className="mt-4">
-                    <Button arrow link="/el/ergaleia/metatropeas-bmp-se-jpg">
+                    <Button arrow link="/el/ergaleia/metatropeas-xml-se-json">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON σε XML',
+              topImageAlt: 'JSON σε XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε δεδομένα JSON σε έγκυρο XML. Μετατροπή με μορφοποίηση.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-json-se-xml">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML σε JSON',
+              topImageAlt: 'YAML σε JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε τη διαμόρφωση YAML σε JSON. Επικύρωση και μορφοποίηση.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-yaml-se-json">
+                      Άνοιγμα εργαλείου
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON σε YAML',
+              topImageAlt: 'JSON σε YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Μετατρέψτε δεδομένα JSON σε αναγνώσιμο YAML. Επεξεργασία στο πρόγραμμα περιήγησης.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/el/ergaleia/metatropeas-json-se-yaml">
                       Άνοιγμα εργαλείου
                     </Button>
                   </div>
@@ -918,6 +992,7 @@ export default function ToolsIndexPage() {
             { icon: <RiGlobalLine className="h-6 w-6" />, title: 'Διαθέσιμα στα Ελληνικά', description: 'Όλα τα εργαλεία είναι διαθέσιμα στα ελληνικά – διεπαφή, οδηγίες και ειδοποιήσεις.' },
           ]}
         />
+
         <Gap variant="line" />
         <FaqPanels items={faqItems} title="Συχνές ερωτήσεις σχετικά με τα εργαλεία μας" />
         <Gap size="sm" />

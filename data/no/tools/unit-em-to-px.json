@@ -1,0 +1,277 @@
+{
+  "toolKey": "emToPx",
+  "locale": "no",
+  "metadata": {
+    "title": "Em til px – kalkulator",
+    "description": "Regn om CSS em til piksler og omvendt.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/no/verktoy/em-til-px-kalkulator"
+  },
+  "hero": {
+    "title": "Em til px",
+    "description": "Denne kalkulatoren regner om umiddelbart. Skriv inn en verdi og resultatet vises med en gang.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/no/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/no/verktoy/em-til-px-kalkulator",
+      "label": "em til px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Em til px – kalkulator",
+      "alternateName": ["Em til px"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Regn om CSS em til piksler og omvendt.",
+      "featureList": ["Toveis-konvertering i sanntid", "Alle kalkulatorer samlet på ett sted", "Kopier resultat til utklippstavle", "Lokal beregning i nettleseren"]
+    },
+    "howTo": {
+      "name": "Slik bruker du kalkulatoren",
+      "description": "Hurtigguide for bruk av kalkulatoren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Skriv inn verdi",
+          "text": "Skriv inn et tall i inputfeltet til venstre."
+        },
+        {
+          "name": "Les av resultatet",
+          "text": "Konverteringsresultatet vises umiddelbart i feltet ved siden av."
+        },
+        {
+          "name": "Kopier eller snu",
+          "text": "Klikk på Kopier resultat eller på Snu for å konvertere i motsatt retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Når bør man omregne em til piksler?",
+      "html": "<p class=\"text-mid mb-4\">CSS-enheten em er relativ til foreldreelementets skriftstørrelse. Ved standard 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">I motsetning til rem (relativ til rot) kaskaderer em: 1,5em × 1,5em = 2,25× basisstørrelsen.</p><p class=\"text-mid\">Alle beregninger kjører lokalt i nettleseren din.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "EM to pixels converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruker du omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Skriv inn en verdi",
+          "description": "Tast inn et tall i inntastingsfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Les resultatet",
+          "description": "Resultatet vises umiddelbart.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopier eller bytt",
+          "description": "Kopier resultatet eller bytt omregningsretning.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Når er denne kalkulatoren nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTextSpacing",
+          "title": "Webutvikling",
+          "description": "Omregn em til px for å forstå reelle størrelser."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Typografi",
+          "description": "body 1em = 16px, h1 2,5em = 40px."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Responsiv design",
+          "description": "em for breakpoints og mellomrom."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webutvikling",
+          "description": "em respekterer brukerens skriftinnstillinger."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne omregneren spesiell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Full personvern",
+          "description": "Alle beregninger kjører lokalt i nettleseren din."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Sanntidsresultater",
+          "description": "Resultatet oppdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Toveis omregning",
+          "description": "Omregn begge veier med ett klikk."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referansetabell",
+          "description": "Tabell med vanlige verdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">px = em × forelderens skriftstørrelse. Standard: 16px.</p><p class=\"text-mid\">Em kaskaderer: body 16px, div 1,5em (24px), p inne i den ved 1,5em = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">px = em × forelderens skriftstørrelse. Standard: 16px.</p><p class=\"text-mid\">Em kaskaderer: body 16px, div 1,5em (24px), p inne i den ved 1,5em = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "em vs px vs rem",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "em"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Referanse",
+          "values": {
+            "unit1": "Foreldrens skrift",
+            "unit2": "Fast piksel"
+          }
+        },
+        {
+          "name": "Kaskaderer",
+          "values": {
+            "unit1": "Ja",
+            "unit2": "Nei"
+          }
+        },
+        {
+          "name": "Responsiv",
+          "values": {
+            "unit1": "Ja",
+            "unit2": "Nei"
+          }
+        },
+        {
+          "name": "Tilgjengelighet",
+          "values": {
+            "unit1": "Respekterer innstillinger",
+            "unit2": "Fast størrelse"
+          }
+        },
+        {
+          "name": "Forutsigbarhet",
+          "values": {
+            "unit1": "Kontekstavhengig",
+            "unit2": "Alltid konstant"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange px er 1em?",
+          "answer": "Standard 1em = 16px. Men em er relativ til foreldreelementet."
+        },
+        {
+          "question": "Hva er forskjellen mellom em og rem?",
+          "answer": "em refererer til foreldren, rem til roten (html). rem er mer forutsigbar."
+        },
+        {
+          "question": "Kjører beregningene lokalt?",
+          "answer": "Ja. Alle beregninger kjører i nettleseren din."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Skriv til oss – vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "em til px – Arteon",
+      "defaultSubject": "Tilbakemelding: em-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

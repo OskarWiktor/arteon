@@ -1,0 +1,205 @@
+# Arteon Agency — Full Tool Documentation
+
+> Arteon Agency is a web development, design, and marketing agency based in Poland. We provide 74 free browser-based tools for designers, developers, marketers, and content creators. All tools process data locally in the browser — no files are uploaded to any server. No registration required.
+
+- Website: https://www.arteonagency.pl
+- Contact: kontakt@arteonagency.pl
+- Summary: https://www.arteonagency.pl/llms.txt
+
+## Services
+
+Arteon Agency offers professional services in:
+- **Web development** — custom websites built with Next.js and WordPress
+- **E-commerce** — online stores with payment integration
+- **Graphic design** — logos, brand identity, print materials, social media templates
+- **SEO & marketing** — search engine optimization, content marketing, audits
+- **Content creation** — copywriting, blog articles, product descriptions
+
+## Design & Media Tools
+
+### Online Image Editor
+- URL: https://www.arteonagency.pl/en/tools/online-image-editor
+- Resize, crop, and convert images for Instagram, Facebook, LinkedIn, and websites.
+- Features: ready-made templates for social media platforms, 3 crop shapes (rectangle, square, circle), custom dimensions, zoom and position control, export to JPG/PNG/WebP.
+- Use cases: preparing social media posts, creating OG images, resizing photos for web.
+
+### Favicon Generator
+- URL: https://www.arteonagency.pl/en/tools/free-favicon-generator
+- Generate favicon.ico and a complete set of PNG icons from a single image.
+- Features: favicon.ico (16x16, 32x32, 48x48), PNG icons (192x192, 512x512), Apple Touch Icon (180x180), ready HTML meta tags, Lighthouse-compliant output.
+- Use cases: adding favicon to a new website, updating brand icons, PWA icon generation.
+
+### Email Signature Generator
+- URL: https://www.arteonagency.pl/en/tools/free-email-signature-generator
+- Create a professional HTML email signature with custom layout, colors, and social links.
+- Features: 8 layouts, customizable colors and fonts, 12 social media platforms, CTA button, profile photo and company logo, disclaimer field, export/import settings.
+- Use cases: creating consistent team signatures, personal branding, professional email communication.
+
+### QR Code Generator
+- URL: https://www.arteonagency.pl/en/tools/free-qr-code-generator
+- Generate QR codes for URLs, vCards, text, email, and phone numbers.
+- Features: 5 content types, customizable colors, adjustable size, 4 error correction levels, PNG and SVG export.
+- Use cases: business cards, marketing materials, restaurant menus, event tickets.
+
+### Color Palette Generator
+- URL: https://www.arteonagency.pl/en/tools/color-palette-generator
+- Generate 9 harmonious color palettes from a single base color.
+- Features: monochromatic, complementary, triadic, analogous, split-complementary palettes, HEX/RGB/HSL output, one-click copy.
+- Use cases: brand color selection, web design, UI design, graphic design projects.
+
+### Image Color Extractor
+- URL: https://www.arteonagency.pl/en/tools/image-color-extractor
+- Extract up to 12 dominant colors from any uploaded image.
+- Features: HEX/RGB/HSL color codes, one-click copy, supports JPG/PNG/WebP input.
+- Use cases: extracting brand colors from logos, color matching, design inspiration.
+
+### Color Contrast Checker (WCAG 2.1)
+- URL: https://www.arteonagency.pl/en/tools/color-contrast-checker
+- Check if text and background colors meet WCAG 2.1 accessibility standards.
+- Features: real-time contrast ratio calculation, AA/AAA pass/fail indicators, color picker, hex/RGB input, live text preview.
+- Use cases: accessibility audits, ensuring readable text, WCAG compliance checks.
+
+## SEO & Text Tools
+
+### Word & Character Counter
+- URL: https://www.arteonagency.pl/en/tools/word-and-character-counter
+- Count words, characters, sentences, paragraphs, unique words, and estimate reading time.
+- Features: word count, character count (with/without spaces), paragraph count, reading time, text length evaluation for 6 page types, letter case conversion, line sorting, duplicate removal.
+- Use cases: checking blog post length, SEO content optimization, academic writing requirements.
+
+### Meta Title & Description Checker
+- URL: https://www.arteonagency.pl/en/tools/meta-title-description-length-checker
+- Check meta title and description length with Google SERP preview.
+- Features: character counter, word counter, pixel width validation, desktop and mobile SERP preview, real-time feedback on SEO best practices.
+- Use cases: optimizing meta tags for search engines, avoiding truncated titles in SERPs.
+
+### Lorem Ipsum Generator
+- URL: https://www.arteonagency.pl/en/tools/lorem-ipsum-generator
+- Generate placeholder text in 8 styles with 9 output modes.
+- Features: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal, English filler styles; paragraphs, sentences, words, lists, headings, links, tables, blockquotes, definitions modes.
+- Use cases: website mockups, design templates, presentation placeholders.
+
+## Image Converters
+
+All image converters share these features: batch processing, browser-based conversion (no server uploads), quality control, ZIP download for multiple files, drag-and-drop interface.
+
+### JPG Converters
+- JPG to WebP: https://www.arteonagency.pl/en/tools/jpg-to-webp-converter
+- JPG to PNG: https://www.arteonagency.pl/en/tools/jpg-to-png-converter
+- JPG to AVIF: https://www.arteonagency.pl/en/tools/jpg-to-avif-converter
+- JPG to GIF: https://www.arteonagency.pl/en/tools/jpg-to-gif-converter
+- JPG to TIFF: https://www.arteonagency.pl/en/tools/jpg-to-tiff-converter
+- JPG to PDF: https://www.arteonagency.pl/en/tools/jpg-to-pdf-converter
+
+### PNG Converters
+- PNG to JPG: https://www.arteonagency.pl/en/tools/png-to-jpg-converter
+- PNG to WebP: https://www.arteonagency.pl/en/tools/png-to-webp-converter
+- PNG to AVIF: https://www.arteonagency.pl/en/tools/png-to-avif-converter
+- PNG to GIF: https://www.arteonagency.pl/en/tools/png-to-gif-converter
+- PNG to TIFF: https://www.arteonagency.pl/en/tools/png-to-tiff-converter
+- PNG to PDF: https://www.arteonagency.pl/en/tools/png-to-pdf-converter
+
+### WebP Converters
+- WebP to JPG: https://www.arteonagency.pl/en/tools/webp-to-jpg-converter
+- WebP to PNG: https://www.arteonagency.pl/en/tools/webp-to-png-converter
+- WebP to AVIF: https://www.arteonagency.pl/en/tools/webp-to-avif-converter
+- WebP to GIF: https://www.arteonagency.pl/en/tools/webp-to-gif-converter
+- WebP to TIFF: https://www.arteonagency.pl/en/tools/webp-to-tiff-converter
+- WebP to PDF: https://www.arteonagency.pl/en/tools/webp-to-pdf-converter
+
+### AVIF Converters
+- AVIF to JPG: https://www.arteonagency.pl/en/tools/avif-to-jpg-converter
+- AVIF to PNG: https://www.arteonagency.pl/en/tools/avif-to-png-converter
+- AVIF to WebP: https://www.arteonagency.pl/en/tools/avif-to-webp-converter
+- AVIF to TIFF: https://www.arteonagency.pl/en/tools/avif-to-tiff-converter
+
+### HEIC Converters (Apple photos)
+- HEIC to JPG: https://www.arteonagency.pl/en/tools/heic-to-jpg-converter
+- HEIC to PNG: https://www.arteonagency.pl/en/tools/heic-to-png-converter
+- HEIC to WebP: https://www.arteonagency.pl/en/tools/heic-to-webp-converter
+- HEIC to AVIF: https://www.arteonagency.pl/en/tools/heic-to-avif-converter
+- HEIC to TIFF: https://www.arteonagency.pl/en/tools/heic-to-tiff-converter
+- HEIC to PDF: https://www.arteonagency.pl/en/tools/heic-to-pdf-converter
+
+### TIFF Converters
+- TIFF to JPG: https://www.arteonagency.pl/en/tools/tiff-to-jpg-converter
+- TIFF to PNG: https://www.arteonagency.pl/en/tools/tiff-to-png-converter
+- TIFF to WebP: https://www.arteonagency.pl/en/tools/tiff-to-webp-converter
+- TIFF to AVIF: https://www.arteonagency.pl/en/tools/tiff-to-avif-converter
+- TIFF to PDF: https://www.arteonagency.pl/en/tools/tiff-to-pdf-converter
+
+### SVG Converters
+- SVG to PNG: https://www.arteonagency.pl/en/tools/svg-to-png-converter
+- SVG to JPG: https://www.arteonagency.pl/en/tools/svg-to-jpg-converter
+- SVG to WebP: https://www.arteonagency.pl/en/tools/svg-to-webp-converter
+- SVG to AVIF: https://www.arteonagency.pl/en/tools/svg-to-avif-converter
+- SVG to GIF: https://www.arteonagency.pl/en/tools/svg-to-gif-converter
+- SVG to TIFF: https://www.arteonagency.pl/en/tools/svg-to-tiff-converter
+- SVG to PDF: https://www.arteonagency.pl/en/tools/svg-to-pdf-converter
+
+### BMP Converters
+- BMP to JPG: https://www.arteonagency.pl/en/tools/bmp-to-jpg-converter
+- BMP to PNG: https://www.arteonagency.pl/en/tools/bmp-to-png-converter
+- BMP to WebP: https://www.arteonagency.pl/en/tools/bmp-to-webp-converter
+- BMP to AVIF: https://www.arteonagency.pl/en/tools/bmp-to-avif-converter
+- BMP to GIF: https://www.arteonagency.pl/en/tools/bmp-to-gif-converter
+- BMP to TIFF: https://www.arteonagency.pl/en/tools/bmp-to-tiff-converter
+- BMP to PDF: https://www.arteonagency.pl/en/tools/bmp-to-pdf-converter
+
+### GIF Converters
+- GIF to PNG: https://www.arteonagency.pl/en/tools/gif-to-png-converter
+- GIF to JPG: https://www.arteonagency.pl/en/tools/gif-to-jpg-converter
+- GIF to WebP: https://www.arteonagency.pl/en/tools/gif-to-webp-converter
+- GIF to AVIF: https://www.arteonagency.pl/en/tools/gif-to-avif-converter
+
+### PDF Converters
+- PDF to JPG: https://www.arteonagency.pl/en/tools/pdf-to-jpg-converter
+- PDF to PNG: https://www.arteonagency.pl/en/tools/pdf-to-png-converter
+- PDF to WebP: https://www.arteonagency.pl/en/tools/pdf-to-webp-converter
+
+### Base64 / Encoding
+- Image to Base64: https://www.arteonagency.pl/en/tools/image-to-base64-converter
+- Base64 to Image: https://www.arteonagency.pl/en/tools/base64-to-image-converter
+
+## Document & Data Converters
+
+All document converters process data locally in the browser with instant results.
+
+- CSV to JSON: https://www.arteonagency.pl/en/tools/csv-to-json-converter
+- JSON to CSV: https://www.arteonagency.pl/en/tools/json-to-csv-converter
+- XML to JSON: https://www.arteonagency.pl/en/tools/xml-to-json-converter
+- JSON to XML: https://www.arteonagency.pl/en/tools/json-to-xml-converter
+- YAML to JSON: https://www.arteonagency.pl/en/tools/yaml-to-json-converter
+- JSON to YAML: https://www.arteonagency.pl/en/tools/json-to-yaml-converter
+- Markdown to HTML: https://www.arteonagency.pl/en/tools/markdown-to-html-converter
+- HTML to Markdown: https://www.arteonagency.pl/en/tools/html-to-markdown-converter
+
+## Available in 16 Languages
+
+All 74 tools are available in each language with fully localized interfaces:
+
+- Polish (PL): https://www.arteonagency.pl/narzedzia
+- English (EN): https://www.arteonagency.pl/en/tools
+- German (DE): https://www.arteonagency.pl/de/werkzeuge
+- Spanish (ES): https://www.arteonagency.pl/es/herramientas
+- French (FR): https://www.arteonagency.pl/fr/outils
+- Portuguese (PT): https://www.arteonagency.pl/pt/ferramentas
+- Italian (IT): https://www.arteonagency.pl/it/strumenti
+- Romanian (RO): https://www.arteonagency.pl/ro/instrumente
+- Dutch (NL): https://www.arteonagency.pl/nl/tools
+- Hungarian (HU): https://www.arteonagency.pl/hu/eszkozok
+- Czech (CS): https://www.arteonagency.pl/cs/nastroje
+- Swedish (SV): https://www.arteonagency.pl/sv/verktyg
+- Danish (DA): https://www.arteonagency.pl/da/vaerktojer
+- Norwegian (NO): https://www.arteonagency.pl/no/verktoy
+- Finnish (FI): https://www.arteonagency.pl/fi/tyokalut
+- Greek (EL): https://www.arteonagency.pl/el/ergaleia
+
+## Privacy & Security
+
+- All tools process data locally in the user's browser using JavaScript
+- No files are uploaded to any server
+- No registration or account required
+- No cookies required for tool functionality
+- HTTPS enforced on all pages
+- WCAG accessibility standards followed

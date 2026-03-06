@@ -1,0 +1,277 @@
+{
+  "toolKey": "unixTimestamp",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur d'horodatage Unix",
+    "description": "Convertissez les horodatages Unix en dates lisibles. Essentiel pour les développeurs.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-unix-timestamp"
+  },
+  "hero": {
+    "title": "Convertir horodatage Unix",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-unix-timestamp",
+      "label": "Unix timestamp"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur d'horodatage Unix",
+      "alternateName": ["Convertir horodatage Unix"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez les horodatages Unix en dates lisibles. Essentiel pour les développeurs.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des horodatages Unix ?",
+      "html": "<p class=\"text-mid mb-4\">L’horodatage Unix (Unix timestamp ou Epoch) compte les secondes écoulées depuis le 1er janvier 1970 à 00:00:00 UTC. C’est le standard universel pour stocker date et heure dans les systèmes informatiques.</p><p class=\"text-mid mb-4\">Exemple : 1709251200 = 1er mars 2024, 00:00:00 UTC. Les horodatages sont indépendants du fuseau horaire.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur d'horodatage Unix – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat apparaît instantanément.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Copiez le résultat ou inversez la direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDatabase2Line",
+          "title": "Développement web",
+          "description": "APIs et bases de données stockent les dates comme timestamps. Convertissez pour le débogage."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Analyse de logs",
+          "description": "Les logs serveur utilisent des timestamps Unix."
+        },
+        {
+          "icon": "RiTerminalBoxLine",
+          "title": "Bases de données",
+          "description": "MySQL UNIX_TIMESTAMP(), PostgreSQL extract(epoch from...) renvoient des timestamps."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Programmation",
+          "description": "JavaScript Date.now() renvoie des millisecondes depuis Epoch. Divisez par 1 000 pour les secondes."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Convertissez dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Tableau avec valeurs courantes et descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionnent les horodatages Unix ?",
+      "html": "<p class=\"text-mid mb-4\">Le temps Unix compte les secondes depuis l’époque (epoch) : 1er janvier 1970, 00:00:00 UTC. La valeur est toujours en UTC.</p><p class=\"text-mid\">JavaScript : Date.now() renvoie des millisecondes. Python : time.time() renvoie des secondes avec décimales.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionnent les horodatages Unix ?",
+      "html": "<p class=\"text-mid mb-4\">Le temps Unix compte les secondes depuis l’époque (epoch) : 1er janvier 1970, 00:00:00 UTC. La valeur est toujours en UTC.</p><p class=\"text-mid\">JavaScript : Date.now() renvoie des millisecondes. Python : time.time() renvoie des secondes avec décimales.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Timestamp Unix vs Date ISO",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Timestamp Unix"
+        },
+        {
+          "id": "unit2",
+          "name": "Date ISO 8601",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Format",
+          "values": {
+            "unit1": "1709251200",
+            "unit2": "2024-03-01T00:00:00Z"
+          }
+        },
+        {
+          "name": "Lisibilité",
+          "values": {
+            "unit1": "Machines uniquement",
+            "unit2": "Lisible par les humains"
+          }
+        },
+        {
+          "name": "Fuseau horaire",
+          "values": {
+            "unit1": "Toujours UTC",
+            "unit2": "Inclut le fuseau (Z, +02:00)"
+          }
+        },
+        {
+          "name": "Comparaison",
+          "values": {
+            "unit1": "Simple (plus grand = plus tard)",
+            "unit2": "Nécessite parsing"
+          }
+        },
+        {
+          "name": "Stockage",
+          "values": {
+            "unit1": "4–8 octets",
+            "unit2": "20+ octets"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Qu’est-ce que l’époque Unix ?",
+          "answer": "Le 1er janvier 1970 à 00:00:00 UTC. Tous les horodatages sont mesurés depuis ce point."
+        },
+        {
+          "question": "Qu’est-ce que le problème de l’an 2038 ?",
+          "answer": "Les timestamps 32 bits signés débordent le 19 janvier 2038 à 03:14:07 UTC. Les systèmes modernes utilisent 64 bits."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Unix Timestamp na datę – Arteon",
+      "defaultSubject": "Feedback : unix-timestamp"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

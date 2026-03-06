@@ -2,7 +2,7 @@
   "toolKey": "bmpToPdf",
   "locale": "it",
   "metadata": {
-    "title": "Convertitore BMP in PDF — BMP PDF",
+    "title": "Convertitore BMP in PDF - BMP PDF",
     "description": "Converti immagini BMP in documenti PDF. Combina più file in un unico PDF. Gratuito.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-bmp-in-pdf"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Converti",
-          "text": "Clicca su Converti — i file vengono elaborati localmente nel browser."
+          "text": "Clicca su Converti - i file vengono elaborati localmente nel browser."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Perché convertire BMP in PDF?",
-      "html": "<p class=\"text-mid mb-4\">BMP e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PDF puo offrire vantaggi significativi — file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file BMP nel formato PDF direttamente nel browser. Nessun file viene inviato a server — l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
+      "html": "<p class=\"text-mid mb-4\">BMP e un formato ampiamente utilizzato con grande compatibilita. A seconda dell'uso, la conversione in PDF puo offrire vantaggi significativi - file piu piccoli, migliore qualita o supporto piu ampio delle piattaforme.</p><p class=\"text-mid mb-4\">Questo convertitore online gratuito trasforma i tuoi file BMP nel formato PDF direttamente nel browser. Nessun file viene inviato a server - l'intero processo avviene localmente sul tuo dispositivo.</p><p class=\"text-mid\">Converti quanti file vuoi senza limiti giornalieri, senza registrazione e senza filigrane. Trascina i file, regola la qualita e scarica i risultati.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "BMP to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Converti",
-          "description": "Clicca su Converti — i file vengono elaborati localmente nel browser.",
+          "description": "Clicca su Converti - i file vengono elaborati localmente nel browser.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Qualita — cosa scegliere per BMP in PDF?",
-      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predefinito) — buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% — per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% — quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la differenza tra BMP originale e PDF risultante e impercettibile.</p>"
+      "title": "Qualita - cosa scegliere per BMP in PDF?",
+      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predefinito) - buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% - per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% - quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la differenza tra BMP originale e PDF risultante e impercettibile.</p>"
     },
     {
       "type": "gap",
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">BMP to PDF conversion creates document files for sharing and archiving. When embedding or linking PDFs on websites, file size directly affects download speed and user experience.</p><p class=\"text-mid mb-4\">BMP files are uncompressed, but the converter compresses images within the PDF to produce manageable file sizes. A typical 18 MB BMP becomes approximately 1–2 MB within a PDF thanks to internal JPEG compression.</p><p class=\"text-mid\">For web publishing, consider converting BMP directly to WebP or AVIF instead of PDF. These modern formats produce the smallest files optimized for browser display.</p>"
     },
     {
       "type": "faq",

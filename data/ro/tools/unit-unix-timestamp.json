@@ -1,0 +1,277 @@
+{
+  "toolKey": "unixTimestamp",
+  "locale": "ro",
+  "metadata": {
+    "title": "Unix în dată – convertor",
+    "description": "Convertiți marca temporală Unix în dată și oră.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-unix-timestamp"
+  },
+  "hero": {
+    "title": "Unix în dată",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-unix-timestamp",
+      "label": "Unix în dată"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Unix în dată – convertor",
+      "alternateName": ["Unix în dată"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți marca temporală Unix în dată și oră.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: Unix în dată?",
+      "html": "<p class=\"text-mid mb-4\">Der Unix-Zeitstempel (Unix Timestamp oder Epoch) zählt die Sekunden seit dem 1. Januar 1970, 00:00:00 UTC. Es ist der universelle Standard zur Speicherung von Datum und Uhrzeit in Computersystemen.</p><p class=\"text-mid mb-4\">Beispiel: 1709251200 = 1. März 2024, 00:00:00 UTC. Zeitstempel sind zeitzonenunabhängig.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Unix în dată – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDatabase2Line",
+          "title": "Stocare date",
+          "description": "Pola created_at, updated_at przechowują timestamp."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Dezvoltare web",
+          "description": "Tokeny JWT: pole exp (wygaśnięcie) to timestamp."
+        },
+        {
+          "icon": "RiTerminalBoxLine",
+          "title": "Logi serwerów",
+          "description": "Odczytuj timestampy z logów systemowych i aplikacyjnych."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Măsurarea timpului",
+          "description": "Szybkie sprawdzenie, kiedy wystąpił błąd na podstawie timestamp."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How do Unix timestamps work?",
+      "html": "<p class=\"text-mid mb-4\">Unix time counts seconds from the epoch: January 1, 1970, 00:00:00 UTC. This date was chosen as a convenient reference point for the original Unix operating system.</p><p class=\"text-mid mb-4\">Timestamps can be in seconds (10 digits: 1700000000) or milliseconds (13 digits: 1700000000000). JavaScript Date uses milliseconds.</p><p class=\"text-mid\">The Year 2038 problem: 32-bit signed integers overflow on January 19, 2038. Most modern systems use 64-bit timestamps to avoid this.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>JavaScript: Date.now() returns milliseconds. Math.floor(Date.now()/1000) for seconds.</li><li>Python: import time; time.time() returns seconds as float.</li><li>PHP: time() returns seconds as integer.</li><li>MySQL: UNIX_TIMESTAMP() and FROM_UNIXTIME() for conversion.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Timestamp formats",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Unix (seconds)"
+        },
+        {
+          "id": "unit2",
+          "name": "Unix (milliseconds)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Digits",
+          "values": {
+            "unit1": "10 digits",
+            "unit2": "13 digits"
+          }
+        },
+        {
+          "name": "Example",
+          "values": {
+            "unit1": "1700000000",
+            "unit2": "1700000000000"
+          }
+        },
+        {
+          "name": "Used by",
+          "values": {
+            "unit1": "PHP, Python, MySQL",
+            "unit2": "JavaScript, Java"
+          }
+        },
+        {
+          "name": "Precizie",
+          "values": {
+            "unit1": "1 second",
+            "unit2": "1 millisecond"
+          }
+        },
+        {
+          "name": "Max (32-bit)",
+          "values": {
+            "unit1": "Jan 19, 2038",
+            "unit2": "N/A (uses 64-bit)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ce este die Unix-Epoche?",
+          "answer": "Der 1. Januar 1970 um 00:00:00 UTC. Alle Zeitstempel werden ab diesem Punkt gemessen."
+        },
+        {
+          "question": "Ce este das Jahr-2038-Problem?",
+          "answer": "32-Bit-Zeitstempel mit Vorzeichen laufen am 19. Januar 2038 um 03:14:07 UTC über. Moderne Systeme verwenden 64 Bit."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Unix în dată – Arteon",
+      "defaultSubject": "Feedback: unix-timestamp"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

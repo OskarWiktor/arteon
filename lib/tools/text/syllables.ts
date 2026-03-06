@@ -187,7 +187,7 @@ function countSyllablesNordic(word: string, locale: Locale = 'sv'): number {
   let w = word;
 
   if (locale === 'fi') {
-    // Finnish diphthongs — these are single syllables, not two.
+    // Finnish diphthongs - these are single syllables, not two.
     // Finnish has 18 diphthongs: ai, ei, oi, ui, yi, äi, öi, au, eu, ou, iu,
     // ey, äy, öy, ie, uo, yö + iy
     w = w.replace(/ai|ei|oi|ui|yi|äi|öi|au|eu|ou|iu|ey|äy|öy|ie|uo|yö|iy/gi, 'X');

@@ -168,7 +168,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                       <div>
                         <div className="text-dark text-sm font-medium">{t.chooseLabel}</div>
                         <div className="text-light text-xs">
-                          {currentConfig.label} — {currentConfig.name}
+                          {currentConfig.label} - {currentConfig.name}
                         </div>
                       </div>
                     </div>
@@ -267,11 +267,11 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
               <div className="mb-4 flex items-center gap-2.5 rounded-xl bg-neutral-50 px-3 py-2.5">
                 <RiTranslate2 className="text-primary h-4 w-4 shrink-0" aria-hidden="true" />
                 <span className="text-dark text-sm font-semibold">
-                  {currentConfig.label} — {currentConfig.name}
+                  {currentConfig.label} - {currentConfig.name}
                 </span>
               </div>
 
-              {/* Popular languages — top, 2 columns */}
+              {/* Popular languages - top, 2 columns */}
               {popularSorted.length > 0 && (
                 <>
                   <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{t.popularLabel}</span>
@@ -312,7 +312,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                 </>
               )}
 
-              {/* Other languages — below, 2 columns */}
+              {/* Other languages - below, 2 columns */}
               {otherSorted.length > 0 && (
                 <>
                   <span className="text-light mb-1.5 block px-2 text-[10px] font-semibold tracking-wider uppercase">{t.otherLabel}</span>

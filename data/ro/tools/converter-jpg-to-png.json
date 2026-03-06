@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor JPG în PNG – JPG PNG",
-    "description": "Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+    "description": "Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-jpg-in-png"
   },
   "hero": {
     "title": "Convertor JPG în PNG",
-    "description": "Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+    "description": "Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Conversie JPG în PNG", "Convertor JPG în PNG", "Convertor gratuit JPG în PNG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+      "description": "Convertește imagini JPG în PNG fără pierderi. Conversie locală în browser. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie JPG în PNG", "Ieșire PNG fără pierderi", "Conversie în lot", "Procesare locală în browser", "Fără încărcare de fișiere"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Convertiți în PNG",
-          "text": "Faceți clic pe conversie. PNG este fără pierderi — nu este necesar niciun ajustaj."
+          "text": "Faceți clic pe conversie. PNG este fără pierderi - nu este necesar niciun ajustaj."
         },
         {
           "name": "Descărcați fișierele PNG",
@@ -338,7 +338,7 @@
     {
       "type": "contactForm",
       "title": "Ajută-ne să îmbunătățim instrumentele",
-      "description": "Ai o idee, ai găsit un bug sau vrei să sugerezi o funcție? Trimite-ne un mesaj — răspundem în 24 de ore.",
+      "description": "Ai o idee, ai găsit un bug sau vrei să sugerezi o funcție? Trimite-ne un mesaj - răspundem în 24 de ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
       "imageAlt": "Convertor JPG în PNG – Arteon",
       "defaultSubject": "Feedback: Convertor JPG în PNG"

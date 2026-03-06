@@ -3,13 +3,13 @@
   "locale": "it",
   "metadata": {
     "title": "Convertitore BMP in JPG – BMP JPG",
-    "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni. Elaborazione locale nel browser — i file non lasciano mai il dispositivo.",
+    "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni. Elaborazione locale nel browser - i file non lasciano mai il dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
     "path": "/it/strumenti/convertitore-bmp-in-jpg"
   },
   "hero": {
     "title": "Convertitore BMP in JPG",
-    "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni. Elaborazione locale nel browser — i file non lasciano mai il dispositivo.",
+    "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni. Elaborazione locale nel browser - i file non lasciano mai il dispositivo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Convertire BMP in JPG", "Conversione BMP in JPG", "Convertitore BMP in JPG gratuito"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni. Elaborazione locale nel browser — i file non lasciano mai il dispositivo.",
+      "description": "Converti file BMP in JPG leggero. Riduzione drastica delle dimensioni. Elaborazione locale nel browser - i file non lasciano mai il dispositivo.",
       "featureList": ["Conversione da BMP a JPG", "Controllo qualità JPG", "Conversione in blocco", "Elaborazione locale nel browser", "Nessun caricamento file"]
     },
     "howTo": {
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Qualita — cosa scegliere per BMP in JPG?",
-      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predefinito) — buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% — per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% — quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la differenza tra BMP originale e JPG risultante e impercettibile.</p>"
+      "title": "Qualita - cosa scegliere per BMP in JPG?",
+      "html": "<p class=\"text-mid\">Il cursore permette 60%-95%. Piu alto = migliore qualita ma file piu grandi.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (predefinito) - buon compromesso per siti, blog, articoli.</strong></li><li><strong>85–90% - per foto prodotti, portfolio e gallerie.</strong></li><li><strong>60–70% - quando minimizzare dimensioni e prioritario.</strong></li></ul><p class=\"text-mid mt-3\">Con 85% la differenza tra BMP originale e JPG risultante e impercettibile.</p>"
     },
     {
       "type": "gap",
@@ -302,6 +302,15 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting BMP images to JPG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
+    },
+    {
       "type": "faq",
       "title": "Domande frequenti sulla conversione da BMP a JPG",
       "openByDefault": 0,
@@ -347,7 +356,7 @@
     {
       "type": "contactForm",
       "title": "Aiutaci a migliorare i nostri strumenti",
-      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio — rispondiamo entro 24 ore.",
+      "description": "Hai un'idea, hai trovato un bug o vuoi suggerire una funzione? Inviaci un messaggio - rispondiamo entro 24 ore.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
       "imageAlt": "Convertitore BMP in JPG – Arteon",
       "defaultSubject": "Feedback: Convertitore BMP in JPG"

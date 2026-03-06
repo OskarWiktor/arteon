@@ -1,0 +1,277 @@
+{
+  "toolKey": "emToPx",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur em en pixels – CSS",
+    "description": "Convertissez les unités CSS em en pixels. Pour le design web responsive.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-em-en-px"
+  },
+  "hero": {
+    "title": "Convertir em en pixels",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-em-en-px",
+      "label": "em en px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur em en pixels – CSS",
+      "alternateName": ["Convertir em en pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez les unités CSS em en pixels. Pour le design web responsive.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des em en pixels ?",
+      "html": "<p class=\"text-mid mb-4\">L’unité CSS em est relative à la taille de police de l’élément parent. Avec la taille standard de 16px : 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Les unités em sont fréquemment utilisées en design web responsive pour la typographie, les espacements et la mise en page. Contrairement à rem (relatif à la racine), em s’accumule : 1,5em × 1,5em = 2,25× la taille de base.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur em en pixels – CSS – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat apparaît instantanément.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Copiez le résultat ou inversez la direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTextSpacing",
+          "title": "Développement web",
+          "description": "Convertissez des em en pixels pour comprendre les tailles réelles lors du débogage CSS."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Typographie",
+          "description": "Définissez les tailles en em pour l’évolutivité : body 1em = 16px, h1 2,5em = 40px."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Design responsive",
+          "description": "Utilisez em pour les breakpoints et espacements qui évoluent avec la taille de police."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Accessibilité",
+          "description": "Les em respectent les paramètres de taille de police de l’utilisateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Convertissez dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Tableau avec valeurs courantes et descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">px = em × taille de police du parent. Par défaut : 16px.</p><p class=\"text-mid\">Em s’accumule : body 16px, div 1,5em (24px), paragraphe dedans à 1,5em = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">px = em × taille de police du parent. Par défaut : 16px.</p><p class=\"text-mid\">Em s’accumule : body 16px, div 1,5em (24px), paragraphe dedans à 1,5em = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "em vs px vs rem",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "em"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Référence",
+          "values": {
+            "unit1": "Police du parent",
+            "unit2": "Pixel fixe"
+          }
+        },
+        {
+          "name": "S’accumule",
+          "values": {
+            "unit1": "Oui (imbriqué)",
+            "unit2": "Non"
+          }
+        },
+        {
+          "name": "Responsive",
+          "values": {
+            "unit1": "Oui",
+            "unit2": "Non"
+          }
+        },
+        {
+          "name": "Accessibilité",
+          "values": {
+            "unit1": "Respecte les paramètres",
+            "unit2": "Taille fixe"
+          }
+        },
+        {
+          "name": "Prévisibilité",
+          "values": {
+            "unit1": "Dépend du contexte",
+            "unit2": "Toujours constant"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de pixels fait 1em ?",
+          "answer": "Par défaut 1em = 16px (standard navigateur). Mais em est relatif au parent."
+        },
+        {
+          "question": "Quelle différence entre em et rem ?",
+          "answer": "em référence la police du parent. rem référence la police racine (html). rem est plus prévisible."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "em na px – Arteon",
+      "defaultSubject": "Feedback : em-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

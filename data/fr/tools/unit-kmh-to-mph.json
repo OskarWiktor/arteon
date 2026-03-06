@@ -1,0 +1,273 @@
+{
+  "toolKey": "kmhToMph",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur km/h en mph – vitesse",
+    "description": "Convertissez km/h en mph et vice versa. Pour les limites de vitesse et les véhicules.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-kmh-en-mph"
+  },
+  "hero": {
+    "title": "Convertir km/h en mph",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-kmh-en-mph",
+      "label": "km/h en mph"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur km/h en mph – vitesse",
+      "alternateName": ["Convertir km/h en mph"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez km/h en mph et vice versa. Pour les limites de vitesse et les véhicules.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des km/h en mph ?",
+      "html": "<p class=\"text-mid mb-4\">Le kilomètre par heure (km/h) est l’unité métrique de vitesse. Le mile par heure (mph) est utilisé aux USA et UK. 1 km/h = 0,621371 mph.</p><p class=\"text-mid mb-4\">Exemples : 100 km/h = 62,1 mph, 120 km/h = 74,6 mph, 60 mph = 96,6 km/h.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur km/h en mph – vitesse – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Conduite",
+          "description": "Limites de vitesse : 65 mph = 105 km/h, 70 mph = 113 km/h."
+        },
+        {
+          "icon": "RiDashboardLine",
+          "title": "Spécifications auto",
+          "description": "Vitesse max et accélération 0–100 km/h vs 0–60 mph."
+        },
+        {
+          "icon": "RiFlagLine",
+          "title": "Sport",
+          "description": "Vitesse de lancer au baseball : 100 mph = 161 km/h."
+        },
+        {
+          "icon": "RiWindyLine",
+          "title": "Météo",
+          "description": "Vitesse du vent en mph (USA) ou km/h (international)."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 mile = 1,609344 km. Pour convertir km/h en mph, divisez par 1,60934.</p><p class=\"text-mid\">Estimation rapide : multipliez km/h par 0,6 pour mph.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 mile = 1,609344 km. Pour convertir km/h en mph, divisez par 1,60934.</p><p class=\"text-mid\">Estimation rapide : multipliez km/h par 0,6 pour mph.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "km/h vs mph – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "km/h"
+        },
+        {
+          "id": "unit2",
+          "name": "mph",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Système",
+          "values": {
+            "unit1": "Métrique (SI)",
+            "unit2": "Impérial"
+          }
+        },
+        {
+          "name": "Rapport",
+          "values": {
+            "unit1": "1 km/h",
+            "unit2": "0,621 mph"
+          }
+        },
+        {
+          "name": "Signalisation",
+          "values": {
+            "unit1": "International",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Compteur",
+          "values": {
+            "unit1": "Échelle principale (UE)",
+            "unit2": "Échelle principale (US/UK)"
+          }
+        },
+        {
+          "name": "Aviation",
+          "values": {
+            "unit1": "Non utilisé",
+            "unit2": "Non utilisé (nœuds)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de mph font 100 km/h ?",
+          "answer": "100 km/h = 62,14 mph."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "km/h na mph – Arteon",
+      "defaultSubject": "Feedback : kmh-to-mph"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

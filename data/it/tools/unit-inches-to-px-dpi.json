@@ -1,0 +1,273 @@
+{
+  "toolKey": "inchesToPxDpi",
+  "locale": "it",
+  "metadata": {
+    "title": "Convertitore pollici in pixel (DPI)",
+    "description": "Converti pollici in pixel a qualsiasi risoluzione DPI. Per la preparazione delle immagini.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+    "path": "/it/strumenti/convertitore-pollici-in-px"
+  },
+  "hero": {
+    "title": "Convertire pollici in pixel",
+    "description": "Questo convertitore converte istantaneamente. Inserisci un valore e il risultato appare subito.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/it/strumenti",
+      "label": "Strumenti"
+    },
+    "third": {
+      "href": "/it/strumenti/convertitore-pollici-in-px",
+      "label": "pollici in px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertitore pollici in pixel (DPI)",
+      "alternateName": ["Convertire pollici in pixel"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converti pollici in pixel a qualsiasi risoluzione DPI. Per la preparazione delle immagini.",
+      "featureList": ["Conversione bidirezionale in tempo reale", "Tutti i convertitori in un unico posto", "Copia il risultato negli appunti", "Calcolo locale nel browser"]
+    },
+    "howTo": {
+      "name": "Come usare il convertitore",
+      "description": "Guida rapida per usare il convertitore.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Inserire un valore",
+          "text": "Digita un numero nel campo di input a sinistra."
+        },
+        {
+          "name": "Leggere il risultato",
+          "text": "Il risultato della conversione appare istantaneamente nel campo accanto."
+        },
+        {
+          "name": "Copiare o invertire",
+          "text": "Clicca su Copia risultato o su Inverti per convertire nella direzione opposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando serve convertire pollici in pixel?",
+      "html": "<p class=\"text-mid mb-4\">I formati carta US usano pollici. Per dati di stampa digitali: Pixel = pollici × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) a 300 DPI = 2.550 × 3.300 pixel. Foto 4 × 6″ a 300 DPI = 1.200 × 1.800 pixel.</p><p class=\"text-mid\">Tutti i calcoli vengono eseguiti localmente nel tuo browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertitore pollici in pixel (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Come usare il convertitore?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Inserisci un valore",
+          "description": "Digita un numero nel campo di inserimento.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leggi il risultato",
+          "description": "Il risultato appare istantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o inverti",
+          "description": "Copia il risultato o inverti la direzione di conversione.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando è utile questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Stampe fotografiche",
+          "description": "Standard: 4×6″ = 1.200×1.800 px a 300 DPI."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Formati carta US",
+          "description": "Letter (8,5×11″) a 300 DPI = 2.550×3.300 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Banner e poster",
+          "description": "Poster 24×36″ a 150 DPI = 3.600×5.400 px."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Schermi",
+          "description": "Densità: monitor 27″ 4K = 163 PPI."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cosa rende diverso questo convertitore?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacy totale",
+          "description": "Tutti i calcoli vengono eseguiti localmente nel tuo browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Risultati in tempo reale",
+          "description": "Il risultato si aggiorna mentre digiti."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversione bidirezionale",
+          "description": "Converti in entrambe le direzioni con un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabella di riferimento",
+          "description": "Tabella con valori comuni e descrizioni contestuali."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">Formula semplice: Pixel = pollici × DPI. A 300 DPI: 1 pollice = 300 pixel.</p><p class=\"text-mid\">Per trovare il DPI necessario: DPI = Pixel / pollici.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Come funziona la conversione?",
+      "html": "<p class=\"text-mid mb-4\">Formula semplice: Pixel = pollici × DPI. A 300 DPI: 1 pollice = 300 pixel.</p><p class=\"text-mid\">Per trovare il DPI necessario: DPI = Pixel / pollici.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Formati stampa comuni a 300 DPI",
+      "featureLabel": "Formato",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Pollici"
+        },
+        {
+          "id": "unit2",
+          "name": "Pixel (300 DPI)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Foto passaporto",
+          "values": {
+            "unit1": "2,5 × 3,5″",
+            "unit2": "750 × 1.050"
+          }
+        },
+        {
+          "name": "Foto 4×6",
+          "values": {
+            "unit1": "4 × 6″",
+            "unit2": "1.200 × 1.800"
+          }
+        },
+        {
+          "name": "Foto 8×10",
+          "values": {
+            "unit1": "8 × 10″",
+            "unit2": "2.400 × 3.000"
+          }
+        },
+        {
+          "name": "US Letter",
+          "values": {
+            "unit1": "8,5 × 11″",
+            "unit2": "2.550 × 3.300"
+          }
+        },
+        {
+          "name": "Poster (24×36)",
+          "values": {
+            "unit1": "24 × 36″",
+            "unit2": "7.200 × 10.800"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Domande frequenti",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quanti pixel è 1 pollice a 300 DPI?",
+          "answer": "1 pollice a 300 DPI = 300 pixel."
+        },
+        {
+          "question": "I calcoli vengono eseguiti localmente?",
+          "answer": "Sì. Tutti i calcoli vengono eseguiti nel tuo browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aiutaci a migliorare i nostri strumenti",
+      "description": "Hai un'idea, trovato un bug o vuoi suggerire una funzionalità? Scrivici – rispondiamo entro 24 ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertitore-jpg-png-in-webp-it.webp",
+      "imageAlt": "cale na px – Arteon",
+      "defaultSubject": "Feedback: inches-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Altri strumenti gratuiti"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

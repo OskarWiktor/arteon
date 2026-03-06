@@ -28,7 +28,7 @@
       "alternateName": ["PNG to JPEG converter", "Convert PNG to JPG online", "Change PNG to JPG", "Free PNG to JPG tool"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Free online PNG to JPG converter. Transform PNG images to JPG directly in your browser — files never leave your device. No file limits, no registration.",
+      "description": "Free online PNG to JPG converter. Transform PNG images to JPG directly in your browser - files never leave your device. No file limits, no registration.",
       "featureList": [
         "PNG to JPG conversion",
         "Adjustable quality slider (60–95%)",
@@ -65,7 +65,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert PNG to JPG?",
-      "html": "<p class=\"text-mid mb-4\">PNG (Portable Network Graphics) is a lossless format that preserves full image quality and supports transparency via an alpha channel. However, PNG files are significantly larger than JPG — a 3000×2000 pixel photo in PNG can weigh 8–15 MB, while the same image saved as JPG at 85% quality takes up just 0.5–1.5 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) is a lossy format that compresses images by discarding details imperceptible to the human eye. At 80–85% quality, the visual difference is virtually unnoticeable, yet the file can be several times smaller. JPG is universally supported by every application, browser, and platform.</p><p class=\"text-mid mb-4\">Converting PNG to JPG makes sense whenever the image does not require transparency — for example, photographs, screenshots with solid backgrounds, email attachments, or images destined for online forms with file-size limits.</p><p class=\"text-mid\">This converter runs entirely in your browser. Your files are never uploaded to any server, so you retain full control over your data.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG is a lossless format that produces large files — a 3000×2000 pixel screenshot can weigh 5–15 MB. JPG uses lossy compression to create files that are 5–10× smaller with minimal visible quality loss. For photographs and images without transparency, JPG is the more practical format.</p><p class=\"text-mid mb-4\">JPG is universally supported by every browser, email client, social media platform, and image editor. At quality 85–90, JPG produces visually identical results to PNG for photographic content while being dramatically smaller. Converting PNG screenshots and photos to JPG saves storage and makes files easier to share.</p><p class=\"text-mid mb-4\">Note that JPG does not support transparency — transparent areas in your PNG will be filled with a solid background color (typically white). If you need transparency, keep your files as PNG or convert to WebP instead.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to JPG converter – Arteon"
     },
@@ -109,7 +109,7 @@
         {
           "icon": "RiMailLine",
           "title": "Email attachments",
-          "description": "Most email providers cap attachment size at 10–25 MB. Converting photos from PNG to JPG can reduce their size by 80–95%, making them easy to send."
+          "description": "PNG photos can be 5–15 MB — too large for most email providers. JPG reduces file size by 5–10×, making photos easy to attach and send without exceeding mailbox limits."
         },
         {
           "icon": "RiShoppingCartLine",
@@ -140,7 +140,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Complete privacy",
-          "description": "Your files never leave your computer. Conversion happens inside the browser using the Canvas API — nothing is uploaded to any server. Data is erased when you close the tab."
+          "description": "Your files never leave your computer. Conversion happens inside the browser using the Canvas API - nothing is uploaded to any server. Data is erased when you close the tab."
         },
         {
           "icon": "RiInfinityFill",
@@ -166,7 +166,7 @@
     {
       "type": "sectionInfo",
       "title": "Tips for choosing the right JPG quality",
-      "html": "<p class=\"text-mid mb-4\">The ideal JPG quality setting depends on what you plan to do with the image:</p><ul class=\"text-mid mb-4 list-disc pl-6 space-y-1\"><li><strong>90–95%</strong> – Archival or print. Minimal compression, maximum visual fidelity.</li><li><strong>80–85%</strong> – General use (web, email, social media). The best balance of size and quality.</li><li><strong>60–75%</strong> – Thumbnails or previews where file size matters more than detail.</li></ul><p class=\"text-mid\">This tool defaults to 85%, which covers the vast majority of use cases. You can adjust the slider at any time — even reconvert the same files with a different quality level.</p>"
+      "html": "<p class=\"text-mid mb-4\">The ideal JPG quality setting depends on what you plan to do with the image:</p><ul class=\"text-mid mb-4 list-disc pl-6 space-y-1\"><li><strong>90–95%</strong> – Archival or print. Minimal compression, maximum visual fidelity.</li><li><strong>80–85%</strong> – General use (web, email, social media). The best balance of size and quality.</li><li><strong>60–75%</strong> – Thumbnails or previews where file size matters more than detail.</li></ul><p class=\"text-mid\">This tool defaults to 85%, which covers the vast majority of use cases. You can adjust the slider at any time - even reconvert the same files with a different quality level.</p>"
     },
     {
       "type": "gap",
@@ -251,6 +251,24 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting PNG to JPG?",
+      "html": "<p class=\"text-mid mb-4\">PNG is lossless and therefore large for photographic content. JPG provides substantial savings:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo (PNG)</p><p class=\"text-light text-sm\">8.5 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~90%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">1.2 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~73%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Social media graphic</p><p class=\"text-light text-sm\">2.4 MB → 450 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Savings are highest for photographs and images with smooth gradients. Graphics with large flat color areas compress less efficiently in JPG.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them — LCP (Largest Contentful Paint) — measures the time until the largest visible element renders. On image-heavy pages, this is often a hero image or product photo.</p><p class=\"text-mid mb-4\">Converting PNG photographs to JPG typically reduces file size by 5–10×, directly shortening download time and improving the LCP score. Combined with <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code>, this can significantly improve page performance.</p><p class=\"text-mid\">For even smaller files, consider WebP (25–35% smaller than JPG) or AVIF (30–50% smaller). Use <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> to identify specific images worth optimizing.</p>"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about PNG to JPG conversion",
       "openByDefault": 1,
@@ -269,15 +287,15 @@
         },
         {
           "question": "How much space can I save?",
-          "answer": "Savings depend on image content. A 5–10 MB PNG photo converted to JPG at 85% quality typically drops to 0.3–1 MB — a reduction of 80–95%. Screenshots with large flat-colour areas save somewhat less."
+          "answer": "Savings depend on image content. A 5–10 MB PNG photo converted to JPG at 85% quality typically drops to 0.3–1 MB - a reduction of 80–95%. Screenshots with large flat-colour areas save somewhat less."
         },
         {
           "question": "Can I convert multiple files at once?",
-          "answer": "Yes. Add as many files as you like — there is no limit. All images are converted in sequence, and you can download them individually or all at once."
+          "answer": "Yes. Add as many files as you like - there is no limit. All images are converted in sequence, and you can download them individually or all at once."
         },
         {
           "question": "Are my files uploaded to a server?",
-          "answer": "No. The entire conversion runs locally in your browser via the Canvas API. Files never leave your device — they are not sent to any server. Data is cleared from memory when you close the page."
+          "answer": "No. The entire conversion runs locally in your browser via the Canvas API. Files never leave your device - they are not sent to any server. Data is cleared from memory when you close the page."
         },
         {
           "question": "Does this tool work on mobile devices?",
@@ -296,7 +314,7 @@
     {
       "type": "contactForm",
       "title": "Help us improve our tools",
-      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool? Drop us a message — we respond within 24 hours.",
+      "description": "Have an idea for a new feature, found a bug, or want to suggest another tool? Drop us a message - we respond within 24 hours.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to JPG converter – Arteon",
       "defaultSubject": "Feedback: PNG to JPG converter"

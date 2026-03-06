@@ -41,7 +41,7 @@
         },
         {
           "name": "Konverter til PNG",
-          "text": "Klikk på konverter. PNG er tapsfritt — ingen kvalitetsinnstilling nødvendig."
+          "text": "Klikk på konverter. PNG er tapsfritt - ingen kvalitetsinnstilling nødvendig."
         },
         {
           "name": "Last ned PNG-filer",
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hvordan bildekonvertering pavirker hastighet og SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ytelsesindikatorer. LCP maler tiden til det storste synlige elementet vises.</p><p class=\"text-mid mb-4\">Konvertering av SVG til PNG reduserer filstorrelse, forkorter nedlasting og forbedrer LCP. Mindre filer = raskere pa mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> akselererer rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identifiserer filer som bor optimaliseres.</p>"
+      "title": "Hvordan bildekonvertering påvirker hastighet og SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals er Google-ytelsesindikatorer. LCP måler tiden til det største synlige elementet vises.</p><p class=\"text-mid mb-4\">Konvertering av SVG til PNG reduserer filstørrelse, forkorter nedlasting og forbedrer LCP. Mindre filer = raskere på mobil. <code>loading=\"lazy\"</code> og <code>fetchpriority=\"high\"</code> akselererer rendering.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> og Lighthouse identifiserer filer som bør optimaliseres.</p>"
     },
     {
       "type": "gap",
@@ -254,13 +254,13 @@
     {
       "type": "sectionSteps",
       "title": "Tips for konvertering SVG til PNG",
-      "description": "Tips for a unnga vanlige problemer:",
+      "description": "Tips for å unngå vanlige problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Veldig store filer",
-          "description": "Bilder over 4000×4000 px kan vaere tregere. Del i partier pa 10–20."
+          "description": "Bilder over 4000×4000 px kan være tregere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
@@ -270,7 +270,7 @@
         {
           "icon": "RiPaletteLine",
           "title": "Transparens",
-          "description": "PNG stotter alfakanal. Transparente omrader i SVG bevares."
+          "description": "PNG støtter alfakanal. Transparente områder i SVG bevares."
         },
         {
           "icon": "RiStackLine",
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting SVG images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",
@@ -338,7 +347,7 @@
     {
       "type": "contactForm",
       "title": "Hjelp oss å forbedre verktøyene våre",
-      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding — vi svarer innen 24 timer.",
+      "description": "Har du en idé, funnet en feil eller vil foreslå en funksjon? Send oss en melding - vi svarer innen 24 timer.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverterer-no.webp",
       "imageAlt": "SVG til PNG-konverterer – Arteon",
       "defaultSubject": "Feedback: SVG til PNG-konverterer"

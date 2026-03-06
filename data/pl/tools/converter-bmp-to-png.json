@@ -41,7 +41,7 @@
         },
         {
           "name": "Uruchom konwersję",
-          "text": "Kliknij Konwertuj. PNG jest bezstratny — nie ma suwaka jakości."
+          "text": "Kliknij Konwertuj. PNG jest bezstratny - nie ma suwaka jakości."
         },
         {
           "name": "Pobierz pliki PNG",
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować BMP na PNG?",
-      "html": "<p class=\"text-mid mb-4\">BMP to nieskompresowany format rastrowy — pliki są bardzo duże, ale zachowują pełną jakość pikseli. PNG to format bezstratny z kompresją — plik jest mniejszy niż BMP, ale jakość pozostaje identyczna. To idealna konwersja, gdy zależy na zachowaniu 100% jakości.</p><p class=\"text-mid mb-4\">W odróżnieniu od <a href=\"/narzedzia/konwerter-bmp-na-jpg\">konwersji BMP na JPG</a>, konwersja na PNG nie powoduje żadnej utraty jakości. Redukcja rozmiaru jest mniejsza (typowo 30–70% zamiast 90–97%), ale obraz jest piksel w piksel identyczny z oryginałem.</p><p class=\"text-mid\">PNG obsługuje również przezroczystość (kanał alfa), co czyni go odpowiednim formatem do dalszej edycji graficznej, tworzenia elementów interfejsu i publikacji w miejscach wymagających ostrych krawędzi.</p>",
+      "html": "<p class=\"text-mid mb-4\">BMP to nieskompresowany format rastrowy - pliki są bardzo duże, ale zachowują pełną jakość pikseli. PNG to format bezstratny z kompresją - plik jest mniejszy niż BMP, ale jakość pozostaje identyczna. To idealna konwersja, gdy zależy na zachowaniu 100% jakości.</p><p class=\"text-mid mb-4\">W odróżnieniu od <a href=\"/narzedzia/konwerter-bmp-na-jpg\">konwersji BMP na JPG</a>, konwersja na PNG nie powoduje żadnej utraty jakości. Redukcja rozmiaru jest mniejsza (typowo 30–70% zamiast 90–97%), ale obraz jest piksel w piksel identyczny z oryginałem.</p><p class=\"text-mid\">PNG obsługuje również przezroczystość (kanał alfa), co czyni go odpowiednim formatem do dalszej edycji graficznej, tworzenia elementów interfejsu i publikacji w miejscach wymagających ostrych krawędzi.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter BMP na PNG – Arteon"
     },
@@ -79,7 +79,7 @@
         },
         {
           "title": "2. Konwertuj",
-          "description": "Konwersja BMP na PNG jest bezstratna — nie ma suwaka jakości. Kliknij przycisk, aby rozpocząć konwersję.",
+          "description": "Konwersja BMP na PNG jest bezstratna - nie ma suwaka jakości. Kliknij przycisk, aby rozpocząć konwersję.",
           "icon": "RiEqualizerLine"
         },
         {
@@ -101,7 +101,7 @@
         {
           "icon": "RiFileTextLine",
           "title": "Archiwizacja skanów",
-          "description": "Skanery biurowe generują pliki BMP. Konwersja na PNG zmniejsza rozmiar bez utraty jakości — idealne do długoterminowego przechowywania dokumentów."
+          "description": "Skanery biurowe generują pliki BMP. Konwersja na PNG zmniejsza rozmiar bez utraty jakości - idealne do długoterminowego przechowywania dokumentów."
         },
         {
           "icon": "RiGlobalLine",
@@ -132,7 +132,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera — cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
+          "description": "Pliki nie opuszczają komputera - cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Żadne dane nie są wysyłane na serwer. Po zamknięciu strony pliki są automatycznie usuwane z pamięci."
         },
         {
           "icon": "RiInfinityFill",
@@ -245,7 +245,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów BMP na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów BMP na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -275,7 +275,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików BMP, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików BMP, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -290,7 +290,7 @@
       "items": [
         {
           "question": "Czy konwersja BMP na PNG jest bezstratna?",
-          "answer": "Tak. PNG stosuje kompresję bezstratną — plik jest mniejszy niż BMP, ale jakość obrazu jest identyczna piksel w piksel."
+          "answer": "Tak. PNG stosuje kompresję bezstratną - plik jest mniejszy niż BMP, ale jakość obrazu jest identyczna piksel w piksel."
         },
         {
           "question": "Ile miejsca mogę zaoszczędzić?",
@@ -298,7 +298,7 @@
         },
         {
           "question": "Czym różni się konwersja na PNG od konwersji na JPG?",
-          "answer": "PNG zachowuje 100% jakości (kompresja bezstratna), ale pliki są większe. JPG kompresuje stratnie — pliki są mniejsze, ale z pewną utratą szczegółów. PNG jest lepszy dla grafik z ostrymi krawędziami (tekst, diagramy), JPG dla zdjęć."
+          "answer": "PNG zachowuje 100% jakości (kompresja bezstratna), ale pliki są większe. JPG kompresuje stratnie - pliki są mniejsze, ale z pewną utratą szczegółów. PNG jest lepszy dla grafik z ostrymi krawędziami (tekst, diagramy), JPG dla zdjęć."
         },
         {
           "question": "Czy mogę konwertować wiele plików naraz?",
@@ -310,11 +310,11 @@
         },
         {
           "question": "Czy konwersja BMP na PNG jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików BMP jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy konwersja BMP na PNG zmniejszy rozmiar pliku?",
+          "answer": "Tak. PNG stosuje kompresję bezstratną Deflate, a BMP nie stosuje żadnej kompresji. Plik PNG będzie znacznie mniejszy niż BMP przy identycznej jakości. Screenshoty i grafiki z jednolitymi kolorami kompresują się najlepiej."
         },
         {
           "question": "Czy PNG jest obsługiwany przez wszystkie przeglądarki?",
@@ -329,7 +329,7 @@
     {
       "type": "contactForm",
       "title": "Pomóż nam ulepszyć narzędzia",
-      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas — odpowiadamy w ciągu 24 godzin.",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas - odpowiadamy w ciągu 24 godzin.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter BMP na PNG – Arteon",
       "defaultSubject": "Feedback: Konwerter BMP na PNG"

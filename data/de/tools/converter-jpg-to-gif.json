@@ -2,7 +2,7 @@
   "toolKey": "jpgToGif",
   "locale": "de",
   "metadata": {
-    "title": "JPG zu GIF Konverter — JPG GIF",
+    "title": "JPG zu GIF Konverter - JPG GIF",
     "description": "JPG-Fotos in GIF-Format umwandeln. Perfekt fur einfache Grafiken und Icons. Läuft komplett im Browser. Kein Server-Upload, keine Registrierung nötig.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
     "path": "/de/werkzeuge/jpg-zu-gif-konverter"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Qualität einstellen",
-          "text": "Passen Sie den GIF-Qualitätsregler an — niedrigere Werte ergeben kleinere Dateien."
+          "text": "Passen Sie den GIF-Qualitätsregler an - niedrigere Werte ergeben kleinere Dateien."
         },
         {
           "position": 3,
           "name": "Konvertieren",
-          "text": "Klicken Sie auf Konvertieren — Dateien werden lokal im Browser verarbeitet."
+          "text": "Klicken Sie auf Konvertieren - Dateien werden lokal im Browser verarbeitet."
         },
         {
           "position": 4,
           "name": "Herunterladen",
-          "text": "Laden Sie die GIF-Dateien herunter — einzeln oder alle auf einmal."
+          "text": "Laden Sie die GIF-Dateien herunter - einzeln oder alle auf einmal."
         }
       ]
     }
@@ -253,7 +253,7 @@
     {
       "type": "sectionInfo",
       "title": "Wie viel sparen Sie bei Konvertierung von JPG zu GIF?",
-      "html": "<p class=\"text-mid mb-4\">Einsparungen hangen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsachliche Einsparungen variieren je nach Bildinhalt und Qualitat.</p>"
+      "html": "<p class=\"text-mid mb-4\">Einsparungen hängen vom Quelldateityp und Komprimierung ab:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktbild</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / Banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Einsparung: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Tatsächliche Einsparungen variieren je nach Bildinhalt und Qualität.</p>"
     },
     {
       "type": "gap",
@@ -270,24 +270,24 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipps fur Konvertierung von JPG zu GIF",
-      "description": "Tipps um haufige Probleme zu vermeiden:",
+      "title": "Tipps für Konvertierung von JPG zu GIF",
+      "description": "Tipps, um häufige Probleme zu vermeiden:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Sehr grosse Dateien",
-          "description": "Bilder uber 4000×4000 Pixel konnen langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
+          "title": "Sehr große Dateien",
+          "description": "Bilder über 4000×4000 Pixel können langsamer konvertiert werden. Teilen Sie sie in Chargen von 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Bereits komprimierte Dateien",
-          "description": "Stark komprimierte JPG-Dateien bringen bei Konvertierung zu GIF moglicherweise wenig Einsparung."
+          "description": "Stark komprimierte JPG-Dateien bringen bei Konvertierung zu GIF möglicherweise wenig Einsparung."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Transparenz",
-          "description": "GIF unterstutzt Alphakanal. Transparente Bereiche der JPG-Datei werden beibehalten."
+          "description": "GIF unterstützt Alphakanal. Transparente Bereiche der JPG-Datei werden beibehalten."
         },
         {
           "icon": "RiStackLine",
@@ -299,6 +299,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting JPG images to GIF reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",
@@ -331,11 +340,11 @@
         },
         {
           "question": "Ist Konvertierung von JPG zu GIF sicher?",
-          "answer": "Ja. Alles geschieht lokal im Browser via Canvas API. Dateien verlassen nie Ihr Gerat."
+          "answer": "Ja. Alles geschieht lokal in Ihrem Browser. Dateien verlassen nie Ihr Gerät."
         },
         {
-          "question": "Wird GIF von allen Browsern unterstutzt?",
-          "answer": "GIF wird von Chrome, Firefox, Safari, Edge und Opera unterstutzt."
+          "question": "Wird GIF von allen Browsern unterstützt?",
+          "answer": "GIF wird von Chrome, Firefox, Safari, Edge und Opera unterstützt."
         }
       ]
     },

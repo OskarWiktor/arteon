@@ -2,14 +2,14 @@
   "toolKey": "svgToAvif",
   "locale": "en",
   "metadata": {
-    "title": "SVG to AVIF converter — SVG AVIF",
-    "description": "Convert vector SVG graphics to compact AVIF raster format. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "title": "SVG to AVIF converter - SVG AVIF",
+    "description": "Convert vector SVG graphics to compact AVIF raster format. Free browser-based tool - no signup, no file limits, complete privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/svg-to-avif-converter"
   },
   "hero": {
     "title": "SVG to AVIF converter",
-    "description": "Convert vector SVG graphics to compact AVIF raster format. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "description": "Convert vector SVG graphics to compact AVIF raster format. Free browser-based tool - no signup, no file limits, complete privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "SVG to AVIF converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert vector SVG graphics to compact AVIF raster format. Free browser-based tool — no signup, no file limits, complete privacy.",
+      "description": "Convert vector SVG graphics to compact AVIF raster format. Free browser-based tool - no signup, no file limits, complete privacy.",
       "featureList": ["Conversion to AVIF", "Quality adjustment (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert SVG to AVIF", "SVG to AVIF conversion", "Free SVG to AVIF converter", "Change SVG to AVIF"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Set quality",
-          "text": "Adjust the AVIF quality slider — lower values produce smaller files."
+          "text": "Adjust the AVIF quality slider - lower values produce smaller files."
         },
         {
           "position": 3,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download the AVIF files — individually or all at once."
+          "text": "Download the AVIF files - individually or all at once."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert SVG to AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Scalable Vector Graphics (SVG) is a lossless image format based on vector graphics. It is widely used for logos and icons and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting SVG to AVIF (AV1 Image File Format) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">AVIF supports alpha transparency, preserving any transparent areas in your image. AVIF supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many SVG files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">SVG is a vector format — it scales to any size without pixelation and is ideal for logos, icons, and diagrams. However, some platforms do not support SVG (email clients, social media, some CMS systems). Converting SVG to AVIF rasterizes the vector image and applies advanced compression for minimal file size.</p><p class=\"text-mid mb-4\">AVIF (AV1 Image File Format) supports millions of colors, alpha transparency, and achieves 50–70% better compression than PNG. It is supported in Chrome 85+, Firefox 93+, Safari 16.4+, and Edge 121+.</p><p class=\"text-mid mb-4\">Note that converting vector (SVG) to raster (AVIF) is a one-way process — you cannot convert back to scalable vector. Keep the original SVG for editing. Use AVIF for web delivery where SVG is not supported.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "SVG to AVIF conversion",
       "variant": "right"
@@ -109,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert SVG to AVIF to significantly reduce page load times and improve Core Web Vitals scores."
+          "description": "Some web platforms do not support SVG (email clients, social media, certain CMS systems). Converting SVG to AVIF creates a compact raster image with excellent compression for web delivery."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "AVIF files are compatible with most modern platforms. Convert to AVIF for smaller attachments that stay within email size limits."
+          "description": "Email clients (Outlook, Gmail) do not render SVG images. Converting to AVIF creates a compact raster version that displays correctly in all email clients and messaging apps."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify may require specific formats – converting to AVIF ensures your product images meet their requirements."
+          "description": "Marketplace listings (Amazon, eBay, Etsy) typically require raster images. Converting SVG logos and product icons to AVIF produces the smallest possible raster files for product listings."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "AVIF provides a modern and efficient format for document image storage."
+          "description": "AVIF provides efficient raster storage for graphics originally created as SVG. Useful when you need fixed-resolution versions of vector assets for documentation or archiving."
         }
       ]
     },
@@ -258,6 +258,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting SVG to AVIF?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) – a good balance for most use cases. SVG graphics with flat colors compress extremely well in AVIF even at moderate quality.</strong></li><li><strong>85–90% – for detailed vector illustrations with gradients and complex effects.</strong></li><li><strong>60–70% – for thumbnails and small icons where file size matters more than fine detail.</strong></li></ul><p class=\"text-mid mt-3\">Since SVG is a vector format, the AVIF output quality depends on the rasterization resolution. Make sure the output dimensions match your needs before converting.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "SVG to AVIF – when does it make sense?",
+      "html": "<p class=\"text-mid mb-4\">SVG files are typically small (5–100 KB) since they store vector data as text. Converting to AVIF makes sense when:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>The target platform does not support SVG</strong> – email clients, some CMS systems, and social media require raster images.</li><li><strong>You need a fixed-resolution preview</strong> – AVIF provides the smallest raster format for thumbnails and previews.</li><li><strong>Complex SVGs with many paths</strong> – very complex SVGs can actually be larger than a rasterized AVIF, especially at moderate resolutions.</li></ul><p class=\"text-mid mt-3\">For web use where SVG is supported, keep the original SVG — it scales to any size and is typically smaller than any raster format. Use AVIF only when SVG is not an option.</p>"
     },
     {
       "type": "faq",

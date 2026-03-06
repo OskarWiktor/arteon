@@ -82,7 +82,7 @@ export default function CookieConsent({ translations: t }: { translations: Cooki
   useEffect(() => {
     const saved = readConsent();
     if (saved) {
-      // Migracja starych ciasteczek bez pola ads — domyślnie true, bo wcześniej reklamy działały
+      // Migracja starych ciasteczek bez pola ads - domyślnie true, bo wcześniej reklamy działały
       const ads = saved.ads ?? true;
       updateGtag(saved.analytics, ads);
       if (saved.analytics) {

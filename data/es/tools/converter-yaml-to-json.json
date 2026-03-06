@@ -2,7 +2,7 @@
   "toolKey": "yamlToJson",
   "locale": "es",
   "metadata": {
-    "title": "Convertidor YAML a JSON — YAML JSON",
+    "title": "Convertidor YAML a JSON - YAML JSON",
     "description": "Convierte YAML a formato JSON. Análisis y formato automáticos. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-yaml-a-json"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "¿Por qué convertir YAML a JSON?",
-      "html": "<p class=\"text-mid mb-4\">YAML es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a JSON puede ofrecer ventajas significativas — archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor online gratuito transforma tus archivos YAML al formato JSON directamente en el navegador. No se suben archivos a ningun servidor — todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">YAML es un formato ampliamente utilizado con gran compatibilidad. Segun el caso, la conversion a JSON puede ofrecer ventajas significativas - archivos mas pequenos, mejor calidad o mayor soporte de plataformas.</p><p class=\"text-mid mb-4\">Este convertidor online gratuito transforma tus archivos YAML al formato JSON directamente en el navegador. No se suben archivos a ningun servidor - todo el proceso ocurre localmente en tu dispositivo.</p><p class=\"text-mid\">Convierte todos los archivos que necesites sin limites diarios, sin registro y sin marcas de agua. Arrastra y suelta tus archivos, ajusta la calidad y descarga los resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
       "imageAlt": "YAML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Cuanto ahorras convirtiendo YAML a JSON?",
-      "html": "<p class=\"text-mid mb-4\">El ahorro depende del tipo de archivo y su compresion original:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto de camara</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagen de producto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Ahorro: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">El ahorro real varia segun contenido y ajustes de calidad.</p>"
+      "title": "\u00bfC\u00f3mo funciona la conversi\u00f3n de YAML a JSON?",
+      "html": "<p class=\"text-mid mb-4\">YAML usa indentaci\u00f3n y sintaxis m\u00ednima para representar datos estructurados, mientras que JSON usa llaves, corchetes y comillas expl\u00edcitas. El convertidor analiza la estructura YAML y produce JSON equivalente con formato correcto.</p><p class=\"text-mid mb-4\">La indentaci\u00f3n YAML se convierte en anidamiento JSON, los elementos con gui\u00f3n en elementos de array JSON, y los pares clave-valor YAML en propiedades de objetos JSON. Los tipos de datos se preservan: cadenas, n\u00fameros, booleanos, null, arrays y objetos se transfieren directamente.</p><p class=\"text-mid\">La conversi\u00f3n de YAML a JSON es \u00fatil cuando los datos de configuraci\u00f3n necesitan integrarse en aplicaciones web, APIs REST o sistemas que esperan entrada JSON. La conversi\u00f3n se realiza completamente en tu navegador.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Consejos para convertir YAML a JSON",
-      "description": "Consejos para evitar problemas:",
+      "title": "Consejos para la conversi\u00f3n de YAML a JSON",
+      "description": "Algunos consejos para evitar problemas comunes:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Archivos muy grandes",
-          "description": "Imagenes de mas de 4000×4000 px pueden ser mas lentas. Divide en lotes de 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Consistencia de indentaci\u00f3n",
+          "description": "YAML es sensible a la indentaci\u00f3n. Si tu archivo mezcla tabulaciones y espacios, el an\u00e1lisis puede fallar. El convertidor reporta errores de indentaci\u00f3n detectados."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Archivos ya comprimidos",
-          "description": "Si el YAML ya estaba muy comprimido, la conversion a JSON puede no ahorrar mucho."
+          "title": "Los comentarios se eliminan",
+          "description": "JSON no admite comentarios. Todos los comentarios # de tu archivo YAML no aparecer\u00e1n en la salida JSON. Conserva tu archivo YAML original."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparencia",
-          "description": "JSON no admite transparencia. Se reemplaza con fondo blanco. Considera PNG o WebP."
+          "icon": "RiCodeLine",
+          "title": "YAML multi-documento",
+          "description": "Los archivos YAML pueden contener m\u00faltiples documentos separados por ---. El convertidor procesa por defecto el primer documento."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Conserva originales",
-          "description": "La conversion con perdida es irreversible. Conserva copias de los archivos YAML."
+          "icon": "RiFileCodeLine",
+          "title": "Anclas y alias",
+          "description": "Las anclas YAML (&) y los alias (*) se resuelven durante la conversi\u00f3n. La salida JSON contiene los valores expandidos, no las referencias YAML."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Sí, funciona en cualquier dispositivo con un navegador web moderno."
         },
         {
-          "question": "Es seguro convertir YAML a JSON?",
-          "answer": "Si. Todo se procesa localmente en tu navegador via Canvas API. Los archivos nunca salen de tu dispositivo."
+          "question": "\u00bfEs segura la conversi\u00f3n de YAML a JSON?",
+          "answer": "S\u00ed. Toda la conversi\u00f3n se realiza localmente en tu navegador. Ning\u00fan dato se env\u00eda a un servidor."
         },
         {
-          "question": "Puedo convertir varios archivos YAML a la vez?",
-          "answer": "Si. Conversion por lotes sin limite. Arrastra archivos al convertidor."
+          "question": "\u00bfSe conservan los comentarios YAML?",
+          "answer": "No. JSON no admite comentarios, por lo que todos los comentarios # de tu archivo YAML se descartan durante la conversi\u00f3n. Conserva tu archivo YAML original."
         },
         {
-          "question": "Es JSON compatible con todos los navegadores?",
-          "answer": "JSON es compatible con Chrome, Firefox, Safari, Edge y Opera."
+          "question": "\u00bfLa conversi\u00f3n es sin p\u00e9rdida?",
+          "answer": "S\u00ed, para los valores de datos. Todas las cadenas, n\u00fameros, booleanos, valores null, arrays y objetos se preservan exactamente. Solo las caracter\u00edsticas espec\u00edficas de YAML como comentarios y anclas no se transfieren a JSON."
         }
       ]
     },

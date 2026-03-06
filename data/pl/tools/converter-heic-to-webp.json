@@ -28,7 +28,7 @@
       "alternateName": ["Zamiana HEIC na WebP online", "Konwersja HEIC do WebP"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter HEIC na WebP online. Zamień zdjęcia HEIC z iPhone na lekki WebP — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter HEIC na WebP online. Zamień zdjęcia HEIC z iPhone na lekki WebP - pliki nie są wysyłane na serwer.",
       "featureList": ["Konwersja HEIC/HEIF do WebP", "Regulacja poziomu jakości", "Konwersja wielu plików jednocześnie", "Przetwarzanie lokalne w przeglądarce"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować HEIC na WebP?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do zdjęć z urządzeń Apple.</p><p class=\"text-mid mb-4\">Konwersja HEIC na WebP (WebP) pozwala wykorzystać nowoczesną kompresję, która zmniejsza rozmiar plików bez utraty jakości.</p><p class=\"text-mid mb-4\">WebP obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. WebP obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików HEIC, ile potrzebujesz – całkowicie za darmo.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC to format zdjęć stosowany domyślnie na iPhone'ach i iPadach od iOS 11. Oferuje dobrą kompresję, ale jest właściwościowym formatem Apple — nie jest obsługiwany przez przeglądarki Chrome, Firefox i Edge. WebP rozwiązuje oba problemy: jest otwarty, lekki i obsługiwany przez wszystkie nowoczesne przeglądarki.</p><p class=\"text-mid mb-4\">WebP to format stworzony przez Google, który oferuje kompresję o 25–35% lepszą niż JPG. Obsługuje kompresję stratną i bezstratną, kanał alfa (przezroczystość) oraz animacje. Konwersja HEIC na WebP to idealny wybór, gdy chcesz opublikować zdjęcia z iPhone'a na stronie internetowej — pliki WebP są lekkie i szybko się ładują.</p><p class=\"text-mid mb-4\">Zdjęcie 12 MP z iPhone'a w HEIC waży 2–3 MB. Po konwersji na WebP przy jakości 80% plik może ważyć 500 KB–1.2 MB — to redukcja o 50–75% przy zachowaniu porównywalnej jakości wizualnej. Dla sklepów internetowych i blogów to bezpośrednia poprawa Core Web Vitals.</p><p class=\"text-mid\">Konwerter przetwarza pliki lokalnie w przeglądarce — nic nie jest wysyłane na serwer. Bez rejestracji, bez limitów, bez znaków wodnych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwersja HEIC na WEBP",
       "variant": "right"
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakosci — co wybrac przy konwersji HEIC na WebP?",
-      "html": "<p class=\"text-mid\">Suwak jakosci pozwala ustawic wartosc od 60% do 95%. Wyzsza wartosc oznacza lepsza jakosc obrazu, ale tez wiekszy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyslne) — dobry kompromis dla wiekszosci zastosowan: strony firmowe, blogi, artykuly. Roznica wizualna jest praktycznie niezauwazalna.</strong></li><li><strong>85–90% — dla zdjec produktowych, portfolio i galerii, gdzie jakosc jest priorytetem.</strong></li><li><strong>60–70% — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii.</strong></li></ul><p class=\"text-mid mt-3\">Przy jakosci 80% roznica wizualna miedzy oryginalem HEIC a wynikowym WebP jest praktycznie niezauwazalna golym okiem, a plik jest znaczaco mniejszy.</p>"
+      "title": "Ustawienia jakości — co wybrać przy konwersji HEIC na WebP?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne) — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna jest praktycznie niezauważalna.</strong></li><li><strong>85–90% — dla zdjęć produktowych, portfolio i galerii, gdzie jakość jest priorytetem.</strong></li><li><strong>60–70% — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii.</strong></li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem HEIC a wynikowym WebP jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -253,8 +253,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ile mozna zaoszczedzic konwertujac HEIC na WebP?",
-      "html": "<p class=\"text-mid mb-4\">Oszczednosci zaleza od rodzaju pliku zrodlowego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjecie z aparatu</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczednosc: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczednosci moga sie roznic. Konwerter pokazuje dokladny rozmiar przed i po konwersji.</p>"
+      "title": "Ile można zaoszczędzić konwertując HEIC na WebP?",
+      "html": "<p class=\"text-mid mb-4\">Oszczędności zależą od rodzaju pliku źródłowego i jego oryginalnej kompresji:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Zdjęcie z aparatu</p><p class=\"text-light text-sm\">4 MB → 680 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Grafika produktowa</p><p class=\"text-light text-sm\">2.5 MB → 420 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~83%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / baner</p><p class=\"text-light text-sm\">1.5 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Oszczędność: ~81%</p></div></div><p class=\"text-light mt-4 text-sm\">Rzeczywiste oszczędności mogą się różnić. Konwerter pokazuje dokładny rozmiar przed i po konwersji.</p>"
     },
     {
       "type": "gap",
@@ -262,8 +262,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Wplyw konwersji obrazow na szybkosc strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaznikow wydajnosci, ktore Google wykorzystuje przy ocenie stron. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyswietlenia najwiekszego widocznego elementu na ekranie.</p><p class=\"text-mid mb-4\">Konwersja obrazow HEIC na WebP zmniejsza rozmiar plikow graficznych, co bezposrednio skraca czas pobierania zasobow i poprawia wskaznik LCP. Mniejsze pliki oznaczaja szybsze ladowanie strony — szczegolnie istotne na urzadzeniach mobilnych. Dodatkowe techniki — <code>loading=\"lazy\"</code> i <code>fetchpriority=\"high\"</code> — przyspieszaja renderowanie.</p><p class=\"text-mid\">Narzedzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazuja pliki do optymalizacji.</p>"
+      "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie.</p><p class=\"text-mid mb-4\">Konwersja obrazów HEIC na WebP zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych. Dodatkowe techniki — <code>loading=\"lazy\"</code> i <code>fetchpriority=\"high\"</code> — przyspieszają renderowanie.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują pliki do optymalizacji.</p>"
     },
     {
       "type": "gap",
@@ -271,29 +271,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Na co zwrocic uwage przy konwersji HEIC na WebP?",
-      "description": "Kilka wskazowek, ktore pomoga uniknac problemow:",
+      "title": "Na co zwrócić uwagę przy konwersji HEIC na WebP?",
+      "description": "Kilka wskazówek, które pomogą uniknąć problemów:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Bardzo duze pliki",
-          "description": "Konwersja obrazow powyzej 4000×4000 pikseli moze byc wolniejsza. Rozwaz dzielenie ich na partie po 10–20 sztuk."
+          "title": "Bardzo duże pliki",
+          "description": "Konwersja obrazów powyżej 4000×4000 pikseli może być wolniejsza. Rozważ dzielenie ich na partie po 10–20 sztuk."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Juz skompresowane pliki",
-          "description": "Jesli oryginalny plik HEIC byl juz mocno skompresowany, konwersja na WebP moze nie przyniesc duzych oszczednosci."
+          "title": "Już skompresowane pliki",
+          "description": "Jeśli oryginalny plik HEIC był już mocno skompresowany, konwersja na WebP może nie przynieść dużych oszczędności."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Przezroczystosc",
-          "description": "Format WebP obsluguje kanal alfa. Przezroczyste obszary pliku HEIC zostana zachowane."
+          "title": "Przezroczystość",
+          "description": "Format WebP obsługuje kanał alfa. Przezroczyste obszary pliku HEIC zostaną zachowane."
         },
         {
           "icon": "RiStackLine",
-          "title": "Zachowaj oryginaly",
-          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plikow HEIC aby moc powtorzyc konwersje."
+          "title": "Zachowaj oryginały",
+          "description": "Konwersja stratna jest nieodwracalna. Zachowaj kopie oryginalnych plików HEIC, aby móc powtórzyć konwersję."
         }
       ]
     },

@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert BMP to WebP?",
-      "html": "<p class=\"text-mid mb-4\">Bitmap (BMP) is a lossless image format supporting millions colors. It is widely used for uncompressed images and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting BMP to WebP (WebP) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">WebP supports alpha transparency, preserving any transparent areas in your image. WebP supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many BMP files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">BMP (Bitmap) stores raw pixel data without compression — files are extremely large (a 3000×2000 pixel BMP weighs around 18 MB). WebP uses advanced compression to reduce file size by 95–99% while maintaining excellent visual quality. Converting BMP to WebP is essential for any web use.</p><p class=\"text-mid mb-4\">WebP supports both lossy and lossless compression, alpha transparency, and millions of colors. It is supported by all major browsers including Chrome, Firefox, Safari 14+, and Edge. At quality 80, WebP produces visually identical results to the original BMP at a fraction of the file size.</p><p class=\"text-mid mb-4\">For maximum compression, choose AVIF instead. For maximum compatibility with all browsers and devices, WebP is the safer choice.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "BMP to WebP conversion",
       "variant": "right"
@@ -101,22 +101,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert BMP to WebP to significantly reduce page load times and improve Core Web Vitals scores."
+          "description": "BMP files are uncompressed and far too large for web use. WebP reduces a typical 18 MB BMP to under 500 KB with excellent quality — essential for any web publishing workflow."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "WebP files are compatible with most modern platforms. Convert to WebP for smaller attachments that stay within email size limits."
+          "description": "BMP files are impractical to share due to enormous size. Converting to WebP creates compact files that are easy to attach to emails and share via messaging, compatible with all modern platforms."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify often prefer WebP format for product images due to its optimal balance of quality and file size."
+          "description": "Legacy scanners and systems often output BMP files. Converting to WebP prepares images for modern e-commerce platforms (Shopify, Amazon, eBay) with optimal compression and broad browser support."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "WebP provides a modern and efficient format for document image storage."
+          "description": "BMP files consume massive storage. Converting BMP collections to WebP can reduce storage by 95%+ while maintaining quality suitable for screen display and web use."
         }
       ]
     },
@@ -250,6 +250,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting BMP to WebP?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) – a good balance for most use cases. Since BMP is uncompressed, even moderate WebP compression achieves dramatic size reduction.</strong></li><li><strong>85–90% – for photographs and detailed graphics where near-lossless quality is needed.</strong></li><li><strong>60–70% – when minimizing file size is the priority. Even at 60%, WebP produces good results from uncompressed BMP sources.</strong></li></ul><p class=\"text-mid mt-3\">A typical 18 MB BMP becomes 300–800 KB in WebP at quality 80 — a 95%+ reduction in file size while maintaining excellent visual quality.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting BMP to WebP?",
+      "html": "<p class=\"text-mid mb-4\">BMP files are uncompressed and extremely large. WebP provides dramatic savings:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo (3000×2000)</p><p class=\"text-light text-sm\">18 MB → 550 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~97%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Scan (A4, 300 DPI)</p><p class=\"text-light text-sm\">25 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~99%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">5.7 MB → 140 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~98%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

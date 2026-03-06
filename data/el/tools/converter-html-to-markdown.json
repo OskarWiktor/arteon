@@ -2,7 +2,7 @@
   "toolKey": "htmlToMarkdown",
   "locale": "el",
   "metadata": {
-    "title": "Μετατροπέας HTML σε Markdown — HTML Markdown",
+    "title": "Μετατροπέας HTML σε Markdown - HTML Markdown",
     "description": "Μετατρέψτε HTML σε μορφή Markdown. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-html-se-markdown"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε HTML σε Markdown;",
-      "html": "<p class=\"text-mid mb-4\">To HTML einai ena eyrytera chrisimopoioumeno format archeiou me megali symvatotita. Analoga me ti chrisi, i metatropi se MARKDOWN mporei na prosferei simantika pleonektimata — mikrotera archeia, kaliteri poiotita i eyriteri ypostirixi platformon.</p><p class=\"text-mid mb-4\">Aytos o dorean online metatropeas metatrepei ta archeia HTML se format MARKDOWN apeytheias ston browser. Kanena archeio den anevasei se server — oli i diadikasia ginetai topika sti syskevi sas.</p><p class=\"text-mid\">Metatrepste osa archeia thelete choris imerisia oria, choris eggraphi kai choris ydrografimatam. Syrete ta archeia, prosamoste tin poiotita kai katevaste ta apotelesmata.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το HTML είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε MARKDOWN μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία HTML σε format MARKDOWN απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "HTML to Markdown conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poso exoikonomeis metatrepontas HTML se MARKDOWN;",
-      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+      "title": "Πώς λειτουργεί η μετατροπή HTML σε Markdown;",
+      "html": "<p class=\"text-mid mb-4\">Η HTML χρησιμοποιεί tags όπως &lt;h1&gt;, &lt;strong&gt;, &lt;a&gt; και &lt;ul&gt; για δόμηση περιεχομένου. Η Markdown χρησιμοποιεί απλούστερα σύμβολα: # για επικεφαλίδες, ** για έντονα, [Κείμενο](URL) για συνδέσμους και - για λίστες. Ο μετατροπέας αναλύει το δέντρο HTML και αντιστοιχίζει κάθε στοιχείο στο Markdown ισοδύναμό του.</p><p class=\"text-mid mb-4\">Για παράδειγμα, &lt;h1&gt;Επικεφαλίδα&lt;/h1&gt; γίνεται # Επικεφαλίδα, &lt;strong&gt;έντονα&lt;/strong&gt; γίνεται **έντονα**. Σύνθετες δομές όπως πίνακες, μπλοκ κώδικα και εμφωλευμένες λίστες χειρίζονται επίσης.</p><p class=\"text-mid\">Η μετατροπή HTML σε Markdown είναι χρήσιμη για μεταφορά περιεχομένου σε συστήματα τεκμηρίωσης, γεννήτριες στατικών σελίδων ή πλατφόρμες που χρησιμοποιούν Markdown. Όλη η μετατροπή γίνεται τοπικά στον περιηγητή σας.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Symvoules gia metatropi HTML se MARKDOWN",
-      "description": "Symvoules gia apofygi provlimaton:",
+      "title": "Συμβουλές για μετατροπή HTML σε Markdown",
+      "description": "Μερικές συμβουλές για την αποφυγή συνηθισμένων προβλημάτων:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Poly megala archeia",
-          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Inline styles αφαιρούνται",
+          "description": "Η Markdown δεν υποστηρίζει CSS. Inline styles, classes και IDs από την HTML αφαιρούνται κατά τη μετατροπή. Μόνο η σημασιολογική δομή διατηρείται."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Idi sympiesmena",
-          "description": "An to HTML itan idi sympiesmeno, i metatropi se MARKDOWN mporei na min exoikonomisi polla."
+          "title": "Σύνθετες διατάξεις",
+          "description": "HTML layouts με div, grid ή flexbox δεν αναπαρίστανται σε Markdown. Ο μετατροπέας εξάγει το κείμενο και διατηρεί επικεφαλίδες, λίστες και συνδέσμους."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Diafaneia",
-          "description": "To MARKDOWN den ypostirizei diafaneia. Oi diafaneis perioches ginontai lefkes. Skeftite PNG i WebP."
+          "icon": "RiCodeLine",
+          "title": "Εικόνες και σύνδεσμοι",
+          "description": "HTML &lt;img&gt; tags γίνονται ![Alt](Src) και &lt;a&gt; tags γίνονται [Κείμενο](URL) σε Markdown. Σχετικά URLs διατηρούνται αναλλοίωτα."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Kratiste ta prototypa",
-          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton HTML archeion."
+          "icon": "RiFileTextLine",
+          "title": "Πίνακες",
+          "description": "HTML πίνακες μετατρέπονται σε Markdown πίνακες με pipe. Σύνθετοι πίνακες με colspan ή rowspan μπορεί να απλοποιηθούν."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What HTML elements are converted?",
+      "html": "<p class=\"text-mid mb-4\">The converter handles all common semantic HTML elements:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – &lt;h1&gt; through &lt;h6&gt; → # through ######</li><li><strong>Text formatting</strong> – &lt;strong&gt;/&lt;b&gt; → **bold**, &lt;em&gt;/&lt;i&gt; → *italic*, &lt;del&gt; → ~~strikethrough~~</li><li><strong>Links</strong> – &lt;a href&gt; → [text](url)</li><li><strong>Images</strong> – &lt;img&gt; → ![alt](src)</li><li><strong>Lists</strong> – &lt;ul&gt;/&lt;ol&gt; → - / 1. list items</li><li><strong>Code</strong> – &lt;code&gt; → `inline`, &lt;pre&gt;&lt;code&gt; → fenced blocks</li><li><strong>Tables</strong> – &lt;table&gt; → pipe-separated Markdown tables</li></ul><p class=\"text-mid mt-3\">Non-semantic elements (div, span, script, style) are stripped. Only meaningful content is preserved in the Markdown output.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
         },
         {
-          "question": "Einai asfalis i metatropi HTML se MARKDOWN;",
-          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+          "question": "Είναι ασφαλής η μετατροπή HTML σε Markdown;",
+          "answer": "Ναι. Όλη η μετατροπή γίνεται τοπικά στον περιηγητή σας. Κανένα δεδομένο δεν αποστέλλεται σε κανέναν διακομιστή."
         },
         {
-          "question": "Mporo na metatrepso polla archeia HTML;",
-          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+          "question": "Χάνεται η μορφοποίηση κατά τη μετατροπή;",
+          "answer": "Η Markdown υποστηρίζει επικεφαλίδες, έντονα, πλάγια, συνδέσμους, εικόνες, λίστες, μπλοκ κώδικα, παραθέσεις και πίνακες. Αποκλειστικές HTML δυνατότητες όπως CSS, χρώματα και σύνθετες διατάξεις απλοποιούνται."
         },
         {
-          "question": "Ypostirizoun oloi oi browsers to MARKDOWN;",
-          "answer": "To MARKDOWN ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
+          "question": "Μπορώ να χρησιμοποιήσω την έξοδο Markdown στο GitHub;",
+          "answer": "Ναι. Η έξοδος ακολουθεί τυπική σύνταξη Markdown, συμβατή με GitHub, GitLab, Bitbucket, Notion, Obsidian και όλες τις πλατφόρμες που αποδίδουν Markdown."
         }
       ]
     },

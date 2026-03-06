@@ -1,0 +1,281 @@
+{
+  "toolKey": "remToPx",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de rem a píxeles – CSS",
+    "description": "Convierte unidades CSS rem a píxeles. Para diseño web responsivo.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-rem-a-px"
+  },
+  "hero": {
+    "title": "Convertir rem a píxeles",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-rem-a-px",
+      "label": "rem a px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de rem a píxeles – CSS",
+      "alternateName": ["Convertir rem a píxeles"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte unidades CSS rem a píxeles. Para diseño web responsivo.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir rem a píxeles?",
+      "html": "<p class=\"text-mid mb-4\">La unidad CSS rem es relativa al elemento raíz (html). Estándar: 16px, por lo que 1rem = 16px. A diferencia de em, rem no se acumula — siempre referencia al elemento raíz.</p><p class=\"text-mid mb-4\">Rem es la unidad recomendada para diseño web responsivo moderno. Ofrece tamaños consistentes y escalables que respetan la configuración de accesibilidad.</p><p class=\"text-mid mb-4\">Convertir a píxeles ayuda a entender el tamaño real renderizado.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de rem a píxeles – CSS – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada. Puedes usar punto o coma como separador decimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado aparece instantáneamente en el campo contiguo.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Haz clic en Copiar o usa el botón Invertir para convertir en dirección opuesta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Desarrollo CSS",
+          "description": "Convierte rem a píxeles al depurar o traducir mockups en px."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Sistemas de diseño",
+          "description": "Define escalas de espaciado en rem para tokens de diseño consistentes y escalables."
+        },
+        {
+          "icon": "RiAccessibilityLine",
+          "title": "Accesibilidad",
+          "description": "Rem respeta la configuración del usuario. Verifica tamaños mínimos de área táctil."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Tailwind CSS",
+          "description": "Tailwind usa rem internamente: p-4 = 1rem = 16px, text-lg = 1,125rem = 18px."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza instantáneamente mientras escribes."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "Convierte en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Una tabla con valores de conversión comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">px = rem × tamaño de fuente raíz. Estándar = 16px.</p><p class=\"text-mid mb-4\">Con html { font-size: 62,5% } la raíz = 10px, por lo que 1,6rem = 16px.</p><p class=\"text-mid\">Rem nunca se acumula. 1rem es siempre igual, sin importar la profundidad de anidamiento.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">px = rem × tamaño de fuente raíz. Estándar = 16px.</p><p class=\"text-mid mb-4\">Con html { font-size: 62,5% } la raíz = 10px, por lo que 1,6rem = 16px.</p><p class=\"text-mid\">Rem nunca se acumula. 1rem es siempre igual, sin importar la profundidad de anidamiento.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "rem vs em vs px",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "rem"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Referencia",
+          "values": {
+            "unit1": "Fuente raíz",
+            "unit2": "Píxel fijo"
+          }
+        },
+        {
+          "name": "Se acumula",
+          "values": {
+            "unit1": "No (siempre raíz)",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Responsivo",
+          "values": {
+            "unit1": "Sí",
+            "unit2": "No"
+          }
+        },
+        {
+          "name": "Accesibilidad",
+          "values": {
+            "unit1": "Respeta configuración",
+            "unit2": "Tamaño fijo"
+          }
+        },
+        {
+          "name": "Predecibilidad",
+          "values": {
+            "unit1": "Consistente en todo lugar",
+            "unit2": "Siempre consistente"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Cuántos píxeles es 1rem?",
+          "answer": "Por defecto 1rem = 16px. Modificable cambiando el tamaño de fuente raíz."
+        },
+        {
+          "question": "¿Debo usar rem o px?",
+          "answer": "Rem para tipografía, espaciado y layout. Px para bordes, sombras y propiedades que no deben escalar."
+        },
+        {
+          "question": "¿Cómo usa Tailwind rem?",
+          "answer": "Espaciado Tailwind: pasos de 0,25rem. p-1 = 0,25rem (4px), p-4 = 1rem (16px), p-8 = 2rem (32px)."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "rem na px – Arteon",
+      "defaultSubject": "Feedback: rem-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

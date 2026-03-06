@@ -3,13 +3,13 @@
   "locale": "ro",
   "metadata": {
     "title": "Convertor SVG în WebP – SVG WebP",
-    "description": "Convertește grafice SVG în WebP usor. Ideal pentru site-uri si retele sociale. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+    "description": "Convertește grafice SVG în WebP usor. Ideal pentru site-uri si retele sociale. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp",
     "path": "/ro/instrumente/convertor-svg-in-webp"
   },
   "hero": {
     "title": "Convertor SVG în WebP",
-    "description": "Convertește grafice SVG în WebP usor. Ideal pentru site-uri si retele sociale. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+    "description": "Convertește grafice SVG în WebP usor. Ideal pentru site-uri si retele sociale. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertor-jpg-png-in-webp-ro.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertor SVG în WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertește grafice SVG în WebP usor. Ideal pentru site-uri si retele sociale. Instrument gratuit în browser — fără înregistrare, fără limite, confidențialitate totală.",
+      "description": "Convertește grafice SVG în WebP usor. Ideal pentru site-uri si retele sociale. Instrument gratuit în browser - fără înregistrare, fără limite, confidențialitate totală.",
       "featureList": ["Conversie SVG în WebP", "Calitate reglabilă (60–95%)", "Conversie în lot", "Procesare locală în browser"],
       "alternateName": ["Conversie SVG în WEBP", "Convertor SVG în WEBP", "Convertor gratuit SVG în WEBP"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Setari calitate — ce alegi la conversia SVG in WebP?",
-      "html": "<p class=\"text-mid\">Cursorul permite 60%-95%. Mai mare = calitate mai buna dar fisiere mai mari.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (implicit) — echilibru bun pentru site-uri, bloguri, articole.</strong></li><li><strong>85–90% — pentru fotografii de produse, portofolii si galerii.</strong></li><li><strong>60–70% — cand minimizarea dimensiunii e prioritara.</strong></li></ul><p class=\"text-mid mt-3\">La 80% diferenta vizuala dintre SVG original si WebP rezultat e imperceptibila.</p>"
+      "title": "Setari calitate - ce alegi la conversia SVG in WebP?",
+      "html": "<p class=\"text-mid\">Cursorul permite 60%-95%. Mai mare = calitate mai buna dar fisiere mai mari.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (implicit) - echilibru bun pentru site-uri, bloguri, articole.</strong></li><li><strong>85–90% - pentru fotografii de produse, portofolii si galerii.</strong></li><li><strong>60–70% - cand minimizarea dimensiunii e prioritara.</strong></li></ul><p class=\"text-mid mt-3\">La 80% diferenta vizuala dintre SVG original si WebP rezultat e imperceptibila.</p>"
     },
     {
       "type": "gap",

@@ -2,7 +2,7 @@
   "toolKey": "csvToJson",
   "locale": "el",
   "metadata": {
-    "title": "Μετατροπέας CSV σε JSON — CSV JSON",
+    "title": "Μετατροπέας CSV σε JSON - CSV JSON",
     "description": "Μετατρέψτε CSV σε μορφή JSON. Αυτόματη ανάλυση και μορφοποίηση. Δωρεάν.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-csv-se-json"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε CSV σε JSON;",
-      "html": "<p class=\"text-mid mb-4\">To CSV einai ena eyrytera chrisimopoioumeno format archeiou me megali symvatotita. Analoga me ti chrisi, i metatropi se JSON mporei na prosferei simantika pleonektimata — mikrotera archeia, kaliteri poiotita i eyriteri ypostirixi platformon.</p><p class=\"text-mid mb-4\">Aytos o dorean online metatropeas metatrepei ta archeia CSV se format JSON apeytheias ston browser. Kanena archeio den anevasei se server — oli i diadikasia ginetai topika sti syskevi sas.</p><p class=\"text-mid\">Metatrepste osa archeia thelete choris imerisia oria, choris eggraphi kai choris ydrografimatam. Syrete ta archeia, prosamoste tin poiotita kai katevaste ta apotelesmata.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το CSV είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε JSON μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία CSV σε format JSON απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "CSV to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poso exoikonomeis metatrepontas CSV se JSON;",
-      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+      "title": "Πώς λειτουργεί η μετατροπή CSV σε JSON;",
+      "html": "<p class=\"text-mid mb-4\">Η μορφή CSV (Comma-Separated Values) αποθηκεύει δεδομένα σε γραμμές κειμένου όπου οι τιμές διαχωρίζονται με κόμμα ή ερωτηματικό. Η μορφή JSON (JavaScript Object Notation) οργανώνει τα ίδια δεδομένα ως πίνακα αντικειμένων με ζεύγη κλειδιού-τιμής, όπου κάθε γραμμή γίνεται αντικείμενο και κάθε επικεφαλίδα στήλης γίνεται κλειδί.</p><p class=\"text-mid mb-4\">Ο μετατροπέας διαβάζει την πρώτη γραμμή του CSV ως επικεφαλίδες στηλών και τις χρησιμοποιεί ως ονόματα ιδιοτήτων σε κάθε αντικείμενο JSON. Κάθε επόμενη γραμμή γίνεται ξεχωριστό αντικείμενο στον προκύπτοντα πίνακα JSON.</p><p class=\"text-mid\">Η μετατροπή γίνεται τοπικά στον περιηγητή σας — κανένα δεδομένο δεν αποστέλλεται σε κανέναν διακομιστή.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Symvoules gia metatropi CSV se JSON",
-      "description": "Symvoules gia apofygi provlimaton:",
+      "title": "Συμβουλές για μετατροπή CSV σε JSON",
+      "description": "Μερικές συμβουλές για την αποφυγή συνηθισμένων προβλημάτων:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Poly megala archeia",
-          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+          "icon": "RiFileTextLine",
+          "title": "Επικεφαλίδες στηλών",
+          "description": "Βεβαιωθείτε ότι το αρχείο CSV έχει γραμμή επικεφαλίδων. Ο μετατροπέας χρησιμοποιεί την πρώτη γραμμή ως ονόματα ιδιοτήτων JSON."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Idi sympiesmena",
-          "description": "An to CSV itan idi sympiesmeno, i metatropi se JSON mporei na min exoikonomisi polla."
+          "icon": "RiSeparator",
+          "title": "Αναγνώριση διαχωριστικού",
+          "description": "Ο μετατροπέας ανιχνεύει αυτόματα αν το CSV χρησιμοποιεί κόμμα, ερωτηματικό ή tab ως διαχωριστικό."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Diafaneia",
-          "description": "To JSON den ypostirizei diafaneia. Oi diafaneis perioches ginontai lefkes. Skeftite PNG i WebP."
+          "icon": "RiCodeLine",
+          "title": "Ειδικοί χαρακτήρες",
+          "description": "Οι τιμές που περιέχουν κόμματα, εισαγωγικά ή αλλαγές γραμμής πρέπει να περικλείονται σε διπλά εισαγωγικά. Ο μετατροπέας χειρίζεται αυτόματα την τυπική διαφυγή CSV."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Kratiste ta prototypa",
-          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton CSV archeion."
+          "icon": "RiFileCodeLine",
+          "title": "Κωδικοποίηση χαρακτήρων",
+          "description": "Για καλύτερα αποτελέσματα χρησιμοποιήστε αρχεία CSV σε κωδικοποίηση UTF-8. Αρχεία με άλλες κωδικοποιήσεις μπορεί να εμφανίσουν ειδικούς χαρακτήρες λανθασμένα στο JSON."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Common CSV formatting issues and how to handle them",
+      "html": "<p class=\"text-mid mb-4\">CSV files from different sources can have inconsistent formatting. Here are common issues the converter handles:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Different separators</strong> – commas, semicolons, tabs. European exports from Excel often use semicolons because commas are used as decimal separators.</li><li><strong>Quoted values</strong> – values containing commas or newlines must be wrapped in double quotes. The converter handles this correctly.</li><li><strong>Unicode and special characters</strong> – accented characters, CJK text, and emoji are preserved in the JSON output.</li><li><strong>Empty values</strong> – empty cells are converted to empty strings or null in JSON, depending on context.</li></ul><p class=\"text-mid mt-3\">If conversion fails, check that your CSV has consistent column counts across all rows and that quoted values use proper double-quote escaping.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
         },
         {
-          "question": "Einai asfalis i metatropi CSV se JSON;",
-          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+          "question": "Είναι ασφαλής η μετατροπή CSV σε JSON;",
+          "answer": "Ναι. Όλη η μετατροπή γίνεται τοπικά στον περιηγητή σας. Κανένα δεδομένο δεν αποστέλλεται σε κανέναν διακομιστή."
         },
         {
-          "question": "Mporo na metatrepso polla archeia CSV;",
-          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+          "question": "Μπορώ να χρησιμοποιήσω το αποτέλεσμα JSON στην εφαρμογή μου;",
+          "answer": "Ναι. Η έξοδος είναι τυπικό JSON, συμβατό με όλες τις γλώσσες προγραμματισμού, βάσεις δεδομένων ή API — JavaScript, Python, PHP, Java και πολλές άλλες."
         },
         {
-          "question": "Ypostirizoun oloi oi browsers to JSON;",
-          "answer": "To JSON ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
+          "question": "Δεν έχει όριο μεγέθους αρχείου;",
+          "answer": "Ο μετατροπέας χειρίζεται αρχεία κάθε μεγέθους που μπορεί να επεξεργαστεί ο περιηγητής σας. Για αρχεία άνω των 10 MB, η επεξεργασία μπορεί να διαρκέσει μερικά δευτερόλεπτα."
         }
       ]
     },

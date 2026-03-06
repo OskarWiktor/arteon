@@ -28,7 +28,7 @@
       "alternateName": ["Zamiana HEIC na JPG online", "Konwersja HEIC do JPG", "HEIC to JPG converter", "Konwerter zdjęć iPhone"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter HEIC na JPG online. Zamień zdjęcia HEIC z iPhone na uniwersalny JPG w przeglądarce — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter HEIC na JPG online. Zamień zdjęcia HEIC z iPhone na uniwersalny JPG w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": [
         "Konwersja HEIC/HEIF do JPG",
         "Regulacja poziomu jakości (60–95%)",
@@ -64,7 +64,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować HEIC na JPG?",
-      "html": "<p class=\"text-mid mb-4\">HEIC (High Efficiency Image Container) to format obrazu używany domyślnie przez Apple na urządzeniach iPhone (od iOS 11) i iPad. HEIC oferuje kompresję o ok. 40–50% lepszą niż JPG przy porównywalnej jakości — dlatego Apple wybrał go, aby zaoszczędzić miejsce na urządzeniu.</p><p class=\"text-mid mb-4\">Problem polega na tym, że HEIC nie jest powszechnie obsługiwany poza ekosystemem Apple. Systemy Windows (przed Windows 10 v1809), większość programów biurowych, platformy społecznościowe i wiele stron internetowych nie otwiera plików HEIC. Wysłanie zdjęcia HEIC e-mailem do osoby bez iPhone'a może oznaczać, że nie będzie mogła go otworzyć.</p><p class=\"text-mid\">JPG (JPEG) to najbardziej rozpowszechniony format graficzny na świecie. Działa w każdym programie, przeglądarce i systemie operacyjnym. Konwersja HEIC na JPG rozwiązuje problem kompatybilności — zdjęcia z iPhone stają się dostępne wszędzie.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC (High Efficiency Image Container) to format obrazu używany domyślnie przez Apple na urządzeniach iPhone (od iOS 11) i iPad. HEIC oferuje kompresję o ok. 40–50% lepszą niż JPG przy porównywalnej jakości - dlatego Apple wybrał go, aby zaoszczędzić miejsce na urządzeniu.</p><p class=\"text-mid mb-4\">Problem polega na tym, że HEIC nie jest powszechnie obsługiwany poza ekosystemem Apple. Systemy Windows (przed Windows 10 v1809), większość programów biurowych, platformy społecznościowe i wiele stron internetowych nie otwiera plików HEIC. Wysłanie zdjęcia HEIC e-mailem do osoby bez iPhone'a może oznaczać, że nie będzie mogła go otworzyć.</p><p class=\"text-mid\">JPG (JPEG) to najbardziej rozpowszechniony format graficzny na świecie. Działa w każdym programie, przeglądarce i systemie operacyjnym. Konwersja HEIC na JPG rozwiązuje problem kompatybilności - zdjęcia z iPhone stają się dostępne wszędzie.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter HEIC na JPG – Arteon"
     },
@@ -139,7 +139,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Zdjęcia z iPhone nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer. Po zamknięciu strony dane są usuwane."
+          "description": "Zdjęcia z iPhone nie opuszczają komputera. Konwersja odbywa się w przeglądarce - nic nie jest wysyłane na serwer. Po zamknięciu strony dane są usuwane."
         },
         {
           "icon": "RiInfinityFill",
@@ -242,8 +242,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji HEIC na JPG?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem HEIC a wynikowym JPG jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji HEIC na JPG?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem HEIC a wynikowym JPG jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -261,7 +261,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów HEIC na JPG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów HEIC na JPG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -291,7 +291,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików HEIC, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików HEIC, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -306,7 +306,7 @@
       "items": [
         {
           "question": "Co to jest HEIC?",
-          "answer": "HEIC (High Efficiency Image Container) to format obrazu oparty na kodeku HEVC (H.265). Jest używany domyślnie przez Apple na urządzeniach iPhone (od iOS 11) i iPad. HEIC oferuje lepszą kompresję niż JPG — zdjęcia zajmują mniej miejsca przy porównywalnej jakości."
+          "answer": "HEIC (High Efficiency Image Container) to format obrazu oparty na kodeku HEVC (H.265). Jest używany domyślnie przez Apple na urządzeniach iPhone (od iOS 11) i iPad. HEIC oferuje lepszą kompresję niż JPG - zdjęcia zajmują mniej miejsca przy porównywalnej jakości."
         },
         {
           "question": "Dlaczego nie mogę otworzyć pliku HEIC na komputerze?",
@@ -330,11 +330,11 @@
         },
         {
           "question": "Czy konwersja HEIC na JPG jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
           "question": "Czy mogę konwertować wiele plików HEIC jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz - nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
         }
       ]
     },

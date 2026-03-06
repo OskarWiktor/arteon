@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert TIFF to WebP?",
-      "html": "<p class=\"text-mid mb-4\">Tagged Image File Format (TIFF) is a lossless image format supporting millions colors. It is widely used for print and archival with browser support in limited.</p><p class=\"text-mid mb-4\">Converting TIFF to WebP (WebP) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">WebP supports alpha transparency, preserving any transparent areas in your image. WebP supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many TIFF files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">TIFF files are used in professional print and archival workflows but are impractical for the web — they are extremely large and not supported by any browser natively. WebP offers excellent compression (25–35% smaller than JPG, 50–70% smaller than PNG at equivalent quality) and is supported by all modern browsers.</p><p class=\"text-mid mb-4\">Converting TIFF to WebP is essential when preparing professional images for web publishing, e-commerce product listings, or online portfolios. WebP supports both lossy and lossless compression, alpha transparency, and millions of colors.</p><p class=\"text-mid mb-4\">WebP uses lossy compression by default, so some pixel-level detail may differ from the original TIFF. For archival purposes, keep the original TIFF. For web display, WebP provides the optimal balance between quality and file size.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "TIFF to WebP conversion",
       "variant": "right"
@@ -101,22 +101,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert TIFF to WebP to significantly reduce page load times and improve Core Web Vitals scores."
+          "description": "TIFF files cannot be displayed in web browsers and are extremely large. Converting to WebP creates web-optimized images that are 50–70% smaller than equivalent JPG or PNG files."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "WebP files are compatible with most modern platforms. Convert to WebP for smaller attachments that stay within email size limits."
+          "description": "TIFF files are too large for email attachments (often 20–50 MB). WebP produces compact files that are easy to share via email and messaging while maintaining good visual quality."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify often prefer WebP format for product images due to its optimal balance of quality and file size."
+          "description": "Professional product photos shot in TIFF need to be converted for web use. WebP offers excellent compression for product listings on Shopify, WooCommerce, Amazon, and other platforms."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "WebP provides a modern and efficient format for document image storage."
+          "description": "WebP provides efficient storage for web-ready image archives. Converting TIFF collections to WebP can reduce storage by 90% or more while maintaining quality suitable for screen display."
         }
       ]
     },
@@ -250,6 +250,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting TIFF to WebP?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) – a good balance for most use cases: web publishing, blogs, online portfolios. The visual difference compared to the original is virtually unnoticeable.</strong></li><li><strong>85–90% – for product photography and galleries where quality is the priority.</strong></li><li><strong>60–70% – when minimizing file size is the priority, e.g. thumbnails or category grids.</strong></li></ul><p class=\"text-mid mt-3\">TIFF files are typically very large (20–50 MB). At 80% quality, WebP reduces them to 300–800 KB — a 95%+ reduction that makes web publishing practical.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting TIFF to WebP?",
+      "html": "<p class=\"text-mid mb-4\">TIFF files are extremely large. WebP provides dramatic file size reductions:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo (TIFF)</p><p class=\"text-light text-sm\">25 MB → 650 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~97%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Scanned document</p><p class=\"text-light text-sm\">15 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~98%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo</p><p class=\"text-light text-sm\">8 MB → 350 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~96%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

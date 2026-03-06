@@ -1,0 +1,273 @@
+{
+  "toolKey": "mbpsToMBs",
+  "locale": "sv",
+  "metadata": {
+    "title": "Mbps till MB/s – omvandlare",
+    "description": "Omvandla Mbps till MB/s och tvärtom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/sv/verktyg/mbps-till-mbs-omvandlare"
+  },
+  "hero": {
+    "title": "Mbps till MB/s",
+    "description": "Denna omvandlare räknar om direkt. Ange ett värde så visas resultatet omedelbart.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/mbps-till-mbs-omvandlare",
+      "label": "Mbps till MB/s"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Mbps till MB/s – omvandlare",
+      "alternateName": ["Mbps till MB/s"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Omvandla Mbps till MB/s och tvärtom.",
+      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+    },
+    "howTo": {
+      "name": "Så använder du omvandlaren",
+      "description": "Snabbguide för att använda omvandlaren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Ange värde",
+          "text": "Skriv ett tal i inmatningsfältet till vänster."
+        },
+        {
+          "name": "Läs av resultatet",
+          "text": "Konverteringsresultatet visas omedelbart i fältet bredvid."
+        },
+        {
+          "name": "Kopiera eller vänd",
+          "text": "Klicka på Kopiera resultat eller på Vänd för att konvertera i andra riktningen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "När ska man omvandla Mbps till MB/s?",
+      "html": "<p class=\"text-mid mb-4\">Internethastigheter annonseras i Mbps (megabit), men nedladdningar visar MB/s (megabyte). 1 byte = 8 bitar, så 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">En &quot;100 Mbps&quot;-anslutning laddar ner max 12,5 MB/s.</p><p class=\"text-mid\">Alla beräkningar körs lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps to MB/s converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Så använder du omvandlaren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ange värde",
+          "description": "Skriv ett tal i inmatningsfältet. Du kan använda punkt eller komma som decimalavskiljare.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Läs av resultatet",
+          "description": "Konverteringsresultatet visas omedelbart i fältet bredvid – utan att klicka.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiera eller vänd",
+          "description": "Klicka på Kopiera resultat eller använd knappen Vänd.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När är denna omvandlare användbar?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDownloadLine",
+          "title": "Nedladdningshastighet",
+          "description": "100 Mbps = 12,5 MB/s. 1 GB på ~80 s."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Internet",
+          "description": "50 Mbps = 6,25 MB/s."
+        },
+        {
+          "icon": "RiVideoLine",
+          "title": "Streaming",
+          "description": "Netflix 4K: ~25 Mbps."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Filöverföringar",
+          "description": "10 GB vid 100 Mbps = ~13 min."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna omvandlare speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Alla beräkningar görs lokalt i din webbläsare. Ingen data skickas till någon server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultat i realtid",
+          "description": "Resultatet uppdateras omedelbart när du skriver – inget klick krävs."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Dubbelriktad konvertering",
+          "description": "Vänd-knappen låter dig konvertera i båda riktningarna med ett klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenstabell",
+          "description": "En färdig tabell med ofta konverterade värden och kontextuella beskrivningar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bitar. Mbps ÷ 8 = MB/s. MB/s × 8 = Mbps.</p><p class=\"text-mid\">Verkliga hastigheter är typiskt 70–90% av maximum.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bitar. Mbps ÷ 8 = MB/s. MB/s × 8 = Mbps.</p><p class=\"text-mid\">Verkliga hastigheter är typiskt 70–90% av maximum.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mbps vs MB/s",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Mbps"
+        },
+        {
+          "id": "unit2",
+          "name": "MB/s",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Enhet",
+          "values": {
+            "unit1": "Bitar",
+            "unit2": "Bytes"
+          }
+        },
+        {
+          "name": "Förhållande",
+          "values": {
+            "unit1": "8 Mbps",
+            "unit2": "= 1 MB/s"
+          }
+        },
+        {
+          "name": "Användning",
+          "values": {
+            "unit1": "ISP-hastigheter",
+            "unit2": "Nedladdningar"
+          }
+        },
+        {
+          "name": "100 Mbps",
+          "values": {
+            "unit1": "100 Mbps",
+            "unit2": "12,5 MB/s"
+          }
+        },
+        {
+          "name": "1 Gbps",
+          "values": {
+            "unit1": "1 000 Mbps",
+            "unit2": "125 MB/s"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hur många MB/s är 100 Mbps?",
+          "answer": "100 Mbps = 12,5 MB/s. Dela Mbps med 8."
+        },
+        {
+          "question": "Körs beräkningarna lokalt?",
+          "answer": "Ja. Alla beräkningar körs i din webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps till MB/s – Arteon",
+      "defaultSubject": "Feedback: mbps-to-mbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra gratis verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

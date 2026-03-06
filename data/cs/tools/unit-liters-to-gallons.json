@@ -1,0 +1,273 @@
+{
+  "toolKey": "litersToGallons",
+  "locale": "cs",
+  "metadata": {
+    "title": "Převodník liters na gallons",
+    "description": "Převést liters na gallons a naopak. Užitečné pro spotřebu paliva a vaření. Bez registrace.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/cs/nastroje/prevodnik-litry-na-galony"
+  },
+  "hero": {
+    "title": "Převést liters na gallons",
+    "description": "Tento převodník převádí okamžitě. Zadejte hodnotu a výsledek se zobrazí ihned.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/cs/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/cs/nastroje/prevodnik-litry-na-galony",
+      "label": "L na gal"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Převodník liters na gallons",
+      "alternateName": ["Převést liters na gallons"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Převést liters na gallons a naopak. Užitečné pro spotřebu paliva a vaření. Bez registrace.",
+      "featureList": ["Obousměrná konverze v reálném čase", "Všechny převodníky na jednom místě", "Kopírování výsledku do schránky", "Lokální výpočet v prohlížeči"]
+    },
+    "howTo": {
+      "name": "Jak používat převodník",
+      "description": "Rychlý průvodce použitím převodníku.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Zadat hodnotu",
+          "text": "Zadejte číslo do vstupního pole vlevo."
+        },
+        {
+          "name": "Přečíst výsledek",
+          "text": "Výsledek konverze se okamžitě zobrazí v sousedním poli."
+        },
+        {
+          "name": "Kopírovat nebo obrátit",
+          "text": "Klikněte na Kopírovat výsledek nebo na Obrátit pro konverzi v opačném směru."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kdy je potřeba převádět litry na galony?",
+      "html": "<p class=\"text-mid mb-4\">Litr (L) je metrická jednotka objemu. US galon = 3,785 L. UK galon = 4,546 L.</p><p class=\"text-mid\">Veškeré výpočty probíhají lokálně.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Převodník liters na gallons – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak použít převodník?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Zadejte hodnotu",
+          "description": "Zadejte číslo do vstupního pole.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Přečtěte výsledek",
+          "description": "Výsledek se zobrazí okamžitě.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Zkopírujte nebo obraťte",
+          "description": "Zkopírujte výsledek nebo obraťte směr převodu.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kdy je tento převodník užitečný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiGasStationLine",
+          "title": "Palivo",
+          "description": "USA prodává v galonech. 40 L = 10,6 gal."
+        },
+        {
+          "icon": "RiCarLine",
+          "title": "Vaření",
+          "description": "Americké recepty v galonech a šálcích."
+        },
+        {
+          "icon": "RiDropLine",
+          "title": "Akvária",
+          "description": "10 gal = 37,9 L, 55 gal = 208 L."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Zahrada",
+          "description": "Chemikálie a zavlažování v galonech."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím se tento převodník liší?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Plné soukromí",
+          "description": "Všechny výpočty probíhají lokálně ve vašem prohlížeči."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Výsledky v reálném čase",
+          "description": "Výsledek se aktualizuje během zadávání."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obousměrný převod",
+          "description": "Převádějte oběma směry jedním kliknutím."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenční tabulka",
+          "description": "Tabulka s běžnými hodnotami a kontextovými popisy."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">1 US galon = 3,785 L přesně. 1 UK galon = 4,546 L.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak funguje převod?",
+      "html": "<p class=\"text-mid mb-4\">1 US galon = 3,785 L přesně. 1 UK galon = 4,546 L.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Litr vs US galon",
+      "featureLabel": "Vlastnost",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Litr (L)"
+        },
+        {
+          "id": "unit2",
+          "name": "US galon",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Systém",
+          "values": {
+            "unit1": "Metrický",
+            "unit2": "US Customary"
+          }
+        },
+        {
+          "name": "Základ",
+          "values": {
+            "unit1": "1 000 mL",
+            "unit2": "3 785 mL"
+          }
+        },
+        {
+          "name": "Palivo",
+          "values": {
+            "unit1": "L/100km",
+            "unit2": "MPG"
+          }
+        },
+        {
+          "name": "Vaření",
+          "values": {
+            "unit1": "mL/L",
+            "unit2": "Šálky/gal"
+          }
+        },
+        {
+          "name": "UK galon",
+          "values": {
+            "unit1": "4,546 L",
+            "unit2": "1,201 US gal"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kolik litrů je 1 US galon?",
+          "answer": "1 US galon = 3,78541 L."
+        },
+        {
+          "question": "Probíhají výpočty lokálně?",
+          "answer": "Ano. Veškeré výpočty probíhají ve vašem prohlížeči."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad, našli jste chybu nebo chcete navrhnout funkci? Napište nám – odpovídme do 24 hodin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "l na galony – Arteon",
+      "defaultSubject": "Feedback: liters-to-gallons"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Další bezplatné nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

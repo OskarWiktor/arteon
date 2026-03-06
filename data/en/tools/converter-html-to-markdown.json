@@ -2,7 +2,7 @@
   "toolKey": "htmlToMarkdown",
   "locale": "en",
   "metadata": {
-    "title": "HTML to Markdown converter — HTML Markdown",
+    "title": "HTML to Markdown converter - HTML Markdown",
     "description": "Convert HTML to Markdown format. Automatic parsing and formatting. Free, no registration.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/html-to-markdown-converter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert HTML to Markdown?",
-      "html": "<p class=\"text-mid mb-4\">HTML is a widely used file format with broad compatibility across devices and software. However, depending on your use case, converting to MARKDOWN can offer significant advantages — whether it's smaller file sizes, better quality preservation, broader platform support, or specific feature requirements.</p><p class=\"text-mid mb-4\">This free online converter transforms your HTML files into MARKDOWN format directly in the browser. No files are uploaded to any server — the entire conversion process happens locally on your device using modern browser APIs. This means your data stays private and secure at all times.</p><p class=\"text-mid\">You can convert as many files as you need with no daily limits, no registration, and no watermarks. Simply drag and drop your files, adjust quality settings if available, and download the results individually or all at once.</p>",
+      "html": "<p class=\"text-mid mb-4\">HTML is powerful but difficult to read and edit without specialized tools. Markdown uses simple syntax — <code># Heading</code> instead of <code>&lt;h1&gt;</code>, <code>**bold**</code> instead of <code>&lt;strong&gt;</code>. It is the standard format for GitHub/GitLab documentation, static site generators (Hugo, Jekyll, Gatsby, Astro), note-taking apps (Notion, Obsidian), and technical writing.</p><p class=\"text-mid mb-4\">Converting HTML to Markdown is essential when migrating content from a CMS (WordPress, Joomla) to static site generators, moving articles to Git repositories, creating technical documentation, and archiving web content in a readable plain-text format.</p><p class=\"text-mid mb-4\">The converter recognizes semantic HTML tags: headings (h1–h6), lists (ul, ol), links (a), images (img), code blocks (pre, code), tables, and text formatting (strong, em, del). It ignores irrelevant tags (div, span, script, style).</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no tracking.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "HTML to Markdown conversion",
       "variant": "right"
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs — fast and works offline after loading."
+          "description": "All processing happens locally using modern browser APIs - fast and works offline after loading."
         }
       ]
     },
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How much can you save by converting HTML to MARKDOWN?",
-      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
+      "title": "How does HTML to Markdown conversion work?",
+      "html": "<p class=\"text-mid mb-4\">HTML uses tags like &lt;h1&gt;, &lt;strong&gt;, &lt;a&gt;, and &lt;ul&gt; to structure content. Markdown uses simpler symbols: # for headings, ** for bold, [text](url) for links, and - for lists. The converter parses the HTML document tree and maps each element to its Markdown equivalent.</p><p class=\"text-mid mb-4\">For example, &lt;h1&gt;Title&lt;/h1&gt; becomes # Title, &lt;strong&gt;bold&lt;/strong&gt; becomes **bold**, and &lt;a href=\"url\"&gt;link&lt;/a&gt; becomes [link](url). Complex structures like tables, code blocks, and nested lists are also handled.</p><p class=\"text-mid\">Converting HTML to Markdown is useful for migrating website content to documentation systems, static site generators, or any platform that uses Markdown. The conversion runs entirely in your browser — no data is sent to any server.</p>"
     },
     {
       "type": "gap",
@@ -208,29 +208,38 @@
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Very large files",
-          "description": "Converting images above 4000×4000 pixels may be slower and strain the browser. If processing many large files, consider splitting them into batches of 10–20."
+          "title": "Inline styles are removed",
+          "description": "Markdown does not support CSS styling. Inline styles, classes, and IDs in your HTML are stripped during conversion. Only the semantic structure and text content are preserved."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Already compressed files",
-          "description": "If the original HTML file was already heavily compressed, converting to MARKDOWN may not yield significant size savings. Try different quality settings."
+          "title": "Complex layouts",
+          "description": "HTML layouts using divs, grids, or flexbox cannot be represented in Markdown. The converter extracts the text content and preserves headings, lists, and links."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparency",
-          "description": "The MARKDOWN format does not support transparency. Transparent areas will be replaced with a white background. Consider PNG or WebP for transparency."
+          "icon": "RiCodeLine",
+          "title": "Images and links",
+          "description": "HTML &lt;img&gt; tags become ![alt](src) and &lt;a&gt; tags become [text](url) in Markdown. Relative URLs are preserved as-is."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Keep your originals",
-          "description": "Lossy conversion is irreversible. Keep copies of original HTML files so you can re-convert with different settings if needed."
+          "icon": "RiFileTextLine",
+          "title": "Tables",
+          "description": "HTML tables are converted to Markdown pipe tables where possible. Complex tables with colspan or rowspan may be simplified."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What HTML elements are converted?",
+      "html": "<p class=\"text-mid mb-4\">The converter handles all common semantic HTML elements:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Headings</strong> – &lt;h1&gt; through &lt;h6&gt; → # through ######</li><li><strong>Text formatting</strong> – &lt;strong&gt;/&lt;b&gt; → **bold**, &lt;em&gt;/&lt;i&gt; → *italic*, &lt;del&gt; → ~~strikethrough~~</li><li><strong>Links</strong> – &lt;a href&gt; → [text](url)</li><li><strong>Images</strong> – &lt;img&gt; → ![alt](src)</li><li><strong>Lists</strong> – &lt;ul&gt;/&lt;ol&gt; → - / 1. list items</li><li><strong>Code</strong> – &lt;code&gt; → `inline`, &lt;pre&gt;&lt;code&gt; → fenced blocks</li><li><strong>Tables</strong> – &lt;table&gt; → pipe-separated Markdown tables</li></ul><p class=\"text-mid mt-3\">Non-semantic elements (div, span, script, style) are stripped. Only meaningful content is preserved in the Markdown output.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Yes, the converter works on any device with a modern web browser, including smartphones and tablets."
         },
         {
-          "question": "Is converting HTML to MARKDOWN safe for my files?",
-          "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
+          "question": "Is converting HTML to Markdown safe?",
+          "answer": "Yes. The entire conversion runs locally in your browser. Your data is never sent to any server. When you close the page, all data is automatically cleared from memory."
         },
         {
-          "question": "Can I convert multiple HTML files at once?",
-          "answer": "Yes. The tool supports batch conversion with no file limit. Drag all files onto the converter or select them from your device."
+          "question": "Will I lose formatting during conversion?",
+          "answer": "Markdown supports headings, bold, italic, links, images, lists, code blocks, blockquotes, and tables. HTML-only features like custom CSS, colors, and complex layouts cannot be represented in Markdown and will be simplified."
         },
         {
-          "question": "Is MARKDOWN supported by all browsers?",
-          "answer": "The MARKDOWN format is widely supported by modern browsers: Chrome, Firefox, Safari, Edge, and Opera."
+          "question": "Can I use the Markdown output in GitHub or GitLab?",
+          "answer": "Yes. The output follows standard Markdown syntax compatible with GitHub, GitLab, Bitbucket, Notion, Obsidian, and any other platform that renders Markdown."
         }
       ]
     },

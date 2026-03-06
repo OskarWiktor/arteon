@@ -1,0 +1,289 @@
+{
+  "toolKey": "kgToLbs",
+  "locale": "ro",
+  "metadata": {
+    "title": "Kg în livre – convertor",
+    "description": "Convertiți kilogramele în livre și invers. Rezultate instantanee.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/ro/instrumente/convertor-kg-in-livre"
+  },
+  "hero": {
+    "title": "Kg în livre",
+    "description": "Acest convertor calculează instantaneu. Introduceți o valoare și rezultatul apare imediat.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/ro/instrumente",
+      "label": "Instrumente"
+    },
+    "third": {
+      "href": "/ro/instrumente/convertor-kg-in-livre",
+      "label": "kg în livre"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kg în livre – convertor",
+      "alternateName": ["Kg în livre"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertiți kilogramele în livre și invers. Rezultate instantanee.",
+      "featureList": ["Conversie bidirecțională în timp real", "Toate convertoarele într-un singur loc", "Copierea rezultatului în clipboard", "Calcul local în browser"]
+    },
+    "howTo": {
+      "name": "Cum să utilizați convertorul",
+      "description": "Ghid rapid pentru utilizarea convertorului.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduceți valoarea",
+          "text": "Scrieți un număr în câmpul de introducere din stânga."
+        },
+        {
+          "name": "Citiți rezultatul",
+          "text": "Rezultatul conversiei apare instantaneu în câmpul adiacent."
+        },
+        {
+          "name": "Copiați sau inversați",
+          "text": "Faceți clic pe Copiați rezultatul sau pe Inversați pentru a converti în direcția opusă."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Când trebuie să folosiți: Kg în livre?",
+      "html": "<p class=\"text-mid mb-4\">Kilogramm (kg) ist die Basiseinheit der Masse im metrischen System. Pfund (lb) este unitatea standardă-Masseeinheit im imperialen System, hauptsächlich in den USA und UK verwendet. Der conversiesfaktor ist: 1 kg = 2,20462 lbs.</p><p class=\"text-mid mb-4\">Die conversie von kg in lbs ist wichtig für Fitnessstudios (US-Gyms verwenden Pfund-Gewichte), Versand und Fracht (internationale vs. US-Gewichtslimits), Kochen mit amerikanischen Rezepten und Körpergewicht in US-medizinischen Kontexten.</p><p class=\"text-mid mb-4\">Beispiele: 70 kg = 154,3 lbs, 80 kg = 176,4 lbs, 100 kg = 220,5 lbs. Eine olympische Langhantel wiegt 20 kg (44,1 lbs).</p><p class=\"text-mid\">Toate calculele se fac local, în browserul dvs. — nimic nu este trimis la vreun server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Kg în livre – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Cum să utilizați convertorul?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduceți valoarea",
+          "description": "Scrieți un număr în câmpul de introducere. Puteți folosi punctul sau virgula ca separator zecimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Citiți rezultatul",
+          "description": "Rezultatul conversiei apare instantaneu în câmpul adiacent – fără a da clic.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiați sau inversați",
+          "description": "Faceți clic pe Copiați rezultatul sau folosiți butonul Inversați.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Când este util acest convertor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiScales3Line",
+          "title": "Cumpărături și gătit",
+          "description": "Folosiți acest convertor pentru conversii rapide și precise."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Bagaż lotniczy",
+          "description": "Linie lotnicze USA podają limity bagażu w funtach – przelicz swoją walizkę."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Zakupy za granicą",
+          "description": "Produkty spożywcze w USA i UK są ważone w funtach i uncjach."
+        },
+        {
+          "icon": "RiMedicineBottleLine",
+          "title": "Medycyna",
+          "description": "Amerykańskie kalkulatory BMI i dawkowania leków wymagają wagi w funtach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Ce face acest convertor special?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidențialitate completă",
+          "description": "Toate calculele se fac local, în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Rezultate în timp real",
+          "description": "Rezultatul se actualizează instant pe măsură ce tastați – fără a apăsa vreun buton."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversie bidirecțională",
+          "description": "Butonul Inversare vă permite să convertiți în ambele direcții cu un singur clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabel de referință",
+          "description": "Un tabel gata cu valori convertite frecvent și descrieri contextuale."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Cum funcționează conversia?",
+      "html": "<p class=\"text-mid mb-4\">Die conversie basiert auf dem internationalen Avoirdupois-Pfund: 1 lb = 0,45359237 kg genau. Daher gilt: 1 kg = 2,20462 lbs.</p><p class=\"text-mid mb-4\">Um kg in lbs umzurechnen, înmulțiți cu 2,20462. Um lbs in kg umzurechnen, înmulțiți cu 0,45359237.</p><p class=\"text-mid\">Calcul mental rapid: Înm ulțiți kg mit 2,2. Beispiel: 75 kg × 2,2 = 165 lbs (exakt: 165,35 lbs).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Sfaturi practice",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Body weight: 60 kg = 132 lbs, 70 kg = 154 lbs, 80 kg = 176 lbs, 90 kg = 198 lbs.</li><li>Gym plates: 20 kg = 44.1 lbs, 25 kg = 55.1 lbs. US plates are 45 lbs = 20.4 kg.</li><li>Luggage: 23 kg (economy) = 50.7 lbs. 32 kg (business) = 70.5 lbs.</li><li>1 stone (UK) = 14 lbs = 6.35 kg. Height/weight in UK often uses stones.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilogram (kg) vs Pound (lb) – comparație",
+      "featureLabel": "Proprietate",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilogram (kg)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pound (lb)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Sistem",
+          "values": {
+            "unit1": "Metric (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Valoare de bază",
+          "values": {
+            "unit1": "1,000 grams",
+            "unit2": "453.59 grams"
+          }
+        },
+        {
+          "name": "Fitness",
+          "values": {
+            "unit1": "International (kg)",
+            "unit2": "USA (lbs)"
+          }
+        },
+        {
+          "name": "Shipping",
+          "values": {
+            "unit1": "International (kg)",
+            "unit2": "USA (lbs)"
+          }
+        },
+        {
+          "name": "Știință",
+          "values": {
+            "unit1": "Standard SI",
+            "unit2": "Nefolosit în știință"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Întrebări frecvente",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Câți Pfund ist 1 kg?",
+          "answer": "1 kg = 2,20462 Pfund. Basierend auf der internationalen Avoirdupois-Definition."
+        },
+        {
+          "question": "Câți kg sind 150 lbs?",
+          "answer": "150 lbs = 68,04 kg. Eine gängige conversie für Körpergewicht."
+        },
+        {
+          "question": "Cum convertesc schnell kg in lbs um?",
+          "answer": "Înm ulțiți kg mit 2,2. Beispiel: 80 kg × 2,2 = 176 lbs (exakt: 176,37 lbs). Der Fehler beträgt weniger als 0,2%."
+        },
+        {
+          "question": "Cât ist ein Stone in kg?",
+          "answer": "1 Stone = 14 Pfund = 6,35 kg. Stones werden informell in Großbritannien für Körpergewicht verwendet."
+        },
+        {
+          "question": "Ce este das Gepäcklimit in kg?",
+          "answer": "Die meisten Fluggesellschaften erlauben 23 kg (50,7 lbs) in der Economy und 32 kg (70,5 lbs) in der Business/First Class."
+        },
+        {
+          "question": "Calculele se fac local?",
+          "answer": "Da. Toate calculele se fac în browserul dvs. Nicio dată nu este trimisă la vreun server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajutați-ne să ne îmbunătățim instrumentele",
+      "description": "Aveți o idee, ați găsit o eroare sau doriți să sugerați o funcție? Scrieți-ne – răspundem în 24 de ore.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "kg în livre – Arteon",
+      "defaultSubject": "Feedback: kg-to-lbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Alte instrumente gratuite"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

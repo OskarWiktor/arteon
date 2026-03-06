@@ -1,0 +1,273 @@
+{
+  "toolKey": "barToPsi",
+  "locale": "fi",
+  "metadata": {
+    "title": "Bar PSI:ksi – muunnin",
+    "description": "Muunna bar PSI:ksi ja päinvastoin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/bar-psi-muunnin"
+  },
+  "hero": {
+    "title": "Bar PSI:ksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/bar-psi-muunnin",
+      "label": "bar PSI:ksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bar PSI:ksi – muunnin",
+      "alternateName": ["Bar PSI:ksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna bar PSI:ksi ja päinvastoin.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin bar muunnetaan psi:ksi?",
+      "html": "<p class=\"text-mid mb-4\">Bar on metrinen paineyksikkö. PSI (pounds per square inch) on käytössä USA:ssa ja UK:ssa. 1 bar = 14,5038 psi.</p><p class=\"text-mid mb-4\">Rengaspaine: 2,5 bar = 36,3 psi. Sukelluslasipullot: 200 bar = 2 901 psi.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Bar to PSI converter – quick pressure conversion – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Ulkomaanmatkat",
+          "description": "Eurooppa: bar. USA: psi. 2,3 bar = 33,4 psi."
+        },
+        {
+          "icon": "RiAnchorLine",
+          "title": "Sukellus",
+          "description": "Pullot: 200–300 bar."
+        },
+        {
+          "icon": "RiToolsLine",
+          "title": "Tekniset sovellukset",
+          "description": "Hydrauliikka ja pneumatiikka: bar tai psi."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "LVI",
+          "description": "Ilmastointijärjestelmät: paine barissa tai psi:ssä."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 bar = 14,5038 psi. 1 bar = 100 kPa = 0,9869 atm. Nyrkkisääntö: bar × 14,5 ≈ psi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 bar = 14,5038 psi. 1 bar = 100 kPa = 0,9869 atm. Nyrkkisääntö: bar × 14,5 ≈ psi.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Bar vs PSI",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Bar"
+        },
+        {
+          "id": "unit2",
+          "name": "PSI",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Järjestelmä",
+          "values": {
+            "unit1": "Metrinen",
+            "unit2": "Imperiaalinen"
+          }
+        },
+        {
+          "name": "Määritelmä",
+          "values": {
+            "unit1": "100 000 Pa",
+            "unit2": "6 894,76 Pa"
+          }
+        },
+        {
+          "name": "Renkaat",
+          "values": {
+            "unit1": "Eurooppa, Aasia",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "Teollisuus",
+          "values": {
+            "unit1": "Kansainvälinen",
+            "unit2": "USA"
+          }
+        },
+        {
+          "name": "1 atm",
+          "values": {
+            "unit1": "1,01325 bar",
+            "unit2": "14,696 psi"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta psi on 1 bar?",
+          "answer": "1 bar = 14,5038 psi."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "bar PSI:ksi – Arteon",
+      "defaultSubject": "Palaute: bar-to-psi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

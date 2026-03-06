@@ -1,0 +1,277 @@
+{
+  "toolKey": "metersToFeet",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur mètres en pieds",
+    "description": "Convertissez mètres en pieds et vice versa. Pour la taille, la construction et l'aviation.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-metres-en-pieds"
+  },
+  "hero": {
+    "title": "Convertir mètres en pieds",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-metres-en-pieds",
+      "label": "m en ft"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur mètres en pieds",
+      "alternateName": ["Convertir mètres en pieds"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez mètres en pieds et vice versa. Pour la taille, la construction et l'aviation.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des mètres en pieds ?",
+      "html": "<p class=\"text-mid mb-4\">Le mètre (m) est l’unité de base de longueur du système métrique. Le pied (ft) est une unité impériale égale à 0,3048 m. 1 mètre = 3,28084 pieds.</p><p class=\"text-mid mb-4\">Cette conversion est nécessaire en aviation (altitudes en pieds), immobilier aux États-Unis, taille personnelle et sports nautiques.</p><p class=\"text-mid mb-4\">Exemples : 1,80 m = 5,91 ft (5’11″), 10 m = 32,8 ft, 100 m = 328 ft.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur mètres en pieds – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiBuildingLine",
+          "title": "Aviation",
+          "description": "L’altitude de vol est indiquée en pieds : 35 000 ft = 10 668 m."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Immobilier",
+          "description": "Dimensions de pièces aux USA : 12×14 ft = 3,66×4,27 m."
+        },
+        {
+          "icon": "RiBodyScanLine",
+          "title": "Taille",
+          "description": "Aux USA en pieds et pouces : 6’0″ = 1,83 m, 5’6″ = 1,68 m."
+        },
+        {
+          "icon": "RiMountainLine",
+          "title": "Plongée",
+          "description": "Profondeurs de plongée : 60 ft = 18,3 m, 130 ft = 39,6 m."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 pied = 0,3048 mètre exactement. Pour convertir des mètres en pieds, divisez par 0,3048 (ou multipliez par 3,28084).</p><p class=\"text-mid mb-4\">Exemple : 50 m × 3,28084 = 164 pieds.</p><p class=\"text-mid\">1 pied = 12 pouces.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 pied = 0,3048 mètre exactement. Pour convertir des mètres en pieds, divisez par 0,3048 (ou multipliez par 3,28084).</p><p class=\"text-mid mb-4\">Exemple : 50 m × 3,28084 = 164 pieds.</p><p class=\"text-mid\">1 pied = 12 pouces.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mètre vs Pied – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Mètre (m)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pied (ft)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Système",
+          "values": {
+            "unit1": "Métrique (SI)",
+            "unit2": "Impérial"
+          }
+        },
+        {
+          "name": "Valeur de base",
+          "values": {
+            "unit1": "1 m",
+            "unit2": "0,3048 m"
+          }
+        },
+        {
+          "name": "Aviation",
+          "values": {
+            "unit1": "Non utilisé",
+            "unit2": "Standard (pieds)"
+          }
+        },
+        {
+          "name": "Immobilier",
+          "values": {
+            "unit1": "Europe",
+            "unit2": "États-Unis"
+          }
+        },
+        {
+          "name": "Taille",
+          "values": {
+            "unit1": "International (cm/m)",
+            "unit2": "USA (ft/in)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de pieds fait 1 mètre ?",
+          "answer": "1 mètre = 3,28084 pieds."
+        },
+        {
+          "question": "Combien mesure 6 pieds en mètres ?",
+          "answer": "6 pieds = 1,8288 mètres."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "m na stopy – Arteon",
+      "defaultSubject": "Feedback : meters-to-feet"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

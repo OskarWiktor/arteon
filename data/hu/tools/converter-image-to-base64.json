@@ -2,7 +2,7 @@
   "toolKey": "imageToBase64",
   "locale": "hu",
   "metadata": {
-    "title": "kép Base64 konverter — kép Base64",
+    "title": "kép Base64 konverter - kép Base64",
     "description": "Képek kódolása Base64 formátumba. Másolja a kész kódot CSS-hez vagy HTML-hez. Ingyenes.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/kep-base64-konverter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konvertálás",
-          "text": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+          "text": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes kép-t Base64-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A IMAGE szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a BASE64 formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a IMAGE fajlokat BASE64 formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A IMAGE szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a BASE64 formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a IMAGE fajlokat BASE64 formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "kép to Base64 conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konvertálás",
-          "description": "Kattintson a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
+          "description": "Kattintson a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Mennyit takarit meg IMAGE BASE64 konvertalasaval?",
-      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+      "title": "Hogyan működik a kép Base64 kódolása?",
+      "html": "<p class=\"text-mid mb-4\">A Base64 kódolás a kép bináris adatait szöveges karakterlánccá alakítja 64 nyomtatható ASCII karakter használatával (A–Z, a–z, 0–9, +, /). Minden 3 bájt bináris adat 4 Base64 karakterré válik, ami azt jelenti, hogy a kódolt karakterlánc körülbelül 33%-kal nagyobb az eredeti fájlnál.</p><p class=\"text-mid mb-4\">A konvertáló beolvassa a képfájlt, Base64 karakterlánccá kódolja és hozzáadja a helyes Data URI előtagot (pl. data:image/png;base64,). Ez egy önálló karakterláncot hoz létre, amely közvetlenül beágyazható HTML-be, CSS-be vagy JSON-ba külön képfájl nélkül.</p><p class=\"text-mid\">A Base64 kódolt képek gyakran használatosak kis ikonokhoz, logókhoz és felületi elemekhez, ahol az extra HTTP kérés kiküszöbölése javítja a betöltési időt. A konvertálás teljes egészében a böngésződben történik.</p>"
     },
     {
       "type": "gap",
@@ -138,35 +138,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tippek IMAGE BASE64 konvertalasahoz",
-      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "title": "Tippek a kép Base64 kódoláshoz",
+      "description": "Néhány tipp a gyakori problémák elkerülésére:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Nagyon nagy fajlok",
-          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+          "title": "Méretnövekedés",
+          "description": "A Base64 kódolás kb. 33%-kal növeli a fájlméretet. Egy 10 KB-os kép kb. 13,3 KB-os Base64 karakterlánccá válik. Ideális 10 KB alatti kis képekhez."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Mar tomoriteett fajlok",
-          "description": "Ha a IMAGE mar erosen tomoriteett volt, BASE64 konvertalas keveset takarithat."
+          "title": "Data URI formátum",
+          "description": "A kimenet tartalmazza a teljes Data URI előtagot (data:image/png;base64,...) — készen áll HTML src attribútumba vagy CSS background-image tulajdonságba való beszúrásra."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Atlatszosag",
-          "description": "BASE64 nem tamogatja az atlatszosagot. Feher hatter lesz. Hasznaljon PNG-t vagy WebP-t."
+          "icon": "RiCodeLine",
+          "title": "Támogatott formátumok",
+          "description": "A konvertáló elfogadja a PNG, JPG, GIF, WebP, SVG és BMP formátumokat. A Data URI MIME típusa automatikusan beállítódik a bemeneti formátum alapján."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Orizze meg az eredetiket",
-          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a IMAGE fajlok masolatait."
+          "icon": "RiFileCodeLine",
+          "title": "Gyorsítótárazási szempontok",
+          "description": "A beágyazott Base64 képek nem gyorsítótárazhatók külön a böngésző által. Több oldalon használt képekhez hatékonyabbak a külön fájlok cache fejlécekkel."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to use Base64 encoding vs regular image files",
+      "html": "<p class=\"text-mid mb-4\">Base64 encoding is beneficial in specific scenarios, but not always the right choice:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Use Base64 for</strong> – small images under 10 KB (icons, logos), email templates with embedded images, API requests requiring image data in JSON, self-contained HTML files.</li><li><strong>Use regular files for</strong> – large images over 50 KB, website hero images and photos, images that need browser caching, content served via CDN.</li></ul><p class=\"text-mid mt-3\">Base64 increases data size by 33% and prevents browser caching. For web performance, only inline very small assets. For everything else, serve images as regular files with proper caching headers.</p>"
     },
     {
       "type": "faq",
@@ -190,16 +199,16 @@
           "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
         },
         {
-          "question": "Biztonsagos IMAGE BASE64 konvertalasa?",
-          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+          "question": "Biztonságos a kép Base64 kódolása?",
+          "answer": "Igen. Az egész konvertálás helyben történik a böngésződben. A képei soha nem kerülnek szerverre."
         },
         {
-          "question": "Konvertalhatok tobb IMAGE fajlt egyszerre?",
-          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+          "question": "Mikor használjak Base64-et képfájlok helyett?",
+          "answer": "A Base64 ideális kis képekhez (ikonok, logók 10 KB alatt), ahol fontos egy HTTP kérés megtakarítása. Nagyobb képekhez hatékonyabbak a külön fájlok, mert a böngésző gyorsítótárazhatja őket."
         },
         {
-          "question": "Minden bongeszo tamogatja a BASE64-t?",
-          "answer": "BASE64-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
+          "question": "Milyen képformátumok támogatottak?",
+          "answer": "A konvertáló elfogadja a PNG, JPG, GIF, WebP, SVG, BMP és más szabványos képformátumokat. A Data URI MIME típusa automatikusan észlelődik."
         }
       ]
     },

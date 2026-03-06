@@ -2,7 +2,7 @@
   "toolKey": "webpToPdf",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur WebP en PDF — WebP PDF",
+    "title": "Convertisseur WebP en PDF - WebP PDF",
     "description": "Convertissez vos images WebP en PDF. Combinez plusieurs fichiers en un seul PDF. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-webp-en-pdf"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Convertir",
-          "text": "Cliquez sur Convertir — le traitement est local dans votre navigateur."
+          "text": "Cliquez sur Convertir - le traitement est local dans votre navigateur."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir WebP en PDF ?",
-      "html": "<p class=\"text-mid mb-4\">WebP est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en PDF peut offrir des avantages significatifs — fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers WebP au format PDF directement dans le navigateur. Aucun fichier n'est envoye sur un serveur — tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
+      "html": "<p class=\"text-mid mb-4\">WebP est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en PDF peut offrir des avantages significatifs - fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers WebP au format PDF directement dans le navigateur. Aucun fichier n'est envoye sur un serveur - tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "WebP to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Convertir",
-          "description": "Cliquez sur Convertir — le traitement est local dans votre navigateur.",
+          "description": "Cliquez sur Convertir - le traitement est local dans votre navigateur.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Reglages de qualite — que choisir pour WebP vers PDF ?",
-      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (defaut) — bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% — pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% — quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 85% la difference visuelle entre WebP original et PDF resultant est imperceptible.</p>"
+      "title": "Reglages de qualite - que choisir pour WebP vers PDF ?",
+      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (defaut) - bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% - pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% - quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 85% la difference visuelle entre WebP original et PDF resultant est imperceptible.</p>"
     },
     {
       "type": "gap",
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">While WebP to PDF conversion creates documents rather than web images, PDF file size affects the user experience when PDFs are shared or downloaded from websites. Large PDFs frustrate users and increase bounce rates.</p><p class=\"text-mid mb-4\">The converter optimizes PDF output to balance quality and size. WebP images are already compressed, so the resulting PDF will be reasonably compact. A typical 10-image PDF from WebP sources will be approximately 5–15 MB.</p><p class=\"text-mid\">If you need to display images on a web page rather than in a PDF, keep them as WebP — it’s already the optimal format for web delivery.</p>"
     },
     {
       "type": "faq",

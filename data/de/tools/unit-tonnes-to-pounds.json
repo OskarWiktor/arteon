@@ -1,0 +1,277 @@
+{
+  "toolKey": "tonnesToPounds",
+  "locale": "de",
+  "metadata": {
+    "title": "Tonnen in Pfund umrechnen – Schwerlast-Rechner",
+    "description": "Rechnen Sie metrische Tonnen in Pfund um und umgekehrt. Nützlich für Versand, Fracht und Landwirtschaft.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/tonnen-in-pfund-umrechner"
+  },
+  "hero": {
+    "title": "Tonnen in Pfund umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/tonnen-in-pfund-umrechner",
+      "label": "t in lbs"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Tonnen in Pfund umrechnen – Schwerlast-Rechner",
+      "alternateName": ["Tonnen in Pfund umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Rechnen Sie metrische Tonnen in Pfund um und umgekehrt. Nützlich für Versand, Fracht und Landwirtschaft.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter tony na funty",
+      "description": "Anleitung: tony na funty.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann muss man Tonnen in Pfund umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Metrische Tonne (t) = 1.000 kg. Pfund (lb) ist die Standard-Masseeinheit im US-System. 1 Tonne = 2.204,62 Pfund.</p><p class=\"text-mid mb-4\">Diese Umrechnung ist wichtig für internationalen Versand, Frachtlogistik, Landwirtschaft und Schwerindustrie.</p><p class=\"text-mid mb-4\">Beispiele: 1 t = 2.205 lbs, 5 t = 11.023 lbs. Ein typisches Auto wiegt ca. 1,5 t = 3.307 lbs.</p><p class=\"text-mid\">Alle Berechnungen laufen lokal in Ihrem Browser — nichts wird an einen Server gesendet.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Tonnen in Pfund umrechnen – Schwerlast-Rechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So verwenden Sie den Konverter",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein. Sie können einen Punkt oder ein Komma als Dezimaltrennzeichen verwenden.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Konvertierungsergebnis erscheint sofort im Feld daneben – ohne Klicken.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Klicken Sie auf Ergebnis kopieren oder verwenden Sie die Umkehren-Taste.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Konverter nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShipLine",
+          "title": "Transport morski",
+          "description": "Ładowność statków i kontenerów podaje się w tonach lub funtach."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Logistyka",
+          "description": "Amerykańskie firmy transportowe podają limity wagi w funtach."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Rolnictwo",
+          "description": "Plony i ceny zbóż w USA: funty lub buszle."
+        },
+        {
+          "icon": "RiBuildingLine",
+          "title": "Budownictwo",
+          "description": "Waga materiałów budowlanych (stal, beton) w tonach lub funtach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen laufen lokal in Ihrem Browser. Keine Daten werden an einen Server gesendet."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich sofort beim Tippen – ohne Klicken."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Konvertierung",
+          "description": "Die Umkehren-Taste ermöglicht die Konvertierung in beide Richtungen mit einem Klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Eine fertige Tabelle mit häufig konvertierten Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung?",
+      "html": "<p class=\"text-mid mb-4\">1 metrische Tonne = 1.000 kg. 1 kg = 2,20462 lbs. Daher: 1 Tonne = 2.204,62 lbs.</p><p class=\"text-mid mb-4\">Hinweis: Die US Short Ton = 2.000 lbs = 907,185 kg. Die UK Long Ton = 2.240 lbs = 1.016,05 kg. Dieser Konverter verwendet die metrische Tonne (1.000 kg).</p><p class=\"text-mid\">Um Tonnen in Pfund umzurechnen, multiplizieren Sie mit 2.204,62.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktische Tipps",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Auto: 1,2–2,0 t = 2.646–4.409 lbs. SUV: 2,0–2,5 t = 4.409–5.512 lbs.</li><li>Container (20ft, beladen): bis 21,6 t = 47.620 lbs.</li><li>US Short Ton = 2.000 lbs = 907 kg (keine metrische Tonne!).</li><li>1 metrische Tonne Wasser = 1.000 Liter.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Tonne vs. Pfund – Vergleich",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Tonne (t)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pfund (lb)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisch (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Basiswert",
+          "values": {
+            "unit1": "1.000 kg",
+            "unit2": "0,4536 kg"
+          }
+        },
+        {
+          "name": "Versand",
+          "values": {
+            "unit1": "International",
+            "unit2": "USA"
+          }
+        },
+        {
+          "name": "Fahrzeuge",
+          "values": {
+            "unit1": "Europa (kg/t)",
+            "unit2": "USA (lbs)"
+          }
+        },
+        {
+          "name": "Landwirtschaft",
+          "values": {
+            "unit1": "Tonnen/Hektar",
+            "unit2": "Pfund/Acre"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele Pfund ist 1 Tonne?",
+          "answer": "1 metrische Tonne = 2.204,62 Pfund."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen Tonne und Ton?",
+          "answer": "Metrische Tonne = 1.000 kg = 2.205 lbs. US Short Ton = 2.000 lbs = 907 kg. UK Long Ton = 2.240 lbs = 1.016 kg."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen laufen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "tony na funty – Arteon",
+      "defaultSubject": "Feedback: tonnes-to-pounds"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

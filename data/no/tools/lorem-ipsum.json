@@ -1,0 +1,521 @@
+{
+  "toolKey": "loremIpsum",
+  "locale": "no",
+  "metadata": {
+    "title": "Lorem Ipsum-generator — eksempeltekst, avsnitt, setninger og tilfeldige ord",
+    "description": "Gratis Lorem Ipsum-generator — 8 stiler: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business og mer. 9 genereringsmodi. Kopier som tekst eller HTML.",
+    "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp",
+    "path": "/verktoy/lorem-ipsum-generator"
+  },
+  "hero": {
+    "title": "Lorem Ipsum-generator — eksempeltekst, avsnitt, setninger og tilfeldige ord",
+    "description": "8 tekststiler: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal og norske fyllord. 9 modi: avsnitt, setninger, ord, lister, overskrifter, lenker, tabeller, sitater, definisjoner.",
+    "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/verktoy",
+      "label": "Verktøy"
+    },
+    "third": {
+      "href": "/verktoy/lorem-ipsum-generator",
+      "label": "Lorem Ipsum-generator"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Lorem Ipsum-generator — eksempeltekst, avsnitt, setninger og tilfeldige ord",
+      "alternateName": [
+        "Lorem Ipsum Generator",
+        "Bacon Ipsum generator",
+        "Cupcake Ipsum generator",
+        "Pirate Ipsum generator",
+        "Legal Ipsum generator",
+        "Hipster Ipsum generator",
+        "Business Ipsum generator",
+        "Dummy text generator online"
+      ],
+      "applicationSubCategory": "TextApplication",
+      "description": "Gratis Lorem Ipsum-generator — 8 stiler: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business og mer. 9 genereringsmodi. Kopier som tekst eller HTML.",
+      "featureList": [
+        "Generere Lorem Ipsum-avsnitt",
+        "Generere enkeltsetninger",
+        "Generere tilfeldige ord",
+        "Generere nummererte og punktlister",
+        "Generere H1–H6-overskrifter",
+        "Generere lenker med eksempel-URL-er",
+        "Generere tabeller med tilfeldige data",
+        "Generere sitater",
+        "Generere definisjonslister",
+        "Lorem Ipsum — latin fra De Finibus",
+        "Hipster Ipsum — hipstervokabular",
+        "Business Ipsum — bedriftsjargong",
+        "Norske fyllord — ord på det lokale språket",
+        "Bacon Ipsum — kjøtt og grill",
+        "Cupcake Ipsum — bakeri og søtsaker",
+        "Pirate Ipsum — piratvokabular",
+        "Legal Ipsum — juridisk terminologi",
+        "Utdataformat: ren tekst eller HTML",
+        "Avsnittslengde (kort, middels, lang)",
+        "Statistikk: ord, tegn, setninger, avsnitt, lesetid",
+        "Kopiere tekst til utklippstavlen",
+        "Kopiere HTML-kode til utklippstavlen",
+        "Laste ned som .txt-fil",
+        "Lokal behandling i nettleseren"
+      ]
+    },
+    "howTo": {
+      "name": "Slik bruker du Lorem Ipsum-generatoren",
+      "description": "Generer Lorem Ipsum-fylltekst på sekunder. Velg modus, stil og format, kopier eller last ned resultatet.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Velg en genereringsmodus",
+          "text": "Velg en av 9 moduser: avsnitt, setninger, ord, lister, overskrifter, lenker, tabell, sitater eller definisjoner. Angi antall."
+        },
+        {
+          "name": "Velg en tekststil",
+          "text": "Velg en av 8 stiler: Lorem Ipsum, Hipster, Business, Norske fyllord, Bacon, Cupcake, Pirate eller Legal Ipsum."
+        },
+        {
+          "name": "Angi utdataformatet",
+          "text": "Velg ren tekst eller HTML med tagger. Juster avsnittslengden etter behov."
+        },
+        {
+          "name": "Kopier eller last ned resultatet",
+          "text": "Klikk på Generer, kopier deretter teksten, HTML-koden eller last ned en .txt-fil."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hva er Lorem Ipsum og hva brukes det til",
+      "html": "<p class=\"text-mid\">Lorem Ipsum er standardfyllteksten som har blitt brukt i trykkeribransjen, grafisk design og webutvikling i over 500 år. Teksten stammer fra <em>De Finibus Bonorum et Malorum</em> (Om grensene for det gode og det onde) skrevet av Marcus Tullius Cicero i 45 f.Kr. Den opprinnelige passasjen ble bevisst endret — ord ble lagt til, fjernet og omorganisert — slik at teksten ikke har noen mening, men beholder en naturlig rytme og bokstavfordeling som ligner et ekte språk.</p><p class=\"text-mid mt-3\">Lorem Ipsum-generatoren lar deg raskt opprette enhver mengde fylltekst for mockups, UI-prototyper, grafiske design og typografiske layouttester. Verktøyet tilbyr 9 genereringsmoduser (avsnitt, setninger, ord, lister, overskrifter, lenker, tabeller, sitater, definisjoner), 8 tekststiler og sanntidsstatistikk.</p>",
+      "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp",
+      "imageAlt": "Lorem Ipsum-generator — Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Slik bruker du Lorem Ipsum-generatoren",
+      "description": "Generer fylltekst i fire trinn:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Velg en modus",
+          "description": "Velg en av 9 moduser: avsnitt, setninger, ord, lister, overskrifter, lenker, tabell, sitater eller definisjoner."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "2. Velg en stil",
+          "description": "8 stiler: Lorem Ipsum, Hipster, Business, Norske fyllord, Bacon, Cupcake, Pirate og Legal — hver med sin egen ordbank."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Juster alternativene",
+          "description": "Angi avsnittslengde (kort, middels, lang) og utdataformat (ren tekst eller HTML med tagger)."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Kopier resultatet",
+          "description": "Klikk på Generer, kopier teksten, HTML-koden eller last ned en .txt-fil. Statistikken viser ord- og tegnantall."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lorem Ipsums historie — fra Cicero til moderne design",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum har over 2 000 års historie. Den opprinnelige passasjen stammer fra seksjon 1.10.32 av <em>De Finibus Bonorum et Malorum</em> av Cicero, skrevet i 45 f.Kr. Verket er en filosofisk avhandling om etikk — Cicero analyserte hedonisme og stoicisme og argumenterte for en balansert tilnærming til nytelse og smerte.</p><p class=\"text-mid mb-4\">Bruken av denne teksten som fyll i trykkeribransjen går tilbake til 1500-tallet, da en ukjent trykker brukte Ciceros passasje for å lage en skrifttypeprøvebok. Teksten overlevde fem århundrer og passerte gjennom epokene med håndsetting, Linotype og fotosetting.</p><p class=\"text-mid mb-4\">Den moderne populariteten til Lorem Ipsum begynte på 1960-tallet, da Letraset plasserte teksten på overføringsark brukt i grafiske studioer. Det avgjørende gjennombruddet kom i 1985 da Aldus Corporation inkluderte Lorem Ipsum som standardfylltekst i PageMaker — et av de første DTP-programmene. Fra det øyeblikket ble Lorem Ipsum bransjestandarden.</p><p class=\"text-mid\">Richard McClintock, latinprofessor ved Hampden-Sydney College i Virginia, identifiserte tekstens kilde på 1980-tallet og oppdaget at ordene lorem ipsum er et forvrengt fragment av latin fra Ciceros verk. Hans forskning bekreftet at Lorem Ipsum ikke er en tilfeldig ordsamling, men har ekte litterære røtter.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "9 moduser for innholdsgenerering",
+      "description": "Generatoren tilbyr 9 forskjellige innholdstyper — fra klassiske avsnitt til tabeller og definisjoner:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiParagraph",
+          "title": "Avsnitt",
+          "description": "Klassiske tekstblokker med kontrollert lengde (kort, middels, lang). Ideelt for webmockups, CMS-maler og UI-prototyper."
+        },
+        {
+          "icon": "RiTextSnippet",
+          "title": "Setninger",
+          "description": "Enkeltsetninger med tilfeldig lengde (5–15 ord). Nyttige for testing av skjemafelt, produktbeskrivelser og korte tekstblokker."
+        },
+        {
+          "icon": "RiFontSize",
+          "title": "Ord",
+          "description": "Tilfeldige enkeltord fra den valgte ordbanken. Ideelt for tagger, etiketter, kategorinavn og testing av tekstlengde i UI-komponenter."
+        },
+        {
+          "icon": "RiListUnordered",
+          "title": "Lister",
+          "description": "Nummererte lister (tekst) eller &lt;ul&gt;&lt;li&gt; (HTML). For navigasjonsmenyer, funksjonslister, produktspesifikasjoner og FAQ-elementer."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Overskrifter",
+          "description": "Tilfeldige H1–H6-overskrifter i Markdown- eller HTML-format. For testing av typografisk hierarki og innholdsstruktur."
+        },
+        {
+          "icon": "RiLink",
+          "title": "Lenker",
+          "description": "Lenker med tilfeldig tekst og eksempel-URL-er. I Markdown- eller &lt;a href&gt;-HTML-format. For prototyping av navigasjon og menyer."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabell",
+          "description": "Tabell med tilfeldige kolonneoverskrifter og data i 3–5 kolonner. Markdown- eller &lt;table&gt;-HTML-format. For prismockups og spesifikasjonsark."
+        },
+        {
+          "icon": "RiDoubleQuotesL",
+          "title": "Sitater",
+          "description": "Sitatblokker (blockquote) med 1–3 setninger. For testing av sitatstiler, anbefalinger og uthevede tekstseksjoner."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Definisjoner",
+          "description": "Term + beskrivelse-par i &lt;dl&gt;&lt;dt&gt;&lt;dd&gt;-HTML eller tekst. For ordlister, FAQ-seksjoner og dokumentasjon."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Når man bør bruke Lorem Ipsum og når ekte tekst",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum fungerer godt overalt der innholdet ennå ikke er klart, men layouten må presenteres eller testes:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>UI-prototyper og wireframes</strong> — designe sidestruktur uten å vente på kundens endelige tekst.</li><li><strong>Grafiske mockups</strong> — presentere et design med realistisk utseende tekst i stedet for tomme rektangler.</li><li><strong>Skrifttype- og typografitester</strong> — vurdere lesbarhet, linjehøyde, kerning og overskriftshierarki på en ekte tekstblokk.</li><li><strong>CMS-maler og temaer</strong> — demonstrere utseendet til en WordPress-, Shopify- eller annen CMS-mal med eksempelinnhold.</li><li><strong>Trykt materiale</strong> — flyere, brosjyrer, visittkort og kataloger i designfasen.</li></ul><p class=\"text-mid mb-4\"><strong>Når man IKKE bør bruke Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Produksjonsnettsteder</strong> — Google indekserer fylltekst og kan vurdere siden som lavkvalitet.</li><li><strong>Endelig SEO-innhold</strong> — metatitler, beskrivelser og H1-overskrifter må inneholde ekte søkeord.</li><li><strong>E-postmarkedsføring</strong> — å sende meldinger med Lorem Ipsum er uprofesjonelt og risikerer å havne i spam.</li><li><strong>Brukervennlighetstester med brukere</strong> — brukere fokuserer på innhold. Fylltekst forvrenger UX-forskningsresultater.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvem er Lorem Ipsum-generatoren for?",
+      "description": "Verktøyet er nyttig for alle som jobber med tekstlayout:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Designere og UI-designere",
+          "description": "Fyll raskt mockups og prototyper med realistisk utseende tekst. Test typografisk hierarki og kolonnelayouter."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Frontend-utviklere",
+          "description": "Generer fylltekst for å teste komponenter, layoutresponsivitet og CSS-oppførsel med ulike innholdslengder."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Tekstforfattere",
+          "description": "Prototyp tekststruktur: antall avsnitt, setningslengde, hvordan lister og overskrifter ser ut i det endelige layoutet."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Trykkerier og forlag",
+          "description": "Fyll flyer-, brosjyre- og katalogmaler med eksempeltekst for kundens godkjenning."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Nettstedseiere",
+          "description": "Test utseendet til en ny CMS-mal eller et tema med eksempelinnhold. Vurder hvor mye tekst som trengs per side."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Designstudenter",
+          "description": "Lær grafisk layout, typografi og komposisjon med profesjonell fylltekst i stedet for tilfeldige tegn."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Sammenligning av tekststiler",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "classic",
+          "name": "Lorem Ipsum",
+          "highlighted": true
+        },
+        {
+          "id": "hipster",
+          "name": "Hipster"
+        },
+        {
+          "id": "business",
+          "name": "Business"
+        },
+        {
+          "id": "polish",
+          "name": "Lokal"
+        },
+        {
+          "id": "bacon",
+          "name": "Bacon"
+        },
+        {
+          "id": "cupcake",
+          "name": "Cupcake"
+        },
+        {
+          "id": "pirate",
+          "name": "Pirate"
+        },
+        {
+          "id": "legal",
+          "name": "Legal"
+        }
+      ],
+      "features": [
+        {
+          "name": "Språk",
+          "values": {
+            "classic": "Latin",
+            "hipster": "Engelsk",
+            "business": "Engelsk",
+            "polish": "Lokalt",
+            "bacon": "Engelsk",
+            "cupcake": "Engelsk",
+            "pirate": "Engelsk",
+            "legal": "Engelsk"
+          }
+        },
+        {
+          "name": "Tema",
+          "values": {
+            "classic": "Filosofi",
+            "hipster": "Livsstil",
+            "business": "Bedrift",
+            "polish": "Generelt",
+            "bacon": "Gastronomi",
+            "cupcake": "Bakeri",
+            "pirate": "Eventyr",
+            "legal": "Jus"
+          }
+        },
+        {
+          "name": "Visuell nøytralitet",
+          "values": {
+            "classic": true,
+            "hipster": false,
+            "business": false,
+            "polish": false,
+            "bacon": false,
+            "cupcake": false,
+            "pirate": false,
+            "legal": false
+          }
+        },
+        {
+          "name": "Naturlig rytme",
+          "values": {
+            "classic": true,
+            "hipster": true,
+            "business": true,
+            "polish": true,
+            "bacon": true,
+            "cupcake": true,
+            "pirate": true,
+            "legal": true
+          }
+        },
+        {
+          "name": "Bransjestandard",
+          "values": {
+            "classic": true,
+            "hipster": false,
+            "business": false,
+            "polish": false,
+            "bacon": false,
+            "cupcake": false,
+            "pirate": false,
+            "legal": false
+          }
+        },
+        {
+          "name": "Humor / karakter",
+          "values": {
+            "classic": "Nøytral",
+            "hipster": "Middels",
+            "business": "Lav",
+            "polish": "Lav",
+            "bacon": "Høy",
+            "cupcake": "Høy",
+            "pirate": "Høy",
+            "legal": "Lav"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "8 fylltekststiler — alle tilgjengelige i generatoren",
+      "html": "<p class=\"text-mid mb-4\">Vår generator tilbyr 8 unike fylltekststiler — fra klassisk latin til juridisk sjargong. Hver stil har sin egen ordbank med over 90 ord og genererer tekst med naturlig rytme:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — den klassiske latinske fyllteksten fra Ciceros verk. Bransjestandard i over 500 år.</li><li><strong>Hipster Ipsum</strong> — hipsterkulturens vokabular: håndverk, avokado, vintage, mindfulness. Ideelt for livsstilsprosjekter.</li><li><strong>Business Ipsum</strong> — bedriftsjargong: synergi, vekststrategi, interessent, KPI. For presentasjons- og bedriftsnettstedsmockups.</li><li><strong>Norske fyllord</strong> — tilfeldige ord på det lokale språket fra ulike områder. Viser kunden hvordan tekst vil se ut i designet.</li><li><strong>Bacon Ipsum</strong> — kjøtt- og grillvokabular: biff, brisket, grilling. Populært blant utviklere.</li><li><strong>Cupcake Ipsum</strong> — bakerivokabular: muffin, sjokolade, karamell, glasur. For matindustriprosjekter.</li><li><strong>Pirate Ipsum</strong> — pirattekst: ahoy, skatt, galleon, rom. For underholdnings- og spillprosjekter.</li><li><strong>Legal Ipsum</strong> — juridisk terminologi: jurisdiksjon, saksøker, vedtekt, ansvar. For advokatkontor-nettstedsmockups.</li></ul><p class=\"text-mid mb-4\">De morsomme variantene (Bacon, Cupcake, Pirate) fungerer godt i interne presentasjoner der humor forbedrer teamkommunikasjonen. For profesjonelle kundepresentasjoner, bruk klassisk Lorem Ipsum eller Legal Ipsum — de er nøytrale og distraherer ikke fra designet.</p><p class=\"text-mid\">Norske fyllord er et unikt alternativ — ord på det lokale språket bevarer de naturlige bokstavproporsjonene og ordlengdene som er karakteristiske for målspråket. Ideelt for å vise kunder en realistisk forhåndsvisning av teksten.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lorem Ipsum og SEO — skader fylltekst rangeringen",
+      "html": "<p class=\"text-mid mb-4\">Ja — å publisere Lorem Ipsum på et produksjonsnettsted kan påvirke søkerangeringen negativt. Google analyserer innholdet på hver indeksert side og gjenkjenner fylltekst:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Tynt innhold</strong> — en side med fylltekst tilbyr ingen verdi for brukerne. Google klassifiserer slike sider som tynt innhold og senker deres posisjon.</li><li><strong>Uønsket indeksering</strong> — Googles roboter indekserer Lorem Ipsum som sideinnhold. Det kan dukke opp i søkeresultater og skade merkevarens image.</li><li><strong>Sløsing med crawlbudsjett</strong> — Google tildeler et begrenset crawlbudsjett. Sider med Lorem Ipsum forbruker det uten nytte.</li><li><strong>Core Web Vitals</strong> — fylltekst påvirker ikke ytelsesmålinger direkte, men sider av lav kvalitet kan rangeres lavere totalt.</li></ul><p class=\"text-mid mb-4\">Slik unngår du problemet: søk gjennom hele nettstedet etter &quot;lorem ipsum&quot; eller &quot;dolor sit amet&quot; før publisering. I Google Search Console, kontroller at ingen indeksert side inneholder fylltekst. Bruk <code>site:dittdomene.no &quot;lorem ipsum&quot;</code> i Google.</p><p class=\"text-mid\">Lorem Ipsum-generatoren er et verktøy for designfasen. Fylltekst må erstattes med ekte innhold før publisering.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hva gjør denne Lorem Ipsum-generatoren spesiell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "9 genereringsmoduser",
+          "description": "Avsnitt, setninger, ord, lister, overskrifter, lenker, tabeller, sitater og definisjoner — full kontroll over antall og format."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "8 unike tekststiler",
+          "description": "Lorem Ipsum, Hipster, Business, Norske fyllord, Bacon, Cupcake, Pirate og Legal. Hver stil har 90+ ord."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Ferdig HTML-kode",
+          "description": "Generer tekst med HTML-tagger og kopier den ferdige koden. Sparer tid ved oppretting av nettstedsprototyper."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Tekststatistikk",
+          "description": "Ord, tegn, setninger, avsnitt, lesetid og størrelse i bytes — synlige umiddelbart etter generering."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Lokal behandling",
+          "description": "Tekst genereres i nettleseren din. Ingenting sendes til en server. Verktøyet fungerer frakoblet etter at siden er lastet."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Ingen registrering eller begrensninger",
+          "description": "Helt gratis. Ingen registrering, innlogging eller personopplysninger kreves. Ingen reklame i den genererte teksten."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stilte spørsmål om Lorem Ipsum-generatoren",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hva er Lorem Ipsum?",
+          "answer": "Lorem Ipsum er standardfyllteksten innen trykkeribransjen, grafisk design og webutvikling. Den brukes til å fylle layouter med realistisk utseende tekst når det endelige innholdet ennå ikke er klart. Teksten har en naturlig rytme og bokstavfordeling som ligner et ekte språk.",
+          "answerSchemaText": "Lorem Ipsum er standardfyllteksten innen trykkeribransjen, grafisk design og webutvikling."
+        },
+        {
+          "question": "Hvor kommer Lorem Ipsum fra?",
+          "answer": "Lorem Ipsum stammer fra De Finibus Bonorum et Malorum av Marcus Tullius Cicero, skrevet i 45 f.Kr. Det er en filosofisk avhandling om etikk. Den opprinnelige passasjen fra seksjon 1.10.32 ble endret av en ukjent trykker på 1500-tallet.",
+          "answerSchemaText": "Lorem Ipsum stammer fra De Finibus Bonorum et Malorum av Cicero, skrevet i 45 f.Kr."
+        },
+        {
+          "question": "Er Lorem Ipsum ekte latin?",
+          "answer": "Delvis. Det inneholder ekte latinske ord fra Ciceros verk, men teksten er bevisst forvrengt. Ordene er blandet og noen mangler endelser. Enkeltord som dolor (smerte), amet (elsker) og ipsum (selv) er ekte latinske termer.",
+          "answerSchemaText": "Delvis — ekte latinske ord fra Cicero, men bevisst forvrengt og uten mening."
+        },
+        {
+          "question": "Hvor mange avsnitt trenger jeg for en mockup?",
+          "answer": "Avhenger av sidetypen. Landingsside: 5–8. Tjenesteside: 4–6. Bloggartikkel: 8–15 (1 500–2 500 ord). Produktkort: 2–3. Generatoren lager nøyaktig den mengden du trenger.",
+          "answerSchemaText": "Avhenger av type: landingsside 5–8, tjenester 4–6, blogg 8–15, produkt 2–3 avsnitt."
+        },
+        {
+          "question": "Kan jeg bruke Lorem Ipsum på et live nettsted?",
+          "answer": "Nei. Lorem Ipsum er bare for designfasen. Publisering skader SEO (Google klassifiserer det som tynt innhold), merkevarens image og kan bli indeksert. Erstatt alltid før publisering.",
+          "answerSchemaText": "Nei — skader SEO og merkevareimage. Erstatt alltid med ekte innhold før publisering."
+        },
+        {
+          "question": "Skader Lorem Ipsum SEO?",
+          "answer": "Ja, hvis det publiseres på et produksjonsnettsted. Google gjenkjenner fylltekst og kan vurdere siden som lavkvalitet. Bruk site:dittdomene.no lorem ipsum i Google for å kontrollere.",
+          "answerSchemaText": "Ja, på live nettsteder — Google gjenkjenner fylltekst og klassifiserer det som tynt innhold."
+        },
+        {
+          "question": "Hva er Hipster Ipsum og Business Ipsum?",
+          "answer": "Tematiske varianter av fylltekst. Hipster Ipsum bruker hipstervokabular (håndverk, avokado, vintage). Business Ipsum er bedriftsjargong (synergi, vekststrategi, interessent, KPI). Begge genererer tekst med naturlig rytme og bransjespesifikt ordforråd.",
+          "answerSchemaText": "Tematiske varianter — Hipster bruker livsstilsvokabular, Business bruker bedriftsjargong."
+        },
+        {
+          "question": "Hvordan genererer jeg Lorem Ipsum med HTML-tagger?",
+          "answer": "I innstillingene, endre formatet fra Tekst til HTML. Generatoren pakker avsnitt med &lt;p&gt; og lister med &lt;ul&gt;&lt;li&gt;. Klikk på Kopier HTML. Koden kan limes inn direkte i en HTML-editor eller CMS.",
+          "answerSchemaText": "Endre formatet til HTML i innstillingene, generer tekst og klikk på Kopier HTML."
+        },
+        {
+          "question": "Er generatoren gratis og sikker?",
+          "answer": "Ja. Helt gratis, uten registrering og uten begrensninger. Alt genereres lokalt i nettleseren din — ingenting sendes til en server. Ingen sporing, ingen informasjonskapsler, fungerer frakoblet etter lasting.",
+          "answerSchemaText": "Ja — gratis, uten registrering, lokal nettleserbehandling, ingen datainnsamling."
+        },
+        {
+          "question": "Hvor mange ord har et standardavsnitt?",
+          "answer": "Avhenger av innstillingen: kort (2–4 setninger, ca. 20–50 ord), middels (4–7 setninger, ca. 40–90 ord), lang (7–12 setninger, ca. 70–150 ord). Ciceros opprinnelige første avsnitt har omtrent 69 ord.",
+          "answerSchemaText": "Kort 20–50 ord, middels 40–90 ord, lang 70–150 ord."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjelp oss å forbedre verktøyene våre",
+      "description": "Har du en idé til en ny funksjon, funnet en feil eller vil foreslå et annet verktøy? Skriv til oss — vi svarer innen 24 timer.",
+      "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-no.webp",
+      "imageAlt": "Lorem Ipsum-generator — Arteon",
+      "defaultSubject": "Tilbakemelding: Lorem Ipsum-generator"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Utforsk flere verktøy"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

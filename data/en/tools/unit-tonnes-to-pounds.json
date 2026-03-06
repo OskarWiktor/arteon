@@ -1,0 +1,281 @@
+{
+  "toolKey": "tonnesToPounds",
+  "locale": "en",
+  "metadata": {
+    "title": "Tonnes to pounds converter",
+    "description": "Convert metric tonnes to pounds and vice versa. Essential for shipping, freight, agriculture, and international trade.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/tonnes-to-pounds-converter"
+  },
+  "hero": {
+    "title": "Convert tonnes to pounds",
+    "description": "This converter converts metric tonnes to pounds and vice versa. Enter a value and the result appears instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/tonnes-to-pounds-converter",
+      "label": "t to lbs"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Tonnes to pounds converter",
+      "alternateName": ["Tonne to pound calculator", "Metric ton to lbs converter", "Heavy weight converter"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert metric tonnes to pounds and vice versa. Essential for shipping, freight, agriculture, and international trade.",
+      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the tonnes to pounds converter",
+      "description": "Instructions: tonnes to pounds.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter weight",
+          "text": "Type a weight in metric tonnes."
+        },
+        {
+          "name": "Read the result",
+          "text": "The result in pounds appears instantly."
+        },
+        {
+          "name": "Copy or reverse",
+          "text": "Click Copy or Reverse to convert pounds to tonnes."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert tonnes to pounds?",
+      "html": "<p class=\"text-mid mb-4\">Metric tonne (t) equals 1,000 kg. Pound (lb) is the standard mass unit in the US imperial system. 1 tonne = 2,204.62 pounds.</p><p class=\"text-mid mb-4\">This conversion is essential for international shipping, freight logistics, agriculture (crop yields), and heavy industry where weight limits differ between metric and imperial systems.</p><p class=\"text-mid mb-4\">Examples: 1 t = 2,205 lbs, 5 t = 11,023 lbs, 20 t = 44,092 lbs. A typical car weighs about 1.5 t = 3,307 lbs.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Tonnes to pounds converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShipLine",
+          "title": "Transport morski",
+          "description": "Ładowność statków i kontenerów podaje się w tonach lub funtach."
+        },
+        {
+          "icon": "RiTruckLine",
+          "title": "Logistyka",
+          "description": "Amerykańskie firmy transportowe podają limity wagi w funtach."
+        },
+        {
+          "icon": "RiPlantLine",
+          "title": "Rolnictwo",
+          "description": "Plony i ceny zbóż w USA: funty lub buszle."
+        },
+        {
+          "icon": "RiBuildingLine",
+          "title": "Budownictwo",
+          "description": "Waga materiałów budowlanych (stal, beton) w tonach lub funtach."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does tonnes to pounds conversion work?",
+      "html": "<p class=\"text-mid mb-4\">1 metric tonne = 1,000 kg. 1 kg = 2.20462 lbs. Therefore, 1 tonne = 2,204.62 lbs.</p><p class=\"text-mid mb-4\">Note: the US short ton = 2,000 lbs = 907.185 kg. The UK long ton = 2,240 lbs = 1,016.05 kg. This converter uses the metric tonne (1,000 kg).</p><p class=\"text-mid\">To convert tonnes to pounds, multiply by 2,204.62. To convert pounds to tonnes, divide by 2,204.62.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Car: 1.2–2.0 t = 2,646–4,409 lbs. SUV: 2.0–2.5 t = 4,409–5,512 lbs.</li><li>Shipping container (20ft, loaded): up to 21.6 t = 47,620 lbs.</li><li>US short ton = 2,000 lbs = 907 kg (not a metric tonne!).</li><li>1 metric tonne of water = 1,000 liters = 264 US gallons.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Metric tonne (t) vs Pound (lb)",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Tonne (t)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pound (lb)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metric (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Base value",
+          "values": {
+            "unit1": "1,000 kg",
+            "unit2": "0.4536 kg"
+          }
+        },
+        {
+          "name": "Shipping",
+          "values": {
+            "unit1": "International",
+            "unit2": "USA"
+          }
+        },
+        {
+          "name": "Vehicles",
+          "values": {
+            "unit1": "Europe (kg/t)",
+            "unit2": "USA (lbs)"
+          }
+        },
+        {
+          "name": "Agriculture",
+          "values": {
+            "unit1": "Tonnes/hectare",
+            "unit2": "Pounds/acre"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many pounds is 1 tonne?",
+          "answer": "1 metric tonne = 2,204.62 pounds."
+        },
+        {
+          "question": "What is the difference between a tonne and a ton?",
+          "answer": "Metric tonne = 1,000 kg = 2,205 lbs. US short ton = 2,000 lbs = 907 kg. UK long ton = 2,240 lbs = 1,016 kg."
+        },
+        {
+          "question": "How heavy is a car in tonnes?",
+          "answer": "Compact car: 1.0–1.3 t. Sedan: 1.3–1.8 t. SUV: 1.8–2.5 t. Pickup truck: 2.0–3.0 t."
+        },
+        {
+          "question": "Are calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "tony na funty – Arteon",
+      "defaultSubject": "Feedback: tonnes-to-pounds"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "toolKey": "pngToPdf",
   "locale": "el",
   "metadata": {
-    "title": "Μετατροπέας PNG σε PDF — PNG PDF",
+    "title": "Μετατροπέας PNG σε PDF - PNG PDF",
     "description": "Μετατρέψτε εικόνες PNG σε PDF. Συνδυάστε πολλαπλά αρχεία σε ένα PDF. Δωρεάν.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
     "path": "/el/ergaleia/metatropeas-png-se-pdf"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Μετατροπή",
-          "text": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας."
+          "text": "Κάντε κλικ στο Μετατροπή - τα αρχεία επεξεργάζονται τοπικά στον browser σας."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Γιατί να μετατρέψετε PNG σε PDF;",
-      "html": "<p class=\"text-mid mb-4\">To PNG einai ena eyrytera chrisimopoioumeno format archeiou me megali symvatotita. Analoga me ti chrisi, i metatropi se PDF mporei na prosferei simantika pleonektimata — mikrotera archeia, kaliteri poiotita i eyriteri ypostirixi platformon.</p><p class=\"text-mid mb-4\">Aytos o dorean online metatropeas metatrepei ta archeia PNG se format PDF apeytheias ston browser. Kanena archeio den anevasei se server — oli i diadikasia ginetai topika sti syskevi sas.</p><p class=\"text-mid\">Metatrepste osa archeia thelete choris imerisia oria, choris eggraphi kai choris ydrografimatam. Syrete ta archeia, prosamoste tin poiotita kai katevaste ta apotelesmata.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το PNG είναι ένα ευρέως χρησιμοποιούμενο format αρχείου με μεγάλη συμβατότητα. Ανάλογα με τη χρήση, η μετατροπή σε PDF μπορεί να προσφέρει σημαντικά πλεονεκτήματα - μικρότερα αρχεία, καλύτερη ποιότητα ή ευρύτερη υποστήριξη πλατφορμών.</p><p class=\"text-mid mb-4\">Αυτός ο δωρεάν online μετατροπέας μετατρέπει τα αρχεία PNG σε format PDF απευθείας στον browser. Κανένα αρχείο δεν ανεβαίνει σε server - όλη η διαδικασία γίνεται τοπικά στη συσκευή σας.</p><p class=\"text-mid\">Μετατρέψτε όσα αρχεία θέλετε χωρίς ημερήσια όρια, χωρίς εγγραφή και χωρίς υδατογραφήματα. Σύρετε τα αρχεία, προσαρμόστε την ποιότητα και κατεβάστε τα αποτελέσματα.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/metatropeas-jpg-png-se-webp-el.webp",
       "imageAlt": "PNG to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Μετατροπή",
-          "description": "Κάντε κλικ στο Μετατροπή — τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
+          "description": "Κάντε κλικ στο Μετατροπή - τα αρχεία επεξεργάζονται τοπικά στον browser σας.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poiotita — ti na epilexete gia metatropi PNG se PDF;",
-      "html": "<p class=\"text-mid\">To slider epitrepei 60%-95%. Ypsilotero = kaliteri poiotita alla megalytera archeia.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (proepilogi) — kalo gia istoselides, blogs, arthra.</strong></li><li><strong>85–90% — gia fotografies proionton, portfolio kai galleries.</strong></li><li><strong>60–70% — otan to megethos archeiou einai proteraiotita.</strong></li></ul><p class=\"text-mid mt-3\">Se 85% i diafora metaxy PNG kai PDF einai praktika adiaistiti.</p>"
+      "title": "Ποιότητα - τι να επιλέξετε για μετατροπή PNG σε PDF;",
+      "html": "<p class=\"text-mid\">Το slider επιτρέπει 60%-95%. Υψηλότερο = καλύτερη ποιότητα αλλά μεγαλύτερα αρχεία.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (προεπιλογή) - καλό για ιστοσελίδες, blogs, άρθρα.</strong></li><li><strong>85–90% - για φωτογραφίες προϊόντων, portfolio και galleries.</strong></li><li><strong>60–70% - όταν το μέγεθος αρχείου είναι προτεραιότητα.</strong></li></ul><p class=\"text-mid mt-3\">Σε 85% η διαφορά μεταξύ PNG και PDF είναι πρακτικά αδιαίσθητη.</p>"
     },
     {
       "type": "gap",
@@ -209,8 +209,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Poso exoikonomeis metatrepontas PNG se PDF;",
-      "html": "<p class=\"text-mid mb-4\">I exoikonomisi exartatai apo ton typo archeiou kai ti sympiesi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fotografia kamera</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Eikona proiontos</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Stigmiotipo / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Exoikonomisi: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">I pragmatiki exoikonomisi poikilei analoga me to periechomeno.</p>"
+      "title": "Πόσο εξοικονομείτε μετατρέποντας PNG σε PDF;",
+      "html": "<p class=\"text-mid mb-4\">Η εξοικονόμηση εξαρτάται από τον τύπο αρχείου και τη συμπίεση:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Φωτογραφία κάμερας</p><p class=\"text-light text-sm\">1.2 MB → 280 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~77%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Εικόνα προϊόντος</p><p class=\"text-light text-sm\">800 KB → 210 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~74%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Στιγμιότυπο / banner</p><p class=\"text-light text-sm\">150 KB → 45 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Εξοικονόμηση: ~70%</p></div></div><p class=\"text-light mt-4 text-sm\">Η πραγματική εξοικονόμηση ποικίλλει ανάλογα με το περιεχόμενο.</p>"
     },
     {
       "type": "gap",
@@ -218,35 +218,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Symvoules gia metatropi PNG se PDF",
-      "description": "Symvoules gia apofygi provlimaton:",
+      "title": "Συμβουλές για μετατροπή PNG σε PDF",
+      "description": "Συμβουλές για αποφυγή προβλημάτων:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Poly megala archeia",
-          "description": "Eikones pano apo 4000×4000 px mporei na einai pio arges. Chorisete se omades ton 10–20."
+          "title": "Πολύ μεγάλα αρχεία",
+          "description": "Εικόνες πάνω από 4000×4000 px μπορεί να είναι πιο αργές. Χωρίστε σε ομάδες των 10–20."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Idi sympiesmena",
-          "description": "An to PNG itan idi sympiesmeno, i metatropi se PDF mporei na min exoikonomisi polla."
+          "title": "Ήδη συμπιεσμένα",
+          "description": "Αν το PNG ήταν ήδη συμπιεσμένο, η μετατροπή σε PDF μπορεί να μην εξοικονομήσει πολλά."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Diafaneia",
+          "title": "Διαφάνεια",
           "description": "To PDF den ypostirizei diafaneia. Oi diafaneis perioches ginontai lefkes. Skeftite PNG i WebP."
         },
         {
           "icon": "RiStackLine",
-          "title": "Kratiste ta prototypa",
-          "description": "I metatropi me apoleies einai mi antistrepti. Kratiste antigrafa ton PNG archeion."
+          "title": "Κρατήστε τα πρωτότυπα",
+          "description": "Η μετατροπή με απώλειες δεν αναιρείται. Κρατήστε αντίγραφα των PNG αρχείων."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">PNG to PDF conversion creates document files for sharing and printing. When PDFs are downloaded from websites, file size directly affects the user experience — large PDFs cause slow downloads and increase bounce rates.</p><p class=\"text-mid mb-4\">The converter packages PNG images into a compact PDF. Since PNG is lossless, the internal image quality is preserved. A typical multi-page PDF from 10 PNG screenshots will be approximately 10–20 MB.</p><p class=\"text-mid\">For web display, keep images as PNG or convert to WebP for optimal performance. Use PDF only when you need a printable, shareable multi-page document.</p>"
     },
     {
       "type": "faq",
@@ -270,16 +279,16 @@
           "answer": "Ναι, λειτουργεί σε κάθε συσκευή με σύγχρονο browser."
         },
         {
-          "question": "Einai asfalis i metatropi PNG se PDF;",
-          "answer": "Nai. Ola ginontai topika ston browser meso Canvas API. Tipota den stelnetai se server."
+          "question": "Είναι ασφαλής η μετατροπή PNG σε PDF;",
+          "answer": "Ναι. Όλη η επεξεργασία γίνεται τοπικά στον περιηγητή σας μέσω Canvas API. Τίποτα δεν αποστέλλεται σε διακομιστή."
         },
         {
-          "question": "Mporo na metatrepso polla archeia PNG;",
-          "answer": "Nai. Omadiki metatropi choris orio. Syrete ta archeia ston metatropea."
+          "question": "Μπορώ να μετατρέψω πολλά αρχεία PNG;",
+          "answer": "Ναι. Ομαδική μετατροπή χωρίς όριο. Σύρετε τα αρχεία στον μετατροπέα."
         },
         {
-          "question": "Ypostirizoun oloi oi browsers to PDF;",
-          "answer": "To PDF ypostirizetai apo Chrome, Firefox, Safari, Edge kai Opera."
+          "question": "Υποστηρίζουν όλοι οι browsers το PDF;",
+          "answer": "Το PDF υποστηρίζεται από Chrome, Firefox, Safari, Edge και Opera."
         }
       ]
     },

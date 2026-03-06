@@ -3,13 +3,13 @@
   "locale": "sv",
   "metadata": {
     "title": "TIFF till PNG-konverterare – TIFF PNG",
-    "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp",
     "path": "/sv/verktyg/tiff-till-png-konverterare"
   },
   "hero": {
     "title": "TIFF till PNG-konverterare",
-    "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+    "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-till-webp-konverterare-sv.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "TIFF till PNG-konverterare",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg — utan registrering, utan filbegränsning, fullständig integritet.",
+      "description": "Konvertera TIFF-filer till forlustfri PNG. Behall full kvalitet pa skanningar. Gratis webbläsarverktyg - utan registrering, utan filbegränsning, fullständig integritet.",
       "featureList": ["TIFF to PNG conversion", "Lossless PNG output", "Batch conversion", "Local browser processing"],
       "alternateName": ["Konvertera TIFF till PNG", "TIFF till PNG konvertering", "Gratis TIFF till PNG konverterare"]
     },
@@ -291,6 +291,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting TIFF images to PNG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",

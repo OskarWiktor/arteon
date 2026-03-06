@@ -20,7 +20,7 @@ const IS_PROD = process.env.VERCEL_ENV === 'production';
 const cspDirectives = [
   "default-src 'self'",
   // Scripts: self + Google services + Google CMP (Funding Choices) + Vercel + Ahrefs + Metricool + inline (wymagane przez Next.js)
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://fundingchoicesmessages.google.com https://fundingchoices.google.com https://analytics.ahrefs.com https://tracker.metricool.com https://va.vercel-scripts.com",
+  `script-src 'self' 'unsafe-inline'${IS_PROD ? '' : " 'unsafe-eval'"} https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://fundingchoicesmessages.google.com https://fundingchoices.google.com https://analytics.ahrefs.com https://tracker.metricool.com https://va.vercel-scripts.com`,
   // Styles: self + inline (Tailwind/Next.js) + Google Fonts
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   // Images: self + data/blob (narzędzia generujące obrazy) + Google + HTTPS ogólnie (OG images itp.)
@@ -59,10 +59,12 @@ const securityHeaders = [
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
-  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()' },
+  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), browsing-topics=(), attribution-reporting=()' },
   { key: 'Content-Security-Policy', value: cspDirectives },
   // COOP: izoluje okno top-level od cross-origin dokumentów; allow-popups aby nie łamać reklam
   { key: 'Cross-Origin-Opener-Policy', value: 'same-origin-allow-popups' },
+  // CORP: zapobiega osadzaniu zasobów strony na obcych domenach
+  { key: 'Cross-Origin-Resource-Policy', value: 'same-site' },
 ];
 
 /**
@@ -96,10 +98,25 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 2592000,
   },
   async headers() {
+    const preconnectHeaders = [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'Link', value: '<https://pagead2.googlesyndication.com>; rel=preconnect; crossorigin' },
+          { key: 'Link', value: '<https://fundingchoicesmessages.google.com>; rel=preconnect; crossorigin' },
+          { key: 'Link', value: '<https://www.googletagmanager.com>; rel=preconnect' },
+          { key: 'Link', value: '<https://www.arteonagency.pl/sitemap.xml>; rel=sitemap' },
+        ],
+      },
+    ];
+
     const staticCacheHeaders = [
       {
         source: '/assets/:path*',
-        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+          { key: 'X-Robots-Tag', value: 'noindex' },
+        ],
       },
       {
         source: '/fonts/:path*',
@@ -107,11 +124,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/sitemap.xml',
-        headers: [{ key: 'Content-Type', value: 'application/xml; charset=utf-8' }],
+        headers: [
+          { key: 'Content-Type', value: 'application/xml; charset=utf-8' },
+          { key: 'Cache-Control', value: 'public, max-age=3600, s-maxage=3600' },
+        ],
       },
       {
-        source: '/sitemap-0.xml',
-        headers: [{ key: 'Content-Type', value: 'application/xml; charset=utf-8' }],
+        source: '/sitemap-:slug.xml',
+        headers: [
+          { key: 'Content-Type', value: 'application/xml; charset=utf-8' },
+          { key: 'Cache-Control', value: 'public, max-age=3600, s-maxage=3600' },
+        ],
       },
     ];
 
@@ -121,6 +144,7 @@ const nextConfig: NextConfig = {
             source: '/:path*',
             headers: securityHeaders,
           },
+          ...preconnectHeaders,
           ...staticCacheHeaders,
         ]
       : [
@@ -128,6 +152,7 @@ const nextConfig: NextConfig = {
             source: '/:path*',
             headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
           },
+          ...preconnectHeaders,
           ...staticCacheHeaders,
         ];
   },

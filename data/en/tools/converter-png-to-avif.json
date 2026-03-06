@@ -2,7 +2,7 @@
   "toolKey": "pngToAvif",
   "locale": "en",
   "metadata": {
-    "title": "PNG to AVIF converter — PNG AVIF",
+    "title": "PNG to AVIF converter - PNG AVIF",
     "description": "Convert PNG graphics to AVIF with transparency support. Significantly smaller files. Runs entirely in your browser. No server uploads, no registration required.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/png-to-avif-converter"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Set quality",
-          "text": "Adjust the AVIF quality slider — lower values produce smaller files."
+          "text": "Adjust the AVIF quality slider - lower values produce smaller files."
         },
         {
           "position": 3,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 4,
           "name": "Download",
-          "text": "Download the AVIF files — individually or all at once."
+          "text": "Download the AVIF files - individually or all at once."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert PNG to AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Portable Network Graphics (PNG) is a lossless image format supporting millions colors. It is widely used for graphics with transparency and is supported by virtually every browser and device.</p><p class=\"text-mid mb-4\">Converting PNG to AVIF (AV1 Image File Format) significantly reduces file size, making images faster to load and easier to share.</p><p class=\"text-mid mb-4\">AVIF supports alpha transparency, preserving any transparent areas in your image. AVIF supports both lossy and lossless compression, giving you control over the quality-to-size ratio.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many PNG files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG is a lossless format that produces large files — ideal for editing but heavy for web delivery. AVIF (AV1 Image File Format) delivers dramatically better compression: files are typically 50–80% smaller than PNG while maintaining excellent visual quality with support for transparency.</p><p class=\"text-mid mb-4\">AVIF supports millions of colors, full alpha transparency, HDR, and both lossy and lossless modes. It is supported in Chrome 85+, Firefox 93+, Safari 16.4+, and Edge 121+. Converting PNG to AVIF is one of the most effective ways to optimize website performance.</p><p class=\"text-mid mb-4\">AVIF uses lossy compression by default — at high quality settings, the difference from the original PNG is imperceptible to the human eye. For pixel-perfect archival copies, keep the original PNG.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "PNG to AVIF conversion",
       "variant": "right"
@@ -109,22 +109,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert PNG to AVIF to significantly reduce page load times and improve Core Web Vitals scores."
+          "description": "PNG files are large — a single screenshot can be 2–10 MB. Converting to AVIF reduces file size by 50–80% while preserving transparency. This dramatically improves page load times and Core Web Vitals."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "AVIF files are compatible with most modern platforms. Convert to AVIF for smaller attachments that stay within email size limits."
+          "description": "AVIF files are significantly smaller than PNG, making images easier to share via email and messaging. Transparency is preserved, so logos and graphics with transparent backgrounds remain intact."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify may require specific formats – converting to AVIF ensures your product images meet their requirements."
+          "description": "Product images with transparent backgrounds (commonly saved as PNG) become much smaller when converted to AVIF. AVIF supports alpha transparency, so cutout product photos work perfectly."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "AVIF provides a modern and efficient format for document image storage."
+          "description": "Converting PNG screenshot collections and diagram libraries to AVIF can reduce storage requirements by 60–80% while maintaining excellent visual quality and transparency support."
         }
       ]
     },
@@ -258,6 +258,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting PNG to AVIF?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (default) – a good balance for most use cases: web graphics, screenshots, blog images. The visual difference compared to lossless PNG is virtually unnoticeable.</strong></li><li><strong>85–90% – for product photography and detailed graphics where quality matters most.</strong></li><li><strong>60–70% – when minimizing file size is the priority, e.g. thumbnails or background images.</strong></li></ul><p class=\"text-mid mt-3\">At 80% quality, AVIF typically reduces PNG file size by 60–80% while maintaining visual quality that is indistinguishable from the original to the human eye.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting PNG to AVIF?",
+      "html": "<p class=\"text-mid mb-4\">PNG files are lossless and therefore relatively large. AVIF provides substantial savings:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot</p><p class=\"text-light text-sm\">1.2 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~85%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product photo (PNG)</p><p class=\"text-light text-sm\">3.5 MB → 250 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Icon / logo</p><p class=\"text-light text-sm\">45 KB → 12 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~73%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

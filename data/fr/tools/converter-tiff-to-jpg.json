@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur TIFF en JPG – TIFF JPG",
-    "description": "Convertissez les fichiers TIFF en JPG compact. Ideal pour scans et archives photo. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
+    "description": "Convertissez les fichiers TIFF en JPG compact. Ideal pour scans et archives photo. Outil gratuit dans le navigateur - sans inscription, sans limite, confidentialité totale.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-tiff-en-jpg"
   },
   "hero": {
     "title": "Convertisseur TIFF en JPG",
-    "description": "Convertissez les fichiers TIFF en JPG compact. Ideal pour scans et archives photo. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
+    "description": "Convertissez les fichiers TIFF en JPG compact. Ideal pour scans et archives photo. Outil gratuit dans le navigateur - sans inscription, sans limite, confidentialité totale.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur TIFF en JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les fichiers TIFF en JPG compact. Ideal pour scans et archives photo. Outil gratuit dans le navigateur — sans inscription, sans limite, confidentialité totale.",
+      "description": "Convertissez les fichiers TIFF en JPG compact. Ideal pour scans et archives photo. Outil gratuit dans le navigateur - sans inscription, sans limite, confidentialité totale.",
       "featureList": ["TIFF to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir TIFF en JPG", "Conversion TIFF vers JPG", "Convertisseur TIFF en JPG gratuit"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Reglages de qualite — que choisir pour TIFF vers JPG ?",
-      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (defaut) — bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% — pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% — quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 85% la difference visuelle entre TIFF original et JPG resultant est imperceptible.</p>"
+      "title": "Reglages de qualite - que choisir pour TIFF vers JPG ?",
+      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (defaut) - bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% - pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% - quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 85% la difference visuelle entre TIFF original et JPG resultant est imperceptible.</p>"
     },
     {
       "type": "gap",

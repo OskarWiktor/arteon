@@ -1,0 +1,277 @@
+{
+  "toolKey": "degToRad",
+  "locale": "sv",
+  "metadata": {
+    "title": "Grader till rad – omvandlare",
+    "description": "Omvandla grader till radianer och tvärtom.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/sv/verktyg/grader-till-radianer-omvandlare"
+  },
+  "hero": {
+    "title": "Grader till rad",
+    "description": "Denna omvandlare räknar om direkt. Ange ett värde så visas resultatet omedelbart.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/sv/verktyg",
+      "label": "Verktyg"
+    },
+    "third": {
+      "href": "/sv/verktyg/grader-till-radianer-omvandlare",
+      "label": "grader till rad"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Grader till rad – omvandlare",
+      "alternateName": ["Grader till rad"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Omvandla grader till radianer och tvärtom.",
+      "featureList": ["Dubbelriktad konvertering i realtid", "Alla omvandlare på ett ställe", "Kopiera resultat till urklipp", "Lokal beräkning i webbläsaren"]
+    },
+    "howTo": {
+      "name": "Så använder du omvandlaren",
+      "description": "Snabbguide för att använda omvandlaren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Ange värde",
+          "text": "Skriv ett tal i inmatningsfältet till vänster."
+        },
+        {
+          "name": "Läs av resultatet",
+          "text": "Konverteringsresultatet visas omedelbart i fältet bredvid."
+        },
+        {
+          "name": "Kopiera eller vänd",
+          "text": "Klicka på Kopiera resultat eller på Vänd för att konvertera i andra riktningen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "När ska man omvandla grader till radianer?",
+      "html": "<p class=\"text-mid mb-4\">Grader (°) och radianer (rad) är två sätt att mäta vinklar. Hel cirkel = 360° = 2π rad. Formel: rad = ° × π/180.</p><p class=\"text-mid mb-4\">JavaScripts Math-funktioner (sin, cos, tan) kräver radianer. CSS-transformationer använder grader.</p><p class=\"text-mid\">Alla beräkningar körs lokalt i din webbläsare.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Degrees to radians converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Så använder du omvandlaren",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Ange värde",
+          "description": "Skriv ett tal i inmatningsfältet. Du kan använda punkt eller komma som decimalavskiljare.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Läs av resultatet",
+          "description": "Konverteringsresultatet visas omedelbart i fältet bredvid – utan att klicka.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiera eller vänd",
+          "description": "Klicka på Kopiera resultat eller använd knappen Vänd.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "När är denna omvandlare användbar?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Webbutveckling",
+          "description": "Math.sin() kräver radianer. 90° = π/2."
+        },
+        {
+          "icon": "RiCompassLine",
+          "title": "Fysik",
+          "description": "Vinkelhastighet (ω), rotationsrörelse."
+        },
+        {
+          "icon": "RiGamepadLine",
+          "title": "Spelutveckling",
+          "description": "2D/3D-rotationer använder internt radianer."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Design och mätning",
+          "description": "Servovinklar, robotkinematik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Vad gör denna omvandlare speciell?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fullständig integritet",
+          "description": "Alla beräkningar görs lokalt i din webbläsare. Ingen data skickas till någon server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultat i realtid",
+          "description": "Resultatet uppdateras omedelbart när du skriver – inget klick krävs."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Dubbelriktad konvertering",
+          "description": "Vänd-knappen låter dig konvertera i båda riktningarna med ett klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenstabell",
+          "description": "En färdig tabell med ofta konverterade värden och kontextuella beskrivningar."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">rad = ° × π / 180. Omvänt: ° = rad × 180 / π.</p><p class=\"text-mid\">1 radian ≈ 57,296°. Vinkeln där båglängden är lika med radien.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hur fungerar omvandlingen?",
+      "html": "<p class=\"text-mid mb-4\">rad = ° × π / 180. Omvänt: ° = rad × 180 / π.</p><p class=\"text-mid\">1 radian ≈ 57,296°. Vinkeln där båglängden är lika med radien.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Grader vs Radianer",
+      "featureLabel": "Egenskap",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Grader (°)"
+        },
+        {
+          "id": "unit2",
+          "name": "Radianer (rad)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Hel cirkel",
+          "values": {
+            "unit1": "360°",
+            "unit2": "2π ≈ 6,283"
+          }
+        },
+        {
+          "name": "Rät vinkel",
+          "values": {
+            "unit1": "90°",
+            "unit2": "π/2 ≈ 1,571"
+          }
+        },
+        {
+          "name": "Används i",
+          "values": {
+            "unit1": "Vardag, CSS",
+            "unit2": "Matematik, fysik, programmering"
+          }
+        },
+        {
+          "name": "Intuitiv",
+          "values": {
+            "unit1": "Ja",
+            "unit2": "Mindre"
+          }
+        },
+        {
+          "name": "Matematiskt naturlig",
+          "values": {
+            "unit1": "Nej (godtycklig)",
+            "unit2": "Ja (båge/radie)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Vanliga frågor",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hur många radianer är 180°?",
+          "answer": "180° = π rad ≈ 3,14159."
+        },
+        {
+          "question": "Hur många grader är 1 radian?",
+          "answer": "1 rad = 180/π ≈ 57,296°."
+        },
+        {
+          "question": "Körs beräkningarna lokalt?",
+          "answer": "Ja. Alla beräkningar körs i din webbläsare."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjälp oss förbättra våra verktyg",
+      "description": "Har du en idé, hittat en bugg eller vill föreslå en funktion? Skriv till oss – vi svarar inom 24 timmar.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "grader till rad – Arteon",
+      "defaultSubject": "Feedback: deg-to-rad"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andra gratis verktyg"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

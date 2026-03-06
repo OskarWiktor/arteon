@@ -1,0 +1,521 @@
+{
+  "toolKey": "loremIpsum",
+  "locale": "cs",
+  "metadata": {
+    "title": "Generátor Lorem Ipsum — ukázkový text, odstavce, věty a náhodná slova",
+    "description": "Bezplatný generátor Lorem Ipsum — 8 stylů: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business a další. 9 režimů generování. Zkopírujte jako text nebo HTML.",
+    "ogImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp",
+    "path": "/nastroje/generator-lorem-ipsum"
+  },
+  "hero": {
+    "title": "Generátor Lorem Ipsum — ukázkový text, odstavce, věty a náhodná slova",
+    "description": "8 textových stylů: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal a česká výplňová slova. 9 režimů: odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulky, citáty, definice.",
+    "backgroundImage": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/nastroje",
+      "label": "Nástroje"
+    },
+    "third": {
+      "href": "/nastroje/generator-lorem-ipsum",
+      "label": "Generátor Lorem Ipsum"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Generátor Lorem Ipsum — ukázkový text, odstavce, věty a náhodná slova",
+      "alternateName": [
+        "Lorem Ipsum Generator",
+        "Bacon Ipsum generator",
+        "Cupcake Ipsum generator",
+        "Pirate Ipsum generator",
+        "Legal Ipsum generator",
+        "Hipster Ipsum generator",
+        "Business Ipsum generator",
+        "Dummy text generator online"
+      ],
+      "applicationSubCategory": "TextApplication",
+      "description": "Bezplatný generátor Lorem Ipsum — 8 stylů: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business a další. 9 režimů generování. Zkopírujte jako text nebo HTML.",
+      "featureList": [
+        "Generování odstavců Lorem Ipsum",
+        "Generování jednotlivých vět",
+        "Generování náhodných slov",
+        "Generování číslovaných a nečíslovaných seznamů",
+        "Generování nadpisů H1–H6",
+        "Generování odkazů s ukázkovými URL",
+        "Generování tabulek s náhodnými daty",
+        "Generování citací",
+        "Generování seznamů definic",
+        "Lorem Ipsum — latina z De Finibus",
+        "Hipster Ipsum — hipsterský slovník",
+        "Business Ipsum — firemní žargon",
+        "Česká výplňová slova — slova v místním jazyce",
+        "Bacon Ipsum — maso a grilování",
+        "Cupcake Ipsum — cukrářství a sladkosti",
+        "Pirate Ipsum — pirátský slovník",
+        "Legal Ipsum — právní terminologie",
+        "Výstupní formát: prostý text nebo HTML",
+        "Délka odstavce (krátký, střední, dlouhý)",
+        "Statistiky: slova, znaky, věty, odstavce, doba čtení",
+        "Kopírování textu do schránky",
+        "Kopírování HTML kódu do schránky",
+        "Stažení jako .txt soubor",
+        "Lokální zpracování v prohlížeči"
+      ]
+    },
+    "howTo": {
+      "name": "Jak používat Generátor Lorem Ipsum",
+      "description": "Vygenerujte text Lorem Ipsum během několika sekund. Vyberte režim, styl a formát, pak zkopírujte nebo stáhněte výsledek.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Vyberte režim generování",
+          "text": "Vyberte jeden z 9 režimů: odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulka, citace nebo definice. Nastavte počet."
+        },
+        {
+          "name": "Vyberte styl textu",
+          "text": "Vyberte jeden z 8 stylů: Lorem Ipsum, Hipster, Business, Česká výplňová slova, Bacon, Cupcake, Pirate nebo Legal Ipsum."
+        },
+        {
+          "name": "Nastavte výstupní formát",
+          "text": "Vyberte prostý text nebo HTML se značkami. Upravte délku odstavce dle potřeby."
+        },
+        {
+          "name": "Zkopírujte nebo stáhněte výsledek",
+          "text": "Klikněte na Generovat, pak zkopírujte text, HTML kód nebo stáhněte .txt soubor."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Co je Lorem Ipsum a k čemu slouží",
+      "html": "<p class=\"text-mid\">Lorem Ipsum je standardní výplňový text používaný v tiskařském, grafickém a webovém průmyslu již více než 500 let. Text pochází z díla <em>De Finibus Bonorum et Malorum</em> (O mezích dobra a zla) napsaného Markem Tulliem Ciceronem v roce 45 př. n. l. Původní pasáž byla záměrně pozměněna — slova byla přidána, odstraněna a přeskupena — takže text nemá žádný význam, ale zachovává přirozený rytmus a rozložení písmen podobné skutečnému jazyku.</p><p class=\"text-mid mt-3\">Generátor Lorem Ipsum vám umožňuje rychle vytvořit libovolné množství výplňového textu pro návrhy, prototypy rozhraní, grafické návrhy a typografické testy rozvržení. Nástroj nabízí 9 režimů generování (odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulky, citace, definice), 8 textových stylů a statistiky v reálném čase.</p>",
+      "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp",
+      "imageAlt": "Generátor Lorem Ipsum — Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak používat Generátor Lorem Ipsum",
+      "description": "Vygenerujte výplňový text ve čtyřech krocích:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Vyberte režim",
+          "description": "Vyberte jeden z 9 režimů: odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulka, citace nebo definice."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "2. Vyberte styl",
+          "description": "8 stylů: Lorem Ipsum, Hipster, Business, Česká výplňová slova, Bacon, Cupcake, Pirate a Legal — každý s vlastní slovní zásobou."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Upravte možnosti",
+          "description": "Nastavte délku odstavce (krátký, střední, dlouhý) a výstupní formát (prostý text nebo HTML se značkami)."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Zkopírujte výsledek",
+          "description": "Klikněte na Generovat, pak zkopírujte text, HTML nebo stáhněte .txt soubor. Statistiky zobrazují počet slov a znaků."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Historie Lorem Ipsum — od Cicerona k modernímu designu",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum má více než 2 000 let historie. Původní pasáž pochází z oddílu 1.10.32 díla <em>De Finibus Bonorum et Malorum</em> od Cicerona, napsaného v roce 45 př. n. l. Dílo je filozofickým pojednáním o etice — Cicero analyzoval hedonismus a stoicismus a obhajoval vyvážený přístup k potěšení a bolesti.</p><p class=\"text-mid mb-4\">Použití tohoto textu jako výplně v tiskařství sahá do 16. století, kdy neznámý tiskař použil Ciceronovu pasáž k vytvoření vzorníku písem. Text přežil pět století a prošel érou ručního sazení, Linotypu a fotosazby.</p><p class=\"text-mid mb-4\">Moderní popularita Lorem Ipsum začala v 60. letech 20. století, kdy Letraset umístil text na přenosové fólie používané v grafických studiích. Rozhodující průlom přišel v roce 1985, kdy společnost Aldus Corporation zahrnula Lorem Ipsum jako výchozí výplňový text do PageMakeru — jednoho z prvních DTP programů. Od toho okamžiku se Lorem Ipsum stalo průmyslovým standardem.</p><p class=\"text-mid\">Richard McClintock, profesor latiny na Hampden-Sydney College ve Virginii, identifikoval zdroj textu v 80. letech a zjistil, že slova lorem ipsum jsou poškozeným fragmentem latiny z Ciceronova díla. Jeho výzkum potvrdil, že Lorem Ipsum není náhodná sbírka slov, ale má skutečné literární kořeny.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "9 režimů generování obsahu",
+      "description": "Generátor nabízí 9 různých typů obsahu — od klasických odstavců po tabulky a definice:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiParagraph",
+          "title": "Odstavce",
+          "description": "Klasické textové bloky s řízenou délkou (krátký, střední, dlouhý). Ideální pro webové návrhy, CMS šablony a prototypy rozhraní."
+        },
+        {
+          "icon": "RiTextSnippet",
+          "title": "Věty",
+          "description": "Jednotlivé věty náhodné délky (5–15 slov). Užitečné pro testování formulářových polí, popisů produktů a krátkých textových bloků."
+        },
+        {
+          "icon": "RiFontSize",
+          "title": "Slova",
+          "description": "Náhodná jednotlivá slova z vybrané slovní zásoby. Ideální pro štítky, názvy kategorií a testování délky textu v UI komponentech."
+        },
+        {
+          "icon": "RiListUnordered",
+          "title": "Seznamy",
+          "description": "Číslované seznamy (text) nebo &lt;ul&gt;&lt;li&gt; (HTML). Pro navigační menu, seznamy funkcí, specifikace produktů a FAQ položky."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Nadpisy",
+          "description": "Náhodné nadpisy H1–H6 ve formátu Markdown nebo HTML. Pro testování typografické hierarchie a struktury obsahu."
+        },
+        {
+          "icon": "RiLink",
+          "title": "Odkazy",
+          "description": "Odkazy s náhodným textem a ukázkovými URL. Ve formátu Markdown nebo &lt;a href&gt; HTML. Pro prototypování navigace a menu."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabulka",
+          "description": "Tabulka s náhodnými záhlavími a daty ve 3–5 sloupcích. Formát Markdown nebo &lt;table&gt; HTML. Pro cenové přehledy a specifikace."
+        },
+        {
+          "icon": "RiDoubleQuotesL",
+          "title": "Citace",
+          "description": "Bloky citací (blockquote) s 1–3 větami. Pro testování stylů citací, referencí a zvýrazněných textových sekcí."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Definice",
+          "description": "Páry termín + popis ve &lt;dl&gt;&lt;dt&gt;&lt;dd&gt; HTML nebo textu. Pro glosáře, FAQ sekce a dokumentaci."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Kdy používat Lorem Ipsum a kdy skutečný text",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum funguje dobře všude tam, kde obsah ještě není hotový, ale rozvržení je třeba prezentovat nebo testovat:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Prototypy UI a wireframy</strong> — návrh struktury stránky bez čekání na finální text od klienta.</li><li><strong>Grafické návrhy</strong> — prezentace designu s realisticky vypadajícím textem místo prázdných obdélníků.</li><li><strong>Testy písem a typografie</strong> — hodnocení čitelnosti, výšky řádku, prokládání a hierarchie nadpisů na skutečném textovém bloku.</li><li><strong>CMS šablony a témata</strong> — ukázka vzhledu WordPress, Shopify nebo jiné CMS šablony s ukázkovým obsahem.</li><li><strong>Tiskové materiály</strong> — letáky, brožury, vizitky a katalogy ve fázi návrhu.</li></ul><p class=\"text-mid mb-4\"><strong>Kdy NEPOUŽÍVAT Lorem Ipsum:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Produkční weby</strong> — Google indexuje výplňový text a může stránku považovat za nekvalitní.</li><li><strong>Finální SEO obsah</strong> — meta titulky, popisy a nadpisy H1 musí obsahovat skutečná klíčová slova.</li><li><strong>E-mailový marketing</strong> — odesílání zpráv s Lorem Ipsum je neprofesionální a hrozí spam.</li><li><strong>Uživatelské testy použitelnosti</strong> — uživatelé se soustředí na obsah. Výplňový text zkresluje výsledky UX výzkumu.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Pro koho je Generátor Lorem Ipsum?",
+      "description": "Nástroj je užitečný pro každého, kdo pracuje s rozvržením textu:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Designéři a UI designéři",
+          "description": "Rychlé vyplnění návrhů a prototypů realisticky vypadajícím textem. Testování typografické hierarchie a sloupcových rozvržení."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Frontend vývojáři",
+          "description": "Generování výplňového textu pro testování komponent, responzivity rozvržení a CSS chování s různými délkami obsahu."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Copywriteři",
+          "description": "Prototypování struktury textu: kolik odstavců, délka vět, jak vypadají seznamy a nadpisy ve finálním rozvržení."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tiskárny a vydavatelé",
+          "description": "Vyplnění šablon letáků, brožur a katalogů ukázkovým textem pro schválení klientem."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Majitelé webů",
+          "description": "Testování vzhledu nové CMS šablony nebo tématu s ukázkovým obsahem. Posouzení kolik textu je na stránku potřeba."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Studenti designu",
+          "description": "Učení grafického rozvržení, typografie a kompozice s profesionálním výplňovým textem místo náhodných znaků."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Srovnání textových stylů",
+      "featureLabel": "Vlastnost",
+      "plans": [
+        {
+          "id": "classic",
+          "name": "Lorem Ipsum",
+          "highlighted": true
+        },
+        {
+          "id": "hipster",
+          "name": "Hipster"
+        },
+        {
+          "id": "business",
+          "name": "Business"
+        },
+        {
+          "id": "polish",
+          "name": "Místní"
+        },
+        {
+          "id": "bacon",
+          "name": "Bacon"
+        },
+        {
+          "id": "cupcake",
+          "name": "Cupcake"
+        },
+        {
+          "id": "pirate",
+          "name": "Pirate"
+        },
+        {
+          "id": "legal",
+          "name": "Legal"
+        }
+      ],
+      "features": [
+        {
+          "name": "Jazyk",
+          "values": {
+            "classic": "Latina",
+            "hipster": "Angličtina",
+            "business": "Angličtina",
+            "polish": "Místní",
+            "bacon": "Angličtina",
+            "cupcake": "Angličtina",
+            "pirate": "Angličtina",
+            "legal": "Angličtina"
+          }
+        },
+        {
+          "name": "Téma",
+          "values": {
+            "classic": "Filozofie",
+            "hipster": "Životní styl",
+            "business": "Korporátní",
+            "polish": "Obecné",
+            "bacon": "Gastronomie",
+            "cupcake": "Cukrářství",
+            "pirate": "Dobrodružství",
+            "legal": "Právo"
+          }
+        },
+        {
+          "name": "Vizuální neutralita",
+          "values": {
+            "classic": true,
+            "hipster": false,
+            "business": false,
+            "polish": false,
+            "bacon": false,
+            "cupcake": false,
+            "pirate": false,
+            "legal": false
+          }
+        },
+        {
+          "name": "Přirozený rytmus",
+          "values": {
+            "classic": true,
+            "hipster": true,
+            "business": true,
+            "polish": true,
+            "bacon": true,
+            "cupcake": true,
+            "pirate": true,
+            "legal": true
+          }
+        },
+        {
+          "name": "Průmyslový standard",
+          "values": {
+            "classic": true,
+            "hipster": false,
+            "business": false,
+            "polish": false,
+            "bacon": false,
+            "cupcake": false,
+            "pirate": false,
+            "legal": false
+          }
+        },
+        {
+          "name": "Humor / charakter",
+          "values": {
+            "classic": "Neutrální",
+            "hipster": "Střední",
+            "business": "Nízký",
+            "polish": "Nízký",
+            "bacon": "Vysoký",
+            "cupcake": "Vysoký",
+            "pirate": "Vysoký",
+            "legal": "Nízký"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "8 stylů výplňového textu — všechny dostupné v generátoru",
+      "html": "<p class=\"text-mid mb-4\">Náš generátor nabízí 8 jedinečných stylů výplňového textu — od klasické latiny po právní žargon. Každý styl má vlastní slovní zásobu s více než 90 slovy a generuje text s přirozeným rytmem:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — klasický latinský výplňový text z Ciceronova díla. Průmyslový standard již více než 500 let.</li><li><strong>Hipster Ipsum</strong> — slovní zásoba hipsterské kultury: řemeslný, avokádo, vintage, mindfulness. Ideální pro lifestyle projekty.</li><li><strong>Business Ipsum</strong> — firemní žargon: synergie, pákový efekt, stakeholder, KPI. Pro návrhy prezentací a firemních webů.</li><li><strong>Česká výplňová slova</strong> — náhodná slova v místním jazyce z různých oborů. Ukazuje klientovi, jak bude text v návrhu vypadat.</li><li><strong>Bacon Ipsum</strong> — slovní zásoba masa a grilování: steak, brisket, barbecue. Oblíbený mezi vývojáři.</li><li><strong>Cupcake Ipsum</strong> — cukrářská slovní zásoba: muffin, čokoláda, karamel, poleva. Pro projekty potravinářského průmyslu.</li><li><strong>Pirate Ipsum</strong> — pirátský text: ahoj, poklad, galeona, rum. Pro zábavní a herní projekty.</li><li><strong>Legal Ipsum</strong> — právní terminologie: jurisdikce, žalobce, zákon, odpovědnost. Pro návrhy webů právních kanceláří.</li></ul><p class=\"text-mid mb-4\">Zábavné varianty (Bacon, Cupcake, Pirate) fungují dobře v interních prezentacích, kde humor zlepšuje týmovou komunikaci. Pro profesionální klientské prezentace použijte klasické Lorem Ipsum nebo Legal Ipsum — jsou neutrální a neodvádějí pozornost od designu.</p><p class=\"text-mid\">Česká výplňová slova jsou unikátní možností — slova v místním jazyce zachovávají přirozené proporce písmen a délky slov cílového jazyka. Ideální pro ukázku realistického náhledu textu klientům.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lorem Ipsum a SEO — škodí výplňový text pozicím ve vyhledávání",
+      "html": "<p class=\"text-mid mb-4\">Ano — publikace Lorem Ipsum na produkčním webu může negativně ovlivnit pozice ve vyhledávání. Google analyzuje obsah každé indexované stránky a rozpozná výplňový text:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Slabý obsah</strong> — stránka s výplňovým textem nenabízí uživatelům žádnou hodnotu. Google ji klasifikuje jako slabý obsah a snižuje její pozici.</li><li><strong>Nežádoucí indexace</strong> — roboti Google indexují Lorem Ipsum jako obsah stránky. Může se objevit ve výsledcích vyhledávání a poškodit image značky.</li><li><strong>Plýtvání crawl budgetem</strong> — Google přiděluje omezený crawl budget. Stránky s Lorem Ipsum jej spotřebovávají bez užitku.</li><li><strong>Core Web Vitals</strong> — výplňový text přímo neovlivňuje výkonnostní metriky, ale nekvalitní stránky mohou být celkově hodnoceny hůře.</li></ul><p class=\"text-mid mb-4\">Jak se problému vyhnout: před publikací prohledejte celý web na frázi &quot;lorem ipsum&quot; nebo &quot;dolor sit amet&quot;. V Google Search Console ověřte, že žádná indexovaná stránka neobsahuje výplňový text. Použijte <code>site:vasedomena.com &quot;lorem ipsum&quot;</code> v Google.</p><p class=\"text-mid\">Generátor Lorem Ipsum je nástroj pro fázi návrhu. Výplňový text je třeba nahradit skutečným obsahem před publikací webu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Čím je tento Generátor Lorem Ipsum výjimečný?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "9 režimů generování obsahu",
+          "description": "Odstavce, věty, slova, seznamy, nadpisy, odkazy, tabulky, citace a definice — plná kontrola nad počtem a formátem."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "8 jedinečných textových stylů",
+          "description": "Lorem Ipsum, Hipster, Business, Česká výplňová slova, Bacon, Cupcake, Pirate a Legal. Každý styl má 90+ slov."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Hotový HTML kód",
+          "description": "Generujte text s HTML značkami a zkopírujte hotový kód. Šetří čas při tvorbě prototypů webů."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Statistiky textu",
+          "description": "Slova, znaky, věty, odstavce, doba čtení a velikost v bajtech — viditelné ihned po generování."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Lokální zpracování",
+          "description": "Text se generuje ve vašem prohlížeči. Nic se neodesílá na server. Nástroj funguje offline po načtení stránky."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Bez registrace a bez omezení",
+          "description": "Zcela zdarma. Bez registrace, přihlášení a osobních údajů. Žádné reklamy v generovaném textu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Často kladené otázky o Generátoru Lorem Ipsum",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Co je Lorem Ipsum?",
+          "answer": "Lorem Ipsum je standardní výplňový text tiskařského, grafického a webového průmyslu. Slouží k vyplnění rozvržení realisticky vypadajícím textem, když finální obsah ještě není hotový. Text má přirozený rytmus a rozložení písmen podobné skutečnému jazyku.",
+          "answerSchemaText": "Lorem Ipsum je standardní výplňový text tiskařského, grafického a webového průmyslu."
+        },
+        {
+          "question": "Odkud pochází Lorem Ipsum?",
+          "answer": "Lorem Ipsum pochází z díla De Finibus Bonorum et Malorum od Marka Tullia Cicerona, napsaného v roce 45 př. n. l. Je to filozofické pojednání o etice. Původní pasáž z oddílu 1.10.32 byla v 16. století pozměněna neznámým tiskařem.",
+          "answerSchemaText": "Lorem Ipsum pochází z díla De Finibus Bonorum et Malorum od Cicerona, 45 př. n. l."
+        },
+        {
+          "question": "Je Lorem Ipsum skutečná latina?",
+          "answer": "Částečně. Obsahuje skutečná latinská slova z Ciceronova díla, ale text byl záměrně pozměněn. Slova jsou promíchaná a některým chybí koncovky. Jednotlivá slova jako dolor (bolest), amet (miluje) a ipsum (sám) jsou skutečné latinské výrazy.",
+          "answerSchemaText": "Částečně — skutečná latinská slova z Cicerona, ale text byl záměrně pozměněn a nemá význam."
+        },
+        {
+          "question": "Kolik odstavců potřebuji pro návrh?",
+          "answer": "Záleží na typu stránky. Landing page: 5–8. Stránka služeb: 4–6. Článek na blog: 8–15 (1 500–2 500 slov). Produktová karta: 2–3. Generátor vytvoří přesně potřebné množství.",
+          "answerSchemaText": "Záleží na typu: landing page 5–8, služby 4–6, blog 8–15, produkt 2–3 odstavce."
+        },
+        {
+          "question": "Mohu používat Lorem Ipsum na produkčním webu?",
+          "answer": "Ne. Lorem Ipsum je pouze pro fázi návrhu. Publikace škodí SEO (Google to klasifikuje jako slabý obsah), image značky a může být indexováno. Vždy nahraďte před publikací.",
+          "answerSchemaText": "Ne — škodí SEO a image značky. Vždy nahraďte skutečným obsahem před publikací."
+        },
+        {
+          "question": "Škodí Lorem Ipsum SEO?",
+          "answer": "Ano, pokud je publikováno na produkčním webu. Google rozpozná výplňový text a může stránku považovat za nekvalitní. Použijte site:vasedomena.com lorem ipsum v Google pro kontrolu.",
+          "answerSchemaText": "Ano, na produkčních webech — Google rozpozná výplňový text a klasifikuje jej jako slabý obsah."
+        },
+        {
+          "question": "Co jsou Hipster Ipsum a Business Ipsum?",
+          "answer": "Tematické varianty výplňového textu. Hipster Ipsum používá hipsterský slovník (řemeslný, avokádo, vintage). Business Ipsum je firemní žargon (synergie, pákový efekt, stakeholder, KPI). Obě generují text s přirozeným rytmem a oborovým slovníkem.",
+          "answerSchemaText": "Tematické varianty — Hipster používá lifestyle slovník, Business firemní žargon."
+        },
+        {
+          "question": "Jak generuji Lorem Ipsum s HTML značkami?",
+          "answer": "V nastavení změňte formát z Text na HTML. Generátor automaticky obalí odstavce &lt;p&gt; značkami a seznamy &lt;ul&gt;&lt;li&gt;. Klikněte na Kopírovat HTML. Kód lze přímo vložit do HTML editoru nebo CMS.",
+          "answerSchemaText": "Změňte formát na HTML v nastavení, vygenerujte text a klikněte na Kopírovat HTML."
+        },
+        {
+          "question": "Je generátor zdarma a bezpečný?",
+          "answer": "Ano. Zcela zdarma, bez registrace a bez omezení. Vše se generuje lokálně v prohlížeči — nic se neodesílá na server. Žádné sledování, žádné cookies, funguje offline po načtení.",
+          "answerSchemaText": "Ano — zdarma, bez registrace, lokální zpracování v prohlížeči, žádný sběr dat."
+        },
+        {
+          "question": "Kolik slov má standardní odstavec?",
+          "answer": "Záleží na nastavení: krátký (2–4 věty, cca 20–50 slov), střední (4–7 vět, cca 40–90 slov), dlouhý (7–12 vět, cca 70–150 slov). Původní první odstavec od Cicerona má přibližně 69 slov.",
+          "answerSchemaText": "Krátký 20–50 slov, střední 40–90 slov, dlouhý 70–150 slov."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomozte nám vylepšit naše nástroje",
+      "description": "Máte nápad na novou funkci, našli jste chybu nebo chcete navrhnout jiný nástroj? Napište nám — odpovídáme do 24 hodin.",
+      "imageSrc": "/assets/tools/lorem-ipsum-generator/generator-lorem-ipsum-cs.webp",
+      "imageAlt": "Generátor Lorem Ipsum — Arteon",
+      "defaultSubject": "Zpětná vazba: Generátor Lorem Ipsum"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Objevte další nástroje"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

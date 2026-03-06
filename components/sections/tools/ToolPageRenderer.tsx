@@ -28,6 +28,7 @@ import { getToolIcon } from '@/lib/tools/icon-registry';
 import { DESKTOP_ONLY_UI } from '@/lib/i18n/locales';
 import ToolContactForm from './ToolContactForm';
 import RelatedConverters from './RelatedConverters';
+import RelatedUnitConverters from './RelatedUnitConverters';
 
 const AD_SECTION_INTERVAL = 4;
 const AD_SKIP_AFTER = new Set(['faq', 'toolsCarousel']);
@@ -258,6 +259,7 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
                 return (
                   <Fragment key={`block-rel-${idx}`}>
                     <RelatedConverters toolKey={data.toolKey} locale={data.locale as Locale} />
+                    <RelatedUnitConverters toolKey={data.toolKey} locale={data.locale as Locale} />
                     {node}
                     {adNode}
                   </Fragment>

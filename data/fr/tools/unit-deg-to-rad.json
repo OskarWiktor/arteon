@@ -1,0 +1,277 @@
+{
+  "toolKey": "degToRad",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur degrés en radians",
+    "description": "Convertissez degrés en radians et vice versa. Essentiel pour la trigonométrie et la physique.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-degres-en-radians"
+  },
+  "hero": {
+    "title": "Convertir degrés en radians",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-degres-en-radians",
+      "label": "deg en rad"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur degrés en radians",
+      "alternateName": ["Convertir degrés en radians"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez degrés en radians et vice versa. Essentiel pour la trigonométrie et la physique.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des degrés en radians ?",
+      "html": "<p class=\"text-mid mb-4\">Les degrés (°) et les radians (rad) sont deux façons de mesurer les angles. Un cercle complet = 360° = 2π rad. Conversion : radians = degrés × π/180.</p><p class=\"text-mid mb-4\">Les fonctions Math de JavaScript (sin, cos, tan) nécessitent des angles en radians. Les transformations CSS utilisent des degrés.</p><p class=\"text-mid mb-4\">Angles courants : 90° = π/2 rad, 180° = π rad, 45° = π/4 rad.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur degrés en radians – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat apparaît instantanément.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Copiez le résultat ou inversez la direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Programmation",
+          "description": "JavaScript Math.sin() nécessite des radians. 90° = π/2 ≈ 1,5708 rad."
+        },
+        {
+          "icon": "RiCompassLine",
+          "title": "Physique",
+          "description": "Vitesse angulaire (ω), mouvement de rotation et équations d’onde."
+        },
+        {
+          "icon": "RiGamepadLine",
+          "title": "Jeux vidéo",
+          "description": "Calculs de rotation 2D/3D utilisent des radians en interne."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Ingénierie",
+          "description": "Angles de servomoteurs, cinématique robotique."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Convertissez dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Tableau avec valeurs courantes et descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Formule : radians = degrés × π / 180. Inverse : degrés = radians × 180 / π.</p><p class=\"text-mid\">1 radian ≈ 57,296°. L’angle où la longueur de l’arc égale le rayon.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Formule : radians = degrés × π / 180. Inverse : degrés = radians × 180 / π.</p><p class=\"text-mid\">1 radian ≈ 57,296°. L’angle où la longueur de l’arc égale le rayon.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Degrés vs Radians",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Degrés (°)"
+        },
+        {
+          "id": "unit2",
+          "name": "Radians (rad)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Cercle complet",
+          "values": {
+            "unit1": "360°",
+            "unit2": "2π ≈ 6,283"
+          }
+        },
+        {
+          "name": "Angle droit",
+          "values": {
+            "unit1": "90°",
+            "unit2": "π/2 ≈ 1,571"
+          }
+        },
+        {
+          "name": "Utilisé dans",
+          "values": {
+            "unit1": "Quotidien, CSS, géométrie",
+            "unit2": "Math, physique, programmation"
+          }
+        },
+        {
+          "name": "Intuitif",
+          "values": {
+            "unit1": "Oui (familier)",
+            "unit2": "Moins intuitif"
+          }
+        },
+        {
+          "name": "Mathématiquement naturel",
+          "values": {
+            "unit1": "Non (arbitraire)",
+            "unit2": "Oui (arc/rayon)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de radians font 180° ?",
+          "answer": "180° = π radians ≈ 3,14159 radians."
+        },
+        {
+          "question": "Combien de degrés fait 1 radian ?",
+          "answer": "1 radian = 180/π ≈ 57,296°."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "stopnie na radiany – Arteon",
+      "defaultSubject": "Feedback : deg-to-rad"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

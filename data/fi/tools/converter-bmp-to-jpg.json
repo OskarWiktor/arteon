@@ -3,13 +3,13 @@
   "locale": "fi",
   "metadata": {
     "title": "BMP JPG -muunnin – BMP JPG",
-    "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
+    "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen. Kaikki käsittely tapahtuu paikallisesti selaimessa - tiedostot eivät poistu laitteeltasi.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/bmp-jpg-muunnin"
   },
   "hero": {
     "title": "BMP JPG -muunnin",
-    "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
+    "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen. Kaikki käsittely tapahtuu paikallisesti selaimessa - tiedostot eivät poistu laitteeltasi.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["Muunna BMP JPG-muotoon", "BMP:n muunto JPG-muotoon", "Ilmainen BMP–JPG-muunnin"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen. Kaikki käsittely tapahtuu paikallisesti selaimessa — tiedostot eivät poistu laitteeltasi.",
+      "description": "Muunna BMP-tiedostot kevyeen JPG-muotoon. Dramaattinen koon pienentyminen. Kaikki käsittely tapahtuu paikallisesti selaimessa - tiedostot eivät poistu laitteeltasi.",
       "featureList": ["BMP – JPG -muunnos", "JPG-laadun säätö", "Erämuunnos", "Paikallinen selainprosessointi", "Ei tiedostojen latausta palvelimelle"]
     },
     "howTo": {
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Laatuasetukset — mita valita muunnoksessa BMP JPG?",
-      "html": "<p class=\"text-mid\">Liukusaadin 60%-95%. Korkeampi = parempi laatu mutta suurempi tiedosto.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (oletus) — hyva verkkosivuille, blogeille, artikkeleille.</strong></li><li><strong>85–90% — tuotekuville, portfolioille ja gallerioille.</strong></li><li><strong>60–70% — kun tiedostokoon minimointi on tarkeaa.</strong></li></ul><p class=\"text-mid mt-3\">85% laadulla ero BMP:n ja JPG:n valilla on kaytannossa huomaamaton.</p>"
+      "title": "Laatuasetukset - mita valita muunnoksessa BMP JPG?",
+      "html": "<p class=\"text-mid\">Liukusaadin 60%-95%. Korkeampi = parempi laatu mutta suurempi tiedosto.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (oletus) - hyva verkkosivuille, blogeille, artikkeleille.</strong></li><li><strong>85–90% - tuotekuville, portfolioille ja gallerioille.</strong></li><li><strong>60–70% - kun tiedostokoon minimointi on tarkeaa.</strong></li></ul><p class=\"text-mid mt-3\">85% laadulla ero BMP:n ja JPG:n valilla on kaytannossa huomaamaton.</p>"
     },
     {
       "type": "gap",
@@ -254,7 +254,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten kuvamuunnos vaikuttaa nopeuteen ja SEO:hon",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman nakyvam elementin nayttamiseen.</p><p class=\"text-mid mb-4\">BMP-kuvien muuntaminen JPG-muotoon pienentaa tiedostokokoa, lyhentaa latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals ovat Googlen suorituskykymittareita. LCP mittaa aikaa suurimman näkyvän elementin näyttämiseen.</p><p class=\"text-mid mb-4\">BMP-kuvien muuntaminen JPG-muotoon pienentää tiedostokokoa, lyhentää latausaikaa ja parantaa LCP:ta. Pienemmat tiedostot = nopeampi lataus mobiilissa. <code>loading=\"lazy\"</code> ja <code>fetchpriority=\"high\"</code> nopeuttavat renderointia.</p><p class=\"text-mid\"><a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> ja Lighthouse tunnistavat optimoitavat tiedostot.</p>"
     },
     {
       "type": "gap",
@@ -263,34 +263,52 @@
     {
       "type": "sectionSteps",
       "title": "Vinkkeja BMP-JPG-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "description": "Vinkkeja yleisten ongelmien välttämiseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
+          "title": "Erittäin suuret tiedostot",
           "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Jo pakatut",
-          "description": "Jos BMP oli jo voimakkaasti pakattu, muunnos JPG-muotoon ei valttamatta saasta paljon."
+          "description": "Jos BMP oli jo voimakkaasti pakattu, muunnos JPG-muotoon ei välttämättä säästä paljon."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "JPG ei tue lapinakyyytta. Lapinakyyt alueet muuttuvat valkoisiksi. Harkitse PNG:ta tai WebP:ta."
+          "title": "Läpinäkyvyys",
+          "description": "JPG ei tue läpinäkyvyyttä. Läpinäkyvät alueet muuttuvat valkoisiksi. Harkitse PNG:tä tai WebP:tä."
         },
         {
           "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot BMP-tiedostoista."
+          "title": "Säilytä alkuperäiset",
+          "description": "Häviöllinen muunnos on peruuttamaton. Säilytä kopiot BMP-tiedostoista."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting BMP to JPG?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">12 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~93%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">5 MB → 320 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~94%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">3.5 MB → 180 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~95%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals is a set of performance metrics Google uses when evaluating websites. One of them - LCP (Largest Contentful Paint) - measures the time it takes for the largest visible element to appear on screen. On many pages, that element is an image.</p><p class=\"text-mid mb-4\">Converting BMP images to JPG reduces graphic file sizes, which directly shortens resource download time and improves the LCP score. Smaller files mean faster page loading - especially important on mobile devices with slower connections. Additional techniques like <code>loading=\"lazy\"</code> and <code>fetchpriority=\"high\"</code> speed up rendering.</p><p class=\"text-mid\">Tools like <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> and Lighthouse identify specific files worth optimizing.</p>"
     },
     {
       "type": "faq",
@@ -319,11 +337,11 @@
         },
         {
           "question": "Onko BMP JPG muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "answer": "Kyllä. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitään ei lähetetä palvelimille."
         },
         {
           "question": "Voinko muuntaa useita BMP-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "answer": "Kyllä. Erämuunnos ilman rajaa. Vedä tiedostot muuntimeen."
         },
         {
           "question": "Tukevatko kaikki selaimet JPG-muotoa?",
@@ -338,7 +356,7 @@
     {
       "type": "contactForm",
       "title": "Auta meitä parantamaan työkalujamme",
-      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti — vastaamme 24 tunnin kuluessa.",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Lähetä viesti - vastaamme 24 tunnin kuluessa.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "BMP JPG -muunnin – Arteon",
       "defaultSubject": "Feedback: BMP JPG -muunnin"

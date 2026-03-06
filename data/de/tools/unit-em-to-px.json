@@ -1,0 +1,277 @@
+{
+  "toolKey": "emToPx",
+  "locale": "de",
+  "metadata": {
+    "title": "EM in Pixel umrechnen – CSS-Einheiten-Rechner",
+    "description": "Rechnen Sie CSS-em-Einheiten in Pixel um. Stellen Sie die Basisschriftgröße ein für responsives Webdesign.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/em-in-px-umrechner"
+  },
+  "hero": {
+    "title": "EM in Pixel umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/em-in-px-umrechner",
+      "label": "em in px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "EM in Pixel umrechnen – CSS-Einheiten-Rechner",
+      "alternateName": ["EM in Pixel umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Rechnen Sie CSS-em-Einheiten in Pixel um. Stellen Sie die Basisschriftgröße ein für responsives Webdesign.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter em na px",
+      "description": "Anleitung: em na px.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann muss man em in Pixel umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Die CSS-Einheit em ist relativ zur Schriftgröße des übergeordneten Elements. Bei der Standardgröße von 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Im Gegensatz zu rem (relativ zum Wurzelelement) kaskadiert em: 1,5em × 1,5em = 2,25× der Basisgröße.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "EM in Pixel umrechnen – CSS-Einheiten-Rechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wie benutzt man den Umrechner?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Ergebnis erscheint sofort.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Kopieren Sie das Ergebnis oder kehren Sie die Umrechnungsrichtung um.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Umrechner nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTextSpacing",
+          "title": "Webentwicklung",
+          "description": "Rechnen Sie em-Werte in Pixel um, um beim CSS-Debugging reale Größen zu verstehen."
+        },
+        {
+          "icon": "RiCheckboxCircleLine",
+          "title": "Typografie",
+          "description": "Schriftgrößen in em für Skalierbarkeit: body 1em = 16px, h1 2,5em = 40px."
+        },
+        {
+          "icon": "RiLayoutLine",
+          "title": "Responsive Design",
+          "description": "Nutzen Sie em für Breakpoints und Abstände, die mit der Schriftgröße skalieren."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Barrierefreiheit",
+          "description": "Em-Einheiten respektieren die Schriftgrößen-Einstellungen des Nutzers."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was unterscheidet diesen Umrechner?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen werden lokal in Ihrem Browser durchgeführt."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich während der Eingabe."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Umrechnung",
+          "description": "Rechnen Sie mit einem Klick in beide Richtungen um."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Tabelle mit gängigen Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung?",
+      "html": "<p class=\"text-mid mb-4\">px = em × Schriftgröße des übergeordneten Elements. Standard: 16px.</p><p class=\"text-mid\">Em kaskadiert: body 16px, div 1,5em (24px), Absatz darin bei 1,5em = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung?",
+      "html": "<p class=\"text-mid mb-4\">px = em × Schriftgröße des übergeordneten Elements. Standard: 16px.</p><p class=\"text-mid\">Em kaskadiert: body 16px, div 1,5em (24px), Absatz darin bei 1,5em = 36px.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "em vs px vs rem",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "em"
+        },
+        {
+          "id": "unit2",
+          "name": "px",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Bezug",
+          "values": {
+            "unit1": "Eltern-Schriftgröße",
+            "unit2": "Fester Pixel"
+          }
+        },
+        {
+          "name": "Kaskadiert",
+          "values": {
+            "unit1": "Ja (verschachtelt)",
+            "unit2": "Nein"
+          }
+        },
+        {
+          "name": "Responsiv",
+          "values": {
+            "unit1": "Ja",
+            "unit2": "Nein"
+          }
+        },
+        {
+          "name": "Barrierefreiheit",
+          "values": {
+            "unit1": "Respektiert Einstellungen",
+            "unit2": "Feste Größe"
+          }
+        },
+        {
+          "name": "Vorhersagbarkeit",
+          "values": {
+            "unit1": "Kontextabhängig",
+            "unit2": "Immer konstant"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele Pixel sind 1em?",
+          "answer": "Standardmäßig 1em = 16px (Browser-Standard). Aber em ist relativ zum übergeordneten Element."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen em und rem?",
+          "answer": "em bezieht sich auf die Eltern-Schriftgröße. rem bezieht sich auf die Wurzel-Schriftgröße (html). rem ist vorhersagbarer."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "em na px – Arteon",
+      "defaultSubject": "Feedback: em-to-px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

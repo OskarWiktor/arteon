@@ -306,7 +306,7 @@
         {
           "icon": "RiArticleLine",
           "title": "Footer und rechtliche Hinweise",
-          "description": "Footer-Text ist oft klein und hell — eine häufige Schwachstelle bei der Barrierefreiheit."
+          "description": "Footer-Text ist oft klein und hell - eine häufige Schwachstelle bei der Barrierefreiheit."
         }
       ]
     },
@@ -340,12 +340,12 @@
         {
           "icon": "RiEyeLine",
           "title": "Objektive Bewertung",
-          "description": "Das Kontrastverhältnis wird nach der WCAG-Formel berechnet — unabhängig von Ihren Monitoreinstellungen."
+          "description": "Das Kontrastverhältnis wird nach der WCAG-Formel berechnet - unabhängig von Ihren Monitoreinstellungen."
         },
         {
           "icon": "RiShieldCheckLine",
           "title": "WCAG-Konformität",
-          "description": "Basiert auf den WCAG-2.1-Anforderungen — der Grundlage der EU-Barrierefreiheitsrichtlinie."
+          "description": "Basiert auf den WCAG-2.1-Anforderungen - der Grundlage der EU-Barrierefreiheitsrichtlinie."
         },
         {
           "icon": "RiMagicLine",
@@ -360,7 +360,7 @@
         {
           "icon": "RiInfinityLine",
           "title": "Drei Inhaltstypen in einem Test",
-          "description": "Ein Test — drei Ergebnisse: normaler Text, großer Text und Symbole."
+          "description": "Ein Test - drei Ergebnisse: normaler Text, großer Text und Symbole."
         }
       ]
     },
@@ -430,7 +430,7 @@
         },
         {
           "question": "Wie wirkt sich das BFSG auf meine Website aus?",
-          "answer": "Das Barrierefreiheitsstärkungsgesetz (BFSG) ist seit Juni 2025 in Kraft. Es verpflichtet Anbieter von Produkten und Dienstleistungen im Online-Handel zur digitalen Barrierefreiheit. Die referenzierte Norm EN 301 549 verweist auf WCAG 2.1 AA — einschließlich der Kontrast-Schwellenwerte 4,5:1 und 3:1, die dieses Tool prüft."
+          "answer": "Das Barrierefreiheitsstärkungsgesetz (BFSG) ist seit Juni 2025 in Kraft. Es verpflichtet Anbieter von Produkten und Dienstleistungen im Online-Handel zur digitalen Barrierefreiheit. Die referenzierte Norm EN 301 549 verweist auf WCAG 2.1 AA - einschließlich der Kontrast-Schwellenwerte 4,5:1 und 3:1, die dieses Tool prüft."
         },
         {
           "question": "Muss ich als Schweizer Unternehmen die gleichen Standards erfüllen?",

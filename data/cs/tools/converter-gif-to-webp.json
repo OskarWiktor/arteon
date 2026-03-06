@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník GIF na WebP – GIF WebP",
-    "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
+    "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-gif-na-webp"
   },
   "hero": {
     "title": "Převodník GIF na WebP",
-    "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
+    "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník GIF na WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani. Zpracování probíhá v prohlížeči — soubory neopouštějí vaše zařízení.",
+      "description": "Exportujte prvni snimek GIFu jako lehke WebP. Mensi soubor, rychlejsi nacitani. Zpracování probíhá v prohlížeči - soubory neopouštějí vaše zařízení.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Převést GIF na WEBP", "Konverze GIF do WEBP", "Převodník GIF na WEBP zdarma"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Nastaveni kvality — co zvolit pri konverzi GIF na WebP?",
-      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 80% je rozdil mezi originalnim GIF a vyslednym WebP nepostrehnutelny.</p>"
+      "title": "Nastaveni kvality - co zvolit pri konverzi GIF na WebP?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (vychozi) - dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% - pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% - kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 80% je rozdil mezi originalnim GIF a vyslednym WebP nepostrehnutelny.</p>"
     },
     {
       "type": "gap",

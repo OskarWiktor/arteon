@@ -220,7 +220,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Free online tools — image converters, SEO, colors, favicon',
+  name: 'Free online tools - image converters, SEO, colors, favicon',
   description:
     'Free online tools: 24 image converters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon generator, image editor, text counter, color palettes, and QR codes. No signup required.',
   url: toAbsoluteUrl('/en/tools'),
@@ -603,7 +603,7 @@ export default function ToolsIndexPage() {
     <>
       <HeroBanner
         title="Free online tools"
-        description="Image format converters, image editor, favicon generator, text counter, color tools, and QR codes. No registration, no limits — everything runs in your browser."
+        description="Image format converters, image editor, favicon generator, text counter, color tools, and QR codes. No registration, no limits - everything runs in your browser."
         backgroundImage="/assets/arteon-logo-on-mockup.webp"
         overlay="black"
       />
@@ -687,6 +687,23 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/en/tools/word-and-character-counter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Lorem Ipsum Generator',
+              topImageAlt: 'Lorem Ipsum Generator Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-en.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Generate placeholder text in 8 styles and 9 modes. Lorem Ipsum, Hipster, Business, Bacon and more. Copy as text or HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/en/tools/lorem-ipsum-generator">
                       Open tool
                     </Button>
                   </div>
@@ -813,7 +830,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Image format converters"
-          description="Online image converters — convert between JPG, PNG, WebP, SVG, BMP, and GIF. Runs in your browser, no files sent to servers."
+          description="Online image converters - convert between JPG, PNG, WebP, SVG, BMP, and GIF. Runs in your browser, no files sent to servers."
           grid="three"
           items={[
             {
@@ -912,16 +929,25 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Data converters"
+          description="Online data format converters — convert between CSV, JSON, XML, YAML, Markdown and HTML. All processing in your browser."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG to PNG converter',
-              topImageAlt: 'SVG to PNG converter Arteon',
+              title: 'CSV to JSON',
+              topImageAlt: 'CSV to JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convert vector SVG graphics to raster PNG. Ideal for documents and social media.</p>
+                  <p>Convert CSV to JSON format. Automatic separator detection and result formatting.</p>
                   <div className="mt-4">
-                    <Button arrow link="/en/tools/svg-to-png-converter">
+                    <Button arrow link="/en/tools/csv-to-json-converter">
                       Open tool
                     </Button>
                   </div>
@@ -930,14 +956,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG to JPG converter',
-              topImageAlt: 'SVG to JPG converter Arteon',
+              title: 'JSON to CSV',
+              topImageAlt: 'JSON to CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convert vector SVG files to compact JPG. Smaller file size, full compatibility.</p>
+                  <p>Convert JSON data to CSV format. Processing in your browser, no server upload.</p>
                   <div className="mt-4">
-                    <Button arrow link="/en/tools/svg-to-jpg-converter">
+                    <Button arrow link="/en/tools/json-to-csv-converter">
                       Open tool
                     </Button>
                   </div>
@@ -946,14 +972,62 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP to JPG converter',
-              topImageAlt: 'BMP to JPG converter Arteon',
+              title: 'XML to JSON',
+              topImageAlt: 'XML to JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convert uncompressed BMP files to lightweight JPG. Reduce file size without quality loss.</p>
+                  <p>Convert XML data to JSON. Browser-based conversion with structure validation.</p>
                   <div className="mt-4">
-                    <Button arrow link="/en/tools/bmp-to-jpg-converter">
+                    <Button arrow link="/en/tools/xml-to-json-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON to XML',
+              topImageAlt: 'JSON to XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convert JSON data to valid XML. Browser-based conversion with formatting.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/en/tools/json-to-xml-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML to JSON',
+              topImageAlt: 'YAML to JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convert YAML configuration to JSON. Validation and formatting in the browser.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/en/tools/yaml-to-json-converter">
+                      Open tool
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON to YAML',
+              topImageAlt: 'JSON to YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convert JSON data to readable YAML. Browser-based conversion with formatting.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/en/tools/json-to-yaml-converter">
                       Open tool
                     </Button>
                   </div>

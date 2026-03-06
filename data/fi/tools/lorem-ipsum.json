@@ -1,0 +1,521 @@
+{
+  "toolKey": "loremIpsum",
+  "locale": "fi",
+  "metadata": {
+    "title": "Lorem Ipsum -generaattori — esimerkkiteksti, kappaleet, lauseet ja satunnaiset sanat",
+    "description": "Ilmainen Lorem Ipsum -generaattori — 8 tyyliä: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business ja lisää. 9 luontitilaa. Kopioi tekstinä tai HTML:nä.",
+    "ogImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generaattori-fi.webp",
+    "path": "/tyokalut/lorem-ipsum-generaattori"
+  },
+  "hero": {
+    "title": "Lorem Ipsum -generaattori — esimerkkiteksti, kappaleet, lauseet ja satunnaiset sanat",
+    "description": "8 tekstityyliä: Lorem Ipsum, Hipster, Business, Bacon, Cupcake, Pirate, Legal ja suomalaiset täytesanat. 9 tilaa: kappaleet, lauseet, sanat, listat, otsikot, linkit, taulukot, lainaukset, määritelmät.",
+    "backgroundImage": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generaattori-fi.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/tyokalut/lorem-ipsum-generaattori",
+      "label": "Lorem Ipsum -generaattori"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Lorem Ipsum -generaattori — esimerkkiteksti, kappaleet, lauseet ja satunnaiset sanat",
+      "alternateName": [
+        "Lorem Ipsum Generator",
+        "Bacon Ipsum generator",
+        "Cupcake Ipsum generator",
+        "Pirate Ipsum generator",
+        "Legal Ipsum generator",
+        "Hipster Ipsum generator",
+        "Business Ipsum generator",
+        "Dummy text generator online"
+      ],
+      "applicationSubCategory": "TextApplication",
+      "description": "Ilmainen Lorem Ipsum -generaattori — 8 tyyliä: Bacon Ipsum, Cupcake Ipsum, Pirate Ipsum, Legal Ipsum, Hipster, Business ja lisää. 9 luontitilaa. Kopioi tekstinä tai HTML:nä.",
+      "featureList": [
+        "Luo Lorem Ipsum -kappaleita",
+        "Luo yksittäisiä lauseita",
+        "Luo satunnaisia sanoja",
+        "Luo numeroituja ja luettelomerkkejä",
+        "Luo H1–H6-otsikkoja",
+        "Luo linkkejä esimerkki-URL-osoitteilla",
+        "Luo taulukoita satunnaisilla tiedoilla",
+        "Luo lainauksia",
+        "Luo määritelmäluetteloita",
+        "Lorem Ipsum — latinaa De Finibuksesta",
+        "Hipster Ipsum — hipsterisanasto",
+        "Business Ipsum — yritysslängi",
+        "Suomenkieliset täytesanat — sanoja paikallisella kielellä",
+        "Bacon Ipsum — liha ja grillaus",
+        "Cupcake Ipsum — leipomo ja makeiset",
+        "Pirate Ipsum — merirosvosanasto",
+        "Legal Ipsum — oikeudellinen terminologia",
+        "Tulostemuoto: pelkkä teksti tai HTML",
+        "Kappaleen pituuden hallinta (lyhyt, keskipitkä, pitkä)",
+        "Tilastot: sanat, merkit, lauseet, kappaleet, lukuaika",
+        "Kopioi teksti leikepöydälle",
+        "Kopioi HTML-koodi leikepöydälle",
+        "Lataa .txt-tiedostona",
+        "Paikallinen käsittely selaimessa"
+      ]
+    },
+    "howTo": {
+      "name": "Näin käytät Lorem Ipsum -generaattoria",
+      "description": "Luo Lorem Ipsum -täytetekstiä sekunneissa. Valitse tila, tyyli ja muoto, kopioi tai lataa tulos.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Valitse luontitila",
+          "text": "Valitse yksi 9 tilasta: kappaleet, lauseet, sanat, luettelot, otsikot, linkit, taulukko, lainaukset tai määritelmät. Aseta määrä."
+        },
+        {
+          "name": "Valitse tekstittyyli",
+          "text": "Valitse yksi 8 tyylistä: Lorem Ipsum, Hipster, Business, Suomenkieliset täytesanat, Bacon, Cupcake, Pirate tai Legal Ipsum."
+        },
+        {
+          "name": "Aseta tulostemuoto",
+          "text": "Valitse pelkkä teksti tai HTML tunnisteilla. Säädä kappaleen pituutta tarpeen mukaan."
+        },
+        {
+          "name": "Kopioi tai lataa tulos",
+          "text": "Napsauta Luo, kopioi sitten teksti, HTML-koodi tai lataa .txt-tiedosto."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikä on Lorem Ipsum ja mihin sitä käytetään",
+      "html": "<p class=\"text-mid\">Lorem Ipsum on vakiotäyteteksti, jota on käytetty paino-, graafisen suunnittelun ja verkkokehityksen aloilla yli 500 vuoden ajan. Teksti on peräisin Marcus Tullius Ciceron teoksesta <em>De Finibus Bonorum et Malorum</em> (Hyvän ja pahan rajoista), joka kirjoitettiin vuonna 45 eKr. Alkuperäistä tekstikappaletta muutettiin tarkoituksella — sanoja lisättiin, poistettiin ja järjestettiin uudelleen — niin että tekstillä ei ole merkitystä, mutta se säilyttää luonnollisen rytmin ja kirjainjakauman, joka muistuttaa oikeaa kieltä.</p><p class=\"text-mid mt-3\">Lorem Ipsum -generaattori mahdollistaa minkä tahansa määrän täytetekstiä luomisen nopeasti malleihin, käyttöliittymäprototyyppeihin, graafisiin suunnitelmiin ja typografisiin asettelutesteihin. Työkalu tarjoaa 9 luontitilaa (kappaleet, lauseet, sanat, luettelot, otsikot, linkit, taulukot, lainaukset, määritelmät), 8 tekstityyliä ja reaaliaikaisia tilastoja.</p>",
+      "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generaattori-fi.webp",
+      "imageAlt": "Lorem Ipsum -generaattori — Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Näin käytät Lorem Ipsum -generaattoria",
+      "description": "Luo täytetekstiä neljässä vaiheessa:",
+      "grid": "four",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "1. Valitse tila",
+          "description": "Valitse yksi 9 tilasta: kappaleet, lauseet, sanat, luettelot, otsikot, linkit, taulukko, lainaukset tai määritelmät."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "2. Valitse tyyli",
+          "description": "8 tyyliä: Lorem Ipsum, Hipster, Business, Suomenkieliset täytesanat, Bacon, Cupcake, Pirate ja Legal — jokaisella oma sanapankki."
+        },
+        {
+          "icon": "RiSettings3Line",
+          "title": "3. Säädä asetuksia",
+          "description": "Aseta kappaleen pituus (lyhyt, keskipitkä, pitkä) ja tulostemuoto (pelkkä teksti tai HTML tunnisteilla)."
+        },
+        {
+          "icon": "RiFileCopyLine",
+          "title": "4. Kopioi tulos",
+          "description": "Napsauta Luo, kopioi teksti, HTML-koodi tai lataa .txt-tiedosto. Tilastot näyttävät sana- ja merkkimäärät."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lorem Ipsumin historia — Cicerosta moderniin muotoiluun",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsumilla on yli 2 000 vuoden historia. Alkuperäinen tekstikappale on peräisin Ciceron teoksen <em>De Finibus Bonorum et Malorum</em> osiosta 1.10.32, joka kirjoitettiin vuonna 45 eKr. Teos on filosofinen tutkielma etiikasta — Cicero analysoi hedonismia ja stoalaisuutta ja puolsi tasapainoista lähestymistapaa nautintoon ja kipuun.</p><p class=\"text-mid mb-4\">Tämän tekstin käyttö täytetekstinä painoalalla juontaa juurensa 1500-luvulle, jolloin tuntematon painaja käytti Ciceron tekstikappaletta kirjasintyyppinakulan luomiseen. Teksti selvisi viisi vuosisataa kulkien käsinladontaa, Linotypea ja valoladontaa läpi.</p><p class=\"text-mid mb-4\">Lorem Ipsumin nykyaikainen suosio alkoi 1960-luvulla, kun Letraset sijoitti tekstin siirtokuvakirjaimille, joita käytettiin graafisissa studioissa. Ratkaiseva läpimurto tuli vuonna 1985, kun Aldus Corporation sisällytti Lorem Ipsumin oletustäytetekstiksi PageMakeriin — yhteen ensimmäisistä DTP-ohjelmista. Siitä hetkestä lähtien Lorem Ipsumista tuli alan standardi.</p><p class=\"text-mid\">Richard McClintock, latinan professori Hampden-Sydney Collegessa Virginiassa, tunnisti tekstin lähteen 1980-luvulla ja huomasi, että sanat lorem ipsum ovat vääristynyt katkelma Ciceron teoksen latinasta. Hänen tutkimuksensa vahvisti, että Lorem Ipsum ei ole satunnainen sanakokoelma, vaan sillä on aidot kirjalliset juuret.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "9 sisällönluontitilaa",
+      "description": "Generaattori tarjoaa 9 erilaista sisältötyyppiä — klassisista kappaleista taulukoihin ja määritelmiin:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiParagraph",
+          "title": "Kappaleet",
+          "description": "Klassiset tekstilohkot hallitulla pituudella (lyhyt, keskipitkä, pitkä). Ihanteellinen verkkomalleihin, CMS-pohjiin ja käyttöliittymäprototyyppeihin."
+        },
+        {
+          "icon": "RiTextSnippet",
+          "title": "Lauseet",
+          "description": "Yksittäiset lauseet satunnaisella pituudella (5–15 sanaa). Hyödyllisiä lomakekenttien, tuotekuvausten ja lyhyiden tekstilohkojen testaamiseen."
+        },
+        {
+          "icon": "RiFontSize",
+          "title": "Sanat",
+          "description": "Satunnaiset yksittäiset sanat valitusta sanapankista. Ihanteellinen tunnisteisiin, kategorianmiin ja tekstipituuden testaamiseen käyttöliittymäkomponenteissa."
+        },
+        {
+          "icon": "RiListUnordered",
+          "title": "Luettelot",
+          "description": "Numeroidut luettelot (teksti) tai &lt;ul&gt;&lt;li&gt; (HTML). Navigaatiovalikoihin, ominaisuusluetteloihin, tuotemäärittelyihin ja UKK-kohtiin."
+        },
+        {
+          "icon": "RiHeading",
+          "title": "Otsikot",
+          "description": "Satunnaiset H1–H6-otsikot Markdown- tai HTML-muodossa. Typografisen hierarkian ja sisältörakenteen testaamiseen."
+        },
+        {
+          "icon": "RiLink",
+          "title": "Linkit",
+          "description": "Linkit satunnaisella tekstillä ja esimerkki-URL-osoitteilla. Markdown- tai &lt;a href&gt;-HTML-muodossa. Navigaation ja valikoiden prototyypitykseen."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Taulukko",
+          "description": "Taulukko satunnaisilla sarakeotsikolla ja tiedoilla 3–5 sarakkeessa. Markdown- tai &lt;table&gt;-HTML-muoto. Hintamalleihin ja tekniikkalomakkeisiin."
+        },
+        {
+          "icon": "RiDoubleQuotesL",
+          "title": "Lainaukset",
+          "description": "Lainauslohkot (blockquote) 1–3 lauseella. Lainaustyylien, suositusten ja korostettujen tekstiosioiden testaamiseen."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Määritelmät",
+          "description": "Termi + kuvaus -parit &lt;dl&gt;&lt;dt&gt;&lt;dd&gt;-HTML-muodossa tai tekstinä. Sanastoihin, UKK-osioihin ja dokumentaatioon."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Milloin käyttää Lorem Ipsumia ja milloin oikeaa tekstiä",
+      "html": "<p class=\"text-mid mb-4\">Lorem Ipsum toimii hyvin kaikkialla, missä sisältö ei ole vielä valmis, mutta asettelu täytyy esittää tai testata:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Käyttöliittymäprototyypit ja rautalankamallit</strong> — sivurakenteen suunnittelu odottamatta asiakkaan lopullista tekstiä.</li><li><strong>Graafiset mallit</strong> — suunnitelman esittäminen realistisen näköisellä tekstillä tyhjien suorakaiteiden sijaan.</li><li><strong>Fontti- ja typografiatestit</strong> — luettavuuden, rivinkorkeuden, merkkivälin ja otsikkohierarkian arvioiminen oikealla tekstilohkolla.</li><li><strong>CMS-pohjat ja teemat</strong> — WordPress-, Shopify- tai muun CMS-pohjan ulkonäön esittely esimerkkisisällöllä.</li><li><strong>Painotuotteet</strong> — esitteet, käyntikortit ja luettelot suunnitteluvaiheessa.</li></ul><p class=\"text-mid mb-4\"><strong>Milloin EI käyttää Lorem Ipsumia:</strong></p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tuotantosivustot</strong> — Google indeksoi täytetekstin ja voi pitää sivua heikkolaatuisena.</li><li><strong>Lopullinen SEO-sisältö</strong> — metatittelien, kuvausten ja H1-otsikkojen on sisällettävä oikeita avainsanoja.</li><li><strong>Sähköpostimarkkinointi</strong> — Lorem Ipsum -viestien lähettäminen on epäammattimaista ja uhkaa päätyä roskapostiin.</li><li><strong>Käytettävyystestaus käyttäjillä</strong> — käyttäjät keskittyvät sisältöön. Täyteteksti vääristää UX-tutkimustuloksia.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kenelle Lorem Ipsum -generaattori on tarkoitettu?",
+      "description": "Työkalu on hyödyllinen kaikille, jotka työskentelevät tekstin asettelun parissa:",
+      "grid": "three",
+      "items": [
+        {
+          "icon": "RiPaintBrushLine",
+          "title": "Suunnittelijat ja UI-suunnittelijat",
+          "description": "Täytä mallit ja prototyypit nopeasti realistisen näköisellä tekstillä. Testaa typografista hierarkiaa ja sarakeasetteluja."
+        },
+        {
+          "icon": "RiCodeLine",
+          "title": "Frontend-kehittäjät",
+          "description": "Luo täytetekstiä komponenttien, asettelun responsiivisuuden ja CSS-käyttäytymisen testaamiseen eri sisältöpituuksilla."
+        },
+        {
+          "icon": "RiEditLine",
+          "title": "Tekstintekijät",
+          "description": "Prototyypita tekstirakenne: montako kappaletta, lausepituudet, miltä luettelot ja otsikot näyttävät lopullisessa asettelussa."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Painotalot ja kustantajat",
+          "description": "Täytä esite-, lehtis- ja luettelopohjat esimerkkitekstillä asiakkaan hyväksyntää varten."
+        },
+        {
+          "icon": "RiGlobalLine",
+          "title": "Verkkosivustojen omistajat",
+          "description": "Testaa uuden CMS-pohjan tai teeman ulkonäkö esimerkkisisällöllä. Arvioi kuinka paljon tekstiä tarvitaan sivua kohden."
+        },
+        {
+          "icon": "RiGraduationCapLine",
+          "title": "Muotoiluopiskelijat",
+          "description": "Opi graafista asettelua, typografiaa ja sommittelua ammattimaisella täytetekstillä satunnaisten merkkien sijaan."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Tekstityylien vertailu",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "classic",
+          "name": "Lorem Ipsum",
+          "highlighted": true
+        },
+        {
+          "id": "hipster",
+          "name": "Hipster"
+        },
+        {
+          "id": "business",
+          "name": "Business"
+        },
+        {
+          "id": "polish",
+          "name": "Paikallinen"
+        },
+        {
+          "id": "bacon",
+          "name": "Bacon"
+        },
+        {
+          "id": "cupcake",
+          "name": "Cupcake"
+        },
+        {
+          "id": "pirate",
+          "name": "Pirate"
+        },
+        {
+          "id": "legal",
+          "name": "Legal"
+        }
+      ],
+      "features": [
+        {
+          "name": "Kieli",
+          "values": {
+            "classic": "Latina",
+            "hipster": "Englanti",
+            "business": "Englanti",
+            "polish": "Paikallinen",
+            "bacon": "Englanti",
+            "cupcake": "Englanti",
+            "pirate": "Englanti",
+            "legal": "Englanti"
+          }
+        },
+        {
+          "name": "Teema",
+          "values": {
+            "classic": "Filosofia",
+            "hipster": "Elämäntyyli",
+            "business": "Yritys",
+            "polish": "Yleinen",
+            "bacon": "Gastronomia",
+            "cupcake": "Leipomo",
+            "pirate": "Seikkailu",
+            "legal": "Oikeus"
+          }
+        },
+        {
+          "name": "Visuaalinen neutraalius",
+          "values": {
+            "classic": true,
+            "hipster": false,
+            "business": false,
+            "polish": false,
+            "bacon": false,
+            "cupcake": false,
+            "pirate": false,
+            "legal": false
+          }
+        },
+        {
+          "name": "Luonnollinen rytmi",
+          "values": {
+            "classic": true,
+            "hipster": true,
+            "business": true,
+            "polish": true,
+            "bacon": true,
+            "cupcake": true,
+            "pirate": true,
+            "legal": true
+          }
+        },
+        {
+          "name": "Alan standardi",
+          "values": {
+            "classic": true,
+            "hipster": false,
+            "business": false,
+            "polish": false,
+            "bacon": false,
+            "cupcake": false,
+            "pirate": false,
+            "legal": false
+          }
+        },
+        {
+          "name": "Huumori / luonne",
+          "values": {
+            "classic": "Neutraali",
+            "hipster": "Keskitaso",
+            "business": "Matala",
+            "polish": "Matala",
+            "bacon": "Korkea",
+            "cupcake": "Korkea",
+            "pirate": "Korkea",
+            "legal": "Matala"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "8 täytetekstityyliä — kaikki saatavilla generaattorissa",
+      "html": "<p class=\"text-mid mb-4\">Generaattorimme tarjoaa 8 ainutlaatuista täytetekstityyliä — klassisesta latinasta oikeudelliseen ammattikieleen. Jokaisella tyylillä on oma yli 90 sanan sanapankki ja se tuottaa tekstiä luonnollisella rytmillä:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Lorem Ipsum</strong> — klassinen latinankielinen täyteteksti Ciceron teoksesta. Alan standardi yli 500 vuotta.</li><li><strong>Hipster Ipsum</strong> — hipsterikulttuurin sanasto: käsityö, avokado, vintage, tietoisuus. Ihanteellinen elämäntyyliprosjekteihin.</li><li><strong>Business Ipsum</strong> — yritysslängi: synergia, vipuvaikutus, sidosryhmä, KPI. Esitys- ja yritysverkkosivumalleihin.</li><li><strong>Suomenkieliset täytesanat</strong> — satunnaisia sanoja paikallisella kielellä eri aloilta. Näyttää asiakkaalle, miltä teksti näyttää suunnitelmassa.</li><li><strong>Bacon Ipsum</strong> — liha- ja grillaussanasto: pihvi, brisket, grillaus. Suosittu kehittäjien keskuudessa.</li><li><strong>Cupcake Ipsum</strong> — leipomosanasto: muffini, suklaa, karamelli, kuorrutus. Elintarvikealan projekteihin.</li><li><strong>Pirate Ipsum</strong> — merirosvohteksti: ahoy, aarre, kaleoni, rommi. Viihde- ja peliprojekteihin.</li><li><strong>Legal Ipsum</strong> — oikeudellinen terminologia: tuomiovalta, kantaja, säädös, vastuu. Asianajotoimiston verkkosivumalleihin.</li></ul><p class=\"text-mid mb-4\">Hauskat variantit (Bacon, Cupcake, Pirate) toimivat hyvin sisäisissä esityksissä, joissa huumori parantaa tiimiviestintää. Ammattimaisiin asiakasesityksiin käytä klassista Lorem Ipsumia tai Legal Ipsumia — ne ovat neutraaleja eivätkä häiritse suunnitelmaa.</p><p class=\"text-mid\">Suomenkieliset täytesanat ovat ainutlaatuinen vaihtoehto — paikallisen kielen sanat säilyttävät kohdekielen luonnolliset kirjainsuhteet ja sanapituudet. Ihanteellinen näyttämään asiakkaille realistinen tekstin esikatselu.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Lorem Ipsum ja SEO — vahingoittaako täyteteksti sijoituksia",
+      "html": "<p class=\"text-mid mb-4\">Kyllä — Lorem Ipsumin julkaiseminen tuotantosivustolla voi vaikuttaa hakusijoituksiin kielteisesti. Google analysoi jokaisen indeksoidun sivun sisällön ja tunnistaa täytetekstin:</p><ul class=\"text-mid list-disc space-y-2 pl-5 mb-4\"><li><strong>Ohut sisältö</strong> — täytetekstiä sisältävä sivu ei tarjoa arvoa käyttäjille. Google luokittelee tällaiset sivut ohueksi sisällöksi ja laskee niiden sijoitusta.</li><li><strong>Ei-toivottu indeksointi</strong> — Googlen robotit indeksoivat Lorem Ipsumin sivunsisältönä. Se voi näkyä hakutuloksissa ja vahingoittaa brändi-imagoa.</li><li><strong>Indeksointibudjetin tuhlaus</strong> — Google myöntää rajallisen indeksointibudjetin. Lorem Ipsum -sivut kuluttavat sen ilman hyötyä.</li><li><strong>Core Web Vitals</strong> — täyteteksti ei vaikuta suoraan suorituskykymittareihin, mutta heikkolaatuiset sivut voivat sijoittua kokonaisuutena heikommin.</li></ul><p class=\"text-mid mb-4\">Näin vältät ongelman: etsi koko sivustoltasi &quot;lorem ipsum&quot; tai &quot;dolor sit amet&quot; ennen julkaisua. Google Search Consolessa tarkista, ettei yksikään indeksoitu sivu sisällä täytetekstiä. Käytä komentoa <code>site:sinunverkkotunnuksesi.fi &quot;lorem ipsum&quot;</code> Googlessa.</p><p class=\"text-mid\">Lorem Ipsum -generaattori on suunnitteluvaiheen työkalu. Täyteteksti on korvattava oikealla sisällöllä ennen julkaisua.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä Lorem Ipsum -generaattorista erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiListCheck2",
+          "title": "9 sisällönluontitilaa",
+          "description": "Kappaleet, lauseet, sanat, luettelot, otsikot, linkit, taulukot, lainaukset ja määritelmät — täysi hallinta määrään ja muotoon."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "8 ainutlaatuista tekstityyliä",
+          "description": "Lorem Ipsum, Hipster, Business, Suomenkieliset täytesanat, Bacon, Cupcake, Pirate ja Legal. Jokaisella tyylillä 90+ sanaa."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Valmis HTML-koodi",
+          "description": "Luo tekstiä HTML-tunnisteilla ja kopioi valmis koodi. Säästää aikaa verkkosivuprototyyppien luomisessa."
+        },
+        {
+          "icon": "RiBarChartLine",
+          "title": "Tekstitilastot",
+          "description": "Sanat, merkit, lauseet, kappaleet, lukuaika ja koko tavuina — näkyvissä välittömästi luonnin jälkeen."
+        },
+        {
+          "icon": "RiUserLine",
+          "title": "Paikallinen käsittely",
+          "description": "Teksti luodaan selaimessasi. Mitään ei lähetetä palvelimelle. Työkalu toimii offline-tilassa sivun latauksen jälkeen."
+        },
+        {
+          "icon": "RiLockLine",
+          "title": "Ei rekisteröintiä tai rajoituksia",
+          "description": "Täysin ilmainen. Ei rekisteröintiä, kirjautumista tai henkilötietoja. Ei mainoksia luodussa tekstissä."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset Lorem Ipsum -generaattorista",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Mikä on Lorem Ipsum?",
+          "answer": "Lorem Ipsum on paino-, graafisen suunnittelun ja verkkokehityksen alan vakiotäyteteksti. Sitä käytetään asettelujen täyttämiseen realistisen näköisellä tekstillä, kun lopullinen sisältö ei ole vielä valmis. Tekstillä on luonnollinen rytmi ja kirjainjakauma, joka muistuttaa oikeaa kieltä.",
+          "answerSchemaText": "Lorem Ipsum on paino-, graafisen suunnittelun ja verkkokehityksen alan vakiotäyteteksti."
+        },
+        {
+          "question": "Mistä Lorem Ipsum on peräisin?",
+          "answer": "Lorem Ipsum on peräisin Marcus Tullius Ciceron teoksesta De Finibus Bonorum et Malorum, joka kirjoitettiin vuonna 45 eKr. Se on filosofinen tutkielma etiikasta. Osion 1.10.32 alkuperäistä tekstikappaletta muutti tuntematon painaja 1500-luvulla.",
+          "answerSchemaText": "Lorem Ipsum on peräisin Ciceron teoksesta De Finibus Bonorum et Malorum, vuodelta 45 eKr."
+        },
+        {
+          "question": "Onko Lorem Ipsum oikeaa latinaa?",
+          "answer": "Osittain. Se sisältää oikeita latinan sanoja Ciceron teoksesta, mutta teksti on tarkoituksella vääristetty. Sanat on sekoitettu ja joistakin puuttuvat päätteet. Yksittäiset sanat kuten dolor (kipu), amet (rakastaa) ja ipsum (itse) ovat aitoja latinan termejä.",
+          "answerSchemaText": "Osittain — oikeita latinan sanoja Cicerolta, mutta tarkoituksella vääristetty ja vailla merkitystä."
+        },
+        {
+          "question": "Montako kappaletta tarvitsen malliin?",
+          "answer": "Riippuu sivutyypistä. Laskeutumissivu: 5–8. Palvelusivu: 4–6. Blogiartikkeli: 8–15 (1 500–2 500 sanaa). Tuotekortti: 2–3. Generaattori luo tarvittavan määrän.",
+          "answerSchemaText": "Riippuu tyypistä: laskeutumissivu 5–8, palvelut 4–6, blogi 8–15, tuote 2–3 kappaletta."
+        },
+        {
+          "question": "Voinko käyttää Lorem Ipsumia tuotantosivustolla?",
+          "answer": "Ei. Lorem Ipsum on tarkoitettu vain suunnitteluvaiheeseen. Julkaiseminen vahingoittaa hakukoneoptimointia (Google luokittelee sen ohueksi sisällöksi), brändi-imagoa ja se voidaan indeksoida. Vaihda aina ennen julkaisua.",
+          "answerSchemaText": "Ei — vahingoittaa hakukoneoptimointia ja brändi-imagoa. Vaihda aina oikeaan sisältöön ennen julkaisua."
+        },
+        {
+          "question": "Vahingoittaako Lorem Ipsum hakukoneoptimointia?",
+          "answer": "Kyllä, jos se julkaistaan tuotantosivustolla. Google tunnistaa täytetekstin ja voi pitää sivua heikkolaatuisena. Käytä site:sinunverkkotunnuksesi.fi lorem ipsum Googlessa tarkistaaksesi.",
+          "answerSchemaText": "Kyllä, tuotantosivustoilla — Google tunnistaa täytetekstin ja luokittelee sen ohueksi sisällöksi."
+        },
+        {
+          "question": "Mitä ovat Hipster Ipsum ja Business Ipsum?",
+          "answer": "Temaattisia täytetekstivariantteja. Hipster Ipsum käyttää hipsterisanastoa (käsityö, avokado, vintage). Business Ipsum on yritysslängiä (synergia, vipuvaikutus, sidosryhmä, KPI). Molemmat tuottavat tekstiä luonnollisella rytmillä ja toimialakohtaisella sanastolla.",
+          "answerSchemaText": "Temaattisia variantteja — Hipster käyttää elämäntyyisanastoa, Business yritysslängiä."
+        },
+        {
+          "question": "Miten luon Lorem Ipsumia HTML-tunnisteilla?",
+          "answer": "Asetuksissa vaihda muoto Tekstistä HTML:ään. Generaattori käärii kappaleet &lt;p&gt;-tunnisteilla ja luettelot &lt;ul&gt;&lt;li&gt;-tunnisteilla. Napsauta Kopioi HTML. Koodi voidaan liittää suoraan HTML-editoriin tai CMS:ään.",
+          "answerSchemaText": "Vaihda muoto HTML:ksi asetuksissa, luo teksti ja napsauta Kopioi HTML."
+        },
+        {
+          "question": "Onko generaattori ilmainen ja turvallinen?",
+          "answer": "Kyllä. Täysin ilmainen, ilman rekisteröintiä ja ilman rajoituksia. Kaikki luodaan paikallisesti selaimessasi — mitään ei lähetetä palvelimelle. Ei seurantaa, ei evästeitä, toimii offline-tilassa latauksen jälkeen.",
+          "answerSchemaText": "Kyllä — ilmainen, ilman rekisteröintiä, paikallinen selainkäsittely, ei tiedonkeruuta."
+        },
+        {
+          "question": "Montako sanaa vakiokappaleessa on?",
+          "answer": "Riippuu asetuksesta: lyhyt (2–4 lausetta, n. 20–50 sanaa), keskipitkä (4–7 lausetta, n. 40–90 sanaa), pitkä (7–12 lausetta, n. 70–150 sanaa). Ciceron alkuperäisessä ensimmäisessä kappaleessa on noin 69 sanaa.",
+          "answerSchemaText": "Lyhyt 20–50 sanaa, keskipitkä 40–90 sanaa, pitkä 70–150 sanaa."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea uudeksi ominaisuudeksi, löysitkö virheen tai haluatko ehdottaa toista työkalua? Kirjoita meille — vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/lorem-ipsum-generator/lorem-ipsum-generaattori-fi.webp",
+      "imageAlt": "Lorem Ipsum -generaattori — Arteon",
+      "defaultSubject": "Palaute: Lorem Ipsum -generaattori"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Tutustu muihin työkaluihin"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

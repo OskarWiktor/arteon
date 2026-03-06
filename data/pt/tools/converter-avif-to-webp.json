@@ -3,13 +3,13 @@
   "locale": "pt",
   "metadata": {
     "title": "Conversor AVIF para WebP – AVIF WebP",
-    "description": "Converta ficheiros AVIF para WebP. Ampla compatibilidade com tamanho reduzido. Todo o processamento ocorre no navegador — os ficheiros não saem do dispositivo.",
+    "description": "Converta ficheiros AVIF para WebP. Ampla compatibilidade com tamanho reduzido. Todo o processamento ocorre no navegador - os ficheiros não saem do dispositivo.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-avif-para-webp"
   },
   "hero": {
     "title": "Conversor AVIF para WebP",
-    "description": "Converta ficheiros AVIF para WebP. Ampla compatibilidade com tamanho reduzido. Todo o processamento ocorre no navegador — os ficheiros não saem do dispositivo.",
+    "description": "Converta ficheiros AVIF para WebP. Ampla compatibilidade com tamanho reduzido. Todo o processamento ocorre no navegador - os ficheiros não saem do dispositivo.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Conversor AVIF para WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converta ficheiros AVIF para WebP. Ampla compatibilidade com tamanho reduzido. Todo o processamento ocorre no navegador — os ficheiros não saem do dispositivo.",
+      "description": "Converta ficheiros AVIF para WebP. Ampla compatibilidade com tamanho reduzido. Todo o processamento ocorre no navegador - os ficheiros não saem do dispositivo.",
       "featureList": ["AVIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Converter AVIF para WEBP", "Conversão de AVIF para WEBP", "Conversor AVIF para WEBP grátis"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Qualidade — o que escolher ao converter AVIF para WebP?",
-      "html": "<p class=\"text-mid\">O controle permite 60% a 95%. Mais alto = melhor qualidade mas arquivos maiores.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (padrao) — bom equilibrio para sites, blogs, artigos.</strong></li><li><strong>85–90% — para fotos de produtos, portfolios e galerias.</strong></li><li><strong>60–70% — quando minimizar tamanho e prioridade.</strong></li></ul><p class=\"text-mid mt-3\">Com 80% a diferenca visual entre AVIF original e WebP resultante e imperceptivel.</p>"
+      "title": "Qualidade - o que escolher ao converter AVIF para WebP?",
+      "html": "<p class=\"text-mid\">O controle permite 60% a 95%. Mais alto = melhor qualidade mas arquivos maiores.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (padrao) - bom equilibrio para sites, blogs, artigos.</strong></li><li><strong>85–90% - para fotos de produtos, portfolios e galerias.</strong></li><li><strong>60–70% - quando minimizar tamanho e prioridade.</strong></li></ul><p class=\"text-mid mt-3\">Com 80% a diferenca visual entre AVIF original e WebP resultante e imperceptivel.</p>"
     },
     {
       "type": "gap",

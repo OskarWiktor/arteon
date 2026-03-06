@@ -1,0 +1,273 @@
+{
+  "toolKey": "sqmToSqft",
+  "locale": "fi",
+  "metadata": {
+    "title": "M² jaloiksi² – muunnin",
+    "description": "Muunna neliömetrit neliöjaloiksi ja päinvastoin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/m2-neliojaloiksi-muunnin"
+  },
+  "hero": {
+    "title": "M² jaloiksi²",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/m2-neliojaloiksi-muunnin",
+      "label": "m² jaloiksi²"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "M² jaloiksi² – muunnin",
+      "alternateName": ["M² jaloiksi²"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna neliömetrit neliöjaloiksi ja päinvastoin.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin m² muunnetaan ft²:ksi?",
+      "html": "<p class=\"text-mid mb-4\">Neliömetri (m²) on metrisen järjestelmän standardi. Neliöjalkoja (ft²) käytetään USA:ssa/UK:ssa. 1 m² = 10,7639 ft².</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Square meters to square feet converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHome4Line",
+          "title": "Kiinteistöt",
+          "description": "USA käyttää ft²:ää. 80 m² = 861 ft²."
+        },
+        {
+          "icon": "RiBrushLine",
+          "title": "Sisustus",
+          "description": "Huone- ja kalustelaskelmat."
+        },
+        {
+          "icon": "RiBuildingLine",
+          "title": "Rakentaminen",
+          "description": "Vuokra USA:ssa ft²:nä."
+        },
+        {
+          "icon": "RiMoneyDollarCircleLine",
+          "title": "Rakentaminen",
+          "description": "Luvat m²:ssä tai ft²:ssä."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 ft² = 0,092903 m². Siis 1 m² = 10,7639 ft². Nyrkkisääntö: m² × 11.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 ft² = 0,092903 m². Siis 1 m² = 10,7639 ft². Nyrkkisääntö: m² × 11.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "m² vs ft²",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "m²"
+        },
+        {
+          "id": "unit2",
+          "name": "ft²",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Järjestelmä",
+          "values": {
+            "unit1": "Metrinen (SI)",
+            "unit2": "Imperiaalinen"
+          }
+        },
+        {
+          "name": "Perusta",
+          "values": {
+            "unit1": "1m × 1m",
+            "unit2": "0,3048m × 0,3048m"
+          }
+        },
+        {
+          "name": "Kiinteistöt",
+          "values": {
+            "unit1": "Kansainvälinen",
+            "unit2": "USA/UK"
+          }
+        },
+        {
+          "name": "1 m²",
+          "values": {
+            "unit1": "1 m²",
+            "unit2": "10,764 ft²"
+          }
+        },
+        {
+          "name": "Rakentaminen",
+          "values": {
+            "unit1": "Kansainvälinen",
+            "unit2": "USA/UK"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta ft² on 1 m²?",
+          "answer": "1 m² = 10,7639 ft²."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "m² jaloiksi² – Arteon",
+      "defaultSubject": "Palaute: sqm-to-sqft"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

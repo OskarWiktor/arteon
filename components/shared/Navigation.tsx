@@ -70,16 +70,14 @@ export default function Navigation() {
           <DesktopNavigation />
 
           <div className="hidden items-center gap-2 md:flex">
-            {isPl && (
-              <button
-                type="button"
-                onClick={() => setIsSearchOpen(true)}
-                className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                aria-label="Wyszukaj (Ctrl+K)"
-              >
-                <RiSearchLine className="h-5 w-5" aria-hidden="true" />
-              </button>
-            )}
+            <button
+              type="button"
+              onClick={() => setIsSearchOpen(true)}
+              className="text-primary hover:bg-primary-light focus-visible:ring-primary flex h-8 w-8 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+              aria-label={`${dict.search.ariaSearch} (Ctrl+K)`}
+            >
+              <RiSearchLine className="h-5 w-5" aria-hidden="true" />
+            </button>
 
             <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="text-light mr-3 cursor-pointer text-sm font-normal">
               #MadeWithNext.js
@@ -90,16 +88,14 @@ export default function Navigation() {
 
           <div className="flex items-center gap-1 lg:hidden">
             <LanguageSwitcher variant="mobile" />
-            {isPl && (
-              <button
-                type="button"
-                onClick={() => setIsSearchOpen(true)}
-                className="text-primary hover:bg-primary-light hover:text-primary focus-visible:ring-primary flex h-10 w-10 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2"
-                aria-label="Wyszukaj"
-              >
-                <RiSearchLine className="h-6 w-6" aria-hidden="true" />
-              </button>
-            )}
+            <button
+              type="button"
+              onClick={() => setIsSearchOpen(true)}
+              className="text-primary hover:bg-primary-light hover:text-primary focus-visible:ring-primary flex h-10 w-10 items-center justify-center rounded-lg transition focus:outline-none focus-visible:ring-2"
+              aria-label={dict.search.ariaSearch}
+            >
+              <RiSearchLine className="h-6 w-6" aria-hidden="true" />
+            </button>
             <IconButton onClick={toggleMenu} label={isOpen ? t.closeMenu : t.openMenu} aria-expanded={isOpen} size="md" className="block h-auto w-auto p-1">
               {isOpen ? <RiCloseLine width={24} height={24} aria-hidden="true" /> : <RiMenuLine width={24} height={24} aria-hidden="true" />}
             </IconButton>
@@ -108,7 +104,7 @@ export default function Navigation() {
 
         <MobileNavigation isOpen={isOpen} setIsOpen={setIsOpen} />
 
-        {isPl && <SearchDialog isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />}
+        <SearchDialog isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       </Wrapper>
     </header>
   );

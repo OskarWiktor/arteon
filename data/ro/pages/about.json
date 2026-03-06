@@ -6,12 +6,12 @@
   },
   "hero": {
     "title": "Instrumente gratuite create de o agenție creativă",
-    "description": "Instrumente în browser pentru imagini, SEO, culori, semnături e-mail și coduri QR — fără înregistrare, fără încărcare de fișiere, fără limite"
+    "description": "Instrumente în browser pentru imagini, SEO, culori, semnături e-mail și coduri QR - fără înregistrare, fără încărcare de fișiere, fără limite"
   },
   "whoWeAre": {
     "title": "Cine suntem",
     "p1": "Arteon este o agenție creativă poloneză. Pe lângă munca noastră comercială, dezvoltăm și întreținem o colecție crescândă de instrumente gratuite concepute pentru proprietari de afaceri, creatori de site-uri web, designeri, specialiști în marketing și oricine lucrează cu conținut digital.",
-    "p2": "Fiecare instrument pe care îl creăm rezolvă o problemă specifică și cotidiană: conversia imaginilor, verificarea contrastului culorilor, generarea de favicon-uri, crearea de coduri QR și multe altele. Scopul nostru este să construim un set complet de instrumente unde puteți găsi tot ce aveți nevoie într-un singur loc — fără a naviga între zeci de site-uri diferite."
+    "p2": "Fiecare instrument pe care îl creăm rezolvă o problemă specifică și cotidiană: conversia imaginilor, verificarea contrastului culorilor, generarea de favicon-uri, crearea de coduri QR și multe altele. Scopul nostru este să construim un set complet de instrumente unde puteți găsi tot ce aveți nevoie într-un singur loc - fără a naviga între zeci de site-uri diferite."
   },
   "whyFree": {
     "title": "De ce oferim instrumente gratuite",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Confidențialitate în primul rând",
-        "description": "Fișierele dvs. nu părăsesc niciodată dispozitivul. Toată procesarea are loc local în browser — nu trimitem datele dvs. la niciun server."
+        "description": "Fișierele dvs. nu părăsesc niciodată dispozitivul. Toată procesarea are loc local în browser - nu trimitem datele dvs. la niciun server."
       },
       {
         "title": "Create din nevoi reale",
@@ -61,7 +61,7 @@
   },
   "whatsNext": {
     "title": "Ce urmează",
-    "text": "Lucrăm activ la extinderea setului de instrumente. Instrumente noi sunt adăugate regulat pe baza feedback-ului utilizatorilor și a propriei noastre experiențe. Scopul este o platformă unică unde proprietarii de afaceri, designerii și dezvoltatorii au acces la fiecare instrument esențial — totul într-un singur loc, totul gratuit."
+    "text": "Lucrăm activ la extinderea setului de instrumente. Instrumente noi sunt adăugate regulat pe baza feedback-ului utilizatorilor și a propriei noastre experiențe. Scopul este o platformă unică unde proprietarii de afaceri, designerii și dezvoltatorii au acces la fiecare instrument esențial - totul într-un singur loc, totul gratuit."
   },
   "privacy": {
     "title": "Confidențialitate și securitate",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Încercați instrumentele noastre",
-    "description": "Instrumente gratuite — fără înregistrare, fără limite, fără încărcare de fișiere pe servere",
+    "description": "Instrumente gratuite - fără înregistrare, fără limite, fără încărcare de fișiere pe servere",
     "btnOne": "Mergi la instrumente",
     "btnTwo": "Contact"
   }

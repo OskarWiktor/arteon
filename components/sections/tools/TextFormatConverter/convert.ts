@@ -1,6 +1,13 @@
 import type { TextConversionType } from './types';
 
-export async function convertText(input: string, type: TextConversionType): Promise<string> {
+/** Strip BOM that editors / Excel may prepend to files */
+function stripBom(s: string): string {
+  return s.charCodeAt(0) === 0xfeff ? s.slice(1) : s;
+}
+
+export async function convertText(raw: string, type: TextConversionType): Promise<string> {
+  const input = stripBom(raw);
+
   switch (type) {
     case 'csvToJson': {
       return csvToJson(input);
@@ -17,6 +24,7 @@ export async function convertText(input: string, type: TextConversionType): Prom
     case 'yamlToJson': {
       const jsYaml = await import('js-yaml');
       const parsed = jsYaml.load(input);
+      if (parsed === undefined || parsed === null) return '{}';
       return JSON.stringify(parsed, null, 2);
     }
     case 'jsonToYaml': {
@@ -26,11 +34,34 @@ export async function convertText(input: string, type: TextConversionType): Prom
     }
     case 'markdownToHtml': {
       const { marked } = await import('marked');
+      marked.setOptions({ gfm: true, breaks: false });
       return await marked(input);
     }
     case 'htmlToMarkdown': {
       const TurndownService = (await import('turndown')).default;
-      const td = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced' });
+      const { gfm, tables, strikethrough } = await import('turndown-plugin-gfm');
+      const td = new TurndownService({
+        headingStyle: 'atx',
+        codeBlockStyle: 'fenced',
+        emDelimiter: '*',
+      });
+      td.use([gfm, tables, strikethrough]);
+
+      // Preserve content from block-level container elements (div, section, etc.)
+      // Without this, turndown silently drops content inside containers with classes
+      td.addRule('blockContainers', {
+        filter: ['div', 'section', 'article', 'aside', 'header', 'footer', 'main', 'nav', 'figure', 'figcaption', 'details', 'summary'],
+        replacement: (content: string) => {
+          return content ? `\n\n${content.trim()}\n\n` : '';
+        },
+      });
+
+      // Preserve content from inline elements (span, abbr, mark, etc.)
+      td.addRule('inlineElements', {
+        filter: ['span', 'abbr', 'cite', 'dfn', 'kbd', 'samp', 'var', 'mark', 'small', 'time', 'data', 'ins', 'del', 'sub', 'sup'],
+        replacement: (content: string) => content,
+      });
+
       return td.turndown(input);
     }
     default:
@@ -58,20 +89,21 @@ function detectSeparator(firstLine: string): string {
 
 function csvToJson(csv: string): string {
   const lines = csv.trim().split(/\r?\n/);
-  if (lines.length < 2) throw new Error('CSV must have at least a header row and one data row');
+  if (lines.length === 0 || !lines[0].trim()) throw new Error('CSV input is empty');
   const sep = detectSeparator(lines[0]);
   const headers = parseCsvLine(lines[0], sep);
-  const result = lines
-    .slice(1)
-    .filter((l) => l.trim())
-    .map((line) => {
-      const values = parseCsvLine(line, sep);
-      const obj: Record<string, string> = {};
-      headers.forEach((h, i) => {
-        obj[h] = values[i] ?? '';
-      });
-      return obj;
+  if (headers.length === 0 || headers.every((h) => !h)) throw new Error('CSV has no valid headers');
+  const dataLines = lines.slice(1).filter((l) => l.trim());
+  // Header-only CSV returns empty array
+  if (dataLines.length === 0) return JSON.stringify([], null, 2);
+  const result = dataLines.map((line) => {
+    const values = parseCsvLine(line, sep);
+    const obj: Record<string, string> = {};
+    headers.forEach((h, i) => {
+      obj[h] = values[i] ?? '';
     });
+    return obj;
+  });
   return JSON.stringify(result, null, 2);
 }
 
@@ -107,17 +139,41 @@ function parseCsvLine(line: string, sep: string): string[] {
 
 function jsonToCsv(json: string): string {
   const data = JSON.parse(json);
-  if (!Array.isArray(data) || data.length === 0) throw new Error('JSON must be an array of objects');
-  const headers = Object.keys(data[0]);
-  const lines = [headers.join(',')];
+  if (!Array.isArray(data)) throw new Error('JSON must be an array of objects');
+  if (data.length === 0) return '';
+  const first = data[0];
+  if (typeof first !== 'object' || first === null || Array.isArray(first)) {
+    throw new Error('JSON must be an array of objects');
+  }
+  // Collect all unique keys from every row
+  const headerSet = new Set<string>();
+  for (const row of data) {
+    if (typeof row === 'object' && row !== null && !Array.isArray(row)) {
+      Object.keys(row).forEach((k) => headerSet.add(k));
+    }
+  }
+  const headers = Array.from(headerSet);
+  const lines = [headers.map(escapeCsvField).join(',')];
   for (const row of data) {
     const values = headers.map((h) => {
-      const v = String(row[h] ?? '');
-      return v.includes(',') || v.includes('"') || v.includes('\n') ? `"${v.replace(/"/g, '""')}"` : v;
+      const raw = row[h];
+      // Nested objects/arrays → JSON string; null/undefined → empty
+      let v: string;
+      if (raw === null || raw === undefined) v = '';
+      else if (typeof raw === 'object') v = JSON.stringify(raw);
+      else v = String(raw);
+      return escapeCsvField(v);
     });
     lines.push(values.join(','));
   }
   return lines.join('\n');
+}
+
+function escapeCsvField(v: string): string {
+  if (v.includes(',') || v.includes('"') || v.includes('\n') || v.includes('\r') || v.includes(';')) {
+    return `"${v.replace(/"/g, '""')}"`;
+  }
+  return v;
 }
 
 // ---------------------------------------------------------------------------
@@ -178,14 +234,19 @@ function xmlNodeToObj(node: Element): Record<string, unknown> {
   return { [node.tagName]: obj };
 }
 
+function escapeXml(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
+}
+
 function jsonToXml(json: string): string {
   const obj = JSON.parse(json);
-  return objToXml(obj, 0);
+  const xml = objToXml(obj, 0);
+  return `<?xml version="1.0" encoding="UTF-8"?>\n${xml}`;
 }
 
 function objToXml(obj: unknown, indent: number): string {
   const pad = '  '.repeat(indent);
-  if (typeof obj !== 'object' || obj === null) return `${pad}${String(obj)}`;
+  if (typeof obj !== 'object' || obj === null) return `${pad}${escapeXml(String(obj))}`;
   if (Array.isArray(obj)) return obj.map((item) => objToXml(item, indent)).join('\n');
 
   const entries = Object.entries(obj as Record<string, unknown>);
@@ -204,7 +265,7 @@ function objToXml(obj: unknown, indent: number): string {
       const childEntries = Object.entries(value as Record<string, unknown>).filter(([k]) => !k.startsWith('@') && k !== '#text');
 
       if (childEntries.length === 0) {
-        lines.push(`${pad}<${key}${attrs}>${String(textContent ?? '')}</${key}>`);
+        lines.push(`${pad}<${key}${attrs}>${escapeXml(String(textContent ?? ''))}</${key}>`);
       } else {
         lines.push(`${pad}<${key}${attrs}>`);
         for (const [ck, cv] of childEntries) {
@@ -219,7 +280,7 @@ function objToXml(obj: unknown, indent: number): string {
             lines.push(objToXml(cv, indent + 2));
             lines.push(`${pad}  </${ck}>`);
           } else {
-            lines.push(`${pad}  <${ck}>${String(cv)}</${ck}>`);
+            lines.push(`${pad}  <${ck}>${escapeXml(String(cv))}</${ck}>`);
           }
         }
         lines.push(`${pad}</${key}>`);
@@ -231,11 +292,11 @@ function objToXml(obj: unknown, indent: number): string {
           lines.push(objToXml(item, indent + 1));
           lines.push(`${pad}</${key}>`);
         } else {
-          lines.push(`${pad}<${key}>${String(item)}</${key}>`);
+          lines.push(`${pad}<${key}>${escapeXml(String(item))}</${key}>`);
         }
       }
     } else {
-      lines.push(`${pad}<${key}>${String(value)}</${key}>`);
+      lines.push(`${pad}<${key}>${escapeXml(String(value))}</${key}>`);
     }
   }
 

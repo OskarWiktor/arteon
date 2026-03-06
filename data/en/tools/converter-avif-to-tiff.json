@@ -2,7 +2,7 @@
   "toolKey": "avifToTiff",
   "locale": "en",
   "metadata": {
-    "title": "AVIF to TIFF converter — AVIF TIFF",
+    "title": "AVIF to TIFF converter - AVIF TIFF",
     "description": "Convert AVIF files to TIFF format. Free, private, unlimited. Works in your browser.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/avif-to-tiff-converter"
@@ -43,12 +43,12 @@
         {
           "position": 2,
           "name": "Convert",
-          "text": "Click Convert — files are processed locally in your browser."
+          "text": "Click Convert - files are processed locally in your browser."
         },
         {
           "position": 3,
           "name": "Download your TIFF",
-          "text": "Download the converted TIFF file."
+          "text": "Download the converted TIFF file with a single click, or use bulk download to save all files as a ZIP archive."
         }
       ]
     }
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert AVIF to TIFF?",
-      "html": "<p class=\"text-mid mb-4\">AVIF is a widely used file format with broad compatibility across devices and software. However, depending on your use case, converting to TIFF can offer significant advantages — whether it's smaller file sizes, better quality preservation, broader platform support, or specific feature requirements.</p><p class=\"text-mid mb-4\">This free online converter transforms your AVIF files into TIFF format directly in the browser. No files are uploaded to any server — the entire conversion process happens locally on your device using modern browser APIs. This means your data stays private and secure at all times.</p><p class=\"text-mid\">You can convert as many files as you need with no daily limits, no registration, and no watermarks. Simply drag and drop your files, adjust quality settings if available, and download the results individually or all at once.</p>",
+      "html": "<p class=\"text-mid mb-4\">AVIF offers excellent compression for web images, but most professional print software, desktop publishing tools (InDesign, QuarkXPress), and medical imaging systems do not support it. TIFF is the industry standard for print production, archival storage, and workflows requiring lossless quality with CMYK support.</p><p class=\"text-mid mb-4\">TIFF supports lossless LZW compression, 16/32-bit color depth, CMYK color space, multiple layers, and embedded ICC profiles. Transparency from AVIF is preserved. TIFF files will be significantly larger than AVIF — this is expected, as TIFF prioritizes quality and compatibility over file size.</p><p class=\"text-mid mb-4\">Converting AVIF to TIFF is essential when preparing web images for offset printing, submitting files to stock photo agencies, or archiving images in a universally supported lossless format.</p><p class=\"text-mid\">This converter processes files locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "AVIF to TIFF conversion",
       "variant": "right"
@@ -82,12 +82,12 @@
         },
         {
           "title": "Convert",
-          "description": "Click Convert — files are processed locally in your browser.",
+          "description": "Click Convert - files are processed locally in your browser.",
           "icon": "RiSettings3Line"
         },
         {
           "title": "Download your TIFF",
-          "description": "Download the converted TIFF file.",
+          "description": "Download the converted TIFF file with a single click, or use bulk download to save all files as a ZIP archive.",
           "icon": "RiDownloadLine"
         }
       ]
@@ -104,22 +104,22 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Complete privacy",
-          "description": "Your files are processed entirely in your browser. Nothing is uploaded to any server."
+          "description": "Your files are processed entirely in your browser using modern APIs. Nothing is uploaded to any server — the conversion works even offline after the page loads."
         },
         {
           "icon": "RiInfinityLine",
           "title": "No limits",
-          "description": "Convert as many files as you need. No daily limits, no file size restrictions, no watermarks."
+          "description": "Convert as many files as you need with no daily limits, no file size restrictions, and no watermarks. All output files are clean and ready for professional use."
         },
         {
           "icon": "RiImageEditLine",
           "title": "Quality control",
-          "description": "Adjust settings to find the perfect balance between file size and quality."
+          "description": "TIFF output preserves full quality from the AVIF source. The format supports lossless LZW compression, so your images maintain every detail for print production."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Instant conversion",
-          "description": "All processing happens locally using modern browser APIs — fast and works offline after loading."
+          "description": "All processing happens locally using modern browser APIs. Results are ready in seconds — no waiting for server-side processing or queue positions."
         }
       ]
     },
@@ -247,6 +247,24 @@
       "variant": "line"
     },
     {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "What to expect when converting AVIF to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">AVIF uses lossy compression while TIFF is a lossless format. The conversion preserves the pixel data from the decoded AVIF exactly as-is in the TIFF output. No additional quality loss occurs during conversion.</p><p class=\"text-mid mb-4\">TIFF files will be significantly larger than the AVIF originals — this is expected. A 200 KB AVIF file may become 15–25 MB in TIFF because TIFF stores every pixel without compression (or with lossless LZW compression).</p><p class=\"text-mid\">For the best results, use high-quality AVIF source files. If the original AVIF was heavily compressed, the quality limitations will carry over to the TIFF output. TIFF cannot recover detail that was lost during AVIF compression.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When should you keep AVIF instead of converting to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">TIFF is designed for print and archival workflows. If your images are intended for web delivery, social media, or digital-only use, AVIF is the better choice — files are dramatically smaller and load faster in browsers.</p><p class=\"text-mid mb-4\">Convert to TIFF only when the target system specifically requires it: offset printing, desktop publishing (InDesign, QuarkXPress), medical imaging software, or professional photo archival systems. For general editing, PNG is a lighter lossless alternative.</p><p class=\"text-mid\">If you need to share images digitally while maintaining quality, consider WebP or PNG as intermediate formats. TIFF should be reserved for professional print workflows where its CMYK support and ICC profiles are needed.</p>"
+    },
+    {
       "type": "faq",
       "title": "Frequently asked questions about AVIF to TIFF conversion",
       "openByDefault": 0,
@@ -272,8 +290,8 @@
           "answer": "Yes. All conversion happens locally in your browser using the Canvas API. Files are never sent to any external server. When you close the page, data is automatically cleared."
         },
         {
-          "question": "Can I convert multiple AVIF files at once?",
-          "answer": "Yes. The tool supports batch conversion with no file limit. Drag all files onto the converter or select them from your device."
+          "question": "Does converting AVIF to TIFF change the image resolution?",
+          "answer": "No. The conversion preserves the original pixel dimensions. A TIFF file will have the exact same width and height as the original AVIF — only the file format changes, not the image content."
         },
         {
           "question": "Is TIFF supported by all browsers?",

@@ -2,7 +2,7 @@
   "toolKey": "xmlToJson",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník XML na JSON — XML JSON",
+    "title": "Převodník XML na JSON - XML JSON",
     "description": "Převeďte XML do formátu JSON. Automatické parsování a formátování. Zdarma.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-xml-na-json"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Proč převádět XML na JSON?",
-      "html": "<p class=\"text-mid mb-4\">XML je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody — mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase XML soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server — cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
+      "html": "<p class=\"text-mid mb-4\">XML je sirce pouzivany format souboru s velkou kompatibilitou. Podle pripadu muze konverze na JSON prinest vyznamne vyhody - mensi soubory, lepsi kvalitu nebo sirsi podporu platform.</p><p class=\"text-mid mb-4\">Tento bezplatny online konvertor prevadi vase XML soubory do formatu JSON primo v prohlizeci. Zadne soubory se nenahravaji na server - cely proces probiha lokalne na vasem zarizeni.</p><p class=\"text-mid\">Konvertujte kolik souboru potrebujete bez dennich limitu, bez registrace a bez vodoznaku. Pretahnete soubory, upravte kvalitu a stahnete vysledky.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kolik usetrite konverzi XML na JSON?",
-      "html": "<p class=\"text-mid mb-4\">Uspory zavisi na typu souboru a jeho kompresi:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto z fotoaparatu</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Produktovy obrazek</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Uspora: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Skutecne uspory se lisi podle obsahu a nastaveni.</p>"
+      "title": "Jak funguje konverze z XML do JSON?",
+      "html": "<p class=\"text-mid mb-4\">XML pou\u017e\u00edv\u00e1 hierarchii zalo\u017eenou na taz\u00edch s otev\u00edrac\u00edmi a uzav\u00edrac\u00edmi elementy, zat\u00edmco JSON pou\u017e\u00edv\u00e1 lehk\u00e9 slo\u017een\u00e9 z\u00e1vorky a p\u00e1ry kl\u00ed\u010d-hodnota. Konvertor analyzuje strom XML dokumentu a p\u0159i\u0159ad\u00ed ka\u017ed\u00fd element k odpov\u00eddaj\u00edc\u00ed JSON struktu\u0159e.</p><p class=\"text-mid mb-4\">XML elementy se stanou JSON objekty, opakovan\u00e9 elementy se stejn\u00fdm n\u00e1zvem tagu se stanou JSON poli a textov\u00fd obsah se stane \u0159et\u011bzcov\u00fdmi hodnotami. XML atributy se zobraz\u00ed jako speci\u00e1ln\u00ed vlastnosti (s @-prefixem) v JSON objektu.</p><p class=\"text-mid\">JSON je preferovan\u00fd form\u00e1t pro modern\u00ed webov\u00e1 API, JavaScript aplikace a NoSQL datab\u00e1ze. Konverze prob\u00edh\u00e1 zcela ve va\u0161em prohl\u00ed\u017ee\u010di.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tipy pro konverzi XML na JSON",
-      "description": "Tipy jak se vyhnout problemum:",
+      "title": "Tipy pro konverzi z XML do JSON",
+      "description": "N\u011bkolik tip\u016f, jak se vyhnout b\u011b\u017en\u00fdm probl\u00e9m\u016fm:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Velmi velke soubory",
-          "description": "Obrazky nad 4000×4000 px mohou byt pomalejsi. Rozdelete na davky po 10–20."
+          "icon": "RiCodeLine",
+          "title": "XML atributy",
+          "description": "XML atributy se p\u0159ev\u00e1d\u011bj\u00ed na JSON vlastnosti s @-prefixem. Nap\u0159. &lt;item id='1'&gt; se stane {\"@id\": \"1\"}."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Jiz komprimovane",
-          "description": "Pokud byl XML jiz silne komprimovany, konverze na JSON nemusi usetrit mnoho."
+          "icon": "RiNodeTree",
+          "title": "Jmenn\u00e9 prostory",
+          "description": "XML jmenn\u00e9 prostory se zachov\u00e1vaj\u00ed v JSON v\u00fdstupu jako sou\u010d\u00e1st n\u00e1zv\u016f element\u016f. Slo\u017eit\u00e9 deklarace jmenn\u00fdch prostor\u016f mohou vy\u017eadovat ru\u010dn\u00ed \u00fapravu."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Pruhlednost",
-          "description": "JSON nepodporuje pruhlednost. Pruhledne oblasti budou bile. Pouzijte PNG nebo WebP."
+          "icon": "RiFileTextLine",
+          "title": "Sm\u00ed\u0161en\u00fd obsah",
+          "description": "XML elementy obsahuj\u00edc\u00ed text i d\u011btsk\u00e9 elementy se zpracuj\u00ed um\u00edst\u011bn\u00edm textu do speci\u00e1ln\u00ed vlastnosti #text v JSON."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Uchovejte originaly",
-          "description": "Ztratova konverze je nevratna. Uchovejte kopie XML souboru."
+          "icon": "RiFileCodeLine",
+          "title": "CDATA sekce",
+          "description": "CDATA sekce v XML se p\u0159evedou na b\u011b\u017en\u00e9 \u0159et\u011bzcov\u00e9 hodnoty v JSON. CDATA ob\u00e1lka se odstran\u00ed a obsah z\u016fstane nedot\u010den."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Ano, funguje na jakémkoli zařízení s moderním webovým prohlížečem."
         },
         {
-          "question": "Je konverze XML na JSON bezpecna?",
-          "answer": "Ano. Vse probiha lokalne v prohlizeci pres Canvas API. Nic se neodesila na server."
+          "question": "Je konverze z XML do JSON bezpe\u010dn\u00e1?",
+          "answer": "Ano. Ve\u0161ker\u00e1 konverze prob\u00edh\u00e1 lok\u00e1ln\u011b ve va\u0161em prohl\u00ed\u017ee\u010di. \u017d\u00e1dn\u00e1 data se neodes\u00edlaj\u00ed na server."
         },
         {
-          "question": "Mohu konvertovat vice souboru XML?",
-          "answer": "Ano. Davkova konverze bez limitu. Pretahnete soubory do konvertoru."
+          "question": "Ztr\u00e1cej\u00ed se XML atributy p\u0159i konverzi?",
+          "answer": "Ne. XML atributy se zachov\u00e1vaj\u00ed v JSON v\u00fdstupu jako vlastnosti s @-prefixem. Nap\u0159. id='123' se stane \"@id\": \"123\" v JSON objektu."
         },
         {
-          "question": "Je JSON podporovan vsemi prohlizeci?",
-          "answer": "JSON je podporovan v Chrome, Firefox, Safari, Edge a Opera."
+          "question": "Mohu pou\u017e\u00edt JSON v\u00fdstup v JavaScriptu?",
+          "answer": "Ano. V\u00fdstup je standardn\u00ed JSON, kter\u00fd lze pou\u017e\u00edt s JSON.parse() v JavaScriptu nebo p\u0159\u00edmo v jak\u00e9mkoli programovac\u00edm jazyce, API nebo datab\u00e1zi."
         }
       ]
     },

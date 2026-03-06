@@ -1,0 +1,277 @@
+{
+  "toolKey": "mmToInches",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur millimètres en pouces",
+    "description": "Convertissez mm en pouces et vice versa. Pour l'ingénierie, l'impression 3D et la bijouterie.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-mm-en-pouces"
+  },
+  "hero": {
+    "title": "Convertir millimètres en pouces",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-mm-en-pouces",
+      "label": "mm en pouces"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur millimètres en pouces",
+      "alternateName": ["Convertir millimètres en pouces"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez mm en pouces et vice versa. Pour l'ingénierie, l'impression 3D et la bijouterie.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des millimètres en pouces ?",
+      "html": "<p class=\"text-mid mb-4\">Le millimètre (mm) est une unité métrique égale à 1/1000 de mètre. Le pouce est une unité impériale égale à exactement 25,4 mm. Cette conversion est importante pour l’ingénierie, la fabrication, l’impression 3D et le travail de précision.</p><p class=\"text-mid mb-4\">Exemples : 10 mm = 0,394″, 25,4 mm = 1″ (exact), 50 mm = 1,969″.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur millimètres en pouces – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiToolsLine",
+          "title": "Ingénierie et CNC",
+          "description": "Les plans techniques utilisent mm ou pouces. Convertissez tolérances et dimensions."
+        },
+        {
+          "icon": "RiPrinterLine",
+          "title": "Impression 3D",
+          "description": "Diamètre de buse (0,4 mm = 0,016″), hauteurs de couche et tailles de filament."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Bijouterie",
+          "description": "Tailles de bagues, dimensions de pierres précieuses et calibres de fil."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Plomberie",
+          "description": "Tailles de tuyaux en pouces (USA) ou mm (métrique). 1/2″ = 12,7 mm."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Définition exacte : 1 pouce = 25,4 mm. Pour convertir mm en pouces, divisez par 25,4.</p><p class=\"text-mid mb-4\">Exemple : 50 mm / 25,4 = 1,9685 pouces.</p><p class=\"text-mid\">Fractions : 1/8″ = 3,175 mm, 1/4″ = 6,35 mm, 1/2″ = 12,7 mm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Définition exacte : 1 pouce = 25,4 mm. Pour convertir mm en pouces, divisez par 25,4.</p><p class=\"text-mid mb-4\">Exemple : 50 mm / 25,4 = 1,9685 pouces.</p><p class=\"text-mid\">Fractions : 1/8″ = 3,175 mm, 1/4″ = 6,35 mm, 1/2″ = 12,7 mm.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Millimètre vs Pouce – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Millimètre (mm)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pouce (in)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Système",
+          "values": {
+            "unit1": "Métrique (SI)",
+            "unit2": "Impérial"
+          }
+        },
+        {
+          "name": "Valeur de base",
+          "values": {
+            "unit1": "1/1000 mètre",
+            "unit2": "25,4 mm"
+          }
+        },
+        {
+          "name": "Ingénierie",
+          "values": {
+            "unit1": "Standard international",
+            "unit2": "Standard USA/UK"
+          }
+        },
+        {
+          "name": "Précision",
+          "values": {
+            "unit1": "0,01 mm typique",
+            "unit2": "1/1000″ typique"
+          }
+        },
+        {
+          "name": "Plomberie",
+          "values": {
+            "unit1": "Tuyaux métriques",
+            "unit2": "Tuyaux NPT/BSP"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de mm fait 1 pouce ?",
+          "answer": "Exactement 25,4 mm. C’est une définition exacte."
+        },
+        {
+          "question": "Combien de pouces font 10 mm ?",
+          "answer": "10 mm = 0,3937 pouces."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "mm na cale – Arteon",
+      "defaultSubject": "Feedback : mm-to-inches"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

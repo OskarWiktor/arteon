@@ -1,0 +1,281 @@
+{
+  "toolKey": "mbpsToMBs",
+  "locale": "el",
+  "metadata": {
+    "title": "Mbps σε MB/s – μετατροπέας",
+    "description": "Μετατρέψτε Mbps σε MB/s και αντίστροφα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-mbps-se-mbs"
+  },
+  "hero": {
+    "title": "Mbps σε MB/s",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-mbps-se-mbs",
+      "label": "Mbps σε MB/s"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Mbps σε MB/s – μετατροπέας",
+      "alternateName": ["Mbps σε MB/s"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε Mbps σε MB/s και αντίστροφα.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: Mbps σε MB/s?",
+      "html": "<p class=\"text-mid mb-4\">Internet speeds are advertised in megabits per second (Mbps), but file sizes and download speeds are typically shown in megabytes per second (MB/s). 1 byte = 8 bits, so 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">This means a \"100 Mbps\" connection downloads at a maximum of 12.5 MB/s. A \"1 Gbps\" connection = 125 MB/s.</p><p class=\"text-mid mb-4\">This conversion is essential for estimating download times, choosing an internet plan, and understanding the difference between advertised and actual speeds.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps σε MB/s – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szacowanie pobierania",
+          "description": "100 Mbps = plik 1 GB w ok. 80 sekund."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Internet",
+          "description": "Porównaj oferty operatorów w realnych MB/s."
+        },
+        {
+          "icon": "RiVideoLine",
+          "title": "Streaming",
+          "description": "Netflix 4K wymaga 25 Mbps = 3,1 MB/s."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Hosting",
+          "description": "Transfer serwera: 1 TB/miesiąc = ile Mbps potrzebujesz?"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bits. Therefore: Mbps ÷ 8 = MB/s, and MB/s × 8 = Mbps.</p><p class=\"text-mid mb-4\">Example: 200 Mbps ÷ 8 = 25 MB/s. This is the theoretical maximum download speed.</p><p class=\"text-mid\">Actual speeds are typically 70–90% of the advertised maximum due to protocol overhead, network congestion, and other factors.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>50 Mbps = 6.25 MB/s. Good for streaming, browsing, video calls.</li><li>100 Mbps = 12.5 MB/s. Good for multiple devices, 4K streaming.</li><li>500 Mbps = 62.5 MB/s. Good for large downloads, gaming.</li><li>1 Gbps = 125 MB/s. 1 GB downloads in ~8 seconds.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mbps vs MB/s – σύγκριση",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Megabit/s (Mbps)"
+        },
+        {
+          "id": "unit2",
+          "name": "Megabyte/s (MB/s)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Unit",
+          "values": {
+            "unit1": "Bits",
+            "unit2": "Bytes"
+          }
+        },
+        {
+          "name": "Ratio",
+          "values": {
+            "unit1": "8 Mbps",
+            "unit2": "= 1 MB/s"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "ISP speeds, bandwidth",
+            "unit2": "File downloads, transfers"
+          }
+        },
+        {
+          "name": "100 Mbps",
+          "values": {
+            "unit1": "100 Mbps",
+            "unit2": "12.5 MB/s"
+          }
+        },
+        {
+          "name": "1 Gbps",
+          "values": {
+            "unit1": "1,000 Mbps",
+            "unit2": "125 MB/s"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Πόσα MB/s sind 100 Mbps?",
+          "answer": "100 Mbps = 12,5 MB/s. Teilen Sie Mbps durch 8."
+        },
+        {
+          "question": "Γιατί ist mein Download langsamer als beworben?",
+          "answer": "ISPs werben in Mbps (Bits), Downloads zeigen MB/s (Bytes). 100 Mbps = max 12,5 MB/s. Tatsächliche Geschwindigkeit ist typischerweise 70–90% davon."
+        },
+        {
+          "question": "Πόσο μακρύe dauert 1 GB Download bei 100 Mbps?",
+          "answer": "1 GB = 1.000 MB. Bei 12,5 MB/s: ~80 Sekunden. In der Praxis ca. 90–100 Sekunden."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ναι. Όλοι οι υπολογισμοί γίνονται στον browser σας."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps σε MB/s – Arteon",
+      "defaultSubject": "Feedback: mbps-to-mbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

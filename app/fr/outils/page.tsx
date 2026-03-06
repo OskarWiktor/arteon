@@ -683,6 +683,23 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Générateur Lorem Ipsum',
+              topImageAlt: 'Générateur Lorem Ipsum Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/generateur-lorem-ipsum-fr.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Générez du texte de remplissage en 8 styles et 9 modes. Lorem Ipsum, Hipster, Business, Bacon et plus. Copiez en texte ou HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fr/outils/generateur-lorem-ipsum">
+                      Ouvrir l'outil
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
           ]}
         />
 
@@ -806,7 +823,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Convertisseurs de formats d'image"
-          description="Convertisseurs d'images en ligne — changez de format entre JPG, PNG, WebP, SVG, BMP et GIF. Conversion dans le navigateur, sans envoi de fichiers."
+          description="Convertisseurs d'images en ligne - changez de format entre JPG, PNG, WebP, SVG, BMP et GIF. Conversion dans le navigateur, sans envoi de fichiers."
           grid="three"
           items={[
             {
@@ -905,16 +922,25 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Convertisseurs de données"
+          description="Convertisseurs de formats de données en ligne — convertissez entre CSV, JSON, XML, YAML, Markdown et HTML. Traitement dans le navigateur."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Convertisseur SVG en PNG',
-              topImageAlt: 'Convertisseur SVG en PNG Arteon',
+              title: 'CSV en JSON',
+              topImageAlt: 'CSV en JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convertissez vos graphiques vectoriels SVG en PNG. Idéal pour documents et réseaux sociaux.</p>
+                  <p>Convertissez CSV en format JSON. Détection automatique des séparateurs et formatage.</p>
                   <div className="mt-4">
-                    <Button arrow link="/fr/outils/convertisseur-svg-en-png">
+                    <Button arrow link="/fr/outils/convertisseur-csv-en-json">
                       Ouvrir l'outil
                     </Button>
                   </div>
@@ -923,14 +949,14 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Convertisseur SVG en JPG',
-              topImageAlt: 'Convertisseur SVG en JPG Arteon',
+              title: 'JSON en CSV',
+              topImageAlt: 'JSON en CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convertissez vos graphiques SVG en JPG compact. Fichier réduit, compatibilité totale.</p>
+                  <p>Convertissez des données JSON en format CSV. Traitement dans le navigateur.</p>
                   <div className="mt-4">
-                    <Button arrow link="/fr/outils/convertisseur-svg-en-jpg">
+                    <Button arrow link="/fr/outils/convertisseur-json-en-csv">
                       Ouvrir l'outil
                     </Button>
                   </div>
@@ -939,14 +965,62 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'Convertisseur BMP en JPG',
-              topImageAlt: 'Convertisseur BMP en JPG Arteon',
+              title: 'XML en JSON',
+              topImageAlt: 'XML en JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Convertissez vos fichiers BMP non compressés en JPG léger. Réduction massive de taille.</p>
+                  <p>Convertissez des données XML en JSON. Conversion avec validation de structure.</p>
                   <div className="mt-4">
-                    <Button arrow link="/fr/outils/convertisseur-bmp-en-jpg">
+                    <Button arrow link="/fr/outils/convertisseur-xml-en-json">
+                      Ouvrir l'outil
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON en XML',
+              topImageAlt: 'JSON en XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertissez des données JSON en XML valide. Conversion avec formatage.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fr/outils/convertisseur-json-en-xml">
+                      Ouvrir l'outil
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML en JSON',
+              topImageAlt: 'YAML en JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertissez la configuration YAML en JSON. Validation et formatage.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fr/outils/convertisseur-yaml-en-json">
+                      Ouvrir l'outil
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON en YAML',
+              topImageAlt: 'JSON en YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Convertissez des données JSON en YAML lisible. Traitement dans le navigateur.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/fr/outils/convertisseur-json-en-yaml">
                       Ouvrir l'outil
                     </Button>
                   </div>

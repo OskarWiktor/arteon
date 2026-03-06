@@ -1,0 +1,273 @@
+{
+  "toolKey": "inchesToPxDpi",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de polegadas para pixels (DPI)",
+    "description": "Converta polegadas para pixels em qualquer resolução DPI. Para preparação de imagens.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-polegadas-para-px"
+  },
+  "hero": {
+    "title": "Converter polegadas para pixels",
+    "description": "Este conversor converte instantaneamente. Introduza um valor e o resultado aparece imediatamente.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-polegadas-para-px",
+      "label": "in para px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de polegadas para pixels (DPI)",
+      "alternateName": ["Converter polegadas para pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converta polegadas para pixels em qualquer resolução DPI. Para preparação de imagens.",
+      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+    },
+    "howTo": {
+      "name": "Como usar o conversor",
+      "description": "Guia rápido para usar o conversor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduzir valor",
+          "text": "Escreva um número no campo de entrada à esquerda."
+        },
+        {
+          "name": "Ler o resultado",
+          "text": "O resultado da conversão aparece instantaneamente no campo ao lado."
+        },
+        {
+          "name": "Copiar ou inverter",
+          "text": "Clique em Copiar resultado ou em Inverter para converter na direção oposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa converter polegadas em pixels?",
+      "html": "<p class=\"text-mid mb-4\">Os formatos de papel dos EUA usam polegadas. Para dados de impressão digitais: Pixels = polegadas × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) a 300 DPI = 2.550 × 3.300 pixels. Foto 4 × 6″ a 300 DPI = 1.200 × 1.800 pixels.</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Conversor de polegadas para pixels (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o conversor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Insira um valor",
+          "description": "Digite um número no campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leia o resultado",
+          "description": "O resultado aparece instantaneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copie ou inverta",
+          "description": "Copie o resultado ou inverta a direção de conversão.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando este conversor é útil?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Impressões fotográficas",
+          "description": "Padrão: 4×6″ = 1.200×1.800 px a 300 DPI."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Formatos de papel dos EUA",
+          "description": "Letter (8,5×11″) a 300 DPI = 2.550×3.300 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Banners e pôsteres",
+          "description": "Pôster 24×36″ a 150 DPI = 3.600×5.400 px."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Telas",
+          "description": "Densidade: monitor 27″ 4K = 163 PPI."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que diferencia este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os cálculos são executados localmente no seu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados em tempo real",
+          "description": "O resultado atualiza enquanto digita."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversão bidirecional",
+          "description": "Converta em ambas as direções com um clique."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela de referência",
+          "description": "Tabela com valores comuns e descrições contextuais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula simples: Pixels = polegadas × DPI. A 300 DPI: 1 polegada = 300 pixels.</p><p class=\"text-mid\">Para encontrar o DPI necessário: DPI = Pixels / polegadas.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula simples: Pixels = polegadas × DPI. A 300 DPI: 1 polegada = 300 pixels.</p><p class=\"text-mid\">Para encontrar o DPI necessário: DPI = Pixels / polegadas.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Formatos de impressão comuns a 300 DPI",
+      "featureLabel": "Formato",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Polegadas"
+        },
+        {
+          "id": "unit2",
+          "name": "Pixels (300 DPI)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Foto passaporte",
+          "values": {
+            "unit1": "2,5 × 3,5″",
+            "unit2": "750 × 1.050"
+          }
+        },
+        {
+          "name": "Foto 4×6",
+          "values": {
+            "unit1": "4 × 6″",
+            "unit2": "1.200 × 1.800"
+          }
+        },
+        {
+          "name": "Foto 8×10",
+          "values": {
+            "unit1": "8 × 10″",
+            "unit2": "2.400 × 3.000"
+          }
+        },
+        {
+          "name": "US Letter",
+          "values": {
+            "unit1": "8,5 × 11″",
+            "unit2": "2.550 × 3.300"
+          }
+        },
+        {
+          "name": "Pôster (24×36)",
+          "values": {
+            "unit1": "24 × 36″",
+            "unit2": "7.200 × 10.800"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Quantos pixels é 1 polegada a 300 DPI?",
+          "answer": "1 polegada a 300 DPI = 300 pixels."
+        },
+        {
+          "question": "Os cálculos são feitos localmente?",
+          "answer": "Sim. Todos os cálculos são executados no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "cale na px – Arteon",
+      "defaultSubject": "Feedback: inches-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

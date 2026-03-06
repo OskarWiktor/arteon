@@ -2,7 +2,7 @@
   "toolKey": "xmlToJson",
   "locale": "hu",
   "metadata": {
-    "title": "XML JSON konverter — XML JSON",
+    "title": "XML JSON konverter - XML JSON",
     "description": "XML konvertálása JSON formátumba. Automatikus elemzés és formázás. Ingyenes.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/xml-json-konverter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miért érdemes XML-t JSON-vé konvertálni?",
-      "html": "<p class=\"text-mid mb-4\">A XML szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a JSON formaba torteno konvertalas jelentos elonyoket kinaalhat — kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a XML fajlokat JSON formatumba. Semmilyen fajl nem kerul feltoltesre — az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
+      "html": "<p class=\"text-mid mb-4\">A XML szeles korben hasznalt fajlformatum nagy kompatibilitassal. A felhasznalasi esettol fuggoen a JSON formaba torteno konvertalas jelentos elonyoket kinaalhat - kisebb fajlok, jobb minoseg vagy szelessbb platformtamogatas.</p><p class=\"text-mid mb-4\">Ez az ingyenes online konvertalo kozvetlenul a bongeszoben alakitja at a XML fajlokat JSON formatumba. Semmilyen fajl nem kerul feltoltesre - az egesz folyamat helyben tortenik az Onn eszkozeen.</p><p class=\"text-mid\">Konvertaljon annyi fajlt, amennyit szeretne, napi limit, regisztracio es vizjel nelkul. Huzza be a fajlokat, allitsa be a minoseg, es toltse le az eredmenyeket.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
       "imageAlt": "XML to JSON conversion",
       "variant": "right"
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Mennyit takarit meg XML JSON konvertalasaval?",
-      "html": "<p class=\"text-mid mb-4\">A megtakaritas a forras tipusatol es tomoritesitol fugg:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Fenykep</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Termekkep</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kepernykep / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Megtakaritas: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">A tenyleges megtakaritas valtozhat tartalom es beallitasok szerint.</p>"
+      "title": "Hogyan m\u0171k\u00f6dik az XML JSON konvert\u00e1l\u00e1s?",
+      "html": "<p class=\"text-mid mb-4\">Az XML c\u00edmke-alap\u00fa hierarchi\u00e1t haszn\u00e1l nyit\u00f3 \u00e9s z\u00e1r\u00f3 elemekkel, m\u00edg a JSON k\u00f6nny\u0171 kapcsos z\u00e1r\u00f3jeleket \u00e9s kulcs-\u00e9rt\u00e9k p\u00e1rokat haszn\u00e1l. A konvert\u00e1l\u00f3 elemzi az XML dokumentum f\u00e1j\u00e1t \u00e9s minden elemet a megfelel\u0151 JSON strukt\u00far\u00e1hoz rendel.</p><p class=\"text-mid mb-4\">Az XML elemek JSON objektumokk\u00e1, az ism\u00e9tl\u0151d\u0151 azonos nev\u0171 elemek JSON t\u00f6mb\u00f6kk\u00e9, a sz\u00f6veges tartalom pedig karakterl\u00e1nc \u00e9rt\u00e9kekk\u00e9 v\u00e1lik. Az XML attrib\u00fatumok speci\u00e1lis tulajdons\u00e1gokk\u00e9nt (@-el\u0151taggal) jelennek meg a JSON objektumban.</p><p class=\"text-mid\">A JSON a prefer\u00e1lt form\u00e1tum modern webes API-khoz, JavaScript alkalmaz\u00e1sokhoz \u00e9s NoSQL adatb\u00e1zisokhoz. A konvert\u00e1l\u00e1s teljes eg\u00e9sz\u00e9ben a b\u00f6ng\u00e9sz\u0151dben t\u00f6rt\u00e9nik.</p>"
     },
     {
       "type": "gap",
@@ -202,29 +202,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tippek XML JSON konvertalasahoz",
-      "description": "Tippek a gyakori problemaak elkerulesere:",
+      "title": "Tippek az XML JSON konvert\u00e1l\u00e1shoz",
+      "description": "N\u00e9h\u00e1ny tipp a gyakori probl\u00e9m\u00e1k elker\u00fcl\u00e9s\u00e9re:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Nagyon nagy fajlok",
-          "description": "4000×4000 px feletti kepek lassabbak lehetnek. Ossza 10–20 darabos kotetekre."
+          "icon": "RiCodeLine",
+          "title": "XML attrib\u00fatumok",
+          "description": "Az XML attrib\u00fatumok @-el\u0151tag\u00fa JSON tulajdons\u00e1gokk\u00e1 konvert\u00e1l\u00f3dnak. Pl. &lt;item id='1'&gt; ebb\u0151l lesz: {\"@id\": \"1\"}."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Mar tomoriteett fajlok",
-          "description": "Ha a XML mar erosen tomoriteett volt, JSON konvertalas keveset takarithat."
+          "icon": "RiNodeTree",
+          "title": "N\u00e9vterek",
+          "description": "Az XML n\u00e9vterek meg\u0151rz\u0151dnek a JSON kimenetben az elemnevek r\u00e9szek\u00e9nt. Az \u00f6sszetett n\u00e9vt\u00e9r-deklar\u00e1ci\u00f3k k\u00e9zi m\u00f3dos\u00edt\u00e1st ig\u00e9nyelhetnek."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Atlatszosag",
-          "description": "JSON nem tamogatja az atlatszosagot. Feher hatter lesz. Hasznaljon PNG-t vagy WebP-t."
+          "icon": "RiFileTextLine",
+          "title": "Kevert tartalom",
+          "description": "A sz\u00f6veget \u00e9s gyermekelemeket egyar\u00e1nt tartalmaz\u00f3 XML elemek kezel\u00e9se a sz\u00f6veg #text speci\u00e1lis tulajdons\u00e1gba helyez\u00e9s\u00e9vel t\u00f6rt\u00e9nik a JSON-ban."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Orizze meg az eredetiket",
-          "description": "A veszteseges konvertalas visszafordithatatlan. Orizze meg a XML fajlok masolatait."
+          "icon": "RiFileCodeLine",
+          "title": "CDATA szekci\u00f3k",
+          "description": "A CDATA szekci\u00f3k az XML-ben hagyom\u00e1nyos karakterl\u00e1nc \u00e9rt\u00e9kekk\u00e9 konvert\u00e1l\u00f3dnak a JSON-ban. A CDATA burkolat elt\u00e1vol\u00edt\u00e1sra ker\u00fcl \u00e9s a tartalom \u00e9rintetl\u00e9n marad."
         }
       ]
     },
@@ -254,16 +254,16 @@
           "answer": "Igen, minden modern böngészővel rendelkező eszközön működik."
         },
         {
-          "question": "Biztonsagos XML JSON konvertalasa?",
-          "answer": "Igen. Minden helyben tortenik a bongeszoben Canvas API-val. Semmi nem kerul szerverre."
+          "question": "Biztons\u00e1gos az XML JSON konvert\u00e1l\u00e1s?",
+          "answer": "Igen. Az eg\u00e9sz konvert\u00e1l\u00e1s helyben t\u00f6rt\u00e9nik a b\u00f6ng\u00e9sz\u0151dben. Semmilyen adat nem ker\u00fcl szerverre."
         },
         {
-          "question": "Konvertalhatok tobb XML fajlt egyszerre?",
-          "answer": "Igen. Kotegelt konvertalas limit nelkul. Huzza a fajlokat a konvertalora."
+          "question": "Elvesznek az XML attrib\u00fatumok a konvert\u00e1l\u00e1skor?",
+          "answer": "Nem. Az XML attrib\u00fatumok meg\u0151rz\u0151dnek a JSON kimenetben @-el\u0151tag\u00fa tulajdons\u00e1gokk\u00e9nt. Pl. id='123' ebb\u0151l lesz: \"@id\": \"123\" a JSON objektumban."
         },
         {
-          "question": "Minden bongeszo tamogatja a JSON-t?",
-          "answer": "JSON-t a Chrome, Firefox, Safari, Edge es Opera tamogatja."
+          "question": "Haszn\u00e1lhatom a JSON kimenetet JavaScriptben?",
+          "answer": "Igen. A kimenet szabv\u00e1nyos JSON, amely haszn\u00e1lhat\u00f3 a JSON.parse() f\u00fcggv\u00e9nnyel JavaScriptben, vagy k\u00f6zvetlen\u00fcl b\u00e1rmely programoz\u00e1si nyelvben, API-ban vagy adatb\u00e1zisban."
         }
       ]
     },

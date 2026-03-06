@@ -1,0 +1,277 @@
+{
+  "toolKey": "rgbToCmyk",
+  "locale": "es",
+  "metadata": {
+    "title": "Convertidor de RGB a CMYK – colores",
+    "description": "Convierte valores de color RGB a CMYK. Esencial para preparar gráficos web para impresión.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+    "path": "/es/herramientas/convertidor-rgb-a-cmyk"
+  },
+  "hero": {
+    "title": "Convertir RGB a CMYK",
+    "description": "Este convertidor convierte instantáneamente. Ingresa un valor y el resultado aparece al instante.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/es/herramientas",
+      "label": "Herramientas"
+    },
+    "third": {
+      "href": "/es/herramientas/convertidor-rgb-a-cmyk",
+      "label": "RGB a CMYK"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertidor de RGB a CMYK – colores",
+      "alternateName": ["Convertir RGB a CMYK"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convierte valores de color RGB a CMYK. Esencial para preparar gráficos web para impresión.",
+      "featureList": ["Conversión bidireccional en tiempo real", "Todos los convertidores en un solo lugar", "Copiar resultado al portapapeles", "Cálculo local en el navegador"]
+    },
+    "howTo": {
+      "name": "Cómo usar el convertidor",
+      "description": "Guía rápida para usar el convertidor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introducir valor",
+          "text": "Escriba un número en el campo de entrada de la izquierda."
+        },
+        {
+          "name": "Leer el resultado",
+          "text": "El resultado de la conversión aparece instantáneamente en el campo adyacente."
+        },
+        {
+          "name": "Copiar o invertir",
+          "text": "Haga clic en Copiar resultado o en Invertir para convertir en la otra dirección."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "¿Cuándo necesitas convertir RGB a CMYK?",
+      "html": "<p class=\"text-mid mb-4\">RGB (Rojo, Verde, Azul) es el modelo de color aditivo para pantallas. CMYK (Cian, Magenta, Amarillo, Negro) es el modelo sustractivo para impresión. Los colores se ven diferentes en cada modelo.</p><p class=\"text-mid mb-4\">La conversión es importante al preparar diseños digitales para impresión. Sin conversión, los colores brillantes de pantalla pueden aparecer apagados o desplazados al imprimir.</p><p class=\"text-mid mb-4\">No todos los colores RGB se pueden reproducir en CMYK — el gamut CMYK es más pequeño.</p><p class=\"text-mid\">Todos los cálculos se ejecutan localmente en tu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertidor de RGB a CMYK – colores – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cómo usar el convertidor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Introduce un valor",
+          "description": "Escribe un número en el campo de entrada.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lee el resultado",
+          "description": "El resultado aparece instantáneamente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copia o invierte",
+          "description": "Copia el resultado o invierte la dirección de conversión.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Cuándo es útil este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Preparación de impresión",
+          "description": "Convierte colores de pantalla a CMYK antes de enviar a imprenta."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Guías de marca",
+          "description": "Especifica colores de marca en RGB (pantalla) y CMYK (impresión)."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Diseño de envases",
+          "description": "Los envases de producto usan impresión CMYK."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Impresión fotográfica",
+          "description": "Entiende cómo se verán las fotos digitales en impresión CMYK."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "¿Qué hace diferente a este convertidor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidad total",
+          "description": "Todos los cálculos se ejecutan localmente en tu navegador."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados en tiempo real",
+          "description": "El resultado se actualiza mientras escribes."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversión bidireccional",
+          "description": "Convierte en ambas direcciones con un solo clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabla de referencia",
+          "description": "Tabla con valores comunes y descripciones contextuales."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">Normalizar RGB a 0–1: R'=R/255 etc. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">Esta es una conversión matemática. Los resultados reales dependen de tinta, papel y perfiles ICC.</p><p class=\"text-mid\">Para trabajo crítico de color, usa siempre perfiles ICC y pruebas de impresión.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "¿Cómo funciona la conversión?",
+      "html": "<p class=\"text-mid mb-4\">Normalizar RGB a 0–1: R'=R/255 etc. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">Esta es una conversión matemática. Los resultados reales dependen de tinta, papel y perfiles ICC.</p><p class=\"text-mid\">Para trabajo crítico de color, usa siempre perfiles ICC y pruebas de impresión.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs CMYK – comparación",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "CMYK",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Modelo",
+          "values": {
+            "unit1": "Aditivo (luz)",
+            "unit2": "Sustractivo (tinta)"
+          }
+        },
+        {
+          "name": "Usado para",
+          "values": {
+            "unit1": "Pantallas, web",
+            "unit2": "Impresión, envases"
+          }
+        },
+        {
+          "name": "Gamut",
+          "values": {
+            "unit1": "Mayor (más colores)",
+            "unit2": "Menor"
+          }
+        },
+        {
+          "name": "Negro",
+          "values": {
+            "unit1": "R=0, G=0, B=0",
+            "unit2": "K=100%"
+          }
+        },
+        {
+          "name": "Blanco",
+          "values": {
+            "unit1": "R=255, G=255, B=255",
+            "unit2": "Sin tinta (papel)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "¿Por qué las impresiones CMYK se ven diferentes a la pantalla?",
+          "answer": "Las pantallas emiten luz (RGB), las impresoras usan tinta (CMYK). CMYK tiene un gamut más pequeño, los colores brillantes se ven más apagados."
+        },
+        {
+          "question": "¿Qué es el negro profundo?",
+          "answer": "CMYK(60,40,40,100). K=100 puro puede verse grisáceo. El negro profundo añade CMY para un negro más intenso."
+        },
+        {
+          "question": "¿Los cálculos se realizan localmente?",
+          "answer": "Sí. Todos los cálculos se ejecutan en tu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ayúdanos a mejorar nuestras herramientas",
+      "description": "¿Tienes una idea, encontraste un error o quieres sugerir una función? Escríbenos – respondemos en 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
+      "imageAlt": "RGB na CMYK – Arteon",
+      "defaultSubject": "Feedback: rgb-to-cmyk"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Más herramientas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

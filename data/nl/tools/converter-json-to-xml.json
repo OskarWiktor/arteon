@@ -2,7 +2,7 @@
   "toolKey": "jsonToXml",
   "locale": "nl",
   "metadata": {
-    "title": "JSON naar XML converter — JSON XML",
+    "title": "JSON naar XML converter - JSON XML",
     "description": "Converteer JSON naar XML-formaat. Automatisch parsen en formatteren. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/json-naar-xml-converter"
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Waarom JSON naar XML converteren?",
-      "html": "<p class=\"text-mid mb-4\">JSON is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar XML aanzienlijke voordelen bieden — kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw JSON-bestanden direct in de browser om naar het XML-formaat. Er worden geen bestanden naar een server geupload — het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
+      "html": "<p class=\"text-mid mb-4\">JSON is een veelgebruikt bestandsformaat met brede compatibiliteit. Afhankelijk van het gebruik kan conversie naar XML aanzienlijke voordelen bieden - kleinere bestanden, betere kwaliteit of bredere platformondersteuning.</p><p class=\"text-mid mb-4\">Deze gratis online converter zet uw JSON-bestanden direct in de browser om naar het XML-formaat. Er worden geen bestanden naar een server geupload - het hele proces vindt lokaal plaats op uw apparaat.</p><p class=\"text-mid\">Converteer zoveel bestanden als u wilt zonder dagelijkse limieten, zonder registratie en zonder watermerken. Sleep uw bestanden, pas de kwaliteit aan en download de resultaten.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "JSON to XML conversion",
       "variant": "right"
@@ -119,7 +119,7 @@
         {
           "icon": "RiFlashlightLine",
           "title": "Directe conversie",
-          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's — snel en werkt ook offline."
+          "description": "Alle verwerking gebeurt lokaal met moderne browser-API's - snel en werkt ook offline."
         }
       ]
     },
@@ -193,8 +193,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Hoeveel besparen bij conversie JSON naar XML?",
-      "html": "<p class=\"text-mid mb-4\">Besparingen hangen af van bestandstype en compressie:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camerafoto</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Productafbeelding</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Besparing: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Werkelijke besparingen varieren per beeld en kwaliteitsinstellingen.</p>"
+      "title": "Hoe werkt de conversie van JSON naar XML?",
+      "html": "<p class=\"text-mid mb-4\">JSON en XML zijn beide gestructureerde dataformaten, maar gebruiken fundamenteel verschillende syntaxis. JSON gebruikt accolades en key-value paren, terwijl XML openings- en sluitingstags gebruikt om elementen te definiëren. De converter koppelt elke JSON-eigenschap aan een XML-element met behoud van de hiërarchische structuur.</p><p class=\"text-mid mb-4\">JSON-objecten worden XML-elementen, JSON-arrays worden herhaalde elementen, en primitieve waarden (strings, getallen, booleans) worden tekstinhoud binnen de bovenliggende tags. De converter produceert goed gevormde XML met inspringing en declaratieheader.</p><p class=\"text-mid\">XML wordt veel gebruikt in bedrijfssystemen, SOAP-webservices, configuratiebestanden en gegevensuitwisseling met strikte schemavalidatie. De conversie vindt volledig plaats in je browser.</p>"
     },
     {
       "type": "gap",
@@ -202,35 +202,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Tips voor conversie JSON naar XML",
-      "description": "Tips om veelvoorkomende problemen te voorkomen:",
+      "title": "Tips voor de conversie van JSON naar XML",
+      "description": "Enkele tips om veelvoorkomende problemen te voorkomen:",
       "grid": "two",
       "items": [
         {
-          "icon": "RiFileImageLine",
-          "title": "Zeer grote bestanden",
-          "description": "Afbeeldingen boven 4000×4000 px kunnen langzamer zijn. Verdeel in batches van 10–20."
+          "icon": "RiCodeLine",
+          "title": "Root-element",
+          "description": "XML vereist één root-element. Als je JSON een array is, verpakt de converter het in een root-element."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Reeds gecomprimeerd",
-          "description": "Als het JSON-bestand al sterk gecomprimeerd was, levert conversie naar XML mogelijk weinig besparing."
+          "icon": "RiNodeTree",
+          "title": "Array-verwerking",
+          "description": "JSON-arrays worden geconverteerd naar herhaalde XML-elementen met dezelfde tagnaam. De elementnaam wordt afgeleid van de bovenliggende sleutel."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparantie",
-          "description": "XML ondersteunt geen transparantie. Wordt wit. Overweeg PNG of WebP."
+          "icon": "RiFileTextLine",
+          "title": "Speciale tekens",
+          "description": "Tekens zoals &lt;, &gt;, &amp; en aanhalingstekens worden automatisch vervangen door standaard XML-entiteiten voor geldige markup."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Bewaar originelen",
-          "description": "Verliesgevende conversie is onomkeerbaar. Bewaar kopieen van JSON-bestanden."
+          "icon": "RiFileCodeLine",
+          "title": "Attributen vs elementen",
+          "description": "Standaard worden alle JSON-eigenschappen XML-kindelementen. JSON heeft geen native concept van XML-attributen, dus er worden geen attributen gegenereerd."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "JSON to XML mapping rules",
+      "html": "<p class=\"text-mid mb-4\">The converter maps JSON structures to XML elements following these rules:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Objects</strong> – each key becomes an XML element. <code>{\"name\": \"John\"}</code> → <code>&lt;name&gt;John&lt;/name&gt;</code></li><li><strong>Arrays</strong> – each item becomes a repeating element with the key name. <code>{\"items\": [1, 2]}</code> → <code>&lt;items&gt;1&lt;/items&gt;&lt;items&gt;2&lt;/items&gt;</code></li><li><strong>Primitives</strong> – strings, numbers, booleans become text content of their parent element.</li><li><strong>Null values</strong> – converted to empty elements or omitted.</li></ul><p class=\"text-mid mt-3\">The output includes a proper XML declaration and uses 2-space indentation for readability. Element names are derived directly from JSON keys.</p>"
     },
     {
       "type": "faq",
@@ -254,16 +263,16 @@
           "answer": "Ja, de converter werkt op elk apparaat met een moderne webbrowser."
         },
         {
-          "question": "Is conversie JSON naar XML veilig?",
-          "answer": "Ja. Alles vindt lokaal plaats in de browser via Canvas API. Niets wordt naar servers gestuurd."
+          "question": "Is de conversie van JSON naar XML veilig?",
+          "answer": "Ja. Alle conversie vindt lokaal plaats in je browser. Er worden geen gegevens naar een server gestuurd."
         },
         {
-          "question": "Kan ik meerdere JSON-bestanden tegelijk converteren?",
-          "answer": "Ja. Batchconversie zonder limiet. Sleep bestanden naar het convertergebied."
+          "question": "Is de conversie verliesvrij?",
+          "answer": "Ja. Alle gegevens uit de JSON-invoer worden behouden in de XML-uitvoer. De structuur en waarden blijven intact, alleen de syntaxis verandert."
         },
         {
-          "question": "Wordt XML door alle browsers ondersteund?",
-          "answer": "XML wordt ondersteund door Chrome, Firefox, Safari, Edge en Opera."
+          "question": "Kan ik de XML-uitvoer valideren?",
+          "answer": "De converter produceert goed gevormde XML die standaard XML-validatie doorstaat. Voor schemavalidatie (XSD) kun je je schema apart toepassen op de uitvoer."
         }
       ]
     },

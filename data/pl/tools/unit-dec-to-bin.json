@@ -1,0 +1,289 @@
+{
+  "toolKey": "decToBin",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter dziesiętny na binarny – DEC ↔ BIN",
+    "description": "Przelicz liczby dziesiętne na binarne i odwrotnie. Konwerter jest przydatny w informatyce i programowaniu. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-dziesietny-na-binarny"
+  },
+  "hero": {
+    "title": "Przelicz system dziesiętny na binarny",
+    "description": "Ten konwerter przelicza liczby dziesiętne na binarne i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-dziesietny-na-binarny",
+      "label": "dziesiętny na binarny"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter dziesiętny na binarny – DEC ↔ BIN",
+      "alternateName": ["Przelicznik dziesiętny binarny", "Kalkulator DEC BIN", "Decimal to binary"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz liczby dziesiętne na binarne i odwrotnie. Konwerter jest przydatny w informatyce i programowaniu. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera dziesiętny na binarny",
+      "description": "Instrukcja użycia: dziesiętny na binarny.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Kiedy potrzebne jest przeliczanie na system binarny?",
+      "html": "<p class=\"text-mid mb-4\">System binarny (dwójkowy) używa tylko cyfr 0 i 1. To podstawa działania komputerów – każdy bit w pamięci to 0 lub 1. Liczba 255 w systemie dziesiętnym to 11111111 binarnie (8 bitów = 1 bajt).</p><p class=\"text-mid mb-4\">Przeliczanie na binarny przydaje się przy programowaniu niskopoziomowym, pracy z maskami bitowymi, adresowaniem IP i zrozumieniu działania komputerów.</p><p class=\"text-mid mb-4\">Maski podsieci IP używają zapisu binarnego: 255.255.255.0 = 11111111.11111111.11111111.00000000 (/24). Znajomość binarnego ułatwia pracę z sieciami.</p><p class=\"text-mid\">Uprawnienia plików Unix (chmod): 755 = 111 101 101 binarnie (rwx r-x r-x).</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "dziesiętny na binarny – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Programowanie",
+          "description": "Operacje bitowe, maski, flagi: 0xFF = 11111111."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Sieci IP",
+          "description": "Maski podsieci: 255.255.255.0 = /24 (24 jedynki binarnie)."
+        },
+        {
+          "icon": "RiShieldKeyholeLine",
+          "title": "Uprawnienia Unix",
+          "description": "chmod 755 = 111 101 101 binarnie."
+        },
+        {
+          "icon": "RiCpuLine",
+          "title": "Elektronika",
+          "description": "Rejestry, porty I/O, protokoły komunikacyjne."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja DEC na BIN?",
+      "html": "<p class=\"text-mid mb-4\">Konwersja z systemu dziesiętnego na dwójkowy (binarny) polega na wielokrotnym dzieleniu liczby przez 2 i zapisywaniu reszt w odwrotnej kolejności. Każda reszta z dzielenia to jedna cyfra binarna (bit) — może mieć wartość 0 lub 1.</p><p class=\"text-mid mb-4\">Na przykład aby zamienić liczbę 13 na binarną, dzielimy kolejno: 13 przez 2 daje 6 z resztą 1, następnie 6 przez 2 daje 3 z resztą 0, potem 3 przez 2 daje 1 z resztą 1, i wreszcie 1 przez 2 daje 0 z resztą 1. Czytając reszty od końca, otrzymujemy 1101 w systemie binarnym.</p><p class=\"text-mid\">System binarny jest fundamentem informatyki — komputery przechowują i przetwarzają wszystkie dane jako ciągi zer i jedynek. Jeden bajt to 8 bitów, co pozwala zapisać wartości od 0 (00000000) do 255 (11111111).</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>255 = 11111111 (8 jedynek) = maksymalna wartość bajtu.</li><li>Potęgi dwójki: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</li><li>Maska /24 = 24 jedynki + 8 zer = 11111111.11111111.11111111.00000000.</li><li>JavaScript: <code>(255).toString(2)</code> = “11111111”.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Dziesiętny (DEC) vs Binarny (BIN) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Dziesiętny (DEC)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binarny (BIN)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Podstawa",
+          "values": {
+            "unit1": "10",
+            "unit2": "2"
+          }
+        },
+        {
+          "name": "Cyfry",
+          "values": {
+            "unit1": "0–9",
+            "unit2": "0–1"
+          }
+        },
+        {
+          "name": "Bajt (max)",
+          "values": {
+            "unit1": "255",
+            "unit2": "11111111"
+          }
+        },
+        {
+          "name": "Użycie",
+          "values": {
+            "unit1": "Codzienne obliczenia",
+            "unit2": "Komputery, elektronika"
+          }
+        },
+        {
+          "name": "Prefiks",
+          "values": {
+            "unit1": "Brak",
+            "unit2": "0b (programowanie)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile to 255 binarnie?",
+          "answer": "255 = 11111111 (8 jedynek). To maksymalna wartość jednego bajtu."
+        },
+        {
+          "question": "Jak szybko przeliczyć binarny na dziesiętny?",
+          "answer": "Mnoż każdą cyfrę przez odpowiednią potęgę 2 i sumuj. 1101 = 1×8 + 1×4 + 0×2 + 1×1 = 13."
+        },
+        {
+          "question": "Co to jest bit i bajt?",
+          "answer": "Bit = 1 cyfra binarna (0 lub 1). Bajt = 8 bitów = wartości 0–255."
+        },
+        {
+          "question": "Jak działają maski bitowe?",
+          "answer": "Maska bitowa używa operacji AND, OR, XOR na bitach. Np. 0xFF & 0x0F = 0x0F (maskuje górne 4 bity)."
+        },
+        {
+          "question": "Ile bitów ma adres IP?",
+          "answer": "IPv4: 32 bity (4 oktety po 8 bitów). IPv6: 128 bitów."
+        },
+        {
+          "question": "Co oznacza 0b w programowaniu?",
+          "answer": "Prefiks 0b oznacza liczbę binarną: <code>0b1101</code> = 13 dziesiętnie."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "dziesiętny na binarny – Arteon",
+      "defaultSubject": "Feedback: dziesiętny na binarny"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

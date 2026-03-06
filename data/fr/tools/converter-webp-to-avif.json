@@ -2,14 +2,14 @@
   "toolKey": "webpToAvif",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur WebP en AVIF — WebP AVIF",
-    "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
+    "title": "Convertisseur WebP en AVIF - WebP AVIF",
+    "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-webp-en-avif"
   },
   "hero": {
     "title": "Convertisseur WebP en AVIF",
-    "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
+    "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur WebP en AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
+      "description": "Convertissez les fichiers WebP en AVIF. Compression encore meilleure dans un format moderne. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
       "featureList": ["Conversion en AVIF", "Réglage de la qualité (60-95%)", "Conversion par lots", "Traitement local dans le navigateur"],
       "alternateName": ["Convertir WEBP en AVIF", "Conversion WEBP vers AVIF", "Convertisseur WEBP en AVIF gratuit"]
     },
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Régler la qualité",
-          "text": "Ajustez le curseur de qualite AVIF — des valeurs plus basses donnent des fichiers plus petits."
+          "text": "Ajustez le curseur de qualite AVIF - des valeurs plus basses donnent des fichiers plus petits."
         },
         {
           "position": 3,
           "name": "Convertir",
-          "text": "Cliquez sur Convertir — les fichiers sont traites localement dans votre navigateur."
+          "text": "Cliquez sur Convertir - les fichiers sont traites localement dans votre navigateur."
         },
         {
           "position": 4,
           "name": "Telecharger",
-          "text": "Telechargez les fichiers AVIF — individuellement ou tous a la fois."
+          "text": "Telechargez les fichiers AVIF - individuellement ou tous a la fois."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Reglages de qualite — que choisir pour WebP vers AVIF ?",
-      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (defaut) — bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% — pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% — quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 80% la difference visuelle entre WebP original et AVIF resultant est imperceptible.</p>"
+      "title": "Reglages de qualite - que choisir pour WebP vers AVIF ?",
+      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (defaut) - bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% - pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% - quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 80% la difference visuelle entre WebP original et AVIF resultant est imperceptible.</p>"
     },
     {
       "type": "gap",

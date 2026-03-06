@@ -2,14 +2,14 @@
   "toolKey": "jpgToTiff",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter JPG na TIFF — JPG TIFF",
-    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
+    "title": "Konwerter JPG na TIFF - JPG TIFF",
+    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-jpg-na-tiff"
   },
   "hero": {
     "title": "Konwerter JPG na TIFF",
-    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
+    "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,8 +27,8 @@
       "name": "Konwerter JPG na TIFF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce — bez rejestracji, bez limitu plików, pełna prywatność.",
-      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "description": "Zamień zdjęcia JPG na bezstratny TIFF. Idealne do druku i archiwizacji. Konwersja w przeglądarce - bez rejestracji, bez limitu plików, pełna prywatność.",
+      "featureList": ["Konwersja do TIFF", "Format bezstratny", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
       "alternateName": ["Zamiana JPG na TIFF", "Konwersja JPG do TIFF", "Darmowy konwerter JPG na TIFF"]
     },
     "howTo": {
@@ -43,12 +43,12 @@
         {
           "position": 2,
           "name": "Konwertuj",
-          "text": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+          "text": "Kliknij Konwertuj - pliki zostaną przetworzone lokalnie w przeglądarce."
         },
         {
           "position": 3,
           "name": "Pobierz",
-          "text": "Pobierz gotowe pliki TIFF — pojedynczo lub wszystkie naraz."
+          "text": "Pobierz gotowe pliki TIFF - pojedynczo lub wszystkie naraz."
         }
       ]
     }
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować JPG na TIFF?",
-      "html": "<p class=\"text-mid mb-4\">JPEG (JPG) to stratny format obsługujący miliony kolorów. Jest powszechnie stosowany do zdjęć.</p><p class=\"text-mid mb-4\">Konwersja JPG na TIFF (Tagged Image File Format) zachowuje każdy piksel obrazu dzięki kompresji bezstratnej.</p><p class=\"text-mid mb-4\">TIFF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. Jako format bezstratny, TIFF zachowuje pełną jakość obrazu bez jakiejkolwiek degradacji.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików JPG, ile potrzebujesz – całkowicie za darmo.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPG (JPEG) to najpopularniejszy format zdjęć w internecie, ale stosuje kompresję stratną — każdy zapis obniża jakość obrazu. Gdy zdjęcie JPG trafia do profesjonalnej obróbki, druku lub archiwum, dalsze zapisy w formacie stratnym pogłębiają degradację. TIFF rozwiązuje ten problem.</p><p class=\"text-mid mb-4\">TIFF (Tagged Image File Format) to standard branżowy w poligrafii, fotografii i archiwizacji. Obsługuje kompresję bezstratną (LZW), głębię 16 i 32 bitów na kanał, profile kolorów ICC (sRGB, Adobe RGB, CMYK) oraz wielowarstwowe pliki. Konwersja JPG na TIFF zamraża aktualny stan obrazu w formacie, który nie degraduje przy kolejnych zapisach.</p><p class=\"text-mid mb-4\">Konwersja nie odtworzy danych utraconych podczas kompresji JPG — jeśli oryginał był zapisany w jakości 60%, plik TIFF będzie miał tę samą jakość wizualną, ale w formacie bezstratnym. Dlatego warto konwertować zdjęcia JPG najwyższej dostępnej jakości.</p><p class=\"text-mid\">Konwerter przetwarza pliki lokalnie w przeglądarce — nic nie jest wysyłane na serwer. Bez rejestracji, bez limitów, bez znaków wodnych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwersja JPG na TIFF",
       "variant": "right"
@@ -102,24 +102,24 @@
       "grid": "two",
       "items": [
         {
-          "icon": "RiGlobalLine",
-          "title": "Optymalizacja stron www",
-          "description": "Konwertuj JPG na TIFF, aby przygotować obrazy do publikacji w internecie."
-        },
-        {
-          "icon": "RiMailLine",
-          "title": "E-mail i udostępnianie",
-          "description": "Pliki TIFF są kompatybilne z większością nowoczesnych platform. Konwertuj na TIFF, aby uzyskać obrazy wysokiej jakości do udostępniania."
-        },
-        {
-          "icon": "RiShoppingBag3Line",
-          "title": "E-commerce i marketplace",
-          "description": "Platformy takie jak Allegro, OLX, Empik, Ceneo mogą wymagać określonych formatów – konwersja na TIFF zapewnia zgodność zdjęć z ich wymaganiami."
-        },
-        {
           "icon": "RiPrinterLine",
-          "title": "Dokumenty i archiwizacja",
-          "description": "TIFF to doskonały wybór do archiwizacji i profesjonalnego druku dzięki kompresji bezstratnej."
+          "title": "Przygotowanie do druku",
+          "description": "Drukarnie offsetowe i wielkoformatowe wymagają plików TIFF z profilem CMYK. Konwersja JPG na TIFF to pierwszy krok przed przygotowaniem materiałów do druku w programach DTP."
+        },
+        {
+          "icon": "RiImageEditLine",
+          "title": "Ochrona przed dalszą degradacją",
+          "description": "Każdy zapis JPG pogarsza jakość. Po konwersji na TIFF możesz wielokrotnie otwierać i zapisywać plik bez utraty danych — idealne do retuszu i korekcji kolorów."
+        },
+        {
+          "icon": "RiArchiveDrawerLine",
+          "title": "Archiwizacja zdjęć",
+          "description": "Jeśli masz zdjęcia JPG z aparatu i chcesz je przechować długoterminowo, konwersja na TIFF zamraża jakość na obecnym poziomie. Dalsze zapisy nie będą degradować obrazu."
+        },
+        {
+          "icon": "RiLayoutMasonryLine",
+          "title": "Skład publikacji i katalogów",
+          "description": "Programy takie jak InDesign, QuarkXPress i Scribus preferują TIFF do składu publikacji. Import JPG do składu może powodować artefakty kompresji widoczne w druku."
         }
       ]
     },
@@ -278,7 +278,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików JPG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików JPG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -317,11 +317,11 @@
         },
         {
           "question": "Czy konwersja JPG na TIFF jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików JPG jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Czy konwersja JPG na TIFF odtworzy utraconą jakość?",
+          "answer": "Nie. Konwersja na TIFF nie odtworzy danych utraconych podczas kompresji JPG — jeśli oryginał był zapisany w jakości 70%, plik TIFF będzie miał tę samą jakość wizualną. TIFF chroni jednak przed dalszą degradacją: kolejne zapisy nie pogarszają obrazu, w przeciwieństwie do powtórnego zapisu w JPG."
         }
       ]
     },

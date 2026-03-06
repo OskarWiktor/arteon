@@ -1,0 +1,277 @@
+{
+  "toolKey": "kgToLbs",
+  "locale": "da",
+  "metadata": {
+    "title": "Konverter kg til lbs",
+    "description": "Konverter kg til lbs og omvendt. Nyttig til fitness, rejser og international forsendelse. Ingen registrering krævet.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/da/vaerktojer/kg-til-pund-konverter"
+  },
+  "hero": {
+    "title": "Konverter kg til lbs",
+    "description": "Denne konverter konverterer øjeblikkeligt. Indtast en værdi, og resultatet vises med det samme.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/da/vaerktojer",
+      "label": "Værktøjer"
+    },
+    "third": {
+      "href": "/da/vaerktojer/kg-til-pund-konverter",
+      "label": "kg til lbs"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konverter kg til lbs",
+      "alternateName": ["Konverter kg til lbs"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Konverter kg til lbs og omvendt. Nyttig til fitness, rejser og international forsendelse. Ingen registrering krævet.",
+      "featureList": ["Tovejs-konvertering i realtid", "Alle konvertere samlet ét sted", "Kopier resultat til udklipsholder", "Lokal beregning i browseren"]
+    },
+    "howTo": {
+      "name": "Sådan bruger du konverteren",
+      "description": "Hurtigguide til brug af konverteren.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Indtast værdi",
+          "text": "Skriv et tal i inputfeltet til venstre."
+        },
+        {
+          "name": "Aflæs resultatet",
+          "text": "Konverteringsresultatet vises øjeblikkeligt i feltet ved siden af."
+        },
+        {
+          "name": "Kopier eller vend om",
+          "text": "Klik på Kopier resultat eller på Vend om for at konvertere i den anden retning."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Hvornår skal man omregne kg til pund?",
+      "html": "<p class=\"text-mid mb-4\">Kilogram (kg) er SI-basisenheden for masse. Pund (lb) er standard i USA. 1 kg = 2,20462 lb.</p><p class=\"text-mid mb-4\">Nødvendig for indkøb i USA, fitnesscentre, flybagage og køretøjsspecifikationer.</p><p class=\"text-mid\">Alle beregninger kører lokalt i din browser.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Konverter kg til lbs – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvordan bruger man omregneren?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Indtast en værdi",
+          "description": "Skriv et tal i inputfeltet.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Læs resultatet",
+          "description": "Resultatet vises øjeblikkeligt.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopiér eller vend",
+          "description": "Kopiér resultatet eller vend omregningsretningen.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvornår er denne omregner nyttig?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiScales3Line",
+          "title": "Fitnesscenter",
+          "description": "Vægte i USA i pund. 45 lb plade = 20,4 kg."
+        },
+        {
+          "icon": "RiPlaneLine",
+          "title": "Flybagage",
+          "description": "Nogle flyselskaber: 50 lb = 22,7 kg."
+        },
+        {
+          "icon": "RiShoppingCartLine",
+          "title": "Madlavning",
+          "description": "Amerikanske opskrifter bruger pund og ounces."
+        },
+        {
+          "icon": "RiMedicineBottleLine",
+          "title": "Kropvægt",
+          "description": "I USA i pund: 150 lb = 68 kg."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hvad adskiller denne omregner?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Fuld privatliv",
+          "description": "Alle beregninger kører lokalt i din browser."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Realtidsresultater",
+          "description": "Resultatet opdateres mens du skriver."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Tovejsomregning",
+          "description": "Omregn begge veje med ét klik."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencetabel",
+          "description": "Tabel med almindelige værdier og kontekstbeskrivelser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">1 pund = 0,45359237 kg præcis. For at omregne kg til lb, gang med 2,20462.</p><p class=\"text-mid\">Hurtigt overslag: gang kg med 2,2.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hvordan fungerer omregningen?",
+      "html": "<p class=\"text-mid mb-4\">1 pund = 0,45359237 kg præcis. For at omregne kg til lb, gang med 2,20462.</p><p class=\"text-mid\">Hurtigt overslag: gang kg med 2,2.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilogram vs Pund",
+      "featureLabel": "Egenskab",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilogram (kg)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pund (lb)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisk (SI)",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Basis",
+          "values": {
+            "unit1": "1.000 g",
+            "unit2": "453,59 g"
+          }
+        },
+        {
+          "name": "Kropvægt",
+          "values": {
+            "unit1": "Europa",
+            "unit2": "USA"
+          }
+        },
+        {
+          "name": "Videnskab",
+          "values": {
+            "unit1": "SI-standard",
+            "unit2": "Bruges ikke"
+          }
+        },
+        {
+          "name": "Sport",
+          "values": {
+            "unit1": "Plader i kg",
+            "unit2": "Plader i lb"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Ofte stillede spørgsmål",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hvor mange pund er 1 kg?",
+          "answer": "1 kg = 2,20462 pund."
+        },
+        {
+          "question": "Hvor mange kg er 1 pund?",
+          "answer": "1 pund = 0,4536 kg."
+        },
+        {
+          "question": "Kører beregningerne lokalt?",
+          "answer": "Ja. Alle beregninger kører i din browser."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Hjælp os med at forbedre vores værktøjer",
+      "description": "Har du en idé, fundet en fejl eller vil foreslå en funktion? Skriv til os – vi svarer inden for 24 timer.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "kg na funty – Arteon",
+      "defaultSubject": "Feedback: kg-to-lbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Andre gratis værktøjer"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -2,14 +2,14 @@
   "toolKey": "gifToAvif",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter GIF na AVIF — GIF AVIF",
-    "description": "Zamień pierwszą klatkę GIF na nowoczesny AVIF. Mniejszy plik, lepsza jakość. Przetwarzanie odbywa się w Twojej przeglądarce — pliki nie opuszczają urządzenia.",
+    "title": "Konwerter GIF na AVIF - GIF AVIF",
+    "description": "Zamień pierwszą klatkę GIF na nowoczesny AVIF. Mniejszy plik, lepsza jakość. Przetwarzanie odbywa się w Twojej przeglądarce - pliki nie opuszczają urządzenia.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-gif-na-avif"
   },
   "hero": {
     "title": "Konwerter GIF na AVIF",
-    "description": "Zamień pierwszą klatkę GIF na nowoczesny AVIF. Mniejszy plik, lepsza jakość. Przetwarzanie odbywa się w Twojej przeglądarce — pliki nie opuszczają urządzenia.",
+    "description": "Zamień pierwszą klatkę GIF na nowoczesny AVIF. Mniejszy plik, lepsza jakość. Przetwarzanie odbywa się w Twojej przeglądarce - pliki nie opuszczają urządzenia.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -27,8 +27,8 @@
       "name": "Konwerter GIF na AVIF",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Zamień pierwszą klatkę GIF na nowoczesny AVIF. Mniejszy plik, lepsza jakość. Przetwarzanie odbywa się w Twojej przeglądarce — pliki nie opuszczają urządzenia.",
-      "featureList": ["Konwersja do AVIF", "Regulacja jakosci (60-95%)", "Konwersja wielu plikow", "Przetwarzanie lokalne w przegladarce"],
+      "description": "Zamień pierwszą klatkę GIF na nowoczesny AVIF. Mniejszy plik, lepsza jakość. Przetwarzanie odbywa się w Twojej przeglądarce - pliki nie opuszczają urządzenia.",
+      "featureList": ["Konwersja do AVIF", "Regulacja jakości (60-95%)", "Konwersja wielu plików", "Przetwarzanie lokalne w przeglądarce"],
       "alternateName": ["Zamiana GIF na AVIF", "Konwersja GIF do AVIF", "Darmowy konwerter GIF na AVIF"]
     },
     "howTo": {
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Ustaw jakosc",
-          "text": "Dostosuj suwak jakosci AVIF — nizsze wartosci daja mniejsze pliki."
+          "text": "Dostosuj suwak jakosci AVIF - nizsze wartosci daja mniejsze pliki."
         },
         {
           "position": 3,
           "name": "Konwertuj",
-          "text": "Kliknij Konwertuj — pliki zostana przetworzone lokalnie w przegladarce."
+          "text": "Kliknij Konwertuj - pliki zostaną przetworzone lokalnie w przeglądarce."
         },
         {
           "position": 4,
           "name": "Pobierz",
-          "text": "Pobierz gotowe pliki AVIF — pojedynczo lub wszystkie naraz."
+          "text": "Pobierz gotowe pliki AVIF - pojedynczo lub wszystkie naraz."
         }
       ]
     }
@@ -66,7 +66,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować GIF na AVIF?",
-      "html": "<p class=\"text-mid mb-4\">Graphics Interchange Format (GIF) to bezstratny format obsługujący 256 kolorów. Jest powszechnie stosowany do prostych animacji.</p><p class=\"text-mid mb-4\">Konwersja GIF na AVIF (AV1 Image File Format) znacznie zmniejsza rozmiar pliku, przyspieszając ładowanie stron i ułatwiając udostępnianie.</p><p class=\"text-mid mb-4\">AVIF obsługuje kanał alfa – przezroczyste obszary zostaną zachowane. AVIF obsługuje zarówno kompresję stratną, jak i bezstratną, co daje pełną kontrolę nad stosunkiem jakości do rozmiaru pliku.</p><p class=\"text-mid\">Konwerter działa lokalnie w Twojej przeglądarce – pliki nie opuszczają Twojego urządzenia. Bez przesyłania, bez serwerów, bez rejestracji. Konwertuj tyle plików GIF, ile potrzebujesz – całkowicie za darmo.</p>",
+      "html": "<p class=\"text-mid mb-4\">GIF to format z 1987 roku ograniczony do 256 kolorów i prostej kompresji LZW. Statyczne pliki GIF są stosunkowo duże w porównaniu z nowoczesnymi formatami, a animowane GIF-y potrafią ważyć kilkanaście megabajtów. AVIF oferuje kompresję o rząd wielkości lepszą — ten sam obraz w AVIF waży 5–10× mniej niż w GIF.</p><p class=\"text-mid mb-4\">AVIF (AV1 Image File Format) obsługuje pełną paletę kolorów (miliony barw vs 256 w GIF), kanał alfa z płynną przezroczystością (GIF ma tylko binarną: piksel jest przezroczysty albo nie), kompresję stratną i bezstratną oraz głębię do 12 bitów na kanał. Jest wspierany przez Chrome 85+, Firefox 93+, Edge 85+ i Safari 16.4+.</p><p class=\"text-mid mb-4\">Konwersja statycznych GIF-ów na AVIF jest szczególnie opłacalna dla ikon, prostych grafik i miniaturek — pliki stają się kilkukrotnie mniejsze przy znacznie lepszej jakości kolorów. Uwaga: ten konwerter obsługuje statyczne obrazy GIF. Animowane GIF-y zostaną skonwertowane jako pierwsza klatka.</p><p class=\"text-mid\">Konwerter przetwarza pliki lokalnie w przeglądarce — nic nie jest wysyłane na serwer. Bez rejestracji, bez limitów, bez znaków wodnych.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwersja GIF na AVIF",
       "variant": "right"
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji GIF na AVIF?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem GIF a wynikowym AVIF jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji GIF na AVIF?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 80% różnica wizualna między oryginałem GIF a wynikowym AVIF jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -271,7 +271,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów GIF na AVIF zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów GIF na AVIF zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -301,7 +301,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików GIF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików GIF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },

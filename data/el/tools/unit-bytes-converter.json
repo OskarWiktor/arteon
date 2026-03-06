@@ -1,0 +1,281 @@
+{
+  "toolKey": "bytesConverter",
+  "locale": "el",
+  "metadata": {
+    "title": "Bytes σε KB/MB/GB – μετατροπέας",
+    "description": "Μετατρέψτε bytes σε KB, MB, GB και αντίστροφα.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/el/ergaleia/metatropeas-bytes"
+  },
+  "hero": {
+    "title": "Bytes σε KB/MB/GB",
+    "description": "Αυτός ο μετατροπέας υπολογίζει άμεσα. Εισάγετε μια τιμή και το αποτέλεσμα εμφανίζεται αμέσως.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/el/ergaleia",
+      "label": "Εργαλεία"
+    },
+    "third": {
+      "href": "/el/ergaleia/metatropeas-bytes",
+      "label": "bytes σε KB/MB/GB"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Bytes σε KB/MB/GB – μετατροπέας",
+      "alternateName": ["Bytes σε KB/MB/GB"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Μετατρέψτε bytes σε KB, MB, GB και αντίστροφα.",
+      "featureList": ["Αμφίδρομη μετατροπή σε πραγματικό χρόνο", "Όλοι οι μετατροπείς σε ένα μέρος", "Αντιγραφή αποτελέσματος στο πρόχειρο", "Τοπικός υπολογισμός στον browser"]
+    },
+    "howTo": {
+      "name": "Πώς να χρησιμοποιήσετε τον μετατροπέα",
+      "description": "Γρήγορος οδηγός χρήσης του μετατροπέα.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Εισαγωγή τιμής",
+          "text": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής αριστερά."
+        },
+        {
+          "name": "Ανάγνωση αποτελέσματος",
+          "text": "Το αποτέλεσμα της μετατροπής εμφανίζεται αμέσως στο διπλανό πεδίο."
+        },
+        {
+          "name": "Αντιγραφή ή αντιστροφή",
+          "text": "Κάντε κλικ στο Αντιγραφή αποτελέσματος ή στο Αντιστροφή."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Πότε χρειάζεστε: Bytes σε KB/MB/GB?",
+      "html": "<p class=\"text-mid mb-4\">Digital storage is measured in bytes and its multiples: kilobytes (KB), megabytes (MB), gigabytes (GB), and terabytes (TB). There are two systems: decimal (1 KB = 1,000 bytes) and binary (1 KiB = 1,024 bytes).</p><p class=\"text-mid mb-4\">Storage manufacturers use decimal units (a \"500 GB\" drive = 500,000,000,000 bytes), while operating systems often use binary units (showing ~465 GiB for the same drive). This discrepancy is a common source of confusion.</p><p class=\"text-mid mb-4\">File sizes, RAM, network speeds, and storage capacity all use different conventions. This converter handles both systems to eliminate confusion.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Bytes σε KB/MB/GB – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πώς να χρησιμοποιήσετε τον μετατροπέα;",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Εισαγωγή τιμής",
+          "description": "Πληκτρολογήστε έναν αριθμό στο πεδίο εισαγωγής. Μπορείτε να χρησιμοποιήσετε τελεία ή κόμμα.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ανάγνωση αποτελέσματος",
+          "description": "Το αποτέλεσμα εμφανίζεται αμέσως στο διπλανό πεδίο – χωρίς κλικ.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Αντιγραφή ή αντιστροφή",
+          "description": "Κάντε κλικ στο Αντιγραφή ή χρησιμοποιήστε το κουμπί Αντιστροφή.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Πότε είναι χρήσιμος αυτός ο μετατροπέας;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiHardDriveLine",
+          "title": "Pojemność dysków",
+          "description": "Dysk 1 TB (producent) = 931 GB w systemie binarnym."
+        },
+        {
+          "icon": "RiUploadCloudLine",
+          "title": "Limity przesyłania",
+          "description": "Załącznik e-mail: 25 MB = 26 214 400 B."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Serwery",
+          "description": "Planowanie pojemności: RAM, dyski, transfer."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Pamięć urządzeń",
+          "description": "Telefon 128 GB = 137 438 953 472 B."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Τι κάνει αυτόν τον μετατροπέα ξεχωριστό;",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Πλήρης ιδιωτικότητα",
+          "description": "Όλοι οι υπολογισμοί γίνονται τοπικά στον browser σας. Κανένα δεδομένο δεν στέλνεται σε server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Αποτελέσματα σε πραγματικό χρόνο",
+          "description": "Το αποτέλεσμα ενημερώνεται αμέσως καθώς πληκτρολογείτε – χωρίς κουμπί."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Αμφίδρομη μετατροπή",
+          "description": "Το κουμπί Αντιστροφή σας επιτρέπει να μετατρέψετε και προς τις δύο κατευθύνσεις."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Πίνακας αναφοράς",
+          "description": "Ένας έτοιμος πίνακας με συχνά μετατρεπόμενες τιμές και περιγραφές."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πώς λειτουργεί η μετατροπή;",
+      "html": "<p class=\"text-mid mb-4\">In the decimal (SI) system: 1 KB = 1,000 bytes, 1 MB = 1,000 KB, 1 GB = 1,000 MB, 1 TB = 1,000 GB. Each step multiplies by 1,000.</p><p class=\"text-mid mb-4\">In the binary (IEC) system: 1 KiB = 1,024 bytes, 1 MiB = 1,024 KiB, 1 GiB = 1,024 MiB, 1 TiB = 1,024 GiB. Each step multiplies by 1,024.</p><p class=\"text-mid\">The difference grows with size: 1 TB (decimal) = 0.909 TiB (binary). A \"2 TB\" drive shows as approximately 1.82 TiB in most operating systems.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Πρακτικές συμβουλές",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>A typical photo (12 MP): 3–5 MB. A 256 GB phone holds ~50,000–85,000 photos.</li><li>A typical song (MP3): 3–5 MB. A 1 GB playlist contains ~200–300 songs.</li><li>A Full HD movie: 4–8 GB. A 4K movie: 15–30 GB.</li><li>1 Mbps = 125 KB/s. A 100 Mbps connection downloads at ~12.5 MB/s.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Decimal vs Binary units – σύγκριση",
+      "featureLabel": "Ιδιότητα",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Decimal (SI)"
+        },
+        {
+          "id": "unit2",
+          "name": "Binary (IEC)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Multiplier",
+          "values": {
+            "unit1": "1,000",
+            "unit2": "1,024"
+          }
+        },
+        {
+          "name": "Units",
+          "values": {
+            "unit1": "KB, MB, GB, TB",
+            "unit2": "KiB, MiB, GiB, TiB"
+          }
+        },
+        {
+          "name": "Used by",
+          "values": {
+            "unit1": "Storage manufacturers",
+            "unit2": "Operating systems, RAM"
+          }
+        },
+        {
+          "name": "1 TB equals",
+          "values": {
+            "unit1": "1,000,000,000,000 bytes",
+            "unit2": "1,099,511,627,776 bytes"
+          }
+        },
+        {
+          "name": "Difference at 1 TB",
+          "values": {
+            "unit1": "1 TB",
+            "unit2": "0.909 TiB"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Συχνές ερωτήσεις",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Πόσα MB ist 1 GB?",
+          "answer": "1 GB = 1.000 MB (dezimal) oder 1 GiB = 1.024 MiB (binär)."
+        },
+        {
+          "question": "Γιατί zeigt meine Festplatte weniger Speicher?",
+          "answer": "Hersteller verwenden dezimale Einheiten (1 TB = 1.000.000.000.000 Bytes), aber Ihr Betriebssystem verwendet binäre Einheiten (1 TiB = 1.099.511.627.776 Bytes). Eine „1 TB“-Festplatte zeigt ~931 GiB."
+        },
+        {
+          "question": "Πόσα Fotos passen in 1 GB?",
+          "answer": "Ca. 200–300 Fotos bei 3–5 MB (12 MP Smartphone). RAW-Fotos (25–50 MB) passen 20–40 pro GB."
+        },
+        {
+          "question": "Γίνονται οι υπολογισμοί τοπικά;",
+          "answer": "Ναι. Όλοι οι υπολογισμοί γίνονται στον browser σας."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Βοηθήστε μας να βελτιώσουμε τα εργαλεία μας",
+      "description": "Έχετε μια ιδέα, βρήκατε ένα σφάλμα ή θέλετε να προτείνετε μια λειτουργία; Γράψτε μας – απαντάμε εντός 24 ωρών.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "bytes σε KB/MB/GB – Arteon",
+      "defaultSubject": "Feedback: bytes-converter"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Άλλα δωρεάν εργαλεία"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

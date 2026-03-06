@@ -1,0 +1,273 @@
+{
+  "toolKey": "kwToHp",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur kilowatts en chevaux",
+    "description": "Convertissez kW en ch et vice versa. Pour les spécifications automobiles et les moteurs.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-kw-en-cv"
+  },
+  "hero": {
+    "title": "Convertir kilowatts en chevaux",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-kw-en-cv",
+      "label": "kW en ch"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur kilowatts en chevaux",
+      "alternateName": ["Convertir kilowatts en chevaux"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez kW en ch et vice versa. Pour les spécifications automobiles et les moteurs.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des kilowatts en chevaux ?",
+      "html": "<p class=\"text-mid mb-4\">Le kilowatt (kW) est l’unité standard de puissance du système métrique. Le cheval-vapeur (CV ou HP) est une unité traditionnelle. 1 kW = 1,35962 CV (métrique).</p><p class=\"text-mid mb-4\">Exemples : 100 kW = 136 CV, 150 kW = 204 CV. Un Tesla Model 3 : ~283 kW = 385 CV.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur kilowatts en chevaux – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Automobiles",
+          "description": "L’UE indique la puissance en kW, la publicité utilise les CV. 100 kW = 136 CV."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Véhicules électriques",
+          "description": "Puissance des moteurs EV en kW. Tesla Model S : ~375 kW = 510 CV."
+        },
+        {
+          "icon": "RiMotorbikeeLine",
+          "title": "Motos",
+          "description": "Fiches techniques en kW (Europe) ou HP (USA)."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Machines",
+          "description": "Moteurs industriels et générateurs en kW ou HP."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Deux définitions : CV métrique (PS) = 735,499 W. HP mécanique (BHP) = 745,7 W. Ce convertisseur utilise le CV métrique.</p><p class=\"text-mid\">kW en CV : multipliez par 1,35962. CV en kW : multipliez par 0,7355.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Deux définitions : CV métrique (PS) = 735,499 W. HP mécanique (BHP) = 745,7 W. Ce convertisseur utilise le CV métrique.</p><p class=\"text-mid\">kW en CV : multipliez par 1,35962. CV en kW : multipliez par 0,7355.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilowatt vs Cheval-vapeur – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilowatt (kW)"
+        },
+        {
+          "id": "unit2",
+          "name": "Cheval-vapeur (CV)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Système",
+          "values": {
+            "unit1": "Métrique (SI)",
+            "unit2": "Traditionnel"
+          }
+        },
+        {
+          "name": "Valeur de base",
+          "values": {
+            "unit1": "1 000 W",
+            "unit2": "~735,5 W (métrique)"
+          }
+        },
+        {
+          "name": "Automobiles",
+          "values": {
+            "unit1": "UE (fiche technique)",
+            "unit2": "Marketing mondial"
+          }
+        },
+        {
+          "name": "Documents légaux",
+          "values": {
+            "unit1": "UE, Japon",
+            "unit2": "USA, UK"
+          }
+        },
+        {
+          "name": "Véhicules électriques",
+          "values": {
+            "unit1": "Utilisé universellement",
+            "unit2": "Utilisé en marketing"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de CV font 100 kW ?",
+          "answer": "100 kW = 135,96 CV métriques (PS) ou 134,10 HP mécaniques."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "kW na KM – Arteon",
+      "defaultSubject": "Feedback : kw-to-hp"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

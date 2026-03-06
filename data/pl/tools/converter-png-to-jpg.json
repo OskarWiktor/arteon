@@ -3,7 +3,7 @@
   "locale": "pl",
   "metadata": {
     "title": "Konwerter PNG na JPG – zamień format obrazu za darmo",
-    "description": "Zamień pliki PNG na JPG w przeglądarce. Bez limitu plików, bez rejestracji. Konwersja odbywa się lokalnie — pliki nie są wysyłane na serwer.",
+    "description": "Zamień pliki PNG na JPG w przeglądarce. Bez limitu plików, bez rejestracji. Konwersja odbywa się lokalnie - pliki nie są wysyłane na serwer.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-png-na-jpg"
   },
@@ -28,7 +28,7 @@
       "alternateName": ["Zamiana PNG na JPG online", "Konwersja PNG do JPG", "Zmiana formatu PNG na JPG"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Darmowy konwerter PNG na JPG online. Zamień pliki PNG na JPG w przeglądarce — pliki nie są wysyłane na serwer. Bez limitu plików i rejestracji.",
+      "description": "Darmowy konwerter PNG na JPG online. Zamień pliki PNG na JPG w przeglądarce - pliki nie są wysyłane na serwer. Bez limitu plików i rejestracji.",
       "featureList": [
         "Konwersja PNG do JPG",
         "Regulacja poziomu jakości (60–95%)",
@@ -65,7 +65,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować PNG na JPG?",
-      "html": "<p class=\"text-mid mb-4\">PNG (Portable Network Graphics) to format bezstratny, który zachowuje pełną jakość obrazu i obsługuje przezroczystość (kanał alfa). Pliki PNG są jednak znacznie większe od JPG — zdjęcie o rozdzielczości 3000×2000 pikseli w PNG może ważyć 8–15 MB, podczas gdy w JPG przy jakości 85% zajmie 0,5–1,5 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) to format stratny, który kompresuje obraz poprzez usunięcie szczegółów niewidocznych dla ludzkiego oka. Przy jakości 80–85% różnica wizualna jest praktycznie niezauważalna, a plik jest kilkukrotnie mniejszy. Format JPG jest obsługiwany przez każdy program, przeglądarkę i platformę.</p><p class=\"text-mid\">Konwersja PNG na JPG ma sens, gdy obraz nie wymaga przezroczystości — na przykład zdjęcia, screenshoty z jednolitym tłem, grafiki do e-maili czy obrazy do formularzy online z ograniczeniem rozmiaru pliku.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG (Portable Network Graphics) to format bezstratny, który zachowuje pełną jakość obrazu i obsługuje przezroczystość (kanał alfa). Pliki PNG są jednak znacznie większe od JPG - zdjęcie o rozdzielczości 3000×2000 pikseli w PNG może ważyć 8–15 MB, podczas gdy w JPG przy jakości 85% zajmie 0,5–1,5 MB.</p><p class=\"text-mid mb-4\">JPG (JPEG) to format stratny, który kompresuje obraz poprzez usunięcie szczegółów niewidocznych dla ludzkiego oka. Przy jakości 80–85% różnica wizualna jest praktycznie niezauważalna, a plik jest kilkukrotnie mniejszy. Format JPG jest obsługiwany przez każdy program, przeglądarkę i platformę.</p><p class=\"text-mid\">Konwersja PNG na JPG ma sens, gdy obraz nie wymaga przezroczystości - na przykład zdjęcia, screenshoty z jednolitym tłem, grafiki do e-maili czy obrazy do formularzy online z ograniczeniem rozmiaru pliku.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter PNG na JPG – Arteon"
     },
@@ -140,7 +140,7 @@
         {
           "icon": "RiShieldCheckLine",
           "title": "Pełna prywatność",
-          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce — nic nie jest wysyłane na serwer. Po zamknięciu strony dane są usuwane."
+          "description": "Pliki nie opuszczają komputera. Konwersja odbywa się w przeglądarce - nic nie jest wysyłane na serwer. Po zamknięciu strony dane są usuwane."
         },
         {
           "icon": "RiInfinityFill",
@@ -243,8 +243,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ustawienia jakości — co wybrać przy konwersji PNG na JPG?",
-      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> — dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> — dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> — gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem PNG a wynikowym JPG jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
+      "title": "Ustawienia jakości - co wybrać przy konwersji PNG na JPG?",
+      "html": "<p class=\"text-mid\">Suwak jakości pozwala ustawić wartość od 60% do 95%. Wyższa wartość oznacza lepszą jakość obrazu, ale też większy rozmiar pliku.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (domyślne)</strong> - dobry kompromis dla większości zastosowań: strony firmowe, blogi, artykuły. Różnica wizualna w porównaniu z oryginałem jest praktycznie niezauważalna.</li><li><strong>85–90%</strong> - dla zdjęć produktowych, portfolio fotograficznych i galerii, gdzie jakość jest priorytetem. Plik będzie nieco większy, ale zachowa więcej detali.</li><li><strong>60–70%</strong> - gdy priorytetem jest minimalizacja rozmiaru, np. miniaturki w siatce kategorii lub podglądy w wyszukiwarce wewnętrznej.</li></ul><p class=\"text-mid mt-3\">Przy jakości 85% różnica wizualna między oryginałem PNG a wynikowym JPG jest praktycznie niezauważalna gołym okiem, a plik jest znacząco mniejszy.</p>"
     },
     {
       "type": "gap",
@@ -262,7 +262,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów PNG na JPG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów PNG na JPG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -292,7 +292,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PNG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PNG, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -319,23 +319,23 @@
         },
         {
           "question": "Ile miejsca mogę zaoszczędzić?",
-          "answer": "Oszczędność zależy od treści obrazu. Zdjęcia w PNG o rozmiarze 5–10 MB po konwersji na JPG przy jakości 85% zwykle zajmują 0,3–1 MB — to redukcja o 80–95%. Grafiki z dużymi jednolitymi obszarami (np. screenshoty) dają mniejsze oszczędności."
+          "answer": "Oszczędność zależy od treści obrazu. Zdjęcia w PNG o rozmiarze 5–10 MB po konwersji na JPG przy jakości 85% zwykle zajmują 0,3–1 MB - to redukcja o 80–95%. Grafiki z dużymi jednolitymi obszarami (np. screenshoty) dają mniejsze oszczędności."
         },
         {
           "question": "Czy mogę konwertować wiele plików naraz?",
-          "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie — nie ma limitu. Wszystkie zostaną przekonwertowane, a potem można pobrać je pojedynczo lub wszystkie naraz."
+          "answer": "Tak. Można dodać dowolną liczbę plików jednocześnie - nie ma limitu. Wszystkie zostaną przekonwertowane, a potem można pobrać je pojedynczo lub wszystkie naraz."
         },
         {
           "question": "Czy pliki są wysyłane na serwer?",
-          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera — nie są przesyłane na żaden serwer. Po zamknięciu strony dane są usuwane z pamięci."
+          "answer": "Nie. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie opuszczają komputera - nie są przesyłane na żaden serwer. Po zamknięciu strony dane są usuwane z pamięci."
         },
         {
           "question": "Czy konwersja PNG na JPG jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
-          "question": "Czy mogę konwertować wiele plików PNG jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "question": "Co się stanie z przezroczystością PNG przy konwersji na JPG?",
+          "answer": "JPG nie obsługuje przezroczystości. Przezroczyste obszary z pliku PNG zostaną zastąpione białym tłem. Jeśli chcesz zachować przezroczystość, rozważ konwersję na WebP lub AVIF."
         }
       ]
     },

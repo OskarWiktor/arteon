@@ -1,0 +1,285 @@
+{
+  "toolKey": "rgbToCmyk",
+  "locale": "en",
+  "metadata": {
+    "title": "RGB to CMYK converter",
+    "description": "Convert RGB color values to CMYK and vice versa. Essential for preparing web graphics for print production.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/rgb-to-cmyk-converter"
+  },
+  "hero": {
+    "title": "Convert RGB to CMYK",
+    "description": "This converter converts RGB color values to CMYK percentages. Enter values and the result appears instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/rgb-to-cmyk-converter",
+      "label": "RGB to CMYK"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "RGB to CMYK converter",
+      "alternateName": ["RGB to CMYK color converter", "Screen to print color converter", "Color mode converter"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert RGB color values to CMYK and vice versa. Essential for preparing web graphics for print production.",
+      "featureList": ["Real-time color conversion", "Color preview", "Copy CMYK values", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the RGB to CMYK converter",
+      "description": "Instructions: RGB to CMYK.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter RGB values",
+          "text": "Type R, G, B values (0–255 each)."
+        },
+        {
+          "name": "Read CMYK values",
+          "text": "CMYK percentages appear instantly."
+        },
+        {
+          "name": "Copy values",
+          "text": "Copy CMYK values for print preparation."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert RGB to CMYK?",
+      "html": "<p class=\"text-mid mb-4\">RGB (Red, Green, Blue) is the additive color model used by screens. CMYK (Cyan, Magenta, Yellow, Key/Black) is the subtractive model used by printers. Colors look different in each model because they work differently.</p><p class=\"text-mid mb-4\">Converting RGB to CMYK is essential when preparing digital designs for print. Without conversion, bright screen colors may appear dull or shifted when printed.</p><p class=\"text-mid mb-4\">Not all RGB colors can be reproduced in CMYK — the CMYK gamut is smaller. Vivid neon greens, bright blues, and saturated oranges are particularly affected.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB to CMYK converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Przygotowanie do druku",
+          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+        },
+        {
+          "icon": "RiPaletteLine",
+          "title": "Weryfikacja kolorów",
+          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+        },
+        {
+          "icon": "RiBookOpenLine",
+          "title": "Materiały brandingowe",
+          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Fotografia",
+          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does RGB to CMYK conversion work?",
+      "html": "<p class=\"text-mid mb-4\">First, normalize RGB to 0–1 range: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">This is a mathematical conversion. Actual printed results depend on ink, paper, and ICC profiles. For production printing, use ICC profile-based conversion in Photoshop or InDesign.</p><p class=\"text-mid\">This converter provides a mathematical estimate. For critical color work, always use proper ICC profiles and get a proof print.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Pure black: RGB(0,0,0) = CMYK(0,0,0,100). Rich black for print: CMYK(60,40,40,100).</li><li>Pure white: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Bright colors lose vibrancy in CMYK. Design with CMYK gamut in mind from the start.</li><li>Total ink coverage should not exceed 300% for most printing processes.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "RGB vs CMYK – comparison",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "RGB"
+        },
+        {
+          "id": "unit2",
+          "name": "CMYK",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Model",
+          "values": {
+            "unit1": "Additive (light)",
+            "unit2": "Subtractive (ink)"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "Screens, web",
+            "unit2": "Print, packaging"
+          }
+        },
+        {
+          "name": "Gamut",
+          "values": {
+            "unit1": "Wider (more colors)",
+            "unit2": "Narrower"
+          }
+        },
+        {
+          "name": "Black",
+          "values": {
+            "unit1": "R=0, G=0, B=0",
+            "unit2": "K=100%"
+          }
+        },
+        {
+          "name": "White",
+          "values": {
+            "unit1": "R=255, G=255, B=255",
+            "unit2": "No ink (paper)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Why do CMYK prints look different from the screen?",
+          "answer": "Screens emit light (RGB), printers use ink (CMYK). CMYK has a smaller color gamut, so bright/vivid colors appear duller in print."
+        },
+        {
+          "question": "Can all RGB colors be printed in CMYK?",
+          "answer": "No. Neon colors, vivid blues, and bright oranges cannot be accurately reproduced. The CMYK gamut is about 50–70% of the RGB gamut."
+        },
+        {
+          "question": "What is rich black?",
+          "answer": "CMYK(60,40,40,100) or similar. Pure K=100 looks gray. Rich black adds CMY for a deeper, darker black in print."
+        },
+        {
+          "question": "Should I design in RGB or CMYK?",
+          "answer": "Design in CMYK if the final output is print. Design in RGB for web/screen. For both, design in RGB and convert to CMYK for print."
+        },
+        {
+          "question": "Are calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "RGB na CMYK – Arteon",
+      "defaultSubject": "Feedback: rgb-to-cmyk"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

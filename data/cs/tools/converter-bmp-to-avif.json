@@ -2,7 +2,7 @@
   "toolKey": "bmpToAvif",
   "locale": "cs",
   "metadata": {
-    "title": "Převodník BMP na AVIF — BMP AVIF",
+    "title": "Převodník BMP na AVIF - BMP AVIF",
     "description": "Převeďte nekomprimované soubory BMP na ultrakompaktní AVIF. Bez instalace, funguje na jakémkoli zařízení. Zdarma, soukromé a neomezené.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-bmp-na-avif"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Nastavte kvalitu",
-          "text": "Upravte posuvník kvality AVIF — nižší hodnoty vytvářejí menší soubory."
+          "text": "Upravte posuvník kvality AVIF - nižší hodnoty vytvářejí menší soubory."
         },
         {
           "position": 3,
           "name": "Konvertujte",
-          "text": "Klikněte na Konvertovat — soubory se zpracují lokálně v prohlížeči."
+          "text": "Klikněte na Konvertovat - soubory se zpracují lokálně v prohlížeči."
         },
         {
           "position": 4,
           "name": "Stahnete",
-          "text": "Stáhněte hotové soubory AVIF — jednotlivě nebo všechny naraz."
+          "text": "Stáhněte hotové soubory AVIF - jednotlivě nebo všechny naraz."
         }
       ]
     }
@@ -252,8 +252,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Nastaveni kvality — co zvolit pri konverzi BMP na AVIF?",
-      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 80% je rozdil mezi originalnim BMP a vyslednym AVIF nepostrehnutelny.</p>"
+      "title": "Nastaveni kvality - co zvolit pri konverzi BMP na AVIF?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (vychozi) - dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% - pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% - kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 80% je rozdil mezi originalnim BMP a vyslednym AVIF nepostrehnutelny.</p>"
     },
     {
       "type": "gap",

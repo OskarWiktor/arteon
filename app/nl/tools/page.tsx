@@ -43,7 +43,7 @@ export const metadata = {
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  name: 'Gratis online tools — afbeeldingsconverters, SEO, kleuren, favicon',
+  name: 'Gratis online tools - afbeeldingsconverters, SEO, kleuren, favicon',
   description:
     'Gratis online tools: 12 afbeeldingsconverters (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), favicon-generator, afbeeldingseditor, tekst-teller, kleurpaletten en QR-codes. Zonder registratie.',
   url: toAbsoluteUrl('/nl/tools'),
@@ -63,7 +63,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 1,
         name: 'JPG- en PNG-naar-WebP-converter online',
-        description: 'Gratis online JPG- en PNG-naar-WebP-converter. Verklein bestanden tot 35\u00a0% zonder zichtbaar kwaliteitsverlies. Zonder registratie — bestanden blijven in uw browser.',
+        description: 'Gratis online JPG- en PNG-naar-WebP-converter. Verklein bestanden tot 35\u00a0% zonder zichtbaar kwaliteitsverlies. Zonder registratie - bestanden blijven in uw browser.',
         url: toAbsoluteUrl('/nl/tools/jpg-naar-webp-converter'),
         applicationCategory: 'MultimediaApplication',
         operatingSystem: 'Any',
@@ -81,7 +81,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 3,
         name: 'Online favicon-generator',
-        description: 'Gratis online favicon-generator. Maak favicon.ico en PNG-pictogrammen (16×16 tot 512×512) vanuit één afbeelding — conform browser- en Lighthouse-vereisten.',
+        description: 'Gratis online favicon-generator. Maak favicon.ico en PNG-pictogrammen (16×16 tot 512×512) vanuit één afbeelding - conform browser- en Lighthouse-vereisten.',
         url: toAbsoluteUrl('/nl/tools/gratis-favicon-generator'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -126,7 +126,7 @@ const schema = {
         '@type': 'WebApplication',
         position: 8,
         name: 'Kleurpalettengenerator online',
-        description: 'Genereer kleurpaletten vanuit een basiskleur. Monochromatisch, triadisch, analoog, complementair en meer — plus pastel-, donkere en minimalistische varianten.',
+        description: 'Genereer kleurpaletten vanuit een basiskleur. Monochromatisch, triadisch, analoog, complementair en meer - plus pastel-, donkere en minimalistische varianten.',
         url: toAbsoluteUrl('/nl/tools/kleurpalettengenerator'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
@@ -544,7 +544,7 @@ const faqItems = [
   { question: 'Wat kosten de tools?', answer: 'Niets. Alle tools zijn gratis, zonder abonnementen en zonder verborgen kosten.' },
   { question: 'Worden mijn bestanden naar een server gestuurd?', answer: 'Nee. Alle tools draaien volledig in uw browser. Bestanden verlaten nooit uw computer en worden nergens opgeslagen.' },
   { question: 'Heb ik een account nodig?', answer: 'Nee. U kunt de tools direct gebruiken, zonder in te loggen of een account aan te maken.' },
-  { question: 'Is er een gebruikslimiet?', answer: 'Nee. Gebruik zonder beperkingen — geen dagelijkse limieten, geen bestandslimieten, geen conversielimieten.' },
+  { question: 'Is er een gebruikslimiet?', answer: 'Nee. Gebruik zonder beperkingen - geen dagelijkse limieten, geen bestandslimieten, geen conversielimieten.' },
   {
     question: 'Waar zijn deze tools voor?',
     answer:
@@ -575,7 +575,7 @@ export default function ToolsIndexPage() {
               icon: <RiCropLine className="h-8 w-8" />,
               title: 'Online afbeeldingseditor',
               topImageAlt: 'Online afbeeldingseditor Arteon',
-              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/online-afbeeldingseditor-nl.webp',
+              topImageSrc: '/assets/tools/free-image-editor-crop-resize-and-convert/afbeeldingeneditor-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
                   <p>
@@ -583,7 +583,7 @@ export default function ToolsIndexPage() {
                     WebP.
                   </p>
                   <div className="mt-4">
-                    <Button arrow link="/nl/tools/online-afbeeldingseditor">
+                    <Button arrow link="/nl/tools/afbeeldingeneditor">
                       Open tool
                     </Button>
                   </div>
@@ -598,7 +598,7 @@ export default function ToolsIndexPage() {
               description: (
                 <div className="flex h-full flex-col">
                   <p>
-                    Genereer <strong>favicon.ico</strong> en PNG-pictogrammen 180x180, 192x192 en 512x512 vanuit één afbeelding — conform browser- en Lighthouse-vereisten.
+                    Genereer <strong>favicon.ico</strong> en PNG-pictogrammen 180x180, 192x192 en 512x512 vanuit één afbeelding - conform browser- en Lighthouse-vereisten.
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/nl/tools/gratis-favicon-generator">
@@ -624,7 +624,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/free-meta-title-and-description-checker-pixel-width/meta-titel-beschrijving-checker-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Controleer het aantal tekens, woorden en pixelbreedte — met Google-voorbeeld. Vermijd afgekapte titels en beschrijvingen in zoekresultaten.</p>
+                  <p>Controleer het aantal tekens, woorden en pixelbreedte - met Google-voorbeeld. Vermijd afgekapte titels en beschrijvingen in zoekresultaten.</p>
                   <div className="mt-4">
                     <Button arrow link="/nl/tools/meta-titel-beschrijving-checker">
                       Tool openen
@@ -646,6 +646,23 @@ export default function ToolsIndexPage() {
                   </p>
                   <div className="mt-4">
                     <Button arrow link="/nl/tools/woorden-en-tekenteller">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+
+            {
+              icon: <RiFileTextLine className="h-8 w-8" />,
+              title: 'Lorem Ipsum-generator',
+              topImageAlt: 'Lorem Ipsum-generator Arteon',
+              topImageSrc: '/assets/tools/lorem-ipsum-generator/lorem-ipsum-generator-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Genereer opvultekst in 8 stijlen en 9 modi. Lorem Ipsum, Hipster, Business, Bacon en meer. Kopieer als tekst of HTML.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/lorem-ipsum-generator">
                       Tool openen
                     </Button>
                   </div>
@@ -697,7 +714,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/qr-code-generator/gratis-qr-code-generator-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Maak een QR-code voor een website, vCard, restaurantmenu of flyer. Export naar PNG en SVG — zonder registratie, zonder limieten.</p>
+                  <p>Maak een QR-code voor een website, vCard, restaurantmenu of flyer. Export naar PNG en SVG - zonder registratie, zonder limieten.</p>
                   <div className="mt-4">
                     <Button arrow link="/nl/tools/gratis-qr-code-generator">
                       Tool openen
@@ -742,7 +759,7 @@ export default function ToolsIndexPage() {
               topImageSrc: '/assets/tools/image-color-extractor/kleurextractor-uit-afbeelding-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Upload een foto of logo — de tool extraheert de dominante kleuren. Kopieer HEX-codes met één klik en gebruik ze overal.</p>
+                  <p>Upload een foto of logo - de tool extraheert de dominante kleuren. Kopieer HEX-codes met één klik en gebruik ze overal.</p>
                   <div className="mt-4">
                     <Button arrow link="/nl/tools/kleurextractor-uit-afbeelding">
                       Tool openen
@@ -774,7 +791,7 @@ export default function ToolsIndexPage() {
 
         <SectionSteps
           title="Afbeeldingsformaat converters"
-          description="12 online afbeeldingsconverters — converteer tussen JPG, PNG, WebP, SVG, BMP en GIF. Conversie in de browser, geen bestanden verzonden."
+          description="12 online afbeeldingsconverters - converteer tussen JPG, PNG, WebP, SVG, BMP en GIF. Conversie in de browser, geen bestanden verzonden."
           grid="three"
           items={[
             {
@@ -873,17 +890,26 @@ export default function ToolsIndexPage() {
                 </div>
               ),
             },
+          ]}
+        />
+        <Gap size="sm" />
+
+        <SectionSteps
+          title="Dataconverters"
+          description="Online dataformaatconverters — converteer tussen CSV, JSON, XML, YAML, Markdown en HTML. Verwerking in uw browser."
+          grid="three"
+          items={[
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG naar PNG converter',
-              topImageAlt: 'SVG naar PNG converter Arteon',
+              title: 'CSV naar JSON',
+              topImageAlt: 'CSV naar JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Converteer SVG-vectorafbeeldingen naar PNG. Ideaal voor documenten en social media.</p>
+                  <p>Converteer CSV naar JSON-formaat. Automatische scheidingstekens en opmaak.</p>
                   <div className="mt-4">
-                    <Button arrow link="/nl/tools/svg-naar-png-converter">
-                      Open tool
+                    <Button arrow link="/nl/tools/csv-naar-json-converter">
+                      Tool openen
                     </Button>
                   </div>
                 </div>
@@ -891,15 +917,15 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'SVG naar JPG converter',
-              topImageAlt: 'SVG naar JPG converter Arteon',
+              title: 'JSON naar CSV',
+              topImageAlt: 'JSON naar CSV Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Converteer SVG-afbeeldingen naar compact JPG. Kleiner bestand, volledige compatibiliteit.</p>
+                  <p>Converteer JSON-gegevens naar CSV-formaat. Verwerking in de browser.</p>
                   <div className="mt-4">
-                    <Button arrow link="/nl/tools/svg-naar-jpg-converter">
-                      Open tool
+                    <Button arrow link="/nl/tools/json-naar-csv-converter">
+                      Tool openen
                     </Button>
                   </div>
                 </div>
@@ -907,15 +933,63 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiLoopLeftLine className="h-8 w-8" />,
-              title: 'BMP naar JPG converter',
-              topImageAlt: 'BMP naar JPG converter Arteon',
+              title: 'XML naar JSON',
+              topImageAlt: 'XML naar JSON Arteon',
               topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
               description: (
                 <div className="flex h-full flex-col">
-                  <p>Converteer BMP-bestanden naar lichtgewicht JPG. Drastische verkleining.</p>
+                  <p>Converteer XML-gegevens naar JSON. Conversie in de browser met validatie.</p>
                   <div className="mt-4">
-                    <Button arrow link="/nl/tools/bmp-naar-jpg-converter">
-                      Open tool
+                    <Button arrow link="/nl/tools/xml-naar-json-converter">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON naar XML',
+              topImageAlt: 'JSON naar XML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer JSON-gegevens naar geldig XML. Conversie in de browser.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/json-naar-xml-converter">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'YAML naar JSON',
+              topImageAlt: 'YAML naar JSON Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer YAML-configuratie naar JSON. Validatie en opmaak in de browser.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/yaml-naar-json-converter">
+                      Tool openen
+                    </Button>
+                  </div>
+                </div>
+              ),
+            },
+            {
+              icon: <RiLoopLeftLine className="h-8 w-8" />,
+              title: 'JSON naar YAML',
+              topImageAlt: 'JSON naar YAML Arteon',
+              topImageSrc: '/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp',
+              description: (
+                <div className="flex h-full flex-col">
+                  <p>Converteer JSON-gegevens naar leesbaar YAML. Verwerking in de browser.</p>
+                  <div className="mt-4">
+                    <Button arrow link="/nl/tools/json-naar-yaml-converter">
+                      Tool openen
                     </Button>
                   </div>
                 </div>
@@ -930,10 +1004,10 @@ export default function ToolsIndexPage() {
 
         <SectionInfo title="Wat zijn Arteon-tools?">
           <p className="mb-4">
-            Gratis online tools voor het voorbereiden van materialen voor websites, social media en drukwerk — WebP-converter, favicon-generator, tekstteller, kleurextractor, palettengenerator en
+            Gratis online tools voor het voorbereiden van materialen voor websites, social media en drukwerk - WebP-converter, favicon-generator, tekstteller, kleurextractor, palettengenerator en
             QR-codes.
           </p>
-          <p>Alle tools draaien in uw browser — bestanden worden nooit naar een server gestuurd. Gebruik ze zonder registratie en zonder limieten.</p>
+          <p>Alle tools draaien in uw browser - bestanden worden nooit naar een server gestuurd. Gebruik ze zonder registratie en zonder limieten.</p>
         </SectionInfo>
 
         <Gap variant="line" />
@@ -945,12 +1019,12 @@ export default function ToolsIndexPage() {
             {
               icon: <RiShieldCheckLine className="h-6 w-6" />,
               title: 'Volledige privacy',
-              description: 'Alle tools verwerken bestanden lokaal in uw browser. Niets wordt naar een server gestuurd — gegevens verdwijnen wanneer u het tabblad sluit.',
+              description: 'Alle tools verwerken bestanden lokaal in uw browser. Niets wordt naar een server gestuurd - gegevens verdwijnen wanneer u het tabblad sluit.',
             },
             {
               icon: <RiInfinityFill className="h-6 w-6" />,
               title: 'Geen gebruikslimieten',
-              description: 'Gebruik zonder beperkingen — geen dagelijkse limieten, geen bestandslimieten, geen conversielimieten. Zo vaak als u nodig heeft.',
+              description: 'Gebruik zonder beperkingen - geen dagelijkse limieten, geen bestandslimieten, geen conversielimieten. Zo vaak als u nodig heeft.',
             },
             {
               icon: <RiLockLine className="h-6 w-6" />,
@@ -960,7 +1034,7 @@ export default function ToolsIndexPage() {
             {
               icon: <RiGlobalLine className="h-6 w-6" />,
               title: 'Beschikbaar in het Nederlands',
-              description: 'Alle tools zijn beschikbaar in het Nederlands — interface, instructies en meldingen.',
+              description: 'Alle tools zijn beschikbaar in het Nederlands - interface, instructies en meldingen.',
             },
           ]}
         />

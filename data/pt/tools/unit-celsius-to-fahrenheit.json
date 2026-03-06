@@ -1,0 +1,273 @@
+{
+  "toolKey": "celsiusToFahrenheit",
+  "locale": "pt",
+  "metadata": {
+    "title": "Conversor de Celsius para Fahrenheit",
+    "description": "Converta Celsius para Fahrenheit e vice-versa. Essencial para cozinha, viagens e leituras médicas.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+    "path": "/pt/ferramentas/conversor-celsius-para-fahrenheit"
+  },
+  "hero": {
+    "title": "Converter Celsius para Fahrenheit",
+    "description": "Este conversor converte instantaneamente. Introduza um valor e o resultado aparece imediatamente.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/pt/ferramentas",
+      "label": "Ferramentas"
+    },
+    "third": {
+      "href": "/pt/ferramentas/conversor-celsius-para-fahrenheit",
+      "label": "°C para °F"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Conversor de Celsius para Fahrenheit",
+      "alternateName": ["Converter Celsius para Fahrenheit"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Converta Celsius para Fahrenheit e vice-versa. Essencial para cozinha, viagens e leituras médicas.",
+      "featureList": ["Conversão bidirecional em tempo real", "Todos os conversores num só lugar", "Copiar resultado para a área de transferência", "Cálculo local no navegador"]
+    },
+    "howTo": {
+      "name": "Como usar o conversor",
+      "description": "Guia rápido para usar o conversor.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Introduzir valor",
+          "text": "Escreva um número no campo de entrada à esquerda."
+        },
+        {
+          "name": "Ler o resultado",
+          "text": "O resultado da conversão aparece instantaneamente no campo ao lado."
+        },
+        {
+          "name": "Copiar ou inverter",
+          "text": "Clique em Copiar resultado ou em Inverter para converter na direção oposta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quando precisa converter Celsius em Fahrenheit?",
+      "html": "<p class=\"text-mid mb-4\">Celsius (°C) é a escala de temperatura padrão na maior parte do mundo. Fahrenheit (°F) é usado nos EUA. Fórmula: °F = °C × 9/5 + 32.</p><p class=\"text-mid mb-4\">Exemplos: 0°C = 32°F (congelamento), 37°C = 98,6°F (temperatura corporal), 100°C = 212°F (ebulição).</p><p class=\"text-mid\">Todos os cálculos são executados localmente no seu navegador.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Conversor de Celsius para Fahrenheit – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Como usar o conversor?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Insira um valor",
+          "description": "Digite um número no campo de entrada. Pode usar ponto ou vírgula como separador decimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Leia o resultado",
+          "description": "O resultado da conversão aparece instantaneamente no campo adjacente.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copie ou inverta",
+          "description": "Clique em Copiar resultado ou use o botão Inverter para converter na direção oposta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quando este conversor é útil?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiSunLine",
+          "title": "Viagens aos EUA",
+          "description": "A previsão do tempo nos EUA usa °F: 70°F = 21°C, 90°F = 32°C."
+        },
+        {
+          "icon": "RiFireLine",
+          "title": "Culinária",
+          "description": "Receitas americanas: 350°F = 177°C, 400°F = 204°C."
+        },
+        {
+          "icon": "RiHeartPulseLine",
+          "title": "Medicina",
+          "description": "Temperatura corporal: 98,6°F = 37°C. Febre: 100,4°F = 38°C."
+        },
+        {
+          "icon": "RiFlaskLine",
+          "title": "Ar-condicionado",
+          "description": "Termostatos nos EUA em °F: 72°F = 22,2°C."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "O que diferencia este conversor?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Privacidade total",
+          "description": "Todos os cálculos são executados localmente no seu navegador. Nenhum dado é enviado."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Resultados em tempo real",
+          "description": "O resultado atualiza instantaneamente enquanto digita."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversão bidirecional",
+          "description": "O botão Inverter permite converter em ambas as direções com um clique."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela de referência",
+          "description": "Uma tabela com valores de conversão comuns e descrições contextuais."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: °F = °C × 9/5 + 32. Inversa: °C = (°F − 32) × 5/9.</p><p class=\"text-mid\">As escalas coincidem a −40°: −40°C = −40°F.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Como funciona a conversão?",
+      "html": "<p class=\"text-mid mb-4\">Fórmula: °F = °C × 9/5 + 32. Inversa: °C = (°F − 32) × 5/9.</p><p class=\"text-mid\">As escalas coincidem a −40°: −40°C = −40°F.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Celsius vs Fahrenheit – comparação",
+      "featureLabel": "Característica",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Celsius (°C)"
+        },
+        {
+          "id": "unit2",
+          "name": "Fahrenheit (°F)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Congelamento da água",
+          "values": {
+            "unit1": "0°C",
+            "unit2": "32°F"
+          }
+        },
+        {
+          "name": "Ebulição da água",
+          "values": {
+            "unit1": "100°C",
+            "unit2": "212°F"
+          }
+        },
+        {
+          "name": "Temperatura corporal",
+          "values": {
+            "unit1": "37°C",
+            "unit2": "98,6°F"
+          }
+        },
+        {
+          "name": "Utilização",
+          "values": {
+            "unit1": "Internacional",
+            "unit2": "EUA"
+          }
+        },
+        {
+          "name": "Ciência",
+          "values": {
+            "unit1": "Kelvin (K = °C + 273)",
+            "unit2": "Rankine"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Perguntas frequentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Como converter Celsius em Fahrenheit?",
+          "answer": "Multiplique °C por 1,8 e some 32. Exemplo: 25°C × 1,8 + 32 = 77°F."
+        },
+        {
+          "question": "Os cálculos são feitos localmente?",
+          "answer": "Sim. Todos os cálculos são executados no seu navegador."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Ajude-nos a melhorar as nossas ferramentas",
+      "description": "Tem uma ideia, encontrou um bug ou quer sugerir uma funcionalidade? Escreva-nos – respondemos em 24 horas.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
+      "imageAlt": "°C na °F – Arteon",
+      "defaultSubject": "Feedback: celsius-to-fahrenheit"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Mais ferramentas gratuitas"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "toolKey": "inchesToPxDpi",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur pouces en pixels (DPI)",
+    "description": "Convertissez pouces en pixels à toute résolution DPI. Pour la préparation d'images.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-pouces-en-px"
+  },
+  "hero": {
+    "title": "Convertir pouces en pixels",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-pouces-en-px",
+      "label": "pouces en px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur pouces en pixels (DPI)",
+      "alternateName": ["Convertir pouces en pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez pouces en pixels à toute résolution DPI. Pour la préparation d'images.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des pouces en pixels ?",
+      "html": "<p class=\"text-mid mb-4\">Les formats de papier US utilisent des pouces. Pour les données d’impression : Pixels = pouces × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) à 300 DPI = 2 550 × 3 300 pixels. Photo 4 × 6″ à 300 DPI = 1 200 × 1 800 pixels.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur pouces en pixels (DPI) – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat apparaît instantanément.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Copiez le résultat ou inversez la direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiPrinterLine",
+          "title": "Tirages photo",
+          "description": "Standard : 4×6″ = 1 200×1 800 px, 8×10″ = 2 400×3 000 px à 300 DPI."
+        },
+        {
+          "icon": "RiMonitorLine",
+          "title": "Formats US",
+          "description": "Letter (8,5×11″) à 300 DPI = 2 550×3 300 px."
+        },
+        {
+          "icon": "RiImageLine",
+          "title": "Affiches",
+          "description": "Affiche 24×36″ à 150 DPI = 3 600×5 400 px."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "Écrans",
+          "description": "Densité : moniteur 27″ 4K = 163 PPI. 24″ 1080p = 92 PPI."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Convertissez dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Tableau avec valeurs courantes et descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Formule simple : Pixels = pouces × DPI. À 300 DPI : 1 pouce = 300 pixels.</p><p class=\"text-mid\">Pour trouver le DPI nécessaire : DPI = Pixels / pouces.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">Formule simple : Pixels = pouces × DPI. À 300 DPI : 1 pouce = 300 pixels.</p><p class=\"text-mid\">Pour trouver le DPI nécessaire : DPI = Pixels / pouces.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Formats d’impression courants à 300 DPI",
+      "featureLabel": "Format",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Pouces"
+        },
+        {
+          "id": "unit2",
+          "name": "Pixels (300 DPI)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Photo passeport",
+          "values": {
+            "unit1": "2,5 × 3,5″",
+            "unit2": "750 × 1 050"
+          }
+        },
+        {
+          "name": "Photo 4×6",
+          "values": {
+            "unit1": "4 × 6″",
+            "unit2": "1 200 × 1 800"
+          }
+        },
+        {
+          "name": "Photo 8×10",
+          "values": {
+            "unit1": "8 × 10″",
+            "unit2": "2 400 × 3 000"
+          }
+        },
+        {
+          "name": "US Letter",
+          "values": {
+            "unit1": "8,5 × 11″",
+            "unit2": "2 550 × 3 300"
+          }
+        },
+        {
+          "name": "Affiche (24×36)",
+          "values": {
+            "unit1": "24 × 36″",
+            "unit2": "7 200 × 10 800"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de pixels fait 1 pouce à 300 DPI ?",
+          "answer": "1 pouce à 300 DPI = 300 pixels."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "cale na px – Arteon",
+      "defaultSubject": "Feedback : inches-to-px-dpi"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

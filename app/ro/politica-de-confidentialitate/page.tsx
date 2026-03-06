@@ -140,7 +140,7 @@ export default function PoliticaDeConfidentialitatePage() {
               <li>furnizori de hosting/aplicații (de ex. Vercel),</li>
               <li>furnizori de instrumente analitice (Google Ireland Ltd., Ahrefs Pte. Ltd., Vercel Inc., Metricool S.L.),</li>
               <li>furnizori de servicii publicitare (Google Ireland Ltd. - Google AdSense),</li>
-              <li>birou contabil, procesatori de plăți sau consilieri juridici — dacă este necesar.</li>
+              <li>birou contabil, procesatori de plăți sau consilieri juridici - dacă este necesar.</li>
             </ul>
             <p>Toți destinatarii prelucrează datele în conformitate cu RGPD pe baza acordurilor corespunzătoare.</p>
           </SectionInfo>
@@ -167,10 +167,10 @@ export default function PoliticaDeConfidentialitatePage() {
 
           <SectionInfo title="8. Perioada de păstrare a datelor">
             <ul className="list-disc space-y-1 pl-6">
-              <li>Date din formularul de contact — până la 12 luni de la încheierea corespondenței.</li>
-              <li>Date ale clienților — pentru perioada prevăzută de lege (documentație contabilă).</li>
-              <li>Date analitice — conform politicii Google Analytics (de ex. 26 de luni).</li>
-              <li>Jurnale — pentru perioada necesară securității și responsabilității (în general până la 12 luni, cu excepția cazului în care reglementările prevăd altfel).</li>
+              <li>Date din formularul de contact - până la 12 luni de la încheierea corespondenței.</li>
+              <li>Date ale clienților - pentru perioada prevăzută de lege (documentație contabilă).</li>
+              <li>Date analitice - conform politicii Google Analytics (de ex. 26 de luni).</li>
+              <li>Jurnale - pentru perioada necesară securității și responsabilității (în general până la 12 luni, cu excepția cazului în care reglementările prevăd altfel).</li>
             </ul>
           </SectionInfo>
 

@@ -12,6 +12,7 @@ export type ToolItemKey =
   | 'favicon'
   | 'metaCounter'
   | 'wordCounter'
+  | 'loremIpsum'
   | 'emailSignature'
   | 'contrastChecker'
   | 'paletteExtractor'
@@ -83,12 +84,49 @@ export type ToolItemKey =
   | 'htmlToMarkdown'
   // Base64 converters
   | 'imageToBase64'
-  | 'base64ToImage';
+  | 'base64ToImage'
+  // Unit converters - popular
+  | 'kmToMiles'
+  | 'kgToLbs'
+  | 'celsiusToFahrenheit'
+  | 'cmToInches'
+  | 'metersToFeet'
+  | 'litersToGallons'
+  | 'sqmToSqft'
+  | 'kmhToMph'
+  | 'mmToInches'
+  | 'gramsToOunces'
+  | 'tonnesToPounds'
+  | 'hectaresToAcres'
+  | 'mlToFlOz'
+  | 'barToPsi'
+  | 'kwToHp'
+  // Unit converters - design/graphics
+  | 'ptToPx'
+  | 'remToPx'
+  | 'emToPx'
+  | 'cmToPxDpi'
+  | 'mmToPxDpi'
+  | 'inchesToPxDpi'
+  | 'dpiToPpi'
+  | 'hexToRgb'
+  | 'rgbToHsl'
+  | 'rgbToCmyk'
+  // Unit converters - programming/technical
+  | 'bytesConverter'
+  | 'unixTimestamp'
+  | 'decToBin'
+  | 'decToHex'
+  | 'degToRad'
+  | 'mbpsToMBs'
+  | 'whToMah'
+  | 'vwToPx'
+  | 'twToPx';
 
 // ---------------------------------------------------------------------------
 // Tool section key - groups tools in navigation / index page
 // ---------------------------------------------------------------------------
-export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk' | 'konwertery' | 'dokumenty';
+export type ToolsSectionKey = 'obrazy' | 'seo' | 'email' | 'kolory' | 'druk' | 'konwertery' | 'dokumenty' | 'jednostki';
 
 // ---------------------------------------------------------------------------
 // Per-locale text for a single tool (used in nav, carousel, index page)

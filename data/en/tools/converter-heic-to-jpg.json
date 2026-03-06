@@ -3,13 +3,13 @@
   "locale": "en",
   "metadata": {
     "title": "HEIC to JPG converter – HEIC JPG",
-    "description": "Convert iPhone HEIC photos to universal JPG. No signup, no server uploads. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "description": "Convert iPhone HEIC photos to universal JPG. No signup, no server uploads. Free browser-based tool - no signup, no file limits, complete privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
     "path": "/en/tools/heic-to-jpg-converter"
   },
   "hero": {
     "title": "HEIC to JPG converter",
-    "description": "Convert iPhone HEIC photos to universal JPG. No signup, no server uploads. Free browser-based tool — no signup, no file limits, complete privacy.",
+    "description": "Convert iPhone HEIC photos to universal JPG. No signup, no server uploads. Free browser-based tool - no signup, no file limits, complete privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "HEIC to JPG converter",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convert iPhone HEIC photos to universal JPG. No signup, no server uploads. Free browser-based tool — no signup, no file limits, complete privacy.",
+      "description": "Convert iPhone HEIC photos to universal JPG. No signup, no server uploads. Free browser-based tool - no signup, no file limits, complete privacy.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convert HEIC to JPG", "HEIC to JPG conversion", "Free HEIC to JPG converter", "Change HEIC to JPG"]
     },
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Why convert HEIC to JPG?",
-      "html": "<p class=\"text-mid mb-4\">High Efficiency Image Container (HEIC) is a lossy image format supporting millions colors. It is widely used for Apple device photos with browser support in Safari only.</p><p class=\"text-mid mb-4\">Converting HEIC to JPG (JPEG) ensures universal compatibility across all platforms, browsers, and devices.</p><p class=\"text-mid mb-4\">Note that JPG does not support transparency – any transparent areas will be filled with a solid background color (typically white). As a lossy format, JPG achieves excellent compression ratios, especially for photographs and complex images.</p><p class=\"text-mid\">This converter processes everything locally in your browser – your files never leave your device. No uploads, no servers, no registration. Convert as many HEIC files as you need, completely free.</p>",
+      "html": "<p class=\"text-mid mb-4\">HEIC is the default photo format on iPhones and iPads since iOS 11. While HEIC offers excellent compression, it is not supported on Windows, most Android devices, many web platforms, or older macOS versions. JPG is the most universally compatible image format — supported by every device, browser, and application.</p><p class=\"text-mid mb-4\">Converting HEIC to JPG makes your iPhone photos instantly shareable via email, social media, and messaging apps without compatibility issues. JPG uses lossy compression, so files will be slightly larger than HEIC but compatible everywhere.</p><p class=\"text-mid mb-4\">At quality 85–90, JPG produces results that are visually indistinguishable from the original HEIC photo. For lossless conversion, consider PNG instead. For the smallest web-optimized files, convert to WebP or AVIF.</p><p class=\"text-mid\">All processing happens locally in your browser — nothing is sent to any server. No registration, no limits, no watermarks.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "HEIC to JPG conversion",
       "variant": "right"
@@ -101,22 +101,22 @@
         {
           "icon": "RiGlobalLine",
           "title": "Website optimization",
-          "description": "Convert HEIC to JPG to ensure universal compatibility with all browsers and content management systems."
+          "description": "HEIC photos from iPhone cannot be opened on Windows, most Android devices, or displayed in web browsers. Converting to JPG ensures universal compatibility with all browsers, CMS platforms, and content management systems."
         },
         {
           "icon": "RiMailLine",
           "title": "Email and sharing",
-          "description": "JPG files are universally accepted by email clients like Gmail, Outlook, and Apple Mail. JPG is the safest choice for email attachments due to its universal support."
+          "description": "JPG is the safest format for email attachments — supported by every email client including Gmail, Outlook, and Apple Mail. Converting HEIC to JPG ensures your iPhone photos can be viewed by any recipient on any device."
         },
         {
           "icon": "RiShoppingBag3Line",
           "title": "E-commerce and marketplaces",
-          "description": "Platforms like Amazon, eBay, Etsy, Shopify often prefer JPG format for product images due to its optimal balance of quality and file size."
+          "description": "Product photos shot on iPhone in HEIC format need conversion for marketplace listings. JPG offers the optimal balance of quality and file size for Amazon, eBay, Etsy, Shopify, and other e-commerce platforms."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Documents and archival",
-          "description": "JPG is widely accepted for digital documents, reports, and presentations."
+          "description": "Insert iPhone photos into Word documents, PowerPoint presentations, and PDF reports by converting HEIC to JPG. JPG is supported by every office application and produces compact files ideal for digital documents."
         }
       ]
     },
@@ -250,6 +250,24 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Quality settings – what to choose when converting HEIC to JPG?",
+      "html": "<p class=\"text-mid\">The quality slider lets you set a value from 60% to 95%. Higher values mean better image quality but larger file sizes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (recommended) – the best balance for iPhone photos. The visual difference compared to the original HEIC is virtually imperceptible.</strong></li><li><strong>90–95% – for professional photography or printing where maximum detail is essential.</strong></li><li><strong>60–75% – for email attachments and social media where file size matters more than fine detail.</strong></li></ul><p class=\"text-mid mt-3\">HEIC already uses lossy compression (HEVC), so converting to JPG is a lossy-to-lossy conversion. Keep the original HEIC files as backups in case you need to re-convert later.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting HEIC to JPG?",
+      "html": "<p class=\"text-mid mb-4\">JPG files are typically similar in size or slightly larger than HEIC, since HEIC uses more efficient compression:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (12 MP)</p><p class=\"text-light text-sm\">HEIC: 2.1 MB → JPG: 2.8 MB</p><p class=\"text-light mt-1 text-sm\">33% larger at quality 85</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Portrait mode</p><p class=\"text-light text-sm\">HEIC: 1.5 MB → JPG: 1.9 MB</p><p class=\"text-light mt-1 text-sm\">27% larger at quality 85</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">iPhone photo (48 MP)</p><p class=\"text-light text-sm\">HEIC: 5 MB → JPG: 7.2 MB</p><p class=\"text-light mt-1 text-sm\">44% larger at quality 85</p></div></div><p class=\"text-light mt-4 text-sm\">The primary benefit is compatibility, not size reduction. JPG works everywhere while HEIC is limited to Apple devices.</p>"
     },
     {
       "type": "faq",

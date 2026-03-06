@@ -1,0 +1,281 @@
+{
+  "toolKey": "mbpsToMBs",
+  "locale": "hu",
+  "metadata": {
+    "title": "Mbps MB/s-ra – átváltó",
+    "description": "Mbps átváltása MB/s-ra és fordítva.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/hu/eszkozok/mbps-mbs-atvalto"
+  },
+  "hero": {
+    "title": "Mbps MB/s-ra",
+    "description": "Ez az átváltó azonnal átszámol. Adjon meg egy értéket és az eredmény azonnal megjelenik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/mbps-mbs-atvalto",
+      "label": "Mbps MB/s-ra"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Mbps MB/s-ra – átváltó",
+      "alternateName": ["Mbps MB/s-ra"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Mbps átváltása MB/s-ra és fordítva.",
+      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+    },
+    "howTo": {
+      "name": "Hogyan használja az átváltót",
+      "description": "Gyors útmutató az átváltó használatához.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Érték megadása",
+          "text": "Írjon be egy számot a bal oldali beviteli mezőbe."
+        },
+        {
+          "name": " Eredmény leolvasása",
+          "text": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben."
+        },
+        {
+          "name": "Másolás vagy megfordítás",
+          "text": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikor kell használni: Mbps MB/s-ra?",
+      "html": "<p class=\"text-mid mb-4\">Internet speeds are advertised in megabits per second (Mbps), but file sizes and download speeds are typically shown in megabytes per second (MB/s). 1 byte = 8 bits, so 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">This means a \"100 Mbps\" connection downloads at a maximum of 12.5 MB/s. A \"1 Gbps\" connection = 125 MB/s.</p><p class=\"text-mid mb-4\">This conversion is essential for estimating download times, choosing an internet plan, and understanding the difference between advertised and actual speeds.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps MB/s-ra – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az átváltót?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Érték megadása",
+          "description": "Írjon be egy számot a beviteli mezőbe. Használhat pontot vagy vesszőt tizedesjegyként.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Eredmény leolvasása",
+          "description": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben – kattintás nélkül.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Másolás vagy megfordítás",
+          "description": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor hasznos ez az átváltó?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szacowanie pobierania",
+          "description": "100 Mbps = plik 1 GB w ok. 80 sekund."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Internet",
+          "description": "Porównaj oferty operatorów w realnych MB/s."
+        },
+        {
+          "icon": "RiVideoLine",
+          "title": "Streaming",
+          "description": "Netflix 4K wymaga 25 Mbps = 3,1 MB/s."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Hosting",
+          "description": "Transfer serwera: 1 TB/miesiąc = ile Mbps potrzebujesz?"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt az átváltót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "Minden számítás helyben, a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Azonnali eredmények",
+          "description": "Az eredmény azonnal frissül gépelés közben – nem kell semmilyen gombra kattintani."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kétirányú átváltás",
+          "description": "A Megfordítás gomb segítségével egy kattintással válthat irányt."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencia táblázat",
+          "description": "Kész táblázat gyakran átváltott értékekkel és kontextuális leírásokkal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az átváltás?",
+      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bits. Therefore: Mbps ÷ 8 = MB/s, and MB/s × 8 = Mbps.</p><p class=\"text-mid mb-4\">Example: 200 Mbps ÷ 8 = 25 MB/s. This is the theoretical maximum download speed.</p><p class=\"text-mid\">Actual speeds are typically 70–90% of the advertised maximum due to protocol overhead, network congestion, and other factors.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gyakorlati tippek",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>50 Mbps = 6.25 MB/s. Good for streaming, browsing, video calls.</li><li>100 Mbps = 12.5 MB/s. Good for multiple devices, 4K streaming.</li><li>500 Mbps = 62.5 MB/s. Good for large downloads, gaming.</li><li>1 Gbps = 125 MB/s. 1 GB downloads in ~8 seconds.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mbps vs MB/s – összehasonlítás",
+      "featureLabel": "Tulajdonság",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Megabit/s (Mbps)"
+        },
+        {
+          "id": "unit2",
+          "name": "Megabyte/s (MB/s)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Unit",
+          "values": {
+            "unit1": "Bits",
+            "unit2": "Bytes"
+          }
+        },
+        {
+          "name": "Ratio",
+          "values": {
+            "unit1": "8 Mbps",
+            "unit2": "= 1 MB/s"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "ISP speeds, bandwidth",
+            "unit2": "File downloads, transfers"
+          }
+        },
+        {
+          "name": "100 Mbps",
+          "values": {
+            "unit1": "100 Mbps",
+            "unit2": "12.5 MB/s"
+          }
+        },
+        {
+          "name": "1 Gbps",
+          "values": {
+            "unit1": "1,000 Mbps",
+            "unit2": "125 MB/s"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hány MB/s sind 100 Mbps?",
+          "answer": "100 Mbps = 12,5 MB/s. Teilen Sie Mbps durch 8."
+        },
+        {
+          "question": "Miért ist mein Download langsamer als beworben?",
+          "answer": "ISPs werben in Mbps (Bits), Downloads zeigen MB/s (Bytes). 100 Mbps = max 12,5 MB/s. Tatsächliche Sebesség ist typischerweise 70–90% davon."
+        },
+        {
+          "question": "Milyen hosszúe dauert 1 GB Download bei 100 Mbps?",
+          "answer": "1 GB = 1.000 MB. Bei 12,5 MB/s: ~80 Sekunden. In der Praxis ca. 90–100 Sekunden."
+        },
+        {
+          "question": "Helyben történnek a számítások?",
+          "answer": "Igen. Minden számítás a böngészőjében történik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps MB/s-ra – Arteon",
+      "defaultSubject": "Visszajelzés: mbps-to-mbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "További ingyenes eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

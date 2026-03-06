@@ -3,13 +3,13 @@
   "locale": "cs",
   "metadata": {
     "title": "Převodník HEIC na JPG – HEIC JPG",
-    "description": "Převeďte fotky HEIC z iPhonu na univerzální JPG. Bez registrace, bez nahravani na server. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
+    "description": "Převeďte fotky HEIC z iPhonu na univerzální JPG. Bez registrace, bez nahravani na server. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp",
     "path": "/cs/nastroje/prevodnik-heic-na-jpg"
   },
   "hero": {
     "title": "Převodník HEIC na JPG",
-    "description": "Převeďte fotky HEIC z iPhonu na univerzální JPG. Bez registrace, bez nahravani na server. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
+    "description": "Převeďte fotky HEIC z iPhonu na univerzální JPG. Bez registrace, bez nahravani na server. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/konvertor-jpg-png-na-webp-cs.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Převodník HEIC na JPG",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Převeďte fotky HEIC z iPhonu na univerzální JPG. Bez registrace, bez nahravani na server. Bezplatný nástroj v prohlížeči — bez registrace, bez limitu souborů, plné soukromí.",
+      "description": "Převeďte fotky HEIC z iPhonu na univerzální JPG. Bez registrace, bez nahravani na server. Bezplatný nástroj v prohlížeči - bez registrace, bez limitu souborů, plné soukromí.",
       "featureList": ["HEIC to JPG conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Převést HEIC na JPG", "Konverze HEIC do JPG", "Převodník HEIC na JPG zdarma"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Nastaveni kvality — co zvolit pri konverzi HEIC na JPG?",
-      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (vychozi) — dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% — pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% — kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 85% je rozdil mezi originalnim HEIC a vyslednym JPG nepostrehnutelny.</p>"
+      "title": "Nastaveni kvality - co zvolit pri konverzi HEIC na JPG?",
+      "html": "<p class=\"text-mid\">Posuvnik 60%-95%. Vyssi = lepsi kvalita ale vetsi soubory.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (vychozi) - dobry kompromis pro weby, blogy, clanky.</strong></li><li><strong>85–90% - pro produktove fotky, portfolia a galerie.</strong></li><li><strong>60–70% - kdyz je prioritou minimalizace velikosti.</strong></li></ul><p class=\"text-mid mt-3\">Pri 85% je rozdil mezi originalnim HEIC a vyslednym JPG nepostrehnutelny.</p>"
     },
     {
       "type": "gap",

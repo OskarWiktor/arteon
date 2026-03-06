@@ -1,0 +1,289 @@
+{
+  "toolKey": "vwToPx",
+  "locale": "pl",
+  "metadata": {
+    "title": "Konwerter vw na px – jednostki CSS viewport",
+    "description": "Przelicz vw na piksele i odwrotnie. Wystarczy podać szerokość okna, a konwerter obliczy wartość w px. Bez rejestracji.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+    "path": "/narzedzia/konwerter-vw-na-px"
+  },
+  "hero": {
+    "title": "Przelicz vw na piksele",
+    "description": "Ten konwerter przelicza jednostki CSS viewport width (vw) na piksele i odwrotnie. Możesz podać szerokość okna przeglądarki, a wynik pojawi się natychmiast.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/narzedzia",
+      "label": "Narzędzia"
+    },
+    "third": {
+      "href": "/narzedzia/konwerter-vw-na-px",
+      "label": "vw na px"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Konwerter vw na px – jednostki CSS viewport",
+      "alternateName": ["Przelicznik vw px", "Kalkulator viewport", "CSS vw to pixels"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Przelicz vw na piksele i odwrotnie. Wystarczy podać szerokość okna, a konwerter obliczy wartość w px. Bez rejestracji.",
+      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+    },
+    "howTo": {
+      "name": "Jak korzystać z konwertera vw na px",
+      "description": "Instrukcja użycia: vw na px.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wpisz wartość",
+          "text": "Wpisz liczbę w polu wejściowym po lewej stronie."
+        },
+        {
+          "name": "Odczytaj wynik",
+          "text": "Wynik konwersji pojawi się natychmiast w polu po prawej stronie."
+        },
+        {
+          "name": "Skopiuj lub zmień kierunek",
+          "text": "Kliknij Kopiuj wynik lub Zmień kolejność, aby przeliczać w drugą stronę."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Czym jest jednostka vw w CSS?",
+      "html": "<p class=\"text-mid mb-4\">vw (viewport width) to jednostka CSS równa 1% szerokości okna przeglądarki. Na ekranie 1 920 px szerokości: 1 vw = 19,2 px, 50 vw = 960 px, 100 vw = 1 920 px.</p><p class=\"text-mid mb-4\">vw jest używane do tworzenia responsywnych układów – elementy skalują się proporcjonalnie do okna przeglądarki. Przydaje się do pełnoekranowych sekcji, nagromadzonych tytułów i elastycznych marginów.</p><p class=\"text-mid mb-4\">Uwaga: 100 vw uwzględnia pasek przewijania, co może powodować poziomy scroll. Zamiast <code>width: 100vw</code> lepiej użyć <code>width: 100%</code> na blokach.</p><p class=\"text-mid\">Istnieje też vh (viewport height): 1 vh = 1% wysokości okna. Oraz dvh/svh/lvh (dynamic/small/large viewport height) – uwzględniające pasek adresu na urządzeniach mobilnych.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "vw na px – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Jak korzystać z konwertera?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wpisz wartość",
+          "description": "Wpisz liczbę w polu wejściowym. Możesz użyć kropki lub przecinka jako separatora dziesiętnego.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Odczytaj wynik",
+          "description": "Wynik konwersji pojawi się natychmiast w polu obok – bez klikania żadnego przycisku.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Skopiuj lub zmień kierunek",
+          "description": "Kliknij Kopiuj wynik lub użyj przycisku Zmień kolejność, aby przeliczać w drugą stronę.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Kiedy przydaje się ten konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiLayoutLine",
+          "title": "Responsywne układy",
+          "description": "Sekcje pełnoekranowe: width: 100vw, height: 100vh."
+        },
+        {
+          "icon": "RiFontSizeLine",
+          "title": "Fluid typography",
+          "description": "Tytuły skalowane: font-size: clamp(2rem, 5vw, 4rem)."
+        },
+        {
+          "icon": "RiSmartphoneLine",
+          "title": "Mobile first",
+          "description": "Marginesy i paddingi w vw skalują się z ekranem."
+        },
+        {
+          "icon": "RiCodeSSlashLine",
+          "title": "CSS debugging",
+          "description": "Sprawdź, ile px ma dany vw na konkretnym urządzeniu."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Co wyróżnia nasz konwerter?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Pełna prywatność",
+          "description": "Wszystkie obliczenia odbywają się lokalnie w przeglądarce. Żadne dane nie są wysyłane na serwer."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Wynik w czasie rzeczywistym",
+          "description": "Wynik aktualizuje się natychmiast podczas wpisywania – bez konieczności klikania."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Obustronna konwersja",
+          "description": "Przycisk Zmień kolejność pozwala przeliczać w obu kierunkach jednym kliknięciem."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tabela popularnych wartości",
+          "description": "Gotowa tabela z najczęściej przeliczanymi wartościami i opisami kontekstowymi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Jak działa konwersja vw na px?",
+      "html": "<p class=\"text-mid mb-4\">Jednostka vw (viewport width) w CSS odpowiada jednej setnej szerokości okna przeglądarki. Oznacza to, że 100 vw to pełna szerokość okna, a 50 vw to połowa. Aby przeliczyć vw na piksele, wystarczy pomnożyć wartość vw przez szerokość okna i podzielić przez 100.</p><p class=\"text-mid mb-4\">Na przykład na ekranie o szerokości 1920 px wartość 50 vw to 960 px, a 25 vw to 480 px. Na mniejszym ekranie (np. 375 px na telefonie) te same 50 vw to zaledwie 187,5 px — dlatego elementy z jednostkami vw automatycznie skalują się do rozmiaru ekranu.</p><p class=\"text-mid\">Jednostka vw jest szczególnie przydatna w projektowaniu responsywnym do definiowania szerokości kontenerów, rozmiarów czcionek i pełnoekranowych sekcji. Konwerter pozwala ustawić dowolną szerokość okna.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktyczne wskazówki",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Popularne szerokości: 375 px (iPhone), 768 px (tablet), 1 920 px (desktop Full HD).</li><li>100 vw uwzględnia scrollbar (ok. 15–17 px na desktopie). Użyj 100% zamiast 100vw.</li><li>clamp() łączy vw z min/max: <code>font-size: clamp(1rem, 3vw, 2.5rem)</code>.</li><li>svh/lvh/dvh (CSS4) rozwiązują problem paska adresu na mobile.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "vw (viewport width) vs px (piksele) – porównanie",
+      "featureLabel": "Cecha",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "vw (viewport width)"
+        },
+        {
+          "id": "unit2",
+          "name": "px (piksele)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Typ",
+          "values": {
+            "unit1": "Relatywna (% okna)",
+            "unit2": "Absolutna"
+          }
+        },
+        {
+          "name": "Responsywność",
+          "values": {
+            "unit1": "Automatyczna",
+            "unit2": "Stała wartość"
+          }
+        },
+        {
+          "name": "Na 1920 px",
+          "values": {
+            "unit1": "1 vw = 19,2 px",
+            "unit2": "1 px = 0,052 vw"
+          }
+        },
+        {
+          "name": "Na 375 px",
+          "values": {
+            "unit1": "1 vw = 3,75 px",
+            "unit2": "1 px = 0,267 vw"
+          }
+        },
+        {
+          "name": "Użycie",
+          "values": {
+            "unit1": "Układy, fluid type",
+            "unit2": "Precyzyjne wymiary"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Najczęściej zadawane pytania",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Ile pikseli ma 50 vw na Full HD?",
+          "answer": "50 vw × 1 920 ÷ 100 = 960 px."
+        },
+        {
+          "question": "Dlaczego 100vw powoduje poziomy scroll?",
+          "answer": "100vw obejmuje całą szerokość viewport łącznie z paskiem przewijania (ok. 15–17 px). Użyj <code>width: 100%</code> zamiast <code>width: 100vw</code>."
+        },
+        {
+          "question": "Jak użyć vw do responsywnego tekstu?",
+          "answer": "<code>font-size: clamp(1rem, 3vw, 2.5rem)</code> – tekst rośnie z ekranem, ale nie przekracza granic."
+        },
+        {
+          "question": "Jaka jest różnica między vw a %?",
+          "answer": "vw odnosi się do okna przeglądarki. % odnosi się do elementu nadrzędnego."
+        },
+        {
+          "question": "Co to jest dvh/svh/lvh?",
+          "answer": "Nowe jednostki CSS uwzględniające dynamiczny pasek adresu na mobile: svh (najmniejszy viewport), lvh (największy), dvh (aktualny)."
+        },
+        {
+          "question": "Czy vw działa na urządzeniach mobilnych?",
+          "answer": "Tak. Na iPhone 14 (390 px): 1 vw = 3,9 px. Na iPadzie (768 px): 1 vw = 7,68 px."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Pomóż nam ulepszyć narzędzia",
+      "description": "Masz pomysł na nową funkcję, znalazłeś błąd lub chcesz zaproponować inne narzędzie? Napisz do nas – odpowiadamy w ciągu 24 godzin.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
+      "imageAlt": "vw na px – Arteon",
+      "defaultSubject": "Feedback: vw na px"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Sprawdź inne narzędzia"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -140,7 +140,7 @@
     {
       "type": "sectionInfo",
       "title": "Så fungerar läsbarhetsbedömningen",
-      "html": "<p class=\"text-mid mb-4\">Verktyget beräknar en läsbarhetspoäng baserad på genomsnittlig meningslängd och genomsnittligt antal stavelser per ord. Resultatet visas på en skala från 0 till 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> — Mycket lätt. Korta meningar, vanliga ord.</li><li><strong>70–89</strong> — Lätt. Samtalssprak lämpligt för en bred publik.</li><li><strong>50–69</strong> — Måttligt. Affärs- och journalistiska texter.</li><li><strong>30–49</strong> — Svårt. Långa meningar, specialiserat ordforrad.</li><li><strong>0–29</strong> — Mycket svårt. Akademiska och juridiska texter.</li></ul><p class=\"text-mid mt-3\">För svenska används en förenklad Flesch-anpassning med svenska stavelseregler. Svenska och norska har generellt kortare ord än engelska, så poängen kan vara något högre för jämförbar text.</p>"
+      "html": "<p class=\"text-mid mb-4\">Verktyget beräknar en läsbarhetspoäng baserad på genomsnittlig meningslängd och genomsnittligt antal stavelser per ord. Resultatet visas på en skala från 0 till 100:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>90–100</strong> - Mycket lätt. Korta meningar, vanliga ord.</li><li><strong>70–89</strong> - Lätt. Samtalssprak lämpligt för en bred publik.</li><li><strong>50–69</strong> - Måttligt. Affärs- och journalistiska texter.</li><li><strong>30–49</strong> - Svårt. Långa meningar, specialiserat ordforrad.</li><li><strong>0–29</strong> - Mycket svårt. Akademiska och juridiska texter.</li></ul><p class=\"text-mid mt-3\">För svenska används en förenklad Flesch-anpassning med svenska stavelseregler. Svenska och norska har generellt kortare ord än engelska, så poängen kan vara något högre för jämförbar text.</p>"
     },
     {
       "type": "gap",
@@ -170,7 +170,7 @@
         {
           "icon": "RiChatQuoteLine",
           "title": "Meningar",
-          "description": "Antal meningar i texten. Hjälper till att bedöma komplexitet och läsbarhet — kortare meningar är lättare att ta till sig."
+          "description": "Antal meningar i texten. Hjälper till att bedöma komplexitet och läsbarhet - kortare meningar är lättare att ta till sig."
         },
         {
           "icon": "RiParagraph",
@@ -185,7 +185,7 @@
         {
           "icon": "RiRulerLine",
           "title": "Genomsnittlig ordlängd",
-          "description": "Genomsnittligt antal tecken per ord. En indikator på textkomplexitet — tekniska texter har längre ord."
+          "description": "Genomsnittligt antal tecken per ord. En indikator på textkomplexitet - tekniska texter har längre ord."
         },
         {
           "icon": "RiTimeLine",
@@ -329,7 +329,7 @@
     {
       "type": "sectionInfo",
       "title": "Varför läsbarhet är viktigt för SEO",
-      "html": "<p class=\"text-mid mb-4\">Sökmotorer prioriterar innehåll som uppfyller användarens avsikt. Läsbar text påverkar direkt viktiga engagemangsmått:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tid på sidan</strong> — besökare stannar längre på sidor som är lätta att läsa. Google tolkar längre besök som kvalitetssignal.</li><li><strong>Avvisningsfrekvens</strong> — kompakt, svårläst text driver bort besökare. En läsbarhetspoäng under 30 på en allmän sida korrelerar ofta med hög avvisningsfrekvens.</li><li><strong>Utvalda utdrag</strong> — Google väljer tydliga, koncisa svar till utvalda utdrag. Kortare meningar och direkt språk ökar chansen att bli utvald.</li><li><strong>Mobil läsbarhet</strong> — på små skärmar är långa meningar och komplext ordförråd ännu svårare att följa. En poäng på 60+ förbättrar mobilupplevelsen.</li></ul><p class=\"text-mid mt-3\">Ett bra mål för webbinnehåll är en läsbarhetspoäng mellan 60 och 70 — tillräckligt tydligt för de flesta läsare, tillräckligt detaljerat för att förmedla expertis.</p>"
+      "html": "<p class=\"text-mid mb-4\">Sökmotorer prioriterar innehåll som uppfyller användarens avsikt. Läsbar text påverkar direkt viktiga engagemangsmått:</p><ul class=\"text-mid list-disc space-y-2 pl-5\"><li><strong>Tid på sidan</strong> - besökare stannar längre på sidor som är lätta att läsa. Google tolkar längre besök som kvalitetssignal.</li><li><strong>Avvisningsfrekvens</strong> - kompakt, svårläst text driver bort besökare. En läsbarhetspoäng under 30 på en allmän sida korrelerar ofta med hög avvisningsfrekvens.</li><li><strong>Utvalda utdrag</strong> - Google väljer tydliga, koncisa svar till utvalda utdrag. Kortare meningar och direkt språk ökar chansen att bli utvald.</li><li><strong>Mobil läsbarhet</strong> - på små skärmar är långa meningar och komplext ordförråd ännu svårare att följa. En poäng på 60+ förbättrar mobilupplevelsen.</li></ul><p class=\"text-mid mt-3\">Ett bra mål för webbinnehåll är en läsbarhetspoäng mellan 60 och 70 - tillräckligt tydligt för de flesta läsare, tillräckligt detaljerat för att förmedla expertis.</p>"
     },
     {
       "type": "gap",
@@ -343,12 +343,12 @@
         {
           "icon": "RiBarChartLine",
           "title": "11 mätvärden + läsbarhetspoäng",
-          "description": "Ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och LIX-läsbarhetspoäng — allt i en panel."
+          "description": "Ord, tecken, stavelser, meningar, stycken, unika ord, lästid, taltid och LIX-läsbarhetspoäng - allt i en panel."
         },
         {
           "icon": "RiTextWrap",
           "title": "10 formateringsverktyg",
-          "description": "Versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering — utan extra programvara."
+          "description": "Versalkonvertering, borttagning av mellanslag, tomma rader, dubbletter och sortering - utan extra programvara."
         },
         {
           "icon": "RiUserLine",
@@ -379,7 +379,7 @@
     {
       "type": "sectionInfo",
       "title": "Ideal textlängd för svenska webbplatser",
-      "html": "<p class=\"text-mid mb-4\">Långa bloggartiklar på svenska presterar bäst i sökresultaten vid 1 200–2 000 ord. Kortare inlägg (600–1 000 ord) fungerar för praktiska guider och svar på specifika frågor. Inlägg under 500 ord når sällan höga positioner, om de inte besvarar en mycket specifik sökfråga.</p><p class=\"text-mid mb-4\">Produktbeskrivningar i svenska webbutiker bör innehålla 150–300 ord. På Tradera har annonsrubriker en gräns på 80 tecken, på Blocket 70 tecken. Kategoribeskrivningar med 200–400 ord hjälper sökmotorer att förstå sidans tematik. På CDON och andra svenska marknadsplatser är detaljerade produktbeskrivningar en konkurrensfördel.</p><p class=\"text-mid\">Tjänstesidor (tandläkarmottagning, advokatbyrå, hantverkare) behöver 500–800 ord med konkret information: tjänsteutbud, upptagningsområde, kontaktuppgifter. Antalet ord i sig är inget kvalitetsmått — en koncis text på 600 ord med användbar information överträffar en utdragen text på 2 000 ord utan mervärde.</p>"
+      "html": "<p class=\"text-mid mb-4\">Långa bloggartiklar på svenska presterar bäst i sökresultaten vid 1 200–2 000 ord. Kortare inlägg (600–1 000 ord) fungerar för praktiska guider och svar på specifika frågor. Inlägg under 500 ord når sällan höga positioner, om de inte besvarar en mycket specifik sökfråga.</p><p class=\"text-mid mb-4\">Produktbeskrivningar i svenska webbutiker bör innehålla 150–300 ord. På Tradera har annonsrubriker en gräns på 80 tecken, på Blocket 70 tecken. Kategoribeskrivningar med 200–400 ord hjälper sökmotorer att förstå sidans tematik. På CDON och andra svenska marknadsplatser är detaljerade produktbeskrivningar en konkurrensfördel.</p><p class=\"text-mid\">Tjänstesidor (tandläkarmottagning, advokatbyrå, hantverkare) behöver 500–800 ord med konkret information: tjänsteutbud, upptagningsområde, kontaktuppgifter. Antalet ord i sig är inget kvalitetsmått - en koncis text på 600 ord med användbar information överträffar en utdragen text på 2 000 ord utan mervärde.</p>"
     },
     {
       "type": "gap",
@@ -388,7 +388,7 @@
     {
       "type": "sectionInfo",
       "title": "Standardsida och översättningsnormer i Sverige",
-      "html": "<p class=\"text-mid mb-4\">Översättningsbyråer i Sverige debiterar per ord eller per standardsida. En standardsida motsvarar 1 500 tecken inklusive mellanslag (cirka 200–250 ord). Innan du begär en offert, klistra in texten i räknaren och kontrollera antalet tecken med mellanslag för att uppskatta kostnaden. En text med 15 000 tecken inklusive mellanslag motsvarar 10 standardsidor.</p><p class=\"text-mid mb-4\">Svenska förlag mäter manuskript i standardsidor eller antal ord. Redaktörer och korrekturläsare använder teckenräknaren för att snabbt bedöma ett manuskripts omfång innan de föreslår ett pris. Standardsidan är också den vanliga enheten för redigerings- och korrekturarbete i Sverige.</p><p class=\"text-mid\">Svenska universitet anger krav på uppsatser i antal ord. En kandidatuppsats omfattar vanligtvis 10 000–15 000 ord, en masteruppsats 15 000–25 000 ord och en doktorsavhandling över 50 000 ord. Kraven varierar mellan lärosäten och fakulteter — kontrollera alltid kursplanen för din utbildning.</p>"
+      "html": "<p class=\"text-mid mb-4\">Översättningsbyråer i Sverige debiterar per ord eller per standardsida. En standardsida motsvarar 1 500 tecken inklusive mellanslag (cirka 200–250 ord). Innan du begär en offert, klistra in texten i räknaren och kontrollera antalet tecken med mellanslag för att uppskatta kostnaden. En text med 15 000 tecken inklusive mellanslag motsvarar 10 standardsidor.</p><p class=\"text-mid mb-4\">Svenska förlag mäter manuskript i standardsidor eller antal ord. Redaktörer och korrekturläsare använder teckenräknaren för att snabbt bedöma ett manuskripts omfång innan de föreslår ett pris. Standardsidan är också den vanliga enheten för redigerings- och korrekturarbete i Sverige.</p><p class=\"text-mid\">Svenska universitet anger krav på uppsatser i antal ord. En kandidatuppsats omfattar vanligtvis 10 000–15 000 ord, en masteruppsats 15 000–25 000 ord och en doktorsavhandling över 50 000 ord. Kraven varierar mellan lärosäten och fakulteter - kontrollera alltid kursplanen för din utbildning.</p>"
     },
     {
       "type": "gap",
@@ -396,8 +396,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Läsbarhet på svenska — LIX-indexet och Flesch-anpassningen",
-      "html": "<p class=\"text-mid mb-4\">Sverige har en egen läsbarhetsstandard: LIX (Läsbarhetsindex), utvecklat av Carl-Hugo Björnsson på 1960-talet. LIX räknas ut genom att addera andelen långa ord (mer än 6 tecken) till den genomsnittliga meningslängden. Ett LIX under 30 betyder mycket lättläst text, 30–40 lättläst, 40–50 medel, 50–60 svår och över 60 mycket svår. För webbinnehåll på svenska är målet LIX under 40.</p><p class=\"text-mid mb-4\">Detta verktyg använder en Flesch-anpassning för svenska, som fungerar på ett liknande sätt men med en 0–100-skala. Korta meningar (15–20 ord) och korta stycken (3–4 meningar) förbättrar läsbarheten på skärmar avsevärt. Svenska har sammansatta ord (t.ex. &quot;sökmotoroptimering&quot;, &quot;hemförsäkringsjämförelse&quot;) som ökar den genomsnittliga ordlängden utan att texten nödvändigtvis blir svårare.</p><p class=\"text-mid\">Den genomsnittliga ordlängden i svenska texter ligger på 5–6 tecken — högre än engelskans 4–5 tecken. Det beror på sammansättningar och böjningsändelser. Jämför därför läsbarhetsvärden bara inom samma språk. Ett Flesch-värde på 55 för en svensk text motsvarar inte samma svårighetsgrad som 55 för en engelsk text.</p>"
+      "title": "Läsbarhet på svenska - LIX-indexet och Flesch-anpassningen",
+      "html": "<p class=\"text-mid mb-4\">Sverige har en egen läsbarhetsstandard: LIX (Läsbarhetsindex), utvecklat av Carl-Hugo Björnsson på 1960-talet. LIX räknas ut genom att addera andelen långa ord (mer än 6 tecken) till den genomsnittliga meningslängden. Ett LIX under 30 betyder mycket lättläst text, 30–40 lättläst, 40–50 medel, 50–60 svår och över 60 mycket svår. För webbinnehåll på svenska är målet LIX under 40.</p><p class=\"text-mid mb-4\">Detta verktyg använder en Flesch-anpassning för svenska, som fungerar på ett liknande sätt men med en 0–100-skala. Korta meningar (15–20 ord) och korta stycken (3–4 meningar) förbättrar läsbarheten på skärmar avsevärt. Svenska har sammansatta ord (t.ex. &quot;sökmotoroptimering&quot;, &quot;hemförsäkringsjämförelse&quot;) som ökar den genomsnittliga ordlängden utan att texten nödvändigtvis blir svårare.</p><p class=\"text-mid\">Den genomsnittliga ordlängden i svenska texter ligger på 5–6 tecken - högre än engelskans 4–5 tecken. Det beror på sammansättningar och böjningsändelser. Jämför därför läsbarhetsvärden bara inom samma språk. Ett Flesch-värde på 55 för en svensk text motsvarar inte samma svårighetsgrad som 55 för en engelsk text.</p>"
     },
     {
       "type": "gap",
@@ -451,7 +451,7 @@
         },
         {
           "question": "Vad är skillnaden mellan lästid och taltid?",
-          "answer": "Lästid utgår från 200 ord per minut — genomsnittlig tyst läshastighet. Taltid använder 130 ord per minut, den naturliga takten för presentationer och poddar, inklusive pauser och andning. En text på 1 000 ord tar cirka 5 minuter att läsa men 7,5 minuter att tala."
+          "answer": "Lästid utgår från 200 ord per minut - genomsnittlig tyst läshastighet. Taltid använder 130 ord per minut, den naturliga takten för presentationer och poddar, inklusive pauser och andning. En text på 1 000 ord tar cirka 5 minuter att läsa men 7,5 minuter att tala."
         }
       ]
     },

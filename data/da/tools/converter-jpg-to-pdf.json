@@ -2,7 +2,7 @@
   "toolKey": "jpgToPdf",
   "locale": "da",
   "metadata": {
-    "title": "JPG til PDF-konverter — JPG PDF",
+    "title": "JPG til PDF-konverter - JPG PDF",
     "description": "Konverter JPG-billeder til PDF-dokumenter. Kombiner flere filer til én PDF. Gratis.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
     "path": "/da/vaerktojer/jpg-til-pdf-konverter"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Konverter",
-          "text": "Klik på Konverter — filerne behandles lokalt i din browser."
+          "text": "Klik på Konverter - filerne behandles lokalt i din browser."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Hvorfor konvertere JPG til PDF?",
-      "html": "<p class=\"text-mid mb-4\">JPG er et udbredt filformat med bred kompatibilitet. Afhaengigt af brugen kan konvertering til PDF give betydelige fordele — mindre filer, bedre kvalitet eller bredere platformsunderstottelse.</p><p class=\"text-mid mb-4\">Denne gratis online-konverter omdanner dine JPG-filer til PDF-format direkte i browseren. Ingen filer uploades — hele processen foregaar lokalt pa din enhed.</p><p class=\"text-mid\">Konverter sa mange filer, du vil, uden daglige begraensninger, uden registrering og uden vandmaerker. Traek og slip filer, juster kvaliteten og download resultaterne.</p>",
+      "html": "<p class=\"text-mid mb-4\">JPG er et udbredt filformat med bred kompatibilitet. Afhaengigt af brugen kan konvertering til PDF give betydelige fordele - mindre filer, bedre kvalitet eller bredere platformsunderstottelse.</p><p class=\"text-mid mb-4\">Denne gratis online-konverter omdanner dine JPG-filer til PDF-format direkte i browseren. Ingen filer uploades - hele processen foregaar lokalt pa din enhed.</p><p class=\"text-mid\">Konverter sa mange filer, du vil, uden daglige begraensninger, uden registrering og uden vandmaerker. Traek og slip filer, juster kvaliteten og download resultaterne.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-til-webp-konverter-da.webp",
       "imageAlt": "JPG to PDF conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Konverter",
-          "description": "Klik på Konverter — filerne behandles lokalt i din browser.",
+          "description": "Klik på Konverter - filerne behandles lokalt i din browser.",
           "icon": "RiSettings3Line"
         },
         {
@@ -200,8 +200,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kvalitet — hvad vaelge ved konvertering JPG til PDF?",
-      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) — godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% — til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% — nar filstorrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 85% er forskellen mellem JPG og PDF praktisk talt umaerkelig.</p>"
+      "title": "Kvalitet - hvad vaelge ved konvertering JPG til PDF?",
+      "html": "<p class=\"text-mid\">Regulatoren tillader 60%-95%. Hojere = bedre kvalitet men storre filer.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>85% (standard) - godt for websteder, blogs, artikler.</strong></li><li><strong>85–90% - til produktfotos, portefoljer og gallerier.</strong></li><li><strong>60–70% - nar filstørrelse skal minimeres.</strong></li></ul><p class=\"text-mid mt-3\">Ved 85% er forskellen mellem JPG og PDF praktisk talt umaerkelig.</p>"
     },
     {
       "type": "gap",
@@ -210,18 +210,18 @@
     {
       "type": "sectionSteps",
       "title": "Tips til konvertering JPG til PDF",
-      "description": "Tips for at undga problemer:",
+      "description": "Tips for at undgå problemer:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
           "title": "Meget store filer",
-          "description": "Billeder over 4000×4000 px kan vaere langsommere. Del i partier pa 10–20."
+          "description": "Billeder over 4000×4000 px kan være langsommere. Del i partier på 10–20."
         },
         {
           "icon": "RiFlashlightLine",
           "title": "Allerede komprimerede",
-          "description": "Hvis JPG allerede var komprimeret, giver konvertering til PDF maske ikke stor besparelse."
+          "description": "Hvis JPG allerede var komprimeret, giver konvertering til PDF måske ikke stor besparelse."
         },
         {
           "icon": "RiPaletteLine",
@@ -247,6 +247,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How image conversion impacts page speed and SEO",
+      "html": "<p class=\"text-mid mb-4\">While JPG to PDF conversion creates documents rather than web images, it's worth noting that PDF files embedded or linked on websites also affect page performance. Large PDFs slow down downloads and frustrate users.</p><p class=\"text-mid mb-4\">When creating PDFs from JPG images, use appropriate quality settings. For web-shared PDFs, quality 80–85 produces files that look great while keeping the PDF size manageable. For print, use quality 90–95.</p><p class=\"text-mid\">If you need to display the images on a web page rather than in a PDF, consider converting to WebP or AVIF instead for optimal web performance.</p>"
     },
     {
       "type": "faq",

@@ -1,0 +1,277 @@
+{
+  "toolKey": "cmToInches",
+  "locale": "fi",
+  "metadata": {
+    "title": "Cm tuumiksi – muunnin",
+    "description": "Muunna senttimetrit tuumiksi ja päinvastoin.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/fi/tyokalut/cm-tuumiksi-muunnin"
+  },
+  "hero": {
+    "title": "Cm tuumiksi",
+    "description": "Tämä muunnin laskee välittömästi. Syötä arvo ja tulos näkyy heti.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fi/tyokalut",
+      "label": "Työkalut"
+    },
+    "third": {
+      "href": "/fi/tyokalut/cm-tuumiksi-muunnin",
+      "label": "cm tuumiksi"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Cm tuumiksi – muunnin",
+      "alternateName": ["Cm tuumiksi"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Muunna senttimetrit tuumiksi ja päinvastoin.",
+      "featureList": ["Kaksisuuntainen reaaliaikainen muunnos", "Kaikki muuntimet yhdessä paikassa", "Kopioi tulos leikepöydälle", "Paikallinen laskenta selaimessa"]
+    },
+    "howTo": {
+      "name": "Näin käytät muunninta",
+      "description": "Pikaopas muuntimen käyttöön.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Syötä arvo",
+          "text": "Kirjoita luku syöttökenttään vasemmalla."
+        },
+        {
+          "name": "Lue tulos",
+          "text": "Muunnoksen tulos näkyy välittömästi viereisessä kentässä."
+        },
+        {
+          "name": "Kopioi tai käännä",
+          "text": "Napsauta Kopioi tulos tai käytä Käännä-painiketta."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Milloin senttimetrit muunnetaan tuumiksi?",
+      "html": "<p class=\"text-mid mb-4\">Senttimetri (cm) on metrisen järjestelmän standardi. Tuumia (inches) käytetään Yhdysvalloissa, Iso-Britanniassa ja Kanadassa. 1 tuuma = 2,54 cm tarkasti.</p><p class=\"text-mid mb-4\">Yleisiä muunnoksia: 170 cm = 66,93 tuumaa (5'7\"), 180 cm = 70,87 tuumaa, näyttö 27 tuumaa = 68,58 cm lävistäjä.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "CM to inches converter – quick length conversion – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Miten muunninta käytetään?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Syötä arvo",
+          "description": "Kirjoita luku syöttökenttään.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lue tulos",
+          "description": "Tulos näkyy välittömästi.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopioi tai vaihda",
+          "description": "Kopioi tulos tai vaihda muunnossuunta.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Milloin tämä muunnin on hyödyllinen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiTvLine",
+          "title": "Pituus",
+          "description": "170 cm = 5'7\". USA/UK käyttää jalkoja ja tuumia."
+        },
+        {
+          "icon": "RiTShirt2Line",
+          "title": "Näytöt",
+          "description": "24\" = 60,96 cm, 27\" = 68,58 cm lävistäjä."
+        },
+        {
+          "icon": "RiRulerLine",
+          "title": "Suunnittelu ja mittaus",
+          "description": "Mitat tuumina (farkut: 32\" = 81,28 cm vyötärö)."
+        },
+        {
+          "icon": "RiBikeLine",
+          "title": "Työkalut",
+          "description": "Poranterät, putket ja liittimet tuumina."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikä tekee tästä muuntimesta erityisen?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Täysi yksityisyys",
+          "description": "Kaikki laskelmat suoritetaan paikallisesti selaimessasi."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Reaaliaikaiset tulokset",
+          "description": "Tulos päivittyy kirjoittaessasi."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kaksisuuntainen muunnos",
+          "description": "Muunna molempiin suuntiin yhdellä napsautuksella."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Viitetaulukko",
+          "description": "Taulukko yleisistä arvoista ja kontekstikuvauksista."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 tuuma = 25,4 mm = 2,54 cm tarkasti (kansainvälisesti vahvistettu 1959).</p><p class=\"text-mid\">cm tuumiksi: jaa 2,54:llä. Tuumat senttimetreiksi: kerro 2,54:llä.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Miten muunnos toimii?",
+      "html": "<p class=\"text-mid mb-4\">1 tuuma = 25,4 mm = 2,54 cm tarkasti (kansainvälisesti vahvistettu 1959).</p><p class=\"text-mid\">cm tuumiksi: jaa 2,54:llä. Tuumat senttimetreiksi: kerro 2,54:llä.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Senttimetri vs Tuuma",
+      "featureLabel": "Ominaisuus",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Senttimetri (cm)"
+        },
+        {
+          "id": "unit2",
+          "name": "Tuuma (in)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Järjestelmä",
+          "values": {
+            "unit1": "Metrinen (SI)",
+            "unit2": "Imperiaalinen"
+          }
+        },
+        {
+          "name": "Määritelmä",
+          "values": {
+            "unit1": "1/100 metriä",
+            "unit2": "25,4 mm"
+          }
+        },
+        {
+          "name": "Päivittäinen käyttö",
+          "values": {
+            "unit1": "Kansainvälinen",
+            "unit2": "USA/UK/CA"
+          }
+        },
+        {
+          "name": "Näytöt",
+          "values": {
+            "unit1": "Ei standardi",
+            "unit2": "Standardi (lävistäjä)"
+          }
+        },
+        {
+          "name": "Tiede",
+          "values": {
+            "unit1": "Yleismaailmallinen",
+            "unit2": "Ei käytetä"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Usein kysytyt kysymykset",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Kuinka monta cm on 1 tuuma?",
+          "answer": "1 tuuma = 2,54 cm tarkasti."
+        },
+        {
+          "question": "Miten muunnan cm tuumiksi?",
+          "answer": "Jaa senttimetrien määrä 2,54:llä."
+        },
+        {
+          "question": "Suoritetaanko laskelmat paikallisesti?",
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Auta meitä parantamaan työkalujamme",
+      "description": "Onko sinulla idea, löysitkö virheen tai haluatko ehdottaa ominaisuutta? Kirjoita meille – vastaamme 24 tunnin kuluessa.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "cm tuumiksi – Arteon",
+      "defaultSubject": "Palaute: cm-to-inches"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Muut ilmaiset työkalut"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

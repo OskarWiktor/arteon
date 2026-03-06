@@ -1,0 +1,285 @@
+{
+  "toolKey": "mbpsToMBs",
+  "locale": "en",
+  "metadata": {
+    "title": "Mbps to MB/s converter",
+    "description": "Convert megabits per second to megabytes per second and vice versa. Essential for understanding internet speeds and download times.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/mbps-to-mbs-converter"
+  },
+  "hero": {
+    "title": "Convert Mbps to MB/s",
+    "description": "This converter converts megabits per second (Mbps) to megabytes per second (MB/s). Enter a value and the result appears instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/mbps-to-mbs-converter",
+      "label": "Mbps to MB/s"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Mbps to MB/s converter",
+      "alternateName": ["Megabit to megabyte calculator", "Internet speed converter", "Bandwidth converter"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert megabits per second to megabytes per second and vice versa. Essential for understanding internet speeds and download times.",
+      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the Mbps to MB/s converter",
+      "description": "Instructions: Mbps to MB/s.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter speed",
+          "text": "Type a speed in Mbps."
+        },
+        {
+          "name": "Read the result",
+          "text": "The result in MB/s appears instantly."
+        },
+        {
+          "name": "Copy or reverse",
+          "text": "Click Copy or Reverse to convert MB/s to Mbps."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert Mbps to MB/s?",
+      "html": "<p class=\"text-mid mb-4\">Internet speeds are advertised in megabits per second (Mbps), but file sizes and download speeds are typically shown in megabytes per second (MB/s). 1 byte = 8 bits, so 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">This means a \"100 Mbps\" connection downloads at a maximum of 12.5 MB/s. A \"1 Gbps\" connection = 125 MB/s.</p><p class=\"text-mid mb-4\">This conversion is essential for estimating download times, choosing an internet plan, and understanding the difference between advertised and actual speeds.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps to MB/s converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDownloadLine",
+          "title": "Szacowanie pobierania",
+          "description": "100 Mbps = plik 1 GB w ok. 80 sekund."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Wybór pakietu",
+          "description": "Porównaj oferty operatorów w realnych MB/s."
+        },
+        {
+          "icon": "RiVideoLine",
+          "title": "Streaming",
+          "description": "Netflix 4K wymaga 25 Mbps = 3,1 MB/s."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Hosting",
+          "description": "Transfer serwera: 1 TB/miesiąc = ile Mbps potrzebujesz?"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does Mbps to MB/s conversion work?",
+      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bits. Therefore: Mbps ÷ 8 = MB/s, and MB/s × 8 = Mbps.</p><p class=\"text-mid mb-4\">Example: 200 Mbps ÷ 8 = 25 MB/s. This is the theoretical maximum download speed.</p><p class=\"text-mid\">Actual speeds are typically 70–90% of the advertised maximum due to protocol overhead, network congestion, and other factors.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>50 Mbps = 6.25 MB/s. Good for streaming, browsing, video calls.</li><li>100 Mbps = 12.5 MB/s. Good for multiple devices, 4K streaming.</li><li>500 Mbps = 62.5 MB/s. Good for large downloads, gaming.</li><li>1 Gbps = 125 MB/s. 1 GB downloads in ~8 seconds.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mbps vs MB/s – comparison",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Megabit/s (Mbps)"
+        },
+        {
+          "id": "unit2",
+          "name": "Megabyte/s (MB/s)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Unit",
+          "values": {
+            "unit1": "Bits",
+            "unit2": "Bytes"
+          }
+        },
+        {
+          "name": "Ratio",
+          "values": {
+            "unit1": "8 Mbps",
+            "unit2": "= 1 MB/s"
+          }
+        },
+        {
+          "name": "Used for",
+          "values": {
+            "unit1": "ISP speeds, bandwidth",
+            "unit2": "File downloads, transfers"
+          }
+        },
+        {
+          "name": "100 Mbps",
+          "values": {
+            "unit1": "100 Mbps",
+            "unit2": "12.5 MB/s"
+          }
+        },
+        {
+          "name": "1 Gbps",
+          "values": {
+            "unit1": "1,000 Mbps",
+            "unit2": "125 MB/s"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many MB/s is 100 Mbps?",
+          "answer": "100 Mbps = 12.5 MB/s. Divide Mbps by 8 to get MB/s."
+        },
+        {
+          "question": "Why is my download slower than advertised?",
+          "answer": "ISPs advertise in Mbps (bits), but downloads show MB/s (bytes). 100 Mbps = max 12.5 MB/s. Actual speed is typically 70–90% of this."
+        },
+        {
+          "question": "How long to download 1 GB at 100 Mbps?",
+          "answer": "1 GB = 1,000 MB. At 12.5 MB/s (100 Mbps): 1,000/12.5 = 80 seconds. In practice, about 90–100 seconds."
+        },
+        {
+          "question": "What speed do I need for 4K streaming?",
+          "answer": "Netflix 4K requires ~25 Mbps (3.125 MB/s). YouTube 4K requires ~20 Mbps."
+        },
+        {
+          "question": "Are calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Mbps na MB/s – Arteon",
+      "defaultSubject": "Feedback: mbps-to-mbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "toolKey": "mbpsToMBs",
+  "locale": "fr",
+  "metadata": {
+    "title": "Convertisseur Mbps en Mo/s – internet",
+    "description": "Convertissez mégabits par seconde en mégaoctets par seconde. Comprenez votre vitesse internet.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+    "path": "/fr/outils/convertisseur-mbps-en-mos"
+  },
+  "hero": {
+    "title": "Convertir Mbps en Mo/s",
+    "description": "Ce convertisseur convertit instantanément. Entrez une valeur et le résultat apparaît immédiatement.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/fr/outils",
+      "label": "Outils"
+    },
+    "third": {
+      "href": "/fr/outils/convertisseur-mbps-en-mos",
+      "label": "Mbps en Mo/s"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Convertisseur Mbps en Mo/s – internet",
+      "alternateName": ["Convertir Mbps en Mo/s"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convertissez mégabits par seconde en mégaoctets par seconde. Comprenez votre vitesse internet.",
+      "featureList": ["Conversion bidirectionnelle en temps réel", "Tous les convertisseurs au même endroit", "Copier le résultat dans le presse-papiers", "Calcul local dans le navigateur"]
+    },
+    "howTo": {
+      "name": "Comment utiliser le convertisseur",
+      "description": "Guide rapide pour utiliser le convertisseur.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Saisir une valeur",
+          "text": "Entrez un nombre dans le champ de saisie à gauche."
+        },
+        {
+          "name": "Lire le résultat",
+          "text": "Le résultat de la conversion apparaît instantanément dans le champ adjacent."
+        },
+        {
+          "name": "Copier ou inverser",
+          "text": "Cliquez sur Copier le résultat ou sur Inverser pour convertir dans l'autre sens."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Quand faut-il convertir des Mbps en Mo/s ?",
+      "html": "<p class=\"text-mid mb-4\">Les vitesses internet sont annoncées en mégabits par seconde (Mbps), mais les téléchargements s’affichent en mégaoctets par seconde (Mo/s). 1 octet = 8 bits, donc 1 Mo/s = 8 Mbps.</p><p class=\"text-mid mb-4\">Une connexion « 100 Mbps » télécharge à 12,5 Mo/s maximum. « 1 Gbps » = 125 Mo/s.</p><p class=\"text-mid\">Tous les calculs sont effectués localement dans votre navigateur.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "Convertisseur Mbps en Mo/s – internet – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Comment utiliser le convertisseur ?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Saisissez une valeur",
+          "description": "Tapez un nombre dans le champ de saisie. Vous pouvez utiliser le point ou la virgule comme séparateur décimal.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Lisez le résultat",
+          "description": "Le résultat de la conversion apparaît instantanément dans le champ adjacent.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copiez ou inversez",
+          "description": "Cliquez sur Copier le résultat ou utilisez le bouton Inverser pour convertir dans le sens opposé.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Quand ce convertisseur est-il utile ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiDownloadLine",
+          "title": "Vitesse de téléchargement",
+          "description": "Vérifiez : 100 Mbps = 12,5 Mo/s. 1 Go en ~80 secondes."
+        },
+        {
+          "icon": "RiWifiLine",
+          "title": "Forfaits internet",
+          "description": "Comparez : 50 Mbps = 6,25 Mo/s, 1 Gbps = 125 Mo/s."
+        },
+        {
+          "icon": "RiVideoLine",
+          "title": "Streaming",
+          "description": "Netflix 4K : ~25 Mbps. 1080p : ~5 Mbps."
+        },
+        {
+          "icon": "RiServerLine",
+          "title": "Transfert de fichiers",
+          "description": "Estimez : 10 Go à 100 Mbps = ~13 minutes."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Qu’est-ce qui différencie ce convertisseur ?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Confidentialité totale",
+          "description": "Tous les calculs sont effectués localement dans votre navigateur. Aucune donnée n’est envoyée."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Résultats en temps réel",
+          "description": "Le résultat se met à jour instantanément pendant la saisie."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Conversion bidirectionnelle",
+          "description": "Le bouton Inverser permet de convertir dans les deux sens en un clic."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Tableau de référence",
+          "description": "Un tableau avec les valeurs de conversion courantes et des descriptions contextuelles."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 octet = 8 bits. Mbps ÷ 8 = Mo/s et Mo/s × 8 = Mbps.</p><p class=\"text-mid\">Les vitesses réelles sont typiquement 70–90 % du maximum annoncé.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Comment fonctionne la conversion ?",
+      "html": "<p class=\"text-mid mb-4\">1 octet = 8 bits. Mbps ÷ 8 = Mo/s et Mo/s × 8 = Mbps.</p><p class=\"text-mid\">Les vitesses réelles sont typiquement 70–90 % du maximum annoncé.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Mbps vs Mo/s – comparaison",
+      "featureLabel": "Caractéristique",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Mégabit/s (Mbps)"
+        },
+        {
+          "id": "unit2",
+          "name": "Mégaoctet/s (Mo/s)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Unité",
+          "values": {
+            "unit1": "Bits",
+            "unit2": "Octets"
+          }
+        },
+        {
+          "name": "Rapport",
+          "values": {
+            "unit1": "8 Mbps",
+            "unit2": "= 1 Mo/s"
+          }
+        },
+        {
+          "name": "Utilisé pour",
+          "values": {
+            "unit1": "Vitesses des FAI",
+            "unit2": "Téléchargements"
+          }
+        },
+        {
+          "name": "100 Mbps",
+          "values": {
+            "unit1": "100 Mbps",
+            "unit2": "12,5 Mo/s"
+          }
+        },
+        {
+          "name": "1 Gbps",
+          "values": {
+            "unit1": "1 000 Mbps",
+            "unit2": "125 Mo/s"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Combien de Mo/s font 100 Mbps ?",
+          "answer": "100 Mbps = 12,5 Mo/s. Divisez Mbps par 8."
+        },
+        {
+          "question": "Les calculs sont-ils effectués localement ?",
+          "answer": "Oui. Tous les calculs sont effectués dans votre navigateur."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Aidez-nous à améliorer nos outils",
+      "description": "Vous avez une idée, trouvé un bug ou souhaitez suggérer une fonctionnalité ? Écrivez-nous – nous répondons sous 24 heures.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
+      "imageAlt": "Mbps na MB/s – Arteon",
+      "defaultSubject": "Feedback : mbps-to-mbs"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Plus d'outils gratuits"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

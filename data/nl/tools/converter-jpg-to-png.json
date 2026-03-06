@@ -3,13 +3,13 @@
   "locale": "nl",
   "metadata": {
     "title": "JPG naar PNG converter – JPG PNG",
-    "description": "Converteer JPG-afbeeldingen naar verliesvrij PNG. Lokale verwerking in de browser. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "description": "Converteer JPG-afbeeldingen naar verliesvrij PNG. Lokale verwerking in de browser. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
     "path": "/nl/tools/jpg-naar-png-converter"
   },
   "hero": {
     "title": "JPG naar PNG converter",
-    "description": "Converteer JPG-afbeeldingen naar verliesvrij PNG. Lokale verwerking in de browser. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+    "description": "Converteer JPG-afbeeldingen naar verliesvrij PNG. Lokale verwerking in de browser. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp"
   },
   "breadcrumbs": {
@@ -28,7 +28,7 @@
       "alternateName": ["JPG naar PNG omzetten", "JPG naar PNG conversie", "Gratis JPG naar PNG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Converteer JPG-afbeeldingen naar verliesvrij PNG. Lokale verwerking in de browser. Gratis browsertool — zonder registratie, zonder bestandslimiet, volledige privacy.",
+      "description": "Converteer JPG-afbeeldingen naar verliesvrij PNG. Lokale verwerking in de browser. Gratis browsertool - zonder registratie, zonder bestandslimiet, volledige privacy.",
       "featureList": ["JPG naar PNG conversie", "Verliesvrije PNG-uitvoer", "Batchconversie", "Lokale browserverwerking", "Geen bestandsupload vereist"]
     },
     "howTo": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Converteren naar PNG",
-          "text": "Klik op converteren. PNG is verliesvrij — geen kwaliteitsinstelling nodig."
+          "text": "Klik op converteren. PNG is verliesvrij - geen kwaliteitsinstelling nodig."
         },
         {
           "name": "PNG-bestanden downloaden",
@@ -338,7 +338,7 @@
     {
       "type": "contactForm",
       "title": "Help ons onze tools te verbeteren",
-      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht — we reageren binnen 24 uur.",
+      "description": "Heb je een idee, een bug gevonden of wil je een functie voorstellen? Stuur ons een bericht - we reageren binnen 24 uur.",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-naar-webp-converter-nl.webp",
       "imageAlt": "JPG naar PNG converter – Arteon",
       "defaultSubject": "Feedback: JPG naar PNG converter"

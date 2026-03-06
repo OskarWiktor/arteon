@@ -159,7 +159,7 @@ function matchPatternRedirect(pathname: string): string | null {
 export function middleware(request: NextRequest) {
   // ── Security gate ──────────────────────────────────────────────────────
   if (isBlockedRequest(request)) {
-    return new NextResponse(null, { status: 404 });
+    return new NextResponse(null, { status: 403 });
   }
 
   // ── Redirects & canonical ──────────────────────────────────────────────
@@ -206,5 +206,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon\\.ico|sitemap.*\\.xml|robots\\.txt|ads\\.txt|assets/|fonts/).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon\\.ico|sitemap.*\\.xml|robots\\.txt|ads\\.txt|llms.*\\.txt|assets/|fonts/|\\.well-known/).*)'],
 };

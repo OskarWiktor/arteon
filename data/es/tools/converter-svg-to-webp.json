@@ -3,13 +3,13 @@
   "locale": "es",
   "metadata": {
     "title": "Convertidor SVG a WebP – SVG WebP",
-    "description": "Convierte graficos SVG a WebP ligero. Ideal para sitios web y redes sociales. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
+    "description": "Convierte graficos SVG a WebP ligero. Ideal para sitios web y redes sociales. Herramienta gratuita en el navegador - sin registro, sin límites, privacidad total.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp",
     "path": "/es/herramientas/convertidor-svg-a-webp"
   },
   "hero": {
     "title": "Convertidor SVG a WebP",
-    "description": "Convierte graficos SVG a WebP ligero. Ideal para sitios web y redes sociales. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
+    "description": "Convierte graficos SVG a WebP ligero. Ideal para sitios web y redes sociales. Herramienta gratuita en el navegador - sin registro, sin límites, privacidad total.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertidor-jpg-png-a-webp-es.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertidor SVG a WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Convierte graficos SVG a WebP ligero. Ideal para sitios web y redes sociales. Herramienta gratuita en el navegador — sin registro, sin límites, privacidad total.",
+      "description": "Convierte graficos SVG a WebP ligero. Ideal para sitios web y redes sociales. Herramienta gratuita en el navegador - sin registro, sin límites, privacidad total.",
       "featureList": ["SVG to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir SVG a WEBP", "Conversión de SVG a WEBP", "Convertidor SVG a WEBP gratis"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Ajustes de calidad — que elegir al convertir SVG a WebP?",
-      "html": "<p class=\"text-mid\">El control permite valores entre 60% y 95%. Valores mas altos = mejor calidad pero archivos mas grandes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (predeterminado) — buen equilibrio para sitios web, blogs, articulos.</strong></li><li><strong>85–90% — para fotografia de productos, portfolios y galerias.</strong></li><li><strong>60–70% — cuando minimizar tamano es la prioridad.</strong></li></ul><p class=\"text-mid mt-3\">Con 80% la diferencia visual entre SVG original y WebP resultante es imperceptible.</p>"
+      "title": "Ajustes de calidad - que elegir al convertir SVG a WebP?",
+      "html": "<p class=\"text-mid\">El control permite valores entre 60% y 95%. Valores mas altos = mejor calidad pero archivos mas grandes.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (predeterminado) - buen equilibrio para sitios web, blogs, articulos.</strong></li><li><strong>85–90% - para fotografia de productos, portfolios y galerias.</strong></li><li><strong>60–70% - cuando minimizar tamano es la prioridad.</strong></li></ul><p class=\"text-mid mt-3\">Con 80% la diferencia visual entre SVG original y WebP resultante es imperceptible.</p>"
     },
     {
       "type": "gap",

@@ -2,7 +2,7 @@
   "toolKey": "base64ToImage",
   "locale": "fr",
   "metadata": {
-    "title": "Convertisseur Base64 en image — Base64 image",
+    "title": "Convertisseur Base64 en image - Base64 image",
     "description": "Décodez les chaînes Base64 en images. Aperçu et téléchargement dans votre navigateur. Gratuit.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-base64-en-image"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Convertir",
-          "text": "Cliquez sur Convertir — le traitement est local dans votre navigateur."
+          "text": "Cliquez sur Convertir - le traitement est local dans votre navigateur."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Pourquoi convertir Base64 en image ?",
-      "html": "<p class=\"text-mid mb-4\">BASE64 est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en IMAGE peut offrir des avantages significatifs — fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers BASE64 au format IMAGE directement dans le navigateur. Aucun fichier n'est envoye sur un serveur — tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
+      "html": "<p class=\"text-mid mb-4\">BASE64 est un format largement utilise avec une grande compatibilite. Selon vos besoins, la conversion en IMAGE peut offrir des avantages significatifs - fichiers plus petits, meilleure qualite ou support plus large des plateformes.</p><p class=\"text-mid mb-4\">Ce convertisseur en ligne gratuit transforme vos fichiers BASE64 au format IMAGE directement dans le navigateur. Aucun fichier n'est envoye sur un serveur - tout le processus se deroule localement sur votre appareil.</p><p class=\"text-mid\">Convertissez autant de fichiers que necessaire sans limites, sans inscription et sans filigrane. Glissez-deposez vos fichiers, ajustez la qualite et telechargez les resultats.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
       "imageAlt": "Base64 to image conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Convertir",
-          "description": "Cliquez sur Convertir — le traitement est local dans votre navigateur.",
+          "description": "Cliquez sur Convertir - le traitement est local dans votre navigateur.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Combien economiser en convertissant BASE64 en IMAGE ?",
-      "html": "<p class=\"text-mid mb-4\">Les economies dependent du type de fichier source et sa compression :</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Photo d'appareil</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Image produit</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Capture / banniere</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economie: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Les economies reelles varient selon le contenu et les reglages.</p>"
+      "title": "Comment fonctionne le d\u00e9codage Base64 en image ?",
+      "html": "<p class=\"text-mid mb-4\">Le d\u00e9codage Base64 est l\u2019op\u00e9ration inverse de l\u2019encodage Base64 \u2014 il reconvertit une cha\u00eene de texte en donn\u00e9es binaires d\u2019image. Le convertisseur lit la cha\u00eene Base64 (avec ou sans pr\u00e9fixe Data URI), la d\u00e9code en octets bruts et reconstruit le fichier image original.</p><p class=\"text-mid mb-4\">Le pr\u00e9fixe Data URI (ex. data:image/png;base64,) indique au convertisseur quel format d\u2019image utiliser. Si le pr\u00e9fixe est absent, le convertisseur d\u00e9tecte automatiquement le format \u00e0 partir de la signature binaire (octets magiques) des donn\u00e9es d\u00e9cod\u00e9es.</p><p class=\"text-mid\">Cet outil est utile lorsque vous devez extraire une image d\u2019une page HTML, d\u2019un fichier CSS, d\u2019une r\u00e9ponse API ou d\u2019une base de donn\u00e9es qui stocke les images sous forme de cha\u00eenes Base64. La conversion s\u2019effectue enti\u00e8rement dans votre navigateur.</p>"
     },
     {
       "type": "gap",
@@ -138,29 +138,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Conseils pour convertir BASE64 en IMAGE",
-      "description": "Conseils pour eviter les problemes courants :",
+      "title": "Conseils pour le d\u00e9codage Base64 en image",
+      "description": "Quelques conseils pour \u00e9viter les probl\u00e8mes courants :",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Fichiers volumineux",
-          "description": "Images de plus de 4000×4000 px peuvent etre plus lentes. Divisez en lots de 10–20."
+          "title": "Pr\u00e9fixe Data URI",
+          "description": "Le convertisseur accepte les cha\u00eenes Base64 avec et sans pr\u00e9fixe Data URI (data:image/...). Si le pr\u00e9fixe est pr\u00e9sent, il est utilis\u00e9 pour d\u00e9terminer le format de sortie."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Fichiers deja compresses",
-          "description": "Si le BASE64 original etait deja compresse, la conversion en IMAGE peut ne pas economiser beaucoup."
+          "icon": "RiCodeLine",
+          "title": "Caract\u00e8res invalides",
+          "description": "Les cha\u00eenes Base64 ne doivent contenir que A\u2013Z, a\u2013z, 0\u20139, +, / et = (padding). Les espaces et sauts de ligne sont automatiquement supprim\u00e9s avant le d\u00e9codage."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparence",
-          "description": "IMAGE ne supporte pas la transparence. Zones transparentes remplacees par fond blanc. Utilisez PNG ou WebP."
+          "icon": "RiFileImageLine",
+          "title": "Format de sortie",
+          "description": "L\u2019image d\u00e9cod\u00e9e est enregistr\u00e9e dans le format indiqu\u00e9 par le pr\u00e9fixe Data URI. Sans pr\u00e9fixe, le convertisseur d\u00e9tecte automatiquement le format."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Conservez les originaux",
-          "description": "La conversion avec perte est irreversible. Conservez des copies des fichiers BASE64."
+          "icon": "RiFileCodeLine",
+          "title": "Longues cha\u00eenes",
+          "description": "Les tr\u00e8s longues cha\u00eenes Base64 (repr\u00e9sentant de grandes images) peuvent n\u00e9cessiter un moment pour le d\u00e9codage. Le convertisseur traite les cha\u00eenes de toute longueur que votre navigateur peut g\u00e9rer."
         }
       ]
     },
@@ -190,12 +190,12 @@
           "answer": "Oui, il fonctionne sur tout appareil disposant d'un navigateur web moderne."
         },
         {
-          "question": "La conversion BASE64 en IMAGE est-elle sure ?",
-          "answer": "Oui. Tout se fait localement dans le navigateur via Canvas API. Rien n'est envoye a un serveur."
+          "question": "Le d\u00e9codage Base64 en image est-il s\u00e9curis\u00e9 ?",
+          "answer": "Oui. Le processus de d\u00e9codage s\u2019effectue enti\u00e8rement dans votre navigateur. Vos donn\u00e9es ne sont jamais envoy\u00e9es \u00e0 un serveur."
         },
         {
-          "question": "Puis-je convertir plusieurs fichiers BASE64 ?",
-          "answer": "Oui. Conversion par lots sans limite. Glissez les fichiers sur le convertisseur."
+          "question": "Quels formats d\u2019image sont support\u00e9s ?",
+          "answer": "Le convertisseur peut d\u00e9coder les cha\u00eenes Base64 en PNG, JPG, GIF, WebP, SVG, BMP et autres formats d\u2019image standard. Le format est automatiquement d\u00e9tect\u00e9 \u00e0 partir du pr\u00e9fixe Data URI ou du contenu binaire."
         },
         {
           "question": "IMAGE est-il supporte par tous les navigateurs ?",

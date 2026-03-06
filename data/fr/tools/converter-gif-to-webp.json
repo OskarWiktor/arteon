@@ -3,13 +3,13 @@
   "locale": "fr",
   "metadata": {
     "title": "Convertisseur GIF en WebP – GIF WebP",
-    "description": "Exportez la premiere image GIF en WebP leger. Fichier plus petit, chargement plus rapide. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
+    "description": "Exportez la premiere image GIF en WebP leger. Fichier plus petit, chargement plus rapide. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp",
     "path": "/fr/outils/convertisseur-gif-en-webp"
   },
   "hero": {
     "title": "Convertisseur GIF en WebP",
-    "description": "Exportez la premiere image GIF en WebP leger. Fichier plus petit, chargement plus rapide. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
+    "description": "Exportez la premiere image GIF en WebP leger. Fichier plus petit, chargement plus rapide. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/convertisseur-jpg-png-en-webp-fr.webp"
   },
   "breadcrumbs": {
@@ -27,7 +27,7 @@
       "name": "Convertisseur GIF en WebP",
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "ImageConverter",
-      "description": "Exportez la premiere image GIF en WebP leger. Fichier plus petit, chargement plus rapide. Tout le traitement se fait dans votre navigateur — vos fichiers restent sur votre appareil.",
+      "description": "Exportez la premiere image GIF en WebP leger. Fichier plus petit, chargement plus rapide. Tout le traitement se fait dans votre navigateur - vos fichiers restent sur votre appareil.",
       "featureList": ["GIF to WebP conversion", "Adjustable quality (60-95%)", "Batch conversion", "Local browser processing"],
       "alternateName": ["Convertir GIF en WEBP", "Conversion GIF vers WEBP", "Convertisseur GIF en WEBP gratuit"]
     },
@@ -244,8 +244,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Reglages de qualite — que choisir pour GIF vers WebP ?",
-      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (defaut) — bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% — pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% — quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 80% la difference visuelle entre GIF original et WebP resultant est imperceptible.</p>"
+      "title": "Reglages de qualite - que choisir pour GIF vers WebP ?",
+      "html": "<p class=\"text-mid\">Le curseur permet 60% a 95%. Plus haut = meilleure qualite mais fichiers plus gros.</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>80% (defaut) - bon compromis pour sites web, blogs, articles.</strong></li><li><strong>85–90% - pour photos produit, portfolios et galeries.</strong></li><li><strong>60–70% - quand minimiser la taille est prioritaire.</strong></li></ul><p class=\"text-mid mt-3\">A 80% la difference visuelle entre GIF original et WebP resultant est imperceptible.</p>"
     },
     {
       "type": "gap",

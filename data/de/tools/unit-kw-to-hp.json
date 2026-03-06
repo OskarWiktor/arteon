@@ -1,0 +1,285 @@
+{
+  "toolKey": "kwToHp",
+  "locale": "de",
+  "metadata": {
+    "title": "Kilowatt in PS umrechnen – Leistungsrechner",
+    "description": "Rechnen Sie kW in PS um und umgekehrt. Unverzichtbar für Fahrzeugdaten und Elektromotoren.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+    "path": "/de/werkzeuge/kw-in-ps-umrechner"
+  },
+  "hero": {
+    "title": "Kilowatt in PS umrechnen",
+    "description": "Dieser Konverter rechnet sofort um. Geben Sie einfach einen Wert ein und das Ergebnis erscheint sofort.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/de/werkzeuge",
+      "label": "Werkzeuge"
+    },
+    "third": {
+      "href": "/de/werkzeuge/kw-in-ps-umrechner",
+      "label": "kW in PS"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "Kilowatt in PS umrechnen – Leistungsrechner",
+      "alternateName": ["Kilowatt in PS umrechnen"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Rechnen Sie kW in PS um und umgekehrt. Unverzichtbar für Fahrzeugdaten und Elektromotoren.",
+      "featureList": ["Bidirektionale Echtzeit-Konvertierung", "Alle Konverter an einem Ort", "Ergebnis in die Zwischenablage kopieren", "Lokale Berechnung im Browser"]
+    },
+    "howTo": {
+      "name": "So verwenden Sie den Konverter kW na KM",
+      "description": "Anleitung: kw na km.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Wert eingeben",
+          "text": "Geben Sie eine Zahl in das Eingabefeld auf der linken Seite ein."
+        },
+        {
+          "name": "Ergebnis ablesen",
+          "text": "Das Konvertierungsergebnis erscheint sofort im Feld daneben."
+        },
+        {
+          "name": "Kopieren oder Richtung ändern",
+          "text": "Klicken Sie auf Ergebnis kopieren oder auf Umkehren, um in die andere Richtung zu rechnen."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Wann muss man kW in PS umrechnen?",
+      "html": "<p class=\"text-mid mb-4\">Kilowatt (kW) ist die SI-Einheit der Leistung. Pferdestärke (PS) ist die traditionelle Einheit für Motorleistung. 1 PS (metrisch) = 0,7355 kW, 1 kW = 1,3596 PS.</p><p class=\"text-mid mb-4\">In der EU werden Fahrzeuge mit kW-Angaben zugelassen, aber PS bleibt die gängige Einheit im Alltag und in Fahrzeugannoncen. In den USA wird HP (Horsepower) verwendet, das 1,4% mehr als PS ist.</p><p class=\"text-mid mb-4\">Beispiele: 100 kW = 136 PS, 150 kW = 204 PS, 200 kW = 272 PS. Ein Tesla Model 3 hat etwa 208 kW = 283 PS.</p><p class=\"text-mid\">Alle Berechnungen laufen lokal in Ihrem Browser — nichts wird an einen Server gesendet.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "Kilowatt in PS umrechnen – Leistungsrechner – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "So verwenden Sie den Konverter",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Wert eingeben",
+          "description": "Geben Sie eine Zahl in das Eingabefeld ein. Sie können einen Punkt oder ein Komma als Dezimaltrennzeichen verwenden.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Ergebnis ablesen",
+          "description": "Das Konvertierungsergebnis erscheint sofort im Feld daneben – ohne Klicken.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Kopieren oder umkehren",
+          "description": "Klicken Sie auf Ergebnis kopieren oder verwenden Sie die Umkehren-Taste.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Wann ist dieser Konverter nützlich?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Motoryzacja",
+          "description": "Dowody rejestracyjne podają moc w kW. Reklamy i rozmowy – w KM."
+        },
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Ubezpieczenia OC",
+          "description": "Niektórzy ubezpieczyciele obliczają składkę na podstawie mocy silnika."
+        },
+        {
+          "icon": "RiMotorbikeeLine",
+          "title": "Motocykle",
+          "description": "Prawo jazdy kat. A2 = max 35 kW = 48 KM."
+        },
+        {
+          "icon": "RiFlashlightLine",
+          "title": "Maszyny i urządzenia",
+          "description": "Moc kosiark, generatorów i maszyn budowlanych podaje się w kW lub KM."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Was macht diesen Konverter besonders?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Volle Privatsphäre",
+          "description": "Alle Berechnungen laufen lokal in Ihrem Browser. Keine Daten werden an einen Server gesendet."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Echtzeit-Ergebnisse",
+          "description": "Das Ergebnis aktualisiert sich sofort beim Tippen – ohne Klicken."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirektionale Konvertierung",
+          "description": "Die Umkehren-Taste ermöglicht die Konvertierung in beide Richtungen mit einem Klick."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referenztabelle",
+          "description": "Eine fertige Tabelle mit häufig konvertierten Werten und kontextbezogenen Beschreibungen."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Wie funktioniert die Umrechnung?",
+      "html": "<p class=\"text-mid mb-4\">1 metrische Pferdestärke (PS) = 75 kgf·m/s = 735,499 W = 0,7355 kW. Daher: 1 kW = 1/0,7355 = 1,3596 PS.</p><p class=\"text-mid mb-4\">Hinweis: Mechanische HP (imperial) = 745,7 W = 0,7457 kW, ergibt 1 kW = 1,341 HP. Der Unterschied zwischen PS und HP beträgt etwa 1,4%.</p><p class=\"text-mid\">Um kW in PS umzurechnen, multiplizieren Sie mit 1,3596.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Praktische Tipps",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Stadtauto: 55–75 kW = 75–102 PS. Familienauto: 100–150 kW = 136–204 PS.</li><li>Sportwagen: 200–400 kW = 272–544 PS. Supersportwagen: 500+ kW = 680+ PS.</li><li>EU-Fahrzeugscheine listen Leistung immer in kW.</li><li>1 PS (metrisch) = 0,9863 HP (mechanisch). Vernachlässigbar für die meisten Zwecke.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Kilowatt (kW) vs. PS – Vergleich",
+      "featureLabel": "Eigenschaft",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Kilowatt (kW)"
+        },
+        {
+          "id": "unit2",
+          "name": "Pferdestärke (PS)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metrisch (SI)",
+            "unit2": "Traditionell"
+          }
+        },
+        {
+          "name": "Basiswert",
+          "values": {
+            "unit1": "1.000 Watt",
+            "unit2": "735,5 Watt"
+          }
+        },
+        {
+          "name": "Autos (EU)",
+          "values": {
+            "unit1": "Standard (kW)",
+            "unit2": "Gängig (PS)"
+          }
+        },
+        {
+          "name": "Autos (US)",
+          "values": {
+            "unit1": "Weniger üblich",
+            "unit2": "Standard (HP)"
+          }
+        },
+        {
+          "name": "E-Motoren",
+          "values": {
+            "unit1": "Internationaler Standard",
+            "unit2": "US-Standard"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Häufig gestellte Fragen",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Wie viele PS ist 1 kW?",
+          "answer": "1 kW = 1,3596 PS (metrisch) oder 1,341 HP (mechanisch)."
+        },
+        {
+          "question": "Wie viele kW sind 200 PS?",
+          "answer": "200 PS = 147,1 kW."
+        },
+        {
+          "question": "Was ist der Unterschied zwischen PS und HP?",
+          "answer": "PS (Pferdestärke, metrisch) = 735,5 W. HP (Horsepower, mechanisch) = 745,7 W. PS ist etwa 1,4% weniger als HP."
+        },
+        {
+          "question": "Wie viel PS hat ein typisches Auto?",
+          "answer": "Stadtauto: 75–100 PS. Familienauto: 130–200 PS. Sportwagen: 250–500 PS."
+        },
+        {
+          "question": "Werden die Berechnungen lokal durchgeführt?",
+          "answer": "Ja. Alle Berechnungen laufen in Ihrem Browser. Es werden keine Daten an einen Server gesendet."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Helfen Sie uns, unsere Werkzeuge zu verbessern",
+      "description": "Haben Sie eine Idee, einen Fehler gefunden oder möchten Sie eine Funktion vorschlagen? Schreiben Sie uns – wir antworten innerhalb von 24 Stunden.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-zu-webp-konverter-de.webp",
+      "imageAlt": "kW na KM – Arteon",
+      "defaultSubject": "Feedback: kw-to-hp"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Weitere kostenlose Werkzeuge"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

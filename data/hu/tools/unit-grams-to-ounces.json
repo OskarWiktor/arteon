@@ -1,0 +1,281 @@
+{
+  "toolKey": "gramsToOunces",
+  "locale": "hu",
+  "metadata": {
+    "title": "G unciára – átváltó",
+    "description": "Gramm átváltása unciára és fordítva.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/hu/eszkozok/gramm-uncia-atvalto"
+  },
+  "hero": {
+    "title": "G unciára",
+    "description": "Ez az átváltó azonnal átszámol. Adjon meg egy értéket és az eredmény azonnal megjelenik.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/hu/eszkozok",
+      "label": "Eszközök"
+    },
+    "third": {
+      "href": "/hu/eszkozok/gramm-uncia-atvalto",
+      "label": "g unciára"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "G unciára – átváltó",
+      "alternateName": ["G unciára"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Gramm átváltása unciára és fordítva.",
+      "featureList": ["Kétirányú valós idejű átváltás", "Minden átváltó egy helyen", "Eredmény másolása a vágólapra", "Helyi számítás a böngészőben"]
+    },
+    "howTo": {
+      "name": "Hogyan használja az átváltót",
+      "description": "Gyors útmutató az átváltó használatához.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Érték megadása",
+          "text": "Írjon be egy számot a bal oldali beviteli mezőbe."
+        },
+        {
+          "name": " Eredmény leolvasása",
+          "text": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben."
+        },
+        {
+          "name": "Másolás vagy megfordítás",
+          "text": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "Mikor kell használni: G unciára?",
+      "html": "<p class=\"text-mid mb-4\">Gram (g) is a metric mass unit equal to 1/1000 of a kilogram. Ounce (oz) is an imperial unit equal to 28.3495 grams. This conversion is essential for cooking, jewelry, postal weights, and nutrition.</p><p class=\"text-mid mb-4\">American and British recipes use ounces for ingredients. Jewelry and precious metals are measured in troy ounces (31.1035 g). Postal services use ounces for letter weights.</p><p class=\"text-mid mb-4\">Common examples: 100 g = 3.53 oz, 250 g = 8.82 oz, 500 g = 17.64 oz. A standard letter weighs about 5 g = 0.18 oz.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "G unciára – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Hogyan használja az átváltót?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Érték megadása",
+          "description": "Írjon be egy számot a beviteli mezőbe. Használhat pontot vagy vesszőt tizedesjegyként.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Eredmény leolvasása",
+          "description": "Az átváltás eredménye azonnal megjelenik a mellette lévő mezőben – kattintás nélkül.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Másolás vagy megfordítás",
+          "description": "Kattintson az Eredmény másolása gombra vagy használja a Megfordítás gombot.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mikor hasznos ez az átváltó?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiRestaurantLine",
+          "title": "Gotowanie",
+          "description": "Amerykańskie przepisy: 4 oz masła = 113 g, 6 oz czekolady = 170 g."
+        },
+        {
+          "icon": "RiShoppingBagLine",
+          "title": "Zakupy",
+          "description": "Waga produktów importowanych z USA podawana w uncjach."
+        },
+        {
+          "icon": "RiMailLine",
+          "title": "Przesyłki",
+          "description": "Waga listów i paczek w systemie pocztowym USA podawana w uncjach."
+        },
+        {
+          "icon": "RiHeartLine",
+          "title": "Dietetyka",
+          "description": "Porcje jedzenia w amerykańskich tabelach wartości odżywczych podaje się w oz."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "Mi teszi különlegessé ezt az átváltót?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Teljes adatvédelem",
+          "description": "Minden számítás helyben, a böngészőjében történik. Semmilyen adat nem kerül szerverre."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Azonnali eredmények",
+          "description": "Az eredmény azonnal frissül gépelés közben – nem kell semmilyen gombra kattintani."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Kétirányú átváltás",
+          "description": "A Megfordítás gomb segítségével egy kattintással válthat irányt."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Referencia táblázat",
+          "description": "Kész táblázat gyakran átváltott értékekkel és kontextuális leírásokkal."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Hogyan működik az átváltás?",
+      "html": "<p class=\"text-mid mb-4\">Die Avoirdupois-Unze (Standard US/UK) = 28,349523125 g genau. Um Gramm in Unzen umzurechnen, teilen Sie durch 28,3495.</p><p class=\"text-mid mb-4\">Hinweis: Feinunzen (Edelmetalle) = 31,1035 g. Dieser Konverter verwendet Avoirdupois-Unzen.</p><p class=\"text-mid\">Schnelle Schätzung: Teilen Sie Gramm durch 28.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Gyakorlati tippek",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Butter: 1 US stick = 4 oz = 113.4 g. 1 cup = 8 oz = 226.8 g.</li><li>Flour: 1 US cup = about 4.25 oz = 120 g.</li><li>Gold: 1 troy oz = 31.1035 g (different from regular ounces!).</li><li>1 pound = 16 oz = 453.59 g.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "Gram (g) vs Ounce (oz) – összehasonlítás",
+      "featureLabel": "Tulajdonság",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "Gram (g)"
+        },
+        {
+          "id": "unit2",
+          "name": "Ounce (oz)",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Rendszer",
+          "values": {
+            "unit1": "Metrikus (SI)",
+            "unit2": "Angolszász"
+          }
+        },
+        {
+          "name": "Alapérték",
+          "values": {
+            "unit1": "1/1000 kg",
+            "unit2": "28.35 g"
+          }
+        },
+        {
+          "name": "Cooking",
+          "values": {
+            "unit1": "International recipes",
+            "unit2": "US/UK recipes"
+          }
+        },
+        {
+          "name": "Jewelry",
+          "values": {
+            "unit1": "Metric (g)",
+            "unit2": "Troy oz (31.1 g)"
+          }
+        },
+        {
+          "name": "Tudomány",
+          "values": {
+            "unit1": "SI szabvány",
+            "unit2": "Tudományban nem használt"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Gyakran ismételt kérdések",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "Hány Gramm ist 1 Unze?",
+          "answer": "1 Avoirdupois-Unze = 28,3495 Gramm. 1 Feinunze = 31,1035 Gramm."
+        },
+        {
+          "question": "Hány Unzen sind 100 Gramm?",
+          "answer": "100 Gramm = 3,527 Unzen."
+        },
+        {
+          "question": "Mi az a der Unterschied zwischen oz und Feinunze?",
+          "answer": "Avoirdupois-oz = 28,35 g (Alltag). Feinunze = 31,10 g (Gold, Silber). Feinunzen sind ca. 9,7% schwerer."
+        },
+        {
+          "question": "Helyben történnek a számítások?",
+          "answer": "Igen. Minden számítás a böngészőjében történik."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Segítsen javítani eszközeinket",
+      "description": "Van ötlete, hibát talált vagy funkciót szeretne javasolni? Írjon nekünk – 24 órán belül válaszolunk.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "g unciára – Arteon",
+      "defaultSubject": "Visszajelzés: grams-to-ounces"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "További ingyenes eszközök"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

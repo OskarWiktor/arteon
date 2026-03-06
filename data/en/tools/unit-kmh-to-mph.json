@@ -1,0 +1,285 @@
+{
+  "toolKey": "kmhToMph",
+  "locale": "en",
+  "metadata": {
+    "title": "KM/H to MPH converter",
+    "description": "Convert kilometers per hour to miles per hour and vice versa. Essential for driving, speed limits, and vehicle specifications.",
+    "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+    "path": "/en/tools/kmh-to-mph-converter"
+  },
+  "hero": {
+    "title": "Convert km/h to mph",
+    "description": "This converter converts km/h to mph and vice versa. Enter a value and the result appears instantly.",
+    "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp"
+  },
+  "breadcrumbs": {
+    "second": {
+      "href": "/en/tools",
+      "label": "Tools"
+    },
+    "third": {
+      "href": "/en/tools/kmh-to-mph-converter",
+      "label": "km/h to mph"
+    }
+  },
+  "schemas": {
+    "software": {
+      "name": "KM/H to MPH converter",
+      "alternateName": ["Speed converter", "km/h to mph calculator", "Velocity converter"],
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "UnitConverter",
+      "description": "Convert kilometers per hour to miles per hour and vice versa. Essential for driving, speed limits, and vehicle specifications.",
+      "featureList": ["Real-time bidirectional conversion", "Choose any converter from one place", "Copy result to clipboard", "Local calculations in browser"]
+    },
+    "howTo": {
+      "name": "How to use the km/h to mph converter",
+      "description": "Instructions: km/h to mph.",
+      "totalTime": "PT1M",
+      "steps": [
+        {
+          "name": "Enter speed",
+          "text": "Type a speed in km/h."
+        },
+        {
+          "name": "Read the result",
+          "text": "The result in mph appears instantly."
+        },
+        {
+          "name": "Copy or reverse",
+          "text": "Click Copy or Reverse to convert mph to km/h."
+        }
+      ]
+    }
+  },
+  "contentBlocks": [
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionBasic",
+      "title": "When do you need to convert km/h to mph?",
+      "html": "<p class=\"text-mid mb-4\">Kilometers per hour (km/h) is the standard speed unit in most countries. Miles per hour (mph) is used in the US, UK, and a few other countries. 1 km/h = 0.621371 mph, or 1 mph = 1.60934 km/h.</p><p class=\"text-mid mb-4\">This conversion is essential when driving in the US or UK (speed limits in mph), comparing car specifications, understanding weather reports, and interpreting speed data from international sources.</p><p class=\"text-mid mb-4\">Common speed limits: 50 km/h = 31 mph (city), 80 km/h = 50 mph (rural), 120 km/h = 75 mph (highway), 130 km/h = 81 mph (autobahn).</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "KM/H to MPH converter – Arteon"
+    },
+    {
+      "type": "gap",
+      "size": "xs"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "How to use the converter?",
+      "grid": "three",
+      "items": [
+        {
+          "title": "1. Enter a value",
+          "description": "Type a number in the input field. You can use a period or comma as the decimal separator.",
+          "icon": "RiInputMethodLine"
+        },
+        {
+          "title": "2. Read the result",
+          "description": "The conversion result appears instantly in the field next to it – no clicking required.",
+          "icon": "RiLoopLeftLine"
+        },
+        {
+          "title": "3. Copy or reverse",
+          "description": "Click Copy result or use the Reverse button to convert in the opposite direction.",
+          "icon": "RiClipboardLine"
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "When is this converter useful?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiCarLine",
+          "title": "Jazda w USA/UK",
+          "description": "Ograniczenia prędkości: 25 mph (miasto) = 40 km/h, 65 mph (autostrada) = 105 km/h."
+        },
+        {
+          "icon": "RiDashboardLine",
+          "title": "Prędkościomierz",
+          "description": "Importowane samochody mogą mieć prędkościomierz w mph – przelicz na km/h."
+        },
+        {
+          "icon": "RiFlagLine",
+          "title": "Sporty motorowe",
+          "description": "Porównaj prędkości w F1, NASCAR i MotoGP podawane w różnych jednostkach."
+        },
+        {
+          "icon": "RiWindyLine",
+          "title": "Meteorologia",
+          "description": "Prędkość wiatru w amerykańskich prognozach podaje się w mph."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionSteps",
+      "title": "What makes this converter different?",
+      "grid": "two",
+      "items": [
+        {
+          "icon": "RiShieldCheckLine",
+          "title": "Complete privacy",
+          "description": "All calculations run locally in your browser. No data is sent to any server."
+        },
+        {
+          "icon": "RiTimeLine",
+          "title": "Real-time results",
+          "description": "The result updates instantly as you type – no need to click any button."
+        },
+        {
+          "icon": "RiArrowLeftRightLine",
+          "title": "Bidirectional conversion",
+          "description": "The Reverse button lets you convert in both directions with one click."
+        },
+        {
+          "icon": "RiTableLine",
+          "title": "Reference table",
+          "description": "A ready-made table with commonly converted values and contextual descriptions."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How does km/h to mph conversion work?",
+      "html": "<p class=\"text-mid mb-4\">Since 1 mile = 1.60934 km, 1 km/h = 1/1.60934 = 0.621371 mph.</p><p class=\"text-mid mb-4\">To convert km/h to mph, multiply by 0.621371. To convert mph to km/h, multiply by 1.60934.</p><p class=\"text-mid\">Quick mental math: multiply km/h by 0.6 for a rough estimate, or divide by 1.6.</p>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "Practical tips",
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>City speed: 50 km/h = 31 mph. Residential: 30 km/h = 19 mph.</li><li>Highway: 100 km/h = 62 mph, 120 km/h = 75 mph, 130 km/h = 81 mph.</li><li>Speed of sound: 1,235 km/h = 767 mph (at sea level, 20°C).</li><li>F1 top speed: ~370 km/h = 230 mph.</li></ul>"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionFeatureComparison",
+      "title": "km/h vs mph – comparison",
+      "featureLabel": "Feature",
+      "plans": [
+        {
+          "id": "unit1",
+          "name": "km/h"
+        },
+        {
+          "id": "unit2",
+          "name": "mph",
+          "highlighted": true
+        }
+      ],
+      "features": [
+        {
+          "name": "System",
+          "values": {
+            "unit1": "Metric",
+            "unit2": "Imperial"
+          }
+        },
+        {
+          "name": "Base value",
+          "values": {
+            "unit1": "1 km per hour",
+            "unit2": "1.609 km per hour"
+          }
+        },
+        {
+          "name": "Road signs",
+          "values": {
+            "unit1": "Most countries",
+            "unit2": "USA, UK, Myanmar"
+          }
+        },
+        {
+          "name": "Aviation",
+          "values": {
+            "unit1": "Not used (knots)",
+            "unit2": "Not used (knots)"
+          }
+        },
+        {
+          "name": "Science",
+          "values": {
+            "unit1": "m/s preferred",
+            "unit2": "Not used"
+          }
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "openByDefault": 1,
+      "items": [
+        {
+          "question": "How many mph is 100 km/h?",
+          "answer": "100 km/h = 62.14 mph."
+        },
+        {
+          "question": "How many km/h is 60 mph?",
+          "answer": "60 mph = 96.56 km/h."
+        },
+        {
+          "question": "What is the US highway speed limit in km/h?",
+          "answer": "US highway limits are typically 65–75 mph = 105–121 km/h."
+        },
+        {
+          "question": "Quick way to convert?",
+          "answer": "Multiply km/h by 0.6 or divide by 1.6. Example: 120 km/h × 0.6 = 72 mph (exact: 74.6 mph)."
+        },
+        {
+          "question": "Are calculations done locally?",
+          "answer": "Yes. All calculations run in your browser. No data is sent to any server."
+        }
+      ]
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "contactForm",
+      "title": "Help us improve our tools",
+      "description": "Have an idea, found a bug, or want to suggest a feature? Drop us a message – we respond within 24 hours.",
+      "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
+      "imageAlt": "km/h na mph – Arteon",
+      "defaultSubject": "Feedback: kmh-to-mph"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "toolsCarousel",
+      "title": "Explore more free tools"
+    },
+    {
+      "type": "gap",
+      "size": "sm"
+    }
+  ]
+}

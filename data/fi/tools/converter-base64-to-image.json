@@ -2,7 +2,7 @@
   "toolKey": "base64ToImage",
   "locale": "fi",
   "metadata": {
-    "title": "Base64 kuva -muunnin — Base64 kuva",
+    "title": "Base64 kuva -muunnin - Base64 kuva",
     "description": "Dekoodaa Base64-merkkijonot kuviksi. Esikatsele ja lataa selaimessa. Ilmainen.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
     "path": "/fi/tyokalut/base64-kuva-muunnin"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Muunna",
-          "text": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi."
+          "text": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessasi."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Miksi muuntaa Base64 kuva-muotoon?",
-      "html": "<p class=\"text-mid mb-4\">BASE64 on laajalti kaytetty tiedostomuoto laajalla yhteensopivuudella. Kayttotapauksesta riippuen muuntaminen IMAGE-muotoon voi tarjota merkittavia etuja — pienemmat tiedostot, parempi laatu tai laajempi alusta tuki.</p><p class=\"text-mid mb-4\">Tama ilmainen verkkomuunnin muuntaa BASE64-tiedostosi IMAGE-muotoon suoraan selaimessa. Tiedostoja ei laheteta palvelimille — koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman paivittaisia rajoituksia, rekisteroitymista tai vesileimoja. Vedaa ja pudota tiedostot, saada laatua ja lataa tulokset.</p>",
+      "html": "<p class=\"text-mid mb-4\">BASE64 on laajalti käytetty tiedostomuoto laajalla yhteensopivuudella. Käyttötapauksesta riippuen muuntaminen IMAGE-muotoon voi tarjota merkittäviä etuja - pienemmat tiedostot, parempi laatu tai laajempi alustatuki.</p><p class=\"text-mid mb-4\">Tämä ilmainen verkkomuunnin muuntaa BASE64-tiedostosi IMAGE-muotoon suoraan selaimessa. Tiedostoja ei lähetetä palvelimille - koko prosessi tapahtuu paikallisesti laitteellasi.</p><p class=\"text-mid\">Muunna niin monta tiedostoa kuin haluat ilman päivittäisiä rajoituksia, rekisteröitymistä tai vesileimoja. Vedä ja pudota tiedostot, säädä laatua ja lataa tulokset.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-muunnin-fi.webp",
       "imageAlt": "Base64 to kuva conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Muunna",
-          "description": "Napsauta Muunna — tiedostot käsitellään paikallisesti selaimessasi.",
+          "description": "Napsauta Muunna - tiedostot käsitellään paikallisesti selaimessasi.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Kuinka paljon saastat muuntamalla BASE64 IMAGE?",
-      "html": "<p class=\"text-mid mb-4\">Saastot riippuvat tiedostotyypista ja pakkauksesta:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Kamerakuva</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Tuotekuva</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Nayttokuva / banneri</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saasto: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Todelliset saastot vaihtelevat sisallon ja asetusten mukaan.</p>"
+      "title": "Miten Base64:n muuntaminen kuvaksi toimii?",
+      "html": "<p class=\"text-mid mb-4\">Base64-dekoodaus on Base64-koodauksen k\u00e4\u00e4nteinen toiminto \u2014 se muuntaa tekstimerkkijonon takaisin bin\u00e4\u00e4riseksi kuvadataksi. Muunnin lukee Base64-merkkijonon (Data URI -etuliitteell\u00e4 tai ilman), dekoodaa sen raakabiteiksi ja luo alkuper\u00e4isen kuvatiedoston uudelleen.</p><p class=\"text-mid mb-4\">Data URI -etuliite (esim. data:image/png;base64,) kertoo muuntimelle, mit\u00e4 kuvamuotoa k\u00e4ytet\u00e4\u00e4n. Jos etuliite puuttuu, muunnin tunnistaa automaattisesti muodon dekoodatun datan bin\u00e4\u00e4risest\u00e4 allekirjoituksesta (magic bytes).</p><p class=\"text-mid\">T\u00e4m\u00e4 ty\u00f6kalu on hy\u00f6dyllinen, kun sinun t\u00e4ytyy poimia kuva HTML-sivulta, CSS-tiedostosta, API-vastauksesta tai tietokannasta, joka tallentaa kuvia Base64-merkkijonoina. Kaikki muunnos tapahtuu paikallisesti selaimessasi.</p>"
     },
     {
       "type": "gap",
@@ -138,29 +138,29 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Vinkkeja BASE64-IMAGE-muunnokseen",
-      "description": "Vinkkeja yleisten ongelmien valttamiseksi:",
+      "title": "Vinkkej\u00e4 Base64:n muuntamiseen kuvaksi",
+      "description": "Muutamia vinkkej\u00e4 yleisten ongelmien v\u00e4ltt\u00e4miseksi:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Erittain suuret tiedostot",
-          "description": "Yli 4000×4000 px kuvat voivat olla hitaampia. Jaa 10–20 kappaleen eriin."
+          "title": "Data URI -etuliite",
+          "description": "Muunnin hyv\u00e4ksyy Base64-merkkijonot Data URI -etuliitteell\u00e4 ja ilman (data:image/...). Jos etuliite l\u00f6ytyy, sit\u00e4 k\u00e4ytet\u00e4\u00e4n tulosmuodon m\u00e4\u00e4ritt\u00e4miseen."
         },
         {
-          "icon": "RiFlashlightLine",
-          "title": "Jo pakatut",
-          "description": "Jos BASE64 oli jo voimakkaasti pakattu, muunnos IMAGE-muotoon ei valttamatta saasta paljon."
+          "icon": "RiCodeLine",
+          "title": "Virheelliset merkit",
+          "description": "Base64-merkkijonot saavat sis\u00e4lt\u00e4\u00e4 vain A\u2013Z, a\u2013z, 0\u20139, +, / ja = (t\u00e4yte). V\u00e4lily\u00f6nnit ja rivinvaihdot poistetaan automaattisesti ennen dekoodausta."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Lapinakyvy",
-          "description": "IMAGE ei tue lapinakyyytta. Lapinakyyt alueet muuttuvat valkoisiksi. Harkitse PNG:ta tai WebP:ta."
+          "icon": "RiFileImageLine",
+          "title": "Tulosmuoto",
+          "description": "Dekoodattu kuva tallennetaan Data URI -etuliitteen m\u00e4\u00e4ritt\u00e4m\u00e4ss\u00e4 muodossa. Ilman etuliitett\u00e4 muunnin tunnistaa automaattisesti muodon."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Sailyta alkuperaiset",
-          "description": "Hapioillinen muunnos on peruuttamaton. Sailyta kopiot BASE64-tiedostoista."
+          "icon": "RiFileCodeLine",
+          "title": "Pitk\u00e4t merkkijonot",
+          "description": "Eritt\u00e4in pitk\u00e4t Base64-merkkijonot (jotka edustavat suuria kuvia) voivat kest\u00e4\u00e4 hetken dekoodattaviksi. Muunnin k\u00e4sittelee mink\u00e4 tahansa pituisia merkkijonoja, jotka selaimesi pystyy k\u00e4sittelem\u00e4\u00e4n."
         }
       ]
     },
@@ -190,16 +190,16 @@
           "answer": "Kyllä, se toimii kaikilla laitteilla, joissa on moderni verkkoselain."
         },
         {
-          "question": "Onko BASE64 IMAGE muunnos turvallinen?",
-          "answer": "Kylla. Kaikki tapahtuu paikallisesti selaimessa Canvas API:lla. Mitaan ei laheteta palvelimille."
+          "question": "Onko Base64:n muuntaminen kuvaksi turvallista?",
+          "answer": "Kyll\u00e4. Dekoodausprosessi tapahtuu t\u00e4ysin paikallisesti selaimessasi. Tietojasi ei koskaan l\u00e4hetet\u00e4 millek\u00e4\u00e4n palvelimelle."
         },
         {
-          "question": "Voinko muuntaa useita BASE64-tiedostoja kerralla?",
-          "answer": "Kylla. Eramuunnos ilman rajaa. Vedaa tiedostot muuntimeen."
+          "question": "Mit\u00e4 kuvamuotoja tuetaan?",
+          "answer": "Muunnin voi dekoodata Base64-merkkijonoja PNG-, JPG-, GIF-, WebP-, SVG-, BMP- ja muihin standardimuotoihin. Muoto tunnistetaan automaattisesti Data URI -etuliitteest\u00e4 tai bin\u00e4\u00e4risest\u00e4 sis\u00e4ll\u00f6st\u00e4."
         },
         {
-          "question": "Tukevatko kaikki selaimet IMAGE-muotoa?",
-          "answer": "IMAGE-muotoa tukevat Chrome, Firefox, Safari, Edge ja Opera."
+          "question": "Miten saan Base64-merkkijonon kuvasta?",
+          "answer": "Base64-merkkijonoja kuville l\u00f6ytyy HTML-l\u00e4hdekoodista (src-attribuutti), CSS-tiedostoista (background-image), API-vastauksista tai tietokannoista. Etsi merkkijonoja, jotka alkavat data:image/ ja niiden per\u00e4ss\u00e4 on base64,."
         }
       ]
     },

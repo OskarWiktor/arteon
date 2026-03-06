@@ -2,7 +2,7 @@
   "toolKey": "imageToBase64",
   "locale": "pt",
   "metadata": {
-    "title": "Conversor imagem para Base64 — imagem Base64",
+    "title": "Conversor imagem para Base64 - imagem Base64",
     "description": "Codifique imagens em Base64. Copie o código pronto para CSS ou HTML. Gratuito.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
     "path": "/pt/ferramentas/conversor-imagem-para-base64"
@@ -43,7 +43,7 @@
         {
           "position": 2,
           "name": "Converter",
-          "text": "Clique em Converter — os ficheiros são processados localmente no navegador."
+          "text": "Clique em Converter - os ficheiros são processados localmente no navegador."
         },
         {
           "position": 3,
@@ -61,7 +61,7 @@
     {
       "type": "sectionBasic",
       "title": "Por que converter imagem para Base64?",
-      "html": "<p class=\"text-mid mb-4\">IMAGE e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para BASE64 pode oferecer vantagens significativas — arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversor online gratuito transforma seus arquivos IMAGE para o formato BASE64 diretamente no navegador. Nenhum arquivo e enviado a servidores — todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
+      "html": "<p class=\"text-mid mb-4\">IMAGE e um formato amplamente utilizado com grande compatibilidade. Dependendo do uso, a conversao para BASE64 pode oferecer vantagens significativas - arquivos menores, melhor qualidade ou suporte mais amplo de plataformas.</p><p class=\"text-mid mb-4\">Este conversor online gratuito transforma seus arquivos IMAGE para o formato BASE64 diretamente no navegador. Nenhum arquivo e enviado a servidores - todo o processo acontece localmente no seu dispositivo.</p><p class=\"text-mid\">Converta quantos arquivos precisar sem limites diarios, sem registro e sem marcas d'agua. Arraste e solte seus arquivos, ajuste a qualidade e baixe os resultados.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/conversor-jpg-png-para-webp-pt.webp",
       "imageAlt": "imagem to Base64 conversion",
       "variant": "right"
@@ -82,7 +82,7 @@
         },
         {
           "title": "Converter",
-          "description": "Clique em Converter — os ficheiros são processados localmente no navegador.",
+          "description": "Clique em Converter - os ficheiros são processados localmente no navegador.",
           "icon": "RiSettings3Line"
         },
         {
@@ -129,8 +129,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "Quanto economizar convertendo IMAGE para BASE64?",
-      "html": "<p class=\"text-mid mb-4\">A economia depende do tipo de arquivo e compressao original:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Foto de camera</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Imagem de produto</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Captura / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Economia: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">A economia real varia conforme conteudo e configuracoes.</p>"
+      "title": "Como funciona a codificação de imagem para Base64?",
+      "html": "<p class=\"text-mid mb-4\">A codificação Base64 converte os dados binários de uma imagem numa cadeia de texto usando 64 caracteres ASCII imprimíveis (A–Z, a–z, 0–9, +, /). Cada grupo de 3 bytes de dados binários torna-se 4 caracteres Base64, o que significa que a cadeia codificada é aproximadamente 33% maior que o ficheiro original.</p><p class=\"text-mid mb-4\">O conversor lê o seu ficheiro de imagem, codifica-o numa cadeia Base64 e adiciona o prefixo Data URI apropriado (ex. data:image/png;base64,). Isto cria uma cadeia autónoma que pode ser integrada diretamente em HTML, CSS ou JSON sem necessitar de um ficheiro de imagem separado.</p><p class=\"text-mid\">As imagens codificadas em Base64 são comumente usadas para pequenos ícones, logotipos e elementos de interface onde eliminar um pedido HTTP adicional melhora o tempo de carregamento. A conversão é realizada completamente no seu navegador.</p>"
     },
     {
       "type": "gap",
@@ -138,35 +138,44 @@
     },
     {
       "type": "sectionSteps",
-      "title": "Dicas para converter IMAGE para BASE64",
-      "description": "Dicas para evitar problemas comuns:",
+      "title": "Dicas para a codificação de imagem para Base64",
+      "description": "Algumas dicas para evitar problemas comuns:",
       "grid": "two",
       "items": [
         {
           "icon": "RiFileImageLine",
-          "title": "Arquivos muito grandes",
-          "description": "Imagens acima de 4000×4000 px podem ser mais lentas. Divida em lotes de 10–20."
+          "title": "Aumento de tamanho",
+          "description": "A codificação Base64 aumenta o tamanho do ficheiro aproximadamente 33%. Uma imagem de 10 KB torna-se uma cadeia Base64 de aproximadamente 13,3 KB. Ideal para imagens pequenas menores de 10 KB."
         },
         {
           "icon": "RiFlashlightLine",
-          "title": "Ja comprimidos",
-          "description": "Se o IMAGE ja estava muito comprimido, a conversao para BASE64 pode nao economizar muito."
+          "title": "Formato Data URI",
+          "description": "A saída inclui o prefixo Data URI completo (data:image/png;base64,...) — pronto para colar num atributo src HTML ou numa propriedade CSS background-image."
         },
         {
-          "icon": "RiPaletteLine",
-          "title": "Transparencia",
-          "description": "BASE64 nao suporta transparencia. Areas transparentes viram fundo branco. Considere PNG ou WebP."
+          "icon": "RiCodeLine",
+          "title": "Formatos suportados",
+          "description": "O conversor aceita PNG, JPG, GIF, WebP, SVG e BMP. O tipo MIME no Data URI é definido automaticamente com base no formato de entrada."
         },
         {
-          "icon": "RiStackLine",
-          "title": "Mantenha originais",
-          "description": "Conversao com perdas e irreversivel. Mantenha copias dos arquivos IMAGE."
+          "icon": "RiFileCodeLine",
+          "title": "Considerações de cache",
+          "description": "Imagens incorporadas em Base64 não podem ser armazenadas em cache separadamente pelo navegador. Para imagens usadas em múltiplas páginas, ficheiros separados com cabeçalhos de cache são mais eficientes."
         }
       ]
     },
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "When to use Base64 encoding vs regular image files",
+      "html": "<p class=\"text-mid mb-4\">Base64 encoding is beneficial in specific scenarios, but not always the right choice:</p><ul class=\"text-mid mt-3 ml-6 list-disc space-y-2\"><li><strong>Use Base64 for</strong> – small images under 10 KB (icons, logos), email templates with embedded images, API requests requiring image data in JSON, self-contained HTML files.</li><li><strong>Use regular files for</strong> – large images over 50 KB, website hero images and photos, images that need browser caching, content served via CDN.</li></ul><p class=\"text-mid mt-3\">Base64 increases data size by 33% and prevents browser caching. For web performance, only inline very small assets. For everything else, serve images as regular files with proper caching headers.</p>"
     },
     {
       "type": "faq",
@@ -190,16 +199,16 @@
           "answer": "Sim, funciona em qualquer dispositivo com um navegador web moderno."
         },
         {
-          "question": "Converter IMAGE para BASE64 e seguro?",
-          "answer": "Sim. Tudo acontece localmente no navegador via Canvas API. Nada e enviado a servidores."
+          "question": "É segura a codificação de imagem para Base64?",
+          "answer": "Sim. Toda a conversão é realizada localmente no seu navegador. As suas imagens nunca são enviadas a um servidor."
         },
         {
-          "question": "Posso converter varios IMAGE de uma vez?",
-          "answer": "Sim. Conversao em lote sem limite. Arraste para o conversor."
+          "question": "Quando usar Base64 em vez de ficheiros de imagem?",
+          "answer": "Base64 é ideal para imagens pequenas (ícones, logotipos menores de 10 KB) onde poupar um pedido HTTP é importante. Para imagens maiores, ficheiros separados são mais eficientes pois podem ser armazenados em cache pelo navegador."
         },
         {
-          "question": "BASE64 e compativel com todos os navegadores?",
-          "answer": "BASE64 e suportado por Chrome, Firefox, Safari, Edge e Opera."
+          "question": "Que formatos de imagem são suportados?",
+          "answer": "O conversor aceita PNG, JPG, GIF, WebP, SVG, BMP e outros formatos de imagem padrão. O tipo MIME no Data URI é detetado automaticamente."
         }
       ]
     },

@@ -2,7 +2,7 @@
   "toolKey": "webpToTiff",
   "locale": "hu",
   "metadata": {
-    "title": "WebP TIFF konverter — WebP TIFF",
+    "title": "WebP TIFF konverter - WebP TIFF",
     "description": "WebP kepek konvertálása professzionalis TIFF-re nyomtatashoz es archivalashoz. Közvetlenül a böngészőben fut. Nincs szerverfelöltés, nincs regisztráció.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-webp-konverter-hu.webp",
     "path": "/hu/eszkozok/webp-tiff-konverter"
@@ -43,17 +43,17 @@
         {
           "position": 2,
           "name": "Minőség beállítása",
-          "text": "Állítsd be a TIFF minőség csúszkáját — alacsonyabb értékek kisebb fájlokat eredményeznek."
+          "text": "Állítsd be a TIFF minőség csúszkáját - alacsonyabb értékek kisebb fájlokat eredményeznek."
         },
         {
           "position": 3,
           "name": "Konvertalas",
-          "text": "Kattints a Konvertálás gombra — a fájlok helyben, a böngészőben kerülnek feldolgozásra."
+          "text": "Kattints a Konvertálás gombra - a fájlok helyben, a böngészőben kerülnek feldolgozásra."
         },
         {
           "position": 4,
           "name": "Letoltes",
-          "text": "Töltsd le a TIFF fájlokat — egyenként vagy mindet egyszerre."
+          "text": "Töltsd le a TIFF fájlokat - egyenként vagy mindet egyszerre."
         }
       ]
     }
@@ -290,6 +290,15 @@
     {
       "type": "gap",
       "variant": "line"
+    },
+    {
+      "type": "gap",
+      "variant": "line"
+    },
+    {
+      "type": "sectionInfo",
+      "title": "How much can you save by converting WebP to TIFF?",
+      "html": "<p class=\"text-mid mb-4\">Savings depend on the source file type and its original compression. Below are example results:</p><div class=\"mt-6 grid gap-4 md:grid-cols-3\"><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Camera photo</p><p class=\"text-light text-sm\">2.4 MB → 890 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Product image</p><p class=\"text-light text-sm\">500 KB → 185 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~63%</p></div><div class=\"rounded-lg border border-neutral-200 bg-white p-4\"><p class=\"text-dark mb-2 font-semibold\">Screenshot / banner</p><p class=\"text-light text-sm\">350 KB → 230 KB</p><p class=\"text-success-icon mt-1 text-sm font-medium\">Saving: ~34%</p></div></div><p class=\"text-light mt-4 text-sm\">Actual savings may vary depending on image content and quality settings. The converter shows the exact size before and after conversion for each file.</p>"
     },
     {
       "type": "faq",

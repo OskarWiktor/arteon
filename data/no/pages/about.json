@@ -6,12 +6,12 @@
   },
   "hero": {
     "title": "Gratis nettverktøy laget av et kreativt byrå",
-    "description": "10 nettleserbaserte verktøy for bilder, SEO, farger, e-postsignaturer og QR-koder — uten registrering, uten filopplasting, uten begrensninger"
+    "description": "10 nettleserbaserte verktøy for bilder, SEO, farger, e-postsignaturer og QR-koder - uten registrering, uten filopplasting, uten begrensninger"
   },
   "whoWeAre": {
     "title": "Hvem vi er",
     "p1": "Arteon er et polsk kreativt byrå. I tillegg til vårt kommersielle arbeid utvikler og vedlikeholder vi en voksende samling gratis nettverktøy designet for bedriftseiere, nettstedsutviklere, designere, markedsførere og alle som jobber med digitalt innhold.",
-    "p2": "Hvert verktøy vi lager løser et spesifikt, dagligdags problem: konvertere bilder, sjekke fargekontrast, generere faviconer, lage QR-koder og mer. Målet vårt er å bygge et komplett verktøysett der du finner alt du trenger på ett sted — uten å bytte mellom titalls forskjellige nettsider."
+    "p2": "Hvert verktøy vi lager løser et spesifikt, dagligdags problem: konvertere bilder, sjekke fargekontrast, generere faviconer, lage QR-koder og mer. Målet vårt er å bygge et komplett verktøysett der du finner alt du trenger på ett sted - uten å bytte mellom titalls forskjellige nettsider."
   },
   "whyFree": {
     "title": "Hvorfor vi tilbyr gratis verktøy",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Personvern først",
-        "description": "Filene dine forlater aldri enheten din. All behandling skjer lokalt i nettleseren — vi sender ikke dataene dine til noen server."
+        "description": "Filene dine forlater aldri enheten din. All behandling skjer lokalt i nettleseren - vi sender ikke dataene dine til noen server."
       },
       {
         "title": "Bygget fra reelle behov",
@@ -61,7 +61,7 @@
   },
   "whatsNext": {
     "title": "Hva som kommer",
-    "text": "Vi jobber aktivt med å utvide verktøysettet. Nye verktøy legges til jevnlig basert på tilbakemeldinger fra brukere og vår egen erfaring. Målet er én plattform der bedriftseiere, designere og utviklere har tilgang til hvert viktig verktøy — alt på ett sted, alt gratis."
+    "text": "Vi jobber aktivt med å utvide verktøysettet. Nye verktøy legges til jevnlig basert på tilbakemeldinger fra brukere og vår egen erfaring. Målet er én plattform der bedriftseiere, designere og utviklere har tilgang til hvert viktig verktøy - alt på ett sted, alt gratis."
   },
   "privacy": {
     "title": "Personvern og sikkerhet",
@@ -71,7 +71,7 @@
   },
   "cta": {
     "title": "Prøv verktøyene våre",
-    "description": "Gratis nettverktøy — uten registrering, uten begrensninger, uten filopplasting til servere",
+    "description": "Gratis nettverktøy - uten registrering, uten begrensninger, uten filopplasting til servere",
     "btnOne": "Gå til verktøy",
     "btnTwo": "Kontakt"
   }

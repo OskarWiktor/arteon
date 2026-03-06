@@ -2,8 +2,8 @@
   "toolKey": "pdfToPng",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter PDF na PNG — strony PDF jako obrazy PNG",
-    "description": "Zamień każdą stronę PDF na bezstratny obraz PNG. Idealne do zrzutów, prezentacji i druku. Bez rejestracji — konwersja w przeglądarce.",
+    "title": "Konwerter PDF na PNG - strony PDF jako obrazy PNG",
+    "description": "Zamień każdą stronę PDF na bezstratny obraz PNG. Idealne do zrzutów, prezentacji i druku. Bez rejestracji - konwersja w przeglądarce.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-pdf-na-png"
   },
@@ -24,11 +24,11 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter PDF na PNG — darmowy, bez limitu stron",
+      "name": "Konwerter PDF na PNG - darmowy, bez limitu stron",
       "alternateName": ["Zamiana PDF na PNG online", "Konwersja PDF do PNG", "PDF to PNG converter"],
       "applicationCategory": "MultimediaApplication",
       "applicationSubCategory": "FileConverter",
-      "description": "Darmowy konwerter PDF na PNG online. Zamień strony PDF na obrazy PNG w przeglądarce — pliki nie są wysyłane na serwer.",
+      "description": "Darmowy konwerter PDF na PNG online. Zamień strony PDF na obrazy PNG w przeglądarce - pliki nie są wysyłane na serwer.",
       "featureList": ["Konwersja stron PDF na PNG", "Przetwarzanie wszystkich stron dokumentu", "Renderowanie lokalne w przeglądarce", "Pobieranie pojedynczo lub wszystkich naraz"]
     },
     "howTo": {
@@ -58,7 +58,7 @@
     {
       "type": "sectionBasic",
       "title": "Dlaczego warto konwertować PDF na PNG?",
-      "html": "<p class=\"text-mid mb-4\">PNG to bezstratny format graficzny, który zachowuje pełną jakość obrazu. Jest idealny, gdy zależy ci na ostrości tekstu i grafik — np. do prezentacji, instrukcji, materiałów marketingowych lub archiwizacji.</p><p class=\"text-mid mb-4\">Konwersja PDF na PNG przydaje się, gdy chcesz wstawić stronę dokumentu do prezentacji, opublikować jako obraz w mediach społecznościowych lub zarchiwizować dokument w postaci graficznej.</p><p class=\"text-mid\">Nasz konwerter renderuje PDF lokalnie w przeglądarce — pliki nie są wysyłane na żaden serwer zewnętrzny.</p>",
+      "html": "<p class=\"text-mid mb-4\">PNG to bezstratny format graficzny, który zachowuje pełną jakość obrazu. Jest idealny, gdy zależy ci na ostrości tekstu i grafik - np. do prezentacji, instrukcji, materiałów marketingowych lub archiwizacji.</p><p class=\"text-mid mb-4\">Konwersja PDF na PNG przydaje się, gdy chcesz wstawić stronę dokumentu do prezentacji, opublikować jako obraz w mediach społecznościowych lub zarchiwizować dokument w postaci graficznej.</p><p class=\"text-mid\">Nasz konwerter renderuje PDF lokalnie w przeglądarce - pliki nie są wysyłane na żaden serwer zewnętrzny.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
       "imageAlt": "Konwerter PDF na PNG – Arteon"
     },
@@ -100,17 +100,17 @@
         {
           "icon": "RiFileTextLine",
           "title": "Dokumentacja techniczna",
-          "description": "PNG zachowuje ostrość tekstu i grafik — idealny do wstawiania stron PDF w dokumentacji."
+          "description": "PNG zachowuje ostrość tekstu i grafik - idealny do wstawiania stron PDF w dokumentacji."
         },
         {
           "icon": "RiPresentationLine",
           "title": "Prezentacje",
-          "description": "Wstaw stronę PDF jako obraz PNG do prezentacji — ostrzejszy tekst niż JPG."
+          "description": "Wstaw stronę PDF jako obraz PNG do prezentacji - ostrzejszy tekst niż JPG."
         },
         {
           "icon": "RiImageLine",
           "title": "Archiwizacja stron",
-          "description": "PNG jest bezstratny — archiwizuj strony PDF w najwyższej jakości."
+          "description": "PNG jest bezstratny - archiwizuj strony PDF w najwyższej jakości."
         },
         {
           "icon": "RiShareLine",
@@ -136,7 +136,7 @@
         {
           "icon": "RiInfinityFill",
           "title": "Bez limitu stron",
-          "description": "Narzędzie przetworzy każdą stronę dokumentu — bez ograniczeń."
+          "description": "Narzędzie przetworzy każdą stronę dokumentu - bez ograniczeń."
         },
         {
           "icon": "RiImageLine",
@@ -157,7 +157,7 @@
     {
       "type": "sectionInfo",
       "title": "Wskazówki dotyczące konwersji PDF na PNG",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>PNG to format bezstratny — tekst i grafiki będą ostre, ale pliki będą większe niż JPG.</li><li>Dla dokumentów z dużą ilością tekstu PNG jest lepszym wyborem niż JPG (brak artefaktów kompresji).</li><li>Domyślna rozdzielczość renderowania to 2x — zapewnia dobrą jakość na ekranach Retina.</li><li>Jeśli rozmiar pliku jest ważniejszy niż jakość, rozważ <a href=\"/narzedzia/konwerter-pdf-na-jpg\">konwersję PDF na JPG</a>.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>PNG to format bezstratny - tekst i grafiki będą ostre, ale pliki będą większe niż JPG.</li><li>Dla dokumentów z dużą ilością tekstu PNG jest lepszym wyborem niż JPG (brak artefaktów kompresji).</li><li>Domyślna rozdzielczość renderowania to 2x - zapewnia dobrą jakość na ekranach Retina.</li><li>Jeśli rozmiar pliku jest ważniejszy niż jakość, rozważ <a href=\"/narzedzia/konwerter-pdf-na-jpg\">konwersję PDF na JPG</a>.</li></ul>"
     },
     {
       "type": "gap",
@@ -246,7 +246,7 @@
     {
       "type": "sectionInfo",
       "title": "Wpływ konwersji obrazów na szybkość strony i SEO",
-      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich — LCP (Largest Contentful Paint) — mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów PDF na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony — szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji — takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero — wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
+      "html": "<p class=\"text-mid mb-4\">Core Web Vitals to zestaw wskaźników wydajności, które Google wykorzystuje przy ocenie stron internetowych. Jeden z nich - LCP (Largest Contentful Paint) - mierzy czas wyświetlenia największego widocznego elementu na ekranie. Na wielu stronach tym elementem jest obraz: baner główny, zdjęcie produktu lub grafika w sekcji hero.</p><p class=\"text-mid mb-4\">Konwersja obrazów PDF na PNG zmniejsza rozmiar plików graficznych, co bezpośrednio skraca czas pobierania zasobów i poprawia wskaźnik LCP. Mniejsze pliki oznaczają szybsze ładowanie strony - szczególnie istotne na urządzeniach mobilnych z wolniejszym łączem, z których korzysta ponad 70% polskich internautów.</p><p class=\"text-mid mb-4\">Dodatkowe techniki optymalizacji - takie jak atrybut <code>loading=\"lazy\"</code> dla obrazów poniżej linii widoczności, element <code>&lt;picture&gt;</code> z atrybutem <code>srcset</code> do serwowania odpowiednich rozmiarów oraz atrybut <code>fetchpriority=\"high\"</code> dla obrazu hero - wspólnie przyspieszają renderowanie strony.</p><p class=\"text-mid\">Narzędzia takie jak <a href=\"https://pagespeed.web.dev/\" target=\"_blank\" rel=\"noopener noreferrer\">PageSpeed Insights</a> i Lighthouse wskazują konkretne pliki, które warto zoptymalizować. Raport w kategorii Performance pokazuje wpływ każdego obrazu na czas ładowania.</p>"
     },
     {
       "type": "gap",
@@ -276,7 +276,7 @@
         {
           "icon": "RiStackLine",
           "title": "Zachowaj oryginały",
-          "description": "Konwersja stratna jest nieodwracalna — po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PDF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
+          "description": "Konwersja stratna jest nieodwracalna - po zapisaniu pliku w nowym formacie nie można odzyskać utraconych danych. Warto zachować kopię oryginalnych plików PDF, aby w razie potrzeby powtórzyć konwersję z innymi ustawieniami."
         }
       ]
     },
@@ -291,7 +291,7 @@
       "items": [
         {
           "question": "Czym PNG różni się od JPG przy konwersji z PDF?",
-          "answer": "PNG to format bezstratny — zachowuje pełną jakość tekstu i grafik. JPG kompresuje obraz stratnie, co daje mniejsze pliki, ale może powodować artefakty. Dla dokumentów z tekstem PNG jest lepszym wyborem."
+          "answer": "PNG to format bezstratny - zachowuje pełną jakość tekstu i grafik. JPG kompresuje obraz stratnie, co daje mniejsze pliki, ale może powodować artefakty. Dla dokumentów z tekstem PNG jest lepszym wyborem."
         },
         {
           "question": "Czy pliki są wysyłane na serwer?",
@@ -307,11 +307,11 @@
         },
         {
           "question": "Czy konwersja PDF na PNG jest bezpieczna dla moich plików?",
-          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny — nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
+          "answer": "Tak. Cała konwersja odbywa się lokalnie w przeglądarce za pomocą API Canvas. Pliki nie są wysyłane na żaden serwer zewnętrzny - nigdy nie opuszczają komputera użytkownika. Po zamknięciu strony dane są automatycznie usuwane z pamięci przeglądarki."
         },
         {
           "question": "Czy mogę konwertować wiele plików PDF jednocześnie?",
-          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz — nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
+          "answer": "Tak. Narzędzie obsługuje konwersję wielu plików naraz - nie ma limitu ilości. Wystarczy przeciągnąć wszystkie pliki na pole konwertera lub wybrać je z dysku. Każdy plik jest przetwarzany osobno, a wyniki można pobrać pojedynczo lub wszystkie naraz."
         },
         {
           "question": "Czy PNG jest obsługiwany przez wszystkie przeglądarki?",
