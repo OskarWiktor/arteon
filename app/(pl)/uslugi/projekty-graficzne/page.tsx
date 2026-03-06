@@ -167,11 +167,8 @@ export default function OfferDesignPage() {
           <br />
 
           <p>
-            <strong>Materiały drukowane nadal działają.</strong> 79% konsumentów deklaruje, że chętniej sięga po ofertę firm, które dostarczają estetyczne broszury, ulotki lub wizytówki{' '}
-            <a href="https://www.printpower.eu/insight/consumers-trust-printed-advertising/" target="_blank" rel="noopener noreferrer" className="inline-link">
-              (PrintPower - raport o zaufaniu do druku)
-            </a>
-            . Dobrze zaprojektowane materiały drukowane są uzupełnieniem działań online i realnie zwiększają sprzedaż.
+            <strong>Materiały drukowane nadal działają.</strong> 79% konsumentów deklaruje, że chętniej sięga po ofertę firm, które dostarczają estetyczne broszury, ulotki lub wizytówki (PrintPower,
+            raport o zaufaniu do druku). Dobrze zaprojektowane materiały drukowane są uzupełnieniem działań online i realnie zwiększają sprzedaż.
           </p>
 
           <br />

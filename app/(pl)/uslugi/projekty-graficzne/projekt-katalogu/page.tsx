@@ -99,11 +99,7 @@ export default function OfferDesignCatalogPage() {
 
           <p>
             <strong>Katalog działa zarówno online, jak i w druku.</strong> Dostajesz wersję do wysyłki mailem (PDF) i pliki gotowe do druku. Materiały drukowane dłużej zostają w pamięci niż przekaz
-            wyłącznie cyfrowy
-            <a href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
-              (źródło)
-            </a>
-            . Dobrze zaprojektowany katalog staje się „fizycznym dowodem” jakości Twojej marki.
+            wyłącznie cyfrowy (badanie Temple University / Canada Post, 2015). Dobrze zaprojektowany katalog staje się „fizycznym dowodem” jakości Twojej marki.
           </p>
 
           <br />

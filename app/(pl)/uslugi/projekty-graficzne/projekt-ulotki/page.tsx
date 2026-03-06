@@ -95,11 +95,8 @@ export default function OfferDesignFlyerPage() {
         <SectionInfo title="Co zyskujesz zamawiając projekt ulotki?">
           <p>
             <strong>Profesjonalna ulotka dociera tam, gdzie reklama cyfrowa znika po sekundzie.</strong> Materiały drukowane są łatwiejsze w odbiorze i dłużej zostają w pamięci - badania
-            neuromarketingowe pokazują niższe obciążenie poznawcze i wyższą zapamiętywalność niż w kanale wyłącznie cyfrowym{' '}
-            <a href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf" target="_blank" rel="noopener noreferrer" className="inline-link">
-              (Canada Post - neuromarketing)
-            </a>
-            . Dobrze zaprojektowana ulotka prowadzi klienta od nagłówka, przez korzyści, aż do konkretnego działania.
+            neuromarketingowe pokazują niższe obciążenie poznawcze i wyższą zapamiętywalność niż w kanale wyłącznie cyfrowym (badanie Temple University / Canada Post, 2015). Dobrze zaprojektowana
+            ulotka prowadzi klienta od nagłówka, przez korzyści, aż do konkretnego działania.
           </p>
 
           <br />

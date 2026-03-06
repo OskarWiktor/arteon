@@ -112,7 +112,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionBasic
           variant="right"
-          imageSrc="/assets/offer/optymalizacja-wordpress/optymalizacja-wordpress-raport.webp"
+          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-zblizenie-na-raport.webp"
           imageAlt="Optymalizacja strony WordPress - ekran z raportem szybkości"
           subtitle="Dla kogo"
           title="Kiedy optymalizacja WordPress ma największy sens?"
@@ -244,7 +244,7 @@ export default function OfferOptimizationWordPressPage() {
 
         <SectionBasic
           variant="left"
-          imageSrc="/assets/offer/optymalizacja-wordpress/optymalizacja-wordpress-mobile.webp"
+          imageSrc="/assets/offer/optymalizacja-seo/optymalizacja-seo-edycja-strony.webp"
           imageAlt="Optymalizacja WordPress - widok strony na telefonie"
           subtitle="Typowe rezultaty"
           title="Jakie zmiany najczęściej widać po optymalizacji strony WordPress?"

@@ -93,11 +93,8 @@ export default function OfferDesignPresentationFolderPage() {
         <SectionInfo title="Co zyskujesz zamawiając projekt teczki ofertowej?">
           <p>
             <strong>Własna firmowa teczka porządkuje dokumenty i utrzymuje spójność materiałów.</strong> Klient dostaje Twoje materiały w jednej, eleganckiej formie - to ułatwia zapamiętanie marki
-            oraz buduje jej autorytet. Materiały drukowane zostają w pamięci dłużej niż przekaz cyfrowy (mniejsze obciążenie poznawcze, wyższa zapamiętywalność)
-            <a href="https://www.canadapost-postescanada.ca/cpc/doc/en/landing-pages/infographic-neuroscience-direct-mail-e.pdf" target="_blank" rel="noopener noreferrer" className="inline-link ml-1">
-              (Canada Post - neuromarketing)
-            </a>
-            .
+            oraz buduje jej autorytet. Materiały drukowane zostają w pamięci dłużej niż przekaz cyfrowy - mniejsze obciążenie poznawcze i wyższa zapamiętywalność (badanie Temple University / Canada
+            Post, 2015).
           </p>
 
           <br />

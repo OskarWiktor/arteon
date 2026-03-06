@@ -103,8 +103,8 @@ const schema = {
       {
         '@type': 'WebApplication',
         position: 7,
-        name: 'Fargeuttrrekker fra bilde',
-        url: toAbsoluteUrl('/no/verktoy/fargeuttrrekker-fra-bilde'),
+        name: 'Fargeutrekker fra bilde',
+        url: toAbsoluteUrl('/no/verktoy/fargeutrekker-fra-bilde'),
         applicationCategory: 'DesignApplication',
         operatingSystem: 'Any',
       },
@@ -721,8 +721,8 @@ export default function ToolsIndexPage() {
             },
             {
               icon: <RiPantoneLine className="h-8 w-8" />,
-              title: 'Fargeuttrrekker fra bilde',
-              topImageAlt: 'Fargeuttrrekker fra bilde Arteon',
+              title: 'Fargeutrekker fra bilde',
+              topImageAlt: 'Fargeutrekker fra bilde Arteon',
               topImageSrc: '/assets/tools/image-color-extractor/fargeutrekker-fra-bilde-no.webp',
               description: (
                 <div className="flex h-full flex-col">
@@ -969,7 +969,7 @@ export default function ToolsIndexPage() {
         <Gap variant="line" />
         <SectionInfo title="Hva er Arteons verktoy?">
           <p className="mb-4">
-            10 gratis verktoy for forberedelse av materialer for nettsider, sosiale medier og trykk -- WebP-konverterer, favicon-generator, tekstteller, fargeuttrrekker, palettgenerator og QR-kode.
+            10 gratis verktoy for forberedelse av materialer for nettsider, sosiale medier og trykk -- WebP-konverterer, favicon-generator, tekstteller, fargeutrekker, palettgenerator og QR-kode.
           </p>
           <p>Alle verktoy kjorer i nettleseren -- filer sendes aldri til en server. Bruk uten registrering og uten begrensninger.</p>
         </SectionInfo>
