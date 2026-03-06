@@ -136,28 +136,20 @@ export function middleware(request: NextRequest) {
   }
 
   // ── Canonical host ──────────────────────────────────────────────────────────
-  const url = request.nextUrl.clone();
   const host = request.headers.get('host') || '';
   const proto = request.headers.get('x-forwarded-proto') || 'https';
+  const pathname = request.nextUrl.pathname;
 
-  let shouldRedirect = false;
+  const needsProtoRedirect = proto === 'http' && process.env.VERCEL_ENV === 'production';
+  const needsHostRedirect = host === 'arteonagency.pl';
+  const needsSlashRedirect = pathname !== '/' && pathname.endsWith('/');
 
-  if (proto === 'http' && process.env.VERCEL_ENV === 'production') {
-    url.protocol = CANONICAL_PROTOCOL;
-    shouldRedirect = true;
-  }
+  if (needsProtoRedirect || needsHostRedirect || needsSlashRedirect) {
+    const url = request.nextUrl.clone();
+    if (needsProtoRedirect) url.protocol = CANONICAL_PROTOCOL;
+    if (needsHostRedirect) url.host = CANONICAL_HOST;
+    if (needsSlashRedirect) url.pathname = pathname.slice(0, -1);
 
-  if (host === 'arteonagency.pl') {
-    url.host = CANONICAL_HOST;
-    shouldRedirect = true;
-  }
-
-  if (url.pathname !== '/' && url.pathname.endsWith('/')) {
-    url.pathname = url.pathname.slice(0, -1);
-    shouldRedirect = true;
-  }
-
-  if (shouldRedirect) {
     return new NextResponse(null, {
       status: 301,
       headers: {

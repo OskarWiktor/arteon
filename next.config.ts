@@ -101,18 +101,6 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000,
   },
   async headers() {
-    const preconnectHeaders = [
-      {
-        source: '/:path*',
-        headers: [
-          { key: 'Link', value: '<https://pagead2.googlesyndication.com>; rel=preconnect; crossorigin' },
-          { key: 'Link', value: '<https://fundingchoicesmessages.google.com>; rel=preconnect; crossorigin' },
-          { key: 'Link', value: '<https://www.googletagmanager.com>; rel=preconnect' },
-          { key: 'Link', value: '<https://www.arteonagency.pl/sitemap.xml>; rel=sitemap' },
-        ],
-      },
-    ];
-
     const staticCacheHeaders = [
       {
         source: '/assets/:path*',
@@ -129,14 +117,14 @@ const nextConfig: NextConfig = {
         source: '/sitemap.xml',
         headers: [
           { key: 'Content-Type', value: 'application/xml; charset=utf-8' },
-          { key: 'Cache-Control', value: 'public, max-age=3600, s-maxage=3600' },
+          { key: 'Cache-Control', value: 'public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400' },
         ],
       },
       {
         source: '/sitemap-:slug.xml',
         headers: [
           { key: 'Content-Type', value: 'application/xml; charset=utf-8' },
-          { key: 'Cache-Control', value: 'public, max-age=3600, s-maxage=3600' },
+          { key: 'Cache-Control', value: 'public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400' },
         ],
       },
     ];
@@ -147,7 +135,6 @@ const nextConfig: NextConfig = {
             source: '/:path*',
             headers: securityHeaders,
           },
-          ...preconnectHeaders,
           ...staticCacheHeaders,
         ]
       : [
@@ -155,7 +142,6 @@ const nextConfig: NextConfig = {
             source: '/:path*',
             headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
           },
-          ...preconnectHeaders,
           ...staticCacheHeaders,
         ];
   },
