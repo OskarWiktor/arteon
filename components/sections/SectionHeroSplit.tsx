@@ -29,7 +29,7 @@ export default function SectionHeroSplit({ subtitle, title, description, btnOne,
           </div>
 
           <div className="relative aspect-square w-full overflow-hidden rounded-2xl lg:w-1/2">
-            <Image src={imageSrc} alt={imageAlt} fill className="object-cover" sizes="(min-width:1024px) 50vw, 100vw" priority />
+            <Image src={imageSrc} alt={imageAlt} fill className="object-cover" sizes="(min-width:1024px) 50vw, 100vw" priority unoptimized />
           </div>
         </div>
       </Wrapper>

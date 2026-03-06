@@ -200,6 +200,7 @@ function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIn
                       className="pointer-events-none object-cover select-none"
                       sizes="(min-width:1024px) 33vw, (min-width:768px) 50vw, 100vw"
                       aria-hidden={topImageAlt ? undefined : true}
+                      unoptimized
                     />
                   </div>
                 </div>
@@ -211,7 +212,7 @@ function ExpandableStepsList({ items, gridColsSm, gridColsMd, gridColsLg, showIn
                     {showIndex ? (
                       <span className="text-base font-semibold">{index + 1}</span>
                     ) : imageSrc ? (
-                      <Image src={imageSrc} alt={imageAlt ?? ''} width={28} height={28} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} />
+                      <Image src={imageSrc} alt={imageAlt ?? ''} width={28} height={28} className="pointer-events-none select-none" aria-hidden={imageAlt ? undefined : true} unoptimized />
                     ) : (
                       icon
                     )}

@@ -206,6 +206,7 @@ function FilterModal({ isOpen, onClose, cats, active, isRoot }: FilterModalProps
               <Link
                 key={item.slug || 'all'}
                 href={href}
+                prefetch={false}
                 data-index={index}
                 onClick={onClose}
                 role="option"

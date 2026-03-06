@@ -112,7 +112,7 @@ export default function SearchDialog({ isOpen, onClose }: SearchDialogProps) {
           <p className="text-light text-sm">
             {t.noResults} „{query}”
           </p>
-          <Link href={localeConfig.contactHref ?? '/kontakt'} onClick={onClose} className="text-dark inline-link mt-2 inline-block text-sm font-medium">
+          <Link href={localeConfig.contactHref ?? '/kontakt'} prefetch={false} onClick={onClose} className="text-dark inline-link mt-2 inline-block text-sm font-medium">
             {t.contactUs}
           </Link>
         </div>

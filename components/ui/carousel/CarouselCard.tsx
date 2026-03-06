@@ -48,7 +48,7 @@ export function CarouselCard(props: CarouselCardProps) {
 
     return (
       <article className="surface-card flex h-full flex-col overflow-hidden">
-        <Link href={props.href} className="block focus:outline-none">
+        <Link href={props.href} prefetch={false} className="block focus:outline-none">
           <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-black/10">
             <Image
               src={props.image}
@@ -56,6 +56,7 @@ export function CarouselCard(props: CarouselCardProps) {
               fill
               className="object-cover transition-transform duration-300 group-hover:scale-105"
               sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+              unoptimized
             />
           </div>
         </Link>
@@ -65,6 +66,7 @@ export function CarouselCard(props: CarouselCardProps) {
           <div className="mt-auto">
             <Link
               href={props.href}
+              prefetch={false}
               className="focus-visible:ring-primary inline-flex w-fit items-center rounded-2xl border border-black/10 bg-white px-3 py-1.5 text-sm font-medium shadow-md transition hover:-translate-y-0.5 hover:shadow-xl focus-visible:ring-2 focus-visible:ring-offset-2 md:px-4 md:py-2 md:text-base"
             >
               <span>{label}</span>
@@ -84,10 +86,10 @@ export function CarouselCard(props: CarouselCardProps) {
 
   return (
     <article className="surface-card h-full">
-      <Link href={href} className="block focus:outline-none">
+      <Link href={href} prefetch={false} className="block focus:outline-none">
         {a.cover ? (
           <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-black/10">
-            <Image src={a.cover} alt={a.title} fill className="object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" />
+            <Image src={a.cover} alt={a.title} fill className="object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" unoptimized />
           </div>
         ) : null}
         <div className="p-4">

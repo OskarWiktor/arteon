@@ -1,5 +1,4 @@
 import { NextResponse, type NextRequest } from 'next/server';
-import { ALL_STATIC_REDIRECTS } from './lib/redirects';
 
 const CANONICAL_HOST = 'www.arteonagency.pl';
 const CANONICAL_PROTOCOL = 'https';
@@ -130,56 +129,18 @@ function isBlockedRequest(request: NextRequest): boolean {
   return false;
 }
 
-function redirect301(url: URL): NextResponse {
-  return new NextResponse(null, {
-    status: 301,
-    headers: {
-      Location: url.toString(),
-      'Content-Type': 'text/html; charset=utf-8',
-    },
-  });
-}
-
-function matchPatternRedirect(pathname: string): string | null {
-  if (pathname.startsWith('/projects/') && pathname !== '/projects/') {
-    const slug = pathname.replace('/projects/', '');
-    if (slug && !slug.includes('/')) {
-      return `/realizacje/${slug}`;
-    }
-  }
-
-  if (pathname.startsWith('/edukacja/design/')) {
-    const rest = pathname.replace('/edukacja/design/', '');
-    return `/edukacja/grafika/${rest}`;
-  }
-
-  return null;
-}
-
 export function middleware(request: NextRequest) {
-  // ── Security gate ──────────────────────────────────────────────────────
+  // ── Security gate ──────────────────────────────────────────────────────────────
   if (isBlockedRequest(request)) {
     return new NextResponse(null, { status: 403 });
   }
 
-  // ── Redirects & canonical ──────────────────────────────────────────────
+  // ── Canonical host ──────────────────────────────────────────────────────────
   const url = request.nextUrl.clone();
   const host = request.headers.get('host') || '';
   const proto = request.headers.get('x-forwarded-proto') || 'https';
 
   let shouldRedirect = false;
-
-  const staticRedirect = ALL_STATIC_REDIRECTS[url.pathname];
-  if (staticRedirect) {
-    url.pathname = staticRedirect;
-    return redirect301(url);
-  }
-
-  const patternRedirect = matchPatternRedirect(url.pathname);
-  if (patternRedirect) {
-    url.pathname = patternRedirect;
-    return redirect301(url);
-  }
 
   if (proto === 'http' && process.env.VERCEL_ENV === 'production') {
     url.protocol = CANONICAL_PROTOCOL;
@@ -197,7 +158,13 @@ export function middleware(request: NextRequest) {
   }
 
   if (shouldRedirect) {
-    return redirect301(url);
+    return new NextResponse(null, {
+      status: 301,
+      headers: {
+        Location: url.toString(),
+        'Content-Type': 'text/html; charset=utf-8',
+      },
+    });
   }
 
   const response = NextResponse.next();

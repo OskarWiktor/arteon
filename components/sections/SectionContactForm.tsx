@@ -29,7 +29,7 @@ export default function SectionContactForm({ title, description, imageSrc, image
 
         <div className="flex flex-col justify-center">
           <div className="relative mb-6 aspect-[4/3] overflow-hidden rounded-2xl">
-            <Image src={imageSrc} alt={imageAlt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+            <Image src={imageSrc} alt={imageAlt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" unoptimized />
           </div>
           <ul className="space-y-3">
             {benefits.map((item, i) => (

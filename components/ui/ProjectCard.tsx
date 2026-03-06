@@ -10,11 +10,12 @@ export default function ProjectCardSplit({ project, size = 'normal' }: Props) {
   return (
     <Link
       href={`/realizacje/${project.slug}`}
+      prefetch={false}
       className="group focus-visible:ring-primary block h-full rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
     >
       <article className="surface-card-lift flex h-full flex-col overflow-hidden">
         <div className={`relative ${sizeClass} w-full`}>
-          <Image src={project.image} alt={`Zrzut ekranu projektu ${project.title}`} fill className="object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" quality={85} />
+          <Image src={project.image} alt={`Zrzut ekranu projektu ${project.title}`} fill className="object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" unoptimized />
         </div>
 
         <div className="flex grow flex-col px-6 py-4 md:px-7 md:py-5">

@@ -30,7 +30,7 @@ export default function SectionInfoBanner({ items, animated = false, speed = 40 
         {item.linkText && item.linkHref && (
           <>
             {' '}
-            <Link href={item.linkHref} className="hover:text-accent underline underline-offset-2 transition-colors">
+            <Link href={item.linkHref} prefetch={false} className="hover:text-accent underline underline-offset-2 transition-colors">
               {item.linkText}
             </Link>
           </>

@@ -1,5 +1,7 @@
 import type { NextConfig } from 'next';
+import type { Redirect } from 'next/dist/lib/load-custom-routes';
 import bundleAnalyzer from '@next/bundle-analyzer';
+import { ALL_STATIC_REDIRECTS } from './lib/redirects';
 
 const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
@@ -70,7 +72,8 @@ const securityHeaders = [
 /**
  * Next.js Configuration
  *
- * Redirecty 301 są obsługiwane przez middleware.ts (edge runtime).
+ * Redirecty 301 są obsługiwane przez next.config.ts redirects() (CDN layer, bez Edge Function).
+ * Middleware obsługuje tylko: security gate + canonical host.
  * Konfiguracja redirectów: lib/redirects.ts
  */
 const nextConfig: NextConfig = {
@@ -95,7 +98,7 @@ const nextConfig: NextConfig = {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 1080, 1920],
     imageSizes: [96, 256, 384],
-    minimumCacheTTL: 2592000,
+    minimumCacheTTL: 31536000,
   },
   async headers() {
     const preconnectHeaders = [
@@ -155,6 +158,20 @@ const nextConfig: NextConfig = {
           ...preconnectHeaders,
           ...staticCacheHeaders,
         ];
+  },
+  async redirects() {
+    const staticRedirects: Redirect[] = Object.entries(ALL_STATIC_REDIRECTS).map(([source, destination]) => ({
+      source,
+      destination,
+      permanent: true,
+    }));
+
+    const patternRedirects: Redirect[] = [
+      { source: '/projects/:slug', destination: '/realizacje/:slug', permanent: true },
+      { source: '/edukacja/design/:path*', destination: '/edukacja/grafika/:path*', permanent: true },
+    ];
+
+    return [...staticRedirects, ...patternRedirects];
   },
   webpack(config, { dev }) {
     if (!dev && config.cache) {

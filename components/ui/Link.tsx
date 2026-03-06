@@ -30,7 +30,7 @@ export default function AppLink({ href, children, className = '', variant = 'def
   const classes = `${baseClasses} ${variantClasses[variant]} ${displayClass} ${className}`;
 
   return (
-    <NextLink href={href} className={classes} aria-current={ariaCurrent} aria-label={ariaLabel} target={target} rel={rel}>
+    <NextLink href={href} prefetch={false} className={classes} aria-current={ariaCurrent} aria-label={ariaLabel} target={target} rel={rel}>
       {children}
     </NextLink>
   );

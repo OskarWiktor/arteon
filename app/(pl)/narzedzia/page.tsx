@@ -1061,7 +1061,11 @@ export default function ToolsIndexPage() {
           </p>
           <p className="mb-4">Wszystkie narzędzia działają w przeglądarce - pliki nie są wysyłane na serwer. Korzystasz bez rejestracji i bez limitu.</p>
           <p>
-            Jeśli potrzebujesz pomocy z projektem strony lub identyfikacji wizualnej, <Link href="/kontakt">skontaktuj się z nami</Link>.
+            Jeśli potrzebujesz pomocy z projektem strony lub identyfikacji wizualnej,{' '}
+            <Link href="/kontakt" prefetch={false}>
+              skontaktuj się z nami
+            </Link>
+            .
           </p>
         </SectionInfo>
 

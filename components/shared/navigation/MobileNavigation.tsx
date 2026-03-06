@@ -245,6 +245,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                       {sec.hubHref ? (
                         <Link
                           href={sec.hubHref}
+                          prefetch={false}
                           onClick={() => setIsOpen(false)}
                           className={`text-dark focus-visible:ring-primary inline-block rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${pathname.startsWith(sec.hubHref) ? 'font-semibold' : ''}`}
                         >
@@ -281,6 +282,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                               <li key={it.href}>
                                 <Link
                                   href={it.href}
+                                  prefetch={false}
                                   onClick={() => setIsOpen(false)}
                                   className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
                                 >
@@ -308,6 +310,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                 <Link
                   key="realizacje"
                   href={realizacjeNav.href}
+                  prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname === realizacjeNav.href ? 'page' : pathname.startsWith(realizacjeNav.href) ? 'page' : undefined}
                   className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
@@ -323,6 +326,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   <div className="flex items-center justify-between">
                     <Link
                       href={aboutNav.href}
+                      prefetch={false}
                       onClick={() => setIsOpen(false)}
                       aria-current={pathname.startsWith(aboutNav.href) ? 'page' : undefined}
                       className={`focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
@@ -354,6 +358,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                             <li key={aboutItem.href}>
                               <Link
                                 href={aboutItem.href}
+                                prefetch={false}
                                 onClick={() => setIsOpen(false)}
                                 aria-current={isSubActive ? 'page' : undefined}
                                 className={`ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
@@ -376,6 +381,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                 <Link
                   key="edukacja"
                   href={edukacjaNav.href}
+                  prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(edukacjaNav.href) ? 'page' : undefined}
                   className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
@@ -391,6 +397,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                   <div className="flex items-center justify-between">
                     <Link
                       href={narzedziaNav.href}
+                      prefetch={false}
                       onClick={() => setIsOpen(false)}
                       aria-current={pathname.startsWith(narzedziaNav.href) ? 'page' : undefined}
                       className={`focus-visible:ring-primary rounded px-3 py-1 text-[15px] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
@@ -422,6 +429,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                             <li key={tool.href}>
                               <Link
                                 href={tool.href}
+                                prefetch={false}
                                 onClick={() => setIsOpen(false)}
                                 aria-current={isToolActive ? 'page' : undefined}
                                 className={`ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
@@ -444,6 +452,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                 <Link
                   key="kontakt"
                   href={contactHref}
+                  prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(contactHref) ? 'page' : undefined}
                   className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
@@ -459,6 +468,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
             <>
               <Link
                 href={localeConfig.toolsIndexHref}
+                prefetch={false}
                 onClick={() => setIsOpen(false)}
                 aria-current={pathname === localeConfig.toolsIndexHref ? 'page' : undefined}
                 className={`ring-primary mb-2 block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
@@ -503,6 +513,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
                                 <li key={it.href}>
                                   <Link
                                     href={it.href}
+                                    prefetch={false}
                                     onClick={() => setIsOpen(false)}
                                     className="group text-dark focus-visible:ring-primary flex items-center gap-3 rounded-xl px-2 py-[7px] text-[15px] transition outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
                                   >
@@ -524,6 +535,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               {localeConfig.aboutHref && (
                 <Link
                   href={localeConfig.aboutHref}
+                  prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(localeConfig.aboutHref) ? 'page' : undefined}
                   className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
@@ -537,6 +549,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               {localeConfig.contactHref && (
                 <Link
                   href={localeConfig.contactHref}
+                  prefetch={false}
                   onClick={() => setIsOpen(false)}
                   aria-current={pathname.startsWith(localeConfig.contactHref) ? 'page' : undefined}
                   className={`ring-primary block rounded-xl px-3 py-[7px] text-[15px] ring-offset-2 outline-none focus-visible:ring-2 ${
@@ -556,6 +569,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               <li key={_linkKey}>
                 <Link
                   href={href}
+                  prefetch={false}
                   onClick={() => setIsOpen(false)}
                   className="text-dark focus-visible:ring-primary block rounded-xl px-3 py-[7px] text-[15px] outline-none hover:bg-neutral-100 focus-visible:ring-2 focus-visible:ring-offset-2"
                 >
@@ -571,6 +585,7 @@ export default function MobileNavigation({ isOpen, setIsOpen }: { isOpen: boolea
               {isPl && (
                 <Link
                   href={contactHref}
+                  prefetch={false}
                   onClick={() => setIsOpen(false)}
                   className="bg-primary focus-visible:ring-primary rounded-2xl px-3 py-2 text-sm font-semibold text-white transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2"
                 >

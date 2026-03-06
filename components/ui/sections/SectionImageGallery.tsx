@@ -49,7 +49,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
               onClick={() => openLightbox(index)}
               className="group focus-visible:ring-primary relative aspect-square overflow-hidden rounded-xl focus:outline-none focus-visible:ring-2"
             >
-              <Image src={image.src} alt={image.alt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw" />
+              <Image src={image.src} alt={image.alt} fill className="object-cover transition group-hover:scale-105" sizes="(min-width:1024px) 25vw, (min-width:768px) 33vw, 50vw" unoptimized />
               {image.title && (
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 transition group-hover:opacity-100">
                   <span className="text-sm font-medium text-white">{image.title}</span>
@@ -79,7 +79,7 @@ export default function SectionImageGallery({ title, images }: SectionImageGalle
           </button>
 
           <div className="relative max-h-[80vh] max-w-[90vw]" onClick={(e) => e.stopPropagation()}>
-            <Image src={images[lightboxIndex].src} alt={images[lightboxIndex].alt} width={1200} height={800} className="max-h-[80vh] w-auto object-contain" />
+            <Image src={images[lightboxIndex].src} alt={images[lightboxIndex].alt} width={1200} height={800} className="max-h-[80vh] w-auto object-contain" unoptimized />
             {images[lightboxIndex].title && <p className="mt-4 text-center text-white">{images[lightboxIndex].title}</p>}
           </div>
 

@@ -137,7 +137,7 @@ export default function Footer() {
             <section aria-label={ft.companyDataLabel} className="lg:col-start-1 lg:row-start-1">
               <div className="mb-4">
                 <AppLink href={localeConfig.toolsIndexHref}>
-                  <Image src="/assets/arteon-logo.webp" width={140} height={50} alt="Arteon logo" />
+                  <Image src="/assets/arteon-logo.webp" width={140} height={50} alt="Arteon logo" unoptimized />
                 </AppLink>
               </div>
               <p className="text-dark text-base">{ft.description}</p>

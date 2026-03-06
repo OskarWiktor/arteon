@@ -176,7 +176,7 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
         {children}
 
         <Analytics />
-        <SpeedInsights sampleRate={0.1} />
+        <SpeedInsights sampleRate={0.02} />
       </body>
     </html>
   );

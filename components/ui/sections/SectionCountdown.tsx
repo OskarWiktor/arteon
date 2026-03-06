@@ -68,7 +68,7 @@ export default function SectionCountdown({ title, description, targetDate, btnLa
           </div>
 
           {btnLabel && btnLink && (
-            <Link href={btnLink} className="text-error-icon mt-8 inline-block rounded-xl bg-white px-8 py-3 font-medium transition hover:bg-white/90">
+            <Link href={btnLink} prefetch={false} className="text-error-icon mt-8 inline-block rounded-xl bg-white px-8 py-3 font-medium transition hover:bg-white/90">
               {btnLabel}
             </Link>
           )}

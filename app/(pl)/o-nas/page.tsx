@@ -127,7 +127,7 @@ export default function AboutPage() {
               description: (
                 <p>
                   Jasne zasady: faktura po realizacji (małe projekty), przy większych niska zaliczka i kamienie milowe. Gwarancja opisana w{' '}
-                  <Link href="/regulamin" className="inline underline underline-offset-4">
+                  <Link href="/regulamin" prefetch={false} className="inline underline underline-offset-4">
                     regulaminie
                   </Link>
                   . Po wdrożeniu dwa miesiące wsparcia w cenie.

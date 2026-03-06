@@ -208,12 +208,12 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                       sizes="100vw"
                       style={{ width: '100%', height: 'auto' }}
                       priority={b.priority ?? false}
-                      quality={b.quality ?? 90}
+                      unoptimized
                     />
                   </div>
                 ) : (
                   <Aspect ratio={b.ratio || '16/9'}>
-                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" quality={b.quality ?? 90} />
+                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" unoptimized />
                   </Aspect>
                 )}
                 {hasCaption && <figcaption className="text-light mt-2 mb-6 text-sm md:mb-12 lg:mb-16">{b.caption}</figcaption>}
@@ -234,12 +234,12 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                   sizes="(min-width:768px) 50vw, 100vw"
                   style={{ width: '100%', height: 'auto' }}
                   priority={b.priority ?? false}
-                  quality={b.quality ?? 90}
+                  unoptimized
                 />
               </div>
             ) : (
               <Aspect ratio={b.ratio || '4/3'}>
-                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" quality={b.quality ?? 90} />
+                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" unoptimized />
               </Aspect>
             );
 

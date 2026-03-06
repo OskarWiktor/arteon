@@ -63,8 +63,8 @@ export default function Navigation() {
 
       <Wrapper>
         <nav className="flex h-12 items-center justify-between md:h-14 lg:h-16" aria-label={t.mainNavigation}>
-          <Link href={isPl ? '/' : localeConfig.toolsIndexHref}>
-            <Image src="/assets/arteon-logo.webp" width={100} height={30} alt={t.logoAlt} priority sizes="100px" />
+          <Link href={isPl ? '/' : localeConfig.toolsIndexHref} prefetch={false}>
+            <Image src="/assets/arteon-logo.webp" width={100} height={30} alt={t.logoAlt} priority sizes="100px" unoptimized />
           </Link>
 
           <DesktopNavigation />

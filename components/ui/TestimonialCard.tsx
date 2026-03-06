@@ -38,7 +38,7 @@ export default function TestimonialCard({ item }: Props) {
 
       {item.link && (
         <p className="mt-5">
-          <Link href={item.link} target="_blank" rel="noopener noreferrer" className="text-sm underline underline-offset-4 transition hover:opacity-80">
+          <Link href={item.link} prefetch={false} target="_blank" rel="noopener noreferrer" className="text-sm underline underline-offset-4 transition hover:opacity-80">
             Zobacz opinię u źródła
           </Link>
         </p>

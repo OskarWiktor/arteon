@@ -337,6 +337,7 @@ export default function DesktopNavigation() {
                         <Link
                           key={section.key}
                           href={section.hubHref || '#'}
+                          prefetch={false}
                           onMouseEnter={() => handleCategoryHover(section.key)}
                           onFocus={() => handleCategoryHover(section.key)}
                           className={`group/cat focus-visible:ring-primary flex w-full items-center justify-between gap-3 rounded-xl px-4 py-3 text-left transition-all duration-200 focus:outline-none focus-visible:ring-2 ${
@@ -368,6 +369,7 @@ export default function DesktopNavigation() {
                           <Link
                             key={item.href}
                             href={item.href}
+                            prefetch={false}
                             className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
                           >
                             {ItemIcon ? (
@@ -453,6 +455,7 @@ export default function DesktopNavigation() {
                           <Link
                             key={item.href}
                             href={item.href}
+                            prefetch={false}
                             className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
                           >
                             {ItemIcon ? (
@@ -491,6 +494,7 @@ export default function DesktopNavigation() {
                   <Link
                     key={item.href}
                     href={item.href}
+                    prefetch={false}
                     className="group/link focus-visible:ring-primary flex items-center gap-3 rounded-xl px-4 py-3 transition-colors duration-150 hover:bg-white focus:outline-none focus-visible:ring-2"
                   >
                     {item.icon ? <span className="text-primary-mid group-hover/link:text-primary shrink-0 transition-colors">{item.icon}</span> : null}

@@ -84,7 +84,7 @@ export default function Button({ children, variant = 'normal', size = 'medium', 
       );
     }
     return (
-      <Link href={link} className={baseClass} onClick={onClick}>
+      <Link href={link} prefetch={false} className={baseClass} onClick={onClick}>
         <span>{children}</span>
         {Arrow}
       </Link>

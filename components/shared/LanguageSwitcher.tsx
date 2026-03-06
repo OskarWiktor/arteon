@@ -117,6 +117,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
     <Link
       key={link.locale}
       href={link.href}
+      prefetch={false}
       role="menuitem"
       hrefLang={link.hreflang}
       title={link.title}
@@ -281,6 +282,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                         <Link
                           key={link.locale}
                           href={link.href}
+                          prefetch={false}
                           hrefLang={link.hreflang}
                           title={link.title}
                           onClick={close}
@@ -297,6 +299,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                           <Link
                             key={link.locale}
                             href={link.href}
+                            prefetch={false}
                             hrefLang={link.hreflang}
                             title={link.title}
                             onClick={close}
@@ -322,6 +325,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                         <Link
                           key={link.locale}
                           href={link.href}
+                          prefetch={false}
                           hrefLang={link.hreflang}
                           title={link.title}
                           onClick={close}
@@ -338,6 +342,7 @@ export default function LanguageSwitcher({ variant = 'desktop' }: { variant?: 'd
                           <Link
                             key={link.locale}
                             href={link.href}
+                            prefetch={false}
                             hrefLang={link.hreflang}
                             title={link.title}
                             onClick={close}
