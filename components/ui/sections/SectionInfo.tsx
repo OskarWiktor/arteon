@@ -1,3 +1,5 @@
+'use client';
+
 import { useId, type ReactNode } from 'react';
 import SectionHeader from '../typography/SectionHeader';
 import ButtonGroup from '../buttons/ButtonGroup';

@@ -1,3 +1,5 @@
+'use client';
+
 import { useId, type ReactNode } from 'react';
 import Image from 'next/image';
 import SectionHeader from '../typography/SectionHeader';

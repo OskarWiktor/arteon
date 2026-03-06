@@ -1,3 +1,5 @@
+'use client';
+
 import type { Locale } from '@/types/locale';
 import type { ToolItemKey } from '@/types/tools/common';
 import Gap from '@/components/ui/Gap';

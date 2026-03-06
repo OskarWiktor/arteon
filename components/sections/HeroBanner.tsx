@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Button from '../ui/buttons/Button';
 import ButtonGroup from '../ui/buttons/ButtonGroup';

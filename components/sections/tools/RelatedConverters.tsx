@@ -1,3 +1,5 @@
+'use client';
+
 import type { Locale } from '@/types/locale';
 import Gap from '@/components/ui/Gap';
 import {
