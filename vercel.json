@@ -1,6 +1,18 @@
 {
   "headers": [
     {
+      "source": "/(en|de|es|fr|pt|it|ro|nl|hu|cs|sv|da|no|fi|el)/:path*",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=604800, stale-while-revalidate=2592000" }]
+    },
+    {
+      "source": "/narzedzia/:path*",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=604800, stale-while-revalidate=2592000" }]
+    },
+    {
+      "source": "/((?!_next|assets|fonts|favicon|sitemap|robots|ads|llms|\\.well-known).*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=86400, stale-while-revalidate=604800" }]
+    },
+    {
       "source": "/sitemap.xml",
       "headers": [
         { "key": "Content-Type", "value": "application/xml; charset=utf-8" },

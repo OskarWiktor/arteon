@@ -17,7 +17,7 @@ import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import SectionPrices from '@/components/ui/sections/SectionPrices';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blogDataService';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt papieru firmowego | Arteon',
@@ -329,7 +329,7 @@ export default function OfferDesignLetterheadPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getArticlePreviewsByCategory('grafika', 6)} />
         <Gap size="sm" />
       </Wrapper>
 

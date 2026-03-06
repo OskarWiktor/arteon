@@ -34,7 +34,7 @@ import SectionSteps from '@/components/ui/sections/SectionSteps';
 import Wrapper from '@/components/ui/Wrapper';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blogDataService';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { siteUrl } from '@/utils/absoluteUrl';
 
 function ServiceSchema() {
@@ -351,7 +351,7 @@ export default function OfferContentPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące tworzenia treści" categorySlug="tresci" articles={getAllArticlePreviews()} />
+        <ArticlesCarousel title="Przydatne artykuły dotyczące tworzenia treści" categorySlug="tresci" articles={getArticlePreviewsByCategory('tresci', 6)} />
 
         <Gap size="sm" />
       </Wrapper>

@@ -29,7 +29,7 @@ import SectionInfo from '@/components/ui/sections/SectionInfo';
 import SectionBasic from '@/components/ui/sections/SectionBasic';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
 import SectionTimeline from '@/components/ui/sections/SectionTimeline';
-import { getAllArticlePreviews } from '@/lib/blogDataService';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
@@ -519,7 +519,7 @@ export default function TworzenieStronWordPressPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące stron internetowych" categorySlug="strony" articles={getAllArticlePreviews()} />
+        <ArticlesCarousel title="Przydatne artykuły dotyczące stron internetowych" categorySlug="strony" articles={getArticlePreviewsByCategory('strony', 6)} />
 
         <Gap size="sm" />
       </Wrapper>

@@ -44,6 +44,10 @@ export function getAllArticlePreviews(): ArticlePreview[] {
   return previews;
 }
 
+export function getArticlePreviewsByCategory(categorySlug: string, max = 6): ArticlePreview[] {
+  return previews.filter((a) => a.primaryCategory && slugify(a.primaryCategory) === categorySlug).slice(0, max);
+}
+
 export function getCategoriesWithCount() {
   const map = new Map<string, { label: string; slug: string; count: number }>();
   for (const a of previews) {

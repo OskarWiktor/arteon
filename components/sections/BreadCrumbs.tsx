@@ -1,5 +1,3 @@
-'use client';
-
 import Wrapper from '../ui/Wrapper';
 import AppLink from '../ui/Link';
 import { RiHomeLine } from 'react-icons/ri';

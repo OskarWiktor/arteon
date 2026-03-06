@@ -1,5 +1,3 @@
-'use client';
-
 import { useId } from 'react';
 import { RiCheckLine, RiCloseLine } from 'react-icons/ri';
 

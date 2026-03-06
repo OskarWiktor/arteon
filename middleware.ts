@@ -163,5 +163,7 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon\\.ico|sitemap.*\\.xml|robots\\.txt|ads\\.txt|llms.*\\.txt|assets/|fonts/|\\.well-known/).*)'],
+  matcher: [
+    '/((?!_next/static|_next/image|favicon|sitemap|robots|ads|llms|\\.well-known|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.webp|.*\\.ico|.*\\.svg|.*\\.gif|.*\\.avif|.*\\.woff2?|.*\\.css|.*\\.js|.*\\.map|.*\\.txt|.*\\.xml|assets/|fonts/).*)',
+  ],
 };

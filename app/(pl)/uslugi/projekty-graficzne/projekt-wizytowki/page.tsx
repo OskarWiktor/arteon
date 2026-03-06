@@ -18,7 +18,7 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blogDataService';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Projekt wizytówki | Arteon',
@@ -300,7 +300,7 @@ export default function OfferDesignBusinessCardPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getAllArticlePreviews()} />
+        <ArticlesCarousel title="Przydatne artykuły dotyczące projektów graficznych" categorySlug="grafika" articles={getArticlePreviewsByCategory('grafika', 6)} />
 
         <Gap size="sm" />
       </Wrapper>

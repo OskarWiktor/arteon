@@ -33,7 +33,7 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blogDataService';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 
 export const metadata = {
   title: 'Blogi internetowe - projekt i realizacja | Arteon',
@@ -372,7 +372,7 @@ export default function OfferBlogPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel title="Przydatne artykuły dotyczące stron i blogów" categorySlug="strony" articles={getAllArticlePreviews()} />
+        <ArticlesCarousel title="Przydatne artykuły dotyczące stron i blogów" categorySlug="strony" articles={getArticlePreviewsByCategory('strony', 6)} />
 
         <Gap size="sm" />
       </Wrapper>

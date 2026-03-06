@@ -1,4 +1,4 @@
-ï»¿import HeroBanner from '@/components/sections/HeroBanner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import BenefitBelt from '@/components/sections/BenefitBelt';
 import CTABanner from '@/components/sections/CTABanner';
 import Gap from '@/components/ui/Gap';
@@ -19,16 +19,16 @@ import Script from 'next/script';
 import { buildServiceSchema } from '@/lib/serviceSchema';
 import TestimonialsCarousel from '@/components/sections/TestimonialsCarousel';
 import ArticlesCarousel from '@/components/sections/blog/ArticlesCarousel';
-import { getAllArticlePreviews } from '@/lib/blogDataService';
+import { getArticlePreviewsByCategory } from '@/lib/blogDataService';
 import { siteUrl } from '@/utils/absoluteUrl';
 
 export const metadata = {
   title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
-  description: 'PrzeprowadÅº audyt SEO swojej witryny - przygotujemy plan, ktÃ³ry sprawi, Å¼e Twoja witryna znajdzie siÄ™ wyÅ¼ej w wynikach wyszukiwarki Google.',
+  description: 'PrzeprowadŸ audyt SEO swojej witryny - przygotujemy plan, który sprawi, ¿e Twoja witryna znajdzie siê wy¿ej w wynikach wyszukiwarki Google.',
   alternates: { canonical: 'https://www.arteonagency.pl/uslugi/marketing/audyt-seo' },
   openGraph: {
     title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
-    description: 'PrzeprowadÅº audyt SEO swojej witryny - przygotujemy plan, ktÃ³ry sprawi, Å¼e Twoja witryna znajdzie siÄ™ wyÅ¼ej w wynikach wyszukiwarki Google.',
+    description: 'PrzeprowadŸ audyt SEO swojej witryny - przygotujemy plan, który sprawi, ¿e Twoja witryna znajdzie siê wy¿ej w wynikach wyszukiwarki Google.',
     url: `${siteUrl}/uslugi/marketing/audyt-seo`,
     siteName: 'Arteon',
     type: 'website',
@@ -39,7 +39,7 @@ export const metadata = {
   //  card: 'summary_large_image',
   //  title: 'Audyt SEO - plan pozycjonowania Twojej witryny | Arteon',
   //  description:
-  //    'PrzeprowadÅº audyt SEO swojej witryny i sprawdÅº, co zrobiÄ‡, aby wyÅ›wietlaÄ‡ siÄ™ wyÅ¼ej w Google.',
+  //    'PrzeprowadŸ audyt SEO swojej witryny i sprawdŸ, co zrobiæ, aby wyœwietlaæ siê wy¿ej w Google.',
   //  images: [`${siteUrl}/assets/og/audyt-seo.webp`],
   //},
 } as const;
@@ -48,7 +48,7 @@ function ServiceSchema() {
   const json = buildServiceSchema({
     path: '/uslugi/marketing/audyt-seo',
     serviceName: 'Audyt SEO',
-    description: 'Audyt SEO dla stron i sklepÃ³w internetowych - analiza techniczna, treÅ›ciowa i strukturalna strony z rekomendacjami dziaÅ‚aÅ„.',
+    description: 'Audyt SEO dla stron i sklepów internetowych - analiza techniczna, treœciowa i strukturalna strony z rekomendacjami dzia³añ.',
     availableLanguages: ['pl'],
     includeServiceChannel: true,
   });
@@ -65,8 +65,8 @@ export default function OfferMarketingPage() {
     <>
       <HeroBanner
         title="Audyt SEO"
-        description={<>PrzeprowadÅº audyt SEO swojej witryny i sprawdÅº, co moÅ¼esz zrobiÄ‡, aby wyÅ›wietlaÄ‡ siÄ™ wyÅ¼ej w wynikach wyszukiwarki Google.</>}
-        buttonAccent="BezpÅ‚atna wycena"
+        description={<>PrzeprowadŸ audyt SEO swojej witryny i sprawdŸ, co mo¿esz zrobiæ, aby wyœwietlaæ siê wy¿ej w wynikach wyszukiwarki Google.</>}
+        buttonAccent="Bezp³atna wycena"
         buttonAccentLink="#kontakt"
         variant="left"
         backgroundImage="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
@@ -75,15 +75,15 @@ export default function OfferMarketingPage() {
 
       <BenefitBelt
         items={[
-          { icon: <RiCustomerService2Line />, label: 'Stabilny rozwÃ³j' },
-          { icon: <RiLightbulbFlashLine />, label: 'Lepsza widocznoÅ›Ä‡' },
+          { icon: <RiCustomerService2Line />, label: 'Stabilny rozwój' },
+          { icon: <RiLightbulbFlashLine />, label: 'Lepsza widocznoœæ' },
           { icon: <RiBarChart2Fill />, label: 'Raport i priorytety' },
-          { icon: <RiShieldCheckLine />, label: 'Bezpieczne wdroÅ¼enia' },
+          { icon: <RiShieldCheckLine />, label: 'Bezpieczne wdro¿enia' },
         ]}
       />
 
       <Breadcrumbs
-        second={{ href: '/uslugi', label: 'UsÅ‚ugi' }}
+        second={{ href: '/uslugi', label: 'Us³ugi' }}
         third={{ href: `/uslugi/marketing`, label: 'Marketing' }}
         fourth={{ href: `/uslugi/marketing/audyt-seo`, label: 'Audyt SEO' }}
         includeJsonLd
@@ -94,13 +94,13 @@ export default function OfferMarketingPage() {
 
         <SectionInfo title="Co zyskasz po audycie SEO?">
           <p>
-            <strong>PrzeprowadzajÄ…c audyt SEO swojej strony otrzymujesz peÅ‚ny raport mocnych i sÅ‚abych punktÃ³w swojej witryny oraz jasny plan poprawy widocznoÅ›ci w wyszukiwarce.</strong> Dowiesz siÄ™,
-            jak Google widzi TwojÄ… stronÄ™, ktÃ³re podstrony blokujÄ… wyniki i jakie elementy wymagajÄ… poprawy w pierwszej kolejnoÅ›ci.
+            <strong>Przeprowadzaj¹c audyt SEO swojej strony otrzymujesz pe³ny raport mocnych i s³abych punktów swojej witryny oraz jasny plan poprawy widocznoœci w wyszukiwarce.</strong> Dowiesz siê,
+            jak Google widzi Twoj¹ stronê, które podstrony blokuj¹ wyniki i jakie elementy wymagaj¹ poprawy w pierwszej kolejnoœci.
           </p>
           <br />
           <p>
-            <strong>Szybkie poprawki + plan na 90 dni.</strong> WskaÅ¼emy zmiany, ktÃ³re da siÄ™ wdroÅ¼yÄ‡ od razu, a nastÄ™pnie rozpiszemy plan dziaÅ‚ania na kolejne tygodnie. DziÄ™ki temu Twoja strona
-            zacznie zajmowaÄ‡ wyÅ¼szÄ… pozycjÄ™ w Google, przyciÄ…gajÄ…c odpowiednich klientÃ³w.
+            <strong>Szybkie poprawki + plan na 90 dni.</strong> Wska¿emy zmiany, które da siê wdro¿yæ od razu, a nastêpnie rozpiszemy plan dzia³ania na kolejne tygodnie. Dziêki temu Twoja strona
+            zacznie zajmowaæ wy¿sz¹ pozycjê w Google, przyci¹gaj¹c odpowiednich klientów.
           </p>
         </SectionInfo>
 
@@ -109,47 +109,47 @@ export default function OfferMarketingPage() {
         <SectionBasic
           variant="right"
           imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-analityki.webp"
-          imageAlt="Audyt SEO - analiza widocznoÅ›ci strony w Google Analytics"
+          imageAlt="Audyt SEO - analiza widocznoœci strony w Google Analytics"
           subtitle="Dla kogo"
-          title="Kiedy audyt SEO ma najwiÄ™kszy sens i dla kogo jest?"
-          description="Gdy strona nie wyÅ›wietla siÄ™ tak wysoko, jakbyÅ› chciaÅ‚, planujesz przebudowÄ™ serwisu lub chcesz bezpiecznie zwiÄ™kszaÄ‡ ruch i iloÅ›Ä‡ zapytaÅ„. PeÅ‚ny audyt SEO jest najlepszy dla:"
-          btnOne="ZamÃ³w audyt SEO"
+          title="Kiedy audyt SEO ma najwiêkszy sens i dla kogo jest?"
+          description="Gdy strona nie wyœwietla siê tak wysoko, jakbyœ chcia³, planujesz przebudowê serwisu lub chcesz bezpiecznie zwiêkszaæ ruch i iloœæ zapytañ. Pe³ny audyt SEO jest najlepszy dla:"
+          btnOne="Zamów audyt SEO"
           btnOneLink="#kontakt"
         >
           <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
-            <li>WÅ‚aÅ›cicieli nowych platform, ktÃ³re potrzebujÄ… solidnych podstaw zanim ruszÄ… z kampaniami reklamowymi.</li>
-            <li>WÅ‚aÅ›cicieli sklepÃ³w oraz stron internetowych z problemami widocznoÅ›ci, ktÃ³re nie pozwalajÄ… na dostatecznÄ… iloÅ›Ä‡ zapytaÅ„ lub klientÃ³w.</li>
-            <li>Firm usÅ‚ugowych i B2B, ktÃ³rym zaleÅ¼y na staÅ‚ym dopÅ‚ywie jakoÅ›ciowych zapytaÅ„ od klientÃ³w.</li>
+            <li>W³aœcicieli nowych platform, które potrzebuj¹ solidnych podstaw zanim rusz¹ z kampaniami reklamowymi.</li>
+            <li>W³aœcicieli sklepów oraz stron internetowych z problemami widocznoœci, które nie pozwalaj¹ na dostateczn¹ iloœæ zapytañ lub klientów.</li>
+            <li>Firm us³ugowych i B2B, którym zale¿y na sta³ym dop³ywie jakoœciowych zapytañ od klientów.</li>
           </ul>
         </SectionBasic>
 
         <Gap variant="line" />
 
         <FeatureGrid
-          title="Co dokÅ‚adnie sprawdzamy podczas audytu?"
+          title="Co dok³adnie sprawdzamy podczas audytu?"
           items={[
             {
-              title: 'Czy Google moÅ¼e znaleÅºÄ‡ i zrozumieÄ‡ TwojÄ… stronÄ™',
+              title: 'Czy Google mo¿e znaleŸæ i zrozumieæ Twoj¹ stronê',
               description: (
-                <>Weryfikujemy, czy strona pojawia siÄ™ w Google, ktÃ³re podstrony sÄ… pomijane i dlaczego. Sprawdzimy mapÄ™ strony i ustawienia, ktÃ³re potrafiÄ… ukryÄ‡ treÅ›ci przed wyszukiwarkÄ….</>
+                <>Weryfikujemy, czy strona pojawia siê w Google, które podstrony s¹ pomijane i dlaczego. Sprawdzimy mapê strony i ustawienia, które potrafi¹ ukryæ treœci przed wyszukiwark¹.</>
               ),
               icon: <RiSearchLine className="text-primary h-6 w-6" />,
             },
             {
-              title: 'SzybkoÅ›Ä‡ Å‚adowania i wygodÄ™ korzystania',
+              title: 'Szybkoœæ ³adowania i wygodê korzystania',
               description: (
-                <>Mierzymy, jak szybko wczytuje siÄ™ strona i jak wyglÄ…da ona od strony technicznej. Wskazujemy proste zmiany, ktÃ³re przyspieszÄ… dziaÅ‚anie i poprawiÄ… wraÅ¼enia uÅ¼ytkownikÃ³w.</>
+                <>Mierzymy, jak szybko wczytuje siê strona i jak wygl¹da ona od strony technicznej. Wskazujemy proste zmiany, które przyspiesz¹ dzia³anie i poprawi¹ wra¿enia u¿ytkowników.</>
               ),
               icon: <RiCheckLine className="text-primary h-6 w-6" />,
             },
             {
-              title: 'Czy treÅ›ci sÄ… dopasowane do tego, czego szukajÄ… klienci',
-              description: <>Sprawdzimy, czy Twoje treÅ›ci odpowiadajÄ… na pytania uÅ¼ytkownikÃ³w i czy nie konkurujÄ… ze sobÄ…. Zaproponujemy tematy i ukÅ‚ad, ktÃ³ry uÅ‚atwi zdobywanie wyÅ¼szych pozycji.</>,
+              title: 'Czy treœci s¹ dopasowane do tego, czego szukaj¹ klienci',
+              description: <>Sprawdzimy, czy Twoje treœci odpowiadaj¹ na pytania u¿ytkowników i czy nie konkuruj¹ ze sob¹. Zaproponujemy tematy i uk³ad, który u³atwi zdobywanie wy¿szych pozycji.</>,
               icon: <RiLightbulbFlashLine className="text-primary h-6 w-6" />,
             },
             {
-              title: 'StrukturÄ™ strony oraz linki wewnÄ™trzne',
-              description: <>UporzÄ…dkujemy nawigacjÄ™ i poÅ‚Ä…czenia miÄ™dzy podstronami, aby waÅ¼ne treÅ›ci byÅ‚y Å‚atwo dostÄ™pne dla uÅ¼ytkownikÃ³w i wyszukiwarki.</>,
+              title: 'Strukturê strony oraz linki wewnêtrzne',
+              description: <>Uporz¹dkujemy nawigacjê i po³¹czenia miêdzy podstronami, aby wa¿ne treœci by³y ³atwo dostêpne dla u¿ytkowników i wyszukiwarki.</>,
               icon: <RiFileList2Line className="text-primary h-6 w-6" />,
             },
           ]}
@@ -158,14 +158,14 @@ export default function OfferMarketingPage() {
         <Gap variant="line" />
 
         <SectionSteps
-          title="Jak wyglÄ…da audyt SEO witryny?"
+          title="Jak wygl¹da audyt SEO witryny?"
           subtitle="Proces"
           items={[
             {
-              title: '1. WdraÅ¼amy analitykÄ™ i zbieramy dane',
+              title: '1. Wdra¿amy analitykê i zbieramy dane',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Analizujemy stronÄ™ technicznie, nastÄ™pnie patrzymy na ruch i wyszukiwania, sprawdzamy, jak Google widzi TwojÄ… stronÄ™.</p>
+                  <p className="mb-3 text-sm">Analizujemy stronê technicznie, nastêpnie patrzymy na ruch i wyszukiwania, sprawdzamy, jak Google widzi Twoj¹ stronê.</p>
                 </div>
               ),
             },
@@ -173,7 +173,7 @@ export default function OfferMarketingPage() {
               title: '2. Przygotowujemy raport i priorytety',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Tworzymy raport wszelkich bÅ‚Ä™dÃ³w i problemÃ³w oraz przygotowujemy listÄ™ dziaÅ‚aÅ„ podzielonych na szybkie poprawki i zadania na 90 dni.</p>
+                  <p className="mb-3 text-sm">Tworzymy raport wszelkich b³êdów i problemów oraz przygotowujemy listê dzia³añ podzielonych na szybkie poprawki i zadania na 90 dni.</p>
                 </div>
               ),
             },
@@ -181,7 +181,7 @@ export default function OfferMarketingPage() {
               title: '3. Omawiamy wnioski i kolejne kroki',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Przechodzimy przez dokument wspÃ³lnie. Ustalamy, co wdraÅ¼amy od razu, a co planujemy na kolejny etap.</p>
+                  <p className="mb-3 text-sm">Przechodzimy przez dokument wspólnie. Ustalamy, co wdra¿amy od razu, a co planujemy na kolejny etap.</p>
                 </div>
               ),
             },
@@ -190,16 +190,16 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <SectionInfo title="Co sprawdzamy w audycie SEO i pÃ³Åºniejszej optymalizacji SEO?" subtitle="KPI i raportowanie">
+        <SectionInfo title="Co sprawdzamy w audycie SEO i póŸniejszej optymalizacji SEO?" subtitle="KPI i raportowanie">
           <ul className="ml-5 list-disc space-y-2">
             <li>
-              <strong>PozycjÄ™ strony:</strong> sprawdzamy, na ktÃ³rej pozycji pokazuje siÄ™ Twoja strona przy poszczegÃ³lnych frazach.
+              <strong>Pozycjê strony:</strong> sprawdzamy, na której pozycji pokazuje siê Twoja strona przy poszczególnych frazach.
             </li>
             <li>
-              <strong>IloÅ›Ä‡ fraz:</strong> patrzymy, ile nowych fraz Google Å‚Ä…czy z TwojÄ… witrynÄ… i jak wpÅ‚ywa to na ruch oraz pozycjÄ™.
+              <strong>Iloœæ fraz:</strong> patrzymy, ile nowych fraz Google ³¹czy z Twoj¹ witryn¹ i jak wp³ywa to na ruch oraz pozycjê.
             </li>
             <li>
-              <strong>Zapytania i ruch:</strong> patrzymy, o ile wzrÃ³sÅ‚ ruch na Twojej stronie oraz o ile wzrosÅ‚a iloÅ›Ä‡ uzupeÅ‚nionych formularzy, telefonÃ³w i wiadomoÅ›ci po wprowadzonych zmianach.
+              <strong>Zapytania i ruch:</strong> patrzymy, o ile wzrós³ ruch na Twojej stronie oraz o ile wzros³a iloœæ uzupe³nionych formularzy, telefonów i wiadomoœci po wprowadzonych zmianach.
             </li>
           </ul>
         </SectionInfo>
@@ -209,21 +209,21 @@ export default function OfferMarketingPage() {
         <SectionBasic
           variant="left"
           imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
-          imageAlt="Audyt SEO - analiza widocznoÅ›ci strony w Google Search Console"
-          subtitle="Wyniki wdroÅ¼eÅ„"
-          title={<>Jakie efekty widzimy najczÄ™Å›ciej po przeprowadzeniu audytu SEO i wdroÅ¼eniu pozycjonowania?</>}
+          imageAlt="Audyt SEO - analiza widocznoœci strony w Google Search Console"
+          subtitle="Wyniki wdro¿eñ"
+          title={<>Jakie efekty widzimy najczêœciej po przeprowadzeniu audytu SEO i wdro¿eniu pozycjonowania?</>}
           btnOne="Porozmawiajmy o audycie"
           btnOneLink="#kontakt"
         >
           <ul className="mt-4 grid grid-cols-1 gap-3 pl-0 text-sm md:grid-cols-3">
             <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
-              <strong>WiÄ™cej wejÅ›Ä‡ z Google</strong> efekt moÅ¼e byÄ‡ zauwaÅ¼alny juÅ¼ po 2-3 miesiÄ…cach.
+              <strong>Wiêcej wejœæ z Google</strong> efekt mo¿e byæ zauwa¿alny ju¿ po 2-3 miesi¹cach.
             </li>
             <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
-              <strong>Szybsze dziaÅ‚anie strony</strong> dziÄ™ki optymalizacji technicznej witryny.
+              <strong>Szybsze dzia³anie strony</strong> dziêki optymalizacji technicznej witryny.
             </li>
             <li className="list-none rounded-2xl bg-white p-4 ring-1 ring-neutral-200">
-              <strong>WiÄ™cej zapytaÅ„ z formularza i telefonÃ³w</strong> po dopracowaniu nagÅ‚Ã³wkÃ³w, opisÃ³w i caÅ‚ej oferty.
+              <strong>Wiêcej zapytañ z formularza i telefonów</strong> po dopracowaniu nag³ówków, opisów i ca³ej oferty.
             </li>
           </ul>
         </SectionBasic>
@@ -235,66 +235,66 @@ export default function OfferMarketingPage() {
           plans={[
             {
               name: 'Audyt SEO: 1+ strona',
-              price: 'od 200 zÅ‚',
-              description: 'Dla kogo: dla wÅ‚aÅ›cicieli prostych stron firmowych i landing pages ( stron z jednÄ… podstronÄ… ).',
+              price: 'od 200 z³',
+              description: 'Dla kogo: dla w³aœcicieli prostych stron firmowych i landing pages ( stron z jedn¹ podstron¹ ).',
               features: [
-                'Analiza indeksacji i widocznoÅ›ci w Google',
-                'Analiza techniczna - prÄ™dkoÅ›Ä‡ strony, wersja na telefon',
-                'Weryfikacja tytuÅ‚Ã³w, opisÃ³w i nagÅ‚Ã³wkÃ³w H1-H3',
-                'Ocena treÅ›ci pod kÄ…tem sÅ‚Ã³w kluczowych i intencji uÅ¼ytkownikÃ³w',
-                'Rekomendacje optymalizacyjne i plan dziaÅ‚aÅ„ ',
+                'Analiza indeksacji i widocznoœci w Google',
+                'Analiza techniczna - prêdkoœæ strony, wersja na telefon',
+                'Weryfikacja tytu³ów, opisów i nag³ówków H1-H3',
+                'Ocena treœci pod k¹tem s³ów kluczowych i intencji u¿ytkowników',
+                'Rekomendacje optymalizacyjne i plan dzia³añ ',
               ],
-              btnOne: 'ZamÃ³w bezpÅ‚atnÄ… wycenÄ™',
+              btnOne: 'Zamów bezp³atn¹ wycenê',
               btnOneLink: '#kontakt',
             },
             {
               name: 'Audyt SEO: 10+ stron',
-              price: 'od 600 zÅ‚',
-              description: 'Dla kogo: dla wÅ‚aÅ›cicieli rozbudowanych stron firmowych lub maÅ‚ych sklepÃ³w.',
+              price: 'od 600 z³',
+              description: 'Dla kogo: dla w³aœcicieli rozbudowanych stron firmowych lub ma³ych sklepów.',
               features: [
-                'Wszystko z pakietu dla maÅ‚ych stron, a dodatkowo:',
-                'Analiza struktury kategorii i hierarchii adresÃ³w URL',
-                'Ocena treÅ›ci pod kÄ…tem sÅ‚Ã³w kluczowych i duplikacji',
+                'Wszystko z pakietu dla ma³ych stron, a dodatkowo:',
+                'Analiza struktury kategorii i hierarchii adresów URL',
+                'Ocena treœci pod k¹tem s³ów kluczowych i duplikacji',
                 'Audyt meta danych, ALT grafik i danych strukturalnych',
-                'Analiza widocznoÅ›ci konkurencji i luk tematycznych',
+                'Analiza widocznoœci konkurencji i luk tematycznych',
               ],
-              btnOne: 'ZamÃ³w bezpÅ‚atnÄ… wycenÄ™',
+              btnOne: 'Zamów bezp³atn¹ wycenê',
               btnOneLink: '#kontakt',
             },
             {
               name: 'Audyt SEO: 30+ stron',
-              price: 'od 1000 zÅ‚',
-              description: 'Dla kogo: dla wÅ‚aÅ›cicieli duÅ¼ych stron firmowych i sklepÃ³w.',
+              price: 'od 1000 z³',
+              description: 'Dla kogo: dla w³aœcicieli du¿ych stron firmowych i sklepów.',
               features: [
-                'Wszystko z pakietu dla maÅ‚ych sklepÃ³w i rozbudowanych stron, a dodatkowo:',
-                'Analiza crawl budgetu i logiki indeksacji duÅ¼ych zasobÃ³w',
-                'Audyt duplikacji treÅ›ci miÄ™dzy kategoriami i/lub jÄ™zykami',
+                'Wszystko z pakietu dla ma³ych sklepów i rozbudowanych stron, a dodatkowo:',
+                'Analiza crawl budgetu i logiki indeksacji du¿ych zasobów',
+                'Audyt duplikacji treœci miêdzy kategoriami i/lub jêzykami',
                 'Analiza pliku robots.txt, sitemap i kanonikalizacji',
-                'Analiza konkurencji i widocznoÅ›ci branÅ¼owej',
+                'Analiza konkurencji i widocznoœci bran¿owej',
               ],
-              btnOne: 'ZamÃ³w bezpÅ‚atnÄ… wycenÄ™',
+              btnOne: 'Zamów bezp³atn¹ wycenê',
               btnOneLink: '#kontakt',
             },
           ]}
-          legalNote="Ceny orientacyjne. DokÅ‚adna wycena zaleÅ¼y od wielkoÅ›ci witryny i indywidualnych czynnikÃ³w zaleÅ¼nych od branÅ¼y."
+          legalNote="Ceny orientacyjne. Dok³adna wycena zale¿y od wielkoœci witryny i indywidualnych czynników zale¿nych od bran¿y."
         />
 
         <Gap variant="line" />
 
         <SectionSteps
           title="Kolejne kroki po audycie"
-          subtitle="Zobacz teÅ¼"
-          description="Po diagnozie zwykle przechodzimy do wdroÅ¼eÅ„ i staÅ‚ej pracy nad widocznoÅ›ciÄ…."
+          subtitle="Zobacz te¿"
+          description="Po diagnozie zwykle przechodzimy do wdro¿eñ i sta³ej pracy nad widocznoœci¹."
           items={[
             {
               icon: <RiSearchLine className="h-8 w-8" />,
-              title: 'Optymalizacja SEO (wdroÅ¼enia)',
+              title: 'Optymalizacja SEO (wdro¿enia)',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Wprowadzamy zmiany: przyspieszamy Å‚adowanie, porzÄ…dkujemy tytuÅ‚y i opisy, dodajemy dane uÅ‚atwiajÄ…ce Google zrozumienie treÅ›ci.</p>
+                  <p className="mb-3 text-sm">Wprowadzamy zmiany: przyspieszamy ³adowanie, porz¹dkujemy tytu³y i opisy, dodajemy dane u³atwiaj¹ce Google zrozumienie treœci.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/optymalizacja-seo">
-                      PrzejdÅº do optymalizacji SEO
+                      PrzejdŸ do optymalizacji SEO
                     </Button>
                   </div>
                 </div>
@@ -305,10 +305,10 @@ export default function OfferMarketingPage() {
               title: 'Pozycjonowanie stron (abonament)',
               description: (
                 <div className="flex h-full flex-col">
-                  <p className="mb-3 text-sm">Pracujemy nad staÅ‚ym wzrostem widocznoÅ›ci: tworzymy plan treÅ›ci, rozbudowujemy ofertÄ™, dodajemy nowe bloki i mierzymy efekt co miesiÄ…c.</p>
+                  <p className="mb-3 text-sm">Pracujemy nad sta³ym wzrostem widocznoœci: tworzymy plan treœci, rozbudowujemy ofertê, dodajemy nowe bloki i mierzymy efekt co miesi¹c.</p>
                   <div className="mt-auto">
                     <Button arrow link="/uslugi/marketing/pozycjonowanie-stron">
-                      SprawdÅº abonament na pozycjonowanie stron
+                      SprawdŸ abonament na pozycjonowanie stron
                     </Button>
                   </div>
                 </div>
@@ -329,8 +329,8 @@ export default function OfferMarketingPage() {
         <Gap variant="line" />
 
         <SectionContactForm
-          title="SprawdÅº koszt audytu SEO"
-          description="Podaj adres swojej strony i napisz jakie problemy zauwaÅ¼asz (spadki pozycji, maÅ‚y ruch, bÅ‚Ä™dy techniczne) - otrzymasz darmowÄ… wycenÄ™ realizacji."
+          title="SprawdŸ koszt audytu SEO"
+          description="Podaj adres swojej strony i napisz jakie problemy zauwa¿asz (spadki pozycji, ma³y ruch, b³êdy techniczne) - otrzymasz darmow¹ wycenê realizacji."
           imageSrc="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
           imageAlt="Audyt SEO - analiza strony w Google Search Console"
           defaultSubject="Audyt SEO"
@@ -340,15 +340,15 @@ export default function OfferMarketingPage() {
 
         <FaqPanels
           openByDefault={1}
-          title="NajczÄ™stsze pytania dotyczÄ…ce audytu SEO"
+          title="Najczêstsze pytania dotycz¹ce audytu SEO"
           pageUrl="https://www.arteonagency.pl/uslugi/marketing/audyt-seo"
           items={[
             {
-              question: 'Co dokÅ‚adnie sprawdza audyt SEO i jakie sÄ… najczÄ™stsze blokery?',
+              question: 'Co dok³adnie sprawdza audyt SEO i jakie s¹ najczêstsze blokery?',
               answer: (
                 <p>
-                  Weryfikujemy indeksacjÄ™, szybkoÅ›Ä‡ i Core Web Vitals, strukturÄ™ informacji, meta dane, nagÅ‚Ã³wki, linkowanie wewnÄ™trzne, dane strukturalne, mapy strony, robots.txt i treÅ›ci pod
-                  intencjÄ™ wyszukiwania. CzÄ™ste blokery to: brak indeksacji kluczowych podstron, wolne Å‚adowanie, duplikacja treÅ›ci, sÅ‚abe nagÅ‚Ã³wki i chaotyczna nawigacja. Szerzej opisujemy to w
+                  Weryfikujemy indeksacjê, szybkoœæ i Core Web Vitals, strukturê informacji, meta dane, nag³ówki, linkowanie wewnêtrzne, dane strukturalne, mapy strony, robots.txt i treœci pod
+                  intencjê wyszukiwania. Czêste blokery to: brak indeksacji kluczowych podstron, wolne ³adowanie, duplikacja treœci, s³abe nag³ówki i chaotyczna nawigacja. Szerzej opisujemy to w
                   naszym{' '}
                   <a href="/edukacja/seo/dlaczego-strona-internetowa-nie-wyswietla-sie-w-google-i-jak-to-naprawic" className="inline-link">
                     artykule
@@ -357,32 +357,32 @@ export default function OfferMarketingPage() {
                 </p>
               ),
               answerSchemaText:
-                'Audyt sprawdza indeksacjÄ™, Core Web Vitals, strukturÄ™, meta, nagÅ‚Ã³wki, linkowanie, dane strukturalne, sitemap, robots.txt oraz dopasowanie treÅ›ci do intencji. Typowe blokery: brak indeksacji, wolne Å‚adowanie, duplikacja, sÅ‚abe nagÅ‚Ã³wki i nawigacja.',
+                'Audyt sprawdza indeksacjê, Core Web Vitals, strukturê, meta, nag³ówki, linkowanie, dane strukturalne, sitemap, robots.txt oraz dopasowanie treœci do intencji. Typowe blokery: brak indeksacji, wolne ³adowanie, duplikacja, s³abe nag³ówki i nawigacja.',
             },
             {
-              question: 'Jakie dostÄ™py sÄ… potrzebne do audytu SEO?',
+              question: 'Jakie dostêpy s¹ potrzebne do audytu SEO?',
               answer:
-                'Wystarczy adres strony. Dla peÅ‚nej diagnozy prosimy o dostÄ™py tylko do odczytu: Google Search Console i Google Analytics 4. DostÄ™p do CMS/hostingu nie jest wymagany na etapie audytu.',
+                'Wystarczy adres strony. Dla pe³nej diagnozy prosimy o dostêpy tylko do odczytu: Google Search Console i Google Analytics 4. Dostêp do CMS/hostingu nie jest wymagany na etapie audytu.',
             },
             {
-              question: 'Co dostanÄ™ po audycie SEO i jak wyglÄ…da raport?',
-              answer: 'Otrzymasz dokument z listÄ… priorytetÃ³w, opisem problemÃ³w, rekomendacjami wdroÅ¼eÅ„, przykÅ‚adami i krÃ³tkim podsumowaniem.',
+              question: 'Co dostanê po audycie SEO i jak wygl¹da raport?',
+              answer: 'Otrzymasz dokument z list¹ priorytetów, opisem problemów, rekomendacjami wdro¿eñ, przyk³adami i krótkim podsumowaniem.',
             },
             {
-              question: 'Ile trwa audyt SEO i od czego zaleÅ¼y wycena?',
-              answer: 'Standardowo 5-10 dni roboczych. Czas i cena zaleÅ¼Ä… od wielkoÅ›ci serwisu (liczby podstron), technologii i zakresu analizy (np. e-commerce, wielojÄ™zycznoÅ›Ä‡).',
+              question: 'Ile trwa audyt SEO i od czego zale¿y wycena?',
+              answer: 'Standardowo 5-10 dni roboczych. Czas i cena zale¿¹ od wielkoœci serwisu (liczby podstron), technologii i zakresu analizy (np. e-commerce, wielojêzycznoœæ).',
             },
             {
               question: 'Czy audyt SEO sam w sobie poprawi pozycje w Google?',
-              answer: 'Nie. Audyt SEO to diagnoza i plan. Wzrost pozycji pojawia siÄ™ po wdroÅ¼eniu rekomendacji: poprawkach technicznych, uporzÄ…dkowaniu treÅ›ci i innym indywidualnym zadaniom.',
+              answer: 'Nie. Audyt SEO to diagnoza i plan. Wzrost pozycji pojawia siê po wdro¿eniu rekomendacji: poprawkach technicznych, uporz¹dkowaniu treœci i innym indywidualnym zadaniom.',
             },
             {
-              question: 'Czy zajmujecie siÄ™ realizacjÄ… zaleceÅ„ po audycie SEO?',
-              answer: 'Tak. Po audycie przechodzimy do optymalizacji SEO: poprawiamy prÄ™dkoÅ›Ä‡, meta, strukturÄ™ i dane strukturalne, porzÄ…dkujemy treÅ›ci. MoÅ¼emy teÅ¼ prowadziÄ‡ dalsze pozycjonowanie.',
+              question: 'Czy zajmujecie siê realizacj¹ zaleceñ po audycie SEO?',
+              answer: 'Tak. Po audycie przechodzimy do optymalizacji SEO: poprawiamy prêdkoœæ, meta, strukturê i dane strukturalne, porz¹dkujemy treœci. Mo¿emy te¿ prowadziæ dalsze pozycjonowanie.',
             },
             {
-              question: 'Jak czÄ™sto powtarzaÄ‡ audyt SEO?',
-              answer: 'Rekomendujemy peÅ‚ny audyt co 6-12 miesiÄ™cy lub przed wiÄ™kszÄ… przebudowÄ… serwisu. LÅ¼ejszy przeglÄ…d kwartalny pozwala utrzymaÄ‡ tempo wzrostu.',
+              question: 'Jak czêsto powtarzaæ audyt SEO?',
+              answer: 'Rekomendujemy pe³ny audyt co 6-12 miesiêcy lub przed wiêksz¹ przebudow¹ serwisu. L¿ejszy przegl¹d kwartalny pozwala utrzymaæ tempo wzrostu.',
             },
           ]}
         />
@@ -390,22 +390,22 @@ export default function OfferMarketingPage() {
         <Gap variant="line" />
 
         <SectionBento
-          title="Poznaj inne usÅ‚ugi"
+          title="Poznaj inne us³ugi"
           items={[
             {
               title: 'Pozycjonowanie stron',
-              description: 'StaÅ‚e dziaÅ‚ania SEO po audycie',
+              description: 'Sta³e dzia³ania SEO po audycie',
               size: 'large',
               backgroundImage: '/assets/offer/pozycjonowanie-stron/pozycjonowanie-stron-napis-seo.webp',
-              btnLabel: 'Zobacz ofertÄ™',
+              btnLabel: 'Zobacz ofertê',
               btnLink: '/uslugi/marketing/pozycjonowanie-stron',
             },
             {
               title: 'Strony internetowe',
-              description: 'Profesjonalna wizytÃ³wka Twojej firmy w sieci',
+              description: 'Profesjonalna wizytówka Twojej firmy w sieci',
               size: 'medium',
               backgroundImage: '/assets/projects/arteon-baners-pilkanozna-pl.webp',
-              btnLabel: 'Zobacz ofertÄ™',
+              btnLabel: 'Zobacz ofertê',
               btnLink: '/uslugi/tworzenie-stron-wordpress',
             },
             {
@@ -413,15 +413,15 @@ export default function OfferMarketingPage() {
               description: 'Sprzedawaj produkty online',
               size: 'small',
               backgroundImage: '/assets/projects/arteon-baners-msc.webp',
-              btnLabel: 'SprawdÅº ofertÄ™',
+              btnLabel: 'SprawdŸ ofertê',
               btnLink: '/uslugi/sklepy-internetowe',
             },
             {
-              title: 'Tworzenie treÅ›ci',
-              description: 'Teksty, ktÃ³re przyciÄ…gajÄ… klientÃ³w',
+              title: 'Tworzenie treœci',
+              description: 'Teksty, które przyci¹gaj¹ klientów',
               size: 'small',
               backgroundImage: '/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp',
-              btnLabel: 'SprawdÅº ofertÄ™',
+              btnLabel: 'SprawdŸ ofertê',
               btnLink: '/uslugi/tworzenie-tresci',
             },
           ]}
@@ -429,15 +429,15 @@ export default function OfferMarketingPage() {
 
         <Gap variant="line" />
 
-        <ArticlesCarousel title="Przydatne artykuÅ‚y dotyczÄ…ce SEO" categorySlug="seo" articles={getAllArticlePreviews()} />
+        <ArticlesCarousel title="Przydatne artyku³y dotycz¹ce SEO" categorySlug="seo" articles={getArticlePreviewsByCategory('seo', 6)} />
 
         <Gap size="sm" />
       </Wrapper>
 
       <CTABanner
         title="Poznaj prawdziwy stan SEO swojej strony"
-        description="Audyt, ktÃ³ry koÅ„czy siÄ™ planem dziaÅ‚ania - nie tylko diagnozÄ…."
-        btnOne="Skontaktuj siÄ™"
+        description="Audyt, który koñczy siê planem dzia³ania - nie tylko diagnoz¹."
+        btnOne="Skontaktuj siê"
         btnOneLink="#kontakt"
         backgroundImage="/assets/offer/audyt-seo/audyt-seo-screen-gsc.webp"
         overlay="black"
