@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import Wrapper from '@/components/ui/Wrapper';
 

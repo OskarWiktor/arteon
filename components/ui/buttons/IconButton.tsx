@@ -1,5 +1,3 @@
-'use client';
-
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
 type IconButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'children'> & {

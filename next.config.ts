@@ -157,7 +157,16 @@ const nextConfig: NextConfig = {
       { source: '/edukacja/design/:path*', destination: '/edukacja/grafika/:path*', permanent: true },
     ];
 
-    return [...staticRedirects, ...patternRedirects];
+    const canonicalRedirects: Redirect[] = [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'arteonagency.pl' }],
+        destination: 'https://www.arteonagency.pl/:path*',
+        permanent: true,
+      },
+    ];
+
+    return [...canonicalRedirects, ...staticRedirects, ...patternRedirects];
   },
   webpack(config, { dev }) {
     if (!dev && config.cache) {

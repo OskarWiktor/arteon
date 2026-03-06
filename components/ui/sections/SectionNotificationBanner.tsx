@@ -1,5 +1,3 @@
-'use client';
-
 import { useState, type ReactNode } from 'react';
 import { RiCloseLine } from 'react-icons/ri';
 import Wrapper from '../Wrapper';

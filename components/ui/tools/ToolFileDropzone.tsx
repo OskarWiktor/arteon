@@ -1,5 +1,3 @@
-'use client';
-
 import { useFileDropzone } from '@/hooks/useFileDropzone';
 import type { ReactNode } from 'react';
 

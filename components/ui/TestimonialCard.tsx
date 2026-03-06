@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import type { Testimonial } from '@/types/testimonial';
 import { StarRating } from './StarRating';

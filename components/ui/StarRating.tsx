@@ -1,5 +1,3 @@
-'use client';
-
 import { memo } from 'react';
 
 function clamp(n: number, min: number, max: number) {

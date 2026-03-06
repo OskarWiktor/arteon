@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { RiStarFill, RiStarLine } from 'react-icons/ri';
 

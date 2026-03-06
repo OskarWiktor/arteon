@@ -1,5 +1,3 @@
-'use client';
-
 import TextFormatConverter from '@/components/sections/tools/TextFormatConverter/TextFormatConverter';
 
 export default function JsonToYaml() {
