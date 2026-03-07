@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Tailwind CSS σε px?",
-      "html": "<p class=\"text-mid mb-4\">Tailwind CSS uses a spacing scale where each unit = 0.25 rem = 4 px (at default 16px root). So p-4 = 1 rem = 16 px, p-8 = 2 rem = 32 px, w-64 = 16 rem = 256 px.</p><p class=\"text-mid mb-4\">This converter helps developers quickly translate Tailwind spacing values to exact pixel measurements for debugging, design handoff, and documentation.</p><p class=\"text-mid mb-4\">Tailwind also has special values: 0.5 = 2px, 1.5 = 6px, 2.5 = 10px, 3.5 = 14px, and named sizes like full = 100%, screen = 100vw.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το Tailwind CSS χρησιμοποιεί κλίμακα αποστάσεων όπου κάθε μονάδα = 0,25 rem = 4 px (με προεπιλεγμένο root 16px). Άρα p-4 = 1 rem = 16 px, p-8 = 2 rem = 32 px, w-64 = 16 rem = 256 px.</p><p class=\"text-mid mb-4\">Αυτός ο μετατροπέας βοηθά τους developers να μεταφράσουν γρήγορα τιμές αποστάσεων Tailwind σε ακριβείς μετρήσεις pixel για debugging, σχεδιαστική παράδοση και τεκμηρίωση.</p><p class=\"text-mid mb-4\">Το Tailwind έχει επίσης ειδικές τιμές: 0.5 = 2px, 1.5 = 6px, 2.5 = 10px, 3.5 = 14px, και ονομαστικά μεγέθη όπως full = 100%, screen = 100vw.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Tailwind CSS σε px – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">Tailwind spacing = value × 0.25 rem. At 16px root: spacing × 4 = pixels.</p><p class=\"text-mid mb-4\">p-1 = 4px, p-2 = 8px, p-4 = 16px, p-8 = 32px, p-16 = 64px, p-32 = 128px, p-64 = 256px.</p><p class=\"text-mid\">Font sizes use different values: text-sm = 14px, text-base = 16px, text-lg = 18px, text-xl = 20px, text-2xl = 24px.</p>"
+      "html": "<p class=\"text-mid mb-4\">Tailwind spacing = τιμή × 0,25 rem. Με root 16px: spacing × 4 = pixel.</p><p class=\"text-mid mb-4\">p-1 = 4px, p-2 = 8px, p-4 = 16px, p-8 = 32px, p-16 = 64px, p-32 = 128px, p-64 = 256px.</p><p class=\"text-mid\">Τα μεγέθη γραμματοσειράς χρησιμοποιούν διαφορετικές τιμές: text-sm = 14px, text-base = 16px, text-lg = 18px, text-xl = 20px, text-2xl = 24px.</p>"
     },
     {
       "type": "gap",

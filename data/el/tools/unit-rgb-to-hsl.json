@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: RGB σε HSL?",
-      "html": "<p class=\"text-mid mb-4\">HSL (Hue, Saturation, Lightness) is an alternative way to specify colors that is more intuitive for humans. Hue is the color angle (0–360°), Saturation is the color intensity (0–100%), and Lightness is how light/dark (0–100%).</p><p class=\"text-mid mb-4\">HSL makes it easy to create color variations: adjust lightness for tints/shades, adjust saturation for muted/vivid versions, or shift hue for complementary colors.</p><p class=\"text-mid mb-4\">CSS supports hsl() natively: hsl(14, 100%, 60%) is equivalent to rgb(255, 87, 51) and #FF5733.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το HSL (Απόχρωση, Κορεσμός, Φωτεινότητα) είναι ένας εναλλακτικός τρόπος καθορισμού χρωμάτων πιο διαισθητικός για τον άνθρωπο. Η Απόχρωση είναι η γωνία χρώματος (0–360°), ο Κορεσμός είναι η ένταση (0–100%) και η Φωτεινότητα πόσο φωτεινό/σκούρο (0–100%).</p><p class=\"text-mid mb-4\">Το HSL διευκολύνει τη δημιουργία χρωματικών παραλλαγών: ρυθμίστε τη φωτεινότητα για αποχρώσεις, τον κορεσμό για μαλακές/έντονες εκδοχές ή μετατοπίστε την απόχρωση για συμπληρωματικά χρώματα.</p><p class=\"text-mid mb-4\">Το CSS υποστηρίζει εγγενώς hsl(): hsl(14, 100%, 60%) ισοδυναμεί με rgb(255, 87, 51) και #FF5733.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB σε HSL – Arteon"
     },
@@ -237,7 +237,7 @@
       "items": [
         {
           "question": "Τι είναι HSL?",
-          "answer": "Farbton (Winkel 0–360°), Sättigung (Intensität 0–100 %), Helligkeit (0–100 %). Intuitivere Farbarbeit."
+          "answer": "Απόχρωση (γωνία 0–360°), Κορεσμός (ένταση 0–100%), Φωτεινότητα (0–100%). Πιο διαισθητική εργασία με χρώματα."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",

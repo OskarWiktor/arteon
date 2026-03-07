@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: RGB în HSL?",
-      "html": "<p class=\"text-mid mb-4\">HSL (Hue, Saturation, Lightness) is an alternative way to specify colors that is more intuitive for humans. Hue is the color angle (0–360°), Saturation is the color intensity (0–100%), and Lightness is how light/dark (0–100%).</p><p class=\"text-mid mb-4\">HSL makes it easy to create color variations: adjust lightness for tints/shades, adjust saturation for muted/vivid versions, or shift hue for complementary colors.</p><p class=\"text-mid mb-4\">CSS supports hsl() natively: hsl(14, 100%, 60%) is equivalent to rgb(255, 87, 51) and #FF5733.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">HSL (nuanță, saturație, luminozitate) este un mod alternativ de a specifica culorile, mai intuitiv pentru oameni. Nuanța este unghiul culorii (0–360°), saturația este intensitatea culorii (0–100%), iar luminozitatea este cât de deschis/închis (0–100%).</p><p class=\"text-mid mb-4\">HSL facilitează crearea variațiilor de culoare: ajustați luminozitatea pentru tonuri, saturația pentru versiuni estompate/vii sau deplasați nuanța pentru culori complementare.</p><p class=\"text-mid mb-4\">CSS suportă nativ hsl(): hsl(14, 100%, 60%) este echivalent cu rgb(255, 87, 51) și #FF5733.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB în HSL – Arteon"
     },
@@ -237,7 +237,7 @@
       "items": [
         {
           "question": "Ce este HSL?",
-          "answer": "Farbton (Winkel 0–360°), Sättigung (Intensität 0–100 %), Helligkeit (0–100 %). Intuitivere Farbarbeit."
+          "answer": "Nuanță (unghi 0–360°), Saturație (intensitate 0–100%), Luminozitate (0–100%). Lucru mai intuitiv cu culorile."
         },
         {
           "question": "Calculele se fac local?",

@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργούν οι χρονοσφραγίδες Unix;",
-      "html": "<p class=\"text-mid mb-4\">Ο χρόνος Unix μετράει δευτερόλεπτα από τη στιγμή αναφοράς: 1 Ιανουαρίου 1970, 00:00:00 UTC. Αυτή η ημερομηνία εs chosen as a convenient reference point for the original Unix operating system.</p><p class=\"text-mid mb-4\">Timestamps can be in seconds (10 digits: 1700000000) or milliseconds (13 digits: 1700000000000). JavaScript Date uses milliseconds.</p><p class=\"text-mid\">The Year 2038 problem: 32-bit signed integers overflow on January 19, 2038. Most modern systems use 64-bit timestamps to avoid this.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ο χρόνος Unix μετράει δευτερόλεπτα από τη στιγμή αναφοράς: 1 Ιανουαρίου 1970, 00:00:00 UTC. Αυτή η ημερομηνία επιλέχθηκε ως βολικό σημείο αναφοράς για το αρχικό λειτουργικό σύστημα Unix.</p><p class=\"text-mid mb-4\">Οι χρονοσφραγίδες μπορεί να είναι σε δευτερόλεπτα (10 ψηφία: 1700000000) ή χιλιοστά δευτερολέπτου (13 ψηφία: 1700000000000). Το JavaScript Date χρησιμοποιεί χιλιοστά δευτερολέπτου.</p><p class=\"text-mid\">Το πρόβλημα του 2038: οι 32-bit ακέραιοι με πρόσημο υπερχειλίζουν στις 19 Ιανουαρίου 2038. Τα περισσότερα σύγχρονα συστήματα χρησιμοποιούν 64-bit χρονοσφραγίδες για να το αποφύγουν.</p>"
     },
     {
       "type": "gap",
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Τι είναι die Unix-Epoche?",
+          "question": "Τι είναι η Unix Epoch;",
           "answer": "1 Ιανουαρίου 1970 στις 00:00:00 UTC. Όλες οι χρονοσφραγίδες μετρούνται από αυτό το σημείο."
         },
         {
-          "question": "Τι είναι das Jahr-2038-Problem?",
-          "answer": "Οι 32-bit χρονοσφραγίδες με πρόσημο θα υπερχειλίσουν στις 19 Ιανουαρίου 2038 um 03:14:07 UTC. Τα σύγχρονα συστήματα χρησιμοποιούν 64 Bit."
+          "question": "Τι είναι το πρόβλημα του 2038;",
+          "answer": "Οι 32-bit χρονοσφραγίδες με πρόσημο θα υπερχειλίσουν στις 19 Ιανουαρίου 2038 στις 03:14:07 UTC. Τα σύγχρονα συστήματα χρησιμοποιούν 64-bit χρονοσφραγίδες."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",

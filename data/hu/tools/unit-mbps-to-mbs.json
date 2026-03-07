@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: Mbps MB/s-ra?",
-      "html": "<p class=\"text-mid mb-4\">Az internetsebességeket megabit per másodpercben (Mbps) hirdetik, de a fájlméretek és a letöltéseknload speeds are typically shown in megabytes per second (MB/s). 1 byte = 8 bits, so 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">This means a \"100 Mbps\" connection downloads at a maximum of 12.5 MB/s. A \"1 Gbps\" connection = 125 MB/s.</p><p class=\"text-mid mb-4\">This conversion is essential for estimating download times, choosing an internet plan, and understanding the difference between advertised and actual speeds.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Az internetsebességeket megabit per másodpercben (Mbps) hirdetik, de a fájlméretek és a letöltési sebességek általában megabyte per másodpercben (MB/s) jelennek meg. 1 byte = 8 bit, tehát 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">Ez azt jelenti, hogy egy 100 Mbps-es kapcsolat maximum 12,5 MB/s sebességgel tölt le. Egy 1 Gbps-es kapcsolat = 125 MB/s.</p><p class=\"text-mid mb-4\">Ez az átváltás elengedhetetlen a letöltési idők becsléséhez, az internetcsomag kiválasztásához és a hirdetett és valós sebességek közötti különbség megértéséhez.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Mbps MB/s-ra – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bits. Therefore: Mbps ÷ 8 = MB/s, and MB/s × 8 = Mbps.</p><p class=\"text-mid mb-4\">Example: 200 Mbps ÷ 8 = 25 MB/s. This is the theoretical maximum download speed.</p><p class=\"text-mid\">Actual speeds are typically 70–90% of the advertised maximum due to protocol overhead, network congestion, and other factors.</p>"
+      "html": "<p class=\"text-mid mb-4\">1 byte = 8 bit. Tehát: Mbps ÷ 8 = MB/s, és MB/s × 8 = Mbps.</p><p class=\"text-mid mb-4\">Példa: 200 Mbps ÷ 8 = 25 MB/s. Ez az elméleti maximális letöltési sebesség.</p><p class=\"text-mid\">A valós sebességek általában a hirdetett maximum 70–90%-a protokoll-túlterheltség, hálózati torlódás és egyéb tényezők miatt.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>50 Mbps = 6.25 MB/s. Good for streaming, browsing, video calls.</li><li>100 Mbps = 12.5 MB/s. Good for multiple devices, 4K streaming.</li><li>500 Mbps = 62.5 MB/s. Good for large downloads, gaming.</li><li>1 Gbps = 125 MB/s. 1 GB downloads in ~8 seconds.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>50 Mbps = 6,25 MB/s. Megfelelő streaminghez, böngészéshez, videohívásokhoz.</li><li>100 Mbps = 12,5 MB/s. Megfelelő több eszközhöz, 4K streaminghez.</li><li>500 Mbps = 62,5 MB/s. Megfelelő nagy letöltésekhez, játékhoz.</li><li>1 Gbps = 125 MB/s. 1 GB letöltés ~8 másodperc alatt.</li></ul>"
     },
     {
       "type": "gap",

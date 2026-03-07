@@ -58,8 +58,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "What is the difference between DPI and PPI?",
-      "html": "<p class=\"text-mid mb-4\">DPI (dots per inch) refers to the physical dots a printer can place per inch. PPI (pixels per inch) refers to the pixel density of a digital screen or image. In practice, these terms are often used interchangeably, but they describe different things.</p><p class=\"text-mid mb-4\">A printer at 1200 DPI places 1200 ink dots per inch. A screen at 110 PPI displays 110 pixels per inch. An image at 300 PPI has 300 pixels per inch when printed at 100% size.</p><p class=\"text-mid mb-4\">For digital images: use PPI. For printers: use DPI. When someone says “300 DPI image,” they technically mean 300 PPI.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "title": "Care este diferența între DPI și PPI?",
+      "html": "<p class=\"text-mid mb-4\">DPI (puncte pe inch) se referă la punctele fizice pe care o imprimantă le poate plasa pe inch. PPI (pixeli pe inch) se referă la densitatea de pixeli a unui ecran digital sau a unei imagini. În practică, acești termeni sunt folosiți adesea interschimbabil, dar descriu lucruri diferite.</p><p class=\"text-mid mb-4\">O imprimantă la 1200 DPI plasează 1200 de puncte de cerneală pe inch. Un ecran la 110 PPI afișează 110 pixeli pe inch. O imagine la 300 PPI are 300 de pixeli pe inch când este tipărită la dimensiunea de 100%.</p><p class=\"text-mid mb-4\">Pentru imagini digitale: folosiți PPI. Pentru imprimante: folosiți DPI. Când cineva spune „imagine 300 DPI”, tehnic se referă la 300 PPI.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DPI to PPI converter – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum se raportează DPI și PPI?",
-      "html": "<p class=\"text-mid mb-4\">Numerically, DPI and PPI use the same value when specifying image resolution for print. A “300 DPI” image file is actually 300 PPI — it has 300 pixels per inch.</p><p class=\"text-mid mb-4\">The printer then uses its own DPI to reproduce each pixel. A 1200 DPI printer uses ~16 dots (4×4) to reproduce each pixel of a 300 PPI image.</p><p class=\"text-mid\">For most practical purposes, DPI and PPI are interchangeable when discussing image resolution. The distinction matters mainly in pre-press and printer calibration.</p>"
+      "html": "<p class=\"text-mid mb-4\">Numeric, DPI și PPI folosesc aceeași valoare când se specifică rezoluția imaginii pentru tipărire. Un fișier de imagine „300 DPI” este de fapt 300 PPI — are 300 de pixeli pe inch.</p><p class=\"text-mid mb-4\">Imprimanta folosește apoi propriul DPI pentru a reproduce fiecare pixel. O imprimantă de 1200 DPI folosește ~16 puncte (4×4) pentru a reproduce fiecare pixel al unei imagini de 300 PPI.</p><p class=\"text-mid\">Pentru scopuri practice, DPI și PPI sunt interschimbabile când se discută rezoluția imaginii. Distincția contează mai ales în pre-press și calibrarea imprimantei.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Image resolution: always specified in PPI. 300 PPI = print quality, 72 PPI = web.</li><li>Printer resolution: inkjet printers typically 1200–4800 DPI. Laser: 600–1200 DPI.</li><li>Screen PPI: MacBook Pro 14″ = 254 PPI, iPhone 15 = 460 PPI.</li><li>Changing PPI in Photoshop without resampling just changes the print size, not the pixel count.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Rezoluția imaginii: întotdeauna specificată în PPI. 300 PPI = calitate tipărire, 72 PPI = web.</li><li>Rezoluția imprimantei: inkjet de obicei 1200–4800 DPI. Laser: 600–1200 DPI.</li><li>PPI ecran: MacBook Pro 14″ = 254 PPI, iPhone 15 = 460 PPI.</li><li>Modificarea PPI în Photoshop fără resampling schimbă doar dimensiunea de tipărire, nu numărul de pixeli.</li></ul>"
     },
     {
       "type": "gap",

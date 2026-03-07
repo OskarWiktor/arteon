@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Milloin tarvitset: DEC HEX:ksi?",
-      "html": "<p class=\"text-mid mb-4\">Hexadecimal (base-16) uses digits 0–9 and letters A–F. It is a compact way to represent binary data: each hex digit = 4 bits. This makes hex essential for programming, web colors, and memory addresses.</p><p class=\"text-mid mb-4\">Web colors use hex: #FF5733 = red 255, green 87, blue 51. Memory addresses: 0x7FFF = 32,767. Unicode: U+00E9 = é.</p><p class=\"text-mid mb-4\">Hex is more compact than binary: the byte 11111111 (8 digits) = FF (2 digits). This is why hex is preferred for displaying binary data.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Heksadesimaali (kantaluku 16) käyttää numeroita 0–9 ja kirjaimia A–F. Se on tiivis tapa esittää binääridataa: jokainen hex-numero = 4 bittiä. Tämä tekee hex:stä välttämättömän ohjelmoinnissa, verkkväreissä ja muistiosoitteissa.</p><p class=\"text-mid mb-4\">Verkkovärit käyttävät hex:ä: #FF5733 = punainen 255, vihreä 87, sininen 51. Muistiosoitteet: 0x7FFF = 32 767. Unicode: U+00E9 = é.</p><p class=\"text-mid mb-4\">Hex on tiiviimpi kuin binääri: tavu 11111111 (8 numeroa) = FF (2 numeroa). Siksi hex on suosittu binääridatan näyttämiseen.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DEC HEX:ksi – Arteon"
     },

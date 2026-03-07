@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Milloin tarvitset: RGB CMYK:ksi?",
-      "html": "<p class=\"text-mid mb-4\">RGB (Red, Green, Blue) is the additive color model used by screens. CMYK (Cyan, Magenta, Yellow, Key/Black) is the subtractive model used by printers. Colors look different in each model because they work differently.</p><p class=\"text-mid mb-4\">Converting RGB to CMYK is essential when preparing digital designs for print. Without conversion, bright screen colors may appear dull or shifted when printed.</p><p class=\"text-mid mb-4\">Not all RGB colors can be reproduced in CMYK — the CMYK gamut is smaller. Vivid neon greens, bright blues, and saturated oranges are particularly affected.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">RGB (punainen, vihreä, sininen) on additiivinen värimalli, jota näytöt käyttävät. CMYK (syaani, magenta, keltainen, musta) on subtraktiivinen malli, jota tulostimet käyttävät. Värit näyttävät erilaisilta kummassakin mallissa, koska ne toimivat eri tavoin.</p><p class=\"text-mid mb-4\">RGB:n muuntaminen CMYK:ksi on välttämätöntä digitaalisten suunnitelmien valmistelussa tulostusta varten. Ilman muunnosta näytön kirkkaat värit voivat näyttää himmeiltä tai siirtyneiltä tulostettuna.</p><p class=\"text-mid mb-4\">Kaikkia RGB-värejä ei voida toistaa CMYK:ssä — CMYK-väriavaruus on pienempi. Kirkkaat neonvihreät, kirkkaat siniset ja kylläiset oranssit kärsivät erityisesti.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB CMYK:ksi – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten muunnos toimii?",
-      "html": "<p class=\"text-mid mb-4\">First, normalize RGB to 0–1 range: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">This is a mathematical conversion. Actual printed results depend on ink, paper, and ICC profiles. For production printing, use ICC profile-based conversion in Photoshop or InDesign.</p><p class=\"text-mid\">This converter provides a mathematical estimate. For critical color work, always use proper ICC profiles and get a proof print.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ensin normalisoi RGB alueelle 0–1: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">Tämä on matemaattinen muunnos. Todelliset tulostetut tulokset riippuvat musteesta, paperista ja ICC-profiileista. Tuotantotulostukseen käytä ICC-profiilipohjaista muunnosta Photoshopissa tai InDesignissa.</p><p class=\"text-mid\">Tämä muunnin antaa matemaattisen arvion. Kriittiseen värityöhön käytä aina oikeita ICC-profiileja ja tilaa vedos.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Käytännön vinkkejä",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Pure black: RGB(0,0,0) = CMYK(0,0,0,100). Rich black for print: CMYK(60,40,40,100).</li><li>Pure white: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Bright colors lose vibrancy in CMYK. Design with CMYK gamut in mind from the start.</li><li>Total ink coverage should not exceed 300% for most printing processes.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Puhdas musta: RGB(0,0,0) = CMYK(0,0,0,100). Rich black tulostukseen: CMYK(60,40,40,100).</li><li>Puhdas valkoinen: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Kirkkaat värit menettävät elinvoimaisuutensa CMYK:ssä. Suunnittele CMYK-väriavaruus mielessä alusta alkaen.</li><li>Kokonaismustepeitto ei saa ylittää 300% useimmissa tulostusprosesseissa.</li></ul>"
     },
     {
       "type": "gap",

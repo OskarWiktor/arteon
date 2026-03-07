@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: RGB CMYK-ra?",
-      "html": "<p class=\"text-mid mb-4\">RGB (Red, Green, Blue) is the additive color model used by screens. CMYK (Cyan, Magenta, Yellow, Key/Black) is the subtractive model used by printers. Colors look different in each model because they work differently.</p><p class=\"text-mid mb-4\">Converting RGB to CMYK is essential when preparing digital designs for print. Without conversion, bright screen colors may appear dull or shifted when printed.</p><p class=\"text-mid mb-4\">Not all RGB colors can be reproduced in CMYK — the CMYK gamut is smaller. Vivid neon greens, bright blues, and saturated oranges are particularly affected.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Az RGB (piros, zöld, kék) az additív színmodell, amelyet a képernyők használnak. A CMYK (ciánkék, magenta, sárga, fekete) a szubtraktív modell, amelyet a nyomtatók használnak. A színek mindkét modellben máshogy néznek ki, mert eltérően működnek.</p><p class=\"text-mid mb-4\">Az RGB CMYK-ra konvertálása elengedhetetlen a digitális tervek nyomtatásra való előkészítésekor. Konverzió nélkül a képernyő élénk színei fakónak vagy eltoltnak tűnhetnek nyomtatásban.</p><p class=\"text-mid mb-4\">Nem minden RGB szín reprodukálható CMYK-ban — a CMYK színtér kisebb. Az élénk neonzöldek, fényes kékek és telített narancsok különösen érintettek.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB CMYK-ra – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">First, normalize RGB to 0–1 range: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">This is a mathematical conversion. Actual printed results depend on ink, paper, and ICC profiles. For production printing, use ICC profile-based conversion in Photoshop or InDesign.</p><p class=\"text-mid\">This converter provides a mathematical estimate. For critical color work, always use proper ICC profiles and get a proof print.</p>"
+      "html": "<p class=\"text-mid mb-4\">Először normalizálja az RGB-t 0–1 tartományra: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">Ez matematikai konverzió. A tényleges nyomtatott eredmények a tintától, papírtól és ICC profiloktól függenek. Gyártási nyomtatáshoz használjon ICC profil alapú konverziót Photoshopban vagy InDesignban.</p><p class=\"text-mid\">Ez az átváltó matematikai becslést ad. Kritikus színmunkához mindig használjon megfelelő ICC profilokat és kérjen próbanyomatot.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Pure black: RGB(0,0,0) = CMYK(0,0,0,100). Rich black for print: CMYK(60,40,40,100).</li><li>Pure white: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Bright colors lose vibrancy in CMYK. Design with CMYK gamut in mind from the start.</li><li>Total ink coverage should not exceed 300% for most printing processes.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Tiszta fekete: RGB(0,0,0) = CMYK(0,0,0,100). Rich black nyomtatáshoz: CMYK(60,40,40,100).</li><li>Tiszta fehér: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Az élénk színek elveszítik élénkségüket CMYK-ban. Tervezzen a CMYK színtérrel számolva az elejétől.</li><li>A teljes festékfedés ne haladja meg a 300%-ot a legtöbb nyomtatási eljárásnál.</li></ul>"
     },
     {
       "type": "gap",

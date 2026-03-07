@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: RGB σε CMYK?",
-      "html": "<p class=\"text-mid mb-4\">RGB (Red, Green, Blue) is the additive color model used by screens. CMYK (Cyan, Magenta, Yellow, Key/Black) is the subtractive model used by printers. Colors look different in each model because they work differently.</p><p class=\"text-mid mb-4\">Converting RGB to CMYK is essential when preparing digital designs for print. Without conversion, bright screen colors may appear dull or shifted when printed.</p><p class=\"text-mid mb-4\">Not all RGB colors can be reproduced in CMYK — the CMYK gamut is smaller. Vivid neon greens, bright blues, and saturated oranges are particularly affected.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το RGB (Κόκκινο, Πράσινο, Μπλε) είναι το προσθετικό χρωματικό μοντέλο που χρησιμοποιούν οι οθόνες. Το CMYK (Κυανό, Ματζέντα, Κίτρινο, Μαύρο) είναι το αφαιρετικό μοντέλο που χρησιμοποιούν οι εκτυπωτές. Τα χρώματα φαίνονται διαφορετικά σε κάθε μοντέλο γιατί λειτουργούν διαφορετικά.</p><p class=\"text-mid mb-4\">Η μετατροπή RGB σε CMYK είναι απαραίτητη κατά την προετοιμασία ψηφιακών σχεδίων για εκτύπωση. Χωρίς μετατροπή, τα φωτεινά χρώματα οθόνης μπορεί να φαίνονται θαμπά ή αλλοιωμένα στην εκτύπωση.</p><p class=\"text-mid mb-4\">Δεν μπορούν να αναπαραχθούν όλα τα χρώματα RGB σε CMYK — η γκάμα CMYK είναι μικρότερη. Τα έντονα πράσινα νέον, τα φωτεινά μπλε και τα κορεσμένα πορτοκαλί επηρεάζονται ιδιαίτερα.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB σε CMYK – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">First, normalize RGB to 0–1 range: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">This is a mathematical conversion. Actual printed results depend on ink, paper, and ICC profiles. For production printing, use ICC profile-based conversion in Photoshop or InDesign.</p><p class=\"text-mid\">This converter provides a mathematical estimate. For critical color work, always use proper ICC profiles and get a proof print.</p>"
+      "html": "<p class=\"text-mid mb-4\">Αρχικά, κανονικοποιήστε RGB σε εύρος 0–1: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">Αυτή είναι μαθηματική μετατροπή. Τα πραγματικά εκτυπωμένα αποτελέσματα εξαρτώνται από μελάνι, χαρτί και προφίλ ICC. Για επαγγελματική εκτύπωση, χρησιμοποιήστε μετατροπή βάσει ICC στο Photoshop ή InDesign.</p><p class=\"text-mid\">Αυτός ο μετατροπέας παρέχει μαθηματική εκτίμηση. Για κρίσιμη εργασία με χρώματα, χρησιμοποιήστε πάντα σωστά προφίλ ICC και δοκιμαστική εκτύπωση.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Pure black: RGB(0,0,0) = CMYK(0,0,0,100). Rich black for print: CMYK(60,40,40,100).</li><li>Pure white: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Bright colors lose vibrancy in CMYK. Design with CMYK gamut in mind from the start.</li><li>Total ink coverage should not exceed 300% for most printing processes.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Καθαρό μαύρο: RGB(0,0,0) = CMYK(0,0,0,100). Rich black για εκτύπωση: CMYK(60,40,40,100).</li><li>Καθαρό λευκό: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Τα έντονα χρώματα χάνουν ζωντάνια στο CMYK. Σχεδιάστε με τη γκάμα CMYK υπόψη από την αρχή.</li><li>Η συνολική κάλυψη μελανιού δεν πρέπει να υπερβαίνει το 300% για τις περισσότερες διαδικασίες εκτύπωσης.</li></ul>"
     },
     {
       "type": "gap",

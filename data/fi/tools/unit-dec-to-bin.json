@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Milloin tarvitset: DEC BIN:ksi?",
-      "html": "<p class=\"text-mid mb-4\">Binary (base-2) is the fundamental number system of computers. Every piece of data — text, images, programs — is stored as sequences of 0s and 1s. Understanding binary is essential for programming, networking, and computer science.</p><p class=\"text-mid mb-4\">Each binary digit (bit) represents a power of 2: ...128, 64, 32, 16, 8, 4, 2, 1. For example: decimal 42 = binary 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Common uses: IP addresses, subnet masks, bitwise operations, permissions (chmod), and understanding how computers store numbers.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Binääri (kantaluku 2) on tietokoneiden peruslukujärjestelmä. Kaikki data — teksti, kuvat, ohjelmat — tallennetaan 0- ja 1-sarjoina. Binäärin ymmärtäminen on välttämätöntä ohjelmoinnissa, verkottumisessa ja tietojenkäsittelytieteessä.</p><p class=\"text-mid mb-4\">Jokainen binäärinumero (bitti) edustaa kakkosen potenssia: ...128, 64, 32, 16, 8, 4, 2, 1. Esimerkki: desimaali 42 = binääri 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Yleisiä käyttökohteita: IP-osoitteet, aliverkkomaskit, bittioperaatiot, oikeudet (chmod) ja lukujen tallennuksen ymmärtäminen.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DEC BIN:ksi – Arteon"
     },

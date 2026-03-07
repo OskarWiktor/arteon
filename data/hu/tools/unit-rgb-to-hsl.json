@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: RGB HSL-re?",
-      "html": "<p class=\"text-mid mb-4\">HSL (Hue, Saturation, Lightness) is an alternative way to specify colors that is more intuitive for humans. Hue is the color angle (0–360°), Saturation is the color intensity (0–100%), and Lightness is how light/dark (0–100%).</p><p class=\"text-mid mb-4\">HSL makes it easy to create color variations: adjust lightness for tints/shades, adjust saturation for muted/vivid versions, or shift hue for complementary colors.</p><p class=\"text-mid mb-4\">CSS supports hsl() natively: hsl(14, 100%, 60%) is equivalent to rgb(255, 87, 51) and #FF5733.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">A HSL (árnyalat, telítettség, világosság) egy alternatív módja a színek megadásának, amely intuitívabb az ember számára. Az árnyalat a szín szöge (0–360°), a telítettség a szín intenzitása (0–100%), a világosság pedig a fényesség/sötétség (0–100%).</p><p class=\"text-mid mb-4\">A HSL megkönnyíti a színvariációk létrehozását: állítsa a világosságot árnyalatokhoz, a telítettséget tompított/élénk verziókhoz, vagy tolja el az árnyalatot komplementer színekhez.</p><p class=\"text-mid mb-4\">A CSS natívan támogatja a hsl()-t: hsl(14, 100%, 60%) egyenértékű az rgb(255, 87, 51) és #FF5733 értékkel.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB HSL-re – Arteon"
     },
@@ -237,7 +237,7 @@
       "items": [
         {
           "question": "Mi az a HSL?",
-          "answer": "Farbton (Winkel 0–360°), Sättigung (Intensität 0–100 %), Helligkeit (0–100 %). Intuitivere Farbarbeit."
+          "answer": "Árnyalat (szög 0–360°), Telítettség (intenzitás 0–100%), Világosság (0–100%). Intuitívabb színkezelés."
         },
         {
           "question": "Helyben történnek a számítások?",

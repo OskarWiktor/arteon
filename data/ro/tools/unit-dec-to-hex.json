@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: DEC în HEX?",
-      "html": "<p class=\"text-mid mb-4\">Hexadecimal (base-16) uses digits 0–9 and letters A–F. It is a compact way to represent binary data: each hex digit = 4 bits. This makes hex essential for programming, web colors, and memory addresses.</p><p class=\"text-mid mb-4\">Web colors use hex: #FF5733 = red 255, green 87, blue 51. Memory addresses: 0x7FFF = 32,767. Unicode: U+00E9 = é.</p><p class=\"text-mid mb-4\">Hex is more compact than binary: the byte 11111111 (8 digits) = FF (2 digits). This is why hex is preferred for displaying binary data.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Hexadecimalul (baza 16) folosește cifrele 0–9 și literele A–F. Este un mod compact de a reprezenta date binare: fiecare cifră hex = 4 biți. Acest lucru face hex-ul esențial pentru programare, culori web și adrese de memorie.</p><p class=\"text-mid mb-4\">Culorile web folosesc hex: #FF5733 = roșu 255, verde 87, albastru 51. Adrese de memorie: 0x7FFF = 32.767. Unicode: U+00E9 = é.</p><p class=\"text-mid mb-4\">Hex-ul este mai compact decât binarul: byte-ul 11111111 (8 cifre) = FF (2 cifre). De aceea hex-ul este preferat pentru afișarea datelor binare.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DEC în HEX – Arteon"
     },

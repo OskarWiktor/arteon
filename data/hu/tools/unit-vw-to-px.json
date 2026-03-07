@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">The formula is: px = vw × viewport_width / 100.</p><p class=\"text-mid mb-4\">At 1920px viewport: 1vw = 19.2px. At 1280px: 1vw = 12.8px. At 375px (iPhone): 1vw = 3.75px.</p><p class=\"text-mid\">Related units: vh = 1% viewport height, vmin = 1% of smaller dimension, vmax = 1% of larger dimension.</p>"
+      "html": "<p class=\"text-mid mb-4\">A képlet: px = vw × viewport_szélesség / 100.</p><p class=\"text-mid mb-4\">1920px viewport esetén: 1vw = 19,2px. 1280px: 1vw = 12,8px. 375px (iPhone): 1vw = 3,75px.</p><p class=\"text-mid\">Kapcsolódó egységek: vh = 1% viewport magasság, vmin = 1% kisebb méret, vmax = 1% nagyobb méret.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>100vw includes scrollbar width. Use width: 100% for content width without scrollbar.</li><li>Fluid typography: font-size: clamp(1rem, 2.5vw, 2rem) limits minimum and maximum size.</li><li>Common viewports: 375px (iPhone), 768px (iPad), 1280px (laptop), 1920px (desktop).</li><li>vw is recalculated on window resize. CSS calc() works with vw: width: calc(100vw - 2rem).</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>A 100vw tartalmazza a scrollbar szélességét. Használja a width: 100%-ot tartalomszélességhez scrollbar nélkül.</li><li>Fluid tipográfia: font-size: clamp(1rem, 2.5vw, 2rem) korlátozza a minimális és maximális méretet.</li><li>Gyakori viewportok: 375px (iPhone), 768px (iPad), 1280px (laptop), 1920px (desktop).</li><li>A vw újraszámítódik ablakméret változáskor. A CSS calc() működik vw-vel: width: calc(100vw - 2rem).</li></ul>"
     },
     {
       "type": "gap",

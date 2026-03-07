@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: DEC σε BIN?",
-      "html": "<p class=\"text-mid mb-4\">Binary (base-2) is the fundamental number system of computers. Every piece of data — text, images, programs — is stored as sequences of 0s and 1s. Understanding binary is essential for programming, networking, and computer science.</p><p class=\"text-mid mb-4\">Each binary digit (bit) represents a power of 2: ...128, 64, 32, 16, 8, 4, 2, 1. For example: decimal 42 = binary 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Common uses: IP addresses, subnet masks, bitwise operations, permissions (chmod), and understanding how computers store numbers.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Το δυαδικό (βάση-2) είναι το θεμελιώδες αριθμητικό σύστημα των υπολογιστών. Κάθε δεδομένο — κείμενο, εικόνες, προγράμματα — αποθηκεύεται ως ακολουθίες 0 και 1. Η κατανόηση του δυαδικού είναι απαραίτητη για προγραμματισμό, δικτύωση και επιστήμη υπολογιστών.</p><p class=\"text-mid mb-4\">Κάθε δυαδικό ψηφίο (bit) αναπαριστά δύναμη του 2: ...128, 64, 32, 16, 8, 4, 2, 1. Παράδειγμα: δεκαδικό 42 = δυαδικό 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Συνηθισμένες χρήσεις: διευθύνσεις IP, μάσκες υποδικτύου, πράξεις bitwise, δικαιώματα (chmod) και κατανόηση αποθήκευσης αριθμών.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DEC σε BIN – Arteon"
     },

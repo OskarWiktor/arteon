@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Ce este die Unix-Epoche?",
+          "question": "Ce este Unix Epoch?",
           "answer": "1 ianuarie 1970 la 00:00:00 UTC. Toate marcajele temporale se măsoară de la acest punct."
         },
         {
-          "question": "Ce este das Jahr-2038-Problem?",
-          "answer": "Marcajele temporale pe 32 de biți cu semn vor depăși la 19 ianuarie 2038 um 03:14:07 UTC. Sistemele moderne folosesc 64 Bit."
+          "question": "Ce este problema anului 2038?",
+          "answer": "Marcajele temporale pe 32 de biți cu semn vor depăși la 19 ianuarie 2038 la 03:14:07 UTC. Sistemele moderne folosesc marcaje temporale pe 64 de biți."
         },
         {
           "question": "Calculele se fac local?",

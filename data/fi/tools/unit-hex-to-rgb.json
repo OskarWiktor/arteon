@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten muunnos toimii?",
-      "html": "<p class=\"text-mid mb-4\">HEX nutzt Basis-16: Jedes Ziffernpaar (00–FF) wird in Dezimal 0–255 umgerechnet. #FF5733: FF=255 (Rot), 57=87 (Grün), 33=51 (Blau).</p><p class=\"text-mid\">HEX-Kurzform: #F53 wird zu #FF5533.</p>"
+      "html": "<p class=\"text-mid mb-4\">HEX käyttää kantalukua 16: jokainen numeropari (00–FF) muunnetaan desimaaliksi 0–255. #FF5733: FF=255 (punainen), 57=87 (vihreä), 33=51 (sininen).</p><p class=\"text-mid\">HEX-lyhenne: #F53 = #FF5533.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Käytännön vinkkejä",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = musta. #FFFFFF = rgb(255,255,255) = valkoinen.</li><li>#FF0000 = pure red. #00FF00 = pure green. #0000FF = pure blue.</li><li>For opacity: use rgba(255, 87, 51, 0.5) — HEX doesn't natively support alpha (except 8-digit HEX: #FF573380).</li><li>CSS supports both: color: #FF5733 and color: rgb(255, 87, 51) are identical.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = musta. #FFFFFF = rgb(255,255,255) = valkoinen.</li><li>#FF0000 = puhdas punainen. #00FF00 = puhdas vihreä. #0000FF = puhdas sininen.</li><li>Läpinäkyvyyteen: käytä rgba(255, 87, 51, 0.5) — HEX ei tue natiivisti alfaa (paitsi 8-numeroinen HEX: #FF573380).</li><li>CSS tukee molempia: color: #FF5733 ja color: rgb(255, 87, 51) ovat identtisiä.</li></ul>"
     },
     {
       "type": "gap",

@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: DEC HEX-re?",
-      "html": "<p class=\"text-mid mb-4\">Hexadecimal (base-16) uses digits 0–9 and letters A–F. It is a compact way to represent binary data: each hex digit = 4 bits. This makes hex essential for programming, web colors, and memory addresses.</p><p class=\"text-mid mb-4\">Web colors use hex: #FF5733 = red 255, green 87, blue 51. Memory addresses: 0x7FFF = 32,767. Unicode: U+00E9 = é.</p><p class=\"text-mid mb-4\">Hex is more compact than binary: the byte 11111111 (8 digits) = FF (2 digits). This is why hex is preferred for displaying binary data.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">A hexadecimális (16-os számrendszer) a 0–9 számjegyeket és az A–F betűket használja. Kompakt módja a bináris adatok ábrázolásának: minden hex számjegy = 4 bit. Ez teszi a hex-et nélkülözhetetlenné a programozásban, webszíneknél és memóriacímeknél.</p><p class=\"text-mid mb-4\">A webszínek hex-et használnak: #FF5733 = piros 255, zöld 87, kék 51. Memóriacímek: 0x7FFF = 32.767. Unicode: U+00E9 = é.</p><p class=\"text-mid mb-4\">A hex tömörebb a binárisnál: a bájt 11111111 (8 számjegy) = FF (2 számjegy). Ezért előnyben részesítik a hex-et bináris adatok megjelenítéséhez.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DEC HEX-re – Arteon"
     },

@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">The formula is: px = vw × viewport_width / 100.</p><p class=\"text-mid mb-4\">At 1920px viewport: 1vw = 19.2px. At 1280px: 1vw = 12.8px. At 375px (iPhone): 1vw = 3.75px.</p><p class=\"text-mid\">Related units: vh = 1% viewport height, vmin = 1% of smaller dimension, vmax = 1% of larger dimension.</p>"
+      "html": "<p class=\"text-mid mb-4\">Formula este: px = vw × lățime_viewport / 100.</p><p class=\"text-mid mb-4\">La viewport 1920px: 1vw = 19,2px. La 1280px: 1vw = 12,8px. La 375px (iPhone): 1vw = 3,75px.</p><p class=\"text-mid\">Unități conexe: vh = 1% înălțime viewport, vmin = 1% din dimensiunea mai mică, vmax = 1% din dimensiunea mai mare.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>100vw includes scrollbar width. Use width: 100% for content width without scrollbar.</li><li>Fluid typography: font-size: clamp(1rem, 2.5vw, 2rem) limits minimum and maximum size.</li><li>Common viewports: 375px (iPhone), 768px (iPad), 1280px (laptop), 1920px (desktop).</li><li>vw is recalculated on window resize. CSS calc() works with vw: width: calc(100vw - 2rem).</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>100vw include lățimea scrollbar-ului. Folosiți width: 100% pentru lățimea conținutului fără scrollbar.</li><li>Tipografie fluidă: font-size: clamp(1rem, 2.5vw, 2rem) limitează dimensiunea minimă și maximă.</li><li>Viewport-uri comune: 375px (iPhone), 768px (iPad), 1280px (laptop), 1920px (desktop).</li><li>vw se recalculează la redimensionarea ferestrei. CSS calc() funcționează cu vw: width: calc(100vw - 2rem).</li></ul>"
     },
     {
       "type": "gap",

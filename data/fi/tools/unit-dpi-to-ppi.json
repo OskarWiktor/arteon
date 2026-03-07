@@ -58,8 +58,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "What is the difference between DPI and PPI?",
-      "html": "<p class=\"text-mid mb-4\">DPI (dots per inch) refers to the physical dots a printer can place per inch. PPI (pixels per inch) refers to the pixel density of a digital screen or image. In practice, these terms are often used interchangeably, but they describe different things.</p><p class=\"text-mid mb-4\">A printer at 1200 DPI places 1200 ink dots per inch. A screen at 110 PPI displays 110 pixels per inch. An image at 300 PPI has 300 pixels per inch when printed at 100% size.</p><p class=\"text-mid mb-4\">For digital images: use PPI. For printers: use DPI. When someone says “300 DPI image,” they technically mean 300 PPI.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "title": "Mikä on ero DPI:n ja PPI:n välillä?",
+      "html": "<p class=\"text-mid mb-4\">DPI (pistettä tuumalle) viittaa fyysisiin pisteisiin, joita tulostin voi sijoittaa tuumalle. PPI (pikseliä tuumalle) viittaa digitaalisen näytön tai kuvan pikselitiheyteen. Käytännössä näitä termejä käytetään usein vaihdettavasti, mutta ne kuvaavat eri asioita.</p><p class=\"text-mid mb-4\">1200 DPI:n tulostin sijoittaa 1200 mustepistettä tuumalle. 110 PPI:n näyttö näyttää 110 pikseliä tuumalle. 300 PPI:n kuvassa on 300 pikseliä tuumalle tulostettuna 100% koossa.</p><p class=\"text-mid mb-4\">Digitaalikuville: käytä PPI:tä. Tulostimille: käytä DPI:tä. Kun joku sanoo \"300 DPI:n kuva\", teknisesti hän tarkoittaa 300 PPI.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DPI to PPI converter – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten DPI ja PPI liittyvät toisiinsa?",
-      "html": "<p class=\"text-mid mb-4\">Numerically, DPI and PPI use the same value when specifying image resolution for print. A “300 DPI” image file is actually 300 PPI — it has 300 pixels per inch.</p><p class=\"text-mid mb-4\">The printer then uses its own DPI to reproduce each pixel. A 1200 DPI printer uses ~16 dots (4×4) to reproduce each pixel of a 300 PPI image.</p><p class=\"text-mid\">For most practical purposes, DPI and PPI are interchangeable when discussing image resolution. The distinction matters mainly in pre-press and printer calibration.</p>"
+      "html": "<p class=\"text-mid mb-4\">Numeerisesti DPI ja PPI käyttävät samaa arvoa kuvan resoluution määrittämiseen tulostusta varten. ”300 DPI” -kuvatiedosto on itse asiassa 300 PPI — siitä on 300 pikseliä tuumalle.</p><p class=\"text-mid mb-4\">Tulostin käyttää sitten omaa DPI:ään jokaisen pikselin toistamiseen. 1200 DPI:n tulostin käyttää ~16 pistettä (4×4) jokaisen 300 PPI:n kuvan pikselin toistamiseen.</p><p class=\"text-mid\">Käytännössä DPI ja PPI ovat vaihdettavissa kuvan resoluutiosta puhuttaessa. Ero on merkityksellinen lähinnä painovalmistelussa ja tulostimen kalibroinnissa.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Käytännön vinkkejä",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Image resolution: always specified in PPI. 300 PPI = print quality, 72 PPI = web.</li><li>Printer resolution: inkjet printers typically 1200–4800 DPI. Laser: 600–1200 DPI.</li><li>Screen PPI: MacBook Pro 14″ = 254 PPI, iPhone 15 = 460 PPI.</li><li>Changing PPI in Photoshop without resampling just changes the print size, not the pixel count.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Kuvan resoluutio: määritetään aina PPI:nä. 300 PPI = tulostuslaatu, 72 PPI = web.</li><li>Tulostimen resoluutio: mustesuihku tyypillisesti 1200–4800 DPI. Laser: 600–1200 DPI.</li><li>Näytön PPI: MacBook Pro 14″ = 254 PPI, iPhone 15 = 460 PPI.</li><li>PPI:n muuttaminen Photoshopissa ilman resamplingia muuttaa vain tulostuskokoa, ei pikselimäärää.</li></ul>"
     },
     {
       "type": "gap",

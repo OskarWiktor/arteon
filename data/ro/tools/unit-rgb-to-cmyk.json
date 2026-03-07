@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: RGB în CMYK?",
-      "html": "<p class=\"text-mid mb-4\">RGB (Red, Green, Blue) is the additive color model used by screens. CMYK (Cyan, Magenta, Yellow, Key/Black) is the subtractive model used by printers. Colors look different in each model because they work differently.</p><p class=\"text-mid mb-4\">Converting RGB to CMYK is essential when preparing digital designs for print. Without conversion, bright screen colors may appear dull or shifted when printed.</p><p class=\"text-mid mb-4\">Not all RGB colors can be reproduced in CMYK — the CMYK gamut is smaller. Vivid neon greens, bright blues, and saturated oranges are particularly affected.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">RGB (roșu, verde, albastru) este modelul aditiv de culoare folosit de ecrane. CMYK (cyan, magenta, galben, negru) este modelul substractiv folosit de imprimante. Culorile arată diferit în fiecare model deoarece funcționează diferit.</p><p class=\"text-mid mb-4\">Conversia RGB în CMYK este esențială la pregătirea designurilor digitale pentru tipărire. Fără conversie, culorile strălucitoare de pe ecran pot apărea estompate sau deplasate la tipărire.</p><p class=\"text-mid mb-4\">Nu toate culorile RGB pot fi reproduse în CMYK — gama CMYK este mai mică. Verdele neon intens, albastrele strălucitoare și portocaliile saturate sunt afectate în mod deosebit.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB în CMYK – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">First, normalize RGB to 0–1 range: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">This is a mathematical conversion. Actual printed results depend on ink, paper, and ICC profiles. For production printing, use ICC profile-based conversion in Photoshop or InDesign.</p><p class=\"text-mid\">This converter provides a mathematical estimate. For critical color work, always use proper ICC profiles and get a proof print.</p>"
+      "html": "<p class=\"text-mid mb-4\">Mai întâi, normalizați RGB la intervalul 0–1: R'=R/255, G'=G/255, B'=B/255. K = 1 − max(R', G', B'). C = (1−R'−K)/(1−K). M = (1−G'−K)/(1−K). Y = (1−B'−K)/(1−K).</p><p class=\"text-mid mb-4\">Aceasta este o conversie matematică. Rezultatele tipărite reale depind de cerneală, hârtie și profiluri ICC. Pentru tipărire profesională, folosiți conversia bazată pe profil ICC în Photoshop sau InDesign.</p><p class=\"text-mid\">Acest convertor oferă o estimare matematică. Pentru lucrări critice de culoare, folosiți întotdeauna profiluri ICC corecte și comandați o probă de tipar.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Pure black: RGB(0,0,0) = CMYK(0,0,0,100). Rich black for print: CMYK(60,40,40,100).</li><li>Pure white: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Bright colors lose vibrancy in CMYK. Design with CMYK gamut in mind from the start.</li><li>Total ink coverage should not exceed 300% for most printing processes.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Negru pur: RGB(0,0,0) = CMYK(0,0,0,100). Rich black pentru tipărire: CMYK(60,40,40,100).</li><li>Alb pur: RGB(255,255,255) = CMYK(0,0,0,0).</li><li>Culorile strălucitoare pierd vibrația în CMYK. Proiectați cu gama CMYK în minte de la început.</li><li>Acoperirea totală cu cerneală nu trebuie să depășească 300% pentru majoritatea proceselor de tipărire.</li></ul>"
     },
     {
       "type": "gap",

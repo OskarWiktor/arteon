@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: DEC în BIN?",
-      "html": "<p class=\"text-mid mb-4\">Binary (base-2) is the fundamental number system of computers. Every piece of data — text, images, programs — is stored as sequences of 0s and 1s. Understanding binary is essential for programming, networking, and computer science.</p><p class=\"text-mid mb-4\">Each binary digit (bit) represents a power of 2: ...128, 64, 32, 16, 8, 4, 2, 1. For example: decimal 42 = binary 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Common uses: IP addresses, subnet masks, bitwise operations, permissions (chmod), and understanding how computers store numbers.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Binarul (baza 2) este sistemul numeric fundamental al calculatoarelor. Orice date — text, imagini, programe — sunt stocate ca secvențe de 0 și 1. Înțelegerea binarului este esențială pentru programare, rețelistică și informatică.</p><p class=\"text-mid mb-4\">Fiecare cifră binară (bit) reprezintă o putere a lui 2: ...128, 64, 32, 16, 8, 4, 2, 1. Exemplu: zecimal 42 = binar 101010 (32+8+2).</p><p class=\"text-mid mb-4\">Utilizări frecvente: adrese IP, măști de subrețea, operații bitwise, permisiuni (chmod) și înțelegerea modului în care calculatoarele stochează numere.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DEC în BIN – Arteon"
     },

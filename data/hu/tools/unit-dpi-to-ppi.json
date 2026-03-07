@@ -58,8 +58,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "What is the difference between DPI and PPI?",
-      "html": "<p class=\"text-mid mb-4\">DPI (dots per inch) refers to the physical dots a printer can place per inch. PPI (pixels per inch) refers to the pixel density of a digital screen or image. In practice, these terms are often used interchangeably, but they describe different things.</p><p class=\"text-mid mb-4\">A printer at 1200 DPI places 1200 ink dots per inch. A screen at 110 PPI displays 110 pixels per inch. An image at 300 PPI has 300 pixels per inch when printed at 100% size.</p><p class=\"text-mid mb-4\">For digital images: use PPI. For printers: use DPI. When someone says “300 DPI image,” they technically mean 300 PPI.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "title": "Mi a különbség a DPI és a PPI között?",
+      "html": "<p class=\"text-mid mb-4\">A DPI (dots per inch) az egy hüvelykre eső fizikai pontokra utal, amelyeket a nyomtató elhelyezhet. A PPI (pixels per inch) a digitális képernyő vagy kép pixelsűrűségére utal. A gyakorlatban ezeket a fogalmakat gyakran felcserélhetően használják, de különböző dolgokat írnak le.</p><p class=\"text-mid mb-4\">Egy 1200 DPI-s nyomtató 1200 tintapontot helyez el hüvelykenként. Egy 110 PPI-s képernyő 110 pixelt jelenít meg hüvelykenként. Egy 300 PPI-s kép 300 pixelt tartalmaz hüvelykenként 100%-os méretben nyomtatva.</p><p class=\"text-mid mb-4\">Digitális képeknél: használja a PPI-t. Nyomtatóknál: használja a DPI-t. Amikor valaki „300 DPI-s képet” mond, technikailag 300 PPI-t ért.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DPI to PPI converter – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan kapcsolódik a DPI és a PPI?",
-      "html": "<p class=\"text-mid mb-4\">Numerically, DPI and PPI use the same value when specifying image resolution for print. A “300 DPI” image file is actually 300 PPI — it has 300 pixels per inch.</p><p class=\"text-mid mb-4\">The printer then uses its own DPI to reproduce each pixel. A 1200 DPI printer uses ~16 dots (4×4) to reproduce each pixel of a 300 PPI image.</p><p class=\"text-mid\">For most practical purposes, DPI and PPI are interchangeable when discussing image resolution. The distinction matters mainly in pre-press and printer calibration.</p>"
+      "html": "<p class=\"text-mid mb-4\">Számszerűen a DPI és PPI ugyanazt az értéket használják a nyomtatási képfelbontás megadásakor. Egy „300 DPI” képfájl valójában 300 PPI — 300 pixelt tartalmaz hüvelykenként.</p><p class=\"text-mid mb-4\">A nyomtató ezután a saját DPI-jét használja minden pixel reprodukálásához. Egy 1200 DPI-s nyomtató ~16 pontot (4×4) használ egy 300 PPI-s kép minden pixelének reprodukálásához.</p><p class=\"text-mid\">A gyakorlatban a DPI és PPI felcserélhető a képfelbontás tárgyalásakor. A megkülönböztetés főként az előnyomtatásban és a nyomtató kalibrálásban számít.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Image resolution: always specified in PPI. 300 PPI = print quality, 72 PPI = web.</li><li>Printer resolution: inkjet printers typically 1200–4800 DPI. Laser: 600–1200 DPI.</li><li>Screen PPI: MacBook Pro 14″ = 254 PPI, iPhone 15 = 460 PPI.</li><li>Changing PPI in Photoshop without resampling just changes the print size, not the pixel count.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Képfelbontás: mindig PPI-ben adják meg. 300 PPI = nyomtatási minőség, 72 PPI = web.</li><li>Nyomtató felbontás: tintasugaras nyomtatók általában 1200–4800 DPI. Lézer: 600–1200 DPI.</li><li>Képernyő PPI: MacBook Pro 14″ = 254 PPI, iPhone 15 = 460 PPI.</li><li>A PPI módosítása Photoshopban resampling nélkül csak a nyomtatási méretet változtatja, nem a pixelszámot.</li></ul>"
     },
     {
       "type": "gap",

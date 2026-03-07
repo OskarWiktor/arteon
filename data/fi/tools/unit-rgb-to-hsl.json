@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Milloin tarvitset: RGB HSL:ksi?",
-      "html": "<p class=\"text-mid mb-4\">HSL (Hue, Saturation, Lightness) is an alternative way to specify colors that is more intuitive for humans. Hue is the color angle (0–360°), Saturation is the color intensity (0–100%), and Lightness is how light/dark (0–100%).</p><p class=\"text-mid mb-4\">HSL makes it easy to create color variations: adjust lightness for tints/shades, adjust saturation for muted/vivid versions, or shift hue for complementary colors.</p><p class=\"text-mid mb-4\">CSS supports hsl() natively: hsl(14, 100%, 60%) is equivalent to rgb(255, 87, 51) and #FF5733.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">HSL (sävy, kylläisyys, kirkkaus) on vaihtoehtoinen tapa määritellä värejä, joka on intuitiivisempi ihmisille. Sävy on värin kulma (0–360°), kylläisyys on värin intensiteetti (0–100%) ja kirkkaus on valoisuus/tummuus (0–100%).</p><p class=\"text-mid mb-4\">HSL helpottaa värivariaatioiden luomista: säädä kirkkautta sävyille, kylläisyyttä vaimennetuille/eläville versioille tai siirrä sävyä komplementtiväreille.</p><p class=\"text-mid mb-4\">CSS tukee hsl():ä natiivisti: hsl(14, 100%, 60%) vastaa rgb(255, 87, 51) ja #FF5733.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "RGB HSL:ksi – Arteon"
     },
@@ -237,7 +237,7 @@
       "items": [
         {
           "question": "Mikä on HSL?",
-          "answer": "Farbton (Winkel 0–360°), Sättigung (Intensität 0–100 %), Helligkeit (0–100 %). Intuitivere Farbarbeit."
+          "answer": "Sävy (kulma 0–360°), Kylläisyys (intensiteetti 0–100%), Kirkkaus (0–100%). Intuitiivisempi värityöskentely."
         },
         {
           "question": "Tehdäänkö laskelmat paikallisesti?",

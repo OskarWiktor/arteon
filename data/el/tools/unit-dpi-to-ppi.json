@@ -58,8 +58,8 @@
     },
     {
       "type": "sectionBasic",
-      "title": "What is the difference between DPI and PPI?",
-      "html": "<p class=\"text-mid mb-4\">DPI (dots per inch) refers to the physical dots a printer can place per inch. PPI (pixels per inch) refers to the pixel density of a digital screen or image. In practice, these terms are often used interchangeably, but they describe different things.</p><p class=\"text-mid mb-4\">A printer at 1200 DPI places 1200 ink dots per inch. A screen at 110 PPI displays 110 pixels per inch. An image at 300 PPI has 300 pixels per inch when printed at 100% size.</p><p class=\"text-mid mb-4\">For digital images: use PPI. For printers: use DPI. When someone says “300 DPI image,” they technically mean 300 PPI.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "title": "Ποια είναι η διαφορά μεταξύ DPI και PPI;",
+      "html": "<p class=\"text-mid mb-4\">Το DPI (κουκκίδες ανά ίντσα) αναφέρεται στις φυσικές κουκκίδες που μπορεί να τοποθετήσει ένας εκτυπωτής ανά ίντσα. Το PPI (pixel ανά ίντσα) αναφέρεται στην πυκνότητα pixel μιας ψηφιακής οθόνης ή εικόνας. Στην πράξη, αυτοί οι όροι χρησιμοποιούνται συχνά εναλλακτικά, αλλά περιγράφουν διαφορετικά πράγματα.</p><p class=\"text-mid mb-4\">Ένας εκτυπωτής 1200 DPI τοποθετεί 1200 κουκκίδες μελανιού ανά ίντσα. Μια οθόνη 110 PPI εμφανίζει 110 pixel ανά ίντσα. Μια εικόνα 300 PPI έχει 300 pixel ανά ίντσα όταν εκτυπωθεί σε μέγεθος 100%.</p><p class=\"text-mid mb-4\">Για ψηφιακές εικόνες: χρησιμοποιήστε PPI. Για εκτυπωτές: χρησιμοποιήστε DPI. Όταν κάποιος λέει \"εικόνα 300 DPI\", τεχνικά εννοεί 300 PPI.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "DPI to PPI converter – Arteon"
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς σχετίζονται DPI και PPI;",
-      "html": "<p class=\"text-mid mb-4\">Numerically, DPI and PPI use the same value when specifying image resolution for print. A “300 DPI” image file is actually 300 PPI — it has 300 pixels per inch.</p><p class=\"text-mid mb-4\">The printer then uses its own DPI to reproduce each pixel. A 1200 DPI printer uses ~16 dots (4×4) to reproduce each pixel of a 300 PPI image.</p><p class=\"text-mid\">For most practical purposes, DPI and PPI are interchangeable when discussing image resolution. The distinction matters mainly in pre-press and printer calibration.</p>"
+      "html": "<p class=\"text-mid mb-4\">Αριθμητικά, DPI και PPI χρησιμοποιούν την ίδια τιμή όταν ορίζουν την ανάλυση εικόνας για εκτύπωση. Ένα αρχείο εικόνας «300 DPI» είναι στην πραγματικότητα 300 PPI — έχει 300 pixel ανά ίντσα.</p><p class=\"text-mid mb-4\">Ο εκτυπωτής χρησιμοποιεί το δικό του DPI για να αναπαράγει κάθε pixel. Ένας εκτυπωτής 1200 DPI χρησιμοποιεί ~16 κουκκίδες (4×4) για κάθε pixel μιας εικόνας 300 PPI.</p><p class=\"text-mid\">Για πρακτικούς σκοπούς, DPI και PPI είναι εναλλάξιμα όταν συζητάμε ανάλυση εικόνας. Η διάκριση έχει σημασία κυρίως στην προεκτύπωση και τη βαθμονόμηση εκτυπωτή.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Image resolution: always specified in PPI. 300 PPI = print quality, 72 PPI = web.</li><li>Printer resolution: inkjet printers typically 1200–4800 DPI. Laser: 600–1200 DPI.</li><li>Screen PPI: MacBook Pro 14″ = 254 PPI, iPhone 15 = 460 PPI.</li><li>Changing PPI in Photoshop without resampling just changes the print size, not the pixel count.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Ανάλυση εικόνας: πάντα σε PPI. 300 PPI = ποιότητα εκτύπωσης, 72 PPI = web.</li><li>Ανάλυση εκτυπωτή: inkjet τυπικά 1200–4800 DPI. Laser: 600–1200 DPI.</li><li>PPI οθόνης: MacBook Pro 14″ = 254 PPI, iPhone 15 = 460 PPI.</li><li>Η αλλαγή PPI στο Photoshop χωρίς resampling αλλάζει μόνο το μέγεθος εκτύπωσης, όχι τον αριθμό pixel.</li></ul>"
     },
     {
       "type": "gap",

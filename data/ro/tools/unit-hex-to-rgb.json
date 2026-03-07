@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">HEX nutzt Basis-16: Jedes Ziffernpaar (00–FF) wird in Dezimal 0–255 umgerechnet. #FF5733: FF=255 (Rot), 57=87 (Grün), 33=51 (Blau).</p><p class=\"text-mid\">HEX-Kurzform: #F53 wird zu #FF5533.</p>"
+      "html": "<p class=\"text-mid mb-4\">HEX folosește baza 16: fiecare pereche de cifre (00–FF) se convertește în decimal 0–255. #FF5733: FF=255 (roșu), 57=87 (verde), 33=51 (albastru).</p><p class=\"text-mid\">Formă prescurtată HEX: #F53 = #FF5533.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = negru. #FFFFFF = rgb(255,255,255) = alb.</li><li>#FF0000 = pure red. #00FF00 = pure green. #0000FF = pure blue.</li><li>For opacity: use rgba(255, 87, 51, 0.5) — HEX doesn't natively support alpha (except 8-digit HEX: #FF573380).</li><li>CSS supports both: color: #FF5733 and color: rgb(255, 87, 51) are identical.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = negru. #FFFFFF = rgb(255,255,255) = alb.</li><li>#FF0000 = roșu pur. #00FF00 = verde pur. #0000FF = albastru pur.</li><li>Pentru opacitate: folosiți rgba(255, 87, 51, 0.5) — HEX nu suportă nativ alfa (excepție HEX pe 8 cifre: #FF573380).</li><li>CSS suportă ambele: color: #FF5733 și color: rgb(255, 87, 51) sunt identice.</li></ul>"
     },
     {
       "type": "gap",

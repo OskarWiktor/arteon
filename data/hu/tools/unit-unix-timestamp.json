@@ -240,8 +240,8 @@
           "answer": "1970. január 1. 00:00:00 UTC. Minden időbélyeg ettől a ponttól számítódik."
         },
         {
-          "question": "Mi az a das Jahr-2038-Problem?",
-          "answer": "A 32 bites előjeles időbélyegek 2038. január 19-én túlcsordulnak um 03:14:07 UTC-kor. A modern rendszerek 64 Bit."
+          "question": "Mi az a 2038-as probléma?",
+          "answer": "A 32 bites előjeles időbélyegek 2038. január 19-én túlcsordulnak 03:14:07 UTC-kor. A modern rendszerek 64 bites időbélyegeket használnak."
         },
         {
           "question": "Helyben történnek a számítások?",
