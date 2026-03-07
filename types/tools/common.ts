@@ -85,22 +85,6 @@ export type ToolItemKey =
   // Base64 converters
   | 'imageToBase64'
   | 'base64ToImage'
-  // Unit converters - popular
-  | 'kmToMiles'
-  | 'kgToLbs'
-  | 'celsiusToFahrenheit'
-  | 'cmToInches'
-  | 'metersToFeet'
-  | 'litersToGallons'
-  | 'sqmToSqft'
-  | 'kmhToMph'
-  | 'mmToInches'
-  | 'gramsToOunces'
-  | 'tonnesToPounds'
-  | 'hectaresToAcres'
-  | 'mlToFlOz'
-  | 'barToPsi'
-  | 'kwToHp'
   // Unit converters - design/graphics
   | 'ptToPx'
   | 'remToPx'
@@ -117,9 +101,7 @@ export type ToolItemKey =
   | 'unixTimestamp'
   | 'decToBin'
   | 'decToHex'
-  | 'degToRad'
   | 'mbpsToMBs'
-  | 'whToMah'
   | 'vwToPx'
   | 'twToPx';
 

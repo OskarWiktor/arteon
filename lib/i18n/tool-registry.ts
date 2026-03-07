@@ -4801,23 +4801,8 @@ const NAV_IMAGE_CONVERTER_KEYS: ToolItemKey[] = [
   'base64ToImage',
 ];
 
-/** All 34 unit converters for desktop nav (6 cols) */
+/** All 17 unit converters for desktop nav */
 const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
-  'kmToMiles',
-  'kgToLbs',
-  'celsiusToFahrenheit',
-  'cmToInches',
-  'metersToFeet',
-  'litersToGallons',
-  'sqmToSqft',
-  'kmhToMph',
-  'mmToInches',
-  'gramsToOunces',
-  'tonnesToPounds',
-  'hectaresToAcres',
-  'mlToFlOz',
-  'barToPsi',
-  'kwToHp',
   'ptToPx',
   'remToPx',
   'emToPx',
@@ -4832,14 +4817,12 @@ const NAV_UNIT_CONVERTER_KEYS: ToolItemKey[] = [
   'unixTimestamp',
   'decToBin',
   'decToHex',
-  'degToRad',
   'mbpsToMBs',
-  'whToMah',
   'vwToPx',
   'twToPx',
 ];
 
-/** Desktop nav tool sections: limits konwertery to 48 and jednostki to 34 */
+/** Desktop nav tool sections: limits konwertery to 48 and jednostki to 17 */
 export function getDesktopToolsSections(locale: Locale): ToolsSection[] {
   return TOOL_SECTIONS.filter((section) => section.locales[locale]).map((section) => {
     const isConverters = section.key === 'konwertery';
