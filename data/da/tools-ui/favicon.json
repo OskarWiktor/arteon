@@ -36,7 +36,7 @@
   "approximatePreview": "Omtrentlig forhåndsvisning af favicon i lille størrelse",
   "largeIconPreview": "Stort ikon (f.eks. PWA)",
   "clickToPreview": "Klik for at åbne forhåndsvisning i ny fane",
-  "download": "Download",
+  "download": "Hent",
   "previewAndFilesLabel": "Favicon-forhåndsvisning og liste over genererede filer",
   "faviconIcoLabel": "favicon.ico (32x32 i ICO-beholder)"
 }

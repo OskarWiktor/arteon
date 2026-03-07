@@ -188,7 +188,14 @@
     "resultIn": "Eredmény: {{label}}...",
     "swapOrder": "Sorrend csere",
     "copyResult": "Eredmény másolása",
-    "pageLabel": "old."
+    "pageLabel": "old.",
+    "conversionFailed": "A konverzió sikertelen.",
+    "failedToLoadPdf": "A PDF fájl betöltése sikertelen.",
+    "failedToLoadLibrary": "A PDF könyvtár betöltése sikertelen.",
+    "canvasNotSupported": "A canvas nem támogatott ebben a böngészőben.",
+    "canvasExportFailed": "A canvas exportálás sikertelen.",
+    "decodedImageAlt": "Dekódolt kép",
+    "decodedImageFilename": "dekodolt-kep"
   },
   "errorPages": {
     "notFound": {

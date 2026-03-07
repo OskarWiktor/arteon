@@ -188,7 +188,14 @@
     "resultIn": "Tulos: {{label}}...",
     "swapOrder": "Vaihda järjestys",
     "copyResult": "Kopioi tulos",
-    "pageLabel": "s."
+    "pageLabel": "s.",
+    "conversionFailed": "Muunnos epäonnistui.",
+    "failedToLoadPdf": "PDF-tiedoston lataaminen epäonnistui.",
+    "failedToLoadLibrary": "PDF-kirjaston lataaminen epäonnistui.",
+    "canvasNotSupported": "Canvas ei ole tuettu tässä selaimessa.",
+    "canvasExportFailed": "Canvas-vienti epäonnistui.",
+    "decodedImageAlt": "Dekoodattu kuva",
+    "decodedImageFilename": "dekoodattu-kuva"
   },
   "errorPages": {
     "notFound": {

@@ -2,7 +2,7 @@
   "layoutLabel": "Aláírás elrendezése",
   "moreLayoutsSoon": "Hamarosan további elrendezések lesznek elérhetők.",
   "layouts": {
-    "standard": "Standard",
+    "standard": "Szabványos",
     "topBanner": "Felső sáv",
     "labelColumn": "Címkék balra",
     "centered": "Középre igazított",
@@ -77,7 +77,7 @@
     "title": "CTA gombok",
     "label": "Gomb szövege",
     "labelPlaceholder": "Ingyenes konzultáció foglalása",
-    "url": "CTA link",
+    "url": "CTA hivatkozás",
     "urlPlaceholder": "https://naptar.com/az-on-megbeszelései",
     "helper": "Ha a szöveg vagy a link üres, a gomb nem jelenik meg az aláírásban.",
     "cta1Title": "Fő gomb",

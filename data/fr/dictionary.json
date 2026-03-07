@@ -188,7 +188,14 @@
     "resultIn": "Résultat en {{label}}...",
     "swapOrder": "Inverser l'ordre",
     "copyResult": "Copier le résultat",
-    "pageLabel": "p."
+    "pageLabel": "p.",
+    "conversionFailed": "La conversion a échoué.",
+    "failedToLoadPdf": "Impossible de charger le fichier PDF.",
+    "failedToLoadLibrary": "Impossible de charger la bibliothèque PDF.",
+    "canvasNotSupported": "Canvas non pris en charge dans ce navigateur.",
+    "canvasExportFailed": "L'exportation canvas a échoué.",
+    "decodedImageAlt": "Image décodée",
+    "decodedImageFilename": "image-decodee"
   },
   "errorPages": {
     "notFound": {

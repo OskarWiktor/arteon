@@ -155,7 +155,7 @@
     "statusError": "Fejl",
     "before": "Før:",
     "after": "Efter:",
-    "download": "Download",
+    "download": "Hent",
     "remove": "Fjern",
     "formatSelectorTo": "til",
     "formatChangeConfirm": "Ændring af format fjerner filer fra køen. Fortsæt?",
@@ -188,7 +188,14 @@
     "resultIn": "Resultat i {{label}}...",
     "swapOrder": "Byt rækkefølge",
     "copyResult": "Kopiér resultat",
-    "pageLabel": "s."
+    "pageLabel": "s.",
+    "conversionFailed": "Konverteringen mislykkedes.",
+    "failedToLoadPdf": "Kunne ikke indlæse PDF-filen.",
+    "failedToLoadLibrary": "Kunne ikke indlæse PDF-biblioteket.",
+    "canvasNotSupported": "Canvas understøttes ikke i denne browser.",
+    "canvasExportFailed": "Canvas-eksport mislykkedes.",
+    "decodedImageAlt": "Afkodet billede",
+    "decodedImageFilename": "afkodet-billede"
   },
   "errorPages": {
     "notFound": {

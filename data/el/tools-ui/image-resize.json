@@ -64,13 +64,13 @@
     "yellow": "Κίτρινο"
   },
   "categories": {
-    "social": "social media",
+    "social": "κοινωνικά δίκτυα",
     "web": "web"
   },
   "presets": {
     "igSquare": "Instagram - τετράγωνη ανάρτηση (1080x1080)",
     "igPortrait": "Instagram - πορτραίτο ανάρτηση (1080x1350)",
-    "igStory": "Instagram - story / reels (1080x1920)",
+    "igStory": "Instagram – stories / reels (1080x1920)",
     "fbPost": "Facebook - ανάρτηση (1200x630)",
     "fbCover": "Facebook - εξώφυλλο σελίδας (820x360)",
     "liPost": "LinkedIn - ανάρτηση (1200x1200)",

@@ -19,7 +19,7 @@
     "L": "L - Niedrig (7%)",
     "M": "M - Mittel (15%)",
     "Q": "Q - Hoch (25%)",
-    "H": "H - Maximum (30%)"
+    "H": "H – Maximum (30%)"
   },
   "preview": "QR-Code-Vorschau",
   "downloadPng": "PNG herunterladen",
@@ -35,7 +35,7 @@
     "title": "Berufsbezeichnung (optional)",
     "phone": "Telefon (optional)",
     "email": "E-Mail (optional)",
-    "website": "Website (optional)",
+    "website": "Webseite (optional)",
     "address": "Adresse (optional)"
   },
   "email": {

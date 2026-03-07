@@ -188,7 +188,14 @@
     "resultIn": "Resultat i {{label}}...",
     "swapOrder": "Byt ordning",
     "copyResult": "Kopiera resultat",
-    "pageLabel": "s."
+    "pageLabel": "s.",
+    "conversionFailed": "Konverteringen misslyckades.",
+    "failedToLoadPdf": "Kunde inte ladda PDF-filen.",
+    "failedToLoadLibrary": "Kunde inte ladda PDF-biblioteket.",
+    "canvasNotSupported": "Canvas stöds inte i den här webbläsaren.",
+    "canvasExportFailed": "Canvas-export misslyckades.",
+    "decodedImageAlt": "Avkodad bild",
+    "decodedImageFilename": "avkodad-bild"
   },
   "errorPages": {
     "notFound": {

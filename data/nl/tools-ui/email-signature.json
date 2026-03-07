@@ -31,7 +31,7 @@
   "panels": {
     "identity": "Gegevens",
     "buttons": "Knoppen",
-    "social": "Social media",
+    "social": "Sociale media",
     "appearance": "Uiterlijk",
     "textStyle": "Tekststijl",
     "spacing": "Afstand",
@@ -92,7 +92,7 @@
     "ctaRadiusFull": "Volledig"
   },
   "social": {
-    "title": "Social media",
+    "title": "Sociale media",
     "helper": "Links zijn optioneel: alleen platforms met een ingevulde URL verschijnen in de handtekening.",
     "showIcons": "Pictogrammen naast namen tonen",
     "iconSize": "Pictogramgrootte",
@@ -150,7 +150,7 @@
     "jobTitle": "Functie",
     "company": "Bedrijf",
     "contact": "Contactgegevens",
-    "socials": "Social media",
+    "socials": "Sociale media",
     "legal": "Juridische melding",
     "color": "Kleur",
     "size": "Grootte"

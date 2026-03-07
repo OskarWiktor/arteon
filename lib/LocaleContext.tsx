@@ -127,6 +127,13 @@ export interface ClientDictionary {
     swapOrder: string;
     copyResult: string;
     pageLabel: string;
+    conversionFailed: string;
+    failedToLoadPdf: string;
+    failedToLoadLibrary: string;
+    canvasNotSupported: string;
+    canvasExportFailed: string;
+    decodedImageAlt: string;
+    decodedImageFilename: string;
   };
 }
 

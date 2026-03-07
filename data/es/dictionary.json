@@ -96,7 +96,7 @@
     "switchTitle": "Cambiar a español",
     "toggleLabel": "Cambiar idioma",
     "chooseLabel": "Elegir idioma",
-    "popularLabel": "Popular",
+    "popularLabel": "Populares",
     "otherLabel": "Otros",
     "closeModalLabel": "Cerrar"
   },
@@ -188,7 +188,14 @@
     "resultIn": "Resultado en {{label}}...",
     "swapOrder": "Cambiar orden",
     "copyResult": "Copiar resultado",
-    "pageLabel": "pág."
+    "pageLabel": "pág.",
+    "conversionFailed": "La conversión falló.",
+    "failedToLoadPdf": "No se pudo cargar el archivo PDF.",
+    "failedToLoadLibrary": "No se pudo cargar la biblioteca PDF.",
+    "canvasNotSupported": "Canvas no es compatible con este navegador.",
+    "canvasExportFailed": "La exportación de canvas falló.",
+    "decodedImageAlt": "Imagen decodificada",
+    "decodedImageFilename": "imagen-decodificada"
   },
   "errorPages": {
     "notFound": {

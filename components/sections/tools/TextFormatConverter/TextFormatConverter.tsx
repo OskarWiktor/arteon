@@ -33,7 +33,7 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
 
   const handleConvert = useCallback(async () => {
     if (!input.trim()) {
-      setError(t.pasteOrTypeData?.replace('{{format}}', sourceLabel) ?? `Paste or type ${sourceLabel} data`);
+      setError(t.pasteOrTypeData.replace('{{format}}', sourceLabel));
       return;
     }
     setError(null);
@@ -42,7 +42,7 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
       const result = await convertText(input, conversionType);
       setOutput(result);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Conversion failed');
+      setError(err instanceof Error ? err.message : t.conversionFailed);
       setOutput('');
     }
     setIsConverting(false);
@@ -140,14 +140,14 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
             <h2 className="h6">{sourceLabel}</h2>
             <label className="text-primary-mid hover:text-primary cursor-pointer text-xs font-medium transition-colors">
               <input ref={fileInputRef} type="file" accept={acceptExt} onChange={handleFileUpload} className="hidden" />
-              {fileName ? fileName : (t.uploadFile?.replace('{{format}}', sourceLabel) ?? `Upload ${sourceLabel}`)}
+              {fileName ? fileName : t.uploadFile.replace('{{format}}', sourceLabel)}
             </label>
           </div>
           <textarea
             className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-sm! transition outline-none focus:border-neutral-300 focus:bg-white"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={sourcePlaceholder ?? t.pasteOrTypeData?.replace('{{format}}', sourceLabel) ?? `Paste or type ${sourceLabel} data`}
+            placeholder={sourcePlaceholder ?? t.pasteOrTypeData.replace('{{format}}', sourceLabel)}
             spellCheck={false}
           />
           {error && <ToolAlert variant="error">{error}</ToolAlert>}
@@ -167,7 +167,7 @@ export default function TextFormatConverter({ conversionType, sourceLabel, targe
             className="tool-textarea min-h-[300px] w-full resize-y rounded-xl border border-neutral-200 bg-neutral-50 p-4 font-mono text-sm! transition outline-none focus:border-neutral-300 focus:bg-white"
             value={output}
             readOnly
-            placeholder={t.conversionResult?.replace('{{format}}', targetLabel) ?? `Conversion result (${targetLabel})`}
+            placeholder={t.conversionResult.replace('{{format}}', targetLabel)}
             spellCheck={false}
           />
           <div className="flex flex-wrap gap-3">

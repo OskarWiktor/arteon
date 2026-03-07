@@ -50,7 +50,7 @@
     "nameTag": "Namens-Tag",
     "nameTagPlaceholder": "Z. B. Er/Ihm  Art Director",
     "jobTitle": "Berufsbezeichnung",
-    "jobTitlePlaceholder": "Web Developer",
+    "jobTitlePlaceholder": "Webentwickler",
     "company": "Firmenname",
     "companyPlaceholder": "Ihre Firma / Marke",
     "extraLine": "Zusätzliche Zeile (kurze Beschreibung)",
@@ -59,7 +59,7 @@
     "emailPlaceholder": "max.mustermann@example.com",
     "phone": "Telefon",
     "phonePlaceholder": "+49 160 000 0000",
-    "website": "Website",
+    "website": "Webseite",
     "websitePlaceholder": "https://www.ihreseite.de",
     "address": "Adresse (optional)",
     "addressPlaceholder": "Musterstraße 3, 10115 Berlin",
@@ -177,7 +177,7 @@
   "labels": {
     "tel": "Tel.",
     "email": "E-Mail",
-    "website": "Website",
+    "website": "Webseite",
     "address": "Adresse"
   },
   "themes": {

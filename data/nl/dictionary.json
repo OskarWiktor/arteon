@@ -188,7 +188,14 @@
     "resultIn": "Resultaat in {{label}}...",
     "swapOrder": "Volgorde wisselen",
     "copyResult": "Resultaat kopiëren",
-    "pageLabel": "pag."
+    "pageLabel": "pag.",
+    "conversionFailed": "Conversie mislukt.",
+    "failedToLoadPdf": "Kan het PDF-bestand niet laden.",
+    "failedToLoadLibrary": "Kan de PDF-bibliotheek niet laden.",
+    "canvasNotSupported": "Canvas wordt niet ondersteund in deze browser.",
+    "canvasExportFailed": "Canvas-export mislukt.",
+    "decodedImageAlt": "Gedecodeerde afbeelding",
+    "decodedImageFilename": "gedecodeerde-afbeelding"
   },
   "errorPages": {
     "notFound": {

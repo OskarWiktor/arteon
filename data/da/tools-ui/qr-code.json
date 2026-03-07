@@ -22,8 +22,8 @@
     "H": "H – Maksimal (30 %)"
   },
   "preview": "Forhåndsvisning af QR-kode",
-  "downloadPng": "Download PNG",
-  "downloadSvg": "Download SVG",
+  "downloadPng": "Hent PNG",
+  "downloadSvg": "Hent SVG",
   "contrastWarning": "Kontrasten mellem farverne er for lav. QR-koden kan være svær at scanne.",
   "contrastRatio": "Kontrastforhold",
   "recommended": "Anbefalet minimum: 3:1",

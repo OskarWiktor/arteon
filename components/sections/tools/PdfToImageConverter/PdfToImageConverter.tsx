@@ -50,7 +50,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
       });
 
       if (pdfFiles.length === 0) {
-        setGlobalError(t.errorWrongFormat?.replace('{{format}}', 'PDF') ?? 'Only PDF files are accepted.');
+        setGlobalError(t.errorWrongFormat.replace('{{format}}', 'PDF'));
         return;
       }
 
@@ -82,7 +82,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
             setPages((prev) => [...prev, ...newPages]);
           }
         } catch (err) {
-          setGlobalError(err instanceof Error ? err.message : 'Failed to load PDF');
+          setGlobalError(err instanceof Error ? err.message : t.failedToLoadPdf);
         }
       })();
     },
@@ -110,7 +110,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
     async (e: FormEvent) => {
       e.preventDefault();
       if (!pages.length) {
-        setGlobalError(t.errorNoFiles?.replace('{{format}}', 'PDF') ?? 'Add PDF files first.');
+        setGlobalError(t.errorNoFiles.replace('{{format}}', 'PDF'));
         return;
       }
       setGlobalError(null);
@@ -139,23 +139,23 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
             canvas.width = viewport.width;
             canvas.height = viewport.height;
             const ctx = canvas.getContext('2d');
-            if (!ctx) throw new Error('Canvas is not supported.');
+            if (!ctx) throw new Error(t.canvasNotSupported);
 
             await page.render({ canvasContext: ctx, viewport, canvas } as never).promise;
 
             const blob = await new Promise<Blob>((resolve, reject) => {
-              canvas.toBlob((b) => (b ? resolve(b) : reject(new Error('Canvas export failed'))), mime, targetFormat === 'png' ? undefined : qualityRef.current);
+              canvas.toBlob((b) => (b ? resolve(b) : reject(new Error(t.canvasExportFailed))), mime, targetFormat === 'png' ? undefined : qualityRef.current);
             });
 
             const url = URL.createObjectURL(blob);
 
             setPages((prev) => prev.map((p) => (p.id === entry.id ? { ...p, status: 'done' as const, outputBlob: blob, outputUrl: url } : p)));
           } catch (err) {
-            setPages((prev) => prev.map((p) => (p.id === entry.id ? { ...p, status: 'error' as const, errorMessage: err instanceof Error ? err.message : 'Conversion failed' } : p)));
+            setPages((prev) => prev.map((p) => (p.id === entry.id ? { ...p, status: 'error' as const, errorMessage: err instanceof Error ? err.message : t.conversionFailed } : p)));
           }
         }
       } catch (err) {
-        setGlobalError(err instanceof Error ? err.message : 'Failed to load PDF library');
+        setGlobalError(err instanceof Error ? err.message : t.failedToLoadLibrary);
       }
 
       setIsConverting(false);
@@ -197,11 +197,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
             <div>
               <h2 className="h6 mb-2">{t.addFiles}</h2>
               <ToolFileDropzone accept="application/pdf,.pdf" multiple onFiles={handleAddFiles} className="tool-upload-area">
-                <ToolUploadContent
-                  dragLabel={t.dragDrop?.replace('{{format}}', 'PDF') ?? 'Drop PDF files here'}
-                  clickLabel={t.clickToSelect}
-                  formatsLabel={t.supported?.replace('{{format}}', 'PDF') ?? 'Supported: PDF'}
-                />
+                <ToolUploadContent dragLabel={t.dragDrop.replace('{{format}}', 'PDF')} clickLabel={t.clickToSelect} formatsLabel={t.supported.replace('{{format}}', 'PDF')} />
               </ToolFileDropzone>
               {globalError && (
                 <ToolAlert variant="error" className="mt-2">
@@ -212,7 +208,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
 
             {showQuality && (
               <div>
-                <h3 className="h6 mt-8 mb-2">{t.setQuality?.replace('{{format}}', targetLabel) ?? `Quality (${targetLabel})`}</h3>
+                <h3 className="h6 mt-8 mb-2">{t.setQuality.replace('{{format}}', targetLabel)}</h3>
                 <ToolRangeInput value={quality} min={60} max={95} onChange={handleQualityChange} suffix="%" helper={t.qualityHelper} />
               </div>
             )}
@@ -260,7 +256,7 @@ export default function PdfToImageConverter({ targetFormat }: PdfToImageConverte
 
           {pages.length === 0 && (
             <div className="rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-6 text-center">
-              <p className="tool-meta">{t.emptyState?.replace('{{source}}', 'PDF').replace('{{target}}', targetLabel) ?? `Add PDF files to convert to ${targetLabel}`}</p>
+              <p className="tool-meta">{t.emptyState.replace('{{source}}', 'PDF').replace('{{target}}', targetLabel)}</p>
             </div>
           )}
 

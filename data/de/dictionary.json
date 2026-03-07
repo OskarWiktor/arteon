@@ -89,7 +89,7 @@
     "goToSlide": "Zu Folie gehen",
     "of": "von",
     "slide": "Folie",
-    "tool": "Tool",
+    "tool": "Werkzeug",
     "openTool": "Tool öffnen"
   },
   "languageSwitcher": {
@@ -188,7 +188,14 @@
     "resultIn": "Ergebnis in {{label}}...",
     "swapOrder": "Reihenfolge tauschen",
     "copyResult": "Ergebnis kopieren",
-    "pageLabel": "S."
+    "pageLabel": "S.",
+    "conversionFailed": "Konvertierung fehlgeschlagen.",
+    "failedToLoadPdf": "PDF-Datei konnte nicht geladen werden.",
+    "failedToLoadLibrary": "PDF-Bibliothek konnte nicht geladen werden.",
+    "canvasNotSupported": "Canvas wird in diesem Browser nicht unterstützt.",
+    "canvasExportFailed": "Canvas-Export fehlgeschlagen.",
+    "decodedImageAlt": "Dekodiertes Bild",
+    "decodedImageFilename": "dekodiertes-bild"
   },
   "errorPages": {
     "notFound": {

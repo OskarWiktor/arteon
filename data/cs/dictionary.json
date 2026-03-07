@@ -188,7 +188,14 @@
     "resultIn": "Výsledek v {{label}}...",
     "swapOrder": "Prohodit pořadí",
     "copyResult": "Kopírovat výsledek",
-    "pageLabel": "str."
+    "pageLabel": "str.",
+    "conversionFailed": "Konverze se nezdařila.",
+    "failedToLoadPdf": "Nepodařilo se načíst soubor PDF.",
+    "failedToLoadLibrary": "Nepodařilo se načíst knihovnu PDF.",
+    "canvasNotSupported": "Canvas není v tomto prohlížeči podporován.",
+    "canvasExportFailed": "Export canvas selhal.",
+    "decodedImageAlt": "Dekódovaný obrázek",
+    "decodedImageFilename": "dekodovany-obrazek"
   },
   "errorPages": {
     "notFound": {

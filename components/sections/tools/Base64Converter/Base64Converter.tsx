@@ -129,7 +129,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
     const ia = new Uint8Array(ab);
     for (let i = 0; i < byteString.length; i++) ia[i] = byteString.charCodeAt(i);
     const blob = new Blob([ab], { type: mime });
-    downloadBlob(blob, `decoded-image${ext}`);
+    downloadBlob(blob, `${t.decodedImageFilename}${ext}`);
   }, [previewUrl]);
 
   const handleClear = useCallback(() => {
@@ -212,7 +212,7 @@ export default function Base64Converter({ mode }: Base64ConverterProps) {
             <div className="space-y-3">
               <div className="flex items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50 p-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={previewUrl} alt="Decoded image" className="max-h-[400px] max-w-full object-contain" />
+                <img src={previewUrl} alt={t.decodedImageAlt} className="max-h-[400px] max-w-full object-contain" />
               </div>
               <Button onClick={handleDownload} size="small">
                 {t.download}

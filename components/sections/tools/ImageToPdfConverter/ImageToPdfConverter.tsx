@@ -119,7 +119,7 @@ export default function ImageToPdfConverter({ sourceFormat, acceptMime }: ImageT
         return allowedExts.some((ext) => f.name.toLowerCase().endsWith(ext));
       });
       if (valid.length < all.length) {
-        setGlobalError(t.errorWrongFormat?.replace('{{format}}', sourceLabel) ?? `Only ${sourceLabel} files are accepted.`);
+        setGlobalError(t.errorWrongFormat.replace('{{format}}', sourceLabel));
       }
       if (valid.length > 0) {
         const entries: PdfQueueFile[] = valid.map((f) => ({
@@ -156,7 +156,7 @@ export default function ImageToPdfConverter({ sourceFormat, acceptMime }: ImageT
     async (e: FormEvent) => {
       e.preventDefault();
       if (!files.length) {
-        setGlobalError(t.errorNoFiles?.replace('{{format}}', sourceLabel) ?? 'Add files first.');
+        setGlobalError(t.errorNoFiles.replace('{{format}}', sourceLabel));
         return;
       }
       setGlobalError(null);
@@ -198,11 +198,11 @@ export default function ImageToPdfConverter({ sourceFormat, acceptMime }: ImageT
 
             setFiles((prev) => prev.map((f) => (f.id === entry.id ? { ...f, status: 'done' as const, previewUrl: URL.createObjectURL(pdfBlob) } : f)));
           } catch (err) {
-            setFiles((prev) => prev.map((f) => (f.id === entry.id ? { ...f, status: 'error' as const, errorMessage: err instanceof Error ? err.message : 'Conversion failed' } : f)));
+            setFiles((prev) => prev.map((f) => (f.id === entry.id ? { ...f, status: 'error' as const, errorMessage: err instanceof Error ? err.message : t.conversionFailed } : f)));
           }
         }
       } catch (err) {
-        setGlobalError(err instanceof Error ? err.message : 'Failed to load PDF library');
+        setGlobalError(err instanceof Error ? err.message : t.failedToLoadLibrary);
       }
 
       setIsConverting(false);

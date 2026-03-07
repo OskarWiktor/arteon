@@ -188,7 +188,14 @@
     "resultIn": "Resultat i {{label}}...",
     "swapOrder": "Bytt rekkefølge",
     "copyResult": "Kopier resultat",
-    "pageLabel": "s."
+    "pageLabel": "s.",
+    "conversionFailed": "Konverteringen mislyktes.",
+    "failedToLoadPdf": "Kunne ikke laste PDF-filen.",
+    "failedToLoadLibrary": "Kunne ikke laste PDF-biblioteket.",
+    "canvasNotSupported": "Canvas støttes ikke i denne nettleseren.",
+    "canvasExportFailed": "Canvas-eksport mislyktes.",
+    "decodedImageAlt": "Dekodet bilde",
+    "decodedImageFilename": "dekodet-bilde"
   },
   "errorPages": {
     "notFound": {

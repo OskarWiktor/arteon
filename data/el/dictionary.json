@@ -188,7 +188,14 @@
     "resultIn": "Αποτέλεσμα σε {{label}}...",
     "swapOrder": "Εναλλαγή σειράς",
     "copyResult": "Αντιγραφή αποτελέσματος",
-    "pageLabel": "σελ."
+    "pageLabel": "σελ.",
+    "conversionFailed": "Η μετατροπή απέτυχε.",
+    "failedToLoadPdf": "Αποτυχία φόρτωσης αρχείου PDF.",
+    "failedToLoadLibrary": "Αποτυχία φόρτωσης βιβλιοθήκης PDF.",
+    "canvasNotSupported": "Το canvas δεν υποστηρίζεται σε αυτό το πρόγραμμα περιήγησης.",
+    "canvasExportFailed": "Η εξαγωγή canvas απέτυχε.",
+    "decodedImageAlt": "Αποκωδικοποιημένη εικόνα",
+    "decodedImageFilename": "apokodikopoimeni-eikona"
   },
   "errorPages": {
     "notFound": {

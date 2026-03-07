@@ -188,7 +188,14 @@
     "resultIn": "Rezultat în {{label}}...",
     "swapOrder": "Schimbă ordinea",
     "copyResult": "Copiază rezultatul",
-    "pageLabel": "pag."
+    "pageLabel": "pag.",
+    "conversionFailed": "Conversia a eșuat.",
+    "failedToLoadPdf": "Nu s-a putut încărca fișierul PDF.",
+    "failedToLoadLibrary": "Nu s-a putut încărca biblioteca PDF.",
+    "canvasNotSupported": "Canvas nu este suportat în acest browser.",
+    "canvasExportFailed": "Exportul canvas a eșuat.",
+    "decodedImageAlt": "Imagine decodată",
+    "decodedImageFilename": "imagine-decodata"
   },
   "errorPages": {
     "notFound": {

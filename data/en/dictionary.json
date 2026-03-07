@@ -188,7 +188,14 @@
     "resultIn": "Result in {{label}}...",
     "swapOrder": "Swap order",
     "copyResult": "Copy result",
-    "pageLabel": "p."
+    "pageLabel": "p.",
+    "conversionFailed": "Conversion failed.",
+    "failedToLoadPdf": "Failed to load PDF file.",
+    "failedToLoadLibrary": "Failed to load PDF library.",
+    "canvasNotSupported": "Canvas is not supported in this browser.",
+    "canvasExportFailed": "Canvas export failed.",
+    "decodedImageAlt": "Decoded image",
+    "decodedImageFilename": "decoded-image"
   },
   "errorPages": {
     "notFound": {

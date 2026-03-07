@@ -186,7 +186,14 @@
     "resultIn": "Wynik w {{label}}...",
     "swapOrder": "Zmień kolejność",
     "copyResult": "Kopiuj wynik",
-    "pageLabel": "str."
+    "pageLabel": "str.",
+    "conversionFailed": "Konwersja nie powiodła się.",
+    "failedToLoadPdf": "Nie udało się załadować pliku PDF.",
+    "failedToLoadLibrary": "Nie udało się załadować biblioteki PDF.",
+    "canvasNotSupported": "Przeglądarka nie obsługuje elementu canvas.",
+    "canvasExportFailed": "Eksport canvas nie powiódł się.",
+    "decodedImageAlt": "Zdekodowany obraz",
+    "decodedImageFilename": "zdekodowany-obraz"
   },
   "errorPages": {
     "notFound": {
