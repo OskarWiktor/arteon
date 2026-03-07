@@ -101,22 +101,22 @@
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web ανάπτυξη",
-          "description": "Operacje bitowe, maski, flagi: 0xFF = 11111111."
+          "description": "Πράξεις bit, μάσκες, σημαίες: 0xFF = 11111111."
         },
         {
           "icon": "RiWifiLine",
           "title": "Internet",
-          "description": "Maski podsieci: 255.255.255.0 = /24 (24 jedynki binarnie)."
+          "description": "Μάσκες υποδικτύου: 255.255.255.0 = /24 (24 άσσοι σε δυαδικό)."
         },
         {
           "icon": "RiShieldKeyholeLine",
-          "title": "Uprawnienia Unix",
-          "description": "chmod 755 = 111 101 101 binarnie."
+          "title": "Δικαιώματα Unix",
+          "description": "chmod 755 = 111 101 101 σε δυαδικό."
         },
         {
           "icon": "RiCpuLine",
-          "title": "Elektronika",
-          "description": "Rejestry, porty I/O, protokoły komunikacyjne."
+          "title": "Ηλεκτρονικά",
+          "description": "Καταχωρητές, θύρες I/O, πρωτόκολλα επικοινωνίας."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">Wiederholt durch 2 teilen und Reste notieren. Von unten nach oben lesen.</p><p class=\"text-mid\">8 Bit = 1 Byte = Werte 0–255.</p>"
+      "html": "<p class=\"text-mid mb-4\">Διαιρέστε επαναληπτικά δια 2 και σημειώστε τα υπόλοιπα. Διαβάστε από κάτω προς τα πάνω.</p><p class=\"text-mid\">8 bit = 1 byte = τιμές 0–255.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Powers of 2: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</li><li>1 byte = 8 bits = 0–255. Common in RGB colors, ASCII codes.</li><li>IP address: 192.168.1.1 = 11000000.10101000.00000001.00000001.</li><li>Negative numbers use two's complement in most systems.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Δυνάμεις του 2: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</li><li>1 byte = 8 bit = 0–255. Συνηθισμένο σε χρώματα RGB, κωδικούς ASCII.</li><li>Διεύθυνση IP: 192.168.1.1 = 11000000.10101000.00000001.00000001.</li><li>Αρνητικοί αριθμοί χρησιμοποιούν συμπλήρωμα ως προς δύο στα περισσότερα συστήματα.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Digits",
+          "name": "Ψηφία",
           "values": {
             "unit1": "0–9",
             "unit2": "0–1"
           }
         },
         {
-          "name": "Used by",
+          "name": "Χρήση",
           "values": {
-            "unit1": "Humans",
-            "unit2": "Computers"
+            "unit1": "Άνθρωποι",
+            "unit2": "Υπολογιστές"
           }
         },
         {
-          "name": "Example: 42",
+          "name": "Παράδειγμα: 42",
           "values": {
             "unit1": "42",
             "unit2": "101010"
           }
         },
         {
-          "name": "Example: 255",
+          "name": "Παράδειγμα: 255",
           "values": {
             "unit1": "255",
             "unit2": "11111111"
           }
         },
         {
-          "name": "Readability",
+          "name": "Αναγνωσιμότητα",
           "values": {
-            "unit1": "Easy for humans",
-            "unit2": "Long but computer-native"
+            "unit1": "Εύκολο για ανθρώπους",
+            "unit2": "Μεγάλο αλλά φυσικό για υπολογιστές"
           }
         }
       ]
@@ -237,15 +237,15 @@
       "items": [
         {
           "question": "Τι είναι 10 in Binär?",
-          "answer": "Dezimal 10 = Binär 1010 (8+2)."
+          "answer": "Δεκαδικό 10 = Δυαδικό 1010 (8+2)."
         },
         {
           "question": "Τι είναι 255 in Binär?",
-          "answer": "255 = 11111111 (acht Einsen). Maximum eines Bytes."
+          "answer": "255 = 11111111 (οκτώ άσσοι). Μέγιστο ενός byte."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },

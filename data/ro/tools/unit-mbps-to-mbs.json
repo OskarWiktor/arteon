@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: Mbps în MB/s?",
-      "html": "<p class=\"text-mid mb-4\">Internet speeds are advertised in megabits per second (Mbps), but file sizes and download speeds are typically shown in megabytes per second (MB/s). 1 byte = 8 bits, so 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">This means a \"100 Mbps\" connection downloads at a maximum of 12.5 MB/s. A \"1 Gbps\" connection = 125 MB/s.</p><p class=\"text-mid mb-4\">This conversion is essential for estimating download times, choosing an internet plan, and understanding the difference between advertised and actual speeds.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Vitezele de internet sunt promovate în megabiți pe secundă (Mbps), dar dimensiunile fișierelor și descărcărilenload speeds are typically shown in megabytes per second (MB/s). 1 byte = 8 bits, so 1 MB/s = 8 Mbps.</p><p class=\"text-mid mb-4\">This means a \"100 Mbps\" connection downloads at a maximum of 12.5 MB/s. A \"1 Gbps\" connection = 125 MB/s.</p><p class=\"text-mid mb-4\">This conversion is essential for estimating download times, choosing an internet plan, and understanding the difference between advertised and actual speeds.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Mbps în MB/s – Arteon"
     },
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiDownloadLine",
-          "title": "Szacowanie pobierania",
-          "description": "100 Mbps = plik 1 GB w ok. 80 sekund."
+          "title": "Estimare descărcare",
+          "description": "100 Mbps = fișier 1 GB în aprox. 80 secunde."
         },
         {
           "icon": "RiWifiLine",
           "title": "Internet",
-          "description": "Porównaj oferty operatorów w realnych MB/s."
+          "description": "Comparați ofertele operatorilor în MB/s reali."
         },
         {
           "icon": "RiVideoLine",
           "title": "Streaming",
-          "description": "Netflix 4K wymaga 25 Mbps = 3,1 MB/s."
+          "description": "Netflix 4K necesită 25 Mbps = 3,1 MB/s."
         },
         {
           "icon": "RiServerLine",
           "title": "Hosting",
-          "description": "Transfer serwera: 1 TB/miesiąc = ile Mbps potrzebujesz?"
+          "description": "Lățime de bandă server: 1 TB/lună = câți Mbps aveți nevoie?"
         }
       ]
     },
@@ -204,7 +204,7 @@
           }
         },
         {
-          "name": "Used for",
+          "name": "Utilizare",
           "values": {
             "unit1": "ISP speeds, bandwidth",
             "unit2": "File downloads, transfers"
@@ -237,15 +237,15 @@
       "items": [
         {
           "question": "Câți MB/s sind 100 Mbps?",
-          "answer": "100 Mbps = 12,5 MB/s. Teilen Sie Mbps durch 8."
+          "answer": "100 Mbps = 12,5 MB/s. Împărțiți Mbps la 8."
         },
         {
-          "question": "De ce ist mein Download langsamer als beworben?",
-          "answer": "ISPs werben in Mbps (Bits), Downloads zeigen MB/s (Bytes). 100 Mbps = max 12,5 MB/s. Tatsächliche Viteză ist typischerweise 70–90% davon."
+          "question": "De ce este descărcarea mea mai lentă decât cea promovată?",
+          "answer": "Furnizorii de internet promovează în Mbps (biți), descărcările arată MB/s (octeți). 100 Mbps = max 12,5 MB/s. Tatsächliche Viteză ist typischerweise 70–90% davon."
         },
         {
-          "question": "Cât de lunge dauert 1 GB Download bei 100 Mbps?",
-          "answer": "1 GB = 1.000 MB. Bei 12,5 MB/s: ~80 Sekunden. In der Praxis ca. 90–100 Sekunden."
+          "question": "Cât durează descărcarea a 1 GB la 100 Mbps?",
+          "answer": "1 GB = 1.000 MB. La 12,5 MB/s: ~80 secunde. În practică aprox. 90–100 secunde."
         },
         {
           "question": "Calculele se fac local?",

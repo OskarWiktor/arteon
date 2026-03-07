@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiDatabase2Line",
-          "title": "Bazy danych",
-          "description": "Pola created_at, updated_at przechowują timestamp."
+          "title": "Databases",
+          "description": "Fields like created_at and updated_at store timestamps."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "API i JWT",
-          "description": "Tokeny JWT: pole exp (wygaśnięcie) to timestamp."
+          "title": "API & JWT",
+          "description": "JWT tokens: the exp (expiration) field is a timestamp."
         },
         {
           "icon": "RiTerminalBoxLine",
-          "title": "Logi serwerów",
-          "description": "Odczytuj timestampy z logów systemowych i aplikacyjnych."
+          "title": "Server Logs",
+          "description": "Read timestamps from system and application logs."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Debugowanie",
-          "description": "Szybkie sprawdzenie, kiedy wystąpił błąd na podstawie timestamp."
+          "title": "Debugging",
+          "description": "Quickly check when an error occurred based on its timestamp."
         }
       ]
     },

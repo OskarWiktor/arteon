@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Milloin tarvitset: Tuumat px:ksi?",
-      "html": "<p class=\"text-mid mb-4\">US paper sizes and print specifications use inches. To prepare digital artwork, convert to pixels: pixels = inches × DPI.</p><p class=\"text-mid mb-4\">US Letter paper (8.5 × 11″) at 300 DPI = 2,550 × 3,300 pixels. A 4 × 6″ photo print at 300 DPI = 1,200 × 1,800 pixels.</p><p class=\"text-mid mb-4\">This conversion is essential for preparing images for US print shops, setting up document templates, and calculating required image resolution.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Yhdysvaltain paperikoot ja tulostuksen määritykset käyttävät tuumia. Digitaalisten töiden valmisteluun muunna pikseleiksi: pikselit = tuumat × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) 300 DPI:llä = 2.550 × 3.300 pikseliä. 4 × 6″ valokuvatuloste 300 DPI:llä = 1.200 × 1.800 pikseliä.</p><p class=\"text-mid mb-4\">Tämä muunnos on välttämätön kuvien valmisteluun painoille, asiakirjamallien luomiseen ja tarvittavan kuvaresoluution laskemiseen.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Tuumat px:ksi – Arteon"
     },
@@ -105,12 +105,12 @@
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Monitory",
+          "title": "Näytöt",
           "description": "Oblicz PPI monitora: 27″ 4K (3840px) = 163 PPI."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
+          "title": "Valokuvaus",
           "description": "Wydruk zdjęcia 4 × 6″ przy 300 DPI = 1 200 × 1 800 px."
         },
         {
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten muunnos toimii?",
-      "html": "<p class=\"text-mid mb-4\">The formula is simply: pixels = inches × DPI. No additional conversion factor needed since DPI is already dots per inch.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 inch = 300 pixels. At 72 DPI: 1 inch = 72 pixels.</p><p class=\"text-mid\">To find required DPI: DPI = pixels / inches. A 4,000 px image printed at 8″ wide = 500 DPI.</p>"
+      "html": "<p class=\"text-mid mb-4\">Kaava on yksinkertainen: pikselit = tuumat × DPI. Muuta muunnoskerrointa ei tarvita, koska DPI on jo pisteitä tuumaa kohti.</p><p class=\"text-mid mb-4\">300 DPI:llä: 1 tuuma = 300 pikseliä. 72 DPI:llä: 1 tuuma = 72 pikseliä.</p><p class=\"text-mid\">Tarvittavan DPI:n löytämiseen: DPI = pikselit / tuumat. 4.000 px:n kuva tulostettuna 8″ leveänä = 500 DPI.</p>"
     },
     {
       "type": "gap",
@@ -175,8 +175,8 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "Common print sizes at 300 DPI",
-      "featureLabel": "Print size",
+      "title": "Yleiset tulostuskoot 300 DPI:llä",
+      "featureLabel": "Tulostuskoko",
       "plans": [
         {
           "id": "unit1",
@@ -190,21 +190,21 @@
       ],
       "features": [
         {
-          "name": "Wallet",
+          "name": "Lompakko",
           "values": {
             "unit1": "2.5 × 3.5″",
             "unit2": "750 × 1,050"
           }
         },
         {
-          "name": "4×6 photo",
+          "name": "4×6 valokuva",
           "values": {
             "unit1": "4 × 6″",
             "unit2": "1,200 × 1,800"
           }
         },
         {
-          "name": "8×10 photo",
+          "name": "8×10 valokuva",
           "values": {
             "unit1": "8 × 10″",
             "unit2": "2,400 × 3,000"
@@ -218,7 +218,7 @@
           }
         },
         {
-          "name": "Poster (24×36)",
+          "name": "Juliste (24×36)",
           "values": {
             "unit1": "24 × 36″",
             "unit2": "7,200 × 10,800"
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Kuinka monta Pixel sind 1 Zoll bei 300 DPI?",
-          "answer": "1 Zoll bei 300 DPI = 300 Pixel."
+          "question": "Kuinka monta pikseliä on 1 tuuma 300 DPI:llä?",
+          "answer": "1 tuuma 300 DPI:llä = 300 pikseliä."
         },
         {
           "question": "Tehdäänkö laskelmat paikallisesti?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
         }
       ]
     },

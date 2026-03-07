@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Rem σε px?",
-      "html": "<p class=\"text-mid mb-4\">The CSS rem unit is relative to the root element (html) font size. By default, browsers set this to 16px, so 1rem = 16px. Unlike em, rem does not compound — it always references the root.</p><p class=\"text-mid mb-4\">Rem is the recommended unit for modern responsive web design. It provides consistent, scalable sizing that respects user accessibility preferences.</p><p class=\"text-mid mb-4\">Converting rem to px helps understand the actual rendered size when designing or debugging CSS layouts.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Η μονάδα CSS rem είναι σχετική με το μέγεθος γραμματοσειράς του ριζικού στοιχείου (html). Προεπιλεγμένα, οι browsers το ορίζουν σε 16px, άρα 1rem = 16px. Σε αντίθεση με το em, το rem δεν σωρεύεται — αναφέρεται πάντα στη ρίζα.</p><p class=\"text-mid mb-4\">Το rem είναι η συνιστώμενη μονάδα για σύγχρονο responsive web design. Προσφέρει συνεπή, κλιμακούμενη διαστασιολόγηση που σέβεται τις προτιμήσεις προσβασιμότητας του χρήστη.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας — τίποτα δεν αποστέλλεται σε κανέναν server.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Rem σε px – Arteon"
     },
@@ -101,22 +101,22 @@
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web ανάπτυξη",
-          "description": "Przeliczanie makiet (px) na rem: padding 24 px = 1,5 rem."
+          "description": "Μετατροπή mockups (px) σε rem: padding 24 px = 1,5 rem."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Responsywność",
-          "description": "Rem skaluje się z preferencjami użytkownika – lepsze od stałych pikseli."
+          "title": "Ανταπόκριση",
+          "description": "Το rem κλιμακώνεται με τις προτιμήσεις του χρήστη — καλύτερο από σταθερά pixel."
         },
         {
           "icon": "RiAccessibilityLine",
-          "title": "Dostępność (WCAG)",
-          "description": "Rem respektuje ustawienia rozmiaru tekstu użytkownika."
+          "title": "Προσβασιμότητα (WCAG)",
+          "description": "Το rem σέβεται τις ρυθμίσεις μεγέθους κειμένου του χρήστη."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Systemy projektowe",
-          "description": "Skale spacing w rem: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
+          "title": "Συστήματα σχεδίασης",
+          "description": "Κλίμακες spacing σε rem: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">px = rem × root font size. Default root font size = 16px.</p><p class=\"text-mid mb-4\">If html { font-size: 62.5% }, root = 10px, so 1.6rem = 16px.</p><p class=\"text-mid\">Rem never compounds. 1rem is always the same regardless of nesting depth. This makes it more predictable than em.</p>"
+      "html": "<p class=\"text-mid mb-4\">px = rem × μέγεθος γραμματοσειράς ρίζας. Προεπιλεγμένο μέγεθος ρίζας = 16px.</p><p class=\"text-mid mb-4\">Αν html { font-size: 62.5% }, ρίζα = 10px, άρα 1,6rem = 16px.</p><p class=\"text-mid\">Το rem δεν σωρεύεται ποτέ. 1rem είναι πάντα το ίδιο ανεξάρτητα από το βάθος εμφώλευσης. Αυτό το κάνει πιο προβλέψιμο από το em.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>At 16px root: 0.75rem = 12px, 0.875rem = 14px, 1rem = 16px, 1.25rem = 20px, 1.5rem = 24px, 2rem = 32px.</li><li>Tailwind: text-sm = 0.875rem (14px), text-base = 1rem (16px), text-lg = 1.125rem (18px).</li><li>Minimum touch target: WCAG recommends 44×44px = 2.75rem at 16px root.</li><li>Media queries in rem: @media (min-width: 48rem) = 768px at 16px root.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Σε ρίζα 16px: 0,75rem = 12px, 0,875rem = 14px, 1rem = 16px, 1,25rem = 20px, 1,5rem = 24px, 2rem = 32px.</li><li>Tailwind: text-sm = 0,875rem (14px), text-base = 1rem (16px), text-lg = 1,125rem (18px).</li><li>Ελάχιστος στόχος αφής: το WCAG συνιστά 44×44px = 2,75rem σε ρίζα 16px.</li><li>Media queries σε rem: @media (min-width: 48rem) = 768px σε ρίζα 16px.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Reference",
+          "name": "Αναφορά",
           "values": {
-            "unit1": "Root font size",
-            "unit2": "Fixed pixel"
+            "unit1": "Μέγεθος ρίζας",
+            "unit2": "Σταθερό pixel"
           }
         },
         {
-          "name": "Compounds",
+          "name": "Σώρευση",
           "values": {
-            "unit1": "No (always root)",
-            "unit2": "No"
+            "unit1": "Όχι (πάντα ρίζα)",
+            "unit2": "Όχι"
           }
         },
         {
-          "name": "Responsive",
+          "name": "Ανταπόκριση",
           "values": {
-            "unit1": "Yes",
-            "unit2": "No"
+            "unit1": "Ναι",
+            "unit2": "Όχι"
           }
         },
         {
-          "name": "Accessibility",
+          "name": "Προσβασιμότητα",
           "values": {
-            "unit1": "Respects user settings",
-            "unit2": "Fixed size"
+            "unit1": "Σέβεται ρυθμίσεις χρήστη",
+            "unit2": "Σταθερό μέγεθος"
           }
         },
         {
-          "name": "Predictability",
+          "name": "Προβλεψιμότητα",
           "values": {
-            "unit1": "Consistent everywhere",
-            "unit2": "Always consistent"
+            "unit1": "Συνεπές παντού",
+            "unit2": "Πάντα συνεπές"
           }
         }
       ]
@@ -236,16 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Πόσα Pixel sind 1rem?",
-          "answer": "Standardmäßig 1rem = 16px. Änderbar durch Anpassung der Wurzel-Schriftgröße."
+          "question": "Πόσα pixel είναι 1rem;",
+          "answer": "Προεπιλεγμένα 1rem = 16px. Μπορείτε να το αλλάξετε προσαρμόζοντας το μέγεθος γραμματοσειράς της ρίζας."
         },
         {
-          "question": "Sollte man rem oder px verwenden?",
-          "answer": "Rem für Typografie, Abstände und Layout. Px für Rahmen, Schatten und nicht-skalierende Eigenschaften."
-        },
-        {
-          "question": "Should I use rem or px?",
-          "answer": "Use rem for typography, spacing, and layout. Use px for borders, box-shadows, and properties that should not scale."
+          "question": "Πρέπει να χρησιμοποιώ rem ή px;",
+          "answer": "Rem για τυπογραφία, αποστάσεις και διάταξη. Px για περιγράμματα, σκιές και ιδιότητες που δεν πρέπει να κλιμακώνονται."
         }
       ]
     },

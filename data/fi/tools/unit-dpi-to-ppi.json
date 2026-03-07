@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Ekrany i wyświetlacze",
+          "title": "Näytöt",
           "description": "iPhone 15 Pro: 460 PPI. Monitor 27″ 4K: 163 PPI."
         },
         {
           "icon": "RiImageLine",
-          "title": "Eksport grafik",
+          "title": "Grafiikan vienti",
           "description": "Photoshop “DPI” = PPI. 72 DPI dla web, 300 DPI dla druku."
         },
         {
           "icon": "RiQuestionLine",
-          "title": "Edukacja",
-          "description": "Zrozum różnicę między DPI (druk) a PPI (ekran)."
+          "title": "Opetus",
+          "description": "Ymmärrä ero DPI:n (tulostus) ja PPI:n (näyttö) välillä."
         }
       ]
     },
@@ -157,7 +157,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How do DPI and PPI relate?",
+      "title": "Miten DPI ja PPI liittyvät toisiinsa?",
       "html": "<p class=\"text-mid mb-4\">Numerically, DPI and PPI use the same value when specifying image resolution for print. A “300 DPI” image file is actually 300 PPI — it has 300 pixels per inch.</p><p class=\"text-mid mb-4\">The printer then uses its own DPI to reproduce each pixel. A 1200 DPI printer uses ~16 dots (4×4) to reproduce each pixel of a 300 PPI image.</p><p class=\"text-mid\">For most practical purposes, DPI and PPI are interchangeable when discussing image resolution. The distinction matters mainly in pre-press and printer calibration.</p>"
     },
     {
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Applies to",
+          "name": "Koskee",
           "values": {
-            "unit1": "Printers",
-            "unit2": "Screens and images"
+            "unit1": "Tulostimet",
+            "unit2": "Näytöt ja kuvat"
           }
         },
         {
-          "name": "Measures",
+          "name": "Mittaa",
           "values": {
-            "unit1": "Physical ink dots",
-            "unit2": "Digital pixels"
+            "unit1": "Fyysiset mustepisteet",
+            "unit2": "Digitaaliset pikselit"
           }
         },
         {
-          "name": "Typical values",
+          "name": "Tyypilliset arvot",
           "values": {
             "unit1": "600–4800 DPI",
             "unit2": "72–460 PPI"
           }
         },
         {
-          "name": "Print quality",
+          "name": "Tulostuslaatu",
           "values": {
-            "unit1": "Higher = finer detail",
-            "unit2": "300 PPI standard"
+            "unit1": "Korkeampi = tarkempi yksityiskohta",
+            "unit2": "300 PPI standardi"
           }
         },
         {
-          "name": "Common confusion",
+          "name": "Yleinen sekaannus",
           "values": {
-            "unit1": "Used for images (incorrectly)",
-            "unit2": "Correct term for images"
+            "unit1": "Käytetään kuvista (virheellisesti)",
+            "unit2": "Oikea termi kuville"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Ist DPI gleich PPI?",
-          "answer": "Nicht genau. DPI misst Druckerpunkte, PPI Bildschirm-/Bildpixel. In der Praxis sind sie für die Bildauflösung austauschbar."
+          "question": "Onko DPI sama kuin PPI?",
+          "answer": "Ei tarkalleen. DPI mittaa tulostimen pisteitä, PPI näytön/kuvan pikseleitä. Käytännössä ne ovat vaihdettavissa kuvan resoluution osalta."
         },
         {
           "question": "Tehdäänkö laskelmat paikallisesti?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
         }
       ]
     },

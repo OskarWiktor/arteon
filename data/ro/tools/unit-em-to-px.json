@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: Em în px?",
-      "html": "<p class=\"text-mid mb-4\">Die CSS-Einheit em ist relativ zur Schriftgröße des übergeordneten Elements. Bei der Standardgröße von 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Im Gegensatz zu rem (relativ zum Wurzelelement) kaskadiert em: 1,5em × 1,5em = 2,25× der Basisgröße.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Unitatea CSS em este relativă la dimensiunea fontului elementului părinte. La dimensiunea implicită de 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Spre deosebire de rem (relativ la elementul rădăcină), em se acumulează: 1,5em × 1,5em = 2,25× dimensiunea de bază.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Em în px – Arteon"
     },
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiTextSpacing",
-          "title": "Typografia",
+          "title": "Tipografie",
           "description": "Line-height 1,5 em = 150% rozmiaru czcionki rodzica."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "Przyciski",
-          "description": "Padding w em skaluje się z rozmiarem tekstu przycisku."
+          "title": "Butoane",
+          "description": "Padding-ul în em se scalează cu dimensiunea textului butonului."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Komponenty",
-          "description": "Wymiary proporcjonalne do tekstu w komponentach UI."
+          "title": "Componente",
+          "description": "Dimensiuni proporționale cu textul în componentele UI."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Dezvoltare web",
-          "description": "Breakpointy w em są odporne na zmianę bazowego font-size."
+          "description": "Breakpoint-urile în em rezistă la modificarea font-size de bază."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">px = em × parent font size. By default, the browser base font size is 16px.</p><p class=\"text-mid mb-4\">Em compounds through the DOM tree. If body is 16px and a div is 1.5em (24px), a paragraph inside at 1.5em will be 1.5 × 24 = 36px.</p><p class=\"text-mid\">For predictable sizing, consider using rem units instead — they always reference the root element font size.</p>"
+      "html": "<p class=\"text-mid mb-4\">px = em × dimensiunea fontului părinte. Implicit, dimensiunea de bază a fontului browserului este 16px.</p><p class=\"text-mid mb-4\">Em se acumulează prin arborele DOM. Dacă body este 16px și un div este 1,5em (24px), un paragraf interior la 1,5em va fi 1,5 × 24 = 36px.</p><p class=\"text-mid\">Pentru dimensionare predictibilă, luați în considerare utilizarea unităților rem — acestea fac întotdeauna referire la dimensiunea fontului elementului rădăcină.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Default browser font: 16px. 1em = 16px, 0.875em = 14px, 1.25em = 20px.</li><li>Common heading sizes: h1 = 2em (32px), h2 = 1.5em (24px), h3 = 1.17em (18.7px).</li><li>Padding/margin in em scales with font size — useful for responsive components.</li><li>62.5% trick: setting html font-size to 62.5% makes 1em = 10px for easier math.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Font implicit browser: 16px. 1em = 16px, 0,875em = 14px, 1,25em = 20px.</li><li>Dimensiuni comune titluri: h1 = 2em (32px), h2 = 1,5em (24px), h3 = 1,17em (18,7px).</li><li>Padding/margin în em se scalează cu dimensiunea fontului — util pentru componente responsive.</li><li>Trucul 62,5%: setând html font-size la 62,5%, 1em = 10px pentru calcule mai ușoare.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Reference",
+          "name": "Referință",
           "values": {
-            "unit1": "Parent font size",
-            "unit2": "Fixed pixel"
+            "unit1": "Dimensiune font părinte",
+            "unit2": "Pixel fix"
           }
         },
         {
-          "name": "Compounds",
+          "name": "Compunere",
           "values": {
-            "unit1": "Yes (nests)",
+            "unit1": "Da (se acumulează)",
             "unit2": "No"
           }
         },
         {
-          "name": "Responsive",
+          "name": "Responsiv",
           "values": {
             "unit1": "Yes",
             "unit2": "No"
           }
         },
         {
-          "name": "Accessibility",
+          "name": "Accesibilitate",
           "values": {
-            "unit1": "Respects user settings",
-            "unit2": "Fixed size"
+            "unit1": "Respectă setările utilizatorului",
+            "unit2": "Dimensiune fixă"
           }
         },
         {
-          "name": "Predictability",
+          "name": "Predictibilitate",
           "values": {
-            "unit1": "Context-dependent",
-            "unit2": "Always consistent"
+            "unit1": "Depinde de context",
+            "unit2": "Întotdeauna consistent"
           }
         }
       ]
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Câți Pixel sind 1em?",
-          "answer": "Standardmäßig 1em = 16px (Browser-Standard). Aber em ist relativ zum übergeordneten Element."
+          "question": "Câți pixeli sunt 1em?",
+          "answer": "Implicit 1em = 16px (implicit browser). Dar em este relativ la elementul părinte."
         },
         {
           "question": "Ce este der Unterschied zwischen em und rem?",
-          "answer": "em bezieht sich auf die Eltern-Schriftgröße. rem bezieht sich auf die Wurzel-Schriftgröße (html). rem ist vorhersagbarer."
+          "answer": "Em se referă la dimensiunea fontului părinte. Rem se referă la dimensiunea fontului rădăcină (html). Rem este mai predictibil."
         },
         {
-          "question": "When should I use em instead of px?",
-          "answer": "Use em for typography and spacing that should scale with font size. Use px for borders, shadows, and other properties that should stay fixed."
+          "question": "Când ar trebui să folosesc em în loc de px?",
+          "answer": "Folosiți em pentru tipografie și spațiere care trebuie să se scaleze cu dimensiunea fontului. Px pentru borduri, umbre și proprietăți care trebuie să rămână fixe."
         }
       ]
     },

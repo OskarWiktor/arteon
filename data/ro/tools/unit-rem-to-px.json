@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: Rem în px?",
-      "html": "<p class=\"text-mid mb-4\">The CSS rem unit is relative to the root element (html) font size. By default, browsers set this to 16px, so 1rem = 16px. Unlike em, rem does not compound — it always references the root.</p><p class=\"text-mid mb-4\">Rem is the recommended unit for modern responsive web design. It provides consistent, scalable sizing that respects user accessibility preferences.</p><p class=\"text-mid mb-4\">Converting rem to px helps understand the actual rendered size when designing or debugging CSS layouts.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Unitatea CSS rem este relativă la dimensiunea fontului elementului rădăcină (html). Implicit, browserele o setează la 16px, deci 1rem = 16px. Spre deosebire de em, rem nu se acumulează — face întotdeauna referire la rădăcină.</p><p class=\"text-mid mb-4\">Rem este unitatea recomandată pentru web designul responsiv modern. Oferă dimensionare consistentă și scalabilă care respectă preferințele de accesibilitate ale utilizatorului.</p><p class=\"text-mid mb-4\">Conversia rem în px ajută la înțelegerea dimensiunii reale afișate la proiectarea sau depanarea layout-urilor CSS.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Rem în px – Arteon"
     },
@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Responsywność",
-          "description": "Rem skaluje się z preferencjami użytkownika – lepsze od stałych pikseli."
+          "title": "Responsivitate",
+          "description": "Rem se scalează cu preferințele utilizatorului – mai bun decât pixelii ficși."
         },
         {
           "icon": "RiAccessibilityLine",
-          "title": "Dostępność (WCAG)",
-          "description": "Rem respektuje ustawienia rozmiaru tekstu użytkownika."
+          "title": "Accesibilitate (WCAG)",
+          "description": "Rem respectă setările de dimensiune a textului utilizatorului."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Systemy projektowe",
-          "description": "Skale spacing w rem: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
+          "title": "Sisteme de design",
+          "description": "Scale de spațiere în rem: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">px = rem × root font size. Default root font size = 16px.</p><p class=\"text-mid mb-4\">If html { font-size: 62.5% }, root = 10px, so 1.6rem = 16px.</p><p class=\"text-mid\">Rem never compounds. 1rem is always the same regardless of nesting depth. This makes it more predictable than em.</p>"
+      "html": "<p class=\"text-mid mb-4\">px = rem × dimensiunea fontului rădăcină. Dimensiunea implicită a fontului rădăcină = 16px.</p><p class=\"text-mid mb-4\">Dacă html { font-size: 62.5% }, rădăcină = 10px, deci 1,6rem = 16px.</p><p class=\"text-mid\">Rem nu se acumulează niciodată. 1rem este întotdeauna la fel, indiferent de adâncimea imbricării. Aceasta îl face mai predictibil decât em.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>At 16px root: 0.75rem = 12px, 0.875rem = 14px, 1rem = 16px, 1.25rem = 20px, 1.5rem = 24px, 2rem = 32px.</li><li>Tailwind: text-sm = 0.875rem (14px), text-base = 1rem (16px), text-lg = 1.125rem (18px).</li><li>Minimum touch target: WCAG recommends 44×44px = 2.75rem at 16px root.</li><li>Media queries in rem: @media (min-width: 48rem) = 768px at 16px root.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>La rădăcină de 16px: 0,75rem = 12px, 0,875rem = 14px, 1rem = 16px, 1,25rem = 20px, 1,5rem = 24px, 2rem = 32px.</li><li>Tailwind: text-sm = 0,875rem (14px), text-base = 1rem (16px), text-lg = 1,125rem (18px).</li><li>Țintă minimă de atingere: WCAG recomandă 44×44px = 2,75rem la rădăcină de 16px.</li><li>Media queries în rem: @media (min-width: 48rem) = 768px la rădăcină de 16px.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Reference",
+          "name": "Referință",
           "values": {
-            "unit1": "Root font size",
-            "unit2": "Fixed pixel"
+            "unit1": "Dimensiune font rădăcină",
+            "unit2": "Pixel fix"
           }
         },
         {
-          "name": "Compounds",
+          "name": "Compunere",
           "values": {
-            "unit1": "No (always root)",
+            "unit1": "Nu (întotdeauna rădăcină)",
             "unit2": "No"
           }
         },
         {
-          "name": "Responsive",
+          "name": "Responsiv",
           "values": {
             "unit1": "Yes",
             "unit2": "No"
           }
         },
         {
-          "name": "Accessibility",
+          "name": "Accesibilitate",
           "values": {
-            "unit1": "Respects user settings",
-            "unit2": "Fixed size"
+            "unit1": "Respectă setările utilizatorului",
+            "unit2": "Dimensiune fixă"
           }
         },
         {
-          "name": "Predictability",
+          "name": "Predictibilitate",
           "values": {
-            "unit1": "Consistent everywhere",
-            "unit2": "Always consistent"
+            "unit1": "Consistent peste tot",
+            "unit2": "Întotdeauna consistent"
           }
         }
       ]
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Câți Pixel sind 1rem?",
-          "answer": "Standardmäßig 1rem = 16px. Änderbar durch Anpassung der Wurzel-Schriftgröße."
+          "question": "Câți pixeli sunt 1rem?",
+          "answer": "Implicit 1rem = 16px. Modificabil prin ajustarea dimensiunii fontului rădăcină."
         },
         {
           "question": "Sollte man rem oder px verwenden?",
           "answer": "Rem für Typografie, Abstände und Layout. Px für Rahmen, Schatten und nicht-skalierende Eigenschaften."
         },
         {
-          "question": "Should I use rem or px?",
-          "answer": "Use rem for typography, spacing, and layout. Use px for borders, box-shadows, and properties that should not scale."
+          "question": "Ar trebui să folosesc rem sau px?",
+          "answer": "Folosiți rem pentru tipografie, spațiere și layout. Px pentru borduri, umbre și proprietăți care nu trebuie să se scaleze."
         }
       ]
     },

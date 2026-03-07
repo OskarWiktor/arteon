@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiTextSpacing",
-          "title": "Typografia",
-          "description": "Line-height 1,5 em = 150% rozmiaru czcionki rodzica."
+          "title": "Typography",
+          "description": "Line-height 1.5 em = 150% of the parent font size."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "Przyciski",
-          "description": "Padding w em skaluje się z rozmiarem tekstu przycisku."
+          "title": "Buttons",
+          "description": "Padding in em scales with the button's text size."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Komponenty",
-          "description": "Wymiary proporcjonalne do tekstu w komponentach UI."
+          "title": "Components",
+          "description": "Proportional dimensions relative to text in UI components."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "CSS media queries",
-          "description": "Breakpointy w em są odporne na zmianę bazowego font-size."
+          "description": "Breakpoints in em are resilient to base font-size changes."
         }
       ]
     },

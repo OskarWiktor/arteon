@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiLayoutLine",
-          "title": "Responsywne układy",
-          "description": "Sekcje pełnoekranowe: width: 100vw, height: 100vh."
+          "title": "Responsive Layouts",
+          "description": "Full-screen sections: width: 100vw, height: 100vh."
         },
         {
           "icon": "RiFontSizeLine",
           "title": "Fluid typography",
-          "description": "Tytuły skalowane: font-size: clamp(2rem, 5vw, 4rem)."
+          "description": "Scaled headings: font-size: clamp(2rem, 5vw, 4rem)."
         },
         {
           "icon": "RiSmartphoneLine",
           "title": "Mobile first",
-          "description": "Marginesy i paddingi w vw skalują się z ekranem."
+          "description": "Margins and paddings in vw scale with the screen."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "CSS debugging",
-          "description": "Sprawdź, ile px ma dany vw na konkretnym urządzeniu."
+          "description": "Check how many px a given vw value equals on a specific device."
         }
       ]
     },

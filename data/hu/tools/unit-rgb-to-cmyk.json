@@ -101,22 +101,22 @@
         {
           "icon": "RiPrinterLine",
           "title": "Nyomtatás",
-          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+          "description": "Ellenőrizze a CMYK-értékeket, mielőtt elküldi a tervet a nyomdába."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Színkezelés",
-          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+          "description": "A CMYK gamut-on belül van az RGB szín? Ellenőrizze nyomtatás előtt."
         },
         {
           "icon": "RiBookOpenLine",
-          "title": "Materiały brandingowe",
-          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+          "title": "Arculati anyagok",
+          "description": "Illessze a márkaszíneket a nyomtatáshoz: névjegykártyák, szórólapok, katalógusok."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
-          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+          "title": "Fotózás",
+          "description": "Fotók konvertálása RGB-ről CMYK-ra fotókönyv nyomtatása előtt."
         }
       ]
     },
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Model",
+          "name": "Modell",
           "values": {
-            "unit1": "Additive (light)",
-            "unit2": "Subtractive (ink)"
+            "unit1": "Additív (fény)",
+            "unit2": "Szubtraktív (tinta)"
           }
         },
         {
-          "name": "Used for",
+          "name": "Felhasználás",
           "values": {
-            "unit1": "Screens, web",
-            "unit2": "Print, packaging"
+            "unit1": "Képernyők, web",
+            "unit2": "Nyomtatás, csomagolás"
           }
         },
         {
-          "name": "Gamut",
+          "name": "Színtér",
           "values": {
-            "unit1": "Wider (more colors)",
-            "unit2": "Narrower"
+            "unit1": "Szélesebb (több szín)",
+            "unit2": "Szűkebb"
           }
         },
         {
-          "name": "Black",
+          "name": "Fekete",
           "values": {
             "unit1": "R=0, G=0, B=0",
             "unit2": "K=100%"
           }
         },
         {
-          "name": "White",
+          "name": "Fehér",
           "values": {
             "unit1": "R=255, G=255, B=255",
-            "unit2": "No ink (paper)"
+            "unit2": "Nincs tinta (papír)"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Miért sehen CMYK-Drucke anders aus?",
-          "answer": "Bildschirme strahlen Licht aus (RGB), Drucker verwenden Tinte (CMYK). Der CMYK-Farbraum ist kleiner."
+          "question": "Miért néznek ki másképp a CMYK-nyomatok?",
+          "answer": "A képernyők fényt bocsátanak ki (RGB), a nyomtatók tintát használnak (CMYK). A CMYK színtér kisebb."
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

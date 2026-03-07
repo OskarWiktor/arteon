@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Przygotowanie do druku",
-          "description": "A4 przy 300 DPI = 2 480 × 3 508 px. Plakat A3 = 3 508 × 4 961 px."
+          "title": "Print Preparation",
+          "description": "A4 at 300 DPI = 2,480 × 3,508 px. A3 poster = 3,508 × 4,961 px."
         },
         {
           "icon": "RiImageLine",
-          "title": "Grafika na stronę",
-          "description": "Baner 20 × 6 cm przy 96 DPI = 756 × 227 px."
+          "title": "Web Graphics",
+          "description": "Banner 20 × 6 cm at 96 DPI = 756 × 227 px."
         },
         {
           "icon": "RiArtboardLine",
           "title": "Social media",
-          "description": "Oblicz wymiary pikseli dla grafik o zadanym rozmiarze fizycznym."
+          "description": "Calculate pixel dimensions for graphics with a given physical size."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Fotoksiążki",
-          "description": "Przelicz wymiary stron fotoksiążki (cm) na wymogi pikseli drukarni."
+          "title": "Photo Books",
+          "description": "Convert photo book page dimensions (cm) to printer pixel requirements."
         }
       ]
     },

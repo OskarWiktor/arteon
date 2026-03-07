@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: HEX în RGB?",
-      "html": "<p class=\"text-mid mb-4\">HEX-Farben (#FF5733) und RGB (rgb(255, 87, 51)) stellen dieselben Farben in unterschiedlicher Notation dar. HEX ist in CSS und Design-Tools üblich, RGB in der Programmierung.</p><p class=\"text-mid mb-4\">Jede HEX-Farbe hat 6 Ziffern: die ersten 2 für Rot (00–FF), die nächsten 2 für Grün, die letzten 2 für Blau. RGB verwendet Dezimalwerte 0–255.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Culorile HEX (#FF5733) și RGB (rgb(255, 87, 51)) reprezintă aceeași culoare, doar în notație diferită. HEX este comun în CSS și instrumente de design, RGB în programare.</p><p class=\"text-mid mb-4\">Fiecare culoare HEX are 6 cifre: primele 2 pentru roșu (00–FF), următoarele 2 pentru verde, ultimele 2 pentru albastru. RGB folosește valori zecimale 0–255.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "HEX în RGB – Arteon"
     },
@@ -101,22 +101,22 @@
         {
           "icon": "RiCodeSSlashLine",
           "title": "Dezvoltare web",
-          "description": "Konwertuj <code>#3B82F6</code> na <code>rgb(59, 130, 246)</code> w arkuszach stylów."
+          "description": "Convertiți <code>#3B82F6</code> în <code>rgb(59, 130, 246)</code> în foile de stil."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Managementul culorilor",
-          "description": "Eksport kolorów z Figma/Sketch na wartości CSS."
+          "description": "Exportul culorilor din Figma/Sketch în valori CSS."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Dostępność",
-          "description": "Obliczanie kontrastu WCAG wymaga wartości RGB."
+          "title": "Accesibilitate",
+          "description": "Calculul contrastului WCAG necesită valori RGB."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Palety kolorów",
-          "description": "Modyfikowanie poszczególnych kanałów (R, G, B) do tworzenia wariantów."
+          "title": "Palete de culori",
+          "description": "Modificarea canalelor individuale (R, G, B) pentru crearea variantelor."
         }
       ]
     },
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = black. #FFFFFF = rgb(255,255,255) = white.</li><li>#FF0000 = pure red. #00FF00 = pure green. #0000FF = pure blue.</li><li>For opacity: use rgba(255, 87, 51, 0.5) — HEX doesn't natively support alpha (except 8-digit HEX: #FF573380).</li><li>CSS supports both: color: #FF5733 and color: rgb(255, 87, 51) are identical.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = negru. #FFFFFF = rgb(255,255,255) = alb.</li><li>#FF0000 = pure red. #00FF00 = pure green. #0000FF = pure blue.</li><li>For opacity: use rgba(255, 87, 51, 0.5) — HEX doesn't natively support alpha (except 8-digit HEX: #FF573380).</li><li>CSS supports both: color: #FF5733 and color: rgb(255, 87, 51) are identical.</li></ul>"
     },
     {
       "type": "gap",
@@ -197,31 +197,31 @@
           }
         },
         {
-          "name": "Values",
+          "name": "Valori",
           "values": {
             "unit1": "00–FF (hex)",
             "unit2": "0–255 (decimal)"
           }
         },
         {
-          "name": "Opacity",
+          "name": "Opacitate",
           "values": {
             "unit1": "8-digit (#RRGGBBAA)",
             "unit2": "rgba(R, G, B, A)"
           }
         },
         {
-          "name": "Shorthand",
+          "name": "Prescurtare",
           "values": {
             "unit1": "#RGB (3 digits)",
-            "unit2": "No shorthand"
+            "unit2": "Fără prescurtare"
           }
         },
         {
-          "name": "Used in",
+          "name": "Utilizare",
           "values": {
-            "unit1": "CSS, design tools",
-            "unit2": "CSS, programming"
+            "unit1": "CSS, instrumente de design",
+            "unit2": "CSS, programare"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Wie rechnet man HEX in RGB um?",
-          "answer": "Rechnen Sie jedes Hex-Paar in Dezimal um. #FF5733: FF=255, 57=87, 33=51 → rgb(255, 87, 51)."
+          "question": "Cum se convertește HEX în RGB?",
+          "answer": "Convertiți fiecare pereche hex în zecimal. #FF5733: FF=255, 57=87, 33=51 → rgb(255, 87, 51)."
         },
         {
           "question": "Calculele se fac local?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Da. Toate calculele se efectuează în browserul dumneavoastră."
         }
       ]
     },

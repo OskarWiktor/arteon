@@ -101,22 +101,22 @@
         {
           "icon": "RiPrinterLine",
           "title": "Tulostus",
-          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+          "description": "Tarkista CMYK-arvot ennen suunnitelman lähettämistä painoon."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Värienhallinta",
-          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+          "description": "Onko RGB-väri CMYK-skaalan sisällä? Tarkista ennen tulostusta."
         },
         {
           "icon": "RiBookOpenLine",
-          "title": "Materiały brandingowe",
-          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+          "title": "Brändimateriaalit",
+          "description": "Sovita brändivärit tulostukseen: käyntikortit, esitteet, luettelot."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
-          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+          "title": "Valokuvaus",
+          "description": "Valokuvien muuntaminen RGB:stä CMYK:ksi ennen valokuvakirjojen tulostusta."
         }
       ]
     },
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Model",
+          "name": "Malli",
           "values": {
-            "unit1": "Additive (light)",
-            "unit2": "Subtractive (ink)"
+            "unit1": "Additiivinen (valo)",
+            "unit2": "Subtraktiivinen (muste)"
           }
         },
         {
-          "name": "Used for",
+          "name": "Käyttö",
           "values": {
-            "unit1": "Screens, web",
-            "unit2": "Print, packaging"
+            "unit1": "Näytöt, web",
+            "unit2": "Tulostus, pakkaus"
           }
         },
         {
-          "name": "Gamut",
+          "name": "Väriavaruus",
           "values": {
-            "unit1": "Wider (more colors)",
-            "unit2": "Narrower"
+            "unit1": "Laajempi (enemmän värejä)",
+            "unit2": "Kapeampi"
           }
         },
         {
-          "name": "Black",
+          "name": "Musta",
           "values": {
             "unit1": "R=0, G=0, B=0",
             "unit2": "K=100%"
           }
         },
         {
-          "name": "White",
+          "name": "Valkoinen",
           "values": {
             "unit1": "R=255, G=255, B=255",
-            "unit2": "No ink (paper)"
+            "unit2": "Ei mustetta (paperi)"
           }
         }
       ]
@@ -237,11 +237,11 @@
       "items": [
         {
           "question": "Miksi sehen CMYK-Drucke anders aus?",
-          "answer": "Bildschirme strahlen Licht aus (RGB), Drucker verwenden Tinte (CMYK). Der CMYK-Farbraum ist kleiner."
+          "answer": "Näytöt säteilevät valoa (RGB), tulostimet käyttävät mustetta (CMYK). CMYK-väriavaruus on pienempi."
         },
         {
           "question": "Tehdäänkö laskelmat paikallisesti?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
         }
       ]
     },

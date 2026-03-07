@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Ekrany i wyświetlacze",
+          "title": "Képernyők",
           "description": "iPhone 15 Pro: 460 PPI. Monitor 27″ 4K: 163 PPI."
         },
         {
           "icon": "RiImageLine",
-          "title": "Eksport grafik",
+          "title": "Grafika exportálás",
           "description": "Photoshop “DPI” = PPI. 72 DPI dla web, 300 DPI dla druku."
         },
         {
           "icon": "RiQuestionLine",
-          "title": "Edukacja",
-          "description": "Zrozum różnicę między DPI (druk) a PPI (ekran)."
+          "title": "Oktatás",
+          "description": "Értse meg a különbséget a DPI (nyomtatás) és a PPI (képernyő) között."
         }
       ]
     },
@@ -157,7 +157,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How do DPI and PPI relate?",
+      "title": "Hogyan kapcsolódik a DPI és a PPI?",
       "html": "<p class=\"text-mid mb-4\">Numerically, DPI and PPI use the same value when specifying image resolution for print. A “300 DPI” image file is actually 300 PPI — it has 300 pixels per inch.</p><p class=\"text-mid mb-4\">The printer then uses its own DPI to reproduce each pixel. A 1200 DPI printer uses ~16 dots (4×4) to reproduce each pixel of a 300 PPI image.</p><p class=\"text-mid\">For most practical purposes, DPI and PPI are interchangeable when discussing image resolution. The distinction matters mainly in pre-press and printer calibration.</p>"
     },
     {
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Applies to",
+          "name": "Alkalmazás",
           "values": {
-            "unit1": "Printers",
-            "unit2": "Screens and images"
+            "unit1": "Nyomtatók",
+            "unit2": "Képernyők és képek"
           }
         },
         {
-          "name": "Measures",
+          "name": "Méri",
           "values": {
-            "unit1": "Physical ink dots",
-            "unit2": "Digital pixels"
+            "unit1": "Fizikai tintapontok",
+            "unit2": "Digitális pixelek"
           }
         },
         {
-          "name": "Typical values",
+          "name": "Tipikus értékek",
           "values": {
             "unit1": "600–4800 DPI",
             "unit2": "72–460 PPI"
           }
         },
         {
-          "name": "Print quality",
+          "name": "Nyomtatási minőség",
           "values": {
-            "unit1": "Higher = finer detail",
-            "unit2": "300 PPI standard"
+            "unit1": "Magasabb = finomabb részletek",
+            "unit2": "300 PPI szabvány"
           }
         },
         {
-          "name": "Common confusion",
+          "name": "Gyakori tévhit",
           "values": {
-            "unit1": "Used for images (incorrectly)",
-            "unit2": "Correct term for images"
+            "unit1": "Képekhez használják (helytelenül)",
+            "unit2": "Helyes kifejezés képekre"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Ist DPI gleich PPI?",
-          "answer": "Nicht genau. DPI misst Druckerpunkte, PPI Bildschirm-/Bildpixel. In der Praxis sind sie für die Bildauflösung austauschbar."
+          "question": "Ugyanaz a DPI és a PPI?",
+          "answer": "Nem pontosan. A DPI nyomtatópontokat mér, a PPI képernyő-/képpixeleket. A gyakorlatban a képfelbontásnál felcserélhetők."
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

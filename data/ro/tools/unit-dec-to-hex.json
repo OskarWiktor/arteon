@@ -101,22 +101,22 @@
         {
           "icon": "RiPaletteLine",
           "title": "Managementul culorilor",
-          "description": "#FF0000 = 255 (czerwony), #00FF00 = 255 (zielony)."
+          "description": "#FF0000 = 255 (roșu), #00FF00 = 255 (verde)."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Dezvoltare web",
-          "description": "Adresy pamięci, bajty, kody znaków Unicode."
+          "description": "Adrese de memorie, octeți, coduri de caractere Unicode."
         },
         {
           "icon": "RiWifiLine",
           "title": "Internet",
-          "description": "Adresy MAC, IPv6, protokoły sieciowe."
+          "description": "Adrese MAC, IPv6, protocoale de rețea."
         },
         {
           "icon": "RiCpuLine",
-          "title": "Debugowanie",
-          "description": "Hex dump pamięci, analiza plików binarnych."
+          "title": "Depanare",
+          "description": "Hex dump memorie, analiza fișierelor binare."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">Repeatedly divide by 16 and record remainders (using A–F for 10–15). Read remainders bottom-to-top.</p><p class=\"text-mid mb-4\">Example: 255 ÷ 16 = 15 R15 → F, 15 ÷ 16 = 0 R15 → F. Result: FF.</p><p class=\"text-mid\">Each hex digit = 4 bits. Two hex digits = 1 byte (0–255). Four hex digits = 2 bytes (0–65,535).</p>"
+      "html": "<p class=\"text-mid mb-4\">Împărțiți repetat la 16 și notați resturile (folosind A–F pentru 10–15). Citiți resturile de jos în sus.</p><p class=\"text-mid mb-4\">Exemplu: 255 ÷ 16 = 15 R15 → F, 15 ÷ 16 = 0 R15 → F. Rezultat: FF.</p><p class=\"text-mid\">O cifră hex = 4 biți. Două cifre hex = 1 octet (0–255). Patru cifre hex = 2 octeți (0–65.535).</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Hex digits: 0123456789ABCDEF. A=10, B=11, C=12, D=13, E=14, F=15.</li><li>1 byte: 00–FF (0–255). 2 bytes: 0000–FFFF (0–65,535).</li><li>Common prefixes: 0x (programming), # (CSS colors), U+ (Unicode).</li><li>MAC address: 6 bytes in hex, e.g. AA:BB:CC:DD:EE:FF.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Hex digits: 0123456789ABCDEF. A=10, B=11, C=12, D=13, E=14, F=15.</li><li>1 octet: 00–FF (0–255). 2 octeți: 0000–FFFF (0–65.535).</li><li>Prefixe comune: 0x (programare), # (culori CSS), U+ (Unicode).</li><li>Adresă MAC: 6 octeți în hex, ex. AA:BB:CC:DD:EE:FF.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Digits",
+          "name": "Cifre",
           "values": {
             "unit1": "0–9",
             "unit2": "0–9, A–F"
           }
         },
         {
-          "name": "Example: 255",
+          "name": "Exemplu: 255",
           "values": {
             "unit1": "255",
             "unit2": "FF"
           }
         },
         {
-          "name": "Example: 1000",
+          "name": "Exemplu: 1000",
           "values": {
             "unit1": "1000",
             "unit2": "3E8"
           }
         },
         {
-          "name": "Used for",
+          "name": "Utilizare",
           "values": {
-            "unit1": "Everyday math",
-            "unit2": "Colors, addresses, data"
+            "unit1": "Matematică zilnică",
+            "unit2": "Culori, adrese, date"
           }
         },
         {
-          "name": "Compactness",
+          "name": "Compactitate",
           "values": {
             "unit1": "Standard",
-            "unit2": "More compact than binary"
+            "unit2": "Mai compact decât binar"
           }
         }
       ]
@@ -237,15 +237,15 @@
       "items": [
         {
           "question": "Ce este 255 in Hex?",
-          "answer": "255 = FF in Hexadezimal. Maximum eines Bytes."
+          "answer": "255 = FF în hexadecimal. Maximul unui octet."
         },
         {
           "question": "Was bedeutet 0x?",
-          "answer": "0x ist ein Präfix für Hexadezimalzahlen in den meisten Sprachen (C, JavaScript, Python)."
+          "answer": "0x este un prefix pentru numere hexadecimale în majoritatea limbajelor (C, JavaScript, Python)."
         },
         {
           "question": "Calculele se fac local?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Da. Toate calculele se efectuează în browserul dumneavoastră."
         }
       ]
     },

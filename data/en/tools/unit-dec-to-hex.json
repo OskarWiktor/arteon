@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPaletteLine",
-          "title": "Kolory CSS",
-          "description": "#FF0000 = 255 (czerwony), #00FF00 = 255 (zielony)."
+          "title": "CSS Colors",
+          "description": "#FF0000 = 255 (red), #00FF00 = 255 (green)."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "Programowanie",
-          "description": "Adresy pamięci, bajty, kody znaków Unicode."
+          "title": "Programming",
+          "description": "Memory addresses, bytes, Unicode character codes."
         },
         {
           "icon": "RiWifiLine",
-          "title": "Sieci",
-          "description": "Adresy MAC, IPv6, protokoły sieciowe."
+          "title": "Networking",
+          "description": "MAC addresses, IPv6, network protocols."
         },
         {
           "icon": "RiCpuLine",
-          "title": "Debugowanie",
-          "description": "Hex dump pamięci, analiza plików binarnych."
+          "title": "Debugging",
+          "description": "Memory hex dumps, binary file analysis."
         }
       ]
     },

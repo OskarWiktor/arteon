@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: Pt px-re?",
-      "html": "<p class=\"text-mid mb-4\">Points (pt) are a typographic unit used in print design: 1 pt = 1/72 inch. Pixels (px) are screen units. At the standard 96 PPI screen resolution: 1 pt = 1.333 px (96/72).</p><p class=\"text-mid mb-4\">This conversion is essential when translating print designs to web, setting CSS font sizes from print specifications, and understanding the relationship between print and screen typography.</p><p class=\"text-mid mb-4\">Common sizes: 12 pt = 16 px (browser default), 10 pt = 13.3 px, 14 pt = 18.7 px, 18 pt = 24 px, 24 pt = 32 px.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">A pont (pt) egy tipográfiai egység a nyomtatott tervezésben: 1 pt = 1/72 hüvelyk. A pixelek (px) képernyőegységek. A szabványos 96 PPI képernyőfelbontásnál: 1 pt = 1,333 px (96/72).</p><p class=\"text-mid mb-4\">Ez az átváltás nélkülözhetetlen nyomtatott tervek webre adaptálásakor, CSS betűméretek megadásakor nyomtatási specifikációkból, és a nyomtatási és képernyős tipográfia kapcsolatának megértéséhez.</p><p class=\"text-mid mb-4\">Gyakori méretek: 12 pt = 16 px (böngésző alapértelmezés), 10 pt = 13,3 px, 14 pt = 18,7 px, 18 pt = 24 px, 24 pt = 32 px.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Pt px-re – Arteon"
     },
@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Dokumenty",
-          "description": "Konwersja rozmiarów z Word/InDesign na wartości pikselowe."
+          "title": "Dokumentumok",
+          "description": "Word/InDesign méretek konvertálása pixel értékekre."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Webfejlesztés",
-          "description": "Przeliczanie pt na px przy kodowaniu styli czcionek."
+          "description": "Pt átváltása px-re betűstílusok kódolásakor."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Nyomtatás",
-          "description": "Dopasowanie wielkości tekstu do wyświetlania na ekranie."
+          "description": "Szövegméretek illesztése a képernyős megjelenítéshez."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">1 point = 1/72 inch. At 96 PPI (standard Windows/web): 1 pt = 96/72 = 1.333 px. At 72 PPI (old Mac): 1 pt = 1 px.</p><p class=\"text-mid mb-4\">The formula: px = pt × PPI / 72. At 96 PPI: px = pt × 1.333.</p><p class=\"text-mid\">CSS defines 1 px as 1/96 of an inch (at 96 DPI). On high-DPI screens, 1 CSS px may be multiple device pixels.</p>"
+      "html": "<p class=\"text-mid mb-4\">1 pont = 1/72 hüvelyk. 96 PPI-nál (szabványos Windows/web): 1 pt = 96/72 = 1,333 px. 72 PPI-nál (régi Mac): 1 pt = 1 px.</p><p class=\"text-mid mb-4\">A képlet: px = pt × PPI / 72. 96 PPI-nál: px = pt × 1,333.</p><p class=\"text-mid\">A CSS 1 px-t 1/96 hüvelykként definiálja (96 DPI-nál). Nagy felbontású képernyőkön 1 CSS px több eszköz pixel lehet.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Browser default: 12 pt = 16 px = 1 rem.</li><li>Common conversions: 8 pt = 10.7 px, 10 pt = 13.3 px, 11 pt = 14.7 px, 12 pt = 16 px, 14 pt = 18.7 px.</li><li>Word default body: 11 pt = 14.7 px. Google Docs: 11 pt.</li><li>Minimum readable: 9 pt = 12 px on screen. Print can be smaller (6–7 pt fine print).</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Böngésző alapértelmezés: 12 pt = 16 px = 1 rem.</li><li>Gyakori átváltások: 8 pt = 10,7 px, 10 pt = 13,3 px, 11 pt = 14,7 px, 12 pt = 16 px, 14 pt = 18,7 px.</li><li>Word alapértelmezés: 11 pt = 14,7 px. Google Docs: 11 pt.</li><li>Minimum olvasható: 9 pt = 12 px képernyőn. Nyomtatásban kisebb is lehet (6–7 pt apró betűs).</li></ul>"
     },
     {
       "type": "gap",
@@ -190,17 +190,17 @@
       ],
       "features": [
         {
-          "name": "Definition",
+          "name": "Definíció",
           "values": {
             "unit1": "1/72 inch",
             "unit2": "1/96 inch (CSS)"
           }
         },
         {
-          "name": "Used in",
+          "name": "Használat",
           "values": {
-            "unit1": "Print, Word, PDF",
-            "unit2": "Web, CSS, screens"
+            "unit1": "Nyomtatás, Word, PDF",
+            "unit2": "Web, CSS, képernyők"
           }
         },
         {
@@ -211,14 +211,14 @@
           }
         },
         {
-          "name": "Body text",
+          "name": "Törzsszöveg",
           "values": {
             "unit1": "10–12 pt",
             "unit2": "14–18 px"
           }
         },
         {
-          "name": "Heading",
+          "name": "Címsor",
           "values": {
             "unit1": "18–24 pt",
             "unit2": "24–32 px"
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Hány Pixel sind 12 pt?",
-          "answer": "12 pt = 16 px bei 96 PPI. Das a szabványos-Schriftgröße der Browser."
+          "question": "Hány pixel 12 pt?",
+          "answer": "12 pt = 16 px 96 PPI-nál. Ez a böngészők szabványos betűmérete."
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: Mm în px?",
-      "html": "<p class=\"text-mid mb-4\">Bei Präzisionsarbeiten werden Maße in Millimetern angegeben. Für digitale Bilder: Pixel = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">Bei 300 DPI: 1 mm = 11,81 Pixel, 85 mm (Visitenkartenbreite) = 1.004 Pixel.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">În lucrările de precizie dimensiunile se dau în milimetri. Pentru imagini digitale: Pixel = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">La 300 DPI: 1 mm = 11,81 pixeli, 85 mm (lățimea cărții de vizită) = 1.004 pixeli.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Mm în px – Arteon"
     },
@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Ulotki",
+          "title": "Pliante",
           "description": "Ulotka DL 99 × 210 mm = 1 169 × 2 480 px przy 300 DPI."
         },
         {
           "icon": "RiCropLine",
-          "title": "Spady (bleed)",
+          "title": "Bleed",
           "description": "Oblicz dodatkowe piksele na 3–5 mm spadów wymaganych przez drukarnię."
         },
         {
           "icon": "RiRulerLine",
           "title": "Proiectare și măsurare",
-          "description": "Precyzyjne wymiary etykiet, naklejek i opakowaniach w mm → px."
+          "description": "Dimensiuni precise pentru etichete, autocolante și ambalaje în mm → px."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">The formula is: pixels = mm × DPI / 25.4. Since 1 inch = 25.4 mm exactly.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 mm = 11.811 pixels. At 600 DPI: 1 mm = 23.622 pixels.</p><p class=\"text-mid\">For bleed area: add 3 mm (standard) to each edge. A 100 × 50 mm design with 3 mm bleed = 106 × 56 mm = 1,252 × 661 px at 300 DPI.</p>"
+      "html": "<p class=\"text-mid mb-4\">Formula este: pixeli = mm × DPI / 25,4. Deoarece 1 inch = exact 25,4 mm.</p><p class=\"text-mid mb-4\">La 300 DPI: 1 mm = 11,811 pixeli. La 600 DPI: 1 mm = 23,622 pixeli.</p><p class=\"text-mid\">Pentru zona de bleed: adăugați 3 mm (standard) la fiecare margine. Un design de 100 × 50 mm cu 3 mm bleed = 106 × 56 mm = 1.252 × 661 px la 300 DPI.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Business card: 85 × 55 mm + 3 mm bleed = 91 × 61 mm = 1,075 × 720 px at 300 DPI.</li><li>Standard label: 50 × 25 mm at 300 DPI = 591 × 295 px.</li><li>Wine label: 90 × 120 mm at 300 DPI = 1,063 × 1,417 px.</li><li>Minimum text: 8pt font needs at least 150 DPI to be readable.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Carte de vizită: 85 × 55 mm + 3 mm bleed = 91 × 61 mm = 1.075 × 720 px la 300 DPI.</li><li>Etichetă: 50 × 25 mm la 300 DPI = 591 × 295 px.</li><li>Etichetă vin: 90 × 120 mm la 300 DPI = 1.063 × 1.417 px.</li><li>Text minim: font 8pt necesită cel puțin 150 DPI pentru lizibilitate.</li></ul>"
     },
     {
       "type": "gap",
@@ -175,7 +175,7 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "MM to pixels at various DPI",
+      "title": "MM în pixeli la diferite DPI",
       "featureLabel": "Proprietate",
       "plans": [
         {
@@ -204,24 +204,24 @@
           }
         },
         {
-          "name": "85 mm (card)",
+          "name": "85 mm (carte vizită)",
           "values": {
             "unit1": "1,004 px",
             "unit2": "2,008 px"
           }
         },
         {
-          "name": "Use case",
+          "name": "Caz de utilizare",
           "values": {
-            "unit1": "Standard print",
-            "unit2": "Fine art / medical"
+            "unit1": "Tipărire standard",
+            "unit2": "Artă / medical"
           }
         },
         {
-          "name": "File size",
+          "name": "Dimensiune fișier",
           "values": {
             "unit1": "Standard",
-            "unit2": "4× larger"
+            "unit2": "4× mai mare"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Câți Pixel sind 1 mm bei 300 DPI?",
-          "answer": "1 mm bei 300 DPI = 11,811 Pixel."
+          "question": "Câți pixeli sunt 1 mm la 300 DPI?",
+          "answer": "1 mm la 300 DPI = 11,811 pixeli."
         },
         {
           "question": "Calculele se fac local?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Da. Toate calculele se efectuează în browserul dumneavoastră."
         }
       ]
     },

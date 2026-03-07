@@ -101,22 +101,22 @@
         {
           "icon": "RiPaletteLine",
           "title": "Värienhallinta",
-          "description": "Tworzenie wariantów: zmieniaj L (jasność) przy stałym H i S."
+          "description": "Varianttien luominen: muuta L (valoisuus) pitäen H ja S vakiona."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web-kehitys",
-          "description": "<code>hsl(217, 91%, 60%)</code> – intuicyjny zapis kolorów."
+          "description": "<code>hsl(217, 91%, 60%)</code> — intuitiivinen värimerkintä."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Tryb ciemny",
-          "description": "Zmiana L z 95% na 10% tworzy wariant ciemnego motywu."
+          "title": "Tumma tila",
+          "description": "L:n muuttaminen 95 %:sta 10 %:iin luo tumman teeman variantin."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Projektowanie",
-          "description": "HSL ułatwia tworzenie spójnych palet: obróć H o 120° = kolor komplementarny."
+          "title": "Suunnittelu",
+          "description": "HSL helpottaa yhtenäisten palettien luomista: käännä H 120° = komplementtiväri."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten muunnos toimii?",
-      "html": "<p class=\"text-mid mb-4\">RGB auf 0–1 normalisieren. Max und Min finden. L = (max + min) / 2.</p><p class=\"text-mid\">HSL ist vollständig umkehrbar — zurück zu RGB ergibt exakt dieselbe Farbe.</p>"
+      "html": "<p class=\"text-mid mb-4\">Normalisoi RGB arvoon 0–1. Etsi Max ja Min. L = (max + min) / 2.</p><p class=\"text-mid\">HSL on täysin palautettavissa — takaisin RGB:ksi muuntaminen tuottaa täsmälleen saman värin.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Käytännön vinkkejä",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Red: hsl(0, 100%, 50%). Green: hsl(120, 100%, 50%). Blue: hsl(240, 100%, 50%).</li><li>Complementary color: add 180° to hue. Red (0°) → Cyan (180°).</li><li>Lighten: increase L%. Darken: decrease L%. L=0% = black, L=100% = white.</li><li>Desaturate: decrease S%. S=0% = grayscale. S=100% = pure color.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Punainen: hsl(0, 100%, 50%). Vihreä: hsl(120, 100%, 50%). Sininen: hsl(240, 100%, 50%).</li><li>Vastaväri: lisää 180° sävyyn. Punainen (0°) → Syaani (180°).</li><li>Vaalenna: lisää L%. Tummenna: vähennä L%. L=0% = musta, L=100% = valkoinen.</li><li>Poista kylläisyys: vähennä S%. S=0% = harmaasävy. S=100% = puhdas väri.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,35 +190,35 @@
       ],
       "features": [
         {
-          "name": "Model",
+          "name": "Malli",
           "values": {
-            "unit1": "Additive channels",
-            "unit2": "Hue/Saturation/Lightness"
+            "unit1": "Additiiviset kanavat",
+            "unit2": "Sävy/Kylläisyys/Kirkkaus"
           }
         },
         {
-          "name": "Values",
+          "name": "Arvot",
           "values": {
             "unit1": "0–255 per channel",
             "unit2": "H: 0–360°, S/L: 0–100%"
           }
         },
         {
-          "name": "Intuitive",
+          "name": "Intuitiivinen",
           "values": {
-            "unit1": "Hard to predict colors",
-            "unit2": "Easy to adjust colors"
+            "unit1": "Vaikea ennustaa värejä",
+            "unit2": "Helppo säätää värejä"
           }
         },
         {
-          "name": "Color theory",
+          "name": "Väriteoria",
           "values": {
-            "unit1": "Not color-wheel based",
-            "unit2": "Maps to color wheel"
+            "unit1": "Ei perustu väriympyrään",
+            "unit2": "Vastaa väriympyrää"
           }
         },
         {
-          "name": "CSS support",
+          "name": "CSS-tuki",
           "values": {
             "unit1": "rgb(R, G, B)",
             "unit2": "hsl(H, S%, L%)"
@@ -241,7 +241,7 @@
         },
         {
           "question": "Tehdäänkö laskelmat paikallisesti?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
         }
       ]
     },

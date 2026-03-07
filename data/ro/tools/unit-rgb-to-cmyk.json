@@ -101,22 +101,22 @@
         {
           "icon": "RiPrinterLine",
           "title": "Tipărire",
-          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+          "description": "Verificați valorile CMYK înainte de a trimite designul la tipografie."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Managementul culorilor",
-          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+          "description": "Culoarea RGB se încadrează în gama CMYK? Verificați înainte de tipărire."
         },
         {
           "icon": "RiBookOpenLine",
-          "title": "Materiały brandingowe",
-          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+          "title": "Materiale de brand",
+          "description": "Potriviți culorile brandului pentru tipar: cărți de vizită, pliante, cataloage."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
-          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+          "title": "Fotografie",
+          "description": "Conversia fotografiilor din RGB în CMYK înainte de tipărirea fotocărților."
         }
       ]
     },
@@ -192,36 +192,36 @@
         {
           "name": "Model",
           "values": {
-            "unit1": "Additive (light)",
-            "unit2": "Subtractive (ink)"
+            "unit1": "Aditiv (lumină)",
+            "unit2": "Substractiv (cerneală)"
           }
         },
         {
-          "name": "Used for",
+          "name": "Utilizare",
           "values": {
-            "unit1": "Screens, web",
-            "unit2": "Print, packaging"
+            "unit1": "Ecrane, web",
+            "unit2": "Tipărire, ambalare"
           }
         },
         {
           "name": "Gamut",
           "values": {
-            "unit1": "Wider (more colors)",
-            "unit2": "Narrower"
+            "unit1": "Mai larg (mai multe culori)",
+            "unit2": "Mai îngust"
           }
         },
         {
-          "name": "Black",
+          "name": "Negru",
           "values": {
             "unit1": "R=0, G=0, B=0",
             "unit2": "K=100%"
           }
         },
         {
-          "name": "White",
+          "name": "Alb",
           "values": {
             "unit1": "R=255, G=255, B=255",
-            "unit2": "No ink (paper)"
+            "unit2": "Fără cerneală (hârtie)"
           }
         }
       ]
@@ -237,11 +237,11 @@
       "items": [
         {
           "question": "De ce sehen CMYK-Drucke anders aus?",
-          "answer": "Bildschirme strahlen Licht aus (RGB), Drucker verwenden Tinte (CMYK). Der CMYK-Farbraum ist kleiner."
+          "answer": "Ecranele emit lumină (RGB), imprimantele folosesc cerneală (CMYK). Spațiul de culoare CMYK este mai mic."
         },
         {
           "question": "Calculele se fac local?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Da. Toate calculele se efectuează în browserul dumneavoastră."
         }
       ]
     },

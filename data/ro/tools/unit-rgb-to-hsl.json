@@ -101,22 +101,22 @@
         {
           "icon": "RiPaletteLine",
           "title": "Managementul culorilor",
-          "description": "Tworzenie wariantów: zmieniaj L (jasność) przy stałym H i S."
+          "description": "Crearea variantelor: modificați L (luminozitate) cu H și S constante."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Dezvoltare web",
-          "description": "<code>hsl(217, 91%, 60%)</code> – intuicyjny zapis kolorów."
+          "description": "<code>hsl(217, 91%, 60%)</code> — notație intuitivă a culorilor."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Tryb ciemny",
-          "description": "Zmiana L z 95% na 10% tworzy wariant ciemnego motywu."
+          "title": "Mod întunecat",
+          "description": "Schimbarea L de la 95% la 10% creează varianta temei întunecate."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Projektowanie",
-          "description": "HSL ułatwia tworzenie spójnych palet: obróć H o 120° = kolor komplementarny."
+          "title": "Design",
+          "description": "HSL facilitează crearea paletelor consistente: rotiți H cu 120° = culoare complementară."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">RGB auf 0–1 normalisieren. Max und Min finden. L = (max + min) / 2.</p><p class=\"text-mid\">HSL ist vollständig umkehrbar — zurück zu RGB ergibt exakt dieselbe Farbe.</p>"
+      "html": "<p class=\"text-mid mb-4\">Normalizați RGB la 0–1. Găsiți Max și Min. L = (max + min) / 2.</p><p class=\"text-mid\">HSL este complet reversibil — conversia înapoi la RGB produce exact aceeași culoare.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Red: hsl(0, 100%, 50%). Green: hsl(120, 100%, 50%). Blue: hsl(240, 100%, 50%).</li><li>Complementary color: add 180° to hue. Red (0°) → Cyan (180°).</li><li>Lighten: increase L%. Darken: decrease L%. L=0% = black, L=100% = white.</li><li>Desaturate: decrease S%. S=0% = grayscale. S=100% = pure color.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Roșu: hsl(0, 100%, 50%). Verde: hsl(120, 100%, 50%). Albastru: hsl(240, 100%, 50%).</li><li>Culoare complementară: adăugați 180° la nuanță. Roșu (0°) → Cyan (180°).</li><li>Luminare: creșteți L%. Întunecare: reduceți L%. L=0% = negru, L=100% = alb.</li><li>Desaturare: reduceți S%. S=0% = tonuri de gri. S=100% = culoare pură.</li></ul>"
     },
     {
       "type": "gap",
@@ -192,33 +192,33 @@
         {
           "name": "Model",
           "values": {
-            "unit1": "Additive channels",
-            "unit2": "Hue/Saturation/Lightness"
+            "unit1": "Canale aditive",
+            "unit2": "Nuanță/Saturație/Luminozitate"
           }
         },
         {
-          "name": "Values",
+          "name": "Valori",
           "values": {
             "unit1": "0–255 per channel",
             "unit2": "H: 0–360°, S/L: 0–100%"
           }
         },
         {
-          "name": "Intuitive",
+          "name": "Intuitiv",
           "values": {
-            "unit1": "Hard to predict colors",
-            "unit2": "Easy to adjust colors"
+            "unit1": "Greu de prezis culorile",
+            "unit2": "Ușor de ajustat culorile"
           }
         },
         {
-          "name": "Color theory",
+          "name": "Teoria culorii",
           "values": {
-            "unit1": "Not color-wheel based",
-            "unit2": "Maps to color wheel"
+            "unit1": "Nu se bazează pe roata culorilor",
+            "unit2": "Se mapează pe roata culorilor"
           }
         },
         {
-          "name": "CSS support",
+          "name": "Suport CSS",
           "values": {
             "unit1": "rgb(R, G, B)",
             "unit2": "hsl(H, S%, L%)"
@@ -241,7 +241,7 @@
         },
         {
           "question": "Calculele se fac local?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Da. Toate calculele se efectuează în browserul dumneavoastră."
         }
       ]
     },

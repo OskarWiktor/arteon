@@ -101,22 +101,22 @@
         {
           "icon": "RiCodeSSlashLine",
           "title": "CSS / HTML",
-          "description": "Konwertuj <code>#3B82F6</code> na <code>rgb(59, 130, 246)</code> w arkuszach stylów."
+          "description": "Convert <code>#3B82F6</code> to <code>rgb(59, 130, 246)</code> in your stylesheets."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Projektowanie UI",
-          "description": "Eksport kolorów z Figma/Sketch na wartości CSS."
+          "title": "UI Design",
+          "description": "Export colors from Figma/Sketch to CSS values."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Dostępność",
-          "description": "Obliczanie kontrastu WCAG wymaga wartości RGB."
+          "title": "Accessibility",
+          "description": "WCAG contrast calculations require RGB values."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Palety kolorów",
-          "description": "Modyfikowanie poszczególnych kanałów (R, G, B) do tworzenia wariantów."
+          "title": "Color Palettes",
+          "description": "Modify individual channels (R, G, B) to create color variants."
         }
       ]
     },

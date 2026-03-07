@@ -101,22 +101,22 @@
         {
           "icon": "RiPaletteLine",
           "title": "Színkezelés",
-          "description": "#FF0000 = 255 (czerwony), #00FF00 = 255 (zielony)."
+          "description": "#FF0000 = 255 (piros), #00FF00 = 255 (zöld)."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Webfejlesztés",
-          "description": "Adresy pamięci, bajty, kody znaków Unicode."
+          "description": "Memóriacímek, bájtok, Unicode karakterkódok."
         },
         {
           "icon": "RiWifiLine",
           "title": "Internet",
-          "description": "Adresy MAC, IPv6, protokoły sieciowe."
+          "description": "MAC-címek, IPv6, hálózati protokollok."
         },
         {
           "icon": "RiCpuLine",
-          "title": "Debugowanie",
-          "description": "Hex dump pamięci, analiza plików binarnych."
+          "title": "Hibakeresés",
+          "description": "Memória hex dump, bináris fájlok elemzése."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">Repeatedly divide by 16 and record remainders (using A–F for 10–15). Read remainders bottom-to-top.</p><p class=\"text-mid mb-4\">Example: 255 ÷ 16 = 15 R15 → F, 15 ÷ 16 = 0 R15 → F. Result: FF.</p><p class=\"text-mid\">Each hex digit = 4 bits. Two hex digits = 1 byte (0–255). Four hex digits = 2 bytes (0–65,535).</p>"
+      "html": "<p class=\"text-mid mb-4\">Ismételten ossza el 16-tal és jegyezze fel a maradékokat (A–F-et használva 10–15-re). Olvassa a maradékokat alulról felfelé.</p><p class=\"text-mid mb-4\">Példa: 255 ÷ 16 = 15 M15 → F, 15 ÷ 16 = 0 M15 → F. Eredmény: FF.</p><p class=\"text-mid\">Egy hex számjegy = 4 bit. Két hex számjegy = 1 bájt (0–255). Négy hex számjegy = 2 bájt (0–65.535).</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Hex digits: 0123456789ABCDEF. A=10, B=11, C=12, D=13, E=14, F=15.</li><li>1 byte: 00–FF (0–255). 2 bytes: 0000–FFFF (0–65,535).</li><li>Common prefixes: 0x (programming), # (CSS colors), U+ (Unicode).</li><li>MAC address: 6 bytes in hex, e.g. AA:BB:CC:DD:EE:FF.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Hex digits: 0123456789ABCDEF. A=10, B=11, C=12, D=13, E=14, F=15.</li><li>1 bájt: 00–FF (0–255). 2 bájt: 0000–FFFF (0–65.535).</li><li>Gyakori előtagok: 0x (programozás), # (CSS színek), U+ (Unicode).</li><li>MAC cím: 6 bájt hexben, pl. AA:BB:CC:DD:EE:FF.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Digits",
+          "name": "Számjegyek",
           "values": {
             "unit1": "0–9",
             "unit2": "0–9, A–F"
           }
         },
         {
-          "name": "Example: 255",
+          "name": "Példa: 255",
           "values": {
             "unit1": "255",
             "unit2": "FF"
           }
         },
         {
-          "name": "Example: 1000",
+          "name": "Példa: 1000",
           "values": {
             "unit1": "1000",
             "unit2": "3E8"
           }
         },
         {
-          "name": "Used for",
+          "name": "Felhasználás",
           "values": {
-            "unit1": "Everyday math",
-            "unit2": "Colors, addresses, data"
+            "unit1": "Mindennapi matematika",
+            "unit2": "Színek, címek, adatok"
           }
         },
         {
-          "name": "Compactness",
+          "name": "Tömörség",
           "values": {
-            "unit1": "Standard",
-            "unit2": "More compact than binary"
+            "unit1": "Szabványos",
+            "unit2": "Tömörebb a binárisnál"
           }
         }
       ]
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Mi az a 255 in Hex?",
-          "answer": "255 = FF in Hexadezimal. Maximum eines Bytes."
+          "question": "Mi a 255 hexadecimálisban?",
+          "answer": "255 = FF hexadecimálisban. Egy bájt maximuma."
         },
         {
           "question": "Was bedeutet 0x?",
-          "answer": "0x ist ein Präfix für Hexadezimalzahlen in den meisten Sprachen (C, JavaScript, Python)."
+          "answer": "0x egy előtag hexadecimális számokhoz a legtöbb nyelvben (C, JavaScript, Python)."
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

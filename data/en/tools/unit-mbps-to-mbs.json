@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiDownloadLine",
-          "title": "Szacowanie pobierania",
-          "description": "100 Mbps = plik 1 GB w ok. 80 sekund."
+          "title": "Download Estimation",
+          "description": "100 Mbps = a 1 GB file in about 80 seconds."
         },
         {
           "icon": "RiWifiLine",
-          "title": "Wybór pakietu",
-          "description": "Porównaj oferty operatorów w realnych MB/s."
+          "title": "Plan Comparison",
+          "description": "Compare ISP offers in real MB/s."
         },
         {
           "icon": "RiVideoLine",
           "title": "Streaming",
-          "description": "Netflix 4K wymaga 25 Mbps = 3,1 MB/s."
+          "description": "Netflix 4K requires 25 Mbps = 3.1 MB/s."
         },
         {
           "icon": "RiServerLine",
           "title": "Hosting",
-          "description": "Transfer serwera: 1 TB/miesiąc = ile Mbps potrzebujesz?"
+          "description": "Server bandwidth: 1 TB/month = how many Mbps do you need?"
         }
       ]
     },

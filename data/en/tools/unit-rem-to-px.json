@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiCodeSSlashLine",
-          "title": "Kodowanie CSS",
-          "description": "Przeliczanie makiet (px) na rem: padding 24 px = 1,5 rem."
+          "title": "CSS Development",
+          "description": "Convert mockups (px) to rem: padding 24 px = 1.5 rem."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Responsywność",
-          "description": "Rem skaluje się z preferencjami użytkownika – lepsze od stałych pikseli."
+          "title": "Responsiveness",
+          "description": "Rem scales with user preferences — better than fixed pixels."
         },
         {
           "icon": "RiAccessibilityLine",
-          "title": "Dostępność (WCAG)",
-          "description": "Rem respektuje ustawienia rozmiaru tekstu użytkownika."
+          "title": "Accessibility (WCAG)",
+          "description": "Rem respects the user's text size settings."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Systemy projektowe",
-          "description": "Skale spacing w rem: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
+          "title": "Design Systems",
+          "description": "Spacing scales in rem: 0.25 / 0.5 / 1 / 1.5 / 2 / 3 rem."
         }
       ]
     },

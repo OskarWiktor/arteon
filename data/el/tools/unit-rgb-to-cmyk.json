@@ -101,22 +101,22 @@
         {
           "icon": "RiPrinterLine",
           "title": "Εκτύπωση",
-          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+          "description": "Ελέγξτε τις τιμές CMYK πριν στείλετε το σχέδιο στο τυπογραφείο."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Διαχείριση χρωμάτων",
-          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+          "description": "Βρίσκεται το χρώμα RGB εντός του εύρους CMYK; Ελέγξτε πριν την εκτύπωση."
         },
         {
           "icon": "RiBookOpenLine",
-          "title": "Materiały brandingowe",
-          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+          "title": "Εταιρική ταυτότητα",
+          "description": "Αντιστοιχίστε εταιρικά χρώματα για εκτύπωση: κάρτες, φυλλάδια, κατάλογοι."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
-          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+          "title": "Φωτογραφία",
+          "description": "Μετατροπή φωτογραφιών από RGB σε CMYK πριν την εκτύπωση φωτοβιβλίων."
         }
       ]
     },
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Model",
+          "name": "Μοντέλο",
           "values": {
-            "unit1": "Additive (light)",
-            "unit2": "Subtractive (ink)"
+            "unit1": "Προσθετικό (φως)",
+            "unit2": "Αφαιρετικό (μελάνι)"
           }
         },
         {
-          "name": "Used for",
+          "name": "Χρήση",
           "values": {
-            "unit1": "Screens, web",
-            "unit2": "Print, packaging"
+            "unit1": "Οθόνες, web",
+            "unit2": "Εκτύπωση, συσκευασία"
           }
         },
         {
-          "name": "Gamut",
+          "name": "Γκάμα",
           "values": {
-            "unit1": "Wider (more colors)",
-            "unit2": "Narrower"
+            "unit1": "Ευρύτερο (περισσότερα χρώματα)",
+            "unit2": "Στενότερο"
           }
         },
         {
-          "name": "Black",
+          "name": "Μαύρο",
           "values": {
             "unit1": "R=0, G=0, B=0",
             "unit2": "K=100%"
           }
         },
         {
-          "name": "White",
+          "name": "Λευκό",
           "values": {
             "unit1": "R=255, G=255, B=255",
-            "unit2": "No ink (paper)"
+            "unit2": "Χωρίς μελάνι (χαρτί)"
           }
         }
       ]
@@ -237,11 +237,11 @@
       "items": [
         {
           "question": "Γιατί sehen CMYK-Drucke anders aus?",
-          "answer": "Bildschirme strahlen Licht aus (RGB), Drucker verwenden Tinte (CMYK). Der CMYK-Farbraum ist kleiner."
+          "answer": "Οι οθόνες εκπέμπουν φως (RGB), οι εκτυπωτές χρησιμοποιούν μελάνι (CMYK). Ο χρωματικός χώρος CMYK είναι μικρότερος."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },

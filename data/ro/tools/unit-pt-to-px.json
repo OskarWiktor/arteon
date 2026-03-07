@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: Pt în px?",
-      "html": "<p class=\"text-mid mb-4\">Points (pt) are a typographic unit used in print design: 1 pt = 1/72 inch. Pixels (px) are screen units. At the standard 96 PPI screen resolution: 1 pt = 1.333 px (96/72).</p><p class=\"text-mid mb-4\">This conversion is essential when translating print designs to web, setting CSS font sizes from print specifications, and understanding the relationship between print and screen typography.</p><p class=\"text-mid mb-4\">Common sizes: 12 pt = 16 px (browser default), 10 pt = 13.3 px, 14 pt = 18.7 px, 18 pt = 24 px, 24 pt = 32 px.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Punctele (pt) sunt o unitate tipografică folosită în designul de tipărire: 1 pt = 1/72 inch. Pixelii (px) sunt unități de ecran. La rezoluția standard de 96 PPI: 1 pt = 1,333 px (96/72).</p><p class=\"text-mid mb-4\">Această conversie este esențială pentru adaptarea designurilor de tipărire la web, setarea dimensiunilor fonturilor CSS din specificații de tipărire și înțelegerea relației dintre tipografia de tipărire și cea de ecran.</p><p class=\"text-mid mb-4\">Dimensiuni comune: 12 pt = 16 px (implicit browser), 10 pt = 13,3 px, 14 pt = 18,7 px, 18 pt = 24 px, 24 pt = 32 px.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Pt în px – Arteon"
     },
@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Dokumenty",
-          "description": "Konwersja rozmiarów z Word/InDesign na wartości pikselowe."
+          "title": "Documente",
+          "description": "Conversia dimensiunilor din Word/InDesign în valori pixeli."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Dezvoltare web",
-          "description": "Przeliczanie pt na px przy kodowaniu styli czcionek."
+          "description": "Conversia pt în px la codarea stilurilor de font."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Tipărire",
-          "description": "Dopasowanie wielkości tekstu do wyświetlania na ekranie."
+          "description": "Potrivirea dimensiunilor textului pentru afișarea pe ecran."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">1 point = 1/72 inch. At 96 PPI (standard Windows/web): 1 pt = 96/72 = 1.333 px. At 72 PPI (old Mac): 1 pt = 1 px.</p><p class=\"text-mid mb-4\">The formula: px = pt × PPI / 72. At 96 PPI: px = pt × 1.333.</p><p class=\"text-mid\">CSS defines 1 px as 1/96 of an inch (at 96 DPI). On high-DPI screens, 1 CSS px may be multiple device pixels.</p>"
+      "html": "<p class=\"text-mid mb-4\">1 punct = 1/72 inch. La 96 PPI (standard Windows/web): 1 pt = 96/72 = 1,333 px. La 72 PPI (Mac vechi): 1 pt = 1 px.</p><p class=\"text-mid mb-4\">Formula: px = pt × PPI / 72. La 96 PPI: px = pt × 1,333.</p><p class=\"text-mid\">CSS definește 1 px ca 1/96 dintr-un inch (la 96 DPI). Pe ecrane cu rezoluție mare, 1 CSS px poate fi mai mulți pixeli de dispozitiv.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Browser default: 12 pt = 16 px = 1 rem.</li><li>Common conversions: 8 pt = 10.7 px, 10 pt = 13.3 px, 11 pt = 14.7 px, 12 pt = 16 px, 14 pt = 18.7 px.</li><li>Word default body: 11 pt = 14.7 px. Google Docs: 11 pt.</li><li>Minimum readable: 9 pt = 12 px on screen. Print can be smaller (6–7 pt fine print).</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Implicit browser: 12 pt = 16 px = 1 rem.</li><li>Conversii comune: 8 pt = 10,7 px, 10 pt = 13,3 px, 11 pt = 14,7 px, 12 pt = 16 px, 14 pt = 18,7 px.</li><li>Implicit Word: 11 pt = 14,7 px. Google Docs: 11 pt.</li><li>Minim lizibil: 9 pt = 12 px pe ecran. Tipărirea poate fi mai mică (6–7 pt caractere mici).</li></ul>"
     },
     {
       "type": "gap",
@@ -190,17 +190,17 @@
       ],
       "features": [
         {
-          "name": "Definition",
+          "name": "Definiție",
           "values": {
             "unit1": "1/72 inch",
             "unit2": "1/96 inch (CSS)"
           }
         },
         {
-          "name": "Used in",
+          "name": "Utilizare",
           "values": {
-            "unit1": "Print, Word, PDF",
-            "unit2": "Web, CSS, screens"
+            "unit1": "Tipărire, Word, PDF",
+            "unit2": "Web, CSS, ecrane"
           }
         },
         {
@@ -211,14 +211,14 @@
           }
         },
         {
-          "name": "Body text",
+          "name": "Text corp",
           "values": {
             "unit1": "10–12 pt",
             "unit2": "14–18 px"
           }
         },
         {
-          "name": "Heading",
+          "name": "Titlu",
           "values": {
             "unit1": "18–24 pt",
             "unit2": "24–32 px"
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Câți Pixel sind 12 pt?",
-          "answer": "12 pt = 16 px bei 96 PPI. Das este unitatea standardă-Schriftgröße der Browser."
+          "question": "Câți pixeli sunt 12 pt?",
+          "answer": "12 pt = 16 px la 96 PPI. Aceasta este dimensiunea standard a fontului browserelor."
         },
         {
           "question": "Calculele se fac local?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Da. Toate calculele se efectuează în browserul dumneavoastră."
         }
       ]
     },

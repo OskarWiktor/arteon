@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPaletteLine",
-          "title": "Palety kolorów",
-          "description": "Tworzenie wariantów: zmieniaj L (jasność) przy stałym H i S."
+          "title": "Color Palettes",
+          "description": "Create variants: adjust L (lightness) while keeping H and S constant."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "CSS",
-          "description": "<code>hsl(217, 91%, 60%)</code> – intuicyjny zapis kolorów."
+          "description": "<code>hsl(217, 91%, 60%)</code> — intuitive color notation."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Tryb ciemny",
-          "description": "Zmiana L z 95% na 10% tworzy wariant ciemnego motywu."
+          "title": "Dark Mode",
+          "description": "Change L from 95% to 10% to create a dark theme variant."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Projektowanie",
-          "description": "HSL ułatwia tworzenie spójnych palet: obróć H o 120° = kolor komplementarny."
+          "title": "Design",
+          "description": "HSL makes it easy to build consistent palettes: rotate H by 120° = complementary color."
         }
       ]
     },

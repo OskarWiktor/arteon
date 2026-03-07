@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiHardDriveLine",
-          "title": "Pojemność dysków",
-          "description": "Dysk 1 TB (producent) = 931 GB w systemie binarnym."
+          "title": "Disk Capacity",
+          "description": "A 1 TB drive (manufacturer) = 931 GB in the binary system."
         },
         {
           "icon": "RiUploadCloudLine",
-          "title": "Limity przesyłania",
-          "description": "Załącznik e-mail: 25 MB = 26 214 400 B."
+          "title": "Upload Limits",
+          "description": "Email attachment: 25 MB = 26,214,400 B."
         },
         {
           "icon": "RiServerLine",
-          "title": "Serwery",
-          "description": "Planowanie pojemności: RAM, dyski, transfer."
+          "title": "Servers",
+          "description": "Capacity planning: RAM, storage, bandwidth."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Pamięć urządzeń",
-          "description": "Telefon 128 GB = 137 438 953 472 B."
+          "title": "Device Storage",
+          "description": "Phone 128 GB = 137,438,953,472 B."
         }
       ]
     },

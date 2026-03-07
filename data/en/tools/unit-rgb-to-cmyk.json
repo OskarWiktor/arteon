@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Przygotowanie do druku",
-          "description": "Sprawdź wartości CMYK przed wysłaniem projektu do drukarni."
+          "title": "Print Preparation",
+          "description": "Check CMYK values before sending a design to the printer."
         },
         {
           "icon": "RiPaletteLine",
-          "title": "Weryfikacja kolorów",
-          "description": "Czy kolor RGB mieści się w zakresie CMYK? Sprawdź przed drukiem."
+          "title": "Color Verification",
+          "description": "Is the RGB color within the CMYK gamut? Check before printing."
         },
         {
           "icon": "RiBookOpenLine",
-          "title": "Materiały brandingowe",
-          "description": "Dopasuj kolory firmowe do druku: wizytówki, ulotki, katalogi."
+          "title": "Branding Materials",
+          "description": "Match brand colors for print: business cards, flyers, catalogs."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
-          "description": "Konwersja zdjęć z RGB na CMYK przed drukiem fotoksiążek."
+          "title": "Photography",
+          "description": "Convert photos from RGB to CMYK before printing photo books."
         }
       ]
     },

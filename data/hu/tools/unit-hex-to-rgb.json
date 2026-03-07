@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: HEX RGB-re?",
-      "html": "<p class=\"text-mid mb-4\">HEX-Farben (#FF5733) und RGB (rgb(255, 87, 51)) stellen dieselben Farben in unterschiedlicher Notation dar. HEX ist in CSS und Design-Tools üblich, RGB in der Programmierung.</p><p class=\"text-mid mb-4\">Jede HEX-Farbe hat 6 Ziffern: die ersten 2 für Rot (00–FF), die nächsten 2 für Grün, die letzten 2 für Blau. RGB verwendet Dezimalwerte 0–255.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">A HEX-színek (#FF5733) és az RGB (rgb(255, 87, 51)) ugyanazt a színt képviselik, csak eltérő jelölésben. A HEX a CSS-ben és a tervezőeszközökben elterjedt, az RGB a programozásban.</p><p class=\"text-mid mb-4\">Minden HEX-szín 6 számjegyből áll: az első 2 a pirosért (00–FF), a következő 2 a zöldért, az utolsó 2 a kékért. Az RGB decimális értékeket használ 0–255.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "HEX RGB-re – Arteon"
     },
@@ -101,22 +101,22 @@
         {
           "icon": "RiCodeSSlashLine",
           "title": "Webfejlesztés",
-          "description": "Konwertuj <code>#3B82F6</code> na <code>rgb(59, 130, 246)</code> w arkuszach stylów."
+          "description": "Konvertálja a <code>#3B82F6</code>-ot <code>rgb(59, 130, 246)</code>-ra a stíluslapokban."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Színkezelés",
-          "description": "Eksport kolorów z Figma/Sketch na wartości CSS."
+          "description": "Színek exportálása Figma/Sketch-ből CSS-értékekbe."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Dostępność",
-          "description": "Obliczanie kontrastu WCAG wymaga wartości RGB."
+          "title": "Akadálymentesítés",
+          "description": "A WCAG kontrasztszámítás RGB-értékeket igényel."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Palety kolorów",
-          "description": "Modyfikowanie poszczególnych kanałów (R, G, B) do tworzenia wariantów."
+          "title": "Színpaletták",
+          "description": "Egyes csatornák (R, G, B) módosítása változatok létrehozásához."
         }
       ]
     },
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = black. #FFFFFF = rgb(255,255,255) = white.</li><li>#FF0000 = pure red. #00FF00 = pure green. #0000FF = pure blue.</li><li>For opacity: use rgba(255, 87, 51, 0.5) — HEX doesn't natively support alpha (except 8-digit HEX: #FF573380).</li><li>CSS supports both: color: #FF5733 and color: rgb(255, 87, 51) are identical.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = fekete. #FFFFFF = rgb(255,255,255) = fehér.</li><li>#FF0000 = pure red. #00FF00 = pure green. #0000FF = pure blue.</li><li>For opacity: use rgba(255, 87, 51, 0.5) — HEX doesn't natively support alpha (except 8-digit HEX: #FF573380).</li><li>CSS supports both: color: #FF5733 and color: rgb(255, 87, 51) are identical.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Format",
+          "name": "Formátum",
           "values": {
             "unit1": "#RRGGBB",
             "unit2": "rgb(R, G, B)"
           }
         },
         {
-          "name": "Values",
+          "name": "Értékek",
           "values": {
             "unit1": "00–FF (hex)",
             "unit2": "0–255 (decimal)"
           }
         },
         {
-          "name": "Opacity",
+          "name": "Átlátszatlanság",
           "values": {
             "unit1": "8-digit (#RRGGBBAA)",
             "unit2": "rgba(R, G, B, A)"
           }
         },
         {
-          "name": "Shorthand",
+          "name": "Rövidítés",
           "values": {
             "unit1": "#RGB (3 digits)",
-            "unit2": "No shorthand"
+            "unit2": "Nincs rövidítés"
           }
         },
         {
-          "name": "Used in",
+          "name": "Használat",
           "values": {
-            "unit1": "CSS, design tools",
-            "unit2": "CSS, programming"
+            "unit1": "CSS, tervezőeszközök",
+            "unit2": "CSS, programozás"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Wie rechnet man HEX in RGB um?",
-          "answer": "Rechnen Sie jedes Hex-Paar in Dezimal um. #FF5733: FF=255, 57=87, 33=51 → rgb(255, 87, 51)."
+          "question": "Hogyan lehet HEX-et RGB-re váltani?",
+          "answer": "Váltsa át az egyes hex-párokat decimálisra. #FF5733: FF=255, 57=87, 33=51 → rgb(255, 87, 51)."
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: Rem px-re?",
-      "html": "<p class=\"text-mid mb-4\">The CSS rem unit is relative to the root element (html) font size. By default, browsers set this to 16px, so 1rem = 16px. Unlike em, rem does not compound — it always references the root.</p><p class=\"text-mid mb-4\">Rem is the recommended unit for modern responsive web design. It provides consistent, scalable sizing that respects user accessibility preferences.</p><p class=\"text-mid mb-4\">Converting rem to px helps understand the actual rendered size when designing or debugging CSS layouts.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">A CSS rem egység a gyökér elem (html) betűméretéhez viszonyított. Alapértelmezés szerint a böngészők 16px-re állítják, így 1rem = 16px. Az em-mel ellentétben a rem nem halmozódik — mindig a gyökérre hivatkozik.</p><p class=\"text-mid mb-4\">A rem az ajánlott egység a modern reszponzív webtervezéshez. Egységes, skálázható méretezést biztosít, amely tiszteletben tartja a felhasználó akadálymentesítési beállításait.</p><p class=\"text-mid mb-4\">A rem px-re konvertálása segít megérteni a tényleges megjelenített méretet CSS elrendezések tervezésekor vagy hibakeresésekor.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Rem px-re – Arteon"
     },
@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Responsywność",
-          "description": "Rem skaluje się z preferencjami użytkownika – lepsze od stałych pikseli."
+          "title": "Reszponzivitás",
+          "description": "A rem a felhasználói beállításokkal együtt skálázódik – jobb, mint a fix pixelek."
         },
         {
           "icon": "RiAccessibilityLine",
-          "title": "Dostępność (WCAG)",
-          "description": "Rem respektuje ustawienia rozmiaru tekstu użytkownika."
+          "title": "Akadálymentesítés (WCAG)",
+          "description": "A rem tiszteletben tartja a felhasználó szövegméret-beállításait."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Systemy projektowe",
-          "description": "Skale spacing w rem: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
+          "title": "Tervezési rendszerek",
+          "description": "Térköz-skálák rem-ben: 0,25 / 0,5 / 1 / 1,5 / 2 / 3 rem."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">px = rem × root font size. Default root font size = 16px.</p><p class=\"text-mid mb-4\">If html { font-size: 62.5% }, root = 10px, so 1.6rem = 16px.</p><p class=\"text-mid\">Rem never compounds. 1rem is always the same regardless of nesting depth. This makes it more predictable than em.</p>"
+      "html": "<p class=\"text-mid mb-4\">px = rem × gyökér betűméret. Alapértelmezett gyökér betűméret = 16px.</p><p class=\"text-mid mb-4\">Ha html { font-size: 62.5% }, gyökér = 10px, tehát 1,6rem = 16px.</p><p class=\"text-mid\">A rem soha nem halmozódik. 1rem mindig ugyanaz, függetlenül a beágyazási mélységtől. Ez kiszámíthatóbbá teszi az em-nél.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>At 16px root: 0.75rem = 12px, 0.875rem = 14px, 1rem = 16px, 1.25rem = 20px, 1.5rem = 24px, 2rem = 32px.</li><li>Tailwind: text-sm = 0.875rem (14px), text-base = 1rem (16px), text-lg = 1.125rem (18px).</li><li>Minimum touch target: WCAG recommends 44×44px = 2.75rem at 16px root.</li><li>Media queries in rem: @media (min-width: 48rem) = 768px at 16px root.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>16px gyökérnél: 0,75rem = 12px, 0,875rem = 14px, 1rem = 16px, 1,25rem = 20px, 1,5rem = 24px, 2rem = 32px.</li><li>Tailwind: text-sm = 0,875rem (14px), text-base = 1rem (16px), text-lg = 1,125rem (18px).</li><li>Minimális érintési cél: a WCAG 44×44px-t javasol = 2,75rem 16px gyökérnél.</li><li>Media query rem-ben: @media (min-width: 48rem) = 768px 16px gyökérnél.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Reference",
+          "name": "Hivatkozás",
           "values": {
-            "unit1": "Root font size",
-            "unit2": "Fixed pixel"
+            "unit1": "Gyökér betűméret",
+            "unit2": "Fix pixel"
           }
         },
         {
-          "name": "Compounds",
+          "name": "Halmozódás",
           "values": {
-            "unit1": "No (always root)",
+            "unit1": "Nem (mindig gyökér)",
             "unit2": "No"
           }
         },
         {
-          "name": "Responsive",
+          "name": "Reszponzív",
           "values": {
             "unit1": "Yes",
             "unit2": "No"
           }
         },
         {
-          "name": "Accessibility",
+          "name": "Akadálymentesség",
           "values": {
-            "unit1": "Respects user settings",
-            "unit2": "Fixed size"
+            "unit1": "Tiszteletben tartja a felhasználói beállításokat",
+            "unit2": "Fix méret"
           }
         },
         {
-          "name": "Predictability",
+          "name": "Kiszámíthatóság",
           "values": {
-            "unit1": "Consistent everywhere",
-            "unit2": "Always consistent"
+            "unit1": "Mindenhol egységes",
+            "unit2": "Mindig egységes"
           }
         }
       ]
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Hány Pixel sind 1rem?",
-          "answer": "Standardmäßig 1rem = 16px. Änderbar durch Anpassung der Wurzel-Schriftgröße."
+          "question": "Hány pixel 1rem?",
+          "answer": "Alapértelmezés szerint 1rem = 16px. Módosítható a gyökér betűméret beállításával."
         },
         {
-          "question": "Sollte man rem oder px verwenden?",
-          "answer": "Rem für Typografie, Abstände und Layout. Px für Rahmen, Schatten und nicht-skalierende Eigenschaften."
+          "question": "Rem-et vagy px-et használjak?",
+          "answer": "Rem a tipográfiához, térközökhöz és elrendezéshez. Px a keretekhez, árnyékokhoz és nem skálázandó tulajdonságokhoz."
         },
         {
-          "question": "Should I use rem or px?",
-          "answer": "Use rem for typography, spacing, and layout. Use px for borders, box-shadows, and properties that should not scale."
+          "question": "Rem-et vagy px-et használjak?",
+          "answer": "Rem a tipográfiához, térközökhöz és elrendezéshez. Px a keretekhez, árnyékokhoz és nem skálázandó tulajdonságokhoz."
         }
       ]
     },

@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Druk US",
-          "description": "Letter 8,5 × 11″ przy 300 DPI = 2 550 × 3 300 px."
+          "title": "US Print",
+          "description": "Letter 8.5 × 11″ at 300 DPI = 2,550 × 3,300 px."
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Monitory",
-          "description": "Oblicz PPI monitora: 27″ 4K (3840px) = 163 PPI."
+          "title": "Monitors",
+          "description": "Calculate monitor PPI: 27″ 4K (3840 px) = 163 PPI."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
-          "description": "Wydruk zdjęcia 4 × 6″ przy 300 DPI = 1 200 × 1 800 px."
+          "title": "Photography",
+          "description": "Print a 4 × 6″ photo at 300 DPI = 1,200 × 1,800 px."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "CSS",
-          "description": "W CSS 1 in = 96 px (definicja CSS)."
+          "description": "In CSS 1 in = 96 px (CSS specification)."
         }
       ]
     },

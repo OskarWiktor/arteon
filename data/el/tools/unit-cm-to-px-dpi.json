@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Cm σε px?",
-      "html": "<p class=\"text-mid mb-4\">Im Druckdesign werden Maße in Zentimetern angegeben, digitale Bilder jedoch in Pixeln. Die μετατροπή hängt von der DPI-Auflösung ab: Pixel = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Standard-Druckauflösung 300 DPI: 10 cm = 1.181 Pixel, A4-Breite (21 cm) = 2.480 Pixel.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Στον σχεδιασμό εκτύπωσης οι διαστάσεις δίνονται σε εκατοστά, αλλά οι ψηφιακές εικόνες μετρούνται σε pixel. Η μετατροπή εξαρτάται από την ανάλυση DPI: Pixel = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Τυπική ανάλυση εκτύπωσης 300 DPI: 10 cm = 1.181 pixel, πλάτος A4 (21 cm) = 2.480 pixel.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Cm σε px – Arteon"
     },
@@ -101,22 +101,22 @@
         {
           "icon": "RiPrinterLine",
           "title": "Εκτύπωση",
-          "description": "A4 przy 300 DPI = 2 480 × 3 508 px. Plakat A3 = 3 508 × 4 961 px."
+          "description": "A4 σε 300 DPI = 2.480 × 3.508 px. Αφίσα A3 = 3.508 × 4.961 px."
         },
         {
           "icon": "RiImageLine",
-          "title": "Grafika na stronę",
-          "description": "Baner 20 × 6 cm przy 96 DPI = 756 × 227 px."
+          "title": "Γραφικά ιστοσελίδας",
+          "description": "Banner 20 × 6 cm σε 96 DPI = 756 × 227 px."
         },
         {
           "icon": "RiArtboardLine",
-          "title": "Social media",
-          "description": "Oblicz wymiary pikseli dla grafik o zadanym rozmiarze fizycznym."
+          "title": "Κοινωνικά μέσα",
+          "description": "Υπολογίστε διαστάσεις pixel για γραφικά με συγκεκριμένο φυσικό μέγεθος."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Fotoksiążki",
-          "description": "Μετατρέψτε τις διαστάσεις σελίδων φωτοβιβλίου (cm) σε απαιτήσεις pixel του τυπογραφείου."
+          "title": "Φωτοβιβλία",
+          "description": "Μετατρέψτε διαστάσεις σελίδων φωτοβιβλίου (cm) σε απαιτήσεις pixel του τυπογραφείου."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">Formel: Pixel = cm × DPI / 2,54. Bei 300 DPI: 1 cm = 118,11 Pixel.</p><p class=\"text-mid\">Mehr DPI = mehr Pixel pro cm = schärferer Druck. 300 DPI ist der professionelle Standard.</p>"
+      "html": "<p class=\"text-mid mb-4\">Τύπος: Pixel = cm × DPI / 2,54. Στα 300 DPI: 1 cm = 118,11 pixel.</p><p class=\"text-mid\">Περισσότερα DPI = περισσότερα pixel ανά cm = πιο ευκρινής εκτύπωση. 300 DPI είναι το επαγγελματικό πρότυπο.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>300 DPI (print quality): A4 = 2,480 × 3,508 px, A3 = 3,508 × 4,961 px.</li><li>150 DPI (large format): A2 poster = 2,480 × 3,508 px.</li><li>72 DPI (screen): 10 cm = 283 px, 20 cm = 567 px.</li><li>12 MP camera (4,000 × 3,000 px) prints up to 33.9 × 25.4 cm at 300 DPI.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>300 DPI (ποιότητα εκτύπωσης): A4 = 2.480 × 3.508 px, A3 = 3.508 × 4.961 px.</li><li>150 DPI (μεγάλο φορμά): Αφίσα A2 = 2.480 × 3.508 px.</li><li>72 DPI (οθόνη): 10 cm = 283 px, 20 cm = 567 px.</li><li>Κάμερα 12 MP (4.000 × 3.000 px) εκτυπώνει έως 33,9 × 25,4 cm στα 300 DPI.</li></ul>"
     },
     {
       "type": "gap",
@@ -175,7 +175,7 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "Common DPI resolutions",
+      "title": "Συνηθισμένες αναλύσεις DPI",
       "featureLabel": "Ιδιότητα",
       "plans": [
         {
@@ -197,31 +197,31 @@
           }
         },
         {
-          "name": "A4 width (21 cm)",
+          "name": "Πλάτος A4 (21 cm)",
           "values": {
             "unit1": "2,480 px",
             "unit2": "595 px"
           }
         },
         {
-          "name": "A4 height (29.7 cm)",
+          "name": "Ύψος A4 (29,7 cm)",
           "values": {
             "unit1": "3,508 px",
             "unit2": "842 px"
           }
         },
         {
-          "name": "Use case",
+          "name": "Χρήση",
           "values": {
-            "unit1": "Professional print",
-            "unit2": "Web graphics"
+            "unit1": "Επαγγελματική εκτύπωση",
+            "unit2": "Γραφικά web"
           }
         },
         {
-          "name": "Quality",
+          "name": "Ποιότητα",
           "values": {
-            "unit1": "Sharp at any size",
-            "unit2": "Screen-only"
+            "unit1": "Ευκρινής σε κάθε μέγεθος",
+            "unit2": "Μόνο για οθόνη"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Πόσα Pixel sind 1 cm bei 300 DPI?",
-          "answer": "1 cm bei 300 DPI = 118,11 Pixel."
+          "question": "Πόσα pixel είναι 1 cm στα 300 DPI;",
+          "answer": "1 cm στα 300 DPI = 118,11 pixel."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },

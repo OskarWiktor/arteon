@@ -101,22 +101,22 @@
         {
           "icon": "RiPaletteLine",
           "title": "Värienhallinta",
-          "description": "#FF0000 = 255 (czerwony), #00FF00 = 255 (zielony)."
+          "description": "#FF0000 = 255 (punainen), #00FF00 = 255 (vihreä)."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web-kehitys",
-          "description": "Adresy pamięci, bajty, kody znaków Unicode."
+          "description": "Muistiosoitteet, tavut, Unicode-merkkikoodit."
         },
         {
           "icon": "RiWifiLine",
           "title": "Internet",
-          "description": "Adresy MAC, IPv6, protokoły sieciowe."
+          "description": "MAC-osoitteet, IPv6, verkkoprotokollat."
         },
         {
           "icon": "RiCpuLine",
-          "title": "Debugowanie",
-          "description": "Hex dump pamięci, analiza plików binarnych."
+          "title": "Virheenkorjaus",
+          "description": "Muistin hex-dump, binääritiedostojen analyysi."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Miten muunnos toimii?",
-      "html": "<p class=\"text-mid mb-4\">Repeatedly divide by 16 and record remainders (using A–F for 10–15). Read remainders bottom-to-top.</p><p class=\"text-mid mb-4\">Example: 255 ÷ 16 = 15 R15 → F, 15 ÷ 16 = 0 R15 → F. Result: FF.</p><p class=\"text-mid\">Each hex digit = 4 bits. Two hex digits = 1 byte (0–255). Four hex digits = 2 bytes (0–65,535).</p>"
+      "html": "<p class=\"text-mid mb-4\">Jaa toistuvasti 16:lla ja merkitse jakojäännökset (käyttäen A–F arvoille 10–15). Lue jäännökset alhaalta ylöspäin.</p><p class=\"text-mid mb-4\">Esimerkki: 255 ÷ 16 = 15 J15 → F, 15 ÷ 16 = 0 J15 → F. Tulos: FF.</p><p class=\"text-mid\">Yksi hex-numero = 4 bittiä. Kaksi hex-numeroa = 1 tavu (0–255). Neljä hex-numeroa = 2 tavua (0–65.535).</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Käytännön vinkkejä",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Hex digits: 0123456789ABCDEF. A=10, B=11, C=12, D=13, E=14, F=15.</li><li>1 byte: 00–FF (0–255). 2 bytes: 0000–FFFF (0–65,535).</li><li>Common prefixes: 0x (programming), # (CSS colors), U+ (Unicode).</li><li>MAC address: 6 bytes in hex, e.g. AA:BB:CC:DD:EE:FF.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Hex digits: 0123456789ABCDEF. A=10, B=11, C=12, D=13, E=14, F=15.</li><li>1 tavu: 00–FF (0–255). 2 tavua: 0000–FFFF (0–65.535).</li><li>Yleiset etuliitteet: 0x (ohjelmointi), # (CSS-värit), U+ (Unicode).</li><li>MAC-osoite: 6 tavua heksana, esim. AA:BB:CC:DD:EE:FF.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Digits",
+          "name": "Numerot",
           "values": {
             "unit1": "0–9",
             "unit2": "0–9, A–F"
           }
         },
         {
-          "name": "Example: 255",
+          "name": "Esimerkki: 255",
           "values": {
             "unit1": "255",
             "unit2": "FF"
           }
         },
         {
-          "name": "Example: 1000",
+          "name": "Esimerkki: 1000",
           "values": {
             "unit1": "1000",
             "unit2": "3E8"
           }
         },
         {
-          "name": "Used for",
+          "name": "Käyttö",
           "values": {
-            "unit1": "Everyday math",
-            "unit2": "Colors, addresses, data"
+            "unit1": "Jokapäiväinen laskenta",
+            "unit2": "Värit, osoitteet, data"
           }
         },
         {
-          "name": "Compactness",
+          "name": "Tiiviys",
           "values": {
-            "unit1": "Standard",
-            "unit2": "More compact than binary"
+            "unit1": "Standardi",
+            "unit2": "Tiiviimpi kuin binääri"
           }
         }
       ]
@@ -240,12 +240,12 @@
           "answer": "255 = FF in Hexadezimal. Maximum eines Bytes."
         },
         {
-          "question": "Was bedeutet 0x?",
-          "answer": "0x ist ein Präfix für Hexadezimalzahlen in den meisten Sprachen (C, JavaScript, Python)."
+          "question": "Mitä 0x tarkoittaa?",
+          "answer": "0x on heksadesimaalilukujen etuliite useimmissa kielissä (C, JavaScript, Python)."
         },
         {
           "question": "Tehdäänkö laskelmat paikallisesti?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
         }
       ]
     },

@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiCodeSSlashLine",
-          "title": "Programowanie",
-          "description": "Operacje bitowe, maski, flagi: 0xFF = 11111111."
+          "title": "Programming",
+          "description": "Bitwise operations, masks, flags: 0xFF = 11111111."
         },
         {
           "icon": "RiWifiLine",
-          "title": "Sieci IP",
-          "description": "Maski podsieci: 255.255.255.0 = /24 (24 jedynki binarnie)."
+          "title": "IP Networks",
+          "description": "Subnet masks: 255.255.255.0 = /24 (24 ones in binary)."
         },
         {
           "icon": "RiShieldKeyholeLine",
-          "title": "Uprawnienia Unix",
-          "description": "chmod 755 = 111 101 101 binarnie."
+          "title": "Unix Permissions",
+          "description": "chmod 755 = 111 101 101 in binary."
         },
         {
           "icon": "RiCpuLine",
-          "title": "Elektronika",
-          "description": "Rejestry, porty I/O, protokoły komunikacyjne."
+          "title": "Electronics",
+          "description": "Registers, I/O ports, communication protocols."
         }
       ]
     },

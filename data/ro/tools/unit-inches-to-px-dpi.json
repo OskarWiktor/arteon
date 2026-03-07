@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: Inci în px?",
-      "html": "<p class=\"text-mid mb-4\">US paper sizes and print specifications use inches. To prepare digital artwork, convert to pixels: pixels = inches × DPI.</p><p class=\"text-mid mb-4\">US Letter paper (8.5 × 11″) at 300 DPI = 2,550 × 3,300 pixels. A 4 × 6″ photo print at 300 DPI = 1,200 × 1,800 pixels.</p><p class=\"text-mid mb-4\">This conversion is essential for preparing images for US print shops, setting up document templates, and calculating required image resolution.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Dimensiunile de hârtie din SUA și specificațiile de tipărire folosesc inch-uri. Pentru pregătirea lucrărilor digitale, convertiți în pixeli: pixeli = inchi × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) la 300 DPI = 2.550 × 3.300 pixeli. Fotografie 4 × 6″ la 300 DPI = 1.200 × 1.800 pixeli.</p><p class=\"text-mid mb-4\">Această conversie este esențială pentru pregătirea imaginilor pentru tipografii, configurarea șabloanelor de documente și calculul rezoluției necesare.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Inci în px – Arteon"
     },
@@ -105,12 +105,12 @@
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Monitory",
+          "title": "Monitoare",
           "description": "Oblicz PPI monitora: 27″ 4K (3840px) = 163 PPI."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
+          "title": "Fotografie",
           "description": "Wydruk zdjęcia 4 × 6″ przy 300 DPI = 1 200 × 1 800 px."
         },
         {
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">The formula is simply: pixels = inches × DPI. No additional conversion factor needed since DPI is already dots per inch.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 inch = 300 pixels. At 72 DPI: 1 inch = 72 pixels.</p><p class=\"text-mid\">To find required DPI: DPI = pixels / inches. A 4,000 px image printed at 8″ wide = 500 DPI.</p>"
+      "html": "<p class=\"text-mid mb-4\">Formula este simplă: pixeli = inchi × DPI. Nu este nevoie de factor suplimentar de conversie deoarece DPI este deja puncte per inch.</p><p class=\"text-mid mb-4\">La 300 DPI: 1 inch = 300 pixeli. La 72 DPI: 1 inch = 72 pixeli.</p><p class=\"text-mid\">Pentru a găsi DPI-ul necesar: DPI = pixeli / inchi. O imagine de 4.000 px tipărită la 8″ lățime = 500 DPI.</p>"
     },
     {
       "type": "gap",
@@ -175,8 +175,8 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "Common print sizes at 300 DPI",
-      "featureLabel": "Print size",
+      "title": "Dimensiuni comune de tipărire la 300 DPI",
+      "featureLabel": "Dimensiune tipărire",
       "plans": [
         {
           "id": "unit1",
@@ -190,21 +190,21 @@
       ],
       "features": [
         {
-          "name": "Wallet",
+          "name": "Portofel",
           "values": {
             "unit1": "2.5 × 3.5″",
             "unit2": "750 × 1,050"
           }
         },
         {
-          "name": "4×6 photo",
+          "name": "Foto 4×6",
           "values": {
             "unit1": "4 × 6″",
             "unit2": "1,200 × 1,800"
           }
         },
         {
-          "name": "8×10 photo",
+          "name": "Foto 8×10",
           "values": {
             "unit1": "8 × 10″",
             "unit2": "2,400 × 3,000"
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Câți Pixel sind 1 Zoll bei 300 DPI?",
-          "answer": "1 Zoll bei 300 DPI = 300 Pixel."
+          "question": "Câți pixeli sunt 1 inch la 300 DPI?",
+          "answer": "1 inch la 300 DPI = 300 pixeli."
         },
         {
           "question": "Calculele se fac local?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Da. Toate calculele se efectuează în browserul dumneavoastră."
         }
       ]
     },

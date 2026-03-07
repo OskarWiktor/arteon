@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Em σε px?",
-      "html": "<p class=\"text-mid mb-4\">Die CSS-Einheit em ist relativ zur Schriftgröße des übergeordneten Elements. Bei der Standardgröße von 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Im Gegensatz zu rem (relativ zum Wurzelelement) kaskadiert em: 1,5em × 1,5em = 2,25× der Basisgröße.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Η μονάδα CSS em είναι σχετική με το μέγεθος γραμματοσειράς του γονικού στοιχείου. Με το προεπιλεγμένο μέγεθος 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Σε αντίθεση με το rem (σχετικό με το ριζικό στοιχείο), το em σωρεύεται: 1,5em × 1,5em = 2,25× του βασικού μεγέθους.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Em σε px – Arteon"
     },
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiTextSpacing",
-          "title": "Typografia",
-          "description": "Line-height 1,5 em = 150% rozmiaru czcionki rodzica."
+          "title": "Τυπογραφία",
+          "description": "Line-height 1,5 em = 150% του μεγέθους γραμματοσειράς του γονικού."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "Przyciski",
-          "description": "Padding w em skaluje się z rozmiarem tekstu przycisku."
+          "title": "Κουμπιά",
+          "description": "Το padding σε em κλιμακώνεται με το μέγεθος κειμένου του κουμπιού."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Komponenty",
-          "description": "Wymiary proporcjonalne do tekstu w komponentach UI."
+          "title": "Στοιχεία UI",
+          "description": "Διαστάσεις αναλογικές με το κείμενο σε στοιχεία UI."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web ανάπτυξη",
-          "description": "Breakpointy w em są odporne na zmianę bazowego font-size."
+          "description": "Τα breakpoints σε em είναι ανθεκτικά σε αλλαγές του βασικού font-size."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">px = em × parent font size. By default, the browser base font size is 16px.</p><p class=\"text-mid mb-4\">Em compounds through the DOM tree. If body is 16px and a div is 1.5em (24px), a paragraph inside at 1.5em will be 1.5 × 24 = 36px.</p><p class=\"text-mid\">For predictable sizing, consider using rem units instead — they always reference the root element font size.</p>"
+      "html": "<p class=\"text-mid mb-4\">px = em × μέγεθος γραμματοσειράς γονικού. Προεπιλεγμένα, το βασικό μέγεθος γραμματοσειράς του browser είναι 16px.</p><p class=\"text-mid mb-4\">Το em σωρεύεται στο δέντρο DOM. Αν το body είναι 16px και ένα div είναι 1,5em (24px), μια παράγραφος μέσα σε 1,5em θα είναι 1,5 × 24 = 36px.</p><p class=\"text-mid\">Για προβλέψιμη διαστασιολόγηση, χρησιμοποιήστε rem — αναφέρεται πάντα στο ριζικό στοιχείο.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Default browser font: 16px. 1em = 16px, 0.875em = 14px, 1.25em = 20px.</li><li>Common heading sizes: h1 = 2em (32px), h2 = 1.5em (24px), h3 = 1.17em (18.7px).</li><li>Padding/margin in em scales with font size — useful for responsive components.</li><li>62.5% trick: setting html font-size to 62.5% makes 1em = 10px for easier math.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Προεπιλεγμένη γραμματοσειρά browser: 16px. 1em = 16px, 0,875em = 14px, 1,25em = 20px.</li><li>Συνηθισμένα μεγέθη επικεφαλίδων: h1 = 2em (32px), h2 = 1,5em (24px), h3 = 1,17em (18,7px).</li><li>Το padding/margin σε em κλιμακώνεται με το μέγεθος γραμματοσειράς — χρήσιμο για responsive στοιχεία.</li><li>Κόλπο 62,5%: ορίζοντας html font-size σε 62,5%, το 1em = 10px για ευκολότερους υπολογισμούς.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Reference",
+          "name": "Αναφορά",
           "values": {
-            "unit1": "Parent font size",
-            "unit2": "Fixed pixel"
+            "unit1": "Μέγεθος γονικού",
+            "unit2": "Σταθερό pixel"
           }
         },
         {
-          "name": "Compounds",
+          "name": "Σώρευση",
           "values": {
-            "unit1": "Yes (nests)",
-            "unit2": "No"
+            "unit1": "Ναι (εμφωλεύεται)",
+            "unit2": "Όχι"
           }
         },
         {
-          "name": "Responsive",
+          "name": "Ανταπόκριση",
           "values": {
-            "unit1": "Yes",
-            "unit2": "No"
+            "unit1": "Ναι",
+            "unit2": "Όχι"
           }
         },
         {
-          "name": "Accessibility",
+          "name": "Προσβασιμότητα",
           "values": {
-            "unit1": "Respects user settings",
-            "unit2": "Fixed size"
+            "unit1": "Σέβεται ρυθμίσεις χρήστη",
+            "unit2": "Σταθερό μέγεθος"
           }
         },
         {
-          "name": "Predictability",
+          "name": "Προβλεψιμότητα",
           "values": {
-            "unit1": "Context-dependent",
-            "unit2": "Always consistent"
+            "unit1": "Εξαρτάται από το πλαίσιο",
+            "unit2": "Πάντα συνεπές"
           }
         }
       ]
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Πόσα Pixel sind 1em?",
-          "answer": "Standardmäßig 1em = 16px (Browser-Standard). Aber em ist relativ zum übergeordneten Element."
+          "question": "Πόσα pixel είναι 1em;",
+          "answer": "Προεπιλεγμένα 1em = 16px (προεπιλογή browser). Αλλά το em είναι σχετικό με το γονικό στοιχείο."
         },
         {
-          "question": "Τι είναι der Unterschied zwischen em und rem?",
-          "answer": "em bezieht sich auf die Eltern-Schriftgröße. rem bezieht sich auf die Wurzel-Schriftgröße (html). rem ist vorhersagbarer."
+          "question": "Ποια είναι η διαφορά μεταξύ em και rem;",
+          "answer": "Το em αναφέρεται στο μέγεθος γραμματοσειράς του γονικού. Το rem αναφέρεται στο μέγεθος γραμματοσειράς της ρίζας (html). Το rem είναι πιο προβλέψιμο."
         },
         {
-          "question": "When should I use em instead of px?",
-          "answer": "Use em for typography and spacing that should scale with font size. Use px for borders, shadows, and other properties that should stay fixed."
+          "question": "Πότε πρέπει να χρησιμοποιώ em αντί για px;",
+          "answer": "Χρησιμοποιήστε em για τυπογραφία και αποστάσεις που πρέπει να κλιμακώνονται. Px για περιγράμματα, σκιές και ιδιότητες που πρέπει να παραμένουν σταθερές."
         }
       ]
     },

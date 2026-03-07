@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: Em px-re?",
-      "html": "<p class=\"text-mid mb-4\">Die CSS-Einheit em ist relativ zur Schriftgröße des übergeordneten Elements. Bei der Standardgröße von 16px: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">Im Gegensatz zu rem (relativ zum Wurzelelement) kaskadiert em: 1,5em × 1,5em = 2,25× der Basisgröße.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">A CSS em egység a szülő elem betűméretéhez viszonyított. Az alapértelmezett 16px mellett: 1em = 16px, 1,5em = 24px, 2em = 32px.</p><p class=\"text-mid mb-4\">A rem-mel ellentétben (amely a gyökér elemre vonatkozik) az em halmozódik: 1,5em × 1,5em = 2,25× az alap méret.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Em px-re – Arteon"
     },
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiTextSpacing",
-          "title": "Typografia",
+          "title": "Tipográfia",
           "description": "Line-height 1,5 em = 150% rozmiaru czcionki rodzica."
         },
         {
           "icon": "RiCheckboxCircleLine",
-          "title": "Przyciski",
-          "description": "Padding w em skaluje się z rozmiarem tekstu przycisku."
+          "title": "Gombok",
+          "description": "Az em padding a gomb szövegméretével együtt skálázódik."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Komponenty",
-          "description": "Wymiary proporcjonalne do tekstu w komponentach UI."
+          "title": "Komponensek",
+          "description": "Szövegarányos méretek az UI-komponensekben."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Webfejlesztés",
-          "description": "Breakpointy w em są odporne na zmianę bazowego font-size."
+          "description": "Az em breakpointok ellenállnak az alap font-size változásainak."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">px = em × parent font size. By default, the browser base font size is 16px.</p><p class=\"text-mid mb-4\">Em compounds through the DOM tree. If body is 16px and a div is 1.5em (24px), a paragraph inside at 1.5em will be 1.5 × 24 = 36px.</p><p class=\"text-mid\">For predictable sizing, consider using rem units instead — they always reference the root element font size.</p>"
+      "html": "<p class=\"text-mid mb-4\">px = em × szülő betűméret. Alapértelmezés szerint a böngésző alap betűmérete 16px.</p><p class=\"text-mid mb-4\">Az em halmozódik a DOM-fán keresztül. Ha a body 16px és egy div 1,5em (24px), egy belső bekezdés 1,5em-nél 1,5 × 24 = 36px lesz.</p><p class=\"text-mid\">Kiszámíthatóbb méretezéshez használjon rem egységeket — ezek mindig a gyökér elem betűméretére hivatkoznak.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Default browser font: 16px. 1em = 16px, 0.875em = 14px, 1.25em = 20px.</li><li>Common heading sizes: h1 = 2em (32px), h2 = 1.5em (24px), h3 = 1.17em (18.7px).</li><li>Padding/margin in em scales with font size — useful for responsive components.</li><li>62.5% trick: setting html font-size to 62.5% makes 1em = 10px for easier math.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Alapértelmezett böngésző betűméret: 16px. 1em = 16px, 0,875em = 14px, 1,25em = 20px.</li><li>Gyakori címsor méretek: h1 = 2em (32px), h2 = 1,5em (24px), h3 = 1,17em (18,7px).</li><li>Az em padding/margin a betűmérettel skálázódik — hasznos reszponzív komponensekhez.</li><li>62,5%-os trükk: html font-size 62,5%-ra állítva 1em = 10px az egyszerűbb számoláshoz.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Reference",
+          "name": "Hivatkozás",
           "values": {
-            "unit1": "Parent font size",
-            "unit2": "Fixed pixel"
+            "unit1": "Szülő betűméret",
+            "unit2": "Fix pixel"
           }
         },
         {
-          "name": "Compounds",
+          "name": "Halmozódás",
           "values": {
-            "unit1": "Yes (nests)",
+            "unit1": "Igen (halmozódik)",
             "unit2": "No"
           }
         },
         {
-          "name": "Responsive",
+          "name": "Reszponzív",
           "values": {
             "unit1": "Yes",
             "unit2": "No"
           }
         },
         {
-          "name": "Accessibility",
+          "name": "Akadálymentesség",
           "values": {
-            "unit1": "Respects user settings",
-            "unit2": "Fixed size"
+            "unit1": "Tiszteletben tartja a felhasználói beállításokat",
+            "unit2": "Fix méret"
           }
         },
         {
-          "name": "Predictability",
+          "name": "Kiszámíthatóság",
           "values": {
-            "unit1": "Context-dependent",
-            "unit2": "Always consistent"
+            "unit1": "Kontextusfüggő",
+            "unit2": "Mindig egységes"
           }
         }
       ]
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Hány Pixel sind 1em?",
-          "answer": "Standardmäßig 1em = 16px (Browser-Standard). Aber em ist relativ zum übergeordneten Element."
+          "question": "Hány pixel 1em?",
+          "answer": "Alapértelmezés szerint 1em = 16px (böngésző alapértelmezés). De az em a szülő elemhez viszonyított."
         },
         {
           "question": "Mi az a der Unterschied zwischen em und rem?",
-          "answer": "em bezieht sich auf die Eltern-Schriftgröße. rem bezieht sich auf die Wurzel-Schriftgröße (html). rem ist vorhersagbarer."
+          "answer": "Az em a szülő betűméretére vonatkozik. A rem a gyökér betűméretre (html). A rem kiszámíthatóbb."
         },
         {
-          "question": "When should I use em instead of px?",
-          "answer": "Use em for typography and spacing that should scale with font size. Use px for borders, shadows, and other properties that should stay fixed."
+          "question": "Mikor használjak em-et px helyett?",
+          "answer": "Em-et a tipográfiához és térközökhöz, amelyeknek a betűmérettel kell skálázódniuk. Px-et keretekhez, árnyékokhoz és tulajdonságokhoz, amelyeknek fixnek kell maradniuk."
         }
       ]
     },

@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Milloin tarvitset: Unix päiväksi?",
-      "html": "<p class=\"text-mid mb-4\">Der Unix-Zeitstempel (Unix Timestamp oder Epoch) zählt die Sekunden seit dem 1. Januar 1970, 00:00:00 UTC. Es ist der universelle Standard zur Speicherung von Datum und Uhrzeit in Computersystemen.</p><p class=\"text-mid mb-4\">Beispiel: 1709251200 = 1. März 2024, 00:00:00 UTC. Zeitstempel sind zeitzonenunabhängig.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Unix-aikaleima (Unix Timestamp tai Epoch) laskee sekunteja 1. tammikuuta 1970 alkaen, 00:00:00 UTC. Se on universaali standardi päivämäärän ja ajan tallentamiseen tietokonejärjestelmissä.</p><p class=\"text-mid mb-4\">Esimerkki: 1709251200 = 1. maaliskuuta 2024, 00:00:00 UTC. Aikaleimat ovat aikavyöhykeriippumattomia.</p><p class=\"text-mid\">Kaikki laskelmat suoritetaan paikallisesti selaimessasi.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Unix päiväksi – Arteon"
     },
@@ -101,22 +101,22 @@
         {
           "icon": "RiDatabase2Line",
           "title": "Tietojen tallennus",
-          "description": "Pola created_at, updated_at przechowują timestamp."
+          "description": "Kentät created_at, updated_at tallentavat aikaleiman."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web-kehitys",
-          "description": "Tokeny JWT: pole exp (wygaśnięcie) to timestamp."
+          "description": "JWT-tokenit: exp (vanheneminen) -kenttä on aikaleima."
         },
         {
           "icon": "RiTerminalBoxLine",
-          "title": "Logi serwerów",
-          "description": "Odczytuj timestampy z logów systemowych i aplikacyjnych."
+          "title": "Palvelinlokit",
+          "description": "Lue aikaleimoja järjestelmä- ja sovelluslokeista."
         },
         {
           "icon": "RiTimeLine",
           "title": "Ajanmittaus",
-          "description": "Szybkie sprawdzenie, kiedy wystąpił błąd na podstawie timestamp."
+          "description": "Tarkista nopeasti milloin virhe tapahtui aikaleiman perusteella."
         }
       ]
     },
@@ -157,8 +157,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How do Unix timestamps work?",
-      "html": "<p class=\"text-mid mb-4\">Unix time counts seconds from the epoch: January 1, 1970, 00:00:00 UTC. This date was chosen as a convenient reference point for the original Unix operating system.</p><p class=\"text-mid mb-4\">Timestamps can be in seconds (10 digits: 1700000000) or milliseconds (13 digits: 1700000000000). JavaScript Date uses milliseconds.</p><p class=\"text-mid\">The Year 2038 problem: 32-bit signed integers overflow on January 19, 2038. Most modern systems use 64-bit timestamps to avoid this.</p>"
+      "title": "Miten Unix-aikaleimat toimivat?",
+      "html": "<p class=\"text-mid mb-4\">Unix-aika laskee sekunteja epookista: 1. tammikuuta 1970, 00:00:00 UTC. Tämä päivämäärä vvalittiin käteväksi viitepisteeksi alkuperäiselle Unix-käyttöjärjestelmälle.</p><p class=\"text-mid mb-4\">Aikaleimat voivat olla sekunneissa (10 numeroa: 1700000000) tai millisekunneissa (13 numeroa: 1700000000000). JavaScript Date käyttää millisekunteja.</p><p class=\"text-mid\">Vuoden 2038 ongelma: 32-bittiset etumerkilliset kokonaisluvut ylivuotavat 19. tammikuuta 2038. Nykyaikaiset järjestelmät käyttävät 64-bittisiä aikaleimoja.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Käytännön vinkkejä",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>JavaScript: Date.now() returns milliseconds. Math.floor(Date.now()/1000) for seconds.</li><li>Python: import time; time.time() returns seconds as float.</li><li>PHP: time() returns seconds as integer.</li><li>MySQL: UNIX_TIMESTAMP() and FROM_UNIXTIME() for conversion.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>JavaScript: Date.now() palauttaa millisekunteja. Math.floor(Date.now()/1000) sekunneille.</li><li>Python: import time; time.time() palauttaa sekunteja floattina.</li><li>PHP: time() palauttaa sekunteja kokonaislukuna.</li><li>MySQL: UNIX_TIMESTAMP() ja FROM_UNIXTIME() muuntamiseen.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,21 +190,21 @@
       ],
       "features": [
         {
-          "name": "Digits",
+          "name": "Numerot",
           "values": {
             "unit1": "10 digits",
             "unit2": "13 digits"
           }
         },
         {
-          "name": "Example",
+          "name": "Esimerkki",
           "values": {
             "unit1": "1700000000",
             "unit2": "1700000000000"
           }
         },
         {
-          "name": "Used by",
+          "name": "Käyttäjä",
           "values": {
             "unit1": "PHP, Python, MySQL",
             "unit2": "JavaScript, Java"
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Mikä on die Unix-Epoche?",
-          "answer": "Der 1. Januar 1970 um 00:00:00 UTC. Alle Zeitstempel werden ab diesem Punkt gemessen."
+          "question": "Mikä on Unix-epookki?",
+          "answer": "1. tammikuuta 1970 klo 00:00:00 UTC. Kaikki aikaleimat mitataan tästä pisteestä."
         },
         {
-          "question": "Mikä on das Jahr-2038-Problem?",
-          "answer": "32-Bit-Zeitstempel mit Vorzeichen laufen am 19. Januar 2038 um 03:14:07 UTC über. Moderne Systeme verwenden 64 Bit."
+          "question": "Mikä on vuoden 2038 ongelma?",
+          "answer": "32-bittiset etumerkityt aikaleimat ylivuotavat 19. tammikuuta 2038 klo 03:14:07 UTC. Nykyaikaiset järjestelmät käyttävät 64-bittisiä aikaleimoja."
         },
         {
           "question": "Tehdäänkö laskelmat paikallisesti?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Kyllä. Kaikki laskelmat suoritetaan selaimessasi."
         }
       ]
     },

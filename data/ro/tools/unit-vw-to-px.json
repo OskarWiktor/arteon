@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: Vw în px?",
-      "html": "<p class=\"text-mid mb-4\">Die CSS-Einheit vw echivalează cu 1 % der Viewport-Breite. Bei einem 1920px-Bildschirm: 1vw = 19,2px, 50vw = 960px, 100vw = 1920px.</p><p class=\"text-mid mb-4\">vw wird häufig für Fluid Typography verwendet: font-size: clamp(1rem, 2.5vw, 2rem).</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Unitatea CSS vw echivalează cu 1 % din lățimea viewport-ului. Pe un ecran de 1920px: 1vw = 19,2px, 50vw = 960px, 100vw = 1920px.</p><p class=\"text-mid mb-4\">vw este frecvent folosit pentru tipografie fluidă: font-size: clamp(1rem, 2.5vw, 2rem).</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Vw în px – Arteon"
     },
@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiLayoutLine",
-          "title": "Responsywne układy",
-          "description": "Sekcje pełnoekranowe: width: 100vw, height: 100vh."
+          "title": "Layout-uri responsive",
+          "description": "Secțiuni full-screen: width: 100vw, height: 100vh."
         },
         {
           "icon": "RiFontSizeLine",
           "title": "Fluid typography",
-          "description": "Tytuły skalowane: font-size: clamp(2rem, 5vw, 4rem)."
+          "description": "Titluri scalate: font-size: clamp(2rem, 5vw, 4rem)."
         },
         {
           "icon": "RiSmartphoneLine",
           "title": "Mobile first",
-          "description": "Marginesy i paddingi w vw skalują się z ekranem."
+          "description": "Marginile și padding-urile în vw se scalează cu ecranul."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Dezvoltare web",
-          "description": "Sprawdź, ile px ma dany vw na konkretnym urządzeniu."
+          "description": "Verificați câți px are o valoare vw pe un dispozitiv specific."
         }
       ]
     },
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Cât ist 1vw in Pixel?",
-          "answer": "1vw = 1 % der Viewport-Breite. Bei 1920px: 19,2px. Bei 375px: 3,75px."
+          "question": "Cât este 1vw în pixeli?",
+          "answer": "1vw = 1% din lățimea viewport-ului. La 1920px: 19,2px. La 375px: 3,75px."
         },
         {
           "question": "Calculele se fac local?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Da. Toate calculele se efectuează în browserul dumneavoastră."
         }
       ]
     },

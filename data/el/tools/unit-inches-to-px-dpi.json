@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Ίντσες σε px?",
-      "html": "<p class=\"text-mid mb-4\">US paper sizes and print specifications use inches. To prepare digital artwork, convert to pixels: pixels = inches × DPI.</p><p class=\"text-mid mb-4\">US Letter paper (8.5 × 11″) at 300 DPI = 2,550 × 3,300 pixels. A 4 × 6″ photo print at 300 DPI = 1,200 × 1,800 pixels.</p><p class=\"text-mid mb-4\">This conversion is essential for preparing images for US print shops, setting up document templates, and calculating required image resolution.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Τα αμερικανικά μεγέθη χαρτιού και οι προδιαγραφές εκτύπωσης χρησιμοποιούν ίντσες. Για την προετοιμασία ψηφιακών έργων, μετατρέψτε σε pixel: pixels = inches × DPI.</p><p class=\"text-mid mb-4\">US Letter (8,5 × 11″) στα 300 DPI = 2.550 × 3.300 pixel. Εκτύπωση φωτογραφίας 4 × 6″ στα 300 DPI = 1.200 × 1.800 pixel.</p><p class=\"text-mid mb-4\">Αυτή η μετατροπή είναι απαραίτητη για την προετοιμασία εικόνων για τυπογραφεία, τη ρύθμιση προτύπων εγγράφων και τον υπολογισμό της απαιτούμενης ανάλυσης.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Ίντσες σε px – Arteon"
     },
@@ -105,12 +105,12 @@
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Monitory",
+          "title": "Οθόνες",
           "description": "Oblicz PPI monitora: 27″ 4K (3840px) = 163 PPI."
         },
         {
           "icon": "RiImageLine",
-          "title": "Fotografia",
+          "title": "Φωτογραφία",
           "description": "Wydruk zdjęcia 4 × 6″ przy 300 DPI = 1 200 × 1 800 px."
         },
         {
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">The formula is simply: pixels = inches × DPI. No additional conversion factor needed since DPI is already dots per inch.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 inch = 300 pixels. At 72 DPI: 1 inch = 72 pixels.</p><p class=\"text-mid\">To find required DPI: DPI = pixels / inches. A 4,000 px image printed at 8″ wide = 500 DPI.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ο τύπος είναι απλός: pixel = ίντσες × DPI. Δεν χρειάζεται επιπλέον συντελεστής μετατροπής αφού το DPI είναι ήδη κουκκίδες ανά ίντσα.</p><p class=\"text-mid mb-4\">Στα 300 DPI: 1 ίντσα = 300 pixel. Στα 72 DPI: 1 ίντσα = 72 pixel.</p><p class=\"text-mid\">Για να βρείτε το απαιτούμενο DPI: DPI = pixel / ίντσες. Εικόνα 4.000 px εκτυπωμένη σε πλάτος 8″ = 500 DPI.</p>"
     },
     {
       "type": "gap",
@@ -175,8 +175,8 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "Common print sizes at 300 DPI",
-      "featureLabel": "Print size",
+      "title": "Συνήθη μεγέθη εκτύπωσης στα 300 DPI",
+      "featureLabel": "Μέγεθος εκτύπωσης",
       "plans": [
         {
           "id": "unit1",
@@ -190,21 +190,21 @@
       ],
       "features": [
         {
-          "name": "Wallet",
+          "name": "Πορτοφόλι",
           "values": {
             "unit1": "2.5 × 3.5″",
             "unit2": "750 × 1,050"
           }
         },
         {
-          "name": "4×6 photo",
+          "name": "Φωτογραφία 4×6",
           "values": {
             "unit1": "4 × 6″",
             "unit2": "1,200 × 1,800"
           }
         },
         {
-          "name": "8×10 photo",
+          "name": "Φωτογραφία 8×10",
           "values": {
             "unit1": "8 × 10″",
             "unit2": "2,400 × 3,000"
@@ -218,7 +218,7 @@
           }
         },
         {
-          "name": "Poster (24×36)",
+          "name": "Αφίσα (24×36)",
           "values": {
             "unit1": "24 × 36″",
             "unit2": "7,200 × 10,800"
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Πόσα Pixel sind 1 Zoll bei 300 DPI?",
-          "answer": "1 Zoll bei 300 DPI = 300 Pixel."
+          "question": "Πόσα pixel είναι 1 ίντσα στα 300 DPI;",
+          "answer": "1 ίντσα στα 300 DPI = 300 pixel."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },

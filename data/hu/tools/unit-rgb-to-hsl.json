@@ -101,22 +101,22 @@
         {
           "icon": "RiPaletteLine",
           "title": "Színkezelés",
-          "description": "Tworzenie wariantów: zmieniaj L (jasność) przy stałym H i S."
+          "description": "Változatok létrehozása: változtassa az L (világosság) értékét, miközben H és S állandó."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Webfejlesztés",
-          "description": "<code>hsl(217, 91%, 60%)</code> – intuicyjny zapis kolorów."
+          "description": "<code>hsl(217, 91%, 60%)</code> — intuitív színjelölés."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Tryb ciemny",
-          "description": "Zmiana L z 95% na 10% tworzy wariant ciemnego motywu."
+          "title": "Sötét mód",
+          "description": "Az L 95%-ról 10%-ra változtatása sötét téma változatot hoz létre."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Projektowanie",
-          "description": "HSL ułatwia tworzenie spójnych palet: obróć H o 120° = kolor komplementarny."
+          "title": "Tervezés",
+          "description": "A HSL megkönnyíti az egységes paletták létrehozását: forgassa el H-t 120°-kal = komplementer szín."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">RGB auf 0–1 normalisieren. Max und Min finden. L = (max + min) / 2.</p><p class=\"text-mid\">HSL ist vollständig umkehrbar — zurück zu RGB ergibt exakt dieselbe Farbe.</p>"
+      "html": "<p class=\"text-mid mb-4\">RGB normalizálása 0–1-re. Max és Min megtalálása. L = (max + min) / 2.</p><p class=\"text-mid\">A HSL teljesen visszafordítható — az RGB-re való visszakonvertálás pontosan ugyanazt a színt adja.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Red: hsl(0, 100%, 50%). Green: hsl(120, 100%, 50%). Blue: hsl(240, 100%, 50%).</li><li>Complementary color: add 180° to hue. Red (0°) → Cyan (180°).</li><li>Lighten: increase L%. Darken: decrease L%. L=0% = black, L=100% = white.</li><li>Desaturate: decrease S%. S=0% = grayscale. S=100% = pure color.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Piros: hsl(0, 100%, 50%). Zöld: hsl(120, 100%, 50%). Kék: hsl(240, 100%, 50%).</li><li>Komplementer szín: adjon hozzá 180°-ot az árnyalathoz. Piros (0°) → Ciánkék (180°).</li><li>Világosítás: növelje L%-ot. Sötétítés: csökkentse L%-ot. L=0% = fekete, L=100% = fehér.</li><li>Telítettségcsökkentés: csökkentse S%-ot. S=0% = szürkeárnyalat. S=100% = tiszta szín.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,35 +190,35 @@
       ],
       "features": [
         {
-          "name": "Model",
+          "name": "Modell",
           "values": {
-            "unit1": "Additive channels",
-            "unit2": "Hue/Saturation/Lightness"
+            "unit1": "Additív csatornák",
+            "unit2": "Árnyalat/Telítettség/Világosság"
           }
         },
         {
-          "name": "Values",
+          "name": "Értékek",
           "values": {
             "unit1": "0–255 per channel",
             "unit2": "H: 0–360°, S/L: 0–100%"
           }
         },
         {
-          "name": "Intuitive",
+          "name": "Intuitív",
           "values": {
-            "unit1": "Hard to predict colors",
-            "unit2": "Easy to adjust colors"
+            "unit1": "Nehéz a színek előrejelzése",
+            "unit2": "Könnyű a színek módosítása"
           }
         },
         {
-          "name": "Color theory",
+          "name": "Színelmélet",
           "values": {
-            "unit1": "Not color-wheel based",
-            "unit2": "Maps to color wheel"
+            "unit1": "Nem színkör alapú",
+            "unit2": "Színkörre vetíthető"
           }
         },
         {
-          "name": "CSS support",
+          "name": "CSS támogatás",
           "values": {
             "unit1": "rgb(R, G, B)",
             "unit2": "hsl(H, S%, L%)"
@@ -241,7 +241,7 @@
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

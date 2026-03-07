@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Unix σε ημ/νία?",
-      "html": "<p class=\"text-mid mb-4\">Der Unix-Zeitstempel (Unix Timestamp oder Epoch) zählt die Sekunden seit dem 1. Januar 1970, 00:00:00 UTC. Es ist der universelle Standard zur Speicherung von Datum und Uhrzeit in Computersystemen.</p><p class=\"text-mid mb-4\">Beispiel: 1709251200 = 1. März 2024, 00:00:00 UTC. Zeitstempel sind zeitzonenunabhängig.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Η χρονοσφραγίδα Unix (Unix Timestamp ή Epoch) μετράει τα δευτερόλεπτα από την 1η Ιανουαρίου 1970, 00:00:00 UTC. Είναι το παγκόσμιο πρότυπο αποθήκευσης ημερομηνίας και ώρας σε υπολογιστικά συστήματα.</p><p class=\"text-mid mb-4\">Παράδειγμα: 1709251200 = 1 Μαρτίου 2024, 00:00:00 UTC. Οι χρονοσφραγίδες είναι ανεξάρτητες ζώνης ώρας.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Unix σε ημ/νία – Arteon"
     },
@@ -101,22 +101,22 @@
         {
           "icon": "RiDatabase2Line",
           "title": "Αποθήκευση δεδομένων",
-          "description": "Pola created_at, updated_at przechowują timestamp."
+          "description": "Τα πεδία created_at, updated_at αποθηκεύουν timestamp."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web ανάπτυξη",
-          "description": "Tokeny JWT: pole exp (wygaśnięcie) to timestamp."
+          "description": "JWT tokens: το πεδίο exp (λήξη) είναι timestamp."
         },
         {
           "icon": "RiTerminalBoxLine",
-          "title": "Logi serwerów",
-          "description": "Odczytuj timestampy z logów systemowych i aplikacyjnych."
+          "title": "Αρχεία καταγραφής",
+          "description": "Ανάγνωση timestamps από αρχεία καταγραφής συστήματος και εφαρμογών."
         },
         {
           "icon": "RiTimeLine",
           "title": "Μέτρηση χρόνου",
-          "description": "Szybkie sprawdzenie, kiedy wystąpił błąd na podstawie timestamp."
+          "description": "Γρήγορος έλεγχος πότε προέκυψε σφάλμα βάσει timestamp."
         }
       ]
     },
@@ -157,8 +157,8 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How do Unix timestamps work?",
-      "html": "<p class=\"text-mid mb-4\">Unix time counts seconds from the epoch: January 1, 1970, 00:00:00 UTC. This date was chosen as a convenient reference point for the original Unix operating system.</p><p class=\"text-mid mb-4\">Timestamps can be in seconds (10 digits: 1700000000) or milliseconds (13 digits: 1700000000000). JavaScript Date uses milliseconds.</p><p class=\"text-mid\">The Year 2038 problem: 32-bit signed integers overflow on January 19, 2038. Most modern systems use 64-bit timestamps to avoid this.</p>"
+      "title": "Πώς λειτουργούν οι χρονοσφραγίδες Unix;",
+      "html": "<p class=\"text-mid mb-4\">Ο χρόνος Unix μετράει δευτερόλεπτα από τη στιγμή αναφοράς: 1 Ιανουαρίου 1970, 00:00:00 UTC. Αυτή η ημερομηνία εs chosen as a convenient reference point for the original Unix operating system.</p><p class=\"text-mid mb-4\">Timestamps can be in seconds (10 digits: 1700000000) or milliseconds (13 digits: 1700000000000). JavaScript Date uses milliseconds.</p><p class=\"text-mid\">The Year 2038 problem: 32-bit signed integers overflow on January 19, 2038. Most modern systems use 64-bit timestamps to avoid this.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>JavaScript: Date.now() returns milliseconds. Math.floor(Date.now()/1000) for seconds.</li><li>Python: import time; time.time() returns seconds as float.</li><li>PHP: time() returns seconds as integer.</li><li>MySQL: UNIX_TIMESTAMP() and FROM_UNIXTIME() for conversion.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>JavaScript: Date.now() επιστρέφει χιλιοστά δευτερολέπτου. Math.floor(Date.now()/1000) για δευτερόλεπτα.</li><li>Python: import time; time.time() επιστρέφει δευτερόλεπτα ως float.</li><li>PHP: time() επιστρέφει δευτερόλεπτα ως ακέραιο.</li><li>MySQL: UNIX_TIMESTAMP() και FROM_UNIXTIME() για μετατροπή.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,21 +190,21 @@
       ],
       "features": [
         {
-          "name": "Digits",
+          "name": "Ψηφία",
           "values": {
             "unit1": "10 digits",
             "unit2": "13 digits"
           }
         },
         {
-          "name": "Example",
+          "name": "Παράδειγμα",
           "values": {
             "unit1": "1700000000",
             "unit2": "1700000000000"
           }
         },
         {
-          "name": "Used by",
+          "name": "Χρήση",
           "values": {
             "unit1": "PHP, Python, MySQL",
             "unit2": "JavaScript, Java"
@@ -237,15 +237,15 @@
       "items": [
         {
           "question": "Τι είναι die Unix-Epoche?",
-          "answer": "Der 1. Januar 1970 um 00:00:00 UTC. Alle Zeitstempel werden ab diesem Punkt gemessen."
+          "answer": "1 Ιανουαρίου 1970 στις 00:00:00 UTC. Όλες οι χρονοσφραγίδες μετρούνται από αυτό το σημείο."
         },
         {
           "question": "Τι είναι das Jahr-2038-Problem?",
-          "answer": "32-Bit-Zeitstempel mit Vorzeichen laufen am 19. Januar 2038 um 03:14:07 UTC über. Moderne Systeme verwenden 64 Bit."
+          "answer": "Οι 32-bit χρονοσφραγίδες με πρόσημο θα υπερχειλίσουν στις 19 Ιανουαρίου 2038 um 03:14:07 UTC. Τα σύγχρονα συστήματα χρησιμοποιούν 64 Bit."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },

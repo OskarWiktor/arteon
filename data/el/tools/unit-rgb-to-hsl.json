@@ -101,22 +101,22 @@
         {
           "icon": "RiPaletteLine",
           "title": "Διαχείριση χρωμάτων",
-          "description": "Tworzenie wariantów: zmieniaj L (jasność) przy stałym H i S."
+          "description": "Δημιουργία παραλλαγών: αλλάξτε L (φωτεινότητα) κρατώντας σταθερά τα H και S."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web ανάπτυξη",
-          "description": "<code>hsl(217, 91%, 60%)</code> – intuicyjny zapis kolorów."
+          "description": "<code>hsl(217, 91%, 60%)</code> — διαισθητική σημειογραφία χρωμάτων."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Tryb ciemny",
-          "description": "Zmiana L z 95% na 10% tworzy wariant ciemnego motywu."
+          "title": "Σκοτεινή λειτουργία",
+          "description": "Αλλαγή L από 95% σε 10% δημιουργεί παραλλαγή σκοτεινού θέματος."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Projektowanie",
-          "description": "HSL ułatwia tworzenie spójnych palet: obróć H o 120° = kolor komplementarny."
+          "title": "Σχεδιασμός",
+          "description": "Το HSL διευκολύνει τη δημιουργία συνεπών παλετών: περιστρέψτε H κατά 120° = συμπληρωματικό χρώμα."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">RGB auf 0–1 normalisieren. Max und Min finden. L = (max + min) / 2.</p><p class=\"text-mid\">HSL ist vollständig umkehrbar — zurück zu RGB ergibt exakt dieselbe Farbe.</p>"
+      "html": "<p class=\"text-mid mb-4\">Κανονικοποίηση RGB σε 0–1. Εύρεση Max και Min. L = (max + min) / 2.</p><p class=\"text-mid\">Το HSL είναι πλήρως αντιστρέψιμο — η επιστροφή σε RGB δίνει ακριβώς το ίδιο χρώμα.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Red: hsl(0, 100%, 50%). Green: hsl(120, 100%, 50%). Blue: hsl(240, 100%, 50%).</li><li>Complementary color: add 180° to hue. Red (0°) → Cyan (180°).</li><li>Lighten: increase L%. Darken: decrease L%. L=0% = black, L=100% = white.</li><li>Desaturate: decrease S%. S=0% = grayscale. S=100% = pure color.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Κόκκινο: hsl(0, 100%, 50%). Πράσινο: hsl(120, 100%, 50%). Μπλε: hsl(240, 100%, 50%).</li><li>Συμπληρωματικό χρώμα: προσθέστε 180° στην απόχρωση. Κόκκινο (0°) → Κυανό (180°).</li><li>Φωτεινότερο: αυξήστε L%. Σκοτεινότερο: μειώστε L%. L=0% = μαύρο, L=100% = λευκό.</li><li>Αποκορεσμός: μειώστε S%. S=0% = γκρι κλίμακα. S=100% = καθαρό χρώμα.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,35 +190,35 @@
       ],
       "features": [
         {
-          "name": "Model",
+          "name": "Μοντέλο",
           "values": {
-            "unit1": "Additive channels",
-            "unit2": "Hue/Saturation/Lightness"
+            "unit1": "Προσθετικά κανάλια",
+            "unit2": "Απόχρωση/Κορεσμός/Φωτεινότητα"
           }
         },
         {
-          "name": "Values",
+          "name": "Τιμές",
           "values": {
             "unit1": "0–255 per channel",
             "unit2": "H: 0–360°, S/L: 0–100%"
           }
         },
         {
-          "name": "Intuitive",
+          "name": "Διαισθητικό",
           "values": {
-            "unit1": "Hard to predict colors",
-            "unit2": "Easy to adjust colors"
+            "unit1": "Δύσκολη πρόβλεψη χρωμάτων",
+            "unit2": "Εύκολη ρύθμιση χρωμάτων"
           }
         },
         {
-          "name": "Color theory",
+          "name": "Θεωρία χρώματος",
           "values": {
-            "unit1": "Not color-wheel based",
-            "unit2": "Maps to color wheel"
+            "unit1": "Δεν βασίζεται σε χρωματικό κύκλο",
+            "unit2": "Αντιστοιχεί στον χρωματικό κύκλο"
           }
         },
         {
-          "name": "CSS support",
+          "name": "Υποστήριξη CSS",
           "values": {
             "unit1": "rgb(R, G, B)",
             "unit2": "hsl(H, S%, L%)"
@@ -241,7 +241,7 @@
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },

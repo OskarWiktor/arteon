@@ -101,22 +101,22 @@
         {
           "icon": "RiCodeSSlashLine",
           "title": "Dezvoltare web",
-          "description": "Operacje bitowe, maski, flagi: 0xFF = 11111111."
+          "description": "Operații pe biți, măști, flag-uri: 0xFF = 11111111."
         },
         {
           "icon": "RiWifiLine",
           "title": "Internet",
-          "description": "Maski podsieci: 255.255.255.0 = /24 (24 jedynki binarnie)."
+          "description": "Măști de subrețea: 255.255.255.0 = /24 (24 de unu în binar)."
         },
         {
           "icon": "RiShieldKeyholeLine",
-          "title": "Uprawnienia Unix",
-          "description": "chmod 755 = 111 101 101 binarnie."
+          "title": "Permisiuni Unix",
+          "description": "chmod 755 = 111 101 101 în binar."
         },
         {
           "icon": "RiCpuLine",
-          "title": "Elektronika",
-          "description": "Rejestry, porty I/O, protokoły komunikacyjne."
+          "title": "Electronică",
+          "description": "Registre, porturi I/O, protocoale de comunicație."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">Wiederholt durch 2 teilen und Reste notieren. Von unten nach oben lesen.</p><p class=\"text-mid\">8 Bit = 1 Byte = Werte 0–255.</p>"
+      "html": "<p class=\"text-mid mb-4\">Împărțiți repetat la 2 și notați resturile. Citiți de jos în sus.</p><p class=\"text-mid\">8 biți = 1 octet = valori 0–255.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Powers of 2: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</li><li>1 byte = 8 bits = 0–255. Common in RGB colors, ASCII codes.</li><li>IP address: 192.168.1.1 = 11000000.10101000.00000001.00000001.</li><li>Negative numbers use two's complement in most systems.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Puterile lui 2: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</li><li>1 octet = 8 biți = 0–255. Frecvent în culori RGB, coduri ASCII.</li><li>Adresă IP: 192.168.1.1 = 11000000.10101000.00000001.00000001.</li><li>Numerele negative folosesc complement față de doi în majoritatea sistemelor.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Digits",
+          "name": "Cifre",
           "values": {
             "unit1": "0–9",
             "unit2": "0–1"
           }
         },
         {
-          "name": "Used by",
+          "name": "Utilizat de",
           "values": {
-            "unit1": "Humans",
-            "unit2": "Computers"
+            "unit1": "Oameni",
+            "unit2": "Calculatoare"
           }
         },
         {
-          "name": "Example: 42",
+          "name": "Exemplu: 42",
           "values": {
             "unit1": "42",
             "unit2": "101010"
           }
         },
         {
-          "name": "Example: 255",
+          "name": "Exemplu: 255",
           "values": {
             "unit1": "255",
             "unit2": "11111111"
           }
         },
         {
-          "name": "Readability",
+          "name": "Lizibilitate",
           "values": {
-            "unit1": "Easy for humans",
-            "unit2": "Long but computer-native"
+            "unit1": "Ușor pentru oameni",
+            "unit2": "Lung dar nativ pentru calculatoare"
           }
         }
       ]
@@ -237,15 +237,15 @@
       "items": [
         {
           "question": "Ce este 10 in Binär?",
-          "answer": "Dezimal 10 = Binär 1010 (8+2)."
+          "answer": "Zecimal 10 = Binar 1010 (8+2)."
         },
         {
           "question": "Ce este 255 in Binär?",
-          "answer": "255 = 11111111 (acht Einsen). Maximum eines Bytes."
+          "answer": "255 = 11111111 (opt de unu). Maximul unui octet."
         },
         {
           "question": "Calculele se fac local?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Da. Toate calculele se efectuează în browserul dumneavoastră."
         }
       ]
     },

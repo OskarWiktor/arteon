@@ -101,22 +101,22 @@
         {
           "icon": "RiCodeSSlashLine",
           "title": "Webfejlesztés",
-          "description": "Ile px ma p-6? Odpowiedź: 24 px (1,5 rem)."
+          "description": "Hány px a p-6? Válasz: 24 px (1,5 rem)."
         },
         {
           "icon": "RiLayout2Line",
-          "title": "Konwersja z Figma",
-          "description": "Projekt w px → odpowiednie klasy Tailwind."
+          "title": "Figma konverzió",
+          "description": "Terv px-ben → megfelelő Tailwind osztályok."
         },
         {
           "icon": "RiRulerLine",
           "title": "Tervezés és mérés",
-          "description": "Dopasowanie układu do wymaganego projektu graficznego."
+          "description": "Az elrendezés illesztése a szükséges grafikai tervhez."
         },
         {
           "icon": "RiTeamLine",
-          "title": "Współpraca z designerami",
-          "description": "Designer podaje px, programista potrzebuje klas Tailwind."
+          "title": "Együttműködés designerekkel",
+          "description": "A designer px-t ad meg, a fejlesztőnek Tailwind osztályok kellenek."
         }
       ]
     },
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Mennyi ist p-4 in Pixel?",
-          "answer": "p-4 = 1rem = 16px bei der Standard-Wurzelschriftgröße."
+          "question": "Mennyi p-4 pixelben?",
+          "answer": "p-4 = 1rem = 16px az alapértelmezett gyökér betűméretnél."
         },
         {
-          "question": "Was sind die Tailwind-Breakpoints in Pixel?",
+          "question": "Mik a Tailwind breakpointok pixelben?",
           "answer": "sm = 640px, md = 768px, lg = 1024px, xl = 1280px, 2xl = 1536px."
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

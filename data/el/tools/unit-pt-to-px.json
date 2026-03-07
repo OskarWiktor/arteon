@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Pt σε px?",
-      "html": "<p class=\"text-mid mb-4\">Points (pt) are a typographic unit used in print design: 1 pt = 1/72 inch. Pixels (px) are screen units. At the standard 96 PPI screen resolution: 1 pt = 1.333 px (96/72).</p><p class=\"text-mid mb-4\">This conversion is essential when translating print designs to web, setting CSS font sizes from print specifications, and understanding the relationship between print and screen typography.</p><p class=\"text-mid mb-4\">Common sizes: 12 pt = 16 px (browser default), 10 pt = 13.3 px, 14 pt = 18.7 px, 18 pt = 24 px, 24 pt = 32 px.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Τα σημεία (pt) είναι μια τυπογραφική μονάδα που χρησιμοποιείται στην εκτύπωση: 1 pt = 1/72 ίντσας. Τα pixel (px) είναι μονάδες οθόνης. Στην τυπική ανάλυση 96 PPI: 1 pt = 1,333 px (96/72).</p><p class=\"text-mid mb-4\">Αυτή η μετατροπή είναι απαραίτητη όταν μεταφέρετε σχέδια εκτύπωσης στο web, ρυθμίζετε μεγέθη γραμματοσειρών CSS από προδιαγραφές εκτύπωσης και θέλετε να κατανοήσετε τη σχέση μεταξύ τυπογραφίας εκτύπωσης και οθόνης.</p><p class=\"text-mid mb-4\">Συνηθισμένα μεγέθη: 12 pt = 16 px (προεπιλογή browser), 10 pt = 13,3 px, 14 pt = 18,7 px, 18 pt = 24 px, 24 pt = 32 px.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας — τίποτα δεν αποστέλλεται σε κανέναν server.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Pt σε px – Arteon"
     },
@@ -101,22 +101,22 @@
         {
           "icon": "RiPaintBrushLine",
           "title": "Γραφιστικός σχεδιασμός",
-          "description": "Eksport wielkości czcionek z Figma/Sketch do CSS: 12 pt = 16 px."
+          "description": "Εξαγωγή μεγεθών γραμματοσειρών από Figma/Sketch σε CSS: 12 pt = 16 px."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Dokumenty",
-          "description": "Konwersja rozmiarów z Word/InDesign na wartości pikselowe."
+          "title": "Έγγραφα",
+          "description": "Μετατροπή μεγεθών από Word/InDesign σε τιμές pixel."
         },
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web ανάπτυξη",
-          "description": "Przeliczanie pt na px przy kodowaniu styli czcionek."
+          "description": "Μετατροπή pt σε px κατά τον προγραμματισμό στυλ γραμματοσειρών."
         },
         {
           "icon": "RiPrinterLine",
           "title": "Εκτύπωση",
-          "description": "Dopasowanie wielkości tekstu do wyświetlania na ekranie."
+          "description": "Αντιστοίχιση μεγεθών κειμένου μεταξύ εκτύπωσης και οθόνης."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">1 point = 1/72 inch. At 96 PPI (standard Windows/web): 1 pt = 96/72 = 1.333 px. At 72 PPI (old Mac): 1 pt = 1 px.</p><p class=\"text-mid mb-4\">The formula: px = pt × PPI / 72. At 96 PPI: px = pt × 1.333.</p><p class=\"text-mid\">CSS defines 1 px as 1/96 of an inch (at 96 DPI). On high-DPI screens, 1 CSS px may be multiple device pixels.</p>"
+      "html": "<p class=\"text-mid mb-4\">1 σημείο = 1/72 ίντσας. Στα 96 PPI (τυπικό Windows/web): 1 pt = 96/72 = 1,333 px. Στα 72 PPI (παλαιό Mac): 1 pt = 1 px.</p><p class=\"text-mid mb-4\">Ο τύπος: px = pt × PPI / 72. Στα 96 PPI: px = pt × 1,333.</p><p class=\"text-mid\">Το CSS ορίζει 1 px ως 1/96 της ίντσας (στα 96 DPI). Σε οθόνες υψηλής ανάλυσης, 1 CSS px μπορεί να αντιστοιχεί σε πολλαπλά pixel συσκευής.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Browser default: 12 pt = 16 px = 1 rem.</li><li>Common conversions: 8 pt = 10.7 px, 10 pt = 13.3 px, 11 pt = 14.7 px, 12 pt = 16 px, 14 pt = 18.7 px.</li><li>Word default body: 11 pt = 14.7 px. Google Docs: 11 pt.</li><li>Minimum readable: 9 pt = 12 px on screen. Print can be smaller (6–7 pt fine print).</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Προεπιλογή browser: 12 pt = 16 px = 1 rem.</li><li>Συνηθισμένες μετατροπές: 8 pt = 10,7 px, 10 pt = 13,3 px, 11 pt = 14,7 px, 12 pt = 16 px, 14 pt = 18,7 px.</li><li>Προεπιλογή κειμένου Word: 11 pt = 14,7 px. Google Docs: 11 pt.</li><li>Ελάχιστο αναγνώσιμο: 9 pt = 12 px σε οθόνη. Η εκτύπωση μπορεί να είναι μικρότερη (6–7 pt ψιλά γράμματα).</li></ul>"
     },
     {
       "type": "gap",
@@ -190,17 +190,17 @@
       ],
       "features": [
         {
-          "name": "Definition",
+          "name": "Ορισμός",
           "values": {
-            "unit1": "1/72 inch",
-            "unit2": "1/96 inch (CSS)"
+            "unit1": "1/72 ίντσας",
+            "unit2": "1/96 ίντσας (CSS)"
           }
         },
         {
-          "name": "Used in",
+          "name": "Χρήση σε",
           "values": {
-            "unit1": "Print, Word, PDF",
-            "unit2": "Web, CSS, screens"
+            "unit1": "Εκτύπωση, Word, PDF",
+            "unit2": "Web, CSS, οθόνες"
           }
         },
         {
@@ -211,14 +211,14 @@
           }
         },
         {
-          "name": "Body text",
+          "name": "Κύριο κείμενο",
           "values": {
             "unit1": "10–12 pt",
             "unit2": "14–18 px"
           }
         },
         {
-          "name": "Heading",
+          "name": "Επικεφαλίδα",
           "values": {
             "unit1": "18–24 pt",
             "unit2": "24–32 px"
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Πόσα Pixel sind 12 pt?",
-          "answer": "12 pt = 16 px bei 96 PPI. Das είναι η τυπική μονάδα-Schriftgröße der Browser."
+          "question": "Πόσα pixel είναι 12 pt;",
+          "answer": "12 pt = 16 px στα 96 PPI. Αυτό είναι το τυπικό μέγεθος γραμματοσειράς των browser."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },

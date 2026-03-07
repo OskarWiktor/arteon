@@ -101,22 +101,22 @@
         {
           "icon": "RiCodeSSlashLine",
           "title": "Webfejlesztés",
-          "description": "Operacje bitowe, maski, flagi: 0xFF = 11111111."
+          "description": "Bitműveletek, maszkok, jelzők: 0xFF = 11111111."
         },
         {
           "icon": "RiWifiLine",
           "title": "Internet",
-          "description": "Maski podsieci: 255.255.255.0 = /24 (24 jedynki binarnie)."
+          "description": "Alhálózati maszkok: 255.255.255.0 = /24 (24 egyes binárisan)."
         },
         {
           "icon": "RiShieldKeyholeLine",
-          "title": "Uprawnienia Unix",
-          "description": "chmod 755 = 111 101 101 binarnie."
+          "title": "Unix jogosultságok",
+          "description": "chmod 755 = 111 101 101 binárisan."
         },
         {
           "icon": "RiCpuLine",
           "title": "Elektronika",
-          "description": "Rejestry, porty I/O, protokoły komunikacyjne."
+          "description": "Regiszterek, I/O portok, kommunikációs protokollok."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">Wiederholt durch 2 teilen und Reste notieren. Von unten nach oben lesen.</p><p class=\"text-mid\">8 Bit = 1 Byte = Werte 0–255.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ismételten ossza el 2-vel és jegyezze fel a maradékokat. Alulról felfelé olvassa.</p><p class=\"text-mid\">8 bit = 1 bájt = értékek 0–255.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Powers of 2: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</li><li>1 byte = 8 bits = 0–255. Common in RGB colors, ASCII codes.</li><li>IP address: 192.168.1.1 = 11000000.10101000.00000001.00000001.</li><li>Negative numbers use two's complement in most systems.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>A 2 hatványai: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024.</li><li>1 bájt = 8 bit = 0–255. Gyakori RGB színeknél, ASCII kódoknál.</li><li>IP cím: 192.168.1.1 = 11000000.10101000.00000001.00000001.</li><li>Negatív számok kettes komplemens ábrázolást használnak a legtöbb rendszerben.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Digits",
+          "name": "Számjegyek",
           "values": {
             "unit1": "0–9",
             "unit2": "0–1"
           }
         },
         {
-          "name": "Used by",
+          "name": "Használja",
           "values": {
-            "unit1": "Humans",
-            "unit2": "Computers"
+            "unit1": "Emberek",
+            "unit2": "Számítógépek"
           }
         },
         {
-          "name": "Example: 42",
+          "name": "Példa: 42",
           "values": {
             "unit1": "42",
             "unit2": "101010"
           }
         },
         {
-          "name": "Example: 255",
+          "name": "Példa: 255",
           "values": {
             "unit1": "255",
             "unit2": "11111111"
           }
         },
         {
-          "name": "Readability",
+          "name": "Olvashatóság",
           "values": {
-            "unit1": "Easy for humans",
-            "unit2": "Long but computer-native"
+            "unit1": "Könnyű az embereknek",
+            "unit2": "Hosszú, de a számítógép natív nyelve"
           }
         }
       ]
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Mi az a 10 in Binär?",
-          "answer": "Dezimal 10 = Binär 1010 (8+2)."
+          "question": "Mi a 10 binárisban?",
+          "answer": "Decimális 10 = Bináris 1010 (8+2)."
         },
         {
           "question": "Mi az a 255 in Binär?",
-          "answer": "255 = 11111111 (acht Einsen). Maximum eines Bytes."
+          "answer": "255 = 11111111 (nyolc egyes). Egy bájt maximuma."
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

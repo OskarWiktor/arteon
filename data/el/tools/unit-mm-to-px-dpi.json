@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: Mm σε px?",
-      "html": "<p class=\"text-mid mb-4\">Bei Präzisionsarbeiten werden Maße in Millimetern angegeben. Für digitale Bilder: Pixel = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">Bei 300 DPI: 1 mm = 11,81 Pixel, 85 mm (Visitenkartenbreite) = 1.004 Pixel.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Σε εργασίες ακριβείας οι διαστάσεις δίνονται σε χιλιοστά. Για ψηφιακές εικόνες: Pixel = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">Στα 300 DPI: 1 mm = 11,81 pixel, 85 mm (πλάτος κάρτας) = 1.004 pixel.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Mm σε px – Arteon"
     },
@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Ulotki",
+          "title": "Φυλλάδια",
           "description": "Ulotka DL 99 × 210 mm = 1 169 × 2 480 px przy 300 DPI."
         },
         {
           "icon": "RiCropLine",
-          "title": "Spady (bleed)",
+          "title": "Περιθώριο αφαίρεσης (bleed)",
           "description": "Oblicz dodatkowe piksele na 3–5 mm spadów wymaganych przez drukarnię."
         },
         {
           "icon": "RiRulerLine",
           "title": "Σχεδιασμός και μέτρηση",
-          "description": "Precyzyjne wymiary etykiet, naklejek i opakowaniach w mm → px."
+          "description": "Ακριβείς διαστάσεις ετικετών, αυτοκόλλητων και συσκευασιών σε mm → px."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">The formula is: pixels = mm × DPI / 25.4. Since 1 inch = 25.4 mm exactly.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 mm = 11.811 pixels. At 600 DPI: 1 mm = 23.622 pixels.</p><p class=\"text-mid\">For bleed area: add 3 mm (standard) to each edge. A 100 × 50 mm design with 3 mm bleed = 106 × 56 mm = 1,252 × 661 px at 300 DPI.</p>"
+      "html": "<p class=\"text-mid mb-4\">Ο τύπος είναι: pixel = mm × DPI / 25,4. Αφού 1 ίντσα = 25,4 mm ακριβώς.</p><p class=\"text-mid mb-4\">Στα 300 DPI: 1 mm = 11,811 pixel. Στα 600 DPI: 1 mm = 23,622 pixel.</p><p class=\"text-mid\">Για περιοχή bleed: προσθέστε 3 mm (τυπικό) σε κάθε πλευρά. Σχέδιο 100 × 50 mm με 3 mm bleed = 106 × 56 mm = 1.252 × 661 px στα 300 DPI.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Business card: 85 × 55 mm + 3 mm bleed = 91 × 61 mm = 1,075 × 720 px at 300 DPI.</li><li>Standard label: 50 × 25 mm at 300 DPI = 591 × 295 px.</li><li>Wine label: 90 × 120 mm at 300 DPI = 1,063 × 1,417 px.</li><li>Minimum text: 8pt font needs at least 150 DPI to be readable.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Κάρτα: 85 × 55 mm + 3 mm bleed = 91 × 61 mm = 1.075 × 720 px στα 300 DPI.</li><li>Ετικέτα: 50 × 25 mm στα 300 DPI = 591 × 295 px.</li><li>Ετικέτα κρασιού: 90 × 120 mm στα 300 DPI = 1.063 × 1.417 px.</li><li>Ελάχιστο κείμενο: γραμματοσειρά 8pt χρειάζεται τουλάχιστον 150 DPI για αναγνωσιμότητα.</li></ul>"
     },
     {
       "type": "gap",
@@ -175,7 +175,7 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "MM to pixels at various DPI",
+      "title": "MM σε pixel σε διάφορα DPI",
       "featureLabel": "Ιδιότητα",
       "plans": [
         {
@@ -204,24 +204,24 @@
           }
         },
         {
-          "name": "85 mm (card)",
+          "name": "85 mm (κάρτα)",
           "values": {
             "unit1": "1,004 px",
             "unit2": "2,008 px"
           }
         },
         {
-          "name": "Use case",
+          "name": "Χρήση",
           "values": {
-            "unit1": "Standard print",
-            "unit2": "Fine art / medical"
+            "unit1": "Τυπική εκτύπωση",
+            "unit2": "Καλλιτεχνική / ιατρική"
           }
         },
         {
-          "name": "File size",
+          "name": "Μέγεθος αρχείου",
           "values": {
-            "unit1": "Standard",
-            "unit2": "4× larger"
+            "unit1": "Τυπικό",
+            "unit2": "4× μεγαλύτερο"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Πόσα Pixel sind 1 mm bei 300 DPI?",
-          "answer": "1 mm bei 300 DPI = 11,811 Pixel."
+          "question": "Πόσα pixel είναι 1 mm στα 300 DPI;",
+          "answer": "1 mm στα 300 DPI = 11,811 pixel."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },

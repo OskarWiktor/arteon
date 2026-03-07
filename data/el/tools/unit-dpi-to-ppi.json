@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Ekrany i wyświetlacze",
+          "title": "Οθόνες",
           "description": "iPhone 15 Pro: 460 PPI. Monitor 27″ 4K: 163 PPI."
         },
         {
           "icon": "RiImageLine",
-          "title": "Eksport grafik",
+          "title": "Εξαγωγή γραφικών",
           "description": "Photoshop “DPI” = PPI. 72 DPI dla web, 300 DPI dla druku."
         },
         {
           "icon": "RiQuestionLine",
-          "title": "Edukacja",
-          "description": "Zrozum różnicę między DPI (druk) a PPI (ekran)."
+          "title": "Εκπαίδευση",
+          "description": "Κατανοήστε τη διαφορά μεταξύ DPI (εκτύπωση) και PPI (οθόνη)."
         }
       ]
     },
@@ -157,7 +157,7 @@
     },
     {
       "type": "sectionInfo",
-      "title": "How do DPI and PPI relate?",
+      "title": "Πώς σχετίζονται DPI και PPI;",
       "html": "<p class=\"text-mid mb-4\">Numerically, DPI and PPI use the same value when specifying image resolution for print. A “300 DPI” image file is actually 300 PPI — it has 300 pixels per inch.</p><p class=\"text-mid mb-4\">The printer then uses its own DPI to reproduce each pixel. A 1200 DPI printer uses ~16 dots (4×4) to reproduce each pixel of a 300 PPI image.</p><p class=\"text-mid\">For most practical purposes, DPI and PPI are interchangeable when discussing image resolution. The distinction matters mainly in pre-press and printer calibration.</p>"
     },
     {
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Applies to",
+          "name": "Εφαρμόζεται σε",
           "values": {
-            "unit1": "Printers",
-            "unit2": "Screens and images"
+            "unit1": "Εκτυπωτές",
+            "unit2": "Οθόνες και εικόνες"
           }
         },
         {
-          "name": "Measures",
+          "name": "Μετράει",
           "values": {
-            "unit1": "Physical ink dots",
-            "unit2": "Digital pixels"
+            "unit1": "Φυσικές κουκκίδες μελανιού",
+            "unit2": "Ψηφιακά pixel"
           }
         },
         {
-          "name": "Typical values",
+          "name": "Τυπικές τιμές",
           "values": {
             "unit1": "600–4800 DPI",
             "unit2": "72–460 PPI"
           }
         },
         {
-          "name": "Print quality",
+          "name": "Ποιότητα εκτύπωσης",
           "values": {
-            "unit1": "Higher = finer detail",
-            "unit2": "300 PPI standard"
+            "unit1": "Υψηλότερο = λεπτότερη λεπτομέρεια",
+            "unit2": "300 PPI πρότυπο"
           }
         },
         {
-          "name": "Common confusion",
+          "name": "Συνηθισμένη σύγχυση",
           "values": {
-            "unit1": "Used for images (incorrectly)",
-            "unit2": "Correct term for images"
+            "unit1": "Χρήση για εικόνες (λανθασμένα)",
+            "unit2": "Σωστός όρος για εικόνες"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Ist DPI gleich PPI?",
-          "answer": "Nicht genau. DPI misst Druckerpunkte, PPI Bildschirm-/Bildpixel. In der Praxis sind sie für die Bildauflösung austauschbar."
+          "question": "Είναι το DPI ίδιο με το PPI;",
+          "answer": "Όχι ακριβώς. Το DPI μετράει κουκκίδες εκτυπωτή, το PPI pixel οθόνης/εικόνας. Στην πράξη χρησιμοποιούνται εναλλακτικά για την ανάλυση εικόνας."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },

@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiCodeSSlashLine",
-          "title": "Debugowanie CSS",
-          "description": "Ile px ma p-6? Odpowiedź: 24 px (1,5 rem)."
+          "title": "CSS Debugging",
+          "description": "How many px is p-6? Answer: 24 px (1.5 rem)."
         },
         {
           "icon": "RiLayout2Line",
-          "title": "Konwersja z Figma",
-          "description": "Projekt w px → odpowiednie klasy Tailwind."
+          "title": "Figma Conversion",
+          "description": "Design in px → matching Tailwind classes."
         },
         {
           "icon": "RiRulerLine",
           "title": "Pixel-perfect",
-          "description": "Dopasowanie układu do wymaganego projektu graficznego."
+          "description": "Match the layout to the required graphic design."
         },
         {
           "icon": "RiTeamLine",
-          "title": "Współpraca z designerami",
-          "description": "Designer podaje px, programista potrzebuje klas Tailwind."
+          "title": "Designer Collaboration",
+          "description": "The designer provides px, the developer needs Tailwind classes."
         }
       ]
     },

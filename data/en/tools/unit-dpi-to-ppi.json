@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPrinterLine",
-          "title": "Przygotowanie do druku",
-          "description": "Drukarnia żąda 300 DPI – oznacza to, że grafika musi mieć 300 PPI."
+          "title": "Print Preparation",
+          "description": "The printer requires 300 DPI — this means the image must be 300 PPI."
         },
         {
           "icon": "RiMonitorLine",
-          "title": "Ekrany i wyświetlacze",
-          "description": "iPhone 15 Pro: 460 PPI. Monitor 27″ 4K: 163 PPI."
+          "title": "Screens & Displays",
+          "description": "iPhone 15 Pro: 460 PPI. 27″ 4K monitor: 163 PPI."
         },
         {
           "icon": "RiImageLine",
-          "title": "Eksport grafik",
-          "description": "Photoshop “DPI” = PPI. 72 DPI dla web, 300 DPI dla druku."
+          "title": "Graphics Export",
+          "description": "Photoshop \"DPI\" = PPI. 72 DPI for web, 300 DPI for print."
         },
         {
           "icon": "RiQuestionLine",
-          "title": "Edukacja",
-          "description": "Zrozum różnicę między DPI (druk) a PPI (ekran)."
+          "title": "Education",
+          "description": "Understand the difference between DPI (print) and PPI (screen)."
         }
       ]
     },

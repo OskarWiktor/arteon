@@ -100,23 +100,23 @@
       "items": [
         {
           "icon": "RiPaintBrushLine",
-          "title": "Projektowanie UI",
-          "description": "Eksport wielkości czcionek z Figma/Sketch do CSS: 12 pt = 16 px."
+          "title": "UI Design",
+          "description": "Export font sizes from Figma/Sketch to CSS: 12 pt = 16 px."
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Dokumenty",
-          "description": "Konwersja rozmiarów z Word/InDesign na wartości pikselowe."
+          "title": "Documents",
+          "description": "Convert sizes from Word/InDesign to pixel values for the web."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "CSS / frontend",
-          "description": "Przeliczanie pt na px przy kodowaniu styli czcionek."
+          "title": "CSS / Frontend",
+          "description": "Convert pt to px when coding font styles in stylesheets."
         },
         {
           "icon": "RiPrinterLine",
-          "title": "Druk vs ekran",
-          "description": "Dopasowanie wielkości tekstu do wyświetlania na ekranie."
+          "title": "Print vs Screen",
+          "description": "Match text sizes between print layouts and on-screen display."
         }
       ]
     },

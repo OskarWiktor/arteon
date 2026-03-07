@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: Mm px-re?",
-      "html": "<p class=\"text-mid mb-4\">Bei Präzisionsarbeiten werden Maße in Millimetern angegeben. Für digitale Bilder: Pixel = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">Bei 300 DPI: 1 mm = 11,81 Pixel, 85 mm (Visitenkartenbreite) = 1.004 Pixel.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Precíziós munkáknál a méreteket milliméterben adják meg. Digitális képeknél: Pixel = mm × DPI / 25,4.</p><p class=\"text-mid mb-4\">300 DPI-nál: 1 mm = 11,81 pixel, 85 mm (névjegykártya szélesség) = 1.004 pixel.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Mm px-re – Arteon"
     },
@@ -105,18 +105,18 @@
         },
         {
           "icon": "RiFileTextLine",
-          "title": "Ulotki",
+          "title": "Szórólapok",
           "description": "Ulotka DL 99 × 210 mm = 1 169 × 2 480 px przy 300 DPI."
         },
         {
           "icon": "RiCropLine",
-          "title": "Spady (bleed)",
+          "title": "Kifutó (bleed)",
           "description": "Oblicz dodatkowe piksele na 3–5 mm spadów wymaganych przez drukarnię."
         },
         {
           "icon": "RiRulerLine",
           "title": "Tervezés és mérés",
-          "description": "Precyzyjne wymiary etykiet, naklejek i opakowaniach w mm → px."
+          "description": "Címkék, matricák és csomagolások pontos méretei mm → px."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">The formula is: pixels = mm × DPI / 25.4. Since 1 inch = 25.4 mm exactly.</p><p class=\"text-mid mb-4\">At 300 DPI: 1 mm = 11.811 pixels. At 600 DPI: 1 mm = 23.622 pixels.</p><p class=\"text-mid\">For bleed area: add 3 mm (standard) to each edge. A 100 × 50 mm design with 3 mm bleed = 106 × 56 mm = 1,252 × 661 px at 300 DPI.</p>"
+      "html": "<p class=\"text-mid mb-4\">A képlet: pixel = mm × DPI / 25,4. Mivel 1 hüvelyk = pontosan 25,4 mm.</p><p class=\"text-mid mb-4\">300 DPI-nál: 1 mm = 11,811 pixel. 600 DPI-nál: 1 mm = 23,622 pixel.</p><p class=\"text-mid\">Kifutó területhez: adjon hozzá 3 mm-t (szabványos) minden szélhez. Egy 100 × 50 mm-es terv 3 mm kifutóval = 106 × 56 mm = 1.252 × 661 px 300 DPI-nál.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Business card: 85 × 55 mm + 3 mm bleed = 91 × 61 mm = 1,075 × 720 px at 300 DPI.</li><li>Standard label: 50 × 25 mm at 300 DPI = 591 × 295 px.</li><li>Wine label: 90 × 120 mm at 300 DPI = 1,063 × 1,417 px.</li><li>Minimum text: 8pt font needs at least 150 DPI to be readable.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Névjegykártya: 85 × 55 mm + 3 mm kifutó = 91 × 61 mm = 1.075 × 720 px 300 DPI-nál.</li><li>Címke: 50 × 25 mm 300 DPI-nál = 591 × 295 px.</li><li>Borcímke: 90 × 120 mm 300 DPI-nál = 1.063 × 1.417 px.</li><li>Minimum szöveg: 8pt betűmérethez legalább 150 DPI szükséges az olvashatósághoz.</li></ul>"
     },
     {
       "type": "gap",
@@ -175,7 +175,7 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "MM to pixels at various DPI",
+      "title": "MM pixelre különböző DPI-nél",
       "featureLabel": "Tulajdonság",
       "plans": [
         {
@@ -204,24 +204,24 @@
           }
         },
         {
-          "name": "85 mm (card)",
+          "name": "85 mm (névjegy)",
           "values": {
             "unit1": "1,004 px",
             "unit2": "2,008 px"
           }
         },
         {
-          "name": "Use case",
+          "name": "Felhasználás",
           "values": {
-            "unit1": "Standard print",
-            "unit2": "Fine art / medical"
+            "unit1": "Szabványos nyomtatás",
+            "unit2": "Műalkotás / orvosi"
           }
         },
         {
-          "name": "File size",
+          "name": "Fájlméret",
           "values": {
-            "unit1": "Standard",
-            "unit2": "4× larger"
+            "unit1": "Szabványos",
+            "unit2": "4× nagyobb"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Hány Pixel sind 1 mm bei 300 DPI?",
-          "answer": "1 mm bei 300 DPI = 11,811 Pixel."
+          "question": "Hány pixel 1 mm 300 DPI-nál?",
+          "answer": "1 mm 300 DPI-nál = 11,811 pixel."
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Mikor kell használni: Cm px-re?",
-      "html": "<p class=\"text-mid mb-4\">Im Druckdesign werden Maße in Zentimetern angegeben, digitale Bilder jedoch in Pixeln. Die átváltás hängt von der DPI-Auflösung ab: Pixel = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Standard-Druckauflösung 300 DPI: 10 cm = 1.181 Pixel, A4-Breite (21 cm) = 2.480 Pixel.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">A nyomtatott tervezésben a méretek centiméterben vannak megadva, a digitális képek viszont pixelekben. Az átváltás a DPI-felbontástól függ: Pixel = cm × DPI / 2,54.</p><p class=\"text-mid mb-4\">Szabványos nyomtatási felbontás 300 DPI: 10 cm = 1.181 pixel, A4 szélesség (21 cm) = 2.480 pixel.</p><p class=\"text-mid\">Minden számítás helyben, a böngészőjében történik.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Cm px-re – Arteon"
     },
@@ -105,17 +105,17 @@
         },
         {
           "icon": "RiImageLine",
-          "title": "Grafika na stronę",
+          "title": "Webes grafika",
           "description": "Baner 20 × 6 cm przy 96 DPI = 756 × 227 px."
         },
         {
           "icon": "RiArtboardLine",
           "title": "Social media",
-          "description": "Oblicz wymiary pikseli dla grafik o zadanym rozmiarze fizycznym."
+          "description": "Számítsa ki a pixelméreteket adott fizikai méretű grafikákhoz."
         },
         {
           "icon": "RiLayoutLine",
-          "title": "Fotoksiążki",
+          "title": "Fotókönyvek",
           "description": "Számítsa át a fotókönyv oldalméreteit (cm) a nyomda pixelekövetelményeire."
         }
       ]
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Hogyan működik az átváltás?",
-      "html": "<p class=\"text-mid mb-4\">Formel: Pixel = cm × DPI / 2,54. Bei 300 DPI: 1 cm = 118,11 Pixel.</p><p class=\"text-mid\">Mehr DPI = mehr Pixel pro cm = schärferer Druck. 300 DPI ist der professionelle Standard.</p>"
+      "html": "<p class=\"text-mid mb-4\">Képlet: Pixel = cm × DPI / 2,54. 300 DPI-nál: 1 cm = 118,11 pixel.</p><p class=\"text-mid\">Több DPI = több pixel cm-enként = élesebb nyomtatás. 300 DPI a professzionális szabvány.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Gyakorlati tippek",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>300 DPI (print quality): A4 = 2,480 × 3,508 px, A3 = 3,508 × 4,961 px.</li><li>150 DPI (large format): A2 poster = 2,480 × 3,508 px.</li><li>72 DPI (screen): 10 cm = 283 px, 20 cm = 567 px.</li><li>12 MP camera (4,000 × 3,000 px) prints up to 33.9 × 25.4 cm at 300 DPI.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>300 DPI (nyomtatási minőség): A4 = 2.480 × 3.508 px, A3 = 3.508 × 4.961 px.</li><li>150 DPI (nagy formátum): A2 poszter = 2.480 × 3.508 px.</li><li>72 DPI (képernyő): 10 cm = 283 px, 20 cm = 567 px.</li><li>12 MP kamera (4.000 × 3.000 px) maximum 33,9 × 25,4 cm-es nyomtatást ad 300 DPI-nál.</li></ul>"
     },
     {
       "type": "gap",
@@ -175,7 +175,7 @@
     },
     {
       "type": "sectionFeatureComparison",
-      "title": "Common DPI resolutions",
+      "title": "Gyakori DPI-felbontások",
       "featureLabel": "Tulajdonság",
       "plans": [
         {
@@ -197,31 +197,31 @@
           }
         },
         {
-          "name": "A4 width (21 cm)",
+          "name": "A4 szélesség (21 cm)",
           "values": {
             "unit1": "2,480 px",
             "unit2": "595 px"
           }
         },
         {
-          "name": "A4 height (29.7 cm)",
+          "name": "A4 magasság (29,7 cm)",
           "values": {
             "unit1": "3,508 px",
             "unit2": "842 px"
           }
         },
         {
-          "name": "Use case",
+          "name": "Felhasználás",
           "values": {
-            "unit1": "Professional print",
-            "unit2": "Web graphics"
+            "unit1": "Professzionális nyomtatás",
+            "unit2": "Webes grafika"
           }
         },
         {
-          "name": "Quality",
+          "name": "Minőség",
           "values": {
-            "unit1": "Sharp at any size",
-            "unit2": "Screen-only"
+            "unit1": "Éles minden méretben",
+            "unit2": "Csak képernyőre"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Hány Pixel sind 1 cm bei 300 DPI?",
-          "answer": "1 cm bei 300 DPI = 118,11 Pixel."
+          "question": "Hány pixel 1 cm 300 DPI-nál?",
+          "answer": "1 cm 300 DPI-nál = 118,11 pixel."
         },
         {
           "question": "Helyben történnek a számítások?",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Igen. Minden számítás a böngészőjében történik."
         }
       ]
     },

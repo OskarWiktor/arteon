@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Când trebuie să folosiți: Bytes în KB/MB/GB?",
-      "html": "<p class=\"text-mid mb-4\">Digital storage is measured in bytes and its multiples: kilobytes (KB), megabytes (MB), gigabytes (GB), and terabytes (TB). There are two systems: decimal (1 KB = 1,000 bytes) and binary (1 KiB = 1,024 bytes).</p><p class=\"text-mid mb-4\">Storage manufacturers use decimal units (a \"500 GB\" drive = 500,000,000,000 bytes), while operating systems often use binary units (showing ~465 GiB for the same drive). This discrepancy is a common source of confusion.</p><p class=\"text-mid mb-4\">File sizes, RAM, network speeds, and storage capacity all use different conventions. This converter handles both systems to eliminate confusion.</p><p class=\"text-mid\">All calculations run locally in your browser — nothing is sent to any server.</p>",
+      "html": "<p class=\"text-mid mb-4\">Stocarea digitală se măsoară în octeți și multiplii acestora: kiloocteți (KB), megaocteți (MB), gigaocteți (GB) și teraocteți (TB). Există două sisteme: zecimal (1 KB = 1.000 octeți) și binar (1 KiB = 1.024 octeți).</p><p class=\"text-mid mb-4\">Producătorii folosesc unități zecimale (disc \"500 GB\" = 500.000.000.000 octeți), în timp ce sistemele de operare folosesc unități binare (~465 GiB pentru același disc). Această discrepanță este o sursă frecventă de confuzie.</p><p class=\"text-mid mb-4\">Dimensiunile fișierelor, RAM, vitezele de rețea și capacitatea de stocare folosesc convenții diferite. Acest convertor gestionează ambele sisteme.</p><p class=\"text-mid\">Toate calculele se efectuează local în browserul dumneavoastră.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "Bytes în KB/MB/GB – Arteon"
     },
@@ -100,22 +100,22 @@
       "items": [
         {
           "icon": "RiHardDriveLine",
-          "title": "Pojemność dysków",
+          "title": "Capacitate discuri",
           "description": "Dysk 1 TB (producent) = 931 GB w systemie binarnym."
         },
         {
           "icon": "RiUploadCloudLine",
-          "title": "Limity przesyłania",
+          "title": "Limite de upload",
           "description": "Załącznik e-mail: 25 MB = 26 214 400 B."
         },
         {
           "icon": "RiServerLine",
-          "title": "Serwery",
-          "description": "Planowanie pojemności: RAM, dyski, transfer."
+          "title": "Servere",
+          "description": "Planificarea capacității: RAM, discuri, transfer."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Pamięć urządzeń",
+          "title": "Memorie dispozitiv",
           "description": "Telefon 128 GB = 137 438 953 472 B."
         }
       ]
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Cum funcționează conversia?",
-      "html": "<p class=\"text-mid mb-4\">In the decimal (SI) system: 1 KB = 1,000 bytes, 1 MB = 1,000 KB, 1 GB = 1,000 MB, 1 TB = 1,000 GB. Each step multiplies by 1,000.</p><p class=\"text-mid mb-4\">In the binary (IEC) system: 1 KiB = 1,024 bytes, 1 MiB = 1,024 KiB, 1 GiB = 1,024 MiB, 1 TiB = 1,024 GiB. Each step multiplies by 1,024.</p><p class=\"text-mid\">The difference grows with size: 1 TB (decimal) = 0.909 TiB (binary). A \"2 TB\" drive shows as approximately 1.82 TiB in most operating systems.</p>"
+      "html": "<p class=\"text-mid mb-4\">În sistemul zecimal (SI): 1 KB = 1.000 octeți, 1 MB = 1.000 KB, 1 GB = 1.000 MB, 1 TB = 1.000 GB. Fiecare pas se înmulțește cu 1.000.</p><p class=\"text-mid mb-4\">În sistemul binar (IEC): 1 KiB = 1.024 octeți, 1 MiB = 1.024 KiB, 1 GiB = 1.024 MiB, 1 TiB = 1.024 GiB. Fiecare pas se înmulțește cu 1.024.</p><p class=\"text-mid\">Diferența crește cu dimensiunea: 1 TB (zecimal) = 0,909 TiB (binar). Un disc \"2 TB\" apare ca ~1,82 TiB în majoritatea sistemelor de operare.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Sfaturi practice",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>A typical photo (12 MP): 3–5 MB. A 256 GB phone holds ~50,000–85,000 photos.</li><li>A typical song (MP3): 3–5 MB. A 1 GB playlist contains ~200–300 songs.</li><li>A Full HD movie: 4–8 GB. A 4K movie: 15–30 GB.</li><li>1 Mbps = 125 KB/s. A 100 Mbps connection downloads at ~12.5 MB/s.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>Fotografie tipică (12 MP): 3–5 MB. Un telefon de 256 GB conține ~50.000–85.000 fotografii.</li><li>Melodie tipică (MP3): 3–5 MB. O listă de 1 GB conține ~200–300 melodii.</li><li>Film Full HD: 4–8 GB. Film 4K: 15–30 GB.</li><li>1 Mbps = 125 KB/s. O conexiune de 100 Mbps descarcă la ~12,5 MB/s.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,35 +190,35 @@
       ],
       "features": [
         {
-          "name": "Multiplier",
+          "name": "Multiplicator",
           "values": {
             "unit1": "1,000",
             "unit2": "1,024"
           }
         },
         {
-          "name": "Units",
+          "name": "Unități",
           "values": {
             "unit1": "KB, MB, GB, TB",
             "unit2": "KiB, MiB, GiB, TiB"
           }
         },
         {
-          "name": "Used by",
+          "name": "Utilizat de",
           "values": {
-            "unit1": "Storage manufacturers",
-            "unit2": "Operating systems, RAM"
+            "unit1": "Producători de stocare",
+            "unit2": "Sisteme de operare, RAM"
           }
         },
         {
-          "name": "1 TB equals",
+          "name": "1 TB echivalent",
           "values": {
             "unit1": "1,000,000,000,000 bytes",
             "unit2": "1,099,511,627,776 bytes"
           }
         },
         {
-          "name": "Difference at 1 TB",
+          "name": "Diferență la 1 TB",
           "values": {
             "unit1": "1 TB",
             "unit2": "0.909 TiB"
@@ -236,16 +236,16 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Câți MB ist 1 GB?",
-          "answer": "1 GB = 1.000 MB (dezimal) oder 1 GiB = 1.024 MiB (binär)."
+          "question": "Câți MB are 1 GB?",
+          "answer": "1 GB = 1.000 MB (zecimal) sau 1 GiB = 1.024 MiB (binar)."
         },
         {
           "question": "De ce zeigt meine Festplatte weniger Speicher?",
-          "answer": "Hersteller verwenden dezimale Einheiten (1 TB = 1.000.000.000.000 Bytes), aber Ihr Betriebssystem verwendet binäre Einheiten (1 TiB = 1.099.511.627.776 Bytes). Eine „1 TB“-Festplatte zeigt ~931 GiB."
+          "answer": "Producătorii folosesc unități zecimale (1 TB = 1.000.000.000.000 octeți), dar sistemul de operare folosește unități binare Einheiten (1 TiB = 1.099.511.627.776 Bytes). Eine „1 TB“-Festplatte zeigt ~931 GiB."
         },
         {
           "question": "Câți Fotos passen in 1 GB?",
-          "answer": "Ca. 200–300 Fotos bei 3–5 MB (12 MP Smartphone). RAW-Fotos (25–50 MB) passen 20–40 pro GB."
+          "answer": "Aprox. 200–300 fotografii la 3–5 MB (smartphone 12 MP). Fotografii RAW (25–50 MB) încap 20–40 pe GB."
         },
         {
           "question": "Calculele se fac local?",

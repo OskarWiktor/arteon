@@ -59,7 +59,7 @@
     {
       "type": "sectionBasic",
       "title": "Πότε χρειάζεστε: HEX σε RGB?",
-      "html": "<p class=\"text-mid mb-4\">HEX-Farben (#FF5733) und RGB (rgb(255, 87, 51)) stellen dieselben Farben in unterschiedlicher Notation dar. HEX ist in CSS und Design-Tools üblich, RGB in der Programmierung.</p><p class=\"text-mid mb-4\">Jede HEX-Farbe hat 6 Ziffern: die ersten 2 für Rot (00–FF), die nächsten 2 für Grün, die letzten 2 für Blau. RGB verwendet Dezimalwerte 0–255.</p><p class=\"text-mid\">Alle Berechnungen werden lokal in Ihrem Browser durchgeführt.</p>",
+      "html": "<p class=\"text-mid mb-4\">Τα χρώματα HEX (#FF5733) και RGB (rgb(255, 87, 51)) αναπαριστούν τα ίδια χρώματα σε διαφορετική σημειογραφία. Το HEX χρησιμοποιείται συχνά σε CSS και εργαλεία σχεδίασης, το RGB στον προγραμματισμό.</p><p class=\"text-mid mb-4\">Κάθε χρώμα HEX έχει 6 ψηφία: τα πρώτα 2 για κόκκινο (00–FF), τα επόμενα 2 για πράσινο, τα τελευταία 2 για μπλε. Το RGB χρησιμοποιεί δεκαδικές τιμές 0–255.</p><p class=\"text-mid\">Όλοι οι υπολογισμοί εκτελούνται τοπικά στον browser σας.</p>",
       "imageSrc": "/assets/tools/jpg-png-to-webp-converter/jpg-png-to-webp-unlimited-en.webp",
       "imageAlt": "HEX σε RGB – Arteon"
     },
@@ -101,22 +101,22 @@
         {
           "icon": "RiCodeSSlashLine",
           "title": "Web ανάπτυξη",
-          "description": "Konwertuj <code>#3B82F6</code> na <code>rgb(59, 130, 246)</code> w arkuszach stylów."
+          "description": "Μετατρέψτε <code>#3B82F6</code> σε <code>rgb(59, 130, 246)</code> στα stylesheets σας."
         },
         {
           "icon": "RiPaletteLine",
           "title": "Διαχείριση χρωμάτων",
-          "description": "Eksport kolorów z Figma/Sketch na wartości CSS."
+          "description": "Εξαγωγή χρωμάτων από Figma/Sketch σε τιμές CSS."
         },
         {
           "icon": "RiContrastLine",
-          "title": "Dostępność",
-          "description": "Obliczanie kontrastu WCAG wymaga wartości RGB."
+          "title": "Προσβασιμότητα",
+          "description": "Ο υπολογισμός αντίθεσης WCAG απαιτεί τιμές RGB."
         },
         {
           "icon": "RiBrushLine",
-          "title": "Palety kolorów",
-          "description": "Modyfikowanie poszczególnych kanałów (R, G, B) do tworzenia wariantów."
+          "title": "Παλέτες χρωμάτων",
+          "description": "Τροποποίηση μεμονωμένων καναλιών (R, G, B) για δημιουργία παραλλαγών."
         }
       ]
     },
@@ -158,7 +158,7 @@
     {
       "type": "sectionInfo",
       "title": "Πώς λειτουργεί η μετατροπή;",
-      "html": "<p class=\"text-mid mb-4\">HEX nutzt Basis-16: Jedes Ziffernpaar (00–FF) wird in Dezimal 0–255 umgerechnet. #FF5733: FF=255 (Rot), 57=87 (Grün), 33=51 (Blau).</p><p class=\"text-mid\">HEX-Kurzform: #F53 wird zu #FF5533.</p>"
+      "html": "<p class=\"text-mid mb-4\">Το HEX χρησιμοποιεί βάση-16: κάθε ζεύγος ψηφίων (00–FF) μετατρέπεται σε δεκαδικό 0–255. #FF5733: FF=255 (κόκκινο), 57=87 (πράσινο), 33=51 (μπλε).</p><p class=\"text-mid\">Συντομογραφία HEX: #F53 γίνεται #FF5533.</p>"
     },
     {
       "type": "gap",
@@ -167,7 +167,7 @@
     {
       "type": "sectionInfo",
       "title": "Πρακτικές συμβουλές",
-      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = black. #FFFFFF = rgb(255,255,255) = white.</li><li>#FF0000 = pure red. #00FF00 = pure green. #0000FF = pure blue.</li><li>For opacity: use rgba(255, 87, 51, 0.5) — HEX doesn't natively support alpha (except 8-digit HEX: #FF573380).</li><li>CSS supports both: color: #FF5733 and color: rgb(255, 87, 51) are identical.</li></ul>"
+      "html": "<ul class=\"list-disc pl-5 space-y-2 text-mid\"><li>#000000 = rgb(0,0,0) = μαύρο. #FFFFFF = rgb(255,255,255) = λευκό.</li><li>#FF0000 = καθαρό κόκκινο. #00FF00 = καθαρό πράσινο. #0000FF = καθαρό μπλε.</li><li>Για αδιαφάνεια: χρησιμοποιήστε rgba(255, 87, 51, 0.5) — το HEX δεν υποστηρίζει εγγενώς alpha (εκτός από 8ψήφιο HEX: #FF573380).</li><li>Το CSS υποστηρίζει και τα δύο: color: #FF5733 και color: rgb(255, 87, 51) είναι πανομοιότυπα.</li></ul>"
     },
     {
       "type": "gap",
@@ -190,38 +190,38 @@
       ],
       "features": [
         {
-          "name": "Format",
+          "name": "Μορφή",
           "values": {
             "unit1": "#RRGGBB",
             "unit2": "rgb(R, G, B)"
           }
         },
         {
-          "name": "Values",
+          "name": "Τιμές",
           "values": {
-            "unit1": "00–FF (hex)",
-            "unit2": "0–255 (decimal)"
+            "unit1": "00–FF (δεκαεξαδικό)",
+            "unit2": "0–255 (δεκαδικό)"
           }
         },
         {
-          "name": "Opacity",
+          "name": "Αδιαφάνεια",
           "values": {
-            "unit1": "8-digit (#RRGGBBAA)",
+            "unit1": "8ψήφιο (#RRGGBBAA)",
             "unit2": "rgba(R, G, B, A)"
           }
         },
         {
-          "name": "Shorthand",
+          "name": "Συντομογραφία",
           "values": {
-            "unit1": "#RGB (3 digits)",
-            "unit2": "No shorthand"
+            "unit1": "#RGB (3 ψηφία)",
+            "unit2": "Δεν υπάρχει"
           }
         },
         {
-          "name": "Used in",
+          "name": "Χρήση σε",
           "values": {
-            "unit1": "CSS, design tools",
-            "unit2": "CSS, programming"
+            "unit1": "CSS, εργαλεία σχεδίασης",
+            "unit2": "CSS, προγραμματισμός"
           }
         }
       ]
@@ -236,12 +236,12 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Wie rechnet man HEX in RGB um?",
-          "answer": "Rechnen Sie jedes Hex-Paar in Dezimal um. #FF5733: FF=255, 57=87, 33=51 → rgb(255, 87, 51)."
+          "question": "Πώς μετατρέπω HEX σε RGB;",
+          "answer": "Μετατρέψτε κάθε ζεύγος hex σε δεκαδικό. #FF5733: FF=255, 57=87, 33=51 → rgb(255, 87, 51)."
         },
         {
           "question": "Γίνονται οι υπολογισμοί τοπικά;",
-          "answer": "Ja. Alle Berechnungen erfolgen in Ihrem Browser."
+          "answer": "Ναι. Όλοι οι υπολογισμοί εκτελούνται στον browser σας."
         }
       ]
     },
