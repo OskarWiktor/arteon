@@ -72,9 +72,7 @@ function main() {
   }
 
   // 3. Delete ALL old sitemap-*.xml files (except sitemap.xml itself)
-  const oldFiles = fs.readdirSync(PUBLIC_DIR).filter(
-    (f) => f.startsWith('sitemap-') && f.endsWith('.xml'),
-  );
+  const oldFiles = fs.readdirSync(PUBLIC_DIR).filter((f) => f.startsWith('sitemap-') && f.endsWith('.xml'));
   for (const f of oldFiles) {
     fs.unlinkSync(path.join(PUBLIC_DIR, f));
   }
@@ -87,18 +85,14 @@ function main() {
   }
 
   // 5. Write sitemap index
-  const sitemapFiles = fs.readdirSync(PUBLIC_DIR)
+  const sitemapFiles = fs
+    .readdirSync(PUBLIC_DIR)
     .filter((f) => f.startsWith('sitemap-') && f.endsWith('.xml'))
     .sort();
 
   const entries = sitemapFiles.map((f) => `<sitemap><loc>${SITE_URL}/${f}</loc></sitemap>`).join('\n');
 
-  const sitemapIndex = [
-    '<?xml version="1.0" encoding="UTF-8"?>',
-    '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    entries,
-    '</sitemapindex>',
-  ].join('\n');
+  const sitemapIndex = ['<?xml version="1.0" encoding="UTF-8"?>', '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', entries, '</sitemapindex>'].join('\n');
 
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), sitemapIndex, 'utf8');
   console.log(`✓ sitemap.xml index → ${sitemapFiles.length} sitemaps, ${urlBlocks.length} total URLs`);

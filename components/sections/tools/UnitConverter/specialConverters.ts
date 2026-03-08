@@ -12,13 +12,15 @@ export function hexToRgb(hex: string): string {
     full = h
       .split('')
       .map((c) => c + c)
-      .join(''); // #RGB → #RRGGBB
+      .join('');
+  // #RGB → #RRGGBB
   else if (h.length === 4)
     full = h
       .slice(0, 3)
       .split('')
       .map((c) => c + c)
-      .join(''); // #RGBA → use RGB
+      .join('');
+  // #RGBA → use RGB
   else if (h.length === 6)
     full = h; // #RRGGBB
   else if (h.length === 8)

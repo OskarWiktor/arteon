@@ -9,73 +9,33 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 const IS_PROD = process.env.VERCEL_ENV === 'production';
 
-/**
- * Content-Security-Policy directives
- *
- * Dostosowane do potrzeb strony:
- * - Google Analytics, AdSense, GTM, DoubleClick - reklamy i analityka
- * - Vercel Analytics / Speed Insights - monitoring wydajności
- * - Formspree - formularz kontaktowy
- * - Ahrefs / Metricool - dodatkowa analityka
- * - blob:/data: - narzędzia generujące obrazy/pliki client-side
- */
 const cspDirectives = [
   "default-src 'self'",
-  // Scripts: self + Google services + Google CMP (Funding Choices) + Vercel + Ahrefs + Metricool + inline (wymagane przez Next.js)
   `script-src 'self' 'unsafe-inline'${IS_PROD ? '' : " 'unsafe-eval'"} https://*.googletagmanager.com https://*.google-analytics.com https://*.googleadservices.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://fundingchoicesmessages.google.com https://fundingchoices.google.com https://analytics.ahrefs.com https://tracker.metricool.com https://va.vercel-scripts.com`,
-  // Styles: self + inline (Tailwind/Next.js) + Google Fonts
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  // Images: self + data/blob (narzędzia generujące obrazy) + Google + HTTPS ogólnie (OG images itp.)
   "img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com https://*.google.com https://*.doubleclick.net https://*.googlesyndication.com https:",
-  // Fonts: self + Google Fonts CDN
   "font-src 'self' https://fonts.gstatic.com",
-  // Connect: self + analityka + Formspree + Vercel + AdSense quality + Google CMP
   "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.googlesyndication.com https://*.adtrafficquality.google https://*.doubleclick.net https://fundingchoicesmessages.google.com https://fundingchoices.google.com https://formspree.io https://analytics.ahrefs.com https://tracker.metricool.com https://vitals.vercel-insights.com https://va.vercel-scripts.com",
-  // Frames: Google (AdSense iframes, reCAPTCHA, Google CMP consent dialog)
   'frame-src https://*.google.com https://*.doubleclick.net https://googleads.g.doubleclick.net https://*.googlesyndication.com https://*.adtrafficquality.google https://fundingchoicesmessages.google.com',
-  // Workers: self + blob (narzędzia client-side)
   "worker-src 'self' blob:",
-  // Frame-ancestors: pozwala Google AdSense na podgląd strony w panelu
   "frame-ancestors 'self' https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net",
-  // Object/base/form: restrykcyjne
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self' https://formspree.io",
-  // Upgrade insecure requests w production
   'upgrade-insecure-requests',
 ].join('; ');
 
-/**
- * Security headers applied in production
- *
- * - HSTS: wymusza HTTPS przez 2 lata + subdomeny + preload list
- * - X-Content-Type-Options: blokuje MIME-sniffing (zapobiega interpretacji plików jako inny typ)
- * - Referrer-Policy: wysyła origin tylko przy cross-origin (chroni prywatność URL-i)
- * - X-DNS-Prefetch-Control: pozwala przeglądarce prefetchować DNS (wydajność)
- * - Permissions-Policy: blokuje dostęp do kamera/mikrofon/geolokalizacja
- * - CSP: ogranicza skąd mogą być ładowane zasoby (ochrona przed XSS/injection)
- */
 const securityHeaders = [
   { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
-  // X-Frame-Options usunięty - zastąpiony przez frame-ancestors w CSP (nowszy standard, obsługuje wiele domen)
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), browsing-topics=(), attribution-reporting=()' },
   { key: 'Content-Security-Policy', value: cspDirectives },
-  // COOP: izoluje okno top-level od cross-origin dokumentów; allow-popups aby nie łamać reklam
   { key: 'Cross-Origin-Opener-Policy', value: 'same-origin-allow-popups' },
-  // CORP: zapobiega osadzaniu zasobów strony na obcych domenach
   { key: 'Cross-Origin-Resource-Policy', value: 'same-site' },
 ];
 
-/**
- * Next.js Configuration
- *
- * Redirecty 301 są obsługiwane przez next.config.ts redirects() (CDN layer, bez Edge Function).
- * Middleware obsługuje tylko: security gate + canonical host.
- * Konfiguracja redirectów: lib/redirects.ts
- */
 const nextConfig: NextConfig = {
   trailingSlash: false,
   poweredByHeader: false,
@@ -126,7 +86,36 @@ const nextConfig: NextConfig = {
           { key: 'Content-Type', value: 'application/xml; charset=utf-8' },
           { key: 'Cache-Control', value: 'public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400' },
         ],
-      },
+      }, // PL
+      { source: '/narzedzia/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // EN, NL
+      { source: '/:locale(en|nl)/tools/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // DE
+      { source: '/de/werkzeuge/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // ES
+      { source: '/es/herramientas/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // FR
+      { source: '/fr/outils/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // PT
+      { source: '/pt/ferramentas/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // IT
+      { source: '/it/strumenti/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // RO
+      { source: '/ro/instrumente/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // HU
+      { source: '/hu/eszkozok/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // CS
+      { source: '/cs/nastroje/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // SV
+      { source: '/sv/verktyg/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // DA
+      { source: '/da/vaerktojer/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // NO
+      { source: '/no/verktoy/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // FI
+      { source: '/fi/tyokalut/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
+      // EL
+      { source: '/el/ergaleia/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
     ];
 
     return IS_PROD

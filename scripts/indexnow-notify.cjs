@@ -30,22 +30,22 @@ function parseSitemapUrls(xmlContent) {
  */
 function getAllSitemapUrls() {
   const publicDir = path.join(process.cwd(), 'public');
-  const sitemapFiles = fs.readdirSync(publicDir).filter(f => f.startsWith('sitemap') && f.endsWith('.xml'));
-  
+  const sitemapFiles = fs.readdirSync(publicDir).filter((f) => f.startsWith('sitemap') && f.endsWith('.xml'));
+
   const allUrls = [];
   for (const file of sitemapFiles) {
     const content = fs.readFileSync(path.join(publicDir, file), 'utf8');
-    
+
     // Check if it's a sitemap index
     if (content.includes('<sitemapindex')) {
       // Skip index file, we'll read individual sitemaps
       continue;
     }
-    
+
     const urls = parseSitemapUrls(content);
     allUrls.push(...urls);
   }
-  
+
   return [...new Set(allUrls)]; // Remove duplicates
 }
 
@@ -62,12 +62,12 @@ function sendToIndexNow(urls) {
 
     // IndexNow accepts max 10,000 URLs per request
     const batch = urls.slice(0, 10000);
-    
+
     const payload = JSON.stringify({
       host: 'www.arteonagency.pl',
       key: INDEX_NOW_KEY,
       keyLocation: `${SITE_URL}/${INDEX_NOW_KEY}.txt`,
-      urlList: batch
+      urlList: batch,
     });
 
     const options = {
@@ -77,13 +77,13 @@ function sendToIndexNow(urls) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(payload)
-      }
+        'Content-Length': Buffer.byteLength(payload),
+      },
     };
 
     const req = https.request(options, (res) => {
       let data = '';
-      res.on('data', chunk => data += chunk);
+      res.on('data', (chunk) => (data += chunk));
       res.on('end', () => {
         if (res.statusCode >= 200 && res.statusCode < 300) {
           console.log(`✓ IndexNow: Submitted ${batch.length} URLs (status: ${res.statusCode})`);
@@ -112,7 +112,7 @@ async function main() {
     console.log('IndexNow: Reading sitemaps...');
     const urls = getAllSitemapUrls();
     console.log(`IndexNow: Found ${urls.length} URLs`);
-    
+
     await sendToIndexNow(urls);
   } catch (err) {
     console.log(`⚠ IndexNow script error: ${err.message}`);
