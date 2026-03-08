@@ -11,7 +11,7 @@ import ToolProgressBar from '@/components/ui/tools/ToolProgressBar';
 import ToolSection from '@/components/ui/tools/ToolSection';
 import ToolUploadContent from '@/components/ui/tools/ToolUploadContent';
 import { useDictionary } from '@/lib/LocaleContext';
-import { downloadBlob } from '@/utils/download';
+import { downloadBlob, downloadFromUrl } from '@/utils/download';
 import { formatBytes } from '@/utils/formatBytes';
 
 import { FormatSelector } from '@/components/sections/tools/FormatPicker';
@@ -214,11 +214,19 @@ export default function ImageToPdfConverter({ sourceFormat, acceptMime }: ImageT
     (id: string) => {
       const file = files.find((f) => f.id === id);
       if (!file?.previewUrl) return;
+      // Convert blob URL back to blob and download
       fetch(file.previewUrl)
         .then((r) => r.blob())
         .then((blob) => {
           const baseName = file.file.name.replace(/\.[^.]+$/, '');
           downloadBlob(blob, `${baseName}.pdf`);
+        })
+        .catch((err) => {
+          console.error('Download failed:', err);
+          // Fallback: try direct download using the blob URL
+          if (file.previewUrl) {
+            downloadFromUrl(file.previewUrl, `${file.file.name.replace(/\.[^.]+$/, '')}.pdf`);
+          }
         });
     },
     [files],
@@ -232,6 +240,13 @@ export default function ImageToPdfConverter({ sourceFormat, acceptMime }: ImageT
         .then((blob) => {
           const baseName = file.file.name.replace(/\.[^.]+$/, '');
           downloadBlob(blob, `${baseName}.pdf`);
+        })
+        .catch((err) => {
+          console.error('Download failed:', err);
+          // Fallback: try direct download using the blob URL
+          if (file.previewUrl) {
+            downloadFromUrl(file.previewUrl, `${file.file.name.replace(/\.[^.]+$/, '')}.pdf`);
+          }
         });
     }
   }, [files]);
