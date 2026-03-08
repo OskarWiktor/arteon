@@ -114,7 +114,6 @@ export default function HeroBanner({
           sizes="100vw"
           className="object-cover object-center"
           itemProp={emitImageMicrodata ? 'image' : undefined}
-          unoptimized
         />
       )}
       {hasBg && overlay !== 'none' && <div aria-hidden="true" className={`absolute inset-0 ${overlayClass}`} />}

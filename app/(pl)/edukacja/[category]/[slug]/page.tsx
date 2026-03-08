@@ -200,20 +200,11 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
               <figure className={!hasCaption ? 'mb-6 md:mb-12 lg:mb-16' : undefined}>
                 {isAuto ? (
                   <div className="overflow-hidden rounded-2xl border border-black/10">
-                    <Image
-                      src={b.src}
-                      alt={b.alt}
-                      width={b.width ?? 2000}
-                      height={b.height ?? 1200}
-                      sizes="100vw"
-                      style={{ width: '100%', height: 'auto' }}
-                      priority={b.priority ?? false}
-                      unoptimized
-                    />
+                    <Image src={b.src} alt={b.alt} width={b.width ?? 2000} height={b.height ?? 1200} sizes="100vw" style={{ width: '100%', height: 'auto' }} priority={b.priority ?? false} />
                   </div>
                 ) : (
                   <Aspect ratio={b.ratio || '16/9'}>
-                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" unoptimized />
+                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" />
                   </Aspect>
                 )}
                 {hasCaption && <figcaption className="text-light mt-2 mb-6 text-sm md:mb-12 lg:mb-16">{b.caption}</figcaption>}
@@ -234,12 +225,11 @@ function RenderBlocks({ blocks }: { blocks?: Article['contentBlocks'] }) {
                   sizes="(min-width:768px) 50vw, 100vw"
                   style={{ width: '100%', height: 'auto' }}
                   priority={b.priority ?? false}
-                  unoptimized
                 />
               </div>
             ) : (
               <Aspect ratio={b.ratio || '4/3'}>
-                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" unoptimized />
+                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
               </Aspect>
             );
 

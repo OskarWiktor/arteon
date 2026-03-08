@@ -22,7 +22,7 @@ export default function ArticlesList({ filterCategorySlug }: { filterCategorySlu
             <Link href={href} prefetch={false} className="block focus:outline-none">
               {a.cover ? (
                 <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-black/10">
-                  <Image src={a.cover} alt={a.title} fill className="object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" unoptimized />
+                  <Image src={a.cover} alt={a.title} fill className="object-cover" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" />
                 </div>
               ) : null}
               <div className="p-4">

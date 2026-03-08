@@ -32,7 +32,7 @@ export default function SectionBento({ title, items }: SectionBentoProps) {
 
           return (
             <div key={index} className={`relative flex flex-col justify-end overflow-hidden rounded-2xl ${sizeClass}`}>
-              <Image src={item.backgroundImage} alt={item.title} fill className="object-cover" sizes="(min-width:1024px) 50vw, 100vw" aria-hidden="true" unoptimized />
+              <Image src={item.backgroundImage} alt={item.title} fill className="object-cover" sizes="(min-width:1024px) 50vw, 100vw" aria-hidden="true" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10" aria-hidden="true" />
 
               <div className="relative z-10 p-4">

@@ -193,20 +193,11 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
               <figure>
                 {isAuto ? (
                   <div className="overflow-hidden rounded-2xl border border-black/10">
-                    <Image
-                      src={b.src}
-                      alt={b.alt}
-                      width={b.width ?? 2000}
-                      height={b.height ?? 2800}
-                      sizes="100vw"
-                      style={{ width: '100%', height: 'auto' }}
-                      priority={b.priority ?? false}
-                      unoptimized
-                    />
+                    <Image src={b.src} alt={b.alt} width={b.width ?? 2000} height={b.height ?? 2800} sizes="100vw" style={{ width: '100%', height: 'auto' }} priority={b.priority ?? false} />
                   </div>
                 ) : (
                   <Aspect ratio={b.ratio || '16/9'}>
-                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" unoptimized />
+                    <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 75vw, 100vw" />
                   </Aspect>
                 )}
                 {b.caption && <figcaption className="text-light mt-2 text-sm">{b.caption}</figcaption>}
@@ -228,12 +219,11 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                   sizes="(min-width:768px) 50vw, 100vw"
                   style={{ width: '100%', height: 'auto' }}
                   priority={b.priority ?? false}
-                  unoptimized
                 />
               </div>
             ) : (
               <Aspect ratio={b.ratio || '4/3'}>
-                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" unoptimized />
+                <Image src={b.src} alt={b.alt} fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
               </Aspect>
             );
 
@@ -448,7 +438,7 @@ function RenderBlocks({ blocks }: { blocks?: ContentBlock[] }) {
                 {b.images.map((img, idx) => (
                   <figure key={idx}>
                     <div className="overflow-hidden rounded-2xl border border-black/10">
-                      <Image src={img.src} alt={img.alt} width={600} height={800} className="h-auto w-full object-cover" sizes="(min-width:640px) 33vw, 100vw" unoptimized />
+                      <Image src={img.src} alt={img.alt} width={600} height={800} className="h-auto w-full object-cover" sizes="(min-width:640px) 33vw, 100vw" />
                     </div>
                     {img.label && <figcaption className="text-light mt-2 text-center text-sm">{img.label}</figcaption>}
                   </figure>
@@ -601,14 +591,14 @@ export default function ProjectPage({ params }: PageProps) {
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" unoptimized />
+                      <Image src={project.beforeAfter.beforeImage || project.image} alt="Widok przed zmianami" fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
                     </div>
                     <figcaption className="text-light mt-2 text-sm">Przed</figcaption>
                   </figure>
 
                   <figure>
                     <div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-black/10">
-                      <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" unoptimized />
+                      <Image src={project.beforeAfter.afterImage || project.image} alt="Widok po wdrożeniu" fill className="object-cover" sizes="(min-width:768px) 50vw, 100vw" />
                     </div>
                     <figcaption className="text-light mt-2 text-sm font-semibold">Po</figcaption>
                   </figure>

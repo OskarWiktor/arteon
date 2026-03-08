@@ -53,7 +53,7 @@ export default function SectionImageCarousel({ title, slides, overlay = false, v
           <div className={`relative ${aspectClass}`}>
             {slides.map((slide, index) => (
               <div key={index} className={`absolute inset-0 transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0'}`}>
-                <Image src={slide.imageSrc} alt={slide.imageAlt} fill className="object-cover" sizes="(min-width:1024px) 896px, 100vw" priority={index === 0} unoptimized />
+                <Image src={slide.imageSrc} alt={slide.imageAlt} fill className="object-cover" sizes="(min-width:1024px) 896px, 100vw" priority={index === 0} />
 
                 {overlay && (slide.title || slide.description) && (
                   <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent p-6">

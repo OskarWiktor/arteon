@@ -28,11 +28,11 @@ export default function SectionBeforeAfter({ title, beforeImage, afterImage, bef
         <div className="mx-auto max-w-2xl">
           <div className="relative aspect-video overflow-hidden rounded-2xl shadow-lg">
             <div className="absolute inset-0">
-              <Image src={afterImage} alt={afterLabel} fill className="object-cover" sizes="(min-width:1024px) 672px, 100vw" unoptimized />
+              <Image src={afterImage} alt={afterLabel} fill className="object-cover" sizes="(min-width:1024px) 672px, 100vw" />
             </div>
 
             <div className="absolute inset-0" style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}>
-              <Image src={beforeImage} alt={beforeLabel} fill className="object-cover" sizes="(min-width:1024px) 672px, 100vw" unoptimized />
+              <Image src={beforeImage} alt={beforeLabel} fill className="object-cover" sizes="(min-width:1024px) 672px, 100vw" />
             </div>
 
             <div className="absolute inset-y-0" style={{ left: `${position}%` }}>
