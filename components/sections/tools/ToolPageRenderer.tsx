@@ -199,11 +199,11 @@ export default function ToolPageRenderer({ data, tool }: ToolPageRendererProps) 
     toolName: data.schemas.software.name,
   });
 
+  const combinedSchemas = [webPageSchema, softwareSchema, howToSchema];
+
   return (
     <>
-      <Script id={`ld-json-${data.toolKey}-webpage-${data.locale}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
-      <Script id={`ld-json-${data.toolKey}-software-${data.locale}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
-      <Script id={`ld-json-${data.toolKey}-howto-${data.locale}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <Script id={`ld-json-${data.toolKey}-${data.locale}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedSchemas) }} />
 
       <HeroBanner title={data.hero.title} description={data.hero.description} overlay="black" backgroundImage={data.hero.backgroundImage} size="tools" />
 
