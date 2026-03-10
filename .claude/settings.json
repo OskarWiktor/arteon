@@ -1,6 +1,17 @@
 {
-  "enabledPlugins": {
-    "superpowers@claude-plugins-official": true,
-    "accessibility-agents@community-access": true
-  }
+  "extraKnownMarketplaces": {
+    "superpowers-dev": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      }
+    },
+    "community-access": {
+      "source": {
+        "source": "github",
+        "repo": "Community-Access/accessibility-agents"
+      }
+    }
+  },
+  "autoUpdatesChannel": "latest"
 }
