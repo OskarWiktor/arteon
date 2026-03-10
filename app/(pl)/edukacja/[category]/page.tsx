@@ -117,13 +117,14 @@ export async function generateStaticParams() {
   return cats.map((c) => ({ category: c.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { category: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+  const { category } = await params;
   const cats = getCategoriesWithCount();
-  const current = cats.find((c) => c.slug === params.category);
-  const label = current?.label || params.category.replace(/-/g, ' ');
-  const url = `${siteUrl}/edukacja/${params.category}`;
+  const current = cats.find((c) => c.slug === category);
+  const label = current?.label || category.replace(/-/g, ' ');
+  const url = `${siteUrl}/edukacja/${category}`;
 
-  const content = CATEGORY_CONTENT_BY_SLUG[params.category];
+  const content = CATEGORY_CONTENT_BY_SLUG[category];
   const description = content?.metaDescription ?? DEFAULT_META_DESCRIPTION(label);
   const openGraphDescription = content?.openGraphDescription ?? DEFAULT_OPEN_GRAPH_DESCRIPTION(label);
   const ogImage = content?.heroImage ? toAbsoluteUrl(content.heroImage) : toAbsoluteUrl('/assets/ogien.webp');
@@ -133,12 +134,12 @@ export async function generateMetadata({ params }: { params: { category: string 
     druk: 'Artykuły o druku i materiałach reklamowych - Arteon',
     ux: 'Artykuły o UX i użyteczności stron - Arteon',
   };
-  const finalTitle = expandedTitles[params.category] || `${label} - Arteon`;
+  const finalTitle = expandedTitles[category] || `${label} - Arteon`;
 
   return {
     title: finalTitle,
     description,
-    alternates: { canonical: toAbsoluteUrl(`/edukacja/${params.category}`) },
+    alternates: { canonical: toAbsoluteUrl(`/edukacja/${category}`) },
     openGraph: {
       title: label,
       description: openGraphDescription,
@@ -156,19 +157,20 @@ export async function generateMetadata({ params }: { params: { category: string 
   };
 }
 
-export default function EdukacjaCategoryPage({ params }: { params: { category: string } }) {
+export default async function EdukacjaCategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category } = await params;
   const cats = getCategoriesWithCount();
   const hasAny = getAllArticlePreviews().some((a) => {
-    return a.primaryCategory && slugify(a.primaryCategory) === params.category;
+    return a.primaryCategory && slugify(a.primaryCategory) === category;
   });
 
   if (!hasAny) {
     notFound();
   }
 
-  const label = cats.find((c) => c.slug === params.category)?.label ?? params.category.replace(/-/g, ' ');
+  const label = cats.find((c) => c.slug === category)?.label ?? category.replace(/-/g, ' ');
 
-  const content = CATEGORY_CONTENT_BY_SLUG[params.category];
+  const content = CATEGORY_CONTENT_BY_SLUG[category];
   const heroDescription = content?.heroDescription ?? DEFAULT_HERO_DESCRIPTION(label);
   const heroImage = content?.heroImage ?? '/assets/bg/abstract-bg13.webp';
 
@@ -177,8 +179,8 @@ export default function EdukacjaCategoryPage({ params }: { params: { category: s
       <HeroBanner title={label} description={heroDescription} variant="center" backgroundImage={heroImage} overlay="black" />
       <Wrapper>
         <Gap size="sm" />
-        <FilterBar cats={cats} active={params.category} />
-        <ArticlesList filterCategorySlug={params.category} />
+        <FilterBar cats={cats} active={category} />
+        <ArticlesList filterCategorySlug={category} />
         <Gap size="sm" />
       </Wrapper>
 
@@ -193,7 +195,7 @@ export default function EdukacjaCategoryPage({ params }: { params: { category: s
               '@type': 'ItemList',
               itemListElement: getAllArticlePreviews()
                 .filter((a) => {
-                  return a.primaryCategory && slugify(a.primaryCategory) === params.category;
+                  return a.primaryCategory && slugify(a.primaryCategory) === category;
                 })
                 .map((a, i) => ({
                   '@type': 'ListItem',

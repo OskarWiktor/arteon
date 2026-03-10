@@ -459,17 +459,18 @@ export async function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
 
-type PageProps = { params: { slug: string } };
+type PageProps = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const project = getProject(params.slug);
+  const { slug } = await params;
+  const project = getProject(slug);
   if (!project) return {};
 
   const title = project.seo?.title || `${project.title} - Case study`;
   const description = project.seo?.description || '';
   const image = project.image ? toAbsoluteUrl(project.image) : undefined;
 
-  const canonicalPath = project.seo?.canonical || toAbsoluteUrl(`/realizacje/${project.slug}`);
+  const canonicalPath = project.seo?.canonical || toAbsoluteUrl(`/realizacje/${slug}`);
   const ogUrl = toAbsoluteUrl(canonicalPath);
   return {
     title,
@@ -486,8 +487,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function ProjectPage({ params }: PageProps) {
-  const project = getProject(params.slug);
+export default async function ProjectPage({ params }: PageProps) {
+  const { slug } = await params;
+  const project = getProject(slug);
   if (!project) return notFound();
 
   const ctaProps = { ...defaultCTA, ...(project.cta ?? {}) };

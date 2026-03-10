@@ -278,8 +278,9 @@ export async function generateStaticParams() {
   });
 }
 
-export async function generateMetadata({ params }: { params: { category: string; slug: string } }): Promise<Metadata> {
-  const article = findArticleBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ category: string; slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const article = findArticleBySlug(slug);
   if (!article) return {};
 
   const canonicalCat = getPrimaryCategorySlug(article);
@@ -304,8 +305,9 @@ export async function generateMetadata({ params }: { params: { category: string;
   };
 }
 
-export default function ArticlePage({ params }: { params: { category: string; slug: string } }) {
-  const article = findArticleBySlug(params.slug);
+export default async function ArticlePage({ params }: { params: Promise<{ category: string; slug: string }> }) {
+  const { slug, category } = await params;
+  const article = findArticleBySlug(slug);
   if (!article) return notFound();
 
   const articlePreviews = getAllArticlePreviews();
@@ -314,7 +316,7 @@ export default function ArticlePage({ params }: { params: { category: string; sl
   const categoryLabel = article.primaryCategory || canonicalCat.replace(/-/g, ' ').toUpperCase();
 
   const articlesCarouselTitle = `Sprawdź inne artykuły na temat: ${categoryLabel}`;
-  if (params.category !== canonicalCat) {
+  if (category !== canonicalCat) {
     permanentRedirect(`/edukacja/${canonicalCat}/${article.slug}`);
   }
 
