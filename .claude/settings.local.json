@@ -1,5 +1,8 @@
 {
   "permissions": {
     "allow": ["Bash(npm run:*)", "Bash(git add:*)", "Bash(git commit:*)"]
+  },
+  "enabledPlugins": {
+    "claude-mem@thedotmack": true
   }
 }

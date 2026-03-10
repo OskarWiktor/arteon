@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.next/
+.vercel/
+
+# Build artifacts
+dist/
+out/
+build/
+
+# Logs i cache
+*.log
+.cache/
+coverage/
+
+# Next.js docs (duże pliki)
+.claude/nextjs-16-docs.md
+
+# Inne
+.git/
+public/fonts/
+public/images/
+*.map

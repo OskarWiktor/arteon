@@ -1,19 +1,4 @@
 {
-  "extraKnownMarketplaces": {
-    "superpowers-dev": {
-      "source": {
-        "source": "github",
-        "repo": "obra/superpowers"
-      }
-    },
-    "community-access": {
-      "source": {
-        "source": "github",
-        "repo": "Community-Access/accessibility-agents"
-      }
-    }
-  },
-  "autoUpdatesChannel": "latest",
   "hooks": {
     "SessionStart": [
       {
@@ -39,5 +24,23 @@
   "statusLine": {
     "type": "command",
     "command": "node .claude/hooks/gsd-statusline.js"
+  },
+  "extraKnownMarketplaces": {
+    "superpowers-dev": {
+      "source": {
+        "source": "github",
+        "repo": "obra/superpowers"
+      }
+    },
+    "community-access": {
+      "source": {
+        "source": "github",
+        "repo": "Community-Access/accessibility-agents"
+      }
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "enabledPlugins": {
+    "claude-mem@thedotmack": true
   }
 }
