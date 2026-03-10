@@ -24,6 +24,10 @@
 
 ---
 
+## Knowledge Base
+
+- Next.js 16 docs: @.claude/nextjs-16-docs.md
+
 ## Project Overview
 
 **Arteon Agency** — a Polish web development and digital marketing agency website. The site is multilingual (16 locales), features 92 free tools (converters, generators, checkers), a blog, services pages, portfolio, and static pages.
