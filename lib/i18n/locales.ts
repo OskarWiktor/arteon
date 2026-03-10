@@ -197,7 +197,7 @@ export const LOCALE_CONFIG: Record<Locale, LocaleConfig> = {
   },
   no: {
     lang: 'no',
-    hreflang: 'no',
+    hreflang: 'nb',
     label: 'NO',
     name: 'Norsk',
     toolsBasePath: '/no/verktoy',

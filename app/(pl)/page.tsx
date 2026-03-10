@@ -15,6 +15,7 @@ import Wrapper from '@/components/ui/Wrapper';
 import { GoLaw } from 'react-icons/go';
 import { MdSupportAgent } from 'react-icons/md';
 import { RiCodeSSlashFill, RiShoppingCartLine, RiArticleLine, RiPaletteLine, RiFileTextLine, RiMegaphoneLine, RiBarChart2Line, RiBookOpenLine, RiBrushLine } from 'react-icons/ri';
+import { getHomepageAlternates } from '@/lib/i18n/pages/tool-meta';
 import testimonialsPl from '@/data/pl/testimonials.json';
 import type { Testimonial } from '@/types/testimonial';
 import { getAllArticlePreviews } from '@/lib/blogDataService';
@@ -23,7 +24,7 @@ import LazyToolsCarousel from '@/components/sections/tools/LazyToolsCarousel';
 export const metadata = {
   title: 'Strony, sklepy, treści i marketing | Arteon',
   description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
-  alternates: { canonical: 'https://www.arteonagency.pl/' },
+  alternates: getHomepageAlternates(),
   openGraph: {
     title: 'Strony, sklepy, treści i marketing | Arteon',
     description: 'Projekt i realizacja stron oraz sklepów. Treści i kampanie, które przyciągają klientów. Widoczność w Google. Gwarancja i jasne zasady.',
@@ -35,7 +36,7 @@ export const metadata = {
       },
     ],
   },
-} as const;
+};
 
 function HomePageSchemas() {
   const testimonials = testimonialsPl as Testimonial[];

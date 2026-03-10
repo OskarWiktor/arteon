@@ -34,6 +34,23 @@ export function getToolAlternates(toolKey: ToolItemKey, locale: Locale) {
 }
 
 /**
+ * Generate Next.js `alternates` for the PL homepage.
+ * PL → '/', all other locales → their tools index (best equivalent for non-PL locales).
+ */
+export function getHomepageAlternates() {
+  const languages: Record<string, string> = {};
+  for (const loc of SUPPORTED_LOCALES) {
+    const cfg = LOCALE_CONFIG[loc];
+    languages[cfg.hreflang] = loc === 'pl' ? toAbsoluteUrl('/') : toAbsoluteUrl(cfg.toolsIndexHref);
+  }
+  languages['x-default'] = toAbsoluteUrl(LOCALE_CONFIG['en'].toolsIndexHref);
+  return {
+    canonical: toAbsoluteUrl('/'),
+    languages,
+  };
+}
+
+/**
  * Generate Next.js `alternates` for the tools INDEX page (canonical + all hreflang + x-default).
  */
 export function getToolsIndexAlternates(locale: Locale) {

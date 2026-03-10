@@ -152,7 +152,7 @@ const SITE_URL = 'https://www.arteonagency.pl';
 const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
 
 // ---------------------------------------------------------------------------
-// Full 5-locale hreflang data (mirrors lib/i18n/tool-registry.ts + locales.ts)
+// Hreflang data (mirrors lib/i18n/locales.ts)
 // ---------------------------------------------------------------------------
 const LOCALE_TOOLS_BASE = {
   pl: '/narzedzia',
@@ -173,206 +173,48 @@ const LOCALE_TOOLS_BASE = {
   el: '/el/ergaleia',
 };
 
-const TOOLS = [
-  {
-    pl: 'konwerter-jpg-na-webp',
-    en: 'jpg-to-webp-converter',
-    de: 'jpg-zu-webp-konverter',
-    es: 'convertidor-jpg-a-webp',
-    fr: 'convertisseur-jpg-en-webp',
-    pt: 'conversor-jpg-para-webp',
-    it: 'convertitore-jpg-in-webp',
-    ro: 'convertor-jpg-in-webp',
-    nl: 'jpg-naar-webp-converter',
-    hu: 'jpg-webp-konverter',
-    cs: 'prevodnik-jpg-na-webp',
-    sv: 'jpg-till-webp-konverterare',
-    da: 'jpg-til-webp-konverter',
-    no: 'jpg-til-webp-konverterer',
-    fi: 'jpg-webp-muunnin',
-    el: 'metatropeas-jpg-se-webp',
-  },
-  {
-    pl: 'konwerter-png-na-webp',
-    en: 'png-to-webp-converter',
-    de: 'png-zu-webp-konverter',
-    es: 'convertidor-png-a-webp',
-    fr: 'convertisseur-png-en-webp',
-    pt: 'conversor-png-para-webp',
-    it: 'convertitore-png-in-webp',
-    ro: 'convertor-png-in-webp',
-    nl: 'png-naar-webp-converter',
-    hu: 'png-webp-konverter',
-    cs: 'prevodnik-png-na-webp',
-    sv: 'png-till-webp-konverterare',
-    da: 'png-til-webp-konverter',
-    no: 'png-til-webp-konverterer',
-    fi: 'png-webp-muunnin',
-    el: 'metatropeas-png-se-webp',
-  },
-  {
-    pl: 'edytor-zdjec-online',
-    en: 'online-image-editor',
-    de: 'online-bildeditor',
-    es: 'editor-de-imagenes-en-linea',
-    fr: 'editeur-d-images-en-ligne',
-    pt: 'editor-de-imagens-online',
-    it: 'editor-di-immagini-online',
-    ro: 'editor-de-imagini',
-    nl: 'afbeeldingeneditor',
-    hu: 'kepszerkeszto',
-    cs: 'editor-obrazku',
-    sv: 'bildredigerare',
-    da: 'billedrediger',
-    no: 'bilderedigerer',
-    fi: 'kuvaeditori',
-    el: 'epexergasia-eikonas',
-  },
-  {
-    pl: 'darmowy-generator-favicon-ico',
-    en: 'free-favicon-generator',
-    de: 'kostenloser-favicon-generator',
-    es: 'generador-de-favicon-gratuito',
-    fr: 'generateur-de-favicon-gratuit',
-    pt: 'gerador-de-favicon-gratuito',
-    it: 'generatore-di-favicon-gratuito',
-    ro: 'generator-favicon-gratuit',
-    nl: 'gratis-favicon-generator',
-    hu: 'ingyenes-favicon-generator',
-    cs: 'generator-favicon-zdarma',
-    sv: 'gratis-favicon-generator',
-    da: 'gratis-favicon-generator',
-    no: 'gratis-favicon-generator',
-    fi: 'ilmainen-favicon-generaattori',
-    el: 'dorean-dimiourgia-favicon',
-  },
-  {
-    pl: 'licznik-dlugosci-meta-title-i-description',
-    en: 'meta-title-description-length-checker',
-    de: 'meta-titel-beschreibung-laengenpruefer',
-    es: 'verificador-de-meta-titulo-y-descripcion',
-    fr: 'verificateur-meta-titre-et-description',
-    pt: 'verificador-de-meta-titulo-e-descricao',
-    it: 'verificatore-meta-titolo-e-descrizione',
-    ro: 'verificator-meta-titlu-si-descriere',
-    nl: 'meta-titel-beschrijving-checker',
-    hu: 'meta-cim-es-leiras-ellenorzo',
-    cs: 'kontrola-meta-titulku-a-popisu',
-    sv: 'meta-titel-och-beskrivning-kontroll',
-    da: 'meta-titel-og-beskrivelse-kontrol',
-    no: 'meta-tittel-og-beskrivelse-sjekker',
-    fi: 'meta-otsikko-ja-kuvaus-tarkistus',
-    el: 'elegkhos-meta-titlou-kai-perigrafis',
-  },
-  {
-    pl: 'licznik-slow-i-znakow',
-    en: 'word-and-character-counter',
-    de: 'wort-und-zeichenzaehler',
-    es: 'contador-de-palabras-y-caracteres',
-    fr: 'compteur-de-mots-et-caracteres',
-    pt: 'contador-de-palavras-e-caracteres',
-    it: 'contatore-di-parole-e-caratteri',
-    ro: 'contor-cuvinte-si-caractere',
-    nl: 'woorden-en-tekenteller',
-    hu: 'szo-es-karakterszamlalo',
-    cs: 'pocitadlo-slov-a-znaku',
-    sv: 'ord-och-teckenraknare',
-    da: 'ord-og-tegntaeller',
-    no: 'ord-og-tegnteller',
-    fi: 'sana-ja-merkkilaskuri',
-    el: 'metritis-lexeon-kai-charaktiron',
-  },
-  {
-    pl: 'darmowy-generator-stopki-mailowej',
-    en: 'free-email-signature-generator',
-    de: 'kostenloser-e-mail-signatur-generator',
-    es: 'generador-de-firma-de-correo-gratuito',
-    fr: 'generateur-de-signature-email-gratuit',
-    pt: 'gerador-de-assinatura-de-email-gratuito',
-    it: 'generatore-di-firma-email-gratuito',
-    ro: 'generator-semnatura-email-gratuit',
-    nl: 'gratis-e-mailhandtekening-generator',
-    hu: 'ingyenes-email-alairas-generator',
-    cs: 'generator-podpisu-emailu-zdarma',
-    sv: 'gratis-e-postsignatur-generator',
-    da: 'gratis-e-mail-signatur-generator',
-    no: 'gratis-e-postsignatur-generator',
-    fi: 'ilmainen-sahkopostiallekirjoitus-generaattori',
-    el: 'dorean-dimiourgia-ypografis-email',
-  },
-  {
-    pl: 'kontrast-i-czytelnosc-kolorow',
-    en: 'color-contrast-checker',
-    de: 'farbkontrast-checker',
-    es: 'comprobador-de-contraste-de-colores',
-    fr: 'verificateur-de-contraste-des-couleurs',
-    pt: 'verificador-de-contraste-de-cores',
-    it: 'verificatore-contrasto-colori',
-    ro: 'verificator-contrast-culori',
-    nl: 'kleurcontrast-checker',
-    hu: 'szinkontraszt-ellenorzo',
-    cs: 'kontrola-kontrastu-barev',
-    sv: 'fargkontrastkontroll',
-    da: 'farvekontrastkontrol',
-    no: 'fargekontrastsjekker',
-    fi: 'varikontrasti-tarkistus',
-    el: 'elegkhos-kontrast-chromaton',
-  },
-  {
-    pl: 'ekstraktor-kolorow-z-obrazu',
-    en: 'image-color-extractor',
-    de: 'bild-farbextraktor',
-    es: 'extractor-de-colores-de-imagen',
-    fr: 'extracteur-de-couleurs-d-image',
-    pt: 'extrator-de-cores-de-imagem',
-    it: 'estrattore-di-colori-da-immagine',
-    ro: 'extractor-culori-din-imagine',
-    nl: 'kleurextractor-uit-afbeelding',
-    hu: 'szinkinyero-kepbol',
-    cs: 'extraktor-barev-z-obrazku',
-    sv: 'fargextraktor-fran-bild',
-    da: 'farveudtraekker-fra-billede',
-    no: 'fargeutrekker-fra-bilde',
-    fi: 'varien-poiminta-kuvasta',
-    el: 'exagogi-chromaton-apo-eikona',
-  },
-  {
-    pl: 'generator-palet-kolorow',
-    en: 'color-palette-generator',
-    de: 'farbpaletten-generator',
-    es: 'generador-de-paletas-de-colores',
-    fr: 'generateur-de-palettes-de-couleurs',
-    pt: 'gerador-de-paletas-de-cores',
-    it: 'generatore-di-palette-di-colori',
-    ro: 'generator-de-palete-de-culori',
-    nl: 'kleurpalettengenerator',
-    hu: 'szinpaletta-generator',
-    cs: 'generator-barevnych-palet',
-    sv: 'fargpalettgenerator',
-    da: 'farvepaletgenerator',
-    no: 'fargepalettgenerator',
-    fi: 'varipaletti-generaattori',
-    el: 'dimiourgia-paletas-chromaton',
-  },
-  {
-    pl: 'darmowy-generator-kodow-qr',
-    en: 'free-qr-code-generator',
-    de: 'kostenloser-qr-code-generator',
-    es: 'generador-de-codigos-qr-gratuito',
-    fr: 'generateur-de-codes-qr-gratuit',
-    pt: 'gerador-de-codigos-qr-gratuito',
-    it: 'generatore-di-codici-qr-gratuito',
-    ro: 'generator-coduri-qr-gratuit',
-    nl: 'gratis-qr-code-generator',
-    hu: 'ingyenes-qr-kod-generator',
-    cs: 'generator-qr-kodu-zdarma',
-    sv: 'gratis-qr-kodgenerator',
-    da: 'gratis-qr-kode-generator',
-    no: 'gratis-qr-kode-generator',
-    fi: 'ilmainen-qr-koodi-generaattori',
-    el: 'dorean-dimiourgia-kodikou-qr',
-  },
-];
+// Maps locale key → BCP 47 hreflang value (no → nb per Fix 5)
+const LOCALE_TO_HREFLANG = {
+  pl: 'pl', en: 'en', de: 'de', es: 'es', fr: 'fr', pt: 'pt', it: 'it',
+  ro: 'ro', nl: 'nl', hu: 'hu', cs: 'cs', sv: 'sv', da: 'da',
+  no: 'nb',
+  fi: 'fi', el: 'el',
+};
+
+/**
+ * Build a map of toolKey → { locale: metadata.path } by reading every tool JSON
+ * from data/{locale}/tools/*.json. Covers all 92 tools × 16 locales automatically.
+ */
+function buildToolLocalePathsMap() {
+  const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
+  const byKey = new Map();
+  for (const locale of LOCALES) {
+    const dir = path.join(process.cwd(), 'data', locale, 'tools');
+    if (!fs.existsSync(dir)) continue;
+    const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
+    for (const file of files) {
+      try {
+        const data = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+        if (!data.toolKey || !data.metadata?.path) continue;
+        if (!byKey.has(data.toolKey)) byKey.set(data.toolKey, {});
+        byKey.get(data.toolKey)[locale] = data.metadata.path;
+      } catch {
+        // skip malformed files
+      }
+    }
+  }
+  return byKey;
+}
+
+const TOOL_LOCALE_PATHS = buildToolLocalePathsMap();
+
+// Reverse map: locale-specific path → toolKey (for O(1) lookup in getAlternateRefs)
+const PATH_TO_TOOL_KEY = new Map();
+for (const [key, localePaths] of TOOL_LOCALE_PATHS.entries()) {
+  for (const lpath of Object.values(localePaths)) {
+    PATH_TO_TOOL_KEY.set(lpath, key);
+  }
+}
 
 // Non-tool multilingual pages (all 16 active locales including PL)
 const MULTILINGUAL_PAGES = [
@@ -450,37 +292,34 @@ const MULTILINGUAL_PAGES = [
   },
 ];
 
-// Build a slug→tool lookup for every locale
-const SLUG_TO_TOOL = new Map();
-for (const tool of TOOLS) {
-  for (const [lang, slug] of Object.entries(tool)) {
-    SLUG_TO_TOOL.set(`${LOCALE_TOOLS_BASE[lang]}/${slug}`, tool);
-  }
-}
-
 /** Return alternateRefs (all locales + x-default) for any sitemap loc, or [] if not multilingual */
 function getAlternateRefs(loc) {
   const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
 
   // Tool index pages
   if (Object.values(LOCALE_TOOLS_BASE).includes(loc)) {
-    const refs = LOCALES.map((lang) => ({ href: `${SITE_URL}${LOCALE_TOOLS_BASE[lang]}`, hreflang: lang }));
+    const refs = LOCALES.map((lang) => ({ href: `${SITE_URL}${LOCALE_TOOLS_BASE[lang]}`, hreflang: LOCALE_TO_HREFLANG[lang] }));
     refs.push({ href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}`, hreflang: 'x-default' });
     return refs;
   }
 
-  // Individual tool pages
-  const tool = SLUG_TO_TOOL.get(loc);
-  if (tool) {
-    const refs = LOCALES.map((lang) => ({ href: `${SITE_URL}${LOCALE_TOOLS_BASE[lang]}/${tool[lang]}`, hreflang: lang }));
-    refs.push({ href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}/${tool.en}`, hreflang: 'x-default' });
+  // Individual tool pages — dynamic lookup covering all 92 tools × 16 locales
+  const toolKey = PATH_TO_TOOL_KEY.get(loc);
+  if (toolKey) {
+    const localePaths = TOOL_LOCALE_PATHS.get(toolKey);
+    const refs = Object.entries(localePaths).map(([lang, href]) => ({
+      href: `${SITE_URL}${href}`,
+      hreflang: LOCALE_TO_HREFLANG[lang] || lang,
+    }));
+    const enPath = localePaths['en'];
+    if (enPath) refs.push({ href: `${SITE_URL}${enPath}`, hreflang: 'x-default' });
     return refs;
   }
 
-  // Non-tool multilingual pages (about, contact, privacy)
+  // Non-tool multilingual pages (about, contact, privacy, terms)
   for (const page of MULTILINGUAL_PAGES) {
     if (Object.values(page).includes(loc)) {
-      const refs = Object.entries(page).map(([lang, href]) => ({ href: `${SITE_URL}${href}`, hreflang: lang }));
+      const refs = Object.entries(page).map(([lang, href]) => ({ href: `${SITE_URL}${href}`, hreflang: LOCALE_TO_HREFLANG[lang] || lang }));
       refs.push({ href: `${SITE_URL}${page.en}`, hreflang: 'x-default' });
       return refs;
     }
@@ -620,14 +459,12 @@ module.exports = {
       loc,
       changefreq: getPageChangefreq(loc),
       priority: getPagePriority(loc),
-      alternateRefs: [],
+      alternateRefs: getAlternateRefs(loc),
     };
     const lastmod = ROUTE_LASTMOD.get(loc);
     if (lastmod) base.lastmod = lastmod;
     const img = ROUTE_IMAGE.get(loc);
     if (img) base.images = sitemapImage(img);
-
-    // hreflang handled by postbuild script (next-sitemap v4 appends loc to alternateRefs.href, incompatible with different slugs per locale)
 
     return base;
   },
