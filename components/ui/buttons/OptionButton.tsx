@@ -1,6 +1,6 @@
 'use client';
 
-import React, { type KeyboardEvent } from 'react';
+import { type KeyboardEvent } from 'react';
 import { CALC_ICONS } from '@/components/ui/icons/CalcIcons';
 
 interface OptionButtonProps {
