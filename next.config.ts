@@ -157,13 +157,6 @@ const nextConfig: NextConfig = {
 
     return [...canonicalRedirects, ...staticRedirects, ...patternRedirects];
   },
-  webpack(config, { dev }) {
-    if (!dev && config.cache) {
-      config.cache = Object.freeze({ type: 'memory' });
-    }
-
-    return config;
-  },
 };
 
 module.exports = withBundleAnalyzer(nextConfig);
