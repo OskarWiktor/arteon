@@ -15,6 +15,7 @@
 
 # next.js
 /.next/
+/.next/dev
 /out/
 
 # production
@@ -44,3 +45,5 @@ next-env.d.ts
 /data/pl/search-blog.json
 /data/pl/search-projects.json
 
+# next-agents-md
+.next-docs/
