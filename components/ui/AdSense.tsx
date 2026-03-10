@@ -252,28 +252,28 @@ export default function AdSense({ variant, adSlot, className = '' }: AdSenseProp
       attemptRender();
     }
 
-    // Listen for consent changes - retry unfilled ads
+    // Listen for consent changes - retry all ads (including limited/non-personalized).
+    // Google sets data-ad-status="filled" even for limited ads (served under denied consent),
+    // so checking for "unfilled" alone would miss the case where the user just granted consent
+    // and the existing limited ad needs to be replaced with a personalized one.
     const onConsentChange: ConsentCallback = () => {
       if (!container) return;
 
-      const ins = container.querySelector('ins.adsbygoogle');
-      const status = ins?.getAttribute('data-ad-status');
+      // Max 2 retries to avoid infinite loops (e.g. non-regulated regions where
+      // CONSENT_MODE_DATA_READY fires immediately before the ad is pushed).
+      if (retryCount.current >= 2) return;
+      retryCount.current++;
+      pushed.current = false;
+      setFilled(false);
+      container.replaceChildren();
 
-      // Only retry if ad was unfilled or never pushed, max 2 retries
-      if ((!pushed.current || status === 'unfilled') && retryCount.current < 2) {
-        retryCount.current++;
-        pushed.current = false;
-        setFilled(false);
-        container.replaceChildren();
+      onScriptReady(() => {
+        if (injectAd(container)) return;
 
-        onScriptReady(() => {
-          if (injectAd(container)) return;
-
-          // Small delay - Google needs time to process consent update
-          const t = setTimeout(() => injectAd(container), 300);
-          cleanups.push(() => clearTimeout(t));
-        });
-      }
+        // Small delay - Google needs time to process consent update
+        const t = setTimeout(() => injectAd(container), 300);
+        cleanups.push(() => clearTimeout(t));
+      });
     };
     consentListeners.add(onConsentChange);
     cleanups.push(() => consentListeners.delete(onConsentChange));

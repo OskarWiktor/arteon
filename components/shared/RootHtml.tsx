@@ -111,17 +111,21 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
               'window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};window.gtag=gtag;',
               // Google CMP (Privacy & Messaging) namespace
               'window.googlefc=window.googlefc||{};window.googlefc.callbackQueue=window.googlefc.callbackQueue||[];',
-              // EEA + UK + CH - all denied until Google CMP collects consent (IAB TCF v2.3)
+              // EEA + UK + CH - denied until Google CMP collects consent (IAB TCF v2.3 / opt-in).
+              // wait_for_update:2000 gives returning users' stored consent enough time to load
+              // before GA4 fires events with denied defaults. AdSense uses googlefc independently.
               "gtag('consent','default',{",
               "ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',",
-              'wait_for_update:500,',
+              'wait_for_update:2000,',
               // PL intentionally included — Poland is an EU member state subject to GDPR/RODO.
               "regions:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']",
               '});',
-              // US states with privacy laws - denied until Google CMP collects opt-out
+              // US states - opt-out model (CCPA/CPRA/CPA etc.), so consent STARTS as granted.
+              // Google Funding Choices shows "Do Not Sell" link; only updates to denied if user
+              // explicitly opts out. Starting denied (opt-in) would limit all US ads by default.
               "gtag('consent','default',{",
-              "ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',",
-              'wait_for_update:500,',
+              "ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted',",
+              'wait_for_update:1000,',
               "regions:['US-CA','US-CO','US-CT','US-DE','US-IA','US-IN','US-KY','US-MD','US-MN','US-MT','US-NE','US-NH','US-NJ','US-OR','US-RI','US-TN','US-TX','US-UT','US-VA']",
               '});',
               // Rest of world - granted (no consent dialog needed)
