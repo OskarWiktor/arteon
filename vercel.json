@@ -1,7 +1,4 @@
 {
-  "engines": {
-    "node": "20.x"
-  },
   "redirects": [
     { "source": "/narzedzia/konwerter-km-na-mile", "destination": "/narzedzia", "statusCode": 301 },
     { "source": "/narzedzia/konwerter-kg-na-funty", "destination": "/narzedzia", "statusCode": 301 },
