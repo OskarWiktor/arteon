@@ -106,6 +106,8 @@ export default function CookieConsent({ translations: t }: { translations: Cooki
     });
 
     updateGtag(next.analytics, next.ads);
+    // Notify AdSense components to retry any unfilled ad slots now that consent is known.
+    document.dispatchEvent(new Event('arteon:consent-updated'));
     if (next.analytics) {
       loadGA(window.__GA_ID);
       loadAhrefs();

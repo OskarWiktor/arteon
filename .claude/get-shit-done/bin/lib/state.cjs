@@ -209,7 +209,10 @@ function stateReplaceField(content, fieldName, newValue) {
 
 function cmdStateAdvancePlan(cwd, raw) {
   const statePath = path.join(cwd, '.planning', 'STATE.md');
-  if (!fs.existsSync(statePath)) { output({ error: 'STATE.md not found' }, raw); return; }
+  if (!fs.existsSync(statePath)) {
+    output({ error: 'STATE.md not found' }, raw);
+    return;
+  }
 
   let content = fs.readFileSync(statePath, 'utf-8');
   const currentPlan = parseInt(stateExtractField(content, 'Current Plan'), 10);
@@ -238,7 +241,10 @@ function cmdStateAdvancePlan(cwd, raw) {
 
 function cmdStateRecordMetric(cwd, options, raw) {
   const statePath = path.join(cwd, '.planning', 'STATE.md');
-  if (!fs.existsSync(statePath)) { output({ error: 'STATE.md not found' }, raw); return; }
+  if (!fs.existsSync(statePath)) {
+    output({ error: 'STATE.md not found' }, raw);
+    return;
+  }
 
   let content = fs.readFileSync(statePath, 'utf-8');
   const { phase, plan, duration, tasks, files } = options;
@@ -272,7 +278,10 @@ function cmdStateRecordMetric(cwd, options, raw) {
 
 function cmdStateUpdateProgress(cwd, raw) {
   const statePath = path.join(cwd, '.planning', 'STATE.md');
-  if (!fs.existsSync(statePath)) { output({ error: 'STATE.md not found' }, raw); return; }
+  if (!fs.existsSync(statePath)) {
+    output({ error: 'STATE.md not found' }, raw);
+    return;
+  }
 
   let content = fs.readFileSync(statePath, 'utf-8');
 
@@ -282,18 +291,20 @@ function cmdStateUpdateProgress(cwd, raw) {
   let totalSummaries = 0;
 
   if (fs.existsSync(phasesDir)) {
-    const phaseDirs = fs.readdirSync(phasesDir, { withFileTypes: true })
-      .filter(e => e.isDirectory()).map(e => e.name);
+    const phaseDirs = fs
+      .readdirSync(phasesDir, { withFileTypes: true })
+      .filter((e) => e.isDirectory())
+      .map((e) => e.name);
     for (const dir of phaseDirs) {
       const files = fs.readdirSync(path.join(phasesDir, dir));
-      totalPlans += files.filter(f => f.match(/-PLAN\.md$/i)).length;
-      totalSummaries += files.filter(f => f.match(/-SUMMARY\.md$/i)).length;
+      totalPlans += files.filter((f) => f.match(/-PLAN\.md$/i)).length;
+      totalSummaries += files.filter((f) => f.match(/-SUMMARY\.md$/i)).length;
     }
   }
 
-  const percent = totalPlans > 0 ? Math.min(100, Math.round(totalSummaries / totalPlans * 100)) : 0;
+  const percent = totalPlans > 0 ? Math.min(100, Math.round((totalSummaries / totalPlans) * 100)) : 0;
   const barWidth = 10;
-  const filled = Math.round(percent / 100 * barWidth);
+  const filled = Math.round((percent / 100) * barWidth);
   const bar = '\u2588'.repeat(filled) + '\u2591'.repeat(barWidth - filled);
   const progressStr = `[${bar}] ${percent}%`;
 
@@ -315,7 +326,10 @@ function cmdStateUpdateProgress(cwd, raw) {
 
 function cmdStateAddDecision(cwd, options, raw) {
   const statePath = path.join(cwd, '.planning', 'STATE.md');
-  if (!fs.existsSync(statePath)) { output({ error: 'STATE.md not found' }, raw); return; }
+  if (!fs.existsSync(statePath)) {
+    output({ error: 'STATE.md not found' }, raw);
+    return;
+  }
 
   const { phase, summary, summary_file, rationale, rationale_file } = options;
   let summaryText = null;
@@ -329,7 +343,10 @@ function cmdStateAddDecision(cwd, options, raw) {
     return;
   }
 
-  if (!summaryText) { output({ error: 'summary required' }, raw); return; }
+  if (!summaryText) {
+    output({ error: 'summary required' }, raw);
+    return;
+  }
 
   let content = fs.readFileSync(statePath, 'utf-8');
   const entry = `- [Phase ${phase || '?'}]: ${summaryText}${rationaleText ? ` — ${rationaleText}` : ''}`;
@@ -353,7 +370,10 @@ function cmdStateAddDecision(cwd, options, raw) {
 
 function cmdStateAddBlocker(cwd, text, raw) {
   const statePath = path.join(cwd, '.planning', 'STATE.md');
-  if (!fs.existsSync(statePath)) { output({ error: 'STATE.md not found' }, raw); return; }
+  if (!fs.existsSync(statePath)) {
+    output({ error: 'STATE.md not found' }, raw);
+    return;
+  }
   const blockerOptions = typeof text === 'object' && text !== null ? text : { text };
   let blockerText = null;
 
@@ -364,7 +384,10 @@ function cmdStateAddBlocker(cwd, text, raw) {
     return;
   }
 
-  if (!blockerText) { output({ error: 'text required' }, raw); return; }
+  if (!blockerText) {
+    output({ error: 'text required' }, raw);
+    return;
+  }
 
   let content = fs.readFileSync(statePath, 'utf-8');
   const entry = `- ${blockerText}`;
@@ -386,8 +409,14 @@ function cmdStateAddBlocker(cwd, text, raw) {
 
 function cmdStateResolveBlocker(cwd, text, raw) {
   const statePath = path.join(cwd, '.planning', 'STATE.md');
-  if (!fs.existsSync(statePath)) { output({ error: 'STATE.md not found' }, raw); return; }
-  if (!text) { output({ error: 'text required' }, raw); return; }
+  if (!fs.existsSync(statePath)) {
+    output({ error: 'STATE.md not found' }, raw);
+    return;
+  }
+  if (!text) {
+    output({ error: 'text required' }, raw);
+    return;
+  }
 
   let content = fs.readFileSync(statePath, 'utf-8');
 
@@ -397,7 +426,7 @@ function cmdStateResolveBlocker(cwd, text, raw) {
   if (match) {
     const sectionBody = match[2];
     const lines = sectionBody.split('\n');
-    const filtered = lines.filter(line => {
+    const filtered = lines.filter((line) => {
       if (!line.startsWith('- ')) return true;
       return !line.toLowerCase().includes(text.toLowerCase());
     });
@@ -418,7 +447,10 @@ function cmdStateResolveBlocker(cwd, text, raw) {
 
 function cmdStateRecordSession(cwd, options, raw) {
   const statePath = path.join(cwd, '.planning', 'STATE.md');
-  if (!fs.existsSync(statePath)) { output({ error: 'STATE.md not found' }, raw); return; }
+  if (!fs.existsSync(statePath)) {
+    output({ error: 'STATE.md not found' }, raw);
+    return;
+  }
 
   let content = fs.readFileSync(statePath, 'utf-8');
   const now = new Date().toISOString();
@@ -426,22 +458,34 @@ function cmdStateRecordSession(cwd, options, raw) {
 
   // Update Last session / Last Date
   let result = stateReplaceField(content, 'Last session', now);
-  if (result) { content = result; updated.push('Last session'); }
+  if (result) {
+    content = result;
+    updated.push('Last session');
+  }
   result = stateReplaceField(content, 'Last Date', now);
-  if (result) { content = result; updated.push('Last Date'); }
+  if (result) {
+    content = result;
+    updated.push('Last Date');
+  }
 
   // Update Stopped at
   if (options.stopped_at) {
     result = stateReplaceField(content, 'Stopped At', options.stopped_at);
     if (!result) result = stateReplaceField(content, 'Stopped at', options.stopped_at);
-    if (result) { content = result; updated.push('Stopped At'); }
+    if (result) {
+      content = result;
+      updated.push('Stopped At');
+    }
   }
 
   // Update Resume file
   const resumeFile = options.resume_file || 'None';
   result = stateReplaceField(content, 'Resume File', resumeFile);
   if (!result) result = stateReplaceField(content, 'Resume file', resumeFile);
-  if (result) { content = result; updated.push('Resume File'); }
+  if (result) {
+    content = result;
+    updated.push('Resume File');
+  }
 
   if (updated.length > 0) {
     writeStateMd(statePath, content, cwd);
@@ -483,9 +527,15 @@ function cmdStateSnapshot(cwd, raw) {
   const decisionsMatch = content.match(/##\s*Decisions Made[\s\S]*?\n\|[^\n]+\n\|[-|\s]+\n([\s\S]*?)(?=\n##|\n$|$)/i);
   if (decisionsMatch) {
     const tableBody = decisionsMatch[1];
-    const rows = tableBody.trim().split('\n').filter(r => r.includes('|'));
+    const rows = tableBody
+      .trim()
+      .split('\n')
+      .filter((r) => r.includes('|'));
     for (const row of rows) {
-      const cells = row.split('|').map(c => c.trim()).filter(Boolean);
+      const cells = row
+        .split('|')
+        .map((c) => c.trim())
+        .filter(Boolean);
       if (cells.length >= 3) {
         decisions.push({
           phase: cells[0],
@@ -517,12 +567,9 @@ function cmdStateSnapshot(cwd, raw) {
   const sessionMatch = content.match(/##\s*Session\s*\n([\s\S]*?)(?=\n##|$)/i);
   if (sessionMatch) {
     const sessionSection = sessionMatch[1];
-    const lastDateMatch = sessionSection.match(/\*\*Last Date:\*\*\s*(.+)/i)
-      || sessionSection.match(/^Last Date:\s*(.+)/im);
-    const stoppedAtMatch = sessionSection.match(/\*\*Stopped At:\*\*\s*(.+)/i)
-      || sessionSection.match(/^Stopped At:\s*(.+)/im);
-    const resumeFileMatch = sessionSection.match(/\*\*Resume File:\*\*\s*(.+)/i)
-      || sessionSection.match(/^Resume File:\s*(.+)/im);
+    const lastDateMatch = sessionSection.match(/\*\*Last Date:\*\*\s*(.+)/i) || sessionSection.match(/^Last Date:\s*(.+)/im);
+    const stoppedAtMatch = sessionSection.match(/\*\*Stopped At:\*\*\s*(.+)/i) || sessionSection.match(/^Stopped At:\s*(.+)/im);
+    const resumeFileMatch = sessionSection.match(/\*\*Resume File:\*\*\s*(.+)/i) || sessionSection.match(/^Resume File:\s*(.+)/im);
 
     if (lastDateMatch) session.last_date = lastDateMatch[1].trim();
     if (stoppedAtMatch) session.stopped_at = stoppedAtMatch[1].trim();
@@ -587,8 +634,10 @@ function buildStateFrontmatter(bodyContent, cwd) {
       const phasesDir = path.join(cwd, '.planning', 'phases');
       if (fs.existsSync(phasesDir)) {
         const isDirInMilestone = getMilestonePhaseFilter(cwd);
-        const phaseDirs = fs.readdirSync(phasesDir, { withFileTypes: true })
-          .filter(e => e.isDirectory()).map(e => e.name)
+        const phaseDirs = fs
+          .readdirSync(phasesDir, { withFileTypes: true })
+          .filter((e) => e.isDirectory())
+          .map((e) => e.name)
           .filter(isDirInMilestone);
         let diskTotalPlans = 0;
         let diskTotalSummaries = 0;
@@ -596,15 +645,13 @@ function buildStateFrontmatter(bodyContent, cwd) {
 
         for (const dir of phaseDirs) {
           const files = fs.readdirSync(path.join(phasesDir, dir));
-          const plans = files.filter(f => f.match(/-PLAN\.md$/i)).length;
-          const summaries = files.filter(f => f.match(/-SUMMARY\.md$/i)).length;
+          const plans = files.filter((f) => f.match(/-PLAN\.md$/i)).length;
+          const summaries = files.filter((f) => f.match(/-SUMMARY\.md$/i)).length;
           diskTotalPlans += plans;
           diskTotalSummaries += summaries;
           if (plans > 0 && summaries >= plans) diskCompletedPhases++;
         }
-        totalPhases = isDirInMilestone.phaseCount > 0
-          ? Math.max(phaseDirs.length, isDirInMilestone.phaseCount)
-          : phaseDirs.length;
+        totalPhases = isDirInMilestone.phaseCount > 0 ? Math.max(phaseDirs.length, isDirInMilestone.phaseCount) : phaseDirs.length;
         completedPhases = diskCompletedPhases;
         totalPlans = diskTotalPlans;
         completedPlans = diskTotalSummaries;

@@ -6,6 +6,9 @@ interface ToolEditorLayoutProps {
   children: ReactNode;
 }
 
+// TODO(ads): Sidebars visible only on xl (≥1280px). Showing on lg (1024px) would leave
+// only ~560px for tool content — too narrow for image converters. Would require replacing
+// fixed 200px ad columns with narrower ones and verifying all 92 tool UIs.
 export default function ToolEditorLayout({ children }: ToolEditorLayoutProps) {
   return (
     <div className={['mx-auto w-[100%] max-w-[1420px]', 'xl:grid xl:w-full xl:max-w-none xl:grid-cols-[1fr_200px_minmax(0,1420px)_200px_1fr] xl:gap-x-4'].join(' ')}>

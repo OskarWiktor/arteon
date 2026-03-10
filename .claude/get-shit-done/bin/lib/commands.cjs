@@ -4,7 +4,23 @@
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-const { safeReadFile, loadConfig, isGitIgnored, execGit, normalizePhaseName, comparePhaseNum, getArchivedPhaseDirs, generateSlugInternal, getMilestoneInfo, resolveModelInternal, MODEL_PROFILES, toPosixPath, output, error, findPhaseInternal } = require('./core.cjs');
+const {
+  safeReadFile,
+  loadConfig,
+  isGitIgnored,
+  execGit,
+  normalizePhaseName,
+  comparePhaseNum,
+  getArchivedPhaseDirs,
+  generateSlugInternal,
+  getMilestoneInfo,
+  resolveModelInternal,
+  MODEL_PROFILES,
+  toPosixPath,
+  output,
+  error,
+  findPhaseInternal,
+} = require('./core.cjs');
 const { extractFrontmatter } = require('./frontmatter.cjs');
 
 function cmdGenerateSlug(text, raw) {
@@ -48,7 +64,7 @@ function cmdListTodos(cwd, area, raw) {
   const todos = [];
 
   try {
-    const files = fs.readdirSync(pendingDir).filter(f => f.endsWith('.md'));
+    const files = fs.readdirSync(pendingDir).filter((f) => f.endsWith('.md'));
 
     for (const file of files) {
       try {
@@ -112,9 +128,10 @@ function cmdHistoryDigest(cwd, raw) {
   // Add current phases
   if (fs.existsSync(phasesDir)) {
     try {
-      const currentDirs = fs.readdirSync(phasesDir, { withFileTypes: true })
-        .filter(e => e.isDirectory())
-        .map(e => e.name)
+      const currentDirs = fs
+        .readdirSync(phasesDir, { withFileTypes: true })
+        .filter((e) => e.isDirectory())
+        .map((e) => e.name)
         .sort();
       for (const dir of currentDirs) {
         allPhaseDirs.push({ name: dir, fullPath: path.join(phasesDir, dir), milestone: null });
@@ -130,7 +147,7 @@ function cmdHistoryDigest(cwd, raw) {
 
   try {
     for (const { name: dir, fullPath: dirPath } of allPhaseDirs) {
-      const summaries = fs.readdirSync(dirPath).filter(f => f.endsWith('-SUMMARY.md') || f === 'SUMMARY.md');
+      const summaries = fs.readdirSync(dirPath).filter((f) => f.endsWith('-SUMMARY.md') || f === 'SUMMARY.md');
 
       for (const summary of summaries) {
         try {
@@ -150,33 +167,32 @@ function cmdHistoryDigest(cwd, raw) {
 
           // Merge provides
           if (fm['dependency-graph'] && fm['dependency-graph'].provides) {
-            fm['dependency-graph'].provides.forEach(p => digest.phases[phaseNum].provides.add(p));
+            fm['dependency-graph'].provides.forEach((p) => digest.phases[phaseNum].provides.add(p));
           } else if (fm.provides) {
-            fm.provides.forEach(p => digest.phases[phaseNum].provides.add(p));
+            fm.provides.forEach((p) => digest.phases[phaseNum].provides.add(p));
           }
 
           // Merge affects
           if (fm['dependency-graph'] && fm['dependency-graph'].affects) {
-            fm['dependency-graph'].affects.forEach(a => digest.phases[phaseNum].affects.add(a));
+            fm['dependency-graph'].affects.forEach((a) => digest.phases[phaseNum].affects.add(a));
           }
 
           // Merge patterns
           if (fm['patterns-established']) {
-            fm['patterns-established'].forEach(p => digest.phases[phaseNum].patterns.add(p));
+            fm['patterns-established'].forEach((p) => digest.phases[phaseNum].patterns.add(p));
           }
 
           // Merge decisions
           if (fm['key-decisions']) {
-            fm['key-decisions'].forEach(d => {
+            fm['key-decisions'].forEach((d) => {
               digest.decisions.push({ phase: phaseNum, decision: d });
             });
           }
 
           // Merge tech stack
           if (fm['tech-stack'] && fm['tech-stack'].added) {
-            fm['tech-stack'].added.forEach(t => digest.tech_stack.add(typeof t === 'string' ? t : t.name));
+            fm['tech-stack'].added.forEach((t) => digest.tech_stack.add(typeof t === 'string' ? t : t.name));
           }
-
         } catch (e) {
           // Skip malformed summaries
         }
@@ -184,7 +200,7 @@ function cmdHistoryDigest(cwd, raw) {
     }
 
     // Convert Sets to Arrays for JSON output
-    Object.keys(digest.phases).forEach(p => {
+    Object.keys(digest.phases).forEach((p) => {
       digest.phases[p].provides = [...digest.phases[p].provides];
       digest.phases[p].affects = [...digest.phases[p].affects];
       digest.phases[p].patterns = [...digest.phases[p].patterns];
@@ -207,9 +223,7 @@ function cmdResolveModel(cwd, agentType, raw) {
   const model = resolveModelInternal(cwd, agentType);
 
   const agentModels = MODEL_PROFILES[agentType];
-  const result = agentModels
-    ? { model, profile }
-    : { model, profile, unknown_agent: true };
+  const result = agentModels ? { model, profile } : { model, profile, unknown_agent: true };
   output(result, raw, model);
 }
 
@@ -279,7 +293,7 @@ function cmdSummaryExtract(cwd, summaryPath, fields, raw) {
   // Parse key-decisions into structured format
   const parseDecisions = (decisionsList) => {
     if (!decisionsList || !Array.isArray(decisionsList)) return [];
-    return decisionsList.map(d => {
+    return decisionsList.map((d) => {
       const colonIdx = d.indexOf(':');
       if (colonIdx > 0) {
         return {
@@ -336,7 +350,7 @@ async function cmdWebsearch(query, options, raw) {
     count: String(options.limit || 10),
     country: 'us',
     search_lang: 'en',
-    text_decorations: 'false'
+    text_decorations: 'false',
   });
 
   if (options.freshness) {
@@ -344,15 +358,12 @@ async function cmdWebsearch(query, options, raw) {
   }
 
   try {
-    const response = await fetch(
-      `https://api.search.brave.com/res/v1/web/search?${params}`,
-      {
-        headers: {
-          'Accept': 'application/json',
-          'X-Subscription-Token': apiKey
-        }
-      }
-    );
+    const response = await fetch(`https://api.search.brave.com/res/v1/web/search?${params}`, {
+      headers: {
+        Accept: 'application/json',
+        'X-Subscription-Token': apiKey,
+      },
+    });
 
     if (!response.ok) {
       output({ available: false, error: `API error: ${response.status}` }, raw, '');
@@ -361,19 +372,23 @@ async function cmdWebsearch(query, options, raw) {
 
     const data = await response.json();
 
-    const results = (data.web?.results || []).map(r => ({
+    const results = (data.web?.results || []).map((r) => ({
       title: r.title,
       url: r.url,
       description: r.description,
-      age: r.age || null
+      age: r.age || null,
     }));
 
-    output({
-      available: true,
-      query,
-      count: results.length,
-      results
-    }, raw, results.map(r => `${r.title}\n${r.url}\n${r.description}`).join('\n\n'));
+    output(
+      {
+        available: true,
+        query,
+        count: results.length,
+        results,
+      },
+      raw,
+      results.map((r) => `${r.title}\n${r.url}\n${r.description}`).join('\n\n'),
+    );
   } catch (err) {
     output({ available: false, error: err.message }, raw, '');
   }
@@ -390,15 +405,18 @@ function cmdProgressRender(cwd, format, raw) {
 
   try {
     const entries = fs.readdirSync(phasesDir, { withFileTypes: true });
-    const dirs = entries.filter(e => e.isDirectory()).map(e => e.name).sort((a, b) => comparePhaseNum(a, b));
+    const dirs = entries
+      .filter((e) => e.isDirectory())
+      .map((e) => e.name)
+      .sort((a, b) => comparePhaseNum(a, b));
 
     for (const dir of dirs) {
       const dm = dir.match(/^(\d+(?:\.\d+)*)-?(.*)/);
       const phaseNum = dm ? dm[1] : dir;
       const phaseName = dm && dm[2] ? dm[2].replace(/-/g, ' ') : '';
       const phaseFiles = fs.readdirSync(path.join(phasesDir, dir));
-      const plans = phaseFiles.filter(f => f.endsWith('-PLAN.md') || f === 'PLAN.md').length;
-      const summaries = phaseFiles.filter(f => f.endsWith('-SUMMARY.md') || f === 'SUMMARY.md').length;
+      const plans = phaseFiles.filter((f) => f.endsWith('-PLAN.md') || f === 'PLAN.md').length;
+      const summaries = phaseFiles.filter((f) => f.endsWith('-SUMMARY.md') || f === 'SUMMARY.md').length;
 
       totalPlans += plans;
       totalSummaries += summaries;
@@ -436,14 +454,17 @@ function cmdProgressRender(cwd, format, raw) {
     output({ bar: text, percent, completed: totalSummaries, total: totalPlans }, raw, text);
   } else {
     // JSON format
-    output({
-      milestone_version: milestone.version,
-      milestone_name: milestone.name,
-      phases,
-      total_plans: totalPlans,
-      total_summaries: totalSummaries,
-      percent,
-    }, raw);
+    output(
+      {
+        milestone_version: milestone.version,
+        milestone_name: milestone.name,
+        phases,
+        total_plans: totalPlans,
+        total_summaries: totalSummaries,
+        percent,
+      },
+      raw,
+    );
   }
 }
 

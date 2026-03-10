@@ -91,6 +91,13 @@ function initConsentBus() {
   if (consentBusInitialized || typeof window === 'undefined') return;
   consentBusInitialized = true;
 
+  // Custom event dispatched by CookieConsent (own banner) after user makes a choice.
+  // Covers the case where Google Funding Choices CMP is not configured — in that
+  // scenario CONSENT_MODE_DATA_READY never fires, so unfilled ads would never retry.
+  document.addEventListener('arteon:consent-updated', () => {
+    for (const cb of consentListeners) cb();
+  });
+
   const fc = window.googlefc;
   if (!fc) return;
 

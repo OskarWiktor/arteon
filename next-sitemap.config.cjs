@@ -175,10 +175,22 @@ const LOCALE_TOOLS_BASE = {
 
 // Maps locale key → BCP 47 hreflang value (no → nb per Fix 5)
 const LOCALE_TO_HREFLANG = {
-  pl: 'pl', en: 'en', de: 'de', es: 'es', fr: 'fr', pt: 'pt', it: 'it',
-  ro: 'ro', nl: 'nl', hu: 'hu', cs: 'cs', sv: 'sv', da: 'da',
+  pl: 'pl',
+  en: 'en',
+  de: 'de',
+  es: 'es',
+  fr: 'fr',
+  pt: 'pt',
+  it: 'it',
+  ro: 'ro',
+  nl: 'nl',
+  hu: 'hu',
+  cs: 'cs',
+  sv: 'sv',
+  da: 'da',
   no: 'nb',
-  fi: 'fi', el: 'el',
+  fi: 'fi',
+  el: 'el',
 };
 
 /**

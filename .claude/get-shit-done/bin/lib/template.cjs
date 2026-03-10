@@ -54,11 +54,18 @@ function cmdTemplateSelect(cwd, planPath, raw) {
 }
 
 function cmdTemplateFill(cwd, templateType, options, raw) {
-  if (!templateType) { error('template type required: summary, plan, or verification'); }
-  if (!options.phase) { error('--phase required'); }
+  if (!templateType) {
+    error('template type required: summary, plan, or verification');
+  }
+  if (!options.phase) {
+    error('--phase required');
+  }
 
   const phaseInfo = findPhaseInternal(cwd, options.phase);
-  if (!phaseInfo || !phaseInfo.found) { output({ error: 'Phase not found', phase: options.phase }, raw); return; }
+  if (!phaseInfo || !phaseInfo.found) {
+    output({ error: 'Phase not found', phase: options.phase }, raw);
+    return;
+  }
 
   const padded = normalizePhaseName(options.phase);
   const today = new Date().toISOString().split('T')[0];
@@ -111,7 +118,7 @@ function cmdTemplateFill(cwd, templateType, options, raw) {
         '[Key decisions or "None - followed plan as specified"]',
         '',
         '## Next Phase Readiness',
-        '[What\'s ready for next phase]',
+        "[What's ready for next phase]",
       ].join('\n');
       fileName = `${padded}-${planNum}-SUMMARY.md`;
       break;

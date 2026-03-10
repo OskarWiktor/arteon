@@ -1,6 +1,6 @@
 {
   "permissions": {
-    "allow": ["Bash(npm run:*)", "Bash(git add:*)", "Bash(git commit:*)"]
+    "allow": ["Bash(npm run:*)", "Bash(git add:*)", "Bash(git commit:*)", "Bash(find . -name .env* -o -name *.env.example)"]
   },
   "enabledPlugins": {
     "claude-mem@thedotmack": true

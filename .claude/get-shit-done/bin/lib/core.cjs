@@ -16,18 +16,18 @@ function toPosixPath(p) {
 // ─── Model Profile Table ─────────────────────────────────────────────────────
 
 const MODEL_PROFILES = {
-  'gsd-planner':              { quality: 'opus', balanced: 'opus',   budget: 'sonnet' },
-  'gsd-roadmapper':           { quality: 'opus', balanced: 'sonnet', budget: 'sonnet' },
-  'gsd-executor':             { quality: 'opus', balanced: 'sonnet', budget: 'sonnet' },
-  'gsd-phase-researcher':     { quality: 'opus', balanced: 'sonnet', budget: 'haiku' },
-  'gsd-project-researcher':   { quality: 'opus', balanced: 'sonnet', budget: 'haiku' },
+  'gsd-planner': { quality: 'opus', balanced: 'opus', budget: 'sonnet' },
+  'gsd-roadmapper': { quality: 'opus', balanced: 'sonnet', budget: 'sonnet' },
+  'gsd-executor': { quality: 'opus', balanced: 'sonnet', budget: 'sonnet' },
+  'gsd-phase-researcher': { quality: 'opus', balanced: 'sonnet', budget: 'haiku' },
+  'gsd-project-researcher': { quality: 'opus', balanced: 'sonnet', budget: 'haiku' },
   'gsd-research-synthesizer': { quality: 'sonnet', balanced: 'sonnet', budget: 'haiku' },
-  'gsd-debugger':             { quality: 'opus', balanced: 'sonnet', budget: 'sonnet' },
-  'gsd-codebase-mapper':      { quality: 'sonnet', balanced: 'haiku', budget: 'haiku' },
-  'gsd-verifier':             { quality: 'sonnet', balanced: 'sonnet', budget: 'haiku' },
-  'gsd-plan-checker':         { quality: 'sonnet', balanced: 'sonnet', budget: 'haiku' },
-  'gsd-integration-checker':  { quality: 'sonnet', balanced: 'sonnet', budget: 'haiku' },
-  'gsd-nyquist-auditor':      { quality: 'sonnet', balanced: 'sonnet', budget: 'haiku' },
+  'gsd-debugger': { quality: 'opus', balanced: 'sonnet', budget: 'sonnet' },
+  'gsd-codebase-mapper': { quality: 'sonnet', balanced: 'haiku', budget: 'haiku' },
+  'gsd-verifier': { quality: 'sonnet', balanced: 'sonnet', budget: 'haiku' },
+  'gsd-plan-checker': { quality: 'sonnet', balanced: 'sonnet', budget: 'haiku' },
+  'gsd-integration-checker': { quality: 'sonnet', balanced: 'sonnet', budget: 'haiku' },
+  'gsd-nyquist-auditor': { quality: 'sonnet', balanced: 'sonnet', budget: 'haiku' },
 };
 
 // ─── Output helpers ───────────────────────────────────────────────────────────
@@ -91,7 +91,9 @@ function loadConfig(cwd) {
       const depthToGranularity = { quick: 'coarse', standard: 'standard', comprehensive: 'fine' };
       parsed.granularity = depthToGranularity[parsed.depth] || parsed.depth;
       delete parsed.depth;
-      try { fs.writeFileSync(configPath, JSON.stringify(parsed, null, 2), 'utf-8'); } catch {}
+      try {
+        fs.writeFileSync(configPath, JSON.stringify(parsed, null, 2), 'utf-8');
+      } catch {}
     }
 
     const get = (key, nested) => {
@@ -149,7 +151,7 @@ function isGitIgnored(cwd, targetPath) {
 
 function execGit(cwd, args) {
   try {
-    const escaped = args.map(a => {
+    const escaped = args.map((a) => {
       if (/^[a-zA-Z0-9._\-/=:@]+$/.test(a)) return a;
       return "'" + a.replace(/'/g, "'\\''") + "'";
     });
@@ -198,8 +200,18 @@ function comparePhaseNum(a, b) {
     return la < lb ? -1 : 1;
   }
   // Segment-by-segment decimal comparison: 12A < 12A.1 < 12A.1.2 < 12A.2
-  const aDecParts = pa[3] ? pa[3].slice(1).split('.').map(p => parseInt(p, 10)) : [];
-  const bDecParts = pb[3] ? pb[3].slice(1).split('.').map(p => parseInt(p, 10)) : [];
+  const aDecParts = pa[3]
+    ? pa[3]
+        .slice(1)
+        .split('.')
+        .map((p) => parseInt(p, 10))
+    : [];
+  const bDecParts = pb[3]
+    ? pb[3]
+        .slice(1)
+        .split('.')
+        .map((p) => parseInt(p, 10))
+    : [];
   const maxLen = Math.max(aDecParts.length, bDecParts.length);
   if (aDecParts.length === 0 && bDecParts.length > 0) return -1;
   if (bDecParts.length === 0 && aDecParts.length > 0) return 1;
@@ -214,8 +226,11 @@ function comparePhaseNum(a, b) {
 function searchPhaseInDir(baseDir, relBase, normalized) {
   try {
     const entries = fs.readdirSync(baseDir, { withFileTypes: true });
-    const dirs = entries.filter(e => e.isDirectory()).map(e => e.name).sort((a, b) => comparePhaseNum(a, b));
-    const match = dirs.find(d => d.startsWith(normalized));
+    const dirs = entries
+      .filter((e) => e.isDirectory())
+      .map((e) => e.name)
+      .sort((a, b) => comparePhaseNum(a, b));
+    const match = dirs.find((d) => d.startsWith(normalized));
     if (!match) return null;
 
     const dirMatch = match.match(/^(\d+[A-Z]?(?:\.\d+)*)-?(.*)/i);
@@ -224,16 +239,14 @@ function searchPhaseInDir(baseDir, relBase, normalized) {
     const phaseDir = path.join(baseDir, match);
     const phaseFiles = fs.readdirSync(phaseDir);
 
-    const plans = phaseFiles.filter(f => f.endsWith('-PLAN.md') || f === 'PLAN.md').sort();
-    const summaries = phaseFiles.filter(f => f.endsWith('-SUMMARY.md') || f === 'SUMMARY.md').sort();
-    const hasResearch = phaseFiles.some(f => f.endsWith('-RESEARCH.md') || f === 'RESEARCH.md');
-    const hasContext = phaseFiles.some(f => f.endsWith('-CONTEXT.md') || f === 'CONTEXT.md');
-    const hasVerification = phaseFiles.some(f => f.endsWith('-VERIFICATION.md') || f === 'VERIFICATION.md');
+    const plans = phaseFiles.filter((f) => f.endsWith('-PLAN.md') || f === 'PLAN.md').sort();
+    const summaries = phaseFiles.filter((f) => f.endsWith('-SUMMARY.md') || f === 'SUMMARY.md').sort();
+    const hasResearch = phaseFiles.some((f) => f.endsWith('-RESEARCH.md') || f === 'RESEARCH.md');
+    const hasContext = phaseFiles.some((f) => f.endsWith('-CONTEXT.md') || f === 'CONTEXT.md');
+    const hasVerification = phaseFiles.some((f) => f.endsWith('-VERIFICATION.md') || f === 'VERIFICATION.md');
 
-    const completedPlanIds = new Set(
-      summaries.map(s => s.replace('-SUMMARY.md', '').replace('SUMMARY.md', ''))
-    );
-    const incompletePlans = plans.filter(p => {
+    const completedPlanIds = new Set(summaries.map((s) => s.replace('-SUMMARY.md', '').replace('SUMMARY.md', '')));
+    const incompletePlans = plans.filter((p) => {
       const planId = p.replace('-PLAN.md', '').replace('PLAN.md', '');
       return !completedPlanIds.has(planId);
     });
@@ -243,7 +256,12 @@ function searchPhaseInDir(baseDir, relBase, normalized) {
       directory: toPosixPath(path.join(relBase, match)),
       phase_number: phaseNumber,
       phase_name: phaseName,
-      phase_slug: phaseName ? phaseName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') : null,
+      phase_slug: phaseName
+        ? phaseName
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '')
+        : null,
       plans,
       summaries,
       incomplete_plans: incompletePlans,
@@ -273,8 +291,8 @@ function findPhaseInternal(cwd, phase) {
   try {
     const milestoneEntries = fs.readdirSync(milestonesDir, { withFileTypes: true });
     const archiveDirs = milestoneEntries
-      .filter(e => e.isDirectory() && /^v[\d.]+-phases$/.test(e.name))
-      .map(e => e.name)
+      .filter((e) => e.isDirectory() && /^v[\d.]+-phases$/.test(e.name))
+      .map((e) => e.name)
       .sort()
       .reverse();
 
@@ -303,8 +321,8 @@ function getArchivedPhaseDirs(cwd) {
     const milestoneEntries = fs.readdirSync(milestonesDir, { withFileTypes: true });
     // Find v*-phases directories, sort newest first
     const phaseDirs = milestoneEntries
-      .filter(e => e.isDirectory() && /^v[\d.]+-phases$/.test(e.name))
-      .map(e => e.name)
+      .filter((e) => e.isDirectory() && /^v[\d.]+-phases$/.test(e.name))
+      .map((e) => e.name)
       .sort()
       .reverse();
 
@@ -312,7 +330,10 @@ function getArchivedPhaseDirs(cwd) {
       const version = archiveName.match(/^(v[\d.]+)-phases$/)[1];
       const archivePath = path.join(milestonesDir, archiveName);
       const entries = fs.readdirSync(archivePath, { withFileTypes: true });
-      const dirs = entries.filter(e => e.isDirectory()).map(e => e.name).sort((a, b) => comparePhaseNum(a, b));
+      const dirs = entries
+        .filter((e) => e.isDirectory())
+        .map((e) => e.name)
+        .sort((a, b) => comparePhaseNum(a, b));
 
       for (const dir of dirs) {
         results.push({
@@ -395,7 +416,10 @@ function pathExistsInternal(cwd, targetPath) {
 
 function generateSlugInternal(text) {
   if (!text) return null;
-  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 function getMilestoneInfo(cwd) {
@@ -455,9 +479,7 @@ function getMilestonePhaseFilter(cwd) {
     return passAll;
   }
 
-  const normalized = new Set(
-    [...milestonePhaseNums].map(n => (n.replace(/^0+/, '') || '0').toLowerCase())
-  );
+  const normalized = new Set([...milestonePhaseNums].map((n) => (n.replace(/^0+/, '') || '0').toLowerCase()));
 
   function isDirInMilestone(dirName) {
     const m = dirName.match(/^0*(\d+[A-Za-z]?(?:\.\d+)*)/);

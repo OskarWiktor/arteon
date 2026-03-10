@@ -50,7 +50,11 @@ function extractFrontmatter(content) {
         stack.push({ obj: current.obj[key], key: null, indent });
       } else if (value.startsWith('[') && value.endsWith(']')) {
         // Inline array: key: [a, b, c]
-        current.obj[key] = value.slice(1, -1).split(',').map(s => s.trim().replace(/^["']|["']$/g, '')).filter(Boolean);
+        current.obj[key] = value
+          .slice(1, -1)
+          .split(',')
+          .map((s) => s.trim().replace(/^["']|["']$/g, ''))
+          .filter(Boolean);
         current.key = null;
       } else {
         // Simple key: value
@@ -59,7 +63,10 @@ function extractFrontmatter(content) {
       }
     } else if (line.trim().startsWith('- ')) {
       // Array item
-      const itemValue = line.trim().slice(2).replace(/^["']|["']$/g, '');
+      const itemValue = line
+        .trim()
+        .slice(2)
+        .replace(/^["']|["']$/g, '');
 
       // If current context is an empty object, convert to array
       if (typeof current.obj === 'object' && !Array.isArray(current.obj) && Object.keys(current.obj).length === 0) {
@@ -90,7 +97,7 @@ function reconstructFrontmatter(obj) {
     if (Array.isArray(value)) {
       if (value.length === 0) {
         lines.push(`${key}: []`);
-      } else if (value.every(v => typeof v === 'string') && value.length <= 3 && value.join(', ').length < 60) {
+      } else if (value.every((v) => typeof v === 'string') && value.length <= 3 && value.join(', ').length < 60) {
         lines.push(`${key}: [${value.join(', ')}]`);
       } else {
         lines.push(`${key}:`);
@@ -105,7 +112,7 @@ function reconstructFrontmatter(obj) {
         if (Array.isArray(subval)) {
           if (subval.length === 0) {
             lines.push(`  ${subkey}: []`);
-          } else if (subval.every(v => typeof v === 'string') && subval.length <= 3 && subval.join(', ').length < 60) {
+          } else if (subval.every((v) => typeof v === 'string') && subval.length <= 3 && subval.join(', ').length < 60) {
             lines.push(`  ${subkey}: [${subval.join(', ')}]`);
           } else {
             lines.push(`  ${subkey}:`);
@@ -231,14 +238,22 @@ const FRONTMATTER_SCHEMAS = {
 };
 
 function cmdFrontmatterGet(cwd, filePath, field, raw) {
-  if (!filePath) { error('file path required'); }
+  if (!filePath) {
+    error('file path required');
+  }
   const fullPath = path.isAbsolute(filePath) ? filePath : path.join(cwd, filePath);
   const content = safeReadFile(fullPath);
-  if (!content) { output({ error: 'File not found', path: filePath }, raw); return; }
+  if (!content) {
+    output({ error: 'File not found', path: filePath }, raw);
+    return;
+  }
   const fm = extractFrontmatter(content);
   if (field) {
     const value = fm[field];
-    if (value === undefined) { output({ error: 'Field not found', field }, raw); return; }
+    if (value === undefined) {
+      output({ error: 'Field not found', field }, raw);
+      return;
+    }
     output({ [field]: value }, raw, JSON.stringify(value));
   } else {
     output(fm, raw);
@@ -246,13 +261,22 @@ function cmdFrontmatterGet(cwd, filePath, field, raw) {
 }
 
 function cmdFrontmatterSet(cwd, filePath, field, value, raw) {
-  if (!filePath || !field || value === undefined) { error('file, field, and value required'); }
+  if (!filePath || !field || value === undefined) {
+    error('file, field, and value required');
+  }
   const fullPath = path.isAbsolute(filePath) ? filePath : path.join(cwd, filePath);
-  if (!fs.existsSync(fullPath)) { output({ error: 'File not found', path: filePath }, raw); return; }
+  if (!fs.existsSync(fullPath)) {
+    output({ error: 'File not found', path: filePath }, raw);
+    return;
+  }
   const content = fs.readFileSync(fullPath, 'utf-8');
   const fm = extractFrontmatter(content);
   let parsedValue;
-  try { parsedValue = JSON.parse(value); } catch { parsedValue = value; }
+  try {
+    parsedValue = JSON.parse(value);
+  } catch {
+    parsedValue = value;
+  }
   fm[field] = parsedValue;
   const newContent = spliceFrontmatter(content, fm);
   fs.writeFileSync(fullPath, newContent, 'utf-8');
@@ -260,13 +284,23 @@ function cmdFrontmatterSet(cwd, filePath, field, value, raw) {
 }
 
 function cmdFrontmatterMerge(cwd, filePath, data, raw) {
-  if (!filePath || !data) { error('file and data required'); }
+  if (!filePath || !data) {
+    error('file and data required');
+  }
   const fullPath = path.isAbsolute(filePath) ? filePath : path.join(cwd, filePath);
-  if (!fs.existsSync(fullPath)) { output({ error: 'File not found', path: filePath }, raw); return; }
+  if (!fs.existsSync(fullPath)) {
+    output({ error: 'File not found', path: filePath }, raw);
+    return;
+  }
   const content = fs.readFileSync(fullPath, 'utf-8');
   const fm = extractFrontmatter(content);
   let mergeData;
-  try { mergeData = JSON.parse(data); } catch { error('Invalid JSON for --data'); return; }
+  try {
+    mergeData = JSON.parse(data);
+  } catch {
+    error('Invalid JSON for --data');
+    return;
+  }
   Object.assign(fm, mergeData);
   const newContent = spliceFrontmatter(content, fm);
   fs.writeFileSync(fullPath, newContent, 'utf-8');
@@ -274,15 +308,22 @@ function cmdFrontmatterMerge(cwd, filePath, data, raw) {
 }
 
 function cmdFrontmatterValidate(cwd, filePath, schemaName, raw) {
-  if (!filePath || !schemaName) { error('file and schema required'); }
+  if (!filePath || !schemaName) {
+    error('file and schema required');
+  }
   const schema = FRONTMATTER_SCHEMAS[schemaName];
-  if (!schema) { error(`Unknown schema: ${schemaName}. Available: ${Object.keys(FRONTMATTER_SCHEMAS).join(', ')}`); }
+  if (!schema) {
+    error(`Unknown schema: ${schemaName}. Available: ${Object.keys(FRONTMATTER_SCHEMAS).join(', ')}`);
+  }
   const fullPath = path.isAbsolute(filePath) ? filePath : path.join(cwd, filePath);
   const content = safeReadFile(fullPath);
-  if (!content) { output({ error: 'File not found', path: filePath }, raw); return; }
+  if (!content) {
+    output({ error: 'File not found', path: filePath }, raw);
+    return;
+  }
   const fm = extractFrontmatter(content);
-  const missing = schema.required.filter(f => fm[f] === undefined);
-  const present = schema.required.filter(f => fm[f] !== undefined);
+  const missing = schema.required.filter((f) => fm[f] === undefined);
+  const present = schema.required.filter((f) => fm[f] !== undefined);
   output({ valid: missing.length === 0, missing, present, schema: schemaName }, raw, missing.length === 0 ? 'valid' : 'invalid');
 }
 

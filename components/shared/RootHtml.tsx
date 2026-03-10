@@ -115,6 +115,7 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
               "gtag('consent','default',{",
               "ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',",
               'wait_for_update:500,',
+              // PL intentionally included — Poland is an EU member state subject to GDPR/RODO.
               "regions:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']",
               '});',
               // US states with privacy laws - denied until Google CMP collects opt-out
