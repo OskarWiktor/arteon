@@ -61,7 +61,9 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000,
   },
   async headers() {
-    const staticCacheHeaders = [
+    // Cache-Control for pages/tools is managed exclusively in vercel.json to avoid duplicate headers.
+    // Only static asset headers that vercel.json does not cover are defined here.
+    const staticAssetHeaders = [
       {
         source: '/assets/:path*',
         headers: [
@@ -73,49 +75,6 @@ const nextConfig: NextConfig = {
         source: '/fonts/:path*',
         headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
       },
-      {
-        source: '/sitemap.xml',
-        headers: [
-          { key: 'Content-Type', value: 'application/xml; charset=utf-8' },
-          { key: 'Cache-Control', value: 'public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400' },
-        ],
-      },
-      {
-        source: '/sitemap-:slug.xml',
-        headers: [
-          { key: 'Content-Type', value: 'application/xml; charset=utf-8' },
-          { key: 'Cache-Control', value: 'public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400' },
-        ],
-      }, // PL
-      { source: '/narzedzia/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // EN, NL
-      { source: '/:locale(en|nl)/tools/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // DE
-      { source: '/de/werkzeuge/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // ES
-      { source: '/es/herramientas/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // FR
-      { source: '/fr/outils/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // PT
-      { source: '/pt/ferramentas/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // IT
-      { source: '/it/strumenti/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // RO
-      { source: '/ro/instrumente/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // HU
-      { source: '/hu/eszkozok/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // CS
-      { source: '/cs/nastroje/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // SV
-      { source: '/sv/verktyg/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // DA
-      { source: '/da/vaerktojer/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // NO
-      { source: '/no/verktoy/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // FI
-      { source: '/fi/tyokalut/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
-      // EL
-      { source: '/el/ergaleia/:path*', headers: [{ key: 'Cache-Control', value: 'public, s-maxage=86400, stale-while-revalidate=604800' }] },
     ];
 
     return IS_PROD
@@ -124,14 +83,14 @@ const nextConfig: NextConfig = {
             source: '/:path*',
             headers: securityHeaders,
           },
-          ...staticCacheHeaders,
+          ...staticAssetHeaders,
         ]
       : [
           {
             source: '/:path*',
             headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
           },
-          ...staticCacheHeaders,
+          ...staticAssetHeaders,
         ];
   },
   async redirects() {
