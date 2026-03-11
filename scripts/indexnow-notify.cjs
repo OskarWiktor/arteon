@@ -9,7 +9,7 @@ const path = require('node:path');
 const https = require('node:https');
 
 const SITE_URL = 'https://www.arteonagency.pl';
-const INDEX_NOW_KEY = '07acb80d206b4bceb1264b34217656b2';
+const INDEX_NOW_KEY = process.env.INDEX_NOW_KEY;
 const INDEX_NOW_ENDPOINT = 'https://api.indexnow.org/indexnow';
 
 /**
@@ -108,6 +108,11 @@ function sendToIndexNow(urls) {
 }
 
 async function main() {
+  if (!INDEX_NOW_KEY) {
+    console.log('IndexNow: INDEX_NOW_KEY not set — skipping submission');
+    return;
+  }
+
   try {
     console.log('IndexNow: Reading sitemaps...');
     const urls = getAllSitemapUrls();

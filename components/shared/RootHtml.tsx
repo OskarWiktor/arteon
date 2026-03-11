@@ -17,6 +17,7 @@ const instrumentSans = Instrument_Sans({
 });
 
 const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID;
+const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 const ORG_LOGO = toAbsoluteUrl('/icon-512x512.png');
 
@@ -155,7 +156,7 @@ export default function RootHtml({ lang, children }: RootHtmlProps) {
         <meta name="theme-color" content="#171717" />
 
         {/* AdSense + Google CMP (consent dialog) — loaded before GA4 for faster consent prompt */}
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7845947936813012" crossOrigin="anonymous" />
+        {ADSENSE_CLIENT && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossOrigin="anonymous" />}
 
         {GA_MEASUREMENT_ID && <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`} />}
         {GA_MEASUREMENT_ID && (

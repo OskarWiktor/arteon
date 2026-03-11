@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import type { AdSenseProps } from '@/types/ui';
 export type { AdVariant, AdSenseProps } from '@/types/ui';
 
-const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-7845947936813012';
+const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '';
 const AD_SCRIPT_SRC = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${AD_CLIENT}`;
 
 const PRESETS = {

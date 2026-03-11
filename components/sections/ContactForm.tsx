@@ -75,7 +75,7 @@ export default function ContactForm({ title, description, defaultSubject, action
 
         <div className="flex flex-col gap-1">
           <label htmlFor="message">{t.messageLabel}</label>
-          <textarea id="message" name="Wiadomość" placeholder={messagePlaceholder ?? t.messagePlaceholder} required className={fieldClass + ' h-48 resize-none'} />
+          <textarea id="message" name="Wiadomość" placeholder={messagePlaceholder ?? t.messagePlaceholder} required maxLength={2000} className={fieldClass + ' h-48 resize-none'} />
         </div>
 
         <input type="hidden" name="Źródło" value={typeof window !== 'undefined' ? window.location.href : ''} />
