@@ -1,6 +1,13 @@
 {
   "permissions": {
-    "allow": ["Bash(npm run:*)", "Bash(git add:*)", "Bash(git commit:*)", "Bash(find . -name .env* -o -name *.env.example)"]
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(find . -name .env* -o -name *.env.example)",
+      "Bash(ls /c/Users/proje/Documents/GitHub/arteon/public/sitemap*)",
+      "Bash(curl -sI --max-time 15 \"https://www.arteonagency.pl/\")"
+    ]
   },
   "enabledPlugins": {
     "claude-mem@thedotmack": true

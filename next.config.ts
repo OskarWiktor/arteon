@@ -7,7 +7,7 @@ const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
 
-const IS_PROD = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
+const IS_PROD = process.env.VERCEL_ENV === 'production';
 
 const cspDirectives = [
   "default-src 'self'",
