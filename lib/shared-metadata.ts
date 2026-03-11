@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
-const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
+const IS_PRODUCTION = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
 const metadataBase = new URL(siteUrl);
 
 export const baseMetadata: Metadata = {

@@ -38,6 +38,6 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
-Host: https://www.arteonagency.pl
+Host: www.arteonagency.pl
 
 Sitemap: https://www.arteonagency.pl/sitemap.xml

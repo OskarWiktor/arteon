@@ -90,7 +90,8 @@ function main() {
     .filter((f) => f.startsWith('sitemap-') && f.endsWith('.xml'))
     .sort();
 
-  const entries = sitemapFiles.map((f) => `<sitemap><loc>${SITE_URL}/${f}</loc></sitemap>`).join('\n');
+  const today = new Date().toISOString().split('T')[0];
+  const entries = sitemapFiles.map((f) => `<sitemap><loc>${SITE_URL}/${f}</loc><lastmod>${today}</lastmod></sitemap>`).join('\n');
 
   const sitemapIndex = ['<?xml version="1.0" encoding="UTF-8"?>', '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', entries, '</sitemapindex>'].join('\n');
 
