@@ -27,6 +27,8 @@ import {
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
+export const dynamic = 'force-static';
+
 export const metadata = {
   title: 'Darmowe narzędzia online | Konwertery obrazów, SEO, kolory, favicon',
   description:

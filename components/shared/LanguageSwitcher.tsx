@@ -8,7 +8,7 @@ import { NavTranslate2 as RiTranslate2, NavCloseLine as RiCloseLine, NavArrowDow
 import Wrapper from '@/components/ui/Wrapper';
 import { useLocale, useDictionary, useLocaleConfig, type Locale } from '@/lib/LocaleContext';
 import { getAlternateToolHref } from '@/lib/i18n/tool-registry';
-import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locale-config';
+import { SUPPORTED_LOCALES, LOCALE_CONFIG } from '@/lib/i18n/locales';
 import { useOutsideClick } from '@/hooks/useOutsideClick';
 import { useEscapeKey } from '@/hooks/useEscapeKey';
 import { useScrollLock } from '@/hooks/useScrollLock';

@@ -25,6 +25,8 @@ import {
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
+export const dynamic = 'force-static';
+
 export const metadata = {
   title: 'Gratis nettverktøy | Konverterere, SEO, farger, favicon',
   description:

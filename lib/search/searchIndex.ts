@@ -3,7 +3,7 @@ import searchBlog from '@/data/pl/search-blog.json';
 import searchProjects from '@/data/pl/search-projects.json';
 import { slugify } from '@/utils/slugify';
 import { getToolsList } from '@/lib/i18n/tool-registry';
-import { LOCALE_CONFIG } from '@/lib/i18n/locale-config';
+import { LOCALE_CONFIG } from '@/lib/i18n/locales';
 
 import type { Locale } from '@/types/locale';
 import type { SearchCategory, SearchItem } from '@/types/search';

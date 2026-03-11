@@ -3,6 +3,8 @@ import data from '@/data/fi/tools/converter-heic-to-tiff.json';
 import type { ToolPageData } from '@/types/tool-page';
 import type { Metadata } from 'next';
 
+export const dynamic = 'force-static';
+
 const pageData = data as unknown as ToolPageData;
 
 export const metadata: Metadata = generateToolMetadata(pageData);

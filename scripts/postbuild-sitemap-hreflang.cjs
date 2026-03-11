@@ -52,8 +52,8 @@ function categorize(urlPath) {
 function main() {
   const sitemap0Path = path.join(PUBLIC_DIR, 'sitemap-0.xml');
   if (!fs.existsSync(sitemap0Path)) {
-    console.error('❌ sitemap-0.xml not found — nothing to split');
-    process.exit(1);
+    console.warn('⚠️  sitemap-0.xml not found — skipping split');
+    process.exit(0);
   }
 
   // 1. Parse sitemap-0.xml into individual <url> blocks

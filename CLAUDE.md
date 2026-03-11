@@ -174,16 +174,22 @@ Build pipeline: `prebuild` (BOM fix, split-blog, search-index) → `build` → `
 
 ---
 
+## Documentation
+
+**ALWAYS use context7 MCP** (`mcp__context7__*`) when looking up framework or library docs (Next.js, React, Tailwind, TypeScript, etc.). It provides up-to-date, version-accurate documentation. Only fall back to `.next-docs/` if context7 is unavailable.
+
+---
+
 ## Skills (load on demand)
 
-| Task type                           | Load                                        |
-| ----------------------------------- | ------------------------------------------- |
-| Locale URLs, i18n details           | Skill("arteon-i18n")                        |
-| Tool data structure, content blocks | Skill("arteon-tools")                       |
-| Article/content writing             | `docs/CONTENT_INSTRUCTIONS.md`              |
-| Next.js API reference               | `.next-docs/` (search with agents-md index) |
-| Humanize AI text                    | Skill("humanizer")                          |
-| Complex feature build               | Skill("get-shit-done")                      |
+| Task type                           | Load                                                                 |
+| ----------------------------------- | -------------------------------------------------------------------- |
+| Locale URLs, i18n details           | Skill("arteon-i18n")                                                 |
+| Tool data structure, content blocks | Skill("arteon-tools")                                                |
+| Article/content writing             | `docs/CONTENT_INSTRUCTIONS.md`                                       |
+| Next.js API reference               | **context7 MCP first** (`mcp__context7__*`), fallback: `.next-docs/` |
+| Humanize AI text                    | Skill("humanizer")                                                   |
+| Complex feature build               | Skill("get-shit-done")                                               |
 
 ---
 

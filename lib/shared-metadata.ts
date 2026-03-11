@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import { siteUrl, toAbsoluteUrl } from '@/utils/absoluteUrl';
 
-const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
+const IS_PROD = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
 const metadataBase = new URL(siteUrl);
 
 export const baseMetadata: Metadata = {
   metadataBase,
-  robots: IS_PRODUCTION ? { index: true, follow: true, 'max-image-preview': 'large' as const, 'max-snippet': -1, 'max-video-preview': -1 } : { index: false, follow: false },
+  robots: IS_PROD ? { index: true, follow: true, 'max-image-preview': 'large' as const, 'max-snippet': -1, 'max-video-preview': -1 } : { index: false, follow: false },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',

@@ -149,7 +149,7 @@ const ROUTE_LASTMOD = buildRouteLastmodMap();
 const PROJECTS = readProjects();
 const ARTICLES = readBlog();
 const SITE_URL = 'https://www.arteonagency.pl';
-const IS_PRODUCTION = process.env.VERCEL_ENV === 'production';
+const IS_PROD = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
 
 // ---------------------------------------------------------------------------
 // Hreflang data (mirrors lib/i18n/locales.ts)
@@ -230,6 +230,24 @@ for (const [key, localePaths] of TOOL_LOCALE_PATHS.entries()) {
 
 // Non-tool multilingual pages (all 16 active locales including PL)
 const MULTILINGUAL_PAGES = [
+  {
+    pl: '/',
+    en: '/en',
+    de: '/de',
+    es: '/es',
+    fr: '/fr',
+    pt: '/pt',
+    it: '/it',
+    ro: '/ro',
+    nl: '/nl',
+    hu: '/hu',
+    cs: '/cs',
+    sv: '/sv',
+    da: '/da',
+    no: '/no',
+    fi: '/fi',
+    el: '/el',
+  },
   {
     pl: '/o-nas',
     en: '/en/about',

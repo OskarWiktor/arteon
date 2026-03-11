@@ -1,10 +1,11 @@
 import type { Locale } from '@/types/locale';
+import { SUPPORTED_LOCALES } from '@/lib/i18n/locales';
 
 /**
  * Locale prefixes used in URL paths.
  * PL is the default locale with no prefix (routes under `(pl)`).
  */
-const LOCALE_PREFIXES: Locale[] = ['en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
+const LOCALE_PREFIXES: Locale[] = SUPPORTED_LOCALES.filter((l) => l !== 'pl');
 
 /**
  * Detect locale from a URL pathname.

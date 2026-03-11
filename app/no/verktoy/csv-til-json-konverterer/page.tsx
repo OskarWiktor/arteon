@@ -3,6 +3,8 @@ import data from '@/data/no/tools/converter-csv-to-json.json';
 import type { ToolPageData } from '@/types/tool-page';
 import type { Metadata } from 'next';
 
+export const dynamic = 'force-static';
+
 const pageData = data as unknown as ToolPageData;
 
 export const metadata: Metadata = generateToolMetadata(pageData);

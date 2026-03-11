@@ -25,6 +25,8 @@ import {
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
 
+export const dynamic = 'force-static';
+
 export const metadata = {
   title: 'Kostenlose Online-Tools | Konverter, SEO, Farben, Favicon',
   description: 'Kostenlose Online-Tools: Bildkonverter (JPG, PNG, WebP, SVG, BMP,, GIF, AVIF, HEIC, TIFF), Favicon-Generator, Bildeditor, Textzähler, Farbpaletten und QR-Codes. Ohne Registrierung.',
