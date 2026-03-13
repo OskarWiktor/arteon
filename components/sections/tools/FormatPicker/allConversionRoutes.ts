@@ -1,117 +1,19 @@
+import { cache } from 'react';
 import type { Locale } from '@/types/locale';
 import type { ToolItemKey } from '@/types/tools/common';
 import { getToolHref } from '@/lib/i18n/tool-registry';
+import type { UniversalFormat } from '@/utils/format-utils';
 
 // ---------------------------------------------------------------------------
 // Universal format identifiers used across ALL converters
 // ---------------------------------------------------------------------------
 
-export type UniversalFormat = 'jpg' | 'png' | 'webp' | 'gif' | 'bmp' | 'svg' | 'avif' | 'heic' | 'tiff' | 'pdf' | 'csv' | 'json' | 'xml' | 'yaml' | 'markdown' | 'html' | 'base64';
+// Re-export types from utils for backward compatibility
+export type { UniversalFormat, FormatCategory } from '@/utils/format-utils';
+export { FORMAT_CATEGORIES, FORMAT_DISPLAY_LABELS } from '@/utils/format-utils';
 
-export type FormatCategory = 'images' | 'documents' | 'data' | 'units';
-
-export const FORMAT_CATEGORIES: { key: FormatCategory; formats: UniversalFormat[] }[] = [
-  { key: 'images', formats: ['jpg', 'png', 'webp', 'avif', 'gif', 'bmp', 'svg', 'heic', 'tiff'] },
-  { key: 'documents', formats: ['pdf'] },
-  { key: 'data', formats: ['csv', 'json', 'xml', 'yaml', 'markdown', 'html', 'base64'] },
-  { key: 'units', formats: [] },
-];
-
-export const FORMAT_DISPLAY_LABELS: Record<UniversalFormat, string> = {
-  jpg: 'JPG',
-  png: 'PNG',
-  webp: 'WebP',
-  gif: 'GIF',
-  bmp: 'BMP',
-  svg: 'SVG',
-  avif: 'AVIF',
-  heic: 'HEIC',
-  tiff: 'TIFF',
-  pdf: 'PDF',
-  csv: 'CSV',
-  json: 'JSON',
-  xml: 'XML',
-  yaml: 'YAML',
-  markdown: 'Markdown',
-  html: 'HTML',
-  base64: 'Base64',
-};
-
-// Category labels per locale
-export const CATEGORY_LABELS: Record<FormatCategory, Record<string, string>> = {
-  images: {
-    pl: 'Obrazy',
-    en: 'Images',
-    de: 'Bilder',
-    es: 'Imágenes',
-    fr: 'Images',
-    pt: 'Imagens',
-    it: 'Immagini',
-    ro: 'Imagini',
-    nl: 'Afbeeldingen',
-    hu: 'Képek',
-    cs: 'Obrázky',
-    sv: 'Bilder',
-    da: 'Billeder',
-    no: 'Bilder',
-    fi: 'Kuvat',
-    el: 'Εικόνες',
-  },
-  documents: {
-    pl: 'Dokumenty',
-    en: 'Documents',
-    de: 'Dokumente',
-    es: 'Documentos',
-    fr: 'Documents',
-    pt: 'Documentos',
-    it: 'Documenti',
-    ro: 'Documente',
-    nl: 'Documenten',
-    hu: 'Dokumentumok',
-    cs: 'Dokumenty',
-    sv: 'Dokument',
-    da: 'Dokumenter',
-    no: 'Dokumenter',
-    fi: 'Asiakirjat',
-    el: 'Έγγραφα',
-  },
-  data: {
-    pl: 'Dane',
-    en: 'Data',
-    de: 'Daten',
-    es: 'Datos',
-    fr: 'Données',
-    pt: 'Dados',
-    it: 'Dati',
-    ro: 'Date',
-    nl: 'Data',
-    hu: 'Adatok',
-    cs: 'Data',
-    sv: 'Data',
-    da: 'Data',
-    no: 'Data',
-    fi: 'Data',
-    el: 'Δεδομένα',
-  },
-  units: {
-    pl: 'Jednostki',
-    en: 'Units',
-    de: 'Einheiten',
-    es: 'Unidades',
-    fr: 'Unités',
-    pt: 'Unidades',
-    it: 'Unità',
-    ro: 'Unități',
-    nl: 'Eenheden',
-    hu: 'Mértékegységek',
-    cs: 'Jednotky',
-    sv: 'Enheter',
-    da: 'Enheder',
-    no: 'Enheter',
-    fi: 'Yksiköt',
-    el: 'Μονάδες',
-  },
-};
+// Category labels per locale - re-export from utils for backward compatibility
+export { CATEGORY_LABELS } from '@/utils/locale-utils';
 
 // ---------------------------------------------------------------------------
 // Complete conversion map: (source, target) → toolKey
@@ -218,13 +120,13 @@ export function getConversionHref(source: UniversalFormat, target: UniversalForm
   return href === '#' ? null : href;
 }
 
-/** Get all resolved routes for a given locale */
-export function getAllRoutes(locale: Locale): ResolvedRoute[] {
+/** Get all resolved routes for a given locale - cached for performance */
+export const getAllRoutes = cache((locale: Locale): ResolvedRoute[] => {
   return ALL_CONVERSION_DEFS.map((def) => ({
     ...def,
     href: getToolHref(def.toolKey, locale),
   })).filter((r) => r.href !== '#');
-}
+});
 
 /** Get all formats that a given source can convert TO (with active routes) */
 export function getAvailableTargets(source: UniversalFormat, locale: Locale): UniversalFormat[] {

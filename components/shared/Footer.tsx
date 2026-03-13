@@ -215,7 +215,7 @@ export default function Footer() {
           <div className="text-light mt-8 border-t border-neutral-200 pt-4">
             <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
               <small className="text-center text-sm md:text-left">
-                &copy; <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. {ft.copyright}
+                &copy; <time dateTime="2025">2025</time> Arteon. {ft.copyright}
               </small>
               <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
                 #MadeWithNext.js
@@ -402,7 +402,7 @@ export default function Footer() {
           <div className="text-light mt-8 border-t border-neutral-200 pt-4">
             <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
               <small className="text-center text-sm md:text-left">
-                &copy; <time dateTime={String(new Date().getFullYear())}>{new Date().getFullYear()}</time> Arteon. Wszelkie prawa zastrzeżone.
+                &copy; <time dateTime="2025">2025</time> Arteon. Wszelkie prawa zastrzeżone.
               </small>
               <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer" className="mr-3 cursor-pointer text-sm font-normal">
                 #MadeWithNext.js

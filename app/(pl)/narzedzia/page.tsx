@@ -1,4 +1,4 @@
-﻿import HeroBanner from '@/components/sections/HeroBanner';
+import HeroBanner from '@/components/sections/HeroBanner';
 import CTABanner from '@/components/sections/CTABanner';
 import Button from '@/components/ui/buttons/Button';
 import Gap from '@/components/ui/Gap';
@@ -26,8 +26,6 @@ import {
 } from 'react-icons/ri';
 import { toAbsoluteUrl, siteUrl } from '@/utils/absoluteUrl';
 import { getToolsIndexAlternates } from '@/lib/i18n/pages/tool-meta';
-
-export const dynamic = 'force-static';
 
 export const metadata = {
   title: 'Darmowe narzędzia online | Konwertery obrazów, SEO, kolory, favicon',

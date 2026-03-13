@@ -328,8 +328,8 @@ function getAlternateRefs(loc) {
 
   // Tool index pages
   if (Object.values(LOCALE_TOOLS_BASE).includes(loc)) {
-    const refs = LOCALES.map((lang) => ({ href: `${SITE_URL}${LOCALE_TOOLS_BASE[lang]}`, hreflang: LOCALE_TO_HREFLANG[lang] }));
-    refs.push({ href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}`, hreflang: 'x-default' });
+    const refs = LOCALES.map((lang) => ({ href: `${SITE_URL}${LOCALE_TOOLS_BASE[lang]}`, hreflang: LOCALE_TO_HREFLANG[lang], hrefIsAbsolute: true }));
+    refs.push({ href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}`, hreflang: 'x-default', hrefIsAbsolute: true });
     return refs;
   }
 
@@ -340,17 +340,18 @@ function getAlternateRefs(loc) {
     const refs = Object.entries(localePaths).map(([lang, href]) => ({
       href: `${SITE_URL}${href}`,
       hreflang: LOCALE_TO_HREFLANG[lang] || lang,
+      hrefIsAbsolute: true,
     }));
     const enPath = localePaths['en'];
-    if (enPath) refs.push({ href: `${SITE_URL}${enPath}`, hreflang: 'x-default' });
+    if (enPath) refs.push({ href: `${SITE_URL}${enPath}`, hreflang: 'x-default', hrefIsAbsolute: true });
     return refs;
   }
 
   // Non-tool multilingual pages (about, contact, privacy, terms)
   for (const page of MULTILINGUAL_PAGES) {
     if (Object.values(page).includes(loc)) {
-      const refs = Object.entries(page).map(([lang, href]) => ({ href: `${SITE_URL}${href}`, hreflang: LOCALE_TO_HREFLANG[lang] || lang }));
-      refs.push({ href: `${SITE_URL}${page.en}`, hreflang: 'x-default' });
+      const refs = Object.entries(page).map(([lang, href]) => ({ href: `${SITE_URL}${href}`, hreflang: LOCALE_TO_HREFLANG[lang] || lang, hrefIsAbsolute: true }));
+      refs.push({ href: `${SITE_URL}${page.en}`, hreflang: 'x-default', hrefIsAbsolute: true });
       return refs;
     }
   }
@@ -510,7 +511,7 @@ module.exports = {
       // Skip individual project pages - added from PROJECTS data below with images
       if (loc.startsWith('/realizacje/') && loc !== '/realizacje') continue;
 
-      const entry = { loc, changefreq: getPageChangefreq(loc), priority: getPagePriority(loc) };
+      const entry = { loc, changefreq: getPageChangefreq(loc), priority: getPagePriority(loc), alternateRefs: getAlternateRefs(loc) };
       if (last) entry.lastmod = last;
       const img = ROUTE_IMAGE.get(loc);
       if (img) entry.images = sitemapImage(img);

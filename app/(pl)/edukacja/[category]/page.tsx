@@ -110,8 +110,6 @@ const CATEGORY_CONTENT_BY_SLUG: Record<
   },
 };
 
-export const dynamicParams = false;
-
 export async function generateStaticParams() {
   const cats = getCategoriesWithCount();
   return cats.map((c) => ({ category: c.slug }));

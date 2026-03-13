@@ -40,7 +40,10 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   trailingSlash: false,
   poweredByHeader: false,
+  // Cache Components (Next.js 16.1.6 - top-level)
+  cacheComponents: true,
   experimental: {
+    // Build performance optimizations (Next.js 16.1.6)
     optimizePackageImports: [
       'react-icons/ri',
       'react-icons/si',
@@ -53,8 +56,17 @@ const nextConfig: NextConfig = {
       'react-icons/hi2',
       'react-icons/lu',
       'react-icons/go',
+      // Client-side dependencies optimization
+      'jspdf',
+      'marked',
+      'turndown',
+      'qrcode',
     ],
+    // Optimize CSS
+    optimizeCss: true,
   },
+  // Externalize native dependencies from server bundle
+  serverExternalPackages: ['sharp', 'pdfjs-dist', 'heic2any', 'gifenc', 'utif2'],
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 1080, 1920],

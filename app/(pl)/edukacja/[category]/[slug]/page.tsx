@@ -24,8 +24,6 @@ import AdSense from '@/components/ui/AdSense';
 
 const GAP: 'sm' | 'xs' | 'md' = 'sm';
 
-export const dynamicParams = false;
-
 const defaultCTA = {
   title: 'Rozwiń z nami swoją firmę',
   description: 'Tworzymy strony, sklepy, blogi, SEO, treści, grafiki oraz marketing cyfrowy. U nas znajdziesz rozwiązania, dla każdej firmy, na każdy budżet',

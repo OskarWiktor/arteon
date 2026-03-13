@@ -60,8 +60,6 @@ const projects = (projectsData as ProjectsData).projects;
 const getProject = (slug: string) => projects.find((p) => p.slug === slug);
 const projectUrl = (slug: string) => toAbsoluteUrl(`/realizacje/${slug}`);
 
-export const dynamicParams = false;
-
 function jsonLd(project: Project) {
   const url = projectUrl(project.slug);
   const headline = project.seo?.title || project.title;

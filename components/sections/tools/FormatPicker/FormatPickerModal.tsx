@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, cache } from 'react';
 import { RiArrowDownSLine, RiCloseLine } from 'react-icons/ri';
 
 import { useLocale } from '@/lib/LocaleContext';
@@ -9,59 +9,24 @@ import { getToolHref } from '@/lib/i18n/tool-registry';
 import type { Locale } from '@/types/locale';
 import { UNIT_CONVERSIONS } from '@/components/sections/tools/UnitConverter/conversions';
 
-import { CATEGORY_LABELS, FORMAT_CATEGORIES, FORMAT_DISPLAY_LABELS, getAllRoutes, getConversionHref, type FormatCategory, type UniversalFormat } from './allConversionRoutes';
+import { FORMAT_CATEGORIES, FORMAT_DISPLAY_LABELS, getAllRoutes, getConversionHref, type FormatCategory, type UniversalFormat } from './allConversionRoutes';
+import { getCategoryLabel } from '@/utils/locale-utils';
 
-// ---------------------------------------------------------------------------
-// Unit helpers – build deduplicated unit lists for source / target side
-// ---------------------------------------------------------------------------
+type PickerSide = 'source' | 'target';
 
 interface UnitOption {
-  id: string;
-  label: string;
-  href: string;
+  readonly id: string;
+  readonly label: string;
+  readonly href: string;
 }
 
-function unitId(field: { label: string; suffix: string }): string {
-  return field.suffix || field.label;
-}
+type UnitField = {
+  readonly label: string;
+  readonly suffix: string;
+};
 
-function unitDisplayLabel(field: { label: string; suffix: string }): string {
-  return field.suffix || field.label;
-}
-
-function getUnitOptions(side: 'source' | 'target', locale: Locale, currentToolKey?: string): UnitOption[] {
-  const seen = new Set<string>();
-  const items: UnitOption[] = [];
-
-  // Determine the "other side" unit to filter against
-  const current = currentToolKey ? UNIT_CONVERSIONS.find((c) => c.toolKey === currentToolKey) : undefined;
-  const otherSideId = current ? unitId(side === 'source' ? current.targetField : current.sourceField) : undefined;
-
-  for (const conv of UNIT_CONVERSIONS) {
-    const href = getToolHref(conv.toolKey, locale);
-    if (href === '#') continue;
-
-    const field = side === 'source' ? conv.sourceField : conv.targetField;
-    const id = unitId(field);
-
-    if (seen.has(id)) continue;
-    seen.add(id);
-
-    // Check if this unit can pair with the other side
-    if (otherSideId) {
-      const hasPair = UNIT_CONVERSIONS.some((c) => {
-        const cField = side === 'source' ? c.sourceField : c.targetField;
-        const cOther = side === 'source' ? c.targetField : c.sourceField;
-        return unitId(cField) === id && unitId(cOther) === otherSideId && getToolHref(c.toolKey, locale) !== '#';
-      });
-      items.push({ id, label: unitDisplayLabel(field), href: hasPair ? href : '' });
-    } else {
-      items.push({ id, label: unitDisplayLabel(field), href });
-    }
-  }
-
-  return items;
-}
+const unitId = (field: UnitField): string => field.suffix || field.label;
+const unitDisplayLabel = (field: UnitField): string => field.suffix || field.label;
 
 const PICKER_HEADER: Record<PickerSide, Record<string, string>> = {
   source: {
@@ -102,24 +67,46 @@ const PICKER_HEADER: Record<PickerSide, Record<string, string>> = {
   },
 };
 
-// ---------------------------------------------------------------------------
-// Types
-// ---------------------------------------------------------------------------
+const getUnitOptions = cache((side: 'source' | 'target', locale: Locale, currentToolKey?: string): UnitOption[] => {
+  const seen = new Set<string>();
+  const items: UnitOption[] = [];
 
-type PickerSide = 'source' | 'target';
+  if (!UNIT_CONVERSIONS.length) return items;
+
+  const current = currentToolKey ? UNIT_CONVERSIONS.find((c) => c.toolKey === currentToolKey) : undefined;
+  const otherSideId = current ? unitId(side === 'source' ? current.targetField : current.sourceField) : undefined;
+
+  for (const conv of UNIT_CONVERSIONS) {
+    const href = getToolHref(conv.toolKey, locale);
+    if (href === '#') continue;
+
+    const field = side === 'source' ? conv.sourceField : conv.targetField;
+    const id = unitId(field);
+
+    if (seen.has(id)) continue;
+    seen.add(id);
+
+    if (otherSideId) {
+      const hasPair = UNIT_CONVERSIONS.some((c) => {
+        const cField = side === 'source' ? c.sourceField : c.targetField;
+        const cOther = side === 'source' ? c.targetField : c.sourceField;
+        return unitId(cField) === id && unitId(cOther) === otherSideId && getToolHref(c.toolKey, locale) !== '#';
+      });
+      items.push({ id, label: unitDisplayLabel(field), href: hasPair ? href : '' });
+    } else {
+      items.push({ id, label: unitDisplayLabel(field), href });
+    }
+  }
+
+  return items;
+});
 
 interface FormatPickerModalProps {
-  /** Which side this picker controls */
   side: PickerSide;
-  /** Current source format (optional in unit mode) */
   currentSource?: UniversalFormat;
-  /** Current target format (optional in unit mode) */
   currentTarget?: UniversalFormat;
-  /** Whether user has unsaved work (files in queue) */
   hasFiles?: boolean;
-  /** Confirmation message when navigating with files */
   confirmMessage?: string;
-  /** When set, picker opens in unit-converter mode (units tab active, current unit highlighted) */
   unitToolKey?: string;
 }
 
@@ -225,7 +212,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
         aria-expanded={open}
         aria-haspopup="dialog"
       >
-        {unitTriggerLabel ?? (currentFormat ? FORMAT_DISPLAY_LABELS[currentFormat] : '')}
+        {unitTriggerLabel ?? (currentFormat ? FORMAT_DISPLAY_LABELS[currentFormat as UniversalFormat] : '')}
         <RiArrowDownSLine className={`h-3.5 w-3.5 transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
 
@@ -259,7 +246,7 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
                     onClick={() => setActiveCategory(cat.key)}
                     className={`rounded-lg px-3 py-2.5 text-left text-xs font-medium transition-colors ${activeCategory === cat.key ? 'bg-primary/10 text-primary' : 'text-mid hover:bg-neutral-100'}`}
                   >
-                    {CATEGORY_LABELS[cat.key][locale] ?? CATEGORY_LABELS[cat.key].en}
+                    {getCategoryLabel(cat.key, locale)}
                   </button>
                 ))}
               </nav>

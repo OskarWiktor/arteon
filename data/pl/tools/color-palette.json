@@ -10,7 +10,7 @@
   "hero": {
     "title": "Wygeneruj 17 palet kolorów z jednego koloru bazowego",
     "description": "Podaj jeden kolor bazowy, a narzędzie wygeneruje 17 harmonijnych palet kolorów: monochromatyczną, komplementarną, triadyczną, pastelową i inne. Każdy kolor można skopiować z kodem HEX.",
-    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow-online.webp"
+    "backgroundImage": "/assets/tools/narzedzia-generator-palet-kolorow.webp"
   },
   "breadcrumbs": {
     "second": {
@@ -27,7 +27,7 @@
       "name": "Generator palet kolorów – 17 schematów kolorystycznych",
       "alternateName": [
         "Generator schematów kolorów",
-        "Generator kolorów online",
+        "Generator kolorów",
         "Kreator palet kolorystycznych",
         "Narzędzie do dobierania kolorów",
         "Paleta kolorów online",
@@ -35,7 +35,7 @@
         "Color palette generator"
       ],
       "applicationSubCategory": "ColorPaletteGenerator",
-      "description": "Darmowy generator palet kolorów online. Wpisz jeden kolor HEX, a narzędzie wygeneruje 17 schematów: monochromatyczny, analogiczny, komplementarny, triadyczny, rozłożony komplementarny, pastelowy, ciemny, tonalny i minimalistyczny. Każdy kolor można skopiować wraz z kodem HEX i wartością HSL.",
+      "description": "Darmowy generator palet kolorów. Wpisz jeden kolor HEX, a narzędzie wygeneruje 17 schematów: monochromatyczny, analogiczny, komplementarny, triadyczny, rozłożony komplementarny, pastelowy, ciemny, tonalny i minimalistyczny. Każdy kolor można skopiować wraz z kodem HEX i wartością HSL.",
       "featureList": [
         "Schemat monochromatyczny – odcienie jednego koloru",
         "Schemat analogiczny – kolory sąsiadujące na kole barw",
@@ -177,7 +177,7 @@
         {
           "icon": "RiContractLeftRightLine",
           "title": "Paleta minimalistyczna",
-          "description": "Jeden wyrazisty akcent kolorystyczny i kilka bardzo jasnych, miękkich neutrali. Reszta palety pozostaje stonowana. Sprawdza się w nowoczesnych interfejsach z dużą ilością białej przestrzeni - typowy styl stron produktowych i landing page'y."
+          "description": "Jeden wyrazisty akcent kolorystyczny i kilka bardzo jasnych, miękkich neutrali. Reszta palety pozostaje stonowana. Sprawdza się w nowoczesnych interfejsach z dużą ilością białej przestrzeni - typowy styl stron produktowych."
         },
         {
           "icon": "RiGridLine",
