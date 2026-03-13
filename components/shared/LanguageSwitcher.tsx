@@ -43,10 +43,13 @@ function getAlternateLinks(pathname: string, currentLocale: Locale): AlternateLi
     const href = getAlternateToolHref(pathname, currentLocale, targetLocale);
     if (!href) continue;
 
+    // Safety: ensure href is always root-relative to prevent double-locale URLs
+    const safeHref = href.startsWith('/') ? href : `/${href}`;
+
     const config = LOCALE_CONFIG[targetLocale];
     links.push({
       locale: targetLocale,
-      href,
+      href: safeHref,
       label: config.label,
       hreflang: config.hreflang,
       name: config.name,

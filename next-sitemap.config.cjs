@@ -322,9 +322,22 @@ const MULTILINGUAL_PAGES = [
   },
 ];
 
+// Locale homepage paths that permanentRedirect — must not appear in sitemap
+const REDIRECT_LOCALE_ROOTS = new Set([
+  '/en', '/de', '/es', '/fr', '/pt', '/it', '/ro', '/nl', '/hu', '/cs', '/sv', '/da', '/no', '/fi', '/el',
+]);
+
 /** Return alternateRefs (all locales + x-default) for any sitemap loc, or [] if not multilingual */
 function getAlternateRefs(loc) {
   const LOCALES = ['pl', 'en', 'de', 'es', 'fr', 'pt', 'it', 'ro', 'nl', 'hu', 'cs', 'sv', 'da', 'no', 'fi', 'el'];
+
+  // PL homepage — only claim the PL locale; other locales redirect so no true equivalent
+  if (loc === '/') {
+    return [
+      { href: `${SITE_URL}/`, hreflang: 'pl', hrefIsAbsolute: true },
+      { href: `${SITE_URL}${LOCALE_TOOLS_BASE.en}`, hreflang: 'x-default', hrefIsAbsolute: true },
+    ];
+  }
 
   // Tool index pages
   if (Object.values(LOCALE_TOOLS_BASE).includes(loc)) {

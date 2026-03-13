@@ -4640,7 +4640,7 @@ export function getAlternateToolHref(currentPath: string, fromLocale: Locale, to
     }
   }
 
-  // Non-tool pages: about, contact, privacy
+  // Non-tool pages: about, contact, privacy, terms
   if (fromConfig.aboutHref && currentPath === fromConfig.aboutHref && toConfig.aboutHref) {
     return toConfig.aboutHref;
   }
@@ -4649,6 +4649,15 @@ export function getAlternateToolHref(currentPath: string, fromLocale: Locale, to
   }
   if (fromConfig.privacyHref && currentPath === fromConfig.privacyHref && toConfig.privacyHref) {
     return toConfig.privacyHref;
+  }
+  if (fromConfig.termsHref && currentPath === fromConfig.termsHref && toConfig.termsHref) {
+    return toConfig.termsHref;
+  }
+
+  // Homepage
+  const fromHome = fromLocale === 'pl' ? '/' : `/${fromLocale}`;
+  if (currentPath === fromHome) {
+    return toLocale === 'pl' ? '/' : `/${toLocale}`;
   }
 
   return null;
