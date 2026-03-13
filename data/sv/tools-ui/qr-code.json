@@ -12,6 +12,7 @@
   "phonePlaceholder": "+46 70 123 45 67",
   "size": "Storlek (px)",
   "margin": "Marginal (tyst zon)",
+  "marginNone": "0 (ingen)",
   "qrColor": "QR-kodfärg",
   "bgColor": "Bakgrundsfärg",
   "errorCorrection": "Felkorrigeringsnivå",

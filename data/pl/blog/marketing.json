@@ -3,11 +3,11 @@
     {
       "slug": "co-to-jest-newsletter-i-czy-warto-go-prowadzic",
       "title": "Co to jest newsletter i czy warto go prowadzić?",
-      "excerpt": "Newsletter to regularna wiadomość e-mail wysyłana do osób, które wyraziły zgodę. Wyjaśniamy, jakie korzyści może przynieść firmie i na co zwrócić uwagę przy jego prowadzeniu oraz zbieraniu subskrybentów.",
+      "excerpt": "Newsletter to regularna wiadomość e-mail wysyłana do osób, które wyraziły zgodę. Jakie korzyści może przynieść firmie? Na co zwrócić uwagę przy jego prowadzeniu i zbieraniu subskrybentów?",
       "primaryCategory": "Marketing",
       "seo": {
         "title": "Co to jest newsletter i czy warto go prowadzić? - Arteon",
-        "description": "Newsletter to regularny e-mail do subskrybentów. Wyjaśniamy, jakie korzyści przynosi firmie i na co zwrócić uwagę przy jego prowadzeniu.",
+        "description": "Newsletter to regularny e-mail do subskrybentów. Jakie korzyści przynosi firmie i na co zwrócić uwagę przy jego prowadzeniu?",
         "canonical": "https://www.arteonagency.pl/edukacja/marketing/co-to-jest-newsletter-i-czy-warto-go-prowadzic"
       },
       "cover": "/assets/blog/co-to-jest-newsletter-i-czy-warto-go-prowadzic/co-to-jest-newsletter-i-czy-warto-go-prowadzic.webp",
@@ -20,7 +20,7 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<p>Newsletter to jedno z podstawowych narzędzi e-mail marketingu. Pozwala firmom utrzymywać regularny kontakt z odbiorcami, którzy wyrazili zainteresowanie ich ofertą. W tym artykule wyjaśniamy, czym jest newsletter, jakie korzyści może przynieść i na co zwrócić uwagę przy jego prowadzeniu.</p>",
+          "html": "<p>Newsletter to jedno z podstawowych narzędzi e-mail marketingu. Pozwala firmom utrzymywać regularny kontakt z odbiorcami, którzy wyrazili zainteresowanie ich ofertą. W tym artykule znajdziesz odpowiedzi na pytania: czym jest newsletter, jakie korzyści może przynieść i na co zwrócić uwagę przy jego prowadzeniu.</p>",
           "breakAfter": true
         },
         {
@@ -129,11 +129,11 @@
     {
       "slug": "czym-jest-content-marketing",
       "title": "Czym jest content marketing i jak pomaga firmom pozyskiwać klientów?",
-      "excerpt": "Content marketing to strategia polegająca na tworzeniu wartościowych treści, które przyciągają potencjalnych klientów. Wyjaśniamy, jak działa, jakie formy może przyjąć i jak zacząć stosować go w swojej firmie lub sklepie.",
+      "excerpt": "Content marketing to strategia polegająca na tworzeniu wartościowych treści, które przyciągają potencjalnych klientów. Jak działa? Jakie formy może przyjąć? I jak zacząć stosować go w swojej firmie lub sklepie?",
       "primaryCategory": "Marketing",
       "seo": {
         "title": "Content marketing: czym jest i jak działa? - Arteon",
-        "description": "Content marketing to strategia oparta na tworzeniu wartościowych treści. Wyjaśniamy, jak działa i jak zacząć go stosować w firmie.",
+        "description": "Content marketing to strategia oparta na tworzeniu wartościowych treści. Jak działa i jak zacząć go stosować w firmie?",
         "canonical": "https://www.arteonagency.pl/edukacja/marketing/czym-jest-content-marketing"
       },
       "cover": "/assets/blog/czym-jest-content-marketing/czym-jest-content-marketing.webp",
@@ -176,7 +176,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak content marketing wspiera SEO i pozycjonowanie?</h2><p>Content marketing i SEO (optymalizacja pod wyszukiwarki) są ze sobą ściśle powiązane. Wartościowe treści to fundament widoczności w Google.</p><br/><p><strong>Więcej treści to więcej fraz w wyszukiwarce</strong></p><br/><p>Każdy artykuł może pozycjonować się na określone frazy kluczowe. Strona z 10 artykułami ma więcej szans na pojawienie się w wynikach wyszukiwania niż strona z samą ofertą. Firma produkująca meble może mieć artykuły o wyborze biurka do pracy zdalnej, pielęgnacji drewna czy aranżacji małego mieszkania - każdy z nich to potencjalne wejście na stronę.</p><br/><p><strong>Treści odpowiadają na pytania użytkowników</strong></p><br/><p>Google stara się pokazywać wyniki, które najlepiej odpowiadają na pytanie użytkownika. Artykuł, który szczegółowo omawia temat i odpowiada na powiązane pytania, ma większe szanse na wysoką pozycję niż strona z ogólnym opisem usługi.</p><br/><p><strong>Linkowanie wewnętrzne</strong></p><br/><p>Artykuły na blogu można łączyć linkami z innymi stronami w serwisie - ze stronami usług, innymi artykułami czy realizacjami. To pomaga wyszukiwarkom zrozumieć strukturę strony i zwiększa wartość poszczególnych podstron. Więcej o tym mechanizmie wyjaśniamy w artykule <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>jak linkowanie wewnętrzne wpływa na SEO</a>. Więcej o <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniu stron</a> znajdziesz w naszej ofercie.</p><br/><p><strong>Świeżość treści</strong></p><br/><p>Regularne publikowanie nowych treści sygnalizuje wyszukiwarkom, że strona jest aktywna i aktualna. Strona, która od lat nie była aktualizowana, może tracić pozycje na rzecz konkurencji publikującej regularnie.</p><br/><p><strong>Naturalny link building</strong></p><br/><p>Wartościowe treści są linkowane przez inne strony. Artykuł, który dostarcza unikalnych danych, praktycznych porad lub nowego spojrzenia na temat, może zdobywać linki zwrotne bez aktywnych działań. A linki z innych stron to jeden z najważniejszych czynników rankingowych w Google.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak content marketing wspiera SEO i pozycjonowanie?</h2><p>Content marketing i SEO (optymalizacja pod wyszukiwarki) są ze sobą ściśle powiązane. Wartościowe treści to fundament widoczności w Google.</p><br/><p><strong>Więcej treści to więcej fraz w wyszukiwarce</strong></p><br/><p>Każdy artykuł może pozycjonować się na określone frazy ważne. Strona z 10 artykułami ma więcej szans na pojawienie się w wynikach wyszukiwania niż strona z samą ofertą. Firma produkująca meble może mieć artykuły o wyborze biurka do pracy zdalnej, pielęgnacji drewna czy aranżacji małego mieszkania - każdy z nich to potencjalne wejście na stronę.</p><br/><p><strong>Treści odpowiadają na pytania użytkowników</strong></p><br/><p>Google stara się pokazywać wyniki, które najlepiej odpowiadają na pytanie użytkownika. Artykuł, który szczegółowo omawia temat i odpowiada na powiązane pytania, ma większe szanse na wysoką pozycję niż strona z ogólnym opisem usługi.</p><br/><p><strong>Linkowanie wewnętrzne</strong></p><br/><p>Artykuły na blogu można łączyć linkami z innymi stronami w serwisie - ze stronami usług, innymi artykułami czy realizacjami. To pomaga wyszukiwarkom zrozumieć strukturę strony i zwiększa wartość poszczególnych podstron. Więcej o tym mechanizmie wyjaśniamy w artykule <a class='inline-link' href='/edukacja/seo/czym-jest-linkowanie-wewnetrzne-i-jak-wplywa-na-seo-strony'>jak linkowanie wewnętrzne wpływa na SEO</a>. Więcej o <a class='inline-link' href='/uslugi/marketing/pozycjonowanie-stron'>pozycjonowaniu stron</a> znajdziesz w naszej ofercie.</p><br/><p><strong>Świeżość treści</strong></p><br/><p>Regularne publikowanie nowych treści sygnalizuje wyszukiwarkom, że strona jest aktywna i aktualna. Strona, która od lat nie była aktualizowana, może tracić pozycje na rzecz konkurencji publikującej regularnie.</p><br/><p><strong>Naturalny link building</strong></p><br/><p>Wartościowe treści są linkowane przez inne strony. Artykuł, który dostarcza unikalnych danych, praktycznych porad lub nowego spojrzenia na temat, może zdobywać linki zwrotne bez aktywnych działań. A linki z innych stron to jeden z najważniejszych czynników rankingowych w Google.</p>",
           "breakAfter": true
         },
         {
@@ -251,11 +251,11 @@
     {
       "slug": "e-mail-marketing-dla-malych-firm",
       "title": "E-mail marketing dla małych firm: dlaczego warto i na co zwrócić uwagę?",
-      "excerpt": "E-mail marketing to opłacalny kanał komunikacji z klientami. Wyjaśniamy, dlaczego warto go stosować, jakie rodzaje e-maili przynoszą najlepsze efekty i na co zwrócić uwagę przy planowaniu kampanii mailingowej dla małej firmy.",
+      "excerpt": "E-mail marketing to opłacalny kanał komunikacji z klientami. Dlaczego warto go stosować? Jakie rodzaje e-maili przynoszą najlepsze efekty? Na co zwrócić uwagę przy planowaniu kampanii mailingowej dla małej firmy?",
       "primaryCategory": "Marketing",
       "seo": {
         "title": "E-mail marketing dla małych firm: poradnik - Arteon",
-        "description": "E-mail marketing jest skuteczny dla małych firm dzięki niskim kosztom i bezpośredniemu dostępowi do klientów. Wyjaśniamy, jak zacząć.",
+        "description": "E-mail marketing jest skuteczny dla małych firm dzięki niskim kosztom i bezpośredniemu dostępowi do klientów. Jak zacząć?",
         "canonical": "https://www.arteonagency.pl/edukacja/marketing/e-mail-marketing-dla-malych-firm"
       },
       "cover": "/assets/blog/e-mail-marketing-dla-malych-firm/e-mail-marketing-dla-malych-firm.webp",
@@ -268,7 +268,7 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<p>E-mail marketing to forma komunikacji z klientami i potencjalnymi klientami poprzez wiadomości e-mail. Mimo rozwoju mediów społecznościowych i nowych kanałów marketingowych, e-mail pozostaje jednym z najbardziej skutecznych narzędzi budowania relacji z odbiorcami.</p><br/><p>W tym artykule wyjaśniamy, dlaczego e-mail marketing wciąż działa, jakie rodzaje mailingów przynoszą najlepsze efekty i na co zwrócić uwagę przy planowaniu działań w tym kanale.</p>",
+          "html": "<p>E-mail marketing to forma komunikacji z klientami i potencjalnymi klientami poprzez wiadomości e-mail. Mimo rozwoju mediów społecznościowych i nowych kanałów marketingowych, e-mail pozostaje jednym z najbardziej skutecznych narzędzi budowania relacji z odbiorcami.</p><br/><p>W tym artykule znajdziesz odpowiedzi na pytania: dlaczego e-mail marketing wciąż działa, jakie rodzaje mailingów przynoszą najlepsze efekty i na co zwrócić uwagę przy planowaniu działań w tym kanale.</p>",
           "breakAfter": true
         },
         {
@@ -373,11 +373,11 @@
     {
       "slug": "jak-przygotowac-profesjonalna-stopke-mailowa",
       "title": "Jak przygotować profesjonalną stopkę mailową?",
-      "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Wyjaśniamy, co powinna zawierać, jakich błędów unikać i jak stworzyć podpis za pomocą generatora.",
+      "excerpt": "Stopka mailowa to wizytówka w każdym e-mailu. Co powinna zawierać? Jakich błędów unikać? I jak stworzyć podpis za pomocą generatora?",
       "primaryCategory": "Marketing",
       "seo": {
         "title": "Jak przygotować profesjonalną stopkę mailową? - Arteon",
-        "description": "Firmowa stopka e-mail powinna zawierać dane kontaktowe i wyglądać profesjonalnie. Wyjaśniamy kluczowe elementy i typowe błędy.",
+        "description": "Firmowa stopka e-mail powinna zawierać dane kontaktowe i wyglądać profesjonalnie. Kluczowe elementy i typowe błędy.",
         "canonical": "https://www.arteonagency.pl/edukacja/marketing/jak-przygotowac-profesjonalna-stopke-mailowa"
       },
       "cover": "/assets/blog/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy/jak-przygotowac-profesjonalna-stopke-mailowa-dla-firmy.webp",
@@ -415,7 +415,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak stworzyć stopkę mailową? Przewodnik krok po kroku</h2><p>Masz dwie opcje:</p><br/><p><strong>Opcja 1: Zrobić samemu w HTML</strong> - wymaga znajomości kodu i dużo czasu. Nie polecamy, chyba że lubisz się bawić w programowanie.</p><br/><p><strong>Opcja 2: Użyć naszego darmowego generatora</strong> - wpisujesz dane, wybierasz styl, dostajesz gotową stopkę do wklejenia. Zajmuje to dosłownie kilka minut.</p><br/><p>Pokażemy Ci, jak korzystać z naszego narzędzia. Jest naprawdę proste.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak stworzyć stopkę mailową? Przewodnik </h2><p>Masz dwie opcje:</p><br/><p><strong>Opcja 1: Zrobić samemu w HTML</strong> - wymaga znajomości kodu i dużo czasu. Nie polecamy, chyba że lubisz się bawić w programowanie.</p><br/><p><strong>Opcja 2: Użyć naszego darmowego generatora</strong> - wpisujesz dane, wybierasz styl, dostajesz gotową stopkę do wklejenia. Zajmuje to dosłownie kilka minut.</p><br/><p>Pokażemy Ci, jak korzystać z naszego narzędzia. Jest naprawdę proste.</p>",
           "breakAfter": true
         },
         {
@@ -430,12 +430,12 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak wkleić stopkę do Gmail?</h2><p>Gmail to jeden z najpopularniejszych programów do e-maili. Oto jak dodać do niego stopkę:</p><br/><p><strong>Krok 1:</strong> Otwórz Gmail i kliknij ikonę zębatki (ustawienia) w prawym górnym rogu.</p><br/><p><strong>Krok 2:</strong> Wybierz Zobacz wszystkie ustawienia.</p><br/><p><strong>Krok 3:</strong> W zakładce Ogólne przewiń w dół do sekcji Podpis.</p><br/><p><strong>Krok 4:</strong> Kliknij Utwórz nowy i nadaj mu nazwę (np. Podpis firmowy).</p><br/><p><strong>Krok 5:</strong> W polu tekstowym wklej skopiowaną stopkę (Ctrl+V na Windows lub Cmd+V na Mac).</p><br/><p><strong>Krok 6:</strong> Przewiń na sam dół strony i kliknij Zapisz zmiany.</p><br/><p>Od teraz Twoja stopka będzie automatycznie pojawiać się w każdym nowym e-mailu!</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak wkleić stopkę do Gmail?</h2><p>Gmail to jeden z najpopularniejszych programów do e-maili. Oto jak dodać do niego stopkę:</p><br/><p><strong>1.</strong> Otwórz Gmail i kliknij ikonę zębatki (ustawienia) w prawym górnym rogu.</p><br/><p><strong>2.</strong> Wybierz Zobacz wszystkie ustawienia.</p><br/><p><strong>3.</strong> W zakładce Ogólne przewiń w dół do sekcji Podpis.</p><br/><p><strong>4.</strong> Kliknij Utwórz nowy i nadaj mu nazwę (np. Podpis firmowy).</p><br/><p><strong>5.</strong> W polu tekstowym wklej skopiowaną stopkę (Ctrl+V na Windows lub Cmd+V na Mac).</p><br/><p><strong>6.</strong> Przewiń na sam dół strony i kliknij Zapisz zmiany.</p><br/><p>Od teraz Twoja stopka będzie automatycznie pojawiać się w każdym nowym e-mailu!</p>",
           "breakAfter": true
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak wkleić stopkę do Outlook?</h2><p>Outlook (zarówno wersja desktopowa, jak i webowa) również pozwala na dodanie stopki. Oto jak to zrobić:</p><br/><h3 class='h5 mb-3 mt-4'>Outlook w przeglądarce (Outlook.com)</h3><p><strong>Krok 1:</strong> Kliknij ikonę zębatki w prawym górnym rogu i wybierz Wyświetl wszystkie ustawienia programu Outlook.</p><br/><p><strong>Krok 2:</strong> Przejdź do: Poczta → Redagowanie i odpowiadanie.</p><br/><p><strong>Krok 3:</strong> W sekcji Podpis e-mail wklej skopiowaną stopkę.</p><br/><p><strong>Krok 4:</strong> Kliknij Zapisz.</p><br/><h3 class='h5 mb-3 mt-4'>Outlook na komputerze (wersja desktopowa)</h3><p><strong>Krok 1:</strong> Kliknij Plik → Opcje → Poczta → Podpisy.</p><br/><p><strong>Krok 2:</strong> Kliknij Nowy i nadaj podpisowi nazwę.</p><br/><p><strong>Krok 3:</strong> W polu edycji wklej skopiowaną stopkę.</p><br/><p><strong>Krok 4:</strong> Kliknij OK.</p><br/><p>Gotowe! Twoja stopka jest ustawiona.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Jak wkleić stopkę do Outlook?</h2><p>Outlook (zarówno wersja desktopowa, jak i webowa) również pozwala na dodanie stopki. Oto jak to zrobić:</p><br/><h3 class='h5 mb-3 mt-4'>Outlook w przeglądarce (Outlook.com)</h3><p><strong>1.</strong> Kliknij ikonę zębatki w prawym górnym rogu i wybierz Wyświetl wszystkie ustawienia programu Outlook.</p><br/><p><strong>2.</strong> Przejdź do: Poczta → Redagowanie i odpowiadanie.</p><br/><p><strong>3.</strong> W sekcji Podpis e-mail wklej skopiowaną stopkę.</p><br/><p><strong>4.</strong> Kliknij Zapisz.</p><br/><h3 class='h5 mb-3 mt-4'>Outlook na komputerze (wersja desktopowa)</h3><p><strong>1.</strong> Kliknij Plik → Opcje → Poczta → Podpisy.</p><br/><p><strong>2.</strong> Kliknij Nowy i nadaj podpisowi nazwę.</p><br/><p><strong>3.</strong> W polu edycji wklej skopiowaną stopkę.</p><br/><p><strong>4.</strong> Kliknij OK.</p><br/><p>Gotowe! Twoja stopka jest ustawiona.</p>",
           "breakAfter": true
         },
         {

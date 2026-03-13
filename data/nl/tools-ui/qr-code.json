@@ -12,6 +12,7 @@
   "phonePlaceholder": "+31 6 12345678",
   "size": "Grootte (px)",
   "margin": "Marge (stille zone)",
+  "marginNone": "0 (geen)",
   "qrColor": "QR-codekleur",
   "bgColor": "Achtergrondkleur",
   "errorCorrection": "Foutcorrectieniveau",

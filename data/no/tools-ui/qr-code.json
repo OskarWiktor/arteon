@@ -12,6 +12,7 @@
   "phonePlaceholder": "+47 12 34 56 78",
   "size": "Størrelse (px)",
   "margin": "Margin (stille sone)",
+  "marginNone": "0 (ingen)",
   "qrColor": "QR-kodefarge",
   "bgColor": "Bakgrunnsfarge",
   "errorCorrection": "Feilkorreksjonsnivå",

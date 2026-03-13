@@ -12,6 +12,7 @@
   "phonePlaceholder": "+40 721 234 567",
   "size": "Dimensiune (px)",
   "margin": "Margine (zonă liniștită)",
+  "marginNone": "0 (fără)",
   "qrColor": "Culoare cod QR",
   "bgColor": "Culoare fundal",
   "errorCorrection": "Nivel de corecție a erorilor",

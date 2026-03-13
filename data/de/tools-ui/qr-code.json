@@ -12,6 +12,7 @@
   "phonePlaceholder": "+49 123 456 789",
   "size": "Größe (px)",
   "margin": "Rand (Ruhezone)",
+  "marginNone": "0 (kein)",
   "qrColor": "QR-Code-Farbe",
   "bgColor": "Hintergrundfarbe",
   "errorCorrection": "Fehlerkorrekturstufe",

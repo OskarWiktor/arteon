@@ -12,6 +12,7 @@
   "phonePlaceholder": "+34 612 345 678",
   "size": "Tamaño (px)",
   "margin": "Margen (zona de silencio)",
+  "marginNone": "0 (ninguno)",
   "qrColor": "Color del código QR",
   "bgColor": "Color de fondo",
   "errorCorrection": "Nivel de corrección de errores",

@@ -8,9 +8,9 @@ import { useLocale } from '@/lib/LocaleContext';
 import { getToolHref } from '@/lib/i18n/tool-registry';
 import type { Locale } from '@/types/locale';
 import { UNIT_CONVERSIONS } from '@/components/sections/tools/UnitConverter/conversions';
+import { getUnitLabel, getCategoryLabel } from '@/utils/locale-utils';
 
 import { FORMAT_CATEGORIES, FORMAT_DISPLAY_LABELS, getAllRoutes, getConversionHref, type FormatCategory, type UniversalFormat } from './allConversionRoutes';
-import { getCategoryLabel } from '@/utils/locale-utils';
 
 type PickerSide = 'source' | 'target';
 
@@ -21,12 +21,16 @@ interface UnitOption {
 }
 
 type UnitField = {
-  readonly label: string;
+  readonly label?: string;
+  readonly labelKey?: string;
   readonly suffix: string;
 };
 
-const unitId = (field: UnitField): string => field.suffix || field.label;
-const unitDisplayLabel = (field: UnitField): string => field.suffix || field.label;
+const unitId = (field: UnitField): string => field.suffix || field.labelKey || field.label || '';
+const unitDisplayLabel = (field: UnitField, locale: Locale): string => {
+  if (field.labelKey) return getUnitLabel(field.labelKey, locale);
+  return field.suffix || field.label || '';
+};
 
 const PICKER_HEADER: Record<PickerSide, Record<string, string>> = {
   source: {
@@ -92,9 +96,9 @@ const getUnitOptions = cache((side: 'source' | 'target', locale: Locale, current
         const cOther = side === 'source' ? c.targetField : c.sourceField;
         return unitId(cField) === id && unitId(cOther) === otherSideId && getToolHref(c.toolKey, locale) !== '#';
       });
-      items.push({ id, label: unitDisplayLabel(field), href: hasPair ? href : '' });
+      items.push({ id, label: unitDisplayLabel(field, locale), href: hasPair ? href : '' });
     } else {
-      items.push({ id, label: unitDisplayLabel(field), href });
+      items.push({ id, label: unitDisplayLabel(field, locale), href });
     }
   }
 
@@ -129,8 +133,8 @@ export default function FormatPickerModal({ side, currentSource, currentTarget, 
     const conv = UNIT_CONVERSIONS.find((c) => c.toolKey === unitToolKey);
     if (!conv) return { currentUnitId: null, unitTriggerLabel: null };
     const field = side === 'source' ? conv.sourceField : conv.targetField;
-    return { currentUnitId: unitId(field), unitTriggerLabel: unitDisplayLabel(field) };
-  }, [unitToolKey, side]);
+    return { currentUnitId: unitId(field), unitTriggerLabel: unitDisplayLabel(field, locale) };
+  }, [unitToolKey, side, locale]);
 
   // Close on Escape
   useEffect(() => {

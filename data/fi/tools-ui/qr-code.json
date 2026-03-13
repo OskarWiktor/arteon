@@ -12,6 +12,7 @@
   "phonePlaceholder": "+358 40 123 4567",
   "size": "Koko (px)",
   "margin": "Marginaali (hiljainen alue)",
+  "marginNone": "0 (ei mitään)",
   "qrColor": "QR-koodin väri",
   "bgColor": "Taustan väri",
   "errorCorrection": "Virheenkorjaustaso",

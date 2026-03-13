@@ -12,6 +12,7 @@
   "phonePlaceholder": "+45 12 34 56 78",
   "size": "Størrelse (px)",
   "margin": "Margin (stille zone)",
+  "marginNone": "0 (ingen)",
   "qrColor": "QR-kodefarve",
   "bgColor": "Baggrundsfarve",
   "errorCorrection": "Fejlkorrektionsniveau",

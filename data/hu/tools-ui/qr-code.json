@@ -12,6 +12,7 @@
   "phonePlaceholder": "+36 30 123 4567",
   "size": "Méret (px)",
   "margin": "Margó (csendes zóna)",
+  "marginNone": "0 (nincs)",
   "qrColor": "QR-kód színe",
   "bgColor": "Háttérszín",
   "errorCorrection": "Hibajavítási szint",

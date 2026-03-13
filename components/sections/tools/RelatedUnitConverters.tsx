@@ -3,6 +3,7 @@ import type { ToolItemKey } from '@/types/tools/common';
 import Gap from '@/components/ui/Gap';
 import { UNIT_CONVERSIONS } from '@/components/sections/tools/UnitConverter/conversions';
 import { getToolHref, getToolByKey } from '@/lib/i18n/tool-registry';
+import { getUnitLabel } from '@/utils/locale-utils';
 
 // ---------------------------------------------------------------------------
 // Locale-aware title templates (matching RelatedConverters pattern)
@@ -88,12 +89,15 @@ const UNIT_CONNECTOR: Record<string, string> = {
 // Helpers
 // ---------------------------------------------------------------------------
 
-function unitLabel(field: { label: string; suffix: string }): string {
-  return field.suffix || field.label;
+type UnitFieldRef = { label?: string; labelKey?: string; suffix: string };
+
+function unitLabel(field: UnitFieldRef, locale: Locale): string {
+  if (field.labelKey) return getUnitLabel(field.labelKey, locale);
+  return field.suffix || field.label || '';
 }
 
-function unitId(field: { label: string; suffix: string }): string {
-  return field.suffix || field.label;
+function unitId(field: UnitFieldRef): string {
+  return field.suffix || field.labelKey || field.label || '';
 }
 
 // ---------------------------------------------------------------------------
@@ -124,8 +128,8 @@ export default function RelatedUnitConverters({ toolKey, locale }: RelatedUnitCo
 
   if (toSameTarget.length === 0 && fromSameSource.length === 0 && otherConverters.length === 0) return null;
 
-  const targetUnitLabel = unitLabel(current.targetField);
-  const sourceUnitLabel = unitLabel(current.sourceField);
+  const targetUnitLabel = unitLabel(current.targetField, locale);
+  const sourceUnitLabel = unitLabel(current.sourceField, locale);
 
   const titleTo = (TITLE_CONVERT_TO[locale] ?? TITLE_CONVERT_TO.en)(targetUnitLabel);
   const titleFrom = (TITLE_CONVERT_FROM[locale] ?? TITLE_CONVERT_FROM.en)(sourceUnitLabel);
@@ -169,7 +173,7 @@ export default function RelatedUnitConverters({ toolKey, locale }: RelatedUnitCo
 // Grid sub-component
 // ---------------------------------------------------------------------------
 
-function ConverterGrid({ converters, locale }: { converters: { toolKey: string; sourceField: { label: string; suffix: string }; targetField: { label: string; suffix: string } }[]; locale: Locale }) {
+function ConverterGrid({ converters, locale }: { converters: { toolKey: string; sourceField: UnitFieldRef; targetField: UnitFieldRef }[]; locale: Locale }) {
   const connector = UNIT_CONNECTOR[locale] ?? 'to';
 
   return (
@@ -178,7 +182,7 @@ function ConverterGrid({ converters, locale }: { converters: { toolKey: string; 
         const href = getToolHref(c.toolKey as ToolItemKey, locale);
         if (href === '#') return null;
         const tool = getToolByKey(c.toolKey as ToolItemKey);
-        const label = tool?.locales[locale]?.title ?? `${unitLabel(c.sourceField)} ${connector} ${unitLabel(c.targetField)}`;
+        const label = tool?.locales[locale]?.title ?? `${unitLabel(c.sourceField, locale)} ${connector} ${unitLabel(c.targetField, locale)}`;
 
         return (
           <a

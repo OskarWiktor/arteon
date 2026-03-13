@@ -12,6 +12,7 @@
   "phonePlaceholder": "+33 6 12 34 56 78",
   "size": "Taille (px)",
   "margin": "Marge (zone de silence)",
+  "marginNone": "0 (aucune)",
   "qrColor": "Couleur du code QR",
   "bgColor": "Couleur d'arrière-plan",
   "errorCorrection": "Niveau de correction d'erreurs",

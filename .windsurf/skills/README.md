@@ -21,6 +21,7 @@ Complete set of 12 custom skills and comprehensive rules system created for Arte
 │   ├── arteon-security-best-practices/
 │   ├── arteon-seo-optimization/
 │   ├── arteon-testing-strategy/
+│   ├── arteon-tool-documentation/
 │   ├── arteon-tools/
 │   ├── arteon-ai-agent/
 │   ├── arteon-ai-code-intelligence/

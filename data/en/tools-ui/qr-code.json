@@ -12,6 +12,7 @@
   "phonePlaceholder": "+1 234 567 890",
   "size": "Size (px)",
   "margin": "Margin (quiet zone)",
+  "marginNone": "0 (none)",
   "qrColor": "QR code color",
   "bgColor": "Background color",
   "errorCorrection": "Error correction level",

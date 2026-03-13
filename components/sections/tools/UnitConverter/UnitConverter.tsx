@@ -4,7 +4,8 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import Button from '@/components/ui/buttons/Button';
 import ToolSection from '@/components/ui/tools/ToolSection';
-import { useDictionary } from '@/lib/LocaleContext';
+import { useDictionary, useLocale } from '@/lib/LocaleContext';
+import { getUnitLabel } from '@/utils/locale-utils';
 
 import FormatSelector from '@/components/sections/tools/FormatPicker/FormatSelector';
 
@@ -14,7 +15,11 @@ import type { UnitConverterProps } from './types';
 
 export default function UnitConverter({ toolKey }: UnitConverterProps) {
   const { imageConverter: t } = useDictionary();
+  const locale = useLocale();
   const config = useMemo(() => getUnitConversion(toolKey), [toolKey]);
+
+  // Helper to resolve label from labelKey or fallback to label
+  const resolveLabel = (field: { label?: string; labelKey?: string }) => (field.labelKey ? getUnitLabel(field.labelKey, locale) : (field.label ?? ''));
 
   const [sourceValue, setSourceValue] = useState('');
   const [targetValue, setTargetValue] = useState('');
@@ -124,8 +129,11 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
 
   if (!config) return null;
 
-  const srcField = isReversed ? config.targetField : config.sourceField;
-  const tgtField = isReversed ? config.sourceField : config.targetField;
+  const srcFieldConfig = isReversed ? config.targetField : config.sourceField;
+  const tgtFieldConfig = isReversed ? config.sourceField : config.targetField;
+  const srcLabel = resolveLabel(srcFieldConfig);
+  const tgtLabel = resolveLabel(tgtFieldConfig);
+  const extraLabel = config.extraField ? resolveLabel(config.extraField) : '';
 
   return (
     <div>
@@ -134,7 +142,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
       {/* Main converter */}
       <div className="grid gap-4 md:grid-cols-2">
         <ToolSection className="space-y-3">
-          <h2 className="h6">{srcField.label}</h2>
+          <h2 className="h6">{srcLabel}</h2>
           <div className="relative">
             <input
               type={isSpecial ? 'text' : 'number'}
@@ -142,15 +150,15 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               className="tool-textarea w-full rounded-xl border border-neutral-200 bg-neutral-50 p-4 pr-16 font-mono text-lg transition outline-none focus:border-neutral-300 focus:bg-white"
               value={sourceValue}
               onChange={(e) => handleSourceChange(e.target.value)}
-              placeholder={srcField.placeholder ?? t.enterValue.replace('{{label}}', srcField.label.toLowerCase())}
+              placeholder={srcFieldConfig.placeholder ?? t.enterValue.replace('{{label}}', srcLabel.toLowerCase())}
               spellCheck={false}
             />
-            {srcField.suffix && <span className="text-primary-mid pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm">{srcField.suffix}</span>}
+            {srcFieldConfig.suffix && <span className="text-primary-mid pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm">{srcFieldConfig.suffix}</span>}
           </div>
 
           {config.extraField && (
             <div className="flex items-center gap-3 rounded-lg border border-neutral-100 bg-white p-3">
-              <label className="text-mid text-sm font-medium whitespace-nowrap">{config.extraField.label}:</label>
+              <label className="text-mid text-sm font-medium whitespace-nowrap">{extraLabel}:</label>
               <input
                 type="number"
                 className="w-24 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5 text-center font-mono text-sm transition outline-none focus:border-neutral-300 focus:bg-white"
@@ -180,7 +188,7 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
         </ToolSection>
 
         <ToolSection className="space-y-3">
-          <h2 className="h6">{tgtField.label}</h2>
+          <h2 className="h6">{tgtLabel}</h2>
           <div className="relative">
             <input
               type={isSpecial ? 'text' : 'number'}
@@ -188,11 +196,11 @@ export default function UnitConverter({ toolKey }: UnitConverterProps) {
               className="tool-textarea w-full rounded-xl border border-neutral-200 bg-neutral-50 p-4 pr-16 font-mono text-lg transition outline-none focus:border-neutral-300 focus:bg-white"
               value={targetValue}
               onChange={(e) => handleTargetChange(e.target.value)}
-              placeholder={tgtField.placeholder ?? t.resultIn.replace('{{label}}', tgtField.label.toLowerCase())}
+              placeholder={tgtFieldConfig.placeholder ?? t.resultIn.replace('{{label}}', tgtLabel.toLowerCase())}
               readOnly={isSpecial}
               spellCheck={false}
             />
-            {tgtField.suffix && <span className="text-primary-mid pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm">{tgtField.suffix}</span>}
+            {tgtFieldConfig.suffix && <span className="text-primary-mid pointer-events-none absolute top-1/2 right-4 -translate-y-1/2 font-mono text-sm">{tgtFieldConfig.suffix}</span>}
           </div>
 
           <div className="flex flex-wrap gap-3">

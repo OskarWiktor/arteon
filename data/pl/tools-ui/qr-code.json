@@ -12,6 +12,7 @@
   "phonePlaceholder": "+48 123 456 789",
   "size": "Rozmiar (px)",
   "margin": "Margines (quiet zone)",
+  "marginNone": "0 (brak)",
   "qrColor": "Kolor kodu QR",
   "bgColor": "Kolor tła",
   "errorCorrection": "Poziom korekcji błędów",

@@ -7,14 +7,16 @@ import type { ToolItemKey } from './common';
 export type UnitCategory = 'length' | 'weight' | 'temperature' | 'volume' | 'area' | 'speed' | 'pressure' | 'power' | 'css' | 'color' | 'data' | 'time' | 'math' | 'energy';
 
 export interface UnitField {
-  label: string;
+  label?: string;
+  labelKey?: string;
   suffix: string;
   placeholder?: string;
 }
 
 export interface ExtraField {
   key: string;
-  label: string;
+  label?: string;
+  labelKey?: string;
   suffix: string;
   defaultValue: number;
   min?: number;
@@ -26,6 +28,7 @@ export interface PopularValue {
   source: number | string;
   target: number | string;
   label?: string;
+  labelKey?: string;
 }
 
 export interface UnitConversionConfig {

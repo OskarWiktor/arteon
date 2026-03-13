@@ -204,7 +204,7 @@ export default function QrCodeGenerator() {
             <option value={1000}>1000 px</option>
           </ToolSelect>
           <ToolSelect label={t.margin} value={margin} onChange={(v) => setMargin(Number(v))}>
-            <option value={0}>0 (brak)</option>
+            <option value={0}>{t.marginNone}</option>
             <option value={1}>1</option>
             <option value={2}>2</option>
             <option value={3}>3</option>

@@ -3,11 +3,11 @@
     {
       "slug": "regulamin-sklepu-internetowego-co-musi-zawierac",
       "title": "Co to jest regulamin sklepu internetowego i co musi zawierać?",
-      "excerpt": "Regulamin sklepu internetowego określa zasady korzystania ze sklepu i zawierania umów. Wyjaśniamy, jakie elementy musi zawierać zgodnie z polskim prawem i na co zwrócić uwagę przy jego tworzeniu lub aktualizacji w sklepie.",
+      "excerpt": "Regulamin sklepu internetowego określa zasady korzystania ze sklepu i zawierania umów. Jakie elementy musi zawierać zgodnie z polskim prawem? Na co zwrócić uwagę przy jego tworzeniu lub aktualizacji?",
       "primaryCategory": "Sklepy",
       "seo": {
         "title": "Co to jest regulamin sklepu internetowego i co musi zawierać? - Arteon",
-        "description": "Regulamin sklepu internetowego musi zawierać określone elementy zgodnie z polskim prawem. Wyjaśniamy obowiązkowe zapisy i wymagania prawne dla e-commerce.",
+        "description": "Regulamin sklepu internetowego musi zawierać określone elementy zgodnie z polskim prawem. Obowiązkowe zapisy i wymagania prawne dla e-commerce.",
         "canonical": "https://www.arteonagency.pl/edukacja/sklepy/regulamin-sklepu-internetowego-co-musi-zawierac"
       },
       "cover": "/assets/blog/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac/co-to-jest-regulamin-sklepu-internetowego-i-co-musi-zawierac.webp",
@@ -20,7 +20,7 @@
       "contentBlocks": [
         {
           "type": "richtext",
-          "html": "<p>Regulamin sklepu internetowego to dokument prawny. Określa zasady korzystania ze sklepu, składania zamówień i zawierania umów sprzedaży. Zgodnie z polskim prawem każdy sklep sprzedający konsumentom musi udostępnić regulamin przed zawarciem umowy.</p><br/><p>W tym artykule wyjaśniamy, jakie elementy musi zawierać regulamin. Opisujemy przepisy, które go regulują. Podpowiadamy też, na co zwrócić uwagę przy tworzeniu lub weryfikacji regulaminu.</p>",
+          "html": "<p>Regulamin sklepu internetowego to dokument prawny. Określa zasady korzystania ze sklepu, składania zamówień i zawierania umów sprzedaży. Zgodnie z polskim prawem każdy sklep sprzedający konsumentom musi udostępnić regulamin przed zawarciem umowy.</p><br/><p>W tym artykule znajdziesz informacje o tym, jakie elementy musi zawierać regulamin, które przepisy go regulują i na co zwrócić uwagę przy tworzeniu lub weryfikacji regulaminu.</p>",
           "breakAfter": true
         },
         {
@@ -143,7 +143,7 @@
       "primaryCategory": "Sklepy",
       "seo": {
         "title": "Darmowa dostawa vs niższa cena: co bardziej przekonuje do zakupu? - Arteon",
-        "description": "Porównanie dwóch strategii cenowych w e-commerce: darmowa dostawa i niższa cena produktu. Wyjaśniamy, która opcja skuteczniej przekonuje klientów.",
+        "description": "Porównanie dwóch strategii cenowych w e-commerce: darmowa dostawa i niższa cena produktu. Która opcja skuteczniej przekonuje klientów?",
         "canonical": "https://www.arteonagency.pl/edukacja/sklepy/darmowa-dostawa-vs-nizsza-cena"
       },
       "cover": "/assets/blog/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu/darmowa-dostawa-vs-nizsza-cena-co-bardziej-przekonuje-do-zakupu.webp",
@@ -166,7 +166,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego koszty dostawy mają tak duże znaczenie?</h2><p>Koszty dostawy to jeden z głównych powodów, dla których klienci porzucają koszyki. Wg badań <a class='underline' href='https://baymard.com/lists/cart-abandonment-rate' target='_blank' rel='noopener noreferrer'>Baymard Institute</a> średni wskaźnik porzuconych koszyków w e-commerce wynosi około 70%. To oznacza, że 7 na 10 osób, które dodają produkt do koszyka, nie kończy zakupu.</p><br/><p>Co ciekawe, najczęstszym powodem porzucenia koszyka (pomijając osoby, które tylko przeglądały produkty bez zamiaru kupna) są zbyt wysokie dodatkowe koszty - w tym właśnie koszty dostawy. Wg tego samego badania 39% klientów wskazuje dodatkowe opłaty (dostawa, podatki, inne opłaty) jako powód rezygnacji z zakupu.</p><br/><p>To pokazuje, jak ważna jest strategia cenowa dotycząca dostawy. Dla wielu klientów koszt dostawy nie jest po prostu kolejną pozycją na rachunku - to bariera psychologiczna, która może zdecydować o tym, czy transakcja dojdzie do skutku.</p><br/><p>Więcej o tym, dlaczego klienci porzucają koszyki i jak temu zapobiegać, znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz'>paradoksie wyboru w e-commerce</a>.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Dlaczego koszty dostawy mają tak duże znaczenie?</h2><p>Koszty dostawy to jeden z głównych powodów, dla których klienci porzucają koszyki. Wg badań <a class='underline' href='https://baymard.com/lists/cart-abandonment-rate' target='_blank' rel='noopener noreferrer'>Baymard Institute</a> średni wskaźnik porzuconych koszyków w e-commerce wynosi około 70%. To oznacza, że 7 na 10 osób, które dodają produkt do koszyka, nie kończy zakupu.</p><br/><p>Co ciekawe, najczęstszym powodem porzucenia koszyka (pomijając osoby, które tylko przeglądały produkty bez zamiaru kupna) są zbyt wysokie dodatkowe koszty - w tym właśnie koszty dostawy. Wg tego samego badania 48% klientów wskazuje zbyt wysokie dodatkowe koszty (dostawa, podatki, inne opłaty) jako główny powód rezygnacji z zakupu.</p><br/><p>To pokazuje, jak ważna jest strategia cenowa dotycząca dostawy. Dla wielu klientów koszt dostawy nie jest po prostu kolejną pozycją na rachunku - to bariera psychologiczna, która może zdecydować o tym, czy transakcja dojdzie do skutku.</p><br/><p>Więcej o tym, dlaczego klienci porzucają koszyki i jak temu zapobiegać, znajdziesz w artykule o <a class='inline-link' href='/edukacja/psychologia/czym-jest-paradoks-wyboru-i-dlaczego-mniej-opcji-moze-zwiekszyc-sprzedaz'>paradoksie wyboru w e-commerce</a>.</p>",
           "breakAfter": true
         },
         {
@@ -176,7 +176,7 @@
         },
         {
           "type": "richtext",
-          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Porownanie obu strategii w roznych kontekstach</h2><p>Wybór między darmową dostawą a niższą ceną zależy od wielu czynników. Poniżej porównanie obu strategii w różnych aspektach.</p><br/><h3 class='h5 mb-3 mt-4'>Wpływ na konwersję</h3><p>Darmowa dostawa zazwyczaj ma silniejszy wpływ na konwersję w końcowych etapach zakupu - gdy klient jest już w koszyku i widzi podsumowanie zamówienia. Niższa cena produktu działa wcześniej - przyciąga klientów na etapie przeglądania i porównywania ofert.</p><br/><p>Jeśli sklep ma problem z porzucanymi koszykami, darmowa dostawa może przynieść szybszą poprawę. Jeśli problem leży w pozyskiwaniu ruchu i kliknięć, niższa cena produktu może być skuteczniejsza.</p><br/><h3 class='h5 mb-3 mt-4'>Wpływ na średnią wartość zamówienia</h3><p>Darmowa dostawa z progiem (np. od 200 zł) może zwiększyć średnią wartość koszyka. Klienci dodają produkty, żeby osiągnąć próg. Niższa cena produktu nie ma tego efektu - wręcz przeciwnie, może obniżyć wartość zamówienia.</p><br/><p>Z drugiej strony, niższa cena może zachęcić do kupienia większej ilości tego samego produktu (bo jednostkowa oszczędność jest większa przy większym zamówieniu).</p><br/><h3 class='h5 mb-3 mt-4'>Wpływ na postrzeganie marki</h3><p>Darmowa dostawa jest postrzegana jako benefit, dodatkowa wartość. Niższa cena może być postrzegana jako promocja lub wyprzedaż - co dla niektórych marek (szczególnie premium) może być niepożądane.</p><br/><p>Sklep pozycjonujący się jako premium może oferować darmową dostawę jako standard, podczas gdy sklep dyskontowy może konkurować przede wszystkim ceną produktów. Więcej o budowaniu wizerunku marki znajdziesz w artykule o <a class='inline-link' href='/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow'>identyfikacji wizualnej i zaufaniu klientów</a>.</p>",
+          "html": "<h2 class='h3 mb-5 scroll-mt-26 lg:mb-6 '>Porownanie obu strategii w roznych kontekstach</h2><p>Wybór między darmową dostawą a niższą ceną zależy od wielu czynników. Porównanie obu strategii w różnych aspektach.</p><br/><h3 class='h5 mb-3 mt-4'>Wpływ na konwersję</h3><p>Darmowa dostawa zazwyczaj ma silniejszy wpływ na konwersję w końcowych etapach zakupu - gdy klient jest już w koszyku i widzi podsumowanie zamówienia. Niższa cena produktu działa wcześniej - przyciąga klientów na etapie przeglądania i porównywania ofert.</p><br/><p>Jeśli sklep ma problem z porzucanymi koszykami, darmowa dostawa może przynieść szybszą poprawę. Jeśli problem leży w pozyskiwaniu ruchu i kliknięć, niższa cena produktu może być skuteczniejsza.</p><br/><h3 class='h5 mb-3 mt-4'>Wpływ na średnią wartość zamówienia</h3><p>Darmowa dostawa z progiem (np. od 200 zł) może zwiększyć średnią wartość koszyka. Klienci dodają produkty, żeby osiągnąć próg. Niższa cena produktu nie ma tego efektu - wręcz przeciwnie, może obniżyć wartość zamówienia.</p><br/><p>Z drugiej strony, niższa cena może zachęcić do kupienia większej ilości tego samego produktu (bo jednostkowa oszczędność jest większa przy większym zamówieniu).</p><br/><h3 class='h5 mb-3 mt-4'>Wpływ na postrzeganie marki</h3><p>Darmowa dostawa jest postrzegana jako benefit, dodatkowa wartość. Niższa cena może być postrzegana jako promocja lub wyprzedaż - co dla niektórych marek (szczególnie premium) może być niepożądane.</p><br/><p>Sklep pozycjonujący się jako premium może oferować darmową dostawę jako standard, podczas gdy sklep dyskontowy może konkurować przede wszystkim ceną produktów. Więcej o budowaniu wizerunku marki znajdziesz w artykule o <a class='inline-link' href='/edukacja/grafika/jak-identyfikacja-wizualna-zwieksza-zaufanie-klientow'>identyfikacji wizualnej i zaufaniu klientów</a>.</p>",
           "breakAfter": true
         },
         {

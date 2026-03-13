@@ -12,6 +12,7 @@
   "phonePlaceholder": "+420 123 456 789",
   "size": "Velikost (px)",
   "margin": "Okraj (klidná zóna)",
+  "marginNone": "0 (žádný)",
   "qrColor": "Barva QR kódu",
   "bgColor": "Barva pozadí",
   "errorCorrection": "Úroveň korekce chyb",

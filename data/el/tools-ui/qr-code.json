@@ -12,6 +12,7 @@
   "phonePlaceholder": "+30 21 0123 4567",
   "size": "Μέγεθος (px)",
   "margin": "Περιθώριο (ζώνη ησυχίας)",
+  "marginNone": "0 (κανένα)",
   "qrColor": "Χρώμα κωδικού QR",
   "bgColor": "Χρώμα φόντου",
   "errorCorrection": "Επίπεδο διόρθωσης σφαλμάτων",
