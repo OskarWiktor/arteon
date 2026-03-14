@@ -1,7 +1,7 @@
 # Arteon Agency - Complete Project Context for Cascade AI Assistant
 
 > **CEL:** This file contains ALL project context, conventions, skills, and automated task triggers for optimal AI assistance.
-> **For new devices:** Ask Cascade: "Read `.windsurf/CLAUDE.md` and remember everything. This is your complete project knowledge base."
+> **For new devices:** Ask Cascade: "Read `.claude/CLAUDE.md` and remember everything. This is your complete project knowledge base."
 > **Last updated:** 2026-03-12 (Enhanced with Sales & Marketing Intelligence Skills)
 
 ---
@@ -29,9 +29,9 @@
 
 ## 🤖 Skills System (Auto-Activation)
 
-### Custom Skills (.windsurf/skills/)
+### Custom Skills (.claude/skills/)
 
-**53 specialized skills** that automatically activate based on task context:
+**95+ specialized skills** that automatically activate based on task context:
 
 #### 🏗️ Development Skills
 
@@ -120,6 +120,78 @@
 #### 📈 Sales & Marketing Skills (NEW)
 
 53. **arteon-sales-intelligence** - AI-powered sales optimization and conversion intelligence
+54. **hormozi-sales** - Alex Hormozi sales philosophy and techniques
+55. **marketing-ideas** - 140 proven marketing approaches for SaaS
+56. **marketing-psychology** - 70+ mental models for marketing
+57. **social-content** - Social media content creation and optimization
+
+#### 🎨 Design & UI/UX Skills
+
+58. **frontend-design** - Production-grade frontend interfaces with high design quality
+59. **ui-ux-pro-max** - Complete UI/UX intelligence (67 styles, 96 palettes, 57 font pairings)
+60. **ui-design-system** - Design token generation, component documentation, responsive design
+61. **canvas-design** - Visual art creation in .png and .pdf documents
+62. **theme-factory** - Styling artifacts with pre-set themes
+63. **web-design-guidelines** - Web Interface Guidelines compliance review
+64. **responsive-design** - Container queries, fluid typography, mobile-first patterns
+65. **tailwind-design-system** - Scalable design systems with Tailwind CSS v4
+66. **accessibility** - WCAG 2.1 AA accessibility guidelines
+
+#### 🏗️ Architecture & Best Practices
+
+67. **senior-architect** - Scalable system architecture (React, Next.js, Node, Express, GraphQL)
+68. **senior-frontend** - Modern frontend development (React, Next.js, TypeScript, Tailwind)
+69. **senior-backend** - Backend systems (Node.js, Express, Go, Python, PostgreSQL)
+70. **senior-fullstack** - Complete fullstack development patterns
+71. **vercel-composition-patterns** - React composition patterns that scale
+72. **vercel-react-best-practices** - React/Next.js performance optimization (58 rules)
+73. **react-best-practices** - 40+ rules for eliminating waterfalls and optimizing bundles
+74. **next-best-practices** - Next.js file conventions, RSC boundaries, async APIs
+75. **next-cache-components** - Next.js 16 Cache Components (PPR, use cache directive)
+76. **typescript-advanced-types** - Advanced TypeScript type system mastery
+
+#### 🧪 Testing & Quality Assurance
+
+77. **code-reviewer** - Comprehensive code review (TypeScript, JavaScript, Python, Swift, Kotlin, Go)
+78. **verification-loop** - Comprehensive verification system for Claude Code sessions
+79. **webapp-testing** - Web application testing with Playwright
+
+#### 🚀 Development Workflow & Tools
+
+80. **brainstorming** - Explore user intent and requirements before implementation
+81. **create-plan** - Create concise plans for coding tasks
+82. **Git Commit Helper** - Generate descriptive commit messages from git diffs
+83. **file-organizer** - Intelligent file and folder organization
+84. **find-skills** - Discover and install agent skills
+85. **skill-creator** - Create, modify, and optimize skills with evals
+
+#### 📧 Email & Documents
+
+86. **react-email** - HTML email templates with React components
+87. **docx** - Document creation, editing, and analysis with tracked changes
+88. **PDF Processing Pro** - Production-ready PDF processing with forms, tables, OCR
+89. **Excel Analysis** - Analyze Excel spreadsheets, pivot tables, charts
+
+#### 🔍 SEO & Analytics
+
+90. **seo** - Comprehensive SEO analysis (technical, content, Core Web Vitals, GEO)
+91. **SEO Optimizer** - Content strategy, keyword research, on-page SEO
+
+#### 🤖 AI & Prompt Engineering
+
+92. **senior-prompt-engineer** - LLM optimization, prompt patterns, structured outputs
+
+#### 🌐 Deployment & Infrastructure
+
+93. **deploy-to-vercel** - Deploy applications to Vercel
+
+#### 📊 Analytics & Growth
+
+94. **developer-growth-analysis** - Analyze coding patterns and development gaps
+
+#### 🗂️ Data Management
+
+95. **data-management** - Data structure, validation, i18n (16 locales, 92 tools)
 
 ### Skill Activation Triggers
 
@@ -199,6 +271,80 @@
 "sales optimization" → arteon-sales-intelligence
 "conversion optimization" → arteon-sales-intelligence
 "revenue optimization" → arteon-sales-intelligence
+"sales copy" → hormozi-sales
+"cold email" → hormozi-sales
+"pitch deck" → hormozi-sales
+"marketing ideas" → marketing-ideas
+"growth strategies" → marketing-ideas
+"marketing psychology" → marketing-psychology
+"mental models" → marketing-psychology
+"social media" → social-content
+"LinkedIn post" → social-content
+
+// Design & UI/UX Phase
+"build interface" → frontend-design
+"create component" → frontend-design
+"design system" → ui-design-system
+"UI/UX design" → ui-ux-pro-max
+"visual design" → canvas-design
+"poster design" → canvas-design
+"theme styling" → theme-factory
+"accessibility review" → web-design-guidelines
+"responsive layout" → responsive-design
+"Tailwind design" → tailwind-design-system
+"WCAG compliance" → accessibility
+
+// Architecture & Best Practices Phase
+"system architecture" → senior-architect
+"frontend architecture" → senior-frontend
+"backend architecture" → senior-backend
+"fullstack development" → senior-fullstack
+"React composition" → vercel-composition-patterns
+"React performance" → vercel-react-best-practices
+"performance optimization" → react-best-practices
+"Next.js patterns" → next-best-practices
+"cache optimization" → next-cache-components
+"TypeScript types" → typescript-advanced-types
+
+// Testing & Quality Phase
+"code review" → code-reviewer
+"verification" → verification-loop
+"test application" → webapp-testing
+
+// Development Workflow Phase
+"brainstorm feature" → brainstorming
+"plan task" → create-plan
+"commit message" → Git Commit Helper
+"organize files" → file-organizer
+"find skill" → find-skills
+"create skill" → skill-creator
+
+// Email & Documents Phase
+"email template" → react-email
+"create document" → docx
+"process PDF" → PDF Processing Pro
+"analyze Excel" → Excel Analysis
+
+// SEO & Analytics Phase
+"SEO audit" → seo
+"keyword research" → SEO Optimizer
+"meta optimization" → SEO Optimizer
+
+// AI & Prompt Engineering Phase
+"optimize prompt" → senior-prompt-engineer
+"LLM optimization" → senior-prompt-engineer
+
+// Deployment Phase
+"deploy app" → deploy-to-vercel
+"Vercel deployment" → deploy-to-vercel
+
+// Analytics & Growth Phase
+"analyze patterns" → developer-growth-analysis
+"development gaps" → developer-growth-analysis
+
+// Data Management Phase
+"data structure" → data-management
+"i18n data" → data-management
 ```
 
 ---
@@ -239,7 +385,7 @@
 
 ---
 
-## 📋 Rules System (.windsurf/rules/)
+## 📋 Rules System (.claude/rules/)
 
 ### 6 Rule Files for Consistency
 
@@ -470,7 +616,7 @@ tests/
 ### Key Directories
 
 ```
-.windsurf/
+.claude/
 ├── CONTEXT.md              # This file - complete project context
 ├── rules/                  # 6 rule files
 │   ├── README.md

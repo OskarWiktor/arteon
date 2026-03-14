@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+.next/
+
+# Skills directory - contains reference files not part of main codebase
+.claude/skills/
+
+# Build output
+out/
+build/
+dist/
+
+# Generated files
+.next-docs/
