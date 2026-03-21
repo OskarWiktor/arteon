@@ -2,14 +2,14 @@
   "toolKey": "unixTimestamp",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter Unix Timestamp – czas epoch na datę",
-    "description": "Przelicz Unix timestamp na datę i czas. Konwerter jest przydatny dla programistów i administratorów. Bez rejestracji.",
+    "title": "Unix Timestamp – epoch na datę i czas dla programistów PL",
+    "description": "Przelicz Unix timestamp na datę i czas w strefie Europe/Warsaw. Niezbędne przy API, tokenach JWT i logach serwerów. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-unix-timestamp"
   },
   "hero": {
-    "title": "Przelicz Unix Timestamp na datę",
-    "description": "Ten konwerter przelicza Unix timestamp (epoch) na czytelny format daty i czasu. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "Unix Timestamp na datę – sprawdź epoch i strefę czasową Warsaw",
+    "description": "Debugujesz API, przeglądasz logi serwera lub sprawdzasz token JWT? Wklej timestamp i odczytaj datę w strefie Europe/Warsaw – wynik natychmiast, bez instalacji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,12 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter Unix Timestamp – czas epoch na datę",
-      "alternateName": ["Przelicznik Unix timestamp", "Epoch converter", "Kalkulator czasu Unix"],
+      "name": "Unix Timestamp – epoch na datę i czas dla programistów PL",
+      "alternateName": [
+        "Przelicznik Unix timestamp",
+        "Epoch converter",
+        "Kalkulator czasu Unix"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz Unix timestamp na datę i czas. Konwerter jest przydatny dla programistów i administratorów. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz Unix timestamp na datę i czas w strefie Europe/Warsaw. Niezbędne przy API, tokenach JWT i logach serwerów. Działa w przeglądarce, bez rejestracji.",
+      "featureList": [
+        "Przeliczanie Unix timestamp (epoch) na czytelną datę i czas",
+        "Obustronna konwersja – wpisz timestamp lub datę i czas",
+        "Wynik aktualizuje się natychmiast podczas wpisywania",
+        "Kopiowanie wyniku do schowka jednym kliknięciem",
+        "Uwzględnienie strefy czasowej Europe/Warsaw (CET/CEST)",
+        "Obsługa timestampów JavaScript (milisekundy) i Unix (sekundy)",
+        "Przydatne przy debugowaniu tokenów JWT i pól exp oraz iat",
+        "Pomocne przy analizie logów Apache, Nginx i systemowych",
+        "Obliczenia lokalne w przeglądarce – bez wysyłania danych",
+        "Bez rejestracji i bez instalacji – działa w każdej przeglądarce"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera Unix Timestamp na datę",
@@ -100,23 +115,23 @@
       "items": [
         {
           "icon": "RiDatabase2Line",
-          "title": "Bazy danych",
-          "description": "Pola created_at, updated_at przechowują timestamp."
+          "title": "Bazy danych i pola czasowe",
+          "description": "Kolumny created_at, updated_at i deleted_at w bazach danych (PostgreSQL, MySQL, SQLite) często przechowują Unix timestamp zamiast czytelnej daty. Polscy developerzy backendu pracujący z Laravel, Symfony lub Django napotykają timestampy przy debugowaniu migracji i analizie rekordów. Przelicznik zamienia liczbę na czytelną datę w strefie Europe/Warsaw z uwzględnieniem czasu letniego."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "API i JWT",
-          "description": "Tokeny JWT: pole exp (wygaśnięcie) to timestamp."
+          "title": "API, tokeny JWT i e-commerce",
+          "description": "Tokeny JWT zawierają pola exp (czas wygaśnięcia) i iat (czas wystawienia) jako Unix timestamp. Polskie sklepy e-commerce (PrestaShop, WooCommerce) logują zamówienia i zdarzenia płatnicze jako timestampy w UTC. Przelicznik pomaga sprawdzić, czy token wciąż jest ważny lub kiedy dokładnie złożono zamówienie – z uwzględnieniem zmiany czasu letniego CEST w Polsce."
         },
         {
           "icon": "RiTerminalBoxLine",
-          "title": "Logi serwerów",
-          "description": "Odczytuj timestampy z logów systemowych i aplikacyjnych."
+          "title": "Logi serwerów i cron jobs",
+          "description": "Logi Apache, Nginx i systemowe (syslog) zapisują zdarzenia z timestampem. Zadania cron w środowiskach Linux pracujących na polskich serwerach VPS (OVH, Hetzner) mogą mieć skonfigurowaną strefę UTC lub lokalną Europe/Warsaw. Przelicznik pozwala szybko ustalić, o której godzinie polskiego czasu wystąpił błąd lub kiedy uruchomiło się zadanie automatyczne."
         },
         {
           "icon": "RiTimeLine",
-          "title": "Debugowanie",
-          "description": "Szybkie sprawdzenie, kiedy wystąpił błąd na podstawie timestamp."
+          "title": "Debugowanie i JavaScript Date",
+          "description": "JavaScript używa milisekund zamiast sekund: Date.now() zwraca ok. 1 772 000 000 000 (marzec 2026). Aby zamienić na Unix timestamp, podziel przez 1000. Przelicznik pomaga developerom frontendowym walidować dane z API, porównywać timestampy z różnych źródeł i debugować błędy synchronizacji czasu w aplikacjach React i Next.js działających na rynku polskim."
         }
       ]
     },
@@ -236,28 +251,36 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Co to jest Unix epoch?",
-          "answer": "1 stycznia 1970 00:00:00 UTC – punkt początkowy, od którego liczony jest timestamp (wartość 0)."
+          "question": "Co to jest Unix epoch (epoka Unix)?",
+          "answer": "1 stycznia 1970 roku, godz. 00:00:00 UTC – punkt zerowy, od którego liczony jest każdy Unix timestamp. Wartość 0 odpowiada właśnie tej chwili. Negatywne timestampy oznaczają daty przed 1970."
         },
         {
-          "question": "Jaki jest aktualny timestamp?",
-          "answer": "Sprawdź wpisując aktualną datę w konwerterze. W marcu 2026 to około 1 772 000 000."
+          "question": "Jaki jest aktualny timestamp w marcu 2026?",
+          "answer": "W marcu 2026 Unix timestamp wynosi ok. 1 772 000 000. Możesz sprawdzić dokładną wartość wpisując bieżącą datę w konwerterze lub uruchamiając Math.floor(Date.now() / 1000) w konsoli przeglądarki."
+        },
+        {
+          "question": "Jak timestamp uwzględnia polską strefę czasową?",
+          "answer": "Unix timestamp jest zawsze w UTC. Polska strefa Europe/Warsaw to CET (UTC+1) zimą i CEST (UTC+2) latem. Aby wyświetlić czas lokalny, dodaj 1 lub 2 godziny do czasu UTC – lub użyj Intl.DateTimeFormat z parametrem timeZone: Europe/Warsaw w JavaScript."
+        },
+        {
+          "question": "Jaka jest różnica między timestamp Unix a JavaScript?",
+          "answer": "Unix timestamp liczy sekundy od epoki. JavaScript Date.now() zwraca milisekundy – tysiąc razy więcej. Dlatego timestamp 1700000000 (Unix) = 1700000000000 (JS). Dzielenie przez 1000 i Math.floor() zamienia JS timestamp na Unix."
         },
         {
           "question": "Co to jest problem roku 2038?",
-          "answer": "32-bitowy timestamp osiągnie maksimum (2 147 483 647) 19 stycznia 2038. Systemy 64-bitowe nie mają tego problemu."
+          "answer": "32-bitowy Unix timestamp osiągnie wartość maksymalną (2 147 483 647) 19 stycznia 2038 o 03:14:07 UTC. Starsze systemy 32-bitowe mogą wtedy cofnąć czas do 1970. Nowoczesne systemy 64-bitowe mają ten problem rozwiązany – ich zakres obejmuje miliardy lat."
         },
         {
-          "question": "Czy timestamp uwzględnia strefy czasowe?",
-          "answer": "Nie. Timestamp jest zawsze w UTC. Konwersja na czas lokalny zależy od strefy czasowej odbiorcy."
-        },
-        {
-          "question": "Jak uzyskać timestamp w JavaScript?",
-          "answer": "<code>Math.floor(Date.now() / 1000)</code> – Date.now() zwraca milisekundy."
+          "question": "Jak uzyskać timestamp w JavaScript, PHP i SQL?",
+          "answer": "JavaScript: Math.floor(Date.now() / 1000). PHP: time(). Python: import time; int(time.time()). SQL: UNIX_TIMESTAMP() w MySQL, EXTRACT(EPOCH FROM NOW()) w PostgreSQL."
         },
         {
           "question": "Czy timestamp może być ujemny?",
-          "answer": "Tak. Ujemne wartości oznaczają daty przed 1 stycznia 1970."
+          "answer": "Tak. Ujemne wartości oznaczają daty przed 1 stycznia 1970. Przykład: timestamp -86400 = 31 grudnia 1969, 00:00:00 UTC. Obsługuje to większość nowoczesnych języków i baz danych bez problemów."
+        },
+        {
+          "question": "Jak polskie sklepy e-commerce używają Unix timestamp?",
+          "answer": "Systemy PrestaShop i WooCommerce zapisują czas złożenia zamówienia, płatności i wysyłki jako Unix timestamp w UTC w bazie danych. Przy analizie raportów sprzedaży trzeba przeliczyć te wartości na czas Europe/Warsaw, uwzględniając zmianę czasu letniego: CEST zaczyna się w ostatnią niedzielę marca, a CET – w ostatnią niedzielę października."
         }
       ]
     },

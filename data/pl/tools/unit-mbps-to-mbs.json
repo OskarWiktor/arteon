@@ -2,14 +2,14 @@
   "toolKey": "mbpsToMBs",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter Mbps na MB/s – prędkość internetu",
-    "description": "Przelicz megabity na megabajty na sekundę. Konwerter pomoże sprawdzić rzeczywistą prędkość pobierania plików. Bez rejestracji.",
+    "title": "Mbps na MB/s – prędkość internetu w realnych megabajtach",
+    "description": "Przelicz Mbps na MB/s i sprawdź realną prędkość pobierania plików. Porównaj oferty Orange, T-Mobile, Play i UPC. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-mbps-na-mbs"
   },
   "hero": {
-    "title": "Przelicz Mbps na MB/s",
-    "description": "Ten konwerter przelicza megabity na sekundę (Mbps) na megabajty na sekundę (MB/s) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "Ile naprawdę pobierasz? Prędkość łącza w MB/s – nie Mbps",
+    "description": "Operatorzy podają Mbps, menedżer pobierania pokazuje MB/s – ta różnica to nie błąd, lecz 8-krotny przelicznik. Sprawdź swoje łącze w sekundę, bez instalacji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -25,11 +25,26 @@
   "schemas": {
     "software": {
       "name": "Konwerter Mbps na MB/s – prędkość internetu",
-      "alternateName": ["Przelicznik Mbps MB/s", "Kalkulator prędkości internetu", "Megabity na megabajty"],
+      "alternateName": [
+        "Przelicznik Mbps MB/s",
+        "Kalkulator prędkości internetu",
+        "Megabity na megabajty"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz megabity na megabajty na sekundę. Konwerter pomoże sprawdzić rzeczywistą prędkość pobierania plików. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz Mbps na MB/s i sprawdź realną prędkość pobierania plików. Porównaj oferty Orange, T-Mobile, Play i UPC. Działa w przeglądarce, bez rejestracji.",
+      "featureList": [
+        "Przeliczanie Mbps na MB/s i odwrotnie (podział przez 8)",
+        "Obustronna konwersja – wpisz wartość w dowolną stronę",
+        "Wynik aktualizuje się natychmiast podczas wpisywania",
+        "Kopiowanie wyniku do schowka jednym kliknięciem",
+        "Tabela popularnych łączy: 100 Mbps, 300 Mbps, 1 Gbps",
+        "Obliczenia czasu pobierania dla typowych rozmiarów plików",
+        "Porównanie ofert polskich operatorów: Orange, T-Mobile, Play, UPC",
+        "Przydatne przy ocenie łącza do streamingu Netflix 4K i pracy zdalnej",
+        "Obliczenia lokalne w przeglądarce – bez wysyłania danych",
+        "Bez rejestracji i bez instalacji – działa w każdej przeglądarce"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera Mbps na MB/s",
@@ -100,23 +115,23 @@
       "items": [
         {
           "icon": "RiDownloadLine",
-          "title": "Szacowanie pobierania",
-          "description": "100 Mbps = plik 1 GB w ok. 80 sekund."
+          "title": "Szacowanie czasu pobierania",
+          "description": "Łącze 100 Mbps to 12,5 MB/s – plik 1 GB pobierzesz w ok. 82 sekundy w idealnych warunkach, a realnie ok. 100–120 sekund z powodu narzutu TCP/IP. Konwerter pomaga wyliczyć, ile czasu zajmie pobranie backupu, projektu wideo lub instalatora systemu przy danym łączu od Orange, T-Mobile czy Play."
         },
         {
           "icon": "RiWifiLine",
-          "title": "Wybór pakietu",
-          "description": "Porównaj oferty operatorów w realnych MB/s."
+          "title": "Wybór pakietu internetowego",
+          "description": "Porównując oferty operatorów (Orange Światłowód 300 Mbps, T-Mobile 600 Mbps, UPC 1 Gbps), warto przeliczyć Mbps na MB/s, żeby zobaczyć realną przepustowość. Łącze 300 Mbps = 37,5 MB/s, co oznacza pobranie pliku 1 GB w ok. 27 sekund – dane bez uwzględnienia rzeczywistych strat na routerze i sieci domowej."
         },
         {
           "icon": "RiVideoLine",
-          "title": "Streaming",
-          "description": "Netflix 4K wymaga 25 Mbps = 3,1 MB/s."
+          "title": "Streaming i praca zdalna",
+          "description": "Netflix 4K wymaga minimum 25 Mbps (3,1 MB/s), YouTube 4K – 20 Mbps, a Zoom HD – 3 Mbps na kierunek. Przy pracy zdalnej z VPN dochodzi 10–20% narzutu na szyfrowanie, co realnie obniża przepustowość. Przelicz swoje łącze ze speedtest.pl i sprawdź, czy starczy na kilku użytkowników jednocześnie."
         },
         {
           "icon": "RiServerLine",
-          "title": "Hosting",
-          "description": "Transfer serwera: 1 TB/miesiąc = ile Mbps potrzebujesz?"
+          "title": "Transfer serwera i hosting",
+          "description": "Dostawcy hostingu podają miesięczny transfer w GB lub TB, a przepustowość portu serwera w Mbps. Jeśli port wynosi 100 Mbps (12,5 MB/s) i serwer obsługuje ruch przez 24 h, maksymalny dzienny transfer to ok. 108 GB. Konwerter pomaga zaplanować pojemność łącza i ocenić, czy wybrany plan hostingowy wystarczy na przewidywany ruch."
         }
       ]
     },
@@ -237,27 +252,35 @@
       "items": [
         {
           "question": "Ile MB/s to 100 Mbps?",
-          "answer": "100 Mbps = 12,5 MB/s (100 ÷ 8)."
+          "answer": "100 Mbps = 12,5 MB/s (100 ÷ 8). Tyle realnie możesz pobierać przy łączu 100 Mbps – menedżer pobierania pokaże właśnie tę wartość."
         },
         {
           "question": "Dlaczego operatorzy podają prędkość w Mbps?",
-          "answer": "Mbps to większa liczba niż MB/s, więc wygląda korzystniej w ofercie. 100 Mbps brzmi lepiej niż 12,5 MB/s."
+          "answer": "Mbps daje większe liczby niż MB/s, więc wygląda korzystniej w ofercie. 300 Mbps brzmi imponująco, ale to tylko 37,5 MB/s. Orange, T-Mobile, Play i UPC stosują Mbps zgodnie z branżową konwencją."
         },
         {
           "question": "Ile Mbps potrzebuję do Netflix 4K?",
-          "answer": "Netflix zaleca minimum 25 Mbps dla strumienia 4K Ultra HD."
+          "answer": "Netflix zaleca minimum 25 Mbps dla 4K Ultra HD. Do tego dolicz innych użytkowników w sieci – przy 4 osobach oglądających 4K potrzebujesz min. 100 Mbps na samo wideo."
         },
         {
           "question": "Jak długo trwa pobranie 1 GB przy 100 Mbps?",
-          "answer": "Teoretycznie: 1 024 MB ÷ 12,5 MB/s ≈ 82 sekundy. Realnie: ok. 100–120 sekund."
+          "answer": "Teoretycznie: 1 024 MB ÷ 12,5 MB/s = ok. 82 sekundy. Realnie ok. 100–120 sekund ze względu na narzut TCP/IP, obciążenie serwera i ewentualne straty pakietów."
         },
         {
-          "question": "Co to jest Gbps?",
-          "answer": "1 Gbps = 1 000 Mbps = 125 MB/s. Standard nowoczesnych łączy światłowodowych."
+          "question": "Ile MB/s to 1 Gbps?",
+          "answer": "1 Gbps = 1 000 Mbps = 125 MB/s. To standard nowoczesnych łączy światłowodowych oferowanych przez UPC, Orange i Inea w polskich miastach."
         },
         {
-          "question": "Dlaczego rzeczywista prędkość jest niższa?",
-          "answer": "Narzut protokołów TCP/IP (ok. 5–10%), ograniczenia serwera źródłowego, obciążenie sieci, jakość routera."
+          "question": "Dlaczego speedtest.pl pokazuje inne wyniki niż operator?",
+          "answer": "Speedtest.pl mierzy prędkość do najbliższego serwera pomiarowego, ale realna prędkość do konkretnego serwisu zależy od obciążenia trasy, jakości routera i liczby urządzeń w sieci lokalnej."
+        },
+        {
+          "question": "Co to jest narzut VPN i ile Mbps zjada?",
+          "answer": "Szyfrowanie VPN (np. przy pracy zdalnej) dodaje 10–20% narzutu, co obniża realną przepustowość. Łącze 100 Mbps przez VPN daje realnie 80–90 Mbps, czyli ok. 10–11 MB/s."
+        },
+        {
+          "question": "Jaka jest różnica między Mbps a MBps?",
+          "answer": "Mbps (mała litera b) = megabity na sekundę. MBps lub MB/s (duża litera B) = megabajty na sekundę. 1 MB/s = 8 Mbps. Duże B zawsze oznacza bajty – to kluczowa różnica przy porównywaniu prędkości."
         }
       ]
     },

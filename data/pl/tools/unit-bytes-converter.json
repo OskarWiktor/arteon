@@ -2,14 +2,14 @@
   "toolKey": "bytesConverter",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter bajtów – B, KB, MB, GB, TB",
-    "description": "Przelicz bajty na kilobajty, megabajty, gigabajty i terabajty. Wynik pojawia się natychmiast. Bez rejestracji.",
+    "title": "Konwerter bajtów – B, KB, MB, GB, TB – ile to naprawdę?",
+    "description": "Przelicz bajty na KB, MB, GB i TB w systemie binarnym (1024). Sprawdź, dlaczego dysk 500 GB pokazuje tylko 465 GB. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-bajtow"
   },
   "hero": {
-    "title": "Przelicz bajty na KB, MB, GB",
-    "description": "Ten konwerter przelicza bajty na kilobajty, megabajty, gigabajty i terabajty. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "Ile GB zajmie projekt? Bajty, KB, MB, GB, TB w jednym miejscu",
+    "description": "Sprawdź pojemność dysku, limit załącznika lub rozmiar zdjęć RAW – wynik pojawia się natychmiast, bez instalacji i bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -25,11 +25,26 @@
   "schemas": {
     "software": {
       "name": "Konwerter bajtów – B, KB, MB, GB, TB",
-      "alternateName": ["Przelicznik bajtów", "Kalkulator KB MB GB", "Konwerter wielkości plików"],
+      "alternateName": [
+        "Przelicznik bajtów",
+        "Kalkulator KB MB GB",
+        "Konwerter wielkości plików"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz bajty na kilobajty, megabajty, gigabajty i terabajty. Wynik pojawia się natychmiast. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz bajty na KB, MB, GB i TB w systemie binarnym (1024). Sprawdź, dlaczego dysk 500 GB pokazuje tylko 465 GB. Działa w przeglądarce, bez rejestracji.",
+      "featureList": [
+        "Przeliczanie B, KB, MB, GB, TB w systemie binarnym (1024)",
+        "Obustronna konwersja – wpisz wartość w dowolnej jednostce",
+        "Wynik aktualizuje się natychmiast podczas wpisywania",
+        "Kopiowanie wyniku do schowka jednym kliknięciem",
+        "Obliczenia lokalne w przeglądarce – bez wysyłania danych na serwer",
+        "Wyjaśnienie różnicy między systemem 1024 (IEC) a 1000 (SI)",
+        "Tabela typowych rozmiarów: zdjęcia RAW, filmy 4K, dokumenty",
+        "Pomocne przy planowaniu przestrzeni Dropbox, OneDrive, Google Drive",
+        "Obsługa separatora dziesiętnego: kropka i przecinek",
+        "Bez rejestracji i bez instalacji – działa w każdej przeglądarce"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera bajty na KB/MB/GB",
@@ -100,23 +115,23 @@
       "items": [
         {
           "icon": "RiHardDriveLine",
-          "title": "Pojemność dysków",
-          "description": "Dysk 1 TB (producent) = 931 GB w systemie binarnym."
+          "title": "Pojemność dysków i chmura",
+          "description": "Dysk 500 GB u producenta (system 1000) to tylko 465 GB widoczne w Windows lub macOS – różnica wynosi ponad 35 GB. Konwerter pomaga zrozumieć tę rozbieżność przed zakupem dysku, planowaniem archiwizacji lub porównywaniem ofert chmurowych Dropbox, OneDrive i Google Drive."
         },
         {
           "icon": "RiUploadCloudLine",
-          "title": "Limity przesyłania",
-          "description": "Załącznik e-mail: 25 MB = 26 214 400 B."
+          "title": "Limity przesyłania plików",
+          "description": "Gmail dopuszcza 25 MB na załącznik, a Google Drive daje 15 GB bezpłatnej przestrzeni. Jeśli chcesz oszacować, ile zdjęć RAW (25–80 MB każde) zmieści się w przydzielonym limicie lub ile waży projekt przed wysłaniem klientowi, przelicz rozmiary i zaplanuj kompresję lub podział plików."
         },
         {
           "icon": "RiServerLine",
-          "title": "Serwery",
-          "description": "Planowanie pojemności: RAM, dyski, transfer."
+          "title": "Serwery i hosting",
+          "description": "Planowanie pojemności serwera wymaga przeliczania RAM, miejsca na dysku i miesięcznego transferu danych. Przelicznik pozwala sprawdzić, czy 2 GB RAM wystarczy na cache aplikacji lub ile kosztowałby ruch 10 TB miesięcznie u polskich dostawców hostingu – wartości podawane zarówno w GB, jak i TB."
         },
         {
           "icon": "RiSmartphoneLine",
-          "title": "Pamięć urządzeń",
-          "description": "Telefon 128 GB = 137 438 953 472 B."
+          "title": "Pamięć urządzeń mobilnych",
+          "description": "Smartfon z 128 GB pamięci (dziesiętnie) ma faktycznie dostępne ok. 119 GB w systemie binarnym. Po odjęciu systemu operacyjnego i preinstalowanych aplikacji użytkownik często dysponuje zaledwie 100–110 GB. Konwerter pomaga ocenić, ile zdjęć, filmów lub plików muzycznych naprawdę zmieścisz na urządzeniu."
         }
       ]
     },
@@ -237,27 +252,35 @@
       "items": [
         {
           "question": "Ile KB to 1 MB?",
-          "answer": "1 MB = 1 024 KB (binarnie) lub 1 000 KB (dziesiętnie)."
+          "answer": "1 MB = 1 024 KB w systemie binarnym (IEC) lub 1 000 KB w systemie dziesiętnym (SI). Systemy operacyjne używają systemu binarnego, producenci dysków – dziesiętnego."
         },
         {
-          "question": "Dlaczego dysk 1 TB pokazuje 931 GB?",
-          "answer": "Producent liczy 1 TB = 1 000 000 000 000 B. System operacyjny liczy 1 GB = 1 073 741 824 B, więc wychodzi 931 GB."
+          "question": "Dlaczego dysk 1 TB pokazuje 931 GB w Windows?",
+          "answer": "Producent liczy 1 TB = 1 000 000 000 000 B. System Windows liczy 1 GB = 1 073 741 824 B (system binarny), więc wynik to ok. 931 GB. Ta różnica rośnie z wielkością dysku i sięga 7,4% dla 1 TB."
+        },
+        {
+          "question": "Ile miejsca zajmuje zdjęcie RAW?",
+          "answer": "JPG ze smartfona: 3–10 MB. RAW z aparatu (np. Canon, Nikon): 25–80 MB. PNG bez kompresji: zależy od rozdzielczości, ale 4K PNG to typowo 50–100 MB."
         },
         {
           "question": "Jaka jest różnica między KB a KiB?",
-          "answer": "KB w systemie dziesiętnym = 1 000 B. KiB (kibibajt) = 1 024 B. W praktyce większość osób używa KB oznaczając 1 024 B."
-        },
-        {
-          "question": "Ile MB ma zdjęcie?",
-          "answer": "JPG ze smartfona: 3–10 MB. RAW z aparatu: 25–80 MB. PNG bez kompresji: zależy od rozdzielczości."
+          "answer": "KB w systemie dziesiętnym = 1 000 B. KiB (kibibajt, standard IEC) = 1 024 B. W codziennym użyciu większość osób używa KB mając na myśli 1 024 B, choć technicznie oznacza to KiB."
         },
         {
           "question": "Ile GB to 1 TB?",
-          "answer": "1 TB = 1 024 GB (binarnie). W systemie producentów: 1 TB = 1 000 GB."
+          "answer": "1 TB = 1 024 GB w systemie binarnym. W systemie dziesiętnym stosowanym przez producentów: 1 TB = 1 000 GB. Stąd bierze się różnica między deklarowaną a widoczną pojemnością dysku."
         },
         {
           "question": "Czy bit i bajt to to samo?",
-          "answer": "Nie. 1 bajt = 8 bitów. Prędkość internetu podaje się w bitach (Mbps), rozmiar plików w bajtach (MB)."
+          "answer": "Nie. 1 bajt = 8 bitów. Prędkość internetu podają operatorzy w bitach (Mbps), a rozmiar plików mierzymy w bajtach (MB). Dlatego łącze 100 Mbps pozwala pobierać pliki z prędkością tylko 12,5 MB/s."
+        },
+        {
+          "question": "Ile miejsca zajmują dokumenty biurowe na Google Drive?",
+          "answer": "Dokument tekstowy Word: 20–100 KB. Prezentacja PowerPoint: 1–20 MB. Arkusz Excel: 50 KB–5 MB. Pliki edytowane bezpośrednio w Google Docs nie wliczają się do limitu 15 GB."
+        },
+        {
+          "question": "Jak polskie przepisy archiwizacyjne odnoszą się do rozmiaru plików?",
+          "answer": "Polskie przepisy o archiwizacji (m.in. ustawa o rachunkowości) nie określają limitów rozmiaru plików, ale wymagają czytelności i możliwości odtworzenia dokumentów. Zalecany format to PDF/A – jego rozmiar zależy od liczby stron i grafik."
         }
       ]
     },

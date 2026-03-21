@@ -2,14 +2,14 @@
   "toolKey": "decToBin",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter dziesiętny na binarny – DEC ↔ BIN",
-    "description": "Przelicz liczby dziesiętne na binarne i odwrotnie. Konwerter jest przydatny w informatyce i programowaniu. Bez rejestracji.",
+    "title": "Dziesiętny na binarny – DEC na BIN, kurs informatyki IT",
+    "description": "Przelicz liczby dziesiętne na binarne i odwrotnie. Niezbędne na kursach informatyki i przy programowaniu niskopoziomowym. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-dziesietny-na-binarny"
   },
   "hero": {
-    "title": "Przelicz system dziesiętny na binarny",
-    "description": "Ten konwerter przelicza liczby dziesiętne na binarne i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "Liczby binarne bez rachowania na papierze – DEC na BIN w jednej chwili",
+    "description": "Na kursach IT, przy maskach IP i operacjach bitowych liczysz ręcznie? Wklej liczbę i masz wynik natychmiast – bez instalacji, bez rejestracji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -24,12 +24,27 @@
   },
   "schemas": {
     "software": {
-      "name": "Konwerter dziesiętny na binarny – DEC ↔ BIN",
-      "alternateName": ["Przelicznik dziesiętny binarny", "Kalkulator DEC BIN", "Decimal to binary"],
+      "name": "Dziesiętny na binarny – DEC na BIN, kurs informatyki IT",
+      "alternateName": [
+        "Przelicznik dziesiętny binarny",
+        "Kalkulator DEC BIN",
+        "Decimal to binary"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz liczby dziesiętne na binarne i odwrotnie. Konwerter jest przydatny w informatyce i programowaniu. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz liczby dziesiętne na binarne i odwrotnie. Niezbędne na kursach informatyki i przy programowaniu niskopoziomowym. Działa w przeglądarce, bez rejestracji.",
+      "featureList": [
+        "Przeliczanie liczb dziesiętnych na binarne (DEC na BIN) i odwrotnie",
+        "Obustronna konwersja – wpisz wartość w dowolną stronę",
+        "Wynik aktualizuje się natychmiast podczas wpisywania",
+        "Kopiowanie wyniku do schowka jednym kliknięciem",
+        "Tabela wartości binarnych: 0–255 (1 bajt) i potęgi liczby 2",
+        "Wsparcie dla masek podsieci IP: /24, /16, /8",
+        "Przydatne na kursach informatycznych i studiach IT w Polsce",
+        "Wyjaśnienie operacji bitowych AND, OR, XOR z przykładami",
+        "Obliczenia lokalne w przeglądarce – bez wysyłania danych",
+        "Bez rejestracji i bez instalacji – działa w każdej przeglądarce"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera dziesiętny na binarny",
@@ -100,23 +115,23 @@
       "items": [
         {
           "icon": "RiCodeSSlashLine",
-          "title": "Programowanie",
-          "description": "Operacje bitowe, maski, flagi: 0xFF = 11111111."
+          "title": "Programowanie i operacje bitowe",
+          "description": "Operacje bitowe (AND, OR, XOR, NOT) wymagają znajomości reprezentacji binarnej liczb. Maska 0xFF = 11111111 binarnie, a operacja 0b1101 & 0b1010 = 0b1000. Studenci informatyki na polskich uczelniach technicznych (AGH, Politechnika Warszawska) spotykają się z tym od pierwszego semestru – konwerter przyspiesza weryfikację wyników na ćwiczeniach i kolokwiach."
         },
         {
           "icon": "RiWifiLine",
-          "title": "Sieci IP",
-          "description": "Maski podsieci: 255.255.255.0 = /24 (24 jedynki binarnie)."
+          "title": "Maski podsieci i adresowanie IP",
+          "description": "Maski podsieci IPv4 zapisuje się w notacji CIDR lub binarnej: /24 oznacza 24 jedynki i 8 zer = 255.255.255.0 = 11111111.11111111.11111111.00000000. Administratorzy sieci i studenci kursów CISCO na polskich szkołach technicznych używają przelicznika binarnego codziennie przy konfiguracji routerów, przełączników i firewalli."
         },
         {
           "icon": "RiShieldKeyholeLine",
-          "title": "Uprawnienia Unix",
-          "description": "chmod 755 = 111 101 101 binarnie."
+          "title": "Uprawnienia plików Unix i Linux",
+          "description": "Uprawnienia chmod 755 to skrót binarny: 7 = 111 (rwx), 5 = 101 (r-x), 5 = 101 (r-x). Każda cyfra ósemkowa odpowiada 3 bitom binarnym. Studenci kierunków IT i administratorzy systemów Linux w polskich firmach używają tego przeliczenia przy zarządzaniu dostępem do plików i katalogów na serwerach produkcyjnych."
         },
         {
           "icon": "RiCpuLine",
-          "title": "Elektronika",
-          "description": "Rejestry, porty I/O, protokoły komunikacyjne."
+          "title": "Elektronika i mikrokontrolery",
+          "description": "Programowanie rejestrów mikrokontrolerów (Arduino, STM32, Raspberry Pi) wymaga ustawiania poszczególnych bitów. Wartość rejestru 0b00001010 oznacza włączone bity 1 i 3. Polscy studenci elektroniki i uczestnicy kursów embedded systems korzystają z przelicznika binarnego przy debugowaniu protokołów SPI, I2C i UART na płytkach uruchomieniowych."
         }
       ]
     },
@@ -236,28 +251,36 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Ile to 255 binarnie?",
-          "answer": "255 = 11111111 (8 jedynek). To maksymalna wartość jednego bajtu."
+          "question": "Ile to 255 w systemie binarnym?",
+          "answer": "255 = 11111111 w systemie binarnym (8 jedynek). To maksymalna wartość jednego bajtu i najczęściej używana wartość w maskach sieciowych (255.255.255.0 = /24)."
         },
         {
-          "question": "Jak szybko przeliczyć binarny na dziesiętny?",
-          "answer": "Mnoż każdą cyfrę przez odpowiednią potęgę 2 i sumuj. 1101 = 1×8 + 1×4 + 0×2 + 1×1 = 13."
+          "question": "Jak ręcznie przeliczyć binarny na dziesiętny?",
+          "answer": "Mnóż każdą cyfrę przez odpowiednią potęgę 2 i sumuj. Przykład: 1101 = 1×8 + 1×4 + 0×2 + 1×1 = 8 + 4 + 0 + 1 = 13. Konwerter robi to natychmiast."
         },
         {
           "question": "Co to jest bit i bajt?",
-          "answer": "Bit = 1 cyfra binarna (0 lub 1). Bajt = 8 bitów = wartości 0–255."
+          "answer": "Bit to jedna cyfra binarna (0 lub 1). Bajt = 8 bitów, pozwala zapisać wartości od 0 (00000000) do 255 (11111111). W pamięci komputera wszystkie dane są przechowywane jako ciągi bitów."
         },
         {
-          "question": "Jak działają maski bitowe?",
-          "answer": "Maska bitowa używa operacji AND, OR, XOR na bitach. Np. 0xFF & 0x0F = 0x0F (maskuje górne 4 bity)."
+          "question": "Jak działają operacje bitowe AND i OR?",
+          "answer": "AND zwraca 1 tylko gdy oba bity to 1. Przykład: 1100 AND 1010 = 1000. OR zwraca 1 gdy przynajmniej jeden bit to 1. Przykład: 1100 OR 1010 = 1110. Operacje te są podstawą filtrowania, flag i masek w każdym języku programowania."
         },
         {
-          "question": "Ile bitów ma adres IP?",
-          "answer": "IPv4: 32 bity (4 oktety po 8 bitów). IPv6: 128 bitów."
+          "question": "Ile bitów ma adres IPv4 i IPv6?",
+          "answer": "IPv4 ma 32 bity (4 oktety po 8 bitów, np. 192.168.1.1). IPv6 ma 128 bitów (8 grup po 16 bitów w zapisie HEX). Dlatego IPv6 obsługuje 2 do potęgi 128 adresów – praktycznie nieograniczoną liczbę."
         },
         {
-          "question": "Co oznacza 0b w programowaniu?",
-          "answer": "Prefiks 0b oznacza liczbę binarną: <code>0b1101</code> = 13 dziesiętnie."
+          "question": "Co oznacza prefiks 0b w kodzie programu?",
+          "answer": "Prefiks 0b (zero + litera b) wskazuje, że następująca liczba jest binarna. Przykład: 0b1101 = 13 dziesiętnie. Obsługują go C, C++, Java, JavaScript, Python i większość współczesnych języków programowania."
+        },
+        {
+          "question": "Jak system binarny jest nauczany na polskich uczelniach?",
+          "answer": "Na kierunkach informatycznych (AGH, Politechnika Warszawska, PJATK) system binarny pojawia się już na pierwszym semestrze w ramach przedmiotów: podstawy informatyki, architektura komputerów. Maski, operacje bitowe i zapis uzupelnien do 2 to tematy egzaminacyjne."
+        },
+        {
+          "question": "Czy liczby ujemne mają reprezentację binarną?",
+          "answer": "Tak. Najczęściej używa się kodu uzupełnienia do dwóch. W 8-bitowym systemie liczba -1 to 11111111, a -128 to 10000000. Zakres 8-bitowy ze znakiem to -128 do +127, bez znaku – 0 do 255."
         }
       ]
     },

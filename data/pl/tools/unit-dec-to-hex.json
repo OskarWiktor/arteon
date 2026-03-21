@@ -2,14 +2,14 @@
   "toolKey": "decToHex",
   "locale": "pl",
   "metadata": {
-    "title": "Konwerter dziesiętny na szesnastkowy – DEC ↔ HEX",
-    "description": "Przelicz liczby dziesiętne na szesnastkowe i odwrotnie. Konwerter jest przydatny w informatyce i programowaniu. Bez rejestracji.",
+    "title": "Dziesiętny na szesnastkowy – DEC na HEX dla web devów i IT",
+    "description": "Przelicz liczby dziesiętne na HEX i odwrotnie. Niezbędne przy kolorach CSS, debugowaniu pamięci i adresach MAC. Działa w przeglądarce, bez rejestracji.",
     "ogImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp",
     "path": "/narzedzia/konwerter-dziesietny-na-szesnastkowy"
   },
   "hero": {
-    "title": "Przelicz system dziesiętny na szesnastkowy",
-    "description": "Ten konwerter przelicza liczby dziesiętne na szesnastkowe (HEX) i odwrotnie. Wynik pojawia się natychmiast po wpisaniu wartości.",
+    "title": "Kolory CSS, adresy MAC, kody HEX – przelicz DEC na szesnastkowy",
+    "description": "Polscy web developerzy używają HEX w CSS codziennie. Przelicz RGB na kod szesnastkowy lub sprawdź adres pamięci – wynik pojawia się natychmiast, bez instalacji.",
     "backgroundImage": "/assets/tools/jpg-png-to-webp-converter/jpg-png-na-webp-bez-limitu-pl.webp"
   },
   "breadcrumbs": {
@@ -25,11 +25,26 @@
   "schemas": {
     "software": {
       "name": "Konwerter dziesiętny na szesnastkowy – DEC ↔ HEX",
-      "alternateName": ["Przelicznik DEC HEX", "Kalkulator szesnastkowy", "Decimal to hexadecimal"],
+      "alternateName": [
+        "Przelicznik DEC HEX",
+        "Kalkulator szesnastkowy",
+        "Decimal to hexadecimal"
+      ],
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "UnitConverter",
-      "description": "Przelicz liczby dziesiętne na szesnastkowe i odwrotnie. Konwerter jest przydatny w informatyce i programowaniu. Bez rejestracji.",
-      "featureList": ["Obustronna konwersja w czasie rzeczywistym", "Wybór dowolnego konwertera z jednego miejsca", "Kopiowanie wyniku do schowka", "Obliczenia lokalne w przeglądarce"]
+      "description": "Przelicz liczby dziesiętne na HEX i odwrotnie. Niezbędne przy kolorach CSS, debugowaniu pamięci i adresach MAC. Działa w przeglądarce, bez rejestracji.",
+      "featureList": [
+        "Przeliczanie DEC na HEX i odwrotnie w czasie rzeczywistym",
+        "Obustronna konwersja – wpisz wartość w dowolną stronę",
+        "Wynik aktualizuje się natychmiast podczas wpisywania",
+        "Kopiowanie wyniku do schowka jednym kliknięciem",
+        "Tabela kolorów CSS: #FF0000, #00FF00, #0000FF, #FFFFFF, #000000",
+        "Wyjaśnienie prefiksu 0x stosowanego w C, C++, JavaScript, Python",
+        "Przydatne przy debugowaniu adresów pamięci i hex dump",
+        "Pomocne przy adresach MAC i protokołach sieciowych IPv6",
+        "Obliczenia lokalne w przeglądarce – bez wysyłania danych",
+        "Bez rejestracji i bez instalacji – działa w każdej przeglądarce"
+      ]
     },
     "howTo": {
       "name": "Jak korzystać z konwertera dziesiętny na szesnastkowy",
@@ -100,23 +115,23 @@
       "items": [
         {
           "icon": "RiPaletteLine",
-          "title": "Kolory CSS",
-          "description": "#FF0000 = 255 (czerwony), #00FF00 = 255 (zielony)."
+          "title": "Kolory CSS i web development",
+          "description": "Polscy frontend developerzy używają HEX w CSS codziennie: #FF0000 to czerwony, #1B2632 to granatowy, a #FFB162 to złoty akcent. Każdy kanał RGB (0–255) odpowiada dwóm cyfrom HEX (00–FF). Przelicznik pozwala szybko sprawdzić, jaki kolor kryje się pod danym kodem lub zamienić wartości z Figmy na CSS bez ręcznych obliczeń."
         },
         {
           "icon": "RiCodeSSlashLine",
-          "title": "Programowanie",
-          "description": "Adresy pamięci, bajty, kody znaków Unicode."
+          "title": "Programowanie i stałe szesnastkowe",
+          "description": "W C, C++, Java i JavaScript stałe zapisuje się z prefiksem 0x: 0xFF = 255, 0x1A = 26, 0xDEAD = 57005. Python obsługuje hex(255) i int z podstawą 16. Debugowanie binarne, mapa pamięci, flagi rejestrów mikrokontrolerów – wszystko wymaga płynnego przełączania między DEC a HEX. Konwerter przyspiesza weryfikację bez kalkulatora."
         },
         {
           "icon": "RiWifiLine",
-          "title": "Sieci",
-          "description": "Adresy MAC, IPv6, protokoły sieciowe."
+          "title": "Adresy MAC i protokoły sieciowe",
+          "description": "Adres MAC karty sieciowej to 6 bajtów w zapisie HEX, np. 00:1A:2B:3C:4D:5E. Adresy IPv6 są zapisane szesnastkowo: 2001:0db8:85a3::8a2e:0370:7334. Administratorzy sieci i studenci kursów CISCO na polskich szkołach technicznych przeliczają HEX na DEC przy analizie pakietów i konfiguracji list dostępu na routerach."
         },
         {
           "icon": "RiCpuLine",
-          "title": "Debugowanie",
-          "description": "Hex dump pamięci, analiza plików binarnych."
+          "title": "Debugowanie i analiza hex dump",
+          "description": "Hex dump to podgląd zawartości pamięci lub pliku w formacie szesnastkowym – każdy bajt to dwie cyfry HEX (00–FF). Narzędzia takie jak xxd, hexdump czy HxD wyświetlają dane w tym formacie. Programiści C i C++ oraz inżynierowie embedded w polskich firmach technologicznych używają HEX przy analizie protokołów binarnych i badaniu struktury plików."
         }
       ]
     },
@@ -236,28 +251,36 @@
       "openByDefault": 1,
       "items": [
         {
-          "question": "Ile to FF szesnastkowo?",
-          "answer": "FF = 15×16 + 15 = 255 dziesiętnie. To maksymalna wartość bajtu."
+          "question": "Ile to FF w systemie dziesiętnym?",
+          "answer": "FF = 15×16 + 15×1 = 240 + 15 = 255. To maksymalna wartość jednego bajtu i najczęstsza wartość w CSS (np. #FF0000 = pełna czerwień)."
         },
         {
-          "question": "Jak przeliczyć HEX na DEC?",
-          "answer": "Mnoż każdą cyfrę przez odpowiednią potęgę 16. Przykład: 1A = 1×16 + 10×1 = 26."
+          "question": "Jak przeliczyć HEX na DEC ręcznie?",
+          "answer": "Mnóż każdą cyfrę przez odpowiednią potęgę 16 i sumuj. Przykład: 1A = 1×16 + 10×1 = 16 + 10 = 26. Litery: A=10, B=11, C=12, D=13, E=14, F=15."
         },
         {
-          "question": "Co oznacza 0x w kodzie?",
-          "answer": "Prefiks 0x informuje kompilator, że następująca liczba jest szesnastkowa: <code>0xFF</code> = 255."
+          "question": "Co oznacza prefiks 0x w kodzie programu?",
+          "answer": "Prefiks 0x informuje kompilator lub interpreter, że liczba jest szesnastkowa. Przykłady: 0xFF = 255, 0x1A = 26. JavaScript: parseInt(\"FF\", 16) = 255. Python: int(\"FF\", 16) = 255."
         },
         {
-          "question": "Dlaczego kolory CSS używają HEX?",
-          "answer": "Każdy kanał (R, G, B) ma zakres 0–255 = 00–FF. Trzy pary HEX = 6 znaków = pełny kolor."
+          "question": "Dlaczego kolory CSS używają formatu HEX?",
+          "answer": "Każdy kanał RGB (R, G, B) ma zakres 0–255, co odpowiada 00–FF w HEX. Trzy pary cyfr HEX = 6 znaków = pełny 24-bitowy kolor. Format #RRGGBB jest zwięzły i czytelny dla programistów, dlatego stał się standardem CSS od lat 90."
+        },
+        {
+          "question": "Jak przeliczyć HEX w JavaScript?",
+          "answer": "(255).toString(16) zwraca \"ff\". parseInt(\"FF\", 16) zwraca 255. Dla kolorów CSS: \"#\" + (255).toString(16).padStart(2, \"0\") daje \"#ff\". Metody działają natywnie bez zewnętrznych bibliotek."
         },
         {
           "question": "Ile to FFFFFF szesnastkowo?",
-          "answer": "FFFFFF = 16 777 215 dziesiętnie. To maksymalna wartość 24-bitowa (3 bajty, kolor biały)."
+          "answer": "FFFFFF = 16 777 215 dziesiętnie. To maksymalna wartość 24-bitowa (3 bajty) i kod koloru białego w CSS: #FFFFFF = rgb(255, 255, 255)."
         },
         {
-          "question": "Jak przeliczyć HEX w języku JavaScript?",
-          "answer": "W JavaScript można zamienić liczbę dziesiętną na szesnastkową za pomocą metody toString(16), a w drugą stronę — za pomocą parseInt z podstawą 16. Na przykład liczba 255 po konwersji daje ff, a ciąg ff przeliczony z powrotem daje 255."
+          "question": "Jak adresy MAC są zapisane w HEX?",
+          "answer": "Adres MAC to 6 bajtów (48 bitów) jako 12 cyfr HEX, rozdzielonych dwukropkami: 00:1A:2B:3C:4D:5E. Pierwsze 3 bajty (OUI) identyfikują producenta karty sieciowej."
+        },
+        {
+          "question": "Czy HEX jest używany w kodowaniu znaków Unicode?",
+          "answer": "Tak. Unicode zapisuje znaki w HEX: litera A to U+0041, polski znak a z ogonkiem to U+0105. W HTML encje wyglądają tak: a z ogonkiem = &#x0105;. W URL-ach HEX pojawia sie jako %20 (spacja) lub %C4%85 (a z ogonkiem w UTF-8)."
         }
       ]
     },
